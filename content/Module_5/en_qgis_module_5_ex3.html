@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action &#8212; GIS Resource Training Center</title>
   
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_5/en_qgis_module_5_ex3';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -74,28 +69,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -118,17 +108,24 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
 
-
-  <div class="bd-header-announcement container-fluid bd-header-announcement">
-    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
-  </div>
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -144,6 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -162,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -174,14 +184,14 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
@@ -190,16 +200,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
@@ -210,8 +220,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_5_overview.html">5. Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
 
@@ -219,47 +229,47 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
@@ -269,8 +279,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
 
 
@@ -280,35 +290,35 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
@@ -322,21 +332,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
@@ -344,14 +354,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
 <ul class="nav bd-sidenav">
@@ -391,7 +401,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -400,14 +410,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -532,10 +542,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -543,14 +553,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -609,23 +619,23 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></p>
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
 </div>
-<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/intro.html</span></a></div>
 </div>
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="exercise-3-trigger-intervention-map-for-forecast-based-action">
-<h1>Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action<a class="headerlink" href="#exercise-3-trigger-intervention-map-for-forecast-based-action" title="Permalink to this heading">#</a></h1>
+<h1>Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action<a class="headerlink" href="#exercise-3-trigger-intervention-map-for-forecast-based-action" title="Link to this heading">#</a></h1>
 <section id="characteristics-of-the-exercise">
-<h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
+<h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -673,7 +683,7 @@ document.write(`
 </div>
 <div class="sd-card-body docutils">
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html"><span class="doc std std-doc">Geodata Import in QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html"><span class="std std-doc">Geodata Import in QGIS</span></a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Intersection</a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html">Zonal Statistics</a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Join Attributes by location (summary</a></p></li>
@@ -686,22 +696,18 @@ document.write(`
 </div>
 </section>
 <section id="instructions-for-the-trainers">
-<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
+<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Link to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Trainers Corner</strong> <div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="rubric">Prepare the training</p>
+<span class="sd-summary-text"><strong>Trainers Corner</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="prepare-the-training">Prepare the training</h3>
 <ul class="simple">
 <li><p class="sd-card-text">Take the time to familiarise yourself with the exercise and the provided material.</p></li>
 <li><p class="sd-card-text">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</p></li>
 <li><p class="sd-card-text">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <strong>and unzipped</strong> the data folder.</p></li>
-<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="doc std std-doc">How to do trainings?</span></a> for some general tips on training conduction.</p></li>
+<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="std std-doc">How to do trainings?</span></a> for some general tips on training conduction.</p></li>
 </ul>
-<p class="rubric">Conduct the training</p>
+<h3 class="rubric" id="conduct-the-training">Conduct the training</h3>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">Introduce the idea and aim of the exercise.</p></li>
@@ -721,7 +727,7 @@ document.write(`
 </div>
 </details></section>
 <section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>Setting triggers is one of the cornerstones of the <strong>Forecast-based Financing (FbF) system</strong>. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called <strong>triggers</strong>, based on weather and climate forecasts, which are defined for each region (see <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/">FbF Manual</a>).</p>
 <p>For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
 Finally, the main parameters chosen for the trigger based on the <strong>historical impact assessment</strong> are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were &lt;-1 for the SPI12 and &gt;=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.</p>
@@ -732,11 +738,11 @@ derived population weighted index in the same district, then we will act in this
 </div>
 </section>
 <section id="available-data">
-<h2>Available Data<a class="headerlink" href="#available-data" title="Permalink to this heading">#</a></h2>
+<h2>Available Data<a class="headerlink" href="#available-data" title="Link to this heading">#</a></h2>
 <section id="food-insecurity-projection-data">
-<h3>Food Insecurity Projection data<a class="headerlink" href="#food-insecurity-projection-data" title="Permalink to this heading">#</a></h3>
+<h3>Food Insecurity Projection data<a class="headerlink" href="#food-insecurity-projection-data" title="Link to this heading">#</a></h3>
 <p>The drought trigger mechanism is based on two variable monitoring datasets. One of them Food Insecurity projection produced by FEWSNET which is updated ruffly every month.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Dataset</p></th>
 <th class="head"><p>Source</p></th>
@@ -750,13 +756,14 @@ derived population weighted index in the same district, then we will act in this
 </tr>
 </tbody>
 </table>
+</div>
 <section id="what-is-ipc-food-security-projection-data">
-<h4>What is IPC Food Security Projection Data?<a class="headerlink" href="#what-is-ipc-food-security-projection-data" title="Permalink to this heading">#</a></h4>
+<h4>What is IPC Food Security Projection Data?<a class="headerlink" href="#what-is-ipc-food-security-projection-data" title="Link to this heading">#</a></h4>
 <p>The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity.
 The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index.</p>
 <p>Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered.</p>
 <p>Outlook updates are produced almost every month and are also taken into account.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Colour</p></th>
 <th class="head"><p>Phase</p></th>
@@ -786,14 +793,15 @@ The classification is based on a convergence of available data and evidence, inc
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 </section>
 <section id="training-data">
-<h3>Training Data<a class="headerlink" href="#training-data" title="Permalink to this heading">#</a></h3>
+<h3>Training Data<a class="headerlink" href="#training-data" title="Link to this heading">#</a></h3>
 <p>Download the data folder <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise2_Drought_Monitoring_Trigger/Modul_5_Exercise2_Drought_Monitoring_Trigger.zip">here</a></strong> and save it on your PC. Unzip the .zip file!</p>
 <p>For this particular exercise, we will use a combination of pre-processed data and the download of real data from <a class="reference external" href="http://FEWS.net">FEWS.net</a>.
 The preprocessed datasets are:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Dataset</p></th>
 <th class="head"><p>Source</p></th>
@@ -811,8 +819,9 @@ The preprocessed datasets are:</p>
 </tr>
 </tbody>
 </table>
+</div>
 <p>Whereas the IPC-Projections data will be downloaded by the participants directly from <a class="reference external" href="http://FEWS.net">FEWS.net</a>.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Dataset</p></th>
 <th class="head"><p>Source</p></th>
@@ -826,22 +835,23 @@ The preprocessed datasets are:</p>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 </section>
 <section id="task">
-<h2>Task<a class="headerlink" href="#task" title="Permalink to this heading">#</a></h2>
+<h2>Task<a class="headerlink" href="#task" title="Link to this heading">#</a></h2>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.</p>
 </div>
 <section id="step-1-setting-up-folder-structure">
-<h3>Step 1: Setting up folder structure<a class="headerlink" href="#step-1-setting-up-folder-structure" title="Permalink to this heading">#</a></h3>
+<h3>Step 1: Setting up folder structure<a class="headerlink" href="#step-1-setting-up-folder-structure" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results.</p>
 <p><strong>Tool:</strong> No special tools or programs are needed.</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 71%" />
+<col style="width: 28.6%" />
+<col style="width: 71.4%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Instruction</p></th>
@@ -856,32 +866,30 @@ The preprocessed datasets are:</p>
 </ol>
 </td>
 <td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg"><img alt="../../_images/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg" src="../../_images/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg" width="450px" /></a>
+<a class="reference internal image-reference" href="../../_images/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg"><img alt="../../_images/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg" src="../../_images/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg" style="width: 450px;" />
+</a>
 </figure>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <p>The Video below shows the process for setting up the folder for December 2023.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Setting up folder structure<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Setting up folder structure</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video></p>
 </div>
 </details></section>
 <section id="step-2-download-of-the-forecast-data">
-<h3>Step 2: Download of the forecast data<a class="headerlink" href="#step-2-download-of-the-forecast-data" title="Permalink to this heading">#</a></h3>
+<h3>Step 2: Download of the forecast data<a class="headerlink" href="#step-2-download-of-the-forecast-data" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> In this step, we will download the forecast data on which our triggers will be based.</p>
 <p><strong>Tool:</strong> Internet Browser</p>
 <p>The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website.
 The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.</p>
 </section>
 <section id="ipc-data">
-<h3>IPC Data<a class="headerlink" href="#ipc-data" title="Permalink to this heading">#</a></h3>
+<h3>IPC Data<a class="headerlink" href="#ipc-data" title="Link to this heading">#</a></h3>
 <p>The IPC Projection data is provided and regularly updated on the <a class="reference external" href="https://fews.net/">FEWSNET Website</a>.
 On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through <code class="docutils literal notranslate"><span class="pre">Data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Acute</span> <span class="pre">Food</span> <span class="pre">Insecurity</span> <span class="pre">Data</span></code> and enter „Somalia”. In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</p>
 <div class="admonition warning">
@@ -894,7 +902,8 @@ On the website, you will have to click on Somalia to access the data. Alternativ
 <li><p>Choose the newest dataset.</p></li>
 </ol>
 <figure class="align-center" id="fewsnet-ipc-download-ipc-projections">
-<a class="reference internal image-reference" href="../../_images/IPC_Projections_website.png"><img alt="../../_images/IPC_Projections_website.png" src="../../_images/IPC_Projections_website.png" style="height: 250px;" /></a>
+<a class="reference internal image-reference" href="../../_images/IPC_Projections_website.png"><img alt="../../_images/IPC_Projections_website.png" src="../../_images/IPC_Projections_website.png" style="height: 250px;" />
+</a>
 </figure>
 <ol class="arabic simple" start="4">
 <li><p>Download the one with the <strong>ZIP</strong> Data.</p></li>
@@ -911,21 +920,23 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Remember that you need to copy over all components that the respective <span class="xref myst">shapefile</span> is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.</p>
+<p>Remember that you need to copy over all components that the respective <a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html#vector-data"><span class="std std-ref">shapefile</span></a> is composed of. Most probably it has 5 components: .cpg, .dbf, .prj, .shp, and .shx.</p>
 </div>
 <figure class="align-center" id="content-of-zip-file-downloaded-containing-ml1-and-ml2-ipc-projections">
-<a class="reference internal image-reference" href="../../_images/IPC_zip.PNG"><img alt="../../_images/IPC_zip.PNG" src="../../_images/IPC_zip.PNG" style="height: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/IPC_zip.PNG"><img alt="../../_images/IPC_zip.PNG" src="../../_images/IPC_zip.PNG" style="height: 300px;" />
+</a>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>On the <a class="reference external" href="https://fews.net/">main FEWSNET page</a>, you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">up</span> <span class="pre">for</span> <span class="pre">Emails</span></code>. You will get the option to choose updates only for Somalia.</p>
 <figure class="align-center" id="fewsnet-newsletter">
-<a class="reference internal image-reference" href="../../_images/IPC_Newsletter.png"><img alt="../../_images/IPC_Newsletter.png" src="../../_images/IPC_Newsletter.png" style="height: 60px;" /></a>
+<a class="reference internal image-reference" href="../../_images/IPC_Newsletter.png"><img alt="../../_images/IPC_Newsletter.png" src="../../_images/IPC_Newsletter.png" style="height: 60px;" />
+</a>
 </figure>
 </div>
 </section>
 <section id="step-3-loading-data-into-qgis">
-<h3>Step 3: Loading data into QGIS<a class="headerlink" href="#step-3-loading-data-into-qgis" title="Permalink to this heading">#</a></h3>
+<h3>Step 3: Loading data into QGIS<a class="headerlink" href="#step-3-loading-data-into-qgis" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data.</p>
 <p><strong>Tool:</strong> No specific tools are needed, only QGIS.</p>
 <ol class="arabic simple">
@@ -949,13 +960,13 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 <p><strong>Result:</strong> QGIS project with all necessary data ready to be analysed.</p>
 </section>
 <section id="step-4-intersection-of-ml-1-data-with-the-district-polygons">
-<h3>Step 4: Intersection of ML 1 data with the district polygons<a class="headerlink" href="#step-4-intersection-of-ml-1-data-with-the-district-polygons" title="Permalink to this heading">#</a></h3>
+<h3>Step 4: Intersection of ML 1 data with the district polygons<a class="headerlink" href="#step-4-intersection-of-ml-1-data-with-the-district-polygons" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> The goal is to receive polygon layers which share both the borders and the attributes of both input layers.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection"><code class="docutils literal notranslate"><span class="pre">Intersection</span></code></a></p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
-<col style="width: 44%" />
-<col style="width: 56%" />
+<col style="width: 44.4%" />
+<col style="width: 55.6%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Instruction</p></th>
@@ -972,12 +983,14 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 </ol>
 </td>
 <td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_4_Intersection.png"><img alt="../../_images/SRCS_Trigger_step_4_Intersection.png" src="../../_images/SRCS_Trigger_step_4_Intersection.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_4_Intersection.png"><img alt="../../_images/SRCS_Trigger_step_4_Intersection.png" src="../../_images/SRCS_Trigger_step_4_Intersection.png" style="width: 450px;" />
+</a>
 </figure>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Result:</strong> After doing this for ML1, you should have one polygon layer containing all columns of ML1 and district_pop_sum.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -985,22 +998,18 @@ Example path: <code class="docutils literal notranslate"><span class="pre">.../M
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Intersection of ML 1 data with the district polygons <div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Intersection of ML 1 data with the district polygons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video></p>
 </div>
 </details></section>
 <section id="step-5-calculation-of-population-per-intersection-polygon">
-<h3>Step 5: Calculation of Population per Intersection Polygon<a class="headerlink" href="#step-5-calculation-of-population-per-intersection-polygon" title="Permalink to this heading">#</a></h3>
+<h3>Step 5: Calculation of Population per Intersection Polygon<a class="headerlink" href="#step-5-calculation-of-population-per-intersection-polygon" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Here we calculate the population in each polygon of the intersection layer from step 4.</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics"><code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code></a></p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
-<col style="width: 44%" />
-<col style="width: 56%" />
+<col style="width: 44.4%" />
+<col style="width: 55.6%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Instruction</p></th>
@@ -1023,25 +1032,23 @@ Video: Intersection of ML 1 data with the district polygons <div class="sd-summa
 </ol>
 </td>
 <td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_5_zonal_statistic.png"><img alt="../../_images/SRCS_Trigger_step_5_zonal_statistic.png" src="../../_images/SRCS_Trigger_step_5_zonal_statistic.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_5_zonal_statistic.png"><img alt="../../_images/SRCS_Trigger_step_5_zonal_statistic.png" src="../../_images/SRCS_Trigger_step_5_zonal_statistic.png" style="width: 450px;" />
+</a>
 </figure>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Result:</strong> The result should be the “ML1_zonal_statistic” as a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection <strong>plus</strong> the column “_sum”, which is the number of people living in the single parts of the polygons.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video:  Calculation of Population per Intersection Polygon<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video:  Calculation of Population per Intersection Polygon</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video></p>
 </div>
 </details></section>
 <section id="step-6-weighting-of-the-population-based-on-ipc-phase">
-<h3>Step 6: Weighting of the Population based on IPC-Phase<a class="headerlink" href="#step-6-weighting-of-the-population-based-on-ipc-phase" title="Permalink to this heading">#</a></h3>
+<h3>Step 6: Weighting of the Population based on IPC-Phase<a class="headerlink" href="#step-6-weighting-of-the-population-based-on-ipc-phase" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> The purpose of this step is the weighting of the population in the five IPC phases as described in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index">IPC Data</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1049,15 +1056,11 @@ Video:  Calculation of Population per Intersection Polygon<div class="sd-summary
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-IPC-Population Weighted Index<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">IPC-Population Weighted Index</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:</p>
 <p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">IPC\</span> <span class="pre">Index</span> <span class="pre">=</span>&#160; <span class="pre">Weights</span> <span class="pre">\times</span> <span class="pre">\frac{District\</span> <span class="pre">Pop\</span> <span class="pre">per\</span> <span class="pre">IPC\</span> <span class="pre">Phase}{Total\</span> <span class="pre">District\</span> <span class="pre">Pop}$</span></code></p>
 <p class="sd-card-text">Where the weights are defined as:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p class="sd-card-text">IPC Phase</p></th>
 <th class="head"><p class="sd-card-text">Weight</p></th>
@@ -1081,6 +1084,7 @@ IPC-Population Weighted Index<div class="sd-summary-down docutils">
 </tr>
 </tbody>
 </table>
+</div>
 <p class="sd-card-text">The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.</p>
 </div>
 </details><p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a></p>
@@ -1103,13 +1107,13 @@ END
 </pre></div>
 </div>
 <ol class="arabic simple" start="6">
-<li><p>When you are done, click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<span class="xref myst">Wiki Video</span>).</p></li>
+<li><p>When you are done, click <img alt="" src="../../_images/mActionSaveEdits.png" /> to save your edits and switch off the editing mode by again clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />(<a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing"><span class="std std-ref">Wiki Video</span></a>).</p></li>
 </ol>
 </section>
 </section>
 <section id="step-7-calculation-of-population-proportion-per-intersection-polygon">
-<h2>Step 7: Calculation of Population Proportion per Intersection Polygon<a class="headerlink" href="#step-7-calculation-of-population-proportion-per-intersection-polygon" title="Permalink to this heading">#</a></h2>
-<p><strong>Purpose:</strong> In this step, we calculating the <span class="xref myst">IPC-Population Weighted Index</span> for every small part of the polygon layer.</p>
+<h2>Step 7: Calculation of Population Proportion per Intersection Polygon<a class="headerlink" href="#step-7-calculation-of-population-proportion-per-intersection-polygon" title="Link to this heading">#</a></h2>
+<p><strong>Purpose:</strong> In this step, we calculating the <a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index"><span class="std std-ref">IPC-Population Weighted Index</span></a> for every small part of the polygon layer.</p>
 <p><strong>Tool:</strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a></p>
 <ol class="arabic simple">
 <li><p>Right-click on “ML1_zonal_statistic” layer -&gt; “Attribute Table”-&gt; click on <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a> <img alt="" src="../../_images/mActionCalculateField.png" /> to open the field calculator</p></li>
@@ -1126,26 +1130,23 @@ END
 <li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and turn off editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" /></p></li>
 </ol>
 <figure class="align-center" id="srcs-trigger-step-8-field-calculator">
-<a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_8_field_calculator.png"><img alt="../../_images/SRCS_Trigger_step_8_field_calculator.png" src="../../_images/SRCS_Trigger_step_8_field_calculator.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/SRCS_Trigger_step_8_field_calculator.png"><img alt="../../_images/SRCS_Trigger_step_8_field_calculator.png" src="../../_images/SRCS_Trigger_step_8_field_calculator.png" style="width: 500px;" />
+</a>
 </figure>
 <p><strong>Result:</strong> The layer “ML1_zonal_statistic” should now have the column “Index_per_IPCPolygon_ML1”. The numbers in this column have to be smaller than in the “district” column.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Calculation of Population Proportion per Intersection Polygon<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Calculation of Population Proportion per Intersection Polygon</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video></p>
 </div>
 </details><section id="step-8-calculate-ipc-index-per-district">
-<h3>Step 8: Calculate IPC Index per District<a class="headerlink" href="#step-8-calculate-ipc-index-per-district" title="Permalink to this heading">#</a></h3>
+<h3>Step 8: Calculate IPC Index per District<a class="headerlink" href="#step-8-calculate-ipc-index-per-district" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> The purpose of this step is to calculate a population-weighted mean over the IPC classes per district. In this way, the amount of people living in a certain IPC class will be given more importance than just the area affected by a certain IPC class. The result is an IPC Index value for each district.</p>
 <p><strong>Tool:</strong> <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attribute</span> <span class="pre">by</span> <span class="pre">location</span> <span class="pre">(summary)</span></code></p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
-<col style="width: 44%" />
-<col style="width: 56%" />
+<col style="width: 44.4%" />
+<col style="width: 55.6%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Instruction</p></th>
@@ -1170,25 +1171,23 @@ Video: Calculation of Population Proportion per Intersection Polygon<div class="
 </ol>
 </td>
 <td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Exercise_trigger_join_attributes_location.png"><img alt="../../_images/Exercise_trigger_join_attributes_location.png" src="../../_images/Exercise_trigger_join_attributes_location.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Exercise_trigger_join_attributes_location.png"><img alt="../../_images/Exercise_trigger_join_attributes_location.png" src="../../_images/Exercise_trigger_join_attributes_location.png" style="width: 450px;" />
+</a>
 </figure>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Result:</strong> As a result, your layer “ML1_IPC_Index” should have the column “Index_per_IPCPolygon_ML1_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Calculate IPC Index per District<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Calculate IPC Index per District</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video></p>
 </div>
 </details></section>
 <section id="step-9-evaluate-trigger-activation">
-<h3>Step 9: Evaluate Trigger Activation<a class="headerlink" href="#step-9-evaluate-trigger-activation" title="Permalink to this heading">#</a></h3>
+<h3>Step 9: Evaluate Trigger Activation<a class="headerlink" href="#step-9-evaluate-trigger-activation" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field"><code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code></a></p>
 <ol class="arabic simple">
@@ -1199,9 +1198,9 @@ Video: Calculate IPC Index per District<div class="sd-summary-down docutils">
 <li><p>Add the code below into the <code class="docutils literal notranslate"><span class="pre">Expression</span></code> field.</p></li>
 <li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />.</p></li>
 </ol>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
-<col style="width: 100%" />
+<col style="width: 100.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Code</p></th>
@@ -1221,26 +1220,24 @@ END
 </tr>
 </tbody>
 </table>
+</div>
 <ol class="arabic simple" start="6">
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">ok</span></code>.</p></li>
 <li><p>Save the new column by clicking on <img alt="" src="../../_images/mActionSaveEdits.png" /> in the attribute table and end the editing mode by clicking on <img alt="" src="../../_images/mActionToggleEditing.png" />.</p></li>
 </ol>
 <p><strong>Result:</strong> A layer with all districts of Somalia with a column of “Yes” and “No” values indicating whether the trigger levels have been reached or not.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Exercise_trigger_evaluation.png"><img alt="../../_images/Exercise_trigger_evaluation.png" src="../../_images/Exercise_trigger_evaluation.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Exercise_trigger_evaluation.png"><img alt="../../_images/Exercise_trigger_evaluation.png" src="../../_images/Exercise_trigger_evaluation.png" style="width: 600px;" />
+</a>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Evaluate Trigger Activation</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video></p>
 </div>
 </details></section>
 <section id="step-10-visualising-the-results">
-<h3>Step 10.: Visualising the Results<a class="headerlink" href="#step-10-visualising-the-results" title="Permalink to this heading">#</a></h3>
+<h3>Step 10.: Visualising the Results<a class="headerlink" href="#step-10-visualising-the-results" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Definition of how features are represented visually on the map.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#symbology-for-vector-data">Symbology</a></p>
 <p><strong>Trigger Activation</strong></p>
@@ -1253,16 +1250,13 @@ Video: Evaluate Trigger Activation <div class="sd-summary-down docutils">
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
-Info: Trigger Activation Layer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Info: Trigger Activation Layer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">You will now see districts where no trigger is activated in green and districts with trigger activation in pink.</p>
 <p class="sd-card-text">The “Style_Trigger_Activation.qml” style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see <strong>Administrative 2 Boundaries</strong> below).</p>
 </div>
 </details><figure class="align-center" id="map-yes-trigger">
-<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 1000px;" />
+</a>
 </figure>
 <p><strong>Administrative 2 Boundaries (Regions)</strong></p>
 <ol class="arabic simple" start="6">
@@ -1271,7 +1265,7 @@ Info: Trigger Activation Layer<div class="sd-summary-down docutils">
 <li><p>In the new window click on the three points <img alt="" src="../../_images/Three_points.png" />. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <strong>“SOM_regions_style_ex.qml”</strong>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Then click on <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
 <li><p>Back in the “Layer Properties” Window click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
-<li><p>Add a the OpenStreetMap basemap by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">layer...</span></code> -&gt; Select the OpenStreetMap. Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. (<a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="doc std std-doc">Wiki basemap</span></a>).</p></li>
+<li><p>Add a the OpenStreetMap basemap by clicking on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">layer...</span></code> -&gt; Select the OpenStreetMap. Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. (<a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html"><span class="std std-doc">Wiki basemap</span></a>).</p></li>
 <li><p>Place the OpenStreetMap basemap on the bottom.</p></li>
 <li><p>Delet all layers <strong>exept</strong>:</p>
 <ul class="simple">
@@ -1283,17 +1277,13 @@ Info: Trigger Activation Layer<div class="sd-summary-down docutils">
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Visualisation of results<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Visualisation of results</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video></p>
 </div>
-</details><table class="table">
+</details><div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Intervention Map <strong>without</strong> Trigger activation</p></th>
@@ -1302,23 +1292,26 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 </thead>
 <tbody>
 <tr class="row-even"><td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Map_no_trigger.PNG"><img alt="../../_images/Map_no_trigger.PNG" src="../../_images/Map_no_trigger.PNG" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Map_no_trigger.PNG"><img alt="../../_images/Map_no_trigger.PNG" src="../../_images/Map_no_trigger.PNG" style="width: 1000px;" />
+</a>
 </figure>
 </td>
 <td><figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Map_yes_trigger.PNG"><img alt="../../_images/Map_yes_trigger.PNG" src="../../_images/Map_yes_trigger.PNG" style="width: 450px;" />
+</a>
 </figure>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Remember the <a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html"><span class="doc std std-doc">layer concept</span></a> and make sure the basemap layer is at the bottom of your layers panel.</p>
+<p>Remember the <a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html"><span class="std std-doc">layer concept</span></a> and make sure the basemap layer is at the bottom of your layers panel.</p>
 </div>
 </section>
 <section id="step-11-making-print-map">
-<h3>Step 11: Making print map<a class="headerlink" href="#step-11-making-print-map" title="Permalink to this heading">#</a></h3>
+<h3>Step 11: Making print map<a class="headerlink" href="#step-11-making-print-map" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Visualisation of the map features in a printable map layout.</p>
 <p><strong>Tool:</strong>  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">Print Layout</a></p>
 <ol class="arabic simple">
@@ -1336,11 +1329,7 @@ Video: Visualisation of results<div class="sd-summary-down docutils">
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Video: Making a print map<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Making a print map</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video></p>
 </div>
 </details><div class="admonition attention">
@@ -1354,7 +1343,7 @@ Video: Making a print map<div class="sd-summary-down docutils">
 </div>
 </section>
 <section id="step-13-exporting-map">
-<h3>Step 13.: Exporting Map<a class="headerlink" href="#step-13-exporting-map" title="Permalink to this heading">#</a></h3>
+<h3>Step 13.: Exporting Map<a class="headerlink" href="#step-13-exporting-map" title="Link to this heading">#</a></h3>
 <p><strong>Purpose:</strong> Export the designed and finalised map layout in order to print it as a pdf or format of your choice.</p>
 <p><strong>Tool:</strong> <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">Print Layout</a></p>
 <p>When you have finished the design of you map, you can export it as pdf or image file in different data types.</p>
@@ -1376,7 +1365,8 @@ Now the image can be found in the result folder in the folder you created in Ste
 </ol>
 <p>Now the image can be found in the result folder in the folder you created in Step 1.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/map_output_example_ex.png"><img alt="../../_images/map_output_example_ex.png" src="../../_images/map_output_example_ex.png" style="width: 1000px;" /></a>
+<a class="reference internal image-reference" href="../../_images/map_output_example_ex.png"><img alt="../../_images/map_output_example_ex.png" src="../../_images/map_output_example_ex.png" style="width: 1000px;" />
+</a>
 </figure>
 </section>
 </section>
@@ -1409,7 +1399,7 @@ Now the image can be found in the result folder in the folder you created in Ste
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
 </div>
@@ -1420,6 +1410,7 @@ Now the image can be found in the result folder in the folder you created in Ste
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1512,8 +1503,8 @@ This project is released under a <a href="https://creativecommons.org/licenses/b
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

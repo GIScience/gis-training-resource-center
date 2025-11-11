@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sketch Map Tool Exercise 2 - Traffic light &#8212; GIS Resource Training Center</title>
   
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Mobile_Data_collection/en_SMT_ex2_old';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -74,28 +69,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -118,17 +108,24 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
 
-
-  <div class="bd-header-announcement container-fluid bd-header-announcement">
-    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
-  </div>
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -144,6 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -162,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -174,14 +184,14 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
@@ -190,16 +200,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
@@ -210,8 +220,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
 
@@ -219,47 +229,47 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
@@ -269,8 +279,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
 
 
@@ -280,35 +290,35 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
@@ -322,21 +332,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
@@ -344,14 +354,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="en_SMT.html">Sketch Map Tool</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
 <ul class="nav bd-sidenav">
@@ -391,7 +401,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -400,14 +410,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -532,10 +542,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -543,14 +553,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -594,20 +604,21 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sketch-map-tool-exercise-2-traffic-light">
-<h1>Sketch Map Tool Exercise 2 - Traffic light<a class="headerlink" href="#sketch-map-tool-exercise-2-traffic-light" title="Permalink to this heading">#</a></h1>
+<h1>Sketch Map Tool Exercise 2 - Traffic light<a class="headerlink" href="#sketch-map-tool-exercise-2-traffic-light" title="Link to this heading">#</a></h1>
 <p>This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap.</p>
 <!--INFO: Kept as a reference, DELETE-->
 <figure class="align-center" id="smt-traffic-light-exercise">
-<a class="reference internal image-reference" href="../../_images/SMT_Idee_traffic_light_exerices.png"><img alt="../../_images/SMT_Idee_traffic_light_exerices.png" src="../../_images/SMT_Idee_traffic_light_exerices.png" style="height: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/SMT_Idee_traffic_light_exerices.png"><img alt="../../_images/SMT_Idee_traffic_light_exerices.png" src="../../_images/SMT_Idee_traffic_light_exerices.png" style="height: 450px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">SMT Traffic light</span><a class="headerlink" href="#smt-traffic-light-exercise" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">SMT Traffic light</span><a class="headerlink" href="#smt-traffic-light-exercise" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="characteristics-of-the-exercise">
-<h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Permalink to this heading">#</a></h2>
+<h2>Characteristics of the exercise<a class="headerlink" href="#characteristics-of-the-exercise" title="Link to this heading">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text"><strong>Aim of this exercise:</strong></p>
@@ -682,23 +693,19 @@ document.write(`
 </div>
 </section>
 <section id="instructions-for-the-trainers">
-<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Permalink to this heading">#</a></h2>
+<h2>Instructions for the trainers<a class="headerlink" href="#instructions-for-the-trainers" title="Link to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Trainers Corner</strong><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="rubric">Prepare the training</p>
+<span class="sd-summary-text"><strong>Trainers Corner</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="prepare-the-training">Prepare the training</h3>
 <ul class="simple">
 <li><p class="sd-card-text">Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.</p></li>
 <li><p class="sd-card-text">For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.</p></li>
 <li><p class="sd-card-text">Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. There are 5 case study maps available which contain each two sketch maps (one based on OSM, one on satellite imagery) and the respective Quality Report</p></li>
 <li><p class="sd-card-text">Prepare a board (it can be a white board/flipchart/or digital e.g. Miro-board) where the participants can add their findings.</p></li>
-<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="doc std std-doc">How to do trainings?</span></a> for some general tips on training conduction</p></li>
+<li><p class="sd-card-text">Check out <a class="reference internal" href="../Trainers_corner/en_how_to_training.html"><span class="std std-doc">How to do trainings?</span></a> for some general tips on training conduction</p></li>
 </ul>
-<p class="rubric">Conduct the training:</p>
+<h3 class="rubric" id="conduct-the-training">Conduct the training:</h3>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">Make sure everyone is familiar with the basic understanding about OSM and satellite maps. Introduce the aim of the exercise and the idea of the traffic lights and the analysis before you start the exercise!</p></li>
@@ -718,10 +725,10 @@ document.write(`
 </div>
 </details></section>
 <section id="what-you-need-to-know-background-information">
-<h2>What you need to know - Background information<a class="headerlink" href="#what-you-need-to-know-background-information" title="Permalink to this heading">#</a></h2>
+<h2>What you need to know - Background information<a class="headerlink" href="#what-you-need-to-know-background-information" title="Link to this heading">#</a></h2>
 <section id="characteristics-of-the-two-base-maps">
-<h3>Characteristics of the two base maps<a class="headerlink" href="#characteristics-of-the-two-base-maps" title="Permalink to this heading">#</a></h3>
-<table class="table">
+<h3>Characteristics of the two base maps<a class="headerlink" href="#characteristics-of-the-two-base-maps" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
 <th class="head text-left"><p>Satellite imagery</p></th>
@@ -747,10 +754,11 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="what-does-georeferenced-mean">
-<h3>What does georeferenced mean?<a class="headerlink" href="#what-does-georeferenced-mean" title="Permalink to this heading">#</a></h3>
-<table class="table">
+<h3>What does georeferenced mean?<a class="headerlink" href="#what-does-georeferenced-mean" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Non-Georeferenced image</p></th>
 <th class="head text-left"><p>Georeferenced image – GeoTIFF</p></th>
@@ -765,13 +773,15 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="map-quality-check">
-<h3>Map Quality Check<a class="headerlink" href="#map-quality-check" title="Permalink to this heading">#</a></h3>
+<h3>Map Quality Check<a class="headerlink" href="#map-quality-check" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="smt-heidelberg-report">
-<a class="reference internal image-reference" href="../../_images/SMT_Heidelberg_report_1.jpg"><img alt="../../_images/SMT_Heidelberg_report_1.jpg" src="../../_images/SMT_Heidelberg_report_1.jpg" style="height: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/SMT_Heidelberg_report_1.jpg"><img alt="../../_images/SMT_Heidelberg_report_1.jpg" src="../../_images/SMT_Heidelberg_report_1.jpg" style="height: 500px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Map Quality Check; Sketch Map Tool Heidelberg report</span><a class="headerlink" href="#smt-heidelberg-report" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Map Quality Check; Sketch Map Tool Heidelberg report</span><a class="headerlink" href="#smt-heidelberg-report" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The Sketch Map Tool can evaluate how well-suited an area of the <a class="reference external" href="https://www.openstreetmap.org/#map=6/51.330/10.453">OpenStreetMap (OSM)</a> basemap is for participatory mapping based on a quality analysis of the OpenStreetMap (OSM) basemap data through the <a class="reference external" href="https://heigit.org/big-spatial-data-analytics-en/ohsome/ohsome-quality-analyst-oqt/">HeiGIT ohsome quality analyst</a>.</p>
@@ -779,18 +789,18 @@ document.write(`
 </section>
 </section>
 <section id="step-by-step-introduction-for-participants">
-<h2>Step-by step introduction for participants<a class="headerlink" href="#step-by-step-introduction-for-participants" title="Permalink to this heading">#</a></h2>
+<h2>Step-by step introduction for participants<a class="headerlink" href="#step-by-step-introduction-for-participants" title="Link to this heading">#</a></h2>
 <p>Download <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf">here</a> a printable factsheet to guide you through this exercise.</p>
 <p>If you experiences any problems during your use of the <a class="reference external" href="https://sketch-map-tool.heigit.org/">Sketch Map Tool</a> please take a look at the <a class="reference external" href="https://sketch-map-tool.heigit.org/help">Help page</a>.</p>
 <section id="create-the-maps-and-reports">
-<h3>1.	Create the maps and reports<a class="headerlink" href="#create-the-maps-and-reports" title="Permalink to this heading">#</a></h3>
+<h3>1.	Create the maps and reports<a class="headerlink" href="#create-the-maps-and-reports" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Open the <a class="reference external" href="https://sketch-map-tool.heigit.org/">Sketch Map Tool</a></p></li>
 <li><p>With you group, decide on an area fitting to your case-study. You can also choose an area you know very well or find interesting.</p></li>
 <li><p>Zoom in and select your map area: Try different zoom levels and change the orientation.</p></li>
 <li><p>Create several maps of the same area with different orientation, zoom-level or basemaps.</p></li>
 </ul>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Sketch Map with a satellite base map</p></th>
 <th class="head text-left"><p>Sketch Map with a OSM base map</p></th>
@@ -804,13 +814,14 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>To shorten the time, you can work with <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip">prepared cases</a>.</p>
 </div>
 </section>
 <section id="collect-your-insights-to-the-following-questions">
-<h3>2.	Collect your insights to the following questions<a class="headerlink" href="#collect-your-insights-to-the-following-questions" title="Permalink to this heading">#</a></h3>
+<h3>2.	Collect your insights to the following questions<a class="headerlink" href="#collect-your-insights-to-the-following-questions" title="Link to this heading">#</a></h3>
 <p>Add your insights to a presentation or share it on a (digital) board:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -832,7 +843,7 @@ Are there points of interests / something you could use as orientation point?</p
 </ul>
 </section>
 <section id="wrap-up">
-<h3>3.	Wrap-up:<a class="headerlink" href="#wrap-up" title="Permalink to this heading">#</a></h3>
+<h3>3.	Wrap-up:<a class="headerlink" href="#wrap-up" title="Link to this heading">#</a></h3>
 <p>Make some notes and prepare yourself for a short presentation of your maps to share with the other participants:</p>
 <ul class="simple">
 <li><p>Prepare your Presentation and decide who is going to present.</p></li>
@@ -869,7 +880,7 @@ Are there points of interests / something you could use as orientation point?</p
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
 </div>
@@ -880,6 +891,7 @@ Are there points of interests / something you could use as orientation point?</p
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -957,8 +969,8 @@ This project is released under a <a href="https://creativecommons.org/licenses/b
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

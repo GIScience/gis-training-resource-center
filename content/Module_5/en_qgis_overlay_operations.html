@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>5.2. Overlay Operations (Clip, Dissolve, Buffer) &#8212; GIS Resource Training Center</title>
   
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_5/en_qgis_overlay_operations';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -76,28 +71,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -120,17 +110,22 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
 
-
-  <div class="bd-header-announcement container-fluid bd-header-announcement">
-    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
-  </div>
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -146,6 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -164,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -176,14 +184,14 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
@@ -192,16 +200,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
@@ -212,8 +220,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
 </ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_5_overview.html">5. Intermediate GIS Operations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_5_overview.html">5. Intermediate GIS Operations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
 
@@ -221,47 +229,47 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
@@ -271,8 +279,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
 
 
@@ -282,35 +290,35 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
@@ -324,21 +332,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
@@ -346,14 +354,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
 <ul class="nav bd-sidenav">
@@ -393,7 +401,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -402,14 +410,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -534,10 +542,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -545,14 +553,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -593,34 +601,35 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></p>
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
 </div>
-<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/intro.html</span></a></div>
 </div>
 </div>
 </div>
 <section id="overlay-operations-clip-dissolve-buffer">
-<h1><span class="section-number">5.2. </span>Overlay Operations (Clip, Dissolve, Buffer)<a class="headerlink" href="#overlay-operations-clip-dissolve-buffer" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">5.2. </span>Overlay Operations (Clip, Dissolve, Buffer)<a class="headerlink" href="#overlay-operations-clip-dissolve-buffer" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <a class="reference internal" href="#overlay-operations"><span class="std std-numref">Fig. 5.9</span></a>).</p></li>
 <li><p>The difference to spatial joins is that the <strong>geometries are transformed in the process</strong>, and not primarily the attributes.</p></li>
 </ul>
 <figure class="align-default" id="overlay-operations">
-<a class="reference internal image-reference" href="../../_images/overlay_operations.png"><img alt="../../_images/overlay_operations.png" src="../../_images/overlay_operations.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/overlay_operations.png"><img alt="../../_images/overlay_operations.png" src="../../_images/overlay_operations.png" style="width: 500px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Visual representation of different overlay operations.</span><a class="headerlink" href="#overlay-operations" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Visual representation of different overlay operations.</span><a class="headerlink" href="#overlay-operations" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Overlay operations include <strong>Clipping, Buffering, and Dissolving</strong>. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.</p>
 <section id="clip">
-<h2><span class="section-number">5.2.1. </span>Clip<a class="headerlink" href="#clip" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2.1. </span>Clip<a class="headerlink" href="#clip" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool is used to cut a vector layer using the boundaries of another polygon layer. In other words, it extracts a portion of a dataset based on the boundaries of another.</p></li>
 <li><p>It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, producing a refined dataset.</p></li>
@@ -640,14 +649,15 @@ document.write(`
 <li><p><strong>Overlay layer</strong>: Area of interest to which the input layer will be clipped</p></li>
 </ul>
 <figure class="align-default" id="en-clip-sudan">
-<a class="reference internal image-reference" href="../../_images/en_clip_sudan.PNG"><img alt="../../_images/en_clip_sudan.PNG" src="../../_images/en_clip_sudan.PNG" style="width: 550px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_clip_sudan.PNG"><img alt="../../_images/en_clip_sudan.PNG" src="../../_images/en_clip_sudan.PNG" style="width: 550px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Screenshot of the Clip tool with the input data.</span><a class="headerlink" href="#en-clip-sudan" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Screenshot of the Clip tool with the input data.</span><a class="headerlink" href="#en-clip-sudan" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="exercise-clipping-a-roads-layer-to-administrative-boundaries">
-<h2><span class="section-number">5.2.2. </span>Exercise: Clipping a roads layer to administrative boundaries<a class="headerlink" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2.2. </span>Exercise: Clipping a roads layer to administrative boundaries<a class="headerlink" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries" title="Link to this heading">#</a></h2>
 <p>Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice toclip the data to the area of interest. In addition to clipping, data can often be filtered, in order to remove data we are not interested in.</p>
 <ol class="arabic simple">
 <li><p>Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip">here</a> .
@@ -664,16 +674,12 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Solution: Clipping a roads layer to administrative boundaries<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Solution: Clipping a roads layer to administrative boundaries</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video></p>
 </div>
 </details></section>
 <section id="dissolve">
-<h2><span class="section-number">5.2.3. </span>Dissolve<a class="headerlink" href="#dissolve" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2.3. </span>Dissolve<a class="headerlink" href="#dissolve" title="Link to this heading">#</a></h2>
 <p>The <img alt="" src="../../_images/mAlgorithmDissolve.png" /> <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code>-tool creates a new layer and merges overlapping features from one or two vector layers. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. If you’re working with polygons, it will remove shared boundaries between them.</p>
 <p>If you turn on the “Keep disjoint features separate” option when running the tool, it’ll make sure that features or parts that don’t overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.</p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -685,15 +691,16 @@ Solution: Clipping a roads layer to administrative boundaries<div class="sd-summ
 </div>
 </div>
 <figure class="align-default" id="buffer-dissolve">
-<a class="reference internal image-reference" href="../../_images/en_buffer_dissolve.png"><img alt="../../_images/en_buffer_dissolve.png" src="../../_images/en_buffer_dissolve.png" style="width: 550px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_buffer_dissolve.png"><img alt="../../_images/en_buffer_dissolve.png" src="../../_images/en_buffer_dissolve.png" style="width: 550px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the next section on <strong>buffers</strong> we will be using the <strong>dissolve-tool</strong>.</p>
 </section>
 <section id="buffer">
-<h2><span class="section-number">5.2.4. </span>Buffer<a class="headerlink" href="#buffer" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2.4. </span>Buffer<a class="headerlink" href="#buffer" title="Link to this heading">#</a></h2>
 <p>Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <a class="reference internal" href="#buffering-options"><span class="std std-numref">Fig. 5.12</span></a>.</p>
 <p>Examples for analyses using buffers could be:</p>
 <ul class="simple">
@@ -710,18 +717,20 @@ Solution: Clipping a roads layer to administrative boundaries<div class="sd-summ
 </div>
 </div>
 <figure class="align-default" id="buffering-options">
-<a class="reference internal image-reference" href="../../_images/en_buffer_point_line_polygon.png"><img alt="../../_images/en_buffer_point_line_polygon.png" src="../../_images/en_buffer_point_line_polygon.png" style="width: 550px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_buffer_point_line_polygon.png"><img alt="../../_images/en_buffer_point_line_polygon.png" src="../../_images/en_buffer_point_line_polygon.png" style="width: 550px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Different kinds of buffer zones <br /> (Adapted after <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffering-options" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Different kinds of buffer zones <br /> (Adapted after <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffering-options" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>There are several variations in buffering. The <strong>buffer distance</strong> or <strong>buffer size can vary</strong> according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <figure class="align-default" id="dist-degree-error-message">
-<a class="reference internal image-reference" href="../../_images/en_dist_in_degrees_error_msg.png"><img alt="../../_images/en_dist_in_degrees_error_msg.png" src="../../_images/en_dist_in_degrees_error_msg.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_dist_in_degrees_error_msg.png"><img alt="../../_images/en_dist_in_degrees_error_msg.png" src="../../_images/en_dist_in_degrees_error_msg.png" style="width: 450px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.13 </span><span class="caption-text">The error message QGIS displays when performing distance based calculations in a geographic coordinate system.</span><a class="headerlink" href="#dist-degree-error-message" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.13 </span><span class="caption-text">The error message QGIS displays when performing distance based calculations in a geographic coordinate system.</span><a class="headerlink" href="#dist-degree-error-message" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If…</p>
@@ -739,17 +748,18 @@ Solution: Clipping a roads layer to administrative boundaries<div class="sd-summ
 </ul>
 <p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <a class="reference internal" href="#distance-longitudes"><span class="std std-numref">Fig. 5.14</span></a>)</p>
 <figure class="align-default" id="distance-longitudes">
-<a class="reference internal image-reference" href="../../_images/en_dist_longitudes.png"><img alt="../../_images/en_dist_longitudes.png" src="../../_images/en_dist_longitudes.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_dist_longitudes.png"><img alt="../../_images/en_dist_longitudes.png" src="../../_images/en_dist_longitudes.png" style="width: 450px;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 5.14 </span><span class="caption-text">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
-longitude at 70 degrees latitude is only 381km. (Source: <a class="reference external" href="https://x.com/RickyAngueira/status/1594030866132410368">Ricky Angueria</a>).</span><a class="headerlink" href="#distance-longitudes" title="Permalink to this image">#</a></p>
+longitude at 70 degrees latitude is only 381km. (Source: <a class="reference external" href="https://x.com/RickyAngueira/status/1594030866132410368">Ricky Angueria</a>).</span><a class="headerlink" href="#distance-longitudes" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This is why you’ll need to convert to a local/projected coordinate system to be able to specify distances in km/miles (e.g. when using the buffer tool).</p>
 </div>
 </section>
 <section id="exercise-create-10km-buffer-around-health-centres">
-<h2><span class="section-number">5.2.5. </span>Exercise: Create 10km buffer around health centres<a class="headerlink" href="#exercise-create-10km-buffer-around-health-centres" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2.5. </span>Exercise: Create 10km buffer around health centres<a class="headerlink" href="#exercise-create-10km-buffer-around-health-centres" title="Link to this heading">#</a></h2>
 <p>Another example relevant for humanitarian action can be the creation of a map which provides information about the coverage of health sites in the distance of 10 km.
 To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping buffer zones.</p>
 <ol class="arabic simple">
@@ -777,26 +787,23 @@ They are also downloaded and adapted from <a class="reference external" href="ht
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Solution: Create 10km buffer around health centres<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Solution: Create 10km buffer around health centres</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video></p>
 </div>
 </details></section>
 <section id="more-advanced-clipping-operations">
-<h2><span class="section-number">5.2.6. </span>More advanced clipping operations<a class="headerlink" href="#more-advanced-clipping-operations" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.2.6. </span>More advanced clipping operations<a class="headerlink" href="#more-advanced-clipping-operations" title="Link to this heading">#</a></h2>
 <p>In addition to the standard QGIS operation <strong>Clip</strong>, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.</p>
 <figure class="align-default" id="gdal-clipping-tools">
-<a class="reference internal image-reference" href="../../_images/en_gdal_clipping_tools.PNG"><img alt="../../_images/en_gdal_clipping_tools.PNG" src="../../_images/en_gdal_clipping_tools.PNG" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_gdal_clipping_tools.PNG"><img alt="../../_images/en_gdal_clipping_tools.PNG" src="../../_images/en_gdal_clipping_tools.PNG" style="width: 250px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.15 </span><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer.</span><a class="headerlink" href="#gdal-clipping-tools" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.15 </span><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer.</span><a class="headerlink" href="#gdal-clipping-tools" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-0">
+<label class="sd-tab-label" for="sd-tab-item-0">
 Clip vector by extent</label><div class="sd-tab-content docutils">
 <p>This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:</p>
 <ul class="simple">
@@ -808,14 +815,15 @@ Clip vector by extent</label><div class="sd-tab-content docutils">
 <li><p>Enter the coordinates as xmin, xmax, ymin, ymax.</p></li>
 </ul>
 <figure class="align-default" id="en-clip-vector-by-extent">
-<a class="reference internal image-reference" href="../../_images/en_clip_vector_by_extent.PNG"><img alt="../../_images/en_clip_vector_by_extent.PNG" src="../../_images/en_clip_vector_by_extent.PNG" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_clip_vector_by_extent.PNG"><img alt="../../_images/en_clip_vector_by_extent.PNG" src="../../_images/en_clip_vector_by_extent.PNG" style="width: 450px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-1">
+<label class="sd-tab-label" for="sd-tab-item-1">
 Clip vector by mask layer</label><div class="sd-tab-content docutils">
 <p>This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:</p>
 <ol class="arabic simple">
@@ -823,9 +831,10 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 <li><p>The mask layer which is used as the clipping extent for the input vector layer</p></li>
 </ol>
 <figure class="align-default" id="clip-vector-by-mask-layer">
-<a class="reference internal image-reference" href="../../_images/en_clip_vector_by_mask_layer.PNG"><img alt="../../_images/en_clip_vector_by_mask_layer.PNG" src="../../_images/en_clip_vector_by_mask_layer.PNG" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../../_images/en_clip_vector_by_mask_layer.PNG"><img alt="../../_images/en_clip_vector_by_mask_layer.PNG" src="../../_images/en_clip_vector_by_mask_layer.PNG" style="width: 450px;" />
+</a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Screenshot of the tool Clip vector by mask layer.</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Screenshot of the tool Clip vector by mask layer.</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -833,7 +842,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 </section>
 </section>
 <section id="self-assessment-questions">
-<h1><span class="section-number">5.3. </span>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">5.3. </span>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Link to this heading">#</a></h1>
 <div class="note admonition">
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
@@ -841,11 +850,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Answer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text">An overlay operation is a type of vector geoprocessing tool in GIS that combines or manipulates the geometries of two (or more) layers based on their spatial relationships (such as intersection, union, clipping, etc.).<br />
 It is useful when:</p></li>
@@ -859,11 +864,7 @@ It is useful when:</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Answer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text">In most cases, QGIS allows you to specify which attributes will be copied from which input to the algorithm output. If nothing is specified, QGIS will usually copy all attributes from both layers to the resulting layer.</p></li>
 <li><p class="sd-card-text">While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you’ve stored these properties as attributes, you might need to update them in the resulting layer.</p></li>
@@ -899,7 +900,7 @@ Answer<div class="sd-summary-down docutils">
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -928,6 +929,7 @@ Answer<div class="sd-summary-down docutils">
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1002,8 +1004,8 @@ This project is released under a <a href="https://creativecommons.org/licenses/b
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Exercice 3 : Identification des établissements de santé et d’éducation impactés – Aina ajoute des couches supplémentaires &#8212; GIS Resource Training Center</title>
   
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_7/fr_module_7_mdg_aa_ex_3';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -74,28 +69,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -118,17 +108,24 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
 
-
-  <div class="bd-header-announcement container-fluid bd-header-announcement">
-    <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
-  </div>
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -144,6 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -162,7 +161,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -174,14 +184,14 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
@@ -190,16 +200,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
@@ -210,8 +220,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
 
@@ -219,47 +229,47 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_7_overview.html">7. Automation with QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
@@ -269,8 +279,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
 
 
@@ -280,35 +290,35 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
@@ -322,21 +332,21 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
 
 
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
 </ul>
-</li>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
@@ -344,14 +354,14 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
 <ul class="nav bd-sidenav">
@@ -391,7 +401,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -400,14 +410,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -532,10 +542,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -543,14 +553,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -587,23 +597,23 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z"></path></svg></p>
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
 </div>
-<a class="sd-stretched-link reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"></a></div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/intro.html</span></a></div>
 </div>
 </div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="exercice-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires">
-<h1>Exercice 3 : Identification des établissements de santé et d’éducation impactés – Aina ajoute des couches supplémentaires<a class="headerlink" href="#exercice-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires" title="Permalink to this heading">#</a></h1>
+<h1>Exercice 3 : Identification des établissements de santé et d’éducation impactés – Aina ajoute des couches supplémentaires<a class="headerlink" href="#exercice-3-identification-des-etablissements-de-sante-et-d-education-impactes-aina-ajoute-des-couches-supplementaires" title="Link to this heading">#</a></h1>
 <section id="caracteristiques">
-<h2>Caractéristiques<a class="headerlink" href="#caracteristiques" title="Permalink to this heading">#</a></h2>
+<h2>Caractéristiques<a class="headerlink" href="#caracteristiques" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -625,7 +635,7 @@ document.write(`
 <p class="sd-card-text"><strong>Piste d’Exercice:</strong></p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Cet exercice est le troisième exercice de la piste d’exercice <a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html"><span class="doc std std-doc">“Analyse d’Action Anticipative pour les Cyclones à Madagascar”</span></a></p>
+<p class="sd-card-text">Cet exercice est le troisième exercice de la piste d’exercice <a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html"><span class="std std-doc">“Analyse d’Action Anticipative pour les Cyclones à Madagascar”</span></a></p>
 </div>
 </div>
 </div>
@@ -652,9 +662,9 @@ document.write(`
 <ul class="simple">
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html">Zonal Statistics</a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Intersection</a></p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">Projections</span></a></p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">Buffer</span></a></p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="doc std std-doc">Clip</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="std std-doc">Projections</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="std std-doc">Buffer</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html"><span class="std std-doc">Clip</span></a></p></li>
 <li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html">Automatisation</a></p></li>
 </ul>
 </div>
@@ -674,22 +684,18 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 </div>
 </section>
 <section id="instruction-pour-les-formateurs">
-<h2>Instruction pour les formateurs<a class="headerlink" href="#instruction-pour-les-formateurs" title="Permalink to this heading">#</a></h2>
+<h2>Instruction pour les formateurs<a class="headerlink" href="#instruction-pour-les-formateurs" title="Link to this heading">#</a></h2>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<strong>Espace Formateurs (Trainers Corner)</strong> <div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="rubric">Préparer la formation</p>
+<span class="sd-summary-text"><strong>Espace Formateurs (Trainers Corner)</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="preparer-la-formation">Préparer la formation</h3>
 <ul class="simple">
 <li><p class="sd-card-text">Prenez du temps pour vous familiariser avec l’exercice et le matériel founi.</p></li>
 <li><p class="sd-card-text">Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions.</p></li>
 <li><p class="sd-card-text">Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé <strong>et dézippé</strong> le dossier de données.</p></li>
 <li><p class="sd-card-text">Consultez <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings">How to do trainings?</a> pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).</p></li>
 </ul>
-<p class="rubric">Animer la formation</p>
+<h3 class="rubric" id="animer-la-formation">Animer la formation</h3>
 <p class="sd-card-text"><strong>Introduction:</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">Présentez l’idée et l’objectif de l’exercice.</p></li>
@@ -701,7 +707,7 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 <li><p class="sd-card-text">Assurez-vous que tout le monde suit en demandant régulièrement si quelqu’un a besoid d’aide ou si tout le monde suit toujours.</p></li>
 <li><p class="sd-card-text">Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s’orientant dans leur propre projet QGIS.</p></li>
 </ul>
-<p class="rubric">Fin de la formation</p>
+<h3 class="rubric" id="fin-de-la-formation">Fin de la formation</h3>
 <ul class="simple">
 <li><p class="sd-card-text">Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.</p></li>
 <li><p class="sd-card-text">Laissez un moment pour des questions ouvertes.</p></li>
@@ -718,11 +724,11 @@ L’objectif est de préparer un workflow d’analyse et de visualisation pour s
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.</strong></p>
 </div>
-<a class="sd-stretched-link reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip"></a></div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip"><span>https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip</span></a></div>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taches">
-<h1>Tâches<a class="headerlink" href="#taches" title="Permalink to this heading">#</a></h1>
+<h1>Tâches<a class="headerlink" href="#taches" title="Link to this heading">#</a></h1>
 <ol class="arabic simple">
 <li><p><strong>Importer les données des établissements de santé et d’éducation</strong>
 Tout d’abord, examinons les données avec lesquelles nous allons travailler:</p>
@@ -781,22 +787,24 @@ Tout d’abord, examinons les données avec lesquelles nous allons travailler:</
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-0">
+<label class="sd-tab-label" for="sd-tab-item-0">
 Entrée: établissements de santé</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="the-world-result">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Définir une nouvelle entrée de modèle: couche vectorielle de points représentant les établissements de santé</span><a class="headerlink" href="#the-world-result" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle: couche vectorielle de points représentant les établissements de santé</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-1">
+<label class="sd-tab-label" for="sd-tab-item-1">
 Entrée: établissements d’enseignement</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Définir une nouvelle entrée de modèle: couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle: couche vectorielle de points représentant les établissements d’enseignement</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -818,9 +826,10 @@ Entrée: établissements d’enseignement</label><div class="sd-tab-content docu
 </li>
 </ul>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : compter le nombre d’établissements de santé dans chaque district.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="5">
@@ -845,9 +854,10 @@ Entrée: établissements d’enseignement</label><div class="sd-tab-content docu
 </li>
 </ol>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération: compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération: compter le nombre d’établissements scolaires dans chaque district.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="6">
@@ -870,9 +880,10 @@ Entrée: établissements d’enseignement</label><div class="sd-tab-content docu
 </li>
 </ol>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de santé avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération : intersecter les établissements de santé avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="7">
@@ -896,9 +907,10 @@ Entrée: établissements d’enseignement</label><div class="sd-tab-content docu
 </li>
 </ol>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération: intersecter les établissements de education avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération: intersecter les établissements de education avec la zone d’impact du cyclone.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="8">
@@ -926,9 +938,10 @@ Entrée: établissements d’enseignement</label><div class="sd-tab-content docu
 </li>
 </ol>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération: compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération: compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="9">
@@ -956,9 +969,10 @@ Entrée: établissements d’enseignement</label><div class="sd-tab-content docu
 </li>
 </ol>
 <figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG"><img alt="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" src="../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération: compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération: compter les établissements de santé touchés par district.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="10">
@@ -1002,9 +1016,10 @@ END
 </pre></div>
 </div>
 <figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération: calculer le pourcentage d’établissements de santé touchés par district.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération: calculer le pourcentage d’établissements de santé touchés par district.</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="11">
@@ -1048,9 +1063,10 @@ END
 </li>
 </ul>
 <figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG"><img alt="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" src="../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération: calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration de l’opération: calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="12">
@@ -1097,32 +1113,35 @@ END
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-2">
+<label class="sd-tab-label" for="sd-tab-item-2">
 Modeleur</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id10">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithmes connectés et les sorties définies.</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-3">
+<label class="sd-tab-label" for="sd-tab-item-3">
 Configuration de l’exécution du modèle</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id11">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-</input><label class="sd-tab-label" for="sd-tab-item-4">
+<label class="sd-tab-label" for="sd-tab-item-4">
 Sortie du modèle</label><div class="sd-tab-content docutils">
 <figure class="align-center" id="id12">
-<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG"><img alt="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" src="../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" style="width: 600px;" />
+</a>
 <figcaption>
-<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1156,7 +1175,7 @@ Sortie du modèle</label><div class="sd-tab-content docutils">
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
 </div>
@@ -1167,6 +1186,7 @@ Sortie du modèle</label><div class="sd-tab-content docutils">
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1237,8 +1257,8 @@ This project is released under a <a href="https://creativecommons.org/licenses/b
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
