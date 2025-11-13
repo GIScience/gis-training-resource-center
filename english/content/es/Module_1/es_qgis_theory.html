@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>¿Qué es un SIG? &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_1/es_qgis_theory';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_1/es_qgis_theory.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_1/es_qgis_theory.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>¿Qué es un SIG?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componentes-de-un-sig">Componentes de un SIG</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-del-sig-utilizados-por-organizaciones-humanitarias">Ejemplos del SIG utilizados por organizaciones humanitarias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-sig-vs-la-cartografia">Los SIG vs. la cartografía</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-el-analisis-espacial">¿Qué es el análisis espacial?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-ejemplo-del-pasado-mapa-del-colera-de-john-snow">Un ejemplo del pasado: Mapa del cólera de John Snow</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-comunes-de-mapas-en-la-respuesta-humanitaria">Tipos comunes de mapas en la respuesta humanitaria</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-referencia-general">Mapas de referencia general</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-infraestructura">Mapas de infraestructura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-tematicos">Mapas temáticos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-analisis">Mapas de análisis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-situacion-descriptivo">Mapas de situación/descriptivo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="que-es-un-sig">
+<h1>¿Qué es un SIG?<a class="headerlink" href="#que-es-un-sig" title="Link to this heading">#</a></h1>
+<p>En esencia, el SIG es un sistema informático para organizar datos con un
+componente espacial (<em>datos geoespaciales</em>). El SIG tiene tres funciones básicas:</p>
+<div class="sd-text-center sd-text-italic sd-text-primary docutils">
+<ol class="arabic simple">
+<li><p>Conexión de datos con mapas</p></li>
+<li><p>Visualización, organización y procesamiento de datos geoespaciales</p></li>
+<li><p>Análisis espacial</p></li>
+</ol>
+</div>
+<figure class="align-center" id="gis-core-functunality">
+<a class="reference internal image-reference" href="../../../_images/GIS_Core_functunality.drawio.svg"><img alt="../../../_images/GIS_Core_functunality.drawio.svg" src="../../../_images/GIS_Core_functunality.drawio.svg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Funcionalidad principal del SIG (fuente: HeiGIT).</span><a class="headerlink" href="#gis-core-functunality" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>En el trabajo humanitario, los Sistemas de Información Geográfica (SIG) sirven como herramientas poderosas. Utilizan mapas para presentar información compleja de manera clara y eficiente. Por ejemplo, durante las emergencias, el SIG puede visualizar eventos en un mapa, representar dónde ocurren, el alcance del impacto y la identificación de las necesidades primarias. Ayuda a consolidar datos de diversas fuentes, lo que permite una rápida comprensión de las situaciones y facilita una mejor toma de decisiones.</p>
+<p><strong>Una definición más formal:</strong></p>
+<p>Un SIG es una herramienta digital que integra datos con mapas. Permite la recopilación, gestión, análisis y visualización de datos, asociándolos con ubicaciones específicas en la superficie de la Tierra. Al aprovechar los SIG, obtenemos una visión más profunda de los datos, lo que revela los patrones y proporciona una mejor comprensión del contexto geográfico. Esto lleva a un análisis más profundo, una mejor comunicación y en última instancia, facilita una mejor toma de decisiones con base empírica. Los SIG están profundamente arraigados en la geografía, el campo científico dedicado a estudiar los suelos, las características, los habitantes y los fenómenos de la Tierra. El software SIG es capaz de mostrar varios tipos de datos simultáneamente en un mapa, lo que mejora nuestra capacidad para comprender relaciones espaciales complejas.</p>
+<section id="componentes-de-un-sig">
+<h2>Componentes de un SIG<a class="headerlink" href="#componentes-de-un-sig" title="Link to this heading">#</a></h2>
+<p>Un SIG es más que un software. Es un sistema e incluye
+múltiples elementos:</p>
+<figure class="align-center" id="gis-definition-icons">
+<a class="reference internal image-reference" href="../../../_images/GIS_definition_icons.drawio.svg"><img alt="../../../_images/GIS_definition_icons.drawio.svg" src="../../../_images/GIS_definition_icons.drawio.svg" style="height: 200px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Componentes del SIG (fuente: Cruz Roja Británica)</span><a class="headerlink" href="#gis-definition-icons" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ejemplos-del-sig-utilizados-por-organizaciones-humanitarias">
+<h2>Ejemplos del SIG utilizados por organizaciones humanitarias<a class="headerlink" href="#ejemplos-del-sig-utilizados-por-organizaciones-humanitarias" title="Link to this heading">#</a></h2>
+<p>Para comprender mejor cómo se utiliza el SIG en el sector humanitario, hemos recopilado algunos ejemplos de diferentes organizaciones en la siguiente sección (haga clic en las diferentes pestañas para ver los ejemplos por organización).</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Cruz Roja Libanesa</label><div class="sd-tab-content docutils">
+<p>Este video ofrece un resumen del uso del SIG en la Cruz Roja Libanesa en sus operaciones, incluida la información a los servicios de ambulancia y el apoyo a las donaciones de sangre.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BNOgW9Koz7A?si=gpXNpFRmjfoPV1dX"
+title="Reproductor de video de YouTube" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+IFRC</label><div class="sd-tab-content docutils">
+<p>La Federación Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja (IFRC) publica una amplia variedad de mapas para apoyar las operaciones activas. Puede encontrar algunos de ellos en <a class="reference external" href="https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29">ReliefWeb</a> o en las <a class="reference external" href="https://go.ifrc.org/emergencies/all">Páginas de emergencias</a> de la plataforma IFRC GO de la IFRC.</p>
+<iframe src="https://go.ifrc.org/" width="750" height="500"></iframe>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Comité Internacional de la Cruz Roja (CICR)</label><div class="sd-tab-content docutils">
+<p>El Comité Internacional de la Cruz Roja (CICR) cuenta con una Unidad de Apoyo en SIG, que gestiona su <a class="reference external" href="https://gisupporticrc.github.io/GISResourceCenter/#portfolio">Centro de Recursos SIG</a> y su portal ICRC GeoPortal. La cartera del centro de recursos del CICR da una idea de los tipos de análisis que produce la unidad de SIG, aunque gran parte de ellos, no son públicos.</p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Iniciativa REACH</label><div class="sd-tab-content docutils">
+<p>La Iniciativa REACH es una ONG de recopilación y análisis de datos humanitarios, que tiene una sólida especialización en los SIG. El <a class="reference external" href="https://www.impact-initiatives.org/resource-centre/">Centro de recursos de REACH</a> es donde la organización publica contenido, que incluye <a class="reference external" href="https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&amp;amp;category%5B%5D=data_methods&amp;amp;type%5B%5D=281&amp;amp;order=latest&amp;amp;limit=10">mapas independientes</a> e <a class="reference external" href="https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&amp;amp;category%5B%5D=data_methods&amp;amp;order=latest&amp;amp;limit=10">informes</a> que también suelen incluir mapas y análisis espaciales.</p>
+<figure class="align-center" id="reach-ukr-map-csm-situationoverview-activesites-feb2024-en-a4">
+<a class="reference internal image-reference" href="../../../_images/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png"><img alt="../../../_images/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png" src="../../../_images/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo: REACH, Ucrania, Monitoreo de Sitios Colectivos de Desplazados Internos (CSM), mapa, Sitios activos, febrero de 2024. Fuente: <a class="reference external" href="https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf">REACH</a></span><a class="headerlink" href="#reach-ukr-map-csm-situationoverview-activesites-feb2024-en-a4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Médicos Sin Fronteras (MSF)</label><div class="sd-tab-content docutils">
+<p>Médicos Sin Fronteras (MSF) cuenta con una <a class="reference external" href="https://geo.msf.org/home">Unidad SIG</a> que publica productos geoespaciales en la <a class="reference external" href="https://geo.msf.org/catalogue">plataforma GeoMSF</a> para apoyar las actividades de MSF.</p>
+<p>MSF utiliza el SIG en cuatro áreas principales:</p>
+<ul class="simple">
+<li><p>Operaciones, preparación y respuesta ante emergencias</p></li>
+<li><p>Atención médica</p></li>
+<li><p>Promoción, comunicación y presentación de informes</p></li>
+<li><p>Salud ambiental</p></li>
+</ul>
+<p>Este breve video describe el papel de los SIG en la respuesta de MSF al brote de ébola de 2015 en Sierra Leona.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XxW_e9o0lA8?si=xS36hYai0rgmQW6J"
+title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Programa Mundial de Alimentos (PMA)</label><div class="sd-tab-content docutils">
+<p>El Programa Mundial de Alimentos (PMA) produce mapas y publica datos geoespaciales, tanto en su propia plataforma de datos: <a class="reference external" href="https://geonode.wfp.org/">WFP Geonode</a> como en el <a class="reference external" href="https://data.humdata.org/organization/wfp?">Intercambio de Datos Humanitarios (HDX)</a>. Puede encontrar los mapas publicados por el PMA en <a class="reference external" href="https://reliefweb.int/updates?advanced-search=%28S1741%29_%28F12%29">RelifeWeb</a>.  El <a class="reference external" href="https://www.wfp.org/publications/wfp-geospatial-activities-catalogue">Catálogo de actividades geoespaciales</a>del PMA presenta los servicios geoespaciales de la organización, lo que incluye el desarrollo de tableros como este <a class="reference external" href="https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0">asistencia en efectivo durante la pandemia de COVID-19 en Jordania</a>.</p>
+<p>El PMA también crea tableros para la promoción, como HungerMap Live:</p>
+<iframe src="https://hungermap.wfp.org/" width="750" height="500"></iframe>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+iMMAP</label><div class="sd-tab-content docutils">
+<p>iMAAP es una ONG de gestión de la información que brinda apoyo a la Organización de las Naciones Unidas (ONU) y a organizaciones internacionales sin fines de lucro. Su <a class="reference external" href="https://immap.org/products/">cartera de productos</a> incluye ejemplos de mapas utilizados en descripciones generales de situaciones, tableros interactivos y análisis específicos del sector.</p>
+<figure class="align-center" id="afghanistan-earthquake-events-overview-february-2024-page-0001-scaled">
+<a class="reference internal image-reference" href="../../../_images/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg"><img alt="../../../_images/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg" src="../../../_images/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo: Descripción general de los eventos sísmicos en Afganistán, febrero de 2024 (fuente: <a class="reference external" href="https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/">iMMAP</a>).</span><a class="headerlink" href="#afghanistan-earthquake-events-overview-february-2024-page-0001-scaled" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+MapAction</label><div class="sd-tab-content docutils">
+<p>MapAction produce mapas y datos geoespaciales que apoyan la toma de decisiones en la respuesta a emergencias. Su página de<a class="reference external" href="https://maps.mapaction.org/">mapas y datos</a> muestran los productos recientes que han publicado y su <a class="reference external" href="https://guides.mapaction.org/">catálogo de productos</a>. Ofrece una visión general de los tipos de servicios que prestan.</p>
+<figure class="align-center" id="cluster-camp-coordination">
+<a class="reference internal image-reference" href="../../../_images/cluster-camp-coordination.jpg"><img alt="../../../_images/cluster-camp-coordination.jpg" src="../../../_images/cluster-camp-coordination.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo: Filipinas, Tormenta tropical severa Washi (conocida como Sendong), población en centros de evacuación y sitios transitorios, Cagayán de Oro (fuente: <a class="reference external" href="https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg">MapAction</a>).</span><a class="headerlink" href="#cluster-camp-coordination" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="los-sig-vs-la-cartografia">
+<h2>Los SIG vs. la cartografía<a class="headerlink" href="#los-sig-vs-la-cartografia" title="Link to this heading">#</a></h2>
+<p>La <strong>cartografía</strong> es el arte y la ciencia de crear mapas, que abarca el estudio y la práctica de las técnicas de elaboración de mapas. Un SIG representa una <strong>evolución moderna</strong> de la cartografía tradicional,que integra las tecnologías y los métodos avanzados para el análisis y visualización de datos geoespaciales.</p>
+<p>Si bien, tanto la cartografía como los SIG implican la creación de mapas, difieren significativamente, en cuanto a sus capacidades y enfoques. Los mapas cartográficos suelen presentar una representación simplificada de las entidades geográficas, restringida por las limitaciones del espacio físico y el medio del propio mapa. Por el contrario, el SIG permite la integración de grandes cantidades de datos geoespaciales, lo que permite un análisis, modelado y visualización complejos, más allá del alcance de la cartografía tradicional.</p>
+<p>Una distinción clave es que el SIG facilita la incorporación de diversos conjuntos de datos, con una capacidad prácticamente ilimitada para <strong>capas e información adicionales</strong>. Esta flexibilidad faculta a los usuarios para realizar <strong>análisis espaciales, realizar evaluaciones estadísticas</strong> y obtener información para respaldar los procesos de toma de decisiones.</p>
+<p>En esencia, mientras que la cartografía se enfoca principalmente en el diseño y la visualización de mapas, el SIG se extiende, más allá, para abarcar la gestión, el análisis y la interpretación de datos geoespaciales. Por lo tanto, un SIG sirve como una herramienta poderosa para que los cartógrafos y los profesionales de diversos campos, creen, analicen y extraer conclusiones de la información geográfica</p>
+</section>
+<section id="que-es-el-analisis-espacial">
+<h2>¿Qué es el análisis espacial?<a class="headerlink" href="#que-es-el-analisis-espacial" title="Link to this heading">#</a></h2>
+<p>Muchos productos de mapas dependen del análisis espacial. Y efectivamente, la capacidad de utilizar herramientas de análisis nos permite sacar el máximo provecho de los datos que tenemos y resolver una gran variedad de problemas. Los puntos, a continuación, brindan una definición simple del concepto.</p>
+<p>Sin embargo, el ejemplo del mapa del cólera de John Snow de 1854 es un ejemplo popular de cómo el análisis espacial puede ayudar a resolver problemas.</p>
+<ul class="simple">
+<li><p>El análisis espacial <strong>estudia entidades y eventos</strong> con el uso de sus propiedades topológicas, geométricas o geográficas.</p></li>
+<li><p>Incluye una <strong>variedad de técnicas</strong> para analizar los datos geográficos.</p></li>
+<li><p>Los datos pueden <strong>añadirse a un mapa como capas y pueden interactuar entre sí</strong>.</p></li>
+<li><p>El sistemas de Información geográfica (SIG) le permite trabajar con estas <strong>capas</strong> para explorar preguntas de importancia crítica y <strong>encontrar respuestas</strong> a esas preguntas.</p></li>
+</ul>
+<section id="un-ejemplo-del-pasado-mapa-del-colera-de-john-snow">
+<h3>Un ejemplo del pasado: Mapa del cólera de John Snow<a class="headerlink" href="#un-ejemplo-del-pasado-mapa-del-colera-de-john-snow" title="Link to this heading">#</a></h3>
+<p>En 1854, un <strong>brote de cólera</strong> ocurrió en el área de Soho en Londres, Inglaterra. La teoría más común era que la enfermedad se propagaba por el aire. El Dr. John Snow creía que el peligro estaba <strong>en el agua</strong>. Hizo un mapa para analizar el <strong>número de decesos</strong> en todos los bloques habitacionales en Soho. Agregó la <strong>ubicación de las bombas de agua</strong> en el mapa. Encontró una <strong>correlación</strong> entre una bomba de agua específica y el número de infecciones.</p>
+<p><strong>El mapa del brote de cólera de 1854 del Dr. Snow</strong> (<code class="xref std std-numref docutils literal notranslate"><span class="pre">John_snow_zoom_map2</span></code>) y los informes, que lo acompañaron, __ ganó sobre la predominante “Teoría del Miasma”__ de que la enfermedad <strong>se propagó por el aire</strong>. Fue así que se advirtió a los residentes de que debían <strong>hervir el agua</strong> y así terminó el último brote de cólera, que Londres ha visto.</p>
+<p>Esta versión interactiva del mapa del cólera, lo muestra superpuesto con un mapa base del Londres moderno.</p>
+<figure class="align-center" id="john-snow-zoom-map2">
+<a class="reference internal image-reference" href="../../../_images/John_snow_zoom_map2.png"><img alt="../../../_images/John_snow_zoom_map2.png" src="../../../_images/John_snow_zoom_map2.png" style="height: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa del cólera en Londres de John Snow (1854).</span><a class="headerlink" href="#john-snow-zoom-map2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Al <strong>usar el SIG</strong>, se han aplicado varias medidas de tendencia espacial central al conjunto de datos, lo que revela que la media espacial (el centro geográfico de la distribución de los decesos) del brote se encuentra <strong>a menos de 35 metros de la bomba de Broad Street</strong>, identificada como la <strong>fuente de contaminación</strong> en el brote de 1854.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></iframe>
+</div>
+</div>
+</section>
+</section>
+<section id="tipos-comunes-de-mapas-en-la-respuesta-humanitaria">
+<h2>Tipos comunes de mapas en la respuesta humanitaria<a class="headerlink" href="#tipos-comunes-de-mapas-en-la-respuesta-humanitaria" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El sector humanitario tiende a utilizar ciertos tipos de mapas con regularidad. Estos se describen a continuación.</p>
+</div>
+<section id="mapas-de-referencia-general">
+<h3>Mapas de referencia general<a class="headerlink" href="#mapas-de-referencia-general" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Muestran las <strong>entidades físicas</strong> importantes de un área</p></li>
+<li><p>Incluyen <strong>entidades naturales y artificiales</strong></p></li>
+<li><p>Por lo general, se utilizan para ayudar en la <strong>navegación</strong> o el descubrimiento de ubicaciones</p></li>
+<li><p>Por lo general, son bastante <strong>sencillos</strong></p></li>
+<li><p>Su <strong>estilo</strong> puede adaptarse al público al que van dirigidos</p></li>
+</ul>
+<figure class="align-center" id="general-ref-map-nigeria-ogun">
+<a class="reference internal image-reference" href="../../../_images/general_ref_map_nigeria_ogun.png"><img alt="../../../_images/general_ref_map_nigeria_ogun.png" src="../../../_images/general_ref_map_nigeria_ogun.png" style="height: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo: Nigeria: Mapa de referencia del estado de Ogún al 26 de diciembre de 2018 (fuente: <a class="reference external" href="https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA">OCHA</a>).</span><a class="headerlink" href="#general-ref-map-nigeria-ogun" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mapas-de-infraestructura">
+<h3>Mapas de infraestructura<a class="headerlink" href="#mapas-de-infraestructura" title="Link to this heading">#</a></h3>
+<p>Los mapas de infraestructura en el contexto humanitario proporcionan representaciones visuales de infraestructura crítica como carreteras, puentes, hospitales y servicios públicos en un área determinada. Estos mapas ayudan a las organizaciones humanitarias a evaluar la accesibilidad de las zonas afectadas, planificar los esfuerzos de ayuda y coordinar los recursos, de manera eficaz, durante las emergencias o los desastres.</p>
+<ul class="simple">
+<li><p>Muestran las entidades y las <strong>estructuras</strong> relevantes en un área específica</p></li>
+<li><p>Ayudan a la <strong>planificación</strong> y en la navegación</p></li>
+<li><p>Alto nivel de <strong>detalle</strong></p></li>
+<li><p>Producidos después de la <strong>recopilación de datos</strong> en el campo</p></li>
+</ul>
+<figure class="align-center" id="en-infrastructure-map-nigeria">
+<a class="reference internal image-reference" href="../../../_images/en_Infrastructure_Map_Nigeria.png"><img alt="../../../_images/en_Infrastructure_Map_Nigeria.png" src="../../../_images/en_Infrastructure_Map_Nigeria.png" style="height: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo:  Nigeria - Estado de Borno - Campamento Mogcolis, Infraestructura General - Actualizado el 24 de julio de 2017
+align: center (Source: <a class="reference external" href="https://reliefweb.int/map/nigeria/nigeria-borno-state-mogcolis-camp-general-infrastructure-updated-24-july-2017">REACH</a>)</span><a class="headerlink" href="#en-infrastructure-map-nigeria" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mapas-tematicos">
+<h3>Mapas temáticos<a class="headerlink" href="#mapas-tematicos" title="Link to this heading">#</a></h3>
+<p>Los mapas temáticos muestran temas o asuntos específicos, como la densidad de población, los brotes de enfermedades o los niveles de vulnerabilidad dentro de un área geográfica. Estos mapas ayudan a las organizaciones humanitarias a analizar y comprender los problemas o las tendencias específicas, que guía la toma de decisiones y la asignación de recursos para intervenciones específicas y esfuerzos de ayuda humanitaria.</p>
+<ul class="simple">
+<li><p>Se centran en un asunto o <strong>tema específico</strong></p></li>
+<li><p>Las entidades geográficas en los mapas <strong>representan al sujeto</strong> mapeado</p></li>
+<li><p>Usan <strong>colores y formas</strong> para mostrar los datos cuantitativos y cualitativos</p></li>
+<li><p>Crear <strong>conciencia</strong> sobre un tema específico</p></li>
+</ul>
+<figure class="align-center" id="en-thematic-map-example-ifrc">
+<a class="reference internal image-reference" href="../../../_images/en_thematic_map_example_IFRC.png"><img alt="../../../_images/en_thematic_map_example_IFRC.png" src="../../../_images/en_thematic_map_example_IFRC.png" style="height: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo: Sector de refugios en Turquía: Cambios en los costos de la renta, de febrero a abril de 2023 (fuente: <a class="reference external" href="https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023">IFRC</a>).</span><a class="headerlink" href="#en-thematic-map-example-ifrc" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mapas-de-analisis">
+<h3>Mapas de análisis<a class="headerlink" href="#mapas-de-analisis" title="Link to this heading">#</a></h3>
+<p>Los mapas de análisis se utilizan para examinar e interpretar datos, lo que revela los patrones, las tendencias y ñas relaciones dentro de un área geográfica. Facilitan una comprensión profunda de situaciones complejas, lo que permite a los responsables de la toma de decisiones, extraer conclusiones y tomar decisiones fundamentadas para lograr respuestas humanitarias eficaces.</p>
+<ul class="simple">
+<li><p><strong>Analizan datos</strong> con respecto a su ubicación geográfica</p></li>
+<li><p>Crean <strong>nuevas capas de información</strong> a partir de la interacción entre múltiples entidades geográficas</p></li>
+<li><p>Utilizan colores y formas <strong>para ayudar a los usuarios</strong> a comprender eventos específicos</p></li>
+<li><p><strong>Apoyan</strong> a los responsables de la toma de decisiones</p></li>
+<li><p>Generalmente, muestran un mayor <strong>nivel de detalle</strong></p></li>
+</ul>
+<figure class="align-center" id="en-analysis-map-yemen">
+<a class="reference internal image-reference" href="../../../_images/en_Analysis_Map_Yemen.png"><img alt="../../../_images/en_Analysis_Map_Yemen.png" src="../../../_images/en_Analysis_Map_Yemen.png" style="height: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo:  Grupo temático de coordinación y gestión de campamentos en Yemen, REACH, Peligro de inundación en sitios colectivos de desplazados internos, gobernación de Marib, Modelo de profundidad de inundación (fuente: <a class="reference external" href="https://data.unhcr.org/es/documents/details/98946">REACH</a>).</span><a class="headerlink" href="#en-analysis-map-yemen" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mapas-de-situacion-descriptivo">
+<h3>Mapas de situación/descriptivo<a class="headerlink" href="#mapas-de-situacion-descriptivo" title="Link to this heading">#</a></h3>
+<p>Los mapas descriptivos o de situación proporcionan un panorama de las condiciones o los eventos específicos en un área geográfica, en particular. Visualizan información clave como la ubicación de los recursos, la distribución de la población, la infraestructura y los factores ambientales. Estos mapas ofrecen una visión clara de la situación actual, lo que ayuda a la comprensión y la comunicación entre las partes interesadas, involucradas en las operaciones humanitarias.</p>
+<ul class="simple">
+<li><p>Se utilizan para <strong>visualizar mejor</strong> una situación específica en curso y/o anterior</p></li>
+<li><p>Los mapas pueden incluir elementos <strong>narrativos</strong> y gráficos</p></li>
+<li><p>Se pueden utilizar en informes y/o para <strong>crear conciencia</strong> sobre un evento específico</p></li>
+</ul>
+<figure class="align-center" id="en-pop-syrian-refugees-2023">
+<a class="reference internal image-reference" href="../../../_images/en_Pop_Syrian_Refugees_2023.png"><img alt="../../../_images/en_Pop_Syrian_Refugees_2023.png" src="../../../_images/en_Pop_Syrian_Refugees_2023.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa de ejemplo: Alto Comisionado de las Naciones Unidas para los Refugiados (ACNUR), Perfil de la población de Irak, desglose detallado, Registro de Personas Refugiadas sirias diciembre de 2023 (fuente: <a class="reference external" href="https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023">ACNUR</a>).</span><a class="headerlink" href="#en-pop-syrian-refugees-2023" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<p>Tómese un momento para reflexionar sobre lo que ha aprendido en este módulo. Las siguientes preguntas están diseñadas para ayudarlo a comprobar su comprensión de los conceptos clave e identificar áreas, que quisiera revisar más a fondo. No es necesario que envíe sus respuestas, esto es para su propio aprendizaje.</p>
+<ol class="arabic simple">
+<li><p><strong>¿Cuáles son las tres funciones básicas de los SIG?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Un SIG es un sistema para capturar, manipular, analizar y visualizar los datos geoespaciales. Las tres funciones básicas son:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Captura de datos</strong>: crear (o digitalizar) los datos geoespaciales.</p></li>
+<li><p class="sd-card-text"><strong>Análisis</strong>: realizar análisis o procesar datos geoespaciales para obtener información o conocimiento.</p></li>
+<li><p class="sd-card-text"><strong>Visualización</strong>: Visualizar los datos geoespaciales en mapas, gráficos o informes para comunicar la información</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>¿Qué es el análisis espacial y cómo utilizó John Snow el análisis espacial en su mapa del brote de cólera de 1854?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">El análisis espacial es el proceso de examinación de los datos geográficos (espaciales) para detectar patrones, relaciones, tendencias y estructuras espaciales. Implica operaciones como superposición, establecer zonas de influencia, proximidad, agrupación, interpolación y evaluación de cómo varían los fenómenos en el espacio.</p>
+<p class="sd-card-text">En 1854, el Dr. John Snow mapeó las ubicaciones de los decesos por cólera en Londres (distrito de Soho) junto con las ubicaciones de las bombas de agua. Notó que los casos de cólera se agrupaban alrededor de una bomba en particular (en Broad Street). Debido a que había una agrupación espacial alrededor de esa bomba, planteó la hipótesis de que el agua de esa bomba, era la fuente del brote. Luego convenció a las autoridades de que quitaran la palanca de la bomba, tras ello, el brote disminuyó. En efecto, utilizó la distribución espacial y la agrupación de incidentes de enfermedades para inferir una relación causal. (Este es un ejemplo clásico y antiguo de la aplicación del análisis espacial en la epidemiología). Su mapa mostró que los decesos no se distribuyeron al azar, sino que se concentraron, espacialmente, alrededor de una fuente de agua, lo que es la esencia del razonamiento espacial</p>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>Nombre los cinco tipos comunes de mapas utilizados en el trabajo humanitario.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Mapas de referencia general: Muestran las entidades geográficas generales como los caminos, los ríos y los límites administrativos; se utilizan para la navegación y la orientación</p></li>
+<li><p class="sd-card-text">Mapas de infraestructura: Mapas temáticos centrados en la infraestructura física (p. ej.: hospitales, puntos de abastecimiento de agua, caminos); utilizados para la planificación y la logística.</p></li>
+<li><p class="sd-card-text">Mapas temáticos: Representan un tema o conjunto de datos específico (p. ej.: población, lluvia, conflicto); utilizan colores, formas o símbolos para visualizar los atributos no espaciales.</p></li>
+<li><p class="sd-card-text">Mapas de análisis: Son el resultado del análisis espacial para guiar la toma de decisiones (p. ej.: zonas de riesgo por amenazas, modelos de idoneidad).</p></li>
+<li><p class="sd-card-text">Mapas de situación: Proporcionan una visión general de una situación humanitaria o de emergencia; muestran zonas afectadas, actividades operacionales o evaluaciones de las necesidades.</p></li>
+</ol>
+</div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componentes-de-un-sig">Componentes de un SIG</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-del-sig-utilizados-por-organizaciones-humanitarias">Ejemplos del SIG utilizados por organizaciones humanitarias</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-sig-vs-la-cartografia">Los SIG vs. la cartografía</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-el-analisis-espacial">¿Qué es el análisis espacial?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-ejemplo-del-pasado-mapa-del-colera-de-john-snow">Un ejemplo del pasado: Mapa del cólera de John Snow</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-comunes-de-mapas-en-la-respuesta-humanitaria">Tipos comunes de mapas en la respuesta humanitaria</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-referencia-general">Mapas de referencia general</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-infraestructura">Mapas de infraestructura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-tematicos">Mapas temáticos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-analisis">Mapas de análisis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-situacion-descriptivo">Mapas de situación/descriptivo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

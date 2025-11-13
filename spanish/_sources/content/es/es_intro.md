@@ -4,36 +4,36 @@
 
 :::{figure} /fig/HeiGIT_Logo_base.svg
 ---
-height: 75 
-name: Logo de HeiGIT
+height: 75
+name: HeiGIT Logo
 align: center
 ---
 :::
 
 ___
 
-# Bienvenido a la Plataforma de Capacitación GIS de la Red IFRC
+# Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
 
-:::{card} Enseñar GIS para Trabajo Humanitario
+:::{card} Enseñanza del sistema de información geográfica (SIG) para el trabajo humanitario
 
-El centro integral para enseñar habilidades en Sistemas de Información Geográfica (GIS) para el trabajo en la Red de la Cruz Roja y Media Luna Roja.
+La plataforma central de capacitación para la enseñanza de habilidades en el sistema de información geográfica (SIG) para la labor de la red de la Cruz Roja y de la Media Luna Roja.
 :::
 
 
 ::::{grid} 2
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
+:link: https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html
 
-__[Comenzar a Enseñar](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html)__ ➡️
+__[Empezar a enseñar](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html)__ ➡️
 
 :::
 
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
+:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html
 
-__[Comenzar a Aprender](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ ➡️
+__[Empezar a aprender](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__ ➡️
 
 :::
 
@@ -41,113 +41,113 @@ __[Comenzar a Aprender](https://giscience.github.io/gis-training-resource-center
 
 ::::{grid} 3
 :::{card} Wiki 📖
-El wiki es tu compañero para trabajar con QGIS en capacitación en la vida real. Reúne toda la información práctica en forma de guías paso a paso y videos.
+La Wiki es su compañera para trabajar con QGIS en capacitaciones en la vida real. Reúne toda la información práctica en forma de guías prácticas y videos
 :::
 
 :::{card} Módulos 🎓
-En los módulos de aprendizaje se explican todos los conceptos y técnicas relevantes de QGIS, permitiendo a los participantes reforzar su comprensión del contenido de la capacitación.
+En los módulos de aprendizaje, se explican todos los conceptos y técnicas pertinentes de QGIS, lo que le permite a los participantes reforzar su comprensión del contenido de la capacitación
 :::
 
 :::{card} Ejercicios ✍️
-En los ejercicios se presentan conceptos esenciales y técnicas prácticas, proporcionando a los participantes oportunidades prácticas para aplicar y reforzar sus habilidades en QGIS.
+En los ejercicios, se presentan los conceptos esenciales y las técnicas concretas, lo que le brinda a los participantes oportunidades prácticas para aplicar y reforzar sus habilidades de QGIS
 :::
 
 ::::
 
-## Qué hay dentro
+## Qué contiene
 
-Los formadores de QGIS son el público principal de la Plataforma de Capacitación GIS de la Red IFRC. Aquí puedes encontrar materiales de capacitación para enseñar QGIS específicamente para el trabajo en la Red de la Cruz Roja y Media Luna Roja, desde principiantes totales hasta nivel intermedio.
+Los instructores de QGIS son el público principal de plataforma de capacitación en SIG de la red de la IFRC. Aquí puede encontrar materiales de capacitación para la enseñanza de QGIS específicos para el trabajo en la red de la Cruz Roja y la Media Luna Roja para principiantes de nivel inicial hasta intermedio.
 
-🙌 El material de capacitación se centra en el uso extensivo de ejercicios prácticos paso a paso y formación práctica.
+🙌 El material de capacitación se centra en el uso extensivo de ejercicios guiados prácticos y capacitación en campo.
 
-🎥 Y en el uso de medios enriquecidos como videos y visualizaciones.
+🎥 Y el uso de contenido multimedia enriquecido como videos y visualizaciones.
 
-## Objetivos de Aprendizaje
+## Objetivos de aprendizaje
 
-El objetivo principal es capacitar a personas en diversos roles dentro de la Red de la Cruz Roja y Media Luna Roja con sólidas habilidades en QGIS.
+El objetivo principal es empoderar a las personas en diversas funciones dentro de la red de la Cruz Roja y de la Media Luna Roja con sólidas habilidades de QGIS.
 
-Las habilidades de QGIS ofrecidas en esta plataforma abarcan niveles básico, intermedio y avanzado, cada nivel compuesto por tres módulos dedicados.
+Las habilidades de QGIS, que ofrece esta plataforma de capacitación, abarcan niveles de competencia básico, intermedio y avanzado, cada uno incluye tres módulos específicos.
 
-:::{dropdown} Habilidades Básicas
-| Módulo 1 - Introducción a GIS ✨              | Módulo 2 - Trabajo con geodatos 🌍         | Módulo 3 - Operaciones básicas de GIS 📍          |
-| ------------------------------------------- | ---------------------------------------- | ------------------------------------------------ |
-| Instalación de QGIS                          | Concepto de capas en GIS                  | Edición y creación de datos                       |
-| Mapas en papel y cartografía, distinción con mapas digitales | Importación de datos                   | Selección y edición de atributos de elementos    |
-| Introducción a GIS                           | Elementos geográficos y atributos         | Selección de elementos                           |
-| Descripción de la interfaz de QGIS          | Datos vectoriales y raster – conceptos básicos | Consultas espaciales: seleccionar por polígono + ubicación |
-| Plataforma WebGIS                             | Datos vectoriales                        | Clasificación de datos                            |
-| Descripción de aplicaciones móviles          | Formatos de archivo vectorial             | Introducción a consultas no espaciales           |
-| Ejemplos de mapas creados con GIS            | Selección de mapa base                    |                                                  |
-|                                               | Proyecciones                              |                                                  |
-|                                               | Fuentes de datos                          |                                                  |
+:::{dropdown} Habilidades básicas
+| Módulo 1: Introducción a los sistemas de información geográfica (SIG) ✨  | Módulo 2: Trabajo con datos geoespaciales 🌍  | Módulo 3: Operaciones básicas en el sistema de información geográfica (SIG) 📍           |
+| ---------------------------------------------------- | -------------------------------------- | --------------------------------------------- |
+| Instalación de QGIS                                    | Concepto de capa en el sistema de información geográfica (SIG)                   | Edición y creación de datos                     |
+| Mapas en papel y cartografía, diferencia con mapas digitales | Importación de datos                            | Selección y edición de atributos de entidades geográficas       |
+| Introducción a los sistemas de información geográfica (SIG)                                  | Entidades y atributos geográficos            | Selección de entidades geográficas                            |
+| Descripción de la interfaz de QGIS                           | Datos ráster y vectoriales: conceptos básicos | Consultas espaciales: seleccionar por polígono + ubicación |
+| Plataforma WebGIS                                      | Datos vectoriales                            | Clasificación de datos                          |
+| Resumen de las aplicaciones móviles                                 | Formatos de archivos vectoriales                    | Introducción a las consultas no espaciales           |
+| Ejemplos de mapas creados con sistemas de información geográfica (SIG)                    | Selección de mapas base                      |                                               |
+|                                                      | Proyecciones cartográficas                            |                                               |
+|                                                      | Fuentes de datos                           |                                               |
 ::::
 
-:::{dropdown} Habilidades Intermedias
+:::{dropdown} Habilidades intermedias
 
-| Módulo 4 - Representación 🗺️ | Módulo 5 - Operaciones intermedias de GIS 🌐 | Módulo 6 - Análisis de datos con QGIS 📊 |
-| ----------------------------- | ------------------------------------------- | ---------------------------------------- |
-| Visualización                 | Geoprocesamiento: Buffer                    |                                          |
-| Variables gráficas            | Geoprocesamiento: Clip                      |                                          |
-| Estilos en QGIS               | Geoprocesamiento: Disolver                  | Ejemplo de plugin QGIS: QuickOSM        |
-| Simbología y colores          | Clip por máscara                            | Teledetección/Introducción a datos raster |
-| Exportar o importar estilos   | Clip por extensión                           |                                          |
-| Diseño de impresión           | Consultas no espaciales                      |                                          |
-| Composición de mapas          | Operaciones en tabla de atributos            |                                          |
-| Atlas                         | Uniones no espaciales                        |                                          |
-::::
+| Módulo 4: Representación 🗺️ | Módulo 5: Operaciones intermedias del sistema de información geográfica (SIG) 🌐 | Módulo 6: Análisis de datos con QGIS 📊 |
+| ------------------------------- | ------------------------------------------- | -------------------------------------- |
+| Visualización | Geoprocesamiento: Buffer |                                        |
+| Variables gráficas | Geoprocesamiento: Recorte |                                        |
+| Estilización en QGIS | Geoprocesamiento: Disolver | Ejemplo de complementos en QGIS: QuickOSM |
+| Simbología y colores | Recorte de capa ráster | Teledetección/Introducción a los datos ráster |
+| Exportar o importar estilos | Recorte por extensión |                                        |
+| Diseño de impresión | Consultas no espaciales |                                        |
+| Composición del mapa | Operaciones en la tabla de atributos |                                        |
+| Atlas | Uniones no espaciales |                                        |
+:::
 
-:::{dropdown} Habilidades Avanzadas
-| Módulo 7 - Automatización 💻 | Módulo 8 - Teledetección y datos raster 🛰️ | Módulo 9 - Accesibilidad 🚑 |
-| ---------------------------- | ----------------------------------------- | ---------------------------- |
-| Introducción a la automatización | Estadísticas zonales                       | Análisis de accesibilidad    |
-| El diseñador de modelos       | Extracción de valores raster               | Análisis espacial            |
-|                              | Crear perfil de elevación                   |                              |
-|                              | Reclasificar datos raster                  |                              |
-::::
+:::{dropdown} Habilidades avanzadas
+|Módulo 7: Automatización 💻| Módulo 8: Teledetección y datos ráster 🛰️ | Módulo 9: Accesibilidad 🚑|
+|-----------------------|---------------------|-------------------------------------|
+|Introducción a la automatización|Estadísticas zonales|Análisis de la accesibilidad|
+|El diseñador de modelos|Extracción de valores ráster|Análisis espacial |
+||Crear un perfil de elevación||
+||Reclasificar los datos ráster||
+:::
 
 
-## Cómo usar la Plataforma de Capacitación GIS de la Red IFRC
+## Cómo utilizar la plataforma de capacitación en SIG de la red de la IFRC
 
 
 ::::{grid} 2
-:::{card} __[Formadores](/content/Trainers_corner/en_TOT_intro.md)__ 
-Existe una [sección dedicada para formadores](/content/Trainers_corner/en_how_to_training.md) que quieran usar la plataforma.
+:::{card} __[Instructores](/content/es/Trainers_corner/es_TOT_intro.md)__
+Hay una dedicada [sección para instructores](/content/es/Trainers_corner/es_how_to_training.md) que deseen utilizar la plataforma de capacitación.
 
-El componente más importante son los planes de capacitación. Estos te orientan sobre cuándo usar qué en tu ciclo de formación.  
-No obstante, cada componente del material de capacitación está diseñado para utilizarse de manera independiente. Además de los planes de capacitación, descubrirás una gran cantidad de recursos, desde buenas prácticas para la formación hasta métodos innovadores para enseñar GIS.   
+El componente más importante son los planes de capacitación. Estos brindan orientación sobre cuándo usar qué en su ciclo de capacitación.
+Sin embargo, cada componente del material de capacitación está diseñado para utilizarse de forma independiente. Además de los planes de capacitación, descubrirá una gran variedad de recursos, desde las mejores prácticas para la capacitación hasta métodos innovadores para enseñar el SIG.
 
 :::
 
-:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
-Tus formadores serán tus guías en esta plataforma. Si tienes alguna pregunta, siéntete libre de consultarlos sobre esta plataforma de capacitación.  
-Esta no es una plataforma de autoaprendizaje. Si quieres aprender QGIS, siempre es mejor participar en un curso y aprender de un formador experimentado. Sin embargo, puedes usar esta plataforma para perfeccionar tus habilidades en QGIS, solo ten en cuenta que el autoaprendizaje no es el objetivo principal.
+:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__
+Sus instructores serán quienes le guíen en esta plataforma de capacitación. Si tiene alguna pregunta sobre esta plataforma de capacitación, póngase en contacto con su instructor.
+Esta no es una plataforma de autoaprendizaje. Si quiere aprender QGIS, siempre es mejor participar en un curso y aprender de un instructor con experiencia. Sin embargo, puede usar esta plataforma para perfeccionar sus habilidades de QGIS, solo tenga en cuenta que el objetivo de la plataforma de capacitación, no es el autoaprendizaje.
 :::
 ::::
-
 ___
 
 ## Próximas capacitaciones públicas
 
-| Título | Fecha | Aplicación | Organización | Formato | Idioma | Nivel de habilidad | Info |
-|-------|------|--------------|--------------|--------|--------|-----------------|------|
-|El Uso de la Geoinformación en la Acción Humanitaria Anticipatoria|15.01-26.01.2024|Cerrado ⛔ |[Cruz Roja Alemana](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|En línea|Inglés|Básico|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
-|Enfoques Actuales y Métodos GIS para Apoyar la Acción Humanitaria Anticipatoria|11.03-22.03.2024|Cerrado ⛔ |[Cruz Roja Alemana](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|En línea|Inglés|Intermedio|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
+| Título | Fecha | Inscripción | Organización | Formato | Idioma | Nivel de habilidad | Información |
+|-------|------|--------------|--------------|--------|----------|-------------|------|
+| El uso de la geoinformación en la labor humanitaria anticipatoria | 15.01-26.01.2024 | Cerrada ⛔ | [Cruz Roja Alemana](https://www.drk.de/) y [HeiGIT](https://heigit.org/) | En línea | Español | Básico | [Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian) |
+| Enfoques actuales y métodos del SIG para apoyar la labor humanitaria anticipatoria | 11.03-22.03.2024 | Cerrada ⛔ | [Cruz Roja Alemana](https://www.drk.de/) y [HeiGIT](https://heigit.org/) | En línea | Español | Intermedio | [Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods) |
 
 ___
 
 ## Contacto
 
-:::{admonition} Contacta al Equipo de la Plataforma de Capacitación GIS de la IFRC
-Si tienes preguntas, comentarios o retroalimentación sobre la plataforma y el contenido, estamos siempre felices de escucharte. Puedes contactarnos por correo electrónico a __gis-training-platform@heigit.org__
+:::{admonition} Contacte con el Equipo de la Plataforma de Capacitación en SIG de la IFRC
+Si tiene preguntas, observaciones o comentarios sobre la plataforma de capacitación y el contenido. siempre nos alegramos de escucharlo. Puede contactarnos por correo electrónico en __gis-training-platform@heigit.org__
 :::
 
-## Contribuciones
+## Contribución
 
-Damos una cordial bienvenida a todos para contribuir y colaborar en el avance de la Plataforma de Capacitación GIS de la IFRC, fomentando el conocimiento compartido y el crecimiento. Antes de contribuir, por favor revisa el [Plan de Contribución](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html).
+Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, que fomenta el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](https://giscience.github.io/gis-training-resource-center/content/es/contribution_plan.html).
 
-## Únete a la Comunidad
+## Únase a la comunidad
 
-🤝 Aprender es más disfrutable cuando se comparte. Únete a nuestra vibrante comunidad de entusiastas de GIS, aprendices y expertos participando en discusiones, haciendo preguntas y compartiendo tus conocimientos. Juntos, podemos aprovechar el poder del GIS para generar un impacto positivo en causas humanitarias alrededor del mundo.
+🤝 El aprendizaje es más agradable cuando se comparte. Únase a nuestra vibrante comunidad de entusiastas, aprendices y expertos en el SIG, participe en las discusiones, haga preguntas y comparta sus ideas. Juntos, podemos aprovechar el poder de los SIG para generar un impacto positivo en las causas humanitarias en todo el mundo.
+
 
 ¡Feliz mapeo!
 
@@ -156,7 +156,7 @@ Damos una cordial bienvenida a todos para contribuir y colaborar en el avance de
 :::{figure} /fig/Training_Somalia.JPG
 ---
 width: 800px
-name: 
+name:
 ---
 
 :::

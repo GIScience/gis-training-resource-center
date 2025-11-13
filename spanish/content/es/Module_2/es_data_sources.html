@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Fuentes de datos &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_2/es_data_sources';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">1. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">1.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">1.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">1.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">1.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">1.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">2. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">2.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">2.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">2.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">2.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">2.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">2.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">2.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">2.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">2.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">3. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">3.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">3.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">3.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">3.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">3.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">4. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">4.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">4.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_2/es_data_sources.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_2/es_data_sources.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Fuentes de datos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-tener-en-cuenta-al-buscar-datos">Qué tener en cuenta al buscar datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-general-de-repositorios-utiles-de-datos">Visión general de repositorios útiles de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-geoespaciales-generales">Datos geoespaciales generales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-humanitarios">Datos humanitarios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-sobre-desastres">Datos sobre desastres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-poblacion">Datos de población</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-edificaciones">Datos de edificaciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-teledeteccion-observacion-de-la-tierra">Datos de teledetección/observación de la Tierra</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-openstreetmap">Datos de OpenStreetMap</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plugin-quickosm">Plugin QuickOSM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#herramienta-de-exportacion-hot">Herramienta de exportación HOT</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="fuentes-de-datos">
+<h1>Fuentes de datos<a class="headerlink" href="#fuentes-de-datos" title="Link to this heading">#</a></h1>
+<p>Para encontrar los datos adecuados que busca, puede consultar
+plataformas de intercambio de datos en línea. A continuación se destacan algunas de las más importantes.</p>
+<section id="que-tener-en-cuenta-al-buscar-datos">
+<h2>Qué tener en cuenta al buscar datos<a class="headerlink" href="#que-tener-en-cuenta-al-buscar-datos" title="Link to this heading">#</a></h2>
+<p><em>Fuente de los datos:</em> Asegúrese siempre de utilizar datos que provengan de fuentes de datos confiables. La
+organización que compartió los datos es el mejor indicador. Además, el uso de
+los datos en contextos de reconocidos o el número de descargas también pueden ser buenos indicadores.</p>
+<p><em>Tamaño de los datos:</em> A veces se puede acceder a los datos en diferentes escalas, resoluciones, etc.
+Asegúrese de seleccionar un conjunto de datos que se ajuste a su propósito y que
+usted pueda procesar fácilmente. Por ejemplo, si solo necesita datos sobre una región específica, solo
+seleccione los datos de esta área administrativa.</p>
+<p><em>Formato de los datos:</em> Es posible que haya distintos formatos de los datos disponibles entre los que pueda
+elegir. Piense en sus necesidades y en lo que es más práctico para su uso
+y, potencialmente, también con el propósito de compartir.</p>
+<p><em>Fecha de captura de los datos:</em> Asegúrese de verificar cuándo se recopilaron los datos y si la
+recopilación de datos se corresponde con sus necesidades. Verifique si hay datos más
+actualizados disponibles en otra fuente.</p>
+<p><em>Licencia de los datos:</em> ¿Qué tipo de licencia tienen los datos? ¿Cómo puede utilizarlos y
+compartirlos y cómo debe citar la fuente de datos? Asegúrese de revisar la
+licencia y cumplir con las regulaciones respectivas para evitar dificultades.</p>
+<figure class="align-default" id="en-data-sources-examples-cartong">
+<a class="reference internal image-reference" href="../../../_images/en_data_sources_examples_cartong.png"><img alt="../../../_images/en_data_sources_examples_cartong.png" src="../../../_images/en_data_sources_examples_cartong.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Los datos para crear mapas o realizar análisis SIG pueden provenir de diversas fuentes (fuente: <a class="reference external" href="https://www.cartong.org/en/">CartONG</a>)</span><a class="headerlink" href="#en-data-sources-examples-cartong" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="vision-general-de-repositorios-utiles-de-datos">
+<h2>Visión general de repositorios útiles de datos<a class="headerlink" href="#vision-general-de-repositorios-utiles-de-datos" title="Link to this heading">#</a></h2>
+<section id="datos-geoespaciales-generales">
+<h3>Datos geoespaciales generales<a class="headerlink" href="#datos-geoespaciales-generales" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Datos</p></th>
+<th class="head text-left"><p>Enlace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Natural Earth</p></td>
+<td class="text-left"><p>Geografía administrativa y física</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.naturalearthdata.com/">https://www.naturalearthdata.com/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Geonames</p></td>
+<td class="text-left"><p>Datos geoespaciales administrativos</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.geonames.org/">https://www.geonames.org/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>OpenAfrica</p></td>
+<td class="text-left"><p>Datos de código abierto sobre África</p></td>
+<td class="text-left"><p><a class="reference external" href="https://africaopendata.org/dataset">https://africaopendata.org/dataset</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>DivaGIS</p></td>
+<td class="text-left"><p>Diferentes datos, p. ej., administrativos, viales, de población, de elevación, climáticos</p></td>
+<td class="text-left"><p><a class="reference external" href="http://www.diva-gis.org/gdata">http://www.diva-gis.org/gdata</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Open Topography</p></td>
+<td class="text-left"><p>Datos sobre topografía</p></td>
+<td class="text-left"><p><a class="reference external" href="https://opentopography.org/">https://opentopography.org/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>OSM Boundaries</p></td>
+<td class="text-left"><p>Límites administrativos (requiere autenticación a través de su cuenta de OSM)</p></td>
+<td class="text-left"><p><a class="reference external" href="https://osm-boundaries.com">https://osm-boundaries.com</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>GADM</p></td>
+<td class="text-left"><p>Límites administrativos</p></td>
+<td class="text-left"><p><a class="reference external" href="http://gadm.org">gadm.org</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="datos-humanitarios">
+<h3>Datos humanitarios<a class="headerlink" href="#datos-humanitarios" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Datos</p></th>
+<th class="head text-left"><p>Enlace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Intercambio de Datos Humanitarios</p></td>
+<td class="text-left"><p>Diversos datos abiertos de diferentes organizaciones humanitarias</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org">https://data.humdata.org</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Healthsites</p></td>
+<td class="text-left"><p>Ubicaciones de centros de salud</p></td>
+<td class="text-left"><p><a class="reference external" href="https://healthsites.io/">https://healthsites.io/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Servicios geoespaciales del ACNUR</p></td>
+<td class="text-left"><p>Datos sobre poblaciones desplazadas</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.unhcr.org/en/situations">https://data.unhcr.org/en/situations</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Waterpoint</p></td>
+<td class="text-left"><p>Datos sobre puntos de agua</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.waterpointdata.org">https://www.waterpointdata.org</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="datos-sobre-desastres">
+<h3>Datos sobre desastres<a class="headerlink" href="#datos-sobre-desastres" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Datos</p></th>
+<th class="head text-left"><p>Enlace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>MapAction</p></td>
+<td class="text-left"><p>Recursos cartográficos para emergencias</p></td>
+<td class="text-left"><p><a class="reference external" href="https://maps.mapaction.org/">https://maps.mapaction.org/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><a class="reference external" href="http://Fieldmaps.io">Fieldmaps.io</a></p></td>
+<td class="text-left"><p>Plataforma de descarga de datos y mapas para uso humanitario</p></td>
+<td class="text-left"><p><a class="reference external" href="https://fieldmaps.io">https://fieldmaps.io</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>ACLED</p></td>
+<td class="text-left"><p>Datos sobre conflictos</p></td>
+<td class="text-left"><p><a class="reference external" href="https://acleddata.com/data-export-tool">https://acleddata.com/data-export-tool</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>GDACS</p></td>
+<td class="text-left"><p>Base de datos de desastres</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.gdacs.org">https://www.gdacs.org</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>ZKI/DLR</p></td>
+<td class="text-left"><p>Extensión de las inundaciones, áreas afectadas, datos de observación de la Tierra</p></td>
+<td class="text-left"><p><a class="reference external" href="https://activations.zki.dlr.de/en/activations/">https://activations.zki.dlr.de/en/activations/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>PMAAnálisis y mapeo de vulnerabilidades</p></td>
+<td class="text-left"><p>Datos sobre seguridad alimentaria, amenazas, conflictos y clima</p></td>
+<td class="text-left"><p><a class="reference external" href="https://dataviz.vam.wfp.org/">https://dataviz.vam.wfp.org/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="datos-de-poblacion">
+<h3>Datos de población<a class="headerlink" href="#datos-de-poblacion" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Datos</p></th>
+<th class="head text-left"><p>Enlace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>WorldPop</p></td>
+<td class="text-left"><p>Estimaciones de población</p></td>
+<td class="text-left"><p><a class="reference external" href="https://wopr.worldpop.org/">https://wopr.worldpop.org/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>GHSL</p></td>
+<td class="text-left"><p>Datos globales de asentamientos</p></td>
+<td class="text-left"><p><a class="reference external" href="https://ghsl.jrc.ec.europa.eu/">https://ghsl.jrc.ec.europa.eu/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>HRSL</p></td>
+<td class="text-left"><p>Capa de asentamientos basada en la observación de la Tierra y datos de Facebook</p></td>
+<td class="text-left"><p><a class="reference external" href="https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/">https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>GRID3 Extensión y puntos de asentamientos</p></td>
+<td class="text-left"><p>Datos sobre la extensión de los asentamientos</p></td>
+<td class="text-left"><p><a class="reference external" href="https://grid3.org/">https://grid3.org/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Pangea</p></td>
+<td class="text-left"><p>Datos ambientales y de ciencias biológicas</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.pangaea.de/">https://www.pangaea.de/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Fondo de Población de las Naciones Unidas</p></td>
+<td class="text-left"><p>Datos sobre salud sexual y reproductiva y tendencias demográficas</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.unfpa.org/data">https://www.unfpa.org/data</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="datos-de-edificaciones">
+<h3>Datos de edificaciones<a class="headerlink" href="#datos-de-edificaciones" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Datos</p></th>
+<th class="head text-left"><p>Enlace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>World Settlement Footprint</p></td>
+<td class="text-left"><p>World Settlement Footprint</p></td>
+<td class="text-left"><p><a class="reference external" href="https://download.geoservice.dlr.de/WSF2019/">https://download.geoservice.dlr.de/WSF2019/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Superficies de construcciónVIDA</p></td>
+<td class="text-left"><p>Conjuntos de datos combinados de superficies construidas generadas por Google y Microsoft</p></td>
+<td class="text-left"><p><a class="reference external" href="https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/">https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Open-building</p></td>
+<td class="text-left"><p>Superficies de construcción generadas por Google</p></td>
+<td class="text-left"><p><a class="reference external" href="https://sites.research.google/open-buildings/#download">https://sites.research.google/open-buildings/#download</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="datos-de-teledeteccion-observacion-de-la-tierra">
+<h3>Datos de teledetección/observación de la Tierra<a class="headerlink" href="#datos-de-teledeteccion-observacion-de-la-tierra" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Datos</p></th>
+<th class="head text-left"><p>Enlace</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Global Forest Watch</p></td>
+<td class="text-left"><p>Datos sobre los bosques mundiales</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.globalforestwatch.org/">https://www.globalforestwatch.org/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>OpenAerialMap</p></td>
+<td class="text-left"><p>Imágenes de drones obtenidas mediante colaboración abierta</p></td>
+<td class="text-left"><p><a class="reference external" href="https://map.openaerialmap.org/">https://map.openaerialmap.org/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Earth Explorer del USGS</p></td>
+<td class="text-left"><p>Datos satelitales de múltiples fuentes, incluidos Landsat y Sentinel</p></td>
+<td class="text-left"><p><a class="reference external" href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Misión de topografía por radar del transbordador espacial de la NASA (SRTM)</p></td>
+<td class="text-left"><p>Datos de elevación mundiales</p></td>
+<td class="text-left"><p><a class="reference external" href="http://srtm.csi.cgiar.org/srtmdata/">http://srtm.csi.cgiar.org/srtmdata/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Earth Observe</p></td>
+<td class="text-left"><p>Modelo de elevación digital a escala mundial</p></td>
+<td class="text-left"><p><a class="reference external" href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Copernicus</p></td>
+<td class="text-left"><p>Datos de observación de la Tierra</p></td>
+<td class="text-left"><p><a class="reference external" href="https://scihub.copernicus.eu/">https://scihub.copernicus.eu/</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>GlobCover</p></td>
+<td class="text-left"><p>Datos ráster sobre la cobertura terrestre</p></td>
+<td class="text-left"><p><a class="reference external" href="http://due.esrin.esa.int/page_globcover.php">http://due.esrin.esa.int/page_globcover.php</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="datos-de-openstreetmap">
+<h2>Datos de OpenStreetMap<a class="headerlink" href="#datos-de-openstreetmap" title="Link to this heading">#</a></h2>
+<p>OpenStreetMap (OSM) es un proyecto colaborativo que busca crear un mapa del mundo que sea libre y editable. A diferencia de los mapas tradicionales, que a menudo son propietarios y controlados por entidades comerciales, OSM permite que cualquier persona contribuya y edite datos cartográficos, lo que resulta en un mapa detallado y en constante evolución de caminos, senderos, puntos de referencia y más. Con su naturaleza de código abierto y su comunidad mundial de contribuyentes, OpenStreetMap se ha convertido en un recurso valioso para una amplia gama de aplicaciones, desde la navegación y la planificación urbana hasta la respuesta a desastres y la ayuda humanitaria.</p>
+<p>Hay múltiples maneras de obtener datos de OpenStreetMap (OSM) como un archivo vectorial en QGIS. Las tres formas más comunes y fáciles de usar son <a class="reference external" href="http://geofabrik.de">geofabrik.de</a>, la herramienta de exportación HOT y el <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html">complemento para QGIS</a> de QuickOSM. Cada una de las opciones tiene ventajas y desventajas.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Si desea practicar cómo exportar datos de OSM, puede hacer el <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex4.html">Ejercicio 4: Exportación de datos de OSM</a></strong></p>
+</div>
+<p><strong><a class="reference external" href="https://download.geofabrik.de/">Geofabrik.de</a></strong></p>
+<p>Como puede ver, Geofabrik es ideal si desea obtener conjuntos de datos de OSM completos para países o regiones enteros.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ventajas</p></th>
+<th class="head"><p>Desventajas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+ Acceso rápido a conjuntos de datos de OSM completos</p></td>
+<td><p>- Si uno solo está interesado en entidades o regiones específicas (distintas de los países), no es óptimo</p></td>
+</tr>
+<tr class="row-odd"><td><p>+ Exportaciones de OSM muy actualizadas</p></td>
+<td><p>- Archivo de gran tamaño</p></td>
+</tr>
+<tr class="row-even"><td><p>+ Documentación clara de qué entidades de OSM contiene cada archivo shapefile</p></td>
+<td><p>- Solo disponible en formato shapefile</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><a class="reference external" href="https://export.hotosm.org/v3/">Herramienta de exportación HOT</a></strong>
+Como puede ver, la herramienta de exportación HOT ofrece una buena combinación de flexibilidad y
+acceso rápido a los datos de OSM. Sin embargo, se requieren varios pasos para que los datos
+estén disponibles en QGIS.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ventajas</p></th>
+<th class="head"><p>Desventajas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+ Buenas opciones para la selección de datos</p></td>
+<td><p>- Implica muchos pasos</p></td>
+</tr>
+<tr class="row-odd"><td><p>+ Muchos formatos de datos disponibles</p></td>
+<td><p>- La selección de solo tiene una opción fija</p></td>
+</tr>
+<tr class="row-even"><td><p>+ Facilidad de uso</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>+ La consulta se puede repetir fácilmente</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Plugin QuickOSM</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ventajas</p></th>
+<th class="head"><p>Desventajas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+ La consulta se puede personalizar para datos muy específicos</p></td>
+<td><p>- Requiere conocimiento del modelo de datos de OSM</p></td>
+</tr>
+<tr class="row-odd"><td><p>+ Los datos se cargan directamente en QGIS</p></td>
+<td><p>- Formular consultas puede complicarse rápidamente</p></td>
+</tr>
+<tr class="row-even"><td><p>+ La consulta se puede repetir fácilmente</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">Layer…</span></code>. Elija <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code> y haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps">video en la Wiki</a>).</p>
+</div>
+<section id="plugin-quickosm">
+<h3>Plugin QuickOSM<a class="headerlink" href="#plugin-quickosm" title="Link to this heading">#</a></h3>
+<p>El plugin QuickOSM facilita descargar los datos dese OpenStreetMap e incorporarlos
+a su proyecto en QGIS.</p>
+<ol class="arabic simple">
+<li><p>Instale el plugin QuickOSM haciendo clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Plugin</span></code>, -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> -&gt; busque “QuickOSM” -&gt; <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code></p></li>
+<li><p>Para abrir QuickOSM, haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Vector</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">QuickOSM</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">QuickOSM</span></code></p></li>
+</ol>
+<p>Para trabajar de forma eficiente con QuickOSM, es esencial tener una comprensión básica del modelo de datos de OSM. Aquí hay una breve explicación:</p>
+<ul class="simple">
+<li><p>En primer lugar, todos los datos en OSM se organizan utilizando un sistema de claves y valores. Una combinación de una clave y su valor correspondiente se denomina <strong>etiqueta</strong>.
+Por ejemplo, considere la clave “amenity”. Según la Wiki de OSM, <em>“’amenity=</em>’ describe instalaciones útiles como sanitarios, teléfonos, bancos, farmacias, prisiones y escuelas”*.
+Cabe destacar que una clave puede tener múltiples valores, “amenity” por sí sola tiene 8911 valores diferentes. Los ejemplos típicos de valores para los servicios incluyen escuelas y hospitales.
+Al buscar datos en OSM, es crucial identificar las claves y valores relevantes que representan las entidades deseadas. Algunos recursos útiles para este propósito incluyen <a class="reference external" href="https://taginfo.openstreetmap.org">taginfo</a> y el artículo de la Wiki de OSM sobre <a class="reference external" href="https://wiki.openstreetmap.org/wiki/Map_features">entidades del mapa</a>.</p></li>
+<li><p>En segundo lugar, una entidad en OSM puede tener múltiples etiquetas, cada una comprende una clave y su valor correspondiente. Esto significa que, a veces, se requieren varios pares clave-valor para recuperar todos los datos deseados.
+Por ejemplo, consideremos los hospitales. Si bien lo ideal sería que todos los hospitales tuvieran las etiquetas “amenity=hospital” y “Health=Hospital”, es posible que algunos solo tengan una de estas etiquetas. Para garantizar una recuperación de datos completa, es recomendable usar ambas etiquetas al buscar hospitales.</p></li>
+</ul>
+<p>Siga los pasos para obtener los datos:</p>
+<ol class="arabic simple">
+<li><p>Seleccione una clave y un valor en la lista desplegable. Si tiene la certeza, consulte aquí:</p></li>
+</ol>
+<figure class="align-center" id="key-value-quickosm">
+<a class="reference internal image-reference" href="../../../_images/key_value_quickosm.png"><img alt="../../../_images/key_value_quickosm.png" src="../../../_images/key_value_quickosm.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Elegir la clave y el valor en QuickOSM.</span><a class="headerlink" href="#key-value-quickosm" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="2">
+<li><p>Limite el área escribiendo el nombre de su área de interés. También puede
+elegir desde el menú desplegable <code class="docutils literal notranslate"><span class="pre">Canvas</span> <span class="pre">Extent</span></code> o <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Extent</span></code> en lugar del nombre
+de una ciudad o país.</p></li>
+<li><p>Despliegue la pestaña <code class="docutils literal notranslate"><span class="pre">Advanced</span></code>. Solo seleccione los tipos de datos que espera para
+minimizar los errores.</p>
+<!-- CLARIFY: would be useful to have an example here -->
+</li>
+</ol>
+<figure class="align-center" id="quickosm-usage">
+<a class="reference internal image-reference" href="../../../_images/quickosm_usage.png"><img alt="../../../_images/quickosm_usage.png" src="../../../_images/quickosm_usage.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ejecutar el plugin QuickOSM.</span><a class="headerlink" href="#quickosm-usage" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">query</span></code>.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Cómo obtener datos para varias consultas</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic
+en el icono <img alt="" src="../../../_images/plus_quickosm.png" />. Tenga cuidado al elegir el operador lógico correcto
+<code class="docutils literal notranslate"><span class="pre">And</span></code> o <code class="docutils literal notranslate"><span class="pre">Or</span></code>. De no tener certeza, revise la página de <a class="reference internal" href="#/content/es/Wiki/es_qgis_non_spatial_queries_wiki"><span class="xref myst">consultas no espaciales</span></a>
+en la wiki. Hay un ejemplo de esto en el <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex2.html#task-quickosm">ejercicio de OSM</a> del módulo 2</p>
+</div>
+</details></section>
+<section id="herramienta-de-exportacion-hot">
+<h3>Herramienta de exportación HOT<a class="headerlink" href="#herramienta-de-exportacion-hot" title="Link to this heading">#</a></h3>
+<p>Con la <a class="reference external" href="https://export.hotosm.org/v3/">herramienta de exportación del Equipo Humanitario de OpenStreetMap (HOT)</a>, puede descargar extractos personalizados de datos actualizados de OSM en distintos formatos de archivo. Ofrece una herramienta basada en navegador para descargar datos de OSM, con buenas opciones para especificar la región, el período, el tipo de entidad y el formato de los datos.</p>
+<ol class="arabic">
+<li><p>Vaya a la herramienta de exportación HOT. Necesita una cuenta de OSM para usar la herramienta.</p>
+<p>Si tiene una cuenta de OSM, puede iniciar sesión directamente en la herramienta haciendo clic en <code class="docutils literal notranslate"><span class="pre">Log</span> <span class="pre">in</span></code>.
+Si no tiene una, tendrá que crearla: haga clic en <code class="docutils literal notranslate"><span class="pre">Log</span> <span class="pre">in</span></code> y, en la nueva ventana, seleccione la opción de crear una cuenta nueva.</p>
+</li>
+<li><p>Después de iniciar sesión, haga clic en el botón <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Exporting</span></code> de la página de inicio para cargar la herramienta.</p></li>
+</ol>
+<figure class="align-center" id="hot-export-tool">
+<a class="reference internal image-reference" href="../../../_images/hot_export.png"><img alt="../../../_images/hot_export.png" src="../../../_images/hot_export.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La herramienta de exportación HOT.</span><a class="headerlink" href="#hot-export-tool" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Primero agregue un nombre y una breve descripción de su exportación. Luego haga clic en <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p></li>
+<li><p>Elija el formato de archivo que se adapte a sus necesidades. Se recomienda utilizar GeoPackage, pero también se pueden utilizar GeoJSON o shapefile. Haga clic en <code class="docutils literal notranslate"><span class="pre">Next</span></code>.</p></li>
+<li><p>La forma más fácil de elegir el tipo de entidad que desea descargar es utilizando el árbol de etiquetas. (la opción YAML es más flexible, pero más avanzada, por lo que nos centraremos en la primera opción).</p></li>
+<li><p>Hay múltiples maneras de seleccionar su área de interés.</p>
+<ol class="arabic simple">
+<li><p>Puede buscarla en la barra de búsqueda en la esquina superior derecha.</p></li>
+<li><p>Acerque el zoom en el mapa hacia su área y haga clic en <code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">view</span></code>.</p></li>
+<li><p>Acerque el zoom y dibuje un cuadro delimitador haciendo clic en <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p></li>
+<li><p>Acerque el zoom y dibuje a mano alzada un polígono haciendo clic en <code class="docutils literal notranslate"><span class="pre">Draw</span></code>.</p></li>
+<li><p>O puede cargar una capa como extensión (¡solo .geojson en el crs WGS84!).
+Haga clic en <code class="docutils literal notranslate"><span class="pre">Import</span></code>.</p></li>
+</ol>
+</li>
+<li><p>Luego haga clic en <code class="docutils literal notranslate"><span class="pre">Next</span></code>. Se verá algo como esto:</p></li>
+</ol>
+<figure class="align-center" id="hot-export-example">
+<a class="reference internal image-reference" href="../../../_images/hot_export_example.png"><img alt="../../../_images/hot_export_example.png" src="../../../_images/hot_export_example.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Un ejemplo para la herramienta de exportación HOT.</span><a class="headerlink" href="#hot-export-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Export</span></code>. A continuación, se ejecutará durante unos minutos y se verá
+así:</p></li>
+</ol>
+<figure class="align-center" id="hot-export-running">
+<a class="reference internal image-reference" href="../../../_images/hot_export_running.png"><img alt="../../../_images/hot_export_running.png" src="../../../_images/hot_export_running.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Se ejecuta la herramienta de exportación HOT.</span><a class="headerlink" href="#hot-export-running" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>Después de terminar, el estado cambiará a <code class="docutils literal notranslate"><span class="pre">COMPLETED</span></code> y puede
+descargar su archivo haciendo clic en el enlace:</p></li>
+</ol>
+<figure class="align-center" id="hot-export-done">
+<a class="reference internal image-reference" href="../../../_images/hot_export_done.png"><img alt="../../../_images/hot_export_done.png" src="../../../_images/hot_export_done.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Descargar datos de la herramienta de exportación HOT.</span><a class="headerlink" href="#hot-export-done" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<p>Tómese un momento para recapitular lo que ha aprendido en este capítulo respondiendo las siguientes preguntas:</p>
+<ol class="arabic simple">
+<li><p><strong>¿Qué criterios debe verificar al seleccionar los datos geoespaciales de un proyecto? (p. ej., fiabilidad de la fuente, tamaño / resolución, formato, fecha, licencia)</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Fuente/fiabilidad</strong>: utilice datos de organizaciones con buena reputación, plataformas de confianza o fuentes conocidas por su buena calidad. Compruebe quién publicó los datos, cómo se validaron y con qué frecuencia se utilizan.</p></li>
+<li><p class="sd-card-text"><strong>Tamaño, resolución y escala de los datos</strong>: asegúrese de que la resolución espacial (o detalle) sea adecuada para su proyecto. No seleccione datos demasiado generales ni demasiado específicos innecesariamente (ya que esto podría ralentizar el procesamiento).</p></li>
+<li><p class="sd-card-text"><strong>Formato</strong>: algunos formatos pueden ser más fáciles de usar/compatibles (p. ej., GeoPackage, shapefile, GeoJSON). Elija un formato que sea práctico para sus herramientas y para compartir.</p></li>
+<li><p class="sd-card-text"><strong>Fecha/vigencia</strong>: ¿cuándo se recopilaron los datos? Es importante que el período de los datos coincida con los requisitos de su proyecto. Es posible que los datos más antiguos ya no reflejen las condiciones actuales.</p></li>
+<li><p class="sd-card-text"><strong>Licencia/derechos de uso</strong>: debe comprobar cómo se pueden utilizar y compartir los datos, y si es necesario atribuir la autoría. La licencia puede restringir el uso comercial o las obras derivadas.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>¿Por qué la “licencia de los datos” es una consideración importante al usar datos geoespaciales?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">La licencia de datos dicta lo que está legalmente permitido hacer con los datos: si puede usarlos libremente, modificarlos, compartirlos o publicar derivados.</p></li>
+<li><p class="sd-card-text">Ignorar los términos de la licencia puede provocar problemas legales o éticos (p. ej., infringir los derechos de autor, no dar la atribución requerida) o impedir que distribuya sus resultados.</p></li>
+<li><p class="sd-card-text">Algunas licencias son restrictivas (solo para uso no comercial, sin obras derivadas o requieren compartir bajo la misma licencia), por lo que debe asegurarse de que el uso previsto cumpla con esos términos.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>¿Cómo afecta la fecha de captura de los datos su utilidad? Ponga un ejemplo en el que los datos antiguos podrían afectar negativamente su análisis.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">La fecha importa porque los paisajes, la infraestructura, el uso del suelo, la población, etc. pueden cambiar con el tiempo. Si los datos están desactualizados, es posible que ya no reflejen la realidad.</p></li>
+<li><p class="sd-card-text">El uso de datos antiguos puede ocasionar un análisis erróneo si las condiciones han cambiado:</p>
+<ul>
+<li><p class="sd-card-text">Por ejemplo: Supongamos que usa datos de la red vial de hace 10 años para modelar los caminos más cortos o la accesibilidad actual. Si se han construido muchos caminos nuevos o se han cerrado algunos, su ruta o análisis de accesibilidad sería incorrecto.</p></li>
+<li><p class="sd-card-text">O bien, utilizando datos de la cobertura terrestre de hace muchos años: una zona que antes era boscosa ahora puede estar urbanizada, por lo que interpretar las tendencias del hábitat o de la deforestación sería engañoso.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Por lo tanto, la alineación de la fecha de captura de datos con el período de estudio es importante.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>¿Cuáles podrían ser los desafíos al integrar datos de diferentes fuentes (p. ej., actualización, diferentes proyecciones cartográficas, formatos, cobertura o integridad de los metadatos)?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Al combinar conjuntos de datos de diferentes fuentes, los desafíos incluyen:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Diferente vigencia/actualidad</strong>: un conjunto de datos podría ser reciente, otro antiguo. Esta discrepancia puede generar comparaciones engañosas.</p></li>
+<li><p class="sd-card-text"><strong>Proyecciones cartográficas/sistemas de coordenadas distintos</strong>: los conjuntos de datos pueden utilizar diferentes sistemas de referencia de coordenadas, por lo que debe reproyectarlos a un SRC común.</p></li>
+<li><p class="sd-card-text"><strong>Desajustes de cobertura</strong>: un conjunto de datos podría cubrir solo una parte de su área de interés o tener brechas.</p></li>
+<li><p class="sd-card-text"><strong>Integridad/calidad de los metadatos</strong>: un conjunto de datos puede carecer de metadatos (p. ej., sin fecha, sin documentación sobre cómo se recopilaron los datos), lo que dificulta evaluar la calidad o la compatibilidad.</p></li>
+<li><p class="sd-card-text"><strong>Diferencias en el esquema de atributos</strong>: las diferencias en la nomenclatura de los atributos, las unidades, los tipos de campos y las clasificaciones pueden complicar la fusión o la comparación. Por ejemplo, pequeñas diferencias en el nombre de una entidad (p. ej., un distrito o estado) pueden dificultar la unión de dos conjuntos de datos, ya que será necesario ajustarlos manualmente.</p></li>
+</ul>
+<p class="sd-card-text">Al realizar un análisis, es importante ser transparente sobre los desafíos o limitaciones de los distintos conjuntos de datos. Esto permitirá que el proceso de toma de decisiones esté mejor informado y también garantizará la reproducibilidad y adaptabilidad de su análisis.</p>
+</div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-tener-en-cuenta-al-buscar-datos">Qué tener en cuenta al buscar datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-general-de-repositorios-utiles-de-datos">Visión general de repositorios útiles de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-geoespaciales-generales">Datos geoespaciales generales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-humanitarios">Datos humanitarios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-sobre-desastres">Datos sobre desastres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-poblacion">Datos de población</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-edificaciones">Datos de edificaciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-teledeteccion-observacion-de-la-tierra">Datos de teledetección/observación de la Tierra</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-openstreetmap">Datos de OpenStreetMap</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plugin-quickosm">Plugin QuickOSM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#herramienta-de-exportacion-hot">Herramienta de exportación HOT</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

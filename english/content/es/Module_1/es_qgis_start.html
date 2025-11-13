@@ -1,0 +1,1363 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Primeros pasos con QGIS &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_1/es_qgis_start';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_1/es_qgis_start.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_1/es_qgis_start.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Primeros pasos con QGIS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentacion-de-qgis">Presentación de QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajar-con-qgis">Trabajar con QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-un-nuevo-proyecto-en-qgis">Abrir un nuevo proyecto en QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-general-de-la-interfaz-de-qgis">Visión general de la interfaz de QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#botones-y-atajos">Botones y atajos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegar-en-el-lienzo-del-mapa">Navegar en el lienzo del mapa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mover-la-vista-del-mapa">Mover la vista del mapa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hacer-zoom-en-la-vista-del-mapa">Hacer zoom en la vista del mapa</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caja-de-herramientas-y-barras-de-herramientas">Caja de herramientas y barras de herramientas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-la-caja-de-herramientas">Abrir la caja de herramientas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mostrar-y-ocultar-pantallas-y-barras-de-herramientas">Mostrar y ocultar pantallas y barras de herramientas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mover-y-organizar-las-barras-de-herramientas">Mover y organizar las barras de herramientas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guardar-y-abrir-proyectos-de-qgis">Guardar y abrir proyectos de QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proyectos-abiertos">Proyectos abiertos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guardar-proyectos">Guardar proyectos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iconos-de-advertencia">Iconos de advertencia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donde-encontrar-ayuda">Dónde encontrar ayuda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="primeros-pasos-con-qgis">
+<h1>Primeros pasos con QGIS<a class="headerlink" href="#primeros-pasos-con-qgis" title="Link to this heading">#</a></h1>
+<section id="presentacion-de-qgis">
+<h2>Presentación de QGIS<a class="headerlink" href="#presentacion-de-qgis" title="Link to this heading">#</a></h2>
+<figure class="align-right" id="en-qgis-banner-website">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_banner_website.png"><img alt="../../../_images/en_qgis_banner_website.png" src="../../../_images/en_qgis_banner_website.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://qgis.org/">qgis.org</a></span><a class="headerlink" href="#en-qgis-banner-website" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-text-justify docutils">
+<ul class="simple">
+<li><p>QGIS es un <strong>software de código abierto del sistema de información geográfica</strong>. Eso significa que el código fuente está disponible para todas las personas,
+lo que hace que QGIS sea una aplicación gratuita. El código fuente completo puede consultarse y descargarse en <a class="github reference external" href="https://github.com/qgis/QGIS">qgis/QGIS</a>.</p></li>
+<li><p>QGIS es un <strong>software de escritorio</strong>: eso significa que usted obtiene un programa, que se abre en su computadora, como una ventana con botones
+en los que puede hacer clic, formularios que puede llenar para realizar tareas y en general, una experiencia interactiva visual.</p></li>
+<li><p>Puede <strong>ver, editar, capturar y analizar datos geoespaciales o crear mapas imprimibles</strong> con ellos. QGIS fue creado en 2002
+y es un proyecto impulsado por voluntarios. Y está en <strong>constante cambio</strong>.</p></li>
+<li><p>QGIS está respaldado por una <strong>gran comunidad de usuarios</strong>, por lo que es fácil encontrar soluciones a problemas técnicos mediante el uso de los foros, los blogs o sub-reddits de QGIS. La comunidad oficial de QGIS se encuentra <a class="reference external" href="https://qgis.org/en/site/forusers/support.html#support">aquí</a>. Además, puede encontrar una lista de sitios web útiles en la <a class="reference internal" href="#/content/es/Wiki/es_qgis_common_errors_and_Issues.md"><span class="xref myst">Wiki aquí</span></a>.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tenga en cuenta que a medida que QGIS sigue desarrollándose, la interfaz y las funciones del programa estarán sujetos a cambios. El material escrito para esta plataforma de capacitación se refiere a la versión 3.36 de QGIS. Si el material de capacitación ya no está actualizado, eche un vistazo a la <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">Documentación de QGIS</a>.</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>QGIS evoluciona constantemente y se añaden nuevas entidades. Por ello, las versiones más recientes pueden presentar cambios o incluso errores (como fallos). Sin embargo, siempre hay una versión estable disponible, que recibe soporte durante más tiempo. Esta versión se denomina <strong>Long-term release (LTR)</strong>.</p>
+</div>
+</section>
+<section id="trabajar-con-qgis">
+<h2>Trabajar con QGIS<a class="headerlink" href="#trabajar-con-qgis" title="Link to this heading">#</a></h2>
+<p>En QGIS, puede crear proyectos donde puede visualizar y manipular datos geoespaciales. Existen tres flujos de trabajo principales: <strong>recopilación y creación de datos, procesamiento de datos y visualización de datos</strong>. Los datos geoespaciales se cargan en proyectos QGIS, que se representarán como capas en un lienzo del mapa.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>En los SIG intervienen muchos algoritmos complejos, pero QGIS se encarga de ellos por sí solo y no es necesario tener un profundo conocimiento de las matemáticas y los algoritmos para utilizar QGIS. <strong>Siempre que sepa utilizar Excel y Powerpoint, no debería tener problemas para aprender a utilizar QGIS</strong>.</p>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Recopilación y creación de datos</label><div class="sd-tab-content docutils">
+<p>QGIS ofrece herramientas para crear sus propios datos geoespaciales. Por ejemplo, con las herramientas de digitalización se pueden crear puntos, polígonos y líneas con información, que puede representar información espacial. Además, la georreferenciación permite añadir información geográfica a diversos tipos de datos, como imágenes satelitales o mapas dibujados a mano. Aprenderá a crear datos geoespaciales y a georreferenciar datos en el <strong><a class="reference internal" href="../Module_2/es_module_2_overview.html"><span class="std std-doc">módulo 2</span></a></strong>.</p>
+<p>A veces, trabajar con SIG requiere salir al campo para recopilar los datos. En este caso, puede utilizar <a class="reference internal" href="#/content/es/Wiki/es_web_and_mobile_apps_wiki.md"><span class="xref myst">aplicaciones web y móviles</span></a>.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Procesamiento de datos</label><div class="sd-tab-content docutils">
+<p>QGIS ofrece una amplia gama de algoritmos para procesar datos geoespaciales. En los siguientes módulos, conocerá una serie de algoritmos especialmente útiles para los SIG en el trabajo humanitario. Aprenderá más sobre procesamiento y manipulación de datos a partir del <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_module_2_overview.html">módulo 2</a>.</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Visualización</label><div class="sd-tab-content docutils">
+<p>QGIS permite visualizar datos geoespaciales y crear mapas para comunicar información. Para ello, asigna símbolos y colores a los distintos elementos de sus datos geoespaciales. Asignar una simbología a los datos geoespaciales es una de las principales habilidades que desarrollará como usuario del SIG y una buena visualización de los datos, es inmensamente útil a la hora de comunicar ideas. Aprenderá a asignar símbolos en el <a class="reference internal" href="#/content/es/Module_4/es_qgis_map_design_I.md"><span class="xref myst">Módulo 4: Visualización de datos geoespaciales y elaboración de mapas</span></a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Nota sobre los complementos</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Además de los algoritmos incluidos en la instalación estándar, QGIS ofrece complementos que añaden funciones adicionales a la aplicación QGIS. Estos complementos son desarrollados por organizaciones independientes o por la comunidad QGIS. Por ejemplo, los complementos le permiten conectarse a servicios en línea como OpenStreetMap o añadir más algoritmos para procesar sus datos. Pueden ser muy útiles para determinados casos de uso. También hay complementos diseñados específicamente para el trabajo humanitario. Aprenderá más sobre los complementos en los siguientes módulos. Si quiere saber cómo instalarlos, consulte la <a class="reference internal" href="#/content/es/Wiki/es_qgis_plugins_wiki.md"><span class="xref myst">Wiki</span></a>.</p>
+</div>
+</div>
+</section>
+<section id="abrir-un-nuevo-proyecto-en-qgis">
+<h2>Abrir un nuevo proyecto en QGIS<a class="headerlink" href="#abrir-un-nuevo-proyecto-en-qgis" title="Link to this heading">#</a></h2>
+<p>Abra QGIS como cualquier otro programa en su computadora. La pantalla de inicio de QGIS suele mostrarle los proyectos, en los que ha trabajado recientemente y la opción de crear un nuevo proyecto.</p>
+<p>Existen <strong>dos</strong> opciones para crear un nuevo proyecto:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Un archivo de proyecto de QGIS tiene un formato con la extensión <code class="docutils literal notranslate"><span class="pre">.qgz</span></code>.</p>
+</div>
+</aside>
+<ol class="arabic simple">
+<li><p>En la pantalla de inicio, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Template</span></code></p></li>
+</ol>
+<figure class="align-center" id="en-project-template-brc">
+<a class="reference internal image-reference" href="../../../_images/en_project_template_BRC.png"><img alt="../../../_images/en_project_template_BRC.png" src="../../../_images/en_project_template_BRC.png" style="height: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>En la esquina superior izquierda, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code></p></li>
+</ol>
+<p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video></p>
+</section>
+<section id="vision-general-de-la-interfaz-de-qgis">
+<h2>Visión general de la interfaz de QGIS<a class="headerlink" href="#vision-general-de-la-interfaz-de-qgis" title="Link to this heading">#</a></h2>
+<p>A primera vista, la interfaz de QGIS es bastante compleja. Sin embargo, una vez que conozca todos los componentes podrá orientarse rápidamente. Aquí encontrará una descripción de todos los componentes de la interfaz.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Cuando pase el puntero sobre los iconos, aparecerá un texto que explica la función del botón.</p>
+</div>
+</aside>
+<figure class="align-center" id="en-qgis-gui">
+<a class="reference internal image-reference" href="../../../_images/en_QGIS_GUI.png"><img alt="../../../_images/en_QGIS_GUI.png" src="../../../_images/en_QGIS_GUI.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Interfaz de usuario de QGIS. Fuente: Cruz Roja Británica (BRC)</span><a class="headerlink" href="#en-qgis-gui" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Panel de capas:</strong> La <strong>lista de capas</strong> muestra <strong>todas las capas/archivos</strong> que están <strong>cargados en el proyecto</strong>. Puede mostrar/ocultar capas y establecer otras propiedades.</p></li>
+<li><p><strong>Barras de herramientas:</strong>  Las <strong>barras de herramientas</strong> son atajos para ejecutar comandos de uso frecuente. Por ejemplo, hay barras de herramientas especiales para <strong>archivos vectoriales y archivos ráster</strong>, pero también, otras generales para guardar el proyecto, etc. La barra de herramientas contiene, entre otras cosas, una lista de todos los comandos, que puedes utilizar. La barra de herramientas también contiene la <strong>caja de herramientas de procesos</strong>, que se utiliza, más adelante, en muchos de los videos de la Wiki.</p></li>
+</ol>
+<figure class="align-center" id="en-interface-02">
+<a class="reference internal image-reference" href="../../../_images/en_Interface_02.png"><img alt="../../../_images/en_Interface_02.png" src="../../../_images/en_Interface_02.png" style="height: 75px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p><strong>Lienzo del mapa:</strong> El <strong>lienzo del mapa</strong> es el <strong>componente central</strong> de todo programa del sistema de información geográfica (SIG). Aquí se muestran los <strong>datos geoespaciales</strong>. La vista del mapa tiene una proyección cartográfica, que no siempre tiene por qué coincidir con la proyección cartográfica de las capas.</p></li>
+<li><p><strong>Coordenadas y escala:</strong> Aquí puede encontrar información sobre la escala del lienzo del mapa, así como también, leer las coordenadas del puntero.</p></li>
+<li><p><strong>Panel del navegador:</strong> El panel del navegador le permite explorar los archivos de su computadora y cargar conjuntos de datos en su proyecto de QGIS.</p></li>
+<li><p><strong>Barra de búsqueda:</strong> Aquí puede <strong>buscar herramientas y capas</strong> en QGIS. Si no sabe dónde encontrar una herramienta, puede intentarlo aquí. También puede escribir las coordenadas para encontrarlas en el lienzo del mapa.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejercicio: Crear un nuevo proyecto en QGIS</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">En su carpeta “Capacitación_SIG”, cree una <strong>subcarpeta</strong> llamada “Mi_Primer_Proyecto”.</p></li>
+<li><p class="sd-card-text">Abrir <strong>QGIS</strong></p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Project</span></code></p></li>
+<li><p class="sd-card-text">En la esquina superior izquierda, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code>, vaya a la carpeta de sus proyectos y guarde el proyecto como “Sesión 1”</p></li>
+<li><p class="sd-card-text">Haga clic en <strong>guardar como</strong>, vaya a la carpeta Proyectos y guarde el proyecto como “Mi_primer_proyecto”</p></li>
+<li><p class="sd-card-text">Abra su carpeta y compruebe el <strong>archivo .qgz</strong> que acaba de crear.</p></li>
+</ol>
+</div>
+</details><div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Si ve un <code class="docutils literal notranslate"><span class="pre">*</span></code> en la barra de título, a la izquierda del nombre de su proyecto, significa que el proyecto tiene cambios <strong>sin guardar</strong>. Dado que QGIS puede bloquearse, de vez en cuando, asegúrese de guardar su proyecto periódicamente, para evitar perder el progreso.</p>
+</div>
+</section>
+<section id="botones-y-atajos">
+<h2>Botones y atajos<a class="headerlink" href="#botones-y-atajos" title="Link to this heading">#</a></h2>
+<p>En QGIS el <strong>control del mouse</strong> le permite a los usuarios interactuar con el lienzo del mapa y habilita funciones como el desplazamiento, el zoom y la selección de entidades geográficas.</p>
+<p><strong>Atajos de teclado</strong> en la interfaz de QGIS ofrecen accesos rápidos a diversos comandos, lo que mejora la eficiencia y acelera el flujo de trabajo. A continuación, encontrará todos los atajos de teclado.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Navegación en la vista del mapa</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Nombre</p></th>
+<th class="head"><p class="sd-card-text">Opción del menú</p></th>
+<th class="head"><p class="sd-card-text">Atajo</p></th>
+<th class="head"><p class="sd-card-text">Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Desplazar el mapa</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_pan_map.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Barra espaciadora</kbd>, <kbd>Re Pág</kbd>, <kbd>Av Pág</kbd> o las <kbd>teclas de flecha</kbd></p></td>
+<td><p class="sd-card-text">Mover el mapa</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Desplazar mapa a la selección</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_pan_map_selection.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Desplazar el mapa hacia el elemento seleccionado</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Acercar zoom</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_in.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> o <kbd>rueda del mouse</kbd></p></td>
+<td><p class="sd-card-text">Acercar el mapa</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Alejar zoom</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_out.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> o <kbd>rueda del mouse</kbd></p></td>
+<td><p class="sd-card-text">Aleja zoom del mapa</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Zoom completo</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_full.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></p></td>
+<td><p class="sd-card-text">Zoom al elemento seleccionado</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Zoom a la selección</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_to_selection.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>L</kbd></p></td>
+<td><p class="sd-card-text">Zoom al elemento seleccionado</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Zoom a la capa</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_to_layer.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Zoom a la capa seleccionada</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Zoom a la resolución nativa</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_native_resolution.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Zoom a la resolución nativa (100%)</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Zoom último</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_last.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Zoom al último zoom</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Zoom siguiente</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_zoom_next.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Zoom al siguiente Zoom</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Gestión de proyectos</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Nombre</p></th>
+<th class="head"><p class="sd-card-text">Opción del menú</p></th>
+<th class="head"><p class="sd-card-text">Atajo</p></th>
+<th class="head"><p class="sd-card-text">Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Nuevo proyecto</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_new.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>N</kbd></p></td>
+<td><p class="sd-card-text">Crear un nuevo proyecto</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Proyecto abierto</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_open_project.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>A</kbd></p></td>
+<td><p class="sd-card-text">Abrir un proyecto existente</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Guardar</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_save_project.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>G</kbd></p></td>
+<td><p class="sd-card-text">Guardar proyecto</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Guardar como…</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_save_project_as.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd></p></td>
+<td><p class="sd-card-text">Guardar proyecto como…</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Propiedades</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></p></td>
+<td><p class="sd-card-text">Abrir las propiedades del proyecto</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Nueva composición de impresión</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_new_print_layerout.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>P</kbd></p></td>
+<td><p class="sd-card-text">Abrir el diálogo para crear una nueva composición de impresión</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Buscar</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>K</kbd></p></td>
+<td><p class="sd-card-text">Abrir la barra de búsqueda</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Gestión de capas</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Nombre</p></th>
+<th class="head"><p class="sd-card-text">Opción del menú</p></th>
+<th class="head"><p class="sd-card-text">Atajo</p></th>
+<th class="head"><p class="sd-card-text">Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Administrador de fuentes de datos</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_data_source_manager.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Añadir una nueva capa</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Nueva capa GeoPackage</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_new_geopackage_layer.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></p></td>
+<td><p class="sd-card-text">Añadir una nueva capa GeoPackage</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Añadir capa vectorial</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_add_vector_layer.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></p></td>
+<td><p class="sd-card-text">Añadir una nueva capa vectorial</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Añadir capa ráster</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_add_raster_layer.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></p></td>
+<td><p class="sd-card-text">Añadir una nueva capa ráster</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Eliminar la capa seleccionada</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_remove_selected_layer.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>E</kbd></p></td>
+<td><p class="sd-card-text">Eliminar la capa seleccionada</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Alternar la vista de las capas</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>1</kbd></p></td>
+<td><p class="sd-card-text">Alternar la vista de las capas</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Alternar la vista del navegador</p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>2</kbd></p></td>
+<td><p class="sd-card-text">Alternar la vista del navegador</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Herramientas de análisis</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Nombre</p></th>
+<th class="head"><p class="sd-card-text">Opción del menú</p></th>
+<th class="head"><p class="sd-card-text">Atajo</p></th>
+<th class="head"><p class="sd-card-text">Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Identificar entidades geográficas</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_identify_features.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></p></td>
+<td><p class="sd-card-text">Identificar entidades geográficas en la vista de mapa, mediante un clic sobre ellas</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Seleccionar la entidad geográfica</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_select_features.png" /></p></td>
+<td><p class="sd-card-text"></p></td>
+<td><p class="sd-card-text">Seleccionar una entidad geográfica por área o con un solo clic</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Seleccionar entidad geográfica por valor</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_select_features_by_value.png" /></p></td>
+<td><p class="sd-card-text"><kbd>F3</kbd></p></td>
+<td><p class="sd-card-text">Seleccionar entidades geográficas por valor</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Abrir tabla de atributos</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_open_attribute_table.png" /></p></td>
+<td><p class="sd-card-text"><kbd>F6</kbd></p></td>
+<td><p class="sd-card-text">Abrir la tabla de atributos</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Abrir tabla de atributos (objetos seleccionados)</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_open_attribute_table.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Shift</kbd> + <code class="docutils literal notranslate"><span class="pre">F6</span></code></p></td>
+<td><p class="sd-card-text">Abrir tabla de atributos (objetos seleccionados)</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Abrir tabla de atributos (objetos visibles)</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_open_attribute_table.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <code class="docutils literal notranslate"><span class="pre">F6</span></code></p></td>
+<td><p class="sd-card-text">Abrir la tabla de atributos solo con las entidades geográficas visibles</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Herramientas avanzadas</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Nombre</p></th>
+<th class="head"><p class="sd-card-text">Opción del menú</p></th>
+<th class="head"><p class="sd-card-text">Atajo</p></th>
+<th class="head"><p class="sd-card-text">Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Caja de herramientas de procesos</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_processing_toolbox.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd></p></td>
+<td><p class="sd-card-text">Abrir la caja de herramientas de procesos</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Consola de Python</p></td>
+<td><p class="sd-card-text"><img alt="" src="../../../_images/qgis_python_console.png" /></p></td>
+<td><p class="sd-card-text"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></p></td>
+<td><p class="sd-card-text">Abrir la Consola de Python</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details></section>
+<section id="navegar-en-el-lienzo-del-mapa">
+<h2>Navegar en el lienzo del mapa<a class="headerlink" href="#navegar-en-el-lienzo-del-mapa" title="Link to this heading">#</a></h2>
+<div class="admonition-opcional-ahora-es-su-turno admonition">
+<p class="admonition-title"><em>Opcional</em>: ¡Ahora, es su turno!</p>
+<p>Puede seguir los siguientes pasos en su propio proyecto de QGIS. Descargue <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg">este conjunto de datos</a> y arrastre y suelte el archivo <code class="docutils literal notranslate"><span class="pre">wb_countries_admin0_10m.gpkg</span></code> en el lienzo del mapa. El conjunto de datos corresponde a las limites administrativos oficiales de cada país <a class="reference external" href="https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries">Banco Mundial</a>.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Descargar los límites administrativos oficiales del Banco Mundial</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg"><span>https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg</span></a></div>
+</div>
+<section id="mover-la-vista-del-mapa">
+<h3>Mover la vista del mapa<a class="headerlink" href="#mover-la-vista-del-mapa" title="Link to this heading">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Si mantiene presionada la <kbd>barra espaciadora</kbd> en su teclado, se activa la herramienta <img alt="" src="../../../_images/qgis_pan_map.png" /> <code class="docutils literal notranslate"><span class="pre">Pan</span> <span class="pre">Map</span></code>, cuando se sitúa el puntero sobre el lienzo del mapa. Solo tiene que mover el puntero mientras mantiene presionada la <kbd>barra espaciadora</kbd> y podrá mover la vista del mapa.</p>
+</div>
+</aside>
+<p>Para moverse por el lienzo del mapa con el puntero, tiene que activar el botón de la mano.</p>
+<a class="reference internal image-reference" href="../../../_images/qgis_move_symbol.png" id="qgis-move-symbol"><img alt="../../../_images/qgis_move_symbol.png" id="qgis-move-symbol" src="../../../_images/qgis_move_symbol.png" style="height: 40px;" />
+</a>
+<p>Siempre puede moverse por el lienzo del mapa con las flechas del teclado.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video></p>
+</section>
+<section id="hacer-zoom-en-la-vista-del-mapa">
+<h3>Hacer zoom en la vista del mapa<a class="headerlink" href="#hacer-zoom-en-la-vista-del-mapa" title="Link to this heading">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Al mantener presionada la tecla <kbd>Ctrl</kbd> mientras usa la rueda del mouse, podrá desplazarse en incrementos más pequeños (más lento). Pruebe ajustar el lienzo del mapa de acuerdo a sus necesidades con este método.</p>
+</div>
+</aside>
+<p>La forma más sencilla de hacer zoom en el lienzo del mapa es <strong>desplazándose</strong>.</p>
+<p>O con los atajos de teclado <kbd>Ctrl</kbd> + <kbd>+</kbd> y <kbd>Ctrl</kbd> + <kbd>-</kbd></p>
+<p><img alt="" src="../../../_images/qgis_zoom_symbol.png" /></p>
+<p>Otra forma es utilizar los botones de zoom del panel de la caja de herramientas.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="caja-de-herramientas-y-barras-de-herramientas">
+<h2>Caja de herramientas y barras de herramientas<a class="headerlink" href="#caja-de-herramientas-y-barras-de-herramientas" title="Link to this heading">#</a></h2>
+<p>Básicamente, todas las funciones, herramientas y aplicaciones de QGIS están organizadas en la caja de herramientas. Algunas herramientas tienen sus propias barras de herramientas que puede añadir a su interfaz de QGIS.</p>
+<section id="abrir-la-caja-de-herramientas">
+<h3>Abrir la caja de herramientas<a class="headerlink" href="#abrir-la-caja-de-herramientas" title="Link to this heading">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mantener presionado <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> abre y cierra la caja de herramientas.</p>
+</div>
+</aside>
+<p>Para abrir la caja de herramientas en QGIS, haga clic en la rueda de desplazamiento. O haga clic en <code class="docutils literal notranslate"><span class="pre">Processing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code></p>
+<p><img alt="" src="../../../_images/Geschlossene_Toolbox_01.png" /></p>
+<p>Puede utilizar la barra de búsqueda para encontrar herramientas específicas.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hay casos en los que quiere hacer algo en QGIS, pero no conoce la herramienta exacta. A veces, vale la pena simplemente buscar lo que crea que pudiera ser el nombre de la herramienta.</p>
+</div>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video></p>
+</section>
+<section id="mostrar-y-ocultar-pantallas-y-barras-de-herramientas">
+<h3>Mostrar y ocultar pantallas y barras de herramientas<a class="headerlink" href="#mostrar-y-ocultar-pantallas-y-barras-de-herramientas" title="Link to this heading">#</a></h3>
+<p>Hay barras de herramientas y paneles para muchas tareas diferentes. Para evitar una interfaz abarrotada, lo más inteligente, es activar las barras de herramientas o los paneles específicos, solo cuando realmente los necesite.</p>
+<p>Para añadir o eliminar barras de herramientas de su interfaz, haga clic en <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> -&gt;. Marque o desmarque las cajas de herramientas, que desee añadir o eliminar.</p>
+<p>Para añadir o eliminar paneles de su interfaz, haga clic en <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Panels</span></code> -&gt; .Marque o desmarque los paneles, que desee añadir o eliminar.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video></p>
+</section>
+<section id="mover-y-organizar-las-barras-de-herramientas">
+<h3>Mover y organizar las barras de herramientas<a class="headerlink" href="#mover-y-organizar-las-barras-de-herramientas" title="Link to this heading">#</a></h3>
+<p>En cada barra de herramientas, hay un campo de dos líneas punteadas. Si mueve el puntero del mouse sobre ella, hasta que aparezca cruz de flechas y mantiene presionado el botón izquierdo del mouse, puede mover la barra de herramientas. Esto permite una disposición individualizada de sus propias herramientas. Al comprimir todas las barras de herramientas en unas pocas líneas, también se puede ampliar la ventana de la vista del mapa.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="guardar-y-abrir-proyectos-de-qgis">
+<h2>Guardar y abrir proyectos de QGIS<a class="headerlink" href="#guardar-y-abrir-proyectos-de-qgis" title="Link to this heading">#</a></h2>
+<p>Guardar el progreso o abrir un proyecto existente en QGIS es muy similar a programas como MS Word. Sin embargo, hay una <strong>GRAN</strong> diferencia.
+En QGIS, los datos geoespaciales con los que trabaja <strong>no</strong> se guardan en el archivo de su proyecto de QGIS. En su lugar, el archivo del proyecto solo contiene las rutas de los archivos, donde se encontraban los datos geoespaciales, en el momento, en que se guardó el proyecto, por última vez, en la computadora. Si posteriormente, se cambia la ubicación de estos datos geoespaciales, aparecerá el mensaje de error “controlar capas no disponibles” al abrir nuevamente el proyecto.</p>
+<p>Una buena organización de los datos con una estructura de carpetas fija y bien elaborada, evita tales problemas.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>¡Siempre organice sus datos! Consulte el artículo de la Wiki sobre la <a class="reference internal" href="#/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md"><span class="xref myst">estructura de carpetas estándar</span></a> para obtener más información.</p>
+</div>
+<section id="proyectos-abiertos">
+<h3>Proyectos abiertos<a class="headerlink" href="#proyectos-abiertos" title="Link to this heading">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Mantener presionado <kbd>Ctrl</kbd> + <kbd>A</kbd> también abre el<code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Project</span></code> cuadro de diálogo.</p>
+</div>
+</aside>
+<p>Para abrir un proyecto de QGIS existente, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open…</span></code> -&gt; Navegue hasta su proyecto y ábralo.</p>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
+</video>
+</section>
+<section id="guardar-proyectos">
+<h3>Guardar proyectos<a class="headerlink" href="#guardar-proyectos" title="Link to this heading">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Al presionar <kbd>Ctrl</kbd> + <kbd>G</kbd> se guarda el proyecto, mientras que al presionar <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>, le permite especificar una ubicación de guardado en su computadora.</p>
+</div>
+</aside>
+<ul class="simple">
+<li><p><strong>Guardar por primera vez</strong>: Para guardar el proyecto de QGIS en el que está trabajando, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as…</span></code>-&gt; Navegue hasta la carpeta, donde quiere guardar el proyecto -&gt; Nombre el proyecto -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
+<li><p><strong>Cuándo guardar su progreso</strong>: Para guardar el progreso en un proyecto, que ya estaba guardado en algún lugar de computadora:</p>
+<ul>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video></p>
+</section>
+</section>
+<section id="iconos-de-advertencia">
+<h2>Iconos de advertencia<a class="headerlink" href="#iconos-de-advertencia" title="Link to this heading">#</a></h2>
+<p>Puede ocurrir que, mientras trabaja con QGIS, se encuentre con iconos de advertencia de color naranja. Esto indica que debe prestar atención. Para entender lo que significa el icono de advertencia, <strong>coloque el puntero sobre el icono</strong> y aparecerá un texto explicativo. Por ejemplo, en la <code class="xref std std-numref docutils literal notranslate"><span class="pre">warning_icon_example</span></code>, el icono de advertencia indica que las unidades de medida son grados, que no son constantes (la distancia entre 1⁰ de longitud es mucho mayor en el ecuador que en los polos).</p>
+<figure class="align-default" id="warning-icon-example">
+<a class="reference internal image-reference" href="../../../_images/en_3.36_warning_icon_example.png"><img alt="../../../_images/en_3.36_warning_icon_example.png" src="../../../_images/en_3.36_warning_icon_example.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ejemplo de icono de advertencia al ajustar los parámetros de una herramienta de procesamiento.</span><a class="headerlink" href="#warning-icon-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="donde-encontrar-ayuda">
+<h2>Dónde encontrar ayuda<a class="headerlink" href="#donde-encontrar-ayuda" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">¡Conéctese con nosotros!</p>
+<p>Si tiene más preguntas antes o después de la capacitación o necesita ayuda, no dude en ponerse en contacto con nosotros con un correo electrónico a <code class="docutils literal notranslate"><span class="pre">gis-training-platform&#64;heigit.org</span></code>.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Errores y problemas comunes</p>
+<p>Hemos recopilado una lista de <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html">Errores y problemas comunes</a></strong>. Si alguna vez, no sabe qué hacer (¡Lo que puede ocurrir a menudo al trabajar con QGIS!), intente buscar la solución a su problema aquí.</p>
+</div>
+<p>También hay una gran comunidad dinámica de QGIS en línea. Si tiene problemas con una función específica o tiene preguntas sobre cómo realizar operaciones en el SIG que no están cubiertas en esta plataforma de capacitación, puede encontrar ayuda en los foros dedicados a QGIS:</p>
+<ul class="simple">
+<li><p>Documentación sobre QGIS: <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">https://docs.qgis.org/3.34/en/docs/index.html</a></p></li>
+<li><p>Foro de usuarios de QGIS en stackexchange: <a class="reference external" href="https://gis.stackexchange.com/?tags=qgis">https://gis.stackexchange.com/?tags=qgis</a></p></li>
+<li><p>Grupos de usuarios de QGIS: <a class="reference external" href="https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups">https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups</a></p></li>
+<li><p>Canal de Telegram de QGIS: <a class="reference external" href="https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ">https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ</a></p></li>
+</ul>
+<p>Además, existe una gran cantidad de tutoriales en YouTube, guías en línea y material didáctico sobre
+operaciones especificas del SIG, por lo que siempre es una buena idea hacer una búsqueda rápida en Google. Entre otros, la <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">documentación de QGIS</a> también ofrece ejercicios y material de capacitación, así como una <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html">Introducción fácil a QGIS</a>.</p>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<p>Tómese un momento para resumir lo que ha aprendido en este capítulo, con las respuestas a las preguntas, a continuación:</p>
+<ol class="arabic simple">
+<li><p><strong>¿Qué es QGIS y qué significa que sea de “código abierto”?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">QGIS es un software de SIG que permite a los usuarios ver, editar, analizar y producir mapas a partir de datos espaciales (geográficos) y de atributos.
+El ser de código abierto significa que su código fuente está disponible libremente: cualquiera puede inspeccionarlo, modificarlo y distribuirlo (bajo licencia). También implica que existe una comunidad de usuarios y desarrolladores, que contribuyen a él y que el software está generalmente disponible, sin costo alguno.</p>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>Nombre tres cosas que puede hacer al trabajar con QGIS.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Cargar datos geoespaciales (vectoriales o ráster), visualizarlos en un mapa</p></li>
+<li><p class="sd-card-text">Editar o digitalizar entidades geográficas (p. ej.: añadir puntos, líneas, polígonos)</p></li>
+<li><p class="sd-card-text">Realizar análisis espaciales (p. ej.: buffer, superposición, unión) o producir resultados cartográficos (exportar a PDF/imagen)</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>¿Cómo saber si un proyecto de QGIS se ha guardado o no?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Normalmente, si hay cambios sin guardar, QGIS mostrará un asterisco (*) junto al nombre del proyecto o en el título de la ventana/pestaña. Si no aparece ningún asterisco (o si “Guardar” aparece atenuado), eso sugiere que el proyecto ya está guardado (es decir, actualizado).</p>
+</div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>¿Cómo se abre un proyecto de QGIS?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Puede abrir un proyecto de QGIS a través del <code class="docutils literal notranslate"><span class="pre">File</span></code>menú → <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Project</span></code> (o el botón “Abrir proyecto” de la barra de herramientas) y a continuación, buscar un archivo <code class="docutils literal notranslate"><span class="pre">.qgs</span></code> o <code class="docutils literal notranslate"><span class="pre">.qgz</span></code>. Alternativamente, al hacer doble clic en el archivo del proyecto (si está asociado en su sistema) también podría abrirse en QGIS.</p>
+</div>
+</details><ol class="arabic simple" start="5">
+<li><p><strong>¿Cómo mostrar y ocultar paneles o barras de herramientas?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En la barra superior, utilice el <code class="docutils literal notranslate"><span class="pre">View</span></code>menú → <code class="docutils literal notranslate"><span class="pre">Panels</span></code> o los submenús <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> para alternar (marcar/desmarcar) entre paneles o barras de herramientas específicos.</p>
+</div>
+</details><ol class="arabic simple" start="6">
+<li><p><strong>¿Dónde puede encontrar ayuda si tiene problemas con QGIS?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">En nuestra página <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html">Errores y problemas comunes</a></p></li>
+<li><p class="sd-card-text">Consultando la <a class="reference external" href="https://docs.qgis.org/3.34/en/docs/index.html">documentación de QGIS</a></p></li>
+<li><p class="sd-card-text">En el <a class="reference external" href="https://gis.stackexchange.com/?tags=qgis">foro de usuarios de QGIS en stackexchange</a></p></li>
+<li><p class="sd-card-text">En <a class="reference external" href="https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups">grupos de usuarios de QGIS</a></p></li>
+<li><p class="sd-card-text">Buscando tutoriales en YouTube</p></li>
+</ul>
+</div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentacion-de-qgis">Presentación de QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajar-con-qgis">Trabajar con QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-un-nuevo-proyecto-en-qgis">Abrir un nuevo proyecto en QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-general-de-la-interfaz-de-qgis">Visión general de la interfaz de QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#botones-y-atajos">Botones y atajos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegar-en-el-lienzo-del-mapa">Navegar en el lienzo del mapa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mover-la-vista-del-mapa">Mover la vista del mapa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hacer-zoom-en-la-vista-del-mapa">Hacer zoom en la vista del mapa</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caja-de-herramientas-y-barras-de-herramientas">Caja de herramientas y barras de herramientas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-la-caja-de-herramientas">Abrir la caja de herramientas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mostrar-y-ocultar-pantallas-y-barras-de-herramientas">Mostrar y ocultar pantallas y barras de herramientas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mover-y-organizar-las-barras-de-herramientas">Mover y organizar las barras de herramientas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guardar-y-abrir-proyectos-de-qgis">Guardar y abrir proyectos de QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proyectos-abiertos">Proyectos abiertos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guardar-proyectos">Guardar proyectos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iconos-de-advertencia">Iconos de advertencia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donde-encontrar-ayuda">Dónde encontrar ayuda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

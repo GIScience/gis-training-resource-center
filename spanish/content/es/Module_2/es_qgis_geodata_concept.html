@@ -1,0 +1,1093 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introducción a los datos geoespaciales y las capas &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_2/es_qgis_geodata_concept';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">1. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">1.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">1.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">1.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">1.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">1.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">2. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">2.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">2.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">2.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">2.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">2.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">2.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">2.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">2.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">2.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">3. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">3.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">3.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">3.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">3.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">3.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">4. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">4.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">4.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_2/es_qgis_geodata_concept.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_2/es_qgis_geodata_concept.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introducción a los datos geoespaciales y las capas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-son-los-datos-geoespaciales">¿Qué son los datos geoespaciales?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-vectoriales">Datos vectoriales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatos-de-los-archivos-vectoriales">Formatos de los archivos vectoriales</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-del-shapefile">Estructura del Shapefile</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-raster">Datos ráster</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatos-de-datos-raster">Formatos de datos ráster</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-concepto-de-capa">El concepto de capa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importaciones-de-datos">Importaciones de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-datos-vectoriales">Importación de datos vectoriales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-datos-vectoriales-a-traves-del-administrador-de-fuentes-de-datos">Abrir datos vectoriales a través del administrador de fuentes de datos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-datos-vectoriales-mediante-arrastrar-y-soltar">Abrir datos vectoriales mediante arrastrar y soltar</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-texto-delimitado-csv-txt">Importación de texto delimitado (.csv, .txt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-capa-de-texto-delimitado">Abrir capa de texto delimitado</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-datos-raster">Importación de datos ráster</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-los-datos-geoespaciales-y-las-capas">
+<h1>Introducción a los datos geoespaciales y las capas<a class="headerlink" href="#introduccion-a-los-datos-geoespaciales-y-las-capas" title="Link to this heading">#</a></h1>
+<p><strong>Competencias:</strong></p>
+<p>En este capítulo, aprenderá qué son los <strong>datos geográficos</strong> y comprenderá la diferencia entre <strong>datos vectoriales y ráster</strong>. Además, en este capítulo se explica el __concepto de capa __ del programa de sistema de información geográfica (SIG), que es fundamental para todos los mapas que vaya a crear.</p>
+<section id="que-son-los-datos-geoespaciales">
+<h2>¿Qué son los datos geoespaciales?<a class="headerlink" href="#que-son-los-datos-geoespaciales" title="Link to this heading">#</a></h2>
+<p>Los datos geoespaciales o datos geográficos son datos que contienen información geográfica. Esto significa que los datos se refieren a una ubicación, que se define por coordenadas. Es similar a otras formas de datos que pueden representarse en tablas (como las hojas de cálculo de Excel o los archivos CSV), pero cada elemento del conjunto de datos también contiene información de coordenadas (véase <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_vector_raster</span></code>). El programa SIG nos ayuda a visualizar y manipular datos geográficos en un espacio 2D (o incluso 3D). Existen dos tipos principales de datos geográficos: los <strong>datos vectoriales y los datos ráster</strong>. Ambos tipos representan cosas tangibles o intangibles del mundo real. Sin embargo, la forma en que almacenan estos datos es muy diferente. Por ello, la manipulación y representación de estos dos tipos difiere drásticamente. Comprender la diferencia entre estos dos tipos, y cómo trabajar con cada uno por separado, así como combinar ambos tipos, será una de las principales habilidades que adquirirá al aprender SIG.</p>
+<figure class="align-center" id="en-vector-raster">
+<a class="reference internal image-reference" href="../../../_images/en_vector_raster.png"><img alt="../../../_images/en_vector_raster.png" src="../../../_images/en_vector_raster.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Concepto ráster/vectorial (fuente: adaptado de <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png">WikiMedia</a>).</span><a class="headerlink" href="#en-vector-raster" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>El tipo de información que puede almacenarse en los datos geográficos es casi infinito. Puede contener información sobre el mundo físico, tal como:</p>
+<ul class="simple">
+<li><p>datos de elevación (altura)</p></li>
+<li><p>datos ambientales (suelos, clima, temperatura, precipitaciones, información sobre
+eventos meteorológicos o fenómenos naturales, como la extensión de las inundaciones)</p></li>
+<li><p>datos sobre la infraestructura, edificios, transporte, etc.</p></li>
+<li><p>datos socioculturales o económicos, como datos demográficos, límites administrativos, acontecimientos sociales, delincuencia, etc.</p></li>
+</ul>
+<p>Los datos geográficos, por lo general, simbolizan las entradas de datos como <strong>geometrías</strong> en lienzos 2D. Estas geometrías pueden ser puntos, líneas, polígonos o incluso píxeles y pueden representar diversos objetos que existen en el mundo físico, como carreteras, lagos, árboles, etc., o representar objetos intangibles, como límites administrativos, cifras de población, indicadores sanitarios, acontecimientos históricos, etc.</p>
+<section id="datos-vectoriales">
+<h3>Datos vectoriales<a class="headerlink" href="#datos-vectoriales" title="Link to this heading">#</a></h3>
+<p>Los datos vectoriales son entidades digitales y pueden almacenar información geográfica/espacial, así como otros atributos de datos. Como tales, son ideales para visualizar información en un mapa. Cada entidad geográfica puede visualizarse en un mapa con el uso de una de las siguientes tres geometrías: <strong>puntos, líneas o polígonos</strong> (véase <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_vector_data_overview</span></code>). Una capa sólo puede contener entidades geográficas con el mismo tipo de geometría.</p>
+<figure class="align-center" id="en-vector-data-overview">
+<a class="reference internal image-reference" href="../../../_images/en_vector_data_overview.png"><img alt="../../../_images/en_vector_data_overview.png" src="../../../_images/en_vector_data_overview.png" style="width: 650px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Perspectiva general de los datos vectoriales (fuente: HeiGIT).</span><a class="headerlink" href="#en-vector-data-overview" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Los datos de punto normalmente solo tienen un conjunto de coordenadas por entrada de datos (longitud, latitud y a veces elevación, generalmente denominadas x, y, y z).</p></li>
+<li><p>Las líneas se construyen mediante la conexión de varios puntos, que se guardan como una única entrada de datos.</p></li>
+<li><p>Los polígonos también se construyen con la conexión de varios puntos, pero forman una geometría cerrada. Cada geometría está representada con una única entrada de datos.</p></li>
+</ul>
+<p>Cada entidad geográfica almacena la ubicación (como dirección o coordenadas) y otros atributos, p.ej., nombre, ID o cualquier otro tipo de información (<code class="xref std std-numref docutils literal notranslate"><span class="pre">en_geodata_example_2</span></code>). La geometría que se utilice dependerá del tipo de datos que se representen. Por ejemplo, una carretera podría representarse con una línea, la superficie de construcción, con un polígono y un árbol con un punto.</p>
+<figure class="align-default" id="en-geodata-example-2">
+<a class="reference internal image-reference" href="../../../_images/en_geodata_example_2.png"><img alt="../../../_images/en_geodata_example_2.png" src="../../../_images/en_geodata_example_2.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La información geográfica puede ser una dirección y/o coordenadas GPS (fuente: Cruz Roja Británica).</span><a class="headerlink" href="#en-geodata-example-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Las entidades geográficas se exponen en los mapas con una representación geométrica, pero se componen de información organizada en tablas (véase <code class="xref std std-numref docutils literal notranslate"><span class="pre">Geodata_attribute_table_example</span></code>).</p></li>
+<li><p>Cada fila de la tabla será una entidad geográfica del mapa, mientras que cada columna contendrá una información de atributo (campo).</p></li>
+<li><p>Se pueden asociar múltiples atributos a cada entidad.</p></li>
+</ul>
+<figure class="align-default" id="geodata-attribute-table-example">
+<a class="reference internal image-reference" href="../../../_images/Geodata_attribute_table_example.png"><img alt="../../../_images/Geodata_attribute_table_example.png" src="../../../_images/Geodata_attribute_table_example.png" style="width: 750px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Una tabla de datos en Microsoft Excel con información geográfica. (Fuente: Cruz Roja Británica).</span><a class="headerlink" href="#geodata-attribute-table-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><code class="xref std std-numref docutils literal notranslate"><span class="pre">example_geometric_vs_attribute_view</span></code> muestra el mismo conjunto de datos representado tanto geométricamente como en forma de tabla de atributos.</p>
+<figure class="align-default" id="example-geometric-vs-attribute-view">
+<a class="reference internal image-reference" href="../../../_images/example_geometric_and_attribute_view.png"><img alt="../../../_images/example_geometric_and_attribute_view.png" src="../../../_images/example_geometric_and_attribute_view.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cada polígono de la izquierda representa una fila (entidad geográfica) de la derecha. (Fuente: Cruz Roja Británica).</span><a class="headerlink" href="#example-geometric-vs-attribute-view" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="formatos-de-los-archivos-vectoriales">
+<h4>Formatos de los archivos vectoriales<a class="headerlink" href="#formatos-de-los-archivos-vectoriales" title="Link to this heading">#</a></h4>
+<p>Existen varios formatos de archivo para datos vectoriales. Cada uno de ellos difiere en cómo se almacenan las geometrías y los atributos. Sin embargo, todos ellos siguen conteniendo únicamente puntos, líneas o polígonos. Algunos formatos tienen ventajas sobre otros, mientras que otros todavía se utilizan por convención, aunque estén desfasados.
+La siguiente tabla ofrece una breve descripción de los formatos de archivos vectoriales más utilizados.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Extensión de nombre de archivo</p></th>
+<th class="head"><p>Nombre</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.shp</span></code></p></td>
+<td><p>Shapefile</p></td>
+<td><p>Shapefile es un formato de archivo de datos vectoriales utilizado habitualmente para el análisis geoespacial. Los formatos Shapefile almacenan la ubicación, la geometría y los atributos de entidades de punto, lineales y poligonales. Es un formato de archivo común utilizado por la mayoría de los programas de SIG y de las plataformas cartográficas en línea. Se trata de un formato de datos geográficos antiguo pero aún ampliamente utilizado. Un shapefile solo puede contener un conjunto de datos. Un shapefile completo debe constar de al menos tres archivos diferentes (.shp, .shx, .dbf)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gpkg</span></code></p></td>
+<td><p>GeoPackage</p></td>
+<td><p>La nueva norma para los datos geográficos. Los archivos GPKG son un formato abierto y portátil basado en SQLite para almacenar datos geoespaciales vectoriales y ráster, compatible con diversas plataformas SIG en ordenadores de escritorio, web y dispositivos móviles. Puede contener varios archivos de datos (vectoriales, ráster y datos no espaciales, como las tablas)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.kml</span></code>/<code class="docutils literal notranslate"><span class="pre">.kmz.</span></code></p></td>
+<td><p>Lenguaje de marcado Keyhole</p></td>
+<td><p>Formato de datos geográficos para su uso con <a class="reference external" href="https://earth.google.com/web/">Google Earth</a>. Los archivos KMZ son versiones comprimidas de archivos KML (Lenguaje de marcado Keyhole) que se utilizan para almacenar datos geográficos, como puntos, rutas y polígonos, junto con cualquier medio asociado, como imágenes e iconos. Utilizados habitualmente con Google Earth y otros programas de cartografía, los archivos KMZ agrupan datos espaciales y recursos en un archivo compacto, lo que facilita el intercambio de mapas interactivos y visualizaciones.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gpx</span></code></p></td>
+<td><p>Formato de intercambio GPS</p></td>
+<td><p>Formato de datos geográficos para el intercambio de coordenadas. Por ejemplo, para los puntos de referencia de las rutas.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.geojson</span></code></p></td>
+<td><p>GeoJSON</p></td>
+<td><p>Formato de datos abierto que utiliza Notación de objetos de JavaScript (JSON) para almacenar los datos geográficos. Puede almacenar varios tipos de geometrías en un solo archivo y es ampliamente compatible con aplicaciones web y móviles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.gdb</span></code></p></td>
+<td><p>Geodatabase</p></td>
+<td><p>Diseñado para la gestión eficaz de datos, el análisis espacial y los flujos de trabajo geoespaciales complejos. Los archivos de Geodatabase son un formato propietario de Esri para almacenar y gestionar grandes volúmenes de datos espaciales, incluidas clases de entidades geográficas, tablas y relaciones en una base de datos estructurada.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los distintos formatos de archivo tienen diferentes casos de uso, así como ventajas o inconvenientes.</p>
+<ul class="simple">
+<li><p>Por ejemplo, los archivos <strong>GeoJSON</strong> no pueden almacenar información de la proyección cartográfica y se limitan de forma convencional al elipsoide WGS84. Esto dificulta el uso de archivos GeoJSON en proyectos en los que se utilizan proyecciones cartográficas específicas de una región o proyecciones basadas en elipsoides diferentes.</p></li>
+<li><p><strong>Geodatabase</strong> y <strong>Geopackage</strong> son, a diferencia de los otros formatos, bases de datos. En SIG, las bases de datos almacenan datos espaciales en sistemas estructurados y escalables que admiten el acceso de múltiples usuarios, consultas complejas y grandes conjuntos de datos, lo que las hace ideales para el análisis y la gestión de datos a nivel empresarial. Los archivos, por su parte, almacenan los datos en formatos individuales y portátiles como Shapefile, GeoJSON o GeoPackage, que son más fáciles de compartir y utilizar fuera de línea, pero carecen de capacidades avanzadas de consulta y escalabilidad.</p></li>
+</ul>
+</div>
+</section>
+<section id="estructura-del-shapefile">
+<h4>Estructura del Shapefile<a class="headerlink" href="#estructura-del-shapefile" title="Link to this heading">#</a></h4>
+<p>Un shapefile es una colección de archivos independientes que suelen estar en una única carpeta/directorio. Algunos archivos son obligatorios, otros son opcionales (véase <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_shapefile_structure</span></code>). Para que un shapefile funcione, es necesario tener todos los archivos obligatorios en la misma carpeta.</p>
+<figure class="align-default" id="en-shapefile-structure">
+<a class="reference internal image-reference" href="../../../_images/en_shapefile_structure.png"><img alt="../../../_images/en_shapefile_structure.png" src="../../../_images/en_shapefile_structure.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>SHP, SHX</strong> y <strong>DBF</strong> son los archivos <strong>obligatorios</strong> que todo shapefile debe contener para funcionar correctamente. El SHP es el archivo principal y contiene la geometría.</span><a class="headerlink" href="#en-shapefile-structure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="datos-raster">
+<h3>Datos ráster<a class="headerlink" href="#datos-raster" title="Link to this heading">#</a></h3>
+<p>Otro tipo de datos geoespaciales son los datos ráster. Los datos ráster están formados por celdas que se organizan en una cuadrícula con filas y columnas, formando así un ráster. Cada celda, o píxel, contiene un valor que contiene información (por ejemplo, la temperatura o la densidad de población). Dado que los datos ráster están formados por píxeles, las fotografías aéreas o las imágenes satelitales, también pueden utilizarse como datos ráster, si tienen las coordenadas geográficas (véase el <a class="reference internal" href="#/content/es/Module_3/es_qgis_georeferencing.md"><span class="xref myst">módulo 3: Georreferenciación</span></a>).</p>
+<p>Los usos típicos de los datos ráster son:</p>
+<ul class="simple">
+<li><p>datos de elevación (a menudo, denominados Modelo Digital de Elevación o DEM)</p></li>
+<li><p>datos de precipitación</p></li>
+<li><p>datos de temperatura interpolados</p></li>
+<li><p>densidad de población</p></li>
+</ul>
+<p>El valor de cada celda suele visualizarse mediante la asignación de un color a un valor. Para los datos de elevación, por ejemplo, se suele utilizar una rampa de color. Para los datos categóricos, como el uso del suelo, categorías de color (como el verde = bosque; amarillo = uso del suelo agrícola, rojo = residencial).</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<figure class="align-left" id="raster-data-example-corine-lc">
+<a class="reference internal image-reference" href="../../../_images/raster_data_example_corine_LC.png"><img alt="../../../_images/raster_data_example_corine_LC.png" src="../../../_images/raster_data_example_corine_LC.png" style="width: 350px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">El conjunto de datos de cobertura terrestre CORINE de Copernicus (fuente: <a class="reference external" href="https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7">AEMA/Copernicus</a>).</span><a class="headerlink" href="#raster-data-example-corine-lc" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<figure class="align-default" id="nasadem-alps-example">
+<a class="reference internal image-reference" href="../../../_images/NASADEM_Alps_example.png"><img alt="../../../_images/NASADEM_Alps_example.png" src="../../../_images/NASADEM_Alps_example.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">El NASA DEM que muestra los Alpes (fuente: <a class="reference external" href="https://lpdaac.usgs.gov/products/nasadem_hgtv001/">NASA/USGS/JPL-CALTECH</a>).</span><a class="headerlink" href="#nasadem-alps-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Los valores ráster suelen tener un único valor por celda, sin embargo, también pueden tener múltiples bandas (de color). Las imágenes satelitales suelen ofrecer varias bandas para representar los datos recopilados de distintas partes del espectro de luz, que podemos utilizar para analizar distintos fenómenos, como la humedad de las plantas. Las múltiples bandas significan que usted tiene más de un valor por celda.</p>
+<p>Las principales características espaciales son la extensión, el área que la cuadrícula representa en el mundo real (10km², 100km²), y la resolución ráster: el tamaño de cada píxel. En <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_quality_raster</span></code>, puede ver dos conjuntos de datos ráster con resoluciones diferentes.</p>
+<figure class="align-center" id="en-quality-raster">
+<a class="reference internal image-reference" href="../../../_images/en_quality_raster.png"><img alt="../../../_images/en_quality_raster.png" src="../../../_images/en_quality_raster.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dos conjuntos de datos ráster con diferente resolución que cubren la misma región. (Fuente: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data">CartONG</a>).</span><a class="headerlink" href="#en-quality-raster" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>En <code class="xref std std-numref docutils literal notranslate"><span class="pre">Vector</span></code> y <code class="xref std std-numref docutils literal notranslate"><span class="pre">Raster</span></code> puede ver la misma ubicación, a la izquierda como datos vectoriales, con la visualización de las calles y de la zona urbana y a la derecha, como datos ráster (imagen satelital), que muestra la cubierta terrestre.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Vectorial</div>
+<figure class="align-center" id="vector">
+<a class="reference internal image-reference" href="../../../_images/en_same_location_vector.png"><img alt="../../../_images/en_same_location_vector.png" src="../../../_images/en_same_location_vector.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Entidad geográfica representada con datos vectoriales. (Fuente: Cruz Roja Británica).</span><a class="headerlink" href="#vector" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Ráster</div>
+<figure class="align-center" id="raster">
+<a class="reference internal image-reference" href="../../../_images/en_same_location_raster.png"><img alt="../../../_images/en_same_location_raster.png" src="../../../_images/en_same_location_raster.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La misma ubicación representada como imagen ráster. (Fuente: Cruz Roja Británica).</span><a class="headerlink" href="#raster" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<section id="formatos-de-datos-raster">
+<h4>Formatos de datos ráster<a class="headerlink" href="#formatos-de-datos-raster" title="Link to this heading">#</a></h4>
+<p>Los datos ráster pueden tener los siguientes formatos de datos:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Extensión de nombre de archivo</p></th>
+<th class="head"><p>Nombre</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.tif</span></code>/<code class="docutils literal notranslate"><span class="pre">.tiff</span></code>/<code class="docutils literal notranslate"><span class="pre">.geotiff</span></code></p></td>
+<td><p>Formato de Archivo de Imagen Etiquetada</p></td>
+<td><p>Formato común de datos ráster e imagen. No tiene necesariamente datos georreferenciados. Si un<code class="docutils literal notranslate"><span class="pre">.tif</span></code> archivo está georreferenciado, se denomina GeoTIFF.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">.nc</span></code></p></td>
+<td><p>netCDF</p></td>
+<td><p>Formato de datos estándar para datos científicos como la velocidad o la temperatura. Puede ser un archivo ráster. Puede contener varios conjuntos de datos</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.asc</span></code></p></td>
+<td><p>Archivos de cuadrícula ASCII de Esri</p></td>
+<td><p>Formato de archivo ráster antiguo y sencillo, siempre con datos georreferenciados</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-la-ventaja-de-geodatabases admonition">
+<p class="admonition-title">La ventaja de geodatabases</p>
+<p>Las bases de datos como Geodatabase (<code class="docutils literal notranslate"><span class="pre">.gdb</span></code>) o GeoPackage (<code class="docutils literal notranslate"><span class="pre">gkpg</span></code>) también pueden contener capas ráster.</p>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="el-concepto-de-capa">
+<h2>El concepto de capa<a class="headerlink" href="#el-concepto-de-capa" title="Link to this heading">#</a></h2>
+<p>El programa SIG nos ayuda a visualizar los datos geográficos. Para ello, muestra las geometrías o celdas ráster en un lienzo 2D. Sin embargo, al crear un mapa, estamos utilizando varios conjuntos de datos a la vez. Cada tipo de dato geográfico, como datos ráster, polígonos, puntos o líneas, se suele almacenar dentro de una <strong>capa</strong>. Cada capa está formada por objetos geográficos del mismo tipo (línea, polígono, ráster, …). El programa SIG muestra estas capas unas encima de otras y permite reorganizar el orden de las mismas, con el fin de crear mapas perspicaces (véase <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_layer</span></code>).</p>
+<p>Con la incorporación de diferentes capas, construye su mapa y puede combinar información de distintas fuentes. Con ellos, podrá realizar análisis o adaptar la representación con el uso de símbolos y colores.</p>
+<figure class="align-center" id="en-layer">
+<a class="reference internal image-reference" href="../../../_images/en_layer.png"><img alt="../../../_images/en_layer.png" src="../../../_images/en_layer.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Capas en un SIG (fuente: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers">CartONG</a>).</span><a class="headerlink" href="#en-layer" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="note admonition">
+<p class="admonition-title">¡Ahora es su turno!</p>
+<p>La experiencia práctica es clave para dominar los SIG. Ahora es un buen momento para aplicar lo que hemos aprendido en el primer ejercicio del módulo 2.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-2 sd-border-1 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Módulo 2, ejercicio 1: Comprensión de los datos geográficos</strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept_ex1.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept_ex1.html</span></a></div>
+</div>
+</section>
+<section id="importaciones-de-datos">
+<h2>Importaciones de datos<a class="headerlink" href="#importaciones-de-datos" title="Link to this heading">#</a></h2>
+<p>Antes de empezar a crear mapas en QGIS, tendrá que cargar sus datos en QGIS. Dependiendo del formato de archivo que desee importar, el proceso difiere ligeramente.</p>
+<section id="importacion-de-datos-vectoriales">
+<h3>Importación de datos vectoriales<a class="headerlink" href="#importacion-de-datos-vectoriales" title="Link to this heading">#</a></h3>
+<p>Los formatos típicos de datos vectoriales son Shapefile (<code class="docutils literal notranslate"><span class="pre">.shp</span></code>) y GeoPackage (<code class="docutils literal notranslate"><span class="pre">.gpkg</span></code>). El proceso de importación de datos vectoriales en cualquiera de los dos formatos es el mismo.</p>
+<p>QGIS ofrece varias formas de cargar datos vectoriales. La más inmediata es la de arrastrar y soltar, en la que basta con arrastrar los archivos de datos que desea añadir desde el explorador de archivos a la ventana de QGIS. Otro método es a través del “<strong>Administrador de fuentes de datos</strong>” (<code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Source</span> <span class="pre">Manager</span></code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los archivos GeoPackage pueden contener múltiples conjuntos de datos e incluso proyectos completos de QGIS. Cuando cargue un GeoPackage en QGIS, aparecerá una ventana donde podrá seleccionar los conjuntos de datos que desea cargar.</p>
+</div>
+<section id="abrir-datos-vectoriales-a-traves-del-administrador-de-fuentes-de-datos">
+<h4>Abrir datos vectoriales a través del administrador de fuentes de datos<a class="headerlink" href="#abrir-datos-vectoriales-a-traves-del-administrador-de-fuentes-de-datos" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer...</span></code>. Se abrirá el administrador de fuentes de datos.</p></li>
+<li><p>Haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> y navegue hasta su
+archivo vectorial</p></li>
+<li><p>Seleccione el archivo y haga clic en <code class="docutils literal notranslate"><span class="pre">Open</span></code>. Aparecerán más opciones. En la mayoría de los casos, puede dejar estas opciones como están.</p></li>
+<li><p>De vuelta en QGIS, haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>QGIS sólo le permite importar shapefile <strong>descomprimidos</strong>. Asegúrese de descomprimir los archivos de datos antes de importarlos a QGIS.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Importación de datos vectoriales a través del administrador de fuentes de datos</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video></p>
+</div>
+</details></section>
+<section id="abrir-datos-vectoriales-mediante-arrastrar-y-soltar">
+<h4>Abrir datos vectoriales mediante arrastrar y soltar<a class="headerlink" href="#abrir-datos-vectoriales-mediante-arrastrar-y-soltar" title="Link to this heading">#</a></h4>
+<p>QGIS le permite abrir datos en su proyecto QGIS simplemente arrastrando los archivos desde su explorador de archivos a su ventana QGIS. Los shapefile sólo contienen una capa por shapefile, que se añadirá automáticamente a su panel de capas. Los archivos GeoPackage (<code class="docutils literal notranslate"><span class="pre">.gpkg</span></code>) pueden contener varias capas en un único archivo. Si añade un archivo GeoPackage, se abrirá una nueva ventana, donde se le pedirá que seleccione las capas que desea añadir al proyecto.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Importación de datos vectoriales mediante arrastrar y soltar</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<section id="importacion-de-texto-delimitado-csv-txt">
+<h3>Importación de texto delimitado (.csv, .txt)<a class="headerlink" href="#importacion-de-texto-delimitado-csv-txt" title="Link to this heading">#</a></h3>
+<p>En su trayectoria en SIG, encontrará datos geográficos en formato de archivos de texto delimitados, como los archivos <code class="docutils literal notranslate"><span class="pre">.csv</span></code> (Valores separados por comas). Estos archivos contienen datos tabulares que pueden abrirse con programas como Microsoft Excel. Contienen información geográfica o de posición como coordenadas de puntos en columnas separadas (por ejemplo, latitud y longitud, o coordenadas x, y) o como “Well Known Text” (WKT), que representa geometrías complejas, como polígonos o líneas.</p>
+<section id="abrir-capa-de-texto-delimitado">
+<h4>Abrir capa de texto delimitado<a class="headerlink" href="#abrir-capa-de-texto-delimitado" title="Link to this heading">#</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Para cargar datos de hojas de cálculo como Valores separados por comas (<code class="docutils literal notranslate"><span class="pre">.csv</span></code>) o Excel (<code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>), los conjuntos de datos tienen que tener columnas que contengan geometría; ésta suele ser en forma de latitud (campo Y) y longitud (campo X), pero también puede estar en otros formatos, como WKT. En este caso, también puede tener geometrías complejas en su archivo de texto delimitado.</p>
+</div>
+<figure class="align-center" id="en-import-delimeted-text">
+<a class="reference internal image-reference" href="../../../_images/en_import_delimeted_text.png"><img alt="../../../_images/en_import_delimeted_text.png" src="../../../_images/en_import_delimeted_text.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Importación de texto delimitado en QGIS 3.36.</span><a class="headerlink" href="#en-import-delimeted-text" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code> haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> y navegue hasta su archivo CSV y haga clic en <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span></code>: Aquí puede especificar qué delimitador se utiliza en el archivo que desea importar. En un archivo CSV estándar se utilizan las comas <code class="docutils literal notranslate"><span class="pre">,</span></code>. Si no es el caso, seleccione <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimiters</span></code>. Aquí puede elegir el delimitador exacto utilizado en su archivo.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Para averiguar qué delimitador se utiliza, puede abrir el archivo .csv en el Bloc de notas o en Excel. Allí puede comprobar qué delimitador se utiliza para separar la información.</p>
+</div>
+<figure class="align-center" id="en-delimited-text-fileformat">
+<a class="reference internal image-reference" href="../../../_images/en_delimited_text_fileformat.png"><img alt="../../../_images/en_delimited_text_fileformat.png" src="../../../_images/en_delimited_text_fileformat.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ajuste de los parámetros de formato de archivo al importar una capa de texto delimitado en QGIS.</span><a class="headerlink" href="#en-delimited-text-fileformat" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">definition</span></code>: En esta sección se especifica qué columnas del archivo contienen la información espacial para georreferenciar los datos en el mapa. Si el archivo tiene una columna con datos de <strong>latitud</strong> y otra con datos de <strong>longitud</strong>, puede utilizarlas para georreferenciar los datos. Compruebe <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Coordinates</span></code> si el archivo <code class="docutils literal notranslate"><span class="pre">.csv</span></code> contiene datos de puntos. Seleccione para <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">field</span></code> “LONGITUD” y para <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> “LATITUD”.</p></li>
+<li><p>Debajo de<code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">CRS</span></code> seleccione el sistema de referencia de coordenadas (SRC). Por defecto, QGIS seleccionará el SRC del proyecto. Si el archivo no contiene información espacial, elija la opción <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Abrir archivos de texto delimitados en QGIS</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<section id="importacion-de-datos-raster">
+<h3>Importación de datos ráster<a class="headerlink" href="#importacion-de-datos-raster" title="Link to this heading">#</a></h3>
+<p>La importación de datos ráster funciona del mismo modo que la de los datos vectoriales. Puede arrastrar y soltar los archivos ráster en la ventana de QGIS o abrirlos a través del “Administrador de fuentes de datos”.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Abrir datos ráster a través del administrador de fuentes de datos</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
+<li><p class="sd-card-text">Haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> y navegue hasta su archivo ráster</p></li>
+<li><p class="sd-card-text">Seleccione el archivo y haga clic en <code class="docutils literal notranslate"><span class="pre">Open</span></code></p></li>
+<li><p class="sd-card-text">De vuelta en QGIS, haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
+</ol>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Abrir datos ráster mediante arrastrar y soltar</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<p>Compruebe si conoce los conceptos clave de este capítulo respondiendo a las preguntas siguientes.</p>
+<ol class="arabic simple">
+<li><p><strong>Defina datos geográficos. ¿En qué se diferencian de los datos tabulares regulares?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Los datos geográficos, o datos espaciales, se refieren a la información asociada a un lugar concreto de la superficie terrestre. Incluye tanto la geometría (el componente espacial) como los atributos (los datos descriptivos). A diferencia de los datos tabulares regulares, que constan únicamente de filas y columnas sin ninguna referencia espacial, los datos geográficos tienen un componente geográfico que permite cartografiarlos y analizarlos en un contexto espacial.</p>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>¿Cuáles son los dos tipos principales de datos geoespaciales y cómo almacenan la información?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Los dos tipos principales de datos geoespaciales son:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Datos vectoriales: Representan las entidades geográficas con el uso de puntos, líneas y polígonos. Cada entidad geográfica tiene asociados datos de los atributos almacenados en una tabla. Los formatos más habituales son Shapefile (.shp), GeoPackage (.gpkg) y GeoJSON (.geojson).</p></li>
+<li><p class="sd-card-text">Datos ráster: Representa datos geográficos como una matriz de celdas (píxeles), cada una con un valor que representa información, como la temperatura o la elevación. Los formatos más habituales son GeoTIFF (.tif), JPEG2000 (.jp2) y Archivos de cuadrícula ASCII de Esri (.asc).</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>Proporcione ejemplos de fenómenos o entidades geográficas del mundo real que se representen mejor como datos vectoriales que como datos ráster.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Datos vectoriales:</strong> Son adecuados para representar entidades geográficas específicas con límites bien definidos, tales como:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Límites administrativos (países, distritos)</p></li>
+<li><p class="sd-card-text">Carreteras y ríos</p></li>
+<li><p class="sd-card-text">Parcelas de tierra</p></li>
+<li><p class="sd-card-text">Edificios e infraestructuras
+<strong>Datos ráster:</strong> Adecuado para datos continuos que varían en el espacio, como</p></li>
+<li><p class="sd-card-text">imagen satelital</p></li>
+<li><p class="sd-card-text">Los modelos de elevación (p.ej., modelos digitales de elevación o modelos de terreno)</p></li>
+<li><p class="sd-card-text">Los mapas de temperatura o de precipitaciones</p></li>
+<li><p class="sd-card-text">Los sistemas de clasificación de la cobertura terrestre</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>Describa la estructura de un shapefile. ¿Qué archivos de componentes obligatorios deben acompañarlo?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Un Shapefile es un formato de datos vectoriales ampliamente utilizado que consta de al menos tres archivos componentes obligatorios:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">.shp</span></code>: Contiene los datos geométricos (puntos, líneas o polígonos).</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">.shx</span></code>: Contiene los datos del índice de forma, lo que permite realizar consultas espaciales rápidas.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">.dbf</span></code>: Contiene datos de atributos en formato tabular, correspondientes a cada geometría.</p></li>
+</ul>
+<p class="sd-card-text">También puede contener archivos adicionales como <code class="docutils literal notranslate"><span class="pre">.prj</span></code>. Estos archivos, que comparten un mismo nombre, conforman el shapefile</p>
+</div>
+</details><ol class="arabic simple" start="5">
+<li><p><strong>Explique el concepto de “capa” en los SIG. ¿Por qué los SIG utilizan capas para construir mapas?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En los SIG, una capa es un conjunto de datos geográficos que representan un tipo específico de información, como carreteras, ríos o usos del suelo. Las capas se apilan unas sobre otras para crear un mapa completo. El uso de capas permite:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Gestión organizada de datos</strong>: Cada capa puede editarse o analizarse de forma independiente.</p></li>
+<li><p class="sd-card-text"><strong>Visualización clara</strong>: Se pueden estilizar y mostrar por separado diferentes tipos de datos.</p></li>
+<li><p class="sd-card-text"><strong>Análisis eficaz</strong>: Las capas pueden activarse o desactivarse para centrarse en aspectos concretos de los datos.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="6">
+<li><p><strong>¿Sabe cómo importar datos vectoriales en un proyecto QGIS?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Los datos vectoriales pueden importarse a un proyecto QGIS de la siguiente manera:</p>
+<ul class="simple">
+<li><p class="sd-card-text">En la barra superior, utilice el <code class="docutils literal notranslate"><span class="pre">Layer</span></code> menú → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">vector</span> <span class="pre">layer</span></code>.</p></li>
+<li><p class="sd-card-text">Arrastre y suelte el archivo vectorial directamente en el lienzo del mapa de QGIS.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="7">
+<li><p><strong>¿Dónde se guardan las capas importadas a un proyecto QGIS?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Las capas no se almacenan dentro de un proyecto QGIS. Cuando las capas se importan en un proyecto QGIS, no se mueven ni se copian. En su lugar, QGIS almacena la ruta a la fuente de datos en el archivo del proyecto (.qgz). Si la fuente de datos se mueve o se elimina, QGIS no podrá localizarla a menos que se actualice la ruta.
+Además, la manipulación de la capa modificará el conjunto de datos original.</p>
+</div>
+</details><ol class="arabic simple" start="8">
+<li><p><strong>Si tiene un archivo <code class="docutils literal notranslate"><span class="pre">.csv</span></code> u otro archivo de texto delimitado, ¿qué información debe contener para importarlo a QGIS como capa de puntos?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Para importar un archivo <code class="docutils literal notranslate"><span class="pre">.csv</span></code> o de texto delimitado como capa de puntos en QGIS, el archivo debe:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Contener un encabezado con los nombres del campo</p></li>
+<li><p class="sd-card-text">Incluir, al menos, dos columnas, que representen las coordenadas X (longitud) e Y (latitud).</p></li>
+<li><p class="sd-card-text">Asegúrese de que los valores de las coordenadas sean numéricos y tengan el formato correcto.</p></li>
+</ul>
+<p class="sd-card-text">QGIS utiliza las columnas de coordenadas para trazar los puntos en el lienzo del mapa.</p>
+</div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-son-los-datos-geoespaciales">¿Qué son los datos geoespaciales?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-vectoriales">Datos vectoriales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatos-de-los-archivos-vectoriales">Formatos de los archivos vectoriales</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-del-shapefile">Estructura del Shapefile</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-raster">Datos ráster</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formatos-de-datos-raster">Formatos de datos ráster</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-concepto-de-capa">El concepto de capa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importaciones-de-datos">Importaciones de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-datos-vectoriales">Importación de datos vectoriales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-datos-vectoriales-a-traves-del-administrador-de-fuentes-de-datos">Abrir datos vectoriales a través del administrador de fuentes de datos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-datos-vectoriales-mediante-arrastrar-y-soltar">Abrir datos vectoriales mediante arrastrar y soltar</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-texto-delimitado-csv-txt">Importación de texto delimitado (.csv, .txt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abrir-capa-de-texto-delimitado">Abrir capa de texto delimitado</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importacion-de-datos-raster">Importación de datos ráster</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

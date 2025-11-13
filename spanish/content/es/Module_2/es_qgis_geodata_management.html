@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gestión de datos geoespaciales &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_2/es_qgis_geodata_management';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">1. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">1.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">1.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">1.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">1.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">1.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">2. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">2.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">2.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">2.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">2.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">2.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">2.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">2.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">2.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">2.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">3. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">3.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">3.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">3.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">3.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">3.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">4. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">4.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">4.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_2/es_qgis_geodata_management.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_2/es_qgis_geodata_management.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Gestión de datos geoespaciales</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-de-la-gestion-de-datos-geoespaciales">Fundamentos de la gestión de datos geoespaciales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-de-carpetas-estandar">Estructura de carpetas estándar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomenclatura-de-los-datos-geograficos">Nomenclatura de los datos geográficos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion">Documentación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="gestion-de-datos-geoespaciales">
+<h1>Gestión de datos geoespaciales<a class="headerlink" href="#gestion-de-datos-geoespaciales" title="Link to this heading">#</a></h1>
+<p>En este capítulo veremos con más detalle cómo almacenar los datos geográficos en la computadora para trabajar en QGIS u otras aplicaciones SIG. Dado que los datos vectoriales son el principal tipo de datos geográficos con el que trabajará al principio de su carrera en SIG, nos centraremos en los datos geográficos vectoriales. Aprenderemos a crear una estructura de carpetas coherente para los datos y proyectos SIG y a asignar nombres correctos a los datos geográficos.</p>
+<section id="fundamentos-de-la-gestion-de-datos-geoespaciales">
+<h2>Fundamentos de la gestión de datos geoespaciales<a class="headerlink" href="#fundamentos-de-la-gestion-de-datos-geoespaciales" title="Link to this heading">#</a></h2>
+<p>Trabajar con datos geoespaciales no es como hacerlo con datos en programas como Microsoft Excel o Word. Siempre que cargue una imagen en un archivo Word, el archivo contendrá la imagen. Si borra la imagen en su ordenador, el archivo Word seguirá conteniendo una copia de la imagen.</p>
+<p>¡Esto no ocurre en QGIS! Cuando carga los datos geográficos en QGIS, el sistema sólo establece un enlace con la ubicación donde están almacenados los datos en su ordenador. Esto significa que su proyecto QGIS <strong>no contiene</strong> los datos geográficos, sólo enlaza con ellos. Si carga datos en su proyecto QGIS y cambia la ubicación de los datos o los borra, los datos ya no estarán disponibles en su proyecto QGIS y obtendrá un error al abrirlos.</p>
+<p>Dado que se trabaja directamente con los datos de origen, en lugar de con una copia, cada vez que se editan datos en QGIS los cambios sustituyen a los datos de origen y no se pueden revertir. Si planea hacer cambios en sus datos, primero debe hacer una copia de ellos para tener siempre una copia “intacta” a la que pueda volver.</p>
+<section id="estructura-de-carpetas-estandar">
+<h3>Estructura de carpetas estándar<a class="headerlink" href="#estructura-de-carpetas-estandar" title="Link to this heading">#</a></h3>
+<p>Lo más importante en la práctica de gestión de datos geoespaciales es utilizar una estructura de carpetas estandarizada que contenga todas las partes del proyecto QGIS.</p>
+<p>Las rutas desde un proyecto QGIS a los datos geográficos son por defecto relativas. Esto significa que cuando los datos y el proyecto se encuentran en una estructura de carpetas fija, puede mover toda la estructura sin que ello afecte al proyecto QGIS o a las rutas de acceso a los datos. A continuación se explica la versión de una estructura de carpetas estandarizada que se utiliza para todos los ejercicios de esta capacitación. Puede descargar una plantilla de la estructura de carpetas <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip"><strong>aquí</strong></a>.</p>
+<p>Una estructura de carpetas estándar tiene dos ventajas principales:</p>
+<ol class="arabic simple">
+<li><p>Si compartimos toda la carpeta del proyecto, podemos esperar que el proyecto se ejecute sin problemas en un ordenador diferente</p></li>
+<li><p>La estructura de carpetas contribuye a la correcta organización de los datos del proyecto y ayuda a garantizar que el proyecto QGIS funcione según lo previsto</p></li>
+</ol>
+<figure class="align-center" id="standard-folder-structure-new-2025">
+<a class="reference internal image-reference" href="../../../_images/standard_folder_structure_new_2025.drawio.png"><img alt="../../../_images/standard_folder_structure_new_2025.drawio.png" src="../../../_images/standard_folder_structure_new_2025.drawio.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Estructura de carpetas estándar. Fuente: HeiGIT</span><a class="headerlink" href="#standard-folder-structure-new-2025" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="nomenclatura-de-los-datos-geograficos">
+<h3>Nomenclatura de los datos geográficos<a class="headerlink" href="#nomenclatura-de-los-datos-geograficos" title="Link to this heading">#</a></h3>
+<p>Nombrar los datos correctamente le garantiza que pueda identificar las capas y que su ordenador no tenga ningún problema al trabajar con los archivos de datos. El nombre de los propios archivos debe ser claro, es decir, que usted u otras personas puedan identificar qué muestran los datos, de dónde proceden y a qué momento se refieren. En QGIS, deberá nombrar sus capas para poder identificar el contenido, así como lo ha realizado con la capa. Por ejemplo, si ha recortado una capa de calles de Nueva York, no nombre la capa “recortada”, asígnele un nombre como “calles_NYC_recortadas”.</p>
+<p>Existen algunos principios básicos a la hora de nombrar los datos geográficos, que se producen o manipulan:</p>
+<ul class="simple">
+<li><p>No utilice caracteres especiales como <code class="docutils literal notranslate"><span class="pre">!</span></code>,<code class="docutils literal notranslate"><span class="pre">?</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code> o <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p></li>
+<li><p>No utilice espacios en blanco, utilice el guion bajo <code class="docutils literal notranslate"><span class="pre">_</span></code></p></li>
+<li><p>Asigne nombres significativos a las capas para que pueda entender lo que representan, incluso si son un paso temporal/intermedio en un flujo de trabajo.</p></li>
+</ul>
+<p>A continuación puede ver un ejemplo de flujo de trabajo para procesar un conjunto de datos de límites administrativos (<code class="docutils literal notranslate"><span class="pre">adm0</span></code>). La finalidad de los pasos intermedios no está clara porque los nombres de las capas no tienen sentido.</p>
+<p><code class="docutils literal notranslate"><span class="pre">adm0</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_temp</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_temp2</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_temp3</span> <span class="pre">&gt;&gt;</span> <span class="pre">facilities_final</span></code></p>
+<p>A continuación, se muestra un buen sistema de nomenclatura para las capas. En este flujo de trabajo, está claro qué procesamiento se realizó en cada paso (reproyectar, recortar la capa, unir con otra capa, resultado final).<br />
+De este modo, otras personas pueden entender para qué sirven las distintas capas y si son necesarias en el proyecto final.</p>
+<p><code class="docutils literal notranslate"><span class="pre">adm0</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_projUTM</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_projUTM_clipUrban</span> <span class="pre">&gt;&gt;</span> <span class="pre">adm0_projUTM_clipUrban_intersectFacilities</span> <span class="pre">&gt;&gt;</span> <span class="pre">facilities_processed</span></code></p>
+</section>
+<section id="documentacion">
+<h3>Documentación<a class="headerlink" href="#documentacion" title="Link to this heading">#</a></h3>
+<p>La documentación es un paso importante cuando se trabaja con datos geoespaciales o se realizan análisis. Garantiza la claridad, la reproducibilidad y permite la colaboración. El análisis de datos espaciales suele implicar procesos complejos, limpieza de datos, transformaciones de datos y fuentes de datos específicas. Sin la documentación adecuada, resulta difícil para usted y para los demás comprender, reproducir o desarrollar su trabajo. La documentación ayuda a organizar el objetivo, los métodos o herramientas, las entradas y salidas de datos, así como las hipótesis y limitaciones. En general, una buena documentación permite a los profesionales de los SIG reproducir los pasos del análisis para obtener exactamente el mismo resultado. En el trabajo colaborativo, una buena documentación sirve como una hoja de ruta y es esencial cuando se trabaja en proyectos SIG. En el trabajo humanitario y en los procesos de toma de decisiones, una buena documentación es imprescindible, ya que ayuda a fundamentar la toma de decisiones que le permite a los equipos humanitarios asignar los recursos.</p>
+<p>Puede documentar sus proyectos mediante el uso de editores markdown o simplemente con la creación de un documento en Word. Asegúrese de que se guarda en la subcarpeta de documentación de la carpeta del proyecto. No hay reglas fijas para escribir una documentación, sin embargo, seguir una estructura lógica puede ayudar a escribir y leer su documentación. También es aconsejable redactar la documentación mientras se realiza el análisis. QGIS ofrece muchas opciones y configuraciones al realizar un análisis, y puede ser fácil olvidar los parámetros que ha utilizado para un paso del análisis.</p>
+<ol class="arabic simple">
+<li><p><strong>Resumen del proyecto:</strong></p>
+<ul class="simple">
+<li><p>Añada el título y el objetivo del proyecto.</p></li>
+<li><p>Añada un breve resumen del análisis.</p></li>
+</ul>
+</li>
+<li><p><strong>Fuentes de datos:</strong></p>
+<ul class="simple">
+<li><p>Lista de todos los conjuntos de datos de entrada (con enlaces si es posible)</p></li>
+<li><p>Sistema de coordenadas utilizado</p></li>
+<li><p>Notas sobre la calidad o las limitaciones de los datos</p></li>
+</ul>
+</li>
+<li><p><strong>Programas y herramientas:</strong></p>
+<ul class="simple">
+<li><p>Versión de QGIS</p></li>
+<li><p>Complementos utilizados</p></li>
+</ul>
+</li>
+<li><p><strong>Flujo de trabajo y metodología:</strong></p>
+<ul class="simple">
+<li><p>Proceso paso a paso con capturas de pantalla o diagramas cuando sea útil</p></li>
+<li><p>Describa cada paso del proceso (puede hacerlo con viñetas)</p></li>
+<li><p>Mencione los parámetros clave o las decisiones tomadas</p></li>
+</ul>
+</li>
+</ol>
+<p>Asegúrese de que tanto usted como otras personas pueden entender y reproducir los pasos del análisis. Una buena documentación hace que su proyecto QGIS deje de ser una caja negra para convertirse en un trabajo transparente, compartible y profesional.</p>
+</section>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<p>Tómese un momento para poner a prueba lo que ha aprendido en este capítulo respondiendo a las siguientes preguntas:</p>
+<ol class="arabic simple">
+<li><p><strong>¿Dónde se guardan las capas cargadas en un proyecto QGIS? ¿Qué implicaciones tiene esto a la hora de mover o renombrar los archivos?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Las capas cargadas en un proyecto QGIS no se incrustan en el archivo de proyecto .qgz, sino que se vinculan mediante rutas de archivo a las fuentes de datos originales.</p></li>
+<li><p class="sd-card-text">Esto significa que si mueve, renombra o elimina un archivo fuente después de añadirlo al proyecto, QGIS no podrá encontrarlo y la capa aparecerá dañada o faltante.</p></li>
+<li><p class="sd-card-text">Para evitarlo, mantenga una estructura de carpetas coherente y evite cambiar las ubicaciones de los archivos una vez configurado el proyecto, o actualice las rutas de los archivos si lo hace.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>Al editar los datos geográficos en QGIS, ¿Por qué se recomienda hacer primero una copia?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Dado que QGIS edita directamente el archivo de datos original, no se puede deshacer ni realizar una copia de seguridad automática una vez guardados los cambios.</p></li>
+<li><p class="sd-card-text">Si comete un error durante la edición, no puede revertirlo fácilmente.</p></li>
+<li><p class="sd-card-text">Si crea una copia del conjunto de datos antes de editarlo, conservará los datos originales y dispondrá de una solución alternativa en caso de que algo vaya mal.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>¿Cuáles son las dos principales ventajas de utilizar una estructura de carpetas estandarizada para los proyectos y datos del SIG?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text"><strong>Portabilidad:</strong> Si toda la carpeta del proyecto (incluidas las subcarpetas de datos) se traslada a un nuevo ordenador o unidad de disco, el proyecto QGIS podrá seguir encontrando sus datos siempre que se utilicen rutas relativas.</p></li>
+<li><p class="sd-card-text"><strong>Organización y coherencia</strong>: Una estructura clara y coherente ayuda a evitar el extravío de archivos, facilita la navegación por el proyecto y garantiza que los demás puedan entenderlo y trabajar con él más fácilmente.</p></li>
+</ol>
+</div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>Describa al menos tres buenas prácticas para nombrar los datos geográficos / capas.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Evitar los caracteres especiales y los espacios en los nombres de archivo; en su lugar, utilizar el guion bajo <code class="docutils literal notranslate"><span class="pre">_</span></code> (p.ej., <code class="docutils literal notranslate"><span class="pre">land_cover_2020.shp</span></code>).</p></li>
+<li><p class="sd-card-text">Utilizar nombres descriptivos que indiquen el contenido de la capa (p.ej., <code class="docutils literal notranslate"><span class="pre">population_density_europe</span></code> en lugar de sólo <code class="docutils literal notranslate"><span class="pre">data1</span></code>).</p></li>
+<li><p class="sd-card-text">Indicar los pasos de procesamiento en el nombre si se ha modificado la capa (p.ej., <code class="docutils literal notranslate"><span class="pre">rivers_clipped</span></code>, <code class="docutils literal notranslate"><span class="pre">buildings_buffered_500m</span></code>) para que su flujo de trabajo sea transparente y reproducible.</p></li>
+</ol>
+</div>
+</details><ol class="arabic simple" start="5">
+<li><p><strong>Si traslada toda la carpeta del proyecto (con sus subcarpetas y datos) a un ordenador diferente, ¿En qué condiciones seguirá funcionando el proyecto QGIS sin rutas dañadas?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">El proyecto seguirá funcionando si:</p>
+<ul>
+<li><p class="sd-card-text">todos los archivos utilizados en el proyecto <strong>se encuentran dentro de la carpeta del proyecto</strong>.</p></li>
+<li><p class="sd-card-text">No utiliza complementos o recursos que no estén disponibles en el ordenador diferente</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Si algún archivo se cargó utilizando rutas absolutas (p.ej., desde una ubicación fuera de la carpeta del proyecto), es probable que esas rutas se dañen tras el traslado a una nueva máquina.</p></li>
+</ul>
+</div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-de-la-gestion-de-datos-geoespaciales">Fundamentos de la gestión de datos geoespaciales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-de-carpetas-estandar">Estructura de carpetas estándar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nomenclatura-de-los-datos-geograficos">Nomenclatura de los datos geográficos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion">Documentación</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

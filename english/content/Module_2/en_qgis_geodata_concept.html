@@ -637,7 +637,7 @@ document.write(`
 <p>In this chapter, you will learn what <strong>geodata</strong> is, and understand the difference between <strong>vector and raster data</strong>. Furthermore, this chapter explains the <strong>layer concept</strong> of GIS-software, which is fundamental to every map you will create.</p>
 <section id="what-is-geodata">
 <h2><span class="section-number">2.1.1. </span>What is geodata?<a class="headerlink" href="#what-is-geodata" title="Link to this heading">#</a></h2>
-<p>Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information (see <a class="reference internal" href="#en-vector-raster"><span class="std std-numref">Fig. 2.1</span></a>).GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. There are two primary types of geographic data: <strong>vector data and raster data</strong>. Both types represent tangible or intangible things in the real world. However, how they store this data is quite different. Because of this, the manipulation and representation of these two types differs dramatically. Understanding the difference between these two types, and how to work with each type on its own, as well as combining both types, will be one of the main skills you will acquire when learning GIS.</p>
+<p>Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_vector_raster</span></code>).GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. There are two primary types of geographic data: <strong>vector data and raster data</strong>. Both types represent tangible or intangible things in the real world. However, how they store this data is quite different. Because of this, the manipulation and representation of these two types differs dramatically. Understanding the difference between these two types, and how to work with each type on its own, as well as combining both types, will be one of the main skills you will acquire when learning GIS.</p>
 <figure class="align-center" id="en-vector-raster">
 <a class="reference internal image-reference" href="../../_images/en_vector_raster.png"><img alt="../../_images/en_vector_raster.png" src="../../_images/en_vector_raster.png" style="width: 500px;" />
 </a>
@@ -656,7 +656,7 @@ weather events or natural phenomena, such as flooding extent)</p></li>
 <p>Geodata usually represents data entries as <strong>geometries</strong> on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population numbers, health indicators, historical events, etc.</p>
 <section id="vector-data">
 <h3><span class="section-number">2.1.1.1. </span>Vector data<a class="headerlink" href="#vector-data" title="Link to this heading">#</a></h3>
-<p>Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: <strong>points, lines, or polygons</strong> (see <a class="reference internal" href="#en-vector-data-overview"><span class="std std-numref">Fig. 2.2</span></a>). A layer can only contain features with same type of geometry.</p>
+<p>Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: <strong>points, lines, or polygons</strong> (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_vector_data_overview</span></code>). A layer can only contain features with same type of geometry.</p>
 <figure class="align-center" id="en-vector-data-overview">
 <a class="reference internal image-reference" href="../../_images/en_vector_data_overview.png"><img alt="../../_images/en_vector_data_overview.png" src="../../_images/en_vector_data_overview.png" style="width: 650px;" />
 </a>
@@ -669,7 +669,7 @@ weather events or natural phenomena, such as flooding extent)</p></li>
 <li><p>Lines are constructed by connecting multiple points which are saved as a single data entry.</p></li>
 <li><p>Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.</p></li>
 </ul>
-<p>Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of information (<a class="reference internal" href="#en-geodata-example-2"><span class="std std-numref">Fig. 2.3</span></a>). Which geometry is used depends on the type of data that is represented. For example, a road might be represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.</p>
+<p>Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of information (<code class="xref std std-numref docutils literal notranslate"><span class="pre">en_geodata_example_2</span></code>). Which geometry is used depends on the type of data that is represented. For example, a road might be represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.</p>
 <figure class="align-default" id="en-geodata-example-2">
 <a class="reference internal image-reference" href="../../_images/en_geodata_example_2.png"><img alt="../../_images/en_geodata_example_2.png" src="../../_images/en_geodata_example_2.png" style="width: 700px;" />
 </a>
@@ -678,7 +678,7 @@ weather events or natural phenomena, such as flooding extent)</p></li>
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see <a class="reference internal" href="#geodata-attribute-table-example"><span class="std std-numref">Fig. 2.4</span></a>).</p></li>
+<li><p>Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">Geodata_attribute_table_example</span></code>).</p></li>
 <li><p>Each row in the table will be one feature on the map, while each column will contain one attribute information (field).</p></li>
 <li><p>Multiple attributes can be associated to each feature.</p></li>
 </ul>
@@ -689,7 +689,7 @@ weather events or natural phenomena, such as flooding extent)</p></li>
 <p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">A data table in Microsoft Excel with geographic information. (Source: British Red Cross).</span><a class="headerlink" href="#geodata-attribute-table-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><a class="reference internal" href="#example-geometric-vs-attribute-view"><span class="std std-numref">Fig. 2.5</span></a> shows the same dataset displayed both as its geometric representation and as an attribute table.</p>
+<p><code class="xref std std-numref docutils literal notranslate"><span class="pre">example_geometric_vs_attribute_view</span></code> shows the same dataset displayed both as its geometric representation and as an attribute table.</p>
 <figure class="align-default" id="example-geometric-vs-attribute-view">
 <a class="reference internal image-reference" href="../../_images/example_geometric_and_attribute_view.png"><img alt="../../_images/example_geometric_and_attribute_view.png" src="../../_images/example_geometric_and_attribute_view.png" style="width: 700px;" />
 </a>
@@ -747,7 +747,7 @@ The following table gives a short description of commonly used vector file forma
 </section>
 <section id="shapefile-structure">
 <h4><span class="section-number">2.1.1.1.2. </span>Shapefile structure<a class="headerlink" href="#shapefile-structure" title="Link to this heading">#</a></h4>
-<p>A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional (see <a class="reference internal" href="#en-shapefile-structure"><span class="std std-numref">Fig. 2.6</span></a>). In order to have a functioning shapefile, you need to have all the mandatory files in the same folder.</p>
+<p>A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_shapefile_structure</span></code>). In order to have a functioning shapefile, you need to have all the mandatory files in the same folder.</p>
 <figure class="align-default" id="en-shapefile-structure">
 <a class="reference internal image-reference" href="../../_images/en_shapefile_structure.png"><img alt="../../_images/en_shapefile_structure.png" src="../../_images/en_shapefile_structure.png" style="width: 400px;" />
 </a>
@@ -799,7 +799,7 @@ The following table gives a short description of commonly used vector file forma
 </div>
 </div>
 <p>Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.</p>
-<p>The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In <a class="reference internal" href="#en-quality-raster"><span class="std std-numref">Fig. 2.9</span></a>, you can see two raster datasets with different resolutions.</p>
+<p>The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_quality_raster</span></code>, you can see two raster datasets with different resolutions.</p>
 <figure class="align-center" id="en-quality-raster">
 <a class="reference internal image-reference" href="../../_images/en_quality_raster.png"><img alt="../../_images/en_quality_raster.png" src="../../_images/en_quality_raster.png" style="width: 800px;" />
 </a>
@@ -807,7 +807,7 @@ The following table gives a short description of commonly used vector file forma
 <p><span class="caption-number">Fig. 2.9 </span><span class="caption-text">Two raster datasets with different resolution covering the same region. (Source: <a class="reference external" href="https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data">CartONG</a>).</span><a class="headerlink" href="#en-quality-raster" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In <a class="reference internal" href="#vector"><span class="std std-numref">Fig. 2.10</span></a> and <a class="reference internal" href="#raster"><span class="std std-numref">Fig. 2.11</span></a> you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.</p>
+<p>In <code class="xref std std-numref docutils literal notranslate"><span class="pre">Vector</span></code> and <code class="xref std std-numref docutils literal notranslate"><span class="pre">Raster</span></code> you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -874,7 +874,7 @@ Raster</div>
 <hr class="docutils" />
 <section id="the-layer-concept">
 <h2><span class="section-number">2.1.2. </span>The layer concept<a class="headerlink" href="#the-layer-concept" title="Link to this heading">#</a></h2>
-<p>GIS software helps us visualise geographic data. It does so by displaying the geometries or raster cells on a 2D canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such as raster data, polygons, points, or lines, is usually stored inside a <strong>layer</strong>. Each layer consists of geographic objects of the same type (line, polygon, raster, …). GIS software displays these layers on top of each other and let’s you rearrange the order of these layer, in order to create insightful maps (see <a class="reference internal" href="#en-layer"><span class="std std-numref">Fig. 2.12</span></a>).</p>
+<p>GIS software helps us visualise geographic data. It does so by displaying the geometries or raster cells on a 2D canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such as raster data, polygons, points, or lines, is usually stored inside a <strong>layer</strong>. Each layer consists of geographic objects of the same type (line, polygon, raster, …). GIS software displays these layers on top of each other and let’s you rearrange the order of these layer, in order to create insightful maps (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_layer</span></code>).</p>
 <p>By adding different layers, you build your map and can combine information from different sources. With those, you can then perform analyses or adapt the representation by using symbols and colors.</p>
 <figure class="align-center" id="en-layer">
 <a class="reference internal image-reference" href="../../_images/en_layer.png"><img alt="../../_images/en_layer.png" src="../../_images/en_layer.png" style="width: 800px;" />
