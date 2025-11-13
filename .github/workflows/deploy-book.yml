@@ -1,30 +1,26 @@
 name: deploy-book
 
-# Only run this when the master branch changes
+# Only run this when the main branch changes
 on:
   push:
     branches:
-    - main
-    # If your git repository has the Jupyter Book within some-subfolder next to
-    # unrelated files, you can make this run only if a file within that specific
-    # folder has been modified.
-    #
-    # paths:
-    # - some-subfolder/**
+      - main
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
 
-    # Install dependencies
+    # Set up Python environment
     - name: Set up Python 3.13
       uses: actions/setup-python@v2
       with:
         python-version: 3.13
-        
+
+    # Install dependencies
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
@@ -35,19 +31,28 @@ jobs:
         echo "Current directory: $(pwd)"
         find . -maxdepth 3 -type f -name "_config.yml"
 
-    - name: Where am I?
+    # Build the English version of the book
+    - name: Build English Book
       run: |
-        pwd
-        ls -al
+        jupyter-book build . --config _config.yml --toc _toc.yml --output-dir _build/english
 
-    # Build the book
-    - name: Build the book
+    # Build the Spanish version of the book
+    - name: Build Spanish Book
       run: |
-        jupyter-book build .
+        jupyter-book build . --config _config.yml --toc es_toc.yml --output-dir _build/spanish
 
-    # Push the book's HTML to github-pages
-    - name: GitHub Pages action
+    # Deploy the English version to GitHub Pages
+    - name: Deploy English Book to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
+        publish_dir: ./_build/english/html
+        destination_dir: /english  # Optional: Publish to a subdirectory (e.g., `gh-pages/english`)
+
+    # Deploy the Spanish version to GitHub Pages
+    - name: Deploy Spanish Book to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3.6.1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_build/spanish/html
+        destination_dir: /spanish  # Optional: Publish to a subdirectory (e.g., `gh-pages/spanish`)
