@@ -34,26 +34,44 @@ jobs:
     - name: Build English Book
       run: |
         jupyter-book build . --config _config.yml --toc _toc.yml --path-output _build/english
+        # Add debugging to check where the output is
+        echo "Contents of _build/english:"
+        ls -al _build/english
 
-    # Build the Spanish version of the book (adjust output path to avoid nested '_build')
+    # Build the Spanish version of the book
     - name: Build Spanish Book
       run: |
         jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
+        # Add debugging to check where the output is
+        echo "Contents of spanish directory:"
+        ls -al spanish
+
+    # Debugging: List contents of the _build directory
+    - name: List all contents of _build
+      run: |
+        echo "Listing contents of _build:"
+        ls -al _build
 
     # Check if the English build directory exists
     - name: Check English Build Directory
       run: |
+        echo "Checking if _build/english/html exists"
         if [ ! -d "_build/english/html" ]; then
           echo "Error: English build directory does not exist!";
           exit 1;
+        else
+          echo "English build directory found."
         fi
 
     # Check if the Spanish build directory exists
     - name: Check Spanish Build Directory
       run: |
+        echo "Checking if spanish/html exists"
         if [ ! -d "spanish/html" ]; then
           echo "Error: Spanish build directory does not exist!";
           exit 1;
+        else
+          echo "Spanish build directory found."
         fi
 
     # Deploy the English version to GitHub Pages
