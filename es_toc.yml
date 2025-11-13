@@ -52,8 +52,6 @@ parts:
         sections: 
           - file: content/Module_7/en_qgis_automation_theory.md
           - file: content/Module_7/en_qgis_module_7_exercises.md
-      - file: content/Module_8/en_module_8_overview.md
-        sections: 
   - caption: Rincón de los Capacitadores
     chapters: 
       - file: content/Trainers_corner/es_TOT_intro.md  
