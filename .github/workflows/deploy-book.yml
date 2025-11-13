@@ -34,23 +34,29 @@ jobs:
     - name: Build English Book
       run: |
         jupyter-book build . --config _config.yml --toc _toc.yml --path-output english
-        # Add debugging to check where the output is
+        # Debug: check if build was successful and print directory contents
         echo "Contents of english directory:"
         ls -al english
+        # Check if the HTML exists inside the english directory
+        echo "Listing contents of english/html:"
+        ls -al english/html || echo "No english/html directory found."
 
     # Build the Spanish version of the book
     - name: Build Spanish Book
       run: |
         jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
-        # Add debugging to check where the output is
+        # Debug: check if build was successful and print directory contents
         echo "Contents of spanish directory:"
         ls -al spanish
+        # Check if the HTML exists inside the spanish directory
+        echo "Listing contents of spanish/html:"
+        ls -al spanish/html || echo "No spanish/html directory found."
 
-    # Debugging: List contents of the _build directory
-    - name: List all contents of _build
+    # Debugging: List contents of the workspace
+    - name: List all contents of workspace
       run: |
-        echo "Listing contents of _build:"
-        ls -al _build
+        echo "Listing all files in the current workspace:"
+        ls -al
 
     # Check if the English build directory exists
     - name: Check English Build Directory
