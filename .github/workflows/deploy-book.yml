@@ -23,69 +23,31 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    # Debug structure
-    - name: Debug structure
-      run: |
-        echo "Current directory: $(pwd)"
-        find . -maxdepth 3 -type f -name "_config.yml"
-
     # Build English Book
     - name: Build English Book
       run: |
         jupyter-book build . --config _config.yml --toc _toc.yml --path-output english
         echo "English book built successfully."
-        ls -al english
 
     # Build Spanish Book
     - name: Build Spanish Book
       run: |
         jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
         echo "Spanish book built successfully."
-        ls -al spanish
 
-
-    # Debugging: List all contents of the workspace
-    - name: List all contents of workspace
+    # Combine both builds into a single deployable folder
+    - name: Combine English and Spanish builds
       run: |
-        echo "Listing all files in the workspace:"
-        ls -al
+        mkdir _site
+        mv english _site/english
+        mv spanish _site/spanish
+        echo "Combined builds into _site directory."
+        ls -R _site
 
-    # Check if the English build directory exists
-    - name: Check English Build Directory
-      run: |
-        echo "Checking if english exists"
-        if [ ! -d "english" ]; then
-          echo "Error: English build directory does not exist!"
-          exit 1
-        else
-          echo "English build directory found."
-        fi
-
-    # Check if the Spanish build directory exists
-    - name: Check Spanish Build Directory
-      run: |
-        echo "Checking if spanish exists"
-        if [ ! -d "spanish" ]; then
-          echo "Error: Spanish build directory does not exist!"
-          exit 1
-        else
-          echo "Spanish build directory found."
-        fi
-
-    # Deploy the English version to GitHub Pages
-    - name: Deploy English Book to GitHub Pages
+    # Deploy combined site to GitHub Pages
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./english
+        publish_dir: ./_site
         publish_branch: gh-pages
-        keep_files: true
-
-    # Deploy the Spanish version to GitHub Pages
-    - name: Deploy Spanish Book to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3.6.1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./spanish
-        publish_branch: gh-pages
-        keep_files: true
