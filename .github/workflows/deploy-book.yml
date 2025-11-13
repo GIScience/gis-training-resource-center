@@ -32,22 +32,17 @@ jobs:
     # Build the English version of the book
     - name: Build English Book
       run: |
-        jupyter-book build content \
-          --config ../_config.yml \
-          --toc ../_toc.yml \
-          --path-output english
+        jupyter-book build content --config _config.yml --toc _toc.yml --path-output english
         echo "Contents of english directory:"
         ls -al english
 
     # Build the Spanish version of the book
     - name: Build Spanish Book
       run: |
-        jupyter-book build content/es \
-          --config ../../_config.yml \
-          --toc ../../es_toc.yml \
-          --path-output spanish
+        jupyter-book build content/es --config _config.yml --toc es_toc.yml --path-output spanish
         echo "Contents of spanish directory:"
         ls -al spanish
+
 
     # Debugging: List all contents of the workspace
     - name: List all contents of workspace
