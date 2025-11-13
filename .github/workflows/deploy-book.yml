@@ -33,10 +33,10 @@ jobs:
     # Build the English version of the book
     - name: Build English Book
       run: |
-        jupyter-book build . --config _config.yml --toc _toc.yml --path-output _build/english
+        jupyter-book build . --config _config.yml --toc _toc.yml --path-output english
         # Add debugging to check where the output is
-        echo "Contents of _build/english:"
-        ls -al _build/english
+        echo "Contents of english directory:"
+        ls -al english
 
     # Build the Spanish version of the book
     - name: Build Spanish Book
@@ -55,8 +55,8 @@ jobs:
     # Check if the English build directory exists
     - name: Check English Build Directory
       run: |
-        echo "Checking if _build/english/html exists"
-        if [ ! -d "_build/english/html" ]; then
+        echo "Checking if english/html exists"
+        if [ ! -d "english/html" ]; then
           echo "Error: English build directory does not exist!";
           exit 1;
         else
@@ -79,7 +79,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/english/html
+        publish_dir: ./english/html
         publish_branch: gh-pages
         keep_files: true
 
