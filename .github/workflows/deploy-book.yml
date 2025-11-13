@@ -6,7 +6,6 @@ on:
     branches:
       - main
 
-# This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
@@ -36,10 +35,26 @@ jobs:
       run: |
         jupyter-book build . --config _config.yml --toc _toc.yml --path-output _build/english
 
-    # Build the Spanish version of the book
+    # Build the Spanish version of the book (adjust output path to avoid nested '_build')
     - name: Build Spanish Book
       run: |
-        jupyter-book build . --config _config.yml --toc es_toc.yml --path-output _build/spanish
+        jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
+
+    # Check if the English build directory exists
+    - name: Check English Build Directory
+      run: |
+        if [ ! -d "_build/english/html" ]; then
+          echo "Error: English build directory does not exist!";
+          exit 1;
+        fi
+
+    # Check if the Spanish build directory exists
+    - name: Check Spanish Build Directory
+      run: |
+        if [ ! -d "spanish/html" ]; then
+          echo "Error: Spanish build directory does not exist!";
+          exit 1;
+        fi
 
     # Deploy the English version to GitHub Pages
     - name: Deploy English Book to GitHub Pages
@@ -47,12 +62,14 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/english/html
-        destination_dir: /english  # Optional: Publish to a subdirectory (e.g., `gh-pages/english`)
+        publish_branch: gh-pages
+        keep_files: true
 
     # Deploy the Spanish version to GitHub Pages
     - name: Deploy Spanish Book to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/spanish/html
-        destination_dir: /spanish  # Optional: Publish to a subdirectory (e.g., `gh-pages/spanish`)
+        publish_dir: ./spanish/html
+        publish_branch: gh-pages
+        keep_files: true
