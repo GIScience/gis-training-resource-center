@@ -29,19 +29,20 @@ jobs:
         echo "Current directory: $(pwd)"
         find . -maxdepth 3 -type f -name "_config.yml"
 
-      # Build the English version of the book
+    # Build English Book
     - name: Build English Book
       run: |
-        cd content
-        jupyter-book build --config ../_config.yml --toc ../_toc.yml . --path-output ../english
-        ls -al ../english
+        jupyter-book build . --config _config.yml --toc _toc.yml --path-output english
+        echo "English book built successfully."
+        ls -al english
 
-    # Build the Spanish version of the book
+    # Build Spanish Book
     - name: Build Spanish Book
       run: |
-        cd content/es
-        jupyter-book build --config ../../_config.yml --toc ../../es_toc.yml . --path-output ../../spanish
-        ls -al ../../spanish
+        jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
+        echo "Spanish book built successfully."
+        ls -al spanish
+
 
     # Debugging: List all contents of the workspace
     - name: List all contents of workspace
