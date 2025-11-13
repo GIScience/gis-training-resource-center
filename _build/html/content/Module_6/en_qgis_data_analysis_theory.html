@@ -1,0 +1,1206 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>6.1. Data Analysis with QGIS &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_6/en_qgis_data_analysis_theory';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.2. Data Analysis in the Humanitarian Sector" href="en_qgis_common_data_analysis.html" />
+    <link rel="prev" title="6. Data Analysis with QGIS" href="en_module_6_overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_6_overview.html">6. Data Analysis with QGIS</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Module_6/en_qgis_data_analysis_theory.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Module_6/en_qgis_data_analysis_theory.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Data Analysis with QGIS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-spatial-analysis">6.1.1. Data &amp; Spatial Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-analysis">6.1.1.1. Spatial analysis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#length-surface-circumference">6.1.2. Length, Surface, Circumference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistics">6.1.3. Basic statistics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer-analysis">6.1.4. Buffer analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#density-map-analysis">6.1.5. Density Map Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heatmaps">6.1.5.1. Heatmaps</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-symbology-tab-to-create-a-heatmap">6.1.5.1.1. Using the symbology tab to create a heatmap</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hex-maps-hexagon-grids">6.1.5.2. Hex Maps (Hexagon Grids)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-by-joining-attributes">6.1.6. Analysis by joining attributes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pivoting-tables">6.1.6.1. Pivoting tables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-appropriate-locations-according-to-a-set-of-criteria">6.1.7. Selecting appropriate locations according to a set of criteria</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation">6.1.8. Interpolation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#idw-interpolation-inverse-distance-weighted">6.1.8.1. IDW Interpolation (Inverse Distance Weighted)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-interpolation">6.1.8.2. Spline Interpolation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triangulated-irregular-network">6.1.8.3. Triangulated Irregular Network</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kriging">6.1.8.4. Kriging</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outlook">6.1.9. Outlook</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="data-analysis-with-qgis">
+<h1><span class="section-number">6.1. </span>Data Analysis with QGIS<a class="headerlink" href="#data-analysis-with-qgis" title="Link to this heading">#</a></h1>
+<p>🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</p>
+<p><strong>Competences</strong>:</p>
+<p>This module covers how to perform general data analysis, calculate statistics, create buffers, produce heatmaps,
+and divide rivers, roads, or areas into segments. The following modules will cover more complicated data analysis
+methods.</p>
+<!--ADD: Break rivers into segments is not done yet! EN-->
+<section id="data-spatial-analysis">
+<h2><span class="section-number">6.1.1. </span>Data &amp; Spatial Analysis<a class="headerlink" href="#data-spatial-analysis" title="Link to this heading">#</a></h2>
+<p>Even with a single layer, extensive analysis is possible. However, often the information we need to analyse is spread across multiple layers. To gain these insights, we use the spatial and non-spatial GIS processing tools we learned in previous modules. In this module, we will explore how to apply these tools, collect and work with data, and create meaningful insights. We will also review several examples of data analysis commonly used in humanitarian work.</p>
+<section id="spatial-analysis">
+<h3><span class="section-number">6.1.1.1. </span>Spatial analysis<a class="headerlink" href="#spatial-analysis" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="spatial-analysis-using-multiple-layers-example">
+<a class="reference internal image-reference" href="../../_images/multiple_layer_data_analysis.png"><img alt="../../_images/multiple_layer_data_analysis.png" src="../../_images/multiple_layer_data_analysis.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Spatial analysis means using multiple layers to gain new insights</span><a class="headerlink" href="#spatial-analysis-using-multiple-layers-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>A spatial analysis can be a result of combining several layers with different information in a single map.</p></li>
+</ul>
+<p><strong>Geographic analysis helps us answer questions like</strong>:</p>
+<ul class="simple">
+<li><p>What <strong>patterns</strong> are in the data?</p></li>
+<li><p>How can we <strong>summarise</strong> any trends?</p></li>
+<li><p>What’s <strong>nearby</strong>?</p></li>
+<li><p>Which areas are <strong>affected</strong>?</p></li>
+<li><p>What’s <strong>inside or outside</strong> a boundary?</p></li>
+<li><p>How do phenomenon <strong>change with location</strong>?</p></li>
+<li><p>How do locations <strong>change over time</strong>?</p></li>
+</ul>
+<p>Before doing any sort of processing, you need to <strong>familiarise yourself with the data</strong> and understand it.</p>
+<ol class="arabic simple">
+<li><p>The first step is to read the metadata from the source and understand <strong>what data was collected</strong>, <strong>who
+collected the data</strong>, <strong>and how the data was collected</strong>.</p></li>
+<li><p>Next, open the attribute table and look at the different features and attributes available. What do the
+attributes show and what are they called?</p></li>
+<li><p>Now you can start visualising the data:</p>
+<ul class="simple">
+<li><p>You can visualise the data cartographically by assigning or categorising the data using symbols</p></li>
+<li><p>You can create charts from the attribute table</p></li>
+<li><p>You can look for patterns, averages, outliers</p></li>
+</ul>
+</li>
+</ol>
+<p>We are often seeking ways to <strong>describe</strong> our data to an audience. Sometimes, spatial analysis will be used to provide recommendations for activities. Given the vast amount of data available online, it is important to take a step back and gain perspective on this knowledge, these capabilities, and the data itself before rushing to manipulate it:</p>
+<ul class="simple">
+<li><p><strong>Reliability</strong>: Can I trust this data?</p></li>
+<li><p><strong>Interest</strong>: Do I need this data?</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Usage</strong>: Am I able to use this data?</p></li>
+<li><p><strong>Comprehensiveness</strong>: Is this data complete?</p></li>
+<li><p><strong>Date</strong>: How old is this data?</p></li>
+<li><p><strong>Sensitivity</strong>: Is this data sensitive?</p></li>
+</ul>
+<p>With spatial analysis, you can build predictive models to plan ahead of disasters. <strong>HOWEVER: Not all analysis is
+complicated! Just knowing how many features are in a layer is useful.</strong> Simple data analysis includes:</p>
+<ul class="simple">
+<li><p>Ranking</p></li>
+<li><p>Categorising</p></li>
+<li><p>Above/below threshold</p></li>
+<li><p>Affected Areas</p></li>
+<li><p>Population distribution</p></li>
+</ul>
+<p>It is important to know the <strong>limitations</strong> of the data at your disposal - don’t try to use unsuitable data for
+analysis (e.g. if you now a survey sample is not representative)</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Spatial Representation and Analysis
+There are some spatial analysis problems that are difficult to avoid completely. For example the <strong>Modifiable Areal
+Unit Problem</strong>, where the results look different depending on the unit of analysis.</p>
+</div>
+<!--FIXME: INSERT LINK TO MODIFIABLE AREAL UNIT PROBLEM EXPLANATION -->
+<p><strong>There are two main types of data analysis</strong>:</p>
+<figure class="align-default" id="thematic-analysis-example">
+<a class="reference internal image-reference" href="../../_images/en_thematic_analysis.png"><img alt="../../_images/en_thematic_analysis.png" src="../../_images/en_thematic_analysis.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Assigning visual variables to different attributes is already an analysis</span><a class="headerlink" href="#thematic-analysis-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Thematic analyses</strong> focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.</p>
+<ul>
+<li><p>For instance: variations in size depending on population numbers in a refugee camp area.</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/thematic_analysis_map_example.png"><img alt="../../_images/thematic_analysis_map_example.png" src="../../_images/thematic_analysis_map_example.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Thematic analysis using different colours for the roads to discern health accessibility (Source: <a class="reference external" href="https://reliefweb.int/map/bangladesh/rohingya-refugee-responsebangladesh-rohingya-population-location-30-june-2022">UNHCR</a>)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="thematic-analysis-example-2">
+<a class="reference internal image-reference" href="../../_images/thematic_analysis_map_example_2.png"><img alt="../../_images/thematic_analysis_map_example_2.png" src="../../_images/thematic_analysis_map_example_2.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Thematic analysis using different sizes to distinguish the population number in each camp (Source: <a class="reference external" href="https://reliefweb.int/map/somalia/somalia-physical-constraints-map-21-july-2022">WFP</a>)</span><a class="headerlink" href="#thematic-analysis-example-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Spatial analyses</strong> are performed on spatialised phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.</p>
+<ul>
+<li><p>For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="flood-risk-map-example">
+<a class="reference internal image-reference" href="../../_images/en_flood_risk_map_example.png"><img alt="../../_images/en_flood_risk_map_example.png" src="../../_images/en_flood_risk_map_example.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Example of a flood risk map. Source: Frank, Enrico &amp; Ramsbottom, David &amp; Avanzi, Agostino. (2016). Flood risk assessment and prioritisation of measures: Two key tools in the development of a national programme of flood risk management measures in Moldova. International Journal of Safety and Security Engineering. 6. 475-484. 10.2495/SAFE-V6-N3-475-484.</span><a class="headerlink" href="#flood-risk-map-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="length-surface-circumference">
+<h2><span class="section-number">6.1.2. </span>Length, Surface, Circumference<a class="headerlink" href="#length-surface-circumference" title="Link to this heading">#</a></h2>
+<p>Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.</p>
+<p>These geometrical attributes can be calculated using the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field"><strong>field calculator</strong></a> or the processing tool <strong>“Add geometry attributes”</strong>.</p>
+<p>The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><em>Function</em></p></th>
+<th class="head"><p><em>Description</em></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">$area</span></code></p></td>
+<td><p>Returns the area of the current feature. The area calculated by this function respects both the current project’s ellipsoid setting and area unit settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">$length</span></code></p></td>
+<td><p>Returns the length of a linestring. If you need the length of a border of a polygon, use $perimeter instead. The length calculated by this function respects both the current project’s ellipsoid setting and distance unit settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">$perimeter</span></code></p></td>
+<td><p>Returns the perimeter length of the current feature. The perimeter calculated by this function respects both the current project’s ellipsoid setting and distance unit settings.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For example, to calculate the area of polygons:</p>
+<ol class="arabic simple">
+<li><p>Open the attribute table</p></li>
+<li><p>Open the field calculator</p></li>
+<li><p>Check the box <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code></p></li>
+<li><p>Enter a <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">name</span></code>: “Area”</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">field</span> <span class="pre">type</span></code>: In this case we want a number with decimals. So we select either “decimal number”.</p></li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">$Area</span></code> into the expression window.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<p>In the attribute table, you will find a new column called <code class="docutils literal notranslate"><span class="pre">Area</span></code> with the respective area for each feature.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>unit of measurement</strong> of the calculated area depends on the <strong>distance unit settings</strong> of the current <strong>project’s CRS</strong> (metrical or geographic). In most cases you want metres or kilometers. Make sure the units of your CRS are metres to get the correct values.</p>
+<p>You can check this by opening the CRS selector (in the bottom right corner) and reading the information of your selected CRS.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Example: Calculating the length of roads</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2__fieldcalc_calculating_length
+.mp4"></video></p>
+</div>
+</details></section>
+<section id="basic-statistics">
+<h2><span class="section-number">6.1.3. </span>Basic statistics<a class="headerlink" href="#basic-statistics" title="Link to this heading">#</a></h2>
+<p>In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have <strong>aggregate statistics</strong> on a dataset (average length/area, total length/area).<br />
+QGIS comes with two basic processing tools to generate statistics:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><em>Processing tool</em></p></th>
+<th class="head"><p><em>Description</em></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>“<strong>Basic statistics for fields</strong>”</p></td>
+<td><p>This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, …) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>“<strong>Statistics by categories</strong>”</p></td>
+<td><p>This algorithm calculates statistics of fields depending on a parent class. In the option <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">to</span> <span class="pre">calculate</span> <span class="pre">statistics</span> <span class="pre">on</span></code>, you must select the column that you wish to create statistics for (for example, area/length). In the option <code class="docutils literal notranslate"><span class="pre">Field(s)</span> <span class="pre">with</span> <span class="pre">categories</span></code> you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Example: Statistics by categories</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In this example we have a road network which has been intersected with a flood extent. A new field (“Flood”) has been calculated containing information whether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the <code class="docutils literal notranslate"><span class="pre">$length</span></code> function in the field calculator as new column called “Length”.<br />
+We want to calculate the total length of flooded and unflooded road respectively.</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Open the “Statistics by category”-tool</p></li>
+<li><p class="sd-card-text">Select the road network layer.</p></li>
+<li><p class="sd-card-text">Under <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">to</span> <span class="pre">calculate</span> <span class="pre">statistics</span> <span class="pre">on</span></code>, select <code class="docutils literal notranslate"><span class="pre">Length</span></code></p></li>
+<li><p class="sd-card-text">Under <code class="docutils literal notranslate"><span class="pre">Field(s)</span> <span class="pre">with</span> <span class="pre">categories</span></code>, select <code class="docutils literal notranslate"><span class="pre">Flood</span></code></p></li>
+<li><p class="sd-card-text">Specify a location to save the statistics file.</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
+<li><p class="sd-card-text">After completion, a new layer will appear in your layer tab. This will not contain spatial attributes and is a simple attribute table with the statistics. In our case, we will have the basic statistics (min, max, range, sum, median, sd, etc.) for all the road features with the flooding value “Y”, and “N”.</p></li>
+</ol>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_statistics_by_categories_example
+.mp4"></video></p>
+</div>
+</details><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can add a table of the statistics to your print layout by using the “<strong>Add attribute table</strong>” tool in the print layout composer</p>
+</div>
+<blockquote>
+<div><p>Insert statistics examples</p>
+</div></blockquote>
+</section>
+<section id="buffer-analysis">
+<h2><span class="section-number">6.1.4. </span>Buffer analysis<a class="headerlink" href="#buffer-analysis" title="Link to this heading">#</a></h2>
+<p>Creating a <a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html#buffer"><span class="std std-ref">buffer</span></a> is a helpful analysis to determine <strong>what lies in proximity</strong> of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.</p>
+<ul class="simple">
+<li><p>Proximity analysis</p></li>
+<li><p>Estimated vulnerability analysis</p></li>
+</ul>
+</section>
+<section id="density-map-analysis">
+<h2><span class="section-number">6.1.5. </span>Density Map Analysis<a class="headerlink" href="#density-map-analysis" title="Link to this heading">#</a></h2>
+<p>Density maps are very useful in communicating the <strong>intensity of a phenomenon in an area</strong>. Point data is <strong>spatially aggregated</strong> to show the amount of incidents in that area.
+<strong>For example</strong>, number of schools or number of disease cases.</p>
+<p>It is important to consider that most demographic or economic data needs to be <strong>normalised</strong> (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example.</p>
+<p>There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculated with point data (rarely with lines or polygons).</p>
+<!---discrete vs. continuous?-->
+<section id="heatmaps">
+<h3><span class="section-number">6.1.5.1. </span>Heatmaps<a class="headerlink" href="#heatmaps" title="Link to this heading">#</a></h3>
+<p>Heat maps use features in a dataset to calculate the <strong>relative density of points</strong> on a map. The density is displayed as a colour ramp with colours ranging from “cool” (low density) to “hot” (high density). Heatmaps are useful when you have a large number of features covering an area with areas <strong>where these features cluster together</strong> and help us visualise <strong>spatial patterns</strong> of a layer.</p>
+<figure class="align-default" id="point-map-to-heat-map-example">
+<a class="reference internal image-reference" href="../../_images/point_map_to_heat_map_example.png"><img alt="../../_images/point_map_to_heat_map_example.png" src="../../_images/point_map_to_heat_map_example.png" style="height: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Example of a point map (left) to a heat map (right)</span><a class="headerlink" href="#point-map-to-heat-map-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To create a heatmap you first need a layer containing data points or ‘samples’. These points are distributed in an area with some areas containing more than others. The <strong>density</strong> of the points in space determines the intensity of the colour on the heat map.</p>
+<p>In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <strong>“Heatmap (Kernel Density Estimation)”</strong> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <strong>100 Meters</strong> radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab.</p>
+<blockquote>
+<div><p>insert link</p>
+</div></blockquote>
+<section id="using-the-symbology-tab-to-create-a-heatmap">
+<h4><span class="section-number">6.1.5.1.1. </span>Using the symbology tab to create a heatmap<a class="headerlink" href="#using-the-symbology-tab-to-create-a-heatmap" title="Link to this heading">#</a></h4>
+<p>You can create a heatmap in the <strong>symbology tab</strong> of a point or polyline layer. Navigate to the symbology tab and select the <code class="docutils literal notranslate"><span class="pre">Heatmap</span></code> symbolisation method. Here, you can adjust the <strong>colour ramp, radius, and maximum value</strong>. The <strong>radius</strong> (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the ‘heat’ increases. The <strong>maximum value</strong> determines the value that is given the ‘hottest’ colour. By default, it is set to the highest number of aggregated points. For example, you can <strong>set a threshold</strong> above which everything has the “hottest” colour. Reducing it changes the visualisation drastically.</p>
+<figure class="align-default" id="heatmap-example-with-different-radii-and-max-value">
+<a class="reference internal image-reference" href="../../_images/en_heatmap_radius_max_value_conf_example.png"><img alt="../../_images/en_heatmap_radius_max_value_conf_example.png" src="../../_images/en_heatmap_radius_max_value_conf_example.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.7 </span><span class="caption-text">Examples of heatmaps with different configurations for the radius and the maximum value.</span><a class="headerlink" href="#heatmap-example-with-different-radii-and-max-value" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As you can see, the information communicated through the different maps changes drastically. This is why you need to be transparent on what parameters you have set to create the heatmap.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Assigning a weight to the samples</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Assigning weight to sample points can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap.</p>
+</div>
+</details></section>
+</section>
+<section id="hex-maps-hexagon-grids">
+<h3><span class="section-number">6.1.5.2. </span>Hex Maps (Hexagon Grids)<a class="headerlink" href="#hex-maps-hexagon-grids" title="Link to this heading">#</a></h3>
+<p>Hexagon grids are used to aggregate point incidents in order to normalise geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or <strong>hexagons</strong>, as these geometries can be repeat in an evenly spaced grid without leaving gaps.</p>
+<p>The advantage of using hexagons is that it is a polygon that closely resembles a <strong>circle</strong> (where the distance to the centre is equal at every point along the outline), but still <strong>leaves no gaps</strong> when placed as a <strong>grid</strong>. This means that it is also possible to use absolute values (no normalisation), since the spatial units have the same size.</p>
+<p>Another advantage is that you can use the hexagon grid as spatial units and combine multiple variables (for example, number of incidents per population size) or calculate indexes.</p>
+<blockquote>
+<div><p>WIKI: <strong>Hexagon grids</strong> are especially useful for density maps. For example, the number of conflict events or water points in an area.</p>
+</div></blockquote>
+<p>To create a hexagon grid map, you will first need to <a class="reference internal" href="#link"><span class="xref myst">create a hexagon grid</span></a>, by using the “<strong>Create Grid</strong>” vector tool.</p>
+<p>Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool “<strong>Count points in polygon</strong>”. The result will be a hexagonal grid where each polygon has the a value for the number of points in that area.</p>
+<p>The final step will be to <strong>visualise</strong> the data by assigning a <strong>graduated symbology</strong> to the polygons. You can play around with the transparency of your layers to make more information visible.</p>
+<figure class="align-default" id="point-map-to-hex-map-example">
+<a class="reference internal image-reference" href="../../_images/point_to_hex_map_example.png"><img alt="../../_images/point_to_hex_map_example.png" src="../../_images/point_to_hex_map_example.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.8 </span><span class="caption-text">Point map (left) to hex map (right)</span><a class="headerlink" href="#point-map-to-hex-map-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Example video: Creating a hex map</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Create a Hexagon grid with the tool “<strong>Create Grid</strong>”.</p></li>
+<li><p class="sd-card-text">Select <code class="docutils literal notranslate"><span class="pre">Hexagon</span> <span class="pre">(Polygon)</span></code> as <strong>Grid type</strong>.</p></li>
+<li><p class="sd-card-text">The Grid extent should be set to the layer/area of interest.</p></li>
+<li><p class="sd-card-text">Select the horizontal and vertical spacing according to the scale of your map.</p></li>
+<li><p class="sd-card-text">Optional: Remove the unnecessary Polygons.</p></li>
+<li><p class="sd-card-text">Use the tool “<strong>Count points in Polygon</strong>” to add an attribute field with the number of points that are <em>inside</em> each hexagon cell. The <strong>Polygons</strong> field should be your reference layer. The new layer will have an attribute field called “<strong>NUMPOINTS</strong>”</p></li>
+<li><p class="sd-card-text">Assign a <strong>graduated</strong> symbology to the <code class="docutils literal notranslate"><span class="pre">Count</span></code>-layer. Select “<strong>NUMPOINTS</strong>” as the value and categorise the classes as you wish.</p></li>
+</ol>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_creating_a_hex_map
+.mp4"></video></p>
+</div>
+</details><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can remove the hexagon cells that are not overlapping with the reference layer:</p>
+<ol class="arabic simple">
+<li><p>Select by location all the cells that intersect with your reference polygon/layer.</p></li>
+<li><p>Invert the selection.</p></li>
+<li><p>Delete the selected hexagon cells.</p></li>
+<li><p>Save the changes you made to the layer.</p></li>
+</ol>
+</div>
+</section>
+</section>
+<section id="analysis-by-joining-attributes">
+<h2><span class="section-number">6.1.6. </span>Analysis by joining attributes<a class="headerlink" href="#analysis-by-joining-attributes" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html"><span class="std std-doc">Joining</span></a> datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.</p>
+<ul class="simple">
+<li><p>You have two separate data tables with information you wish to aggregate (join);</p></li>
+<li><p>Both tables share key identifiers; <code class="docutils literal notranslate"><span class="pre">CNTY_NAME</span></code> in this example</p></li>
+<li><p>The key identifiers serve as the <strong>relationship</strong> between the two tables</p></li>
+<li><p>The tables will be combined via the key identifiers</p></li>
+<li><p>Joining tables will create a new table where the attribute values are added to the key identifiers</p></li>
+</ul>
+<figure class="align-left" id="non-spatial-join-aggregate-table-example">
+<a class="reference internal image-reference" href="../../_images/en_non_spatial_join_aggregate_table.png"><img alt="../../_images/en_non_spatial_join_aggregate_table.png" src="../../_images/en_non_spatial_join_aggregate_table.png" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.9 </span><span class="caption-text">Table aggregation workflow</span><a class="headerlink" href="#non-spatial-join-aggregate-table-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="pivoting-tables">
+<h3><span class="section-number">6.1.6.1. </span>Pivoting tables<a class="headerlink" href="#pivoting-tables" title="Link to this heading">#</a></h3>
+<!--ADD: Insert example of short form vs. long form or check the example figures-->
+<p>Sometimes, the tables are not in a suitable format for joining. For example, having multiple zones per country makes the CNTRY_NAME field unsuitable for aggregation. In such cases, pivoting the table is useful. This involves aggregating the fields for the zones and their respective area sizes under the country. The values in the ZONE column will be transformed into columns containing the area values. This way, you can aggregate this table with additional information that includes data on countries.</p>
+<figure class="align-default" id="table-pivot-1">
+<img alt="../../_images/en_table_pivot_1.png" src="../../_images/en_table_pivot_1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.10 </span><span class="caption-text">Pivoting tables means transforming values into columns</span><a class="headerlink" href="#table-pivot-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="table-pivot-2">
+<img alt="../../_images/en_table_pivot_2.png" src="../../_images/en_table_pivot_2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.11 </span><span class="caption-text">Values of the column <code class="docutils literal notranslate"><span class="pre">ZONE</span></code> are transformed into columns</span><a class="headerlink" href="#table-pivot-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<img alt="../../_images/en_table_pivot_3.png" src="../../_images/en_table_pivot_3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.12 </span><span class="caption-text">A country is now represented in a single row</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<img alt="../../_images/en_table_pivot_4.png" src="../../_images/en_table_pivot_4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.13 </span><span class="caption-text">The values for the areas are added to the country column</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<img alt="../../_images/en_table_pivot_5.png" src="../../_images/en_table_pivot_5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6.14 </span><span class="caption-text">Red = Pivot field; Blue = Input field; Green = Values field</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="selecting-appropriate-locations-according-to-a-set-of-criteria">
+<h2><span class="section-number">6.1.7. </span>Selecting appropriate locations according to a set of criteria<a class="headerlink" href="#selecting-appropriate-locations-according-to-a-set-of-criteria" title="Link to this heading">#</a></h2>
+</section>
+<section id="interpolation">
+<h2><span class="section-number">6.1.8. </span>Interpolation<a class="headerlink" href="#interpolation" title="Link to this heading">#</a></h2>
+<!---insert links-->
+<p>Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are <a class="reference internal" href="#link"><span class="xref myst">continuous</span></a>, such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a <strong>statistical surface</strong>. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.</p>
+<figure class="align-default" id="interpolation-example-temperature-heidelberg">
+<a class="reference internal image-reference" href="../../_images/interpolation_example_temperature.png"><img alt="../../_images/interpolation_example_temperature.png" src="../../_images/interpolation_example_temperature.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.15 </span><span class="caption-text">Temperature map interpolated from weather stations in Heidelberg, Germany using IDW-interpolation.</span><a class="headerlink" href="#interpolation-example-temperature-heidelberg" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Interpolating data can be highly useful since an extensive data collection is costly and rarely possible. Data collection for continuous phenomena is usually conducted only at a small number of locations. Interpolation models use these points to calculate a raster surface with estimated values for each raster cell.</p>
+<p>There are many different interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are <strong>Spline interpolation</strong>, <strong>Inverse Distance Weighted Interpolation (IDW)</strong>, and <strong>Kriging</strong>. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember that there is no interpolation method that can be applied to every situation. Some methods are more useful for particular problems or types of data. The method of interpolation you use should always depend on the type of data, phenomenon, and research question you have.</p>
+</div>
+<section id="idw-interpolation-inverse-distance-weighted">
+<h3><span class="section-number">6.1.8.1. </span>IDW Interpolation (Inverse Distance Weighted)<a class="headerlink" href="#idw-interpolation-inverse-distance-weighted" title="Link to this heading">#</a></h3>
+<p>In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point’s value influences the unknown point’s value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.</p>
+<figure class="align-default" id="idw-interpolation-explanation-mitas-mitasova-1999">
+<a class="reference internal image-reference" href="../../_images/en_idw_explanation.png"><img alt="../../_images/en_idw_explanation.png" src="../../_images/en_idw_explanation.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.16 </span><span class="caption-text">Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)</span><a class="headerlink" href="#idw-interpolation-explanation-mitas-mitasova-1999" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Keep in mind that IDW interpolation has a few <strong>disadvantages</strong>. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see <a class="reference internal" href="#/content/Module_6/en_qgis_data_analysis_theorie.md#Interpolation"><span class="xref myst">IDW interpolation example</span></a>) (adopted from the <a class="reference external" href="https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html">QGIS documentation</a>).</p>
+</section>
+<section id="spline-interpolation">
+<h3><span class="section-number">6.1.8.2. </span>Spline Interpolation<a class="headerlink" href="#spline-interpolation" title="Link to this heading">#</a></h3>
+</section>
+<section id="triangulated-irregular-network">
+<h3><span class="section-number">6.1.8.3. </span>Triangulated Irregular Network<a class="headerlink" href="#triangulated-irregular-network" title="Link to this heading">#</a></h3>
+<p>TIN interpolation is commonly called <strong>Delauny triangulation</strong>. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see <a class="reference internal" href="#tin-interpolation-example"><span class="std std-numref">Fig. 6.17</span></a>). TIN interpolation is usually used to compute <strong>digital elevation models</strong> (DEM).</p>
+<figure class="align-default" id="tin-interpolation-example">
+<a class="reference internal image-reference" href="../../_images/tin_interpolation_example.png"><img alt="../../_images/tin_interpolation_example.png" src="../../_images/tin_interpolation_example.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.17 </span><span class="caption-text">Delaunay triangulation with circumcircles around the red sample data. The resulting interpolated TIN surface created from elevation vector points is shown on the right. (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley)</span><a class="headerlink" href="#tin-interpolation-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The problem with TIN statistical surfaces is that the surfaces are not smooth and may seem jagged, since they are based on triangles of varying sizes. Furthermore, triangulation is no suited to extrapolate data beyond the area where sample points have been collected (adopted from the <a class="reference external" href="https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html">QGIS documentation</a>)</p>
+</section>
+<section id="kriging">
+<h3><span class="section-number">6.1.8.4. </span>Kriging<a class="headerlink" href="#kriging" title="Link to this heading">#</a></h3>
+<p>Kriging is a method of geostatistics used to estimate values for spatial units where the phenomenon of interest has not been measured at every spatial points. Kriging integrates covariates into the interpolation. For example, it is not only the distance to measured temperatures that influences its weighting; temperature is also influenced by the altitude of the sample point.</p>
+</section>
+</section>
+<section id="outlook">
+<h2><span class="section-number">6.1.9. </span>Outlook<a class="headerlink" href="#outlook" title="Link to this heading">#</a></h2>
+<p>There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why <strong>model building</strong> and <strong>automation</strong> are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <a class="reference internal" href="../Module_7/en_qgis_automation_theory.html"><span class="std std-doc">module 7</span></a>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/Module_6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="en_module_6_overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Data Analysis with QGIS</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="en_qgis_common_data_analysis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6.2. </span>Data Analysis in the Humanitarian Sector</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-spatial-analysis">6.1.1. Data &amp; Spatial Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-analysis">6.1.1.1. Spatial analysis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#length-surface-circumference">6.1.2. Length, Surface, Circumference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-statistics">6.1.3. Basic statistics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer-analysis">6.1.4. Buffer analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#density-map-analysis">6.1.5. Density Map Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heatmaps">6.1.5.1. Heatmaps</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-symbology-tab-to-create-a-heatmap">6.1.5.1.1. Using the symbology tab to create a heatmap</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hex-maps-hexagon-grids">6.1.5.2. Hex Maps (Hexagon Grids)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-by-joining-attributes">6.1.6. Analysis by joining attributes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pivoting-tables">6.1.6.1. Pivoting tables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-appropriate-locations-according-to-a-set-of-criteria">6.1.7. Selecting appropriate locations according to a set of criteria</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation">6.1.8. Interpolation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#idw-interpolation-inverse-distance-weighted">6.1.8.1. IDW Interpolation (Inverse Distance Weighted)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-interpolation">6.1.8.2. Spline Interpolation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triangulated-irregular-network">6.1.8.3. Triangulated Irregular Network</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kriging">6.1.8.4. Kriging</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outlook">6.1.9. Outlook</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

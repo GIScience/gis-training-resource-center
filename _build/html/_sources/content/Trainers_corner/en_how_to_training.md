@@ -1,0 +1,189 @@
+# How to plan a GIS Training
+
+__🔙[Back to Homepage](/content/intro.md)__
+
+If you are running a QGIS training course for the first time, there are several practical considerations that you need to keep in mind. this article, provides practical experience that complements the training material that can found in the platform, in addition to advice on how to plan a training session. 
+
+<!--ADD: clickable cards to jump to different sections of this article -> table with material on the website; overview of exercises-->
+
+
+
+__Before you start preparing the training schedule, there are three things to consider:__
+
+:::{card}
+__First__, it is important to consider the audience you’re targeting: Consider the professional backgrounds of the participants in your training, what practical experience they have, and what they intend to do with the knowledge they have acquired. Try to design the training content - especially the exercises - according to the participants’ background and skill level.
+:::
+
+:::{card}
+__Secondly__, it is essential to communicate as clearly as possible to avoid any misunderstandings. The more diverse the audience, the more important it is to communicate unambiguously. If you are not sure whether to add information, it is always better to state the obvious than to omit important information.
+:::
+
+:::{card}
+And __third__, prepare the training in as much detail, especially if it is your first training. With detailed planning, it is easier to keep track of things, to discuss possible alternatives and to evaluate your training after you have completed it.
+:::
+
+
+To facilitate the planning, you can use the following list as a guide:
+
+## 1. Preparation
+
+Before you plan your training, you need to make some basic decisions about the setting:
+
+- Check your audience: What is the skill level and the background of your participants? Are they flexible about training times? How long can they stay away from their job? You should plan your training according to the (practical) needs of your participants to ensure that all interested participants can attend.
+- Think about the size of the group: experience shows that 10 to 15 participants are ideal. If more people are interested in the training, consider organizing more than one training. If possible, have two trainers, so that one can present the content and the other handle administrative issues and support the participants. This is critical when the group might have varying skill and experience levels.
+- The setting: Are you planning an online or face-to-face course? Will you plan the training in half-day or full-day sessions? Will the training take place on consecutive days or spread over several weeks? These questions should be answered depending on the background and needs of the participants.
+- Trainer handover: if multiple trainers are facilitating a GIS training, consider planning some time between sessions so that a proper debrief can be done. This ensures that all facilitators are equipped with the proper information for their session and the training can have a good continuous flow.
+
+## 2. Planning
+
+ You can use the platform's modular structure and the [skill levels](https://giscience.github.io/gis-training-resource-center/content/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
+
+- Define the learning objectives in detail and communicate them at the beginning of the training. Organizing the material is easier if you know what you want to achieve. The participants need to know what they are expected to learn and where they are during the training process.
+- When planning the structure of your training, you can use the sample structure as a guide, but you can also adapt it to the specific needs of your participants. If possible, use material and exercises that are related to the participant’s background.
+- Allow time for questions and answers. Participants usually benefit most from a trainer’s support to acute problems.
+- Consider the practical setting: If you are organizing a face-to-face training, do you have a suitable room? What is available to them?
+- Finally, how do you promote your training? Can you promote it within your institution? How will you organize the enrolment process? What information do you need from your participants (background, interests, previous skills)? How do you select participants?
+
+## 3. Follow-up
+
+During and after the training, you can support the process by encouraging and facilitating further exchanges between participants and by evaluating the training.
+
+- Encourage participants to communicate and stay in touch, to exchange ideas and experiences after the training. That way, participants can support and motivate each other by sharing their experiences and successes.
+- Plan to evaluate your training. This can help you  improve your training and include the participant’s perspectives.
+- To assess the success of the training and the learning progress of the participants, conduct an assessment before and after a training. You can use the [surveys on this platform](/content/Trainers_corner/en_how_to_assessment.md) as a guide..
+
+<!---### Basic course
+
+The following table shows the content of the modules, their skill-level, as well the available exercises for these competences and the corresponding wiki articles on the platform. You can design your course by choosing the competences you want to teach. Once you have chosen the competences, take a look at the module chapters, the wiki, and the exercises. Go through each exercise by yourself, so you know the steps of the exercise and get a feeling how long the exercise takes. 
+
+:::{tip}
+Keep in mind that you don't need to follow the module structure. It is there to help you create an outline for your training. You can choose the exercises however you wish. Take a look at the relevant competences and skill levels for each exercise.
+:::
+---->
+
+
+<!-----
+````{margin}
+```{card} Competences
+- Introduction to QGIS
+- QGIS installation
+- QGIS interface
+````
+--->
+
+<!---
+:::{list-table} Platform material
+:header-rows: 1
+:widths: 15 40 40 30 
+
+*   - Module
+    - Competences
+    - Exercises
+    - Wiki articles
+*   - __Module 1:  Introduction to QGIS__
+    - 
+        Introduction to GIS  
+        QGIS installation  
+        QGIS interface  
+    - 
+        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_interface_ex1.html)
+    - 
+        [QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html)
+*   - __Module 2: Working with Geodata__
+    - 
+        Introduction to geodata (vector and raster data)  
+        Layer concept  
+        Introduction to Projections  
+        Geodata management  
+        Data import  
+        Data sources  
+        Attribute table
+    - 
+        [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html)  
+        [Exercise 2: The World](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_ex_1.html)  
+    - 
+        [Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)  
+        [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)  
+        [Basemaps](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)  
+        [Data sources](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)  
+        [Plugins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)  
+*   - __Module 3: Basic GIS operations__
+    - 
+        Digitization  
+        Geodata selection and queries  
+        Geodata classification  
+    - 
+        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation_ex.html)  
+        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_classification_exe.html)  
+        Big Exercise: 
+        [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)  
+    - 
+        [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html)  
+        [Geodata classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)  
+        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html) 
+*   - __Module 4: Representation__
+    - 
+        Graphic semiology  
+        Visual variables  
+        Styling geodata in QGIS  
+        Exporting and importing styles   
+        Print layout   
+        Map composition   
+        Atlas function
+    - 
+        [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex2.html)   
+    - 
+        [Visualization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
+        [Map making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)  
+*   - __Module 5: Intermediate GIS operations__
+    -   Spatial and non-spatial geoprocessing    
+        Clip  
+        Buffer
+        Dissolve  
+        Spatial joins  
+        Select by location
+        Attribute table functions (add, delete, calculate field, statistics)
+        Query builder
+        Non-spatial queries
+        Non-spatial joins  
+    - Spatial Geoprocessing:  
+        [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex1.html)  
+        [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex2.html)  
+    Non-spatial geodataprocessing:  
+        [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools_ex1.html)  
+        [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools_ex2.html)  
+    Big exercise:  
+        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_modul_5_ex2.html)  
+    - 
+        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html)  
+        [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html)  
+        [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)  
+
+:::
+
+-->
+
+<!--FIXME: Add/update exercises in the table-->
+
+<!--ADD: Section with Grid-cards with short overview of each exercise-->
+
+
+<!---### Advanced course
+
+| Module | Competences | Exercises | Wiki articles |
+| ------------ | ------------ | -------------- | -------------- |
+| Module 6:  | | --- | --- |
+| Module 7:  | --- | --- | --- |
+| Module 8:  | --- | --- | --- |
+| Module 9:  | --- | --- | --- |
+
+### Special courses
+
+| Module | Competences | Exercises | Wiki articles |
+| ------------ | ------------ | -------------- | -------------- |
+| Module 6: Introduction to QGIS | | --- | --- |
+| Module 7: Working with Geodata | --- | --- | --- |
+| Module 8: Basic GIS operations | --- | --- | --- |
+| Module 9: Representation | --- | --- | --- |
+
+--->

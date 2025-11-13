@@ -1,0 +1,2080 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Workflow de déclenchement en QGIS pour Madagascar &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/GIS_AA/fr_qgis_cyclone_trigger_madagascar';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QGIS Trigger Workflow for Somalia" href="en_qgis_drought_trigger_somalia.html" />
+    <link rel="prev" title="QGIS Trigger Workflow for Madagascar" href="en_qgis_cyclone_trigger_madagascar.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Workflow de déclenchement en QGIS pour Madagascar</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Workflow de déclenchement en QGIS pour Madagascar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexte">Contexte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-de-declenchement">Déclaration de déclenchement</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnalite-du-flux-de-travail">Fonctionnalité du flux de travail</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-fixes">Données fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-de-monitoring">Données de monitoring</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">Estimation de l’impact du cyclone à l’aide du modèle QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement-du-modele">Fonctionnement du modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-executer-le-modele">Comment exécuter le modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etape-1-explication-de-la-structure-des-fichiers">Étape 1 : Explication de la structure des fichiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-le-modele-dans-qgis">Ouvrir le modèle dans QGIS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-3-executez-le-modele">Étappe 3: Exécutez le modèle</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte">Création des cartes à l’aide des modèles de carte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">Visualisation et mise en forme des résultats du modèle et création de la carte imprimée</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-stylisation-des-couches">Carte 1: Stylisation des couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-creation-de-la-mise-en-page">Carte 1: Création de la mise en page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-exporter-la-carte">Carte 1: Exporter la carte</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-evaluation-de-l-impact-population-exposee-et-infrastructures-critiques">Carte 2: Évaluation de l’impact: population exposée et infrastructures critiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-stylisation-des-couches">Carte 2: Stylisation des couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-creation-de-la-mise-en-page">Carte 2: Création de la mise en page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-exporter-la-carte">Carte 2: Exporter la carte</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utilisation-des-isochrones-d-entrepot">Utilisation des isochrones d’entrepôt</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-historique-des-impacts-des-cyclones">Analyse historique des impacts des cyclones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-des-donnees-historiques-sur-les-trajectoires-des-tempetes">Téléchargement des données historiques sur les trajectoires des tempêtes</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="workflow-de-declenchement-en-qgis-pour-madagascar">
+<h1>Workflow de déclenchement en QGIS pour Madagascar<a class="headerlink" href="#workflow-de-declenchement-en-qgis-pour-madagascar" title="Link to this heading">#</a></h1>
+<p>Le workflow QGIS présenté dans cet article a été développé dans le cadre du projet “Anticipatory-Action” (AA) (action anticipative) de la Croix-Rouge malgache (CRM), de la Croix-Rouge allemande (GRC) et de l’institut de Heidelberg pour les technologies de géoinformation (HeiGIT).</p>
+<p>Le workflow est presque entièrement automatisé grâce à un modèle QGIS et ne nécessite aucune intervention manuelle. Le chapitre “Fonctionnalité du workflow” décrit le processus et l’application pratique.
+Chaque étape inclut dans le modèle est expliquée en détail afin de permettre une compréhension complète du workflow et de la manière dont l’analyse a été réalisée.</p>
+<div class="admonition-telecharger-les-fichiers-et-donnees admonition">
+<p class="admonition-title">Télécharger les fichiers et données</p>
+<p>Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour le modèle peuvent être téléchargés depuis le GitLab de HeiGIT ici:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-2 sd-border-1 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Télécharger le projet</strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip"><span>https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip</span></a></div>
+</div>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Link to this heading">#</a></h2>
+<p>La définition de déclencheurs est l’un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu’une Société Nationale puisse bénéficier d’un financement automatique pour ses actions précoces, son protocole d’action précoce doit définir clairement où et quand les fonds seront alloués et l’aide fournie. Dans le cadre de l’AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées “déclencheurs”, basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir <a class="reference external" href="https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/">FbF Manual</a>).</p>
+</section>
+<section id="declaration-de-declenchement">
+<h2>Déclaration de déclenchement<a class="headerlink" href="#declaration-de-declenchement" title="Link to this heading">#</a></h2>
+<p><strong>Déclencheur préalable à l’activation:</strong> au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l’ECMWF prévoit une probabilité supérieure à 50% qu’un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.</p>
+<p><strong>Déclencheur d’activation:</strong> si les prévisions de Météo Madagascar (DGM) indiquent l’arrivée d’un cyclone tropical avec des vents dépassant 118 km/h dans les 48 à 72 heures à venir.</p>
+<!--# Téléchargement du rapport
+
+ This section will include information on how to download the final report as soon as its published -->
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fonctionnalite-du-flux-de-travail">
+<h1>Fonctionnalité du flux de travail<a class="headerlink" href="#fonctionnalite-du-flux-de-travail" title="Link to this heading">#</a></h1>
+<p>Le concept de processus déclencheur est illustré dans la figure ci-dessous.</p>
+<figure class="align-center" id="fig-trigger-concept">
+<a class="reference internal image-reference" href="../../_images/MAD_model_concept.png"><img alt="../../_images/MAD_model_concept.png" src="../../_images/MAD_model_concept.png" style="width: 1000px;" />
+</a>
+</figure>
+<!--do we need french alternative text describing the figure?-->
+<p>Le projet QGIS présenté contient les couches nécessaires et un fichier modèle QGIS permettant d’évaluer l’impact potentiel du cyclone prévu. Le processus d’analyse sera exécuté dans le modèle QGIS, qui automatise les étapes d’évaluation de l’impact d’un cyclone tropical. Il intègre les données relatives à la trajectoire du cyclone avec les frontières administratives, les données démographiques, les infrastructures et les positions des services afin d’identifier et de quantifier les zones et les ressources exposées.
+Sur la base des prévisions cycloniques de Météo Madagascar, le modèle calcule la zone susceptible d’être exposée au cyclone, la population potentiellement exposée, le nombre de bâtiments exposés, les terres agricoles exposées et les établissements de santé et d’enseignement potentiellement exposés.</p>
+<p>De plus, le fichier QGIS contient des couches représentant les entrepôts CRM et les zones qu’ils peuvent couvrir, ce qui permet d’évaluer rapidement leur accessibilité. Le dossier fourni contient également des modèles de carte et des fichiers de style permettant de générer des rapports cartographiques basés sur les calculs du modèle.</p>
+<p>La documentation est divisée en deux parties. La première partie traite de l’analyse spatiale à l’aide du modèle QGIS automatisé. La deuxième partie explique comment créer des rapports cartographiques à l’aide des modèles de carte et des fichiers de style.</p>
+<!--Insert image of report?-->
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Le projet et le modèle ont été créés à l’aide de la version 3.40.9 (LTR) Bratislava de QGIS. Afin de garantir le bon fonctionnement du modèle, n’utilisez pas de versions antérieures de QGIS.</p>
+</div>
+<section id="donnees-disponibles">
+<h2>Données disponibles<a class="headerlink" href="#donnees-disponibles" title="Link to this heading">#</a></h2>
+<p>Pour que le mécanisme de déclenchement fonctionne correctement, nous utilisons actuellement différents ensembles de données: des données que nous supposons statiques à court terme et des données variables qui décrivent les ensembles de données qui seront vérifiés régulièrement pour déclencher le mécanisme en fonction de la survenue d’événements cycloniques anticipés.</p>
+<div class="admonition-telecharger-les-fichiers-et-donnees admonition">
+<p class="admonition-title">Télécharger les fichiers et données</p>
+<p>Le fichier de projet QGIS, le modèle et les jeux de données nécessaires pour le modèle peuvent être téléchargés depuis le GitLab de HeiGIT ici:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-2 sd-border-1 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Télécharger le projet</strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip"><span>https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip</span></a></div>
+</div>
+<section id="donnees-fixes">
+<h3>Données fixes<a class="headerlink" href="#donnees-fixes" title="Link to this heading">#</a></h3>
+<p>Par données fixes, nous entendons les ensembles de données nécessaires à la création des rapports cartographiques, qui ne sont pas susceptibles de changer à court terme. À long terme, ces ensembles de données peuvent être facilement adaptés.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ensemble de données</p></th>
+<th class="head"><p>Source</p></th>
+<th class="head"><p>Descriptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Limites administratives</p></td>
+<td><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-mdg">HDX</a></p></td>
+<td><p>Les limites administratives de niveau 0 à 4 pour Madagascar sont accessibles via HDX fourni par OCHA. Pour ce mécanisme de déclenchement, nous fournissons les limites administratives de niveau 1 (niveau régional) et 2 (niveau district) sous forme de fichier shapefile.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nombre de Point d’intérêt (POI)</p></td>
+<td><p><a class="reference external" href="https://export.hotosm.org/vi/v3/exports/new/describe">HOT Export Tool</a></p></td>
+<td><p>Les données POI (établissements scolaires et sites de santé) sont téléchargées à l’aide de l’outil HOT Export Tool basé sur les données OpenStreetMap.</p></td>
+</tr>
+<tr class="row-even"><td><p>Entrepôts CRM</p></td>
+<td><p>Croix-Rouge Malagasy</p></td>
+<td><p>Cette couche contient des points représentant les emplacements des entrepôts CRM.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Isochrones des entrepôts CRM</p></td>
+<td><p>HeiGIT</p></td>
+<td><p>À l’aide de la <a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_friction_surface_2019#bands">surface de friction globale</a>, nous avons calculé la zone pouvant être atteinte en un temps donné en voiture à partir d’un entrepôt donné.</p></td>
+</tr>
+<tr class="row-even"><td><p>Chiffres de population</p></td>
+<td><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=49646">WorldPop</a></p></td>
+<td><p>L’ensemble de données WorldPop au format raster fournit une estimation du nombre total d’habitants par cellule de grille pour l’année 2020. Nous travaillerons avec l’ensemble de données <code class="docutils literal notranslate"><span class="pre">Constrained</span> <span class="pre">Individual</span> <span class="pre">countries</span> <span class="pre">2020</span></code> à une résolution de 100 m.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nombre de bâtiments</p></td>
+<td><p><a class="reference external" href="https://gee-community-catalog.org/projects/msbuildings/">Global ML Building Footprints</a></p></td>
+<td><p>L’ensemble de données sur le nombre de bâtiments au format raster compte le nombre de bâtiments par cellule de grille de 100 m. Le processus de création de cet ensemble de données est disponible sur <a class="reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar">GitLab</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Couverture terrestre</p></td>
+<td><p><a class="reference external" href="https://land.copernicus.eu/en/products/global-dynamic-land-cover/copernicus-global-land-service-land-cover-100m-collection-3-epoch-2019-globe"> Copernicus Land Cover</a></p></td>
+<td><p>L’ensemble de données sur la couverture terrestre au format raster fournit une vue d’ensemble du type de couverture terrestre dominant avec une résolution de 100 m. Le processus de téléchargement de cet ensemble de données est disponible sur <a class="reference external" href="https://gitlab.heigit.org/giscience/disaster-tools/fbf/aa_madagascar">GitLab</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Raster Principal</p>
+<p>Les trois ensembles de données raster sont combinés en un <strong>raster principal</strong>, une couche raster multibande avec une résolution spatiale de 100 mètres. Cette couche composite comprend les informations suivantes sur trois canaux :</p>
+<ol class="arabic simple">
+<li><p>Nombre d’habitants par cellule de grille d’après Worldpop constrained (2020)</p></li>
+<li><p>Nombre de bâtiments par cellule de grille d’après ML Building Footprints (2021)</p></li>
+<li><p>Type de couverture terrestre par cellule de grille d’après Copernicus Land Cover (2019)</p></li>
+</ol>
+</div>
+</section>
+<section id="donnees-de-monitoring">
+<h3>Données de monitoring<a class="headerlink" href="#donnees-de-monitoring" title="Link to this heading">#</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Attention</p>
+<p>Les informations prévisionnelles proviendront du DGM (Météo Madagascar), qui fournira les données de trajectoire des cyclones tropicaux pour le workflow de déclenchement.</p>
+</div>
+<p>Pour analyser les événements passés, il est possible d’utiliser les données fournies par la NOAA (National Centers for Environmental Information). Les trajectoires des cyclones sont fournies dans le cadre du projet <a class="reference external" href="https://www.ncei.noaa.gov/products/international-best-track-archive">International Best Track Archive for Climate Stewardship (IBTrACS)</a>. Il s’agit de la collection mondiale la plus complète sur les cyclones tropicaux disponible à ce jour. Elle regroupe les données récentes et historiques sur les cyclones tropicaux provenant de plusieurs agences afin de créer un ensemble de données unifié, accessible au public et représentant les meilleures trajectoires. L’IBTrACS a été développé en collaboration avec tous les centres météorologiques régionaux spécialisés de l’Organisation météorologique mondiale (World Meteorological Organization (WMO)), ainsi qu’avec d’autres organisations et individus du monde entier.</p>
+<div class="hint admonition">
+<p class="admonition-title">Trajectoires des cyclones</p>
+<p>Les données relatives aux trajectoires des cyclones tropicaux sont disponibles sous forme de différents sous-ensembles, en fonction de l’échelle temporelle qui vous intéresse. Des sous-ensembles régionaux peuvent également être générés, les données relatives à l’<strong>océan Indien sud</strong> étant particulièrement importantes pour ce mécanisme de déclenchement.</p>
+</div>
+</section>
+</section>
+<section id="estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">
+<h2>Estimation de l’impact du cyclone à l’aide du modèle QGIS<a class="headerlink" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis" title="Link to this heading">#</a></h2>
+<p>Comme expliqué au début de ce chapitre, le workflow déclencheur développé est exécuté automatiquement par un modèle QGIS. Dans ce chapitre, nous expliquerons son fonctionnement et, dans une étape ultérieure, nous expliquerons comment exécuter le modèle automatisé.</p>
+<section id="fonctionnement-du-modele">
+<h3>Fonctionnement du modèle<a class="headerlink" href="#fonctionnement-du-modele" title="Link to this heading">#</a></h3>
+<!-- Have a final look over this section to see if all the important information is covered -->
+<p>Les étapes clés suivantes sont exécutées dans le modèle :</p>
+<ol class="arabic simple">
+<li><p>Mise en mémoire tampon du cyclone et extraction de la zone d’impact</p>
+<ul class="simple">
+<li><p>La trajectoire du cyclone est mise en mémoire tampon afin de créer une zone d’impact estimée. La mémoire tampon est dissoute pour générer un polygone unique représentant la zone exposée au cyclone. Cette couche sert de base pour les calculs d’exposition ultérieurs.</p></li>
+</ul>
+</li>
+<li><p>Unités administratives exposées</p>
+<ul class="simple">
+<li><p>La zone tampon du cyclone est recoupée avec les limites des districts (niveau Admin 2) afin d’extraire les districts exposés. Ceux-ci sont ensuite reliés aux régions (niveau Admin 1) à l’aide de la région (niveau Admin 1) afin de créer des zones de risque.</p></li>
+</ul>
+</li>
+<li><p>Effet sur la population</p>
+<ul class="simple">
+<li><p>Le modèle utilise le raster de population pour calculer les statistiques zonales sur les districts exposés. Cela permet de déterminer la population totale par district et la population exposée, qui sont ensuite exportées vers un tableau.</p></li>
+</ul>
+</li>
+<li><p>Effet sur les infrastructures</p>
+<ul class="simple">
+<li><p>La zone tampon du cyclone est croisée avec:</p>
+<ul>
+<li><p>Les bâtiments pour extraire les bâtiments exposés.</p></li>
+<li><p>Les couches des sites de santé et des établissements d’enseignement pour extraire et résumer les points d’intérêt exposés.</p></li>
+<li><p>Les terres agricoles pour estimer l’effet sur l’agriculture.
+Ces ensembles de données sont combinés dans un tableau qui résume les infrastructures exposées.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<!---5. Warehouse Accessibility
+    * Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.
+5. Accessibilité des entrepôts
+   * Les entrepôts sont filtrés en fonction de leur proximité avec les régions exposées. Le modèle utilise des données routières et des filtres spatiaux pour déterminer les entrepôts accessibles pertinents pour l'intervention.
+-->
+</section>
+<section id="comment-executer-le-modele">
+<h3>Comment exécuter le modèle<a class="headerlink" href="#comment-executer-le-modele" title="Link to this heading">#</a></h3>
+<p>Le <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer">QGIS Model Designer</a> est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L’utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.</p>
+</section>
+<section id="etape-1-explication-de-la-structure-des-fichiers">
+<h3>Étape 1 : Explication de la structure des fichiers<a class="headerlink" href="#etape-1-explication-de-la-structure-des-fichiers" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step1.png"><img alt="../../_images/MAD_Trigger_workflow_Step1.png" src="../../_images/MAD_Trigger_workflow_Step1.png" style="width: 1000px;" />
+</a>
+</figure>
+<p><strong>Objectif :</strong> Cette étape décrit la structure de dossiers recommandée pour simplifier l’analyse et garantir des résultats cohérents et reproductibles.</p>
+<p><strong>Outil :</strong> Aucun outil ou programme particulier n’est nécessaire.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 28.6%" />
+<col style="width: 71.4%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Instructions</p></th>
+<th class="head"><p>Structure du répertoire</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Ouvrez le dossier “AA_Cyclone_Monitoring_Trigger_MAD”.</p></li>
+<li><p>Les données d’entrée se trouvent dans le dossier “fixed_input_data”.</p></li>
+<li><p>Le modèle QGIS se trouve dans le dossier “trigger_model” folder.</p></li>
+<li><p>Les ressources pour la mise en forme et la création de cartes se trouvent dans:</p>
+<ul class="simple">
+<li><p>layer_styles – symbologie prédéfinie des couches</p></li>
+<li><p>logos_pictures – logos et éléments visuels</p></li>
+<li><p>map_templates – modèles pour la mise en page finale des cartes</p></li>
+<li><p>example_map_results – exemples de résultats pour s’orienter</p></li>
+<li><p>Sauvegardez vos propres résultats dans le dossier “map_outputs”.</p></li>
+</ul>
+</li>
+<li><p>Pour lancer le processus, ouvrez le fichier de projet QGIS “AA_Cyclone_Monitoring_Trigger_MAD.qgz” en double-cliquant dessus. Cela lancera le processus d’analyse complet.</p></li>
+</ol>
+</td>
+<td><figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_trigger_Folder_Structure_MAD_Trigger.png"><img alt="../../_images/MAD_trigger_Folder_Structure_MAD_Trigger.png" src="../../_images/MAD_trigger_Folder_Structure_MAD_Trigger.png" style="width: 450px;" />
+</a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">
+<h3>Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS<a class="headerlink" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step2.png"><img alt="../../_images/MAD_Trigger_workflow_Step2.png" src="../../_images/MAD_Trigger_workflow_Step2.png" style="width: 1000px;" />
+</a>
+</figure>
+<p><strong>Objectif:</strong> Dans cette étape, nous allons ouvrir notre projet de déclenchement dans QGIS et charger le modèle QGIS qui exécutera automatiquement l’analyse pour nous.</p>
+<p><strong>Outils:</strong> QGIS</p>
+<ol class="arabic simple">
+<li><p>Ouvrez le fichier <code class="docutils literal notranslate"><span class="pre">AA_Cyclone_Monitoring_Trigger_MAD.qgz</span></code> en double-cliquant dessus.</p></li>
+<li><p>Le projet QGIS s’ouvrira avec de nombreuses données préchargées. Ces données sont nécessaires pour exécuter le modèle QGIS et créer certaines cartes de résultats.</p></li>
+</ol>
+<p>Les données seront structurées en cinq groupes:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_trigger_QGIS_project_structure.PNG"><img alt="../../_images/MAD_trigger_QGIS_project_structure.PNG" src="../../_images/MAD_trigger_QGIS_project_structure.PNG" style="width: 500px;" />
+</a>
+</figure>
+<p><strong>Groupe 1: Données d’entrée fixes (Fixed_Input_data)</strong></p>
+<p>Ce groupe contient toutes les <strong>données d’entrée fixes</strong> nécessaires au bon fonctionnement du modèle. Ces ensembles de données restent constants et ne changent pas d’un événement à l’autre. La seule donnée supplémentaire nécessaire est la <strong>trajectoire de la tempête</strong> pour l’événement étudié, qui doit être ajoutée <strong>avant</strong> ce groupe de données dans le panneau des couches.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Assurez-vous toujours d’utiliser la <strong>trajectoire de tempête la plus récente</strong> pour l’événement analysé. Pour ajouter la couche, il suffit de la glisser-déposer dans le panneau Couches, en la plaçant directement au-dessus du groupe <strong>Fixed_Input_data</strong> pour plus de clarté.</p>
+<p>Pour une meilleure gestion des données, donnez à la trajectoire de la tempête un nom descriptif, tel que <code class="docutils literal notranslate"><span class="pre">trajectoire_tempete_nom-événement_année</span></code> (par exemple, trajectoire_tempete_freddy_2023). Cette convention de nommage vous aide à organiser votre espace de travail et garantit que les données correctes sont utilisées pendant l’analyse.</p>
+</div>
+<p><strong>Groupe 2: Résultats du modèle (Model_outputs)</strong></p>
+<p>Ce groupe sert à organiser toutes les <strong>couches de sortie générées par le modèle</strong> après son exécution. Vous pouvez examiner les sorties ici et identifier les couches nécessaires pour des cartes spécifiques. Une fois identifiées, déplacez-les vers le groupe de cartes approprié pour la visualisation et la mise en page.</p>
+<p><strong>Groupe 3: Carte Aperçu de l’impact du cyclone (Map_Cyclone_Impact_Overview)</strong></p>
+<p>Ce groupe comprend toutes les couches nécessaires à la création de la <strong>carte générale de l’impact du cyclone</strong> (illustrée ci-dessous). La trajectoire de la tempête et les limites de la région (Admin1) (<code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code>) sont préchargées pour vous aider à démarrer rapidement.
+Assurez-vous que vous travaillez avec la <strong>trajectoire correcte et mise à jour</strong> de la tempête pour l’événement étudié.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 67 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 3.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Groupe 4: Carte d’évaluation de l’impact du cyclone (Map_Cyclone_Impact_Assessment)</strong></p>
+<p>Ce groupe contient toutes les couches nécessaires pour générer des <strong>cartes détaillées d’évaluation d’impact</strong>. Comme pour la carte générale, la trajectoire de la tempête et les limites de la région (niveau Admin 1) sont préchargées.
+Assurez-vous d’utiliser les données d’événement correctes afin de garantir la cohérence et la précision de l’évaluation. Dans cette section, nous pouvons créer 5 cartes différentes pour différents impacts:</p>
+<ul class="simple">
+<li><p>population exposée</p></li>
+<li><p>bâtiments exposés</p></li>
+<li><p>établissements scolaires exposés</p></li>
+<li><p>établissements de santé exposés</p></li>
+<li><p>terres agricoles exposées</p></li>
+</ul>
+<p>Les résultats finaux de la carte ressembleront à ce qui suit.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 68 </span><span class="caption-text">Cette carte sera créée à l’aide des couches du groupe 4.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<!--EDIT: ADD THE CORRECT PICTURE FOR THIS MAP-->
+<p><strong>Groupe 5: Isochrones de l’entrepôt CRM (CRM_Warehouse_Isochrones)</strong></p>
+<p>Ce groupe comprend les isochrones pour tous les entrepôts, calculées pour des intervalles de temps allant jusqu’à 24 heures. Ces couches sont utiles pour évaluer l’accessibilité des sites dans le cadre de la planification des interventions d’urgence. Ce groupe est utilisé pour créer la carte matrice d’accessibilité des entrepôts CRM. Il est également possible d’ajouter une isochrone spécifique à l’un des entrepôts précédents. Nous y reviendrons plus bas.</p>
+<!--ADD: Map showing the isochrones-->
+<hr class="docutils" />
+<section id="ouvrir-le-modele-dans-qgis">
+<h4>Ouvrir le modèle dans QGIS<a class="headerlink" href="#ouvrir-le-modele-dans-qgis" title="Link to this heading">#</a></h4>
+<p>Nous allons ouvrir le modèle QGIS :</p>
+<ol class="arabic simple">
+<li><p>Dans la barre du haut de votre fenêtre QGIS, naviguez vers <code class="docutils literal notranslate"><span class="pre">Traîtement</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Modeleur</span></code>. Une nouvelle fenêtre s’ouvrira. Il s’agit du concepteur de modèles.</p></li>
+<li><p>Dans le panneau du haut, cliquez sur <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Ouvrir</span> <span class="pre">le</span> <span class="pre">Modèle</span></code> et naviguez jusqu’à votre dossier “AA_Cyclone_Monitoring_Trigger_MAD/trigger_model”.</p></li>
+<li><p>Sélectionnez “Cyclones_EAP_MAD_Trigger.model3” et cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>. Le modèle s’ouvrira et vous verrez des boîtes jaunes, blanches, vertes et grises.</p></li>
+</ol>
+<!--ADD PICTURE
+-->
+<figure class="align-default" id="fr-qgis-ouvrir-modeleur">
+<a class="reference internal image-reference" href="../../_images/fr_qgis_3.44_opening_model_builder.png"><img alt="../../_images/fr_qgis_3.44_opening_model_builder.png" src="../../_images/fr_qgis_3.44_opening_model_builder.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 69 </span><span class="caption-text">Ouvrir le modélisateur graphique dans QGIS 3.44</span><a class="headerlink" href="#fr-qgis-ouvrir-modeleur" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Boîte</p></th>
+<th class="head"><p>Signification</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jaune</p></td>
+<td><p>Entrée du modèle</p></td>
+<td><p>Définition des données d’entrée pour le modèle sur lequel le modèle va fonctionner.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Blanc</p></td>
+<td><p>Algorithmes</p></td>
+<td><p>Les algorithmes ou outils sont des étapes de géotraitement spécifiques qui effectuent des tâches spécifiques, telles que le découpage, la reprojection ou la création de zones tampons.</p></td>
+</tr>
+<tr class="row-even"><td><p>Vert</p></td>
+<td><p>Sortie du modèle</p></td>
+<td><p>Les résultats créés par le modèle (couches de sortie) sont automatiquement ajoutés à votre panneau de couches dans l’interface de votre projet QGIS.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gris</p></td>
+<td><p>Commentaires</p></td>
+<td><p>Les boîtes sont utilisées pour expliquer plus en détail les processus spécifiques.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Do we need a video here? -->
+</section>
+</section>
+<section id="etappe-3-executez-le-modele">
+<h3>Étappe 3: Exécutez le modèle<a class="headerlink" href="#etappe-3-executez-le-modele" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_workflow_Step3.png"><img alt="../../_images/MAD_Trigger_workflow_Step3.png" src="../../_images/MAD_Trigger_workflow_Step3.png" style="width: 1000px;" />
+</a>
+</figure>
+<p><strong>Objectif:</strong> Dans cette étappe, nous allons exécuter le modèle pour calculer les données necéssaires pour créer une carte.</p>
+<p><strong>Outils:</strong> Modeleur de QGIS</p>
+<p><strong>Entrées et sorties du modèle:</strong></p>
+<ol class="arabic simple">
+<li><p>Un modèle QGIS peut être exécuté en naviguant vers la barre du haut &gt; <code class="docutils literal notranslate"><span class="pre">Modèle</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Exécuter</span> <span class="pre">le</span> <span class="pre">modèle</span></code> ou en cliquant sur l’icône <img alt="" src="fig/Module_7/qgis_3.44_run_model.png" />.</p></li>
+<li><p>Une nouvelle fenêtre s’ouvrira. Vous devrez y définir les entrées et les sorties du modèle. Pour chacune de ces entrées obligatoires, cliquez sur la flèche déroulante et sélectionnez le fichier correspondant.</p></li>
+</ol>
+<figure class="align-default" id="fr-qgis-executer-modele">
+<a class="reference internal image-reference" href="../../_images/fr_qgis_3.44_executer_modele.png"><img alt="../../_images/fr_qgis_3.44_executer_modele.png" src="../../_images/fr_qgis_3.44_executer_modele.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 70 </span><span class="caption-text">Sélectionner les entrées et définir les sorties avant d’exécuter le modèle.</span><a class="headerlink" href="#fr-qgis-executer-modele" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dans la liste déroulante, seules les couches actuellement chargées dans votre projet QGIS seront affichées.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="3">
+<li><p>Pour exécuter le modèle, sélectionnez les 5 couches d’entrée suivantes:</p>
+<ol class="arabic simple">
+<li><p>ADM1 = <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm1_BNGRC_OCHA_20181031</span></code></p></li>
+<li><p>ADM2 &amp; Risk = <code class="docutils literal notranslate"><span class="pre">mdg_adm2_risk</span> <span class="pre">-</span> <span class="pre">mad_adm2_risk</span></code></p></li>
+<li><p>Cyclone_monitoring_data = <code class="docutils literal notranslate"><span class="pre">cyclone</span> <span class="pre">track</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">event</span></code></p></li>
+<li><p>Madagascar_Health_and_Education_Facilities = <code class="docutils literal notranslate"><span class="pre">Madagascar_Health_and_Education_Facilities</span></code></p></li>
+<li><p>Master Raster = <code class="docutils literal notranslate"><span class="pre">MAD_pop_constrained_buildings_landcover</span></code></p></li>
+</ol>
+</li>
+</ol>
+<!-- Names should be the final ones. They are given after the last model from Elias -->
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Si vous ne spécifiez pas l’emplacement où sauvegarder les fichiers de sortie, les sorties seront chargées en tant que <strong>couches temporaires</strong> après l’exécution du modèle et <strong>disparaîtront même après la sauvegarde du fichier de projet</strong>.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="4">
+<li><p>Plus bas, vous devez spécifier où sauvegarder les sorties. Pour chaque sortie, cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" /> &gt; <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">dans</span> <span class="pre">un</span> <span class="pre">Geopackage...</span></code>. Une fenêtre de l’explorateur de fichiers s’ouvrira. Naviguez jusqu’au dossier <code class="docutils literal notranslate"><span class="pre">.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/</span></code> et donnez-lui <strong>le nom de la couche de sortie et la date</strong> (AAAAMMJJ).</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area_AAAAMMJJ</span></code>, par exemple, <code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area_20250805</span></code></p></li>
+<li><p>Une des sorties s’appelle <code class="docutils literal notranslate"><span class="pre">Spreadsheet_Exposed_District</span></code> pour laquelle le modèle produira un fichier <code class="docutils literal notranslate"><span class="pre">.csv</span></code>. Pour cette couche, choisissez <code class="docutils literal notranslate"><span class="pre">Enregistrer</span> <span class="pre">vers</span> <span class="pre">un</span> <span class="pre">fichier...</span></code>, naviguez jusqu’au dossier <code class="docutils literal notranslate"><span class="pre">.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/</span></code> et donnez-lui le nom <code class="docutils literal notranslate"><span class="pre">Spreadsheet_Exposed_Districts_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Education_Facilities_points_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Health_Facilities_points_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Regions_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Districts_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Population_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Buildings_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Agricultural_Landcover_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Education_Facilities_AAAAMMJJ</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Health_Facilities_AAAAMMJJ</span></code></p></li>
+</ol>
+</li>
+<li><p>Une fois que vous avez défini les noms et les emplacements de sauvegarde des couches de sortie, cliquez sur <code class="docutils literal notranslate"><span class="pre">Exécuter</span></code> to execute the model. pour exécuter le modèle. Les couches de résultats de sortie seront automatiquement ajoutées à la fenêtre principale de QGIS une fois le processus terminé. Quand le processus a terminé, vous pouvez fermer la fenêtre <code class="docutils literal notranslate"><span class="pre">Modeleur</span></code>.</p></li>
+<li><p>Vous verrez de nouveaux couches ajoutés à la zone de travail de la carte et au panneau des couches (en bas à gauche). Déplacez les nouveaux couches vers le groupe “Model_Outputs”.</p></li>
+</ol>
+<figure class="align-default" id="mdg-model-output-canvas">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_model_outputs_canvas.png"><img alt="../../_images/mdg_aa_model_outputs_canvas.png" src="../../_images/mdg_aa_model_outputs_canvas.png" style="width: 700px;" />
+</a>
+</figure>
+<!-- Do we need a video here to show how to run the model? -->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Vidéo: Modèle d’entrée et de sortie</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video></p>
+</div>
+</details><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Résultats</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Nous avons toutes les couches nécessaires pour créer les cartes individuelles. La section suivante explique comment utiliser les couches prédéfinies et calculées pour créer les cartes à l’aide des modèles de carte et des fichiers de style de couche.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="creation-des-cartes-a-l-aide-des-modeles-de-carte">
+<h2>Création des cartes à l’aide des modèles de carte<a class="headerlink" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte" title="Link to this heading">#</a></h2>
+<section id="visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">
+<h3>Visualisation et mise en forme des résultats du modèle et création de la carte imprimée<a class="headerlink" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee" title="Link to this heading">#</a></h3>
+<!-- Is a video necessary for this chapter? -->
+<div class="note admonition">
+<p class="admonition-title">Cartes de résultats</p>
+<p>Nous générerons deux types de cartes différents pour faciliter l’analyse :</p>
+<ul class="simple">
+<li><p>La carte 1 donnera un aperçu de l’impact du cyclone sur les <strong>districts touchés, la gravité du cyclone et l’emplacement des entrepôts concernés</strong>.</p></li>
+<li><p>La carte 2 se concentrera sur l’impact sur les infrastructures et la population. Nous créerons 5 cartes d’impact différentes affichant les informations suivantes:</p>
+<ul>
+<li><p><strong>population exposée</strong></p></li>
+<li><p><strong>bâtiments exposés</strong></p></li>
+<li><p><strong>sites de santé exposés</strong></p></li>
+<li><p><strong>établissements scolaires exposés</strong></p></li>
+<li><p><strong>couverture agricole exposée</strong></p></li>
+</ul>
+</li>
+</ul>
+<!---De plus, une carte indiquant les **isochrones des entrepôts** pour les 13 entrepôts sera fournie. La carte et le modèle de carte se trouvent dans le dossier **warehouse_isochrone_matrix**.--->
+</div>
+<p>Nous allons créer les cartes en deux étapes:
+Tout d’abord, nous allons utiliser le <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel">layer styling panel (panneau de style des couches)</a></strong> et le <strong>layer style files (fichiers de style des couches) (.qml)</strong> pour ajuster la visualisation des couches sur le canevas de la carte.</p>
+<p>La deuxième étape consiste à utiliser le <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout">print layout composer</a></strong> pour créer des cartes imprimables avec des tableaux de données supplémentaires.</p>
+<!---
+
+```{figure} /fig/MAD_Trigger_workflow_Step4a.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+
+```{figure} /fig/MAD_Trigger_workflow_Step4b.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
+</section>
+<section id="carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">
+<h3>Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts<a class="headerlink" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" />
+</a>
+</figure>
+<p>Couches nécessaires pour cette carte:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_Warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> déjà chargée et stylisée dans QGIS</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code></p></li>
+</ul>
+<p><strong>Faites un clic droit sur chacun des couches et sélectionnez <code class="docutils literal notranslate"><span class="pre">Dupliquer</span> <span class="pre">la</span> <span class="pre">couche</span></code>. Déplacez la copie vers le groupe “Map_Cyclone_Impact_Overview”.</strong></p>
+<p>Les couches devraient être disposées comme indiqué dans la figure ci-dessous.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_overview_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_overview_map.PNG" src="../../_images/MAD_Trigger_layer_order_overview_map.PNG" style="width: 300px;" />
+</a>
+</figure>
+<section id="carte-1-stylisation-des-couches">
+<h4>Carte 1: Stylisation des couches<a class="headerlink" href="#carte-1-stylisation-des-couches" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Faites un clic droit sur la couche exposed_districts -&gt; <code class="docutils literal notranslate"><span class="pre">Propriétés</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbologie</span></code></p></li>
+<li><p>Dans le coin inférieur gauche, cliquez sur <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Charger</span> <span class="pre">le</span> <span class="pre">style</span></code></p></li>
+<li><p>Dans la nouvelle fenêtre, cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" />. Naviguez jusqu’au dossier “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” et sélectionnez le fichier <strong>“exposed_districts_style.qml”</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>. Cliquez ensuite sur <code class="docutils literal notranslate"><span class="pre">Charger</span> <span class="pre">le</span> <span class="pre">style</span></code></p></li>
+<li><p>De retour dans la fenêtre “Propriétés de la couche” cliquez sur <code class="docutils literal notranslate"><span class="pre">Appliquer</span></code> et <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<p>Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leurs feuilles de style correspondantes:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom de la couche</p></th>
+<th class="head"><p>Style</p></th>
+<th class="head"><p>Remarques</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
+<td><p>préchargé</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">relevant_warehouses_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
+<td><p>préchargé</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Le style de la couche <code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> n’est pas encore défini. Cliquez avec le bouton droit sur la couche <code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Propriétés</span></code> et naviguez à la section <code class="docutils literal notranslate"><span class="pre">Symbologie</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="fix-warehouse-icon">
+<a class="reference internal image-reference" href="../../_images/fr_mdg_aa_fix_warehouse_icon.png"><img alt="../../_images/fr_mdg_aa_fix_warehouse_icon.png" src="../../_images/fr_mdg_aa_fix_warehouse_icon.png" style="width: 550px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p>Sélectionnez <code class="docutils literal notranslate"><span class="pre">Remplissage</span> <span class="pre">image</span> <span class="pre">raster</span></code> puis cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" />.</p></li>
+<li><p>Dans le dossier du projet, naviguez jusqu’au sous-dossier appelé <code class="docutils literal notranslate"><span class="pre">logo_pictures</span></code>. Vous y trouverez un fichier png appelé “ngo-office”. Sélectionnez-le et cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>.</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Assurez-vous que toutes les couches de sortie sont correctement ajoutées au projet QGIS. Si certaines couches manquent, essayez de relancer le modèle ou vérifiez dans le dossier Model Outputs si les fichiers ont bien été créés.</p>
+<p>Pour conserver un espace de travail clair et organisé, regroupez les couches de sortie dans le panneau Couches sous le groupe approprié (par exemple, Map_Cyclone_Impact_Overview). Cela permet de structurer votre projet et facilite la navigation pendant le processus de création de la carte.</p>
+</div>
+</section>
+<section id="carte-1-creation-de-la-mise-en-page">
+<h4>Carte 1: Création de la mise en page<a class="headerlink" href="#carte-1-creation-de-la-mise-en-page" title="Link to this heading">#</a></h4>
+<p>Pour faciliter la visualisation, nous avons créé ces <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates">modèles de carte</a> afin de présenter les résultats de l’analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: <code class="docutils literal notranslate"><span class="pre">AA_Cyclone_Monitoring_Trigger_MAD/map_templates</span></code>. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l’aide <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout">ici</a>.</p>
+<ol class="arabic simple">
+<li><p>Désactivez tous les groupes de couches à l’exception du groupe <code class="docutils literal notranslate"><span class="pre">Map_Cyclone_Impact_Overview</span></code> et de la carte de base <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code>.</p></li>
+<li><p>Ouvrez une nouvelle mise en page en cliquant sur <code class="docutils literal notranslate"><span class="pre">Projet</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Gestionnaire</span> <span class="pre">de</span> <span class="pre">mise</span> <span class="pre">en</span> <span class="pre">page</span></code>. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d’un modèle.</p></li>
+<li><p>Nous voulons créer une nouvelle mise en page à partir d’un modèle. Cliquez sur le menu déroulant <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span> <span class="pre">vide</span></code> et sélectionnez <code class="docutils literal notranslate"><span class="pre">Spécifique</span></code>.</p></li>
+<li><p>Ci-dessous, cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" /> et naviguez jusqu’au dossier <code class="docutils literal notranslate"><span class="pre">../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/</span></code> et sélectionnez le fichier nommé <code class="docutils literal notranslate"><span class="pre">cyclone_impact_overview_map_template</span></code>. Cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>, enpuis sur <code class="docutils literal notranslate"><span class="pre">Créer</span></code>.</p></li>
+<li><p>QGIS vous demandera de nommer la nouvelle mise en page. Donnez-lui un nom tel que “Cyclone_Overview_Map_Freddy_2023”. Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code>. Une nouvelle fenêtre s’ouvrira. Il s’agit du compositeur de mise en page. Il devrait ressembler à la figure ci-dessous.</p></li>
+</ol>
+<figure class="align-default" id="overview-map-template">
+<a class="reference internal image-reference" href="../../_images/overview_map_template.png"><img alt="../../_images/overview_map_template.png" src="../../_images/overview_map_template.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 71 </span><span class="caption-text">Le compositeur de mise en page après l’ouverture du fichier modèle.</span><a class="headerlink" href="#overview-map-template" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La mise en page chargera automatiquement le canevas de la carte. Cependant, pour finaliser le rapport, nous devons ajuster et mettre à jour certains éléments de la mise en page d’impression. Par exemple, sur le côté droit de la carte, le tableau des attributs ne s’affiche pas correctement, la légende semble incorrecte et les logos du CRM et de HeiGIT s’affichent sous forme de croix rouges.</p>
+<ol class="arabic simple" start="6">
+<li><p><strong>Mettre à jour le titre de la carte</strong></p>
+<ul class="simple">
+<li><p>Cliquez sur l’élément de texte du titre en haut de la carte.</p></li>
+<li><p>Dans le panneau <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'objet</span></code> modifiez le texte <strong>Étiquette principale</strong> pour qu’il corresponde à votre événement, par exemple <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Harald</span> <span class="pre">–</span> <span class="pre">2025</span></code>.</p></li>
+<li><p>Ajustez la taille de la font ou l’alignement si nécessaire.</p></li>
+</ul>
+</li>
+<li><p><strong>Mettre à jour le tableau des attributs situé à droite de la carte</strong></p></li>
+</ol>
+<figure class="align-default" id="mdg-aa-map-1-update-attribute-table">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_map_1_update_attribute_table.png"><img alt="../../_images/mdg_aa_map_1_update_attribute_table.png" src="../../_images/mdg_aa_map_1_update_attribute_table.png" style="width: 600px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p>Sur le côté droit, il y a un tableau d’attributs qui ne s’est pas entièrement chargé. Nous voulons mettre à jour le tableau d’attributs pour afficher les districts exposés.</p></li>
+<li><p>Dans le panneau <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span></code>, sélectionne la couche <code class="docutils literal notranslate"><span class="pre">Exposed_Districts</span></code> et cliquez sur <strong>Actualiser les données du tableau</strong></p></li>
+<li><p>Cliquez sur on <code class="docutils literal notranslate"><span class="pre">Attributs...</span></code></p></li>
+<li><p>Dans la section <strong>Colonnes</strong>:</p>
+<ul>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Effacer</span></code></p></li>
+<li><p>➕ Ajoutez les colonnes: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code></p></li>
+</ul>
+</li>
+<li><p>Dans la section <strong>Trier</strong>:</p>
+<ul>
+<li><p>➕ Ajoutez <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code> et définissez l’ordre de tri sur <code class="docutils literal notranslate"><span class="pre">Ascendant</span></code></p></li>
+</ul>
+</li>
+<li><p>Cliquez sur <strong>OK</strong> pour appliquer</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 Si trop de districts sont concernés, le tableau des attributs risque de ne pas être adapté à la page. Réduisez la taille de la fonte dans les propriétés des éléments du tableau afin que tout soit visible, mais sachez que cela peut réduire la lisibilité.</p>
+</div>
+<ol class="arabic" start="8">
+<li><p><strong>Ajuster la légende</strong></p>
+<ul>
+<li><p>Sélectionnez l’élément de légende, naviguez jusqu’à la section <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span></code> et faites défiler vers le bas jusqu’à ce que vous voyiez <code class="docutils literal notranslate"><span class="pre">Éléments</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">légende</span></code>. Si ce n’est pas le cas, vérifiez si vous devez ouvrir le menu déroulant. Assurez-vous que la case <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">à</span> <span class="pre">jout</span> <span class="pre">auto</span></code> n’est <strong>pas cochée</strong>.</p></li>
+<li><p>Supprimez tous les éléments de la légende en cliquant sur chaque élément, puis sur l’icône rouge moins</p>
+<ul class="simple">
+<li><p>Dans la fenêtre contextuelle, cochez <strong>Ne montrer que les entités à l’intérieur de la carte liée</strong> pour vous aider à trouver les corrects.</p></li>
+<li><p>Pour renommer un élément de la légende, <strong>double-cliquez</strong> sur le nom de la couche dans la liste des éléments de la légende et entrez le nouveau nom</p></li>
+</ul>
+</li>
+<li><p>➕ Ajoutez les couches suivantes en cliquant sur le signe plus vert:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code></p></li>
+<li><p>Maintenant, nous allons renommer les couches dans la légende. Dans les <strong>propriétés de l’élément</strong>, sous la liste des couches de la légende, se trouve un bouton <img alt="" src="../../_images/mdg_aa_edit_legend.png" /> <code class="docutils literal notranslate"><span class="pre">Editer</span> <span class="pre">les</span> <span class="pre">propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span> <span class="pre">sélectionné</span></code>. En cliquant dessus, vous pouvez modifier le nom de l’icône dans la légende. Renommez les couches comme suit:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_districts</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Districts exposés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts concernés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Map:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond:
+OpenStreetMap
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Ajustez les icônes en cliquant sur le bouton <Image> dans la liste des éléments ou sur la croix rouge dans le modèle de carte.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Dans les propriétés de l’élément, corrigez le chemin d’accès au logo CRM en cliquant sur les trois points <img alt="" src="../../_images/Three_points.png" /> et naviguez jusqu’à  <code class="docutils literal notranslate"><span class="pre">\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures</span></code> puis sélectionnez le fichier du logo CRM.</p></li>
+<li><p>Répétez le processus pour la deuxième image manquante. Cette fois-ci, sélectionnez le logo HeiGIT.</p></li>
+</ul>
+<ol class="arabic simple" start="10">
+<li><p>Sous les logos, modifiez les informations dans la zone de texte en sélectionnant celle-ci et en naviguant vers les propriétés de l’élément.</p></li>
+<li><p>Enfin, verrouillons les couches et les styles de couches afin que les modifications apportées dans la fenêtre principale de QGIS n’affectent pas notre mise en page d’impression:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Dans la liste des éléments, sélectionnez <strong>Carte 1</strong>.</p></li>
+<li><p>Dans les propriétés de l’élément, cochez les cases <strong>verrouiller les couches</strong> et <strong>verrouiller le style des couches</strong>. Cela empêchera la carte de se mettre automatiquement à jour lorsque nous apporterons des modifications à la zone de travail de la carte.</p></li>
+</ul>
+<figure class="align-default" id="mdg-aa-lock-layers">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_lock_layers.png"><img alt="../../_images/mdg_aa_lock_layers.png" src="../../_images/mdg_aa_lock_layers.png" style="width: 600px;" />
+</a>
+</figure>
+<!-- Maybe add a video on how the Print Layout is created 
+
+```{dropdown} Video: Making print map
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
+```
+
+-->
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Liste de contrôle pour la version finale de la carte:</p>
+<ul class="simple">
+<li><p>Informations cartographiques: vérifiez et mettez à jour tous les éléments textuels si nécessaire.</p></li>
+<li><p>Légende: supprimez les éléments inutiles et renommez les couches avec des descriptions claires et significatives.</p></li>
+<li><p>Districts exposés: n’incluez que les districts réellement touchés dans votre “Liste des districts exposés”. Mettez-les à jour en fonction de l’événement.</p></li>
+</ul>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Une fois la couche est stylisé, votre résultat final devrait ressembler à ceci.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Vous pouvez voir maintenant les districts exposés et l’emplacement des entrepôts concernés clairement indiqués sur la carte. De plus, la trajectoire originale de la tempête, utilisée comme données d’entrée, est mise en évidence, ainsi que la zone d’impact tamponnée, qui sert de référence pour identifier les districts exposés.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Overview_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Overview_Map.png" src="../../_images/MAD_Trigger_Impact_Overview_Map.png" style="width: 1000px;" />
+</a>
+</figure>
+</div>
+</details></section>
+<section id="carte-1-exporter-la-carte">
+<h4>Carte 1: Exporter la carte<a class="headerlink" href="#carte-1-exporter-la-carte" title="Link to this heading">#</a></h4>
+<p>Une fois la conception de votre carte terminée, vous pouvez l’exporter au format PDF ou image dans différents formats.</p>
+<p><strong>Exporter en tant qu’image</strong></p>
+<ol class="arabic simple">
+<li><p>Dans la mise en page, cliquez sur <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">en</span> <span class="pre">tant</span> <span class="pre">qu'image</span></code>.</p></li>
+<li><p>Choisissez le dossier <strong>map_outputs</strong>. Donnez au fichier le nom de l’événement, par exemple <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.</p></li>
+<li><p>La fenêtre <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">d'exportation</span> <span class="pre">d'image</span></code> apparaîtra.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.
+L’image se trouve maintenant dans le dossier de résultats.</p></li>
+</ol>
+<p><strong>Exporter au format PDF</strong></p>
+<ol class="arabic simple">
+<li><p>Dans la mise en page d’impression, cliquez sur <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">au</span> <span class="pre">format</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Sélectionnez le dossier <strong>map_outputs</strong>. Donnez au fichier le nom de l’événement, par exemple <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.</p></li>
+<li><p>La fenêtre <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">d'exportation</span> <span class="pre">PDF</span></code> s’affiche. Pour obtenir les meilleurs résultats, sélectionnez la compression d’image <code class="docutils literal notranslate"><span class="pre">sans</span> <span class="pre">perte</span></code>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.
+L’image se trouve maintenant dans le dossier de résultats.</p></li>
+</ol>
+</section>
+</section>
+<section id="carte-2-evaluation-de-l-impact-population-exposee-et-infrastructures-critiques">
+<h3>Carte 2: Évaluation de l’impact: population exposée et infrastructures critiques<a class="headerlink" href="#carte-2-evaluation-de-l-impact-population-exposee-et-infrastructures-critiques" title="Link to this heading">#</a></h3>
+<p>Couches nécessaires pour cette carte:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_Warehouses</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Population</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Assessment_Map</span></code> déjà chargé et stylisé dans QGIS</p></li>
+</ul>
+<p>Cliquez avec le bouton droit sur chaque couche &gt; <code class="docutils literal notranslate"><span class="pre">Dupliquer</span> <span class="pre">la</span> <span class="pre">couche</span></code> et déplacez les copies vers le groupe “Map_Cyclone_Impact_Assessment”</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_layer_order_impact_map.PNG"><img alt="../../_images/MAD_Trigger_layer_order_impact_map.PNG" src="../../_images/MAD_Trigger_layer_order_impact_map.PNG" style="width: 300px;" />
+</a>
+</figure>
+<section id="carte-2-stylisation-des-couches">
+<h4>Carte 2: Stylisation des couches<a class="headerlink" href="#carte-2-stylisation-des-couches" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Désactivez toutes les couches sauf le groupe “Map_Cyclone_Impact_Assessment” et la carte de base OpenStreetMap.</p></li>
+<li><p>Cliquez avec le bouton droit sur la couche “exposed_population - copy” (population_exposée copie) -&gt; <code class="docutils literal notranslate"><span class="pre">Propriétés</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbologie</span></code></p></li>
+<li><p>Dans le coin inférieur gauche, cliquez sur <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Charger</span> <span class="pre">le</span> <span class="pre">Style</span></code></p></li>
+<li><p>Dans la nouvelle fenêtre, cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" />. Naviguez jusqu’au dossier “AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” et sélectionnez le fichier <strong>“exposed_population_style.qml”</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>. Cliquez ensuite sur <code class="docutils literal notranslate"><span class="pre">Charger</span> <span class="pre">le</span> <span class="pre">style</span></code></p></li>
+<li><p>De retour dans la fenêtre “Propriétés de la couche” cliquez sur <code class="docutils literal notranslate"><span class="pre">Appliquer</span></code> et <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<p>Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leurs feuilles de style correspondantes:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom de la couche</p></th>
+<th class="head"><p>Style</p></th>
+<th class="head"><p>Remarques</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Assessment_Map</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adm1_style.qml</span></code></p></td>
+<td><p>préchargé</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
+<td><p>chargé par l’utilisateur</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Assurez-vous que toutes les couches de résultats sont correctement ajoutées au projet QGIS. Si certaines couches manquent, essayez de relancer le modèle ou vérifiez dans le dossier Model Outputs si les fichiers ont bien été créés.</p>
+<p>Pour conserver un espace de travail clair et organisé, regroupez les couches de sortie dans le panneau Couches sous le groupe approprié (par exemple, Map_Cyclone_Impact_Overview). Cela permet de structurer votre projet et facilite la navigation pendant le processus de création de la carte.</p>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Autres cartes d’évaluation d’impact</p>
+<p>La documentation couvre la carte d’évaluation de l’impact sur la population exposée. Cependant, le modèle estime également les bâtiments exposés, la couverture terrestre et les établissements de santé et d’enseignement. Ces variables peuvent également être affichées sur la carte à l’aide des fichiers de style suivants. Pour que la carte reste facilement compréhensible, n’utilisez qu’une seule des variables.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom de la couche</p></th>
+<th class="head"><p>Style</p></th>
+<th class="head"><p>Remarques</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_population_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_building</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_building_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_health_facilities</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_health_facilities_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_agricultural_landcover</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_agriculture_landcover_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_health_facilities_points</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">points_exposed_health_facilities_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities_points</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">points_exposed_education_facilities_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
+<td><p>résultat du modèle</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_track</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
+<td><p>chargé par l’utilisateur</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
+</div>
+</section>
+<section id="carte-2-creation-de-la-mise-en-page">
+<h4>Carte 2: Création de la mise en page<a class="headerlink" href="#carte-2-creation-de-la-mise-en-page" title="Link to this heading">#</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Le même processus s’applique aux cinq variables d’impact: population, bâtiments, établissements scolaires, sites de santé et couverture agricole. L’exemple suivant illustre le processus de création de la carte d’impact sur la population. Les autres cartes peuvent être générées en suivant les mêmes étapes.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Ouvrez une nouvelle mise en page en cliquant sur <code class="docutils literal notranslate"><span class="pre">Projet</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Gestionnaire</span> <span class="pre">de</span> <span class="pre">mise</span> <span class="pre">en</span> <span class="pre">page</span></code>. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d’un modèle.</p></li>
+<li><p>Nous voulons créer une nouvelle mise en page à partir d’un modèle. Cliquez sur le menu déroulant <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span> <span class="pre">vide</span></code> et sélectionnez <code class="docutils literal notranslate"><span class="pre">Spécifique</span></code>.</p></li>
+<li><p>Ci-dessous, cliquez sur les trois points <img alt="" src="../../_images/Three_points.png" /> et naviguez jusqu’au dossier<code class="docutils literal notranslate"><span class="pre">../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/</span></code> et sélectionnez le fichier nommé <code class="docutils literal notranslate"><span class="pre">cyclone_impact_population_map_template</span></code>. Cliquez sur <code class="docutils literal notranslate"><span class="pre">Ouvrir</span></code>, enpuis sur <code class="docutils literal notranslate"><span class="pre">Créer</span></code>.</p></li>
+<li><p>QGIS vous demandera de nommer la nouvelle mise en page. Donnez-lui un nom tel que “Cyclone_Overview_Map_Freddy_2023”. Cliquez sur <code class="docutils literal notranslate"><span class="pre">OK</span></code>. Une nouvelle fenêtre s’ouvrira. Il s’agit du compositeur de mise en page. Il devrait ressembler à la figure ci-dessous.</p></li>
+</ol>
+<figure class="align-default" id="mdg-aa-pop-impact-template">
+<a class="reference internal image-reference" href="../../_images/mdg_aa_pop_impact_template.png"><img alt="../../_images/mdg_aa_pop_impact_template.png" src="../../_images/mdg_aa_pop_impact_template.png" style="width: 600px;" />
+</a>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Mettre à jour le titre de la carte</strong></p>
+<ul class="simple">
+<li><p>Cliquez sur l’élément de texte du titre en haut de la carte.</p></li>
+<li><p>Dans le panneau <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'objet</span></code> modifiez le texte <strong>Étiquette principale</strong> pour qu’il corresponde à votre événement, par exemple <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Harald</span> <span class="pre">–</span> <span class="pre">2025</span></code>.</p></li>
+<li><p>Ajustez la taille de la police ou l’alignement si nécessaire.</p></li>
+</ul>
+</li>
+<li><p><strong>Mettre à jour le tableau des attributs situé à droite de la carte</strong>
+Pour mettre à jour le tableau des attributs affichant les districts exposés:</p>
+<ul class="simple">
+<li><p>Dans le panneau <code class="docutils literal notranslate"><span class="pre">Propriétés</span> <span class="pre">de</span> <span class="pre">l'élément</span></code>, sélectionne la couche <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code><strong>Ou toute autre couche avec laquelle vous travaillez</strong>, puis cliquez sur <strong>Actualiser les données du tableau</strong>.</p></li>
+<li><p>Cliquez sur on <code class="docutils literal notranslate"><span class="pre">Attributs...</span></code></p></li>
+<li><p>Dans la section <strong>Colonnes</strong>:</p>
+<ul>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Effacer</span></code></p></li>
+<li><p>➕ Ajoutez les colonnes: <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code>, <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code> et <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> <strong>Ou toute autre couche avec laquelle vous travaillez</strong></p></li>
+</ul>
+</li>
+<li><p>Dans la section <strong>Trier</strong>:</p>
+<ul>
+<li><p>➕ Ajoutez <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code> et définissez l’ordre de tri sur <code class="docutils literal notranslate"><span class="pre">Ascendant</span></code></p></li>
+</ul>
+</li>
+<li><p>Cliquez sur <strong>OK</strong> pour appliquer</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡 Si trop de districts sont concernés, le tableau des attributs risque de ne pas être adapté à la page. Réduisez la taille de la fonte dans les propriétés des éléments du tableau afin que tout soit visible, mais sachez que cela peut réduire la lisibilité.</p>
+</div>
+<ol class="arabic" start="8">
+<li><p>Ajustez la légende en cliquant dessus dans la mise en page de la carte, puis consultez la section « Propriétés de l’élément » et faites défiler vers le bas jusqu’à ce que vous voyiez le champ « Éléments de la légende ». S’il n’apparaît pas, vérifiez si vous devez ouvrir le menu déroulant. Assurez-vous que l’option <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">à</span> <span class="pre">jout</span> <span class="pre">auto</span></code> n’est <strong>pas cochée</strong>.</p>
+<ul class="simple">
+<li><p>Supprimez tous les éléments de la légende en cliquant sur chaque élément, puis sur l’icône rouge moins</p>
+<ul>
+<li><p>Dans la fenêtre contextuelle, cochez <strong>Ne montrer que les entités à l’intérieur de la carte liée</strong> pour vous aider à trouver les corrects.</p></li>
+<li><p>💡 Pour renommer un élément de la légende, <strong>double-cliquez</strong> sur le nom de la couche dans la liste des éléments de la légende et entrez le nouveau nom</p></li>
+</ul>
+</li>
+<li><p>➕ Ajoutez les couches suivantes en cliquant sur le signe plus vert:</p></li>
+</ul>
+<ul class="simple">
+<li><p>Veillez à ce que toutes les entrées de légende utilisent des <strong>étiquettes claires et significatives</strong>.</p></li>
+</ul>
+</li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Population exposée</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Population exposée
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Carte</span> <span class="pre">de</span> <span class="pre">fond</span> <span class="pre">:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Bâtiments exposés</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_building</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Bâtiments exposés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Carte</span> <span class="pre">de</span> <span class="pre">fond</span> <span class="pre">:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Établissements de santé exposés</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_health_facilities</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Établissements de santé exposés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Carte</span> <span class="pre">de</span> <span class="pre">fond</span> <span class="pre">:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Établissements scolaires exposés</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Établissements scolaires exposés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Carte</span> <span class="pre">de</span> <span class="pre">fond</span> <span class="pre">:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Agriculture exposée en hectares</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_agricultural_landcover</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Agriculture exposée en hectares
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue des cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone cyclonique exposée
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Carte</span> <span class="pre">de</span> <span class="pre">fond</span> <span class="pre">:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Points des établissements de santé exposés</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_health_facilities_points</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Points des établissements de santé exposés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Carte</span> <span class="pre">de</span> <span class="pre">fond</span> <span class="pre">:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+Points d’éducation sanitaire exposés</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin1_Impact_Overview_Map</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Régions
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities_points</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Points d&#39;éducation sanitaire exposés
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Trajectoire prévue du cyclone
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Exposed_Cyclone_Area</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Zone exposée aux cyclones
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouses</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Entrepôts de la CRM
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Background</span> <span class="pre">Map:</span> <span class="pre">OpenStreetMap</span></code> → renommer en</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Carte de fond :
+OpenStreetMap
+</pre></div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Votre résultat final devrait ressembler à ceci après avoir stylisé la couche.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">La carte affiche maintenant clairement la population exposée dans les districts touchés, ainsi que l’emplacement des entrepôts concernés. La trajectoire originale de la tempête, utilisée comme donnée d’entrée, est mise en évidence, tout comme la zone d’impact tamponnée, qui sert de proxy pour identifier les districts exposés.</p>
+<p class="sd-card-text">Sur le côté droit de la carte, une liste affiche tous les districts exposés, y compris des données sur la population totale et la population exposée. Les districts (Admin 2) sont organisés sous leurs régions correspondantes (Admin 1).</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Population_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Population_Map.png" src="../../_images/MAD_Trigger_Impact_Population_Map.png" style="width: 1000px;" />
+</a>
+</figure>
+</div>
+</details></section>
+<section id="carte-2-exporter-la-carte">
+<h4>Carte 2: Exporter la carte<a class="headerlink" href="#carte-2-exporter-la-carte" title="Link to this heading">#</a></h4>
+<!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
+
+```{figure} /fig/MAD_Trigger_workflow_Step5.png
+---
+width: 1000px
+name: 
+align: center
+---
+```
+
+__Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
+
+
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+
+-->
+<p>Une fois la conception de votre carte terminée, vous pouvez l’exporter au format PDF ou image dans différents formats.</p>
+<p><strong>Exporter en tant qu’image</strong></p>
+<ol class="arabic simple">
+<li><p>Dans la mise en page, cliquez sur <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">en</span> <span class="pre">tant</span> <span class="pre">qu'image</span></code>.</p></li>
+<li><p>Choisissez le dossier <strong>map_outputs</strong>. Donnez au fichier le nom de l’événement, par exemple <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.</p></li>
+<li><p>La fenêtre <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">d'exportation</span> <span class="pre">d'image</span></code> apparaîtra.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.
+L’image se trouve maintenant dans le dossier de résultats.</p></li>
+</ol>
+<p><strong>Exporter au format PDF</strong></p>
+<ol class="arabic simple">
+<li><p>Dans la mise en page d’impression, cliquez sur <code class="docutils literal notranslate"><span class="pre">Mise</span> <span class="pre">en</span> <span class="pre">page</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">au</span> <span class="pre">format</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Sélectionnez le dossier <strong>map_outputs</strong>. Donnez au fichier le nom de l’événement, par exemple <strong>MDG_Trigger_Impact_Overview_Map_Freddy_2023</strong>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.</p></li>
+<li><p>La fenêtre <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">d'exportation</span> <span class="pre">PDF</span></code> s’affiche. Pour obtenir les meilleurs résultats, sélectionnez la compression d’image <code class="docutils literal notranslate"><span class="pre">sans</span> <span class="pre">perte</span></code>.</p></li>
+<li><p>Cliquez sur <code class="docutils literal notranslate"><span class="pre">Sauvegarder</span></code>.
+L’image se trouve maintenant dans le dossier de résultats.</p></li>
+</ol>
+<!-- Maybe add a video. Might not be necessary
+
+```{dropdown} Video: Export image and PDF
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
+```
+-->
+<figure class="align-center" id="impact-of-cyclone-event-freddy-2023">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_Impact_Buildings_Map.png"><img alt="../../_images/MAD_Trigger_Impact_Buildings_Map.png" src="../../_images/MAD_Trigger_Impact_Buildings_Map.png" style="width: 1000px;" />
+</a>
+</figure>
+</section>
+</section>
+</section>
+<section id="utilisation-des-isochrones-d-entrepot">
+<h2>Utilisation des isochrones d’entrepôt<a class="headerlink" href="#utilisation-des-isochrones-d-entrepot" title="Link to this heading">#</a></h2>
+<p>Le projet comprend des isochrones pour chaque entrepôt. Les isochrones d’entrepôt correspondent à un entrepôt et sont identifiables par le nom de leur emplacement. Si vous souhaitez ajouter une isochrone à l’une des cartes Il est possible d’ajouter des isochrones individuelles aux modèles de carte en dupliquant simplement la couche d’isochrones et en la déplaçant vers le groupe de cartes souhaité.</p>
+<!--INSERT EXAMPLE PICTURE-->
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analyse-historique-des-impacts-des-cyclones">
+<h1>Analyse historique des impacts des cyclones<a class="headerlink" href="#analyse-historique-des-impacts-des-cyclones" title="Link to this heading">#</a></h1>
+<p>Pour exécuter le processus de déclenchement complet à l’aide des données historiques sur la trajectoire des cyclones, vous pouvez évaluer les impacts des événements passés et obtenir des informations sur ce qui s’est produit dans des scénarios similaires. Les données sur la trajectoire des tempêtes sont disponibles auprès de l’<strong>International Best Track Archive for Climate Stewardship (IBTrACS)</strong>. Les instructions pour accéder à ces données sont fournies dans la section suivante.</p>
+<section id="telechargement-des-donnees-historiques-sur-les-trajectoires-des-tempetes">
+<h2>Téléchargement des données historiques sur les trajectoires des tempêtes<a class="headerlink" href="#telechargement-des-donnees-historiques-sur-les-trajectoires-des-tempetes" title="Link to this heading">#</a></h2>
+<p>Les données <strong>International Best Track Archive for Climate Stewardship (IBTrACS)</strong> v04r01 sont mises à jour trois fois par semaine (généralement le dimanche, le mardi et le jeudi) et peuvent être mises à jour plus fréquemment pour répondre à des besoins et des cas d’utilisation spécifiques. Les dernières mises à jour dans le format de fichier approprié sont disponibles sur leur <a class="reference external" href="https://www.ncei.noaa.gov/products/international-best-track-archive">site web</a>:</p>
+<ol class="arabic simple">
+<li><p>Recherchez la section <code class="docutils literal notranslate"><span class="pre">Access</span> <span class="pre">Methods</span></code> et cliquez sur <code class="docutils literal notranslate"><span class="pre">Shapefiles</span></code>. Le site web suivant s’ouvre alors: <a class="reference external" href="https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/">site web</a>, que vous pouvez également voir dans l’image ci-dessous.</p></li>
+<li><p>Comme nous n’avons pas besoin des données sur les trajectoires des tempêtes pour le monde entier ni de l’archive complète, nous ne téléchargerons qu’un sous-ensemble significatif. Recherchez le fichier nommé <code class="docutils literal notranslate"><span class="pre">IBTrACS.ACTIVE.list.v04r01.lines.zip</span></code> et cliquez dessus. Le téléchargement devrait démarrer automatiquement.</p></li>
+<li><p>Décompressez le fichier et ouvrez-le dans QGIS.</p></li>
+<li><p>Ouvrez la table d’attributs et supprimez toutes les trajectoires de tempêtes qui ne sont pas pertinentes pour cette analyse. Enregistrez le fichier de trajectoires de tempêtes mis à jour.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le sous-ensemble de trajectoires de tempêtes <code class="docutils literal notranslate"><span class="pre">IBTrACS.ACTIVE.list.v04r01.lines.zip</span></code> contient toutes les <strong>tempêtes actives au cours des 7 derniers jours</strong>. Si vous avez besoin de données plus complètes, il est conseillé de télécharger un sous-ensemble par bassin. Pour Madagascar, la région la plus pertinente est <strong>SI – South Indian</strong>, , qui comprend notre zone d’intérêt. Cet ensemble de données peut être téléchargé à partir du même site web sous le nom <code class="docutils literal notranslate"><span class="pre">IBTrACS.SI.list.v04r01.lines.zip</span></code>.</p>
+</div>
+<figure class="align-center" id="mad-trigger-stromtrack-download">
+<a class="reference internal image-reference" href="../../_images/MAD_Trigger_stromtrack_download.PNG"><img alt="../../_images/MAD_Trigger_stromtrack_download.PNG" src="../../_images/MAD_Trigger_stromtrack_download.PNG" style="width: 1000px;" />
+</a>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/GIS_AA"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="en_qgis_cyclone_trigger_madagascar.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">QGIS Trigger Workflow for Madagascar</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="en_qgis_drought_trigger_somalia.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">QGIS Trigger Workflow for Somalia</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Workflow de déclenchement en QGIS pour Madagascar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexte">Contexte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-de-declenchement">Déclaration de déclenchement</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnalite-du-flux-de-travail">Fonctionnalité du flux de travail</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-disponibles">Données disponibles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-fixes">Données fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#donnees-de-monitoring">Données de monitoring</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimation-de-l-impact-du-cyclone-a-l-aide-du-modele-qgis">Estimation de l’impact du cyclone à l’aide du modèle QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctionnement-du-modele">Fonctionnement du modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-executer-le-modele">Comment exécuter le modèle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etape-1-explication-de-la-structure-des-fichiers">Étape 1 : Explication de la structure des fichiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis">Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ouvrir-le-modele-dans-qgis">Ouvrir le modèle dans QGIS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etappe-3-executez-le-modele">Étappe 3: Exécutez le modèle</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creation-des-cartes-a-l-aide-des-modeles-de-carte">Création des cartes à l’aide des modèles de carte</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee">Visualisation et mise en forme des résultats du modèle et création de la carte imprimée</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-apercu-de-l-impact-du-cyclone-districts-touches-gravite-de-l-evenement-et-emplacement-des-entrepots">Carte 1: Aperçu de l’impact du cyclone: Districts touchés, gravité de l’événement et emplacement des entrepôts</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-stylisation-des-couches">Carte 1: Stylisation des couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-creation-de-la-mise-en-page">Carte 1: Création de la mise en page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-1-exporter-la-carte">Carte 1: Exporter la carte</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-evaluation-de-l-impact-population-exposee-et-infrastructures-critiques">Carte 2: Évaluation de l’impact: population exposée et infrastructures critiques</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-stylisation-des-couches">Carte 2: Stylisation des couches</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-creation-de-la-mise-en-page">Carte 2: Création de la mise en page</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#carte-2-exporter-la-carte">Carte 2: Exporter la carte</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utilisation-des-isochrones-d-entrepot">Utilisation des isochrones d’entrepôt</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analyse-historique-des-impacts-des-cyclones">Analyse historique des impacts des cyclones</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telechargement-des-donnees-historiques-sur-les-trajectoires-des-tempetes">Téléchargement des données historiques sur les trajectoires des tempêtes</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
