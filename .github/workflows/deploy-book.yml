@@ -1,6 +1,5 @@
 name: deploy-book
 
-# Only run this when the main branch changes
 on:
   push:
     branches:
@@ -34,37 +33,29 @@ jobs:
     - name: Build English Book
       run: |
         jupyter-book build . --config _config.yml --toc _toc.yml --path-output english
-        # Debug: check if build was successful and print directory contents
         echo "Contents of english directory:"
         ls -al english
-        # Check if the HTML exists inside the english directory
-        echo "Listing contents of english/html:"
-        ls -al english/html || echo "No english/html directory found."
 
     # Build the Spanish version of the book
     - name: Build Spanish Book
       run: |
         jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
-        # Debug: check if build was successful and print directory contents
         echo "Contents of spanish directory:"
         ls -al spanish
-        # Check if the HTML exists inside the spanish directory
-        echo "Listing contents of spanish/html:"
-        ls -al spanish/html || echo "No spanish/html directory found."
 
-    # Debugging: List contents of the workspace
+    # Debugging: List all contents of the workspace
     - name: List all contents of workspace
       run: |
-        echo "Listing all files in the current workspace:"
+        echo "Listing all files in the workspace:"
         ls -al
 
     # Check if the English build directory exists
     - name: Check English Build Directory
       run: |
-        echo "Checking if english/html exists"
-        if [ ! -d "english/html" ]; then
-          echo "Error: English build directory does not exist!";
-          exit 1;
+        echo "Checking if english exists"
+        if [ ! -d "english" ]; then
+          echo "Error: English build directory does not exist!"
+          exit 1
         else
           echo "English build directory found."
         fi
@@ -72,10 +63,10 @@ jobs:
     # Check if the Spanish build directory exists
     - name: Check Spanish Build Directory
       run: |
-        echo "Checking if spanish/html exists"
-        if [ ! -d "spanish/html" ]; then
-          echo "Error: Spanish build directory does not exist!";
-          exit 1;
+        echo "Checking if spanish exists"
+        if [ ! -d "spanish" ]; then
+          echo "Error: Spanish build directory does not exist!"
+          exit 1
         else
           echo "Spanish build directory found."
         fi
@@ -85,7 +76,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./english/html
+        publish_dir: ./english
         publish_branch: gh-pages
         keep_files: true
 
@@ -94,6 +85,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./spanish/html
+        publish_dir: ./spanish
         publish_branch: gh-pages
         keep_files: true
