@@ -38,11 +38,12 @@ jobs:
     # Combine both builds into a single deployable folder
     - name: Combine English and Spanish builds
       run: |
-        mkdir _site
-        mv english _site/english
-        mv spanish _site/spanish
-        echo "Combined builds into _site directory."
+        mkdir -p _site/english _site/spanish
+        cp -r english/_build/html/* _site/english/
+        cp -r spanish/_build/html/* _site/spanish/
+        echo "Combined built HTML files into _site directory."
         ls -R _site
+
 
     # Deploy combined site to GitHub Pages
     - name: Deploy to GitHub Pages
