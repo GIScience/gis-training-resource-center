@@ -34,12 +34,12 @@ jobs:
     # Build the English version of the book
     - name: Build English Book
       run: |
-        jupyter-book build . --config _config.yml --toc _toc.yml --output-dir _build/english
+        jupyter-book build . --config _config.yml --toc _toc.yml --path-output _build/english
 
     # Build the Spanish version of the book
     - name: Build Spanish Book
       run: |
-        jupyter-book build . --config _config.yml --toc es_toc.yml --output-dir _build/spanish
+        jupyter-book build . --config _config.yml --toc es_toc.yml --path-output _build/spanish
 
     # Deploy the English version to GitHub Pages
     - name: Deploy English Book to GitHub Pages
