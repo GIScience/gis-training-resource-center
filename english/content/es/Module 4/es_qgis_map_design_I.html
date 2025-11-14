@@ -1,0 +1,1183 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Simbología y colores &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module 4/es_qgis_map_design_I';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module 4/es_qgis_map_design_I.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module 4/es_qgis_map_design_I.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Simbología y colores</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-visuales">Variables visuales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uso-de-variables-visuales-en-cartografia">Uso de variables visuales en cartografía</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-con-simbolos-graduados-y-coropleticos">Mapas con símbolos graduados y coropléticos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#casos-practicos">Casos prácticos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simbologia-y-estilo">Simbología y estilo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simbologia">Simbología</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colores">Colores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#daltonismo">Daltonismo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-complejos">Mapas complejos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="simbologia-y-colores">
+<h1>Simbología y colores<a class="headerlink" href="#simbologia-y-colores" title="Link to this heading">#</a></h1>
+<p>La representación de datos geográficos en mapas es esencial para proporcionar información útil basada en la ubicación. Este subcapítulo
+abarcará los fundamentos básicos del buen diseño cartográfico, cómo crear un diseño cartográfico en QGIS y los errores comunes al diseñar o
+interpretar mapas.</p>
+<p>En este capítulo repasaremos los conceptos básicos de simbología, colores y cómo ajustar capas individuales en QGIS para crear
+mapas exhaustivos.</p>
+<div class="seealso admonition">
+<p class="admonition-title">Recapitulación: Tipos de mapas</p>
+<p>En general, existen dos tipos principales de mapas: <strong>mapas topográficos</strong> y <strong>mapas temáticos</strong>.</p>
+<p>Los <strong>mapas topográficos</strong> pretenden ser exhaustivos e incluir elementos fundamentales para la localización (localidades, redes
+viales, terreno, hidrografía). Muestran la ubicación física de los objetos en el mundo real. La representación de
+los elementos en los mapas topográficos se realiza mediante signos convencionales (por ejemplo, azul para el agua, verde para los bosques, amarillo para
+las tierras agrícolas).</p>
+<figure class="align-default" id="en-30-30-2-topographic-map-examples">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_topographic_map_examples.png"><img alt="content/fig/en_30.30.2_topographic_map_examples.png" src="content/fig/en_30.30.2_topographic_map_examples.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ejemplos de mapas topográficos</span><a class="headerlink" href="#en-30-30-2-topographic-map-examples" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Los <strong>mapas temáticos</strong> muestran la distribución de datos específicos o información procesada estadísticamente, como el tamaño de
+la población, la incidencia de enfermedades, el riesgo de inundaciones, etc. La representación de los elementos en los mapas temáticos se decide según
+las reglas de la semiología gráfica.</p>
+<figure class="align-default" id="en-30-30-2-thematic-maps-examples">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_thematic_maps_examples.png"><img alt="content/fig/en_30.30.2_thematic_maps_examples.png" src="content/fig/en_30.30.2_thematic_maps_examples.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ejemplos de mapas temáticos</span><a class="headerlink" href="#en-30-30-2-thematic-maps-examples" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Estos dos mapas utilizan los elementos de diseño de forma diferente. Los mapas topográficos utilizarán símbolos y colores por convención y
+legibilidad, mientras que en el diseño de mapas temáticos, los símbolos y colores que se utilizan dependen del contexto y la
+información que se desea transmitir.</p>
+</div>
+<section id="variables-visuales">
+<h2>Variables visuales<a class="headerlink" href="#variables-visuales" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="en-30-30-2-graphic-semiology-signs">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_graphic_semiology_signs.png"><img alt="content/fig/en_30.30.2_graphic_semiology_signs.png" src="content/fig/en_30.30.2_graphic_semiology_signs.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Puede utilizar distintos signos gráficos en función del tipo de información que se desee mostrar (fuente: Desconocida. Esta figura se incluye únicamente con fines ilustrativos y no está sujeta a la licencia Creative Commons de esta plataforma).</span><a class="headerlink" href="#en-30-30-2-graphic-semiology-signs" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Las variables visuales son los <strong>medios gráficos para transcribir visualmente la información</strong>. Las variables visuales son <strong>la forma,
+el tamaño, el tono, el valor, la textura y la orientación</strong>. Estas variables pueden ajustarse para representar adecuadamente los datos
+a su disposición. Permiten expresar la <strong>relación de diferencia, orden, asociación o cantidad</strong>
+entre cada elemento, lo que ayuda a mostrar información diferente.</p>
+<figure class="align-default" id="en-visual-variables">
+<a class="reference internal image-reference" href="content/fig/en_visual_variables.png"><img alt="content/fig/en_visual_variables.png" src="content/fig/en_visual_variables.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Variables visuales según Bertin (1967).</span><a class="headerlink" href="#en-visual-variables" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>La percepción visual varía de una persona a otra en función de diversas capacidades:</p>
+<ul class="simple">
+<li><p>Fisiológicas (por ejemplo, daltonismo)</p></li>
+<li><p>Transculturales (verde = naturaleza, azul = agua)</p></li>
+</ul>
+</div>
+</section>
+<section id="uso-de-variables-visuales-en-cartografia">
+<h2>Uso de variables visuales en cartografía<a class="headerlink" href="#uso-de-variables-visuales-en-cartografia" title="Link to this heading">#</a></h2>
+<p>A partir de estas variables visuales, los cartógrafos son capaces de interpretar y comunicar
+información crucial para las operaciones humanitarias. Según el caso práctico y los destinatarios, se utilizarán diferentes estilos para comunicar diferentes datos.
+OpenStreetMap ofrece varios productos cartográficos: OSM Standard, Tracestack Topo, CyclOSM o el mapa de transporte público, por ejemplo. Los datos que sustentan los mapas
+son los mismos, pero el estilo es diferente. En cada caso, los cartógrafos tenían diferentes objetivos en mente (por ejemplo, para
+el mapa ciclista, mostrar las rutas ciclistas más seguras, las estaciones de reparación de bicicletas y los lugares de descanso) y eligieron el estilo en consecuencia.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="m4-osm-overviewmap-example">
+<a class="reference internal image-reference" href="../../../_images/m4_OSM_Overviewmap_example.png"><img alt="../../../_images/m4_OSM_Overviewmap_example.png" src="../../../_images/m4_OSM_Overviewmap_example.png" style="width: 375px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Norma de <a class="reference external" href="https://www.openstreetmap.org">OSM</a></span><a class="headerlink" href="#m4-osm-overviewmap-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="m4-osm-bikemap">
+<a class="reference internal image-reference" href="../../../_images/m4_OSM_bikemap.png"><img alt="../../../_images/m4_OSM_bikemap.png" src="../../../_images/m4_OSM_bikemap.png" style="width: 375px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa ciclista de OSM</span><a class="headerlink" href="#m4-osm-bikemap" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>En los siguientes menús desplegables,
+encontrará diferentes ejemplos de mapas utilizados en la labor humanitaria.</p>
+<div class="tip admonition">
+<p class="admonition-title">¡Es su turno!</p>
+<p>¿Qué tipo de variables visuales o métodos de simbolización puede identificar en estos mapas? ¿Qué tipo de información se comunicó y de qué manera (por ejemplo, información sobre infraestructuras, paisajes naturales, etc.)?
+¿Qué otros métodos para comunicar la información imagina o conoce? También puede mostrar un mapa que haya encontrado en su trabajo o en su vida personal.</p>
+<p>También puede utilizar mapas que haya encontrado en su trabajo o en su vida cotidiana.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Ejemplo de mapa 1</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-default" id="et-somali-humanitarian-access-flooded-areas-11152023-a4">
+<a class="reference internal image-reference" href="../../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png"><img alt="../../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png" src="../../../_images/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png" style="width: 750px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Zonas y carreteras afectadas por las inundaciones en la región de somalí de Etiopía (fuente: OCHA)</span><a class="headerlink" href="#et-somali-humanitarian-access-flooded-areas-11152023-a4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Ejemplo de mapa 2</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-default" id="proportional-circles-example">
+<a class="reference internal image-reference" href="../../../_images/proportional_circles_example.png"><img alt="../../../_images/proportional_circles_example.png" src="../../../_images/proportional_circles_example.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Desplazados internos, 30 de septiembre de 2024 (fuente: <a class="reference external" href="https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024">ACNUR</a>).</span><a class="headerlink" href="#proportional-circles-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Ejemplo de mapa 3</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-default" id="choropleth-hum-example">
+<a class="reference internal image-reference" href="../../../_images/choropleth_hum_example.png"><img alt="../../../_images/choropleth_hum_example.png" src="../../../_images/choropleth_hum_example.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Sudán del Sur: Seguimiento de la situación humanitaria, abril-mayo de 2024. Refugios dañados (fuente: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf">REACH</a>).</span><a class="headerlink" href="#choropleth-hum-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Ejemplo de mapa 4</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-default" id="en-m4-operational-overview-example">
+<a class="reference internal image-reference" href="../../../_images/en_m4_operational_overview_example.png"><img alt="../../../_images/en_m4_operational_overview_example.png" src="../../../_images/en_m4_operational_overview_example.png" style="width: 650px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Panorama de las operaciones o mapa de actividades de respuesta (fuente: <a class="reference external" href="https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024">Grupo temático de refugios de emergencia de Vanuata</a>).</span><a class="headerlink" href="#en-m4-operational-overview-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><section id="mapas-con-simbolos-graduados-y-coropleticos">
+<h3>Mapas con símbolos graduados y coropléticos<a class="headerlink" href="#mapas-con-simbolos-graduados-y-coropleticos" title="Link to this heading">#</a></h3>
+<p>Los mapas con símbolos graduados y coropléticos son dos tipos de mapas temáticos muy utilizados en el ámbito
+humanitario.</p>
+<p>En esencia:</p>
+<ul class="simple">
+<li><p>Los datos se dividen en áreas en el mapa.</p></li>
+<li><p>Los <strong>mapas coropléticos</strong> son mapas que muestran datos utilizando colores o sombreado dentro de áreas geográficas específicas, como
+países, estados o condados. Ayuda a visualizar patrones o distribuciones de datos en distintas regiones. Por ejemplo, un
+mapa coroplético podría mostrar la densidad de población, donde los tonos más oscuros indican densidades más altas y los más claros,
+densidades más bajas.</p></li>
+<li><p>Los <strong>mapas con símbolos graduados</strong> utilizan círculos u otros símbolos de distintos tamaños para representar los valores de los datos en
+distintas ubicaciones. Cuanto más grande es el círculo, mayor es el valor de los datos que representa. Esto hace que sea útil para mostrar cantidades o comparar valores en diferentes
+puntos de un mapa.</p></li>
+<li><p>En los mapas coropléticos, los colores o tonos representan valores diferentes para cada zona. Normalmente, el color más oscuro o intenso significa valores más altos. La eficacia de un mapa coroplético depende del <strong>esquema de colores</strong>.</p></li>
+<li><p>Los mapas coropléticos suelen crearse <a class="reference internal" href="#/content/es/Module_3/es_qgis_data_classification.md"><span class="xref myst">clasificando</span></a> los datos geográficos en
+grupos distintos, ya sea mediante una clasificación categorizada o graduada.</p></li>
+<li><p>Los mapas con símbolos graduados se crean cambiando el tamaño de un símbolo en relación con un valor de la tabla de atributos.</p></li>
+</ul>
+<p>Los mapas coropléticos y los mapas con símbolos graduados son ideales para mostrar patrones en áreas extensas, pero deben utilizarse con cuidado, ya que no muestran con exactitud valores
+exactos dentro de cada región, si no solo un gradiente general o nivel de intensidad, y se utilizan en casi todas las aplicaciones
+de cartografía y SIG.</p>
+<figure class="align-default" id="choropleth-intro-example">
+<a class="reference internal image-reference" href="../../../_images/choropleth_intro_example.png"><img alt="../../../_images/choropleth_intro_example.png" src="../../../_images/choropleth_intro_example.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ejemplo de mapa coroplético (fuente: <a class="reference external" href="https://www.axismaps.com/guide/choropleth">Axis Maps</a>).</span><a class="headerlink" href="#choropleth-intro-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="casos-practicos">
+<h4>Casos prácticos<a class="headerlink" href="#casos-practicos" title="Link to this heading">#</a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Labor humanitaria</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En la labor humanitaria, se utilizan mapas coropléticos o mapas con símbolos graduados para lo siguiente:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Identificación de las regiones vulnerables: Los mapas pueden mostrar zonas con altos índices de pobreza, conflicto o afectadas por desastres, lo que ayuda a los equipos de respuesta a priorizar las regiones que más necesitan ayuda.</p></li>
+<li><p class="sd-card-text">Seguimiento de brotes de enfermedades: Por ejemplo, durante una epidemia, puede mostrar las zonas con altas tasas de infección, lo que ayuda a dirigir los recursos médicos y evitar una mayor propagación.</p></li>
+<li><p class="sd-card-text">Supervisión de la inseguridad alimentaria y los riesgos de hambruna: Los mapas que ilustran la escasez de alimentos ayudan a las organizaciones humanitarias a centrarse en las regiones donde la ayuda alimentaria es más necesaria.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Ciencia del medio ambiente</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Visualización de los niveles de contaminación: Representa la calidad del aire o el agua en todas las regiones, lo que ayuda a identificar las zonas contaminadas.</p></li>
+<li><p class="sd-card-text">Seguimiento de la deforestación: Los mapas que destacan los cambios en la cobertura forestal facilitan la detección de las tendencias de deforestación.</p></li>
+<li><p class="sd-card-text">Impacto climático: Las regiones propensas al aumento de la temperatura o a condiciones meteorológicas extremas pueden destacarse para contribuir a los esfuerzos de adaptación al clima.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Salud pública</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Visualización de las disparidades sanitarias: Muestra las regiones con altos índices de enfermedad, acceso deficiente a la atención sanitaria o tasas de vacunación variables.</p></li>
+<li><p class="sd-card-text">Asignación de recursos: Las autoridades sanitarias utilizan estos mapas para asignar recursos médicos en función de las zonas con mayores necesidades sanitarias.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Planificación urbana e infraestructura</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Visualización de la densidad de población: Los mapas muestran dónde se concentra la población, lo que ayuda en la planificación urbana y el desarrollo de infraestructuras.</p></li>
+<li><p class="sd-card-text">Identificación de patrones socioeconómicos: Los urbanistas utilizan estos mapas para ver los niveles de ingresos, empleo y educación en los distintos barrios.</p></li>
+</ul>
+</div>
+</details></section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="simbologia-y-estilo">
+<h2>Simbología y estilo<a class="headerlink" href="#simbologia-y-estilo" title="Link to this heading">#</a></h2>
+<p>Según el caso práctico y el tipo de datos geográficos a disposición, existen múltiples formas de visualizar datos geográficos en un
+formato completo. Por ejemplo:</p>
+<ul class="simple">
+<li><p>Se puede cambiar el “estilo” y el color de los datos.</p></li>
+<li><p>Cambiar el grosor, el color de las líneas o asignar un patrón de guiones.</p></li>
+<li><p>Cambiar el color y los contornos de los polígonos.</p></li>
+<li><p>Se puede asignar símbolos o imágenes a los datos geográficos.</p></li>
+<li><p>Cambiar el tamaño, el color y la orientación de los símbolos.</p></li>
+<li><p>Se puede añadir etiquetas de texto.</p></li>
+<li><p>Se puede cambiar el tipo de letra, el color y la orientación de la etiqueta de texto.</p></li>
+<li><p>Para los datos ráster, se puede asignar un gradiente de color a los diferentes valores.</p></li>
+</ul>
+<p>El estilo de una capa es la forma en que se comunica la información al público. Cada capa de datos de su proyecto de QGIS
+tiene sus propias reglas de estilo. Pueden variar desde las más simples (por ejemplo, mostrar los datos de las líneas como líneas negras, asignar un color a
+los polígonos) hasta las más complejas (por ejemplo, diferenciar entre distintos tipos de carreteras, añadir patrones de relleno complejos a los polígonos
+o añadir símbolos SVG de distintos tamaños).</p>
+</section>
+<section id="simbologia">
+<h2>Simbología<a class="headerlink" href="#simbologia" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>La simbología se utiliza para cambiar el aspecto de las entidades de un mapa.</p></li>
+<li><p>Hace que los mapas sean más atractivos visualmente y más fáciles de leer.</p></li>
+<li><p>Los colores y estilos representan una información específica.</p></li>
+<li><p>La simbología se aplica a las capas, pero dentro de la misma capa podemos asignar diversos estilos a las entidades.</p></li>
+<li><p>La simbología de una capa puede modificarse en <strong>función de uno de los atributos de la capa</strong>.</p></li>
+</ul>
+<!--ADD: EXAMPLES OF DIFFERENT STYLING METHODS FOR SIMPLE GEODATA (e.g. houses in different colours, roads in different thickness or colous, points as point symbols or hospital symbols)-->
+<!---- To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.-->
+</section>
+<section id="colores">
+<h2>Colores<a class="headerlink" href="#colores" title="Link to this heading">#</a></h2>
+<p>Los colores son sin duda las variables visuales más llamativas, ya que se distinguen fácilmente. Sin embargo, según el
+tipo de datos y la información que desea transmitir, hay algunos aspectos que debe tener en cuenta a la hora de elegir una combinación de colores
+para su mapa. Las variables más importantes para los colores son el <strong>tono</strong>, el <strong>valor</strong> (saturación) y la
+<strong>transparencia</strong>.</p>
+<p>Los esquemas de colores pueden ser <strong>categóricos, secuenciales o divergentes</strong>. Si desea mostrar diferentes tipos de edificios o
+carreteras, los esquemas de color deben ser categóricos. Los gradientes de color, ya sean secuenciales o divergentes, se utilizan para
+datos numéricos o datos que pueden ordenarse. Por ejemplo, para el tamaño de población de los distritos, lo mejor es utilizar un esquema
+de colores secuencial para mostrar la diferencia relativa entre los valores. Sin embargo, si los datos tienen valores positivo <strong>y</strong> negativo
+debe utilizarse un gradiente de color divergente.</p>
+<figure class="align-default" id="en-colour-gradients-qualities">
+<a class="reference internal image-reference" href="content/fig/en_colour_gradients_qualities.png"><img alt="content/fig/en_colour_gradients_qualities.png" src="content/fig/en_colour_gradients_qualities.png" style="width: 750px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Diferentes tipos de esquemas de colores.</span><a class="headerlink" href="#en-colour-gradients-qualities" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A la hora de elegir gradientes de color, lo más adecuado suele ser un degradado de más claro a más oscuro, ya que
+la gradación se distingue fácilmente y se traduce bien en blanco y negro. En la figura siguiente, los ejemplos A y B no son
+buenas combinaciones de colores, ya que es difícil distinguir la gradación y no se traducen bien al negro y al
+blanco. Puede conseguir una secuencia clara graduando la <strong>saturación</strong> del gradiente de color.</p>
+<figure class="align-default" id="de-colour-gradients-saturation">
+<a class="reference internal image-reference" href="content/fig/de_colour_gradients_saturation.png"><img alt="content/fig/de_colour_gradients_saturation.png" src="content/fig/de_colour_gradients_saturation.png" style="width: 750px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ejemplos de diferentes gradientes de color traducidos a blanco y negro. Preste atención al degradado de saturación debajo
+de cada ejemplo. (Fuente: Stauffer, Reto y Mayr, Georg y Dabernig, Markus y Zeileis, Achim. (2014). Somewhere Over the
+Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological
+Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)</span><a class="headerlink" href="#de-colour-gradients-saturation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Los gradientes de color también pueden abarcar múltiples tonos:</p>
+<figure class="align-default" id="colour-gradients-hues">
+<a class="reference internal image-reference" href="content/fig/colour_gradients_hues.png"><img alt="content/fig/colour_gradients_hues.png" src="content/fig/colour_gradients_hues.png" style="width: 750px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Degradado de un solo tono a la izquierda; degradado de varios tonos a la derecha.</span><a class="headerlink" href="#colour-gradients-hues" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>El <a class="reference internal" href="#colorbrewer2.org"><span class="xref myst">sitio web Colourbrewer</span></a> es una herramienta rápida y útil para seleccionar y
+generar paletas de colores para su caso práctico.</p>
+</div>
+<section id="daltonismo">
+<h3>Daltonismo<a class="headerlink" href="#daltonismo" title="Link to this heading">#</a></h3>
+<p>Al elegir los colores, hay que tener en cuenta que los gradientes de color (especialmente los degradados divergentes de rojo a verde) pueden ser difíciles o imposibles de distinguir para las personas daltónicas.</p>
+<figure class="align-default" id="colour-blindness">
+<a class="reference internal image-reference" href="content/fig/Colour_Blindness.png"><img alt="content/fig/Colour_Blindness.png" src="content/fig/Colour_Blindness.png" style="width: 750px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Diferentes esquemas de colores para las personas con problemas de visión cromática (fuente: Jenny, Bernhard, y Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. <em>Cartographic Perspectives</em>, núm. 58 (1 de septiembre de 2007): 61-67. <a class="reference external" href="https://doi.org/10.14714/CP58.270">https://doi.org/10.14714/CP58.270</a>).</span><a class="headerlink" href="#colour-blindness" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="mapas-complejos">
+<h2>Mapas complejos<a class="headerlink" href="#mapas-complejos" title="Link to this heading">#</a></h2>
+<p>Los distintos métodos de simbolización analizados en este capítulo pueden combinarse de distintas formas para crear informes y mapas sofisticados. Combinando varios métodos, puede comunicar al lector distintos fenómenos de forma intuitiva. Un ejemplo clásico es la combinación de un mapa de coroplético (colores graduados) con un mapa de círculos proporcionales (consultar <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_complex_map_lebanon</span></code>).</p>
+<p><strong>Mapa complejo 1:</strong></p>
+<figure class="align-default" id="en-complex-map-lebanon">
+<a class="reference internal image-reference" href="../../../_images/en_complex_map_lebanon.png"><img alt="../../../_images/en_complex_map_lebanon.png" src="../../../_images/en_complex_map_lebanon.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Mapa complejo con colores graduados y círculos proporcionales (fuente: <a class="reference external" href="https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024">REACH</a>).</span><a class="headerlink" href="#en-complex-map-lebanon" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Mapa complejo 2:</strong></p>
+<figure class="align-default" id="en-complex-bivariate-map">
+<a class="reference internal image-reference" href="../../../_images/en_complex_bivariate_map.png"><img alt="../../../_images/en_complex_bivariate_map.png" src="../../../_images/en_complex_bivariate_map.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Un mapa complejo que combina el estilo de las capas y distintas variables visuales para comunicar una situación compleja (fuente: <a class="reference external" href="https://rcrcsims.org/portfolio/view/18">SIMS</a>).</span><a class="headerlink" href="#en-complex-bivariate-map" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Mapa complejo 3:</strong></p>
+<figure class="align-default" id="en-complex-map-example-yemen">
+<a class="reference internal image-reference" href="../../../_images/en_complex_map_example_yemen.png"><img alt="../../../_images/en_complex_map_example_yemen.png" src="../../../_images/en_complex_map_example_yemen.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Un mapa complejo que utiliza colores graduados para indicar la profundidad de las inundaciones, así como el riesgo de inundación para los sitios de los desplazados internos (fuente: <a class="reference external" href="https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024">REACH</a>).</span><a class="headerlink" href="#en-complex-map-example-yemen" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">¡Es su turno!</p>
+<p><code class="xref std std-numref docutils literal notranslate"><span class="pre">en_complex_map_lebanon</span></code><code class="xref std std-numref docutils literal notranslate"><span class="pre">en_complex_bivariate_map</span></code> y <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_complex_map_example_yemen</span></code> utilizan colores graduados y símbolos graduados. ¿Qué otros principios de simbolización puede detectar en estos mapas?</p>
+</div>
+<p>Ahora que hemos aprendido las diferentes variables visuales, y sabemos cómo utilizarlas para crear mapas complejos, el siguiente capítulo <a class="reference internal" href="#/content/es/Module_4/es_qgis_styling_vector_data.md"><span class="xref myst">Simbología para datos vectoriales</span></a> explicará cómo configurar diferentes métodos de simbolización y estilo en QGIS.</p>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<ol class="arabic simple">
+<li><p><strong>¿Qué son las “variables visuales” (variables gráficas) y cómo ayudan en el diseño de mapas?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Las variables visuales son propiedades gráficas de los símbolos cartográficos (puntos, líneas, polígonos) que pueden variarse para codificar información (por ejemplo, tono, valor, tamaño, forma, orientación, textura).</p></li>
+<li><p class="sd-card-text">Ayudan a diseñar la representación visual de los datos geográficos para comunicar la información:</p>
+<ul>
+<li><p class="sd-card-text">utilizar el tamaño para mostrar la magnitud;</p></li>
+<li><p class="sd-card-text">utilizar diferentes colores para distinguir las clases, y</p></li>
+<li><p class="sd-card-text">utilizar la intensidad de un color (valor) para mostrar la progresión o el aumento de intensidad de un fenómeno.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Bien elegido</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>¿Por qué es importante tener en cuenta los esquemas de color (tono, valor, saturación) al diseñar mapas?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">El <strong>tono</strong> es la “familia de colores” (rojo, azul, verde, etc.); sirve para <strong>distinguir categorías</strong>.</p></li>
+<li><p class="sd-card-text">El <strong>valor</strong> (o claridad/oscuridad) da una sensación de orden: más oscuro → más, más claro → menos. Útil para datos cuantitativos.</p></li>
+<li><p class="sd-card-text">La <strong>saturación</strong> (intensidad del color) influye en lo vivo o apagado que parece un color; una saturación alta llama la atención, una saturación baja pasa desapercibida.</p></li>
+</ul>
+<p class="sd-card-text">El uso de combinaciones inadecuadas (por ejemplo, tonos adyacentes muy saturados o pequeñas diferencias de valor) puede reducir el contraste, hacer que las entidades no se distingan o provocar “vibraciones” de color o ilusiones ópticas.
+El esquema debe ser perceptivamente eficaz, accesible (por ejemplo, para lectores daltónicos), coherente y adecuado al tipo de datos (nominales versus ordinales versus de intervalo) y al propósito del mapa.</p>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>¿Cuál es la diferencia entre esquemas de colores categóricos (cualitativos), secuenciales y divergentes? ¿Cuándo es apropiado cada uno?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Categórico (cualitativo)</strong>
+Se utiliza para datos nominales (sin orden inherente). Cada categoría recibe un tono (o forma) distinto sin que ello implique magnitud. Ejemplo: tipos de uso del suelo (forestal, urbano, agua).</p></li>
+<li><p class="sd-card-text"><strong>Secuencial</strong>
+Se utiliza para datos que progresan en una dirección (bajo → alto). Suele ser un único tono cuyo valor o saturación cambia gradualmente (por ejemplo, de claro a oscuro). Adecuado, por ejemplo, a la densidad de población, los ingresos o la temperatura.</p></li>
+<li><p class="sd-card-text"><strong>Divergente</strong>
+Se utiliza para datos que se desvían en torno a un punto medio significativo (por ejemplo, cero, media). Dos tonos contrastantes se apartan de un color neutro central. Ejemplo: mapas de cambio (crecimiento positivo frente a descenso negativo), anomalías por encima/por debajo de la media.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="4">
+<li><p><strong>¿Cuáles son algunas formas más comunes de estilizar datos vectoriales (líneas, puntos, polígonos)? Proporcione ejemplos (p. ej., cambiar el trazo, el relleno, usar símbolos).</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul>
+<li><p class="sd-card-text"><strong>Puntos:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Cambiar la forma del símbolo (círculo, cuadrado, estrella).</p></li>
+<li><p class="sd-card-text">Tamaño variable en función del atributo (símbolo proporcional).</p></li>
+<li><p class="sd-card-text">Usar el color o el relleno para la clasificación.</p></li>
+<li><p class="sd-card-text">Añadir contorno (trazo) o halo para contrastar.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Líneas:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Ajustar el trazo (ancho) para indicar la magnitud (p. ej., hacer las carreteras principales más gruesas).</p></li>
+<li><p class="sd-card-text">Usar diferentes estilos de línea (continua, discontinua, punteada) para las categorías.</p></li>
+<li><p class="sd-card-text">Cambiar el color de las líneas para distinguir tipos (p. ej., ríos, carreteras, límites administrativos).</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Polígonos:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Usar el color de relleno (tono + valor) para indicar la categoría o la intensidad.</p></li>
+<li><p class="sd-card-text">Usar la transparencia (opacidad) para que se vean las entidades del fondo.</p></li>
+<li><p class="sd-card-text">Usar trazos (bordes) de ancho o color variable (tipos de énfasis o límites).</p></li>
+<li><p class="sd-card-text">Añadir sombreados, texturas o rellenos de patrones para obtener detalles categóricos.</p></li>
+</ul>
+<div class="docutils">
+</div>
+</li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p class="sd-card-text"><strong>¿Qué es un mapa coroplético? ¿En qué se diferencia de un mapa con símbolos graduados?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Un mapa coroplético es un mapa temático en el que las áreas (polígonos) están sombreadas o coloreadas según el valor de una variable (con frecuencia normalizada, p. ej., per cápita). Se rellena todo el polígono con el color (tono/valor) que representa la magnitud de esa variable.</p></li>
+<li><p class="sd-card-text">Un mapa con símbolos graduados (o símbolos proporcionales/graduados) utiliza símbolos (normalmente puntos situados dentro de regiones o centroides) cuyo tamaño (o posiblemente color) varía para representar la magnitud de los datos. Los polígonos subyacentes podrían permanecer sin sombrear o ligeramente estilizados.</p></li>
+</ul>
+</div>
+</details></div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module 4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-visuales">Variables visuales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uso-de-variables-visuales-en-cartografia">Uso de variables visuales en cartografía</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-con-simbolos-graduados-y-coropleticos">Mapas con símbolos graduados y coropléticos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#casos-practicos">Casos prácticos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simbologia-y-estilo">Simbología y estilo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simbologia">Simbología</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colores">Colores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#daltonismo">Daltonismo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-complejos">Mapas complejos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

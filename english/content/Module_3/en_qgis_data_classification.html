@@ -612,7 +612,7 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="geodata-classification">
 <h1><span class="section-number">3.3. </span>Geodata Classification<a class="headerlink" href="#geodata-classification" title="Link to this heading">#</a></h1>
 <p>Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or colour. This process enhances the organization and interpretation of spatial data.</p>
-<p>The attributes of  geodata are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes (<a class="reference internal" href="#classification-basic"><span class="std std-numref">Fig. 3.8</span></a>).</p>
+<p>The attributes of  geodata are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes (<code class="xref std std-numref docutils literal notranslate"><span class="pre">classification_basic</span></code>).</p>
 <figure class="align-center" id="classification-basic">
 <a class="reference internal image-reference" href="../../_images/classification_basic.drawio.png"><img alt="../../_images/classification_basic.drawio.png" src="../../_images/classification_basic.drawio.png" style="width: 900px;" />
 </a>
@@ -775,7 +775,7 @@ By specifying a symbol to each category, you can facilitate the interpretation o
 <p><span class="caption-number">Fig. 3.15 </span><span class="caption-text">REACH, Ukraine, IDP Collective Site Monitoring Map, Actives, July 2024 (Source: <a class="reference external" href="https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf">Reach</a>).</span><a class="headerlink" href="#example-classification-hexagons" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p class="sd-card-text">In <a class="reference internal" href="#example-classification-hexagons"><span class="std std-numref">Fig. 3.15</span></a>, each hexagonal cell holds a value for “Number of sites per 150km²” ranging from 1 to 91. The cells have been organised into 5 categories, making it easy to distinguish between the different values in each cell. By keeping the amount of classes to a minimum, the reader can read and understand the map quicker.</p>
+<p class="sd-card-text">In <code class="xref std std-numref docutils literal notranslate"><span class="pre">example_classification_hexagons</span></code>, each hexagonal cell holds a value for “Number of sites per 150km²” ranging from 1 to 91. The cells have been organised into 5 categories, making it easy to distinguish between the different values in each cell. By keeping the amount of classes to a minimum, the reader can read and understand the map quicker.</p>
 </div>
 </div>
 <p>Graduated classification is usually used for quantitative data that is <strong>interval</strong> or <strong>ratio</strong> scaled.</p>

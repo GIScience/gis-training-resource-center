@@ -1,0 +1,908 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ejercicio 4: Inundaciones en Nigeria &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module 3/es_qgis_module_3_ex4';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">3. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">3.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">3.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">3.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">3.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">3.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">4. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">4.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">4.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module 3/es_qgis_module_3_ex4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module 3/es_qgis_module_3_ex4.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicio 4: Inundaciones en Nigeria</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuentes-de-datos">Fuentes de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-4-inundaciones-en-nigeria">
+<h1>Ejercicio 4: Inundaciones en Nigeria<a class="headerlink" href="#ejercicio-4-inundaciones-en-nigeria" title="Link to this heading">#</a></h1>
+<section id="caracteristicas-del-ejercicio">
+<h2>Características del ejercicio<a class="headerlink" href="#caracteristicas-del-ejercicio" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Objetivo del ejercicio</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">En este ejercicio, aprenderá a digitalizar las posiciones de los asentamientos al crear nuevos conjuntos de datos. Además, aprenderá a enriquecer el conjunto de datos geoespaciales simples con información adicional.</p>
+<p class="sd-card-text"><strong>Tipo de ejercicio de capacitación:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Este ejercicio puede utilizarse en la capacitación en línea y presencial.</p></li>
+<li><p class="sd-card-text">Puede realizarse como ejercicio guiado o de forma individual como autoaprendizaje.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Estas habilidades son relevantes para</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Los conocimientos que se ponen a prueba en este ejercicio son necesarios para todos los usuarios de SIG.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Duración estimada del ejercicio</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">El ejercicio dura aproximadamente una hora, dependiendo del número de participantes y capacitadores.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Artículos relevantes en Wiki</strong>:</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_interface_wiki.md"><span class="xref myst">Interfaz de QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_geodata_types_wiki.md"><span class="xref myst">Tipos de datos geoespaciales</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_import_geodata_wiki.md"><span class="xref myst">Importación de datos geoespaciales en QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_layer_concept_wiki.md"><span class="xref myst">Concepto de capa</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md"><span class="xref myst">Tabla de atributos</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_table_functions_wiki.md"><span class="xref myst">Función de tabla: agregar campo</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_categorized_wiki.md"><span class="xref myst">Clasificación de datos geoespaciales: por categorías</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#/content/es/Wiki/es_qgis_graduated_wiki.md"><span class="xref myst">Clasificación de datos geoespaciales: graduado</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer">Digitalización: datos de punto</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="instrucciones-para-capacitadores">
+<h2>Instrucciones para capacitadores<a class="headerlink" href="#instrucciones-para-capacitadores" title="Link to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Rincón del instructor</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="preparar-la-capacitacion">Preparar la capacitación</h3>
+<ul class="simple">
+<li><p class="sd-card-text">Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.</p></li>
+<li><p class="sd-card-text">Prepare un pizarrón. Puede ser una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra en Miro) en la que los participantes puedan agregar sus resultados y preguntas.</p></li>
+<li><p class="sd-card-text">Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado <strong>y descomprimido</strong> la carpeta de datos.</p></li>
+<li><p class="sd-card-text">Consulte <a class="reference internal" href="#/content/es/Trainers_corner/es_how_to_training.md#how-to-do-trainings"><span class="xref myst">¿Cómo hacer capacitaciones?</span></a> para obtener consejos generales sobre cómo impartirlas.</p></li>
+</ul>
+<h3 class="rubric" id="impartir-la-capacitacion">Impartir la capacitación</h3>
+<p class="sd-card-text"><strong>Introducción:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Presente la idea y el objetivo del ejercicio.</p></li>
+<li><p class="sd-card-text">Proporcione el enlace de descarga y asegúrese de que todos hayan descomprimido la carpeta antes de comenzar las tareas.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Guía paso a paso:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Muestre y explique cada paso al menos dos veces y de manera pausada para que todos puedan ver lo que está haciendo y aplicarlo en su propio proyecto de QGIS.</p></li>
+<li><p class="sd-card-text">Pregunte con regularidad si alguien necesita ayuda o si todos están siguiendo el ejercicio, para asegurarse de que todos comprenden y realizan los pasos por sí mismos.</p></li>
+<li><p class="sd-card-text">Mantenga una actitud abierta y paciente ante cualquier pregunta o problema que pueda surgir. Los participantes están haciendo varias tareas a la vez: prestan atención a sus instrucciones y las aplican en su propio proyecto de QGIS.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Cierre de la sesión:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Dedique tiempo al final del ejercicio a cualquier problema o pregunta relacionada con las tareas que pueda surgir.</p></li>
+<li><p class="sd-card-text">Reserve tiempo para preguntas abiertas.</p></li>
+</ul>
+</div>
+</details></section>
+<section id="fuentes-de-datos">
+<h2>Fuentes de datos<a class="headerlink" href="#fuentes-de-datos" title="Link to this heading">#</a></h2>
+<p>Descargue la carpeta de datos <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip">aquí</a> y guárdela en su PC. Descomprima el archivo .zip.
+La carpeta se llama “Module_3_Exercise_1_Flood_Nigeria” y contiene toda la <a class="reference internal" href="#/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure"><span class="xref myst">estructura de carpetas estándar</span></a> con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/kontur-boundaries-nigeria">Nigeria: División administrativa con población agregada (“kontur_boundaries_NG_20230628.gpkg”)</a>-Kontor</p></li>
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas">Nigeria: Datos de inundaciones (“Nigeria_flood_2022_affacted_population”)</a>- UN OCHA. Este conjunto de datos se manipuló con fines de formación.</p></li>
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/satellite-detected-water-extents-between-1-and-25-october-2022-over-nigeria?force_layout=desktop">Extensiones de agua detectadas por satélite entre el 1 y el 25 de octubre de 2022 sobre Nigeria (VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp)</a> UNOSAT</p></li>
+</ul>
+</section>
+<section id="tareas">
+<h2>Tareas<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h2>
+<p>Nuestro objetivo es elaborar una visión general del impacto de las inundaciones de 2022 en el estado de Burco, en Nigeria. Para ello, visualizaremos el estado y los distritos afectados, además de digitalizar las comunidades supuestamente afectadas.</p>
+<ol class="arabic simple">
+<li><p>Abra QGIS y cree un <a class="reference internal" href="#/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch"><span class="xref myst">nuevo proyecto</span></a> haciendo clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
+<li><p>Una vez creado el proyecto <a class="reference internal" href="#/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#save"><span class="xref myst">guarde el proyecto</span></a> en la carpeta “project” del ejercicio “Modul3_Exercise_1_Flood_Nigeria”. Para hacer esto, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> y navegue hasta la carpeta. Nombre al proyecto de la siguiente manera: “Nigeria_Borno_flood_2022”.</p></li>
+<li><p>Cargue el GeoPackage “kontur_boundaries_NG_20230628.gpkg” en su proyecto mediante arrastrar y soltar (<a class="reference internal" href="#/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop"><span class="xref myst">Wiki Video</span></a>). O haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> y navegue hasta “kontur_boundaries_NG_20230628.gpkg”. Seleccione el archivo y hacer clic en <code class="docutils literal notranslate"><span class="pre">Open</span></code>. De vuelta en QGIS, haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab"><span class="xref myst">Wiki Video</span></a>).
+Este conjunto de datos contiene todas las áreas de división administrativa (admin 0 a 5) con la población respectiva de las áreas.</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Los archivos GeoPackage pueden contener varios archivos e incluso proyectos QGIS completos. Cuando cargue un archivo de este tipo en QGIS aparecerá una ventana en la que deberá seleccionar los archivos que desea cargar en su proyecto de QGIS.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>En primer lugar, queremos exportar el estado de Borno desde kontur_boundaries_NG_20230628 para tenerlo como capa vectorial independiente. Para hacer esto,</p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos de “kontur_boundaries_NG_20230628” al hacer clic derecho en la capa -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md"><span class="xref myst">Wiki Video</span></a>).</p></li>
+<li><p>Busque la fila del estado de Borno y márquela al hacer clic en el número que aparece en el extremo izquierdo de la tabla de atributos. La fila aparecerá en azul y la zona del estado de Borno se volverá amarilla en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature"><span class="xref myst">Wiki Video</span></a>).</p></li>
+<li><p>Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. Debemos guardar Borno como GeoPackage, así que ajuste <code class="docutils literal notranslate"><span class="pre">Format</span></code> de manera correspondiente. Haga clic en los tres puntos y navegue hasta su carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code>. Aquí puede darle el nombre a la capa “AOI_Borno_admin1” y hacer clic en <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Ahora debería ver el mismo nombre en el campo <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code>. Haga clic en <code class="docutils literal notranslate"><span class="pre">ok</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file"><span class="xref myst">Wiki Video</span></a>)</p></li>
+</ul>
+</li>
+<li><p>En los siguientes pasos, debemos crear una capa vectorial con áreas admin 2 o en Nigeria llamadas Local Government Areas (LGA) con la población en nuestro proyecto.
+Como solo necesitamos las LGA, tenemos que exportarlas del conjunto de datos original.</p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos de la capa “kontur_boundaries_NG_20230628” al hacer clic derecho en la capa -&gt; <code class="docutils literal notranslate"><span class="pre">Attribute</span> <span class="pre">Table</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md"><span class="xref myst">video en Wiki</span></a>). Consulte la tabla de atributos. Se verán dos columnas de niveles de administrador “admin levels” y “<a class="reference external" href="https://wiki.openstreetmap.org/wiki/Key:admin_level">osm_admin_levels</a>”. Ambos tienen valores diferentes. En los <a class="reference external" href="https://data.humdata.org/dataset/kontur-boundaries-nigeria">metadatos</a> del conjunto de datos en HDX, podemos ver que la columna “osm_admin_levels” se refiere a los niveles de administración utilizados en OpenStreetMaps (OSM). Hay una <a class="reference external" href="https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries">lista</a> de qué niveles de administración oficiales corresponden a qué niveles de administración OSM. Las LGA corresponden a osm admin <strong>nivel 6</strong>. Esto significa que debemos exportar todas las entidades con <code class="docutils literal notranslate"><span class="pre">osm_admin_level</span></code> = <code class="docutils literal notranslate"><span class="pre">6</span></code>.</p></li>
+<li><p>Para exportar exactamente estas entidades utilizaremos la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">attribute</span></code>. Abra la página <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_interface_wiki.md#toolbox-toolbars"><span class="xref myst">así se hace</span></a>) y busque la herramienta.
+Abra la herramienta y elija como <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> la capa “kontur_boundaries_NG_20230628.gpkg”. En <code class="docutils literal notranslate"><span class="pre">Selection</span> <span class="pre">attribute</span></code> elija la columna <code class="docutils literal notranslate"><span class="pre">osm_admin_level</span></code>. El <code class="docutils literal notranslate"><span class="pre">Operator</span></code> tiene que ser <code class="docutils literal notranslate"><span class="pre">=</span></code> y como <code class="docutils literal notranslate"><span class="pre">value</span></code> utilizamos <code class="docutils literal notranslate"><span class="pre">6</span></code> ya que los LGA tienen el osm_admin_level 6.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Extracted</span> <span class="pre">(attribute)</span></code>, haga clic en los tres puntos -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code>, navegue hasta su carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code>, y dele nombre a la nueva capa “Nigeria_admin2_pop”. Haga clic en <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Nombre la capa con el mismo nombre (“Nigeria_admin2_pop”). Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> y luego en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Ahora tenemos que extraer todas las LGA de Borno. Para hacer esto, utilizaremos la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#select-by-expression"><span class="xref myst">Wiki Video</span></a>). Busque la herramienta en <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> y ábrela.</p>
+<ul class="simple">
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> utilizaremos “Nigeria_admin2_pop”.</p></li>
+<li><p>Para <code class="docutils literal notranslate"><span class="pre">By</span> <span class="pre">comparing</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">features</span> <span class="pre">from</span></code> utilizamos la capa “AOI_Borno_admin1”.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Geometric</span> <span class="pre">predicate</span></code> utilizamos <code class="docutils literal notranslate"><span class="pre">are</span> <span class="pre">within</span></code>.</p></li>
+<li><p>Para guardar el resultado, haga clic en los tres puntos de <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">(location)</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code> y vaya a la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code>. Guarde la nueva capa con el nombre “Borno_admin2_pop”. Dé a la nueva capa el mismo <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> y haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>Abra la tabla de atributos de la nueva capa. Debería haber 27 entidades.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="m3ex4-extract-by-location">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_extract_by_location_nigeria_flood.png"><img alt="../../../_images/en_qgis_extract_by_location_nigeria_flood.png" src="../../../_images/en_qgis_extract_by_location_nigeria_flood.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Ya tenemos nuestras áreas de administración y ahora podemos empezar a enriquecer estas capas con datos adicionales relacionados con la inundación de 2022.
+Abra el archivo de Excel o PDF “Nigeria_flood_2022_affacted_population” y abra la hoja Borno. Encontrará una tabla con las LGA y las comunidades que se vieron afectadas por la inundación. Ahora queremos añadir parte de la información a nuestra capa “Borno_admin2_pop”. Para hacer esto, hay dos modos. Uno sencillo, pero más lento, y otro más complicado, pero mucho más rápido. Vamos a mostrar el modo fácil, pero en el menú desplegable de abajo puede encontrar el tutorial para el modo avanzado también.</p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos de “Borno_admin2_pop” y active el modo de edición al hacer clic en <img alt="" src="../../../_images/mActionToggleEditing.png" /> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing"><span class="xref myst">Wiki Video</span></a>). Ahora puede editar los datos directamente en la tabla.</p></li>
+<li><p>En primer lugar, debemos agregar una nueva columna con el nombre “Flood_afffected”. Para hacer esto, haga clic en <img alt="" src="../../../_images/mActionNewAttribute.png" />. En la ventana <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code>, tiene que agregar el nombre y establecer el <code class="docutils literal notranslate"><span class="pre">Type</span></code> a <code class="docutils literal notranslate"><span class="pre">Text(string)</span></code>. Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md#add-new-column"><span class="xref myst">Wiki Video</span></a>).</p></li>
+<li><p>En el siguiente paso, revise en la tabla Excel/PDF qué LGA se han visto afectadas y seleccione “Sí” en la tabla de atributos para esas LGA.</p></li>
+<li><p>Cuando haya terminado, haga clic en <img alt="" src="../../../_images/mActionSaveEdits.png" /> para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en <img alt="" src="../../../_images/mActionToggleEditing.png" />(<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing"><span class="xref myst">Wiki Video</span></a>).</p></li>
+</ul>
+</li>
+<li><p>Para visualizar el conjunto de datos enriquecidos, utilizamos la función “Clasificación por categorías”. Esto significa que seleccionamos una columna de la tabla de atributos y utilizamos el contenido como categorías para ordenar y mostrar los datos (<a class="reference internal" href="#/content/es/Wiki/es_qgis_categorized_wiki.md"><span class="xref myst">Wiki Video</span></a>).</p>
+<ul class="simple">
+<li><p>Haga clic derecho en la capa “Borno_admin2_pop” en <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>En la parte superior encontrará un menú desplegable. Ábralo y elija <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. En <code class="docutils literal notranslate"><span class="pre">Value</span></code> seleccione “Flood_affected”.</p></li>
+<li><p>Más abajo, haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.  Ahora debería ver todos los valores únicos o atributos de la columna “Flood_affected” seleccionada. Puede ajustar los colores al hacer doble clic en una fila del campo central. Una vez que haya terminado, haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code> y <code class="docutils literal notranslate"><span class="pre">OK</span></code> para cerrar la ventana de simbología.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="m3ex4-classification">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_categorized_classification_nigeria_flood_exercise.png"><img alt="../../../_images/en_qgis_categorized_classification_nigeria_flood_exercise.png" src="../../../_images/en_qgis_categorized_classification_nigeria_flood_exercise.png" style="width: 600px;" />
+</a>
+</figure>
+<ol class="arabic" start="9">
+<li><p>A continuación, debemos visualizar las comunidades afectadas que se indican en la tabla Nigeria_flood_2022_affected_population. Para encontrar estas comunidades en QGIS, necesitamos dos cosas. Un mapa base de OpenStreetMap y el complemento <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>.</p>
+<ul class="simple">
+<li><p>Para añadir el OSM como mapa base, haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">XYZ</span> <span class="pre">Layer…</span></code>. Elija <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code> y haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code>.
+Organice su capa en <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> de forma que el OSM esté en la parte inferior (<a class="reference internal" href="#/content/es/Wiki/es_qgis_basemaps_wiki.md"><span class="xref myst">Wiki Video</span></a>).</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>No se puede interactuar con un mapa base.
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Para añadir el complemento <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>, haga clic en <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">All</span></code> y busque <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span></code>. Una vez que lo haya encontrado, haga clic sobre él y luego en <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code>. Puede abrir <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code> como cualquier otro panel, haciendo clic en <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Panels</span></code> y marcando <code class="docutils literal notranslate"><span class="pre">OSM</span> <span class="pre">Place</span> <span class="pre">Search</span> <span class="pre">Panel</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_plugins_wiki.md#installation-of-plugins"><span class="xref myst">video en Wiki</span></a>).</p></li>
+<li><p>En el panel, puede buscar lugares en OpenStreetMap escribiendo el nombre del lugar en la barra de búsqueda. A menudo tiene sentido añadir información adicional, como el nombre del país. Por ejemplo, pruebe con “Laujeri Bulama, Nigeria”.</p></li>
+</ul>
+</li>
+<li><p>Ahora ya tenemos todas nuestras herramientas. En el siguiente paso, creamos una nueva capa de vectores de puntos desde cero para digitalizar la ubicación de las comunidades afectadas.</p>
+<ul class="simple">
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_digitisation_wiki.md#create-a-new-layer"><span class="xref myst">video en Wiki</span></a>)</p></li>
+</ul>
+<ul class="simple">
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Database</span></code>, haga clic en <img alt="" src="../../../_images/Three_points.png" /> y vaya a la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code>. Asigne al nuevo conjunto de datos el nombre “Borno_affected_communities_point”. Haga clic en <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ul>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Seleccione <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+</ul>
+<ul class="simple">
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">dimension</span></code> debe asegurarse siempre de que <code class="docutils literal notranslate"><span class="pre">None</span></code> está marcada.</p></li>
+<li><p>Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”. Por defecto, QGIS selecciona el SRC del proyecto.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code> puede añadir columnas a la nueva capa. Añada la columna “Name”.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code> = “Name”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Seleccione <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Data</span></code></p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Fields</span> <span class="pre">List</span></code> <img alt="" src="../../../_images/mActionNewAttribute.png" /> para añadir la nueva columna a <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>La nueva capa aparecerá en <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code></p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="m3ex4-create-point-layer">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_create_point_layer_nigeria_flood_exercise.png"><img alt="../../../_images/en_qgis_create_point_layer_nigeria_flood_exercise.png" src="../../../_images/en_qgis_create_point_layer_nigeria_flood_exercise.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>Actualmente el nuevo “Borno_affected_communities_point” está vacío. Para añadir entidades podemos utilizar la <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code>. Si no puede ver la barra de herramientas, utilice <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> y compruebe <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbar</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_digitisation_wiki.md#creation-of-point-data"><span class="xref myst">video en Wiki</span></a>). <img alt="" src="../../../_images/Digitizing_Toolbar.png" /></p>
+<ul class="simple">
+<li><p>Seleccione la capa de puntos “Borno_affected_communities_point” en el panel de capas. Vaya a la barra de herramientas de digitalización y haga clic en <img alt="" src="../../../_images/mActionToggleEditing.png" />. Ahora la capa está en el modo de edición.</p></li>
+<li><p>Buscar una comunidad afectada según la tabla “Nigeria_flood_2022_affacted_population”. Una vez que haya encontrado uno, haga clic en <img alt="" src="../../../_images/mActionCapturePoint.png" />. Haga clic izquierdo en la entidad que desea digitalizar.</p></li>
+<li><p>Al hacer clic, aparecerá una ventana <code class="docutils literal notranslate"> <span class="pre">Borno_affected_communities_point</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code>. Aquí puede añadir el nombre de la ubicación.</p></li>
+<li><p>Repita el mismo proceso para tantas comunidades como quiera.</p></li>
+<li><p>Cuando haya terminado de digitalizar, haga clic en <img alt="" src="../../../_images/mActionSaveEdits.png" /> para guardar sus modificaciones.</p></li>
+<li><p>Haga clic de nuevo en <img alt="" src="../../../_images/mActionToggleEditing.png" /> para cerrar el modo de edición.</p></li>
+</ul>
+</li>
+<li><p>En este paso, queremos añadir al mapa información sobre la población. Esto nos ayudará a visualizar dónde hay más personas potencialmente afectadas.
+Dado que la capa “Borno_admin2_pop” contiene esta información, podemos publicar esta capa.</p>
+<ul class="simple">
+<li><p>Para hacer esto, haga clic derecho en la capa -&gt; <code class="docutils literal notranslate"><span class="pre">Duplicate</span> <span class="pre">Layer</span></code>. El nombre de la nueva capa será “Borno_admin2_pop_copy”.</p></li>
+</ul>
+</li>
+<li><p>Dado que los números absolutos de población son números naturales, no podemos utilizar la clasificación por categorías. En su lugar, utilizamos la opción <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_graduated_wiki.md"><span class="xref myst">video en Wiki</span></a>).</p>
+<ul class="simple">
+<li><p>Haga clic derecho en la capa “Borno_admin2_pop_copy” en <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>En la parte superior hay un menú desplegable. Ábralo y elija <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Value</span></code> seleccionar “Population”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">ramp</span></code>: Seleccionar una rampa de color de blanco a verde. Como queremos visualizar la población, es importante utilizar colores neutros.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Mode</span></code>: Recuento equitativo (cuantil)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Classes</span></code>: 5</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code></p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code></p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="m3ex4-graduated-classif">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_graduated_classification_nigeria_flood_exercise.png"><img alt="../../../_images/en_qgis_graduated_classification_nigeria_flood_exercise.png" src="../../../_images/en_qgis_graduated_classification_nigeria_flood_exercise.png" style="width: 600px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="14">
+<li><p>QGIS creó ahora cinco clases que cubren toda la gama de cifras de población del estado de Borno. Haga clic en la <code class="docutils literal notranslate"><span class="pre">Histogram</span></code> pestaña -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Values</span></code>. Aquí puede ver la distribución de los valores en el conjunto de datos y los límites de las clases. Vemos que la mayoría de las LGA tienen una población inferior a 300 habitantes. Pruebe otros modos de clasificación, como los cortes naturales o los intervalos equitativos.</p></li>
+</ol>
+<figure class="align-center" id="m3ex4-histogram">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png"><img alt="../../../_images/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png" src="../../../_images/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="15">
+<li><p>Para visualizar “Borno_admin2_pop” (que muestra las LGA afectadas) y “Borno_admin2_pop_copy” (que muestra los datos de población) juntos, tenemos que cambiar la simbología de “Borno_admin2_pop”.
+En primer lugar, haga clic derecho en la capa “Borno_admin2_pop” en <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.
+Actualmente, utilizamos la clasificación <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. Debemos mantenerlo. Sin embargo, solo queremos mostrar las LGA afectadas. Por lo tanto, desmarcamos la fila que corresponde a las LGA sin <code class="docutils literal notranslate"><span class="pre">Affected</span></code> = <code class="docutils literal notranslate"><span class="pre">Yes</span></code>.</p>
+<ul class="simple">
+<li><p>Haga clic derecho en la capa “Borno_admin2_pop” en <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Panel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>A continuación, haga doble clic en la fila <code class="docutils literal notranslate"><span class="pre">Yes</span></code>. Aquí tenemos dos opciones. Podemos utilizar una cuadrícula o solo los bordes.</p></li>
+<li><p>Para utilizar una cuadrícula, desplácese hacia abajo y seleccione la que más le convenga. A continuación, haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_grid_flood_exercise.png"><img alt="../../../_images/en_qgis_grid_flood_exercise.png" src="../../../_images/en_qgis_grid_flood_exercise.png" style="width: 600px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p>Para utilizar solo los bordes, hacer clic en <code class="docutils literal notranslate"><span class="pre">simple</span> <span class="pre">fill</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">style</span></code> y seleccionar <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">Brusch</span></code>. Ajuste el <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Color</span></code> a rojo o a otro color de novia. Aumente la <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">width</span></code> para agrandar los bordes. A continuación, haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_now_brush_nigeria_flood_exercise.png"><img alt="../../../_images/en_qgis_now_brush_nigeria_flood_exercise.png" src="../../../_images/en_qgis_now_brush_nigeria_flood_exercise.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic" start="16">
+<li><p>Para tener una idea más detallada de la extensión de la inundación podemos cargar la capa “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp” que muestra la extensión máxima de agua superficial entre el 9 y el 30 de octubre de 2022. Si lo desea también puede cargar “VIIRS_20220901_20220930_PermanentWater_Nigeria.shp”. En esta capa se muestran las entidades de lagos y otras aguas superficiales permanentes.
+Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctamente. Sin embargo, al comprobar la información de las capas, puede ver que las nuevas capas tienen un Sistema de Referencia de Coordenadas (SRC) diferente. Tienen el código EPSG 9707, mientras que nuestro proyecto tiene el 4326 (<a class="reference internal" href="#/content/es/Wiki/es_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-layer-data"><span class="xref myst">video en Wiki</span></a>).</p>
+<ul class="simple">
+<li><p>Haga clic derecho en la capa de datos y hacer clic en “Propiedades”.</p></li>
+<li><p>Se abrirá la ventana “Propiedades de capa” de la capa de datos. Haga clic en “Información”.</p></li>
+<li><p>En el título “Sistema de referencia de coordenadas” encontrará toda la información sobre el SRC. Los más importantes son:</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>Nombre:</strong> Aquí encontrará el código EPSG</p></li>
+<li><p><strong>Unidades:</strong> Aquí puede averiguar si es posible utilizar metros con esta capa de datos o latitud y longitud.</p></li>
+</ul>
+</li>
+<li><p>Esto se convertirá en un problema tan pronto como hagamos algo diferente de solo mostrar las capas. Puesto que debemos manipular las capas en el siguiente paso, necesitamos reproyectarlas primero (<a class="reference internal" href="#/content/es/Wiki/es_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer"><span class="xref myst">video en Wiki</span></a>).</p>
+<ul class="simple">
+<li><p>Haga clic en la <code class="docutils literal notranslate"><span class="pre">Vector</span></code> pestaña -&gt; <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">Management</span> <span class="pre">Tools</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code> o buscar la herramienta en <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span> </code>.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code> seleccione “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”</p></li>
+<li><p>Seleccione como destino CRS/EPSG-Code <strong>4326</strong>.</p></li>
+<li><p>Guarde el nuevo archivo en su carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> haciendo clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> junto a <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>, especifique el nombre del archivo como “Flood_extand_Nigeria_october_2022_reprojected”.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code></p></li>
+<li><p>Elimine la capa antigua del panel de capas al hacer clic derecho en la capa -&gt; <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">layer</span></code>.</p></li>
+</ul>
+</li>
+<li><p>La capa de extensión de la inundación cubre la totalidad de Nigeria. Podemos utilizar la herramienta <code class="docutils literal notranslate"><span class="pre">Clip</span></code> para cortarlo con la forma del estado de Borno (<a class="reference internal" href="#/content/es/Wiki/es_qgis_geoprocessing_wiki.md#clip"><span class="xref myst">video en Wiki</span></a>).</p>
+<ul class="simple">
+<li><p>Abra <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">Toolbox</span></code> (<a class="reference internal" href="#/content/es/Wiki/es_qgis_interface_wiki.md#toolbox-toolbars"><span class="xref myst">así se hace</span></a>) y buscar la herramienta <code class="docutils literal notranslate"><span class="pre">Clip</span></code>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hay <strong>dos</strong> versiones de la herramienta <code class="docutils literal notranslate"><span class="pre">Clip</span></code>. Dado que trabajamos con datos vectoriales, asegúrese de utilizar el que se encuentra en “Superposición vectorial”.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code>: “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">layer</span></code>: “AOI_Borno_admin1”</p></li>
+<li><p>Para guardar el resultado, haga clic en los tres puntos de <code class="docutils literal notranslate"><span class="pre">Clipped</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">GeoPackage</span></code>e ir a su carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code>. Guardar la capa nueva con el nombre “Flood_extend_october_2022_reprojected_Borno”. Dé a la nueva capa el mismo <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> y haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_clip_flood_exercise.png"><img alt="../../../_images/en_qgis_clip_flood_exercise.png" src="../../../_images/en_qgis_clip_flood_exercise.png" style="width: 400px;" />
+</a>
+</figure>
+<p>Genial, ya hemos hecho nuestra visualización. ¡BIEN HECHO!
+Los resultados deberían parecerse a los de la imagen siguiente.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_result_flood_exercise.png"><img alt="../../../_images/en_qgis_result_flood_exercise.png" src="../../../_images/en_qgis_result_flood_exercise.png" style="width: 600px;" />
+</a>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module 3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuentes-de-datos">Fuentes de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
