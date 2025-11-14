@@ -41,17 +41,6 @@ parts:
           - file: content/es/Module_4/es_qgis_understanding_print_layout.md
           - file: content/es/Module_4/es_qgis_map_examples.md
           - file: content/es/Module_4/es_qgis_module_4_exercises.md
-      - file: content/Module_5/en_module_5_overview.md
-        sections:
-          - file: content/Module_5/en_qgis_spatial_tools.md
-          - file: content/Module_5/en_qgis_overlay_operations.md
-          - file: content/Module_5/en_qgis_centroids.md
-          - file: content/Module_5/en_qgis_non_spatial_tools.md
-          - file: content/Module_5/en_qgis_module_5_exercises.md
-      - file: content/Module_7/en_module_7_overview.md
-        sections: 
-          - file: content/Module_7/en_qgis_automation_theory.md
-          - file: content/Module_7/en_qgis_module_7_exercises.md
   - caption: Rincón de los Capacitadores
     chapters: 
       - file: content/Trainers_corner/es_TOT_intro.md  
