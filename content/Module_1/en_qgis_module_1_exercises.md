@@ -10,9 +10,7 @@
 
 This page has all the exercises from Module 1 - Introduction to GIS.
 
-In all the exercises you find a list of relevant wiki articles and videos. 
-Whenever you are stuck, have a look at the wiki. If you still have questions 
-afterwards, contact your trainers. 
+In all the exercises you find a list of relevant wiki articles and videos. Whenever you are stuck, have a look at the wiki. If you still have questions afterwards, contact your trainers. 
 
 | Exercise | Description | Focus Group | Estimated time | 
 | :-------------------- | :----------------- |:----------------- |:----------------- |

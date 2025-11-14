@@ -2,13 +2,13 @@
         async src="//gc.zgo.at/count.js"></script>
 
 
-```{figure} /fig/HeiGIT_Logo_base.svg
+:::{figure} /fig/HeiGIT_Logo_base.svg
 ---
 height: 75 
 name: HeiGIT Logo
 align: center
 ---
-```
+:::
 
 ___
 
@@ -19,13 +19,6 @@ ___
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
 :::
 
-<!---:::{card}
-:class-card: sd-text-justify sd-border-1
-__Teach GIS for Humanitarian Work__
-^^^
-The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network
-:::
--->
 
 ::::{grid} 2
 :::{card}
@@ -76,38 +69,38 @@ The primary objective is to empower individuals across various roles within the 
 The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.
 
 :::{dropdown} Basic Skills
-| Module 1 -  Introduction GIS ✨                       | Module 2 - Working with Geodata 🌍    | Module 3 - Basic GIS operations 📍           |
+| Module 1 -  Introduction GIS ✨                       | Module 2 - Working with geodata 🌍    | Module 3 - Basic GIS operations 📍           |
 | ---------------------------------------------------- | -------------------------------------- | --------------------------------------------- |
-| Installation QGIS                                    | Layer Concept in GIS                   | Data editing and creation                     |
+| Installation QGIS                                    | Layer concept in GIS                   | Data editing and creation                     |
 | Paper maps and cartography, digital maps distinction | Data Import                            | Feature attribute selection and editing       |
-| Introduction to GIS                                  | Geo features and attributes            | Feature Selection                             |
-| QGIS Interface Description                           | Vector and Raster data- Basic concepts | Spatial Queries: Select by polygon + location |
-| WebGIS Platform                                      | Vector data                            | Data  Classification                          |
-| Mobile Apps overview                                 | Vector file formats                    | Introduction to non-spatial queries           |
+| Introduction to GIS                                  | Geo features and attributes            | Feature selection                             |
+| QGIS interface description                           | Vector and raster data - basic concepts | Spatial queries: select by polygon + location |
+| WebGIS platform                                      | Vector data                            | Data  classification                          |
+| Mobile apps overview                                 | Vector file formats                    | Introduction to non-spatial queries           |
 | Examples of maps created with GIS                    | Basemap selection                      |                                               |
 |                                                      | Projections                            |                                               |
-|                                                      | Data Sources                           |                                               |
+|                                                      | Data sources                           |                                               |
 ::::
   
 :::{dropdown} Intermediate Skills
 
-| Module 4 - Representation 🗺️ | Module 5 - Intermediate GIS Operations 🌐  | Module 6 - Data analysis with QGIS 📊 |
+| Module 4 - Representation 🗺️ | Module 5 - Intermediate GIS operations 🌐  | Module 6 - Data analysis with QGIS 📊 |
 | ------------------------------- | ------------------------------------------- | -------------------------------------- |
 | Visualisation                   | Geoprocessing: Buffer                       |                                        |
 | Graphical variables             | Geoprocessing: Clip                         |                                        |
-| Styling in QGIS                 | Geoprocessing: Dissolve                     | QGIS Plugins Example: QuickOSM         |
-| Symbology and Colors            | Clip by Mask                                | Remote Sensing/ Raster Data Intro      |
-| Export/Import styles            | Clip by Extent                              |                                        |
+| Styling in QGIS                 | Geoprocessing: Dissolve                     | QGIS plugins example: QuickOSM         |
+| Symbology and colours            | Clip by nask                                | Remote sensing/Introduction to raster data      |
+| Export or import styles            | Clip by extent                              |                                        |
 | Print layout                    | Non-spatial queries                         |                                        |
-| Map composition                 | Table functions: Attribute table operations |                                        |
-| Atlas                           | Non-Spatial Joins                           |                                        |
+| Map composition                 | Attribute table operations |                                        |
+| Atlas                           | Non-spatial joins                           |                                        |
 :::
 
 :::{dropdown} Advanced Skills
-|Module 7 - Automatisation 💻| Module 8 - Remote Sensing and Raster data 🛰️ |Module 9 - Accessibility 🚑|
+|Module 7 - Automatisation 💻| Module 8 - Remote sensing and raster data 🛰️ | Module 9 - Accessibility 🚑|
 |-----------------------|---------------------|-------------------------------------|
-|Automation intro|Zonal Statistics|Accessibility analyses|
-||Extraction of raster values|Spatial analysis |
+|Introduction to automation|Zonal statistics|Accessibility analyses|
+|The model designer|Extraction of raster values|Spatial analysis |
 ||Create elevation profile||
 ||Reclassify raster data||
 :::
@@ -127,7 +120,7 @@ Nevertheless, every component of the training material is designed to be utilize
 
 :::{card} __[Trainees](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
-This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning ist not the objective of the platform.
+This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
 :::
 ::::
 ___
@@ -136,16 +129,16 @@ ___
 
 | Title | Date | Application | Organization | Format | Language | Skill Level | Info |
 |-------|------|--------------|--------------|--------|----------|-------------|------|
-|The Use of Geoinformation in Anticipatory Humanitarian Action|15.01-26.01.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Basic|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
-|Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|Englisch|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
+|The Use of Geoinformation in Anticipatory Humanitarian Action|15.01-26.01.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|English|Basic|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
+|Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|English|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
 
 ___
 
 ## Contact
 
-```{admonition} Contact the IFRC GIS Training Platform Team
+:::{admonition} Contact the IFRC GIS Training Platform Team
 You have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email under __gis-training-platform@heigit.org__
-```
+:::
 
 ## Contributing
 
@@ -160,10 +153,10 @@ Happy Mapping!
 
 :::{card}
 
-```{figure} /fig/Training_Somalia.JPG
+:::{figure} /fig/Training_Somalia.JPG
 ---
 width: 800px
 name: 
 ---
 
-```
+:::

@@ -52,10 +52,10 @@ Our first goal is to get a proper overview over the datasets and get familiar wi
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`
 
 ```{Attention}
-If a raster is displayed mostly or completely black upon loading it into QGIS, most of the time the reason is not an error or corrupted data but just the initial visualisation style
+If a raster is displayed mostly or completely black upon loading it into QGIS, most of the time the reason is not an error or corrupted data but just the initial visualisation style.
 ```
 
-4. First have a look at the DEM layer (`Pakistan_DEM`). The raster-cells of the DEM display the elevation above sea level, where are high and low lying areas located in Pakistan occording to the expandable layer legend on the left? Use the ![](/fig/mod8_ex1_informationtool.png) to click on a couple of raster-cells to obtain their values, that are the displayed in a panel on the right. 
+4. First have a look at the DEM layer (`Pakistan_DEM`). The raster-cells of the DEM display the elevation above sea level, where are high and low lying areas located in Pakistan according to the expandable layer legend on the left? Use the ![](/fig/mod8_ex1_informationtool.png) `Identify Features`-tool to click on a couple of raster-cells to obtain their values, that are the displayed in a panel on the right. 
  - What do you think is the highest and lowest elevation approximately?
  - Can you identify areas with different terrain characteristics in your DEM?
 

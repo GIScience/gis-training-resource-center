@@ -1,4 +1,4 @@
-# Map making Wiki
+# The Print Layout Composer
 
 ## Adding elements to the print layout
 
@@ -9,13 +9,13 @@
 - To move within a map select __Move item content__ button on the 
 - To zoom in on the map, while using the __Move item content__ button, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties
 
-```{figure} ../../fig/en_30.30.2_adding_a_map.png
+:::{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
 name: Add a new map
 ---
 Adding a new map to the Print Layout
-```
+:::
 
 :::: {tab-set}
 ::: {tab-item} Adding a new map
@@ -31,18 +31,19 @@ Adding a new map to the Print Layout
 
 ### Adding a title or a text box
 
-A title should describe the phenomenen represented on the map.
+A title should describe the phenomenon represented on the map.
 
 - To add text (title, explanations), use the __Add Label__ tool and draw a rectangle of the desired size.
-- In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (_Remember to use the scroll bar in the window to see all the options). 
+- In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (Remember to use the scroll bar in the window to see all the options). 
 
-```{figure} ../../fig/en_30.30.2_print_layout_add_text.png
+:::{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
 width: 750px
 name: Add text to the print layout
 ---
 Adding text to the print Layout
-```
+:::
+
 :::{dropdown} Video: Adding a textbox
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
 .mp4"></video>
@@ -71,19 +72,18 @@ Before adding a legend, make sure that:
 
 To add a legend, you can use the __add legend__ button on the __left toolbar__.
 
-
-```{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
+:::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
 ---
 width: 750px
 name: Add a legend to the print layout
 ---
 Adding a legend to the print layout
-```
+:::
 
-In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder ot remove items).  
+In the __item properties__ panel, if you keep the __'Auto update'__ option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder or remove items).  
 Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc. 
 
-If you have to many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the `Item Properties`-panel, expand the `Columns`-section and increase the __Count__.
+If you have too many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the `Item Properties`-panel, expand the `Columns`-section and increase the __Count__.
 
 :::: {tab-set}
 ::: {tab-item} Adding a legend
@@ -111,15 +111,15 @@ If you have to many items on your legend, and they don't fit on your map horizon
 
 ### Adding a scale bar
 
-Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ fielld has a __round number__ 
+Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ field has a __round number__.
 
-```{figure} ../../fig/en_30.30.2_print_layout_scale.png
+:::{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
-name: Round number for scale
+name: en_30.30.2_print_layout_scale_2
 ---
-Make sure that the scale is at a round number
-```
+Make sure that the scale is at a round number.
+:::
 
 To add a scale bar, you can use the __add scale bar__ button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions
 
@@ -131,13 +131,14 @@ To add a scale bar, you can use the __add scale bar__ button on the __left toolb
 
 _There are many other options to customize the scale bar (change the font, colours, etc.)._ 
 
-```{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
+:::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
-name: Add scale bar
+name: en_30.30.2_print_layout_add_scale_bar_2
 ---
-Add and customize the scale bar
-```
+Adding and customising the scale bar.
+:::
+
 :::{dropdown}
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
 .mp4"></video>
@@ -153,51 +154,49 @@ To create an overview map, you need to follow these steps:
 2. __Insert the overview map__ into your print layout (in the bottom right corner for example)
 3. __Lock the new map__ in the Item properties panel
 4. Add a rectangle to display the extent of your main map
-
     1. Go to the __properties__ of your Main map > scroll down until you see __"Overviews"__ 
     2. Add an Overview by clicking on the __"+" icon__
     3. __Link the main map__ by selecting it in the __"Map frame"__ option
 
 
-```{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
+:::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
-name: Overview map preparation
+name: en_30.30.2_print_layout_overview_map_preparations_2
 ---
-An overview map should show important landmarks and borders
-```
+An overview map should show important landmarks and borders.
+:::
 
-
-```{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
+:::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
-name: Add Overview map
+name: en_30.30.2_print_layout_add_overview_map_2
 ---
-Add an overview map and __lock the layer__
-```
+Adding an overview map and __locking the layers__
+:::
 
 
-```{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
+:::{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
 ---
 width: 750px
-name: Create an Overview
+name: en_30.30.2_print_layout_add_map_extent_overview_map_2
 ---
-Add a the extent of the main map to your overview map (the red rectangle on the overview)
-```
+Add the extent of the main map to your overview map (the red rectangle on the overview)
+:::
 
 :::{dropdown} Video: Setting up an overview map
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
 .mp4"></video>
 :::
 
-``` {Caution}
-This method requires you to be sure that you are not going to modify the oveview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
-```
+:::{caution}
+This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
+:::
 
 
 ## Exporting the print layout
 
-Once you are finished with the map composition, it is time to export export the print layout as a PDF or SVG file. 
+Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file. 
 
 1. On the Toolbar click on the `Export as PDF`-button.
 2. Give the new file a name and select the location you want to save it.
@@ -206,9 +205,9 @@ Once you are finished with the map composition, it is time to export export the 
 5. Click `Save` again.
 6. A new green bar will pop up underneath the toolbars. Click on the file link to __review the exported map__.
 
-```{note}
+:::{note}
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
-```
+:::
 
 
 ## Map templates
@@ -244,7 +243,7 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 
 The template directory is where QGIS is looking for layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.   
 On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
-On mac, 
+On mac, the file path usually is `~/Library/Application Support/QGIS/QGIS3/profiles/default/layouts/`. 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
 .mp4"></video>
@@ -253,16 +252,16 @@ On mac,
 
 ::::
 
-```{tip}
+:::{tip}
 The layout manager in QGIS already has a dedicated location for map templates. On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 On mac, 
 If you save templates here, you can load templates directly through the layout manager without looking for the file.
 You can also add file paths in the QGIS-template setting
-```
+:::
 
-## Generate an Atlas
+## Generating an Atlas
 
-An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
+An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
 
 1. Click on the Atlas Settings icon in the Atlas Toolbar
 2. In the new window, activate the __Generate an Atlas__ option
@@ -272,18 +271,21 @@ An Atlas will generate a new page with the same map layout for each feature in a
 6. Click on the map and navigate to the __Layer Properties__ window on the right.
 7. Scroll down until you see the option `Controlled by Atlas` and activate it.
 8. Now activate the preview of the Atlas in the __Atlas Toolbar__. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.
-9. Now you can adjust the __Margin options__ to best fit the readibility of the map. By default, it is set to 10% and this should fit most purposes.
+9. Now you can adjust the __Margin options__ to best fit the readability of the map. By default, it is set to 10% and this should fit most purposes.
 10. Before printing or exporting the atlas make sure to check every page that other elements of the map do not cover the represented region.
 
-```{Note} 
+:::{note} 
 For now the only item in the print layout that is being controlled by the Atlas is the Map we added. The other elements of the Map are the same on every page.
-```
+:::
 
 :::{dropdown} Video: Setting up an Atlas
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
 .mp4"></video>
 :::
 
-## Setting up Overview maps with an atlas
+
+### Setting up Overview maps with an atlas
 
 Setting up Overview maps with an atlas works in the same way as setting it up for a normal map. As long as you select the Map controlled by the atlas as the `map frame`, it will update automatically.
+
+
