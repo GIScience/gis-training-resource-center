@@ -1,0 +1,744 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ejercicio 3: Consultas de datos &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_3/es_qgis_m2_ex_3_data_queries';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">3. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">3.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">3.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">3.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">3.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">3.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">3.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">3.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">3.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">3.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">4. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">4.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">4.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">4.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">4.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">4.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">5. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">5.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">5.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_3/es_qgis_m2_ex_3_data_queries.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_3/es_qgis_m2_ex_3_data_queries.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicio 3: Consultas de datos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-a-articulos-de-la-wiki">Enlaces a artículos de la Wiki</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraiga-el-distrito-adm2-de-la-capa-de-limites-administrativos">Extraiga el distrito (adm2) de la capa de límites administrativos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifique-el-edificio-que-podria-verse-afectado-por-la-inundacion">Identifique el edificio que podría verse afectado por la inundación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifique-las-infraestructuras-criticas-afectadas-por-las-inundaciones">Identifique las infraestructuras críticas afectadas por las inundaciones</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Haga clic aquí para volver al resumen de ejercicios del módulo 3.</strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_exercises.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_exercises.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-3-consultas-de-datos">
+<h1>Ejercicio 3: Consultas de datos<a class="headerlink" href="#ejercicio-3-consultas-de-datos" title="Link to this heading">#</a></h1>
+<section id="caracteristicas-del-ejercicio">
+<h2>Características del ejercicio<a class="headerlink" href="#caracteristicas-del-ejercicio" title="Link to this heading">#</a></h2>
+<section id="enlaces-a-articulos-de-la-wiki">
+<h3>Enlaces a artículos de la Wiki<a class="headerlink" href="#enlaces-a-articulos-de-la-wiki" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_interface_wiki.md"><span class="xref myst">Interfaz de QGIS</span></a></p></li>
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_geodata_types_wiki.md"><span class="xref myst">Tipos de datos geoespaciales</span></a></p></li>
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_import_geodata_wiki.md"><span class="xref myst">Importación de datos geoespaciales en QGIS</span></a></p></li>
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_layer_concept_wiki.md"><span class="xref myst">Concepto de capa</span></a></p></li>
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md"><span class="xref myst">Consultas no espaciales</span></a></p></li>
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_spatial_queries_wiki.md"><span class="xref myst">Consultas espaciales</span></a></p></li>
+<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_table_functions_wiki.md"><span class="xref myst">Función de tabla: agregar campo</span></a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html#clip">Geoprocesamiento: recorte</a></p></li>
+</ul>
+</section>
+</section>
+<section id="datos">
+<h2>Datos<a class="headerlink" href="#datos" title="Link to this heading">#</a></h2>
+<p>Descargue todos los conjuntos de datos <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_3/Module_3_Exercise_3_Data_Queries.zip">aquí</a>, guarde la carpeta en su computadora y descomprima el archivo. La carpeta zip incluye lo siguiente:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>: Este archivo contiene información sobre el nivel administrativo somalí 0-2, el estado y los límites de las zonas operacionales de nivel 1 y 2 en forma de shapefiles. Los datos también pueden consultarse en <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-som">HDX</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code>: En este shapefile se ilustran las aguas superficiales detectadas por satélite en la ciudad de Beledweyne, distrito de Beledweyne, región de Hiraan, Somalia, el 12 de noviembre de 2023 a las 07:32 UTC. Los datos también están disponibles en <a class="reference external" href="https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023">HDX</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buildings_belet_weyne.geojson</span></code>: Este conjunto de datos se descarga con la <a class="reference external" href="https://export.hotosm.org/v3/exports/new/describe">herramienta de exportación HOT</a> y contiene información sobre los edificios del distrito de Beledweyne.</p></li>
+</ul>
+<p>La carpeta se llama <strong>Module_3_Exercise_3_Data_Queries</strong> y contiene toda la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#standard-folder-structure">estructura de carpetas estándar</a> con todos los datos de la carpeta de entrada.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La denominación de los distritos y estados no es coherente en los distintos conjuntos de datos. Encontrará diferentes grafías para el nombre del distrito <strong>Beledweyne</strong> en el que nos centraremos. Otras grafías podrían ser <strong>Belet Weyne</strong> o <strong>Belete Weyne</strong>. En muchos casos, tendrá que editar los valores de los conjuntos de datos para eliminar las distintas faltas de ortografía. Este proceso se denomina “limpieza de datos”.</p>
+</div>
+</section>
+<section id="tareas">
+<h2>Tareas<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Abra QGIS y cree un <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch">nuevo proyecto</a> haciendo clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code>.</p></li>
+<li><p>Una vez que se haya creado el proyecto, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save-project">guarde el proyecto</a> en la <strong>carpeta del proyecto</strong> del ejercicio <strong>Module_3_Exercise_1_Queries_Somalia</strong>. Para hacer esto, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> e ir hasta la carpeta. Nombre el proyecto de esta manera: <strong>Somalia_flood_affected_Beledweyne_2023</strong>.</p></li>
+<li><p>Para cargar los siguientes archivos en su proyecto, arrastre y suelte (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">video en Wiki</a>). O haga clic en <code class="docutils literal notranslate"><span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>. Haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> y navegue hasta el archivo. Seleccione el archivo y hacer clic en <code class="docutils literal notranslate"><span class="pre">Open</span></code>. De vuelta en QGIS, haga clic en <code class="docutils literal notranslate"><span class="pre">Add</span></code> (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab">Wiki Video</a>).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code>: Aparecerá una ventana emergente para este archivo y tendrá que decidir qué datos importar. Seleccione los polígonos.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Asegúrese de <strong>descomprimir</strong> la carpeta del ejercicio antes de cargar las capas en QGIS. QGIS no acepta archivos comprimidos.</p>
+</div>
+<section id="extraiga-el-distrito-adm2-de-la-capa-de-limites-administrativos">
+<h3>Extraiga el distrito (adm2) de la capa de límites administrativos<a class="headerlink" href="#extraiga-el-distrito-adm2-de-la-capa-de-limites-administrativos" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="4">
+<li><p>En primer lugar, queremos exportar el distrito <strong>Beledweyne</strong> de la región de Hiraan desde <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> para tenerlo como capa vectorial independiente. Para hacer esto:</p>
+<ol class="arabic simple">
+<li><p>Abra la tabla de atributos de <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> al hacer clic con el botón derecho en la capa –&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md"><span class="xref myst">video en Wiki</span></a>).</p></li>
+<li><p>Busque la fila de <code class="docutils literal notranslate"><span class="pre">Belet</span> <span class="pre">Weyne</span></code> y márquela al hacer clic en el número que está en el extremo izquierdo de la tabla de atributos. La fila se resaltará en azul y el distrito se volverá amarillo en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).</p></li>
+<li><p>Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. Queremos guardar Beledweyne como GeoPackage, así que ajuste <code class="docutils literal notranslate"><span class="pre">Format</span></code> en consecuencia. Haga clic en los tres puntos y navegue a su <strong>carpeta temporal</strong>. Aquí puede asignar a la capa el nombre <strong>AOI_Beledweyne</strong> y hacer clic en <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Ahora haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>). En este ejercicio, no reproyectaremos las capas y trabajaremos con los datos en <code class="docutils literal notranslate"><span class="pre">ESPG:4326</span> <span class="pre">-</span> <span class="pre">WGS84</span></code>.</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="identifique-el-edificio-que-podria-verse-afectado-por-la-inundacion">
+<h3>Identifique el edificio que podría verse afectado por la inundación<a class="headerlink" href="#identifique-el-edificio-que-podria-verse-afectado-por-la-inundacion" title="Link to this heading">#</a></h3>
+<ol class="arabic" start="5">
+<li><p>En los pasos siguientes, queremos identificar todos los edificios que puedan verse afectados por las recientes inundaciones. Para hacer esto utilizaremos la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code>.</p>
+<figure class="align-center" id="extract-by-location">
+<a class="reference internal image-reference" href="../../../_images/Extract_by_location_Belet_Weyne.png"><img alt="../../../_images/Extract_by_location_Belet_Weyne.png" src="../../../_images/Extract_by_location_Belet_Weyne.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La ventana de extracción por extracción en QGIS 3.36</span><a class="headerlink" href="#extract-by-location" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>En la <strong>“caja de herramientas de procesos”</strong> –&gt; Buscar <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Location</span></code></p></li>
+<li><p><strong>“Extraer entidades de”</strong>: <code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code></p></li>
+<li><p><strong>“Donde las entidades (predicado geométrico)”</strong>: <code class="docutils literal notranslate"><span class="pre">are</span> <span class="pre">within</span></code></p></li>
+<li><p><strong>“Al comparar con las entidades de”</strong>: <code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code></p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Extracted</span></code> haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File...</span></code> e navegue a su <strong>carpeta temporal</strong> y guarde la capa nueva con el nombre <strong>Beledweyne_buildings_affected</strong> y haga clic <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Ahora, haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>Ajusta tus capas de forma que sólo veas las zonas inundadas y su nueva capa <strong>Beledweyne_buildings_affected</strong>. Elimine la capa <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> y <code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code>.</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>La herramienta <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_queries_wiki.html#select-by-location"><code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">by</span> <span class="pre">Location</span></code></a> es muy similar. Esta herramienta funciona de la misma manera, pero en lugar de extraer directamente las entidades, las selecciona.</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="identifique-las-infraestructuras-criticas-afectadas-por-las-inundaciones">
+<h3>Identifique las infraestructuras críticas afectadas por las inundaciones<a class="headerlink" href="#identifique-las-infraestructuras-criticas-afectadas-por-las-inundaciones" title="Link to this heading">#</a></h3>
+<ol class="arabic" start="6">
+<li><p>En el siguiente paso, queremos identificar edificios especiales entre los edificios afectados. Abra la tabla de atributos y revise qué tipo de edificios se encuentran en la capa. Esta información se encuentra en la columna “edificio”. Puede ordenar esta columna.
+Para extraer “hospitales”, “escuelas” y “mezquitas”, podemos utilizar la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code>.</p>
+<ol class="arabic simple">
+<li><p>Busque la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> en <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Expression</span></code>: haga clic en <img alt="" src="fig/miconexpression.png" />.</p></li>
+<li><p>Se abrirá la ventana “Expresión”. Aquí podemos construir una consulta muy específica. En el panel central, abra<code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">and</span> <span class="pre">values</span></code>. Aquí se pueden ver todas las columnas de la capa. Haga clic en <code class="docutils literal notranslate"><span class="pre">building</span></code>. A la derecha, debería aparecer la opción <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code>. Haga clic en esta. Aquí puede ver ahora todos los valores únicos de la columna “edificio”.</p></li>
+<li><p>En el campo <code class="docutils literal notranslate"><span class="pre">Expression</span></code>, introduzca la siguiente expresión (consultar la figura siguiente):</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    “edificio” = &#39;hospital&#39; o
+    “edificio” = &#39;escuela&#39; o
+    “edificio” = &#39;mezquita&#39;
+    ```
+5. Haga clic en `Ok`. La ventana se cerrará y verá la expresión que ha creado en el campo `Expression` de la ventana `Extract by Expression` (véase la figura siguiente).
+6. Haga clic en `Run`. Se agregará una nueva capa temporal llamada `Matching Features` a su proyecto QGIS. Cierre la ventana `Extract by Expression`.
+
+</pre></div>
+</div>
+</li>
+</ol>
+<figure class="align-default" id="extract-by-expression1">
+<a class="reference internal image-reference" href="../../../_images/en_extract_by_expression_som.png"><img alt="../../../_images/en_extract_by_expression_som.png" src="../../../_images/en_extract_by_expression_som.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La ventana de expresión en QGIS 3.36 con una expresión para extraer los polígonos con el valor “edificios” ‘hospital’, ‘escuela’, y ‘mezquita’.</span><a class="headerlink" href="#extract-by-expression1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="extract-by-expression2">
+<a class="reference internal image-reference" href="../../../_images/en_extract_by_expression_som2.png"><img alt="../../../_images/en_extract_by_expression_som2.png" src="../../../_images/en_extract_by_expression_som2.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La ventana <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> en QGIS 3.36</span><a class="headerlink" href="#extract-by-expression2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Una capa temporal no se guardará en su proyecto QGIS, incluso después de guardar el proyecto. Las capas temporales se marcan con un <img alt="" src="../../../_images/icon_scratch_layer.png" />. Para guardar la capa de forma permanente, <kbd>Haga clic derecho</kbd> en la capa que desea hacer permanente. A continuación, seleccione la ubicación para guardar la capa nueva. Asegúrese de guardarla en la carpeta correcta (consulte <a class="reference internal" href="#/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md"><span class="xref myst">estructura de carpeta estándar</span></a>).</p>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Explore la nueva capa abriendo la tabla de atributos, activando y desactivando la capa en el panel Capas.</p></li>
+<li><p><kbd>Haga clic derecho</kbd> en la capa <code class="docutils literal notranslate"><span class="pre">Matching</span> <span class="pre">Features</span></code> y guarde en su carpeta de proyecto en <code class="docutils literal notranslate"><span class="pre">/data/output/</span></code> con el nombre <code class="docutils literal notranslate"><span class="pre">Belet_Weyne_POI_affected.gpkg</span></code>.</p></li>
+</ol>
+<p>¡Felicitaciones! La información extraída puede utilizarse ahora para realizar otros análisis o crear mapas completos de los puntos de interés afectados.</p>
+<!--ADD picture of this step-->
+<!---:::{note}
+This exercise has an optional part 2 in module 4, covering the visualisation of the processed data. 
+
+You can find the exercise [here].
+
+:::
+---></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enlaces-a-articulos-de-la-wiki">Enlaces a artículos de la Wiki</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraiga-el-distrito-adm2-de-la-capa-de-limites-administrativos">Extraiga el distrito (adm2) de la capa de límites administrativos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifique-el-edificio-que-podria-verse-afectado-por-la-inundacion">Identifique el edificio que podría verse afectado por la inundación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifique-las-infraestructuras-criticas-afectadas-por-las-inundaciones">Identifique las infraestructuras críticas afectadas por las inundaciones</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
