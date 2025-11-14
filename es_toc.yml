@@ -23,24 +23,24 @@ parts:
           - file: content/es/Module_2/es_data_sources.md
           - file: content/es/Module_2/es_qgis_basemap.md
           - file: content/es/Module_2/es_qgis_module_2_exercises.md
-      - file: content/Module_3/en_module_3_overview.md
+      - file: content/en/Module_3/es_module_3_overview.md
         sections:
-          - file: content/Module_3/en_qgis_digitisation.md
-          - file: content/Module_3/en_qgis_data_queries.md
-          - file: content/Module_3/en_qgis_data_classification.md
-          - file: content/Module_3/en_qgis_georeferencing.md
-          - file: content/Module_3/en_qgis_module_3_exercises.md
-      - file: content/Module_4/en_module_4_overview.md
+          - file: content/es/Module_3/es_qgis_digitisation.md
+          - file: content/en/Module_3/es_qgis_data_queries.md
+          - file: content/en/Module_3/es_qgis_data_classification.md
+          - file: content/en/Module_3/es_qgis_georeferencing.md
+          - file: content/en/Module_3/es_qgis_module_3_exercises.md
+      - file: content/es/Module_4/es_module_4_overview.md
         sections: 
-          - file: content/Module_4/en_qgis_map_design_I.md
-          - file: content/Module_4/en_qgis_styling_vector_data.md
-          - file: content/Module_4/en_qgis_labels_vector.md
-          - file: content/Module_4/en_qgis_working_with_styles.md
-          - file: content/Module_4/en_qgis_symbology_raster.md
-          - file: content/Module_4/en_qgis_map_design_2.md
-          - file: content/Module_4/en_qgis_understanding_print_layout.md
-          - file: content/Module_4/en_qgis_map_examples.md
-          - file: content/Module_4/en_qgis_module_4_exercises.md
+          - file: content/es/Module_4/es_qgis_map_design_I.md
+          - file: content/es/Module_4/es_qgis_styling_vector_data.md
+          - file: content/es/Module_4/es_qgis_labels_vector.md
+          - file: content/es/Module_4/es_qgis_working_with_styles.md
+          - file: content/es/Module_4/es_qgis_symbology_raster.md
+          - file: content/es/Module_4/es_qgis_map_design_2.md
+          - file: content/es/Module_4/es_qgis_understanding_print_layout.md
+          - file: content/es/Module_4/es_qgis_map_examples.md
+          - file: content/es/Module_4/es_qgis_module_4_exercises.md
       - file: content/Module_5/en_module_5_overview.md
         sections:
           - file: content/Module_5/en_qgis_spatial_tools.md
