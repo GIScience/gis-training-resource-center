@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>4.2. Overlay Operations (Clip, Dissolve, Buffer) &#8212; GIS Resource Training Center</title>
+    <title>Overlay Operations (Clip, Dissolve, Buffer) &#8212; GIS Resource Training Center</title>
   
   
   
@@ -61,8 +61,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_5/en_qgis_overlay_operations';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.4. Centroids" href="en_qgis_centroids.html" />
-    <link rel="prev" title="4.1. Spatial data processing" href="en_qgis_spatial_tools.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -128,6 +126,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -184,7 +184,7 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../es/Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../es/Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../es/Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
@@ -212,20 +212,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../es/Module_4/es_qgis_understanding_print_layout.html">3.7. Comprensión del compositor de diseño de impresión</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../es/Module_4/es_qgis_map_examples.html">3.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../es/Module_4/es_qgis_module_4_exercises.html">3.9. Ejercicios para el módulo 4</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="en_module_5_overview.html">4. Intermediate GIS Operations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_spatial_tools.html">4.1. Spatial data processing</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_centroids.html">4.4. Centroids</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_non_spatial_tools.html">4.5. Non-Spatial processing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_5_exercises.html">4.6. Exercises for Module 5</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/en_module_7_overview.html">5. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_automation_theory.html">5.1. The model designer in QGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Module_7/en_qgis_module_7_exercises.html">5.2. Exercises for Module 7</a></li>
 </ul>
 </details></li>
 </ul>
@@ -438,16 +424,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.2. Overlay Operations (Clip, Dissolve, Buffer)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">4.2.1. Clip</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries">4.2.2. Exercise: Clipping a roads layer to administrative boundaries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">4.2.3. Dissolve</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">4.2.4. Buffer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">4.2.5. Exercise: Create 10km buffer around health centres</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">4.2.6. More advanced clipping operations</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overlay Operations (Clip, Dissolve, Buffer)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">Clip</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries">Exercise: Clipping a roads layer to administrative boundaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">Dissolve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">Buffer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">Exercise: Create 10km buffer around health centres</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">More advanced clipping operations</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">4.3. Self-Assessment Questions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">Self-Assessment Questions</a></li>
 </ul>
 
             </nav>
@@ -472,21 +458,21 @@ document.write(`
 </div>
 </div>
 <section id="overlay-operations-clip-dissolve-buffer">
-<h1><span class="section-number">4.2. </span>Overlay Operations (Clip, Dissolve, Buffer)<a class="headerlink" href="#overlay-operations-clip-dissolve-buffer" title="Link to this heading">#</a></h1>
+<h1>Overlay Operations (Clip, Dissolve, Buffer)<a class="headerlink" href="#overlay-operations-clip-dissolve-buffer" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <a class="reference internal" href="#overlay-operations"><span class="std std-numref">Fig. 4.9</span></a>).</p></li>
+<li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">overlay_operations</span></code>).</p></li>
 <li><p>The difference to spatial joins is that the <strong>geometries are transformed in the process</strong>, and not primarily the attributes.</p></li>
 </ul>
 <figure class="align-default" id="overlay-operations">
 <a class="reference internal image-reference" href="../../_images/overlay_operations.png"><img alt="../../_images/overlay_operations.png" src="../../_images/overlay_operations.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.9 </span><span class="caption-text">Visual representation of different overlay operations.</span><a class="headerlink" href="#overlay-operations" title="Link to this image">#</a></p>
+<p><span class="caption-text">Visual representation of different overlay operations.</span><a class="headerlink" href="#overlay-operations" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Overlay operations include <strong>Clipping, Buffering, and Dissolving</strong>. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.</p>
 <section id="clip">
-<h2><span class="section-number">4.2.1. </span>Clip<a class="headerlink" href="#clip" title="Link to this heading">#</a></h2>
+<h2>Clip<a class="headerlink" href="#clip" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The <img alt="" src="../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> tool is used to cut a vector layer using the boundaries of another polygon layer. In other words, it extracts a portion of a dataset based on the boundaries of another.</p></li>
 <li><p>It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, producing a refined dataset.</p></li>
@@ -509,12 +495,12 @@ document.write(`
 <a class="reference internal image-reference" href="../../_images/en_clip_sudan.PNG"><img alt="../../_images/en_clip_sudan.PNG" src="../../_images/en_clip_sudan.PNG" style="width: 550px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.10 </span><span class="caption-text">Screenshot of the Clip tool with the input data.</span><a class="headerlink" href="#en-clip-sudan" title="Link to this image">#</a></p>
+<p><span class="caption-text">Screenshot of the Clip tool with the input data.</span><a class="headerlink" href="#en-clip-sudan" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="exercise-clipping-a-roads-layer-to-administrative-boundaries">
-<h2><span class="section-number">4.2.2. </span>Exercise: Clipping a roads layer to administrative boundaries<a class="headerlink" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries" title="Link to this heading">#</a></h2>
+<h2>Exercise: Clipping a roads layer to administrative boundaries<a class="headerlink" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries" title="Link to this heading">#</a></h2>
 <p>Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice toclip the data to the area of interest. In addition to clipping, data can often be filtered, in order to remove data we are not interested in.</p>
 <ol class="arabic simple">
 <li><p>Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip">here</a> .
@@ -536,7 +522,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 </div>
 </details></section>
 <section id="dissolve">
-<h2><span class="section-number">4.2.3. </span>Dissolve<a class="headerlink" href="#dissolve" title="Link to this heading">#</a></h2>
+<h2>Dissolve<a class="headerlink" href="#dissolve" title="Link to this heading">#</a></h2>
 <p>The <img alt="" src="../../_images/mAlgorithmDissolve.png" /> <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code>-tool creates a new layer and merges overlapping features from one or two vector layers. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. If you’re working with polygons, it will remove shared boundaries between them.</p>
 <p>If you turn on the “Keep disjoint features separate” option when running the tool, it’ll make sure that features or parts that don’t overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.</p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -551,14 +537,14 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <a class="reference internal image-reference" href="../../_images/en_buffer_dissolve.png"><img alt="../../_images/en_buffer_dissolve.png" src="../../_images/en_buffer_dissolve.png" style="width: 550px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Link to this image">#</a></p>
+<p><span class="caption-text">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <br /> (Source: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the next section on <strong>buffers</strong> we will be using the <strong>dissolve-tool</strong>.</p>
 </section>
 <section id="buffer">
-<h2><span class="section-number">4.2.4. </span>Buffer<a class="headerlink" href="#buffer" title="Link to this heading">#</a></h2>
-<p>Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <a class="reference internal" href="#buffering-options"><span class="std std-numref">Fig. 4.12</span></a>.</p>
+<h2>Buffer<a class="headerlink" href="#buffer" title="Link to this heading">#</a></h2>
+<p>Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">buffering_options</span></code>.</p>
 <p>Examples for analyses using buffers could be:</p>
 <ul class="simple">
 <li><p>Creating of buffer zones to protect the environment</p></li>
@@ -577,7 +563,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <a class="reference internal image-reference" href="../../_images/en_buffer_point_line_polygon.png"><img alt="../../_images/en_buffer_point_line_polygon.png" src="../../_images/en_buffer_point_line_polygon.png" style="width: 550px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.12 </span><span class="caption-text">Different kinds of buffer zones <br /> (Adapted after <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffering-options" title="Link to this image">#</a></p>
+<p><span class="caption-text">Different kinds of buffer zones <br /> (Adapted after <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffering-options" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>There are several variations in buffering. The <strong>buffer distance</strong> or <strong>buffer size can vary</strong> according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data.</p>
@@ -587,7 +573,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <a class="reference internal image-reference" href="../../_images/en_dist_in_degrees_error_msg.png"><img alt="../../_images/en_dist_in_degrees_error_msg.png" src="../../_images/en_dist_in_degrees_error_msg.png" style="width: 450px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.13 </span><span class="caption-text">The error message QGIS displays when performing distance based calculations in a geographic coordinate system.</span><a class="headerlink" href="#dist-degree-error-message" title="Link to this image">#</a></p>
+<p><span class="caption-text">The error message QGIS displays when performing distance based calculations in a geographic coordinate system.</span><a class="headerlink" href="#dist-degree-error-message" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>If…</p>
@@ -595,7 +581,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <li><p>You get a projection warning message</p></li>
 <li><p>Your layer(s) don’t show up</p></li>
 <li><p>Layers look odd ‒ e.g. squashed</p></li>
-<li><p>Error message “using degrees” when using distances (as shown in <a class="reference internal" href="#dist-degree-error-message"><span class="std std-numref">Fig. 4.13</span></a>)
+<li><p>Error message “using degrees” when using distances (as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">dist_degree_error_message</span></code>)
 … it might be a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html">projection</a> issue.</p></li>
 </ul>
 <p>To solve it, try…</p>
@@ -603,12 +589,12 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <li><p>Changing the CRS for the layer</p></li>
 <li><p>Reprojecting the layer</p></li>
 </ul>
-<p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <a class="reference internal" href="#distance-longitudes"><span class="std std-numref">Fig. 4.14</span></a>)</p>
+<p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">distance_longitudes</span></code>)</p>
 <figure class="align-default" id="distance-longitudes">
 <a class="reference internal image-reference" href="../../_images/en_dist_longitudes.png"><img alt="../../_images/en_dist_longitudes.png" src="../../_images/en_dist_longitudes.png" style="width: 450px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.14 </span><span class="caption-text">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
+<p><span class="caption-text">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
 longitude at 70 degrees latitude is only 381km. (Source: <a class="reference external" href="https://x.com/RickyAngueira/status/1594030866132410368">Ricky Angueria</a>).</span><a class="headerlink" href="#distance-longitudes" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
@@ -616,7 +602,7 @@ longitude at 70 degrees latitude is only 381km. (Source: <a class="reference ext
 </div>
 </section>
 <section id="exercise-create-10km-buffer-around-health-centres">
-<h2><span class="section-number">4.2.5. </span>Exercise: Create 10km buffer around health centres<a class="headerlink" href="#exercise-create-10km-buffer-around-health-centres" title="Link to this heading">#</a></h2>
+<h2>Exercise: Create 10km buffer around health centres<a class="headerlink" href="#exercise-create-10km-buffer-around-health-centres" title="Link to this heading">#</a></h2>
 <p>Another example relevant for humanitarian action can be the creation of a map which provides information about the coverage of health sites in the distance of 10 km.
 To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping buffer zones.</p>
 <ol class="arabic simple">
@@ -649,13 +635,13 @@ They are also downloaded and adapted from <a class="reference external" href="ht
 </div>
 </details></section>
 <section id="more-advanced-clipping-operations">
-<h2><span class="section-number">4.2.6. </span>More advanced clipping operations<a class="headerlink" href="#more-advanced-clipping-operations" title="Link to this heading">#</a></h2>
+<h2>More advanced clipping operations<a class="headerlink" href="#more-advanced-clipping-operations" title="Link to this heading">#</a></h2>
 <p>In addition to the standard QGIS operation <strong>Clip</strong>, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.</p>
 <figure class="align-default" id="gdal-clipping-tools">
 <a class="reference internal image-reference" href="../../_images/en_gdal_clipping_tools.PNG"><img alt="../../_images/en_gdal_clipping_tools.PNG" src="../../_images/en_gdal_clipping_tools.PNG" style="width: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.15 </span><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer.</span><a class="headerlink" href="#gdal-clipping-tools" title="Link to this image">#</a></p>
+<p><span class="caption-text">The GDAL tools Clip vector by extent and Clip vector by mask layer.</span><a class="headerlink" href="#gdal-clipping-tools" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="sd-tab-set docutils">
@@ -675,7 +661,7 @@ Clip vector by extent</label><div class="sd-tab-content docutils">
 <a class="reference internal image-reference" href="../../_images/en_clip_vector_by_extent.PNG"><img alt="../../_images/en_clip_vector_by_extent.PNG" src="../../_images/en_clip_vector_by_extent.PNG" style="width: 450px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.16 </span><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Link to this image">#</a></p>
+<p><span class="caption-text">Screenshot of the tool Clip vector by extent</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -691,7 +677,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 <a class="reference internal image-reference" href="../../_images/en_clip_vector_by_mask_layer.PNG"><img alt="../../_images/en_clip_vector_by_mask_layer.PNG" src="../../_images/en_clip_vector_by_mask_layer.PNG" style="width: 450px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.17 </span><span class="caption-text">Screenshot of the tool Clip vector by mask layer.</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Link to this image">#</a></p>
+<p><span class="caption-text">Screenshot of the tool Clip vector by mask layer.</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -699,7 +685,7 @@ Clip vector by mask layer</label><div class="sd-tab-content docutils">
 </section>
 </section>
 <section id="self-assessment-questions">
-<h1><span class="section-number">4.3. </span>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Link to this heading">#</a></h1>
+<h1>Self-Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Link to this heading">#</a></h1>
 <div class="note admonition">
 <p class="admonition-title">Test your knowledge</p>
 <ol class="arabic simple">
@@ -760,24 +746,6 @@ It is useful when:</p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="en_qgis_spatial_tools.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4.1. </span>Spatial data processing</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="en_qgis_centroids.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.4. </span>Centroids</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -794,16 +762,16 @@ It is useful when:</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.2. Overlay Operations (Clip, Dissolve, Buffer)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">4.2.1. Clip</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries">4.2.2. Exercise: Clipping a roads layer to administrative boundaries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">4.2.3. Dissolve</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">4.2.4. Buffer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">4.2.5. Exercise: Create 10km buffer around health centres</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">4.2.6. More advanced clipping operations</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Overlay Operations (Clip, Dissolve, Buffer)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clip">Clip</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-clipping-a-roads-layer-to-administrative-boundaries">Exercise: Clipping a roads layer to administrative boundaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolve">Dissolve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">Buffer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-create-10km-buffer-around-health-centres">Exercise: Create 10km buffer around health centres</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-advanced-clipping-operations">More advanced clipping operations</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">4.3. Self-Assessment Questions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assessment-questions">Self-Assessment Questions</a></li>
 </ul>
 
   </nav></div>
