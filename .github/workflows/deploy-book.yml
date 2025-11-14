@@ -39,7 +39,7 @@ jobs:
     - name: Combine English and Spanish builds
       run: |
         mkdir -p _site/content _site/spanish
-        cp -r english/_build/html/* _site/content/
+        cp -r english/_build/html/* _site/
         cp -r spanish/_build/html/* _site/spanish/
         echo "Created _site with English in /content and Spanish in /spanish"
         ls -R _site
