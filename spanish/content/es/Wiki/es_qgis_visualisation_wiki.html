@@ -1,0 +1,1097 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Visualización &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Wiki/es_qgis_visualisation_wiki';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Compositor de diseños de impresión" href="es_qgis_map_making_wiki.html" />
+    <link rel="prev" title="Visualización y creación de mapas en QGIS" href="es_qgis_representation_wiki.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/es_module_3_overview.html">3. Operaciones básicas de los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_digitisation.html">3.1. Digitalización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_queries.html">3.2. Selección y consulta de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_classification.html">3.3. Clasificación de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_georeferencing.html">3.4. Georreferenciación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_module_3_exercises.html">3.5. Ejercicios para el módulo 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">4. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">4.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">4.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">4.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">4.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/es_module_5_overview.html">5. Operaciones intermedias del SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_spatial_tools.html">5.1. Procesamiento de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_overlay_operations.html">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_centroids.html">5.4. Centroides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_non_spatial_tools.html">5.5. Procesamiento no espacial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_module_5_exercises.html">5.6. Ejercicios para el módulo 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/es_module_7_overview.html">6. Automatización con QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_automation_theory.html">6.1. El diseñador de modelos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_module_7_exercises.html">6.2. Ejercicios para el módulo 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_qgis_basics_wiki.html">Conceptos básicos de QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_installation_wiki.html">Instalación de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_interface_wiki.html">Interfaz de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_projects_folder_structure_wiki.html">Proyectos y estructura de carpetas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_projections_wiki.html">Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_basemaps_wiki.html">Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_plugins_wiki.html">Complementos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_data_sources_wiki.html">Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_licensing_data.html">Licencias de datos (trabajar con conjuntos de datos con licencia)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_geodata_wiki.html">Datos geográficos generales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_geodata_types_wiki.html">Tipos de datos geográficos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_import_geodata_wiki.html">Importación de datos geográficos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_OpenStreetMap_wiki.html">Datos de OpenStreetMap (OSM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_layer_concept_wiki.html">Concepto de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_attribute_table_wiki.html">Tabla de atributos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_digitisation_wiki.html">Digitalización</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_data_classification_wiki.html">Clasificación de datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_single_symbol_wiki.html">Clasificación por símbolo único</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_categorised_wiki.html">Clasificación por categorías</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_graduated_wiki.html">Clasificación graduada</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_geoprocessing_wiki.html">Procesamiento espacial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_queries_wiki.html">Consultas espaciales y no espaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_queries_wiki.html">Consultas espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_non_spatial_queries_wiki.html">Consultas no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_table_functions_wiki.html">Manipulación de la tabla de atributos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_joins_wiki.html">Unir datos geográficos (uniones espaciales y no espaciales)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_joins_wiki.html">Uniones espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_non_spatial_joins_wiki.html">Uniones no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_raster_wiki.html">Datos ráster</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_raster_basic_wiki.html">Operaciones básicas de ráster</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_automation_wiki.html">Automatización en QGIS (el diseñador de modelos)</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="es_qgis_representation_wiki.html">Visualización y creación de mapas en QGIS</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Visualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_map_making_wiki.html">Compositor de diseños de impresión</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_common_errors_and_Issues.html">Errores y problemas comunes en QGIS <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="es_web_and_mobile_apps_wiki.html">Aplicaciones SIG para web y móviles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es_geodata_management_sharepoint.html">Gestión de datos geoespaciales con SharePoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Wiki/es_qgis_visualisation_wiki.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Wiki/es_qgis_visualisation_wiki.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Visualización</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-datos-vectoriales">Visualización de datos vectoriales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simbologia">Simbología</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etiquetas">Etiquetas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-datos-raster">Visualización de datos ráster</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asignacion-de-un-gradiente-de-color-a-datos-raster">Asignación de un gradiente de color a datos ráster</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invertir-la-rampa-de-colores">Invertir la rampa de colores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exportacion-e-importacion-de-estilos">Exportación e importación de estilos</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="visualizacion">
+<h1>Visualización<a class="headerlink" href="#visualizacion" title="Link to this heading">#</a></h1>
+<p><strong>🔙<a class="reference internal" href="#/content/es/intro.md"><span class="xref myst">Volver a la página de inicio</span></a></strong></p>
+<section id="visualizacion-de-datos-vectoriales">
+<h2>Visualización de datos vectoriales<a class="headerlink" href="#visualizacion-de-datos-vectoriales" title="Link to this heading">#</a></h2>
+<section id="simbologia">
+<h3>Simbología<a class="headerlink" href="#simbologia" title="Link to this heading">#</a></h3>
+<p>QGIS ofrece varias formas de visualizar datos vectoriales. En la pestaña Symbology, puede seleccionar entre varios métodos de simbolización</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Símbolo único</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Asigna un símbolo a cada entidad del conjunto de datos, sin importar si los atributos son diferentes.</p></li>
+</ul>
+<p><strong>Por ejemplo</strong>, asigne un símbolo de hospital a una capa que solo contenga puntos que muestren la ubicación de hospitales.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Categorizado</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Clasifica las entidades en categorías utilizando un atributo (<code class="docutils literal notranslate"><span class="pre">Value</span></code>).</p></li>
+<li><p>Se crea una categoría para cada valor único de este atributo.</p></li>
+<li><p>Se puede signar a un símbolo diferente a cada categoría.</p></li>
+<li><p>Puede utilizarse tanto para datos nominales como ordinales.</p></li>
+</ul>
+<p><strong>Por ejemplo</strong>, asigne un símbolo diferente para cada tipo de edificio (industrial, comercial, público, residencial,…)</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Graduado</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Crea clases para datos numéricos.</p></li>
+<li><p>Se puede seleccionar un gradiente de color para representar la distribución de los datos</p></li>
+</ul>
+<p><strong>Por ejemplo</strong>, cree seis clases de tamaños de población y asigne un gradiente de color de blanco a rojo para indicar el tamaño de la población en un distrito.</p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Basado en reglas</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Cree reglas utilizando una expresión y asigne un símbolo a las entidades en las que se aplica la regla.</p></li>
+<li><p>Puede especificar con mayor precisión las entidades que desea simbolizar.</p></li>
+<li><p>Puede utilizar valores de distintos atributos (por ejemplo, tipo de edificio y distrito urbano).</p></li>
+<li><p>El constructor de expresiones le ayuda a crear reglas mostrando los valores, campos, operadores, etc. disponibles.</p></li>
+</ul>
+<p><strong>Por ejemplo</strong>, seleccione un símbolo para cada centro de salud que sea un hospital y que haya superado su capacidad.</p>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Mostrar sólo los contornos de los polígonos</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En este ejemplo, queremos cambiar la simbología de una sola capa para que <strong>solo sean visibles los contornos de los polígonos</strong>.</p>
+<p class="sd-card-text">Para cambiar la simbología de una sola capa:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Abra la página <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> y vaya a la pestaña symbology. Por defecto, la simbología se establecerá en <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. Esto significa que se aplicarán los mismos colores y contornos a todos las entidades de esa capa.</p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code></p></li>
+<li><p class="sd-card-text">Haga clic en la flecha situada a la derecha de <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code></p></li>
+<li><p class="sd-card-text">Marque la opción <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-vector-layer-styling-transparent-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_vector_layer_styling_transparent.png"><img alt="content/fig/en_30.30.2_vector_layer_styling_transparent.png" src="content/fig/en_30.30.2_vector_layer_styling_transparent.png" style="width: 500px;" />
+</a>
+</figure>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Cambiar el estilo de varias capas superpuestas</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">En este ejercicio, aplicaremos el mismo estilo a todas las entidades de una capa, pero cambiaremos varias capas y las superpondremos para que cada una sea visible con un estilo diferente. Tenemos los polígonos para tres niveles administrativos.</p>
+<figure class="align-default" id="en-30-30-2-changing-layer-style-1-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_changing_layer_style_1.png"><img alt="content/fig/en_30.30.2_changing_layer_style_1.png" src="content/fig/en_30.30.2_changing_layer_style_1.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Ordene las capas y vaya al panel de estilo de la capa superior</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-1-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Añada los <code class="docutils literal notranslate"><span class="pre">Adm0</span></code>, <code class="docutils literal notranslate"><span class="pre">Adm1</span></code> y <code class="docutils literal notranslate"><span class="pre">Adm2</span></code> shapefiles a su proyecto de la Sesión 2.</p></li>
+<li><p class="sd-card-text">Ordene las capas para que todas sean visibles: Ponga la capa <code class="docutils literal notranslate"><span class="pre">Adm2</span></code> en la parte inferior, luego la <code class="docutils literal notranslate"><span class="pre">Adm1</span></code> y después <code class="docutils literal notranslate"><span class="pre">Adm0</span></code>. Al principio, esto puede parecer raro porque <code class="docutils literal notranslate"><span class="pre">Adm0</span></code> lo cubrirá todo.</p></li>
+<li><p class="sd-card-text">Cambie la simbología de la capa Adm0 abriendo el panel de estilos y yendo hasta la pestaña Symbology.</p></li>
+</ol>
+<figure class="align-left" id="en-30-30-2-changing-layer-style-2-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_changing_layer_style_2.png"><img alt="content/fig/en_30.30.2_changing_layer_style_2.png" src="content/fig/en_30.30.2_changing_layer_style_2.png" style="width: 350px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Cambiar el tipo de relleno</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-2-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> para abrir las opciones de estilo.</p></li>
+<li><p class="sd-card-text">Despliegue el menú <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code> y marque la opción <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code>. Esto hará visibles solo los límites, por lo que <strong>podremos ver la capa bajo ésta</strong>.</p></li>
+<li><p class="sd-card-text">Elija un <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Colour</span></code>, y haga que el <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Width</span></code> sea de 0,66 milímetros.</p></li>
+<li><p class="sd-card-text">Haga clic en OK</p></li>
+<li><p class="sd-card-text"><strong>Repita el mismo proceso</strong> para la capa Adm1, utilizando el mismo color que para Adm0 (estará en “Recent colors” y deje el ancho del trazo en 0,26.</p></li>
+<li><p class="sd-card-text">Ahora podemos ver los límites del país y sus estados, y detrás los distritos (Adm2).</p></li>
+<li><p class="sd-card-text">Hagamos que el estilo de la capa del distrito sea coherente con los demás.</p></li>
+</ol>
+<p class="sd-card-text"><br/><br/></p>
+<ol class="arabic simple" start="11">
+<li><p class="sd-card-text">Elija una <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code></p></li>
+<li><p class="sd-card-text">Utilice el mismo color de trazo` que para Adm0 y Adm1, pero haga que el ancho sea de 0,1 milímetros y el estilo de trazo <strong>Dash Line</strong></p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> y mire el mapa: ¡Parecería tener un mejor aspecto!</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-changing-layer-style-3-wiki">
+<img alt="content/fig/en_30.30.2_changing_layer_style_3.png" src="content/fig/en_30.30.2_changing_layer_style_3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">El estilo de un dato vectorial consiste en el color y el contorno</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Utilizar diferentes estilos en una misma capa</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
+.mp4"></video></p>
+<p class="sd-card-text">Podemos utilizar la simbología para <strong>mostrar la diferencia entre las entidades</strong> en la misma capa. Por ejemplo, podría tratarse de distintos tipos de edificios, cantidades de casos Covid por distrito o tipos de carreteras. Podemos elegir un atributo específico de un conjunto de datos para asignar diferentes colores, contornos o tamaños a las entidades:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Desde su carpeta shapefile, <strong>arrastre el shapefile de incidentes de seguridad ACLED a su mapa</strong></p></li>
+<li><p class="sd-card-text">Abra el <code class="docutils literal notranslate"><span class="pre">Symbology</span> <span class="pre">tab</span></code> para esa capa y elija <code class="docutils literal notranslate"><span class="pre">Categorized</span></code> en lugar de Single Symbol.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p class="sd-card-text">La simbología categorizada se utiliza cuando se dispone de <em><strong>variables</strong></em> discretas.</p>
+</div>
+<figure class="align-default" id="en-30-30-2-categorized-layer-symbology-1-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_categorized_layer_symbology_1.png"><img alt="content/fig/en_30.30.2_categorized_layer_symbology_1.png" src="content/fig/en_30.30.2_categorized_layer_symbology_1.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Cambie el tipo de simbología a “categorizada” y elija el valor (variable) que desea visualizar</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-1-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">Ahora tenemos que <strong>elegir qué atributos queremos mostrar a través de la simbología</strong>. En este caso, podría ser el número de víctimas o el actor que perpetró el acto. Clasifiquemos las entidades por <code class="docutils literal notranslate"><span class="pre">event_type</span></code></p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code> para <strong>listar todos los valores únicos contenidos</strong> en el campo <code class="docutils literal notranslate"><span class="pre">event_type</span></code> (es decir, todos los posibles tipos de incidentes de seguridad registrados en nuestra tabla)</p></li>
+<li><p class="sd-card-text">Ahora podemos <strong>cambiar el estilo de cada valor individual</strong></p></li>
+<li><p class="sd-card-text">Haga doble clic en el valor <code class="docutils literal notranslate"><span class="pre">Explosions</span></code></p></li>
+<li><p class="sd-card-text">En la parte inferior de la ventana <strong>Symbol selector</strong>, elija un símbolo para resaltar los puntos de explosión.</p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>, luego en Apply para previsualizar el aspecto que tendrá la capa.</p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> de nuevo.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-categorized-layer-symbology-2-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_categorized_layer_symbology_2.png"><img alt="content/fig/en_30.30.2_categorized_layer_symbology_2.png" src="content/fig/en_30.30.2_categorized_layer_symbology_2.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Haciendo doble clic en los <strong>unique values</strong> de la lista clasificada, puede cambiar el símbolo de cada valor</span><a class="headerlink" href="#en-30-30-2-categorized-layer-symbology-2-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">Ahora tenemos un mapa de Nigeria en el que se pueden localizar las zonas más afectadas por las explosiones. En el mapa de abajo, también hemos añadido etiquetas de texto, que se explicarán más adelante.</p>
+<figure class="align-default" id="en-exercise-map-design-example-nigeria-wiki">
+<a class="reference internal image-reference" href="content/fig/en_exercise_map_design_example_Nigeria.png"><img alt="content/fig/en_exercise_map_design_example_Nigeria.png" src="content/fig/en_exercise_map_design_example_Nigeria.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Regiones afectadas por las explosiones en Nigeria</span><a class="headerlink" href="#en-exercise-map-design-example-nigeria-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Datos de estilo basados en rangos variables (estilo “<strong>Graduado</strong>”)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si una capa contiene valores numéricos que son continuos, pueden organizarse en intervalos. Estos intervalos pueden visualizarse en colores graduados. En este ejercicio, asignamos colores a los polígonos de Adm1 en función de la población total de cada Estado.</p>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+.mp4"></video></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Descargue el archivo shapefile NGA_Adm1_Pop [link!!] y guárdelo en su carpeta shapefile</p></li>
+<li><p class="sd-card-text">En QGIS, desactive las capas Adm1 y Adm2, dejando solo Adm0</p></li>
+<li><p class="sd-card-text">Arrastre el shapefile NGA_Adm1_Pop a su mapa</p></li>
+<li><p class="sd-card-text">Abra sus opciones <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> y elija <code class="docutils literal notranslate"><span class="pre">Graduated</span></code></p></li>
+<li><p class="sd-card-text"><strong>Seleccione el valor que desea utilizar para asignar colores</strong>, en este caso, será <code class="docutils literal notranslate"><span class="pre">Population</span></code></p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-symbology-variable-ranges-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_symbology_variable_ranges.png"><img alt="content/fig/en_30.30.2_symbology_variable_ranges.png" src="content/fig/en_30.30.2_symbology_variable_ranges.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Con rangos variables, seleccione <strong>Graduated</strong> symbology elija el atributo con valores continuos</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code> para <strong>listar todos los valores divididos en clases</strong></p></li>
+<li><p class="sd-card-text">Elija <strong>en cuántas clases</strong> desea dividir los datos - digamos 4</p></li>
+<li><p class="sd-card-text">Por defecto, la rampa de color será roja. Sin embargo, el rojo no es el color adecuado para el recuento de población, ya que suele utilizarse para comunicar elementos negativos, como la inseguridad alimentaria o los casos de cólera.</p></li>
+<li><p class="sd-card-text">Haga clic en <strong>la flecha junto a la rampa de color</strong> para elegir otra combinación de colores - digamos una rampa de color de blanco a azul</p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code> para previsualizar el aspecto de su capa y, a continuación <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-symbology-variable-ranges-2-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_symbology_variable_ranges_2.png"><img alt="content/fig/en_30.30.2_symbology_variable_ranges_2.png" src="content/fig/en_30.30.2_symbology_variable_ranges_2.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Puede clasificar los valores continuos en clases y asignarles una rampa de color</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges-2-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">El siguiente mapa muestra los estados más poblados de Nigeria mediante una categorización graduada por colores. Este tipo de mapas se denominan <strong>mapas coropléticos</strong>.</p>
+<figure class="align-default" id="en-map-design-example-variable-ranges-wiki">
+<a class="reference internal image-reference" href="content/fig/en_map_design_example_variable_ranges.png"><img alt="content/fig/en_map_design_example_variable_ranges.png" src="content/fig/en_map_design_example_variable_ranges.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Mapa de la población de los estados nigerianos</span><a class="headerlink" href="#en-map-design-example-variable-ranges-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details></section>
+<hr class="docutils" />
+<section id="etiquetas">
+<h3>Etiquetas<a class="headerlink" href="#etiquetas" title="Link to this heading">#</a></h3>
+<p>Las etiquetas son textos que muestran información o valores de los datos. En QGIS, puede seleccionar <strong>Etiquetas individuales</strong> o <strong>Etiquetado basado en reglas</strong>. Para cada opción, se mostrará un atributo (<code class="docutils literal notranslate"><span class="pre">value</span></code>) en el mapa. Además, puede <strong>cambiar la fuente, el tamaño, el color y otras opciones de estilo</strong>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Etiquetas simples</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Crea un único estilo de etiqueta para cada entidad de la capa. Puede seleccionar un atributo (valor) que se mostrará. Por ejemplo, el nombre de un asentamiento. Necesita saber qué atributo muestra la información que desea. Consulte la tabla de atributos del conjunto de datos para averiguarlo.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Etiquetado basado en reglas</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p>Cree reglas mediante expresiones para seleccionar con precisión las entidades que deben etiquetarse.</p></li>
+<li><p>Cada regla puede tener un formato de texto diferente</p></li>
+</ul>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Etiquetado</p>
+<p>A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña <strong>Label</strong> o utilizar la herramienta <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">a</span> <span class="pre">Label,</span> <span class="pre">Diagram,</span> <span class="pre">or</span> <span class="pre">Callout</span></code> de la barra de herramientas <strong>Label</strong></p>
+<p>Por defecto, QGIS genera las etiquetas de manera que no se superpongan con otras etiquetas. Esto significa que no todas las etiquetas serán visibles si los datos son densos o se muestran muy cerca unos de otros. Puede optimizar la renderización en la opción de renderizado.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Añadir etiquetas a una capa</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">En el panel de estilo, haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Labels</span></code> situada debajo de la pestaña Symbology.</p></li>
+<li><p class="sd-card-text">Seleccione <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">labels</span></code>.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">&quot;Value&quot;</span></code> es donde se elige el atributo que se mostrará como etiqueta. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">*ADM1_EN*</span></code> mostrará los nombres en inglés de los estados nigerianos para cada entidad del conjunto de datos.</p></li>
+<li><p class="sd-card-text"><strong>Cambiemos la fuente</strong>: Abra el menú desplegable de fuentes y seleccione Arial. Cree el texto <code class="docutils literal notranslate"><span class="pre">Bold</span></code> en el menú desplegable Style. Cambie el color haciendo clic en <code class="docutils literal notranslate"><span class="pre">Colour</span></code> y cambie el <code class="docutils literal notranslate"><span class="pre">Size</span></code> a 8 pts</p></li>
+<li><p class="sd-card-text"><strong>Añadamos un buffer blanco</strong> alrededor de la etiqueta. En la pestaña <code class="docutils literal notranslate"><span class="pre">Labels</span></code>, encontrará una lista con diferentes opciones para diseñar las etiquetas. Ahora, estamos en el menú <code class="docutils literal notranslate"><span class="pre">Text</span></code>. Seleccione <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> y marque <code class="docutils literal notranslate"><span class="pre">Draw</span> <span class="pre">text</span> <span class="pre">buffer</span></code> la opción. Esto hará que las etiquetas se destaquen más en mapas oscuros o con mucha información.</p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code> y <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-setting-up-labels-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_setting_up_labels.png"><img alt="content/fig/en_30.30.2_setting_up_labels.png" src="content/fig/en_30.30.2_setting_up_labels.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Configurar etiquetas en QGIS 30.30.2</span><a class="headerlink" href="#en-30-30-2-setting-up-labels-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
+.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Añadir diferentes estilos de etiqueta a la misma capa</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A veces necesitará crear dos estilos de etiqueta diferentes para distintas entidades de una misma capa. En este ejemplo, crearemos un estilo de etiqueta para la <em>Capital de país</em>, y otro para las <em>Capitales de Estado</em></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Abra el panel de estilo de la capa <code class="docutils literal notranslate"><span class="pre">&quot;NGA_settlements_nga&quot;</span></code> y haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Labels</span></code></p></li>
+<li><p class="sd-card-text">Seleccione <code class="docutils literal notranslate"><span class="pre">Rule-based</span> <span class="pre">Labelling</span></code></p></li>
+<li><p class="sd-card-text">Haga clic en el botón <strong>Add Rule</strong> de la parte inferior (el signo “+”) y <strong>cree la primera regla</strong></p></li>
+<li><p class="sd-card-text">Para <strong>Value</strong>, seleccione <code class="docutils literal notranslate"><span class="pre">&quot;NAME&quot;</span></code> (para que las etiquetas muestren el nombre de cada ciudad) y, a continuación, haga clic en <code class="docutils literal notranslate"><span class="pre">&quot;ε&quot;-button</span></code> junto a la barra <strong>Filter</strong>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-adding-rule-based-labels-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_adding_rule-based_labels.png"><img alt="content/fig/en_30.30.2_adding_rule-based_labels.png" src="content/fig/en_30.30.2_adding_rule-based_labels.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Para añadir etiquetas basadas en reglas, debe introducir una expresión</span><a class="headerlink" href="#en-30-30-2-adding-rule-based-labels-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p class="sd-card-text">En la columna central, expanda <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">and</span> <span class="pre">Values</span></code> para mostrar una lista de todos los campos de su capa y haga doble clic en <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;</span></code> para <strong>añadirlo al marco de expresión</strong> de la izquierda.</p></li>
+<li><p class="sd-card-text">En la columna de la derecha, haga clic en <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code> para listar todos los valores únicos contenidos en el campo Clase. En este conjunto de datos, <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;=1</span></code> designa la capital, mientras que <code class="docutils literal notranslate"><span class="pre">&quot;CLASS&quot;=2</span></code> designa otras ciudades importantes. Familiarícese con el conjunto de datos que tiene a su disposición para saber qué representan los distintos atributos.</p></li>
+<li><p class="sd-card-text">Haga clic en el operador <code class="docutils literal notranslate"><span class="pre">&quot;=&quot;</span></code> y, a continuación, haga doble clic en <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">1</span></code> (que en este caso representa la capital del país). Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p class="sd-card-text">Desplácese hacia abajo para <strong>cambiar el estilo de la etiqueta</strong>. Elija Arial, negrita, color negro, 12pt y añada un buffer blanco.</p></li>
+<li><p class="sd-card-text"><strong>Repita los pasos 4 a 9</strong>, pero seleccione <code class="docutils literal notranslate"><span class="pre">Value</span> <span class="pre">2</span></code> (Capitales del Estado) y elija una etiqueta negra, negrita, 10pt, sin buffer.</p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code>, el <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-adding-rule-based-labels-expression-builder-wiki">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_adding_rule-based_labels_expression_builder.png"><img alt="content/fig/en_30.30.2_adding_rule-based_labels_expression_builder.png" src="content/fig/en_30.30.2_adding_rule-based_labels_expression_builder.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">El constructor de expresiones: Expresión (izquierda); módulos, operadores, campos y valores (centro); valores únicos (derecha)</span><a class="headerlink" href="#en-30-30-2-adding-rule-based-labels-expression-builder-wiki" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_labelling
+.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Añadir etiquetas subrayadas</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Configure las etiquetas siguiendo los mismos pasos que antes.</p></li>
+<li><p class="sd-card-text">Para subrayar las etiquetas, haga clic en el botón de subrayado</p></li>
+</ol>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
+.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Mover las etiquetas de forma independiente</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A veces, la colocación de las etiquetas no es la ideal y puede obstaculizar la legibilidad del mapa. En este caso, puede mover las etiquetas de forma independiente.</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">En <code class="docutils literal notranslate"><span class="pre">label</span> <span class="pre">toolbar</span></code>, hay una opción para <strong>mover las etiquetas de forma independiente</strong>. Haga clic en él para activar la herramienta. (Nota: En algunos casos, es posible que la barra de herramientas de etiquetas no esté visible. En este caso, actívela accediendo a <code class="docutils literal notranslate"><span class="pre">View</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Toolbars</span></code>&gt; activate the Label toolbar)</p></li>
+<li><p class="sd-card-text">Haga clic en la etiqueta <strong>que desee mover</strong>.</p></li>
+<li><p class="sd-card-text">Se le pedirá que seleccione la clave primaria para la unión con el almacenamiento interno de datos. <strong>No es necesario cambiarlo</strong> (puede seleccionar el campo ID del conjunto de datos) y hacer clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p class="sd-card-text">Vuelve a hacer clic en la etiqueta, ahora podrás moverla libremente.</p></li>
+</ol>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_move_labels_independently
+.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Añadir etiquetas a las carreteras</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Al trabajar con entidades lineales, las etiquetas se alinearán paralelas a la línea que representa el elemento.</p>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_add_road_labels
+.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="visualizacion-de-datos-raster">
+<h2>Visualización de datos ráster<a class="headerlink" href="#visualizacion-de-datos-raster" title="Link to this heading">#</a></h2>
+<section id="asignacion-de-un-gradiente-de-color-a-datos-raster">
+<h3>Asignación de un gradiente de color a datos ráster<a class="headerlink" href="#asignacion-de-un-gradiente-de-color-a-datos-raster" title="Link to this heading">#</a></h3>
+<p>Para asignar un gradiente de color a los datos ráster, es necesario:</p>
+<ol class="arabic simple">
+<li><p>Abra la página <code class="docutils literal notranslate"><span class="pre">styling</span> <span class="pre">panel</span></code> para la capa ráster</p></li>
+<li><p>Navegue hasta el <code class="docutils literal notranslate"><span class="pre">Symbology</span> <span class="pre">tab</span></code></p></li>
+<li><p>Por defecto, el esquema de color se establece en gris banda única (si solo tiene una banda de color en el conjunto de datos). Haga clic en <code class="docutils literal notranslate"><span class="pre">Singleband</span> <span class="pre">Gray</span></code> y cambie a <code class="docutils literal notranslate"><span class="pre">Singleband</span> <span class="pre">pseudocolour</span></code></p></li>
+<li><p>Haga clic en <strong>la flecha situada a la derecha de la rampa de color</strong>. Aquí puedes elegir una rampa de color preestablecida</p></li>
+<li><p>Puede modificar la rampa de color presionando <strong>en la rampa de color</strong>.</p></li>
+</ol>
+<figure class="align-default" id="raster-data-colour-gradient">
+<a class="reference internal image-reference" href="content/fig/en_30.30.2_raster_data_colour_gradient.png"><img alt="content/fig/en_30.30.2_raster_data_colour_gradient.png" src="content/fig/en_30.30.2_raster_data_colour_gradient.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Selector de rampa de color</span><a class="headerlink" href="#raster-data-colour-gradient" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>En el selector de rampa de color, se puede ajustar cada paso de color. En la parte inferior, puede ver un gráfico para el Tono, <strong>Saturación</strong>, <strong>Luminosidad</strong> y <strong>Opacidad</strong>. Los tres últimos son especialmente útiles para ver cómo se traducirá la rampa de color. Los degradados de claro a oscuro son más fáciles de leer: Compruebe si el gráfico de la <strong>luminosidad</strong> tiene un trazado más o menos lineal.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Estilizar un modelo digital de elevación</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Los conjuntos de datos de elevación se utilizan con frecuencia para comunicar el terreno en un mapa. Por defecto, un modelo de elevación se mostrará con una rampa de color gris. Sin embargo, si no necesita conocer la elevación en determinados puntos, puede optar por mostrar la <strong>sombra de la colina</strong> del terreno. El sombreado simulará la sombra del terreno como si estuviera expuesto a una fuente de luz. En este ejemplo, utilizaremos los datos ráster de elevación (.tiff) de Argelia de la plataforma Humanitarian Data Exchange (<a class="reference external" href="http://humdata.org">humdata.org</a>) Para conseguirlo,</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Abra la pestaña <code class="docutils literal notranslate"><span class="pre">symbology</span></code></p></li>
+<li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">type</span></code> y seleccione <code class="docutils literal notranslate"><span class="pre">Hillshade</span></code>. Tendrá la opción de seleccionar la dirección de la luz. Por convención, la fuente de luz se sitúa en el Noroeste, por lo que podemos mantener la configuración por defecto. En algunos casos con terreno accidentado, puede ser útil hacer la sombra de la colina <strong>Multidireccional</strong>.</p></li>
+<li><p class="sd-card-text">La sombra de la colina será muy oscura y cubrirá la mayor parte del mapa. Tenemos que hacerla más clara…</p></li>
+</ol>
+<!--ADD: Video-->
+</div>
+</details></section>
+<section id="invertir-la-rampa-de-colores">
+<h3>Invertir la rampa de colores<a class="headerlink" href="#invertir-la-rampa-de-colores" title="Link to this heading">#</a></h3>
+<p>En algunos casos, la rampa de colores debe invertirse para facilitar la lectura del mapa:</p>
+<ol class="arabic simple">
+<li><p>Haga clic en la flecha <strong>situada junto a la rampa de color</strong> para abrir el menú desplegable.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Invert</span> <span class="pre">Colour</span> <span class="pre">Ramp</span></code>.</p></li>
+</ol>
+</section>
+</section>
+<section id="exportacion-e-importacion-de-estilos">
+<h2>Exportación e importación de estilos<a class="headerlink" href="#exportacion-e-importacion-de-estilos" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+Guardar o exportar los ajustes de estilo</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p>Abra el panel de estilo y haga clic en <code class="docutils literal notranslate"><span class="pre">styles</span></code>. Se abrirá un menú desplegable con la opción de exportar el estilo de la capa.</p></li>
+<li><p>Como en este caso, el estilo es exactamente para ese conjunto de datos, puede dejar todas las casillas marcadas.</p></li>
+<li><p>Selecciona una ubicación y un nombre para el estilismo. El estilo se guardará en un archivo <code class="docutils literal notranslate"><span class="pre">.qml</span></code>. <strong>Asegúrese de que se guarde en la misma carpeta que el conjunto de datos y asígnele el mismo nombre que al conjunto de datos correspondiente. De este modo, al cargar los datos en QGIS, el estilo se aplicará automáticamente.</strong></p></li>
+</ol>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
+.mp4"></video></p>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+Carga de un estilo en el proyecto de QGIS</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p>Abra el gestor de estilos: <code class="docutils literal notranslate"><span class="pre">Settings</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">manager</span></code></p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">import/export</span></code> y seleccione <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">items</span></code></p></li>
+<li><p>Navegue hasta la carpeta donde está guardado el estilo y haga clic en importar.</p></li>
+<li><p>El estilo debería estar ahora disponible como preajuste en el panel de estilos.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>También puede importar estilos directamente en el panel de estilos de una capa. Pero no se añadirá a su biblioteca de estilos a menos que lo guarde en ella.</p>
+</div>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
+Uso de los símbolos de la IFRC</label><div class="sd-tab-content docutils">
+<p>Con el complemento <strong>“Plugin Resource Sharing”</strong>, puede instalar las bibliotecas de símbolos e iconos utilizadas por la Cruz Roja y la ONU, así como otros símbolos útiles.</p>
+<ol class="arabic simple">
+<li><p>Instale el <strong>“Plugin Resource Sharing”</strong> abriendo la ventana de instalación del complemento y buscándolo.</p></li>
+<li><p>Una vez instalado, abra la interfaz del complemento haciendo clic en <code class="docutils literal notranslate"><span class="pre">plugin</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Plugin</span> <span class="pre">Resource</span> <span class="pre">Sharing</span></code></p></li>
+<li><p>Búsqueda de paquetes por la Cruz Roja y la ONU</p></li>
+<li><p>Instale los paquetes.</p></li>
+</ol>
+<p>Ahora los símbolos deberían estar disponibles en el gestor de estilos en la carpeta SVG.</p>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>No deje de consultar los demás recursos disponibles en el complemento para compartir recursos y compruebe si le resultan útiles.</p>
+</div>
+</div>
+<input id="sd-tab-item-9" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-9">
+Uso de símbolos SVG</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p>Abra el panel de estilo y las opciones de <code class="docutils literal notranslate"><span class="pre">single</span> <span class="pre">marker</span></code>.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">layer</span> <span class="pre">type</span></code>, seleccione <strong>“SVG Marker”</strong></p></li>
+<li><p>Desplácese hasta el navegador SVG. Aquí encontrará todas las carpetas de sus bibliotecas SVG instaladas.</p></li>
+</ol>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
+</div>
+<input id="sd-tab-item-10" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-10">
+Añadir una biblioteca SVG externa u otras bibliotecas de estilo</label><div class="sd-tab-content docutils">
+<p>Si tiene una biblioteca de símbolos SVG en una carpeta, puede añadirlos a su gestor de estilos.</p>
+<ol class="arabic simple">
+<li><p>Abra el gestor de estilos: <code class="docutils literal notranslate"><span class="pre">setting</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">style</span> <span class="pre">manager</span></code></p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">/</span> <span class="pre">Export</span></code> y seleccione <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">items</span></code></p></li>
+<li><p>Navegue hasta la ubicación donde haya guardado la biblioteca o el estilo y seleccione el archivo (en la mayoría de los casos .qml pero el tipo de archivo también puede ser .xml)</p></li>
+<li><p>Ahora puede seleccionar los símbolos que desea importar. En la mayoría de los casos, puede seleccionar todos los símbolos.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Import</span></code>
+Los nuevos símbolos SVG están en su biblioteca SVG.</p></li>
+</ol>
+<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video></p>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Wiki"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="es_qgis_representation_wiki.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Visualización y creación de mapas en QGIS</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="es_qgis_map_making_wiki.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Compositor de diseños de impresión</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-datos-vectoriales">Visualización de datos vectoriales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simbologia">Simbología</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etiquetas">Etiquetas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-datos-raster">Visualización de datos ráster</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asignacion-de-un-gradiente-de-color-a-datos-raster">Asignación de un gradiente de color a datos ráster</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#invertir-la-rampa-de-colores">Invertir la rampa de colores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exportacion-e-importacion-de-estilos">Exportación e importación de estilos</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5.5. Procesamiento no espacial &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_5/es_qgis_non_spatial_tools';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="5.6. Ejercicios para el módulo 5" href="es_qgis_module_5_exercises.html" />
+    <link rel="prev" title="5.4. Centroides" href="es_qgis_centroids.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modulos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/es_module_3_overview.html">3. Operaciones básicas de los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_digitisation.html">3.1. Digitalización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_queries.html">3.2. Selección y consulta de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_classification.html">3.3. Clasificación de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_georeferencing.html">3.4. Georreferenciación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_module_3_exercises.html">3.5. Ejercicios para el módulo 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">4. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">4.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">4.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">4.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">4.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="es_module_5_overview.html">5. Operaciones intermedias del SIG</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_tools.html">5.1. Procesamiento de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_overlay_operations.html">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_centroids.html">5.4. Centroides</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">5.5. Procesamiento no espacial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_module_5_exercises.html">5.6. Ejercicios para el módulo 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/es_module_7_overview.html">6. Automatización con QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_automation_theory.html">6.1. El diseñador de modelos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_module_7_exercises.html">6.2. Ejercicios para el módulo 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_qgis_basics_wiki.html">Conceptos básicos de QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_installation_wiki.html">Instalación de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_interface_wiki.html">Interfaz de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html">Proyectos y estructura de carpetas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html">Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_basemaps_wiki.html">Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_plugins_wiki.html">Complementos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_data_sources_wiki.html">Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_licensing_data.html">Licencias de datos (trabajar con conjuntos de datos con licencia)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_geodata_wiki.html">Datos geográficos generales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html">Tipos de datos geográficos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html">Importación de datos geográficos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_OpenStreetMap_wiki.html">Datos de OpenStreetMap (OSM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_layer_concept_wiki.html">Concepto de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_attribute_table_wiki.html">Tabla de atributos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_digitisation_wiki.html">Digitalización</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_data_classification_wiki.html">Clasificación de datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_single_symbol_wiki.html">Clasificación por símbolo único</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_categorised_wiki.html">Clasificación por categorías</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_graduated_wiki.html">Clasificación graduada</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_geoprocessing_wiki.html">Procesamiento espacial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_queries_wiki.html">Consultas espaciales y no espaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_queries_wiki.html">Consultas espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_queries_wiki.html">Consultas no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_table_functions_wiki.html">Manipulación de la tabla de atributos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_joins_wiki.html">Unir datos geográficos (uniones espaciales y no espaciales)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_joins_wiki.html">Uniones espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_joins_wiki.html">Uniones no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_raster_wiki.html">Datos ráster</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_raster_basic_wiki.html">Operaciones básicas de ráster</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_automation_wiki.html">Automatización en QGIS (el diseñador de modelos)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_representation_wiki.html">Visualización y creación de mapas en QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_visualisation_wiki.html">Visualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_map_making_wiki.html">Compositor de diseños de impresión</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_common_errors_and_Issues.html">Errores y problemas comunes en QGIS <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_web_and_mobile_apps_wiki.html">Aplicaciones SIG para web y móviles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_geodata_management_sharepoint.html">Gestión de datos geoespaciales con SharePoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_5/es_qgis_non_spatial_tools.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_5/es_qgis_non_spatial_tools.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Procesamiento no espacial</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">5.5.1. Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniones-no-espaciales-unir-atributos-por-valor-de-campo">5.5.2. Uniones no espaciales (unir atributos por valor de campo)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-realizar-una-union-no-espacial">5.5.2.1. Ejercicio: Realizar una unión no espacial</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-de-la-tabla">5.5.3. Funciones de la tabla</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadir-campo">5.5.3.1. Añadir campo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#borrar-campo">5.5.3.2. Borrar campo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-campos">5.5.3.3. Calcular campos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-basicas-de-los-campos">5.5.3.4. Estadísticas básicas de los campos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-por-categorias">5.5.3.5. Estadísticas por categorías</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-no-espaciales">5.5.4. Consultas no espaciales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccion-manual">5.5.4.1. Selección manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccionar-por-expresion">5.5.4.2. Seleccionar por expresión</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sql">5.5.4.2.1. SQL</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generador-de-consultas">5.5.4.3. Generador de consultas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">5.5.5. Preguntas de autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="procesamiento-no-espacial">
+<h1><span class="section-number">5.5. </span>Procesamiento no espacial<a class="headerlink" href="#procesamiento-no-espacial" title="Link to this heading">#</a></h1>
+<section id="introduccion">
+<h2><span class="section-number">5.5.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
+<p>El procesamiento de datos no espaciales en QGIS se refiere a la manipulación de datos de atributos sin implicar directamente componentes o información espacial, como las relaciones espaciales o las geometrías.</p>
+<ul class="simple">
+<li><p>Modifica los atributos no geométricos de los conjuntos de datos (es decir, la tabla de atributos).</p></li>
+<li><p>El procesamiento no espacial puede utilizarse para realizar cálculos, generar estadísticas y obtener información sobre los aspectos no espaciales de los conjuntos de datos geoespaciales.</p></li>
+<li><p>QGIS ofrece diversas herramientas de procesamiento no espacial para ayudar a los usuarios a gestionar y analizar eficazmente los datos de atributos.</p></li>
+<li><p>Esto puede incluir la limpieza, transformación, enriquecimiento y análisis de datos basados en la información de atributos asociada, como estadísticas de población, clasificaciones de uso del suelo o indicadores económicos.</p></li>
+</ul>
+<figure class="align-default" id="en-attribute-table-large">
+<a class="reference internal image-reference" href="../../../_images/en_attribute_table_large.PNG"><img alt="../../../_images/en_attribute_table_large.PNG" src="../../../_images/en_attribute_table_large.PNG" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.19 </span><span class="caption-text">Captura de pantalla de una tabla de atributos para la versión 3.28.4 de QGIS.</span><a class="headerlink" href="#en-attribute-table-large" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="uniones-no-espaciales-unir-atributos-por-valor-de-campo">
+<h2><span class="section-number">5.5.2. </span>Uniones no espaciales (unir atributos por valor de campo)<a class="headerlink" href="#uniones-no-espaciales-unir-atributos-por-valor-de-campo" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Se pueden hacer muchos análisis con una sola capa. Pero, a veces, la información necesaria para nuestro análisis está <strong>dividida entre</strong> diferentes conjuntos de datos/capas de datos.</p></li>
+<li><p>Con QGIS, estas capas pueden <strong>combinarse</strong> para realizar el análisis que deseemos. La forma más sencilla de combinar capas es mediante una <strong>unión de atributos</strong>. Esta operación busca información de una segunda fuente de datos basándose en un <strong>valor de atributo compartido</strong>. Este valor funciona como identificador único común, también conocido como ID, UID o clave (véase <a class="reference internal" href="#simple-attr-join-example"><span class="std std-numref">Fig. 5.20</span></a>).</p></li>
+</ul>
+<figure class="align-default" id="simple-attr-join-example">
+<a class="reference internal image-reference" href="../../../_images/simple_attr_join_example.png"><img alt="../../../_images/simple_attr_join_example.png" src="../../../_images/simple_attr_join_example.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.20 </span><span class="caption-text">Las entradas de las dos tablas de datos pueden unirse a través del campo ID común.</span><a class="headerlink" href="#simple-attr-join-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Ejemplo en el ámbito humanitario:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">*Un flujo de trabajo SIG habitual en el ámbito humanitario que implica uniones no espaciales consiste en unir datos sobre límites administrativos utilizando códigos P como identificador común/atributo compartido.</p>
+<p class="sd-card-text">Los códigos P son códigos de identificación de unidades administrativas (por ejemplo, país (adm0), región (adm1), distrito (adm2)), que se introdujeron para simplificar la unión de datos tabulares sobre regiones administrativas. Estos códigos identifican claramente las unidades administrativas facilitando las uniones no espaciales.</p>
+<p class="sd-card-text">Por ejemplo: Tenemos un conjunto de datos espaciales que contiene los límites administrativos de los distritos (adm2) de Nigeria y una tabla de datos que contiene la población por distrito, pero sin los polígonos. Utilizando los códigos P como atributos de identificación, podemos unir fácilmente los datos de población con el conjunto de datos vectoriales.*</p>
+<figure class="align-default" id="en-attribute-join-pcode-example">
+<a class="reference internal image-reference" href="../../../_images/en_attribute_join_pcode_example.png"><img alt="../../../_images/en_attribute_join_pcode_example.png" src="../../../_images/en_attribute_join_pcode_example.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.21 </span><span class="caption-text">El código P asociado al distrito Edo Sur es NG01201.</span><a class="headerlink" href="#en-attribute-join-pcode-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul class="simple">
+<li><p>Una unión de atributos en QGIS solo funciona correctamente cuando los atributos <strong>coinciden exactamente</strong>.</p></li>
+<li><p>Por ejemplo: <strong>“S. Sudán”</strong> no coincidirá con <strong>“South Sudan”</strong>.</p></li>
+<li><p>Siempre que sea posible, lo mejor es <strong>utilizar atributos que hayan sido diseñados para la unión</strong>, como los <strong>códigos P</strong> o los <strong>identificadores</strong> que no puedan lugar a errores ortográficos.</p></li>
+</ul>
+</div>
+<section id="ejercicio-realizar-una-union-no-espacial">
+<h3><span class="section-number">5.5.2.1. </span>Ejercicio: Realizar una unión no espacial<a class="headerlink" href="#ejercicio-realizar-una-union-no-espacial" title="Link to this heading">#</a></h3>
+<p>En este breve ejercicio guiado, añadiremos los datos de población a la capa de límites administrativos (adm1).</p>
+<ol class="arabic simple">
+<li><p>Descargue las capas necesarias <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip">aquí</a>, descomprímalas y añádalas a su proyecto QGIS.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>La capa de población debe <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept.html#delimited-text-import-csv-txt">añadirse como una capa de texto delimitada</a> (<code class="docutils literal notranslate"><span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; ) sin geometría.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Abra la herramienta “Join Attributes by Field Value” de la caja de herramientas de Procesos.</p></li>
+<li><p>Como capa de entrada 1, seleccione la capa <code class="docutils literal notranslate"><span class="pre">nga_admbnda_adm1_osgof_20190417</span></code>, configure “Table Field” a <code class="docutils literal notranslate"><span class="pre">ADM1_PCODE</span></code></p></li>
+<li><p>Como capa de entrada 2, seleccione la capa <code class="docutils literal notranslate"><span class="pre">nga_adm1pop_2022</span></code>, configure “Table Field” a <code class="docutils literal notranslate"><span class="pre">ADM1_PCODE</span></code>. Además, en “Layer 2 fields to copy”, seleccione <code class="docutils literal notranslate"><span class="pre">F_TL</span></code>, <code class="docutils literal notranslate"><span class="pre">M_TL</span></code> y <code class="docutils literal notranslate"><span class="pre">T_TL</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>. Aparecerá una nueva capa en su panel de capas denominada “Joined Layer”.</p></li>
+</ol>
+<figure class="align-default" id="en-3-36-pcode-join">
+<a class="reference internal image-reference" href="../../../_images/en_3.36_pcode_join.png"><img alt="../../../_images/en_3.36_pcode_join.png" src="../../../_images/en_3.36_pcode_join.png" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.22 </span><span class="caption-text">Configurar los parámetros de la unión en código P</span><a class="headerlink" href="#en-3-36-pcode-join" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Abra la tabla de atributos de la nueva capa y desplácese hacia la derecha. Aquí encontrará los atributos unidos.</p></li>
+</ol>
+<p>¡Estupendo! Hemos añadido correctamente los datos de población a nuestra capa de límites administrativos. Ahora, podemos visualizar la distribución de la población o seguir analizando nuestros datos.</p>
+<figure class="align-default" id="nga-pop-join">
+<a class="reference internal image-reference" href="../../../_images/nga_pop_join.png"><img alt="../../../_images/nga_pop_join.png" src="../../../_images/nga_pop_join.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.23 </span><span class="caption-text">Los datos unidos se clasifican utilizando la simbología graduada para el valor de población.</span><a class="headerlink" href="#nga-pop-join" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="funciones-de-la-tabla">
+<h2><span class="section-number">5.5.3. </span>Funciones de la tabla<a class="headerlink" href="#funciones-de-la-tabla" title="Link to this heading">#</a></h2>
+<p>Las funciones de la tabla suelen implicar solo una única capa de datos y manipulan la tabla de atributos. Puede añadir nuevos campos, eliminar campos no deseados o incluso calcular nuevos campos utilizando la <strong>calculadora de campos</strong>.</p>
+<p>Para obtener una descripción general detallada de la funcionalidad de la tabla de atributos y su propósito, le invitamos a explorar el artículo de <a class="reference internal" href="../Wiki/es_qgis_attribute_table_wiki.html"><span class="std std-doc">Wiki</span></a> sobre el tema.</p>
+<section id="anadir-campo">
+<h3><span class="section-number">5.5.3.1. </span>Añadir campo<a class="headerlink" href="#anadir-campo" title="Link to this heading">#</a></h3>
+<p>Se puede acceder a la información contenida en una capa vectorial a través de su <strong>tabla de atributos</strong>, y se puede mejorar <strong>introduciendo nuevos campos</strong> en esta tabla. Estos campos adicionales pueden derivarse de cálculos, como se ejemplifica en el siguiente caso, en el que la densidad de población se calcula para proporcionar una visión más profunda de las distribuciones espaciales de la población.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>La selección del tipo de datos adecuado debe coincidir con la información que se añade al nuevo campo de atributo. Téngalo en cuenta cuando vea el video de ejemplo.</p>
+</div>
+<p><strong>Posibles tipos de datos:</strong></p>
+<p>Los más comunes son:</p>
+<ul class="simple">
+<li><p><strong>Número entero: Entero (32 y 64 bits)</strong></p></li>
+<li><p><strong>Número decimal (real)</strong></p></li>
+<li><p><strong>Texto (cadena)</strong></p></li>
+</ul>
+<p>Opciones adicionales:</p>
+<ul class="simple">
+<li><p>Fecha y hora</p></li>
+<li><p>Booleano</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Añadir un campo para la densidad de población</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video></p>
+</div>
+</details></section>
+<section id="borrar-campo">
+<h3><span class="section-number">5.5.3.2. </span>Borrar campo<a class="headerlink" href="#borrar-campo" title="Link to this heading">#</a></h3>
+<p>También es posible <strong>borrar campos</strong> de la tabla de atributos. Una práctica comúnmente utilizada es <strong>eliminar todos los campos no utilizados o innecesarios</strong> de una capa antes de empezar a trabajar en ella. Esto <strong>hace que el conjunto de datos esté mucho más organizado</strong>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Eliminar todos los campos no utilizados o innecesarios de una capa vectorial</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video></p>
+</div>
+</details></section>
+<section id="calcular-campos">
+<h3><span class="section-number">5.5.3.3. </span>Calcular campos<a class="headerlink" href="#calcular-campos" title="Link to this heading">#</a></h3>
+<p>Una práctica importante es calcular los valores de los atributos de un campo, por ejemplo, a partir de los valores de otros campos. En QGIS, puede <strong>crear un campo nuevo o actualizar un campo existente</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Es necesario <strong>comprobar si el tipo de datos del campo</strong> (nuevo o actualizado) <strong>y su cálculo coinciden</strong>. Por ejemplo, si está calculando una proporción (por ejemplo, la densidad), el campo no debe ser de tipo entero, sino de tipo número decimal.</p>
+</div>
+<p>Un ejemplo podría ser calcular la densidad de población a partir de los campos ya existentes de Población y Área.</p>
+<p>Una herramienta muy importante para estos cálculos es la <strong>calculadora de campo</strong>. Le permite <strong>realizar cálculos basados en valores de atributos existentes o funciones definidas</strong>, por ejemplo, para calcular la longitud o el área de una entidad geométrica o, en el ejemplo dado, podría utilizarse para calcular la densidad de población basándose en los campos ya existentes Población y Área. Los resultados de estos cálculos pueden escribirse en un campo nuevo o actualizar un campo existente.</p>
+<figure class="align-default" id="en-field-calculator-red-boxes">
+<a class="reference internal image-reference" href="../../../_images/en_field_calculator_red_boxes.png"><img alt="../../../_images/en_field_calculator_red_boxes.png" src="../../../_images/en_field_calculator_red_boxes.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.24 </span><span class="caption-text">Captura de pantalla de la calculadora de campo</span><a class="headerlink" href="#en-field-calculator-red-boxes" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A continuación se enumeran los grupos más importantes y sus respectivas funciones que se proporcionan con la calculadora de campo:</p>
+<ul class="simple">
+<li><p><strong>Campos y valores</strong></p>
+<ul>
+<li><p>Contiene una lista de campos de la capa</p></li>
+</ul>
+</li>
+<li><p><strong>Geometría</strong></p>
+<ul>
+<li><p>Calcula el área de una entidad de polígono: <code class="docutils literal notranslate"><span class="pre">$area</span></code></p></li>
+<li><p>Calcula la longitud de una entidad de línea: <code class="docutils literal notranslate"><span class="pre">$length</span></code></p></li>
+<li><p>Calcula el centroide de una entidad de polígono: <code class="docutils literal notranslate"><span class="pre">centroid($geometry)</span></code></p></li>
+<li><p>Calcula el cuadro delimitador de una entidad: <code class="docutils literal notranslate"><span class="pre">bounds($geometry)</span></code></p></li>
+<li><p>Calcula la distancia entre dos puntos: <code class="docutils literal notranslate"><span class="pre">distance(point_a,</span> <span class="pre">point_b)</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Matemáticas</strong></p>
+<ul>
+<li><p>Calcula la raíz cuadrada de un campo: <code class="docutils literal notranslate"><span class="pre">sqrt(&quot;field&quot;)</span></code></p></li>
+<li><p>Calcula el <code class="docutils literal notranslate"><span class="pre">min</span></code> y <code class="docutils literal notranslate"><span class="pre">max</span></code></p></li>
+</ul>
+</li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Calcular la densidad de población</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video></p>
+</div>
+</details></section>
+<section id="estadisticas-basicas-de-los-campos">
+<h3><span class="section-number">5.5.3.4. </span>Estadísticas básicas de los campos<a class="headerlink" href="#estadisticas-basicas-de-los-campos" title="Link to this heading">#</a></h3>
+<p>La herramienta <strong>Basic statistics for fields</strong> genera estadísticas para un campo específico de la tabla de atributos de una capa vectorial. Los resultados se generan como un archivo HTML y se puede acceder a ellos utilizando el enlace <strong>ruta del archivo</strong> en el <strong>Visor de resultados</strong>. Esta operación es muy valiosa para conocer a fondo los datos con los que se pretende trabajar. Permite determinar el intervalo de valores, precisar los valores mínimos y máximos. En el ejemplo proporcionado, esta operación se aplica para calcular la densidad de población global, lo que permite identificar con facilidad la región más densamente poblada del mundo.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Calcular estadísticas de densidad de población por campo para países de todo el mundo.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video></p>
+</div>
+</details></section>
+<section id="estadisticas-por-categorias">
+<h3><span class="section-number">5.5.3.5. </span>Estadísticas por categorías<a class="headerlink" href="#estadisticas-por-categorias" title="Link to this heading">#</a></h3>
+<p>Para calcular las estadísticas de un campo en función de una clase principal puede utilizar la herramienta <strong>Statistics by categories</strong>. La clase principal es una combinación de valores de otros campos.</p>
+<p><strong>Cuestiones que deben tenerse en cuenta al realizar estos cálculos:</strong></p>
+<ul class="simple">
+<li><p>¿Para qué campos deben calcularse las estadísticas en la tabla de atributos?</p></li>
+<li><p>¿Qué campo de la tabla de atributos contiene qué información?</p></li>
+</ul>
+<p>Para conseguir una mayor precisión en estos cálculos, la opción “statistics by categories” ofrece una visión más completa que las mencionadas anteriormente. En este caso, resulta sencillo determinar el número de ciudades por país con más de 300 000 habitantes y, para cada país, la población que vive en la mayor aglomeración urbana.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Ciudades de más de 300 000 habitantes y cantidad de población en las mayores aglomeraciones.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<section id="consultas-no-espaciales">
+<h2><span class="section-number">5.5.4. </span>Consultas no espaciales<a class="headerlink" href="#consultas-no-espaciales" title="Link to this heading">#</a></h2>
+<p>En SIG, puede <strong>consultar</strong> (filtrar) datos basados en información de atributos específicos. Una vez que el filtrado se ha realizado correctamente, solo se muestran las entidades deseadas que <strong>corresponden</strong> al atributo elegido. El filtrado de datos es una técnica valiosa para crear <strong>subconjuntos</strong> de entidades que pueden exportarse como una nueva capa.</p>
+<section id="seleccion-manual">
+<h3><span class="section-number">5.5.4.1. </span>Selección manual<a class="headerlink" href="#seleccion-manual" title="Link to this heading">#</a></h3>
+<p>Es posible seleccionar manualmente filas concretas haciendo clic en el número que aparece a su izquierda. Esto resulta muy útil para seleccionar un número reducido de filas. Si se seleccionan correctamente, aparecerán en <strong>amarillo</strong>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Selección manual de filas.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video></p>
+</div>
+</details></section>
+<section id="seleccionar-por-expresion">
+<h3><span class="section-number">5.5.4.2. </span>Seleccionar por expresión<a class="headerlink" href="#seleccionar-por-expresion" title="Link to this heading">#</a></h3>
+<p>En este cuadro de diálogo, puede construir sus expresiones para consultar los datos. Hay varios operadores que se pueden utilizar para filtrar su capa vectorial.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Operadores aritméticos</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>operador</p></th>
+<th class="head"><p>función</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>+</strong></p></td>
+<td><p>suma</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>-</strong></p></td>
+<td><p>resta</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>*</strong></p></td>
+<td><p>multiplicación</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/</strong></p></td>
+<td><p>división</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>%</strong></p></td>
+<td><p>resto de la división</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Operadores de comparación</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>operador</p></th>
+<th class="head"><p>función</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>=</strong></p></td>
+<td><p>igual a</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>!=</strong></p></td>
+<td><p>no igual</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>&lt;</strong></p></td>
+<td><p>menor que</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&gt;</strong></p></td>
+<td><p>mayor que</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>&lt;=</strong></p></td>
+<td><p>menor que o igual a</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>&gt;=</strong></p></td>
+<td><p>mayor que o igual a</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Operadores lógicos</label><div class="sd-tab-content docutils">
+<p>Se pueden utilizar operadores como AND, OR para combinar diferentes consultas o criterios.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>operador</p></th>
+<th class="head"><p>función</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>AND</strong></p></td>
+<td><p>lógico Y</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>OR</strong></p></td>
+<td><p>lógico O</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>NOT</strong></p></td>
+<td><p>lógico NO</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Operadores especiales</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>operador</p></th>
+<th class="head"><p>función</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>LIKE</strong></p></td>
+<td><p>concordancia de patrones</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>IN</strong></p></td>
+<td><p>comprueba si un valor está en una lista de valores</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>IS NULL</strong></p></td>
+<td><p>comprueba si hay valores null</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>BETWEEN</strong></p></td>
+<td><p>comprueba si un valor está dentro de un rango específico</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>CASE WHEN</strong></p></td>
+<td><p>expresiones condicionales</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>La consulta de sus datos para responder a preguntas más complejas es de gran importancia. Para ello, utilice la herramienta “Select by expression”. En el ejemplo proporcionado, aspiramos responder a la pregunta: ¿Qué ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, habían superado los diez millones de habitantes en 2015?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, que han superado los diez millones de habitantes en 2015.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video></p>
+</div>
+</details><section id="sql">
+<h4><span class="section-number">5.5.4.2.1. </span>SQL<a class="headerlink" href="#sql" title="Link to this heading">#</a></h4>
+<p>Otra posibilidad para crear sus expresiones es utilizar SQL.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Introducción a SQL</label><div class="sd-tab-content docutils">
+<p>SQL (Structured Query Language) es un lenguaje de programación estandarizado que se utiliza para gestionar bases de datos y realizar diversas operaciones con los datos que contienen. En el Constructor de consultas de QGIS, puede utilizar expresiones SQL para utilizar una o más condiciones para filtrar una capa.</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Hoja de referencia rápida de SQL</label><div class="sd-tab-content docutils">
+<p>Puede acceder fácilmente a los comandos esenciales de SQL consultando esta práctica <a class="reference external" href="https://www.sqltutorial.org/sql-cheat-sheet/">hoja de referencia rápida</a>. Ofrece un resumen conciso de las funciones básicas.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="generador-de-consultas">
+<h3><span class="section-number">5.5.4.3. </span>Generador de consultas<a class="headerlink" href="#generador-de-consultas" title="Link to this heading">#</a></h3>
+<p>El Generador de consultas proporciona una interfaz que permite definir un <strong>subconjunto de las entidades</strong> en la capa utilizando comandos de tipo SQL y mostrar los resultados en la ventana principal. Mientras la consulta esté activa, solo estarán disponibles en el proyecto las entidades <strong>correspondientes</strong> a su resultado. Puede utilizar uno o varios atributos de capa para definir el filtro en el generador de consultas. El generador de consultas está estructurado de la siguiente manera:</p>
+<figure class="align-default" id="en-query-builder-comment">
+<a class="reference internal image-reference" href="../../../_images/en_query_builder_comment.png"><img alt="../../../_images/en_query_builder_comment.png" src="../../../_images/en_query_builder_comment.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.25 </span><span class="caption-text">Captura de pantalla del generador de consultas</span><a class="headerlink" href="#en-query-builder-comment" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>La <strong>lista de campos</strong> contiene todos los campos de la capa. Para añadir una columna de atributos a la ventana de expresión, haga doble clic en su nombre o escríbalo en la casilla.</p></li>
+<li><p>El cuadro <strong>Values</strong> enumera los valores del campo actualmente seleccionado.</p>
+<ul class="simple">
+<li><p>Para enumerar <strong>todos los valores únicos</strong> de un campo, haga clic en el botón <strong>All</strong>.</p></li>
+<li><p>Para enumerar los <strong>primeros 25</strong> valores únicos de la columna, haga clic en el botón <strong>Sample</strong>.</p></li>
+<li><p>Para añadir un valor a la ventana de expresión, haga doble clic sobre él en la lista valores. Puede utilizar el <strong>cuadro de búsqueda</strong> situado en la parte superior del panel “Values” para buscar fácilmente valores de atributos en la lista.</p></li>
+</ul>
+</li>
+<li><p>La sección <strong>Operators</strong> contiene todos los operadores utilizables. Para añadir un operador, haga clic en el botón correspondiente.</p></li>
+<li><p>El botón <strong>Test</strong> ayuda a comprobar su consulta y <strong>muestra un cuadro de mensaje con el número de entidades</strong> que satisfacen la consulta actual.</p></li>
+<li><p>Utilice el botón <strong>Clear</strong> para revertir la capa a su estado original.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cuando se aplica un filtro con el generador de consultas, QGIS trata el subconjunto resultante como si fuera la <strong>capa completa</strong>.</p>
+</div>
+<p>En este breve video, descubrirá la ubicación del generador de consultas y aprenderá a crear una consulta sencilla para aislar un estado concreto de un conjunto de datos que abarca todo el país. El ejemplo se centra en un conjunto de datos relacionados con Sudán del Sur y sirve como ilustración básica.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Ejemplo: Uso sencillo del generador de consultas.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video></p>
+</div>
+</details></section>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h2><span class="section-number">5.5.5. </span>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<ol class="arabic simple">
+<li><p><strong>¿Qué significa “procesamiento no espacial” en el contexto de SIG/QGIS? ¿En qué se diferencia de las operaciones espaciales?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">El procesamiento no espacial se refiere a las operaciones que actúan únicamente sobre el lado de los atributos (la tabla o las columnas de datos) de una capa, sin utilizar ni modificar la geometría (ubicación, forma) de las entidades. Se manipulan datos sobre entidades, no sus relaciones espaciales.</p></li>
+<li><p class="sd-card-text">Algunos ejemplos son la adición, eliminación o actualización de campos; el filtrado de registros basado en consultas de atributos; la realización de uniones de tablas basadas en campos clave coincidentes; el cálculo de nuevos valores a partir de atributos existentes.</p></li>
+<li><p class="sd-card-text">Por el contrario, las operaciones espaciales implican geometría: utilizan relaciones espaciales (proximidad, intersección, contención) y a menudo producen cambios en la forma, el tamaño o la disposición de las entidades (por ejemplo, buffer, intersección, recorte, unión). Las herramientas espaciales calculan nuevas geometrías o reestructuran las existentes.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>¿Qué es una “unión no espacial” (unir atributos por valor de campo)? Describa cómo y cuándo la utilizaría.</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Una unión no espacial (en QGIS a menudo denominada Unir atributos por valor de campo) vincula datos de atributos de una tabla (o datos no espaciales) a otra capa de entidades basándose en un valor clave común (campo), no basándose en la geometría. También se denomina unión tabular o unión por atributos.</p></li>
+<li><p class="sd-card-text">Se utilizaría cuando se tienen dos conjuntos de datos que comparten un atributo común (por ejemplo, un código de región, un ID, un nombre) y se desea enriquecer una capa con atributos adicionales de la otra. Por ejemplo: usted tiene una capa de polígonos administrativos y una tabla separada de estadísticas de población codificadas por el mismo código administrativo; usted quiere traer esas cifras de población a la capa de polígonos para poder mapearlas o analizarlas.</p></li>
+<li><p class="sd-card-text">La unión no espacial añade campos de una capa o conjunto de datos a la tabla de atributos de la capa de destino cuando la clave coincide.</p></li>
+<li></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="3">
+<li><p><strong>¿Qué condiciones deben cumplirse para que una unión no espacial funcione correctamente? (Por ejemplo, campos clave, valores coincidentes, tipos de datos)</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text"><strong>Campo clave común presente en ambas tablas</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Tanto la capa de destino (la que recibe la unión) como la tabla de unión deben tener un campo (columna) que es la “join key”, que contiene identificadores coincidentes en las filas correspondientes.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Valores coincidentes en esos campos clave</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Los valores del campo clave deben superponerse: para cada entidad de la capa de destino de la que desee obtener datos unidos, debe haber un valor coincidente en el campo clave de la tabla de unión. Si no coinciden, el valor unido será normalmente NULL o en blanco.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Tipos de datos compatibles</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Los campos clave deben ser del mismo tipo de datos o compatibles (por ejemplo, ambos enteros, o ambos de texto) para que QGIS pueda hacerlos coincidir. Si uno es un campo de texto y el otro es numérico, la coincidencia no funcionará de forma fiable.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>Unicidad de valores</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Lo ideal es que la tabla de unión tenga valores únicos en la clave de unión (unión uno a uno). Si hay múltiples filas coincidentes (uno a muchos), entonces es posible que se produzcan duplicados o coincidencias ambiguas; QGIS puede tomar la primera coincidencia o agregar, dependiendo del método de unión.</p></li>
+<li><p class="sd-card-text">La capa de destino normalmente no cambia su número de entidades: la unión solo añade campos, no duplica la geometría (a menos que se convierta a un archivo unido permanente de manera diferente).</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text"><strong>¿Qué tipo de operaciones puede realizar con las funciones de tabla (añadir campo, borrar campo, calcular campo)?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Añadir campo</strong>: Crear una nueva columna de atributos (de un tipo elegido, por ejemplo, entero, decimal, texto) para contener valores calculados o importados.</p></li>
+<li><p class="sd-card-text"><strong>Borrar campo</strong>: Eliminar campos/columnas no deseados o redundantes de la tabla de atributos de una capa.</p></li>
+<li><p class="sd-card-text"><strong>Calcular campo (calculadora de campo)</strong>: Calcular nuevos valores (para campos existentes o nuevos) utilizando expresiones (aritmética, lógica condicional, funciones) basadas en otros atributos, constantes o funciones. Por ejemplo: calcular la densidad de población = población / superficie; o clasificar valores utilizando la lógica CASE WHEN.</p></li>
+<li><p class="sd-card-text"><strong>Actualizar/Editar campo existente</strong>: También se pueden actualizar o sobrescribir valores en un campo existente, siempre que la capa esté en modo de edición.</p></li>
+</ul>
+</div>
+</details></div>
+</details><ol class="arabic simple" start="5">
+<li><p><strong>¿Qué es una consulta no espacial? ¿Cómo utilizaría “Select by expression” para filtrar sus datos?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Una consulta no espacial es una consulta aplicada a la tabla de atributos (campos) en lugar de basarse en la geometría. Filtra o selecciona filas (entidades) a partir de condiciones de atributo, no de condiciones espaciales.</p></li>
+<li><p class="sd-card-text">En QGIS, “Select by expression” es una herramienta que permite escribir expresiones lógicas (por ejemplo, <code class="docutils literal notranslate"><span class="pre">&quot;population&quot;</span> <span class="pre">&gt;</span> <span class="pre">10000</span> <span class="pre">AND</span> <span class="pre">&quot;region&quot;</span> <span class="pre">=</span> <span class="pre">'East'</span></code>) para seleccionar el subconjunto de entidades cuyos atributos satisfacen los criterios.</p></li>
+<li><p class="sd-card-text">Tras la selección, puede utilizar el subconjunto seleccionado para otras operaciones (por ejemplo, exportar las entidades seleccionadas, aplicarles un estilo diferente, analizarlas solo a ellas, etc.).</p></li>
+</ul>
+</div>
+</details></div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="es_qgis_centroids.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5.4. </span>Centroides</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="es_qgis_module_5_exercises.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5.6. </span>Ejercicios para el módulo 5</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion">5.5.1. Introducción</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uniones-no-espaciales-unir-atributos-por-valor-de-campo">5.5.2. Uniones no espaciales (unir atributos por valor de campo)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-realizar-una-union-no-espacial">5.5.2.1. Ejercicio: Realizar una unión no espacial</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-de-la-tabla">5.5.3. Funciones de la tabla</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anadir-campo">5.5.3.1. Añadir campo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#borrar-campo">5.5.3.2. Borrar campo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-campos">5.5.3.3. Calcular campos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-basicas-de-los-campos">5.5.3.4. Estadísticas básicas de los campos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estadisticas-por-categorias">5.5.3.5. Estadísticas por categorías</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-no-espaciales">5.5.4. Consultas no espaciales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccion-manual">5.5.4.1. Selección manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#seleccionar-por-expresion">5.5.4.2. Seleccionar por expresión</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sql">5.5.4.2.1. SQL</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generador-de-consultas">5.5.4.3. Generador de consultas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">5.5.5. Preguntas de autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

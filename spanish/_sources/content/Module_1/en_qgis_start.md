@@ -66,7 +66,7 @@ Sometimes working with GIS requires you to go and collect the data in the field.
 
 :::{tab-item} Data Processing
 
-QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_module_2_overview.html) onwards. 
+QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_module_2_overview.html) onwards. 
 
 
 :::

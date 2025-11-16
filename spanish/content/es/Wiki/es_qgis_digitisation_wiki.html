@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Digitalización &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Wiki/es_qgis_digitisation_wiki';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Clasificación de datos geoespaciales" href="es_qgis_data_classification_wiki.html" />
+    <link rel="prev" title="Tabla de atributos en QGIS" href="es_qgis_attribute_table_wiki.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/es_module_3_overview.html">3. Operaciones básicas de los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_digitisation.html">3.1. Digitalización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_queries.html">3.2. Selección y consulta de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_classification.html">3.3. Clasificación de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_georeferencing.html">3.4. Georreferenciación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_module_3_exercises.html">3.5. Ejercicios para el módulo 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">4. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">4.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">4.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">4.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">4.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/es_module_5_overview.html">5. Operaciones intermedias del SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_spatial_tools.html">5.1. Procesamiento de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_overlay_operations.html">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_centroids.html">5.4. Centroides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_non_spatial_tools.html">5.5. Procesamiento no espacial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_module_5_exercises.html">5.6. Ejercicios para el módulo 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/es_module_7_overview.html">6. Automatización con QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_automation_theory.html">6.1. El diseñador de modelos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_module_7_exercises.html">6.2. Ejercicios para el módulo 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_qgis_basics_wiki.html">Conceptos básicos de QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_installation_wiki.html">Instalación de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_interface_wiki.html">Interfaz de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_projects_folder_structure_wiki.html">Proyectos y estructura de carpetas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_projections_wiki.html">Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_basemaps_wiki.html">Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_plugins_wiki.html">Complementos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_data_sources_wiki.html">Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_licensing_data.html">Licencias de datos (trabajar con conjuntos de datos con licencia)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="es_qgis_geodata_wiki.html">Datos geográficos generales</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_geodata_types_wiki.html">Tipos de datos geográficos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_import_geodata_wiki.html">Importación de datos geográficos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_OpenStreetMap_wiki.html">Datos de OpenStreetMap (OSM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_layer_concept_wiki.html">Concepto de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_attribute_table_wiki.html">Tabla de atributos en QGIS</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Digitalización</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_data_classification_wiki.html">Clasificación de datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_single_symbol_wiki.html">Clasificación por símbolo único</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_categorised_wiki.html">Clasificación por categorías</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_graduated_wiki.html">Clasificación graduada</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_geoprocessing_wiki.html">Procesamiento espacial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_queries_wiki.html">Consultas espaciales y no espaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_queries_wiki.html">Consultas espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_non_spatial_queries_wiki.html">Consultas no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_table_functions_wiki.html">Manipulación de la tabla de atributos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_joins_wiki.html">Unir datos geográficos (uniones espaciales y no espaciales)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_joins_wiki.html">Uniones espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_non_spatial_joins_wiki.html">Uniones no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_raster_wiki.html">Datos ráster</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_raster_basic_wiki.html">Operaciones básicas de ráster</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_automation_wiki.html">Automatización en QGIS (el diseñador de modelos)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_qgis_representation_wiki.html">Visualización y creación de mapas en QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_visualisation_wiki.html">Visualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_map_making_wiki.html">Compositor de diseños de impresión</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="es_qgis_common_errors_and_Issues.html">Errores y problemas comunes en QGIS <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="es_web_and_mobile_apps_wiki.html">Aplicaciones SIG para web y móviles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es_geodata_management_sharepoint.html">Gestión de datos geoespaciales con SharePoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Wiki/es_qgis_digitisation_wiki.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Wiki/es_qgis_digitisation_wiki.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Digitalización</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-barra-de-herramientas-de-digitalizacion-en-qgis">La barra de herramientas de digitalización en QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-una-nueva-capa">Crear una nueva capa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-geometrias-a-una-capa">Agregar geometrías a una capa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-datos-de-punto">Creación de datos de punto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-datos-de-linea">Creación de datos de línea</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-datos-de-poligono">Creación de datos de polígono</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modificacion-de-las-geometrias-existentes">Modificación de las geometrías existentes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-anillo-a-la-capa-de-poligonos-existente">Agregar anillo a la capa de polígonos existente</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recursos-adicionales">Recursos adicionales</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="digitalizacion">
+<h1>Digitalización<a class="headerlink" href="#digitalizacion" title="Link to this heading">#</a></h1>
+<p><strong>🔙<a class="reference internal" href="#/content/es/intro.md"><span class="xref myst">Volver a la página de inicio</span></a></strong></p>
+<p>La digitalización es el proceso de conversión de datos geográficos de mapas o imágenes en forma digital comúnmente representados como datos vectoriales.
+Durante este procedimiento, se rastrea la información espacial de mapas o imágenes, formando puntos, polilíneas o polígonos.
+Para digitalizar los datos de un nuevo conjunto de datos siempre hay que empezar por crear el conjunto de datos antes de llenarlo con datos digitalizados.</p>
+<section id="la-barra-de-herramientas-de-digitalizacion-en-qgis">
+<h2>La barra de herramientas de digitalización en QGIS<a class="headerlink" href="#la-barra-de-herramientas-de-digitalizacion-en-qgis" title="Link to this heading">#</a></h2>
+<p><img alt="" src="../../../_images/Digitizing_Toolbar.png" /></p>
+<ul class="simple">
+<li><p>La digitalización en QGIS se realiza principalmente con la <strong>barra de herramientas</strong>. Para activar la barra de herramientas, vaya a <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Digitisation</span> <span class="pre">Toolbar</span></code>.</p></li>
+</ul>
+<figure class="align-default" id="en-qgis-3-40-activate-digitisation-toolbar-wiki">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_3.40_activate_digitisation_toolbar_wiki.png"><img alt="../../../_images/en_qgis_3.40_activate_digitisation_toolbar_wiki.png" src="../../../_images/en_qgis_3.40_activate_digitisation_toolbar_wiki.png" style="width: 550px;" />
+</a>
+</figure>
+</section>
+<section id="crear-una-nueva-capa">
+<h2>Crear una nueva capa<a class="headerlink" href="#crear-una-nueva-capa" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>En la barra superior, vaya a <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">GeoPackage</span> <span class="pre">Layer</span></code> o <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Shapefile</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>Se abrirá una nueva ventana. Aquí puede especificar las propiedades de la capa.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Database</span></code>, haga clic en el <img alt="" src="../../../_images/Three_points.png" /> de tres puntos y vaya a la carpeta donde desea guardar el nuevo conjunto de datos.</p></li>
+<li><p><em>archivo shapefile específico</em>: Establezca la codificación del archivo en <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code>: Seleccione el tipo de geometría que desea digitalizar: puntos, líneas o polígonos.</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Si planea realizar un cálculo basado en la distancia con el nuevo conjunto de datos, asegúrese de usar un SRC <strong>métrico</strong>. Las unidades de medida de la capa se expresarán en metros y no en grados (véase <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_projections.html#metric-and-geographic-coordinate-reference-systems">Sistemas de referencia</a> de coordenadas métricas y geográficas).</p>
+</div>
+</aside>
+<ol class="arabic" start="6">
+<li><p>Seleccione el CRS (sistema de referencia de coordenadas) que desea utilizar para la nueva capa. De manera predeterminada, se establece en el proyecto SRC. Si desea cambiar el SRC haga clic en <img alt="" src="../../../_images/mIconProjectionEnabled.png" />.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Field</span></code>, puede agregar columnas a la nueva capa. Aquí puede definir qué tipo de información/datos estarán disponibles en la tabla de atributos para cada entidad.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Name</span></code>: Asigne a la nueva columna un nombre que represente la información que desea almacenar en ella.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Type</span></code>: Aquí puede seleccionar el tipo de datos para la nueva columna. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">Text</span></code> agregará una nueva columna con datos de cadena (texto). Para datos numéricos puede elegir <code class="docutils literal notranslate"><span class="pre">Whole</span> <span class="pre">number</span></code> o <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">number</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">Length</span></code> define el número máximo de caracteres que puede tener el campo. Esto es relevante para la longitud del texto o la precisión de los números decimales. Por ejemplo, es posible que desee establecer una longitud máxima alta para los campos de texto si desea nombres de calles largas como “Martin Luther King Jr. Boulevard” (34 caracteres).</p></li>
+</ul>
+<ul class="simple">
+<li><p>Haga clic en <img alt="" src="../../../_images/mActionNewAttribute.png" /> para añadir la nueva columna al <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">List</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Una vez que haya terminado de agregar los campos, haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<p><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_create_layer.mp4"></video></p>
+</section>
+<section id="agregar-geometrias-a-una-capa">
+<h2>Agregar geometrías a una capa<a class="headerlink" href="#agregar-geometrias-a-una-capa" title="Link to this heading">#</a></h2>
+<section id="creacion-de-datos-de-punto">
+<h3>Creación de datos de punto<a class="headerlink" href="#creacion-de-datos-de-punto" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Seleccione la capa de puntos a la que desea agregar datos en el panel Layer</p></li>
+<li><p>Vaya a la barra de herramientas de digitalización y haga clic en <img alt="" src="../../../_images/mActionToggleEditing.png" />. Ahora la capa está en el modo de edición.</p></li>
+<li><p>Haga clic en <img alt="" src="../../../_images/mActionCapturePoint.png" />.</p></li>
+<li><p>Haga clic con el botón izquierdo en la entidad que desea digitalizar.</p></li>
+<li><p>Una vez que haga clic, aparecerá una ventana llamada <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code>. Aquí puede agregar la información sobre esta entidad a las diferentes columnas, basándose en la tabla de atributos de la capa.</p></li>
+</ol>
+<figure class="align-center" id="point-creation">
+<a class="reference internal image-reference" href="../../../_images/point_creation.png"><img alt="../../../_images/point_creation.png" src="../../../_images/point_creation.png" style="width: 700px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Una vez que haya terminado con las <img alt="" src="../../../_images/mActionSaveEdits.png" /> de digitalización para guardar sus ediciones.</p></li>
+<li><p>Haga clic de nuevo en <img alt="" src="../../../_images/mActionToggleEditing.png" /> para finalizar el modo de edición.</p></li>
+</ol>
+<p><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video></p>
+</section>
+<section id="creacion-de-datos-de-linea">
+<h3>Creación de datos de línea<a class="headerlink" href="#creacion-de-datos-de-linea" title="Link to this heading">#</a></h3>
+<p>El método es similar a la digitalización de un punto (ver arriba). Primero tienes que crear una nueva capa de línea o usar una existente.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Si crea una nueva capa de línea recuerde cambiar el tipo de geometría en líneas porque ahora estamos creando datos de líneas.</p>
+</div>
+<ol class="arabic simple">
+<li><p>En el panel capas, seleccione la capa de línea a la que desea agregar datos.</p></li>
+<li><p>En la barra de herramientas de digitalización, haga clic en <img alt="" src="../../../_images/mActionToggleEditing.png" />. Ahora la capa está en modo de edición.</p></li>
+<li><p>Haga clic en <img alt="" src="../../../_images/mActionCaptureLine.png" />.</p></li>
+<li><p>Cree la línea en el lienzo del mapa haciendo <kbd>clic izquierdo</kbd> para agregar vértices. Cuando haya terminado, haga clic derecho en el último punto para terminar de editar la geometría.</p></li>
+<li><p>Aparecerá una nueva ventana titulada <code class="docutils literal notranslate"><span class="pre">[Your</span> <span class="pre">Layer</span> <span class="pre">Name]-</span> <span class="pre">Feature</span> <span class="pre">Attribute</span></code>. Aquí puede completar la información de la columna de la entidad.</p></li>
+<li><p>Una vez que haya terminado con la digitalización, haga clic en <img alt="" src="../../../_images/mActionSaveEdits.png" /> para guardar sus ediciones.</p></li>
+<li><p>Haga clic en el icono <img alt="" src="../../../_images/mActionToggleEditing.png" /> de nuevo para finalizar el modo de edición.</p></li>
+</ol>
+<p><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video></p>
+</section>
+<section id="creacion-de-datos-de-poligono">
+<h3>Creación de datos de polígono<a class="headerlink" href="#creacion-de-datos-de-poligono" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>En el panel capas, seleccione la capa de polígono a la que desea agregar datos.</p></li>
+<li><p>Haga clic en <img alt="" src="../../../_images/mActionToggleEditing.png" /> para iniciar el modo de edición.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Capture</span> <span class="pre">Polygon</span></code><img alt="" src="../../../_images/mActionCapturePolygon.png" /> para agregar polígonos.</p></li>
+<li><p>Dibuje un polígono en el lienzo del mapa con <kbd>el botón izquierdo</kbd>. Haga <kbd>clic derecho</kbd> para finalizar la creación del polígono y unir el primer y el último punto que ha agregado.</p></li>
+<li><p>Se abrirá una nueva ventana. Aquí puede agregar la información de la columna para esta entidad.</p></li>
+<li><p>Guarde las ediciones haciendo clic en el icono de <img alt="" src="../../../_images/mActionSaveEdits.png" /> y saliendo del modo de edición haciendo clic en el icono de <img alt="" src="../../../_images/mActionToggleEditing.png" />.</p></li>
+</ol>
+<p><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video></p>
+</section>
+</section>
+<section id="modificacion-de-las-geometrias-existentes">
+<h2>Modificación de las geometrías existentes<a class="headerlink" href="#modificacion-de-las-geometrias-existentes" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>En el panel capas, seleccione la capa con la geometría que desea editar haciendo clic en ella. Aparecerá en azul.</p></li>
+<li><p>En la barra de herramientas de digitalización, haga clic en <img alt="" src="../../../_images/mActionToggleEditing.png" /> para iniciar <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code>.</p></li>
+<li><p>En la barra de herramientas de digitalización, haga clic en <img alt="" src="../../../_images/qgis_3.40_vertex_tool.png" />. Ahora, puede mover y editar vértices de geometrías.</p></li>
+<li><p>Una vez que haya terminado, no olvide salir del modo de edición haciendo clic en <img alt="" src="../../../_images/mActionToggleEditing.png" /> y guarde sus ediciones.</p></li>
+</ol>
+<p><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video></p>
+<section id="agregar-anillo-a-la-capa-de-poligonos-existente">
+<h3>Agregar anillo a la capa de polígonos existente<a class="headerlink" href="#agregar-anillo-a-la-capa-de-poligonos-existente" title="Link to this heading">#</a></h3>
+<p>En QGIS, la adición de anillos a polígonos se realiza con la “barra de herramientas de digitalización avanzada”. Para activar la barra de herramientas, vaya a <code class="docutils literal notranslate"><span class="pre">View</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Toolbars</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Digitisation</span> <span class="pre">Toolbar</span></code>.</p>
+<p><img alt="" src="../../../_images/Toolbox.png" /></p>
+<ol class="arabic simple">
+<li><p>Haga clic en <img alt="" src="../../../_images/mActionToggleEditing.png" /> para iniciar el modo de edición de una capa de polígono.</p></li>
+<li><p>Haga clic en <img alt="" src="../../../_images/mActionAddRing.png" /> (por ejemplo, mapear el patio interior de un edificio, o - como se muestra en el video - crear un círculo para marcar una isla en el lago).</p></li>
+</ol>
+<p><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video></p>
+</section>
+</section>
+<section id="recursos-adicionales">
+<h2>Recursos adicionales<a class="headerlink" href="#recursos-adicionales" title="Link to this heading">#</a></h2>
+<p>El siguiente video de YouTube muestra todo el proceso de digitalización de polígonos en QGIS con más detalle. Recuerde que el YouTuber está usando una versión anterior de QGIS, por lo que las cosas podrían ser diferentes en su versión.</p>
+<iframe width="560" height="315" src="https://youtu.be/embed/Zer558SnKX4?si=ELKStx6y5_B_ilRe" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Wiki"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="es_qgis_attribute_table_wiki.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tabla de atributos en QGIS</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="es_qgis_data_classification_wiki.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Clasificación de datos geoespaciales</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-barra-de-herramientas-de-digitalizacion-en-qgis">La barra de herramientas de digitalización en QGIS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-una-nueva-capa">Crear una nueva capa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-geometrias-a-una-capa">Agregar geometrías a una capa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-datos-de-punto">Creación de datos de punto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-datos-de-linea">Creación de datos de línea</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creacion-de-datos-de-poligono">Creación de datos de polígono</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modificacion-de-las-geometrias-existentes">Modificación de las geometrías existentes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregar-anillo-a-la-capa-de-poligonos-existente">Agregar anillo a la capa de polígonos existente</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recursos-adicionales">Recursos adicionales</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

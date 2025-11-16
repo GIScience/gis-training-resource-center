@@ -618,7 +618,7 @@ document.write(`
 <section id="overlay-operations-clip-dissolve-buffer">
 <h1><span class="section-number">5.2. </span>Overlay Operations (Clip, Dissolve, Buffer)<a class="headerlink" href="#overlay-operations-clip-dissolve-buffer" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <a class="reference internal" href="#overlay-operations"><span class="std std-numref">Fig. 5.9</span></a>).</p></li>
+<li><p>Overlay operations allow us to combine the geometries of two layers in different ways (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">overlay_operations</span></code>).</p></li>
 <li><p>The difference to spatial joins is that the <strong>geometries are transformed in the process</strong>, and not primarily the attributes.</p></li>
 </ul>
 <figure class="align-default" id="overlay-operations">
@@ -702,7 +702,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 </section>
 <section id="buffer">
 <h2><span class="section-number">5.2.4. </span>Buffer<a class="headerlink" href="#buffer" title="Link to this heading">#</a></h2>
-<p>Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <a class="reference internal" href="#buffering-options"><span class="std std-numref">Fig. 5.12</span></a>.</p>
+<p>Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">buffering_options</span></code>.</p>
 <p>Examples for analyses using buffers could be:</p>
 <ul class="simple">
 <li><p>Creating of buffer zones to protect the environment</p></li>
@@ -739,7 +739,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <li><p>You get a projection warning message</p></li>
 <li><p>Your layer(s) don’t show up</p></li>
 <li><p>Layers look odd ‒ e.g. squashed</p></li>
-<li><p>Error message “using degrees” when using distances (as shown in <a class="reference internal" href="#dist-degree-error-message"><span class="std std-numref">Fig. 5.13</span></a>)
+<li><p>Error message “using degrees” when using distances (as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">dist_degree_error_message</span></code>)
 … it might be a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html">projection</a> issue.</p></li>
 </ul>
 <p>To solve it, try…</p>
@@ -747,7 +747,7 @@ as a new layer: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
 <li><p>Changing the CRS for the layer</p></li>
 <li><p>Reprojecting the layer</p></li>
 </ul>
-<p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <a class="reference internal" href="#distance-longitudes"><span class="std std-numref">Fig. 5.14</span></a>)</p>
+<p>For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <strong>metric Coordinate System</strong>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">distance_longitudes</span></code>)</p>
 <figure class="align-default" id="distance-longitudes">
 <a class="reference internal image-reference" href="../../_images/en_dist_longitudes.png"><img alt="../../_images/en_dist_longitudes.png" src="../../_images/en_dist_longitudes.png" style="width: 450px;" />
 </a>

@@ -1,0 +1,1146 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gestión de datos geoespaciales con SharePoint &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Wiki/es_geodata_management_sharepoint';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Wiki/es_geodata_management_sharepoint.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Wiki/es_geodata_management_sharepoint.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Gestión de datos geoespaciales con SharePoint</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposito-y-audiencia">Propósito y audiencia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-funcion-del-administrador-de-datos">La función del administrador de datos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-estructuras-de-carpetas">Ejemplo de estructuras de carpetas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-minimalista-equipos-muy-pequenos">1. Configuración minimalista (equipos muy pequeños)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-equilibrada-organizaciones-pequenas-en-general">2. Configuración equilibrada (organizaciones pequeñas en general)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-extendida-con-flujos-de-trabajo-de-pat">3. Configuración extendida (con flujos de trabajo de PAT)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-limitaciones-y-permisos">Ventajas, limitaciones y permisos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas">Ventajas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones">Limitaciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permisos">Permisos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadatos-y-catalogacion">Metadatos y catalogación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-usar-metadatos">¿Por qué usar metadatos?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campos-de-metadatos-sugeridos">Campos de metadatos sugeridos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guia-de-implementacion-inicio-rapido">Guía de implementación (inicio rápido)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedimientos-operativos-estandar-poe">Procedimientos operativos estándar (POE)</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="gestion-de-datos-geoespaciales-con-sharepoint">
+<h1>Gestión de datos geoespaciales con SharePoint<a class="headerlink" href="#gestion-de-datos-geoespaciales-con-sharepoint" title="Link to this heading">#</a></h1>
+<p>Las organizaciones pequeñas suelen tener dificultades para mantener la consistencia y el acceso a los datos geoespaciales.
+Un centro de datos geoespaciales simple y bien estructurado ayuda a <strong>estandarizar el trabajo en SIG</strong>, <strong>preparar las respuestas</strong> e <strong>incorporar nuevo personal</strong> de forma eficiente.
+Esta guía describe un enfoque práctico utilizando <strong>SharePoint</strong>, que muchas organizaciones ya utilizan para la gestión de documentos.</p>
+<section id="proposito-y-audiencia">
+<h2>Propósito y audiencia<a class="headerlink" href="#proposito-y-audiencia" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Quién</strong>: organizaciones pequeñas que inician o formalizan el trabajo en SIG.</p></li>
+<li><p><strong>Por qué</strong>: establecer una estructura ligera y estandarizada para <strong>datos, proyectos y plantillas</strong>.</p></li>
+<li><p><strong>Resultado</strong>: incorporación más rápida, menos enlaces rotos, mapas y análisis consistentes.</p></li>
+</ul>
+<section id="la-funcion-del-administrador-de-datos">
+<h3>La función del administrador de datos<a class="headerlink" href="#la-funcion-del-administrador-de-datos" title="Link to this heading">#</a></h3>
+<p>Un <strong>administrador de datos</strong> es una persona designada (o un equipo pequeño) responsable de:</p>
+<ul class="simple">
+<li><p>Aprobar y cargar nuevos conjuntos de datos en <code class="docutils literal notranslate"><span class="pre">10_Data</span></code> y <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Administrar permisos (p. ej., quién puede editar frente a quién solo puede ver).</p></li>
+<li><p>Apoyar a colegas con preguntas sobre la calidad o los estándares del conjunto de datos.</p></li>
+</ul>
+<p>Contar con una función clara de administrador evita sobrescrituras accidentales y garantiza que todo el personal trabaje con <strong>datos confiables y consistentes</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Si su organización supera esta configuración (muchos editores, ediciones intensivas, rásteres muy grandes), mantenga SharePoint para la distribución y la documentación y añada una base de datos espacial (p. ej., PostGIS) para la edición multiusuario.</p>
+</div>
+</section>
+</section>
+<section id="ejemplo-de-estructuras-de-carpetas">
+<h2>Ejemplo de estructuras de carpetas<a class="headerlink" href="#ejemplo-de-estructuras-de-carpetas" title="Link to this heading">#</a></h2>
+<p>A continuación se presentan tres posibles estructuras, de la más simple a la más avanzada.
+Elija la que coincida con el tamaño y la capacidad de su organización.</p>
+<section id="configuracion-minimalista-equipos-muy-pequenos">
+<h3>1. Configuración minimalista (equipos muy pequeños)<a class="headerlink" href="#configuracion-minimalista-equipos-muy-pequenos" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Hub/
+│
+├── Data/ # Todos los datos geoespaciales en un solo lugar
+│ ├── Boundaries/ # Límites administrativos
+│ ├── Roads/ # Redes viales
+│ ├── Hydro/ # Ríos, lagos
+│ ├── Exposure/ # Centros de salud, escuelas
+│ └── Hazards/ # Ciclones, inundaciones, sequías
+│
+├── Projects/ # Trabajo y resultados de proyectos
+│ ├── Project_A/
+│ ├── Project_B/
+│ └── Project_C/
+│
+└── Templates/ # Estilos, diseños, símbolos de QGIS
+</pre></div>
+</div>
+<p>💡 <strong>Usar cuando:</strong> el equipo es muy pequeño, los datos son limitados y hay poca superposición entre usuarios. Esta estructura se configura rápidamente y es fácil para colegas sin perfil técnico.</p>
+<p>⚠️ <strong>Limitación:</strong> Todo se mezcla en una sola carpeta <code class="docutils literal notranslate"><span class="pre">Data/</span></code>: no es evidente qué conjuntos de datos son definitivos y cuáles son borradores, y su posterior ampliación puede resultar confusa.</p>
+<p><strong>Convenciones de nombres para la configuración minimalista</strong></p>
+<ul class="simple">
+<li><p>Mantener los nombres de archivo simples y descriptivos, por ejemplo:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Boundaries_ADM2_MDG_2024.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">HealthFacilities_SOM_2025.csv</span></code></p></li>
+</ul>
+</li>
+<li><p>Para proyectos, anteponer el nombre del proyecto a los entregables, por ejemplo:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProjectA_Map_202501.pdf</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProjectB_QGISProject.qgz</span></code></p></li>
+</ul>
+</li>
+<li><p>Las fechas pueden ser opcionales aquí, ya que el volumen del conjunto de datos es bajo.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="configuracion-equilibrada-organizaciones-pequenas-en-general">
+<h3>2. Configuración equilibrada (organizaciones pequeñas en general)<a class="headerlink" href="#configuracion-equilibrada-organizaciones-pequenas-en-general" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Hub/
+│
+├── 00_Admin/                 # POE, directrices, notas
+├── 10_Data/                  # Todos los conjuntos de datos compartidos (autorizados + temáticos, de solo lectura; gestionados por administradores)
+│   ├── Boundaries/           # Límites administrativos, límites de asentamientos
+│   ├── Roads/                # Redes viales, senderos
+│   ├── Hydro/                # Ríos, lagos, cuencas
+│   ├── Settlements/          # Aldeas, pueblos, ciudades
+│   ├── Health/               # Centros de salud, clínicas
+│   ├── Logistics/            # Almacenes, pistas de aterrizaje
+│   └── Hazards/              # Trayectorias de ciclones, zonas de inundación, indicadores de sequía
+├── 20_Raster_Data/           # WorldPop, DEM, cubierta terrestre, imágenes satelitales, rásteres de amenazas
+├── 30_Styles_Templates/      # Estilos y diseños de QGIS compartidos
+│   └── Generic_Styles/       # Simbología estándar y plantillas de diseño
+├── 40_Working_Data/          # Borradores y ediciones temporales (acceso restringido)
+└── 50_Projects/              # Ordenados por tema
+    ├── Disaster_Preparedness/
+    ├── Health/
+    └── Climate_Risk/
+</pre></div>
+</div>
+<p><strong>💡 Usar cuando:</strong>
+La organización quiere mantener todos los datos seleccionados juntos en <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code>, mientras separa los datos ráster (<code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>), los estilos compartidos (<code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code>), los borradores (<code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code>) y los resultados del proyecto (<code class="docutils literal notranslate"><span class="pre">50_Projects/</span></code>). Esta configuración funciona bien para la mayoría de las ONG pequeñas.</p>
+<p><strong>⚠️ Limitación:</strong>
+El personal debe entender que <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> y <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> son de solo lectura. Si las ediciones se guardan allí, los conjuntos de datos pueden sobrescribirse o corromperse.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los archivos ráster grandes (p. ej., DEM, imágenes satelitales, rásteres de viento o lluvia) pueden ralentizar la sincronización de OneDrive y llenar las unidades locales rápidamente.</p>
+<p>Para reducir los problemas:</p>
+<ul class="simple">
+<li><p>Mantenga solo las capas ráster más importantes en <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Archive versiones antiguas de ráster en una biblioteca independiente si es necesario.</p></li>
+</ul>
+</div>
+<p><strong>Convenciones de nombres para la configuración equilibrada (uso general)</strong></p>
+<p>Para sea fácil encontrar los archivos y evitar duplicados, utilice un patrón de nombres consistente:</p>
+<ul class="simple">
+<li><p><strong>Datos (todos los compartidos):</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]</span></code>
+<em>Ejemplo:</em> <code class="docutils literal notranslate"><span class="pre">Boundaries_ADM2_MDG_GADM_202407.gpkg</span></code></p></li>
+<li><p><strong>Datos ráster:</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location]_[Source]_[YYYYMM].[ext]</span></code>
+<em>Ejemplo:</em> <code class="docutils literal notranslate"><span class="pre">Rainfall_MDG_CHIRPS_202502.tif</span></code></p></li>
+<li><p><strong>Proyectos:</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]</span></code>
+<em>Ejemplo:</em> <code class="docutils literal notranslate"><span class="pre">HealthAssessment_Report_SOM_202503_v1.pdf</span></code></p></li>
+</ul>
+</section>
+<section id="configuracion-extendida-con-flujos-de-trabajo-de-pat">
+<h3>3. Configuración extendida (con flujos de trabajo de PAT)<a class="headerlink" href="#configuracion-extendida-con-flujos-de-trabajo-de-pat" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Hub/
+│
+├── 00_Admin/                 # POE, directrices, notas
+├── 10_Data/                  # Todos los conjuntos de datos compartidos (autorizados + temáticos, de solo lectura; gestionados por administradores)
+│   ├── Boundaries/
+│   ├── Roads/
+│   ├── Hydro/
+│   ├── Settlements/
+│   ├── Health/
+│   ├── Logistics/
+│   └── Hazards/
+├── 20_Raster_Data/           # DEM, cobertura terrestre, datos satelitales, rásteres de amenazas (solo lectura)
+├── 30_Styles_Templates/      # Estilos y diseños de QGIS compartidos
+│   ├── Generic_Styles/       
+│   └── Cyclone_EAP_Styles/   # Plantillas para resultados específicos para ciclones
+├── 40_Working_Data/          # Borradores y ediciones (restringido)
+├── 50_Cyclone_EAP/           # Flujos de trabajo de acción anticipatoria (ciclón)
+│   ├── Fixed_Data/           # Capas de exposición de referencia
+│   ├── Models/               # Modelos para desencadenantes, seguimiento de zonas de influencia, archivos de pronósticos
+│   └── Activations/          # Una subcarpeta por activación de ciclón
+│       ├── Cyclone_Freddy_2023/
+│       ├── Cyclone_Batsirai_2022/
+│       └── Cyclone_X_YYYY/
+└── 60_Projects/              # Clasificados por tema
+    ├── Disaster_Preparedness/
+    ├── Health/
+    └── Climate_Risk/
+
+</pre></div>
+</div>
+<p>💡 <strong>Usar cuando:</strong>
+La organización quiere mantener todos los datos seleccionados juntos en <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code>, mientras separa los <strong>datos ráster pesados</strong> (<code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>), los <strong>estilos compartidos</strong> (<code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code>) y los <strong>flujos de trabajo específicos del proyecto o del PAT</strong>.</p>
+<p>⚠️ <strong>Limitación:</strong>
+El personal debe entender que <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> y <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> son de <strong>solo lectura</strong>. Si los usuarios guardan las ediciones allí, los conjuntos de datos pueden sobrescribirse o corromperse.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los archivos ráster grandes (p. ej., DEM, cuadrículas viento ciclónico o de profundidad de la inundación) pueden ralentizar la sincronización de OneDrive y llenar los discos locales.
+Para reducir los problemas:</p>
+<ul class="simple">
+<li><p>Mantenga solo las capas ráster más importantes en <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Archive los rásteres más antiguos en <code class="docutils literal notranslate"><span class="pre">30_Snapshots/</span></code> si necesita conservar versiones históricas.</p></li>
+</ul>
+</div>
+<p><strong>Convenciones de nombres para la configuración equilibrada (con PAT)</strong></p>
+<p>Para sea fácil encontrar los archivos y evitar duplicados, utilice un patrón de nombres consistente.
+A continuación se sugieren convenciones con ejemplos:</p>
+<ul class="simple">
+<li><p><strong>Datos (todos los compartidos):</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]</span></code>
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">Boundaries_ADM2_MDG_GADM_202407.gpkg</span></code></p></li>
+<li><p><strong>Datos ráster:</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">[Theme]_[Location]_[Source]_[YYYYMM].[ext]</span></code>
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">Rainfall_MDG_CHIRPS_202502.tif</span></code></p></li>
+<li><p><strong>Modelos de PAT:</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">Model_[Hazard]_[Version]_[YYYYMM].[ext]</span></code>
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">Model_CycloneTrigger_v3_202502.model3</span></code></p></li>
+<li><p><strong>Activaciones:</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">Cyclone_[Name]_[Year]_[OutputType]_[Region].[ext]</span></code>
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">Cyclone_Freddy_2023_ImpactMap_ADM2_MDG.pdf</span></code></p></li>
+<li><p><strong>Proyectos:</strong>
+Patrón: <code class="docutils literal notranslate"><span class="pre">[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]</span></code>
+Ejemplo: <code class="docutils literal notranslate"><span class="pre">ClimateRiskAssessment_Map_MDG_202502_v1.pdf</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="ventajas-limitaciones-y-permisos">
+<h2>Ventajas, limitaciones y permisos<a class="headerlink" href="#ventajas-limitaciones-y-permisos" title="Link to this heading">#</a></h2>
+<p>Cuando se configura un centro de datos geoespaciales en SharePoint, existen beneficios claros, pero también algunos límites importantes que se deben tener en cuenta.<br />
+A continuación, se muestra una breve descripción de las <strong>ventajas</strong>, las <strong>limitaciones</strong> y cómo gestionar los <strong>permisos</strong> de manera eficaz.</p>
+<hr class="docutils" />
+<section id="ventajas">
+<h3>Ventajas<a class="headerlink" href="#ventajas" title="Link to this heading">#</a></h3>
+<p>El uso de SharePoint para la gestión de datos geoespaciales ofrece las organizaciones pequeñas un punto de partida sólido:</p>
+<ul class="simple">
+<li><p><strong>Estandarización</strong>: todo el personal trabaja con los mismos conjuntos de datos, archivos de estilo y plantillas de mapas, lo que reduce la confusión y garantiza resultados consistentes.</p></li>
+<li><p><strong>Incorporación sencilla</strong>: los nuevos colegas no pierden el tiempo buscando archivos; la estructura de carpetas deja claro dónde encontrarlos.</p></li>
+<li><p><strong>Control de versiones integrado</strong>: SharePoint almacena automáticamente el historial de archivos, lo que facilita recuperar versiones anteriores si se producen errores.</p></li>
+<li><p><strong>Permisos flexibles</strong>: puede decidir quién solo puede ver, quién puede editar y quién tiene el control total.</p></li>
+<li><p><strong>Integración con QGIS</strong>: a través de la sincronización con OneDrive, se puede acceder a los conjuntos de datos de forma local y confiable dentro de los proyectos de QGIS.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="limitaciones">
+<h3>Limitaciones<a class="headerlink" href="#limitaciones" title="Link to this heading">#</a></h3>
+<p>Sin embargo, SharePoint no es una base de datos de SIG, lo que presenta algunas restricciones:</p>
+<ul class="simple">
+<li><p><strong>Problemas de concurrencia</strong>: los formatos de datos geoespaciales basados en archivos (como GeoPackage) pueden corromperse si varias personas intentan editarlos simultáneamente.</p></li>
+<li><p><strong>Cuellos de botella en el rendimiento</strong>: los rásteres muy grandes o las ediciones de alta frecuencia se ralentizarán con rapidez; en estos casos, es mejor utilizar una base de datos espacial como PostGIS.</p></li>
+<li><p><strong>Se requiere disciplina</strong>: el sistema depende de que los usuarios sigan las estructuras de carpetas y las convenciones de nombres de manera consistente; de lo contrario, el centro pierde su valor.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Piense en SharePoint como un <strong>centro de distribución y coordinación</strong>.
+Para la <strong>edición multiusuario</strong> o el <strong>almacenamiento a gran escala</strong>, necesitará una infraestructura de base de datos.</p>
+</div>
+</section>
+<section id="permisos">
+<h3>Permisos<a class="headerlink" href="#permisos" title="Link to this heading">#</a></h3>
+<p>Es esencial gestionar bien el acceso para proteger los datos autorizados y, al mismo tiempo, permitir la colaboración.
+Una buena práctica es diferenciar entre los <strong>datos autorizados</strong>, los <strong>datos de trabajo</strong> y los <strong>resultados del proyecto</strong>:</p>
+<ul class="simple">
+<li><p><strong>Datos autorizados</strong>: de solo lectura para la mayoría del personal; únicamente los administradores de datos designados pueden cargar o editar.</p></li>
+<li><p><strong>Datos de trabajo</strong>: restringidos a los editores; habilite proteger/desproteger para evitar sobrescrituras accidentales.</p></li>
+<li><p><strong>Proyectos</strong>: editables por los equipos del proyecto, pero pueden ser de solo lectura para otros, a fin de evitar ediciones no deseadas.</p></li>
+<li><p><strong>Conjuntos de datos sensibles</strong>: si es necesario controlar la distribución, utilice enlaces de <em>solo lectura</em> combinados con la opción <em>Bloquear descarga</em>.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Mantenga los permisos simples.</strong>
+En lugar de asignar derechos a cada persona, cree grupos en SharePoint como:</p>
+<ul class="simple">
+<li><p><em>Propietarios</em> (Control total)</p></li>
+<li><p><em>Editores</em> (Editar)</p></li>
+<li><p><em>Lectores</em> (Solo lectura)</p></li>
+</ul>
+<p>Esto hace que la gestión sea mucho más sencilla cuando el personal se incorpora o deja la organización.</p>
+</section>
+</section>
+<section id="metadatos-y-catalogacion">
+<h2>Metadatos y catalogación<a class="headerlink" href="#metadatos-y-catalogacion" title="Link to this heading">#</a></h2>
+<p>Incluso si sus archivos están bien organizados en carpetas, puede resultar difícil para el personal nuevo saber <strong>cuál conjunto de datos es el más reciente</strong> o <strong>para qué se utiliza cada archivo</strong>.
+Aquí es donde entran los <em>metadatos</em>. En SharePoint, puede agregar campos de información adicionales (columnas) a las bibliotecas. Estos campos facilitan filtrar, ordenar y buscar en todos los datos, sin depender únicamente de los nombres de los archivos.</p>
+<section id="por-que-usar-metadatos">
+<h3>¿Por qué usar metadatos?<a class="headerlink" href="#por-que-usar-metadatos" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Claridad</strong>: el personal puede ver rápidamente qué conjunto de datos está autorizado, es un borrador o está desactualizado.</p></li>
+<li><p><strong>Consistencia</strong>: todos usan los mismos campos estándar.</p></li>
+<li><p><strong>Búsqueda y filtrado</strong>: en lugar de navegar por docenas de carpetas, los usuarios pueden filtrar por país, amenaza o fecha de actualización.</p></li>
+<li><p><strong>Documentación</strong>: el contexto clave (como el origen y el ciclo de actualización) se almacena con el archivo en sí, no solo en la memoria de alguien.</p></li>
+</ul>
+</section>
+<section id="campos-de-metadatos-sugeridos">
+<h3>Campos de metadatos sugeridos<a class="headerlink" href="#campos-de-metadatos-sugeridos" title="Link to this heading">#</a></h3>
+<p>Al crear o editar una biblioteca en SharePoint, puede agregar columnas simples como:</p>
+<ul class="simple">
+<li><p><strong>Tema</strong> (p. ej., límites, salud, logística, amenazas)</p></li>
+<li><p><strong>Ubicación/Código ISO3</strong> (p. ej., MDG, SOM, nombre de la región)</p></li>
+<li><p><strong>Fuente</strong> (p. ej., PMA, OCHA, OSM)</p></li>
+<li><p><strong>Fecha de actualización</strong> (DDMMAAAA)</p></li>
+<li><p><strong>Contacto/Propietario</strong> (persona o equipo responsable)</p></li>
+<li><p><strong>URL</strong> (enlace a la fuente de datos o a la documentación original)</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>No es necesario etiquetar <em>todo</em>. Comience con tres o cuatro campos principales que ayuden a su equipo a encontrar los datos rápidamente.
+Por ejemplo: <em>Tema</em>, <em>Ubicación</em>, <em>Fuente</em>y <em>Fecha de actualización</em>. Se pueden añadir más campos posteriormente si es necesario.</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qB2acPUSF_o?si=JyjVHEqcTNHqTKUK" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+</section>
+<section id="guia-de-implementacion-inicio-rapido">
+<h2>Guía de implementación (inicio rápido)<a class="headerlink" href="#guia-de-implementacion-inicio-rapido" title="Link to this heading">#</a></h2>
+<p>Configurar un centro de datos geoespaciales en SharePoint es sencillo.
+Siga estos pasos para comenzar:</p>
+<ol class="arabic simple">
+<li><p><strong>Crear una nueva biblioteca de documentos en SharePoint</strong></p>
+<ul class="simple">
+<li><p>Asígnele un nombre claro, p. ej., <code class="docutils literal notranslate"><span class="pre">GIS_Hub</span></code>.</p></li>
+<li><p>Esta será el espacio raíz para todas sus carpetas de datos geoespaciales.</p></li>
+</ul>
+</li>
+<li><p><strong>Configurar la estructura de las carpetas</strong></p>
+<ul class="simple">
+<li><p>Reproduzca la estructura acordada (minimalista, equilibrada o extendida) dentro de la biblioteca.</p></li>
+<li><p>Ejemplo de configuración equilibrada:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">00_Admin/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">10_Data/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">50_Projects/</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Configurar permisos</strong></p>
+<ul class="simple">
+<li><p>Use los grupos de SharePoint: <em>Propietarios</em> (control total), <em>Editores</em> (editar), <em>Lectores</em> (solo lectura).</p></li>
+<li><p>Configure <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> y <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code> como de solo lectura para la mayoría de los usuarios.</p></li>
+<li><p>Restrinja <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> solo para editores.</p></li>
+</ul>
+</li>
+<li><p><strong>Agregar contenido inicial</strong></p>
+<ul class="simple">
+<li><p>Cargue conjuntos de datos autorizados en <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> (límites, caminos, capas de exposición).</p></li>
+<li><p>Cargue algunos DEM o rásteres de cobertura terrestre en <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+<li><p>Agregue estilos (<code class="docutils literal notranslate"><span class="pre">.qml</span></code>) y diseños (<code class="docutils literal notranslate"><span class="pre">.qpt</span></code>) de QGIS compartidos en <code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Habilitar la sincronización con OneDrive para acceder sin conexión</strong></p>
+<ul class="simple">
+<li><p>El personal puede sincronizar la biblioteca <code class="docutils literal notranslate"><span class="pre">GIS_Hub</span></code> en sus computadoras portátiles.</p></li>
+<li><p>Esto permite a QGIS utilizar rutas de archivos locales (más estables que los enlaces en línea).</p></li>
+</ul>
+</li>
+<li><p>**Documentar los POE en <strong><code class="docutils literal notranslate"><span class="pre">00_Admin/</span></code></strong></p>
+<ul class="simple">
+<li><p>Añada un simple archivo <code class="docutils literal notranslate"><span class="pre">ReadMe.md</span></code> o <code class="docutils literal notranslate"><span class="pre">SOPs.pdf</span></code> explicando lo siguiente:</p>
+<ul>
+<li><p>Qué carpetas son de solo lectura.</p></li>
+<li><p>Cómo nombrar los archivos.</p></li>
+<li><p>Dónde guardar borradores y dónde los resultados finales.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Incorporar personal</strong></p>
+<ul class="simple">
+<li><p>Indique al nuevo personal dónde encontrar datos, proyectos y estilos.</p></li>
+<li><p>Enfatice que solo los administradores de datos actualizan las carpetas <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> y <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Empiece de a poco. No cargue todo a la vez. Comience con los conjuntos de datos que se utilizan con más frecuencia en sus proyectos (p. ej., límites administrativos, centros de salud, WorldPop).
+Puede ampliar la biblioteca más adelante, a medida que el equipo se familiarice con el sistema.</p>
+</div>
+</section>
+<section id="procedimientos-operativos-estandar-poe">
+<h2>Procedimientos operativos estándar (POE)<a class="headerlink" href="#procedimientos-operativos-estandar-poe" title="Link to this heading">#</a></h2>
+<p>Una estructura de carpetas clara solo es útil si todos la aplican de manera consistente.
+Para evitar confusiones y pérdida de datos, las organizaciones deben acordar algunas reglas simples.
+Estos <strong>procedimientos operativos estándar (POE)</strong> pueden servir como punto de partida:</p>
+<ol class="arabic simple">
+<li><p><strong>Carga de datos</strong>
+Solo los administradores de datos pueden agregar o actualizar archivos en <code class="docutils literal notranslate"><span class="pre">10_Data/</span></code> y <code class="docutils literal notranslate"><span class="pre">20_Raster_Data/</span></code>.
+Otros miembros del personal pueden descargar estos conjuntos de datos, pero no modificarlos.</p></li>
+<li><p><strong>Nombrar archivos</strong>
+Siga siempre la convención de nombres acordada (véase la sección sobre nombres).
+Esto garantiza que sea fácil encontrar los conjuntos de datos y evita la duplicación.</p></li>
+<li><p><strong>Datos de trabajo</strong></p>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> solo para borradores, procesamiento intermedio o ediciones temporales.</p></li>
+<li><p>Para evitar problemas de sincronización (especialmente con archivos grandes), el personal también puede guardar los archivos de trabajo <strong>localmente en su propia computadora</strong>.</p></li>
+<li><p>Antes de los fines de semana, o cuando sea necesario compartir los resultados con el equipo (para copias de seguridad y contingencias), cargue los archivos relevantes en <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Carpetas de proyectos</strong>
+Cada proyecto debe tener su propia subcarpeta en <code class="docutils literal notranslate"><span class="pre">50_Projects/</span></code> (p. ej., <code class="docutils literal notranslate"><span class="pre">FloodResponse_2025/</span></code>).
+Allí guarde:</p>
+<ul class="simple">
+<li><p>Proyectos de QGIS (<code class="docutils literal notranslate"><span class="pre">.qgz</span></code>).</p></li>
+<li><p>Resultados finales del análisis (mapas, informes, tablas).</p></li>
+<li><p>Una copia de los <strong>conjuntos de datos que realmente se utilizan en el proyecto</strong> (para que el trabajo pueda reproducirse posteriormente).</p></li>
+</ul>
+</li>
+<li><p><strong>Plantillas</strong>
+Aplique siempre los estilos y diseños de QGIS compartidos desde <code class="docutils literal notranslate"><span class="pre">30_Styles_Templates/</span></code> al producir mapas o análisis.
+Esto mantiene la consistencia de los resultados en toda la organización.</p></li>
+<li><p><strong>Flujos de trabajo de PAT (si corresponde)</strong>
+Para una acción anticipatoria, almacene los datos de referencia en <code class="docutils literal notranslate"><span class="pre">50_Cyclone_EAP/Fixed_Data/</span></code>, los modelos en <code class="docutils literal notranslate"><span class="pre">50_Cyclone_EAP/Models/</span></code>,
+y cree una nueva carpeta para cada activación en <code class="docutils literal notranslate"><span class="pre">50_Cyclone_EAP/Activations/</span></code>.</p></li>
+<li><p><strong>Registro de cambios</strong>
+Mantenga un registro simple <code class="docutils literal notranslate"><span class="pre">00_Admin/</span></code> (p. ej., <code class="docutils literal notranslate"><span class="pre">Change_Log.xlsx</span></code>) donde los administradores registren actualizaciones a los datos o plantillas.</p></li>
+<li><p><strong>Permisos</strong>
+Administre el acceso a través de los grupos de SharePoint, no para cada persona:</p>
+<ul class="simple">
+<li><p><em>Propietarios</em> → control total</p></li>
+<li><p><em>Editores</em> → editar (p. ej., para <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> y las carpetas de proyectos)</p></li>
+<li><p><em>Lectores</em> → solo lectura (para la mayoría de las carpetas de datos)</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Los POE breves son más eficaces si caben en <strong>una página</strong>.
+Manténgalos simples y revíselos una vez al año para asegurarse de que sigan siendo relevantes.
+Enfatice que <strong>los archivos de trabajo diarios pueden permanecer en las computadoras portátiles individuales</strong>.
+Cargue archivos a <code class="docutils literal notranslate"><span class="pre">40_Working_Data/</span></code> únicamente antes de los fines de semana, los cambios de turno o cuando sea necesario compartir los resultados para uso del equipo y en contingencias.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Wiki"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposito-y-audiencia">Propósito y audiencia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-funcion-del-administrador-de-datos">La función del administrador de datos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-de-estructuras-de-carpetas">Ejemplo de estructuras de carpetas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-minimalista-equipos-muy-pequenos">1. Configuración minimalista (equipos muy pequeños)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-equilibrada-organizaciones-pequenas-en-general">2. Configuración equilibrada (organizaciones pequeñas en general)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-extendida-con-flujos-de-trabajo-de-pat">3. Configuración extendida (con flujos de trabajo de PAT)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-limitaciones-y-permisos">Ventajas, limitaciones y permisos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas">Ventajas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones">Limitaciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permisos">Permisos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metadatos-y-catalogacion">Metadatos y catalogación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-usar-metadatos">¿Por qué usar metadatos?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campos-de-metadatos-sugeridos">Campos de metadatos sugeridos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guia-de-implementacion-inicio-rapido">Guía de implementación (inicio rápido)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedimientos-operativos-estandar-poe">Procedimientos operativos estándar (POE)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

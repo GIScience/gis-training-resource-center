@@ -675,7 +675,7 @@ incorporate additional information from  layers, which can help us understand a 
 <p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">Different spatial geoprocessing tools. Source: Adapted from <a class="reference external" href="https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html">Saylor Academy</a></span><a class="headerlink" href="#en-module5-spatial-geodataprocessing" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In this chapter, we will first explore <strong>spatial joins</strong>. Spatial joins, for example, allow us to import attributes from one layer to another on the basis of their location in relation to geofeatures in another layer. These Spatial relationships can also be used to select features of a layer. Furthermore, we will go over the spatial processing tools <strong>buffer</strong>, <strong>clip</strong>, and <strong>dissolve</strong>. These operations allow us to combine geometries from two layers in various ways (see <a class="reference internal" href="#en-module5-spatial-geodataprocessing"><span class="std std-numref">Fig. 5.1</span></a>).</p>
+<p>In this chapter, we will first explore <strong>spatial joins</strong>. Spatial joins, for example, allow us to import attributes from one layer to another on the basis of their location in relation to geofeatures in another layer. These Spatial relationships can also be used to select features of a layer. Furthermore, we will go over the spatial processing tools <strong>buffer</strong>, <strong>clip</strong>, and <strong>dissolve</strong>. These operations allow us to combine geometries from two layers in various ways (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_module5_spatial_geodataprocessing</span></code>).</p>
 </section>
 <section id="spatial-joins">
 <h2><span class="section-number">5.1.3. </span>Spatial joins<a class="headerlink" href="#spatial-joins" title="Link to this heading">#</a></h2>
@@ -767,7 +767,7 @@ Cross</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Now it’s your turn!</p>
 <p>Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by downloading the necessary data.</p>
 </div>
-<p>In the example above (<a class="reference internal" href="#en-spatial-join-example"><span class="std std-numref">Fig. 5.4</span></a>), we have a dataset containing the healthsites by healthsite.ioand a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. To do this, we need to use the tool “Join Attributes by Location”.</p>
+<p>In the example above (<code class="xref std std-numref docutils literal notranslate"><span class="pre">en_spatial_join_example</span></code>), we have a dataset containing the healthsites by healthsite.ioand a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. To do this, we need to use the tool “Join Attributes by Location”.</p>
 <figure class="align-default" id="en-spatial-join-example">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_example.png"><img alt="../../_images/en_spatial_join_example.png" src="../../_images/en_spatial_join_example.png" style="width: 400px;" />
 </a>
@@ -787,8 +787,8 @@ Cross</label><div class="sd-tab-content docutils">
 <span class="sd-summary-text"><strong>Tool:</strong> Join attributes by location</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.</p>
 <ul class="simple">
-<li><p class="sd-card-text">The first input layer (see “Join to features in” in <a class="reference internal" href="#en-spatial-join-1"><span class="std std-numref">Fig. 5.5</span></a>) dictates which geometric features will be copied to the new layer.</p></li>
-<li><p class="sd-card-text">The second input layer (see “By comparing to” in <a class="reference internal" href="#en-spatial-join-1"><span class="std std-numref">Fig. 5.5</span></a>) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer.</p></li>
+<li><p class="sd-card-text">The first input layer (see “Join to features in” in <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_spatial_join_1</span></code>) dictates which geometric features will be copied to the new layer.</p></li>
+<li><p class="sd-card-text">The second input layer (see “By comparing to” in <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_spatial_join_1</span></code>) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer.</p></li>
 </ul>
 <figure class="align-default" id="en-spatial-join-1">
 <a class="reference internal image-reference" href="../../_images/en_spatial_join_1.PNG"><img alt="../../_images/en_spatial_join_1.PNG" src="../../_images/en_spatial_join_1.PNG" style="width: 450px;" />
@@ -816,7 +816,7 @@ Cross</label><div class="sd-tab-content docutils">
 <li><p>A new (temporary) layer called “Joined features” will appear in your layers-panel</p></li>
 <li><p><kbd>Right-click</kbd> on the layer and select “Export” or “Make Permanent” to save the new layer.</p></li>
 </ol>
-<p>Congratulations, we now have added the information about the administrative region to the health facilities layer! We can symbolise the joined layer with the categorised symbology to verify if it worked (see <a class="reference internal" href="#spatial-join-ex1-results-categorised"><span class="std std-numref">Fig. 5.6</span></a>). Note that the points in the original dataset which were outside of Nigeria’s border have been discarded as they could not be joined.</p>
+<p>Congratulations, we now have added the information about the administrative region to the health facilities layer! We can symbolise the joined layer with the categorised symbology to verify if it worked (see <code class="xref std std-numref docutils literal notranslate"><span class="pre">spatial_join_ex1_results_categorised</span></code>). Note that the points in the original dataset which were outside of Nigeria’s border have been discarded as they could not be joined.</p>
 <figure class="align-default" id="spatial-join-ex1-results-categorised">
 <a class="reference internal image-reference" href="../../_images/spatial_join_ex1_results_categorised.png"><img alt="../../_images/spatial_join_ex1_results_categorised.png" src="../../_images/spatial_join_ex1_results_categorised.png" style="width: 500px;" />
 </a>

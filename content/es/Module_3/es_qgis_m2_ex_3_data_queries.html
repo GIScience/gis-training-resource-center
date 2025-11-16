@@ -629,13 +629,13 @@ document.write(`
 <section id="enlaces-a-articulos-de-la-wiki">
 <h3>Enlaces a artículos de la Wiki<a class="headerlink" href="#enlaces-a-articulos-de-la-wiki" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_interface_wiki.md"><span class="xref myst">Interfaz de QGIS</span></a></p></li>
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_geodata_types_wiki.md"><span class="xref myst">Tipos de datos geoespaciales</span></a></p></li>
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_import_geodata_wiki.md"><span class="xref myst">Importación de datos geoespaciales en QGIS</span></a></p></li>
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_layer_concept_wiki.md"><span class="xref myst">Concepto de capa</span></a></p></li>
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md"><span class="xref myst">Consultas no espaciales</span></a></p></li>
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_spatial_queries_wiki.md"><span class="xref myst">Consultas espaciales</span></a></p></li>
-<li><p><a class="reference internal" href="#/content/es/Wiki/es_qgis_table_functions_wiki.md"><span class="xref myst">Función de tabla: agregar campo</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_interface_wiki.html"><span class="std std-doc">Interfaz de QGIS</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html"><span class="std std-doc">Tipos de datos geoespaciales</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html"><span class="std std-doc">Importación de datos geoespaciales en QGIS</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_layer_concept_wiki.html"><span class="std std-doc">Concepto de capa</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_non_spatial_queries_wiki.html"><span class="std std-doc">Consultas no espaciales</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_spatial_queries_wiki.html"><span class="std std-doc">Consultas espaciales</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_table_functions_wiki.html"><span class="std std-doc">Función de tabla: agregar campo</span></a></p></li>
 <li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html#clip">Geoprocesamiento: recorte</a></p></li>
 </ul>
 </section>
@@ -676,7 +676,7 @@ document.write(`
 <ol class="arabic simple" start="4">
 <li><p>En primer lugar, queremos exportar el distrito <strong>Beledweyne</strong> de la región de Hiraan desde <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> para tenerlo como capa vectorial independiente. Para hacer esto:</p>
 <ol class="arabic simple">
-<li><p>Abra la tabla de atributos de <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> al hacer clic con el botón derecho en la capa –&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference internal" href="#/content/es/Wiki/es_qgis_attribute_table_wiki.md"><span class="xref myst">video en Wiki</span></a>).</p></li>
+<li><p>Abra la tabla de atributos de <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> al hacer clic con el botón derecho en la capa –&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>(<a class="reference internal" href="../Wiki/es_qgis_attribute_table_wiki.html"><span class="std std-doc">video en Wiki</span></a>).</p></li>
 <li><p>Busque la fila de <code class="docutils literal notranslate"><span class="pre">Belet</span> <span class="pre">Weyne</span></code> y márquela al hacer clic en el número que está en el extremo izquierdo de la tabla de atributos. La fila se resaltará en azul y el distrito se volverá amarillo en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en <code class="docutils literal notranslate"><span class="pre">Zoom</span> <span class="pre">to</span> <span class="pre">Feature</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature">Wiki Video</a>).</p></li>
 <li><p>Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">as</span></code>. Queremos guardar Beledweyne como GeoPackage, así que ajuste <code class="docutils literal notranslate"><span class="pre">Format</span></code> en consecuencia. Haga clic en los tres puntos y navegue a su <strong>carpeta temporal</strong>. Aquí puede asignar a la capa el nombre <strong>AOI_Beledweyne</strong> y hacer clic en <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Ahora haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file">Wiki Video</a>). En este ejercicio, no reproyectaremos las capas y trabajaremos con los datos en <code class="docutils literal notranslate"><span class="pre">ESPG:4326</span> <span class="pre">-</span> <span class="pre">WGS84</span></code>.</p></li>
 </ol>
@@ -748,7 +748,7 @@ Para extraer “hospitales”, “escuelas” y “mezquitas”, podemos utiliza
 </figure>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Una capa temporal no se guardará en su proyecto QGIS, incluso después de guardar el proyecto. Las capas temporales se marcan con un <img alt="" src="../../../_images/icon_scratch_layer.png" />. Para guardar la capa de forma permanente, <kbd>Haga clic derecho</kbd> en la capa que desea hacer permanente. A continuación, seleccione la ubicación para guardar la capa nueva. Asegúrese de guardarla en la carpeta correcta (consulte <a class="reference internal" href="#/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md"><span class="xref myst">estructura de carpeta estándar</span></a>).</p>
+<p>Una capa temporal no se guardará en su proyecto QGIS, incluso después de guardar el proyecto. Las capas temporales se marcan con un <img alt="" src="../../../_images/icon_scratch_layer.png" />. Para guardar la capa de forma permanente, <kbd>Haga clic derecho</kbd> en la capa que desea hacer permanente. A continuación, seleccione la ubicación para guardar la capa nueva. Asegúrese de guardarla en la carpeta correcta (consulte <a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html"><span class="std std-doc">estructura de carpeta estándar</span></a>).</p>
 </div>
 <ol class="arabic simple" start="7">
 <li><p>Explore la nueva capa abriendo la tabla de atributos, activando y desactivando la capa en el panel Capas.</p></li>

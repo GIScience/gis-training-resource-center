@@ -1,0 +1,1108 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ejercicio 4: Seguridad en Peshawar &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_5/es_qgis_module_5_ex4';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/es_module_3_overview.html">3. Operaciones básicas de los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_digitisation.html">3.1. Digitalización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_queries.html">3.2. Selección y consulta de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_classification.html">3.3. Clasificación de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_georeferencing.html">3.4. Georreferenciación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_module_3_exercises.html">3.5. Ejercicios para el módulo 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">4. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">4.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">4.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">4.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">4.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_module_5_overview.html">5. Operaciones intermedias del SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_tools.html">5.1. Procesamiento de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_overlay_operations.html">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_centroids.html">5.4. Centroides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_non_spatial_tools.html">5.5. Procesamiento no espacial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_module_5_exercises.html">5.6. Ejercicios para el módulo 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/es_module_7_overview.html">6. Automatización con QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_automation_theory.html">6.1. El diseñador de modelos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_module_7_exercises.html">6.2. Ejercicios para el módulo 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_qgis_basics_wiki.html">Conceptos básicos de QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_installation_wiki.html">Instalación de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_interface_wiki.html">Interfaz de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html">Proyectos y estructura de carpetas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html">Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_basemaps_wiki.html">Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_plugins_wiki.html">Complementos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_data_sources_wiki.html">Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_licensing_data.html">Licencias de datos (trabajar con conjuntos de datos con licencia)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_geodata_wiki.html">Datos geográficos generales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html">Tipos de datos geográficos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html">Importación de datos geográficos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_OpenStreetMap_wiki.html">Datos de OpenStreetMap (OSM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_layer_concept_wiki.html">Concepto de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_attribute_table_wiki.html">Tabla de atributos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_digitisation_wiki.html">Digitalización</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_data_classification_wiki.html">Clasificación de datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_single_symbol_wiki.html">Clasificación por símbolo único</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_categorised_wiki.html">Clasificación por categorías</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_graduated_wiki.html">Clasificación graduada</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_geoprocessing_wiki.html">Procesamiento espacial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_queries_wiki.html">Consultas espaciales y no espaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_queries_wiki.html">Consultas espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_queries_wiki.html">Consultas no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_table_functions_wiki.html">Manipulación de la tabla de atributos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_joins_wiki.html">Unir datos geográficos (uniones espaciales y no espaciales)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_joins_wiki.html">Uniones espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_joins_wiki.html">Uniones no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_raster_wiki.html">Datos ráster</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_raster_basic_wiki.html">Operaciones básicas de ráster</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_automation_wiki.html">Automatización en QGIS (el diseñador de modelos)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_representation_wiki.html">Visualización y creación de mapas en QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_visualisation_wiki.html">Visualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_map_making_wiki.html">Compositor de diseños de impresión</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_common_errors_and_Issues.html">Errores y problemas comunes en QGIS <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_web_and_mobile_apps_wiki.html">Aplicaciones SIG para web y móviles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_geodata_management_sharepoint.html">Gestión de datos geoespaciales con SharePoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_5/es_qgis_module_5_ex4.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_5/es_qgis_module_5_ex4.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicio 4: Seguridad en Peshawar</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-disponibles">Datos disponibles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion">Preparación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-1-geolocalizar-la-informacion-relacionada-con-la-seguridad-de-los-ultimos-dias">Tarea 1: Geolocalizar la información relacionada con la seguridad de los últimos días</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-2-cargar-en-qgis-un-archivo-excel-con-datos-sobre-conflictos">Tarea 2: Cargar en QGIS un archivo Excel con datos sobre conflictos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-3-datos-ipm">Tarea 3: Datos IPM</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-4-seguridad-en-peshawar">
+<h1>Ejercicio 4: Seguridad en Peshawar<a class="headerlink" href="#ejercicio-4-seguridad-en-peshawar" title="Link to this heading">#</a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">En este ejercicio, crearemos un mapa de seguridad para un equipo humanitario. En respuesta a un reciente brote de cólera en Khyber Pakhtunkhwa (KP), la Media Luna Roja de Pakistán (MLRP) y otras Sociedades Nacionales Asociadas (SNP, por sus siglas en inglés) han movilizado un equipo a esta región. El objetivo principal del equipo es llevar a cabo una evaluación exhaustiva sobre el terreno y facilitar la coordinación para cualquier respuesta futura que sea necesaria.</p>
+<p class="sd-card-text">Para garantizar la seguridad de nuestro equipo, crearemos un mapa con información relacionada con la seguridad, como amenazas de bomba. Además, echaremos un vistazo a los datos sobre conflictos armados y crearemos un mapa general que muestre los conflictos por thesil (subdistrito/ADM3).</p>
+<p class="sd-card-text">Para ello, utilizaremos herramientas de geoprocesamiento más avanzadas, como los buffers y las herramientas de intersección, y uniremos dos conjuntos de datos mediante uniones de tablas de atributos.</p>
+<p class="sd-card-text">El ejercicio se divide en <strong>tres tareas</strong>:</p>
+<ul class="simple">
+<li><p class="sd-card-text">En la primera tarea, digitalizaremos la información relacionada con la seguridad como datos de punto y crearemos zonas buffer para indicar las zonas de alto riesgo.</p></li>
+<li><p class="sd-card-text">En la segunda tarea, cargaremos un archivo csv con datos sobre conflictos ocurridos en Pakistán. Utilizaremos este conjunto de datos para averiguar el número de incidentes conflictivos por thesil (subdistrito).</p></li>
+<li><p class="sd-card-text">En la tercera tarea, cargaremos otro archivo csv con datos sobre el índice de pobreza múltiple (IPM) por distrito (ADM2). El Índice de Pobreza Multidimensional (IPM) mide la pobreza considerando otros aspectos, no únicamente los ingresos. Incluye aspectos como la educación, la sanidad y el nivel de vida para comprender por qué las personas son pobres. El archivo csv no contiene información espacial explícita. Añadiremos información espacial uniéndola a una capa de polígonos que contenga los límites del distrito.</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Serie de ejercicios de respuesta a las inundaciones en Larkana:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Este ejercicio forma parte de la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_larkana_flood_response.html">Serie de ejercicios de respuesta a las inundaciones en Larkana</a>.</p>
+<p class="sd-card-text">Sin embargo, el ejercicio <strong>puede</strong> realizarse sin haber completado los ejercicios anteriores.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Estas habilidades son relevantes para</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Fundamentos de QGIS</p></li>
+<li><p class="sd-card-text">Trabajar con varias capas</p></li>
+<li><p class="sd-card-text">Realizar consultas espaciales</p></li>
+<li><p class="sd-card-text">Creación de datos geoespaciales</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Duración estimada del ejercicio:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">El ejercicio dura unas 3 horas, dependiendo del número de participantes y de su familiaridad con los sistemas informáticos.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Artículos relevantes en Wiki:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html">Importación de datos geoespaciales en QGIS</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_layer_concept_wiki.html">Concepto de capa</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_categorized_wiki.html">Clasificación de datos geoespaciales por categorías</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer">Digitalización - Datos de punto</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="instrucciones-para-capacitadores">
+<h2>Instrucciones para capacitadores<a class="headerlink" href="#instrucciones-para-capacitadores" title="Link to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Rincón del instructor</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="preparar-la-capacitacion">Preparar la capacitación</h3>
+<ul class="simple">
+<li><p class="sd-card-text">Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.</p></li>
+<li><p class="sd-card-text">Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.</p></li>
+<li><p class="sd-card-text">Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado <strong>y descomprimido</strong> la carpeta de datos.</p></li>
+<li><p class="sd-card-text">Consulte <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings">¿Cómo realizar capacitaciones?</a> para obtener algunos consejos generales para impartirlas.</p></li>
+</ul>
+<h3 class="rubric" id="impartir-la-capacitacion">Impartir la capacitación</h3>
+<p class="sd-card-text"><strong>Introducción:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Presente la idea y el objetivo del ejercicio.</p></li>
+<li><p class="sd-card-text">Proporcione el enlace de descarga y asegúrese de que todos los participantes hayan descomprimido la carpeta antes de comenzar las tareas.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Guía paso a paso:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Muestre cada paso y explíquelo al menos dos veces y de manera pausada para que todos puedan ver lo que está haciendo y aplicarlo en su propio proyecto de QGIS.</p></li>
+<li><p class="sd-card-text">Pregunte con regularidad si alguien necesita ayuda o si todos están siguiendo el ejercicio, para asegurarse de que todos comprenden y realizan los pasos por sí mismos.</p></li>
+<li><p class="sd-card-text">Mantenga una actitud abierta y paciente ante cualquier pregunta o problema que pueda surgir. Los participantes están haciendo varias tareas a la vez: prestan atención a sus instrucciones y las aplican en su propio proyecto de QGIS.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Cierre de la sesión:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Dedique tiempo al final del ejercicio a cualquier problema o pregunta relacionada con las tareas que pueda surgir.</p></li>
+<li><p class="sd-card-text">Reserve algo de tiempo para preguntas abiertas.</p></li>
+</ul>
+</div>
+</details><section id="datos-disponibles">
+<h3>Datos disponibles<a class="headerlink" href="#datos-disponibles" title="Link to this heading">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Descargue todos los conjuntos de datos <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip">aquí</a>, guarde la carpeta en su ordenador y descomprima el archivo.</strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip"><span>https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip</span></a></div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre del conjunto de datos</p></th>
+<th class="head text-left"><p>Título original</p></th>
+<th class="head text-left"><p>Editorial</p></th>
+<th class="head text-left"><p>Descargar desde</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>2024-01-01-2024-09-23-Pakistan.xlsx</p></td>
+<td class="text-left"><p>Datos sobre conflictos en Pakistán 01/2024-09/2024</p></td>
+<td class="text-left"><p>ACLED</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>PAK_KP_admin_3.gpkg</p></td>
+<td class="text-left"><p>Límites administrativos de nivel 3 del PK</p></td>
+<td class="text-left"><p>UN OCHA</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Pak_adm2_Khyber Pakhtunkhwa.gpkg</p></td>
+<td class="text-left"><p>Límites administrativos de nivel 1 del PK</p></td>
+<td class="text-left"><p>UN OCHA</p></td>
+<td class="text-left"><p>HDX</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>20240605_PAK_MPI.xlsx</p></td>
+<td class="text-left"><p>Pakistán Índice de Pobreza Múltiple (IPM)</p></td>
+<td class="text-left"><p>Oficina de Estadísticas de Pakistán</p></td>
+<td class="text-left"><p>Oficina de Estadísticas de Pakistán</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>AOI_Peshawar.gpkg</p></td>
+<td class="text-left"><p>Área de interés (AOI, por sus siglas en inglés) en los alrededores de Peshawar</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="preparacion">
+<h2>Preparación<a class="headerlink" href="#preparacion" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Cree un nuevo proyecto QGIS y guárdelo en la carpeta de ejercicios.</p></li>
+</ul>
+</section>
+<section id="tarea-1-geolocalizar-la-informacion-relacionada-con-la-seguridad-de-los-ultimos-dias">
+<h2>Tarea 1: Geolocalizar la información relacionada con la seguridad de los últimos días<a class="headerlink" href="#tarea-1-geolocalizar-la-informacion-relacionada-con-la-seguridad-de-los-ultimos-dias" title="Link to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Contexto:</div>
+<p class="sd-card-text">En respuesta a un reciente brote de cólera en Khyber Pakhtunkhwa (KP), la Media Luna Roja de Pakistán (MLRP) y otras Sociedades Nacionales Asociadas (SNP, por sus siglas en inglés) han movilizado un equipo a esta región. El objetivo principal del equipo es llevar a cabo una evaluación exhaustiva sobre el terreno y facilitar la coordinación para cualquier respuesta futura que sea necesaria.
+El equipo se alojará en el “Roomy Crossroad Hotel Peshawar” durante su misión en la zona afectada.
+Hemos recibido información relacionada con la seguridad de diversas fuentes. Nuestra tarea consiste en digitalizar esta información en datos espaciales que puedan representarse en un mapa.</p>
+</div>
+</div>
+<p>Para este ejercicio, utilizaremos el complemento <strong>“QuickMapService”</strong> para localizar lugares con precisión. Los complementos QuickMapServices le permiten añadir fácilmente mapas base u otros servicios de mapas como una capa a su proyecto QGIS. Para <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins">instale el complemento</a>:</p>
+<ol class="arabic simple">
+<li><p>En la barra de menús, haga clic en <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins...</span></code>. Se abrirá una nueva ventana.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">All</span></code>, busque “QuickMapServices”. Haga clic y seleccione <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Plugin</span></code> en la esquina inferior derecha.</p></li>
+</ol>
+<p>Después de instalar el complemento, podremos añadir mapas base:</p>
+<ol class="arabic simple" start="3">
+<li><p>En la barra de menús, vaya a <code class="docutils literal notranslate"><span class="pre">Web</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">ESRI</span> <span class="pre">Satellite</span></code>. Esto añadirá el mapa base de la imagen de satélite en su <strong>panel de capas</strong>.</p></li>
+<li><p>Agregaremos también una capa de carreteras para facilitar la orientación: <code class="docutils literal notranslate"><span class="pre">Web</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">QuickMapServices</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Google</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code>.</p></li>
+<li><p>En el <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_layer_concept_wiki.html">panel de capas</a>, asegúrese de que la capa <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Road</span></code> esté por encima de las imágenes satelitales.</p></li>
+<li><p>Para facilitar la navegación, haga transparentes las imágenes satelitales. Para ello, vaya a la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel">pestaña de simbología</a> y ajuste la opacidad global.</p></li>
+<li><p>Necesitaremos el complemento <strong>“Lat Lon Tools”</strong> para localizar las coordenadas que recibimos del campo. Para <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins">instale el complemento</a>, siga las mismas instrucciones que para el complemento QuickMapServices pero busque “Lat Lon Tools” en su lugar.</p></li>
+</ol>
+<p>Genial, ahora hemos configurado nuestro proyecto QGIS y podemos empezar a digitalizar los incidentes conocidos y las áreas de interés relacionadas (como polígonos).
+A continuación encontrará una tabla con la información y las ubicaciones. Lea la tabla una vez y piense qué tipo de geometría puede representar la información.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Número</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>1</p></td>
+<td class="text-left"><p>Las emisoras de radio locales han informado de una <strong>amenaza de bomba</strong> que incluye artefactos explosivos improvisados (IED) en la carretera N45, justo entre <strong>Seri-Bahlol</strong> y Tableeghi Markaz Mardina, cerca de Jandy. Por favor, marque la zona entre las comunidades a lo largo de la carretera como zonas prohibidas.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>2</p></td>
+<td class="text-left"><p>En una conversación con un conductor de la MLRP, una maestra local contó que las inmediaciones de la escuela__Government Girls Primary School en Takkar__ tienen fama de ser un campo minado. Concretamente, se sabe que los campos situados entre la escuela y el hospital <strong>Noormuhmmad</strong> están muy minados. Debido a este peligro, los agricultores locales son muy reacios a trabajar en este terreno en concreto.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>3</p></td>
+<td class="text-left"><p>A raíz de los acontecimientos recientes, se ha decidido que los alrededores del estadio de criquet <strong>Arbab Niaz Cricket Stadium Peshawar</strong> se designen como zona prohibida para todos los miembros del personal. Esta zona abarca la región delimitada por la carretera <strong>N5</strong> al sur, la carretera <strong>Afghan Colony</strong> al norte y al este, y la carretera <strong>Charsadda</strong> al oeste.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>4</p></td>
+<td class="text-left"><p>Coordenadas GPS: <strong>(33.99519949518549, 71.66217873936723)</strong>. Un trabajador humanitario transportaba suministros médicos por la región cuando se les acercó un agricultor local. El agricultor mencionó que un pozo abandonado cercano, ubicado en estas coordenadas, se ha convertido en un punto de <strong>concentración de municiones sin explotar</strong>. Debido a su proximidad a una zona residencial, este lugar se considera de alto riesgo y requiere la atención inmediata de los equipos de desminado.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>5</p></td>
+<td class="text-left"><p>Coordenadas GPS: <strong>(34.02878398623702, 71.43081737211224)</strong>. Recientemente se ha desalojado aquí una unidad sanitaria tras una amenaza de bomba. La policía y los artificieros registraron el local, pero no encontraron explosivos. Sin embargo, los propietarios de negocios locales reportaron actividad inusual alrededor del edificio en las semanas previas a la amenaza. Este lugar está ahora bajo vigilancia. La zona situada entre la unidad sanitaria y el río, así como los parques y el área de juegos que hay detrás, deben señalarse como zona prohibida temporalmente.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>6</p></td>
+<td class="text-left"><p><strong>Qissa Khwani Bazaar, Peshawar</strong>: En esta dirección se ha instalado un popular mercado histórico que se ha convertido en punto de encuentro de la comunidad local, pero recientes informes de inteligencia sugieren que el lugar podría estar en peligro por las protestas políticas que se han tornado violentas en el pasado. Las autoridades están estudiando la posibilidad de establecer barreras temporales para gestionar el flujo de personas, y es crucial que este lugar esté marcado como zona de alto riesgo para posibles medidas de control de multitudes.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Para digitalizar la información, necesitaremos dos nuevas capas: Una capa de puntos y una capa de polígonos.
+En caso de que la información indique un área exacta, crea una nueva capa de polígonos y mapee el área con precisión.</p>
+<ol class="arabic simple" start="8">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_digitissation.html#creating-new-datasets">Cree un nuevo punto y una nueva capa de polígonos</a> para digitalizar la información de puntos y polígonos.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Al crear la capa de puntos y polígonos utilice el SRC UTM 42 N <strong>EPSG: 32642</strong>. Este sistema de referencia de coordenadas es ideal para Pakistán y las unidades de medida de <strong>están en metros</strong>.</p>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Busque las ubicaciones en la tabla y cree nuevas entidades utilizando la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_digitisation.html#digitisation-toolbars">barra de herramientas de digitalización </a>. Capture la información de la tabla y utilice Google, u otro buscador en su navegador, el mapa base y el complemento Lat Lon Tools para localizar la posición exacta.</p></li>
+<li><p>Una vez que haya terminado, asegúrese de guardar las modificaciones en las capas haciendo clic en el botón <img alt="" src="../../../_images/3.44_digitisation_save_edits.png" /> <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Layer</span> <span class="pre">Edits</span></code>.</p></li>
+</ol>
+<p>Genial, hemos digitalizado con éxito la información de seguridad importante. Sin embargo, para que la información sea útil, necesitamos procesar los datos geoespaciales.</p>
+<p>El procedimiento operativo estándar (SOP, por sus siglas en inglés) actual indica que se debe evitar un radio de 1 km alrededor de los lados involucrados en incidentes violentos recientes. Para reflejarlo en el mapa, utilizaremos la herramienta <img alt="" src="../../../_images/mAlgorithmBuffer.png" /> buffer.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>{admonition} Recordatorio
+:class: seealso</p>
+<p>Si ve un símbolo <img alt="" src="../../../_images/3.44_caution_symbol.png" /> junto al parámetro <code class="docutils literal notranslate"><span class="pre">Distance</span></code>, significa que la capa en la que desea hacer el buffer está en un sistema de referencia de coordenadas geográficas. Esto significa que las unidades de medida están en <strong>grados, y no en metros</strong>. En ese caso, deberá <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer">reproyectar su capa</a> en un sistema de referencia de coordenadas métricas.</p>
+<p>Consejo: EPSG:32642 es un SRC ideal para Pakistán.</p>
+</aside>
+<ol class="arabic simple" start="6">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html">Crear un buffer alrededor de los puntos</a> de incidentes violentos con una distancia de <strong>2000 metros</strong>.</p></li>
+<li><p>Ahora tenemos dos capas de polígonos (los puntos de buffers y las zonas digitalizadas). Para visualizar el Área No-Go en Peshwar, podemos fusionar los polígonos de ambas capas en una sola capa con la herramienta <code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">vector</span> <span class="pre">layer</span></code> y seleccionar las capas que queremos fusionar como entradas.</p></li>
+<li><p>Cargue la capa <code class="docutils literal notranslate"><span class="pre">AOI_Peshawar.gpkg</span></code> en su proyecto.</p></li>
+</ol>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Existen varios algoritmos de recorte en la caja de herramientas. Asegúrese de elegir la herramienta de recorte <img alt="" src="content/es/Module_5/3.44_clip_vector.png" /> agrupada en “Vector overlay”.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="9">
+<li><p>Queremos crear un polígono que indique la zona segura por la que puede circular el equipo. Para ello, tenemos que “invertir” el polígono. Para ello podemos utilizar la herramienta <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">difference</span></code>:</p>
+<ul class="simple">
+<li><p>En la caja de herramientas de procesos, busque la herramienta “Symmetrical difference” y ábrala.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, seleccione la capa que contenga la información de seguridad.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">Layer</span></code>, seleccione la capa <code class="docutils literal notranslate"><span class="pre">AOI_Peshawar.gpkg</span></code>.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Symmetrical</span> <span class="pre">Difference</span></code>, haga clic en <code class="docutils literal notranslate"><span class="pre">...</span></code> y vaya hasta la carpeta <code class="docutils literal notranslate"><span class="pre">data/results/</span></code>, para este ejercicio, y guarde la capa.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Hagamos una simbolización rápida de la capa resultante para que podamos entender la información más fácilmente:</p>
+<ul class="simple">
+<li><p>Abra el <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel">styling panel</a> para la zona segura.</p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons">Ajuste la simbología</a> para la capa de modo que los polígonos sean <strong>semitransparentes y verdes</strong>.</p></li>
+</ul>
+</li>
+</ol>
+<p>¡Felicidades! Ahora tenemos un mapa para ayudar al equipo sobre el terreno a mantenerse a salvo.</p>
+<!--ADD: Images of the different steps and results.-->
+</section>
+<section id="tarea-2-cargar-en-qgis-un-archivo-excel-con-datos-sobre-conflictos">
+<h2>Tarea 2: Cargar en QGIS un archivo Excel con datos sobre conflictos<a class="headerlink" href="#tarea-2-cargar-en-qgis-un-archivo-excel-con-datos-sobre-conflictos" title="Link to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Contexto:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">En este paso, queremos obtener una visión más amplia de los acontecimientos conflictivos en Pakistán. El proyecto <a class="reference external" href="https://acleddata.com/">Armed Conflict Location and Event Data (ACLED)</a> distribuye conjuntos de datos sobre acontecimientos conflictivos por país en forma de hojas de cálculo Excel. Los conjuntos de datos incluyen fechas, actores, <strong>ubicación</strong>, víctimas mortales y tipos de acontecimientos conflictivos notificados.</p>
+<p class="sd-card-text">El conjunto de datos también incluye las coordenadas geográficas de cada hecho notificado. En QGIS, podemos transformar la tabla de datos en un conjunto de datos espaciales, como un GeoPackage.
+Una vez que tengamos los sucesos conflictivos como datos de punto, podemos agregar los datos a nivel de subdistrito y crear un mapa que muestre los subdistritos (ADM3) más afectados por los conflictos.</p>
+</div>
+</div>
+<ol class="arabic simple">
+<li><p>Arrastre y suelte la tabla Excel del conflicto ACLED <code class="docutils literal notranslate"><span class="pre">2024-01-01-2024-09-23-Pakistan.xlsx</span></code> en su proyecto QGIS.</p></li>
+<li><p>En la caja de herramientas de procesos, busque la herramienta <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">points</span> <span class="pre">layer</span> <span class="pre">from</span> <span class="pre">table</span></code> y ábrala.</p>
+<ul class="simple">
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">Field</span></code> seleccione la columna “longitud”, y como <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">Field</span></code> seleccione “latitud”.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Points</span> <span class="pre">from</span> <span class="pre">Table</span></code>, haga clic en los tres puntos, seleccione “Guardar en GeoPackage” y vaya a su carpeta temporal. Guarde la capa con el nombre “Pak_Puntos_de_conflicto_2024”.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="svg-marker">
+<a class="reference internal image-reference" href="content/fig/Create_ponts_from_table.PNG"><img alt="content/fig/Create_ponts_from_table.PNG" src="content/fig/Create_ponts_from_table.PNG" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cree puntos a partir de la tabla.</span><a class="headerlink" href="#svg-marker" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>¡Estupendo! Ahora tenemos una capa de puntos que muestra los acontecimientos del conflicto en Pakistán. Ahora, podríamos investigar más a fondo este conjunto de datos echando un vistazo a la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_attribute_table.html">tabla de atributos</a> y ver qué tipo de información hay. Sin embargo, queremos saber el número de incidentes conflictivos por thesil (subdistrito/ADM3). Para calcularlo:</p>
+<ol class="arabic simple" start="3">
+<li><p>Importe la capa <code class="docutils literal notranslate"><span class="pre">PAK_KP_admin_3.gpkg</span></code> de su carpeta <code class="docutils literal notranslate"><span class="pre">data/input</span></code> a su proyecto QGIS.</p></li>
+<li><p>Queremos contar el número de eventos conflictivos por thesil (subdistrito/ADM3). Para ello:</p>
+<ul class="simple">
+<li><p>En la caja de herramientas de procesos, busque la herramienta <code class="docutils literal notranslate"><span class="pre">Count</span> <span class="pre">points</span> <span class="pre">in</span> <span class="pre">polygon</span></code> y ábrala.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Polygons</span></code>, seleccione la capa <code class="docutils literal notranslate"><span class="pre">PAK_KP_admin_3</span></code>.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Input</span></code>, seleccione el <code class="docutils literal notranslate"><span class="pre">PAK_Conflict_points_2024</span></code>.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Count</span></code>, haga clic en <code class="docutils literal notranslate"><span class="pre">...</span></code> y guarde la capa en su carpeta <code class="docutils literal notranslate"><span class="pre">data/results/</span></code> como “PAK_num_events_adm3”.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="content/fig/count_point_polygon.PNG"><img alt="content/fig/count_point_polygon.PNG" src="content/fig/count_point_polygon.PNG" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cuente los puntos en el polígono</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Abra el atributo de su capa “Pak_num_events_adm3” y desplácese hacia la derecha. Encontrará una columna con el nombre “NUMPOINTS”. Aquí encontrará el número de eventos por thesil.</p>
+<ul class="simple">
+<li><p>Haga clic con el botón derecho en la capa y vaya a <code class="docutils literal notranslate"><span class="pre">Properties</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>. En la parte superior cambie Single Symbol por “Graduated”.</p>
+<ul>
+<li><p>En el campo <code class="docutils literal notranslate"><span class="pre">Value</span></code> elija “NUMPOINTS”.</p></li>
+</ul>
+</li>
+<li><p>A continuación, haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
+<li><p>Si lo desea, puede ajustar el modo y el número de clases. También puede elegir la rampa de color. Puede probar diferentes opciones de colores.</p></li>
+<li><p>Cuando esté satisfecho con el aspecto, haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code> y luego en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<p>El resultado podría verse parecido a esto:</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="content/fig/Number_events_graduated.PNG"><img alt="content/fig/Number_events_graduated.PNG" src="content/fig/Number_events_graduated.PNG" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Número de eventos conflictivos por thesil.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="tarea-3-datos-ipm">
+<h2>Tarea 3: Datos IPM<a class="headerlink" href="#tarea-3-datos-ipm" title="Link to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Contexto:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">En este paso, queremos visualizar el índice de pobreza múltiple a nivel de distrito (ADM2).</p>
+<p class="sd-card-text">Esto puede ayudarnos a comprender geográficamente la vulnerabilidad económica y social. Los datos con el índice IPM están disponibles en una hoja de cálculo Excel. Sin embargo, no contiene columnas con los datos geográficos específicos (como las coordenadas). Tenemos que encontrar la manera de unir la tabla de datos con un conjunto de datos espaciales.</p>
+</div>
+</div>
+<ol class="arabic">
+<li><p>En primer lugar, abramos la hoja de cálculo con Microsoft Excel o un programa similar (como LibreOffice Calc):</p>
+<ul class="simple">
+<li><p>Aquí ya puede investigar la información que se almacena en las distintas columnas. ¿Puede identificar las columnas que contienen información espacial?</p></li>
+<li><p>Por ahora, vamos a exportar el archivo como CSV UTF-8.</p>
+<ul>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span></code></p></li>
+<li><p>Elija una carpeta de salida donde guardarlo (se recomienda la carpeta <code class="docutils literal notranslate"><span class="pre">data</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">temp</span></code> ) y asigne al archivo un nombre significativo, por ejemplo <strong>20240605_PAK_MPI</strong>.</p></li>
+<li><p>Elija la opción <strong>CSV UTF-8 (delimitado por comas) (*.csv)</strong> y <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-center" id="convert-excel-to-csv">
+<a class="reference internal image-reference" href="../../../_images/PAK_Excel_to_CSV.png"><img alt="../../../_images/PAK_Excel_to_CSV.png" src="../../../_images/PAK_Excel_to_CSV.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Convierta el Excel a CSV</span><a class="headerlink" href="#convert-excel-to-csv" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Abra QGIS y cree un nuevo proyecto. Guarde el proyecto en su carpeta de proyectos.</p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html">Importe las capas</a> <code class="docutils literal notranslate"><span class="pre">__20240605_PAK_MPI.csv__</span></code> y <code class="docutils literal notranslate"><span class="pre">Pak_adm2_Khyber</span> <span class="pre">Pakhtunkhwa.gpkg</span></code> a QGIS:</p>
+<ul class="simple">
+<li><p>Arrastre y suelte la capa ADM2 en su ventana QGIS.</p></li>
+<li><p>Para importar el archivo CSV, haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span></code>.</p></li>
+<li><p>Busque su archivo <strong>20240605_PAK_MPI.csv</strong>.</p></li>
+<li><p>Elija la correcta <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Fromat</span></code>: <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimters</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Semicolon</span></code>.</p></li>
+<li><p>Vaya a	la pestaña <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> y elija <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span></code>. No tenemos una columna con coordenadas o información geométrica, solo tenemos el nombre admin2 y P-Code.</p></li>
+<li><p>Añada la capa y cierre la ventana.</p></li>
+</ul>
+<figure class="align-center" id="load-csv-file-to-qgis">
+<a class="reference internal image-reference" href="../../../_images/PAK_Load_CSVfile.PNG"><img alt="../../../_images/PAK_Load_CSVfile.PNG" src="../../../_images/PAK_Load_CSVfile.PNG" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cargue el archivo CSV en QGIS</span><a class="headerlink" href="#load-csv-file-to-qgis" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<p>Ahora, tenemos que unir los datos a los límites de distrito existentes (ADM2). Este proceso se denomina <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_5/es_qgis_spatial_tools.html#spatial-joins">unión no espacial</a> y permite enriquecer los conjuntos de datos mediante datos de atributos. En nuestro caso, el conjunto de datos IPM contiene una columna con los nombres de los distritos (admin2) y los códigos P. Los códigos P son códigos internacionales de límites administrativos y suelen ser la mejor forma de identificar una unidad administrativa, ya que los nombres pueden tener varias grafías. Nuestra capa de polígonos también tiene columnas con los códigos p.</p>
+<p>Por lo tanto, tenemos que realizar una unión no espacial utilizando las columnas de códigos P como identificadores. Para ello:</p>
+<ol class="arabic" start="4">
+<li><p>Abra la tabla de atributos de la tabla de atributos y detecte la columna que contiene la información que desea utilizar para unir los datos con la ubicación. Por ejemplo: Nombre de la ciudad, del distrito o, mejor, el código P. En nuestro caso es <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p>
+<ul class="simple">
+<li><p><strong>Una pista</strong>: Cada nivel administrativo y zona contiene un número de código único en el mundo. Esto ayuda a determinar el límite administrativo exacto sin escribir mal el nombre de la zona.</p></li>
+</ul>
+</li>
+<li><p>Ahora necesitamos la capa de polígonos con los límites administrativos.</p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos de la capa <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong> y localice la columna que contiene el P-Code. ¿Cómo se llama?</p></li>
+</ul>
+</li>
+<li><p>Para unir las dos capas, abra la caja de herramientas y busque la herramienta <strong>Unir atributos por valor de campo</strong>. Ábralo.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code>: <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">field</span></code>: <strong>admin2Pcode</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span> <span class="pre">2</span></code>: <strong>20240605_PAK_MPI.csv</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">field</span> <span class="pre">2</span></code>: <strong>ADM2_PCOCDE</strong></p></li>
+<li><p>Elija una ubicación para guardar el archivo como GeoPackage y dele un nombre significativo, por ejemplo <strong>MPI_Admin2_joined.gpkg</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Run</span></code> y cierre.</p></li>
+</ul>
+<figure class="align-center" id="join-the-districts-with-the-mpi-data">
+<a class="reference internal image-reference" href="../../../_images/PAK_joined_MPI_csv_admin2.PNG"><img alt="../../../_images/PAK_joined_MPI_csv_admin2.PNG" src="../../../_images/PAK_joined_MPI_csv_admin2.PNG" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Unir los distritos con los datos del IPM</span><a class="headerlink" href="#join-the-districts-with-the-mpi-data" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Info</strong>: Puede notar que no todas las zonas son visibles. Dado que no contamos con datos para todos los distritos, solo se vincularon los distritos que aparecen en el CSV con los datos del IPM.</p>
+<figure class="align-center" id="information-of-not-joined-and-linked-data">
+<a class="reference internal image-reference" href="../../../_images/PAK_joined_MPI_csv_admin2_info.PNG"><img alt="../../../_images/PAK_joined_MPI_csv_admin2_info.PNG" src="../../../_images/PAK_joined_MPI_csv_admin2_info.PNG" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Información de datos no unidos y enlazados</span><a class="headerlink" href="#information-of-not-joined-and-linked-data" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Visualice <strong>MPI_Admin2_joined.gpkg</strong> file: Tenemos un nuevo archivo que muestra los límites de los distritos, pero que contiene la información del IPM en la tabla de atributos. El valor IPM por distrito que ahora queremos visualizar.</p>
+<ul class="simple">
+<li><p>Abra la ventana <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> del archivo <strong>MPI_Admin2_joined.gpkg</strong>.</p></li>
+<li><p>Decida qué columna quiere visualizar. Por ejemplo, los valores del año 2014 en la columna <strong>A_2014_15</strong>.</p></li>
+<li><p>Seleccione <code class="docutils literal notranslate"><span class="pre">Graduate</span></code> visualización.</p></li>
+<li><p>Seleccione <code class="docutils literal notranslate"><span class="pre">Value</span></code> <strong>A_2014_15</strong>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
+<li><p>Seleccione el modo <code class="docutils literal notranslate"><span class="pre">Pretty</span> <span class="pre">Breaks</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> y cierre la ventana.</p></li>
+</ul>
+</li>
+<li><p>Visualice__Pak_adm2_Khyber Pakhtunkhwa.gpkg__ capa para los distritos de los que no tenemos datos IPM.</p>
+<ul class="simple">
+<li><p>Abra la ventana <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> del archivo <strong>Pak_adm2_Khyber Pakhtunkhwa.gpkg</strong>.</p></li>
+<li><p>Cambie el color, tal vez a gris oscuro, para que podamos diferenciar los distritos de los que disponemos datos del IPM de los que no.</p></li>
+</ul>
+</li>
+<li><p>Añada OpenStreetMap como capa base para orientarse mejor.</p></li>
+</ol>
+<figure class="align-center" id="visualized-mpi-data-on-district-level">
+<a class="reference internal image-reference" href="../../../_images/PAK_visualized_MPI.PNG"><img alt="../../../_images/PAK_visualized_MPI.PNG" src="../../../_images/PAK_visualized_MPI.PNG" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Visualice de los datos del IPM a nivel de distrito.</span><a class="headerlink" href="#visualized-mpi-data-on-district-level" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-disponibles">Datos disponibles</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion">Preparación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-1-geolocalizar-la-informacion-relacionada-con-la-seguridad-de-los-ultimos-dias">Tarea 1: Geolocalizar la información relacionada con la seguridad de los últimos días</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-2-cargar-en-qgis-un-archivo-excel-con-datos-sobre-conflictos">Tarea 2: Cargar en QGIS un archivo Excel con datos sobre conflictos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea-3-datos-ipm">Tarea 3: Datos IPM</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

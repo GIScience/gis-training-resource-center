@@ -1,0 +1,934 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5.2. Operaciones de superposición (recorte, disolución, zona de influencia) &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_5/es_qgis_overlay_operations';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="5.4. Centroides" href="es_qgis_centroids.html" />
+    <link rel="prev" title="5.1. Procesamiento de datos espaciales" href="es_qgis_spatial_tools.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modulos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/es_module_3_overview.html">3. Operaciones básicas de los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_digitisation.html">3.1. Digitalización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_queries.html">3.2. Selección y consulta de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_classification.html">3.3. Clasificación de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_georeferencing.html">3.4. Georreferenciación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_module_3_exercises.html">3.5. Ejercicios para el módulo 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">4. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">4.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">4.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">4.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">4.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="es_module_5_overview.html">5. Operaciones intermedias del SIG</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_spatial_tools.html">5.1. Procesamiento de datos espaciales</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_centroids.html">5.4. Centroides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_non_spatial_tools.html">5.5. Procesamiento no espacial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_module_5_exercises.html">5.6. Ejercicios para el módulo 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_7/es_module_7_overview.html">6. Automatización con QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_automation_theory.html">6.1. El diseñador de modelos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_7/es_qgis_module_7_exercises.html">6.2. Ejercicios para el módulo 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_qgis_basics_wiki.html">Conceptos básicos de QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_installation_wiki.html">Instalación de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_interface_wiki.html">Interfaz de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html">Proyectos y estructura de carpetas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html">Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_basemaps_wiki.html">Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_plugins_wiki.html">Complementos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_data_sources_wiki.html">Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_licensing_data.html">Licencias de datos (trabajar con conjuntos de datos con licencia)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_geodata_wiki.html">Datos geográficos generales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html">Tipos de datos geográficos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html">Importación de datos geográficos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_OpenStreetMap_wiki.html">Datos de OpenStreetMap (OSM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_layer_concept_wiki.html">Concepto de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_attribute_table_wiki.html">Tabla de atributos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_digitisation_wiki.html">Digitalización</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_data_classification_wiki.html">Clasificación de datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_single_symbol_wiki.html">Clasificación por símbolo único</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_categorised_wiki.html">Clasificación por categorías</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_graduated_wiki.html">Clasificación graduada</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_geoprocessing_wiki.html">Procesamiento espacial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_queries_wiki.html">Consultas espaciales y no espaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_queries_wiki.html">Consultas espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_queries_wiki.html">Consultas no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_table_functions_wiki.html">Manipulación de la tabla de atributos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_joins_wiki.html">Unir datos geográficos (uniones espaciales y no espaciales)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_joins_wiki.html">Uniones espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_joins_wiki.html">Uniones no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_raster_wiki.html">Datos ráster</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_raster_basic_wiki.html">Operaciones básicas de ráster</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_automation_wiki.html">Automatización en QGIS (el diseñador de modelos)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_representation_wiki.html">Visualización y creación de mapas en QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_visualisation_wiki.html">Visualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_map_making_wiki.html">Compositor de diseños de impresión</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_common_errors_and_Issues.html">Errores y problemas comunes en QGIS <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_web_and_mobile_apps_wiki.html">Aplicaciones SIG para web y móviles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_geodata_management_sharepoint.html">Gestión de datos geoespaciales con SharePoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_5/es_qgis_overlay_operations.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_5/es_qgis_overlay_operations.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Operaciones de superposición (recorte, disolución, zona de influencia)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recorte">5.2.1. Recorte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-recortar-una-capa-de-carreteras-a-limites-administrativos">5.2.2. Ejercicio: Recortar una capa de carreteras a límites administrativos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disolucion">5.2.3. Disolución</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">5.2.4. Buffer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-crear-una-zona-de-influencia-de-10-km-alrededor-de-los-centros-de-salud">5.2.5. Ejercicio: Crear una zona de influencia de 10 km alrededor de los centros de salud</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-de-recorte-mas-avanzadas">5.2.6. Operaciones de recorte más avanzadas</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">5.3. Preguntas de autoevaluación</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section id="operaciones-de-superposicion-recorte-disolucion-zona-de-influencia">
+<h1><span class="section-number">5.2. </span>Operaciones de superposición (recorte, disolución, zona de influencia)<a class="headerlink" href="#operaciones-de-superposicion-recorte-disolucion-zona-de-influencia" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Las operaciones de superposición nos permiten combinar las geometrías de dos capas de diferentes maneras (véase <a class="reference internal" href="#overlay-operations"><span class="std std-numref">Fig. 5.9</span></a>).</p></li>
+<li><p>La diferencia con las uniones espaciales es que las <strong>geometrías se transforman en el proceso</strong>, y no principalmente los atributos.</p></li>
+</ul>
+<figure class="align-default" id="overlay-operations">
+<a class="reference internal image-reference" href="../../../_images/overlay_operations.png"><img alt="../../../_images/overlay_operations.png" src="../../../_images/overlay_operations.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.9 </span><span class="caption-text">Representación visual de diferentes operaciones de superposición.</span><a class="headerlink" href="#overlay-operations" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Las operaciones de superposición incluyen <strong>recorte, zona de influencia y disolución</strong>. En los próximos subcapítulos, analizaremos cada una de estas operaciones de superposición y proporcionaremos algunos ejemplos en el ámbito humanitario.</p>
+<section id="recorte">
+<h2><span class="section-number">5.2.1. </span>Recorte<a class="headerlink" href="#recorte" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>La herramienta <img alt="" src="../../../_images/mAlgorithmClip.png" /> <code class="docutils literal notranslate"><span class="pre">Clip</span></code> se utiliza para cortar una capa vectorial utilizando los límites de otra capa de polígonos. En otras palabras, extrae una parte de un conjunto de datos en función de los límites de otro.</p></li>
+<li><p>Mantiene solo las partes de las entidades de la capa de entrada que están dentro de los polígonos de la capa de superposición, lo que produce un conjunto de datos refinado.</p></li>
+<li><p>Aunque los atributos principales de las entidades siguen siendo los mismos, algunas propiedades, como el área o la longitud, pueden cambiar después de la operación de recorte. Si ha almacenado estas propiedades como atributos, es posible que deba actualizarlas manualmente.</p></li>
+</ul>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Ejemplo en el ámbito humanitario:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em>Los datos sobre la extensión de las inundaciones en Pakistán están disponibles, pero la atención se centra en el mapeo de los daños causados por las inundaciones en una región administrativa específica. En este caso, la capa de inundación se puede recortar a los límites administrativos del área de interés.</em></p>
+</div>
+</div>
+<p>La herramienta tiene dos diferentes opciones de entrada:</p>
+<ul class="simple">
+<li><p><strong>Capa de entrada</strong>: Capa de la que se recorta la selección</p></li>
+<li><p><strong>Capa de superposición</strong>: Área de interés a la que se recortará la capa de entrada</p></li>
+</ul>
+<figure class="align-default" id="en-clip-sudan">
+<a class="reference internal image-reference" href="../../../_images/en_clip_sudan.PNG"><img alt="../../../_images/en_clip_sudan.PNG" src="../../../_images/en_clip_sudan.PNG" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Captura de pantalla de la herramienta Recortar con los datos de entrada.</span><a class="headerlink" href="#en-clip-sudan" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ejercicio-recortar-una-capa-de-carreteras-a-limites-administrativos">
+<h2><span class="section-number">5.2.2. </span>Ejercicio: Recortar una capa de carreteras a límites administrativos<a class="headerlink" href="#ejercicio-recortar-una-capa-de-carreteras-a-limites-administrativos" title="Link to this heading">#</a></h2>
+<p>La información sobre la infraestructura vial para las operaciones de ayuda humanitaria es de suma importancia y se puede recuperar fácilmente de fuentes de datos de código abierto como OpenStreetMap. Sin embargo, esta información a menudo se incluye en conjuntos de datos extensos que contienen una cantidad significativa de detalles irrelevantes para operaciones específicas o cubre mucha más área de la necesaria para la operación. Para que el trabajo con estos datos sea más eficiente, es una práctica común recortar los datos al área de interés. Además del recorte, los datos a menudo se pueden filtrar para eliminar los datos que no nos interesan.</p>
+<ol class="arabic simple">
+<li><p>Cargue los datos de carreteras de OSM desde la herramienta de exportación HOT (parte del equipo humanitario de OpenStreetMap) <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip">aquí</a>.
+como una nueva capa: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
+<li><p>Filtre la capa por medio de <strong>generador de consultas</strong> para mostrar solo <strong>carreteras primarias y residenciales</strong> (“carretera” = ‘primary’ O “carretera” = ‘residential’).</p></li>
+<li><p>Cargue la capa admin1 para Sudán que contiene el distrito Nilo Blanco, <strong>ne_10m_admin_1_Sudan_White_Nile.geojson</strong>. Se descarga de los <a class="reference external" href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/">datos de Natural Earth</a>.</p></li>
+<li><p>Seleccione la capa de carreteras y abra el diálogo de <strong>Recorte</strong> desde <code class="docutils literal notranslate"><span class="pre">Vector</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tools</span></code>.</p>
+<ul class="simple">
+<li><p>Configure las carreteras como <strong>capa de entrada</strong> y los límites del distrito de Nilo Blanco como <strong>capa de superposición</strong>.</p></li>
+<li><p>Haga clic en <strong>Ejecutar</strong> para generar una capa temporal llamada “Recortada”.</p></li>
+</ul>
+</li>
+<li><p>Ahora tiene una capa de carreteras ordenadas que contiene la información necesaria.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solución: Recortar una capa de carreteras a límites administrativos</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video></p>
+</div>
+</details></section>
+<section id="disolucion">
+<h2><span class="section-number">5.2.3. </span>Disolución<a class="headerlink" href="#disolucion" title="Link to this heading">#</a></h2>
+<p>La herramienta <img alt="" src="../../../_images/mAlgorithmDissolve.png" /> <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> crea una nueva capa y fusiona entidades superpuestas de una o dos capas vectoriales. Puede elegir uno o varios atributos para agrupar entidades que compartan el mismo valor para esos atributos. Alternativamente, puede combinar todas las entidades en una. Si está trabajando con polígonos, eliminará los límites compartidos entre ellos.</p>
+<p>Si activa la opción “Mantener separadas las entidades no intersecas” al ejecutar la herramienta, se asegurará de que las entidades o partes que no se superponen ni se tocan entre sí se guarden como entidades independientes en lugar de formar parte de una entidad grande. Esto le permite crear varias capas vectoriales.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Ejemplo en el ámbito humanitario:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em>Dos conjuntos de datos muestran la extensión de la inundación de dos eventos de inundación diferentes en el último año. Ambas capas se superponen pero muestran diferencias. Disolver puede crear polígonos que muestren el área inundada en el último año.</em></p>
+</div>
+</div>
+<figure class="align-default" id="buffer-dissolve">
+<a class="reference internal image-reference" href="../../../_images/en_buffer_dissolve.png"><img alt="../../../_images/en_buffer_dissolve.png" src="../../../_images/en_buffer_dissolve.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Zonas de influencia con límites disueltos (izquierda) y con límites intactos (derecha) que muestran áreas superpuestas <br /> (fuente: <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, Version 3.28)</span><a class="headerlink" href="#buffer-dissolve" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>En la siguiente sección sobre <strong>zona de influencia</strong> usaremos la <strong>herramienta de disolución</strong>.</p>
+</section>
+<section id="buffer">
+<h2><span class="section-number">5.2.4. </span>Buffer<a class="headerlink" href="#buffer" title="Link to this heading">#</a></h2>
+<p>La creación de zonas de influencia crea zonas de distancias predeterminadas alrededor de las entidades geométricas como una nueva capa de polígono. Estas zonas de influencia rodean las entidades vectoriales de entrada. Esta zona de influencia suele ser uniforme y se extiende hacia afuera desde las entidades de entrada originales, lo que la hace útil para diversos análisis espaciales y aplicaciones cartográficas. Se pueden crear estas zonas alrededor de puntos, líneas y polígonos, como se muestra en <a class="reference internal" href="#buffering-options"><span class="std std-numref">Fig. 5.12</span></a>.</p>
+<p>Algunos ejemplos de análisis que utilizan zona de influencia podrían ser:</p>
+<ul class="simple">
+<li><p>Crear zonas de influencia para proteger el medio ambiente</p></li>
+<li><p>Análisis de las áreas verdes alrededor de la zona residencial</p></li>
+<li><p>Crear áreas de riesgo para desastres naturales.</p></li>
+</ul>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Ejemplo en el ámbito humanitario:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Para analizar el acceso a fuentes de agua limpia, un escenario considera qué tan lejos puede caminar la población para llegar a ellas. Se crea una zona de influencia de 2 km alrededor de un conjunto de datos de pozos para visualizar qué áreas se encuentran dentro de esta distancia. Este método ayuda a evaluar la cobertura e identificar las deficiencias en el acceso al agua potable.</p>
+</div>
+</div>
+<figure class="align-default" id="buffering-options">
+<a class="reference internal image-reference" href="../../../_images/en_buffer_point_line_polygon.png"><img alt="../../../_images/en_buffer_point_line_polygon.png" src="../../../_images/en_buffer_point_line_polygon.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Diferentes tipos de zonas de influencia <br /> (adaptado según <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">Documentación de QGIS</a>, versión 3.28)</span><a class="headerlink" href="#buffering-options" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Existen diferentes variantes de zona de influencia. La <strong>distancia de zona de influencia</strong> o <strong>el tamaño de esta puede variar</strong> según los valores numéricos proporcionados. Los valores numéricos deben definirse en unidades de mapa de acuerdo con el Sistema de Referencia de Coordenadas (SRC) utilizado con los datos.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<figure class="align-default" id="dist-degree-error-message">
+<a class="reference internal image-reference" href="../../../_images/en_dist_in_degrees_error_msg.png"><img alt="../../../_images/en_dist_in_degrees_error_msg.png" src="../../../_images/en_dist_in_degrees_error_msg.png" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.13 </span><span class="caption-text">El mensaje de error que muestra QGIS al realizar cálculos basados en la distancia en un sistema de coordenadas geográficas.</span><a class="headerlink" href="#dist-degree-error-message" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Si…</p>
+<ul class="simple">
+<li><p>Aparece un mensaje de advertencia de proyección cartográfica</p></li>
+<li><p>Sus capas no aparecen</p></li>
+<li><p>Las capas se ven extrañas, p. ej., aplastadas</p></li>
+<li><p>Se muestra el mensaje de error “uso de grados” al utilizar distancias (como se muestra en <a class="reference internal" href="#dist-degree-error-message"><span class="std std-numref">Fig. 5.13</span></a>)
+… podría ser un problema de <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_projections.html">proyección</a>.</p></li>
+</ul>
+<p>Para resolverlo, intente…</p>
+<ul class="simple">
+<li><p>Cambiar el SRC de la capa</p></li>
+<li><p>Reproyectar la capa</p></li>
+</ul>
+<p>Por ejemplo, si está intentando crear una zona de influencia en una capa con un sistema de coordenadas geográficas, QGIS le advertirá y le sugerirá que vuelva a proyectar la capa a un <strong>sistema de coordenadas métricas</strong>. Esto se debe a que cuando se utiliza un sistema de coordenadas métricas, el algoritmo utilizará grados para calcular la distancia del tamaño de la zona de influencia. Sin embargo, la distancia entre grados no es uniforme y depende de la latitud (véase <a class="reference internal" href="#distance-longitudes"><span class="std std-numref">Fig. 5.14</span></a>)</p>
+<figure class="align-default" id="distance-longitudes">
+<a class="reference internal image-reference" href="../../../_images/en_dist_longitudes.png"><img alt="../../../_images/en_dist_longitudes.png" src="../../../_images/en_dist_longitudes.png" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.14 </span><span class="caption-text">Esta imagen ilustra esto: 10 grados de longitud en el ecuador son 1113 km, pero 10 grados de
+longitud a 70 grados de latitud son solo 381 km. (Fuente: <a class="reference external" href="https://x.com/RickyAngueira/status/1594030866132410368">Ricky Angueria</a>).</span><a class="headerlink" href="#distance-longitudes" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Es por ello que deberá convertir a un sistema de coordenadas local/proyectado para poder especificar distancias en km/millas (p. ej., cuando use la herramienta de zona de influencia).</p>
+</div>
+</section>
+<section id="ejercicio-crear-una-zona-de-influencia-de-10-km-alrededor-de-los-centros-de-salud">
+<h2><span class="section-number">5.2.5. </span>Ejercicio: Crear una zona de influencia de 10 km alrededor de los centros de salud<a class="headerlink" href="#ejercicio-crear-una-zona-de-influencia-de-10-km-alrededor-de-los-centros-de-salud" title="Link to this heading">#</a></h2>
+<p>Otro ejemplo relevante para la labor humanitaria puede ser la creación de un mapa que proporcione información sobre la cobertura de los centros de salud en la distancia de 10 km.
+Para lograr esto, se crea una zona de influencia de 10 km alrededor de los puntos que representan los centros de salud. En algunos casos, esto creará zonas de influencia que se superponen. Para crear un área homogénea, podemos disolver zonas de influencia superpuestas.</p>
+<ol class="arabic simple">
+<li><p>Descargue los datos de los <strong>centros de salud de Sudán</strong> de <a class="reference external" href="https://data.humdata.org/dataset/sudan-healthsites">HDX</a> como shapefile.</p></li>
+<li><p>Cargue sus datos nuevos en QGIS. Agregue también los límites del distrito de Jartum, <strong>ne_10m_admin_1_Sudan_Khartoum.geojson</strong>.
+También se descargan y se adaptan de los <a class="reference external" href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/">datos de Natural Earth</a>.</p></li>
+<li><p>Recorte sus centros de salud a los límites del distrito de Jartum.</p></li>
+<li><p><strong>Reproyecte</strong> la capa de centros de salud a un sistema de coordenadas local para habilitar la configuración de distancias en kilómetros.</p>
+<ul class="simple">
+<li><p>Menú vectorial &gt; Herramientas de gestión de datos &gt; <strong>Reproyectar capa</strong>.</p></li>
+<li><p>Seleccione la capa de <strong>centros de salud</strong> como capa de entrada.</p></li>
+<li><p>Establezca el objetivo <strong>SRC a WGS 84 / UTM zona 36N</strong> (haga clic en el icono de proyecciones para buscar en la lista completa de opciones).</p></li>
+<li><p>Haga clic <code class="docutils literal notranslate"><span class="pre">Run</span></code> para reproyectar.</p></li>
+</ul>
+</li>
+<li><p>Abra la herramienta <strong>zona de influencia</strong> accediendo a <code class="docutils literal notranslate"><span class="pre">Vector</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tools</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Buffer</span></code>.</p>
+<ul class="simple">
+<li><p>Seleccione la <strong>capa reproyectada</strong> como capa de entrada.</p></li>
+<li><p>Establezca la distancia a <strong>10 km</strong>.</p></li>
+<li><p>Marque la opción para <strong>disolver</strong> el resultado.</p></li>
+<li><p>Deje las otras opciones como predeterminadas y haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Ahora tiene una visión general aproximada de la cobertura con centros de salud para el distrito de Jartum.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Solución: Crear una zona de influencia de 10 km alrededor de los centros de salud</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video></p>
+</div>
+</details></section>
+<section id="operaciones-de-recorte-mas-avanzadas">
+<h2><span class="section-number">5.2.6. </span>Operaciones de recorte más avanzadas<a class="headerlink" href="#operaciones-de-recorte-mas-avanzadas" title="Link to this heading">#</a></h2>
+<p>Además de la operación estándar <strong>Recorte</strong> de QGIS, hay otras dos herramientas más avanzadas para realizar procesos de recorte. Estas herramientas son operaciones GDAL, que permiten la definición de la extensión de recorte. Esta extensión puede ser un área específica o una capa de máscara. La segunda opción es bastante similar al proceso de recorte estándar proporcionado por QGIS.</p>
+<figure class="align-default" id="gdal-clipping-tools">
+<a class="reference internal image-reference" href="../../../_images/en_gdal_clipping_tools.PNG"><img alt="../../../_images/en_gdal_clipping_tools.PNG" src="../../../_images/en_gdal_clipping_tools.PNG" style="width: 250px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.15 </span><span class="caption-text">Las herramientas GDAL Recorte de vector por extensión y Recorte de vector por capa de máscara.</span><a class="headerlink" href="#gdal-clipping-tools" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Recorte de vector por extensión</label><div class="sd-tab-content docutils">
+<p>Esta operación recorta cualquier archivo vectorial en una extensión determinada. Esta extensión de recorte se definirá mediante un cuadro delimitador que se debe utilizar para el archivo de salida vectorial. También debe definirse en las coordenadas SRC objetivo. Existen diferentes métodos para definir el cuadro delimitador, que constituyen la gran diferencia entre esta herramienta y el proceso de recorte estándar:</p>
+<ul class="simple">
+<li><p>Calcular a partir de una capa: utiliza la extensión de una capa cargada en el proyecto actual.</p></li>
+<li><p>Calcular a partir del mapa de diseño: utiliza la extensión de un elemento de mapa de diseño en el proyecto activo.</p></li>
+<li><p>Calcular a partir de marcador: utiliza la extensión de un marcador guardado.</p></li>
+<li><p>Utilizar la extensión del lienzo del mapa.</p></li>
+<li><p>Dibujar en el lienzo: hacer clic y arrastrar un rectángulo que delimite el área a tener en cuenta.</p></li>
+<li><p>Introducir las coordenadas como xmin, xmax, ymin ymax.</p></li>
+</ul>
+<figure class="align-default" id="en-clip-vector-by-extent">
+<a class="reference internal image-reference" href="../../../_images/en_clip_vector_by_extent.PNG"><img alt="../../../_images/en_clip_vector_by_extent.PNG" src="../../../_images/en_clip_vector_by_extent.PNG" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.16 </span><span class="caption-text">Captura de pantalla de la herramienta Recorte de vector por extensión</span><a class="headerlink" href="#en-clip-vector-by-extent" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Recorte de vector por capa de máscara</label><div class="sd-tab-content docutils">
+<p>Esta operación utiliza una capa de polígonos de máscara para recortar cualquier capa vectorial. Esta operación solo toma dos entradas:</p>
+<ol class="arabic simple">
+<li><p>La capa de entrada</p></li>
+<li><p>La capa de máscara que se utiliza como extensión de recorte para la capa vectorial de entrada</p></li>
+</ol>
+<figure class="align-default" id="clip-vector-by-mask-layer">
+<a class="reference internal image-reference" href="../../../_images/en_clip_vector_by_mask_layer.PNG"><img alt="../../../_images/en_clip_vector_by_mask_layer.PNG" src="../../../_images/en_clip_vector_by_mask_layer.PNG" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.17 </span><span class="caption-text">Captura de pantalla de la herramienta Recorte de vector por capa de máscara.</span><a class="headerlink" href="#clip-vector-by-mask-layer" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="preguntas-de-autoevaluacion">
+<h1><span class="section-number">5.3. </span>Preguntas de autoevaluación<a class="headerlink" href="#preguntas-de-autoevaluacion" title="Link to this heading">#</a></h1>
+<div class="note admonition">
+<p class="admonition-title">Ponga a prueba sus conocimientos</p>
+<ol class="arabic simple">
+<li><p><strong>¿Qué es una operación de superposición en SIG y cuándo es útil?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Una operación de superposición es un tipo de herramienta de geoprocesamiento vectorial en SIG que combina o manipula las geometrías de dos (o más) capas en función de sus relaciones espaciales (como intersección, unión, recorte, etc.).
+Es útil:</p></li>
+<li><p class="sd-card-text">Cuando se desea extraer un subconjunto de entidades de un conjunto de datos más grande (p. ej., recorte de carreteras a un límite administrativo)</p></li>
+<li><p class="sd-card-text">Cuando se desea fusionar o agregar áreas espaciales (p. ej., disolver extensiones de inundación superpuestas en un área combinada).</p></li>
+<li><p class="sd-card-text">En flujos de trabajo humanitarios u operacionales: p. ej., determinar el área de cobertura de los centros de salud, la extensión de las zonas de peligro dentro de una región o recortar grandes conjuntos de datos a un área de interés para mejorar la eficiencia.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>Al realizar operaciones de superposición en QGIS, ¿cómo se combinan las tablas de atributos de las capas de entrada en la capa de salida? ¿Qué sucede con los atributos de cada entrada?</strong></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">En la mayoría de los casos, QGIS le permite especificar qué atributos se copiarán de qué entrada a la salida del algoritmo. Si no se especifica nada, QGIS generalmente copiará todos los atributos de ambas capas a la capa resultante.</p></li>
+<li><p class="sd-card-text">Aunque los atributos principales de las entidades siguen siendo los mismos, algunas propiedades, como el área o la longitud, pueden cambiar después de la operación de recorte. Si ha almacenado estas propiedades como atributos, es posible que tenga que actualizarlas en la capa resultante.</p></li>
+</ul>
+</div>
+</details></div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="es_qgis_spatial_tools.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5.1. </span>Procesamiento de datos espaciales</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="es_qgis_centroids.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5.4. </span>Centroides</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recorte">5.2.1. Recorte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-recortar-una-capa-de-carreteras-a-limites-administrativos">5.2.2. Ejercicio: Recortar una capa de carreteras a límites administrativos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disolucion">5.2.3. Disolución</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buffer">5.2.4. Buffer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-crear-una-zona-de-influencia-de-10-km-alrededor-de-los-centros-de-salud">5.2.5. Ejercicio: Crear una zona de influencia de 10 km alrededor de los centros de salud</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operaciones-de-recorte-mas-avanzadas">5.2.6. Operaciones de recorte más avanzadas</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preguntas-de-autoevaluacion">5.3. Preguntas de autoevaluación</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

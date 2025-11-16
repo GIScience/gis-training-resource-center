@@ -1,0 +1,1189 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Evaluación de riesgos &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_5/es_qgis_module_5_ex1';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Welcome to the IFRC Network GIS Training Platform
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_1/en_module_1_overview.html">1. Introduction to GIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_theory.html">1.1. What is GIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_installation.html">1.2. Setting up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_start.html">1.3. Getting started with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_1/en_qgis_module_1_exercises.html">1.4. Exercises for Module 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_2/en_module_2_overview.html">2. Working with Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_concept.html">2.1. Introduction to geodata and layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_projections.html">2.2. Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_geodata_management.html">2.3. Geodata management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_attribute_table.html">2.4. Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_data_sources.html">2.5. Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_basemap.html">2.6. Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_2/en_qgis_module_2_exercises.html">2.7. Exercises for Module 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_3/en_module_3_overview.html">3. Basic GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_digitisation.html">3.1. Digitisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_queries.html">3.2. Geodata Selection and Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_data_classification.html">3.3. Geodata Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_georeferencing.html">3.4. Georeferencing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_3/en_qgis_module_3_exercises.html">3.5. Exercises for Module 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_4/en_module_4_overview.html">4. Visualisation of Geodata and Map Making</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_I.html">4.1. Symbology and Colours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_styling_vector_data.html">4.2. Styling Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_labels_vector.html">4.3. Labels for Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_working_with_styles.html">4.4. Exporting and Importing Styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_symbology_raster.html">4.5. Symbology for Raster Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_design_2.html">4.6. The Print layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_4/en_qgis_module_4_exercises.html">4.9. Exercises for Module 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_spatial_tools.html">5.1. Spatial data processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_overlay_operations.html">5.2. Overlay Operations (Clip, Dissolve, Buffer)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_centroids.html">5.4. Centroids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_non_spatial_tools.html">5.5. Non-Spatial processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_5/en_qgis_module_5_exercises.html">5.6. Exercises for Module 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_6/en_module_6_overview.html">6. Data Analysis with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_data_analysis_theory.html">6.1. Data Analysis with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_common_data_analysis.html">6.2. Data Analysis in the Humanitarian Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_6/en_qgis_module_6_exercises.html">6.3. Exercises Module 6 - Data Analysis with QGIS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_7/en_module_7_overview.html">7. Automation with QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_automation_theory.html">7.1. The model designer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_7/en_qgis_module_7_exercises.html">7.2. Exercises for Module 7</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_8/en_module_8_overview.html">8. Remote Sensing and Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_raster_theory.html">8.1. Remote Sensing and Raster data theory 🛰️</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_raster_operations.html">8.2. Common Raster Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_remote_sensing_theory.html">8.3. Introduction to Remote Sensing and Remote Sensing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_8/en_qgis_module_8_ex1.html">8.4. Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Module_9/en_module_9_overview.html">9. Network Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_network_analysis_theory.html">9.1. Spatial Network Analysis Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_openrouteservice_tools.html">9.2. Plugin: Openrouteservice (ORS) tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_centrality.html">9.3. Network centrality measures and its application in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Module_9/en_qgis_module_9_exercises.html">9.4. Exercises Module 9: Network Analysis</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Exercise_tracks/en_exercise_tracks_overview.html">Exercise Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_larkana_flood_response.html">Exercise Track: Larkana Flood Response</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/en_mdg_aa_cyclones.html">Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Exercise_tracks/fr_mdg_aa_cyclones.html">Piste d’Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_wiki_homepage.html">Wiki Overview</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_qgis_basics_wiki.html">QGIS Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_installation_wiki.html">QGIS installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_interface_wiki.html">QGIS Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projects_folder_structure_wiki.html">Projects and Folder Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_projections_wiki.html">Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_basemaps_wiki.html">Basemaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_plugins_wiki.html">Plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_data_sources_wiki.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_licensing_data.html">Data Licenses (working with licensed datasets)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_geodata_wiki.html">General Geodata</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_geodata_types_wiki.html">Types of Geodata</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_import_geodata_wiki.html">Geodata Import in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_OpenStreetMap_wiki.html">OpenStreetMap (OSM) Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_layer_concept_wiki.html">Layer Concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_attribute_table_wiki.html">Attribute Table in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_digitisation_wiki.html">Digitisation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_data_classification_wiki.html">Geodata Classification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_single_symbol_wiki.html">Single symbol classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_categorised_wiki.html">Categorised classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_graduated_wiki.html">Graduated classification</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_geoprocessing_wiki.html">Spatial Processing</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_queries_wiki.html">Spatial and Non-spatial queries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_queries_wiki.html">Spatial Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_queries_wiki.html">Non-Spatial Queries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_table_functions_wiki.html">Manipulating the Attribute Table</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_joins_wiki.html">Joining Geodata (Spatial and non-spatial joins)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_spatial_joins_wiki.html">Spatial Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_non_spatial_joins_wiki.html">Non-Spatial Joins</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_raster_wiki.html">Raster Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_raster_basic_wiki.html">Basic Raster Operations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_automation_wiki.html">Automation in QGIS (The Model Builder)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Wiki/en_qgis_representation_wiki.html">Visualisation and Map Making in QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_visualisation_wiki.html">Visualisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_qgis_common_errors_and_Issues.html">QGIS common errors and issues <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_web_and_mobile_apps_wiki.html">Web &amp; mobile GIS applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Wiki/en_geodata_management_sharepoint.html">Geodata Management with Sharepoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GIS in Anticipatory Action</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_cyclone_trigger_madagascar.html">QGIS Trigger Workflow for Madagascar</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_drought_trigger_somalia.html">QGIS Trigger Workflow for Somalia</a></li>
+
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar.html">AI Logistic Awareness System (AILAS) Street level image collection Field Experiments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_camera_usage_guide.html">Camera Usage Guide: AILAS Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_AILAS_madagascar_picture_upload_and_management.html">Picture upload and management: AILAS Project</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar.html">Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_camera_usage_guide.html">Guide d’utilisation de la caméra: projet AILAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.html">Téléversement et gestion des images : Projet AILAS</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../GIS_AA/en_qgis_risk_assessment_plugin.html">Risk Assessment QGIS Plugin</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_qgis_generate_indicators_for_plugin.html">How to generate Risk Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../GIS_AA/en_gaia_indicators_processing.html">GAIA Pipeline Documentation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_historical_impact_assessment_sudan.html">Historical Impact Assessment (HIA) for Flood in Sudan</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../GIS_AA/en_qgis_GIS_AA_exercises.html">Exercises - GIS in Anticipatory Action</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Mobile Data Collection</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT.html">Sketch Map Tool</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_training.html">Sketch Map Tool Training</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex1_.html">Sketch Map Tool Exercise 1 - Workflow Exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex2_.html">Sketch Map Tool Exercise 2 - Traffic light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex3_.html">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex4_.html">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Mobile_Data_collection/en_SMT_ex5_.html">Sketch Map Tool Exercise 5 - Heat Map Visualization</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Trainers corner</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_TOT_intro.html">Train of trainers introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_training.html">How to plan a GIS Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_graphical_outline.html">Training Agenda and Handout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_training_day_structure.html">How to plan and structure a GIS Training Session</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_teach_GIS.html">How to teach GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/en_how_to_assessment.html">Assessments in GIS Training: A Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../About/about_1.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution_plan.html">Contribution Plan for the IFRC GIS Training Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Glossary/en_glossary_1.html">Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_5/es_qgis_module_5_ex1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_5/es_qgis_module_5_ex1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Evaluación de riesgos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antecedentes">Antecedentes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-1-procesamiento-de-indicadores">Parte 1: Procesamiento de indicadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea">Tarea</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degradacion-de-las-tierras">Degradación de las tierras</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malnutricion">Malnutrición</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-2-calculo-del-riesgo">Parte 2: Cálculo del riesgo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Tarea</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizacion">1. Normalización</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#direcciones">2. Direcciones</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ponderacion-de-los-indicadores">3. Ponderación de los indicadores</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#puntuacion-de-vulnerabilidad-indice">4. Puntuación de vulnerabilidad / Índice</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-la-evaluacion-de-riesgos">5. Preparar la evaluación de riesgos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-riesgo">6. Cálculo del riesgo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-los-resultados">6. Visualización de los resultados</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#automatizacion-del-proceso">7. Automatización del proceso</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="evaluacion-de-riesgos">
+<h1>Evaluación de riesgos<a class="headerlink" href="#evaluacion-de-riesgos" title="Link to this heading">#</a></h1>
+<section id="caracteristicas-del-ejercicio">
+<h2>Características del ejercicio<a class="headerlink" href="#caracteristicas-del-ejercicio" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">En este ejercicio, recorrerá los diferentes pasos que requiere QGIS para realizar una evaluación espacial de riesgos.</p>
+<p class="sd-card-text"><strong>Tipo de ejercicio de capacitación:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Este ejercicio puede utilizarse tanto en la capacitación en línea como en la presencial.</p></li>
+<li><p class="sd-card-text">Puede realizarse como ejercicio guiado o individualmente a modo de autoestudio.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Estas habilidades son relevantes para:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Duración estimada del ejercicio:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Artículos relevantes en Wiki:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html"><span class="std std-doc">Importación de datos geoespaciales en QGIS</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Intersección</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html">Estadísticas zonales</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Unir atributos por ubicación (resumen</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing">Funciones de la tabla</a></p></li>
+</ul>
+<!--FIME: Check if these wiki articles are relevant-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="antecedentes">
+<h2>Antecedentes<a class="headerlink" href="#antecedentes" title="Link to this heading">#</a></h2>
+<p>En el contexto de la metodología de financiación basada en previsiones, la realización de una evaluación de riesgos sólida es un paso crucial para el desarrollo de un protocolo de acción temprana. Un análisis de riesgos sirve para comprender qué tipos de impactos de desastres pueden esperarse de un tipo concreto de peligro y para identificar quiénes y qué están expuestos y son vulnerables a este peligro y por qué. Al superponer la información sobre la exposición, la vulnerabilidad y la capacidad de afrontamiento, quedará claro qué zonas se prevé que se verán más gravemente afectadas. Etas zonas pueden considerarse entonces como áreas prioritarias para adoptar medidas tempranas, con el fin de asegurar que las comunidades más expuestas al riesgo reciban asistencia antes de que se produzca el evento.
+La recopilación y el procesamiento de esta información varían en función del problema, pero el esquema de cálculo para combinar la información en una puntuación de riesgo sigue siendo el mismo.</p>
+<p>Somalia está considerablemente expuesta a las sequías. Presentaremos una evaluación de riesgos para un protocolo de acción temprana contra la sequía.</p>
+</section>
+<section id="parte-1-procesamiento-de-indicadores">
+<h2>Parte 1: Procesamiento de indicadores<a class="headerlink" href="#parte-1-procesamiento-de-indicadores" title="Link to this heading">#</a></h2>
+<section id="tarea">
+<h3>Tarea<a class="headerlink" href="#tarea" title="Link to this heading">#</a></h3>
+<p>La primera parte del ejercicio consistirá en preparar los datos para que sirvan de valores indicadores. Los datos brutos se procesarán para obtener indicadores significativos y se calculará el índice de vulnerabilidad. Por último, todos los datos relevantes para el riesgo se unirán en una única capa vectorial mediante geoprocesamiento de datos espaciales.</p>
+</section>
+</section>
+<section id="datos">
+<h2>Datos<a class="headerlink" href="#datos" title="Link to this heading">#</a></h2>
+<p>Descargue la carpeta de datos para “Modul_5_Exercise2_Drought_Monitoring_Trigger.zip” <strong><a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip">Aquí</a></strong>. En ella encontrará dos carpetas. Una para la primera parte (“Modul_5_Ex1_Part_1”) y otra para la segunda parte (“Modul_5_Ex1_Part_2”) del ejercicio.</p>
+<p>Abra la carpeta de datos para la primera parte del ejercicio: “Modul_5_Ex1_Part_1”.</p>
+<p>Guarde la carpeta en su computadora y descomprima el archivo. La carpeta comprimida incluye lo siguiente:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>: <a class="reference external" href="https://data.humdata.org/dataset/cod-ab-som">Límites de los distritos de Somalia (nivel administrativo 2)</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">WHO_health_sites.shp</span></code>: <a class="reference external" href="https://data.humdata.org/dataset/somalia-health-facilities-data">Centros de salud de Somalia</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">som_ppp_2020_UNadj_constrained.tif</span></code> : <a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=28892">Recuentos de población de Somalia en WorldPop</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Somalia_malnutrion_district_2022_2023.xlsx</span></code>:<a class="reference external" href="https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?">Somalia: Malnutrición aguda</a></p></li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Todos los archivos conservan sus nombres originales. No obstante, no dude en modificar sus nombres si fuera necesario para identificarlos más fácilmente.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Cargue los límites de los distritos de Somalia (nivel administrativo 2) (<code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code>) y los centros de salud de Somalia (`WHO_health_sites.shp) en QGIS.</p></li>
+<li><p>Asegúrese de que ambos conjuntos de datos estén en la misma proyección cartográfica. En este caso tenemos dos proyecciones cartográficas diferentes y reproyectaremos los <strong>centros de salud de Somalia</strong> en EPSG 4326. Utilice la herramienta <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">layer</span></code> para este proceso. Para obtener más información, consulte la entrada de Wiki sobre <strong>proyecciones cartográficas</strong>.</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Antes de empezar a realizar cualquier operación SIG, <strong>explore siempre los datos</strong>. Compruebe que las proyecciones de las distintas capas sean iguales.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Para convertir la información de la capa de puntos de centros de salud en un valor indicador utilizable, ahora podemos contar los centros de salud por distrito. Podemos utilizar la herramienta <strong>Count points in polygon</strong> de la caja de herramientas de procesos. Eche un vistazo a la descripción de la herramienta y a las entidades adicionales que ofrece. Para nuestra tarea solo tenemos que especificar la capa de entrada de polígonos y puntos, el nombre del campo de recuento (por ejemplo, <strong>Num_healtsites</strong>) y elegir el nombre y el directorio de la capa de salida. Explore los datos de salida.</p></li>
+</ol>
+<figure class="align-default" id="count-points-polygon">
+<a class="reference internal image-reference" href="../../../_images/Count_points_polygon.PNG"><img alt="../../../_images/Count_points_polygon.PNG" src="../../../_images/Count_points_polygon.PNG" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Contar centros de salud por distrito</span><a class="headerlink" href="#count-points-polygon" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta <strong>Zonal statistics</strong> de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre <a class="reference external" href="https://giscience.github.io/gis-training-resource-centeres/Wiki/es_qgis_raster_basic_wiki.html">estadísticas zonales</a>. Especifique su capa de entrada (salida del paso 3, por ejemplo, <strong>Num_healtsites</strong>) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, _<strong>wpop</strong>) y seleccione las estadísticas a calcular (<strong>sum</strong>). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.</p></li>
+</ol>
+<figure class="align-default" id="czonal-statistics">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" src="../../../_images/en_qgis_modul_5_ex1_zonal_statistics.PNG" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Resumiendo los recuentos de población por distrito.</span><a class="headerlink" href="#czonal-statistics" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>A lo largo del proceso de procesamiento de indicadores, se obtendrán varios resultados provisionales. Asegúrese de guardarlos en una carpeta “temp”.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Ahora conocemos el número de centros de salud y el número de habitantes por distrito. Estamos listos para calcular nuestro indicador final: Número de centros de salud por cada 10 000 habitantes.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Abra la tabla de atributos de “Num_healthsites_wpop” (salida del paso 4) y abra la <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> haciendo clic en el botón <img alt="" src="../../../_images/mActionCalculateField.png" />. Al marcar la casilla <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code> podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.</p></li>
+<li><p>Defina el nombre del campo de salida como “healthsites_10000” y configure <code class="docutils literal notranslate"><span class="pre">Type</span></code> como <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number(real)</span></code>.</p></li>
+<li><p>Ahora calcularemos en el campo de expresión el número de centros de salud por cada 10 000 habitantes:</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;Num_healthsites&quot;/&quot;_wpopsum&quot;)*10000
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Cuando haya terminado, haga clic en <img alt="" src="../../../_images/mActionSaveEdits.png" /> para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en <img alt="" src="../../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing">video en Wiki</a>).</p></li>
+</ul>
+<figure class="align-default" id="field-calculator">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_field_calc.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_field_calc.PNG" src="../../../_images/en_qgis_modul_5_ex1_field_calc.PNG" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Calculando los centros de salud por cada 10 000 habitantes.</span><a class="headerlink" href="#field-calculator" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="degradacion-de-las-tierras">
+<h3>Degradación de las tierras<a class="headerlink" href="#degradacion-de-las-tierras" title="Link to this heading">#</a></h3>
+<p>Un factor muy importante para las zonas vulnerables a la sequía es el nivel de degradación de la tierra. Es un factor importante no solo para la agricultura, sino también para la ganadería, ya que ambas son fuentes primarias de ingresos. Intentaremos añadir esta información a nuestro conjunto de datos:</p>
+<p>-<a class="reference external" href="https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/">Degradación de las tierras en Somalia</a></p>
+<figure class="align-default" id="land-degradation">
+<a class="reference internal image-reference" href="../../../_images/land_degradation.PNG"><img alt="../../../_images/land_degradation.PNG" src="../../../_images/land_degradation.PNG" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Degradación de las tierras.</span><a class="headerlink" href="#land-degradation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Observará que solo podemos descargar la información como imagen. Este es un caso muy común cuando se trabaja con datos abiertos. Tenemos que digitalizar la información para su posterior procesamiento. Encuentre la versión digitalizada en “Modul_5_Ex1_Part_1\land_degradation_somalia”.</p>
+<p>Explore los datos. Tenemos una columna “LandD_CLas” que indica la gravedad de la degradación de la tierra de 0 a 3. Ahora queremos unir cada clase de degradación de la tierra con su distrito correspondiente, calculando el área de mayor superposición.</p>
+<ul class="simple">
+<li><p>Abra la herramienta <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">location</span></code> de la caja de herramientas de procesos.</p></li>
+<li><p>Defina <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code> (capa que desea enriquecer) y <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Layer</span></code> (conjunto de datos con la información adicional).</p></li>
+<li><p>Seleccione <code class="docutils literal notranslate"><span class="pre">intersects</span></code> como predicado geométrico y añada solo la <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code> como campo a añadir a nuestra capa base.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Type</span></code> configurar <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">feature</span> <span class="pre">with</span> <span class="pre">largest</span> <span class="pre">overlap</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code>.</p></li>
+<li><p>Guardar como capa.</p></li>
+</ul>
+<p>Consulte la entrada de Wiki <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html">Unión espacial</a> para obtener más información.</p>
+<figure class="align-default" id="join-attributes-by-location">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_join.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_join.PNG" src="../../../_images/en_qgis_modul_5_ex1_join.PNG" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Uniendo atributos por ubicación.</span><a class="headerlink" href="#join-attributes-by-location" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="malnutricion">
+<h3>Malnutrición<a class="headerlink" href="#malnutricion" title="Link to this heading">#</a></h3>
+<p>Otro indicador muy importante para describir la vulnerabilidad en un distrito es la desnutrición aguda, especialmente en el caso de infantes menores de 5 años.</p>
+<p>Descargue los datos que necesitamos:
+<code class="docutils literal notranslate"><span class="pre">Somalia_malnutrion_district_2022_2023.xlsx</span></code>:<a class="reference external" href="https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?">Somalia: Malnutrición aguda</a></p>
+<p>Explore los datos. ¿En qué resolución están disponibles los datos? ¿Tiene alguna idea sobre cómo podemos añadirlos a nuestro conjunto de datos de indicadores?</p>
+<ul class="simple">
+<li><p>Guarde el archivo de Excel como CSV haciendo clic en <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">file</span> <span class="pre">as</span></code> y seleccione <code class="docutils literal notranslate"><span class="pre">CSV</span> <span class="pre">(delimiter-separated)</span></code>.</p></li>
+<li><p>Cargue el archivo CSV en su QGIS por medio de arrastrar y soltar.</p></li>
+<li><p>Abra la herramienta <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> de la caja de herramientas de procesos.</p></li>
+<li><p>Especifique los dos conjuntos de datos que deseamos unir, así como el campo común disponible para la unión (<code class="docutils literal notranslate"><span class="pre">ADM2_EN</span></code> y <code class="docutils literal notranslate"><span class="pre">adm2name</span></code>).</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">join</span> <span class="pre">type</span></code> configurar <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">attributes</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">first</span> <span class="pre">matching</span> <span class="pre">feature</span> <span class="pre">only</span> <span class="pre">(one-to-one)</span></code>.</p></li>
+<li><p>Guarde la capa en un archivo.</p></li>
+</ul>
+<figure class="align-default" id="join-attributes-by-field-value">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_joinbyvalue.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_joinbyvalue.PNG" src="../../../_images/en_qgis_modul_5_ex1_joinbyvalue.PNG" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Uniendo atributos por valor de campo.</span><a class="headerlink" href="#join-attributes-by-field-value" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>En el archivo de registro aparecerá un mensaje: “6 feature(s) from input layer could not be matched”.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Es posible que, después de la importación, en el archivo CSV los encabezados de las columnas de la tabla de atributos no tengan los nombres correctos (en lugar de ello, puede que aparezca “field 1”, “field 2”, etc.). En este caso, los nombres correctos de los campos suelen encontrarse debajo del encabezado.</p>
+</div>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_module_5_ex1_error.PNG"><img alt="../../../_images/en_qgis_module_5_ex1_error.PNG" src="../../../_images/en_qgis_module_5_ex1_error.PNG" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">El archivo de registro para el algoritmo “Join Attribute by Field Value”.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Abra las tablas de atributos tanto de la capa de salida como del archivo CSV para encontrar la raíz del problema. En la capa de salida, haga doble clic en <code class="docutils literal notranslate"><span class="pre">affunderfive</span></code> y lleve el valor <code class="docutils literal notranslate"><span class="pre">NULL</span></code> a la parte superior. Compruebe el atributo de unión “ADM2_EN” y compárelo con el atributo de unión “adm2name” del archivo CSV.
+La ortografía de los nombres de los distritos difiere. Dado que estamos utilizando los límites de admin-2 como capa base para todos los indicadores, ahora podemos adaptar los nombres en el archivo CSV.
+Puede editar los nombres en seis casos en la tabla de atributos del archivo CSV alternando el modo de edición, o puede editar manualmente el archivo CSV en Excel y luego cargarlo en QGIS.</p>
+<ul class="simple">
+<li><p>Asegúrese de denominar la capa final “vulnerability_districts”.</p></li>
+</ul>
+</section>
+</section>
+<section id="parte-2-calculo-del-riesgo">
+<h2>Parte 2: Cálculo del riesgo<a class="headerlink" href="#parte-2-calculo-del-riesgo" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Tarea<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>En la segunda parte del ejercicio mostraremos los pasos para pasar de los indicadores a un análisis de riesgos.</p>
+<p>Puede encontrar todos los datos para la segunda parte del ejercicio en el “Modul_5_Ex1_Part_2”.
+Descargue la carpeta de datos para la segunda parte del ejercicio: “Modul_5_Ex1_Part_2”. En la primera parte del ejercicio hemos procesado la capa de vulnerabilidad; las capas simplificadas de exposición y falta de capacidad de afrontamiento se han preparado con antelación para este ejercicio. Estas capas solo tienen de 3 a 4 indicadores por razones de complejidad. Véase a continuación un ejemplo de los indicadores que se utilizaron para Somalia:</p>
+<figure class="align-default" id="indicators-risk-assessment">
+<a class="reference internal image-reference" href="../../../_images/Indicators_Rsik_Assessment_Somalia.png"><img alt="../../../_images/Indicators_Rsik_Assessment_Somalia.png" src="../../../_images/Indicators_Rsik_Assessment_Somalia.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Evaluación de riesgos de indicadores</span><a class="headerlink" href="#indicators-risk-assessment" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="normalizacion">
+<h4>1. Normalización<a class="headerlink" href="#normalizacion" title="Link to this heading">#</a></h4>
+<p>Para poder realizar más cálculos sobre los indicadores, tenemos que hacerlos comparables. Para ello, podemos normalizarlos de modo que estén dentro de un intervalo de 0-1.</p>
+<p><span class="math notranslate nohighlight">\( Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } \)</span></p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos de “vulnerability_districts” y abra la <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> haciendo clic en el botón <img alt="" src="../../../_images/mActionCalculateField.png" />. Al marcar la casilla <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">field</span></code> podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.</p></li>
+<li><p>Comience con el primer indicador <code class="docutils literal notranslate"><span class="pre">LandD_class</span></code>.</p></li>
+<li><p>Defina el nombre del campo de salida como “LandD_class_norm” y configure <code class="docutils literal notranslate"><span class="pre">Type</span></code> como <code class="docutils literal notranslate"><span class="pre">Decimal</span> <span class="pre">Number(real)</span></code>.</p></li>
+<li><p>Ahora calcularemos en el campo de expresión la normalización del indicador:</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;LandD_Clas&quot; - minimum( &quot;LandD_Clas&quot; ))/( maximum( &quot;LandD_Clas&quot;) - minimum( &quot;LandD_Clas&quot; ))
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Cuando haya terminado, haga clic en <img alt="" src="../../../_images/mActionSaveEdits.png" /> para guardar sus cambios y desactive el modo de edición haciendo clic en <img alt="" src="../../../_images/mActionToggleEditing.png" />(<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing">Video Wiki</a>).</p></li>
+</ul>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" src="../../../_images/en_qgis_modul_5_ex1_Part2_normalization.PNG" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Normalización de los indicadores.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Repita este paso para los demás indicadores.</p></li>
+<li><p>Ahora la columna original y la columna normalizada para cada indicador.</p></li>
+</ul>
+</section>
+<section id="direcciones">
+<h4>2. Direcciones<a class="headerlink" href="#direcciones" title="Link to this heading">#</a></h4>
+<p>La dirección indica si un indicador sigue o no la lógica predefinida: “cuanto más alto sea el valor, peores son las circunstancias”, lo que significa que los valores más altos implican un mayor riesgo. La lógica se adapta a las tres dimensiones, ya que, en general, es intuitivo pensar que valores altos = riesgo alto. Si un indicador respectivo sigue esta lógica, la dirección sería 1; si no lo hace, la dirección sería = -1.</p>
+<ul class="simple">
+<li><p>Para entender las direcciones de nuestros indicadores, primero tenemos que asignarlos a una de las dimensiones (exposición, vulnerabilidad, capacidad de afrontamiento).</p></li>
+<li><p>¿A qué dimensión asignaría los indicadores procesados y cuál sería su dirección?</p></li>
+</ul>
+<p>El siguiente paso variará en función de la dirección:</p>
+<p>Si la <strong>dirección es 1</strong> (lo que indica un peso positivo), la fórmula es sencilla:</p>
+<p><span class="math notranslate nohighlight">\( ponderado= valor \times peso \)</span></p>
+<p>Si la dirección <strong>es -1</strong> (indicando un peso negativo), la fórmula ajusta el valor restándolo de 1 antes de aplicar el peso:</p>
+<p><span class="math notranslate nohighlight">\( ponderado=  (1 - valor) \times peso \)</span></p>
+<p>La segunda fórmula invierte el valor <span class="math notranslate nohighlight">\((1 - valor)\)</span> antes de aplicar la ponderación, lo que da lugar a un cálculo diferente para las variables con ponderaciones negativas.</p>
+<p>No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html#risk">aquí</a>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Se recomienda comprobar debidamente la lógica de cada indicador. A menudo, los indicadores de una determinada dimensión siguen la misma lógica, pero siempre hay excepciones. Una vez aplicadas las direcciones a los datos, podemos usar la expresión “falta de capacidad de afrontamiento” en lugar de “capacidad de afrontamiento”, ya que hemos forzado los indicadores respectivos en otra dirección siguiendo la lógica predefinida (a mayor valor = peores circunstancias).</p>
+</div>
+</section>
+<section id="ponderacion-de-los-indicadores">
+<h4>3. Ponderación de los indicadores<a class="headerlink" href="#ponderacion-de-los-indicadores" title="Link to this heading">#</a></h4>
+<p>En el siguiente paso podemos ponderar los indicadores en función de su relevancia para nuestra evaluación de riesgos. Se recomienda realizar encuestas o talleres con el personal local para averiguar la importancia de los respectivos indicadores.</p>
+<p>Hasta ahora hemos utilizado la siguiente escala de ponderación:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ponderación</p></th>
+<th class="head"><p>Definición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>No importante</p></td>
+</tr>
+<tr class="row-odd"><td><p>0,25</p></td>
+<td><p>Ligeramente importante</p></td>
+</tr>
+<tr class="row-even"><td><p>0,5</p></td>
+<td><p>Moderadamente importante</p></td>
+</tr>
+<tr class="row-odd"><td><p>0,75</p></td>
+<td><p>Bastante importante</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Muy importante</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>En la tabla de atributos de su capa podemos calcular los indicadores ponderados para cada indicador normalizado. Para ello tenemos que seguir los mismos pasos que antes: Abra <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> haciendo clic el botón <img alt="" src="../../../_images/mActionCalculateField.png" />, y cree un campo nuevo con el sufijo “_weighted” en el campo de expresión.</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&quot;LandD_clas_norm&quot; * 0.75
+</pre></div>
+</div>
+<figure class="align-default" id="add-new-field-to-weight-indicators">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_module_5_ex1_part2_weigthed.PNG"><img alt="../../../_images/en_qgis_module_5_ex1_part2_weigthed.PNG" src="../../../_images/en_qgis_module_5_ex1_part2_weigthed.PNG" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Añadiendo campo nuevo a indicadores de peso.</span><a class="headerlink" href="#add-new-field-to-weight-indicators" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Ahora tenemos la versión normalizada y ponderada para cada indicador:</p></li>
+</ul>
+<figure class="align-default" id="attribute-table-with-norm-and-weighted-indicators">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG" src="../../../_images/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Tabla de atributos con indicadores “_norm” y “_weighted”.</span><a class="headerlink" href="#attribute-table-with-norm-and-weighted-indicators" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="puntuacion-de-vulnerabilidad-indice">
+<h4>4. Puntuación de vulnerabilidad / Índice<a class="headerlink" href="#puntuacion-de-vulnerabilidad-indice" title="Link to this heading">#</a></h4>
+<p>Ahora estamos listos para calcular la puntuación de vulnerabilidad de cada distrito:</p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos -&gt; abra <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code><img alt="" src="../../../_images/mActionCalculateField.png" /> y cree un campo nuevo con el nombre “vulnerability_score” y el tipo de campo “Decimal Number (real)”. En la ventana de expresión, sume todos los valores ponderados de los indicadores:</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(&quot;LandD_clas_weigthed&quot;  +  &quot;perc_elderly_weighted&quot;  +  &quot;affunderfive_weighted&quot;) / 3 
+</pre></div>
+</div>
+</section>
+<section id="preparar-la-evaluacion-de-riesgos">
+<h4>5. Preparar la evaluación de riesgos<a class="headerlink" href="#preparar-la-evaluacion-de-riesgos" title="Link to this heading">#</a></h4>
+<p>Para calcular el riesgo tenemos que reunir nuestras tres dimensiones: exposición, vulnerabilidad y capacidad de afrontamiento.</p>
+<ul class="simple">
+<li><p>Haga clic con el botón derecho en una de las capas y seleccione <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; Vaya a la pestaña <code class="docutils literal notranslate"><span class="pre">Joins</span></code>.</p></li>
+<li><p>Haga clic en el botón <code class="docutils literal notranslate"><span class="pre">+</span></code>, añada una nueva unión y seleccione la capa que desea unir. Defina “admin2Name” como <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Field</span></code>:</p></li>
+</ul>
+<figure class="align-default" id="join-layers">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_part2_join_risk.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_part2_join_risk.PNG" src="../../../_images/en_qgis_modul_5_ex1_part2_join_risk.PNG" style="width: 90%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Uniendo capas por campo de unión.</span><a class="headerlink" href="#join-layers" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Haga clic con el botón derecho en la capa -&gt; <code class="docutils literal notranslate"><span class="pre">Export</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">feature</span> <span class="pre">as</span></code> y guarde la capa como capa “risk” en su carpeta temporal.</p></li>
+<li><p>Ahora trabajaremos con la capa de “risk”: Borre todos los campos excepto las puntuaciones normalizadas: Abra la tabla de atributos de su capa de riesgo <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">editing</span> <span class="pre">mode</span> </code><img alt="" src="../../../_images/mActionToggleEditing.png" /> -&gt; <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">field</span></code> <img alt="" src="../../../_images/mActionDeleteAttribute.png" /> y seleccione todos los campos del indicador. Al final, la capa debería tener este aspecto:</p></li>
+</ul>
+<figure class="align-default" id="risk-layer-attribute-table-normalised-scores">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG" src="../../../_images/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Puntuación normalizada de la tabla de atributos de la capa de riesgo.</span><a class="headerlink" href="#risk-layer-attribute-table-normalised-scores" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="calculo-del-riesgo">
+<h4>6. Cálculo del riesgo<a class="headerlink" href="#calculo-del-riesgo" title="Link to this heading">#</a></h4>
+<p>Por último, el riesgo se calcula mediante la media geométrica de las dimensiones Exposición y Susceptibilidad, mientras que la Susceptibilidad se define mediante la media geométrica de la Vulnerabilidad y la Falta de capacidad de afrontamiento. Se elige la media geométrica porque ofrece la ventaja de recompensar una evolución equilibrada y una reducción igual de los déficits en todos los niveles del modelo:</p>
+<p><span class="math notranslate nohighlight">\( susceptibilidad =   \sqrt vulnerabilidad  \times falta\ de\ capacidad\ de\ afrontamiento \)</span></p>
+<p><span class="math notranslate nohighlight">\( riesgo=   \sqrt exposición  \times susceptibilidad \)</span></p>
+<ul class="simple">
+<li><p>Abra la tabla de atributos -&gt; <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code><img alt="" src="../../../_images/mActionCalculateField.png" /> y cree un campo “Susceptibility” y escriba la fórmula. Haga lo mismo para crear un campo llamado “risk” y emplee la expresión adecuada.</p></li>
+</ul>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>sqrt(&quot;Susceptibility&quot; * &quot;exposure_norm&quot;)
+</pre></div>
+</div>
+<figure class="align-default" id="calculate-risk">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_modul_5_ex1_part2_risk.PNG"><img alt="../../../_images/en_qgis_modul_5_ex1_part2_risk.PNG" src="../../../_images/en_qgis_modul_5_ex1_part2_risk.PNG" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cálculo del riesgo</span><a class="headerlink" href="#calculate-risk" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La media geométrica es un tipo específico de promedio que se calcula multiplicando todos los valores de un conjunto de datos y luego tomando la raíz n-ésima del producto, donde n es el número de valores. Para dos valores, la media geométrica es la raíz cuadrada de su producto. Para tres valores, es la raíz cúbica, y así sucesivamente.</p>
+</div>
+</section>
+<section id="visualizacion-de-los-resultados">
+<h4>6. Visualización de los resultados<a class="headerlink" href="#visualizacion-de-los-resultados" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Haga clic con el botón derecho en la capa “risk” -&gt; <code class="docutils literal notranslate"><span class="pre">Properties</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
+<li><p>En la esquina inferior izquierda, haga clic en <code class="docutils literal notranslate"><span class="pre">Style</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
+<li><p>En la nueva ventana, haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" />. Vaya a la carpeta “Map Template” y seleccione el archivo <strong>“somalia_risk_assessment_style.qml”</strong>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Open</span></code>. A continuación, haga clic en <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Style</span></code>.</p></li>
+<li><p>De nuevo en la ventana “Layer Properties”, haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code> y <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ul>
+<p>Diseño de impresión:</p>
+<ul class="simple">
+<li><p>Abra una nueva composición de impresión haciendo clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout</span></code> -&gt; introduzca el nombre de su proyecto actual, por ejemplo, “2024_01”.</p></li>
+<li><p>Vaya a la carpeta <code class="docutils literal notranslate"><span class="pre">Ex_Part_2</span></code> y arrastre y suelte el archivo <code class="docutils literal notranslate"><span class="pre">maps_somalia_template_risk_assessment.qpt</span></code> en el diseño de impresión.</p></li>
+<li><p>Cambie la fecha a la actual haciendo clic en “Further map information” en el panel de elementos. Haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> y desplácese hacia abajo. Aquí puede cambiar la fecha en el campo <code class="docutils literal notranslate"><span class="pre">Main</span> <span class="pre">Properties</span></code>.</p></li>
+<li><p>Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña <code class="docutils literal notranslate"><span class="pre">Item</span> <span class="pre">Properties</span></code> y desplácese hacia abajo hasta que vea el campo <code class="docutils literal notranslate"><span class="pre">Legend</span> <span class="pre">items</span></code>. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">update</span></code> no esté marcada.</p></li>
+<li><p>Elimine todos los elementos de la leyenda haciendo clic en el elemento y luego en el icono rojo con el signo menos que aparece debajo.</p></li>
+</ul>
+<figure class="align-default" id="possible-map-result">
+<a class="reference internal image-reference" href="../../../_images/en_qgis_mondul_5_ex1_possible_result.PNG"><img alt="../../../_images/en_qgis_mondul_5_ex1_possible_result.PNG" src="../../../_images/en_qgis_mondul_5_ex1_possible_result.PNG" style="width: 90%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Posible resultado del mapa.</span><a class="headerlink" href="#possible-map-result" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="automatizacion-del-proceso">
+<h4>7. Automatización del proceso<a class="headerlink" href="#automatizacion-del-proceso" title="Link to this heading">#</a></h4>
+<p>HeiGIT ha desarrollado un complemento de evaluación de riesgos para QGIS con el fin de simplificar este proceso y ahorrar tiempo.
+Puede encontrar más información sobre la metodología de riesgos y el uso del complemento <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html">aquí</a>.</p>
+<p>Para probar el complemento y ver el resultado, utilice los datos de entrada proporcionados en la carpeta: “Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input”</p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#antecedentes">Antecedentes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-1-procesamiento-de-indicadores">Parte 1: Procesamiento de indicadores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea">Tarea</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos">Datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degradacion-de-las-tierras">Degradación de las tierras</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malnutricion">Malnutrición</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-2-calculo-del-riesgo">Parte 2: Cálculo del riesgo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Tarea</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizacion">1. Normalización</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#direcciones">2. Direcciones</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ponderacion-de-los-indicadores">3. Ponderación de los indicadores</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#puntuacion-de-vulnerabilidad-indice">4. Puntuación de vulnerabilidad / Índice</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-la-evaluacion-de-riesgos">5. Preparar la evaluación de riesgos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-del-riesgo">6. Cálculo del riesgo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-los-resultados">6. Visualización de los resultados</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#automatizacion-del-proceso">7. Automatización del proceso</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

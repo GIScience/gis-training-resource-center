@@ -1,0 +1,1215 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ejercicio 3: Identificación de centros de salud y escuelas afectados: Aina añade más capas &#8212; GIS Resource Training Center</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../../_static/user_launch_buttons.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_7/es_module_7_mdg_aa_ex_3';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content">Looking to contribute? Take a look at the contribution guidelines and contact us!</div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../es_intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-light" alt="GIS Resource Training Center - Home"/>
+    <script>document.write(`<img src="../../../_static/IFRC_Logo_Horizontal_RGB.svg" class="logo__image only-dark" alt="GIS Resource Training Center - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../es_intro.html">
+                    Bienvenido a la plataforma de capacitación en SIG de la red de la IFRC
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Modulos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_1/es_module_1_overview.html">1. Introducción a los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_theory.html">1.1. ¿Qué es un SIG?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_installation.html">1.2. Preparación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_start.html">1.3. Primeros pasos con QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_1/es_qgis_module_1_exercises.html">1.4. Ejercicios para el módulo 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_2/es_module_2_overview.html">2. Trabajar con datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_concept.html">2.1. Introducción a los datos geoespaciales y las capas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_projections.html">2.2. Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_geodata_management.html">2.3. Gestión de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_attribute_table.html">2.4. Tabla de atributos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_data_sources.html">2.5. Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_basemap.html">2.6. Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_2/es_qgis_module_2_exercises.html">2.7. Ejercicios para el módulo 2</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_3/es_module_3_overview.html">3. Operaciones básicas de los SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_digitisation.html">3.1. Digitalización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_queries.html">3.2. Selección y consulta de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_data_classification.html">3.3. Clasificación de datos geoespaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_georeferencing.html">3.4. Georreferenciación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_3/es_qgis_module_3_exercises.html">3.5. Ejercicios para el módulo 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_4/es_module_4_overview.html">4. Visualización de datos geográficos y elaboración de mapas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_I.html">4.1. Simbología y colores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_styling_vector_data.html">4.2. Estilos de datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_labels_vector.html">4.3. Etiquetas para datos vectoriales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_working_with_styles.html">4.4. Exportar e importar estilos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/es_module_5_overview.html">5. Operaciones intermedias del SIG</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_spatial_tools.html">5.1. Procesamiento de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_overlay_operations.html">5.2. Operaciones de superposición (recorte, disolución, zona de influencia)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_centroids.html">5.4. Centroides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_non_spatial_tools.html">5.5. Procesamiento no espacial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_5/es_qgis_module_5_exercises.html">5.6. Ejercicios para el módulo 5</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="es_module_7_overview.html">6. Automatización con QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_automation_theory.html">6.1. El diseñador de modelos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_module_7_exercises.html">6.2. Ejercicios para el módulo 7</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wiki</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_qgis_basics_wiki.html">Conceptos básicos de QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_installation_wiki.html">Instalación de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_interface_wiki.html">Interfaz de QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html">Proyectos y estructura de carpetas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html">Proyecciones cartográficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_basemaps_wiki.html">Mapas base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_plugins_wiki.html">Complementos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_data_sources_wiki.html">Fuentes de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_licensing_data.html">Licencias de datos (trabajar con conjuntos de datos con licencia)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_geodata_wiki.html">Datos geográficos generales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html">Tipos de datos geográficos</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html">Importación de datos geográficos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_OpenStreetMap_wiki.html">Datos de OpenStreetMap (OSM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_layer_concept_wiki.html">Concepto de capa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_attribute_table_wiki.html">Tabla de atributos en QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_digitisation_wiki.html">Digitalización</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_data_classification_wiki.html">Clasificación de datos geoespaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_single_symbol_wiki.html">Clasificación por símbolo único</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_categorised_wiki.html">Clasificación por categorías</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_graduated_wiki.html">Clasificación graduada</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_geoprocessing_wiki.html">Procesamiento espacial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_queries_wiki.html">Consultas espaciales y no espaciales</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_queries_wiki.html">Consultas espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_queries_wiki.html">Consultas no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_table_functions_wiki.html">Manipulación de la tabla de atributos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_joins_wiki.html">Unir datos geográficos (uniones espaciales y no espaciales)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_spatial_joins_wiki.html">Uniones espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_non_spatial_joins_wiki.html">Uniones no espaciales</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_raster_wiki.html">Datos ráster</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_raster_basic_wiki.html">Operaciones básicas de ráster</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_automation_wiki.html">Automatización en QGIS (el diseñador de modelos)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Wiki/es_qgis_representation_wiki.html">Visualización y creación de mapas en QGIS</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_visualisation_wiki.html">Visualización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Wiki/es_qgis_map_making_wiki.html">Compositor de diseños de impresión</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_qgis_common_errors_and_Issues.html">Errores y problemas comunes en QGIS <!-- omit from toc --></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_web_and_mobile_apps_wiki.html">Aplicaciones SIG para web y móviles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wiki/es_geodata_management_sharepoint.html">Gestión de datos geoespaciales con SharePoint</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Rincón de los Capacitadores</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_TOT_intro.html">Introducción al programa de formación de facilitadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_training.html">Cómo planificar una capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_graphical_outline.html">Agenda de capacitación y material de apoyo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_training_day_structure.html">Cómo planificar y estructurar una sesión de capacitación en GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_teach_GIS.html">Cómo enseñar GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Trainers_corner/es_how_to_assessment.html">Evaluaciones en la Capacitación GIS: Una Guía</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../About/about_1.html">Acerca de</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution_plan.html">Plan de Contribución para la Plataforma de capacitación en SIG de la IFRC</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_7/es_module_7_mdg_aa_ex_3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/es/Module_7/es_module_7_mdg_aa_ex_3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicio 3: Identificación de centros de salud y escuelas afectados: Aina añade más capas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-disponibles">Datos disponibles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto">Contexto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas:</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center sd-rounded-circle docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-home-fill sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.97 2.59a1.5 1.5 0 0 0-1.94 0l-7.5 6.363A1.5 1.5 0 0 0 3 10.097V19.5A1.5 1.5 0 0 0 4.5 21h4.75a.75.75 0 0 0 .75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 0 0 1.5-1.5v-9.403a1.5 1.5 0 0 0-.53-1.144l-7.5-6.363Z"></path></svg></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/intro.html"><span>https://giscience.github.io/gis-training-resource-center/content/es/intro.html</span></a></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-3-identificacion-de-centros-de-salud-y-escuelas-afectados-aina-anade-mas-capas">
+<h1>Ejercicio 3: Identificación de centros de salud y escuelas afectados: Aina añade más capas<a class="headerlink" href="#ejercicio-3-identificacion-de-centros-de-salud-y-escuelas-afectados-aina-anade-mas-capas" title="Link to this heading">#</a></h1>
+<section id="caracteristicas-del-ejercicio">
+<h2>Características del ejercicio<a class="headerlink" href="#caracteristicas-del-ejercicio" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Tipo de ejercicio de capacitación:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Este ejercicio puede utilizarse tanto en la capacitación en línea como en la presencial.</p></li>
+<li><p class="sd-card-text">Puede realizarse como ejercicio guiado o individualmente a modo de autoestudio.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Programa de ejercicios:</strong></p>
+<p class="sd-card-text">Este ejercicio forma parte del <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_mdg_aa_cyclones.html">programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Duración estimada del ejercicio:</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Artículos relevantes en Wiki</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html">Estadísticas zonales</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary">Intersección</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html"><span class="std std-doc">Proyecciones cartográficas</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html"><span class="std std-doc">Buffer</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="../Wiki/es_qgis_projections_wiki.html"><span class="std std-doc">Recorte</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_automation_wiki.html">Automatización</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-border-1 sd-shadow-none docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong>
+Aina, experta en SIG de la Cruz Roja Malgache (CRM), se prepara para la próxima temporada de ciclones. Quiere mejorar la capacidad de su equipo para actuar con rapidez una vez pronosticada una tormenta automatizando los análisis clave en QGIS. Esto incluye la estimación de las poblaciones expuestas, la identificación de los servicios afectados como la sanidad y la educación, y la evaluación de si se puede llegar a los puestos sanitarios desde los almacenes clave en un plazo crítico de 10 horas.
+El objetivo es preparar un flujo de trabajo de análisis y visualización de principio a fin que pueda respaldar una acción anticipatoria rápida y basada en datos antes de que un ciclón toque tierra.</p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</section>
+<section id="instrucciones-para-capacitadores">
+<h2>Instrucciones para capacitadores<a class="headerlink" href="#instrucciones-para-capacitadores" title="Link to this heading">#</a></h2>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Rincón del instructor</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="preparar-la-capacitacion">Preparar la capacitación</h3>
+<ul class="simple">
+<li><p class="sd-card-text">Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.</p></li>
+<li><p class="sd-card-text">Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.</p></li>
+<li><p class="sd-card-text">Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado <strong>y descomprimido</strong> la carpeta de datos.</p></li>
+<li><p class="sd-card-text">Consulte <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings">¿Cómo realizar capacitaciones?</a> para obtener algunos consejos generales para impartirlas.</p></li>
+</ul>
+<h3 class="rubric" id="impartir-la-capacitacion">Impartir la capacitación</h3>
+<p class="sd-card-text"><strong>Introducción:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Presente la idea y el objetivo del ejercicio.</p></li>
+<li><p class="sd-card-text">Proporcione el enlace de descarga y asegúrese de que todos los participantes hayan descomprimido la carpeta antes de comenzar las tareas.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Guía paso a paso:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Muestre cada paso y explíquelo al menos dos veces y de manera pausada para que todos puedan ver lo que está haciendo y aplicarlo en su propio proyecto de QGIS.</p></li>
+<li><p class="sd-card-text">Pregunte con regularidad si alguien necesita ayuda o si todos están siguiendo el ejercicio, para asegurarse de que todos comprenden y realizan los pasos por sí mismos.</p></li>
+<li><p class="sd-card-text">Mantenga una actitud abierta y paciente ante cualquier pregunta o problema que pueda surgir. Los participantes están haciendo varias tareas a la vez: prestan atención a sus instrucciones y las aplican en su propio proyecto de QGIS.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Cierre de la sesión:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Dedique tiempo al final del ejercicio a cualquier problema o pregunta relacionada con las tareas que pueda surgir.</p></li>
+<li><p class="sd-card-text">Reserve algo de tiempo para preguntas abiertas.</p></li>
+</ul>
+</div>
+</details></section>
+<section id="datos-disponibles">
+<h2>Datos disponibles<a class="headerlink" href="#datos-disponibles" title="Link to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Descargue todos los conjuntos de datos aquí, guarde la carpeta en su ordenador y descomprima el archivo.</strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip"><span>https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip</span></a></div>
+</section>
+<section id="contexto">
+<h2>Contexto<a class="headerlink" href="#contexto" title="Link to this heading">#</a></h2>
+<p>Tras construir su modelo para estimar la población expuesta, Aina quiere ampliar su utilidad. Asimismo, decide <strong>identificar los servicios críticos</strong> afectados por los ciclones, especialmente los <strong>centros de salud</strong> y las <strong>escuelas</strong>.</p>
+<p>No solo quiere saber <em>qué instalaciones</em> están afectadas, sino también <em>cuántas hay en total</em> en cada distrito. De ese modo, puede calcular el porcentaje <strong>de servicios afectados</strong> en cada zona.</p>
+<p>Para ello, utilizará dos conjuntos de datos de puntos de OpenStreetMap:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_health_facilities">Centros de salud</a></p></li>
+<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_education_facilities">Establecimientos educativos</a></p></li>
+</ul>
+</section>
+<section id="tareas">
+<h2>Tareas:<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Cargue los conjuntos de datos de los centros de salud y los establecimientos educativos.</strong>
+En primer lugar, echemos un vistazo a los datos con los que queremos trabajar.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Navegue hasta su <code class="docutils literal notranslate"><span class="pre">input</span></code> carpeta de datos.</p></li>
+<li><p>Arrastre y suelte las siguientes capas en su proyecto de QGIS:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hotosm_mdg_education_facilities</span></code></p></li>
+</ul>
+</li>
+<li><p>Confirme que ambas capas estén visibles en el <strong>Panel de capas</strong></p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p><strong>Guarde su modelo con un nuevo nombre</strong></p>
+<ul class="simple">
+<li><p>Abra su modelo existente <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code>.</p></li>
+<li><p>Guárdelo inmediatamente con un nuevo nombre:</p>
+<ul>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As…</span></code></p></li>
+<li><p>Guárdelo en la <code class="docutils literal notranslate"><span class="pre">project</span></code> carpeta como:</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education</span>
+</pre></div>
+</div>
+<ol class="arabic" start="3">
+<li><p><strong>Añada nuevas entradas de modelo</strong></p>
+<ul>
+<li><p>En la sección <strong>Entradas</strong>, añada:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<ul class="simple">
+<li><p><strong>Descripción</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Health</span> <span class="n">Facilities</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<ul class="simple">
+<li><p><strong>Descripción</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Education</span> <span class="n">Facilities</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Entrada del modelo: Centros de salud</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="the-world-result">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’éducation</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<ol class="arabic" start="3">
+<li><p><strong>Conteo de todas las instalaciones sanitarias por Admin 2</strong></p>
+<ul>
+<li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Contar puntos en polígono</strong>.</p></li>
+<li><p>Configuración:</p>
+<ul class="simple">
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district.</span></code></p></li>
+<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Nombre del campo de conteo</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Count_health_total</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: calcular el número de centros de salud de cada distrito.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="4">
+<li><p><strong>Conteo de todas las instalaciones educativas por Admin 2</strong></p>
+<ul>
+<li><p>Añada otro paso <strong>Contar puntos en polígono</strong>.</p></li>
+<li><p>Configuración:</p>
+<ul class="simple">
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">education</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district</span></code></p></li>
+<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Nombre del campo de conteo</strong>:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_education_total</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: calcular el número de centros escolares de cada distrito.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="5">
+<li><p><strong>Intersección de las instalaciones sanitarias con zona de influencia ciclónica</strong></p>
+<ul>
+<li><p>En el panel de <strong>Algoritmos</strong>, busque <strong>Intersección</strong>.</p></li>
+<li><p>En la ventana de configuración:</p></li>
+<li><p>Añada una descripción:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa superpuesta</strong>: zona de influencia ciclónica (utilice “Reproyectado a EPSG:4326” desde <strong>Salida del algoritmo</strong>)</p></li>
+<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
+</ul>
+</li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ok</span></code></p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: interconectar los centros de salud con la zona de impacto del ciclón.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="6">
+<li><p><strong>Intersección de las instalaciones educativas con amortiguación del ciclón</strong></p>
+<ul>
+<li><p>Añada otro algoritmo <strong>Intersección</strong>.</p></li>
+<li><p>Configuración:</p>
+<ul>
+<li><p>Añada una descripción:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">education</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone.</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa superpuesta</strong>: zona de influencia ciclónica (utilice “Reproyectado a EPSG:4326” desde <strong>Salida del algoritmo</strong>)</p></li>
+<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
+</ul>
+</li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ok</span></code></p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: interconectar los centros educativos con la zona de impacto del ciclón.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="7">
+<li><p><strong>Conteo de centros sanitarios afectados por Admin 2</strong></p>
+<ul>
+<li><p>Añada <strong>Contar puntos en polígono</strong></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Compter</span> <span class="pre">les</span> <span class="pre">établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Configuración:</p>
+<ul>
+<li><p>Añada una descripción: Compter les établissements de santé touchés par district</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Capa de polígonos</strong>: Conteo total de la producción de los centros de salud</p></li>
+<li><p><strong>Capa de puntos</strong>: salida de centros de salud intersecados</p></li>
+<li><p><strong>Nombre del campo de conteo</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_health</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: cómputo de los centros sanitarios afectados por distrito.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic" start="8">
+<li><p><strong>Conteo de centros educativos afectados por Admin 2</strong></p>
+<ul>
+<li><p>Añada <strong>Contar puntos en polígono</strong></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Compter</span> <span class="pre">les</span> <span class="pre">établissements</span> <span class="pre">education</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Configuración:</p>
+<ul>
+<li><p>Añada una descripción:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">education</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Capa de polígonos</strong>: Conteo de la producción total de instalaciones educativas</p></li>
+<li><p><strong>Capa de puntos</strong>: salida de instalaciones educativas intersecadas</p></li>
+<li><p><strong>Nombre del campo de conteo</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_education</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: cómputo de los centros sanitarios afectados por distrito.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="9">
+<li><p><strong>Calcule el porcentaje de centros sanitarios afectados</strong>
+Para calcular el porcentaje de centros de salud afectados por área administrativa, utilizaremos la <strong>Calculadora de Campo</strong> :</p></li>
+</ol>
+<ul>
+<li><p>Añada la <strong>Calculadora de Campo</strong>:</p>
+<ul>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calculer</span> <span class="pre">le</span> <span class="pre">pourcentage</span> <span class="pre">d’établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Configuración:</p>
+<ul>
+<li><p>Añada una descripción:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Calculer le pourcentage d’établissements de santé touchés par district
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Capa de entrada</strong>: la salida de Conteo de centros de salud afectados por Admin 2</p></li>
+<li><p><strong>Nombre del campo de salida</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_exposed_health</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Tipo de campo</strong>: Decimal (real)</p></li>
+<li><p><strong>Expresión</strong>:</p></li>
+</ul>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span> CASE WHEN &quot;count_health_total&quot; &gt; 0
+ THEN &quot;sum_exposed_health&quot; / &quot;count_health_total&quot; * 100
+ ELSE 0
+ END
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Configure la salida como <strong>Salida del modelo</strong></p></li>
+<li><p>Nómbrelo:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuración de la operación: calcular el porcentaje de centros de salud afectados por distrito.</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
+<li><p><strong>Calcule el porcentaje de centros educativos afectados</strong>
+Para calcular el porcentaje de centros educativos afectados por zona administrativa, utilizaremos la <strong>calculadora de campos</strong> :</p></li>
+</ol>
+<ul>
+<li><p>Añada la <strong>calculadora de campos</strong>:</p>
+<ul>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calculer</span> <span class="pre">le</span> <span class="pre">pourcentage</span> <span class="pre">d’établissements</span> <span class="pre">d’éducation</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Configuración:</p>
+<ul>
+<li><p>Añada una descripción:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Calculer le pourcentage d’établissements d’éducation touchés par district
+</pre></div>
+</div>
+</li>
+<li><p><strong>Capa de entrada</strong>: la salida de Conteo de establecimientos educativos afectados por Admin 2</p></li>
+<li><p><strong>Nombre del campo de salida</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_exposed_education</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Tipo de campo</strong>: Decimal (real)</p></li>
+<li><p><strong>Expresión</strong>:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;count_education_total&quot; &gt; 0
+THEN &quot;sum_exposed_education_POI&quot; / &quot;count_education_total&quot; * 100
+ELSE 0
+END
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Configure la salida como <strong>Salida del modelo</strong></p></li>
+<li><p>Nómbrelo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG"><img alt="../../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" src="../../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="11">
+<li><p><strong>Valide su modelo ampliado y guárdelo.</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Haga clic en el botón ✔️ <strong>Validate Model</strong> para verificar si hay errores.</p></li>
+<li><p>Guarde de nuevo en:<br />
+<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+</ul>
+<ol class="arabic simple" start="12">
+<li><p><strong>Ejecute el modelo</strong></p></li>
+</ol>
+<ul>
+<li><p>Haga clic en el botón ▶️ <strong>Run</strong> en la esquina superior derecha de la ventana del modelador gráfico.</p></li>
+<li><p><strong>Entrada:</strong></p>
+<ul class="simple">
+<li><p>Haga clic en los tres puntos de cada conjunto de datos de entrada y seleccione la entrada correcta:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → seleccione el archivo ráster WorldPop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → seleccione la capa Admin 2 (por ejemplo, <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → seleccione el conjunto de datos de puntos para los centros de salud.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → seleccione el conjunto de datos de puntos para las escuelas</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Salida:</strong></p>
+<ul>
+<li><p>Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affacted</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code> -&gt;</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_harald_Exposed_Population</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code> para ejecutar el modelo completo.</p></li>
+</ul>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Modelador gráfico</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Vista de conjunto del Modelo Gráfico de la Tarea 3 mostrando todos los algoritmos conectados y las salidas definidas.</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Configuración del modelo de ejecución</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Salida del modelo</label><div class="sd-tab-content docutils">
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/es/Module_7"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-disponibles">Datos disponibles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto">Contexto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By HeiGIT gGmbH
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright HeiGIT gGmbH.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <script data-goatcounter="https://gtrc.goatcounter.com/count"
+async src="//gc.zgo.at/count.js"></script>
+<p>
+This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

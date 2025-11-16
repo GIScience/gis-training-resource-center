@@ -623,7 +623,7 @@ document.write(`
 <p>The <img alt="" src="../../_images/processingModel.png" /> <code class="docutils literal notranslate"><span class="pre">Graphical</span> <span class="pre">Modeler</span></code> also known as the Model Builder allows users to create complex models using a visual interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily reproduced with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.</p>
 <section id="graphical-user-interface">
 <h3><span class="section-number">7.1.1.1. </span>Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Link to this heading">#</a></h3>
-<p>The Graphical Modeler can be accessed from the Processing menu <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">-&gt;</span> <span class="pre">Graphical</span> <span class="pre">Modeler</span></code> as shown in <a class="reference internal" href="#open-graphical-modeler"><span class="std std-numref">Fig. 7.1</span></a>.</p>
+<p>The Graphical Modeler can be accessed from the Processing menu <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">-&gt;</span> <span class="pre">Graphical</span> <span class="pre">Modeler</span></code> as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">open_graphical_modeler</span></code>.</p>
 <figure class="align-default" id="open-graphical-modeler">
 <a class="reference internal image-reference" href="../../_images/en_open_graphical_modeler.png"><img alt="../../_images/en_open_graphical_modeler.png" src="../../_images/en_open_graphical_modeler.png" style="height: 150px;" />
 </a>
@@ -657,7 +657,7 @@ document.write(`
 <p>To add new inputs:</p>
 <ol class="arabic simple">
 <li><p>Select the <code class="docutils literal notranslate"><span class="pre">Inputs</span></code> tab from the left window.</p></li>
-<li><p>Next, select the <code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code> by either double-clicking or dragging and dropping it onto the model canvas (<a class="reference internal" href="#vector-layer-modeler"><span class="std std-numref">Fig. 7.3</span></a>). This will open the input Parameter Definition window (<a class="reference internal" href="#input-vector-modeler"><span class="std std-numref">Fig. 7.4</span></a>).</p></li>
+<li><p>Next, select the <code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code> by either double-clicking or dragging and dropping it onto the model canvas (<code class="xref std std-numref docutils literal notranslate"><span class="pre">vector_layer_modeler</span></code>). This will open the input Parameter Definition window (<code class="xref std std-numref docutils literal notranslate"><span class="pre">input_vector_modeler</span></code>).</p></li>
 <li><p>In this window we can customize some vector input parameters such as <code class="docutils literal notranslate"><span class="pre">Description</span></code>, <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code> (Point, Line, Polygon) and we can also define our input as mandatory for your model by ticking the <code class="docutils literal notranslate"><span class="pre">Mandatory</span></code> box.</p></li>
 </ol>
 <!---It is also possible to select the `Advanced` checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select them.-->
@@ -682,7 +682,7 @@ document.write(`
 To add algorithms:</p>
 <ol class="arabic simple">
 <li><p>Select the <code class="docutils literal notranslate"><span class="pre">Algorithms</span></code> tab on the left.</p></li>
-<li><p>Using the searchbar, look the the tool <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> algorithm as shown in <a class="reference internal" href="#model-buffer"><span class="std std-numref">Fig. 7.5</span></a>.</p></li>
+<li><p>Using the searchbar, look the the tool <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> algorithm as shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">model_buffer</span></code>.</p></li>
 <li><p>Add it to the model canvas by dragging it onto the canvas or double-clicking on it.</p></li>
 </ol>
 <figure class="align-default" id="model-buffer">
