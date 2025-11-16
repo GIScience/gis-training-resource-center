@@ -1,12 +1,12 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
 :::{grid-item-card}
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_exercises.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_module_3_exercises.html
 
 __Haga clic aquí para volver al resumen de ejercicios del módulo 3.__
 :::
@@ -32,7 +32,7 @@ El objetivo de este ejercicio es aprender a manipular datos secundarios para gen
 * [Consultas no espaciales](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md)
 * [Consultas espaciales](/content/es/Wiki/es_qgis_spatial_queries_wiki.md)
 * [Función de tabla: agregar campo](/content/es/Wiki/es_qgis_table_functions_wiki.md)
-* [Geoprocesamiento: recorte](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html#clip)
+* [Geoprocesamiento: recorte](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#clip)
 
 
 ## Datos
@@ -44,7 +44,7 @@ Descargue todos los conjuntos de datos [aquí](https://nexus.heigit.org/reposito
 - `buildings_belet_weyne.geojson`: Este conjunto de datos se descarga con la [herramienta de exportación HOT](https://export.hotosm.org/v3/exports/new/describe) y contiene información sobre los edificios del distrito de Beledweyne.
 
 
-La carpeta se llama **Module_3_Exercise_3_Data_Queries** y contiene toda la [estructura de carpetas estándar](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#standard-folder-structure) con todos los datos de la carpeta de entrada.
+La carpeta se llama **Module_3_Exercise_3_Data_Queries** y contiene toda la [estructura de carpetas estándar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#standard-folder-structure) con todos los datos de la carpeta de entrada.
 
 :::{Note}
 La denominación de los distritos y estados no es coherente en los distintos conjuntos de datos. Encontrará diferentes grafías para el nombre del distrito **Beledweyne** en el que nos centraremos. Otras grafías podrían ser **Belet Weyne** o **Belete Weyne**. En muchos casos, tendrá que editar los valores de los conjuntos de datos para eliminar las distintas faltas de ortografía. Este proceso se denomina "limpieza de datos".
@@ -52,11 +52,11 @@ La denominación de los distritos y estados no es coherente en los distintos con
 
 ## Tareas
 
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` --> `New`.
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` --> `New`.
 
-2. Una vez que se haya creado el proyecto, [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save-project) en la **carpeta del proyecto** del ejercicio **Module_3_Exercise_1_Queries_Somalia**. Para hacer esto, haga clic en `Project` --> `Save as` e ir hasta la carpeta. Nombre el proyecto de esta manera: **Somalia_flood_affected_Beledweyne_2023**.
+2. Una vez que se haya creado el proyecto, [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save-project) en la **carpeta del proyecto** del ejercicio **Module_3_Exercise_1_Queries_Somalia**. Para hacer esto, haga clic en `Project` --> `Save as` e ir hasta la carpeta. Nombre el proyecto de esta manera: **Somalia_flood_affected_Beledweyne_2023**.
 
-3. Para cargar los siguientes archivos en su proyecto, arrastre y suelte ([video en Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). O haga clic en `Layer` --> `Add Layer` --> `Add Vector Layer`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta el archivo. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+3. Para cargar los siguientes archivos en su proyecto, arrastre y suelte ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). O haga clic en `Layer` --> `Add Layer` --> `Add Vector Layer`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta el archivo. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
     - `som_admbnda_adm2_ocha_20230308.shp`
     - `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`
     - `Buildings_Belete_Weyne.geojson`: Aparecerá una ventana emergente para este archivo y tendrá que decidir qué datos importar. Seleccione los polígonos.
@@ -69,8 +69,8 @@ Asegúrese de __descomprimir__ la carpeta del ejercicio antes de cargar las capa
 
 4. En primer lugar, queremos exportar el distrito __Beledweyne__ de la región de Hiraan desde `som_admbnda_adm2_ocha_20230308.shp` para tenerlo como capa vectorial independiente. Para hacer esto:
     1. Abra la tabla de atributos de `som_admbnda_adm2_ocha_20230308.shp` al hacer clic con el botón derecho en la capa --> `Open Attribute Table`([video en Wiki](/content/es/Wiki/es_qgis_attribute_table_wiki.md)).
-    2. Busque la fila de `Belet Weyne` y márquela al hacer clic en el número que está en el extremo izquierdo de la tabla de atributos. La fila se resaltará en azul y el distrito se volverá amarillo en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
-    3. Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Export` -> `Save Selected Features as`. Queremos guardar Beledweyne como GeoPackage, así que ajuste `Format` en consecuencia. Haga clic en los tres puntos y navegue a su **carpeta temporal**. Aquí puede asignar a la capa el nombre **AOI_Beledweyne** y hacer clic en `Save`. Ahora haga clic en `OK`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). En este ejercicio, no reproyectaremos las capas y trabajaremos con los datos en `ESPG:4326 - WGS84`.
+    2. Busque la fila de `Belet Weyne` y márquela al hacer clic en el número que está en el extremo izquierdo de la tabla de atributos. La fila se resaltará en azul y el distrito se volverá amarillo en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
+    3. Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Export` -> `Save Selected Features as`. Queremos guardar Beledweyne como GeoPackage, así que ajuste `Format` en consecuencia. Haga clic en los tres puntos y navegue a su **carpeta temporal**. Aquí puede asignar a la capa el nombre **AOI_Beledweyne** y hacer clic en `Save`. Ahora haga clic en `OK`([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). En este ejercicio, no reproyectaremos las capas y trabajaremos con los datos en `ESPG:4326 - WGS84`.
 
 ### Identifique el edificio que podría verse afectado por la inundación
 
@@ -92,7 +92,7 @@ Asegúrese de __descomprimir__ la carpeta del ejercicio antes de cargar las capa
     7. Ajusta tus capas de forma que sólo veas las zonas inundadas y su nueva capa **Beledweyne_buildings_affected**. Elimine la capa `som_admbnda_adm2_ocha_20230308.shp` y `Buildings_Belete_Weyne.geojson`.
 
     :::{Attention}
-    La herramienta [`Select by Location`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_queries_wiki.html#select-by-location) es muy similar. Esta herramienta funciona de la misma manera, pero en lugar de extraer directamente las entidades, las selecciona.
+    La herramienta [`Select by Location`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#select-by-location) es muy similar. Esta herramienta funciona de la misma manera, pero en lugar de extraer directamente las entidades, las selecciona.
     :::
 
 ### Identifique las infraestructuras críticas afectadas por las inundaciones

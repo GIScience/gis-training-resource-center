@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -55,7 +55,7 @@ __Artículos relevantes en Wiki__:
 * [Función de tabla: agregar campo](/content/es/Wiki/es_qgis_table_functions_wiki.md)
 * [Clasificación de datos geoespaciales: por categorías](/content/es/Wiki/es_qgis_categorized_wiki.md)
 * [Clasificación de datos geoespaciales: graduado](/content/es/Wiki/es_qgis_graduated_wiki.md)
-* [Digitalización: datos de punto](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Digitalización: datos de punto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
 
@@ -70,7 +70,7 @@ __Artículos relevantes en Wiki__:
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra en Miro) en la que los participantes puedan agregar sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo hacer capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md#how-to-do-trainings) para obtener consejos generales sobre cómo impartirlas.
+- Consulte [¿Cómo hacer capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
 
 ### Impartir la capacitación
 
@@ -106,11 +106,11 @@ La carpeta se llama “Module_3_Exercise_1_Flood_Nigeria” y contiene toda la [
 
 Nuestro objetivo es elaborar una visión general del impacto de las inundaciones de 2022 en el estado de Burco, en Nigeria. Para ello, visualizaremos el estado y los distritos afectados, además de digitalizar las comunidades supuestamente afectadas.
 
-1. Abra QGIS y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
+1. Abra QGIS y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#cree-un-nuevo-proyecto-en-qgis) haciendo clic en `Project` -> `New`
 
-2. Una vez creado el proyecto [guarde el proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#save) en la carpeta “project” del ejercicio “Modul3_Exercise_1_Flood_Nigeria”. Para hacer esto, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Nombre al proyecto de la siguiente manera: “Nigeria_Borno_flood_2022”.
+2. Una vez creado el proyecto [guarde el proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#guarde-el-proyecto) en la carpeta “project” del ejercicio “Modul3_Exercise_1_Flood_Nigeria”. Para hacer esto, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Nombre al proyecto de la siguiente manera: “Nigeria_Borno_flood_2022”.
 
-3. Cargue el GeoPackage "kontur_boundaries_NG_20230628.gpkg" en su proyecto mediante arrastrar y soltar ([Wiki Video](/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). O haga clic en `Layer`-> `Add Layer`-> `Add Vector Layer`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta “kontur_boundaries_NG_20230628.gpkg”. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+3. Cargue el GeoPackage "kontur_boundaries_NG_20230628.gpkg" en su proyecto mediante arrastrar y soltar ([Wiki Video](/content/es/Wiki/es_qgis_import_geodata_wiki.md#abra-los-datos-ráster-mediante-arrastrar-y-soltar)). O haga clic en `Layer`-> `Add Layer`-> `Add Vector Layer`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta “kontur_boundaries_NG_20230628.gpkg”. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](/content/es/Wiki/es_qgis_import_geodata_wiki.md#abrir-datos-vectoriales-mediante-la-pestaña-layer)).
 Este conjunto de datos contiene todas las áreas de división administrativa (admin 0 a 5) con la población respectiva de las áreas.
 
 :::{Attention}
@@ -119,17 +119,17 @@ Los archivos GeoPackage pueden contener varios archivos e incluso proyectos QGIS
 
 4. En primer lugar, queremos exportar el estado de Borno desde kontur_boundaries_NG_20230628 para tenerlo como capa vectorial independiente. Para hacer esto,
     * Abra la tabla de atributos de "kontur_boundaries_NG_20230628" al hacer clic derecho en la capa -> `Open Attribute Table`([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md)).
-    * Busque la fila del estado de Borno y márquela al hacer clic en el número que aparece en el extremo izquierdo de la tabla de atributos. La fila aparecerá en azul y la zona del estado de Borno se volverá amarilla en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
-    * Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Export` -> `Save Selected Features as`. Debemos guardar Borno como GeoPackage, así que ajuste `Format` de manera correspondiente. Haga clic en los tres puntos y navegue hasta su carpeta `temp`. Aquí puede darle el nombre a la capa “AOI_Borno_admin1” y hacer clic en `Save`. Ahora debería ver el mismo nombre en el campo `Layer name`. Haga clic en `ok`([Wiki Video](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file))
+    * Busque la fila del estado de Borno y márquela al hacer clic en el número que aparece en el extremo izquierdo de la tabla de atributos. La fila aparecerá en azul y la zona del estado de Borno se volverá amarilla en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#acercar-el-zoom-a-una-entidad-específica)).
+    * Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Export` -> `Save Selected Features as`. Debemos guardar Borno como GeoPackage, así que ajuste `Format` de manera correspondiente. Haga clic en los tres puntos y navegue hasta su carpeta `temp`. Aquí puede darle el nombre a la capa “AOI_Borno_admin1” y hacer clic en `Save`. Ahora debería ver el mismo nombre en el campo `Layer name`. Haga clic en `ok`([Wiki Video](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#guardar-las-entidades-seleccionadas-como-un-archivo-nuevo))
 
 5. En los siguientes pasos, debemos crear una capa vectorial con áreas admin 2 o en Nigeria llamadas Local Government Areas (LGA) con la población en nuestro proyecto.
 Como solo necesitamos las LGA, tenemos que exportarlas del conjunto de datos original.
     * Abra la tabla de atributos de la capa "kontur_boundaries_NG_20230628" al hacer clic derecho en la capa -> `Attribute Table` ([video en Wiki](/content/es/Wiki/es_qgis_attribute_table_wiki.md)). Consulte la tabla de atributos. Se verán dos columnas de niveles de administrador “admin levels” y “[osm_admin_levels](https://wiki.openstreetmap.org/wiki/Key:admin_level)”. Ambos tienen valores diferentes. En los [metadatos](https://data.humdata.org/dataset/kontur-boundaries-nigeria) del conjunto de datos en HDX, podemos ver que la columna "osm_admin_levels" se refiere a los niveles de administración utilizados en OpenStreetMaps (OSM). Hay una [lista](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) de qué niveles de administración oficiales corresponden a qué niveles de administración OSM. Las LGA corresponden a osm admin __nivel 6__. Esto significa que debemos exportar todas las entidades con `osm_admin_level` = `6`.
-    * Para exportar exactamente estas entidades utilizaremos la herramienta `Extract by attribute`. Abra la página `Processing Toolbox` ([así se hace](/content/es/Wiki/es_qgis_interface_wiki.md#toolbox-toolbars)) y busque la herramienta.
+    * Para exportar exactamente estas entidades utilizaremos la herramienta `Extract by attribute`. Abra la página `Processing Toolbox` ([así se hace](/content/es/Wiki/es_qgis_interface_wiki.md#barras-de-herramientas)) y busque la herramienta.
         Abra la herramienta y elija como `Input Layer` la capa "kontur_boundaries_NG_20230628.gpkg". En `Selection attribute` elija la columna `osm_admin_level`. El `Operator` tiene que ser `=` y como `value` utilizamos `6` ya que los LGA tienen el osm_admin_level 6.
     * En `Extracted (attribute)`, haga clic en los tres puntos -> `Save to GeoPackage`, navegue hasta su carpeta `temp`, y dele nombre a la nueva capa "Nigeria_admin2_pop". Haga clic en `Save`. Nombre la capa con el mismo nombre ("Nigeria_admin2_pop"). Haga clic en `OK` y luego en `Run`.
 
-6. Ahora tenemos que extraer todas las LGA de Borno. Para hacer esto, utilizaremos la herramienta `Extract by Location` ([Wiki Video](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#select-by-expression)). Busque la herramienta en `Processing Toolbox` y ábrela.
+6. Ahora tenemos que extraer todas las LGA de Borno. Para hacer esto, utilizaremos la herramienta `Extract by Location` ([Wiki Video](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#seleccionar-por-expresión)). Busque la herramienta en `Processing Toolbox` y ábrela.
     * En `Input Layer` utilizaremos “Nigeria_admin2_pop”.
     * Para `By comparing to the features from` utilizamos la capa “AOI_Borno_admin1”.
     * Como `Geometric predicate` utilizamos `are within`.
@@ -146,10 +146,10 @@ align: center
 
 7. Ya tenemos nuestras áreas de administración y ahora podemos empezar a enriquecer estas capas con datos adicionales relacionados con la inundación de 2022.
 Abra el archivo de Excel o PDF “Nigeria_flood_2022_affacted_population” y abra la hoja Borno. Encontrará una tabla con las LGA y las comunidades que se vieron afectadas por la inundación. Ahora queremos añadir parte de la información a nuestra capa "Borno_admin2_pop". Para hacer esto, hay dos modos. Uno sencillo, pero más lento, y otro más complicado, pero mucho más rápido. Vamos a mostrar el modo fácil, pero en el menú desplegable de abajo puede encontrar el tutorial para el modo avanzado también.
-    * Abra la tabla de atributos de "Borno_admin2_pop" y active el modo de edición al hacer clic en ![](/fig/mActionToggleEditing.png) ([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)). Ahora puede editar los datos directamente en la tabla.
+    * Abra la tabla de atributos de "Borno_admin2_pop" y active el modo de edición al hacer clic en ![](/fig/mActionToggleEditing.png) ([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#tabla-de-atributos---edición-de-datos)). Ahora puede editar los datos directamente en la tabla.
     * En primer lugar, debemos agregar una nueva columna con el nombre “Flood_afffected”. Para hacer esto, haga clic en ![](/fig/mActionNewAttribute.png). En la ventana `Add field`, tiene que agregar el nombre y establecer el `Type` a `Text(string)`. Haga clic en `OK` ([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#add-new-column)).
     * En el siguiente paso, revise en la tabla Excel/PDF qué LGA se han visto afectadas y seleccione “Sí” en la tabla de atributos para esas LGA.
-    * Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+    * Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#modificar-datos-en-la-tabla-de-atributos)).
 
 8. Para visualizar el conjunto de datos enriquecidos, utilizamos la función "Clasificación por categorías". Esto significa que seleccionamos una columna de la tabla de atributos y utilizamos el contenido como categorías para ordenar y mostrar los datos ([Wiki Video](/content/es/Wiki/es_qgis_categorized_wiki.md)).
     * Haga clic derecho en la capa "Borno_admin2_pop" en `Layer Panel` -> `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Symbology`.
@@ -170,11 +170,11 @@ align: center
     :::{Tip}
         No se puede interactuar con un mapa base.
     :::
-    * Para añadir el complemento `OSM Place Search`, haga clic en `Plugins` -> `Manage and Install Plugins…` -> `All` y busque `OSM Place Search`. Una vez que lo haya encontrado, haga clic sobre él y luego en `Install Plugin`. Puede abrir `OSM Place Search Panel` como cualquier otro panel, haciendo clic en `View` -> `Panels` y marcando `OSM Place Search Panel`([video en Wiki](/content/es/Wiki/es_qgis_plugins_wiki.md#installation-of-plugins)).
+    * Para añadir el complemento `OSM Place Search`, haga clic en `Plugins` -> `Manage and Install Plugins…` -> `All` y busque `OSM Place Search`. Una vez que lo haya encontrado, haga clic sobre él y luego en `Install Plugin`. Puede abrir `OSM Place Search Panel` como cualquier otro panel, haciendo clic en `View` -> `Panels` y marcando `OSM Place Search Panel`([video en Wiki](/content/es/Wiki/es_qgis_plugins_wiki.md#instalación-de-complementos)).
     * En el panel, puede buscar lugares en OpenStreetMap escribiendo el nombre del lugar en la barra de búsqueda. A menudo tiene sentido añadir información adicional, como el nombre del país. Por ejemplo, pruebe con "Laujeri Bulama, Nigeria".
 
 10. Ahora ya tenemos todas nuestras herramientas. En el siguiente paso, creamos una nueva capa de vectores de puntos desde cero para digitalizar la ubicación de las comunidades afectadas.
-    * Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#create-a-new-layer))
+    * Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#crear-una-nueva-capa))
     - En `Database`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre “Borno_affected_communities_point”. Haga clic en `Save`.
     * `Geometry type`: Seleccione `Point`
     - En `Additional dimension` debe asegurarse siempre de que `None` está marcada.
@@ -194,7 +194,7 @@ align: center
 ---
 :::
 
-11. Actualmente el nuevo “Borno_affected_communities_point” está vacío. Para añadir entidades podemos utilizar la `Digitizing Toolbar`. Si no puede ver la barra de herramientas, utilice `View` -> `Toolbars` y compruebe `Digitizing Toolbar` ([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#creation-of-point-data)). ![](/fig/Digitizing_Toolbar.png)
+11. Actualmente el nuevo “Borno_affected_communities_point” está vacío. Para añadir entidades podemos utilizar la `Digitizing Toolbar`. Si no puede ver la barra de herramientas, utilice `View` -> `Toolbars` y compruebe `Digitizing Toolbar` ([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#creación-de-datos-de-punto)). ![](/fig/Digitizing_Toolbar.png)
     * Seleccione la capa de puntos “Borno_affected_communities_point” en el panel de capas. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora la capa está en el modo de edición.
     * Buscar una comunidad afectada según la tabla “Nigeria_flood_2022_affacted_population”. Una vez que haya encontrado uno, haga clic en ![](/fig/mActionCapturePoint.png). Haga clic izquierdo en la entidad que desea digitalizar.
     * Al hacer clic, aparecerá una ventana ` Borno_affected_communities_point Feature Attribute`. Aquí puede añadir el nombre de la ubicación.
@@ -258,14 +258,14 @@ align: center
 :::
 
 16. Para tener una idea más detallada de la extensión de la inundación podemos cargar la capa “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp” que muestra la extensión máxima de agua superficial entre el 9 y el 30 de octubre de 2022. Si lo desea también puede cargar “VIIRS_20220901_20220930_PermanentWater_Nigeria.shp”. En esta capa se muestran las entidades de lagos y otras aguas superficiales permanentes.
-Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctamente. Sin embargo, al comprobar la información de las capas, puede ver que las nuevas capas tienen un Sistema de Referencia de Coordenadas (SRC) diferente. Tienen el código EPSG 9707, mientras que nuestro proyecto tiene el 4326 ([video en Wiki](/content/es/Wiki/es_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-layer-data)).
+Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctamente. Sin embargo, al comprobar la información de las capas, puede ver que las nuevas capas tienen un Sistema de Referencia de Coordenadas (SRC) diferente. Tienen el código EPSG 9707, mientras que nuestro proyecto tiene el 4326 ([video en Wiki](/content/es/Wiki/es_qgis_projections_wiki.md#cómo-hacer-para-verificar-y-modificar-el-código-epsgsrc-de-su-proyecto-de-qgis)).
     * Haga clic derecho en la capa de datos y hacer clic en “Propiedades”.
     * Se abrirá la ventana “Propiedades de capa” de la capa de datos. Haga clic en “Información”.
     * En el título “Sistema de referencia de coordenadas” encontrará toda la información sobre el SRC. Los más importantes son:
     - __Nombre:__ Aquí encontrará el código EPSG
     - __Unidades:__ Aquí puede averiguar si es posible utilizar metros con esta capa de datos o latitud y longitud.
 
-17. Esto se convertirá en un problema tan pronto como hagamos algo diferente de solo mostrar las capas. Puesto que debemos manipular las capas en el siguiente paso, necesitamos reproyectarlas primero ([video en Wiki](/content/es/Wiki/es_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)).
+17. Esto se convertirá en un problema tan pronto como hagamos algo diferente de solo mostrar las capas. Puesto que debemos manipular las capas en el siguiente paso, necesitamos reproyectarlas primero ([video en Wiki](/content/es/Wiki/es_qgis_projections_wiki.md#modificación-de-la-proyección-cartográfica-de-una-capa-vector)).
     * Haga clic en la `Vector` pestaña -> `Data Management Tools` -> `Reproject Layer` o buscar la herramienta en `Processing Toolbox `.
     * Como `Input layer` seleccione “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
     * Seleccione como destino CRS/EPSG-Code __4326__.
@@ -274,7 +274,7 @@ Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctament
     * Elimine la capa antigua del panel de capas al hacer clic derecho en la capa -> `Remove layer`.
 
 18. La capa de extensión de la inundación cubre la totalidad de Nigeria. Podemos utilizar la herramienta `Clip` para cortarlo con la forma del estado de Borno ([video en Wiki](/content/es/Wiki/es_qgis_geoprocessing_wiki.md#clip)).
-    * Abra `Processing Toolbox` ([así se hace](/content/es/Wiki/es_qgis_interface_wiki.md#toolbox-toolbars)) y buscar la herramienta `Clip`.
+    * Abra `Processing Toolbox` ([así se hace](/content/es/Wiki/es_qgis_interface_wiki.md#barras-de-herramientas)) y buscar la herramienta `Clip`.
     :::{Note}
     Hay __dos__ versiones de la herramienta `Clip`. Dado que trabajamos con datos vectoriales, asegúrese de utilizar el que se encuentra en "Superposición vectorial".
     :::
