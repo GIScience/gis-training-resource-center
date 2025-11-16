@@ -10,7 +10,7 @@
 
 **Competencias:**
 
-En este capítulo, aprenderá qué son los __datos geográficos__ y comprenderá la diferencia entre __datos vectoriales y ráster__. Además, en este capítulo se explica el __concepto de capa __ del programa de sistema de información geográfica (SIG), que es fundamental para todos los mapas que vaya a crear.
+En este capítulo, aprenderá qué son los __datos geográficos__ y comprenderá la diferencia entre __datos vectoriales y ráster__. Además, en este capítulo se explica el __concepto de capa__ del programa de sistema de información geográfica (SIG), que es fundamental para todos los mapas que vaya a crear.
 
 ## ¿Qué son los datos geoespaciales?
 
@@ -254,7 +254,7 @@ La experiencia práctica es clave para dominar los SIG. Ahora es un buen momento
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept_ex1.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept_ex1.html
 
 __Módulo 2, ejercicio 1: Comprensión de los datos geográficos__
 
