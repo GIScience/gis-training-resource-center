@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,9 +13,9 @@
 __Programa de ejercicios de respuesta a las inundaciones de Larkana:__
 ^^^
 
-Este ejercicio es la cuarta parte del [programa de ejercicios de respuesta a las inundaciones de Larkana](https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_larkana_flood_response.html).
+Este ejercicio es la cuarta parte del [programa de ejercicios de respuesta a las inundaciones de Larkana](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_larkana_flood_response.html).
 
-Puede consultar el ejercicio anterior [aquí](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_ex5.html)
+Puede consultar el ejercicio anterior [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_module_3_ex5.html)
 
 :::
 :::{grid-item-card}
@@ -45,18 +45,18 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki:__
 ^^^
 
-* [Visualización de los datos vectoriales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_visualisation_wiki.html)
-* [Creación de mapas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_map_making_wiki.html)
-* [Concepto de capa](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_layer_concept_wiki.html)
-* [Clasificación de datos geoespaciales: categorizados](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_categorized_wiki.html)
-* [Clasificación de datos geoespaciales: graduado](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_graduated_wiki.html)
+* [Visualización de los datos vectoriales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_visualisation_wiki.html)
+* [Creación de mapas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_map_making_wiki.html)
+* [Concepto de capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html)
+* [Clasificación de datos geoespaciales: categorizados](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_categorized_wiki.html)
+* [Clasificación de datos geoespaciales: graduado](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_graduated_wiki.html)
 
 :::
 ::::
 
 ::::{topic} Contexto
 
-En 2024, las provincias de Punyab, Sind y Baluchistán, en Pakistán, sufrieron inundaciones devastadoras debido a las intensas y prolongadas lluvias. Como consecuencia, la infraestructura crítica, como los centros de salud, se vieron afectadas y el acceso por carretera a la ciudad de Larkana quedó gravemente limitado. Usted ya ha realizado un análisis utilizando datos reales de este desastre natural en el [ejercicio anterior](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_ex5.html). Ahora queremos visualizar nuestros hallazgos en un mapa atractivo, que se pueda imprimir o compartir con las diferentes partes interesadas. El mapa mostrará los centros de salud y los centros hospitalarios específicos, que fueron impactados por las inundaciones. Además, visualizaremos el acceso por carretera a la ciudad de Larkana el 12 de agosto de 2024. Esta información es crucial para evaluar el acceso logístico a la ciudad.
+En 2024, las provincias de Punyab, Sind y Baluchistán, en Pakistán, sufrieron inundaciones devastadoras debido a las intensas y prolongadas lluvias. Como consecuencia, la infraestructura crítica, como los centros de salud, se vieron afectadas y el acceso por carretera a la ciudad de Larkana quedó gravemente limitado. Usted ya ha realizado un análisis utilizando datos reales de este desastre natural en el [ejercicio anterior](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_module_3_ex5.html). Ahora queremos visualizar nuestros hallazgos en un mapa atractivo, que se pueda imprimir o compartir con las diferentes partes interesadas. El mapa mostrará los centros de salud y los centros hospitalarios específicos, que fueron impactados por las inundaciones. Además, visualizaremos el acceso por carretera a la ciudad de Larkana el 12 de agosto de 2024. Esta información es crucial para evaluar el acceso logístico a la ciudad.
 
 El ejercicio se divide en dos partes. En la primera parte, ajustará la Simbolización de las capas para el mapa final. En la segunda parte, usará el compositor de diseño de impresión para crear un mapa terminado, que se pueda imprimir y distribuir.
 
@@ -107,7 +107,7 @@ Mantenga su gestión de datos ordenada, mediante la creación de una estructura 
 
 4. Tómese un momento para familiarizarse con los datos disponibles. Examine la tabla de atributos de las diferentes capas y observe qué información hay disponible y cómo se denominan los atributos.
 
-5. [Añadir un mapa base](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps):
+5. [Añadir un mapa base](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps):
     - Navegar a la barra de menús -> `Layer` -> `Add Layer` -> `Add XYZ-Layer...` y añadir un mapa base OpenStreetMap.
 
 
@@ -121,7 +121,7 @@ En el panel de capas:
 - coloque las capas de carreteras y extensión de inundaciones en el medio
 - y coloque las capas de puntos (centros de salud y carreteras bloqueadas) en la parte superior.
 
-Cada capa tiene su propio [panel de simbología](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) donde puede ajustar la simbología, los colores y las etiquetas de las entidades geográficas de esa capa. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? Piense en qué datos necesitamos y qué datos podemos omitir.
+Cada capa tiene su propio [panel de simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) donde puede ajustar la simbología, los colores y las etiquetas de las entidades geográficas de esa capa. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? Piense en qué datos necesitamos y qué datos podemos omitir.
 Por ejemplo, la capa `Roads_Larkana` contiene demasiadas carreteras para un mapa a escala nacional. Abramos la tabla de atributos y veamos cómo se clasifican las carreteras. Los datos utilizan la clasificación convencional de OpenStreetMap: El tipo de carretera se describe en el atributo `highway`. En nuestro caso, podría ser útil mostrar solo las carreteras primarias y secundarias, por lo tanto, todas las entidades en las que `highway=primary` O `highway=secondary`.
 
 Recorramos las capas una por una y visualicémoslas, de manera significativa.
@@ -243,7 +243,7 @@ Si no puede ver la barra de herramientas, `View` -> `Toolbars` consulte el `Digi
 :::
 ::::
 
-* Ahora puede crear un punto para el aeropuerto y si desea aeropuertos adicionales también ([Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Actualmente la nueva capa __“PAK_airports”__ está vacía. Para añadir entidades, podemos usar `Digitising Toolbar`.
+* Ahora puede crear un punto para el aeropuerto y si desea aeropuertos adicionales también ([Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Actualmente la nueva capa __“PAK_airports”__ está vacía. Para añadir entidades, podemos usar `Digitising Toolbar`.
 
 *  Busque el Aeropuerto de Mohenjo Daro en Google. Una vez que haya encontrado el aeropuerto, haga clic en ![](/fig/mActionCapturePoint.png). Haga clic con el botón izquierdo en la entidad que desea digitalizar.
 
@@ -261,7 +261,7 @@ Si no puede ver la barra de herramientas, `View` -> `Toolbars` consulte el `Digi
 
 Simbolicemos el aeropuerto con un icono de avión, para que podamos identificarlo con rapidez.
 
-* Haga clic con el botón derecho en la capa __"PAK_airports"__ en el `Layer Panel` -> `Properties`. Se abrirá una nueva ventana, con una sección de pestañas vertical, a la izquierda. Navegue a la [ `Symbology`pestaña de ](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel).
+* Haga clic con el botón derecho en la capa __"PAK_airports"__ en el `Layer Panel` -> `Properties`. Se abrirá una nueva ventana, con una sección de pestañas vertical, a la izquierda. Navegue a la [ `Symbology`pestaña de ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel).
 * Haga clic en `Simple Marker`.
 * En `Symbol layer type`, seleccione __`SVG-Marker`__.
 * Desplácese un poco hacia abajo y encontrará un cuadro con todos los símbolos SVG disponibles.
@@ -301,7 +301,7 @@ Creación de una nueva composición de impresión
     - A la izquierda, encontrará una barra de herramientas para añadir y mover elementos en el lienzo de diseño de impresión.
     - A la derecha encontrará una lista de los elementos que agregó al diseño de impresión (aún está vacía). Debajo encontrará una pestaña llamada __`item properties`__. Aquí se modifican los elementos del diseño de impresión (por ejemplo, se puede introducir el texto de un cuadro de texto o cambiar el tipo de letra).
 
-2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_map_design_2.md#adding-a-new-map)
+2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.md#adding-a-new-map)
 
 3. Mueva y posicione el mapa para que el área de interés sea visible a una escala razonable. Para mover el contenido del mapa, utilice la herramienta ![](30.30.2_print_layout_move_content_icon) `Move item content`.
 
