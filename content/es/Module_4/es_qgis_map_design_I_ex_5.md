@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -59,7 +59,7 @@ __Artículos relevantes en Wiki__:
 * [Función de tabla: añadir campo](/content/es/Wiki/es_qgis_table_functions_wiki.md)
 * [Clasificación de datos geoespaciales: categorizados](/content/es/Wiki/es_qgis_categorized_wiki.md)
 * [Clasificación de datos geoespaciales: graduados](/content/es/Wiki/es_qgis_graduated_wiki.md)
-* [Digitalización: datos de punto](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Digitalización: datos de punto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
 
@@ -74,7 +74,7 @@ __Artículos relevantes en Wiki__:
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo hacer capacitaciones?](/content/esTrainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
+- Consulte [¿Cómo hacer capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
 
 ### Impartir la capacitación
 
