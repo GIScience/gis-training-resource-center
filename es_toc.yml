@@ -52,7 +52,7 @@ parts:
         sections: 
           - file: content/es/Module_7/es_qgis_automation_theory.md
           - file: content/es/Module_7/es_qgis_module_7_exercises.md
-  - caption: Ejericios
+  - caption: Ejercicios
     chapters: 
       - file: content/es/Exercise_tracks/es_exercise_tracks_overview.md
         sections:
