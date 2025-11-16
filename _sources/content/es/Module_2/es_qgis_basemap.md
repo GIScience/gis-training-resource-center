@@ -57,8 +57,8 @@ QGIS, como las imágenes satelitales de Bing o Sentinel-2.
 
 ::::{dropdown} Instalación de complementos
 
-Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Plugins` -> `Manage and Install Plugins…` -> `All` ->
-Busque el plugin -> `Install Plugin`
+Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Plugins` -> `Manage and Install Plugins…` -> `All` ->
+Busque el plugin -> `Install Plugin`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -124,7 +124,7 @@ Un mapa base es una capa de mapa fundamental o de fondo que proporciona un conte
 
 :::{dropdown} Respuesta
 - En el panel `Browser`, expandir el grupo de las teselas “*XYZ Tiles*” y seleccionar un servicio como OpenStreetMap.
-- Alternativamente, [instalar el plugin QuickMapServices](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_basemap.html#quickmapservices) y utilizarlo para añadir un mapa.
+- Alternativamente, [instalar el plugin QuickMapServices](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_basemap.html#quickmapservices) y utilizarlo para añadir un mapa.
 :::
 
 3. __¿Qué son los requisitos de atribución y cómo hay que gestionarlos cuando se utilizan mapas base de terceros?__

@@ -151,16 +151,16 @@ Las entidades seleccionadas se resaltan de nuevo en amarillo brillante en su int
  Los operadores geométricos definen las condiciones de la relación entre la capa de origen y la de destino en las que se basará la selección. Hay ocho opciones en total:
 
 
- | Operación | Descripción | Ejemplo |
- |-------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
- | Interseca | Las entidades de la capa de destino se seleccionan si se intersecan con entidades de la capa de origen. | Seleccionar todas las carreteras que cruzan un polígono que representa un parque nacional. |
- | Contiene | Las entidades de la capa de destino se seleccionan si contienen completamente entidades de la capa de origen. | Seleccionar un polígono de país que contenga completamente polígonos más pequeños de ciudades. |
- | No interseca | Las entidades no intersecas son aquellas que no comparten ningún punto o área común. | Seleccionar distritos administrativos que no tienen límites ni zonas comunes. |
- | Igual | Las entidades son iguales si sus geometrías son idénticas. | Seleccionar dos segmentos de línea con exactamente el mismo conjunto de coordenadas. |
- | Toca | Las entidades de la capa de destino se seleccionan si tocan entidades de la capa de origen. | Seleccionar los parques que tocan una carretera específica. |
- | Superpuesta | Las entidades de la capa de destino se seleccionan si comparten algún espacio común con las entidades de la capa de origen. | Seleccionar parcelas que se superpongan con una zona de construcción propuesta. |
- | Dentro de | Las entidades de la capa de destino se seleccionan si están completamente dentro de las entidades de la capa de origen. | Seleccionar polígonos de edificios que se encuentran en su totalidad dentro de un polígono de un límite urbano. |
- | Cruza | Las entidades de la capa de destino se seleccionan si se cruzan con entidades de la capa de origen. | Seleccionar ríos que cruzan una carretera. |
+ | Operación    | Descripción                                                                                                                 | Ejemplo                                                                                                         |
+ |--------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+ | Interseca    | Las entidades de la capa de destino se seleccionan si se intersecan con entidades de la capa de origen.                     | Seleccionar todas las carreteras que cruzan un polígono que representa un parque nacional.                      |
+ | Contiene     | Las entidades de la capa de destino se seleccionan si contienen completamente entidades de la capa de origen.               | Seleccionar un polígono de país que contenga completamente polígonos más pequeños de ciudades.                  |
+ | No interseca | Las entidades no intersecas son aquellas que no comparten ningún punto o área común.                                        | Seleccionar distritos administrativos que no tienen límites ni zonas comunes.                                   |
+ | Igual        | Las entidades son iguales si sus geometrías son idénticas.                                                                  | Seleccionar dos segmentos de línea con exactamente el mismo conjunto de coordenadas.                            |
+ | Toca         | Las entidades de la capa de destino se seleccionan si tocan entidades de la capa de origen.                                 | Seleccionar los parques que tocan una carretera específica.                                                     |
+ | Superpuesta  | Las entidades de la capa de destino se seleccionan si comparten algún espacio común con las entidades de la capa de origen. | Seleccionar parcelas que se superpongan con una zona de construcción propuesta.                                 |
+ | Dentro de    | Las entidades de la capa de destino se seleccionan si están completamente dentro de las entidades de la capa de origen.     | Seleccionar polígonos de edificios que se encuentran en su totalidad dentro de un polígono de un límite urbano. |
+ | Cruza        | Las entidades de la capa de destino se seleccionan si se cruzan con entidades de la capa de origen.                         | Seleccionar ríos que cruzan una carretera.                                                                      |
 
  <!--ADD examples relevant to IM? -->
 

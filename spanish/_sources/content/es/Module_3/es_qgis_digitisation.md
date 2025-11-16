@@ -77,19 +77,19 @@ Barra de herramientas de digitalización en QGIS 3.36.
 :::
 
 :::{dropdown} Barra de herramientas de digitalización
-| Herramienta | Finalidad | Herramienta | Finalidad |
-|---|---|-----|---|
-| ![](/fig/mActionAllEdits.png) | Permite guardar, retroceder o cancelar cambios simultáneamente en todas las capas o en las capas seleccionadas | ![](/fig/mActionToggleEditing.png) | Activar o desactivar el modo de edición en las capas seleccionadas. |
-| ![](/fig/mActionSaveEdits.png) |Guardar cambios   | |
-| ![](/fig/mActionDigitizeWithSegment.png) | Digitalizar usando segmentos rectos | ![](/fig/mActionDigitizeWithCurve.png) | Digitalizar usando líneas curvas |
-| ![](/fig/mActionStreamingDigitize.png) | Activar digitalización a mano alzada|![](/fig/mActionDigitizeShape.png) |Digitalizar polígono de forma regular  |
-| ![](/fig/mActionNewTableRow.png)  | Añadir nuevo registro   | ![](/fig/mActionCapturePoint.png) | Añadir objeto espacial: Capturar punto |
-| ![](/fig/mActionCaptureLine.png) | Añadir objeto espacial: Capturar línea | ![](/fig/mActionCapturePolygon.png) | Añadir objeto espacial: Capturar polígono |
-| ![](/fig/mActionVertexTool.png) | Herramienta Vértice (todas las capas) | ![](/fig/mActionVertexToolActiveLayer.png) | Herramienta Vértice (capa actual) |
-| ![](/fig/checkbox.png) | Establecer si el panel del editor de vértices debe abrirse automáticamente | ![](/fig/mActionMultiEdit.png) | Modificar los atributos de todas las entidades seleccionadas simultáneamente |
-| ![](/fig/mActionDeleteSelectedFeatures.png) | Borrar objetos seleccionados de la capa activa | ![](/fig/mActionEditCut.png) | Cortar entidades de la capa activa |
-| ![](/fig/mActionCopySelected.png) | Copiar las entidades seleccionadas de la capa activa | ![](/fig/mActionEditPaste.png) | Pegar las entidades en la capa activa |
-| ![](/fig/mActionUndo.png) | Deshacer cambios en la capa activa | ![](/fig/mActionRedo.png) | Rehacer cambios en la capa activa |
+| Herramienta                                 | Finalidad                                                                                                      | Herramienta                                | Finalidad                                                                    |
+|---------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------|
+| ![](/fig/mActionAllEdits.png)               | Permite guardar, retroceder o cancelar cambios simultáneamente en todas las capas o en las capas seleccionadas | ![](/fig/mActionToggleEditing.png)         | Activar o desactivar el modo de edición en las capas seleccionadas.          |
+| ![](/fig/mActionSaveEdits.png)              | Guardar cambios                                                                                                |                                            |
+| ![](/fig/mActionDigitizeWithSegment.png)    | Digitalizar usando segmentos rectos                                                                            | ![](/fig/mActionDigitizeWithCurve.png)     | Digitalizar usando líneas curvas                                             |
+| ![](/fig/mActionStreamingDigitize.png)      | Activar digitalización a mano alzada                                                                           | ![](/fig/mActionDigitizeShape.png)         | Digitalizar polígono de forma regular                                        |
+| ![](/fig/mActionNewTableRow.png)            | Añadir nuevo registro                                                                                          | ![](/fig/mActionCapturePoint.png)          | Añadir objeto espacial: Capturar punto                                       |
+| ![](/fig/mActionCaptureLine.png)            | Añadir objeto espacial: Capturar línea                                                                         | ![](/fig/mActionCapturePolygon.png)        | Añadir objeto espacial: Capturar polígono                                    |
+| ![](/fig/mActionVertexTool.png)             | Herramienta Vértice (todas las capas)                                                                          | ![](/fig/mActionVertexToolActiveLayer.png) | Herramienta Vértice (capa actual)                                            |
+| ![](/fig/checkbox.png)                      | Establecer si el panel del editor de vértices debe abrirse automáticamente                                     | ![](/fig/mActionMultiEdit.png)             | Modificar los atributos de todas las entidades seleccionadas simultáneamente |
+| ![](/fig/mActionDeleteSelectedFeatures.png) | Borrar objetos seleccionados de la capa activa                                                                 | ![](/fig/mActionEditCut.png)               | Cortar entidades de la capa activa                                           |
+| ![](/fig/mActionCopySelected.png)           | Copiar las entidades seleccionadas de la capa activa                                                           | ![](/fig/mActionEditPaste.png)             | Pegar las entidades en la capa activa                                        |
+| ![](/fig/mActionUndo.png)                   | Deshacer cambios en la capa activa                                                                             | ![](/fig/mActionRedo.png)                  | Rehacer cambios en la capa activa                                            |
 
 :::
 
@@ -97,20 +97,20 @@ Para procedimientos de digitalización más complejos, utilizará la barra de he
 
 :::{dropdown} Barra de herramientas de digitalización avanzada
 
-| Herramienta | Propósito | Herramienta | Propósito |
-|---|---|-----|---|
-| ![](/fig/cad.png) | Activar herramientas avanzadas de digitalización |
-| ![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png) | Mover entidades | ![Texto alternativo](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png) | Copiar y mover entidades |
-| ![Texto alternativo](/fig/mActionRotateFeature.png) | Girar entidades | ![Texto alternativo](/fig/mActionSimplify.png) | Simplificar entidad |
-| ![Texto alternativo](/fig/mActionScaleFeature.png) | Escalar entidad |
-| ![Texto alternativo](/fig/mActionAddRing.png) | Añadir anillo | ![Texto alternativo](/fig/mActionAddPart.png) | Añadir parte |
-| ![Texto alternativo](/fig/mActionFillRing.png) | Rellenar anillo | ![Texto alternativo](/fig/mActionReverseLine.png) | Intercambiar dirección |
-| ![Texto alternativo](/fig/mActionDeleteRing.png) | Eliminar anillo | ![Texto alternativo](/fig/mActionDeletePart.png) | Eliminar parte |
-| ![Texto alternativo](/fig/mActionOffsetCurve.png) | Desplazar curva | ![Texto alternativo](/fig/mActionReshape.png) | Cambiar la forma de entidades |
-| ![Texto alternativo](/fig/mActionSplitParts.png) | Separar partes | ![Texto alternativo](/fig/mActionSplitFeatures.png) | Separar entidades |
-| ![Texto alternativo](/fig/mActionMergeFeatureAttributes.png) | Unir atributos de entidades seleccionadas | ![Texto alternativo](/fig/mActionMergeFeatures.png) | Unir entidades seleccionadas |
-| ![Texto alternativo](/fig/mActionRotatePointSymbols.png) | Rotar símbolos de punto | ![Texto alternativo](/fig/mActionOffsetPointSymbols.png) | Desplazar símbolos de punto |
-| ![Texto alternativo](/fig/mActionTrimExtend.png) | Recortar o ampliar entidades |
+| Herramienta                                                                                                 | Propósito                                        | Herramienta                                                                                                                                | Propósito                     |
+|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| ![](/fig/cad.png)                                                                                           | Activar herramientas avanzadas de digitalización |
+| ![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png) | Mover entidades                                  | ![Texto alternativo](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png) | Copiar y mover entidades      |
+| ![Texto alternativo](/fig/mActionRotateFeature.png)                                                         | Girar entidades                                  | ![Texto alternativo](/fig/mActionSimplify.png)                                                                                             | Simplificar entidad           |
+| ![Texto alternativo](/fig/mActionScaleFeature.png)                                                          | Escalar entidad                                  |
+| ![Texto alternativo](/fig/mActionAddRing.png)                                                               | Añadir anillo                                    | ![Texto alternativo](/fig/mActionAddPart.png)                                                                                              | Añadir parte                  |
+| ![Texto alternativo](/fig/mActionFillRing.png)                                                              | Rellenar anillo                                  | ![Texto alternativo](/fig/mActionReverseLine.png)                                                                                          | Intercambiar dirección        |
+| ![Texto alternativo](/fig/mActionDeleteRing.png)                                                            | Eliminar anillo                                  | ![Texto alternativo](/fig/mActionDeletePart.png)                                                                                           | Eliminar parte                |
+| ![Texto alternativo](/fig/mActionOffsetCurve.png)                                                           | Desplazar curva                                  | ![Texto alternativo](/fig/mActionReshape.png)                                                                                              | Cambiar la forma de entidades |
+| ![Texto alternativo](/fig/mActionSplitParts.png)                                                            | Separar partes                                   | ![Texto alternativo](/fig/mActionSplitFeatures.png)                                                                                        | Separar entidades             |
+| ![Texto alternativo](/fig/mActionMergeFeatureAttributes.png)                                                | Unir atributos de entidades seleccionadas        | ![Texto alternativo](/fig/mActionMergeFeatures.png)                                                                                        | Unir entidades seleccionadas  |
+| ![Texto alternativo](/fig/mActionRotatePointSymbols.png)                                                    | Rotar símbolos de punto                          | ![Texto alternativo](/fig/mActionOffsetPointSymbols.png)                                                                                   | Desplazar símbolos de punto   |
+| ![Texto alternativo](/fig/mActionTrimExtend.png)                                                            | Recortar o ampliar entidades                     |
 :::
 
 
@@ -318,7 +318,7 @@ Tenga en cuenta que esto solo es posible __antes__ de guardar los cambios.
 
 1.	Seleccione la capa que desea modificar.
 2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing`.
-3.	Haga clic en ![](/fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_queries_wiki.html#manual-selection)).
+3.	Haga clic en ![](/fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#manual-selection)).
 4.	Una vez seleccionadas las entidades, haga clic en ![](/fig/mActionDeleteSelectedFeatures.png) para eliminarlas.
 5.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
 6.	Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
@@ -386,7 +386,7 @@ Puede abrir la tabla de atributos de la capa seleccionada pulsando <kbd>F6</kbd>
 :::
 ::::
 
-1. Abra la tabla de [atributos](/content/Module_2/en_qgis_attribute_table.md)
+1. Abra la tabla de [atributos](/content/es/Module_2/es_qgis_attribute_table.md)
 2. Haga clic en ![](/fig/mActionToggleEditing.png) para activar el modo de edición.
 3. Seleccione el campo que desea editar.
 4. Introduzca el valor corregido.

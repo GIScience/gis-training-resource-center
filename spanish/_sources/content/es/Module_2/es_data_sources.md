@@ -215,7 +215,7 @@ Ejecutar el plugin QuickOSM.
 Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic
 en el icono ![](/fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto
 `And` o `Or`. De no tener certeza, revise la página de [consultas no espaciales](/content/es/Wiki/es_qgis_non_spatial_queries_wiki)
-en la wiki. Hay un ejemplo de esto en el [ejercicio de OSM](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex2.html#task-quickosm) del módulo 2
+en la wiki. Hay un ejemplo de esto en el [ejercicio de OSM](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html#task-quickosm) del módulo 2.
 
 :::
 
