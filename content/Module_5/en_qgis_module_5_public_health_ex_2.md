@@ -72,6 +72,8 @@ Once you've done so, import it to your QGIS project and calculate the population
 
 ### Task 3: Import and Explore the Measles Cases List
 
+% Revise this step.
+
 5. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the measles cases dataset as a __delimited text layer__ with no geometry.
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open.
     - To the right of file name, click on the ![](/fig/Three_points.png) three points and navigate to the file in the `/data/input/`-folder. Click `Open`.
@@ -82,7 +84,7 @@ Once you've done so, import it to your QGIS project and calculate the population
 :::{note}
 As with other data formats, you can drag-and-drop csv-files onto your map canvas and it will be loaded into your project. __However__, this will lead to mistakes in the data format for each column as it assumes that every column contains text (string) data. You will be unable to perform mathematical or statistical operations with these columns. 
 
-Make sure to always load csv data via the data source manager and not via drag-and-drop
+Make sure to always load csv data via the data source manager and not via the drag-and-drop function.
 
 :::
 
@@ -164,3 +166,5 @@ Our district layer now includes both the population and measle cases. With this 
 > Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained
 
 % SWITCH TO EXERCISE IN MODULE 4
+
+

@@ -1,4 +1,4 @@
-# Exercise 1: Creating an overview map of the health system
+# Exercise 1: Creating an overview map of the health system and vaccination coverage
 
 % MISSING:  - MAKE ENRICHED DATASET PERMANENT
 %           - BASEMAP
@@ -25,6 +25,7 @@ Over the past month, health authorities in Chad have reported a surge in measles
 | `tcd_admbnda_adm2_20250212_AB.shp` (Polygons) | Chad Administrative Boundaries (level 2: province) | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/cod-ab-tcd)
 | `hotosm_tcd_health_facilities_points.csv` (Points) | Chad Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team | [HOTOSM](https://data.humdata.org/dataset/hotosm_tcd_health_facilities) | 
 | `Healthsite_capacities.csv` | Healthsite Capacities | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
+| `measles_vaccination_coverage.csv` | Measles vaccination coverage | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
 
 ---
 
@@ -69,12 +70,17 @@ Imported files are not saved within the QGIS project. If you move or delete the 
     - A new window will open. This is the attribute table. It shows the vector layer in a tabular format, allowing you to see the attribute values, sort the table, and edit the values using the tools in the top bar. 
     - Take a look at the different columns in the attribute table. What do they show?
     - Try sorting the attribute table by clicking on the ![](/fig/sort.png)
-    - Open the attribute table for the layer `hotosm_tcd_health_facilities_points` and familiarise yourself with the data. 
+    - Open the attribute tables for the layers `hotosm_tcd_health_facilities_points` and `tcd_admbnda_adm2_20250212_AB.shp` familiarise yourself with the data. 
 
+### Task 4: Joining Vaccination Coverage Data with administrative boundaries
+
+In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
+
+% ADD ADM2 PCODE TO DATASET
 
 ### Task 4: Enriching the Healthsites dataset
 
-In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `Healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. However, the dataset does not contain any geographic coordinates, so QGIS can't 
+In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `Healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. 
 
 :::{admonition} Gathering the information on capacities
 In a realistic scenario, these data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
@@ -146,8 +152,6 @@ When performing joins, pay attention to such inconsistencies.
     - Next, click on `Classify`. 
     - If you want, you can adjust the symbology for the classes by double clicking on one. 
     - Click `Apply`, then close the properties window. 
-
-> Great, now 
 
 % Optionally, add the osm roads dataset here. 
 
