@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Creating a situation map &#8212; GIS Resource Training Center</title>
+    <title>Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS &#8212; GIS Resource Training Center</title>
   
   
   
@@ -559,7 +559,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -570,11 +572,27 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Creating a situation map</h1>
+    <h1>Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-visualise-the-health-facilities-capacities">Task 1: Visualise the Health Facilities Capacities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-prepare-the-measles-incidence-layer">Task 2: Prepare the Measles Incidence Layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-a-map-in-the-print-layout-composer">Task 3: Create a Map in the Print Layout Composer</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -584,8 +602,103 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="creating-a-situation-map">
-<h1>Creating a situation map<a class="headerlink" href="#creating-a-situation-map" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-3-visualising-health-infrastructure-population-and-measles-incidence-in-qgis">
+<h1>Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS<a class="headerlink" href="#exercise-3-visualising-health-infrastructure-population-and-measles-incidence-in-qgis" title="Link to this heading">#</a></h1>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
+<p>Now that you have prepared and enriched your datasets in Exercises 1 and 2, it is time to create clear, visually compelling maps for decision-makers.
+These maps will help the Ministry of Health and partners understand:</p>
+<p>Which health facilities have cold-chain capacity</p>
+<p>Where population is concentrated</p>
+<p>Which districts have the highest measles incidence rate</p>
+<p>In this exercise, you will create two publication-ready maps using the QGIS Print Layout Composer.</p>
+</section>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Link to this heading">#</a></h2>
+<p>By the end of this exercise, you will be able to:</p>
+<ul class="simple">
+<li><p>Configure map symbology for clear visualisation</p></li>
+<li><p>Create two separate map layouts using the Print Layout</p></li>
+<li><p>Add essential map elements (title, legend, scale bar, north arrow, logos)</p></li>
+<li><p>Export maps as high-quality PDF or PNG outputs</p></li>
+</ul>
+</section>
+<section id="available-data">
+<h2>Available Data<a class="headerlink" href="#available-data" title="Link to this heading">#</a></h2>
+<p>From the previous exercises:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dataset</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code></p></td>
+<td><p>Health facilities enriched with cold-chain and capacity info</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB</span></code> (adm2_pop / adm2_population_incidence)</p></td>
+<td><p>Adm2 boundaries enriched with population &amp; measles incidence</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span> <span class="pre">basemap</span> <span class="pre">(XYZ</span> <span class="pre">tiles)</span></code></p></td>
+<td><p>Background context</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm1_20250212_AB</span></code></p></td>
+<td><p>Administrative reference boundaries</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="tasks">
+<h2>Tasks<a class="headerlink" href="#tasks" title="Link to this heading">#</a></h2>
+<section id="task-1-visualise-the-health-facilities-capacities">
+<h3>Task 1: Visualise the Health Facilities Capacities<a class="headerlink" href="#task-1-visualise-the-health-facilities-capacities" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>In the <em>Layers Panel</em>, <kbd>right-click</kbd> on <code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code> → <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
+<li><p>Navigate to the <strong>Symbology</strong> tab.</p></li>
+<li><p>Change the style from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
+<li><p>Under <strong>Value</strong>, select <code class="docutils literal notranslate"><span class="pre">cold_chain</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
+<li><p>Adjust the symbols (e.g., blue for “yes”, grey for “no”).</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
+</ol>
+</section>
+<section id="task-2-prepare-the-measles-incidence-layer">
+<h3>Task 2: Prepare the Measles Incidence Layer<a class="headerlink" href="#task-2-prepare-the-measles-incidence-layer" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">adm2_incidence</span></code> layer → <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
+<li><p>Open the <strong>Symbology</strong> tab.</p></li>
+<li><p>Set:</p>
+<ul class="simple">
+<li><p><strong>Style:</strong> Graduated</p></li>
+<li><p><strong>Column:</strong> <code class="docutils literal notranslate"><span class="pre">incidence_rate</span></code></p></li>
+<li><p><strong>Mode:</strong> Quantile or Natural Breaks</p></li>
+</ul>
+</li>
+<li><p>Choose a sequential or red–yellow colour ramp.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Classify</span></code> → <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
+</ol>
+</section>
+<section id="task-3-create-a-map-in-the-print-layout-composer">
+<h3>Task 3: Create a Map in the Print Layout Composer<a class="headerlink" href="#task-3-create-a-map-in-the-print-layout-composer" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>First, we need to create a new print layout:</p>
+<ul class="simple">
+<li><p>Top menu: <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Print</span> <span class="pre">Layout…</span></code></p></li>
+<li><p>Name it: <strong>Health_Facilities_Capacity_Map</strong></p></li>
+<li><p>A new window will open, this is the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html">print layout composer</a>. Take the time to  <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html">understand the interface and the different tools</a>.</p></li>
+</ul>
+</li>
+<li><p>Adding a new map frame:</p>
+<ul class="simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code> <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> from the toolbar on the left.</p></li>
+<li><p>Draw a rectangle on the blank page canvas.</p></li>
+<li><p>Adjust the extent (pan and zoom) using the <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">item</span> <span class="pre">content</span></code> <img alt="" src="../../_images/30.30.2_print_layout_move_content_icon.png" />.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -624,6 +737,29 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives">Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-visualise-the-health-facilities-capacities">Task 1: Visualise the Health Facilities Capacities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-prepare-the-measles-incidence-layer">Task 2: Prepare the Measles Incidence Layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-a-map-in-the-print-layout-composer">Task 3: Create a Map in the Print Layout Composer</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

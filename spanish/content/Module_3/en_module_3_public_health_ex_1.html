@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Exercise 1: Creating an overview map of the health system &#8212; GIS Resource Training Center</title>
+    <title>Exercise 1: Creating an overview map of the health system and vaccination coverage &#8212; GIS Resource Training Center</title>
   
   
   
@@ -501,7 +501,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Exercise 1: Creating an overview map of the health system</h1>
+    <h1>Exercise 1: Creating an overview map of the health system and vaccination coverage</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -517,6 +517,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-the-layers-panel-and-the-layer-concept">Task 3: The layers panel and the layer concept</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries">Task 4: Joining Vaccination Coverage Data with administrative boundaries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-enriching-the-healthsites-dataset">Task 4: Enriching the Healthsites dataset</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-cleaning-the-healthsite-data">Task 5: Cleaning the Healthsite Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-classifying-the-healthsites">Task 6: Classifying the Healthsites</a></li>
@@ -534,8 +535,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="exercise-1-creating-an-overview-map-of-the-health-system">
-<h1>Exercise 1: Creating an overview map of the health system<a class="headerlink" href="#exercise-1-creating-an-overview-map-of-the-health-system" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="exercise-1-creating-an-overview-map-of-the-health-system-and-vaccination-coverage">
+<h1>Exercise 1: Creating an overview map of the health system and vaccination coverage<a class="headerlink" href="#exercise-1-creating-an-overview-map-of-the-health-system-and-vaccination-coverage" title="Link to this heading">#</a></h1>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 <p>Over the past month, health authorities in Chad have reported a surge in measles cases, particularly in Mandoul, Mayo-Kebbi Est, and Logone Oriental regions. The surveillance unit has provided line-list data and existing health facility data. Your first task is to create a base map showing health facility distribution and classify them by service capacity to understand the available response infrastructure.</p>
@@ -573,6 +574,11 @@ document.write(`
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code></p></td>
 <td class="text-left"><p>Healthsite Capacities</p></td>
+<td class="text-left"><p>HeiGIT</p></td>
+<td class="text-left"><p>This is a fictional dataset generated for the purpose of this exercise.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">measles_vaccination_coverage.csv</span></code></p></td>
+<td class="text-left"><p>Measles vaccination coverage</p></td>
 <td class="text-left"><p>HeiGIT</p></td>
 <td class="text-left"><p>This is a fictional dataset generated for the purpose of this exercise.</p></td>
 </tr>
@@ -642,14 +648,18 @@ document.write(`
 <li><p>A new window will open. This is the attribute table. It shows the vector layer in a tabular format, allowing you to see the attribute values, sort the table, and edit the values using the tools in the top bar.</p></li>
 <li><p>Take a look at the different columns in the attribute table. What do they show?</p></li>
 <li><p>Try sorting the attribute table by clicking on the <img alt="" src="../../_images/sort.png" /></p></li>
-<li><p>Open the attribute table for the layer <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points</span></code> and familiarise yourself with the data.</p></li>
+<li><p>Open the attribute tables for the layers <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points</span></code> and <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code> familiarise yourself with the data.</p></li>
 </ul>
 </li>
 </ol>
 </section>
+<section id="task-4-joining-vaccination-coverage-data-with-administrative-boundaries">
+<h3>Task 4: Joining Vaccination Coverage Data with administrative boundaries<a class="headerlink" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries" title="Link to this heading">#</a></h3>
+<p>In our <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder, we can find a csv file called <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code>. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (<code class="docutils literal notranslate"><span class="pre">amd2_name</span></code>) and the adm2 pcode. With this information, we can perform a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">non-spatial join</a> in order to add the vaccination coverage data to our district boundaries layer (adm2).</p>
+</section>
 <section id="task-4-enriching-the-healthsites-dataset">
 <h3>Task 4: Enriching the Healthsites dataset<a class="headerlink" href="#task-4-enriching-the-healthsites-dataset" title="Link to this heading">#</a></h3>
-<p>In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer <code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code> contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. However, the dataset does not contain any geographic coordinates, so QGIS can’t</p>
+<p>In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer <code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code> contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign.</p>
 <div class="admonition-gathering-the-information-on-capacities admonition">
 <p class="admonition-title">Gathering the information on capacities</p>
 <p>In a realistic scenario, these data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
@@ -752,9 +762,6 @@ When performing joins, pay attention to such inconsistencies.</p>
 </figure>
 </li>
 </ol>
-<blockquote>
-<div><p>Great, now</p>
-</div></blockquote>
 </section>
 </section>
 <section id="task-7-adding-the-road-networks">
@@ -825,6 +832,7 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-the-layers-panel-and-the-layer-concept">Task 3: The layers panel and the layer concept</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries">Task 4: Joining Vaccination Coverage Data with administrative boundaries</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-enriching-the-healthsites-dataset">Task 4: Enriching the Healthsites dataset</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-cleaning-the-healthsite-data">Task 5: Cleaning the Healthsite Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-classifying-the-healthsites">Task 6: Classifying the Healthsites</a></li>
