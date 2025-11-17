@@ -17,8 +17,8 @@ align: center
 
 QGIS ofrece varias formas de clasificar los datos geoespaciales:
 
-- [Clasificación por símbolo único](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_single_symbol_wiki.html)
-- [Clasificación por categorías](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_categorised_wiki.html)
-- [Clasificación graduada](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_graduated_wiki.html)
+- [Clasificación por símbolo único](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_single_symbol_wiki.html)
+- [Clasificación por categorías](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_categorised_wiki.html)
+- [Clasificación graduada](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_graduated_wiki.html)
 
 

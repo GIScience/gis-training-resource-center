@@ -30,7 +30,7 @@ No utilice espacios ` ` en el nombre; utilice siempre guiones bajos `_`.
 
 
 
-4. Compruebe el código del sistema de referencia de coordenadas (SRC)/EPSG del proyecto con el SRC/EPSG que desea utilizar. Para más información, consulte el artículo de la Wiki sobre [Proyección cartográfica](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
+4. Compruebe el código del sistema de referencia de coordenadas (SRC)/EPSG del proyecto con el SRC/EPSG que desea utilizar. Para más información, consulte el artículo de la Wiki sobre [Proyección cartográfica](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
 
 ### Verifique y cambie el SRC/EPSG.
 

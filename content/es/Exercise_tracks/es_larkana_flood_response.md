@@ -13,7 +13,7 @@ Debido a un brote de cólera en Khyber Pakhtunkhwa, la Media Luna Roja de Pakist
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex3.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex3.html
 __Módulo 2, ejercicio 3: Fuentes de datos__
 ^^^
 
@@ -23,7 +23,7 @@ __Módulo 2, ejercicio 3: Fuentes de datos__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex4.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html
 __Módulo 2, ejercicio 4: Exportación de datos de OSM__
 ^^^
 - Exporte datos de OSM utilizando la herramienta de exportación HOT
@@ -33,7 +33,7 @@ __Módulo 2, ejercicio 4: Exportación de datos de OSM__
 
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_ex5.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_module_3_ex5.html
 __Módulo 3, ejercicio 5: Respuesta a la inundación de Larkana__
 ^^^
 
@@ -48,7 +48,7 @@ __Módulo 3, ejercicio 5: Respuesta a la inundación de Larkana__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_map_design_I_ex2.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_I_ex2.html
 __Módulo 4, ejercicio 2: Creación de un mapa de situación de inundación de Larkana, Pakistán__
 ^^^
 
@@ -62,7 +62,7 @@ __Módulo 4, ejercicio 2: Creación de un mapa de situación de inundación de L
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_5/es_qgis_module_5_ex4.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_module_5_ex4.html
 __Módulo 5, ejercicio 3: Seguridad en Peshwar, Pakistán__
 
 - Use el complemento QuickMapServices

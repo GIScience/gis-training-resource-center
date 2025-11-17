@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,12 +44,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
+* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
 * [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
 * [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_automation_wiki.html)
+* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automation_wiki.html)
 
 :::
 
@@ -75,7 +75,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -160,7 +160,7 @@ Deberá crear manualmente una zona de amortiguación para la trayectoria del cic
 
 2. **Guarde el proyecto** en la carpeta "proyecto". Para ello, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Asigne el nombre “Cyclon_Harald_Exposure”.
 
-3. **Cargue el GeoJOSN** archivo "example_Harald_2025_Track.geojson" en su proyecto arrastrando y soltando ([Video de Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
+3. **Cargue el GeoJOSN** archivo "example_Harald_2025_Track.geojson" en su proyecto arrastrando y soltando ([Video de Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyectar la trayectoria del ciclón** para usar metros en lugar de grados (importante para una amortiguación precisa):

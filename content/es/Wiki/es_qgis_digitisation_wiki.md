@@ -29,7 +29,7 @@ width: 550 px
 5. `Geometry type`: Seleccione el tipo de geometría que desea digitalizar: puntos, líneas o polígonos.
 ::::{margin}
 :::{tip}
-Si planea realizar un cálculo basado en la distancia con el nuevo conjunto de datos, asegúrese de usar un SRC __métrico__. Las unidades de medida de la capa se expresarán en metros y no en grados (véase [Sistemas de referencia](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_projections.html#metric-and-geographic-coordinate-reference-systems) de coordenadas métricas y geográficas).
+Si planea realizar un cálculo basado en la distancia con el nuevo conjunto de datos, asegúrese de usar un SRC __métrico__. Las unidades de medida de la capa se expresarán en metros y no en grados (véase [Sistemas de referencia](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html#metric-and-geographic-coordinate-reference-systems) de coordenadas métricas y geográficas).
 :::
 ::::
 6. Seleccione el CRS (sistema de referencia de coordenadas) que desea utilizar para la nueva capa. De manera predeterminada, se establece en el proyecto SRC. Si desea cambiar el SRC haga clic en ![](/fig/mIconProjectionEnabled.png).

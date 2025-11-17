@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -51,10 +51,10 @@ __Artículos relevantes en Wiki:__
 ^^^
 
 * [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Unir atributos por ubicación (resumen](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Funciones de la tabla](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
+* [Unir atributos por ubicación (resumen](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Funciones de la tabla](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
 
 :::
 
@@ -261,9 +261,9 @@ __Propósito:__ En este paso, todos los datos necesarios se cargarán en un proy
 
 __Herramienta:__ No se necesitan herramientas específicas, solo QGIS.
 
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
 2. Una vez creado el proyecto, guárdelo en la carpeta que creó en el paso 1 (por ejemplo, 2022_05). Para ello, haga clic en `Project` -> `Save as` y vaya hasta la carpeta. Asigne al proyecto el mismo nombre que la carpeta que ha creado (por ejemplo, 2022_05). A continuación, haga clic en `Save`
-3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop). Haga clic en `Project` -> `Save`
+3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop). Haga clic en `Project` -> `Save`
   * Desde la carpeta creada en el paso 1
     * ML1
   * En la carpeta `Fixes_data`:
@@ -277,7 +277,7 @@ __Resultado:__ Proyecto QGIS con todos los datos necesarios listos para ser anal
 __Propósito:__ El objetivo es recibir capas de polígonos que compartan tanto los bordes como los atributos de ambas capas de entrada.
 
 
-__Herramienta:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
+__Herramienta:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
 
 
 ::::::{list-table}
@@ -286,7 +286,7 @@ __Herramienta:__ [`Intersection`](https://giscience.github.io/gis-training-resou
 
 * - Instrucciones
   - Captura de pantalla de la ventana Intersección
-* - 1. Haga clic en `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
+* - 1. Haga clic en `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
     2. `Input Layer`: ML 1
     3. `Overlay layer`: district_pop_sum
     4. En `Intersection` haga clic en los tres puntos ![](/fig/Three_points.png)-> `Save to File` y vaya hasta su carpeta de seguimiento [Año_Mes]. Asigne a la salida el nombre "ML1_Intersección" y haga clic en `Save`
@@ -316,7 +316,7 @@ La capa resultante puede tener más filas que las capas originales.
 __Propósito:__ Aquí calculamos la población en cada polígono de la capa de intersección del paso 4.
 
 
-__Herramienta:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
+__Herramienta:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
 
 ::::::{list-table}
 :header-rows: 1
@@ -324,7 +324,7 @@ __Herramienta:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-r
 
 * - Instrucciones
   - Captura de pantalla de la ventana de estadísticas zonales
-* - 1. En `Toolbox` -> Buscar [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
+* - 1. En `Toolbox` -> Buscar [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
     * Consejo: Si la página `Toolbox` no está abierta, haga clic en `Processing`-> `Toolbox`
     2. `Input Layer`: "ML1_Intersection"
     3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
@@ -351,7 +351,7 @@ __Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de p
 ### Paso 6: Ponderación de la población en función de la fase IPC
 
 
-__Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](https://giscience.github.io/gis-training-resource-center/content/es/GIS_AA/es_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
+__Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
 
 :::{Note}
 El Índice IPC trata a los distritos de baja población igual que a los de alta población, garantizando que los distritos pequeños con alta inseguridad alimentaria no estén infrarrepresentados.
@@ -375,10 +375,10 @@ Donde las ponderaciones se definen como:
 
 El índice IPC trata a los distritos con poca población de la misma manera que a los distritos con alta población. No se produce una infrarrepresentación de la alta inseguridad alimentaria de los distritos pequeños.
 :::
-__Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
+__Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
 
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" -> `Open Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" -> `Open Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Create new field`
 3. `Output field name`: Nombre la nueva columna “pop_suma_ponderada”
 4. `Result field type`: Número decimal (real)
@@ -399,12 +399,12 @@ END
 
 ## Paso 7: Cálculo de la proporción de población por polígono de intersección
 
-__Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](/content/es/GIS_AA/es_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
+__Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
 
 
-__Herramienta:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+__Herramienta:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" -> `Attribute Table` -> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" -> `Attribute Table` -> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Create new field`
 3. `Output field name`: Nombre la nueva columna “Index_per_IPCPolygon_ML1”
 4. `Result field type`: Número decimal (real)
@@ -471,9 +471,9 @@ __Resultado:__ Como resultado, su capa "ML1_IPC_Index" debería tener la columna
 
 __Propósito:__ El objetivo de este paso es obtener una visión general rápida de la posible activación del desencadenante sin tener que revisar los datos reales. En su lugar, tendremos una columna binaria con valores trigger = sí o trigger=no.
 
-__Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
+__Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
 
-1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" -> `Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" -> `Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Create new field`
 3. `Output field name`: Nombre la nueva columna "Activación_desencadenante".
 4. `Result field type`: Texto (cadena).
@@ -517,7 +517,7 @@ align: center
 
 __Propósito:__ Definición de cómo se representan visualmente las entidades en el mapa.
 
-__Herramienta:__ [Simbología](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#symbology-for-vector-data)
+__Herramienta:__ [Simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#symbology-for-vector-data)
 
 __Activación del desencadenante__
 
@@ -594,7 +594,7 @@ Recuerde el [concepto de capa](es/Module_2/es_qgis_geodata_concept.md) y asegúr
 
 __Propósito:__ Visualización de las características del mapa en un esquema imprimible.
 
-__Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_map_design_2.html)
+__Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html)
 
 
 1. Si no lo ha hecho antes, elimine todas las capas excepto __Trigger_activation__, __Som_admin1_regions_UNDP__ y __OpenStreetMap__.
@@ -615,7 +615,7 @@ __Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-trainin
 Asegúrese de editar la información del mapa en la plantilla, por ejemplo, la fecha actual. Asegúrese también de comprobar los elementos de la leyenda: Elimine los elementos innecesarios y, con el tiempo, cambie los nombres por descripciones con sentido.
 :::
 
-También puede adaptar la plantilla a sus necesidades y preferencias. Puede encontrar ayuda [aquí](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_map_design_2.html).
+También puede adaptar la plantilla a sus necesidades y preferencias. Puede encontrar ayuda [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html).
 
 :::{Attention}
 Asegúrese de editar la información del mapa en la plantilla, por ejemplo, la fecha actual. Asegúrese también de comprobar los elementos de la leyenda: Elimine los elementos innecesarios y, con el tiempo, cambie los nombres por descripciones con sentido.
@@ -627,7 +627,7 @@ Asegúrese de editar la información del mapa en la plantilla, por ejemplo, la f
 __Propósito:__ Exporte el mapa diseñado y finalizado para imprimirlo en formato PDF o en el formato que prefiera.
 
 
-__Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_map_design_2.html)
+__Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html)
 
 Cuando haya terminado el diseño de su mapa, puede exportarlo como archivo PDF o de imagen en diferentes tipos de datos.
 

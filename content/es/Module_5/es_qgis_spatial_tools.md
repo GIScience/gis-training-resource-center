@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@
 
 El procesamiento espacial utiliza la información espacial para extraer un nuevo significado de los datos de SIG. Para ello, utiliza la __relación espacial__ de diferentes capas o entidades. Las relaciones espaciales describen cómo se sitúan las cosas entre sí. En el ámbito humanitario, esto ayuda a responder a preguntas críticas como "¿Qué comunidades están cerca de una fuente de agua?" o "¿Qué zonas están aisladas de los servicios de salud?". O puede que queramos identificar los mejores lugares para distribuir la ayuda, evaluar las zonas de riesgo de inundaciones o planificar las rutas de evacuación.
 
-Ya hemos encontrado relaciones espaciales en el módulo 3 en el subcapítulo sobre __[operadores geométricos](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_data_queries.html#geometric-operators)__, también denominados predicados geométricos en QGIS.
+Ya hemos encontrado relaciones espaciales en el módulo 3 en el subcapítulo sobre __[operadores geométricos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_data_queries.html#geometric-operators)__, también denominados predicados geométricos en QGIS.
 En el cuadro siguiente se describen las relaciones espaciales y se dan ejemplos de cuándo estas relaciones espaciales son relevantes en la ayuda humanitaria.
 
 ## Relaciones espaciales
@@ -174,7 +174,7 @@ La herramienta "Unir atributos por ubicación" de QGIS 3.36.
 
 1. Descargue los conjuntos de datos necesarios de HDX
     - [nigeria-healthsites-shp](https://data.humdata.org/dataset/nigeria-healthsites)
-    - [nga_adm_osgof_20190417.zip](https://giscience.github.io/gis-training-resource-center/content/es/Module_5/es_qgis_spatial_tools.html)
+    - [nga_adm_osgof_20190417.zip](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_spatial_tools.html)
 2. Descomprima los archivos, cree un nuevo proyecto QGIS y cargue los archivos en el proyecto QGIS.
 3. Busque la herramienta __"Unir atributos por ubicación"__ en la caja de herramientas de Procesos y <kbd>haga doble clic</kbd> sobre ella. Se abrirá una nueva ventana
 (véase {numref}`join_by_location_ex1`).
@@ -290,7 +290,7 @@ Una herramienta de __procesamiento espacial__ opera sobre la geometría (ubicaci
 
 :::{dropdown} Respuesta
 - El resultado serán entidades de polígonos (zonas) que representan todas las áreas en un radio de 100 m de cada carretera. Así, si las carreteras de entrada son entidades lineales, después de la zona de influencia tendrá polígono(s) que "envuelven" cada línea de carretera, extendiéndose a ambos lados 100 m (suponiendo una zona de influencia plana simple).
-- Se podría utilizar una zona de influencia para amortiguar una trayectoria del ciclón y aproximarse a la región afectada por el ciclón (véase [Flujo de trabajo de activación de QGIS para Madagascar](https://giscience.github.io/gis-training-resource-center/content/es/GIS_AA/es_qgis_cyclone_trigger_madagascar.html)).
+- Se podría utilizar una zona de influencia para amortiguar una trayectoria del ciclón y aproximarse a la región afectada por el ciclón (véase [Flujo de trabajo de activación de QGIS para Madagascar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_cyclone_trigger_madagascar.html)).
 
 :::
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [Programa de ejercicios de análisis de acción anticipatoria ante ciclones en Madagascar](https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [Programa de ejercicios de análisis de acción anticipatoria ante ciclones en Madagascar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
 
 :::
 
@@ -43,12 +43,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
+* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
 * [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
 * [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_automatisation_wiki.html)
+* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automatisation_wiki.html)
 
 :::
 
@@ -74,7 +74,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -162,7 +162,7 @@ Deberá crear manualmente un buffer de la trayectoria del ciclón, recortar el r
 
 2. **Guarde el proyecto** en la carpeta “Project”. Para ello, haga clic en `Project` -> `Save as` y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.
 
-3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
+3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyecte la trayectoria del ciclón** para utilizar metros en lugar de grados (importante para la precisión del buffer):

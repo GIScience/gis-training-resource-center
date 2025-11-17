@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -27,7 +27,7 @@ dónde y cómo acceder a los datos pertinentes e identificar posibles problemas.
 __Serie de ejercicios para la respuesta ante inundaciones en Larkana__
 ^^^
 
-Este ejercicio forma parte de la [serie de ejercicios para la respuesta ante inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_larkana_flood_response.html).
+Este ejercicio forma parte de la [serie de ejercicios para la respuesta ante inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_larkana_flood_response.html).
 
 :::
 

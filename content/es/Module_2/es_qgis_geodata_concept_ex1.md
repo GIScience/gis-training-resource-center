@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -202,7 +202,7 @@ Captura de pantalla de la ventana Exportar
 
 :::{Note}
 
-La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
+La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
 
 :::
 
