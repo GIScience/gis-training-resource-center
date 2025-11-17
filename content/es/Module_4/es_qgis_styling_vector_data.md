@@ -152,7 +152,7 @@ width: 500 px
 __Paso 1: Ordenar las capas__
 
 1. Importe los límites administrativos a su proyecto QGIS.
-2. Tenemos que ordenar las capas en el panel de “Layers” de modo que la`adm0` capa se sitúe en la parte superior, seguida de `adm1` y `adm2`. Al principio, esto puede parecer raro porque `Adm0` lo cubrirá todo.
+2. Tenemos que ordenar las capas en el panel de “Layers” de modo que la `adm0` capa se sitúe en la parte superior, seguida de `adm1` y `adm2`. Al principio, esto puede parecer raro porque `Adm0` lo cubrirá todo.
 
 :::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
 ---
@@ -248,7 +248,7 @@ polígonos (consulte el[módulo 5](/content/es/Module_5/es_qgis_non_spatial_tool
 Utilizaremos la misma capa que para el mapa coroplético (consulte {numref}`en_map_design_example_variable_ranges`):
 `NGA_Adm1_Pop`.
 
-1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroids`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte {numref}`en_3.36_m4_centroids`)
+1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroids`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte {numref}`en_3.36_m4_centroids`)
 
 :::{figure} /fig/en_3.36_m4_centroids.png
 ---

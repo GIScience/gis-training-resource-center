@@ -169,7 +169,7 @@ La mayoría de las veces, los conjuntos de datos que se descargan de Internet es
 :::
 ::::
 
-6. [Cargue ambos archivos vectoriales en QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept.html#data-import).
+6. [Cargue ambos archivos vectoriales en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept.html#data-import).
 
 
 7. Ahora añada el mapa base de OpenStreetMap a través de la ventana del navegador >

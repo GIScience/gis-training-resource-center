@@ -155,7 +155,7 @@ __Plugin QuickOSM__
 
 :::{tip}
 
-Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Elija `OpenStreetMap` y haga clic en `Add` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps)).
+Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Elija `OpenStreetMap` y haga clic en `Add` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps)).
 
 :::
 
