@@ -17,9 +17,9 @@ El objetivo de este ejercicio es entender cómo preparar y limpiar los datos que
 :::{card}
 __Artículos relevantes en Wiki:__
 ^^^
-* [Interfaz de QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_interface_wiki.html)
-* [Importar archivos CSV a QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-importl)
-* [Tabla de atributos en QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.md)
+* [Interfaz de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html)
+* [Importar archivos CSV a QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-importl)
+* [Tabla de atributos en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.md)
 
 :::
 
@@ -50,7 +50,7 @@ Este ejercicio utiliza la herramienta [Tabula.technology](tabula.technology), un
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -282,9 +282,9 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
 
 1. Abra QGIS y cree un nuevo proyecto.
 2. Guarde el proyecto en la carpeta de ejercicios.
-3. [Importe la capa CSV a QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-import).
+3. [Importe la capa CSV a QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-import).
 4. Importe los límites administrativos situados en la carpeta de entrada de datos: `.../module_5_ex_7_data_cleansing/data/input/`
-5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo ](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
+5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
     ```
     array_first(aggregate(
     layer:= 'pak_admbnda_adm2_wfp_20220909',

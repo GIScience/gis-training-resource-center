@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -45,10 +45,10 @@ __Artículos relevantes en Wiki:__
 ^^^
 
 * [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Unir atributos por ubicación (resumen](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Funciones de la tabla](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
+* [Unir atributos por ubicación (resumen](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Funciones de la tabla](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
 
 <!--FIME: Check if these wiki articles are relevant-->
 
@@ -104,7 +104,7 @@ name: count_points_polygon
 Contar centros de salud por distrito
 :::
 
-4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __Zonal statistics__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas zonales](https://giscience.github.io/gis-training-resource-centeres/Wiki/es_qgis_raster_basic_wiki.html). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healtsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
+4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __Zonal statistics__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healtsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
 
 
 :::{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
@@ -131,7 +131,7 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 ```
 
 
-* Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([video en Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 :::{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
 ---
@@ -165,7 +165,7 @@ Explore los datos. Tenemos una columna “LandD_CLas” que indica la gravedad d
 * Como `Join Type` configurar `Take attributes of the feature with largest overlap only (one-to-one)`.
 * Guardar como capa.
 
-Consulte la entrada de Wiki [Unión espacial](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_joins_wiki.html) para obtener más información.
+Consulte la entrada de Wiki [Unión espacial](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html) para obtener más información.
 
 :::{figure} /fig/en_qgis_modul_5_ex1_join.PNG
 ---
@@ -254,7 +254,7 @@ $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```md
 ("LandD_Clas" - minimum( "LandD_Clas" ))/( maximum( "LandD_Clas") - minimum( "LandD_Clas" ))
 ```
-* Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png)([Video Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png)([Video Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
 :::{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
 ---
@@ -285,7 +285,7 @@ $ ponderado=  (1 - valor) \times peso $
 
 La segunda fórmula invierte el valor $(1 - valor)$ antes de aplicar la ponderación, lo que da lugar a un cálculo diferente para las variables con ponderaciones negativas.
 
-No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](https://giscience.github.io/gis-training-resource-center/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html#risk).
+No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html#risk).
 
 :::{Hint}
 Se recomienda comprobar debidamente la lógica de cada indicador. A menudo, los indicadores de una determinada dimensión siguen la misma lógica, pero siempre hay excepciones. Una vez aplicadas las direcciones a los datos, podemos usar la expresión “falta de capacidad de afrontamiento” en lugar de “capacidad de afrontamiento”, ya que hemos forzado los indicadores respectivos en otra dirección siguiendo la lógica predefinida (a mayor valor = peores circunstancias).
@@ -431,7 +431,7 @@ Posible resultado del mapa.
 #### 7. Automatización del proceso
 
 HeiGIT ha desarrollado un complemento de evaluación de riesgos para QGIS con el fin de simplificar este proceso y ahorrar tiempo.
-Puede encontrar más información sobre la metodología de riesgos y el uso del complemento [aquí](https://giscience.github.io/gis-training-resource-center/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html).
+Puede encontrar más información sobre la metodología de riesgos y el uso del complemento [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html).
 
 
 Para probar el complemento y ver el resultado, utilice los datos de entrada proporcionados en la carpeta: "Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"

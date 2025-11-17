@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -128,7 +128,7 @@ Si...
 - Sus capas no aparecen
 - Las capas se ven extrañas, p. ej., aplastadas
 - Se muestra el mensaje de error "uso de grados" al utilizar distancias (como se muestra en {numref}`dist_degree_error_message`)
-… podría ser un problema de [proyección](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_projections.html).
+… podría ser un problema de [proyección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html).
 
 Para resolverlo, intente...
 

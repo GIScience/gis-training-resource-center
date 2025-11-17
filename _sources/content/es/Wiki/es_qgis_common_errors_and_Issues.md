@@ -4,35 +4,35 @@ Aquí recopilamos errores y problemas comunes en QGIS como apoyo general a la ca
 
 # Contenido <!-- omit from toc -->
 
-- [Diferentes versiones de QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#different-qgis-versions)
-- [QGIS no abre en Mac](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
-- [Una capa no se muestra en QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)
-- [Desapareció una ventana de capas en QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)
-- [Las capas que deberían estar en la misma posición no están unas sobre otras](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
-- [El archivo de capa ha desaparecido de la ventana de capas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)
-- [Faltan herramientas de procesamiento en la herramienta de paneles y la pestaña de vectores está incompleta](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
-- [Falta la caja de herramientas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-toolbox)
-- [La flecha norte no se sincroniza con el mapa correspondiente](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)
-- [Geometría inválida](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#invalid-geometry)
-- [Sistemas de coordenadas: ¿Qué significan todos estos términos?](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)
-- [Sistemas de coordenadas: ¿Cómo puedo redefinir el sistema de coordenadas de un conjunto de datos?](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
-- [Sistemas de coordenadas: ¿Por qué se utiliza Mercator si está tan distorsionado?](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
-- [Sistemas de coordenadas: ¡Mi conjunto de datos no se encuentra donde debería!](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
-- [Sistemas de coordenadas: ¿En qué sistema de coordenadas debe estar mi conjunto de datos?](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
-- [¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)
-- [Resultados erróneos o falta de datos](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)
-- [Problemas de gestión de archivos](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#file-management-issues)
-- [Problemas específicos de QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#specific-qgis-problems)
-  - [Configuración básica \> Desactivar la selección automática de proyección](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)
-  - [Guardar regularmente](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#saving-regularly)
-  - [Aplicaciones GRASS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#grass-applications)
-  - [SAGA con Linux](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#saga-with-linux)
-  - [Diéresis, caracteres especiales y espacios en las rutas de los archivos](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)
-- [Enlaces de acceso a la Ayuda de QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-help-access-links)
-    - [Tutoriales y consejos sobre QGIS:](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)
-    - [Comunidad/foros de QGIS:](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-communityforums)
-    - [Canales de YouTube sobre QGIS:](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-youtube-channels)
-    - [ChatGPT](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html#chatgpt)
+- [Diferentes versiones de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#different-qgis-versions)
+- [QGIS no abre en Mac](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
+- [Una capa no se muestra en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)
+- [Desapareció una ventana de capas en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)
+- [Las capas que deberían estar en la misma posición no están unas sobre otras](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
+- [El archivo de capa ha desaparecido de la ventana de capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)
+- [Faltan herramientas de procesamiento en la herramienta de paneles y la pestaña de vectores está incompleta](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
+- [Falta la caja de herramientas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-toolbox)
+- [La flecha norte no se sincroniza con el mapa correspondiente](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)
+- [Geometría inválida](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#invalid-geometry)
+- [Sistemas de coordenadas: ¿Qué significan todos estos términos?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)
+- [Sistemas de coordenadas: ¿Cómo puedo redefinir el sistema de coordenadas de un conjunto de datos?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
+- [Sistemas de coordenadas: ¿Por qué se utiliza Mercator si está tan distorsionado?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
+- [Sistemas de coordenadas: ¡Mi conjunto de datos no se encuentra donde debería!](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
+- [Sistemas de coordenadas: ¿En qué sistema de coordenadas debe estar mi conjunto de datos?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
+- [¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)
+- [Resultados erróneos o falta de datos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)
+- [Problemas de gestión de archivos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#file-management-issues)
+- [Problemas específicos de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#specific-qgis-problems)
+  - [Configuración básica \> Desactivar la selección automática de proyección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)
+  - [Guardar regularmente](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#saving-regularly)
+  - [Aplicaciones GRASS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#grass-applications)
+  - [SAGA con Linux](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#saga-with-linux)
+  - [Diéresis, caracteres especiales y espacios en las rutas de los archivos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)
+- [Enlaces de acceso a la Ayuda de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-help-access-links)
+    - [Tutoriales y consejos sobre QGIS:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)
+    - [Comunidad/foros de QGIS:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-communityforums)
+    - [Canales de YouTube sobre QGIS:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-youtube-channels)
+    - [ChatGPT](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#chatgpt)
 
 
 
@@ -537,7 +537,7 @@ Los datos de capa utilizados en el proyecto no se guardan en el archivo de proye
 Una buena organización de los datos con una estructura de carpetas fija y bien elaborada evita tales problemas.
 :::
 
-Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/blob/main/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md) para `How to create a new QGIS project` y `How to open an existing QGIS project`.
+Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/blob/main/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md) para `How to create a new QGIS project` y `How to open an existing QGIS project`.
 
 ## Problemas específicos de QGIS
 ### Configuración básica > Desactivar la selección automática de la proyección
@@ -563,7 +563,7 @@ Cambiar la configuración del SRC en QGIS.
 Lamentablemente, los programas de SIG son conocidos por congelarse o fallar por completo. Aunque existe una tendencia a reducir las complicaciones con un mejor hardware, incluso una “computadora para videojuegos” que cuesta varios miles de dólares no es completamente segura.
 Las tareas más complejas, con tiempos de cálculo más largos, pueden seguir causando problemas. Por ello, se recomienda guardar con regularidad.
 
-Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center//content/es/Wiki/es_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.`
+Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/content/es/Wiki/es_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.`
 
 ### Aplicaciones GRASS
 

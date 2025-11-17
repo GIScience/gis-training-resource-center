@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -117,7 +117,7 @@ Hay múltiples maneras de obtener datos de OpenStreetMap (OSM) como un archivo v
 
 :::{Tip}
 
-Si desea practicar cómo exportar datos de OSM, puede hacer el __[Ejercicio 4: Exportación de datos de OSM](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex4.html)__
+Si desea practicar cómo exportar datos de OSM, puede hacer el __[Ejercicio 4: Exportación de datos de OSM](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html)__
 
 :::
 

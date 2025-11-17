@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -70,7 +70,7 @@ En este breve ejercicio guiado, añadiremos los datos de población a la capa de
 1. Descargue las capas necesarias [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), descomprímalas y añádalas a su proyecto QGIS.
 
 :::{tip}
-La capa de población debe [añadirse como una capa de texto delimitada](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` > `Add Layer` > ) sin geometría.
+La capa de población debe [añadirse como una capa de texto delimitada](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` > `Add Layer` > ) sin geometría.
 :::
 
 2. Abra la herramienta “Join Attributes by Field Value” de la caja de herramientas de Procesos.

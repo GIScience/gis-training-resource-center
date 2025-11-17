@@ -9,7 +9,7 @@ __🔙[Volver a la página de inicio](/content/es/intro.md)__
 - Seleccione las entidades de forma individual haciendo clic sobre cada entidad.
 - Para seleccionar varias entidades, puede mantener pulsado <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> en MacOS) y seleccionar una entidad tras otra.
 - Las entidades seleccionadas aparecerán resaltadas en amarillo brillante.
-- Si abre la [tabla de atributos](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html), la entidad seleccionada aparecerá en azul.
+- Si abre la [tabla de atributos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html), la entidad seleccionada aparecerá en azul.
 
 
 

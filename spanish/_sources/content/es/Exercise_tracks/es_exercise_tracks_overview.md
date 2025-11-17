@@ -15,17 +15,17 @@ Resumen de los ejercicios disponibles en la plataforma
 :::{admonition} Ejercicios para el módulo 4
 :class: note
 
-Se puede adaptar la mayoría de los ejercicios del módulo 3 para un ejercicio consecutivo de elaboración de mapas en el módulo 4. Piense en una simbolización razonable y siga los pasos para elaborar el mapa que se describe en el capítulo [4.6. El diseño de impresión ](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_map_design_2.html) y [4.7. Descripción del diseño de impresión](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_understanding_print_layout.html).
+Se puede adaptar la mayoría de los ejercicios del módulo 3 para un ejercicio consecutivo de elaboración de mapas en el módulo 4. Piense en una simbolización razonable y siga los pasos para elaborar el mapa que se describe en el capítulo [4.6. El diseño de impresión ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html) y [4.7. Descripción del diseño de impresión](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_understanding_print_layout.html).
 
 :::
 
 ## Ejercicios por módulo
 
-- __[Módulo 1, ejercicio](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_qgis_module_1_exercises.html)__
-- __[Módulo 2, ejercicio](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_module_2_exercises.html)__
-- __[Módulo 3, ejercicio](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_exercises.html)__
-- __[Módulo 4, ejercicio](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_module_4_exercises.html)__
-- __[Módulo 5, ejercicio](https://giscience.github.io/gis-training-resource-center/content/es/Module_5/es_qgis_module_5_exercises.html)__
+- __[Módulo 1, ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_module_1_exercises.html)__
+- __[Módulo 2, ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_module_2_exercises.html)__
+- __[Módulo 3, ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_module_3_exercises.html)__
+- __[Módulo 4, ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_module_4_exercises.html)__
+- __[Módulo 5, ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_module_5_exercises.html)__
 
 ## Ejercicios disponibles:
 

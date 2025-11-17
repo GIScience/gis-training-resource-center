@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -29,7 +29,7 @@ El ejercicio se divide en __tres tareas__:
 __Serie de ejercicios de respuesta a las inundaciones en Larkana:__
 ^^^
 
-Este ejercicio forma parte de la [Serie de ejercicios de respuesta a las inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_larkana_flood_response.html).
+Este ejercicio forma parte de la [Serie de ejercicios de respuesta a las inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_larkana_flood_response.html).
 
 Sin embargo, el ejercicio __puede__ realizarse sin haber completado los ejercicios anteriores.
 :::
@@ -59,10 +59,10 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki:__
 ^^^
 
-* [Importación de datos geoespaciales en QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html)
-* [Concepto de capa](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_layer_concept_wiki.html)
-* [Clasificación de datos geoespaciales por categorías](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_categorized_wiki.html)
-* [Digitalización - Datos de punto](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Importación de datos geoespaciales en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)
+* [Concepto de capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html)
+* [Clasificación de datos geoespaciales por categorías](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_categorized_wiki.html)
+* [Digitalización - Datos de punto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 :::
 ::::
 
@@ -75,7 +75,7 @@ __Artículos relevantes en Wiki:__
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -123,7 +123,7 @@ El equipo se alojará en el "Roomy Crossroad Hotel Peshawar" durante su misión 
 Hemos recibido información relacionada con la seguridad de diversas fuentes. Nuestra tarea consiste en digitalizar esta información en datos espaciales que puedan representarse en un mapa.
 :::
 
-Para este ejercicio, utilizaremos el complemento __"QuickMapService"__ para localizar lugares con precisión. Los complementos QuickMapServices le permiten añadir fácilmente mapas base u otros servicios de mapas como una capa a su proyecto QGIS. Para [instale el complemento](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins):
+Para este ejercicio, utilizaremos el complemento __"QuickMapService"__ para localizar lugares con precisión. Los complementos QuickMapServices le permiten añadir fácilmente mapas base u otros servicios de mapas como una capa a su proyecto QGIS. Para [instale el complemento](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins):
 
 1. En la barra de menús, haga clic en `Plugins` -> `Manage and Install Plugins...`. Se abrirá una nueva ventana.
 2. En `All`, busque "QuickMapServices". Haga clic y seleccione `Install Plugin` en la esquina inferior derecha.
@@ -132,11 +132,11 @@ Después de instalar el complemento, podremos añadir mapas base:
 
 3. En la barra de menús, vaya a `Web` -> `QuickMapServices` -> `ESRI` -> `ESRI Satellite`. Esto añadirá el mapa base de la imagen de satélite en su __panel de capas__.
 4. Agregaremos también una capa de carreteras para facilitar la orientación: `Web` -> `QuickMapServices` -> `Google` -> `Google Road`.
-5. En el [panel de capas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_layer_concept_wiki.html), asegúrese de que la capa `Google Road` esté por encima de las imágenes satelitales.
-6. Para facilitar la navegación, haga transparentes las imágenes satelitales. Para ello, vaya a la [pestaña de simbología](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) y ajuste la opacidad global.
+5. En el [panel de capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html), asegúrese de que la capa `Google Road` esté por encima de las imágenes satelitales.
+6. Para facilitar la navegación, haga transparentes las imágenes satelitales. Para ello, vaya a la [pestaña de simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) y ajuste la opacidad global.
 
 
-7. Necesitaremos el complemento __"Lat Lon Tools"__ para localizar las coordenadas que recibimos del campo. Para [instale el complemento](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins), siga las mismas instrucciones que para el complemento QuickMapServices pero busque "Lat Lon Tools" en su lugar.
+7. Necesitaremos el complemento __"Lat Lon Tools"__ para localizar las coordenadas que recibimos del campo. Para [instale el complemento](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins), siga las mismas instrucciones que para el complemento QuickMapServices pero busque "Lat Lon Tools" en su lugar.
 
 Genial, ahora hemos configurado nuestro proyecto QGIS y podemos empezar a digitalizar los incidentes conocidos y las áreas de interés relacionadas (como polígonos).
 A continuación encontrará una tabla con la información y las ubicaciones. Lea la tabla una vez y piense qué tipo de geometría puede representar la información.
@@ -153,13 +153,13 @@ A continuación encontrará una tabla con la información y las ubicaciones. Lea
 Para digitalizar la información, necesitaremos dos nuevas capas: Una capa de puntos y una capa de polígonos.
 En caso de que la información indique un área exacta, crea una nueva capa de polígonos y mapee el área con precisión.
 
-8. [Cree un nuevo punto y una nueva capa de polígonos](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_digitissation.html#creating-new-datasets) para digitalizar la información de puntos y polígonos.
+8. [Cree un nuevo punto y una nueva capa de polígonos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_digitissation.html#creating-new-datasets) para digitalizar la información de puntos y polígonos.
 
 :::{tip}
 Al crear la capa de puntos y polígonos utilice el SRC UTM 42 N __EPSG: 32642__. Este sistema de referencia de coordenadas es ideal para Pakistán y las unidades de medida de __están en metros__.
 :::
 
-9. Busque las ubicaciones en la tabla y cree nuevas entidades utilizando la [barra de herramientas de digitalización ](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_digitisation.html#digitisation-toolbars). Capture la información de la tabla y utilice Google, u otro buscador en su navegador, el mapa base y el complemento Lat Lon Tools para localizar la posición exacta.
+9. Busque las ubicaciones en la tabla y cree nuevas entidades utilizando la [barra de herramientas de digitalización ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_digitisation.html#digitisation-toolbars). Capture la información de la tabla y utilice Google, u otro buscador en su navegador, el mapa base y el complemento Lat Lon Tools para localizar la posición exacta.
 
 10. Una vez que haya terminado, asegúrese de guardar las modificaciones en las capas haciendo clic en el botón ![](/fig/3.44_digitisation_save_edits.png) `Save Layer Edits`.
 
@@ -171,13 +171,13 @@ El procedimiento operativo estándar (SOP, por sus siglas en inglés) actual ind
 {admonition} Recordatorio
 :class: seealso
 
-Si ve un símbolo ![](/fig/3.44_caution_symbol.png) junto al parámetro `Distance`, significa que la capa en la que desea hacer el buffer está en un sistema de referencia de coordenadas geográficas. Esto significa que las unidades de medida están en __grados, y no en metros__. En ese caso, deberá [reproyectar su capa](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) en un sistema de referencia de coordenadas métricas.
+Si ve un símbolo ![](/fig/3.44_caution_symbol.png) junto al parámetro `Distance`, significa que la capa en la que desea hacer el buffer está en un sistema de referencia de coordenadas geográficas. Esto significa que las unidades de medida están en __grados, y no en metros__. En ese caso, deberá [reproyectar su capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) en un sistema de referencia de coordenadas métricas.
 
 Consejo: EPSG:32642 es un SRC ideal para Pakistán.
 
 ::::
 
-6. [Crear un buffer alrededor de los puntos](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_geoprocessing_wiki.html) de incidentes violentos con una distancia de __2000 metros__.
+6. [Crear un buffer alrededor de los puntos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html) de incidentes violentos con una distancia de __2000 metros__.
 
 7. Ahora tenemos dos capas de polígonos (los puntos de buffers y las zonas digitalizadas). Para visualizar el Área No-Go en Peshwar, podemos fusionar los polígonos de ambas capas en una sola capa con la herramienta `Merge vector layer` y seleccionar las capas que queremos fusionar como entradas.
 
@@ -199,8 +199,8 @@ Existen varios algoritmos de recorte en la caja de herramientas. Asegúrese de e
 
 
 10. Hagamos una simbolización rápida de la capa resultante para que podamos entender la información más fácilmente:
-	- Abra el [styling panel](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) para la zona segura.
-	- [Ajuste la simbología](https://giscience.github.io/gis-training-resource-center/content/es/Module_4/es_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons) para la capa de modo que los polígonos sean __semitransparentes y verdes__.
+	- Abra el [styling panel](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) para la zona segura.
+	- [Ajuste la simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons) para la capa de modo que los polígonos sean __semitransparentes y verdes__.
 
 ¡Felicidades! Ahora tenemos un mapa para ayudar al equipo sobre el terreno a mantenerse a salvo.
 
@@ -235,7 +235,7 @@ name: SVG Marker
 Cree puntos a partir de la tabla.
 :::
 
-¡Estupendo! Ahora tenemos una capa de puntos que muestra los acontecimientos del conflicto en Pakistán. Ahora, podríamos investigar más a fondo este conjunto de datos echando un vistazo a la [tabla de atributos](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_attribute_table.html) y ver qué tipo de información hay. Sin embargo, queremos saber el número de incidentes conflictivos por thesil (subdistrito/ADM3). Para calcularlo:
+¡Estupendo! Ahora tenemos una capa de puntos que muestra los acontecimientos del conflicto en Pakistán. Ahora, podríamos investigar más a fondo este conjunto de datos echando un vistazo a la [tabla de atributos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_attribute_table.html) y ver qué tipo de información hay. Sin embargo, queremos saber el número de incidentes conflictivos por thesil (subdistrito/ADM3). Para calcularlo:
 
 3. Importe la capa `PAK_KP_admin_3.gpkg` de su carpeta `data/input` a su proyecto QGIS.
 4. Queremos contar el número de eventos conflictivos por thesil (subdistrito/ADM3). Para ello:
@@ -300,7 +300,7 @@ Esto puede ayudarnos a comprender geográficamente la vulnerabilidad económica 
 	:::
 
 2. Abra QGIS y cree un nuevo proyecto. Guarde el proyecto en su carpeta de proyectos.
-3. [Importe las capas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` y `Pak_adm2_Khyber Pakhtunkhwa.gpkg` a QGIS:
+3. [Importe las capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` y `Pak_adm2_Khyber Pakhtunkhwa.gpkg` a QGIS:
 	* Arrastre y suelte la capa ADM2 en su ventana QGIS.
 	* Para importar el archivo CSV, haga clic en la pestaña `Layer` -> `Add Layer` > `Add Delimited Text`.
 	* Busque su archivo __20240605_PAK_MPI.csv__.
@@ -317,7 +317,7 @@ Esto puede ayudarnos a comprender geográficamente la vulnerabilidad económica 
 	Cargue el archivo CSV en QGIS
 	:::
 
-Ahora, tenemos que unir los datos a los límites de distrito existentes (ADM2). Este proceso se denomina [unión no espacial](https://giscience.github.io/gis-training-resource-center/content/es/Module_5/es_qgis_spatial_tools.html#spatial-joins) y permite enriquecer los conjuntos de datos mediante datos de atributos. En nuestro caso, el conjunto de datos IPM contiene una columna con los nombres de los distritos (admin2) y los códigos P. Los códigos P son códigos internacionales de límites administrativos y suelen ser la mejor forma de identificar una unidad administrativa, ya que los nombres pueden tener varias grafías. Nuestra capa de polígonos también tiene columnas con los códigos p.
+Ahora, tenemos que unir los datos a los límites de distrito existentes (ADM2). Este proceso se denomina [unión no espacial](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_spatial_tools.html#spatial-joins) y permite enriquecer los conjuntos de datos mediante datos de atributos. En nuestro caso, el conjunto de datos IPM contiene una columna con los nombres de los distritos (admin2) y los códigos P. Los códigos P son códigos internacionales de límites administrativos y suelen ser la mejor forma de identificar una unidad administrativa, ya que los nombres pueden tener varias grafías. Nuestra capa de polígonos también tiene columnas con los códigos p.
 
 Por lo tanto, tenemos que realizar una unión no espacial utilizando las columnas de códigos P como identificadores. Para ello:
 

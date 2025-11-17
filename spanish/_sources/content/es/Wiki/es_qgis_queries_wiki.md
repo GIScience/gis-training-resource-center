@@ -3,5 +3,5 @@
 __🔙[Volver a la página de inicio](/content/es/intro.md)__
 
 ## Subsección:
-* [Consultas espaciales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_spatial_queries_wiki.html)
-* [Consultas no espaciales](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html)
+* [Consultas espaciales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html)
+* [Consultas no espaciales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html)

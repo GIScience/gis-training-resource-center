@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/es/intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -21,7 +21,7 @@ vectorial en QGIS. Utilizaremos la [herramienta de exportación HOT](https://exp
 :::{grid-item-card}
 __Serie de ejercicios para la respuesta ante inundaciones en Larkana__
 
-Este ejercicio forma parte de la [serie de ejercicios para la respuesta ante inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/content/es/Exercise_tracks/es_larkana_flood_response.html)
+Este ejercicio forma parte de la [serie de ejercicios para la respuesta ante inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_larkana_flood_response.html)
 
 :::
 
@@ -102,7 +102,7 @@ En su lugar, descargue la __estructura de carpetas estándar__ [aquí](https://n
 
 ## Tareas
 
-OpenStreetMap (OSM) es un proyecto colaborativo de código abierto que crea mapas gratuitos y editables del mundo, desarrollado por una comunidad mundial de mapeadores. Existen varias formas de descargar o exportar datos de OpenStreetMap (OSM), cada una con sus propias ventajas. En este ejercicio, revisaremos la [herramienta de exportación HOT](https://export.hotosm.org/v3/). [En la parte inferior de este ejercicio](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_data_sources_ex4.html#alternative-tools), encontrará una lista de herramientas alternativas.
+OpenStreetMap (OSM) es un proyecto colaborativo de código abierto que crea mapas gratuitos y editables del mundo, desarrollado por una comunidad mundial de mapeadores. Existen varias formas de descargar o exportar datos de OpenStreetMap (OSM), cada una con sus propias ventajas. En este ejercicio, revisaremos la [herramienta de exportación HOT](https://export.hotosm.org/v3/). [En la parte inferior de este ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html#alternative-tools), encontrará una lista de herramientas alternativas.
 
 ### Uso de la herramienta de exportación HOT
 
@@ -177,7 +177,7 @@ En el siguiente ejercicio de la serie de ejercicios para la respuesta ante inund
 
 ::::
 
-4. [Importe el nuevo archivo a su proyecto de QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html).
+4. [Importe el nuevo archivo a su proyecto de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html).
 5. Disponga las capas en el mapa de forma que pueda ver la nueva capa.
 6. (Opcional) Utilice la función de clasificación para obtener una mejor
    visión general:
@@ -206,7 +206,7 @@ acceso rápido a los datos de OSM.
 
 :::::{tip}
 
-La herramienta de exportación HOT es una buena opción para exportar datos personalizados de OSM para su uso personal. Sin embargo, en algunos casos de uso, es posible que desee elegir una herramienta diferente, como Geofabrik, QuickOSM, o incluso solo el sitio web de Intercambio de Datos Humanitarios. A continuación, encontrará una breve descripción de la herramienta y sus ventajas. Puede consultar cómo utilizar las distintas herramientas paso a paso en [esta página wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_OpenStreetMap_wiki.html).
+La herramienta de exportación HOT es una buena opción para exportar datos personalizados de OSM para su uso personal. Sin embargo, en algunos casos de uso, es posible que desee elegir una herramienta diferente, como Geofabrik, QuickOSM, o incluso solo el sitio web de Intercambio de Datos Humanitarios. A continuación, encontrará una breve descripción de la herramienta y sus ventajas. Puede consultar cómo utilizar las distintas herramientas paso a paso en [esta página wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_OpenStreetMap_wiki.html).
 
 ::::{dropdown} Geofabrik, QuickOSM, HDX
 
@@ -234,7 +234,7 @@ Deberá formular una consulta de datos para encontrar los datos que busca. Para 
 artículo sobre    [entidades del mapa](https://wiki.openstreetmap.org/wiki/Map_features).
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el plugin de QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html).
+Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el plugin de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html).
 
 | Ventajas | Desventajas |
 |---|---|
