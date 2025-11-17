@@ -166,9 +166,11 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
 3. __Understand the Layer Concept__
 
     By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md).
+    
 
 
-    ```{figure} /fig/en_SMT_ex4_fig1.PNG
+
+    ```{figure} /fig/en_3.34_SMT_Ex4_vector_raster.png
     ---
     height: 500px
     name: SMT EX4 Layer Interface QGIS
@@ -187,7 +189,7 @@ Now load your vector file ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and geotiff 
     When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps. In this case the column "name" helps you to track on which map each marking was detected 
     ```
 
-    ```{figure} /fig/en_SMT_ex4_Attrbute_Table.PNG
+    ```{figure} fig/en_3.34_SMT_Ex4_attribute_table.png
     ---
     height: 400px
     name: SMT EX4 vector output attribute table
@@ -216,7 +218,7 @@ So what can we do if a marking has not been detected? We can add missing marking
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
-```{figure} /fig/en_SMT_ex4_dig_toolbox.PNG
+```{figure} fig/en_3.34_SMT_Ex4_digit_polygon.png
 ---
 width: 700px
 name: digitizing toolbox
@@ -228,7 +230,7 @@ Digitsing Toolbox in QGIS 3.36
 Click on `Add Feature: Capture Polygon`![](/fig/mActionCapturePolygon.png). You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.
 
 
-```{figure} /fig/en_SMT_ex4_dig_info.PNG
+```{figure} fig/en_3.34_SMT_Ex4_digitized_polygon.png
 ---
 height: 400px
 name: SMT Attribute table
@@ -241,7 +243,7 @@ In the map canvas you can already see your hand-drawn polygon. In order to save 
 
 
 
-```{figure} /fig/en_SMT_ex4_Attrbute_Table_new.PNG
+```{figure} fig/en_3.34_SMT_Ex4_attribute_table_digit_polygon.png
 ---
 height: 400px
 name: SMT Attribute table with added polygon
@@ -262,7 +264,7 @@ Normally, you know the meaning of the markings in your Sketch Map. We will now l
 - click on ![](/fig/mActionNewAttribute.png) to add a new field to the data source
 - As `Name` enter "Description", choose "Text (String)" `Type`, as `Length` enter "20" and click `OK`
 
-```{figure} /fig/en_SMT_ex4_addfield.PNG
+```{figure} fig/en_3.34_SMT_Ex4_add_field.png
 ---
 height: 400px
 name: SMT Attribute table add text field
@@ -273,7 +275,7 @@ Adding a new field to the attribute table
 
 - by clicking on each field you can now enter the respective descriptions to the colors:
 
-```{figure} /fig/en_SMT_ex4_addfield_description.PNG
+```{figure} fig/en_3.34_SMT_Ex4_descritption_field.png
 ---
 height: 400px
 name: SMT attribute add field description
@@ -300,7 +302,7 @@ In the topmost drop-down menu, choose `Categorized`. As Value choose "Descriptio
 Right below you can also adjust the opacity level of your feature.
 
 
-```{figure} /fig/en_SMT_ex4_dig_categorize.PNG
+```{figure} fig/en_3.34_SMT_Ex4_symbology.png
 ---
 height: 400px
 name: SMT adjusting symbology
@@ -312,7 +314,7 @@ Adjusting the symbology with the [symbology tab](/content/Modul_4/en_qgis_map_de
 In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the critical Infrastructure with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](/content/Wiki/en_qgis_visualisation_wiki.md).
 
 
-```{figure} /fig/en_SMT_ex4_dig_Symbology.PNG
+```{figure} fig/en_3.34_SMT_Ex4_line_symbology.png
 ---
 height: 400px
 name: SMT symbol selector
@@ -351,7 +353,7 @@ __2. Make a printable Map__
 
 The finished map could look something like this:
 
-```{figure} ../../fig/SMT_Ex_4_Example_Map_Result.png
+```{figure} ../../fig/en_3.34_SMT_Ex4_map.png
 ---
 width: 700px
 name: Digitized SMT Map Example
@@ -422,7 +424,7 @@ align: center
 Editing the map properties
 ```
 
-3. You can load your data into the map frame by clicking on the arrow button. The `Import data` window will open on the right hand side. CLick on `Select file` and navigate to your vector output from the SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on `Open`. uMap will automatically detect that your vector is a geojason format. Click on `Import` to load your data to your map canvas.
+3. You can load your data into the map frame by clicking on the arrow button. The `Import data` window will open on the right hand side. CLick on `Select file` and navigate to your vector output from the SKetch Map Tool ("Kumasi_SMT_Ex4.geojson") and click on `Open`. uMap will automatically detect that your vector is a geojason format. Click on `Import` to load your data to your map canvas.
 
 ```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
 ---
@@ -505,7 +507,7 @@ Adding clustered layer
 
 - repeat the process creating a clustered layer for "Past flood extent"
 
-```{figure} /fig/en_SMT_ex4_UMAP_3Layers.PNG
+```{figure} /fig/en_SMT_ex4_UMAP_4Layers.PNG
 ---
 width: 400px
 name: SMT EX4 UMAP Layers
