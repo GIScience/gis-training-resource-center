@@ -48,6 +48,7 @@ parts:
           - file: content/es/Module_5/es_qgis_centroids.md
           - file: content/es/Module_5/es_qgis_non_spatial_tools.md
           - file: content/es/Module_5/es_qgis_module_5_exercises.md
+      - file: content/es/Module_6/es_module_6_overview.md
       - file: content/es/Module_7/es_module_7_overview.md
         sections: 
           - file: content/es/Module_7/es_qgis_automation_theory.md
