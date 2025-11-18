@@ -667,20 +667,32 @@ document.write(`
 <h2>Tasks<a class="headerlink" href="#tasks" title="Link to this heading">#</a></h2>
 <section id="task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project">
 <h3>Task 1: Setting up the folder structure and creating a new QGIS project<a class="headerlink" href="#task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Standard Folder Structure</p>
+<p>The single most important geodata management practice is to use a standardised folder structure that contains all parts of the QGIS project. We will save all of our data that we use or create within our QGIS project inside of this folder structure.
+The paths from a QGIS project to the geodata are by default relative. This means when the data and the project are in a fixed folder structure, you can move the whole structure without impacting the QGIS project or the paths to the data.</p>
+<p>A standard folder structure has two principal advantages:</p>
+<ol class="arabic simple">
+<li><p>If we share the whole project folder, we can expect the project to run without problems on a different computer</p></li>
+<li><p>The folder structure supports the proper organisation of project data and helps ensure the QGIS project will work as intended</p></li>
+</ol>
+</div>
 <ol class="arabic simple">
 <li><p>Create a new folder on your computer with the name “GIS_Training_Public_Health_Day_1-2”. In the folder create the following folder structure:</p></li>
 </ol>
-<p>GIS_Training_Public_Health
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GIS_Training_Public_Health
 ├── project
 ├── results
 ├── styles
 └── data
-├── input
-├── interim
-└── output</p>
+    ├── input
+    ├── interim
+    └── output
+</pre></div>
+</div>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a new project.</p></li>
-<li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a name and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a name (e.g., <code class="docutils literal notranslate"><span class="pre">GIS_Training_Public_Health_Part_1</span></code>) and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 </ol>
 </section>
 <section id="task-2-downloading-the-relevant-data">
