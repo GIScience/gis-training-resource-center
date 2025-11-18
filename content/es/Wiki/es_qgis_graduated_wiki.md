@@ -1,7 +1,7 @@
 # Clasificación graduada
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 - La clasificación graduada en SIG consiste en categorizar los datos espaciales en **clases o rangos** basados en una progresión de valores.
 - Este método es especialmente útil para visualizar datos cuantitativos, ya que permite diferenciar la intensidad, la densidad o la magnitud a lo largo de un espectro, lo que facilita una representación matizada de los fenómenos geográficos.

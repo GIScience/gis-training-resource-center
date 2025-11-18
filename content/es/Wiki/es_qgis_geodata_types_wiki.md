@@ -1,7 +1,7 @@
 # Tipos de datos geográficos
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 * Datos vectoriales
 * Datos ráster

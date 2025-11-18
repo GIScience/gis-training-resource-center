@@ -1,7 +1,7 @@
 (content:references:wiki:plugins)=
 # Complementos
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 Existen muchas extensiones para QGIS, también llamadas complementos, que proporcionan funcionalidades adicionales. Si hay que llevar a cabo una tarea específica y QGIS no tiene la funcionalidad adecuada, busque un complemento. Puede buscarlo en Google o en la ventana del complemento.
 

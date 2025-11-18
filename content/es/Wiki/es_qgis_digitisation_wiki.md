@@ -1,7 +1,7 @@
 # Digitalización
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 La digitalización es el proceso de conversión de datos geográficos de mapas o imágenes en forma digital comúnmente representados como datos vectoriales.
 Durante este procedimiento, se rastrea la información espacial de mapas o imágenes, formando puntos, polilíneas o polígonos.

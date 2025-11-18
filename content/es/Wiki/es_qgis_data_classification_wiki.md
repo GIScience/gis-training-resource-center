@@ -1,7 +1,7 @@
 # Clasificación de datos geoespaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 La clasificación de datos geoespaciales en SIG implica categorizar la información geográfica en grupos o clases distintas en función de características compartidas. Este proceso mejora la organización e interpretación de los datos geoespaciales.
 

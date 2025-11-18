@@ -1,7 +1,7 @@
 # Uniones no espaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 ## Unir atributos por valor de campo
 - Añadir atributos de una tabla no espacial a la capa

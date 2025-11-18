@@ -1,7 +1,7 @@
 ## Clasificación por categorías
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 La clasificación por categorías en QGIS agrupa los datos espaciales en categorías distintas con base en atributos específicos. Esta clasificación mejora la organización e interpretación de la información geoespacial para obtener conclusiones más claras.
 

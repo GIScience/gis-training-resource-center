@@ -1,6 +1,6 @@
 # Instalación de QGIS
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 QGIS es de código abierto y por lo tanto, está disponible de forma gratuita para todas las personas. Puede instalar QGIS en computadoras Windows, Mac y Linux.
 

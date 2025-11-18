@@ -2,7 +2,7 @@
 
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 
 La tabla de atributos, un componente central de los Sistemas de Información Geográfica (SIG), __organiza y presenta__ información detallada sobre las entidades de una capa seleccionada. Cada __fila__ en la tabla representa una __entidad__, mientras que las __columnas__ almacenan __atributos__ específicos. Esta tabla facilita la búsqueda, selección, orden, filtrado y edición de entidades.

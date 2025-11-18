@@ -1,6 +1,6 @@
 # Datos geográficos generales
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 ## Subsecciones:
 - [Tipos de datos geográficos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geodata_types_wiki.html)
