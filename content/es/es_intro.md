@@ -23,17 +23,17 @@ La plataforma central de capacitación para la enseñanza de habilidades en el s
 ::::{grid} 2
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_TOT_intro.html
 
-__[Empezar a enseñar](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html)__ ➡️
+__[Empezar a enseñar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_TOT_intro.html)__ ➡️
 
 :::
 
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_module_1_overview.html
 
-__[Empezar a aprender](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__ ➡️
+__[Empezar a aprender](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_module_1_overview.html)__ ➡️
 
 :::
 

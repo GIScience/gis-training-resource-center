@@ -108,12 +108,12 @@ parts:
       - file: content/es/Wiki/es_geodata_management_sharepoint.md
   - caption: Rincón de los Capacitadores
     chapters: 
-      - file: content/Trainers_corner/es_TOT_intro.md  
-      - file: content/Trainers_corner/es_how_to_training.md
-      - file: content/Trainers_corner/es_training_graphical_outline.md
-      - file: content/Trainers_corner/es_training_day_structure.md  
-      - file: content/Trainers_corner/es_how_to_teach_GIS.md
-      - file: content/Trainers_corner/es_how_to_assessment.md 
+      - file: content/es/Trainers_corner/es_TOT_intro.md  
+      - file: content/es/Trainers_corner/es_how_to_training.md
+      - file: content/es/Trainers_corner/es_training_graphical_outline.md
+      - file: content/es/Trainers_corner/es_training_day_structure.md  
+      - file: content/es/Trainers_corner/es_how_to_teach_GIS.md
+      - file: content/es/Trainers_corner/es_how_to_assessment.md 
   - caption: About
     chapters:
       - file: content/es/About/about_1.md
