@@ -7,16 +7,19 @@
 %           - ADD SMALLER EASIER EXERCISES EARLIER (INCLUDING IMPORTING DATA SO HERE WE CAN INTRODUCE THE PROJECT  HOME)
 %           - ADD MORE PICTURES
 %           - REMOVE STEPS TO CLEAN HEALTHSITES AS HEALTHSITES WITHOUT INFORMATION COULD STILL BE GOOD; E.G., TO REACH OUT
-%           - ADD STEPT FOR COUNT POINTS IN POLYGONS
+%           - ADD STEP FOR COUNT POINTS IN POLYGONS FOR HEALTHSITES
 %           - ADD STEP FOR JOIN BY LOCATION
-
+%           - MAKE THEM PLAN MEASLES VACCINATION CAMPAIGN
+%               - WHERE TO PUT VACCINATION CENTERS WITH HOW MUCH POP TO SERVE
+%               - WHERE TO DEPLOY MOBILE VACCINATION CENTERS -> DIGITISATION
+%           - IM COORDINATION INSRTUCTED TO GET DATA ON HEALTHSITE CAPACITIES
+%           - MAKE THEM DOWNLOAD HDX
 
 ## Background 
 
 Over the past month, health authorities in Chad have reported a surge in measles cases, particularly in Mandoul, Mayo-Kebbi Est, and Logone Oriental regions. The surveillance unit has provided line-list data and existing health facility data. Your first task is to create a base map showing health facility distribution and classify them by service capacity to understand the available response infrastructure.
 
 ## Available Data
-
 
 | Dataset name | Original title | Publisher | Downloaded from | 
 | :-------------- | :----------------- |:----------------- |:----------------- |
@@ -27,14 +30,39 @@ Over the past month, health authorities in Chad have reported a surge in measles
 | `Healthsite_capacities.csv` | Healthsite Capacities | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
 | `measles_vaccination_coverage.csv` | Measles vaccination coverage | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
 
+:::{note}
+
+In this exercise, we will download real datasets from the [Humanitarian Data Exchange (HDX)](humdata.org) to identify and analyse relevant information. However, the Healthsite Capacities and Vaccination Coverage datasets used here are fictional and created solely for training purposes. They do not represent real-world data.
+
+:::
+
+
 ---
 
 ## Tasks
 
-### Task 1: Creating a new QGIS project
+### Task 1: Setting up the folder structure and creating a new QGIS project
+
+1. Create a new folder on your computer with the name "GIS_Training_Public_Health_Day_1-2". In the folder create the following folder structure:
+
+GIS_Training_Public_Health
+├── project
+├── results
+├── styles
+└── data
+    ├── input
+    ├── interim
+    └── output
+
+
 
 1. Open QGIS and create a new project.
-2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a nam and click `Save`. 
+2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a name and click `Save`. 
+
+
+### Task 2: Downloading the relevant data
+
+1. In your browser, head over to humdata.org and find current datasets 
 
 ### Task 2: Importing the datasets
 
@@ -42,7 +70,7 @@ Over the past month, health authorities in Chad have reported a surge in measles
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
-4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer]():
+4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import):
     - In the top bar, click on `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open. Here we need to specify the file, the file format and define the geometry information
     - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points to open the file browser. 
     - Navigate to the data input folder and select the file `hotosm_tcd_health_facilities_points.csv`. Click `Open`.
@@ -51,7 +79,8 @@ Over the past month, health authorities in Chad have reported a surge in measles
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
 5. Let's add a basemap:
     - In the file browser, scrool down until you see `XYZ-Tiles`
-    - Uncollapse it and <kbd>double-click</kbd>
+    - Uncollapse it and <kbd>double-click</kbd> on `OpenStreetMap`
+
 :::{caution}
 
 Imported files are not saved within the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset. 
@@ -77,6 +106,16 @@ Imported files are not saved within the QGIS project. If you move or delete the 
 In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
 % ADD ADM2 PCODE TO DATASET
+
+1. Let's import the `vaccination_coverage_adm2` into your QGIS project:
+    - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
+    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/vaccination_coverage.csv` file and click `Open`.
+    - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites. 
+    - There are no columns with the coordinates in this datatable. Under `Geometry Definition` select `No geometry (attribute only table)`.
+    - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
+2. Let's investigate the new vaccination coverage further:
+    - <kbd>Right-click</kbd> on the new layer and open the attribute table. What information is available? How is the table structured. We can see that we are able to use the column `ADM2_PCODE` to perform a [non-spatial join]
+
 
 ### Task 4: Enriching the Healthsites dataset
 
@@ -136,6 +175,10 @@ When performing joins, pay attention to such inconsistencies.
     - Next, click on ![](/fig/attribute_table_delete_feature.png) `Delete selected features` to delete the points with no capacity information. 
     - Click on ![](/fig/mActionToggleEditing.png) to save and exit the editing mode.
 
+% Adjust the cleaning instructions to decide on cold capacity = NULL
+
+> Our new healthsites point layer now includes only the healthsites for which we received additional data.
+
 ### Task 6: Classifying the Healthsites
 
 5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
@@ -161,8 +204,7 @@ When performing joins, pay attention to such inconsistencies.
 
 
 
-
-
+<!--
 Now, lets configure the "Project Home" in the browser panel.
 
 3. In the browser panel on the left, <kbd>right-click</kbd> on `Project Home` → `Set Project Home...` and set the project home folder to the training folder (with the subfolders `/data`, `/project`, etc.). Now you will be able to access all the datasets for this training through the browser.
@@ -171,3 +213,4 @@ Now, lets configure the "Project Home" in the browser panel.
 Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles. 
 
 :::
+-->
