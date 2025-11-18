@@ -585,7 +585,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project">Task 1: Setting up the folder structure and creating a new QGIS project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-downloading-the-relevant-data">Task 2: Downloading the relevant data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-the-layers-panel-and-the-layer-concept">Task 3: The layers panel and the layer concept</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries">Task 4: Joining Vaccination Coverage Data with administrative boundaries</a></li>
@@ -656,15 +657,36 @@ document.write(`
 </tbody>
 </table>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this exercise, we will download real datasets from the <a class="reference internal" href="#humdata.org"><span class="xref myst">Humanitarian Data Exchange (HDX)</span></a> to identify and analyse relevant information. However, the Healthsite Capacities and Vaccination Coverage datasets used here are fictional and created solely for training purposes. They do not represent real-world data.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Link to this heading">#</a></h2>
-<section id="task-1-creating-a-new-qgis-project">
-<h3>Task 1: Creating a new QGIS project<a class="headerlink" href="#task-1-creating-a-new-qgis-project" title="Link to this heading">#</a></h3>
+<section id="task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project">
+<h3>Task 1: Setting up the folder structure and creating a new QGIS project<a class="headerlink" href="#task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Create a new folder on your computer with the name “GIS_Training_Public_Health_Day_1-2”. In the folder create the following folder structure:</p></li>
+</ol>
+<p>GIS_Training_Public_Health
+├── project
+├── results
+├── styles
+└── data
+├── input
+├── interim
+└── output</p>
 <ol class="arabic simple">
 <li><p>Open QGIS and create a new project.</p></li>
-<li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a nam and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a name and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ol>
+</section>
+<section id="task-2-downloading-the-relevant-data">
+<h3>Task 2: Downloading the relevant data<a class="headerlink" href="#task-2-downloading-the-relevant-data" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>In your browser, head over to <a class="reference external" href="http://humdata.org">humdata.org</a> and find current datasets</p></li>
 </ol>
 </section>
 <section id="task-2-importing-the-datasets">
@@ -677,7 +699,7 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code></p></li>
 </ul>
 </li>
-<li><p>The file <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points.csv</span></code> contains point data, but it is in a delimited text format. QGIS won’t automatically recognise the geographic information and display the dataset as points. We need to import it as a <a class="reference internal" href="#"><span class="xref myst">delimited text layer</span></a>:</p>
+<li><p>The file <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points.csv</span></code> contains point data, but it is in a delimited text format. QGIS won’t automatically recognise the geographic information and display the dataset as points. We need to import it as a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import">delimited text layer</a>:</p>
 <ul class="simple">
 <li><p>In the top bar, click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code>. A new window will open. Here we need to specify the file, the file format and define the geometry information</p></li>
 <li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points to open the file browser.</p></li>
@@ -690,7 +712,7 @@ document.write(`
 <li><p>Let’s add a basemap:</p>
 <ul class="simple">
 <li><p>In the file browser, scrool down until you see <code class="docutils literal notranslate"><span class="pre">XYZ-Tiles</span></code></p></li>
-<li><p>Uncollapse it and <kbd>double-click</kbd></p></li>
+<li><p>Uncollapse it and <kbd>double-click</kbd> on <code class="docutils literal notranslate"><span class="pre">OpenStreetMap</span></code></p></li>
 </ul>
 </li>
 </ol>
@@ -727,6 +749,22 @@ document.write(`
 <section id="task-4-joining-vaccination-coverage-data-with-administrative-boundaries">
 <h3>Task 4: Joining Vaccination Coverage Data with administrative boundaries<a class="headerlink" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries" title="Link to this heading">#</a></h3>
 <p>In our <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder, we can find a csv file called <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code>. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (<code class="docutils literal notranslate"><span class="pre">amd2_name</span></code>) and the adm2 pcode. With this information, we can perform a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">non-spatial join</a> in order to add the vaccination coverage data to our district boundaries layer (adm2).</p>
+<ol class="arabic simple">
+<li><p>Let’s import the <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code> into your QGIS project:</p>
+<ul class="simple">
+<li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code></p></li>
+<li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points and navigate to the <code class="docutils literal notranslate"><span class="pre">data/input/vaccination_coverage.csv</span></code> file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p>In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites.</p></li>
+<li><p>There are no columns with the coordinates in this datatable. Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> select <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.</p></li>
+</ul>
+</li>
+<li><p>Let’s investigate the new vaccination coverage further:</p>
+<ul class="simple">
+<li><p><kbd>Right-click</kbd> on the new layer and open the attribute table. What information is available? How is the table structured. We can see that we are able to use the column <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code> to perform a [non-spatial join]</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <section id="task-4-enriching-the-healthsites-dataset">
 <h3>Task 4: Enriching the Healthsites dataset<a class="headerlink" href="#task-4-enriching-the-healthsites-dataset" title="Link to this heading">#</a></h3>
@@ -806,6 +844,9 @@ When performing joins, pay attention to such inconsistencies.</p>
 </ul>
 </li>
 </ol>
+<blockquote>
+<div><p>Our new healthsites point layer now includes only the healthsites for which we received additional data.</p>
+</div></blockquote>
 </section>
 <section id="task-6-classifying-the-healthsites">
 <h3>Task 6: Classifying the Healthsites<a class="headerlink" href="#task-6-classifying-the-healthsites" title="Link to this heading">#</a></h3>
@@ -840,15 +881,16 @@ When performing joins, pay attention to such inconsistencies.</p>
 <ol class="arabic simple">
 <li><p>Import the roads dataset `</p></li>
 </ol>
-<p>Now, lets configure the “Project Home” in the browser panel.</p>
-<ol class="arabic simple" start="3">
-<li><p>In the browser panel on the left, <kbd>right-click</kbd> on <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Home</span></code> → <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Project</span> <span class="pre">Home...</span></code> and set the project home folder to the training folder (with the subfolders <code class="docutils literal notranslate"><span class="pre">/data</span></code>, <code class="docutils literal notranslate"><span class="pre">/project</span></code>, etc.). Now you will be able to access all the datasets for this training through the browser.</p></li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles.</p>
-</div>
-</section>
+<!--
+Now, lets configure the "Project Home" in the browser panel.
+
+3. In the browser panel on the left, <kbd>right-click</kbd> on `Project Home` → `Set Project Home...` and set the project home folder to the training folder (with the subfolders `/data`, `/project`, etc.). Now you will be able to access all the datasets for this training through the browser.
+
+:::{note}
+Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles. 
+
+:::
+--></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -900,7 +942,8 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-creating-a-new-qgis-project">Task 1: Creating a new QGIS project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project">Task 1: Setting up the folder structure and creating a new QGIS project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-downloading-the-relevant-data">Task 2: Downloading the relevant data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-importing-the-datasets">Task 2: Importing the datasets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-the-layers-panel-and-the-layer-concept">Task 3: The layers panel and the layer concept</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries">Task 4: Joining Vaccination Coverage Data with administrative boundaries</a></li>
