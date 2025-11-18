@@ -118,7 +118,7 @@ Sin embargo, cada componente del material de capacitación está diseñado para 
 
 :::
 
-:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__
+:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_module_1_overview.html)__
 Sus instructores serán quienes le guíen en esta plataforma de capacitación. Si tiene alguna pregunta sobre esta plataforma de capacitación, póngase en contacto con su instructor.
 Esta no es una plataforma de autoaprendizaje. Si quiere aprender QGIS, siempre es mejor participar en un curso y aprender de un instructor con experiencia. Sin embargo, puede usar esta plataforma para perfeccionar sus habilidades de QGIS, solo tenga en cuenta que el objetivo de la plataforma de capacitación, no es el autoaprendizaje.
 :::
@@ -142,7 +142,7 @@ Si tiene preguntas, observaciones o comentarios sobre la plataforma de capacitac
 
 ## Contribución
 
-Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, que fomenta el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](https://giscience.github.io/gis-training-resource-center/content/es/contribution_plan.html).
+Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, que fomenta el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](https://giscience.github.io/gis-training-resource-center/spanish/content/es/contribution_plan.html).
 
 ## Únase a la comunidad
 
