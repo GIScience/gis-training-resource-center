@@ -43,8 +43,20 @@ In this exercise, we will download real datasets from the [Humanitarian Data Exc
 
 ### Task 1: Setting up the folder structure and creating a new QGIS project
 
+:::{admonition} Standard Folder Structure
+:class: tip
+
+The single most important geodata management practice is to use a standardised folder structure that contains all parts of the QGIS project. We will save all of our data that we use or create within our QGIS project inside of this folder structure.
+The paths from a QGIS project to the geodata are by default relative. This means when the data and the project are in a fixed folder structure, you can move the whole structure without impacting the QGIS project or the paths to the data.
+
+A standard folder structure has two principal advantages:
+1. If we share the whole project folder, we can expect the project to run without problems on a different computer
+2. The folder structure supports the proper organisation of project data and helps ensure the QGIS project will work as intended
+:::
+
 1. Create a new folder on your computer with the name "GIS_Training_Public_Health_Day_1-2". In the folder create the following folder structure:
 
+```
 GIS_Training_Public_Health
 ├── project
 ├── results
@@ -53,12 +65,10 @@ GIS_Training_Public_Health
     ├── input
     ├── interim
     └── output
-
-
+```
 
 1. Open QGIS and create a new project.
-2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a name and click `Save`. 
-
+2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a name (e.g., `GIS_Training_Public_Health_Part_1`) and click `Save`. 
 
 ### Task 2: Downloading the relevant data
 
