@@ -1,7 +1,7 @@
 # Concepto de capa
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 Los sistemas de información geográfica (SIG) permiten visualizar los datos mediante el apilamiento de unas capas sobre otras para crear mapas. Cada capa representa un conjunto de información.
 Se trata de un concepto vital que hay que comprender, ya que tanto el análisis como la visualización de datos, se basan en él.

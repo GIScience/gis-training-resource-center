@@ -1,6 +1,6 @@
 # Conceptos básicos de QGIS
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 ## Subsecciones:
 * [Instalación de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_installation_wiki.html)

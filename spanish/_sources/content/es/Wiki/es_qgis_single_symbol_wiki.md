@@ -1,7 +1,7 @@
 ## Clasificación por símbolo único
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 
 - Por defecto, QGIS visualiza todas las capas en la `Single symbol` configuración.

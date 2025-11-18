@@ -1,6 +1,6 @@
 # Unir datos geográficos (uniones espaciales y no espaciales)
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 
 En los SIG, las uniones combinan datos de dos tablas sobre la base de un campo común (unión no espacial) o de la ubicación/geometría (unión espacial).

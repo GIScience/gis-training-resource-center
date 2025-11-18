@@ -1,6 +1,6 @@
 # Datos ráster
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 Los datos ráster en SIG son un tipo de datos espaciales que representan el mundo como una cuadrícula de píxeles (celdas), donde cada píxel tiene un valor que representa información como:
 

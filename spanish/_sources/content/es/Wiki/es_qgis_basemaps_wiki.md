@@ -1,7 +1,7 @@
 # Mapas base
 
 
-__🔙[Volver a la página de inicio](/content/es/intro.md)__
+__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 Los mapas base son mapas de fondo. Suelen ser muy prácticos, ya que son fáciles de usar, permiten una fácil orientación en el lienzo del mapa y son diversos.
 
