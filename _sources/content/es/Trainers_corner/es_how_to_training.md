@@ -1,4 +1,4 @@
-# Cómo planificar una capacitación en GIS
+# Cómo planificar una capacitación en SIG
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
@@ -32,7 +32,7 @@ Antes de planificar tu capacitación, debes tomar algunas decisiones básicas so
 - Conoce a tu público: ¿Cuál es el nivel de habilidad y los antecedentes de las personas participantes? ¿Tienen flexibilidad con los horarios? ¿Cuánto tiempo pueden ausentarse de su trabajo? Debes planificar la capacitación según las necesidades prácticas de las personas participantes para garantizar que todas las interesadas puedan asistir.
 - Piensa en el tamaño del grupo: la experiencia muestra que entre 10 y 15 participantes es lo ideal. Si hay más personas interesadas, considera organizar más de una capacitación. Si es posible, cuenta con dos facilitadores: uno que presente el contenido y otro que se encargue de los temas administrativos y del apoyo a las personas participantes. Esto es especialmente importante cuando el grupo tiene niveles de experiencia diversos.
 - El entorno: ¿planeas un curso en línea o presencial? ¿Organizarás sesiones de medio día o de día completo? ¿Se llevará a cabo en días consecutivos o distribuidos a lo largo de varias semanas? Estas preguntas deben responderse según el contexto y las necesidades del grupo.
-- Relevo entre facilitadores: si varias personas facilitan la capacitación en GIS, considera programar un tiempo entre sesiones para hacer un intercambio de información. Esto garantiza que todas las personas facilitadoras cuenten con los datos necesarios para su sesión y que la capacitación fluya de manera continua.
+- Relevo entre facilitadores: si varias personas facilitan la capacitación en SIG, considera programar un tiempo entre sesiones para hacer un intercambio de información. Esto garantiza que todas las personas facilitadoras cuenten con los datos necesarios para su sesión y que la capacitación fluya de manera continua.
 
 ## 2. Planificación
 
