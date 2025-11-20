@@ -134,7 +134,7 @@ Imported files are not saved within the QGIS project. If you move or delete the 
 
 ### Task 4: Joining Vaccination Coverage Data with administrative boundaries
 
-% ADD A DISCLAIMER MAKING TRAINEES THINK WHERE 
+% ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
 In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
@@ -167,7 +167,12 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
 
 ### Task 5: Visualising the vaccination coverage
 
-
+Now that we have the vaccination coverage information in our adm2-layer, we can visualise the information in order to understand the spatial distribution of the vaccination coverage. 
+::::{margin}
+:::{tip}
+QGIS offers various ways to [visualise vector data](/content/Module_4/en_qgis_styling_vector_data.md). If you want to learn more about these different methods, check out [module 4](/content/Module_4/en_module_4_overview.md).
+:::
+::::
 
 ### Task 4: Enriching the Healthsites dataset
 
