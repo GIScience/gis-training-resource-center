@@ -54,7 +54,7 @@ La información sobre la infraestructura vial para las operaciones de ayuda huma
 1. Cargue los datos de carreteras de OSM desde la herramienta de exportación HOT (parte del equipo humanitario de OpenStreetMap) [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip).
 como una nueva capa: __Road_infrastructure_Sudan.geojson__.
 
-2. Filtre la capa por medio de __generador de consultas__ para mostrar solo __carreteras primarias y residenciales__ ("carretera" = 'primary' O "carretera" = 'residential').
+2. Filtre la capa por medio de __generador de consultas__ para mostrar solo __carreteras primarias y residenciales__ ("carretera" = 'primary' OR "carretera" = 'residential').
 3. Cargue la capa admin1 para Sudán que contiene el distrito Nilo Blanco, __ne_10m_admin_1_Sudan_White_Nile.geojson__. Se descarga de los [datos de Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 4. Seleccione la capa de carreteras y abra el diálogo de __Recorte__ desde `Vector` > `Geoprocessing Tools`.
     - Configure las carreteras como __capa de entrada__ y los límites del distrito de Nilo Blanco como __capa de superposición__.
@@ -109,7 +109,7 @@ Para analizar el acceso a fuentes de agua limpia, un escenario considera qué ta
 width: 550 px
 name: buffering_options
 ---
-Diferentes tipos de zonas de influencia <br /> (adaptado según [Documentación de QGIS](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), versión 3.28)
+Diferentes tipos de zonas de influencia <br /> (adaptado según [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), versión 3.28)
 :::
 
 Existen diferentes variantes de zona de influencia. La __distancia de zona de influencia__ o __el tamaño de esta puede variar__ según los valores numéricos proporcionados. Los valores numéricos deben definirse en unidades de mapa de acuerdo con el Sistema de Referencia de Coordenadas (SRC) utilizado con los datos.

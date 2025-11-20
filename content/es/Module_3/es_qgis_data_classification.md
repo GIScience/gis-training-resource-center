@@ -243,7 +243,7 @@ La clasificación en escala logarítmica se emplea cuando los datos abarcan vari
 :::
 
 :::{tab-item} Cortes redondeados
-Cortes redondeados es un método de clasificación diseñado para crear mapas visualmente atractivos y fáciles de interpretar. Este enfoque busca generar cortes de clase que se alineen con números “redondos”, lo que hace el mapa más intuitivo para los lectores. Cortes redondeados es especialmente útil cuando se comunican datos espaciales complejos a un público amplio, ya que mejora la claridad y comprensibilidad del mapa. Tenga en cuenta que la elección de cortes “pretty” puede depender del contexto específico y de las preferencias del público destinatario.
+Cortes redondeados es un método de clasificación diseñado para crear mapas visualmente atractivos y fáciles de interpretar. Este enfoque busca generar cortes de clase que se alineen con números “redondos”, lo que hace el mapa más intuitivo para los lectores. Cortes redondeados es especialmente útil cuando se comunican datos espaciales complejos a un público amplio, ya que mejora la claridad y comprensibilidad del mapa. Tenga en cuenta que la elección de cortes redondeados puede depender del contexto específico y de las preferencias del público destinatario.
 :::
 
 :::{tab-item} Desviación estándar

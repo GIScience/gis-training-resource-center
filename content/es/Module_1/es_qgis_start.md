@@ -206,7 +206,7 @@ __Atajos de teclado__ en la interfaz de QGIS ofrecen accesos rápidos a diversos
 | Nombre | Opción del menú | Atajo | Descripción |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
 | Nuevo proyecto | ![](/fig/qgis_new.png) | <kbd>Ctrl</kbd> + <kbd>N</kbd> | Crear un nuevo proyecto |
-| Proyecto abierto | ![](/fig/qgis_open_project.png) | <kbd>Ctrl</kbd> + <kbd>A</kbd> | Abrir un proyecto existente |
+| Abrir Proyecto | ![](/fig/qgis_open_project.png) | <kbd>Ctrl</kbd> + <kbd>A</kbd> | Abrir un proyecto existente |
 | Guardar | ![](/fig/qgis_save_project.png) | <kbd>Ctrl</kbd> + <kbd>G</kbd> | Guardar proyecto |
 | Guardar como… | ![](/fig/qgis_save_project_as.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> | Guardar proyecto como… |
 | Propiedades |                                    | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> | Abrir las propiedades del proyecto |
@@ -344,9 +344,9 @@ Hay casos en los que quiere hacer algo en QGIS, pero no conoce la herramienta ex
 
 Hay barras de herramientas y paneles para muchas tareas diferentes. Para evitar una interfaz abarrotada, lo más inteligente, es activar las barras de herramientas o los paneles específicos, solo cuando realmente los necesite.
 
-Para añadir o eliminar barras de herramientas de su interfaz, haga clic en `View` -> `Toolbars` ->. Marque o desmarque las cajas de herramientas, que desee añadir o eliminar.
+Para añadir o eliminar barras de herramientas de su interfaz, haga clic en `View` -> `Toolbars` -> Marque o desmarque las cajas de herramientas, que desee añadir o eliminar.
 
-Para añadir o eliminar paneles de su interfaz, haga clic en `View` -> `Panels` -> .Marque o desmarque los paneles, que desee añadir o eliminar.
+Para añadir o eliminar paneles de su interfaz, haga clic en `View` -> `Panels` -> Marque o desmarque los paneles, que desee añadir o eliminar.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video>
 
@@ -474,13 +474,13 @@ Normalmente, si hay cambios sin guardar, QGIS mostrará un asterisco (*) junto a
 4. __¿Cómo se abre un proyecto de QGIS?__
 
 :::{dropdown} Respuesta
-Puede abrir un proyecto de QGIS a través del `File`menú → `Open Project` (o el botón “Abrir proyecto” de la barra de herramientas) y a continuación, buscar un archivo `.qgs` o `.qgz`. Alternativamente, al hacer doble clic en el archivo del proyecto (si está asociado en su sistema) también podría abrirse en QGIS.
+Puede abrir un proyecto de QGIS a través del `File` menú → `Open Project` (o el botón “Abrir proyecto” de la barra de herramientas) y a continuación, buscar un archivo `.qgs` o `.qgz`. Alternativamente, al hacer doble clic en el archivo del proyecto (si está asociado en su sistema) también podría abrirse en QGIS.
 :::
 
 5. __¿Cómo mostrar y ocultar paneles o barras de herramientas?__
 
 :::{dropdown} Respuesta
-En la barra superior, utilice el `View`menú → `Panels` o los submenús `Toolbars` para alternar (marcar/desmarcar) entre paneles o barras de herramientas específicos.
+En la barra superior, utilice el `View` menú → `Panels` o los submenús `Toolbars` para alternar (marcar/desmarcar) entre paneles o barras de herramientas específicos.
 :::
 
 6. __¿Dónde puede encontrar ayuda si tiene problemas con QGIS?__

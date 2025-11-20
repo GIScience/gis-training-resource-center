@@ -91,10 +91,10 @@ Las reglas, o filtros, se basan en una expresión. Puede utilizar el ![](../../f
 
 #### Añadir etiquetas basadas en reglas a una capa
 
-1. En el panel de estilo, haga clic en la pestaña `Labels` situada debajo de la pestaña Simbología.
+1. En el panel de estilo, haga clic en la pestaña `Labels` situada debajo de la pestaña Symbology.
 2. Seleccione ![](/../fig/30.30.2_Icon_rule_based_labeling.png) `Rule-based Labeling`.
 3. Añada una regla haciendo clic en el botón `+`, en la esquina izquierda del panel de estilo. Se abrirá una nueva ventana en el panel de estilo. En esta ventana, ingresará la regla (`Filter`) y personalizará la fuente, el tamaño y la ubicación de la etiqueta. Además, puede introducir una descripción.
-4. Introduzca un filtro (cuadro rojo en la figura inferior). La forma más sencilla es utilizar la `Expression string builder` situada a la derecha de la opción Filter. Haga clic en el símbolo ![](/../fig/expression_string_builder_icon.png). Se abrirá un nuevo panel.
+4. Introduzca un filtro (cuadro rojo en la figura inferior). La forma más sencilla es utilizar el `Expression string builder` situado a la derecha de la opción Filter. Haga clic en el símbolo ![](/../fig/expression_string_builder_icon.png). Se abrirá un nuevo panel.
 5. En el generador de cadenas de expresión, ingrese una regla. En el ejemplo del video que aparece a continuación, queremos mostrar únicamente los asentamientos que son capitales nacionales o regionales. Corresponde a la cadena `("CLASS" = 1 ) OR ("CLASS" = 2)`. Lo sabemos porque conocemos nuestros datos y hemos consultado previamente la tabla de atributos.
 6. Haga clic en `OK`.
 7. Establezca la fuente y el tamaño de la fuente.
@@ -164,7 +164,7 @@ Una etiqueta sin buffer de texto (izquierda) y una etiqueta con buffer de texto 
 
 :::{note}
 QGIS genera las etiquetas automáticamente.
-A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña __Etiqueta__ o utilizar la herramienta ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout` de la barra de herramientas __Etiqueta__.
+A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña __Label__ o utilizar la herramienta ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout` de la barra de herramientas __Label__.
 
 Por defecto, QGIS genera las etiquetas de manera que no se superpongan con otras etiquetas. Esto significa que no todas las etiquetas serán visibles si los datos son densos o se muestran muy cerca unos de otros. Puede optimizar la generación en la opción de renderizado.
 
@@ -190,6 +190,7 @@ También puede leer más en el artículo “[Etiquetado y jerarquía de textos e
 :::{dropdown} Respuesta
 - En el modo Etiquetas simples, debe seleccionar un __campo de atributo__ (columna) de la capa cuyos valores se mostrarán como etiquetas. Esto se denomina campo Valor. Por ejemplo, puede elegir la columna que almacena el nombre de una calle para mostrar los nombres de las calles en el mapa.
 - También puede utilizar una expresión en lugar de un campo simple, por ejemplo, concatenar varios campos o incluir funciones, para construir lo que muestra la etiqueta.
+:::
 
 2. __¿Qué es una “regla” en el etiquetado basado en reglas y cómo se crea una (por ejemplo, utilizando expresiones)?__
 

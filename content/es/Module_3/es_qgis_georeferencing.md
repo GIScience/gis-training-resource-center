@@ -63,7 +63,7 @@ Abrir el Georreferenciador en QGIS 3.36.
 :::
 
 4. Se abrirá una nueva ventana. Este es el __georreferenciador__. Para agregar una imagen que georreferenciar, haga clic en ![](/fig/3.36_add_raster_georef.png)`Open Raster`.
-5. Seleccione la imagen del mapa que desea georreferenciar. Puede cargar archivos de imagen, así como `Open` PDFClick.
+5. Seleccione la imagen del mapa que desea georreferenciar. Puede cargar archivos de imagen, así como PDF. Haga clic en `Open`.
 6. La imagen aparecerá en el centro de la ventana del georreferenciador. Haga clic en ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
 7. Se abrirá una nueva ventana. Aquí puede establecer el tipo de transformación y el sistema de referencia de coordenadas (SRC) objetivo. A continuación, puede establecer el nombre y la ubicación de guardado del archivo. Asegúrese de que `Load in the project when done` esté marcado.
 

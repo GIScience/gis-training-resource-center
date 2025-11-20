@@ -20,7 +20,7 @@ publican datos o mapas en formato PDF. Sin embargo, al georreferenciar el mapa, 
 
 ::::{grid} 2
 :::{grid-item-card}
-__Tipo de ejercicio de capacitación:__
+__Tipo de ejercicio de capacitación__
 ^^^
 
 - Este ejercicio puede utilizarse en la capacitación en línea y presencial.

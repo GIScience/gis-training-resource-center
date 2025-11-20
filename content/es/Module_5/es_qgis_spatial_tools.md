@@ -275,14 +275,14 @@ Tras las inundaciones, es fundamental disponer de datos sobre la población afec
 1. __¿Qué diferencia a una herramienta de procesamiento espacial de otra no espacial?__
 
 :::{dropdown} Respuesta
-Una herramienta de __procesamiento espacial__ opera sobre la geometría (ubicación, forma, relación espacial) de entidades (puntos, líneas, polígonos o celdas ráster) y utiliza esa información espacial (p. ej., distancia, adyacencia, superposición) en su operación. Una herramienta de__ procesamiento no espacial__ opera únicamente sobre datos de atributos o tabulares sin tener en cuenta la geometría (por ejemplo, ordenar una tabla, calcular un campo, unir tablas por clave).
+Una herramienta de __procesamiento espacial__ opera sobre la geometría (ubicación, forma, relación espacial) de entidades (puntos, líneas, polígonos o celdas ráster) y utiliza esa información espacial (p. ej., distancia, adyacencia, superposición) en su operación. Una herramienta de __procesamiento no espacial__ opera únicamente sobre datos de atributos o tabulares sin tener en cuenta la geometría (por ejemplo, ordenar una tabla, calcular un campo, unir tablas por clave).
 :::
 
 2. __Nombre y describa brevemente al menos tres herramientas u operaciones espaciales comunes cubiertas (p. ej., zona de influencia, recorte, disolución, intersección, unión).__
 
 :::{dropdown} Respuesta
 - __Zona de influencia:__ Crea una zona a una distancia especificada alrededor de las entidades de entrada (puntos, líneas o polígonos). Por ejemplo, alrededor de la línea de una carretera se crea un polígono de zona de influencia de 100 m que representa toda el área en un radio de 100 m de la carretera.
-- __Recorte:__ Utiliza una capa (la capa de "recorte") para recortar o cortar otra capa de modo que solo quede la parte de la capa de entrada que cae dentro (o quizá fuera) de la capa de recorte. Extrae eficazmente un subconjunto de geometría.
+- __Recorte:__ Utiliza una capa (la capa de "recorte") para recortar o cortar otra capa de modo que solo quede la parte de la capa de entrada que cae dentro (o quizás fuera) de la capa de recorte. Extrae eficazmente un subconjunto de geometría.
 - __Disolución:__ Fusiona las entidades adyacentes o superpuestas en una capa basándose en un atributo compartido (o simplemente elimina los límites internos) para que las entidades se conviertan en formas agregadas más grandes. Por ejemplo, combinar muchas unidades administrativas pequeñas en una más grande basada en un código de región.
 :::
 

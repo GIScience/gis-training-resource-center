@@ -93,7 +93,7 @@ También es posible agregar expresiones que encadenen diferentes requisitos. En 
 | __`!=`__   | no igual a                |
 | __`<`__    | menor que                |
 | __`>`__    | mayor que             |
-| __`<=`__   |menor o igual que    |
+| __`<=`__   | menor o igual que    |
 | __`>=`__   | mayor o igual que |
 :::
 
@@ -101,9 +101,9 @@ También es posible agregar expresiones que encadenen diferentes requisitos. En 
 Se pueden utilizar operadores como AND, OR para combinar diferentes consultas o criterios.
 | operador | función          |
 |----------|------------------------|
-| __`AND`__  | AND lógico            |
-| __`OR`__   | OR lógico             |
-| __`NOT`__ | NOT lógico            |
+| __`AND`__  | lógico Y            |
+| __`OR`__   | lógico O            |
+| __`NOT`__ |  lógico NO            |
 :::
 
 :::{tab-item} Operadores especiales

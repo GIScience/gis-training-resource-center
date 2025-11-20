@@ -217,7 +217,7 @@ Los datos ráster pueden tener los siguientes formatos de datos:
 
 | Extensión de nombre de archivo | Nombre | Descripción |
 | ----- | --- | --- |
-| `.tif`/`.tiff`/`.geotiff` | Formato de Archivo de Imagen Etiquetada | Formato común de datos ráster e imagen. No tiene necesariamente datos georreferenciados. Si un`.tif` archivo está georreferenciado, se denomina GeoTIFF. |
+| `.tif`/`.tiff`/`.geotiff` | Formato de Archivo de Imagen Etiquetada | Formato común de datos ráster e imagen. No tiene necesariamente datos georreferenciados. Si un archive `.tif` está georreferenciado, se denomina GeoTIFF. |
 | `.nc` | netCDF | Formato de datos estándar para datos científicos como la velocidad o la temperatura. Puede ser un archivo ráster. Puede contener varios conjuntos de datos |
 | `.asc` | Archivos de cuadrícula ASCII de Esri | Formato de archivo ráster antiguo y sencillo, siempre con datos georreferenciados |
 
@@ -340,7 +340,7 @@ Ajuste de los parámetros de formato de archivo al importar una capa de texto de
 :::
 
 4. `Geometry definition`: En esta sección se especifica qué columnas del archivo contienen la información espacial para georreferenciar los datos en el mapa. Si el archivo tiene una columna con datos de __latitud__ y otra con datos de __longitud__, puede utilizarlas para georreferenciar los datos. Compruebe `Point Coordinates` si el archivo `.csv` contiene datos de puntos. Seleccione para `X field` “LONGITUD” y para `Y field` “LATITUD”.
-5. Debajo de`Geometry CRS` seleccione el sistema de referencia de coordenadas (SRC). Por defecto, QGIS seleccionará el SRC del proyecto. Si el archivo no contiene información espacial, elija la opción `No geometry (attribute only table)`.
+5. Debajo de `Geometry CRS` seleccione el sistema de referencia de coordenadas (SRC). Por defecto, QGIS seleccionará el SRC del proyecto. Si el archivo no contiene información espacial, elija la opción `No geometry (attribute only table)`.
 6. Haga clic en `Add`
 
 :::{dropdown} Video: Abrir archivos de texto delimitados en QGIS
@@ -433,7 +433,7 @@ En los SIG, una capa es un conjunto de datos geográficos que representan un tip
 
 :::{dropdown} Respuesta
 Los datos vectoriales pueden importarse a un proyecto QGIS de la siguiente manera:
-- En la barra superior, utilice el `Layer` menú → `Add vector layer`.
+- En la barra superior, utilice el menú `Layer` → `Add vector layer`.
 - Arrastre y suelte el archivo vectorial directamente en el lienzo del mapa de QGIS.
 :::
 

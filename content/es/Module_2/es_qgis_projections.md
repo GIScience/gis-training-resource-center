@@ -25,8 +25,8 @@ Ejemplos de proyecciones cartográficas (fuente desconocida. Esta figura se incl
 
 Cada proyección cartográfica tiene su caso práctico. Por ejemplo, la proyección cartográfica de Mercator muestra correctamente los ángulos entre dos puntos. Se utilizaba mucho en la época de la navegación marítima sin satélites, ya que los barcos podían navegar hacia un destino, mediante el seguimiento de una línea recta en un mapa. Por ejemplo, la proyección cartográfica de Mercator muestra correctamente las intersecciones de las carreteras: una carretera que se cruza con otra en ángulo recto, se mostrará como tal en una proyección Mercator. Esto es especialmente útil durante la navegación. La forma de un área permanece en la posición correcta, ya que los ángulos entre cada línea se mantienen. Sin embargo, si aumenta la escala del mapa, el tamaño y las distancias se distorsionan drásticamente (véase la figura siguiente). Además, cuanto más se aleja del ecuador, mayor es la distorsión.
 
-:::{note} The True Size of
-La proyección cartográfica Mercator es conocida por distorsionar el tamaño de los distintos países. Puede comprobar el tamaño real en comparación con las distintas ubicaciones en el mapa en el sitio web [TheTrueSize.com](https://www.thetruesize.com).Un ejemplo popular es Groenlandia en comparación con África, que en el mapa parecen tener aproximadamente el mismo tamaño, pero en realidad, África es mucho más grande.
+:::{note} 
+La proyección cartográfica Mercator es conocida por distorsionar el tamaño de los distintos países. Puede comprobar el tamaño real en comparación con las distintas ubicaciones en el mapa en el sitio web [TheTrueSize.com](https://www.thetruesize.com). Un ejemplo popular es Groenlandia en comparación con África, que en el mapa parecen tener aproximadamente el mismo tamaño, pero en realidad, África es mucho más grande.
 :::
 
 
@@ -157,12 +157,12 @@ Entender las proyecciones cartográficas y los sistemas de referencia de coorden
 :::
 
 :::{Note}
-Una de las primeras cosas que debe hacer al iniciar un nuevo proyecto QGIS es comprobar y ajustar el código SRC/EPSG a la región o zona en la que esté trabajando. Si está trabajando en un mapa que muestre todo el globo terráqueo, deberá utilizar una proyección cartográfica global como la proyección Mercator. Si trabaja en una región más pequeña, como un continente, un país o incluso regiones más pequeñas, __deberá utilizar siempre un SRC local, para evitar imprecisiones__. Si no sabe SRC utilizar, puede buscar uno adecuado en EPSG.IO. Sólo tiene que introducir el nombre de su región y examinar las opciones disponibles. Asegúrese de que el SRC elegido se encuentre en la unidad de medida correcta (metros, pies o grados)
+Una de las primeras cosas que debe hacer al iniciar un nuevo proyecto QGIS es comprobar y ajustar el código SRC/EPSG a la región o zona en la que esté trabajando. Si está trabajando en un mapa que muestre todo el globo terráqueo, deberá utilizar una proyección cartográfica global como la proyección Mercator. Si trabaja en una región más pequeña, como un continente, un país o incluso regiones más pequeñas, __deberá utilizar siempre un SRC local, para evitar imprecisiones__. Si no sabe qué SRC utilizar, puede buscar uno adecuado en EPSG.IO. Sólo tiene que introducir el nombre de su región y examinar las opciones disponibles. Asegúrese de que el SRC elegido se encuentre en la unidad de medida correcta (metros, pies o grados)
 :::
 
 
 1. Abrir un proyecto QGIS
-2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el `Current CRS`-botón![](/fig/EPSG_Code.png).
+2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `Current CRS`![](/fig/EPSG_Code.png).
 3. Se abrirá la ventana `Project Properties`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
 4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Apply`.
 
@@ -186,7 +186,7 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa vectorial
 
-1. `Vector` Tabulador -> `Data Management Tools` -> `Reproject Layer`
+1. Pestaña `Vector` -> `Data Management Tools` -> `Reproject Layer`
 2. Seleccione el código SRC/EPSG de destino.
 3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reprojected`,
    especifique el nombre del archivo y la ubicación donde desea guardarlo.
@@ -198,7 +198,7 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa ráster
 
-1. `Raster` Tabulador -> `Projections` -> `Warp (Reproject)`
+1. Pestaña `Raster` -> `Projections` -> `Warp (Reproject)`
 2. Seleccione el código SRC/EPSG de destino
 3. Seleccione el método de remuestreo
 4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reprojected`, especifique en
@@ -263,7 +263,7 @@ Tómese un momento para poner a prueba lo que ha aprendido en este capítulo res
 
 :::{dropdown} Respuesta
 
-1. En la barra superior, navegue hasta el `Vector`menú → `Data Management Tools` → `Reproject Layer`
+1. En la barra superior, navegue hasta el menú `Vector` → `Data Management Tools` → `Reproject Layer`
 2. En la ventana de parámetros, seleccione el SRC de destino (mediante la búsqueda del código EPSG o el nombre)
 3. Hacer clic en `Run`. Se añadirá una nueva capa llamada `Reprojected` al lienzo del mapa
 

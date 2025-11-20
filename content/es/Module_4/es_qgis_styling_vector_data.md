@@ -23,7 +23,7 @@ Panel de estilo en QGIS 3.30.2.
 
 Para cada capa de QGIS existe un panel de estilos, en el que se puede cambiar la simbología, el color y la etiqueta de las entidades de esa capa. Hay dos maneras de abrir las opciones de estilo de capa en QGIS:
 
-1. Haga clic con el botón derecho en la capa a la que desee aplicar el estilo y seleccione `properties`. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la `symbology` pestaña.
+1. Haga clic con el botón derecho en la capa a la que desee aplicar el estilo y seleccione `properties`. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la pestaña `Symbology`.
 2. Abra el panel de estilo de capas activándolo en `View`>`Panels`>`Styling Panel`. Normalmente, el panel aparecerá en la parte derecha del lienzo del mapa.
 
 A la izquierda del panel de estilo puede elegir las distintas pestañas para acceder a las diferentes opciones de estilo.
@@ -61,7 +61,7 @@ La mayoría de los marcadores simples constan de un __relleno__ y un __contorno_
 - El contorno determina el color, el tipo y el grosor del contorno. Junto al color y la transparencia, el contorno es el elemento más critico para diferenciar entre los distintos elementos. Por ejemplo, las líneas más gruesas para las carreteras suelen significar vías de un orden superior (como autopistas), mientras que las líneas discontinuas finas, podrían significar senderos, inaccesibles para los vehículos de carretera.
 - Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un [método de categorización](/content/es/Module_3/es_qgis_data_classification.md).
 
-En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte {numref}`en_3.36_m4_symbolisation_methods`). Los más importantes son __Símbolo único__, __Categorizado__, __Graduado__, y __Basado en reglas__.
+En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte la {numref}`en_3.36_m4_symbolisation_methods`). Los más importantes son __Single Symbol__, __Categorized__, __Graduated__, y __Rule base__.
 
 :::{figure} /fig/en_3.36_m4_symbolisation_methods.png
 ---
@@ -103,7 +103,7 @@ __Por ejemplo__, cree seis clases de tamaños de población y asigne un gradient
 
 - Cree reglas mediante el uso de una expresión y asigne un símbolo a las entidades, en las que se aplica la regla.
 - Puede especificar con mayor precisión las entidades que desea simbolizar.
-- Puede utilizar valores de distintos atributos (por ej.:,tipo de edificio y distrito urbano).
+- Puede utilizar valores de distintos atributos (p. ej.:,tipo de edificio y distrito urbano).
 - El constructor de expresiones le ayuda a crear reglas ya que le muestra los valores, campos, operadores, etc. disponibles.
 
 __Por ejemplo__, seleccione un símbolo para cada centro de salud, que sea un hospital y haya excedido su capacidad.
@@ -129,10 +129,10 @@ Puede seguir la guía paso a paso con la descarga de los [límites administrativ
 Ahora, queremos cambiar la simbología de una capa para que __solo sean visibles los contornos de los polígonos__. Esto es necesario para hacer visibles las capas inferiores a ésta.
 
 Para cambiar la simbología de una sola capa:
-1. Abra `Styling panel` y vaya a la pestaña de simbología. Por defecto, la simbología se configurará en `Single Symbol`. Esto significa que se aplicarán los mismos colores y contornos a todas las entidades de esa capa.
+1. Abra `Styling panel` y vaya a la pestaña Symbology. Por defecto, la simbología se configurará en `Single Symbol`. Esto significa que se aplicarán los mismos colores y contornos a todas las entidades de esa capa.
 2. Haga clic en `Simple Fill`.
 3. Haga clic en la flecha situada a la derecha de `Fill Colour`.
-4. Marque la `Transparent Fill`opción.
+4. Marque la opción `Transparent Fill`.
 
 :::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
@@ -164,7 +164,7 @@ Ordene las capas y vaya al panel de estilo de la capa superior
 
 3. Cambie la simbología de la capa Adm0 abriendo el panel de estilos y navegando hasta la pestaña de “Symbology”.
 4. Haga clic en `Simple Fill` para abrir las opciones de estilo.
-5. Despliegue el `Fill Colour` menú y marque la`Transparent Fill` opción. Esto hará visibles solo los límites, por lo que __podremos ver la capa debajo de esta__.
+5. Despliegue el menú `Fill Colour` y marque la opción `Transparent Fill`. Esto hará visibles solo los límites, por lo que __podremos ver la capa debajo de esta__.
 6. Elija un `Stroke Colour` y haga el `Stroke Width` de 0,66 milímetros.
 7. Haga clic en “OK”.
 8. __Repita el mismo proceso__ para la capa Adm1, utilizando el mismo color que para Adm0 (estará en "colores recientes") y deje el ancho del trazo en 0,26.
@@ -244,11 +244,11 @@ o en situaciones, en las que desee comunicar dos variables, en un mismo mapa. Po
 mapas coropléticos con símbolos graduados.
 La creación de mapas con símbolos graduados se realiza de forma similar a la creación de mapas coropléticos, pero implica un paso adicional:
 Crear centroides de los límites administrativos. Los centroides son puntos, que se sitúan en el centro calculado de
-polígonos (consulte el[módulo 5](/content/es/Module_5/es_qgis_non_spatial_tools.md)). 
-Utilizaremos la misma capa que para el mapa coroplético (consulte {numref}`en_map_design_example_variable_ranges`):
+polígonos (consulte el [módulo 5](/content/es/Module_5/es_qgis_non_spatial_tools.md)). 
+Utilizaremos la misma capa que para el mapa coroplético (consulte la {numref}`en_map_design_example_variable_ranges`):
 `NGA_Adm1_Pop`.
 
-1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroids`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte {numref}`en_3.36_m4_centroids`)
+1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroids`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`en_3.36_m4_centroids`)
 
 :::{figure} /fig/en_3.36_m4_centroids.png
 ---
@@ -258,10 +258,10 @@ width: 500 px
 Creación de centroides en QGIS 3.36.
 :::
 
-2. En `Input Layer`, seleccione la `NGA_Adm1_Pop`capa . Haga clic en `Run`.
-3. Aparecerá una nueva capa de puntos denominada `Centroids` en su panel de capas. Abra su panel de estilo y navegue hasta la pestaña de simbología.
+2. En `Input Layer`, seleccione la capa `NGA_Adm1_Pop`. Haga clic en `Run`.
+3. Aparecerá una nueva capa de puntos denominada `Centroids` en su panel de capas. Abra su panel de Layer Styling y navegue hasta la pestaña Symbology.
 4. Configure el método de simbolización a `Graduated`.
-5. En __Valor__, seleccione `total_pop`.
+5. En __Value__, seleccione `total_pop`.
 6. Cambie __Method__ de `Colour` a `Size`.
 7. Haga clic en `Classify`.
 8. *Opcional*: Cambiar el color y la transparencia de los círculos.
@@ -289,7 +289,7 @@ Podemos utilizar la simbología para __mostrar la diferencia entre las entidades
 #### Configuración de los diferentes símbolos de puntos para distintas entidades
 
 1. Descargue el [GeoPackage de incidentes de seguridad de ACLED](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip) y cárguelo en su proyecto de QGIS. Se trata de una capa de puntos en la que cada punto, indica un incidente de seguridad distinto.
-2. Abra el `Symbology tab` para esa capa y elija `Categorized` en lugar de `Single Symbol`.
+2. Abra la pestaña `Symbology` para esa capa y elija `Categorized` en lugar de `Single Symbol`.
 
 :::{note}
 La simbología categorizada se utiliza cuando se dispone de variables ***distintas***.
@@ -345,7 +345,7 @@ __Marcadores simples, símbolos SVG e imágenes ráster__
 Además de los marcadores simples, QGIS también le permite utilizar símbolos SVG e imágenes ráster, como símbolos para los datos vectoriales.
 
 - __Los marcadores simples__ son formas simples como rectángulos, círculos o cruces, que pueden ajustarse en la capa de simbolización (color, tamaño, contorno, etc.). La mayor parte de su estilo en QGIS se hará con estos marcadores.
-- __Los símbolos SVG__ son *símbolos gráficos vectoriales escalables *. Como archivos vectoriales, pueden expandirse a cualquier tamaño, mientras, que mantiene la misma resolución. En la mayoría de los casos, si desea utilizar un símbolo más complejo (por ej.: hospital, escuela, estación de tren), los símbolos SVG son la mejor opción, ya que le permiten ajustar el símbolo (colores, contorno, tamaño, etc.).
+- __Los símbolos SVG__ son *símbolos gráficos vectoriales escalables*. Como archivos vectoriales, pueden expandirse a cualquier tamaño, mientras, que mantiene la misma resolución. En la mayoría de los casos, si desea utilizar un símbolo más complejo (p. ej.: hospital, escuela, estación de tren), los símbolos SVG son la mejor opción, ya que le permiten ajustar el símbolo (colores, contorno, tamaño, etc.).
 - Si selecciona las __imágenes ráster__, la resolución del símbolo estará limitada por la cantidad de píxeles de la imagen. No es aconsejable utilizar imágenes de alta resolución como símbolos en su mapa porque esto podría sobrecargar su computadora.
 
 :::
@@ -417,25 +417,25 @@ También existe una biblioteca con iconos humanitarios de la [Oficina de la ONU 
 - La simbología se almacena en el __archivo de proyecto QGIS__ (`.qgz` o `.qgs`).
 - También es posible __exportar__ o __guardar__ el estilo externamente (como un archivo `.qml` ) para poder reutilizarlo o compartirlo.
 :::
-3. __Al estilizar las capas de polígonos (por ej.: los límites administrativos), ¿Para qué sirve utilizar relleno transparente y contornos visibles?__
+3. __Al estilizar las capas de polígonos (p. ej.: los límites administrativos), ¿Para qué sirve utilizar relleno transparente y contornos visibles?__
 
 :::{dropdown} Respuesta
-- __Contexto:__ El relleno transparente permite que las capas subyacentes (por ej.: mapa base, imágenes, etiquetas) se muestren a través del contexto espacial.
+- __Contexto:__ El relleno transparente permite que las capas subyacentes (p. ej.: mapa base, imágenes, etiquetas) se muestren a través del contexto espacial.
 - __Importancia de los límites:__ Los contornos visibles (trazos) indican claramente los bordes del polígono, aunque el relleno sea sutil.
 - __Jerarquía y legibilidad:__ Si se muestran muchos polígonos superpuestos o regiones adyacentes, los rellenos transparentes evitan que las áreas se bloqueen entre sí, mientras que los contornos mantienen los límites diferenciados.
 :::
 
 
-4. __Explique cómo se crea un mapa coroplético en QGIS con el uso de colores graduados. ¿Qué debe elegir (por ej.: atributo, número de clases, rampa de color)?__
+4. __Explique cómo se crea un mapa coroplético en QGIS con el uso de colores graduados. ¿Qué debe elegir (p. ej.: atributo, número de clases, rampa de color)?__
 
 :::{dropdown} Respuesta
 1. Hacer clic con el <kbd>botón derecho</kbd> en la capa, seleccionar `Properties` y vaya hasta la pestaña `Symbology`.
 2. Cambiar el método de simbolización de `Single-Symbol` a `Graduated`.
-3. Junto a `Value`, elegir el atributo numérico, que se desee visualizar en el mapa coroplético (por ej.: densidad de población, porcentaje, precipitación, casos de enfermedad normalizados, etc.). El valor de este atributo determinará el color.
-4. Elegir un método de clasificación y configurar el número de clases (por ej.: intervalo equitativo, cuantil, cortes naturales, etc.).
+3. Junto a `Value`, elegir el atributo numérico, que se desee visualizar en el mapa coroplético (p. ej.: densidad de población, porcentaje, precipitación, casos de enfermedad normalizados, etc.). El valor de este atributo determinará el color.
+4. Elegir un método de clasificación y configurar el número de clases (p. ej.: intervalo equitativo, cuantil, cortes naturales, etc.).
 5. Elegir una rampa de color adecuada para la información, que se quiere visualizar (claro → oscuro).
 6. Haga clic en `Classify` y `Apply`.
-7. Observar el lienzo del mapa y realizar los ajustes necesarios (por ej.: eliminar los contornos de los polígonos).
+7. Observar el lienzo del mapa y realizar los ajustes necesarios (p. ej.: eliminar los contornos de los polígonos).
 :::
 
 5. __¿Qué son los símbolos SVG y qué ventajas ofrecen sobre las imágenes ráster para la simbología de puntos?__

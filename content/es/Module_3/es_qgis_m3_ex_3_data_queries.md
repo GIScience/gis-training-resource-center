@@ -26,8 +26,8 @@ El objetivo de este ejercicio es aprender a manipular datos secundarios para gen
 ### Enlaces a artículos de la Wiki
 
 * [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-* [Tipos de datos geoespaciales](/content/es/Wiki/es_qgis_geodata_types_wiki.md)
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
+* [Tipos de datos geográficos](/content/es/Wiki/es_qgis_geodata_types_wiki.md)
+* [Importación de datos geográficos en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
 * [Concepto de capa](/content/es/Wiki/es_qgis_layer_concept_wiki.md)
 * [Consultas no espaciales](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md)
 * [Consultas espaciales](/content/es/Wiki/es_qgis_spatial_queries_wiki.md)
@@ -87,9 +87,9 @@ Asegúrese de __descomprimir__ la carpeta del ejercicio antes de cargar las capa
     2. __"Extraer entidades de"__: `Buildings_Belete_Weyne.geojson`
     3. __"Donde las entidades (predicado geométrico)"__: `are within`
     4. __"Al comparar con las entidades de"__: `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`
-    5. En `Extracted` haga clic en los tres puntos ![](/fig/Three_points.png) --> `Save to File...` e navegue a su **carpeta temporal** y guarde la capa nueva con el nombre **Beledweyne_buildings_affected** y haga clic `Save`.
+    5. En `Extracted` haga clic en los tres puntos ![](/fig/Three_points.png) --> `Save to File...` y navegue a su **carpeta temporal** y guarde la capa nueva con el nombre **Beledweyne_buildings_affected** y haga clic `Save`.
     6. Ahora, haga clic en `Run`.
-    7. Ajusta tus capas de forma que sólo veas las zonas inundadas y su nueva capa **Beledweyne_buildings_affected**. Elimine la capa `som_admbnda_adm2_ocha_20230308.shp` y `Buildings_Belete_Weyne.geojson`.
+    7. Ajusta sus capas de forma que solo vea las zonas inundadas y su nueva capa **Beledweyne_buildings_affected**. Elimine la capa `som_admbnda_adm2_ocha_20230308.shp` y `Buildings_Belete_Weyne.geojson`.
 
     :::{Attention}
     La herramienta [`Select by Location`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#select-by-location) es muy similar. Esta herramienta funciona de la misma manera, pero en lugar de extraer directamente las entidades, las selecciona.
@@ -100,7 +100,7 @@ Asegúrese de __descomprimir__ la carpeta del ejercicio antes de cargar las capa
 6. En el siguiente paso, queremos identificar edificios especiales entre los edificios afectados. Abra la tabla de atributos y revise qué tipo de edificios se encuentran en la capa. Esta información se encuentra en la columna "edificio". Puede ordenar esta columna.
 Para extraer "hospitales", "escuelas" y "mezquitas", podemos utilizar la herramienta `Extract by Expression`.
     1.  Busque la herramienta `Extract by Expression` en `Toolbox`.
-    2. `Expression`: haga clic en ![](/fig/miconexpression.png).
+    2. Haga clic en `Expression`![](/fig/miconexpression.png).
     3. Se abrirá la ventana "Expresión". Aquí podemos construir una consulta muy específica. En el panel central, abra`Field and values`. Aquí se pueden ver todas las columnas de la capa. Haga clic en `building`. A la derecha, debería aparecer la opción `All unique`. Haga clic en esta. Aquí puede ver ahora todos los valores únicos de la columna "edificio".
     4. En el campo `Expression`, introduzca la siguiente expresión (consultar la figura siguiente):
     ```

@@ -115,7 +115,7 @@ Todos los datos se descargaron del Intercambio de Datos Humanitarios. Descargue 
 1. Cargue los archivos `.shp` en un nuevo proyecto de QGIS.
 2. Examine la tabla de atributos de las diferentes capas y observe qué información hay disponible y cómo se denominan los atributos.
 3. Queremos crear un mapa comprensible, piense en qué datos necesitamos y qué datos podemos omitir.
-    - Por ejemplo, la capa `hotosm_gha_roads_lines` contiene demasiadas carreteras para un mapa a escala nacional. Abramos la tabla de atributos y veamos cómo se clasifican las carreteras. Los datos utilizan la clasificación convencional de OpenStreetMap: El tipo de carretera se describe en el atributo `highway`. En nuestro caso, podría ser útil mostrar solo las carreteras primarias y secundarias, por lo tanto, todas las entidades en las que `highway=primary` O `highway=secondary`.
+    - Por ejemplo, la capa `hotosm_gha_roads_lines` contiene demasiadas carreteras para un mapa a escala nacional. Abramos la tabla de atributos y veamos cómo se clasifican las carreteras. Los datos utilizan la clasificación convencional de OpenStreetMap: El tipo de carretera se describe en el atributo `highway`. En nuestro caso, podría ser útil mostrar solo las carreteras primarias y secundarias, por lo tanto, todas las entidades en las que `highway=primary` OR `highway=secondary`.
 
 ### Primera parte: Simbolización
 
@@ -237,7 +237,7 @@ Se dejó espacio en la esquina inferior derecha para un mapa general.
 
 ¿Qué se puede aprender de este mapa? Se pueden identificar claramente las zonas de más difícil acceso y donde el tiempo de desplazamiento hasta un hospital es mucho mayor que en las regiones pobladas del sur de Ghana.
 
-### Ejercicio adicional.
+### Ejercicio adicional
 
 Si terminó con el mapa principal, haga clic en el mapa y vaya a las propiedades del elemento. En la sección de capas, marque las casillas `Lock Layers` y `Lock styles for layers`. Esto significa que si cambia el mapa en la ventana principal de QGIS, el mapa que añadió en Ahora puede empezar a trabajar en un mapa general. Utilizaremos un shapefile con los países de África.
 

@@ -22,7 +22,7 @@ La interfaz del compositor de diseño de impresión.
 5. __Panel de entidades__: Muestra los elementos añadidos al diseño de impresión
 6. __Opciones avanzadas__: Personaliza cada elemento de la capa
 
-El gestor de diseños de impresión también funciona con una barra de herramientas (en la parte izquierda de la pantalla), donde se pueden seleccionar distintas herramientas (por ej.: para añadir imágenes) y paneles (en la parte derecha de la pantalla), donde se puede cambiar la configuración de las herramientas o de los elementos, que se han añadido al mapa.
+El gestor de diseños de impresión también funciona con una barra de herramientas (en la parte izquierda de la pantalla), donde se pueden seleccionar distintas herramientas (p. ej.: para añadir imágenes) y paneles (en la parte derecha de la pantalla), donde se puede cambiar la configuración de las herramientas o de los elementos, que se han añadido al mapa.
 
 En primer lugar, siempre deberá configurar el tamaño de su mapa:
 
@@ -34,7 +34,7 @@ En primer lugar, siempre deberá configurar el tamaño de su mapa:
 
 ### Añadir un nuevo mapa
 
-- Añada un nuevo mapa haciendo clic en el![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map` botón de la __barra de herramientas a la izquierda__ y arrastre un rectángulo sobre el lienzo del mapa.
+- Añada un nuevo mapa haciendo clic en el botón ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map` de la __barra de herramientas a la izquierda__ y arrastre un rectángulo sobre el lienzo del mapa.
 - Para desplazar el mapa en el lienzo, basta con __seleccionar el mapa__ y __arrastrarlo__ con el mouse.
 - Para desplazarse dentro de un mapa, seleccione el botón ![](/fig/30.30.2_print_layout_move_content_icon.png) `Move item content` de la barra de herramientas de la izquierda.
 - Para acercar zoom sobre el mapa, mientras utiliza la herramienta ![](/fig/30.30.2_print_layout_move_content_icon.png) `Move item content`, puede __presionar CTRL + desplazar la rueda del mouse__ (suavemente) o introducir la escala de manera manual en las propiedades del elemento.
@@ -65,7 +65,7 @@ Añadir un nuevo mapa al diseño de impresión (fuente: CartONG).
 
 El título deberá describir el fenómeno representado en el mapa.
 
-- Para añadir texto (título, explicaciones), utilice la ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`herramienta y dibuje un rectángulo del tamaño deseado.
+- Para añadir texto (título, explicaciones), utilice la herramienta ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label` y dibuje un rectángulo del tamaño deseado.
 - En el panel __Propiedades del elemento__ (a la derecha de su pantalla) puede __introducir su texto__ y __cambiar la fuente, el estilo, el color, etc.__ (Recuerde utilizar la barra de desplazamiento de la ventana para ver todas las opciones).
 
 :::{figure} ../../fig/en_30.30.2_print_layout_add_text.png
@@ -86,7 +86,7 @@ Añadir texto al diseño de impresión (fuente: CartONG).
 
 Si trabaja para una organización, lo más probable es que añada el logotipo de esa organización en los mapas que elabore.
 
-1. Haga clic en la![](../../fig/30.30.2_print_layout_add_image.png) `Add image` herramienta de la barra de herramientas de la izquierda.
+1. Haga clic en la herramienta ![](../../fig/30.30.2_print_layout_add_image.png) `Add image` de la barra de herramientas de la izquierda.
 2. Arrastre un rectángulo sobre el lienzo.
 3. En la pestaña __“Item Properties”__, tendrá la opción de elegir una imagen SVG de su biblioteca SVG en QGIS o elegir una __imagen ráster__. La mayoría de los archivos de imagen son imágenes ráster.
 4. Seleccione `Raster image` y haga clic en `...` para elegir la ubicación de la imagen.
@@ -124,7 +124,7 @@ Añadir una leyenda al diseño de impresión.
 En el panel de __Propiedades de elementos__, si mantiene la opción __`Auto update`__ marcada, las nuevas capas añadidas a su proyecto se añadirán automáticamente a la leyenda, pero no podrá controlarlas individualmente (renombrarlas si es necesario, reordenarlas o eliminar elementos). 
 Una vez, desmarcada la opción, podrá actualizar el nombre de las capas, agruparlas, eliminarlas o reorganizarlas, etc.
 
-Si tiene demasiados elementos en su leyenda y no caben en su mapa horizontalmente, también puede dividir la leyenda en varias columnas, con la navegación por el panel Propiedades de elemento, expandir la sección `Columns` y aumentar la `Count`.
+Si tiene demasiados elementos en su leyenda y no caben en su mapa horizontalmente, también puede dividir la leyenda en varias columnas, con la navegación por el panel Item Properties, expandir la sección `Columns` y aumentar la `Count`.
 
 ::::{tab-set}
 :::{tab-item} Añadir una leyenda
@@ -154,7 +154,7 @@ A veces, el espacio de su mapa no es el adecuado para una sola leyenda vertical.
 
 ### Añadir una barra de escala
 
-Antes de añadir una barra de escala, seleccione su mapa principal y compruebe en el panel __Propiedades del elemento__ que el campo `Scale` tiene un __número redondo__.
+Antes de añadir una barra de escala, seleccione su mapa principal y compruebe en el panel __Item Properties__ que el campo `Scale` tiene un __número redondo__.
 
 :::{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
@@ -169,7 +169,7 @@ Para añadir una barra de escala, puede utilizar el botón ![](../../fig/30.30.2
 - Qué mapa __está relacionado con la escala__.
 - __Sistema de unidades de la barra__ (metros, millas, grados).
 - __Segmentos a la izquierda__: segmentos mostrados antes de 0 m (siempre ajustados a 0).
-- __Ancho fijo__: defina el ancho de cada segmento (por ej.: 1 km, 10 km, 50 km, etc.).
+- __Ancho fijo__: defina el ancho de cada segmento (p. ej.: 1 km, 10 km, 50 km, etc.).
 - __Altura__: altura (grosor) de la barra de escala.
 
 Hay muchas otras opciones para personalizar la barra de escala (cambiar la fuente, los colores, etc.).
@@ -193,13 +193,13 @@ Añadir un mapa general en la esquina de su mapa le ayudará a localizar la zona
 Para crear un mapa general, debe seguir estos pasos:
 
 1. Asegúrese de __bloquear las capas y el estilo de capa__ en su mapa principal.
-    - Navegue al panel __Propiedades del elemento__ > `Lock layers` y `Lock styles for layers`.
-2. Prepare una __capa con las fronteras nacionales o subnacionales o los puntos de referencia importantes__ en su proyecto (por ej.: límites administrativos, capitales). Estas no deberán ser las mismas capas que las del mapa principal. Si es necesario, puede duplicar las capas, que desee utilizar en el mapa general (como los límites administrativos). No cambie las capas de su mapa principal, si tiene intención de cambiar la simbología, más adelante.
-3. __Inserte el mapa general__ en su diseño de impresión, con el uso de la ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` herramienta (en la esquina inferior derecha, por ejemplo).
+    - Navegue al panel __Item Properties__ > `Lock layers` y `Lock styles for layers`.
+2. Prepare una __capa con las fronteras nacionales o subnacionales o los puntos de referencia importantes__ en su proyecto (p. ej.: límites administrativos, capitales). Estas no deberán ser las mismas capas que las del mapa principal. Si es necesario, puede duplicar las capas, que desee utilizar en el mapa general (como los límites administrativos). No cambie las capas de su mapa principal, si tiene intención de cambiar la simbología, más adelante.
+3. __Inserte el mapa general__ en su diseño de impresión, con el uso de la herramienta ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` (en la esquina inferior derecha, por ejemplo).
 4. __Bloquee el nuevo mapa__ en el panel de propiedades del elemento.
 5. Añada un rectángulo para mostrar la extensión de su mapa principal.
-    1. Vaya a las __propiedades__ de su mapa principal > desplácese hacia abajo hasta que vea __Visión general__.
-    2. Añada una visión general haciendo clic el`+` botón .
+    1. Vaya a las __propiedades__ de su mapa principal > desplácese hacia abajo hasta que vea __Overviews__.
+    2. Añada una visión general haciendo clic el botón `+`.
     3. __Vincule el mapa principal__ seleccionándolo en la opción `Map frame`.
 
 :::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
@@ -224,7 +224,7 @@ Añadir un mapa general y __bloquear la capa__.
 :::
 
 :::{Caution}
-Este método requiere que esté seguro de que no va a modificar el mapa general, ya que una vez bloqueadas las capas, éstas mantendrán el estilo y cualquier actualización. no afectará al mapa general.
+Este método requiere que esté seguro de que no va a modificar el mapa general, ya que una vez bloqueadas las capas, éstas mantendrán el estilo y cualquier actualización no afectará al mapa general.
 :::
 
 ----
@@ -233,7 +233,7 @@ Este método requiere que esté seguro de que no va a modificar el mapa general,
 
 Una vez que haya terminado con la composición del mapa, es el momento de exportar el diseño de impresión como archivo PDF o SVG.
 
-1. En la barra de herramientas encima del lienzo, haga clic en el ![](../../fig/30.30.2_print_layout_export_pdf.png) `Export as PDF` botón .
+1. En la barra de herramientas encima del lienzo, haga clic en el botón ![](../../fig/30.30.2_print_layout_export_pdf.png) `Export as PDF`.
 2. Asigne un nombre nuevo al archivo y seleccione la ubicación en la que quiere guardarlo.
 3. Haga clic en `Save`.
 4. Se abrirá una nueva ventana "PDF Export Options". Aquí puede ajustar el algoritmo de compresión. Para obtener los mejores resultados, seleccione la compresión de imagen sin pérdida.
@@ -250,7 +250,7 @@ Las plantillas de mapas pueden simplificar y acelerar la creación de un diseño
 Si trabaja para una organización, que publica mapas a menudo, o tiene que crear varios mapas sobre los mismos temas, pero en distintas regiones o épocas, puede utilizar plantillas de mapas para omitir la disposición de los elementos.
 
 :::{note}
-Las capas,los mapas y las imágenes individuales no se guardan en la plantilla. De todos modos, si tiene las mismas capas en el proyecto en el que carga la plantilla, la leyenda se actualizará, como corresponde.
+Las capas, los mapas y las imágenes individuales no se guardan en la plantilla. De todos modos, si tiene las mismas capas en el proyecto en el que carga la plantilla, la leyenda se actualizará, como corresponde.
 :::
 
 ::::{tab-set}
@@ -270,7 +270,7 @@ Las capas,los mapas y las imágenes individuales no se guardan en la plantilla. 
 Puede arrastrar y soltar archivos de plantillas (`.qpt`, QGIS template file) en QGIS o utilizar el __gestor de diseños__.
 
 1. Abra el gestor de diseño en `Layout` > `Layout Manager`.
-2. Vaya a la sección "__Nueva desde la plantilla__".
+2. Vaya a la sección __New from Template__.
 3. Elija `Specific` y seleccione la ubicación donde guardó su plantilla.
 4. Haga clic en “Open”.
 
@@ -318,7 +318,7 @@ Si no puede ver las herramientas del Atlas, primero debe activar la barra de her
 
 Un atlas generará una nueva página, con el mismo diseño de mapa para cada entidad de una capa. Para la mayoría de los propósitos, es útil crear primero, un diseño de mapa con los elementos como leyenda, fuentes y mapa general y luego insertar el elemento de mapa, que será controlado por el Atlas. Para generar un atlas:
 
-1. Haga clic en el ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings` botón de la barra de herramientas del Atlas.
+1. Haga clic en el botón ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings` de la barra de herramientas del Atlas.
 2. En la nueva ventana, active la `Generate an Atlas`opción .
 3. Seleccione `Coverage Layer`. Esto determinará las entidades o polígonos, que se mostrarán en una página. En nuestro ejemplo, utilizaremos las regiones administrativas subnacionales de Nigeria (`ADM1`).
 4. Seleccione `Page Name`. Deberá ser el nombre de la región o localidad subnacional, que aparece en esa página. Para mostrar el nombre de la región, elegiremos la columna `ADM1_REF`, que contiene los nombres de las regiones en inglés.
@@ -349,7 +349,7 @@ El único elemento del diseño de impresión, que es controlado por el atlas, es
 - En QGIS, ir a `Project` → `New Print Layout` para crear un nuevo diseño.
 - Se abrirá el compositor de diseños de impresión, una nueva ventana en la que podrá empezar a componer el diseño del mapa.
 - Si ya se tienen diseños guardados __en este proyecto__, puede abrirlos a través del __gestor de diseño__ (`Project` → `Layout Manager`), donde habrá una lista de los diseños existentes.
-- Además, puede crear un diseño, a partir de un archivo de plantilla a través del gestor de diseños (__nuevo desde plantilla__) si se ha guardado un `.qpt`archivo.
+- Además, puede crear un diseño, a partir de un archivo de plantilla a través del gestor de diseños (__nuevo desde plantilla__) si se ha guardado un archivo `.qpt`.
 :::
 
 
@@ -359,7 +359,7 @@ El único elemento del diseño de impresión, que es controlado por el atlas, es
 - El elemento de mapa en el compositor de diseño de impresión es una del lienzo del mapa en la ventana principal de QGIS y muestra las capas tal y como aparecen en la ventana principal.
 - En el lienzo del mapa principal, puede interactuar con los datos, mientras, que en el compositor de diseños de impresión, solo se pueden ver los datos.
 - El elemento de mapa muestra el mapa tal y como está en el lienzo del mapa (podría tener que actualizar el elemento de mapa para mostrar la simbología modificada), a menos que bloquee las capas y los estilos de capas para el elemento de mapa específico.
-::
+:::
 
 3. __¿Cómo se bloquea la capa de un mapa que se ha añadido al diseño de impresión?__
 

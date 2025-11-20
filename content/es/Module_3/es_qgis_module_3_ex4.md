@@ -18,7 +18,7 @@ __Objetivo del ejercicio__
 
 En este ejercicio, aprenderá a digitalizar las posiciones de los asentamientos al crear nuevos conjuntos de datos. Además, aprenderá a enriquecer el conjunto de datos geoespaciales simples con información adicional.
 
-__Tipo de ejercicio de capacitación:__
+__Tipo de ejercicio de capacitación__
 
 - Este ejercicio puede utilizarse en la capacitación en línea y presencial.
 - Puede realizarse como ejercicio guiado o de forma individual como autoaprendizaje.
@@ -129,7 +129,7 @@ Como solo necesitamos las LGA, tenemos que exportarlas del conjunto de datos ori
         Abra la herramienta y elija como `Input Layer` la capa "kontur_boundaries_NG_20230628.gpkg". En `Selection attribute` elija la columna `osm_admin_level`. El `Operator` tiene que ser `=` y como `value` utilizamos `6` ya que los LGA tienen el osm_admin_level 6.
     * En `Extracted (attribute)`, haga clic en los tres puntos -> `Save to GeoPackage`, navegue hasta su carpeta `temp`, y dele nombre a la nueva capa "Nigeria_admin2_pop". Haga clic en `Save`. Nombre la capa con el mismo nombre ("Nigeria_admin2_pop"). Haga clic en `OK` y luego en `Run`.
 
-6. Ahora tenemos que extraer todas las LGA de Borno. Para hacer esto, utilizaremos la herramienta `Extract by Location` ([Wiki Video](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#seleccionar-por-expresión)). Busque la herramienta en `Processing Toolbox` y ábrela.
+6. Ahora tenemos que extraer todas las LGA de Borno. Para hacer esto, utilizaremos la herramienta `Extract by Location` ([Wiki Video](/content/es/Wiki/es_qgis_non_spatial_queries_wiki.md#seleccionar-por-expresión)). Busque la herramienta en `Processing Toolbox` y ábrala.
     * En `Input Layer` utilizaremos “Nigeria_admin2_pop”.
     * Para `By comparing to the features from` utilizamos la capa “AOI_Borno_admin1”.
     * Como `Geometric predicate` utilizamos `are within`.
@@ -248,7 +248,7 @@ align: center
 ---
 :::
 
-* Para utilizar solo los bordes, hacer clic en `simple fill` -> `Fill style` y seleccionar `No Brusch`. Ajuste el `Stroke Color` a rojo o a otro color de novia. Aumente la `Stroke width` para agrandar los bordes. A continuación, haga clic en `OK`.
+* Para utilizar solo los bordes, hacer clic en `simple fill` -> `Fill style` y seleccionar `No Brusch`. Ajuste el `Stroke Color` a rojo o a otro color brillante. Aumente la `Stroke width` para agrandar los bordes. A continuación, haga clic en `OK`.
 
 :::{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png
 ---
@@ -266,7 +266,7 @@ Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctament
     - __Unidades:__ Aquí puede averiguar si es posible utilizar metros con esta capa de datos o latitud y longitud.
 
 17. Esto se convertirá en un problema tan pronto como hagamos algo diferente de solo mostrar las capas. Puesto que debemos manipular las capas en el siguiente paso, necesitamos reproyectarlas primero ([video en Wiki](/content/es/Wiki/es_qgis_projections_wiki.md#modificación-de-la-proyección-cartográfica-de-una-capa-vector)).
-    * Haga clic en la `Vector` pestaña -> `Data Management Tools` -> `Reproject Layer` o buscar la herramienta en `Processing Toolbox `.
+    * Haga clic en la pestaña `Vector` -> `Data Management Tools` -> `Reproject Layer` o buscar la herramienta en `Processing Toolbox `.
     * Como `Input layer` seleccione “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
     * Seleccione como destino CRS/EPSG-Code __4326__.
     * Guarde el nuevo archivo en su carpeta `temp` haciendo clic en los tres puntos ![](/fig/Three_points.png) junto a `Reprojected`, especifique el nombre del archivo como “Flood_extand_Nigeria_october_2022_reprojected”.

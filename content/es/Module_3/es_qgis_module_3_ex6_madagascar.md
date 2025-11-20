@@ -114,10 +114,11 @@ Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexu
 
 | Nombre del conjunto de datos | Título original | Publicado por | Descargar desde |
 | :-------------------- | :----------------- |:----------------- |:----------------- |
-| mdg_admin1.shp | [Límites administrativos subnacionales](https://data.humdata.org/dataset/cod-ab-mdg) | Oficina de la ONU para la Coordinación de Asuntos Humanitarios | HDX |
-| mdg_admin2.shp | [Límites administrativos subnacionales](https://data.humdata.org/dataset/cod-ab-mdg) | Oficina de la ONU para la Coordinación de Asuntos Humanitarios | HDX |
-| hotosm_mdg_health_facilities.gpkg | [Centros de salud de Madagascar (exportado de OpenStreetMap)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) | Equipo humanitario de OpenStreetMap (HOT) | HDX |
-| TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Extensión de agua detectada por satélite sobre los distritos de Sambava y Vohemar, región de Sava, Madagascar al 1 de abril de 2024]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) | UNOSAT | HDX |
+| mdg_admin1.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) | Oficina de la ONU para la Coordinación de Asuntos Humanitarios | HDX |
+| mdg_admin2.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) | Oficina de la ONU para la Coordinación de Asuntos Humanitarios | HDX |
+| hotosm_mdg_health_facilities.gpkg | [Madagascar Health Facilities (OpenStreetMap export)]([https://data.humdata.org/dataset/hotosm_pak_health_facilities](https://data.humdata.org/dataset/madagascar-healthsites)) | Equipo humanitario de OpenStreetMap (HOT) | HDX |
+| TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [
+Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024]([[https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024))) | UNOSAT | HDX |
 | roads_sava.gpkg | Carreteras de Sava | Equipo humanitario de OpenStreetMap | Herramienta de exportación HOT |
 
 
@@ -130,7 +131,7 @@ Para mantener sus datos organizados y de fácil acceso, es importante establecer
 :::
 
 
-## Tarea 1: Obtener una visión general de la situación en los alrededores de Sambava y Vehomar
+## Tarea 1: Obtener una visión general de la situación en los alrededores de Sambava y Vohemar
 
 ::::{card}
 
@@ -219,7 +220,7 @@ width: 400px
 name: m3_ex6_qgis_task2_1
 align: center
 ---
-Extraiga por ubicación.
+Extracción por ubicación.
 :::
 
 Bien, ahora tenemos una buena visión general de la ubicación de los centros de salud. Necesitamos mucha más información sobre la zona inundada para identificar los centros sanitarios afectados por la inundación. Afortunadamente, la ONU acaba de compartir un conjunto de datos sobre el alcance de las inundaciones. Extensión de agua detectada por satélite sobre los distritos de Sambava y Vohemar, región de Sava, Madagascar al 1 de abril de 2024

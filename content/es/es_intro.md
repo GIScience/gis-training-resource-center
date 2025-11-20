@@ -23,17 +23,17 @@ La plataforma central de capacitación para la enseñanza de habilidades en el s
 ::::{grid} 2
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_TOT_intro.html
+:link: https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html
 
-__[Empezar a enseñar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_TOT_intro.html)__ ➡️
+__[Empezar a enseñar](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html)__ ➡️
 
 :::
 
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_module_1_overview.html
+:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html
 
-__[Empezar a aprender](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_module_1_overview.html)__ ➡️
+__[Empezar a aprender](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__ ➡️
 
 :::
 
@@ -69,22 +69,22 @@ El objetivo principal es empoderar a las personas en diversas funciones dentro d
 Las habilidades de QGIS, que ofrece esta plataforma de capacitación, abarcan niveles de competencia básico, intermedio y avanzado, cada uno incluye tres módulos específicos.
 
 :::{dropdown} Habilidades básicas
-| Módulo 1: Introducción a los sistemas de información geográfica (SIG) ✨  | Módulo 2: Trabajo con datos geoespaciales 🌍  | Módulo 3: Operaciones básicas en el sistema de información geográfica (SIG) 📍           |
+| Módulo 1: Introducción a SIG ✨  | Módulo 2: Trabajo con datos geoespaciales 🌍  | Módulo 3: Operaciones básicas en SIG 📍           |
 | ---------------------------------------------------- | -------------------------------------- | --------------------------------------------- |
-| Instalación de QGIS                                    | Concepto de capa en el sistema de información geográfica (SIG)                   | Edición y creación de datos                     |
+| Instalación de QGIS                                    | Concepto de capa en SIG                   | Edición y creación de datos                     |
 | Mapas en papel y cartografía, diferencia con mapas digitales | Importación de datos                            | Selección y edición de atributos de entidades geográficas       |
-| Introducción a los sistemas de información geográfica (SIG)                                  | Entidades y atributos geográficos            | Selección de entidades geográficas                            |
+| Introducción a SIG                                  | Entidades y atributos geográficos            | Selección de entidades geográficas                            |
 | Descripción de la interfaz de QGIS                           | Datos ráster y vectoriales: conceptos básicos | Consultas espaciales: seleccionar por polígono + ubicación |
 | Plataforma WebGIS                                      | Datos vectoriales                            | Clasificación de datos                          |
 | Resumen de las aplicaciones móviles                                 | Formatos de archivos vectoriales                    | Introducción a las consultas no espaciales           |
-| Ejemplos de mapas creados con sistemas de información geográfica (SIG)                    | Selección de mapas base                      |                                               |
+| Ejemplos de mapas creados con SIG                    | Selección de mapas base                      |                                               |
 |                                                      | Proyecciones cartográficas                            |                                               |
 |                                                      | Fuentes de datos                           |                                               |
 ::::
 
 :::{dropdown} Habilidades intermedias
 
-| Módulo 4: Representación 🗺️ | Módulo 5: Operaciones intermedias del sistema de información geográfica (SIG) 🌐 | Módulo 6: Análisis de datos con QGIS 📊 |
+| Módulo 4: Representación 🗺️ | Módulo 5: Operaciones intermedias de SIG 🌐 | Módulo 6: Análisis de datos con QGIS 📊 |
 | ------------------------------- | ------------------------------------------- | -------------------------------------- |
 | Visualización | Geoprocesamiento: Buffer |                                        |
 | Variables gráficas | Geoprocesamiento: Recorte |                                        |
@@ -111,14 +111,14 @@ Las habilidades de QGIS, que ofrece esta plataforma de capacitación, abarcan ni
 
 ::::{grid} 2
 :::{card} __[Instructores](/content/es/Trainers_corner/es_TOT_intro.md)__
-Hay una dedicada [sección para instructores](/content/es/Trainers_corner/es_how_to_training.md) que deseen utilizar la plataforma de capacitación.
+Hay una [sección para instructores](/content/es/Trainers_corner/es_how_to_training.md) que deseen utilizar la plataforma de capacitación.
 
 El componente más importante son los planes de capacitación. Estos brindan orientación sobre cuándo usar qué en su ciclo de capacitación.
 Sin embargo, cada componente del material de capacitación está diseñado para utilizarse de forma independiente. Además de los planes de capacitación, descubrirá una gran variedad de recursos, desde las mejores prácticas para la capacitación hasta métodos innovadores para enseñar el SIG.
 
 :::
 
-:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_module_1_overview.html)__
+:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__
 Sus instructores serán quienes le guíen en esta plataforma de capacitación. Si tiene alguna pregunta sobre esta plataforma de capacitación, póngase en contacto con su instructor.
 Esta no es una plataforma de autoaprendizaje. Si quiere aprender QGIS, siempre es mejor participar en un curso y aprender de un instructor con experiencia. Sin embargo, puede usar esta plataforma para perfeccionar sus habilidades de QGIS, solo tenga en cuenta que el objetivo de la plataforma de capacitación, no es el autoaprendizaje.
 :::
@@ -137,12 +137,12 @@ ___
 ## Contacto
 
 :::{admonition} Contacte con el Equipo de la Plataforma de Capacitación en SIG de la IFRC
-Si tiene preguntas, observaciones o comentarios sobre la plataforma de capacitación y el contenido. siempre nos alegramos de escucharlo. Puede contactarnos por correo electrónico en __gis-training-platform@heigit.org__
+Si tiene preguntas, observaciones o comentarios sobre la plataforma de capacitación y el contenido, siempre nos da gusto escucharle. Puede contactarnos por correo electrónico en __gis-training-platform@heigit.org__
 :::
 
 ## Contribución
 
-Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, que fomenta el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](https://giscience.github.io/gis-training-resource-center/spanish/content/es/contribution_plan.html).
+Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, fomentando el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](https://giscience.github.io/gis-training-resource-center/content/es/contribution_plan.html).
 
 ## Únase a la comunidad
 

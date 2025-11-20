@@ -54,8 +54,8 @@ __Artículos relevantes en Wiki__:
 ^^^
 
 * [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-* [Tipos de datos geoespaciales](/content/es/Wiki/es_qgis_geodata_types_wiki.md)
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
+* [Tipos de datos geográficos](/content/es/Wiki/es_qgis_geodata_types_wiki.md)
+* [Importación de datos geográficos en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
 * [Concepto de capa](/content/es/Wiki/es_qgis_layer_concept_wiki.md)
 * [Tabla de atributos](/content/es/Wiki/es_qgis_attribute_table_wiki.md)
 * [Función de tabla: agregar campo](/content/es/Wiki/es_qgis_table_functions_wiki.md)
@@ -120,7 +120,7 @@ Nuestro objetivo es elaborar una visión general de la situación de la inseguri
 2. Una vez creado el proyecto, guardarlo en la carpeta “project” de “Ex_Sierra_Leone_foodinsecurity”. Para hacer esto, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Nombre el proyecto con el nombre “Sierra_Leone_foodinsecurity”.
 
 3. Importe los GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` y `Sierra_leone_roads.gpkg` así como el shapefile `Sierra_leone_foodinsecurity_2015.shp` a su proyecto mediante arrastrar y soltar ([video en Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop)).
-O al haciendo clic en `Layer`-> `Add Layer`-> `Add Vector Layer`: Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta "Sierra_leone_borders.gpkg" en su explorador de archivos. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)).
+O al hacer clic en `Layer`-> `Add Layer`-> `Add Vector Layer`: Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta "Sierra_leone_borders.gpkg" en su explorador de archivos. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)).
 
 :::{Attention}
 Los GeoPackage pueden contener varios archivos e incluso proyectos QGIS completos. Cuando cargue un archivo de este tipo en QGIS aparecerá una ventana en la que deberá seleccionar los archivos que desea cargar en su proyecto de QGIS.
