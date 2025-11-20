@@ -550,15 +550,15 @@ document.write(`
 <h1><span class="section-number">7.1. </span>El diseñador de modelos en QGIS<a class="headerlink" href="#el-disenador-de-modelos-en-qgis" title="Link to this heading">#</a></h1>
 <section id="introduccion-al-disenador-de-modelos-de-qgis">
 <h2><span class="section-number">7.1.1. </span>Introducción al diseñador de modelos de QGIS<a class="headerlink" href="#introduccion-al-disenador-de-modelos-de-qgis" title="Link to this heading">#</a></h2>
-<p>El <img alt="" src="../../../_images/processingModel.png" /> <code class="docutils literal notranslate"><span class="pre">Graphical</span> <span class="pre">Modeler</span></code>, también conocido como Model Builder, permite a los usuarios crear modelos complejos mediante una interfaz visual. La mayoría de las tareas de análisis en un SIG no están aisladas, sino que forman parte de una cadena de operaciones que dan lugar a una serie de entradas y salidas (por ejemplo, recortar el área de interés, realizar una unión espacial y aplicar algunas funciones de tabla). Con el Modelador Gráfico, esta cadena de operaciones puede combinarse en un único proceso, que luego puede reproducirse fácilmente con un conjunto diferente de entradas. Independientemente de cuántos pasos y algoritmos distintos intervengan en el análisis, un modelo se ejecuta como un único algoritmo, lo que ahorra tiempo y esfuerzo.</p>
+<p>El <img alt="" src="../../../_images/processingModel.png" /> <code class="docutils literal notranslate"><span class="pre">Diseñador</span> <span class="pre">de</span> <span class="pre">modelos</span></code>, también conocido como Model Builder, permite a los usuarios crear modelos complejos mediante una interfaz visual. La mayoría de las tareas de análisis en un SIG no están aisladas, sino que forman parte de una cadena de operaciones que dan lugar a una serie de entradas y salidas (por ejemplo, recortar el área de interés, realizar una unión espacial y aplicar algunas funciones de tabla). Con el Modelador Gráfico, esta cadena de operaciones puede combinarse en un único proceso, que luego puede reproducirse fácilmente con un conjunto diferente de entradas. Independientemente de cuántos pasos y algoritmos distintos intervengan en el análisis, un modelo se ejecuta como un único algoritmo, lo que ahorra tiempo y esfuerzo.</p>
 <section id="interfaz-grafica-de-usuario">
 <h3><span class="section-number">7.1.1.1. </span>Interfaz gráfica de usuario<a class="headerlink" href="#interfaz-grafica-de-usuario" title="Link to this heading">#</a></h3>
-<p>Se puede acceder al Modelador gráfico desde el menú Procesamiento <code class="docutils literal notranslate"><span class="pre">Processing</span> <span class="pre">-&gt;</span> <span class="pre">Graphical</span> <span class="pre">Modeler</span></code> como se muestra en <a class="reference internal" href="#open-graphical-modeler"><span class="std std-numref">Fig. 7.1</span></a>.</p>
-<figure class="align-default" id="open-graphical-modeler">
+<p>Se puede acceder al Modelador gráfico desde el menú Procesamiento <code class="docutils literal notranslate"><span class="pre">Procesos</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Diseñador</span> <span class="pre">de</span> <span class="pre">modelos</span></code> como se muestra en <a class="reference internal" href="#es-open-graphical-modeler"><span class="std std-numref">Fig. 7.1</span></a>.</p>
+<figure class="align-default" id="es-open-graphical-modeler">
 <a class="reference internal image-reference" href="../../../_images/en_open_graphical_modeler.png"><img alt="../../../_images/en_open_graphical_modeler.png" src="../../../_images/en_open_graphical_modeler.png" style="height: 150px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">Cómo abrir el Modelador gráfico en QGIS</span><a class="headerlink" href="#open-graphical-modeler" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">Cómo abrir el Modelador gráfico en QGIS</span><a class="headerlink" href="#es-open-graphical-modeler" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Se abrirá la siguiente ventana, que contiene todo lo que necesitamos para construir un modelo.</p>
@@ -569,7 +569,7 @@ document.write(`
 <p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">Captura de pantalla de la ventana Modelador gráfico para QGIS versión 3.28.4</span><a class="headerlink" href="#gui-graphical-modeler" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>En la ventana del Modelador gráfico se pueden ver varios iconos y menús. En primer lugar, nos centraremos en la ventana izquierda de la sección <code class="docutils literal notranslate"><span class="pre">Inputs</span></code> y <code class="docutils literal notranslate"><span class="pre">Algorithms</span></code>. Las entradas son todas las variables o capas de entrada de un modelo, como una capa vectorial, una capa rasterizada, una cadena, una booleana, una expresión y muchas otras. Los algoritmos son todas las herramientas que se utilizan para procesar las variables de entrada. En la cadena de procesamiento, un algoritmo/herramienta devolverá una salida que será utilizada por otra/herramienta siguiente hasta crear la salida final.</p>
+<p>En la ventana del Modelador gráfico se pueden ver varios iconos y menús. En primer lugar, nos centraremos en la ventana izquierda de la sección <code class="docutils literal notranslate"><span class="pre">Entradas</span></code> y <code class="docutils literal notranslate"><span class="pre">Algoritmos</span></code>. Las entradas son todas las variables o capas de entrada de un modelo, como una capa vectorial, una capa rasterizada, una cadena, una booleana, una expresión y muchas otras. Los algoritmos son todas las herramientas que se utilizan para procesar las variables de entrada. En la cadena de procesamiento, un algoritmo/herramienta devolverá una salida que será utilizada por otra/herramienta siguiente hasta crear la salida final.</p>
 </section>
 <section id="creacion-de-un-modelo">
 <h3><span class="section-number">7.1.1.2. </span>Creación de un modelo<a class="headerlink" href="#creacion-de-un-modelo" title="Link to this heading">#</a></h3>
@@ -586,23 +586,23 @@ document.write(`
 <h4><span class="section-number">7.1.1.2.2. </span>Selección de insumos<a class="headerlink" href="#seleccion-de-insumos" title="Link to this heading">#</a></h4>
 <p>Para añadir nuevas entradas:</p>
 <ol class="arabic simple">
-<li><p>Seleccione la <code class="docutils literal notranslate"><span class="pre">Inputs</span></code> pestaña en la ventana de la izquierda.</p></li>
-<li><p>A continuación, seleccione la página <code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code> haciendo doble clic o arrastrándola y soltándola en el lienzo del modelo (<a class="reference internal" href="#vector-layer-modeler"><span class="std std-numref">Fig. 7.3</span></a>). Se abrirá la ventana de definición de parámetros de entrada (<a class="reference internal" href="#input-vector-modeler"><span class="std std-numref">Fig. 7.4</span></a>).</p></li>
-<li><p>En esta ventana podemos personalizar algunos parámetros de entrada vectorial como <code class="docutils literal notranslate"><span class="pre">Description</span></code>, <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">type</span></code> (Punto, Línea, Polígono) y también podemos definir nuestra entrada como obligatoria para su modelo marcando la casilla <code class="docutils literal notranslate"><span class="pre">Mandatory</span></code>.</p></li>
+<li><p>Seleccione la <code class="docutils literal notranslate"><span class="pre">Entrada</span></code> pestaña en la ventana de la izquierda.</p></li>
+<li><p>A continuación, seleccione la página <code class="docutils literal notranslate"><span class="pre">Capa</span> <span class="pre">vectorial</span></code> haciendo doble clic o arrastrándola y soltándola en el lienzo del modelo (<a class="reference internal" href="#es-vector-layer-modeler"><span class="std std-numref">Fig. 7.3</span></a>). Se abrirá la ventana de definición de parámetros de entrada (<a class="reference internal" href="#es-input-vector-modeler"><span class="std std-numref">Fig. 7.4</span></a>).</p></li>
+<li><p>En esta ventana podemos personalizar algunos parámetros de entrada vectorial como <code class="docutils literal notranslate"><span class="pre">Descripción</span></code>, <code class="docutils literal notranslate"><span class="pre">Tipo</span> <span class="pre">de</span> <span class="pre">geometría</span></code> (Punto, Línea, Polígono) y también podemos definir nuestra entrada como obligatoria para su modelo marcando la casilla <code class="docutils literal notranslate"><span class="pre">Mandatory</span></code>.</p></li>
 </ol>
 <!---It is also possible to select the `Advanced` checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select them.-->
-<figure class="align-default" id="vector-layer-modeler">
+<figure class="align-default" id="es-vector-layer-modeler">
 <a class="reference internal image-reference" href="../../../_images/en_vector_layer_modeler.PNG"><img alt="../../../_images/en_vector_layer_modeler.PNG" src="../../../_images/en_vector_layer_modeler.PNG" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Capa vectorial como entrada</span><a class="headerlink" href="#vector-layer-modeler" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Capa vectorial como entrada</span><a class="headerlink" href="#es-vector-layer-modeler" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-default" id="input-vector-modeler">
+<figure class="align-default" id="es-input-vector-modeler">
 <a class="reference internal image-reference" href="../../../_images/en_input_vector_modeler.PNG"><img alt="../../../_images/en_input_vector_modeler.PNG" src="../../../_images/en_input_vector_modeler.PNG" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Definición de los parámetros de la capa vectorial</span><a class="headerlink" href="#input-vector-modeler" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Definición de los parámetros de la capa vectorial</span><a class="headerlink" href="#es-input-vector-modeler" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -611,15 +611,15 @@ document.write(`
 <p>El creador de modelos utiliza los mismos algoritmos que están disponibles en la caja de herramientas de procesamiento de la ventana principal de QGIS.
 Para añadir algoritmos:</p>
 <ol class="arabic simple">
-<li><p>Seleccione la <code class="docutils literal notranslate"><span class="pre">Algorithms</span></code> pestaña de la izquierda.</p></li>
-<li><p>Utilizando la barra de búsqueda, busque la herramienta <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> algoritmo como se muestra en <a class="reference internal" href="#model-buffer"><span class="std std-numref">Fig. 7.5</span></a>.</p></li>
+<li><p>Seleccione la <code class="docutils literal notranslate"><span class="pre">Algoritmos</span></code> pestaña de la izquierda.</p></li>
+<li><p>Utilizando la barra de búsqueda, busque la herramienta <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> algoritmo como se muestra en <a class="reference internal" href="#es-model-buffer"><span class="std std-numref">Fig. 7.5</span></a>.</p></li>
 <li><p>Añádelo al lienzo del modelo arrastrándolo sobre el lienzo o haciendo doble clic sobre él.</p></li>
 </ol>
-<figure class="align-default" id="model-buffer">
+<figure class="align-default" id="es-model-buffer">
 <a class="reference internal image-reference" href="../../../_images/en_model_buffer.PNG"><img alt="../../../_images/en_model_buffer.PNG" src="../../../_images/en_model_buffer.PNG" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Selección del algoritmo de amortiguación</span><a class="headerlink" href="#model-buffer" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Selección del algoritmo de amortiguación</span><a class="headerlink" href="#es-model-buffer" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="4">
@@ -630,8 +630,8 @@ Para añadir algoritmos:</p>
 <p>La ventana del algoritmo tiene un aspecto un poco diferente que cuando se utiliza el algoritmo fuera del model builder. La principal diferencia es que tiene que especificar que la entrada del algoritmo sea una de las entradas del modelo ____ que haya definido o una salida <strong>de otro algoritmo</strong>. Al seleccionar la salida de otro algoritmo, puede encadenar varios pasos de análisis para crear un flujo de trabajo complejo.</p>
 </div>
 <ol class="arabic simple" start="5">
-<li><p>En el campo <code class="docutils literal notranslate"><span class="pre">Description</span></code>, ingrese un nombre o una descripción de la etapa de tratamiento (por ejemplo, Red de carretera de amortiguación)</p></li>
-<li><p>Como <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code>, seleccione una capa de entrada para el modelo (por ejemplo, infraestructura vial).</p></li>
+<li><p>En el campo <code class="docutils literal notranslate"><span class="pre">Descripción</span></code>, ingrese un nombre o una descripción de la etapa de tratamiento (por ejemplo, Red de carretera de amortiguación)</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Capa</span> <span class="pre">de</span> <span class="pre">entrada</span></code>, seleccione una capa de entrada para el modelo (por ejemplo, infraestructura vial).</p></li>
 <li><p>A continuación, queremos especificar el tamaño del amortiguador. Las unidades de medida serán las mismas que para el proyecto CRS. Ingrese 200.000. Esto indicará al algoritmo que cree un amortiguador de 200 metros (o unidades de medida).</p></li>
 <li><p>Añada un nombre en el campo de salida <img alt="" src="../../../_images/qgis_3.40_model_outputs.png" /> para especificar la salida del algoritmo como salida del modelo.</p></li>
 </ol>
@@ -649,7 +649,7 @@ Para añadir algoritmos:</p>
 <p>Para encadenar etapas de tratamiento:</p>
 <ol class="arabic simple">
 <li><p>Añada otro algoritmo al lienzo del modelo (por ejemplo, Recortar)</p></li>
-<li><p>Como <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">layer</span></code>, en lugar de <img alt="" src="../../../_images/qgis_3.40_input_model_input.png" /> <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">input</span></code>, seleccione <img alt="" src="content/es/Module_7/fig/qgis_3.40_input_model_algo_output.png" />. <code class="docutils literal notranslate"><span class="pre">Algorithm</span> <span class="pre">output</span></code>.</p></li>
+<li><p>Como <code class="docutils literal notranslate"><span class="pre">Capa</span> <span class="pre">de</span> <span class="pre">entrada</span></code>, en lugar de <img alt="" src="../../../_images/qgis_3.40_input_model_input.png" /> <code class="docutils literal notranslate"><span class="pre">Usando</span> <span class="pre">entrada</span> <span class="pre">del</span> <span class="pre">modelo</span></code>, seleccione <img alt="" src="content/es/Module_7/fig/qgis_3.40_input_model_algo_output.png" />. <code class="docutils literal notranslate"><span class="pre">Salida</span> <span class="pre">del</span> <span class="pre">algoritmo</span></code>.</p></li>
 <li><p>A continuación, seleccione la entrada específica de un paso de procesamiento anterior.</p></li>
 </ol>
 </section>
@@ -684,7 +684,7 @@ Para copiar varios atributos, pero no todos, debe introducir los nombres de las 
 <p class="admonition-title">Añada cuadros de grupo</p>
 <p>Cuando organice su modelo, puede añadir cuadros de grupo para agrupar algoritmos en el lienzo del modelo y ordenar visualmente los diferentes pasos.</p>
 <ul class="simple">
-<li><p>En la barra superior, vaya a <code class="docutils literal notranslate"><span class="pre">Edit</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Group</span> <span class="pre">Box</span></code>. Aparecerá un cuadro gris en el fondo del lienzo del modelo</p></li>
+<li><p>En la barra superior, vaya a <code class="docutils literal notranslate"><span class="pre">Editar</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">de</span> <span class="pre">grupo</span></code>. Aparecerá un cuadro gris en el fondo del lienzo del modelo</p></li>
 <li><p><kbd>Haga doble clic</kbd> en el cuadro de grupo para introducir un nombre y personalizar el color.</p></li>
 </ul>
 </div>
