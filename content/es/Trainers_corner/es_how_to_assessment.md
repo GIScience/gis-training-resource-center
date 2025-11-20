@@ -1,8 +1,8 @@
-# Evaluaciones en la Capacitación GIS: Una Guía
+# Evaluaciones en la Capacitación SIG: Una Guía
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
-Este artículo explica la encuesta de evaluación disponible en esta plataforma, que puede usarse para medir el éxito de una capacitación básica en GIS. La evaluación está orientada a medir la motivación por aprender GIS y la autoevaluación de las habilidades de los participantes en GIS. Se mantiene breve y centrada en lo esencial, pero puede ser ampliada por los facilitadores si lo consideran necesario.
+Este artículo explica la encuesta de evaluación disponible en esta plataforma, que puede usarse para medir el éxito de una capacitación básica en SIG. La evaluación está orientada a medir la motivación por aprender SIG y la autoevaluación de las habilidades de los participantes en SIG. Se mantiene breve y centrada en lo esencial, pero puede ser ampliada por los facilitadores si lo consideran necesario.
 
 ## Plantillas de encuesta
 
@@ -30,12 +30,12 @@ Ahora puedes usar la encuesta con tu cuenta de Google.
 
 Las evaluaciones son esenciales en toda capacitación. Entre sus objetivos se incluyen:
 
-1. **Comprender el nivel inicial:** Antes de iniciar el entrenamiento, es importante evaluar el conocimiento, habilidades y motivación de los participantes con respecto a GIS. Esto permite adaptar la capacitación a sus necesidades.  
+1. **Comprender el nivel inicial:** Antes de iniciar el entrenamiento, es importante evaluar el conocimiento, habilidades y motivación de los participantes con respecto a SIG. Esto permite adaptar la capacitación a sus necesidades.  
 2. **Personalizar el contenido:** Analizar las evaluaciones previas permite a los facilitadores ajustar el contenido según el nivel de cada participante, manteniendo la relevancia y el interés.  
 3. **Establecer metas y expectativas claras:** Las evaluaciones iniciales ayudan a definir objetivos específicos de aprendizaje y expectativas tanto para facilitadores como para participantes.  
 4. **Medir progreso y eficacia:** Las evaluaciones posteriores permiten medir el aprendizaje y la eficacia del programa comparando los resultados antes y después del entrenamiento.  
 5. **Recoger retroalimentación:** Las evaluaciones posteriores ofrecen información sobre la percepción de los participantes, identifican brechas de aprendizaje y sugieren mejoras.  
-6. **Motivar el aprendizaje continuo:** Ver mejoras tangibles en habilidades y conocimientos motiva a los participantes a seguir utilizando GIS y desarrollar su experiencia.
+6. **Motivar el aprendizaje continuo:** Ver mejoras tangibles en habilidades y conocimientos motiva a los participantes a seguir utilizando SIG y desarrollar su experiencia.
 
 En resumen, las evaluaciones proporcionan mediciones iniciales, permiten personalizar el contenido, establecen metas claras, miden el progreso, recogen retroalimentación y fomentan el aprendizaje continuo, asegurando una experiencia de capacitación más efectiva e impactante.
 
@@ -95,7 +95,7 @@ Evalúa el nivel de conocimiento percibido por los participantes antes del entre
 
 4. ¿Cuál es tu experiencia previa en operaciones con QGIS? (respuestas múltiples posibles)
    - Ninguna
-   - Usé GIS una vez
+   - Usé SIG una vez
    - Recopilé geodatos
    - Participé en un mapathon
    - Conocimientos básicos en procesamiento de datos
