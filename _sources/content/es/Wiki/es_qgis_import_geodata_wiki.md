@@ -14,7 +14,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 #### Abrir datos vectoriales mediante la pestaña Layer
 
 1. Haga clic en `Layer`-> `Add Layer`-> `Add Vector Layer`.
-2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo ráster.
+2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo vectorial.
 3. Seleccione el archivo y haga clic en `Open`
 4. Nuevamente en QGIS, haga clic en `Add`
 
@@ -80,7 +80,7 @@ Al cargar datos vectoriales en formato de texto como .csv o .txt en QGIS, estos 
     :::
     * `Record and Fields Options`: En este menú desplegable, puede indicar a QGIS que detecte el tipo de datos de las distintas columnas del campo y que detecte las cabeceras de las columnas. Por lo general, aquí no se debe realizar ningún ajuste.
     * `Geometry definition`: En esta sección se especifica qué columnas del archivo contienen la información espacial para georreferenciar los datos en el mapa. Si el archivo tiene una columna con datos de __latitud__ y otra con datos de __longitud__, puede utilizarlas para georreferenciar los datos. Verifique `Point Coordinates`. Seleccione para `X field` "LONGITUD" y para `Y field` "LATITUD".
-        Debajo, seleccione `Geometry CRS`el sistema de referencia de coordenadas (SRC). De manera predeterminada, QGIS seleccionará el SRC del proyecto.
+        Debajo `Geometry CRS` seleccione el sistema de referencia de coordenadas (SRC). De manera predeterminada, QGIS seleccionará el SRC del proyecto.
         Si el archivo no contiene información espacial, elija la opción `No geometry (attribute only table)`.
 4. Haga clic en `Add`
 

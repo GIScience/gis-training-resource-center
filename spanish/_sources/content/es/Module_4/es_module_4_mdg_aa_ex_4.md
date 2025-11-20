@@ -124,13 +124,13 @@ Asegúrese de que las siguientes capas ya están cargadas en su proyecto de QGIS
 - `admin2_education_affected`
 
 Si falta alguno:
-- Cárguelos mediante la función de**arrastrar y soltar** desde su carpeta `results`; o bien
+- Cárguelos mediante la función de **arrastrar y soltar** desde su carpeta `results`; o bien
 - utilice `Layer` → `Add Layer` → `Add Vector Layer` o `Add Raster Layer`
 
 ---
 
 ### 2. **Aplicar archivos de estilo predefinidos**
-Aplique los siguientes archivos de estilo`.qml` a las capas correspondientes:
+Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 
 | **Capa** | **Archivo de estilos** |
 |----------------------------------------|-------------------------------------------|

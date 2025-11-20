@@ -34,14 +34,14 @@ En el selector de rampa de color, puede ajustar paso a paso el color. En la part
 
 En algunos casos, la rampa de color deberá invertirse para facilitar la lectura del mapa:
 
-1. Haga clic en la __ flecha junto a la rampa de color__ para abrir el menú desplegable.
+1. Haga clic en la __flecha junto a la rampa de color__ para abrir el menú desplegable.
 2. Haga clic en `Invert Colour Ramp`.
 
 ## Uso de mejores paletas de colores
 
 :::{note}
 
-Las rampas de color disponibles, por defecto, en QGIS son limitadas y no se ajustan, a muchos propósitos de la cartografía. Sin embargo, QGIS incluye el `cpt-city` catálogo de paletas de colores con numerosas rampas y paletas de colores, cuidadosamente elaboradas. Entre otras, puede encontrar rampas de color creadas específicamente para modelos de terreno o de elevación.
+Las rampas de color disponibles, por defecto, en QGIS son limitadas y no se ajustan, a muchos propósitos de la cartografía. Sin embargo, QGIS incluye el catálogo `cpt-city` de paletas de colores con numerosas rampas y paletas de colores, cuidadosamente elaboradas. Entre otras, puede encontrar rampas de color creadas específicamente para modelos de terreno o de elevación.
 
 :::
 
@@ -84,7 +84,7 @@ El catálogo de rampas de colores cpt-city en QGIS 3.36
 1. __¿Por qué no se puede aplicar estilo a una capa ráster mediante el cambio en el "relleno" o en el "contorno", como se hace con los datos vectoriales?__
 
 :::{dropdown} Respuesta
-- Los datos ráster están formados por __píxeles (celdas)__, cada uno con un valor (por ej.: elevación, reflectancia), no por geometrías discretas. Por lo tanto, no hay un "contorno" que trazar, ni un "relleno" único para todo el polígono.
+- Los datos ráster están formados por __píxeles (celdas)__, cada uno con un valor (p. ej.: elevación, reflectancia), no por geometrías discretas. Por lo tanto, no hay un "contorno" que trazar, ni un "relleno" único para todo el polígono.
 - El estilo de los rásters consiste en cartografiar los valores de los píxeles a los colores, en lugar de aplicar estilos de límites o de relleno a las entidades.
 - El estilo vectorial funciona sobre entidades geométricas (puntos, líneas, polígonos) y puede controlar rellenos, trazos, formas, etc.; pero el estilo ráster, funciona mediante algoritmos de simbología/renderización (rampa de color, estiramiento, clasificación) sobre la cuadrícula continua de valores.
 :::
@@ -101,13 +101,13 @@ El catálogo de rampas de colores cpt-city en QGIS 3.36
 :::{dropdown} Respuesta
 - Una rampa de color (o gradiente) es una gama continua de colores, que se asignan a la gama de valores ráster (del mínimo al máximo).
 - Al asignar valores crecientes (o decrecientes) a una progresión de colores, el lector puede interpretar visualmente la magnitud, los gradientes y los patrones espaciales de los datos numéricos subyacentes.
-- El uso de color (en lugar del gris) puede ayudar a destacar los umbrales significativos, los valores críticos (por ej.: muy alto o bajo) y mejorar la legibilidad y el atractivo visual.
-- Una rampa de color bien diseñada puede resaltar diferencias (por ej.: valores más altos vs.valores más bajos), revelar la estructura espacial (por ej.: cumbres, valles, agrupaciones) y hacer que el ráster sea significativo, en lugar de una simple mancha gris.
+- El uso de color (en lugar del gris) puede ayudar a destacar los umbrales significativos, los valores críticos (p. ej.: muy alto o bajo) y mejorar la legibilidad y el atractivo visual.
+- Una rampa de color bien diseñada puede resaltar diferencias (p. ej.: valores más altos vs.valores más bajos), revelar la estructura espacial (p. ej.: cumbres, valles, agrupaciones) y hacer que el ráster sea significativo, en lugar de una simple mancha gris.
 
 
 :::
 
-4. __Brinde un ejemplo de un conjunto de datos ráster (por ej.: modelo digital de elevación, Índice de Vegetación de Diferencia Normalizada (NDVI) , precipitación) y proponga una rampa o paleta de colores adecuada, que podría utilizar en QGIS__
+4. __Brinde un ejemplo de un conjunto de datos ráster (p. ej.: modelo digital de elevación, Índice de Vegetación de Diferencia Normalizada (NDVI) , precipitación) y proponga una rampa o paleta de colores adecuada, que podría utilizar en QGIS__
 
 :::{dropdown} Respuesta
 __Ejemplo:__ Un modelo digital de elevación (DEM) que represente la elevación del terreno (en metros)
@@ -121,7 +121,7 @@ En QGIS puede elegir una rampa como “Terrain (elevation)” o una rampa person
 
 :::
 
-5. __Al diseñar una rampa de color para datos ráster (por ej.: elevación, temperatura), ¿Qué hay que tener en cuenta en términos de luminosidad, tono o uniformidad perceptiva?__
+5. __Al diseñar una rampa de color para datos ráster (p. ej.: elevación, temperatura), ¿Qué hay que tener en cuenta en términos de luminosidad, tono o uniformidad perceptiva?__
 
 :::{dropdown} Respuesta
 

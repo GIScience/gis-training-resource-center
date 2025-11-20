@@ -96,9 +96,9 @@ Mantenga su gestión de datos ordenada, mediante la creación de una estructura 
 ## Tarea 1: Preparación de los datos
 
 
-1. Cree un nuevo proyecto QGIS y guárdelo en su carpeta de ejercicios. Dele un nombre claro, por ej.: “Larkana_inundacion_respuesta_map”.
+1. Cree un nuevo proyecto QGIS y guárdelo en su carpeta de ejercicios. Dele un nombre claro, p. ej.: “Larkana_inundacion_respuesta_map”.
 
-2. En el __panel Navegador__, abra la `Project Home`carpeta y vaya a la subcarpeta de datos.
+2. En el __panel Navegador__, abra la carpeta `Project Home` y vaya a la subcarpeta de datos.
 3. Importe las capas a la carpeta y luego, importe las capas a su proyecto de QGIS:
     - Centros de salud: `Health_Facilities_Flood_2024_AOI.gpkg`
     - Carreteras: `Roads_Larkana.gpkg`
@@ -122,13 +122,13 @@ En el panel de capas:
 - y coloque las capas de puntos (centros de salud y carreteras bloqueadas) en la parte superior.
 
 Cada capa tiene su propio [panel de simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) donde puede ajustar la simbología, los colores y las etiquetas de las entidades geográficas de esa capa. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? Piense en qué datos necesitamos y qué datos podemos omitir.
-Por ejemplo, la capa `Roads_Larkana` contiene demasiadas carreteras para un mapa a escala nacional. Abramos la tabla de atributos y veamos cómo se clasifican las carreteras. Los datos utilizan la clasificación convencional de OpenStreetMap: El tipo de carretera se describe en el atributo `highway`. En nuestro caso, podría ser útil mostrar solo las carreteras primarias y secundarias, por lo tanto, todas las entidades en las que `highway=primary` O `highway=secondary`.
+Por ejemplo, la capa `Roads_Larkana` contiene demasiadas carreteras para un mapa a escala nacional. Abramos la tabla de atributos y veamos cómo se clasifican las carreteras. Los datos utilizan la clasificación convencional de OpenStreetMap: El tipo de carretera se describe en el atributo `highway`. En nuestro caso, podría ser útil mostrar solo las carreteras primarias y secundarias, por lo tanto, todas las entidades en las que `highway=primary` OR `highway=secondary`.
 
 Recorramos las capas una por una y visualicémoslas, de manera significativa.
 
 ### __Centros de salud:__
 
-En el __panel de capas__, haga clic con el botón derecho en la capa `Health_Facilities_Flood_2024_AOI` > `Properties`. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la `Symbology` pestaña.
+En el __panel de capas__, haga clic con el botón derecho en la capa `Health_Facilities_Flood_2024_AOI` > `Properties`. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la pestaña `Symbology`.
 Vamos a crear nuestro propio símbolo personalizado para los centros de salud:
 1. En `Symbol layer type`, seleccione __`SVG Marker`__.
 2. Desplácese hacia abajo hasta el navegador SVG. Aquí encontrará todas las carpetas de sus bibliotecas instaladas SVG.
@@ -137,7 +137,7 @@ Vamos a crear nuestro propio símbolo personalizado para los centros de salud:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 :::
 
-- Desplácese por la carpeta hasta encontrar un símbolo adecuado (por ej.:![](/fig/en_m4_ex_2_cross_symbol.png)).
+- Desplácese por la carpeta hasta encontrar un símbolo adecuado (p. ej.:![](/fig/en_m4_ex_2_cross_symbol.png)).
 
 :::{figure} ../../fig/crescent_moon.PNG
 ---
@@ -218,7 +218,7 @@ En el [ejercicio anterior](/content/es/Module_3/es_qgis_module_3_ex2.md) descubr
 
 Para ello, crearemos un conjunto de datos de puntos, completamente nuevo, que represente a los aeropuertos.
 * Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Video Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#create-a-new-layer))
-* En `Database`, haga clic en ![](/fig/Three_points.png) y navegue a la`temp` carpeta. Asigne un nombre para el nuevo conjunto de datos __“PAK_airports”__. Haga clic en `Save`.
+* En `Database`, haga clic en ![](/fig/Three_points.png) y navegue a la carpeta `temp`. Asigne un nombre para el nuevo conjunto de datos __“PAK_airports”__. Haga clic en `Save`.
 * `Geometry type`: Seleccione `Point`
 * En `Additional dimension`, siempre deberá asegurarse de marcar `None`.
 * Seleccione el sistema de referencia de coordenadas (SRC) "EPSG:4326-WGS 84". De forma predeterminada, el QGIS selecciona el proyecto SRC.
@@ -261,7 +261,7 @@ Si no puede ver la barra de herramientas, `View` -> `Toolbars` consulte el `Digi
 
 Simbolicemos el aeropuerto con un icono de avión, para que podamos identificarlo con rapidez.
 
-* Haga clic con el botón derecho en la capa __"PAK_airports"__ en el `Layer Panel` -> `Properties`. Se abrirá una nueva ventana, con una sección de pestañas vertical, a la izquierda. Navegue a la [ `Symbology`pestaña de ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel).
+* Haga clic con el botón derecho en la capa __"PAK_airports"__ en el `Layer Panel` -> `Properties`. Se abrirá una nueva ventana, con una sección de pestañas vertical, a la izquierda. Navegue a la pestaña [ `Symbology`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel).
 * Haga clic en `Simple Marker`.
 * En `Symbol layer type`, seleccione __`SVG-Marker`__.
 * Desplácese un poco hacia abajo y encontrará un cuadro con todos los símbolos SVG disponibles.
@@ -286,7 +286,7 @@ Ajustes de la simbología para indicar la zona inundada.
 
 Una vez que esté satisfecho con la simbolización y los colores de sus datos, el siguiente paso es crear un __diseño de impresión__. El diseño de impresión es donde coloca todos los elementos de su mapa, junto con la información adicional, para crear un mapa completo. Al añadir información adicional como el título, las fuentes de datos, la proyección cartográfica, la descripción, etc., proporciona a su público los medios para contextualizar y evaluar el mapa y su contenido por sí mismos.
 
-1. Abra una nueva composición de impresión y asígnele un nombre (por ej.: Larkana_inundaciones).
+1. Abra una nueva composición de impresión y asígnele un nombre (p. ej.: Larkana_inundaciones).
     - Vaya a `Project` > `New Print Layout` > introduzca un nombre para la nueva composición de impresión > haga clic en `OK`.
 
 :::{figure} ../../fig/en_30.30.2_create_print_layout.png
@@ -331,7 +331,7 @@ Incorporación de una etiqueta para la ciudad de Larkana.
 4. Añadamos un título:
     - Haga clic en ![icono de añadir texto](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
     - Arrastre un rectángulo sobre el lienzo.
-    - En la ventana de propiedades del elemento, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir el título de su mapa (por ej.: “Larkana, centros de salud y carreteras afectadas por inundaciones”).
+    - En la ventana de propiedades del elemento, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir el título de su mapa (p. ej.: “Larkana, centros de salud y carreteras afectadas por inundaciones”).
     - Ajuste el tamaño de fuente: Haga clic en el menú desplegable __`Font`__ y ajuste el tamaño de la fuente para un título (25 pts. o más). Ajuste el cuadro de texto si es necesario.
     - Debajo del menú desplegable de fuentes, agregue un pequeño margen horizontal y vertical.
 
@@ -362,7 +362,7 @@ Ajustes de la leyenda.
 
 6. Ahora, añadamos una barra de escala:
     - Haga clic en el ![icono Add Scale bar](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
-    - Dibuje un rectángulo en el mapa y coloque la barra de escala en el borde del mapa. Puede ajustar las unidades de la barra de escala (metros, kilómetros, ...), el ancho de segmento fijo (por ej.: 10 km, 20 km, 50 km, ...) y el número de segmentos (a la derecha).
+    - Dibuje un rectángulo en el mapa y coloque la barra de escala en el borde del mapa. Puede ajustar las unidades de la barra de escala (metros, kilómetros, ...), el ancho de segmento fijo (p. ej.: 10 km, 20 km, 50 km, ...) y el número de segmentos (a la derecha).
 
 7. Añadamos una flecha que indique el norte:
     - Haga clic en el ![icono Add North Arrow](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`).
@@ -378,11 +378,11 @@ Ajustes de la leyenda.
 9. Agregue información adicional en un cuadro de texto.
     - Haga clic en el ![icono Add text](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
     - Arrastre un rectángulo sobre el lienzo
-    - En la ventana de propiedades del elemento, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir alguna información adicional del mapa, por ej.: el sistema de coordenadas, la información del mapa base o la fecha.
+    - En la ventana de propiedades del elemento, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir alguna información adicional del mapa, p. ej.: el sistema de coordenadas, la información del mapa base o la fecha.
 
 Cuando haya terminado con el diseño de su mapa, puede exportar el mapa imprimible como imagen o en formato pdf en `Layout`--> `Export as Image` o `Export as PDF`.
 
-Ahora podría tener como resultado un mapa similar a este. Aquí se ha dejado algo de espacio para implementar un mapa general. ¡Si aún dispone de tiempo, haga el ejercicio extra y añada un mapa general!
+Ahora podría tener como resultado un mapa similar a este. Aquí se ha dejado algo de espacio para implementar un mapa general. ¡Si aún dispone de tiempo, haga el ejercicio adicional y añada un mapa general!
 
 :::{figure} ../../fig/Larkana_Map_withoutOverview.png
 ---
@@ -392,7 +392,7 @@ name: Map Larkama
 Su mapa final podría verse algo así.
 :::
 
-### Ejercicio extra
+### Ejercicio adicional
 
 Si terminó con el mapa principal, haga clic en el mapa y vaya a las propiedades del elemento. En la sección de capas, marque las casillas `Lock Layers` y `Lock styles for layers`. Esto significa, que si cambia el mapa en la ventana principal de QGIS, el primer mapa, que haya agregado al diseño de impresión, no se verá afectado por estos cambios. Ahora puede comenzar a trabajar en un mapa general. Utilizaremos un shapefile con los límites administrativos de Pakistán.
 

@@ -49,7 +49,7 @@ En QGIS, solo los atributos seleccionados para la operación de disolución reci
 
 La herramienta ![](/fig/intersection_icon.png) `intersection` extrae la parte de las capas que se superponen.
 
-1. En la barra superior, navegue a `Vector` -> `Geoprocessing Tool` -> `Intersection` O `Toolbox` -> Buscar `Intersection`
+1. En la barra superior, navegue a `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Buscar `Intersection`
 2. `Input layer`: seleccione la capa uno
 3. `Overlay layer`: seleccionar la capa dos
 4. `Intersection`: Especifique dónde desea guardar los resultados y asígnele un buen nombre

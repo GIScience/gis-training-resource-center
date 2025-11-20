@@ -218,7 +218,7 @@
 <li class="toctree-l2"><a class="reference internal" href="es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
 <li class="toctree-l2"><a class="reference internal" href="es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="es_qgis_map_examples.html">4.8. Buen diseño de mapas y errores semiológicos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
 </ul>
 </details></li>
@@ -620,10 +620,10 @@ ejemplo, puede filtrar los datos para que solo se muestren los nombres de las ca
 <section id="anadir-etiquetas-basadas-en-reglas-a-una-capa">
 <h3><span class="section-number">4.3.1.4. </span>Añadir etiquetas basadas en reglas a una capa<a class="headerlink" href="#anadir-etiquetas-basadas-en-reglas-a-una-capa" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>En el panel de estilo, haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Labels</span></code> situada debajo de la pestaña Simbología.</p></li>
+<li><p>En el panel de estilo, haga clic en la pestaña <code class="docutils literal notranslate"><span class="pre">Labels</span></code> situada debajo de la pestaña Symbology.</p></li>
 <li><p>Seleccione <img alt="" src="../fig/30.30.2_Icon_rule_based_labeling.png" /> <code class="docutils literal notranslate"><span class="pre">Rule-based</span> <span class="pre">Labeling</span></code>.</p></li>
 <li><p>Añada una regla haciendo clic en el botón <code class="docutils literal notranslate"><span class="pre">+</span></code>, en la esquina izquierda del panel de estilo. Se abrirá una nueva ventana en el panel de estilo. En esta ventana, ingresará la regla (<code class="docutils literal notranslate"><span class="pre">Filter</span></code>) y personalizará la fuente, el tamaño y la ubicación de la etiqueta. Además, puede introducir una descripción.</p></li>
-<li><p>Introduzca un filtro (cuadro rojo en la figura inferior). La forma más sencilla es utilizar la <code class="docutils literal notranslate"><span class="pre">Expression</span> <span class="pre">string</span> <span class="pre">builder</span></code> situada a la derecha de la opción Filter. Haga clic en el símbolo <img alt="" src="../fig/expression_string_builder_icon.png" />. Se abrirá un nuevo panel.</p></li>
+<li><p>Introduzca un filtro (cuadro rojo en la figura inferior). La forma más sencilla es utilizar el <code class="docutils literal notranslate"><span class="pre">Expression</span> <span class="pre">string</span> <span class="pre">builder</span></code> situado a la derecha de la opción Filter. Haga clic en el símbolo <img alt="" src="../fig/expression_string_builder_icon.png" />. Se abrirá un nuevo panel.</p></li>
 <li><p>En el generador de cadenas de expresión, ingrese una regla. En el ejemplo del video que aparece a continuación, queremos mostrar únicamente los asentamientos que son capitales nacionales o regionales. Corresponde a la cadena <code class="docutils literal notranslate"><span class="pre">(&quot;CLASS&quot;</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">)</span> <span class="pre">OR</span> <span class="pre">(&quot;CLASS&quot;</span> <span class="pre">=</span> <span class="pre">2)</span></code>. Lo sabemos porque conocemos nuestros datos y hemos consultado previamente la tabla de atributos.</p></li>
 <li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 <li><p>Establezca la fuente y el tamaño de la fuente.</p></li>
@@ -689,7 +689,7 @@ ejemplo, puede filtrar los datos para que solo se muestren los nombres de las ca
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>QGIS genera las etiquetas automáticamente.
-A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña <strong>Etiqueta</strong> o utilizar la herramienta <img alt="" src="content/fig/30.30.2_move_a_label_diagram_callout_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">a</span> <span class="pre">Label,</span> <span class="pre">Diagram,</span> <span class="pre">or</span> <span class="pre">Callout</span></code> de la barra de herramientas <strong>Etiqueta</strong>.</p>
+A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña <strong>Label</strong> o utilizar la herramienta <img alt="" src="content/fig/30.30.2_move_a_label_diagram_callout_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">a</span> <span class="pre">Label,</span> <span class="pre">Diagram,</span> <span class="pre">or</span> <span class="pre">Callout</span></code> de la barra de herramientas <strong>Label</strong>.</p>
 <p>Por defecto, QGIS genera las etiquetas de manera que no se superpongan con otras etiquetas. Esto significa que no todas las etiquetas serán visibles si los datos son densos o se muestran muy cerca unos de otros. Puede optimizar la generación en la opción de renderizado.</p>
 </div>
 <div class="admonition attention">
@@ -713,8 +713,9 @@ A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar
 <li><p class="sd-card-text">En el modo Etiquetas simples, debe seleccionar un <strong>campo de atributo</strong> (columna) de la capa cuyos valores se mostrarán como etiquetas. Esto se denomina campo Valor. Por ejemplo, puede elegir la columna que almacena el nombre de una calle para mostrar los nombres de las calles en el mapa.</p></li>
 <li><p class="sd-card-text">También puede utilizar una expresión en lugar de un campo simple, por ejemplo, concatenar varios campos o incluir funciones, para construir lo que muestra la etiqueta.</p></li>
 </ul>
-<ol class="arabic simple" start="2">
-<li><p class="sd-card-text"><strong>¿Qué es una “regla” en el etiquetado basado en reglas y cómo se crea una (por ejemplo, utilizando expresiones)?</strong></p></li>
+</div>
+</details><ol class="arabic simple" start="2">
+<li><p><strong>¿Qué es una “regla” en el etiquetado basado en reglas y cómo se crea una (por ejemplo, utilizando expresiones)?</strong></p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -724,7 +725,6 @@ A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar
 <li><p class="sd-card-text">Para crear una regla: en las propiedades de Etiqueta de la capa, seleccione Etiquetado basado en reglas. A continuación, añada una nueva regla, asígnele una descripción y establezca una expresión de filtro (utilizando el generador de expresiones) que compruebe algunos atributos (y, opcionalmente, la escala, la visibilidad, etc.). Solo las entidades que satisfacen la expresión se etiquetan bajo esa regla.</p></li>
 </ul>
 </div>
-</details></div>
 </details><ol class="arabic simple" start="3">
 <li><p><strong>¿Por qué se prefiere el etiquetado basado en reglas en lugar de etiquetar cada entidad (con etiquetas simples)? Proporcione un ejemplo hipotético.</strong></p></li>
 </ol>

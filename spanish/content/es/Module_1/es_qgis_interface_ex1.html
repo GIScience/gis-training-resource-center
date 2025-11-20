@@ -218,7 +218,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas y errores semiológicos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
 </ul>
 </details></li>
@@ -574,14 +574,14 @@ document.write(`
 <section id="tareas">
 <h2>Tareas<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Crear un nuevo proyecto. Al abrir QGIS, aparecerá la capa de inicio, que muestra la interfaz de QGIS sin ningún proyecto cargado. A la izquierda habrá un panel con los proyectos recientes (probablemente estará vacío). A la derecha habrá un panel de noticias, con publicaciones del blog de QGIS y debajo de este se encuentra un <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Templates</span></code>panel.</p></li>
+<li><p>Crear un nuevo proyecto. Al abrir QGIS, aparecerá la capa de inicio, que muestra la interfaz de QGIS sin ningún proyecto cargado. A la izquierda habrá un panel con los proyectos recientes (probablemente estará vacío). A la derecha habrá un panel de noticias, con publicaciones del blog de QGIS y debajo de este se encuentra un panel <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Templates</span></code>.</p></li>
 </ol>
 <figure class="align-left" id="project-template">
 <a class="reference internal image-reference" href="../../../_images/en_project_template_BRC.png"><img alt="../../../_images/en_project_template_BRC.png" src="../../../_images/en_project_template_BRC.png" style="height: 400px;" />
 </a>
 </figure>
 <ul class="simple">
-<li><p>En el <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Templates</span></code>panel, __haga doble clic en la<code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Empty</span> <span class="pre">Project</span></code> opción __ (debe ser la única plantilla visible). Verá un lienzo en blanco en la interfaz principal, ya que aún no hay datos cargados.</p></li>
+<li><p>En el panel <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Templates</span></code>, <strong>haga doble clic en la opción <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Empty</span> <span class="pre">Project</span></code></strong> (debe ser la única plantilla visible). Verá un lienzo en blanco en la interfaz principal, ya que aún no hay datos cargados.</p></li>
 </ul>
 <ol class="arabic simple" start="2">
 <li><p>Conozca la interfaz de QGIS: Sobre el lienzo encontrará la <strong>barra de herramientas</strong> con muchas funciones diferentes. A izquierda y a la derecha del lienzo, se encuentran los paneles. En QGIS, por lo general, accederá a la herramientas en las <strong>barras de herramientas</strong> o en los <strong>paneles</strong>.</p></li>
@@ -609,7 +609,7 @@ A la derecha de la pantalla, lo más probable es que tenga el panel <strong>Caja
 <li><p>QGIS tiene otros paneles que puede utilizar y que no se muestran por defecto. Veamos cómo podemos encontrar y activar los demás paneles y barras de herramientas.</p></li>
 </ol>
 <ul class="simple">
-<li><p>En el <code class="docutils literal notranslate"><span class="pre">View</span></code> menú, busque las opciones <code class="docutils literal notranslate"><span class="pre">panels</span></code> y <code class="docutils literal notranslate"><span class="pre">toolbar</span></code>. Al pasar el puntero sobre cada elemento, verá una lista de los paneles y barras de herramientas disponibles, así como cuáles están activados. Tómese un minuto para explorar las distintas barras de herramientas y paneles. Hay muchas opciones, pero no se preocupe, no utilizará la mayoría de ellas, en esta capacitación. Los paneles que más utilizaremos son:</p></li>
+<li><p>En el menú <code class="docutils literal notranslate"><span class="pre">View</span></code>, busque las opciones <code class="docutils literal notranslate"><span class="pre">panels</span></code> y <code class="docutils literal notranslate"><span class="pre">toolbar</span></code>. Al pasar el puntero sobre cada elemento, verá una lista de los paneles y barras de herramientas disponibles, así como cuáles están activados. Tómese un minuto para explorar las distintas barras de herramientas y paneles. Hay muchas opciones, pero no se preocupe, no utilizará la mayoría de ellas, en esta capacitación. Los paneles que más utilizaremos son:</p></li>
 <li><p>Navegador</p></li>
 <li><p>Capas</p></li>
 <li><p>Estilo de capa</p></li>
@@ -627,9 +627,9 @@ A la derecha de la pantalla, lo más probable es que tenga el panel <strong>Caja
 </ul>
 <p>Tómese un momento para familiarizarse con las distintas formas de organizar la interfaz de QGIS. ¡Saber dónde encontrar las distintas funciones puede ahorrarle mucho tiempo y frustraciones en el futuro!</p>
 <ol class="arabic simple" start="6">
-<li><p>Ahora guardemos el proyecto. Haga clic en el icono de guardar de la barra de herramientas o abra el <code class="docutils literal notranslate"><span class="pre">Project</span></code> menú y elija <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code></p>
+<li><p>Ahora guardemos el proyecto. Haga clic en el icono de guardar de la barra de herramientas o abra el menú <code class="docutils literal notranslate"><span class="pre">Project</span></code> y elija <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code></p>
 <ol class="arabic simple">
-<li><p>Elija una ubicación para el archivo del proyecto. Un lugar ideal sería en la subcarpeta del proyecto en la estructura de carpetas modelo. Vaya a la carpeta llamada <code class="docutils literal notranslate"><span class="pre">Module_1_Exercise_1</span></code>. Asigne un nombre al proyecto de QGIS (por ejemplo: <code class="docutils literal notranslate"><span class="pre">QGIS_Training_Exercise_1</span></code>). El proyecto se guardará como un<code class="docutils literal notranslate"><span class="pre">.qqz</span></code> archivo.</p></li>
+<li><p>Elija una ubicación para el archivo del proyecto. Un lugar ideal sería en la subcarpeta del proyecto en la estructura de carpetas modelo. Vaya a la carpeta llamada <code class="docutils literal notranslate"><span class="pre">Module_1_Exercise_1</span></code>. Asigne un nombre al proyecto de QGIS (por ejemplo: <code class="docutils literal notranslate"><span class="pre">QGIS_Training_Exercise_1</span></code>). El proyecto se guardará como un archivo <code class="docutils literal notranslate"><span class="pre">.qqz</span></code>.</p></li>
 <li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Save</span></code></p></li>
 <li><p>Cierre la aplicación QGIS y vuelva a abrirla.</p></li>
 </ol>

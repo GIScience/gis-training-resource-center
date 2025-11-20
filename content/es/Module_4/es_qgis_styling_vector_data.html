@@ -632,7 +632,7 @@ document.write(`
 </figure>
 <p>Para cada capa de QGIS existe un panel de estilos, en el que se puede cambiar la simbología, el color y la etiqueta de las entidades de esa capa. Hay dos maneras de abrir las opciones de estilo de capa en QGIS:</p>
 <ol class="arabic simple">
-<li><p>Haga clic con el botón derecho en la capa a la que desee aplicar el estilo y seleccione <code class="docutils literal notranslate"><span class="pre">properties</span></code>. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la <code class="docutils literal notranslate"><span class="pre">symbology</span></code> pestaña.</p></li>
+<li><p>Haga clic con el botón derecho en la capa a la que desee aplicar el estilo y seleccione <code class="docutils literal notranslate"><span class="pre">properties</span></code>. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
 <li><p>Abra el panel de estilo de capas activándolo en <code class="docutils literal notranslate"><span class="pre">View</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Panels</span></code>&gt;<code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">Panel</span></code>. Normalmente, el panel aparecerá en la parte derecha del lienzo del mapa.</p></li>
 </ol>
 <p>A la izquierda del panel de estilo puede elegir las distintas pestañas para acceder a las diferentes opciones de estilo.</p>
@@ -666,7 +666,7 @@ La mayoría de los marcadores simples constan de un <strong>relleno</strong> y u
 <li><p>El contorno determina el color, el tipo y el grosor del contorno. Junto al color y la transparencia, el contorno es el elemento más critico para diferenciar entre los distintos elementos. Por ejemplo, las líneas más gruesas para las carreteras suelen significar vías de un orden superior (como autopistas), mientras que las líneas discontinuas finas, podrían significar senderos, inaccesibles para los vehículos de carretera.</p></li>
 <li><p>Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un <a class="reference internal" href="../Module_3/es_qgis_data_classification.html"><span class="std std-doc">método de categorización</span></a>.</p></li>
 </ul>
-<p>En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_3.36_m4_symbolisation_methods</span></code>). Los más importantes son <strong>Símbolo único</strong>, <strong>Categorizado</strong>, <strong>Graduado</strong>, y <strong>Basado en reglas</strong>.</p>
+<p>En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte la <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_3.36_m4_symbolisation_methods</span></code>). Los más importantes son <strong>Single Symbol</strong>, <strong>Categorized</strong>, <strong>Graduated</strong>, y <strong>Rule base</strong>.</p>
 <figure class="align-default" id="en-3-36-m4-symbolisation-methods">
 <a class="reference internal image-reference" href="../../../_images/en_3.36_m4_symbolisation_methods.png"><img alt="../../../_images/en_3.36_m4_symbolisation_methods.png" src="../../../_images/en_3.36_m4_symbolisation_methods.png" style="width: 500px;" />
 </a>
@@ -706,7 +706,7 @@ Basado en reglas</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>Cree reglas mediante el uso de una expresión y asigne un símbolo a las entidades, en las que se aplica la regla.</p></li>
 <li><p>Puede especificar con mayor precisión las entidades que desea simbolizar.</p></li>
-<li><p>Puede utilizar valores de distintos atributos (por ej.:,tipo de edificio y distrito urbano).</p></li>
+<li><p>Puede utilizar valores de distintos atributos (p. ej.:,tipo de edificio y distrito urbano).</p></li>
 <li><p>El constructor de expresiones le ayuda a crear reglas ya que le muestra los valores, campos, operadores, etc. disponibles.</p></li>
 </ul>
 <p><strong>Por ejemplo</strong>, seleccione un símbolo para cada centro de salud, que sea un hospital y haya excedido su capacidad.</p>
@@ -725,10 +725,10 @@ Basado en reglas</label><div class="sd-tab-content docutils">
 <p>Ahora, queremos cambiar la simbología de una capa para que <strong>solo sean visibles los contornos de los polígonos</strong>. Esto es necesario para hacer visibles las capas inferiores a ésta.</p>
 <p>Para cambiar la simbología de una sola capa:</p>
 <ol class="arabic simple">
-<li><p>Abra <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> y vaya a la pestaña de simbología. Por defecto, la simbología se configurará en <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. Esto significa que se aplicarán los mismos colores y contornos a todas las entidades de esa capa.</p></li>
+<li><p>Abra <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> y vaya a la pestaña Symbology. Por defecto, la simbología se configurará en <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. Esto significa que se aplicarán los mismos colores y contornos a todas las entidades de esa capa.</p></li>
 <li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code>.</p></li>
 <li><p>Haga clic en la flecha situada a la derecha de <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code>.</p></li>
-<li><p>Marque la <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code>opción.</p></li>
+<li><p>Marque la opción <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code>.</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-vector-layer-styling-transparent">
 <a class="reference internal image-reference" href="content/fig/en_30.30.2_vector_layer_styling_transparent.png"><img alt="content/fig/en_30.30.2_vector_layer_styling_transparent.png" src="content/fig/en_30.30.2_vector_layer_styling_transparent.png" style="width: 500px;" />
@@ -757,7 +757,7 @@ Basado en reglas</label><div class="sd-tab-content docutils">
 <ol class="arabic simple" start="3">
 <li><p>Cambie la simbología de la capa Adm0 abriendo el panel de estilos y navegando hasta la pestaña de “Symbology”.</p></li>
 <li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> para abrir las opciones de estilo.</p></li>
-<li><p>Despliegue el <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code> menú y marque la<code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> opción. Esto hará visibles solo los límites, por lo que <strong>podremos ver la capa debajo de esta</strong>.</p></li>
+<li><p>Despliegue el menú <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code> y marque la opción <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code>. Esto hará visibles solo los límites, por lo que <strong>podremos ver la capa debajo de esta</strong>.</p></li>
 <li><p>Elija un <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Colour</span></code> y haga el <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Width</span></code> de 0,66 milímetros.</p></li>
 <li><p>Haga clic en “OK”.</p></li>
 <li><p><strong>Repita el mismo proceso</strong> para la capa Adm1, utilizando el mismo color que para Adm0 (estará en “colores recientes”) y deje el ancho del trazo en 0,26.</p></li>
@@ -834,11 +834,11 @@ o en situaciones, en las que desee comunicar dos variables, en un mismo mapa. Po
 mapas coropléticos con símbolos graduados.
 La creación de mapas con símbolos graduados se realiza de forma similar a la creación de mapas coropléticos, pero implica un paso adicional:
 Crear centroides de los límites administrativos. Los centroides son puntos, que se sitúan en el centro calculado de
-polígonos (consulte el<a class="reference internal" href="../Module_5/es_qgis_non_spatial_tools.html"><span class="std std-doc">módulo 5</span></a>).
-Utilizaremos la misma capa que para el mapa coroplético (consulte <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_map_design_example_variable_ranges</span></code>):
+polígonos (consulte el <a class="reference internal" href="../Module_5/es_qgis_non_spatial_tools.html"><span class="std std-doc">módulo 5</span></a>).
+Utilizaremos la misma capa que para el mapa coroplético (consulte la <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_map_design_example_variable_ranges</span></code>):
 <code class="docutils literal notranslate"><span class="pre">NGA_Adm1_Pop</span></code>.</p>
 <ol class="arabic simple">
-<li><p>En la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars">caja de herramientas de procesos</a>, busque la herramienta <code class="docutils literal notranslate"><span class="pre">centroids</span></code>. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_3.36_m4_centroids</span></code>)</p></li>
+<li><p>En la <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars">caja de herramientas de procesos</a>, busque la herramienta <code class="docutils literal notranslate"><span class="pre">centroids</span></code>. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la <code class="xref std std-numref docutils literal notranslate"><span class="pre">en_3.36_m4_centroids</span></code>)</p></li>
 </ol>
 <figure class="align-default" id="en-3-36-m4-centroids">
 <a class="reference internal image-reference" href="../../../_images/en_3.36_m4_centroids.png"><img alt="../../../_images/en_3.36_m4_centroids.png" src="../../../_images/en_3.36_m4_centroids.png" style="width: 500px;" />
@@ -848,10 +848,10 @@ Utilizaremos la misma capa que para el mapa coroplético (consulte <code class="
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">
-<li><p>En <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, seleccione la <code class="docutils literal notranslate"><span class="pre">NGA_Adm1_Pop</span></code>capa . Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
-<li><p>Aparecerá una nueva capa de puntos denominada <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> en su panel de capas. Abra su panel de estilo y navegue hasta la pestaña de simbología.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Layer</span></code>, seleccione la capa <code class="docutils literal notranslate"><span class="pre">NGA_Adm1_Pop</span></code>. Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>Aparecerá una nueva capa de puntos denominada <code class="docutils literal notranslate"><span class="pre">Centroids</span></code> en su panel de capas. Abra su panel de Layer Styling y navegue hasta la pestaña Symbology.</p></li>
 <li><p>Configure el método de simbolización a <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p>En <strong>Valor</strong>, seleccione <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
+<li><p>En <strong>Value</strong>, seleccione <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
 <li><p>Cambie <strong>Method</strong> de <code class="docutils literal notranslate"><span class="pre">Colour</span></code> a <code class="docutils literal notranslate"><span class="pre">Size</span></code>.</p></li>
 <li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
 <li><p><em>Opcional</em>: Cambiar el color y la transparencia de los círculos.</p></li>
@@ -878,7 +878,7 @@ Podemos utilizar la simbología para <strong>mostrar la diferencia entre las ent
 <h4>Configuración de los diferentes símbolos de puntos para distintas entidades<a class="headerlink" href="#configuracion-de-los-diferentes-simbolos-de-puntos-para-distintas-entidades" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Descargue el <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip">GeoPackage de incidentes de seguridad de ACLED</a> y cárguelo en su proyecto de QGIS. Se trata de una capa de puntos en la que cada punto, indica un incidente de seguridad distinto.</p></li>
-<li><p>Abra el <code class="docutils literal notranslate"><span class="pre">Symbology</span> <span class="pre">tab</span></code> para esa capa y elija <code class="docutils literal notranslate"><span class="pre">Categorized</span></code> en lugar de <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>.</p></li>
+<li><p>Abra la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> para esa capa y elija <code class="docutils literal notranslate"><span class="pre">Categorized</span></code> en lugar de <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -929,7 +929,7 @@ Podemos utilizar la simbología para <strong>mostrar la diferencia entre las ent
 <p class="sd-card-text">Además de los marcadores simples, QGIS también le permite utilizar símbolos SVG e imágenes ráster, como símbolos para los datos vectoriales.</p>
 <ul class="simple">
 <li><p class="sd-card-text"><strong>Los marcadores simples</strong> son formas simples como rectángulos, círculos o cruces, que pueden ajustarse en la capa de simbolización (color, tamaño, contorno, etc.). La mayor parte de su estilo en QGIS se hará con estos marcadores.</p></li>
-<li><p class="sd-card-text"><strong>Los símbolos SVG</strong> son *símbolos gráficos vectoriales escalables *. Como archivos vectoriales, pueden expandirse a cualquier tamaño, mientras, que mantiene la misma resolución. En la mayoría de los casos, si desea utilizar un símbolo más complejo (por ej.: hospital, escuela, estación de tren), los símbolos SVG son la mejor opción, ya que le permiten ajustar el símbolo (colores, contorno, tamaño, etc.).</p></li>
+<li><p class="sd-card-text"><strong>Los símbolos SVG</strong> son <em>símbolos gráficos vectoriales escalables</em>. Como archivos vectoriales, pueden expandirse a cualquier tamaño, mientras, que mantiene la misma resolución. En la mayoría de los casos, si desea utilizar un símbolo más complejo (p. ej.: hospital, escuela, estación de tren), los símbolos SVG son la mejor opción, ya que le permiten ajustar el símbolo (colores, contorno, tamaño, etc.).</p></li>
 <li><p class="sd-card-text">Si selecciona las <strong>imágenes ráster</strong>, la resolución del símbolo estará limitada por la cantidad de píxeles de la imagen. No es aconsejable utilizar imágenes de alta resolución como símbolos en su mapa porque esto podría sobrecargar su computadora.</p></li>
 </ul>
 </div>
@@ -1020,19 +1020,19 @@ Si tiene una biblioteca de símbolos SVG en una carpeta, puede añadirlos a su a
 </ul>
 </div>
 </details><ol class="arabic simple" start="3">
-<li><p><strong>Al estilizar las capas de polígonos (por ej.: los límites administrativos), ¿Para qué sirve utilizar relleno transparente y contornos visibles?</strong></p></li>
+<li><p><strong>Al estilizar las capas de polígonos (p. ej.: los límites administrativos), ¿Para qué sirve utilizar relleno transparente y contornos visibles?</strong></p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p class="sd-card-text"><strong>Contexto:</strong> El relleno transparente permite que las capas subyacentes (por ej.: mapa base, imágenes, etiquetas) se muestren a través del contexto espacial.</p></li>
+<li><p class="sd-card-text"><strong>Contexto:</strong> El relleno transparente permite que las capas subyacentes (p. ej.: mapa base, imágenes, etiquetas) se muestren a través del contexto espacial.</p></li>
 <li><p class="sd-card-text"><strong>Importancia de los límites:</strong> Los contornos visibles (trazos) indican claramente los bordes del polígono, aunque el relleno sea sutil.</p></li>
 <li><p class="sd-card-text"><strong>Jerarquía y legibilidad:</strong> Si se muestran muchos polígonos superpuestos o regiones adyacentes, los rellenos transparentes evitan que las áreas se bloqueen entre sí, mientras que los contornos mantienen los límites diferenciados.</p></li>
 </ul>
 </div>
 </details><ol class="arabic simple" start="4">
-<li><p><strong>Explique cómo se crea un mapa coroplético en QGIS con el uso de colores graduados. ¿Qué debe elegir (por ej.: atributo, número de clases, rampa de color)?</strong></p></li>
+<li><p><strong>Explique cómo se crea un mapa coroplético en QGIS con el uso de colores graduados. ¿Qué debe elegir (p. ej.: atributo, número de clases, rampa de color)?</strong></p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1040,11 +1040,11 @@ Si tiene una biblioteca de símbolos SVG en una carpeta, puede añadirlos a su a
 <ol class="arabic simple">
 <li><p class="sd-card-text">Hacer clic con el <kbd>botón derecho</kbd> en la capa, seleccionar <code class="docutils literal notranslate"><span class="pre">Properties</span></code> y vaya hasta la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code>.</p></li>
 <li><p class="sd-card-text">Cambiar el método de simbolización de <code class="docutils literal notranslate"><span class="pre">Single-Symbol</span></code> a <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p class="sd-card-text">Junto a <code class="docutils literal notranslate"><span class="pre">Value</span></code>, elegir el atributo numérico, que se desee visualizar en el mapa coroplético (por ej.: densidad de población, porcentaje, precipitación, casos de enfermedad normalizados, etc.). El valor de este atributo determinará el color.</p></li>
-<li><p class="sd-card-text">Elegir un método de clasificación y configurar el número de clases (por ej.: intervalo equitativo, cuantil, cortes naturales, etc.).</p></li>
+<li><p class="sd-card-text">Junto a <code class="docutils literal notranslate"><span class="pre">Value</span></code>, elegir el atributo numérico, que se desee visualizar en el mapa coroplético (p. ej.: densidad de población, porcentaje, precipitación, casos de enfermedad normalizados, etc.). El valor de este atributo determinará el color.</p></li>
+<li><p class="sd-card-text">Elegir un método de clasificación y configurar el número de clases (p. ej.: intervalo equitativo, cuantil, cortes naturales, etc.).</p></li>
 <li><p class="sd-card-text">Elegir una rampa de color adecuada para la información, que se quiere visualizar (claro → oscuro).</p></li>
 <li><p class="sd-card-text">Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code> y <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
-<li><p class="sd-card-text">Observar el lienzo del mapa y realizar los ajustes necesarios (por ej.: eliminar los contornos de los polígonos).</p></li>
+<li><p class="sd-card-text">Observar el lienzo del mapa y realizar los ajustes necesarios (p. ej.: eliminar los contornos de los polígonos).</p></li>
 </ol>
 </div>
 </details><ol class="arabic simple" start="5">

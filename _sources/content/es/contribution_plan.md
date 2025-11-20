@@ -31,7 +31,7 @@ Además de las contribuciones de contenido, este consorcio le da la bienvenida a
 
 - __Markdown MyST y Jupyter Book:__ Además de CommonMark Markdown, Jupyter Book también admite una versión más completa de Markdown denominada __MyST Markdown__. Se trata de un superset de CommonMark, que incluye piezas sintácticas útiles, para publicar narrativas computacionales. Para obtener más información sobre MyST Markdown, consulte el [resumen de MyST Markdown](https://jupyterbook.org/en/stable/content/myst.html).
 - __Cambios en la Dev-Branch:__
-    - Todos los cambios deben subirse con un push a la `dev` rama. Estos cambios serán revisados por el HeiGIT y/o la Cruz Roja (RC) antes de fusionar una solicitud de extracción.
+    - Todos los cambios deben subirse con un push a la rama `dev`. Estos cambios serán revisados por el HeiGIT y/o la Cruz Roja (RC) antes de fusionar una solicitud de extracción.
     - Actualmente, solo HeiGIT o la Cruz Roja (RC) están autorizados a crear solicitudes de extracción y los colaboradores pueden solicitar revisiones a HeiGIT y/o a la Cruz Roja a través de GitHub.
 - __Contenido nuevo:__
     - Si tiene ideas para nuevos contenidos (como nuevas secciones en módulos existentes o nuevos módulos independientes), envíenos un correo electrónico o presente una issue en GitHub, mediante el uso de las etiquetas adecuadas. Una propuesta también podría incluir una página de Markdown o una estructura sugerida.

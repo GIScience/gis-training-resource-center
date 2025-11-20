@@ -25,7 +25,7 @@ height: 500px
 name: GIS_Core_functunality
 align: center
 ---
-Funcionalidad principal del SIG (fuente: HeiGIT).
+Funcionalidad principal de SIG (fuente: HeiGIT).
 :::
 
 En el trabajo humanitario, los Sistemas de Información Geográfica (SIG) sirven como herramientas poderosas. Utilizan mapas para presentar información compleja de manera clara y eficiente. Por ejemplo, durante las emergencias, el SIG puede visualizar eventos en un mapa, representar dónde ocurren, el alcance del impacto y la identificación de las necesidades primarias. Ayuda a consolidar datos de diversas fuentes, lo que permite una rápida comprensión de las situaciones y facilita una mejor toma de decisiones.
@@ -73,7 +73,7 @@ La Federación Internacional de Sociedades de la Cruz Roja y de la Media Luna Ro
 
 ::::{tab-item} Comité Internacional de la Cruz Roja (CICR)
 
-El Comité Internacional de la Cruz Roja (CICR) cuenta con una Unidad de Apoyo en SIG, que gestiona su [Centro de Recursos SIG](https://gisupporticrc.github.io/GISResourceCenter/#portfolio) y su portal ICRC GeoPortal. La cartera del centro de recursos del CICR da una idea de los tipos de análisis que produce la unidad de SIG, aunque gran parte de ellos, no son públicos.
+El Comité Internacional de la Cruz Roja (CICR) cuenta con una Unidad de Apoyo en SIG, que gestiona su [Centro de Recursos SIG](https://gisupporticrc.github.io/GISResourceCenter/#portfolio) y su portal ICRC GeoPortal. La cartera del centro de recursos del CICR da una idea de los tipos de análisis que produce la unidad de SIG, aunque gran parte de ellos no es pública.
 
 ::::
 
@@ -87,7 +87,7 @@ height: 500px
 name: REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4
 align: center
 ---
-Mapa de ejemplo: REACH, Ucrania, Monitoreo de Sitios Colectivos de Desplazados Internos (CSM), mapa, Sitios activos, febrero de 2024. Fuente: [REACH](https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf)
+Mapa de ejemplo: REACH, Ucrania, Monitoreo de Sitios Colectivos de personas desplazadas internamente, mapa, Sitios activos, febrero de 2024. Fuente: [REACH](https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf)
 :::
 
 ::::
@@ -112,7 +112,7 @@ allowfullscreen></iframe>
 
 ::::{tab-item} Programa Mundial de Alimentos (PMA)
 
-El Programa Mundial de Alimentos (PMA) produce mapas y publica datos geoespaciales, tanto en su propia plataforma de datos: [WFP Geonode](https://geonode.wfp.org/) como en el [Intercambio de Datos Humanitarios (HDX)](https://data.humdata.org/organization/wfp?). Puede encontrar los mapas publicados por el PMA en [RelifeWeb](https://reliefweb.int/updates?advanced-search=%28S1741%29_%28F12%29).  El [Catálogo de actividades geoespaciales](https://www.wfp.org/publications/wfp-geospatial-activities-catalogue)del PMA presenta los servicios geoespaciales de la organización, lo que incluye el desarrollo de tableros como este [asistencia en efectivo durante la pandemia de COVID-19 en Jordania](https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0).
+El Programa Mundial de Alimentos (PMA) produce mapas y publica datos geoespaciales, tanto en su propia plataforma de datos, [WFP Geonode](https://geonode.wfp.org/), como en el [Intercambio de Datos Humanitarios (HDX)](https://data.humdata.org/organization/wfp?). Puede encontrar los mapas publicados por el PMA en [RelifeWeb](https://reliefweb.int/updates?advanced-search=%28S1741%29_%28F12%29).  El [Catálogo de actividades geoespaciales](https://www.wfp.org/publications/wfp-geospatial-activities-catalogue) del PMA presenta los servicios geoespaciales de la organización, lo que incluye el desarrollo de tableros como este [asistencia en efectivo durante la pandemia de COVID-19 en Jordania](https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0).
 
 El PMA también crea tableros para la promoción, como HungerMap Live:
 
@@ -138,7 +138,7 @@ Mapa de ejemplo: Descripción general de los eventos sísmicos en Afganistán, f
 
 ::::{tab-item} MapAction
 
-MapAction produce mapas y datos geoespaciales que apoyan la toma de decisiones en la respuesta a emergencias. Su página de[mapas y datos](https://maps.mapaction.org/) muestran los productos recientes que han publicado y su [catálogo de productos](https://guides.mapaction.org/). Ofrece una visión general de los tipos de servicios que prestan.
+MapAction produce mapas y datos geoespaciales que apoyan la toma de decisiones en la respuesta a emergencias. Su página de [mapas y datos](https://maps.mapaction.org/) muestran los productos recientes que han publicado y su [catálogo de productos](https://guides.mapaction.org/). Ofrece una visión general de los tipos de servicios que prestan.
 
 :::{figure} /fig/cluster-camp-coordination.jpg
 ---
@@ -179,7 +179,7 @@ Sin embargo, el ejemplo del mapa del cólera de John Snow de 1854 es un ejemplo 
 
 En 1854, un __brote de cólera__ ocurrió en el área de Soho en Londres, Inglaterra. La teoría más común era que la enfermedad se propagaba por el aire. El Dr. John Snow creía que el peligro estaba __en el agua__. Hizo un mapa para analizar el __número de decesos__ en todos los bloques habitacionales en Soho. Agregó la __ubicación de las bombas de agua__ en el mapa. Encontró una __correlación__ entre una bomba de agua específica y el número de infecciones.
 
-__El mapa del brote de cólera de 1854 del Dr. Snow__ ({numref}`John_snow_zoom_map2`) y los informes, que lo acompañaron, __ ganó sobre la predominante “Teoría del Miasma”__ de que la enfermedad __se propagó por el aire__. Fue así que se advirtió a los residentes de que debían __hervir el agua__ y así terminó el último brote de cólera, que Londres ha visto.
+__El mapa del brote de cólera de 1854 del Dr. Snow__ ({numref}`John_snow_zoom_map2`) y los informes, que lo acompañaron, __ganó sobre la predominante “Teoría del Miasma”__ de que la enfermedad __se propagó por el aire__. Fue así que se advirtió a los residentes de que debían __hervir el agua__ y así terminó el último brote de cólera, que Londres ha visto.
 
 Esta versión interactiva del mapa del cólera, lo muestra superpuesto con un mapa base del Londres moderno.
 

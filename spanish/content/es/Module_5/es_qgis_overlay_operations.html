@@ -218,7 +218,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas y errores semiológicos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
 </ul>
 </details></li>
@@ -593,7 +593,7 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Cargue los datos de carreteras de OSM desde la herramienta de exportación HOT (parte del equipo humanitario de OpenStreetMap) <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip">aquí</a>.
 como una nueva capa: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li>
-<li><p>Filtre la capa por medio de <strong>generador de consultas</strong> para mostrar solo <strong>carreteras primarias y residenciales</strong> (“carretera” = ‘primary’ O “carretera” = ‘residential’).</p></li>
+<li><p>Filtre la capa por medio de <strong>generador de consultas</strong> para mostrar solo <strong>carreteras primarias y residenciales</strong> (“carretera” = ‘primary’ OR “carretera” = ‘residential’).</p></li>
 <li><p>Cargue la capa admin1 para Sudán que contiene el distrito Nilo Blanco, <strong>ne_10m_admin_1_Sudan_White_Nile.geojson</strong>. Se descarga de los <a class="reference external" href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/">datos de Natural Earth</a>.</p></li>
 <li><p>Seleccione la capa de carreteras y abra el diálogo de <strong>Recorte</strong> desde <code class="docutils literal notranslate"><span class="pre">Vector</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Geoprocessing</span> <span class="pre">Tools</span></code>.</p>
 <ul class="simple">
@@ -651,7 +651,7 @@ como una nueva capa: <strong>Road_infrastructure_Sudan.geojson</strong>.</p></li
 <a class="reference internal image-reference" href="../../../_images/en_buffer_point_line_polygon.png"><img alt="../../../_images/en_buffer_point_line_polygon.png" src="../../../_images/en_buffer_point_line_polygon.png" style="width: 550px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Diferentes tipos de zonas de influencia <br /> (adaptado según <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">Documentación de QGIS</a>, versión 3.28)</span><a class="headerlink" href="#buffering-options" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 5.12 </span><span class="caption-text">Diferentes tipos de zonas de influencia <br /> (adaptado según <a class="reference external" href="https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve">QGIS Documentation</a>, versión 3.28)</span><a class="headerlink" href="#buffering-options" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Existen diferentes variantes de zona de influencia. La <strong>distancia de zona de influencia</strong> o <strong>el tamaño de esta puede variar</strong> según los valores numéricos proporcionados. Los valores numéricos deben definirse en unidades de mapa de acuerdo con el Sistema de Referencia de Coordenadas (SRC) utilizado con los datos.</p>

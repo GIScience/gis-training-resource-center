@@ -57,7 +57,7 @@ En primer lugar, debe comprobar si `Digitizing Toolbar` está activado. Para ell
 En primer lugar, debe comprobar si `Digitizing Toolbox` está activado. Para ello,
 1. Haga clic en la pestaña `View` de la barra de menús y luego en `Toolbars`. Compruebe si las cajas de herramientas `Digitizing` y `Advanced Digitizing` están activadas.
 
-2. En la parte superior de la interfaz de QGIS debería aparecer un recuadro de herramientas como el siguiente.
+2. En la parte superior de la interfaz de QGIS debería aparecer un recuadro de herramientas.
 
 <br>
 

@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
 
 :::
 

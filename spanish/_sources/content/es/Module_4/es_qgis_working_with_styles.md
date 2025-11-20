@@ -8,9 +8,9 @@
 
 # Exportar e importar estilos
 
-Las capas en QGIS se guardan, por separado, de la configuración y los estilos de un Proyecto QGIS. Esto significa que si carga las mismas capas en un proyecto QGIS distinto, la simbología y el estilo de los datos serán diferentes. QGIS permite guardar la simbología y el estilo de una capa como un archivo independiente (archivos `.qml`). Trabajar con `.qml`archivos le ahorra mucho trabajo y le garantiza la consistencia entre los mapas.
+Las capas en QGIS se guardan, por separado, de la configuración y los estilos de un Proyecto QGIS. Esto significa que si carga las mismas capas en un proyecto QGIS distinto, la simbología y el estilo de los datos serán diferentes. QGIS permite guardar la simbología y el estilo de una capa como un archivo independiente (archivos `.qml`). Trabajar con archivos `.qml` le ahorra mucho trabajo y le garantiza la consistencia entre los mapas.
 
-Un `.qml`archivo guarda la información de una capa determinada. Esto incluye los colores, los contornos, las formas, el etiquetado, así como la configuración de la capa, la configuración de la tabla de atributos y otras opciones ,que haya establecido para una capa en su proyecto QGIS, que no estén relacionadas con los propios archivos de datos. Puede elegir si desea guardar solo la simbología en color o cualquier información adicional.
+Un archivo `.qml` guarda la información de una capa determinada. Esto incluye los colores, los contornos, las formas, el etiquetado, así como la configuración de la capa, la configuración de la tabla de atributos y otras opciones ,que haya establecido para una capa en su proyecto QGIS, que no estén relacionadas con los propios archivos de datos. Puede elegir si desea guardar solo la simbología en color o cualquier información adicional.
 
 Puede exportar un estilo a la misma carpeta que los datos para que sus colegas puedan aplicar el mismo estilo al cargar los datos en QGIS.
 Algunas organizaciones también podrían utilizar símbolos o colores normalizados en sus mapas.
@@ -34,7 +34,7 @@ name: en_30.30.2_save_layer_style_window
 Ventana Guardar estilo de capa en QGIS 30.30.2.
 :::
 
-Cuando se trabaja con datos similares (por ej.: tipos de edificios o riesgo de inundación), es útil disponer de plantillas de estilos, que puedan cargarse rápidamente en el proyecto QGIS o guardarse en la biblioteca de plantillas de estilos.
+Cuando se trabaja con datos similares (p. ej.: tipos de edificios o riesgo de inundación), es útil disponer de plantillas de estilos, que puedan cargarse rápidamente en el proyecto QGIS o guardarse en la biblioteca de plantillas de estilos.
 
 :::{Tip}
 ¡Cuando un estilo se guarda en la misma ubicación que los datos y tiene el mismo nombre que el conjunto de datos correspondiente, el estilo se aplicará automáticamente a la capa, al cargar los datos en QGIS!
@@ -82,10 +82,10 @@ Puede copiar estilos de una capa a otra:
 2. En la esquina inferior izquierda, hay un menú desplegable llamado `Style` con opciones para importar o exportar estilos.
 :::
 
-3. __¿Cómo compartiría los estilos con sus colegas o entre diferentes equipos? ¿Qué hay que tener en cuenta (por ej.: rutas de archivos, dependencias de recursos, etc.)?__
+3. __¿Cómo compartiría los estilos con sus colegas o entre diferentes equipos? ¿Qué hay que tener en cuenta (p. ej.: rutas de archivos, dependencias de recursos, etc.)?__
 
 :::{dropdown} Respuesta
-1. Abrir la`Symbology` pestaña en la`Properties` ventana .
+1. Abrir la pestaña `Symbology` en la ventana `Properties`.
 2. En la esquina inferior izquierda, hacer clic en `Style` → `Save Style`.
 3. Especificar el nombre y la ubicación donde desea guardarlo.
 4. En el explorador de archivos, buscar el archivo `.qml` y compartirlo con su colega.

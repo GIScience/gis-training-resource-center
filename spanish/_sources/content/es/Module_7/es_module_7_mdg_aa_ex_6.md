@@ -190,11 +190,11 @@ align: center
 Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.
 :::
 
-::::{tip} Dónde encontrar los nombres de las columnas 
+::::{tip} Dónde encontrar los nombres de las columnas? 
 Abra las **tablas de atributos** de las salidas `health_total_per_admin2`, `sum_exposed_healthsites_POI` y `admin2_health_affected_pct` en QGIS. 
 Observe los **encabezados de columna** para encontrar los nombres exactos de los campos que desee copiar.
 ::::
-::::{warning} Los espacios invisibles romperán la unión 
+::::{warning} Los espacios invisibles romperán la union. 
 Si un nombre de columna como `count_health_total` tiene un espacio final invisible, la unión fallará silenciosamente. 
 Copie siempre los nombres de los campos **directamente de la tabla** de atributos para evitar errores.
 ::::

@@ -247,7 +247,7 @@ width: 750 px
 1. En primer lugar, debemos averiguar dónde se encuentran los centros de salud en la zona. Podemos encontrar conjuntos de datos mediante una búsqueda rápida en el [Intercambio de Datos Humanitarios (HDX)](https://data.humdata.org). Allí puede encontrarse el conjunto de datos denominado “Centros de salud de Pakistán (exportado de OpenStreetMap)”. Usaremos este conjunto de datos. El conjunto de datos ya está disponible en la carpeta de descargas para este ejercicio.
     - Importe el GeoPackage `PAK_Health_Facilities_complete.gpgk` en su proyecto. Puede arrastrarlo al lienzo del mapa o abrir la ventana de importación haciendo clic en `Layer` > `Add Layer` > `Add Vector Layer` en la barra superior de QGIS ([consulte la página](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) Wiki). Aparecerá una nueva capa con datos de punto en el lienzo del mapa.
     - Una vez que hayamos importado los centros de salud, podremos extraer aquellos que se encuentren dentro de nuestra área de interés. Podemos lograrlo con la herramienta `Extract by Location`.
-    - En la __caja de herramientas de Procesos__ ([abriendo la caja](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#open-toolbox)), busque la herramienta “Extraer por ubicación”. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana.
+    - En la __caja de herramientas de Procesos__ ([abrir la caja](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#open-toolbox)), busque la herramienta “Extraer por ubicación”. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana.
     :::{figure} /fig/PAK_extract_locatio_HS.png
     ---
     width: 400px
@@ -515,7 +515,7 @@ Si no puede ver la barra de herramientas, haga clic en la pestaña `View` -> `To
     Ajuste de la simbolización para la nueva capa de puntos. Asegúrese de elegir un marcador que pueda identificarse fácilmente.
     :::
 
-Parte de su tarea era señalar posibles alternativas al transporte por carretera. ¿Puede identificar alguno?
+Parte de su tarea era señalar posibles alternativas al transporte por carretera. ¿Puede identificar alguna?
 
 ::::{dropdown} __Respuesta__
 

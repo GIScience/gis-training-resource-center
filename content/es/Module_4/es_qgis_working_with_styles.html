@@ -600,8 +600,8 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="exportar-e-importar-estilos">
 <h1>Exportar e importar estilos<a class="headerlink" href="#exportar-e-importar-estilos" title="Link to this heading">#</a></h1>
-<p>Las capas en QGIS se guardan, por separado, de la configuración y los estilos de un Proyecto QGIS. Esto significa que si carga las mismas capas en un proyecto QGIS distinto, la simbología y el estilo de los datos serán diferentes. QGIS permite guardar la simbología y el estilo de una capa como un archivo independiente (archivos <code class="docutils literal notranslate"><span class="pre">.qml</span></code>). Trabajar con <code class="docutils literal notranslate"><span class="pre">.qml</span></code>archivos le ahorra mucho trabajo y le garantiza la consistencia entre los mapas.</p>
-<p>Un <code class="docutils literal notranslate"><span class="pre">.qml</span></code>archivo guarda la información de una capa determinada. Esto incluye los colores, los contornos, las formas, el etiquetado, así como la configuración de la capa, la configuración de la tabla de atributos y otras opciones ,que haya establecido para una capa en su proyecto QGIS, que no estén relacionadas con los propios archivos de datos. Puede elegir si desea guardar solo la simbología en color o cualquier información adicional.</p>
+<p>Las capas en QGIS se guardan, por separado, de la configuración y los estilos de un Proyecto QGIS. Esto significa que si carga las mismas capas en un proyecto QGIS distinto, la simbología y el estilo de los datos serán diferentes. QGIS permite guardar la simbología y el estilo de una capa como un archivo independiente (archivos <code class="docutils literal notranslate"><span class="pre">.qml</span></code>). Trabajar con archivos <code class="docutils literal notranslate"><span class="pre">.qml</span></code> le ahorra mucho trabajo y le garantiza la consistencia entre los mapas.</p>
+<p>Un archivo <code class="docutils literal notranslate"><span class="pre">.qml</span></code> guarda la información de una capa determinada. Esto incluye los colores, los contornos, las formas, el etiquetado, así como la configuración de la capa, la configuración de la tabla de atributos y otras opciones ,que haya establecido para una capa en su proyecto QGIS, que no estén relacionadas con los propios archivos de datos. Puede elegir si desea guardar solo la simbología en color o cualquier información adicional.</p>
 <p>Puede exportar un estilo a la misma carpeta que los datos para que sus colegas puedan aplicar el mismo estilo al cargar los datos en QGIS.
 Algunas organizaciones también podrían utilizar símbolos o colores normalizados en sus mapas.</p>
 <p>Por ejemplo, si desea enviar una capa a un colega con el mismo estilo que usted, lo mejor es que marque las categorías “<strong>Propiedades de la capa</strong>”, “<strong>Simbología</strong>” y “<strong>Etiquetas</strong>” (y cualquier otra opción de estilo adicional, que haya configurado). Si solo desea guardar un determinado color, grosor de línea o estilo de etiquetado, solo tiene que marcar las casillas correspondientes.</p>
@@ -621,7 +621,7 @@ Algunas organizaciones también podrían utilizar símbolos o colores normalizad
 <p><span class="caption-text">Ventana Guardar estilo de capa en QGIS 30.30.2.</span><a class="headerlink" href="#en-30-30-2-save-layer-style-window" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Cuando se trabaja con datos similares (por ej.: tipos de edificios o riesgo de inundación), es útil disponer de plantillas de estilos, que puedan cargarse rápidamente en el proyecto QGIS o guardarse en la biblioteca de plantillas de estilos.</p>
+<p>Cuando se trabaja con datos similares (p. ej.: tipos de edificios o riesgo de inundación), es útil disponer de plantillas de estilos, que puedan cargarse rápidamente en el proyecto QGIS o guardarse en la biblioteca de plantillas de estilos.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>¡Cuando un estilo se guarda en la misma ubicación que los datos y tiene el mismo nombre que el conjunto de datos correspondiente, el estilo se aplicará automáticamente a la capa, al cargar los datos en QGIS!</p>
@@ -677,13 +677,13 @@ Algunas organizaciones también podrían utilizar símbolos o colores normalizad
 </ol>
 </div>
 </details><ol class="arabic simple" start="3">
-<li><p><strong>¿Cómo compartiría los estilos con sus colegas o entre diferentes equipos? ¿Qué hay que tener en cuenta (por ej.: rutas de archivos, dependencias de recursos, etc.)?</strong></p></li>
+<li><p><strong>¿Cómo compartiría los estilos con sus colegas o entre diferentes equipos? ¿Qué hay que tener en cuenta (p. ej.: rutas de archivos, dependencias de recursos, etc.)?</strong></p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Respuesta</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ol class="arabic simple">
-<li><p class="sd-card-text">Abrir la<code class="docutils literal notranslate"><span class="pre">Symbology</span></code> pestaña en la<code class="docutils literal notranslate"><span class="pre">Properties</span></code> ventana .</p></li>
+<li><p class="sd-card-text">Abrir la pestaña <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> en la ventana <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
 <li><p class="sd-card-text">En la esquina inferior izquierda, hacer clic en <code class="docutils literal notranslate"><span class="pre">Style</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Style</span></code>.</p></li>
 <li><p class="sd-card-text">Especificar el nombre y la ubicación donde desea guardarlo.</p></li>
 <li><p class="sd-card-text">En el explorador de archivos, buscar el archivo <code class="docutils literal notranslate"><span class="pre">.qml</span></code> y compartirlo con su colega.</p></li>

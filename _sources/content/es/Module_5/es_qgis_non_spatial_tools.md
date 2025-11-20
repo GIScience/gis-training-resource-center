@@ -204,7 +204,7 @@ Es posible seleccionar manualmente filas concretas haciendo clic en el número q
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
 :::
 
-### Seleccionar por expresión
+### Selección por expresión
 En este cuadro de diálogo, puede construir sus expresiones para consultar los datos. Hay varios operadores que se pueden utilizar para filtrar su capa vectorial.
 
 ::::{tab-set}
@@ -251,7 +251,7 @@ Se pueden utilizar operadores como AND, OR para combinar diferentes consultas o 
 
 ::::
 
-La consulta de sus datos para responder a preguntas más complejas es de gran importancia. Para ello, utilice la herramienta "Select by expression". En el ejemplo proporcionado, aspiramos responder a la pregunta: ¿Qué ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, habían superado los diez millones de habitantes en 2015?
+La consulta de sus datos para responder a preguntas más complejas es de gran importancia. Para ello, utilice la herramienta "Selección por expresión". En el ejemplo proporcionado, aspiramos responder a la pregunta: ¿Qué ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, habían superado los diez millones de habitantes en 2015?
 
 :::{dropdown} Ejemplo: Ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, que han superado los diez millones de habitantes en 2015.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>

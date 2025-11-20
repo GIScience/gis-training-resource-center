@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Buen diseño de mapas & errores semiológicos
+# Buen diseño de mapas y errores semiológicos
 
 En este capítulo analizaremos los mapas bien diseñados y daremos ejemplos de cómo recrear elementos de diseño específicos en QGIS. La segunda parte de este capítulo se centrará en los errores semiológicos comunes. Si necesita más ejemplos para un buen diseño de mapas, consulte los siguientes sitios web/ repositorios:
 
@@ -98,18 +98,18 @@ __Efecto de escala:__
 
 La escala de agregación (áreas pequeñas vs. grandes) afecta los resultados.
 
-- Cuando se utilizan unidades más pequeñas (por ej.: bloques censales), el análisis podría capturar variaciones locales detalladas.
-- Cuando se utilizan unidades más grandes (por ej.: condados o estados), las variaciones locales se suavizan y los resultados podrían mostrar tendencias más amplias. Por ejemplo, el ingreso promedio puede variar significativamente a nivel de vecindario, pero verse más uniforme a nivel de condado.
+- Cuando se utilizan unidades más pequeñas (p. ej.: bloques censales), el análisis podría capturar variaciones locales detalladas.
+- Cuando se utilizan unidades más grandes (p. ej.: condados o estados), las variaciones locales se suavizan y los resultados podrían mostrar tendencias más amplias. Por ejemplo, el ingreso promedio puede variar significativamente a nivel de vecindario, pero verse más uniforme a nivel de condado.
 
 __Efecto de zonificación:__
 
 La forma y la disposición de las zonas utilizadas para la agregación también pueden afectar a los resultados.
 
-- Cambiar los límites de las zonas (por ej.: dividir una ciudad en regiones este-oeste y norte-sur) puede conducir a resultados diferentes, incluso si la población total o los datos se mantienen iguales. Esto sucede porque los límites influyen en cómo se promedian o se suman los valores.
+- Cambiar los límites de las zonas (p. ej.: dividir una ciudad en regiones este-oeste y norte-sur) puede conducir a resultados diferentes, incluso si la población total o los datos se mantienen iguales. Esto sucede porque los límites influyen en cómo se promedian o se suman los valores.
 
 __¿Por qué es importante en el sistema de información geográfica (SIG)?__
 
-- Decisiones políticas: Si el análisis depende de límites arbitrarios, las decisiones (por ej.:, la asignación de recursos) pueden basarse en resultados engañosos.
+- Decisiones políticas: Si el análisis depende de límites arbitrarios, las decisiones (p. ej.:, la asignación de recursos) pueden basarse en resultados engañosos.
 - Estadísticas espaciales: Las correlaciones, las regresiones y otros análisis, que involucran datos geoespaciales, pueden estar sesgados debido al Problema de la Unidad de Área Modificable (MAUP).
 
 :::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
@@ -129,7 +129,7 @@ Tenga cuidado al representar datos __cuantitativos__ con un __color sólido__.
 Aunque es gráficamente atractivo, representar datos cuantitativos con colores sólidos puede generar problemas y distraer del mensaje del mapa:
 
 - Se pierde la __relación de orden entre los datos__ (un círculo puede ser dos veces más grande que otro, un color no puede ser "dos veces más oscuro").
-- Los países con una gran superficie destacan visualmente (por ej.: Rusia en el ejemplo a continuación).
+- Los países con una gran superficie destacan visualmente (p. ej.: Rusia en el ejemplo a continuación).
 - Estamos tratando de representar __datos que no tienen nada que ver con el área de un país__.
 
 
@@ -196,10 +196,10 @@ Es un error porque:
 2. __Jerarquía visual y enfoque adecuados__
     - Eso significa enfatizar el tema principal o los datos del mapa, mientras se atenúan las capas de fondo o contexto, para que no compitan. Por ejemplo, las entidades de contexto (carreteras, límites, mapa base) suelen ser claras, sutiles o atenuadas, mientras que las capas temáticas son más intensas. Con ello se dirige la mirada del público destinatario, a lo que importa. Uno de los mapas de ejemplo muestra cómo se atenúan las capas secundarias, para que destaquen los datos principales.
 3. __Adecuado para el propósito/público y opciones de diseño efectivas__
-    - Un buen mapa ajusta su diseño (colores, símbolos, etiquetado, orientación) al público destinatario y al propósito (operacional, humanitario, de comunicación pública, científico). Por ejemplo, usar colores intuitivos (por ej.: rojo para alto riesgo, verde para seguro) o iconos simplificados para público destinatario no técnico. El módulo muestra implícitamente diferentes tipos de mapas de ejemplo adaptados al uso humanitario, la toma de decisiones operacionales, etc.
-    :::
+    - Un buen mapa ajusta su diseño (colores, símbolos, etiquetado, orientación) al público destinatario y al propósito (operacional, humanitario, de comunicación pública, científico). Por ejemplo, usar colores intuitivos (p. ej.: rojo para alto riesgo, verde para seguro) o iconos simplificados para público destinatario no técnico. El módulo muestra implícitamente diferentes tipos de mapas de ejemplo adaptados al uso humanitario, la toma de decisiones operacionales, etc.
+:::
 
-2. __Considere al público destinatario previsto y el caso de uso de uno de los mapas de ejemplo (por ej.: humanitario, operacional, comunicación pública). ¿Cómo reflejan las opciones de diseño a ese público (por ej.: simplicidad, claridad, selección de iconos)?__
+2. __Considere al público destinatario previsto y el caso de uso de uno de los mapas de ejemplo (p. ej.: humanitario, operacional, comunicación pública). ¿Cómo reflejan las opciones de diseño a ese público (p. ej.: simplicidad, claridad, selección de iconos)?__
 
 :::{dropdown} Respuesta
 Las opciones de diseño deberán reflejar:
@@ -207,7 +207,7 @@ Las opciones de diseño deberán reflejar:
 - __Uso de iconos/simbología intuitivos__: Por ejemplo, un icono de refugio o un triángulo para el peligro, flechas para el movimiento, fácilmente comprensibles, sin necesidad de una búsqueda profunda de leyendas.
 - __Alto contraste y colores significativos__: Por ejemplo, rojo/naranja para zonas peligrosas, verde para áreas seguras o despejadas, tal vez, un gris neutro para el contexto. Esto ayuda a los usuarios no técnicos a interpretar rápidamente lo que es urgente.
 - __Distracciones mínimas__: El fondo podría ser tenue, las carreteras/límites aplacados, para que la capa de las operaciones se destaque. También fuentes grandes y legibles para los títulos/etiquetas porque quizás, se vean en el campo.
-- __Elementos y diseño claros del mapa para facilitar una referencia rápida__: Título grande (por ej.: “Zonas de daños por inundaciones, 24 de octubre de 2025”), una leyenda prominente, una barra de escala, una flecha norte y posiblemente, un mapa insertado para orientarse.
+- __Elementos y diseño claros del mapa para facilitar una referencia rápida__: Título grande (p. ej.: “Zonas de daños por inundaciones, 24 de octubre de 2025”), una leyenda prominente, una barra de escala, una flecha norte y posiblemente, un mapa insertado para orientarse.
 Por lo tanto, las elecciones de diseño reflejan al público destinatario al priorizar la legibilidad, la inmediatez y la interpretabilidad intuitiva sobre la elegancia cartográfica o los detalles profundos.
 :::
 

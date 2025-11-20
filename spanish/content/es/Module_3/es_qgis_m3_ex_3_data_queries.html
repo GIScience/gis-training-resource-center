@@ -218,7 +218,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_symbology_raster.html">4.5. Simbología para los datos ráster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_design_2.html">4.6. El diseño de impresión</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_understanding_print_layout.html">4.7. Comprensión del compositor de diseño de impresión</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas &amp; errores semiológicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_map_examples.html">4.8. Buen diseño de mapas y errores semiológicos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Module_4/es_qgis_module_4_exercises.html">4.9. Ejercicios para el módulo 4</a></li>
 </ul>
 </details></li>
@@ -560,8 +560,8 @@ document.write(`
 <h3>Enlaces a artículos de la Wiki<a class="headerlink" href="#enlaces-a-articulos-de-la-wiki" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="../Wiki/es_qgis_interface_wiki.html"><span class="std std-doc">Interfaz de QGIS</span></a></p></li>
-<li><p><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html"><span class="std std-doc">Tipos de datos geoespaciales</span></a></p></li>
-<li><p><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html"><span class="std std-doc">Importación de datos geoespaciales en QGIS</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_geodata_types_wiki.html"><span class="std std-doc">Tipos de datos geográficos</span></a></p></li>
+<li><p><a class="reference internal" href="../Wiki/es_qgis_import_geodata_wiki.html"><span class="std std-doc">Importación de datos geográficos en QGIS</span></a></p></li>
 <li><p><a class="reference internal" href="../Wiki/es_qgis_layer_concept_wiki.html"><span class="std std-doc">Concepto de capa</span></a></p></li>
 <li><p><a class="reference internal" href="../Wiki/es_qgis_non_spatial_queries_wiki.html"><span class="std std-doc">Consultas no espaciales</span></a></p></li>
 <li><p><a class="reference internal" href="../Wiki/es_qgis_spatial_queries_wiki.html"><span class="std std-doc">Consultas espaciales</span></a></p></li>
@@ -629,9 +629,9 @@ document.write(`
 <li><p><strong>“Extraer entidades de”</strong>: <code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code></p></li>
 <li><p><strong>“Donde las entidades (predicado geométrico)”</strong>: <code class="docutils literal notranslate"><span class="pre">are</span> <span class="pre">within</span></code></p></li>
 <li><p><strong>“Al comparar con las entidades de”</strong>: <code class="docutils literal notranslate"><span class="pre">GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp</span></code></p></li>
-<li><p>En <code class="docutils literal notranslate"><span class="pre">Extracted</span></code> haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File...</span></code> e navegue a su <strong>carpeta temporal</strong> y guarde la capa nueva con el nombre <strong>Beledweyne_buildings_affected</strong> y haga clic <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>En <code class="docutils literal notranslate"><span class="pre">Extracted</span></code> haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" /> –&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File...</span></code> y navegue a su <strong>carpeta temporal</strong> y guarde la capa nueva con el nombre <strong>Beledweyne_buildings_affected</strong> y haga clic <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p>Ahora, haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
-<li><p>Ajusta tus capas de forma que sólo veas las zonas inundadas y su nueva capa <strong>Beledweyne_buildings_affected</strong>. Elimine la capa <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> y <code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code>.</p></li>
+<li><p>Ajusta sus capas de forma que solo vea las zonas inundadas y su nueva capa <strong>Beledweyne_buildings_affected</strong>. Elimine la capa <code class="docutils literal notranslate"><span class="pre">som_admbnda_adm2_ocha_20230308.shp</span></code> y <code class="docutils literal notranslate"><span class="pre">Buildings_Belete_Weyne.geojson</span></code>.</p></li>
 </ol>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -647,7 +647,7 @@ document.write(`
 Para extraer “hospitales”, “escuelas” y “mezquitas”, podemos utilizar la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code>.</p>
 <ol class="arabic simple">
 <li><p>Busque la herramienta <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">by</span> <span class="pre">Expression</span></code> en <code class="docutils literal notranslate"><span class="pre">Toolbox</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Expression</span></code>: haga clic en <img alt="" src="fig/miconexpression.png" />.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Expression</span></code><img alt="" src="fig/miconexpression.png" />.</p></li>
 <li><p>Se abrirá la ventana “Expresión”. Aquí podemos construir una consulta muy específica. En el panel central, abra<code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">and</span> <span class="pre">values</span></code>. Aquí se pueden ver todas las columnas de la capa. Haga clic en <code class="docutils literal notranslate"><span class="pre">building</span></code>. A la derecha, debería aparecer la opción <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">unique</span></code>. Haga clic en esta. Aquí puede ver ahora todos los valores únicos de la columna “edificio”.</p></li>
 <li><p>En el campo <code class="docutils literal notranslate"><span class="pre">Expression</span></code>, introduzca la siguiente expresión (consultar la figura siguiente):</p></li>
 </ol>
