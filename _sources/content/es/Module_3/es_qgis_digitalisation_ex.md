@@ -59,7 +59,7 @@ __Artículos relevantes en Wiki:__
 ## Instrucciones para capacitadores
 
 :::{admonition} Nota sobre los complementos
-class: attention
+:class: attention
 
 Este ejercicio emplea un complemento que no está instalado por defecto: `OSM Place Search`. Asegúrese de instalarlo. Además, en lugar de utilizar XYZ Tiles para el mapa base, puede optar por utilizar el complemento __QuickMapServices__.
 
@@ -134,7 +134,7 @@ Para ello, tendremos que crear una nueva capa de puntos:
 
 
 :::{admonition} Añadir más información
-class: tip
+:class: tip
 
 Es posible digitalizar aún más información añadiendo más columnas. Por ejemplo, puede agregar una columna en `amenity` para indicar el tipo de servicio (banco). Piense qué tipo de datos puede añadir.
 
@@ -206,7 +206,7 @@ Cree una capa de línea de carretera que le permita llegar fácilmente al Zenith
         * Haga clic en `Add to Fields List` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
         * Haga clic en `OK`.
             :::{admonition} Añadir más información
-            class: tip
+            :class: tip
 
             De nuevo, al añadir más campos, puede añadir más información. Por ejemplo, puede añadir el tipo de carretera (pavimentada, sin pavimentar, autopista, residencial, etc.), el límite de velocidad o el número de carriles. Piense qué información podría añadir y qué `Type` utilizaría. Tenga en cuenta que no puede realizar cálculos con datos de cadena.
 
