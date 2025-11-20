@@ -59,7 +59,7 @@ __Relevant Wiki articles:__
 ## Instructions for the trainers
 
 :::{admonition} A note on plugins
-class: attention
+:class: attention
 
 This exercise makes use of a plugin which is not installed by default: `OSM Place Search`.Make sure you take Furthermore, instead of using XYZ-tiles for the basemap, you can decide to use the plugin __"QuickMapServices"__. 
 
@@ -134,7 +134,7 @@ For this, we will need to create a new point layer:
 
 
 :::{admonition} Adding more information
-class: tip
+:class: tip
 
 You can digitise even more information by adding more columns. For example, you can add a column for `amenity` to indicate the type of amenity (bank). Try thinking about what kind of data you can add. 
 
@@ -206,7 +206,7 @@ Create a road line layer that will allow him to get to Zenith Bank easily.
         * Click on `Add to Fields List` ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
         * Click `OK`.
             :::{admonition} Adding more information
-            class: tip
+            :class: tip
 
             Again, by adding more fields, you can add more information. For example, you can add the type of road (e.g., paved, unpaved, highway, residential) or the speed limit, or the number of lanes. Try thinking about what information you could add, and which `Type` would you use? Keep in mind that you cannot perform calculations with string data.
 
