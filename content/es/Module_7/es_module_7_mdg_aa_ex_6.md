@@ -113,13 +113,13 @@ En esta tarea, ayudará a Aina a ampliar su modelo para exportar capas seleccion
 
 Uniremos las siguientes capas paso a paso:
 
-- `admin2_health_affected_pct`: 
+- `adm2_centros_salud_expuestos`: 
   Contiene el **número total de centros de salud**, el **número de centros de salud afectados** y el **porcentaje de centros de salud** afectados.
 
-- `admin2_education_affected_pct`: 
+- `adm2_educación_expuesta`: 
   Contiene el **número total de instalaciones educativas**, el **número de instalaciones educativas afectadas** y el **porcentaje de instalaciones educativas afectadas**.
 
-- `exposed_population`: 
+- `población_expuesta_suma`: 
   Contiene la **población total por distrito** y la **población expuesta** de la etapa de estadísticas zonales.
 
 ---
@@ -128,17 +128,17 @@ Uniremos las siguientes capas paso a paso:
 
 
 1. Abra su modelo
-- Abierto`Estimate_Exposed_Population_Health_Education`
+- `Estimación_Población_Expuesta_establecimientos_salud_y_educativas.model3`
 - Guarde una nueva versión como:
   ```
   Estimate_Exposed_Population_Health_Education_Spreadsheet_Export
   ```
 2. Una los datos de salud y educación en una sola capa
-- En los **Algoritmos**, busque `Join Attributes by Field Value`.
-- Añada una descripción: `Joindre santé et éducation dans une seule couche par ADM2`
+- En los **Algoritmos**, busque `Unir atributos por valor de campo`.
+- Añada una descripción: `Unir datos de salud y educación en una sola capa por ADM2.`
 - Configure el algoritmo de la siguiente manera:
-  - **Capa de entrada**: `admin2_health_affected` (seleccionar de **Salida de algoritmo**)
-  - **Capa de entrada 2**: `admin2_education_affected` (seleccione de **Salida de algoritmo**)
+  - **Capa de entrada**: `adm2_centros_salud_expuestos` (seleccionar de **Salida de algoritmo**)
+  - **Capa de entrada 2**: `adm2_educación_expuesta` (seleccione de **Salida de algoritmo**)
   - **Campo de tabla**:
    ```
    ADM2_PCODE
@@ -157,14 +157,14 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Configuration de l’opération : joindre les données de santé et d’éducation par le champ `ADM2_PCODE` afin de combiner les résultats dans une seule couche.
+Configuración de la operación: unir los datos de salud y educación mediante el campo ADM2_PCODE para combinar los resultados en una sola capa.
 :::
 3. Unir el resultado con los datos de población
 Ahora, una el resultado del paso anterior (salud + educación) a los datos de **población expuestos**.
-- Añada un segundo algoritmo `Join Attributes by Field Value` al modelo
-- Añada una descripción: `Joindre les données de population avec les indicateurs santé et éducation`
+- Añada un segundo algoritmo `Unir atributos por valor de campo` al modelo
+- Añada una descripción: `Unir los datos de población con los indicadores de salud y educación`
 - Configure el algoritmo de la siguiente manera:
-  - **Capa de entrada**: `exposed_population` (seleccionar de **Salida de algoritmo** del paso Estadísticas zonales)
+  - **Capa de entrada**: `población_expuesta_suma` (seleccionar de **Salida de algoritmo** del paso Estadísticas zonales)
   - **Capa de entrada 2**: Producto del Paso 2 (salud + educación)
   - **Campo de tabla**:
    ```
@@ -176,10 +176,17 @@ Ahora, una el resultado del paso anterior (salud + educación) a los datos de **
    ```
   - **Campos de capa 2 para copiar**: *(Ingrese los siguientes nombres de campo exactamente como se muestra, separados por comas, sin espacios)*
     ```
-    count_health_total;sum_exposed_health;pct_exposed_health;count_education_total;sum_exposed_education;pct_exposed_education
+    Total_centros_salud;Total_establc_educativas;sum_centros_salud_expuestas;sum_education_expuesta;pct_expuesto_centros_salud;pct_expuesto_educación
     ```
    - **Tipo de unión**: Tome los atributos de la primera característica coincidente solamente (uno a uno)
    - Deje la salida como **Salida del modelo**
+
+:::{admonition} Los nombres de las columnas en el modelo
+:class: tip
+Si la capa resultante no contiene estas columnas, o las columnas están vacías, __abra los algoritmos individuales__ en su modelo y verifique cómo ha nombrado las columnas.
+También se pueden encontrar en las __tablas de atributos__ de las salidas del modelo.
+
+:::
 
 :::{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
 ---
@@ -187,13 +194,9 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.
+Configuración de la operación: unir los datos de población con los indicadores de salud y educación.
 :::
 
-::::{tip} Dónde encontrar los nombres de las columnas? 
-Abra las **tablas de atributos** de las salidas `health_total_per_admin2`, `sum_exposed_healthsites_POI` y `admin2_health_affected_pct` en QGIS. 
-Observe los **encabezados de columna** para encontrar los nombres exactos de los campos que desee copiar.
-::::
 ::::{warning} Los espacios invisibles romperán la union. 
 Si un nombre de columna como `count_health_total` tiene un espacio final invisible, la unión fallará silenciosamente. 
 Copie siempre los nombres de los campos **directamente de la tabla** de atributos para evitar errores.
@@ -201,25 +204,25 @@ Copie siempre los nombres de los campos **directamente de la tabla** de atributo
 
 
 4. Exporte resultados a una hoja de cálculo
-- En la **caja de herramientas**, busque `Export to spreadsheet` y haga doble clic para abrir.
-- Añada una descripción: `Exporter les données de population, d'éducation et de santé dans un seul tableau`
+- En la **caja de herramientas**, busque `Exportar a hoja de cálculo` y haga doble clic para abrir.
+- Añada una descripción: `Exportar los datos de población, educación y salud en una sola tabla`
 - Configure la herramienta de la siguiente manera:
   - **Capa de entrada**: Seleccione la salida del Paso 3 de **Salida de algoritmo**
   - **Hoja de cálculo**:
     ```
-    exposure_indicators_spreadsheet
+    tabla_de_indicadores_de_exposición
     ```
 
-  - Haga clic en `Ok` para agregarlo al modelo.
+  - Haga clic en `Aceptar` para agregarlo al modelo.
 Una vez que ejecute el modelo, este paso generará automáticamente una hoja de cálculo con todos los indicadores relevantes listos para el equipo de operaciones.
 
 :::{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
 ---
 width: 600px
-name: the_world_result
+name: fr_MDG_AA_model_export_as_table
 align: center
 ---
-Exportador tous les indicaurs (población, sanidad, educación) vers un tableau unique au format tableur.
+Exportar todos los indicadores (población, salud, educación) a una única tabla en formato de hoja de cálculo.
 :::
 
 
@@ -227,39 +230,39 @@ Exportador tous les indicaurs (población, sanidad, educación) vers un tableau 
 5. **Valide su modelo ampliado y guárdelo.**
    - Haga clic en el botón ✔️ **Validate Model** para verificar si hay errores.
    - Guarde de nuevo en: 
-   **`Estimate_Exposed_Population_Health_Education.model3`**
+   **`Estimación_Población_Expuesta_Salud_Educación.model3`** (también puedes __añadir el número de versión o la fecha al nombre del archivo__.)
 6. **Ejecute el modelo**
    - Haga clic en el botón ▶️ **Run** en la esquina superior derecha de la ventana del modelador gráfico.
    - **Entrada:**
      - Haga clic en los tres puntos de cada conjunto de datos de entrada y seleccione la entrada correcta:
        - `Cyclone Track` → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, `Harald_2025_Track.geojson`).
-       - `Population Raster` → seleccione el archivo ráster WorldPop
-       - `Admin Boundaries` → seleccione la capa Admin 2 (por ejemplo, `MDG_adm2.gpkg`)
-       - `Health Facilities` → seleccione el conjunto de datos de puntos para los centros de salud.
-       - `Education Facilities` → seleccione el conjunto de datos de puntos para las escuelas
+       - `Ráster de población` → seleccione el archivo ráster WorldPop
+       - `Limites administrativos` → seleccione la capa Admin 2 (por ejemplo, `MDG_adm2.gpkg`)
+       - `Centros de salud` → seleccione el conjunto de datos de puntos para los centros de salud.
+       - `Establecimientos educativos` → seleccione el conjunto de datos de puntos para las escuelas
    - **Salida:**
      - Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.
-       - `admin2_health_affacted` -> 
+       - `adm2_centros_salud_expuestos` -> 
         ```
-        admin2_health_affected
+        adm2_centros_salud_expuestos
         ```
-       - `admin2_education_affected` ->
+       - `adm2_educación_expuesta` ->
         ```
-        admin2_education_affected
+        adm2_educación_expuesta
         ```
-       - `cyclone_harald_buffer` -> 
+       - `trayectoria_harald_buffer` -> 
         ```
-        cyclone_harald_buffer
+        trayectoria_harald_buffer
         ```
-       - `exposed_population_sum` ->
+       - `población_expuesta_suma` ->
         ```
-        admin2_harald_Exposed_Population
+        población_expuesta_suma_harald
         ```
-       - `exposure_indicators_spreadsheet` ->
+       - `tabla_de_indicadores_de_exposición` ->
         ```
-        exposure_indicators_harald
+        tabla_de_indicadores_de_exposición
         ```
-   - Haga clic en **Run** para ejecutar el modelo completo.
+   - Haga clic en **Ejecutar** para ejecutar el modelo completo.
 
 :::::{tab-set}
 
@@ -270,7 +273,7 @@ Exportador tous les indicaurs (población, sanidad, educación) vers un tableau 
 width: 600px
 align: center
 ---
-Vue du modeleur graphique avec l’étape d’exportation vers un tableau ajoutée au modèle.
+Vista del modelador gráfico con la etapa de exportación a una tabla añadida al modelo
 :::
 ::::
 ::::{tab-item} Configuración del modelo de ejecución
@@ -279,7 +282,7 @@ Vue du modeleur graphique avec l’étape d’exportation vers un tableau ajout�
 width: 600px
 align: center
 ---
-Fenêtre de configuration pour exécuter le modèle avec l’option d’export vers un tableau.
+Ventana de configuración para ejecutar el modelo con la opción de exportación a una tabla
 :::
 ::::
 ::::{tab-item} Salida del modelo
@@ -288,7 +291,7 @@ Fenêtre de configuration pour exécuter le modèle avec l’option d’export v
 width: 600px
 align: center
 ---
-Résultats finaux du modèle exportés dans un tableau prêt à être utilisé.
+Resultados finales del modelo exportados en una tabla lista para usar.
 :::
 ::::
 :::::

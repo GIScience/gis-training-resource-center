@@ -115,32 +115,32 @@ En esta tarea, ayudarás a Aina a construir una versión sencilla de ese modelo 
 ## Tareas
 1. **Configuración de la estructura del modelo**:
    - Abra el **Modelador gráfico** desde el menú superior: 
-   `Processing` → `Graphical Modeler…`
+   `Procesos` → `Diseñador de modelos`
 
 2. **Denominación del modelo**:
-   - Se abrirá una nueva ventana de modelo. En la **parte izquierda**, haga clic en **`Model Properties`** para definir la información básica sobre el modelo:
-     - **Nombre del modelo**: `Estimate_Exposed_Population`
-     - **Grupo**: `Cyclone Trigger Tools`
+   - Se abrirá una nueva ventana de modelo. En la **parte izquierda**, haga clic en **`Propriedades del modelo`** para definir la información básica sobre el modelo:
+     - **Nombre del modelo**: `Estimación_Población_Expuesta`
+     - **Grupo**: `Herramientas de Activación Ante Ciclones`
      - Deje el campo de la descripción en blanco o escriba: _“Modelo automatizado para estimar la población expuesta en función de la zona de influencia del ciclón”._
 
 3. **Guarde el modelo**
    - Para guardar el modelo:
-     - Haga clic en el icono **Guardar** (💾) o vaya a `Model` → `Save`.
-     - Navegue hasta la **`models`carpeta** de su estructura de capacitación.
+     - Haga clic en el icono **Guardar** (💾) o vaya a `Modelo` → `Guardar modelos`.
+     - Navegue hasta la **carpeta `modelos`** de su estructura de capacitación.
      - Guarde el modelo como: 
-     **`Estimate_Exposed_Population`**
+     **`Estimación_Población_Expuesta`** e añada la fecha (por ejemplo: 250916)
 
 4. **Añadir entradas del modelo**:
    - En el **panel izquierdo**, expanda la sección **Entradas**.
    - Añada las siguientes capas de entrada con restricciones de tipo:
-     - `+ Vector Layer`
-       - **Etiqueta**: `Cyclone Track`
-       - En el **panel avanzado**, configure el **tipo de geometría** en `Line`
-     - `+ Raster Layer`
-       - **Etiqueta**: `Population Raster`
-     - `+ Vector Layer`
-       - **Etiqueta**: `Admin Boundaries`
-       - En el **panel avanzado**, configure el **tipo de geometría** en `Polygon`
+     - `+ Capa vectorial`
+       - **Etiqueta**: `Trayectoria del ciclón`
+       - En el **panel avanzado**, configure el **tipo de geometría** en `Línea`
+     - `+ Capa Ráster`
+       - **Etiqueta**: `Raster de población`
+     - `+ Capa vectorial`
+       - **Etiqueta**: `límites administrativos`
+       - En el **panel avanzado**, configure el **tipo de geometría** en `Polígono`
    - Aparecerán en la parte superior del lienzo del modelo y servirán como datos de entrada cuando se ejecute el modelo.
 
      :::{tip}
@@ -192,10 +192,10 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
 :::
 
 5. **Reproyección de la trayectoria del ciclón a EPSG:29738**
-   - En el panel **Algoritmos**, busque la **Capa de reproyección**.
+   - En el panel **Algoritmos**, busque la **Reproyectar capa**.
    - En la ventana de configuración:
-     - Añada una descripción: `Reprojecter la couche de trajectoire du cyclone a EPSG : 29738`
-     - Configure la **Capa de entrada** a `Cyclone Track` (desde **Entrada del modelo**).
+     - Añada una descripción: `Reprojectar la capa de la trayectoria del ciclón a EPSG : 29738`
+     - Configure la **Capa de entrada** a `Trayectoria del ciclón` (desde **Entrada del modelo**).
      - Configure **SRC de destino** a `EPSG:29738 – Madagascar / Laborde Grid`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
@@ -205,17 +205,17 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738
+Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coordenadas métrico (SRC/CRS) EPSG:29738
 :::
-6. **Amortiguación de la trayectoria del ciclón reproyectada**
+6. **Crear un buffer de la trayectoria del ciclón reproyectada**
    - En el panel **Algoritmos**, busque **Buffer**.
    - En la ventana de configuración:
-    - Añada una descripción: `Mettre en mémoire tampon la couche Cyclone reprojetée`
+    - Añada una descripción: `Generar un buffer de la capa de ciclón reproyectada`
      - Añada una descripción:
      - Configure **Capa de entrada** en la salida del paso anterior (desde **Algoritmo de salida**).
      - Configure **Distancia** en `200000` (200 km).
      - Deje **Segmentos** en el valor predeterminado (`5`).
-     - Configure **Resultado de disolución** en `Yes`.
+     - Configure **Dissolver Resultado** en `Si`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
 :::{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
@@ -224,12 +224,12 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Mettre en mémoire tampon la couche Cyclone reprojetée
+Generar un buffer de la capa de ciclón reproyectada.
 :::
 7. **Reproyectar la amortiguación de vuelta en EPSG:4326**
    - En el panel **Algoritmos**, busque **Reproyectar capa**.
    - En la ventana de configuración:
-    - Añada una descripción: `Reprojecter le tampon vers EPSG:4326`
+    - Añada una descripción: `Reprojectar el buffer al SRC EPSG:4326`
    - En la ventana de configuración:
      - Configure **Capa de entrada** en la salida del paso anterior (desde **Algoritmo de salida**).
      - Configure **SRC de destino** a `EPSG:4326 – WGS 84`.
@@ -241,14 +241,14 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Reprojecter le tampon vers EPSG:4326
+Reprojectar el buffer al SRC EPSG:4326
 :::
 8. **Recorte el ráster de población utilizando el área amortiguada.**
-   - En el panel **Algorithms**, busque **Clip Raster by Mask Layer**.
+   - En el panel **Algorithms**, busque **Cortar ráster por capa de máscara**.
    - En la ventana de configuración:
-     - Añada una descripción: `Découper la couche raster de population pour l'étendre au tampon Cyclon`
+     - Añada una descripción: `Cortar la capa ráster de población para ajustarla al buffer del ciclón`
    - En la ventana de configuración:
-     - Configure la **Capa de entrada** a `Population Raster` (desde **Entrada del modelo**).
+     - Configure la **Capa de entrada** a `Raster de población` (desde **Entrada del modelo**).
      - Configure la **Capa de máscara** en la salida del paso anterior (de **Salida del algoritmo**).
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
@@ -258,19 +258,19 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Découper la couche raster de population pour l'étendre au tampon Cyclon
+Cortar la capa ráster de población para ajustarla al buffer del ciclón
 :::
 9. **Calcule las estadísticas zonales para estimar la población expuesta.**
-   - En el panel **Algorithms**, busque **Zonal Statistics**.
+   - En el panel **Algorithms**, busque **Estadísticas de zona**.
    - En la ventana de configuración: Cálculo de la población expuesta a ciclones por distrito
-     - Añada una descripción: `Calcul de la population exposée aux cyclones par district`
-     - Configure la **Capa de entrada** a `Admin Boundaries` (desde **Entrada del modelo**).
+     - Añada una descripción: `Cálculo de la población expuesta a los ciclones por distrito`
+     - Configure la **Capa de entrada** a `limites administrativas` (desde **Entrada del modelo**).
      - Configure **Capa de ráster** en la salida del paso anterior (desde **Salida del algoritmo**).
-     - Configure **Prefijo de columna de salida** en `exposed_population_`.
-     - En **Estadísticas para calcular**, seleccione `Sum`.
+     - Configure **Prefijo de columna de salida** en `población_expuesta_`.
+     - En **Estadísticas para calcular**, seleccione `Suma`.
      - Configure la salida en **Modelo de salida** y asígnele un nombre:
       ```
-      exposed_population_sum
+      población_expuesta_suma
       ```
    - Haga clic en `Ok` para añadir el paso al modelo.
 :::{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
@@ -290,7 +290,7 @@ width: 600px
 name: the_world_result
 align: center
 ---
-Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement connectés et la sortie du modèle est définie.
+Su modelo debería verse así. Todos los algoritmos están correctamente conectados y la salida del modelo está definida.
 :::
 
 10. **Valide su modelo (recomendado)**
@@ -299,7 +299,7 @@ Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement
    - Esto ayuda a garantizar que el modelo esté completo y no se rompa durante la ejecución.
 
 11. **Ejecute el modelo**
-   - Ejecute el modelo haciendo clic en `Model` -> `Run Model`
+   - Ejecute el modelo haciendo clic en `Modelo` -> `Ejectar Modelo`
    - Configure **Límites administrativos** en `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Configure **Trayectoria del ciclón** en `example_Harald_2025_Track`
    - Configure **Ráster de población** en `MDG_WorldPop_2020_constrained.tif`
@@ -345,7 +345,7 @@ align: center
 :::
 
 13. **Ejecute el modelo otra vez**
-   - Ejecute el modelo haciendo clic en `Model` -> `Run Model`
+   - Ejecute el modelo haciendo clic en `Modelo` -> `Ejecutar Modelo`
    - Configure **Límites administrativos** en `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Configure **Trayectoria del ciclón** en `example_Harald_2025_Track`
    - Configure **Ráster de población** en `MDG_WorldPop_2020_constrained.tif`
