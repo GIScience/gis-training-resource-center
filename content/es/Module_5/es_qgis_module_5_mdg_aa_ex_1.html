@@ -767,15 +767,15 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <p>Antes de diseñar el modelo automatizado, Aina solía estimar manualmente la población expuesta cada vez que un ciclón se acercaba a Madagascar. En esta tarea, seguirá los pasos que ella utilizó en el pasado trabajando con el registro histórico del <strong>ciclón Harald</strong>, los datos ráster de WorldPop y los límites administrativos.</p>
 <p>Deberá crear manualmente un buffer de la trayectoria del ciclón, recortar el ráster de población y calcular la población expuesta utilizando estadísticas zonales.</p>
 <ol class="arabic simple">
-<li><p><strong>Abra QGIS</strong> y cree un <a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch"><span class="std std-ref">nuevo proyecto</span></a> haciendo clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code></p></li>
-<li><p><strong>Guarde el proyecto</strong> en la carpeta “Project”. Para ello, haga clic en <code class="docutils literal notranslate"><span class="pre">Project</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span></code> y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.</p></li>
+<li><p><strong>Abra QGIS</strong> y cree un <a class="reference internal" href="../Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch"><span class="std std-ref">nuevo proyecto</span></a> haciendo clic en <code class="docutils literal notranslate"><span class="pre">Projecto</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Nuevo</span></code></p></li>
+<li><p><strong>Guarde el proyecto</strong> en la carpeta “Project”. Para ello, haga clic en <code class="docutils literal notranslate"><span class="pre">Projecto</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">como...</span></code> y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.</p></li>
 <li><p><strong>Cargue el archivo GeoJOSN</strong> “example_Harald_2025_Track.geojson” en su proyecto por medio de arrastrar y soltar (<a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">Video Wiki</a>). Abra la carpeta <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">input</span></code></p></li>
 <li><p><strong>Reproyecte la trayectoria del ciclón</strong> para utilizar metros en lugar de grados (importante para la precisión del buffer):</p>
 <ul class="simple">
-<li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Reproject</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Reproyectar</span> <span class="pre">capa</span></code>.</p></li>
 <li><p>Entrada: <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
 <li><p>SRC objetivo: <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span></code> u otro SRC basado en metros adecuado para Madagascar.</p></li>
-<li><p>Guarde el resultado en la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></strong></p></li>
+<li><p>Guarde el resultado en la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code>/<code class="docutils literal notranslate"><span class="pre">interim</span></code> como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Track_Reproyectado</span></code></strong></p></li>
 </ul>
 </li>
 </ol>
@@ -794,10 +794,10 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p><strong>Aplique un buffer a la trayectoria del ciclón</strong>:</p>
 <ul class="simple">
 <li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Buffer</span></code>.</p></li>
-<li><p>Entrada: <code class="docutils literal notranslate"><span class="pre">Harald_Track_Reprojected</span></code></p></li>
+<li><p>Entrada: <code class="docutils literal notranslate"><span class="pre">Harald_Track_Reproyectado</span></code></p></li>
 <li><p>Distancia de buffer: <code class="docutils literal notranslate"><span class="pre">200000</span></code> (metros)</p></li>
 <li><p>Segmentos: Deje el valor predeterminado (5)</p></li>
-<li><p>Disolver: <code class="docutils literal notranslate"><span class="pre">Yes</span></code></p></li>
+<li><p>Disolver resultado: <code class="docutils literal notranslate"><span class="pre">Si</span></code></p></li>
 <li><p>Guarde la salida en la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></strong></p></li>
 </ul>
 </li>
@@ -816,14 +816,14 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Los resultados intermedios deben mostrar la trayectoria del ciclón y la zona de amortiguamiento de 200 kilómetros a su alrededor. La zona de amortiguamiento debe ser una sola entidad.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </details><ol class="arabic simple" start="6">
 <li><p><strong>Reproyecte el buffer de nuevo a EPSG:4326 (para que coincida con el SRC de ráster):</strong></p>
 <ul class="simple">
-<li><p>En la caja de herramientas de Procesos, busque “Reproject Layer”.</p></li>
+<li><p>En la caja de herramientas de Procesos, busque “Repyectar capa”.</p></li>
 <li><p>Entrada: Harald_Buffer_200km_29738</p></li>
 <li><p>SRC objetivo: EPSG:4326 – WGS 84</p></li>
 <li><p>Guarde el resultado en la carpeta temporal como: Harald_Buffer_200km_4326</p></li>
@@ -841,21 +841,21 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p><strong>Cargue los límites administrativos</strong>:</p>
 <ul class="simple">
 <li><p>Archivo: <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
-<li><p>Añada por medio de arrastrar y soltar o <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>Añada por medio de arrastrar y soltar o <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">vectorial</span></code>.</p></li>
 </ul>
 </li>
 <li><p><strong>Cargue el ráster de población</strong>:</p>
 <ul class="simple">
 <li><p>Archivo: <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
-<li><p>Agregue usando <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>Agregue usando <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">Ráster</span></code>.</p></li>
 </ul>
 </li>
 <li><p><strong>Recorte el ráster de población</strong> utilizando la zona buffer de impacto:</p>
 <ul class="simple">
-<li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Clip</span> <span class="pre">Raster</span> <span class="pre">by</span> <span class="pre">Mask</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Cortar</span> <span class="pre">ráster</span> <span class="pre">por</span> <span class="pre">capa</span> <span class="pre">de</span> <span class="pre">máscara</span></code>.</p></li>
 <li><p>Ráster de entrada: <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained</span></code></p></li>
 <li><p>Capa de máscara: <code class="docutils literal notranslate"><span class="pre">Harald_Buffer_200km</span></code></p></li>
-<li><p>Guarde la salida en la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip</span></code></strong></p></li>
+<li><p>Guarde la salida en la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Pob_Cortado</span></code></strong></p></li>
 </ul>
 </li>
 </ol>
@@ -881,12 +881,12 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p><strong>Calcular la población total expuesta</strong>:</p></li>
 </ol>
 <ul class="simple">
-<li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code>.</p></li>
+<li><p>En la <strong>caja de herramientas de Procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Estadísticas</span> <span class="pre">de</span> <span class="pre">zona</span></code>.</p></li>
 <li><p>Capa vectorial de entrada: <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
 <li><p>Capa ráster: <code class="docutils literal notranslate"><span class="pre">Harald_Pop_Clip</span></code></p></li>
-<li><p>Estadística por calcular: <code class="docutils literal notranslate"><span class="pre">Sum</span></code></p></li>
-<li><p>Prefijo de campo: p. ej., <code class="docutils literal notranslate"><span class="pre">exposed_population_</span></code></p></li>
-<li><p>Guarde la capa vectorial actualizada en la <code class="docutils literal notranslate"><span class="pre">result</span></code> carpeta como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Populationg</span></code></strong></p></li>
+<li><p>Estadística por calcular: <code class="docutils literal notranslate"><span class="pre">Suma</span></code></p></li>
+<li><p>Prefijo de campo: p. ej., <code class="docutils literal notranslate"><span class="pre">población_expuesta_</span></code></p></li>
+<li><p>Guarde la capa vectorial actualizada en la carpeta <code class="docutils literal notranslate"><span class="pre">/results/</span></code> como: <strong><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Populationg</span></code></strong></p></li>
 <li><p>El resultado será una nueva columna en la tabla de atributos de la capa <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg</span></code>, que muestra la población total dentro del buffer del ciclón por distrito.</p></li>
 </ul>
 <figure class="align-center" id="id7">
@@ -902,14 +902,14 @@ Ahora que Aina ha estimado la población expuesta en cada distrito, quiere mostr
 Para ello, aplicaremos una <strong>clasificación graduada</strong> a la capa <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> que ocupa el nuevo campo de población creado por la herramienta de estadísticas zonales.</p></li>
 </ol>
 <ul class="simple">
-<li><p>En el <strong>panel de capas</strong>, haga clic con el botón derecho en la capa <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> y elija <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
-<li><p>Vaya a la pestaña <strong>Symbology</strong> a la izquierda.</p></li>
-<li><p>En la parte superior de la ventana, cambie el estilo de <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> a <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p>En el menú desplegable de <strong>Value</strong>, seleccione el campo que contiene la suma de la población. Normalmente comienza con el prefijo que determinó anteriormente, por ejemplo <code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code>.</p></li>
+<li><p>En el <strong>panel de capas</strong>, haga clic con el botón derecho en la capa <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code> y elija <code class="docutils literal notranslate"><span class="pre">Propriedades</span></code>.</p></li>
+<li><p>Vaya a la pestaña <strong>Simbología</strong> a la izquierda.</p></li>
+<li><p>En la parte superior de la ventana, cambie el estilo de <code class="docutils literal notranslate"><span class="pre">Símbolo</span> <span class="pre">Único</span></code> a <code class="docutils literal notranslate"><span class="pre">Graduado</span></code>.</p></li>
+<li><p>En el menú desplegable de <strong>Valor</strong>, seleccione el campo que contiene la suma de la población. Normalmente comienza con el prefijo que determinó anteriormente, por ejemplo <code class="docutils literal notranslate"><span class="pre">población_expuesta_sum</span></code>.</p></li>
 <li><p>Configure la <strong>rampa de color</strong> a uno que sea adecuado para su mapa (por ejemplo <code class="docutils literal notranslate"><span class="pre">Reds</span></code>).</p></li>
-<li><p>Elija un <strong>modo de clasificación</strong> (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Quantile</span></code>, <code class="docutils literal notranslate"><span class="pre">Natural</span> <span class="pre">Breaks</span></code> o <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code>) y seleccione el número de clases (por ejemplo, 5).</p></li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Classify</span></code> para generar la clasificación.</p></li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code> y luego en <code class="docutils literal notranslate"><span class="pre">OK</span></code> para visualizar el mapa clasificado.</p></li>
+<li><p>Elija un <strong>modo de clasificación</strong> (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Conteo</span> <span class="pre">igual</span> <span class="pre">(cuantil)</span></code>, <code class="docutils literal notranslate"><span class="pre">Rupturas</span> <span class="pre">Naturales</span></code> o <code class="docutils literal notranslate"><span class="pre">intervalo</span> <span class="pre">igual</span></code>) y seleccione el número de clases (por ejemplo, 5).</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Clasificar</span></code> para generar la clasificación.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Aplicar</span></code> y luego en <code class="docutils literal notranslate"><span class="pre">Aceptar</span></code> para visualizar el mapa clasificado.</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>

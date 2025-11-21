@@ -118,14 +118,14 @@ En esta tarea, ayudarás a Aina a hacer que sus mapas de impacto de ciclones sea
 Asegúrese de que las siguientes capas ya están cargadas en su proyecto de QGIS. Estos son los resultados de la **tarea 3**:
 
 - `example_Harald_2025_Track`
-- `cyclone_harald_buffer`
-- `Harald_Exposed_Population`
-- `admin2_health_affected`
-- `admin2_education_affected`
+- `trayectoria_harald_buffer`
+- `población_expuesta_suma_harald`
+- `adm2_educación_expuesta`
+- `adm2_centros_salud_expuestos`
 
 Si falta alguno:
 - Cárguelos mediante la función de **arrastrar y soltar** desde su carpeta `results`; o bien
-- utilice `Layer` → `Add Layer` → `Add Vector Layer` o `Add Raster Layer`
+- utilice `Capa` → `Añadir Capa` → `Añadir capa vectorial` o `Añadir capa ráster`
 
 ---
 
@@ -135,10 +135,10 @@ Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 | **Capa** | **Archivo de estilos** |
 |----------------------------------------|-------------------------------------------|
 | `example_Harald_2025_Track` | `storm_track_cyclone_style.qml` |
-| `cyclone_harald_buffer` | `exposed_cyclone_area_style.qml` |
-| `Harald_Exposed_Population` | `exposed_population_style.qml` |
-| `admin2_health_affected` | `exposed_healthsites_style.qml` |
-| `admin2_education_affected` | `exposed_education_facilities_style.qml` |
+| `trayectoria_harald_buffer` | `exposed_cyclone_area_style.qml` |
+| `población_expuesta_suma_harald` | `exposed_population_style.qml` |
+| `adm2_centros_salud_expuestos` | `exposed_healthsites_style.qml` |
+| `adm2_educación_expuesta` | `exposed_education_facilities_style.qml` |
 
 :::{note}
 ⚠️ Para las **instalaciones sanitarias** y **educativas**, los archivos de estilo proporcionados están vinculados a la columna que contiene la **suma de las instalaciones expuestas**. 
@@ -151,7 +151,7 @@ Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 - En la ventana que se abre, vaya a la pestaña **Symbology**
 - En la parte inferior izquierda, haga clic en **Style** → **Load Style…**
 - Haga clic en los tres puntos ![](/fig/Three_points.png).
-- Navegue hasta el archivo `.qml` correspondiente en la carpeta `layer_sytle` y selecciónelo.
+- Navegue hasta el archivo `.qml` correspondiente en la carpeta `layer_style` y selecciónelo.
 - Haga clic en **Open**, luego **Apply** y **OK** para confirmar.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
@@ -170,7 +170,7 @@ Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 width: 600px
 align: center
 ---
-Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
+Mapa que muestra el número de personas expuestas por distrito después de aplicar el estilo .qml.
 :::
 ::::
 ::::{tab-item} Resultado intermedio: Instalaciones sanitarias expuestas
@@ -179,7 +179,7 @@ Carte montrant le nombre de personnes exposées par district après l’applicat
 width: 600px
 align: center
 ---
-Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
+Mapa que indica el número total de establecimientos de salud expuestos por distrito, representados con el estilo predefinido.
 :::
 ::::
 ::::{tab-item} Resultado intermedio: Instalaciones educativas expuestas
@@ -188,7 +188,7 @@ Carte indiquant le nombre total d’établissements de santé exposés par distr
 width: 600px
 align: center
 ---
-Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
+Mapa que muestra el número total de establecimientos educativos expuestos por distrito, tras la aplicación del archivo de estilo .qml.
 :::
 ::::
 :::::
@@ -200,32 +200,32 @@ Carte affichant le nombre total d’établissements scolaires exposés par distr
 Aina también quiere visualizar el porcentaje de instalaciones sanitarias y educativas expuestas. Sin embargo, como no hay ningún estilo preparado disponible, debe completar el proceso manualmente.
 
 **Pasos:**
-- **Haga clic derecho** en la capa `admin2_health_affected` → seleccione **Duplicate Layer**.
+- **Haga clic derecho** en la capa `adm2_centros_salud_expuestos` → seleccione **Duplicar capa**.
 - **Cambie el nombre** de la capa duplicada a:
   ```
-  admin2_health_affected_percentage
+  adm2_pct_expuesto_centros_salud
   ```
-- Haga clic derecho sobre la capa en el **Layers Panel**
-- Seleccione **Properties**
-- En la ventana que se abre, vaya a la pestaña **Symbology**
-- Configure **Symbology** a `Graduated`
+- Haga clic derecho sobre la capa en el **Panel de capas**
+- Seleccione **Propriedades**
+- En la ventana que se abre, vaya a la pestaña **Simbología**
+- Configure la simbología a `Graduado`
 - Elija el **campo** correcto:
-  - `pct_health_affected`
-- Abra la pestaña **Histogram** para ver la distribución de valores haciendo clic en `calculate histogram`
-- A continuación, vuelva a `Classes` y establezca la siguiente configuración:
-  - **Modo**: `Equal Interval`
+  - `pct_expuesto_centros_salud`
+- Abra la pestaña **Histograma** para ver la distribución de valores haciendo clic en `Cargar valores`
+- A continuación, vuelva a `Clases` y establezca la siguiente configuración:
+  - **Modo**: `Intervalo igual`
   - **Clases**: `4`
-- Haga clic en `OK`. Se crearán cuatro clases (`0–25%`, `25–50%`, `50–75%`, `75–100%`).
+- Haga clic en `Aceptar`. Se crearán cuatro clases (`0–25%`, `25–50%`, `50–75%`, `75–100%`).
 - Elija una rampa de color (por ejemplo, amarillo claro → rojo oscuro).
 - Opcionalmente, personalice las etiquetas de las clases para mayor claridad
-- Haga clic en `Apply`.
+- Haga clic en `Apliquar`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
 
-- Repita el mismo proceso para la capa `admin2_education_affected`.
+- Repita el mismo proceso para la capa `adm2_educación_expuesta`.
 Después de duplicar la capa, cambie el nombre de la nueva a:
 ```
-admin2_health_affected_percentage
+adm2_pct_educación_expuesta
 ```
 
 
@@ -239,17 +239,17 @@ Esto ayuda a visualizar la gravedad en todos los distritos mediante categorías 
 Guarde los estilos creados manualmente como archivos `.qml` para reutilizarlos en el futuro.
 
 **Pasos:**
-- Haga clic derecho sobre la capa en el **Layers Panel**
-- Seleccione **Properties**
-- En la ventana que se abre, vaya a la pestaña **Symbology**
-- Haga clic en `Style` → `Save Style…`.
+- Haga clic derecho sobre la capa en el **panel de capas**
+- Seleccione **Propriedades**
+- En la ventana que se abre, vaya a la pestaña **Simbologia **
+- Haga clic en `Estilo` → `Guardar estilo`.
 - Guarde el archivo en la carpeta `layer_sytle`.
 - Utilice estos nombres de archivo:
   ```
-   health_pct_affected_style
+  adm2_pct_expuesto_centros_salud
   ```
   ```
-  education_pct_affected_style
+  adm2_pct_educación_expuesta
   ```
 
 
@@ -260,8 +260,8 @@ Guarde los estilos creados manualmente como archivos `.qml` para reutilizarlos e
 
 Para reutilizar sus estilos en cualquier proyecto futuro:
 
-- Vaya a `Settings` → `Style Manager`.
-- Haga clic en `Import/Export` → `Import Items`.
+- Vaya a `Configuración` → `Administrador de estilos`.
+- Haga clic en `Importar / Exportar` → `Importar elementos`.
 - Busque los archivos `.qml` guardados y selecciónelos.
 
 Los estilos aparecerán ahora como ajustes preestablecidos en **Panel de estilos de capa**.

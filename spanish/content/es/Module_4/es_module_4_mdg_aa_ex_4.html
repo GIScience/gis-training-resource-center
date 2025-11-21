@@ -667,15 +667,15 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <p>Asegúrese de que las siguientes capas ya están cargadas en su proyecto de QGIS. Estos son los resultados de la <strong>tarea 3</strong>:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trayectoria_harald_buffer</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">población_expuesta_suma_harald</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuestos</span></code></p></li>
 </ul>
 <p>Si falta alguno:</p>
 <ul class="simple">
 <li><p>Cárguelos mediante la función de <strong>arrastrar y soltar</strong> desde su carpeta <code class="docutils literal notranslate"><span class="pre">results</span></code>; o bien</p></li>
-<li><p>utilice <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code> o <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p></li>
+<li><p>utilice <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">vectorial</span></code> o <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">ráster</span></code></p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -692,16 +692,16 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">storm_track_cyclone_style.qml</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">trayectoria_harald_buffer</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">exposed_cyclone_area_style.qml</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">población_expuesta_suma_harald</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">exposed_population_style.qml</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuestos</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">exposed_healthsites_style.qml</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">exposed_education_facilities_style.qml</span></code></p></td>
 </tr>
 </tbody>
@@ -719,7 +719,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p>En la ventana que se abre, vaya a la pestaña <strong>Symbology</strong></p></li>
 <li><p>En la parte inferior izquierda, haga clic en <strong>Style</strong> → <strong>Load Style…</strong></p></li>
 <li><p>Haga clic en los tres puntos <img alt="" src="../../../_images/Three_points.png" />.</p></li>
-<li><p>Navegue hasta el archivo <code class="docutils literal notranslate"><span class="pre">.qml</span></code> correspondiente en la carpeta <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code> y selecciónelo.</p></li>
+<li><p>Navegue hasta el archivo <code class="docutils literal notranslate"><span class="pre">.qml</span></code> correspondiente en la carpeta <code class="docutils literal notranslate"><span class="pre">layer_style</span></code> y selecciónelo.</p></li>
 <li><p>Haga clic en <strong>Open</strong>, luego <strong>Apply</strong> y <strong>OK</strong> para confirmar.</p></li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video></p>
@@ -733,7 +733,7 @@ Resultado intermedio: Población expuesta</label><div class="sd-tab-content docu
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Carte montrant le nombre de personnes exposées par district après l’application du style .qml.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Mapa que muestra el número de personas expuestas por distrito después de aplicar el estilo .qml.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -744,7 +744,7 @@ Resultado intermedio: Instalaciones sanitarias expuestas</label><div class="sd-t
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Mapa que indica el número total de establecimientos de salud expuestos por distrito, representados con el estilo predefinido.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -755,7 +755,7 @@ Resultado intermedio: Instalaciones educativas expuestas</label><div class="sd-t
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Mapa que muestra el número total de establecimientos educativos expuestos por distrito, tras la aplicación del archivo de estilo .qml.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -766,39 +766,39 @@ Resultado intermedio: Instalaciones educativas expuestas</label><div class="sd-t
 <p>Aina también quiere visualizar el porcentaje de instalaciones sanitarias y educativas expuestas. Sin embargo, como no hay ningún estilo preparado disponible, debe completar el proceso manualmente.</p>
 <p><strong>Pasos:</strong></p>
 <ul>
-<li><p><strong>Haga clic derecho</strong> en la capa <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> → seleccione <strong>Duplicate Layer</strong>.</p></li>
+<li><p><strong>Haga clic derecho</strong> en la capa <code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuestos</span></code> → seleccione <strong>Duplicar capa</strong>.</p></li>
 <li><p><strong>Cambie el nombre</strong> de la capa duplicada a:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_percentage</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_pct_expuesto_centros_salud</span>
 </pre></div>
 </div>
 </li>
-<li><p>Haga clic derecho sobre la capa en el <strong>Layers Panel</strong></p></li>
-<li><p>Seleccione <strong>Properties</strong></p></li>
-<li><p>En la ventana que se abre, vaya a la pestaña <strong>Symbology</strong></p></li>
-<li><p>Configure <strong>Symbology</strong> a <code class="docutils literal notranslate"><span class="pre">Graduated</span></code></p></li>
+<li><p>Haga clic derecho sobre la capa en el <strong>Panel de capas</strong></p></li>
+<li><p>Seleccione <strong>Propriedades</strong></p></li>
+<li><p>En la ventana que se abre, vaya a la pestaña <strong>Simbología</strong></p></li>
+<li><p>Configure la simbología a <code class="docutils literal notranslate"><span class="pre">Graduado</span></code></p></li>
 <li><p>Elija el <strong>campo</strong> correcto:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pct_health_affected</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pct_expuesto_centros_salud</span></code></p></li>
 </ul>
 </li>
-<li><p>Abra la pestaña <strong>Histogram</strong> para ver la distribución de valores haciendo clic en <code class="docutils literal notranslate"><span class="pre">calculate</span> <span class="pre">histogram</span></code></p></li>
-<li><p>A continuación, vuelva a <code class="docutils literal notranslate"><span class="pre">Classes</span></code> y establezca la siguiente configuración:</p>
+<li><p>Abra la pestaña <strong>Histograma</strong> para ver la distribución de valores haciendo clic en <code class="docutils literal notranslate"><span class="pre">Cargar</span> <span class="pre">valores</span></code></p></li>
+<li><p>A continuación, vuelva a <code class="docutils literal notranslate"><span class="pre">Clases</span></code> y establezca la siguiente configuración:</p>
 <ul class="simple">
-<li><p><strong>Modo</strong>: <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code></p></li>
+<li><p><strong>Modo</strong>: <code class="docutils literal notranslate"><span class="pre">Intervalo</span> <span class="pre">igual</span></code></p></li>
 <li><p><strong>Clases</strong>: <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
 </ul>
 </li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code>. Se crearán cuatro clases (<code class="docutils literal notranslate"><span class="pre">0–25%</span></code>, <code class="docutils literal notranslate"><span class="pre">25–50%</span></code>, <code class="docutils literal notranslate"><span class="pre">50–75%</span></code>, <code class="docutils literal notranslate"><span class="pre">75–100%</span></code>).</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Aceptar</span></code>. Se crearán cuatro clases (<code class="docutils literal notranslate"><span class="pre">0–25%</span></code>, <code class="docutils literal notranslate"><span class="pre">25–50%</span></code>, <code class="docutils literal notranslate"><span class="pre">50–75%</span></code>, <code class="docutils literal notranslate"><span class="pre">75–100%</span></code>).</p></li>
 <li><p>Elija una rampa de color (por ejemplo, amarillo claro → rojo oscuro).</p></li>
 <li><p>Opcionalmente, personalice las etiquetas de las clases para mayor claridad</p></li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Apply</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Apliquar</span></code>.</p></li>
 </ul>
 <p><video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video></p>
 <ul class="simple">
-<li><p>Repita el mismo proceso para la capa <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code>.
+<li><p>Repita el mismo proceso para la capa <code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code>.
 Después de duplicar la capa, cambie el nombre de la nueva a:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected_percentage</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_pct_educación_expuesta</span>
 </pre></div>
 </div>
 <p>🧠 <em>¿Por qué 4 clases iguales?</em>
@@ -810,16 +810,16 @@ Esto ayuda a visualizar la gravedad en todos los distritos mediante categorías 
 <p>Guarde los estilos creados manualmente como archivos <code class="docutils literal notranslate"><span class="pre">.qml</span></code> para reutilizarlos en el futuro.</p>
 <p><strong>Pasos:</strong></p>
 <ul>
-<li><p>Haga clic derecho sobre la capa en el <strong>Layers Panel</strong></p></li>
-<li><p>Seleccione <strong>Properties</strong></p></li>
-<li><p>En la ventana que se abre, vaya a la pestaña <strong>Symbology</strong></p></li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Style</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Style…</span></code>.</p></li>
+<li><p>Haga clic derecho sobre la capa en el <strong>panel de capas</strong></p></li>
+<li><p>Seleccione <strong>Propriedades</strong></p></li>
+<li><p>En la ventana que se abre, vaya a la pestaña **Simbologia **</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Estilo</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">estilo</span></code>.</p></li>
 <li><p>Guarde el archivo en la carpeta <code class="docutils literal notranslate"><span class="pre">layer_sytle</span></code>.</p></li>
 <li><p>Utilice estos nombres de archivo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">health_pct_affected_style</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_pct_expuesto_centros_salud</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">education_pct_affected_style</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_pct_educación_expuesta</span>
 </pre></div>
 </div>
 </li>
@@ -830,8 +830,8 @@ Esto ayuda a visualizar la gravedad en todos los distritos mediante categorías 
 <h3>5. <em>(Opcional)</em> Importar estilos a su biblioteca QGIS<a class="headerlink" href="#opcional-importar-estilos-a-su-biblioteca-qgis" title="Link to this heading">#</a></h3>
 <p>Para reutilizar sus estilos en cualquier proyecto futuro:</p>
 <ul class="simple">
-<li><p>Vaya a <code class="docutils literal notranslate"><span class="pre">Settings</span></code> → <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Manager</span></code>.</p></li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Import/Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Items</span></code>.</p></li>
+<li><p>Vaya a <code class="docutils literal notranslate"><span class="pre">Configuración</span></code> → <code class="docutils literal notranslate"><span class="pre">Administrador</span> <span class="pre">de</span> <span class="pre">estilos</span></code>.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Importar</span> <span class="pre">/</span> <span class="pre">Exportar</span></code> → <code class="docutils literal notranslate"><span class="pre">Importar</span> <span class="pre">elementos</span></code>.</p></li>
 <li><p>Busque los archivos <code class="docutils literal notranslate"><span class="pre">.qml</span></code> guardados y selecciónelos.</p></li>
 </ul>
 <p>Los estilos aparecerán ahora como ajustes preestablecidos en <strong>Panel de estilos de capa</strong>.</p>

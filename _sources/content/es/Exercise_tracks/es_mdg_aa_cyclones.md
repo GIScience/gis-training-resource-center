@@ -4,20 +4,6 @@
 Este ejercicio se centra en la evaluación preliminar de un evento ciclónico en Madagascar. El objetivo es crear un flujo de trabajo analítico como modelo QGIS que estime la población, la infraestructura y las tierras agrícolas expuestas. Además, se puede evaluar la accesibilidad de las regiones expuestas utilizando isócronas precalculadas.
 En esta serie de ejercicios, usted creará un flujo de trabajo analítico como un modelo de QGIS y visualizará los resultados utilizando plantillas de mapa y archivos de estilo.
 
-::::{admonition} Versión en francés - Version française
-:class: note
-
-La versión en francés de esta serie de ejercicios está aquí:
-
-La version française de cet article se trouve ici:
-
-:::{card}
-:class-card: sd-text-center sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html
-__Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar__
-:::
-
-::::
 
 ::::{card}
 Contexto
@@ -116,7 +102,7 @@ __Ejercicio 6: Exportación de resultados del modelo para el equipo de operacion
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_9/es_qgis_module_9_mdg_aa_ex_7.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_qgis_module_9_mdg_aa_ex_7.html
 __Ejercicio 7: Accesibilidad de las publicaciones de salud desde los almacenes de CRM__
 ^^^
 

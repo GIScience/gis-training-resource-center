@@ -717,15 +717,15 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p><strong>Configuración de la estructura del modelo</strong>:</p>
 <ul class="simple">
 <li><p>Abra el <strong>Modelador gráfico</strong> desde el menú superior:
-<code class="docutils literal notranslate"><span class="pre">Processing</span></code> → <code class="docutils literal notranslate"><span class="pre">Graphical</span> <span class="pre">Modeler…</span></code></p></li>
+<code class="docutils literal notranslate"><span class="pre">Procesos</span></code> → <code class="docutils literal notranslate"><span class="pre">Diseñador</span> <span class="pre">de</span> <span class="pre">modelos</span></code></p></li>
 </ul>
 </li>
 <li><p><strong>Denominación del modelo</strong>:</p>
 <ul class="simple">
-<li><p>Se abrirá una nueva ventana de modelo. En la <strong>parte izquierda</strong>, haga clic en <strong><code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Properties</span></code></strong> para definir la información básica sobre el modelo:</p>
+<li><p>Se abrirá una nueva ventana de modelo. En la <strong>parte izquierda</strong>, haga clic en <strong><code class="docutils literal notranslate"><span class="pre">Propriedades</span> <span class="pre">del</span> <span class="pre">modelo</span></code></strong> para definir la información básica sobre el modelo:</p>
 <ul>
-<li><p><strong>Nombre del modelo</strong>: <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population</span></code></p></li>
-<li><p><strong>Grupo</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Trigger</span> <span class="pre">Tools</span></code></p></li>
+<li><p><strong>Nombre del modelo</strong>: <code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta</span></code></p></li>
+<li><p><strong>Grupo</strong>: <code class="docutils literal notranslate"><span class="pre">Herramientas</span> <span class="pre">de</span> <span class="pre">Activación</span> <span class="pre">Ante</span> <span class="pre">Ciclones</span></code></p></li>
 <li><p>Deje el campo de la descripción en blanco o escriba: <em>“Modelo automatizado para estimar la población expuesta en función de la zona de influencia del ciclón”.</em></p></li>
 </ul>
 </li>
@@ -735,10 +735,10 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <ul class="simple">
 <li><p>Para guardar el modelo:</p>
 <ul>
-<li><p>Haga clic en el icono <strong>Guardar</strong> (💾) o vaya a <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-<li><p>Navegue hasta la <strong><code class="docutils literal notranslate"><span class="pre">models</span></code>carpeta</strong> de su estructura de capacitación.</p></li>
+<li><p>Haga clic en el icono <strong>Guardar</strong> (💾) o vaya a <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">modelos</span></code>.</p></li>
+<li><p>Navegue hasta la <strong>carpeta <code class="docutils literal notranslate"><span class="pre">modelos</span></code></strong> de su estructura de capacitación.</p></li>
 <li><p>Guarde el modelo como:
-<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population</span></code></strong></p></li>
+<strong><code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta</span></code></strong> e añada la fecha (por ejemplo: 250916)</p></li>
 </ul>
 </li>
 </ul>
@@ -748,21 +748,21 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p>En el <strong>panel izquierdo</strong>, expanda la sección <strong>Entradas</strong>.</p></li>
 <li><p>Añada las siguientes capas de entrada con restricciones de tipo:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Capa</span> <span class="pre">vectorial</span></code></p>
 <ul>
-<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code></p></li>
-<li><p>En el <strong>panel avanzado</strong>, configure el <strong>tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Line</span></code></p></li>
+<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span></code></p></li>
+<li><p>En el <strong>panel avanzado</strong>, configure el <strong>tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Línea</span></code></p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Raster</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Capa</span> <span class="pre">Ráster</span></code></p>
 <ul>
-<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code></p></li>
+<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">de</span> <span class="pre">población</span></code></p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Capa</span> <span class="pre">vectorial</span></code></p>
 <ul>
-<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code></p></li>
-<li><p>En el <strong>panel avanzado</strong>, configure el <strong>tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p></li>
+<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">límites</span> <span class="pre">administrativos</span></code></p></li>
+<li><p>En el <strong>panel avanzado</strong>, configure el <strong>tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Polígono</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -822,11 +822,11 @@ Ráster de población</label><div class="sd-tab-content docutils">
 <ol class="arabic simple" start="5">
 <li><p><strong>Reproyección de la trayectoria del ciclón a EPSG:29738</strong></p>
 <ul class="simple">
-<li><p>En el panel <strong>Algoritmos</strong>, busque la <strong>Capa de reproyección</strong>.</p></li>
+<li><p>En el panel <strong>Algoritmos</strong>, busque la <strong>Reproyectar capa</strong>.</p></li>
 <li><p>En la ventana de configuración:</p>
 <ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Reprojecter</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">de</span> <span class="pre">trajectoire</span> <span class="pre">du</span> <span class="pre">cyclone</span> <span class="pre">a</span> <span class="pre">EPSG</span> <span class="pre">:</span> <span class="pre">29738</span></code></p></li>
-<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Reprojectar</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span> <span class="pre">a</span> <span class="pre">EPSG</span> <span class="pre">:</span> <span class="pre">29738</span></code></p></li>
+<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
 <li><p>Configure <strong>SRC de destino</strong> a <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">–</span> <span class="pre">Madagascar</span> <span class="pre">/</span> <span class="pre">Laborde</span> <span class="pre">Grid</span></code>.</p></li>
 <li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
 </ul>
@@ -839,20 +839,20 @@ Ráster de población</label><div class="sd-tab-content docutils">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coordenadas métrico (SRC/CRS) EPSG:29738</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="6">
-<li><p><strong>Amortiguación de la trayectoria del ciclón reproyectada</strong></p>
+<li><p><strong>Crear un buffer de la trayectoria del ciclón reproyectada</strong></p>
 <ul class="simple">
 <li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Buffer</strong>.</p></li>
 <li><p>En la ventana de configuración:</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Mettre</span> <span class="pre">en</span> <span class="pre">mémoire</span> <span class="pre">tampon</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">Cyclone</span> <span class="pre">reprojetée</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Generar</span> <span class="pre">un</span> <span class="pre">buffer</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">de</span> <span class="pre">ciclón</span> <span class="pre">reproyectada</span></code></p></li>
 <li><p>Añada una descripción:</p></li>
 <li><p>Configure <strong>Capa de entrada</strong> en la salida del paso anterior (desde <strong>Algoritmo de salida</strong>).</p></li>
 <li><p>Configure <strong>Distancia</strong> en <code class="docutils literal notranslate"><span class="pre">200000</span></code> (200 km).</p></li>
 <li><p>Deje <strong>Segmentos</strong> en el valor predeterminado (<code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
-<li><p>Configure <strong>Resultado de disolución</strong> en <code class="docutils literal notranslate"><span class="pre">Yes</span></code>.</p></li>
+<li><p>Configure <strong>Dissolver Resultado</strong> en <code class="docutils literal notranslate"><span class="pre">Si</span></code>.</p></li>
 <li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
 <li><p>Haga clic en <strong>Aceptar</strong> para añadir el paso al modelo.</p></li>
 </ul>
@@ -862,7 +862,7 @@ Ráster de población</label><div class="sd-tab-content docutils">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mettre en mémoire tampon la couche Cyclone reprojetée</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Generar un buffer de la capa de ciclón reproyectada.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="7">
@@ -870,7 +870,7 @@ Ráster de población</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Reproyectar capa</strong>.</p></li>
 <li><p>En la ventana de configuración:</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Reprojecter</span> <span class="pre">le</span> <span class="pre">tampon</span> <span class="pre">vers</span> <span class="pre">EPSG:4326</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Reprojectar</span> <span class="pre">el</span> <span class="pre">buffer</span> <span class="pre">al</span> <span class="pre">SRC</span> <span class="pre">EPSG:4326</span></code></p></li>
 <li><p>En la ventana de configuración:</p>
 <ul>
 <li><p>Configure <strong>Capa de entrada</strong> en la salida del paso anterior (desde <strong>Algoritmo de salida</strong>).</p></li>
@@ -886,21 +886,21 @@ Ráster de población</label><div class="sd-tab-content docutils">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Reprojecter le tampon vers EPSG:4326</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Reprojectar el buffer al SRC EPSG:4326</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="8">
 <li><p><strong>Recorte el ráster de población utilizando el área amortiguada.</strong></p>
 <ul class="simple">
-<li><p>En el panel <strong>Algorithms</strong>, busque <strong>Clip Raster by Mask Layer</strong>.</p></li>
+<li><p>En el panel <strong>Algorithms</strong>, busque <strong>Cortar ráster por capa de máscara</strong>.</p></li>
 <li><p>En la ventana de configuración:</p>
 <ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Découper</span> <span class="pre">la</span> <span class="pre">couche</span> <span class="pre">raster</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">pour</span> <span class="pre">l'étendre</span> <span class="pre">au</span> <span class="pre">tampon</span> <span class="pre">Cyclon</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Cortar</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">ráster</span> <span class="pre">de</span> <span class="pre">población</span> <span class="pre">para</span> <span class="pre">ajustarla</span> <span class="pre">al</span> <span class="pre">buffer</span> <span class="pre">del</span> <span class="pre">ciclón</span></code></p></li>
 </ul>
 </li>
 <li><p>En la ventana de configuración:</p>
 <ul>
-<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
+<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">de</span> <span class="pre">población</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
 <li><p>Configure la <strong>Capa de máscara</strong> en la salida del paso anterior (de <strong>Salida del algoritmo</strong>).</p></li>
 <li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
 </ul>
@@ -918,22 +918,22 @@ Ráster de población</label><div class="sd-tab-content docutils">
 <h2>width: 600px
 name: the_world_result
 align: center<a class="headerlink" href="#width-600px-name-the-world-result-align-center" title="Link to this heading">#</a></h2>
-<p>Découper la couche raster de population pour l’étendre au tampon Cyclon</p>
+<p>Cortar la capa ráster de población para ajustarla al buffer del ciclón</p>
 <div class="docutils">
 <ol class="arabic" start="9">
 <li><p><strong>Calcule las estadísticas zonales para estimar la población expuesta.</strong></p>
 <ul>
-<li><p>En el panel <strong>Algorithms</strong>, busque <strong>Zonal Statistics</strong>.</p></li>
+<li><p>En el panel <strong>Algorithms</strong>, busque <strong>Estadísticas de zona</strong>.</p></li>
 <li><p>En la ventana de configuración: Cálculo de la población expuesta a ciclones por distrito</p>
 <ul class="simple">
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calcul</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">population</span> <span class="pre">exposée</span> <span class="pre">aux</span> <span class="pre">cyclones</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
-<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Cálculo</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">población</span> <span class="pre">expuesta</span> <span class="pre">a</span> <span class="pre">los</span> <span class="pre">ciclones</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
+<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">limites</span> <span class="pre">administrativas</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
 <li><p>Configure <strong>Capa de ráster</strong> en la salida del paso anterior (desde <strong>Salida del algoritmo</strong>).</p></li>
-<li><p>Configure <strong>Prefijo de columna de salida</strong> en <code class="docutils literal notranslate"><span class="pre">exposed_population_</span></code>.</p></li>
-<li><p>En <strong>Estadísticas para calcular</strong>, seleccione <code class="docutils literal notranslate"><span class="pre">Sum</span></code>.</p></li>
+<li><p>Configure <strong>Prefijo de columna de salida</strong> en <code class="docutils literal notranslate"><span class="pre">población_expuesta_</span></code>.</p></li>
+<li><p>En <strong>Estadísticas para calcular</strong>, seleccione <code class="docutils literal notranslate"><span class="pre">Suma</span></code>.</p></li>
 <li><p>Configure la salida en <strong>Modelo de salida</strong> y asígnele un nombre:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposed_population_sum</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">población_expuesta_suma</span>
 </pre></div>
 </div>
 </li>
@@ -954,7 +954,7 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement connectés et la sortie du modèle est définie.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Su modelo debería verse así. Todos los algoritmos están correctamente conectados y la salida del modelo está definida.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="10">
@@ -969,7 +969,7 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 <li><p><strong>Ejecute el modelo</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>Ejecute el modelo haciendo clic en <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Model</span></code></p></li>
+<li><p>Ejecute el modelo haciendo clic en <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Ejectar</span> <span class="pre">Modelo</span></code></p></li>
 <li><p>Configure <strong>Límites administrativos</strong> en <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
 <li><p>Configure <strong>Trayectoria del ciclón</strong> en <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
 <li><p>Configure <strong>Ráster de población</strong> en <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
@@ -1010,7 +1010,7 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 <li><p><strong>Ejecute el modelo otra vez</strong></p></li>
 </ol>
 <ul class="simple">
-<li><p>Ejecute el modelo haciendo clic en <code class="docutils literal notranslate"><span class="pre">Model</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Model</span></code></p></li>
+<li><p>Ejecute el modelo haciendo clic en <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Ejecutar</span> <span class="pre">Modelo</span></code></p></li>
 <li><p>Configure <strong>Límites administrativos</strong> en <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
 <li><p>Configure <strong>Trayectoria del ciclón</strong> en <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
 <li><p>Configure <strong>Ráster de población</strong> en <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>

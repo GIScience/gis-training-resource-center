@@ -676,10 +676,10 @@ En primer lugar, echemos un vistazo a los datos con los que queremos trabajar.</
 <ol class="arabic simple" start="2">
 <li><p><strong>Guarde su modelo con un nuevo nombre</strong></p>
 <ul class="simple">
-<li><p>Abra su modelo existente <code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population.model3</span></code>.</p></li>
+<li><p>Abra su modelo existente <code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta.model3</span></code>.</p></li>
 <li><p>Guárdelo inmediatamente con un nuevo nombre:</p>
 <ul>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Model</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As…</span></code></p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">Modelo</span> <span class="pre">Como</span></code></p></li>
 <li><p>Guárdelo en la <code class="docutils literal notranslate"><span class="pre">project</span></code> carpeta como:</p></li>
 </ul>
 </li>
@@ -694,26 +694,26 @@ En primer lugar, echemos un vistazo a los datos con los que queremos trabajar.</
 <ul>
 <li><p>En la sección <strong>Entradas</strong>, añada:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">Capa</span> <span class="pre">vectorial</span></code></p>
 <ul class="simple">
 <li><p><strong>Descripción</strong>:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Health</span> <span class="n">Facilities</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Centros</span> <span class="n">de</span> <span class="n">salud</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Punto</span></code></p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
 <ul class="simple">
 <li><p><strong>Descripción</strong>:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Education</span> <span class="n">Facilities</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Establecimientos</span> <span class="n">educativos</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Point</span></code></p></li>
+<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Punto</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -729,7 +729,7 @@ Entrada del modelo: Centros de salud</label><div class="sd-tab-content docutils"
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definir una nueva entrada del modelo: capa vectorial de puntos que representa los centros de salud</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -740,7 +740,7 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d’éducation</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definir una nueva entrada del modelo: capa vectorial de puntos que representa los establecimientos educativos</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -751,12 +751,12 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Contar puntos en polígono</strong>.</p></li>
 <li><p>Configuración:</p>
 <ul class="simple">
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district.</span></code></p></li>
-<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Contar</span> <span class="pre">el</span> <span class="pre">número</span> <span class="pre">de</span> <span class="pre">centros</span> <span class="pre">de</span> <span class="pre">salud</span> <span class="pre">en</span> <span class="pre">cada</span> <span class="pre">distrito</span></code></p></li>
+<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativas</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> (Entrada del modelo)</p></li>
 <li><p><strong>Nombre del campo de conteo</strong>:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Count_health_total</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Total_centros_salud</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -779,12 +779,12 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <li><p>Añada otro paso <strong>Contar puntos en polígono</strong>.</p></li>
 <li><p>Configuración:</p>
 <ul class="simple">
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Comptez</span> <span class="pre">le</span> <span class="pre">nombre</span> <span class="pre">d'établissements</span> <span class="pre">de</span> <span class="pre">education</span> <span class="pre">dans</span> <span class="pre">chaque</span> <span class="pre">district</span></code></p></li>
-<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Contar</span> <span class="pre">el</span> <span class="pre">número</span> <span class="pre">de</span> <span class="pre">establecimientos</span> <span class="pre">educativos</span> <span class="pre">en</span> <span class="pre">cada</span> <span class="pre">distrito</span></code></p></li>
+<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativas</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativos</span></code> (Entrada del modelo)</p></li>
 <li><p><strong>Nombre del campo de conteo</strong>:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_education_total</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Total_establc_educativas</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -807,11 +807,11 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <li><p>En el panel de <strong>Algoritmos</strong>, busque <strong>Intersección</strong>.</p></li>
 <li><p>En la ventana de configuración:</p></li>
 <li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Centros</span> <span class="n">de</span> <span class="n">salud</span> <span class="n">en</span> <span class="n">la</span> <span class="n">zona</span> <span class="n">de</span> <span class="n">impacto</span> <span class="k">del</span> <span class="n">ciclón</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> (Entrada del modelo)</p></li>
 <li><p><strong>Capa superpuesta</strong>: zona de influencia ciclónica (utilice “Reproyectado a EPSG:4326” desde <strong>Salida del algoritmo</strong>)</p></li>
 <li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
 </ul>
@@ -834,11 +834,11 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <li><p>Configuración:</p>
 <ul>
 <li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Établissements</span> <span class="n">de</span> <span class="n">education</span> <span class="n">dans</span> <span class="n">la</span> <span class="n">zone</span> <span class="n">d</span><span class="s1">&#39;impact du cyclone.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Establecimientos</span> <span class="n">educativos</span> <span class="n">en</span> <span class="n">la</span> <span class="n">zona</span> <span class="n">de</span> <span class="n">impacto</span> <span class="k">del</span> <span class="n">ciclón</span>
 </pre></div>
 </div>
 </li>
-<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> (Entrada del modelo)</p></li>
+<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativas</span></code> (Entrada del modelo)</p></li>
 <li><p><strong>Capa superpuesta</strong>: zona de influencia ciclónica (utilice “Reproyectado a EPSG:4326” desde <strong>Salida del algoritmo</strong>)</p></li>
 <li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
 </ul>
@@ -858,18 +858,18 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <li><p><strong>Conteo de centros sanitarios afectados por Admin 2</strong></p>
 <ul>
 <li><p>Añada <strong>Contar puntos en polígono</strong></p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Compter</span> <span class="pre">les</span> <span class="pre">établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Conteo</span> <span class="pre">de</span> <span class="pre">centros</span> <span class="pre">sanitarios</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">Admin</span> <span class="pre">2</span></code></p></li>
 <li><p>Configuración:</p>
 <ul>
-<li><p>Añada una descripción: Compter les établissements de santé touchés par district</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">de</span> <span class="n">santé</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
+<li><p>Añada una descripción: Conteo de centros sanitarios afectados por Admin 2</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Conteo</span> <span class="n">de</span> <span class="n">centros</span> <span class="n">sanitarios</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">Admin</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </li>
 <li><p><strong>Capa de polígonos</strong>: Conteo total de la producción de los centros de salud</p></li>
 <li><p><strong>Capa de puntos</strong>: salida de centros de salud intersecados</p></li>
 <li><p><strong>Nombre del campo de conteo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_health</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_centros_salud_expuestas</span>
 </pre></div>
 </div>
 </li>
@@ -889,18 +889,18 @@ Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-conten
 <li><p><strong>Conteo de centros educativos afectados por Admin 2</strong></p>
 <ul>
 <li><p>Añada <strong>Contar puntos en polígono</strong></p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Compter</span> <span class="pre">les</span> <span class="pre">établissements</span> <span class="pre">education</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Contar</span> <span class="pre">los</span> <span class="pre">establecimientos</span> <span class="pre">educativos</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
 <li><p>Configuración:</p>
 <ul>
 <li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compter</span> <span class="n">les</span> <span class="n">établissements</span> <span class="n">education</span> <span class="n">touchés</span> <span class="n">par</span> <span class="n">district</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Contar</span> <span class="n">los</span> <span class="n">establecimientos</span> <span class="n">educativos</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">distrito</span>
 </pre></div>
 </div>
 </li>
 <li><p><strong>Capa de polígonos</strong>: Conteo de la producción total de instalaciones educativas</p></li>
 <li><p><strong>Capa de puntos</strong>: salida de instalaciones educativas intersecadas</p></li>
 <li><p><strong>Nombre del campo de conteo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_exposed_education</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_education_expuesta</span>
 </pre></div>
 </div>
 </li>
@@ -923,11 +923,11 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
 <ul>
 <li><p>Añada la <strong>Calculadora de Campo</strong>:</p>
 <ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calculer</span> <span class="pre">le</span> <span class="pre">pourcentage</span> <span class="pre">d’établissements</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calcular</span> <span class="pre">el</span> <span class="pre">porcentaje</span> <span class="pre">de</span> <span class="pre">centros</span> <span class="pre">de</span> <span class="pre">salud</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
 <li><p>Configuración:</p>
 <ul>
 <li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Calculer le pourcentage d’établissements de santé touchés par district
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Calcular</span> <span class="n">el</span> <span class="n">porcentaje</span> <span class="n">de</span> <span class="n">centros</span> <span class="n">de</span> <span class="n">salud</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">distrito</span>
 </pre></div>
 </div>
 </li>
@@ -935,15 +935,15 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
 </li>
 <li><p><strong>Capa de entrada</strong>: la salida de Conteo de centros de salud afectados por Admin 2</p></li>
 <li><p><strong>Nombre del campo de salida</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_exposed_health</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_expuesto_salud</span>
 </pre></div>
 </div>
 </li>
 <li><p><strong>Tipo de campo</strong>: Decimal (real)</p></li>
 <li><p><strong>Expresión</strong>:</p></li>
 </ul>
-<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span> CASE WHEN &quot;count_health_total&quot; &gt; 0
- THEN &quot;sum_exposed_health&quot; / &quot;count_health_total&quot; * 100
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span> CASE WHEN &quot;Total_centros_salud&quot; &gt; 0
+ THEN &quot;sum_centros_salud_expuestas&quot; / &quot;Total_centros_salud&quot; * 100
  ELSE 0
  END
 </pre></div>
@@ -952,7 +952,7 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
 <li><p>Configure la salida como <strong>Salida del modelo</strong></p></li>
 <li><p>Nómbrelo:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_centros_salud_expuesta</span>
 </pre></div>
 </div>
 </li>
@@ -971,24 +971,24 @@ Para calcular el porcentaje de centros educativos afectados por zona administrat
 <ul>
 <li><p>Añada la <strong>calculadora de campos</strong>:</p>
 <ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calculer</span> <span class="pre">le</span> <span class="pre">pourcentage</span> <span class="pre">d’établissements</span> <span class="pre">d’éducation</span> <span class="pre">touchés</span> <span class="pre">par</span> <span class="pre">district</span></code></p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calcular</span> <span class="pre">el</span> <span class="pre">porcentaje</span> <span class="pre">de</span> <span class="pre">establecimientos</span> <span class="pre">educativos</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
 <li><p>Configuración:</p>
 <ul>
 <li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Calculer le pourcentage d’établissements d’éducation touchés par district
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Calcular</span> <span class="n">el</span> <span class="n">porcentaje</span> <span class="n">de</span> <span class="n">establecimientos</span> <span class="n">educativos</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">distrito</span>
 </pre></div>
 </div>
 </li>
 <li><p><strong>Capa de entrada</strong>: la salida de Conteo de establecimientos educativos afectados por Admin 2</p></li>
 <li><p><strong>Nombre del campo de salida</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_exposed_education</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_expuesto_educación</span>
 </pre></div>
 </div>
 </li>
 <li><p><strong>Tipo de campo</strong>: Decimal (real)</p></li>
 <li><p><strong>Expresión</strong>:</p>
-<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;count_education_total&quot; &gt; 0
-THEN &quot;sum_exposed_education_POI&quot; / &quot;count_education_total&quot; * 100
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;Total_establc_educativas&quot; &gt; 0
+THEN &quot;sum_education_expuesta&quot; / &quot;Total_establc_educativas&quot; * 100
 ELSE 0
 END
 </pre></div>
@@ -998,7 +998,7 @@ END
 </li>
 <li><p>Configure la salida como <strong>Salida del modelo</strong></p></li>
 <li><p>Nómbrelo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_educación_expuesta</span>
 </pre></div>
 </div>
 </li>
@@ -1018,7 +1018,7 @@ END
 <ul class="simple">
 <li><p>Haga clic en el botón ✔️ <strong>Validate Model</strong> para verificar si hay errores.</p></li>
 <li><p>Guarde de nuevo en:<br />
-<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+<strong><code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta_establecimientos_salud_y_educativas.model3</span></code></strong></p></li>
 </ul>
 <ol class="arabic simple" start="12">
 <li><p><strong>Ejecute el modelo</strong></p></li>
@@ -1029,11 +1029,11 @@ END
 <ul class="simple">
 <li><p>Haga clic en los tres puntos de cada conjunto de datos de entrada y seleccione la entrada correcta:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → seleccione el archivo ráster WorldPop</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → seleccione la capa Admin 2 (por ejemplo, <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → seleccione el conjunto de datos de puntos para los centros de salud.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → seleccione el conjunto de datos de puntos para las escuelas</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span></code> → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ráster</span> <span class="pre">de</span> <span class="pre">población</span></code> → seleccione el archivo ráster WorldPop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativas</span></code> → seleccione la capa Admin 2 (por ejemplo, <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> → seleccione el conjunto de datos de puntos para los centros de salud.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativas</span></code> → seleccione el conjunto de datos de puntos para las escuelas</p></li>
 </ul>
 </li>
 </ul>
@@ -1042,33 +1042,33 @@ END
 <ul>
 <li><p>Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affacted</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuesta</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_centros_salud_expuesta</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_educación_expuesta</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trayectoria_harald_buffer</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trayectoria_harald_buffer</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">población_expuesta_suma</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_harald_Exposed_Population</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">población_expuesta_suma_harald</span>
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Run</span></code> para ejecutar el modelo completo.</p></li>
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ejecutar</span></code> para ejecutar el modelo completo.</p></li>
 </ul>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">

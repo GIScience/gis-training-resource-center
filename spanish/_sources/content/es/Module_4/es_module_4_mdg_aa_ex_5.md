@@ -127,15 +127,14 @@ Utilice una plantilla de mapas de QGIS ya preparada para crear y exportar rápid
   - Arrastre el archivo `.qpt` directamente a QGIS: se creará automáticamente un nuevo diseño.
 
 - Alternativamente:
-  - Vaya a `Project` → `New Print Layout`.
-  - Introduzca un nombre (por ejemplo, `Harald_2025_population`).
-  - Haga clic en `OK`.
-  - En el diseño, vaya a `Layout` → `Import from Template…`.
-  - Seleccione el archivo `cyclone_impact_overview_map_template.qpt` y haga clic en `Open`.
+  - Vaya a `Projecto` → `Aministrador de composiciones`.
+  - Bajo de "Nuevo usando plantilla, seleccione `Específico`.
+  - Haga clic en los tres puntos ![](/fig/Three_points.png) y seleccione el archivo `/Map_Templates/cyclone_impact_overview_map_template.qpt` y haga clic en `Abrir`.
+  - Hace click en `Crear...` y introduzca un título como "Mapa del impacto del ciclón Harald" 
  2. Comprobar y ajustar el tamaño de página
-- Haga clic derecho en cualquier parte del lienzo blanco y elija `Page Properties`.
+- Haga clic derecho en cualquier parte del lienzo blanco y elija `Propriedades des elemento`.
 - En el panel de la derecha, asegúrese de lo siguiente:
-  - **Tamaño de página**: A3
+  - **Tamaño**: A3
   - **Orientación**: Horizontal
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
@@ -143,14 +142,14 @@ Utilice una plantilla de mapas de QGIS ya preparada para crear y exportar rápid
 3. Actualizar la tabla de atributos de los distritos expuestos
 - En el **diseño de impresión**, haga clic en la tabla de atributos (parte derecha del diseño).
 - En el panel **Item Properties**:
-  - Asegúrese de que está seleccionada la capa correcta `Harald_Exposed_population`.
-  - Haga clic en `Refresh Table Data`.
-  - Haga clic en `Attributes…` → en la parte superior en **Campos** haga clic en `Clear`.
+  - Asegúrese de que está seleccionada la capa correcta `población_expuesta_suma_harald`.
+  - Haga clic en `Refrescar tabla de datos`.
+  - Haga clic en `Atributos…` → en la parte superior en **Campos** haga clic en `Limpiar`.
     - A continuación, añada la siguiente capa haciendo clic en ➕ :
-    - **Atributo**: `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `exposed_population_sum`
-    - Para ordenar el contenido de la pestaña, en **Ordenar** haga clic en ➕ y añada la columna `AMD1_EN`.
+    - **Atributo**: `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `población_expuesta_suma`
+    - Para ordenar el contenido de la pestaña, en **Ordenar** haga clic en ➕ y añada la columna `ADM1_EN`.
     - **Orden de clasificación**: Ascendente
-  - Haga clic en `OK`.
+  - Haga clic en `Aceptar`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
 
@@ -163,18 +162,18 @@ Para solucionarlo, abra las propiedades de la tabla en el diseño y **reduzca el
 
 5. Ajustar la leyenda
 - En el diseño, haga clic en el elemento **Legend**.
-- En el panel **Item Properties**:
-  - Desmarque **Auto update**.
-  - Desplácese hasta **Legend items** y elimine todas las entradas (🗑️).
+- En el panel **Propriedades del elemento**:
+  - Desmarque **Auto actualizar**.
+  - Desplácese hasta **Elementos de la leyenda** y elimine todas las entradas (🗑️).
   - Añada las siguientes capas relevantes:
     - `example_Harald_2025_Track`
     - `cyclone_harald_buffer`
-    - `Harald_Exposed_Population`
-  - Al seleccionar capas, marque **Only visible layers**.
+    - `población_expuesta_suma_harald`
+  - Al seleccionar capas, marque **Mostrar sólo las capas visibles**.
   - Renombrar las entradas de la leyenda para que coincidan con la nomenclatura del diseño.
     - `example_Harald_2025_Track` ->
      ```
-     Seguimiento del ciclón Harald
+     Trayectoria del ciclón Harald
      ```
     - `cyclone_harald_buffer`->
      ```
@@ -182,7 +181,7 @@ Para solucionarlo, abra las propiedades de la tabla en el diseño y **reduzca el
      ```
     - `Harald_Exposed_Population`->
      ```
-     Número de personas expuestas
+     Número de personas expuestas al ciclón
      ```
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>

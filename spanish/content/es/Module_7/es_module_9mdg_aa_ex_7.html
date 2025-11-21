@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ejercicio 2: Automatización de la estimación de la población expuesta: el modelo de Aina &#8212; GIS Resource Training Center</title>
+    <title>Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones &#8212; GIS Resource Training Center</title>
   
   
   
@@ -58,7 +58,7 @@
     <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_7/es_module_7_mdg_aa_ex_2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_7/es_module_9mdg_aa_ex_7';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -388,7 +388,7 @@
       
       
       
-      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_7/es_module_7_mdg_aa_ex_2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_7/es_module_9mdg_aa_ex_7.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -418,7 +418,7 @@
       
       
       
-      <li><a href="../../../_sources/content/es/Module_7/es_module_7_mdg_aa_ex_2.md" target="_blank"
+      <li><a href="../../../_sources/content/es/Module_7/es_module_9mdg_aa_ex_7.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -502,7 +502,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ejercicio 2: Automatización de la estimación de la población expuesta: el modelo de Aina</h1>
+    <h1>Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -512,13 +512,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#width-600px-name-the-world-result-align-center">width: 600px
-name: the_world_result
-align: center</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios">1. Filtrar los puestos de salud del conjunto nacional de establecimientos sanitarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm">2. Cargar las capas de isocronas de los tres almacenes de la CRM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm">3. Visualizar la alcanzabilidad de los puestos de salud desde los almacenes de la CRM</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -540,8 +546,8 @@ align: center</a></li>
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-2-automatizacion-de-la-estimacion-de-la-poblacion-expuesta-el-modelo-de-aina">
-<h1>Ejercicio 2: Automatización de la estimación de la población expuesta: el modelo de Aina<a class="headerlink" href="#ejercicio-2-automatizacion-de-la-estimacion-de-la-poblacion-expuesta-el-modelo-de-aina" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-6-exportacion-de-resultados-de-modelos-para-el-equipo-de-operaciones">
+<h1>Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones<a class="headerlink" href="#ejercicio-6-exportacion-de-resultados-de-modelos-para-el-equipo-de-operaciones" title="Link to this heading">#</a></h1>
 <section id="caracteristicas-del-ejercicio">
 <h2>Características del ejercicio<a class="headerlink" href="#caracteristicas-del-ejercicio" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -563,7 +569,7 @@ align: center</a></li>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>Programa de ejercicios:</strong></p>
-<p class="sd-card-text">Este ejercicio forma parte del <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html">Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.</a></p>
+<p class="sd-card-text">Este ejercicio forma parte del <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html">programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.</a></p>
 </div>
 </div>
 </div>
@@ -601,11 +607,11 @@ align: center</a></li>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-border-1 sd-shadow-none docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong>
-Aina, experta en SIG de la Cruz Roja Malgache (CRM), se prepara para la próxima temporada de ciclones. Quiere mejorar la capacidad de su equipo para actuar con rapidez una vez pronosticada una tormenta automatizando los análisis clave en QGIS. Esto incluye la estimación de las poblaciones expuestas, la identificación de los servicios afectados como la sanidad y la educación, y la evaluación de si se puede llegar a los puestos sanitarios desde los almacenes clave en un plazo crítico de 10 horas.
-El objetivo es preparar un flujo de trabajo de análisis y visualización de principio a fin que pueda respaldar una acción anticipatoria rápida y basada en datos antes de que un ciclón toque tierra.</p>
+<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong></p>
 </div>
 <div class="sd-card-body docutils">
+<p class="sd-card-text">Aina, experta en SIG de la Cruz Roja Malgache (CRM), se prepara para la próxima temporada de ciclones. Quiere mejorar la capacidad de su equipo para actuar con rapidez una vez pronosticada una tormenta automatizando los análisis clave en QGIS. Esto incluye la estimación de las poblaciones expuestas, la identificación de los servicios afectados como la sanidad y la educación, y la evaluación de si se puede llegar a los puestos sanitarios desde los almacenes clave en un plazo crítico de 10 horas.
+El objetivo es preparar un flujo de trabajo de análisis y visualización de principio a fin que pueda respaldar una acción anticipatoria rápida y basada en datos antes de que un ciclón toque tierra.</p>
 </div>
 </div>
 </section>
@@ -639,356 +645,175 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p class="sd-card-text">Reserve algo de tiempo para preguntas abiertas.</p></li>
 </ul>
 </div>
-</details><p>Tras estimar manualmente las poblaciones expuestas en temporadas ciclónicas anteriores, Aina decidió preparar un <strong>modelo automatizado</strong> utilizando el <strong>modelador gráfico QGIS</strong>. Esto la ayudará a actuar con mayor rapidez y evitar la repetición manual de los mismos pasos cada vez que se prevea un ciclón.</p>
-<p>En esta tarea, ayudarás a Aina a construir una versión sencilla de ese modelo utilizando las herramientas de la Tarea 1. El modelo debe:</p>
-<ul class="simple">
-<li><p>Reproyectar la trayectoria del ciclón a EPSG:29738</p></li>
-<li><p>Buffer de la trayectoria del ciclón</p></li>
-<li><p>Reproyectar el buffer de nuevo en EPSG:4326</p></li>
-<li><p>Recortar el ráster de población</p></li>
-<li><p>Ejecutar las estadísticas zonales para obtener la población expuesta por distrito</p></li>
-</ul>
+</details><p><strong>Contexto:</strong></p>
+<p>Cuando se pronostica que un ciclón tocará tierra, Aina trabaja con los equipos de logística y salud para decidir <strong>a dónde enviar los kits médicos preposicionados</strong>. Sin embargo, no todos los almacenes de la CRM tienen los artículos necesarios — solo tres los almacenan.</p>
+<p>Para tomar decisiones rápidas y basadas en datos, Aina necesita saber <strong>qué puestos de salud son alcanzables</strong> desde esos almacenes <strong>en un máximo de 10 horas</strong>. Este análisis ayuda a garantizar que los kits se envíen a instalaciones <strong>que realmente pueden ser alcanzadas a tiempo</strong>.</p>
+<p>Su objetivo es crear un mapa visual claro que muestre los puestos de salud alcanzables y no alcanzables — y compartirlo con los responsables de la toma de decisiones lo más rápido posible.</p>
 </section>
-<hr class="docutils" />
-<section id="tareas">
-<h2>Tareas<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tareas">
+<h1>Tareas<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h1>
+<section id="filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios">
+<h2>1. Filtrar los puestos de salud del conjunto nacional de establecimientos sanitarios<a class="headerlink" href="#filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios" title="Link to this heading">#</a></h2>
+<p>Antes de comprobar qué instalaciones son alcanzables, Aina necesita aislar los <strong>puestos de salud</strong> del conjunto más amplio de todos los establecimientos sanitarios.</p>
 <ol class="arabic">
-<li><p><strong>Configuración de la estructura del modelo</strong>:</p>
+<li><p><strong>Cargar el conjunto de datos de establecimientos sanitarios</strong></p>
 <ul class="simple">
-<li><p>Abra el <strong>Modelador gráfico</strong> desde el menú superior:
-<code class="docutils literal notranslate"><span class="pre">Procesos</span></code> → <code class="docutils literal notranslate"><span class="pre">Diseñador</span> <span class="pre">de</span> <span class="pre">modelos</span></code></p></li>
+<li><p>Archivo: <code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities_points.gpkg</span></code> (o el GeoPackage correspondiente que esté utilizando)</p></li>
+<li><p>Cárguelo arrastrando y soltando o a través de <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">vectorial</span></code>.</p></li>
 </ul>
 </li>
-<li><p><strong>Denominación del modelo</strong>:</p>
-<ul class="simple">
-<li><p>Se abrirá una nueva ventana de modelo. En la <strong>parte izquierda</strong>, haga clic en <strong><code class="docutils literal notranslate"><span class="pre">Propriedades</span> <span class="pre">del</span> <span class="pre">modelo</span></code></strong> para definir la información básica sobre el modelo:</p>
+<li><p><strong>Abra la tabla de atributos</strong> y revise la columna <code class="docutils literal notranslate"><span class="pre">amenity</span></code>.</p></li>
+<li><p><strong>Filtrar por expresión</strong> para conservar únicamente los puestos de salud:</p>
 <ul>
-<li><p><strong>Nombre del modelo</strong>: <code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta</span></code></p></li>
-<li><p><strong>Grupo</strong>: <code class="docutils literal notranslate"><span class="pre">Herramientas</span> <span class="pre">de</span> <span class="pre">Activación</span> <span class="pre">Ante</span> <span class="pre">Ciclones</span></code></p></li>
-<li><p>Deje el campo de la descripción en blanco o escriba: <em>“Modelo automatizado para estimar la población expuesta en función de la zona de influencia del ciclón”.</em></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Guarde el modelo</strong></p>
-<ul class="simple">
-<li><p>Para guardar el modelo:</p>
-<ul>
-<li><p>Haga clic en el icono <strong>Guardar</strong> (💾) o vaya a <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">modelos</span></code>.</p></li>
-<li><p>Navegue hasta la <strong>carpeta <code class="docutils literal notranslate"><span class="pre">modelos</span></code></strong> de su estructura de capacitación.</p></li>
-<li><p>Guarde el modelo como:
-<strong><code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta</span></code></strong> e añada la fecha (por ejemplo: 250916)</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Añadir entradas del modelo</strong>:</p>
-<ul>
-<li><p>En el <strong>panel izquierdo</strong>, expanda la sección <strong>Entradas</strong>.</p></li>
-<li><p>Añada las siguientes capas de entrada con restricciones de tipo:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Capa</span> <span class="pre">vectorial</span></code></p>
-<ul>
-<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span></code></p></li>
-<li><p>En el <strong>panel avanzado</strong>, configure el <strong>tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Línea</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Capa</span> <span class="pre">Ráster</span></code></p>
-<ul>
-<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">de</span> <span class="pre">población</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Capa</span> <span class="pre">vectorial</span></code></p>
-<ul>
-<li><p><strong>Etiqueta</strong>: <code class="docutils literal notranslate"><span class="pre">límites</span> <span class="pre">administrativos</span></code></p></li>
-<li><p>En el <strong>panel avanzado</strong>, configure el <strong>tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Polígono</span></code></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Aparecerán en la parte superior del lienzo del modelo y servirán como datos de entrada cuando se ejecute el modelo.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Todas las entradas deben configurarse como <strong>obligatorio</strong>, de modo que el modelo siempre reciba los datos necesarios para funcionar correctamente.</p>
+<li><p>Clic derecho en la capa → <code class="docutils literal notranslate"><span class="pre">Filtro…</span></code></p></li>
+<li><p>Utilice la siguiente expresión:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&quot;amenity&quot; = &#39;health_post&#39;
+</pre></div>
 </div>
 </li>
 </ul>
 </li>
+<li><p><strong>Exportar la capa filtrada</strong></p>
+<ul>
+<li><p>Clic derecho en la capa filtrada en el panel de capas → <code class="docutils literal notranslate"><span class="pre">Exportar</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">elementos</span> <span class="pre">como…</span></code></p></li>
+<li><p>Formato: <code class="docutils literal notranslate"><span class="pre">GeoPackage</span></code></p></li>
+<li><p>Guardar en su carpeta <code class="docutils literal notranslate"><span class="pre">project</span></code> como:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">health_posts_only</span><span class="o">.</span><span class="n">gpkg</span>
+</pre></div>
+</div>
+</li>
+<li><p>Hacer clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> para confirmar la exportación.</p></li>
+</ul>
+</li>
+<li><p><strong>Eliminar el filtro</strong> o la capa original del proyecto para evitar confusiones.</p></li>
 </ol>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-0">
-Entrada Trayectoria del ciclón</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id10">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Trayectoria del ciclón</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
-Entrada de límites administrativos</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id11">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" src="../../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Límites administrativos</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
-Ráster de población</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id12">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_population_raster.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_population_raster.PNG" src="../../../_images/fr_MDG_AA_model_input_population_raster.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
-<p><strong>Resultado intermedio</strong></p>
-<figure class="align-center" id="the-world-result">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_input.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_input.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Résultat intermédiaire de la définition des données d’entrée du modèle</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="5">
-<li><p><strong>Reproyección de la trayectoria del ciclón a EPSG:29738</strong></p>
+<blockquote>
+<div><p>💡 <strong>Consejo</strong>: Filtrar directamente en QGIS le permite trabajar con un subconjunto específico sin modificar el conjunto de datos original.</p>
+</div></blockquote>
+</section>
+<section id="cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm">
+<h2>2. Cargar las capas de isocronas de los tres almacenes de la CRM<a class="headerlink" href="#cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm" title="Link to this heading">#</a></h2>
+<p>Aina sabe que solo <strong>tres almacenes</strong> tienen los suministros médicos necesarios:<br />
+<strong>Antananarivo</strong>, <strong>Maroantsetra</strong> y <strong>Tolanaro</strong>. Ahora cargará las capas de isocronas para cada uno de estos almacenes para comenzar a analizar las áreas de servicio.</p>
+<ol class="arabic">
+<li><p><strong>Cargar las capas individuales de isocronas</strong> de cada almacén:</p>
 <ul class="simple">
-<li><p>En el panel <strong>Algoritmos</strong>, busque la <strong>Reproyectar capa</strong>.</p></li>
-<li><p>En la ventana de configuración:</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Antananarivo.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Maroantsetra.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Tolanaro.gpkg</span></code></p></li>
+</ul>
+<p>Puede arrastrar y soltar cada archivo en QGIS o ir a <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">vectorial</span></code>.</p>
+</li>
+<li><p><strong>Inspeccionar la tabla de atributos</strong> de cada capa de isocronas<br />
+Confirme que cada registro tenga un campo <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> que indique el tiempo de viaje estimado en <strong>horas</strong>.</p></li>
+<li><p><strong>Eliminar todos los elementos cuyo tiempo supere las 10 horas</strong>:</p>
 <ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Reprojectar</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span> <span class="pre">a</span> <span class="pre">EPSG</span> <span class="pre">:</span> <span class="pre">29738</span></code></p></li>
-<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
-<li><p>Configure <strong>SRC de destino</strong> a <code class="docutils literal notranslate"><span class="pre">EPSG:29738</span> <span class="pre">–</span> <span class="pre">Madagascar</span> <span class="pre">/</span> <span class="pre">Laborde</span> <span class="pre">Grid</span></code>.</p></li>
-<li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
+<li><p>Clic derecho en cada capa → <code class="docutils literal notranslate"><span class="pre">Filtro…</span></code></p></li>
+<li><p>Aplicar la expresión:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&quot;traveltime_h&quot; &lt;= 10
+</pre></div>
+</div>
+</li>
 </ul>
 </li>
-<li><p>Haga clic en <strong>Aceptar</strong> para añadir el paso al modelo.</p></li>
+<li><p><strong>Exportar cada capa filtrada</strong> a la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> :<br />
+En este punto, Aina también se asegura de que todas las capas exportadas se guarden en el mismo CRS que el conjunto de datos de los puestos de salud — <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code> — para evitar problemas en la unión espacial.</p>
+<ul>
+<li><p>Guardar cada una como:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CRM_isochrones_Antananarivo_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
+<span class="n">CRM_isochrones_Maroantsetra_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
+<span class="n">CRM_isochrones_Tolanaro_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
+</pre></div>
+</div>
+</li>
 </ul>
 </li>
-</ol>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_reporject_cyclon_track.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coordenadas métrico (SRC/CRS) EPSG:29738</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="6">
-<li><p><strong>Crear un buffer de la trayectoria del ciclón reproyectada</strong></p>
+<li><p><strong>Aplicar estilo a las isocronas para mayor claridad</strong><br />
+Aina puede aplicar un archivo de estilo predefinido para colorear la capa según <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> y visualizar diferentes bandas de tiempo (4h, 6h, 8h, 10h) más adelante en el Paso 5.</p>
 <ul class="simple">
-<li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Buffer</strong>.</p></li>
-<li><p>En la ventana de configuración:</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Generar</span> <span class="pre">un</span> <span class="pre">buffer</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">de</span> <span class="pre">ciclón</span> <span class="pre">reproyectada</span></code></p></li>
-<li><p>Añada una descripción:</p></li>
-<li><p>Configure <strong>Capa de entrada</strong> en la salida del paso anterior (desde <strong>Algoritmo de salida</strong>).</p></li>
-<li><p>Configure <strong>Distancia</strong> en <code class="docutils literal notranslate"><span class="pre">200000</span></code> (200 km).</p></li>
-<li><p>Deje <strong>Segmentos</strong> en el valor predeterminado (<code class="docutils literal notranslate"><span class="pre">5</span></code>).</p></li>
-<li><p>Configure <strong>Dissolver Resultado</strong> en <code class="docutils literal notranslate"><span class="pre">Si</span></code>.</p></li>
-<li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
-<li><p>Haga clic en <strong>Aceptar</strong> para añadir el paso al modelo.</p></li>
+<li><p>Clic derecho en cada capa filtrada → <code class="docutils literal notranslate"><span class="pre">Propiedades</span></code> → <code class="docutils literal notranslate"><span class="pre">Simbología</span></code></p></li>
+<li><p>Clic en <code class="docutils literal notranslate"><span class="pre">Estilo</span></code> (parte inferior) → <code class="docutils literal notranslate"><span class="pre">Cargar</span> <span class="pre">estilo…</span></code></p></li>
+<li><p>Seleccionar:
+<code class="docutils literal notranslate"><span class="pre">CRM_warehouse_isochrones_style.qml</span></code></p></li>
+<li><p>Clic en <code class="docutils literal notranslate"><span class="pre">Abrir</span></code>, luego <code class="docutils literal notranslate"><span class="pre">Aplicar</span></code> y <code class="docutils literal notranslate"><span class="pre">Aceptar</span></code></p></li>
 </ul>
-</li>
-</ol>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_buffer_cyclon_track.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Generar un buffer de la capa de ciclón reproyectada.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="7">
-<li><p><strong>Reproyectar la amortiguación de vuelta en EPSG:4326</strong></p>
-<ul class="simple">
-<li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Reproyectar capa</strong>.</p></li>
-<li><p>En la ventana de configuración:</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Reprojectar</span> <span class="pre">el</span> <span class="pre">buffer</span> <span class="pre">al</span> <span class="pre">SRC</span> <span class="pre">EPSG:4326</span></code></p></li>
-<li><p>En la ventana de configuración:</p>
-<ul>
-<li><p>Configure <strong>Capa de entrada</strong> en la salida del paso anterior (desde <strong>Algoritmo de salida</strong>).</p></li>
-<li><p>Configure <strong>SRC de destino</strong> a <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span> <span class="pre">–</span> <span class="pre">WGS</span> <span class="pre">84</span></code>.</p></li>
-<li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
-</ul>
-</li>
-<li><p>Haga clic en <strong>Aceptar</strong> para añadir el paso al modelo.</p></li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Reprojectar el buffer al SRC EPSG:4326</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="8">
-<li><p><strong>Recorte el ráster de población utilizando el área amortiguada.</strong></p>
-<ul class="simple">
-<li><p>En el panel <strong>Algorithms</strong>, busque <strong>Cortar ráster por capa de máscara</strong>.</p></li>
-<li><p>En la ventana de configuración:</p>
-<ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Cortar</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">ráster</span> <span class="pre">de</span> <span class="pre">población</span> <span class="pre">para</span> <span class="pre">ajustarla</span> <span class="pre">al</span> <span class="pre">buffer</span> <span class="pre">del</span> <span class="pre">ciclón</span></code></p></li>
-</ul>
-</li>
-<li><p>En la ventana de configuración:</p>
-<ul>
-<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">de</span> <span class="pre">población</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
-<li><p>Configure la <strong>Capa de máscara</strong> en la salida del paso anterior (de <strong>Salida del algoritmo</strong>).</p></li>
-<li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
-</ul>
-</li>
-<li><p>Haga clic en <strong>Aceptar</strong> para añadir el paso al modelo.</p></li>
-</ul>
-<figure class="align-default">
-<img alt="../../../_images/fr_MDG_AA_model_clip_pop_raster.PNG" src="../../../_images/fr_MDG_AA_model_clip_pop_raster.PNG" />
-</figure>
 </li>
 </ol>
 </section>
-<hr class="docutils" />
-<section id="width-600px-name-the-world-result-align-center">
-<h2>width: 600px
-name: the_world_result
-align: center<a class="headerlink" href="#width-600px-name-the-world-result-align-center" title="Link to this heading">#</a></h2>
-<p>Cortar la capa ráster de población para ajustarla al buffer del ciclón</p>
-<div class="docutils">
-<ol class="arabic" start="9">
-<li><p><strong>Calcule las estadísticas zonales para estimar la población expuesta.</strong></p>
+<section id="visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm">
+<h2>3. Visualizar la alcanzabilidad de los puestos de salud desde los almacenes de la CRM<a class="headerlink" href="#visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm" title="Link to this heading">#</a></h2>
+<p>Aina necesita identificar qué puestos de salud pueden ser alcanzados por carretera desde los tres almacenes clave de la CRM (Antananarivo, Maroantsetra y Tolanaro) <strong>en un máximo de 10 horas de viaje</strong>. Lo hará manualmente combinando las isocronas de 10 horas de estos almacenes y comparándolas con el conjunto nacional de puestos de salud.</p>
+<ol class="arabic">
+<li><p><strong>Combinar las capas de isocronas de los tres almacenes</strong></p>
 <ul>
-<li><p>En el panel <strong>Algorithms</strong>, busque <strong>Estadísticas de zona</strong>.</p></li>
-<li><p>En la ventana de configuración: Cálculo de la población expuesta a ciclones por distrito</p>
+<li><p>En la <strong>Caja de herramientas de procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Unir</span> <span class="pre">capas</span> <span class="pre">vectoriales</span> <span class="pre">(Merge</span> <span class="pre">Vector</span> <span class="pre">Layers)</span></code>.</p></li>
+<li><p><strong>Capas de entrada</strong>:</p>
 <ul class="simple">
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Cálculo</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">población</span> <span class="pre">expuesta</span> <span class="pre">a</span> <span class="pre">los</span> <span class="pre">ciclones</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
-<li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">limites</span> <span class="pre">administrativas</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
-<li><p>Configure <strong>Capa de ráster</strong> en la salida del paso anterior (desde <strong>Salida del algoritmo</strong>).</p></li>
-<li><p>Configure <strong>Prefijo de columna de salida</strong> en <code class="docutils literal notranslate"><span class="pre">población_expuesta_</span></code>.</p></li>
-<li><p>En <strong>Estadísticas para calcular</strong>, seleccione <code class="docutils literal notranslate"><span class="pre">Suma</span></code>.</p></li>
-<li><p>Configure la salida en <strong>Modelo de salida</strong> y asígnele un nombre:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Antananarivo_upto10h.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Maroantsetra_upto10h.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Tolanaro_upto10h.gpkg</span></code></p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">población_expuesta_suma</span>
+</li>
+<li><p><strong>CRS</strong>: <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code></p></li>
+<li><p><strong>Guardar en archivo</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">merged_isochrones_10h</span><span class="o">.</span><span class="n">gpkg</span>
 </pre></div>
 </div>
 </li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ok</span></code> para añadir el paso al modelo.</p></li>
+<li><p>Clic en <strong>Ejecutar</strong>.</p></li>
 </ul>
 </li>
-</ol>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG" src="../../../_images/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Cálculo de la población expuesta a ciclones por distrito</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<p><strong>Los resultados deberían ser parecidos a los siguientes:</strong></p>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Su modelo debería verse así. Todos los algoritmos están correctamente conectados y la salida del modelo está definida.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="10">
-<li><p><strong>Valide su modelo (recomendado)</strong></p></li>
-</ol>
+<li><p><strong>Seleccionar los puestos de salud alcanzables en 10 horas</strong></p>
 <ul class="simple">
-<li><p>Antes de guardar o ejecutar, haga clic en el botón ✔️ <strong>Validar modelo</strong> en la barra de herramientas superior.</p></li>
-<li><p>Corrija cualquier advertencia o error que aparezca en el panel de registro.</p></li>
-<li><p>Esto ayuda a garantizar que el modelo esté completo y no se rompa durante la ejecución.</p></li>
-</ul>
-<ol class="arabic simple" start="11">
-<li><p><strong>Ejecute el modelo</strong></p></li>
-</ol>
-<ul class="simple">
-<li><p>Ejecute el modelo haciendo clic en <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Ejectar</span> <span class="pre">Modelo</span></code></p></li>
-<li><p>Configure <strong>Límites administrativos</strong> en <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
-<li><p>Configure <strong>Trayectoria del ciclón</strong> en <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
-<li><p>Configure <strong>Ráster de población</strong> en <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
-<li><p>Configure la salida del modelo <strong>exposed_population_sum</strong> en <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>y guárdela en <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
-</ul>
-<p>Ahora puede ejecutar este modelo cada vez que esté disponible una nueva trayectoria de ciclón.</p>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG"><img alt="../../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" src="../../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Para ejecutar el modelo, especifique la entrada tal y como se muestra en la imagen y defina el nombre de la casilla de salida.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p><strong>Los resultados deberían ser parecidos a los siguientes:</strong></p>
-<figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG" style="width: 600px;" />
-</a>
-</figure>
-<ol class="arabic simple" start="12">
-<li><p><strong>Añada la amortiguación del ciclón como salida del modelo adicional</strong></p></li>
-</ol>
+<li><p>En la <strong>Caja de herramientas de procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Seleccionar</span> <span class="pre">por</span> <span class="pre">ubicación</span> <span class="pre">(Select</span> <span class="pre">by</span> <span class="pre">Location)</span></code>.</p></li>
+<li><p>Configure los parámetros:</p>
 <ul>
-<li><p>Haga doble clic en el algoritmo del paso 7 (<strong>Reproyectar el buffer de nuevo a EPSG:4326</strong>) para abrir su configuración.</p></li>
-<li><p>En el campo <strong>Capa de salida</strong>, marque la casilla <strong>Salida del modelo</strong>.</p></li>
-<li><p>Asigne un nombre claro al resultado, por ejemplo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
+<li><p><strong>Capa de entrada</strong>: centros de salud</p></li>
+<li><p><strong>Predicado</strong>: <code class="docutils literal notranslate"><span class="pre">intersects</span></code></p></li>
+<li><p><strong>Capa de intersección</strong>: <code class="docutils literal notranslate"><span class="pre">merged_isochrones_10h.gpkg</span></code></p></li>
+</ul>
+</li>
+<li><p>Clic en <strong>Ejecutar</strong>.</p></li>
+</ul>
+<blockquote>
+<div><p>💡 Los puntos seleccionados son aquellos dentro de las áreas de servicio de 10 horas de los almacenes.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Crear un campo de alcanzabilidad para los puestos de salud seleccionados</strong></p>
+<ul>
+<li><p>Abra la <strong>Calculadora de campos</strong> <img alt="" src="../../../_images/mActionCalculateField.png" /> en la capa <code class="docutils literal notranslate"><span class="pre">health_posts_only</span></code>.</p></li>
+<li><p>Marque ✅ <code class="docutils literal notranslate"><span class="pre">Actualizar</span> <span class="pre">solo</span> <span class="pre">las</span> <span class="pre">entidades</span> <span class="pre">seleccionadas</span></code></p></li>
+<li><p><strong>Nombre del campo de salida</strong>: <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
+<li><p><strong>Tipo de campo de salida</strong>: <code class="docutils literal notranslate"><span class="pre">Texto</span> <span class="pre">(string)</span></code></p></li>
+<li><p><strong>Expresión</strong>:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&#39;reachable in 10 hours&#39;
 </pre></div>
 </div>
 </li>
-<li><p>Haga clic en <strong>Aceptar</strong> para guardar el cambio.</p></li>
-<li><p>Esto permitirá que el modelo genere tanto los resultados de la población expuesta como la zona buffer de impacto del ciclón cuando se ejecute.</p></li>
+<li><p>Clic en <strong>OK</strong> para crear y rellenar el campo.</p></li>
 </ul>
-<figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_output_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_model_output_buffer.PNG" src="../../../_images/fr_MDG_AA_model_output_buffer.PNG" style="width: 600px;" />
-</a>
-</figure>
-<ol class="arabic simple" start="13">
-<li><p><strong>Ejecute el modelo otra vez</strong></p></li>
+</li>
+<li><p><strong>Marcar los puestos de salud restantes como no alcanzables</strong></p>
+<ul>
+<li><p>Invertir la selección:<br />
+<code class="docutils literal notranslate"><span class="pre">Editar</span></code> → <code class="docutils literal notranslate"><span class="pre">Invertir</span> <span class="pre">selección</span></code> <img alt="" src="../../../_images/mActionInvertSelection.png" /><br />
+o clic derecho en la capa → <code class="docutils literal notranslate"><span class="pre">Invertir</span> <span class="pre">selección</span></code>.</p></li>
+<li><p>Abra nuevamente la <strong>Calculadora de campos</strong>.</p></li>
+<li><p>Marque ✅ <code class="docutils literal notranslate"><span class="pre">Actualizar</span> <span class="pre">solo</span> <span class="pre">las</span> <span class="pre">entidades</span> <span class="pre">seleccionadas</span></code></p></li>
+<li><p>Use el mismo campo: <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
+<li><p><strong>Expresión</strong>:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&#39;not reachable in 10 hours&#39;
+</pre></div>
+</div>
+</li>
+<li><p>Clic en <strong>OK</strong> para aplicar la actualización.</p></li>
+</ul>
+</li>
 </ol>
-<ul class="simple">
-<li><p>Ejecute el modelo haciendo clic en <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Ejecutar</span> <span class="pre">Modelo</span></code></p></li>
-<li><p>Configure <strong>Límites administrativos</strong> en <code class="docutils literal notranslate"><span class="pre">mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg</span></code></p></li>
-<li><p>Configure <strong>Trayectoria del ciclón</strong> en <code class="docutils literal notranslate"><span class="pre">example_Harald_2025_Track</span></code></p></li>
-<li><p>Configure <strong>Ráster de población</strong> en <code class="docutils literal notranslate"><span class="pre">MDG_WorldPop_2020_constrained.tif</span></code></p></li>
-<li><p>Configure la salida del modelo <strong>cyclone_harald_buffer</strong> en <code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code>y guárdela en <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
-<li><p>Configure la salida del modelo <strong>exposed_population_sum</strong> en <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>y guárdela en <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
-</ul>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
-Buffer de salida del modelador gráfico</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" style="width: 600px;" />
-</a>
-</figure>
-<p>Definición de la entrada del modelo: Límites administrativos</p>
-</div>
-<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Ejecute modelo con salida de buffer</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
-Salida del modelo</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id14">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
+<blockquote>
+<div><p>✅ Ahora todos los puestos de salud están etiquetados como <strong>alcanzables</strong> o <strong>no alcanzables</strong> en la columna <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code>.</p>
+</div></blockquote>
 </section>
 </section>
 
@@ -1038,13 +863,19 @@ Salida del modelo</label><div class="sd-tab-content docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#width-600px-name-the-world-result-align-center">width: 600px
-name: the_world_result
-align: center</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios">1. Filtrar los puestos de salud del conjunto nacional de establecimientos sanitarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm">2. Cargar las capas de isocronas de los tres almacenes de la CRM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm">3. Visualizar la alcanzabilidad de los puestos de salud desde los almacenes de la CRM</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

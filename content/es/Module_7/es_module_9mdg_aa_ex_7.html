@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ejercicio 3: Identificación de centros de salud y escuelas afectados: Aina añade más capas &#8212; GIS Resource Training Center</title>
+    <title>Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones &#8212; GIS Resource Training Center</title>
   
   
   
@@ -58,7 +58,7 @@
     <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_7/es_module_7_mdg_aa_ex_3';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/es/Module_7/es_module_9mdg_aa_ex_7';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -449,7 +449,7 @@
       
       
       
-      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_7/es_module_7_mdg_aa_ex_3.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/es/Module_7/es_module_9mdg_aa_ex_7.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -479,7 +479,7 @@
       
       
       
-      <li><a href="../../../_sources/content/es/Module_7/es_module_7_mdg_aa_ex_3.md" target="_blank"
+      <li><a href="../../../_sources/content/es/Module_7/es_module_9mdg_aa_ex_7.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -563,7 +563,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ejercicio 3: Identificación de centros de salud y escuelas afectados: Aina añade más capas</h1>
+    <h1>Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -573,12 +573,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-disponibles">Datos disponibles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto">Contexto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas:</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios">1. Filtrar los puestos de salud del conjunto nacional de establecimientos sanitarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm">2. Cargar las capas de isocronas de los tres almacenes de la CRM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm">3. Visualizar la alcanzabilidad de los puestos de salud desde los almacenes de la CRM</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -600,8 +607,8 @@ document.write(`
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-3-identificacion-de-centros-de-salud-y-escuelas-afectados-aina-anade-mas-capas">
-<h1>Ejercicio 3: Identificación de centros de salud y escuelas afectados: Aina añade más capas<a class="headerlink" href="#ejercicio-3-identificacion-de-centros-de-salud-y-escuelas-afectados-aina-anade-mas-capas" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="ejercicio-6-exportacion-de-resultados-de-modelos-para-el-equipo-de-operaciones">
+<h1>Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones<a class="headerlink" href="#ejercicio-6-exportacion-de-resultados-de-modelos-para-el-equipo-de-operaciones" title="Link to this heading">#</a></h1>
 <section id="caracteristicas-del-ejercicio">
 <h2>Características del ejercicio<a class="headerlink" href="#caracteristicas-del-ejercicio" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -623,7 +630,7 @@ document.write(`
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>Programa de ejercicios:</strong></p>
-<p class="sd-card-text">Este ejercicio forma parte del <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html">Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.</a></p>
+<p class="sd-card-text">Este ejercicio forma parte del <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html">programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.</a></p>
 </div>
 </div>
 </div>
@@ -661,11 +668,11 @@ document.write(`
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-border-1 sd-shadow-none docutils">
 <div class="sd-card-header docutils">
-<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong>
-Aina, experta en SIG de la Cruz Roja Malgache (CRM), se prepara para la próxima temporada de ciclones. Quiere mejorar la capacidad de su equipo para actuar con rapidez una vez pronosticada una tormenta automatizando los análisis clave en QGIS. Esto incluye la estimación de las poblaciones expuestas, la identificación de los servicios afectados como la sanidad y la educación, y la evaluación de si se puede llegar a los puestos sanitarios desde los almacenes clave en un plazo crítico de 10 horas.
-El objetivo es preparar un flujo de trabajo de análisis y visualización de principio a fin que pueda respaldar una acción anticipatoria rápida y basada en datos antes de que un ciclón toque tierra.</p>
+<p class="sd-card-text"><strong>Objetivo del ejercicio:</strong></p>
 </div>
 <div class="sd-card-body docutils">
+<p class="sd-card-text">Aina, experta en SIG de la Cruz Roja Malgache (CRM), se prepara para la próxima temporada de ciclones. Quiere mejorar la capacidad de su equipo para actuar con rapidez una vez pronosticada una tormenta automatizando los análisis clave en QGIS. Esto incluye la estimación de las poblaciones expuestas, la identificación de los servicios afectados como la sanidad y la educación, y la evaluación de si se puede llegar a los puestos sanitarios desde los almacenes clave en un plazo crítico de 10 horas.
+El objetivo es preparar un flujo de trabajo de análisis y visualización de principio a fin que pueda respaldar una acción anticipatoria rápida y basada en datos antes de que un ciclón toque tierra.</p>
 </div>
 </div>
 </section>
@@ -699,474 +706,175 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <li><p class="sd-card-text">Reserve algo de tiempo para preguntas abiertas.</p></li>
 </ul>
 </div>
-</details></section>
-<section id="datos-disponibles">
-<h2>Datos disponibles<a class="headerlink" href="#datos-disponibles" title="Link to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Descargue todos los conjuntos de datos aquí, guarde la carpeta en su ordenador y descomprima el archivo.</strong></p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip"><span>https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip</span></a></div>
+</details><p><strong>Contexto:</strong></p>
+<p>Cuando se pronostica que un ciclón tocará tierra, Aina trabaja con los equipos de logística y salud para decidir <strong>a dónde enviar los kits médicos preposicionados</strong>. Sin embargo, no todos los almacenes de la CRM tienen los artículos necesarios — solo tres los almacenan.</p>
+<p>Para tomar decisiones rápidas y basadas en datos, Aina necesita saber <strong>qué puestos de salud son alcanzables</strong> desde esos almacenes <strong>en un máximo de 10 horas</strong>. Este análisis ayuda a garantizar que los kits se envíen a instalaciones <strong>que realmente pueden ser alcanzadas a tiempo</strong>.</p>
+<p>Su objetivo es crear un mapa visual claro que muestre los puestos de salud alcanzables y no alcanzables — y compartirlo con los responsables de la toma de decisiones lo más rápido posible.</p>
 </section>
-<section id="contexto">
-<h2>Contexto<a class="headerlink" href="#contexto" title="Link to this heading">#</a></h2>
-<p>Tras construir su modelo para estimar la población expuesta, Aina quiere ampliar su utilidad. Asimismo, decide <strong>identificar los servicios críticos</strong> afectados por los ciclones, especialmente los <strong>centros de salud</strong> y las <strong>escuelas</strong>.</p>
-<p>No solo quiere saber <em>qué instalaciones</em> están afectadas, sino también <em>cuántas hay en total</em> en cada distrito. De ese modo, puede calcular el porcentaje <strong>de servicios afectados</strong> en cada zona.</p>
-<p>Para ello, utilizará dos conjuntos de datos de puntos de OpenStreetMap:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_health_facilities">Centros de salud</a></p></li>
-<li><p><a class="reference external" href="https://data.humdata.org/dataset/hotosm_mdg_education_facilities">Establecimientos educativos</a></p></li>
-</ul>
 </section>
-<section id="tareas">
-<h2>Tareas:<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Cargue los conjuntos de datos de los centros de salud y los establecimientos educativos.</strong>
-En primer lugar, echemos un vistazo a los datos con los que queremos trabajar.</p></li>
+<section class="tex2jax_ignore mathjax_ignore" id="tareas">
+<h1>Tareas<a class="headerlink" href="#tareas" title="Link to this heading">#</a></h1>
+<section id="filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios">
+<h2>1. Filtrar los puestos de salud del conjunto nacional de establecimientos sanitarios<a class="headerlink" href="#filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios" title="Link to this heading">#</a></h2>
+<p>Antes de comprobar qué instalaciones son alcanzables, Aina necesita aislar los <strong>puestos de salud</strong> del conjunto más amplio de todos los establecimientos sanitarios.</p>
+<ol class="arabic">
+<li><p><strong>Cargar el conjunto de datos de establecimientos sanitarios</strong></p>
+<ul class="simple">
+<li><p>Archivo: <code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities_points.gpkg</span></code> (o el GeoPackage correspondiente que esté utilizando)</p></li>
+<li><p>Cárguelo arrastrando y soltando o a través de <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">vectorial</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Abra la tabla de atributos</strong> y revise la columna <code class="docutils literal notranslate"><span class="pre">amenity</span></code>.</p></li>
+<li><p><strong>Filtrar por expresión</strong> para conservar únicamente los puestos de salud:</p>
+<ul>
+<li><p>Clic derecho en la capa → <code class="docutils literal notranslate"><span class="pre">Filtro…</span></code></p></li>
+<li><p>Utilice la siguiente expresión:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&quot;amenity&quot; = &#39;health_post&#39;
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Exportar la capa filtrada</strong></p>
+<ul>
+<li><p>Clic derecho en la capa filtrada en el panel de capas → <code class="docutils literal notranslate"><span class="pre">Exportar</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">elementos</span> <span class="pre">como…</span></code></p></li>
+<li><p>Formato: <code class="docutils literal notranslate"><span class="pre">GeoPackage</span></code></p></li>
+<li><p>Guardar en su carpeta <code class="docutils literal notranslate"><span class="pre">project</span></code> como:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">health_posts_only</span><span class="o">.</span><span class="n">gpkg</span>
+</pre></div>
+</div>
+</li>
+<li><p>Hacer clic en <code class="docutils literal notranslate"><span class="pre">OK</span></code> para confirmar la exportación.</p></li>
+</ul>
+</li>
+<li><p><strong>Eliminar el filtro</strong> o la capa original del proyecto para evitar confusiones.</p></li>
 </ol>
+<blockquote>
+<div><p>💡 <strong>Consejo</strong>: Filtrar directamente en QGIS le permite trabajar con un subconjunto específico sin modificar el conjunto de datos original.</p>
+</div></blockquote>
+</section>
+<section id="cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm">
+<h2>2. Cargar las capas de isocronas de los tres almacenes de la CRM<a class="headerlink" href="#cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm" title="Link to this heading">#</a></h2>
+<p>Aina sabe que solo <strong>tres almacenes</strong> tienen los suministros médicos necesarios:<br />
+<strong>Antananarivo</strong>, <strong>Maroantsetra</strong> y <strong>Tolanaro</strong>. Ahora cargará las capas de isocronas para cada uno de estos almacenes para comenzar a analizar las áreas de servicio.</p>
+<ol class="arabic">
+<li><p><strong>Cargar las capas individuales de isocronas</strong> de cada almacén:</p>
 <ul class="simple">
-<li><p>Navegue hasta su <code class="docutils literal notranslate"><span class="pre">input</span></code> carpeta de datos.</p></li>
-<li><p>Arrastre y suelte las siguientes capas en su proyecto de QGIS:</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Antananarivo.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Maroantsetra.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_warehouse_Isochrones_Tolanaro.gpkg</span></code></p></li>
+</ul>
+<p>Puede arrastrar y soltar cada archivo en QGIS o ir a <code class="docutils literal notranslate"><span class="pre">Capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span></code> → <code class="docutils literal notranslate"><span class="pre">Añadir</span> <span class="pre">capa</span> <span class="pre">vectorial</span></code>.</p>
+</li>
+<li><p><strong>Inspeccionar la tabla de atributos</strong> de cada capa de isocronas<br />
+Confirme que cada registro tenga un campo <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> que indique el tiempo de viaje estimado en <strong>horas</strong>.</p></li>
+<li><p><strong>Eliminar todos los elementos cuyo tiempo supere las 10 horas</strong>:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">hotosm_mdg_health_facilities</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hotosm_mdg_education_facilities</span></code></p></li>
-</ul>
-</li>
-<li><p>Confirme que ambas capas estén visibles en el <strong>Panel de capas</strong></p></li>
-</ul>
-<ol class="arabic simple" start="2">
-<li><p><strong>Guarde su modelo con un nuevo nombre</strong></p>
-<ul class="simple">
-<li><p>Abra su modelo existente <code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta.model3</span></code>.</p></li>
-<li><p>Guárdelo inmediatamente con un nuevo nombre:</p>
-<ul>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Modelo</span></code> → <code class="docutils literal notranslate"><span class="pre">Guardar</span> <span class="pre">Modelo</span> <span class="pre">Como</span></code></p></li>
-<li><p>Guárdelo en la <code class="docutils literal notranslate"><span class="pre">project</span></code> carpeta como:</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education</span>
+<li><p>Clic derecho en cada capa → <code class="docutils literal notranslate"><span class="pre">Filtro…</span></code></p></li>
+<li><p>Aplicar la expresión:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&quot;traveltime_h&quot; &lt;= 10
 </pre></div>
 </div>
-<ol class="arabic" start="3">
-<li><p><strong>Añada nuevas entradas de modelo</strong></p>
-<ul>
-<li><p>En la sección <strong>Entradas</strong>, añada:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Capa</span> <span class="pre">vectorial</span></code></p>
-<ul class="simple">
-<li><p><strong>Descripción</strong>:</p></li>
+</li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Centros</span> <span class="n">de</span> <span class="n">salud</span>
+</li>
+<li><p><strong>Exportar cada capa filtrada</strong> a la carpeta <code class="docutils literal notranslate"><span class="pre">temp</span></code> :<br />
+En este punto, Aina también se asegura de que todas las capas exportadas se guarden en el mismo CRS que el conjunto de datos de los puestos de salud — <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code> — para evitar problemas en la unión espacial.</p>
+<ul>
+<li><p>Guardar cada una como:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CRM_isochrones_Antananarivo_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
+<span class="n">CRM_isochrones_Maroantsetra_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
+<span class="n">CRM_isochrones_Tolanaro_upto10h</span><span class="o">.</span><span class="n">gpkg</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Punto</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Vector</span> <span class="pre">Layer</span></code></p>
-<ul class="simple">
-<li><p><strong>Descripción</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Establecimientos</span> <span class="n">educativos</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Configure <strong>Tipo de geometría</strong> en <code class="docutils literal notranslate"><span class="pre">Punto</span></code></p></li>
-</ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-</ol>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-0">
-Entrada del modelo: Centros de salud</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="the-world-result">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG" src="../../../_images/fr_MDG_AA_model_input_health_facilities.PNG" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definir una nueva entrada del modelo: capa vectorial de puntos que representa los centros de salud</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
-Entrada del modelo: Establecimientos educativos</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG" src="../../../_images/fr_MDG_AA_model_input_education_facilities.PNG" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Definir una nueva entrada del modelo: capa vectorial de puntos que representa los establecimientos educativos</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
-<ol class="arabic" start="3">
-<li><p><strong>Conteo de todas las instalaciones sanitarias por Admin 2</strong></p>
-<ul>
-<li><p>En el panel <strong>Algoritmos</strong>, busque <strong>Contar puntos en polígono</strong>.</p></li>
-<li><p>Configuración:</p>
+<li><p><strong>Aplicar estilo a las isocronas para mayor claridad</strong><br />
+Aina puede aplicar un archivo de estilo predefinido para colorear la capa según <code class="docutils literal notranslate"><span class="pre">traveltime_h</span></code> y visualizar diferentes bandas de tiempo (4h, 6h, 8h, 10h) más adelante en el Paso 5.</p>
 <ul class="simple">
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Contar</span> <span class="pre">el</span> <span class="pre">número</span> <span class="pre">de</span> <span class="pre">centros</span> <span class="pre">de</span> <span class="pre">salud</span> <span class="pre">en</span> <span class="pre">cada</span> <span class="pre">distrito</span></code></p></li>
-<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativas</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Nombre del campo de conteo</strong>:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Total_centros_salud</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
-</ul>
-</li>
+<li><p>Clic derecho en cada capa filtrada → <code class="docutils literal notranslate"><span class="pre">Propiedades</span></code> → <code class="docutils literal notranslate"><span class="pre">Simbología</span></code></p></li>
+<li><p>Clic en <code class="docutils literal notranslate"><span class="pre">Estilo</span></code> (parte inferior) → <code class="docutils literal notranslate"><span class="pre">Cargar</span> <span class="pre">estilo…</span></code></p></li>
+<li><p>Seleccionar:
+<code class="docutils literal notranslate"><span class="pre">CRM_warehouse_isochrones_style.qml</span></code></p></li>
+<li><p>Clic en <code class="docutils literal notranslate"><span class="pre">Abrir</span></code>, luego <code class="docutils literal notranslate"><span class="pre">Aplicar</span></code> y <code class="docutils literal notranslate"><span class="pre">Aceptar</span></code></p></li>
 </ul>
 </li>
 </ol>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_HF_admin2.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: calcular el número de centros de salud de cada distrito.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="4">
-<li><p><strong>Conteo de todas las instalaciones educativas por Admin 2</strong></p>
+</section>
+<section id="visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm">
+<h2>3. Visualizar la alcanzabilidad de los puestos de salud desde los almacenes de la CRM<a class="headerlink" href="#visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm" title="Link to this heading">#</a></h2>
+<p>Aina necesita identificar qué puestos de salud pueden ser alcanzados por carretera desde los tres almacenes clave de la CRM (Antananarivo, Maroantsetra y Tolanaro) <strong>en un máximo de 10 horas de viaje</strong>. Lo hará manualmente combinando las isocronas de 10 horas de estos almacenes y comparándolas con el conjunto nacional de puestos de salud.</p>
+<ol class="arabic">
+<li><p><strong>Combinar las capas de isocronas de los tres almacenes</strong></p>
 <ul>
-<li><p>Añada otro paso <strong>Contar puntos en polígono</strong>.</p></li>
-<li><p>Configuración:</p>
+<li><p>En la <strong>Caja de herramientas de procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Unir</span> <span class="pre">capas</span> <span class="pre">vectoriales</span> <span class="pre">(Merge</span> <span class="pre">Vector</span> <span class="pre">Layers)</span></code>.</p></li>
+<li><p><strong>Capas de entrada</strong>:</p>
 <ul class="simple">
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Contar</span> <span class="pre">el</span> <span class="pre">número</span> <span class="pre">de</span> <span class="pre">establecimientos</span> <span class="pre">educativos</span> <span class="pre">en</span> <span class="pre">cada</span> <span class="pre">distrito</span></code></p></li>
-<li><p><strong>Capa de polígonos</strong>: <code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativas</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Capa de puntos</strong>: <code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativos</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Nombre del campo de conteo</strong>:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Antananarivo_upto10h.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Maroantsetra_upto10h.gpkg</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CRM_isochrones_Tolanaro_upto10h.gpkg</span></code></p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Total_establc_educativas</span>
+</li>
+<li><p><strong>CRS</strong>: <code class="docutils literal notranslate"><span class="pre">EPSG:4326</span></code></p></li>
+<li><p><strong>Guardar en archivo</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">merged_isochrones_10h</span><span class="o">.</span><span class="n">gpkg</span>
 </pre></div>
 </div>
+</li>
+<li><p>Clic en <strong>Ejecutar</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Seleccionar los puestos de salud alcanzables en 10 horas</strong></p>
 <ul class="simple">
-<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_EF_admin2.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: calcular el número de centros escolares de cada distrito.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="5">
-<li><p><strong>Intersección de las instalaciones sanitarias con zona de influencia ciclónica</strong></p>
+<li><p>En la <strong>Caja de herramientas de procesos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Seleccionar</span> <span class="pre">por</span> <span class="pre">ubicación</span> <span class="pre">(Select</span> <span class="pre">by</span> <span class="pre">Location)</span></code>.</p></li>
+<li><p>Configure los parámetros:</p>
 <ul>
-<li><p>En el panel de <strong>Algoritmos</strong>, busque <strong>Intersección</strong>.</p></li>
-<li><p>En la ventana de configuración:</p></li>
-<li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Centros</span> <span class="n">de</span> <span class="n">salud</span> <span class="n">en</span> <span class="n">la</span> <span class="n">zona</span> <span class="n">de</span> <span class="n">impacto</span> <span class="k">del</span> <span class="n">ciclón</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Capa superpuesta</strong>: zona de influencia ciclónica (utilice “Reproyectado a EPSG:4326” desde <strong>Salida del algoritmo</strong>)</p></li>
-<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
+<li><p><strong>Capa de entrada</strong>: centros de salud</p></li>
+<li><p><strong>Predicado</strong>: <code class="docutils literal notranslate"><span class="pre">intersects</span></code></p></li>
+<li><p><strong>Capa de intersección</strong>: <code class="docutils literal notranslate"><span class="pre">merged_isochrones_10h.gpkg</span></code></p></li>
 </ul>
 </li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ok</span></code></p></li>
+<li><p>Clic en <strong>Ejecutar</strong>.</p></li>
 </ul>
+<blockquote>
+<div><p>💡 Los puntos seleccionados son aquellos dentro de las áreas de servicio de 10 horas de los almacenes.</p>
+</div></blockquote>
 </li>
-</ol>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" src="../../../_images/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: interconectar los centros de salud con la zona de impacto del ciclón.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="6">
-<li><p><strong>Intersección de las instalaciones educativas con amortiguación del ciclón</strong></p>
+<li><p><strong>Crear un campo de alcanzabilidad para los puestos de salud seleccionados</strong></p>
 <ul>
-<li><p>Añada otro algoritmo <strong>Intersección</strong>.</p></li>
-<li><p>Configuración:</p>
-<ul>
-<li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Establecimientos</span> <span class="n">educativos</span> <span class="n">en</span> <span class="n">la</span> <span class="n">zona</span> <span class="n">de</span> <span class="n">impacto</span> <span class="k">del</span> <span class="n">ciclón</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativas</span></code> (Entrada del modelo)</p></li>
-<li><p><strong>Capa superpuesta</strong>: zona de influencia ciclónica (utilice “Reproyectado a EPSG:4326” desde <strong>Salida del algoritmo</strong>)</p></li>
-<li><p>Deje la salida como <strong>Salida del modelo</strong></p></li>
-</ul>
-</li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ok</span></code></p></li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" src="../../../_images/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: interconectar los centros educativos con la zona de impacto del ciclón.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="7">
-<li><p><strong>Conteo de centros sanitarios afectados por Admin 2</strong></p>
-<ul>
-<li><p>Añada <strong>Contar puntos en polígono</strong></p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Conteo</span> <span class="pre">de</span> <span class="pre">centros</span> <span class="pre">sanitarios</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">Admin</span> <span class="pre">2</span></code></p></li>
-<li><p>Configuración:</p>
-<ul>
-<li><p>Añada una descripción: Conteo de centros sanitarios afectados por Admin 2</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Conteo</span> <span class="n">de</span> <span class="n">centros</span> <span class="n">sanitarios</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">Admin</span> <span class="mi">2</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Capa de polígonos</strong>: Conteo total de la producción de los centros de salud</p></li>
-<li><p><strong>Capa de puntos</strong>: salida de centros de salud intersecados</p></li>
-<li><p><strong>Nombre del campo de conteo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_centros_salud_expuestas</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: cómputo de los centros sanitarios afectados por distrito.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic" start="8">
-<li><p><strong>Conteo de centros educativos afectados por Admin 2</strong></p>
-<ul>
-<li><p>Añada <strong>Contar puntos en polígono</strong></p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Contar</span> <span class="pre">los</span> <span class="pre">establecimientos</span> <span class="pre">educativos</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
-<li><p>Configuración:</p>
-<ul>
-<li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Contar</span> <span class="n">los</span> <span class="n">establecimientos</span> <span class="n">educativos</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">distrito</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Capa de polígonos</strong>: Conteo de la producción total de instalaciones educativas</p></li>
-<li><p><strong>Capa de puntos</strong>: salida de instalaciones educativas intersecadas</p></li>
-<li><p><strong>Nombre del campo de conteo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sum_education_expuesta</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG"><img alt="../../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" src="../../../_images/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: cómputo de los centros sanitarios afectados por distrito.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="9">
-<li><p><strong>Calcule el porcentaje de centros sanitarios afectados</strong>
-Para calcular el porcentaje de centros de salud afectados por área administrativa, utilizaremos la <strong>Calculadora de Campo</strong> :</p></li>
-</ol>
-<ul>
-<li><p>Añada la <strong>Calculadora de Campo</strong>:</p>
-<ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calcular</span> <span class="pre">el</span> <span class="pre">porcentaje</span> <span class="pre">de</span> <span class="pre">centros</span> <span class="pre">de</span> <span class="pre">salud</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
-<li><p>Configuración:</p>
-<ul>
-<li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Calcular</span> <span class="n">el</span> <span class="n">porcentaje</span> <span class="n">de</span> <span class="n">centros</span> <span class="n">de</span> <span class="n">salud</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">distrito</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
-<li><p><strong>Capa de entrada</strong>: la salida de Conteo de centros de salud afectados por Admin 2</p></li>
-<li><p><strong>Nombre del campo de salida</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_expuesto_salud</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Tipo de campo</strong>: Decimal (real)</p></li>
-<li><p><strong>Expresión</strong>:</p></li>
-</ul>
-<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span> CASE WHEN &quot;Total_centros_salud&quot; &gt; 0
- THEN &quot;sum_centros_salud_expuestas&quot; / &quot;Total_centros_salud&quot; * 100
- ELSE 0
- END
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Configure la salida como <strong>Salida del modelo</strong></p></li>
-<li><p>Nómbrelo:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_centros_salud_expuesta</span>
-</pre></div>
-</div>
-</li>
-</ul>
-<figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG"><img alt="../../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" src="../../../_images/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuración de la operación: calcular el porcentaje de centros de salud afectados por distrito.</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="10">
-<li><p><strong>Calcule el porcentaje de centros educativos afectados</strong>
-Para calcular el porcentaje de centros educativos afectados por zona administrativa, utilizaremos la <strong>calculadora de campos</strong> :</p></li>
-</ol>
-<ul>
-<li><p>Añada la <strong>calculadora de campos</strong>:</p>
-<ul>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Calcular</span> <span class="pre">el</span> <span class="pre">porcentaje</span> <span class="pre">de</span> <span class="pre">establecimientos</span> <span class="pre">educativos</span> <span class="pre">afectados</span> <span class="pre">por</span> <span class="pre">distrito</span></code></p></li>
-<li><p>Configuración:</p>
-<ul>
-<li><p>Añada una descripción:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Calcular</span> <span class="n">el</span> <span class="n">porcentaje</span> <span class="n">de</span> <span class="n">establecimientos</span> <span class="n">educativos</span> <span class="n">afectados</span> <span class="n">por</span> <span class="n">distrito</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Capa de entrada</strong>: la salida de Conteo de establecimientos educativos afectados por Admin 2</p></li>
-<li><p><strong>Nombre del campo de salida</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pct_expuesto_educación</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Tipo de campo</strong>: Decimal (real)</p></li>
+<li><p>Abra la <strong>Calculadora de campos</strong> <img alt="" src="../../../_images/mActionCalculateField.png" /> en la capa <code class="docutils literal notranslate"><span class="pre">health_posts_only</span></code>.</p></li>
+<li><p>Marque ✅ <code class="docutils literal notranslate"><span class="pre">Actualizar</span> <span class="pre">solo</span> <span class="pre">las</span> <span class="pre">entidades</span> <span class="pre">seleccionadas</span></code></p></li>
+<li><p><strong>Nombre del campo de salida</strong>: <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
+<li><p><strong>Tipo de campo de salida</strong>: <code class="docutils literal notranslate"><span class="pre">Texto</span> <span class="pre">(string)</span></code></p></li>
 <li><p><strong>Expresión</strong>:</p>
-<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>CASE WHEN &quot;Total_establc_educativas&quot; &gt; 0
-THEN &quot;sum_education_expuesta&quot; / &quot;Total_establc_educativas&quot; * 100
-ELSE 0
-END
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&#39;reachable in 10 hours&#39;
 </pre></div>
 </div>
 </li>
+<li><p>Clic en <strong>OK</strong> para crear y rellenar el campo.</p></li>
 </ul>
 </li>
-<li><p>Configure la salida como <strong>Salida del modelo</strong></p></li>
-<li><p>Nómbrelo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_educación_expuesta</span>
+<li><p><strong>Marcar los puestos de salud restantes como no alcanzables</strong></p>
+<ul>
+<li><p>Invertir la selección:<br />
+<code class="docutils literal notranslate"><span class="pre">Editar</span></code> → <code class="docutils literal notranslate"><span class="pre">Invertir</span> <span class="pre">selección</span></code> <img alt="" src="../../../_images/mActionInvertSelection.png" /><br />
+o clic derecho en la capa → <code class="docutils literal notranslate"><span class="pre">Invertir</span> <span class="pre">selección</span></code>.</p></li>
+<li><p>Abra nuevamente la <strong>Calculadora de campos</strong>.</p></li>
+<li><p>Marque ✅ <code class="docutils literal notranslate"><span class="pre">Actualizar</span> <span class="pre">solo</span> <span class="pre">las</span> <span class="pre">entidades</span> <span class="pre">seleccionadas</span></code></p></li>
+<li><p>Use el mismo campo: <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code></p></li>
+<li><p><strong>Expresión</strong>:</p>
+<div class="highlight-qgis notranslate"><div class="highlight"><pre><span></span>&#39;not reachable in 10 hours&#39;
 </pre></div>
 </div>
 </li>
+<li><p>Clic en <strong>OK</strong> para aplicar la actualización.</p></li>
 </ul>
 </li>
-</ul>
-<figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG"><img alt="../../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" src="../../../_images/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuration de l’opération : calculer le pourcentage d’établissements d’éducation touchés par district.</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="11">
-<li><p><strong>Valide su modelo ampliado y guárdelo.</strong></p></li>
 </ol>
-<ul class="simple">
-<li><p>Haga clic en el botón ✔️ <strong>Validate Model</strong> para verificar si hay errores.</p></li>
-<li><p>Guarde de nuevo en:<br />
-<strong><code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta_establecimientos_salud_y_educativas.model3</span></code></strong></p></li>
-</ul>
-<ol class="arabic simple" start="12">
-<li><p><strong>Ejecute el modelo</strong></p></li>
-</ol>
-<ul>
-<li><p>Haga clic en el botón ▶️ <strong>Run</strong> en la esquina superior derecha de la ventana del modelador gráfico.</p></li>
-<li><p><strong>Entrada:</strong></p>
-<ul class="simple">
-<li><p>Haga clic en los tres puntos de cada conjunto de datos de entrada y seleccione la entrada correcta:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Trayectoria</span> <span class="pre">del</span> <span class="pre">ciclón</span></code> → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ráster</span> <span class="pre">de</span> <span class="pre">población</span></code> → seleccione el archivo ráster WorldPop</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativas</span></code> → seleccione la capa Admin 2 (por ejemplo, <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> → seleccione el conjunto de datos de puntos para los centros de salud.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativas</span></code> → seleccione el conjunto de datos de puntos para las escuelas</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Salida:</strong></p>
-<ul>
-<li><p>Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuesta</span></code> -&gt;</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_centros_salud_expuesta</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code> -&gt;</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_educación_expuesta</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">trayectoria_harald_buffer</span></code> -&gt;</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trayectoria_harald_buffer</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">población_expuesta_suma</span></code> -&gt;</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">población_expuesta_suma_harald</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ejecutar</span></code> para ejecutar el modelo completo.</p></li>
-</ul>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
-Modelador gráfico</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id10">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Vista de conjunto del Modelo Gráfico de la Tarea 3 mostrando todos los algoritmos conectados y las salidas definidas.</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
-Configuración del modelo de ejecución</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id11">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Configuration des paramètres pour exécuter le modèle de la tâche 3 avec toutes les couches d’entrée requises.</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Salida del modelo</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id12">
-<a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcentages d’établissements de santé et d’éducation touchés par district.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</div>
-</div>
-<hr class="docutils" />
+<blockquote>
+<div><p>✅ Ahora todos los puestos de salud están etiquetados como <strong>alcanzables</strong> o <strong>no alcanzables</strong> en la columna <code class="docutils literal notranslate"><span class="pre">Reachability_time</span></code>.</p>
+</div></blockquote>
 </section>
 </section>
 
@@ -1216,12 +924,19 @@ Salida del modelo</label><div class="sd-tab-content docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicio 6: Exportación de resultados de modelos para el equipo de operaciones</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas-del-ejercicio">Características del ejercicio</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrucciones-para-capacitadores">Instrucciones para capacitadores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-disponibles">Datos disponibles</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto">Contexto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas:</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tareas">Tareas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-los-puestos-de-salud-del-conjunto-nacional-de-establecimientos-sanitarios">1. Filtrar los puestos de salud del conjunto nacional de establecimientos sanitarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cargar-las-capas-de-isocronas-de-los-tres-almacenes-de-la-crm">2. Cargar las capas de isocronas de los tres almacenes de la CRM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizar-la-alcanzabilidad-de-los-puestos-de-salud-desde-los-almacenes-de-la-crm">3. Visualizar la alcanzabilidad de los puestos de salud desde los almacenes de la CRM</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

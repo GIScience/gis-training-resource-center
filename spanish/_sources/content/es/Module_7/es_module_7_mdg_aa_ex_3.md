@@ -125,27 +125,27 @@ En primer lugar, echemos un vistazo a los datos con los que queremos trabajar.
   - `hotosm_mdg_education_facilities`
 - Confirme que ambas capas estén visibles en el **Panel de capas**
 2. **Guarde su modelo con un nuevo nombre**
-   - Abra su modelo existente `Estimate_Exposed_Population.model3`.
+   - Abra su modelo existente `Estimación_Población_Expuesta.model3`.
    - Guárdelo inmediatamente con un nuevo nombre:
-     - Haga clic en `Model` → `Save As…`
+     - Haga clic en `Modelo` → `Guardar Modelo Como`
      - Guárdelo en la `project` carpeta como:
 ```
 Estimate_Exposed_Population_Health_Education
 ```
 3. **Añada nuevas entradas de modelo**
    - En la sección **Entradas**, añada:
+     - `Capa vectorial`
+       - **Descripción**:
+        ```
+        Centros de salud
+        ```
+       - Configure **Tipo de geometría** en `Punto`
      - `Vector Layer`
        - **Descripción**:
         ```
-        Health Facilities
+        Establecimientos educativos
         ```
-       - Configure **Tipo de geometría** en `Point`
-     - `Vector Layer`
-       - **Descripción**:
-        ```
-        Education Facilities
-        ```
-       - Configure **Tipo de geometría** en `Point`
+       - Configure **Tipo de geometría** en `Punto`
 :::::{tab-set}
 
 ::::{tab-item} Entrada del modelo: Centros de salud
@@ -155,7 +155,7 @@ width: 300px
 name: the_world_result
 align: center
 ---
-Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements de santé
+Definir una nueva entrada del modelo: capa vectorial de puntos que representa los centros de salud
 :::
 ::::
 ::::{tab-item} Entrada del modelo: Establecimientos educativos
@@ -164,19 +164,19 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
 width: 300px
 align: center
 ---
-Définir une nouvelle entrée de modèle : couche vectorielle de points représentant les établissements d'éducation
+Definir una nueva entrada del modelo: capa vectorial de puntos que representa los establecimientos educativos
 :::
 ::::
 :::::
 3. **Conteo de todas las instalaciones sanitarias por Admin 2**
    - En el panel **Algoritmos**, busque **Contar puntos en polígono**.
    - Configuración:
-     - Añada una descripción: `Comptez le nombre d'établissements de santé dans chaque district.`
-     - **Capa de polígonos**: `Admin Boundaries` (Entrada del modelo)
-     - **Capa de puntos**: `Health Facilities` (Entrada del modelo)
+     - Añada una descripción: `Contar el número de centros de salud en cada distrito`
+     - **Capa de polígonos**: `Limites administrativas` (Entrada del modelo)
+     - **Capa de puntos**: `Centros de salud` (Entrada del modelo)
      - **Nombre del campo de conteo**:
       ```
-      Count_health_total
+      Total_centros_salud
       ```
      - Deje la salida como **Salida del modelo**
 :::{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
@@ -189,12 +189,12 @@ Configuración de la operación: calcular el número de centros de salud de cada
 4. **Conteo de todas las instalaciones educativas por Admin 2**
    - Añada otro paso **Contar puntos en polígono**.
    - Configuración:
-     - Añada una descripción: `Comptez le nombre d'établissements de education dans chaque district`
-     - **Capa de polígonos**: `Admin Boundaries` (Entrada del modelo)
-     - **Capa de puntos**: `Education Facilities` (Entrada del modelo)
+     - Añada una descripción: `Contar el número de establecimientos educativos en cada distrito`
+     - **Capa de polígonos**: `Limites administrativas` (Entrada del modelo)
+     - **Capa de puntos**: `Establecimientos educativos` (Entrada del modelo)
      - **Nombre del campo de conteo**:
       ```
-      count_education_total
+      Total_establc_educativas
       ```
      - Deje la salida como **Salida del modelo**
 :::{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
@@ -209,9 +209,9 @@ Configuración de la operación: calcular el número de centros escolares de cad
    - En la ventana de configuración:
    - Añada una descripción:
       ```
-      Établissements de santé dans la zone d'impact du cyclone
+      Centros de salud en la zona de impacto del ciclón
       ```
-     - **Capa de entrada**: `Health Facilities` (Entrada del modelo)
+     - **Capa de entrada**: `Centros de salud` (Entrada del modelo)
      - **Capa superpuesta**: zona de influencia ciclónica (utilice "Reproyectado a EPSG:4326" desde **Salida del algoritmo**)
      - Deje la salida como **Salida del modelo**
    - Haga clic en `Ok`
@@ -227,9 +227,9 @@ Configuración de la operación: interconectar los centros de salud con la zona 
    - Configuración:
      - Añada una descripción:
        ```
-       Établissements de education dans la zone d'impact du cyclone.
+       Establecimientos educativos en la zona de impacto del ciclón
        ```
-     - **Capa de entrada**: `Education Facilities` (Entrada del modelo)
+     - **Capa de entrada**: `Establecimientos educativas` (Entrada del modelo)
      - **Capa superpuesta**: zona de influencia ciclónica (utilice "Reproyectado a EPSG:4326" desde **Salida del algoritmo**)
      - Deje la salida como **Salida del modelo**
    - Haga clic en `Ok`
@@ -242,17 +242,17 @@ Configuración de la operación: interconectar los centros educativos con la zon
 :::
 7. **Conteo de centros sanitarios afectados por Admin 2**
    - Añada **Contar puntos en polígono**
-   - Añada una descripción: `Compter les établissements de santé touchés par district`
+   - Añada una descripción: `Conteo de centros sanitarios afectados por Admin 2`
    - Configuración:
-     - Añada una descripción: Compter les établissements de santé touchés par district
+     - Añada una descripción: Conteo de centros sanitarios afectados por Admin 2
        ```
-       Compter les établissements de santé touchés par district
+       Conteo de centros sanitarios afectados por Admin 2
        ```
      - **Capa de polígonos**: Conteo total de la producción de los centros de salud
      - **Capa de puntos**: salida de centros de salud intersecados
      - **Nombre del campo de conteo**:
        ```
-       sum_exposed_health
+       sum_centros_salud_expuestas
        ```
 :::{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
@@ -263,17 +263,17 @@ Configuración de la operación: cómputo de los centros sanitarios afectados po
 :::
 8. **Conteo de centros educativos afectados por Admin 2**
    - Añada **Contar puntos en polígono**
-   - Añada una descripción: `Compter les établissements education touchés par district`
+   - Añada una descripción: `Contar los establecimientos educativos afectados por distrito`
    - Configuración:
      - Añada una descripción:
        ```
-       Compter les établissements education touchés par district
+       Contar los establecimientos educativos afectados por distrito
        ```
      - **Capa de polígonos**: Conteo de la producción total de instalaciones educativas
      - **Capa de puntos**: salida de instalaciones educativas intersecadas
      - **Nombre del campo de conteo**:
        ```
-       sum_exposed_education
+       sum_education_expuesta
        ```
 :::{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
 ---
@@ -285,29 +285,29 @@ Configuración de la operación: cómputo de los centros sanitarios afectados po
 9. **Calcule el porcentaje de centros sanitarios afectados**
 Para calcular el porcentaje de centros de salud afectados por área administrativa, utilizaremos la **Calculadora de Campo** :
 - Añada la **Calculadora de Campo**:
-   - Añada una descripción: `Calculer le pourcentage d’établissements de santé touchés par district`
+   - Añada una descripción: `Calcular el porcentaje de centros de salud afectados por distrito`
    - Configuración:
      - Añada una descripción:
        ```
-       Calculer le pourcentage d’établissements de santé touchés par district
+       Calcular el porcentaje de centros de salud afectados por distrito
        ```
     - **Capa de entrada**: la salida de Conteo de centros de salud afectados por Admin 2
     - **Nombre del campo de salida**:
        ```
-       pct_exposed_health
+       pct_expuesto_salud
        ```
     - **Tipo de campo**: Decimal (real)
     - **Expresión**:
     ```qgis
-     CASE WHEN "count_health_total" > 0
-     THEN "sum_exposed_health" / "count_health_total" * 100
+     CASE WHEN "Total_centros_salud" > 0
+     THEN "sum_centros_salud_expuestas" / "Total_centros_salud" * 100
      ELSE 0
      END
     ```
   - Configure la salida como **Salida del modelo**
   - Nómbrelo:
    ```
-   admin2_health_affected
+   adm2_centros_salud_expuesta
    ```
 :::{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
@@ -319,29 +319,29 @@ Configuración de la operación: calcular el porcentaje de centros de salud afec
 10. **Calcule el porcentaje de centros educativos afectados**
 Para calcular el porcentaje de centros educativos afectados por zona administrativa, utilizaremos la **calculadora de campos** :
 - Añada la **calculadora de campos**:
-   - Añada una descripción: `Calculer le pourcentage d’établissements d’éducation touchés par district`
+   - Añada una descripción: `Calcular el porcentaje de establecimientos educativos afectados por distrito`
    - Configuración:
      - Añada una descripción:
        ```
-       Calculer le pourcentage d’établissements d’éducation touchés par district
+       Calcular el porcentaje de establecimientos educativos afectados por distrito
        ```
      - **Capa de entrada**: la salida de Conteo de establecimientos educativos afectados por Admin 2
      - **Nombre del campo de salida**:
        ```
-       pct_exposed_education
+       pct_expuesto_educación
        ```
      - **Tipo de campo**: Decimal (real)
      - **Expresión**:
        ```qgis
-       CASE WHEN "count_education_total" > 0
-       THEN "sum_exposed_education_POI" / "count_education_total" * 100
+       CASE WHEN "Total_establc_educativas" > 0
+       THEN "sum_education_expuesta" / "Total_establc_educativas" * 100
        ELSE 0
        END
        ```
    - Configure la salida como **Salida del modelo**
    - Nómbrelo:
      ```
-     admin2_education_affected
+     adm2_educación_expuesta
      ```
 :::{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
 ---
@@ -353,35 +353,35 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
 11. **Valide su modelo ampliado y guárdelo.**
    - Haga clic en el botón ✔️ **Validate Model** para verificar si hay errores.
    - Guarde de nuevo en:  
-     **`Estimate_Exposed_Population_Health_Education.model3`**
+     **`Estimación_Población_Expuesta_establecimientos_salud_y_educativas.model3`**
 12. **Ejecute el modelo**
    - Haga clic en el botón ▶️ **Run** en la esquina superior derecha de la ventana del modelador gráfico.
    - **Entrada:**
      - Haga clic en los tres puntos de cada conjunto de datos de entrada y seleccione la entrada correcta:
-       - `Cyclone Track` → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, `Harald_2025_Track.geojson`).
-       - `Population Raster` → seleccione el archivo ráster WorldPop
-       - `Admin Boundaries` → seleccione la capa Admin 2 (por ejemplo, `MDG_adm2.gpkg`)
-       - `Health Facilities` → seleccione el conjunto de datos de puntos para los centros de salud.
-       - `Education Facilities` → seleccione el conjunto de datos de puntos para las escuelas
+       - `Trayectoria del ciclón` → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, `Harald_2025_Track.geojson`).
+       - `Ráster de población` → seleccione el archivo ráster WorldPop
+       - `Limites administrativas` → seleccione la capa Admin 2 (por ejemplo, `MDG_adm2.gpkg`)
+       - `Centros de salud` → seleccione el conjunto de datos de puntos para los centros de salud.
+       - `Establecimientos educativas` → seleccione el conjunto de datos de puntos para las escuelas
    - **Salida:**
      - Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.
-       - `admin2_health_affacted` -> 
+       - `adm2_centros_salud_expuesta` -> 
         ```
-        admin2_health_affected
+        adm2_centros_salud_expuesta
         ```
-       - `admin2_education_affected` ->
+       - `adm2_educación_expuesta` ->
         ```
-        admin2_education_affected
+        adm2_educación_expuesta
         ```
-       - `cyclone_harald_buffer` -> 
+       - `trayectoria_harald_buffer` -> 
         ```
-        cyclone_harald_buffer
+        trayectoria_harald_buffer
         ```
-       - `exposed_population_sum` ->
+       - `población_expuesta_suma` ->
         ```
-        admin2_harald_Exposed_Population
+        población_expuesta_suma_harald
         ```
-   - Haga clic en `Run` para ejecutar el modelo completo.
+   - Haga clic en `Ejecutar` para ejecutar el modelo completo.
 
 :::::{tab-set}
 

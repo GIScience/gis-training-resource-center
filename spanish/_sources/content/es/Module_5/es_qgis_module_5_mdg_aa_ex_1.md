@@ -158,18 +158,18 @@ Deberá crear manualmente un buffer de la trayectoria del ciclón, recortar el r
 
 
 
-1. **Abra QGIS** y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
+1. **Abra QGIS** y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` -> `Nuevo`
 
-2. **Guarde el proyecto** en la carpeta “Project”. Para ello, haga clic en `Project` -> `Save as` y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.
+2. **Guarde el proyecto** en la carpeta “Project”. Para ello, haga clic en `Projecto` -> `Guardar como...` y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.
 
 3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyecte la trayectoria del ciclón** para utilizar metros en lugar de grados (importante para la precisión del buffer):
-   - En la **caja de herramientas de Procesos**, busque `Reproject Layer`.
+   - En la **caja de herramientas de Procesos**, busque `Reproyectar capa`.
    - Entrada: `example_Harald_2025_Track`
    - SRC objetivo: `EPSG:29738` u otro SRC basado en metros adecuado para Madagascar.
-   - Guarde el resultado en la carpeta `temp` como: **`Harald_Track_Reprojected`**
+   - Guarde el resultado en la carpeta `temp`/`interim` como: **`Harald_Track_Reproyectado`**
 :::{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
 ---
 width: 600px
@@ -183,10 +183,10 @@ Las distancias de buffer deben calcularse en metros. Muchos conjuntos de datos (
 :::
 5. **Aplique un buffer a la trayectoria del ciclón**:
    - En la **caja de herramientas de Procesos**, busque `Buffer`.
-   - Entrada: `Harald_Track_Reprojected`
+   - Entrada: `Harald_Track_Reproyectado`
    - Distancia de buffer: `200000` (metros)
    - Segmentos: Deje el valor predeterminado (5)
-   - Disolver: `Yes`
+   - Disolver resultado: `Si`
    - Guarde la salida en la carpeta `temp` como: **`Harald_Buffer_200km`**
 :::{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
 ---
@@ -202,11 +202,11 @@ Aplicar un buffer a la trayectoria del ciclón
 width: 600px
 align: center
 ---
-Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.
+Los resultados intermedios deben mostrar la trayectoria del ciclón y la zona de amortiguamiento de 200 kilómetros a su alrededor. La zona de amortiguamiento debe ser una sola entidad.
 :::
 ::::
 6. **Reproyecte el buffer de nuevo a EPSG:4326 (para que coincida con el SRC de ráster):**
-   - En la caja de herramientas de Procesos, busque "Reproject Layer".
+   - En la caja de herramientas de Procesos, busque "Repyectar capa". 
    - Entrada: Harald_Buffer_200km_29738
    - SRC objetivo: EPSG:4326 – WGS 84
    - Guarde el resultado en la carpeta temporal como: Harald_Buffer_200km_4326
@@ -220,15 +220,15 @@ Reproyectar el buffer del ciclón
 
 7. **Cargue los límites administrativos**:
    - Archivo: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
-   - Añada por medio de arrastrar y soltar o `Add Vector Layer`.
+   - Añada por medio de arrastrar y soltar o `Capa` → `Añadir capa` → `Añadir capa vectorial`.
 8. **Cargue el ráster de población**:
    - Archivo: `MDG_WorldPop_2020_constrained.tif`
-   - Agregue usando `Layer` → `Add Raster Layer`.
+   - Agregue usando `Capa` → `Añadir capa` → `Añadir capa Ráster`.
 9. **Recorte el ráster de población** utilizando la zona buffer de impacto:
-   - En la **caja de herramientas de Procesos**, busque `Clip Raster by Mask Layer`.
+   - En la **caja de herramientas de Procesos**, busque `Cortar ráster por capa de máscara`.
    - Ráster de entrada: `MDG_WorldPop_2020_constrained`
    - Capa de máscara: `Harald_Buffer_200km`
-   - Guarde la salida en la carpeta `temp` como: **`Harald_Pop_Clip`**
+   - Guarde la salida en la carpeta `temp` como: **`Harald_Pob_Cortado`**
 :::{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
 ---
 width: 600px
@@ -247,12 +247,12 @@ Resultados intermedios
 ::::
 
 10. **Calcular la población total expuesta**:
-   - En la **caja de herramientas de Procesos**, busque `Zonal Statistics`.
+   - En la **caja de herramientas de Procesos**, busque `Estadísticas de zona`.
    - Capa vectorial de entrada: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Capa ráster: `Harald_Pop_Clip`
-   - Estadística por calcular: `Sum`
-   - Prefijo de campo: p. ej., `exposed_population_`
-   - Guarde la capa vectorial actualizada en la `result` carpeta como: **`Harald_Exposed_Populationg`**
+   - Estadística por calcular: `Suma`
+   - Prefijo de campo: p. ej., `población_expuesta_`
+   - Guarde la capa vectorial actualizada en la carpeta `/results/` como: **`Harald_Exposed_Populationg`**
    - El resultado será una nueva columna en la tabla de atributos de la capa `mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg`, que muestra la población total dentro del buffer del ciclón por distrito.
 :::{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
 ---
@@ -265,14 +265,14 @@ Calcular la población expuesta al ciclón por distrito utilizando el ráster Wo
 11. **Visualice la población afectada clasificando los resultados**:
 Ahora que Aina ha estimado la población expuesta en cada distrito, quiere mostrar claramente las diferencias entre las regiones en el mapa.
 Para ello, aplicaremos una **clasificación graduada** a la capa `Harald_Exposed_Population` que ocupa el nuevo campo de población creado por la herramienta de estadísticas zonales.
-- En el **panel de capas**, haga clic con el botón derecho en la capa `Harald_Exposed_Population` y elija `Properties`.
-- Vaya a la pestaña **Symbology** a la izquierda.
-- En la parte superior de la ventana, cambie el estilo de `Single Symbol` a `Graduated`.
-- En el menú desplegable de **Value**, seleccione el campo que contiene la suma de la población. Normalmente comienza con el prefijo que determinó anteriormente, por ejemplo `exposed_population_sum`.
+- En el **panel de capas**, haga clic con el botón derecho en la capa `Harald_Exposed_Population` y elija `Propriedades`.
+- Vaya a la pestaña **Simbología** a la izquierda.
+- En la parte superior de la ventana, cambie el estilo de `Símbolo Único` a `Graduado`.
+- En el menú desplegable de **Valor**, seleccione el campo que contiene la suma de la población. Normalmente comienza con el prefijo que determinó anteriormente, por ejemplo `población_expuesta_sum`.
 - Configure la **rampa de color** a uno que sea adecuado para su mapa (por ejemplo `Reds`).
-- Elija un **modo de clasificación** (por ejemplo, `Quantile`, `Natural Breaks` o `Equal Interval`) y seleccione el número de clases (por ejemplo, 5).
-- Haga clic en `Classify` para generar la clasificación.
-- Haga clic en `Apply` y luego en `OK` para visualizar el mapa clasificado.
+- Elija un **modo de clasificación** (por ejemplo, `Conteo igual (cuantil)`, `Rupturas Naturales` o `intervalo igual`) y seleccione el número de clases (por ejemplo, 5).
+- Haga clic en `Clasificar` para generar la clasificación.
+- Haga clic en `Aplicar` y luego en `Aceptar` para visualizar el mapa clasificado.
 
 :::{tip}
 Puede ajustar los límites o etiquetas de las clases haciendo doble clic en cada entrada de clase.

@@ -656,11 +656,11 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <p>En esta tarea, ayudará a Aina a ampliar su modelo para exportar capas seleccionadas.</p>
 <p>Uniremos las siguientes capas paso a paso:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code>:
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuestos</span></code>:
 Contiene el <strong>número total de centros de salud</strong>, el <strong>número de centros de salud afectados</strong> y el <strong>porcentaje de centros de salud</strong> afectados.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected_pct</span></code>:
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code>:
 Contiene el <strong>número total de instalaciones educativas</strong>, el <strong>número de instalaciones educativas afectadas</strong> y el <strong>porcentaje de instalaciones educativas afectadas</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population</span></code>:
+<li><p><code class="docutils literal notranslate"><span class="pre">población_expuesta_suma</span></code>:
 Contiene la <strong>población total por distrito</strong> y la <strong>población expuesta</strong> de la etapa de estadísticas zonales.</p></li>
 </ul>
 </section>
@@ -672,7 +672,7 @@ Contiene la <strong>población total por distrito</strong> y la <strong>poblaci�
 <li><p>Abra su modelo</p></li>
 </ol>
 <ul>
-<li><p>Abierto<code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta_establecimientos_salud_y_educativas.model3</span></code></p></li>
 <li><p>Guarde una nueva versión como:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Estimate_Exposed_Population_Health_Education_Spreadsheet_Export</span>
 </pre></div>
@@ -683,12 +683,12 @@ Contiene la <strong>población total por distrito</strong> y la <strong>poblaci�
 <li><p>Una los datos de salud y educación en una sola capa</p></li>
 </ol>
 <ul>
-<li><p>En los <strong>Algoritmos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code>.</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span> <span class="pre">dans</span> <span class="pre">une</span> <span class="pre">seule</span> <span class="pre">couche</span> <span class="pre">par</span> <span class="pre">ADM2</span></code></p></li>
+<li><p>En los <strong>Algoritmos</strong>, busque <code class="docutils literal notranslate"><span class="pre">Unir</span> <span class="pre">atributos</span> <span class="pre">por</span> <span class="pre">valor</span> <span class="pre">de</span> <span class="pre">campo</span></code>.</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Unir</span> <span class="pre">datos</span> <span class="pre">de</span> <span class="pre">salud</span> <span class="pre">y</span> <span class="pre">educación</span> <span class="pre">en</span> <span class="pre">una</span> <span class="pre">sola</span> <span class="pre">capa</span> <span class="pre">por</span> <span class="pre">ADM2.</span></code></p></li>
 <li><p>Configure el algoritmo de la siguiente manera:</p>
 <ul class="simple">
-<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_health_affected</span></code> (seleccionar de <strong>Salida de algoritmo</strong>)</p></li>
-<li><p><strong>Capa de entrada 2</strong>: <code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> (seleccione de <strong>Salida de algoritmo</strong>)</p></li>
+<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuestos</span></code> (seleccionar de <strong>Salida de algoritmo</strong>)</p></li>
+<li><p><strong>Capa de entrada 2</strong>: <code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code> (seleccione de <strong>Salida de algoritmo</strong>)</p></li>
 <li><p><strong>Campo de tabla</strong>:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ADM2_PCODE</span>
@@ -711,7 +711,7 @@ Contiene la <strong>población total por distrito</strong> y la <strong>poblaci�
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_join_affacted_pop.PNG"><img alt="../../../_images/fr_MDG_AA_model_join_affacted_pop.PNG" src="../../../_images/fr_MDG_AA_model_join_affacted_pop.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : joindre les données de santé et d’éducation par le champ <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code> afin de combiner les résultats dans une seule couche.</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
+<p><span class="caption-text">Configuración de la operación: unir los datos de salud y educación mediante el campo ADM2_PCODE para combinar los resultados en una sola capa.</span><a class="headerlink" href="#the-world-result" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
@@ -719,11 +719,11 @@ Contiene la <strong>población total por distrito</strong> y la <strong>poblaci�
 Ahora, una el resultado del paso anterior (salud + educación) a los datos de <strong>población expuestos</strong>.</p></li>
 </ol>
 <ul>
-<li><p>Añada un segundo algoritmo <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">Attributes</span> <span class="pre">by</span> <span class="pre">Field</span> <span class="pre">Value</span></code> al modelo</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Joindre</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population</span> <span class="pre">avec</span> <span class="pre">les</span> <span class="pre">indicateurs</span> <span class="pre">santé</span> <span class="pre">et</span> <span class="pre">éducation</span></code></p></li>
+<li><p>Añada un segundo algoritmo <code class="docutils literal notranslate"><span class="pre">Unir</span> <span class="pre">atributos</span> <span class="pre">por</span> <span class="pre">valor</span> <span class="pre">de</span> <span class="pre">campo</span></code> al modelo</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Unir</span> <span class="pre">los</span> <span class="pre">datos</span> <span class="pre">de</span> <span class="pre">población</span> <span class="pre">con</span> <span class="pre">los</span> <span class="pre">indicadores</span> <span class="pre">de</span> <span class="pre">salud</span> <span class="pre">y</span> <span class="pre">educación</span></code></p></li>
 <li><p>Configure el algoritmo de la siguiente manera:</p>
 <ul class="simple">
-<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">exposed_population</span></code> (seleccionar de <strong>Salida de algoritmo</strong> del paso Estadísticas zonales)</p></li>
+<li><p><strong>Capa de entrada</strong>: <code class="docutils literal notranslate"><span class="pre">población_expuesta_suma</span></code> (seleccionar de <strong>Salida de algoritmo</strong> del paso Estadísticas zonales)</p></li>
 <li><p><strong>Capa de entrada 2</strong>: Producto del Paso 2 (salud + educación)</p></li>
 <li><p><strong>Campo de tabla</strong>:</p></li>
 </ul>
@@ -738,7 +738,7 @@ Ahora, una el resultado del paso anterior (salud + educación) a los datos de <s
 </div>
 <ul>
 <li><p><strong>Campos de capa 2 para copiar</strong>: <em>(Ingrese los siguientes nombres de campo exactamente como se muestra, separados por comas, sin espacios)</em></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">count_health_total</span><span class="p">;</span><span class="n">sum_exposed_health</span><span class="p">;</span><span class="n">pct_exposed_health</span><span class="p">;</span><span class="n">count_education_total</span><span class="p">;</span><span class="n">sum_exposed_education</span><span class="p">;</span><span class="n">pct_exposed_education</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Total_centros_salud</span><span class="p">;</span><span class="n">Total_establc_educativas</span><span class="p">;</span><span class="n">sum_centros_salud_expuestas</span><span class="p">;</span><span class="n">sum_education_expuesta</span><span class="p">;</span><span class="n">pct_expuesto_centros_salud</span><span class="p">;</span><span class="n">pct_expuesto_educación</span>
 </pre></div>
 </div>
 </li>
@@ -747,19 +747,18 @@ Ahora, una el resultado del paso anterior (salud + educación) a los datos de <s
 </ul>
 </li>
 </ul>
+<div class="tip admonition">
+<p class="admonition-title">Los nombres de las columnas en el modelo</p>
+<p>Si la capa resultante no contiene estas columnas, o las columnas están vacías, <strong>abra los algoritmos individuales</strong> en su modelo y verifique cómo ha nombrado las columnas.
+También se pueden encontrar en las <strong>tablas de atributos</strong> de las salidas del modelo.</p>
+</div>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG"><img alt="../../../_images/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG" src="../../../_images/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Configuración de la operación: unir los datos de población con los indicadores de salud y educación.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Dónde encontrar los nombres de las columnas?
-Abra las <strong>tablas de atributos</strong> de las salidas <code class="docutils literal notranslate"><span class="pre">health_total_per_admin2</span></code>, <code class="docutils literal notranslate"><span class="pre">sum_exposed_healthsites_POI</span></code> y <code class="docutils literal notranslate"><span class="pre">admin2_health_affected_pct</span></code> en QGIS.
-Observe los <strong>encabezados de columna</strong> para encontrar los nombres exactos de los campos que desee copiar.</p>
-</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Los espacios invisibles romperán la union.
@@ -770,26 +769,26 @@ Copie siempre los nombres de los campos <strong>directamente de la tabla</strong
 <li><p>Exporte resultados a una hoja de cálculo</p></li>
 </ol>
 <ul>
-<li><p>En la <strong>caja de herramientas</strong>, busque <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">to</span> <span class="pre">spreadsheet</span></code> y haga doble clic para abrir.</p></li>
-<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Exporter</span> <span class="pre">les</span> <span class="pre">données</span> <span class="pre">de</span> <span class="pre">population,</span> <span class="pre">d'éducation</span> <span class="pre">et</span> <span class="pre">de</span> <span class="pre">santé</span> <span class="pre">dans</span> <span class="pre">un</span> <span class="pre">seul</span> <span class="pre">tableau</span></code></p></li>
+<li><p>En la <strong>caja de herramientas</strong>, busque <code class="docutils literal notranslate"><span class="pre">Exportar</span> <span class="pre">a</span> <span class="pre">hoja</span> <span class="pre">de</span> <span class="pre">cálculo</span></code> y haga doble clic para abrir.</p></li>
+<li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Exportar</span> <span class="pre">los</span> <span class="pre">datos</span> <span class="pre">de</span> <span class="pre">población,</span> <span class="pre">educación</span> <span class="pre">y</span> <span class="pre">salud</span> <span class="pre">en</span> <span class="pre">una</span> <span class="pre">sola</span> <span class="pre">tabla</span></code></p></li>
 <li><p>Configure la herramienta de la siguiente manera:</p>
 <ul>
 <li><p><strong>Capa de entrada</strong>: Seleccione la salida del Paso 3 de <strong>Salida de algoritmo</strong></p></li>
 <li><p><strong>Hoja de cálculo</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure_indicators_spreadsheet</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_de_indicadores_de_exposición</span>
 </pre></div>
 </div>
 </li>
-<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Ok</span></code> para agregarlo al modelo.
+<li><p>Haga clic en <code class="docutils literal notranslate"><span class="pre">Aceptar</span></code> para agregarlo al modelo.
 Una vez que ejecute el modelo, este paso generará automáticamente una hoja de cálculo con todos los indicadores relevantes listos para el equipo de operaciones.</p></li>
 </ul>
 </li>
 </ul>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="fr-mdg-aa-model-export-as-table">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_export_as_table.PNG"><img alt="../../../_images/fr_MDG_AA_model_export_as_table.PNG" src="../../../_images/fr_MDG_AA_model_export_as_table.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Exportador tous les indicaurs (población, sanidad, educación) vers un tableau unique au format tableur.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Exportar todos los indicadores (población, salud, educación) a una única tabla en formato de hoja de cálculo.</span><a class="headerlink" href="#fr-mdg-aa-model-export-as-table" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="5">
@@ -797,7 +796,7 @@ Una vez que ejecute el modelo, este paso generará automáticamente una hoja de 
 <ul class="simple">
 <li><p>Haga clic en el botón ✔️ <strong>Validate Model</strong> para verificar si hay errores.</p></li>
 <li><p>Guarde de nuevo en:
-<strong><code class="docutils literal notranslate"><span class="pre">Estimate_Exposed_Population_Health_Education.model3</span></code></strong></p></li>
+<strong><code class="docutils literal notranslate"><span class="pre">Estimación_Población_Expuesta_Salud_Educación.model3</span></code></strong> (también puedes <strong>añadir el número de versión o la fecha al nombre del archivo</strong>.)</p></li>
 </ul>
 </li>
 <li><p><strong>Ejecute el modelo</strong></p>
@@ -808,10 +807,10 @@ Una vez que ejecute el modelo, este paso generará automáticamente una hoja de 
 <li><p>Haga clic en los tres puntos de cada conjunto de datos de entrada y seleccione la entrada correcta:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">Cyclone</span> <span class="pre">Track</span></code> → seleccione el GeoJSON de la trayectoria de la tormenta (por ejemplo, <code class="docutils literal notranslate"><span class="pre">Harald_2025_Track.geojson</span></code>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Population</span> <span class="pre">Raster</span></code> → seleccione el archivo ráster WorldPop</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Admin</span> <span class="pre">Boundaries</span></code> → seleccione la capa Admin 2 (por ejemplo, <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Health</span> <span class="pre">Facilities</span></code> → seleccione el conjunto de datos de puntos para los centros de salud.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Education</span> <span class="pre">Facilities</span></code> → seleccione el conjunto de datos de puntos para las escuelas</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ráster</span> <span class="pre">de</span> <span class="pre">población</span></code> → seleccione el archivo ráster WorldPop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Limites</span> <span class="pre">administrativos</span></code> → seleccione la capa Admin 2 (por ejemplo, <code class="docutils literal notranslate"><span class="pre">MDG_adm2.gpkg</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Centros</span> <span class="pre">de</span> <span class="pre">salud</span></code> → seleccione el conjunto de datos de puntos para los centros de salud.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Establecimientos</span> <span class="pre">educativos</span></code> → seleccione el conjunto de datos de puntos para las escuelas</p></li>
 </ul>
 </li>
 </ul>
@@ -820,39 +819,39 @@ Una vez que ejecute el modelo, este paso generará automáticamente una hoja de 
 <ul>
 <li><p>Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_health_affacted</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_centros_salud_expuestos</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_health_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_centros_salud_expuestos</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">admin2_education_affected</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adm2_educación_expuesta</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_education_affected</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">adm2_educación_expuesta</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">cyclone_harald_buffer</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trayectoria_harald_buffer</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cyclone_harald_buffer</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trayectoria_harald_buffer</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposed_population_sum</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">población_expuesta_suma</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">admin2_harald_Exposed_Population</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">población_expuesta_suma_harald</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">exposure_indicators_spreadsheet</span></code> -&gt;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tabla_de_indicadores_de_exposición</span></code> -&gt;</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exposure_indicators_harald</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_de_indicadores_de_exposición</span>
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p>Haga clic en <strong>Run</strong> para ejecutar el modelo completo.</p></li>
+<li><p>Haga clic en <strong>Ejecutar</strong> para ejecutar el modelo completo.</p></li>
 </ul>
 </li>
 </ol>
@@ -860,33 +859,33 @@ Una vez que ejecute el modelo, este paso generará automáticamente una hoja de 
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Modelador gráfico</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Vue du modeleur graphique avec l’étape d’exportation vers un tableau ajoutée au modèle.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Vista del modelador gráfico con la etapa de exportación a una tabla añadida al modelo</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Configuración del modelo de ejecución</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Fenêtre de configuration pour exécuter le modèle avec l’option d’export vers un tableau.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ventana de configuración para ejecutar el modelo con la opción de exportación a una tabla</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
 Salida del modelo</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Résultats finaux du modèle exportés dans un tableau prêt à être utilisé.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Resultados finales del modelo exportados en una tabla lista para usar.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
