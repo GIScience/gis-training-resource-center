@@ -33,6 +33,16 @@ This will help the response coordination team prioritise vaccination deployments
     - If any layers show an error, use the “Re-link missing layers” dialog to correct their file paths.
 
 
+Now, lets configure the "Project Home" in the browser panel.
+
+3. In the browser panel on the left, <kbd>right-click</kbd> on `Project Home` → `Set Project Home...` and set the project home folder to the training folder (with the subfolders `/data`, `/project`, etc.). Now you will be able to access all the datasets for this training through the browser.
+
+:::{tip}
+Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles and multiple layers.
+:::
+
+
+
 ### Task 2: Calculate the Population per District
 
 In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.

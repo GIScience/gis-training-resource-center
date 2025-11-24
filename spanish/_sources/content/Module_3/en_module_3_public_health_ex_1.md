@@ -83,12 +83,11 @@ GIS_Training_Public_Health
 ::::{admonition} How to choose the correct CRS
 :class: dropdown, note
 
-Choosing a suitable Coordinate Reference System for your GIS project is crucial. In general, you want to use a CRS that best displays your area of interest. You want to choose a Secondly, you need to think about what kind of calculations you plan to do in your project. CRS exist in two varieties: geographic and metric coordinate reference systems. Geographic CRS use longitude and latitude (degrees) as their coordinates and units of measurements. These are angular measurements and don't depict distances linearly. Metric coordinate reference systems use coordinates that are given in __linear units of measurements__ (such as meters), which means they represent actual distances on the Earth's surface. The problem with metric coordinate reference systems is that they can't accurately represent bigger areas. Therefore, metric CRS are mainly used for local and regional mapping. 
+Choosing a suitable Coordinate Reference System for your GIS project is crucial. In general, you want to use a CRS that best displays your area of interest. You want to choose a Secondly, you need to think about what kind of calculations you plan to do in your project. CRS exist in two varieties: geographic and metric coordinate reference systems. Geographic CRS use longitude and latitude (degrees) as their coordinates and units of measurements. These are angular measurements and don't depict distances linearly. Metric coordinate reference systems use coordinates that are given in __linear units of measurements__ (such as meters), which means they represent actual distances on the Earth's surface. Metric coordinate reference systems, such as UTM, are designed for local and regional mapping and can introduce distortion when applied to larger areas. For very large regions, projections like Albers Equal Area or Mercator are often used to reduce distortion
 
-For example, if you wish to perform distance calculations, you should use a metric CRS. 
+If you wish to perform distance calculations, you should use a metric CRS. 
 
 If you want to know more about Projections and Coordinate Reference Systems, check out this __[module chapter](/content/Module_2/en_qgis_projections.md)__.
-
 
 ::::
 
@@ -104,13 +103,34 @@ Setting the Project CRS to your desired CRS can help you choosing the correct CR
 
 ### Task 2: Downloading the relevant data
 
-1. In your browser, head over to humdata.org and find the following datasets: 
-    - Chad Administrative Boundaries (OCHA): ADM0, ADM1, ADM2
+1. In your browser, head over to __humdata.org__ 
+2. Search for the following datasets 
+    - Chad Administrative Boundaries (OCHA): ADM0, ADM1, ADM2 
     - Chad Health Facilities (OpenStreetMap Export)
-2. Download the layers and unzip the downloaded folder.
-3. Move the unzipped folders into your standard folder structure into the `data/input/`-folder. 
+    - Chad Roads (OCHA)
+:::{figure} /fig/en_m3_ex_8_public_health_part_1_hdx_search.png
+---
+width: 600 px
+name: en_m3_ex_8_public_health_part_1_hdx_search
+---
+:::
+2. Download the layers.
+    - On the download page, you can usually select different data formats. The formats are indicated by their file endings (e.g., `.shp`, `-gpkg`, `.gdb`)
+    - Choose the following formats: 
+        - Chad Administrative Boundaries (OCHA): __Shapefile__
+        - Chad Health Facilities (OpenStreetMap Export): __GeoPackage__ and __Points__
+        - Chad Roads (OCHA): __Shapefile__
+        :::{figure} /fig/en_m3_ex_8_public_health_part_1_hdx_data_formats.png
+        ---
+        name: en_m3_ex_8_public_health_part_1_hdx_data_formats
+        width: 600 px
+        ---
+        :::
+3. Unzip the folders and make sure to save them in the standard folder structure into the `data/input/`-folder. 
 
-% ADD IMAGE AND EXPAND THIS SECTION
+
+% ADD IMAGE AND EXPAND THIS SECTION: DONE
+
 
 ### Task 2: Importing the datasets
 
@@ -118,11 +138,18 @@ Setting the Project CRS to your desired CRS can help you choosing the correct CR
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
+    - `tcd_trs_roads_OCHA.shp`
 ::::{margin}
 :::{tip}
 A shapefile consists of several, interrelated files. The geometric information is stored in the `.shp`-file. To make the import process easier, you can order the folder by "File type" and only drag the  
 :::
 ::::
+
+:::{dropdown} Video: Importing Shapefiles into a QGIS project via drag-and-drop
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+:::
+
+% THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
 
 4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import):
     - In the top bar, click on `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open. Here we need to specify the file, the file format and define the geometry information
@@ -133,9 +160,13 @@ A shapefile consists of several, interrelated files. The geometric information i
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
 
 
-:::{caution}
+:::{dropdown} Video: Importing CSV files via the Data Source Manager
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+:::
 
-Imported files are not saved within the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset. 
+:::{attention}
+
+Imported files __are not saved within__ the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset. 
 
 :::
 
@@ -152,7 +183,12 @@ Imported files are not saved within the QGIS project. If you move or delete the 
 
 > Your QGIS window should look similar to this (with different colours for the layers).
 
-% ADD IMAGE!!
+:::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png
+---
+name: en_3.40_m3_ex_8_pub_health_1_ordering_layers
+width: 750 px
+---
+:::
 
 7. Let's investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.
     - Open the attribute table by <kbd>right-clicking</kbd> on the ADM2 layer in the layers panel on the left → `Open Attribute Table`.
@@ -160,15 +196,16 @@ Imported files are not saved within the QGIS project. If you move or delete the 
     - Take a look at the different columns in the attribute table. What do they show?
     - Try sorting the attribute table by clicking on the ![](/fig/sort.png)
     - Open the attribute tables for the layers `hotosm_tcd_health_facilities_points` and `tcd_admbnda_adm2_20250212_AB.shp` familiarise yourself with the data. 
+    - <kbd>Right-click</kbd> on each layer and select 
 
-
+<!--- ADD SOME ADDITIONAL INFO HERE?
 :::{dropdown} Familiarise yourself with the QGIS interface
 
 Familiarise yourself with the map canvas by zooming in and out (<kbd>Mouse-wheel</kbd> or <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>). 
 Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png) `Pan Map`-tool. 
 
 :::
-
+-->
 
 
 ### Task 4: Joining Vaccination Coverage Data with administrative boundaries
@@ -185,6 +222,12 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites. 
     - There are no columns with the coordinates in this datatable. Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
+    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png
+    ---
+    name: en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv
+    width: 700 px
+    ---
+    :::
 9. Investigate the new vaccination coverage further:
     - <kbd>Right-click</kbd> on the new layer and open the attribute table. What information is available? How is the table structured. We can see that we are able to use the column `ADM2_PCODE` to perform a [non-spatial join]
 10. In the [processing toolbox](/content/Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
@@ -213,6 +256,8 @@ Now that we have the vaccination coverage information in our adm2-layer, we can 
 QGIS offers various ways to [visualise vector data](/content/Module_4/en_qgis_styling_vector_data.md). If you want to learn more about these different methods, check out [module 4](/content/Module_4/en_module_4_overview.md).
 :::
 ::::
+
+% ADD CLASSIFICATION STEPS AND RESULT IMAGE
 
 ### Task 4: Enriching the Healthsites dataset
 
@@ -303,13 +348,3 @@ When performing joins, pay attention to such inconsistencies.
 
 
 
-<!--
-Now, lets configure the "Project Home" in the browser panel.
-
-3. In the browser panel on the left, <kbd>right-click</kbd> on `Project Home` → `Set Project Home...` and set the project home folder to the training folder (with the subfolders `/data`, `/project`, etc.). Now you will be able to access all the datasets for this training through the browser.
-
-:::{note}
-Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles. 
-
-:::
--->

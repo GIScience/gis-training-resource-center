@@ -700,8 +700,8 @@ The paths from a QGIS project to the geodata are by default relative. This means
 </ol>
 <div class="dropdown note admonition">
 <p class="admonition-title">How to choose the correct CRS</p>
-<p>Choosing a suitable Coordinate Reference System for your GIS project is crucial. In general, you want to use a CRS that best displays your area of interest. You want to choose a Secondly, you need to think about what kind of calculations you plan to do in your project. CRS exist in two varieties: geographic and metric coordinate reference systems. Geographic CRS use longitude and latitude (degrees) as their coordinates and units of measurements. These are angular measurements and don’t depict distances linearly. Metric coordinate reference systems use coordinates that are given in <strong>linear units of measurements</strong> (such as meters), which means they represent actual distances on the Earth’s surface. The problem with metric coordinate reference systems is that they can’t accurately represent bigger areas. Therefore, metric CRS are mainly used for local and regional mapping.</p>
-<p>For example, if you wish to perform distance calculations, you should use a metric CRS.</p>
+<p>Choosing a suitable Coordinate Reference System for your GIS project is crucial. In general, you want to use a CRS that best displays your area of interest. You want to choose a Secondly, you need to think about what kind of calculations you plan to do in your project. CRS exist in two varieties: geographic and metric coordinate reference systems. Geographic CRS use longitude and latitude (degrees) as their coordinates and units of measurements. These are angular measurements and don’t depict distances linearly. Metric coordinate reference systems use coordinates that are given in <strong>linear units of measurements</strong> (such as meters), which means they represent actual distances on the Earth’s surface. Metric coordinate reference systems, such as UTM, are designed for local and regional mapping and can introduce distortion when applied to larger areas. For very large regions, projections like Albers Equal Area or Mercator are often used to reduce distortion</p>
+<p>If you wish to perform distance calculations, you should use a metric CRS.</p>
 <p>If you want to know more about Projections and Coordinate Reference Systems, check out this <strong><a class="reference internal" href="../Module_2/en_qgis_projections.html"><span class="std std-doc">module chapter</span></a></strong>.</p>
 </div>
 <div class="admonition attention">
@@ -713,14 +713,37 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <section id="task-2-downloading-the-relevant-data">
 <h3>Task 2: Downloading the relevant data<a class="headerlink" href="#task-2-downloading-the-relevant-data" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>In your browser, head over to <a class="reference external" href="http://humdata.org">humdata.org</a> and find the following datasets:</p>
+<li><p>In your browser, head over to <strong><a class="reference external" href="http://humdata.org">humdata.org</a></strong></p></li>
+<li><p>Search for the following datasets</p>
 <ul class="simple">
 <li><p>Chad Administrative Boundaries (OCHA): ADM0, ADM1, ADM2</p></li>
 <li><p>Chad Health Facilities (OpenStreetMap Export)</p></li>
+<li><p>Chad Roads (OCHA)</p></li>
 </ul>
 </li>
-<li><p>Download the layers and unzip the downloaded folder.</p></li>
-<li><p>Move the unzipped folders into your standard folder structure into the <code class="docutils literal notranslate"><span class="pre">data/input/</span></code>-folder.</p></li>
+</ol>
+<figure class="align-default" id="en-m3-ex-8-public-health-part-1-hdx-search">
+<a class="reference internal image-reference" href="../../_images/en_m3_ex_8_public_health_part_1_hdx_search.png"><img alt="../../_images/en_m3_ex_8_public_health_part_1_hdx_search.png" src="../../_images/en_m3_ex_8_public_health_part_1_hdx_search.png" style="width: 600px;" />
+</a>
+</figure>
+<ol class="arabic" start="2">
+<li><p>Download the layers.</p>
+<ul>
+<li><p>On the download page, you can usually select different data formats. The formats are indicated by their file endings (e.g., <code class="docutils literal notranslate"><span class="pre">.shp</span></code>, <code class="docutils literal notranslate"><span class="pre">-gpkg</span></code>, <code class="docutils literal notranslate"><span class="pre">.gdb</span></code>)</p></li>
+<li><p>Choose the following formats:</p>
+<ul class="simple">
+<li><p>Chad Administrative Boundaries (OCHA): <strong>Shapefile</strong></p></li>
+<li><p>Chad Health Facilities (OpenStreetMap Export): <strong>GeoPackage</strong> and <strong>Points</strong></p></li>
+<li><p>Chad Roads (OCHA): <strong>Shapefile</strong></p></li>
+</ul>
+<figure class="align-default" id="en-m3-ex-8-public-health-part-1-hdx-data-formats">
+<a class="reference internal image-reference" href="../../_images/en_m3_ex_8_public_health_part_1_hdx_data_formats.png"><img alt="../../_images/en_m3_ex_8_public_health_part_1_hdx_data_formats.png" src="../../_images/en_m3_ex_8_public_health_part_1_hdx_data_formats.png" style="width: 600px;" />
+</a>
+</figure>
+</li>
+</ul>
+</li>
+<li><p>Unzip the folders and make sure to save them in the standard folder structure into the <code class="docutils literal notranslate"><span class="pre">data/input/</span></code>-folder.</p></li>
 </ol>
 </section>
 <section id="task-2-importing-the-datasets">
@@ -731,6 +754,7 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm0_20250212_AB.shp</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm1_20250212_AB.shp</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_trs_roads_OCHA.shp</span></code></p></li>
 </ul>
 </li>
 </ol>
@@ -741,7 +765,12 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <p>A shapefile consists of several, interrelated files. The geometric information is stored in the <code class="docutils literal notranslate"><span class="pre">.shp</span></code>-file. To make the import process easier, you can order the folder by “File type” and only drag the</p>
 </div>
 </aside>
-<ol class="arabic simple" start="4">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Importing Shapefiles into a QGIS project via drag-and-drop</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video></p>
+</div>
+</details><ol class="arabic simple" start="4">
 <li><p>The file <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points.csv</span></code> contains point data, but it is in a delimited text format. QGIS won’t automatically recognise the geographic information and display the dataset as points. We need to import it as a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import">delimited text layer</a>:</p>
 <ul class="simple">
 <li><p>In the top bar, click on <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code>. A new window will open. Here we need to specify the file, the file format and define the geometry information</p></li>
@@ -753,9 +782,14 @@ The paths from a QGIS project to the geodata are by default relative. This means
 </ul>
 </li>
 </ol>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>Imported files are not saved within the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Importing CSV files via the Data Source Manager</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video></p>
+</div>
+</details><div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Imported files <strong>are not saved within</strong> the QGIS project. If you move or delete the original file, QGIS will no longer find the respective dataset.</p>
 </div>
 </section>
 <section id="task-3-the-layers-panel-and-the-layer-concept">
@@ -782,6 +816,10 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <blockquote>
 <div><p>Your QGIS window should look similar to this (with different colours for the layers).</p>
 </div></blockquote>
+<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-ordering-layers">
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png" style="width: 750px;" />
+</a>
+</figure>
 <ol class="arabic simple" start="7">
 <li><p>Let’s investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.</p>
 <ul class="simple">
@@ -790,16 +828,19 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <li><p>Take a look at the different columns in the attribute table. What do they show?</p></li>
 <li><p>Try sorting the attribute table by clicking on the <img alt="" src="../../_images/sort.png" /></p></li>
 <li><p>Open the attribute tables for the layers <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points</span></code> and <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code> familiarise yourself with the data.</p></li>
+<li><p><kbd>Right-click</kbd> on each layer and select</p></li>
 </ul>
 </li>
 </ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">Familiarise yourself with the QGIS interface</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Familiarise yourself with the map canvas by zooming in and out (<kbd>Mouse-wheel</kbd> or <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>).
-Holding <kbd>Space</kbd> automatically switches to the <img alt="" src="../../_images/qgis_pan_map.png" /> <code class="docutils literal notranslate"><span class="pre">Pan</span> <span class="pre">Map</span></code>-tool.</p>
-</div>
-</details></section>
+<!--- ADD SOME ADDITIONAL INFO HERE?
+:::{dropdown} Familiarise yourself with the QGIS interface
+
+Familiarise yourself with the map canvas by zooming in and out (<kbd>Mouse-wheel</kbd> or <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>). 
+Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png) `Pan Map`-tool. 
+
+:::
+-->
+</section>
 <section id="task-4-joining-vaccination-coverage-data-with-administrative-boundaries">
 <h3>Task 4: Joining Vaccination Coverage Data with administrative boundaries<a class="headerlink" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries" title="Link to this heading">#</a></h3>
 <p>In our <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder, we can find a csv file called <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code>. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (<code class="docutils literal notranslate"><span class="pre">amd2_name</span></code>) and the adm2 pcode. With this information, we can perform a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">non-spatial join</a> in order to add the vaccination coverage data to our district boundaries layer (adm2).</p>
@@ -812,6 +853,10 @@ Holding <kbd>Space</kbd> automatically switches to the <img alt="" src="../../_i
 <li><p>There are no columns with the coordinates in this datatable. Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> select <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.</p></li>
 </ul>
+<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-add-vacc-coverage-csv">
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png" style="width: 700px;" />
+</a>
+</figure>
 </li>
 <li><p>Investigate the new vaccination coverage further:</p>
 <ul class="simple">
@@ -965,16 +1010,7 @@ When performing joins, pay attention to such inconsistencies.</p>
 <ol class="arabic simple">
 <li><p>Import the roads dataset `</p></li>
 </ol>
-<!--
-Now, lets configure the "Project Home" in the browser panel.
-
-3. In the browser panel on the left, <kbd>right-click</kbd> on `Project Home` → `Set Project Home...` and set the project home folder to the training folder (with the subfolders `/data`, `/project`, etc.). Now you will be able to access all the datasets for this training through the browser.
-
-:::{note}
-Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles. 
-
-:::
---></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
