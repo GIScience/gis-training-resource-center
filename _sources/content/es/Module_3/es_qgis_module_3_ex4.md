@@ -176,15 +176,14 @@ align: center
 10. Ahora ya tenemos todas nuestras herramientas. En el siguiente paso, creamos una nueva capa de vectores de puntos desde cero para digitalizar la ubicación de las comunidades afectadas.
     * Haga clic en `Capa` --> `Crear capa` -> `Nueva capa GeoPackage`([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#crear-una-nueva-capa))
     - En `Base de datos`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre “Borno_affected_communities_point”. Haga clic en `Guardar`.
-    * `Geometry type`: Seleccione `Point`
-    - En `Additional dimension` debe asegurarse siempre de que `None` está marcada.
+    * `Tipo de geometría`: Seleccione `Punto`
     - Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”. Por defecto, QGIS selecciona el SRC del proyecto.
-    - En `New Field` puede añadir columnas a la nueva capa. Añada la columna “Name”.
-        * `Name` = “Name”
-        * `Type`: Seleccione `Text Data`
-        * Haga clic en `Add to Fields List` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
-        * Haga clic en `OK`.
-    * La nueva capa aparecerá en `Layer Panel`
+    - En `Nuevo campo` puede añadir columnas a la nueva capa. Añada la columna “Name”.
+        * `Nombre` = “Name”
+        * `Tipo`: Seleccione `Texto (Cadena)`
+        * Haga clic en `Añadir a la lista de campos` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Lista de campos`.
+        * Haga clic en `Aceptar`.
+    * La nueva capa aparecerá en `panel de capas`
 
 :::{figure} /fig/en_qgis_create_point_layer_nigeria_flood_exercise.png
 ---
@@ -194,52 +193,52 @@ align: center
 ---
 :::
 
-11. Actualmente el nuevo “Borno_affected_communities_point” está vacío. Para añadir entidades podemos utilizar la `Digitizing Toolbar`. Si no puede ver la barra de herramientas, utilice `View` -> `Toolbars` y compruebe `Digitizing Toolbar` ([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#creación-de-datos-de-punto)). ![](/fig/Digitizing_Toolbar.png)
+11. Actualmente el nuevo “Borno_affected_communities_point” está vacío. Para añadir entidades podemos utilizar la `Digitizing Toolbar`. Si no puede ver la barra de herramientas, utilice `Ver` -> `Barras de herramientas` y compruebe la barra de herramientas `digitalización` ([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#creación-de-datos-de-punto)). ![](/fig/Digitizing_Toolbar.png)
     * Seleccione la capa de puntos “Borno_affected_communities_point” en el panel de capas. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora la capa está en el modo de edición.
     * Buscar una comunidad afectada según la tabla “Nigeria_flood_2022_affacted_population”. Una vez que haya encontrado uno, haga clic en ![](/fig/mActionCapturePoint.png). Haga clic izquierdo en la entidad que desea digitalizar.
-    * Al hacer clic, aparecerá una ventana ` Borno_affected_communities_point Feature Attribute`. Aquí puede añadir el nombre de la ubicación.
+    * Al hacer clic, aparecerá una ventana `Borno_affected_communities_point Feature Attribute`. Aquí puede añadir el nombre de la ubicación.
     * Repita el mismo proceso para tantas comunidades como quiera.
     * Cuando haya terminado de digitalizar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus modificaciones.
     * Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 12. En este paso, queremos añadir al mapa información sobre la población. Esto nos ayudará a visualizar dónde hay más personas potencialmente afectadas.
 Dado que la capa "Borno_admin2_pop" contiene esta información, podemos publicar esta capa.
-    * Para hacer esto, haga clic derecho en la capa -> `Duplicate Layer`. El nombre de la nueva capa será "Borno_admin2_pop_copy".
+    * Para hacer esto, haga clic derecho en la capa -> `Duplicar capa`. El nombre de la nueva capa será "Borno_admin2_pop_copy".
 
-13. Dado que los números absolutos de población son números naturales, no podemos utilizar la clasificación por categorías. En su lugar, utilizamos la opción `Graduated` ([video en Wiki](/content/es/Wiki/es_qgis_graduated_wiki.md)).
-    * Haga clic derecho en la capa "Borno_admin2_pop_copy" en `Layer Panel` -> `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Symbology`.
-    * En la parte superior hay un menú desplegable. Ábralo y elija `Graduated`.
-    * En `Value` seleccionar "Population".
-    * `Color ramp`: Seleccionar una rampa de color de blanco a verde. Como queremos visualizar la población, es importante utilizar colores neutros.
-    * `Mode`: Recuento equitativo (cuantil)
-    * `Classes`: 5
-    * Haga clic en `Classify`
-    * Haga clic en `Apply`
+13. Dado que los números absolutos de población son números naturales, no podemos utilizar la clasificación por categorías. En su lugar, utilizamos la opción `Graduado` ([video en Wiki](/content/es/Wiki/es_qgis_graduated_wiki.md)).
+    * Haga clic derecho en la capa "Borno_admin2_pop_copy" en `Panel de capas` -> `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Simbología`.
+    * En la parte superior hay un menú desplegable. Ábralo y elija `Graduado`.
+    * En `Valor` seleccionar "Population".
+    * `Rampa de color`: Seleccionar una rampa de color de blanco a verde. Como queremos visualizar la población, es importante utilizar colores neutros.
+    * `Modo`: Conteo igual (cuantil)
+    * `Clases`: 5
+    * Haga clic en `Clasificar`
+    * Haga clic en `Aplicar`
 
 :::{figure} /fig/en_qgis_graduated_classification_nigeria_flood_exercise.png
 ---
 width: 600px
-name: m3ex4_graduated_classif
+name: es_m3ex4_graduated_classif
 align: center
 ---
 :::
 
-14. QGIS creó ahora cinco clases que cubren toda la gama de cifras de población del estado de Borno. Haga clic en la `Histogram` pestaña -> `Load Values`. Aquí puede ver la distribución de los valores en el conjunto de datos y los límites de las clases. Vemos que la mayoría de las LGA tienen una población inferior a 300 habitantes. Pruebe otros modos de clasificación, como los cortes naturales o los intervalos equitativos.
+14. QGIS creó ahora cinco clases que cubren toda la gama de cifras de población del estado de Borno. Haga clic en la `Histograma` pestaña -> `Cargar valores`. Aquí puede ver la distribución de los valores en el conjunto de datos y los límites de las clases. Vemos que la mayoría de las LGA tienen una población inferior a 300 habitantes. Pruebe otros modos de clasificación, como los cortes naturales o los intervalos equitativos.
 
 :::{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png
 ---
 width: 400px
-name: m3ex4_histogram
+name: es_m3ex4_histogram
 align: center
 ---
 :::
 
 15. Para visualizar “Borno_admin2_pop” (que muestra las LGA afectadas) y “Borno_admin2_pop_copy” (que muestra los datos de población) juntos, tenemos que cambiar la simbología de “Borno_admin2_pop”.
-En primer lugar, haga clic derecho en la capa “Borno_admin2_pop” en `Layer Panel` -> `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Symbology`.
-Actualmente, utilizamos la clasificación `Categorized`. Debemos mantenerlo. Sin embargo, solo queremos mostrar las LGA afectadas. Por lo tanto, desmarcamos la fila que corresponde a las LGA sin `Affected` = `Yes`.
-    * Haga clic derecho en la capa "Borno_admin2_pop" en `Layer Panel` -> `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Symbology`.
+En primer lugar, haga clic derecho en la capa “Borno_admin2_pop” en `Pandel de capas` -> `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Simbología`.
+Actualmente, utilizamos la clasificación `Categorizado`. Debemos mantenerlo. Sin embargo, solo queremos mostrar las LGA afectadas. Por lo tanto, desmarcamos la fila que corresponde a las LGA sin `Affected` = `Yes`.
+    * Haga clic derecho en la capa "Borno_admin2_pop" en `Panel de capas` -> `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Simbología`.
     * A continuación, haga doble clic en la fila `Yes`. Aquí tenemos dos opciones. Podemos utilizar una cuadrícula o solo los bordes.
-    * Para utilizar una cuadrícula, desplácese hacia abajo y seleccione la que más le convenga. A continuación, haga clic en `OK`.
+    * Para utilizar una cuadrícula, desplácese hacia abajo y seleccione la que más le convenga. A continuación, haga clic en `Aceptar`.
 
 :::{figure} /fig/en_qgis_grid_flood_exercise.png
 ---
@@ -248,7 +247,7 @@ align: center
 ---
 :::
 
-* Para utilizar solo los bordes, hacer clic en `simple fill` -> `Fill style` y seleccionar `No Brusch`. Ajuste el `Stroke Color` a rojo o a otro color brillante. Aumente la `Stroke width` para agrandar los bordes. A continuación, haga clic en `OK`.
+* Para utilizar solo los bordes, hacer clic en `Relleno simple` -> `Estilo de relleno` y seleccionar `Sin relleno`. Ajuste el `Color de marca` a rojo o a otro color brillante. Aumente la `Anchura de marca` para agrandar los bordes. A continuación, haga clic en `Aceptar`.
 
 :::{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png
 ---
@@ -266,21 +265,21 @@ Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctament
     - __Unidades:__ Aquí puede averiguar si es posible utilizar metros con esta capa de datos o latitud y longitud.
 
 17. Esto se convertirá en un problema tan pronto como hagamos algo diferente de solo mostrar las capas. Puesto que debemos manipular las capas en el siguiente paso, necesitamos reproyectarlas primero ([video en Wiki](/content/es/Wiki/es_qgis_projections_wiki.md#modificación-de-la-proyección-cartográfica-de-una-capa-vector)).
-    * Haga clic en la pestaña `Vector` -> `Data Management Tools` -> `Reproject Layer` o buscar la herramienta en `Processing Toolbox `.
-    * Como `Input layer` seleccione “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
+    * Haga clic en la pestaña `Vectorial` -> `Data Management Tools` -> `Reprojectar capa` o buscar la herramienta en [`Caja de herramientas de Procesos`]().
+    * Como `Capa de entrada` seleccione “VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
     * Seleccione como destino CRS/EPSG-Code __4326__.
-    * Guarde el nuevo archivo en su carpeta `temp` haciendo clic en los tres puntos ![](/fig/Three_points.png) junto a `Reprojected`, especifique el nombre del archivo como “Flood_extand_Nigeria_october_2022_reprojected”.
-    * Haga clic en `Run`
-    * Elimine la capa antigua del panel de capas al hacer clic derecho en la capa -> `Remove layer`.
+    * Guarde el nuevo archivo en su carpeta `temp` haciendo clic en los tres puntos ![](/fig/Three_points.png) junto a `Reproyectado`, especifique el nombre del archivo como “Flood_extand_Nigeria_october_2022_reprojected”.
+    * Haga clic en `Ejecutar`
+    * Elimine la capa antigua del panel de capas al hacer clic derecho en la capa -> `Eliminar capa`.
 
-18. La capa de extensión de la inundación cubre la totalidad de Nigeria. Podemos utilizar la herramienta `Clip` para cortarlo con la forma del estado de Borno ([video en Wiki](/content/es/Wiki/es_qgis_geoprocessing_wiki.md#clip)).
-    * Abra `Processing Toolbox` ([así se hace](/content/es/Wiki/es_qgis_interface_wiki.md#barras-de-herramientas)) y buscar la herramienta `Clip`.
+18. La capa de extensión de la inundación cubre la totalidad de Nigeria. Podemos utilizar la herramienta `Cortar (Superposición vectorial)` para cortarlo con la forma del estado de Borno ([video en Wiki](/content/es/Wiki/es_qgis_geoprocessing_wiki.md#clip)).
+    * Abra `Caja de herramientas de Procesos` ([así se hace](/content/es/Wiki/es_qgis_interface_wiki.md#barras-de-herramientas)) y buscar la herramienta `Cortar (Superposición vectorial)`.
     :::{Note}
-    Hay __dos__ versiones de la herramienta `Clip`. Dado que trabajamos con datos vectoriales, asegúrese de utilizar el que se encuentra en "Superposición vectorial".
+    Hay __dos__ versiones de la herramienta `Cortar`. Dado que trabajamos con datos vectoriales, asegúrese de utilizar el que se encuentra en "Superposición vectorial".
     :::
-    * `Input layer`: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
-    * `Overlay layer`: “AOI_Borno_admin1”
-    * Para guardar el resultado, haga clic en los tres puntos de `Clipped`-> `Save to GeoPackage`e ir a su carpeta `temp`. Guardar la capa nueva con el nombre “Flood_extend_october_2022_reprojected_Borno”. Dé a la nueva capa el mismo `Layer name` y haga clic en `Run`.
+    * `Capa de entrada`: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”
+    * `Capa de superposición`: “AOI_Borno_admin1”
+    * Para guardar el resultado, haga clic en los tres puntos de `Cortado`-> `Guardar en GeoPackage` e ir a su carpeta `temp`. Guardar la capa nueva con el nombre “Flood_extend_october_2022_reprojected_Borno”. Dé a la nueva capa el mismo `Nombre de la capa` y haga clic en `Ejecutar`.
 
 :::{figure} /fig/en_qgis_clip_flood_exercise.png
 ---
