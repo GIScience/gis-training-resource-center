@@ -71,20 +71,35 @@ GIS_Training_Public_Health
 1. Open QGIS and create a new project.
 2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a name (e.g., `GIS_Training_Public_Health_Part_1`) and click `Save`. 
 3. Now we should set up the Project CRS.
-    - In the bottom right corner of the QGIS window, click on the ![](/fig/3.40_projection_icon.png) Projection icon. Let's choose a projection
+    - In the bottom right corner of the QGIS window, click on the ![](/fig/3.40_projection_icon.png) Projection icon. Let's choose a metric CRS that depicts Chad without distorting too much. For this exercise, we will use __"Albers Equal Area Conic" (EPSG: 102022)__. In the `Filter` bar, enter the name or the EPSG number. The CRS should appear in the "Prefedined Coordinate Reference Systems" Box. Select it and click `Apply` and `OK`. 
+    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png
+    ---
+    name: en_3.40_m3_ex_8_pub_health_1_project_crs.png
+    width: 450 px
+    ---
+    Setting the Project CRS in QGIS
+    :::
 
-::::{dropdown} How to choose the correct CRS
-:class: note
+::::{admonition} How to choose the correct CRS
+:class: dropdown, note
 
-Choosing a suitable Coordinate Reference System is crucial 
+Choosing a suitable Coordinate Reference System for your GIS project is crucial. In general, you want to use a CRS that best displays your area of interest. You want to choose a Secondly, you need to think about what kind of calculations you plan to do in your project. CRS exist in two varieties: geographic and metric coordinate reference systems. Geographic CRS use longitude and latitude (degrees) as their coordinates and units of measurements. These are angular measurements and don't depict distances linearly. Metric coordinate reference systems use coordinates that are given in __linear units of measurements__ (such as meters), which means they represent actual distances on the Earth's surface. The problem with metric coordinate reference systems is that they can't accurately represent bigger areas. Therefore, metric CRS are mainly used for local and regional mapping. 
 
+For example, if you wish to perform distance calculations, you should use a metric CRS. 
+
+If you want to know more about Projections and Coordinate Reference Systems, check out this __[module chapter](/content/Module_2/en_qgis_projections.md)__.
 
 
 ::::
 
 
-The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas
-% SET UP PROJECT HOME
+:::{attention}
+
+The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas. However, it does not change the CRS of layers. Each layer, or dataset, is encoded with a CRS. QGIS reprojects these layers "on the fly" to display layers with different CRS on the map canvas. This does not change the units of measurements or distortion of the actual layers. To perform distance calculations, you will need to [reproject the layer](/content/wiki/en_qgis_projections_wiki.md) to a metric coordinate reference system. 
+
+Setting the Project CRS to your desired CRS can help you choosing the correct CRS quicker when running algorithms. 
+:::
+% SET UP PROJECT HOME IN NEXT EXERCISE
 
 
 ### Task 2: Downloading the relevant data
@@ -95,7 +110,7 @@ The project CRS determines which coordinate reference system is being used to di
 2. Download the layers and unzip the downloaded folder.
 3. Move the unzipped folders into your standard folder structure into the `data/input/`-folder. 
 
-% ADD IMAGE?
+% ADD IMAGE AND EXPAND THIS SECTION
 
 ### Task 2: Importing the datasets
 
@@ -105,7 +120,7 @@ The project CRS determines which coordinate reference system is being used to di
     - `tcd_admbnda_adm2_20250212_AB.shp`
 ::::{margin}
 :::{tip}
-A shapefile consists of several, interelated files. The geometric information is stored in the `.shp`-file. To make the import process easier, you can order the folder by "File type" and only drag the  
+A shapefile consists of several, interrelated files. The geometric information is stored in the `.shp`-file. To make the import process easier, you can order the folder by "File type" and only drag the  
 :::
 ::::
 
@@ -146,14 +161,14 @@ Imported files are not saved within the QGIS project. If you move or delete the 
     - Try sorting the attribute table by clicking on the ![](/fig/sort.png)
     - Open the attribute tables for the layers `hotosm_tcd_health_facilities_points` and `tcd_admbnda_adm2_20250212_AB.shp` familiarise yourself with the data. 
 
-<!--
-:::{dropdown} Using the Map Canva
 
+:::{dropdown} Familiarise yourself with the QGIS interface
 
-
+Familiarise yourself with the map canvas by zooming in and out (<kbd>Mouse-wheel</kbd> or <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>). 
+Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png) `Pan Map`-tool. 
 
 :::
--->
+
 
 
 ### Task 4: Joining Vaccination Coverage Data with administrative boundaries
@@ -185,7 +200,8 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
     name: en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage
     width: 650 px
     ---
-    ```
+    :::
+    - 
 
 > Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer
 
