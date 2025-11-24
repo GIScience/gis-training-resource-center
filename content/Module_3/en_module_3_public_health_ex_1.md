@@ -14,6 +14,7 @@
 %               - WHERE TO DEPLOY MOBILE VACCINATION CENTERS -> DIGITISATION
 %           - IM COORDINATION INSRTUCTED TO GET DATA ON HEALTHSITE CAPACITIES
 %           - MAKE THEM DOWNLOAD HDX
+%           - ADD SMALL STEPS UNDER DROPDOWN, AS NOTES, ETC. 
 
 ## Background 
 
@@ -69,7 +70,20 @@ GIS_Training_Public_Health
 
 1. Open QGIS and create a new project.
 2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a name (e.g., `GIS_Training_Public_Health_Part_1`) and click `Save`. 
+3. Now we should set up the Project CRS.
+    - In the bottom right corner of the QGIS window, click on the ![](/fig/3.40_projection_icon.png) Projection icon. Let's choose a projection
 
+::::{dropdown} How to choose the correct CRS
+:class: note
+
+Choosing a suitable Coordinate Reference System is crucial 
+
+
+
+::::
+
+
+The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas
 % SET UP PROJECT HOME
 
 
@@ -123,6 +137,8 @@ Imported files are not saved within the QGIS project. If you move or delete the 
 
 > Your QGIS window should look similar to this (with different colours for the layers).
 
+% ADD IMAGE!!
+
 7. Let's investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.
     - Open the attribute table by <kbd>right-clicking</kbd> on the ADM2 layer in the layers panel on the left → `Open Attribute Table`.
     - A new window will open. This is the attribute table. It shows the vector layer in a tabular format, allowing you to see the attribute values, sort the table, and edit the values using the tools in the top bar. 
@@ -130,6 +146,14 @@ Imported files are not saved within the QGIS project. If you move or delete the 
     - Try sorting the attribute table by clicking on the ![](/fig/sort.png)
     - Open the attribute tables for the layers `hotosm_tcd_health_facilities_points` and `tcd_admbnda_adm2_20250212_AB.shp` familiarise yourself with the data. 
 
+<!--
+:::{dropdown} Using the Map Canva
+
+
+
+
+:::
+-->
 
 
 ### Task 4: Joining Vaccination Coverage Data with administrative boundaries
