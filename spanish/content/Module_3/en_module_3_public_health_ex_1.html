@@ -621,21 +621,33 @@ The paths from a QGIS project to the geodata are by default relative. This means
     └── output
 </pre></div>
 </div>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Open QGIS and create a new project.</p></li>
 <li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a name (e.g., <code class="docutils literal notranslate"><span class="pre">GIS_Training_Public_Health_Part_1</span></code>) and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 <li><p>Now we should set up the Project CRS.</p>
 <ul class="simple">
-<li><p>In the bottom right corner of the QGIS window, click on the <img alt="" src="../../_images/3.40_projection_icon.png" /> Projection icon. Let’s choose a projection</p></li>
+<li><p>In the bottom right corner of the QGIS window, click on the <img alt="" src="../../_images/3.40_projection_icon.png" /> Projection icon. Let’s choose a metric CRS that depicts Chad without distorting too much. For this exercise, we will use <strong>“Albers Equal Area Conic” (EPSG: 102022)</strong>. In the <code class="docutils literal notranslate"><span class="pre">Filter</span></code> bar, enter the name or the EPSG number. The CRS should appear in the “Prefedined Coordinate Reference Systems” Box. Select it and click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 </ul>
+<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-project-crs-png">
+<a class="reference internal image-reference" href="fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png"><img alt="fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png" src="fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png" style="width: 450px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Setting the Project CRS in QGIS</span><a class="headerlink" href="#en-3-40-m3-ex-8-pub-health-1-project-crs-png" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </li>
 </ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">How to choose the correct CRS</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Choosing a suitable Coordinate Reference System is crucial</p>
+<div class="dropdown note admonition">
+<p class="admonition-title">How to choose the correct CRS</p>
+<p>Choosing a suitable Coordinate Reference System for your GIS project is crucial. In general, you want to use a CRS that best displays your area of interest. You want to choose a Secondly, you need to think about what kind of calculations you plan to do in your project. CRS exist in two varieties: geographic and metric coordinate reference systems. Geographic CRS use longitude and latitude (degrees) as their coordinates and units of measurements. These are angular measurements and don’t depict distances linearly. Metric coordinate reference systems use coordinates that are given in <strong>linear units of measurements</strong> (such as meters), which means they represent actual distances on the Earth’s surface. The problem with metric coordinate reference systems is that they can’t accurately represent bigger areas. Therefore, metric CRS are mainly used for local and regional mapping.</p>
+<p>For example, if you wish to perform distance calculations, you should use a metric CRS.</p>
+<p>If you want to know more about Projections and Coordinate Reference Systems, check out this <strong><a class="reference internal" href="../Module_2/en_qgis_projections.html"><span class="std std-doc">module chapter</span></a></strong>.</p>
 </div>
-</details><p>The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas. However, it does not change the CRS of layers. Each layer, or dataset, is encoded with a CRS. QGIS reprojects these layers “on the fly” to display layers with different CRS on the map canvas. This does not change the units of measurements or distortion of the actual layers. To perform distance calculations, you will need to <a class="reference internal" href="#/content/wiki/en_qgis_projections_wiki.md"><span class="xref myst">reproject the layer</span></a> to a metric coordinate reference system.</p>
+<p>Setting the Project CRS to your desired CRS can help you choosing the correct CRS quicker when running algorithms.</p>
+</div>
 </section>
 <section id="task-2-downloading-the-relevant-data">
 <h3>Task 2: Downloading the relevant data<a class="headerlink" href="#task-2-downloading-the-relevant-data" title="Link to this heading">#</a></h3>
@@ -665,7 +677,7 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <p class="sidebar-title"></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>A shapefile consists of several, interelated files. The geometric information is stored in the <code class="docutils literal notranslate"><span class="pre">.shp</span></code>-file. To make the import process easier, you can order the folder by “File type” and only drag the</p>
+<p>A shapefile consists of several, interrelated files. The geometric information is stored in the <code class="docutils literal notranslate"><span class="pre">.shp</span></code>-file. To make the import process easier, you can order the folder by “File type” and only drag the</p>
 </div>
 </aside>
 <ol class="arabic simple" start="4">
@@ -720,15 +732,13 @@ The paths from a QGIS project to the geodata are by default relative. This means
 </ul>
 </li>
 </ol>
-<!--
-:::{dropdown} Using the Map Canva
-
-
-
-
-:::
--->
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Familiarise yourself with the QGIS interface</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Familiarise yourself with the map canvas by zooming in and out (<kbd>Mouse-wheel</kbd> or <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>).
+Holding <kbd>Space</kbd> automatically switches to the <img alt="" src="../../_images/qgis_pan_map.png" /> <code class="docutils literal notranslate"><span class="pre">Pan</span> <span class="pre">Map</span></code>-tool.</p>
+</div>
+</details></section>
 <section id="task-4-joining-vaccination-coverage-data-with-administrative-boundaries">
 <h3>Task 4: Joining Vaccination Coverage Data with administrative boundaries<a class="headerlink" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries" title="Link to this heading">#</a></h3>
 <p>In our <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder, we can find a csv file called <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code>. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (<code class="docutils literal notranslate"><span class="pre">amd2_name</span></code>) and the adm2 pcode. With this information, we can perform a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">non-spatial join</a> in order to add the vaccination coverage data to our district boundaries layer (adm2).</p>
@@ -757,10 +767,13 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <li><p>Under “Layer 2 fields to copy”, we can select which columns we want to copy. Click on the <img alt="" src="../../_images/Three_points.png" /> three dots to the right of the field and select <code class="docutils literal notranslate"><span class="pre">vaccination_rate_mcv1</span></code> and <code class="docutils literal notranslate"><span class="pre">vaccination_rate_mcv2</span></code>. Then, click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 <li><p>Finally, to execute the algorithm, click on <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 </ul>
-<figure class="align-default">
+<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-join-attr-vaccine-coverage">
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png" style="width: 650px;" />
 </a>
 </figure>
+<ul class="simple">
+<li></li>
+</ul>
 </li>
 </ol>
 <blockquote>
