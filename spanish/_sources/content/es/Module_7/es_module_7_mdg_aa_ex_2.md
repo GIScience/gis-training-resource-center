@@ -250,7 +250,10 @@ Reprojectar el buffer al SRC EPSG:4326
    - En la ventana de configuración:
      - Configure la **Capa de entrada** a `Raster de población` (desde **Entrada del modelo**).
      - Configure la **Capa de máscara** en la salida del paso anterior (de **Salida del algoritmo**).
-     - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
+     - Configure la salida como **Salida del modelo** y asígnele un nombre:
+     ```
+     trayectoria_harald_buffer
+     ```
    - Haga clic en **Aceptar** para añadir el paso al modelo.
    :::{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
@@ -287,7 +290,7 @@ Cálculo de la población expuesta a ciclones por distrito
 :::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
 ---
 width: 600px
-name: the_world_result
+name: fr_MDG_AA_intermediate_result_model_algorythms
 align: center
 ---
 Su modelo debería verse así. Todos los algoritmos están correctamente conectados y la salida del modelo está definida.

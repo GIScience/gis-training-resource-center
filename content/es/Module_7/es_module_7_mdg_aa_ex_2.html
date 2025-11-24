@@ -780,33 +780,33 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Entrada Trayectoria del ciclón</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_cyclon_track.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" src="../../../_images/fr_MDG_AA_model_input_cyclon_track.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Trayectoria del ciclón</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definición de la entrada del modelo: Trayectoria del ciclón</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Entrada de límites administrativos</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" src="../../../_images/fr_MDG_AA_model_input_admin_bounderies.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Límites administrativos</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definición de la entrada del modelo: Límites administrativos</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
 Ráster de población</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_input_population_raster.PNG"><img alt="../../../_images/fr_MDG_AA_model_input_population_raster.PNG" src="../../../_images/fr_MDG_AA_model_input_population_raster.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -891,19 +891,22 @@ Ráster de población</label><div class="sd-tab-content docutils">
 </figure>
 <ol class="arabic" start="8">
 <li><p><strong>Recorte el ráster de población utilizando el área amortiguada.</strong></p>
-<ul class="simple">
+<ul>
 <li><p>En el panel <strong>Algorithms</strong>, busque <strong>Cortar ráster por capa de máscara</strong>.</p></li>
 <li><p>En la ventana de configuración:</p>
-<ul>
+<ul class="simple">
 <li><p>Añada una descripción: <code class="docutils literal notranslate"><span class="pre">Cortar</span> <span class="pre">la</span> <span class="pre">capa</span> <span class="pre">ráster</span> <span class="pre">de</span> <span class="pre">población</span> <span class="pre">para</span> <span class="pre">ajustarla</span> <span class="pre">al</span> <span class="pre">buffer</span> <span class="pre">del</span> <span class="pre">ciclón</span></code></p></li>
 </ul>
 </li>
 <li><p>En la ventana de configuración:</p>
-<ul>
+<ul class="simple">
 <li><p>Configure la <strong>Capa de entrada</strong> a <code class="docutils literal notranslate"><span class="pre">Raster</span> <span class="pre">de</span> <span class="pre">población</span></code> (desde <strong>Entrada del modelo</strong>).</p></li>
 <li><p>Configure la <strong>Capa de máscara</strong> en la salida del paso anterior (de <strong>Salida del algoritmo</strong>).</p></li>
-<li><p>Configure la salida como <strong>Salida del modelo</strong> (deje el nombre de la salida <strong>en blanco</strong> ).</p></li>
+<li><p>Configure la salida como <strong>Salida del modelo</strong> y asígnele un nombre:</p></li>
 </ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trayectoria_harald_buffer</span>
+</pre></div>
+</div>
 </li>
 <li><p>Haga clic en <strong>Aceptar</strong> para añadir el paso al modelo.</p></li>
 </ul>
@@ -950,11 +953,11 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 </figure>
 </div>
 <p><strong>Los resultados deberían ser parecidos a los siguientes:</strong></p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="fr-mdg-aa-intermediate-result-model-algorythms">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Su modelo debería verse así. Todos los algoritmos están correctamente conectados y la salida del modelo está definida.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Su modelo debería verse así. Todos los algoritmos están correctamente conectados y la salida del modelo está definida.</span><a class="headerlink" href="#fr-mdg-aa-intermediate-result-model-algorythms" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="10">
@@ -976,15 +979,15 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 <li><p>Configure la salida del modelo <strong>exposed_population_sum</strong> en <code class="docutils literal notranslate"><span class="pre">Harald_Exposed_Population</span></code>y guárdela en <code class="docutils literal notranslate"><span class="pre">data</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">output</span></code></p></li>
 </ul>
 <p>Ahora puede ejecutar este modelo cada vez que esté disponible una nueva trayectoria de ciclón.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG"><img alt="../../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" src="../../../_images/fr_MDG_AA_model_run_model_M7_e1_task2.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Para ejecutar el modelo, especifique la entrada tal y como se muestra en la imagen y defina el nombre de la casilla de salida.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Para ejecutar el modelo, especifique la entrada tal y como se muestra en la imagen y defina el nombre de la casilla de salida.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Los resultados deberían ser parecidos a los siguientes:</strong></p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task1_basics.PNG" style="width: 600px;" />
 </a>
 </figure>
@@ -1002,7 +1005,7 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 <li><p>Haga clic en <strong>Aceptar</strong> para guardar el cambio.</p></li>
 <li><p>Esto permitirá que el modelo genere tanto los resultados de la población expuesta como la zona buffer de impacto del ciclón cuando se ejecute.</p></li>
 </ul>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_model_output_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_model_output_buffer.PNG" src="../../../_images/fr_MDG_AA_model_output_buffer.PNG" style="width: 600px;" />
 </a>
 </figure>
@@ -1021,7 +1024,7 @@ align: center<a class="headerlink" href="#width-600px-name-the-world-result-alig
 <input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
 Buffer de salida del modelador gráfico</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG" style="width: 600px;" />
 </a>
 </figure>
@@ -1030,22 +1033,22 @@ Buffer de salida del modelador gráfico</label><div class="sd-tab-content docuti
 <input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
 Ejecute modelo con salida de buffer</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-5">
 Salida del modelo</label><div class="sd-tab-content docutils">
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG"><img alt="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" src="../../../_images/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Definición de la entrada del modelo: Ráster de población</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
