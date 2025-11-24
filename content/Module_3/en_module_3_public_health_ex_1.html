@@ -685,7 +685,18 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <ol class="arabic simple">
 <li><p>Open QGIS and create a new project.</p></li>
 <li><p>Save the project via <code class="docutils literal notranslate"><span class="pre">Project</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Navigate to the folder for this training and save it in the <code class="docutils literal notranslate"><span class="pre">/project</span></code> subfolder. Give it a name (e.g., <code class="docutils literal notranslate"><span class="pre">GIS_Training_Public_Health_Part_1</span></code>) and click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Now we should set up the Project CRS.</p>
+<ul class="simple">
+<li><p>In the bottom right corner of the QGIS window, click on the <img alt="" src="../../_images/3.40_projection_icon.png" /> Projection icon. Let’s choose a projection</p></li>
+</ul>
+</li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">How to choose the correct CRS</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Choosing a suitable Coordinate Reference System is crucial</p>
+</div>
+</details><p>The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas</p>
 </section>
 <section id="task-2-downloading-the-relevant-data">
 <h3>Task 2: Downloading the relevant data<a class="headerlink" href="#task-2-downloading-the-relevant-data" title="Link to this heading">#</a></h3>
@@ -770,6 +781,14 @@ The paths from a QGIS project to the geodata are by default relative. This means
 </ul>
 </li>
 </ol>
+<!--
+:::{dropdown} Using the Map Canva
+
+
+
+
+:::
+-->
 </section>
 <section id="task-4-joining-vaccination-coverage-data-with-administrative-boundaries">
 <h3>Task 4: Joining Vaccination Coverage Data with administrative boundaries<a class="headerlink" href="#task-4-joining-vaccination-coverage-data-with-administrative-boundaries" title="Link to this heading">#</a></h3>
