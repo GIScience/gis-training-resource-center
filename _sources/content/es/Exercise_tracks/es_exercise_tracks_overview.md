@@ -1,4 +1,4 @@
-# Resumen del ejercicio
+# Resumen de kis ejercicios
 
 Esta plataforma ofrece varios ejercicios por módulo. Cada módulo cubre las competencias y herramientas que se tratan en él. Los ejercicios varían en complejidad y duración. Tenga en cuenta las competencias que se cubren en cada módulo cuando elija las actividades para el taller. Lo ideal sería cubrir las competencias básicas de cada módulo.
 
