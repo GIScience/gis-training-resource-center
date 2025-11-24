@@ -294,7 +294,7 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
     - **Capa de entrada**: la salida de Conteo de centros de salud afectados por Admin 2
     - **Nombre del campo de salida**:
        ```
-       pct_expuesto_salud
+       pct_expuesto_centros_salud
        ```
     - **Tipo de campo**: Decimal (real)
     - **Expresión**:
@@ -307,7 +307,7 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
   - Configure la salida como **Salida del modelo**
   - Nómbrelo:
    ```
-   adm2_centros_salud_expuesta
+   adm2_centros_salud_expuestos
    ```
 :::{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
@@ -365,9 +365,9 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
        - `Establecimientos educativas` → seleccione el conjunto de datos de puntos para las escuelas
    - **Salida:**
      - Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.
-       - `adm2_centros_salud_expuesta` -> 
+       - `adm2_centros_salud_expuestos` -> 
         ```
-        adm2_centros_salud_expuesta
+        adm2_centros_salud_expuestos
         ```
        - `adm2_educación_expuesta` ->
         ```
