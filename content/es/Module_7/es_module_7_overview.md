@@ -8,7 +8,7 @@
 
 # Automatización con QGIS
 
-A medida que avance en su carrera profesional en SIG y perfeccione sus habilidades de análisis, se dará cuenta de que el análisis espacial y de datos puede incluir una multitud de pasos complejos. Además, es posible que tenga que realizar un análisis varias veces para distintas zonas, o porque tenga que ajustar parámetros para obtener el resultado correcto, o porque tenga que actualizar un análisis obsoleto. En estos casos, querrá __automatizar__ el proceso de análisis. Esto puede conseguirse con ![](/fig/processingModel.png) `Graphical Modeler` en QGIS. El uso de modelos también garantiza la __reproducibilidad__ de su análisis.
+A medida que avance en su carrera profesional en SIG y perfeccione sus habilidades de análisis, se dará cuenta de que el análisis espacial y de datos puede incluir una multitud de pasos complejos. Además, es posible que tenga que realizar un análisis varias veces para distintas zonas, o porque tenga que ajustar parámetros para obtener el resultado correcto, o porque tenga que actualizar un análisis obsoleto. En estos casos, querrá __automatizar__ el proceso de análisis. Esto puede conseguirse con ![](/fig/processingModel.png) `Diseñador de Modelos` en QGIS. El uso de modelos también garantiza la __reproducibilidad__ de su análisis.
 
 
 | __Capítulo__ | __Competencias y objetivos__ |
