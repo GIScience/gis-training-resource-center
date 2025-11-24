@@ -31,4 +31,4 @@ You can adapt most of the exercise of module 3 for a consecutive map making exer
 
 - [Larkana Flood Response](/content/Exercise_tracks/en_larkana_flood_response.md)
 - [Anticipatory Action Analysis for Cyclones in Madagascar](/content/Exercise_tracks/en_mdg_aa_cyclones.md)
-
+- [Public Health: Outbreak and Preparedness](/content/Exercise_tracks/en_public_health_outbreak_and_preparedness.md)
