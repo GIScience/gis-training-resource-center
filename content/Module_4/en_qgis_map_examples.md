@@ -238,3 +238,33 @@ If no formal 3W data collection system is in place, information might need to be
 - How many people or households are being reached by sectoral activities, and where?
 
 It is normal that the initial dataset is limited. The 3W map will evolve and expand as additional information comes in.
+
+Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)
+
+### 3W Map Creation
+
+1. Set up a new __Print Layout__. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
+2. Add a header
+    - The title (e.g. Sudanese Red Crescent Response)
+    - The type of disaster or emergency
+    - The geographic location of the disaster
+    - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
+3. Add all the relevant spatial data. Used in probably every instance:
+    - Administrative boundaries
+    - Affected areas
+4. Import the 3W Activity data
+    - Add the 3W dataset (mostly CSV or Excel)
+    - Ensure that it contains information about the organization, activity type, and location.
+5. Style the layers
+    - Different icons or shapes for different sectors (Health, Shelter, WASH, etc.)
+    - Color coding to distinguish organizations or activity types
+    - Labels where needed, but avoid cluttering the map with too much text
+6. Add map elements
+    - A legend explaining symbols and sector colors
+    - A scale bar
+    - A north arrow
+    - Organizational logos (e.g., IFRC, National Society)
+    - A small overview map
+
+
+
