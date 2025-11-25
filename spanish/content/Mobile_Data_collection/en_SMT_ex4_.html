@@ -686,7 +686,7 @@ Unzip the .zip folder in order and navigate to <code class="docutils literal not
 <li><p class="sd-card-text"><strong>Understand the Layer Concept</strong></p>
 <p class="sd-card-text">By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the <code class="docutils literal notranslate"><span class="pre">Layers</span></code> Panel. You should now have 3 layers in your panel: your geojason output (vector), your geotiff (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the <a class="reference internal" href="../Wiki/en_qgis_layer_concept_wiki.html"><span class="std std-doc">Layer Concept</span></a>.</p>
 <figure class="align-center" id="smt-ex4-layer-interface-qgis">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_fig1.PNG"><img alt="../../_images/en_SMT_ex4_fig1.PNG" src="../../_images/en_SMT_ex4_fig1.PNG" style="height: 500px;" />
+<a class="reference internal image-reference" href="../../_images/en_3.34_SMT_Ex4_vector_raster.png"><img alt="../../_images/en_3.34_SMT_Ex4_vector_raster.png" src="../../_images/en_3.34_SMT_Ex4_vector_raster.png" style="height: 500px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">The QGIS interface with the data loaded into the QGIS-project</span><a class="headerlink" href="#smt-ex4-layer-interface-qgis" title="Link to this image">#</a></p>
@@ -701,7 +701,7 @@ Unzip the .zip folder in order and navigate to <code class="docutils literal not
 <p class="sd-card-text">When you upload several marked Sketch Maps simultaneously, you will get one vector output containing all the markings of all Sketch Maps. In this case the column “name” helps you to track on which map each marking was detected</p>
 </div>
 <figure class="align-center" id="smt-ex4-vector-output-attribute-table">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_Attrbute_Table.PNG"><img alt="../../_images/en_SMT_ex4_Attrbute_Table.PNG" src="../../_images/en_SMT_ex4_Attrbute_Table.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_attribute_table.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_attribute_table.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_attribute_table.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Attribute table of the vector file output of Sketch Map Tool</span><a class="headerlink" href="#smt-ex4-vector-output-attribute-table" title="Link to this image">#</a></p>
@@ -719,7 +719,7 @@ Do your different output match or do you find any errors?</p>
 <p class="sd-card-text">So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called <a class="reference internal" href="../Module_3/en_qgis_digitisation.html"><span class="std std-doc">digitisation</span></a>.</p>
 <p class="sd-card-text">Right-click on your vector file and click on <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code>. The <code class="docutils literal notranslate"><span class="pre">Digitizing</span> <span class="pre">Toolbox</span></code> in your menu bar on top of your QGIS will be activated:</p>
 <figure class="align-center" id="digitizing-toolbox">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_dig_toolbox.PNG"><img alt="../../_images/en_SMT_ex4_dig_toolbox.PNG" src="../../_images/en_SMT_ex4_dig_toolbox.PNG" style="width: 700px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_digit_polygon.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_digit_polygon.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_digit_polygon.png" style="width: 700px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Digitsing Toolbox in QGIS 3.36</span><a class="headerlink" href="#digitizing-toolbox" title="Link to this image">#</a></p>
@@ -727,7 +727,7 @@ Do your different output match or do you find any errors?</p>
 </figure>
 <p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Feature:</span> <span class="pre">Capture</span> <span class="pre">Polygon</span></code><img alt="" src="../../_images/mActionCapturePolygon.png" />. You will note that your mouse market now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.</p>
 <figure class="align-center" id="smt-attribute-table">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_dig_info.PNG"><img alt="../../_images/en_SMT_ex4_dig_info.PNG" src="../../_images/en_SMT_ex4_dig_info.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_digitized_polygon.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_digitized_polygon.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_digitized_polygon.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Digitizing</span><a class="headerlink" href="#smt-attribute-table" title="Link to this image">#</a></p>
@@ -735,7 +735,7 @@ Do your different output match or do you find any errors?</p>
 </figure>
 <p class="sd-card-text">In the map canvas you can already see your hand-drawn polygon. In order to save it, you should now right-click on your vector layer and turn off the Editing mode by clicking on <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span></code>. Check your result by looking at the Attribute Table again: You now have 7 features in your table.</p>
 <figure class="align-center" id="smt-attribute-table-with-added-polygon">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_Attrbute_Table_new.PNG"><img alt="../../_images/en_SMT_ex4_Attrbute_Table_new.PNG" src="../../_images/en_SMT_ex4_Attrbute_Table_new.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_attribute_table_digit_polygon.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_attribute_table_digit_polygon.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_attribute_table_digit_polygon.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Attribute Table with added polygon</span><a class="headerlink" href="#smt-attribute-table-with-added-polygon" title="Link to this image">#</a></p>
@@ -751,7 +751,7 @@ Do your different output match or do you find any errors?</p>
 <li><p class="sd-card-text">As <code class="docutils literal notranslate"><span class="pre">Name</span></code> enter “Description”, choose “Text (String)” <code class="docutils literal notranslate"><span class="pre">Type</span></code>, as <code class="docutils literal notranslate"><span class="pre">Length</span></code> enter “20” and click <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
 </ul>
 <figure class="align-center" id="smt-attribute-table-add-text-field">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_addfield.PNG"><img alt="../../_images/en_SMT_ex4_addfield.PNG" src="../../_images/en_SMT_ex4_addfield.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_add_field.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_add_field.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_add_field.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Adding a new field to the attribute table</span><a class="headerlink" href="#smt-attribute-table-add-text-field" title="Link to this image">#</a></p>
@@ -761,7 +761,7 @@ Do your different output match or do you find any errors?</p>
 <li><p class="sd-card-text">by clicking on each field you can now enter the respective descriptions to the colors:</p></li>
 </ul>
 <figure class="align-center" id="smt-attribute-add-field-description">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_addfield_description.PNG"><img alt="../../_images/en_SMT_ex4_addfield_description.PNG" src="../../_images/en_SMT_ex4_addfield_description.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_descritption_field.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_descritption_field.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_descritption_field.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Adding descriptions to the fields</span><a class="headerlink" href="#smt-attribute-add-field-description" title="Link to this image">#</a></p>
@@ -779,7 +779,7 @@ Do your different output match or do you find any errors?</p>
 <p class="sd-card-text">In the topmost drop-down menu, choose <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>. As Value choose “Description” and then click on the bottom left on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>. We are now able to choose colors depending on the value in the column “Description”. By double-clicking on the colored box in your window next to your value and Legend descriptions the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">Selector</span></code> will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to “Color”.
 Right below you can also adjust the opacity level of your feature.</p>
 <figure class="align-center" id="smt-adjusting-symbology">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_dig_categorize.PNG"><img alt="../../_images/en_SMT_ex4_dig_categorize.PNG" src="../../_images/en_SMT_ex4_dig_categorize.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_symbology.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_symbology.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_symbology.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Adjusting the symbology with the <a class="reference internal" href="#/content/Modul_4/en_qgis_map_design_I.md#styling-panel"><span class="xref myst">symbology tab</span></a></span><a class="headerlink" href="#smt-adjusting-symbology" title="Link to this image">#</a></p>
@@ -787,7 +787,7 @@ Right below you can also adjust the opacity level of your feature.</p>
 </figure>
 <p class="sd-card-text">In the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">Selector</span></code>, you can also click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">line</span></code> in the upper window and change the <code class="docutils literal notranslate"><span class="pre">Symbol</span> <span class="pre">Layer</span> <span class="pre">Type</span></code>. In this example, we would like to symbolize the critical Infrastructure with red outlines, so we choose “Outline: Simple Line”. Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data <a class="reference internal" href="../Wiki/en_qgis_visualisation_wiki.html"><span class="std std-doc">here</span></a>.</p>
 <figure class="align-center" id="smt-symbol-selector">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_dig_Symbology.PNG"><img alt="../../_images/en_SMT_ex4_dig_Symbology.PNG" src="../../_images/en_SMT_ex4_dig_Symbology.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_line_symbology.png"><img alt="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_line_symbology.png" src="content/Mobile_Data_collection/fig/en_3.34_SMT_Ex4_line_symbology.png" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Using the symbol selector</span><a class="headerlink" href="#smt-symbol-selector" title="Link to this image">#</a></p>
@@ -836,7 +836,7 @@ Right below you can also adjust the opacity level of your feature.</p>
 </ol>
 <p class="sd-card-text">The finished map could look something like this:</p>
 <figure class="align-default" id="digitized-smt-map-example">
-<a class="reference internal image-reference" href="../../_images/SMT_Ex_4_Example_Map_Result.png"><img alt="../../_images/SMT_Ex_4_Example_Map_Result.png" src="../../_images/SMT_Ex_4_Example_Map_Result.png" style="width: 700px;" />
+<a class="reference internal image-reference" href="../../_images/en_3.34_SMT_Ex4_map.png"><img alt="../../_images/en_3.34_SMT_Ex4_map.png" src="../../_images/en_3.34_SMT_Ex4_map.png" style="width: 700px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Example of a finished map using the Sketch Map Tool</span><a class="headerlink" href="#digitized-smt-map-example" title="Link to this image">#</a></p>
@@ -908,17 +908,17 @@ Unzip the .zip folder in order to be able to access the geotiff output.</p>
 <li><p class="sd-card-text">maybe explain here what else can be done in properties-</p></li>
 </ul>
 <figure class="align-center" id="smt-ex4b-umap-properties">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_Properties.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_Properties.PNG" src="../../_images/en_SMT_ex4_UMAP_Properties.PNG" style="width: 300px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_Properties.PNG"><img alt="fig/en_SMT_ex4_UMAP_Properties.PNG" src="fig/en_SMT_ex4_UMAP_Properties.PNG" style="width: 300px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Editing the map properties</span><a class="headerlink" href="#smt-ex4b-umap-properties" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
-<li><p class="sd-card-text">You can load your data into the map frame by clicking on the arrow button. The <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">data</span></code> window will open on the right hand side. CLick on <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">file</span></code> and navigate to your vector output from the SKetch Map Tool (“Schuld_Ahr-tal_sketch-map_Ex4.geojson”) and click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. uMap will automatically detect that your vector is a geojason format. Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code> to load your data to your map canvas.</p></li>
+<li><p class="sd-card-text">You can load your data into the map frame by clicking on the arrow button. The <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">data</span></code> window will open on the right hand side. CLick on <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">file</span></code> and navigate to your vector output from the SKetch Map Tool (“Kumasi_SMT_Ex4.geojson”) and click on <code class="docutils literal notranslate"><span class="pre">Open</span></code>. uMap will automatically detect that your vector is a geojason format. Click on <code class="docutils literal notranslate"><span class="pre">Import</span></code> to load your data to your map canvas.</p></li>
 </ol>
 <figure class="align-center" id="umap-data-loaded">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_Data_Loaded.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_Data_Loaded.PNG" src="../../_images/en_SMT_ex4_UMAP_Data_Loaded.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_Data_Loaded.PNG"><img alt="fig/en_SMT_ex4_UMAP_Data_Loaded.PNG" src="fig/en_SMT_ex4_UMAP_Data_Loaded.PNG" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">uMap interface with the Sketch Map vectors</span><a class="headerlink" href="#umap-data-loaded" title="Link to this image">#</a></p>
@@ -943,7 +943,7 @@ In the toolbar on the right hand side you have various options to do so.</p>
 <p class="sd-card-text"><strong>2. Explore and Manage Data Layers</strong></p>
 <p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">Layers</span></code><img alt="" src="../../_images/en_SMT_ex4_UMAP_layers.PNG" /> to open your layers panel. In this windows you will see all the layers in your project (in our case it is just one) and you are able to add additional information layers. The small symbols on the left hand side of you layer give you the option to hide, zoom to or delete your layer.</p>
 <figure class="align-center" id="umap-manage-layer-interface">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_Managelayers.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_Managelayers.PNG" src="../../_images/en_SMT_ex4_UMAP_Managelayers.PNG" style="height: 150px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_Managelayers.PNG"><img alt="fig/en_SMT_ex4_UMAP_Managelayers.PNG" src="fig/en_SMT_ex4_UMAP_Managelayers.PNG" style="height: 150px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Manage Layers Interface in uMap</span><a class="headerlink" href="#umap-manage-layer-interface" title="Link to this image">#</a></p>
@@ -955,7 +955,7 @@ In the toolbar on the right hand side you have various options to do so.</p>
 <p class="sd-card-text">Sketch Map Vector Output always have this same attribute table structure.</p>
 </div>
 <figure class="align-default" id="smt-ex4-attribute-table">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_AttributeTable.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_AttributeTable.PNG" src="../../_images/en_SMT_ex4_UMAP_AttributeTable.PNG" style="width: 1000px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_AttributeTable.PNG"><img alt="fig/en_SMT_ex4_UMAP_AttributeTable.PNG" src="fig/en_SMT_ex4_UMAP_AttributeTable.PNG" style="width: 1000px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Attribute Table in uMap</span><a class="headerlink" href="#smt-ex4-attribute-table" title="Link to this image">#</a></p>
@@ -979,7 +979,7 @@ When you click on  <code class="docutils literal notranslate"><span class="pre">
 <li><p class="sd-card-text">repeat the process creating a clustered layer for “Past flood extent”</p></li>
 </ul>
 <figure class="align-center" id="smt-ex4-umap-layers">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_3Layers.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_3Layers.PNG" src="../../_images/en_SMT_ex4_UMAP_3Layers.PNG" style="width: 400px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_4Layers.PNG"><img alt="fig/en_SMT_ex4_UMAP_4Layers.PNG" src="fig/en_SMT_ex4_UMAP_4Layers.PNG" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">The layer manager should look like this</span><a class="headerlink" href="#smt-ex4-umap-layers" title="Link to this image">#</a></p>
@@ -989,7 +989,7 @@ When you click on  <code class="docutils literal notranslate"><span class="pre">
 <li><p class="sd-card-text">In the map canvas, you can now click on one of the polygons and toggle editing modus by clicking on the small pen button that appears.</p></li>
 </ul>
 <figure class="align-center" id="toggle-editing">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_Toggle_editing.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_Toggle_editing.PNG" src="../../_images/en_SMT_ex4_UMAP_Toggle_editing.PNG" style="height: 150px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_Toggle_editing.PNG"><img alt="fig/en_SMT_ex4_UMAP_Toggle_editing.PNG" src="fig/en_SMT_ex4_UMAP_Toggle_editing.PNG" style="height: 150px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Toggle editing</span><a class="headerlink" href="#toggle-editing" title="Link to this image">#</a></p>
@@ -999,7 +999,7 @@ When you click on  <code class="docutils literal notranslate"><span class="pre">
 <li><p class="sd-card-text">The <code class="docutils literal notranslate"><span class="pre">Feature</span> <span class="pre">properties</span></code> window will open on the right hand side. On the very top, you can now choose the layer group you want to assign this feature to. Choose a meaningful name. For the flood polygons, we can simply choose as name “Past flood extent” and for the several critical infrastructure polygons you can either choose “critical infrastructure” or “school”/”water treatment plant” as just an example. Click on <code class="docutils literal notranslate"><span class="pre">Close</span></code>. If you click on a flood extent polygon and toggle editing you assign it to you layer “Past flood extent” and if you click on a critical infrastructure polygon and toggle editing you assign it to you layer “Critical Infrastructure”. Assign now all 6 polygons to the respective layer.</p></li>
 </ul>
 <figure class="align-center" id="umap-assign-features-to-layer">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_assign_layer.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_assign_layer.PNG" src="../../_images/en_SMT_ex4_UMAP_assign_layer.PNG" style="width: 450px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_assign_layer.PNG"><img alt="fig/en_SMT_ex4_UMAP_assign_layer.PNG" src="fig/en_SMT_ex4_UMAP_assign_layer.PNG" style="width: 450px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Assign features to layers</span><a class="headerlink" href="#umap-assign-features-to-layer" title="Link to this image">#</a></p>
@@ -1010,7 +1010,7 @@ When you click on  <code class="docutils literal notranslate"><span class="pre">
 <li><p class="sd-card-text">In <code class="docutils literal notranslate"><span class="pre">Interaction</span> <span class="pre">Options</span></code> the behavior of the labeling can be determined. For example, you can choose <code class="docutils literal notranslate"><span class="pre">Popup</span></code> as <code class="docutils literal notranslate"><span class="pre">Popup</span> <span class="pre">shape</span></code> and set <code class="docutils literal notranslate"><span class="pre">Display</span> <span class="pre">label</span></code> either <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">hover</span></code> in order to only display the features descriptions when you scroll with the mouse over the respective feature on the map, or on <code class="docutils literal notranslate"><span class="pre">always</span></code>, in order to always see the respective description.</p></li>
 </ul>
 <figure class="align-center" id="umap-shape-properties">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_Shape_Properties.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_Shape_Properties.PNG" src="../../_images/en_SMT_ex4_UMAP_Shape_Properties.PNG" style="width: 450px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_Shape_Properties.PNG"><img alt="fig/en_SMT_ex4_UMAP_Shape_Properties.PNG" src="fig/en_SMT_ex4_UMAP_Shape_Properties.PNG" style="width: 450px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Shape properties interface in UMAP</span><a class="headerlink" href="#umap-shape-properties" title="Link to this image">#</a></p>
@@ -1019,7 +1019,7 @@ When you click on  <code class="docutils literal notranslate"><span class="pre">
 <h3 class="rubric" id="save-and-publish-your-map">6. Save and publish your map</h3>
 <p class="sd-card-text">Your map could now look like this:</p>
 <figure class="align-center" id="smt-ex4-final-map-umap">
-<a class="reference internal image-reference" href="../../_images/en_SMT_ex4_UMAP_final.PNG"><img alt="../../_images/en_SMT_ex4_UMAP_final.PNG" src="../../_images/en_SMT_ex4_UMAP_final.PNG" style="height: 400px;" />
+<a class="reference internal image-reference" href="fig/en_SMT_ex4_UMAP_final.PNG"><img alt="fig/en_SMT_ex4_UMAP_final.PNG" src="fig/en_SMT_ex4_UMAP_final.PNG" style="height: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Finalized Map in UMAP</span><a class="headerlink" href="#smt-ex4-final-map-umap" title="Link to this image">#</a></p>
