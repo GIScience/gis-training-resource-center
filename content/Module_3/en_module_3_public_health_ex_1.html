@@ -585,9 +585,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-enriching-the-healthsites-dataset">Task 4: Enriching the Healthsites dataset</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-cleaning-the-healthsite-data">Task 5: Cleaning the Healthsite Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-classifying-the-healthsites">Task 6: Classifying the Healthsites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-add-digital-elevation-model">Task 7: Add Digital elevation model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-adding-the-road-networks">Task 7: Adding the Road Networks</a></li>
 </ul>
             </nav>
         </div>
@@ -877,10 +877,13 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png" style="width: 650px;" />
 </a>
 </figure>
-<ul class="simple">
-<li></li>
-</ul>
 </li>
+<li><p>A new layer called “Joined Layer” will appear in the layers panel. To the right of it, you will see a <img alt="" src="../../_images/qgis_3.40_temp_layer.png" /> symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. <strong>We can save the scratch layer</strong> by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>.
+- A new window will open with. Here we need to specify the file location and the layer name.
+- Leave the <code class="docutils literal notranslate"><span class="pre">Format</span></code> on “GeoPackage”.
+- Click on the three dots <img alt="" src="../../_images/Three_points.png" />, navigate to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
+- Enter the same name into <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field (This will be the name of the layer in the layers panel).
+- Leave the rest as it is and click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
 </ol>
 <blockquote>
 <div><p>Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer</p>
@@ -888,6 +891,10 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 </section>
 <section id="task-5-visualising-the-vaccination-coverage">
 <h3>Task 5: Visualising the vaccination coverage<a class="headerlink" href="#task-5-visualising-the-vaccination-coverage" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Saving your progress</p>
+<p>Remember to save your project intermittently to keep your progress. QGIS is constantly being developed by the open source community and is known to crash from time to time.</p>
+</div>
 <p>Now that we have the vaccination coverage information in our adm2-layer, we can visualise the information in order to understand the spatial distribution of the vaccination coverage.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -896,6 +903,23 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <p>QGIS offers various ways to <a class="reference internal" href="../Module_4/en_qgis_styling_vector_data.html"><span class="std std-doc">visualise vector data</span></a>. If you want to learn more about these different methods, check out <a class="reference internal" href="../Module_4/en_module_4_overview.html"><span class="std std-doc">module 4</span></a>.</p>
 </div>
 </aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can move the properties window to the side so you can see the changes in symbology on your map canvas.</p>
+</div>
+</aside>
+<ol class="arabic simple" start="12">
+<li><p>Open the symbology tab via the Properties window for the layer:</p>
+<ul class="simple">
+<li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>-layer → <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
+<li><p>Navigate to “Symbology” in the tab section on the left.</p></li>
+<li><p>Here we can change the symbology method from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Categorized</span></code>.</p></li>
+<li><p>Next, we need to select the value which will be used for the classification. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select the column</p></li>
+</ul>
+</li>
+</ol>
 </section>
 <section id="task-4-enriching-the-healthsites-dataset">
 <h3>Task 4: Enriching the Healthsites dataset<a class="headerlink" href="#task-4-enriching-the-healthsites-dataset" title="Link to this heading">#</a></h3>
@@ -1004,12 +1028,9 @@ When performing joins, pay attention to such inconsistencies.</p>
 </li>
 </ol>
 </section>
+<section id="task-7-add-digital-elevation-model">
+<h3>Task 7: Add Digital elevation model<a class="headerlink" href="#task-7-add-digital-elevation-model" title="Link to this heading">#</a></h3>
 </section>
-<section id="task-7-adding-the-road-networks">
-<h2>Task 7: Adding the Road Networks<a class="headerlink" href="#task-7-adding-the-road-networks" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Import the roads dataset `</p></li>
-</ol>
 </section>
 </section>
 
@@ -1071,9 +1092,9 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-enriching-the-healthsites-dataset">Task 4: Enriching the Healthsites dataset</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-cleaning-the-healthsite-data">Task 5: Cleaning the Healthsite Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-classifying-the-healthsites">Task 6: Classifying the Healthsites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-add-digital-elevation-model">Task 7: Add Digital elevation model</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-adding-the-road-networks">Task 7: Adding the Road Networks</a></li>
 </ul>
   </nav></div>
 

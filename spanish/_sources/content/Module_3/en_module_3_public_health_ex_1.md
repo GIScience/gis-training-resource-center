@@ -244,11 +244,23 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
     width: 650 px
     ---
     :::
-    - 
+11.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
+    - A new window will open with. Here we need to specify the file location and the layer name. 
+    - Leave the `Format` on "GeoPackage".
+    - Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
+    - Enter the same name into `Layer name` field (This will be the name of the layer in the layers panel).
+    - Leave the rest as it is and click `Ok`.
 
 > Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer
 
 ### Task 5: Visualising the vaccination coverage
+
+:::{Admonition} Saving your progress
+:class: tip
+
+Remember to save your project intermittently to keep your progress. QGIS is constantly being developed by the open source community and is known to crash from time to time. 
+
+:::
 
 Now that we have the vaccination coverage information in our adm2-layer, we can visualise the information in order to understand the spatial distribution of the vaccination coverage. 
 ::::{margin}
@@ -256,6 +268,17 @@ Now that we have the vaccination coverage information in our adm2-layer, we can 
 QGIS offers various ways to [visualise vector data](/content/Module_4/en_qgis_styling_vector_data.md). If you want to learn more about these different methods, check out [module 4](/content/Module_4/en_module_4_overview.md).
 :::
 ::::
+
+::::{margin}
+:::{tip}
+You can move the properties window to the side so you can see the changes in symbology on your map canvas.
+:::
+::::
+12. Open the symbology tab via the Properties window for the layer: 
+    - <kbd>Right-click</kbd> on the `tcd_adm2_vacc_coverage`-layer → `Properties`. 
+    - Navigate to "Symbology" in the tab section on the left.
+    - Here we can change the symbology method from `Single Symbol` to `Categorized`.
+    - Next, we need to select the value which will be used for the classification. Under `Value`, select the column
 
 % ADD CLASSIFICATION STEPS AND RESULT IMAGE
 
@@ -306,6 +329,8 @@ When performing joins, pay attention to such inconsistencies.
 
 ### Task 5: Cleaning the Healthsite Data
 
+% This step is not necessary
+
 4. Let's take a look at the new layer by opening the attribute table. 
     - <kbd>Right-Click</kdd> on the layer and open the attribute table.
     - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
@@ -340,11 +365,13 @@ When performing joins, pay attention to such inconsistencies.
     - If you want, you can adjust the symbology for the classes by double clicking on one. 
     - Click `Apply`, then close the properties window. 
 
-% Optionally, add the osm roads dataset here. 
+% Also remove the NULL values from the categorisation
 
-## Task 7: Adding the Road Networks
+% Optionally, add DEM here and style the raster layer. This will be used for a overview map. 
 
-1. Import the roads dataset `
+### Task 7: Add Digital elevation model
+
+
 
 
 
