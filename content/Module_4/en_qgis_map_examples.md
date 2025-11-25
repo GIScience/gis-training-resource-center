@@ -243,37 +243,43 @@ Helpful information on how to create such a 3W map can be found [here](https://l
 
 ### 3W Map Creation
 
-1. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
-2. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
+1. Add all the relevant spatial data. Used in probably every instance:
+    - Administrative boundaries
+    - Affected areas with cholera case numbers
+    - Background map (OpenStreetMap is always a solid choice)
+2. Import the 3W Activity data
+    - Add the 3W dataset (mostly CSV or Excel)
+    - Ensure that it contains information about the organization, activity type, and location.
+3. Style the layers
+    - Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize cholera case numbers, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
+    - Add labels to the Admin 2 boundaries for clearer identification.   
+4. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
+5. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
     - The title (e.g. Sudanese Red Crescent Response)
     - The type of disaster or emergency
     - The geographic location of the disaster
     - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
-3. Add all the relevant spatial data. Used in probably every instance:
-    - Administrative boundaries
-    - Affected areas with cholera case numbers
-4. Import the 3W Activity data
-    - Add the 3W dataset (mostly CSV or Excel)
-    - Ensure that it contains information about the organization, activity type, and location.
-5. Style the layers
-    - Style the Admin 2 boundaries with cholera cases using a Graduated color ramp with Equal Interval
-    - Add Labels to Admin 2 boundaries
-    
-:::{Caution}
-Add labels and logos where needed, but avoid cluttering the map with too much text/information.
+
+:::{note}
+Multiple text boxes can be used to display the header in different font sizes, helping to clearly separate different layers of information. If all content should remain within a single label box, `Render as HTML` can be applied to format and style the text as needed.
 :::
 
 6. Add map elements
-    - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and sector colors 
+    - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and color schemes.
     - A scale bar 
     - A north arrow
     - Organizational logos (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
+    - Icons which describe the specific activity. These can also be added using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
     - A small overview map
 
 7. Areas of operation for each organization
     - Place the logos of each organization within the districts where they are active.
     - Add activity icons to indicate the specific types of work each organization is carrying out in those districts.
 
+:::{Caution}
+Add labels and logos where necessary, but avoid cluttering the map with excessive text or symbols. Arrange map elements by topic, importance, and visual hierarchy to maintain a clean and structured layout. Map items can be reordered in the __Item__ panel on the upper right side.
+:::
+
+:::{note}
 All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)
-
-
+:::
