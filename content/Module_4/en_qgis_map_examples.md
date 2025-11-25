@@ -243,8 +243,8 @@ Helpful information on how to create such a 3W map can be found [here](https://l
 
 ### 3W Map Creation
 
-1. Set up a new __Print Layout__. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
-2. Add a header
+1. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
+2. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
     - The title (e.g. Sudanese Red Crescent Response)
     - The type of disaster or emergency
     - The geographic location of the disaster
@@ -260,11 +260,12 @@ Helpful information on how to create such a 3W map can be found [here](https://l
     - Color coding to distinguish organizations or activity types
     - Labels where needed, but avoid cluttering the map with too much text
 6. Add map elements
-    - A legend explaining symbols and sector colors
-    - A scale bar
+    - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and sector colors 
+    - A scale bar 
     - A north arrow
-    - Organizational logos (e.g., IFRC, National Society)
+    - Organizational logos (e.g., IFRC, National Society) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
     - A small overview map
 
+All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)
 
 
