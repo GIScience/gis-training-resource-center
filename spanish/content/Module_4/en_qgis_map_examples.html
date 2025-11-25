@@ -783,19 +783,11 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 <section id="w-map-creation">
 <h3>3W Map Creation<a class="headerlink" href="#w-map-creation" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Set up a new <strong>Print Layout</strong>. Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.</p></li>
-<li><p>Add a header using the <img alt="" src="../../_images/30.30.2_print_layout_add_text.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Label</span></code>-tool. It should contain the following information:</p>
-<ul class="simple">
-<li><p>The title (e.g. Sudanese Red Crescent Response)</p></li>
-<li><p>The type of disaster or emergency</p></li>
-<li><p>The geographic location of the disaster</p></li>
-<li><p>The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.</p></li>
-</ul>
-</li>
 <li><p>Add all the relevant spatial data. Used in probably every instance:</p>
 <ul class="simple">
 <li><p>Administrative boundaries</p></li>
 <li><p>Affected areas with cholera case numbers</p></li>
+<li><p>Background map (OpenStreetMap is always a solid choice)</p></li>
 </ul>
 </li>
 <li><p>Import the 3W Activity data</p>
@@ -806,22 +798,32 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 </li>
 <li><p>Style the layers</p>
 <ul class="simple">
-<li><p>Style the Admin 2 boundaries with cholera cases using a Graduated color ramp with Equal Interval</p></li>
-<li><p>Add Labels to Admin 2 boundaries</p></li>
+<li><p>Apply a <strong>Graduated</strong> color ramp to the Admin 2 boundaries to visualize cholera case numbers, using <strong>Equal Interval</strong> classification. A suitable color ramp is <strong>Reds</strong>, with higher case counts displayed in darker shades and lower counts in lighter tones.</p></li>
+<li><p>Add labels to the Admin 2 boundaries for clearer identification.</p></li>
+</ul>
+</li>
+<li><p>Set up a new <strong>Print Layout</strong>. Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.</p></li>
+<li><p>Add a header using the <img alt="" src="../../_images/30.30.2_print_layout_add_text.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Label</span></code>-tool. It should contain the following information:</p>
+<ul class="simple">
+<li><p>The title (e.g. Sudanese Red Crescent Response)</p></li>
+<li><p>The type of disaster or emergency</p></li>
+<li><p>The geographic location of the disaster</p></li>
+<li><p>The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.</p></li>
 </ul>
 </li>
 </ol>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>Add labels and logos where needed, but avoid cluttering the map with too much text/information.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Multiple text boxes can be used to display the header in different font sizes, helping to clearly separate different layers of information. If all content should remain within a single label box, <code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">as</span> <span class="pre">HTML</span></code> can be applied to format and style the text as needed.</p>
 </div>
 <ol class="arabic simple" start="6">
 <li><p>Add map elements</p>
 <ul class="simple">
-<li><p>A legend <img alt="" src="../../_images/30.30.2_print_layout_add_legend.png" /> explaining symbols and sector colors</p></li>
+<li><p>A legend <img alt="" src="../../_images/30.30.2_print_layout_add_legend.png" /> explaining symbols and color schemes.</p></li>
 <li><p>A scale bar</p></li>
 <li><p>A north arrow</p></li>
 <li><p>Organizational logos (e.g., International Medical Corps, Relief International, International Rescue Committee) using the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code>-tool</p></li>
+<li><p>Icons which describe the specific activity. These can also be added using the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code>-tool</p></li>
 <li><p>A small overview map</p></li>
 </ul>
 </li>
@@ -832,7 +834,14 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 </ul>
 </li>
 </ol>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Add labels and logos where necessary, but avoid cluttering the map with excessive text or symbols. Arrange map elements by topic, importance, and visual hierarchy to maintain a clean and structured layout. Map items can be reordered in the <strong>Item</strong> panel on the upper right side.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>All the necessary information about the Print Layout Composer can be found <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html">here</a></p>
+</div>
 </section>
 </section>
 </section>
