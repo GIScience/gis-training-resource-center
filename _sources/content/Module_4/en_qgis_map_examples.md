@@ -251,20 +251,28 @@ Helpful information on how to create such a 3W map can be found [here](https://l
     - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
 3. Add all the relevant spatial data. Used in probably every instance:
     - Administrative boundaries
-    - Affected areas
+    - Affected areas with cholera case numbers
 4. Import the 3W Activity data
     - Add the 3W dataset (mostly CSV or Excel)
     - Ensure that it contains information about the organization, activity type, and location.
 5. Style the layers
-    - Different icons or shapes for different sectors (Health, Shelter, WASH, etc.)
-    - Color coding to distinguish organizations or activity types
-    - Labels where needed, but avoid cluttering the map with too much text
+    - Style the Admin 2 boundaries with cholera cases using a Graduated color ramp with Equal Interval
+    - Add Labels to Admin 2 boundaries
+    
+:::{Caution}
+Add labels and logos where needed, but avoid cluttering the map with too much text/information.
+:::
+
 6. Add map elements
     - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and sector colors 
     - A scale bar 
     - A north arrow
-    - Organizational logos (e.g., IFRC, National Society) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
+    - Organizational logos (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
     - A small overview map
+
+7. Areas of operation for each organization
+    - Place the logos of each organization within the districts where they are active.
+    - Add activity icons to indicate the specific types of work each organization is carrying out in those districts.
 
 All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)
 
