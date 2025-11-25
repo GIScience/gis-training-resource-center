@@ -214,3 +214,27 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 
 ::::
 
+## Creating a 3W Info-Map
+
+__Introduction:__
+
+A 3W info map is one of the most commonly requested products during the first month of an operation. __3W__ refers to __who, what, and where__, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.
+
+__What is needed:__
+
+- [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/)
+- QGIS
+- Access to 3W data
+
+__Getting the 3W data:__
+
+A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple Kobo survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into the GO Platform, which then can be used as the primary source for the 3W map.
+
+If no formal 3W data collection system is in place, information might need to be extracted from SitReps and other reports produced by the operation team. Focus first on identifying the following:
+
+- What response activities are the National Society involved in, and where?
+- What response activities are being done by IFRC operation, and where?
+- Key situation overview figures, such as number of people affected by the disaster, number of deaths or injuries, number of houses damaged, number of geographical units affected (all of these data points can be modified based on the context of the disaster). Make sure to note the data source you are using for key situation overview figures, and whenever possible to align the figures you are using to those used by the host National Society instead of using figures released by the media.
+- How many people or households are being reached by sectoral activities, and where?
+
+It is normal that the initial dataset is limited. The 3W map will evolve and expand as additional information comes in.
