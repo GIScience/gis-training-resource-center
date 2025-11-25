@@ -13,27 +13,27 @@ Vector data can have the following data formats:
 
 | Filename extension | Name                    | Description                                                                                                                                         |
 |--------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| .shp               | Shapefile               | Old but still widely used geodataformat. Can only contain one dataset. The file has to consist of at least three different files (.shp, .shx, .dbf) |
-| .gpkg              | GeoPackage              | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and not spatial data like tables)    |
-| .kml               | Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)                                                                          |
-| .gpx               | GPS Exchange Format     | Geodata format for the exchange of coordinates. For example for waypoints of tracks.                                                                |
-| .geojson           | GeoJSON                 | Similar to shapefiles, but stores all information in a single file.                                                                                 |
+| `.shp`               | Shapefile               | Outdated but still widely used geodataformat. Can only contain one dataset. A shapefile **must include** these files: `.shp`, `.shx`, and `.dbf`. It can also contain more files such as:  `.prj` , `.sbn`, `.sbx`, `.cpg`, `.qix` |
+| `.gpkg`              | GeoPackage              | Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and not spatial data like tables)    |
+| `.kml`               | Keyhole Markup Language | Geodata format for use with [Google Earth]( https://earth.google.com/web/)                                                                          |
+| `.gpx`               | GPS Exchange Format     | Geodata format for the exchange of coordinates. For example for waypoints of tracks.                                                                |
+| `.geojson`           | GeoJSON                 | Similar to shapefiles, but stores all information in a single file.                                                                                 |
 
 # Raster data 
 
 Raster data can have the following data formats:
 | Filename extension  | Name                  | Description                                                                                                                                                          |
 |---------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .tif/.tiff/.geotiff | Tag Image File Format | Common raster and image data format. Does not necessarily have georeferenced information. If a .tif file has georeferenced information it is referred to as GeoTIFF. |
-| .nc                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be be a raster file. Can contain multiple datasets                                           |
-| .asc                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |
+| `.tif`/`.tiff`/`.geotiff` | Tag Image File Format | Common raster and image data format. Does not necessarily have georeferenced information. If a .tif file has georeferenced information it is referred to as GeoTIFF. |
+| `.nc`                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets                                           |
+| `.asc`                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |
 
 ## Text data
 
  | Filename extension | Name                   | Description                                                                   |
  |--------------------|------------------------|-------------------------------------------------------------------------------|
- | .xls               | EXCEL                  | Data format used for EXCEL. EXCEL is a widely used spreadsheet program.       |
- | .csv               | comma-separated values | Very common data format which separates data with commas or other delimiters. |
+ | `.xls`               | EXCEL                  | Data format used for EXCEL. EXCEL is a widely used spreadsheet program.       |
+ | `.csv`               | comma-separated values | Very common data format which separates data with commas or other delimiters. |
 
 ## Good practices
 

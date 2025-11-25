@@ -50,7 +50,7 @@ __Articles Wiki pertinents__
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Automation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automation_wiki.html)
 
 :::
 

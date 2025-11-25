@@ -108,16 +108,14 @@ Download the data and project file for this exercise [here](https://nexus.heigit
 
 :::
 
-<!---Since the exercise is about finding data, there won't be any data to download. 
-Instead download the __[standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure)__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.-->
 
 ::::{dropdown} Standard folder structure
-```{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
 name: standard_folder_struc
 width: 500 px
 ---
 Standard folder structure. Source: HeiGIT
-```
+:::
 ::::
 
 ### Task 1: Download the administrative boundaries and healthsites for Pakistan 
@@ -160,10 +158,10 @@ Most datasets on HDX are available in various dataformats such as xlsx, csv, sha
 
 5. Download the data and save the **administrative boundaries** and the **healthsites** into the `data\input` folder.
 
-```{Note}
+:::{Note}
 Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
 polygons.
-```
+:::
 
 ::::{margin}
 :::{tip}
@@ -182,11 +180,11 @@ Most of the times, the datasets you download from the web are compressed as `.zi
 
 9. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
 
-```{Hint}
+:::{Hint}
 
 For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the __[attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)__ page on the wiki.
 
-```
+:::
 
 ### Task 2: Download the flood extent for Pakistan for August 2024
 
@@ -202,27 +200,3 @@ Shapefiles consist of several files (`.shp`, `.shx`, `.sbx`, `.sbn`, `.prj`, `cp
 
 :::
 
-<!---
-10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
-
-11. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
-
--->
-
-<!---
-### Result
-
-```{figure} /fig/en_result_data_sources_exercise.png
----
-width: 80%
-name: en_result_data_sources_exercise
----
-Your map could look like this when you have finished the exercise. 
-```
-
-The distribution of hospitals across Bolivia is uneven. It is noticeable that there are significantly less hospitals in the northern and eastern parts of Bolivia.
--->
-
-<!-- FIXME: if the aim of the exercise is to understand the distribution of hospitals
-   in Bolivia, this should be clear in the introduction so that people can understand
-   why they are performing the steps.  --> 

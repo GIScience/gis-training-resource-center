@@ -10,33 +10,22 @@
 
 **Competences:**
 
-In this chapter, you will learn what __geodata__ is, and understand the difference between __vector and raster 
-data__. Furthermore, this chapter explains the __layer concept__ of GIS-software, which is fundamental to every map 
-you will create. 
+In this chapter, you will learn what __geodata__ is, and understand the difference between __vector and raster data__. Furthermore, this chapter explains the __layer concept__ of GIS-software, which is fundamental to every map you will create. 
 
 ## What is geodata?
 
-Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data 
-refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented 
-in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information 
-(see {numref}`en_vector_raster`).
-GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. 
-There are two primary types of geographic data: **vector data and raster data**. Both types represent tangible or 
-intangible things in the real world. However, how they store this data is quite different. Because of this, the 
-manipulation and representation of these two types differs dramatically. Understanding the difference between these 
-two types, and how to work with each type on its own, as well as combining both types, will be one of the main skills you will acquire when learning GIS. 
+Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information (see {numref}`en_vector_raster`).GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. There are two primary types of geographic data: **vector data and raster data**. Both types represent tangible or intangible things in the real world. However, how they store this data is quite different. Because of this, the manipulation and representation of these two types differs dramatically. Understanding the difference between these two types, and how to work with each type on its own, as well as combining both types, will be one of the main skills you will acquire when learning GIS. 
 
-```{figure} /fig/en_vector_raster.png
+:::{figure} /fig/en_vector_raster.png
 ---
 width: 500px
 align: center
 name: en_vector_raster
 ---
 Raster / vector concept (Source: Adapted from [WikiMedia](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)).
-```
+:::
 
-What type of information can be stored in geodata is almost endless. It can hold information about the physical 
-world - such as:
+What type of information can be stored in geodata is almost endless. It can hold information about the physical world - such as:
 
 * elevation (height) data
 * environmental data (soils, climate, temperature, rainfall, information about 
@@ -44,9 +33,7 @@ weather events or natural phenomena, such as flooding extent)
 * data about the infrastructure, buildings, transportation, etc. 
 * sociocultural or economic data - such as demographic data, administrative boundaries, social events, crime, etc. 
 
-Geodata usually represents data entries as __geometries__ on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as 
-roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population 
-numbers, health indicators, historical events, etc. 
+Geodata usually represents data entries as __geometries__ on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population numbers, health indicators, historical events, etc. 
 
 
 ### Vector data
@@ -54,55 +41,53 @@ numbers, health indicators, historical events, etc.
 Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: __points, lines, or polygons__ (see {numref}`en_vector_data_overview`). A layer can only contain features with same type of geometry. 
 
 
-```{figure} /fig/en_vector_data_overview.png
+:::{figure} /fig/en_vector_data_overview.png
 ---
 width: 650px
 align: center
 name: en_vector_data_overview
 ---
 Vector data overview (Source: HeiGIT).
-```
+:::
 
 - Point data usually only has one set of coordinates per data entry (longitude, latitude and sometimes elevation, usually referred to as x, y, and z).
 - Lines are constructed by connecting multiple points which are saved as a single data entry.
 - Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.
 
 
-Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of 
-information ({numref}`en_geodata_example_2`). Which geometry is used depends on the type of data that is represented. For example, a road might be 
-represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.
+Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of information ({numref}`en_geodata_example_2`). Which geometry is used depends on the type of data that is represented. For example, a road might be represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.
 
 
-```{figure} /fig/en_geodata_example_2.png
+:::{figure} /fig/en_geodata_example_2.png
 ---
 name: en_geodata_example_2
 width: 700px
 ---
 Geographic information can be an address and/or GPS coordinates (Source: British Red Cross).
-```
+:::
 
 - Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see {numref}`Geodata_attribute_table_example`). 
 - Each row in the table will be one feature on the map, while each column will contain one attribute information (field). 
 - Multiple attributes can be associated to each feature. 
 
 
-```{figure} /fig/Geodata_attribute_table_example.png
+:::{figure} /fig/Geodata_attribute_table_example.png
 ---
 name: Geodata_attribute_table_example
 width: 750px
 ---
 A data table in Microsoft Excel with geographic information. (Source: British Red Cross).
-```
+:::
 
 {numref}`example_geometric_vs_attribute_view` shows the same dataset displayed both as its geometric representation and as an attribute table. 
 
-```{figure} /fig/example_geometric_and_attribute_view.png
+:::{figure} /fig/example_geometric_and_attribute_view.png
 ---
 name: example_geometric_vs_attribute_view
 width: 700 px
 ---
 Each polygon on the left represents one row (feature) on the right. (Source: British Red Cross).
-```
+:::
 
 #### Vector file formats
 
@@ -119,7 +104,7 @@ The following table gives a short description of commonly used vector file forma
 | `.gdb`      | Geodatabase            | Designed for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database. |
 
 
-```{note}
+:::{note}
 
 The different file formats have different use cases, as well as advantages or shortcomings. 
 
@@ -127,27 +112,24 @@ The different file formats have different use cases, as well as advantages or sh
 
 - __Geodatabase__ and __Geopackage__ are, unlike the other formats, databases. In GIS, databases store spatial data in structured, scalable systems that support multi-user access, complex queries, and large datasets, making them ideal for enterprise-level analysis and data management. Files, on the other hand, store data in individual, portable formats like Shapefiles, GeoJSON, or GeoPackage, which are easier to share and use offline but lack advanced querying capabilities and scalability.
 
-```
+:::
 
 #### Shapefile structure
 
 A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional (see {numref}`en_shapefile_structure`). In order to have a functioning shapefile, you need to have all the mandatory files in the same folder. 
 
-```{figure} /fig/en_shapefile_structure.png
+:::{figure} /fig/en_shapefile_structure.png
 ---
 name: en_shapefile_structure
 width: 400 px
 ---
 __SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry.  
-```
+:::
 
 
 ### Raster data
 
-Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with 
-rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for 
-example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite 
-imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
+Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographsor satellite imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
 
 Typical uses for raster data are: 
 
@@ -156,81 +138,78 @@ Typical uses for raster data are:
 * interpolated temperature data
 * population density
 
-The value of each cell is usually visualised by assigning a 
-color to a value. For elevation data, for example, a color ramp is usually used. For categorical data, such as 
-landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential). 
+The value of each cell is usually visualised by assigning a color to a value. For elevation data, for example, a color ramp is usually used. For categorical data, such as landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential). 
 
-::::{grid} 2
-:::{grid-item-card}
+:::::{grid} 2
+::::{grid-item-card}
 
-```{figure} /fig/raster_data_example_corine_LC.png
+:::{figure} /fig/raster_data_example_corine_LC.png
 ---
 name: raster_data_example_corine_LC
 width: 350 px
 align: left
 ---
 The Copernicus CORINE Landcover Dataset (Source: [EEA/Copernicus](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7)).
-```
-
 :::
 
-:::{grid-item-card}
+::::
 
-```{figure} /fig/NASADEM_Alps_example.png
+::::{grid-item-card}
+
+:::{figure} /fig/NASADEM_Alps_example.png
 ---
 name: NASADEM_Alps_example
 width: 300 px
 ---
 The NASA DEM showing the alps (Source: [NASA/USGS/JPL-CALTECH](https://lpdaac.usgs.gov/products/nasadem_hgtv001/)).
-```
-
 :::
-::::
 
-Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite 
-imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.
+::::
+:::::
+
+Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.
 
 The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In {numref}`en_quality_raster`, you can see two raster datasets with different resolutions.
 
-```{figure} /fig/en_quality_raster.png
+:::{figure} /fig/en_quality_raster.png
 ---
 width: 800px
 align: center
 name: en_quality_raster
 ---
 Two raster datasets with different resolution covering the same region. (Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)).
-```
+:::
 
 In {numref}`Vector` and {numref}`Raster` you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.
 
 
-::::{grid} 2
-:::{card} Vector
+:::::{grid} 2
+::::{card} Vector
 
-```{figure} /fig/en_same_location_vector.png
+:::{figure} /fig/en_same_location_vector.png
 ---
 width: 400px
 name: Vector
 align: center
 ---
 Features represented with vector data. (Source: British Red Cross).
-```
-
 :::
 
-:::{card} Raster
+::::
 
-```{figure} /fig/en_same_location_raster.png
+::::{card} Raster
+
+:::{figure} /fig/en_same_location_raster.png
 ---
 width: 400px
 name: Raster
 align: center
 ---
 The same location represented as a raster image. (Source: British Red Cross).
-```
-
 :::
+
 ::::
+:::::
 
 #### Raster data formats
 
@@ -242,36 +221,30 @@ Raster data can have the following data formats:
 |`.nc`|netCDF|Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets|
 |`.asc`|Esri ASCII Grid files|Old, simple raster file format, always with georeferenced data|
 
-```{admonition} The advantage of geodatabases
+:::{admonition} The advantage of geodatabases
 
 Databases such as Geodatabase (`.gdb`) or Geopackage (`gkpg`) can also hold raster layers.
 
-```
+:::
 
 ----
 
 
 ## The layer concept
 
-GIS software helps us visualise geographic data. It does so by displaying the geometries or raster cells on a 2D 
-canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such 
-as raster data, polygons, points, or lines, is usually stored inside a __layer__. Each layer consists of geographic 
-objects of the same type (line, polygon, raster, ...). GIS software displays these layers on top of each other and 
-let's you rearrange the order of these layer, in order to create insightful maps (see {numref}`en_layer`).
+GIS software helps us visualise geographic data. It does so by displaying the geometries or raster cells on a 2D canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such as raster data, polygons, points, or lines, is usually stored inside a __layer__. Each layer consists of geographic objects of the same type (line, polygon, raster, ...). GIS software displays these layers on top of each other and let's you rearrange the order of these layer, in order to create insightful maps (see {numref}`en_layer`).
 
 
-By adding different layers, you build your map and can combine information from 
-different sources. With those, you can then perform analyses or adapt the 
-representation by using symbols and colors. 
+By adding different layers, you build your map and can combine information from different sources. With those, you can then perform analyses or adapt the representation by using symbols and colors. 
 
-```{figure} /fig/en_layer.png
+:::{figure} /fig/en_layer.png
 ---
 width: 800px 
 align: center
 name: en_layer
 ---
 Layers in a GIS (Source: [CartONG](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)).
-```
+:::
 
 
 ::::{admonition} Now it's your turn!
@@ -294,19 +267,13 @@ Before you can start creating maps in QGIS, you will need to load your data into
 
 ### Vector data import
 
-Typical vector data formats are Shapefile (`.shp`) and GeoPackage (`.gpkg`). 
-The process of importing vector data in either of the two formats is the same. 
+Typical vector data formats are Shapefile (`.shp`) and GeoPackage (`.gpkg`). The process of importing vector data in either of the two formats is the same. 
 
-QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply 
-drag the data files you want to add from your file browser into the QGIS window. Another 
-method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source 
-Manager with the keyboard-shortcut <kbd>CTRL + L</kbd>. 
+QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply drag the data files you want to add from your file browser into the QGIS window. Another method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source Manager with the keyboard-shortcut <kbd>CTRL + L</kbd>. 
 
-```{Note}
-GeoPackage files can contain multiple datasets and even whole QGIS projects. 
-When you load a GeoPackage in QGIS, a window will appear where you can select 
-the datasets you want to load.
-```
+:::{Note}
+GeoPackage files can contain multiple datasets and even whole QGIS projects. When you load a GeoPackage in QGIS, a window will appear where you can select the datasets you want to load.
+:::
 
 #### Open vector data via the Data Source Manager
 
@@ -316,9 +283,9 @@ the datasets you want to load.
 3. Select the file and click `Open`. More options will appear. In most cases, you can leave these options as they are.
 4. Back in QGIS click `Add`
 
-```{Attention}
+:::{Attention}
 QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data files before importing them into QGIS.
-```
+:::
 
 :::{dropdown} Video: Importing vector data via the Data Source Manager
 
@@ -342,54 +309,38 @@ In your GIS-career, you will come across geodata in the  format of delimited tex
 
 #### Open Delimited Text Layer 
 
-```{Tip}
-To load data from spreadsheets such as Comma Separated Value (`.csv`) or 
-Excel (`.xlsx`), the datasets need to have columns containing geometry - this is 
-most often in the form of latitude (Y field) and longitude (X field), but might 
-also be in other formats, such as WKT. In this case, you can also have complex 
-geometries in your delimited text file.  
-```
+:::{Tip}
+To load data from spreadsheets such as Comma Separated Value (`.csv`) or Excel (`.xlsx`), the datasets need to have columns containing geometry - this is most often in the form of latitude (Y field) and longitude (X field), but might also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  
+:::
 
-```{figure} /fig/en_import_delimeted_text.png
+:::{figure} /fig/en_import_delimeted_text.png
 ---
 width: 600px 
 align: center
 name: en_import_delimeted_text
 ---
 Import delimited text in QGIS 3.36.
-```
+:::
 
 1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
-2. Click on `File name` click on the three points ![](/fig/Three_points.png) and 
-   navigate to your CSV file and click `Open`.
-3. `File Format`: Here you can specify which delimiter is used in the file you 
-   want to import. In a standard CSV file, commas `,` are used. If this is not the 
-   case, select `Custom delimiters`. Here you can choose the exact delimiter 
-   used in your file. 
+2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your CSV file and click `Open`.
+3. `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas `,` are used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
 
-```{Tip}
-To find out which delimiter is used you can open your .csv file in Notepad or 
-Excel. There you can check which delimiter is used to separate the information.
-```
+:::{Tip}
+To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+:::
 
-```{figure} /fig/en_delimited_text_fileformat.png
+:::{figure} /fig/en_delimited_text_fileformat.png
 ---
 width: 600px
 align: center
 name: en_delimited_text_fileformat
 ---
 Adjusting the file format parameters while importing a delimited text layer into QGIS.
-```
+:::
 
-4. `Geometry definition`: In this section, you specify which columns of the file 
-   contain the spatial information to georeference the data on the map. If the 
-   file has a column containing __latitude__ and another with __longitude__ data, 
-   you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. 
-   Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
-5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, 
-   QGIS will select the CRS of the project. 
-   If the file does not have spatial information choose the option `No geometry 
-   (attribute only table)`.
+4. `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
+5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option `No geometry (attribute only table)`.
 6. Click `Add`
 
 :::{dropdown} Video: Opening delimited text files in QGIS
@@ -400,15 +351,13 @@ Adjusting the file format parameters while importing a delimited text layer into
 
 ### Raster data import
 
-The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster files 
-onto your QGIS window, or open then through the "Data Source Manager".
+The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster files onto your QGIS window, or open then through the "Data Source Manager".
 
 
 :::{dropdown} Video: Open raster data via the Data Source Manager
 
 1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`
-2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
-   raster file
+2. Click on the three points ![](/fig/Three_points.png) and navigate to your raster file
 3. Select the file and click `Open`
 4. Back in QGIS click `Add` 
 
@@ -430,12 +379,82 @@ onto your QGIS window, or open then through the "Data Source Manager".
 Check whether you know the key concepts from this chapter by answering the questions below.
 
 1. __Define Geodata. What does it distinguish from regular tabular data?__
+
+:::{dropdown} Answer
+Geodata, or spatial data, refers to information that is associated with a specific location on the Earth's surface. It includes both the geometry (the spatial component) and the attributes (the descriptive data). Unlike regular tabular data, which consists solely of rows and columns without any spatial reference, geodata has a geographic component that allows it to be mapped and analyzed in a spatial context.
+:::
+
 2. __What are the two main types of geodata and how do they store information?__
+
+:::{dropdown} Answer
+The two main types of geodata are: 
+- Vector Data: Represents geographic features using points, lines, and polygons. Each feature has associated attribute data stored in a table. Common formats include Shapefile (.shp), GeoPackage (.gpkg), and GeoJSON (.geojson).
+- Raster Data: Represents geographic data as a matrix of cells (pixels), each with a value representing information, such as temperature or elevation. Common formats include GeoTIFF (.tif), JPEG2000 (.jp2), and Esri ASCII Grid (.asc).
+
+:::
+
 3. __Give examples of real‑world phenomena or features that are better represented as vector data vs. raster data.__
+
+:::{dropdown} Answer
+__Vector Data:__ Suitable for representing discrete features with well-defined boundaries, such as
+   - Administrative boundaries (countries, districts)
+   - Roads and rivers
+   - Land parcels
+   - Buildings and infrastructure
+__Raster Data:__ Suitable for continuous data that varies across space, such as
+   - Satellite imagery
+   - Elevation models (e.g, Digital Elevation Models or Terrain models)
+   - Temperature or precipitation maps
+   - Land cover classification
+:::
+
 4. __Describe the structure of a shapefile. What mandatory component files must accompany it?__
+
+:::{dropdown} Answer
+
+A Shapefile is a widely used vector data format that consists of at least three mandatory component files:
+- `.shp`: Contains the geometry data (points, lines, or polygons).
+- `.shx`: Contains the shape index data, enabling fast spatial queries.
+- `.dbf`: Contains attribute data in a tabular format, corresponding to each geometry.
+
+It can also contain additional files such as `.prj`. These files together, which share a name, make up the shapefile
+:::
+
 5. __Explain the concept of a “layer” in GIS. Why do GIS systems use layers when building maps?__
+
+:::{dropdown}
+In GIS, a layer is a collection of geographic data representing a specific type of information, such as roads, rivers, or land use. Layers are stacked on top of each other to create a comprehensive map. Using layers allows for:
+- __Organized data management__: Each layer can be edited or analyzed independently.
+- __Clear visualisation__: Different types of data can be styled and displayed separately.
+- __Efficient analysis__: Layers can be turned on or off to focus on specific aspects of the data.
+:::
+
 6. __Do you know how to import vector data into a QGIS project?__
+
+:::{dropdown} Answer
+Vector data can be imported into a QGIS project by:
+- In the top bar, use the `Layer` menu → `Add vector layer`.
+- Dragging and dropping the vector file directly into the QGIS map canvas.
+:::
+
 7. __Where are the layers imported into a QGIS project saved?__
+
+:::{dropdown} Answer
+The layers are not stored inside of a QGIS project. When layers are imported into a QGIS project, they are not moved or copied. Instead, QGIS stores the path to the data source in the project file (.qgz). If the data source is moved or deleted, QGIS will not be able to locate it unless the path is updated. 
+Additionally, manipulating the layer will change the original dataset.
+:::
+
+
 8. __If you have a `.csv` file or another delimited text file, what information must it contain in order to import it into QGIS as a point layer?__
+
+:::{dropdown} Answer
+To import a `.csv` or delimited text file as a point layer in QGIS, the file must:
+- Contain a header row with field names
+- Include at least two columns representing X (longitude) and Y (latitude) coordinates.
+- Ensure that the coordinate values are numeric and correctly formatted.
+
+QGIS uses the coordinate columns to plot the points on the map canvas.
+
+:::
 
 ::::

@@ -48,7 +48,7 @@ __Relevant Wiki Articles__
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Automation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automation_wiki.html)
 
 :::
 
@@ -143,51 +143,53 @@ In this task, you will help Aina build a simple version of that model using the 
        - In the **Advanced panel**, set **geometry type** to `Polygon`
    - These will appear at the top of your model canvas and serve as the input data when the model is run.
 
-     ```{tip}
+     :::{tip}
      All inputs should be set as **mandatory**, so the model always receives the necessary data to run correctly.
-     ```
+     :::
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Input Cyclon Track
-```{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
+::::{tab-item} Input Cyclon Track
+:::{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
 ---
 width: 600px
 align: center
 ---
 Definition of the model input: Cyclon Track
-```
 :::
+::::
 
-:::{tab-item} Input Admin Boundaries 
-```{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
+::::{tab-item} Input Admin Boundaries 
+:::{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
 ---
 width: 600px
 align: center
 ---
 Definition of the model input: Admin Bounderies
 :::
+::::
 
-:::{tab-item} Population Raster
-```{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
+::::{tab-item} Population Raster
+:::{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
 ---
 width: 600px
 align: center
 ---
 Definition of the model input: Population Raster
-```
 :::
 ::::
+:::::
+
 **Intermediate Result**
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Résultat intermédiaire de la définition des données d'entrée du modèle
-```
+:::
 
 5. **Reproject the cyclone track to EPSG:29738**  
    - From the **Algorithms** panel, search for **Reproject Layer** .
@@ -197,14 +199,14 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
      - Set **Target CRS** to `EPSG:29738 – Madagascar / Laborde Grid`.
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
+:::{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Reprojecter la couche de trajectoire du cyclone vers un système de référence de coordonnées métrique (CRS) EPSG : 29738
-```
+:::
 6. **Buffer the reprojected cyclone track**  
    - From the **Algorithms** panel, search for **Buffer**.
    - In the configuration window:
@@ -216,14 +218,14 @@ Reprojecter la couche de trajectoire du cyclone vers un système de référence 
      - Set **Dissolve result** to `Yes`.
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
+:::{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Mettre en mémoire tampon la couche Cyclone reprojetée
-```
+:::
 7. **Reproject the buffer back to EPSG:4326**  
    - From the **Algorithms** panel, search for **Reproject Layer**.
    - In the configuration window:
@@ -233,14 +235,14 @@ Mettre en mémoire tampon la couche Cyclone reprojetée
      - Set **Target CRS** to `EPSG:4326 – WGS 84`.
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
+:::{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Reprojecter le tampon vers EPSG:4326
-```
+:::
 8. **Clip the population raster using the buffered area**  
    - From the **Algorithms** panel, search for **Clip Raster by Mask Layer** .
    - In the configuration window:
@@ -250,14 +252,14 @@ Reprojecter le tampon vers EPSG:4326
      - Set **Mask layer** to the output from the previous step (from **Algorithm Output**).
      - Set the output to **Model Output** (leave the output name **empty**).
    - Click **OK** to add the step to the model.
-```{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
+:::{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Découper la couche raster de population pour l'étendre au tampon Cyclon
-```
+:::
 9. **Calculate zonal statistics to estimate exposed population**  
    - From the **Algorithms** panel, search for **Zonal Statistics** .
    - In the configuration window: Calcul de la population exposée aux cyclones par district
@@ -271,25 +273,25 @@ Découper la couche raster de population pour l'étendre au tampon Cyclon
       exposed_population_sum
       ```
    - Click **OK** to add the step to the model.
-```{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
+:::{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Calcul de la population exposée aux cyclones par district
-```
+:::
 
 **Your results should look something like this:** 
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement connectés et la sortie du modèle est définie.
-```
+:::
 
 10. **Validate your model (recommended)**
    - Before saving or running, click the ✔️ **Validate Model** button in the top toolbar.
@@ -306,24 +308,24 @@ Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement
 
 You can now run this model any time a new cyclone track becomes available.
 
-```{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
+:::{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Pour exécuter le modèle, spécifiez l'entrée comme indiqué dans l'image et définissez le nom de la couche de sortie.
-```
+:::
 
 **Your results should look something like this:**
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 
-``` 
+::: 
 12. **Add the cyclone buffer as an additional model output**  
    - Double-click on the algorithm from step 7 (**Reproject the buffer back to EPSG:4326**) to open its configuration.  
    - In the **Output layer** field, check the box for **Model Output**.  
@@ -334,13 +336,13 @@ align: center
    - Click **OK** to save the change.  
    - This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.
 
-```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
+:::{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
-```
+:::
 
 13. **Run the model again**  
    - Run the model by clicking on `Model` -> `Run Model`
@@ -351,40 +353,40 @@ align: center
    - Set the model output **exposed_population_sum** to `Harald_Exposed_Population`and save it in the `data` -> `output`
 
 
-::::{tab-set}
+:::::{tab-set}
 
 
-:::{tab-item} Graphic Modler Output Buffer 
+::::{tab-item} Graphic Modler Output Buffer 
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
-```
+:::
 Definition of the model input: Admin Bounderies
-:::
-
-:::{tab-item} Run Model with Buffer Output
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
----
-width: 600px
-align: center
----
-Definition of the model input: Population Raster
-```
-:::
-
-:::{tab-item} Model Output
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
----
-width: 600px
-align: center
----
-Definition of the model input: Population Raster
-```
-:::
-
 ::::
+
+::::{tab-item} Run Model with Buffer Output
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Population Raster
+:::
+::::
+
+::::{tab-item} Model Output
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
+---
+width: 600px
+align: center
+---
+Definition of the model input: Population Raster
+:::
+::::
+
+:::::
 

@@ -82,42 +82,42 @@ Save the folder on your computer and unzip the file. The zip folder includes:
 - `som_ppp_2020_UNadj_constrained.tif` : [Worldpop Population Counts Somalia ](https://hub.worldpop.org/geodata/summary?id=28892)
 - `Somalia_malnutrion_district_2022_2023.xlsx`:[Somalia: Acute Malnutrition](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)
 
-```{Hint}
+:::{Hint}
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
-```
+:::
 
 1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healthsites Somalia (`WHO_health_sites.shp) into QGIS.
 
 2. Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  __Healthsites Somalia__ into EPSG 4326. Use the tool `Reproject layer` for this process. See the Wiki entry on __Projections__ for further information.
 
-```{Attention}
+:::{Attention}
 Before you start doing any GIS operations, __always explore the data__. Always check if the projections of the different layers are the same.
-```
+:::
 
 3. In order to bring the information of the health sites point layer into a usable indicator value we can now count the health sites per district. We can use the tool __Count points in polygon__ from the Processing Toolbox. Take a look on the tools description and the further features it brings. For our task we only have to specify polygon and point input layer, the count field name (e.g. __Num_healtsites__) and choose name and directory of the output layer. Explore the output.
 
-```{figure} /fig/Count_points_polygon.PNG
+:::{figure} /fig/Count_points_polygon.PNG
 ---
 width: 100%
 name: count_points_polygon
 ---
-Count healthsites per district
-```
+Cont healthsites per district
+:::
 
 4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
 
 
-```{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
 ---
 width: 100%
 name: czonal_statistics
 ---
-Summarise population counts per district
-```
+Summarising population counts per district.
+:::
 
-```{Hint}
+:::{Hint}
 Throughout the indicator processing process you will have several interim results. Make sure to save them in a "temp" folder.
-```
+:::
 
 5. Now we know the numbers of health sites and the number of population per district. We are ready to calculate our final indicator __Number of health sites per 10.000 inhabitants. 
 * Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
@@ -133,13 +133,13 @@ Throughout the indicator processing process you will have several interim result
 
 * When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
-```{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
 ---
 width: 80%
 name: Field Calculator
 ---
-Calculate health sites per 10000 inhabitants
-```
+Calculating health sites per 10000 inhabitants.
+:::
 
 #### Land Degradation
 
@@ -147,13 +147,13 @@ A very important factor for areas vulnerable to drought is the level of land deg
 
 -[Somalia Land degradation](https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/)
 
-```{figure} /fig/land_degradation.PNG
+:::{figure} /fig/land_degradation.PNG
 ---
 width: 60%
 name: land_degradation
 ---
-Land Degradation
-```
+Land Degradation.
+:::
 
 You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in "Modul_5_Ex1_Part_1\land_degradation_somalia".
 
@@ -162,20 +162,18 @@ Explore the data. We have a column "LandD_CLas" which indicators the severity of
 * Open the tool `Join attributes by location` from the Processing Toolbox.
 * define `Input Layer` (layer you want to enrich) and `Join Layer` (dataset with the additional information)
 * select `intersects` as geometric predicate and add only the `LandD_class` as field to add to our base layer.
-* as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`
-* Save as Layer
+* as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`.
+* Save as Layer.
 
 See the Wiki entry [Spatial Joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html) for further information.
 
-
-
-```{figure} /fig/en_qgis_modul_5_ex1_join.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_join.PNG
 ---
 width: 100%
 name: Join attributes by location
 ---
-Join Attributes by Location
-```
+Joining Attributes by Location.
+:::
 
 
 #### Malnutrition
@@ -187,35 +185,34 @@ Download the data we need:
 
 Explore the data. In which resolution is the data available? Do you have ideas as to how we can add it to our indicator dataset?
 
-*Save the Excel file as a CSV by clicking on `Save file as` and choosing `CSV (delimiter-separated)`
+* Save the Excel file as a CSV by clicking on `Save file as` and choosing `CSV (delimiter-separated)`.
+* Load the CSV file into you QGIS by drag and drop.
+* Open the tool `Join attributes by field value` from the Processing Toolbox.
+ * specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`).
+* as `join type` set `Take attributes of the first matching feature only (one-to-one)`.
+* Save the layer to file.
 
-* Load the CSV file into you QGIS by drag and drop
-* Open the tool `Join attributes by field value` from the Processing Toolbox
- * specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`)
-* as `join type` set `Take attributes of the first matching feature only (one-to-one)`
-* Save the Layer to File
-
-```{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
 ---
 width: 100%
 name: Join attributes by field value
 ---
-Join attributes by field value
-```
+Joining attributes by field value.
+:::
 
-In the Log file you will get a message: "6 feature(s) from input layer could not be matched"
+In the Log file you will get a message: "6 feature(s) from input layer could not be matched".
 
-``` {Attention}
+:::{Attention}
 It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have "field 1", "field 2" etc.) after importing. In this case, the correct field names is usually located below the header.
-```
+:::
 
-```{figure} /fig/en_qgis_module_5_ex1_error.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_error.PNG
 ---
 width: 100%
 name: Join attributes by field value
 ---
-Log File Join Attribute by Field Value
-```
+The Log File for the Join Attribute by Field Value algorithm.
+:::
 
 Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on `affunderfive` and bring `NULL` Values to the top. Check the joining attribute "ADM2_EN" and compare it with the joining attribute "adm2name" from the CSV file.
 The Spelling of the district names differs. Since we are using the admin-2-boundaries as the base layer for all indicators, we can now adapt the names in the CSV file. 
@@ -234,13 +231,13 @@ In the second part of the exercise we will showcase the steps how to come from i
 You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
 Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:
 
-```{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
+:::{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
 ---
 width: 80%
 name: Indicators Risk Assessment
 ---
 Indicators Risk Assessment
-```
+:::
 
 #### 1. Normalisation
 
@@ -250,8 +247,8 @@ $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
 
 * Open the attribute table of “vulnerability_districts” and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
-* start with the first indicator `LandD_class`
-* define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
+* Start with the first indicator `LandD_class`.
+* Define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
 * Now we will calculate in the expression field the normalisation of the indicator:
 
 ```md
@@ -259,15 +256,15 @@ $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```
 * When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
-```{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
 ---
 width: 80%
 name: Join attributes by field value
 ---
-Normalisation of indicators
-```
+Normalisation of indicators.
+:::
 
-* Repeat this step for the other indicators
+* Repeat this step for the other indicators.
 * For each indicator you have now the original column and the normalised column. 
 
 #### 2. Directions 
@@ -290,9 +287,9 @@ The second formula inverts the value $(1 - value)$ before applying the weight, r
 
 We will not go further into this in this module but you can find more information [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk).
 
-```{Hint}
+:::{Hint}
 It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).
-```
+:::
 
 
 #### 3. Weighting of Indicators
@@ -318,23 +315,23 @@ We have used so far the following weighting scale:
 ```
 
 
-```{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
 ---
 width: 80%
 name: Add new field to weight indicators
 ---
-Add new field to weight indicators
-```
+Adding new field to weight indicators.
+:::
 
 * For each indicator we now have the normalised and weighted version:
 
-```{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
 ---
 width: 100%
 name: Attribute Table with "_norm" and "_weighted" indicators
 ---
-Attribute Table with "_norm" and "_weighted" indicators
-```
+Attribute Table with "_norm" and "_weighted" indicators.
+:::
 
 #### 4. Vulnerability Score / Index
 
@@ -351,26 +348,27 @@ We are now ready to calculate the vulnerability score for each district:
 
 In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.
 
-* Right click om one of the layer and select `Properties` -> Go the `Joins` tab
+* Right click om one of the layer and select `Properties` -> Go the `Joins` tab.
 * Click on the `+` button, add a new join and select the layer you want to join. Define "admin2Name" as `Join Field`:
 
-```{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
 ---
 width: 90%
 name: Join Layers 
 ---
-Join Layers by Join Field
-```
+Joining Layers by Join Field.
+:::
+
 * Right click on the layer -> `Export` -> `Save feature as` and save the layer as "risk" layer into your temp folder.
 * We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
 
-```{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
 ---
 width: 70%
 name: Risk Layer Attribute Table normalised Scores
 ---
-Risk Layer Attribute Table normalised Scores
-```
+Risk Layer Attribute Table normalised Scores.
+:::
 
 #### 6. Risk Calculation
 
@@ -390,43 +388,43 @@ sqrt("Susceptibility" * "exposure_norm")
 
 ```
 
-```{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
+:::{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
 ---
 width: 80%
 name: Calculate risk 
 ---
 Risk Calculation
-```
+:::
 
-```{Note}
+:::{Note}
 The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it is the cube root, and so on.
-```
+:::
+
 #### 6. Visualisation of the Results
 
 
-* Right click on the “risk” layer -> `Properties` -> `Symbology`
-* In the down left corner click on `Style` -> `Load Style`
+* Right click on the “risk” layer -> `Properties` -> `Symbology`.
+* In the down left corner click on `Style` -> `Load Style`.
 * In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “Map Template” folder and select the file __“somalia_risk_assessment_style.qml”__.
-* Click `Open`. Then click on `Load Style`
-* Back in the “Layer Properties” Window click `Apply` and `OK`
+* Click `Open`. Then click on `Load Style`.
+* Back in the “Layer Properties” Window click `Apply` and `OK`.
 
 
 Print Layout:
 
 * Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
-* Go the the `Ex_Part_2` folder and drag and drop the file `maps_somalia_template_risk_assessment.qpt` in the print layout
+* Go the the `Ex_Part_2` folder and drag and drop the file `maps_somalia_template_risk_assessment.qpt` in the print layout.
 * Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
 * If necessary, adjust the legend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
 * Remove all items in the legend be clicking on the item and then on the red minus icon below.
-
-    
-```{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
+ 
+:::{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
 ---
 width: 90%
 name: Possible Map Result
 ---
-Possible Map Result
-```
+Possible Map Result.
+:::
     
 
 

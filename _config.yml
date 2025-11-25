@@ -23,9 +23,9 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/GIScience/gis-training-resource-center  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/GIScience/gis-training-resource-center
+  path_to_book: content
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -36,7 +36,11 @@ html:
       <script data-goatcounter="https://gtrc.goatcounter.com/count"
       async src="//gc.zgo.at/count.js"></script>
       <p>
-      This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>, except where otherwise noted. Figures are subject to their original copyright and are not covered by this license.
+      This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
       </p>
   announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
-exclude_patterns: [.venv/*]
+exclude_patterns: [.venv/*, venv/*]
+
+sphinx:
+  extra_extensions:
+    - custom-launch-buttons

@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: content/intro
+root: content/intro.md
 options:  # The options key will be applied to all chapters, but not sub-sections
 parts:
   - caption: Modules
@@ -25,7 +25,7 @@ parts:
           - file: content/Module_2/en_qgis_module_2_exercises.md
       - file: content/Module_3/en_module_3_overview.md
         sections:
-          - file: content/Module_3/en_qgis_digitalisation.md
+          - file: content/Module_3/en_qgis_digitisation.md
           - file: content/Module_3/en_qgis_data_queries.md
           - file: content/Module_3/en_qgis_data_classification.md
           - file: content/Module_3/en_qgis_georeferencing.md
@@ -78,6 +78,7 @@ parts:
           - file: content/Exercise_tracks/fr_mdg_aa_cyclones.md
   - caption: Wiki
     chapters:
+      - file: content/Wiki/en_wiki_homepage.md
       - file: content/Wiki/en_qgis_qgis_basics_wiki.md
         sections:
           - file: content/Wiki/en_qgis_installation_wiki.md
@@ -114,9 +115,7 @@ parts:
       - file: content/Wiki/en_qgis_raster_wiki.md
         sections:
           - file: content/Wiki/en_qgis_raster_basic_wiki.md
-      - file: content/Wiki/en_qgis_automatisation_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_model_builder_wiki.md
+      - file: content/Wiki/en_qgis_automation_wiki.md
       - file: content/Wiki/en_qgis_representation_wiki.md
         sections:
           - file: content/Wiki/en_qgis_visualisation_wiki.md
@@ -143,6 +142,7 @@ parts:
       - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md
         sections:
           - file: content/GIS_AA/en_qgis_generate_indicators_for_plugin.md
+          - file: content/GIS_AA/en_gaia_indicators_processing.md
       - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
         sections:
           - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md

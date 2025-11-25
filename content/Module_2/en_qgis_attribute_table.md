@@ -8,36 +8,28 @@
 
 # Attribute Table
 
-Each vector layer consists of geometric features (points, lines or polygons) and 
-an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature 
-in the layer. The information is stored in rows and columns in the attribute table. 
-Each __row__ in the table represents a __feature__, while __columns__ store 
-__attributes__ of that feature. You can use the attribute table to search, sort, 
-filter, edit and select data. 
+Each vector layer consists of geometric features (points, lines or polygons) and an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store __attributes__ of that feature. You can use the attribute table to search, sort, filter, edit and select data. 
 
 
-```{figure} /fig/en_vector_data_overview.png
+:::{figure} /fig/en_vector_data_overview.png
 ---
 width: 600px
 align: center
 name: en_vector_data_overview
 ---
 Vector Data overview (Source: HeiGIT).
-```
+:::
 
 :::{admonition} Now it's your turn!
 :class: note
 
-You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you 
-will always have to understand the information stored in the datasets, both the geometries as well as the attribute 
-data. 
+You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you will always have to understand the information stored in the datasets, both the geometries as well as the attribute data. 
 
 :::
 
 ## Opening the attribute table
 
-Having a look into the attribute table is essential to understand and get an overview of the 
-data you are working with. After downloading and import a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
+Having a look into the attribute table is essential to understand and get an overview of the data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
 
 You can open the attribute table in two ways:
 
@@ -51,32 +43,31 @@ You can also use the shortcut <kbd>F6</kbd> (in some cases <kbd>Fn</kbd> + <kbd>
 
 1. Right click on a layer in the Layers panel and select `Open Attribute Table` ({numref}`en_attributetable_right_click`). 
 
-```{figure} /fig/en_attributetable_right_click.png
+:::{figure} /fig/en_attributetable_right_click.png
 ---
 height: 500px
 align: center
 name: en_attributetable_right_click
 ---
 Opening the attribute table via right-click in QGIS 3.36
-```
+:::
 
 2. Select a layer in the Layers panel and click on the attribute table symbol in the toolbar ({numref}`en_attributetable_top_right`). 
 
-```{note} 
+:::{note} 
 
-If you have multiple layers, only the attribute table of the layer currently 
-selected in the layer panel will open. 
+If you have multiple layers, only the attribute table of the layer currently selected in the layer panel will open. 
 
-```
+:::
 
-```{figure} /fig/en_attributetable_top_right.png
+:::{figure} /fig/en_attributetable_top_right.png
 ---
 height: 500px 
 align: center
 name: en_attributetable_top_right
 ---
 Opening the attribute table in QGIS 3.36
-```
+:::
 
 :::{dropdown} Buttons of the attribute table
 :open:
@@ -114,37 +105,35 @@ Opening the attribute table in QGIS 3.36
 
 ## Sort the attribute table
 
-You can sort data in the attribute table by clicking on a column header. Text data will 
-be sorted alphabetically and numeric data will be sorted by value. To reverse 
-the sort order, click the header again. A small arrow in the column header 
-indicates whether it is sorted in ascending or descending order. 
+You can sort data in the attribute table by clicking on a column header. Text data will be sorted alphabetically and numeric data will be sorted by value. To reverse the sort order, click the header again. A small arrow in the column header indicates whether it is sorted in ascending or descending order. 
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
-::::{grid} 2
-:::{grid-item-card} 
+:::::{grid} 2
+::::{grid-item-card} 
 
-```{figure} /fig/en_ascending.png
+:::{figure} /fig/en_ascending.png
 ---
 width: 300px
 name: en_ascending
 ---
 Attribute table sorted ascendingly. 
-```
-
 :::
 
-:::{grid-item-card}
+::::
 
-```{figure} /fig/en_descending.png
+::::{grid-item-card}
+
+:::{figure} /fig/en_descending.png
 ---
 width: 300px
 name: en_descending
 ---
 Attribute table sorted descendingly.  
-```
+:::
 
 ::::
+:::::
 
 ## Zoom in on a specific feature via attribute table
 
@@ -161,8 +150,7 @@ You can zoom in on a specific feature if you need to locate it geographically or
 
 ## Manually select features in the attribute table
 
-To interact with features in a layer you have to select these features. One way 
-to select features is via the attribute table.
+To interact with features in a layer you have to select these features. One way to select features is via the attribute table.
 
 * __Select:__ Click on the lines of the features. 
 * __Multi Select:__ To select multiple features press `Ctrl` and select `features`.
@@ -183,49 +171,49 @@ Now that you know how to select features, you can zoom onto your area of
 interest. To do so you can click on the symbol on the toolbar or right click 
 on the layer and select `Zoom to Selection` ({numref}`en_zoom_to_selection_1`).
 
-```{figure} /fig/en_zoom_to_selection_1.png
+:::{figure} /fig/en_zoom_to_selection_1.png
 ---
 width: 800px
 align: center
 name: en_zoom_to_selection_1
 ---
 Screenshot of how to zoom to Selection on the top.
-```
+:::
 
-```{figure} /fig/en_zoom_to_selection_2.png
+:::{figure} /fig/en_zoom_to_selection_2.png
 ---
 width: 450px
 align: center
 name: en_zoom_to_selection_2
 ---
 Screenshot of how to zoom to Selection by clicking right.
-```
+:::
 
 ## Save only selected features as a new file
 
 After you have selected your data, you might want to proceed with only the 
-selection. You can save your selection as new layer. To do so right click on the 
+selection. You can save your selection as a new layer. To do so right click on the 
 layer - `Export` -> `Save only selected features`
 
-```{figure} /fig/en_save_selection.png
+:::{figure} /fig/en_save_selection.png
 ---
 height: 500px
 align: center
 name: en_save_selection
 ---
 Screenshot of how to save only selected features.
-```
+:::
 
 Now, you can choose the format, layer name and CRS.
 
 <!--ADD IMAGE-->
 
-```{tip}
+:::{tip}
 
-We recommend use GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
+We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
 If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
 
-```
+:::
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
@@ -233,16 +221,52 @@ If you are unsure which format is most appropriate, check out the [geodata types
 
 ## Self-Assessment Questions
 
-::::{admonition} Check your knowledge
+::::{admonition} Test your knowledge
 :class: note
 
 Check whether you know the key concepts from this chapter by answering the questions below.
 
 1. __What is the attribute table in a vector layer, and how is it structured?__
+
+:::{dropdown} Answer
+The attribute table is a tabular representation of the non‑spatial (or descriptive) data for a vector layer. Each row corresponds to one feature (point, line, polygon) in the layer. Each column (also called a field or attribute) stores one attribute/property (e.g. name, population, type) for every feature.
+:::
+
 2. __How can you open the attribute table in QGIS?__
+
+:::{dropdown} Answer
+- In QGIS, right‑click on the layer in the Layers Panel and choose Open Attribute Table.
+- Alternatively, you can use the Attribute Table button ![](/fig/qgis_open_attribute_table.png) in the toolbar.
+:::
+
 3. __How do you zoom to a specific feature using the attribute table?__
+
+:::{dropdown} Answer
+- Within the attribute table, you can right‑click on a feature’s row (or in a cell) and choose “Zoom to Feature”. That changes the map view to focus on that feature.
+:::
+
 4. __Describe how to manually select features via the attribute table, and how to show only selected or unselected features.__
+
+:::{dropdown} Answer
+__Manually selecting features:__
+- Clicking on a row header of an individual feature in the attribute table selects the feature. It will be highlighted in blue.
+- To select multiple features, hold <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> on MacOS and click on additional row headers to add more features to the selection.
+- Holding <kbd>Shift</kbd> let's you select a range of features. 
+__Showing only selected or unselected features:__
+- At the bottom left of the attribute table dialog, there is a drop‑down menu (filter) that lets you switch between:
+  - __Show All Features__
+  - __Show Selected Features__
+  - __Show Unselected Features__
+  - Other filters: Show features visible in map, Show edited and new features, etc. 
+- You can also use the ![](/fig/qgis_3.40_move_selection_to_top.png) `Move selected features to the top`-button in the attribute table toolbar
+:::
+
 5. __Once you have selected a subset of features, how do you save just those features into a new layer (or file)?__
 
+:::{dropdown} Answer
+1. <kbd>Right-click</kbd> on the layer where you selected the features.
+2. Select `Export` → `Save Selected Features as...`. A new window will open. 
+3. Choose the data format, specify the save location and file name by clicking on the ![](/fig/Three_points.png)
+4. Click `Ok`.
 ::::
 

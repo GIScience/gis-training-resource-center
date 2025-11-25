@@ -13,14 +13,14 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ---
 
-```{Hint}
+:::{Hint}
 If a table join does not work via the __Join attributes by field value__ tool, a join can also be performed via the __layer properties__ (`right-click`, `Properties`) under the `Join` tab.
-```
+:::
 
-```{figure} /fig/en_qgis_add_vector_join_wiki.png
+:::{figure} /fig/en_qgis_add_vector_join_wiki.png
 ---
 width: 75%
 name: en_qgis_add_vector_join_wiki
 ---
 Screenshot of the Add Vector join tool
-```
+:::

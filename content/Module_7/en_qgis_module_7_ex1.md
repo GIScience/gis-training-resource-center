@@ -7,7 +7,7 @@
 
 ::::
 
-# Exercises 1: Automatisation
+# Exercises 1: Automation
 
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
@@ -49,7 +49,7 @@ __Relevant Wiki Articles__
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Automation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automation_wiki.html)
 
 :::
 

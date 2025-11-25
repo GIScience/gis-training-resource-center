@@ -20,9 +20,9 @@ A **data steward** is a designated person (or small team) responsible for:
 Having a clear steward role prevents accidental overwrites and ensures that all staff work with **trusted, consistent data**.
 
 
-```{tip}
+:::{tip}
 If your organisation outgrows this setup (many editors, heavy edits, very large rasters), keep SharePoint for distribution and documentation, and add a spatial database (e.g., PostGIS) for multi-user editing.
-```
+:::
 
 ## Example Folder Structures
 
@@ -91,13 +91,13 @@ The organisation wants to keep all curated data together in `10_Data/`, while se
 
 **⚠️ Limitation:**
 Staff need to understand that `10_Data/` and `20_Raster_Data/` are read-only. If edits are saved there, datasets can be overwritten or corrupted.
-```{note}
+:::{note}
 Large raster files (e.g., DEMs, satellite scenes, wind or rainfall rasters) can slow down OneDrive sync and fill local drives quickly. 
 
 To reduce issues:  
 - Keep only the most important raster layers in `20_Raster_Data/`.  
 - Archive old raster versions in a separate library if needed.  
-```
+:::
 **Naming conventions for Balanced Setup (general use)**
 
 To keep files easy to find and avoid duplication, use a consistent naming pattern:  
@@ -154,12 +154,12 @@ The organisation wants to keep all curated data together in `10_Data/`, while se
 ⚠️ **Limitation:**  
 Staff need to understand that `10_Data/` and `20_Raster_Data/` are **read-only**. If users save edits there, datasets can be overwritten or corrupted.
 
-```{note}
+:::{note}
 Large raster files (e.g. DEMs, cyclone wind or flood depth grids) can slow down OneDrive sync and fill local disks.  
 To reduce problems:  
 - Keep only the most important raster layers in `20_Raster_Data/`.  
 - Archive older rasters in `30_Snapshots/` if you need to keep historical versions.
-```
+:::
 
 **Naming conventions for Balanced Setup (with EAPs)**
 
@@ -215,10 +215,10 @@ However, SharePoint is not a GIS database, and this introduces some constraints:
 - **Performance bottlenecks** — very large rasters or high-frequency edits will quickly become slow; in these cases, a spatial database such as PostGIS is better.  
 - **Discipline required** — the system relies on users consistently following folder structures and naming conventions; otherwise, the hub loses its value.  
 
-```{important}
+:::{important}
 Think of SharePoint as a **distribution and coordination hub**.  
 For **multi-user editing** or **large-scale storage**, you’ll need a database backend.
-```
+:::
 
 ### Permissions
 
@@ -261,10 +261,10 @@ When creating or editing a SharePoint library, you can add simple columns such a
 - **Contact / Owner** (responsible person or team)
 - **URL** (link to the original data source or documentation) 
 
-```{tip}
+:::{tip}
 You don’t need to tag *everything*. Start with 3–4 core fields that help your team find data quickly.  
 For example: *Theme*, *Location*, *Source*, and *DateUpdated*. More can be added later if needed.
-```
+:::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qB2acPUSF_o?si=JyjVHEqcTNHqTKUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -312,10 +312,10 @@ Follow these steps to get started:
    - Show new staff where to find data, projects, and styles.  
    - Emphasise that only data stewards update the `10_Data/` and `20_Raster_Data/` folders.  
 
-```{tip}
+:::{tip}
 Start small. Don’t upload everything at once. Begin with the datasets most often used in your projects (e.g., admin boundaries, health facilities, WorldPop).  
 You can expand later as the team gets used to the system.
-```
+:::
 
 ## Standard Operating Procedures (SOPs)
 
@@ -360,12 +360,12 @@ These **Standard Operating Procedures (SOPs)** can serve as a starting point:
    - *Editors* → Edit (e.g., for `40_Working_Data/` and project folders)  
    - *Viewers* → Read-only (for most data folders)  
 
-```{tip}
+:::{tip}
 Short SOPs are most effective if they fit on **one page**.  
 Keep them simple and review once a year to make sure they are still relevant.  
 Emphasise that **day-to-day work files can stay on individual laptops**.  
 Only upload to `40_Working_Data/` before weekends, handovers, or when results need to be shared for team use and contingency.
-
+:::
 
 
 

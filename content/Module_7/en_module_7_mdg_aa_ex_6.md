@@ -48,7 +48,7 @@ __Relevant Wiki Articles__
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Automation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automation_wiki.html)
 
 :::
 
@@ -97,7 +97,7 @@ __Wrap up:__
 ## Available data
 
 :::{card}
-:link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_4_AA_MDG_task_6-20250825T143514Z-1-001.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_4_AA_MDG_task_6-20250825T143514Z-1-001.zip
 
 __Download all datasets here, save the folder on your computer and unzip the file.__ 
 :::
@@ -151,14 +151,14 @@ We will join the following layers step by step:
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
   - Leave output as **Model Output**
 
-```{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
+:::{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Configuration de l’opération : joindre les données de santé et d’éducation par le champ `ADM2_PCODE` afin de combiner les résultats dans une seule couche.
-``` 
+::: 
 3. Join the result with the population data
 Now join the result of the previous step (health + education) to the **exposed population** data.
 - Add a second `Join Attributes by Field Value` algorithm to the model
@@ -181,14 +181,14 @@ Now join the result of the previous step (health + education) to the **exposed p
   - **Join type**: Take attributes of the first matching feature only (one-to-one)
   - Leave output as **Model Output**
 
-```{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
+:::{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Configuration de l’opération : joindre les données de population avec les indicateurs de santé et d’éducation.
-``` 
+::: 
 
 ::::{tip} Where to find the column names  
 Open the **attribute tables** of the outputs `health_total_per_admin2`, `sum_exposed_healthsites_POI`, and `admin2_health_affected_pct` in QGIS.  
@@ -213,14 +213,14 @@ Always copy field names **directly from the attribute table** to avoid errors.
   - Click **OK** to add it to the model.
 Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
 
-```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
+:::{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
 ---
 width: 600px
 name: the_world_result
 align: center
 ---
 Exporter tous les indicateurs (population, santé, éducation) vers un tableau unique au format tableur.
-``` 
+::: 
 
 
 
@@ -261,37 +261,37 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
         ```
    - Click **Run** to execute the full model.
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Graphic Modler
+::::{tab-item} Graphic Modler
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
 ---
 width: 600px
 align: center
 ---
 Vue du modeleur graphique avec l’étape d’exportation vers un tableau ajoutée au modèle.
-```
 :::
-:::{tab-item} Run Model Configuration
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
+::::
+::::{tab-item} Run Model Configuration
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
 ---
 width: 600px
 align: center
 ---
 Fenêtre de configuration pour exécuter le modèle avec l’option d’export vers un tableau.
-```
 :::
-:::{tab-item} Model Output
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
+::::
+::::{tab-item} Model Output
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
 ---
 width: 600px
 align: center
 ---
 Résultats finaux du modèle exportés dans un tableau prêt à être utilisé.
-```
 :::
 ::::
+:::::
 
 ---
 
