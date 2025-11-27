@@ -590,7 +590,7 @@ In general, there are a few things to keep in mind when creating a map:
     - Add activity icons to indicate the specific types of work each organization is carrying out in those districts.
     - To illustrate the link between organization logos, activity icons, and their corresponding areas, arrows can be added to the map. Using this feature helps clearly emphasize the relationships and improves overall readability.
 
-:::{dropdown}
+:::{dropdown} How to add arrow item
 The arrows ![](../../fig/mActionAddArrow.png) can be added from the left-side panel in the Print Layout. Click and drag on the layout to draw it, then use the Item Properties panel to adjust the arrow’s style, thickness, color, and direction. Arrows can be moved or resized like any other layout item, allowing you to visually connect map features, icons, or labels.
 :::
 
