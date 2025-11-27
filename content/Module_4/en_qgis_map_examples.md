@@ -247,10 +247,10 @@ Helpful information on how to create such a 3W map can be found [here](https://l
 For a variety of 3W map examples, browse the Maps/Infographics section on [Reliefweb](https://reliefweb.int/updates?view=maps&search=title%3A%223W%22).
 :::
 
-:::{dropdown} Example: Hurricane Melissa November 2025 | Jamaica
+::::{dropdown} Example: Hurricane Melissa November 2025 | Jamaica
 The two 3W example maps below demonstrate how such __products develop__ as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an __initial community assessment__. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the __map’s styling has also evolved__. This progression is entirely normal; maps are expected to __improve__ and become __more detailed__ over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
 
-::::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
+:::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
 ---
 name: 3W Map Jamaica Melissa Start
 width: 720 px
@@ -272,11 +272,63 @@ Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sou
 
 1. Add all the relevant spatial data. Used in probably every instance:
     - Administrative boundaries
-    - Affected areas with cholera case numbers
+    - Affected areas with the relevant disaster
+    - Points of Interest (Airports, Ports, Cities)
     - Background map (OpenStreetMap is always a solid choice)
 2. Import the 3W Activity data
-    - Add the 3W dataset (mostly CSV or Excel)
+    - Add the 3W dataset to QGIS (mostly CSV or Excel)
     - Ensure that it contains information about the organization, activity type, and location.
+
+::::{dropdown} How to import .csv or .txt
+
+__Delimited text import (.csv, .txt)__
+
+When working with 3W data, the most common format encountered is a delimited text file, such as `.csv` files (Comma Separated Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They can contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well Known Text" (WKT), which represents complex geometries, such as polygons or lines. In some cases, the table may not include any geographic information at all. When this happens, the file is simply added as a non-spatial table, allowing access to its attribute information without displaying it on the map.
+
+__Open Delimited Text Layer__
+
+:::{Tip}
+To load data from spreadsheets such as Comma Separated Value (`.csv`) or Excel (`.xlsx`), the datasets need to have columns containing geometry - this is most often in the form of latitude (Y field) and longitude (X field), but might also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  
+:::
+
+:::{figure} /fig/en_import_delimeted_text.png
+---
+width: 600px 
+align: center
+name: en_import_delimeted_text
+---
+Import delimited text in QGIS 3.36.
+:::
+
+1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
+2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your CSV file and click `Open`.
+3. `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas `,` are used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
+
+:::{Tip}
+To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+:::
+
+:::{figure} /fig/en_delimited_text_fileformat.png
+---
+width: 600px
+align: center
+name: en_delimited_text_fileformat
+---
+Adjusting the file format parameters while importing a delimited text layer into QGIS.
+:::
+
+4. If your CSV file contains geometry, continue with `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
+5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option `No geometry (attribute only table)`.
+6. Click `Add`
+
+:::{dropdown} Video: Opening delimited text files in QGIS
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+
+:::
+
+::::
+
 3. Style the layers
     - Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize cholera case numbers, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
     - Add labels to the Admin 2 boundaries for clearer identification.   
