@@ -76,6 +76,7 @@ parts:
           - file: content/Exercise_tracks/en_larkana_flood_response.md
           - file: content/Exercise_tracks/en_mdg_aa_cyclones.md
           - file: content/Exercise_tracks/fr_mdg_aa_cyclones.md
+          - file: content/Exercise_tracks/en_public_health_outbreak_and_preparedness.md
   - caption: Wiki
     chapters:
       - file: content/Wiki/en_wiki_homepage.md
