@@ -927,10 +927,78 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 </details><ol class="arabic simple" start="3">
 <li><p>Style the layers</p>
 <ul class="simple">
-<li><p>Apply a <strong>Graduated</strong> color ramp to the Admin 2 boundaries to visualize cholera case numbers, using <strong>Equal Interval</strong> classification. A suitable color ramp is <strong>Reds</strong>, with higher case counts displayed in darker shades and lower counts in lighter tones.</p></li>
-<li><p>Add labels to the Admin 2 boundaries for clearer identification.</p></li>
+<li><p>Style the administrative boundaries with a transparent fill and choose an appropriate <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">width</span></code> to ensure they are clearly visible without obscuring underlying map content..</p></li>
 </ul>
 </li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Styling administrative boundaries</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Styling administrative boundaries (Polygons)</strong></p>
+<p class="sd-card-text">When creating 3W maps, administrative boundaries are always a key component. Most overview maps display disaster-related information aggregated by these boundaries. To visualize multiple administrative levels at once, each layer needs to be styled so that lower layers remain visible and the hierarchy between levels is clear. Often, this begins with adding the country outline and then progressively adding each subsequent administrative level, ensuring that the symbology distinguishes them without cluttering the map.</p>
+<p class="sd-card-text"><strong>Only display the outlines of polygons</strong></p>
+<p class="sd-card-text">Now, we want to change the symbology of a layer so that <strong>only the outlines of the polygons are visible</strong>. This is necessary to make layers below this one visible.</p>
+<p class="sd-card-text">To change the symbology of a single layer:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> and navigate to the symbology tab. By default, the symbology will be set to <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. This means that the same colours and contours will be applied to all the features in that layer.</p></li>
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code>.</p></li>
+<li><p class="sd-card-text">Click on the arrow to the right of <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code>.</p></li>
+<li><p class="sd-card-text">Check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-vector-layer-styling-transparent">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_vector_layer_styling_transparent.png"><img alt="../../_images/en_30.30.2_vector_layer_styling_transparent.png" src="../../_images/en_30.30.2_vector_layer_styling_transparent.png" style="width: 500px;" />
+</a>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Making the fill colour transparent</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video></p>
+</div>
+</details><p class="sd-card-text"><strong>Adjusting the Styles of Multiple Overlaying Layers</strong></p>
+<p class="sd-card-text"><strong>Step 1: Ordering the layers</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Import all the administrative boundaries into your QGIS-project that you want to work with (e.g. Admin 0-2).</p></li>
+<li><p class="sd-card-text">One option is to order the layers in the Layers panel so that the <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>-layer sits on top, followed by <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin2</span></code>. At first, this might look weird because <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> will cover everything.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-changing-layer-style-1">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_1.png"><img alt="../../_images/en_30.30.2_changing_layer_style_1.png" src="../../_images/en_30.30.2_changing_layer_style_1.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.70 </span><span class="caption-text">Order the layers and navigate to the styling panel of the topmost layer</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">Change the symbology of the <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> layer by opening the styling panel and navigating to the Symbology tab.</p></li>
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> to open the style options.</p></li>
+<li><p class="sd-card-text">Expand the <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code> menu and check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option. This will make only the boundaries visible, so <strong>we will be able to see the layer under this one</strong>.</p></li>
+<li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Colour</span></code>, and adjust the <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Width</span></code>.</p></li>
+<li><p class="sd-card-text">Click OK.</p></li>
+<li><p class="sd-card-text"><strong>Repeat the same process</strong> for the <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> layer, using the same colour as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> (it will be in “Recent colors). Adjust the stroke width so that it differs from <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>, ensuring that the administrative levels remain visually distinct.</p></li>
+<li><p class="sd-card-text">Now we can see the boundaries of the country and its states, and behind that we can see the districts (<code class="docutils literal notranslate"><span class="pre">Admin2</span></code>).</p></li>
+<li><p class="sd-card-text">Let’s make the district layer’s style consistent with the others.</p></li>
+<li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code>.</p></li>
+<li><p class="sd-card-text">Use the same <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Colour</span></code> as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin1</span></code>, but make the width even thiner and the Stroke Style a <strong>Dash Line</strong>.</p></li>
+<li><p class="sd-card-text">Click OK and look at your map: hopefully it’s starting to look nicer!</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-changing-layer-style-3">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_3.png"><img alt="../../_images/en_30.30.2_changing_layer_style_3.png" src="../../_images/en_30.30.2_changing_layer_style_3.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.71 </span><span class="caption-text">The styling of a vector data consists of the colour and the outline.</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Adjusting the style for multiple layers</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video></p>
+</div>
+</details></div>
+</details><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize numbers of your disaster, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
+- Add labels to the Admin 2 boundaries for clearer identification.   
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
 <li><p>Set up a new <strong>Print Layout</strong>. Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.</p></li>
 <li><p>Add a header using the <img alt="" src="../../_images/30.30.2_print_layout_add_text.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Label</span></code>-tool. It should contain the following information:</p>
 <ul class="simple">
