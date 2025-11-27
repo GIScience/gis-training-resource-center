@@ -330,7 +330,80 @@ Adjusting the file format parameters while importing a delimited text layer into
 ::::
 
 3. Style the layers
-    - Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize cholera case numbers, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
+    - Style the administrative boundaries with a transparent fill and choose an appropriate `Stroke color` and `Stroke width` to ensure they are clearly visible without obscuring underlying map content..
+
+::::{dropdown} Styling administrative boundaries
+
+__Styling administrative boundaries (Polygons)__
+
+When creating 3W maps, administrative boundaries are always a key component. Most overview maps display disaster-related information aggregated by these boundaries. To visualize multiple administrative levels at once, each layer needs to be styled so that lower layers remain visible and the hierarchy between levels is clear. Often, this begins with adding the country outline and then progressively adding each subsequent administrative level, ensuring that the symbology distinguishes them without cluttering the map.
+
+__Only display the outlines of polygons__
+
+Now, we want to change the symbology of a layer so that __only the outlines of the polygons are visible__. This is necessary to make layers below this one visible.
+
+To change the symbology of a single layer:
+1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
+2. Click on `Simple Fill`.
+3. Click on the arrow to the right of `Fill Colour`.
+4. Check the `Transparent Fill` option.
+
+:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+---
+name: en_30.30.2_vector_layer_styling_transparent
+width: 500 px
+---
+:::
+
+:::{dropdown} Video: Making the fill colour transparent
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+
+:::
+
+__Adjusting the Styles of Multiple Overlaying Layers__
+
+__Step 1: Ordering the layers__
+
+1. Import all the administrative boundaries into your QGIS-project that you want to work with (e.g. Admin 0-2).
+2. One option is to order the layers in the Layers panel so that the `Admin0`-layer sits on top, followed by `Admin1` and `Admin2`. At first, this might look weird because `Admin0` will cover everything.
+
+:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+---
+name: en_30.30.2_changing_layer_style_1
+height: 400px 
+---
+Order the layers and navigate to the styling panel of the topmost layer
+:::
+
+3. Change the symbology of the `Admin0` layer by opening the styling panel and navigating to the Symbology tab. 
+4. Click on `Simple Fill` to open the style options.
+5. Expand the `Fill Colour` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
+6. Choose a `Stroke Colour`, and adjust the `Stroke Width`.
+7. Click OK.
+8. __Repeat the same process__ for the `Admin1` layer, using the same colour as for `Admin0` (it will be in "Recent colors). Adjust the stroke width so that it differs from `Admin0`, ensuring that the administrative levels remain visually distinct. 
+9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (`Admin2`).
+10. Let's make the district layer's style consistent with the others.
+11. Choose a `Fill Color`.
+12. Use the same `Stroke Colour` as for `Admin0` and `Admin1`, but make the width even thiner and the Stroke Style a __Dash Line__.
+13. Click OK and look at your map: hopefully it's starting to look nicer!
+
+:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+---
+width: 500 px
+name: en_30.30.2_changing_layer_style_3
+---
+The styling of a vector data consists of the colour and the outline.
+:::
+
+:::{dropdown} Video: Adjusting the style for multiple layers
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video>
+:::
+
+::::
+
+    - Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize numbers of your disaster, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
     - Add labels to the Admin 2 boundaries for clearer identification.   
 4. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
 5. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
