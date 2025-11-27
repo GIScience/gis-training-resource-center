@@ -228,7 +228,7 @@ width: 720 px
 3W Map example: Turkish Red Crescent Response to Earthquake
 :::
 
-::::{dropdown}
+::::{dropdown} Example: 3W Brazil Floods Distribution Map
 :::{figure} ../../fig/4.8_3W_Brazil_Floods.png
 ---
 name: 3W Map Turkey
@@ -588,6 +588,11 @@ In general, there are a few things to keep in mind when creating a map:
 7. Areas of operation for each organization
     - Place the logos of each organization within the districts where they are active.
     - Add activity icons to indicate the specific types of work each organization is carrying out in those districts.
+    - To illustrate the link between organization logos, activity icons, and their corresponding areas, arrows can be added to the map. Using this feature helps clearly emphasize the relationships and improves overall readability.
+
+:::{dropdown}
+The arrows ![](../../fig/mActionAddArrow.png) can be added from the left-side panel in the Print Layout. Click and drag on the layout to draw it, then use the Item Properties panel to adjust the arrow’s style, thickness, color, and direction. Arrows can be moved or resized like any other layout item, allowing you to visually connect map features, icons, or labels.
+:::
 
 :::{Caution}
 Add labels and logos where needed, but avoid cluttering the map with unnecessary text or symbols. Organize map elements by topic, importance, and visual hierarchy to keep the layout clean and structured. Items can be reordered in the Item panel on the upper right side. Once added as images, logos and activity icons can be positioned directly on the map using drag-and-drop. Place them in meaningful locations so they do not overlap or obscure other important information.
