@@ -222,24 +222,51 @@ A 3W info map is one of the most commonly requested products during the first mo
 
 __What is needed:__
 
-- [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/)
-- QGIS
+- A recent version of QGIS
 - Access to 3W data
+- [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making
+- Logos of the organizations involved
 
 __Getting the 3W data:__
 
-A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple Kobo survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into the GO Platform, which then can be used as the primary source for the 3W map.
+A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into a joined platform, which then can be used as the primary source for the 3W map.
 
 If no formal 3W data collection system is in place, information might need to be extracted from SitReps and other reports produced by the operation team. Focus first on identifying the following:
 
-- What response activities are the National Society involved in, and where?
-- What response activities are being done by IFRC operation, and where?
-- Key situation overview figures, such as number of people affected by the disaster, number of deaths or injuries, number of houses damaged, number of geographical units affected (all of these data points can be modified based on the context of the disaster). Make sure to note the data source you are using for key situation overview figures, and whenever possible to align the figures you are using to those used by the host National Society instead of using figures released by the media.
+- __What response activities are the National Society involved in, and where?__
+- __What response activities are being done by IFRC operation, and where?__
+- __Key situation overview figures__, such as number of __people affected by the disaster__, __number of deaths or injuries__, number of houses damaged, number of geographical units affected (all of these data points can be modified based on the context of the disaster). 
+- Make sure to __note the data source__ you are using for key situation overview figures, and whenever possible to align the figures you are using to those used by the host National Society instead of using figures released by the media.
 - How many people or households are being reached by sectoral activities, and where?
 
 It is normal that the initial dataset is limited. The 3W map will evolve and expand as additional information comes in.
 
-Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)
+:::{admonition}
+Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/).
+
+For a variety of 3W map examples, browse the Maps/Infographics section on [Reliefweb](https://reliefweb.int/updates?view=maps&search=title%3A%223W%22).
+:::
+
+:::{dropdown} Example: Hurricane Melissa November 2025 | Jamaica
+The two 3W example maps below demonstrate how such __products develop__ as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an __initial community assessment__. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the __map’s styling has also evolved__. This progression is entirely normal; maps are expected to __improve__ and become __more detailed__ over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
+
+::::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
+---
+name: 3W Map Jamaica Melissa Start
+width: 720 px
+---
+Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 03-Nov-2025: Community Assessments (Source: MapAction).
+:::
+
+:::{figure} ../../fig/4.8_3w_jamaica_24_11_2025.png
+---
+name: 3W Map Jamaica Melissa End
+width: 720 px
+---
+Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sources: MapAction, OCHA).
+:::
+
+::::
 
 ### 3W Map Creation
 
