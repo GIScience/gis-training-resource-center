@@ -239,7 +239,29 @@ If no formal 3W data collection system is in place, information might need to be
 
 It is normal that the initial dataset is limited. The 3W map will evolve and expand as additional information comes in.
 
-Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)
+Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/).
+
+For a variety of 3W map examples, browse the Maps/Infographics section on [Reliefweb](https://reliefweb.int/updates?view=maps&search=title%3A%223W%22).
+
+:::{dropdown} Example: Hurricane Melissa | Jamaica
+The two 3W example maps below demonstrate how such products develop as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an initial community assessment. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the map’s styling has also evolved. This progression is entirely normal; maps are expected to improve and become more detailed over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
+
+:::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
+---
+name: 3W Map Jamaica Melissa Start
+width: 720 px
+---
+Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 03-Nov-2025: Community Assessments (Source: MapAction).
+:::
+
+:::{figure} ../../fig/4.8_3w_jamaica_24_11_2025.png
+---
+name: 3W Map Jamaica Melissa End
+width: 720 px
+---
+Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sources: MapAction, OCHA).
+:::
+:::
 
 ### 3W Map Creation
 
