@@ -452,11 +452,68 @@ A map showing the population of Nigerian states.
 
 ::::
 
+5. Add labels to the Admin boundaries (at the level of interest) for clearer identification. 
 
+:::::{dropdown}
 
+__Single Labels__
 
-Add labels to the Admin 2 boundaries for clearer identification. 
+Creates a single label style for every feature in the layer. You can select an attribute (value) which will be 
+displayed. For example, the name of a district. You need to know which attribute displays the information you want to 
+display. Look at the attribute table of the dataset to find it out.
 
+:::{figure} /fig/labels_single_labels_example_nga_adm1.png
+---
+width: 600 px
+name: labels_single_labels_example_nga_adm1
+---
+Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
+:::
+
+:::{figure} /fig/en_30.30.2_assigning_value_to_labels.png
+---
+width: 600 px
+name: en_30.30.2_assigning_value_to_labels
+---
+Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (`ADM1_EN`) to be displayed. 
+:::
+
+__Adding Single Labels to a Layer__
+
+1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
+2. Select `Single labels`.
+3. `Value` is where you choose the attribute that will be displayed as a label. For example `ADM1_EN` will display the English names of Nigerian states for each feature in the data set.
+4. Let's __change the font__: Open the font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the color by clicking on `Color`, and change the `Size` to 8 pt.
+5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
+7. Click `Apply` and `OK`.
+
+:::{figure} ../../fig/en_30.30.2_setting_up_labels.png
+---
+width: 600px
+name: en_30.30.2_setting_up_labels
+---
+Setting up labels in QGIS 30.30.2
+:::
+
+:::{dropdown} Video: How to add single labels
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
+:::
+
+::::{attention}
+
+Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
+
+:::{figure} /fig/single_labels_bad_example.png
+---
+name: single_labels_bad_example
+width: 400 px
+---
+Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
+:::
+
+::::
+
+:::::
 
 4. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
 5. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
