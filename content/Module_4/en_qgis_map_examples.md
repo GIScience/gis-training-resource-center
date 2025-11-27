@@ -228,6 +228,16 @@ width: 720 px
 3W Map example: Turkish Red Crescent Response to Earthquake
 :::
 
+::::{dropdown}
+:::{figure} ../../fig/4.8_3W_Brazil_Floods.png
+---
+name: 3W Map Turkey
+width: 720 px
+---
+3W Map example: Brazil Floods Distribution Map
+:::
+::::
+
 __What is needed:__
 
 - A recent version of QGIS
@@ -586,3 +596,12 @@ Add labels and logos where needed, but avoid cluttering the map with unnecessary
 :::{note}
 All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)
 :::
+
+:::{figure} ../../fig/4.8_3W_own_example.png
+---
+width: 700px
+name: 3W example cholera
+---
+A simple example of a 3W map showing the distribution of Oral Rehydration Points and the active organizations operating in south-eastern Sudan.
+:::
+
