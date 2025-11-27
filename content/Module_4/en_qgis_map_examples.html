@@ -925,11 +925,7 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 </div>
 </details></div>
 </details><ol class="arabic simple" start="3">
-<li><p>Style the layers</p>
-<ul class="simple">
-<li><p>Style the administrative boundaries with a transparent fill and choose an appropriate <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">width</span></code> to ensure they are clearly visible without obscuring underlying map content..</p></li>
-</ul>
-</li>
+<li><p>Style the administrative boundaries with a transparent fill and choose an appropriate <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">width</span></code> to ensure they are clearly visible without obscuring underlying map content.</p></li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -940,9 +936,9 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 <p class="sd-card-text">Now, we want to change the symbology of a layer so that <strong>only the outlines of the polygons are visible</strong>. This is necessary to make layers below this one visible.</p>
 <p class="sd-card-text">To change the symbology of a single layer:</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> and navigate to the symbology tab. By default, the symbology will be set to <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. This means that the same colours and contours will be applied to all the features in that layer.</p></li>
+<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> and navigate to the symbology tab. By default, the symbology will be set to <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. This means that the same colors and contours will be applied to all the features in that layer.</p></li>
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code>.</p></li>
-<li><p class="sd-card-text">Click on the arrow to the right of <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code>.</p></li>
+<li><p class="sd-card-text">Click on the arrow to the right of <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code>.</p></li>
 <li><p class="sd-card-text">Check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option.</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-vector-layer-styling-transparent">
@@ -951,11 +947,11 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">Video: Making the fill colour transparent</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Video: Making the fill color transparent</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video></p>
 </div>
 </details><p class="sd-card-text"><strong>Adjusting the Styles of Multiple Overlaying Layers</strong></p>
-<p class="sd-card-text"><strong>Step 1: Ordering the layers</strong></p>
+<p class="sd-card-text"><strong>Ordering the layers</strong></p>
 <ol class="arabic simple">
 <li><p class="sd-card-text">Import all the administrative boundaries into your QGIS-project that you want to work with (e.g. Admin 0-2).</p></li>
 <li><p class="sd-card-text">One option is to order the layers in the Layers panel so that the <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>-layer sits on top, followed by <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin2</span></code>. At first, this might look weird because <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> will cover everything.</p></li>
@@ -970,21 +966,21 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 <ol class="arabic simple" start="3">
 <li><p class="sd-card-text">Change the symbology of the <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> layer by opening the styling panel and navigating to the Symbology tab.</p></li>
 <li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> to open the style options.</p></li>
-<li><p class="sd-card-text">Expand the <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Colour</span></code> menu and check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option. This will make only the boundaries visible, so <strong>we will be able to see the layer under this one</strong>.</p></li>
-<li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Colour</span></code>, and adjust the <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Width</span></code>.</p></li>
+<li><p class="sd-card-text">Expand the <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code> menu and check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option. This will make only the boundaries visible, so <strong>we will be able to see the layer under this one</strong>.</p></li>
+<li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Color</span></code>, and adjust the <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Width</span></code>.</p></li>
 <li><p class="sd-card-text">Click OK.</p></li>
-<li><p class="sd-card-text"><strong>Repeat the same process</strong> for the <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> layer, using the same colour as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> (it will be in “Recent colors). Adjust the stroke width so that it differs from <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>, ensuring that the administrative levels remain visually distinct.</p></li>
+<li><p class="sd-card-text"><strong>Repeat the same process</strong> for the <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> layer, using the same color as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> (it will be in “Recent colors). Adjust the stroke width so that it differs from <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>, ensuring that the administrative levels remain visually distinct.</p></li>
 <li><p class="sd-card-text">Now we can see the boundaries of the country and its states, and behind that we can see the districts (<code class="docutils literal notranslate"><span class="pre">Admin2</span></code>).</p></li>
 <li><p class="sd-card-text">Let’s make the district layer’s style consistent with the others.</p></li>
 <li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code>.</p></li>
-<li><p class="sd-card-text">Use the same <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Colour</span></code> as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin1</span></code>, but make the width even thiner and the Stroke Style a <strong>Dash Line</strong>.</p></li>
+<li><p class="sd-card-text">Use the same <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Color</span></code> as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin1</span></code>, but make the width even thiner and the Stroke Style a <strong>Dash Line</strong>.</p></li>
 <li><p class="sd-card-text">Click OK and look at your map: hopefully it’s starting to look nicer!</p></li>
 </ol>
 <figure class="align-default" id="en-30-30-2-changing-layer-style-3">
 <a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_3.png"><img alt="../../_images/en_30.30.2_changing_layer_style_3.png" src="../../_images/en_30.30.2_changing_layer_style_3.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.71 </span><span class="caption-text">The styling of a vector data consists of the colour and the outline.</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.71 </span><span class="caption-text">The styling of a vector data consists of the color and the outline.</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -994,10 +990,55 @@ Thus, the design choices reflect the audience by prioritising readability, immed
 .mp4"></video></p>
 </div>
 </details></div>
-</details><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize numbers of your disaster, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
-- Add labels to the Admin 2 boundaries for clearer identification.   
-</pre></div>
+</details><ol class="arabic simple" start="4">
+<li><p>Style the disaster-related information by selecting a color ramp that fits the context. One common approach is to create a choropleth map using <strong>Graduated</strong> styling, which visually represents variations in impact or case numbers across administrative areas.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Creating a Choropleth Map (“Gradudated Styling)</strong></p>
+<p class="sd-card-text">If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colors. In this example, colors are assigned to Admin1 polygons based on the total population of each State.</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> options and choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p class="sd-card-text"><strong>Select the value you want to use to assign colors</strong>, in this case, it will be <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-symbology-variable-ranges">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges.png" src="../../_images/en_30.30.2_symbology_variable_ranges.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.72 </span><span class="caption-text">With variable ranges, select <strong>Graduated</strong> symbology and choose the attribute with continuous values</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all values divided in classes</strong>.</p></li>
+<li><p class="sd-card-text">Choose <strong>how many classes</strong> you want the data to be divided into ‒ let’s say 4. You can also assign different <code class="docutils literal notranslate"><span class="pre">Modes</span></code>. We usually work with <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Count</span></code> or <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code> depending on our data.</p></li>
+<li><p class="sd-card-text">By default, the color ramp will be red. However, red is not the right color to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</p></li>
+<li><p class="sd-card-text">Click on <strong>the arrow next to the color ramp</strong> to choose another combination of colors - let’s say a color ramp from white to blue.</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to preview the look of your layer, then <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-symbology-variable-ranges-2">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges_2.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges_2.png" src="../../_images/en_30.30.2_symbology_variable_ranges_2.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.73 </span><span class="caption-text">You can categorize the continuous values into classes and assign a color ramp .</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">The following map shows the most populated states of Nigeria using a graduated color categorization. These types of maps are called <strong>Choropleth maps</strong>.</p>
+<figure class="align-default" id="en-map-design-example-variable-ranges">
+<a class="reference internal image-reference" href="../../_images/en_map_design_example_variable_ranges.png"><img alt="../../_images/en_map_design_example_variable_ranges.png" src="../../_images/en_map_design_example_variable_ranges.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.74 </span><span class="caption-text">A map showing the population of Nigerian states.</span><a class="headerlink" href="#en-map-design-example-variable-ranges" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: How to create a choropleth map</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+.mp4"></video></p>
 </div>
+</details></div>
+</details><p>Add labels to the Admin 2 boundaries for clearer identification.</p>
 <ol class="arabic simple" start="4">
 <li><p>Set up a new <strong>Print Layout</strong>. Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.</p></li>
 <li><p>Add a header using the <img alt="" src="../../_images/30.30.2_print_layout_add_text.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Label</span></code>-tool. It should contain the following information:</p>
