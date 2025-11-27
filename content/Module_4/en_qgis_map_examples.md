@@ -244,7 +244,7 @@ Helpful information on how to create such a 3W map can be found [here](https://l
 For a variety of 3W map examples, browse the Maps/Infographics section on [Reliefweb](https://reliefweb.int/updates?view=maps&search=title%3A%223W%22).
 
 :::{dropdown} Example: Hurricane Melissa | Jamaica
-The two 3W example maps below demonstrate how such products develop as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an initial community assessment. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the map’s styling has also evolved. This progression is entirely normal; maps are expected to improve and become more detailed over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
+The two 3W example maps below demonstrate how such __products develop__ as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an __initial community assessment__. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the __map’s styling has also evolved__. This progression is entirely normal; maps are expected to __improve__ and become __more detailed__ over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
 
 :::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
 ---
@@ -261,6 +261,7 @@ width: 720 px
 ---
 Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sources: MapAction, OCHA).
 :::
+
 :::
 
 ### 3W Map Creation
