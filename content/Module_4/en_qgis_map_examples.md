@@ -523,31 +523,64 @@ Single Labels were selected to display the names of the settlements (red dots). 
 
 :::::
 
-4. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
-5. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
-    - The title (e.g. Sudanese Red Crescent Response)
-    - The type of disaster or emergency
-    - The geographic location of the disaster
-    - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
+6. Set up a new __Print Layout__. 
+    - Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. 
+    - Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
+    - Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
+        - The title (e.g. Sudanese Red Crescent Response)
+        - The type of disaster or emergency
+        - The geographic location of the disaster
+        - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
+    - Add __Organizational logos__ (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool to ensure that each active organization can be easily identified on the map.
+    - Icons which describe the specific activity. These can also be added using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool. Make use of the [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making.
+    - A small overview map to help situate the disaster-affected area within a broader geographic context.
 
 :::{note}
 Multiple text boxes can be used to display the header in different font sizes, helping to clearly separate different layers of information. If all content should remain within a single label box, `Render as HTML` can be applied to format and style the text as needed.
 :::
 
-6. Add map elements
+::::{dropdown} Starting the Print Layout
+
+__Open the Print Layout__
+
+1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
+2. A new window with a blank print layout will appear.
+
+:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+---
+width: 700px
+name: Create Print Layout
+---
+Create a new Print Layout
+:::
+
+__Map Composition__
+
+A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.
+
+In general, there are a few things to keep in mind when creating a map:
+
+- The main map should cover the largest portion of the page and be centred.
+- A complete map must have:
+    - A meaningful title
+    - All the sources used
     - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and color schemes.
-    - A scale bar 
+    - A scale bar
     - A north arrow
-    - Organizational logos (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
-    - Icons which describe the specific activity. These can also be added using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
-    - A small overview map
+    - and necessary other information to contextualize the information presented on the map.
+- This additional information, such as the title should be scaled accordingly.
+    - Titles should be large so the reader can identify it as the main topic of the map.
+    - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
+- A well-structured page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
+
+::::
 
 7. Areas of operation for each organization
     - Place the logos of each organization within the districts where they are active.
     - Add activity icons to indicate the specific types of work each organization is carrying out in those districts.
 
 :::{Caution}
-Add labels and logos where necessary, but avoid cluttering the map with excessive text or symbols. Arrange map elements by topic, importance, and visual hierarchy to maintain a clean and structured layout. Map items can be reordered in the __Item__ panel on the upper right side.
+Add labels and logos where needed, but avoid cluttering the map with unnecessary text or symbols. Organize map elements by topic, importance, and visual hierarchy to keep the layout clean and structured. Items can be reordered in the Item panel on the upper right side. Once added as images, logos and activity icons can be positioned directly on the map using drag-and-drop. Place them in meaningful locations so they do not overlap or obscure other important information.
 :::
 
 :::{note}
