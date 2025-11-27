@@ -220,6 +220,14 @@ __Introduction:__
 
 A 3W info map is one of the most commonly requested products during the first month of an operation. __3W__ refers to __who, what, and where__, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.
 
+:::{figure} ../../fig/4.8_3W_example_Turkey.png
+---
+name: 3W Map Turkey
+width: 720 px
+---
+3W Map example: Turkish Red Crescent Response to Earthquake
+:::
+
 __What is needed:__
 
 - A recent version of QGIS
@@ -404,7 +412,7 @@ The styling of a vector data consists of the color and the outline.
 
 4. Style the disaster-related information by selecting a color ramp that fits the context. One common approach is to create a choropleth map using __Graduated__ styling, which visually represents variations in impact or case numbers across administrative areas.
 
-::::{dropdown}
+::::{dropdown} Styling disaster-related information
 
 __Creating a Choropleth Map ("Gradudated Styling)__
 
@@ -454,7 +462,7 @@ A map showing the population of Nigerian states.
 
 5. Add labels to the Admin boundaries (at the level of interest) for clearer identification. 
 
-:::::{dropdown}
+:::::{dropdown} Label administrative boundaries
 
 __Single Labels__
 
