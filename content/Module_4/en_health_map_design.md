@@ -90,7 +90,7 @@ width: 700px
 
 Next, we need to reduce the points visualised on the map to the facilities that actually have hospital beds. In this tutorial, these are `Central Hospital`, `District Hospital`, and `Hospital`.
 
-::::{dropdown} Filter the dataset to see only hospitals
+::::{dropdown} Filter the dataset to see only hospitals (Video)
 
 #### Filter the dataset to see only hospitals
 
@@ -280,7 +280,7 @@ Legend proportional circles: beds + operational status
 
 To make sure your map readers understand the meaning of the colours, you need to customise the legend manually. Here are two practical ways to do this.
 
-::::{dropdown} Option 1: Duplicate the Layer to Create a Legend Helper
+::::{dropdown} Option 1: Legend with helper layer
 
 A straightforward workaround is to duplicate your hospital layer and use these copies solely as legend helpers. Rename the duplicate for easy identification and change its color in the visualization. Make sure to hide this layer in the map view. 
 
@@ -383,16 +383,11 @@ With three visual variables now shown in a single symbol, it’s important that 
 
 
 
-::::{dropdown} Option 1: Duplicate the Layer to Create a Legend Helper
+::::{dropdown} Legend with helper layer
 A straightforward workaround is to duplicate your hospital layer and use the copy solely as legend helpers. Rename the duplicated layer so it’s easy to recognise in the legend. Use 'categorised' classification. Adjust the stroke style (solid, dashed, dotted) to match the categories you used in your map. Make sure to hide the helper layer in the map view so it doesn’t appear on the actual map.
 
 In the Print layout, add the helper layer to the legend. This ensures the legend shows the correct stroke patterns, while your original layer—with its data-defined overrides—continues to control the real map symbology.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video>
-::::
-
-::::{dropdown} Option 2: Edit Legend Colours Directly in the Print Layout
-Another option works entirely within the Print Layout. In the legend, add your hospital layer a second time. On this second copy, you can manually adjust the stroke style of each legend item directly in the legend settings—changing them to the solid, dashed, or dotted patterns you used on the map. Using the option Start a new column before this term, you can place the two legend entries next to each other for a cleaner layout. This method leaves your map unchanged and allows you to customise the legend exactly as needed.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_Malwai_Exampel_Legend_workaround_helper_layer_strok_style.mp4"></video>
 ::::
 
 ```{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png
