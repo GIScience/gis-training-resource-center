@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Visualising health facility capacity with multi-variable point symbols &#8212; GIS Resource Training Center</title>
+    <title>Operational Maps Tutorials &#8212; GIS Resource Training Center</title>
   
   
   
@@ -58,7 +58,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_4/en_health_map_design';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_4/en_module_4_operation_maps';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -388,7 +388,7 @@
       
       
       
-      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Module_4/en_health_map_design.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GIScience/gis-training-resource-center/issues/new?title=Issue%20on%20page%20%2Fcontent/Module_4/en_module_4_operation_maps.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -418,7 +418,7 @@
       
       
       
-      <li><a href="../../_sources/content/Module_4/en_health_map_design.md" target="_blank"
+      <li><a href="../../_sources/content/Module_4/en_module_4_operation_maps.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -502,7 +502,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Visualising health facility capacity with multi-variable point symbols</h1>
+    <h1>Operational Maps Tutorials</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -512,6 +512,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Operational Maps Tutorials</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">Table of content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">Fields used in this tutorial</a></li>
 </ul>
@@ -524,7 +527,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">3W Map Creation</a></li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -546,8 +556,18 @@ document.write(`
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="visualising-health-facility-capacity-with-multi-variable-point-symbols">
-<h1>Visualising health facility capacity with multi-variable point symbols<a class="headerlink" href="#visualising-health-facility-capacity-with-multi-variable-point-symbols" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="operational-maps-tutorials">
+<h1>Operational Maps Tutorials<a class="headerlink" href="#operational-maps-tutorials" title="Link to this heading">#</a></h1>
+<p>Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="table-of-content">
+<h1>Table of content<a class="headerlink" href="#table-of-content" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions">Different QGIS versions</a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open">QGIS on Mac doesn’t open</a></p></li>
+</ul>
+<section id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols">
+<h2>Health Facility Capacity Map: Visualising with multi-variable point symbols<a class="headerlink" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols" title="Link to this heading">#</a></h2>
 <p>A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.</p>
 <p>Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes.</p>
 <figure class="align-default" id="building-a-multi-variable-hospital-capacity-map-step-by-step">
@@ -558,6 +578,7 @@ document.write(`
 </figcaption>
 </figure>
 <p>In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.</p>
+</section>
 <section id="about-the-dataset">
 <h2>About the Dataset<a class="headerlink" href="#about-the-dataset" title="Link to this heading">#</a></h2>
 <p>The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi. <strong><a class="reference external" href="https://data.humdata.org/dataset/malawi-health-facility-registry">Malawi - Health Facility Registry</a></strong>
@@ -976,6 +997,392 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
 </figure>
 </section>
 </section>
+<hr class="docutils" />
+<section id="creating-a-3w-map-who-what-where">
+<h2>Creating a 3W Map (Who, What, Where)<a class="headerlink" href="#creating-a-3w-map-who-what-where" title="Link to this heading">#</a></h2>
+<p><strong>Introduction:</strong></p>
+<p>A 3W info map is one of the most commonly requested products during the first month of an operation. <strong>3W</strong> refers to <strong>who, what, and where</strong>, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.</p>
+<figure class="align-default" id="w-map-turkey">
+<a class="reference internal image-reference" href="../../_images/4.8_3W_example_Turkey.png"><img alt="../../_images/4.8_3W_example_Turkey.png" src="../../_images/4.8_3W_example_Turkey.png" style="width: 720px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">3W Map example: Turkish Red Crescent Response to Earthquake</span><a class="headerlink" href="#w-map-turkey" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Example: 3W Brazil Floods Distribution Map</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/4.8_3W_Brazil_Floods.png"><img alt="../../_images/4.8_3W_Brazil_Floods.png" src="../../_images/4.8_3W_Brazil_Floods.png" style="width: 720px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">3W Map example: Brazil Floods Distribution Map</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><p><strong>What is needed:</strong></p>
+<ul class="simple">
+<li><p>A recent version of QGIS</p></li>
+<li><p>Access to 3W data</p></li>
+<li><p><a class="reference external" href="https://learn-sims.org/style-guidance/logos-and-icons/">IFRC icons</a> for map making</p></li>
+<li><p>Logos of the organizations involved</p></li>
+</ul>
+<p><strong>Getting the 3W data:</strong></p>
+<p>A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into a joined platform, which then can be used as the primary source for the 3W map.</p>
+<p>If no formal 3W data collection system is in place, information might need to be extracted from SitReps and other reports produced by the operation team. Focus first on identifying the following:</p>
+<ul class="simple">
+<li><p><strong>What response activities are the National Society involved in, and where?</strong></p></li>
+<li><p><strong>What response activities are being done by IFRC operation, and where?</strong></p></li>
+<li><p><strong>Key situation overview figures</strong>, such as number of <strong>people affected by the disaster</strong>, <strong>number of deaths or injuries</strong>, number of houses damaged, number of geographical units affected (all of these data points can be modified based on the context of the disaster).</p></li>
+<li><p>Make sure to <strong>note the data source</strong> you are using for key situation overview figures, and whenever possible to align the figures you are using to those used by the host National Society instead of using figures released by the media.</p></li>
+<li><p>How many people or households are being reached by sectoral activities, and where?</p></li>
+</ul>
+<p>It is normal that the initial dataset is limited. The 3W map will evolve and expand as additional information comes in.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Example: Hurricane Melissa November 2025 | Jamaica</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The two 3W example maps below demonstrate how such <strong>products develop</strong> as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an <strong>initial community assessment</strong>. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the <strong>map’s styling has also evolved</strong>. This progression is entirely normal; maps are expected to <strong>improve</strong> and become <strong>more detailed</strong> over time. What matters most is establishing an initial version that can be updated and refined as the response advances.</p>
+<figure class="align-default" id="w-map-jamaica-melissa-start">
+<a class="reference internal image-reference" href="../../_images/4.8_3w_jamaica_03_11_2025.png"><img alt="../../_images/4.8_3w_jamaica_03_11_2025.png" src="../../_images/4.8_3w_jamaica_03_11_2025.png" style="width: 720px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 03-Nov-2025: Community Assessments (Source: MapAction).</span><a class="headerlink" href="#w-map-jamaica-melissa-start" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="w-map-jamaica-melissa-end">
+<a class="reference internal image-reference" href="../../_images/4.8_3w_jamaica_24_11_2025.png"><img alt="../../_images/4.8_3w_jamaica_24_11_2025.png" src="../../_images/4.8_3w_jamaica_24_11_2025.png" style="width: 720px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sources: MapAction, OCHA).</span><a class="headerlink" href="#w-map-jamaica-melissa-end" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</details><section id="w-map-creation">
+<h3>3W Map Creation<a class="headerlink" href="#w-map-creation" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Add all the relevant spatial data. Used in probably every instance:</p>
+<ul class="simple">
+<li><p>Administrative boundaries</p></li>
+<li><p>Affected areas with the relevant disaster</p></li>
+<li><p>Points of Interest (Airports, Ports, Cities)</p></li>
+<li><p>Background map (OpenStreetMap is always a solid choice)</p></li>
+</ul>
+</li>
+<li><p>Import the 3W Activity data</p>
+<ul class="simple">
+<li><p>Add the 3W dataset to QGIS (mostly CSV or Excel)</p></li>
+<li><p>Ensure that it contains information about the organization, activity type, and location.</p></li>
+</ul>
+</li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">How to import .csv or .txt</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Delimited text import (.csv, .txt)</strong></p>
+<p class="sd-card-text">When working with 3W data, the most common format encountered is a delimited text file, such as <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files (Comma Separated Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They can contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as “Well Known Text” (WKT), which represents complex geometries, such as polygons or lines. In some cases, the table may not include any geographic information at all. When this happens, the file is simply added as a non-spatial table, allowing access to its attribute information without displaying it on the map.</p>
+<p class="sd-card-text"><strong>Open Delimited Text Layer</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p class="sd-card-text">To load data from spreadsheets such as Comma Separated Value (<code class="docutils literal notranslate"><span class="pre">.csv</span></code>) or Excel (<code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>), the datasets need to have columns containing geometry - this is most often in the form of latitude (Y field) and longitude (X field), but might also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.</p>
+</div>
+<figure class="align-center" id="en-import-delimeted-text">
+<a class="reference internal image-reference" href="../../_images/en_import_delimeted_text.png"><img alt="../../_images/en_import_delimeted_text.png" src="../../_images/en_import_delimeted_text.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Import delimited text in QGIS 3.36.</span><a class="headerlink" href="#en-import-delimeted-text" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer</span></code>.</p></li>
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code> click on the three points <img alt="" src="../../_images/Three_points.png" /> and navigate to your CSV file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span></code>: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas <code class="docutils literal notranslate"><span class="pre">,</span></code> are used. If this is not the case, select <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">delimiters</span></code>. Here you can choose the exact delimiter used in your file.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p class="sd-card-text">To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.</p>
+</div>
+<figure class="align-center" id="en-delimited-text-fileformat">
+<a class="reference internal image-reference" href="../../_images/en_delimited_text_fileformat.png"><img alt="../../_images/en_delimited_text_fileformat.png" src="../../_images/en_delimited_text_fileformat.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Adjusting the file format parameters while importing a delimited text layer into QGIS.</span><a class="headerlink" href="#en-delimited-text-fileformat" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p class="sd-card-text">If your CSV file contains geometry, continue with <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">definition</span></code>: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing <strong>latitude</strong> and another with <strong>longitude</strong> data, you can use them to georeferenced the data. Check <code class="docutils literal notranslate"><span class="pre">Point</span> <span class="pre">Coordinates</span></code> if the <code class="docutils literal notranslate"><span class="pre">.csv</span></code>-file contains point data. Select for <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">field</span></code> “LONGITUDE” and for <code class="docutils literal notranslate"><span class="pre">Y</span> <span class="pre">field</span></code> “LATITUDE”.</p></li>
+<li><p class="sd-card-text">Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">CRS</span></code> select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Add</span></code></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Opening delimited text files in QGIS</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video></p>
+</div>
+</details></div>
+</details><ol class="arabic simple" start="3">
+<li><p>Style the administrative boundaries with a transparent fill and choose an appropriate <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">width</span></code> to ensure they are clearly visible without obscuring underlying map content.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Styling administrative boundaries</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Styling administrative boundaries (Polygons)</strong></p>
+<p class="sd-card-text">When creating 3W maps, administrative boundaries are always a key component. Most overview maps display disaster-related information aggregated by these boundaries. To visualize multiple administrative levels at once, each layer needs to be styled so that lower layers remain visible and the hierarchy between levels is clear. Often, this begins with adding the country outline and then progressively adding each subsequent administrative level, ensuring that the symbology distinguishes them without cluttering the map.</p>
+<p class="sd-card-text"><strong>Only display the outlines of polygons</strong></p>
+<p class="sd-card-text">Now, we want to change the symbology of a layer so that <strong>only the outlines of the polygons are visible</strong>. This is necessary to make layers below this one visible.</p>
+<p class="sd-card-text">To change the symbology of a single layer:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Styling</span> <span class="pre">panel</span></code> and navigate to the symbology tab. By default, the symbology will be set to <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>. This means that the same colors and contours will be applied to all the features in that layer.</p></li>
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code>.</p></li>
+<li><p class="sd-card-text">Click on the arrow to the right of <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code>.</p></li>
+<li><p class="sd-card-text">Check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-vector-layer-styling-transparent">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_vector_layer_styling_transparent.png"><img alt="../../_images/en_30.30.2_vector_layer_styling_transparent.png" src="../../_images/en_30.30.2_vector_layer_styling_transparent.png" style="width: 500px;" />
+</a>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Making the fill color transparent</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video></p>
+</div>
+</details><p class="sd-card-text"><strong>Adjusting the Styles of Multiple Overlaying Layers</strong></p>
+<p class="sd-card-text"><strong>Ordering the layers</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Import all the administrative boundaries into your QGIS-project that you want to work with (e.g. Admin 0-2).</p></li>
+<li><p class="sd-card-text">One option is to order the layers in the Layers panel so that the <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>-layer sits on top, followed by <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin2</span></code>. At first, this might look weird because <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> will cover everything.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-changing-layer-style-1">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_1.png"><img alt="../../_images/en_30.30.2_changing_layer_style_1.png" src="../../_images/en_30.30.2_changing_layer_style_1.png" style="height: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Order the layers and navigate to the styling panel of the topmost layer</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">Change the symbology of the <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> layer by opening the styling panel and navigating to the Symbology tab.</p></li>
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Simple</span> <span class="pre">Fill</span></code> to open the style options.</p></li>
+<li><p class="sd-card-text">Expand the <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code> menu and check the <code class="docutils literal notranslate"><span class="pre">Transparent</span> <span class="pre">Fill</span></code> option. This will make only the boundaries visible, so <strong>we will be able to see the layer under this one</strong>.</p></li>
+<li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Color</span></code>, and adjust the <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Width</span></code>.</p></li>
+<li><p class="sd-card-text">Click OK.</p></li>
+<li><p class="sd-card-text"><strong>Repeat the same process</strong> for the <code class="docutils literal notranslate"><span class="pre">Admin1</span></code> layer, using the same color as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> (it will be in “Recent colors). Adjust the stroke width so that it differs from <code class="docutils literal notranslate"><span class="pre">Admin0</span></code>, ensuring that the administrative levels remain visually distinct.</p></li>
+<li><p class="sd-card-text">Now we can see the boundaries of the country and its states, and behind that we can see the districts (<code class="docutils literal notranslate"><span class="pre">Admin2</span></code>).</p></li>
+<li><p class="sd-card-text">Let’s make the district layer’s style consistent with the others.</p></li>
+<li><p class="sd-card-text">Choose a <code class="docutils literal notranslate"><span class="pre">Fill</span> <span class="pre">Color</span></code>.</p></li>
+<li><p class="sd-card-text">Use the same <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">Color</span></code> as for <code class="docutils literal notranslate"><span class="pre">Admin0</span></code> and <code class="docutils literal notranslate"><span class="pre">Admin1</span></code>, but make the width even thiner and the Stroke Style a <strong>Dash Line</strong>.</p></li>
+<li><p class="sd-card-text">Click OK and look at your map: hopefully it’s starting to look nicer!</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-changing-layer-style-3">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_changing_layer_style_3.png"><img alt="../../_images/en_30.30.2_changing_layer_style_3.png" src="../../_images/en_30.30.2_changing_layer_style_3.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The styling of a vector data consists of the color and the outline.</span><a class="headerlink" href="#en-30-30-2-changing-layer-style-3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: Adjusting the style for multiple layers</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video></p>
+</div>
+</details></div>
+</details><ol class="arabic simple" start="4">
+<li><p>Style the disaster-related information by selecting a color ramp that fits the context. One common approach is to create a choropleth map using <strong>Graduated</strong> styling, which visually represents variations in impact or case numbers across administrative areas.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Styling disaster-related information</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Creating a Choropleth Map (“Gradudated Styling)</strong></p>
+<p class="sd-card-text">If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colors. In this example, colors are assigned to Admin1 polygons based on the total population of each State.</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Symbology</span></code> options and choose <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
+<li><p class="sd-card-text"><strong>Select the value you want to use to assign colors</strong>, in this case, it will be <code class="docutils literal notranslate"><span class="pre">total_pop</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-symbology-variable-ranges">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges.png" src="../../_images/en_30.30.2_symbology_variable_ranges.png" style="width: 550px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">With variable ranges, select <strong>Graduated</strong> symbology and choose the attribute with continuous values</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">Click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code> to <strong>list all values divided in classes</strong>.</p></li>
+<li><p class="sd-card-text">Choose <strong>how many classes</strong> you want the data to be divided into ‒ let’s say 4. You can also assign different <code class="docutils literal notranslate"><span class="pre">Modes</span></code>. We usually work with <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Count</span></code> or <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code> depending on our data.</p></li>
+<li><p class="sd-card-text">By default, the color ramp will be red. However, red is not the right color to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</p></li>
+<li><p class="sd-card-text">Click on <strong>the arrow next to the color ramp</strong> to choose another combination of colors - let’s say a color ramp from white to blue.</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> to preview the look of your layer, then <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-symbology-variable-ranges-2">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_symbology_variable_ranges_2.png"><img alt="../../_images/en_30.30.2_symbology_variable_ranges_2.png" src="../../_images/en_30.30.2_symbology_variable_ranges_2.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">You can categorize the continuous values into classes and assign a color ramp .</span><a class="headerlink" href="#en-30-30-2-symbology-variable-ranges-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text">The following map shows the most populated states of Nigeria using a graduated color categorization. These types of maps are called <strong>Choropleth maps</strong>.</p>
+<figure class="align-default" id="en-map-design-example-variable-ranges">
+<a class="reference internal image-reference" href="../../_images/en_map_design_example_variable_ranges.png"><img alt="../../_images/en_map_design_example_variable_ranges.png" src="../../_images/en_map_design_example_variable_ranges.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">A map showing the population of Nigerian states.</span><a class="headerlink" href="#en-map-design-example-variable-ranges" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: How to create a choropleth map</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+.mp4"></video></p>
+</div>
+</details></div>
+</details><ol class="arabic simple" start="5">
+<li><p>Add labels to the Admin boundaries (at the level of interest) for clearer identification.</p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Label administrative boundaries</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Single Labels</strong></p>
+<p class="sd-card-text">Creates a single label style for every feature in the layer. You can select an attribute (value) which will be
+displayed. For example, the name of a district. You need to know which attribute displays the information you want to
+display. Look at the attribute table of the dataset to find it out.</p>
+<figure class="align-default" id="labels-single-labels-example-nga-adm1">
+<a class="reference internal image-reference" href="../../_images/labels_single_labels_example_nga_adm1.png"><img alt="../../_images/labels_single_labels_example_nga_adm1.png" src="../../_images/labels_single_labels_example_nga_adm1.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.</span><a class="headerlink" href="#labels-single-labels-example-nga-adm1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="en-30-30-2-assigning-value-to-labels">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_assigning_value_to_labels.png"><img alt="../../_images/en_30.30.2_assigning_value_to_labels.png" src="../../_images/en_30.30.2_assigning_value_to_labels.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (<code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code>) to be displayed.</span><a class="headerlink" href="#en-30-30-2-assigning-value-to-labels" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text"><strong>Adding Single Labels to a Layer</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">In the styling panel, click on the <code class="docutils literal notranslate"><span class="pre">Labels</span></code>-tab underneath the Symbology tab.</p></li>
+<li><p class="sd-card-text">Select <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">labels</span></code>.</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Value</span></code> is where you choose the attribute that will be displayed as a label. For example <code class="docutils literal notranslate"><span class="pre">ADM1_EN</span></code> will display the English names of Nigerian states for each feature in the data set.</p></li>
+<li><p class="sd-card-text">Let’s <strong>change the font</strong>: Open the font dropdown menu and select Arial. Make the text <code class="docutils literal notranslate"><span class="pre">Bold</span></code> in the Style dropdown menu. Change the color by clicking on <code class="docutils literal notranslate"><span class="pre">Color</span></code>, and change the <code class="docutils literal notranslate"><span class="pre">Size</span></code> to 8 pt.</p></li>
+<li><p class="sd-card-text">Let’s <strong>add a white buffer</strong> around the label. In the <code class="docutils literal notranslate"><span class="pre">Labels</span></code> tab, you will find a list with different options to style the labels. Right now, we are in the <code class="docutils literal notranslate"><span class="pre">Text</span></code> menu. Select <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> and check the <code class="docutils literal notranslate"><span class="pre">Draw</span> <span class="pre">text</span> <span class="pre">buffer</span></code> option. This will make the labels stand out more on dark or crowded maps.</p></li>
+<li><p class="sd-card-text">Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code> and <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<figure class="align-default" id="en-30-30-2-setting-up-labels">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_setting_up_labels.png"><img alt="../../_images/en_30.30.2_setting_up_labels.png" src="../../_images/en_30.30.2_setting_up_labels.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Setting up labels in QGIS 30.30.2</span><a class="headerlink" href="#en-30-30-2-setting-up-labels" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video: How to add single labels</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video></p>
+</div>
+</details><div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p class="sd-card-text">Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.</p>
+<figure class="align-default" id="single-labels-bad-example">
+<a class="reference internal image-reference" href="../../_images/single_labels_bad_example.png"><img alt="../../_images/single_labels_bad_example.png" src="../../_images/single_labels_bad_example.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood.</span><a class="headerlink" href="#single-labels-bad-example" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</details><ol class="arabic simple" start="6">
+<li><p>Set up a new <strong>Print Layout</strong>.</p>
+<ul class="simple">
+<li><p>Add a new map by clicking on the <img alt="" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">map</span></code>-button.</p></li>
+<li><p>Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.</p></li>
+<li><p>Add a header using the <img alt="" src="../../_images/30.30.2_print_layout_add_text.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Label</span></code>-tool. It should contain the following information:</p>
+<ul>
+<li><p>The title (e.g. Sudanese Red Crescent Response)</p></li>
+<li><p>The type of disaster or emergency</p></li>
+<li><p>The geographic location of the disaster</p></li>
+<li><p>The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.</p></li>
+</ul>
+</li>
+<li><p>Add <strong>Organizational logos</strong> (e.g., International Medical Corps, Relief International, International Rescue Committee) using the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code>-tool to ensure that each active organization can be easily identified on the map.</p></li>
+<li><p>Icons which describe the specific activity. These can also be added using the <img alt="" src="../../_images/30.30.2_print_layout_add_image.png" /> <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span></code>-tool. Make use of the <a class="reference external" href="https://learn-sims.org/style-guidance/logos-and-icons/">IFRC icons</a> for map making.</p></li>
+<li><p>A small overview map to help situate the disaster-affected area within a broader geographic context.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Multiple text boxes can be used to display the header in different font sizes, helping to clearly separate different layers of information. If all content should remain within a single label box, <code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">as</span> <span class="pre">HTML</span></code> can be applied to format and style the text as needed.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Starting the Print Layout</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Open the Print Layout</strong></p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Go to <strong>Project &gt; New Print Layout &gt; enter a name for the new print layout &gt; click OK</strong></p></li>
+<li><p class="sd-card-text">A new window with a blank print layout will appear.</p></li>
+</ol>
+<figure class="align-default" id="create-print-layout">
+<a class="reference internal image-reference" href="../../_images/en_30.30.2_create_print_layout.png"><img alt="../../_images/en_30.30.2_create_print_layout.png" src="../../_images/en_30.30.2_create_print_layout.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Create a new Print Layout</span><a class="headerlink" href="#create-print-layout" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p class="sd-card-text"><strong>Map Composition</strong></p>
+<p class="sd-card-text">A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.</p>
+<p class="sd-card-text">In general, there are a few things to keep in mind when creating a map:</p>
+<ul class="simple">
+<li><p class="sd-card-text">The main map should cover the largest portion of the page and be centred.</p></li>
+<li><p class="sd-card-text">A complete map must have:</p>
+<ul>
+<li><p class="sd-card-text">A meaningful title</p></li>
+<li><p class="sd-card-text">All the sources used</p></li>
+<li><p class="sd-card-text">A legend <img alt="" src="../../_images/30.30.2_print_layout_add_legend.png" /> explaining symbols and color schemes.</p></li>
+<li><p class="sd-card-text">A scale bar</p></li>
+<li><p class="sd-card-text">A north arrow</p></li>
+<li><p class="sd-card-text">and necessary other information to contextualize the information presented on the map.</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">This additional information, such as the title should be scaled accordingly.</p>
+<ul>
+<li><p class="sd-card-text">Titles should be large so the reader can identify it as the main topic of the map.</p></li>
+<li><p class="sd-card-text">Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">A well-structured page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.</p></li>
+</ul>
+</div>
+</details><ol class="arabic simple" start="7">
+<li><p>Areas of operation for each organization</p>
+<ul class="simple">
+<li><p>Place the logos of each organization within the districts where they are active.</p></li>
+<li><p>Add activity icons to indicate the specific types of work each organization is carrying out in those districts.</p></li>
+<li><p>To illustrate the link between organization logos, activity icons, and their corresponding areas, arrows can be added to the map. Using this feature helps clearly emphasize the relationships and improves overall readability.</p></li>
+</ul>
+</li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">How to add arrow item</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The arrows <img alt="" src="../../_images/mActionAddArrow.png" /> can be added from the left-side panel in the Print Layout. Click and drag on the layout to draw it, then use the Item Properties panel to adjust the arrow’s style, thickness, color, and direction. Arrows can be moved or resized like any other layout item, allowing you to visually connect map features, icons, or labels.</p>
+</div>
+</details><div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Add labels and logos where needed, but avoid cluttering the map with unnecessary text or symbols. Organize map elements by topic, importance, and visual hierarchy to keep the layout clean and structured. Items can be reordered in the Item panel on the upper right side. Once added as images, logos and activity icons can be positioned directly on the map using drag-and-drop. Place them in meaningful locations so they do not overlap or obscure other important information.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All the necessary information about the Print Layout Composer can be found <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html">here</a></p>
+</div>
+<figure class="align-default" id="w-example-cholera">
+<a class="reference internal image-reference" href="../../_images/4.8_3W_own_example.png"><img alt="../../_images/4.8_3W_own_example.png" src="../../_images/4.8_3W_own_example.png" style="width: 700px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">A simple example of a 3W map showing the distribution of Oral Rehydration Points and the active organizations operating in south-eastern Sudan.</span><a class="headerlink" href="#w-example-cholera" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1024,6 +1431,9 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Operational Maps Tutorials</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">Table of content</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">Fields used in this tutorial</a></li>
 </ul>
@@ -1036,7 +1446,14 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">3W Map Creation</a></li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
