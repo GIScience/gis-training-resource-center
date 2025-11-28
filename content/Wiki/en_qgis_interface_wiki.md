@@ -13,7 +13,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 
-3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
+3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ is displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
 4.  __Status bar:__ In the __status bar__ you will find __central information about the current map view__. Here you can set the __projection of the map view and the scale__. You can read the coordinates of the mouse pointer and thus quickly find out the coordinates of points on the map. You can rotate your map view, e.g. if you want to create a map facing south.
 
@@ -21,7 +21,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-__Offical QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
+__Official QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
 
 ___
 
@@ -44,11 +44,11 @@ ___
 
 
 
-### Project managment
+### Project management
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
-| New Project     | ![](/fig/qgis_new.png)             | 'Ctrl' + 'N'     | Create a new project                    |
-| Open Project    | ![](/fig/qgis_open_project.png)   | 'Ctrl' + 'O'     | Open an existing project                |
+| New project     | ![](/fig/qgis_new.png)             | 'Ctrl' + 'N'     | Create a new project                   |
+| Open project    | ![](/fig/qgis_open_project.png)   | 'Ctrl' + 'O'     | Open an existing project                |
 | Save            | ![](/fig/qgis_save_project.png)   | 'Ctrl' + 'S'     | Save the project                        |
 | Save as…        | ![](/fig/qgis_save_project_as.png) | 'Ctrl' + 'Shift' + 'S'  | Save the project as…           |
 | Properties      |                                    | 'Ctrl' + 'Shift' + 'P'   | Open the project properties      |
@@ -72,20 +72,20 @@ ___
 ### Analysis Tools
 | Name                                     | Menu option                                 | Shortcut                   | Description                                            |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
-| Identify Features                        | ![](/fig/qgis_identify_features.png)       | 'Ctrl' + 'Shift' + 'I'     | Identify features on the map view by clicking on them |
+| Identify features                        | ![](/fig/qgis_identify_features.png)       | 'Ctrl' + 'Shift' + 'I'     | Identify features on the map view by clicking on them |
 | Select feature                          | ![](/fig/qgis_select_features.png)         |                               | Select a feature by area or single click             |
 | Select feature by value                  | ![](/fig/qgis_select_features_by_value.png) | 'F3'                        | Select features by value                              |
-| Open Attribute table                     | ![](/fig/qgis_open_attribute_table.png)     | 'F6'                        | Open the Attribute table                              |
-| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | 'Shift' + 'F6'              | Open the Attribute table with selected features only  |
-| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | 'Ctrl' + 'F6'               | Open the Attribute table with visible features only   |
+| Open attribute table                     | ![](/fig/qgis_open_attribute_table.png)     | 'F6'                        | Open the attribute table                              |
+| Open attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | 'Shift' + 'F6'              | Open the attribute table with selected features only  |
+| Open attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | 'Ctrl' + 'F6'               | Open the attribute table with visible features only   |
 
 
 
 ### Advanced Tools
 | Name                    | Menu option                            | Shortcut          | Description                  |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
-| Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | 'Ctrl' + 'Alt' + 'T' | Opens the Processing Toolbox |
-| Python Console          | ![](/fig/qgis_python_console.png)     | 'Ctrl' + 'Alt' + 'P' | Opens the Python Console     |
+| Processing toolbox      | ![](/fig/qgis_processing_toolbox.png) | 'Ctrl' + 'Alt' + 'T' | Opens the processing toolbox |
+| Python console          | ![](/fig/qgis_python_console.png)     | 'Ctrl' + 'Alt' + 'P' | Opens the Python console     |
 
 
 
@@ -95,6 +95,7 @@ ___
 ### Moving the map view
 
 To move on the map canvas with your mouse cursor you need to toggle the hand button. 
+
 
 ![](/fig/qgis_move_symbol.png)
 
@@ -155,7 +156,7 @@ At each toolbar there is a field of two dotted lines. If you move the mouse poin
 ## Save & Open QGIS Projects
 
 To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one __BIG__ difference. 
-In QGIS the geodata you work with is __not__ saved in your QGIS projectfile. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+In QGIS the geodata you work with is __not__ saved in your QGIS project file. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 
 ### Open Projects
 
