@@ -574,15 +574,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-overview">Dataset overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">Fields used in this tutorial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-the-malawi-health-facilities-csv-into-qgis">Import the Malawi health facilities CSV into QGIS</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-data-briefly-and-create-a-hospitals-only-layer">Inspect the data briefly and create a “hospitals only” layer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualise-hospital-capacity-using-proportional-graduated-size-circles">Visualise hospital capacity using proportional (graduated-size) circles</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-the-classes-manually-recommended">2. Adjust the classes manually (recommended)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-data-defined-override-to-the-colour">2. Add a data-defined override to the colour</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facilit-capacity-map-tutorial">Health Facilit Capacity Map Tutorial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">Data preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-beds-with-proportional-circle-methods">Visualising the number of beds with proportional circle methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-visualisation-of-operational-status-with-colour">Adding visualisation of operational status with colour</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-legend-match-your-map">Making the Legend Match Your Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -607,91 +610,25 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="visualising-health-facility-capacity-with-multi-variable-point-symbols">
 <h1>Visualising health facility capacity with multi-variable point symbols<a class="headerlink" href="#visualising-health-facility-capacity-with-multi-variable-point-symbols" title="Link to this heading">#</a></h1>
-<p>Maps of health facilities are often used to answer very practical questions:</p>
-<ul class="simple">
-<li><p><strong>Where can people access care in an emergency?</strong></p></li>
-<li><p><strong>Which areas depend on just one hospital or health centre?</strong></p></li>
-<li><p><strong>Where are the gaps between population needs and available services?</strong></p></li>
-</ul>
-<p>A simple point map with one symbol per facility is a good start, but it quickly becomes limiting.<br />
-Decision-makers usually need to see <strong>several pieces of information at once</strong>, for example:</p>
-<ul class="simple">
-<li><p>Is the facility <strong>functional or non-functional</strong>?</p></li>
-<li><p>How many <strong>beds</strong> are available?</p></li>
-<li><p>What <strong>type</strong> of facility is it (hospital, health centre, dispensary, health post)?</p></li>
-<li><p>Who is the <strong>owner</strong> or managing authority (Government,  private, etc.)?</p></li>
-</ul>
-<p>In this tutorial, we focus on <strong>two key attributes</strong> of hospitals:</p>
-<ul class="simple">
-<li><p><strong>Number of beds</strong> – a simple proxy for <em>capacity</em></p></li>
-<li><p><strong>Status (Functional / Non-functional)</strong> – a simple proxy for <em>availability</em></p></li>
-</ul>
-<p>By combining these in a <strong>single point symbol</strong>, we can show:</p>
-<ul class="simple">
-<li><p><strong>Size</strong> → how many beds the hospital has</p></li>
-<li><p><strong>Colour</strong> → whether the hospital is functional or not</p></li>
-<li><p><strong>symbols</strong> → Additional informations</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The goal of this exercise is not to produce a “perfect” health system analysis,<br />
-but to practice <strong>cartographic techniques</strong> that help you present multiple dimensions<br />
-of health capacity clearly on a single map.</p>
-</div>
-<section id="dataset-overview">
-<h2>Dataset overview<a class="headerlink" href="#dataset-overview" title="Link to this heading">#</a></h2>
-<p><strong><a class="reference external" href="https://data.humdata.org/dataset/malawi-health-facility-registry">Malawi - Health Facility Registry</a></strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Field name</strong></p></th>
-<th class="head"><p><strong>Description</strong></p></th>
-<th class="head"><p><strong>Example values</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>OWNERSHIP</strong></p></td>
-<td><p>Who owns or operates the facility</p></td>
-<td><p>Government, Private, CHAM, NGO, Mission/Faith-based, Other</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>TYPE</strong></p></td>
-<td><p>Type/classification of the facility</p></td>
-<td><p>Central Hospital, District Hospital, Hospital, Health Centre, Dispensary, Health Post</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>STATUS</strong></p></td>
-<td><p>Operational status</p></td>
-<td><p>Functional, Non-functional</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>ZONE</strong></p></td>
-<td><p>Health zone</p></td>
-<td><p>North Zone, Central East Zone, South West Zone</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>DISTRICT</strong></p></td>
-<td><p>District name</p></td>
-<td><p>Lilongwe, Mzimba, Blantyre</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>DATE OPENED</strong></p></td>
-<td><p>Opening date (text format in this dataset)</p></td>
-<td><p>1957, 2004, 2018</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>LATITUDE</strong></p></td>
-<td><p>Geographic latitude (WGS84)</p></td>
-<td><p>–13.9831</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>LONGITUDE</strong></p></td>
-<td><p>Geographic longitude (WGS84)</p></td>
-<td><p>33.7701</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Number_Beds</strong></p></td>
-<td><p>Number of beds (mainly available for hospitals)</p></td>
-<td><p>10, 35, 120</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.</p>
+<p>Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes.</p>
+<figure class="align-default" id="building-a-multi-variable-hospital-capacity-map-step-by-step">
+<a class="reference internal image-reference" href="../../_images/HS_capacity_map_examepls.drawio.svg"><img alt="../../_images/HS_capacity_map_examepls.drawio.svg" src="../../_images/HS_capacity_map_examepls.drawio.svg" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Building a Multi-Variable Hospital Capacity Map Step by Step</span><a class="headerlink" href="#building-a-multi-variable-hospital-capacity-map-step-by-step" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.</p>
+<section id="about-the-dataset">
+<h2>About the Dataset<a class="headerlink" href="#about-the-dataset" title="Link to this heading">#</a></h2>
+<p>The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi. <strong><a class="reference external" href="https://data.humdata.org/dataset/malawi-health-facility-registry">Malawi - Health Facility Registry</a></strong>
+It exists to provide a single, up-to-date source of information for planning and monitoring health services.</p>
 <blockquote>
 <div><p>⚠️ <strong>Note:</strong> For the purpose of this tutorial, the dataset has been <strong>manipulated</strong>.</p>
 </div></blockquote>
 <hr class="docutils" />
+<p>Download the data folder <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/module_4/exercise_6/Module_4_Exercise_Malawi_Health_Facilities_Registry.zip"><strong>here</strong></a> and save it on your PC. Unzip the .zip file.</p>
 <section id="fields-used-in-this-tutorial">
 <h3>Fields used in this tutorial<a class="headerlink" href="#fields-used-in-this-tutorial" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -716,169 +653,226 @@ of health capacity clearly on a single map.</p>
 </tbody>
 </table>
 </div>
+<p>These fields are enough to build a clear, multi-variable point map.</p>
 </section>
-<section id="import-the-malawi-health-facilities-csv-into-qgis">
-<h3>Import the Malawi health facilities CSV into QGIS<a class="headerlink" href="#import-the-malawi-health-facilities-csv-into-qgis" title="Link to this heading">#</a></h3>
+</section>
+<section id="health-facilit-capacity-map-tutorial">
+<h2>Health Facilit Capacity Map Tutorial<a class="headerlink" href="#health-facilit-capacity-map-tutorial" title="Link to this heading">#</a></h2>
+<section id="data-preparation">
+<h3>Data preparation<a class="headerlink" href="#data-preparation" title="Link to this heading">#</a></h3>
+<p>First, we need to load the Malawi - Health Facility Registry dataset into QGIS</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Import the Malawi health facilities CSV into QGIS.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h4 class="rubric" id="import-the-malawi-health-facilities-csv-into-qgis">Import the Malawi health facilities CSV into QGIS</h4>
 <ol class="arabic simple">
-<li><p>In the top menu, go to<br />
+<li><p class="sd-card-text">In the top menu, go to<br />
 <strong>Layer → Add Layer → Add Delimited Text Layer…</strong></p></li>
-<li><p>Next to the <strong>File name</strong> field, click the three dots <img alt="" src="../../_images/Three_points.png" /><br />
+<li><p class="sd-card-text">Next to the <strong>File name</strong> field, click the three dots <img alt="" src="../../_images/Three_points.png" /><br />
 and browse to your <strong>Malawi health facilities CSV</strong> file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
-<li><p>After selecting the file, QGIS will show a preview of the table.<br />
+<li><p class="sd-card-text">After selecting the file, QGIS will show a preview of the table.<br />
 Take a moment to review the columns:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">OWNERSHIP</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">TYPE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">STATUS</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ZONE</span></code>, <code class="docutils literal notranslate"><span class="pre">DISTRICT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">DATE</span> <span class="pre">OPENED</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">LATITUDE</span></code>, <code class="docutils literal notranslate"><span class="pre">LONGITUDE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Number_Beds</span></code><br />
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">OWNERSHIP</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">TYPE</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">STATUS</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">ZONE</span></code>, <code class="docutils literal notranslate"><span class="pre">DISTRICT</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">DATE</span> <span class="pre">OPENED</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">LATITUDE</span></code>, <code class="docutils literal notranslate"><span class="pre">LONGITUDE</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Number_Beds</span></code><br />
 These fields contain all information needed for the mapping exercise.</p></li>
 </ul>
 </li>
-<li><p>Under <strong>Geometry Definition</strong>:</p>
+<li><p class="sd-card-text">Under <strong>Geometry Definition</strong>:</p>
 <ul class="simple">
-<li><p>Select <strong>Point coordinates</strong>.</p></li>
-<li><p>Set <strong>X field</strong> = <code class="docutils literal notranslate"><span class="pre">LONGITUDE</span></code>.</p></li>
-<li><p>Set <strong>Y field</strong> = <code class="docutils literal notranslate"><span class="pre">LATITUDE</span></code>.</p></li>
-<li><p>Ensure the <strong>Geometry CRS</strong> is set to <strong>EPSG:4326 – WGS 84</strong>.</p></li>
+<li><p class="sd-card-text">Select <strong>Point coordinates</strong>.</p></li>
+<li><p class="sd-card-text">Set <strong>X field</strong> = <code class="docutils literal notranslate"><span class="pre">LONGITUDE</span></code>.</p></li>
+<li><p class="sd-card-text">Set <strong>Y field</strong> = <code class="docutils literal notranslate"><span class="pre">LATITUDE</span></code>.</p></li>
+<li><p class="sd-card-text">Ensure the <strong>Geometry CRS</strong> is set to <strong>EPSG:4326 – WGS 84</strong>.</p></li>
 </ul>
 </li>
-<li><p>Click <strong>Add</strong>.<br />
+<li><p class="sd-card-text">Click <strong>Add</strong>.<br />
 The layer will now appear in your <strong>Layers</strong> panel and the points will display on the map canvas.</p></li>
 </ol>
 <figure class="align-default" id="import-health-facilities-csv">
 <a class="reference internal image-reference" href="../../_images/en_point_visualisation_malawi_HS_csv_import.png"><img alt="../../_images/en_point_visualisation_malawi_HS_csv_import.png" src="../../_images/en_point_visualisation_malawi_HS_csv_import.png" style="width: 700px;" />
 </a>
 </figure>
-</section>
-<section id="inspect-the-data-briefly-and-create-a-hospitals-only-layer">
-<h3>Inspect the data briefly and create a “hospitals only” layer<a class="headerlink" href="#inspect-the-data-briefly-and-create-a-hospitals-only-layer" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p><strong>Open the attribute table</strong></p>
+</div>
+</details><p>Next, we need to reduce the points visualised on the map to the facilities that actually have hospital beds. In this tutorial, these are <code class="docutils literal notranslate"><span class="pre">Central</span> <span class="pre">Hospital</span></code>, <code class="docutils literal notranslate"><span class="pre">District</span> <span class="pre">Hospital</span></code>, and <code class="docutils literal notranslate"><span class="pre">Hospital</span></code>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Filter the dataset to see only hospitals</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h4 class="rubric" id="filter-the-dataset-to-see-only-hospitals">Filter the dataset to see only hospitals</h4>
+<ol class="arabic">
+<li><p class="sd-card-text"><strong>Open the attribute table</strong></p>
 <ul class="simple">
-<li><p>Right-click <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code> → <strong>Open Attribute Table</strong>.</p></li>
-<li><p>Look briefly at the key fields:</p>
+<li><p class="sd-card-text">Right-click <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code> → <strong>Open Attribute Table</strong>.</p></li>
+<li><p class="sd-card-text">Look briefly at the key fields:</p>
 <ul>
-<li><p><strong>TYPE</strong> – identifies facility type. Hospitals usually appear as <code class="docutils literal notranslate"><span class="pre">Central</span> <span class="pre">Hospital</span></code>, <code class="docutils literal notranslate"><span class="pre">District</span> <span class="pre">Hospital</span></code>, or <code class="docutils literal notranslate"><span class="pre">Hospital</span></code>.</p></li>
-<li><p><strong>STATUS</strong> – should contain <code class="docutils literal notranslate"><span class="pre">Functional</span></code> or <code class="docutils literal notranslate"><span class="pre">Non-functional</span></code>.</p></li>
-<li><p><strong>Number_Beds</strong> – mostly fill</p></li>
+<li><p class="sd-card-text"><strong>TYPE</strong> – identifies facility type. Hospitals usually appear as <code class="docutils literal notranslate"><span class="pre">Central</span> <span class="pre">Hospital</span></code>, <code class="docutils literal notranslate"><span class="pre">District</span> <span class="pre">Hospital</span></code>, or <code class="docutils literal notranslate"><span class="pre">Hospital</span></code>.</p></li>
+<li><p class="sd-card-text"><strong>STATUS</strong> – should contain <code class="docutils literal notranslate"><span class="pre">Functional</span></code> or <code class="docutils literal notranslate"><span class="pre">Non-functional</span></code>.</p></li>
+<li><p class="sd-card-text"><strong>Number_Beds</strong> – mostly fill</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Filter the dataset to include only hospitals</p>
+<li><p class="sd-card-text">Filter the dataset to include only hospitals</p>
 <ul class="simple">
-<li><p>Right-click Malawi_health_facilities_raw → Filter…</p></li>
-<li><p>Enter the expression:</p></li>
+<li><p class="sd-card-text">Right-click Malawi_health_facilities_raw → Filter…</p></li>
+<li><p class="sd-card-text">Enter the expression:</p></li>
 </ul>
-</li>
-</ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;TYPE&quot;</span> <span class="n">IN</span> <span class="p">(</span><span class="s1">&#39;Central Hospital&#39;</span><span class="p">,</span> <span class="s1">&#39;District Hospital&#39;</span><span class="p">,</span> <span class="s1">&#39;Hospital&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Click Test to check how many rows match, then OK.
-- QGIS will now hide all non-hospital facilities.
-- Your filtered layer now shows only hospital facilities.
-</pre></div>
+<ul class="simple">
+<li><p class="sd-card-text">Click Test to check how many rows match, then OK.</p></li>
+<li><p class="sd-card-text">QGIS will now hide all non-hospital facilities.</p></li>
+<li><p class="sd-card-text">Your filtered layer now shows only hospital facilities.</p></li>
+</ul>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_malwai_exampel_hospital_filter.mp4"></video></p>
+</li>
+</ol>
 </div>
-</section>
-<section id="visualise-hospital-capacity-using-proportional-graduated-size-circles">
-<h3>Visualise hospital capacity using proportional (graduated-size) circles<a class="headerlink" href="#visualise-hospital-capacity-using-proportional-graduated-size-circles" title="Link to this heading">#</a></h3>
-<p>Now that your layer is filtered to show only hospitals, you can create a map that shows <strong>hospital capacity</strong> using <strong>proportional circles</strong>.<br />
+</details></section>
+<section id="visualising-the-number-of-beds-with-proportional-circle-methods">
+<h3>Visualising the number of beds with proportional circle methods<a class="headerlink" href="#visualising-the-number-of-beds-with-proportional-circle-methods" title="Link to this heading">#</a></h3>
+<p>Now that your layer is filtered to show only hospitals, you can create a map that shows hospital capacity using proportional circles.<br />
 The number of beds (<code class="docutils literal notranslate"><span class="pre">Number_Beds</span></code>) will control the <strong>size</strong> of each symbol.</p>
-<p>Follow the steps below:</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Visualise hospital capacity using proportional (graduated-size) circles (video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="visualise-hospital-capacity-using-proportional-circles-graduated-size">Visualise hospital capacity using proportional circles (graduated-size)</h3>
 <ol class="arabic simple">
-<li><p><strong>Open the Layer Styling panel</strong></p>
+<li><p class="sd-card-text"><strong>Open the Layer Styling panel</strong></p>
 <ul class="simple">
-<li><p>Select your hospital layer (the filtered <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code>).</p></li>
-<li><p>Right-click the layer → <strong>Properties…</strong> → <strong>Symbology</strong>.</p></li>
+<li><p class="sd-card-text">Select your hospital layer (the filtered <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code>).</p></li>
+<li><p class="sd-card-text">Right-click the layer → <strong>Properties…</strong> → <strong>Symbology</strong>.</p></li>
 </ul>
 </li>
-<li><p><strong>Change the renderer to Graduated</strong></p>
+<li><p class="sd-card-text"><strong>Change the renderer to Graduated</strong></p>
 <ul class="simple">
-<li><p>At the top of the Symbology window, change the style from <strong>Single Symbol</strong> to <strong>Graduated</strong>.</p></li>
+<li><p class="sd-card-text">At the top of the Symbology window, change the style from <strong>Single Symbol</strong> to <strong>Graduated</strong>.</p></li>
 </ul>
 </li>
-<li><p><strong>Select the attribute for symbol size</strong></p>
+<li><p class="sd-card-text"><strong>Select the attribute for symbol size</strong></p>
 <ul class="simple">
-<li><p>Under <strong>Value</strong>, choose <strong><code class="docutils literal notranslate"><span class="pre">Number_Beds</span></code></strong>.<br />
+<li><p class="sd-card-text">Under <strong>Value</strong>, choose <strong><code class="docutils literal notranslate"><span class="pre">Number_Beds</span></code></strong>.<br />
 This is the field that will control the size of each circle.</p></li>
 </ul>
 </li>
-<li><p><strong>Change the Method to “Size”</strong></p>
+<li><p class="sd-card-text"><strong>Change the Method to “Size”</strong></p>
 <ul class="simple">
-<li><p>Next to <strong>Method</strong>, change the default (usually “Color”) to <strong>Size</strong>.<br />
+<li><p class="sd-card-text">Next to <strong>Method</strong>, change the default (usually “Color”) to <strong>Size</strong>.<br />
 This turns the graduated classification into a <strong>proportional circle map</strong>.</p></li>
 </ul>
 </li>
-<li><p><strong>Generate the classes</strong></p>
+<li><p class="sd-card-text"><strong>Generate the classes</strong></p>
 <ul class="simple">
-<li><p>Click <strong>Classify</strong>.<br />
+<li><p class="sd-card-text">Click <strong>Classify</strong>.<br />
 QGIS will create size classes based on the range of bed numbers in your dataset.</p></li>
 </ul>
 </li>
 </ol>
-</section>
-</section>
-<section id="adjust-the-classes-manually-recommended">
-<h2>2. Adjust the classes manually (recommended)<a class="headerlink" href="#adjust-the-classes-manually-recommended" title="Link to this heading">#</a></h2>
-<p>The data range is <strong>1–200 beds</strong>, but only a few hospitals have more than <strong>80 beds</strong>.<br />
+<h4 class="rubric" id="adjust-the-classes-manually-recommended">Adjust the classes manually (recommended)</h4>
+<p class="sd-card-text">The data range is <strong>1–200 beds</strong>, but only a few hospitals have more than <strong>80 beds</strong>.<br />
 Most hospitals are small or medium-sized.</p>
-<p>Automatic classification would cluster most facilities into one or two classes.<br />
+<p class="sd-card-text">Automatic classification would cluster most facilities into one or two classes.<br />
 To avoid this, we create <strong>balanced, domain-informed classes</strong>:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Class</p></th>
-<th class="head"><p>Bed Range</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Class</p></th>
+<th class="head"><p class="sd-card-text">Bed Range</p></th>
+<th class="head"><p class="sd-card-text">Meaning</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>1</p></td>
-<td><p><strong>1–20</strong></p></td>
-<td><p>Very small hospitals</p></td>
+<tr class="row-even"><td><p class="sd-card-text">1</p></td>
+<td><p class="sd-card-text"><strong>1–20</strong></p></td>
+<td><p class="sd-card-text">Very small hospitals</p></td>
 </tr>
-<tr class="row-odd"><td><p>2</p></td>
-<td><p><strong>21–40</strong></p></td>
-<td><p>Small hospitals</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">2</p></td>
+<td><p class="sd-card-text"><strong>21–40</strong></p></td>
+<td><p class="sd-card-text">Small hospitals</p></td>
 </tr>
-<tr class="row-even"><td><p>3</p></td>
-<td><p><strong>41–60</strong></p></td>
-<td><p>Medium hospitals</p></td>
+<tr class="row-even"><td><p class="sd-card-text">3</p></td>
+<td><p class="sd-card-text"><strong>41–60</strong></p></td>
+<td><p class="sd-card-text">Medium hospitals</p></td>
 </tr>
-<tr class="row-odd"><td><p>4</p></td>
-<td><p><strong>61–80</strong></p></td>
-<td><p>Large hospitals</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">4</p></td>
+<td><p class="sd-card-text"><strong>61–80</strong></p></td>
+<td><p class="sd-card-text">Large hospitals</p></td>
 </tr>
-<tr class="row-even"><td><p>5</p></td>
-<td><p><strong>81–200</strong></p></td>
-<td><p>Very large / referral hospitals</p></td>
+<tr class="row-even"><td><p class="sd-card-text">5</p></td>
+<td><p class="sd-card-text"><strong>81–200</strong></p></td>
+<td><p class="sd-card-text">Very large / referral hospitals</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Adjust the Lower/Upper values for each class accordingly.</p>
+<p class="sd-card-text">Adjust the Lower/Upper values for each class accordingly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Why these ranges?</p>
+<p class="sd-card-text">Why these ranges?</p>
 <ul class="simple">
-<li><p>Most hospitals fall in the <strong>1–60</strong> bed range → we break this into three meaningful groups.</p></li>
-<li><p>Few hospitals exceed <strong>80 beds</strong>, so the top class isolates the rare high-capacity referral facilities.</p></li>
-<li><p>This ensures <strong>variation in symbol size</strong> is visible and not compressed into one tiny class.
+<li><p class="sd-card-text">Most hospitals fall in the <strong>1–60</strong> bed range → we break this into three meaningful groups.</p></li>
+<li><p class="sd-card-text">Few hospitals exceed <strong>80 beds</strong>, so the top class isolates the rare high-capacity referral facilities.</p></li>
+<li><p class="sd-card-text">This ensures <strong>variation in symbol size</strong> is visible and not compressed into one tiny class.
 (See <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification">Graduated Classification</a>)</p></li>
 </ul>
 </div>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video></p>
+</div>
+</details><p>The resulting map displays hospitals as circles of different sizes, each size representing one of the bed-capacity classes you defined earlier.  This gives a quick visual impression of where smaller and larger hospitals are located. However, at this stage the map only shows capacity: it does not yet communicate whether a hospital is functional or non-functional.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p><strong>Proportional circle map showing the number of beds</strong></p>
+<figure class="align-default" id="proportional-circles-beds">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_result.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_result.png" src="../../_images/en_Malwai_Exampel_proportional_circel_result.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Proportional circles: beds</span><a class="headerlink" href="#proportional-circles-beds" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><strong>Classes of proportional circle map</strong></p>
+<p>Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.</p>
+<figure class="align-default" id="proportional-circles-beds-classes">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_result_legend.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_result_legend.png" src="../../_images/en_Malwai_Exampel_proportional_circel_result_legend.png" style="width: 100px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Proportional circles: beds classes</span><a class="headerlink" href="#proportional-circles-beds-classes" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="add-a-data-defined-override-to-the-colour">
-<h2>2. Add a data-defined override to the colour<a class="headerlink" href="#add-a-data-defined-override-to-the-colour" title="Link to this heading">#</a></h2>
+<section id="adding-visualisation-of-operational-status-with-colour">
+<h3>Adding visualisation of operational status with colour<a class="headerlink" href="#adding-visualisation-of-operational-status-with-colour" title="Link to this heading">#</a></h3>
+<p>To visualise the operational status of each hospital (operational or non-operational) alongside its bed capacity, we can use QGIS’s data-defined override functionality. A <strong>data-defined override</strong> allows you to control a symbol property—such as colour, size, rotation, or opacity—using an expression or an attribute value from the layer. This means QGIS adjusts the symbol automatically for each feature, based on the data rather than manual styling. Using this technique, we can assign a colour to each hospital according to its status while keeping the proportional circle sizes for bed capacity.</p>
+<p>First, we need to open the <strong>data-defined override Expression Builder</strong>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Open data-defined override to adjust colour based on operational status (Video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="open-data-defined-override-to-adjust-colour-based-on-operational-status">Open data-defined override to adjust colour based on operational status</h3>
 <ol class="arabic simple">
-<li><p>Select your hospital layer (the filtered <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code>).</p></li>
-<li><p>Right-click the layer → <strong>Properties…</strong> → <strong>Symbology</strong>.</p></li>
-<li><p>Nex to <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> Tab click on the dropdown menue, then click at the top click on <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">Symbol</span></code>. In the new window click on <code class="docutils literal notranslate"><span class="pre">Simpel</span> <span class="pre">Marker</span></code> and then on the data-defined override symbol<img alt="" src="content/Module_4/en_data_defined_overried_icon.png" />
+<li><p class="sd-card-text">Select your hospital layer (the filtered <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code>).</p></li>
+<li><p class="sd-card-text">Right-click the layer → <strong>Properties…</strong> → <strong>Symbology</strong>.</p></li>
+<li><p class="sd-card-text">Nex to <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> Tab click on the dropdown menue, then click at the top click on <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">Symbol</span></code>.</p></li>
+<li><p class="sd-card-text">In the new window click on <code class="docutils literal notranslate"><span class="pre">Simpel</span> <span class="pre">Marker</span></code> and then next to <code class="docutils literal notranslate"><span class="pre">fill</span> <span class="pre">colour</span></code>on the <code class="docutils literal notranslate"><span class="pre">data-defined</span> <span class="pre">override</span></code> symbol<img alt="" src="content/Module_4/en_data_defined_overried_icon.png" />
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video></p></li>
-<li><p>This expression tells QGIS to automatically choose a colour for each hospital based on its <code class="docutils literal notranslate"><span class="pre">STATUS</span></code> attribute.<br />
+</ol>
+</div>
+</details><p>To make this work, we now need to tell QGIS which colour to use for each hospital. Data-defined overrides use the QGIS expression language, which lets you write short rules that are applied automatically to every feature in the layer. In this step, we will write a small expression that checks the value in the STATUS field and assigns the correct colour based on whether the hospital is functional or not.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Use an Expression to Colour Hospitals by Status (Video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3 class="rubric" id="use-an-expression-to-colour-hospitals-by-status">Use an Expression to Colour Hospitals by Status</h3>
+<ol class="arabic simple">
+<li><p class="sd-card-text">This expression tells QGIS to automatically choose a colour for each hospital based on its <code class="docutils literal notranslate"><span class="pre">STATUS</span></code> attribute.<br />
 Functional hospitals become green, non-functional ones become red, and any missing values receive a neutral grey.
 The <code class="docutils literal notranslate"><span class="pre">CASE</span></code> statement works like an “if–else” rule: QGIS checks the value in the <code class="docutils literal notranslate"><span class="pre">STATUS</span></code> field and assigns the corresponding RGB colour (<a class="reference external" href="https://share.google/mYczZipa9EqVWFvyD">RGB Color Picker</a>), ensuring every point is styled consistently without manual editing.
 You can copy the complete code here:</p></li>
@@ -890,12 +884,165 @@ You can copy the complete code here:</p></li>
 <span class="n">END</span>
 </pre></div>
 </div>
-<p><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video></p>
-<p>Your resulting layer should look like this:</p>
-<figure class="align-default" id="id1">
+<p class="sd-card-text">Or write the code yourself using the help of the functionality of the expression builder:
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video></p>
+<figure class="align-default" id="expression-in-data-defined-override-expression-builder">
 <a class="reference internal image-reference" href="../../_images/en_data_defined_overried_calculator_Malwai_Exampel.png"><img alt="../../_images/en_data_defined_overried_calculator_Malwai_Exampel.png" src="../../_images/en_data_defined_overried_calculator_Malwai_Exampel.png" style="width: 700px;" />
 </a>
+<figcaption>
+<p><span class="caption-text">Expression in data-defined override Expression Builder</span><a class="headerlink" href="#expression-in-data-defined-override-expression-builder" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
+</div>
+</details><div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p><strong>Proportional circle map showing the number of beds AND operational status</strong></p>
+<figure class="align-default" id="proportional-circles-beds-operational-status">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png"><img alt="../../_images/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png" src="../../_images/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Proportional circles: beds + operational status</span><a class="headerlink" href="#proportional-circles-beds-operational-status" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><strong>Classes of proportional circle map</strong>
+This new visualisation shows the size of the circle, the number of beds, the colour (Green: Operational; Red: Non-Operation), and the operational status of the hospitals.</p>
+<figure class="align-default" id="legend-proportional-circles-beds-operational-status">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png" src="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Legend proportional circles: beds + operational status</span><a class="headerlink" href="#legend-proportional-circles-beds-operational-status" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="making-the-legend-match-your-map">
+<h3>Making the Legend Match Your Map<a class="headerlink" href="#making-the-legend-match-your-map" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>⚠️ <strong>Note:</strong> When you use a data-defined override to colour your symbols, QGIS does not automatically update the legend.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p>To make sure your map readers understand the meaning of the colours, you need to customise the legend manually. Here are two practical ways to do this.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Option 1: Duplicate the Layer to Create a Legend Helper</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A straightforward workaround is to duplicate your hospital layer and use these copies solely as legend helpers. Rename the duplicate for easy identification and change its color in the visualization. Make sure to hide this layer in the map view.</p>
+<p class="sd-card-text">In the <code class="docutils literal notranslate"><span class="pre">Print</span> <span class="pre">layout</span></code>, you can add this layer to the legend. This way, the legend will display the correct colors, while your original layer, which contains the data-defined overrides, will still be responsible for the actual map styling.</p>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_helper_layer.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Option 2: Edit Legend Colours Directly in the Print Layout</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Another option works only in the <code class="docutils literal notranslate"><span class="pre">Print</span> <span class="pre">Layout</span></code>. In the Legend, just add your hospital layer twice. The secound one, you can adjust the colour of each symbol directly in the Legend. Set each item to green. Using the option <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">column</span> <span class="pre">before</span> <span class="pre">this</span> <span class="pre">term</span></code>, you can place the two layers next to each other.</p>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_print_layout_costum_symbol.mp4"></video></p>
+</div>
+</details><figure class="align-default" id="exampel-map-proportional-circles-hospital-beds-operational-status">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png" src="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Exampel Map Proportional circles: Hospital Beds + Operational Status</span><a class="headerlink" href="#exampel-map-proportional-circles-hospital-beds-operational-status" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="adding-a-third-variable-using-stroke-style-facility-type">
+<h3>Adding a Third Variable Using Stroke Style (Facility Type)<a class="headerlink" href="#adding-a-third-variable-using-stroke-style-facility-type" title="Link to this heading">#</a></h3>
+<p>Your hospital capacity map now contains a rich amount of information, and it is already useful in its current form. However, QGIS allows us to add an additional layer of meaning without creating new layers or changing the existing size and colour logic. One way to do this is by using the stroke—the outline of each symbol—which can be styled or patterned dynamically. In the next section, you will learn how to use the stroke style to represent a third attribute, making your visualisation even more informative while keeping it easy to read.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Adding a Third Variable Using Stroke Style (Video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic simple">
+<li><p class="sd-card-text">Select your hospital layer (the filtered <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code>).</p></li>
+<li><p class="sd-card-text">Right-click the layer → <strong>Properties…</strong> → <strong>Symbology</strong>.</p></li>
+<li><p class="sd-card-text">Nex to <code class="docutils literal notranslate"><span class="pre">Symbol</span></code> Tab click on the dropdown menue, then click at the top click on <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">Symbol</span></code>.</p></li>
+<li><p class="sd-card-text">In the new window click on <code class="docutils literal notranslate"><span class="pre">Simpel</span> <span class="pre">Marker</span></code> and then on the
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_edit.mp4"></video></p></li>
+<li><p class="sd-card-text">You will see:</p></li>
+</ol>
+<ul class="simple">
+<li><p class="sd-card-text">Fill colour</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Outline/stroke</span> <span class="pre">colour</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Outline</span> <span class="pre">width</span></code></p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">style</span></code> ← we will use this</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p class="sd-card-text">Add a Data-Defined Override for Stroke Style</p></li>
+</ol>
+<ul class="simple">
+<li><p class="sd-card-text">Next to <code class="docutils literal notranslate"><span class="pre">Stroke</span> <span class="pre">style</span></code>, click the small <code class="docutils literal notranslate"><span class="pre">data-defined</span> <span class="pre">override</span></code> symbol<img alt="" src="content/Module_4/en_data_defined_overried_icon.png" /></p></li>
+<li><p class="sd-card-text">Choose <code class="docutils literal notranslate"><span class="pre">Edit</span></code> → This opens the QGIS Expression Editor.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p class="sd-card-text">Write an Expression to Assign Stroke Styles for <code class="docutils literal notranslate"><span class="pre">TYPE</span></code></p></li>
+</ol>
+<p class="sd-card-text">Here is an example that distinguishes three hospital categories using clear and readable stroke patterns:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CASE</span>
+  <span class="n">WHEN</span> <span class="s2">&quot;TYPE&quot;</span> <span class="o">=</span> <span class="s1">&#39;Central Hospital&#39;</span> <span class="n">THEN</span> <span class="s1">&#39;solid&#39;</span>
+  <span class="n">WHEN</span> <span class="s2">&quot;TYPE&quot;</span> <span class="o">=</span> <span class="s1">&#39;District Hospital&#39;</span> <span class="n">THEN</span> <span class="s1">&#39;dash&#39;</span>
+  <span class="n">WHEN</span> <span class="s2">&quot;TYPE&quot;</span> <span class="o">=</span> <span class="s1">&#39;Hospital&#39;</span> <span class="n">THEN</span> <span class="s1">&#39;dot&#39;</span>
+  <span class="n">ELSE</span> <span class="s1">&#39;solid&#39;</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p class="sd-card-text">QGIS applies the rule automatically to each feature.</p>
+<p class="sd-card-text"><strong>How this works:</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Central</span> <span class="pre">Hospital</span></code> → solid outline</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">District</span> <span class="pre">Hospital</span></code> → dashed outline</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">Hospital</span></code> → dotted outline</p></li>
+<li><p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">others</span></code> → solid (fallback)</p></li>
+</ul>
+<p class="sd-card-text"><video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video></p>
+</div>
+</details><p>By adding stroke styles to your symbols, the map now carries a third layer of information while keeping the overall design compact and readable. This works best when you limit stroke styles to just a few meaningful categories; using too many patterns will quickly make the map visually noisy. Make sure your legend clearly explains what each pattern represents, and avoid combining stroke style with additional outline colours unless it is absolutely necessary—too many variations can overwhelm the reader. With these principles in mind, your updated map should now communicate three attributes at once in a clear and balanced way.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="proportional-circles-beds-operational-status-owner-status">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png" src="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Proportional circles: beds + operational status + Owner status</span><a class="headerlink" href="#proportional-circles-beds-operational-status-owner-status" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="legend">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png" src="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png" style="width: 200px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Legend
+Proportional circles: beds + operational status + Owner status</span><a class="headerlink" href="#legend" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>With three visual variables now shown in a single symbol, it’s important that the legend reflects all of them clearly. QGIS does not automatically update legend entries when data-defined overrides or stroke styles are used, so a few extra steps are needed to ensure the legend matches what appears on your map. In the next section, you will learn simple ways to adjust the legend so that all size classes, colours, and stroke styles are represented accurately.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Option 1: Duplicate the Layer to Create a Legend Helper</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A straightforward workaround is to duplicate your hospital layer and use the copy solely as legend helpers. Rename the duplicated layer so it’s easy to recognise in the legend. Use ‘categorised’ classification. Adjust the stroke style (solid, dashed, dotted) to match the categories you used in your map. Make sure to hide the helper layer in the map view so it doesn’t appear on the actual map.</p>
+<p class="sd-card-text">In the Print layout, add the helper layer to the legend. This ensures the legend shows the correct stroke patterns, while your original layer—with its data-defined overrides—continues to control the real map symbology.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Option 2: Edit Legend Colours Directly in the Print Layout</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Another option works entirely within the Print Layout. In the legend, add your hospital layer a second time. On this second copy, you can manually adjust the stroke style of each legend item directly in the legend settings—changing them to the solid, dashed, or dotted patterns you used on the map. Using the option Start a new column before this term, you can place the two legend entries next to each other for a cleaner layout. This method leaves your map unchanged and allows you to customise the legend exactly as needed.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video></p>
+</div>
+</details><figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png"><img alt="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png" src="../../_images/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Exampel Map Proportional circles: Hospital Beds + Operational Status</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 </section>
 
@@ -945,15 +1092,18 @@ You can copy the complete code here:</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-overview">Dataset overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">Fields used in this tutorial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-the-malawi-health-facilities-csv-into-qgis">Import the Malawi health facilities CSV into QGIS</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-data-briefly-and-create-a-hospitals-only-layer">Inspect the data briefly and create a “hospitals only” layer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualise-hospital-capacity-using-proportional-graduated-size-circles">Visualise hospital capacity using proportional (graduated-size) circles</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjust-the-classes-manually-recommended">2. Adjust the classes manually (recommended)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-data-defined-override-to-the-colour">2. Add a data-defined override to the colour</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facilit-capacity-map-tutorial">Health Facilit Capacity Map Tutorial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">Data preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-beds-with-proportional-circle-methods">Visualising the number of beds with proportional circle methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-visualisation-of-operational-status-with-colour">Adding visualisation of operational status with colour</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-legend-match-your-map">Making the Legend Match Your Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
