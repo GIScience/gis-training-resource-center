@@ -10,11 +10,11 @@
 
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
-# Table of content
-- []()
-- []()
+## Table of content
+- [Health Facility Capacity Map: Visualising with multi-variable point symbols](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
+- [Creating a 3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#creating-a-3w-map-who-what-where)
 
-## Health Facility Capacity Map: Visualising with multi-variable point symbols
+# Health Facility Capacity Map: Visualising with multi-variable point symbols
 
 A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.
 
@@ -407,7 +407,7 @@ Exampel Map Proportional circles: Hospital Beds + Operational Status
 
 ---
 
-## Creating a 3W Map (Who, What, Where)
+# Creating a 3W Map (Who, What, Where)
 
 __Introduction:__
 
@@ -479,7 +479,7 @@ Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sou
 
 ::::
 
-### 3W Map Creation
+## 3W Map Creation
 
 1. Add all the relevant spatial data. Used in probably every instance:
     - Administrative boundaries

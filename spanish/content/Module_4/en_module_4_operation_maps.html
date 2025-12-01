@@ -512,9 +512,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Operational Maps Tutorials</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">Table of content</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Operational Maps Tutorials</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">Table of content</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">Fields used in this tutorial</a></li>
 </ul>
@@ -527,10 +529,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">3W Map Creation</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">3W Map Creation</a></li>
 </ul>
 </li>
 </ul>
@@ -559,15 +561,16 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="operational-maps-tutorials">
 <h1>Operational Maps Tutorials<a class="headerlink" href="#operational-maps-tutorials" title="Link to this heading">#</a></h1>
 <p>Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="table-of-content">
-<h1>Table of content<a class="headerlink" href="#table-of-content" title="Link to this heading">#</a></h1>
+<section id="table-of-content">
+<h2>Table of content<a class="headerlink" href="#table-of-content" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="#"><code class="xref myst docutils literal notranslate"></code></a></p></li>
-<li><p><a class="reference internal" href="#"><code class="xref myst docutils literal notranslate"></code></a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a></p></li>
 </ul>
-<section id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols">
-<h2>Health Facility Capacity Map: Visualising with multi-variable point symbols<a class="headerlink" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols" title="Link to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols">
+<h1>Health Facility Capacity Map: Visualising with multi-variable point symbols<a class="headerlink" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols" title="Link to this heading">#</a></h1>
 <p>A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.</p>
 <p>Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes.</p>
 <figure class="align-default" id="building-a-multi-variable-hospital-capacity-map-step-by-step">
@@ -578,7 +581,6 @@ document.write(`
 </figcaption>
 </figure>
 <p>In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.</p>
-</section>
 <section id="about-the-dataset">
 <h2>About the Dataset<a class="headerlink" href="#about-the-dataset" title="Link to this heading">#</a></h2>
 <p>The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi. <strong><a class="reference external" href="https://data.humdata.org/dataset/malawi-health-facility-registry">Malawi - Health Facility Registry</a></strong>
@@ -997,9 +999,10 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
 </figure>
 </section>
 </section>
+</section>
 <hr class="docutils" />
-<section id="creating-a-3w-map-who-what-where">
-<h2>Creating a 3W Map (Who, What, Where)<a class="headerlink" href="#creating-a-3w-map-who-what-where" title="Link to this heading">#</a></h2>
+<section class="tex2jax_ignore mathjax_ignore" id="creating-a-3w-map-who-what-where">
+<h1>Creating a 3W Map (Who, What, Where)<a class="headerlink" href="#creating-a-3w-map-who-what-where" title="Link to this heading">#</a></h1>
 <p><strong>Introduction:</strong></p>
 <p>A 3W info map is one of the most commonly requested products during the first month of an operation. <strong>3W</strong> refers to <strong>who, what, and where</strong>, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.</p>
 <figure class="align-default" id="w-map-turkey">
@@ -1058,7 +1061,7 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
 </figure>
 </div>
 </details><section id="w-map-creation">
-<h3>3W Map Creation<a class="headerlink" href="#w-map-creation" title="Link to this heading">#</a></h3>
+<h2>3W Map Creation<a class="headerlink" href="#w-map-creation" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Add all the relevant spatial data. Used in probably every instance:</p>
 <ul class="simple">
@@ -1383,7 +1386,6 @@ display. Look at the attribute table of the dataset to find it out.</p>
 </figure>
 </section>
 </section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1431,9 +1433,11 @@ display. Look at the attribute table of the dataset to find it out.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Operational Maps Tutorials</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">Table of content</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Operational Maps Tutorials</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">Table of content</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">Fields used in this tutorial</a></li>
 </ul>
@@ -1446,10 +1450,10 @@ display. Look at the attribute table of the dataset to find it out.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">3W Map Creation</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">3W Map Creation</a></li>
 </ul>
 </li>
 </ul>
