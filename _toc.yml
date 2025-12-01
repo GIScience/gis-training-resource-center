@@ -40,6 +40,7 @@ parts:
           - file: content/Module_4/en_qgis_map_design_2.md
           - file: content/Module_4/en_qgis_understanding_print_layout.md
           - file: content/Module_4/en_qgis_map_examples.md
+          - file: content/Module_4/en_module_4_operation_maps.md
           - file: content/Module_4/en_qgis_module_4_exercises.md
       - file: content/Module_5/en_module_5_overview.md
         sections:
