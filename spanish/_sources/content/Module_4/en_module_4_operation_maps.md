@@ -11,8 +11,8 @@
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
 # Table of content
-- [Different QGIS versions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)
-- [QGIS on Mac doesn't open](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
+- []()
+- []()
 
 ## Health Facility Capacity Map: Visualising with multi-variable point symbols
 
