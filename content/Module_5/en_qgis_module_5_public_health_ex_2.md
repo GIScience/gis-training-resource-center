@@ -18,7 +18,7 @@ This will help the response coordination team prioritise vaccination deployments
 | :--------------------------------- | :--------------------------------------------------- | :------------------------------------------ | :------------------------------------------------- |
 | `chad_health_infrastructure.qgz`   | QGIS project created in Exercise 1                   | [Previous Exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_module_3_public_health_ex_1.html)        | Local project folder `/project/`                   |
 | `tcd_admbnda_adm2_20250212_AB.shp` | Chad administrative boundaries (level 2 – districts) | OCHA                                        | [HDX](https://data.humdata.org/dataset/cod-ab-tcd) |
-| `tcd_worldpop_2025.tif`            | 2025 population estimate raster                      | WorldPop                                    | [WorldPop](https://www.worldpop.org/)              |
+| `tcd_pop_2025_CN_100m_R2025A_v1.tif`            | 2025 population estimate per grid-cell               | WorldPop                                    | [WorldPop](https://hub.worldpop.org/geodata/summary?id=72895)              |
 | `measles_cases_2025.csv`           | Reported measles cases by district (line list)       | Ministry of Health (MoH) Epidemiology Dept. | Provided for this exercise                         |
 | `tcd_dem_2025.tif`                 | Digital Elevation Model (optional)                   | NASA SRTM                                   | Optional (for terrain visualization)               |
 
@@ -47,7 +47,7 @@ Working with the browser panel allows a much quicker access to the files and kee
 
 In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.
 
-3. Add the WorldPop 2025 raster (`tcd_worldpop_2025.tif`) via drag-and-drop or:
+3. Add the WorldPop 2025 raster (`tcd_pop_2025_CN_100m_R2025A_v1.tif`) via drag-and-drop or:
     `Layer → Add Layer → Add Raster Layer….`
     - Take the time to investigate the new layer. Where is the population concentrated? What is the highest or median cell value? How is raster data different to vector data? 
     :::{tip}
@@ -58,19 +58,27 @@ In order to calculate the incidence rate per district, we first need to know the
     - In the __[Processing Toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars)__, search for "Zonal Statistisc" and open the tool.
     - Set the parameters as follows:
         - Input layer: `tcd_admbnda_adm2_20250212_AB`
-        - Raster layer: `tcd_worldpop_2025`
-        - Raster band: 1
+        - Raster layer: `tcd_pop_2025_CN_100m_R2025A_v1`
+        - Raster band: 1 (there will be only one option available)
         - Ouput column prefix: `population_`
         - Statistics to calculate: `Sum`
     - Click `Run`.
     - The Result will be a new layer called `Zonal Statistics`. This is a temporary layer, indicated by the ![](/fig/qgis_3.40_temp_layer.png) on the right of the layer name. 
-    - Make the layer permanent by <kbd>right-clicking</kbd> on it → `Make permanent`.  
+    - Make the layer permanent by <kbd>right-clicking</kbd> on it → `Make permanent` and give it a name like `tcd_pop_2025_adm2`.  
     - Take a look at the new layer by opening it's attribute table and looking at the new column.
     ::::{margin}
     :::{tip}
     You can also classify the polygons with the new column using [graduated classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
     :::
     ::::
+
+:::{figure} /fig/en_3.40_m3_ex_8_pub_health_2_add_pop.png
+---
+name: en_3.40_m3_ex_8_pub_health_2_add_pop
+width: 650 px
+---
+Graduated classification to display results of population sum calculation
+:::
 
 :::{admonition} Optional: Downloading additional worldpop data
 :class: tip
