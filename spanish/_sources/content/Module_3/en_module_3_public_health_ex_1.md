@@ -386,7 +386,7 @@ When performing joins, pay attention to such inconsistencies.
 
 % Also remove the NULL values from the categorisation: DONE
 
-% Optionally, add DEM here and style the raster layer. This will be used for a overview map. 
+% Optionally, add DEM here and style the raster layer. This will be used for a overview map. -> WHAT WAS THE IDEA HERE?
 
 ### Task 7: Add Digital elevation model
 
