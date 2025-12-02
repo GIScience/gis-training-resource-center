@@ -108,7 +108,7 @@ Make sure to always load csv data via the data source manager and not via the dr
 
 ### Task 4: Aggregate the measles case data with the district boundaries (adm2)
 
-We have received a .csv-file containing measle case report. In order to identify the hotspots, we want to aggregate the number of cases per district (adm2). However, the data does not include geographic coordinates. However, the dataset includes the names of the settlement where the case has been reported, as well as the district. With this information, we can aggregate the number of cases per district and, in a next step, join them with the adm2-layer. 
+We have received a .csv-file containing measle case report. In order to identify the hotspots, we want to aggregate the number of cases per district (adm2). The data does not include geographic coordinates. However, the dataset includes the names of the settlement where the case has been reported, as well as the district. With this information, we can aggregate the number of cases per district and, in a next step, join them with the adm2-layer. 
 
 % Here you could also add a step to filter the date
 
