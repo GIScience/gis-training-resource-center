@@ -220,7 +220,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
 :::{attention}
-Admin Pcodes are best for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
+Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
 :::
 
 % ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
@@ -254,6 +254,7 @@ Admin Pcodes are best for non-spatial joins in QGIS because they provide unique,
     ---
     :::
 11.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
+
     - A new window will open. Here we need to specify the file location and the layer name. 
     - Leave the `Format` on "GeoPackage".
     - Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
@@ -286,10 +287,17 @@ You can move the properties window to the side so you can see the changes in sym
 12. Open the symbology tab via the Properties window for the layer: 
     - <kbd>Right-click</kbd> on the `tcd_adm2_vacc_coverage`-layer → `Properties`. 
     - Navigate to "Symbology" in the tab section on the left.
-    - Here we can change the symbology method from `Single Symbol` to `Categorized`.
-    - Next, we need to select the value which will be used for the classification. Under `Value`, select the column
+    - Here we can change the symbology method from `Single Symbol` to `Graduated`.
+    - Next, we need to select the value which will be used for the classification. Under `Value`, select the column `vaccination_rate_mcv1` and click on classify. We want to use the Mode `Equal Interval` and use 5 Classes for a first assessment of the vaccination coverage.
 
-% ADD CLASSIFICATION STEPS AND RESULT IMAGE
+:::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png
+---
+name: en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map
+width: 700 px
+---
+:::
+
+% ADD CLASSIFICATION STEPS AND RESULT IMAGE: DONE
 
 ### Task 4: Enriching the Healthsites dataset
 
@@ -303,9 +311,9 @@ Because data collection was decentralised and partially paper-based, some facili
 When performing joins, pay attention to such inconsistencies.
 :::
 
-1. Let's import the `Healthsite_capacities.csv` into your QGIS project:
+1. Let's import the `tcd_healthsite_capacities.csv` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
-    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/healthsite_capacities.csv` file and click `Open`.
+    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/tcd_healthsite_capacities.csv` file and click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites. 
     - There are no columns with the coordinates in this datatable. Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
@@ -318,7 +326,7 @@ When performing joins, pay attention to such inconsistencies.
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `hotosm_tcd_health_facilities_points`.
     - Under "Table field", select `name`.
-    - As "Input layer 2", select `healthsite_capacities`.
+    - As "Input layer 2", select `tcd_healthsite_capacities`.
     - Under "Table field 2", select `name`.
     - Under "Layer 2 fields to copy", we can select which columns we want to copy. Click on the ![](/fig/Three_points.png) three dots to the right of the field and select `cold_chain`, `measles_vaccination`, `measles_treatment`, `beds_total`, `pediatric_beds`, `staff_total`, and `remarks`. Then, click `OK`.
     - Finally, to execute the algorithm, click on `Run`. 
@@ -327,8 +335,8 @@ When performing joins, pay attention to such inconsistencies.
     width: 550 px
     name: en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value
     ---
-    Setting the parameters for the "Join Attributes by field value"-tool.
     :::
+
     :::{note}
     After running the algorithm, the window will switch to the log file. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (Table field) is not present in the respective column in layer 2. This can be either because there is not data available, or because there are inconsistencies in the identifying value (e.g., typos, different spelling).
     :::
@@ -345,9 +353,9 @@ When performing joins, pay attention to such inconsistencies.
     - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
     - Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity. 
     - We can remove the healthsites without additional information, as they are already available in the original dataset.
-    - Sort the `total_beds` column ascendingly, so the features with "NULL"-values appear at the top. 
+    - Sort the `beds_total` column ascendingly, so the features with "NULL"-values appear at the top. 
     - Click on row column (on the left), and select the first feature. If selected, the feature should appear blue.
-    - Now scroll down until you see the first feature with a value different then "NULL" in the `total_beds` column.
+    - Now scroll down until you see the first feature with a value different then "NULL" in the `beds_total` column.
     - Hold <kbd>Shift</kbd> and click on the row number of the last feature with the value NULL. 
     - In the toolbar of the attribute table, click on the ![](/fig/mActionToggleEditing.png) `Toggle Editing Mode`-button to enter the editing mode for the attribute table. 
     - Next, click on ![](/fig/attribute_table_delete_feature.png) `Delete selected features` to delete the points with no capacity information. 
@@ -361,20 +369,22 @@ When performing joins, pay attention to such inconsistencies.
 
 5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
     - <kbd>Right-click</kbd> on the `Healthsites_points_capacities` and select `Properties`. A new window will open.
-    - On the left, navigate to the symbology-tab.
+    - On the left, navigate to the Symbology-tab.
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity
     width: 600 px
     ---
-    Classifying the symbology for the healthsites in QGIS 3.40
-    - Instead of `Single Symbol`, select `Categorised` as the visualisation method.
+    :::
+
+    - Instead of `Single Symbol`, we will now select `Categorised` as the visualisation method.
     - As "Value", select `cold_chain`
     - Next, click on `Classify`. 
     - If you want, you can adjust the symbology for the classes by double clicking on one. 
+    - As we are not interested in `cold_chain` values which equal NULL, we can remove these classification entries by selecting them and clicking on the red minus right next to the `Classify` button.
     - Click `Apply`, then close the properties window. 
 
-% Also remove the NULL values from the categorisation
+% Also remove the NULL values from the categorisation: DONE
 
 % Optionally, add DEM here and style the raster layer. This will be used for a overview map. 
 
