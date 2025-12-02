@@ -74,9 +74,9 @@ In order to calculate the incidence rate per district, we first need to know the
 
 :::{admonition} Optional: Downloading additional worldpop data
 :class: tip
-WorldPop also offers estimations of population in age brackets. For our scenario, it is useful to know the population under 5 per district. 
+WorldPop also offers estimations of population in age bracktes. For our scenario, it is useful to know the population under 5 per district. Look for Age structures and search for the country of Chad.
 
-Can you find and download the WorlPop raster containing the population under 5?
+Can you find and download the WorlPop raster containing the population under 5? For a hint look [here](https://hub.worldpop.org/geodata/listing?id=138)
 
 Once you've done so, import it to your QGIS project and calculate the population under 5 per district. 
 
@@ -89,6 +89,7 @@ Once you've done so, import it to your QGIS project and calculate the population
 5. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the measles cases dataset as a __delimited text layer__ with no geometry.
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open.
     - To the right of file name, click on the ![](/fig/Three_points.png) three points and navigate to the file in the `/data/input/`-folder. Click `Open`.
+    - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? The measles cases don't have any geometry information.
     - Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Check if the sample data displays correctly. Make sure the data type is correct (e.g., cases as integers, not as string).
     - Click `Add`. 
