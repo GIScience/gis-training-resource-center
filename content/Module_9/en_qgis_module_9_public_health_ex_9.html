@@ -679,11 +679,11 @@ document.write(`
 <div><p>In order to calculate accessibility, we will generate travel-time isochrones (zones of equal travel time) around each vaccination facility.</p>
 </div></blockquote>
 <ol class="arabic simple">
-<li><p>In the <strong>Processing Toolbox</strong>, search for <strong>ORS Tools → Isochrones from Layer</strong>.</p></li>
+<li><p>In the <strong>Processing Toolbox</strong>, search for <strong>ORS Tools → Isochrones from Point-Layer</strong>.</p></li>
 <li><p>Open the tool and set the parameters as follows:</p>
 <ul class="simple">
+<li><p><strong>Travel mode:</strong> <code class="docutils literal notranslate"><span class="pre">driving-car</span></code> <em>(for motorised travel)</em></p></li>
 <li><p><strong>Input point layer:</strong> <code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code></p></li>
-<li><p><strong>Profile:</strong> <code class="docutils literal notranslate"><span class="pre">driving-car</span></code> <em>(for motorised travel)</em></p></li>
 <li><p><strong>Range type:</strong> <code class="docutils literal notranslate"><span class="pre">time</span></code></p></li>
 <li><p><strong>Range (minutes):</strong> <code class="docutils literal notranslate"><span class="pre">30,</span> <span class="pre">60,</span> <span class="pre">120,</span> <span class="pre">240</span></code></p></li>
 <li><p><strong>Dissolve all isochrones:</strong> ✅ (checked)</p></li>
@@ -713,7 +713,7 @@ document.write(`
 <section id="task-5-calculating-population-coverage-using-worldpop">
 <h2>Task 5: Calculating Population Coverage Using WorldPop<a class="headerlink" href="#task-5-calculating-population-coverage-using-worldpop" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>In the <strong>Processing Toolbox</strong>, search for and open the tool <strong>Zonal Statistics</strong>.</p></li>
+<li><p>In the <strong>Processing Toolbox</strong>, search for the tool <strong>Zonal Statistics</strong> and open it.</p></li>
 <li><p>Configure the tool:</p>
 <ul class="simple">
 <li><p><strong>Raster layer:</strong> <code class="docutils literal notranslate"><span class="pre">WorldPop_2025_TCD.tif</span></code></p></li>

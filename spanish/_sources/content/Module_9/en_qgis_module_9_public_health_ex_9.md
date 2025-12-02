@@ -53,10 +53,10 @@ To do this, you will use the **OpenRouteService (ORS)** plugin in QGIS to genera
 
 > In order to calculate accessibility, we will generate travel-time isochrones (zones of equal travel time) around each vaccination facility.
 
-1. In the **Processing Toolbox**, search for **ORS Tools → Isochrones from Layer**.
+1. In the **Processing Toolbox**, search for **ORS Tools → Isochrones from Point-Layer**.
 2. Open the tool and set the parameters as follows:
+   - **Travel mode:** `driving-car` *(for motorised travel)*
    - **Input point layer:** `Healthsites_points_capacities`
-   - **Profile:** `driving-car` *(for motorised travel)*
    - **Range type:** `time`
    - **Range (minutes):** `30, 60, 120, 240`
    - **Dissolve all isochrones:** ✅ (checked)
@@ -82,7 +82,7 @@ In the first version of this analysis, we considered a **50 km distance threshol
 
 ## Task 5: Calculating Population Coverage Using WorldPop
 
-1. In the **Processing Toolbox**, search for and open the tool **Zonal Statistics**.
+1. In the **Processing Toolbox**, search for the tool **Zonal Statistics** and open it.
 2. Configure the tool:
    - **Raster layer:** `WorldPop_2025_TCD.tif`
    - **Vector layer containing zones:** `Isochrones_vaccination_points`
