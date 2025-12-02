@@ -94,7 +94,7 @@ Once you've done so, import it to your QGIS project and calculate the population
 
 % Revise this step.
 
-5. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the measles cases dataset as a __delimited text layer__ with no geometry.
+5. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the `measles_cases_adm2` dataset as a __delimited text layer__ with no geometry.
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open.
     - To the right of file name, click on the ![](/fig/Three_points.png) three points and navigate to the file in the `/data/input/`-folder. Click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? The measles cases don't have any geometry information.
