@@ -114,11 +114,11 @@ width: 600 px
 name: en_m3_ex_8_public_health_part_1_hdx_search
 ---
 :::
-2. Download the layers.
-    - On the download page, you can usually select different data formats. The formats are indicated by their file endings (e.g., `.shp`, `-gpkg`, `.gdb`)
+3. Download the layers.
+    - On the download page, you can usually select different data formats. The formats are indicated by their file endings (e.g., `.shp`, `.gpkg`, `.gdb`)
     - Choose the following formats: 
         - Chad Administrative Boundaries (OCHA): __Shapefile__
-        - Chad Health Facilities (OpenStreetMap Export): __GeoPackage__ and __Points__
+        - Chad Health Facilities (OpenStreetMap Export): __GeoPackage__ for __Points__, we don't need the polygons information for this example
         - Chad Roads (OCHA): __Shapefile__
         :::{figure} /fig/en_m3_ex_8_public_health_part_1_hdx_data_formats.png
         ---
@@ -126,7 +126,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
         width: 600 px
         ---
         :::
-3. Unzip the folders and make sure to save them in the standard folder structure into the `data/input/`-folder. 
+4. Unzip the folders and make sure to save them in the standard folder structure into the `data/input/`-folder. 
 
 
 % ADD IMAGE AND EXPAND THIS SECTION: DONE
@@ -138,6 +138,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
+    - `hotosm_tcd_health_facilities_points_gpkg.gpkg`
     - `tcd_trs_roads_OCHA.shp`
 ::::{margin}
 :::{tip}
@@ -151,6 +152,9 @@ A shapefile consists of several, interrelated files. The geometric information i
 
 % THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
 
+% THE FOLLOWING SECTION IS NOT NEEDED THEN?
+
+<!--
 4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import):
     - In the top bar, click on `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open. Here we need to specify the file, the file format and define the geometry information
     - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points to open the file browser. 
@@ -159,10 +163,10 @@ A shapefile consists of several, interrelated files. The geometric information i
     - Specify the `X-` and `Y-field` by selecting the respective column. 
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
 
-
 :::{dropdown} Video: Importing CSV files via the Data Source Manager
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 :::
+-->
 
 :::{attention}
 
@@ -176,6 +180,7 @@ Imported files __are not saved within__ the QGIS project. If you move or delete 
     - QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other. 
     - Lets arrange the layers so we work with them more easily:
         - The ADM0-layer should go at the bottom, followed by ADM1, then ADM2.
+        - Then we can add the road network.
         - The healthsites should go on top. 
 6. Let's add a basemap:
     - In the file browser, scrool down until you see `XYZ-Tiles`
@@ -195,7 +200,7 @@ width: 750 px
     - A new window will open. This is the attribute table. It shows the vector layer in a tabular format, allowing you to see the attribute values, sort the table, and edit the values using the tools in the top bar. 
     - Take a look at the different columns in the attribute table. What do they show?
     - Try sorting the attribute table by clicking on the ![](/fig/sort.png)
-    - Open the attribute tables for the layers `hotosm_tcd_health_facilities_points` and `tcd_admbnda_adm2_20250212_AB.shp` familiarise yourself with the data. 
+    - Open the attribute tables for the layers `hotosm_tcd_health_facilities_points_gpkg` and `tcd_admbnda_adm2_20250212_AB.shp` familiarise yourself with the data. 
     - <kbd>Right-click</kbd> on each layer and select 
 
 <!--- ADD SOME ADDITIONAL INFO HERE?
@@ -214,13 +219,17 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 
 In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
-% ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES. 
+:::{attention}
+Admin Pcodes are best for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
+:::
+
+% ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
 
 8. Import the `vaccination_coverage_adm2` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
     - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/vaccination_coverage.csv` file and click `Open`.
-    - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites. 
-    - There are no columns with the coordinates in this datatable. Under `Geometry Definition` select `No geometry (attribute only table)`.
+    - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? 
+    - Unfortunately, there are no columns with the coordinates for the individual healthsites in this data table. Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png
     ---
@@ -233,9 +242,9 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
 10. In the [processing toolbox](/content/Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `tcd_admbnda_adm2_20250212_AB`.
-    - Under "Table field", select `adm2_fr`.
+    - Under "Table field", select `ADM2_PCODE`.
     - As "Input layer 2", select `vaccination_coverage_adm2`.
-    - Under "Table field 2", select `ADM2_name`.
+    - Under "Table field 2", select `adm2_pcode`.
     - Under "Layer 2 fields to copy", we can select which columns we want to copy. Click on the ![](/fig/Three_points.png) three dots to the right of the field and select `vaccination_rate_mcv1` and `vaccination_rate_mcv2`. Then, click `OK`.
     - Finally, to execute the algorithm, click on `Run`. 
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png
@@ -245,7 +254,7 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
     ---
     :::
 11.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
-    - A new window will open with. Here we need to specify the file location and the layer name. 
+    - A new window will open. Here we need to specify the file location and the layer name. 
     - Leave the `Format` on "GeoPackage".
     - Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
     - Enter the same name into `Layer name` field (This will be the name of the layer in the layers panel).
