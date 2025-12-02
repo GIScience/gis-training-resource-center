@@ -631,10 +631,10 @@ This will help the response coordination team prioritise vaccination deployments
 <td class="text-left"><p>OCHA</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-tcd">HDX</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">tcd_worldpop_2025.tif</span></code></p></td>
-<td class="text-left"><p>2025 population estimate raster</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code></p></td>
+<td class="text-left"><p>2025 population estimate per grid-cell</p></td>
 <td class="text-left"><p>WorldPop</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.worldpop.org/">WorldPop</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=72895">WorldPop</a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">measles_cases_2025.csv</span></code></p></td>
 <td class="text-left"><p>Reported measles cases by district (line list)</p></td>
@@ -679,7 +679,7 @@ This will help the response coordination team prioritise vaccination deployments
 <h3>Task 2: Calculate the Population per District<a class="headerlink" href="#task-2-calculate-the-population-per-district" title="Link to this heading">#</a></h3>
 <p>In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.</p>
 <ol class="arabic" start="3">
-<li><p>Add the WorldPop 2025 raster (<code class="docutils literal notranslate"><span class="pre">tcd_worldpop_2025.tif</span></code>) via drag-and-drop or:
+<li><p>Add the WorldPop 2025 raster (<code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code>) via drag-and-drop or:
 <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer….</span></code></p>
 <ul class="simple">
 <li><p>Take the time to investigate the new layer. Where is the population concentrated? What is the highest or median cell value? How is raster data different to vector data?</p></li>
@@ -695,15 +695,15 @@ This will help the response coordination team prioritise vaccination deployments
 <li><p>Set the parameters as follows:</p>
 <ul>
 <li><p>Input layer: <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB</span></code></p></li>
-<li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">tcd_worldpop_2025</span></code></p></li>
-<li><p>Raster band: 1</p></li>
+<li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1</span></code></p></li>
+<li><p>Raster band: 1 (there will be only one option available)</p></li>
 <li><p>Ouput column prefix: <code class="docutils literal notranslate"><span class="pre">population_</span></code></p></li>
 <li><p>Statistics to calculate: <code class="docutils literal notranslate"><span class="pre">Sum</span></code></p></li>
 </ul>
 </li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 <li><p>The Result will be a new layer called <code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code>. This is a temporary layer, indicated by the <img alt="" src="../../_images/qgis_3.40_temp_layer.png" /> on the right of the layer name.</p></li>
-<li><p>Make the layer permanent by <kbd>right-clicking</kbd> on it → <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permanent</span></code>.</p></li>
+<li><p>Make the layer permanent by <kbd>right-clicking</kbd> on it → <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permanent</span></code> and give it a name like <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_adm2</span></code>.</p></li>
 <li><p>Take a look at the new layer by opening it’s attribute table and looking at the new column.</p></li>
 </ul>
 <aside class="margin sidebar">
@@ -715,6 +715,13 @@ This will help the response coordination team prioritise vaccination deployments
 </aside>
 </li>
 </ol>
+<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-2-add-pop">
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_2_add_pop.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_2_add_pop.png" src="../../_images/en_3.40_m3_ex_8_pub_health_2_add_pop.png" style="width: 650px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Graduated classification to display results of population sum calculation</span><a class="headerlink" href="#en-3-40-m3-ex-8-pub-health-2-add-pop" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="tip admonition">
 <p class="admonition-title">Optional: Downloading additional worldpop data</p>
 <p>WorldPop also offers estimations of population in age bracktes. For our scenario, it is useful to know the population under 5 per district. Look for Age structures and search for the country of Chad.</p>
