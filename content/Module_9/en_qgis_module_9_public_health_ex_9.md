@@ -118,6 +118,8 @@ Now we have calculated the total population located within the 2-hour travel-tim
 
 ---
 
+% THIS IS STILL MISSING
+
 ## Task 6: Visualising Accessibility
 
 1. To visualize the `population_within_isochrones` data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the __Join attributes by field value__ tool:
