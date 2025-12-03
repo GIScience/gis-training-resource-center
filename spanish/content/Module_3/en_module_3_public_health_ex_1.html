@@ -584,7 +584,7 @@ document.write(`
 <td class="text-left"><p>HeiGIT</p></td>
 <td class="text-left"><p>This is a fictional dataset generated for the purpose of this exercise.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">measles_vaccination_coverage_adm2.csv</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2.csv</span></code></p></td>
 <td class="text-left"><p>Measles vaccination coverage</p></td>
 <td class="text-left"><p>HeiGIT</p></td>
 <td class="text-left"><p>This is a fictional dataset generated for the purpose of this exercise.</p></td>
@@ -785,16 +785,16 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 </section>
 <section id="task-5-joining-vaccination-coverage-data-with-administrative-boundaries">
 <h3>Task 5: Joining Vaccination Coverage Data with administrative boundaries<a class="headerlink" href="#task-5-joining-vaccination-coverage-data-with-administrative-boundaries" title="Link to this heading">#</a></h3>
-<p>In our <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder, we can find a csv file called <code class="docutils literal notranslate"><span class="pre">measles_vaccination_coverage_adm2</span></code>. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (<code class="docutils literal notranslate"><span class="pre">amd2_name</span></code>) and the adm2 pcode. With this information, we can perform a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">non-spatial join</a> in order to add the vaccination coverage data to our district boundaries layer (adm2).</p>
+<p>In our <code class="docutils literal notranslate"><span class="pre">data/input</span></code>-folder, we can find a csv file called <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code>. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (<code class="docutils literal notranslate"><span class="pre">amd2_name</span></code>) and the adm2 pcode. With this information, we can perform a <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html">non-spatial join</a> in order to add the vaccination coverage data to our district boundaries layer (adm2).</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.</p>
 </div>
 <ol class="arabic" start="8">
-<li><p>Import the <code class="docutils literal notranslate"><span class="pre">measles_vaccination_coverage_adm2</span></code> into your QGIS project:</p>
+<li><p>Import the <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code> into your QGIS project:</p>
 <ul class="simple">
 <li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code></p></li>
-<li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points and navigate to the <code class="docutils literal notranslate"><span class="pre">data/input/measles_vaccination_coverage_adm2.csv</span></code> file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
+<li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points and navigate to the <code class="docutils literal notranslate"><span class="pre">data/input/vaccination_coverage_adm2.csv</span></code> file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
 <li><p>In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column?</p></li>
 <li><p>Unfortunately, there are no columns with the coordinates for the individual healthsites in this data table. Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> select <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.</p></li>
@@ -814,7 +814,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <li><p>A new window will open. Here we can specify the parameters for the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code>-tool.</p></li>
 <li><p>As “Input layer”, select the layer <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB</span></code>.</p></li>
 <li><p>Under “Table field”, select <code class="docutils literal notranslate"><span class="pre">ADM2_PCODE</span></code>.</p></li>
-<li><p>As “Input layer 2”, select <code class="docutils literal notranslate"><span class="pre">measles_vaccination_coverage_adm2</span></code>.</p></li>
+<li><p>As “Input layer 2”, select <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code>.</p></li>
 <li><p>Under “Table field 2”, select <code class="docutils literal notranslate"><span class="pre">adm2_pcode</span></code>.</p></li>
 <li><p>Under “Layer 2 fields to copy”, we can select which columns we want to copy. Click on the <img alt="" src="../../_images/Three_points.png" /> three dots to the right of the field and select <code class="docutils literal notranslate"><span class="pre">vaccination_rate_mcv1</span></code> and <code class="docutils literal notranslate"><span class="pre">vaccination_rate_mcv2</span></code>. Then, click <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
 <li><p>Finally, to execute the algorithm, click on <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
@@ -824,15 +824,13 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 </a>
 </figure>
 </li>
-<li><p>A new layer called “Joined Layer” will appear in the layers panel. To the right of it, you will see a <img alt="" src="../../_images/qgis_3.40_temp_layer.png" /> symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. <strong>We can save the scratch layer</strong> by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>.</p></li>
+<li><p>A new layer called “Joined Layer” will appear in the layers panel. To the right of it, you will see a <img alt="" src="../../_images/qgis_3.40_temp_layer.png" /> symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. <strong>We can save the scratch layer</strong> by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>.
+- A new window will open. Here we need to specify the file location and the layer name.
+- Leave the <code class="docutils literal notranslate"><span class="pre">Format</span></code> on “GeoPackage”.
+- Click on the three dots <img alt="" src="../../_images/Three_points.png" />, navigate to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
+- Enter the same name into <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field (This will be the name of the layer in the layers panel).
+- Leave the rest as it is and click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- A new window will open. Here we need to specify the file location and the layer name. 
-- Leave the `Format` on &quot;GeoPackage&quot;.
-- Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
-- Enter the same name into `Layer name` field (This will be the name of the layer in the layers panel).
-- Leave the rest as it is and click `Ok`.
-</pre></div>
-</div>
 <blockquote>
 <div><p>Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer</p>
 </div></blockquote>
@@ -841,7 +839,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <h3>Task 6: Visualising the vaccination coverage<a class="headerlink" href="#task-6-visualising-the-vaccination-coverage" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Saving your progress</p>
-<p>Remember to save your project intermittently to keep your progress. QGIS is constantly being developed by the open source community and is known to crash from time to time.</p>
+<p>Remember to save your project intermittently to keep your progress by clicking <img alt="" src="../../_images/qgis_save_project.png" />. QGIS is constantly being developed by the open source community and is known to crash from time to time.</p>
 </div>
 <p>Now that we have the vaccination coverage information in our adm2-layer, we can visualise the information in order to understand the spatial distribution of the vaccination coverage.</p>
 <aside class="margin sidebar">
@@ -871,14 +869,17 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-vacc-coverage-map">
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png" style="width: 700px;" />
 </a>
+<figcaption>
+<p><span class="caption-text">Screenshot of classified vaccination_rate_mcv1 variable</span><a class="headerlink" href="#en-3-40-m3-ex-8-pub-health-1-vacc-coverage-map" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 </section>
 <section id="task-7-enriching-the-healthsites-dataset">
 <h3>Task 7: Enriching the Healthsites dataset<a class="headerlink" href="#task-7-enriching-the-healthsites-dataset" title="Link to this heading">#</a></h3>
-<p>In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer <code class="docutils literal notranslate"><span class="pre">Healthsite_capacities.csv</span></code> contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign.</p>
+<p>In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer <code class="docutils literal notranslate"><span class="pre">tcd_healthsite_capacities.csv</span></code> contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign.</p>
 <div class="admonition-gathering-the-information-on-capacities admonition">
 <p class="admonition-title">Gathering the information on capacities</p>
-<p>In a realistic scenario, these data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
+<p>In a realistic scenario, this data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
 Because data collection was decentralised and partially paper-based, some facility names differ slightly across datasets (e.g., spelling variants, abbreviations).
 When performing joins, pay attention to such inconsistencies.</p>
 </div>
@@ -887,8 +888,8 @@ When performing joins, pay attention to such inconsistencies.</p>
 <ul class="simple">
 <li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code></p></li>
 <li><p>To the right of the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">name</span></code>-field, click on the <img alt="" src="../../_images/Three_points.png" /> three points and navigate to the <code class="docutils literal notranslate"><span class="pre">data/input/tcd_healthsite_capacities.csv</span></code> file and click <code class="docutils literal notranslate"><span class="pre">Open</span></code>.</p></li>
-<li><p>In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites.</p></li>
-<li><p>There are no columns with the coordinates in this datatable. Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> select <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
+<li><p>In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column?</p></li>
+<li><p>Unfortunately, there are no coordinates for the individual healthsites in this datatable. Under <code class="docutils literal notranslate"><span class="pre">Geometry</span> <span class="pre">Definition</span></code> select <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">geometry</span> <span class="pre">(attribute</span> <span class="pre">only</span> <span class="pre">table)</span></code>.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Add</span></code>. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.</p></li>
 </ul>
 </li>
@@ -896,14 +897,14 @@ When performing joins, pay attention to such inconsistencies.</p>
 <ul class="simple">
 <li><p><kbd>Right-click</kbd> on the layer and open the attribute table.</p></li>
 <li><p>In the top bar, you can see how many entries the dataset contains (<em>148 features</em>)</p></li>
-<li><p>The datatable includes a column called “name” which contains the name of the health facilities. These names are the same names that are also stored in the healthsites point layer we imported earlier.</p></li>
-<li><p>This means that we can join both tables using the attribute values of the “name”-column.</p></li>
+<li><p>The datatable includes a column called <code class="docutils literal notranslate"><span class="pre">name</span></code> which contains the name of the health facilities. These names are the same names that are also stored in the healthsites point layer we imported earlier.</p></li>
+<li><p>This means that we can join both tables using the attribute values of the <code class="docutils literal notranslate"><span class="pre">name</span></code>-column.</p></li>
 </ul>
 </li>
 <li><p>In the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars">processing toolbox</a>, search for the tool <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code> and open it by <kbd>double-clicking</kbd> on it.</p>
 <ul class="simple">
 <li><p>A new window will open. Here we can specify the parameters for the <code class="docutils literal notranslate"><span class="pre">Join</span> <span class="pre">attributes</span> <span class="pre">by</span> <span class="pre">field</span> <span class="pre">value</span></code>-tool.</p></li>
-<li><p>As “Input layer”, select the layer <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points</span></code>.</p></li>
+<li><p>As “Input layer”, select the layer <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points_gpkg</span></code>.</p></li>
 <li><p>Under “Table field”, select <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p></li>
 <li><p>As “Input layer 2”, select <code class="docutils literal notranslate"><span class="pre">tcd_healthsite_capacities</span></code>.</p></li>
 <li><p>Under “Table field 2”, select <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p></li>
@@ -916,10 +917,10 @@ When performing joins, pay attention to such inconsistencies.</p>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>After running the algorithm, the window will switch to the log file. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (Table field) is not present in the respective column in layer 2. This can be either because there is not data available, or because there are inconsistencies in the identifying value (e.g., typos, different spelling).</p>
+<p>After running the algorithm, the window will switch to the <code class="docutils literal notranslate"><span class="pre">Log</span></code> window. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (table field) is missing from the corresponding column in layer 2. It may occur because the data is unavailable or because of inconsistencies in the identifying value, such as typos or different spellings.</p>
 </div>
 <ul class="simple">
-<li><p>After reviewing the log, we can close the tool-window. A new layer called <code class="docutils literal notranslate"><span class="pre">Joined</span> <span class="pre">layer</span></code> should appear in your layers panel. Rename it to “<code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code>” and move it to the top.</p></li>
+<li><p>After reviewing the <code class="docutils literal notranslate"><span class="pre">Log</span></code>, we can close the tool-window. A new layer called <code class="docutils literal notranslate"><span class="pre">Joined</span> <span class="pre">layer</span></code> should appear in your layers panel. Rename it to “<code class="docutils literal notranslate"><span class="pre">healthsites_points_capacities</span></code>” and move it to the top.</p></li>
 </ul>
 </li>
 </ol>
