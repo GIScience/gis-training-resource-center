@@ -109,15 +109,14 @@ Can you find and download the WorldPop raster containing the population under 5?
     - In the tool bar of the attribute table, open the ![](/fig/qgis_3.40_open_field_calc_icon.png). The field calculator let's you enter expression to calculate new columns. 
     - A new window will open. This is the expression builder.
 5. In the expression builder, we can build and test expressions. 
-    - In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on `population_under_1_sum` and `population_under_5_sum`. This will add the colun to the expression window on the left.
+    - In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on `population_under_1_sum` and `population_under_5_sum`. This will add the column to the expression window on the left.
     - In the expression window
     - Enter the following expression: 
     ```
     population_under_1_sum + population_under_5_sum
     ```
-
-
-4. Open the "Attribute table" and then click on the "Field Calculator" ![](/fig/qgis_CalculateField.png) symbol. Make sure to give a meaningful "Output field name" such as `total_population_under_5`, select the correct "Output field type" and use the expression shown in the figure below.
+    - Make sure to give a meaningful "Output field name" such as `total_population_under_5`
+    - Select the correct "Output field type"
 
     :::{figure} /fig/en_pub_health_2_pop_under_5.png
     ---
@@ -125,14 +124,14 @@ Can you find and download the WorldPop raster containing the population under 5?
     width: 650 px
     ---
     :::
-5. Now remove the fields containing the `population_under_1_sum` and `population_under_5_sum` information as we don't need them anymore. Click on "Delete fields" ![](/fig/qgis_3.40_delete_column_icon.png) and remove these two columns. Save the layer.
+6. Now remove the fields containing the `population_under_1_sum` and `population_under_5_sum` information as we don't need them anymore. Click on "Delete fields" ![](/fig/qgis_3.40_delete_column_icon.png) and remove these two columns. Save the layer.
     - Save the enhanced population layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_pop_2025_under_5`. Click `Save`.
 
 ### Task 4: Import and Explore the Measles Cases List
 
 % Revise this step.
 
-5. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the `measles_cases_adm2` dataset as a __delimited text layer__ with no geometry.
+1. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the `measles_cases_adm2` dataset as a __delimited text layer__ with no geometry.
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open.
     - To the right of file name, click on the ![](/fig/Three_points.png) three points and navigate to the file in the `/data/input/`-folder. Click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? The measles cases don't have any geometry information.
@@ -147,7 +146,7 @@ Make sure to always load csv data via the data source manager and not via the dr
 
 :::
 
-6. Explore the new data file by opening the attribute table.
+2. Explore the new data file by opening the attribute table.
     - <kbd>Right-click</kbd> on the `measles_cases_adm2`-layer and open the attribute table.
     - Take a look at the columns and at how the data is being stored. 
     - How could we use this data in our map? 
@@ -198,7 +197,7 @@ The aggregated data table.
 
 ### Task 5: Joining the measles cases with our adm2 layer
 
-11. We can join the measles cases with our adm2-layer including the population data (`tcd_pop_2025_under_5`):
+1. We can join the measles cases with our adm2-layer including the population data (`tcd_pop_2025_under_5`):
     - In the processing toolbox, open the "Join Attributes by Field value"-tool
     - __Input layer:__ `tcd_pop_2025_under_5`
     - __Table field:__ `ADM2_FR`
@@ -209,27 +208,54 @@ The aggregated data table.
 
 > The result will be a new layer called `Joined layer`. Let's open the attribute table and look at the data. 
 
-12. If everything is correct, let's make the layer permanent under `tcd_pop_2025_measles_adm2`
+2. If everything is correct, let's make the layer permanent under `tcd_pop_2025_measles_adm2`
 
 
 ### Task 6: Calculating the incidence rate
 
 Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.
 
-13. Open the field calculator in the attribute table. 
-    - <kbd>Right-click</kbd> on the layer and open the attribute table (or select the layer and press F6)
+1. Open the field calculator in the attribute table. 
+    - <kbd>Right-click</kbd> on the layer and open the attribute table
     - In the tool bar of the attribute table, open the ![](/fig/qgis_3.40_open_field_calc_icon.png).
-    - A new window will open. This is the expression builder.
-14. In the expression builder, we can build and test expressions. 
-    - In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on "pop_sum". This will add the colun to the expression window on the left.
+    - A new window will open with the expression builder.
+    - Make sure to give a meaningful "Output field name" such as `measles_incidence_rate`
+2. In the expression builder, we can build and test expressions. 
+    - In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on "population_sum". This will add the column to the expression window on the left.
     - In the expression window
     - Enter the following expression: 
     ```
-    (CASES / POP ) * 10000
+    (cases_total / population_sum ) * 10000
     ```
-% ADJUST CODE TO CORRECT LAYERS
+    - Save the layer and the changes.
+
 > Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained
 
-% SWITCH TO EXERCISE IN MODULE 4
+### Task 7: Creating map of measles incidence rate 
+
+In this task, we will create a map showing the measles incidence rate by district, helping to visualize where the disease burden is highest. We will also add an overview map displaying the population under five, providing important context for understanding the distribution of vulnerable age groups and interpreting the incidence patterns.
+
+#### Task 7.1: Symbology
+
+1. Symbology measles incidence rate
+    - Use the `tcd_pop_2025_measles_adm2`layer with the incidence rate from the previous calculation
+    - <kbd>Right-click</kbd> on the layer and open the symbology tab
+    - Select `Graduated` and `measles_incidence_rate` as the "Value"
+    - Color ramp could be `Reds`
+    - Select Mode `Equal Interval` and 5 Classes
+2. Symbology population under 5
+    - Use the `tcd_pop_2025_under_5`layer with the information of population under 5
+    - <kbd>Right-click</kbd> on the layer and open the symbology tab
+    - Select `Graduated` and `total_population_under_5` as the "Value"
+    - Color ramp could be `Turbo`
+    - Select Mode `Equal Count` and 5 Classes
+
+#### Task 7.2: Print Layout
+
+
+
+
+
+
 
 
