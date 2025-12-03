@@ -136,7 +136,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 
 ### Task 3: Importing the datasets
 
-3. In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
+In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
@@ -178,13 +178,13 @@ Imported files __are not saved within__ the QGIS project. If you move or delete 
 
 ### Task 4: The layers panel and the layer concept
 
-5. Once we've imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the `Layers`-panel. Here you can see all the datasets we've imported so far. 
+1. Once we've imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the `Layers`-panel. Here you can see all the datasets we've imported so far. 
     - QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other. 
     - Lets arrange the layers so we work with them more easily:
         - The ADM0-layer should go at the bottom, followed by ADM1, then ADM2.
         - Then we can add the road network.
         - The healthsites should go on top. 
-6. Let's add a basemap:
+2. Let's add a basemap:
     - In the file browser, scrool down until you see `XYZ-Tiles`
     - Uncollapse it and <kbd>double-click</kbd> on `OpenStreetMap`. A new layer will be added to your layers-panel, usually at the bottom. Make sure the layer sits at the bottom of the layers panel so all your other layers are visible.
 
@@ -197,7 +197,7 @@ width: 750 px
 ---
 :::
 
-7. Let's investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.
+3. Let's investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.
     - Open the attribute table by <kbd>right-clicking</kbd> on the ADM2 layer in the layers panel on the left → `Open Attribute Table`.
     - A new window will open. This is the attribute table. It shows the vector layer in a tabular format, allowing you to see the attribute values, sort the table, and edit the values using the tools in the top bar. 
     - Take a look at the different columns in the attribute table. What do they show?
@@ -227,7 +227,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
 
 % ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
 
-8. Import the `vaccination_coverage_adm2` into your QGIS project:
+1. Import the `vaccination_coverage_adm2` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
     - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/vaccination_coverage_adm2.csv` file and click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? 
@@ -239,9 +239,9 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     width: 700 px
     ---
     :::
-9. Investigate the new vaccination coverage further:
+2. Investigate the new vaccination coverage further:
     - <kbd>Right-click</kbd> on the new layer and open the attribute table. What information is available? How is the table structured. We can see that we are able to use the column `ADM2_PCODE` to perform a [non-spatial join]
-10. In the [processing toolbox](/content/Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
+3. In the [processing toolbox](/content/Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `tcd_admbnda_adm2_20250212_AB`.
     - Under "Table field", select `ADM2_PCODE`.
@@ -255,7 +255,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     width: 650 px
     ---
     :::
-11.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
+4.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
     - A new window will open. Here we need to specify the file location and the layer name. 
     - Leave the `Format` on "GeoPackage".
     - Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
@@ -285,7 +285,7 @@ QGIS offers various ways to [visualise vector data](/content/Module_4/en_qgis_st
 You can move the properties window to the side so you can see the changes in symbology on your map canvas.
 :::
 ::::
-12. Open the symbology tab via the Properties window for the layer: 
+Open the symbology tab via the Properties window for the layer: 
     - <kbd>Right-click</kbd> on the `tcd_adm2_vacc_coverage`-layer → `Properties`. 
     - Navigate to "Symbology" in the tab section on the left.
     - Here we can change the symbology method from `Single Symbol` to `Graduated`.
@@ -350,7 +350,7 @@ When performing joins, pay attention to such inconsistencies.
 
 % This step is not necessary
 
-4. Let's take a look at the new layer we just created including the healthsite capacities by opening the attribute table. 
+Let's take a look at the new layer we just created including the healthsite capacities by opening the attribute table. 
     - <kbd>Right-Click</kdd> on the layer and open the attribute table.
     - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
     - Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity. 
@@ -371,7 +371,7 @@ When performing joins, pay attention to such inconsistencies.
 
 ### Task 9: Classifying the Healthsites
 
-5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
+Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
     - <kbd>Right-click</kbd> on the `tcd_healthsites_points_capacities` and select `Properties`. A new window will open.
     - On the left, navigate to the Symbology-tab.
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
@@ -387,6 +387,7 @@ When performing joins, pay attention to such inconsistencies.
     - If you want, you can adjust the symbology for the classes by double clicking on one. 
     - As we are not interested in `cold_chain` values which equal NULL, we can remove this classification entry by selecting it and clicking on the red minus right next to the `Classify` button.
     - Click `Apply`, then close the properties window. 
+    - Analyze how healthsites with a true `cold_chain` value are distributed.
 
 % Also remove the NULL values from the categorisation: DONE
 
