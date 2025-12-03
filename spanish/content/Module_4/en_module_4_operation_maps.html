@@ -540,10 +540,14 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Fields used in this tutorial</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Data preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-new-weekly-infections-with-value-proportional-circles">Visualising the number of new weekly infections with value proportional circles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">Creating a map visualising weekly infections and infection trends</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">Display the current infection trend with polygon colours</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Create circles proportional to weekly infections</a></li>
 </ul>
 </li>
 </ul>
@@ -1451,13 +1455,13 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </ol>
 </div>
 </details></section>
-<section id="visualising-the-number-of-new-weekly-infections-with-value-proportional-circles">
-<h3>Visualising the number of new weekly infections with value proportional circles<a class="headerlink" href="#visualising-the-number-of-new-weekly-infections-with-value-proportional-circles" title="Link to this heading">#</a></h3>
+<section id="creating-a-map-visualising-weekly-infections-and-infection-trends">
+<h3>Creating a map visualising weekly infections and infection trends<a class="headerlink" href="#creating-a-map-visualising-weekly-infections-and-infection-trends" title="Link to this heading">#</a></h3>
 <p>As we want to visualize multiple variables later we choose to use a secondary point layer to map weekly infections. We will use week 8 of the outbreak for our example map. The number of new weekly infections (<code class="docutils literal notranslate"><span class="pre">week8_new_inf</span></code>) will control the <strong>size</strong> of each circle.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h3 class="rubric" id="create-circles-proportional-to-weekly-infections">Create circles proportional to weekly infections</h3>
+<h4 class="rubric" id="create-circles-proportional-to-weekly-infections">Create circles proportional to weekly infections</h4>
 <ol class="arabic simple">
 <li><p class="sd-card-text"><strong>Create centroids for every region</strong></p>
 <ul class="simple">
@@ -1468,7 +1472,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </li>
 </ol>
 <figure class="align-default" id="centroid-tool">
-<a class="reference internal image-reference" href="fig/mod_4_centroid_tool"><img alt="fig/mod_4_centroid_tool" src="fig/mod_4_centroid_tool" style="width: 700px;" />
+<a class="reference internal image-reference" href="../../_images/mod_4_centroid_tool.png"><img alt="../../_images/mod_4_centroid_tool.png" src="../../_images/mod_4_centroid_tool.png" style="width: 700px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Configuration of the centroid tool to generate centroids of the administrative district polygons</span><a class="headerlink" href="#centroid-tool" title="Link to this image">#</a></p>
@@ -1486,7 +1490,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li><p class="sd-card-text">As classification mode choose <strong>“Equal Interval”</strong> next to “Mode”.</p></li>
 </ul>
 <figure class="align-default" id="point-styling">
-<a class="reference internal image-reference" href="fig/mod_4_point_styling"><img alt="fig/mod_4_point_styling" src="fig/mod_4_point_styling" style="width: 700px;" />
+<a class="reference internal image-reference" href="../../_images/mod_4_point_styling.png"><img alt="../../_images/mod_4_point_styling.png" src="../../_images/mod_4_point_styling.png" style="width: 700px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Configuration of the Layer Styling Panel to achieve proportional point sizes</span><a class="headerlink" href="#point-styling" title="Link to this image">#</a></p>
@@ -1508,19 +1512,19 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li><p class="sd-card-text">As <strong>“Value”</strong> select the field containing the infection count for week 8 <code class="docutils literal notranslate"><span class="pre">week8_inf_new</span></code>.</p></li>
 </ul>
 <figure class="align-default">
-<img alt="fig/mod_4_point_stylinginfection_labels" src="fig/mod_4_point_stylinginfection_labels" />
+<img alt="fig/mod_4_point_stylinginfection_labels.png" src="fig/mod_4_point_stylinginfection_labels.png" />
 </figure>
 <ul class="simple">
 <li><p class="sd-card-text">Select the third panel of the label options and check the box <strong>“Draw text buffer”</strong> to generate a small buffer around you labels to enhance visibility.</p></li>
 <li><p class="sd-card-text">To optimize the location of the point labels navigate to the <strong>“Placement”</strong> panel and for “Mode” select <strong>“Offset from Point”</strong>. With the “Quadrant” option you can determine the placement of the labels relative to the the centroid to you liking</p></li>
 </ul>
 <figure class="align-default">
-<img alt="fig/mod_4_label_placement" src="fig/mod_4_label_placement" />
+<img alt="../../_images/mod_4_label_placement.png" src="../../_images/mod_4_label_placement.png" />
 </figure>
 </div>
 </details><p>Your centroid layer now should look something like this (colour may vary):</p>
 <figure class="align-default">
-<img alt="fig/mod_4_centroids_example" src="fig/mod_4_centroids_example" />
+<img alt="../../_images/mod_4_centroids_example.png" src="../../_images/mod_4_centroids_example.png" />
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1559,7 +1563,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </li>
 </ol>
 <figure class="align-default" id="trend-calculation">
-<a class="reference internal image-reference" href="fig/mod_4_trend_calculation"><img alt="fig/mod_4_trend_calculation" src="fig/mod_4_trend_calculation" style="width: 700px;" />
+<a class="reference internal image-reference" href="../../_images/mod_4_trend_calculation.png"><img alt="../../_images/mod_4_trend_calculation.png" src="../../_images/mod_4_trend_calculation.png" style="width: 700px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Configuration of the Field Calculator interface to generate the infection trend field</span><a class="headerlink" href="#trend-calculation" title="Link to this image">#</a></p>
@@ -1585,10 +1589,20 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </div>
 </details><p>Now display you polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> together with you point layer <code class="docutils literal notranslate"><span class="pre">Centroids_infections</span></code> (centroids on top) to display all generated information in one map view. The result should look something like this (colour may vary):</p>
 <figure class="align-default">
-<img alt="fig/mod_4_infectionmap_example" src="fig/mod_4_infectionmap_example" />
+<img alt="../../_images/mod_4_infectionmap_example.png" src="../../_images/mod_4_infectionmap_example.png" />
 </figure>
 <p>If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a>.</p>
 </section>
+</section>
+</section>
+<section id="creating-a-map-visualising-weekly-deaths-and-mortality-rate">
+<h2>Creating a map visualising weekly deaths and mortality rate<a class="headerlink" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate" title="Link to this heading">#</a></h2>
+<p>After we created our multi variable map with information about the development of ifections we can transfer the used steps to also create a map providing information about weekly deaths and the current mortality rate of the outbreak. The basic information needed is stored in the <code class="docutils literal notranslate"><span class="pre">weekX_dc</span></code> fields of your polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code>, which provide weekly death counts for every week of the cholera outbreak.</p>
+<section id="id8">
+<h3>Create circles proportional to weekly infections<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>To create a point layer</p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -1667,10 +1681,14 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Fields used in this tutorial</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Data preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-new-weekly-infections-with-value-proportional-circles">Visualising the number of new weekly infections with value proportional circles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">Creating a map visualising weekly infections and infection trends</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">Display the current infection trend with polygon colours</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Create circles proportional to weekly infections</a></li>
 </ul>
 </li>
 </ul>
