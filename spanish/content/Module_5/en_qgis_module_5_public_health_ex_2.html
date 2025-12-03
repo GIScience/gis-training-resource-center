@@ -521,6 +521,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-import-and-explore-the-measles-cases-list">Task 4: Import and Explore the Measles Cases List</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-measles-cases-with-our-adm2-layer">Task 5: Joining the measles cases with our adm2 layer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-calculating-the-incidence-rate">Task 6: Calculating the incidence rate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-creating-map-of-measles-incidence-rate">Task 7: Creating map of measles incidence rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-1-symbology">Task 7.1: Symbology</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-2-print-layout">Task 7.2: Print Layout</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -698,15 +703,17 @@ This will help the response coordination team prioritise vaccination deployments
 </li>
 <li><p>In the expression builder, we can build and test expressions.</p>
 <ul class="simple">
-<li><p>In the middle section, we can open the “Fields and values” header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on <code class="docutils literal notranslate"><span class="pre">population_under_1_sum</span></code> and <code class="docutils literal notranslate"><span class="pre">population_under_5_sum</span></code>. This will add the colun to the expression window on the left.</p></li>
+<li><p>In the middle section, we can open the “Fields and values” header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on <code class="docutils literal notranslate"><span class="pre">population_under_1_sum</span></code> and <code class="docutils literal notranslate"><span class="pre">population_under_5_sum</span></code>. This will add the column to the expression window on the left.</p></li>
 <li><p>In the expression window</p></li>
 <li><p>Enter the following expression:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">population_under_1_sum</span> <span class="o">+</span> <span class="n">population_under_5_sum</span>
 </pre></div>
 </div>
-</li>
-<li><p>Open the “Attribute table” and then click on the “Field Calculator” <img alt="" src="../../_images/qgis_CalculateField.png" /> symbol. Make sure to give a meaningful “Output field name” such as <code class="docutils literal notranslate"><span class="pre">total_population_under_5</span></code>, select the correct “Output field type” and use the expression shown in the figure below.</p>
+<ul class="simple">
+<li><p>Make sure to give a meaningful “Output field name” such as <code class="docutils literal notranslate"><span class="pre">total_population_under_5</span></code></p></li>
+<li><p>Select the correct “Output field type”</p></li>
+</ul>
 <figure class="align-default" id="en-pub-health-2-pop-under-5">
 <a class="reference internal image-reference" href="../../_images/en_pub_health_2_pop_under_5.png"><img alt="../../_images/en_pub_health_2_pop_under_5.png" src="../../_images/en_pub_health_2_pop_under_5.png" style="width: 650px;" />
 </a>
@@ -721,7 +728,7 @@ This will help the response coordination team prioritise vaccination deployments
 </section>
 <section id="task-4-import-and-explore-the-measles-cases-list">
 <h3>Task 4: Import and Explore the Measles Cases List<a class="headerlink" href="#task-4-import-and-explore-the-measles-cases-list" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="5">
+<ol class="arabic simple">
 <li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import">Import</a> the <code class="docutils literal notranslate"><span class="pre">measles_cases_adm2</span></code> dataset as a <strong>delimited text layer</strong> with no geometry.</p>
 <ul class="simple">
 <li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code>. A new window will open.</p></li>
@@ -738,7 +745,7 @@ This will help the response coordination team prioritise vaccination deployments
 <p>As with other data formats, you can drag-and-drop csv-files onto your map canvas and it will be loaded into your project. <strong>However</strong>, this will lead to mistakes in the data format for each column as it assumes that every column contains text (string) data. You will be unable to perform mathematical or statistical operations with these columns.</p>
 <p>Make sure to always load csv data via the data source manager and not via the drag-and-drop function.</p>
 </div>
-<ol class="arabic simple" start="6">
+<ol class="arabic simple" start="2">
 <li><p>Explore the new data file by opening the attribute table.</p>
 <ul class="simple">
 <li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">measles_cases_adm2</span></code>-layer and open the attribute table.</p></li>
@@ -793,7 +800,7 @@ The aggregated data table.
 </section>
 <section id="task-5-joining-the-measles-cases-with-our-adm2-layer">
 <h3>Task 5: Joining the measles cases with our adm2 layer<a class="headerlink" href="#task-5-joining-the-measles-cases-with-our-adm2-layer" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="11">
+<ol class="arabic simple">
 <li><p>We can join the measles cases with our adm2-layer including the population data (<code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code>):</p>
 <ul class="simple">
 <li><p>In the processing toolbox, open the “Join Attributes by Field value”-tool</p></li>
@@ -809,35 +816,69 @@ The aggregated data table.
 <blockquote>
 <div><p>The result will be a new layer called <code class="docutils literal notranslate"><span class="pre">Joined</span> <span class="pre">layer</span></code>. Let’s open the attribute table and look at the data.</p>
 </div></blockquote>
-<ol class="arabic simple" start="12">
+<ol class="arabic simple" start="2">
 <li><p>If everything is correct, let’s make the layer permanent under <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_measles_adm2</span></code></p></li>
 </ol>
 </section>
 <section id="task-6-calculating-the-incidence-rate">
 <h3>Task 6: Calculating the incidence rate<a class="headerlink" href="#task-6-calculating-the-incidence-rate" title="Link to this heading">#</a></h3>
 <p>Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.</p>
-<ol class="arabic" start="13">
+<ol class="arabic">
 <li><p>Open the field calculator in the attribute table.</p>
 <ul class="simple">
-<li><p><kbd>Right-click</kbd> on the layer and open the attribute table (or select the layer and press F6)</p></li>
+<li><p><kbd>Right-click</kbd> on the layer and open the attribute table</p></li>
 <li><p>In the tool bar of the attribute table, open the <img alt="" src="../../_images/qgis_3.40_open_field_calc_icon.png" />.</p></li>
-<li><p>A new window will open. This is the expression builder.</p></li>
+<li><p>A new window will open with the expression builder.</p></li>
+<li><p>Make sure to give a meaningful “Output field name” such as <code class="docutils literal notranslate"><span class="pre">measles_incidence_rate</span></code></p></li>
 </ul>
 </li>
 <li><p>In the expression builder, we can build and test expressions.</p>
 <ul class="simple">
-<li><p>In the middle section, we can open the “Fields and values” header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on “pop_sum”. This will add the colun to the expression window on the left.</p></li>
+<li><p>In the middle section, we can open the “Fields and values” header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on “population_sum”. This will add the column to the expression window on the left.</p></li>
 <li><p>In the expression window</p></li>
 <li><p>Enter the following expression:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">CASES</span> <span class="o">/</span> <span class="n">POP</span> <span class="p">)</span> <span class="o">*</span> <span class="mi">10000</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">cases_total</span> <span class="o">/</span> <span class="n">population_sum</span> <span class="p">)</span> <span class="o">*</span> <span class="mi">10000</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Save the layer and the changes.</p></li>
+</ul>
 </li>
 </ol>
 <blockquote>
 <div><p>Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained</p>
 </div></blockquote>
+</section>
+<section id="task-7-creating-map-of-measles-incidence-rate">
+<h3>Task 7: Creating map of measles incidence rate<a class="headerlink" href="#task-7-creating-map-of-measles-incidence-rate" title="Link to this heading">#</a></h3>
+<p>In this task, we will create a map showing the measles incidence rate by district, helping to visualize where the disease burden is highest. We will also add an overview map displaying the population under five, providing important context for understanding the distribution of vulnerable age groups and interpreting the incidence patterns.</p>
+<section id="task-7-1-symbology">
+<h4>Task 7.1: Symbology<a class="headerlink" href="#task-7-1-symbology" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Symbology measles incidence rate</p>
+<ul class="simple">
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_measles_adm2</span></code>layer with the incidence rate from the previous calculation</p></li>
+<li><p><kbd>Right-click</kbd> on the layer and open the symbology tab</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> and <code class="docutils literal notranslate"><span class="pre">measles_incidence_rate</span></code> as the “Value”</p></li>
+<li><p>Color ramp could be <code class="docutils literal notranslate"><span class="pre">Reds</span></code></p></li>
+<li><p>Select Mode <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code> and 5 Classes</p></li>
+</ul>
+</li>
+<li><p>Symbology population under 5</p>
+<ul class="simple">
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code>layer with the information of population under 5</p></li>
+<li><p><kbd>Right-click</kbd> on the layer and open the symbology tab</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Graduated</span></code> and <code class="docutils literal notranslate"><span class="pre">total_population_under_5</span></code> as the “Value”</p></li>
+<li><p>Color ramp could be <code class="docutils literal notranslate"><span class="pre">Turbo</span></code></p></li>
+<li><p>Select Mode <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Count</span></code> and 5 Classes</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="task-7-2-print-layout">
+<h4>Task 7.2: Print Layout<a class="headerlink" href="#task-7-2-print-layout" title="Link to this heading">#</a></h4>
+</section>
 </section>
 </section>
 </section>
@@ -897,6 +938,11 @@ The aggregated data table.
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-import-and-explore-the-measles-cases-list">Task 4: Import and Explore the Measles Cases List</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-measles-cases-with-our-adm2-layer">Task 5: Joining the measles cases with our adm2 layer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-calculating-the-incidence-rate">Task 6: Calculating the incidence rate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-creating-map-of-measles-incidence-rate">Task 7: Creating map of measles incidence rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-1-symbology">Task 7.1: Symbology</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#task-7-2-print-layout">Task 7.2: Print Layout</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
