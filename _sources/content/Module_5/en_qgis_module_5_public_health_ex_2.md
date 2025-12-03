@@ -16,7 +16,7 @@ This will help the response coordination team prioritise vaccination deployments
 
 | Dataset name                       | Description                                          | Source                                      | Download link / note                               |
 | :--------------------------------- | :--------------------------------------------------- | :------------------------------------------ | :------------------------------------------------- |
-| `chad_health_infrastructure.qgz`   | QGIS project created in Exercise 1                   | [Previous Exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_module_3_public_health_ex_1.html)        | Local project folder `/project/`                   |
+| `QGIS project from Exercise 1 with .qgz extention`   | QGIS project created in Exercise 1                   | [Previous Exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_module_3_public_health_ex_1.html)        | Local project folder `/project/`                   |
 | `tcd_admbnda_adm2_20250212_AB.shp` | Chad administrative boundaries (level 2 – districts) | OCHA                                        | [HDX](https://data.humdata.org/dataset/cod-ab-tcd) |
 | `tcd_pop_2025_CN_100m_R2025A_v1.tif`            | 2025 population estimate per grid-cell               | WorldPop                                    | [WorldPop](https://hub.worldpop.org/geodata/summary?id=72895)              |
 | `measles_cases_adm2.csv`           | Reported measles cases by district (line list)       | Ministry of Health (MoH) Epidemiology Dept. | Provided for this exercise                         |
@@ -238,13 +238,13 @@ In this task, we will create a map showing the measles incidence rate by distric
 #### Task 7.1: Symbology
 
 1. Symbology measles incidence rate
-    - Use the `tcd_pop_2025_measles_adm2`layer with the incidence rate from the previous calculation
+    - Use the `tcd_pop_2025_measles_adm2` layer with the incidence rate from the previous calculation
     - <kbd>Right-click</kbd> on the layer and open the symbology tab
     - Select `Graduated` and `measles_incidence_rate` as the "Value"
     - Color ramp could be `Reds`
     - Select Mode `Equal Interval` and 5 Classes
 2. Symbology population under 5
-    - Use the `tcd_pop_2025_under_5`layer with the information of population under 5
+    - Use the `tcd_pop_2025_under_5` layer with the information of population under 5
     - <kbd>Right-click</kbd> on the layer and open the symbology tab
     - Select `Graduated` and `total_population_under_5` as the "Value"
     - Color ramp could be `Turbo`
