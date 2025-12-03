@@ -517,6 +517,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-calculate-the-population-per-district">Task 2: Calculate the Population per District</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculate-the-population-under-5-per-district">Task 3: Calculate the Population under 5 per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-and-explore-the-measles-cases-list">Task 3: Import and Explore the Measles Cases List</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2">Task 4: Aggregate the measles case data with the district boundaries (adm2)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-aggregated-dataset-with-our-adm2-layer">Task 5: Joining the aggregated dataset with our adm2 layer</a></li>
@@ -571,7 +572,7 @@ This will help the response coordination team prioritise vaccination deployments
 <td class="text-left"><p>WorldPop</p></td>
 <td class="text-left"><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=72895">WorldPop</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">measles_cases_2025.csv</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">measles_cases_adm2.csv</span></code></p></td>
 <td class="text-left"><p>Reported measles cases by district (line list)</p></td>
 <td class="text-left"><p>Ministry of Health (MoH) Epidemiology Dept.</p></td>
 <td class="text-left"><p>Provided for this exercise</p></td>
@@ -613,7 +614,7 @@ This will help the response coordination team prioritise vaccination deployments
 <section id="task-2-calculate-the-population-per-district">
 <h3>Task 2: Calculate the Population per District<a class="headerlink" href="#task-2-calculate-the-population-per-district" title="Link to this heading">#</a></h3>
 <p>In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.</p>
-<ol class="arabic" start="3">
+<ol class="arabic">
 <li><p>Add the WorldPop 2025 raster (<code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code>) via drag-and-drop or:
 <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer….</span></code></p>
 <ul class="simple">
@@ -621,12 +622,12 @@ This will help the response coordination team prioritise vaccination deployments
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can use the Identify Tool to click on the raster and see population estimates per pixel.</p>
+<p>You can use the Identify Tool <img alt="" src="../../_images/qgis_identify_features.png" /> to click on the raster and see population estimates per pixel.</p>
 </div>
 </li>
 <li><p>We will now calculate the total population for each district using the tool “Zonal Statistics”</p>
 <ul class="simple">
-<li><p>In the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars">Processing Toolbox</a></strong>, search for “Zonal Statistisc” and open the tool.</p></li>
+<li><p>In the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars">Processing Toolbox</a></strong>, search for “Zonal Statistics” and open the tool.</p></li>
 <li><p>Set the parameters as follows:</p>
 <ul>
 <li><p>Input layer: <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB</span></code></p></li>
@@ -654,15 +655,48 @@ This will help the response coordination team prioritise vaccination deployments
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_2_add_pop.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_2_add_pop.png" src="../../_images/en_3.40_m3_ex_8_pub_health_2_add_pop.png" style="width: 650px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Graduated classification to display results of population sum calculation</span><a class="headerlink" href="#en-3-40-m3-ex-8-pub-health-2-add-pop" title="Link to this image">#</a></p>
+<p><span class="caption-text">Apply a graduated classification to visualize the district-level population sum results</span><a class="headerlink" href="#en-3-40-m3-ex-8-pub-health-2-add-pop" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+<section id="task-3-calculate-the-population-under-5-per-district">
+<h3>Task 3: Calculate the Population under 5 per District<a class="headerlink" href="#task-3-calculate-the-population-under-5-per-district" title="Link to this heading">#</a></h3>
+<p>Measles disproportionately affects young children, especially those under five, who are more likely to develop severe complications and have higher mortality rates. Knowing the under-5 population per district helps estimate how many children are at greatest risk, plan targeted vaccination campaigns, and assess whether health resources are sufficient to protect the most vulnerable age group (<a class="reference external" href="https://www.who.int/news-room/fact-sheets/detail/measles">WHO on Measles</a>).</p>
 <div class="tip admonition">
-<p class="admonition-title">Optional: Downloading additional worldpop data</p>
-<p>WorldPop also offers estimations of population in age bracktes. For our scenario, it is useful to know the population under 5 per district. Look for Age structures and search for the country of Chad.</p>
-<p>Can you find and download the WorlPop raster containing the population under 5? For a hint look <a class="reference external" href="https://hub.worldpop.org/geodata/listing?id=138">here</a></p>
-<p>Once you’ve done so, import it to your QGIS project and calculate the population under 5 per district.</p>
+<p class="admonition-title">Worldpop data in age and sex structures</p>
+<p>WorldPop also provides population estimates by age and sex. This is especially important in our scenario, as we need to know the under-5 population for each district. To find this, go to the Age Structures section and search for Chad.</p>
+<p>Can you find and download the WorldPop raster containing the population under 5? For a hint look <a class="reference external" href="https://hub.worldpop.org/geodata/listing?id=138">here</a>. If you scroll down, there is list of the Data Files for the specific age groups.</p>
 </div>
+<ol class="arabic">
+<li><p>Add the population under 5 rasters (<code class="docutils literal notranslate"><span class="pre">tcd_t_00_2025_CN_100m_R2025A_v1.tif</span></code> and <code class="docutils literal notranslate"><span class="pre">tcd_t_01_2025_CN_100m_R2025A_v1</span></code>) via drag-and-drop or:
+<code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer….</span></code></p></li>
+<li><p>We will now calculate the total population for each district using the tool “Zonal Statistics”. Repeat the steps to do so from the previous task. We will need to do the same procedure twice, as we have the data for population under 5 spread across two input rasters.</p>
+<ul class="simple">
+<li><p>Set the parameters as follows:</p>
+<ul>
+<li><p>Input layer: <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_adm2</span></code> (output from the previous task already containing the population sum per districts)</p></li>
+<li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">tcd_t_00_2025_CN_100m_R2025A_v1</span></code></p></li>
+<li><p>Raster band: 1 (there will be only one option available)</p></li>
+<li><p>Ouput column prefix: <code class="docutils literal notranslate"><span class="pre">population_under_1_</span></code></p></li>
+<li><p>Statistics to calculate: <code class="docutils literal notranslate"><span class="pre">Sum</span></code></p></li>
+</ul>
+</li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
+<li><p>Rename the output in the QGIS Layers panel to <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_1</span></code></p></li>
+</ul>
+</li>
+<li><p>Repeat this step with the raster <code class="docutils literal notranslate"><span class="pre">tcd_t_01_2025_CN_100m_R2025A_v1</span></code> as input raster layer and name the output column prefix <code class="docutils literal notranslate"><span class="pre">population_under_5_</span></code>. As Input layer, use the “Zonal Statistics” output from the run for the population under 1 renamed to <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_1</span></code>.</p>
+<ul class="simple">
+<li><p>Rename the output in the QGIS Layers panel to <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code> and remove the <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_1</span></code> layer <img alt="" src="../../_images/qgis_remove_selected_layer.png" /> as we don’t need it anymore.</p></li>
+</ul>
+</li>
+<li><p>Open the “Attribute table” <img alt="" src="../../_images/qgis_open_attribute_table.png" /> and then click on the “Field Calculator” <img alt="" src="../../_images/qgis_CalculateField.png" /> symbol. Make sure to give a meaningful “Output field name” such as <code class="docutils literal notranslate"><span class="pre">total_population_under_5</span></code>, select the correct “Output field type” and use the expression shown in the figure below</p>
+<figure class="align-default" id="en-pub-health-2-pop-under-5">
+<a class="reference internal image-reference" href="../../_images/en_pub_health_2_pop_under_5.png"><img alt="../../_images/en_pub_health_2_pop_under_5.png" src="../../_images/en_pub_health_2_pop_under_5.png" style="width: 650px;" />
+</a>
+</figure>
+</li>
+</ol>
 </section>
 <section id="task-3-import-and-explore-the-measles-cases-list">
 <h3>Task 3: Import and Explore the Measles Cases List<a class="headerlink" href="#task-3-import-and-explore-the-measles-cases-list" title="Link to this heading">#</a></h3>
@@ -838,6 +872,7 @@ This will help the response coordination team prioritise vaccination deployments
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-calculate-the-population-per-district">Task 2: Calculate the Population per District</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculate-the-population-under-5-per-district">Task 3: Calculate the Population under 5 per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-and-explore-the-measles-cases-list">Task 3: Import and Explore the Measles Cases List</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2">Task 4: Aggregate the measles case data with the district boundaries (adm2)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-aggregated-dataset-with-our-adm2-layer">Task 5: Joining the aggregated dataset with our adm2 layer</a></li>

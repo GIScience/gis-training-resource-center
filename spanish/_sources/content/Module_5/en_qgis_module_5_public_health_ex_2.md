@@ -19,7 +19,7 @@ This will help the response coordination team prioritise vaccination deployments
 | `chad_health_infrastructure.qgz`   | QGIS project created in Exercise 1                   | [Previous Exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_module_3_public_health_ex_1.html)        | Local project folder `/project/`                   |
 | `tcd_admbnda_adm2_20250212_AB.shp` | Chad administrative boundaries (level 2 – districts) | OCHA                                        | [HDX](https://data.humdata.org/dataset/cod-ab-tcd) |
 | `tcd_pop_2025_CN_100m_R2025A_v1.tif`            | 2025 population estimate per grid-cell               | WorldPop                                    | [WorldPop](https://hub.worldpop.org/geodata/summary?id=72895)              |
-| `measles_cases_2025.csv`           | Reported measles cases by district (line list)       | Ministry of Health (MoH) Epidemiology Dept. | Provided for this exercise                         |
+| `measles_cases_adm2.csv`           | Reported measles cases by district (line list)       | Ministry of Health (MoH) Epidemiology Dept. | Provided for this exercise                         |
 | `tcd_dem_2025.tif`                 | Digital Elevation Model (optional)                   | NASA SRTM                                   | Optional (for terrain visualization)               |
 
 
@@ -47,15 +47,15 @@ Working with the browser panel allows a much quicker access to the files and kee
 
 In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.
 
-3. Add the WorldPop 2025 raster (`tcd_pop_2025_CN_100m_R2025A_v1.tif`) via drag-and-drop or:
+1. Add the WorldPop 2025 raster (`tcd_pop_2025_CN_100m_R2025A_v1.tif`) via drag-and-drop or:
     `Layer → Add Layer → Add Raster Layer….`
     - Take the time to investigate the new layer. Where is the population concentrated? What is the highest or median cell value? How is raster data different to vector data? 
     :::{tip}
-    You can use the Identify Tool to click on the raster and see population estimates per pixel.
+    You can use the Identify Tool ![](/fig/qgis_identify_features.png) to click on the raster and see population estimates per pixel.
     :::
 
-4. We will now calculate the total population for each district using the tool "Zonal Statistics"
-    - In the __[Processing Toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars)__, search for "Zonal Statistisc" and open the tool.
+2. We will now calculate the total population for each district using the tool "Zonal Statistics"
+    - In the __[Processing Toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars)__, search for "Zonal Statistics" and open the tool.
     - Set the parameters as follows:
         - Input layer: `tcd_admbnda_adm2_20250212_AB`
         - Raster layer: `tcd_pop_2025_CN_100m_R2025A_v1`
@@ -77,18 +77,41 @@ In order to calculate the incidence rate per district, we first need to know the
 name: en_3.40_m3_ex_8_pub_health_2_add_pop
 width: 650 px
 ---
-Graduated classification to display results of population sum calculation
+Apply a graduated classification to visualize the district-level population sum results
 :::
 
-:::{admonition} Optional: Downloading additional worldpop data
+### Task 3: Calculate the Population under 5 per District
+
+Measles disproportionately affects young children, especially those under five, who are more likely to develop severe complications and have higher mortality rates. Knowing the under-5 population per district helps estimate how many children are at greatest risk, plan targeted vaccination campaigns, and assess whether health resources are sufficient to protect the most vulnerable age group ([WHO on Measles](https://www.who.int/news-room/fact-sheets/detail/measles)).
+
+:::{admonition} Worldpop data in age and sex structures
 :class: tip
-WorldPop also offers estimations of population in age bracktes. For our scenario, it is useful to know the population under 5 per district. Look for Age structures and search for the country of Chad.
+WorldPop also provides population estimates by age and sex. This is especially important in our scenario, as we need to know the under-5 population for each district. To find this, go to the Age Structures section and search for Chad.
 
-Can you find and download the WorlPop raster containing the population under 5? For a hint look [here](https://hub.worldpop.org/geodata/listing?id=138)
-
-Once you've done so, import it to your QGIS project and calculate the population under 5 per district. 
-
+Can you find and download the WorldPop raster containing the population under 5? For a hint look [here](https://hub.worldpop.org/geodata/listing?id=138). If you scroll down, there is list of the Data Files for the specific age groups.
 :::
+
+1. Add the population under 5 rasters (`tcd_t_00_2025_CN_100m_R2025A_v1.tif` and `tcd_t_01_2025_CN_100m_R2025A_v1`) via drag-and-drop or:
+    `Layer → Add Layer → Add Raster Layer….`
+2. We will now calculate the total population for each district using the tool "Zonal Statistics". Repeat the steps to do so from the previous task. We will need to do the same procedure twice, as we have the data for population under 5 spread across two input rasters.
+    - Set the parameters as follows:
+        - Input layer: `tcd_pop_2025_adm2` (output from the previous task already containing the population sum per districts)
+        - Raster layer: `tcd_t_00_2025_CN_100m_R2025A_v1`
+        - Raster band: 1 (there will be only one option available)
+        - Ouput column prefix: `population_under_1_`
+        - Statistics to calculate: `Sum`
+    - Click `Run`.
+    - Rename the output in the QGIS Layers panel to `tcd_pop_2025_under_1`
+3. Repeat this step with the raster `tcd_t_01_2025_CN_100m_R2025A_v1` as input raster layer and name the output column prefix `population_under_5_`. As Input layer, use the "Zonal Statistics" output from the run for the population under 1 renamed to `tcd_pop_2025_under_1`.
+    - Rename the output in the QGIS Layers panel to `tcd_pop_2025_under_5` and remove the `tcd_pop_2025_under_1` layer ![](/fig/qgis_remove_selected_layer.png) as we don't need it anymore.
+4. Open the "Attribute table" ![](/fig/qgis_open_attribute_table.png) and then click on the "Field Calculator" ![](/fig/qgis_CalculateField.png) symbol. Make sure to give a meaningful "Output field name" such as `total_population_under_5`, select the correct "Output field type" and use the expression shown in the figure below
+
+    :::{figure} /fig/en_pub_health_2_pop_under_5.png
+    ---
+    name: en_pub_health_2_pop_under_5
+    width: 650 px
+    ---
+    :::
 
 ### Task 3: Import and Explore the Measles Cases List
 
