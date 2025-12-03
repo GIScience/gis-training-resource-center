@@ -136,7 +136,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 
 ### Task 3: Importing the datasets
 
-In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
+1. In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
@@ -249,13 +249,17 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     - Under "Table field 2", select `adm2_pcode`.
     - Under "Layer 2 fields to copy", we can select which columns we want to copy. Click on the ![](/fig/Three_points.png) three dots to the right of the field and select `vaccination_rate_mcv1` and `vaccination_rate_mcv2`. Then, click `OK`.
     - Finally, to execute the algorithm, click on `Run`. 
+    
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage
     width: 650 px
     ---
     :::
-4.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
+
+A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. 
+
+4. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
     - A new window will open. Here we need to specify the file location and the layer name. 
     - Leave the `Format` on "GeoPackage".
     - Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
@@ -285,7 +289,7 @@ QGIS offers various ways to [visualise vector data](/content/Module_4/en_qgis_st
 You can move the properties window to the side so you can see the changes in symbology on your map canvas.
 :::
 ::::
-Open the symbology tab via the Properties window for the layer: 
+1. Open the symbology tab via the Properties window for the layer: 
     - <kbd>Right-click</kbd> on the `tcd_adm2_vacc_coverage`-layer → `Properties`. 
     - Navigate to "Symbology" in the tab section on the left.
     - Here we can change the symbology method from `Single Symbol` to `Graduated`.
@@ -350,7 +354,7 @@ When performing joins, pay attention to such inconsistencies.
 
 % This step is not necessary
 
-Let's take a look at the new layer we just created including the healthsite capacities by opening the attribute table. 
+1. Let's take a look at the new layer we just created including the healthsite capacities by opening the attribute table. 
     - <kbd>Right-Click</kdd> on the layer and open the attribute table.
     - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
     - Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity. 
@@ -371,7 +375,7 @@ Let's take a look at the new layer we just created including the healthsite capa
 
 ### Task 9: Classifying the Healthsites
 
-Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
+1. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
     - <kbd>Right-click</kbd> on the `tcd_healthsites_points_capacities` and select `Properties`. A new window will open.
     - On the left, navigate to the Symbology-tab.
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
