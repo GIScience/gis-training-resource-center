@@ -12,9 +12,9 @@ Accessibility to health services is a key determinant of vaccination coverage. I
 
 | Dataset name | Description | Source |
 | :------------- | :----------- | :----------- |
-| `QGIS project from Exercise 2` | Base project with administrative boundaries, health facility capacities, and incidence rates | — |
-| `WorldPop_2025_TCD.tif` | 2025 population estimate raster (100 m resolution) | [WorldPop](https://www.worldpop.org) |
-| `Healthsites_points_capacities.shp` | Vaccination points (healthsites with cold chain) | Derived in Exercise 1 |
+| `QGIS project from Exercise 2 with .qgz extention` | Base project with administrative boundaries, health facility capacities, and incidence rates | — |
+| `tcd_pop_2025_CN_100m_R2025A_v1.tif`| 2025 population estimate per grid-cell | [WorldPop](https://hub.worldpop.org/geodata/summary?id=72895) |
+| `tcd_healthsites_points_capacities.gpkg` | Vaccination points (healthsites with cold chain) | Derived in Exercise 1 |
 | `tcd_admbnda_adm2_20250212_AB.shp` | Administrative boundaries (district level) | [HDX – OCHA](https://data.humdata.org/dataset/cod-ab-tcd) |
 
 ---
@@ -32,10 +32,16 @@ To do this, you will use the **OpenRouteService (ORS)** plugin in QGIS to genera
 1. Open your QGIS project from **Exercise 2**.
 2. Verify that the following layers are loaded:
    - `tcd_admbnda_adm2_20250212_AB.shp` (district boundaries)
-   - `Healthsites_points_capacities` (vaccination points)
-   - `WorldPop_2025_TCD.tif` (population raster)
-3. Make sure the coordinate reference system (CRS) of your project is **EPSG:4326 – WGS 84**, as required by OpenRouteService.
-
+   - `tcd_healthsites_points_capacities.gpkg` (vaccination points)
+   - `tcd_pop_2025_CN_100m_R2025A_v1.tif` (population raster)
+3. Make sure the coordinate reference system (CRS) of your project is **EPSG:4326 – WGS 84**, as required by OpenRouteService. If one of these layers has a different CRS, reproject it to **EPSG:4326 – WGS 84**.
+4. Now we need to filter the `tcd_healthsites_points_capacities` layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" ![](mActionSelectbyExpression.png).
+   - Now click on the "Fields and Values" section and double-click on cold_chain
+   ```
+   " cold_chain" = true
+   ```
+   - Now right click on the `tcd_healthsites_points_capacities` → `Export` → `Save Selected Features As...`
+   - Save it as a "Geopackage" in your `/data/interim/`-folder. Use a name like `tcd_cold_chain_healthsites_points_capacities`. Now we have only the healthsites that also provide a cold chain for vaccine storage and could be considered for a vaccination campaign.
 ---
 
 ## Task 2: Installing and Connecting to OpenRouteService

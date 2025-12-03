@@ -551,15 +551,15 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">QGIS</span> <span class="pre">project</span> <span class="pre">from</span> <span class="pre">Exercise</span> <span class="pre">2</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">QGIS</span> <span class="pre">project</span> <span class="pre">from</span> <span class="pre">Exercise</span> <span class="pre">2</span> <span class="pre">with</span> <span class="pre">.qgz</span> <span class="pre">extention</span></code></p></td>
 <td class="text-left"><p>Base project with administrative boundaries, health facility capacities, and incidence rates</p></td>
 <td class="text-left"><p>—</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">WorldPop_2025_TCD.tif</span></code></p></td>
-<td class="text-left"><p>2025 population estimate raster (100 m resolution)</p></td>
-<td class="text-left"><p><a class="reference external" href="https://www.worldpop.org">WorldPop</a></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code></p></td>
+<td class="text-left"><p>2025 population estimate per grid-cell</p></td>
+<td class="text-left"><p><a class="reference external" href="https://hub.worldpop.org/geodata/summary?id=72895">WorldPop</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities.shp</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities.gpkg</span></code></p></td>
 <td class="text-left"><p>Vaccination points (healthsites with cold chain)</p></td>
 <td class="text-left"><p>Derived in Exercise 1</p></td>
 </tr>
@@ -580,16 +580,28 @@ document.write(`
 <hr class="docutils" />
 <section id="task-1-opening-the-project-and-preparing-the-data">
 <h2>Task 1: Opening the Project and Preparing the Data<a class="headerlink" href="#task-1-opening-the-project-and-preparing-the-data" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Open your QGIS project from <strong>Exercise 2</strong>.</p></li>
 <li><p>Verify that the following layers are loaded:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code> (district boundaries)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code> (vaccination points)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">WorldPop_2025_TCD.tif</span></code> (population raster)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities.gpkg</span></code> (vaccination points)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code> (population raster)</p></li>
 </ul>
 </li>
-<li><p>Make sure the coordinate reference system (CRS) of your project is <strong>EPSG:4326 – WGS 84</strong>, as required by OpenRouteService.</p></li>
+<li><p>Make sure the coordinate reference system (CRS) of your project is <strong>EPSG:4326 – WGS 84</strong>, as required by OpenRouteService. If one of these layers has a different CRS, reproject it to <strong>EPSG:4326 – WGS 84</strong>.</p></li>
+<li><p>Now we need to filter the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the “Attribute table” and clicking on “Select features using an expression” <img alt="" src="content/Module_9/mActionSelectbyExpression.png" />.</p>
+<ul class="simple">
+<li><p>Now click on the “Fields and Values” section and double-click on cold_chain</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot; cold_chain&quot;</span> <span class="o">=</span> <span class="n">true</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Now right click on the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> → <code class="docutils literal notranslate"><span class="pre">Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">As...</span></code></p></li>
+<li><p>Save it as a “Geopackage” in your <code class="docutils literal notranslate"><span class="pre">/data/interim/</span></code>-folder. Use a name like <code class="docutils literal notranslate"><span class="pre">tcd_cold_chain_healthsites_points_capacities</span></code>. Now we have only the healthsites that also provide a cold chain for vaccine storage and could be considered for a vaccination campaign.</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <hr class="docutils" />
