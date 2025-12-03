@@ -516,10 +516,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-opening-the-project-and-preparing-the-data">Task 1: Opening the Project and Preparing the Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-installing-and-connecting-to-openrouteservice">Task 2: Installing and Connecting to OpenRouteService</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-creating-isochrones-around-vaccination-points">Task 3: Creating Isochrones Around Vaccination Points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-refining-the-accessibility-threshold">Task 4: Refining the Accessibility Threshold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-calculating-population-coverage-using-worldpop">Task 5: Calculating Population Coverage Using WorldPop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-creating-accessibility-area-around-vaccination-points">Task 2: Creating Accessibility Area Around Vaccination Points</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-calculating-population-coverage-using-worldpop">Task 4: Calculating Population Coverage Using WorldPop</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-visualising-accessibility">Task 6: Visualising Accessibility</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
@@ -567,6 +565,10 @@ document.write(`
 <td class="text-left"><p>Administrative boundaries (district level)</p></td>
 <td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/cod-ab-tcd">HDX – OCHA</a></p></td>
 </tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">tcd_roads_ocha.shp</span></code> (Lines)</p></td>
+<td class="text-left"><p>Chad - Road Network</p></td>
+<td class="text-left"><p><a class="reference external" href="https://data.humdata.org/dataset/chad-roads-osm-ministry-of-transport">HDX - OCHA</a></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -575,7 +577,7 @@ document.write(`
 <section id="scenario">
 <h2>Scenario<a class="headerlink" href="#scenario" title="Link to this heading">#</a></h2>
 <p>You have identified a number of health facilities equipped with a cold chain for vaccine storage. The goal now is to calculate how much of the population is <strong>within reasonable reach</strong> of these facilities, and how many people live <strong>beyond the accessible range</strong>.</p>
-<p>To do this, you will use the <strong>OpenRouteService (ORS)</strong> plugin in QGIS to generate travel-time isochrones around vaccination points, and then use <strong>WorldPop</strong> to estimate the population covered within each accessibility zone.</p>
+<p>To do this, you will generate travel-time isochrones around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.</p>
 </section>
 <hr class="docutils" />
 <section id="task-1-opening-the-project-and-preparing-the-data">
@@ -587,14 +589,14 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code> (district boundaries)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities.gpkg</span></code> (vaccination points)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code> (population raster)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcd_roads_ocha.shp</span></code> (road network)</p></li>
 </ul>
 </li>
-<li><p>Make sure the coordinate reference system (CRS) of your project is <strong>EPSG:4326 – WGS 84</strong>, as required by OpenRouteService. If one of these layers has a different CRS, reproject it to <strong>EPSG:4326 – WGS 84</strong>.</p></li>
 <li><p>Now we need to filter the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the “Attribute table” and clicking on “Select features using an expression” <img alt="" src="content/Module_9/mActionSelectbyExpression.png" />.</p>
 <ul class="simple">
 <li><p>Now click on the “Fields and Values” section and double-click on cold_chain</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot; cold_chain&quot;</span> <span class="o">=</span> <span class="n">true</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;cold_chain&quot;</span> <span class="o">=</span> <span class="n">true</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -605,68 +607,52 @@ document.write(`
 </ol>
 </section>
 <hr class="docutils" />
-<section id="task-2-installing-and-connecting-to-openrouteservice">
-<h2>Task 2: Installing and Connecting to OpenRouteService<a class="headerlink" href="#task-2-installing-and-connecting-to-openrouteservice" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>If not yet installed, add the <strong>OpenRouteService Plugin</strong>:</p>
+<section id="task-2-creating-accessibility-area-around-vaccination-points">
+<h2>Task 2: Creating Accessibility Area Around Vaccination Points<a class="headerlink" href="#task-2-creating-accessibility-area-around-vaccination-points" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Open the “Service area (from layer)” tool in the Processing Toolbox.</p></li>
+<li><p>Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.</p>
 <ul class="simple">
-<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Plugins</span> <span class="pre">→</span> <span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">Install</span> <span class="pre">Plugins…</span></code></p></li>
-<li><p>Search for <strong>OpenRouteService</strong> and click <code class="docutils literal notranslate"><span class="pre">Install</span></code>.</p></li>
+<li><p>For the Vector layer representing network select <code class="docutils literal notranslate"><span class="pre">tcd_roads_ocha</span></code></p></li>
+<li><p>Path type to calculate should be <code class="docutils literal notranslate"><span class="pre">Fastest</span></code></p></li>
+<li><p>Vector layer with start points is <code class="docutils literal notranslate"><span class="pre">tcd_cold_chain_healthsites_points_capacities</span></code></p></li>
+<li><p>Travel cost will be <code class="docutils literal notranslate"><span class="pre">2</span></code> as the information for the fastest path type is given by hours. So 2 will correspond to 2 hours of travel time</p></li>
+<li><p>The speed will be left at the Default speed of 50 km/h</p></li>
+</ul>
+<figure class="align-default" id="en-3-40-m3-ex-3-service-area">
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_3_service_area.png"><img alt="../../_images/en_3.40_m3_ex_3_service_area.png" src="../../_images/en_3.40_m3_ex_3_service_area.png" style="width: 650px;" />
+</a>
+</figure>
+</li>
+<li><p>The output will be called <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> and will include the road network accessible from a given healthsite within 2 hours travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <strong>EPSG: 102022</strong> and reproject the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. The output layer will be called <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>.</p></li>
+<li><p>To give a more realistic assessment of the accessibility area around the vaccination points we will buffer the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. Before running this operation, we will “Dissolve” the Service area lines to create one geometry.</p>
+<ul class="simple">
+<li><p>In Dissolve fields, we won’t select anything</p></li>
 </ul>
 </li>
-<li><p>Once installed, open the plugin from the toolbar or via <code class="docutils literal notranslate"><span class="pre">Web</span> <span class="pre">→</span> <span class="pre">OpenRouteService</span> <span class="pre">→</span> <span class="pre">Provider</span> <span class="pre">Settings</span></code>.</p></li>
-<li><p>Create or log in to your <a class="reference external" href="https://openrouteservice.org/dev/#/signup">OpenRouteService account</a> and obtain a <strong>free API key</strong>.</p></li>
-<li><p>Copy your API key into the plugin under <strong>Settings → API Key</strong>.</p></li>
+<li><p>Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.</p>
+<ul class="simple">
+<li><p>Input layer will be the result of the dissolving process (likely called <code class="docutils literal notranslate"><span class="pre">Dissolved</span></code>)</p></li>
+<li><p>Distance should be 2 kilometers</p></li>
+</ul>
+<figure class="align-default" id="en-3-40-m3-ex-3-access-vaccination">
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_3_access_vaccination.png"><img alt="../../_images/en_3.40_m3_ex_3_access_vaccination.png" src="../../_images/en_3.40_m3_ex_3_access_vaccination.png" style="width: 650px;" />
+</a>
+</figure>
+</li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="task-3-creating-isochrones-around-vaccination-points">
-<h2>Task 3: Creating Isochrones Around Vaccination Points<a class="headerlink" href="#task-3-creating-isochrones-around-vaccination-points" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>In order to calculate accessibility, we will generate travel-time isochrones (zones of equal travel time) around each vaccination facility.</p>
-</div></blockquote>
-<ol class="arabic simple">
-<li><p>In the <strong>Processing Toolbox</strong>, search for <strong>ORS Tools → Isochrones from Point-Layer</strong>.</p></li>
-<li><p>Open the tool and set the parameters as follows:</p>
-<ul class="simple">
-<li><p><strong>Travel mode:</strong> <code class="docutils literal notranslate"><span class="pre">driving-car</span></code> <em>(for motorised travel)</em></p></li>
-<li><p><strong>Input point layer:</strong> <code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code></p></li>
-<li><p><strong>Range type:</strong> <code class="docutils literal notranslate"><span class="pre">time</span></code></p></li>
-<li><p><strong>Range (minutes):</strong> <code class="docutils literal notranslate"><span class="pre">30,</span> <span class="pre">60,</span> <span class="pre">120,</span> <span class="pre">240</span></code></p></li>
-<li><p><strong>Dissolve all isochrones:</strong> ✅ (checked)</p></li>
-<li><p><strong>Output layer name:</strong> <code class="docutils literal notranslate"><span class="pre">Isochrones_vaccination_points</span></code></p></li>
-</ul>
-</li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. Once complete, a new polygon layer will appear showing areas reachable within 30, 60, 120, and 240 minutes of travel.</p></li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If motorised transport is limited, repeat the process using <strong><code class="docutils literal notranslate"><span class="pre">foot-walking</span></code></strong> as the travel profile. This allows you to compare accessibility for populations relying on walking only.</p>
-</div>
-</section>
-<hr class="docutils" />
-<section id="task-4-refining-the-accessibility-threshold">
-<h2>Task 4: Refining the Accessibility Threshold<a class="headerlink" href="#task-4-refining-the-accessibility-threshold" title="Link to this heading">#</a></h2>
-<p>In the first version of this analysis, we considered a <strong>50 km distance threshold</strong> as a measure of accessibility. However, 50 km represents 10–14 hours of walking, which is unrealistic for caregivers with children. A <strong>travel-time threshold</strong> provides a better understanding.</p>
-<ul class="simple">
-<li><p>For <strong>routine vaccination teams</strong> (motorised): 2 hours (≈ 120 minutes) is a practical maximum one-way travel time.</p></li>
-<li><p>For <strong>on-foot access</strong> (caregivers without transport): 30–60 minutes (≈ 3–5 km) is more realistic.</p></li>
-</ul>
-<blockquote>
-<div><p>For this exercise, we will define <em>populations beyond 120 minutes motorised travel time</em> as <strong>underserved</strong>.</p>
-</div></blockquote>
-</section>
-<hr class="docutils" />
-<section id="task-5-calculating-population-coverage-using-worldpop">
-<h2>Task 5: Calculating Population Coverage Using WorldPop<a class="headerlink" href="#task-5-calculating-population-coverage-using-worldpop" title="Link to this heading">#</a></h2>
+<section id="task-4-calculating-population-coverage-using-worldpop">
+<h2>Task 4: Calculating Population Coverage Using WorldPop<a class="headerlink" href="#task-4-calculating-population-coverage-using-worldpop" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for the tool <strong>Zonal Statistics</strong> and open it.</p></li>
 <li><p>Configure the tool:</p>
 <ul class="simple">
-<li><p><strong>Raster layer:</strong> <code class="docutils literal notranslate"><span class="pre">WorldPop_2025_TCD.tif</span></code></p></li>
+<li><p><strong>Raster layer:</strong> <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code></p></li>
 <li><p><strong>Vector layer containing zones:</strong> <code class="docutils literal notranslate"><span class="pre">Isochrones_vaccination_points</span></code></p></li>
 <li><p><strong>Statistics to calculate:</strong> <code class="docutils literal notranslate"><span class="pre">Sum</span></code></p></li>
-<li><p><strong>Output column prefix:</strong> <code class="docutils literal notranslate"><span class="pre">pop_</span></code></p></li>
+<li><p><strong>Output column prefix:</strong> <code class="docutils literal notranslate"><span class="pre">pop_vaccination_</span></code></p></li>
 <li><p><strong>Output file name:</strong> <code class="docutils literal notranslate"><span class="pre">population_within_isochrones.gpkg</span></code></p></li>
 </ul>
 </li>
@@ -719,6 +705,40 @@ document.write(`
 <hr class="docutils" />
 <p>✅ <strong>Deliverable:</strong><br />
 A map and summary table showing the population within 30, 60, 120, and 240 minutes of travel to vaccination sites, and the proportion of population living beyond the 120-minute threshold per district.</p>
+<!--
+
+## Task 2: Installing and Connecting to OpenRouteService
+
+1. If not yet installed, add the **OpenRouteService Plugin**:
+   - Go to `Plugins → Manage and Install Plugins…`
+   - Search for **OpenRouteService** and click `Install`.
+2. Once installed, open the plugin from the toolbar or via `Web → OpenRouteService → Provider Settings`.
+3. Create or log in to your [OpenRouteService account](https://openrouteservice.org/dev/#/signup) and obtain a **free API key**.
+4. Copy your API key into the plugin under **Settings → API Key**.
+
+---
+
+## Task 3: Creating Isochrones Around Vaccination Points
+
+> In order to calculate accessibility, we will generate travel-time isochrones (zones of equal travel time) around each vaccination facility.
+
+> For this exercise, we will define *populations beyond 120 minutes motorised travel time* as **underserved**.
+
+1. In the **Processing Toolbox**, search for **ORS Tools → Isochrones from Point-Layer**.
+2. Open the tool and set the parameters as follows:
+   - For **routine vaccination teams** (motorised): 1 hours (≈ 60 minutes) is a practical maximum one-way travel time (also caused due to API Restrictions of the OpenRouteService).
+   - **Travel mode:** `driving-car` *(for motorised travel)*
+   - **Input point layer:** `tcd_cold_chain_healthsites_points_capacities`
+   - **Range type:** `time`
+   - **Range (minutes):** `60`
+   - **Output layer name:** `Isochrones_vaccination_points`
+3. Click `Run`. Once complete, a new polygon layer will appear showing areas reachable within 30, 60, 120, and 240 minutes of travel.
+
+:::{note}
+If motorised transport is limited, repeat the process using **`foot-walking`** as the travel profile. This allows you to compare accessibility for populations relying on walking only. For **on-foot access** (caregivers without transport): 30–60 minutes (≈ 3–5 km) is more realistic.
+:::
+
+-->
 </section>
 </section>
 
@@ -772,10 +792,8 @@ A map and summary table showing the population within 30, 60, 120, and 240 minut
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-opening-the-project-and-preparing-the-data">Task 1: Opening the Project and Preparing the Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-installing-and-connecting-to-openrouteservice">Task 2: Installing and Connecting to OpenRouteService</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-creating-isochrones-around-vaccination-points">Task 3: Creating Isochrones Around Vaccination Points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-refining-the-accessibility-threshold">Task 4: Refining the Accessibility Threshold</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-calculating-population-coverage-using-worldpop">Task 5: Calculating Population Coverage Using WorldPop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-creating-accessibility-area-around-vaccination-points">Task 2: Creating Accessibility Area Around Vaccination Points</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-calculating-population-coverage-using-worldpop">Task 4: Calculating Population Coverage Using WorldPop</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-visualising-accessibility">Task 6: Visualising Accessibility</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
