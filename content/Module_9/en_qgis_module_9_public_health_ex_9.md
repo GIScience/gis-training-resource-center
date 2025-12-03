@@ -73,41 +73,61 @@ To do this, you will generate travel-time isochrones around vaccination points a
    width: 650 px
    ---
    :::
+   - Save the buffered service area by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `access_vaccination_points`. Click `Save`.
 
 ---
 
-## Task 4: Calculating Population Coverage Using WorldPop
+## Task 3: Calculating Population Coverage Using WorldPop
 
 1. In the **Processing Toolbox**, search for the tool **Zonal Statistics** and open it.
-2. Configure the tool:
+   - **Input layer:** `tcd_admbnda_adm2_20250212_AB.shp`
    - **Raster layer:** `tcd_pop_2025_CN_100m_R2025A_v1.tif`
-   - **Vector layer containing zones:** `Isochrones_vaccination_points`
+   - **Raster band:** only 1 possible selection
+   - **Output column prefix:** `pop_total_`
+   - **Statistics ot calculate:** `Sum`
+   - **Output file name:** `pop_total_adm2`
+2. In the **Processing Toolbox**, search for the tool **Intersection** and open it.
+   - **Input layer:** `pop_total_adm2`
+   - **Overlay layer:** `access_vaccination_points`
+   - **Output file name:** `adms_access_vaccination_points`
+   - Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.
+3. In the **Processing Toolbox**, now search again for the tool **Zonal Statistics** and open it.
+   - **Raster layer:** `tcd_pop_2025_CN_100m_R2025A_v1.tif`
+   - **Vector layer containing zones:** `adms_access_vaccination_points`
    - **Statistics to calculate:** `Sum`
    - **Output column prefix:** `pop_vaccination_`
-   - **Output file name:** `population_within_isochrones.gpkg`
+   - **Output file name:** `population_within_isochrones`
 3. Run the tool.
 
-This will calculate the total population within each travel-time zone.
+Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.
 
-4. Next, compute the total population per district using **Zonal Statistics** again, but use:
-   - **Zones:** `tcd_admbnda_adm2_20250212_AB.shp`
-   - **Output column prefix:** `pop_total_`
-   - **Statistic:** `Sum`
-5. Use the **Field Calculator** to compute the population *beyond* 120 minutes:
+4. In a final step we will estimate the number of people living more than 2 hours away from the nearest vaccination facility — a key metric for identifying areas where **mobile vaccination teams** or **temporary outreach sites** may be needed.
+   - Open the Attribute table and access the Field Calculator
+   - Give the Output field name `pop_beyond_2h`
+   - Output field type will be `Decimal Number (real)`
+   - And the expression
    ```
-   "pop_total_sum" - "pop_240_sum"
+   "pop_total_sum" - "pop_vaccination_sum"
    ```
-   Rename the resulting field to `pop_beyond_2h`.
-
-:::{tip}
-This approach allows you to estimate the number of people living more than 2 hours away from the nearest vaccination facility — a key metric for identifying areas where **mobile vaccination teams** or **temporary outreach sites** may be needed.
-:::
+   :::{figure} /fig/en_3.40_m3_ex_3_pop_no_vacc.png
+   ---
+   name: en_3.40_m3_ex_3_pop_no_vacc
+   width: 650 px
+   ---
+   :::   
 
 ---
 
 ## Task 6: Visualising Accessibility
 
-1. Symbolise your `Isochrones_vaccination_points` layer using graduated colours by travel time.
+1. To visualize the `population_within_isochrones` data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the __Join attributes by field value__ tool:
+   - **Input layer:** `tcd_admbnda_adm2_20250212_AB.shp`
+   - **Table field:** `ADM2_PCODE`
+   - **Input layer 2:** `population_within_isochrones`
+   - **Table field 2:** `ADM2_PCODE`
+   - **Layer 2 fields to copy:** `pop_total_sum`, `pop_vaccination_sum`, `pop_beyond_2h`
+   - **Output file name:** `population_vaccination_adm2`
+2. Symbolise your `population_vaccination_adm2` layer using graduated colours by travel time.
 2. Overlay the population raster to highlight populated areas outside the 120-minute zone.
 3. Optionally, apply hillshade from a Digital Elevation Model (DEM) for terrain context.
 4. Label districts by their `pop_beyond_2h` value to identify priority areas for vaccination campaigns.
