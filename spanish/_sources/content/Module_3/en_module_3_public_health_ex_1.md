@@ -350,7 +350,7 @@ When performing joins, pay attention to such inconsistencies.
 
 % This step is not necessary
 
-4. Let's take a look at the new layer by opening the attribute table. 
+4. Let's take a look at the new layer we just created including the healthsite capacities by opening the attribute table. 
     - <kbd>Right-Click</kdd> on the layer and open the attribute table.
     - In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the "join attributes by field value"-tool.
     - Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity. 
@@ -362,15 +362,17 @@ When performing joins, pay attention to such inconsistencies.
     - In the toolbar of the attribute table, click on the ![](/fig/mActionToggleEditing.png) `Toggle Editing Mode`-button to enter the editing mode for the attribute table. 
     - Next, click on ![](/fig/attribute_table_delete_feature.png) `Delete selected features` to delete the points with no capacity information. 
     - Click on ![](/fig/mActionToggleEditing.png) to save and exit the editing mode.
+    - Save the cleaned healthsite capacity layer layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_healthsites_points_capacities`. Click `Save`.
 
-% Adjust the cleaning instructions to decide on cold capacity = NULL
+
+% Adjust the cleaning instructions to decide on cold capacity = NULL: WILL BE DONE IN ONE OF THE FOLLOWING EXERCISES
 
 > Our new healthsites point layer now includes only the healthsites for which we received additional data.
 
 ### Task 9: Classifying the Healthsites
 
 5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
-    - <kbd>Right-click</kbd> on the `Healthsites_points_capacities` and select `Properties`. A new window will open.
+    - <kbd>Right-click</kbd> on the `tcd_healthsites_points_capacities` and select `Properties`. A new window will open.
     - On the left, navigate to the Symbology-tab.
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
     ---
@@ -383,7 +385,7 @@ When performing joins, pay attention to such inconsistencies.
     - As "Value", select `cold_chain`
     - Next, click on `Classify`. 
     - If you want, you can adjust the symbology for the classes by double clicking on one. 
-    - As we are not interested in `cold_chain` values which equal NULL, we can remove these classification entries by selecting them and clicking on the red minus right next to the `Classify` button.
+    - As we are not interested in `cold_chain` values which equal NULL, we can remove this classification entry by selecting it and clicking on the red minus right next to the `Classify` button.
     - Click `Apply`, then close the properties window. 
 
 % Also remove the NULL values from the categorisation: DONE

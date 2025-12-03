@@ -931,7 +931,7 @@ When performing joins, pay attention to such inconsistencies.</p>
 <section id="task-8-cleaning-the-healthsite-data">
 <h3>Task 8: Cleaning the Healthsite Data<a class="headerlink" href="#task-8-cleaning-the-healthsite-data" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="4">
-<li><p>Let’s take a look at the new layer by opening the attribute table.</p>
+<li><p>Let’s take a look at the new layer we just created including the healthsite capacities by opening the attribute table.</p>
 <ul class="simple">
 <li><p><kbd>Right-Click</kdd> on the layer and open the attribute table.</p></li>
 <li><p>In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the “join attributes by field value”-tool.</p></li>
@@ -944,6 +944,7 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li><p>In the toolbar of the attribute table, click on the <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span> <span class="pre">Mode</span></code>-button to enter the editing mode for the attribute table.</p></li>
 <li><p>Next, click on <img alt="" src="../../_images/attribute_table_delete_feature.png" /> <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">selected</span> <span class="pre">features</span></code> to delete the points with no capacity information.</p></li>
 <li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> to save and exit the editing mode.</p></li>
+<li><p>Save the cleaned healthsite capacity layer layer by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>. Select “Geopackage” as the output format and save the layer to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
 </ul>
 </li>
 </ol>
@@ -956,7 +957,7 @@ When performing joins, pay attention to such inconsistencies.</p>
 <ol class="arabic" start="5">
 <li><p>Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.</p>
 <ul class="simple">
-<li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">Healthsites_points_capacities</span></code> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open.</p></li>
+<li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open.</p></li>
 <li><p>On the left, navigate to the Symbology-tab.</p></li>
 </ul>
 <figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-classifying-healthpoint-capacity">
@@ -968,7 +969,7 @@ When performing joins, pay attention to such inconsistencies.</p>
 <li><p>As “Value”, select <code class="docutils literal notranslate"><span class="pre">cold_chain</span></code></p></li>
 <li><p>Next, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
 <li><p>If you want, you can adjust the symbology for the classes by double clicking on one.</p></li>
-<li><p>As we are not interested in <code class="docutils literal notranslate"><span class="pre">cold_chain</span></code> values which equal NULL, we can remove these classification entries by selecting them and clicking on the red minus right next to the <code class="docutils literal notranslate"><span class="pre">Classify</span></code> button.</p></li>
+<li><p>As we are not interested in <code class="docutils literal notranslate"><span class="pre">cold_chain</span></code> values which equal NULL, we can remove this classification entry by selecting it and clicking on the red minus right next to the <code class="docutils literal notranslate"><span class="pre">Classify</span></code> button.</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>, then close the properties window.</p></li>
 </ul>
 </li>
