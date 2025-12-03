@@ -93,9 +93,9 @@ Can you find and download the WorldPop raster containing the population under 5?
 
 1. Add the population under 5 rasters (`tcd_t_00_2025_CN_100m_R2025A_v1.tif` and `tcd_t_01_2025_CN_100m_R2025A_v1`) via drag-and-drop or:
     `Layer → Add Layer → Add Raster Layer….`
-2. We will now calculate the total population for each district using the tool "Zonal Statistics". Repeat the steps to do so from the previous task. We will need to do the same procedure twice, as we have the data for population under 5 spread across two input rasters.
+2. We will now calculate the total population under 5 for each district using the “Zonal Statistics” tool. Repeat the steps from the previous task. Since the under-5 population is split across two input rasters, you will need to run the same procedure twice.
     - Set the parameters as follows:
-        - Input layer: `tcd_pop_2025_adm2` (output from the previous task already containing the population sum per districts)
+        - Input layer: `tcd_pop_2025_adm2` (output from the previous task already containing the total population sum per districts)
         - Raster layer: `tcd_t_00_2025_CN_100m_R2025A_v1`
         - Raster band: 1 (there will be only one option available)
         - Ouput column prefix: `population_under_1_`
@@ -104,7 +104,20 @@ Can you find and download the WorldPop raster containing the population under 5?
     - Rename the output in the QGIS Layers panel to `tcd_pop_2025_under_1`
 3. Repeat this step with the raster `tcd_t_01_2025_CN_100m_R2025A_v1` as input raster layer and name the output column prefix `population_under_5_`. As Input layer, use the "Zonal Statistics" output from the run for the population under 1 renamed to `tcd_pop_2025_under_1`.
     - Rename the output in the QGIS Layers panel to `tcd_pop_2025_under_5` and remove the `tcd_pop_2025_under_1` layer ![](/fig/qgis_remove_selected_layer.png) as we don't need it anymore.
-4. Open the "Attribute table" ![](/fig/qgis_open_attribute_table.png) and then click on the "Field Calculator" ![](/fig/qgis_CalculateField.png) symbol. Make sure to give a meaningful "Output field name" such as `total_population_under_5`, select the correct "Output field type" and use the expression shown in the figure below
+4. Open the field calculator in the attribute table. 
+    - <kbd>Right-click</kbd> on the layer and open the attribute table or click on this symbol ![](/fig/qgis_open_attribute_table.png) 
+    - In the tool bar of the attribute table, open the ![](/fig/qgis_3.40_open_field_calc_icon.png). The field calculator let's you enter expression to calculate new columns. 
+    - A new window will open. This is the expression builder.
+5. In the expression builder, we can build and test expressions. 
+    - In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on `population_under_1_sum` and `population_under_5_sum`. This will add the colun to the expression window on the left.
+    - In the expression window
+    - Enter the following expression: 
+    ```
+    population_under_1_sum + population_under_5_sum
+    ```
+
+
+4. Open the "Attribute table" and then click on the "Field Calculator" ![](/fig/qgis_CalculateField.png) symbol. Make sure to give a meaningful "Output field name" such as `total_population_under_5`, select the correct "Output field type" and use the expression shown in the figure below.
 
     :::{figure} /fig/en_pub_health_2_pop_under_5.png
     ---
@@ -112,8 +125,10 @@ Can you find and download the WorldPop raster containing the population under 5?
     width: 650 px
     ---
     :::
+5. Now remove the fields containing the `population_under_1_sum` and `population_under_5_sum` information as we don't need them anymore. Click on "Delete fields" ![](/fig/qgis_3.40_delete_column_icon.png) and remove these two columns. Save the layer.
+    - Save the enhanced population layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_pop_2025_under_5`. Click `Save`.
 
-### Task 3: Import and Explore the Measles Cases List
+### Task 4: Import and Explore the Measles Cases List
 
 % Revise this step.
 
@@ -136,6 +151,11 @@ Make sure to always load csv data via the data source manager and not via the dr
     - <kbd>Right-click</kbd> on the `measles_cases_adm2`-layer and open the attribute table.
     - Take a look at the columns and at how the data is being stored. 
     - How could we use this data in our map? 
+
+<!--- 
+
+% THIS STEP IS REMOVED AS I DONT HAVE THE DATA SO THE AGGREGATION PART CAN BE DONE. WE WILL SKIP THIS TASK AND DIRECTLY JUMP INTO THE JOIN
+% TO ADD SOME ADDITIONAL VALUE THE CALCULATION OF POPULATION UNDER 5 WAS ADDED
 
 ### Task 4: Aggregate the measles case data with the district boundaries (adm2)
 
@@ -174,28 +194,29 @@ The aggregated data table.
 
 > Great, we now have an aggregated list of cases that we can join with the adm2 polygon layer.
 
-### Task 5: Joining the aggregated dataset with our adm2 layer
+-->  
 
-11. We can join the aggregated table with our adm2-layer including the population data:
+### Task 5: Joining the measles cases with our adm2 layer
+
+11. We can join the measles cases with our adm2-layer including the population data (`tcd_pop_2025_under_5`):
     - In the processing toolbox, open the "Join Attributes by Field value"-tool
-    - __Input layer:__ `adm2_pop`
+    - __Input layer:__ `tcd_pop_2025_under_5`
     - __Table field:__ `ADM2_FR`
-    - __Input layer 2:__ `Aggregated_measles_cases_adm2`
+    - __Input layer 2:__ `measles_cases_adm2`
     - __Table field 2:__ `adm2_name`
-    - __Fields to copy__ `sum`
-    - __Joined field prefix:__ `measles_cases_`
+    - Under "Layer 2 fields to copy" select `cases_total`
     - Click `Run`.
 
 > The result will be a new layer called `Joined layer`. Let's open the attribute table and look at the data. 
 
-12. If everything is correct, let's make the layer permanent.
+12. If everything is correct, let's make the layer permanent under `tcd_pop_2025_measles_adm2`
 
 
 ### Task 6: Calculating the incidence rate
 
-Our district layer now includes both the population and measle cases. With this information, we can calculate the incidence rate.
+Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.
 
-13. Open the field calculator in the attribute table. The field calculator let's you enter expression to calculate new columns.
+13. Open the field calculator in the attribute table. 
     - <kbd>Right-click</kbd> on the layer and open the attribute table (or select the layer and press F6)
     - In the tool bar of the attribute table, open the ![](/fig/qgis_3.40_open_field_calc_icon.png).
     - A new window will open. This is the expression builder.

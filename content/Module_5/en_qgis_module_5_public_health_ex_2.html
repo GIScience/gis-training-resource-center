@@ -583,9 +583,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-calculate-the-population-per-district">Task 2: Calculate the Population per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculate-the-population-under-5-per-district">Task 3: Calculate the Population under 5 per District</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-and-explore-the-measles-cases-list">Task 3: Import and Explore the Measles Cases List</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2">Task 4: Aggregate the measles case data with the district boundaries (adm2)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-aggregated-dataset-with-our-adm2-layer">Task 5: Joining the aggregated dataset with our adm2 layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-import-and-explore-the-measles-cases-list">Task 4: Import and Explore the Measles Cases List</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-measles-cases-with-our-adm2-layer">Task 5: Joining the measles cases with our adm2 layer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-calculating-the-incidence-rate">Task 6: Calculating the incidence rate</a></li>
 </ul>
 </li>
@@ -735,11 +734,11 @@ This will help the response coordination team prioritise vaccination deployments
 <ol class="arabic">
 <li><p>Add the population under 5 rasters (<code class="docutils literal notranslate"><span class="pre">tcd_t_00_2025_CN_100m_R2025A_v1.tif</span></code> and <code class="docutils literal notranslate"><span class="pre">tcd_t_01_2025_CN_100m_R2025A_v1</span></code>) via drag-and-drop or:
 <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Layer</span> <span class="pre">→</span> <span class="pre">Add</span> <span class="pre">Raster</span> <span class="pre">Layer….</span></code></p></li>
-<li><p>We will now calculate the total population for each district using the tool “Zonal Statistics”. Repeat the steps to do so from the previous task. We will need to do the same procedure twice, as we have the data for population under 5 spread across two input rasters.</p>
+<li><p>We will now calculate the total population under 5 for each district using the “Zonal Statistics” tool. Repeat the steps from the previous task. Since the under-5 population is split across two input rasters, you will need to run the same procedure twice.</p>
 <ul class="simple">
 <li><p>Set the parameters as follows:</p>
 <ul>
-<li><p>Input layer: <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_adm2</span></code> (output from the previous task already containing the population sum per districts)</p></li>
+<li><p>Input layer: <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_adm2</span></code> (output from the previous task already containing the total population sum per districts)</p></li>
 <li><p>Raster layer: <code class="docutils literal notranslate"><span class="pre">tcd_t_00_2025_CN_100m_R2025A_v1</span></code></p></li>
 <li><p>Raster band: 1 (there will be only one option available)</p></li>
 <li><p>Ouput column prefix: <code class="docutils literal notranslate"><span class="pre">population_under_1_</span></code></p></li>
@@ -755,16 +754,38 @@ This will help the response coordination team prioritise vaccination deployments
 <li><p>Rename the output in the QGIS Layers panel to <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code> and remove the <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_1</span></code> layer <img alt="" src="../../_images/qgis_remove_selected_layer.png" /> as we don’t need it anymore.</p></li>
 </ul>
 </li>
-<li><p>Open the “Attribute table” <img alt="" src="../../_images/qgis_open_attribute_table.png" /> and then click on the “Field Calculator” <img alt="" src="../../_images/qgis_CalculateField.png" /> symbol. Make sure to give a meaningful “Output field name” such as <code class="docutils literal notranslate"><span class="pre">total_population_under_5</span></code>, select the correct “Output field type” and use the expression shown in the figure below</p>
+<li><p>Open the field calculator in the attribute table.</p>
+<ul class="simple">
+<li><p><kbd>Right-click</kbd> on the layer and open the attribute table or click on this symbol <img alt="" src="../../_images/qgis_open_attribute_table.png" /></p></li>
+<li><p>In the tool bar of the attribute table, open the <img alt="" src="../../_images/qgis_3.40_open_field_calc_icon.png" />. The field calculator let’s you enter expression to calculate new columns.</p></li>
+<li><p>A new window will open. This is the expression builder.</p></li>
+</ul>
+</li>
+<li><p>In the expression builder, we can build and test expressions.</p>
+<ul class="simple">
+<li><p>In the middle section, we can open the “Fields and values” header to show the columns of the dataset. Uncollapse it and <kbd>Double-Click</kbd> on <code class="docutils literal notranslate"><span class="pre">population_under_1_sum</span></code> and <code class="docutils literal notranslate"><span class="pre">population_under_5_sum</span></code>. This will add the colun to the expression window on the left.</p></li>
+<li><p>In the expression window</p></li>
+<li><p>Enter the following expression:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">population_under_1_sum</span> <span class="o">+</span> <span class="n">population_under_5_sum</span>
+</pre></div>
+</div>
+</li>
+<li><p>Open the “Attribute table” and then click on the “Field Calculator” <img alt="" src="../../_images/qgis_CalculateField.png" /> symbol. Make sure to give a meaningful “Output field name” such as <code class="docutils literal notranslate"><span class="pre">total_population_under_5</span></code>, select the correct “Output field type” and use the expression shown in the figure below.</p>
 <figure class="align-default" id="en-pub-health-2-pop-under-5">
 <a class="reference internal image-reference" href="../../_images/en_pub_health_2_pop_under_5.png"><img alt="../../_images/en_pub_health_2_pop_under_5.png" src="../../_images/en_pub_health_2_pop_under_5.png" style="width: 650px;" />
 </a>
 </figure>
 </li>
+<li><p>Now remove the fields containing the <code class="docutils literal notranslate"><span class="pre">population_under_1_sum</span></code> and <code class="docutils literal notranslate"><span class="pre">population_under_5_sum</span></code> information as we don’t need them anymore. Click on “Delete fields” <img alt="" src="../../_images/qgis_3.40_delete_column_icon.png" /> and remove these two columns. Save the layer.</p>
+<ul class="simple">
+<li><p>Save the enhanced population layer by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>. Select “Geopackage” as the output format and save the layer to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ul>
+</li>
 </ol>
 </section>
-<section id="task-3-import-and-explore-the-measles-cases-list">
-<h3>Task 3: Import and Explore the Measles Cases List<a class="headerlink" href="#task-3-import-and-explore-the-measles-cases-list" title="Link to this heading">#</a></h3>
+<section id="task-4-import-and-explore-the-measles-cases-list">
+<h3>Task 4: Import and Explore the Measles Cases List<a class="headerlink" href="#task-4-import-and-explore-the-measles-cases-list" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="5">
 <li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import">Import</a> the <code class="docutils literal notranslate"><span class="pre">measles_cases_adm2</span></code> dataset as a <strong>delimited text layer</strong> with no geometry.</p>
 <ul class="simple">
@@ -791,61 +812,61 @@ This will help the response coordination team prioritise vaccination deployments
 </ul>
 </li>
 </ol>
+<!--- 
+
+% THIS STEP IS REMOVED AS I DONT HAVE THE DATA SO THE AGGREGATION PART CAN BE DONE. WE WILL SKIP THIS TASK AND DIRECTLY JUMP INTO THE JOIN
+% TO ADD SOME ADDITIONAL VALUE THE CALCULATION OF POPULATION UNDER 5 WAS ADDED
+
+### Task 4: Aggregate the measles case data with the district boundaries (adm2)
+
+We have received a .csv-file containing measle case report. In order to identify the hotspots, we want to aggregate the number of cases per district (adm2). The data does not include geographic coordinates. However, the dataset includes the names of the settlement where the case has been reported, as well as the district. With this information, we can aggregate the number of cases per district and, in a next step, join them with the adm2-layer. 
+
+% Here you could also add a step to filter the date
+
+9. Because multiple records exist per district and data, we'll aggregate them:
+    - In the processing toolbox, search for "Aggregate"
+    - As __input layer__, select the measles case data we imported in the previous step.
+    - __Group by expression:__ adm2_name
+    - In the __Aggregates__ table, remove all the columns (under source expression) except for `adm2_name`, `cases`, `settlement`, and `source`. 
+        - To delete a row: select it by clicking on the row number on the left (it will be highlighted blue), and click on ![](/fig/qgis_3.40_delete_column_icon.png).
+    - Set the __Aggregate Function__ to `concatenate_unique` for "adm2_name".
+    - Set the __Aggregate Function__ to `sum` for "cases".
+    - Click `Run`. A new layer will be added to the layers panel on the left.
+
+    ```{figure} /fig/en_qgis_3.40_public_health_aggrg_measle_cases_adm2.png
+    ---
+    name: en_qgis_3.40_public_health_aggrg_measle_cases_adm2
+    width: 600 px
+    ---
+    Set the parameters for the tool as in the picture. Make sure that the field adm2_name is set to `concatenate_unique` and the cases field to `sum`.
+
+Let's take a look at the resulting data table. The resulting table should look like this:
+
+```{figure} /fig/en_3.40_pub_health_aggregated_measles_data_attr_table.png
+---
+name: en_3.40_pub_health_aggregated_measles_data_attr_table
+width: 600 px
+---
+The aggregated data table.
+```
+
+10. Let's make the new layer permanent by <kbd>right-clicking</kbd> on it → `Make permament`. Name the file "Aggregated_measles_cases_adm2".
+
+> Great, we now have an aggregated list of cases that we can join with the adm2 polygon layer.
+
+-->  
 </section>
-<section id="task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2">
-<h3>Task 4: Aggregate the measles case data with the district boundaries (adm2)<a class="headerlink" href="#task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2" title="Link to this heading">#</a></h3>
-<p>We have received a .csv-file containing measle case report. In order to identify the hotspots, we want to aggregate the number of cases per district (adm2). The data does not include geographic coordinates. However, the dataset includes the names of the settlement where the case has been reported, as well as the district. With this information, we can aggregate the number of cases per district and, in a next step, join them with the adm2-layer.</p>
-<ol class="arabic" start="9">
-<li><p>Because multiple records exist per district and data, we’ll aggregate them:</p>
-<ul class="simple">
-<li><p>In the processing toolbox, search for “Aggregate”</p></li>
-<li><p>As <strong>input layer</strong>, select the measles case data we imported in the previous step.</p></li>
-<li><p><strong>Group by expression:</strong> adm2_name</p></li>
-<li><p>In the <strong>Aggregates</strong> table, remove all the columns (under source expression) except for <code class="docutils literal notranslate"><span class="pre">adm2_name</span></code>, <code class="docutils literal notranslate"><span class="pre">cases</span></code>, <code class="docutils literal notranslate"><span class="pre">settlement</span></code>, and <code class="docutils literal notranslate"><span class="pre">source</span></code>.</p>
-<ul>
-<li><p>To delete a row: select it by clicking on the row number on the left (it will be highlighted blue), and click on <img alt="" src="../../_images/qgis_3.40_delete_column_icon.png" />.</p></li>
-</ul>
-</li>
-<li><p>Set the <strong>Aggregate Function</strong> to <code class="docutils literal notranslate"><span class="pre">concatenate_unique</span></code> for “adm2_name”.</p></li>
-<li><p>Set the <strong>Aggregate Function</strong> to <code class="docutils literal notranslate"><span class="pre">sum</span></code> for “cases”.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>. A new layer will be added to the layers panel on the left.</p></li>
-</ul>
-<figure class="align-default" id="en-qgis-3-40-public-health-aggrg-measle-cases-adm2">
-<a class="reference internal image-reference" href="../../_images/en_qgis_3.40_public_health_aggrg_measle_cases_adm2.png"><img alt="../../_images/en_qgis_3.40_public_health_aggrg_measle_cases_adm2.png" src="../../_images/en_qgis_3.40_public_health_aggrg_measle_cases_adm2.png" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Set the parameters for the tool as in the picture. Make sure that the field adm2_name is set to <code class="docutils literal notranslate"><span class="pre">concatenate_unique</span></code> and the cases field to <code class="docutils literal notranslate"><span class="pre">sum</span></code>.</span><a class="headerlink" href="#en-qgis-3-40-public-health-aggrg-measle-cases-adm2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</li>
-</ol>
-<p>Let’s take a look at the resulting data table. The resulting table should look like this:</p>
-<figure class="align-default" id="en-3-40-pub-health-aggregated-measles-data-attr-table">
-<a class="reference internal image-reference" href="../../_images/en_3.40_pub_health_aggregated_measles_data_attr_table.png"><img alt="../../_images/en_3.40_pub_health_aggregated_measles_data_attr_table.png" src="../../_images/en_3.40_pub_health_aggregated_measles_data_attr_table.png" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">The aggregated data table.</span><a class="headerlink" href="#en-3-40-pub-health-aggregated-measles-data-attr-table" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<ol class="arabic simple" start="10">
-<li><p>Let’s make the new layer permanent by <kbd>right-clicking</kbd> on it → <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament</span></code>. Name the file “Aggregated_measles_cases_adm2”.</p></li>
-</ol>
-<blockquote>
-<div><p>Great, we now have an aggregated list of cases that we can join with the adm2 polygon layer.</p>
-</div></blockquote>
-</section>
-<section id="task-5-joining-the-aggregated-dataset-with-our-adm2-layer">
-<h3>Task 5: Joining the aggregated dataset with our adm2 layer<a class="headerlink" href="#task-5-joining-the-aggregated-dataset-with-our-adm2-layer" title="Link to this heading">#</a></h3>
+<section id="task-5-joining-the-measles-cases-with-our-adm2-layer">
+<h3>Task 5: Joining the measles cases with our adm2 layer<a class="headerlink" href="#task-5-joining-the-measles-cases-with-our-adm2-layer" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="11">
-<li><p>We can join the aggregated table with our adm2-layer including the population data:</p>
+<li><p>We can join the measles cases with our adm2-layer including the population data (<code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code>):</p>
 <ul class="simple">
 <li><p>In the processing toolbox, open the “Join Attributes by Field value”-tool</p></li>
-<li><p><strong>Input layer:</strong> <code class="docutils literal notranslate"><span class="pre">adm2_pop</span></code></p></li>
+<li><p><strong>Input layer:</strong> <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_under_5</span></code></p></li>
 <li><p><strong>Table field:</strong> <code class="docutils literal notranslate"><span class="pre">ADM2_FR</span></code></p></li>
-<li><p><strong>Input layer 2:</strong> <code class="docutils literal notranslate"><span class="pre">Aggregated_measles_cases_adm2</span></code></p></li>
+<li><p><strong>Input layer 2:</strong> <code class="docutils literal notranslate"><span class="pre">measles_cases_adm2</span></code></p></li>
 <li><p><strong>Table field 2:</strong> <code class="docutils literal notranslate"><span class="pre">adm2_name</span></code></p></li>
-<li><p><strong>Fields to copy</strong> <code class="docutils literal notranslate"><span class="pre">sum</span></code></p></li>
-<li><p><strong>Joined field prefix:</strong> <code class="docutils literal notranslate"><span class="pre">measles_cases_</span></code></p></li>
+<li><p>Under “Layer 2 fields to copy” select <code class="docutils literal notranslate"><span class="pre">cases_total</span></code></p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code>.</p></li>
 </ul>
 </li>
@@ -854,14 +875,14 @@ This will help the response coordination team prioritise vaccination deployments
 <div><p>The result will be a new layer called <code class="docutils literal notranslate"><span class="pre">Joined</span> <span class="pre">layer</span></code>. Let’s open the attribute table and look at the data.</p>
 </div></blockquote>
 <ol class="arabic simple" start="12">
-<li><p>If everything is correct, let’s make the layer permanent.</p></li>
+<li><p>If everything is correct, let’s make the layer permanent under <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_measles_adm2</span></code></p></li>
 </ol>
 </section>
 <section id="task-6-calculating-the-incidence-rate">
 <h3>Task 6: Calculating the incidence rate<a class="headerlink" href="#task-6-calculating-the-incidence-rate" title="Link to this heading">#</a></h3>
-<p>Our district layer now includes both the population and measle cases. With this information, we can calculate the incidence rate.</p>
+<p>Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.</p>
 <ol class="arabic" start="13">
-<li><p>Open the field calculator in the attribute table. The field calculator let’s you enter expression to calculate new columns.</p>
+<li><p>Open the field calculator in the attribute table.</p>
 <ul class="simple">
 <li><p><kbd>Right-click</kbd> on the layer and open the attribute table (or select the layer and press F6)</p></li>
 <li><p>In the tool bar of the attribute table, open the <img alt="" src="../../_images/qgis_3.40_open_field_calc_icon.png" />.</p></li>
@@ -938,9 +959,8 @@ This will help the response coordination team prioritise vaccination deployments
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-calculate-the-population-per-district">Task 2: Calculate the Population per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculate-the-population-under-5-per-district">Task 3: Calculate the Population under 5 per District</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-import-and-explore-the-measles-cases-list">Task 3: Import and Explore the Measles Cases List</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2">Task 4: Aggregate the measles case data with the district boundaries (adm2)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-aggregated-dataset-with-our-adm2-layer">Task 5: Joining the aggregated dataset with our adm2 layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-import-and-explore-the-measles-cases-list">Task 4: Import and Explore the Measles Cases List</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-joining-the-measles-cases-with-our-adm2-layer">Task 5: Joining the measles cases with our adm2 layer</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-calculating-the-incidence-rate">Task 6: Calculating the incidence rate</a></li>
 </ul>
 </li>
