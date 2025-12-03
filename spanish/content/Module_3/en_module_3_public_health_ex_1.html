@@ -692,17 +692,12 @@ The paths from a QGIS project to the geodata are by default relative. This means
 </section>
 <section id="task-3-importing-the-datasets">
 <h3>Task 3: Importing the datasets<a class="headerlink" href="#task-3-importing-the-datasets" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="3">
-<li><p>In your QGIS, project, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">import the following datasets</a> via drag-and-drop:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm0_20250212_AB.shp</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm1_20250212_AB.shp</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points_gpkg.gpkg</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tcd_trs_roads_OCHA.shp</span></code></p></li>
-</ul>
-</li>
-</ol>
+<p>In your QGIS, project, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop">import the following datasets</a> via drag-and-drop:
+- <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm0_20250212_AB.shp</span></code>
+- <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm1_20250212_AB.shp</span></code>
+- <code class="docutils literal notranslate"><span class="pre">tcd_admbnda_adm2_20250212_AB.shp</span></code>
+- <code class="docutils literal notranslate"><span class="pre">hotosm_tcd_health_facilities_points_gpkg.gpkg</span></code>
+- <code class="docutils literal notranslate"><span class="pre">tcd_trs_roads_OCHA.shp</span></code></p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition tip">
@@ -735,7 +730,7 @@ The paths from a QGIS project to the geodata are by default relative. This means
 </section>
 <section id="task-4-the-layers-panel-and-the-layer-concept">
 <h3>Task 4: The layers panel and the layer concept<a class="headerlink" href="#task-4-the-layers-panel-and-the-layer-concept" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="5">
+<ol class="arabic simple">
 <li><p>Once we’ve imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the <code class="docutils literal notranslate"><span class="pre">Layers</span></code>-panel. Here you can see all the datasets we’ve imported so far.</p>
 <ul class="simple">
 <li><p>QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other.</p></li>
@@ -762,7 +757,7 @@ The paths from a QGIS project to the geodata are by default relative. This means
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png" style="width: 750px;" />
 </a>
 </figure>
-<ol class="arabic simple" start="7">
+<ol class="arabic simple" start="3">
 <li><p>Let’s investigate the layers that we have added so far. Each vector layer has an attribute table, where each row represents a geometric feature on the map canvas.</p>
 <ul class="simple">
 <li><p>Open the attribute table by <kbd>right-clicking</kbd> on the ADM2 layer in the layers panel on the left → <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Attribute</span> <span class="pre">Table</span></code>.</p></li>
@@ -790,7 +785,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <p class="admonition-title">Attention</p>
 <p>Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.</p>
 </div>
-<ol class="arabic" start="8">
+<ol class="arabic">
 <li><p>Import the <code class="docutils literal notranslate"><span class="pre">vaccination_coverage_adm2</span></code> into your QGIS project:</p>
 <ul class="simple">
 <li><p>In the top bar, navigate to <code class="docutils literal notranslate"><span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Layer</span></code> → <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Delimited</span> <span class="pre">Text</span> <span class="pre">Layer...</span></code></p></li>
@@ -824,12 +819,15 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 </a>
 </figure>
 </li>
-<li><p>A new layer called “Joined Layer” will appear in the layers panel. To the right of it, you will see a <img alt="" src="../../_images/qgis_3.40_temp_layer.png" /> symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. <strong>We can save the scratch layer</strong> by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>.
-- A new window will open. Here we need to specify the file location and the layer name.
-- Leave the <code class="docutils literal notranslate"><span class="pre">Format</span></code> on “GeoPackage”.
-- Click on the three dots <img alt="" src="../../_images/Three_points.png" />, navigate to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.
-- Enter the same name into <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field (This will be the name of the layer in the layers panel).
-- Leave the rest as it is and click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
+<li><p>A new layer called “Joined Layer” will appear in the layers panel. To the right of it, you will see a <img alt="" src="../../_images/qgis_3.40_temp_layer.png" /> symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. <strong>We can save the scratch layer</strong> by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>.</p>
+<ul class="simple">
+<li><p>A new window will open. Here we need to specify the file location and the layer name.</p></li>
+<li><p>Leave the <code class="docutils literal notranslate"><span class="pre">Format</span></code> on “GeoPackage”.</p></li>
+<li><p>Click on the three dots <img alt="" src="../../_images/Three_points.png" />, navigate to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Enter the same name into <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">name</span></code> field (This will be the name of the layer in the layers panel).</p></li>
+<li><p>Leave the rest as it is and click <code class="docutils literal notranslate"><span class="pre">Ok</span></code>.</p></li>
+</ul>
+</li>
 </ol>
 <blockquote>
 <div><p>Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer</p>
@@ -856,16 +854,11 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 <p>You can move the properties window to the side so you can see the changes in symbology on your map canvas.</p>
 </div>
 </aside>
-<ol class="arabic simple" start="12">
-<li><p>Open the symbology tab via the Properties window for the layer:</p>
-<ul class="simple">
-<li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>-layer → <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.</p></li>
-<li><p>Navigate to “Symbology” in the tab section on the left.</p></li>
-<li><p>Here we can change the symbology method from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.</p></li>
-<li><p>Next, we need to select the value which will be used for the classification. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select the column <code class="docutils literal notranslate"><span class="pre">vaccination_rate_mcv1</span></code> and click on classify. We want to use the Mode <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code> and use 5 Classes for a first assessment of the vaccination coverage.</p></li>
-</ul>
-</li>
-</ol>
+<p>Open the symbology tab via the Properties window for the layer:
+- <kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">tcd_adm2_vacc_coverage</span></code>-layer → <code class="docutils literal notranslate"><span class="pre">Properties</span></code>.
+- Navigate to “Symbology” in the tab section on the left.
+- Here we can change the symbology method from <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code> to <code class="docutils literal notranslate"><span class="pre">Graduated</span></code>.
+- Next, we need to select the value which will be used for the classification. Under <code class="docutils literal notranslate"><span class="pre">Value</span></code>, select the column <code class="docutils literal notranslate"><span class="pre">vaccination_rate_mcv1</span></code> and click on classify. We want to use the Mode <code class="docutils literal notranslate"><span class="pre">Equal</span> <span class="pre">Interval</span></code> and use 5 Classes for a first assessment of the vaccination coverage.</p>
 <figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-vacc-coverage-map">
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png" style="width: 700px;" />
 </a>
@@ -930,50 +923,43 @@ When performing joins, pay attention to such inconsistencies.</p>
 </section>
 <section id="task-8-cleaning-the-healthsite-data">
 <h3>Task 8: Cleaning the Healthsite Data<a class="headerlink" href="#task-8-cleaning-the-healthsite-data" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="4">
-<li><p>Let’s take a look at the new layer we just created including the healthsite capacities by opening the attribute table.</p>
-<ul class="simple">
-<li><p><kbd>Right-Click</kdd> on the layer and open the attribute table.</p></li>
-<li><p>In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the “join attributes by field value”-tool.</p></li>
-<li><p>Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity.</p></li>
-<li><p>We can remove the healthsites without additional information, as they are already available in the original dataset.</p></li>
-<li><p>Sort the <code class="docutils literal notranslate"><span class="pre">beds_total</span></code> column ascendingly, so the features with “NULL”-values appear at the top.</p></li>
-<li><p>Click on row column (on the left), and select the first feature. If selected, the feature should appear blue.</p></li>
-<li><p>Now scroll down until you see the first feature with a value different then “NULL” in the <code class="docutils literal notranslate"><span class="pre">beds_total</span></code> column.</p></li>
-<li><p>Hold <kbd>Shift</kbd> and click on the row number of the last feature with the value NULL.</p></li>
-<li><p>In the toolbar of the attribute table, click on the <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span> <span class="pre">Mode</span></code>-button to enter the editing mode for the attribute table.</p></li>
-<li><p>Next, click on <img alt="" src="../../_images/attribute_table_delete_feature.png" /> <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">selected</span> <span class="pre">features</span></code> to delete the points with no capacity information.</p></li>
-<li><p>Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> to save and exit the editing mode.</p></li>
-<li><p>Save the cleaned healthsite capacity layer layer by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>. Select “Geopackage” as the output format and save the layer to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
-</ul>
-</li>
-</ol>
+<p>Let’s take a look at the new layer we just created including the healthsite capacities by opening the attribute table.
+- <kbd>Right-Click</kdd> on the layer and open the attribute table.
+- In the attribute table, if you scroll to the right, you will see the new columns with the information we added using the “join attributes by field value”-tool.
+- Sort the attribute table for the new columns. As you can see, not every feature has information about the capacity.
+- We can remove the healthsites without additional information, as they are already available in the original dataset.
+- Sort the <code class="docutils literal notranslate"><span class="pre">beds_total</span></code> column ascendingly, so the features with “NULL”-values appear at the top.
+- Click on row column (on the left), and select the first feature. If selected, the feature should appear blue.
+- Now scroll down until you see the first feature with a value different then “NULL” in the <code class="docutils literal notranslate"><span class="pre">beds_total</span></code> column.
+- Hold <kbd>Shift</kbd> and click on the row number of the last feature with the value NULL.
+- In the toolbar of the attribute table, click on the <img alt="" src="../../_images/mActionToggleEditing.png" /> <code class="docutils literal notranslate"><span class="pre">Toggle</span> <span class="pre">Editing</span> <span class="pre">Mode</span></code>-button to enter the editing mode for the attribute table.
+- Next, click on <img alt="" src="../../_images/attribute_table_delete_feature.png" /> <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">selected</span> <span class="pre">features</span></code> to delete the points with no capacity information.
+- Click on <img alt="" src="../../_images/mActionToggleEditing.png" /> to save and exit the editing mode.
+- Save the cleaned healthsite capacity layer layer by <kbd>right-clicking</kbd> on it and selecting <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">permament...</span></code>. Select “Geopackage” as the output format and save the layer to the <code class="docutils literal notranslate"><span class="pre">data/interim/</span></code>-folder and enter a file name such as <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p>
 <blockquote>
 <div><p>Our new healthsites point layer now includes only the healthsites for which we received additional data.</p>
 </div></blockquote>
 </section>
 <section id="task-9-classifying-the-healthsites">
 <h3>Task 9: Classifying the Healthsites<a class="headerlink" href="#task-9-classifying-the-healthsites" title="Link to this heading">#</a></h3>
-<ol class="arabic" start="5">
-<li><p>Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.</p>
-<ul class="simple">
-<li><p><kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open.</p></li>
-<li><p>On the left, navigate to the Symbology-tab.</p></li>
-</ul>
-<figure class="align-default" id="en-3-40-m3-ex-8-pub-health-1-classifying-healthpoint-capacity">
-<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png"><img alt="../../_images/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png" src="../../_images/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png" style="width: 600px;" />
-</a>
-</figure>
-<ul class="simple">
-<li><p>Instead of <code class="docutils literal notranslate"><span class="pre">Single</span> <span class="pre">Symbol</span></code>, we will now select <code class="docutils literal notranslate"><span class="pre">Categorised</span></code> as the visualisation method.</p></li>
-<li><p>As “Value”, select <code class="docutils literal notranslate"><span class="pre">cold_chain</span></code></p></li>
-<li><p>Next, click on <code class="docutils literal notranslate"><span class="pre">Classify</span></code>.</p></li>
-<li><p>If you want, you can adjust the symbology for the classes by double clicking on one.</p></li>
-<li><p>As we are not interested in <code class="docutils literal notranslate"><span class="pre">cold_chain</span></code> values which equal NULL, we can remove this classification entry by selecting it and clicking on the red minus right next to the <code class="docutils literal notranslate"><span class="pre">Classify</span></code> button.</p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Apply</span></code>, then close the properties window.</p></li>
-</ul>
-</li>
-</ol>
+<p>Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
+- <kbd>Right-click</kbd> on the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> and select <code class="docutils literal notranslate"><span class="pre">Properties</span></code>. A new window will open.
+- On the left, navigate to the Symbology-tab.
+:::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
+—
+name: en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity
+width: 600 px
+—
+:::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Instead of `Single Symbol`, we will now select `Categorised` as the visualisation method.
+- As &quot;Value&quot;, select `cold_chain`
+- Next, click on `Classify`. 
+- If you want, you can adjust the symbology for the classes by double clicking on one. 
+- As we are not interested in `cold_chain` values which equal NULL, we can remove this classification entry by selecting it and clicking on the red minus right next to the `Classify` button.
+- Click `Apply`, then close the properties window. 
+- Analyze how healthsites with a true `cold_chain` value are distributed.
+</pre></div>
+</div>
 <!---
 ### Task 7: Add Digital elevation model
 -->
