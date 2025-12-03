@@ -53,6 +53,8 @@ Accessibility to health services is a key determinant of vaccination coverage. I
 
 :::
 
+<!--
+
 :::{card}
 :link: 
 __Part 4: Creating a situation map to help decision-making__
@@ -62,3 +64,4 @@ In this part, the print layout composer will be used to create an publishable an
 
 :::
 
+-->
