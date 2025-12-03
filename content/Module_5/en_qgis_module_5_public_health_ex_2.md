@@ -252,6 +252,48 @@ In this task, we will create a map showing the measles incidence rate by distric
 
 #### Task 7.2: Print Layout
 
+Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
+
+1. Open a new print layout and give it a name (e.g. Measles Incidence Chad). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
+    - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
+    - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"Item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
+2. Insert a new map by clicking on ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+3. Move and position the map so that the entire country is visible at a reasonable scale. The first map will be used for the measles incidence rate.
+4. For our example we want to add another map. In this overview map we will display the population under 5.
+
+:::{admonition} Lock layers and Lock styles for layers
+When working with multiple maps in the Print Layout, you need to lock the layers and their styles in the Item Properties under the “Layers” section. This ensures that each map remains unchanged, even if you turn layers on or off in the main QGIS window.
+:::
+
+5. Let's add a title:
+    - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
+    - Drag a rectangle on the canvas.
+    - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Measles Incidence Rate | Chad).
+    - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
+6. Let's add a legend:
+    - Click on  ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
+    - Navigate to the __Item Properties__ panel on the right. 
+    - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
+    - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
+7. Now, let's add a scale bar:
+    - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
+    - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
+8. Let's add a north arrow:
+    - Click on ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
+    - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
+9. Add a text box with additional information, sources, the author (you), and date of creation.
+10. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
+11. Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.
+
+The finished map could look something like this:
+
+:::{figure} ../../fig/pub_health_map_measles_incidence_chad.png
+---
+name: Main road network and hospitals in Ghana, Africa
+width: 600px
+---
+The main map displays the measles incidence rate, while the secondary map shows the population under five.
+:::
 
 
 
