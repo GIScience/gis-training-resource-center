@@ -346,7 +346,7 @@ When performing joins, pay attention to such inconsistencies.
     :::{note}
     After running the algorithm, the window will switch to the `Log` window. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (table field) is missing from the corresponding column in layer 2. It may occur because the data is unavailable or because of inconsistencies in the identifying value, such as typos or different spellings.
     :::
-    - After reviewing the `Log`, we can close the tool-window. A new layer called `Joined layer` should appear in your layers panel. Rename it to "`healthsites_points_capacities`" and move it to the top. 
+    - After reviewing the `Log`, we can close the tool-window. A new layer called `Joined layer` should appear in your layers panel. Rename it to `healthsites_points_capacities` and move it to the top. 
 
 > We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector. 
 
@@ -366,7 +366,7 @@ When performing joins, pay attention to such inconsistencies.
     - In the toolbar of the attribute table, click on the ![](/fig/mActionToggleEditing.png) `Toggle Editing Mode`-button to enter the editing mode for the attribute table. 
     - Next, click on ![](/fig/attribute_table_delete_feature.png) `Delete selected features` to delete the points with no capacity information. 
     - Click on ![](/fig/mActionToggleEditing.png) to save and exit the editing mode.
-    - Save the cleaned healthsite capacity layer layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_healthsites_points_capacities`. Click `Save`.
+    - Save the cleaned healthsite capacity layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_healthsites_points_capacities`. Click `Save`.
 
 
 % Adjust the cleaning instructions to decide on cold capacity = NULL: WILL BE DONE IN ONE OF THE FOLLOWING EXERCISES
