@@ -878,6 +878,63 @@ The aggregated data table.
 </section>
 <section id="task-7-2-print-layout">
 <h4>Task 7.2: Print Layout<a class="headerlink" href="#task-7-2-print-layout" title="Link to this heading">#</a></h4>
+<p>Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it’s content by themselves.</p>
+<ol class="arabic simple">
+<li><p>Open a new print layout and give it a name (e.g. Measles Incidence Chad). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.</p>
+<ul class="simple">
+<li><p>On the left, you will find a toolbar with tools to add and move items on the print layout canvas.</p></li>
+<li><p>On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called <strong>“Item properties”</strong>. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).</p></li>
+</ul>
+</li>
+<li><p>Insert a new map by clicking on <img alt="New Map Icon" src="../../_images/30.30.2_print_layout_insert_map_icon.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Map</span></code>) on the left toolbar, and drawing a rectangle on the print canvas. <a class="reference internal" href="../Module_4/en_qgis_map_design_2.html#adding-a-new-map"><span class="std std-ref">Video</span></a></p></li>
+<li><p>Move and position the map so that the entire country is visible at a reasonable scale. The first map will be used for the measles incidence rate.</p></li>
+<li><p>For our example we want to add another map. In this overview map we will display the population under 5.</p></li>
+</ol>
+<div class="admonition-lock-layers-and-lock-styles-for-layers admonition">
+<p class="admonition-title">Lock layers and Lock styles for layers</p>
+<p>When working with multiple maps in the Print Layout, you need to lock the layers and their styles in the Item Properties under the “Layers” section. This ensures that each map remains unchanged, even if you turn layers on or off in the main QGIS window.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Let’s add a title:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add text icon" src="../../_images/30.30.2_print_layout_add_text.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">text</span></code>)</p></li>
+<li><p>Drag a rectangle on the canvas.</p></li>
+<li><p>In the item properties window on the right, you will find a text box with the text “Lorem ipsum”. Here you can enter your map title (e.g. Measles Incidence Rate | Chad).</p></li>
+<li><p>Adjust the font size: Click on the <strong>Font</strong> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</p></li>
+</ul>
+</li>
+<li><p>Let’s add a legend:</p>
+<ul class="simple">
+<li><p>Click on  <img alt="Add legend icon" src="../../_images/30.30.2_print_layout_add_legend.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">legend</span></code>).</p></li>
+<li><p>Navigate to the <strong>Item Properties</strong> panel on the right.</p></li>
+<li><p>Scroll down a bit and check turn off <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">Update</span></code> by unchecking the check box. Now you can freely edit every item on the legend</p></li>
+<li><p>Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <img alt="Edit Icon" src="../../_images/30.30.2_print_layout_legend_edit.png" /> (<code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">selected</span> <span class="pre">item</span> <span class="pre">properties</span></code>) below the legend entries.</p></li>
+</ul>
+</li>
+<li><p>Now, let’s add a scale bar:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add Scale bar icon" src="../../_images/30.30.2_print_layout_add_scale_bar.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Scale</span> <span class="pre">bar</span></code>)</p></li>
+<li><p>Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, …), the fixed segment width (50 km, 75 km, 100 km, …) and the number of segments (to the right).</p></li>
+</ul>
+</li>
+<li><p>Let’s add a north arrow:</p>
+<ul class="simple">
+<li><p>Click on <img alt="Add North Arrow Icon" src="../../_images/30.30.2_print_layout_add_orientation.png" /> (<code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">North</span> <span class="pre">Arrow</span></code>).</p></li>
+<li><p>Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</p></li>
+</ul>
+</li>
+<li><p>Add a text box with additional information, sources, the author (you), and date of creation.</p></li>
+<li><p>When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under “results”.</p></li>
+<li><p>Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.</p></li>
+</ol>
+<p>The finished map could look something like this:</p>
+<figure class="align-default" id="main-road-network-and-hospitals-in-ghana-africa">
+<a class="reference internal image-reference" href="../../_images/pub_health_map_measles_incidence_chad.png"><img alt="../../_images/pub_health_map_measles_incidence_chad.png" src="../../_images/pub_health_map_measles_incidence_chad.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The main map displays the measles incidence rate, while the secondary map shows the population under five.</span><a class="headerlink" href="#main-road-network-and-hospitals-in-ghana-africa" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 </section>
