@@ -97,7 +97,6 @@ To do this, you will generate travel-time isochrones around vaccination points a
    - **Statistics to calculate:** `Sum`
    - **Output column prefix:** `pop_vaccination_`
    - **Output file name:** `population_within_isochrones`
-3. Run the tool.
 
 Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.
 
@@ -120,7 +119,7 @@ Now we have calculated the total population located within the 2-hour travel-tim
 
 % THIS IS STILL MISSING
 
-## Task 6: Visualising Accessibility
+## Task 4: Visualising Accessibility
 
 1. To visualize the `population_within_isochrones` data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the __Join attributes by field value__ tool:
    - **Input layer:** `tcd_admbnda_adm2_20250212_AB.shp`
