@@ -898,7 +898,7 @@ As we want to visualize multiple variables later we choose to use a secondary po
    - Save the Centroids as `centroids_infections` to your drive by clicking "Run".
 
 
-:::{figure} ../../fig/mod_4_centroid_tool.png
+:::{figure} /fig/mod_4_centroid_tool.png
 ---
 width: 700px
 name: Centroid tool
@@ -920,7 +920,7 @@ These centroids take all fields and their stored information from the polygons t
 
 
 
-:::{figure} ../../fig/mod_4_point_styling.png
+:::{figure} /fig/mod_4_point_styling.png
 ---
 width: 700px
 name: Point styling
@@ -957,7 +957,7 @@ To further enhance the information content of the map you can add labels to your
 - As **"Value"** select the field containing the infection count for week 8 `week8_inf_new`.
 
 
-:::{figure} ../../fig/mod_4_point_stylinginfection_labels.png
+:::{figure} /fig/mod_4_point_stylinginfection_labels.png
 width: 700px
 name: label generation
 ---
@@ -969,7 +969,7 @@ Configuration of the Layer Styling Panel to generate point labels
 - To optimize the location of the point labels navigate to the **"Placement"** panel and for "Mode" select **"Offset from Point"**. With the "Quadrant" option you can determine the placement of the labels relative to the the centroid to you liking
 
 
-:::{figure} ../../fig/mod_4_label_placement.png
+:::{figure} /fig/mod_4_label_placement.png
 width: 700px
 name: label placement
 ---
@@ -983,7 +983,7 @@ Configuration of the Placement Panel
 Your centroid layer now should look something like this (colour may vary):
 
 
-:::{figure} ../../fig/mod_4_centroids_example.png
+:::{figure} /fig/mod_4_centroids_example.png
 width: 700px
 name: label placement
 ---
@@ -1039,7 +1039,7 @@ Now that we have visualized our first epidemiological parameter ("weekly new cas
    - Click on **"Ok"** to generated the new field.
 
 
-:::{figure} ../../fig/mod_4_trend_calculation.png
+:::{figure} /fig/mod_4_trend_calculation.png
 ---
 width: 700px
 name: Trend calculation
@@ -1076,7 +1076,7 @@ With your newly generated infection trend field you are now able to display the 
 Now display you polygon layer `Som_outbreak_epi` together with you point layer `Centroids_infections` (centroids on top) to display all generated information in one map view. The result should look something like this (colour may vary):
 
 
-:::{figure} ../../fig/mod_4_infectionmap_example.png
+:::{figure} /fig/mod_4_infectionmap_example.png
 width: 700px
 name: label placement
 ---
@@ -1087,10 +1087,19 @@ If you want to generate a proper map layout of your epidemological overview map 
 
 
 
+
+
+
+
 ## Creating a map visualising weekly deaths and mortality rate
 
 After we created our multi variable map with information about the development of ifections we can transfer the used steps to also create a map providing information about weekly deaths and the current mortality rate of the outbreak. The basic information needed is stored in the `weekX_dc` fields of your polygon layer `Som_outbreak_epi`, which provide weekly death counts for every week of the cholera outbreak.
 
 #### Create circles proportional to weekly infections
 
-- To create a point layer 
+- To create a point layer that visualizes weekly death count with proportional circles repeat the same steps that you learned previously when visualizing the new weekly infections. The only change you need to implement is changing the **"Value"** dropdwon menue in the Symbology panel from `week8_inf_new` to `week8_dc` to link the death count to the point sizes.
+
+
+
+#### Display the current mortality rate with polygon colours
+ 
