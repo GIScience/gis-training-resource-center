@@ -27,9 +27,10 @@ Over the past month, health authorities in Chad have reported a surge in measles
 | `tcd_admbnda_adm0_20250212_AB.shp` (Polygons) | Chad Subnational Administrative Boundaries (level 0: country) | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/cod-ab-tcd) |
 | `tcd_admbnda_adm1_20250212_AB.shp` (Polygons) | Chad Administrative Boundaries (level 1: regions) | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/cod-ab-tcd) |
 | `tcd_admbnda_adm2_20250212_AB.shp` (Polygons) | Chad Administrative Boundaries (level 2: province) | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/cod-ab-tcd)
-| `hotosm_tcd_health_facilities_points.csv` (Points) | Chad Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team | [HOTOSM](https://data.humdata.org/dataset/hotosm_tcd_health_facilities) | 
-| `Healthsite_capacities.csv` | Healthsite Capacities | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
-| `measles_vaccination_coverage.csv` | Measles vaccination coverage | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
+| `hotosm_tcd_health_facilities_points_gpkg.gpkg` (Points) | Chad Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team | [HOTOSM](https://data.humdata.org/dataset/hotosm_tcd_health_facilities) | 
+| `tcd_roads_ocha.shp` (Lines) | Chad - Road Network | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/chad-roads-osm-ministry-of-transport) |
+| `tcd_healthsite_capacities.csv` | Healthsite Capacities | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
+| `measles_vaccination_coverage_adm2.csv` | Measles vaccination coverage | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
 
 :::{note}
 
@@ -71,7 +72,7 @@ GIS_Training_Public_Health
 1. Open QGIS and create a new project.
 2. Save the project via `Project` → `Save As...`. Navigate to the folder for this training and save it in the `/project` subfolder. Give it a name (e.g., `GIS_Training_Public_Health_Part_1`) and click `Save`. 
 3. Now we should set up the Project CRS.
-    - In the bottom right corner of the QGIS window, click on the ![](/fig/3.40_projection_icon.png) Projection icon. Let's choose a metric CRS that depicts Chad without distorting too much. For this exercise, we will use __"Albers Equal Area Conic" (EPSG: 102022)__. In the `Filter` bar, enter the name or the EPSG number. The CRS should appear in the "Prefedined Coordinate Reference Systems" Box. Select it and click `Apply` and `OK`. 
+    - In the bottom right corner of the QGIS window, click on the ![](/fig/3.40_projection_icon.png) Projection icon. Let's choose a metric CRS that depicts Chad without distorting too much. For this exercise, we will use __"Albers Equal Area Conic" (EPSG: 102022)__. In the `Filter` bar, enter the name or the EPSG number. The CRS should appear in the "Predefined Coordinate Reference Systems" Box. Select it and click `Apply` and `OK`. 
     :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_project_crs.png
@@ -115,11 +116,12 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 ---
 :::
 3. Download the layers.
-    - On the download page, you can usually select different data formats. The formats are indicated by their file endings (e.g., `.shp`, `.gpkg`, `.gdb`)
+    - On the download page, you can usually select different data formats. The formats are indicated by their file endings (e.g., `.shp`, `.gpkg`, `.gdb`).
+    - Sometimes the data is still zipped, so the file extension isn’t visible.
     - Choose the following formats: 
         - Chad Administrative Boundaries (OCHA): __Shapefile__
         - Chad Health Facilities (OpenStreetMap Export): __GeoPackage__ for __Points__, we don't need the polygons information for this example
-        - Chad Roads (OCHA): __Shapefile__
+        - Chad Roads (OCHA): __Shapefile__ 
         :::{figure} /fig/en_m3_ex_8_public_health_part_1_hdx_data_formats.png
         ---
         name: en_m3_ex_8_public_health_part_1_hdx_data_formats
@@ -132,7 +134,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 % ADD IMAGE AND EXPAND THIS SECTION: DONE
 
 
-### Task 2: Importing the datasets
+### Task 3: Importing the datasets
 
 3. In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
     - `tcd_admbnda_adm0_20250212_AB.shp`
@@ -174,7 +176,7 @@ Imported files __are not saved within__ the QGIS project. If you move or delete 
 
 :::
 
-### Task 3: The layers panel and the layer concept
+### Task 4: The layers panel and the layer concept
 
 5. Once we've imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the `Layers`-panel. Here you can see all the datasets we've imported so far. 
     - QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other. 
@@ -213,11 +215,11 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 -->
 
 
-### Task 4: Joining Vaccination Coverage Data with administrative boundaries
+### Task 5: Joining Vaccination Coverage Data with administrative boundaries
 
 % ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
-In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
+In our `data/input`-folder, we can find a csv file called `measles_vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
 :::{attention}
 Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
@@ -225,9 +227,9 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
 
 % ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
 
-8. Import the `vaccination_coverage_adm2` into your QGIS project:
+8. Import the `measles_vaccination_coverage_adm2` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
-    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/vaccination_coverage.csv` file and click `Open`.
+    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/measles_vaccination_coverage_adm2.csv` file and click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? 
     - Unfortunately, there are no columns with the coordinates for the individual healthsites in this data table. Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
@@ -243,7 +245,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `tcd_admbnda_adm2_20250212_AB`.
     - Under "Table field", select `ADM2_PCODE`.
-    - As "Input layer 2", select `vaccination_coverage_adm2`.
+    - As "Input layer 2", select `measles_vaccination_coverage_adm2`.
     - Under "Table field 2", select `adm2_pcode`.
     - Under "Layer 2 fields to copy", we can select which columns we want to copy. Click on the ![](/fig/Three_points.png) three dots to the right of the field and select `vaccination_rate_mcv1` and `vaccination_rate_mcv2`. Then, click `OK`.
     - Finally, to execute the algorithm, click on `Run`. 
@@ -263,7 +265,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
 
 > Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer
 
-### Task 5: Visualising the vaccination coverage
+### Task 6: Visualising the vaccination coverage
 
 :::{Admonition} Saving your progress
 :class: tip
@@ -299,7 +301,7 @@ width: 700 px
 
 % ADD CLASSIFICATION STEPS AND RESULT IMAGE: DONE
 
-### Task 4: Enriching the Healthsites dataset
+### Task 7: Enriching the Healthsites dataset
 
 % HERE MAYBE HAVE SOME ENTRIES IN THE ADM2 COLUMN USE FRENCH NAMES OR HAVE SOME TYPOS (MAX 2 or 3). BUT SHOW HOW YOU HAVE TO CLEAN DATA TO MAKE THINGS WORK. CHECK THE LOG AND THEN RERUN 
 
@@ -344,7 +346,7 @@ When performing joins, pay attention to such inconsistencies.
 
 > We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector. 
 
-### Task 5: Cleaning the Healthsite Data
+### Task 8: Cleaning the Healthsite Data
 
 % This step is not necessary
 
@@ -365,7 +367,7 @@ When performing joins, pay attention to such inconsistencies.
 
 > Our new healthsites point layer now includes only the healthsites for which we received additional data.
 
-### Task 6: Classifying the Healthsites
+### Task 9: Classifying the Healthsites
 
 5. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
     - <kbd>Right-click</kbd> on the `Healthsites_points_capacities` and select `Properties`. A new window will open.
