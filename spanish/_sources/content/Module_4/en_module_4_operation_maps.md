@@ -803,3 +803,285 @@ name: 3W example cholera
 A simple example of a 3W map showing the distribution of Oral Rehydration Points and the active organizations operating in south-eastern Sudan.
 :::
 
+
+
+
+
+
+
+
+
+
+
+# Creating a epidemological overview map
+
+
+## Introduction:
+
+
+Epidemiological overview maps are among the most frequently requested analytical products during the early stages of an outbreak response. These maps synthesize when, where, and how intensely disease transmission and mortality are occurring across affected areas. By visualizing weekly case incidence and identifying whether transmission is increasing, stable, or decreasing in each location, responders gain rapid insight into the evolving dynamics of the epidemic. A related view, incorporating weekly deaths and mortality rates, supports assessment of disease severity and potential gaps in access to care. These outputs are routinely included in Situation Reports, operational updates, and epidemiological briefings, and serve as key reference tools during coordination meetings. In this section, we will explore the essential components of epidemiological overview maps and demonstrate how to produce them in QGIS using simulated weekly case and mortality data.
+
+
+
+
+In this tutorial, you will learn how to create a multivariable map to generate an epidemiological overview of a cholera outbreak in Somalia. Using a fictional dataset with weekly infection counts and death rates, you will visualize the situation for a selected week by applying several QGIS visualization tools.
+
+
+
+
+## About the Dataset
+
+
+The dataset contains epidemiological parameters for Somalia at the regional level, covering a 12-week period during a cholera outbreak. The parameters include weekly new cases, weekly cumulative cases, and the weekly death rate.
+
+
+### Fields used in this tutorial
+
+
+| **Field**                 | **Contents** |
+|--------------------------|--------------------------|
+| **adm1_name**           | Names of administrative districts|
+| **weekX_inf_new**         | Count of new weekly infections |
+| **weekX_inf_cul**          | Cumulative count of infections |
+| **weekX_dc**          | Count of weekly deaths |
+
+
+
+
+
+
+### Data preparation
+First, we need to load the dataset into QGIS:
+
+
+::::{dropdown} Import the data
+
+
+#### Import the dataset into QGIS
+
+
+1. In the top menu, go to 
+  **Layer → Add Layer → Add Vector Layer**
+
+
+2. Next to the **File name** field, click the three dots ![](/fig/Three_points.png)  
+   and browse to your **Som_outbreak_epi** file and click `Open`.
+
+
+3. Click **Add**. 
+  The layer will now appear in your **Layers** panel and the polygons will display on the map canvas.
+
+
+::::
+
+
+
+
+
+
+### Visualising the number of new weekly infections with value proportional circles
+
+
+As we want to visualize multiple variables later we choose to use a secondary point layer to map weekly infections. We will use week 8 of the outbreak for our example map. The number of new weekly infections (`week8_new_inf`) will control the **size** of each circle.
+
+
+
+
+::::{dropdown}
+
+
+### Create circles proportional to weekly infections
+
+
+1. **Create centroids for every region**
+   - Open the **Processing Toolbox Panel** and search for the `Centroids` tool and open it
+   - As `Input Layer` select `Som_outbreak_epi`.
+   - Save the Centroids as `centroids_infections` to your drive by clicking "Run".
+
+
+:::{figure} ../../fig/mod_4_centroid_tool
+---
+width: 700px
+name: Centroid tool
+---
+Configuration of the centroid tool to generate centroids of the administrative district polygons
+:::
+
+
+These centroids take all fields and their stored information from the polygons they are created from, which is crucial if they are utilized for visualization of the stored variables.
+
+
+2. **Visualize weekly infections with point size** 
+  - Open the `Layer Styling Panel` select your centroid layer `Centroids_infections` and make sure the **Symbology** menue is selected.
+  - At the top of the Symbology window, change the style from **Single Symbol** to **Graduated**
+  - As Value, choose `week8_inf_new`. This is the field that will control the size of each circle.
+  - Next to **Method**, change the default option **"Color"** to **Size**. This turns the graduated classification into a proportional circle map. Click "classify" and choose 5 classes for displaying you values.
+  - As classification mode choose **"Equal Interval"** next to "Mode".
+
+
+
+
+:::{figure} ../../fig/mod_4_point_styling
+---
+width: 700px
+name: Point styling
+---
+Configuration of the Layer Styling Panel to achieve proportional point sizes
+:::
+
+
+
+
+:::{Tip}
+With the visualizatioj variable **"Size from ... to ..."** you can alter the size interval the points will cover to display the values. Try differnet options and choose which combination communicates the values optimally for you purpose. A good default for this visualization is 5 to 15 millimeters.
+:::
+
+
+
+
+::::
+
+
+
+
+
+
+To further enhance the information content of the map you can add labels to your circles that show the exact number of new infections for week 8.
+
+
+::::{dropdown}
+### Add labels to weekly infections points**
+
+
+- Open the `Layer Styling Panel`, select your centroid layer `Centroids_infections` and select **Labels** in the side bar on the left hand side
+- In the labels panel select **"Single labels"** in the drop down menue.
+- As **"Value"** select the field containing the infection count for week 8 `week8_inf_new`.
+
+
+:::{figure} ../../fig/mod_4_point_stylinginfection_labels
+width: 700px
+name: label generation
+---
+Configuration of the Layer Styling Panel to generate point labels
+:::
+
+
+- Select the third panel of the label options and check the box **"Draw text buffer"** to generate a small buffer around you labels to enhance visibility.
+- To optimize the location of the point labels navigate to the **"Placement"** panel and for "Mode" select **"Offset from Point"**. With the "Quadrant" option you can determine the placement of the labels relative to the the centroid to you liking
+
+
+:::{figure} ../../fig/mod_4_label_placement
+width: 700px
+name: label placement
+---
+Configuration of the Placement Panel
+:::
+
+
+::::
+
+
+Your centroid layer now should look something like this (colour may vary):
+
+
+:::{figure} ../../fig/mod_4_centroids_example
+width: 700px
+name: label placement
+---
+Configuration of the Placement Panel
+:::
+
+
+
+
+:::{Note}
+Just by changing the selected field under "Value" in the Symbology panel, you can quickly use your configured visualization style for a different variable. E.g. you can select the field "week8_inf_cul" and check if the cumulative cases of infections per region show a similar pattern to the current state of new infections.
+:::
+
+
+
+
+
+
+#### Display the current infection trend with polygon colours
+
+
+Now that we have visualized our first epidemiological parameter ("weekly new cases") using proportional circle sizes, we can use our polygon layer `Som_outbreak_epi` to display additional relevant information. Alongside the weekly infections, we want to show the **infection trend** from week 7 to week 8 for each regi to analyze, whether weekly infections are rising, falling, or stagnating. To achieve this, we first need to generate a new field using the **Field Calculator**:
+
+
+
+
+
+
+::::{dropdown} Generate a infection trend field with the field calculator
+
+
+### Generate a infection trend field with the field calculator
+
+
+1. **Open the field calculator**
+   - Open the attribute table of your polygon layer `Som_outbreak_epi` by right clicking on it and select "Open Attribute Table" in the pop up window.
+   - In the attribute table open the `Field Calculator` by clicking on the ![]../../fig/mod_4_fieldcalc_symbol symbol at the top of the window.
+
+
+2. **Create a new field diplaying infection trend**
+   - In the Field Calculator interface keep "Create a new field" selected and choose "infection_trend" as **"Output field name"**. As **Output field type** choose **"Text (string)"**
+   - In the "Expression panel" enter the following code chunk:
+
+
+   ```python
+      CASE
+          WHEN "week8_inf_new" > "week7_inf_new" THEN 'increase'
+          WHEN "week8_inf_new" < "week7_inf_new" THEN 'decrease'
+          ELSE 'no change'
+      END
+   ```
+   For every polygon this code fills the newly generated field with "increase"/"decrease" if the week 8 value is higher/lower that the one of the previous week and with "no change" if both values are equal.
+   - Click on **"Ok"** to generated the new field.
+
+
+:::{figure} ../../fig/mod_4_trend_calculation
+---
+width: 700px
+name: Trend calculation
+---
+Configuration of the Field Calculator interface to generate the infection trend field
+:::
+
+
+::::
+
+
+
+
+With your newly generated infection trend field you are now able to display the trend direction for every region with polygon colour:
+
+
+::::{dropdown} Generate a infection trend field with the field calculator
+
+
+### Vizualize the current infection trend
+
+
+- Open the `Layer Styling Panel` and select your polygon layer layer `Som_outbreak_epi` and select **Symbology**.
+  - At the top of the Symbology window, change the style from **Single Symbol** to **Categorized**
+  - As Value, choose `infection trend` to display the calculated trend direction.
+  - Click "Classify" to execute the classification. Choose coulours of your liking for the values "decrease" and "increase" and "no change" (e.g. green,red and grey) by double clicking on the coloured squares in the panel displaying the classes.
+  - As classification mode choose **"Equal Interval"** next to "Mode".
+  - For nicer visuals you can optionally also slightly reduce the **opacity** of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel
+
+
+::::
+
+
+Now display you polygon layer `Som_outbreak_epi` together with you point layer `Centroids_infections` (centroids on top) to display all generated information in one map view. The result should look something like this (colour may vary):
+
+
+:::{figure} ../../fig/mod_4_infectionmap_example
+width: 700px
+name: label placement
+---
+:::
+
+
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html).
