@@ -840,7 +840,6 @@ The dataset contains epidemiological parameters for Somalia at the regional leve
 
 | **Field**                 | **Contents** |
 |--------------------------|--------------------------|
-| **adm1_name**           | Names of administrative districts|
 | **weekX_inf_new**         | Count of new weekly infections |
 | **weekX_inf_cul**          | Cumulative count of infections |
 | **weekX_dc**          | Count of weekly deaths |
@@ -855,10 +854,6 @@ First, we need to load the dataset into QGIS:
 
 
 ::::{dropdown} Import the data
-
-
-#### Import the dataset into QGIS
-
 
 1. In the top menu, go to 
   **Layer → Add Layer → Add Vector Layer**
@@ -876,9 +871,6 @@ First, we need to load the dataset into QGIS:
 
 
 
-
-
-
 ### Creating a map visualising weekly infections and infection trends
 
 As we want to visualize multiple variables later we choose to use a secondary point layer to map weekly infections. We will use week 8 of the outbreak for our example map. The number of new weekly infections (`week8_new_inf`) will control the **size** of each circle.
@@ -886,11 +878,7 @@ As we want to visualize multiple variables later we choose to use a secondary po
 
 
 
-::::{dropdown}
-
-
-#### Create circles proportional to weekly infections
-
+::::{dropdown} Create circles proportional to weekly infections
 
 1. **Create centroids for every region**
    - Open the **Processing Toolbox Panel** and search for the `Centroids` tool and open it
@@ -900,7 +888,7 @@ As we want to visualize multiple variables later we choose to use a secondary po
 
 :::{figure} /fig/mod_4_centroid_tool.png
 ---
-width: 700px
+width: 600px
 name: Centroid tool
 ---
 Configuration of the centroid tool to generate centroids of the administrative district polygons
@@ -922,7 +910,7 @@ These centroids take all fields and their stored information from the polygons t
 
 :::{figure} /fig/mod_4_point_styling.png
 ---
-width: 700px
+width: 500px
 name: Point styling
 ---
 Configuration of the Layer Styling Panel to achieve proportional point sizes
@@ -948,17 +936,14 @@ With the visualizatioj variable **"Size from ... to ..."** you can alter the siz
 To further enhance the information content of the map you can add labels to your circles that show the exact number of new infections for week 8.
 
 
-::::{dropdown}
-### Add labels to weekly infections points**
-
-
+::::{dropdown} Add labels to weekly infections points
 - Open the `Layer Styling Panel`, select your centroid layer `Centroids_infections` and select **Labels** in the side bar on the left hand side
 - In the labels panel select **"Single labels"** in the drop down menue.
 - As **"Value"** select the field containing the infection count for week 8 `week8_inf_new`.
 
 
-:::{figure} /fig/mod_4_point_stylinginfection_labels.png
-width: 700px
+:::{figure} /fig/mod_4_point_styling.png
+width: 400px
 name: label generation
 ---
 Configuration of the Layer Styling Panel to generate point labels
@@ -970,7 +955,7 @@ Configuration of the Layer Styling Panel to generate point labels
 
 
 :::{figure} /fig/mod_4_label_placement.png
-width: 700px
+width: 400px
 name: label placement
 ---
 Configuration of the Placement Panel
@@ -984,10 +969,10 @@ Your centroid layer now should look something like this (colour may vary):
 
 
 :::{figure} /fig/mod_4_centroids_example.png
-width: 700px
+width: 500px
 name: label placement
 ---
-Configuration of the Placement Panel
+
 :::
 
 
@@ -1002,7 +987,7 @@ Just by changing the selected field under "Value" in the Symbology panel, you ca
 
 
 
-#### Display the current infection trend with polygon colours
+### Display the current infection trend with polygon colours
 
 
 Now that we have visualized our first epidemiological parameter ("weekly new cases") using proportional circle sizes, we can use our polygon layer `Som_outbreak_epi` to display additional relevant information. Alongside the weekly infections, we want to show the **infection trend** from week 7 to week 8 for each regi to analyze, whether weekly infections are rising, falling, or stagnating. To achieve this, we first need to generate a new field using the **Field Calculator**:
@@ -1013,9 +998,6 @@ Now that we have visualized our first epidemiological parameter ("weekly new cas
 
 
 ::::{dropdown} Generate a infection trend field with the field calculator
-
-
-### Generate a infection trend field with the field calculator
 
 
 1. **Open the field calculator**
@@ -1041,7 +1023,7 @@ Now that we have visualized our first epidemiological parameter ("weekly new cas
 
 :::{figure} /fig/mod_4_trend_calculation.png
 ---
-width: 700px
+width: 600px
 name: Trend calculation
 ---
 Configuration of the Field Calculator interface to generate the infection trend field
@@ -1056,11 +1038,7 @@ Configuration of the Field Calculator interface to generate the infection trend 
 With your newly generated infection trend field you are now able to display the trend direction for every region with polygon colour:
 
 
-::::{dropdown} Generate a infection trend field with the field calculator
-
-
-### Vizualize the current infection trend
-
+::::{dropdown} Vizualize the current infection trend
 
 - Open the `Layer Styling Panel` and select your polygon layer layer `Som_outbreak_epi` and select **Symbology**.
   - At the top of the Symbology window, change the style from **Single Symbol** to **Categorized**
@@ -1077,7 +1055,7 @@ Now display you polygon layer `Som_outbreak_epi` together with you point layer `
 
 
 :::{figure} /fig/mod_4_infectionmap_example.png
-width: 700px
+width: 500px
 name: label placement
 ---
 :::
@@ -1100,6 +1078,69 @@ After we created our multi variable map with information about the development o
 - To create a point layer that visualizes weekly death count with proportional circles repeat the same steps that you learned previously when visualizing the new weekly infections. The only change you need to implement is changing the **"Value"** dropdwon menue in the Symbology panel from `week8_inf_new` to `week8_dc` to link the death count to the point sizes.
 
 
-
 #### Display the current mortality rate with polygon colours
- 
+
+
+Alongside the weekly death count, we want to show the **mortality rate** from week 7 to week 8. To achieve this, we first need to generate a new field using the **Field Calculator**. beforehand make sure to create a duplicate layer of `Som_outbreak_epi` to dont overwrite you previous vizualisation. Call the dupolicate layer `Som_outbreak_mort`.
+
+
+
+::::{dropdown} Generate a moertality rate field with the field calculator
+
+1. **Open the field calculator**
+   - Open the attribute table of your polygon layer `Som_outbreak_mort` by right clicking on it and select "Open Attribute Table" in the pop up window.
+   - In the attribute table open the `Field Calculator` by clicking on the ![]../../fig/mod_4_fieldcalc_symbol.png symbol at the top of the window.
+
+
+2. **Create a new field diplaying infection trend**
+   - In the Field Calculator interface keep "Create a new field" selected and choose "moertality_rate" as **"Output field name"**. As **Output field type** choose **"Decimal number (real)"**
+   - In the "Expression panel" enter the following code chunk:
+
+
+   ```python
+    "week8_dc" / "week8_inf_new" * 100
+   ```
+
+   For every polygon this code divides the weekly death count of week 8 by the total infections and multiplies by 100 to calculate the mortality rate in percent. The resulting value is stored in the newly generated field `mortality_rate`
+   - Click on **"Ok"** to generated the new field.
+
+
+:::{figure} /fig/mod_4_mr_calculation.png
+---
+width: 500px
+name: Trend calculation
+---
+Configuration of the Field Calculator interface to generate the infection trend field
+:::
+
+
+::::
+
+
+
+
+With your newly generated moertality rate field you are now able to display the value for every region with polygon colour:
+
+
+::::{dropdown} Vizualize the current mortality rate
+
+- Open the `Layer Styling Panel` and select your polygon layer layer `Som_outbreak_mort` and select **Symbology**.
+  - At the top of the Symbology window, change the style from **Single Symbol** to **Graduated**
+  - As Value, choose `mortality rate` to display the calculated percentage.
+  - Click "Classify" to execute the classification. Choose a colour palette of your liking, e.g. "Reds".
+  - As classification mode choose **"Equal Interval"** next to "Mode".
+  - For nicer visuals you can optionally also slightly reduce the **opacity** of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel
+
+::::
+
+
+Display both the current death count and mortality rate layers together to get an overview of the situation. The result should look something like this:
+
+:::{figure} /fig/mod_4_deathratemap_example.png
+width: 500px
+name: label placement
+---
+:::
+
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html).
+
