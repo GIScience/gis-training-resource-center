@@ -30,7 +30,7 @@ Over the past month, health authorities in Chad have reported a surge in measles
 | `hotosm_tcd_health_facilities_points_gpkg.gpkg` (Points) | Chad Health Facilities (OpenStreetMap Export) | Humanitarian OpenStreetMap Team | [HOTOSM](https://data.humdata.org/dataset/hotosm_tcd_health_facilities) | 
 | `tcd_roads_ocha.shp` (Lines) | Chad - Road Network | United Nations Office for the Coordination of Humanitarian Affairs (OCHA) | [HDX](https://data.humdata.org/dataset/chad-roads-osm-ministry-of-transport) |
 | `tcd_healthsite_capacities.csv` | Healthsite Capacities | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
-| `measles_vaccination_coverage_adm2.csv` | Measles vaccination coverage | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
+| `vaccination_coverage_adm2.csv` | Measles vaccination coverage | HeiGIT | This is a fictional dataset generated for the purpose of this exercise. | 
 
 :::{note}
 
@@ -219,7 +219,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 
 % ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
-In our `data/input`-folder, we can find a csv file called `measles_vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
+In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
 :::{attention}
 Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
@@ -227,9 +227,9 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
 
 % ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
 
-8. Import the `measles_vaccination_coverage_adm2` into your QGIS project:
+8. Import the `vaccination_coverage_adm2` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
-    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/measles_vaccination_coverage_adm2.csv` file and click `Open`.
+    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/vaccination_coverage_adm2.csv` file and click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? 
     - Unfortunately, there are no columns with the coordinates for the individual healthsites in this data table. Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
@@ -245,7 +245,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `tcd_admbnda_adm2_20250212_AB`.
     - Under "Table field", select `ADM2_PCODE`.
-    - As "Input layer 2", select `measles_vaccination_coverage_adm2`.
+    - As "Input layer 2", select `vaccination_coverage_adm2`.
     - Under "Table field 2", select `adm2_pcode`.
     - Under "Layer 2 fields to copy", we can select which columns we want to copy. Click on the ![](/fig/Three_points.png) three dots to the right of the field and select `vaccination_rate_mcv1` and `vaccination_rate_mcv2`. Then, click `OK`.
     - Finally, to execute the algorithm, click on `Run`. 
@@ -256,7 +256,6 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     ---
     :::
 11.  A new layer called "Joined Layer" will appear in the layers panel. To the right of it, you will see a ![](/fig/qgis_3.40_temp_layer.png) symbol. This symbol indicates that the layer is a temporary scratch layer. This means it will be deleted once you close your QGIS project, even if you save the project. __We can save the scratch layer__ by <kbd>right-clicking</kbd> on it and selecting `Make permament...`.
-
     - A new window will open. Here we need to specify the file location and the layer name. 
     - Leave the `Format` on "GeoPackage".
     - Click on the three dots ![](/fig/Three_points.png), navigate to the `data/interim/`-folder and enter a file name such as `tcd_adm2_vacc_coverage`. Click `Save`. 
@@ -270,7 +269,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
 :::{Admonition} Saving your progress
 :class: tip
 
-Remember to save your project intermittently to keep your progress. QGIS is constantly being developed by the open source community and is known to crash from time to time. 
+Remember to save your project intermittently to keep your progress by clicking ![](/fig/qgis_save_project.png). QGIS is constantly being developed by the open source community and is known to crash from time to time. 
 
 :::
 
@@ -297,6 +296,7 @@ You can move the properties window to the side so you can see the changes in sym
 name: en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map
 width: 700 px
 ---
+Screenshot of classified vaccination_rate_mcv1 variable
 :::
 
 % ADD CLASSIFICATION STEPS AND RESULT IMAGE: DONE
@@ -305,10 +305,10 @@ width: 700 px
 
 % HERE MAYBE HAVE SOME ENTRIES IN THE ADM2 COLUMN USE FRENCH NAMES OR HAVE SOME TYPOS (MAX 2 or 3). BUT SHOW HOW YOU HAVE TO CLEAN DATA TO MAKE THINGS WORK. CHECK THE LOG AND THEN RERUN 
 
-In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `Healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. 
+In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `tcd_healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. 
 
 :::{admonition} Gathering the information on capacities
-In a realistic scenario, these data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
+In a realistic scenario, this data might have been collected during a rapid facility assessment led by the Ministry of Health and Red Cross volunteers.
 Because data collection was decentralised and partially paper-based, some facility names differ slightly across datasets (e.g., spelling variants, abbreviations).
 When performing joins, pay attention to such inconsistencies.
 :::
@@ -316,17 +316,17 @@ When performing joins, pay attention to such inconsistencies.
 1. Let's import the `tcd_healthsite_capacities.csv` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
     - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points and navigate to the `data/input/tcd_healthsite_capacities.csv` file and click `Open`.
-    - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? Unfortunately, there are no coordinates for the individual healthsites. 
-    - There are no columns with the coordinates in this datatable. Under `Geometry Definition` select `No geometry (attribute only table)`.
+    - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? 
+    - Unfortunately, there are no coordinates for the individual healthsites in this datatable. Under `Geometry Definition` select `No geometry (attribute only table)`.
     - Click `Add`. The layer will appear in your layers tab as a data table, but will not be shown in the map canvas.
 2. Let's investigate the capacities table further. 
     - <kbd>Right-click</kbd> on the layer and open the attribute table. 
     - In the top bar, you can see how many entries the dataset contains (*148 features*)
-    - The datatable includes a column called "name" which contains the name of the health facilities. These names are the same names that are also stored in the healthsites point layer we imported earlier.
-    - This means that we can join both tables using the attribute values of the "name"-column.
+    - The datatable includes a column called `name` which contains the name of the health facilities. These names are the same names that are also stored in the healthsites point layer we imported earlier.
+    - This means that we can join both tables using the attribute values of the `name`-column.
 3. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars), search for the tool `Join attributes by field value` and open it by <kbd>double-clicking</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
-    - As "Input layer", select the layer `hotosm_tcd_health_facilities_points`.
+    - As "Input layer", select the layer `hotosm_tcd_health_facilities_points_gpkg`.
     - Under "Table field", select `name`.
     - As "Input layer 2", select `tcd_healthsite_capacities`.
     - Under "Table field 2", select `name`.
@@ -340,9 +340,9 @@ When performing joins, pay attention to such inconsistencies.
     :::
 
     :::{note}
-    After running the algorithm, the window will switch to the log file. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (Table field) is not present in the respective column in layer 2. This can be either because there is not data available, or because there are inconsistencies in the identifying value (e.g., typos, different spelling).
+    After running the algorithm, the window will switch to the `Log` window. Here you can see if the algorithm encountered any problem. In our case, we can see that 149 features were successfully joined while 183 features were unable to be joined. This happens when the identifying value (table field) is missing from the corresponding column in layer 2. It may occur because the data is unavailable or because of inconsistencies in the identifying value, such as typos or different spellings.
     :::
-    - After reviewing the log, we can close the tool-window. A new layer called `Joined layer` should appear in your layers panel. Rename it to "`Healthsites_points_capacities`" and move it to the top. 
+    - After reviewing the `Log`, we can close the tool-window. A new layer called `Joined layer` should appear in your layers panel. Rename it to "`healthsites_points_capacities`" and move it to the top. 
 
 > We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector. 
 
