@@ -36,7 +36,7 @@ To do this, you will generate travel-time surfaces around vaccination points and
    - `tcd_healthsites_points_capacities.gpkg` (vaccination points)
    - `tcd_pop_2025_CN_100m_R2025A_v1.tif` (population raster)
    -  `tcd_roads_ocha.shp` (road network)
-3. Now we need to filter the `tcd_healthsites_points_capacities` layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" ![](mActionSelectbyExpression.png)
+3. Now we need to filter the `tcd_healthsites_points_capacities` layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" ![](/fig/mActionSelectbyExpression.png)
    - Now click on the "Fields and Values" section and double-click on cold_chain
    ```
    "cold_chain" = true
@@ -95,14 +95,14 @@ Then, run an “Intersection” between the district boundaries with the total p
 2. In the **Processing Toolbox**, search for the tool **Intersection** and open it.
    - **Input layer:** `pop_total_adm2`
    - **Overlay layer:** `access_vaccination_points`
-   - **Output file name:** `adms_access_vaccination_points`
+   - **Output file name:** `adm2_access_vaccination_points`
    - Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.
 
 With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.
 
 3. In the **Processing Toolbox**, now search again for the tool **Zonal Statistics** and open it.
    - **Raster layer:** `tcd_pop_2025_CN_100m_R2025A_v1.tif`
-   - **Vector layer containing zones:** `adms_access_vaccination_points`
+   - **Vector layer containing zones:** `adm2_access_vaccination_points`
    - **Statistics to calculate:** `Sum`
    - **Output column prefix:** `pop_vaccination_`
    - **Output file name:** `population_within_isochrones`
@@ -137,10 +137,29 @@ Now we have calculated the total population located within the 2-hour travel-tim
    - **Table field 2:** `ADM2_PCODE`
    - **Layer 2 fields to copy:** `pop_total_sum`, `pop_vaccination_sum`, `pop_beyond_2h`
    - **Output file name:** `population_vaccination_adm2`
-2. Symbolise your `population_vaccination_adm2` layer using graduated colours by travel time.
-2. Overlay the population raster to highlight populated areas outside the 120-minute zone.
-3. Optionally, apply hillshade from a Digital Elevation Model (DEM) for terrain context.
-4. Label districts by their `pop_beyond_2h` value to identify priority areas for vaccination campaigns.
+
+Now we can visualise both the population that can be reached within 2 hours of a vaccination point and the population living beyond this 2-hour accessibility range.
+
+2. Symbolise the population within 2 hours
+   - Select the layer `population_vaccination_adm2` in the Layers panel.
+   - Open the Layer Styling panel and switch to `Graduated` symbology.
+   - Use the following inputs: `pop_vaccination_sum`, Color ramp: RdYlGn (find it under All Color Ramps), Mode: Equal Count, Classes: 5
+
+3. Symbolise the population beyond 2 hours
+   - <kbd>Right-click</kbd> the `population_vaccination_adm2` layer → Duplicate Layer.
+   - Open the Layer Styling panel for the duplicate layer and set: Symbology: Graduated, Value: pop_beyond_2h, Color ramp: YlOrRd, Mode: Equal Count, Classes: 5
+
+:::{tip}
+The overall map layout follows the same steps as in the previous exercise. For a reminder, see the guide [here](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html#task-7-2-print-layout)
+:::
+
+:::{figure} /fig/en_3.40_m3_ex_3_pop_no_vacc.png
+---
+name: en_3.40_m3_ex_3_pop_no_vacc
+width: 650 px
+---
+Example map
+:::   
 
 ---
 
@@ -149,16 +168,12 @@ Now we have calculated the total population located within the 2-hour travel-tim
 The resulting map shows which districts and settlements are effectively served by fixed vaccination points, and which remain outside practical reach. In real-world scenarios, such analysis can help humanitarian planners:
 - **Identify underserved areas** and plan **mobile vaccination campaigns**.
 - **Estimate resource needs** for outreach teams.
-- **Compare access under different travel scenarios** (e.g. walking vs motorised).
 
 :::{note}
-Always interpret accessibility results with caution — **OpenRouteService** uses public road network data (OpenStreetMap), which may not reflect seasonal accessibility or informal paths. Field validation and coordination with local health teams are essential for operational planning.
+Always interpret accessibility results and specifically estimations with caution — We used public road network data (OCHA), which may not reflect seasonal accessibility or informal paths. Field validation and coordination with local health teams are essential for operational planning.
 :::
 
 ---
-
-✅ **Deliverable:**  
-A map and summary table showing the population within 30, 60, 120, and 240 minutes of travel to vaccination sites, and the proportion of population living beyond the 120-minute threshold per district.
 
 
 <!--
