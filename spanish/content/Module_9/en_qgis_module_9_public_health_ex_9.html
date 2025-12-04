@@ -518,7 +518,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-opening-the-project-and-preparing-the-data">Task 1: Opening the Project and Preparing the Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-creating-accessibility-area-around-vaccination-points">Task 2: Creating Accessibility Area Around Vaccination Points</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculating-population-coverage-using-worldpop">Task 3: Calculating Population Coverage Using WorldPop</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-visualising-accessibility">Task 6: Visualising Accessibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualising-accessibility">Task 4: Visualising Accessibility</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
             </nav>
@@ -535,7 +535,7 @@ document.write(`
 <h1>Exercise 3: Assessing Accessibility to Vaccination Services<a class="headerlink" href="#exercise-3-assessing-accessibility-to-vaccination-services" title="Link to this heading">#</a></h1>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
-<p>Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will use the <strong>OpenRouteService (ORS)</strong> tools developed by HeiGIT to model accessibility and determine how many people live <strong>beyond a reasonable travel distance</strong> from a vaccination point.</p>
+<p>Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will learn a simplified approach on how to model accessibility and determine how many people live <strong>beyond a reasonable travel distance</strong> from a vaccination point.</p>
 <p>Accessibility to health services is a key determinant of vaccination coverage. In many rural parts of Chad, communities may not have access to motorised transport and rely on walking or infrequent public transport. Thus, distance alone is not always a good measure — <strong>travel time</strong> provides a more realistic assessment.</p>
 </section>
 <hr class="docutils" />
@@ -577,7 +577,7 @@ document.write(`
 <section id="scenario">
 <h2>Scenario<a class="headerlink" href="#scenario" title="Link to this heading">#</a></h2>
 <p>You have identified a number of health facilities equipped with a cold chain for vaccine storage. The goal now is to calculate how much of the population is <strong>within reasonable reach</strong> of these facilities, and how many people live <strong>beyond the accessible range</strong>.</p>
-<p>To do this, you will generate travel-time isochrones around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.</p>
+<p>To do this, you will generate travel-time surfaces around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.</p>
 </section>
 <hr class="docutils" />
 <section id="task-1-opening-the-project-and-preparing-the-data">
@@ -592,7 +592,7 @@ document.write(`
 <li><p><code class="docutils literal notranslate"><span class="pre">tcd_roads_ocha.shp</span></code> (road network)</p></li>
 </ul>
 </li>
-<li><p>Now we need to filter the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the “Attribute table” and clicking on “Select features using an expression” <img alt="" src="content/Module_9/mActionSelectbyExpression.png" />.</p>
+<li><p>Now we need to filter the <code class="docutils literal notranslate"><span class="pre">tcd_healthsites_points_capacities</span></code> layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the “Attribute table” and clicking on “Select features using an expression” <img alt="" src="content/Module_9/mActionSelectbyExpression.png" /></p>
 <ul class="simple">
 <li><p>Now click on the “Fields and Values” section and double-click on cold_chain</p></li>
 </ul>
@@ -613,10 +613,10 @@ document.write(`
 <li><p>Open the “Service area (from layer)” tool in the Processing Toolbox.</p></li>
 <li><p>Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.</p>
 <ul class="simple">
-<li><p>For the Vector layer representing network select <code class="docutils literal notranslate"><span class="pre">tcd_roads_ocha</span></code></p></li>
-<li><p>Path type to calculate should be <code class="docutils literal notranslate"><span class="pre">Fastest</span></code></p></li>
-<li><p>Vector layer with start points is <code class="docutils literal notranslate"><span class="pre">tcd_cold_chain_healthsites_points_capacities</span></code></p></li>
-<li><p>Travel cost will be <code class="docutils literal notranslate"><span class="pre">2</span></code> as the information for the fastest path type is given by hours. So 2 will correspond to 2 hours of travel time</p></li>
+<li><p>For the Vector layer representing network select the Chad road network <code class="docutils literal notranslate"><span class="pre">tcd_roads_ocha</span></code></p></li>
+<li><p>Path type to calculate should be <code class="docutils literal notranslate"><span class="pre">Fastest</span></code>, as we want to work with travel time</p></li>
+<li><p>Vector layer with start points is the newly created <code class="docutils literal notranslate"><span class="pre">tcd_cold_chain_healthsites_points_capacities</span></code></p></li>
+<li><p>Travel cost will be <code class="docutils literal notranslate"><span class="pre">2</span></code> as the information for the fastest path type is given in hours. So 2 will correspond to 2 hours of travel time</p></li>
 <li><p>The speed will be left at the Default speed of 50 km/h</p></li>
 </ul>
 <figure class="align-default" id="en-3-40-m3-ex-3-service-area">
@@ -624,19 +624,20 @@ document.write(`
 </a>
 </figure>
 </li>
-<li><p>The output will be called <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> and will include the road network accessible from a given healthsite within 2 hours travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <strong>EPSG: 102022</strong> and reproject the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. The output layer will be called <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>.</p></li>
-<li><p>To give a more realistic assessment of the accessibility area around the vaccination points we will buffer the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. Before running this operation, we will “Dissolve” the Service area lines to create one geometry.</p>
+<li><p>The output will be called <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <strong>EPSG: 102022</strong> and reproject the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. The output layer will be called <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>.</p></li>
+<li><p>To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> layer. Before buffering, we first need to “Dissolve” the service-area lines so they form a single unified geometry.</p>
 <ul class="simple">
+<li><p>Open the “Dissolve” tool and use the reprojected output as the <strong>Input layer</strong></p></li>
 <li><p>In Dissolve fields, we won’t select anything</p></li>
 </ul>
 </li>
 <li><p>Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.</p>
 <ul class="simple">
 <li><p>Input layer will be the result of the dissolving process (likely called <code class="docutils literal notranslate"><span class="pre">Dissolved</span></code>)</p></li>
-<li><p>Distance should be 2 kilometers</p></li>
+<li><p>Set the buffer distance to 2 km. The output should look similar to the screenshot below: the green area represents the estimated 2-hour accessibility zone around the vaccination points along the road network.</p></li>
 </ul>
 <figure class="align-default" id="en-3-40-m3-ex-3-access-vaccination">
-<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_3_access_vaccination.png"><img alt="../../_images/en_3.40_m3_ex_3_access_vaccination.png" src="../../_images/en_3.40_m3_ex_3_access_vaccination.png" style="width: 650px;" />
+<a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_3_access_vaccination.png"><img alt="../../_images/en_3.40_m3_ex_3_access_vaccination.png" src="../../_images/en_3.40_m3_ex_3_access_vaccination.png" style="width: 350px;" />
 </a>
 </figure>
 <ul class="simple">
@@ -648,6 +649,7 @@ document.write(`
 <hr class="docutils" />
 <section id="task-3-calculating-population-coverage-using-worldpop">
 <h2>Task 3: Calculating Population Coverage Using WorldPop<a class="headerlink" href="#task-3-calculating-population-coverage-using-worldpop" title="Link to this heading">#</a></h2>
+<p>Next, we will generate several population statistics. First, use the admin boundaries together with the WorldPop raster to calculate the total population for each district.</p>
 <ol class="arabic simple">
 <li><p>In the <strong>Processing Toolbox</strong>, search for the tool <strong>Zonal Statistics</strong> and open it.</p>
 <ul class="simple">
@@ -659,6 +661,9 @@ document.write(`
 <li><p><strong>Output file name:</strong> <code class="docutils literal notranslate"><span class="pre">pop_total_adm2</span></code></p></li>
 </ul>
 </li>
+</ol>
+<p>Then, run an “Intersection” between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries.</p>
+<ol class="arabic simple" start="2">
 <li><p>In the <strong>Processing Toolbox</strong>, search for the tool <strong>Intersection</strong> and open it.</p>
 <ul class="simple">
 <li><p><strong>Input layer:</strong> <code class="docutils literal notranslate"><span class="pre">pop_total_adm2</span></code></p></li>
@@ -667,6 +672,9 @@ document.write(`
 <li><p>Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.</p></li>
 </ul>
 </li>
+</ol>
+<p>With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.</p>
+<ol class="arabic simple" start="3">
 <li><p>In the <strong>Processing Toolbox</strong>, now search again for the tool <strong>Zonal Statistics</strong> and open it.</p>
 <ul class="simple">
 <li><p><strong>Raster layer:</strong> <code class="docutils literal notranslate"><span class="pre">tcd_pop_2025_CN_100m_R2025A_v1.tif</span></code></p></li>
@@ -676,7 +684,6 @@ document.write(`
 <li><p><strong>Output file name:</strong> <code class="docutils literal notranslate"><span class="pre">population_within_isochrones</span></code></p></li>
 </ul>
 </li>
-<li><p>Run the tool.</p></li>
 </ol>
 <p>Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.</p>
 <ol class="arabic" start="4">
@@ -696,10 +703,10 @@ document.write(`
 </figure>
 </li>
 </ol>
-</section>
 <hr class="docutils" />
-<section id="task-6-visualising-accessibility">
-<h2>Task 6: Visualising Accessibility<a class="headerlink" href="#task-6-visualising-accessibility" title="Link to this heading">#</a></h2>
+</section>
+<section id="task-4-visualising-accessibility">
+<h2>Task 4: Visualising Accessibility<a class="headerlink" href="#task-4-visualising-accessibility" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>To visualize the <code class="docutils literal notranslate"><span class="pre">population_within_isochrones</span></code> data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the <strong>Join attributes by field value</strong> tool:</p>
 <ul class="simple">
@@ -822,7 +829,7 @@ If motorised transport is limited, repeat the process using **`foot-walking`** a
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-opening-the-project-and-preparing-the-data">Task 1: Opening the Project and Preparing the Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-creating-accessibility-area-around-vaccination-points">Task 2: Creating Accessibility Area Around Vaccination Points</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculating-population-coverage-using-worldpop">Task 3: Calculating Population Coverage Using WorldPop</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-6-visualising-accessibility">Task 6: Visualising Accessibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualising-accessibility">Task 4: Visualising Accessibility</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
   </nav></div>
