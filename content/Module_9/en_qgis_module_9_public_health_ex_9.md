@@ -2,7 +2,7 @@
 
 ## Background
 
-Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will use the **OpenRouteService (ORS)** tools developed by HeiGIT to model accessibility and determine how many people live **beyond a reasonable travel distance** from a vaccination point.
+Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will learn a simplified approach on how to model accessibility and determine how many people live **beyond a reasonable travel distance** from a vaccination point.
 
 Accessibility to health services is a key determinant of vaccination coverage. In many rural parts of Chad, communities may not have access to motorised transport and rely on walking or infrequent public transport. Thus, distance alone is not always a good measure — **travel time** provides a more realistic assessment.
 
@@ -24,7 +24,7 @@ Accessibility to health services is a key determinant of vaccination coverage. I
 
 You have identified a number of health facilities equipped with a cold chain for vaccine storage. The goal now is to calculate how much of the population is **within reasonable reach** of these facilities, and how many people live **beyond the accessible range**.
 
-To do this, you will generate travel-time isochrones around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.
+To do this, you will generate travel-time surfaces around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.
 
 ---
 
@@ -36,7 +36,7 @@ To do this, you will generate travel-time isochrones around vaccination points a
    - `tcd_healthsites_points_capacities.gpkg` (vaccination points)
    - `tcd_pop_2025_CN_100m_R2025A_v1.tif` (population raster)
    -  `tcd_roads_ocha.shp` (road network)
-3. Now we need to filter the `tcd_healthsites_points_capacities` layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" ![](mActionSelectbyExpression.png).
+3. Now we need to filter the `tcd_healthsites_points_capacities` layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" ![](mActionSelectbyExpression.png)
    - Now click on the "Fields and Values" section and double-click on cold_chain
    ```
    "cold_chain" = true
@@ -50,10 +50,10 @@ To do this, you will generate travel-time isochrones around vaccination points a
 
 1. Open the "Service area (from layer)" tool in the Processing Toolbox.
 2. Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.
-   - For the Vector layer representing network select `tcd_roads_ocha`
-   - Path type to calculate should be `Fastest`
-   - Vector layer with start points is `tcd_cold_chain_healthsites_points_capacities`
-   - Travel cost will be `2` as the information for the fastest path type is given by hours. So 2 will correspond to 2 hours of travel time
+   - For the Vector layer representing network select the Chad road network `tcd_roads_ocha`
+   - Path type to calculate should be `Fastest`, as we want to work with travel time
+   - Vector layer with start points is the newly created `tcd_cold_chain_healthsites_points_capacities`
+   - Travel cost will be `2` as the information for the fastest path type is given in hours. So 2 will correspond to 2 hours of travel time
    - The speed will be left at the Default speed of 50 km/h
    :::{figure} /fig/en_3.40_m3_ex_3_service_area.png
    ---
@@ -61,16 +61,17 @@ To do this, you will generate travel-time isochrones around vaccination points a
    width: 650 px
    ---
    :::
-3. The output will be called `Service area (lines)` and will include the road network accessible from a given healthsite within 2 hours travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select __EPSG: 102022__ and reproject the `Service area (lines)`. The output layer will be called `Reprojected`.
-4. To give a more realistic assessment of the accessibility area around the vaccination points we will buffer the `Service area (lines)`. Before running this operation, we will "Dissolve" the Service area lines to create one geometry. 
+3. The output will be called `Service area (lines)` and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select __EPSG: 102022__ and reproject the `Service area (lines)`. The output layer will be called `Reprojected`.
+4. To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the `Service area (lines)` layer. Before buffering, we first need to “Dissolve” the service-area lines so they form a single unified geometry.
+   - Open the "Dissolve" tool and use the reprojected output as the __Input layer__
    - In Dissolve fields, we won't select anything
 5. Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.
    - Input layer will be the result of the dissolving process (likely called `Dissolved`)
-   - Distance should be 2 kilometers
+   - Set the buffer distance to 2 km. The output should look similar to the screenshot below: the green area represents the estimated 2-hour accessibility zone around the vaccination points along the road network.
    :::{figure} /fig/en_3.40_m3_ex_3_access_vaccination.png
    ---
    name: en_3.40_m3_ex_3_access_vaccination
-   width: 650 px
+   width: 350 px
    ---
    :::
    - Save the buffered service area by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `access_vaccination_points`. Click `Save`.
@@ -79,6 +80,8 @@ To do this, you will generate travel-time isochrones around vaccination points a
 
 ## Task 3: Calculating Population Coverage Using WorldPop
 
+Next, we will generate several population statistics. First, use the admin boundaries together with the WorldPop raster to calculate the total population for each district. 
+
 1. In the **Processing Toolbox**, search for the tool **Zonal Statistics** and open it.
    - **Input layer:** `tcd_admbnda_adm2_20250212_AB.shp`
    - **Raster layer:** `tcd_pop_2025_CN_100m_R2025A_v1.tif`
@@ -86,11 +89,17 @@ To do this, you will generate travel-time isochrones around vaccination points a
    - **Output column prefix:** `pop_total_`
    - **Statistics ot calculate:** `Sum`
    - **Output file name:** `pop_total_adm2`
+
+Then, run an “Intersection” between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries. 
+
 2. In the **Processing Toolbox**, search for the tool **Intersection** and open it.
    - **Input layer:** `pop_total_adm2`
    - **Overlay layer:** `access_vaccination_points`
    - **Output file name:** `adms_access_vaccination_points`
    - Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.
+
+With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.
+
 3. In the **Processing Toolbox**, now search again for the tool **Zonal Statistics** and open it.
    - **Raster layer:** `tcd_pop_2025_CN_100m_R2025A_v1.tif`
    - **Vector layer containing zones:** `adms_access_vaccination_points`
