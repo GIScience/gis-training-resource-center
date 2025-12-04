@@ -38,6 +38,12 @@ In this exercise, we will download real datasets from the [Humanitarian Data Exc
 
 :::
 
+:::{note}
+
+All data provided by HeiGIT can be downloaded [here](https://nexus.heigit.org/repository/gis-training-resource-center/public_health/GIS_Training_Public_Health.zip)
+
+:::
+
 
 ---
 
