@@ -934,7 +934,7 @@ To further enhance the information content of the map you can add labels to your
 
 
 :::{figure} /fig/mod_4_infection_labels.png
-width: 400px
+width: 60%
 name: label generation
 ---
 Configuration of the Layer Styling Panel to generate point labels
@@ -946,7 +946,7 @@ Configuration of the Layer Styling Panel to generate point labels
 
 
 :::{figure} /fig/mod_4_label_placement.png
-width: 400px
+width: 60%
 name: label placement
 ---
 Configuration of the Placement Panel
@@ -993,7 +993,7 @@ Now that we have visualized our first epidemiological parameter ("weekly new cas
 
 1. **Open the field calculator**
    - Open the attribute table of your polygon layer `Som_outbreak_epi` by right clicking on it and select "Open Attribute Table" in the pop up window.
-   - In the attribute table open the `Field Calculator` by clicking on the ![]../../fig/mod_4_fieldcalc_symbol symbol at the top of the window.
+   - In the attribute table open the `Field Calculator` by clicking on the ![](/fig/mod_4_fieldcalc_symbol.png) symbol at the top of the window.
 
 
 2. **Create a new field diplaying infection trend**
