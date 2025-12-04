@@ -20,7 +20,6 @@ This will help the response coordination team prioritise vaccination deployments
 | `tcd_admbnda_adm2_20250212_AB.shp` | Chad administrative boundaries (level 2 – districts) | OCHA                                        | [HDX](https://data.humdata.org/dataset/cod-ab-tcd) |
 | `tcd_pop_2025_CN_100m_R2025A_v1.tif`            | 2025 population estimate per grid-cell               | WorldPop                                    | [WorldPop](https://hub.worldpop.org/geodata/summary?id=72895)              |
 | `measles_cases_adm2.csv`           | Reported measles cases by district (line list)       | Ministry of Health (MoH) Epidemiology Dept. | Provided for this exercise                         |
-| `tcd_dem_2025.tif`                 | Digital Elevation Model (optional)                   | NASA SRTM                                   | Optional (for terrain visualization)               |
 
 
 ## Tasks
