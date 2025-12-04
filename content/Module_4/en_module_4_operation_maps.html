@@ -602,17 +602,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-epidemological-overview-map">4.12. Creating a epidemological overview map</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.12.1. Introduction:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.12.1. Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.12.2. About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.12.2.1. Fields used in this tutorial</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.12.2.2. Data preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.12.2.3. Creating a map visualising weekly infections and infection trends</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.12.2.4. Display the current infection trend with polygon colours</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.12.3. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.12.3.1. Create circles proportional to weekly infections</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.12.3.2. Display the current mortality rate with polygon colours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.12.3. Creating a map visualising weekly infections and infection trends</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.12.4. Display the current infection trend with polygon colours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.12.5. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.12.5.1. Create circles proportional to weekly infections</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.12.5.2. Display the current mortality rate with polygon colours</a></li>
 </ul>
 </li>
 </ul>
@@ -1471,7 +1471,7 @@ display. Look at the attribute table of the dataset to find it out.</p>
 <section class="tex2jax_ignore mathjax_ignore" id="creating-a-epidemological-overview-map">
 <h1><span class="section-number">4.12. </span>Creating a epidemological overview map<a class="headerlink" href="#creating-a-epidemological-overview-map" title="Link to this heading">#</a></h1>
 <section id="introduction">
-<h2><span class="section-number">4.12.1. </span>Introduction:<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.12.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>Epidemiological overview maps are among the most frequently requested analytical products during the early stages of an outbreak response. These maps synthesize when, where, and how intensely disease transmission and mortality are occurring across affected areas. By visualizing weekly case incidence and identifying whether transmission is increasing, stable, or decreasing in each location, responders gain rapid insight into the evolving dynamics of the epidemic. A related view, incorporating weekly deaths and mortality rates, supports assessment of disease severity and potential gaps in access to care. These outputs are routinely included in Situation Reports, operational updates, and epidemiological briefings, and serve as key reference tools during coordination meetings. In this section, we will explore the essential components of epidemiological overview maps and demonstrate how to produce them in QGIS using simulated weekly case and mortality data.</p>
 <p>In this tutorial, you will learn how to create a multivariable map to generate an epidemiological overview of a cholera outbreak in Somalia. Using a fictional dataset with weekly infection counts and death rates, you will visualize the situation for a selected week by applying several QGIS visualization tools.</p>
 </section>
@@ -1488,13 +1488,13 @@ display. Look at the attribute table of the dataset to find it out.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>weekX_inf_new</strong></p></td>
-<td><p>Count of new weekly infections</p></td>
+<td><p>Count of new weekly infections in week X of the outbreak</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>weekX_inf_cul</strong></p></td>
-<td><p>Cumulative count of infections</p></td>
+<td><p>Cumulative count of infections in week X</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>weekX_dc</strong></p></td>
-<td><p>Count of weekly deaths</p></td>
+<td><p>Count of weekly deaths in week X</p></td>
 </tr>
 </tbody>
 </table>
@@ -1516,8 +1516,9 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </ol>
 </div>
 </details></section>
+</section>
 <section id="creating-a-map-visualising-weekly-infections-and-infection-trends">
-<h3><span class="section-number">4.12.2.3. </span>Creating a map visualising weekly infections and infection trends<a class="headerlink" href="#creating-a-map-visualising-weekly-infections-and-infection-trends" title="Link to this heading">#</a></h3>
+<h2><span class="section-number">4.12.3. </span>Creating a map visualising weekly infections and infection trends<a class="headerlink" href="#creating-a-map-visualising-weekly-infections-and-infection-trends" title="Link to this heading">#</a></h2>
 <p>As we want to visualize multiple variables later we choose to use a secondary point layer to map weekly infections. We will use week 8 of the outbreak for our example map. The number of new weekly infections (<code class="docutils literal notranslate"><span class="pre">week8_new_inf</span></code>) will control the <strong>size</strong> of each circle.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1550,7 +1551,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li><p class="sd-card-text">As classification mode choose <strong>“Equal Interval”</strong> next to “Mode”.</p></li>
 </ul>
 <figure class="align-default" id="point-styling">
-<a class="reference internal image-reference" href="../../_images/mod_4_point_styling.png"><img alt="../../_images/mod_4_point_styling.png" src="../../_images/mod_4_point_styling.png" style="width: 500px;" />
+<a class="reference internal image-reference" href="../../_images/mod_4_point_styling.png"><img alt="../../_images/mod_4_point_styling.png" src="../../_images/mod_4_point_styling.png" style="width: 600px;" />
 </a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.111 </span><span class="caption-text">Configuration of the Layer Styling Panel to achieve proportional point sizes</span><a class="headerlink" href="#point-styling" title="Link to this image">#</a></p>
@@ -1558,7 +1559,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p class="sd-card-text">With the visualizatioj variable <strong>“Size from … to …”</strong> you can alter the size interval the points will cover to display the values. Try differnet options and choose which combination communicates the values optimally for you purpose. A good default for this visualization is 5 to 15 millimeters.</p>
+<p class="sd-card-text">With the layer styling variable <strong>“Size from … to …”</strong> you can alter the size interval the points will cover to display the values. Try differnet options and choose which combination communicates the values optimally for you purpose. A good default for this visualization is 5 to 15 millimeters.</p>
 </div>
 </div>
 </details><p>To further enhance the information content of the map you can add labels to your circles that show the exact number of new infections for week 8.</p>
@@ -1571,11 +1572,11 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li><p class="sd-card-text">As <strong>“Value”</strong> select the field containing the infection count for week 8 <code class="docutils literal notranslate"><span class="pre">week8_inf_new</span></code>.</p></li>
 </ul>
 <figure class="align-default">
-<img alt="../../_images/mod_4_point_styling.png" src="../../_images/mod_4_point_styling.png" />
+<img alt="../../_images/mod_4_infection_labels.png" src="../../_images/mod_4_infection_labels.png" />
 </figure>
 <ul class="simple">
 <li><p class="sd-card-text">Select the third panel of the label options and check the box <strong>“Draw text buffer”</strong> to generate a small buffer around you labels to enhance visibility.</p></li>
-<li><p class="sd-card-text">To optimize the location of the point labels navigate to the <strong>“Placement”</strong> panel and for “Mode” select <strong>“Offset from Point”</strong>. With the “Quadrant” option you can determine the placement of the labels relative to the the centroid to you liking</p></li>
+<li><p class="sd-card-text">To optimize the location of the point labels navigate to the <strong>“Placement”</strong> panel and for “Mode” select <strong>“Offset from Point”</strong>. With the <strong>“Quadrant”</strong> option you can determine the placement of the labels relative to the the centroid to you liking</p></li>
 </ul>
 <figure class="align-default">
 <img alt="../../_images/mod_4_label_placement.png" src="../../_images/mod_4_label_placement.png" />
@@ -1591,7 +1592,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </div>
 </section>
 <section id="display-the-current-infection-trend-with-polygon-colours">
-<h3><span class="section-number">4.12.2.4. </span>Display the current infection trend with polygon colours<a class="headerlink" href="#display-the-current-infection-trend-with-polygon-colours" title="Link to this heading">#</a></h3>
+<h2><span class="section-number">4.12.4. </span>Display the current infection trend with polygon colours<a class="headerlink" href="#display-the-current-infection-trend-with-polygon-colours" title="Link to this heading">#</a></h2>
 <p>Now that we have visualized our first epidemiological parameter (“weekly new cases”) using proportional circle sizes, we can use our polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> to display additional relevant information. Alongside the weekly infections, we want to show the <strong>infection trend</strong> from week 7 to week 8 for each regi to analyze, whether weekly infections are rising, falling, or stagnating. To achieve this, we first need to generate a new field using the <strong>Field Calculator</strong>:</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1605,8 +1606,8 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </li>
 <li><p class="sd-card-text"><strong>Create a new field diplaying infection trend</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">In the Field Calculator interface keep “Create a new field” selected and choose “infection_trend” as <strong>“Output field name”</strong>. As <strong>Output field type</strong> choose <strong>“Text (string)”</strong></p></li>
-<li><p class="sd-card-text">In the “Expression panel” enter the following code chunk:</p></li>
+<li><p class="sd-card-text">In the Field Calculator interface keep “Create a new field” selected and choose <code class="docutils literal notranslate"><span class="pre">infection_trend</span></code> as “Output field name”. As “Output field type” choose <strong>“Text (string)”</strong></p></li>
+<li><p class="sd-card-text">In the “Expression” panel enter the following code chunk:</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>   <span class="n">CASE</span>
        <span class="n">WHEN</span> <span class="s2">&quot;week8_inf_new&quot;</span> <span class="o">&gt;</span> <span class="s2">&quot;week7_inf_new&quot;</span> <span class="n">THEN</span> <span class="s1">&#39;increase&#39;</span>
@@ -1625,7 +1626,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <a class="reference internal image-reference" href="../../_images/mod_4_trend_calculation.png"><img alt="../../_images/mod_4_trend_calculation.png" src="../../_images/mod_4_trend_calculation.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.112 </span><span class="caption-text">Configuration of the Field Calculator interface to generate the infection trend field</span><a class="headerlink" href="#trend-calculation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.112 </span><span class="caption-text">Configuration of the Field Calculator interface to generate the infection_trend field</span><a class="headerlink" href="#trend-calculation" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1634,13 +1635,13 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Vizualize the current infection trend</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Styling</span> <span class="pre">Panel</span></code> and select your polygon layer layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> and select <strong>Symbology</strong>.</p>
+<li><p class="sd-card-text">Open the <strong>Layer Styling Panel</strong> and select your polygon layer layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> and select <strong>Symbology</strong>.</p>
 <ul>
 <li><p class="sd-card-text">At the top of the Symbology window, change the style from <strong>Single Symbol</strong> to <strong>Categorized</strong></p></li>
 <li><p class="sd-card-text">As Value, choose <code class="docutils literal notranslate"><span class="pre">infection</span> <span class="pre">trend</span></code> to display the calculated trend direction.</p></li>
-<li><p class="sd-card-text">Click “Classify” to execute the classification. Choose coulours of your liking for the values “decrease” and “increase” and “no change” (e.g. green,red and grey) by double clicking on the coloured squares in the panel displaying the classes.</p></li>
+<li><p class="sd-card-text">Click “Classify” to execute the classification. Choose coulours of your liking for the values “decrease” and “increase” and “no change” (e.g. green, red and grey) by double clicking on the coloured squares in the panel displaying the classes.</p></li>
 <li><p class="sd-card-text">As classification mode choose <strong>“Equal Interval”</strong> next to “Mode”.</p></li>
-<li><p class="sd-card-text">For nicer visuals you can optionally also slightly reduce the <strong>opacity</strong> of the layer by adjusting it in the “Symbol” dropdown menue in the “Symbology” panel</p></li>
+<li><p class="sd-card-text">For nicer visuals you can optionally also slightly reduce the opacity of the layer by adjusting it in the “Symbol” dropdown menue in the “Symbology” panel</p></li>
 </ul>
 </li>
 </ul>
@@ -1651,18 +1652,17 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </figure>
 <p>If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a>.</p>
 </section>
-</section>
 <section id="creating-a-map-visualising-weekly-deaths-and-mortality-rate">
-<h2><span class="section-number">4.12.3. </span>Creating a map visualising weekly deaths and mortality rate<a class="headerlink" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate" title="Link to this heading">#</a></h2>
-<p>After we created our multi variable map with information about the development of ifections we can transfer the used steps to also create a map providing information about weekly deaths and the current mortality rate of the outbreak. The basic information needed is stored in the <code class="docutils literal notranslate"><span class="pre">weekX_dc</span></code> fields of your polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code>, which provide weekly death counts for every week of the cholera outbreak.</p>
+<h2><span class="section-number">4.12.5. </span>Creating a map visualising weekly deaths and mortality rate<a class="headerlink" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate" title="Link to this heading">#</a></h2>
+<p>After we created our multi variable map with information about the development of infections we can transfer the used steps to also create a map providing information about weekly deaths and the current mortality rate of the outbreak. The basic information needed is stored in the <code class="docutils literal notranslate"><span class="pre">weekX_dc</span></code> fields of your polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code>, which provide weekly death counts for every week of the cholera outbreak.</p>
 <section id="create-circles-proportional-to-weekly-infections">
-<h3><span class="section-number">4.12.3.1. </span>Create circles proportional to weekly infections<a class="headerlink" href="#create-circles-proportional-to-weekly-infections" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.12.5.1. </span>Create circles proportional to weekly infections<a class="headerlink" href="#create-circles-proportional-to-weekly-infections" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>To create a point layer that visualizes weekly death count with proportional circles repeat the same steps that you learned previously when visualizing the new weekly infections. The only change you need to implement is changing the <strong>“Value”</strong> dropdwon menue in the Symbology panel from <code class="docutils literal notranslate"><span class="pre">week8_inf_new</span></code> to <code class="docutils literal notranslate"><span class="pre">week8_dc</span></code> to link the death count to the point sizes.</p></li>
+<li><p>To create a point layer that visualizes weekly death count with proportional circles repeat the same steps that you learned previously when visualizing the new weekly infections. The only change you need to implement is changing the “Value” dropdwon menue in the Symbology panel from <code class="docutils literal notranslate"><span class="pre">week8_inf_new</span></code> to <code class="docutils literal notranslate"><span class="pre">week8_dc</span></code> to link the death count to the point sizes.</p></li>
 </ul>
 </section>
 <section id="display-the-current-mortality-rate-with-polygon-colours">
-<h3><span class="section-number">4.12.3.2. </span>Display the current mortality rate with polygon colours<a class="headerlink" href="#display-the-current-mortality-rate-with-polygon-colours" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.12.5.2. </span>Display the current mortality rate with polygon colours<a class="headerlink" href="#display-the-current-mortality-rate-with-polygon-colours" title="Link to this heading">#</a></h3>
 <p>Alongside the weekly death count, we want to show the <strong>mortality rate</strong> from week 7 to week 8. To achieve this, we first need to generate a new field using the <strong>Field Calculator</strong>. beforehand make sure to create a duplicate layer of <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> to dont overwrite you previous vizualisation. Call the dupolicate layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_mort</span></code>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1671,12 +1671,12 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li><p class="sd-card-text"><strong>Open the field calculator</strong></p>
 <ul class="simple">
 <li><p class="sd-card-text">Open the attribute table of your polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_mort</span></code> by right clicking on it and select “Open Attribute Table” in the pop up window.</p></li>
-<li><p class="sd-card-text">In the attribute table open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the ![]../../fig/mod_4_fieldcalc_symbol.png symbol at the top of the window.</p></li>
+<li><p class="sd-card-text">In the attribute table open the <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Calculator</span></code> by clicking on the <img alt="" src="../../_images/mod_4_fieldcalc_symbol.png" /> symbol at the top of the window.</p></li>
 </ul>
 </li>
 <li><p class="sd-card-text"><strong>Create a new field diplaying infection trend</strong></p>
 <ul class="simple">
-<li><p class="sd-card-text">In the Field Calculator interface keep “Create a new field” selected and choose “moertality_rate” as <strong>“Output field name”</strong>. As <strong>Output field type</strong> choose <strong>“Decimal number (real)”</strong></p></li>
+<li><p class="sd-card-text">In the Field Calculator interface keep “Create a new field” selected and choose “mortality_rate” as “Output field name”. As “Output field type” choose <strong>“Decimal number (real)”</strong></p></li>
 <li><p class="sd-card-text">In the “Expression panel” enter the following code chunk:</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="s2">&quot;week8_dc&quot;</span> <span class="o">/</span> <span class="s2">&quot;week8_inf_new&quot;</span> <span class="o">*</span> <span class="mi">100</span>
@@ -1688,11 +1688,11 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </ul>
 </li>
 </ol>
-<figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../../_images/mod_4_mr_calculation.png"><img alt="../../_images/mod_4_mr_calculation.png" src="../../_images/mod_4_mr_calculation.png" style="width: 500px;" />
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/mod_4_mr_calculation.png"><img alt="../../_images/mod_4_mr_calculation.png" src="../../_images/mod_4_mr_calculation.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.113 </span><span class="caption-text">Configuration of the Field Calculator interface to generate the infection trend field</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.113 </span><span class="caption-text">Configuration of the Field Calculator interface to generate the infection trend field</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -1704,7 +1704,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <li><p class="sd-card-text">Open the <code class="docutils literal notranslate"><span class="pre">Layer</span> <span class="pre">Styling</span> <span class="pre">Panel</span></code> and select your polygon layer layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_mort</span></code> and select <strong>Symbology</strong>.</p>
 <ul>
 <li><p class="sd-card-text">At the top of the Symbology window, change the style from <strong>Single Symbol</strong> to <strong>Graduated</strong></p></li>
-<li><p class="sd-card-text">As Value, choose <code class="docutils literal notranslate"><span class="pre">mortality</span> <span class="pre">rate</span></code> to display the calculated percentage.</p></li>
+<li><p class="sd-card-text">As Value, choose <code class="docutils literal notranslate"><span class="pre">mortality_rate</span></code> to display the calculated percentage.</p></li>
 <li><p class="sd-card-text">Click “Classify” to execute the classification. Choose a colour palette of your liking, e.g. “Reds”.</p></li>
 <li><p class="sd-card-text">As classification mode choose <strong>“Equal Interval”</strong> next to “Mode”.</p></li>
 <li><p class="sd-card-text">For nicer visuals you can optionally also slightly reduce the <strong>opacity</strong> of the layer by adjusting it in the “Symbol” dropdown menue in the “Symbology” panel</p></li>
@@ -1809,17 +1809,17 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-epidemological-overview-map">4.12. Creating a epidemological overview map</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.12.1. Introduction:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.12.1. Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.12.2. About the Dataset</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.12.2.1. Fields used in this tutorial</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.12.2.2. Data preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.12.2.3. Creating a map visualising weekly infections and infection trends</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.12.2.4. Display the current infection trend with polygon colours</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.12.3. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.12.3.1. Create circles proportional to weekly infections</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.12.3.2. Display the current mortality rate with polygon colours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.12.3. Creating a map visualising weekly infections and infection trends</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.12.4. Display the current infection trend with polygon colours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.12.5. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.12.5.1. Create circles proportional to weekly infections</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.12.5.2. Display the current mortality rate with polygon colours</a></li>
 </ul>
 </li>
 </ul>
