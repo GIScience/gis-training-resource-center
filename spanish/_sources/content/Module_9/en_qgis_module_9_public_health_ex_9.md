@@ -153,12 +153,12 @@ Now we can visualise both the population that can be reached within 2 hours of a
 The overall map layout follows the same steps as in the previous exercise. For a reminder, see the guide [here](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html#task-7-2-print-layout)
 :::
 
-:::{figure} /fig/en_3.40_m3_ex_3_pop_no_vacc.png
+:::{figure} /fig/tcd_map_pop_access_vaccination.png
 ---
-name: en_3.40_m3_ex_3_pop_no_vacc
+name: tcd_map_pop_access_vaccination
 width: 650 px
 ---
-Example map
+Example map for Measles Vaccination: Population Wihin 2-Hour Access | Chad
 :::   
 
 ---
