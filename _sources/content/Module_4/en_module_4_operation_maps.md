@@ -934,7 +934,8 @@ To further enhance the information content of the map you can add labels to your
 
 
 :::{figure} /fig/mod_4_infection_labels.png
-width: 60%
+---
+width: 400px
 name: label generation
 ---
 Configuration of the Layer Styling Panel to generate point labels
@@ -946,7 +947,8 @@ Configuration of the Layer Styling Panel to generate point labels
 
 
 :::{figure} /fig/mod_4_label_placement.png
-width: 60%
+---
+width: 400px
 name: label placement
 ---
 Configuration of the Placement Panel
@@ -960,7 +962,8 @@ Your centroid layer now should look something like this (colour may vary):
 
 
 :::{figure} /fig/mod_4_centroids_example.png
-width: 400px
+---
+width: 600px
 name: centroids example
 ---
 
@@ -1046,7 +1049,8 @@ Now display you polygon layer `Som_outbreak_epi` together with you point layer `
 
 
 :::{figure} /fig/mod_4_infectionmap_example.png
-width: 400px
+---
+width: 600px
 name: infection map example
 ---
 :::
@@ -1124,7 +1128,8 @@ With your newly generated moertality rate field you are now able to display the 
 Display both the current death count and mortality rate layers together to get an overview of the situation. The result should look something like this:
 
 :::{figure} /fig/mod_4_deathratemap_example.png
-width: 500px
+---
+width: 600px
 name: label placement
 ---
 :::
