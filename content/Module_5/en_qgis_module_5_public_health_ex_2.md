@@ -9,7 +9,13 @@ This will help the response coordination team prioritise vaccination deployments
 
 ## Available Data
 
-:::{note}
+:::{card}
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip
+
+__In case you did the exercise [Creating an overview map of the health system and vaccination coverage](/content/Module_3/en_module_3_public_health_ex_1.md), you do not need to download this dataset.
+If you do this exercise without doing the previous exercise, download all datasets provided by HeiGIT [here](https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip). and save the folder on your computer and unzip the file.__
+
+:::
 
 
 :::
