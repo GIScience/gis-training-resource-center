@@ -11,8 +11,8 @@
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
 - [Health Facility Capacity Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
-- [3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#3w-map-who-what-where)
-- [Epidemiological Overview Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#epidemiologica-overview-map)
+- [3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#w-map-who-what-where)
+- [Epidemiological Overview Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#epidemological-overview-map)
 
 ## Health Facility Capacity Map: Visualising with multi-variable point symbols
 
@@ -438,7 +438,7 @@ __What is needed:__
 - [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making
 - Logos of the organizations involved
 
-__Getting the 3W data:__
+### Getting the 3W required data
 
 A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into a joined platform, which then can be used as the primary source for the 3W map.
 
