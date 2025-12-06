@@ -62,11 +62,24 @@ To do this, you will generate travel-time surfaces around vaccination points and
    ---
    :::
 3. The output will be called `Service area (lines)` and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select __EPSG: 102022__ and reproject the `Service area (lines)`. The output layer will be called `Reprojected`.
-4. To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the `Service area (lines)` layer. Before buffering, we first need to “Dissolve” the service-area lines so they form a single unified geometry.
-   - Open the "Dissolve" tool and use the reprojected output as the __Input layer__
+4. To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the `Service area (lines)` layer. Before buffering, we first need to [`Dissolve`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve) the service-area lines so they form a single unified geometry.
+   - Open the `Dissolve` tool and use the reprojected output as the __Input layer__
    - In Dissolve fields, we won't select anything
+    ::::{margin}
+    :::{tip}
+    ⚠️**Warning**⚠️
+    Both the `Dissolve` and `Buffer` operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, [select](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection) several states from the `tcd_admin1 layer`, then right-click the layer → `Export` → `Save Selected Features As…` and save the subset. Use the [`Clip`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) tool to cut the service-area roads to this smaller region, and then run the `Dissolve` and `Buffer` operations on the reduced dataset.
+    :::
+    ::::
+
 5. Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.
    - Input layer will be the result of the dissolving process (likely called `Dissolved`)
+   :::{figure} /fig/pub_health_chad_buffer.png
+   ---
+   name: Buffer operation service area roads
+   width: 350 px
+   ---
+   :::  
    - Set the buffer distance to 2 km. The output should look similar to the screenshot below: the green area represents the estimated 2-hour accessibility zone around the vaccination points along the road network.
    :::{figure} /fig/en_3.40_m3_ex_3_access_vaccination.png
    ---
@@ -90,7 +103,7 @@ Next, we will generate several population statistics. First, use the admin bound
    - **Statistics ot calculate:** `Sum`
    - **Output file name:** `pop_total_adm2`
 
-Then, run an “Intersection” between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries. 
+Then, run an `Intersection` between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries. 
 
 2. In the **Processing Toolbox**, search for the tool **Intersection** and open it.
    - **Input layer:** `pop_total_adm2`
@@ -99,6 +112,32 @@ Then, run an “Intersection” between the district boundaries with the total p
    - Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.
 
 With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.
+::::{grid} 2
+
+:::{grid-item}
+```{figure} /fig/pub_health_chad_intersection.png
+---
+name: 
+width: 400
+---
+Intersection Operation 
+```
+:::
+
+:::{grid-item} 
+
+Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.
+```{figure} /fig/pub_health_chad_intersection_results.png
+---
+name: Intersection Operation Results
+width: 100
+---
+Intersection Operation Results
+```
+:::
+::::
+
+
 
 3. In the **Processing Toolbox**, now search again for the tool **Zonal Statistics** and open it.
    - **Raster layer:** `tcd_pop_2025_CN_100m_R2025A_v1.tif`
@@ -106,6 +145,16 @@ With these intersected geometries, we can then calculate how many people fall wi
    - **Statistics to calculate:** `Sum`
    - **Output column prefix:** `pop_vaccination_`
    - **Output file name:** `population_within_isochrones`
+```{figure} /fig/pub_health_chad_intersection_zonal_statistics.png
+---
+name: Intersection Zonal Statistics
+width: 100
+---
+Intersection Zonal Statistics
+```
+:::
+
+   
 
 Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.
 
