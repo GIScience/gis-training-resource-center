@@ -513,9 +513,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-calculate-the-population-per-district">Task 2: Calculate the Population per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculate-the-population-under-5-per-district">Task 3: Calculate the Population under 5 per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-import-and-explore-the-measles-cases-list">Task 4: Import and Explore the Measles Cases List</a></li>
@@ -588,16 +586,8 @@ If you do this exercise without doing the previous exercise, download all datase
 </tbody>
 </table>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All data provided by HeiGIT can be downloaded <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/public_health/GIS_Training_Public_Health.zip">here</a></p>
-</div>
-</div>
-</section>
-<section id="tasks">
-<h2>Tasks<a class="headerlink" href="#tasks" title="Link to this heading">#</a></h2>
-<section id="task-1-open-the-project-and-prepare-the-workspace">
-<h3>Task 1: Open the Project and Prepare the Workspace<a class="headerlink" href="#task-1-open-the-project-and-prepare-the-workspace" title="Link to this heading">#</a></h3>
+<h2 class="rubric" id="tasks">Tasks</h2>
+<h3 class="rubric" id="task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</h3>
 <ol class="arabic simple">
 <li><p>Open the QGIS project created in Exercise 1:</p>
 <ul class="simple">
@@ -618,7 +608,7 @@ If you do this exercise without doing the previous exercise, download all datase
 <p class="admonition-title">Tip</p>
 <p>Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles and multiple layers.</p>
 </div>
-</section>
+</div>
 <section id="task-2-calculate-the-population-per-district">
 <h3>Task 2: Calculate the Population per District<a class="headerlink" href="#task-2-calculate-the-population-per-district" title="Link to this heading">#</a></h3>
 <p>In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.</p>
@@ -633,7 +623,7 @@ If you do this exercise without doing the previous exercise, download all datase
 <p>You can use the Identify Tool <img alt="" src="../../_images/qgis_identify_features.png" /> to click on the raster and see population estimates per pixel.</p>
 </div>
 </li>
-<li><p>We will now calculate the total population for each district using the tool “Zonal Statistics”</p>
+<li><p>We will now calculate the total population for each district using the tool <code class="docutils literal notranslate"><span class="pre">Zonal</span> <span class="pre">Statistics</span></code></p>
 <ul class="simple">
 <li><p>In the <strong><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars">Processing Toolbox</a></strong>, search for “Zonal Statistics” and open the tool.</p></li>
 <li><p>Set the parameters as follows:</p>
@@ -991,9 +981,7 @@ The aggregated data table.
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-open-the-project-and-prepare-the-workspace">Task 1: Open the Project and Prepare the Workspace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#available-data">Available Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-calculate-the-population-per-district">Task 2: Calculate the Population per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculate-the-population-under-5-per-district">Task 3: Calculate the Population under 5 per District</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-import-and-explore-the-measles-cases-list">Task 4: Import and Explore the Measles Cases List</a></li>

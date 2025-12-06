@@ -27,11 +27,7 @@ If you do this exercise without doing the previous exercise, download all datase
 | `tcd_pop_2025_CN_100m_R2025A_v1.tif`            | 2025 population estimate per grid-cell               | WorldPop                                    | [WorldPop](https://hub.worldpop.org/geodata/summary?id=72895)              |
 | `measles_cases_adm2.csv`           | Reported measles cases by district (line list)       | Ministry of Health (MoH) Epidemiology Dept. | Provided for this exercise by HeiGIT                        |
 
-:::{note}
 
-All data provided by HeiGIT can be downloaded [here](https://nexus.heigit.org/repository/gis-training-resource-center/public_health/GIS_Training_Public_Health.zip)
-
-:::
 
 ## Tasks
 ### Task 1: Open the Project and Prepare the Workspace
@@ -64,7 +60,7 @@ In order to calculate the incidence rate per district, we first need to know the
     You can use the Identify Tool ![](/fig/qgis_identify_features.png) to click on the raster and see population estimates per pixel.
     :::
 
-2. We will now calculate the total population for each district using the tool "Zonal Statistics"
+2. We will now calculate the total population for each district using the tool `Zonal Statistics`
     - In the __[Processing Toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars)__, search for "Zonal Statistics" and open the tool.
     - Set the parameters as follows:
         - Input layer: `tcd_admbnda_adm2_20250212_AB`

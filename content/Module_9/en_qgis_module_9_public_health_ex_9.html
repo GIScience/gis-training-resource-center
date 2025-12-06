@@ -691,15 +691,29 @@ document.write(`
 </figure>
 </li>
 <li><p>The output will be called <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <strong>EPSG: 102022</strong> and reproject the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. The output layer will be called <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>.</p></li>
-<li><p>To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> layer. Before buffering, we first need to “Dissolve” the service-area lines so they form a single unified geometry.</p>
+<li><p>To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> layer. Before buffering, we first need to <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve"><code class="docutils literal notranslate"><span class="pre">Dissolve</span></code></a> the service-area lines so they form a single unified geometry.</p>
 <ul class="simple">
-<li><p>Open the “Dissolve” tool and use the reprojected output as the <strong>Input layer</strong></p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> tool and use the reprojected output as the <strong>Input layer</strong></p></li>
 <li><p>In Dissolve fields, we won’t select anything</p></li>
 </ul>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>⚠️<strong>Warning</strong>⚠️
+Both the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> and <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection">select</a> several states from the <code class="docutils literal notranslate"><span class="pre">tcd_admin1</span> <span class="pre">layer</span></code>, then right-click the layer → <code class="docutils literal notranslate"><span class="pre">Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">As…</span></code> and save the subset. Use the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip"><code class="docutils literal notranslate"><span class="pre">Clip</span></code></a> tool to cut the service-area roads to this smaller region, and then run the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> and <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> operations on the reduced dataset.</p>
+</div>
+</aside>
 </li>
 <li><p>Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.</p>
 <ul class="simple">
 <li><p>Input layer will be the result of the dissolving process (likely called <code class="docutils literal notranslate"><span class="pre">Dissolved</span></code>)</p></li>
+</ul>
+<figure class="align-default" id="buffer-operation-service-area-roads">
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_buffer.png"><img alt="../../_images/pub_health_chad_buffer.png" src="../../_images/pub_health_chad_buffer.png" style="width: 350px;" />
+</a>
+</figure>
+<ul class="simple">
 <li><p>Set the buffer distance to 2 km. The output should look similar to the screenshot below: the green area represents the estimated 2-hour accessibility zone around the vaccination points along the road network.</p></li>
 </ul>
 <figure class="align-default" id="en-3-40-m3-ex-3-access-vaccination">
@@ -728,7 +742,7 @@ document.write(`
 </ul>
 </li>
 </ol>
-<p>Then, run an “Intersection” between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries.</p>
+<p>Then, run an <code class="docutils literal notranslate"><span class="pre">Intersection</span></code> between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries.</p>
 <ol class="arabic simple" start="2">
 <li><p>In the <strong>Processing Toolbox</strong>, search for the tool <strong>Intersection</strong> and open it.</p>
 <ul class="simple">
@@ -740,6 +754,29 @@ document.write(`
 </li>
 </ol>
 <p>With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection.png"><img alt="../../_images/pub_health_chad_intersection.png" src="../../_images/pub_health_chad_intersection.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Intersection Operation</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p>Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.</p>
+<figure class="align-default" id="intersection-operation-results">
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_results.png"><img alt="../../_images/pub_health_chad_intersection_results.png" src="../../_images/pub_health_chad_intersection_results.png" style="width: 100px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Intersection Operation Results</span><a class="headerlink" href="#intersection-operation-results" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <ol class="arabic simple" start="3">
 <li><p>In the <strong>Processing Toolbox</strong>, now search again for the tool <strong>Zonal Statistics</strong> and open it.</p>
 <ul class="simple">
@@ -751,6 +788,14 @@ document.write(`
 </ul>
 </li>
 </ol>
+<figure class="align-default" id="intersection-zonal-statistics">
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_zonal_statistics.png"><img alt="../../_images/pub_health_chad_intersection_zonal_statistics.png" src="../../_images/pub_health_chad_intersection_zonal_statistics.png" style="width: 100px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Intersection Zonal Statistics</span><a class="headerlink" href="#intersection-zonal-statistics" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="docutils">
 <p>Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.</p>
 <ol class="arabic" start="4">
 <li><p>In a final step we will estimate the number of people living more than 2 hours away from the nearest vaccination facility — a key metric for identifying areas where <strong>mobile vaccination teams</strong> or <strong>temporary outreach sites</strong> may be needed.</p>
@@ -769,6 +814,7 @@ document.write(`
 </figure>
 </li>
 </ol>
+</div>
 <hr class="docutils" />
 </section>
 <section id="task-4-visualising-accessibility">
