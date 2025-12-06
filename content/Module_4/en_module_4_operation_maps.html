@@ -61,7 +61,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/Module_4/en_module_4_operation_maps';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.13. Exercises for Module 4" href="en_qgis_module_4_exercises.html" />
+    <link rel="next" title="4.10. Exercises for Module 4" href="en_qgis_module_4_exercises.html" />
     <link rel="prev" title="4.8. Good Map Design &amp; Semiological Errors" href="en_qgis_map_examples.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -220,10 +220,7 @@
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_understanding_print_layout.html">4.7. Understanding the Print Layout Composer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="en_qgis_map_examples.html">4.8. Good Map Design &amp; Semiological Errors</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">4.9. Operational Maps Tutorials</a></li>
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_4_exercises.html">4.13. Exercises for Module 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_qgis_module_4_exercises.html">4.10. Exercises for Module 4</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Module_5/en_module_5_overview.html">5. Intermediate GIS Operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -578,47 +575,40 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.9. Operational Maps Tutorials</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">4.9.1. Table of content</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">4.10. Health Facility Capacity Map: Visualising with multi-variable point symbols</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">4.10.1. About the Dataset</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">4.10.1.1. Fields used in this tutorial</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facilit-capacity-map-tutorial">4.10.2. Health Facilit Capacity Map Tutorial</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">4.10.2.1. Data preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-beds-with-proportional-circle-methods">4.10.2.2. Visualising the number of beds with proportional circle methods</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-visualisation-of-operational-status-with-colour">4.10.2.3. Adding visualisation of operational status with colour</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-legend-match-your-map">4.10.2.4. Making the Legend Match Your Map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">4.10.2.5. Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">4.9.1. Health Facility Capacity Map: Visualising with multi-variable point symbols</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">4.9.1.1. About the Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">4.9.1.2. Fields used in this tutorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facilit-capacity-map-tutorial">4.9.1.3. Health Facilit Capacity Map Tutorial</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">4.9.1.3.1. Data preparation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-beds-with-proportional-circle-methods">4.9.1.3.2. Visualising the number of beds with proportional circle methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-visualisation-of-operational-status-with-colour">4.9.1.3.3. Adding visualisation of operational status with colour</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-legend-match-your-map">4.9.1.3.4. Making the Legend Match Your Map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">4.9.1.3.5. Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">4.11. Creating a 3W Map (Who, What, Where)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">4.11.1. 3W Map Creation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-who-what-where">4.9.2. 3W Map (Who, What, Where)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">4.9.2.1. 3W Map Creation</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-epidemological-overview-map">4.12. Creating a epidemological overview map</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.12.1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.12.2. About the Dataset</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.12.2.1. Fields used in this tutorial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.12.2.2. Data preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epidemological-overview-map">4.9.3. Epidemological overview map</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.9.3.1. Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.9.3.2. About the Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.9.3.2.1. Fields used in this tutorial</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.9.3.2.2. Data preparation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.12.3. Creating a map visualising weekly infections and infection trends</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.12.4. Display the current infection trend with polygon colours</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.12.5. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.12.5.1. Create circles proportional to weekly infections</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.12.5.2. Display the current mortality rate with polygon colours</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.9.3.3. Creating a map visualising weekly infections and infection trends</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.9.3.4. Display the current infection trend with polygon colours</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.9.3.5. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.9.3.5.1. Create circles proportional to weekly infections</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.9.3.5.2. Display the current mortality rate with polygon colours</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -643,16 +633,13 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="operational-maps-tutorials">
 <h1><span class="section-number">4.9. </span>Operational Maps Tutorials<a class="headerlink" href="#operational-maps-tutorials" title="Link to this heading">#</a></h1>
 <p>Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.</p>
-<section id="table-of-content">
-<h2><span class="section-number">4.9.1. </span>Table of content<a class="headerlink" href="#table-of-content" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map: Visualising with multi-variable point symbols</a></p></li>
-<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#creating-a-3w-map-who-what-where">Creating a 3W Map (Who, What, Where)</a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">Health Facility Capacity Map</a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#3w-map-who-what-where">3W Map (Who, What, Where)</a></p></li>
+<li><p><a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#epidemiologica-overview-map">Epidemiological Overview Map</a></p></li>
 </ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols">
-<h1><span class="section-number">4.10. </span>Health Facility Capacity Map: Visualising with multi-variable point symbols<a class="headerlink" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols" title="Link to this heading">#</a></h1>
+<section id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols">
+<h2><span class="section-number">4.9.1. </span>Health Facility Capacity Map: Visualising with multi-variable point symbols<a class="headerlink" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols" title="Link to this heading">#</a></h2>
 <p>A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.</p>
 <p>Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes.</p>
 <figure class="align-default" id="building-a-multi-variable-hospital-capacity-map-step-by-step">
@@ -664,7 +651,7 @@ document.write(`
 </figure>
 <p>In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.</p>
 <section id="about-the-dataset">
-<h2><span class="section-number">4.10.1. </span>About the Dataset<a class="headerlink" href="#about-the-dataset" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.1.1. </span>About the Dataset<a class="headerlink" href="#about-the-dataset" title="Link to this heading">#</a></h3>
 <p>The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi. <strong><a class="reference external" href="https://data.humdata.org/dataset/malawi-health-facility-registry">Malawi - Health Facility Registry</a></strong>
 It exists to provide a single, up-to-date source of information for planning and monitoring health services.</p>
 <blockquote>
@@ -672,8 +659,9 @@ It exists to provide a single, up-to-date source of information for planning and
 </div></blockquote>
 <hr class="docutils" />
 <p>Download the data folder <a class="reference external" href="https://nexus.heigit.org/repository/gis-training-resource-center/module_4/exercise_6/Module_4_Exercise_Malawi_Health_Facilities_Registry.zip"><strong>here</strong></a> and save it on your PC. Unzip the .zip file.</p>
+</section>
 <section id="fields-used-in-this-tutorial">
-<h3><span class="section-number">4.10.1.1. </span>Fields used in this tutorial<a class="headerlink" href="#fields-used-in-this-tutorial" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.9.1.2. </span>Fields used in this tutorial<a class="headerlink" href="#fields-used-in-this-tutorial" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Field</strong></p></th>
@@ -698,16 +686,15 @@ It exists to provide a single, up-to-date source of information for planning and
 </div>
 <p>These fields are enough to build a clear, multi-variable point map.</p>
 </section>
-</section>
 <section id="health-facilit-capacity-map-tutorial">
-<h2><span class="section-number">4.10.2. </span>Health Facilit Capacity Map Tutorial<a class="headerlink" href="#health-facilit-capacity-map-tutorial" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.1.3. </span>Health Facilit Capacity Map Tutorial<a class="headerlink" href="#health-facilit-capacity-map-tutorial" title="Link to this heading">#</a></h3>
 <section id="data-preparation">
-<h3><span class="section-number">4.10.2.1. </span>Data preparation<a class="headerlink" href="#data-preparation" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.1.3.1. </span>Data preparation<a class="headerlink" href="#data-preparation" title="Link to this heading">#</a></h4>
 <p>First, we need to load the Malawi - Health Facility Registry dataset into QGIS</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Import the Malawi health facilities CSV into QGIS.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h4 class="rubric" id="import-the-malawi-health-facilities-csv-into-qgis">Import the Malawi health facilities CSV into QGIS</h4>
+<h5 class="rubric" id="import-the-malawi-health-facilities-csv-into-qgis">Import the Malawi health facilities CSV into QGIS</h5>
 <ol class="arabic simple">
 <li><p class="sd-card-text">In the top menu, go to<br />
 <strong>Layer → Add Layer → Add Delimited Text Layer…</strong></p></li>
@@ -746,7 +733,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the points w
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Filter the dataset to see only hospitals (Video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h4 class="rubric" id="filter-the-dataset-to-see-only-hospitals">Filter the dataset to see only hospitals</h4>
+<h5 class="rubric" id="filter-the-dataset-to-see-only-hospitals">Filter the dataset to see only hospitals</h5>
 <ol class="arabic">
 <li><p class="sd-card-text"><strong>Open the attribute table</strong></p>
 <ul class="simple">
@@ -779,13 +766,13 @@ The layer will now appear in your <strong>Layers</strong> panel and the points w
 </div>
 </details></section>
 <section id="visualising-the-number-of-beds-with-proportional-circle-methods">
-<h3><span class="section-number">4.10.2.2. </span>Visualising the number of beds with proportional circle methods<a class="headerlink" href="#visualising-the-number-of-beds-with-proportional-circle-methods" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.1.3.2. </span>Visualising the number of beds with proportional circle methods<a class="headerlink" href="#visualising-the-number-of-beds-with-proportional-circle-methods" title="Link to this heading">#</a></h4>
 <p>Now that your layer is filtered to show only hospitals, you can create a map that shows hospital capacity using proportional circles.<br />
 The number of beds (<code class="docutils literal notranslate"><span class="pre">Number_Beds</span></code>) will control the <strong>size</strong> of each symbol.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Visualise hospital capacity using proportional (graduated-size) circles (video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h3 class="rubric" id="visualise-hospital-capacity-using-proportional-circles-graduated-size">Visualise hospital capacity using proportional circles (graduated-size)</h3>
+<h4 class="rubric" id="visualise-hospital-capacity-using-proportional-circles-graduated-size">Visualise hospital capacity using proportional circles (graduated-size)</h4>
 <ol class="arabic simple">
 <li><p class="sd-card-text"><strong>Open the Layer Styling panel</strong></p>
 <ul class="simple">
@@ -817,7 +804,7 @@ QGIS will create size classes based on the range of bed numbers in your dataset.
 </ul>
 </li>
 </ol>
-<h4 class="rubric" id="adjust-the-classes-manually-recommended">Adjust the classes manually (recommended)</h4>
+<h5 class="rubric" id="adjust-the-classes-manually-recommended">Adjust the classes manually (recommended)</h5>
 <p class="sd-card-text">The data range is <strong>1–200 beds</strong>, but only a few hospitals have more than <strong>80 beds</strong>.<br />
 Most hospitals are small or medium-sized.</p>
 <p class="sd-card-text">Automatic classification would cluster most facilities into one or two classes.<br />
@@ -894,13 +881,13 @@ To avoid this, we create <strong>balanced, domain-informed classes</strong>:</p>
 </div>
 </section>
 <section id="adding-visualisation-of-operational-status-with-colour">
-<h3><span class="section-number">4.10.2.3. </span>Adding visualisation of operational status with colour<a class="headerlink" href="#adding-visualisation-of-operational-status-with-colour" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.1.3.3. </span>Adding visualisation of operational status with colour<a class="headerlink" href="#adding-visualisation-of-operational-status-with-colour" title="Link to this heading">#</a></h4>
 <p>To visualise the operational status of each hospital (operational or non-operational) alongside its bed capacity, we can use QGIS’s data-defined override functionality. A <strong>data-defined override</strong> allows you to control a symbol property—such as colour, size, rotation, or opacity—using an expression or an attribute value from the layer. This means QGIS adjusts the symbol automatically for each feature, based on the data rather than manual styling. Using this technique, we can assign a colour to each hospital according to its status while keeping the proportional circle sizes for bed capacity.</p>
 <p>First, we need to open the <strong>data-defined override Expression Builder</strong>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Open data-defined override to adjust colour based on operational status (Video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h3 class="rubric" id="open-data-defined-override-to-adjust-colour-based-on-operational-status">Open data-defined override to adjust colour based on operational status</h3>
+<h4 class="rubric" id="open-data-defined-override-to-adjust-colour-based-on-operational-status">Open data-defined override to adjust colour based on operational status</h4>
 <ol class="arabic simple">
 <li><p class="sd-card-text">Select your hospital layer (the filtered <code class="docutils literal notranslate"><span class="pre">Malawi_health_facilities_raw</span></code>).</p></li>
 <li><p class="sd-card-text">Right-click the layer → <strong>Properties…</strong> → <strong>Symbology</strong>.</p></li>
@@ -913,7 +900,7 @@ To avoid this, we create <strong>balanced, domain-informed classes</strong>:</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Use an Expression to Colour Hospitals by Status (Video)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h3 class="rubric" id="use-an-expression-to-colour-hospitals-by-status">Use an Expression to Colour Hospitals by Status</h3>
+<h4 class="rubric" id="use-an-expression-to-colour-hospitals-by-status">Use an Expression to Colour Hospitals by Status</h4>
 <ol class="arabic simple">
 <li><p class="sd-card-text">This expression tells QGIS to automatically choose a colour for each hospital based on its <code class="docutils literal notranslate"><span class="pre">STATUS</span></code> attribute.<br />
 Functional hospitals become green, non-functional ones become red, and any missing values receive a neutral grey.
@@ -964,7 +951,7 @@ This new visualisation shows the size of the circle, the number of beds, the col
 </div>
 </section>
 <section id="making-the-legend-match-your-map">
-<h3><span class="section-number">4.10.2.4. </span>Making the Legend Match Your Map<a class="headerlink" href="#making-the-legend-match-your-map" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.1.3.4. </span>Making the Legend Match Your Map<a class="headerlink" href="#making-the-legend-match-your-map" title="Link to this heading">#</a></h4>
 <blockquote>
 <div><p>⚠️ <strong>Note:</strong> When you use a data-defined override to colour your symbols, QGIS does not automatically update the legend.</p>
 </div></blockquote>
@@ -992,7 +979,7 @@ This new visualisation shows the size of the circle, the number of beds, the col
 </figure>
 </section>
 <section id="adding-a-third-variable-using-stroke-style-facility-type">
-<h3><span class="section-number">4.10.2.5. </span>Adding a Third Variable Using Stroke Style (Facility Type)<a class="headerlink" href="#adding-a-third-variable-using-stroke-style-facility-type" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.1.3.5. </span>Adding a Third Variable Using Stroke Style (Facility Type)<a class="headerlink" href="#adding-a-third-variable-using-stroke-style-facility-type" title="Link to this heading">#</a></h4>
 <p>Your hospital capacity map now contains a rich amount of information, and it is already useful in its current form. However, QGIS allows us to add an additional layer of meaning without creating new layers or changing the existing size and colour logic. One way to do this is by using the stroke—the outline of each symbol—which can be styled or patterned dynamically. In the next section, you will learn how to use the stroke style to represent a third attribute, making your visualisation even more informative while keeping it easy to read.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1083,8 +1070,8 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
 </section>
 </section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="creating-a-3w-map-who-what-where">
-<h1><span class="section-number">4.11. </span>Creating a 3W Map (Who, What, Where)<a class="headerlink" href="#creating-a-3w-map-who-what-where" title="Link to this heading">#</a></h1>
+<section id="w-map-who-what-where">
+<h2><span class="section-number">4.9.2. </span>3W Map (Who, What, Where)<a class="headerlink" href="#w-map-who-what-where" title="Link to this heading">#</a></h2>
 <p><strong>Introduction:</strong></p>
 <p>A 3W info map is one of the most commonly requested products during the first month of an operation. <strong>3W</strong> refers to <strong>who, what, and where</strong>, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.</p>
 <figure class="align-default" id="w-map-turkey">
@@ -1143,7 +1130,7 @@ Proportional circles: beds + operational status + Owner status</span><a class="h
 </figure>
 </div>
 </details><section id="w-map-creation">
-<h2><span class="section-number">4.11.1. </span>3W Map Creation<a class="headerlink" href="#w-map-creation" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.2.1. </span>3W Map Creation<a class="headerlink" href="#w-map-creation" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Add all the relevant spatial data. Used in probably every instance:</p>
 <ul class="simple">
@@ -1468,18 +1455,18 @@ display. Look at the attribute table of the dataset to find it out.</p>
 </figure>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="creating-a-epidemological-overview-map">
-<h1><span class="section-number">4.12. </span>Creating a epidemological overview map<a class="headerlink" href="#creating-a-epidemological-overview-map" title="Link to this heading">#</a></h1>
+<section id="epidemological-overview-map">
+<h2><span class="section-number">4.9.3. </span>Epidemological overview map<a class="headerlink" href="#epidemological-overview-map" title="Link to this heading">#</a></h2>
 <section id="introduction">
-<h2><span class="section-number">4.12.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h3>
 <p>Epidemiological overview maps are among the most frequently requested analytical products during the early stages of an outbreak response. These maps synthesize when, where, and how intensely disease transmission and mortality are occurring across affected areas. By visualizing weekly case incidence and identifying whether transmission is increasing, stable, or decreasing in each location, responders gain rapid insight into the evolving dynamics of the epidemic. A related view, incorporating weekly deaths and mortality rates, supports assessment of disease severity and potential gaps in access to care. These outputs are routinely included in Situation Reports, operational updates, and epidemiological briefings, and serve as key reference tools during coordination meetings. In this section, we will explore the essential components of epidemiological overview maps and demonstrate how to produce them in QGIS using simulated weekly case and mortality data.</p>
 <p>In this tutorial, you will learn how to create a multivariable map to generate an epidemiological overview of a cholera outbreak in Somalia. Using a fictional dataset with weekly infection counts and death rates, you will visualize the situation for a selected week by applying several QGIS visualization tools.</p>
 </section>
 <section id="id3">
-<h2><span class="section-number">4.12.2. </span>About the Dataset<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.3.2. </span>About the Dataset<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>The dataset contains epidemiological parameters for Somalia at the regional level, covering a 12-week period during a cholera outbreak. The parameters include weekly new cases, weekly cumulative cases, and the weekly death rate.</p>
 <section id="id4">
-<h3><span class="section-number">4.12.2.1. </span>Fields used in this tutorial<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.3.2.1. </span>Fields used in this tutorial<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Field</strong></p></th>
@@ -1501,7 +1488,7 @@ display. Look at the attribute table of the dataset to find it out.</p>
 </div>
 </section>
 <section id="id5">
-<h3><span class="section-number">4.12.2.2. </span>Data preparation<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.3.2.2. </span>Data preparation<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <p>First, we need to load the dataset into QGIS:</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1518,7 +1505,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </details></section>
 </section>
 <section id="creating-a-map-visualising-weekly-infections-and-infection-trends">
-<h2><span class="section-number">4.12.3. </span>Creating a map visualising weekly infections and infection trends<a class="headerlink" href="#creating-a-map-visualising-weekly-infections-and-infection-trends" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.3.3. </span>Creating a map visualising weekly infections and infection trends<a class="headerlink" href="#creating-a-map-visualising-weekly-infections-and-infection-trends" title="Link to this heading">#</a></h3>
 <p>As we want to visualize multiple variables later we choose to use a secondary point layer to map weekly infections. We will use week 8 of the outbreak for our example map. The number of new weekly infections (<code class="docutils literal notranslate"><span class="pre">week8_new_inf</span></code>) will control the <strong>size</strong> of each circle.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1601,7 +1588,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </div>
 </section>
 <section id="display-the-current-infection-trend-with-polygon-colours">
-<h2><span class="section-number">4.12.4. </span>Display the current infection trend with polygon colours<a class="headerlink" href="#display-the-current-infection-trend-with-polygon-colours" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.3.4. </span>Display the current infection trend with polygon colours<a class="headerlink" href="#display-the-current-infection-trend-with-polygon-colours" title="Link to this heading">#</a></h3>
 <p>Now that we have visualized our first epidemiological parameter (“weekly new cases”) using proportional circle sizes, we can use our polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> to display additional relevant information. Alongside the weekly infections, we want to show the <strong>infection trend</strong> from week 7 to week 8 for each regi to analyze, whether weekly infections are rising, falling, or stagnating. To achieve this, we first need to generate a new field using the <strong>Field Calculator</strong>:</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1663,16 +1650,16 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 <p>If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html">The Print Layout Composer</a>.</p>
 </section>
 <section id="creating-a-map-visualising-weekly-deaths-and-mortality-rate">
-<h2><span class="section-number">4.12.5. </span>Creating a map visualising weekly deaths and mortality rate<a class="headerlink" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate" title="Link to this heading">#</a></h2>
+<h3><span class="section-number">4.9.3.5. </span>Creating a map visualising weekly deaths and mortality rate<a class="headerlink" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate" title="Link to this heading">#</a></h3>
 <p>After we created our multi variable map with information about the development of infections we can transfer the used steps to also create a map providing information about weekly deaths and the current mortality rate of the outbreak. The basic information needed is stored in the <code class="docutils literal notranslate"><span class="pre">weekX_dc</span></code> fields of your polygon layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code>, which provide weekly death counts for every week of the cholera outbreak.</p>
 <section id="create-circles-proportional-to-weekly-infections">
-<h3><span class="section-number">4.12.5.1. </span>Create circles proportional to weekly infections<a class="headerlink" href="#create-circles-proportional-to-weekly-infections" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.3.5.1. </span>Create circles proportional to weekly infections<a class="headerlink" href="#create-circles-proportional-to-weekly-infections" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>To create a point layer that visualizes weekly death count with proportional circles repeat the same steps that you learned previously when visualizing the new weekly infections. The only change you need to implement is changing the “Value” dropdwon menue in the Symbology panel from <code class="docutils literal notranslate"><span class="pre">week8_inf_new</span></code> to <code class="docutils literal notranslate"><span class="pre">week8_dc</span></code> to link the death count to the point sizes.</p></li>
 </ul>
 </section>
 <section id="display-the-current-mortality-rate-with-polygon-colours">
-<h3><span class="section-number">4.12.5.2. </span>Display the current mortality rate with polygon colours<a class="headerlink" href="#display-the-current-mortality-rate-with-polygon-colours" title="Link to this heading">#</a></h3>
+<h4><span class="section-number">4.9.3.5.2. </span>Display the current mortality rate with polygon colours<a class="headerlink" href="#display-the-current-mortality-rate-with-polygon-colours" title="Link to this heading">#</a></h4>
 <p>Alongside the weekly death count, we want to show the <strong>mortality rate</strong> from week 7 to week 8. To achieve this, we first need to generate a new field using the <strong>Field Calculator</strong>. beforehand make sure to create a duplicate layer of <code class="docutils literal notranslate"><span class="pre">Som_outbreak_epi</span></code> to dont overwrite you previous vizualisation. Call the dupolicate layer <code class="docutils literal notranslate"><span class="pre">Som_outbreak_mort</span></code>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1731,6 +1718,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
 </section>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1776,7 +1764,7 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.13. </span>Exercises for Module 4</p>
+        <p class="prev-next-title"><span class="section-number">4.10. </span>Exercises for Module 4</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1796,47 +1784,40 @@ The layer will now appear in your <strong>Layers</strong> panel and the polygons
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.9. Operational Maps Tutorials</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-content">4.9.1. Table of content</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">4.10. Health Facility Capacity Map: Visualising with multi-variable point symbols</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">4.10.1. About the Dataset</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">4.10.1.1. Fields used in this tutorial</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facilit-capacity-map-tutorial">4.10.2. Health Facilit Capacity Map Tutorial</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">4.10.2.1. Data preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-beds-with-proportional-circle-methods">4.10.2.2. Visualising the number of beds with proportional circle methods</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-visualisation-of-operational-status-with-colour">4.10.2.3. Adding visualisation of operational status with colour</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-legend-match-your-map">4.10.2.4. Making the Legend Match Your Map</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">4.10.2.5. Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facility-capacity-map-visualising-with-multi-variable-point-symbols">4.9.1. Health Facility Capacity Map: Visualising with multi-variable point symbols</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-dataset">4.9.1.1. About the Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-used-in-this-tutorial">4.9.1.2. Fields used in this tutorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#health-facilit-capacity-map-tutorial">4.9.1.3. Health Facilit Capacity Map Tutorial</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-preparation">4.9.1.3.1. Data preparation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualising-the-number-of-beds-with-proportional-circle-methods">4.9.1.3.2. Visualising the number of beds with proportional circle methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-visualisation-of-operational-status-with-colour">4.9.1.3.3. Adding visualisation of operational status with colour</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#making-the-legend-match-your-map">4.9.1.3.4. Making the Legend Match Your Map</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-third-variable-using-stroke-style-facility-type">4.9.1.3.5. Adding a Third Variable Using Stroke Style (Facility Type)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3w-map-who-what-where">4.11. Creating a 3W Map (Who, What, Where)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">4.11.1. 3W Map Creation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-who-what-where">4.9.2. 3W Map (Who, What, Where)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#w-map-creation">4.9.2.1. 3W Map Creation</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-epidemological-overview-map">4.12. Creating a epidemological overview map</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.12.1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.12.2. About the Dataset</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.12.2.1. Fields used in this tutorial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.12.2.2. Data preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epidemological-overview-map">4.9.3. Epidemological overview map</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">4.9.3.1. Introduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.9.3.2. About the Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.9.3.2.1. Fields used in this tutorial</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4.9.3.2.2. Data preparation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.12.3. Creating a map visualising weekly infections and infection trends</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.12.4. Display the current infection trend with polygon colours</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.12.5. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.12.5.1. Create circles proportional to weekly infections</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.12.5.2. Display the current mortality rate with polygon colours</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-infections-and-infection-trends">4.9.3.3. Creating a map visualising weekly infections and infection trends</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-infection-trend-with-polygon-colours">4.9.3.4. Display the current infection trend with polygon colours</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-map-visualising-weekly-deaths-and-mortality-rate">4.9.3.5. Creating a map visualising weekly deaths and mortality rate</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-circles-proportional-to-weekly-infections">4.9.3.5.1. Create circles proportional to weekly infections</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-current-mortality-rate-with-polygon-colours">4.9.3.5.2. Display the current mortality rate with polygon colours</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>

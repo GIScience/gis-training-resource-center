@@ -10,11 +10,11 @@
 
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
-## Table of content
-- [Health Facility Capacity Map: Visualising with multi-variable point symbols](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
-- [Creating a 3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#creating-a-3w-map-who-what-where)
+- [Health Facility Capacity Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
+- [3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#3w-map-who-what-where)
+- [Epidemiological Overview Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#epidemiologica-overview-map)
 
-# Health Facility Capacity Map: Visualising with multi-variable point symbols
+## Health Facility Capacity Map: Visualising with multi-variable point symbols
 
 A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.
 
@@ -31,7 +31,7 @@ Building a Multi-Variable Hospital Capacity Map Step by Step
 
 In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.
 
-## About the Dataset
+### About the Dataset
 
 The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi. **[Malawi - Health Facility Registry](https://data.humdata.org/dataset/malawi-health-facility-registry)**
 It exists to provide a single, up-to-date source of information for planning and monitoring health services.
@@ -50,14 +50,14 @@ Download the data folder [**here**](https://nexus.heigit.org/repository/gis-trai
 
 These fields are enough to build a clear, multi-variable point map.
 
-## Health Facilit Capacity Map Tutorial
+### Health Facilit Capacity Map Tutorial
 
-### Data preparation
+#### Data preparation
 First, we need to load the Malawi - Health Facility Registry dataset into QGIS
 
 ::::{dropdown} Import the Malawi health facilities CSV into QGIS.
 
-#### Import the Malawi health facilities CSV into QGIS
+##### Import the Malawi health facilities CSV into QGIS
 
 1. In the top menu, go to  
    **Layer → Add Layer → Add Delimited Text Layer…**
@@ -99,7 +99,7 @@ Next, we need to reduce the points visualised on the map to the facilities that 
 
 ::::{dropdown} Filter the dataset to see only hospitals (Video)
 
-#### Filter the dataset to see only hospitals
+##### Filter the dataset to see only hospitals
 
 1. **Open the attribute table**  
    - Right-click `Malawi_health_facilities_raw` → **Open Attribute Table**.  
@@ -121,7 +121,7 @@ Next, we need to reduce the points visualised on the map to the facilities that 
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_malwai_exampel_hospital_filter.mp4"></video>
 
 ::::
-### Visualising the number of beds with proportional circle methods
+#### Visualising the number of beds with proportional circle methods
 
 Now that your layer is filtered to show only hospitals, you can create a map that shows hospital capacity using proportional circles.  
 The number of beds (`Number_Beds`) will control the **size** of each symbol.
@@ -129,7 +129,7 @@ The number of beds (`Number_Beds`) will control the **size** of each symbol.
 
 ::::{dropdown} Visualise hospital capacity using proportional (graduated-size) circles (video)
 
-### Visualise hospital capacity using proportional circles (graduated-size)
+#### Visualise hospital capacity using proportional circles (graduated-size)
 
 
 1. **Open the Layer Styling panel**  
@@ -151,7 +151,7 @@ The number of beds (`Number_Beds`) will control the **size** of each symbol.
    - Click **Classify**.  
      QGIS will create size classes based on the range of bed numbers in your dataset.
 
-#### Adjust the classes manually (recommended)
+##### Adjust the classes manually (recommended)
 
 The data range is **1–200 beds**, but only a few hospitals have more than **80 beds**.  
 Most hospitals are small or medium-sized.
@@ -209,7 +209,7 @@ Proportional circles: beds classes
 ```
 :::
 ::::
-### Adding visualisation of operational status with colour
+#### Adding visualisation of operational status with colour
 
 To visualise the operational status of each hospital (operational or non-operational) alongside its bed capacity, we can use QGIS’s data-defined override functionality. A **data-defined override** allows you to control a symbol property—such as colour, size, rotation, or opacity—using an expression or an attribute value from the layer. This means QGIS adjusts the symbol automatically for each feature, based on the data rather than manual styling. Using this technique, we can assign a colour to each hospital according to its status while keeping the proportional circle sizes for bed capacity.
 
@@ -217,7 +217,7 @@ First, we need to open the **data-defined override Expression Builder**.
 
 ::::{dropdown} Open data-defined override to adjust colour based on operational status (Video)
 
-### Open data-defined override to adjust colour based on operational status
+#### Open data-defined override to adjust colour based on operational status
 
 1.  Select your hospital layer (the filtered `Malawi_health_facilities_raw`).  
 2. Right-click the layer → **Properties…** → **Symbology**.
@@ -229,7 +229,7 @@ First, we need to open the **data-defined override Expression Builder**.
 To make this work, we now need to tell QGIS which colour to use for each hospital. Data-defined overrides use the QGIS expression language, which lets you write short rules that are applied automatically to every feature in the layer. In this step, we will write a small expression that checks the value in the STATUS field and assigns the correct colour based on whether the hospital is functional or not.
 
 ::::{dropdown} Use an Expression to Colour Hospitals by Status (Video)
-### Use an Expression to Colour Hospitals by Status
+#### Use an Expression to Colour Hospitals by Status
 
 1. This expression tells QGIS to automatically choose a colour for each hospital based on its `STATUS` attribute.  
 Functional hospitals become green, non-functional ones become red, and any missing values receive a neutral grey.
@@ -280,7 +280,7 @@ Legend proportional circles: beds + operational status
 :::
 ::::
 
-### Making the Legend Match Your Map
+#### Making the Legend Match Your Map
 
 > ⚠️ **Note:** When you use a data-defined override to colour your symbols, QGIS does not automatically update the legend. 
 ---
@@ -313,7 +313,7 @@ width: 800
 Exampel Map Proportional circles: Hospital Beds + Operational Status 
 ```
 
-### Adding a Third Variable Using Stroke Style (Facility Type)
+#### Adding a Third Variable Using Stroke Style (Facility Type)
 
 Your hospital capacity map now contains a rich amount of information, and it is already useful in its current form. However, QGIS allows us to add an additional layer of meaning without creating new layers or changing the existing size and colour logic. One way to do this is by using the stroke—the outline of each symbol—which can be styled or patterned dynamically. In the next section, you will learn how to use the stroke style to represent a third attribute, making your visualisation even more informative while keeping it easy to read.
 
@@ -407,7 +407,7 @@ Exampel Map Proportional circles: Hospital Beds + Operational Status
 
 ---
 
-# Creating a 3W Map (Who, What, Where)
+## 3W Map (Who, What, Where)
 
 __Introduction:__
 
@@ -479,7 +479,7 @@ Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sou
 
 ::::
 
-## 3W Map Creation
+### 3W Map Creation
 
 1. Add all the relevant spatial data. Used in probably every instance:
     - Administrative boundaries
@@ -813,10 +813,10 @@ A simple example of a 3W map showing the distribution of Oral Rehydration Points
 
 
 
-# Creating a epidemological overview map
+## Epidemological overview map
 
 
-## Introduction
+### Introduction
 
 
 Epidemiological overview maps are among the most frequently requested analytical products during the early stages of an outbreak response. These maps synthesize when, where, and how intensely disease transmission and mortality are occurring across affected areas. By visualizing weekly case incidence and identifying whether transmission is increasing, stable, or decreasing in each location, responders gain rapid insight into the evolving dynamics of the epidemic. A related view, incorporating weekly deaths and mortality rates, supports assessment of disease severity and potential gaps in access to care. These outputs are routinely included in Situation Reports, operational updates, and epidemiological briefings, and serve as key reference tools during coordination meetings. In this section, we will explore the essential components of epidemiological overview maps and demonstrate how to produce them in QGIS using simulated weekly case and mortality data.
@@ -829,13 +829,13 @@ In this tutorial, you will learn how to create a multivariable map to generate a
 
 
 
-## About the Dataset
+### About the Dataset
 
 
 The dataset contains epidemiological parameters for Somalia at the regional level, covering a 12-week period during a cholera outbreak. The parameters include weekly new cases, weekly cumulative cases, and the weekly death rate.
 
 
-### Fields used in this tutorial
+#### Fields used in this tutorial
 
 
 | **Field**                 | **Contents** |
@@ -849,7 +849,7 @@ The dataset contains epidemiological parameters for Somalia at the regional leve
 
 
 
-### Data preparation
+#### Data preparation
 First, we need to load the dataset into QGIS:
 
 
@@ -871,7 +871,7 @@ First, we need to load the dataset into QGIS:
 
 
 
-## Creating a map visualising weekly infections and infection trends
+### Creating a map visualising weekly infections and infection trends
 
 As we want to visualize multiple variables later we choose to use a secondary point layer to map weekly infections. We will use week 8 of the outbreak for our example map. The number of new weekly infections (`week8_new_inf`) will control the **size** of each circle.
 
@@ -981,7 +981,7 @@ Just by changing the selected field under "Value" in the Symbology panel, you ca
 
 
 
-## Display the current infection trend with polygon colours
+### Display the current infection trend with polygon colours
 
 
 Now that we have visualized our first epidemiological parameter ("weekly new cases") using proportional circle sizes, we can use our polygon layer `Som_outbreak_epi` to display additional relevant information. Alongside the weekly infections, we want to show the **infection trend** from week 7 to week 8 for each regi to analyze, whether weekly infections are rising, falling, or stagnating. To achieve this, we first need to generate a new field using the **Field Calculator**:
@@ -1064,16 +1064,16 @@ If you want to generate a proper map layout of your epidemological overview map 
 
 
 
-## Creating a map visualising weekly deaths and mortality rate
+### Creating a map visualising weekly deaths and mortality rate
 
 After we created our multi variable map with information about the development of infections we can transfer the used steps to also create a map providing information about weekly deaths and the current mortality rate of the outbreak. The basic information needed is stored in the `weekX_dc` fields of your polygon layer `Som_outbreak_epi`, which provide weekly death counts for every week of the cholera outbreak.
 
-### Create circles proportional to weekly infections
+#### Create circles proportional to weekly infections
 
 - To create a point layer that visualizes weekly death count with proportional circles repeat the same steps that you learned previously when visualizing the new weekly infections. The only change you need to implement is changing the "Value" dropdwon menue in the Symbology panel from `week8_inf_new` to `week8_dc` to link the death count to the point sizes.
 
 
-### Display the current mortality rate with polygon colours
+#### Display the current mortality rate with polygon colours
 Alongside the weekly death count, we want to show the **mortality rate** from week 7 to week 8. To achieve this, we first need to generate a new field using the **Field Calculator**. beforehand make sure to create a duplicate layer of `Som_outbreak_epi` to dont overwrite you previous vizualisation. Call the dupolicate layer `Som_outbreak_mort`.
 
 
