@@ -2,7 +2,7 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Subsection to be created:
+## Subsections:
 * [Installation of QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Projects and folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)
