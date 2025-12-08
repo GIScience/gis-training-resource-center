@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: content/intro
+root: content/intro.md
 options:  # The options key will be applied to all chapters, but not sub-sections
 parts:
   - caption: Modules
@@ -25,7 +25,7 @@ parts:
           - file: content/Module_2/en_qgis_module_2_exercises.md
       - file: content/Module_3/en_module_3_overview.md
         sections:
-          - file: content/Module_3/en_qgis_digitalisation.md
+          - file: content/Module_3/en_qgis_digitisation.md
           - file: content/Module_3/en_qgis_data_queries.md
           - file: content/Module_3/en_qgis_data_classification.md
           - file: content/Module_3/en_qgis_georeferencing.md
@@ -40,6 +40,7 @@ parts:
           - file: content/Module_4/en_qgis_map_design_2.md
           - file: content/Module_4/en_qgis_understanding_print_layout.md
           - file: content/Module_4/en_qgis_map_examples.md
+          - file: content/Module_4/en_module_4_operation_maps.md
           - file: content/Module_4/en_qgis_module_4_exercises.md
       - file: content/Module_5/en_module_5_overview.md
         sections:
@@ -56,10 +57,11 @@ parts:
       - file: content/Module_7/en_module_7_overview.md
         sections: 
           - file: content/Module_7/en_qgis_automation_theory.md
-          - file: content/Module_7/en_qgis_module_7_ex1.md
+          - file: content/Module_7/en_qgis_module_7_exercises.md
       - file: content/Module_8/en_module_8_overview.md
         sections: 
           - file: content/Module_8/en_qgis_remote_sensing_raster_theory.md
+          - file: content/Module_8/en_qgis_raster_operations.md
           - file: content/Module_8/en_qgis_remote_sensing_theory.md  
           - file: content/Module_8/en_qgis_module_8_ex1.md
       - file: content/Module_9/en_module_9_overview.md
@@ -73,8 +75,12 @@ parts:
       - file: content/Exercise_tracks/en_exercise_tracks_overview.md
         sections:
           - file: content/Exercise_tracks/en_larkana_flood_response.md
+          - file: content/Exercise_tracks/en_mdg_aa_cyclones.md
+          - file: content/Exercise_tracks/fr_mdg_aa_cyclones.md
+          - file: content/Exercise_tracks/en_public_health_outbreak_and_preparedness.md
   - caption: Wiki
     chapters:
+      - file: content/Wiki/en_wiki_homepage.md
       - file: content/Wiki/en_qgis_qgis_basics_wiki.md
         sections:
           - file: content/Wiki/en_qgis_installation_wiki.md
@@ -92,11 +98,11 @@ parts:
           - file: content/Wiki/en_qgis_OpenStreetMap_wiki.md
           - file: content/Wiki/en_qgis_layer_concept_wiki.md
           - file: content/Wiki/en_qgis_attribute_table_wiki.md
-          - file: content/Wiki/en_qgis_digitalization_wiki.md   
+          - file: content/Wiki/en_qgis_digitisation_wiki.md   
       - file: content/Wiki/en_qgis_data_classification_wiki.md
         sections:
           - file: content/Wiki/en_qgis_single_symbol_wiki.md
-          - file: content/Wiki/en_qgis_categorized_wiki.md
+          - file: content/Wiki/en_qgis_categorised_wiki.md
           - file: content/Wiki/en_qgis_graduated_wiki.md
       - file: content/Wiki/en_qgis_geoprocessing_wiki.md
       - file: content/Wiki/en_qgis_queries_wiki.md
@@ -111,21 +117,34 @@ parts:
       - file: content/Wiki/en_qgis_raster_wiki.md
         sections:
           - file: content/Wiki/en_qgis_raster_basic_wiki.md
-      - file: content/Wiki/en_qgis_automatisation_wiki.md
-        sections:
-          - file: content/Wiki/en_qgis_model_builder_wiki.md
+      - file: content/Wiki/en_qgis_automation_wiki.md
       - file: content/Wiki/en_qgis_representation_wiki.md
         sections:
           - file: content/Wiki/en_qgis_visualisation_wiki.md
           - file: content/Wiki/en_qgis_map_making_wiki.md
       - file: content/Wiki/en_qgis_common_errors_and_Issues.md   
       - file: content/Wiki/en_web_and_mobile_apps_wiki.md
+      - file: content/Wiki/en_geodata_management_sharepoint.md
   - caption: GIS in Anticipatory Action
     chapters:
+      - file: content/GIS_AA/en_qgis_cyclone_trigger_madagascar.md
+        sections:
+          - file: content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
+      - file: content/GIS_AA/en_AILAS_madagascar.md
+        sections:
+          - file: content/GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
+          - file: content/GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md
+      - file: content/GIS_AA/fr_AILAS_madagascar.md
+        sections:
+          - file: content/GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md
+          - file: content/GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md
       - file: content/GIS_AA/en_qgis_risk_assessment_plugin.md
+        sections:
+          - file: content/GIS_AA/en_qgis_generate_indicators_for_plugin.md
+          - file: content/GIS_AA/en_gaia_indicators_processing.md
       - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
         sections:
           - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
