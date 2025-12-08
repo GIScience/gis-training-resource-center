@@ -832,7 +832,7 @@ In this tutorial, you will learn how to create a multivariable map to generate a
 ### About the Dataset
 
 
-The dataset contains epidemiological parameters for Somalia at the regional level, covering a 12-week period during a cholera outbreak. The parameters include weekly new cases, weekly cumulative cases, and the weekly death rate.
+The dataset contains epidemiological parameters for Somalia at the regional level, covering a 12-week period during a cholera outbreak. The parameters include weekly new cases, weekly cumulative cases, and the weekly death rate. Download the dataset [here](https://nexus.heigit.org/repository/gis-training-resource-center/module_4/tutorial_epi_map/Som_outbreak_epi.gpkg).
 
 
 #### Fields used in this tutorial
@@ -1135,4 +1135,5 @@ name: label placement
 :::
 
 If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html).
+
 
