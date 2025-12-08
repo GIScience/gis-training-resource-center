@@ -55,22 +55,31 @@ To do this, you will generate travel-time surfaces around vaccination points and
    - Vector layer with start points is the newly created `tcd_cold_chain_healthsites_points_capacities`
    - Travel cost will be `2` as the information for the fastest path type is given in hours. So 2 will correspond to 2 hours of travel time
    - The speed will be left at the Default speed of 50 km/h
-   :::{figure} /fig/en_3.40_m3_ex_3_service_area.png
-   ---
-   name: en_3.40_m3_ex_3_service_area
-   width: 650 px
-   ---
-   :::
+
+```{Attention} Selecting the right CRS
+The tool _Service area (from layer)_ requires the QGIS project running in an appropriate metric CRS to produce meaningful output.
+Make sure to set your QGIS project via the menu in the lower right corner to a metric CRS, eg `ESRI:102022`. The layers don't necessarily need to be prjected in a metric system. 
+
+* More info on the CRS menu in the QGIS UI is available [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)
+* More on CRS in general is available [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)
+
+```
+
+:::{figure} /fig/en_3.40_m3_ex_3_service_area.png
+---
+name: en_3.40_m3_ex_3_service_area
+width: 650 px
+---
+:::
+
 3. The output will be called `Service area (lines)` and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select __EPSG: 102022__ and reproject the `Service area (lines)`. The output layer will be called `Reprojected`.
 4. To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the `Service area (lines)` layer. Before buffering, we first need to [`Dissolve`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve) the service-area lines so they form a single unified geometry.
    - Open the `Dissolve` tool and use the reprojected output as the __Input layer__
    - In Dissolve fields, we won't select anything
-    ::::{margin}
-    :::{tip}
-    ⚠️**Warning**⚠️
-    Both the `Dissolve` and `Buffer` operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, [select](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection) several states from the `tcd_admin1 layer`, then right-click the layer → `Export` → `Save Selected Features As…` and save the subset. Use the [`Clip`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) tool to cut the service-area roads to this smaller region, and then run the `Dissolve` and `Buffer` operations on the reduced dataset.
-    :::
-    ::::
+
+:::{Warning}
+Both the `Dissolve` and `Buffer` operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, [select](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection) several states from the `tcd_admin1 layer`, then right-click the layer → `Export` → `Save Selected Features As…` and save the subset. Use the [`Clip`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) tool to cut the service-area roads to this smaller region, and then run the `Dissolve` and `Buffer` operations on the reduced dataset.
+:::
 
 5. Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.
    - Input layer will be the result of the dissolving process (likely called `Dissolved`)
