@@ -126,11 +126,10 @@ Intersection Operation
 
 :::{grid-item} 
 
-Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.
 ```{figure} /fig/pub_health_chad_intersection_results.png
 ---
 name: Intersection Operation Results
-width: 100
+width: 400
 ---
 Intersection Operation Results
 ```
@@ -145,16 +144,28 @@ Intersection Operation Results
    - **Statistics to calculate:** `Sum`
    - **Output column prefix:** `pop_vaccination_`
    - **Output file name:** `population_within_isochrones`
+
+:::{grid-item}
 ```{figure} /fig/pub_health_chad_intersection_zonal_statistics.png
 ---
-name: Intersection Zonal Statistics
-width: 100
+name: 
+width: 400
 ---
-Intersection Zonal Statistics
+Zonal Statistics Operation population with in service area
 ```
 :::
 
-   
+:::{grid-item} 
+
+```{figure} /fig/pub_health_chad_intersection_zonal_statistics_pop_vac_area_map.png
+---
+name: Intersection Operation Results
+width: 400
+---
+Population raster cells with in buffer will be summed up in the new layer `population_within_isochrones`
+```
+:::
+::::
 
 Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.
 
