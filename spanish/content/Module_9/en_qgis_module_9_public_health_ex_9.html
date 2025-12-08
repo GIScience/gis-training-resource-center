@@ -518,8 +518,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-opening-the-project-and-preparing-the-data">Task 1: Opening the Project and Preparing the Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-creating-accessibility-area-around-vaccination-points">Task 2: Creating Accessibility Area Around Vaccination Points</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculating-population-coverage-using-worldpop">Task 3: Calculating Population Coverage Using WorldPop</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualising-accessibility">Task 4: Visualising Accessibility</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
             </nav>
         </div>
@@ -701,18 +699,17 @@ Make sure to set your QGIS project via the menu in the lower right corner to a m
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
 <div class="sd-col sd-d-flex-column docutils">
-<figure class="align-default" id="id1">
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection.png"><img alt="../../_images/pub_health_chad_intersection.png" src="../../_images/pub_health_chad_intersection.png" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Intersection Operation</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Intersection Operation</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<p>Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.</p>
 <figure class="align-default" id="intersection-operation-results">
-<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_results.png"><img alt="../../_images/pub_health_chad_intersection_results.png" src="../../_images/pub_health_chad_intersection_results.png" style="width: 100px;" />
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_results.png"><img alt="../../_images/pub_health_chad_intersection_results.png" src="../../_images/pub_health_chad_intersection_results.png" style="width: 400px;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Intersection Operation Results</span><a class="headerlink" href="#intersection-operation-results" title="Link to this image">#</a></p>
@@ -732,13 +729,24 @@ Make sure to set your QGIS project via the menu in the lower right corner to a m
 </ul>
 </li>
 </ol>
-<figure class="align-default" id="intersection-zonal-statistics">
-<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_zonal_statistics.png"><img alt="../../_images/pub_health_chad_intersection_zonal_statistics.png" src="../../_images/pub_health_chad_intersection_zonal_statistics.png" style="width: 100px;" />
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_zonal_statistics.png"><img alt="../../_images/pub_health_chad_intersection_zonal_statistics.png" src="../../_images/pub_health_chad_intersection_zonal_statistics.png" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Intersection Zonal Statistics</span><a class="headerlink" href="#intersection-zonal-statistics" title="Link to this image">#</a></p>
+<p><span class="caption-text">Zonal Statistics Operation population with in service area</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/pub_health_chad_intersection_zonal_statistics_pop_vac_area_map.png"><img alt="../../_images/pub_health_chad_intersection_zonal_statistics_pop_vac_area_map.png" src="../../_images/pub_health_chad_intersection_zonal_statistics_pop_vac_area_map.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Population raster cells with in buffer will be summed up in the new layer <code class="docutils literal notranslate"><span class="pre">population_within_isochrones</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
 <div class="docutils">
 <p>Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.</p>
 <ol class="arabic" start="4">
@@ -758,11 +766,8 @@ Make sure to set your QGIS project via the menu in the lower right corner to a m
 </figure>
 </li>
 </ol>
-</div>
 <hr class="docutils" />
-</section>
-<section id="task-4-visualising-accessibility">
-<h2>Task 4: Visualising Accessibility<a class="headerlink" href="#task-4-visualising-accessibility" title="Link to this heading">#</a></h2>
+<h2 class="rubric" id="task-4-visualising-accessibility">Task 4: Visualising Accessibility</h2>
 <ol class="arabic simple">
 <li><p>To visualize the <code class="docutils literal notranslate"><span class="pre">population_within_isochrones</span></code> data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the <strong>Join attributes by field value</strong> tool:</p>
 <ul class="simple">
@@ -802,10 +807,8 @@ Make sure to set your QGIS project via the menu in the lower right corner to a m
 <p><span class="caption-text">Example map for Measles Vaccination: Population Wihin 2-Hour Access | Chad</span><a class="headerlink" href="#tcd-map-pop-access-vaccination" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
 <hr class="docutils" />
-<section id="discussion">
-<h2>Discussion<a class="headerlink" href="#discussion" title="Link to this heading">#</a></h2>
+<h2 class="rubric" id="discussion">Discussion</h2>
 <p>The resulting map shows which districts and settlements are effectively served by fixed vaccination points, and which remain outside practical reach. In real-world scenarios, such analysis can help humanitarian planners:</p>
 <ul class="simple">
 <li><p><strong>Identify underserved areas</strong> and plan <strong>mobile vaccination campaigns</strong>.</p></li>
@@ -850,6 +853,7 @@ If motorised transport is limited, repeat the process using **`foot-walking`** a
 :::
 
 -->
+</div>
 </section>
 </section>
 
@@ -905,8 +909,6 @@ If motorised transport is limited, repeat the process using **`foot-walking`** a
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-opening-the-project-and-preparing-the-data">Task 1: Opening the Project and Preparing the Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-creating-accessibility-area-around-vaccination-points">Task 2: Creating Accessibility Area Around Vaccination Points</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-calculating-population-coverage-using-worldpop">Task 3: Calculating Population Coverage Using WorldPop</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visualising-accessibility">Task 4: Visualising Accessibility</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
 </ul>
   </nav></div>
 
