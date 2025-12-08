@@ -672,7 +672,7 @@ document.write(`
 <hr class="docutils" />
 <section id="task-2-creating-accessibility-area-around-vaccination-points">
 <h2>Task 2: Creating Accessibility Area Around Vaccination Points<a class="headerlink" href="#task-2-creating-accessibility-area-around-vaccination-points" title="Link to this heading">#</a></h2>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>Open the “Service area (from layer)” tool in the Processing Toolbox.</p></li>
 <li><p>Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.</p>
 <ul class="simple">
@@ -682,26 +682,36 @@ document.write(`
 <li><p>Travel cost will be <code class="docutils literal notranslate"><span class="pre">2</span></code> as the information for the fastest path type is given in hours. So 2 will correspond to 2 hours of travel time</p></li>
 <li><p>The speed will be left at the Default speed of 50 km/h</p></li>
 </ul>
+</li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Selecting the right CRS
+The tool <em>Service area (from layer)</em> requires the QGIS project running in an appropriate metric CRS to produce meaningful output.
+Make sure to set your QGIS project via the menu in the lower right corner to a metric CRS, eg <code class="docutils literal notranslate"><span class="pre">ESRI:102022</span></code>. The layers don’t necessarily need to be prjected in a metric system.</p>
+<ul class="simple">
+<li><p>More info on the CRS menu in the QGIS UI is available <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system">here</a></p></li>
+<li><p>More on CRS in general is available <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system">here</a></p></li>
+</ul>
+</div>
 <figure class="align-default" id="en-3-40-m3-ex-3-service-area">
 <a class="reference internal image-reference" href="../../_images/en_3.40_m3_ex_3_service_area.png"><img alt="../../_images/en_3.40_m3_ex_3_service_area.png" src="../../_images/en_3.40_m3_ex_3_service_area.png" style="width: 650px;" />
 </a>
 </figure>
-</li>
+<ol class="arabic simple" start="3">
 <li><p>The output will be called <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <strong>EPSG: 102022</strong> and reproject the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code>. The output layer will be called <code class="docutils literal notranslate"><span class="pre">Reprojected</span></code>.</p></li>
 <li><p>To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the <code class="docutils literal notranslate"><span class="pre">Service</span> <span class="pre">area</span> <span class="pre">(lines)</span></code> layer. Before buffering, we first need to <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve"><code class="docutils literal notranslate"><span class="pre">Dissolve</span></code></a> the service-area lines so they form a single unified geometry.</p>
 <ul class="simple">
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> tool and use the reprojected output as the <strong>Input layer</strong></p></li>
 <li><p>In Dissolve fields, we won’t select anything</p></li>
 </ul>
-<aside class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>⚠️<strong>Warning</strong>⚠️
-Both the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> and <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection">select</a> several states from the <code class="docutils literal notranslate"><span class="pre">tcd_admin1</span> <span class="pre">layer</span></code>, then right-click the layer → <code class="docutils literal notranslate"><span class="pre">Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">As…</span></code> and save the subset. Use the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip"><code class="docutils literal notranslate"><span class="pre">Clip</span></code></a> tool to cut the service-area roads to this smaller region, and then run the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> and <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> operations on the reduced dataset.</p>
-</div>
-</aside>
 </li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Both the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> and <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection">select</a> several states from the <code class="docutils literal notranslate"><span class="pre">tcd_admin1</span> <span class="pre">layer</span></code>, then right-click the layer → <code class="docutils literal notranslate"><span class="pre">Export</span></code> → <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Selected</span> <span class="pre">Features</span> <span class="pre">As…</span></code> and save the subset. Use the <a class="reference external" href="https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip"><code class="docutils literal notranslate"><span class="pre">Clip</span></code></a> tool to cut the service-area roads to this smaller region, and then run the <code class="docutils literal notranslate"><span class="pre">Dissolve</span></code> and <code class="docutils literal notranslate"><span class="pre">Buffer</span></code> operations on the reduced dataset.</p>
+</div>
+<ol class="arabic" start="5">
 <li><p>Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.</p>
 <ul class="simple">
 <li><p>Input layer will be the result of the dissolving process (likely called <code class="docutils literal notranslate"><span class="pre">Dissolved</span></code>)</p></li>
