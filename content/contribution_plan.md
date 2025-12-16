@@ -64,9 +64,9 @@ The structure of new modules/chapters should ideally include:
 - __Figures:__ Pictures or figures to illustrate theoretical concepts, real world examples or show screenshots 
 - __Videos:__ The platform uses short videos without commentary to show how to perform certain steps (e.g., edit the attribute table, import layers, or set the symbology of a layer)
 
-```{note}
+:::{note}
 Keep in mind that there are many detailed GIS resources as well as official documentation. Explain the necessary theory for trainees to perform the tasks. You can also refer to external resources. 
-```
+:::
 
 ### Exercise Guidelines
 
