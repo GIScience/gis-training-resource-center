@@ -220,66 +220,393 @@ __Introduction:__
 
 A 3W info map is one of the most commonly requested products during the first month of an operation. __3W__ refers to __who, what, and where__, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.
 
+:::{figure} ../../fig/4.8_3W_example_Turkey.png
+---
+name: 3W Map Turkey
+width: 720 px
+---
+3W Map example: Turkish Red Crescent Response to Earthquake
+:::
+
+::::{dropdown} Example: 3W Brazil Floods Distribution Map
+:::{figure} ../../fig/4.8_3W_Brazil_Floods.png
+---
+name: 3W Map Turkey
+width: 720 px
+---
+3W Map example: Brazil Floods Distribution Map
+:::
+::::
+
 __What is needed:__
 
-- [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/)
-- QGIS
+- A recent version of QGIS
 - Access to 3W data
+- [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making
+- Logos of the organizations involved
 
 __Getting the 3W data:__
 
-A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple Kobo survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into the GO Platform, which then can be used as the primary source for the 3W map.
+A variety of factors can affect how much 3W information you have available. In the early weeks of a response, there may not yet be a structured process for gathering data from the different sectors and organizations involved. The IM Coordinator may recommend using a simple survey for sector leads and/or National Societies to capture an initial snapshot of who is doing what and where. As the operation becomes more organized, sector leads and National Societies can begin entering 3W data directly into a joined platform, which then can be used as the primary source for the 3W map.
 
 If no formal 3W data collection system is in place, information might need to be extracted from SitReps and other reports produced by the operation team. Focus first on identifying the following:
 
-- What response activities are the National Society involved in, and where?
-- What response activities are being done by IFRC operation, and where?
-- Key situation overview figures, such as number of people affected by the disaster, number of deaths or injuries, number of houses damaged, number of geographical units affected (all of these data points can be modified based on the context of the disaster). Make sure to note the data source you are using for key situation overview figures, and whenever possible to align the figures you are using to those used by the host National Society instead of using figures released by the media.
+- __What response activities are the National Society involved in, and where?__
+- __What response activities are being done by IFRC operation, and where?__
+- __Key situation overview figures__, such as number of __people affected by the disaster__, __number of deaths or injuries__, number of houses damaged, number of geographical units affected (all of these data points can be modified based on the context of the disaster). 
+- Make sure to __note the data source__ you are using for key situation overview figures, and whenever possible to align the figures you are using to those used by the host National Society instead of using figures released by the media.
 - How many people or households are being reached by sectoral activities, and where?
 
 It is normal that the initial dataset is limited. The 3W map will evolve and expand as additional information comes in.
 
-Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)
+:::{admonition}
+Helpful information on how to create such a 3W map can be found [here](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/).
+
+For a variety of 3W map examples, browse the Maps/Infographics section on [Reliefweb](https://reliefweb.int/updates?view=maps&search=title%3A%223W%22).
+:::
+
+::::{dropdown} Example: Hurricane Melissa November 2025 | Jamaica
+The two 3W example maps below demonstrate how such __products develop__ as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an __initial community assessment__. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the __map’s styling has also evolved__. This progression is entirely normal; maps are expected to __improve__ and become __more detailed__ over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
+
+:::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
+---
+name: 3W Map Jamaica Melissa Start
+width: 720 px
+---
+Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 03-Nov-2025: Community Assessments (Source: MapAction).
+:::
+
+:::{figure} ../../fig/4.8_3w_jamaica_24_11_2025.png
+---
+name: 3W Map Jamaica Melissa End
+width: 720 px
+---
+Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 24-Nov-2025 12:00L (Sources: MapAction, OCHA).
+:::
+
+::::
 
 ### 3W Map Creation
 
 1. Add all the relevant spatial data. Used in probably every instance:
     - Administrative boundaries
-    - Affected areas with cholera case numbers
+    - Affected areas with the relevant disaster
+    - Points of Interest (Airports, Ports, Cities)
     - Background map (OpenStreetMap is always a solid choice)
 2. Import the 3W Activity data
-    - Add the 3W dataset (mostly CSV or Excel)
+    - Add the 3W dataset to QGIS (mostly CSV or Excel)
     - Ensure that it contains information about the organization, activity type, and location.
-3. Style the layers
-    - Apply a __Graduated__ color ramp to the Admin 2 boundaries to visualize cholera case numbers, using __Equal Interval__ classification. A suitable color ramp is __Reds__, with higher case counts displayed in darker shades and lower counts in lighter tones.
-    - Add labels to the Admin 2 boundaries for clearer identification.   
-4. Set up a new __Print Layout__. Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
-5. Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
-    - The title (e.g. Sudanese Red Crescent Response)
-    - The type of disaster or emergency
-    - The geographic location of the disaster
-    - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
+
+::::{dropdown} How to import .csv or .txt
+
+__Delimited text import (.csv, .txt)__
+
+When working with 3W data, the most common format encountered is a delimited text file, such as `.csv` files (Comma Separated Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They can contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well Known Text" (WKT), which represents complex geometries, such as polygons or lines. In some cases, the table may not include any geographic information at all. When this happens, the file is simply added as a non-spatial table, allowing access to its attribute information without displaying it on the map.
+
+__Open Delimited Text Layer__
+
+:::{Tip}
+To load data from spreadsheets such as Comma Separated Value (`.csv`) or Excel (`.xlsx`), the datasets need to have columns containing geometry - this is most often in the form of latitude (Y field) and longitude (X field), but might also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.  
+:::
+
+:::{figure} /fig/en_import_delimeted_text.png
+---
+width: 600px 
+align: center
+name: en_import_delimeted_text
+---
+Import delimited text in QGIS 3.36.
+:::
+
+1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
+2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your CSV file and click `Open`.
+3. `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas `,` are used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
+
+:::{Tip}
+To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+:::
+
+:::{figure} /fig/en_delimited_text_fileformat.png
+---
+width: 600px
+align: center
+name: en_delimited_text_fileformat
+---
+Adjusting the file format parameters while importing a delimited text layer into QGIS.
+:::
+
+4. If your CSV file contains geometry, continue with `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
+5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option `No geometry (attribute only table)`.
+6. Click `Add`
+
+:::{dropdown} Video: Opening delimited text files in QGIS
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+
+:::
+
+::::
+
+3. Style the administrative boundaries with a transparent fill and choose an appropriate `Stroke color` and `Stroke width` to ensure they are clearly visible without obscuring underlying map content.
+
+::::{dropdown} Styling administrative boundaries
+
+__Styling administrative boundaries (Polygons)__
+
+When creating 3W maps, administrative boundaries are always a key component. Most overview maps display disaster-related information aggregated by these boundaries. To visualize multiple administrative levels at once, each layer needs to be styled so that lower layers remain visible and the hierarchy between levels is clear. Often, this begins with adding the country outline and then progressively adding each subsequent administrative level, ensuring that the symbology distinguishes them without cluttering the map.
+
+__Only display the outlines of polygons__
+
+Now, we want to change the symbology of a layer so that __only the outlines of the polygons are visible__. This is necessary to make layers below this one visible.
+
+To change the symbology of a single layer:
+1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colors and contours will be applied to all the features in that layer.
+2. Click on `Simple Fill`.
+3. Click on the arrow to the right of `Fill Color`.
+4. Check the `Transparent Fill` option.
+
+:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+---
+name: en_30.30.2_vector_layer_styling_transparent
+width: 500 px
+---
+:::
+
+:::{dropdown} Video: Making the fill color transparent
+
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+
+:::
+
+__Adjusting the Styles of Multiple Overlaying Layers__
+
+__Ordering the layers__
+
+1. Import all the administrative boundaries into your QGIS-project that you want to work with (e.g. Admin 0-2).
+2. One option is to order the layers in the Layers panel so that the `Admin0`-layer sits on top, followed by `Admin1` and `Admin2`. At first, this might look weird because `Admin0` will cover everything.
+
+:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+---
+name: en_30.30.2_changing_layer_style_1
+height: 400px 
+---
+Order the layers and navigate to the styling panel of the topmost layer
+:::
+
+3. Change the symbology of the `Admin0` layer by opening the styling panel and navigating to the Symbology tab. 
+4. Click on `Simple Fill` to open the style options.
+5. Expand the `Fill Color` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
+6. Choose a `Stroke Color`, and adjust the `Stroke Width`.
+7. Click OK.
+8. __Repeat the same process__ for the `Admin1` layer, using the same color as for `Admin0` (it will be in "Recent colors). Adjust the stroke width so that it differs from `Admin0`, ensuring that the administrative levels remain visually distinct. 
+9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (`Admin2`).
+10. Let's make the district layer's style consistent with the others.
+11. Choose a `Fill Color`.
+12. Use the same `Stroke Color` as for `Admin0` and `Admin1`, but make the width even thiner and the Stroke Style a __Dash Line__.
+13. Click OK and look at your map: hopefully it's starting to look nicer!
+
+:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+---
+width: 500 px
+name: en_30.30.2_changing_layer_style_3
+---
+The styling of a vector data consists of the color and the outline.
+:::
+
+:::{dropdown} Video: Adjusting the style for multiple layers
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+.mp4"></video>
+:::
+
+::::
+
+4. Style the disaster-related information by selecting a color ramp that fits the context. One common approach is to create a choropleth map using __Graduated__ styling, which visually represents variations in impact or case numbers across administrative areas.
+
+::::{dropdown} Styling disaster-related information
+
+__Creating a Choropleth Map ("Gradudated Styling)__
+
+If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colors. In this example, colors are assigned to Admin1 polygons based on the total population of each State.
+
+1. Open the `Symbology` options and choose `Graduated`.
+2. __Select the value you want to use to assign colors__, in this case, it will be `total_pop`.
+
+:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
+---
+name: en_30.30.2_symbology_variable_ranges
+width: 550px
+---
+With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
+:::
+
+3. Click on `Classify` to __list all values divided in classes__.
+4. Choose __how many classes__ you want the data to be divided into ‒ let's say 4. You can also assign different `Modes`. We usually work with `Equal Count` or `Equal Interval` depending on our data.
+5. By default, the color ramp will be red. However, red is not the right color to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.
+6. Click on __the arrow next to the color ramp__ to choose another combination of colors - let's say a color ramp from white to blue.
+7. Click `Apply` to preview the look of your layer, then `OK`.
+
+:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
+---
+name: en_30.30.2_symbology_variable_ranges_2
+width: 500px
+---
+You can categorize the continuous values into classes and assign a color ramp .
+:::
+
+The following map shows the most populated states of Nigeria using a graduated color categorization. These types of maps are called __Choropleth maps__. 
+
+:::{figure} ../../fig/en_map_design_example_variable_ranges.png
+---
+name: en_map_design_example_variable_ranges
+width: 500px
+---
+A map showing the population of Nigerian states.
+:::
+
+:::{dropdown} Video: How to create a choropleth map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+.mp4"></video>
+:::
+
+::::
+
+5. Add labels to the Admin boundaries (at the level of interest) for clearer identification. 
+
+:::::{dropdown} Label administrative boundaries
+
+__Single Labels__
+
+Creates a single label style for every feature in the layer. You can select an attribute (value) which will be 
+displayed. For example, the name of a district. You need to know which attribute displays the information you want to 
+display. Look at the attribute table of the dataset to find it out.
+
+:::{figure} /fig/labels_single_labels_example_nga_adm1.png
+---
+width: 600 px
+name: labels_single_labels_example_nga_adm1
+---
+Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
+:::
+
+:::{figure} /fig/en_30.30.2_assigning_value_to_labels.png
+---
+width: 600 px
+name: en_30.30.2_assigning_value_to_labels
+---
+Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (`ADM1_EN`) to be displayed. 
+:::
+
+__Adding Single Labels to a Layer__
+
+1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
+2. Select `Single labels`.
+3. `Value` is where you choose the attribute that will be displayed as a label. For example `ADM1_EN` will display the English names of Nigerian states for each feature in the data set.
+4. Let's __change the font__: Open the font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the color by clicking on `Color`, and change the `Size` to 8 pt.
+5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
+7. Click `Apply` and `OK`.
+
+:::{figure} ../../fig/en_30.30.2_setting_up_labels.png
+---
+width: 600px
+name: en_30.30.2_setting_up_labels
+---
+Setting up labels in QGIS 30.30.2
+:::
+
+:::{dropdown} Video: How to add single labels
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
+:::
+
+::::{attention}
+
+Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.
+
+:::{figure} /fig/single_labels_bad_example.png
+---
+name: single_labels_bad_example
+width: 400 px
+---
+Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood. 
+:::
+
+::::
+
+:::::
+
+6. Set up a new __Print Layout__. 
+    - Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. 
+    - Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
+    - Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
+        - The title (e.g. Sudanese Red Crescent Response)
+        - The type of disaster or emergency
+        - The geographic location of the disaster
+        - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
+    - Add __Organizational logos__ (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool to ensure that each active organization can be easily identified on the map.
+    - Icons which describe the specific activity. These can also be added using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool. Make use of the [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making.
+    - A small overview map to help situate the disaster-affected area within a broader geographic context.
 
 :::{note}
 Multiple text boxes can be used to display the header in different font sizes, helping to clearly separate different layers of information. If all content should remain within a single label box, `Render as HTML` can be applied to format and style the text as needed.
 :::
 
-6. Add map elements
+::::{dropdown} Starting the Print Layout
+
+__Open the Print Layout__
+
+1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
+2. A new window with a blank print layout will appear.
+
+:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+---
+width: 700px
+name: Create Print Layout
+---
+Create a new Print Layout
+:::
+
+__Map Composition__
+
+A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.
+
+In general, there are a few things to keep in mind when creating a map:
+
+- The main map should cover the largest portion of the page and be centred.
+- A complete map must have:
+    - A meaningful title
+    - All the sources used
     - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and color schemes.
-    - A scale bar 
+    - A scale bar
     - A north arrow
-    - Organizational logos (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
-    - Icons which describe the specific activity. These can also be added using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool
-    - A small overview map
+    - and necessary other information to contextualize the information presented on the map.
+- This additional information, such as the title should be scaled accordingly.
+    - Titles should be large so the reader can identify it as the main topic of the map.
+    - Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).
+- A well-structured page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.
+
+::::
 
 7. Areas of operation for each organization
     - Place the logos of each organization within the districts where they are active.
     - Add activity icons to indicate the specific types of work each organization is carrying out in those districts.
+    - To illustrate the link between organization logos, activity icons, and their corresponding areas, arrows can be added to the map. Using this feature helps clearly emphasize the relationships and improves overall readability.
+
+:::{dropdown} How to add arrow item
+The arrows ![](../../fig/mActionAddArrow.png) can be added from the left-side panel in the Print Layout. Click and drag on the layout to draw it, then use the Item Properties panel to adjust the arrow’s style, thickness, color, and direction. Arrows can be moved or resized like any other layout item, allowing you to visually connect map features, icons, or labels.
+:::
 
 :::{Caution}
-Add labels and logos where necessary, but avoid cluttering the map with excessive text or symbols. Arrange map elements by topic, importance, and visual hierarchy to maintain a clean and structured layout. Map items can be reordered in the __Item__ panel on the upper right side.
+Add labels and logos where needed, but avoid cluttering the map with unnecessary text or symbols. Organize map elements by topic, importance, and visual hierarchy to keep the layout clean and structured. Items can be reordered in the Item panel on the upper right side. Once added as images, logos and activity icons can be positioned directly on the map using drag-and-drop. Place them in meaningful locations so they do not overlap or obscure other important information.
 :::
 
 :::{note}
 All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)
 :::
+
+:::{figure} ../../fig/4.8_3W_own_example.png
+---
+width: 700px
+name: 3W example cholera
+---
+A simple example of a 3W map showing the distribution of Oral Rehydration Points and the active organizations operating in south-eastern Sudan.
+:::
+

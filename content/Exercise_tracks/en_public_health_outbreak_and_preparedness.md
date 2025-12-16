@@ -36,14 +36,6 @@ The aim of this exercise is to produce a map showing the distribution of healths
 
 :::{card}
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html
-__Part 2: Analysing Measles Case Data and Population Distribution__
-^^^
-The Epidemiology Department has shared a line-list of suspected measles cases reported by health districts. Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates. This will help the response coordination team prioritise vaccination deployments and plan logistics for outreach activities.
-
-:::
-
-:::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html
 __Part 2: Calculating affected population__
 ^^^
 The Epidemiology Department has shared a line-list of suspected measles cases reported by health districts. Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates. This will help the response coordination team prioritise vaccination deployments and plan logistics for outreach activities.
@@ -61,6 +53,8 @@ Accessibility to health services is a key determinant of vaccination coverage. I
 
 :::
 
+<!--
+
 :::{card}
 :link: 
 __Part 4: Creating a situation map to help decision-making__
@@ -70,3 +64,4 @@ In this part, the print layout composer will be used to create an publishable an
 
 :::
 
+-->
