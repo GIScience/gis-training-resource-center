@@ -5,10 +5,22 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   deploy-book:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
+    
     steps:
     - uses: actions/checkout@v2
 
@@ -44,10 +56,13 @@ jobs:
         echo "Created _site with English in /content and Spanish in /spanish"
         ls -R _site
 
+    # Upload artifacts
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './_site'
+
     # Deploy combined site to GitHub Pages
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3.6.1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
-        publish_branch: gh-pages
+      id: deployment
+      uses: actions/deploy-pages@v4
