@@ -42,7 +42,7 @@ múltiples elementos:
 :::{figure} /fig/GIS_definition_icons.drawio.svg
 ---
 height: 200px
-name: GIS_definition_icons
+name: es_GIS_definition_icons
 align: center
 ---
 Componentes del SIG (fuente: Cruz Roja Británica)
@@ -186,7 +186,7 @@ Esta versión interactiva del mapa del cólera, lo muestra superpuesto con un ma
 :::{figure} /fig/John_snow_zoom_map2.png
 ---
 height: 600px
-name: John_snow_zoom_map2
+name: es_John_snow_zoom_map2
 align: center
 ---
 Mapa del cólera en Londres de John Snow (1854).

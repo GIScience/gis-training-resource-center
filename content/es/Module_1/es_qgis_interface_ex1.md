@@ -53,7 +53,7 @@ align: Left
 ---
 :::
 
-- En el panel `Project Templates`, __haga doble clic en la opción `New Empty Project`__ (debe ser la única plantilla visible). Verá un lienzo en blanco en la interfaz principal, ya que aún no hay datos cargados.
+- En el panel `Plantillas de proyectos`, __haga doble clic en la opción `Proyecto nuevo vacío`__ (debe ser la única plantilla visible). Verá un lienzo en blanco en la interfaz principal, ya que aún no hay datos cargados.
 
 2. Conozca la interfaz de QGIS: Sobre el lienzo encontrará la __barra de herramientas__ con muchas funciones diferentes. A izquierda y a la derecha del lienzo, se encuentran los paneles. En QGIS, por lo general, accederá a la herramientas en las __barras de herramientas__ o en los __paneles__.
 
@@ -65,12 +65,12 @@ A la derecha de la pantalla, lo más probable es que tenga el panel __Caja de he
 ---
 width: 800px
 align: center
-name: QGIS User Interface
+name: es_QGIS_GUI
 ---
 Interfaz de usuario de QGIS.
 :::
 
-3. Puede desacoplar los paneles de su ubicación, haciendo clic y arrastrando el título del panel. Puede anclarlo a otro panel (aparecerá como otra pestaña) o convertirlo en una ventana independiente. También puede cambiar el tamaño de los paneles. Inténtelo moviendo el panel de las capas hacia la derecha ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#move-and-arrange-toolbars)).
+3. Puede desacoplar los paneles de su ubicación, haciendo clic y arrastrando el título del panel. Puede anclarlo a otro panel (aparecerá como otra pestaña) o convertirlo en una ventana independiente. También puede cambiar el tamaño de los paneles. Inténtelo moviendo el panel de las capas hacia la derecha ([video del Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#move-and-arrange-toolbars)).
 
 :::{tip}
 
@@ -79,7 +79,7 @@ En QGIS, la interfaz podría aparecer ligeramente diferente dependiendo de la re
 :::
 
 4. QGIS tiene otros paneles que puede utilizar y que no se muestran por defecto. Veamos cómo podemos encontrar y activar los demás paneles y barras de herramientas.
-- En el menú `View`, busque las opciones `panels` y `toolbar`. Al pasar el puntero sobre cada elemento, verá una lista de los paneles y barras de herramientas disponibles, así como cuáles están activados. Tómese un minuto para explorar las distintas barras de herramientas y paneles. Hay muchas opciones, pero no se preocupe, no utilizará la mayoría de ellas, en esta capacitación. Los paneles que más utilizaremos son:
+- En el menú `Ver`, busque las opciones `Paneles` y `Barras de herramientas`. Al pasar el puntero sobre cada elemento, verá una lista de los paneles y barras de herramientas disponibles, así como cuáles están activados. Tómese un minuto para explorar las distintas barras de herramientas y paneles. Hay muchas opciones, pero no se preocupe, no utilizará la mayoría de ellas, en esta capacitación. Los paneles que más utilizaremos son:
 - Navegador
 - Capas
 - Estilo de capa
@@ -95,11 +95,11 @@ En QGIS, la interfaz podría aparecer ligeramente diferente dependiendo de la re
 
 Tómese un momento para familiarizarse con las distintas formas de organizar la interfaz de QGIS. ¡Saber dónde encontrar las distintas funciones puede ahorrarle mucho tiempo y frustraciones en el futuro!
 
-6. Ahora guardemos el proyecto. Haga clic en el icono de guardar de la barra de herramientas o abra el menú `Project` y elija `Save As...`
-    1. Elija una ubicación para el archivo del proyecto. Un lugar ideal sería en la subcarpeta del proyecto en la estructura de carpetas modelo. Vaya a la carpeta llamada `Module_1_Exercise_1`. Asigne un nombre al proyecto de QGIS (por ejemplo: `QGIS_Training_Exercise_1`). El proyecto se guardará como un archivo `.qqz`.
+6. Ahora guardemos el proyecto. Haga clic en el icono de guardar de la barra de herramientas o abra el menú `Proyecto` y elija `Guardar como...`
+    1. Elija una ubicación para el archivo del proyecto. Un lugar ideal sería en la subcarpeta del proyecto en la estructura de carpetas modelo. Vaya a la carpeta llamada `Modulo_1_Ejercicio_1`. Asigne un nombre al proyecto de QGIS (por ejemplo: `QGIS_Training_Exercise_1`). El proyecto se guardará como un archivo `.qqz`.
     2. Haga clic en `Save`
     3. Cierre la aplicación QGIS y vuelva a abrirla.
-7.  Cierre la aplicación QGIS y vuelva a abrirla. Cuando QGIS se reinicie, el proyecto que acabamos de guardar aparecerá en el panel `Recent Projects`. Puede hacer doble clic para abrirlo. También puede navegar hasta el archivo `.qgz` en su explorador de archivos y hacer doble clic sobre él.
+7.  Cierre la aplicación QGIS y vuelva a abrirla. Cuando QGIS se reinicie, el proyecto que acabamos de guardar aparecerá en el panel `Proyectos recientes`. Puede hacer doble clic para abrirlo. También puede navegar hasta el archivo `.qgz` en su explorador de archivos y hacer doble clic sobre él.
 Esto también iniciará QGIS y cargará el proyecto.
 
 :::{Tip}

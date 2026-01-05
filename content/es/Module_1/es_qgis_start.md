@@ -66,14 +66,14 @@ A veces, trabajar con SIG requiere salir al campo para recopilar los datos. En e
 
 :::{tab-item} Procesamiento de datos
 
-QGIS ofrece una amplia gama de algoritmos para procesar datos geoespaciales. En los siguientes módulos, conocerá una serie de algoritmos especialmente útiles para los SIG en el trabajo humanitario. Aprenderá más sobre procesamiento y manipulación de datos a partir del [módulo 2](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_module_2_overview.html).
+QGIS ofrece una amplia gama de algoritmos para procesar datos geoespaciales. En los siguientes módulos, conocerá una serie de algoritmos especialmente útiles para los SIG en el trabajo humanitario. Aprenderá más sobre procesamiento y manipulación de datos a partir del __[módulo 2](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_module_2_overview.html)__.
 
 
 :::
 
 :::{tab-item} Visualización
 
-QGIS permite visualizar datos geoespaciales y crear mapas para comunicar información. Para ello, asigna símbolos y colores a los distintos elementos de sus datos geoespaciales. Asignar una simbología a los datos geoespaciales es una de las principales habilidades que desarrollará como usuario del SIG y una buena visualización de los datos, es inmensamente útil a la hora de comunicar ideas. Aprenderá a asignar símbolos en el [Módulo 4: Visualización de datos geoespaciales y elaboración de mapas](/content/es/Module_4/es_qgis_map_design_I.md)
+QGIS permite visualizar datos geoespaciales y crear mapas para comunicar información. Para ello, asigna símbolos y colores a los distintos elementos de sus datos geoespaciales. Asignar una simbología a los datos geoespaciales es una de las principales habilidades que desarrollará como usuario del SIG y una buena visualización de los datos, es inmensamente útil a la hora de comunicar ideas. Aprenderá a asignar símbolos en el __[Módulo 4: Visualización de datos geoespaciales y elaboración de mapas](/content/es/Module_4/es_qgis_map_design_I.md)__.
 
 
 :::
@@ -164,11 +164,10 @@ align: center
 :::{dropdown} Ejercicio: Crear un nuevo proyecto en QGIS
 
 1. En su carpeta “Capacitación_SIG”, cree una __subcarpeta__ llamada “Mi_Primer_Proyecto”.
-2. Abrir __QGIS__
-3. Haga clic en `Project` -> ` New Project `
-4. En la esquina superior izquierda, haga clic en `Project` -> `Save as`, vaya a la carpeta de sus proyectos y guarde el proyecto como “Sesión 1”
-5. Haga clic en __guardar como__, vaya a la carpeta Proyectos y guarde el proyecto como “Mi_primer_proyecto”
-6. Abra su carpeta y compruebe el __archivo .qgz__ que acaba de crear.
+2. Abrir __QGIS__.
+3. Haga clic en `Proyecto` -> `Nuevo Proyecto`.
+4. En la esquina superior izquierda, haga clic en `Proyecto` -> `Guardar como`, vaya a la carpeta de sus proyectos y guarde el proyecto como “Sesión 1”.
+5. Abra su carpeta y compruebe el __archivo .qgz__ que acaba de crear.
 
 :::
 

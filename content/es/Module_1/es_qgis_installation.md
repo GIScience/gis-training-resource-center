@@ -12,7 +12,7 @@ En este capítulo, prepararemos la configuración para la capacitación. Esto in
 
 ## Guía rápida QGIS 3.34.12: instalación y configuración básica
 
-<iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="Youtube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Descarga e instalación de QGIS
 
@@ -21,7 +21,7 @@ QGIS es de código abierto y por lo tanto, está disponible de forma gratuita pa
 :::{Warning}
 
 Hay varias versiones de QGIS disponibles para descargar. Se recomienda utilizar la versión __Long Term Release__ porque es la más estable y contiene la menor cantidad de errores.
-La versión actual de __Long Term Release__ es __[QGIS 3.40.4. 'Bratislava'](https://qgis.org/download/)__
+La versión actual de __Long Term Release__ es __[QGIS 3.40.4. 'Bratislava'](https://qgis.org/download/)__.
 
 :::
 
@@ -29,12 +29,12 @@ La versión actual de __Long Term Release__ es __[QGIS 3.40.4. 'Bratislava'](htt
 
 1. Vaya a la [__página de descarga de QGIS__](https://www.qgis.org/en/site/forusers/download.html).
 2. Seleccione `Download for Windows`, `Download for macOS` o `Download for Linux`, en función de su sistema operativo.
-3. Haga clic en `Looking for the most stable version? Get QGIS 3.34 LTR`
+3. Haga clic en `Looking for the most stable version? Get QGIS 3.34 LTR`.
 
 :::{figure} /fig/QGIS_download_LTR_version.png
 ---
 width: 600 px
-name: QGIS_download_LTR_version
+name: es_QGIS_download_LTR_version
 align: center
 ---
 La página de descarga de QGIS 3.34.
@@ -83,8 +83,8 @@ _Processing Saga NextGen Provider_.
 
 Mantener organizados sus datos y archivos de proyecto es la clave para trabajar con éxito en el software de los SIG. Estos ejercicios en esta plataforma requieren que descargue datos geoespaciales y los procese por su cuenta. Para mantener todo organizado, le recomendamos que cree una estructura de carpetas para todos los datos y el material descargado en el curso de esta capacitación.
 
-- Cree una carpeta en la ubicación que elija con el nombre `GIS_Training`
-- Al descargar los datos de los ejercicios, cree subcarpetas para cada módulo y ejercicio de la capacitación (p. ej. `/GIS_Training/Module_1/Exercise_1`)
+- Cree una carpeta en la ubicación que elija con el nombre `Formacion_SIG`.
+- Al descargar los datos de los ejercicios, cree subcarpetas para cada módulo y ejercicio de la capacitación (p. ej. `/Formacion_SIG/Modulo_1/Ejercicio_1`).
 - Guarde todos los proyectos QGIS, así como el material descargado para los ejercicios en estas carpetas.
 
 En el [módulo 2](/content/es/Module_2/es_qgis_geodata_concept.md) se profundizará en la gestión de datos geoespaciales y se introducirá una estructura de carpetas estándar para proyectos QGIS.
