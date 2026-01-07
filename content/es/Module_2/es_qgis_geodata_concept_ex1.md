@@ -123,7 +123,7 @@ El GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contiene informació
 :::{admonition} Estructura de las carpetas
 :type: hint
 
-Mantenga la gestión de sus datos organizada creando una [estructura de carpetas estándar]() en su ordenador para sus proyectos QGIS y datos geográficos.
+Mantenga la gestión de sus datos organizada creando una [estructura de carpetas estándar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_management.html#estructura-de-carpetas-estandar) en su ordenador para sus proyectos QGIS y datos geográficos.
 Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fácilmente, así como el proyecto QGIS correspondiente
 
 :::
@@ -134,11 +134,11 @@ Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fá
    - __Descomprima la carpeta__ con los datos del ejercicio.
    - El GeoPackage (`.gpkg`) y el shapefile (`.shp`) pueden arrastrarse y soltarse sobre el lienzo del mapa en QGIS.
    - El archivo .csv debe importarse a través del menú de capas.
-      - Navegue hasta `Layer`> `Add Layer` > `Add delimited text layer`. Se abrirá una nueva ventana. Aquí puede seleccionar el archivo que desea importar haciendo clic en `...` a la derecha del campo __Nombre de archivo__ situado en la parte superior.
+      - Navegue hasta `Capa` > `Añadir capa` > `Añadir capa de texto delimitado`. Se abrirá una nueva ventana. Aquí puede seleccionar el archivo que desea importar haciendo clic en `...` a la derecha del campo __Nombre de archivo__ situado en la parte superior.
       - Navegue hasta la carpeta con los archivos de ejercicios y seleccione `sl-airports.csv`.
       - Haga clic en abrir. La ventana de importación CSV se actualizará y le mostrará una vista previa de la tabla CSV.
       - La tabla contiene información geográfica. Tendremos que especificar esto en __"Definición de geometría"__.
-         - Haga clic en `Point Coordinates` y seleccione `longitude_deg` como su __"campo X"__ y `latitude_deg` como su __"campo Y"__.
+         - Haga clic en `Coordenadas del punto` y seleccione `longitude_deg` como su __"campo X"__ y `latitude_deg` como su __"campo Y"__.
       - Haz clic en Agregar. Debería aparecer una nueva capa de puntos con los aeropuertos en el lienzo del mapa.
 
 
@@ -185,7 +185,7 @@ Para obtener información sobre una capa y sus proyecciones cartográficas, haga
 :::
 
 
-6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa --> `Export` --> `Save Features As..`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
+6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa --> `Exportar` --> `Guardar objetos seleccionados como...`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
 
 :::{figure} /fig/en_ex1_export_layer.PNG
 ---
@@ -198,7 +198,7 @@ Captura de pantalla de la ventana Exportar
 7. Guarde su proyecto.
 
 8. Opcional: Puede añadir el mapa base de OpenStreetMap a través de la ventana del navegador,
-   en `XYZ Tiles`.
+   en `Teselas XYZ`.
 
 :::{Note}
 

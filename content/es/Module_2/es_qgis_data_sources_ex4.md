@@ -118,7 +118,7 @@ Para nuestro siguiente análisis, queremos exportar la red vial del distrito de 
    seleccione la opción de crear una nueva cuenta.
 2. Si tiene una cuenta de OSM, puede acceder directamente a la herramienta de exportación HOT haciendo
    clic en `Log in`.
-3. Ahora podemos empezar a crear una exportación de OSM. Para ello, haga clic `Start Exporting`. Se le dirigirá a la herramienta de exportación.
+3. Ahora podemos empezar a crear una exportación de OSM. Para ello, haga clic `Start Exporting` (*Empezar a exportar). Se le dirigirá a la herramienta de exportación.
 
 :::{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
 ---
@@ -181,15 +181,15 @@ En el siguiente ejercicio de la serie de ejercicios para la respuesta ante inund
 5. Disponga las capas en el mapa de forma que pueda ver la nueva capa.
 6. (Opcional) Utilice la función de clasificación para obtener una mejor
    visión general:
-    * Haga clic derecho en la capa `Larkana_Roads` en el panel `Layer Panel`
-          -> `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales
-          a la izquierda. Navegue hasta la pestaña `Symbology`.
-    * En la parte superior, encontrará un menú desplegable. Despliéguelo y elija `Categorized`.
-          En `Value` seleccione la carretera como “highway”.
-    * Más abajo, haga clic en `Classify`.  Ahora debería ver todos los valores
+    * Haga clic derecho en la capa `Larkana_Roads` en el panel de capas
+          -> `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales
+          a la izquierda. Navegue hasta la pestaña `Simbología`.
+    * En la parte superior, encontrará un menú desplegable. Despliéguelo y elija `Categorizado`.
+          En `Valor` seleccione la carretera como “highway”.
+    * Más abajo, haga clic en `Classificar`.  Ahora debería ver todos los valores
           únicos o atributos de la columna seleccionada.  Puede ajustar los
           colores haciendo doble clic en una fila del campo central. Una vez que haya
-          terminado, haga clic en `Apply` y `OK` para cerrar la ventana de simbología.
+          terminado, haga clic en `Apliquar` y `Aceptar` para cerrar la ventana de simbología.
 
 Como puede ver, la herramienta de exportación HOT ofrece una buena combinación de flexibilidad y
 acceso rápido a los datos de OSM.
@@ -231,10 +231,10 @@ El plugin QuickOSM le permite cargar datos de OSM desde su ventana de QGIS. Es u
 Deberá formular una consulta de datos para encontrar los datos que busca. Para adaptar su consulta en función de la clave y el valor exactos que necesita, existen dos excelentes recursos:
 
 1. [Wiki de OSM](https://wiki.openstreetmap.org/wiki/Main_Page) y, especialmente, el
-artículo sobre    [entidades del mapa](https://wiki.openstreetmap.org/wiki/Map_features).
+artículo sobre [entidades del mapa](https://wiki.openstreetmap.org/wiki/Map_features).
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el plugin de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html).
+Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el complemento de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html).
 
 | Ventajas | Desventajas |
 |---|---|
@@ -247,7 +247,7 @@ Este método tiene la ventaja de que se pueden descargar los datos que se necesi
 :::{card}
 __Intercambio de Datos Humanitarios (exportaciones HOT)__
 ^^^
-Una forma rápida y sencilla de obtener datos específicos de OSM, como la red vial o la ubicación de centros de salud, es buscar los datos en [Intercambio de Datos Humanitarios (HDX)](https://data.humdata.org/).
+Una forma rápida y sencilla de obtener datos específicos de OSM, como la red vial o la ubicación de centros de salud, es buscar los datos en el[Humanitarian Data Exchange (HDX)](https://data.humdata.org/).
 
 Aquí, el Equipo Humanitario de OpenStreetMap proporciona exportaciones de OSM para los países. La desventaja de este método es que, como las exportaciones son por países, los conjuntos de datos suelen ser bastante grandes y difíciles de manejar con QGIS.
 

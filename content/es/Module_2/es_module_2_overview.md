@@ -10,7 +10,7 @@
 
 El segundo módulo profundiza en el conocimiento de los datos geoespaciales, las capas y las proyecciones cartográficas. Estos tres conceptos son fundamentales para los SIG y necesitará una sólida comprensión de ellos para desarrollar más habilidades en SIG. El módulo comienza explicando los datos geoespaciales, introduciendo el concepto de capa y cómo importarlos en QGIS. El segundo capítulo introducirá el tema de las proyecciones cartográficas y los sistemas de referencia de coordenadas. Visualizar el mundo en una superficie plana no es fácil y, dependiendo de su caso de uso, tendrá que seleccionar las proyecciones cartográficas adecuadas. El tercer capítulo aborda la gestión de los datos geoespaciales. Mantener organizados sus proyectos, conjuntos de datos y archivos es esencial para producir los resultados correctos, ahorrarle mucho tiempo y garantizar la reproducibilidad de sus análisis. El cuarto capítulo se centra en la tabla de atributos y en cómo seleccionar las entradas de datos (las denominadas entidades geográficas). El próximo capítulo le introducirá en el arte de encontrar datos en la web, así como en algunas bases de datos en las que puede empezar a buscar datos. Para finalizar, en el último capítulo se presentan los mapas base, una función pequeña pero muy útil al consultar datos geoespaciales o crear mapas. Los mapas base permiten visualizar un mapa de fondo (por ejemplo, imágenes satelitales o mapas topográficos) sin tener todas las diferentes capas de datos geoespaciales necesarias para dicho mapa en su computadora.
 
-:::{list-table} Contenido del módulo 1
+:::{list-table} Contenido del módulo 2
 :header-rows: 1
 :widths: 150 600
 

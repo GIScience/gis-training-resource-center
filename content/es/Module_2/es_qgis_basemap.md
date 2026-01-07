@@ -41,9 +41,9 @@ en QGIS.
 
 Hay dos formas de añadir OpenStreetMap como mapa base:
 
-1. En el panel `Browser`, busque `XYZ Tiles`. Abra el menú desplegable haciendo
+1. En el panel `Navegador`, busque `Taselas XYZ`. Abra el menú desplegable haciendo
    clic en la flecha que aparece junto a él y seleccione OpenStreetMap.
-2. En el menú `Layer` -> `Add Layer` -> `Add XYZ layer...` -> seleccione OpenStreetMap.
+2. En el menú `Capa` -> `Añadir Capa` -> `Añadir capa XYZ...` -> seleccione OpenStreetMap.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
@@ -57,8 +57,8 @@ QGIS, como las imágenes satelitales de Bing o Sentinel-2.
 
 ::::{dropdown} Instalación de complementos
 
-Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Plugins` -> `Manage and Install Plugins…` -> `All` ->
-Busque el plugin -> `Install Plugin`.
+Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Complementos` -> `Administrat e instalar complementos` -> `Todos` ->
+Busque el plugin -> `Instalar complemento`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -86,7 +86,7 @@ Configuración del Gestor de complementos para mostrar complementos experimental
 Para añadir un mapa base desde el plugin QuickMapServices:
 
 1. En el menú principal de la barra superior de la pantalla, navegue a `Web` > `QuickMapServices`.
-2. Haga clic en `Search QMS`. Se abrirá un nuevo panel, probablemente en la parte inferior derecha.
+2. Haga clic en `Search NextGIS QMS`. Se abrirá un nuevo panel, probablemente en la parte inferior derecha.
 3. Aquí puede buscar el mapa base que desee. Por ejemplo, Bing Aerial, diferentes versiones de OpenStreetMap, imágenes satelitales de Sentinel-2.
 
 :::{Tip}
@@ -123,8 +123,8 @@ Un mapa base es una capa de mapa fundamental o de fondo que proporciona un conte
 2. __¿Cómo se añade un mapa base a QGIS? Describa al menos un método (plugin, XYZ tiles, etc.).__
 
 :::{dropdown} Respuesta
-- En el panel `Browser`, expandir el grupo de las teselas “*XYZ Tiles*” y seleccionar un servicio como OpenStreetMap.
-- Alternativamente, [instalar el plugin QuickMapServices](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_basemap.html#quickmapservices) y utilizarlo para añadir un mapa.
+- En el panel `Navegador`, expandir el grupo de las teselas “*XYZ Tiles*” y seleccionar un servicio como OpenStreetMap.
+- Alternativamente, [instalar el complemento QuickMapServices](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_basemap.html#quickmapservices) y utilizarlo para añadir un mapa.
 :::
 
 3. __¿Qué son los requisitos de atribución y cómo hay que gestionarlos cuando se utilizan mapas base de terceros?__

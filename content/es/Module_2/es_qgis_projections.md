@@ -12,13 +12,13 @@
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Una cuestión importante a la hora de crear un mapa de una región, es que es imposible crear una representación de una esfera en un plano 2D sin distorsionar el mapa. La transformación de un objeto 3D en una superficie plana puede realizarse con ayuda de una __proyección cartográfica__. A lo largo de los siglos, los cartógrafos y los matemáticos han desarrollado una multitud de métodos diferentes para proyectar la Tierra sobre una superficie plana ({numref}`en_examples_projections_IBIS`). Sin embargo, nunca es posible representar correctamente el mundo en una superficie plana (consulte el video anterior). Toda proyección cartográfica distorsiona la longitud entre dos puntos, los ángulos entre dos líneas (direcciones) o el tamaño de un área. Una proyección cartográfica sólo puede representar correctamente una de estas tres dimensiones. Esto significa que, según método de proyección cartográfica, su mapamundi no representará correctamente el tamaño, los ángulos o las distancias.
+Una cuestión importante a la hora de crear un mapa de una región, es que es imposible crear una representación de una esfera en un plano 2D sin distorsionar el mapa. La transformación de un objeto 3D en una superficie plana puede realizarse con ayuda de una __proyección cartográfica__. A lo largo de los siglos, los cartógrafos y los matemáticos han desarrollado una multitud de métodos diferentes para proyectar la Tierra sobre una superficie plana ({numref}`es_examples_projections_IBIS`). Sin embargo, nunca es posible representar correctamente el mundo en una superficie plana (consulte el video anterior). Toda proyección cartográfica distorsiona la longitud entre dos puntos, los ángulos entre dos líneas (direcciones) o el tamaño de un área. Una proyección cartográfica sólo puede representar correctamente una de estas tres dimensiones. Esto significa que, según método de proyección cartográfica, su mapamundi no representará correctamente el tamaño, los ángulos o las distancias.
 
 :::{figure} /fig/en_examples_projections_IBIS.png
 ---
 width: 700px
 align: center
-name: en_examples_projections_IBIS
+name: es_examples_projections_IBIS
 ---
 Ejemplos de proyecciones cartográficas (fuente desconocida. Esta figura se incluye únicamente con fines ilustrativos y no está sujeta a la licencia Creative Commons de esta plataforma).
 :::
@@ -98,11 +98,11 @@ Esta tabla muestra una visión general sobre qué proyecciones cartográficas ut
 | Rotación | ✅ | ✅ | ❌ |
 | Zona | ❌ | ✅ | ✅ |
 
-Otra consideración muy importante a la hora de elegir el sistema de referencia de coordenadas es que, dependiendo del elipsoide y del método utilizado para proyectar, un mismo punto puede estar situado en lugares diferentes (véase {numref}`wrong_CRS`). En la figura siguiente, el mismo punto se codifica en 3 sistemas de referencia diferentes.
+Otra consideración muy importante a la hora de elegir el sistema de referencia de coordenadas es que, dependiendo del elipsoide y del método utilizado para proyectar, un mismo punto puede estar situado en lugares diferentes (véase {numref}`es_wrong_CRS`). En la figura siguiente, el mismo punto se codifica en 3 sistemas de referencia diferentes.
 
 :::{figure} /fig/wrong_CRS.png
 ---
-name: wrong_CRS
+name: es_wrong_CRS
 width: 750 px
 ---
 El mismo punto en tres sistemas de referencia diferentes (fuente: HeiGIT).
@@ -129,7 +129,7 @@ Una representación geográfica del globo terráqueo. La distancia entre los mer
 
 :::{caution}
 
-Al procesar los datos geográficos, el QGIS siempre utiliza las unidades de medida de la capa que está procesando. Esto significa que si desea calcular, por ejemplo, la distancia en kilómetros, la capa debe estar en un SRC métrico. Puede comprobar las unidades de medida de cualquier capa haciendo <kbd>clic con el botón derecho</kbd> sobre la capa en el panel de capas > `Properties` > `Information` > `Coordinate Reference System (CRS)`.
+Al procesar los datos geográficos, el QGIS siempre utiliza las unidades de medida de la capa que está procesando. Esto significa que si desea calcular, por ejemplo, la distancia en kilómetros, la capa debe estar en un SRC métrico. Puede comprobar las unidades de medida de cualquier capa haciendo <kbd>clic con el botón derecho</kbd> sobre la capa en el panel de capas > `Propriedades` > `Información` > `Sistema de referencia de coordenadas (SRC)`
 
 :::
 
@@ -162,9 +162,9 @@ Una de las primeras cosas que debe hacer al iniciar un nuevo proyecto QGIS es co
 
 
 1. Abrir un proyecto QGIS
-2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `Current CRS`![](/fig/EPSG_Code.png).
-3. Se abrirá la ventana `Project Properties`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
-4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Apply`.
+2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `SRC actual`![](/fig/EPSG_Code.png).
+3. Se abrirá la ventana `Propriedades del proyecto`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
+4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Aplicar`.
 
 
 :::{dropdown} Video: Cómo comprobar y cambiar el SRC en su proyecto QGIS
@@ -186,11 +186,11 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa vectorial
 
-1. Pestaña `Vector` -> `Data Management Tools` -> `Reproject Layer`
+1. Pestaña `Vectorial` -> `Data Management Tools` -> `Reproyectar capa`
 2. Seleccione el código SRC/EPSG de destino.
-3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reprojected`,
+3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reproyectada`,
    especifique el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Run`
+5. Haga clic en `Ejecutar`
 
 :::{dropdown} Video: Cómo cambiar el SRC de un vector una capa
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
@@ -198,12 +198,12 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa ráster
 
-1. Pestaña `Raster` -> `Projections` -> `Warp (Reproject)`
+1. Pestaña `Ráster` -> `Projections` -> `Combar (reproyectar)`
 2. Seleccione el código SRC/EPSG de destino
 3. Seleccione el método de remuestreo
-4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reprojected`, especifique en
+4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectada`, especifique en
    el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Run`
+5. Haga clic en `Ejecutar`
 
 :::{dropdown} Video: Cómo cambiar el SRC de una capa ráster
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
@@ -263,9 +263,9 @@ Tómese un momento para poner a prueba lo que ha aprendido en este capítulo res
 
 :::{dropdown} Respuesta
 
-1. En la barra superior, navegue hasta el menú `Vector` → `Data Management Tools` → `Reproject Layer`
+1. En la barra superior, navegue hasta el menú `Vectorial` → `Data Management Tools` → `Reproyectar capa`
 2. En la ventana de parámetros, seleccione el SRC de destino (mediante la búsqueda del código EPSG o el nombre)
-3. Hacer clic en `Run`. Se añadirá una nueva capa llamada `Reprojected` al lienzo del mapa
+3. Hacer clic en `Ejecutar`. Se añadirá una nueva capa llamada `Reproyectada` al lienzo del mapa
 
 :::
 

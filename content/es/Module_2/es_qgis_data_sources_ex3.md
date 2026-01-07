@@ -173,7 +173,7 @@ La mayoría de las veces, los conjuntos de datos que se descargan de Internet es
 
 
 7. Ahora añada el mapa base de OpenStreetMap a través de la ventana del navegador >
-`XYZ Tiles`. Añadir mapas base puede ayudarle a orientarse, comprender mejor el área de interés y crear mapas más informativos.
+`Teselas XYZ`. Añadir mapas base puede ayudarle a orientarse, comprender mejor el área de interés y crear mapas más informativos.
 
 8. Familiarícese con los datos abriendo la tabla de atributos e identifique los distintos tipos de asistencia médica que se incluyen en el conjunto de datos. Obtenga una visión general de la información que se almacena en cada columna. Por ejemplo, podría haber información que indique el tipo de centro de salud.
 

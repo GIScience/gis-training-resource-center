@@ -155,7 +155,7 @@ __Plugin QuickOSM__
 
 :::{tip}
 
-Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Elija `OpenStreetMap` y haga clic en `Add` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps)).
+Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Capa` -> `Añadir Capa` -> `Añadir Capa XYZ...`. Elija `OpenStreetMap` (Esto debería ser la opción predeterminada) y haga clic en `Añadir` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps)).
 
 :::
 
@@ -165,8 +165,8 @@ Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  H
 El plugin QuickOSM facilita descargar los datos dese OpenStreetMap e incorporarlos
 a su proyecto en QGIS.
 
-1. Instale el plugin QuickOSM haciendo clic en la pestaña `Plugin`, -> `Manage and Install Plugins…` -> `All` -> busque “QuickOSM” -> `Install Plugin`
-2. Para abrir QuickOSM, haga clic en la pestaña `Vector` -> `QuickOSM` -> `QuickOSM`
+1. Instale el plugin QuickOSM haciendo clic en la pestaña `Complementos`, -> `Administrar e instalar complementos...` -> `Todos` -> busque “QuickOSM” -> `Instalar complemento`
+2. Para abrir QuickOSM, haga clic en la pestaña `Vectorial` -> `QuickOSM` -> `QuickOSM...`
 
 Para trabajar de forma eficiente con QuickOSM, es esencial tener una comprensión básica del modelo de datos de OSM. Aquí hay una breve explicación:
 
@@ -180,7 +180,8 @@ Por ejemplo, consideremos los hospitales. Si bien lo ideal sería que todos los 
 
 Siga los pasos para obtener los datos:
 
-1. Seleccione una clave y un valor en la lista desplegable. Si tiene la certeza, consulte aquí:
+1. Haga <kbd>clic</kbd> en la pesteña "Constulta rapidá". 
+2. Seleccione una clave y un valor en la lista desplegable. Si tiene la certeza, consulte aquí:
 
 :::{figure} /fig/key_value_quickosm.png
 ---
@@ -191,24 +192,24 @@ name: key_value_quickosm
 Elegir la clave y el valor en QuickOSM.
 :::
 
-2. Limite el área escribiendo el nombre de su área de interés. También puede
-   elegir desde el menú desplegable `Canvas Extent` o `Layer Extent` en lugar del nombre
+3. Limite el área escribiendo el nombre de su área de interés. También puede
+   elegir desde el menú desplegable `Extensión de capa` o `Extensión del lienzo ` en lugar del nombre
    de una ciudad o país.
 
-3. Despliegue la pestaña `Advanced`. Solo seleccione los tipos de datos que espera para
-   minimizar los errores.
+4. Despliegue la pestaña `Avanzado`. Solo seleccione los tipos de datos que espera para
+   minimizar los errores. Por ejemplo, si sabes que estás buscando carreteras, puedes buscar líneas (vías); si buscas hospitales, puedes seleccionar "puntos".
    <!-- CLARIFY: would be useful to have an example here -->
 
 :::{figure} /fig/quickosm_usage.png
 ---
 width: 800px
-name: quickosm_usage
+name: es_quickosm_usage
 align: center
 ---
 Ejecutar el plugin QuickOSM.
 :::
 
-4. Haga clic en `Run query`.
+4. Haga clic en `Ejecutar consulta`.
 
 :::{dropdown} Cómo obtener datos para varias consultas
 

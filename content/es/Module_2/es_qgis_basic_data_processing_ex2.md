@@ -141,7 +141,7 @@ Los archivos GeoJSON no admiten múltiples capas, por lo que los polígonos de l
 3. Familiarícese con los datos abriendo la tabla de atributos. Determinar la ubicación de los datos y el tipo de información que contienen. Comprenda las distintas columnas y los datos que contienen en su tabla de atributos e intente hacerse una idea general de qué columnas serán relevantes e importantes para su análisis.
 
 4. En la capa `nigeria_populated_places`, abra la tabla de atributos, seleccione
-   la entidad para **Zuyel** y haga zoom al punto seleccionado.
+   el objeto para **Zuyel** y haga zoom al punto seleccionado.
 
 :::{Hint}
 El lugar comienza con una *Z* por lo que podría ser de ayuda ordenar la columna `name` en
@@ -157,9 +157,7 @@ Dado que no se realizan cálculos, p. ej., de área, WGS84 (EPSG:4326) es una bu
 
 
 6. Repita los pasos para la capa `nigeria_boundaries.geojson` y exporte únicamente
-el distrito en el que se encuentra **Zuyel**. Nómbrelo como corresponda. Para encontrar el distrito utilice la herramienta ![](/fig/qgis_identify_features.png) `Identify Features` y después seleccione manualmente el distrito correcto en la tabla de atributos.
-<!-- FIXME: Exercises should be used to test what has been shown in a section,
-	rather than introduce new functionality -->
+el distrito en el que se encuentra **Zuyel**. Nómbrelo como corresponda. Para encontrar el distrito utilice la herramienta ![](/fig/qgis_identify_features.png) `Identificar objetos espaciales` y después seleccione manualmente el distrito correcto en la tabla de atributos.
 
 7. Elimine todas las capas iniciales y, a continuación, abra la tabla de atributos de cada una de las nuevas capas y compruebe que cada capa solo contiene una entidad.
 
