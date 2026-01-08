@@ -22,7 +22,7 @@ Si quiere saber cómo el mapeo comunitario y la digitalización pueden ayudar a 
 ---
 width: 900px
 align: center
-name: en_digitisation_concept
+name: es_digitisation_concept
 ---
 El concepto de digitalización en los SIG (fuente: HeiGIT).
 :::
@@ -45,17 +45,15 @@ Se ha producido una inundación en un pueblo como consecuencia de las fuertes ll
 ---
 width: 300px
 align: left
-name: Activate digitising Toolbar
+name: es_Activate digitising Toolbar
 ---
 La barra de herramientas de digitalización en QGIS 3.36.
 :::
 
-La digitalización se realiza con la `Digitizing Toolbar` y en el lienzo del mapa.
-En primer lugar, debe comprobar si `Digitizing Toolbar` está activado. Para ello,
-* haga clic en la pestaña `View` de la barra de menús y luego en `Toolbars`. Compruebe si las barras de herramientas `Digitizing` y `Advanced Digitizing` están activadas.
+La digitalización se realiza con la barra de herramientas `Digitalización` y en el lienzo del mapa.
+En primer lugar, debe comprobar si la barra de herramientas `Digitalización` está activado. Para ello,
+1. Haga clic en la pestaña `Ver` de la barra de menús y luego en `Barra de herramientas`. Compruebe si las barras de herramientas `Digitalización` y `Digitalización avanzada` están activadas.
 
-En primer lugar, debe comprobar si `Digitizing Toolbox` está activado. Para ello,
-1. Haga clic en la pestaña `View` de la barra de menús y luego en `Toolbars`. Compruebe si las cajas de herramientas `Digitizing` y `Advanced Digitizing` están activadas.
 
 2. En la parte superior de la interfaz de QGIS debería aparecer un recuadro de herramientas.
 
@@ -65,12 +63,12 @@ En primer lugar, debe comprobar si `Digitizing Toolbox` está activado. Para ell
 
 <br>
 
-La barra de herramientas de digitalización ofrece las herramientas básicas para crear, guardar y editar entidades. Sin embargo, para todo lo que va más allá de la simple creación de nuevas entidades y la eliminación de entidades, se necesita la barra de herramientas Advanced Digitization (véase {numref}`digitising_toolbar`). Esta última sirve para mover entidades, eliminar partes de entidades y mucho más. Todas las funciones se enumeran en las dos tablas que figuran abajo.
+La barra de herramientas de digitalización ofrece las herramientas básicas para crear, guardar y editar entidades. Sin embargo, para todo lo que va más allá de la simple creación de nuevas entidades y la eliminación de entidades, se necesita la barra de herramientas Advanced Digitization (véase {numref}`es_digitising_toolbar`). Esta última sirve para mover entidades, eliminar partes de entidades y mucho más. Todas las funciones se enumeran en las dos tablas que figuran abajo.
 
 :::{figure} /fig/Toolbox.png
 ---
 width: 700 px
-name: digitising_toolbar
+name: es_digitising_toolbar
 align: center
 ---
 Barra de herramientas de digitalización en QGIS 3.36.
@@ -132,22 +130,22 @@ Piense en un conjunto de datos espaciales que podría necesitar en sus operacion
 
 :::
 
-1. `Layer` --> `Create Layer` -> `New GeoPackage Layer` o `New Shapefile Layer`
+1. `Capa` --> `Crear capa` -> `Nueva capa GeoPackage` o `Nueva capa de archivo Shape...`
 2. Haga clic en ![](/fig/Three_points.png) junto al campo de entrada `file name` y vaya a la carpeta en la que desea guardar el conjunto de datos.
-3. `File encoding`: Asegúrese de que está configurado como UTF-8.
-4. `Geometry type`: Seleccione el tipo de entidad que desea digitalizar, p. ej., puntos o líneas.
-5. En `Additional dimension` debe asegurarse siempre de que `None` está marcada. Excepto si existe la posibilidad de recoger también los valores Z (elevación). Pero en la mayoría de los casos no es así.
+3. `Codificación de archivo`: Asegúrese de que está configurado como UTF-8.
+4. `tipo de geometría`: Seleccione el tipo de entidad que desea digitalizar, p. ej., puntos o líneas.
+5. En `Dimensiones adicionales ` debe asegurarse siempre de que `Nada` está marcada. Excepto si existe la posibilidad de recoger también los valores Z (elevación). Pero en la mayoría de los casos no es así.
 6. Lista desplegable del SRC: Seleccione el EPSG/SRC que desea establecer para la nueva capa. Por defecto, QGIS selecciona el SRC del proyecto. Si desea cambiarlo, haga clic en ![](/fig/mIconProjectionEnabled.png).
-7. En `New Field` puede añadir columnas a la nueva capa. Aquí puede configurar qué otro tipo de datos desea recopilar en este conjunto de datos.
-    * `Type`: Seleccione el tipo de datos que tendrá la columna, p. ej. `Text`, `Whole number`, `Decimal Number`, `Date`.
-    * Haga clic en ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
-8. Haga clic en `OK` para crear los nuevos datos.
+7. En `Nuevo campo` puede añadir columnas a la nueva capa. Aquí puede configurar qué otro tipo de datos desea recopilar en este conjunto de datos.
+    * `Tipo`: Seleccione el tipo de datos que tendrá la columna, p. ej. `Texto (cadena)`, `Entero (32 bit)`, `Decimal (doble)`, `Fecha`.
+    * Haga clic en ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a lista de campos.
+8. Haga clic en `Aceptar` para crear los nuevos datos.
 
 
 :::{figure} /fig/New_GeoPackage_Layer.png
 ---
 width: 500px
-name: new_gpgk_layer
+name: es_new_gpgk_layer
 align: center
 ---
 La ventana de creación de capas en QGIS 3.36.
@@ -155,7 +153,7 @@ La ventana de creación de capas en QGIS 3.36.
 
 
 :::{attention}
-Un concepto importante que hay que entender antes de empezar a añadir datos a los conjuntos de datos es que, siempre que se realicen cambios en un conjunto de datos que no sean de estilo, hay que activar el modo de edición. Para ello, seleccione la capa y haga clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Ahora es posible hacer clic en los botones de muchas funciones de la barra de herramientas de digitalización. Cuando haya terminado de manipular la capa, haga clic en ![](/fig/mActionSaveEdits.png) `Save Layer Edits` para guardar los cambios.
+Un concepto importante que hay que entender antes de empezar a añadir datos a los conjuntos de datos es que, siempre que se realicen cambios en un conjunto de datos que no sean de estilo, hay que activar el modo de edición. Para ello, seleccione la capa y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición`. Ahora es posible hacer clic en los botones de muchas funciones de la barra de herramientas de digitalización. Cuando haya terminado de manipular la capa, haga clic en ![](/fig/mActionSaveEdits.png) `Guardar cambios de la capa` para guardar los cambios.
 :::
 
 Una vez configurada la nueva capa, puede empezar a añadir entidades geométricas. El proceso para los tres tipos geométricos es básicamente el mismo:
@@ -163,16 +161,16 @@ Una vez configurada la nueva capa, puede empezar a añadir entidades geométrica
 ### Crear nuevas entradas de datos.
 
 1. Seleccione la capa a la que se desea añadir datos en el panel Layer.
-2. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](/fig/mActionToggleEditing.png) de la
+2. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](/fig/mActionToggleEditing.png) de la
 barra de herramientas de digitalización.
 
 ### Crear datos de punto
 
 1.	Seleccione la capa de puntos a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](/fig/mActionToggleEditing.png) de la barra de herramientas de digitalización.
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](/fig/mActionToggleEditing.png) de la barra de herramientas de digitalización.
 3.	Haga clic en ![](/fig/mActionCapturePoint.png).
 4.	Haga clic izquierdo en la entidad que desea digitalizar.
-5.	Al hacer clic, aparecerá una ventana `[Your Layer Name]- Feature Attribute`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
+5.	Al hacer clic, aparecerá una ventana `[Nombre de la capa]- Añadir atributos`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
 5.	Una vez que haya terminado la digitalización, ![](/fig/mActionSaveEdits.png) para guardar los cambios.
 6.	Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
@@ -183,7 +181,7 @@ barra de herramientas de digitalización.
 :::{figure} /fig/point_creation.png
 ---
 width: 750 px
-name: point_creation
+name: es_point_creation
 align: center
 ---
 Creación de puntos.
@@ -203,14 +201,14 @@ A veces la forma más fácil de obtener las coordenadas de un lugar, como la ofi
 ---
 width: 250 px
 align: right
-name: en_google_maps_rightclick_coords
+name: es_google_maps_rightclick_coords
 ---
 :::
 
 1. En Google Maps, localice el punto que desea añadir a su proyecto de QGIS.
 2. Haga clic derecho en el punto y seleccione las coordenadas. Se copiarán automáticamente en el portapapeles.
 3. Vaya a su proyecto de QGIS y pegue las coordenadas en la barra de búsqueda de la esquina inferior izquierda de la ventana de QGIS.
-4. Seleccione `Go to [Your coordinates] (EPSG 4326: WGS 84)`.
+4. Seleccione `Ir a coordenada`.
 5. El punto de coordenadas parpadeará en rojo en el lienzo del mapa.
 ::::
 
@@ -233,7 +231,7 @@ Intente digitalizar las oficinas de la Cruz Roja y la Media Luna Roja de su paí
 7. Haga clic en ![](/fig/mActionCapturePoint.png).
 8. Añada la entidad de punto en la ubicación indicada.
 9. Añada el nombre de la oficina.
-10. Haga clic en `Ok`.
+10. Haga clic en `Aceptar`.
 11. Haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
 12. Haga clic en ![](/fig/mActionToggleEditing.png) para salir del modo de edición.
 
@@ -257,9 +255,9 @@ La creación de datos de líneas funciona de la misma manera que la creación de
 2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
 3.	Haga clic en ![](/fig/mActionCaptureLine.png).
 4.	Para digitalizar entidades de línea, haga clic a lo largo de la línea. Cuando haya terminado, haga clic derecho en el último punto de la línea para finalizar la entidad.
-5.	Aparecerá una ventana `[Your Layer Name]- Feature Attribute`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
-6.	Una vez que haya terminado la digitalización, haga clic en ![](/fig/mActionSaveEdits.png) `Save Layer Edits` para guardar los cambios.
-7.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing` para salir del modo de edición.
+5.	Aparecerá una ventana `[Nombre de capa]- Atributos del objeto espacial`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
+6.	Una vez que haya terminado la digitalización, haga clic en ![](/fig/mActionSaveEdits.png) `Guardar modificaciones de la capa` para guardar los cambios.
+7.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición` para salir del modo de edición.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
@@ -273,7 +271,7 @@ La creación de capas de polígonos funciona del mismo modo que para los datos d
 2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
 3.	Haga clic en ![](/fig/mActionCapturePolygon.png).
 4.	Para digitalizar entidades poligonales, haga clic izquierdo alrededor del área que desea digitalizar. Cuando haya terminado, haga clic derecho en el último punto del área para finalizar la entidad.
-5.	Aparecerá una ventana `[Your Layer Name]- Feature Attribute`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
+5.	Aparecerá una ventana `[Nombre de la capa] - Atributos del objeto espacial`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
 6.	Una vez que haya terminado la digitalización, ![](/fig/mActionSaveEdits.png) para guardar los cambios.
 7.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing` para salir del modo de edición.
 
@@ -317,7 +315,7 @@ Tenga en cuenta que esto solo es posible __antes__ de guardar los cambios.
 ::::{tab-item} Eliminar entidades
 
 1.	Seleccione la capa que desea modificar.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing`.
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar Edición`.
 3.	Haga clic en ![](/fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#manual-selection)).
 4.	Una vez seleccionadas las entidades, haga clic en ![](/fig/mActionDeleteSelectedFeatures.png) para eliminarlas.
 5.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
@@ -440,7 +438,7 @@ Es útil porque nos permite realizar análisis espaciales y obtener información
 2. __¿Cómo se crea un nuevo conjunto de datos vectoriales?__
 
 :::{dropdown} Respuesta
-1. En la barra superior, vaya al menú `Layer` → `Create Layer` → `New GeoPackage Layer` o `New Shapefile Layer`.
+1. En la barra superior, vaya al menú `Capa` → `Crear capa` → `Nueva capa GeoPackage` o `Nueva capa de archivo Shape...`.
 2. Especifique las propiedades de la capa.
     - Especifique la ruta y el nombre del archivo.
     - **Codificación**: UTF-8 (permite caracteres especiales).

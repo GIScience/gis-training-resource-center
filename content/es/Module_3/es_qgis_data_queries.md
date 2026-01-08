@@ -35,12 +35,12 @@ __Descargar Official Boundaries del Banco Mundial__
 
 ## Selección manual
 
-La selección manual se realiza principalmente mediante una de las herramientas de selección basadas en clics disponibles en la barra de herramientas del proyecto (alternativa: `Edit` > `Select`). Entre ellas figuran `Select Feature(s)`, `Select Feature by Polygon`, `Select Feature by Freehand` y `Select Feature by Radius`.
+La selección manual se realiza principalmente mediante una de las herramientas de selección basadas en clics disponibles en la barra de herramientas del proyecto (alternativa: `Editar` > `Seleccionar`). Entre ellas figuran `Seleccionar objeto(s) espacial(es)`, `Seleccionar objetos espaciales por polígono`, `Seleccionar objetos especiales a mano alzada` y `Seleccionar objetos espaciales por radio`.
 \
 \
-Ejemplo: `Select Feature(s)`
+Ejemplo: `Seleccionar objeto(s) espacial(es)`
 
-1.	Haga clic en `Select Feature(s)` en el menú desplegable de ![](/fig/mActionSelectRectangle.png).
+1.	Haga clic en `Seleccionar objeto(s) espacial(es)` en el menú desplegable de ![](/fig/mActionSelectRectangle.png).
 2.	Seleccione las entidades haciendo clic en ellas o dibujando un rectángulo que se superponga a ellas.
 3.	Utilice la herramienta fuera de las entidades seleccionables para finalizar la selección.
 
@@ -57,7 +57,7 @@ Si mantiene presionada la tecla “Shift” durante la selección por clic, podr
 
 Las otras opciones de ![](/fig/mActionSelectRectangle.png) funcionan de forma similar, seleccionando todas las entidades que se superponen con la geometría respectiva generada por las herramientas.
 
-1. Haga clic en `Select Feature(s) by Polygon` en el menú desplegable de ![](/fig/mActionSelectRectangle.png).
+1. Haga clic en `Seleccionar objetos espaciales por polígono` en el menú desplegable de ![](/fig/mActionSelectRectangle.png).
 2. Seleccione las entidades haciendo clic izquierdo alrededor de las entidades que desea seleccionar.
 3. Haga clic derecho cuando haya terminado de dibujar el polígono.
 
@@ -74,15 +74,15 @@ Las entidades seleccionadas se resaltan en amarillo brillante en la vista geoesp
 
 ## Selección por atributos
 
-Se puede realizar una consulta basada en atributos específicos utilizando la herramienta `Select Features by Expression` disponible en ![](/fig/mActionSelectbyExpression.png) en la barra de herramientas del proyecto y la tabla de atributos (alternativa: `Edit` > `Select` > `Select` Entidades por expresión).
+Se puede realizar una consulta basada en atributos específicos utilizando la herramienta `Seleccionar por expresión` disponible en ![](/fig/mActionSelectbyExpression.png) en la barra de herramientas del proyecto y la tabla de atributos (alternativa: `Editar` > `Seleccionar` > `Seleccionar por expresión`).
 
-1.	En la interfaz de herramientas, amplíe `Fields and Values` en el panel derecho.
+1.	En la interfaz de herramientas, amplíe `Campos y Valores` en el panel derecho.
 2.	Elija el campo en el que desea basar su selección haciendo doble clic sobre él (ahora debería aparecer en el panel de expresión de la izquierda).
 3.	Utilice una expresión con operadores particulares para especificar su selección en el panel izquierdo (p. ej., “'continent' LIKE 'Asia'” para seleccionar todas las entidades con el valor “Asia” en el campo “continente” ).
 
 
 :::{Tip}
-Haga clic en `Show Values` en la esquina superior derecha cuando se selecciona un campo para obtener una visión general sobre los diferentes valores del campo respectivo haciendo clic en `All Unique`/`10 Samples`. Haga doble clic en los valores para utilizarlos en el panel de expresiones de la izquierda.
+Haga clic en `Mostrar valores` en la esquina superior derecha cuando se selecciona un campo para obtener una visión general sobre los diferentes valores del campo respectivo haciendo clic en `Todos Únicos`/`10 Muestras`. Haga doble clic en los valores para utilizarlos en el panel de expresiones de la izquierda.
 :::
 
 ::::{tab-set}
@@ -125,7 +125,7 @@ Se pueden utilizar operadores como AND u OR para combinar diferentes consultas o
 :::
 
 ## Selección espacial por capas
-La selección espacial de entidades permite seleccionar partes de una capa según su relación con entidades de otra capa geoespacial (p. ej., la selección de todas las entidades de punto de la capa A que se encuentren dentro de una entidad de polígono de la capa B). Para ello, utilice la herramienta “Select by Location” disponible en ![](/fig/mActionSelectbyLocation.png) en la barra de herramientas del proyecto (alternativa: `Vector` > `Research Tools` > `Select by Location`).
+La selección espacial de entidades permite seleccionar partes de una capa según su relación con entidades de otra capa geoespacial (p. ej., la selección de todas las entidades de punto de la capa A que se encuentren dentro de una entidad de polígono de la capa B). Para ello, utilice la herramienta “Select by Location” disponible en ![](/fig/mActionSelectbyLocation.png) en la barra de herramientas del proyecto (alternativa: `Vectorial` > `Research Tools` > `Seleccionar por localización`).
 
 1.	En la interfaz de la herramienta, elija la capa vectorial de la que desea seleccionar entidades mediante “Select features from” y la capa en la que desea basar la selección mediante “By comparing to the features from”.
 2.	Elija el operador geométrico que utilizará para seleccionar las entidades (véase el párrafo inferior).
@@ -173,7 +173,7 @@ Las entidades seleccionadas se resaltan de nuevo en amarillo brillante en su int
 
 :::{dropdown} Respuesta
 - __Selección manual__:
-    Las entidades se seleccionan con el mouse utilizando la herramienta `Select Features` en el lienzo del mapa o haciendo clic en la columna en la tabla de atributos (los números a la izquierda de la tabla de atributos). En el lienzo del mapa, las entidades seleccionadas se resaltarán en amarillo brillante, en la tabla de atributos se resaltan en azul.
+    Las entidades se seleccionan con el mouse utilizando la herramienta `Seleccionar objetos` en el lienzo del mapa o haciendo clic en la columna en la tabla de atributos (los números a la izquierda de la tabla de atributos). En el lienzo del mapa, las entidades seleccionadas se resaltarán en amarillo brillante, en la tabla de atributos se resaltan en azul.
 - __Consultas basadas en atributos__ (Selección por atributo o por expresión):
     Se genera una consulta seleccionando atributos con valores específicos (p. ej., `"population" > 10000 AND "type" = 'urban'`).
 - __Consultas espaciales__ (Selección por ubicación): 

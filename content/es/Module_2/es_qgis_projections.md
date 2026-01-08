@@ -34,7 +34,7 @@ La proyección cartográfica Mercator es conocida por distorsionar el tamaño de
 ---
 width: 600px
 align: center
-name: en_greenland_africa
+name: es_greenland_africa
 ---
 Comparación Groenlandia - África (fuente: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)).
 :::
@@ -61,7 +61,7 @@ Observe las siguientes imágenes y preste atención a cómo los diferentes siste
 :::{figure} /fig/world_mercator_tissots.png
 ---
 width: 500 px
-name: world_mercator_tissot
+name: es_world_mercator_tissot
 ---
 La proyección cartográfica de Mercator (EPSG:54004) (fuente: HeiGIT).
 :::
@@ -71,7 +71,7 @@ Observe que la forma del círculo no cambia. Fuera de esto, podemos concluir que
 
 :::{figure} /fig/WGS_84_tissots.png
 ---
-name: WGS_84_tissots
+name: es_WGS_84_tissots
 width: 500 px
 ---
 Sistema Geodésico Mundial 1984 (EPSG:4326) (fuente: HeiGIT).
@@ -82,7 +82,7 @@ El WGS 84 es un SRC que consiste en un elipsoide que se asemeja mucho a la forma
 
 :::{figure} /fig/World_equidistant_cylindrical_tissots.png
 ---
-name: World_equidistant_cylindrical_tissots
+name: es_World_equidistant_cylindrical_tissots
 width: 500 px
 ---
 Proyección cilíndrica equidistante mundial (EPSG:54002) (fuente: HeiGIT).

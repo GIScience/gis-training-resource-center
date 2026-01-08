@@ -52,11 +52,11 @@ La denominación de los distritos y estados no es coherente en los distintos con
 
 ## Tareas
 
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` --> `New`.
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` --> `Nuevo proyecto`.
 
-2. Una vez que se haya creado el proyecto, [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save-project) en la **carpeta del proyecto** del ejercicio **Module_3_Exercise_1_Queries_Somalia**. Para hacer esto, haga clic en `Project` --> `Save as` e ir hasta la carpeta. Nombre el proyecto de esta manera: **Somalia_flood_affected_Beledweyne_2023**.
+2. Una vez que se haya creado el proyecto, [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save-project) en la **carpeta del proyecto** del ejercicio **Module_3_Exercise_1_Queries_Somalia**. Para hacer esto, haga clic en `Proyecto` --> `Guardar como` e ir hasta la carpeta. Nombre el proyecto de esta manera: **Somalia_flood_affected_Beledweyne_2023**.
 
-3. Para cargar los siguientes archivos en su proyecto, arrastre y suelte ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). O haga clic en `Layer` --> `Add Layer` --> `Add Vector Layer`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta el archivo. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+3. Para cargar los siguientes archivos en su proyecto, arrastre y suelte ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). O haga clic en `Capa` --> `Añadir capa` --> `Añadir capa vectorial`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta el archivo. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
     - `som_admbnda_adm2_ocha_20230308.shp`
     - `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`
     - `Buildings_Belete_Weyne.geojson`: Aparecerá una ventana emergente para este archivo y tendrá que decidir qué datos importar. Seleccione los polígonos.
@@ -68,61 +68,61 @@ Asegúrese de __descomprimir__ la carpeta del ejercicio antes de cargar las capa
 ### Extraiga el distrito (adm2) de la capa de límites administrativos
 
 4. En primer lugar, queremos exportar el distrito __Beledweyne__ de la región de Hiraan desde `som_admbnda_adm2_ocha_20230308.shp` para tenerlo como capa vectorial independiente. Para hacer esto:
-    1. Abra la tabla de atributos de `som_admbnda_adm2_ocha_20230308.shp` al hacer clic con el botón derecho en la capa --> `Open Attribute Table`([video en Wiki](/content/es/Wiki/es_qgis_attribute_table_wiki.md)).
-    2. Busque la fila de `Belet Weyne` y márquela al hacer clic en el número que está en el extremo izquierdo de la tabla de atributos. La fila se resaltará en azul y el distrito se volverá amarillo en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
-    3. Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Export` -> `Save Selected Features as`. Queremos guardar Beledweyne como GeoPackage, así que ajuste `Format` en consecuencia. Haga clic en los tres puntos y navegue a su **carpeta temporal**. Aquí puede asignar a la capa el nombre **AOI_Beledweyne** y hacer clic en `Save`. Ahora haga clic en `OK`([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). En este ejercicio, no reproyectaremos las capas y trabajaremos con los datos en `ESPG:4326 - WGS84`.
+    1. Abra la tabla de atributos de `som_admbnda_adm2_ocha_20230308.shp` al hacer clic con el botón derecho en la capa --> `Abrir tabla de atributos`([video en Wiki](/content/es/Wiki/es_qgis_attribute_table_wiki.md)).
+    2. Busque la fila de `Belet Weyne` y márquela al hacer clic en el número que está en el extremo izquierdo de la tabla de atributos. La fila se resaltará en azul y el distrito se volverá amarillo en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Acercar mapa el mapa a las filas seleccionadas`([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
+    3. Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Exportar` -> `Guardar objetos seleccionados como`. Queremos guardar Beledweyne como GeoPackage, así que ajuste `Formato` en consecuencia. Haga clic en los tres puntos y navegue a su **carpeta temporal**. Aquí puede asignar a la capa el nombre **AOI_Beledweyne** y hacer clic en `Guardar`. Ahora haga clic en `Aceptar`([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). En este ejercicio, no reproyectaremos las capas y trabajaremos con los datos en `ESPG:4326 - WGS84`.
 
 ### Identifique el edificio que podría verse afectado por la inundación
 
-5. En los pasos siguientes, queremos identificar todos los edificios que puedan verse afectados por las recientes inundaciones. Para hacer esto utilizaremos la herramienta `Extract by Location`.
+5. En los pasos siguientes, queremos identificar todos los edificios que puedan verse afectados por las recientes inundaciones. Para hacer esto utilizaremos la herramienta `Extraer por ubicación`.
     :::{figure} /fig/Extract_by_location_Belet_Weyne.png
     ---
     width: 500 px
-    name: extract_by_location
+    name: es_extract_by_location
     align: center
     ---
     La ventana de extracción por extracción en QGIS 3.36
     :::
-    1. En la __"caja de herramientas de procesos"__ --> Buscar `Extract by Location`
+    1. En la __"caja de herramientas de procesos"__ --> Buscar `Extraer por ubicación`
     2. __"Extraer entidades de"__: `Buildings_Belete_Weyne.geojson`
-    3. __"Donde las entidades (predicado geométrico)"__: `are within`
+    3. __"Donde las entidades (predicado geométrico)"__: `están dentro`
     4. __"Al comparar con las entidades de"__: `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`
-    5. En `Extracted` haga clic en los tres puntos ![](/fig/Three_points.png) --> `Save to File...` y navegue a su **carpeta temporal** y guarde la capa nueva con el nombre **Beledweyne_buildings_affected** y haga clic `Save`.
-    6. Ahora, haga clic en `Run`.
+    5. En `Extraído (ubicación)` haga clic en los tres puntos ![](/fig/Three_points.png) --> `Guardar aarchivo` y navegue a su **carpeta temporal** y guarde la capa nueva con el nombre **Beledweyne_buildings_affected** y haga clic `Guardar`.
+    6. Ahora, haga clic en `Ejecutar`.
     7. Ajusta sus capas de forma que solo vea las zonas inundadas y su nueva capa **Beledweyne_buildings_affected**. Elimine la capa `som_admbnda_adm2_ocha_20230308.shp` y `Buildings_Belete_Weyne.geojson`.
 
     :::{Attention}
-    La herramienta [`Select by Location`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#select-by-location) es muy similar. Esta herramienta funciona de la misma manera, pero en lugar de extraer directamente las entidades, las selecciona.
+    La herramienta [`Seleccionar por ubicación`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#seleccionar-por-ubicacion) es muy similar. Esta herramienta funciona de la misma manera, pero en lugar de extraer directamente las entidades, las selecciona.
     :::
 
 ### Identifique las infraestructuras críticas afectadas por las inundaciones
 
 6. En el siguiente paso, queremos identificar edificios especiales entre los edificios afectados. Abra la tabla de atributos y revise qué tipo de edificios se encuentran en la capa. Esta información se encuentra en la columna "edificio". Puede ordenar esta columna.
-Para extraer "hospitales", "escuelas" y "mezquitas", podemos utilizar la herramienta `Extract by Expression`.
-    1.  Busque la herramienta `Extract by Expression` en `Toolbox`.
+Para extraer "hospitales", "escuelas" y "mezquitas", podemos utilizar la herramienta `Extraer por expresión`.
+    1.  Busque la herramienta `Extraer por expresión` en la __[caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#caja-de-herramientas-de-procesos)__.
     2. Haga clic en `Expression`![](/fig/miconexpression.png).
-    3. Se abrirá la ventana "Expresión". Aquí podemos construir una consulta muy específica. En el panel central, abra`Field and values`. Aquí se pueden ver todas las columnas de la capa. Haga clic en `building`. A la derecha, debería aparecer la opción `All unique`. Haga clic en esta. Aquí puede ver ahora todos los valores únicos de la columna "edificio".
-    4. En el campo `Expression`, introduzca la siguiente expresión (consultar la figura siguiente):
-    ```
-        “edificio” = 'hospital' o
-        “edificio” = 'escuela' o
-        “edificio” = 'mezquita'
+    3. Se abrirá la ventana "Expresión". Aquí podemos construir una consulta muy específica. En el panel central, abra `Campos y valores`. Aquí se pueden ver todas las columnas de la capa. Haga clic en `building`. A la derecha, debería aparecer la opción `Todos únicos`. Haga clic en esta. Aquí puede ver ahora todos los valores únicos de la columna "edificio".
+    4. En el campo `Expresión`, introduzca la siguiente expresión (consultar la figura siguiente):
         ```
-    5. Haga clic en `Ok`. La ventana se cerrará y verá la expresión que ha creado en el campo `Expression` de la ventana `Extract by Expression` (véase la figura siguiente).
-    6. Haga clic en `Run`. Se agregará una nueva capa temporal llamada `Matching Features` a su proyecto QGIS. Cierre la ventana `Extract by Expression`.
+        "building" = 'hospital' OR
+        "building" = 'school' OR
+        "building" = 'mosques'
+        ```
+    5. Haga clic en `Aceptar`. La ventana se cerrará y verá la expresión que ha creado en el campo `Expresión` de la ventana `Extraer por expresión` (véase la figura siguiente).
+    6. Haga clic en `Ejecutar`. Se agregará una nueva capa temporal llamada `Objetos coincidentes` a su proyecto QGIS. Cierre la ventana `Extraer por expresión`.
 
 :::{figure} /fig/en_extract_by_expression_som.png
 ---
-name: extract_by_expression1
+name: es_extract_by_expression1
 width: 400 px
 ---
-La ventana de expresión en QGIS 3.36 con una expresión para extraer los polígonos con el valor "edificios" 'hospital', 'escuela', y 'mezquita'.
+La ventana de expresión en QGIS 3.36 con una expresión para extraer los polígonos con el valor "building" 'hospital', 'school', y 'mosque'.
 :::
 
 
 :::{figure} /fig/en_extract_by_expression_som2.png
 ---
-name: extract_by_expression2
+name: es_extract_by_expression2
 width: 400 px
 ---
 La ventana `Extract by Expression` en QGIS 3.36
@@ -134,7 +134,7 @@ Una capa temporal no se guardará en su proyecto QGIS, incluso después de guard
 
 
 7. Explore la nueva capa abriendo la tabla de atributos, activando y desactivando la capa en el panel Capas.
-8. <kbd>Haga clic derecho</kbd> en la capa `Matching Features` y guarde en su carpeta de proyecto en `/data/output/` con el nombre `Belet_Weyne_POI_affected.gpkg`.
+8. Haga <kbd>clic derecho</kbd> en la capa `Objetos coincidentes` y guarde en su carpeta de proyecto en `/data/output/` con el nombre `Belet_Weyne_POI_affected.gpkg`.
 
 ¡Felicitaciones! La información extraída puede utilizarse ahora para realizar otros análisis o crear mapas completos de los puntos de interés afectados.
 

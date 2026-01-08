@@ -111,26 +111,26 @@ Para ello, visualizaremos la digitalización del First Bank, el edificio del Ban
 
 ### Añadir un mapa base
 
-1. Añada el OSM como mapa base. Para añadir el OSM como mapa base, haga clic en `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Elija `OpenStreetMap` y haga clic en `Add`.
-Organice la capa en `Layer Panel` de forma que el OSM esté en la parte inferior ([video en Wiki](/content/es/Wiki/es_qgis_basemaps_wiki.md))
+1. Añada el OSM como mapa base. Para añadir el OSM como mapa base, haga clic en `Capa` -> `Añadir capa` -> `Añadair capa XYZ...`. Elija `OpenStreetMap` y haga clic en `Añadir`.
+Organice la capa en `Panel de capas` de forma que el OSM esté en la parte inferior ([video en Wiki](/content/es/Wiki/es_qgis_basemaps_wiki.md))
 
 :::{Tip}
 No se puede interactuar con un mapa base.
 :::
 
-2. Para añadir el complemento `OSM Place Search`, haga clic en `Plugins` -> `Manage and Install Plugins…` -> `All` y busque `OSM Place Search`. Una vez que lo haya encontrado, haga clic sobre él y luego en `Install Plugin`. Puede abrir `OSM Place Search Panel` como cualquier otro panel, haciendo clic en `View` -> `Panels` y marcando `OSM Place Search Panel`([video en Wiki](/content/es/Wiki/es_qgis_plugins_wiki.md)).
+2. Para añadir el complemento `OSM Place Search`, haga clic en `Complementos` -> `Aministrar e instalar complementos` -> `Todos` y busque `OSM Place Search`. Una vez que lo haya encontrado, haga clic sobre él y luego en `Instalar complemento`. Puede abrir `OSM Place Search Panel` como cualquier otro panel, haciendo clic en `Ver` -> `Paneles` y marcando `OSM Place Search Panel`([video en Wiki](/content/es/Wiki/es_qgis_plugins_wiki.md)).
 3. En el panel `OSM place search`, busque “Abuja Central Business District” y elija “Abuja Municipality Area Council, City”. Acérquese al distrito central de negocios (Central Business District). Queremos digitalizar la ubicación de los bancos en esta zona.
 Para ello, tendremos que crear una nueva capa de puntos:
-    1. Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
-    - En `Database` haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp` de la carpeta de su proyecto. Asigne al nuevo conjunto de datos el nombre “Abuja_bank_point”. Haga clic en `Save`.
-    - En `Geometry type`: Seleccione `Point`.
+    1. Haga clic en `Capa` -> `Crear Capa` -> `Nueva capa GeoPackage`([video en Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
+    - En `Base de datos` haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp` de la carpeta de su proyecto. Asigne al nuevo conjunto de datos el nombre “Abuja_bank_point”. Haga clic en `Guardar`.
+    - En `Tipo de geometría`: Seleccione `Punto`.
     - Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”. Por defecto, QGIS selecciona el SRC del proyecto.
-    - En `New Field` puede añadir columnas a la nueva capa. Añada la columna “Name”.
-        * `Name` = “Name”
-        * `Type`: Seleccione `Text (string)`.
-        * Haga clic en `Add to Fields List` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
-        * Haga clic en `OK`.
-    * La nueva capa aparecerá en `Layer Panel`.
+    - En `Nuevo campo` puede añadir columnas a la nueva capa. Añada la columna “Name”.
+        * `Nombre` = “Name”
+        * `Tipo`: Seleccione `Texto (cadena)`.
+        * Haga clic en `Añadir a la lista de campos` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
+        * Haga clic en `Aceptar`.
+    * La nueva capa aparecerá en `Panel de capas`.
 
 
 :::{admonition} Añadir más información
@@ -143,13 +143,13 @@ Es posible digitalizar aún más información añadiendo más columnas. Por ejem
 :::{figure} /fig/new_layer_abuja.png
 ---
 height: 400px
-name: New point layer Abuja
+name: es_New point layer Abuja
 align: center
 ---
 Creación de una nueva capa de puntos.
 :::
 
-4. Ahora puede crear un punto para cada uno de los tres bancos de la zona [Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#add-geometries-to-a-layer). Actualmente el nuevo “Abuja_bank_point” está vacío. Para añadir entidades podemos utilizar la `Digitizing Toolbar`. Si no puede ver la barra de herramientas `View` -> `Toolbars` y compruebe `Digitizing Toolbar` ([video de Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#creation-of-point-data)). ![](/fig/Digitizing_Toolbar.png)
+4. Ahora puede crear un punto para cada uno de los tres bancos de la zona [Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#add-geometries-to-a-layer). Actualmente el nuevo “Abuja_bank_point” está vacío. Para añadir entidades podemos utilizar la barra de herramientas `Digitalización`. Si no puede ver la barra de herramientas `Ver` -> `Barras de herramientas` y compruebe `Digitalización` ([video de Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md#creation-of-point-data)). ![](/fig/Digitizing_Toolbar.png)
     1. Seleccione la capa de puntos “Abuja_bank_point” en el panel Layer. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
     2. Busque bancos en el mapa o utilice el panel de búsqueda OSMPlace. Una vez que haya encontrado uno, haga clic en ![](/fig/mActionCapturePoint.png). Haga clic izquierdo en la entidad que desea digitalizar.
     3. Una vez que haga clic, aparecerá una ventana “Abuja_bank_point”. Aquí puede añadir el nombre del banco.
@@ -162,7 +162,7 @@ El resultado debería verse de esta manera.
 :::{figure} /fig/Abuja_Banks_Point_Layers.png
 ---
 height: 200px
-name: Result Digitisation exercise
+name: es_Result Digitisation exercise
 align: center
 ---
 Las entidades digitalizadas podrían tener este aspecto.
@@ -173,21 +173,21 @@ Las entidades digitalizadas podrían tener este aspecto.
 Hay información fiable de que hay un corte de carretera debido a obras en el cruce de “Independent Avenue” y “Tafawa Balewa Way”. Para visualizar esto en nuestro mapa queremos crear un polígono de este bloqueo. El polígono debe cubrir todo el cruce.
 
 1. Para ello necesitamos de nuevo una nueva capa. En este caso, una capa de polígonos. La creación es básicamente la misma que para el punto.
-    1. Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
-    2. En `Database`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre “Abuja_roadblock_polygon”. Haga clic en `Save`.
-    3. `Geometry type`: Seleccione `Polygon`.
+    1. Haga clic en `Capa` --> `Crear Capa` -> `Nueva capa GeoPackage`([Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
+    2. En `Base de datos`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre “Abuja_roadblock_polygon”. Haga clic en `Guardar`.
+    3. `Tipo de geometría`: Seleccione `Polígono`.
     4. Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”.
-    5. En `New Field` puede añadir columnas a la nueva capa. Añada la columna “Roadblock_type”.
-        * `Name` = “Roadblock_type”
-        * `Type`: Seleccione `Text (string)`.
-        * Haga clic en `Add to Fields List` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
-        * Haga clic en `OK`.
+    5. En `Nuevo campo` puede añadir columnas a la nueva capa. Añada la columna “Roadblock_type”.
+        * `Nombre` = “Roadblock_type”
+        * `Tipo`: Seleccione `Texto (cadena)`.
+        * Haga clic en `Añadir a la lista de campos` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Lista de campos`.
+        * Haga clic en `Aceptar`.
 
-    6. La nueva capa aparecerá en `Layer Panel`.
+    6. La nueva capa aparecerá en `Panel de capas`.
 2. Para digitalizar esta zona, haga clic en la nueva capa “Abuja_roadblock_polygon” ([Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
-    - Haga clic en ![](/fig/mActionToggleEditing.png) para activar el `edit mode` y añada el objeto espacial: `Capture Polygon`![](/fig/mActionCapturePolygon.png)|.
-    - Dibuje geometrías e ingrese `feature attributes`, “Roadblock_type” = “Construction_site”.
-    - Guarde los cambios ![](/fig/mActionSaveEdits.png), salga `edit mode`.
+    - Haga clic en ![](/fig/mActionToggleEditing.png) para activar el modo `Conmutar edición` y añada el objeto espacial: `Añadir Polígono`![](/fig/mActionCapturePolygon.png)|.
+    - Dibuje geometrías e ingrese los atributos del objeto espacial: “Roadblock_type” = “Construction_site”.
+    - Guarde los cambios ![](/fig/mActionSaveEdits.png), salga `Conmutar edición`.
 
 
 ## Mapear las rutas de conexión
@@ -197,21 +197,21 @@ Un hombre de negocios condujo desde el norte de Herbert Macauley Way hasta el di
 Cree una capa de línea de carretera que le permita llegar fácilmente al Zenith Bank.
 
 1. Para ello necesitamos de nuevo una nueva capa. En este caso, una capa de línea. Su proceso de creación es casi el mismo que el de punto.
-    - Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
-    - En `Database`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre “Abuja_bank_road_connection_line”. Haga clic en `Save`.
-    - `Geometry type`: Seleccione `Line`.
+    - Haga clic en `Capa` --> `Crear Capa` -> `Nueva capa GeoPackage`([Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md)).
+    - En `Base de datos`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre “Abuja_bank_road_connection_line”. Haga clic en `Guardar`.
+    - `Tipo de geometría`: Seleccione `Cadena de líneas`.
     - Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”.
-    - En `New Field` puede añadir columnas a la nueva capa. Añada la columna “Road_type”.
-        * `Name` = “Road_type”
-        * Haga clic en `Add to Fields List` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
-        * Haga clic en `OK`.
+    - En `Nuevo campo` puede añadir columnas a la nueva capa. Añada la columna “Road_type”.
+        * `Nombre` = “Road_type”
+        * Haga clic en `Añadir a la lista de campos` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a la lista de campos.
+        * Haga clic en `Aceptar`.
             :::{admonition} Añadir más información
             :class: tip
 
-            De nuevo, al añadir más campos, puede añadir más información. Por ejemplo, puede añadir el tipo de carretera (pavimentada, sin pavimentar, autopista, residencial, etc.), el límite de velocidad o el número de carriles. Piense qué información podría añadir y qué `Type` utilizaría. Tenga en cuenta que no puede realizar cálculos con datos de cadena.
+            De nuevo, al añadir más campos, puede añadir más información. Por ejemplo, puede añadir el tipo de carretera (pavimentada, sin pavimentar, autopista, residencial, etc.), el límite de velocidad o el número de carriles. Piense qué información podría añadir y qué `Tipo` utilizaría. Tenga en cuenta que no puede realizar cálculos con datos de cadena.
 
             :::
-    * La nueva capa aparecerá en `Layer Panel`.
+    * La nueva capa aparecerá en `Panel de capas`.
 2. Seleccione la capa de línea “Abuja_bank_road_connection_line” para añadir datos en el panel Layer [Wiki](/content/es/Wiki/es_qgis_digitisation_wiki.md).
     1. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora la capa está en modo de edición.
     2.	Haga clic en ![](/fig/mActionCaptureLine.png).

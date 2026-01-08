@@ -138,9 +138,8 @@ Para mantener sus datos organizados y de fácil acceso, es importante establecer
 :::{figure} /fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
-name:
 align: right
-name: IFRC Surge Icon
+name: es_IFRC Surge Icon
 ---
 :::
 
@@ -228,6 +227,8 @@ Bien, ahora tenemos una buena visión general de la ubicación de los centros de
 
 2. Cargue el conjunto de datos __“TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp”__ en QGIS.
    * Ajuste la opacidad de la capa de inundación haciendo clic con el botón derecho en la capa __“TDX_20240401_FloodExtent_SambavaDistrict_MDG”__ en el Panel de Capas y haga clic en `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Symbology`. Debe mover el control deslizante y ajustar la opacidad a alrededor del 60 %.
+
+% REMOVE THIS?
 <!--3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
     * Right click on the data layer, click on “Properties”.
     * The “Layer Properties” Window of the data layer will open. Click on “Information”.

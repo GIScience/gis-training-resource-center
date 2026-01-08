@@ -106,7 +106,7 @@ La carpeta se llama “Module_3_Exercise_1_Flood_Nigeria” y contiene toda la [
 
 Nuestro objetivo es elaborar una visión general del impacto de las inundaciones de 2022 en el estado de Burco, en Nigeria. Para ello, visualizaremos el estado y los distritos afectados, además de digitalizar las comunidades supuestamente afectadas.
 
-1. Abra QGIS y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#cree-un-nuevo-proyecto-en-qgis) haciendo clic en `Projecto` -> `Nuevo Proyecto`
+1. Abra QGIS y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#cree-un-nuevo-proyecto-en-qgis) haciendo clic en `Proyecto` -> `Nuevo Proyecto`
 
 2. Una vez creado el proyecto [guarde el proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#guarde-el-proyecto) en la carpeta “project” del ejercicio “Modul3_Exercise_1_Flood_Nigeria”. Para hacer esto, haga clic en `Projecto` -> `Guardar Como` y navegue hasta la carpeta. Nombre al proyecto de la siguiente manera: “Nigeria_Borno_flood_2022”.
 
@@ -180,7 +180,7 @@ align: center
     - Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”. Por defecto, QGIS selecciona el SRC del proyecto.
     - En `Nuevo campo` puede añadir columnas a la nueva capa. Añada la columna “Name”.
         * `Nombre` = “Name”
-        * `Tipo`: Seleccione `Texto (Cadena)`
+        * `Tipo`: Seleccione `Texto (cadena)`
         * Haga clic en `Añadir a la lista de campos` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Lista de campos`.
         * Haga clic en `Aceptar`.
     * La nueva capa aparecerá en `panel de capas`

@@ -144,7 +144,7 @@ __Contexto__
 ---
 width: 100px
 align: right
-name: IFRC Surge Icon
+name: es_IFRC Surge Icon
 ---
 :::
 
@@ -154,7 +154,7 @@ Usted ha sido asignado como gestor de información en las regiones de Pakistán 
 
 :::{figure} /fig/Module_3/en_m3_ex5_Task_1.png
 ---
-name: Task_1_workflow
+name: es_Task_1_workflow
 width: 750 px
 ---
 
@@ -166,10 +166,10 @@ width: 750 px
 No se puede interactuar con un mapa base.
 :::
 ::::
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
-2. Una vez creado el proyecto [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save) en la carpeta del ejercicio “Modul3_Exercise_2_Flood_Larkana”. Para hacer esto, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Nombre el proyecto “PAK_Larkana_flood_2024”.
-3. Primero, queremos agregar el OpenStreetMap como mapa base para la orientación. Para añadir el OSM como mapa base, haga clic en `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Elija `OpenStreetMap` y haga clic en `Add`.
-4. A continuación, cargue el GeoPackage __“PAK_Sindh_adm2.gpkg”__ en su proyecto. Para hacerlo, debe arrastrar y soltar ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)). O haga clic en `Layer`-> `Add Layer`-> `Add Vector Layer`. Haga clic en los tres puntos ![](/fig/Three_points.png) de tres puntos y navegue hasta __"PAK_Sindh_adm2.gpkg"__. Seleccione el archivo y hacer clic en `Open`. De vuelta en QGIS, haga clic en `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)).
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` -> `Nuevo proyecto`.
+2. Una vez creado el proyecto [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save) en la carpeta del ejercicio “Modul3_Exercise_2_Flood_Larkana”. Para hacer esto, haga clic en `Proyecto` -> `Guardar como` y navegue hasta la carpeta. Nombre el proyecto “PAK_Larkana_flood_2024”.
+3. Primero, queremos agregar el OpenStreetMap como mapa base para la orientación. Para añadir el OSM como mapa base, haga clic en `Capa` -> `Añadir capa` -> `Añadir capa XYZ...`. Elija `OpenStreetMap` y haga clic en `Añadir`.
+4. A continuación, cargue el GeoPackage __“PAK_Sindh_adm2.gpkg”__ en su proyecto. Para hacerlo, debe arrastrar y soltar ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)). O haga clic en `Capa` -> `Añadir capa` -> `Añadir capa vectorial`. Haga clic en los tres puntos ![](/fig/Three_points.png) de tres puntos y navegue hasta __"PAK_Sindh_adm2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)).
 
 
 :::{Attention}
@@ -179,30 +179,30 @@ Los archivos GeoPackage pueden contener varios archivos e incluso proyectos QGIS
 5. Para obtener una visión general de la situación, debemos exportar los límites administrativos para nuestra Área de Interés (AOI). Para hacerlo, debemos exportar el distrito de __Larkana__, así como los distritos vecinos, desde la capa `PAK_adm2_Sindh`.
     - Haga <kbd>clic derecho</kbd> en la capa `PAK_adm2_Sindh` y seleccionar [Abrir tabla de atributos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html).
     - Busque la columna `ADM2_EN` y la fila para el distrito de Larkana.
-    - <kbd>Haga clic</kbd> en los números a la izquierda de la ventana de la tabla de atributos para seleccionar la entidad Larkana. La fila aparecerá de azul y el área de Larkana se volverá amarilla en el lienzo del mapa.
-    - <kbd>Haga clic</kbd> en `Zoom Map to selected rows` en la barra superior de la ventana de la tabla de atributos. ![](/fig/qgis_3.36_zoom_to_selected_rows_at.png)
+    - Haga <kbd>clic</kbd> en los números a la izquierda de la ventana de la tabla de atributos para seleccionar la entidad Larkana. La fila aparecerá de azul y el área de Larkana se volverá amarilla en el lienzo del mapa.
+    - Haga <kbd>clic</kbd> en `Acercar el mapa a las filas seleccionadas` en la barra superior de la ventana de la tabla de atributos. ![](/fig/qgis_3.36_zoom_to_selected_rows_at.png)
     - Cierre la tabla de atributos.
     ::::{margin}
     :::{tip}
     Mantener <kbd>Ctrl</kbd> mientras selecciona entidades geográfica le permite agregar más entidades a su selección actual. De lo contrario, anulará la selección del polígono anterior.
     Tenga en cuenta que solo puede seleccionar entidades geográficas de la capa que ha seleccionado actualmente en el panel capas.
     ::::
-    - En la barra de herramientas en la parte superior de la ventana de QGIS, seleccione la herramienta `Select Feature(s)` ![](/fig/selection_toolbar_feature_selection.png). Mantenga presionado <kbd>Ctrl</kbd> y <kbd>haga clic</kbd> en los distritos que rodean el distrito de Larkana ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#manual-selection)). Los seis distritos seleccionados se verán de color amarillo en el lienzo del mapa.
+    - En la barra de herramientas en la parte superior de la ventana de QGIS, seleccione la herramienta `Seleccionar objeto(s) espacial(es)` ![](/fig/selection_toolbar_feature_selection.png). Mantenga presionado <kbd>Ctrl</kbd> y <kbd>haga clic</kbd> en los distritos que rodean el distrito de Larkana ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#manual-selection)). Los seis distritos seleccionados se verán de color amarillo en el lienzo del mapa.
     <!--FIX: The districts named are not the only ones surrounding the -->
-    - Desactive la herramienta `Select Feature(s)`. Para hacerlo, haga clic en el icono ![](/fig/qgis_move_symbol.png) en la barra de herramientas en la parte superior de la ventana de QGIS.
-    - Ahora podemos exportar las entidad geográfica seleccionadas y guardarlas en un nuevo archivo. Haga clic derecho en la capa de `PAK_adm2_Sindh` y seleccione `Export` > `Save Selected Features as`.
+    - Desactive la herramienta `Seleccionar objeto(s) espacial(es)`. Para hacerlo, haga clic en el icono ![](/fig/qgis_move_symbol.png) en la barra de herramientas en la parte superior de la ventana de QGIS.
+    - Ahora podemos exportar las entidad geográfica seleccionadas y guardarlas en un nuevo archivo. Haga clic derecho en la capa de `PAK_adm2_Sindh` y seleccione `Exportar` > `Guardar objetos seleccionados como`.
     - Se abrirá una nueva ventana. Aquí, puede seleccionar cómo y dónde se guardan las entidades seleccionadas.
     :::{figure} /fig/en_qgis_3.36_m3_ex5_export_features.png
     ---
-    name: m3_ex5_export_selection
+    name: es_m3_ex5_export_selection
     width: 450 px
     ---
-    Asegúrese de guardar el GeoPackage en la ubicación correcta haciendo clic en los tres puntos a la derecha del campo `File name`.
+    Asegúrese de guardar el GeoPackage en la ubicación correcta haciendo clic en los tres puntos a la derecha del campo `Nombre de archivo`.
     :::
-    - En `Format`, seleccionar GeoPackage.
-    - A la derecha del campo de `File name`, haga clic en los tres puntos. Vaya a la carpeta con los datos del ejercicio y guárdelos en la carpeta `data/temp/`.
+    - En `Formato`, seleccionar GeoPackage.
+    - A la derecha del campo de `Nombre de archivo`, haga clic en los tres puntos. Vaya a la carpeta con los datos del ejercicio y guárdelos en la carpeta `data/temp/`.
     - Introduzca un nombre de capa. Por ejemplo, “__Flood_2024_AOI__”.
-    - Haga clic en `Ok`. La capa exportada debe aparecer en el panel Capas.
+    - Haga clic en `Aceptar`. La capa exportada debe aparecer en el panel Capas.
 
 ::::{margin}
 :::{Tip}
@@ -228,7 +228,7 @@ __Contexto__
 ---
 width: 100px
 align: right
-name: IFRC HEalth Icon
+name: es_IFRC HEalth Icon
 ---
 :::
 
@@ -238,32 +238,32 @@ Las publicaciones en redes sociales han señalado un impacto significativo en el
 
 :::{figure} /fig/Module_3/en_m3_ex5_Task_2.png
 ---
-name: task_2_workflow
+name: es_task_2_workflow
 width: 750 px
 ---
 
 :::
 
 1. En primer lugar, debemos averiguar dónde se encuentran los centros de salud en la zona. Podemos encontrar conjuntos de datos mediante una búsqueda rápida en el [Intercambio de Datos Humanitarios (HDX)](https://data.humdata.org). Allí puede encontrarse el conjunto de datos denominado “Centros de salud de Pakistán (exportado de OpenStreetMap)”. Usaremos este conjunto de datos. El conjunto de datos ya está disponible en la carpeta de descargas para este ejercicio.
-    - Importe el GeoPackage `PAK_Health_Facilities_complete.gpgk` en su proyecto. Puede arrastrarlo al lienzo del mapa o abrir la ventana de importación haciendo clic en `Layer` > `Add Layer` > `Add Vector Layer` en la barra superior de QGIS ([consulte la página](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) Wiki). Aparecerá una nueva capa con datos de punto en el lienzo del mapa.
-    - Una vez que hayamos importado los centros de salud, podremos extraer aquellos que se encuentren dentro de nuestra área de interés. Podemos lograrlo con la herramienta `Extract by Location`.
-    - En la __caja de herramientas de Procesos__ ([abrir la caja](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#open-toolbox)), busque la herramienta “Extraer por ubicación”. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana.
+    - Importe el GeoPackage `PAK_Health_Facilities_complete.gpgk` en su proyecto. Puede arrastrarlo al lienzo del mapa o abrir la ventana de importación haciendo clic en `Capa` > `Añadir capa` > `Añadir capa vectorial` en la barra superior de QGIS ([consulte la página](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) Wiki). Aparecerá una nueva capa con datos de punto en el lienzo del mapa.
+    - Una vez que hayamos importado los centros de salud, podremos extraer aquellos que se encuentren dentro de nuestra área de interés. Podemos lograrlo con la herramienta `Extraer por ubicación`.
+    - En la __caja de herramientas de Procesos__ ([abrir la caja](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#open-toolbox)), busque la herramienta “Extraer por ubicación”. Haga <kbd>doble clic</kbd> en ella. Se abrirá una nueva ventana.
     :::{figure} /fig/PAK_extract_locatio_HS.png
     ---
     width: 400px
-    name: Extract by location Pakistan
+    name: es_Extract by location Pakistan
     align: center
     ---
     Extraer las instalaciones sanitarias de nuestra área de interés mediante la herramienta “Extraer por ubicación”.
     :::
-    - Como `Input Layer`, seleccione la capa `PAK_Health_Facilities_complete`.
-    - El `Geometric predicate` debe establecerse en `Intersect`
-    - En `By comparing to the features from`, seleccione la capa de área de interés “__Flood_2024_AOI__”.
-    - En `Extracted (location)`, haga clic en los tres puntos y seleccione `Save to Geopackage`.
+    - Como `Extraer objetos de`, seleccione la capa `PAK_Health_Facilities_complete`.
+    - El `Donde los objetos (predicado geométrico)` debe establecerse en `Intersecan`.
+    - En `Comparando con los objetos de`, seleccione la capa de área de interés “__Flood_2024_AOI__”.
+    - En `Extraído (ubicación)`, haga clic en los tres puntos y seleccione `Guardar en GeoPackage`.
     - Vaya a la carpeta `/Module_3_Exercise_5_Larkana_Flood/data/temp/`.
-    - Asigne al archivo el nombre __“Health_Facilities_Flood_2024_AOI”__ y haga clic en `Save`.
-    - Se le pedirá que introduzca un nombre de capa. Use el mismo nombre que el archivo y haga clic en `Ok`.
-    - Haga clic en `Run`. La nueva capa aparecerá en la pestaña Capas.
+    - Asigne al archivo el nombre __“Health_Facilities_Flood_2024_AOI”__ y haga clic en `Guardar`.
+    - Se le pedirá que introduzca un nombre de capa. Use el mismo nombre que el archivo y haga clic en `Aceptar`.
+    - Haga clic en `Ejecutar`. La nueva capa aparecerá en la pestaña Capas.
 
 
 Ahora tenemos una visión general de la ubicación de los centros de salud. Sin embargo, queremos saber qué centros de salud se ven afectados por la inundación. Afortunadamente, la ONU acaba de compartir un conjunto de datos sobre el alcance de las inundaciones del 8 al 12 de agosto, que podemos superponer con nuestra capa con los sitios de salud para identificar los sitios de salud que están en la zona inundada.
@@ -271,36 +271,36 @@ Ahora tenemos una visión general de la ubicación de los centros de salud. Sin 
 2. Importe el conjunto de datos __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ en su proyecto QGIS.
 3. Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctamente. Sin embargo, al comprobar la información de las capas, puede ver que las nuevas capas tienen un Sistema de Referencia de Coordenadas (SRC) diferente. Tienen el código EPSG 9707, mientras que nuestro proyecto tiene el 4326 ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html)).
     * <kbd>Haga clic derecho</kbd> en la capa y seleccione `Properties`. Se abrirá la ventana de propiedades.
-    -  En la barra de pestañas vertical de la izquierda, vaya hasta `Information`. Aquí encontrará información adicional sobre el conjunto de datos seleccionado.
+    -  En la barra de pestañas vertical de la izquierda, vaya hasta `Información`. Aquí encontrará información adicional sobre el conjunto de datos seleccionado.
     * Bajo el título “Sistema de referencia de coordenadas (SRC)", encontrará toda la información sobre el SRC. Los más importantes son:
     - __Nombre:__ aquí encontrará el código EPSG.
-    - __Unidades:__ aquí encontrará información sobre las unidades de medida utilizadas en el conjunto de datos. Por ejemplo, metros o grados. <!--ADD: Why is it a problem? Add explanation-->
+    - __Unidades:__ aquí encontrará información sobre las unidades de medida utilizadas en el conjunto de datos. Por ejemplo, metros o grados. 
 4. Esto se convertirá en un problema tan pronto como hagamos algo diferente de solo mostrar las capas. Ya que queremos manipular las capas en el siguiente paso, primero necesitamos reproyectarlas ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html)).
-    * En la parte superior de la ventana de QGIS, </kbd>haga clic</kbd> en la pestaña `Vector` > `Data Management Tools` -> `Reproject Layer` o busque la herramienta en la `Processing Toolbox`.
-    * Como `Input layer`, seleccione __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__
+    * En la parte superior de la ventana de QGIS, </kbd>haga clic</kbd> en la pestaña `Vectorial` > `Data Management Tools` -> `Reproyectar capa` o busque la herramienta en la caja de herramientas de procesos.
+    * Como `Capa de entrada`, seleccione __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__
     * Como destino, seleccione el código SRC/EPSG __4326__.
-    * Guarde el nuevo archivo en su carpeta de `temp` haciendo clic en los tres de puntos ![](/fig/Three_points.png) junto a `Reprojected`, especifique el nombre del archivo como __“2024_MinFloodExtend_reprojected”__.
-    * Haga clic en `Run`.
-    * Elimine la capa antigua del panel de capas haciendo clic derecho sobre la capa -> `Remove layer`.
-    * Ajuste la opacidad de la capa de inundación haciendo clic derecho sobre la capa __“2024_MinFloodExtend_reprojected”__ en el Panel de capas y seleccionando `Properties`. La ventana de propiedades se abrirá con una sección de pestaña vertical a la izquierda.
-    - Vaya a la pestaña `Symbology`.
+    * Guarde el nuevo archivo en su carpeta de `temp` haciendo clic en los tres de puntos ![](/fig/Three_points.png) junto a `Reproyectado`, especifique el nombre del archivo como __“2024_MinFloodExtend_reprojected”__.
+    * Haga clic en `Ejecutar`.
+    * Elimine la capa antigua del panel de capas haciendo clic derecho sobre la capa -> `Eliminar capa`.
+    * Ajuste la opacidad de la capa de inundación haciendo clic derecho sobre la capa __“2024_MinFloodExtend_reprojected”__ en el Panel de capas y seleccionando `Propriedades`. La ventana de propiedades se abrirá con una sección de pestaña vertical a la izquierda.
+    - Vaya a la pestaña `Propriedades`.
     - Mueva el control deslizante y ajuste la opacidad a alrededor del 60 %.
 
-<!--Symbology tab has not been covered in the modules yet.-->
+
 
 Hemos observado que ciertas centros de salud han sido afectados por las inundaciones. Para visualizar esta información en el mapa, planeamos incluir un nuevo atributo llamado __“Flood_affected”__ en la tabla de atributos de __“Health_Facilities_Flood_2024_AOI”__. Para lograr esto, seleccionaremos todas los centros de salud que se encuentran dentro de la extensión de la inundación utilizando la herramienta “Seleccionar por ubicación”. En un siguiente paso, agregaremos una nueva columna a la tabla de atributos y agregaremos información a nuestros centros de salud seleccionados.
 
-5. Abra el `Processing Toolbox` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html)) y busque la herramienta __“Seleccionar por ubicación”__.
-    * `Select features from` = __“Health_Facilities_Flood_2024_AOI”__.
-    * Como `Geometric predicate` utilizamos `intersect`.
-    * Para `By comparing to the features from`, usamos la capa __“2024_MinFloodExtent_reprojected”__.
-    * `Modify current selection by` = `creating new selection`.
-    * Haga clic en `Run`.
+5. Abra el caja de herramientas de procesos ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html)) y busque la herramienta __“Seleccionar por ubicación”__.
+    * `Seleccionar objetos de` = __“Health_Facilities_Flood_2024_AOI”__.
+    * Como `Donde los objetos (predicado geométrico)` utilizamos `intersecan`.
+    * Para `Comparando con los objetos de`, usamos la capa __“2024_MinFloodExtent_reprojected”__.
+    * `Modificar la selección actual por` = `creando una nueva selección`.
+    * Haga clic en `Ejecutar`.
 
 :::{figure} /fig/PAK_flood_select_by_location.PNG
 ---
 width: 400px
-name: Select flood affected health facilities
+name: es_Select flood affected health facilities
 align: center
 ---
 Selección de los centros de salud afectados por las inundaciones mediante la herramienta “Seleccionar por ubicación”
@@ -316,18 +316,19 @@ Please fix the geometry or change the Processing setting to the “Ignore
 invalid input features” option.
 Execution failed after 0.07 seconds
 ```
+% FIX: ADD THE SPANISH ERROR MESSAGE
 
 Primero debe usar la herramienta __“Corregir geometría”__ antes de repetir el paso 5 fallido anteriormente de usar la herramienta __“Seleccionar por ubicación”__.
 
 * Para ello, abra el [`Processing Toolbox`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html) y busque la herramienta __“Arreglar geometrías”__.
-* `Input layer` = `2024_MinFloodExtend_reprojected`
+* `Capa de entrada` = `2024_MinFloodExtend_reprojected`
 * Guarde el nuevo archivo en su carpeta de `temp` haciendo clic en el ![](/fig/Three_points.png) de tres puntos, especifique el nombre del archivo como __“2024_MinFloodExtend_reprojected_fix”__.
-* Haga clic en `Run`.
+* Haga clic en `Ejecutar`.
 
 :::{figure} /fig/ PAK_flood_ngeomertrie_error.PNG
 ---
 width: 400px
-name: Fix Geometry
+name: es_Fix Geometry
 align: center
 ---
 El mensaje de error indica geometrías no válidas.
@@ -336,42 +337,42 @@ El mensaje de error indica geometrías no válidas.
 ::::
 
 6. Podemos editar la tabla de atributos para las entidades que hemos seleccionado:
-    - Abra la tabla de atributos de __“Health_Facilities_Flood_2024_AOI”__ haciendo clic derecho sobre la capa -> `Open Attribute Table`([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html))
+    - Abra la tabla de atributos de __“Health_Facilities_Flood_2024_AOI”__ haciendo clic derecho sobre la capa -> `Abrir tabla de atributos` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html))
     - Active el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png) ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html)). Ahora puede editar los datos directamente en la tabla.
     - Queremos agregar una nueva columna con el nombre __"Flood_affected"__ para identificar qué centros de salud se encuentran dentro de la extensión de la inundación. Haga clic en ![](/fig/mActionNewAttribute.png). Se abrirá una nueva ventana.
-    - En la ventana de `Add field`, agregue el nombre de la columna y especifique el `Type` a `Text (string)` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#add-new-column)).
-    - Haga clic en `Ok`.
+    - En la ventana de `Añadir campo`, agregue el nombre de la columna y especifique el `Tipo` a `Texto (cadena)` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#add-new-column)).
+    - Haga clic en `Aceptar`.
 
 
 :::{figure} /fig/ PAK_flood_new_column.PNG
 ---
 width: 300px
-name: New column Pakistan
+name: es_New column Pakistan
 align: center
 ---
 Agregar una nueva columna a la tabla de atributos para la capa de centros de salud
 :::
 
 7. A continuación, queremos editar las filas de la tabla de atributos para las entidades que hemos seleccionado.
-    - Busque la opción `Show all Features` en la esquina inferior izquierda y haga clic en ella.
-    - Seleccione la opción `Show selected features` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). Esto filtrará la tabla para mostrar solo las filas que representan los centros de salud directamente afectados por la inundación.
-    - Escriba `Yes` en la columna __“Flood_affected”__ en cada fila seleccionada.
+    - Busque la opción `Mostrar todos los objetos espaciales` en la esquina inferior izquierda y haga clic en ella.
+    - Seleccione la opción `Mostrar objetos espaciales seleccionados` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). Esto filtrará la tabla para mostrar solo las filas que representan los centros de salud directamente afectados por la inundación.
+    - Escriba `Yes` en la columna __"Flood_affected"__ en cada fila seleccionada.
     - Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)).
     - Haga clic en el icono ![](/fig/selection_toolbar_feature_deselection.png) en la barra de herramientas para finalizar la selección de entidades.
 
 8. Podemos mostrar el conjunto de datos enriquecido y visualizarlo mediante el método de simbolización de clasificación por categorías. Esto significa que seleccionamos una columna de la tabla de atributos y usamos los valores o el contenido como categorías para ordenar y mostrar los datos ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_categorized_wiki.html)):
-    - En el panel de capas, haga clic derecho en la capa __“Health_Facilities_Flood_2024_AOI”__ y seleccione `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda.
-    - Vaya a la pestaña `Symbology`.
-    - En la parte superior de la ventana, encontrará un menú desplegable. Ábralo y elija `Categorized`.
-    - En `Value`, seleccione la columna que añadimos, “Flood_affected”.
-    - Más abajo en la ventana, haga clic en `Classify`. Deben aparecer los valores únicos de la columna “Flood_affected”.
+    - En el panel de capas, haga clic derecho en la capa __“Health_Facilities_Flood_2024_AOI”__ y seleccione `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda.
+    - Vaya a la pestaña `Simbología`.
+    - En la parte superior de la ventana, encontrará un menú desplegable. Ábralo y elija `Categorizado`.
+    - En `Valor`, seleccione la columna que añadimos, “Flood_affected”.
+    - Más abajo en la ventana, haga clic en `Clasificar`. Deben aparecer los valores únicos de la columna “Flood_affected”.
     - Puede hacer doble clic en cada color de la tabla para ajustar la simbolización y el color de cada valor.
-    - Una vez que haya terminado de ajustar los colores, haga clic en `Apply` y, a continuación, en `Ok` para cerrar la ventana de simbolización.
+    - Una vez que haya terminado de ajustar los colores, haga clic en `Aplicar` y, a continuación, en `Aceptar` para cerrar la ventana de simbolización.
 
 :::{figure} /fig/en_qgis_categorized_classification_Pakistan_flood_exercise.png
 ---
 width: 600px
-name: Flood affected health facilities classification
+name: es_Flood affected health facilities classification
 align: center
 ---
 Clasificación de los centros de salud afectados por las inundaciones.
@@ -395,7 +396,7 @@ __Contexto__
 ---
 width: 100px
 align: right
-name: IFRC Logistics Icon
+name: es_IFRC Logistics Icon
 ---
 :::
 
@@ -411,7 +412,7 @@ Para tener una imagen más clara, necesitamos importar los datos de la red vial 
 
 :::{figure} /fig/Module_3/en_m3_ex5_Task_3.png
 ---
-name: Task_3_workflow
+name: es_Task_3_workflow
 width: 750 px
 ---
 
@@ -420,31 +421,31 @@ width: 750 px
 
 1. Cargue el conjunto de datos __“Roads_Larkana.gpkg”__ desde la carpeta de entrada en su proyecto QGIS.
 2. Configuremos la clasificación por categorías. En los datos de OpenStreetMap se distingue entre diferentes tipos de carreteras utilizando la columna “autopista”.
-    - Haga clic derecho en la capa __“Roads_Larkana”__ y seleccione `Properties`. Se abrirá la ventana de propiedades.
-    - Vaya a la pestaña `Symbology`.
-    - En la parte superior, seleccione `Categorized` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_categorized_wiki.html)).
-    - En `Value`, seleccione “autopista”.
-    - Haga clic en `Classify`. Debería ver todos los valores únicos de la columna “autopista”.
+    - Haga clic derecho en la capa __“Roads_Larkana”__ y seleccione `Propriedades`. Se abrirá la ventana de propiedades.
+    - Vaya a la pestaña `Simbología`.
+    - En la parte superior, seleccione `Categorizado` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_categorized_wiki.html)).
+    - En `Valor`, seleccione “autopista”.
+    - Haga clic en `Clasificar`. Debería ver todos los valores únicos de la columna “autopista”.
     - Quite las marcas de verificación de todas las categorías excepto de `motorway`, `primary`, `secondary` y `trunk`.
     - Para ajustar los colores, puede hacer doble clic en las categorías.
     :::{figure} /fig/PAK_road_classification.PNG
     ---
     width: 600px
-    name: Pakistan road classification
+    name: es_Pakistan road classification
     align: center
     ---
     Ventana de simbolización para la capa Roads_Larkana.gpkg.
     :::
-    - Tiene la opción de personalizar el ancho de las líneas de las carreteras principales para mejorar la visualización. Abra la ventana de simbología y seleccione `Symbol`. En la nueva ventana, se puede ajustar el ancho de las líneas según su preferencia.
+    - Tiene la opción de personalizar el ancho de las líneas de las carreteras principales para mejorar la visualización. Abra la ventana de simbología y seleccione `Símbolo`. En la nueva ventana, se puede ajustar el ancho de las líneas según su preferencia.
     :::{figure} /fig/PAK_road_symbol_weight.png
     ---
     width: 600px
-    name: Pakistan road classification
+    name: es_Pakistan road classification
     align: center
     ---
     Ajuste de la simbolización de los diferentes tipos de carreteras
     :::
-    - Una vez que haya terminado, haga clic en `Apply` y `OK` para cerrar la ventana de simbología.
+    - Una vez que haya terminado, haga clic en `Aplicar` y `Aceptar` para cerrar la ventana de simbología.
 
 ::::{margin}
 :::{tip}
@@ -453,22 +454,21 @@ Existen métodos para automatizar el proceso de digitalización que se tratarán
 ::::
 
 3. Por último, queremos visualizar las carreteras que están inundadas. Para simplificar el proceso, buscaremos manualmente las carreteras que se intersecan con la capa de extensión de inundación y las marcaremos con puntos. Para ello, crearemos un nuevo conjunto de datos de puntos que representen las carreteras bloqueadas.
-    * Haga clic en `Layer` --> `Create Layer` -> `New GeoPackage Layer`([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#create-a-new-layer))
-    - En `Database`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre __“PAK_flood_2024_blocked_road”__. Haga clic en `Save`.
-    - `Geometry type`: Seleccione `Point`
-    - En `Additional dimension` debe asegurarse siempre de que `None` está marcada.
+    * Haga clic en `Capa` --> `Crear capa` -> `Nueva capa GeoPackage`([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#create-a-new-layer))
+    - En `Base de datos`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre __“PAK_flood_2024_blocked_road”__. Haga clic en `Guardar`.
+    - `Tipo de geometría`: Seleccione `Punto`
     - Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”. Por defecto, QGIS selecciona el SRC del proyecto.
-    - En `New Field` puede añadir columnas a la nueva capa. Agregue la columna __“Blocked_road”__.
-        * `Name` = __“Blocked_road”__
-        * `Type`: Seleccione `Text(string)`
-        * Haga clic en `Add to Fields List` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Fields List`.
-        * Cree otro campo con el `name` __"Blocked_bridge"__ y el `Type`: Seleccione `Text(string)`.
-        * Haga clic en `OK`.
+    - En `Nuevo campo` puede añadir columnas a la nueva capa. Agregue la columna __“Blocked_road”__.
+        * `Nombre` = __“Blocked_road”__
+        * `Tipo`: Seleccione `Texto (cadena)`
+        * Haga clic en `Añadir a la lista de campos` ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a `Lista de campos`.
+        * Cree otro campo con el `nombre` __"Blocked_bridge"__ y el `Tipo`: Seleccione `Texto (cadena)`.
+        * Haga clic en `Aceptar`.
     * Su nueva capa aparecerá en el panel de capas.
     :::{figure} /fig/PAK_blocked_road_new_layer.png
     ---
     width: 400px
-    name: Pakistan road classification
+    name: es_Pakistan road classification
     align: center
     ---
     Creación de una nueva capa de puntos. Asegúrese de especificar una ubicación utilizando los tres puntos en la parte superior.
@@ -476,13 +476,13 @@ Existen métodos para automatizar el proceso de digitalización que se tratarán
 
 ::::{margin}
 :::{tip}
-Si no puede ver la barra de herramientas, haga clic en la pestaña `View` -> `Toolbars` y marque `Digitizing Toolbar` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#creation-of-point-data)).
+Si no puede ver la barra de herramientas, haga clic en la pestaña `Ver` -> `Barras de herramientas` y marque `Digitalización` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#creation-of-point-data)).
 :::
 ::::
 
 4. Ahora puede crear un punto para cada lugar donde la capa de inundación cubre las carreteras principales que conducen a Larkana ([Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#creation-of-point-data)).
-    * Actualmente la nueva capa __“PAK_flood_2024_blocked_road”__ está vacía. Para agregar entidades, podemos usar `Digitizing Toolbar`. ![](/fig/Digitizing_Toolbar.png).
-    * Active el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png). A continuación, active la opción de agregar nuevos puntos haciendo clic en ![](/fig/mActionCapturePoint.png) `Add Point Feature`.
+    * Actualmente la nueva capa __“PAK_flood_2024_blocked_road”__ está vacía. Para agregar entidades, podemos usar la barra de herramientas `Digitalización`. ![](/fig/Digitizing_Toolbar.png).
+    * Active el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png). A continuación, active la opción de agregar nuevos puntos haciendo clic en ![](/fig/mActionCapturePoint.png) `Añadir punto`.
     * Esté atento a los lugares donde la capa de inundación cubre las carreteras principales o puentes que salen de Larkana. Una vez que haya encontrado uno, haga clic con el botón izquierdo en la ubicación que desea digitalizar.
     * Una vez que haga clic en un lugar, aparecerá una ventana. Escriba `Yes` en el `Blocked_road` de campo para indicar que la carretera está bloqueada.
     * Repita este paso con todas las ubicaciones que encuentre.
@@ -490,7 +490,7 @@ Si no puede ver la barra de herramientas, haga clic en la pestaña `View` -> `To
     :::{figure} /fig/PAK_blocked_road_digitalise.png
     ---
     width: 400px
-    name: Digitising blocked roads
+    name: es_Digitising blocked roads
     align: center
     ---
     Esta ventana emergente se abrirá una vez que haya seleccionado una ubicación para agregar un punto. Asegúrese de introducir la información pertinente en las columnas.
@@ -501,15 +501,15 @@ Si no puede ver la barra de herramientas, haga clic en la pestaña `View` -> `To
 
 5. Ahora, ya hemos mapeado todas las carreteras principales bloqueadas de acceso a Larkana. Podemos usar iconos en lugar de solo puntos para mostrar la capa __“PAK_flood_2024_blocked_road”__ y visualizar mejor este hecho ([Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_single_symbol_wiki.html)).
 
-    * Haga clic derecho en la capa __“PAK_flood_2024_blocked_road”__ en el panel de Capas y haga clic en `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Symbology`.
-    * Mantenga la opción `Single Symbol`. Seleccione cualquier símbolo de la lista, que sea adecuado para marcar carreteras bloqueadas.
-    * Una vez que haya terminado, haga clic en `Apply` y `OK` para cerrar la ventana de simbología.
+    * Haga clic derecho en la capa __“PAK_flood_2024_blocked_road”__ en el panel de Capas y haga clic en `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales a la izquierda. Vaya a la pestaña `Propriedades`.
+    * Mantenga la opción `Símbolo ùnico`. Seleccione cualquier símbolo de la lista, que sea adecuado para marcar carreteras bloqueadas.
+    * Una vez que haya terminado, haga clic en `Aplicar` y `Aceptar` para cerrar la ventana de simbología.
     * Después de que haya terminado, haga clic en el icono ![](/fig/qgis_move_symbol.png) para cerrar el modo de selección de entidades.
 
     :::{figure} /fig/PAK_blocked_road_symbol.png
     ---
     width: 600px
-    name: Visualising blocked roads with icons
+    name: es_Visualising blocked roads with icons
     align: center
     ---
     Ajuste de la simbolización para la nueva capa de puntos. Asegúrese de elegir un marcador que pueda identificarse fácilmente.
@@ -524,7 +524,7 @@ En el suroeste de la ciudad de Larkana, se encuentra el [Aeropuerto de Mohenjoda
 :::{figure} /fig/PAK_road_access_airport.png
 ---
 width: 600px
-name: Road access to Mohenjodaro Airport
+name: es_Road access to Mohenjodaro Airport
 align: center
 ---
 Acceso por carretera al aeropuerto de Mohenjodaro
@@ -545,7 +545,7 @@ El equipo de operaciones tiene ahora toda la información que necesita para plan
 ---
 width: 100px
 align: right
-name: IFRC map icon
+name: es_IFRC map icon
 ---
 :::
 

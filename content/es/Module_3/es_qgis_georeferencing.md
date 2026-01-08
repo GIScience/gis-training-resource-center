@@ -48,22 +48,22 @@ Para georreferenciar un mapa en PDF, debe seguir los siguientes pasos:
 
 1. Prepare el mapa que desea georreferenciar exportando la página correspondiente del PDF o haciendo una captura de pantalla.
 2. En su ventana de QGIS, añada un mapa base utilizando XYZ Tiles:
-    1. `Layer` > `Add Layer` > `Add XYZ Tiles`.
+    1. `Capa` > `Añadir capa` > `Añadir capa XYZ...`.
     2. Se abrirá una nueva ventana. En `XYZ Connection`, en la parte superior de la ventana, seleccione “OpenStreetMap”.
-    3. Haga clic en `Add`.
+    3. Haga clic en `Añadir`.
     Lo ideal es utilizar un mapa base en el que pueda identificar ubicaciones exactas tanto en el mapa base como en el mapa que desea georreferenciar.
-3. Para abrir el georreferenciador vaya a la barra superior > `Layer` > `Georeferencer` (véase {numref}`open_georeferencer`).
+3. Para abrir el georreferenciador vaya a la barra superior > `Capa` > `Georrefernciador` (véase {numref}`open_georeferencer`).
 
 :::{figure} /fig/en_3.36_open_georefencer.png
 ---
-name: en_3.36_open_georefencer
+name: es_3.36_open_georefencer
 width: 500 px
 ---
 Abrir el Georreferenciador en QGIS 3.36.
 :::
 
-4. Se abrirá una nueva ventana. Este es el __georreferenciador__. Para agregar una imagen que georreferenciar, haga clic en ![](/fig/3.36_add_raster_georef.png)`Open Raster`.
-5. Seleccione la imagen del mapa que desea georreferenciar. Puede cargar archivos de imagen, así como PDF. Haga clic en `Open`.
+4. Se abrirá una nueva ventana. Este es el __georreferenciador__. Para agregar una imagen que georreferenciar, haga clic en ![](/fig/3.36_add_raster_georef.png) `Abrir ráster`.
+5. Seleccione la imagen del mapa que desea georreferenciar. Puede cargar archivos de imagen, así como PDF. Haga clic en `Abrir`.
 6. La imagen aparecerá en el centro de la ventana del georreferenciador. Haga clic en ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
 7. Se abrirá una nueva ventana. Aquí puede establecer el tipo de transformación y el sistema de referencia de coordenadas (SRC) objetivo. A continuación, puede establecer el nombre y la ubicación de guardado del archivo. Asegúrese de que `Load in the project when done` esté marcado.
 
@@ -80,14 +80,14 @@ En la mayoría de los casos, puede dejar el tipo de transformación en lineal. L
 
 ::::
 
-8. Haga clic en `Ok`.
-9. Una vez que haya establecido el tipo de transformación, puede comenzar a agregar puntos de control terrestre (PCT) haciendo clic en ![](/fig/3.36_georef_add_point.png) `Add Point`. Los puntos de control terrestre son puntos a los que se asignan coordenadas geográficas específicas.
+8. Haga clic en `Aceptar`.
+9. Una vez que haya establecido el tipo de transformación, puede comenzar a agregar puntos de control terrestre (PCT) haciendo clic en ![](/fig/3.36_georef_add_point.png) `Add GCP point`. Los puntos de control terrestre son puntos a los que se asignan coordenadas geográficas específicas.
 10. Haga clic en un punto de la imagen del mapa. Esta será la ubicación precisa que puede identificar tanto en el mapa base como en el mapa que desea georreferenciar.
 11. Cuando haga clic en una posición, aparecerá una ventana nueva. Aquí, agregue las coordenadas al punto que seleccionó. Hay dos opciones para hacerlo:
     - Introducir las coordenadas manualmente. Necesitará conocer la coordenada exacta. A veces, en los mapas hay una cuadrícula de coordenadas.
     - Seleccionar los puntos ![](/fig/en_3.36_georef_select_from_canvas.png). Este modo minimizará el georreferenciador y abrirá el lienzo del mapa de QGIS. Amplíe la misma ubicación que seleccionó en el mapa no georreferenciado y haga clic una vez.
-    - Una vez introducidas las coordenadas, haga clic en `Ok`
-12. La ventana del georreferenciador se abrirá de nuevo. Esta vez, debajo de la imagen del mapa, podrá ver un punto en la tabla. Estos son los PCT. Continúe añadiendo más PCT. Repártalos por todo el mapa. Asegúrese de que el `Mean error` en la esquina inferior derecha de la ventana del georreferenciador sea lo más bajo posible (lo ideal es que sea menor a 5).
+    - Una vez introducidas las coordenadas, haga clic en `Aceptar`
+12. La ventana del georreferenciador se abrirá de nuevo. Esta vez, debajo de la imagen del mapa, podrá ver un punto en la tabla. Estos son los PCT. Continúe añadiendo más PCT. Repártalos por todo el mapa. Asegúrese de que el `Error medio` en la esquina inferior derecha de la ventana del georreferenciador sea lo más bajo posible (lo ideal es que sea menor a 5).
 
 :::{figure} /fig/en_3.36_georef_dialogue_GCP.png
 ---
@@ -97,7 +97,7 @@ name: en_3.36_georef_dialogue_GCP
 Diálogo de georreferenciación en QGIS 3.36
 :::
 
-13. Una vez que haya añadido suficientes puntos, haga clic en ![](/fig/3.36_start_georef.png) `Start Georeferencing`. QGIS usará los puntos que haya añadido para transformar la imagen en una imagen georreferenciada, en la que cada píxel tiene asignadas coordenadas GPS.
+13. Una vez que haya añadido suficientes puntos, haga clic en ![](/fig/3.36_start_georef.png) `Comenzar Georreferenciado`. QGIS usará los puntos que haya añadido para transformar la imagen en una imagen georreferenciada, en la que cada píxel tiene asignadas coordenadas GPS.
 14. Puede cerrar la ventana del georreferenciador. Decida si desea guardar los PCT en un archivo. Si no está seguro de si su georreferenciación fue lo suficientemente precisa, guarde los PCT para no tener que hacer todo el trabajo de nuevo.
 15. Felicitaciones, el mapa georreferenciado ahora aparecerá como una capa ráster en su proyecto de QGIS
 
@@ -105,7 +105,7 @@ Diálogo de georreferenciación en QGIS 3.36
 :::{figure} /fig/en_3.36_finished_georef.png
 ---
 width: 700 px
-name: en_3.36_finished_georef
+name: es_3.36_finished_georef
 ---
 Mapa georreferenciado de Somalia en el lienzo del mapa de QGIS
 :::
@@ -123,9 +123,9 @@ También es posible eliminar el fondo blanco. Esto se hace asignando los píxele
 1. Para abrir las propiedades de la capa, <kbd>haga clic derecho</kbd> en la capa y seleccione __Propiedades__.
 2. Vaya a la pestaña __Transparencia__.
 3. En el cuadro __Custom Transparency Options__, en Transparency Band, seleccione Band 4 (Alpha).
-4. A la derecha, haga clic en ![](/fig/en_3.36_add_value_from_display) `Add value from display`
+4. A la derecha, haga clic en ![](/fig/en_3.36_add_value_from_display) `Añadir valores de la visualización`
 5. Haga clic en el color blanco del mapa georreferenciado en el lienzo del mapa.
-6. Haga clic en `Apply`.
+6. Haga clic en `Aplicar`.
 
 ## Preguntas de autoevaluación
 

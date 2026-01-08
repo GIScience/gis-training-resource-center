@@ -10,12 +10,12 @@
 
 La clasificación de datos geoespaciales en los SIG consiste en categorizar la información geográfica en distintos grupos o clases en función de características o atributos compartidos. A cada clase se le puede asignar un símbolo o color distinto. Este proceso mejora la organización e interpretación de los datos espaciales.
 
-Los atributos de los datos geoespaciales se almacenan en una columna específica dentro de la tabla de atributos. Esencialmente, elegimos una columna que contenga las características específicas de interés, lo que permite a QGIS agrupar los datos según estos atributos seleccionados ({numref}`classification_basic`).
+Los atributos de los datos geoespaciales se almacenan en una columna específica dentro de la tabla de atributos. Esencialmente, elegimos una columna que contenga las características específicas de interés, lo que permite a QGIS agrupar los datos según estos atributos seleccionados ({numref}`es_classification_basic`).
 
 :::{figure} /fig/classification_basic.drawio.png
 ---
 width: 900px
-name: classification_basic
+name: es_classification_basic
 align: center
 ---
 Clasificación básica (fuente: HeiGIT).
@@ -38,7 +38,7 @@ En la clasificación de datos geoespaciales, se utilizan las escalas __nominal__
 
     :::{figure} /fig/nominal_scale_examples.png
     ---
-    name: nominal_scale_example
+    name: es_nominal_scale_example
     width: 600 px
     ---
     Ejemplos de datos nominales y su representación (fuente: Dickmann [2018] Kartographie, Westermann).
@@ -49,7 +49,7 @@ En la clasificación de datos geoespaciales, se utilizan las escalas __nominal__
 
     :::{figure} /fig/ordinal_scale_example.png
     ---
-    name: ordinal_scale_example
+    name: es_ordinal_scale_example
     width: 600 px
     ---
     Ejemplos de datos ordinales y su representación (fuente: Dickmann [2018] Kartographie, Westermann)
@@ -62,7 +62,7 @@ En la clasificación de datos geoespaciales, se utilizan las escalas __nominal__
 
     :::{figure} /fig/interval_ratio_scale_example.png
     ---
-    name: interval_scale_example
+    name: es_interval_scale_example
     width: 600 px
     ---
     Ejemplos de datos métricos y su representación (fuente: Dickmann [2018] Kartographie, Westermann).
@@ -73,7 +73,7 @@ Según el tipo de escala, utilizará distintos métodos de clasificación. A con
 
 ## Clasificación por símbolo único
 
-Por defecto, QGIS genera una visualización de todas las capas en la configuración `Single symbol`. Esto significa que todas las entidades de una capa se visualizan igual. En esta configuración, puede cambiar muchos parámetros como el color o la opacidad, __pero no puede clasificar los datos en varios grupos.__
+Por defecto, QGIS genera una visualización de todas las capas en la configuración `Símbolo Único`. Esto significa que todas las entidades de una capa se visualizan igual. En esta configuración, puede cambiar muchos parámetros como el color o la opacidad, __pero no puede clasificar los datos en varios grupos.__
 
 La clasificación por símbolo único es útil cuando se dispone de un conjunto de datos sencillo. Cuando se carga, por ejemplo, una capa de polígonos con los límites administrativos de una región y una capa de puntos con las principales ciudades. En este caso, puede elegir una clasificación por símbolo único y ajustar el símbolo para cada capa.
 
@@ -84,20 +84,20 @@ La clasificación por símbolo único es útil cuando se dispone de un conjunto 
 
 __Para ajustar el estilo de una capa…__
 1. Haga clic derecho en la capa.
-2. Haga clic en `Symbology`.
-3. Confirme que el ajuste de capa está en `Single Symbol`.
-4. Seleccione el color que desee en el menú desplegable. Para ver más opciones de color, seleccione en el menú desplegable `Choose Color`.
+2. Haga clic en `Simbología`.
+3. Confirme que el ajuste de capa está en `Símbolo Único`.
+4. Seleccione el color que desee en el menú desplegable. Para ver más opciones de color, seleccione en el menú desplegable `Seleccionar Color`.
 5. *Opcional*: Puede ajustar la opacidad/transparencia de la capa. Esto puede ser muy útil cuando se desea mostrar varias capas superpuestas.
 6. *Opcional*: Aquí puede establecer el tipo de unidad. Esto es útil si desea visualizar puntos en un tamaño determinado, por ejemplo.
 7. *Opcional:* Aquí puede encontrar rápidamente estilos estándar y usados anteriormente.
-8. Haga clic en `Apply` para aplicar el ajuste.
-9. Haga clic en `OK` para cerrar la ventana.
+8. Haga clic en `Aplicar` para aplicar el ajuste.
+9. Haga clic en `ACeptar` para cerrar la ventana.
 
 
 :::{figure} /fig/Single_symbol_classify.png
 ---
 width: 900px
-name: Single_symbol_classify
+name: es_Single_symbol_classify
 align: center
 ---
 Ajustar el estilo de una capa.
@@ -114,7 +114,7 @@ Al asignar un símbolo a cada categoría, puede facilitar la interpretación de 
 
 :::{figure} /fig/fr_simple_classification_example_map.png
 ---
-name: fr_simple_classification_example_map
+name: es_simple_classification_example_map
 width: 750px
 ---
 Niger - Régions de Tillabéri et de Tahoua Éducation: infrastructures scolaires fermées ou endommagées pour cause d'insécurité entre 2019 et 2022 (fuente: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf)).
@@ -133,7 +133,7 @@ La clasificación por categorías suele utilizarse para los datos de escala __no
 :::{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
 width: 750 px
-name: Categorized_district_map_SierraLeone
+name: es_Categorized_district_map_SierraLeone
 align: center
 ---
 Ejemplo de mapa con una clasificación por categorías.
@@ -146,15 +146,15 @@ Ejemplo de mapa con una clasificación por categorías.
 
 __Para clasificar los datos en categorías…__
 1. Haga clic derecho en la capa.
-2. Haga clic en `Symbology`.
-3. Haga clic en `Categorized`.
-4. En el menú desplegable `Value`, seleccione la columna en función de la cual desea clasificar los datos.
-5. Más abajo, haga clic en `Classify`. Ahora debería ver todos los valores únicos o atributos de la columna seleccionada en `Value`. Para añadir o eliminar valores individuales, utilice los botones `-` y `+`.
-6. *Opcional*: En el menú desplegable `Symbol`, puede seleccionar los colores y símbolos que desea utilizar.
-7. *Opcional*: En el menú desplegable `Color ramp`, puede especificar la gama de colores que desea utilizar.
-8. *Opcional*: Puede abrir el panel `Layer Rendering` en el botón de la ventana. Aquí puede ajustar la opacidad/transparencia de la capa.
-9. Haga clic en `Apply` para aplicar el ajuste.
-10. Haga clic en `OK` para cerrar la ventana.
+2. Haga clic en `Simbología`.
+3. Haga clic en `Categorizado`.
+4. En el menú desplegable `Valor`, seleccione la columna en función de la cual desea clasificar los datos.
+5. Más abajo, haga clic en `Clasificar`. Ahora debería ver todos los valores únicos o atributos de la columna seleccionada en `Valor`. Para añadir o eliminar valores individuales, utilice los botones `-` y `+`.
+6. *Opcional*: En el menú desplegable `Símbolo`, puede seleccionar los colores y símbolos que desea utilizar.
+7. *Opcional*: En el menú desplegable `Rampa de color`, puede especificar la gama de colores que desea utilizar.
+8. *Opcional*: Puede abrir el panel `Representación de capa` en el botón de la ventana. Aquí puede ajustar la opacidad/transparencia de la capa.
+9. Haga clic en `Aplicar` para aplicar el ajuste.
+10. Haga clic en `Aceptar` para cerrar la ventana.
 
 :::
 
@@ -166,13 +166,13 @@ La clasificación graduada en los SIG consiste en categorizar los datos espacial
 
 :::{figure} /fig/example_classification_hexagons.png
 ---
-name: example_classification_hexagons
+name: es_example_classification_hexagons
 width: 750 px
 ---
 REACH, Ucrania, Mapa de seguimiento de los emplazamientos colectivos de desplazados internos, Actives, julio de 2024 (fuente: [Reach](https://repository.impact-initiatives.org/document/impact/192097a8/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_JULY2024_ENG_A4-1.pdf)).
 :::
 
-En {numref}`example_classification_hexagons`, cada celda hexagonal contiene un valor de “número de emplazamientos por cada 150 km²” que oscila entre 1 y 91. Las celdas están organizadas en 5 categorías, lo que facilita la distinción entre los distintos valores de cada celda. Al reducir al mínimo la cantidad de clases, el lector puede leer y comprender el mapa más rápido.
+En {numref}`es_example_classification_hexagons`, cada celda hexagonal contiene un valor de “número de emplazamientos por cada 150 km²” que oscila entre 1 y 91. Las celdas están organizadas en 5 categorías, lo que facilita la distinción entre los distintos valores de cada celda. Al reducir al mínimo la cantidad de clases, el lector puede leer y comprender el mapa más rápido.
 
 ::::
 
@@ -199,7 +199,7 @@ En el ejemplo que figura más abajo se ve un histograma de la población de dist
 ---
 width: 900px
 align: center
-name: Histogram_example.drawio
+name: es_Histogram_example.drawio
 ---
 Histograma de datos de población. Fuente: [Axis Maps](https://www.axismaps.com/guide/data-classification).
 :::
@@ -262,29 +262,29 @@ La configuración de una clasificación graduada en QGIS es similar a la configu
 
 __Clasificar los datos en clases…__
 1. Haga clic derecho en la capa.
-2. Haga clic en `Symbology`.
-3. Haga clic en `Graduated`.
-4. En el menú desplegable `Value` seleccione la columna según la cual desea clasificar sus datos.
+2. Haga clic en `Simbología`.
+3. Haga clic en `Graduado`.
+4. En el menú desplegable `Valor` seleccione la columna según la cual desea clasificar sus datos.
 5. Seleccione el número de clases que desea utilizar.
-6. En `Mode` seleccione el método de clasificación que desea utilizar, p. ej., recuento equitativo (cuantil).
-7. Haga clic en `Classify`. Ahora debería ver todas las clases y la distribución de los valores. Para añadir o eliminar clases utilice los botones `-` y `+`.
-8. *Opcional*: Haga clic en `Histogram` -> `Load Values`. Ahora puede ver la distribución exacta de los valores entre las clases. Esto resulta muy práctico para elegir un método de clasificación. También puede comprobar el valor medio y la desviación estándar.
+6. En `Modo` seleccione el método de clasificación que desea utilizar, p. ej., recuento equitativo (cuantil).
+7. Haga clic en `Clasificar`. Ahora debería ver todas las clases y la distribución de los valores. Para añadir o eliminar clases utilice los botones `-` y `+`.
+8. *Opcional*: Haga clic en `Histograma` -> `Cargar valores`. Ahora puede ver la distribución exacta de los valores entre las clases. Esto resulta muy práctico para elegir un método de clasificación. También puede comprobar el valor medio y la desviación estándar.
 
 :::{figure} /fig/Graduated_histogram.png
 ---
 width: 900px
-name: Graduated_histogram
+name: es_Graduated_histogram
 align: center
 ---
 Clasificación graduada. Fuente: [Axis Maps](https://www.axismaps.com/guide/data-classification).
 :::
 
-9. *Opcional*: En el menú desplegable `Symbol` puede seleccionar los colores y símbolos que desea utilizar.
-10. *Opcional*: En el menú desplegable `Color ramp` puede especificar la gama de colores que desea utilizar. Para ver todas las rampas de color, haga clic en la flecha hacia abajo de la `Color ramp` -> `All Color Ramps`.
-11. *Opcional*: En `Legend Format` puede ajustar la precisión con la que se mostrará el rango de las clases en la leyenda. Normalmente, es práctico no utilizar números demasiado complicados.
-12. *Opcional*: Puede abrir el panel `Layer Rendering` en el botón de la ventana. Aquí puede ajustar la opacidad/transparencia de la capa.
-13. Haga clic en `Apply` para aplicar el ajuste.
-14. Haga clic en `OK` para cerrar la ventana.
+9. *Opcional*: En el menú desplegable `Símbolo` puede seleccionar los colores y símbolos que desea utilizar.
+10. *Opcional*: En el menú desplegable `Rama de color` puede especificar la gama de colores que desea utilizar. Para ver todas las rampas de color, haga clic en la flecha hacia abajo de la `Rampa de color` -> `Todas las rampas de color`.
+11. *Opcional*: En `Tamaño de leyenda definido por datos` puede ajustar la precisión con la que se mostrará el rango de las clases en la leyenda. Normalmente, es práctico no utilizar números demasiado complicados.
+12. *Opcional*: Puede abrir el panel `Representación de capas` en el botón de la ventana. Aquí puede ajustar la opacidad/transparencia de la capa.
+13. Haga clic en `Aplicar` para aplicar el ajuste.
+14. Haga clic en `ACeptar` para cerrar la ventana.
 
 :::{figure} /fig/classification_graduated_basic.png
 ---
