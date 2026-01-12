@@ -25,7 +25,7 @@ viales, terreno, hidrografía). Muestran la ubicación física de los objetos en
 los elementos en los mapas topográficos se realiza mediante signos convencionales (por ejemplo, azul para el agua, verde para los bosques, amarillo para
 las tierras agrícolas).
 
-:::{figure} ../../fig/en_30.30.2_topographic_map_examples.png
+:::{figure} /fig/en_30.30.2_topographic_map_examples.png
 ---
 width: 600px
 name: es_30.30.2_topographic_map_examples
@@ -38,7 +38,7 @@ la población, la incidencia de enfermedades, el riesgo de inundaciones, etc. L
 las reglas de la semiología gráfica.
 
 
-:::{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
+:::{figure} /fig/en_30.30.2_thematic_maps_examples.png
 ---
 width: 600px
 name: es_30.30.2_thematic_maps_examples
@@ -54,7 +54,7 @@ información que se desea transmitir.
 
 ## Variables visuales
 
-:::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
+:::{figure} /fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
 name: es_30.30.2_graphic_semiology_signs
@@ -67,7 +67,7 @@ el tamaño, el tono, el valor, la textura y la orientación__. Estas variables p
 a su disposición. Permiten expresar la __relación de diferencia, orden, asociación o cantidad__
 entre cada elemento, lo que ayuda a mostrar información diferente.
 
-:::{figure} ../../fig/en_visual_variables.png
+:::{figure} /fig/en_visual_variables.png
 ---
 name: es_visual_variables
 width: 500px
@@ -290,7 +290,7 @@ datos numéricos o datos que pueden ordenarse. Por ejemplo, para el tamaño de 
 de colores secuencial para mostrar la diferencia relativa entre los valores. Sin embargo, si los datos tienen valores positivo __y__ negativo
 debe utilizarse un gradiente de color divergente.
 
-:::{figure} ../../fig/en_colour_gradients_qualities.png
+:::{figure} /fig/en_colour_gradients_qualities.png
 ---
 name: es_colour_gradients_qualities
 width: 750px
@@ -303,7 +303,7 @@ la gradación se distingue fácilmente y se traduce bien en blanco y negro. En l
 buenas combinaciones de colores, ya que es difícil distinguir la gradación y no se traducen bien al negro y al
 blanco. Puede conseguir una secuencia clara graduando la __saturación__ del gradiente de color.
 
-:::{figure} ../../fig/de_colour_gradients_saturation.png
+:::{figure} /fig/de_colour_gradients_saturation.png
 ---
 name: es_colour_gradients_saturation
 width: 750px
@@ -316,7 +316,7 @@ Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)
 
 Los gradientes de color también pueden abarcar múltiples tonos:
 
-:::{figure} ../../fig/colour_gradients_hues.png
+:::{figure} /fig/colour_gradients_hues.png
 ---
 name: es_colour_gradients_hues
 width: 750px
@@ -333,7 +333,7 @@ generar paletas de colores para su caso práctico.
 
 Al elegir los colores, hay que tener en cuenta que los gradientes de color (especialmente los degradados divergentes de rojo a verde) pueden ser difíciles o imposibles de distinguir para las personas daltónicas.
 
-:::{figure} ../../fig/Colour_Blindness.png
+:::{figure} /fig/Colour_Blindness.png
 ---
 name: es_Colour_Blindness
 width: 750px
@@ -412,7 +412,7 @@ El esquema debe ser perceptivamente eficaz, accesible (por ejemplo, para lector
 
 3. __¿Cuál es la diferencia entre esquemas de colores categóricos (cualitativos), secuenciales y divergentes? ¿Cuándo es apropiado cada uno?__
 
-:::{dropdown}
+:::{dropdown} Repuesta
 
 - __Categórico (cualitativo)__
     Se utiliza para datos nominales (sin orden inherente). Cada categoría recibe un tono (o forma) distinto sin que ello implique magnitud. Ejemplo: tipos de uso del suelo (forestal, urbano, agua).
