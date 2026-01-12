@@ -57,7 +57,7 @@ La combinación de colores de las carreteras permite leer el mapa de forma intui
 
 :::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
 ---
-name: REACH Flooding Risk Ouhman Region, Central African Republic
+name: es_EACH Flooding Risk Ouhman Region, Central African Republic
 width: 720 px
 ---
 Riesgo de inundaciones en la región de Ouham de la República Centroafricana (fuente: REACH).
@@ -114,7 +114,7 @@ __¿Por qué es importante en el sistema de información geográfica (SIG)?__
 
 :::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
 ---
-name: en_modifiable_areal_unit_problem_diagram
+name: es_modifiable_areal_unit_problem_diagram
 width: 500 px
 ---
 Visualización del Problema de la Unidad de Área Modificable (MAUP): El mismo indicador representado en tres escalas diferentes (Fuente: Kitchin, Rob y Lauriault, Tracey y McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )

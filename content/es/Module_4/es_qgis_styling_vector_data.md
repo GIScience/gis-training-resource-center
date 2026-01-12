@@ -23,8 +23,8 @@ Panel de estilo en QGIS 3.30.2.
 
 Para cada capa de QGIS existe un panel de estilos, en el que se puede cambiar la simbología, el color y la etiqueta de las entidades de esa capa. Hay dos maneras de abrir las opciones de estilo de capa en QGIS:
 
-1. Haga clic con el botón derecho en la capa a la que desee aplicar el estilo y seleccione `properties`. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la pestaña `Symbology`.
-2. Abra el panel de estilo de capas activándolo en `View`>`Panels`>`Styling Panel`. Normalmente, el panel aparecerá en la parte derecha del lienzo del mapa.
+1. Haga clic con el botón derecho en la capa a la que desee aplicar el estilo y seleccione `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas vertical a la izquierda. Vaya a la pestaña `Simbología`.
+2. Abra el panel de estilo de capas activándolo en `Ver` → `Paneles` → `Panel Estilo de Capas `. Normalmente, el panel aparecerá en la parte derecha del lienzo del mapa.
 
 A la izquierda del panel de estilo puede elegir las distintas pestañas para acceder a las diferentes opciones de estilo.
 
@@ -43,7 +43,7 @@ líneas o polígonos. Existen diferentes opciones para simbolizar estos diferent
 
 :::{figure} ../../fig/en_symbolization_vector_data.png
 ---
-name: en_symbolization_vector_data
+name: es_symbolization_vector_data
 width: 750px
 ---
 Simbolización de datos vectoriales; fuente: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science & Technology Body of Knowledge (edición segundo trimestre de 2017), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3.
@@ -61,11 +61,11 @@ La mayoría de los marcadores simples constan de un __relleno__ y un __contorno_
 - El contorno determina el color, el tipo y el grosor del contorno. Junto al color y la transparencia, el contorno es el elemento más critico para diferenciar entre los distintos elementos. Por ejemplo, las líneas más gruesas para las carreteras suelen significar vías de un orden superior (como autopistas), mientras que las líneas discontinuas finas, podrían significar senderos, inaccesibles para los vehículos de carretera.
 - Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un [método de categorización](/content/es/Module_3/es_qgis_data_classification.md).
 
-En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte la {numref}`en_3.36_m4_symbolisation_methods`). Los más importantes son __Single Symbol__, __Categorized__, __Graduated__, y __Rule base__.
+En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte la {numref}`es_3.36_m4_symbolisation_methods`). Los más importantes son __Single Symbol__, __Categorized__, __Graduated__, y __Rule base__.
 
 :::{figure} /fig/en_3.36_m4_symbolisation_methods.png
 ---
-name: en_3.36_m4_symbolisation_methods
+name: es_3.36_m4_symbolisation_methods
 width: 500 px
 ---
 
@@ -81,7 +81,7 @@ __Por ejemplo__, asigne un símbolo de hospital a una capa que solo contenga pun
 
 :::{tab-item} Categorizado
 
-- Clasifica las entidades en categorías con el uso de un atributo (`Value`).
+- Clasifica las entidades en categorías con el uso de un atributo (`Valor`).
 - Se crea una categoría para cada valor único de este atributo.
 - Cada categoría puede asignarse a un símbolo diferente.
 - Puede utilizarse tanto para datos nominales como ordinales.
@@ -129,14 +129,14 @@ Puede seguir la guía paso a paso con la descarga de los [límites administrativ
 Ahora, queremos cambiar la simbología de una capa para que __solo sean visibles los contornos de los polígonos__. Esto es necesario para hacer visibles las capas inferiores a ésta.
 
 Para cambiar la simbología de una sola capa:
-1. Abra `Styling panel` y vaya a la pestaña Symbology. Por defecto, la simbología se configurará en `Single Symbol`. Esto significa que se aplicarán los mismos colores y contornos a todas las entidades de esa capa.
-2. Haga clic en `Simple Fill`.
-3. Haga clic en la flecha situada a la derecha de `Fill Colour`.
-4. Marque la opción `Transparent Fill`.
+1. Abra `Panel de Estilo` y vaya a la pestaña Symbology. Por defecto, la simbología se configurará en `Símbolo Único`. Esto significa que se aplicarán los mismos colores y contornos a todas las entidades de esa capa.
+2. Haga clic en `Relleno simple`.
+3. Haga clic en la flecha situada a la derecha de `Color de relleno`.
+4. Marque la opción `Relleno transparente`.
 
 :::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
-name: en_30.30.2_vector_layer_styling_transparent
+name: es_30.30.2_vector_layer_styling_transparent
 width: 500 px
 ---
 :::
@@ -152,27 +152,27 @@ width: 500 px
 __Paso 1: Ordenar las capas__
 
 1. Importe los límites administrativos a su proyecto QGIS.
-2. Tenemos que ordenar las capas en el panel de “Layers” de modo que la `adm0` capa se sitúe en la parte superior, seguida de `adm1` y `adm2`. Al principio, esto puede parecer raro porque `Adm0` lo cubrirá todo.
+2. Tenemos que ordenar las capas en el panel de capas de modo que la `adm0` capa se sitúe en la parte superior, seguida de `adm1` y `adm2`. Al principio, esto puede parecer raro porque `Adm0` lo cubrirá todo.
 
 :::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
 ---
-name: en_30.30.2_changing_layer_style_1
+name: es_30.30.2_changing_layer_style_1
 height: 400px
 ---
 Ordene las capas y vaya al panel de estilo de la capa superior
 :::
 
 3. Cambie la simbología de la capa Adm0 abriendo el panel de estilos y navegando hasta la pestaña de “Symbology”.
-4. Haga clic en `Simple Fill` para abrir las opciones de estilo.
-5. Despliegue el menú `Fill Colour` y marque la opción `Transparent Fill`. Esto hará visibles solo los límites, por lo que __podremos ver la capa debajo de esta__.
-6. Elija un `Stroke Colour` y haga el `Stroke Width` de 0,66 milímetros.
-7. Haga clic en “OK”.
+4. Haga clic en `Relleno simple` para abrir las opciones de estilo.
+5. Despliegue el menú `Color de relleno` y marque la opción `Relleno transparente`. Esto hará visibles solo los límites, por lo que __podremos ver la capa debajo de esta__.
+6. Elija un `Color der marca` y haga el `Anchura de marca` de 0,66 milímetros.
+7. Haga clic en `Aplicar`.
 8. __Repita el mismo proceso__ para la capa Adm1, utilizando el mismo color que para Adm0 (estará en "colores recientes") y deje el ancho del trazo en 0,26.
 9. Ahora podemos ver los límites del país y sus estados y detrás de ellos los distritos (Adm2).
 10. Hagamos que el estilo de la capa de distritos sea consistente con los demás.
-11. Elija un `Fill Color`.
-12. Utilice el mismo “Stroke colour” que para Adm0 y Adm1, pero haga que el ancho sea de 0,1 milímetros y el estilo de trazo __Dash Line__.
-13. Haga clic en “OK” y mire su mapa: ¡Esperamos que empiece a verse más bonito!
+11. Elija un `Color de relleno`.
+12. Utilice el mismo `Color de marca` que para Adm0 y Adm1, pero haga que el ancho sea de 0,1 milímetros y el estilo de marca __Dash Line__.
+13. Haga clic en "Aplicar" y mire su mapa: ¡Esperamos que empiece a verse más bonito!
 
 :::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
 ---
@@ -197,26 +197,26 @@ Si una capa contiene valores numéricos, que son continuos, pueden organizarse e
 1. Descargue el [shapefile NGA_Adm1_Pop](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip) y guárdelo en su carpeta shapefile.
 2. En QGIS, desactive las capas Adm1 y Adm2, y solo deje la Adm0.
 3. Arrastre el shapefile NGA_Adm1_Pop a su mapa.
-4. Abra sus opciones de `Symbology` y elija `Graduated`.
+4. Abra sus opciones de `Simbología` y elija `Graduado`.
 5. __Seleccione el valor, que desea utilizar para asignar colores__, en este caso, será `total_pop`.
 
 :::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
-name: en_30.30.2_symbology_variable_ranges
+name: es_30.30.2_symbology_variable_ranges
 width: 550px
 ---
 Con rangos variables, seleccione simbología __graduada__ y elija el atributo con valores continuos
 :::
 
-6. Haga clic en `Classify` para __enumerar todos los valores divididos en clases__.
+6. Haga clic en `Clasificar` para __enumerar todos los valores divididos en clases__.
 7. Elija __en cuántas clases__ desea dividir los datos: digamos 4.
 8. Por defecto, la rampa de color será roja. Sin embargo, el rojo no es el color adecuado para el recuento de la población, ya que suele utilizarse para comunicar elementos negativos, como la inseguridad alimentaria o los casos de cólera.
 9. Haga clic en __la flecha situada junto a la rampa de color__ para elegir otra combinación de colores: digamos una rampa de color del blanco al azul.
-10. Haga clic en `Apply` para obtener una vista previa del aspecto de su capa, luego haga clic en `OK`.
+10. Haga clic en `Aplicar` para obtener una vista previa del aspecto de su capa, luego haga clic en `Aceptar`.
 
 :::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
-name: en_30.30.2_symbology_variable_ranges_2
+name: es_30.30.2_symbology_variable_ranges_2
 width: 500px
 ---
 Puede clasificar los valores continuos en clases y asignarles una rampa de color.
@@ -226,7 +226,7 @@ El siguiente mapa muestra los estados más poblados de Nigeria mediante una cate
 
 :::{figure} ../../fig/en_map_design_example_variable_ranges.png
 ---
-name: en_map_design_example_variable_ranges
+name: es_map_design_example_variable_ranges
 width: 500px
 ---
 Mapa que muestra la población de los estados nigerianos.
@@ -245,30 +245,30 @@ mapas coropléticos con símbolos graduados.
 La creación de mapas con símbolos graduados se realiza de forma similar a la creación de mapas coropléticos, pero implica un paso adicional:
 Crear centroides de los límites administrativos. Los centroides son puntos, que se sitúan en el centro calculado de
 polígonos (consulte el [módulo 5](/content/es/Module_5/es_qgis_non_spatial_tools.md)). 
-Utilizaremos la misma capa que para el mapa coroplético (consulte la {numref}`en_map_design_example_variable_ranges`):
+Utilizaremos la misma capa que para el mapa coroplético (consulte la {numref}`es_map_design_example_variable_ranges`):
 `NGA_Adm1_Pop`.
 
-1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroids`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`en_3.36_m4_centroids`)
+1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroides`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`es_3.36_m4_centroids`)
 
 :::{figure} /fig/en_3.36_m4_centroids.png
 ---
-name: en_3.36_m4_centroids
+name: es_3.36_m4_centroids
 width: 500 px
 ---
 Creación de centroides en QGIS 3.36.
 :::
 
-2. En `Input Layer`, seleccione la capa `NGA_Adm1_Pop`. Haga clic en `Run`.
-3. Aparecerá una nueva capa de puntos denominada `Centroids` en su panel de capas. Abra su panel de Layer Styling y navegue hasta la pestaña Symbology.
-4. Configure el método de simbolización a `Graduated`.
-5. En __Value__, seleccione `total_pop`.
-6. Cambie __Method__ de `Colour` a `Size`.
-7. Haga clic en `Classify`.
+2. En `Capa de entrada`, seleccione la capa `NGA_Adm1_Pop`. Haga clic en `Ejecutar`.
+3. Aparecerá una nueva capa de puntos denominada `Centroides` en su panel de capas. Abra su panel de Layer Styling y navegue hasta la pestaña Symbology.
+4. Configure el método de simbolización a `Graduado`.
+5. En __Valor__, seleccione `total_pop`.
+6. Cambie __Método__ de `Color` a `Tamaño`.
+7. Haga clic en `Clasificar`.
 8. *Opcional*: Cambiar el color y la transparencia de los círculos.
 
 :::{figure} /fig/en_m4_graduated_symbols_example.png
 ---
-name: en_m4_graduated_symbols_example
+name: es_m4_graduated_symbols_example
 width: 550 px
 ---
 Mapa de Nigeria que muestra los mismos datos. Una vez con el uso de colores graduados (coropléticos) y símbolos graduados (círculos proporcionales).
@@ -289,7 +289,7 @@ Podemos utilizar la simbología para __mostrar la diferencia entre las entidades
 #### Configuración de los diferentes símbolos de puntos para distintas entidades
 
 1. Descargue el [GeoPackage de incidentes de seguridad de ACLED](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip) y cárguelo en su proyecto de QGIS. Se trata de una capa de puntos en la que cada punto, indica un incidente de seguridad distinto.
-2. Abra la pestaña `Symbology` para esa capa y elija `Categorized` en lugar de `Single Symbol`.
+2. Abra la pestaña `Simbología` para esa capa y elija `Categorizado` en lugar de `Símbolo Único`.
 
 :::{note}
 La simbología categorizada se utiliza cuando se dispone de variables ***distintas***.
@@ -304,16 +304,16 @@ Cambie el tipo de simbología a `Categorized` y elija el valor (variable) que de
 :::
 
 3. Ahora tenemos que __elegir qué atributos queremos mostrar a través de la simbología__. En este caso, podría ser el número de víctimas o el actor que perpetró el acto. Categoricemos las entidades por `event_type`.
-4. Haga clic en `Classify` para __enumerar todos los valores únicos contenidos__ en el campo `event_type` (es decir, todos los posibles tipos de incidentes de seguridad registrados en nuestra tabla).
+4. Haga clic en `Clasificar` para __enumerar todos los valores únicos contenidos__ en el campo `event_type` (es decir, todos los posibles tipos de incidentes de seguridad registrados en nuestra tabla).
 5. Ahora podemos __cambiar el estilo de cada valor individual__.
 6. Haga doble clic en el valor `Explosions`.
 7. En la parte inferior de la ventana del __selector de símbolos__, elija un símbolo para resaltar los puntos de explosión.
-8. Haga clic en `OK`, luego en `Apply` para obtener una vista previa del aspecto que tendrá la capa.
-9. Haga clic en `OK` de nuevo.
+8. Haga clic en `Aceptar`, luego en `Aplicar` para obtener una vista previa del aspecto que tendrá la capa.
+9. Haga clic en `Aceptar` de nuevo.
 
 :::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
-name: en_30.30.2_categorized_layer_symbology_2
+name: es_30.30.2_categorized_layer_symbology_2
 width: 500px
 ---
 Al hacer doble clic en los __valores únicos__ de la lista clasificada, puede cambiar el símbolo de cada valor.
@@ -358,7 +358,7 @@ En algunos casos, es posible que desee utilizar símbolos más complejos en su m
 Para utilizar los símbolos SVG:
 
 1. Abra el panel de estilo y las opciones de `single marker`.
-2. En `Symbol layer type`, seleccione __“Marcador SVG”__.
+2. En `Tipo de capa del símbolo`, seleccione __“Marcador SVG”__.
 3. Desplácese hacia abajo hasta el navegador SVG. Aquí encontrará todas las carpetas de sus bibliotecas instaladas SVG.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
@@ -370,11 +370,11 @@ Ya existe, por defecto, una biblioteca de símbolos SVG. Si busca un símbolo co
 QGIS también le ofrece la opción de añadir sus propias bibliotecas SVG, por ejemplo, si su organización utiliza un conjunto específico de iconos.
 Si tiene una biblioteca de símbolos SVG en una carpeta, puede añadirlos a su administrador de estilos.
 
-1. Abra el administrador de estilos: `Settings` > `Style Manager`.
-2. Haga clic en `Import / Export` y seleccione `Import items`.
-3. Navegue hasta la ubicación donde haya guardado la biblioteca o el estilo y seleccione el archivo (en la mayoría de los casos .qml, pero el tipo de archivo también puede ser .xml).
+1. Abra el administrador de estilos: `Configuración` → `Administrador de estilos...`.
+2. Haga clic en `Importar / Exportar` y seleccione `Importar elemento(s)`.
+3. Navegue hasta la ubicación donde haya guardado la biblioteca o el estilo y seleccione el archivo (en la mayoría de los casos `.qml`, pero el tipo de archivo también puede ser `.xml`).
 4. Ahora puede seleccionar los símbolos, que desea importar. En la mayoría de los casos, puede seleccionar todos los símbolos.
-5. Haga clic en `Import`.
+5. Haga clic en `Importar`.
 
 Los nuevos símbolos SVG están en su biblioteca SVG.
 
@@ -429,12 +429,12 @@ También existe una biblioteca con iconos humanitarios de la [Oficina de la ONU 
 4. __Explique cómo se crea un mapa coroplético en QGIS con el uso de colores graduados. ¿Qué debe elegir (p. ej.: atributo, número de clases, rampa de color)?__
 
 :::{dropdown} Respuesta
-1. Hacer clic con el <kbd>botón derecho</kbd> en la capa, seleccionar `Properties` y vaya hasta la pestaña `Symbology`.
-2. Cambiar el método de simbolización de `Single-Symbol` a `Graduated`.
-3. Junto a `Value`, elegir el atributo numérico, que se desee visualizar en el mapa coroplético (p. ej.: densidad de población, porcentaje, precipitación, casos de enfermedad normalizados, etc.). El valor de este atributo determinará el color.
+1. Hacer clic con el <kbd>botón derecho</kbd> en la capa, seleccionar `Propriedades` y vaya hasta la pestaña `Simbología`.
+2. Cambiar el método de simbolización de `Símbolo Único` a `Graduado`.
+3. Junto a `Valor`, elegir el atributo numérico, que se desee visualizar en el mapa coroplético (p. ej.: densidad de población, porcentaje, precipitación, casos de enfermedad normalizados, etc.). El valor de este atributo determinará el color.
 4. Elegir un método de clasificación y configurar el número de clases (p. ej.: intervalo equitativo, cuantil, cortes naturales, etc.).
 5. Elegir una rampa de color adecuada para la información, que se quiere visualizar (claro → oscuro).
-6. Haga clic en `Classify` y `Apply`.
+6. Haga clic en `Clasificar` y `Aplicar`.
 7. Observar el lienzo del mapa y realizar los ajustes necesarios (p. ej.: eliminar los contornos de los polígonos).
 :::
 

@@ -141,9 +141,9 @@ La capa de los asentamientos se limpió y solo están disponibles las ciudades, 
 4. Aparecerá una lista de todos los valores únicos. Asigne a cada uno un marcador de puntos gris oscuro.
 5. Queremos poder diferenciar entre capital de país, de región o de distrito. La capital más importante es la del país, seguida de las capitales regionales y, por último, las capitales de distrito. Asigne a cada marcador un tamaño diferente que corresponda a su importancia.
 6. Añadimos a continuación una etiqueta para la capital del país y las capitales regionales.
-7. Vaya a la pestaña “__Label__” y seleccione __“Rule-based Labelling”__.
+7. Vaya a la `Etiquetas` y seleccione `Etiquetado basado en reglas`.
 8. Añada una nueva regla e introduzca la siguiente expresión en el filtro: `(  "popPlace1"  =   'Country capital'  ) OR ( "popPlace1" = 'Regional capital' )`.
-9. Configure el “Value” en `Name`.
+9. Configure el `Valor` en "Name".
 10. Establezca la fuente en cursiva y dibuje un buffer de texto para diferenciar las etiquetas de los asentamientos de las etiquetas de las regiones.
 
 ---
@@ -151,10 +151,10 @@ La capa de los asentamientos se limpió y solo están disponibles las ciudades, 
 Pasemos a la red vial.
 
 1. La capa de la red vial debe situarse sobre los límites administrativos para que el trazado y las conexiones de las carreteras sean siempre visibles.
-2. Abra la pestaña __Symbology__ para `hotosm_gha_roads_lines`. Seleccione “__Rule-based__” y añada un nuevo filtro haciendo doble clic en `(no filter)`.
+2. Abra la pestaña __Symbología__ para `hotosm_gha_roads_lines`. Seleccione `Basado en reglas` y añada un nuevo filtro haciendo doble clic en `(no filtro)`.
 3. Abra el constructor de expresiones haciendo clic en el icono situado a la derecha de la opción de filtro.
 4. En primer lugar, abra un paréntesis haciendo doble clic en `(`.
-5. En la pestaña central del generador de expresiones, despliegue la lista __“Fields and Values”__. Haga doble clic en `highway` para añadirlo a la expresión de la izquierda. A continuación, a la derecha, haga clic en `All Unique` para listar todos los valores posibles de ese atributo.
+5. En la pestaña central del generador de expresiones, despliegue la lista `Campos y valores`. Haga doble clic en `highway` para añadirlo a la expresión de la izquierda. A continuación, a la derecha, haga clic en `Todos unicos` para listar todos los valores posibles de ese atributo.
 6. En la ventana de la izquierda, haga clic en el signo `=` para añadirlo a su expresión.
 7. En la lista con todos los valores únicos. Seleccione `primary` y añádalo a su expresión.
 8. Cierre el paréntesis haciendo clic en `)` debajo del campo de expresión de la izquierda.
@@ -167,13 +167,13 @@ Pasemos a la red vial.
 Ahora, como toque final, seleccionemos un símbolo para las instalaciones sanitarias:
 
 1. Vaya a la capa `hospital_GHA`.
-2. Abra la pestaña __Symbology__ y seleccione la opción `Simple Marker`.
-3. En “Symbol Layer type”, seleccione SVG-Symbol.
+2. Abra la pestaña __Symbología__ y seleccione la opción `Marcador simple`.
+3. En `Tipo de capa del símbolo`, seleccione SVG-Symbol.
 4. Desplácese hacia abajo hasta que vea el navegador SVG-Symbol.
-5. En la barra de búsqueda, ingrese “hospital”.
+5. En la barra de búsqueda, ingrese "hospital".
 6. Seleccione uno de los símbolos SVG a su disposición.
 7. Ajuste el color a rojo.
-8. Haga clic en Apply y OK.
+8. Haga clic en `Aplicar` y `Aceptar`.
 
 Hemos asignado un símbolo para cada capa a nuestra disposición. Observe el mapa que ha creado y decida si quiere ajustar alguna simbología para que el mapa sea más fácil de leer. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? ¿El tamaño de letra es adecuado o tapa demasiada información?
 
@@ -185,31 +185,31 @@ Ahora el mapa debería estar listo para un diseño de impresión.
 
 Una vez que esté satisfecho con la simbología y los colores de sus datos, el siguiente paso es crear un diseño de impresión. Al añadir información adicional como el título, las fuentes de datos, la proyección cartográfica, la descripción, etc., proporciona a su público los medios para contextualizar y evaluar el mapa y su contenido por sí mismos.
 
-1. Abra una nueva composición de impresión y asígnele un nombre (por ejemplo, Mapa de Ghana con hospitales). Se abrirá una nueva ventana con un lienzo en blanco y un conjunto diferente de herramientas. Este es el maquetador de impresión.
+1. Abra una nueva composición de impresión (`Proyecto` → `Nueva composición de impresión`) y asígnele un nombre (por ejemplo, Mapa de Ghana con hospitales). Se abrirá una nueva ventana con un lienzo en blanco y un conjunto diferente de herramientas. Este es el maquetador de impresión.
     - A la izquierda, encontrará una barra de herramientas para añadir y mover elementos en el lienzo de diseño de impresión.
-    - A la derecha encontrará una lista de los elementos que agregó al diseño de impresión (aún está vacía). Debajo encontrará una pestaña llamada __“item properties”__. Aquí se modifican los elementos del diseño de impresión (por ejemplo, se puede introducir el texto de un cuadro de texto o cambiar el tipo de letra).
-2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video](/content/es/Module_4/es_qgis_map_design_2.md#adding-a-new-map)
+    - A la derecha encontrará una lista de los elementos que agregó al diseño de impresión (aún está vacía). Debajo encontrará una pestaña llamada __"Propriedades de elemento"__. Aquí se modifican los elementos del diseño de impresión (por ejemplo, se puede introducir el texto de un cuadro de texto o cambiar el tipo de letra).
+2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](/fig/30.30.2_print_layout_insert_map_icon.png) (`Añadir Mapa`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video](/content/es/Module_4/es_qgis_map_design_2.md#adding-a-new-map)
 3. Mueva el mapa y colóquelo de manera que todo el país sea visible a una escala razonable.
 4. Añadamos un título:
-    - Haga clic en el ![icono Add text](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
+    - Haga clic en el ![icono Add text](/fig/30.30.2_print_layout_add_text.png) (`Añadir Etiqueta`)
     - Arrastre un rectángulo sobre el lienzo.
-    - En la ventana de propiedades del elemento, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir el título del mapa (por ejemplo, Mapa de Ghana con carreteras y hospitales).
-    - Ajuste el tamaño de fuente: Haga clic en el menú desplegable __Font__ y ajuste el tamaño de la fuente para un título (25 pts. o más). Ajuste el cuadro de texto si es necesario.
+    - En la ventana de __propiedades del elemento__, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir el título del mapa (por ejemplo, Mapa de Ghana con carreteras y hospitales).
+    - Ajuste el tamaño de fuente: Haga clic en el menú desplegable __Tipo de letra__ y ajuste el tamaño de la fuente para un título (25 pts. o más). Ajuste el cuadro de texto si es necesario.
 5. Añadamos una leyenda:
-    - Haga clic en el ![icono Add legend](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`).
-    - Vaya al panel __Item Properties__ situado a la derecha.
-    - Desplácese un poco hacia abajo y desactive la casilla de verificación `Auto Update`. Ahora puede editar libremente cada elemento de la leyenda.
+    - Haga clic en el ![icono Add legend](/fig/30.30.2_print_layout_add_legend.png) (`Añadir Leyenda`).
+    - Vaya al panel __propriedades del elemento__ situado a la derecha.
+    - Desplácese un poco hacia abajo y desactive la casilla de verificación `Auto actualizar`. Ahora puede editar libremente cada elemento de la leyenda.
     - Ajuste la leyenda eliminando las capas innecesarias (que no se ven en el mapa) y cambie el nombre de la capa en la leyenda haciendo clic en el ![icono Edit](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) debajo de las entradas de la leyenda.
 6. Ahora, añadamos una barra de escala:
-    - Haga clic en el ![icono Add Scale bar](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
+    - Haga clic en el ![icono Add Scale bar](/fig/30.30.2_print_layout_add_scale_bar.png) (`Añadir Barra de escala`)
     - Dibuje un rectángulo en el mapa y coloque la barra de escala en el borde del mapa. Puede ajustar las unidades de la barra de escala (metros, kilómetros, etc.), el ancho fijo del segmento (50 km, 75 km, 100 km, etc.) y el número de segmentos (a la derecha).
 7. Añadamos una flecha que indique el norte:
-    - Haga clic en el ![icono Add North Arrow](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`).
+    - Haga clic en el ![icono Add North Arrow](/fig/30.30.2_print_layout_add_orientation.png) (`Añadir Flecha del Norte`).
     - Arrastre un rectángulo sobre el diseño de impresión. Ajuste el tamaño y la ubicación de la flecha norte. También puede cambiar el icono en las propiedades del elemento.
 8. Añadamos un logotipo (por ejemplo, el de la IFRC o el de su sociedad nacional):
-    - Haga clic en ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
+    - Haga clic en ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Añadir Imagen`)
     - Arrastre un rectángulo en el lugar donde desea añadir el logotipo.
-    - Vaya al panel `Item properties` de la derecha y cambie a `Raster image`.
+    - Vaya al panel __Propriedades del elemento__ de la derecha y cambie a `imagen ráster`.
     - Haga clic en los tres puntos `...` y seleccione el archivo con su logotipo.
     - Si es necesario, cambie el tamaño o mueva la imagen en el diseño de impresión.
 
@@ -239,15 +239,15 @@ Se dejó espacio en la esquina inferior derecha para un mapa general.
 
 ### Ejercicio adicional
 
-Si terminó con el mapa principal, haga clic en el mapa y vaya a las propiedades del elemento. En la sección de capas, marque las casillas `Lock Layers` y `Lock styles for layers`. Esto significa que si cambia el mapa en la ventana principal de QGIS, el mapa que añadió en Ahora puede empezar a trabajar en un mapa general. Utilizaremos un shapefile con los países de África.
+Si terminó con el mapa principal, haga clic en el mapa y vaya a las propiedades del elemento. En la sección de capas, marque las casillas `Bloquear capas` y `Bloquear estilos para las capas`. Esto significa que si cambia el mapa en la ventana principal de QGIS, el mapa que añadió en Ahora puede empezar a trabajar en un mapa general. Utilizaremos un shapefile con los países de África.
 
 1. Vuelva a la ventana principal de QGIS y cargue las capas de la carpeta `Bonus Exercise`.
 2. En el panel __Layer__, oculte las capas del mapa principal haciendo clic en el icono ![Ojo](/fig/30.30.2_layer_visibility_icon.png) situado junto al nombre de la capa.
-3. Diseñe un estilo a los países con un color neutro y discreto. Por ejemplo, puede utilizar el “__relleno gris 3__” de las plantillas de estilo.
-4. Una vez que esté satisfecho con el estilo de su mapa general, vuelva a la ventana __Print Layout__.
+3. Diseñe un estilo a los países con un color neutro y discreto. Por ejemplo, puede utilizar "__Gray 3 fill__" de las plantillas de estilo.
+4. Una vez que esté satisfecho con el estilo de su mapa general, vuelva a la ventana __composición de impresión__.
 5. Añada un segundo mapa y colóquelo en una esquina.
-6. En el panel __Item properties__ del segundo mapa (“__Mapa 2__”), desplácese hacia abajo y abra las opciones `Overview`.
+6. En el panel __Propriedades del elemento__ del segundo mapa ("__Mapa 2__"), desplácese hacia abajo y abra las opciones `Vistas generales`.
 7. Haga clic en el botón `+` para añadir una nueva vista general.
-8. En la opción “__Map Frame__”, seleccione “__Mapa 1__”. Esto mostrará el marco del mapa principal en su mapa general.
+8. En la opción "__Marco de mapa__", seleccione “__Mapa 1__”. Esto mostrará el marco del mapa principal en su mapa general.
 
 ¡Felicidades! Finalizó su primer mapa.

@@ -28,7 +28,7 @@ las tierras agrícolas).
 :::{figure} ../../fig/en_30.30.2_topographic_map_examples.png
 ---
 width: 600px
-name: en_30.30.2_topographic_map_examples
+name: es_30.30.2_topographic_map_examples
 ---
 Ejemplos de mapas topográficos
 :::
@@ -41,7 +41,7 @@ las reglas de la semiología gráfica.
 :::{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
 ---
 width: 600px
-name: en_30.30.2_thematic_maps_examples
+name: es_30.30.2_thematic_maps_examples
 ---
 Ejemplos de mapas temáticos
 :::
@@ -57,7 +57,7 @@ información que se desea transmitir.
 :::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
-name: en_30.30.2_graphic_semiology_signs
+name: es_30.30.2_graphic_semiology_signs
 ---
 Puede utilizar distintos signos gráficos en función del tipo de información que se desee mostrar (fuente: Desconocida. Esta figura se incluye únicamente con fines ilustrativos y no está sujeta a la licencia Creative Commons de esta plataforma).
 :::
@@ -69,7 +69,7 @@ entre cada elemento, lo que ayuda a mostrar información diferente.
 
 :::{figure} ../../fig/en_visual_variables.png
 ---
-name: en_visual_variables
+name: es_visual_variables
 width: 500px
 ---
 Variables visuales según Bertin (1967).
@@ -94,7 +94,7 @@ el mapa ciclista, mostrar las rutas ciclistas más seguras, las estaciones de re
 
 :::{figure} /fig/m4_OSM_Overviewmap_example.png
 ---
-name: m4_OSM_Overviewmap_example
+name: es_m4_OSM_Overviewmap_example
 width: 375 px
 ---
 Norma de [OSM](https://www.openstreetmap.org)
@@ -106,7 +106,7 @@ Norma de [OSM](https://www.openstreetmap.org)
 
 :::{figure} /fig/m4_OSM_bikemap.png
 ---
-name: m4_OSM_bikemap
+name: es_m4_OSM_bikemap
 width: 375 px
 ---
 Mapa ciclista de OSM
@@ -132,7 +132,7 @@ También puede utilizar mapas que haya encontrado en su trabajo o en su vida cot
 
 :::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
-name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
+name: es_ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
 ---
 Zonas y carreteras afectadas por las inundaciones en la región de somalí de Etiopía (fuente: OCHA)
@@ -144,7 +144,7 @@ Zonas y carreteras afectadas por las inundaciones en la región de somalí de E
 
 :::{figure} /fig/proportional_circles_example.png
 ---
-name: proportional_circles_example
+name: es_proportional_circles_example
 width: 500 px
 ---
 Desplazados internos, 30 de septiembre de 2024 (fuente: [ACNUR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
@@ -156,7 +156,7 @@ Desplazados internos, 30 de septiembre de 2024 (fuente: [ACNUR](https://relief
 
 :::{figure} /fig/choropleth_hum_example.png
 ---
-name: choropleth_hum_example
+name: es_choropleth_hum_example
 width: 700 px
 ---
 Sudán del Sur: Seguimiento de la situación humanitaria, abril-mayo de 2024. Refugios dañados (fuente: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)).
@@ -169,7 +169,7 @@ Sudán del Sur: Seguimiento de la situación humanitaria, abril-mayo de 2024. R
 
 :::{figure} /fig/en_m4_operational_overview_example.png
 ---
-name: en_m4_operational_overview_example
+name: es_m4_operational_overview_example
 width: 650 px
 ---
 Panorama de las operaciones o mapa de actividades de respuesta (fuente: [Grupo temático de refugios de emergencia de Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)).
@@ -203,7 +203,7 @@ de cartografía y SIG.
 
 :::{figure} /fig/choropleth_intro_example.png
 ---
-name: choropleth_intro_example
+name: es_choropleth_intro_example
 width: 600 px
 ---
 Ejemplo de mapa coroplético (fuente: [Axis Maps](https://www.axismaps.com/guide/choropleth)).
@@ -292,7 +292,7 @@ debe utilizarse un gradiente de color divergente.
 
 :::{figure} ../../fig/en_colour_gradients_qualities.png
 ---
-name: en_colour_gradients_qualities
+name: es_colour_gradients_qualities
 width: 750px
 ---
 Diferentes tipos de esquemas de colores.
@@ -305,7 +305,7 @@ blanco. Puede conseguir una secuencia clara graduando la __saturación__ del gra
 
 :::{figure} ../../fig/de_colour_gradients_saturation.png
 ---
-name: de_colour_gradients_saturation
+name: es_colour_gradients_saturation
 width: 750px
 ---
 Ejemplos de diferentes gradientes de color traducidos a blanco y negro. Preste atención al degradado de saturación debajo
@@ -318,7 +318,7 @@ Los gradientes de color también pueden abarcar múltiples tonos:
 
 :::{figure} ../../fig/colour_gradients_hues.png
 ---
-name: colour_gradients_hues
+name: es_colour_gradients_hues
 width: 750px
 ---
 Degradado de un solo tono a la izquierda; degradado de varios tonos a la derecha. 
@@ -335,7 +335,7 @@ Al elegir los colores, hay que tener en cuenta que los gradientes de color (espe
 
 :::{figure} ../../fig/Colour_Blindness.png
 ---
-name: Colour_Blindness
+name: es_Colour_Blindness
 width: 750px
 ---
 Diferentes esquemas de colores para las personas con problemas de visión cromática (fuente: Jenny, Bernhard, y Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, núm. 58 (1 de septiembre de 2007): 61-67. https://doi.org/10.14714/CP58.270).
@@ -343,13 +343,13 @@ Diferentes esquemas de colores para las personas con problemas de visión cromá
 
 ## Mapas complejos
 
-Los distintos métodos de simbolización analizados en este capítulo pueden combinarse de distintas formas para crear informes y mapas sofisticados. Combinando varios métodos, puede comunicar al lector distintos fenómenos de forma intuitiva. Un ejemplo clásico es la combinación de un mapa de coroplético (colores graduados) con un mapa de círculos proporcionales (consultar {numref}`en_complex_map_lebanon`).
+Los distintos métodos de simbolización analizados en este capítulo pueden combinarse de distintas formas para crear informes y mapas sofisticados. Combinando varios métodos, puede comunicar al lector distintos fenómenos de forma intuitiva. Un ejemplo clásico es la combinación de un mapa de coroplético (colores graduados) con un mapa de círculos proporcionales (consultar {numref}`es_complex_map_lebanon`).
 
 __Mapa complejo 1:__
 
 :::{figure} /fig/en_complex_map_lebanon.png
 ---
-name: en_complex_map_lebanon
+name: es_complex_map_lebanon
 width: 550 px
 ---
 Mapa complejo con colores graduados y círculos proporcionales (fuente: [REACH](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024)).
@@ -359,7 +359,7 @@ __Mapa complejo 2:__
 
 :::{figure} /fig/en_complex_bivariate_map.png
 ---
-name: en_complex_bivariate_map
+name: es_complex_bivariate_map
 width: 550 px
 ---
 Un mapa complejo que combina el estilo de las capas y distintas variables visuales para comunicar una situación compleja (fuente: [SIMS](https://rcrcsims.org/portfolio/view/18)).
@@ -369,7 +369,7 @@ __Mapa complejo 3:__
 
 :::{figure} /fig/en_complex_map_example_yemen.png
 ---
-name: en_complex_map_example_yemen
+name: es_complex_map_example_yemen
 width: 550 px
 ---
 Un mapa complejo que utiliza colores graduados para indicar la profundidad de las inundaciones, así como el riesgo de inundación para los sitios de los desplazados internos (fuente: [REACH](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024)).
@@ -377,7 +377,7 @@ Un mapa complejo que utiliza colores graduados para indicar la profundidad de la
 
 :::{admonition} ¡Es su turno!
 :class: tip
-{numref}`en_complex_map_lebanon`{numref}`en_complex_bivariate_map` y {numref}`en_complex_map_example_yemen` utilizan colores graduados y símbolos graduados. ¿Qué otros principios de simbolización puede detectar en estos mapas?
+{numref}`es_complex_map_lebanon`{numref}`es_complex_bivariate_map` y {numref}`es_complex_map_example_yemen` utilizan colores graduados y símbolos graduados. ¿Qué otros principios de simbolización puede detectar en estos mapas?
 :::
 
 

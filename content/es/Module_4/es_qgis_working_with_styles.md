@@ -19,7 +19,7 @@ Por ejemplo, si desea enviar una capa a un colega con el mismo estilo que usted,
 
 ### Guardar o exportar la configuración de estilo
 
-1. Abra el panel de estilo y haga clic en `Styles`. Se abrirá un menú desplegable con la opción de exportar el estilo de la capa.
+1. Abra el panel de estilo y haga clic en `Estilos`. Se abrirá un menú desplegable con la opción de exportar el estilo de la capa.
 2. Dado que en este caso el estilo es precisamente para ese conjunto de datos, puede dejar todas las casillas marcadas.
 3. Seleccione una ubicación y un nombre para el estilo. El estilo se guardará en un archivo `.qml`. __Asegúrese de guardarlo en la misma carpeta que el conjunto de datos y asígnele el mismo nombre que al conjunto de datos correspondiente. De este modo, al cargar los datos en QGIS, el estilo se aplicará automáticamente.__
 
@@ -29,7 +29,7 @@ Por ejemplo, si desea enviar una capa a un colega con el mismo estilo que usted,
 :::{figure} ../../fig/en_30.30.2_save_layer_style_window.png
 ---
 width: 350px
-name: en_30.30.2_save_layer_style_window
+name: es_30.30.2_save_layer_style_window
 ---
 Ventana Guardar estilo de capa en QGIS 30.30.2.
 :::
@@ -42,8 +42,8 @@ Cuando se trabaja con datos similares (p. ej.: tipos de edificios o riesgo de in
 
 ### Cargar un estilo en un proyecto QGIS
 
-1. Abra el administrador de estilos: `Settings` > `Style manager`.
-2. Haga clic en `import/export` y seleccione `import items`.
+1. Abra el administrador de estilos: `Configuración` > `Administrador de estilos`.
+2. Haga clic en `importar / exportar` y seleccione `importar elementos`.
 3. Navegue hasta la carpeta donde está guardado el estilo y haga clic en importar.
 4. El estilo ahora debería estar disponible como preestablecido en el panel de estilos.
 
@@ -54,8 +54,8 @@ También puede importar estilos directamente en el panel de estilos de una capa.
 
 :::{tip}
 Puede copiar estilos de una capa a otra:
-1. Haga clic con el botón derecho en la capa con el estilo aplicado → `Styles` → `Copy Style` → `All Style Categories`.
-2. Haga clic con el botón derecho en la segunda capa → `Styles` → `Paste Style` → `All Style Categories`.
+1. Haga clic con el botón derecho en la capa con el estilo aplicado → `Estilo` → `Copiar estilos` → `Todo las categorías de estilo`.
+2. Haga clic con el botón derecho en la segunda capa → `Estilo` → `Pegar estilo` → `Todo las categorías de estilo`.
 
 :::
 
@@ -78,15 +78,15 @@ Puede copiar estilos de una capa a otra:
 2. __¿Cómo se importa o exporta un estilo?__
 
 :::{dropdown} Respuesta
-1. En QGIS, hacer clic con el botón derecho en la capa → `Properties` → `Symbology`
-2. En la esquina inferior izquierda, hay un menú desplegable llamado `Style` con opciones para importar o exportar estilos.
+1. En QGIS, hacer clic con el botón derecho en la capa → `Propriedades` → `Simbología`
+2. En la esquina inferior izquierda, hay un menú desplegable llamado `Estilo` con opciones para importar o exportar estilos.
 :::
 
 3. __¿Cómo compartiría los estilos con sus colegas o entre diferentes equipos? ¿Qué hay que tener en cuenta (p. ej.: rutas de archivos, dependencias de recursos, etc.)?__
 
 :::{dropdown} Respuesta
-1. Abrir la pestaña `Symbology` en la ventana `Properties`.
-2. En la esquina inferior izquierda, hacer clic en `Style` → `Save Style`.
+1. Abrir la pestaña `Simbología` en la ventana `Propriedades`.
+2. En la esquina inferior izquierda, hacer clic en `Estilo` → `Guardar estilo`.
 3. Especificar el nombre y la ubicación donde desea guardarlo.
 4. En el explorador de archivos, buscar el archivo `.qml` y compartirlo con su colega.
 
