@@ -527,7 +527,7 @@ align: center
      ```
      cyclone_harald_buffer
      ``` 
-   - Haga clic en ``Ok`` para guardar el cambio.
+   - Haga clic en `Ok` para guardar el cambio.
    - Esto permitirá que el modelo genere tanto los resultados de la población expuesta como la zona buffer de impacto del ciclón cuando se ejecute.
 
 ```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
