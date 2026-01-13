@@ -113,19 +113,19 @@ El sistema de coordenadas previsto para Senegal es `EPSG:32628 WGS 84 / UTM zone
 
 1. Cargue la capa de límites administrativos de Senegal (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`), así como la población por unidad subnacional (`sen_admpop_adm1_2020.csv`) y los datos de Desinventar Sendai de Senegal (`DI_Stat924.xls`) en QGIS.
 
-2. Asegúrese de reproyectar el conjunto de datos con los límites administrativos en la zona UTM 28N. Para obtener más información, consulte la entrada de Wiki sobre [proyecciones cartográficas ](/content/es/Wiki/es_qgis_projections_wiki.md).
+2. Asegúrese de reproyectar el conjunto de datos con los límites administrativos en la zona UTM 28N. Para obtener más información, consulte la entrada de Wiki sobre [proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md).
 
 3. Realice uniones no espaciales basadas en las regiones que figuran en dos conjuntos de datos y el PCODE que figura en estos mismos conjuntos. Consulte la entrada de Wiki sobre [uniones no espaciales](/content/es/Wiki/es_qgis_non_spatial_joins_wiki.md) para obtener más información.
 
 :::{figure} /fig/en_ex1_AT_admin_pop_sen.png
 ---
 width: 100%
-name: attributes_all
+name: es_attributes_all
 ---
-Captura de pantalla de las diferentes tablas de atributos con las columnas correspondientes resaltadas
+Captura de pantalla de las diferentes tablas de atributos con las columnas correspondientes resaltadas.
 :::
 
-4. En primer lugar, añada la población total de cada área administrativa a los shapefiles. Seleccione la columna correcta que deberá añadirse (sugerencia: busque la columna denominada `Total`).
+4. En primer lugar, añada la población total de cada área administrativa a los archivos shapefiles. Seleccione la columna correcta que deberá añadirse (sugerencia: busque la columna denominada `Total`).
 5. A continuación, sume el número de personas afectadas directa e indirectamente. Seleccione también las columnas correctas que deberán añadirse (sugerencia: busque los nombres de las columnas `Directly affected` y `Indirectly Affected`).
 
 :::::{tab-set}
@@ -134,7 +134,7 @@ Captura de pantalla de las diferentes tablas de atributos con las columnas corre
 :::{figure} /fig/en_ex1_Join_field.png
 ---
 width: 80%
-name: join_field
+name: es_join_field
 ---
 Captura de pantalla de la herramienta Unir atributos por valor de campo para la población total
 :::
@@ -144,7 +144,7 @@ Captura de pantalla de la herramienta Unir atributos por valor de campo para la 
 :::{figure} /fig/en_ex1_Join_field_2.PNG
 ---
 width: 80%
-name: join_field
+name: es_join_field
 ---
 Captura de pantalla de la herramienta Unir atributos por valor de campo para las personas afectadas directa e indirectamente
 :::
@@ -156,7 +156,7 @@ Captura de pantalla de la herramienta Unir atributos por valor de campo para las
     - Cree una nueva columna/campo con el nombre `"area_sqkm"` utilizando la calculadora de campos. Asegúrese de que se utilicen números decimales como tipo de campo. Para el cálculo utilice la expresión: `$area / (1000 * 1000)`
     - Cree otra columna/campo con el nombre `"pop_per_sqkm"` con números decimales como tipo de campo. Utilice la expresión: `"Total" / "area_sqkm"` para el cálculo.
 
-Puede acceder a la calculadora de campo a través de su tabla de atributos activando ![](/fig/mActionToggleEditing.png) `Toggle editing mode` y haciendo clic en este símbolo ![](/fig/mActionCalculateField.png) para `Open field calculator`.
+Puede acceder a la calculadora de campo a través de su tabla de atributos activando ![](/fig/mActionToggleEditing.png) `Conmutar edición` y haciendo clic en este símbolo ![](/fig/mActionCalculateField.png) para abrir la `calculadora de campo`.
 
 :::::{tab-set}
 
@@ -164,9 +164,9 @@ Puede acceder a la calculadora de campo a través de su tabla de atributos activ
 :::{figure} /fig/en_ex1_area_sqkm.png
 ---
 width: 80%
-name: field_calculator
+name: es_field_calculator
 ---
-Captura de pantalla del cálculo del área utilizando la calculadora de campo
+Captura de pantalla del cálculo del área utilizando la calculadora de campo.
 :::
 ::::
 
@@ -174,22 +174,22 @@ Captura de pantalla del cálculo del área utilizando la calculadora de campo
 :::{figure} /fig/en_ex1_pop_per_sqkm.png
 ---
 width: 80%
-name: field_calculator_2
+name: es_field_calculator_2
 ---
-Captura de pantalla del cálculo de la población por km2 mediante la calculadora de campo
+Captura de pantalla del cálculo de la población por km2 mediante la calculadora de campo.
 :::
 ::::
 
 :::::
 
-7. Ahora, debemos cambiar el nombre de las columnas `Indirectly Affected` y `Directly Affected` para que no contengan espacios. Esto garantiza que la calculadora de campo funcione correctamente. Para esta tarea utilizaremos la herramienta `Rename field`.
+7. Ahora, debemos cambiar el nombre de las columnas `Indirectly Affected` y `Directly Affected` para que no contengan espacios. Esto garantiza que la calculadora de campo funcione correctamente. Para esta tarea utilizaremos la herramienta `Cambiar nombre de campo`.
 
 :::{figure} /fig/en_ex1_Rename_field.PNG
 ---
 width: 80%
-name: rename_field
+name: es_rename_field
 ---
-Captura de pantalla de la herramienta Renombrar campo
+Captura de pantalla de la herramienta Renombrar campo.
 :::
 
 5. Determinemos ahora la proporción de la población afectada directa o indirectamente en relación con la población total por región.
@@ -202,7 +202,7 @@ Captura de pantalla de la herramienta Renombrar campo
 :::{figure} /fig/en_ex1_per_indirect_affected.PNG
 ---
 width: 80%
-name: per_indirect_affected
+name: es_per_indirect_affected
 ---
 Cálculo de la proporción de la población indirectamente afectada en relación con la población total de cada región.
 :::
@@ -220,13 +220,13 @@ Cálculo de la proporción de la población directamente afectada en relación c
 
 :::::
 
-6. Seleccione un esquema de colores utilizando `Symbology` para visualizar la proporción de personas directamente afectadas en las diferentes regiones (sugerencia: `Categorized`).
+6. Seleccione un esquema de colores utilizando `Simbología` para visualizar la proporción de personas directamente afectadas en las diferentes regiones (sugerencia: `Categorizado`).
     - Juegue con diferentes modos para encontrar un esquema de color/categorización útil para la visualización.
     - ¿Qué regiones están más afectadas directamente y cuáles menos? ¿Existen diferencias en los datos?
 
-7. Exporte el mapa en formato png (sugerencia: `Project, Import/Export, Export map to Image`).
+7. Exporte el mapa en formato png (sugerencia: `Proyecto, Importar/Exportar, Exportar mapa a imagen`).
 
-8. Repita los pasos anteriores, pero esta vez visualice las personas indirectamente afectadas en cada región (sugerencia: `Categorized`, columna `Indirectly affected`).
+8. Repita los pasos anteriores, pero esta vez visualice las personas indirectamente afectadas en cada región (sugerencia: `Categorizado`, columna `Indirectly affected`).
 
 9. ¿Qué diferencias se observan entre las regiones directamente afectadas y las indirectamente afectadas?
 

@@ -125,15 +125,15 @@ Hemos recibido información relacionada con la seguridad de diversas fuentes. Nu
 
 Para este ejercicio, utilizaremos el complemento __"QuickMapService"__ para localizar lugares con precisión. Los complementos QuickMapServices le permiten añadir fácilmente mapas base u otros servicios de mapas como una capa a su proyecto QGIS. Para [instale el complemento](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins):
 
-1. En la barra de menús, haga clic en `Plugins` -> `Manage and Install Plugins...`. Se abrirá una nueva ventana.
-2. En `All`, busque "QuickMapServices". Haga clic y seleccione `Install Plugin` en la esquina inferior derecha.
+1. En la barra de menús, haga clic en `Complementos` → `Administrar e instalar complementos...`. Se abrirá una nueva ventana.
+2. En `Todos`, busque "QuickMapServices". Haga clic y seleccione `Instalar complementos` en la esquina inferior derecha.
 
 Después de instalar el complemento, podremos añadir mapas base:
 
-3. En la barra de menús, vaya a `Web` -> `QuickMapServices` -> `ESRI` -> `ESRI Satellite`. Esto añadirá el mapa base de la imagen de satélite en su __panel de capas__.
-4. Agregaremos también una capa de carreteras para facilitar la orientación: `Web` -> `QuickMapServices` -> `Google` -> `Google Road`.
-5. En el [panel de capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html), asegúrese de que la capa `Google Road` esté por encima de las imágenes satelitales.
-6. Para facilitar la navegación, haga transparentes las imágenes satelitales. Para ello, vaya a la [pestaña de simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) y ajuste la opacidad global.
+3. En la barra de menús, vaya a `Web` → `QuickMapServices` → `ESRI` → `ESRI Satellite`. Esto añadirá el mapa base de la imagen de satélite en su __panel de capas__.
+4. Agregaremos también una capa de carreteras para facilitar la orientación: `Web` → `QuickMapServices` → `Google` → `Google Road`.
+5. En el [panel de capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html), asegúrese de que la capa `Google Road` esté por encima de las imágenes satélites.
+6. Para facilitar la navegación, haga transparentes las imágenes satélites. Para ello, vaya a la [pestaña de simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#styling-panel) y ajuste la opacidad global.
 
 
 7. Necesitaremos el complemento __"Lat Lon Tools"__ para localizar las coordenadas que recibimos del campo. Para [instale el complemento](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html#installation-of-plugins), siga las mismas instrucciones que para el complemento QuickMapServices pero busque "Lat Lon Tools" en su lugar.
@@ -161,7 +161,7 @@ Al crear la capa de puntos y polígonos utilice el SRC UTM 42 N __EPSG: 32642__.
 
 9. Busque las ubicaciones en la tabla y cree nuevas entidades utilizando la [barra de herramientas de digitalización ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_digitisation.html#digitisation-toolbars). Capture la información de la tabla y utilice Google, u otro buscador en su navegador, el mapa base y el complemento Lat Lon Tools para localizar la posición exacta.
 
-10. Una vez que haya terminado, asegúrese de guardar las modificaciones en las capas haciendo clic en el botón ![](/fig/3.44_digitisation_save_edits.png) `Save Layer Edits`.
+10. Una vez que haya terminado, asegúrese de guardar las modificaciones en las capas haciendo clic en el botón ![](/fig/3.44_digitisation_save_edits.png) `Guardar cambios de la capa`.
 
 Genial, hemos digitalizado con éxito la información de seguridad importante. Sin embargo, para que la información sea útil, necesitamos procesar los datos geoespaciales.
 
@@ -171,7 +171,7 @@ El procedimiento operativo estándar (SOP, por sus siglas en inglés) actual ind
 {admonition} Recordatorio
 :class: seealso
 
-Si ve un símbolo ![](/fig/3.44_caution_symbol.png) junto al parámetro `Distance`, significa que la capa en la que desea hacer el buffer está en un sistema de referencia de coordenadas geográficas. Esto significa que las unidades de medida están en __grados, y no en metros__. En ese caso, deberá [reproyectar su capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) en un sistema de referencia de coordenadas métricas.
+Si ve un símbolo ![](/fig/3.44_caution_symbol.png) junto al parámetro `Distancia`, significa que la capa en la que desea hacer el buffer está en un sistema de referencia de coordenadas geográficas. Esto significa que las unidades de medida están en __grados, y no en metros__. En ese caso, deberá [reproyectar su capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) en un sistema de referencia de coordenadas métricas.
 
 Consejo: EPSG:32642 es un SRC ideal para Pakistán.
 
@@ -179,7 +179,7 @@ Consejo: EPSG:32642 es un SRC ideal para Pakistán.
 
 6. [Crear un buffer alrededor de los puntos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html) de incidentes violentos con una distancia de __2000 metros__.
 
-7. Ahora tenemos dos capas de polígonos (los puntos de buffers y las zonas digitalizadas). Para visualizar el Área No-Go en Peshwar, podemos fusionar los polígonos de ambas capas en una sola capa con la herramienta `Merge vector layer` y seleccionar las capas que queremos fusionar como entradas.
+7. Ahora tenemos dos capas de polígonos (los puntos de buffers y las zonas digitalizadas). Para visualizar el Área No-Go en Peshwar, podemos fusionar los polígonos de ambas capas en una sola capa con la herramienta `Unir capas vectoriales` y seleccionar las capas que queremos fusionar como entradas.
 
 8. Cargue la capa `AOI_Peshawar.gpkg` en su proyecto.
 
@@ -190,12 +190,12 @@ Existen varios algoritmos de recorte en la caja de herramientas. Asegúrese de e
 :::
 ::::
 
-9. Queremos crear un polígono que indique la zona segura por la que puede circular el equipo. Para ello, tenemos que "invertir" el polígono. Para ello podemos utilizar la herramienta `Symmetrical difference`:
+9. Queremos crear un polígono que indique la zona segura por la que puede circular el equipo. Para ello, tenemos que "invertir" el polígono. Para ello podemos utilizar la herramienta `Diferencia simétrica`:
 	- En la caja de herramientas de procesos, busque la herramienta "Symmetrical difference" y ábrala.
-	- En `Input Layer`, seleccione la capa que contenga la información de seguridad.
-	- Como `Overlay Layer`, seleccione la capa `AOI_Peshawar.gpkg`.
-	- En `Symmetrical Difference`, haga clic en `...` y vaya hasta la carpeta `data/results/`, para este ejercicio, y guarde la capa.
-	- Haga clic en `Run`.
+	- En `Capa de entrada`, seleccione la capa que contenga la información de seguridad.
+	- Como `Capa de superposición`, seleccione la capa `AOI_Peshawar.gpkg`.
+	- En `Diferencia simétrica`, haga clic en `...` y vaya hasta la carpeta `data/results/`, para este ejercicio, y guarde la capa.
+	- Haga clic en `Ejecutar`.
 
 
 10. Hagamos una simbolización rápida de la capa resultante para que podamos entender la información más fácilmente:
@@ -221,16 +221,16 @@ Una vez que tengamos los sucesos conflictivos como datos de punto, podemos agreg
 :::
 
 1. Arrastre y suelte la tabla Excel del conflicto ACLED `2024-01-01-2024-09-23-Pakistan.xlsx` en su proyecto QGIS.
-2. En la caja de herramientas de procesos, busque la herramienta `Create points layer from table` y ábrala.
-    - Como `X Field` seleccione la columna "longitud", y como `Y Field` seleccione "latitud".
-    - En `Points from Table`, haga clic en los tres puntos, seleccione "Guardar en GeoPackage" y vaya a su carpeta temporal. Guarde la capa con el nombre "Pak_Puntos_de_conflicto_2024".
-	- Haga clic en `Run`.
+2. En la caja de herramientas de procesos, busque la herramienta `Crear capa de puntos a partir de tabla` y ábrala.
+    - Como `Campo X` seleccione la columna "longitud", y como `Campo Y` seleccione "latitud".
+    - En `Puntos a partir de tabla`, haga clic en los tres puntos, seleccione "Guardar en GeoPackage" y vaya a su carpeta temporal. Guarde la capa con el nombre "Pak_Puntos_de_conflicto_2024".
+	- Haga clic en `Ejecutar`.
 
 
 :::{figure} ../../fig/Create_ponts_from_table.PNG
 ---
 width: 700px
-name: SVG Marker
+name: create_points_from_table
 ---
 Cree puntos a partir de la tabla.
 :::
@@ -239,35 +239,35 @@ Cree puntos a partir de la tabla.
 
 3. Importe la capa `PAK_KP_admin_3.gpkg` de su carpeta `data/input` a su proyecto QGIS.
 4. Queremos contar el número de eventos conflictivos por thesil (subdistrito/ADM3). Para ello:
-	- En la caja de herramientas de procesos, busque la herramienta `Count points in polygon` y ábrala.
-	- Como `Polygons`, seleccione la capa `PAK_KP_admin_3`.
-	- Como `Point Input`, seleccione el `PAK_Conflict_points_2024`.
-	- En `Count`, haga clic en `...` y guarde la capa en su carpeta `data/results/` como "PAK_num_events_adm3".
+	- En la caja de herramientas de procesos, busque la herramienta `Contar puntos en un polígono` y ábrala.
+	- Como `Polígonos`, seleccione la capa `PAK_KP_admin_3`.
+	- Como `Puntos`, seleccione el `PAK_Conflict_points_2024`.
+	- En `Numéro`, haga clic en `...` y guarde la capa en su carpeta `data/results/` como "PAK_num_events_adm3".
 
 
 :::{figure} ../../fig/count_point_polygon.PNG
 ---
 width: 700px
-name: SVG Marker
+name: es_count_point_polygon
 ---
 Cuente los puntos en el polígono
 :::
 
 5. Abra el atributo de su capa "Pak_num_events_adm3" y desplácese hacia la derecha. Encontrará una columna con el nombre "NUMPOINTS". Aquí encontrará el número de eventos por thesil.
-    - Haga clic con el botón derecho en la capa y vaya a `Properties` --> `Symbology`. En la parte superior cambie Single Symbol por "Graduated".
-    	- En el campo `Value` elija "NUMPOINTS".
+    - Haga clic con el botón derecho en la capa y vaya a `Propriedades` → `Simbología`. En la parte superior cambie Símbolo Único por "Graduado".
+    	- En el campo `Valor` elija "NUMPOINTS".
 	- A continuación, haga clic en `Classify`.
 	- Si lo desea, puede ajustar el modo y el número de clases. También puede elegir la rampa de color. Puede probar diferentes opciones de colores.
-	- Cuando esté satisfecho con el aspecto, haga clic en `Apply` y luego en `OK`.
+	- Cuando esté satisfecho con el aspecto, haga clic en `Aplicar` y luego en `Aceptar`.
 
 El resultado podría verse parecido a esto:
 
 :::{figure} ../../fig/Number_events_graduated.PNG
 ---
 width: 700px
-name: SVG Marker
+name: es_Number_events_graduated
 ---
-Número de eventos conflictivos por thesil.
+Número de eventos conflictivos por thesil (distrito).
 :::
 
 
@@ -286,35 +286,35 @@ Esto puede ayudarnos a comprender geográficamente la vulnerabilidad económica 
 1. En primer lugar, abramos la hoja de cálculo con Microsoft Excel o un programa similar (como LibreOffice Calc):
 	- Aquí ya puede investigar la información que se almacena en las distintas columnas. ¿Puede identificar las columnas que contienen información espacial?
 	- Por ahora, vamos a exportar el archivo como CSV UTF-8.
-		* Haga clic en `File` -> `Save As`
+		* Haga clic en `Archivo` → `Guardar como...`
 		* Elija una carpeta de salida donde guardarlo (se recomienda la carpeta `data` > `temp` ) y asigne al archivo un nombre significativo, por ejemplo __20240605_PAK_MPI__.
-		* Elija la opción __CSV UTF-8 (delimitado por comas) (*.csv)__ y `Save`.
+		* Elija la opción __CSV UTF-8 (delimitado por comas) (*.csv)__ y `Guardar`.
 
 	:::{figure} /fig/PAK_Excel_to_CSV.png
 	---
 	width: 400px
-	name: Convert Excel to CSV
+	name: es_PAK_Excel_to_CSV
 	align: center
 	---
-	Convierta el Excel a CSV
+	Convierta el Excel a CSV.
 	:::
 
 2. Abra QGIS y cree un nuevo proyecto. Guarde el proyecto en su carpeta de proyectos.
 3. [Importe las capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` y `Pak_adm2_Khyber Pakhtunkhwa.gpkg` a QGIS:
 	* Arrastre y suelte la capa ADM2 en su ventana QGIS.
-	* Para importar el archivo CSV, haga clic en la pestaña `Layer` -> `Add Layer` > `Add Delimited Text`.
+	* Para importar el archivo CSV, haga clic en la pestaña `Capa` → `Añadir capa` → `Añadir capa de texto delimitado`.
 	* Busque su archivo __20240605_PAK_MPI.csv__.
-	* Elija la correcta `File Fromat`: `Custom delimters` -> `Semicolon`.
-	* Vaya a	la pestaña `Geometry Definition` y elija `No geometry`. No tenemos una columna con coordenadas o información geométrica, solo tenemos el nombre admin2 y P-Code.
+	* Elija la correcta `Formato de archivo`: `Delimitadores personalizados` → `Punto y coma`.
+	* Vaya a	la pestaña `Definición de geometría` y elija `Ninguna geometría (tabla solo de atributos)`. No tenemos una columna con coordenadas o información geométrica, solo tenemos el nombre admin2 y P-Code.
 	* Añada la capa y cierre la ventana.
 
 	:::{figure} /fig/PAK_Load_CSVfile.PNG
 	---
 	width: 400px
-	name: Load CSV file to QGIS
+	name: es_PAK_Load_CSVfile
 	align: center
 	---
-	Cargue el archivo CSV en QGIS
+	Cargue el archivo CSV en QGIS.
 	:::
 
 Ahora, tenemos que unir los datos a los límites de distrito existentes (ADM2). Este proceso se denomina [unión no espacial](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_spatial_tools.html#spatial-joins) y permite enriquecer los conjuntos de datos mediante datos de atributos. En nuestro caso, el conjunto de datos IPM contiene una columna con los nombres de los distritos (admin2) y los códigos P. Los códigos P son códigos internacionales de límites administrativos y suelen ser la mejor forma de identificar una unidad administrativa, ya que los nombres pueden tener varias grafías. Nuestra capa de polígonos también tiene columnas con los códigos p.
@@ -326,20 +326,20 @@ Por lo tanto, tenemos que realizar una unión no espacial utilizando las columna
 5. Ahora necesitamos la capa de polígonos con los límites administrativos.
 	* Abra la tabla de atributos de la capa __Pak_adm2_Khyber Pakhtunkhwa.gpkg__ y localice la columna que contiene el P-Code. ¿Cómo se llama?
 6. Para unir las dos capas, abra la caja de herramientas y busque la herramienta __Unir atributos por valor de campo__. Ábralo.
-	* `Input layer`: __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
-	* `Table field`: __admin2Pcode__
-	* `Input layer 2`: __20240605_PAK_MPI.csv__
-	* `Table field 2`: __ADM2_PCOCDE__
+	* `Capa de entrada`: __Pak_adm2_Khyber Pakhtunkhwa.gpkg__
+	* `Campo de la tabla`: __admin2Pcode__
+	* `Capa de entrada 2`: __20240605_PAK_MPI.csv__
+	* `Campo de tabla 2`: __ADM2_PCOCDE__
 	* Elija una ubicación para guardar el archivo como GeoPackage y dele un nombre significativo, por ejemplo __MPI_Admin2_joined.gpkg__
-	* `Run` y cierre.
+	* `Ejecutar` y cierre.
 
 	:::{figure} /fig/PAK_joined_MPI_csv_admin2.PNG
 	---
 	width: 400px
-	name: Join the districts with the MPI data
+	name: es_PAK_joined_MPI_csv_admin2
 	align: center
 	---
-	Unir los distritos con los datos del IPM
+	Unir los distritos con los datos del IPM.
 	:::
 	
 	__Info__: Puede notar que no todas las zonas son visibles. Dado que no contamos con datos para todos los distritos, solo se vincularon los distritos que aparecen en el CSV con los datos del IPM.
@@ -347,22 +347,22 @@ Por lo tanto, tenemos que realizar una unión no espacial utilizando las columna
 	:::{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG
 	---
 	width: 400px
-	name: Information of not joined and linked data
+	name: es_PAK_joined_MPI_csv_admin2_info
 	align: center
 	---
-	Información de datos no unidos y enlazados
+	Información de datos no unidos y enlazados.
 	:::
 
 5. Visualice __MPI_Admin2_joined.gpkg__ file: Tenemos un nuevo archivo que muestra los límites de los distritos, pero que contiene la información del IPM en la tabla de atributos. El valor IPM por distrito que ahora queremos visualizar.
-	* Abra la ventana `Symbology` del archivo __MPI_Admin2_joined.gpkg__.
+	* Abra la ventana `Simbología` del archivo __MPI_Admin2_joined.gpkg__.
 	* Decida qué columna quiere visualizar. Por ejemplo, los valores del año 2014 en la columna __A_2014_15__.
-	* Seleccione `Graduate` visualización.
-	* Seleccione `Value` __A_2014_15__.
-	* Haga clic en `Classify`.
-	* Seleccione el modo `Pretty Breaks`.
-	* Haga clic en `OK` y cierre la ventana.
+	* Seleccione `Graduado` visualización.
+	* Seleccione `Valor` __A_2014_15__.
+	* Haga clic en `Clasificar`.
+	* Seleccione el __modo__ `Pretty Breaks`.
+	* Haga clic en `Aceptar` y cierre la ventana.
 6. Visualice__Pak_adm2_Khyber Pakhtunkhwa.gpkg__ capa para los distritos de los que no tenemos datos IPM.
-	* Abra la ventana `Symbology` del archivo __Pak_adm2_Khyber Pakhtunkhwa.gpkg__.
+	* Abra la ventana `Simbología` del archivo __Pak_adm2_Khyber Pakhtunkhwa.gpkg__.
 	* Cambie el color, tal vez a gris oscuro, para que podamos diferenciar los distritos de los que disponemos datos del IPM de los que no.
 7. Añada OpenStreetMap como capa base para orientarse mejor.
 
@@ -370,7 +370,7 @@ Por lo tanto, tenemos que realizar una unión no espacial utilizando las columna
 :::{figure} /fig/PAK_visualized_MPI.PNG
 ---
 width: 400px
-name: Visualized MPI data on district level
+name: es_PAK_visualized_MPI
 align: center
 ---
 Visualice de los datos del IPM a nivel de distrito.

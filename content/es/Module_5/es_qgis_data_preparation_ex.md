@@ -103,7 +103,7 @@ Descargue los conjuntos de datos [aquí](https://nexus.heigit.org/repository/gis
 
 :::{Topic} Contexto
 
-La [OFICINA DE ESTADÍSTICAS DE PAKISTÁN]publicó los datos de los materiales de las paredes en forma de tabla en un archivo PDF. La tabla del archivo PDF no puede importarse directamente a QGIS. Para empezar, es necesario convertir la tabla del archivo PDF a un archivo `.csv`.
+La oficina de estadísticas de pakistán publicó los datos de los materiales de las paredes en forma de tabla en un archivo PDF. La tabla del archivo PDF no puede importarse directamente a QGIS. Para empezar, es necesario convertir la tabla del archivo PDF a un archivo `.csv`.
 
 :::
 
@@ -117,7 +117,7 @@ Tabula es una aplicación de código abierto que permite extraer tablas de datos
 
 :::{figure} /fig/en_tabula_website.png
 ---
-name: en_tabula_website
+name: es_tabula_website
 width: 550 px
 ---
 El sitio web Tabula.technology con los enlaces de descarga a la izquierda.
@@ -128,7 +128,7 @@ El sitio web Tabula.technology con los enlaces de descarga a la izquierda.
 
 :::{figure} /fig/en_tabula_folder.png
 ---
-name: en_tabula_folder
+name: es_tabula_folder
 width: 450 px
 ---
 
@@ -139,7 +139,7 @@ width: 450 px
 
 :::{figure} /fig/en_tabula_import.png
 ---
-name: en_tabula_import
+name: es_tabula_import
 width: 550 px
 ---
 
@@ -151,7 +151,7 @@ width: 550 px
 
 :::{figure} /fig/en_Tabula_main_view.png
 ---
-name: en_Tabula_main_view
+name: es_Tabula_main_view
 width: 550 px
 ---
 
@@ -161,7 +161,7 @@ width: 550 px
 
 :::{figure} /fig/en_tabula_selection.png
 ---
-name: en_tabula_selection
+name: es_tabula_selection
 width: 550 px
 ---
 
@@ -174,7 +174,7 @@ width: 550 px
 
 :::{figure} /fig/en_tabula_preview_extracted_1.png
 ---
-name: en_tabula_preview_extracted_1
+name: es_tabula_preview_extracted_1
 width: 550 px
 ---
 
@@ -184,7 +184,7 @@ width: 550 px
 
 :::{figure} /fig/en_tabula_data_preview.png
 ---
-name: en_tabula_data_preview
+name: es_tabula_data_preview
 width: 550 px
 ---
 
@@ -210,7 +210,7 @@ Los pasos necesarios para filtrar los datos pueden variar en función del editor
 
 :::{figure} /fig/en_tabula_csv_excel.png
 ---
-name: en_tabula_csv_excel
+name: es_tabula_csv_excel
 width: 300 px
 ---
 
@@ -225,7 +225,7 @@ En la versión web de Excel, puede fijar las columnas seleccionando la columna A
 
 :::{figure} /fig/en_m5_data_cleaning_ex_task2.png
 ---
-name: en_m5_data_cleaning_ex_task2
+name: es_m5_data_cleaning_ex_task2
 width: 450 px
 ---
 La tabla de datos debería tener ahora este aspecto. Todavía faltan los encabezados de las columnas (en rojo).
@@ -278,7 +278,7 @@ width: 350 px
 ### Tarea 3: Importar los datos a QGIS
 
 :::{topic}
-Con los datos formateados como un archivo CSV utilizable, vamos a importarlos a QGIS y unirlos a una capa de polígonos que contenga los distritos (adm2) utilizando las columnas con los nombres de los distritos en inglés. Sin embargo, es posible que en este paso nos encontremos con el problema de que los nombres de los distritos estén escritos de forma diferente. En este caso, no podemos simplemente realizar una unión de atributos [LINK] ya que los atributos deben __coincidir exactamente__. Para solucionarlo, tenemos que realizar una __fusión difusa __.
+Con los datos formateados como un archivo CSV utilizable, vamos a importarlos a QGIS y unirlos a una capa de polígonos que contenga los distritos (adm2) utilizando las columnas con los nombres de los distritos en inglés. Sin embargo, es posible que en este paso nos encontremos con el problema de que los nombres de los distritos estén escritos de forma diferente. En este caso, no podemos simplemente realizar una [unión de atributos](/content/Module_5/en_qgis_spatial_tools.md) ya que los atributos deben __coincidir exactamente__. Para solucionarlo, tenemos que realizar una __fusión difusa __.
 
 :::
 
@@ -294,7 +294,7 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
 2. Guarde el proyecto en la carpeta de ejercicios.
 3. [Importe la capa CSV a QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-import).
 4. Importe los límites administrativos situados en la carpeta de entrada de datos: `.../module_5_ex_7_data_cleansing/data/input/`
-5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo ](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
+5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
     ```
     array_first(aggregate(
     layer:= 'pak_admbnda_adm2_wfp_20220909',
@@ -305,11 +305,11 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
     ))
     ```
 
-6. Introduzca un `Output field name`, ajuste el `Output field type` a `Text (string)` y aumente la `output field length` a 40.
+6. Introduzca un `Nombre del campo de salida`, ajuste el `Tipo de campo de salida` a `Texto (cadena)` y aumente la `Longitud del campo de salida` a 40.
 
-7. Haga clic en `Ok`. El archivo CSV debería tener ahora una nueva columna. En esta columna encontrará los valores de la capa de polígonos adm2 que se han emparejado utilizando el algoritmo de fusión difusa.
+7. Haga clic en `Aceptar`. El archivo CSV debería tener ahora una nueva columna. En esta columna encontrará los valores de la capa de polígonos adm2 que se han emparejado utilizando el algoritmo de fusión difusa.
 
-8. Ahora podemos realizar una unión de atributos seleccionando la columna `ADM2_EN` y la columna de fusión difusa recién creada como columna de identificación. En la caja de herramientas de procesos, busque la herramienta __“Join attributes by field value”__. <kbd>Haga doble clic</kbd> en ella.
+8. Ahora podemos realizar una unión de atributos seleccionando la columna `ADM2_EN` y la columna de fusión difusa recién creada como columna de identificación. En la caja de herramientas de procesos, busque la herramienta __“Join attributes by field value”__. Haga <kbd>doble clic</kbd> en ella.
 
 9. Se abrirá una nueva ventana. Aquí, configure los siguientes parámetros:
     1. __Capa de entrada:__ Capa de polígonos ADM2
@@ -320,13 +320,13 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
 
 :::{figure} /fig/en_3.36_m5_ex_7_attr_join.png
 ---
-name: m5_ex7_attr_join
+name: es_m5_ex7_attr_join
 width: 450 px
 ---
 Los parámetros “Join attributes by field value”
 :::
 
-10. Haga clic en `Run`.
+10. Haga clic en `Ejecutar`.
 
 ¡Felicitaciones, ya hemos unido con éxito la información del archivo PDF a una capa de polígonos!
 
@@ -339,14 +339,14 @@ Hemos extraído los datos del PDF y ahora tenemos una capa de polígonos que con
 :::
 
 1. Abra el panel de estilo de capas y seleccione el método de simbolización __Graduado__.
-2. En `Value`, seleccione `Burnt Bricks/Blocks`.
-3. Haga clic en `Classify`.
+2. En `Valor`, seleccione `Burnt Bricks/Blocks`.
+3. Haga clic en `Clasificar`.
 
 La simbolización resultante podría verse parecida a esto:
 
 :::{figure} /fig/m5_ex_7_visualisation_result.png
 ---
-name: m5_ex_7_visualisation_results
+name: es_m5_ex_7_visualisation_results
 width: 600 px
 ---
 Cuanto más oscuro sea el color, mayor es el porcentaje de edificios con paredes de bloques o ladrillos cocidos. Las zonas grises son los distritos de los que no se dispone de datos.

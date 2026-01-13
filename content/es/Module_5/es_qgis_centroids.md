@@ -20,9 +20,10 @@ Los centroides son especialmente útiles a la hora de crear [mapas con símbolos
 :::{figure} /fig/en_centroids_screenshot.png
 ---
 width: 650 px
-name: en_qgis_centroids
+name: es_qgis_centroids
 ---
 Los puntos negros representan los centroides de las entidades de la capa de entrada.
 :::
 
 
+%ALSO YOU CAN USE IT TO ADD PCODES TO admin boundary layers without pcodes (although this can also be done by join by location using biggest overlap)

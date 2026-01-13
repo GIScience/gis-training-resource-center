@@ -19,7 +19,7 @@ El procesamiento de datos no espaciales en QGIS se refiere a la manipulación de
 :::{figure} /fig/en_attribute_table_large.PNG
 ---
 height: 500px
-name: en_attribute_table_large
+name: es_attribute_table_large
 ---
 Captura de pantalla de una tabla de atributos para la versión 3.28.4 de QGIS.
 :::
@@ -27,11 +27,11 @@ Captura de pantalla de una tabla de atributos para la versión 3.28.4 de QGIS.
 ## Uniones no espaciales (unir atributos por valor de campo)
 
 - Se pueden hacer muchos análisis con una sola capa. Pero, a veces, la información necesaria para nuestro análisis está __dividida entre__ diferentes conjuntos de datos/capas de datos.
-- Con QGIS, estas capas pueden __combinarse__ para realizar el análisis que deseemos. La forma más sencilla de combinar capas es mediante una __unión de atributos__. Esta operación busca información de una segunda fuente de datos basándose en un __valor de atributo compartido__. Este valor funciona como identificador único común, también conocido como ID, UID o clave (véase {numref}`simple_attr_join_example`).
+- Con QGIS, estas capas pueden __combinarse__ para realizar el análisis que deseemos. La forma más sencilla de combinar capas es mediante una __unión de atributos__. Esta operación busca información de una segunda fuente de datos basándose en un __valor de atributo compartido__. Este valor funciona como identificador único común, también conocido como ID, UID o clave (véase {numref}`es_simple_attr_join_example`).
 
 :::{figure} /fig/simple_attr_join_example.png
 ---
-name: simple_attr_join_example
+name: es_simple_attr_join_example
 width: 500 px
 ---
 Las entradas de las dos tablas de datos pueden unirse a través del campo ID común.
@@ -48,7 +48,7 @@ Por ejemplo: Tenemos un conjunto de datos espaciales que contiene los límites a
 
 :::{figure} /fig/en_attribute_join_pcode_example.png
 ---
-name: en_attribute_join_pcode_example
+name: es_attribute_join_pcode_example
 width: 550 px
 ---
 El código P asociado al distrito Edo Sur es NG01201.
@@ -70,20 +70,20 @@ En este breve ejercicio guiado, añadiremos los datos de población a la capa de
 1. Descargue las capas necesarias [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), descomprímalas y añádalas a su proyecto QGIS.
 
 :::{tip}
-La capa de población debe [añadirse como una capa de texto delimitada](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` > `Add Layer` > ) sin geometría.
+La capa de población debe [añadirse como una capa de texto delimitada](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Capa` → `Añadir capa` → `Añadir capa de texto delimitado`) sin geometría.
 :::
 
-2. Abra la herramienta “Join Attributes by Field Value” de la caja de herramientas de Procesos.
-3. Como capa de entrada 1, seleccione la capa `nga_admbnda_adm1_osgof_20190417`, configure “Table Field” a `ADM1_PCODE`
-4. Como capa de entrada 2, seleccione la capa `nga_adm1pop_2022`, configure “Table Field” a `ADM1_PCODE`. Además, en “Layer 2 fields to copy”, seleccione `F_TL`, `M_TL` y `T_TL`.
-5. Haga clic en `Run`. Aparecerá una nueva capa en su panel de capas denominada “Joined Layer”.
+2. Abra la herramienta `Unir atributos por valor de campo` de la caja de herramientas de Procesos.
+3. Como capa de entrada 1, seleccione la capa `nga_admbnda_adm1_osgof_20190417`, configure "campo de tabla" a `ADM1_PCODE`
+4. Como capa de entrada 2, seleccione la capa `nga_adm1pop_2022`, configure "campo de tabla 2" a `ADM1_PCODE`. Además, en `campos de la tabla 2 a copiar`, seleccione `F_TL`, `M_TL` y `T_TL`.
+5. Haga clic en `Ejecutar`. Aparecerá una nueva capa en su panel de capas denominada "Capa unida".
 
 :::{figure} /fig/en_3.36_pcode_join.png
 ---
-name: en_3.36_pcode_join
+name: es_3.36_pcode_join
 width: 450 px
 ---
-Configurar los parámetros de la unión en código P
+Configurar los parámetros de la unión en Pcode
 :::
 
 6. Abra la tabla de atributos de la nueva capa y desplácese hacia la derecha. Aquí encontrará los atributos unidos.
@@ -93,7 +93,7 @@ Configurar los parámetros de la unión en código P
 
 :::{figure} /fig/nga_pop_join.png
 ---
-name: nga_pop_join
+name: es_nga_pop_join
 width: 600 px
 ---
 Los datos unidos se clasifican utilizando la simbología graduada para el valor de población.
@@ -150,9 +150,9 @@ Una herramienta muy importante para estos cálculos es la __calculadora de campo
 :::{figure} /fig/en_field_calculator_red_boxes.png
 ---
 width: 100%
-name: en_field_calculator_red_boxes
+name: es_field_calculator_red_boxes
 ---
-Captura de pantalla de la calculadora de campo
+Captura de pantalla de la calculadora de campo.
 :::
 
 A continuación se enumeran los grupos más importantes y sus respectivas funciones que se proporcionan con la calculadora de campo:
@@ -280,19 +280,19 @@ El Generador de consultas proporciona una interfaz que permite definir un __subc
 :::{figure} /fig/en_query_builder_comment.png
 ---
 width: 100%
-name: en_query_builder_comment
+name: es_query_builder_comment
 ---
-Captura de pantalla del generador de consultas
+Captura de pantalla del generador de consultas.
 :::
 
-1. La __lista de campos__ contiene todos los campos de la capa. Para añadir una columna de atributos a la ventana de expresión, haga doble clic en su nombre o escríbalo en la casilla.
-2. El cuadro __Values__ enumera los valores del campo actualmente seleccionado.
-    - Para enumerar __todos los valores únicos__ de un campo, haga clic en el botón __All__.
-    - Para enumerar los __primeros 25__ valores únicos de la columna, haga clic en el botón __Sample__.
+1. La __lista de campos y valores__ contiene todos los campos de la capa. Para añadir una columna de atributos a la ventana de expresión, haga doble clic en su nombre o escríbalo en la casilla.
+2. El cuadro __Valores__ enumera los valores del campo actualmente seleccionado.
+    - Para enumerar __todos los valores únicos__ de un campo, haga clic en el botón `Todos`.
+    - Para enumerar los __primeros 25__ valores únicos de la columna, haga clic en el botón `Muestra`.
     - Para añadir un valor a la ventana de expresión, haga doble clic sobre él en la lista valores. Puede utilizar el __cuadro de búsqueda__ situado en la parte superior del panel "Values" para buscar fácilmente valores de atributos en la lista.
-3. La sección __Operators__ contiene todos los operadores utilizables. Para añadir un operador, haga clic en el botón correspondiente.
-4. El botón __Test__ ayuda a comprobar su consulta y __muestra un cuadro de mensaje con el número de entidades__ que satisfacen la consulta actual.
-5. Utilice el botón __Clear__ para revertir la capa a su estado original.
+3. La sección __Operadores__ contiene todos los operadores utilizables. Para añadir un operador, haga clic en el botón correspondiente.
+4. El botón __Probar__ ayuda a comprobar su consulta y __muestra un cuadro de mensaje con el número de entidades__ que satisfacen la consulta actual.
+5. Utilice el botón __Limpiar__ para revertir la capa a su estado original.
 
 :::{Note}
 Cuando se aplica un filtro con el generador de consultas, QGIS trata el subconjunto resultante como si fuera la __capa completa__.
@@ -353,7 +353,7 @@ En este breve video, descubrirá la ubicación del generador de consultas y apre
 
 :::{dropdown} Respuesta
 - Una consulta no espacial es una consulta aplicada a la tabla de atributos (campos) en lugar de basarse en la geometría. Filtra o selecciona filas (entidades) a partir de condiciones de atributo, no de condiciones espaciales.
-- En QGIS, "Select by expression" es una herramienta que permite escribir expresiones lógicas (por ejemplo, `"population" > 10000 AND "region" = 'East'`) para seleccionar el subconjunto de entidades cuyos atributos satisfacen los criterios.
+- En QGIS, `Selccionar por expresión` es una herramienta que permite escribir expresiones lógicas (por ejemplo, `"population" > 10000 AND "region" = 'East'`) para seleccionar el subconjunto de entidades cuyos atributos satisfacen los criterios.
 - Tras la selección, puede utilizar el subconjunto seleccionado para otras operaciones (por ejemplo, exportar las entidades seleccionadas, aplicarles un estilo diferente, analizarlas solo a ellas, etc.).
 
 :::

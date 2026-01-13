@@ -170,7 +170,7 @@ __Herramienta:__ No se necesitan herramientas ni programas especiales.
 
 * - Instrucciones
   - Estructura de carpetas
-* - 1. Abra la carpeta “Modul_5_Exercise2_Drought_Monitoring_Trigger"
+* - 1. Abra la carpeta "Modul_5_Exercise2_Drought_Monitoring_Trigger"
     2. Abra la subcarpeta "Monitoring"
     3. Copie la carpeta de plantillas "TEMPLATE_Year_Month" y cámbiele el nombre por el del año y mes actuales `2024_01`.
 
@@ -178,7 +178,7 @@ __Herramienta:__ No se necesitan herramientas ni programas especiales.
     :::{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg
     ---
     width: 450px
-    name:
+    name: es_Exercise_Folder_structure_Drought_Monitoring_Trigger
     align: center
     ---
     :::
@@ -217,13 +217,13 @@ En el sitio web, tendrá que hacer clic en Somalia para acceder a los datos. Alt
 :::{figure} /fig/IPC_Projections_website.png
 ---
 height: 250px
-name: FEWSNET IPC - Download IPC Projections
+name: es_IPC_Projections_website
 align: center
 ---
 :::
 
 4. Descargue el que contiene los datos __ZIP__.
-5. Cuando haya descargado los datos, haga clic derecho sobre el archivo y luego haga clic en `Extract all` -> `Extract`.
+5. Cuando haya descargado los datos, haga clic derecho sobre el archivo y luego haga clic en `Extraer Todo` →  `Extraer`.
 6. Abra la carpeta extraída y copie los datos ML1 en la carpeta IPC_ML1 que ha creado en el paso 1.
   * El nombre del archivo se compone de "SO" para Somalia, año y mes del mes del informe, por ejemplo `SO_202308_ML1.shp`.
     Ejemplo de ruta: `.../Modul_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`.
@@ -238,9 +238,9 @@ Recuerde que debe copiar todos los componentes del [shapefile](/content/es/Wiki/
 :::{figure} /fig/IPC_zip.PNG
 ---
 height: 300px
-name: Content of .zip file downloaded containing ML1 and ML2 IPC projections
-align: center
----
+name: es_IPC_zip 
+align: 
+Contenido del archivo .zip descargado que contiene las proyecciones IPC de ML1 y ML2.
 :::
 
 :::{tip}
@@ -249,7 +249,7 @@ Puede suscribirse [en la página principal de FEWSNET](https://fews.net/), para 
 :::{figure} /fig/IPC_Newsletter.png
 ---
 height: 60px
-name: FEWSNET Newsletter
+name: es_FEWSNET Newsletter
 align: center
 ---
 :::
@@ -261,12 +261,12 @@ __Propósito:__ En este paso, todos los datos necesarios se cargarán en un proy
 
 __Herramienta:__ No se necesitan herramientas específicas, solo QGIS.
 
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
-2. Una vez creado el proyecto, guárdelo en la carpeta que creó en el paso 1 (por ejemplo, 2022_05). Para ello, haga clic en `Project` -> `Save as` y vaya hasta la carpeta. Asigne al proyecto el mismo nombre que la carpeta que ha creado (por ejemplo, 2022_05). A continuación, haga clic en `Save`
-3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop). Haga clic en `Project` -> `Save`
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` → `Nuevo`
+2. Una vez creado el proyecto, guárdelo en la carpeta que creó en el paso 1 (por ejemplo, 2022_05). Para ello, haga clic en `Proyecto` → `Guardar como...` y vaya hasta la carpeta. Asigne al proyecto el mismo nombre que la carpeta que ha creado (por ejemplo, 2022_05). A continuación, haga clic en `Guardar`
+3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop). Haga clic en `Proyecto` → `Guardar`
   * Desde la carpeta creada en el paso 1
     * ML1
-  * En la carpeta `Fixes_data`:
+  * En la carpeta `Fixed_data`:
     * district_pop_som
     * WorldPop_som.tif
 
@@ -286,16 +286,16 @@ __Herramienta:__ [`Intersection`](https://giscience.github.io/gis-training-resou
 
 * - Instrucciones
   - Captura de pantalla de la ventana Intersección
-* - 1. Haga clic en `Vector` -> `Geoprocessing Tools` -> [`Intersection`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
-    2. `Input Layer`: ML 1
-    3. `Overlay layer`: district_pop_sum
-    4. En `Intersection` haga clic en los tres puntos ![](/fig/Three_points.png)-> `Save to File` y vaya hasta su carpeta de seguimiento [Año_Mes]. Asigne a la salida el nombre "ML1_Intersección" y haga clic en `Save`
-    5. Haga clic en `Run`
+* - 1. Haga clic en `Vectorial` → `Geoprocessing Tools` → [`Intersección`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
+    2. `Capa de entrada`: ML 1
+    3. `Capa de superposición`: district_pop_sum
+    4. En `Intersección` haga clic en los tres puntos ![](/fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de seguimiento [Año_Mes]. Asigne a la salida el nombre "ML1_Intersección" y haga clic en `Guardar`
+    5. Haga clic en `Ejecutar`
   -
     :::{figure} /fig/SRCS_Trigger_step_4_Intersection.png
     ---
     width: 450px
-    name:
+    name: es_SRCS_Trigger_step_4_Intersection
     align: center
     ---
     :::
@@ -316,7 +316,7 @@ La capa resultante puede tener más filas que las capas originales.
 __Propósito:__ Aquí calculamos la población en cada polígono de la capa de intersección del paso 4.
 
 
-__Herramienta:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
+__Herramienta:__ [Estadísticas de zona`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
 
 ::::::{list-table}
 :header-rows: 1
@@ -324,24 +324,24 @@ __Herramienta:__ [`Zonal Statistics`](https://giscience.github.io/gis-training-r
 
 * - Instrucciones
   - Captura de pantalla de la ventana de estadísticas zonales
-* - 1. En `Toolbox` -> Buscar [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
-    * Consejo: Si la página `Toolbox` no está abierta, haga clic en `Processing`-> `Toolbox`
-    2. `Input Layer`: "ML1_Intersection"
-    3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
-    4. Estadísticas para calcular: Solo `Sum`
-    5. En `Zonal Statistics`, haga clic en los tres puntos ![](/fig/Three_points.png)-> `Save to File` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_zonal_statistic" y haga clic en `Save`
-    5. Haga clic en Ejecutar
+* - 1. En la Caja de herramientas de Procesos → Buscar [`Estadísticas de zona`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
+    * Consejo: Si la página `Caja de herramientas de Procesos` no está abierta, haga clic en `Procesos` → `Caja de herramientas`
+    2. `Capa de entrada`: "ML1_Intersection"
+    3. `Capa ráster`: "som_ppp_2020_UNadj_constrained.tif"
+    4. Estadísticas para calcular: Solo `Suma`
+    5. En `Estadísticas zonal`, haga clic en los tres puntos ![](/fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_zonal_statistic" y haga clic en `Guardar`
+    5. Haga clic en `Ejecutar`.
   -
     :::{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
     ---
     width: 450px
-    name:
+    name: es_SRCS_Trigger_step_5_zonal_statistic
     align: center
     ---
     :::
 ::::::
 
-__Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de polígonos. Esta capa debe tener las mismas columnas en la tabla de atributos como ML1_Intersection __más__ la columna "_sum", que es el número de personas que viven en las partes individuales de los polígonos.
+__Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de polígonos. Esta capa debe tener las mismas columnas en la tabla de atributos como ML1_Intersection __más__ la columna "_suma", que es el número de personas que viven en las partes individuales de los polígonos.
 
 
 :::{dropdown} Video: Cálculo de la población por polígono de intersección
@@ -354,7 +354,7 @@ __Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de p
 __Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
 
 :::{Note}
-El Índice IPC trata a los distritos de baja población igual que a los de alta población, garantizando que los distritos pequeños con alta inseguridad alimentaria no estén infrarrepresentados.
+El Índice IPC trata a los distritos de baja población igual que a los de alta población, garantizando que los distritos pequeños con alta inseguridad alimentaria no estén subrepresentados.
 :::
 
 :::{dropdown} Índice IPC ponderado por la población
@@ -373,17 +373,17 @@ Donde las ponderaciones se definen como:
 | IPC 4 | 3 |
 | IPC 5 | 6 |
 
-El índice IPC trata a los distritos con poca población de la misma manera que a los distritos con alta población. No se produce una infrarrepresentación de la alta inseguridad alimentaria de los distritos pequeños.
+El índice IPC trata a los distritos con poca población de la misma manera que a los distritos con alta población. No se produce una subrepresentación de la alta inseguridad alimentaria de los distritos pequeños.
 :::
-__Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
+__Herramienta:__ [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
 
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" -> `Open Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
-2. Verifique `Create new field`
-3. `Output field name`: Nombre la nueva columna “pop_suma_ponderada”
-4. `Result field type`: Número decimal (real)
-5. Añada el bloque de código de la entrada en el `Expression` campo
-Haga clic en `Ok`
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+2. Verifique `Crear un nuevo campo`
+3. `Nombre del campo de salida`: Nombre la nueva columna “pop_suma_ponderada”
+4. `Tipo del campo de salida`: Número decimal (real)
+5. Añada el bloque de código de la entrada en el `Expresión` campo.
+6. Haga <kbd>clic</kbd> en `Aceptar`.
 
 ```md
 CASE
@@ -402,23 +402,23 @@ END
 __Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
 
 
-__Herramienta:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+__Herramienta:__[`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" -> `Attribute Table` -> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
-2. Verifique `Create new field`
-3. `Output field name`: Nombre la nueva columna “Index_per_IPCPolygon_ML1”
-4. `Result field type`: Número decimal (real)
-5. Añada el siguiente código en el campo `Expression`
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+2. Verifique `Crear un campo nuevo`
+3. `Nombre del campo de salida `: Nombre la nueva columna “Index_per_IPCPolygon_ML1”
+4. `Tipo del campo de salida`: Número decimal (real)
+5. Añada el siguiente código en el campo `Expresión`.
 ```md
 "pop_sum_weighted"/"districtpo"
 ```
-6. Haga clic en `Ok`
-7. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y desactive el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png)
+6. Haga <kbd>clic</kbd> en `Aceptar`.
+7. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y desactive el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png).
 
 :::{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
 ---
 width: 500px
-name: SRCS_Trigger_step_8_field_calculator
+name: es_SRCS_Trigger_step_8_field_calculator
 align: center
 ---
 :::
@@ -434,7 +434,7 @@ __Resultado:__ La capa "ML1_zonal_statistic" debería tener ahora la columna "In
 
 __Propósito:__ El propósito de este paso es calcular una media ponderada por la población sobre las clases IPC por distrito. De este modo, se dará más importancia a la cantidad de personas que viven en una determinada clase de IPC que a la superficie afectada por una determinada clase de IPC. El resultado es un valor del Índice IPC para cada distrito.
 
-__Herramienta:__ `Join attribute by location (summary)`
+__Herramienta:__ `Unir atributos por localización (resumen)`
 
 ::::::{list-table}
 :header-rows: 1
@@ -442,20 +442,20 @@ __Herramienta:__ `Join attribute by location (summary)`
 
 * - Instrucciones
   - Unir atributos por ubicación (resumen)
-* - 1. En `Toolbox`-> Busque `Join attribute by location (summary)`.
-      * Consejo: Si la página `Toolbox` no está abierta, haga clic en `Processing`-> `Toolbox`.
-    2. `Input Layer`: Seleccione su capa "district_pop_som".
-    3. `Input Layer 2`: Seleccione "ML1_zonal_statistic".
-    4. `Geometric predicate`: Seleccione "Intersection".
-    5. `Field to summarise`: Seleccione "Index_per_IPCPolygon_ML1".
-    6. `Summaries to calculate`: Marque solo la opción "mean".
-    7. En `Join Layer`, haga clic en los tres puntos ![](/fig/Three_points.png)-> `Save to File` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_IPC_Index" y haga clic en `Save`.
-    8. Haga clic en `Run`.
+* - 1. En la caja de herramientas de Procesos → Busque `Unir atributos por localización (resumen)`.
+      * Consejo: Si la página caja de herramientas de Procesos no está abierta, haga clic en `Procesos` → `caja de herramientas`.
+    2. `Unirse a las funciones en`: Seleccione su capa "district_pop_som".
+    3. `Comparando con`: Seleccione "ML1_zonal_statistic".
+    4. `Donde los objetos`: Seleccione "intersecan".
+    5. `Campos a resumir`: Seleccione "Index_per_IPCPolygon_ML1".
+    6. `Resúmenes a calcular`: Marque solo la opción "media".
+    7. En `Capa unida`, haga clic en los tres puntos ![](/fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_IPC_Index" y haga clic en `Guardar`.
+    8. Haga clic en `Ejecutar`.
   -
     :::{figure} /fig/Exercise_trigger_join_attributes_location.png
     ---
     width: 450px
-    name:
+    name: es_Exercise_trigger_join_attributes_location
     align: center
     ---
     :::
@@ -471,13 +471,13 @@ __Resultado:__ Como resultado, su capa "ML1_IPC_Index" debería tener la columna
 
 __Propósito:__ El objetivo de este paso es obtener una visión general rápida de la posible activación del desencadenante sin tener que revisar los datos reales. En su lugar, tendremos una columna binaria con valores trigger = sí o trigger=no.
 
-__Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
+__Herramienta:__ [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
 
-1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" -> `Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
-2. Verifique `Create new field`
-3. `Output field name`: Nombre la nueva columna "Activación_desencadenante".
-4. `Result field type`: Texto (cadena).
-5. Añada el código siguiente en el campo `Expression`.
+1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+2. Verifique `Crear un campo nuevo`
+3. `Nombre del campo de salida`: Nombre la nueva columna "Activación_desencadenante".
+4. `Tipo del campo de salida`: Texto (cadena).
+5. Añada el código siguiente en el campo `Expresión`.
 6. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y finalice el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png).
 
 ::::::{list-table}
@@ -496,7 +496,7 @@ __Herramienta:__ [`Field Calculator`](https://giscience.github.io/gis-training-r
     ```
 ::::::
 
-6. Haga clic en `ok`.
+6. Haga clic en `Aceptar`.
 7. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y finalice el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png).
 
 __Resultado:__ Una capa con todos los distritos de Somalia con una columna que contiene valores "Sí" y "No" que indica si se han alcanzado o no los niveles de activación.
@@ -504,7 +504,7 @@ __Resultado:__ Una capa con todos los distritos de Somalia con una columna que c
 :::{figure} /fig/Exercise_trigger_evaluation.png
 ---
 width: 600px
-name:
+name: es_Exercise_trigger_evaluation
 align: center
 ---
 :::
@@ -521,11 +521,11 @@ __Herramienta:__ [Simbología](https://giscience.github.io/gis-training-resource
 
 __Activación del desencadenante__
 
-1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" -> `Properties` -> `Symbology`.
-2. En la esquina inferior izquierda, haga clic en `Style` -> `Load Style`.
+1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" →  `Propriedades` →  `Simbología`.
+2. En la esquina inferior izquierda, haga clic en `Estilo` →  `Cargar estilo`.
 3. En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya hasta la carpeta "FbF_Drought_Monitoring_Trigger/layer_styles" y seleccione el archivo __"Style_Trigger_Activation_ex.qml"__.
-4. Haga clic en `Open`. A continuación, haga clic en `Load Style`.
-5. De nuevo en la ventana “Layer Properties”, haga clic en `Apply` y `OK`.
+4. Haga clic en `Abrir`. A continuación, haga clic en `Cargar estilo`.
+5. De nuevo en la ventana “Layer Properties”, haga clic en `Aplicar` y `Aceptar`.
 
 ::::{dropdown} Información: Capa de activación del desencadenante
 :open:
@@ -537,7 +537,7 @@ La capa de estilo "Style_Trigger_Activation.qml" está configurada para mostrar 
 :::{figure} /fig/Map_yes_trigger.PNG
 ---
 width: 1000px
-name: Map_yes_trigger
+name: es_Map_yes_trigger
 align: center
 ---
 :::
@@ -545,12 +545,12 @@ align: center
 
 __Fronteras administrativas 2 (Regiones)__
 
-6. Haga clic con el botón derecho en la capa "Som_admin1_regions_UNDP.gqkp" (Regiones) -> `Properties` -> `Symbology`.
-7. En la esquina inferior izquierda, haga clic en `Style` -> `Load Style`.
+6. Haga clic con el botón derecho en la capa "Som_admin1_regions_UNDP.gqkp" (Regiones) →  `Propriedades` →  `Simbología`.
+7. En la esquina inferior izquierda, haga clic en `Estilo` →  `Cargar estilo`.
 8. En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya hasta la carpeta "FbF_Drought_Monitoring_Trigger/layer_styles" y seleccione el archivo __"SOM_regions_style_ex.qml"__.
-9. Haga clic en `Open`. A continuación, haga clic en `Load Style`.
-10. De nuevo en la ventana “Layer Properties”, haga clic en `Apply` y `OK`.
-11. Añada un mapa base de OpenStreetMap haciendo clic en `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Seleccione OpenStreetMap. Haga clic en `Add`. ([Wiki mapa base](/content/es/Wiki/es_qgis_basemaps_wiki.md)).
+9. Haga clic en `Abrir`. A continuación, haga clic en `Cargar estilo`.
+10. De nuevo en la ventana “Layer Properties”, haga clic en `Aplicar` y `Aceptar`.
+11. Añada un mapa base de OpenStreetMap haciendo clic en `Capa` →  `Añadir capa` →  `Añadir capa XYZ...` →  Seleccione OpenStreetMap. Haga clic en `Add`. ([Wiki mapa base](/content/es/Wiki/es_qgis_basemaps_wiki.md)).
 12. Ponga el mapa base de OpenStreetMap en la parte inferior.
 13. Borre todas las capas __excepto__:
     * Activación_desencadenante
@@ -571,7 +571,7 @@ __Fronteras administrativas 2 (Regiones)__
     :::{figure} /fig/Map_no_trigger.PNG
     ---
     width: 1000px
-    name:
+    name: es_Map_no_trigger
     align: center
     ---
     :::
@@ -580,7 +580,7 @@ __Fronteras administrativas 2 (Regiones)__
     :::{figure} /fig/Map_yes_trigger.PNG
     ---
     width: 450px
-    name:
+    name: es_Map_yes_trigger
     align: center
     ---
     :::
@@ -598,13 +598,13 @@ __Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-trainin
 
 
 1. Si no lo ha hecho antes, elimine todas las capas excepto __Trigger_activation__, __Som_admin1_regions_UNDP__ y __OpenStreetMap__.
-2. Abra una nueva composición de impresión haciendo clic en `Project` -> `New Print Layout` -> introduzca el nombre de su proyecto actual, por ejemplo, “2024_01”.
+2. Abra una nueva composición de impresión haciendo clic en `Proyecto` → `Nueva composición de impresión` → introduzca el nombre de su proyecto actual, por ejemplo, “2024_01”.
 3. Vaya a la carpeta `Modul_5_Exercise2_Drought_Monitoring_Trigger` y arrastre y suelte el archivo `Trigger_activation_Intervention_map_ex.qpt` en el diseño de impresión.
-4. Cambie la fecha a la actual haciendo clic en “Further map information” en el panel de elementos. Haga clic en la pestaña `Item Properties` y desplácese hacia abajo. Aquí puede cambiar la fecha en el campo `Main Properties`.
-5. Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña `Item Properties` y desplácese hacia abajo hasta que vea el campo `Legend items`. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que `Auto update` no esté marcada.
+4. Cambie la fecha a la actual haciendo clic en “Further map information” en el panel de elementos. Haga clic en la pestaña `Propriedades del elemento` y desplácese hacia abajo. Aquí puede cambiar la fecha en el campo `Propriedades principales`.
+5. Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña `Propriedades del elemento` y desplácese hacia abajo hasta que vea el campo `elementos de la leyenda`. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que `Auto actualizar` no esté marcada.
     * Elimine todos los elementos de la leyenda haciendo clic en el elemento y luego en el icono rojo con el signo menos que aparece debajo.
-    * Añada __Trigger_activation__ a la leyenda haciendo clic en el signo más verde y haga clic en la capa y haga clic en `Ok`.
-    * Añada __Som_admin1_regions_UNDP__ a la leyenda haciendo clic en el signo más verde y haga clic en la capa y haga clic en `Ok`.
+    * Añada __Trigger_activation__ a la leyenda haciendo clic en el signo más verde y haga clic en la capa y haga clic en `Aceptar`.
+    * Añada __Som_admin1_regions_UNDP__ a la leyenda haciendo clic en el signo más verde y haga clic en la capa y haga clic en `Aceptar`.
 
 
 :::{dropdown} Video: Hacer un mapa impreso
@@ -633,20 +633,20 @@ Cuando haya terminado el diseño de su mapa, puede exportarlo como archivo PDF o
 
 __Exportar como imagen__
 
-1. En el diseño de impresión, haga clic en `Layer` -> `Export as Image`.
+1. En el diseño de impresión, haga clic en `Diseño` → `Exportar como imagen`.
 2. Elija la carpeta __Result__ en la carpeta que ha creado en el paso 1. Asigne al archivo el nombre del proyecto, por ejemplo 2022_04.
-3. Haga clic en `Save`.
-4. Aparecerá la ventana "Opciones de exportación de imágenes". Haga clic en `Save`.
+3. Haga clic en `Guardar`.
+4. Aparecerá la ventana "Opciones de exportación de imágenes". Haga clic en `Guardar`.
 Ahora la imagen se puede encontrar en la carpeta de resultados en la carpeta que creó en el paso 1.
 
 
 __Exportar como PDF__
 
-1. En el diseño de impresión, haga clic en `Layer` -> `Export as PDF`.
+1. En el diseño de impresión, haga clic en `Diseño` → `Exportar como PDF`.
 2. Elija la carpeta __Result__ en la carpeta que ha creado en el paso 1. Asigne al archivo el nombre del proyecto, por ejemplo 2022_04.
-3. Haga clic en `Save`.
+3. Haga clic en `Guardar`.
 4. Aparecerá la ventana "Opciones de exportación PDF". Para obtener los mejores resultados, seleccione la compresión de imagen `lossless`.
-5. Haga clic en `Save`.
+5. Haga clic en `Guardar`.
 
 Ahora la imagen se puede encontrar en la carpeta de resultados en la carpeta que creó en el paso 1.
 
@@ -654,7 +654,7 @@ Ahora la imagen se puede encontrar en la carpeta de resultados en la carpeta que
 :::{figure} /fig/map_output_example_ex.png
 ---
 width: 1000px
-name:
+name: es_map_output_example_ex
 align: center
 ---
 :::

@@ -109,7 +109,7 @@ __Datos disponibles:__
 
 ::::{margin}
 :::{tip}
-Para cargar el archivo CSV, vaya a `Layer` > `Add Layer` > `Add delimited text layer`.
+Para cargar el archivo CSV, vaya a `Capa` → `Añadir capa` → `Añadir capa de texto delimitado`.
 :::
 ::::
 
@@ -132,44 +132,44 @@ Si comparamos los valores de la columna `admin2_EN` con la capa `pak_admbnda_adm
 
 ### Paso 1: Consolidar la cantidad de dinero transferido en admin2
 
-3. En la caja de herramientas de procesos, busque la herramienta `Aggregate` en `Vector Geometry`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (véase {numref}`aggregate_tool`).
+3. En la caja de herramientas de procesos, busque la herramienta `Agregar` en `Geometría`. Haga <kbd>doble clic</kbd> en ella. Se abrirá una nueva ventana (véase {numref}`es_aggregate_tool`).
 
 :::{figure} /fig/en_3.36_aggregate.png
 ---
-name: aggregate_tool
+name: es_aggregate_tool
 width: 600 px
 ---
 La herramienta Aggregate en QGIS 3.36
 :::
 
-4. En la ventana “Aggregate”,
+4. En la ventana "Agregar",
     1. Seleccione la capa `G2P_disbursement_report_cleaned` como capa de entrada.
-    2. `Group by Expression` es donde seleccionamos qué columna queremos tener agrupada (o seleccionada como categoría). Queremos identificar la cantidad de dinero transferida a cada distrito (nivel admin2), por lo que tenemos que seleccionar la columna correspondiente. En nuestro caso, se trata de la columna `var_attr_03`.
+    2. `Agrupar por expresión` es donde seleccionamos qué columna queremos tener agrupada (o seleccionada como categoría). Queremos identificar la cantidad de dinero transferida a cada distrito (nivel admin2), por lo que tenemos que seleccionar la columna correspondiente. En nuestro caso, se trata de la columna `var_attr_03`.
     3. En esta casilla es donde seleccionamos cómo la herramienta consolida las distintas columnas:
-        - Queremos calcular el `Sum` para la columna “Amount”.
-        - Para la columna “var attr 03” queremos seleccionar `Concatenate_unique`. Esto obtiene todas las cadenas únicas de un campo.
+        - Queremos calcular el `Suma` para la columna "Amount".
+        - Para la columna "var attr 03" queremos seleccionar `Concatenate_unique`. Esto obtiene todas las cadenas únicas de un campo.
         - Las demás columnas pueden ajustarse a `concatenate_unique`
-    4. Haga clic en `Run`. Aparecerá una nueva capa llamada “Aggregated” en el panel de capas. Cierre la ventana "Aggregate".
+    4. Haga clic en `Ejecutar`. Aparecerá una nueva capa llamada "Aggregated" en el panel de capas. Cierre la ventana "Agregar".
 
 
     :::{figure} /fig/en_3.36_aggregate_settings.png
     ---
-    name: aggregate_settings
+    name: es_aggregate_settings
     width: 650 px
     ---
-    Ajuste la función “aggregation” para las columnas pertinentes. Preste atención a que el `Type` para el importe esté configurado como “Integer”. Si ha importado correctamente la tabla en QGIS, esto debería establecerse automáticamente.
+    Ajuste la función "agregar" para las columnas pertinentes. Preste atención a que el `Tipo` para el importe esté configurado como "entero". Si ha importado correctamente la tabla en QGIS, esto debería establecerse automáticamente.
     :::
 
     :::{admonition}
     :type: note
-    Si el `Type` para la columna de cantidad se establece en “Text (string)”, QGIS leerá el formato de datos para esta columna como un valor de cadena. QGIS no puede realizar operaciones matemáticas sobre valores de cadena porque los lee como datos no numéricos. Asegúrese de importar la capa a través del diálogo `Add delimited text layer`(`Layer` > `Add Layer` > `Add delimited text layer...`) y de que `Type` para la columna “Amount” está configurada como Integer.
+    Si el `Typo` para la columna de cantidad se establece en “Text (string)”, QGIS leerá el formato de datos para esta columna como un valor de cadena. QGIS no puede realizar operaciones matemáticas sobre valores de cadena porque los lee como datos no numéricos. Asegúrese de importar la capa a través del diálogo `Añadir capa de texto delimitado`(`Capa` → `Añadir capa` → `Añadir capa de texto delimitado...`) y de que `Tipo` para la columna "Amount" está configurada como Integer.
     :::
 
-    5. Echemos un vistazo a la nueva capa abriendo la tabla de atributos. Si ha hecho todo correctamente, la tabla debería tener el siguiente aspecto: {numref}`aggregate_results`. Podemos ver una fila por cada valor distinto en la columna `var attr 03` (Gwardar, Jamshoro, Dadu, Kambar Shahdadkot, Shiparpur). En la columna `Amount` vemos la suma de todas las transferencias individuales. En las demás columnas, podemos ver una cadena con los distintos valores de la tabla original separados por comas (por ejemplo, las distintas unidades admin3, Thesils, bajo la columna `var attr 04`).
+    5. Echemos un vistazo a la nueva capa abriendo la tabla de atributos. Si ha hecho todo correctamente, la tabla debería tener el siguiente aspecto: {numref}`es_aggregate_results`. Podemos ver una fila por cada valor distinto en la columna `var attr 03` (Gwardar, Jamshoro, Dadu, Kambar Shahdadkot, Shiparpur). En la columna `Amount` vemos la suma de todas las transferencias individuales. En las demás columnas, podemos ver una cadena con los distintos valores de la tabla original separados por comas (por ejemplo, las distintas unidades admin3, Thesils, bajo la columna `var attr 04`).
 
     :::{figure} /fig/en_aggregate_results.png
     ---
-    name: aggregate_results
+    name: es_aggregate_results
     width: 650 px
     ---
     Los datos consolidados de `G2P_disbursement_report_cleaned`
@@ -180,19 +180,19 @@ La herramienta Aggregate en QGIS 3.36
 
 En este paso, agregaremos la información consolidada que hemos obtenido del archivo CSV a los límites administrativos. Tenemos que unir la tabla consolidada con la capa `pak_admbnda_adm2_wfp_20220909`.
 
-1. En la caja de herramientas de procesos, busque `Join attributes by field value`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana.
+1. En la caja de herramientas de procesos, busque `Unir atributos por valor de campo`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana.
 
     :::{figure} /fig/en_3.36_join_by_attr.png
     ---
-    name: join_by_attr
+    name: es_join_by_attr
     width: 700 px
     ---
     El cuadro de diálogo “Join attributes by field value” en QGIS 3.36.
     :::
 
-    1. La capa de entrada debe ser la capa `pak_admbnda_adm2_wfp_20220909`. Esta será la capa que recibirá información adicional. Se conservarán las geometrías de la capa de entrada. La dirección `Table field` debe ajustarse a "ADM2_EN". Estos son los nombres en inglés para el nivel admin2.
-    2. La segunda capa de entrada debe ser la capa `Aggregated` del paso anterior. `Table field 2` también deben ser los nombres en inglés de los límites administrativos. En nuestro caso, la columna correspondiente es "var attr 03". En `Layer 2 fields to copy`, seleccione únicamente `amount`, ya que no nos interesan los demás valores.
-2. Haga clic en `Run`. Aparecerá una nueva capa `Joined Layer` en el panel de capas.
+    1. La capa de entrada debe ser la capa `pak_admbnda_adm2_wfp_20220909`. Esta será la capa que recibirá información adicional. Se conservarán las geometrías de la capa de entrada. La dirección `Campo de table` debe ajustarse a "ADM2_EN". Estos son los nombres en inglés para el nivel admin2.
+    2. La segunda capa de entrada debe ser la capa `Agregado` del paso anterior. `Campo de tabla 2` también deben ser los nombres en inglés de los límites administrativos. En nuestro caso, la columna correspondiente es "var attr 03". En `Campo de la capa 2 a copiar`, seleccione únicamente `amount`, ya que no nos interesan los demás valores.
+2. Haga clic en `Ejecutar`. Aparecerá una nueva capa `Capa unida` en el panel de capas.
 3. Cierre el cuadro de diálogo de unión e investigue la nueva capa abriendo su tabla de atributos. Desplácese a la derecha para encontrar la nueva columna “amount” que se ha unido.
 4. ¿Puede notar que la mayoría de las filas tienen `NULL` como valor en esta columna? Esto se debe a que la tabla consolidada solo tiene 5 distritos (adm2) que recibieron dinero. Puede ordenar la tabla haciendo clic en la cabecera de la columna.
 
@@ -200,7 +200,7 @@ En este paso, agregaremos la información consolidada que hemos obtenido del arc
 
 :::{figure} /fig/en_m5_ex5_results.png
 ---
-name: aggregation_ex_results
+name: es_aggregation_ex_results
 width: 750 px
 ---
 El importe consolidado se ha unido a una capa de las fronteras administrativas.

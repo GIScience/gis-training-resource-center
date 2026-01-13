@@ -116,30 +116,30 @@ Asegúrese siempre de que sus conjuntos de datos se ponen en la proyección corr
 
 2. Seleccione todos los centros de salud situados en la región de San Luis:
     - Seleccione la región `Saint Louis` en la capa límite. Puede seleccionar manualmente las filas específicas. Para obtener más información, consulte la entrada de Wiki sobre [consultas espaciales](/content/es/Wiki/es_qgis_spatial_queries_wiki.md).
-    - Guarde la selección con el nuevo nombre `Saint_Louis_region` en una capa adicional. Para ello, haga clic con el botón derecho en la capa límite --> `Export` --> `Save Selected Features As...`
+    - Guarde la selección con el nuevo nombre `Saint_Louis_region` en una capa adicional. Para ello, haga clic con el botón derecho en la capa límite → `Exportar` → `Guardar objetos seleccionados como...`
 
 :::{figure} /fig/en_ex2_export_selected.PNG
 ---
 width: 40%
-name: export_selected_features
+name: es_export_selected_features
 ---
-Captura de pantalla de cómo exportar las entidades seleccionadas
+Captura de pantalla de cómo exportar las entidades seleccionadas.
 :::
 
-3. Utilice la herramienta ![](/fig/mAlgorithmSelectLocation.png) `Select by location` o ![](/fig/mAlgorithmClip.png) `Clip` para seleccionar todos los centros de salud dentro de la capa `Saint_Louis_region`.
+3. Utilice la herramienta ![](/fig/mAlgorithmSelectLocation.png) `Seleccionar por ubicación` o ![](/fig/mAlgorithmClip.png) `Cortar` para seleccionar todos los centros de salud dentro de la capa `Saint_Louis_region`.
     - Guarde la nueva selección con el nuevo nombre `healthsites_Saint_Louis` en una capa adicional (sugerencia: haga clic con el botón derecho sobre la capa, Exportar, etc.).
 
 :::{figure} /fig/en_ex2_select_by_location.PNG
 ---
 width: 70%
-name: select_by_location
+name: es_select_by_location
 ---
-Captura de pantalla de la herramienta de selección por ubicación
+Captura de pantalla de la herramienta de selección por ubicación.
 :::
 
 4. Investigue el riesgo de inundación en San Luis. Tras la selección satisfactoria de todos los centros de salud de la región de San Luis en el paso anterior, proceda a cargar la capa de extensión de la inundación de San Luis en QGIS:
     - Añada la capa de extensión de la inundación (`EO4SD_SAINT_LOUIS_FLOOD_2018.shp`)
-    - Aunque la capa no cubre la totalidad de la región de San Luis, se extiende más allá de San Luis en el norte. Utilice la herramienta ![](/fig/mAlgorithmClip.png) `Clip` para recortar la capa de extensión de la inundación a la región de San Luis (sugerencia: como entrada utilice la extensión de la inundación de San Luis, utilice Saint_louis_region como superposición) para un enfoque más concentrado en el centro de San Luis. Para obtener más información, consulte la entrada de Wiki sobre [geoprocesamiento](/content/es/Wiki/es_qgis_geoprocessing_wiki.md).
+    - Aunque la capa no cubre la totalidad de la región de San Luis, se extiende más allá de San Luis en el norte. Utilice la herramienta ![](/fig/mAlgorithmClip.png) `Cortar` para recortar la capa de extensión de la inundación a la región de San Luis (sugerencia: como entrada utilice la extensión de la inundación de San Luis, utilice Saint_louis_region como superposición) para un enfoque más concentrado en el centro de San Luis. Para obtener más información, consulte la entrada de Wiki sobre [geoprocesamiento](/content/es/Wiki/es_qgis_geoprocessing_wiki.md).
     - Guarde la selección como `Saint_Louis_flood_clipped`.
 
 5. Al consultar la tabla de atributos de la capa `Saint_Louis_flood_clipped` (columna Watertype), verá que la capa incluye zonas inundadas, no inundadas y masas de agua.
@@ -147,47 +147,47 @@ Captura de pantalla de la herramienta de selección por ubicación
 :::{figure} /fig/en_ex1_attribute_table_floods.PNG
 ---
 width: 40%
-name: attribute_table_floods
+name: es_attribute_table_floods
 ---
 Captura de pantalla de la capa Saint_Louis_flood_clipped
 :::
 
 6. Visualice solo las zonas inundadas y las masas de agua del conjunto de datos:
-    - Vaya a `Symbology` y cambie la primera selección de "Símbolos individuales" a `Categorized`.
-    - Seleccione la columna `Watertype` y haga clic en `Classify`.
+    - Vaya a `Simbología` y cambie la primera selección de `Símbolos Únicos` a `Categorizado`.
+    - `Valor`: Seleccione la columna `Watertype` y haga clic en `Clasificar`.
     - Elija colores diferentes para las masas de agua y las zonas inundadas. Deje las zonas no inundadas sin marcar o hágalas transparentes (opacidad = 0%).
     - Exploración visual: ¿Qué zonas son más y menos propensas a las inundaciones?
 
 :::{figure} /fig/en_ex2_screenshot_flood.PNG
 ---
 width: 40%
-name: screenshot_flood
+name: es_screenshot_flood
 ---
-Captura de pantalla de las masas de agua y las zonas inundadas 
+Captura de pantalla de las masas de agua y las zonas inundadas. 
 :::
 
 7. Evalúe qué centros de salud están expuestos al riesgo de inundación.
-    - Utilice la herramienta `Select by expression` para seleccionar todas las zonas inundadas en la capa `Saint_Louis_flood_clipped`. Puede acceder a esta herramienta a través de la tabla de atributos haciendo clic en este símbolo ![](/fig/mIconExpressionSelect_new.png)
+    - Utilice la herramienta `Seleccionar por expresión` para seleccionar todas las zonas inundadas en la capa `Saint_Louis_flood_clipped`. Puede acceder a esta herramienta a través de la tabla de atributos haciendo clic en este símbolo ![](/fig/mIconExpressionSelect_new.png)
 
 :::{figure} /fig/en_ex2_select_by_expression.PNG
 ---
 width: 70%
-name: select_by_expression
+name: es_select_by_expression
 ---
-Captura de pantalla de la herramienta Seleccionar por expresión
+Captura de pantalla de la herramienta Seleccionar por expresión.
 :::
 
 8. Guarde la selección en una capa separada. Nómbrelo `Saint_Louis_flooded_areas`.
 
 9. Ahora puede eliminar la capa `Saint_Louis_flood_clipped` para evitar confusiones.
-    - Utilice la herramienta ![](/fig/mAlgorithmSelectLocation.png) `Select by location` para evaluar qué centros de salud son propensos a las inundaciones por estar situados dentro de las zonas inundadas de San Luis (sugerencia: Seleccione las entidades de: `healthsites_Saint_Louis`; comparando con: `Saint_Louis_flooded_areas`).
+    - Utilice la herramienta ![](/fig/mAlgorithmSelectLocation.png) `Seleccionar por ubicación` para evaluar qué centros de salud son propensos a las inundaciones por estar situados dentro de las zonas inundadas de San Luis (sugerencia: Seleccione las entidades de: `healthsites_Saint_Louis`; comparando con: `Saint_Louis_flooded_areas`).
 
 :::{figure} /fig/en_ex2_select_by_location_health.PNG
 ---
 width: 70%
-name: select_by_location
+name: es_select_by_location
 ---
-Captura de pantalla de la herramienta Seleccionar por ubicación
+Captura de pantalla de la herramienta Seleccionar por ubicación.
 :::
 
 10. Compruebe la tabla de atributos de la capa `healthsites` para las entidades seleccionadas: una farmacia y un hospital.
@@ -195,9 +195,9 @@ Captura de pantalla de la herramienta Seleccionar por ubicación
 :::{figure} /fig/en_ex1_selected_healthsites_senegal.PNG
 ---
 width: 60%
-name: selected_healthsites_senegal
+name: es_selected_healthsites_senegal
 ---
-Captura de pantalla de los centros de salud seleccionados en las zonas inundadas
+Captura de pantalla de los centros de salud seleccionados en las zonas inundadas.
 :::
 
 11. ¿Qué centros de salud están situados cerca de zonas inundadas?
@@ -206,23 +206,23 @@ Captura de pantalla de los centros de salud seleccionados en las zonas inundadas
 :::{figure} /fig/en_ex2_buffer.PNG
 ---
 width: 60%
-name: buffer
+name: es_ex2_buffer
 ---
-Captura de pantalla del proceso de zona de influencia
+Captura de pantalla del proceso de zona de influencia.
 :::
 
 :::{Hint}
 A más tardar en esta fase, recibirá un recordatorio de que debe reproyectar las capas. Las zona de influencia significativas solo pueden calcularse en sistemas de coordenadas proyectadas. El sistema de coordenadas previsto para Senegal es `EPSG:32628 WGS 84 / UTM zone 28N`
 :::
 
-12. Ahora vuelva a utilizar la herramienta ![](/fig/mAlgorithmSelectLocation.png) `Select by location` para evaluar qué zonas de influencia se intersecan con las zonas inundadas.
+12. Ahora vuelva a utilizar la herramienta ![](/fig/mAlgorithmSelectLocation.png) `Seleccionar por ubicación` para evaluar qué zonas de influencia se intersecan con las zonas inundadas.
 
 :::{figure} /fig/en_ex1_select_healthsites_buffer.PNG
 ---
 width: 60%
-name: selected_healthsites_buffer
+name: es_ex1_select_healthsites_buffer
 ---
-Captura de pantalla de la herramienta Seleccionar por ubicación para las zonas de influencia
+Captura de pantalla de la herramienta Seleccionar por ubicación para las zonas de influencia.
 :::
 
 13. ¿Cuántos centros de salud se seleccionaron? Compruebe la tabla de atributos. La selección debe incluir cinco farmacias y un hospital.
@@ -231,9 +231,9 @@ Captura de pantalla de la herramienta Seleccionar por ubicación para las zonas 
 :::{figure} /fig/en_ex1_selected_flooded_healthsites.PNG
 ---
 width: 60%
-name: selected_healthsites_flooded
+name: es_ex1_selected_flooded_healthsites
 ---
-Captura de pantalla de los centros de salud seleccionados en las zonas inundadas
+Captura de pantalla de los centros de salud seleccionados en las zonas inundadas.
 :::
 
 El resultado final puede representarse del siguiente modo: mostrará las zonas inundadas, los centros de salud de la zona de influencia y las intersecciones entre ellos. Aunque estas entidades no sean fácilmente visibles en QGIS, puede comprobar que todo ha funcionado correctamente consultando la tabla de atributos.
@@ -241,9 +241,9 @@ El resultado final puede representarse del siguiente modo: mostrará las zonas i
 :::{figure} /fig/en_ex1_final_result.PNG
 ---
 width: 60%
-name: ex1_final_result
+name: es_ex1_final_result
 ---
-Captura de pantalla del resultado final
+Captura de pantalla del resultado final.
 :::
 
 

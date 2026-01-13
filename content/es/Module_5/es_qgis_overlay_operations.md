@@ -8,12 +8,12 @@
 
 ## Operaciones de superposición (recorte, disolución, zona de influencia)
 
-- Las operaciones de superposición nos permiten combinar las geometrías de dos capas de diferentes maneras (véase {numref}`overlay_operations`).
+- Las operaciones de superposición nos permiten combinar las geometrías de dos capas de diferentes maneras (véase {numref}`es_overlay_operations`).
 - La diferencia con las uniones espaciales es que las __geometrías se transforman en el proceso__, y no principalmente los atributos.
 
 :::{figure} /fig/overlay_operations.png
 ---
-name: overlay_operations
+name: es_overlay_operations
 width: 500 px
 ---
 Representación visual de diferentes operaciones de superposición.
@@ -23,7 +23,7 @@ Las operaciones de superposición incluyen __recorte, zona de influencia y disol
 
 ### Recorte
 
-- La herramienta ![](/fig/mAlgorithmClip.png) `Clip` se utiliza para cortar una capa vectorial utilizando los límites de otra capa de polígonos. En otras palabras, extrae una parte de un conjunto de datos en función de los límites de otro.
+- La herramienta ![](/fig/mAlgorithmClip.png) `Cortar` se utiliza para cortar una capa vectorial utilizando los límites de otra capa de polígonos. En otras palabras, extrae una parte de un conjunto de datos en función de los límites de otro.
 - Mantiene solo las partes de las entidades de la capa de entrada que están dentro de los polígonos de la capa de superposición, lo que produce un conjunto de datos refinado.
 - Aunque los atributos principales de las entidades siguen siendo los mismos, algunas propiedades, como el área o la longitud, pueden cambiar después de la operación de recorte. Si ha almacenado estas propiedades como atributos, es posible que deba actualizarlas manualmente.
 
@@ -42,7 +42,7 @@ La herramienta tiene dos diferentes opciones de entrada:
 :::{figure} /fig/en_clip_sudan.PNG
 ---
 width: 550 px
-name: en_clip_sudan
+name: es_clip_sudan
 ---
 Captura de pantalla de la herramienta Recortar con los datos de entrada.
 :::
@@ -56,9 +56,9 @@ como una nueva capa: __Road_infrastructure_Sudan.geojson__.
 
 2. Filtre la capa por medio de __generador de consultas__ para mostrar solo __carreteras primarias y residenciales__ ("carretera" = 'primary' OR "carretera" = 'residential').
 3. Cargue la capa admin1 para Sudán que contiene el distrito Nilo Blanco, __ne_10m_admin_1_Sudan_White_Nile.geojson__. Se descarga de los [datos de Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
-4. Seleccione la capa de carreteras y abra el diálogo de __Recorte__ desde `Vector` > `Geoprocessing Tools`.
+4. Seleccione la capa de carreteras y abra el diálogo de __Cortar__ desde `Vectorial` > `Geoprocessing Tools`.
     - Configure las carreteras como __capa de entrada__ y los límites del distrito de Nilo Blanco como __capa de superposición__.
-    - Haga clic en __Ejecutar__ para generar una capa temporal llamada “Recortada”.
+    - Haga clic en __Ejecutar__ para generar una capa temporal llamada `Recortado`.
 7. Ahora tiene una capa de carreteras ordenadas que contiene la información necesaria.
 
 :::{dropdown} Solución: Recortar una capa de carreteras a límites administrativos
@@ -68,9 +68,9 @@ como una nueva capa: __Road_infrastructure_Sudan.geojson__.
 
 ### Disolución
 
-La herramienta ![](/fig/mAlgorithmDissolve.png) `Dissolve` crea una nueva capa y fusiona entidades superpuestas de una o dos capas vectoriales. Puede elegir uno o varios atributos para agrupar entidades que compartan el mismo valor para esos atributos. Alternativamente, puede combinar todas las entidades en una. Si está trabajando con polígonos, eliminará los límites compartidos entre ellos.
+La herramienta ![](/fig/mAlgorithmDissolve.png) `Disolver` crea una nueva capa y fusiona entidades superpuestas de una o dos capas vectoriales. Puede elegir uno o varios atributos para agrupar entidades que compartan el mismo valor para esos atributos. Alternativamente, puede combinar todas las entidades en una. Si está trabajando con polígonos, eliminará los límites compartidos entre ellos.
 
-Si activa la opción "Mantener separadas las entidades no intersecas" al ejecutar la herramienta, se asegurará de que las entidades o partes que no se superponen ni se tocan entre sí se guarden como entidades independientes en lugar de formar parte de una entidad grande. Esto le permite crear varias capas vectoriales.
+Si activa la opción "Mantener objetos disjuntos separados" al ejecutar la herramienta, se asegurará de que las entidades o partes que no se superponen ni se tocan entre sí se guarden como entidades independientes en lugar de formar parte de una entidad grande. Esto le permite crear varias capas vectoriales.
 
 :::{card}
 __Ejemplo en el ámbito humanitario:__
@@ -81,16 +81,16 @@ __Ejemplo en el ámbito humanitario:__
 :::{figure} /fig/en_buffer_dissolve.png
 ---
 width: 550 px
-name: buffer_dissolve
+name: es_buffer_dissolve
 ---
 Zonas de influencia con límites disueltos (izquierda) y con límites intactos (derecha) que muestran áreas superpuestas <br /> (fuente: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), Version 3.28)
 :::
 
-En la siguiente sección sobre __zona de influencia__ usaremos la __herramienta de disolución__.
+En la siguiente sección sobre __zona de influencia (buffer)__ usaremos la __herramienta de disolución__.
 
 ### Buffer
 
-La creación de zonas de influencia crea zonas de distancias predeterminadas alrededor de las entidades geométricas como una nueva capa de polígono. Estas zonas de influencia rodean las entidades vectoriales de entrada. Esta zona de influencia suele ser uniforme y se extiende hacia afuera desde las entidades de entrada originales, lo que la hace útil para diversos análisis espaciales y aplicaciones cartográficas. Se pueden crear estas zonas alrededor de puntos, líneas y polígonos, como se muestra en {numref}`buffering_options`.
+La creación de zonas buffer crea zonas de distancias predeterminadas alrededor de las entidades geométricas como una nueva capa de polígono. Estas zonas de influencia rodean las entidades vectoriales de entrada. Esta zona de influencia suele ser uniforme y se extiende hacia afuera desde las entidades de entrada originales, lo que la hace útil para diversos análisis espaciales y aplicaciones cartográficas. Se pueden crear estas zonas alrededor de puntos, líneas y polígonos, como se muestra en {numref}`es_buffering_options`.
 
 Algunos ejemplos de análisis que utilizan zona de influencia podrían ser:
 - Crear zonas de influencia para proteger el medio ambiente
@@ -107,7 +107,7 @@ Para analizar el acceso a fuentes de agua limpia, un escenario considera qué ta
 :::{figure} /fig/en_buffer_point_line_polygon.png
 ---
 width: 550 px
-name: buffering_options
+name: es_buffering_options
 ---
 Diferentes tipos de zonas de influencia <br /> (adaptado según [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve), versión 3.28)
 :::
@@ -119,7 +119,7 @@ Existen diferentes variantes de zona de influencia. La __distancia de zona de in
 :::{figure} /fig/en_dist_in_degrees_error_msg.png
 ---
 width: 450 px
-name: dist_degree_error_message
+name: es_dist_degree_error_message
 ---
 El mensaje de error que muestra QGIS al realizar cálculos basados en la distancia en un sistema de coordenadas geográficas.
 :::
@@ -127,7 +127,7 @@ Si...
 - Aparece un mensaje de advertencia de proyección cartográfica
 - Sus capas no aparecen
 - Las capas se ven extrañas, p. ej., aplastadas
-- Se muestra el mensaje de error "uso de grados" al utilizar distancias (como se muestra en {numref}`dist_degree_error_message`)
+- Se muestra el mensaje de error "uso de grados" al utilizar distancias (como se muestra en {numref}`es_dist_degree_error_message`)
 … podría ser un problema de [proyección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html).
 
 Para resolverlo, intente...
@@ -135,11 +135,11 @@ Para resolverlo, intente...
 - Cambiar el SRC de la capa
 - Reproyectar la capa
 
-Por ejemplo, si está intentando crear una zona de influencia en una capa con un sistema de coordenadas geográficas, QGIS le advertirá y le sugerirá que vuelva a proyectar la capa a un __sistema de coordenadas métricas__. Esto se debe a que cuando se utiliza un sistema de coordenadas métricas, el algoritmo utilizará grados para calcular la distancia del tamaño de la zona de influencia. Sin embargo, la distancia entre grados no es uniforme y depende de la latitud (véase {numref}`distance_longitudes`)
+Por ejemplo, si está intentando crear una zona de influencia en una capa con un sistema de coordenadas geográficas, QGIS le advertirá y le sugerirá que vuelva a proyectar la capa a un __sistema de coordenadas métricas__. Esto se debe a que cuando se utiliza un sistema de coordenadas métricas, el algoritmo utilizará grados para calcular la distancia del tamaño de la zona de influencia. Sin embargo, la distancia entre grados no es uniforme y depende de la latitud (véase {numref}`es_distance_longitudes`)
 
 :::{figure} /fig/en_dist_longitudes.png
 ---
-name: distance_longitudes
+name: es_distance_longitudes
 width: 450 px
 ---
 Esta imagen ilustra esto: 10 grados de longitud en el ecuador son 1113 km, pero 10 grados de
@@ -160,15 +160,15 @@ Para lograr esto, se crea una zona de influencia de 10 km alrededor de los punto
 También se descargan y se adaptan de los [datos de Natural Earth](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 3. Recorte sus centros de salud a los límites del distrito de Jartum.
 4. __Reproyecte__ la capa de centros de salud a un sistema de coordenadas local para habilitar la configuración de distancias en kilómetros.
-    - Menú vectorial > Herramientas de gestión de datos > __Reproyectar capa__.
+    - Menú `vectorial` → `Geoprocessing tools` → `Reproyectar capa`.
     - Seleccione la capa de __centros de salud__ como capa de entrada.
     - Establezca el objetivo __SRC a WGS 84 / UTM zona 36N__ (haga clic en el icono de proyecciones para buscar en la lista completa de opciones).
-    - Haga clic `Run` para reproyectar.
-5. Abra la herramienta __zona de influencia__ accediendo a `Vector` > `Geoprocessing Tools` > `Buffer`.
+    - Haga clic `Ejecutar` para reproyectar.
+5. Abra la herramienta __zona de influencia__ accediendo a `Vectorial` → `Geoprocessing Tools` → `Buffer`.
     - Seleccione la __capa reproyectada__ como capa de entrada.
     - Establezca la distancia a __10 km__.
     - Marque la opción para __disolver__ el resultado.
-    - Deje las otras opciones como predeterminadas y haga clic en `Run`.
+    - Deje las otras opciones como predeterminadas y haga clic en `Ejecutar`.
 6. Ahora tiene una visión general aproximada de la cobertura con centros de salud para el distrito de Jartum.
 
 :::{dropdown} Solución: Crear una zona de influencia de 10 km alrededor de los centros de salud
@@ -183,7 +183,7 @@ Además de la operación estándar __Recorte__ de QGIS, hay otras dos herramient
 :::{figure} /fig/en_gdal_clipping_tools.PNG
 ---
 width: 250 px
-name: gdal_clipping_tools
+name: es_gdal_clipping_tools
 ---
 Las herramientas GDAL Recorte de vector por extensión y Recorte de vector por capa de máscara.
 :::
@@ -203,7 +203,7 @@ Esta operación recorta cualquier archivo vectorial en una extensión determinad
 :::{figure} /fig/en_clip_vector_by_extent.PNG
 ---
 width: 450 px
-name: en_clip_vector_by_extent
+name: es_clip_vector_by_extent
 ---
 Captura de pantalla de la herramienta Recorte de vector por extensión
 :::
@@ -218,7 +218,7 @@ Esta operación utiliza una capa de polígonos de máscara para recortar cualqui
 :::{figure} /fig/en_clip_vector_by_mask_layer.PNG
 ---
 width: 450 px
-name: clip_vector_by_mask_layer
+name: es_clip_vector_by_mask_layer
 ---
 Captura de pantalla de la herramienta Recorte de vector por capa de máscara.
 :::

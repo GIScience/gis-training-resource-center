@@ -89,6 +89,7 @@ __Cierre:__
 
 
 ### Datos
+
 Descargue todos los conjuntos de datos, guarde la carpeta en su ordenador y descomprima el archivo. La carpeta zip incluye:
 - `uga_admbnda_adm2_ubos_20200824.shp`: [Límites distritales de Uganda (nivel administrativo 2)](https://data.humdata.org/dataset/cod-ab-uga)
 - `COVID19_RISK_INDEX.shp`: [Indicadores de riesgo de Covid-19](https://data.humdata.org/dataset/covid19_risk_index)
@@ -99,41 +100,42 @@ Todos los archivos mantienen sus nombres originales. Sin embargo, si es necesari
 ```
 
 ### Tarea
+
 Esta primera parte del ejercicio preparará los datos para posteriores procesos no espaciales, como trabajar con la tabla de atributos. Para calcular el índice de vulnerabilidad, uniremos todos los datos relevantes mediante geoprocesamiento espacial en una sola capa vectorial.
 
 1. Cargue en QGIS los límites distritales de Uganda (nivel administrativo 2) (`uga_admbnda_adm2_ubos_20200824.shp`), así como las estadísticas de población (`uga_admpop_adm2_2020proj_1y.csv`) y los indicadores de riesgo de Covid-19 (`COVID19_RISK_INDEX.shp`).
 
 2. Asegúrese de reproyectar el conjunto de datos de los __límites distritales__ y los __indicadores de riesgo de Covid-19__ a UTM zona 36N. Utilice la herramienta `Reproyectar capa` para este proceso. Consulte la entrada del Wiki sobre [proyecciones](/content/es/Wiki/es_qgis_projections_wiki.md) para obtener más información.
 
-```{Attention}
+:::{Attention}
 Antes de comenzar cualquier operación GIS, __siempre explore los datos__. Compruebe siempre si las proyecciones de las distintas capas coinciden.
-```
+:::
 
-```{Hint}
+:::{Hint}
 El sistema de coordenadas proyectadas para Uganda es `EPSG:32636 WGS 84 / UTM zone 36N`. Si necesita un sistema de coordenadas proyectadas para cualquier región del mundo, puede encontrar buenos ejemplos en [epsg.io](https://epsg.io).
-```
+:::
 
 3. Podemos ver que los polígonos difieren en forma y cantidad. Probablemente los datos de riesgo utilizan una versión más antigua de los límites administrativos. ¡Es un problema que debemos resolver para trabajar adecuadamente con los datos!
 
 ```{figure} /fig/en_ex3_1_attribute_table_size.png
 ---
 width: 100%
-name: attribute_table_size
+name: es_attribute_table_size
 ---
-Captura de pantalla de diferentes tamaños de las tablas de atributos
+Captura de pantalla de diferentes tamaños de las tablas de atributos.
 ```
 
 4. Usaremos la siguiente solución para este problema:
     - Tomaremos el __centroide del distrito más cercano__ (del conjunto con más registros al conjunto con menos). Esta es la solución que utilizaremos en el ejercicio, ya que la diferencia entre los conjuntos no es drástica.
 
-5. Calcule los ![](/fig/mAlgorithmCentroids.png) `Centroides` para el conjunto que contiene más elementos, es decir, los límites distritales. La herramienta está en `Vectorial` --> `Geometry Tools` --> `Centroides`. Consulte la entrada del Wiki sobre [Geoprocesamiento](/content/Wiki/en_qgis_geoprocessing_wiki.md) para más información.
+5. Calcule los ![](/fig/mAlgorithmCentroids.png) `Centroides` para el conjunto que contiene más elementos, es decir, los límites distritales. La herramienta está en `Vectorial` → `Geometry Tools` → `Centroides`. Consulte la entrada del Wiki sobre [Geoprocesamiento](/content/Wiki/en_qgis_geoprocessing_wiki.md) para más información.
 
-6. Edite los puntos para que queden dentro de los polígonos correctos. Esto es necesario porque el __centroide de un polígono puede quedar fuera__ cuando tiene una __forma inusual__. Para mover un centroide fuera de sus límites hacia el distrito correcto, active primero `Conmutar edicion`, haciendo clic en ![](/fig/mActionToggleEditing.png) con la capa de centroides activa. Luego seleccione ![](/fig/mActionMoveFeaturePoint.png) `Mover Objeto` (desde la barra de herramientas `Digitalizaciòn avanzada). Localice el centroide fuera de su polígono y muévalo al distrito adecuado. Guarde los cambios y salga del modo de edición.
+6. Edite los puntos para que queden dentro de los polígonos correctos. Esto es necesario porque el __centroide de un polígono puede quedar fuera__ cuando tiene una __forma inusual__. Para mover un centroide fuera de sus límites hacia el distrito correcto, active primero `Conmutar edición`, haciendo clic en ![](/fig/mActionToggleEditing.png) con la capa de centroides activa. Luego seleccione ![](/fig/mActionMoveFeaturePoint.png) `Mover Objeto` (desde la barra de herramientas `Digitalizaciòn avanzada`). Localice el centroide fuera de su polígono y muévalo al distrito adecuado. Guarde los cambios y salga del modo de edición.
 
 ```{figure} /fig/en_centroids_screenshot_red.png
 ---
 width: 80%
-name: en_qgis_centroids
+name: es_qgis_centroids
 ---
 Los puntos negros representan los centroides de las entidades de la capa de entrada. El círculo rojo indica el centroide que requiere edición.
 ```
@@ -143,7 +145,7 @@ Los puntos negros representan los centroides de las entidades de la capa de entr
 ```{figure} /fig/en_ex3_1_fix_geometries.PNG
 ---
 width: 60%
-name: fix_geometries
+name: es_ex3_1_fix_geometries
 ---
 Captura de pantalla de cómo corregir las geometrías.
 ```
@@ -153,12 +155,12 @@ Captura de pantalla de cómo corregir las geometrías.
 ```{figure} /fig/en_ex3_1_join_attribute_location_1.PNG
 ---
 width: 60%
-name: join_attribute_by_location
+name: es_ex3_1_join_attribute_location_1
 ---
 Captura de pantalla de la operación Unir objetos por localizaciòn.
 ```
 
-9. Utilice nuevamente `Unir objetos por localizaciònn` para unir los puntos enriquecidos a los límites distritales de Uganda. Ahora seleccione “contienen” como relación espacial y seleccione de nuevo las mismas tres columnas.
+9. Utilice nuevamente `Unir objetos por ubicación` para unir los puntos enriquecidos a los límites distritales de Uganda. Ahora seleccione "contienen" como relación espacial y seleccione de nuevo las mismas tres columnas.
 
 ```{figure} /fig/en_ex3_1_join_attribute_location_2.PNG
 ---

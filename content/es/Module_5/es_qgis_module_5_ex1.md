@@ -72,7 +72,7 @@ La primera parte del ejercicio consistirá en preparar los datos para que sirvan
 ## Datos
 
 
-Descargue la carpeta de datos para “Modul_5_Exercise2_Drought_Monitoring_Trigger.zip” __[Aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. En ella encontrará dos carpetas. Una para la primera parte (“Modul_5_Ex1_Part_1”) y otra para la segunda parte (“Modul_5_Ex1_Part_2”) del ejercicio.
+Descargue la carpeta de datos para "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[Aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. En ella encontrará dos carpetas. Una para la primera parte (“Modul_5_Ex1_Part_1”) y otra para la segunda parte (“Modul_5_Ex1_Part_2”) del ejercicio.
 
 Abra la carpeta de datos para la primera parte del ejercicio: "Modul_5_Ex1_Part_1".
 
@@ -88,29 +88,29 @@ Todos los archivos conservan sus nombres originales. No obstante, no dude en mod
 
 1. Cargue los límites de los distritos de Somalia (nivel administrativo 2) (`som_admbnda_adm2_ocha_20230308.shp`) y los centros de salud de Somalia (`WHO_health_sites.shp) en QGIS.
 
-2. Asegúrese de que ambos conjuntos de datos estén en la misma proyección cartográfica. En este caso tenemos dos proyecciones cartográficas diferentes y reproyectaremos los __centros de salud de Somalia__ en EPSG 4326. Utilice la herramienta `Reproject layer` para este proceso. Para obtener más información, consulte la entrada de Wiki sobre __proyecciones cartográficas__.
+2. Asegúrese de que ambos conjuntos de datos estén en la misma proyección cartográfica. En este caso tenemos dos proyecciones cartográficas diferentes y reproyectaremos los __centros de salud de Somalia__ en EPSG 4326. Utilice la herramienta `Reproyectar capa` para este proceso. Para obtener más información, consulte la entrada de Wiki sobre __proyecciones cartográficas__.
 
 :::{Attention}
 Antes de empezar a realizar cualquier operación SIG, __explore siempre los datos__. Compruebe que las proyecciones de las distintas capas sean iguales.
 :::
 
-3. Para convertir la información de la capa de puntos de centros de salud en un valor indicador utilizable, ahora podemos contar los centros de salud por distrito. Podemos utilizar la herramienta __Count points in polygon__ de la caja de herramientas de procesos. Eche un vistazo a la descripción de la herramienta y a las entidades adicionales que ofrece. Para nuestra tarea solo tenemos que especificar la capa de entrada de polígonos y puntos, el nombre del campo de recuento (por ejemplo, __Num_healtsites__) y elegir el nombre y el directorio de la capa de salida. Explore los datos de salida.
+3. Para convertir la información de la capa de puntos de centros de salud en un valor indicador utilizable, ahora podemos contar los centros de salud por distrito. Podemos utilizar la herramienta __Count points in polygon__ de la caja de herramientas de procesos. Eche un vistazo a la descripción de la herramienta y a las entidades adicionales que ofrece. Para nuestra tarea solo tenemos que especificar la capa de entrada de polígonos y puntos, el nombre del campo de recuento (por ejemplo, __Num_healthsites__) y elegir el nombre y el directorio de la capa de salida. Explore los datos de salida.
 
 :::{figure} /fig/Count_points_polygon.PNG
 ---
 width: 100%
-name: count_points_polygon
+name: es_count_points_polygon
 ---
 Contar centros de salud por distrito
 :::
 
-4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __Zonal statistics__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healtsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
+4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __estadísticas de zonal__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas de zonal](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healthsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
 
 
 :::{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
 ---
 width: 100%
-name: czonal_statistics
+name: es_zonal_statistics
 ---
 Resumiendo los recuentos de población por distrito.
 :::
@@ -120,8 +120,8 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 :::
 
 5. Ahora conocemos el número de centros de salud y el número de habitantes por distrito. Estamos listos para calcular nuestro indicador final: Número de centros de salud por cada 10 000 habitantes.
-* Abra la tabla de atributos de “Num_healthsites_wpop” (salida del paso 4) y abra la `Field Calculator` haciendo clic en el botón ![](/fig/mActionCalculateField.png). Al marcar la casilla `Create a new field` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
-* Defina el nombre del campo de salida como “healthsites_10000” y configure `Type` como `Decimal Number(real)`.
+* Abra la tabla de atributos de “Num_healthsites_wpop” (salida del paso 4) y abra la `Calculador de campo` haciendo clic en el botón ![](/fig/mActionCalculateField.png). Al marcar la casilla `Crear un campo nuevo` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
+* Defina el `Nombre del campo de salida` como "healthsites_10000" y configure `Tipo de campo de salida` como `Número decimal (real)`.
 * Ahora calcularemos en el campo de expresión el número de centros de salud por cada 10 000 habitantes:
 
 ```md
@@ -136,7 +136,7 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 :::{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
 ---
 width: 80%
-name: Field Calculator
+name: es_Field Calculator
 ---
 Calculando los centros de salud por cada 10 000 habitantes.
 :::
@@ -150,7 +150,7 @@ Un factor muy importante para las zonas vulnerables a la sequía es el nivel de 
 :::{figure} /fig/land_degradation.PNG
 ---
 width: 60%
-name: land_degradation
+name: es_land_degradation
 ---
 Degradación de las tierras.
 :::
@@ -159,10 +159,10 @@ Observará que solo podemos descargar la información como imagen. Este es un ca
 
 Explore los datos. Tenemos una columna “LandD_CLas” que indica la gravedad de la degradación de la tierra de 0 a 3. Ahora queremos unir cada clase de degradación de la tierra con su distrito correspondiente, calculando el área de mayor superposición.
 
-* Abra la herramienta `Join attributes by location` de la caja de herramientas de procesos.
-* Defina `Input Layer` (capa que desea enriquecer) y `Join Layer` (conjunto de datos con la información adicional).
-* Seleccione `intersects` como predicado geométrico y añada solo la `LandD_class` como campo a añadir a nuestra capa base.
-* Como `Join Type` configurar `Take attributes of the feature with largest overlap only (one-to-one)`.
+* Abra la herramienta `Unir atributos por localización` de la caja de herramientas de procesos.
+* Defina `Unirse a las funciones en` (capa que desea enriquecer) y `Comparando con` (conjunto de datos con la información adicional).
+* Seleccione `intersecan` como predicado geométrico y añada solo la `LandD_class` como campo a añadir a nuestra capa base.
+* Como `Tipo de unión` configurar `Toma atributos del objeto con el traslape más grande solamente (uno-a-uno)`.
 * Guardar como capa.
 
 Consulte la entrada de Wiki [Unión espacial](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html) para obtener más información.
@@ -170,7 +170,7 @@ Consulte la entrada de Wiki [Unión espacial](https://giscience.github.io/gis-tr
 :::{figure} /fig/en_qgis_modul_5_ex1_join.PNG
 ---
 width: 100%
-name: Join attributes by location
+name: es_Join attributes by location
 ---
 Uniendo atributos por ubicación.
 :::
@@ -185,17 +185,17 @@ Descargue los datos que necesitamos:
 
 Explore los datos. ¿En qué resolución están disponibles los datos? ¿Tiene alguna idea sobre cómo podemos añadirlos a nuestro conjunto de datos de indicadores?
 
-* Guarde el archivo de Excel como CSV haciendo clic en `Save file as` y seleccione `CSV (delimiter-separated)`.
+* Guarde el archivo de Excel como CSV haciendo clic en `Guardar archivo como` y seleccione `CSV (delimiter-separated)`.
 * Cargue el archivo CSV en su QGIS por medio de arrastrar y soltar.
-* Abra la herramienta `Join attributes by field value` de la caja de herramientas de procesos.
+* Abra la herramienta `Unir atributos por valor de campo` de la caja de herramientas de procesos.
  * Especifique los dos conjuntos de datos que deseamos unir, así como el campo común disponible para la unión (`ADM2_EN` y `adm2name`).
-* Como `join type` configurar `Take attributes of the first matching feature only (one-to-one)`.
+* Como `Tipo de unión` configurar `Tomar solo los atributos del primer objeto coincidente (uno a uno)`.
 * Guarde la capa en un archivo.
 
 :::{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
 ---
 width: 100%
-name: Join attributes by field value
+name: es_Join attributes by field value
 ---
 Uniendo atributos por valor de campo.
 :::
@@ -209,17 +209,17 @@ Es posible que, después de la importación, en el archivo CSV los encabezados d
 :::{figure} /fig/en_qgis_module_5_ex1_error.PNG
 ---
 width: 100%
-name: Join attributes by field value
+name: es_Join attributes by field value
 ---
 El archivo de registro para el algoritmo “Join Attribute by Field Value”.
 :::
 
-Abra las tablas de atributos tanto de la capa de salida como del archivo CSV para encontrar la raíz del problema. En la capa de salida, haga doble clic en `affunderfive` y lleve el valor `NULL` a la parte superior. Compruebe el atributo de unión “ADM2_EN” y compárelo con el atributo de unión “adm2name” del archivo CSV.
+Abra las tablas de atributos tanto de la capa de salida como del archivo CSV para encontrar la raíz del problema. En la capa de salida, haga doble clic en `affunderfive` y lleve el valor `NULL` a la parte superior. Compruebe el atributo de unión "ADM2_EN" y compárelo con el atributo de unión "adm2name" del archivo CSV.
 La ortografía de los nombres de los distritos difiere. Dado que estamos utilizando los límites de admin-2 como capa base para todos los indicadores, ahora podemos adaptar los nombres en el archivo CSV.
 Puede editar los nombres en seis casos en la tabla de atributos del archivo CSV alternando el modo de edición, o puede editar manualmente el archivo CSV en Excel y luego cargarlo en QGIS.
 
 
-* Asegúrese de denominar la capa final “vulnerability_districts”.
+* Asegúrese de denominar la capa final "vulnerability_districts".
 
 
 ## Parte 2: Cálculo del riesgo
@@ -228,13 +228,13 @@ Puede editar los nombres en seis casos en la tabla de atributos del archivo CSV 
 
 En la segunda parte del ejercicio mostraremos los pasos para pasar de los indicadores a un análisis de riesgos.
 
-Puede encontrar todos los datos para la segunda parte del ejercicio en el “Modul_5_Ex1_Part_2”.
+Puede encontrar todos los datos para la segunda parte del ejercicio en el "Modul_5_Ex1_Part_2".
 Descargue la carpeta de datos para la segunda parte del ejercicio: "Modul_5_Ex1_Part_2". En la primera parte del ejercicio hemos procesado la capa de vulnerabilidad; las capas simplificadas de exposición y falta de capacidad de afrontamiento se han preparado con antelación para este ejercicio. Estas capas solo tienen de 3 a 4 indicadores por razones de complejidad. Véase a continuación un ejemplo de los indicadores que se utilizaron para Somalia:
 
 :::{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
 ---
 width: 80%
-name: Indicators Risk Assessment
+name: es_Indicators Risk Assessment
 ---
 Evaluación de riesgos de indicadores
 :::
@@ -246,9 +246,9 @@ Para poder realizar más cálculos sobre los indicadores, tenemos que hacerlos c
 $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
 
-* Abra la tabla de atributos de “vulnerability_districts” y abra la `Field Calculator` haciendo clic en el botón ![](/fig/mActionCalculateField.png). Al marcar la casilla `Create a new field` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
+* Abra la tabla de atributos de “vulnerability_districts” y abra la `Calculador de campo` haciendo clic en el botón ![](/fig/mActionCalculateField.png). Al marcar la casilla `Crear un campo nuevo` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
 * Comience con el primer indicador `LandD_class`.
-* Defina el nombre del campo de salida como “LandD_class_norm” y configure `Type` como `Decimal Number(real)`.
+* Defina el nombre del campo de salida como “LandD_class_norm” y configure `Tipo del campo de salida` como `Número decimal (real)`
 * Ahora calcularemos en el campo de expresión la normalización del indicador:
 
 ```md
@@ -259,7 +259,7 @@ $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 :::{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
 ---
 width: 80%
-name: Join attributes by field value
+name: es_Join attributes by field value
 ---
 Normalización de los indicadores.
 :::
@@ -269,7 +269,7 @@ Normalización de los indicadores.
 
 #### 2. Direcciones
 
-La dirección indica si un indicador sigue o no la lógica predefinida: “cuanto más alto sea el valor, peores son las circunstancias”, lo que significa que los valores más altos implican un mayor riesgo. La lógica se adapta a las tres dimensiones, ya que, en general, es intuitivo pensar que valores altos = riesgo alto. Si un indicador respectivo sigue esta lógica, la dirección sería 1; si no lo hace, la dirección sería = -1.
+La dirección indica si un indicador sigue o no la lógica predefinida: "cuanto más alto sea el valor, peores son las circunstancias", lo que significa que los valores más altos implican un mayor riesgo. La lógica se adapta a las tres dimensiones, ya que, en general, es intuitivo pensar que valores altos = riesgo alto. Si un indicador respectivo sigue esta lógica, la dirección sería 1; si no lo hace, la dirección sería = -1.
 * Para entender las direcciones de nuestros indicadores, primero tenemos que asignarlos a una de las dimensiones (exposición, vulnerabilidad, capacidad de afrontamiento).
 * ¿A qué dimensión asignaría los indicadores procesados y cuál sería su dirección?
 
@@ -288,7 +288,7 @@ La segunda fórmula invierte el valor $(1 - valor)$ antes de aplicar la ponderac
 No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html#risk).
 
 :::{Hint}
-Se recomienda comprobar debidamente la lógica de cada indicador. A menudo, los indicadores de una determinada dimensión siguen la misma lógica, pero siempre hay excepciones. Una vez aplicadas las direcciones a los datos, podemos usar la expresión “falta de capacidad de afrontamiento” en lugar de “capacidad de afrontamiento”, ya que hemos forzado los indicadores respectivos en otra dirección siguiendo la lógica predefinida (a mayor valor = peores circunstancias).
+Se recomienda comprobar debidamente la lógica de cada indicador. A menudo, los indicadores de una determinada dimensión siguen la misma lógica, pero siempre hay excepciones. Una vez aplicadas las direcciones a los datos, podemos usar la expresión "falta de capacidad de afrontamiento" en lugar de "capacidad de afrontamiento", ya que hemos forzado los indicadores respectivos en otra dirección siguiendo la lógica predefinida (a mayor valor = peores circunstancias).
 :::
 
 
@@ -306,7 +306,7 @@ Hasta ahora hemos utilizado la siguiente escala de ponderación:
 | 0,75 | Bastante importante |
 | 1 | Muy importante |
 
-* En la tabla de atributos de su capa podemos calcular los indicadores ponderados para cada indicador normalizado. Para ello tenemos que seguir los mismos pasos que antes: Abra `Field Calculator` haciendo clic el botón ![](/fig/mActionCalculateField.png), y cree un campo nuevo con el sufijo “_weighted” en el campo de expresión.
+* En la tabla de atributos de su capa podemos calcular los indicadores ponderados para cada indicador normalizado. Para ello tenemos que seguir los mismos pasos que antes: Abra `Calculador de campo` haciendo clic el botón ![](/fig/mActionCalculateField.png), y cree un campo nuevo con el sufijo “_weighted” en el campo de expresión.
 
 ```md
 
@@ -318,7 +318,7 @@ Hasta ahora hemos utilizado la siguiente escala de ponderación:
 :::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
 ---
 width: 80%
-name: Add new field to weight indicators
+name: es_Add new field to weight indicators
 ---
 Añadiendo campo nuevo a indicadores de peso.
 :::
@@ -328,7 +328,7 @@ Añadiendo campo nuevo a indicadores de peso.
 :::{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
 ---
 width: 100%
-name: Attribute Table with "_norm" and "_weighted" indicators
+name: es_Attribute Table with "_norm" and "_weighted" indicators
 ---
 Tabla de atributos con indicadores “_norm” y “_weighted”.
 :::
@@ -336,7 +336,7 @@ Tabla de atributos con indicadores “_norm” y “_weighted”.
 #### 4. Puntuación de vulnerabilidad / Índice
 
 Ahora estamos listos para calcular la puntuación de vulnerabilidad de cada distrito:
-* Abra la tabla de atributos -> abra `Field Calculator`![](/fig/mActionCalculateField.png) y cree un campo nuevo con el nombre “vulnerability_score” y el tipo de campo “Decimal Number (real)”. En la ventana de expresión, sume todos los valores ponderados de los indicadores:
+* Abra la tabla de atributos → abra `Calculador de campo`![](/fig/mActionCalculateField.png) y cree un campo nuevo con el nombre "vulnerability_score" y el tipo de campo “Decimal Number (real)”. En la ventana de expresión, sume todos los valores ponderados de los indicadores:
 
 ```md
 
@@ -348,24 +348,24 @@ Ahora estamos listos para calcular la puntuación de vulnerabilidad de cada dist
 
 Para calcular el riesgo tenemos que reunir nuestras tres dimensiones: exposición, vulnerabilidad y capacidad de afrontamiento.
 
-* Haga clic con el botón derecho en una de las capas y seleccione `Properties` -> Vaya a la pestaña `Joins`.
-* Haga clic en el botón `+`, añada una nueva unión y seleccione la capa que desea unir. Defina “admin2Name” como `Join Field`:
+* Haga clic con el botón derecho en una de las capas y seleccione `Propriedades` -> Vaya a la pestaña `Uniones`.
+* Haga clic en el botón `+`, añada una nueva unión y seleccione la capa que desea unir. Defina “admin2Name” como `Unir campo`:
 
 :::{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
 ---
 width: 90%
-name: Join Layers
+name: es_Join Layers
 ---
 Uniendo capas por campo de unión.
 :::
 
-* Haga clic con el botón derecho en la capa -> `Export` -> `Save feature as` y guarde la capa como capa “risk” en su carpeta temporal.
-* Ahora trabajaremos con la capa de “risk”: Borre todos los campos excepto las puntuaciones normalizadas: Abra la tabla de atributos de su capa de riesgo `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) y seleccione todos los campos del indicador. Al final, la capa debería tener este aspecto:
+* Haga clic con el botón derecho en la capa → `Exportar` → `Guardar objetos como` y guarde la capa como capa "risk" en su carpeta temporal.
+* Ahora trabajaremos con la capa de "risk": Borre todos los campos excepto las puntuaciones normalizadas: Abra la tabla de atributos de su capa de riesgo `Conmutar edición`![](/fig/mActionToggleEditing.png) -> `Borrar campo` ![](/fig/mActionDeleteAttribute.png) y seleccione todos los campos del indicador. Al final, la capa debería tener este aspecto:
 
 :::{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
 ---
 width: 70%
-name: Risk Layer Attribute Table normalised Scores
+name: es_Risk Layer Attribute Table normalised Scores
 ---
 Puntuación normalizada de la tabla de atributos de la capa de riesgo.
 :::
@@ -380,7 +380,7 @@ $ susceptibilidad =   \sqrt vulnerabilidad  \times falta\ de\ capacidad\ de\ afr
 $ riesgo=   \sqrt exposición  \times susceptibilidad $
 
 
-* Abra la tabla de atributos -> `Field Calculator`![](/fig/mActionCalculateField.png) y cree un campo “Susceptibility” y escriba la fórmula. Haga lo mismo para crear un campo llamado “risk” y emplee la expresión adecuada.
+* Abra la tabla de atributos → `Calculador de campos`![](/fig/mActionCalculateField.png) y cree un campo "Susceptibility" y escriba la fórmula. Haga lo mismo para crear un campo llamado "risk" y emplee la expresión adecuada.
 
 ```md
 
@@ -391,7 +391,7 @@ sqrt("Susceptibility" * "exposure_norm")
 :::{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
 ---
 width: 80%
-name: Calculate risk
+name: es_Calculate risk
 ---
 Cálculo del riesgo
 :::
@@ -403,25 +403,25 @@ La media geométrica es un tipo específico de promedio que se calcula multiplic
 #### 6. Visualización de los resultados
 
 
-* Haga clic con el botón derecho en la capa “risk” -> `Properties` -> `Symbology`.
-* En la esquina inferior izquierda, haga clic en `Style` -> `Load Style`.
-* En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya a la carpeta “Map Template” y seleccione el archivo __“somalia_risk_assessment_style.qml”__.
-* Haga clic en `Open`. A continuación, haga clic en `Load Style`.
-* De nuevo en la ventana “Layer Properties”, haga clic en `Apply` y `OK`.
+* Haga clic con el botón derecho en la capa "risk" → `Propriedades` → `Simbología`.
+* En la esquina inferior izquierda, haga clic en `Estilo` → `Cargar estilo`.
+* En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya a la subcarpeta “Map Template” y seleccione el archivo __“somalia_risk_assessment_style.qml”__.
+* Haga clic en `Abrir`. A continuación, haga clic en `Cargar estilo`.
+* De nuevo en la ventana `Propriedades`, haga clic en `Aplicar` y `Aceptar`.
 
 
 Diseño de impresión:
 
-* Abra una nueva composición de impresión haciendo clic en `Project` -> `New Print Layout` -> introduzca el nombre de su proyecto actual, por ejemplo, “2024_01”.
+* Abra una nueva composición de impresión haciendo clic en `Proyecto` → `Nueva composición de impresión` → introduzca el nombre de su proyecto actual, por ejemplo, "2024_01".
 * Vaya a la carpeta `Ex_Part_2` y arrastre y suelte el archivo `maps_somalia_template_risk_assessment.qpt` en el diseño de impresión.
-* Cambie la fecha a la actual haciendo clic en “Further map information” en el panel de elementos. Haga clic en la pestaña `Item Properties` y desplácese hacia abajo. Aquí puede cambiar la fecha en el campo `Main Properties`.
-* Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña `Item Properties` y desplácese hacia abajo hasta que vea el campo `Legend items`. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que `Auto update` no esté marcada.
+* Cambie la fecha a la actual haciendo clic en "Further map information" en el panel de elementos. Haga clic en la pestaña `Propriedades del elemento` y desplácese hacia abajo. Aquí puede cambiar la fecha en el campo `Propriedades principales`.
+* Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña `Propriedades del elemento` y desplácese hacia abajo hasta que vea el campo `elementos de la leyenda`. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que `Auto actualizar` no esté marcada.
 * Elimine todos los elementos de la leyenda haciendo clic en el elemento y luego en el icono rojo con el signo menos que aparece debajo.
 
 :::{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
 ---
 width: 90%
-name: Possible Map Result
+name: es_Possible Map Result
 ---
 Posible resultado del mapa.
 :::
