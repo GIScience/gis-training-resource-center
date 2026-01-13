@@ -1,4 +1,4 @@
-# Exercise Overview
+# Overview of the Exercises
 
 This platform offers various exercises per module, each covering the competences and tools covered in the module chapter. The exercise vary in their complexity and their length. When planning a workshop, pay attention to the competences covered in the exercises you choose. Ideally, you should cover the core competences of each module. 
 
