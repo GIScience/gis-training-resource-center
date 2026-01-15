@@ -59,7 +59,7 @@ align: Left
 
 - Por defecto, las barras de herramientas están en la parte superior de la pantalla. Incluyen los controles, que le permiten cambiar entre distintas formas de interactuar con la interfaz.
 - Por defecto, los paneles están a los lados de la pantalla. Incluyen el explorador de archivos y los paneles de navegación, por capas, situados a la izquierda de la pantalla. Se pueden activar otros paneles para buscar y utilizar herramientas de procesamiento. En el panel de capas, verá los datos, que añadiremos más adelante.
-A la derecha de la pantalla, lo más probable es que tenga el panel __Caja de herramientas de procesos__. Si no lo encuentra, consulte la [página Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-toolbox).
+A la derecha de la pantalla, lo más probable es que tenga el panel __Caja de herramientas de procesos__. Si no lo encuentra, consulte la [página Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#falta-la-caja-de-herramientas).
 
 :::{figure} /fig/en_QGIS_GUI.png
 ---
@@ -70,7 +70,7 @@ name: es_QGIS_GUI
 Interfaz de usuario de QGIS.
 :::
 
-3. Puede desacoplar los paneles de su ubicación, haciendo clic y arrastrando el título del panel. Puede anclarlo a otro panel (aparecerá como otra pestaña) o convertirlo en una ventana independiente. También puede cambiar el tamaño de los paneles. Inténtelo moviendo el panel de las capas hacia la derecha ([video del Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#move-and-arrange-toolbars)).
+3. Puede desacoplar los paneles de su ubicación, haciendo clic y arrastrando el título del panel. Puede anclarlo a otro panel (aparecerá como otra pestaña) o convertirlo en una ventana independiente. También puede cambiar el tamaño de los paneles. Inténtelo moviendo el panel de las capas hacia la derecha ([video del Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#mover-y-organizar-las-barras-de-herramientas)).
 
 :::{tip}
 

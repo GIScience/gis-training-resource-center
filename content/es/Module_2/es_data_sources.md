@@ -37,7 +37,7 @@ licencia y cumplir con las regulaciones respectivas para evitar dificultades.
 
 :::{figure} /fig/en_data_sources_examples_cartong.png
 ---
-name: en_data_sources_examples_cartong
+name: es_data_sources_examples_cartong
 width: 600 px
 ---
 Los datos para crear mapas o realizar análisis SIG pueden provenir de diversas fuentes (fuente: [CartONG](https://www.cartong.org/en/))
@@ -155,7 +155,7 @@ __Plugin QuickOSM__
 
 :::{tip}
 
-Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Capa` -> `Añadir Capa` -> `Añadir Capa XYZ...`. Elija `OpenStreetMap` (Esto debería ser la opción predeterminada) y haga clic en `Añadir` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#standard-qgis-basemaps)).
+Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Capa` -> `Añadir Capa` -> `Añadir Capa XYZ...`. Elija `OpenStreetMap` (Esto debería ser la opción predeterminada) y haga clic en `Añadir` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#mapas-base-estandar-de-qgis)).
 
 :::
 
@@ -187,7 +187,7 @@ Siga los pasos para obtener los datos:
 ---
 width: 800px
 align: center
-name: key_value_quickosm
+name: es_key_value_quickosm
 ---
 Elegir la clave y el valor en QuickOSM.
 :::
@@ -216,7 +216,7 @@ Ejecutar el plugin QuickOSM.
 Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic
 en el icono ![](/fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto
 `And` o `Or`. De no tener certeza, revise la página de [consultas no espaciales](/content/es/Wiki/es_qgis_non_spatial_queries_wiki)
-en la wiki. Hay un ejemplo de esto en el [ejercicio de OSM](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html#task-quickosm) del módulo 2.
+en la wiki. Hay un ejemplo de esto en el [ejercicio de OSM](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html) del módulo 2.
 
 :::
 
@@ -234,7 +234,7 @@ Con la [herramienta de exportación del Equipo Humanitario de OpenStreetMap (HOT
 ---
 height: 400px
 align: center
-name: HOT Export Tool
+name: es_HOT Export Tool
 ---
 La herramienta de exportación HOT.
 :::
@@ -255,7 +255,7 @@ La herramienta de exportación HOT.
 ---
 height: 400px
 align: center
-name: hot_export_example
+name: es_hot_export_example
 ---
 Un ejemplo para la herramienta de exportación HOT.
 :::
@@ -267,7 +267,7 @@ Un ejemplo para la herramienta de exportación HOT.
 ---
 height: 400px
 align: center
-name: hot_export_running
+name: es_hot_export_running
 ---
 Se ejecuta la herramienta de exportación HOT.
 :::
@@ -279,7 +279,7 @@ Se ejecuta la herramienta de exportación HOT.
 ---
 height: 400px
 align: center
-name: hot_export_done
+name: es_hot_export_done
 ---
 Descargar datos de la herramienta de exportación HOT.
 :::

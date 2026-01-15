@@ -72,7 +72,7 @@ __Artículos relevantes en Wiki__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos los participantes hayan instalado QGIS y que hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -104,7 +104,7 @@ __Descargue todos los conjuntos de datos [aquí](https://nexus.heigit.org/reposi
 
 :::
 
-La carpeta se llama “Module_2_Exercise_5_The_World” y contiene toda la [estructura de carpetas estándar](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
+La carpeta se llama “Module_2_Exercise_5_The_World” y contiene toda la [estructura de carpetas estándar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_management.html#estructura-de-carpetas-estandar) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
 
 - [Países del mundo (generalizado)](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore) (Polígono/Shapefile)
 - [Conjunto de datos de terremotos significativos](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
@@ -118,12 +118,12 @@ Asegúrese de __descomprimir__ la carpeta de ejercicios antes de comenzar las ac
 :::
 ::::
 
-1. Abra QGIS y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` -> `Nuevo proyecto`
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#paso-a-paso-creacion-de-un-nuevo-proyecto-qgis-desde-cero) haciendo clic en `Proyecto` -> `Nuevo proyecto`
 
 2. Una vez creado el proyecto, guárdelo en la `/Project`-subcarpeta en la `/Module_2_Exercise_5_The_World`/. En la barra superior, haga clic en `Proyecto` -> `Guardar como...` y navegue hasta la carpeta. Nombre al proyecto “Module_2_Ex_5_The_World”.
 
 
-3. Cargue el shapefile `World_countries_generalized.shp` en su proyecto arrastrando y soltando ([video en Wiki](/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). O haga clic en `Capa` -> `Añadir capa`-> `Añadir capa vectorial`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta "World_countries__generalized". Seleccione el archivo y haga clic en `Abrir`. De vuelta en QGIS, haga clic `Añadir` ([Video de la Wiki](/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+3. Cargue el shapefile `World_countries_generalized.shp` en su proyecto arrastrando y soltando ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#abra-los-datos-vectoriales-mediante-la-funcion-arrastrar-y-soltar)). O haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta "World_countries__generalized". Seleccione el archivo y haga clic en `Abrir`. De vuelta en QGIS, haga clic `Añadir` ([Video de la Wiki](/content/es/Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
     :::{Attention}
         Con ambos métodos, debe seleccionar el archivo con la terminación `.shp`! Un [shapefile consta de varios archivos](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_qgis_geodata_concept.html#shapefile-structure) que se referencian entre sí. El archivo que contiene la información de geometría es el archivo que termina con `.shp`.
@@ -143,14 +143,14 @@ Asegúrese de __descomprimir__ la carpeta de ejercicios antes de comenzar las ac
     * Hacer clic en `Añadir`.
     :::{Note}
     Al cargar datos vectoriales en formato de texto como .csv o .txt en QGIS, estos datos deben tener columnas de latitud y longitud.
-    * `Campo X` =“LONGITUD”
+    * `Campo X` =“LONGITUD”.
     * `Campo Y` = “LATITUD”.
     :::
 
     :::{figure} /fig/en_ex_The_world_add_text_layer_import.png
     ---
     width: 600px
-    name: ex5_import_text_layer
+    name: es_ex5_import_text_layer
     align: center
     ---
     :::
@@ -159,7 +159,7 @@ Asegúrese de __descomprimir__ la carpeta de ejercicios antes de comenzar las ac
 
 :::{figure} /fig/Module_2/en_m2_ex_5_interface_explanation.png
 ---
-name: en_m2_ex_5_interface_explanation
+name: es_m2_ex_5_interface_explanation
 width: 750 px
 ---
 :::
@@ -185,7 +185,7 @@ Si observa un `*` antes del nombre de su proyecto en la esquina superior izquier
 :::{figure} /fig/en_ex_The_world_result.png
 ---
 width: 600px
-name: the_world_result
+name: es_the_world_result
 align: center
 ---
 :::

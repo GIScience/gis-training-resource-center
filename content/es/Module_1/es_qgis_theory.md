@@ -22,7 +22,7 @@ componente espacial (_datos geoespaciales_). El SIG tiene tres funciones básica
 :::{figure} /fig/GIS_Core_functunality.drawio.svg
 ---
 height: 500px
-name: GIS_Core_functunality
+name: es_GIS_Core_functunality
 align: center
 ---
 Funcionalidad principal de SIG (fuente: HeiGIT).
@@ -84,7 +84,7 @@ La Iniciativa REACH es una ONG de recopilación y análisis de datos humanitario
 :::{figure} /fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
 ---
 height: 500px
-name: REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4
+name: es_REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4
 align: center
 ---
 Mapa de ejemplo: REACH, Ucrania, Monitoreo de Sitios Colectivos de personas desplazadas internamente, mapa, Sitios activos, febrero de 2024. Fuente: [REACH](https://repository.impact-initiatives.org/document/reach/794cd686/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4.pdf)
@@ -128,7 +128,7 @@ iMAAP es una ONG de gestión de la información que brinda apoyo a la Organizaci
 :::{figure} /fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
 ---
 height: 500px
-name: Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled
+name: es_Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled
 align: center
 ---
 Mapa de ejemplo: Descripción general de los eventos sísmicos en Afganistán, febrero de 2024 (fuente: [iMMAP](https://immap.org/product/afghanistan-earthquake-events-overview-february-2024/)).
@@ -143,7 +143,7 @@ MapAction produce mapas y datos geoespaciales que apoyan la toma de decisiones e
 :::{figure} /fig/cluster-camp-coordination.jpg
 ---
 height: 500px
-name: cluster-camp-coordination
+name: es_cluster-camp-coordination
 align: center
 ---
 Mapa de ejemplo: Filipinas, Tormenta tropical severa Washi (conocida como Sendong), población en centros de evacuación y sitios transitorios, Cagayán de Oro (fuente: [MapAction](https://guides.mapaction.org/images/examples/cluster-camp-coordination.jpg)).
@@ -221,7 +221,7 @@ El sector humanitario tiende a utilizar ciertos tipos de mapas con regularidad. 
 :::{figure} /fig/general_ref_map_nigeria_ogun.png
 ---
 height: 600px
-name: general_ref_map_nigeria_ogun
+name: es_general_ref_map_nigeria_ogun
 align: center
 ---
 Mapa de ejemplo: Nigeria: Mapa de referencia del estado de Ogún al 26 de diciembre de 2018 (fuente: [OCHA](https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA)).
@@ -239,7 +239,7 @@ Los mapas de infraestructura en el contexto humanitario proporcionan representac
 :::{figure} /fig/en_Infrastructure_Map_Nigeria.png
 ---
 height: 600px
-name: en_Infrastructure_Map_Nigeria
+name: es_Infrastructure_Map_Nigeria
 align: center
 ---
 Mapa de ejemplo:  Nigeria - Estado de Borno - Campamento Mogcolis, Infraestructura General - Actualizado el 24 de julio de 2017
@@ -258,7 +258,7 @@ Los mapas temáticos muestran temas o asuntos específicos, como la densidad de 
 :::{figure} /fig/en_thematic_map_example_IFRC.png
 ---
 height: 600px
-name: en_thematic_map_example_IFRC
+name: es_thematic_map_example_IFRC
 align: center
 ---
 Mapa de ejemplo: Sector de refugios en Turquía: Cambios en los costos de la renta, de febrero a abril de 2023 (fuente: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023)).
@@ -277,7 +277,7 @@ Los mapas de análisis se utilizan para examinar e interpretar datos, lo que rev
 :::{figure} /fig/en_Analysis_Map_Yemen.png
 ---
 height: 600px
-name: en_Analysis_Map_Yemen
+name: es_Analysis_Map_Yemen
 align: center
 ---
 Mapa de ejemplo:  Grupo temático de coordinación y gestión de campamentos en Yemen, REACH, Peligro de inundación en sitios colectivos de desplazados internos, gobernación de Marib, Modelo de profundidad de inundación (fuente: [REACH](https://data.unhcr.org/es/documents/details/98946)).
@@ -294,7 +294,7 @@ Los mapas descriptivos o de situación proporcionan un panorama de las condicion
 :::{figure} /fig/en_Pop_Syrian_Refugees_2023.png
 ---
 width: 600px
-name: en_Pop_Syrian_Refugees_2023
+name: es_Pop_Syrian_Refugees_2023
 align: center
 ---
 Mapa de ejemplo: Alto Comisionado de las Naciones Unidas para los Refugiados (ACNUR), Perfil de la población de Irak, desglose detallado, Registro de Personas Refugiadas sirias diciembre de 2023 (fuente: [ACNUR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)).

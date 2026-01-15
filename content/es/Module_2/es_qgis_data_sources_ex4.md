@@ -102,7 +102,7 @@ En su lugar, descargue la __estructura de carpetas estándar__ [aquí](https://n
 
 ## Tareas
 
-OpenStreetMap (OSM) es un proyecto colaborativo de código abierto que crea mapas gratuitos y editables del mundo, desarrollado por una comunidad mundial de mapeadores. Existen varias formas de descargar o exportar datos de OpenStreetMap (OSM), cada una con sus propias ventajas. En este ejercicio, revisaremos la [herramienta de exportación HOT](https://export.hotosm.org/v3/). [En la parte inferior de este ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html#alternative-tools), encontrará una lista de herramientas alternativas.
+OpenStreetMap (OSM) es un proyecto colaborativo de código abierto que crea mapas gratuitos y editables del mundo, desarrollado por una comunidad mundial de mapeadores. Existen varias formas de descargar o exportar datos de OpenStreetMap (OSM), cada una con sus propias ventajas. En este ejercicio, revisaremos la [herramienta de exportación HOT](https://export.hotosm.org/v3/). [En la parte inferior de este ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html#herramientas-alternativas), encontrará una lista de herramientas alternativas.
 
 ### Uso de la herramienta de exportación HOT
 
@@ -122,7 +122,7 @@ Para nuestro siguiente análisis, queremos exportar la red vial del distrito de 
 
 :::{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
 ---
-name: HOT_Export_Tool_1
+name: es_HOT_Export_Tool_1
 width: 750 pc
 ---
 
@@ -143,7 +143,7 @@ Alternativamente, una vez que haya ampliado la zona, puede dibujar un rectángul
 
 :::{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
 ---
-name: HOT_Export_3
+name: es_HOT_Export_3
 width: 500 px
 ---
 
@@ -156,7 +156,7 @@ width: 500 px
 
 :::{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
 ---
-name: Hot Export Tool 5
+name: es_Hot Export Tool 5
 width: 500 px
 ---
 :::
@@ -167,7 +167,7 @@ width: 500 px
 ---
 width: 800px
 align: center
-name: Hot Export tool download of Mauritius financial institutions
+name: es_Hot Export tool download of Mauritius financial institutions
 ---
 :::
 

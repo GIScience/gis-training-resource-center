@@ -13,8 +13,7 @@
 __Objetivo del ejercicio:__
 ^^^
 
-El objetivo de este ejercicio es que aprenda a georreferenciar un mapa. En muchos casos, las instituciones (gubernamentales) solo
-publican datos o mapas en formato PDF. Sin embargo, al georreferenciar el mapa, es posible importarlo como un conjunto de datos ráster en el proyecto de QGIS. Luego, se puede usar para digitalizar entidades vectoriales o se pueden usar los valores de ráster en un análisis de datos ráster.
+El objetivo de este ejercicio es que aprenda a georreferenciar un mapa. En muchos casos, las instituciones (gubernamentales) solo publican datos o mapas en formato PDF. Sin embargo, al georreferenciar el mapa, es posible importarlo como un conjunto de datos ráster en el proyecto de QGIS. Luego, se puede usar para digitalizar entidades vectoriales o se pueden usar los valores de ráster en un análisis de datos ráster.
 
 :::
 
@@ -130,7 +129,7 @@ La georreferenciación se realiza conectando los puntos del mapa que se georrefe
 
 Ahora que hemos preparado nuestro proyecto de QGIS, empecemos a georreferenciar el mapa.
 
-3. Abra el Georreferenciador en la barra superior > `Capa` > `Georreferenciador` <!---(see {numref}`open_georeferencer`)-->
+3. Abra el Georreferenciador en la barra superior → `Capa` → `Georreferenciador` <!---(see {numref}`open_georeferencer`)-->
 
 :::{figure} /fig/en_3.36_open_georefencer.png
 ---
@@ -160,7 +159,7 @@ Para obtener más información sobre los diferentes tipos de transformación en 
 11. Después de que haga clic en una posición, aparecerá una ventana nueva. Aquí, agregue las coordenadas al punto que seleccionó. Hay dos opciones para hacerlo:
     - Introducir las coordenadas manualmente. Necesitará conocer la coordenada exacta. A veces, en los mapas hay una cuadrícula de coordenadas.
     - Seleccionar los puntos ![](/fig/en_3.36_georef_select_from_canvas.png). Este modo minimizará el georreferenciador y abrirá el lienzo del mapa de QGIS. Amplíe la misma ubicación que seleccionó en el mapa no georreferenciado y haga clic una vez.
-    - Una vez introducidas las coordenadas, haga clic en `Aceptar`
+    - Una vez introducidas las coordenadas, haga clic en `Aceptar`.
 12. La ventana del georreferenciador se abrirá de nuevo. Esta vez, debajo de la imagen del mapa, podrá ver un punto en la tabla. Estos son los PCT. Continúe añadiendo más PCT. Repártalos por todo el mapa. Asegúrese de que el `Error medio` en la esquina inferior derecha de la ventana del georreferenciador sea lo más bajo posible (lo ideal es que sea menor a 5).
 
 :::{figure} /fig/en_3.36_georef_dialogue_GCP.png
@@ -200,7 +199,7 @@ Ahora podemos ver las capas subyacentes. También podemos comprobar la precisió
 
 Ahora que tenemos el mapa georreferenciado, podemos usarlo como capa de fondo para digitalizar entidades vectoriales, como un polígono que indique una región donde la degradación del suelo es grave.
 
-21. Cree una nueva capa shapefile (consulte [digitalización](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_digitisation.html#creating-new-datasets)). Haga clic en `Capa` > `Crear capa` > `Nueva capa de archivo Shape...` (también puede optar por crear una nueva capa GeoPackage).
+21. Cree una nueva capa shapefile (consulte [digitalización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_digitisation.html#crear-conjuntos-de-datos-nuevos)). Haga clic en `Capa` → `Crear capa` → `Nueva capa de archivo Shape...` (también puede optar por crear una nueva capa GeoPackage).
 22. Se abrirá una nueva ventana de diálogo. Primero, necesitamos especificar la ubicación de guardado del nuevo conjunto de datos.
     1. Haga clic en ![](/fig/3.36_three_dots.png) a la derecha del campo de `Nombre de archivo`.
     2. Vaya a la carpeta de exportación de datos (`Module_3_Exercise_7_Georeferencing/data/output`).

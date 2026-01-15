@@ -12,7 +12,7 @@
 
 :::{figure} /fig/en_qgis_banner_website.png
 ---
-name: en_qgis_banner_website
+name: es_qgis_banner_website
 width: 300 px
 align: right
 ---
@@ -104,17 +104,17 @@ Un archivo de proyecto de QGIS tiene un formato con la extensión `.qgz`.
 :::
 
 ::::
-1. En la pantalla de inicio, haga clic en `Project Template`
+1. En la pantalla de inicio, haga clic en `Proyecto Nuevo` en la pestaña "Plantillas de proyectos". 
 
 :::{figure} /fig/en_project_template_BRC.png
 ---
 height: 400
-name: en_project_template_BRC
+name: e_project_template_BRC
 align: center
 ---
 :::
 
-2. En la esquina superior izquierda, haga clic en `Project` -> ` New Project `
+2. En la esquina superior izquierda, haga clic en `Proyecto` → `Nuevo Proyecto`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
@@ -136,9 +136,9 @@ Cuando pase el puntero sobre los iconos, aparecerá un texto que explica la func
 ---
 width: 800px
 align: center
-name: en_QGIS_GUI
+name: es_QGIS_GUI
 ---
-Interfaz de usuario de QGIS. Fuente: Cruz Roja Británica (BRC)
+Interfaz de usuario de QGIS. Fuente: Cruz Roja Británica (BRC).
 :::
 
 1. __Panel de capas:__ La __lista de capas__ muestra __todas las capas/archivos__ que están __cargados en el proyecto__. Puede mostrar/ocultar capas y establecer otras propiedades.
@@ -148,7 +148,7 @@ Interfaz de usuario de QGIS. Fuente: Cruz Roja Británica (BRC)
 :::{figure} /fig/en_Interface_02.png
 ---
 height: 75 px
-name: en_Interface_02
+name: es_Interface_02
 align: center
 ---
 :::
@@ -281,7 +281,7 @@ Para moverse por el lienzo del mapa con el puntero, tiene que activar el botón 
 
 :::{image} /fig/qgis_move_symbol.png
 ---
-name: qgis_move_symbol
+name: es_qgis_move_symbol
 height: 40 px
 ---
 :::
@@ -325,7 +325,7 @@ Mantener presionado <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> abre y cierr
 :::
 ::::
 
-Para abrir la caja de herramientas en QGIS, haga clic en la rueda de desplazamiento. O haga clic en `Processing` -> `Toolbox`
+Para abrir la caja de herramientas en QGIS, haga clic en la rueda de desplazamiento. O haga clic en `Procesos` → `Caja de herramientas`.
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 
@@ -343,9 +343,9 @@ Hay casos en los que quiere hacer algo en QGIS, pero no conoce la herramienta ex
 
 Hay barras de herramientas y paneles para muchas tareas diferentes. Para evitar una interfaz abarrotada, lo más inteligente, es activar las barras de herramientas o los paneles específicos, solo cuando realmente los necesite.
 
-Para añadir o eliminar barras de herramientas de su interfaz, haga clic en `View` -> `Toolbars` -> Marque o desmarque las cajas de herramientas, que desee añadir o eliminar.
+Para añadir o eliminar barras de herramientas de su interfaz, haga clic en `Ver` → `Barras de herramientas` → Marque o desmarque las cajas de herramientas, que desee añadir o eliminar.
 
-Para añadir o eliminar paneles de su interfaz, haga clic en `View` -> `Panels` -> Marque o desmarque los paneles, que desee añadir o eliminar.
+Para añadir o eliminar paneles de su interfaz, haga clic en `Ver` → `Paneles` → Marque o desmarque los paneles, que desee añadir o eliminar.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video>
 
@@ -374,13 +374,13 @@ Una buena organización de los datos con una estructura de carpetas fija y bien 
 ::::{margin}
 
 :::{tip}
-Mantener presionado <kbd>Ctrl</kbd> + <kbd>A</kbd> también abre el`Open Project` cuadro de diálogo.
+Mantener presionado <kbd>Ctrl</kbd> + <kbd>A</kbd> también abre el `Abrir proyecto` cuadro de diálogo.
 
 :::
 
 ::::
 
-Para abrir un proyecto de QGIS existente, haga clic en `Project` -> `Open…` -> Navegue hasta su proyecto y ábralo.
+Para abrir un proyecto de QGIS existente, haga clic en `Proyecto` → `Abrir...` → Navegue hasta su proyecto y ábralo.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
@@ -396,9 +396,9 @@ Al presionar <kbd>Ctrl</kbd> + <kbd>G</kbd> se guarda el proyecto, mientras que 
 
 ::::
 
-* __Guardar por primera vez__: Para guardar el proyecto de QGIS en el que está trabajando, haga clic en `Project` -> `Save as…`-> Navegue hasta la carpeta, donde quiere guardar el proyecto -> Nombre el proyecto -> `Save`
+* __Guardar por primera vez__: Para guardar el proyecto de QGIS en el que está trabajando, haga clic en `Proyecto` → `Guardar como...` → Navegue hasta la carpeta, donde quiere guardar el proyecto → Nombre el proyecto → `Guardar`.
 * __Cuándo guardar su progreso__: Para guardar el progreso en un proyecto, que ya estaba guardado en algún lugar de computadora:
-    * Haga clic en `Project` -> `Save`.
+    * Haga clic en `Proyecto` → `Guardar`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
@@ -406,11 +406,11 @@ Al presionar <kbd>Ctrl</kbd> + <kbd>G</kbd> se guarda el proyecto, mientras que 
 
 ## Iconos de advertencia
 
-Puede ocurrir que, mientras trabaja con QGIS, se encuentre con iconos de advertencia de color naranja. Esto indica que debe prestar atención. Para entender lo que significa el icono de advertencia, __coloque el puntero sobre el icono__ y aparecerá un texto explicativo. Por ejemplo, en la {numref}`warning_icon_example`, el icono de advertencia indica que las unidades de medida son grados, que no son constantes (la distancia entre 1⁰ de longitud es mucho mayor en el ecuador que en los polos).
+Puede ocurrir que, mientras trabaja con QGIS, se encuentre con iconos de advertencia de color naranja. Esto indica que debe prestar atención. Para entender lo que significa el icono de advertencia, __coloque el puntero sobre el icono__ y aparecerá un texto explicativo. Por ejemplo, en la {numref}`es_warning_icon_example`, el icono de advertencia indica que las unidades de medida son grados, que no son constantes (la distancia entre 1⁰ de longitud es mucho mayor en el ecuador que en los polos).
 
 :::{figure} /fig/en_3.36_warning_icon_example.png
 ---
-name: warning_icon_example
+name: es_warning_icon_example
 width: 700 px
 ---
 Ejemplo de icono de advertencia al ajustar los parámetros de una herramienta de procesamiento.
@@ -473,13 +473,14 @@ Normalmente, si hay cambios sin guardar, QGIS mostrará un asterisco (*) junto a
 4. __¿Cómo se abre un proyecto de QGIS?__
 
 :::{dropdown} Respuesta
-Puede abrir un proyecto de QGIS a través del `File` menú → `Open Project` (o el botón “Abrir proyecto” de la barra de herramientas) y a continuación, buscar un archivo `.qgs` o `.qgz`. Alternativamente, al hacer doble clic en el archivo del proyecto (si está asociado en su sistema) también podría abrirse en QGIS.
+
+Puede abrir un proyecto de QGIS a través del menú `Proyecto` → `Abrir...` y a continuación, buscar un archivo `.qgs` o `.qgz`. Alternativamente, al hacer doble clic en el archivo del proyecto (si está asociado en su sistema) también podría abrirse en QGIS.
 :::
 
 5. __¿Cómo mostrar y ocultar paneles o barras de herramientas?__
 
 :::{dropdown} Respuesta
-En la barra superior, utilice el `View` menú → `Panels` o los submenús `Toolbars` para alternar (marcar/desmarcar) entre paneles o barras de herramientas específicos.
+En la barra superior, utilice el `Ver` menú → `Paneles` o los submenús `Barra de herramientas` para alternar (marcar/desmarcar) entre paneles o barras de herramientas específicos.
 :::
 
 6. __¿Dónde puede encontrar ayuda si tiene problemas con QGIS?__

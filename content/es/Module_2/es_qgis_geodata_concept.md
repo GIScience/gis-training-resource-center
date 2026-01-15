@@ -269,7 +269,7 @@ Antes de empezar a crear mapas en QGIS, tendrá que cargar sus datos en QGIS. De
 
 Los formatos típicos de datos vectoriales son Shapefile (`.shp`) y GeoPackage (`.gpkg`). El proceso de importación de datos vectoriales en cualquiera de los dos formatos es el mismo.
 
-QGIS ofrece varias formas de cargar datos vectoriales. La más inmediata es la de arrastrar y soltar, en la que basta con arrastrar los archivos de datos que desea añadir desde el explorador de archivos a la ventana de QGIS. Otro método es a través del “__Administrador de fuentes de datos__” (`Capa` > `Administrador de fuentes de datos`).
+QGIS ofrece varias formas de cargar datos vectoriales. La más inmediata es la de arrastrar y soltar, en la que basta con arrastrar los archivos de datos que desea añadir desde el explorador de archivos a la ventana de QGIS. Otro método es a través del "__Administrador de fuentes de datos__" (`Capa` > `Administrador de fuentes de datos`).
 
 :::{Note}
 Los archivos GeoPackage pueden contener múltiples conjuntos de datos e incluso proyectos completos de QGIS. Cuando cargue un GeoPackage en QGIS, aparecerá una ventana donde podrá seleccionar los conjuntos de datos que desea cargar.
@@ -277,7 +277,7 @@ Los archivos GeoPackage pueden contener múltiples conjuntos de datos e incluso 
 
 #### Abrir datos vectoriales a través del administrador de fuentes de datos
 
-1. Haga clic en `Capa` -> `Añadir capa`-> `Añadir capa vectorial...`. Se abrirá el administrador de fuentes de datos.
+1. Haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial...`. Se abrirá el administrador de fuentes de datos.
 2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su
    archivo vectorial
 3. Seleccione el archivo y haga clic en `Abrir`. Aparecerán más opciones. En la mayoría de los casos, puede dejar estas opciones como están.
@@ -317,12 +317,12 @@ Para cargar datos de hojas de cálculo como Valores separados por comas (`.csv`)
 ---
 width: 600px
 align: center
-name: en_import_delimeted_text
+name: es_import_delimeted_text
 ---
 Importación de texto delimitado en QGIS 3.36.
 :::
 
-1. `Capa` -> `Añadir capa` -> `Añadir capa de texto delimitado`.
+1. `Capa` → `Añadir capa` → `Añadir capa de texto delimitado`.
 2. Haga clic en `Nombre de archivo` haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo CSV y haga clic en `Abrir`.
 3. `Formato de archivo`: Aquí puede especificar qué delimitador se utiliza en el archivo que desea importar. En un archivo CSV estándar se utilizan las comas `,`. Si no es el caso, seleccione `Delimitadores personalizados`. Aquí puede elegir el delimitador exacto utilizado en su archivo.
 
@@ -334,14 +334,14 @@ Para averiguar qué delimitador se utiliza, puede abrir el archivo .csv en el Bl
 ---
 width: 600px
 align: center
-name: en_delimited_text_fileformat
+name: es_delimited_text_fileformat
 ---
 Ajuste de los parámetros de formato de archivo al importar una capa de texto delimitado en QGIS.
 :::
 
 4. `Definición de geometría`: En esta sección se especifica qué columnas del archivo contienen la información espacial para georreferenciar los datos en el mapa. Si el archivo tiene una columna con datos de __latitud__ y otra con datos de __longitud__, puede utilizarlas para georreferenciar los datos. Compruebe `Coordenades del punto` si el archivo `.csv` contiene datos de puntos. Seleccione para `X field` “LONGITUD” y para `Y field` “LATITUD”.
 5. Debajo de `SRC de la geometría` seleccione el sistema de referencia de coordenadas (SRC). Por defecto, QGIS seleccionará el SRC del proyecto. Si el archivo no contiene información espacial, elija la opción `Ninguna geometría (tabla solo de atributos)`.
-6. Haga clic en `Añadir`
+6. Haga clic en `Añadir`.
 
 :::{dropdown} Video: Abrir archivos de texto delimitados en QGIS
 
@@ -356,10 +356,10 @@ La importación de datos ráster funciona del mismo modo que la de los datos vec
 
 :::{dropdown} Video: Abrir datos ráster a través del administrador de fuentes de datos
 
-1. Haga clic en `Capa`-> `Añadir capa`-> `Añadir capa ráster`
-2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo ráster
-3. Seleccione el archivo y haga clic en `Abrir`
-4. De vuelta en QGIS, haga clic en `Añadir`
+1. Haga clic en `Capa` → `Añadir capa` → `Añadir capa ráster`.
+2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo ráster.
+3. Seleccione el archivo y haga clic en `Abrir`.
+4. De vuelta en QGIS, haga clic en `Añadir`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 

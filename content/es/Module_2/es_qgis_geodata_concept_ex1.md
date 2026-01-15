@@ -134,7 +134,7 @@ Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fá
    - __Descomprima la carpeta__ con los datos del ejercicio.
    - El GeoPackage (`.gpkg`) y el shapefile (`.shp`) pueden arrastrarse y soltarse sobre el lienzo del mapa en QGIS.
    - El archivo .csv debe importarse a través del menú de capas.
-      - Navegue hasta `Capa` > `Añadir capa` > `Añadir capa de texto delimitado`. Se abrirá una nueva ventana. Aquí puede seleccionar el archivo que desea importar haciendo clic en `...` a la derecha del campo __Nombre de archivo__ situado en la parte superior.
+      - Navegue hasta `Capa` → `Añadir capa` → `Añadir capa de texto delimitado`. Se abrirá una nueva ventana. Aquí puede seleccionar el archivo que desea importar haciendo clic en `...` a la derecha del campo __Nombre de archivo__ situado en la parte superior.
       - Navegue hasta la carpeta con los archivos de ejercicios y seleccione `sl-airports.csv`.
       - Haga clic en abrir. La ventana de importación CSV se actualizará y le mostrará una vista previa de la tabla CSV.
       - La tabla contiene información geográfica. Tendremos que especificar esto en __"Definición de geometría"__.
@@ -145,7 +145,7 @@ Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fá
 :::{figure} /fig/en_3.36_add_csv.png
 ---
 width: 500 px
-name: navigation to add csv layer
+name: es_navigation to add csv layer
 ---
 Abrir la ventana de importación de CSV.
 :::
@@ -154,9 +154,9 @@ Abrir la ventana de importación de CSV.
 :::{figure} /fig/en_delimited_text_screenshot.PNG
 ---
 width: 80%
-name: delimited_text
+name: es_delimited_text
 ---
-Captura de pantalla del Administrador de fuentes de datos - Texto delimitado para cargar un archivo CSV
+Captura de pantalla del Administrador de fuentes de datos - Texto delimitado para cargar un archivo CSV.
 :::
 
 2. Interactúe con el mapa y explore los conjuntos de datos. Utilice la herramienta de zoom y desplácese
@@ -181,16 +181,16 @@ de la vista del mapa. Compruébelo con una consulta sobre las propiedades de la 
 :::
 
 :::{Hint}
-Para obtener información sobre una capa y sus proyecciones cartográficas, haga doble clic sobre la capa y busque la sección `Information`. Esta sección contiene detalles generales como el nombre y la ruta del archivo, así como información sobre el Sistema de Referencia de Coordenadas (SRC) en la sección correspondiente.
+Para obtener información sobre una capa y sus proyecciones cartográficas, haga doble clic sobre la capa y busque la sección `Información`. Esta sección contiene detalles generales como el nombre y la ruta del archivo, así como información sobre el Sistema de Referencia de Coordenadas (SRC) en la sección correspondiente.
 :::
 
 
-6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa --> `Exportar` --> `Guardar objetos seleccionados como...`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
+6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa → `Exportar` → `Guardar objetos seleccionados como...`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
 
 :::{figure} /fig/en_ex1_export_layer.PNG
 ---
 width: 40%
-name: export_layer
+name: es_export_layer
 ---
 Captura de pantalla de la ventana Exportar
 :::
@@ -202,7 +202,7 @@ Captura de pantalla de la ventana Exportar
 
 :::{Note}
 
-La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
+La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html#como-elegir-un-sistema-de-coordenadas-proyectadas-apropiado). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
 
 :::
 
@@ -210,7 +210,7 @@ La combinación de capas en diferentes proyecciones cartográficas con mapas bas
 :::{figure} /fig/en_result_geodata_concept_exercise.png
 ---
 width: 80%
-name: en_result_geodata_concept_exercise
+name: es_result_geodata_concept_exercise
 ---
 Este es el aspecto que podría tener el resultado final.
 :::

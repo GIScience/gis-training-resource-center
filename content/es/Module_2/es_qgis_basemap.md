@@ -43,7 +43,7 @@ Hay dos formas de añadir OpenStreetMap como mapa base:
 
 1. En el panel `Navegador`, busque `Taselas XYZ`. Abra el menú desplegable haciendo
    clic en la flecha que aparece junto a él y seleccione OpenStreetMap.
-2. En el menú `Capa` -> `Añadir Capa` -> `Añadir capa XYZ...` -> seleccione OpenStreetMap.
+2. En el menú `Capa` → `Añadir Capa` → `Añadir capa XYZ...` → seleccione OpenStreetMap.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
@@ -57,8 +57,7 @@ QGIS, como las imágenes satelitales de Bing o Sentinel-2.
 
 ::::{dropdown} Instalación de complementos
 
-Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Complementos` -> `Administrat e instalar complementos` -> `Todos` ->
-Busque el plugin -> `Instalar complemento`.
+Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Complementos` -> `Administrat e instalar complementos` → `Todos` → Busque el plugin → `Instalar complemento`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -75,7 +74,7 @@ experimentales en las opciones (véase más abajo).
 
 :::{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
 ---
-name: en_30.30.2_plugin_installation_experimental_checkbox
+name: es_30.30.2_plugin_installation_experimental_checkbox
 width 400 px
 ---
 Configuración del Gestor de complementos para mostrar complementos experimentales
@@ -85,9 +84,9 @@ Configuración del Gestor de complementos para mostrar complementos experimental
 
 Para añadir un mapa base desde el plugin QuickMapServices:
 
-1. En el menú principal de la barra superior de la pantalla, navegue a `Web` > `QuickMapServices`.
+1. En el menú principal de la barra superior de la pantalla, navegue a `Web` → `QuickMapServices`.
 2. Haga clic en `Search NextGIS QMS`. Se abrirá un nuevo panel, probablemente en la parte inferior derecha.
-3. Aquí puede buscar el mapa base que desee. Por ejemplo, Bing Aerial, diferentes versiones de OpenStreetMap, imágenes satelitales de Sentinel-2.
+3. Aquí puede buscar el mapa base que desee. Por ejemplo, Bing Aerial, diferentes versiones de OpenStreetMap, imágenes de satélite de Sentinel-2.
 
 :::{Tip}
 

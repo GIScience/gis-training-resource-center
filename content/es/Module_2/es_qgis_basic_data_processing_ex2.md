@@ -75,7 +75,7 @@ __Preparar la capacitación:__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos los participantes hayan instalado QGIS y que hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-centerspanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#como-planificar-una-capacitacion-en-sig) para obtener algunos consejos generales para impartirlas.
 
 __Impartir la capacitación:__
 
@@ -135,7 +135,7 @@ Los archivos GeoJSON no admiten múltiples capas, por lo que los polígonos de l
 
 1. Cargue ambos archivos en QGIS.
 
-2. Añada el mapa base de OpenStreetMap a través del panel del navegador -->
+2. Añada el mapa base de OpenStreetMap a través del panel del navegador →
    XYZ Tiles.
 
 3. Familiarícese con los datos abriendo la tabla de atributos. Determinar la ubicación de los datos y el tipo de información que contienen. Comprenda las distintas columnas y los datos que contienen en su tabla de atributos e intente hacerse una idea general de qué columnas serán relevantes e importantes para su análisis.

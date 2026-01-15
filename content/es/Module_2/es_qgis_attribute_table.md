@@ -139,7 +139,7 @@ Tabla de atributos ordenada de forma descendente.
 
 Puede acercar el zoom a una entidad específica si necesita ubicarla geográficamente o si quiere verla más de cerca:
 
-1. __Zoom:__ Haga clic con el botón derecho en una entidad --> `Zoom a objeto`
+1. __Zoom:__ Haga clic con el botón derecho en una entidad → `Zoom a objeto`
 2. Cierre su tabla de atributos. El lienzo del mapa ahora mostrará la entidad seleccionada.
 
 :::{dropdown} Video: Acercar el zoom a una entidad
@@ -193,7 +193,7 @@ Captura de pantalla que muestra cómo hacer zoom a la selección al dar clic der
 
 Una vez que haya seleccionado sus datos, es posible que desee continuar solo con la
 selección. Puede guardar su selección como una nueva capa. Para ello, haga clic con el botón derecho en la
-capa - `Exportar` -> `Guardar objetos seleccionados como...`.
+capa - `Exportar` → `Guardar objetos seleccionados como...`.
 
 :::{figure} /fig/en_save_selection.png
 ---

@@ -186,7 +186,7 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa vectorial
 
-1. Pestaña `Vectorial` -> `Data Management Tools` -> `Reproyectar capa`
+1. Pestaña `Vectorial` → `Data Management Tools` → `Reproyectar capa`
 2. Seleccione el código SRC/EPSG de destino.
 3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reproyectada`,
    especifique el nombre del archivo y la ubicación donde desea guardarlo.
