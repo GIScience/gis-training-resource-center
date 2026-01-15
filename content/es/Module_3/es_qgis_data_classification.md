@@ -91,7 +91,7 @@ __Para ajustar el estilo de una capa…__
 6. *Opcional*: Aquí puede establecer el tipo de unidad. Esto es útil si desea visualizar puntos en un tamaño determinado, por ejemplo.
 7. *Opcional:* Aquí puede encontrar rápidamente estilos estándar y usados anteriormente.
 8. Haga clic en `Aplicar` para aplicar el ajuste.
-9. Haga clic en `ACeptar` para cerrar la ventana.
+9. Haga clic en `Aceptar` para cerrar la ventana.
 
 
 :::{figure} /fig/Single_symbol_classify.png
@@ -268,7 +268,7 @@ __Clasificar los datos en clases…__
 5. Seleccione el número de clases que desea utilizar.
 6. En `Modo` seleccione el método de clasificación que desea utilizar, p. ej., recuento equitativo (cuantil).
 7. Haga clic en `Clasificar`. Ahora debería ver todas las clases y la distribución de los valores. Para añadir o eliminar clases utilice los botones `-` y `+`.
-8. *Opcional*: Haga clic en `Histograma` -> `Cargar valores`. Ahora puede ver la distribución exacta de los valores entre las clases. Esto resulta muy práctico para elegir un método de clasificación. También puede comprobar el valor medio y la desviación estándar.
+8. *Opcional*: Haga clic en `Histograma` → `Cargar valores`. Ahora puede ver la distribución exacta de los valores entre las clases. Esto resulta muy práctico para elegir un método de clasificación. También puede comprobar el valor medio y la desviación estándar.
 
 :::{figure} /fig/Graduated_histogram.png
 ---
@@ -280,11 +280,11 @@ Clasificación graduada. Fuente: [Axis Maps](https://www.axismaps.com/guide/data
 :::
 
 9. *Opcional*: En el menú desplegable `Símbolo` puede seleccionar los colores y símbolos que desea utilizar.
-10. *Opcional*: En el menú desplegable `Rama de color` puede especificar la gama de colores que desea utilizar. Para ver todas las rampas de color, haga clic en la flecha hacia abajo de la `Rampa de color` -> `Todas las rampas de color`.
+10. *Opcional*: En el menú desplegable `Rama de color` puede especificar la gama de colores que desea utilizar. Para ver todas las rampas de color, haga clic en la flecha hacia abajo de la `Rampa de color` → `Todas las rampas de color`.
 11. *Opcional*: En `Tamaño de leyenda definido por datos` puede ajustar la precisión con la que se mostrará el rango de las clases en la leyenda. Normalmente, es práctico no utilizar números demasiado complicados.
 12. *Opcional*: Puede abrir el panel `Representación de capas` en el botón de la ventana. Aquí puede ajustar la opacidad/transparencia de la capa.
 13. Haga clic en `Aplicar` para aplicar el ajuste.
-14. Haga clic en `ACeptar` para cerrar la ventana.
+14. Haga clic en `Aceptar` para cerrar la ventana.
 
 :::{figure} /fig/classification_graduated_basic.png
 ---
