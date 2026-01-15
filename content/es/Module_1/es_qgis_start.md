@@ -167,7 +167,7 @@ align: center
 2. Abrir __QGIS__.
 3. Haga clic en `Proyecto` -> `Nuevo Proyecto`.
 4. En la esquina superior izquierda, haga clic en `Proyecto` -> `Guardar como`, vaya a la carpeta de sus proyectos y guarde el proyecto como “Sesión 1”.
-5. Abra su carpeta y compruebe el __archivo .qgz__ que acaba de crear.
+5. Abra su carpeta y compruebe el __archivo `qgz`__ que acaba de crear.
 
 :::
 

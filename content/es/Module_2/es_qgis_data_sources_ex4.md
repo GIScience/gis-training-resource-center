@@ -189,7 +189,7 @@ En el siguiente ejercicio de la serie de ejercicios para la respuesta ante inund
     * Más abajo, haga clic en `Classificar`.  Ahora debería ver todos los valores
           únicos o atributos de la columna seleccionada.  Puede ajustar los
           colores haciendo doble clic en una fila del campo central. Una vez que haya
-          terminado, haga clic en `Apliquar` y `Aceptar` para cerrar la ventana de simbología.
+          terminado, haga clic en `Aplicar` y `Aceptar` para cerrar la ventana de simbología.
 
 Como puede ver, la herramienta de exportación HOT ofrece una buena combinación de flexibilidad y
 acceso rápido a los datos de OSM.

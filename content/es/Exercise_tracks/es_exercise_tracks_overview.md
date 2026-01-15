@@ -9,7 +9,7 @@ También hemos preparado una serie de ejercicios, que cubren las competencias de
 name: exercise_tracks_overview
 width: 750 px
 ---
-Resumen de los ejercicios disponibles en la plataforma
+Resumen de los ejercicios disponibles en la plataforma.
 :::
 
 :::{admonition} Ejercicios para el módulo 4

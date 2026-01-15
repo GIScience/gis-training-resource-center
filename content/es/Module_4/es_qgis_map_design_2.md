@@ -175,7 +175,7 @@ Ahora que hemos visto qué debemos tener en cuenta a la hora de diseñar mapas, 
 1. __¿Qué es el gestor de diseños de impresión y por qué se utiliza para crear mapas en QGIS en lugar de la ventana principal de QGIS?__
 
 :::{dropdown} Respuesta
-El gestor de diseño de impresión (a través de `Project` → `New Print Layout` en QGIS) es una interfaz/ventana independiente en la que se ensambla el mapa para su salida (impresión o exportación) en lugar de trabajar únicamente en el lienzo principal del mapa.
+El gestor de diseño de impresión (a través de `Proyecto` → `Nueva composición de impresión` en QGIS) es una interfaz/ventana independiente en la que se ensambla el mapa para su salida (impresión o exportación) en lugar de trabajar únicamente en el lienzo principal del mapa.
 
 El __compositor de diseños de impresión__:
 
