@@ -120,13 +120,13 @@ For our following analysis, we want to export the road network for the Larkana d
    clicking on `Log in`.
 3. Now we can start creating an OSM export. To do so, click on `Start Exporting`. You will be directed to the export tool.
 
-```{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
+:::{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
 ---
 name: HOT_Export_Tool_1
 width: 750 pc
 ---
 
-```
+:::
 
 In the export tool, you have a map canvas on the right and an input area on the left. On the map canvas, you determine the geographic location of the data you want to export. On the left side you determine the metadata of the export, the file format, and select which data will be downloaded (e.g., buildings, roads, hospitals, settlements, etc.)
 
@@ -141,13 +141,12 @@ Alternatively, once you zoomed into the area, you can draw a box or a polygon to
 
 5. On the map canvas, search for Larkana in the search bar and select the district. The map will zoom in to show the district. This will also select the district as our area of interest. You can see this by the blue polygon. Our export will only download data that is located within this area.
 
-```{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
+:::{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
 ---
 name: HOT_Export_3
 width: 500 px
 ---
 
-```
 
 6. Click `Next`.
 
@@ -155,23 +154,22 @@ width: 500 px
 
 8. Under the data tab, we can select the key values we are interested in. We want to download to download the road network so we have to open the dropdown under `Transportation` and check the box for `Roads`
 
-```{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
+:::{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
 ---
 name: Hot Export Tool 5
 width: 500 px
 ---
-
-```
+:::
 
 9. We are done adjusting the export. Click `Next`. A summary page will open. Click on `Create Export`. Your new export will begin 
 
-```{figure} /fig/en_Hot_Export.png
+:::{figure} /fig/en_Hot_Export.png
 ---
 width: 800px
 align: center
 name: Hot Export tool download of Mauritius financial institutions
 ---
-```
+:::
 
 ::::{dropdown} Bonus Exercise!
 
@@ -206,7 +204,7 @@ access to OSM data.
 
 ## Alternative Tools
 
-`````{tip}
+:::::{tip}
 
 The HOT Export Tool is a good way to export tailored OSM data for your personal use. However, in some use cases, you might want to choose a different tool such as Geofabrik, QuickOSM, or even just the humanitarian data exchange website. Below, you can find a short description of the tool and it's advantages. You can find out how to use the different tools step by step on [this wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html).
 
@@ -256,4 +254,4 @@ Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries. Th
 :::
 
 ::::
-`````
+:::::

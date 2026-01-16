@@ -10,9 +10,8 @@
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-<!--
-The exercises for module 9 comprise one full network analysis from start to finish. Each exercise deals with one step of the analysis process. 
--->
+
+The following exercises for module 9 comprise one full network analysis from start to finish. Each exercise deals with one step of the analysis process. 
 
 ## Visualisation
 
@@ -25,3 +24,9 @@ The exercises for module 9 comprise one full network analysis from start to fini
 | __[Task 5: Identifying critical road segments](/content/Module_9/en_qgis_module_9_ex5.md)__ | | | 
 | __[Task 6: West Germany / Ahrtal flood logistics](/content/Module_9/en_qgis_module_9_ex6.md)__ | | | 
 
+
+## Anticipatory Action
+
+| Exercise | Description | Estimated time | 
+| :-------------------- | :-----------------  |:----------------- |
+| __[Exercise: Reachability of health Posts from CRM Warehouses](/content/Module_9/en_qgis_module_9_mdg_aa_ex_7.md)__ | This exercise is the sixth task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will use isochrones indicating the areas which can be reached from a warehouse of the Malagasy Red Cross and calculate which cyclone exposed healthposts can be serviced by specific warehouses. | 1 hour |

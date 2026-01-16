@@ -62,13 +62,14 @@ The exercise is split into two parts. In the first part, you will adjust the sym
 
 ::::
 
-```{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
 ---
 The map we will be making in this exercise (Source: HeiGIT).
-```
+:::
+
 ### Available Data
 
 :::{card}
@@ -88,9 +89,9 @@ You have created the data for Larkana in [Module 3 Exercise 5](https://giscience
 <!--FIX: add all datasets used in this exercise to the table-->
 
 
-```{hint} Folder structure
+:::{hint} Folder structure
 Keep your data management clean by creating a standard folder structure on your computer for your QGIS-projects and geodata. 
-```
+:::
 
 ## Task 1: Preparing the Data
 
@@ -109,27 +110,8 @@ Keep your data management clean by creating a standard folder structure on your 
 5. [Add a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps):
     - Navigating to the menu bar -> `Layer` -> `Add Layer` -> `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
 
-<!---
 
-:::{admonition} Adding symbols to your SVG-collection
-:class: tip
-While QGIS offers a variety of markers and SVG-symbols you can use in your maps by default, the selection of symbols is limited, especially if you work for organisations that have their own symbols, such as the Red Cross Movement. 
-:::
-
-5. We will use IFRC symbols in this exercise. We can [import an SVG library into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#adding-an-external-svg-library) so we can access the IFRC-symbols QGIS. 
-    - Go to this website: https://learn-sims.org/style-guidance/logos-and-icons/ 
-    - Under __IFRC Icons__, click on `Download the full set here`. You will be redirected to a dropbox folder with a zip-file containing all the IFRC icons in various formats.
-    - In the top-right corner, click on download. 
-    - [Download the IFRC symbols](https://www.dropbox.com/scl/fi/8snphmxuncdvajvu1iqh8/IFRC-Icons.zip?rlkey=vtsahvsuhepor8oicmkd7e9s1&dl=0), unzip them and save them in a folder on your computer where you will find them again. 
-    - In the top bar of your QGIS-window, navigate to `Settings` > `Options` > `System`
-    - In the field for `SVG-paths`, click on `+`-Symbol. A new window will open.
-    - Navigate to the folder where you saved the SVG library. Click on `Select Folder`. 
-    - Now we will be able to access the additional SVG-files in the symbolisation window. 
-    
-
-<!--CHECK: Are we actually using external SVG-symbols?-->
-
-## Task 2: Symbolization
+## Task 2: Symbolisation
 
 Creating a good map involves selecting appropriate icons and colours to transmit the information in your data. 
 The first step into creating a comprehensible map is to order the layers logically so you can see the information:
@@ -148,7 +130,7 @@ Let's go through the layers one by one and visualize them in a meaningful way.
 
 In the __layers panel__, right click on the layer `Health_Facilities_Flood_2024_AOI` > `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 Let's create our own customized symbol for healthcare facilities:
-1. Under `Symbol layer type`, select __"SVG Marker"__
+1. Under `Symbol layer type`, select __"SVG Marker"__.
 2. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 
 :::{dropwodn} Video: Using SVG symbols 
@@ -157,90 +139,34 @@ Let's create our own customized symbol for healthcare facilities:
 
 - Scroll through the folder until you find a suitable symbol (e.g. ![](/fig/en_m4_ex_2_cross_symbol.png)).
 
-```{figure} ../../fig/crescent_moon.PNG
+:::{figure} ../../fig/crescent_moon.PNG
 ---
 width: 450px
 name: SVG Marker
 ---
-Create customized SVG Marker
-```
+Create customized SVG Marker.
+:::
 
 We can customise the icon further:
 
 - On the upper right corner of the symbology tab, click on the `+` to add another "Simple Marker".
-- By default, it will be a circle. Make sure the circle is below the ![](/fig/en_m4_ex_2_cross_symbol.png)-symbol by clicking on the ![](/fig/m4_ex2_down_symbol.png)
-- Change the colour of the circle to white
+- By default, it will be a circle. Make sure the circle is below the ![](/fig/en_m4_ex_2_cross_symbol.png)-symbol by clicking on the ![](/fig/m4_ex2_down_symbol.png).
+- Change the colour of the circle to white.
 - Click `Apply`, then `OK`.
 
-```{figure} /fig/en_3.36_m4_ex2_complex_symbol.png
+:::{figure} /fig/en_3.36_m4_ex2_complex_symbol.png
 ---
 name: m4ex2_complex_symbol
 width: 450 px
 ---
-You can use several symbol layers to create a complex symbol in QGIS 3.36
-```
+You can use several symbol layers to create a complex symbol in QGIS 3.36.
+:::
 
-<!--- Adjust its color and size and rotate it 180° in order to turn it around.
-- on the upper right click on the __+__ in order to add another "Simple Marker". Choose a circle and adjust its color and size in order to fit around the crescent moon.
--->
-
-<!--
-Another option to use IFRC and Red Cross logos is to use the `Plugin Resource Sharing`:
-
-With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
-
-1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
-2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
-3. Search for packages by the Red Cross and UN
-4. Install the packages.
-
-Now the symbols should be available in the styling manager in the SVG folder.
-
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
-
-
--->
 ### __Roads:__
 
 The roads dataset contains a lot of information that we do not necessarily want to display on our final map. We can categorise the data and hide the unwanted information. We already identified the important roads in the previous exercise: The roads where __"highway"__ equals `motorway`, `primary`, `secondary`, `trunk`. These roads are the __major roads__. 
 
 
-
-<!--
-To make the visualisation simple, let's extract the roads we are interested in and save them in a new layer:
-
-1. In the processing toolbar, search for the tool "Extract by Expression". The tool window will open.
-2. As `Input Layer`, select `Roads_Larkana`.
-3. Next to the `Expression`-field, click on the ![](/fig/expression_string_builder_icon.png) `Expression Builder`. The __Expression Editor will open.
-4. In the middle tab, locate the subfolder called `Fields and Values`. Here, you will find all the attribute columns for the layer.
-5. We are interested in the "highway"-column. <kbd>Double-click</kbd> on it to add it to the expression editor. 
-6. While you have the "highway" field selected in the middle tab, in the right tab, click on `All Unique`. This will list all the unique values in the "highway"-column. 
-7. Build the following expression (you can also just copy and paste it):
-    ```
-     (  "highway"  =  'motorway'  ) OR ( "highway"  =  'primary'  ) OR  (  "highway"  =  'secondary'  ) OR ( "highway"  =  'trunk'  ) 
-    ```
-8. Click `OK`.
-9. Under `Matching features` click on `...` and navigate to the `/data/temp/`-folder and save the dataset as __"Larkana_major_roads.gpkg"__.
-9. Click `Run`. 
-10. A new layer will be added to your layers panel.
-
-Now we can adjust the symbology for the major roads:
-
-11. <kbd>Right-Click</kbd> on the "Larkana_major_roads" layer > `Properties`.
-12. Navigate to the `Symbology`-tab.
-13. Here, you can adjust the colour and thickness of the lines.
-
-```{figure} /fig/Module_4/m4_ex2_symbology_roads.png
----
-name: Road symbolisation
-width: 550 px
----
-The symbolisation tab for line data in QGIS 3.42
-```
-
-14. Once you are satisfied with the look, click `Apply`, then `OK`.
-
--->
 
 We can categorise the roads and then select the relevant roads to be displayed. To categorize the roads, double-click on the layer `Roads_Larkana`. The properties window will open with a vertical tab bar on the left. Navigate to the __Symbology tab__.
 - On the top you find a dropdown menu. Open it and choose `Categorized`. 
@@ -248,25 +174,25 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 - Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.
 - Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`
 
-    ```{figure} /fig/PAK_road_classification.PNG
+    :::{figure} /fig/PAK_road_classification.PNG
     ---
     width: 600px
     name: Pakistan road classification
     align: center
     ---
     Classifying the roads: By unchecking the boxes you can hide the unnecessary information.
-    ```
+    :::
 
 * You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.
     
-    ```{figure} /fig/PAK_road_symbol_weight.png
+    :::{figure} /fig/PAK_road_symbol_weight.png
     ---
     width: 600px
     name: Pakistan road classification
     align: center
     ---
     Classifying the roads: You can adjust the width of a single category.
-    ```
+    :::
 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
@@ -276,14 +202,14 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
-    ```{figure} /fig/PAK_blocked_road_symbol.png
+    :::{figure} /fig/PAK_blocked_road_symbol.png
     ---
     width: 600px
     name: Visulsing blocked roads with icons
     align: center
     ---
     Visualising blocked roads with icons
-    ```   
+    :::   
 
 
 ### __Airports:__
@@ -291,7 +217,7 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
-* Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#create-a-new-layer)) 
+* Click on  `Layer` --> `Create Layer` -> `New GeoPackage Layer`([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
 * Under `Database` click on ![](/fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
 * `Geometry type`: Select `Point`
 * Under `Additional dimension` you should always make sure that you check `None`. 
@@ -302,33 +228,33 @@ To do so we will create an entirely new point dataset representing airports.
 * Click `OK`.
 * Your new layer will appear in the `Layer Panel`.
 
-    ```{figure} /fig/Create_Geopackagelayer_airport.PNG
+    :::{figure} /fig/Create_Geopackagelayer_airport.PNG
     ---
     width: 400px
-    name: Digitalising airports
+    name: Digitising airports
     align: center
     ---
     Creating a new point layer for the airports.
-    ```
+    :::
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png)
+If you cannot see the toolbar `View` -> `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png)
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitizing Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](/fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
-    ```{figure} /fig/Feature_Att_Airport.PNG
+    :::{figure} /fig/Feature_Att_Airport.PNG
     ---
     width: 400px
-    name: Digitalising airports
+    name: Digitising airports
     align: center
     ---
-    Digitising new point features
-    ```
+    Digitising new point features.
+    :::
 
 * Once you are done with digitizing click on ![](/fig/mActionSaveEdits.png) to save your edits.
 * Click again on ![](/fig/mActionToggleEditing.png) to end the editing mode.
@@ -348,13 +274,13 @@ Let's symbolise the airport with a plane icon, so we can identify it quickly.
 
 Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
-```{figure} /fig/Module_4/m4_ex2_symbology_flood.png
+:::{figure} /fig/Module_4/m4_ex2_symbology_flood.png
 ---
 name: m4_ex2_symbology_flood.png
 width: 550 px
 ---
 Adjusting the symbology to indicate the flooded area. 
-```
+:::
 
 ## Task 3: Creating the print layout
 
@@ -363,13 +289,13 @@ Once you are happy with the symbolization and colours of your data, the next ste
 1. Open a new print layout and give it a name (e.g. Larkana_floods).
     - Go to `Project` > `New Print Layout` > enter a name for the new print layout > click `OK`.
 
-```{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
 ---
 Creating a new print layout.
-```
+:::
 
 - A new window with a blank print layout will appear. This is the print layout composer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
@@ -380,13 +306,13 @@ Creating a new print layout.
 3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
 
 
-```{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png
+:::{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png
 ---
 name: m4_ex2_print_layout_add_map
 width: 650 px
 ---
 Adding the map to the print layout.
-```
+:::
 
 4. Let's add a label for the city of Larkana. This will help your audience that might be unfamiliar with the region orientate themselves. 
     - Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
@@ -394,13 +320,13 @@ Adding the map to the print layout.
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Enter "Larkana" instead. 
     - Click on the __Font__ dropdown menu and adjust the font size so it can be read easily.
     
-```{figure} /fig/Module_4/m4_ex2_print_layout_label_city
+:::{figure} /fig/Module_4/m4_ex2_print_layout_label_city
 ---
 name: m4_ex2_print_layout_label_city
 width: 600 px
 ---
 Adding a label for the city of Larkana.
-```
+:::
 
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`).
@@ -409,13 +335,13 @@ Adding a label for the city of Larkana.
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
     - Below the font dropdown menu, add a little bit of horizontal and vertical margin. 
 
-```{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png
+:::{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png
 ---
 name: m4_ex2_print_layout_add_title
 width: 600 px
 ---
 Adding a title to the print layout.
-```
+:::
 
 
 5. Let's add a legend:
@@ -426,13 +352,13 @@ Adding a title to the print layout.
     - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries. Use the ![](/fig/Module_4/m4_ex2_print_layout_add_to_legend.png)-icon to add or remove layers from the legend.
     - Under the upper `Main Properties`, insert "Legend" as title. 
 
-```{figure} ../../fig/Larkana_Legend.PNG
+:::{figure} ../../fig/Larkana_Legend.PNG
 ---
 width: 700px
 name: Create Print Layout
 ---
 Adjusting the legend.
-```
+:::
 
 6. Now, let's add a scale bar:
     - Click on ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
@@ -444,7 +370,7 @@ Adjusting the legend.
 
 8. Let's add a logo (for example, your national society):
     - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
-    - Drag a rectangle in the spot where you want to add the logo
+    - Drag a rectangle in the spot where you want to add the logo.
     - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
     - Click on the three dots `...` and select the file with your logo (for this exercise the logo for the Pakistani Red Crescent Society is saved here: `/Module_4_Exercise_2_Larkana_flood_map/img/`).
     - If necessary, resize or move the picture on the print layout.
@@ -454,17 +380,17 @@ Adjusting the legend.
     - Drag a rectangle on the canvas
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date. 
 
-When you are finished with your map design you can export your printable map as image or pdf under `Layout`--> `Export as Image` or `Export as PDF`
+When you are finished with your map design you can export your printable map as image or pdf under `Layout`--> `Export as Image` or `Export as PDF`.
 
 You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
 
-```{figure} ../../fig/Larkana_Map_withoutOverview.png
+:::{figure} ../../fig/Larkana_Map_withoutOverview.png
 ---
 width: 700px
 name: Map Larkama
 ---
 Your final map could look something like this.
-```
+:::
 
 ### Bonus Exercise
 
@@ -480,13 +406,13 @@ If you are finished with the main map, click on the map and navigate to the item
 8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
 9. You can add a scale bar and a northj arrow to your overview map as well.
 
-```{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
 ---
 The finished map could look something like this (Source: HeiGIT).
-```
+:::
 
 > Congratulations! You have created a finished map that is ready to be printed and distributed. 
 

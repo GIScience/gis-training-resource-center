@@ -44,13 +44,11 @@ Download all the datasets [here](https://nexus.heigit.org/repository/gis-trainin
 - `buildings_belet_weyne.geojson`: This dataset is downloaded using [HOT Export Tool](https://export.hotosm.org/v3/exports/new/describe) and contains information about buildings in the Beledweyne district.
 
 
-<!--EDIT: We could add an optional step for trainees to download the data from the HOT Export Tool themselves (requires HOT Export Tool Exercise from Module 2)-->
-
 The folder is called **Module_3_Exercise_3_Data_Queries** and contains the entire [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder.
 
-``` {Note}
+:::{Note}
 The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name **Beledweyne** which we will be focusing on. Other spellings might be **Belet Weyne** or **Belete Weyne**. In many cases, you will have to edit the values in the datasets to remove different spelling of spelling mistakes. This process is called "data cleaning".
-```
+:::
 
 ## Tasks
 
@@ -63,9 +61,9 @@ The naming of the districts and states is not consistent across the different da
     - `GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`
     - `Buildings_Belete_Weyne.geojson`: A pop-up window will appear for this file and you will need to decide which data to import. Select the polygons.
 
-```{tip}
+:::{tip}
 Make sure you __unzip__ the exercise folder before loading the layers into QGIS. QGIS does not accept compressed files.
-```
+:::
 
 ### Extract the district (adm2) from the administrative boundaries layer
 
@@ -77,14 +75,14 @@ Make sure you __unzip__ the exercise folder before loading the layers into QGIS.
 ### Identify the building that might be affected by the flooding
 
 5. In the following steps, we want to identify all buildings that are likely to be affected by the recent flooding. To do that we will use the tool `Extract by Location`.
-    ```{figure} /fig/Extract_by_location_Belet_Weyne.png
+    :::{figure} /fig/Extract_by_location_Belet_Weyne.png
     ---
     width: 500 px
     name: extract_by_location
     align: center
     ---
     The extract by extraction window in QGIS 3.36
-    ```
+    :::
     1. In the __"Processing Toolbox"__ --> Search for `Extract by Location`
     2. __"Extract features from"__: `Buildings_Belete_Weyne.geojson`
     3. __"Where the features (geometric predicate)"__: `are within`
@@ -93,9 +91,9 @@ Make sure you __unzip__ the exercise folder before loading the layers into QGIS.
     6. Now, click `Run`.
     7. Adjust your layers in a way that you only see the flooded areas and your new layer **Beledweyne_buildings_affected**. Remove the `som_admbnda_adm2_ocha_20230308.shp` and `Buildings_Belete_Weyne.geojson` layer.
 
-    ```{Attention}
+    :::{Attention}
     The tool [`Select by Location`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#select-by-location) is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
-    ```
+    :::
 
 ### Identify critical infrastructure affected by the floods
 
@@ -113,22 +111,22 @@ To extract "hospitals", "schools", and "mosques", we can use the tool `Extract b
     5. Click `Ok`. The window will close and you will see the expression you created in the `Expression`-field in the `Extract by Expression` window (see figure below). 
     6. Click `Run`. A new temporary layer called `Matching Features` will be added to your QGIS-project. Close the `Extract by Expression` window.
    
-```{figure} /fig/en_extract_by_expression_som.png
+:::{figure} /fig/en_extract_by_expression_som.png
 ---
 name: extract_by_expression1
 width: 400 px
 ---
 The expression window in QGIS 3.36 with an expression to extract the polygons with the "buildings" value 'hospital', 'school', and 'mosque'. 
-```
+:::
 
 
-```{figure} /fig/en_extract_by_expression_som2.png
+:::{figure} /fig/en_extract_by_expression_som2.png
 ---
 name: extract_by_expression2
 width: 400 px
 ---
 The `Extract by Expression` window in QGIS 3.36
-```
+:::
 
 :::{attention}
 A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a ![](/fig/icon_scratch_layer.png). In order to save the layer permanently, <kbd>Right Click</kbd> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)). 
@@ -142,9 +140,10 @@ Congratulations! The extracted information can now be used to perform further an
 
 <!--ADD picture of this step-->
 
-```{note}
+<!---:::{note}
 This exercise has an optional part 2 in module 4, covering the visualisation of the processed data. 
 
 You can find the exercise [here].
 
-```
+:::
+--->
