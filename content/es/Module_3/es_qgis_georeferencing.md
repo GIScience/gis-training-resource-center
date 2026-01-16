@@ -48,7 +48,7 @@ Para georreferenciar un mapa en PDF, debe seguir los siguientes pasos:
 
 1. Prepare el mapa que desea georreferenciar exportando la página correspondiente del PDF o haciendo una captura de pantalla.
 2. En su ventana de QGIS, añada un mapa base utilizando XYZ Tiles:
-    1. `Capa` > `Añadir capa` > `Añadir capa XYZ...`.
+    1. `Capa` → `Añadir capa` → `Añadir capa XYZ...`.
     2. Se abrirá una nueva ventana. En `XYZ Connection`, en la parte superior de la ventana, seleccione “OpenStreetMap”.
     3. Haga clic en `Añadir`.
     Lo ideal es utilizar un mapa base en el que pueda identificar ubicaciones exactas tanto en el mapa base como en el mapa que desea georreferenciar.
@@ -94,7 +94,7 @@ En la mayoría de los casos, puede dejar el tipo de transformación en lineal. L
 width: 700 px
 name: en_3.36_georef_dialogue_GCP
 ---
-Diálogo de georreferenciación en QGIS 3.36
+Diálogo de georreferenciación en QGIS 3.36.
 :::
 
 13. Una vez que haya añadido suficientes puntos, haga clic en ![](/fig/3.36_start_georef.png) `Comenzar Georreferenciado`. QGIS usará los puntos que haya añadido para transformar la imagen en una imagen georreferenciada, en la que cada píxel tiene asignadas coordenadas GPS.
