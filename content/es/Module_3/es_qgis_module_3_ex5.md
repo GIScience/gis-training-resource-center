@@ -166,10 +166,10 @@ width: 750 px
 No se puede interactuar con un mapa base.
 :::
 ::::
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` -> `Nuevo proyecto`.
-2. Una vez creado el proyecto [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save) en la carpeta del ejercicio “Modul3_Exercise_2_Flood_Larkana”. Para hacer esto, haga clic en `Proyecto` -> `Guardar como` y navegue hasta la carpeta. Nombre el proyecto “PAK_Larkana_flood_2024”.
-3. Primero, queremos agregar el OpenStreetMap como mapa base para la orientación. Para añadir el OSM como mapa base, haga clic en `Capa` -> `Añadir capa` -> `Añadir capa XYZ...`. Elija `OpenStreetMap` y haga clic en `Añadir`.
-4. A continuación, cargue el GeoPackage __“PAK_Sindh_adm2.gpkg”__ en su proyecto. Para hacerlo, debe arrastrar y soltar ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)). O haga clic en `Capa` -> `Añadir capa` -> `Añadir capa vectorial`. Haga clic en los tres puntos ![](/fig/Three_points.png) de tres puntos y navegue hasta __"PAK_Sindh_adm2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)).
+1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#paso-a-paso-creacion-de-un-nuevo-proyecto-qgis-desde-cero) haciendo clic en `Proyecto` → `Nuevo proyecto`.
+2. Una vez creado el proyecto [guarde el proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#save) en la carpeta del ejercicio “Modul3_Exercise_2_Flood_Larkana”. Para hacer esto, haga clic en `Proyecto` → `Guardar como` y navegue hasta la carpeta. Nombre el proyecto “PAK_Larkana_flood_2024”.
+3. Primero, queremos agregar el OpenStreetMap como mapa base para la orientación. Para añadir el OSM como mapa base, haga clic en `Capa` → `Añadir capa` → `Añadir capa XYZ...`. Elija `OpenStreetMap` y haga clic en `Añadir`.
+4. A continuación, cargue el GeoPackage __“PAK_Sindh_adm2.gpkg”__ en su proyecto. Para hacerlo, debe arrastrar y soltar ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)). O haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`. Haga clic en los tres puntos ![](/fig/Three_points.png) de tres puntos y navegue hasta __"PAK_Sindh_adm2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)).
 
 
 :::{Attention}
@@ -245,9 +245,9 @@ width: 750 px
 :::
 
 1. En primer lugar, debemos averiguar dónde se encuentran los centros de salud en la zona. Podemos encontrar conjuntos de datos mediante una búsqueda rápida en el [Intercambio de Datos Humanitarios (HDX)](https://data.humdata.org). Allí puede encontrarse el conjunto de datos denominado “Centros de salud de Pakistán (exportado de OpenStreetMap)”. Usaremos este conjunto de datos. El conjunto de datos ya está disponible en la carpeta de descargas para este ejercicio.
-    - Importe el GeoPackage `PAK_Health_Facilities_complete.gpgk` en su proyecto. Puede arrastrarlo al lienzo del mapa o abrir la ventana de importación haciendo clic en `Capa` > `Añadir capa` > `Añadir capa vectorial` en la barra superior de QGIS ([consulte la página](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) Wiki). Aparecerá una nueva capa con datos de punto en el lienzo del mapa.
+    - Importe el GeoPackage `PAK_Health_Facilities_complete.gpgk` en su proyecto. Puede arrastrarlo al lienzo del mapa o abrir la ventana de importación haciendo clic en `Capa` → `Añadir capa` → `Añadir capa vectorial` en la barra superior de QGIS ([consulte la página](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html) Wiki). Aparecerá una nueva capa con datos de punto en el lienzo del mapa.
     - Una vez que hayamos importado los centros de salud, podremos extraer aquellos que se encuentren dentro de nuestra área de interés. Podemos lograrlo con la herramienta `Extraer por ubicación`.
-    - En la __caja de herramientas de Procesos__ ([abrir la caja](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#open-toolbox)), busque la herramienta “Extraer por ubicación”. Haga <kbd>doble clic</kbd> en ella. Se abrirá una nueva ventana.
+    - En la __caja de herramientas de Procesos__ ([abrir la caja](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#caja-de-herramientas-de-procesos)), busque la herramienta “Extraer por ubicación”. Haga <kbd>doble clic</kbd> en ella. Se abrirá una nueva ventana.
     :::{figure} /fig/PAK_extract_locatio_HS.png
     ---
     width: 400px
@@ -281,7 +281,7 @@ Ahora tenemos una visión general de la ubicación de los centros de salud. Sin 
     * Como destino, seleccione el código SRC/EPSG __4326__.
     * Guarde el nuevo archivo en su carpeta de `temp` haciendo clic en los tres de puntos ![](/fig/Three_points.png) junto a `Reproyectado`, especifique el nombre del archivo como __“2024_MinFloodExtend_reprojected”__.
     * Haga clic en `Ejecutar`.
-    * Elimine la capa antigua del panel de capas haciendo clic derecho sobre la capa -> `Eliminar capa`.
+    * Elimine la capa antigua del panel de capas haciendo clic derecho sobre la capa → `Eliminar capa`.
     * Ajuste la opacidad de la capa de inundación haciendo clic derecho sobre la capa __“2024_MinFloodExtend_reprojected”__ en el Panel de capas y seleccionando `Propriedades`. La ventana de propiedades se abrirá con una sección de pestaña vertical a la izquierda.
     - Vaya a la pestaña `Propriedades`.
     - Mueva el control deslizante y ajuste la opacidad a alrededor del 60 %.
@@ -454,7 +454,7 @@ Existen métodos para automatizar el proceso de digitalización que se tratarán
 ::::
 
 3. Por último, queremos visualizar las carreteras que están inundadas. Para simplificar el proceso, buscaremos manualmente las carreteras que se intersecan con la capa de extensión de inundación y las marcaremos con puntos. Para ello, crearemos un nuevo conjunto de datos de puntos que representen las carreteras bloqueadas.
-    * Haga clic en `Capa` --> `Crear capa` -> `Nueva capa GeoPackage`([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#create-a-new-layer))
+    * Haga clic en `Capa` → `Crear capa` → `Nueva capa GeoPackage`([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#create-a-new-layer))
     - En `Base de datos`, haga clic en ![](/fig/Three_points.png) y vaya a la carpeta `temp`. Asigne al nuevo conjunto de datos el nombre __“PAK_flood_2024_blocked_road”__. Haga clic en `Guardar`.
     - `Tipo de geometría`: Seleccione `Punto`
     - Seleccione el sistema de referencia de coordenadas (SRC) “EPSG:4326-WGS 84”. Por defecto, QGIS selecciona el SRC del proyecto.
@@ -476,7 +476,7 @@ Existen métodos para automatizar el proceso de digitalización que se tratarán
 
 ::::{margin}
 :::{tip}
-Si no puede ver la barra de herramientas, haga clic en la pestaña `Ver` -> `Barras de herramientas` y marque `Digitalización` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#creation-of-point-data)).
+Si no puede ver la barra de herramientas, haga clic en la pestaña `Ver` → `Barras de herramientas` y marque `Digitalización` ([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#creation-of-point-data)).
 :::
 ::::
 
