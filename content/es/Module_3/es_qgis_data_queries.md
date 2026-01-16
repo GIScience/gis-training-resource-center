@@ -35,7 +35,7 @@ __Descargar Official Boundaries del Banco Mundial__
 
 ## Selección manual
 
-La selección manual se realiza principalmente mediante una de las herramientas de selección basadas en clics disponibles en la barra de herramientas del proyecto (alternativa: `Editar` > `Seleccionar`). Entre ellas figuran `Seleccionar objeto(s) espacial(es)`, `Seleccionar objetos espaciales por polígono`, `Seleccionar objetos especiales a mano alzada` y `Seleccionar objetos espaciales por radio`.
+La selección manual se realiza principalmente mediante una de las herramientas de selección basadas en clics disponibles en la barra de herramientas del proyecto (alternativa: `Editar` → `Seleccionar`). Entre ellas figuran `Seleccionar objeto(s) espacial(es)`, `Seleccionar objetos espaciales por polígono`, `Seleccionar objetos especiales a mano alzada` y `Seleccionar objetos espaciales por radio`.
 \
 \
 Ejemplo: `Seleccionar objeto(s) espacial(es)`
@@ -125,7 +125,7 @@ Se pueden utilizar operadores como AND u OR para combinar diferentes consultas o
 :::
 
 ## Selección espacial por capas
-La selección espacial de entidades permite seleccionar partes de una capa según su relación con entidades de otra capa geoespacial (p. ej., la selección de todas las entidades de punto de la capa A que se encuentren dentro de una entidad de polígono de la capa B). Para ello, utilice la herramienta “Select by Location” disponible en ![](/fig/mActionSelectbyLocation.png) en la barra de herramientas del proyecto (alternativa: `Vectorial` > `Research Tools` > `Seleccionar por localización`).
+La selección espacial de entidades permite seleccionar partes de una capa según su relación con entidades de otra capa geoespacial (p. ej., la selección de todas las entidades de punto de la capa A que se encuentren dentro de una entidad de polígono de la capa B). Para ello, utilice la herramienta “Select by Location” disponible en ![](/fig/mActionSelectbyLocation.png) en la barra de herramientas del proyecto (alternativa: `Vectorial` → `Research Tools` → `Seleccionar por localización`).
 
 1.	En la interfaz de la herramienta, elija la capa vectorial de la que desea seleccionar entidades mediante “Select features from” y la capa en la que desea basar la selección mediante “By comparing to the features from”.
 2.	Elija el operador geométrico que utilizará para seleccionar las entidades (véase el párrafo inferior).
