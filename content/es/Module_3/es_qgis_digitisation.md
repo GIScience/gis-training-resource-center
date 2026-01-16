@@ -130,7 +130,7 @@ Piense en un conjunto de datos espaciales que podría necesitar en sus operacion
 
 :::
 
-1. `Capa` --> `Crear capa` -> `Nueva capa GeoPackage` o `Nueva capa de archivo Shape...`
+1. `Capa` → `Crear capa` → `Nueva capa GeoPackage` o `Nueva capa de archivo Shape...`
 2. Haga clic en ![](/fig/Three_points.png) junto al campo de entrada `file name` y vaya a la carpeta en la que desea guardar el conjunto de datos.
 3. `Codificación de archivo`: Asegúrese de que está configurado como UTF-8.
 4. `tipo de geometría`: Seleccione el tipo de entidad que desea digitalizar, p. ej., puntos o líneas.
