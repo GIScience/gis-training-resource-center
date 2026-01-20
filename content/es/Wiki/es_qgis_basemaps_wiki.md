@@ -15,19 +15,19 @@ Siempre puede añadir el mapa OpenStreetMap estándar como mapa base a su lienzo
 
 Hay dos formas de agregar el OpenStreetMap como mapa base.
 
-__Opción 1:__ Busque `XYZ Tiles` en el panel `Browser`. Abra el menú desplegable haciendo clic en él y seleccione OpenStreetMap u otro mapa base.
+__Opción 1:__ Busque `Teselas XYZ` en el panel `Navegador`. Abra el menú desplegable haciendo clic en él y seleccione OpenStreetMap u otro mapa base.
 
-__Opción 2:__ `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Seleccione el mapa de OpenStreetMap u otro mapa base.
+__Opción 2:__ `Capa` → `Añadir capa` → `Añadir capa XYZ...` → Seleccione el mapa de OpenStreetMap u otro mapa base.
 
 __Añadir un mapa de OpenStreetMap estándar como mapa base__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
 ### Añadir mapas base de Google y Bing
 
-Para añadir mapas base adicionales sin utilizar complementos, se deben configurar las `XYZ Tiles`.
-En `Browser Panel`, haga clic con el botón derecho en `XYZ Tiles` -> `New Connection`.
+Para añadir mapas base adicionales sin utilizar complementos, se deben configurar las `Teselas XYZ`.
+En panel `Navegador`, haga clic con el botón derecho en `XYZ Tiles` → `Conexión nueva...`.
 
-`Name` = El nombre del nuevo mapa base.
+`Nombre` = El nombre del nuevo mapa base.
 
 `URL` = Puede utilizar cualquiera de las URL de la tabla siguiente.
 
@@ -56,7 +56,7 @@ El complemento QuickMapServices permite acceder a una amplia gama de mapas base.
 ¡Pueden surgir problemas al imprimir algunos mapas base desde QuickMapServices!
 :::
 
-`Web` -> `QuickMapServices` -> seleccionar el proveedor, p. ej., NASA -> seleccionar mapa base
+`Web` → `QuickMapServices` → seleccionar el proveedor, p. ej., NASA → seleccionar mapa base
 
 __Funcionalidad del complemento QuickMapServices__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
@@ -64,14 +64,14 @@ __Funcionalidad del complemento QuickMapServices__
 ### Configuración de QuickMapServices
 Después de instalar el complemento (complementos en Wiki), necesita configurarlo para acceder a todos los mapas base.
 
-`Web` -> `QuickMapServices` -> `Settings` -> Use las flechas horizontales para navegar a `More Services` -> `Get Contributed Pack`
+`Web` → `QuickMapServices` → `Settings` → Use las flechas horizontales para navegar a `More Services` → `Get Contributed Pack`
 
 ## Navegación en mapa base con el complemento OSM Place Search
 
 Con el complemento OSM Place Search, puede encontrar lugares en todo el mundo basados en OpenStreetMap. Esto significa que la búsqueda de lugares es independiente de cualquier mapa base que esté utilizando, siempre se basa en OpenStreetMap.
 
 :::{Tip}
-Si el complemento está instalado y activado, pero el panel no es visible, revise [Mover y organizar barras de herramientas y paneles](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars) en Wiki
+Si el complemento está instalado y activado, pero el panel no es visible, revise [Mover y organizar barras de herramientas y paneles](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#mostrar-y-ocultar-pantallas-y-barras-de-herramientas) en Wiki.
 :::
 
 __Funcionalidad del complemento de OSM Place Search__
