@@ -5,6 +5,7 @@ title: GIS Resource Training Center
 author: HeiGIT gGmbH
 copyright: HeiGIT gGmbH
 logo: IFRC_Logo_Horizontal_RGB.svg
+favicon: IFRC_LOGO_favicon.png
 
 
 # Force re-execution of notebooks on each build.
