@@ -186,11 +186,11 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa vectorial
 
-1. Pestaña `Vectorial` → `Data Management Tools` → `Reproyectar capa`
+1. Pestaña `Vectorial` → `Data Management Tools` → `Reproyectar capa`. 
 2. Seleccione el código SRC/EPSG de destino.
 3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reproyectada`,
    especifique el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Ejecutar`
+5. Haga clic en `Ejecutar`.
 
 :::{dropdown} Video: Cómo cambiar el SRC de un vector una capa
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
@@ -198,12 +198,12 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa ráster
 
-1. Pestaña `Ráster` -> `Projections` -> `Combar (reproyectar)`
-2. Seleccione el código SRC/EPSG de destino
-3. Seleccione el método de remuestreo
+1. Pestaña `Ráster` → `Projections` → `Combar (reproyectar)`.
+2. Seleccione el código SRC/EPSG de destino.
+3. Seleccione el método de remuestreo.
 4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectada`, especifique en
    el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Ejecutar`
+5. Haga clic en `Ejecutar`.
 
 :::{dropdown} Video: Cómo cambiar el SRC de una capa ráster
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
