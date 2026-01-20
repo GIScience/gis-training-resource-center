@@ -45,9 +45,8 @@ Al abrir QGIS por primera vez en Mac puede aparecer este mensaje de error:
 :::{figure} /fig/qgis_on_mac.png
 ---
 width: 55%
-name: qgis_on_mac.png
+name: es_qgis_on_mac.png
 align: center
-name: Error when opening QGIS on Mac for the first time
 ---
 Error al abrir QGIS en Mac por primera vez.
 :::
@@ -61,7 +60,6 @@ Si este problema persiste, puede cambiar la configuración de su dispositivo. Va
 width: 55%
 name: opening_qgis_mac.png
 align: center
-name: Change settings to open QGIS on Mac
 ---
 Cambiar la configuración para abrir QGIS en Mac.
 :::
@@ -71,14 +69,13 @@ Cambiar la configuración para abrir QGIS en Mac.
 
 __Solución:__
   1. Haga clic derecho en la capa correspondiente.
-  2. Active la función `Zoom to Layer` en la ventana emergente.
+  2. Active la función `Zoom a la capa(s)` en la ventana emergente.
 
 :::{figure} /fig/en_layer_display.png
 ---
 width: 55%
-name: en_layer_display.png
+name: es_layer_display.png
 align: center
-name: Zoom to layer if layer is not displayed
 ---
 Hacer zoom a la capa si no se muestra la capa.
 :::
@@ -87,16 +84,15 @@ Hacer zoom a la capa si no se muestra la capa.
 ## Desapareció una ventana de capas en QGIS
 
 __Solución:__
- 1. Abrir en la pestaña principal `View`.
- 2. En la ventana emergente, seleccione `Panels`.
- 3. En la subventana, marque la casilla `Layers`.
+ 1. Abrir en la pestaña principal `Ver`.
+ 2. En la ventana emergente, seleccione `Paneles`.
+ 3. En la subventana, marque la casilla `Panel Capas`.
 
 :::{figure} /fig/en_closed_layer_view.png
 ---
 width: 75%
-name: en_closed_layer_view.png
+name: es_closed_layer_view.png
 align: center
-name: Layer window disappeared
 ---
 Desapareció la ventana de capas.
 :::
@@ -109,8 +105,8 @@ Este tipo de problemas suele deberse a a) *una falta de coincidencia entre el SR
 
  a)
  1. Compruebe las propiedades de la capa (haga clic con el botón derecho en la capa correspondiente).
- 2. En la ventana emergente, seleccione `Properties`.
- 3. En la siguiente ventana emergente, seleccione `Information` y revise qué proyección está definida en la entrada `Coordinate Reference System (CRS)`.
+ 2. En la ventana emergente, seleccione `Propriedades`.
+ 3. En la siguiente ventana emergente, seleccione `Información` y revise qué proyección está definida en la entrada `Sistema de referencia de coordenadas (SRC)`.
  4. Además, compruebe si en la barra de estado, en la parte inferior derecha, está configurada la misma proyección.
  5. Corrija cualquier discrepancia reproyectando las capas o cambiando la configuración del SRC del proyecto.
 
@@ -125,30 +121,28 @@ Se mostrará en el espacio de trabajo en el mismo lugar que las demás capas, ya
 :::{figure} /fig/en_qgis_layer_with_different_KBS.png
 ---
 width: 75%
-name: en_qgis_layer_with_different_KBS.png
+name: es_qgis_layer_with_different_KBS.png
 align: center
-name: Layer with different crs
 ---
 Capa con diferentes SRC.
 :::
 
-Puede comprobarlo utilizando el algoritmo `Add Geometry Attributes` < `Geometry Tools`. Las coordenadas son distintas a las coordenadas de las otras dos tablas de atributos de las otras capas.
+Puede comprobarlo utilizando el algoritmo `Agregar atributos de geometría` en la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#caja-de-herramientas-de-procesos). Las coordenadas son distintas a las coordenadas de las otras dos tablas de atributos de las otras capas.
 
 En su lugar, haga lo siguiente:
 
-1. Seleccione la pestaña `Vector`.
+1. Seleccione la pestaña `Vectorial`.
 
 2. En el menú emergente active `Data Management Tools`.
 
-3. Y en el siguiente menú emergente `Reproject Layer`.
+3. Y en el siguiente menú emergente `Reproyectar capa`.
 
 
 :::{figure} /fig/en_qgis_reproject_vector_layer01.png
 ---
 width: 75%
-name: en_qgis_reproject_vector_layer01.png
+name: es_qgis_reproject_vector_layer01.png
 align: center
-name: Reproject Layer in QGIS
 ---
 Reproyectar capa en QGIS.
 :::
@@ -157,43 +151,41 @@ Reproyectar capa en QGIS.
 :::{figure} /fig/en_qgis_reprojected_layer.png
 ---
 width: 75%
-name: en_qgis_reprojected_layer.png
+name: es_qgis_reprojected_layer.png
 align: center
-name: Tool to reproject layer in QGIS
 ---
 Herramienta para reproyectar capas en QGIS.
 :::
 
-Guarde siempre las capas reproyectadas mediante las funciones `Export` y `Save as`, ya que solo se guardan temporalmente y desaparecerán tras cerrar el proyecto.
+Guarde siempre las capas reproyectadas mediante las funciones `Exportar` y `Guardar como`, ya que solo se guardan temporalmente y desaparecerán tras cerrar el proyecto.
 
 :::{figure} /fig/en_qgis_reprojection_export.png
 ---
 width: 75%
-name: en_qgis_reprojection_export.png
+name: es_qgis_reprojection_export.png
 align: center
-name: Export reprojected layer
 ---
 Exportar capa reproyectada.
 :::
 
 Procedimiento similar para capas ráster...
 
-1. Seleccione la pestaña `Raster`.
+1. Seleccione la pestaña `Ráster`.
 
 2. En el menú emergente active `Projections`.
 
-3. Y en el siguiente menú emergente `Warp (Reproject)`.
+3. Y en el siguiente menú emergente `Combar (Reproyectar)`.
 
 
 :::{figure} /fig/en_qgis_reproject_raster_layers01.png
 ---
 width: 75%
-name: en_qgis_reproject_raster_layers01.png
+name: es_qgis_reproject_raster_layers01.png
 align: center
-name: Reproject raster layer in QGIS
 ---
 Reproyectar capa ráster en QGIS.
 :::
+
 :::{attention}
  A menudo se producen errores si se establece el SRC y no se ha utilizado ninguna herramienta de reproyección. Si sospecha de que su reproyección ha salido mal, borre todas las capas afectadas de QGIS, vuelva a cargar los datos y, a continuación, reproyéctelos y expórtelos.
 :::
@@ -205,28 +197,27 @@ Si un archivo de capa ya no se muestra o no está activo en la ventana de capas 
 
 __Solución:__
 
-La próxima vez, guárdelo:
-1. Haga clic en la pestaña `Layer` y en `Save as` en la ventana emergente.
+La próxima vez, guárdelo antes de cerrar QGIS:
+1. Haga clic derecho en la capa temporal y seleccione `Hacer permanente`.
 
 :::{figure} /fig/en_qgis_save_layer01.png
 ---
 width: 65%
-name: en_qgis_save_layer01.png
+name: es_qgis_save_layer01.png
 align: center
-name: Save layer
 ---
-Guardar capa.
+Guardar una capa temporal.
 :::
 
 
-2. Ponga un _nombre de archivo_ y haga clic en `three points` ![](/fig/Three_points.png) para guardar el archivo en el lugar del directorio elegido.
+2. Ponga un _nombre de archivo_ y haga clic en las tres puntos ![](/fig/Three_points.png) para guardar el archivo en el lugar del directorio elegido.
 3. Seleccione el SRC correspondiente.
-4. Haga clic en `ok`.
+4. Haga clic en `Aceptar`.
 
 :::{figure} /fig/en_qgis_save_layer02.png
 ---
 width: 85%
-name: en_qgis_save_layer02
+name: es_qgis_save_layer02
 align: center
 ---
 Guarde la capa en su directorio.
@@ -238,15 +229,15 @@ Guarde la capa en su directorio.
 
 __Solución:__
 
-  1. Active `Processing Tools` en `Plugins` >
-  `Manage and install Plugins`.
-  2. Seleccione `All`.
+  1. Active `Processing` en `Complementos` >
+  `Administrar e instalar complementos`.
+  2. Seleccione `Todos`.
   3. Vuelva a marcar la función `Processing` en la lista correspondiente.
 
 :::{figure} /fig/en_missing_processing_tools.png
 ---
 width: 85%
-name: en_missing_processing_tools
+name: es_missing_processing_tools
 align: center
 ---
 Vuelva a instalar la herramienta de procesamiento.
@@ -259,14 +250,12 @@ https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vecto
 ## Falta la caja de herramientas
 __Solución:__
 
-  1. Para reactivar la `Toolbox` ![](/fig/mAction.png) haga clic en `View Tab`.
-  2. En la ventana emergente, seleccione `Panels`.
-  3. En la siguiente ventana emergente marque la casilla de `Processing Toolbox`.
+  1. Para reactivar la __Caja de herramientas de procesos__ ![](/fig/mAction.png) haga clic en `Ver` → `Paneles` → `Panel caja de herramientas de Procesos`. 
 
 :::{figure} /fig/en_missing_toolbox.png
 ---
 width: 75%
-name: en_missing_toolbox
+name: es_missing_toolbox
 align: center
 ---
 Reactivar caja de herramientas.
@@ -277,13 +266,13 @@ __Solución:__
 
 Hay dos lugares en los que tiene que definir con qué mapa debe sincronizarse la flecha norte.
 
- En la pestaña `Layout Tab` (del diseño de impresión) para la imagen del mapa en `General Settings` asegúrese de que el mapa de referencia tiene seleccionado el mapa correcto.
+En la pestaña `Diseño` (en la ventana del [diseño de impresión](/content/es/Module_4/es_qgis_understanding_print_layout.md)) para la imagen del mapa en `Configuración general` asegúrese de que el mapa de referencia tiene seleccionado el mapa correcto.
 
 
 :::{figure} /fig/en_qgis_correct_referenciation_to_map.png
 ---
 width: 85%
-name: en_qgis_correct_referenciation_to_map.png
+name: es_qgis_correct_referenciation_to_map.png
 align: center
 ---
 Referencia correcta al mapa.
@@ -298,7 +287,7 @@ Si aparece el mensaje de error `Invalid Geometries`, es posible que los archivos
 
 __Solución:__
 
-Estos errores en las geometrías pueden corregirse ejecutando `Fix Geometries`. Búsquela en la caja de herramientas de procesos.
+Estos errores en las geometrías pueden corregirse ejecutando `Corregir geometrías`. Búsquela en la caja de herramientas de procesos.
 
 ## Sistemas de coordenadas: ¿Qué significan todos estos términos?
 
@@ -330,10 +319,10 @@ Redefinir significa que se modifican los metadatos sobre el sistema de coordenad
 
 __Soluciones:__
 
-+ En QGIS, para los conjuntos de datos vectoriales, utilice la herramienta `Assign Projection` del conjunto de herramientas `Vector General`, no la herramienta `Reproject Layer`. Véase también: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection
++ En QGIS, para los conjuntos de datos vectoriales, utilice la herramienta `Asignar proyección` del conjunto de herramientas `Vector general`, no la herramienta `Reproyectar capa`. Véase también: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection
 
 
-+ En QGIS, para los conjuntos de datos ráster, utilice la herramienta `Assign Projection` del conjunto de herramientas `GDAL`, no la herramienta `Warp (Reproject)`. Véase también: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection
++ En QGIS, para los conjuntos de datos ráster, utilice la herramienta `Asignar proyección` del conjunto de herramientas `GDAL`, no la herramienta `Combar (Reproyectar)`. Véase también: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection
 
 
 + Desde la línea de comandos, para conjuntos de datos vectoriales, utilice `ogr2ogr` con el parámetro `-a_srs`, no con el parámetro `-t_srs`. Véase también:
@@ -350,10 +339,10 @@ Mercator es la única proyección cartográfica cilíndrica conforme. Las proyec
 :::{figure} /fig/qgis_mercator.jpg
 ---
 width: 75%
-name: qgis_mercator.jpg
+name: es_qgis_mercator.jpg
 align: center
 ---
-Proyección Mercator.
+La Proyección Mercator.
 :::
 
 Mercator agranda las zonas más alejadas del ecuador, pero al menos esta distorsión es la misma horizontal y verticalmente. Y es trivial calcular un factor de escala para corregir las medidas (véase también: https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor). 
@@ -366,20 +355,20 @@ __Solución:__
 
  Redefinir el sistema de coordenadas, redefinir, es decir, cambiar el sistema de coordenadas pero no las coordenadas, al sistema de coordenadas correcto.
 
-1. Abra su `Project`: abra el proyecto de QGIS en el que desea redefinir el sistema de coordenadas.
+1. Abra su `Proyecto`: abra el proyecto de QGIS en el que desea redefinir el sistema de coordenadas.
 
-2. Acceda a `Project Properties`: vaya a `Project menu` en la parte superior de la ventana de QGIS y seleccione `Properties`. También puede presionar `Ctrl + Shift + P` como un atajo.
+2. Acceda a `Propriedades`: vaya a `Project menu` en la parte superior de la ventana de QGIS y seleccione `Propriedades`. También puede presionar `Ctrl + Shift + P` como un atajo.
 
 3. Pestaña Sistema de coordenadas: en la ventana `Project Properties`, seleccione la pestaña Sistema de coordenadas.
 
 4. Cambie el sistema de coordenadas: aquí puede seleccionar un nuevo sistema de coordenadas para su proyecto. Puede buscar un sistema de coordenadas específico utilizando la barra de búsqueda, o puede navegar por la lista de los sistemas de coordenadas disponibles.
 
-Aplicar cambios: Una vez seleccionado el sistema de coordenadas deseado, haga clic en `OK` para aplicar los cambios. QGIS reproyectará las capas de su proyecto para que coincidan con el nuevo sistema de coordenadas.
+Aplicar cambios: Una vez seleccionado el sistema de coordenadas deseado, haga clic en `Aceptar` para aplicar los cambios. QGIS reproyectará las capas de su proyecto para que coincidan con el nuevo sistema de coordenadas.
 
 :::{figure} /fig/en_qgis_redefining_CRS01.png
 ---
 width: 80%
-name: en_qgis_redefining_CRS01
+name: es_qgis_redefining_CRS01
 align: center
 ---
 Redefinir los SRC.
@@ -391,7 +380,7 @@ Vuelva a revisar la parte inferior derecha de la ventana de QGIS, donde se indic
 :::{figure} /fig/en_qgis_redefining_CRS02.png
 ---
 width: 80%
-name: en_qgis_redefining_CRS02
+name: es_qgis_redefining_CRS02
 align: center
 ---
 Comprobar la redefinición del SRC.
@@ -462,7 +451,7 @@ Puede ejecutar este código de ejemplo usted o utilizar este formulario:
 
 + Si las coordenadas mínimas X/Y son cero y las máximas X/Y son positivas, es posible que el conjunto de datos se haya exportado desde un software no geoespacial, como Photoshop, Illustrator o Inkscape. Esto es especialmente probable si el conjunto de datos aparece invertido verticalmente, ya que esos editores suelen tener el eje Y aumentado hacia abajo. Tendrá que georreferenciar manualmente el conjunto de datos para utilizarlo, lo que cambia tanto las coordenadas como el sistema de coordenadas.
 
-Véase también la siguiente [__Página_Wiki__](../Wiki/es_qgis_projections_wiki.md) sobre `Projections`.
+Véase también la siguiente [__Página_Wiki__](../Wiki/es_qgis_projections_wiki.md) sobre `Proyecciones`.
 
 
 ## ¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!
@@ -472,7 +461,7 @@ Es probable que su conjunto de datos tenga un sistema de coordenadas geográfica
 :::{figure} /fig/qgis_wrong-gcs.png
 ---
 width: 75%
-name: qgis_wrong-gcs.png
+name: es_qgis_wrong-gcs.png
 align: center
 name: Offset because of wrong GCS
 ---
@@ -507,7 +496,7 @@ Estructura de carpetas estándar recomendada:
 :::{figure} /fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 75%
-name: Standard_project_folder_structure.drawio.svg
+name: es_Standard_project_folder_structure.drawio.svg
 align: center
 ---
 Estructura de carpetas estándar. Fuente: HeiGIT
@@ -518,9 +507,8 @@ Cómo podría verse en su PC:
 :::{figure} /fig/en_qgis_folder_structure_pc.png
 ---
 width: 75%
-name: en_qgis_folder_structure_pc.png
+name: es_qgis_folder_structure_pc.png
 align: center
-name: Standard folder structure on your PC
 ---
 Estructura de carpetas estándar en su PC.
 :::
@@ -537,18 +525,18 @@ Los datos de capa utilizados en el proyecto no se guardan en el archivo de proye
 Una buena organización de los datos con una estructura de carpetas fija y bien elaborada evita tales problemas.
 :::
 
-Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/blob/main/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md) para `How to create a new QGIS project` y `How to open an existing QGIS project`.
+Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/blob/main/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md) para entender como crear un nuevo proyecto y abrir un proyecto.
 
 ## Problemas específicos de QGIS
 ### Configuración básica > Desactivar la selección automática de la proyección
 Después de instalar QGIS, deben modificarse algunos ajustes básicos para evitar posibles fuentes de error.
 Si un archivo de capas no tiene una proyección, deberá definirse una proyección para este cuando se importe a QGIS. Al desactivar la selección automática de la proyección, esta puede definirse manualmente. Esto evita que las capas se encuentren en la proyección equivocada accidentalmente.
 
-1. Seleccione la pestaña `Settings`.
-2. A continuación, en el menú de navegación active `Options`.
-3. En la ventana emergente, seleccione `CRS Handling`.
-4. En `CRS for projects` active `Use CRS from first layer added`.
-5. Y en `CRS for layers` active `Prompt for CRS`.
+1. Seleccione la pestaña `Configuración`.
+2. A continuación, en el menú de navegación active `Opciones`.
+3. En la ventana emergente, seleccione `Manejo de SRC`.
+4. En `SRC para proyectos` active `Usar SRC de la primera capa añadida`.
+5. Y en `SRC para capas` active `Preguntar SRC`.
 
 :::{figure} /fig/en_qgis_CRS_settings.png
 ---
@@ -563,7 +551,7 @@ Cambiar la configuración del SRC en QGIS.
 Lamentablemente, los programas de SIG son conocidos por congelarse o fallar por completo. Aunque existe una tendencia a reducir las complicaciones con un mejor hardware, incluso una “computadora para videojuegos” que cuesta varios miles de dólares no es completamente segura.
 Las tareas más complejas, con tiempos de cálculo más largos, pueden seguir causando problemas. Por ello, se recomienda guardar con regularidad.
 
-Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/content/es/Wiki/es_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.`
+Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/content/es/Wiki/es_qgis_interface_wiki.html#save-open-qgis-projects).
 
 ### Aplicaciones GRASS
 
