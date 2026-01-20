@@ -5,7 +5,7 @@ __🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 ## Selección manual
 
-- En la barra de herramientas, seleccione la herramienta ![](/fig/selection_toolbar_feature_selection.png) `Select Features`.
+- En la barra de herramientas, seleccione la herramienta ![](/fig/selection_toolbar_feature_selection.png) `Seleccionar objetos espaciales`.
 - Seleccione las entidades de forma individual haciendo clic sobre cada entidad.
 - Para seleccionar varias entidades, puede mantener pulsado <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> en MacOS) y seleccionar una entidad tras otra.
 - Las entidades seleccionadas aparecerán resaltadas en amarillo brillante.
@@ -21,7 +21,7 @@ __🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 ## Seleccionar por ubicación
 
-- QGIS permite seleccionar entidades basándose en su ubicación utilizando la herramienta `Select by Location`.
+- QGIS permite seleccionar entidades basándose en su ubicación utilizando la herramienta `Seleccionar por localización`.
 - La herramienta utiliza consultas espaciales para seleccionar las entidades. Estas analizan las relaciones espaciales entre un conjunto de entidades.
 - Por ejemplo, dos entidades pueden intersecarse, o una entidad puede estar completamente contenida dentro de otra, o dos entidades pueden no tocarse entre sí (no interseca).
 - QGIS utiliza las siguientes relaciones espaciales: Intersecar, contiene, no interseca, igual, toca, superpuesta, dentro de y cruza.
@@ -41,5 +41,5 @@ __🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 ## Exportar selección
 
 - Una vez seleccionadas, puede seguir manipulando las entidades, por ejemplo, exportándolas a una nueva capa:
-    - <kbd>Haga clic derecho </kbd> sobre la capa con las entidades seleccionadas -> `Export` -> `Save selected features as..`
+    - Haga <kbd>clic derecho </kbd> sobre la capa con las entidades seleccionadas → `Exportar` → `Guardar objetos seleccionados como...`
 

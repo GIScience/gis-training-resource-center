@@ -23,9 +23,9 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 :::
 
 ## Recorte
-- Con la herramienta ![](/fig/mAlgorithmClip.png) `Clip` se puede extraer y conservar la extensión espacial de una capa vectorial en función de los límites de otra capa.
-- `Input Layer`: se refiere a la capa __específica que se va a recortar__, por ejemplo, una red vial.
-- `Overlay Layer`: por ejemplo, una capa de polígonos de la región (por ejemplo, las fronteras de Heidelberg).
+- Con la herramienta ![](/fig/mAlgorithmClip.png) `Cortar` se puede extraer y conservar la extensión espacial de una capa vectorial en función de los límites de otra capa.
+- `Capa de entrada`: se refiere a la capa __específica que se va a recortar__, por ejemplo, una red vial.
+- `Capa de superposición`: por ejemplo, una capa de polígonos de la región (por ejemplo, las fronteras de Heidelberg).
 
 :::{dropdown} Ejemplo: Extraer la red ferroviaria de Alemania
 :open:
@@ -33,7 +33,7 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 :::
 
 ## Disolver
-- La herramienta ![](/fig/mAlgorithmDissolve.png) `dissolve` agrega geometrías con los mismos valores de atributo.
+- La herramienta ![](/fig/mAlgorithmDissolve.png) `Disolver` agrega geometrías con los mismos valores de atributo.
 - Cuando dos o más áreas buffer se superponen, se pueden combinar usando disolver.
 
 :::{dropdown} Ejemplo: Extraer la red ferroviaria de Alemania
@@ -47,12 +47,12 @@ En QGIS, solo los atributos seleccionados para la operación de disolución reci
 
 ## Intersección
 
-La herramienta ![](/fig/intersection_icon.png) `intersection` extrae la parte de las capas que se superponen.
+La herramienta ![](/fig/intersection_icon.png) `Intersección` extrae la parte de las capas que se superponen.
 
-1. En la barra superior, navegue a `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Buscar `Intersection`
-2. `Input layer`: seleccione la capa uno
-3. `Overlay layer`: seleccionar la capa dos
-4. `Intersection`: Especifique dónde desea guardar los resultados y asígnele un buen nombre
+1. En la barra superior, navegue a `Vectorial` → `Geoprocessing Tool` → `Intersección` o busca `Intersección` en la 
+2. `Capa de entrada`: seleccione la capa uno
+3. `Capa de superposición`: seleccionar la capa dos
+4. `Intersección`: Especifique dónde desea guardar los resultados y asígnele un buen nombre
 
 :::{Note}
 * El orden de la capa de entrada y la capa de superposición no importa aquí
@@ -63,9 +63,9 @@ La herramienta ![](/fig/intersection_icon.png) `intersection` extrae la parte de
 :::{figure} /fig/Intersect_concept_2.png
 ---
 width: 500px
-name: Intersect_concept_2
+name: es_Intersect_concept_2
 ---
-`Intersection` Operación entre una capa de entrada de dos entidades y una sola capa de superposición de entidades (izquierda): las entidades resultantes se mueven para mayor claridad (derecha). Fuente: GISGeography.com
+`Intersección` Operación entre una capa de entrada de dos entidades y una sola capa de superposición de entidades (izquierda): las entidades resultantes se mueven para mayor claridad (derecha). Fuente: GISGeography.com
 :::
 
 :::{dropdown} Ejemplo: Intersección de países con zonas horarias
@@ -74,11 +74,11 @@ name: Intersect_concept_2
 
 ## Centroides
 
-Con la herramienta ![](/fig/qgis_3.40_centroids.png) `Centroids`, puede crear una nueva capa con puntos en el centro de cada polígono.
+Con la herramienta ![](/fig/qgis_3.40_centroids.png) `Centroides`, puede crear una nueva capa con puntos en el centro de cada polígono.
 
-1. En la barra superior, navegue a `Vector` -> `Geometry Tools` -> `Centroids`. Alternativamente, busque `Centroids` en la [caja de herramientas de procesos]. Abra la herramienta <kbd>haciendo doble clic</kbd>.
-2. `Input layer`: seleccione la capa de polígonos
-3. Haga clic en `Run`.
+1. En la barra superior, navegue a `Vectorial` → `Geometry Tools` → `Centroides`. Alternativamente, busque `Centroides` en la [caja de herramientas de procesos]. Abra la herramienta <kbd>haciendo doble clic</kbd>.
+2. `Capa de entrada`: seleccione la capa de polígonos
+3. Haga clic en `Ejecutar`.
 4. La nueva capa se agregará a su proyecto.
 
 

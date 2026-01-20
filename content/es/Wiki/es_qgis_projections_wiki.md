@@ -15,11 +15,11 @@ El código SRC/EPSG predeterminado de cada proyecto de QGIS es el World Geodetic
 Verificar y modificar el código SRC o el código EPSG es lo primero que se debería hacer al iniciar un nuevo proyecto de QGIS.
 :::
 
-1. Abrir un proyecto QGIS
+1. Abrir un proyecto QGIS.
 2. En la esquina inferior derecha de QGIS encontrará el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para obtener más información, haga clic en el botón.
 ![](/fig/EPSG_Code.png)
-3. Se abrirá la ventana `Project Properties`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
-4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Apply`.
+3. Se abrirá la ventana `Propriedades del proyecto`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
+4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Aplicar`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
@@ -36,21 +36,21 @@ Después de cargar cualquier dato espacial en QGIS, verifique el código SRC/EPS
 
 ## Modificación de la proyección cartográfica de una capa vectorial
 
-1. `Vector` Tabulador -> `Data Management Tools` -> `Reproject Layer`
+1. `Vectorial` → `Data Management Tools` → `Reproyectar Capa`
 2. Seleccione el código SRC/EPSG de destino.
-3. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reprojected`, especifique en el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Run`
+3. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectado`, especifique en el nombre del archivo y la ubicación donde desea guardarlo.
+5. Haga clic en `Ejecutar`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
 
 ## Modificación de la proyección cartográfica de una capa ráster
 
-1. `Raster` Tabulador -> `Projections` -> `Warp (Reproject)`
+1. `Ráster` → `Projections` → `Combar (Reproyectar)`.
 2. Seleccione el código SRC/EPSG de destino.
 3. Seleccione el método de remuestreo.
-4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reprojected`, especifique en el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Run`
+4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectado`, especifique en el nombre del archivo y la ubicación donde desea guardarlo.
+5. Haga clic en `Ejecutar`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 

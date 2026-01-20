@@ -156,7 +156,6 @@ Damos una cordial bienvenida a todas las personas que deseen contribuir y colabo
 :::{figure} /fig/Training_Somalia.JPG
 ---
 width: 800px
-name:
 ---
 
 :::

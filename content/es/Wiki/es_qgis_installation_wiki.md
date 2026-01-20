@@ -26,7 +26,7 @@ Desde QGIS 3.20, solo hay ejecutables de Windows de 64 bits.
 
 
 :::{Note}
-A partir de la versión 3.30 SAGA debe integrarse a través del [instalador del complemento](/content/es/Wiki/plugin).
+A partir de la versión 3.30 SAGA debe integrarse a través del [instalador del complemento](/content/es/Wiki/es_qgis_plugins_wiki.md).
 :::
 
 ## Consideraciones específicas de Linux

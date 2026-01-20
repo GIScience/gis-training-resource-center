@@ -13,13 +13,13 @@ Una de las prácticas recomendadas consiste en utilizar una __estructura de carp
 
 1. Copie la estructura de carpetas estándar para proyectos QGIS en el lugar donde desee almacenar todo el proyecto. Puede descargar la estructura de carpetas estándar [aqui](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
-2. Abra QGIS y cree un nuevo proyecto. Haga clic en `Project` -> `New Project`.
+2. Abra QGIS y cree un nuevo proyecto. Haga clic en `Proyecto` → `Nuevo proyecto`.
 
 ### Cree un nuevo proyecto en QGIS.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
-3. Guarde el nuevo proyecto en la carpeta `Project` en la estructura de carpetas estándar y ejecute un git push.
+3. Guarde el nuevo proyecto en la carpeta `Proyecto` en la estructura de carpetas estándar y ejecute un git push.
 4. Nombre su proyecto y haga clic en
 :::{Tip}
 No utilice espacios ` ` en el nombre; utilice siempre guiones bajos `_`.
@@ -30,7 +30,7 @@ No utilice espacios ` ` en el nombre; utilice siempre guiones bajos `_`.
 
 
 
-4. Compruebe el código del sistema de referencia de coordenadas (SRC)/EPSG del proyecto con el SRC/EPSG que desea utilizar. Para más información, consulte el artículo de la Wiki sobre [Proyección cartográfica](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
+4. Compruebe el código del sistema de referencia de coordenadas (SRC)/EPSG del proyecto con el SRC/EPSG que desea utilizar. Para más información, consulte el artículo de la Wiki sobre [Proyección cartográfica](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#cómo-verificar-el-código-epsgsrc-de-una-capadatos).
 
 ### Verifique y cambie el SRC/EPSG.
 
@@ -43,7 +43,7 @@ Una buena organización de los datos con una estructura de carpetas fija y bien 
 
 ## Abrir proyectos QGIS existentes
 
-Abra QGIS -> `Project` -> `Open` -> Seleccione su proyecto
+Abra QGIS → `Proyecto` → `Abrir` → Seleccione su proyecto.
 
 __Abrir proyecto QGIS__
 
@@ -62,7 +62,7 @@ La plantilla de estructura de carpetas puede descargarse [__aquí__](https://git
 ---
 width: 800px
 align: center
-name: Standard_project_folder_structure_wikki
+name: es_Standard_project_folder_structure_wikki
 ---
 Estructura de carpetas estándar. Fuente: HeiGIT
 :::

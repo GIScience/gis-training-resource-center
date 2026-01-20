@@ -12,9 +12,9 @@
 :::{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
-name: Add a new map
+name: es_Add a new map
 ---
-Añadir un nuevo mapa al diseño de impresión
+Añadir un nuevo mapa al diseño de impresión.
 :::
 
 :::: {tab-set}
@@ -39,9 +39,9 @@ El título deberá describir el fenómeno representado en el mapa.
 :::{figure} ../../fig/en_30.30.2_print_layout_add_text.png
 ---
 width: 750px
-name: Add text to the print layout
+name: es_ Add text to the print layout
 ---
-Añadir texto al diseño de impresión
+Añadir texto al diseño de impresión.
 :::
 
 :::{dropdown} Video: Añadir un cuadro de texto
@@ -53,11 +53,11 @@ Añadir texto al diseño de impresión
 
 Si trabaja para una organización, lo más probable es que añada el logotipo de esa organización en los mapas que elabore.
 
-1. Haga clic en `Add image` en la barra de herramientas de la izquierda.
+1. Haga clic en `Añadir imagen` en la barra de herramientas de la izquierda.
 2. Arrastre un rectángulo sobre el lienzo.
-3. En la pestaña `Item properties`, tendrá la opción de elegir una imagen SVG de su biblioteca SVG en QGIS o elegir una imagen __Ráster__. La mayoría de los archivos de imagen son imágenes ráster.
-4. Seleccione `Raster image` y haga clic en `...` para elegir la ubicación de la imagen.
-5. Su imagen aparecerá en el diseño de impresión. Para asegurarse de que la imagen no se distorsione, deje el `Resize Mode` en “Zoom”.
+3. En la pestaña `Propriedades del elemento`, tendrá la opción de elegir una imagen SVG de su biblioteca SVG en QGIS o elegir una imagen __Ráster__. La mayoría de los archivos de imagen son imágenes ráster.
+4. Seleccione `Imagen ráster` y haga clic en `...` para elegir la ubicación de la imagen.
+5. Su imagen aparecerá en el diseño de impresión. Para asegurarse de que la imagen no se distorsione, deje el `Modo de redimensionado` en “Zoom”.
 
 :::{dropdown}
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
@@ -75,15 +75,15 @@ Para añadir una leyenda, puede utilizar el botón __Añadir leyenda__ de la __b
 :::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
 ---
 width: 750px
-name: Add a legend to the print layout
+name: es_Add a legend to the print layout
 ---
-Añadir una leyenda al diseño de impresión
+Añadir una leyenda al diseño de impresión.
 :::
 
 En el panel de __Propiedades de elementos__, si mantiene la opción __Actualización automática__ marcada, las nuevas capas añadidas a su proyecto se añadirán automáticamente a la leyenda, pero no podrá controlarlas individualmente (renombrarlas si es necesario, reordenarlas o eliminar elementos). 
 Una vez desmarcada la opción, podrá actualizar el nombre de las capas, agruparlas, eliminarlas o reorganizarlas, etc.
 
-Si tiene demasiados elementos en su leyenda y no caben horizontalmente en el mapa, también puede dividir la leyenda en varias columnas si navega por el panel `Item Properties`, amplía la sección `Columns` y aumenta el __recuento__.
+Si tiene demasiados elementos en su leyenda y no caben horizontalmente en el mapa, también puede dividir la leyenda en varias columnas si navega por el panel `Propriedades del elemento`, amplía la sección `Columnas` y aumenta el __recuento__.
 
 :::: {tab-set}
 ::: {tab-item} Añadir una leyenda
@@ -116,7 +116,7 @@ Antes de añadir una barra de escala, seleccione su mapa principal y compruebe e
 :::{figure} ../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
-name: en_30.30.2_print_layout_scale_2
+name: es_30.30.2_print_layout_scale_2
 ---
 Asegúrese de que la escala sea un número redondo.
 :::
@@ -134,7 +134,7 @@ _Hay muchas otras opciones para personalizar la barra de escala (cambiar la fuen
 :::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
-name: en_30.30.2_print_layout_add_scale_bar_2
+name: es_30.30.2_print_layout_add_scale_bar_2
 ---
 Añadir y personalizar la barra de escala.
 :::
@@ -154,7 +154,7 @@ Para crear un mapa general, debe seguir estos pasos:
 2. __Inserte el mapa general__ en su diseño de impresión (en la esquina inferior derecha, por ejemplo).
 3. __Bloquee el nuevo mapa__ en el panel de propiedades del elemento.
 4. Añada un rectángulo para mostrar la extensión de su mapa principal.
-    1. Vaya a las __propiedades__ de su mapa principal > desplácese hacia abajo hasta que vea __Overviews__.
+    1. Vaya a las __propiedades__ de su mapa principal → desplácese hacia abajo hasta que vea __Overviews__.
     2. Haga clic en __“+” el icono__ y añada una visión general.
     3. __Vincule el mapa principal__ seleccionándolo en la opción __“Marco del mapa”__.
 
@@ -162,7 +162,7 @@ Para crear un mapa general, debe seguir estos pasos:
 :::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
-name: en_30.30.2_print_layout_overview_map_preparations_2
+name: es_30.30.2_print_layout_overview_map_preparations_2
 ---
 Un mapa general debe mostrar los puntos de referencia y las fronteras importantes.
 :::
@@ -170,18 +170,18 @@ Un mapa general debe mostrar los puntos de referencia y las fronteras importante
 :::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
-name: en_30.30.2_print_layout_add_overview_map_2
+name: es_30.30.2_print_layout_add_overview_map_2
 ---
-Añadir un mapa general y __bloquear las capas__
+Añadir un mapa general y __bloquear las capas__.
 :::
 
 
 :::{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
 ---
 width: 750px
-name: en_30.30.2_print_layout_add_map_extent_overview_map_2
+name: es_30.30.2_print_layout_add_map_extent_overview_map_2
 ---
-Añadir la extensión del mapa principal al mapa general (el rectángulo rojo de la vista general)
+Añadir la extensión del mapa principal al mapa general (el rectángulo rojo de la vista general).
 :::
 
 :::{dropdown} Video: Configurar un mapa general
@@ -198,11 +198,11 @@ Este método requiere la certeza de que no se modificará el mapa general, ya qu
 
 Una vez que haya terminado con la composición del mapa, es el momento de exportar el diseño de impresión como archivo PDF o SVG.
 
-1. En la barra de herramientas, haga clic en el botón `Export as PDF`.
+1. En la barra de herramientas, haga clic en el botón `Exportar como PDF`.
 2. Asigne un nombre nuevo al archivo y seleccione la ubicación en la que quiere guardarlo.
-3. Haga clic en `Save`.
+3. Haga clic en `Guardar`.
 4. Se abrirá una nueva ventana "Opciones de exportación de PDF”. Aquí puede ajustar el algoritmo de compresión. Para obtener los mejores resultados, seleccione la compresión de imagen sin pérdida.
-5. Haga clic en `Save` de nuevo.
+5. Haga clic en `Guardar` de nuevo.
 6. Aparecerá una nueva barra verde, debajo de las barras de herramientas. Haga clic en el enlace del archivo para __revisar el mapa exportado__.
 
 :::{note}
@@ -217,7 +217,7 @@ Asegúrese de comprobar el mapa, después de exportar el PDF, ya que algunos ele
 
 1. Cuando esté satisfecho con el diseño de su mapa, haga clic en el símbolo ![](../../fig/en_30.30.2_save_as_template.png) para guardarlo como nueva plantilla.
 2. Elija la ubicación en la que desea guardarla. Lo ideal es elegir el directorio de plantillas (consulte el consejo).
-3. Haga clic en `Save`.
+3. Haga clic en `Guardar`.
 4. Puede abrir la plantilla arrastrándola a un proyecto QGIS.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
@@ -229,9 +229,9 @@ Asegúrese de comprobar el mapa, después de exportar el PDF, ya que algunos ele
 
 Puede arrastrar y soltar archivos de plantillas (`.qpt`, archivo de plantilla QGIS) en QGIS o utilizar el __gestor de diseños__.
 
-1. Abra el gestor de diseño en `Layout` > `Layout Manager`.
-2. Vaya a la sección “__Nueva desde la plantilla__”.
-3. Elija `Specific` y seleccione la ubicación donde guardó su plantilla.
+1. Abra el gestor de diseño en `Diseño` → `Layout Manager`.
+2. Vaya a la sección "__Nuevo usando plantilla__”.
+3. Elija `Especifico` y seleccione la ubicación donde guardó su plantilla.
 4. Haga clic en Abrir.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
@@ -269,7 +269,7 @@ Un atlas generará una nueva página, con el mismo diseño de mapa para cada ent
 4. Seleccione la página __Nombre de la página__. Debe ser el nombre del distrito o localidad subnacional que aparece en esa página. Para mostrar el nombre del distrito, elegiremos `ADM1_REF`.
 5. Ahora vamos a añadir un mapa al diseño de impresión vacío.
 6. Haga clic en el mapa y navegue hasta la ventana __Propiedades de la capa__ a la derecha.
-7. Desplácese hacia abajo hasta que vea la opción `Controlled by Atlas` y actívela.
+7. Desplácese hacia abajo hasta que vea la opción `Controlado por Atlas` y actívela.
 8. Ahora, active la vista previa del atlas en la __barra de herramientas del atlas__. De lo contrario, el diseño de impresión no se actualizará para mostrarle la página del atlas. Puede hacer clic en cada página para ver su aspecto. Dependiendo de la cantidad de entidades de su mapa, podrían tardar un poco en reproducirse.
 9. Ahora puede ajustar las __opciones de margen__ para adaptar mejor la legibilidad del mapa. Por defecto, está configurado al 10 %, lo que debería bastar para la mayoría de los propósitos.
 10. Antes de imprimir o exportar el atlas, asegúrese de verificar en cada página, que los otros elementos del mapa, no cubran la región representada.
@@ -286,6 +286,6 @@ Por ahora, el único elemento del diseño de impresión controlado por el atlas 
 
 ### Configurar mapas de visión general con un atlas
 
-La configuración de mapas de visión general con un atlas funciona de la misma manera que la configuración para un mapa normal. Siempre que seleccione el mapa controlado por el atlas como `map frame`, se actualizará automáticamente.
+La configuración de mapas de visión general con un atlas funciona de la misma manera que la configuración para un mapa normal. Siempre que seleccione el mapa controlado por el atlas como `Marco`, se actualizará automáticamente.
 
 

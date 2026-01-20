@@ -83,7 +83,8 @@ Se invita a los colaboradores a subir videos con guías paso a paso, cuando sea 
 Siga estas directrices para nombrar los archivos y estructurar los directorios:
 
 - __Nomenclatura:__ Elija nombres descriptivos. Asegúrese de que los ejercicios estén numerados correctamente (p. ej.: `module_#_ex#_title`). El número del ejercicio deberá ser el siguiente número disponible
-- __Estructura de la carpeta:__ Asegúrese de que los datos del ejercicio sigan la [estructura correcta de las carpetas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#standard-folder-structure) y estén comprimidos correctamente (evite anidar las carpetas excesivamente, ya que esto puede provocar problemas al descomprimirlas)
+- __Estructura de la carpeta:__ Asegúrese de que los datos del ejercicio sigan la [estructura correcta de las carpetas](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#estructura-de-carpetas-estándar) y estén comprimidos correctamente (evite anidar las carpetas excesivamente, ya que esto puede provocar problemas al descomprimirlas)
+
 - __Idioma y versión de QGIS:__ incluya siempre la versión de QGIS y el idioma en los nombres de los archivos.
 - __Imágenes:__ todas las imágenes y estadísticas deben guardarse en la carpeta `/fig/`.
     - Las imágenes comunes y generales solo deben tener un título breve e informativo.
@@ -196,13 +197,13 @@ LEYENDA DE LA IMAGEN
 - __Normas para el formato de texto:__
     - Cuando describa un proceso, utilice números. Por ejemplo:
         ```
-        1. Haga clic con el botón derecho en la capa “ML1_IPC_Index” -> `Attribute Table`-> haga clic en [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campo
-        2. Marque la opción `Create new field`
+        1. Haga clic con el botón derecho en la capa “ML1_IPC_Index” → `Abrir tabla de atributos` → haga clic en [`Calculadora de campos`](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campo
+        2. Marque la opción `Crear nuevo campo`.
         3. `Output field name`: Nombre la nueva columna “Trigger_activation”
         4. `Result field type`: Texto (cadena)
         ```
-    - __Toda la superficie en la que se pueda hacer clic debe escribirse como fragmento de código, p. ej.: `Attribute Table`__
-    - Si se utiliza un icono especial en QGIS, colóquelo junto a los fragmentos de código, p. ej.: `Field Calculator` ![](/fig/icon_scratch_layer.png).
-    - Si es necesario seleccionar una opción, escriba el nombre de la superficie de clic, en el fragmento de código y la opción, como texto normal, por ej.:`Result field type`: Texto (cadena)
-    - Si el nombre de un archivo debe escribirse de una forma determinada, utilice comillas, p. ej.:`Output field name`: Nombre la nueva columna “Trigger_activation”
+    - __Toda la superficie en la que se pueda hacer clic debe escribirse como fragmento de código, p. ej.: `Tabla de atributos`__.
+    - Si se utiliza un icono especial en QGIS, colóquelo junto a los fragmentos de código, p. ej.: `Calculadora de campo` ![](/fig/icon_scratch_layer.png).
+    - Si es necesario seleccionar una opción, escriba el nombre de la superficie de clic, en el fragmento de código y la opción, como texto normal, por ej.:`Tipo del campo de salida`: Texto (cadena).
+    - Si el nombre de un archivo debe escribirse de una forma determinada, utilice comillas, p. ej.:`Nombre del campo de salida`: Nombre la nueva columna “Trigger_activation”
     - Cuando los participantes deban utilizar una herramienta o una funcionalidad, que no esté descrita detalladamente en su guía paso a paso actual, añada tanto el enlace al nombre de la herramienta, por ej.: [arrastrar y soltar](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) o el use algo como el [mapa base de la Wiki](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_basemaps_wiki.html) y donde sea lógico, añada el enlace al video de la Wiki correspondiente.

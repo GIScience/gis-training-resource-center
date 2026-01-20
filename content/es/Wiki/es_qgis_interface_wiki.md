@@ -124,7 +124,7 @@ Si alguna vez necesita encontrar una herramienta o un algoritmo, abra la caja de
 
 ### Abrir la caja de herramientas
 
-Para abrir la Caja de herramientas en QGIS, haga clic en el botón de la rueda dentada. O haga clic en `Processing` -> `Toolbox`
+Para abrir la Caja de herramientas en QGIS, haga clic en el botón de la rueda dentada. O haga clic en `Procesos` → `Caja de herramientas de Procesos`.
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 
@@ -141,9 +141,9 @@ Para evitar una interfaz sobrecargada, es conveniente activar las barras de herr
 
 
 
-Para agregar o eliminar barras de herramientas de su interfaz, haga clic en `View` -> `Toolbars` -> Marque o desmarque las casillas de la caja de herramientas que desee agregar o eliminar
+Para agregar o eliminar barras de herramientas de su interfaz, haga clic en `Ver` → `Barras de herramientas` → Marque o desmarque las casillas de la caja de herramientas que desee agregar o eliminar.
 
-Para añadir o eliminar paneles de su interfaz, haga clic en `View` -> `Panels` -> Marque o desmarque los paneles que desea agregar o eliminar
+Para añadir o eliminar paneles de su interfaz, haga clic en `Ver` → `Paneles` → Marque o desmarque los paneles que desea agregar o eliminar
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video>
 
@@ -160,17 +160,17 @@ En QGIS, los datos geográficos con los que trabaja __no__ se guardan en el arch
 
 ### Proyectos abiertos
 
-Para abrir un proyecto QGIS existente, haga clic en `Project` -> `Open…` -> Busque su proyecto y ábralo.
+Para abrir un proyecto QGIS existente, haga clic en `Proyecto` → `Abrir...` → Busque su proyecto y ábralo.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
 
 ### Guardar proyectos
 
-* __Cuando guarde por primera vez__: Para guardar el proyecto QGIS en el que está trabajando, haga clic en `Project` -> `Save as…`-> Vaya hasta la carpeta donde desea guardar el proyecto -> Nombre al proyecto -> `Save`
+* __Cuando guarde por primera vez__: Para guardar el proyecto QGIS en el que está trabajando, haga clic en `Proyecto` → `Guardar como...` → Vaya hasta la carpeta donde desea guardar el proyecto → Nombre al proyecto → `Guardar`.
 * __Cuando guarde el progreso__: Para guardar el progreso de un proyecto que ya se guardó en algún lugar del ordenador, existen dos buenas opciones:
-    * Utilice la tecla de acceso rápido `Ctrl`+ `G` en su teclado.
-    * Haga clic en `Project` -> `Save`.
+    * Utilice la tecla de acceso rápido <kbd>Ctrl</kbd> + <kbd>G</kbd> en su teclado.
+    * Haga clic en `Proyecto` → `Guardar`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
