@@ -74,7 +74,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -185,7 +185,6 @@ Definición de la entrada del modelo: Ráster de población
 :::{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Résultat intermédiaire de la définition des données d'entrée du modèle
@@ -202,7 +201,6 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
 :::{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coordenadas métrico (SRC/CRS) EPSG:29738
@@ -221,7 +219,6 @@ Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coo
 :::{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Generar un buffer de la capa de ciclón reproyectada.
@@ -238,10 +235,9 @@ Generar un buffer de la capa de ciclón reproyectada.
 :::{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
-Reprojectar el buffer al SRC EPSG:4326
+Reproyectar el buffer al SRC EPSG:4326
 :::
 8. **Recorte el ráster de población utilizando el área amortiguada.**
    - En el panel **Algorithms**, busque **Cortar ráster por capa de máscara**.
@@ -258,7 +254,6 @@ Reprojectar el buffer al SRC EPSG:4326
    :::{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Cortar la capa ráster de población para ajustarla al buffer del ciclón
@@ -275,11 +270,10 @@ Cortar la capa ráster de población para ajustarla al buffer del ciclón
       ```
       población_expuesta_suma
       ```
-   - Haga clic en `Ok` para añadir el paso al modelo.
+   - Haga clic en `Aceptar` para añadir el paso al modelo.
 :::{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Cálculo de la población expuesta a ciclones por distrito
@@ -302,11 +296,11 @@ Su modelo debería verse así. Todos los algoritmos están correctamente conecta
    - Esto ayuda a garantizar que el modelo esté completo y no se rompa durante la ejecución.
 
 11. **Ejecute el modelo**
-   - Ejecute el modelo haciendo clic en `Modelo` -> `Ejectar Modelo`
+   - Ejecute el modelo haciendo clic en `Modelo` → `Ejecutar Modelo`
    - Configure **Límites administrativos** en `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Configure **Trayectoria del ciclón** en `example_Harald_2025_Track`
    - Configure **Ráster de población** en `MDG_WorldPop_2020_constrained.tif`
-   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` -> `output`
+   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` → `output`
 
 
 Ahora puede ejecutar este modelo cada vez que esté disponible una nueva trayectoria de ciclón.
@@ -314,7 +308,6 @@ Ahora puede ejecutar este modelo cada vez que esté disponible una nueva trayect
 :::{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Para ejecutar el modelo, especifique la entrada tal y como se muestra en la imagen y defina el nombre de la casilla de salida.
@@ -324,7 +317,6 @@ Para ejecutar el modelo, especifique la entrada tal y como se muestra en la imag
 :::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 
@@ -342,18 +334,17 @@ align: center
 :::{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 :::
 
 13. **Ejecute el modelo otra vez**
-   - Ejecute el modelo haciendo clic en `Modelo` -> `Ejecutar Modelo`
+   - Ejecute el modelo haciendo clic en `Modelo` → `Ejecutar Modelo`
    - Configure **Límites administrativos** en `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Configure **Trayectoria del ciclón** en `example_Harald_2025_Track`
    - Configure **Ráster de población** en `MDG_WorldPop_2020_constrained.tif`
-   - Configure la salida del modelo **cyclone_harald_buffer** en `cyclone_harald_buffer`y guárdela en `data` -> `output`
-   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` -> `output`
+   - Configure la salida del modelo **cyclone_harald_buffer** en `cyclone_harald_buffer`y guárdela en `data` → `output`
+   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` → `output`
 
 
 :::::{tab-set}
@@ -364,7 +355,6 @@ align: center
 :::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 :::
