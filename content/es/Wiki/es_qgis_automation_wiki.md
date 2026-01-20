@@ -13,12 +13,12 @@ El diseñador de modelos es una herramienta visual que permite a los usuarios cr
 
 ### Uso del diseñador de modelos/Modelador gráfico
 
-- Abra la herramienta en `Processing` -> `Graphical Modeler`
+- Abra la herramienta en `Procesos` → `Diseñador de modelos`
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_opening_model_designer.mp4"></video>
 
-- Guarde el archivo del modelo en una carpeta de su elección haciendo clic en el botón ![](/fig/qgis_save_project_as.png) `Save model as` de la barra superior.
+- Guarde el archivo del modelo en una carpeta de su elección haciendo clic en el botón ![](/fig/qgis_save_project_as.png) `Guardar modelo como` de la barra superior.
 
-- Abra un modelo existente a través de `Model` -> `Open Model` y navegue hasta el archivo del modelo.
+- Abra un modelo existente a través de `Modelo` → `Abrir modelo` y navegue hasta el archivo del modelo.
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
 
 
@@ -34,7 +34,7 @@ Hay dos tipos de componentes del modelo que puede utilizar para crear flujos de 
 
 **Añadir entradas**
 
-- Puede añadir entradas al modelo a través de la pestaña `Inputs` situada a la izquierda de la ventana del diseñador de modelos, ya sea haciendo <kbd>doble clic</kbd> en ella o arrastrándola al lienzo del diseñador de modelos.
+- Puede añadir entradas al modelo a través de la pestaña `Entrada` situada a la izquierda de la ventana del diseñador de modelos, ya sea haciendo <kbd>doble clic</kbd> en ella o arrastrándola al lienzo del diseñador de modelos.
 - Una vez añadida, se abrirá una nueva ventana en la que podrá especificar la descripción de la entrada, que aparecerá como título, así como el tipo de geometría para los datos vectoriales y seleccionar si se trata de una entrada obligatoria u opcional para el flujo de trabajo.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_model_adding_inputs.mp4"></video>
@@ -42,35 +42,35 @@ Hay dos tipos de componentes del modelo que puede utilizar para crear flujos de 
 
 **Añadir pasos de procesamiento:**
 
-- En el panel `Algorithms`, a la izquierda de la ventana del diseñador de modelos, puede elegir pasos de procesamiento o algoritmos de la caja de herramientas de procesos de QGIS. Por ejemplo, la herramienta “buffer” para crear una zona de influencia en una red vial con radio de 500.
+- En el panel `Algoritmos`, a la izquierda de la ventana del diseñador de modelos, puede elegir pasos de procesamiento o algoritmos de la caja de herramientas de procesos de QGIS. Por ejemplo, la herramienta “buffer” para crear una zona de influencia en una red vial con radio de 500.
 - Para añadir un algoritmo, basta con <kbd>hacer doble clic en</kbd> él o arrastrarlo al lienzo del diseñado de modelos.
 - Una vez añadido, se abrirá la ventana de parámetros del algoritmo. Tendrá un aspecto similar al de la ventana normal de parámetros de ese algoritmo, con algunas excepciones:
-    1. Puede añadir una descripción
-    2. Debe definir `Input layer` como entrada del modelo o como salida de otro algoritmo del modelo.
+    1. Puede añadir una descripción.
+    2. Debe definir `Capa de entrada` como entrada del modelo o como salida de otro algoritmo del modelo.
     3. La salida del algoritmo puede definirse como salida del modelo introduciendo un nombre.
     - Pueden aparecer otras diferencias en función del algoritmo.
 
 :::{figure} /fig/en_qgis_3.40_model_adding_algorithms.png
 ---
 width: 500 px
-name: en_qgis_3.40_model_adding_algorithms
+name: es_qgis_3.40_model_adding_algorithms
 ---
 Página de parámetros del algoritmo “buffer” en el diseñador de modelos
 :::
 
-- Una vez configurados los parámetros, haga clic en `Ok`.
+- Una vez configurados los parámetros, haga clic en `Aceptar`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_model_adding_algorithms.mp4"></video>
 
 
 **Añadir más pasos de procesamiento**
 
-- Puede encadenar varios algoritmos seleccionando `Algorithm Output` para la `Input layer` y seleccionando una salida de un algoritmo anterior.
+- Puede encadenar varios algoritmos seleccionando `Salida del algoritmo` para la `Capa de entrada` y seleccionando una salida de un algoritmo anterior.
 
 :::{figure} /fig/en_qgis_3.40_model_adding_more_steps.png
 ---
 width: 500 px
-name: en_qgis_3.40_model_adding_more_steps
+name: es_qgis_3.40_model_adding_more_steps
 ---
 Seleccionar la salida del algoritmo “Algorithm Output” como capa de entrada para encadenar varios pasos de procesamiento.
 :::
@@ -82,14 +82,14 @@ Para ejecutar el modelo, haga clic en la flecha verde de la barra superior; se a
 
 Una vez que haya terminado de crear su flujo de trabajo, o si desea probar el resultado de su modelo, puede ejecutar el modelo. Esto realizará automáticamente todos los pasos de procesamiento ingresados en el modelador gráfico y creará capas en su proyecto de QGIS para las salidas definidas.
 
-- En la barra superior de la ventana del diseñador de modelos, haga clic en el botón ![](/fig/qgis_3.40_run_model.png) `Run model`.
+- En la barra superior de la ventana del diseñador de modelos, haga clic en el botón ![](/fig/qgis_3.40_run_model.png) `Ejecutar modelo`.
 - Se abrirá una nueva ventana; aquí es donde usted define qué capas de su proyecto de QGIS funcionarán como capas de entrada de su modelo.
-- Haga clic en `Run`. Una vez finalizado, las capas calculadas o procesadas aparecerán en su lienzo principal de QGIS.
+- Haga clic en `Ejecutar`. Una vez finalizado, las capas calculadas o procesadas aparecerán en su lienzo principal de QGIS.
 
 :::{figure} /fig/en_3.40_model_run_inputs.png
 ---
 width: 500 px
-name: en_3.40_model_run_inputs
+name: es_3.40_model_run_inputs
 ---
 Selección de las entradas antes de ejecutar el modelo.
 :::
