@@ -289,7 +289,7 @@ Clasificación graduada. Fuente: [Axis Maps](https://www.axismaps.com/guide/data
 :::{figure} /fig/classification_graduated_basic.png
 ---
 width: 900px
-name: classification_graduated_basic
+name: es_classification_graduated_basic
 align: center
 ---
 Clasificación graduada en QGIS 3.36.
