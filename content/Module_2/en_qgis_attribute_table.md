@@ -72,32 +72,32 @@ Opening the attribute table in QGIS 3.36
 :::{dropdown} Buttons of the attribute table
 :open:
 
-|Icon|Description|Purpose|Shortcut|
-|---|---|-----|---|
-| ![](/fig/mActionToggleEditing.png)|__Toggle editing mode__ | Enable editing functionalities|<kbd>Ctrl</kbd> + <kbd>E</kbd> |
-| ![](/fig/mActionMultiEdit.png)| Toggle multi-edit mode| Update multiple fields of many features          |  |
-|![](/fig/mActionSaveEdits.png)| __Save edits__| Save current modifications                        | |
-|![](/fig/mActionRefresh.png)| Reload the table  | | |
-|![](/fig/mActionNewTableRow.png)| Add feature | Add new geometry-less feature |  |
-|![](/fig/mActionDeleteSelectedFeatures.png)| Delete selected features| Remove selected features from the layer|  |
-|![](/fig/mActionEditCut.png)| Cut selected features to clipboard    |  | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
-|![](/fig/mActionCopySelected.png)| Copy selected features to clipboard   |   | <kbd>Ctrl</kbd> + <kbd>C</kbd>      |
-|![](/fig/mActionEditPaste.png)| Paste features from clipboard| Insert new features from copied ones | <kbd>Ctrl</kbd> + <kbd>V</kbd> |
-|![](/fig/mIconExpressionSelect.png)| Select features using an Expression|| | 
-|![](/fig/mActionSelectAll.png)| Select All| Select all features in the layer| <kbd>Ctrl</kbd> + <kbd>A</kbd>     |
-|![](/fig/mActionInvertSelection.png)| Invert selection| Invert the current selection in the layer | <kbd>Ctrl</kbd> + <kbd>R</kbd> |
-|![](/fig/mActionDeselectActiveLayer.png)| Deselect all| Deselect all features in the current layer| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> |
-|![](/fig/mActionFilterMap.png)|Filter/Select features using form     | | <kbd>Ctrl</kbd> + <kbd>F</kbd> |
-|![](/fig/mActionSelectedToTop.png)| Move selected to top| Move selected rows to the top of the table|  |
-|![](/fig/mActionPanToSelected.png)| Pan map to the selected rows|  | <kbd>Ctrl</kbd> + <kbd>P</kbd> |
-|![](/fig/mActionZoomToSelected.png)| Zoom map to the selected rows | | <kbd>Ctrl</kbd> + <kbd>J</kbd>     |
-|![](/fig/mActionNewAttribute.png)| New field | Add a new field to the data source | <Kbd>Ctrl</kbd> + <kbd>W</kbd>  |
-|![](/fig/mActionDeleteAttribute.png)| Delete field  | Remove a field from the data source | |
-|![](/fig/mActionEditTable.png)| Organize columns | Show/hide fields from the attribute table||
-|![](/fig/mActionCalculateField.png)| __Open field calculator__| Update field for many features in a row | <kbd>Ctrl</kbd> + <kbd>I</kbd>      |
-|![](/fig/mActionConditionalFormatting.png)| Conditional formatting | Enable table formatting| |
-|![](/fig/dock.png)| Dock attribute table | Allows to dock or undock the attribute table||
-|![](/fig/mAction.png)| Actions | Lists the actions related to the layer           | |
+| Icon                                        | Description                         | Purpose                                      | Shortcut                                          |
+|---------------------------------------------|-------------------------------------|----------------------------------------------|---------------------------------------------------|
+| ![](/fig/mActionToggleEditing.png)          | __Toggle editing mode__             | Enable editing functionalities               | <kbd>Ctrl</kbd> + <kbd>E</kbd>                    |
+| ![](/fig/mActionMultiEdit.png)              | Toggle multi-edit mode              | Update multiple fields of many features      |                                                   |
+| ![](/fig/mActionSaveEdits.png)              | __Save edits__                      | Save current modifications                   |                                                   |
+| ![](/fig/mActionRefresh.png)                | Reload the table                    |                                              |                                                   |
+| ![](/fig/mActionNewTableRow.png)            | Add feature                         | Add new geometry-less feature                |                                                   |
+| ![](/fig/mActionDeleteSelectedFeatures.png) | Delete selected features            | Remove selected features from the layer      |                                                   |
+| ![](/fig/mActionEditCut.png)                | Cut selected features to clipboard  |                                              | <kbd>Ctrl</kbd> + <kbd>X</kbd>                    |
+| ![](/fig/mActionCopySelected.png)           | Copy selected features to clipboard |                                              | <kbd>Ctrl</kbd> + <kbd>C</kbd>                    |
+| ![](/fig/mActionEditPaste.png)              | Paste features from clipboard       | Insert new features from copied ones         | <kbd>Ctrl</kbd> + <kbd>V</kbd>                    |
+| ![](/fig/mIconExpressionSelect.png)         | Select features using an Expression |                                              |                                                   |
+| ![](/fig/mActionSelectAll.png)              | Select All                          | Select all features in the layer             | <kbd>Ctrl</kbd> + <kbd>A</kbd>                    |
+| ![](/fig/mActionInvertSelection.png)        | Invert selection                    | Invert the current selection in the layer    | <kbd>Ctrl</kbd> + <kbd>R</kbd>                    |
+| ![](/fig/mActionDeselectActiveLayer.png)    | Deselect all                        | Deselect all features in the current layer   | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> |
+| ![](/fig/mActionFilterMap.png)              | Filter/Select features using form   |                                              | <kbd>Ctrl</kbd> + <kbd>F</kbd>                    |
+| ![](/fig/mActionSelectedToTop.png)          | Move selected to top                | Move selected rows to the top of the table   |                                                   |
+| ![](/fig/mActionPanToSelected.png)          | Pan map to the selected rows        |                                              | <kbd>Ctrl</kbd> + <kbd>P</kbd>                    |
+| ![](/fig/mActionZoomToSelected.png)         | Zoom map to the selected rows       |                                              | <kbd>Ctrl</kbd> + <kbd>J</kbd>                    |
+| ![](/fig/mActionNewAttribute.png)           | New field                           | Add a new field to the data source           | <Kbd>Ctrl</kbd> + <kbd>W</kbd>                    |
+| ![](/fig/mActionDeleteAttribute.png)        | Delete field                        | Remove a field from the data source          |                                                   |
+| ![](/fig/mActionEditTable.png)              | Organize columns                    | Show/hide fields from the attribute table    |                                                   |
+| ![](/fig/mActionCalculateField.png)         | __Open field calculator__           | Update field for many features in a row      | <kbd>Ctrl</kbd> + <kbd>I</kbd>                    |
+| ![](/fig/mActionConditionalFormatting.png)  | Conditional formatting              | Enable table formatting                      |                                                   |
+| ![](/fig/dock.png)                          | Dock attribute table                | Allows to dock or undock the attribute table |                                                   |
+| ![](/fig/mAction.png)                       | Actions                             | Lists the actions related to the layer       |                                                   |
 
 :::
 
@@ -139,7 +139,7 @@ Attribute table sorted descendingly.
 
 You can zoom in on a specific feature if you need to locate it geographically or you want to get a closer look: 
 
-1. __Zoom:__ Right click on a feature --> `Zoom To Feature`
+1. __Zoom:__ Right click on a feature → `Zoom To Feature`.
 2. Close your attribute table. The map canvas will now show the selected feature. 
 
 :::{dropdown} Video: Zoom in on a feature
@@ -193,7 +193,7 @@ Screenshot of how to zoom to Selection by clicking right.
 
 After you have selected your data, you might want to proceed with only the 
 selection. You can save your selection as a new layer. To do so right click on the 
-layer - `Export` -> `Save only selected features`
+layer → `Export` → `Save only selected features`.
 
 :::{figure} /fig/en_save_selection.png
 ---
@@ -214,7 +214,6 @@ We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases.
 If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
 
 :::
-
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 
@@ -242,7 +241,7 @@ The attribute table is a tabular representation of the non‑spatial (or descrip
 3. __How do you zoom to a specific feature using the attribute table?__
 
 :::{dropdown} Answer
-- Within the attribute table, you can right‑click on a feature’s row (or in a cell) and choose “Zoom to Feature”. That changes the map view to focus on that feature.
+- Within the attribute table, you can right‑click on a feature’s row (or in a cell) and choose "Zoom to Feature". That changes the map view to focus on that feature.
 :::
 
 4. __Describe how to manually select features via the attribute table, and how to show only selected or unselected features.__
@@ -258,7 +257,7 @@ __Showing only selected or unselected features:__
   - __Show Selected Features__
   - __Show Unselected Features__
   - Other filters: Show features visible in map, Show edited and new features, etc. 
-- You can also use the ![](/fig/qgis_3.40_move_selection_to_top.png) `Move selected features to the top`-button in the attribute table toolbar
+- You can also use the ![](/fig/qgis_3.40_move_selection_to_top.png) `Move selected features to the top`-button in the attribute table toolbar.
 :::
 
 5. __Once you have selected a subset of features, how do you save just those features into a new layer (or file)?__

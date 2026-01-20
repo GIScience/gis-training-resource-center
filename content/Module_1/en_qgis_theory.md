@@ -321,14 +321,14 @@ GIS (Geographic Information System) is a system for capturing, manipulating, ana
 :::{dropdown} Answer
 Spatial analysis is the process of examining geographic (spatial) data to detect patterns, relationships, trends, and spatial structures. It involves operations like overlay, buffering, proximity, clustering, interpolation, and assessing how phenomena vary across space.
 
-In 1854, Dr. John Snow mapped the locations of cholera deaths in London (Soho district) alongside the locations of water pumps. He noticed that the cholera cases clustered around one particular pump (on Broad Street). Because there was a spatial clustering around that pump, he hypothesized that the water from that pump was the source of the outbreak. He then convinced authorities to remove the pump handle, after which the outbreak declined. In effect, he used spatial distribution and clustering of disease incidents to infer a causal relationship. (This is a classic early example of applying spatial analysis in epidemiology.)His map showed that the deaths were not randomly distributed but spatially concentrated around a water source, which is the essence of spatial reasoning
+In 1854, Dr. John Snow mapped the locations of cholera deaths in London (Soho district) alongside the locations of water pumps. He noticed that the cholera cases clustered around one particular pump (on Broad Street). Because there was a spatial clustering around that pump, he hypothesized that the water from that pump was the source of the outbreak. He then convinced authorities to remove the pump handle, after which the outbreak declined. In effect, he used spatial distribution and clustering of disease incidents to infer a causal relationship. (This is a classic early example of applying spatial analysis in epidemiology.)His map showed that the deaths were not randomly distributed but spatially concentrated around a water source, which is the essence of spatial reasoning.
 
 :::
 
 3. __Name the five common map types used in humanitarian work.__  
 
 :::{dropdown} Answer
-1. General Reference Maps: Show general geographic features like roads, rivers, and administrative boundaries; used for navigation and orientation
+1. General Reference Maps: Show general geographic features like roads, rivers, and administrative boundaries; used for navigation and orientation.
 2. Infrastructure Maps: Thematic maps focused on physical infrastructure (e.g., hospitals, water points, roads); used for planning and logistics.
 3. Thematic Maps: Represent a specific theme or dataset (e.g., population, rainfall, conflict); uses color, shapes, or symbols to visualize non-spatial attributes.
 4. Analysis Maps: Result from spatial analysis to guide decision-making (e.g., hazard risk zones, suitability models).

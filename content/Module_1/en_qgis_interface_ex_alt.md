@@ -1,5 +1,7 @@
 # QGIS Exercise 2: Understanding the user interface and getting to know the layer concept
 
+% CAN THIS FILE BE DELETED?
+
 __🔙[Back to Homepage](/content/intro.md)__
 
 ### Aim of the exercise:
@@ -19,20 +21,21 @@ This exercise expands on the previous exercise. This time, we will also import d
 
 Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local folder and save the above data there. (.zip folders must be unzipped beforehand.)
 
-- Sierra Leone Border (Polygon/Lines) GeoPacked
+- Sierra Leone Border (Polygon/Lines) GeoPackage
 
 - Sierra Leone national borders (Polygon/lines)
 
 - Sierra Leone provinces (Lines)
 
 - Sierra Leone health (Points)
+
 - Sierra Leone airports (CSV)
 
 ### Tasks:
 
 1. Open QGIS and familiarise yourself with the user interface. 
 
-2. Open the above files in QGIS. Load the vector layers into your program. Load the CSV file via "Add delimited text".
+2. Open the above files in QGIS. Load the vector layers into your program. Load the CSV file via `Add delimited text`.
 
 ![QGIS_User_Interface](/fig/en_airports_text_layer.png)
 Airport Text Layer 

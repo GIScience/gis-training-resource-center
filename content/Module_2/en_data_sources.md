@@ -40,7 +40,7 @@ licensing and to follow the respective regulations to avoid difficulties.
 name: en_data_sources_examples_cartong
 width: 600 px
 ---
-The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/))
+The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/)).
 :::
 
 ## Overview of useful data repositories
@@ -125,37 +125,37 @@ __[Geofabrik.de](https://download.geofabrik.de/)__
 
 As you can see, Geofabrik is great if you want to get complete OSM datasets for  whole countries or regions. 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other than countries), not optimal|
-|+ Very up-to-date OSM exports|- Large file size|
-|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
+| Advantages                                                                  | Disadvantages                                                                                   |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| + Quick access to complete OSM datasets                                     | - If one is only interested in specific features or regions (other than countries), not optimal |
+| + Very up-to-date OSM exports                                               | - Large file size                                                                               |
+| + Clear documentation of which OSM features are contained in each shapefile | - Only available as shapefile                                                                   |
 
 __[HOT Export tool](https://export.hotosm.org/v3/)__
 As you can see, the HOT Export tool offers a good mix of flexibility and quick 
 access to OSM data. However, there are quite some steps involved until the data 
 is in QGIS. 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Good options for data selection|- Many steps involved |
-|+ Many different data formats available|- Only fixed option for data selection|
-|+ Easy to use||
-|+ Query can easily be repeated | |
+| Advantages                              | Disadvantages                          |
+|-----------------------------------------|----------------------------------------|
+| + Good options for data selection       | - Many steps involved                  |
+| + Many different data formats available | - Only fixed option for data selection |
+| + Easy to use                           |                                        |
+| + Query can easily be repeated          |                                        |
 
 
 __QuickOSM Plugin__
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
-|+ Data loads directly in QGIS|- Building queries can quickly become complex|
-|+ Query can easily be repeated||
+| Advantages                                     | Disadvantages                                 |
+|------------------------------------------------|-----------------------------------------------|
+| + Query can be tailored for very specific data | - Requires knowledge of OSM data model        |
+| + Data loads directly in QGIS                  | - Building queries can quickly become complex |
+| + Query can easily be repeated                 |                                               |
 
 
 
 :::{tip}
 
-It is by default possible to add the OSM base map to your project.  Click on `Layer` -> `Add Layer` -> `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
+It is by default possible to add the OSM base map to your project.  Click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
 
 :::
 
@@ -165,9 +165,8 @@ It is by default possible to add the OSM base map to your project.  Click on `La
 The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it 
 to your QGIS project.
 
-1. Install the QuickOSM plugin by clicking on the `Plugin` tab, -> `Manage and 
-   Install Plugins…` -> `All` -> Search for "QuickOSM" -> `Install Plugin`
-2. To open QuickOSM click on the `Vector`tab -> `QuickOSM` ->  `QuickOSM`
+1. Install the QuickOSM plugin by clicking on the `Plugin` tab, → `Manage and Install Plugins…` → `All` → Search for "QuickOSM" → `Install Plugin`
+2. To open QuickOSM click on the `Vector`-tab → `QuickOSM` → `QuickOSM`
 
 To work efficiently with QuickOSM, it's essential to have a basic understanding of the OSM data model. Here's a brief explanation:
 
@@ -215,7 +214,7 @@ Running the QuickOSM plugin.
 
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](/fig/plus_quickosm.png). Be careful choosing the right logical operator 
-`And` or `Or`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
+`AND` or `OR`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
 on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::

@@ -37,7 +37,7 @@ width: 800px
 align: center
 name: Standard folder structure
 ---
-Standard folder structure. Source: HeiGIT
+Standard folder structure. Source: HeiGIT..
 :::
 ---
 
@@ -48,8 +48,7 @@ Standard folder structure. Source: HeiGIT
 :::{figure} /fig/en_project_template_BRC.png
 ---
 height: 400
-name: Project Template
-align: Left
+name: en_project_template_BRC
 ---
 :::
 
@@ -79,7 +78,7 @@ In QGIS, the interface may appear slightly different depending on your screen re
 :::
 
 4. QGIS has other panels you can use that aren't shown by default. Let's see how we can find and activate the other panels and toolbars.
-- In the `View` menu, find the `panels` and `toolbar` options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are: 
+- In the `View` menu, find the `Panels` and `Toolbars` options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are: 
 - Browser
 - Layers
 - Layer Styling

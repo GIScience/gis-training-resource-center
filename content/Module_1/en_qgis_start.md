@@ -104,7 +104,8 @@ A QGIS project file has the format ending `.qgz`.
 :::
 
 ::::
-1. On the start screen click on `Project Template`
+
+1. On the start screen click on `Project Template`.
 
 :::{figure} /fig/en_project_template_BRC.png
 ---
@@ -114,7 +115,7 @@ align: center
 ---
 :::
 
-2. In the upper left corner click on `Project` -> ` New Project `
+2. In the upper left corner click on `Project` → `New Project`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
@@ -164,11 +165,11 @@ align: center
 :::{dropdown} Exercise: Create a new QGIS project
 
 1. In your “GIS_Training” folder, create a __subfolder__ called "My_First_Project".
-2. Open __QGIS__
-3. Click on `Project` -> ` New Project `
-4. In the top-left corner, click on `Project` -> `Save as`, browse to your Projects folder and save the project as "Session1”
-5. Click on __Save as__, browse to your Projects folder and save the project as "My_First_Project"
-6. Open your your folder and check the __.qgz file__ that you just created.
+2. Open __QGIS__.
+3. Click on `Project` → `New Project`.
+4. In the top-left corner, click on `Project` → `Save as`, browse to your Projects folder and save the project as "Session_1".
+5. Click on `Save as`, browse to your Projects folder and save the project as "My_First_Project".
+6. Open your your folder and check the __`.qgz` file__ that you just created.
 
 :::
 
@@ -260,7 +261,7 @@ You can follow the steps below in your own QGIS project. Download [this dataset]
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg
 
-Download the Worldbank Official Boundaries
+Download the Worldbank Official Boundaries.
 
 :::
 
@@ -272,7 +273,7 @@ Download the Worldbank Official Boundaries
 
 :::{tip}
 
-Holding the <kbd>Space</kbd>-button on your keyboard activates the ![](/fig/qgis_pan_map.png) `Pan Map`-tool when you're mouse in on the map canvas. Simply move your mouse while holding <kbd>Space</kbd> and you can move the map view
+Holding the <kbd>Space</kbd>-button on your keyboard activates the ![](/fig/qgis_pan_map.png) `Pan Map`-tool when you're mouse in on the map canvas. Simply move your mouse while holding <kbd>Space</kbd> and you can move the map view.
 
 :::
 
@@ -303,7 +304,7 @@ Holding <kbd>Ctrl</kbd> while scrolling allows you to scroll in smaller incremen
 
 The easiest way to zoom on Map Canvas is by __scrolling__.
 
-Or with the hotkeys <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>
+Or with the hotkeys <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</kbd>.
 
 ![](/fig/qgis_zoom_symbol.png)
 
@@ -326,7 +327,7 @@ Holding <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> opens and closes the too
 :::
 ::::
 
-To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` -> `Toolbox`
+To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` → `Toolbox`.
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 
@@ -344,9 +345,9 @@ There are cases when you want to do something in QGIS but do not know the exact 
 
 There are toolbars and panels for many different tasks. To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
 
-To add or remove toolbars from your interface click on `View` -> `Toolbars` -> Check or uncheck the toolboxes you want to add or remove.
+- To add or remove toolbars from your interface click on `View` → `Toolbars` → Check or uncheck the toolboxes you want to add or remove.
 
-To add or remove  panels from your interface click on `View` -> `Panels` -> Check or uncheck the panels you want to add or remove.
+- To add or remove  panels from your interface click on `View` → `Panels` → Check or uncheck the panels you want to add or remove.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
@@ -375,13 +376,14 @@ Always organize your data! Check out the Wiki article on [Standard Folder Struct
 ::::{margin}
 
 :::{tip}
+
 Holding <kbd>Ctrl</kbd> + <kbd>O</kbd> also opens the `Open Project`-dialogue box.
 
 :::
 
 ::::
 
-To open an existing QGIS project click on `Project` -> `Open…` -> Navigate to your project and open it.
+To open an existing QGIS project click on `Project` → `Open…` -> Navigate to your project and open it.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
@@ -397,9 +399,9 @@ Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd
 
 ::::
 
-* __When you save for the first time__: To save the QGIS project you are working on click on `Project` -> `Save as…`-> Navigate to the folder where you want to save the project -> Give the project a name -> `Save`
+* __When you save for the first time__: To save the QGIS project you are working on click on `Project` → `Save as…` → Navigate to the folder where you want to save the project → Give the project a name → `Save`.
 * __When saving your progress__: To save progress in a project that was already saved somewhere on your computer:
-    * Click on `Project` -> `Save`. 
+    * Click on `Project` → `Save`. 
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
