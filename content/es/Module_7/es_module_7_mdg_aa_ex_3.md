@@ -128,7 +128,7 @@ En primer lugar, echemos un vistazo a los datos con los que queremos trabajar.
    - Abra su modelo existente `Estimación_Población_Expuesta.model3`.
    - Guárdelo inmediatamente con un nuevo nombre:
      - Haga clic en `Modelo` → `Guardar Modelo Como`
-     - Guárdelo en la `project` carpeta como:
+     - Guárdelo en la carpeta `project` como:
 ```
 Estimate_Exposed_Population_Health_Education
 ```
@@ -365,19 +365,19 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
        - `Establecimientos educativas` → seleccione el conjunto de datos de puntos para las escuelas
    - **Salida:**
      - Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.
-       - `adm2_centros_salud_expuestos` -> 
+       - `adm2_centros_salud_expuestos` → 
         ```
         adm2_centros_salud_expuestos
         ```
-       - `adm2_educación_expuesta` ->
+       - `adm2_educación_expuesta` →
         ```
         adm2_educación_expuesta
         ```
-       - `trayectoria_harald_buffer` -> 
+       - `trayectoria_harald_buffer` → 
         ```
         trayectoria_harald_buffer
         ```
-       - `población_expuesta_suma` ->
+       - `población_expuesta_suma` →
         ```
         población_expuesta_suma_harald
         ```
