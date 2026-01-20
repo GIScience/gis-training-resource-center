@@ -154,7 +154,6 @@ Uniremos las siguientes capas paso a paso:
 :::{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Configuración de la operación: unir los datos de salud y educación mediante el campo ADM2_PCODE para combinar los resultados en una sola capa.
@@ -242,23 +241,23 @@ Exportar todos los indicadores (población, salud, educación) a una única tabl
        - `Establecimientos educativos` → seleccione el conjunto de datos de puntos para las escuelas
    - **Salida:**
      - Guarde todas las capas de salida en la carpeta de salida y utilice los nombres que se indican a continuación.
-       - `adm2_centros_salud_expuestos` -> 
+       - `adm2_centros_salud_expuestos` →
         ```
         adm2_centros_salud_expuestos
         ```
-       - `adm2_educación_expuesta` ->
+       - `adm2_educación_expuesta` →
         ```
         adm2_educación_expuesta
         ```
-       - `trayectoria_harald_buffer` -> 
+       - `trayectoria_harald_buffer` → 
         ```
         trayectoria_harald_buffer
         ```
-       - `población_expuesta_suma` ->
+       - `población_expuesta_suma` →
         ```
         población_expuesta_suma_harald
         ```
-       - `tabla_de_indicadores_de_exposición` ->
+       - `tabla_de_indicadores_de_exposición` →
         ```
         tabla_de_indicadores_de_exposición
         ```
