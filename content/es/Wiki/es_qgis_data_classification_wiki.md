@@ -10,7 +10,7 @@ Los atributos de los datos geoespaciales se almacenan en una columna específica
 :::{figure} /fig/classification_basic.drawio.png
 ---
 width: 800px
-name: classification_basic_wiki
+name: es_classification_basic_wiki
 align: center
 ---
 :::
