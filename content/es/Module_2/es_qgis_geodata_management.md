@@ -33,7 +33,7 @@ Una estructura de carpetas estándar tiene dos ventajas principales:
 ---
 width: 600px
 align: center
-name: standard_folder_structure_new_2025
+name: es_standard_folder_structure_new_2025
 ---
 Estructura de carpetas estándar. Fuente: HeiGIT
 :::
