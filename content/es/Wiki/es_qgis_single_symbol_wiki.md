@@ -13,7 +13,7 @@ __Para ajustar el estilo de una capa...__
 - Haga clic derecho en su capa.
 - Haga clic en `Simbología`.
 - Verifique que el ajuste de capa esté activado `Símbolo único`.
-- Seleccione el color que desee en el menú desplegable. Para más opciones de color, seleccione del menú desplegable `Color`
+- Seleccione el color que desee en el menú desplegable. Para más opciones de color, seleccione del menú desplegable `Color`.
 - *Opcional*: Puede ajustar la opacidad/transparencia de la capa. Esto puede ser muy útil cuando se desea mostrar varias capas superpuestas.
 - *Opcional*: Aquí puede establecer el tipo de unidad. Esto resulta útil cuando se desea, por ejemplo, visualizar puntos de un determinado tamaño.
 - Opcional. Aquí podrá encontrar de manera rápida estilos estándar y los usados anteriormente.
@@ -23,7 +23,7 @@ __Para ajustar el estilo de una capa...__
 :::{figure} /fig/Single_symbol_classify.png
 ---
 width: 900px
-name: Single_symbol_classify_wiki
+name: es_Single_symbol_classify_wiki
 align: center
 ---
 :::
