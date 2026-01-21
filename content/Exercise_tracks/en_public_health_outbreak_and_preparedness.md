@@ -1,6 +1,6 @@
 # Exercise Track: Outbreak and Preparedness in the Public Health Sector
 
-🚧 Under Construction 🚧
+% Still under construction?
 
 This training module is designed for humanitarian public health professionals working with geospatial data to support outbreak detection, response planning, and operational decision-making.  
 Using QGIS and openly available datasets, you will learn how to integrate health data, population estimates, and accessibility modelling to answer key epidemiological questions.
