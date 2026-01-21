@@ -23,13 +23,14 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/GIScience/gis-training-resource-center  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/GIScience/gis-training-resource-center
+  path_to_book: content
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: IFRC_LOGO_favicon.png
   use_issues_button: true
   use_repository_button: true
   extra_footer: |
@@ -39,4 +40,8 @@ html:
       This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
       </p>
   announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
-exclude_patterns: [.venv/*]
+exclude_patterns: [.venv/*, venv/*]
+
+sphinx:
+  extra_extensions:
+    - custom-launch-buttons

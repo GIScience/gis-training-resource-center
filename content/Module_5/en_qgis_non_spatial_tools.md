@@ -11,32 +11,31 @@
 #### Introduction
 
 Non-spatial data processing in QGIS refers to the manipulation of attribute data without directly involving spatial components or information, such as the spatial relationships or geometries. 
-- It changes the non-geometric attributes of datasets (i.e., the attribute table)
+- It changes the non-geometric attributes of datasets (i.e., the attribute table).
 - Non-spatial processing can be used to perform calculations, generate statistics, and gain insights into the non-spatial aspects of geospatial datasets. 
 - QGIS offers a variety of tools for non-spatial processing to assist users in managing and analysing attribute data effectively.
+- This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.
 
-<!---This can include data cleaning, transformation, enrichment, and analysis based on the associated attribute information, such as population statistics, land use classifications, or economic indicators.-->
-
-```{figure} /fig/en_attribute_table_large.PNG
+:::{figure} /fig/en_attribute_table_large.PNG
 ---
 height: 500px
-name: attribute_table_all
+name: en_attribute_table_large
 ---
-Screenshot of an attribute table for QGIS version 3.28.4
-```
+Screenshot of an attribute table for QGIS version 3.28.4.
+:::
 
 ## Non-spatial joins (Join Attributes by Field Value)
 
 - A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. 
 - With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key (see {numref}`simple_attr_join_example`).
 
-```{figure} /fig/simple_attr_join_example.png
+:::{figure} /fig/simple_attr_join_example.png
 ---
 name: simple_attr_join_example
 width: 500 px
 ---
-The entries in the two data tables can be joined via the common ID-field 
-```
+The entries in the two data tables can be joined via the common ID-field.
+:::
 
 ::::{card}
 __Humanitarian example:__
@@ -45,24 +44,24 @@ __Humanitarian example:__
 
 P-codes are identifying codes for administrative units (e.g. country (adm0), region (adm1), district (adm2)), that were introduced to simplify joining tabular data on administrative regions. These codes clearly identify the administrative units facilitating non-spatial joins. 
 
-For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attribute, we can easily join the population data with the vector dataset.*
+For example: We have a spatial dataset containing the administrative boundaries of districts (adm2) in Nigeria and a data table containing the population per district, but without the polygons. By using the P-codes as identifying attributes, we can easily join the population data with the vector dataset.*
 
-```{figure} /fig/en_attribute_join_pcode_example.png
+:::{figure} /fig/en_attribute_join_pcode_example.png
 ---
-name: pcode_example
+name: en_attribute_join_pcode_example
 width: 550 px
 ---
-The P-code associated with the district Edo South is NG01201
-```
+The P-code associated with the district Edo South is NG01201.
+:::
 
 ::::
 
 
-```{Attention} 
+:::{Attention} 
 - An attribute join in QGIS only works properly, when the attributes **match exactly**.
 - For example: **"S. Sudan"** will not match with **"South Sudan"**.
 - Where possible it’s best to **use attributes that have been designed for joining**, such as **P-codes** or **ID's** which are not susceptible to spelling mistakes.
-```
+:::
 
 ### Exercise: Performing a non-spatial join 
 
@@ -70,49 +69,49 @@ In this short follow along exercise, we will add the population data to the admi
 
 1. Download the necessary layers [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), unzip them, and add them to your QGIS-project. 
 
-```{tip}
+:::{tip}
 The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` > `Add Layer` > ) with no geometry.
-```
+:::
 
 2. Open the "Join Attributes by Field Value"-tool from the processing toolbox
 3. As the Input Layer 1, select the layer `nga_admbnda_adm1_osgof_20190417`, set the "Table Field" to `ADM1_PCODE`
 4. As Input Layer 2, select the layer `nga_adm1pop_2022`, set the "Table Field" to `ADM1_PCODE`. Additionally, under "Layer 2 fields to copy", select `F_TL`, `M_TL`, and `T_TL`.
 5. Click `Run`. A new layer will appear in your layer panel called "Joined Layer".
 
-```{figure} /fig/en_3.36_pcode_join.png
+:::{figure} /fig/en_3.36_pcode_join.png
 ---
-name: 36_pcode_join
+name: en_3.36_pcode_join
 width: 450 px
 ---
 Setting the parameters for the P-code join
-```
+:::
 
 6. Open the attribute table for the new layer and scroll to the right. Here you will find the joined attributes
 
 Great! We have successfully added the population data to our administrative boundaries layer. Now, we can visualise the population distribution or continue to analyse our data.
 
 
-```{figure} /fig/nga_pop_join.png
+:::{figure} /fig/nga_pop_join.png
 ---
 name: nga_pop_join
 width: 600 px
 ---
-The joined data classified using the graduated symbology for the population value.
-```
+The joined data is classified using the graduated symbology for the population value.
+:::
 
 
 ## Table functions
 
-Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new field, delete unwanted fields, or even calculate new field using the __field calculator__. 
+Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new fields, delete unwanted fields, or even calculate new fields using the __field calculator__. 
 
 For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
 
 ### Add field
 The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distributions.
 
-```{Attention}
+:::{Attention}
 The selection of the appropriate data type should align with the information being added to the new attribute field. Please keep this in mind while watching the example video.
-```
+:::
 __Possible data types:__
 
 The most common ones are:
@@ -124,35 +123,37 @@ Additional options:
 - Date and Date and time
 - Boolean
 
-````{dropdown} Example: Add a field for population density
+:::{dropdown} Example: Add a field for population density
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video>
-````
+:::
 
 ### Delete field
 It is also possible to __delete fields__ from the attribute table. A commonly used practice is to __remove all unused or unnecessary fields__ from a layer before starting to work on it. This __makes the dataset much more organised__.
 
-````{dropdown} Example: Delete all unused/unnecessary fields from a vector layer
+:::{dropdown} Example: Delete all unused/unnecessary fields from a vector layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video>
-````
+:::
 
 ### Calculate field
+
 An important practice is to calculate the attribute values for a field, e.g., based on the values of other fields. In QGIS, you can __create a new field or update an existing field__.
 
-```{Note}
+:::{Note}
+
 It is necessary to __check if the data type of the field__ (new or updated) __and your calculation match__. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer but rather of type decimal number.
-```
+:::
 
 An example could be to calculate the population density based on the already existing fields Population and Area.
 
 A very important tool for such calculations is the __Field Calculator__. It allows you to __perform calculations based on existing attribute values or defined functions__, for example, to calculate the length or area of a geometry feature or in the given example, could be used to calculate the population density based on the already existing fields Population and Area. The results of these calculations can be written into a new field or update an existing field.
 
-```{figure} /fig/en_field_calculator_red_boxes.png
+:::{figure} /fig/en_field_calculator_red_boxes.png
 ---
 width: 100%
-name: field_calculator
+name: en_field_calculator_red_boxes
 ---
 Screenshot of the Field calculator
-```
+:::
 
 The most important groups and their respective functionality that are provided with the field calculator are listed below:
 - __Fields and Values__
@@ -167,22 +168,18 @@ The most important groups and their respective functionality that are provided w
     - Calculates the square root of a field: `sqrt("field")`
     - Calculate `min` and `max`
 
-````{dropdown} Example: Calculate the population density
+:::{dropdown} Example: Calculate the population density
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
-````
-
-:::{admonition} Get Statistics
-:class: tip
-
 :::
+
 
 ### Basic statistics for fields
 
 The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.
 
-````{dropdown} Example: Calculate statistics for the field population density for countries worldwide.
+:::{dropdown} Example: Calculate statistics for the field population density for countries worldwide.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video>
-````
+:::
 
 ### Statistics by categories
 To calculate statistics of a field depending on a parent class you can use the tool __Statistics by categories__. The parent class is a combination of values from other fields.
@@ -193,9 +190,9 @@ __Questions that need to be considered when doing these calculations:__
 
 For greater precision in these calculations, "statistics by categories" offers more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.
 
-````{dropdown} Example: Cities with more than 300,000 inhabitants and the amount of population in the largest agglomerations
+:::{dropdown} Example: Cities with more than 300,000 inhabitants and the amount of population in the largest agglomerations
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
-````
+:::
 
 ## Non-spatial queries
 In GIS, you can __query__ (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that __correspond__ to the chosen attribute are displayed. Data filtering is a valuable technique for creating __subsets__ of features that can be exported as a new layer.
@@ -203,9 +200,9 @@ In GIS, you can __query__ (filter) data based on specific attribute information.
 ### Manual selection
 It is possible to manually select specific rows by clicking on the number on the left side of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in __yellow__.
 
-````{dropdown} Example: Manual selection of rows
+:::{dropdown} Example: Manual selection of rows
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
-````
+:::
 
 ### Select by expression
 In this dialog, you can build your expressions to query the data. There are several operators that can be used to filter your vector layer.
@@ -254,11 +251,11 @@ Operators such as AND, OR can be used to combine different queries or criteria
 
 ::::
 
-Querying your data to answer more complex question is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?
+Querying your data to answer more complex questions is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?
 
-````{dropdown} Example: Cities, excluding those with a population of one million inhabitants in 1950, that have grown to over ten million inhabitants by 2015
+:::{dropdown} Example: Cities, excluding those with a population of one million inhabitants in 1950, that have grown to over ten million inhabitants by 2015
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
-````
+:::
 
 ##### SQL
 
@@ -280,13 +277,13 @@ You can easily access essential SQL statements by referring to this handy [Cheat
 
 The Query Builder provides an interface that allows you to define a __subset of the features__ in the layer using SQL-like statements and to display the results in the main window. As long as the query is active, only the __features corresponding__ to its result are available in the project. You can use one or more layer attributes to define the filter in the Query Builder. The Query Builder is built as follows:
 
-```{figure} /fig/en_query_builder_comment.png
+:::{figure} /fig/en_query_builder_comment.png
 ---
 width: 100%
-name: query_builder
+name: en_query_builder_comment
 ---
 Screenshot of the Query Builder
-```
+:::
 
 1. The __Fields list__ contains all the fields of the layer. To add an attribute column to the expression window, double-click its name or just type it into the box.
 2. The __Values__ frame lists the values of the currently selected field. 
@@ -297,13 +294,69 @@ Screenshot of the Query Builder
 4. The __Test__ button helps you to check your query and __displays a message box with the number of features__ satisfying the current query. 
 5. Use the __Clear__ button to revert the layer to its original state.
 
-```{Note}
+:::{Note}
 When a filter is applied with the Query Builder, QGIS treats the resulting subset as if it were the __entire layer__.
-```
+:::
 
 In this short video, you will discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.
 
-````{dropdown} Example: Simple usage of the Query Builder.
+:::{dropdown} Example: Simple usage of the Query Builder.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
-````
+:::
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+:class: note
+
+1. __What does “non‑spatial processing” mean in the context of GIS/QGIS? How does it differ from spatial operations?__
+
+:::{dropdown} Answer
+- Non‑spatial processing refers to operations that act solely on the attribute side (the table or data columns) of a layer, without using or modifying the geometry (location, shape) of features. You are manipulating data about features, not their spatial relationships.
+- Examples include adding, deleting, or updating fields; filtering records based on attribute queries; performing table joins based on matching key fields; computing new values from existing attributes.
+- In contrast, spatial operations involve geometry — they use spatial relationships (proximity, intersection, containment) and often produce changes in the shape, size, or arrangement of features (for example buffer, intersect, clip, union). Spatial tools compute new geometry or restructure existing geometry.
+:::
+
+2. __What is a “non‑spatial join” (Join Attributes by Field Value)? Describe how and when you would use it.__
+
+:::{dropdown} Answer
+- A non‑spatial join (in QGIS often called Join Attributes by Field Value) links attribute data from one table (or non‑spatial data) to another feature layer based on a common key (field) value, not based on geometry. It is also called a tabular join or attribute join.
+- You'd use it when you have two datasets that share a common attribute (e.g. a region code, an ID, a name) and you want to enrich one layer with additional attributes from the other. For example: you have a layer of administrative polygons and a separate table of population statistics keyed by the same admin code; you want to bring those population figures into the polygon layer so you can map or analyze them.
+- The non-spatial join adds fields from one layer or dataset into the target layer’s attribute table where the key matches.
+- 
+:::
+
+3. __What conditions must be true for a non‑spatial join to work correctly? (E.g. key fields, matching values, data types)__
+
+:::{dropdown} Answer
+
+1. __Common key field present in both tables__
+    - Both the target layer (the one receiving the join) and the join table must have a field (column) that is the “join key,” which contains matching identifiers in corresponding rows.
+2. __Matching values in those key fields__
+    - The values in the key field must overlap: for each feature in the target layer that you want to get joined data for, there must be a matching value in the join table’s key field. If there is no match, the joined value will typically be NULL or blank.
+3. __Compatible data types__
+    - The key fields should be of the same or compatible data type (e.g. both integer, or both text) so that QGIS can match them. If one is a text field and the other is numeric, matching won’t work reliably.
+4. __Uniqueness of values__
+    - Ideally, the join table should have unique values in the join key (one-to-one join). If there are multiple matching rows (one-to-many), then you might end up with duplicates, or ambiguous matching — QGIS may either take the first match or aggregate, depending on the join method.
+    - The target layer normally does not change its number of features — the join just appends fields, not duplicating geometry (unless you convert to a permanent joined file in a different way).
+
+4. __What kinds of operations can you perform using table functions (add field, delete field, calculate field)?__
+
+:::{dropdown} Answer
+- __Add field__: Create a new attribute column (of a chosen type, e.g. integer, decimal, text) to hold computed or imported values.
+- __Delete field__: Remove unwanted or redundant fields/columns from a layer’s attribute table.
+- __Calculate field (Field Calculator)__: Compute new values (for existing or new fields) using expressions (arithmetic, conditional logic, functions) based on other attributes, constants, or functions. For example: calculate population density = population / area; or classify values using CASE WHEN logic.
+- __Update/Edit existing field__: You can also update or overwrite values in an existing field, provided the layer is in edit mode.
+:::
+
+5. __What is a non‑spatial query? How would you use “Select by expression” to filter your data?__
+
+:::{dropdown} Answer
+- A non‑spatial query is a query applied to the attribute table (fields) rather than based on geometry. It filters or selects rows (features) based on attribute conditions, not spatial conditions.
+- In QGIS, “Select by expression” is a tool you can use to write logical expressions (e.g. `"population" > 10000 AND "region" = 'East'`) to select the subset of features whose attributes satisfy the criteria.
+- After selection, you can use the selected subset for further operations (e.g. export selected features, style them differently, analyze only them, etc.).
+
+:::
+
+::::
 

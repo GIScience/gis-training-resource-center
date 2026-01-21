@@ -21,7 +21,10 @@ __Open the Python Console in QGIS__
 
 __Check if Pandas is installed__
 
-1. In the Python Console type the following command and press ENTER:`Import pandas`
+1. In the Python Console type the following command and press ENTER:
+```
+import pandas
+```
 
 <!--This is not the correct -->
 
@@ -31,7 +34,9 @@ Install pandas on Windows/ Mac:\
 
 - Open the Command Prompt (Windows)/ Terminal (Mac)
 - Install pandas by running the following command and press ENTER:
+```
 pip install pandas
+```
 
 __QGIS Versions__
 
@@ -102,6 +107,7 @@ b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "AD
 
 c) __Coping Capacity indicators [optional]:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
+Further information can be found in the [How to generate Risk Indicators](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_generate_indicators_for_plugin.html) chapter. 
 
 ```{figure} /fig/mada_coping.png
 ---
