@@ -44,7 +44,7 @@ A group of dedicated student assistants and employees of the Heidelberg Institut
   </div>
 
   <div class="logo">
-    <img src="https://www.ifrc.org/themes/custom/ifrc_theme/dist/images/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
+    <img src="../../_static/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
   </div>
 </div>
 
@@ -61,7 +61,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://www.drk.de/typo3conf/ext/plus_drk_base/Resources/Public/Images/logo-drk.svg" alt="German Red Cross Logo">
+    <img src="../../_static/logo-drk.svg" alt="German Red Cross Logo">
   </div>
 </div>
 
@@ -75,7 +75,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/British_Red_Cross_logo.svg/520px-British_Red_Cross_logo.svg.png" alt="British Red Cross Logo">
+    <img src="../../_static/British_Red_Cross_logo.svg.png" alt="British Red Cross Logo">
   </div>
 </div>
 
@@ -89,7 +89,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://www.rodekruis.nl/en/wp-content/themes/socialbrothers/assets/rode-kruis-logo-nav.svg" alt="Netherlands Red Cross Logo">
+    <img src="../../_static/rode-kruis-logo-nav.svg" alt="Netherlands Red Cross Logo">
   </div>
 </div>
 
@@ -103,7 +103,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://heigit.org/wp-content/uploads/2024/07/HeiGIT_Logo_base.png" alt="HeiGIT Logo">
+    <img src="../../_static/HeiGIT_Logo_base.png" alt="HeiGIT Logo">
   </div>
 </div>
 
