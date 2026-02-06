@@ -172,8 +172,7 @@ Most of the times, the datasets you download from the web are compressed as `.zi
 6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import).
 
 
-7. Now add the OpenStreetMap basemap via the browser window > 
-   `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 
+7. Now add the OpenStreetMap basemap via the browser window → `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 
 
 8. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
 

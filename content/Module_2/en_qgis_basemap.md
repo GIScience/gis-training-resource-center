@@ -49,8 +49,7 @@ There are two ways to add OpenStreetMap as a basemap:
 
 ## QuickMapServices
 
-There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The [plugins page](/content/Wiki/en_qgis_plugins_wiki.md) on the wiki provides more detailed example information. One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). This plugin lets you access a wide range of basemaps that are not available in 
-QGIS by default, such as Bing or Sentinel-2 satellite imagery.
+There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The [article on plugins](/content/Wiki/en_qgis_plugins_wiki.md) in the wiki provides more detailed example information. One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). This plugin lets you access a wide range of basemaps that are not available in QGIS by default, such as Bing or Sentinel-2 satellite imagery.
 
 ::::{dropdown} Installation of plugins
 

@@ -167,7 +167,7 @@ width: 500 px
 ---
 width: 800px
 align: center
-name: Hot Export tool download of Mauritius financial institutions
+name: Hot Export tool download
 ---
 :::
 
@@ -177,15 +177,12 @@ In the next exercise of the Larkana Flood Response Exercise track, we want to id
 
 ::::
 
-4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html).
+4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#vector-data-import).
 5. Arrange the layers on the map so you can see the new layer.
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
-    * Right-click on the layer `Larkana_Roads` in the `Layer Panel` 
-      -> `Properties`. A new window will open up with a vertical tab section on 
-      the left. Navigate to the `Symbology` tab.
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. 
-      Under `Value` select "highway".
+    * Right-click on the layer `Larkana_Roads` in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "highway".
     * Further down the window click on `Classify`.  Now you should see all unique 
       values or attributes of the selected column.  You can adjust the 
       colours by double-clicking on one row in the central field. Once you are 
@@ -194,12 +191,12 @@ In the next exercise of the Larkana Flood Response Exercise track, we want to id
 As you can see, the HOT Export tool offers a good mix of flexibility and quick 
 access to OSM data.
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Good options for data selection|- Many steps involved |
-|+ Many different data formats available|- Only fixed option for data selection|
-|+ Easy to use||
-|+ Query can easily be repeated | |
+| Advantages                              | Disadvantages                          |
+|-----------------------------------------|----------------------------------------|
+| + Good options for data selection       | - Many steps involved                  |
+| + Many different data formats available | - Only fixed option for data selection |
+| + Easy to use                           |                                        |
+| + Query can easily be repeated          |                                        |
 
 
 ## Alternative Tools
@@ -215,11 +212,11 @@ __Geofabrik__
 ^^^
 The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM. 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
-|+ Very up-to-date OSM exports|- Large file size|
-|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
+| Advantages                                                                  | Disadvantages                                                                                   |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| + Quick access to complete OSM datasets                                     | - If one is only interested in specific features or regions (other then countries), not optimal |
+| + Very up-to-date OSM exports                                               | - Large file size                                                                               |
+| + Clear documentation of which OSM features are contained in each shapefile | - Only available as shapefile                                                                   |
 
 :::
 
@@ -236,11 +233,11 @@ You will need to formulate a data query to find the data that you are looking fo
 
 This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
-|+ Data loads directly in QGIS|- Building queries can quickly become complex |
-|+ Query can easily be repeated | |
+| Advantages                                     | Disadvantages                                 |
+|------------------------------------------------|-----------------------------------------------|
+| + Query can be tailored for very specific data | - Requires knowledge of OSM data model        |
+| + Data loads directly in QGIS                  | - Building queries can quickly become complex |
+| + Query can easily be repeated                 |                                               |
 
 :::
 

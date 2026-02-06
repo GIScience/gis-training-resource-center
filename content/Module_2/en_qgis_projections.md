@@ -129,7 +129,7 @@ A geographic representation of the globe. The distance between the meridians con
 
 :::{caution}
 
-When processing geodata, QGIS always uses the units of measurements of the layer that you are processing. This means that if you want to calculate, for example, the distance in kilometers, the layer must be in a metric CRS. You can check the units of measurements of any given layer by <kbd>Right clicking</kbd> on the layer in the layer panel > `Properties` > `Information` > `Coordinate Reference System (CRS)`. 
+When processing geodata, QGIS always uses the units of measurements of the layer that you are processing. This means that if you want to calculate, for example, the distance in kilometers, the layer must be in a metric CRS. You can check the units of measurements of any given layer by <kbd>Right clicking</kbd> on the layer in the layer panel → `Properties` → `Information` → `Coordinate Reference System (CRS)`. 
 
 :::
 
@@ -161,7 +161,7 @@ One of the first things you do when starting a new QGIS project should be to che
 :::
 
 
-1. Open a QGIS project
+1. Open a QGIS project.
 2. In the very bottom right corner of QGIS you find the button `EPSG`. The number next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the `Current CRS`-button ![](/fig/EPSG_Code.png). 
 3. The window `Project Properties` will open. Here you can view all available CRS/EPSG-Code and their properties.
 4. To change the CRS/EPSG code, select the one you want to use and click `Apply`.
@@ -186,11 +186,11 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 
 #### Changing the projection of a vector layer
 
-1. `Vector` Tab -> `Data Management Tools` -> `Reproject Layer`
+1. `Vector` Tab → `Data Management Tools` → `Reproject Layer`.
 2. Select target CRS/EPSG code.
 3. Save the new file by clicking on the three dots next to `Reprojected`, 
    specify the file name and the location where you want to save the file.
-5. Click `Run`
+5. Click `Run`.
 
 :::{dropdown} Video: How to change the CRS of a vector a layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
@@ -198,12 +198,12 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 
 #### Changing the projection of a raster layer
 
-1. `Raster` Tab -> `Projections` -> `Warp (Reproject)`
-2. Select target CRS/EPSG-Code
-3. Select resampling method
+1. `Raster` Tab → `Projections` → `Warp (Reproject)`.
+2. Select target CRS/EPSG-Code.
+3. Select resampling method.
 4. Save the new file by clicking on the three dots next to `Reprojected`, specify 
    the file name and the location where you want to save the file.
-5. Click `Run`
+5. Click `Run`.
 
 :::{dropdown} Video: How to change the CRS of a raster layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
@@ -225,7 +225,7 @@ Take a moment to test what you've learned in this chapter by answering the quest
 - Because the Earth (or more precisely the reference ellipsoid) is a three‑dimensional curved surface, you cannot represent it perfectly on a flat (2D) map without distortion. The process of “projecting” transforms the curved surface into a plane.
 - Any projection necessarily distorts at least one of: angles (directions), areas (relative sizes), or distances (scales). You can often preserve one or two properties well, but not all simultaneously.
 - For example, the Mercator projection preserves angles (so shapes are locally correct), which is useful for navigation, but severely distorts areas (especially towards the poles).
-- Another example: equidistant projections preserve distances along particular lines (meridians or standard parallels), but distort shape or area in other parts
+- Another example: equidistant projections preserve distances along particular lines (meridians or standard parallels), but distort shape or area in other parts.
 :::
 
 2. __Explain the difference between a Geographic CRS and a Projected (or Metric) CRS. What are their advantages and disadvantages?__
@@ -242,7 +242,7 @@ Take a moment to test what you've learned in this chapter by answering the quest
 3. __Why is it important to choose a CRS appropriate to your area of interest (local vs global)? What problems may arise if you apply a local CRS to global data (or vice versa)?__
 
 :::{dropdown} Answer
-- Because every projection is optimized to reduce distortion in some aspect (area, distance, shape) over a particular spatial extent (region). For a local area, a local or regionally tuned CRS will minimize distortion and allow more accurate measurements
+- Because every projection is optimized to reduce distortion in some aspect (area, distance, shape) over a particular spatial extent (region). For a local area, a local or regionally tuned CRS will minimize distortion and allow more accurate measurements.
 - If you apply a local CRS (meant for a small area) to global data, distortions become extreme outside the intended region. Features may be skewed, stretched, or mislocated, and distance/area computations will be highly inaccurate in regions far from the projection’s optimal zone.
 - Conversely, using a global projection (e.g. a world Mercator) for a local region may not exploit the possibility of reducing distortion, and may even yield worse local accuracy than a more specialized projection. Also, global projections often distort large areas—so local detail may suffer.
 - In summary: applying a mismatched CRS leads to inconsistencies, misalignment of layers, errors in measurements, and misleading spatial relationships.
@@ -263,9 +263,9 @@ Take a moment to test what you've learned in this chapter by answering the quest
 
 :::{dropdown} Answer
 
-1. In the top bar, navigate to the `Vector` menu → `Data Management Tools` → `Reproject Layer`
-2. In the parameters window, select the target CRS (by searching the EPSG code or name)
-3. Click `Run`. A new layer called `Reprojected` will be added to the map canvas
+1. In the top bar, navigate to the `Vector` menu → `Data Management Tools` → `Reproject Layer`.
+2. In the parameters window, select the target CRS (by searching the EPSG code or name).
+3. Click `Run`. A new layer called `Reprojected` will be added to the map canvas.
 
 :::
 

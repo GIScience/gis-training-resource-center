@@ -33,7 +33,7 @@ __Type of trainings exercise:__
 __Competences covered in this exercise:__
 ^^^
 - Creating and saving a new QGIS project
-- Importing vector data (.shp and .gpkg) as well as tabular data (.txt)
+- Importing vector data (`.shp` and `.gpkg`) as well as tabular data (`.txt`)
 - Understanding the layer concept
 - Navigating the QGIS interface and map canvas
 
@@ -118,26 +118,26 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
 :::
 ::::
 
-1. Open QGIS and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. Open QGIS and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
 
-2. Once the project is created save the project in the `/Project`-subfolder in the `/Module_2_Exercise_5_The_World`/. In the top bar, click on `Project` -> `Save as` and navigate to the folder. Name the project “Module_2_Ex_5_The_World”.
+2. Once the project is created save the project in the `/Project`-subfolder in the `/Module_2_Exercise_5_The_World`/. In the top bar, click on `Project` → `Save as` and navigate to the folder. Name the project “Module_2_Ex_5_The_World”.
 
 
-3. Load the shape file `World_countries_generalized.shp` into your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+3. Load the shape file `World_countries_generalized.shp` into your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
     :::{Attention}
     With both methods, you need to select the file with the ending `.shp`! A [shapefile consists of several files](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#shapefile-structure) that are referring to each other. The file that holds the geometry information is the file ending with `.shp`.
     :::
 
-4. Load the GeoPackage file `global_power_plant_database_nuclear.gpkg` into the QGIS project. You can use one of the methods used in the previous step: Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the file or click on `Layer`-> `Add Layer`-> `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to `/data/input/`. Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+4. Load the GeoPackage file `global_power_plant_database_nuclear.gpkg` into the QGIS project. You can use one of the methods used in the previous step: Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the file or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to `/data/input/`. Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
     :::{Note}
     GeoPackage files can contain multiple files, and even whole QGIS projects. When you load such a file in QGIS, a window will appear in which you have to select the files you want to load in your QGIS project.
     :::
 
 5. Next, we want to load the file `Significant_earthquake_data.txt` into QGIS. Since this is vector data in text format, we need to follow specific steps ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-csv-data-in-qgis)).
-    * Click on `Layer`-> `Add Layer`-> `Add Delimited text Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to `Significant_earthquake_data.txt` in the `data/input/`-subfolder. Select the file and click `Open`.
-    * In the window "Data Source manager| Delimited Text" in QGIS open the dropdown menu `File Format` and check `Custom delimiter` and `Tab`
+    * Click on `Layer` → `Add Layer` → `Add Delimited text Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to `Significant_earthquake_data.txt` in the `data/input/`-subfolder. Select the file and click `Open`.
+    * In the window "Data Source manager| Delimited Text" in QGIS open the dropdown menu `File Format` and check `Custom delimiter` and `Tab`.
     * Open the dropdown menu `Geometry definition`. Make sure the option `Point coordinates` is checked. Furthermore, select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
     * Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
     * Click `Add`.

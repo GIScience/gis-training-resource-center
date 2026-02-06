@@ -240,7 +240,7 @@ The HOT Export Tool.
 
 4. First add a name and a brief description of your export. Then click on `Next`.
 5. Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or shapefile can be used as well. Click on `Next`.
-6. The easiest way to choose the feature type you want to download is using the tag tree. (The YAML option is more flexible but more advanced, so we will focus on the first option.)
+6. The easiest way to choose the feature type you want to download is using the tag tree. (The YAML option is more flexible but more advanced, so we will focus on the first option).
 7. There are multiple ways to select your area of interest. 
    1. You can search for it in the search bar in the top right corner. 
    2. Zoom in the map to your area and click on `This view`.

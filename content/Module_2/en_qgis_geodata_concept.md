@@ -129,7 +129,7 @@ __SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must c
 
 ### Raster data
 
-Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographsor satellite imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
+Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
 
 Typical uses for raster data are: 
 
@@ -269,7 +269,7 @@ Before you can start creating maps in QGIS, you will need to load your data into
 
 Typical vector data formats are Shapefile (`.shp`) and GeoPackage (`.gpkg`). The process of importing vector data in either of the two formats is the same. 
 
-QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply drag the data files you want to add from your file browser into the QGIS window. Another method is via the "__Data Source Manager__" (`Layer` > `Data Source Manager`). You can also open the Data Source Manager with the keyboard-shortcut <kbd>CTRL + L</kbd>. 
+QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply drag the data files you want to add from your file browser into the QGIS window. Another method is via the "__Data Source Manager__" (`Layer` → `Data Source Manager`). You can also open the Data Source Manager with the keyboard-shortcut <kbd>CTRL</kbd> + <kbd>L</kbd>. 
 
 :::{Note}
 GeoPackage files can contain multiple datasets and even whole QGIS projects. When you load a GeoPackage in QGIS, a window will appear where you can select the datasets you want to load.
@@ -277,11 +277,11 @@ GeoPackage files can contain multiple datasets and even whole QGIS projects. Whe
 
 #### Open vector data via the Data Source Manager
 
-1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer...`. This will open the Data Source Manager. 
+1. Click on `Layer` → `Add Layer` → `Add Vector Layer...`. This will open the Data Source Manager. 
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your 
-   vector file
+   vector file.
 3. Select the file and click `Open`. More options will appear. In most cases, you can leave these options as they are.
-4. Back in QGIS click `Add`
+4. Back in the QGIS window, click `Add`.
 
 :::{Attention}
 QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data files before importing them into QGIS.
@@ -322,7 +322,7 @@ name: en_import_delimeted_text
 Import delimited text in QGIS 3.36.
 :::
 
-1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
+1. `Layer` → `Add Layer` → `Open Delimited Text Layer`.
 2. Click on `File name` click on the three points ![](/fig/Three_points.png) and navigate to your CSV file and click `Open`.
 3. `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas `,` are used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
 
@@ -341,7 +341,7 @@ Adjusting the file format parameters while importing a delimited text layer into
 
 4. `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
 5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option `No geometry (attribute only table)`.
-6. Click `Add`
+6. Click `Add`.
 
 :::{dropdown} Video: Opening delimited text files in QGIS
 
@@ -356,10 +356,10 @@ The import of raster data works in the same way as for vector data. You can eith
 
 :::{dropdown} Video: Open raster data via the Data Source Manager
 
-1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`
-2. Click on the three points ![](/fig/Three_points.png) and navigate to your raster file
-3. Select the file and click `Open`
-4. Back in QGIS click `Add` 
+1. Click on `Layer` → `Add Layer` → `Add Raster Layer`.
+2. Click on the three points ![](/fig/Three_points.png) and navigate to your raster file.
+3. Select the file and click `Open`.
+4. Back in QGIS click `Add`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 
@@ -388,8 +388,8 @@ Geodata, or spatial data, refers to information that is associated with a specif
 
 :::{dropdown} Answer
 The two main types of geodata are: 
-- Vector Data: Represents geographic features using points, lines, and polygons. Each feature has associated attribute data stored in a table. Common formats include Shapefile (.shp), GeoPackage (.gpkg), and GeoJSON (.geojson).
-- Raster Data: Represents geographic data as a matrix of cells (pixels), each with a value representing information, such as temperature or elevation. Common formats include GeoTIFF (.tif), JPEG2000 (.jp2), and Esri ASCII Grid (.asc).
+- Vector Data: Represents geographic features using points, lines, and polygons. Each feature has associated attribute data stored in a table. Common formats include Shapefile (`.shp`), GeoPackage (`.gpkg`), and GeoJSON (`.geojson`).
+- Raster Data: Represents geographic data as a matrix of cells (pixels), each with a value representing information, such as temperature or elevation. Common formats include GeoTIFF (`.tif` or `.tiff`), JPEG2000 (`.jp2`), and Esri ASCII Grid (`.asc`).
 
 :::
 

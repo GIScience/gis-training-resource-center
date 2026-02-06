@@ -135,13 +135,11 @@ GeoJSON does not support multiple layers, so the polygons for the country bounda
 
 1. Load both files into QGIS.
 
-2. Add the OpenStreetMap basemap via the browser panel --> 
-   XYZ Tiles. 
+2. Add the OpenStreetMap basemap via the browser panel → `XYZ Tiles`. 
 
 3. Familiarise yourself with the data by opening the attribute table. Determine the location of the data and the type of information it contains. Understand the different columns and the data they contain in your attribute table and try to get an overview of which columns will be relevant and important for your analysis.
 
-4. In the `nigeria_populated_places` layer, open the attribute table, select 
-   the feature for **Zuyel**, and zoom to the selected point. 
+4. In the `nigeria_populated_places` layer, open the attribute table, select the feature for **Zuyel**, and zoom to the selected point. 
 
 :::{Hint}
 The place starts with a *Z* so it might help to sort the `name` column in
