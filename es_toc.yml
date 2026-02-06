@@ -1,0 +1,120 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: content/es/es_intro.md
+options:  # The options key will be applied to all chapters, but not sub-sections
+parts:
+  - caption: Modulos
+    numbered: True
+    chapters:
+      - file: content/es/Module_1/es_module_1_overview.md
+        sections: 
+          - file: content/es/Module_1/es_qgis_theory.md
+          - file: content/es/Module_1/es_qgis_installation.md
+          - file: content/es/Module_1/es_qgis_start.md
+          - file: content/es/Module_1/es_qgis_module_1_exercises.md
+      - file: content/es/Module_2/es_module_2_overview.md
+        sections:
+          - file: content/es/Module_2/es_qgis_geodata_concept.md
+          - file: content/es/Module_2/es_qgis_projections.md
+          - file: content/es/Module_2/es_qgis_geodata_management.md
+          - file: content/es/Module_2/es_qgis_attribute_table.md
+          - file: content/es/Module_2/es_data_sources.md
+          - file: content/es/Module_2/es_qgis_basemap.md
+          - file: content/es/Module_2/es_qgis_module_2_exercises.md
+      - file: content/es/Module_3/es_module_3_overview.md
+        sections:
+          - file: content/es/Module_3/es_qgis_digitisation.md
+          - file: content/es/Module_3/es_qgis_data_queries.md
+          - file: content/es/Module_3/es_qgis_data_classification.md
+          - file: content/es/Module_3/es_qgis_georeferencing.md
+          - file: content/es/Module_3/es_qgis_module_3_exercises.md
+      - file: content/es/Module_4/es_module_4_overview.md
+        sections: 
+          - file: content/es/Module_4/es_qgis_map_design_I.md
+          - file: content/es/Module_4/es_qgis_styling_vector_data.md
+          - file: content/es/Module_4/es_qgis_labels_vector.md
+          - file: content/es/Module_4/es_qgis_working_with_styles.md
+          - file: content/es/Module_4/es_qgis_symbology_raster.md
+          - file: content/es/Module_4/es_qgis_map_design_2.md
+          - file: content/es/Module_4/es_qgis_understanding_print_layout.md
+          - file: content/es/Module_4/es_qgis_map_examples.md
+          - file: content/es/Module_4/es_qgis_module_4_exercises.md
+      - file: content/es/Module_5/es_module_5_overview.md
+        sections:
+          - file: content/es/Module_5/es_qgis_spatial_tools.md
+          - file: content/es/Module_5/es_qgis_overlay_operations.md
+          - file: content/es/Module_5/es_qgis_centroids.md
+          - file: content/es/Module_5/es_qgis_non_spatial_tools.md
+          - file: content/es/Module_5/es_qgis_module_5_exercises.md
+      - file: content/es/Module_6/es_module_6_overview.md
+      - file: content/es/Module_7/es_module_7_overview.md
+        sections: 
+          - file: content/es/Module_7/es_qgis_automation_theory.md
+          - file: content/es/Module_7/es_qgis_module_7_exercises.md
+  - caption: Ejercicios
+    chapters: 
+      - file: content/es/Exercise_tracks/es_exercise_tracks_overview.md
+        sections:
+          - file: content/es/Exercise_tracks/es_larkana_flood_response.md
+          - file: content/es/Exercise_tracks/es_mdg_aa_cyclones.md
+  - caption: Wiki
+    chapters:
+      - file: content/es/Wiki/es_wiki_homepage.md
+      - file: content/es/Wiki/es_qgis_qgis_basics_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_installation_wiki.md
+          - file: content/es/Wiki/es_qgis_interface_wiki.md
+          - file: content/es/Wiki/es_qgis_projects_folder_structure_wiki.md
+          - file: content/es/Wiki/es_qgis_projections_wiki.md
+          - file: content/es/Wiki/es_qgis_basemaps_wiki.md
+          - file: content/es/Wiki/es_qgis_plugins_wiki.md
+          - file: content/es/Wiki/es_qgis_data_sources_wiki.md
+          - file: content/es/Wiki/es_licensing_data.md
+      - file: content/es/Wiki/es_qgis_geodata_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_geodata_types_wiki.md      
+          - file: content/es/Wiki/es_qgis_import_geodata_wiki.md
+          - file: content/es/Wiki/es_qgis_OpenStreetMap_wiki.md
+          - file: content/es/Wiki/es_qgis_layer_concept_wiki.md
+          - file: content/es/Wiki/es_qgis_attribute_table_wiki.md
+          - file: content/es/Wiki/es_qgis_digitisation_wiki.md   
+      - file: content/es/Wiki/es_qgis_data_classification_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_single_symbol_wiki.md
+          - file: content/es/Wiki/es_qgis_categorised_wiki.md
+          - file: content/es/Wiki/es_qgis_graduated_wiki.md
+      - file: content/es/Wiki/es_qgis_geoprocessing_wiki.md
+      - file: content/es/Wiki/es_qgis_queries_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_spatial_queries_wiki.md
+          - file: content/es/Wiki/es_qgis_non_spatial_queries_wiki.md
+      - file: content/es/Wiki/es_qgis_table_functions_wiki.md
+      - file: content/es/Wiki/es_qgis_joins_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_spatial_joins_wiki.md
+          - file: content/es/Wiki/es_qgis_non_spatial_joins_wiki.md      
+      - file: content/es/Wiki/es_qgis_raster_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_raster_basic_wiki.md
+      - file: content/es/Wiki/es_qgis_automation_wiki.md
+      - file: content/es/Wiki/es_qgis_representation_wiki.md
+        sections:
+          - file: content/es/Wiki/es_qgis_visualisation_wiki.md
+          - file: content/es/Wiki/es_qgis_map_making_wiki.md
+      - file: content/es/Wiki/es_qgis_common_errors_and_Issues.md   
+      - file: content/es/Wiki/es_web_and_mobile_apps_wiki.md
+      - file: content/es/Wiki/es_geodata_management_sharepoint.md
+  - caption: Rincón de los Capacitadores
+    chapters: 
+      - file: content/es/Trainers_corner/es_TOT_intro.md  
+      - file: content/es/Trainers_corner/es_how_to_training.md
+      - file: content/es/Trainers_corner/es_training_graphical_outline.md
+      - file: content/es/Trainers_corner/es_training_day_structure.md  
+      - file: content/es/Trainers_corner/es_how_to_teach_GIS.md
+      - file: content/es/Trainers_corner/es_how_to_assessment.md 
+  - caption: About
+    chapters:
+      - file: content/es/About/about_1.md
+      - file: content/es/contribution_plan.md

@@ -6,13 +6,18 @@ __🔙[Back to Homepage](/content/intro.md)__
 Geoinformation systems (GIS) visualize data by stacking layers on top of one another to create maps. Every layer represents one set of information.
 This is a vital concept to understand since analysis, as well as visualisation of data, is based on it.
 
-![Layer Concept](/fig/Layer_concept.png) 
+:::{figure} /fig/Layer_concept.png
+---
+name: layer_concept_wiki
+width: 500 px
+---
+The layer concept in GIS applications. Source unknown. All rights reserved. This content is excluded from our Creative Commons license.
+:::
 
-<!--ADD: Source?-->
 
 ## Hide and show layers
 
-Set a tick in the Layers panel
+- Check the check-box in the Layers panel on the bottom left:
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 

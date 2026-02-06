@@ -15,7 +15,7 @@ interpreting maps.
 In this chapter we will go over the basics of symbology, colours, and how to adjust individual layers in QGIS to create 
 comprehensive maps.
 
-:::{admonition} Recap: Types of Maps
+::::{admonition} Recap: Types of Maps
 :class: seealso
 
 In general, there are two main types of maps: __topographic maps__ and __thematic maps__.
@@ -25,61 +25,61 @@ networks, terrain, hydrography). They display the physical location of objects i
 elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for 
 agricultural land). 
 
-```{figure} ../../fig/en_30.30.2_topographic_map_examples.png
+:::{figure} ../../fig/en_30.30.2_topographic_map_examples.png
 ---
 width: 600px
-name: Topographic Maps Examples
+name: en_30.30.2_topographic_map_examples
 ---
 Examples for topographic maps
-```
+:::
 
 __Thematic maps__ display the distribution of specific data or statistically processed information, such as population 
 size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to 
 the rules of graphic semiology. 
 
 
-```{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
+:::{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
 ---
 width: 600px
-name: Thematic maps examples
+name: en_30.30.2_thematic_maps_examples
 ---
 Examples for thematic maps
-```
+:::
 
 These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and 
 readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the 
 information you want to convey.
 
-:::
+::::
 
 ## Visual Variables
 
-```{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
+:::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
-name: Graphic_information
+name: en_30.30.2_graphic_semiology_signs
 ---
-You can use different graphic signs depending on the type of information you want to display.
-```
+You can use different graphic signs depending on the type of information you want to display (Source: Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform.)
+:::
 
 Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, 
 size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at 
-your disposal. They allows for the expression of __relationship of difference, order, association, or quantity__ 
+your disposal. They allow for the expression of __relationship of difference, order, association, or quantity__ 
 between each element, helping to display different information.
 
-```{figure} ../../fig/en_visual_variables.png
+:::{figure} ../../fig/en_visual_variables.png
 ---
-name: Visual_variables
+name: en_visual_variables
 width: 500px
 ---
-Visual variables according to Bertin (1967)
-```
+Visual variables according to Bertin (1967).
+:::
 
-```{Caution} 
+:::{Caution} 
 Visual perception varies from one person to the next according to various capabilities:
 - Physiological (e.g. colour blindness)
 - Transcultural (green = nature, blue = water)
-```
+:::
 
 ## Using visual variables in cartography
 
@@ -89,31 +89,31 @@ OpenStreetMap offers several map products: OSM Standard, Tracestack Topo, CyclOS
 is the same, but the styling is different. In each case, the cartographers had different goals in mind (e.g., for 
 the cycling map, show the safest biking routes, bike repair stations and resting places) and chose the styling accordingly.
 
-::::{grid} 2
-:::{grid-item}
+:::::{grid} 2
+::::{grid-item}
 
-```{figure} /fig/m4_OSM_Overviewmap_example.png
+:::{figure} /fig/m4_OSM_Overviewmap_example.png
 ---
-name: OSM_topo
+name: m4_OSM_Overviewmap_example
 width: 375 px
 ---
 [OSM](https://www.openstreetmap.org) Standard 
-```
-
 :::
 
-:::{grid-item}
+::::
 
-```{figure} /fig/m4_OSM_bikemap.png
+::::{grid-item}
+
+:::{figure} /fig/m4_OSM_bikemap.png
 ---
-name: OSM_Radfahrerkarte
+name: m4_OSM_bikemap
 width: 375 px
 ---
 OSM Cycling Map
-```
-
 :::
+
 ::::
+:::::
 
 In the following dropdowns, you will 
 find different examples of maps used in humanitarian work. 
@@ -130,50 +130,50 @@ You can also use maps from you encountered in your work or daily life.
 
 ::::{dropdown} __Map Example 1__
 
-```{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
-name: map_example_ethiopia
+name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
 ---
 Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
-``` 
+::: 
 
 ::::
 
 ::::{dropdown} __Map Example 2__
 
-```{figure} /fig/proportional_circles_example.png
+:::{figure} /fig/proportional_circles_example.png
 ---
-name: prop_circles_example
+name: proportional_circles_example
 width: 500 px
 ---
-Internally Displaced Persons (IDPs), 30 September 2024 (Soure: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
-```
+Internally Displaced Persons (IDPs), 30 September 2024 (Source: [UNHCR](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)).
+:::
 
 ::::
 
 ::::{dropdown} __Map Example 3__
 
-```{figure} /fig/choropleth_hum_example.png
+:::{figure} /fig/choropleth_hum_example.png
 ---
-name: hum_sit_monitoring_choro_example
+name: choropleth_hum_example
 width: 700 px
 ---
-South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf))
-```
+South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: [REACH](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)).
+:::
 
 ::::
 
 
 ::::{dropdown} __Map Example 4__
 
-```{figure} /fig/en_m4_operational_overview_example.png
+:::{figure} /fig/en_m4_operational_overview_example.png
 ---
-name: operational_overview_example
+name: en_m4_operational_overview_example
 width: 650 px
 ---
-Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024))
-```
+Operational overview or response activity map (Source: [Shelter Cluster Vanuata](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)).
+:::
 
 ::::
 
@@ -201,13 +201,13 @@ Choropleth maps and graduated symbol maps are ideal for showing patterns over la
 values within each region, just an overall gradient or level of intensity and they are used in almost every application 
 of mapping and GIS.
 
-```{figure} /fig/choropleth_intro_example.png
+:::{figure} /fig/choropleth_intro_example.png
 ---
 name: choropleth_intro_example
 width: 600 px
 ---
-An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth))
-```
+An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth)).
+:::
 
 #### Use cases
 
@@ -260,9 +260,9 @@ comprehensive format. For example, you can:
 - For raster data, you can assign a colour gradient for the different values
 
 The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project 
-has it's own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
+has its own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to 
 polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, 
-or add SVG-symbols of varying sizes to ). 
+or add SVG-symbols of varying sizes). 
 
 
 ## Symbology
@@ -287,104 +287,165 @@ __transparency__.
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or 
 roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for 
 numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring 
-schemes is best to show the relative difference between the values. However, if the data has positive __and__ negative 
+scheme is best to show the relative difference between the values. However, if the data has positive __and__ negative 
 values, a diverging colour gradient should be used.
 
-``` {figure} ../../fig/en_colour_gradients_qualities.png
+:::{figure} ../../fig/en_colour_gradients_qualities.png
 ---
-name: Colouring schemes
+name: en_colour_gradients_qualities
 width: 750px
 ---
 Different types of colouring schemes.
-```
+:::
 
 When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the 
 gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are 
 not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and 
 white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
-```{figure} ../../fig/de_colour_gradients_saturation.png
+:::{figure} ../../fig/de_colour_gradients_saturation.png
 ---
-name: colour gradients saturation example
+name: de_colour_gradients_saturation
 width: 750px
 ---
 Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under 
-each example. Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the 
+each example. (Source: Stauffer, Reto & Mayr, Georg & Dabernig, Markus & Zeileis, Achim. (2014). Somewhere Over the 
 Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological 
-Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.
-```
+Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)
+:::
 
 Colour gradients can also encompass multiple hues:
 
-```{figure} ../../fig/colour_gradients_hues.png
+:::{figure} ../../fig/colour_gradients_hues.png
 ---
-name: colour gradients with multiple hues
+name: colour_gradients_hues
 width: 750px
 ---
 Single hue gradient on the left; Multiple hue gradient on the right.  
-```
+:::
 
-```{tip}
+:::{tip}
 The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to select and 
 generate colour palettes for your use case. 
-```
+:::
 
 ### Colourblindness
 
-When choosing the colours, you have to keep in mind that colour gradients (especially 
-diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
+When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
 
-``` {figure} ../../fig/Colour_Blindness.png
+:::{figure} ../../fig/Colour_Blindness.png
 ---
-name: colour blindness examples
+name: Colour_Blindness
 width: 750px
 ---
-Different Colour schemes for the Colour Vision Impaired; Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270 
-```
+Different Colour schemes for the Colour Vision Impaired (Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270).
+:::
 
 ## Complex Maps
 
-The different symbolisation methods discussed in this chapter can be combined in 
-different ways to create sophisticated reports and maps. By combining several methods, 
-you can communicate different phenomena intuitively to the reader. A classical example 
-is a combination of a choropleth map (graduated colours) with a proportional circles map 
-(see {numref}`bivariate_map_example_lebanon`). 
+The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map  (see {numref}`en_complex_map_lebanon`). 
 
 __Complex Map 1:__
 
-```{figure} /fig/en_complex_map_lebanon.png
+:::{figure} /fig/en_complex_map_lebanon.png
 ---
-name: bivariate_map_example_lebanon
+name: en_complex_map_lebanon
 width: 550 px
 ---
 A complex map using graduated colours and proportional circles (Source: [REACH](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024))
-```
+:::
 
 __Complex Map 2:__
 
-```{figure} /fig/en_complex_bivariate_map.png
+:::{figure} /fig/en_complex_bivariate_map.png
 ---
-name: complex_bivariate_map_example
+name: en_complex_bivariate_map
 width: 550 px
 ---
-A complex map combining layer styling and different visual variables to 
-communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18)).
-```
+A complex map combining layer styling and different visual variables to communicate a complex situation (Source: [SIMS](https://rcrcsims.org/portfolio/view/18)).
+:::
 
 __Complex Map 3:__
 
-```{figure} /fig/en_complex_map_example_yemen.png
+:::{figure} /fig/en_complex_map_example_yemen.png
 ---
-name: test_complex_map
+name: en_complex_map_example_yemen
 width: 550 px
 ---
 A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: [REACH](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024))
-```
+:::
 
 :::{admonition} Now it's your turn!
 :class: tip
-{numref}`bivariate_map_example_lebanon`, {numref}`complex_bivariate_map_example` and {numref}`test_complex_map` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
+{numref}`en_complex_map_lebanon`, {numref}`en_complex_bivariate_map` and {numref}`en_complex_map_example_yemen` make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps? 
 :::
 
 
 Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](/content/Module_4/en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 
+
+## Self-Assessment Questions
+
+::::{admonition} Test your knowledge
+:class: note
+
+1. __What are “visual variables” (graphic variables) and how do they help in map design?__
+
+:::{dropdown} Answer
+- Visual variables are graphical properties of map symbols (points, lines, polygons) that can be varied to encode information (e.g. hue, value, size, shape, orientation, texture).
+- They help to design the visual representation of geodata to communicate information:
+    - use the size to show the magnitude
+    - use different colours to distinguish between classes
+    - use the intensity of a colour (value) to show a progression or an increase in intensity of a phenomenon.
+- Well-chose 
+:::
+
+2. __Why is it important to consider colour schemes (hue, value, saturation) when styling maps?__
+
+:::{dropdown} Answer
+- __Hue__ is the “color family” (red, blue, green, etc.); it’s good for __distinguishing categories__.
+- __Value__ (or lightness/darkness) gives a sense of order: darker → more, lighter → less. Useful for quantitative data.
+- __Saturation__ (intensity of color) influences how vivid or muted a color appears; high saturation draws attention, low saturation recedes.
+
+Using inappropriate combinations (e.g. very saturated adjacent hues, or small value differences) can reduce contrast, make features indistinguishable, or cause color “vibrations” or optical illusions.
+The scheme must be perceptually effective, accessible (e.g. for color-blind readers), consistent, and appropriate to the type of data (nominal vs ordinal vs interval) and map purpose.
+:::
+
+3. __What is the difference between categorical (qualitative), sequential, and diverging colour schemes? When is each appropriate?__
+
+:::{dropdown} 
+
+- __Categorical (qualitative)__
+    Used for nominal (no inherent order) data. Each category gets a distinct hue (or shape) without implying magnitude. Example: land‑use types (forest, urban, water).
+- __Sequential__ 
+    Used for data that progress in one direction (low → high). Usually a single hue whose value or saturation changes gradually (e.g. light to dark). Appropriate for e.g. population density, income, temperature.
+- __Diverging__
+    Used for data that deviate around a meaningful midpoint (e.g. zero, average). Two contrasting hues diverge from a central neutral color. Example: change maps (positive growth vs negative decline), anomalies above/below average.
+:::
+
+4. __What are some common ways to style vector data (lines, points, polygons)? Give examples (e.g. changing stroke, fill, using symbols).__
+
+:::{dropdown} Answer
+- __Points:__  
+    - Change symbol shape (circle, square, star)
+    - Vary size according to attribute (proportional symbol)
+    - Use colour or fill for classification
+    - Add outline (stroke) or halo for contrast
+- __Lines:__  
+    - Adjust stroke (width) to indicate magnitude (e.g. make majord roads thicker)
+    - Use different line styles (solid, dashes, dotted) for categories
+    - Change colour of lines to distinguish types (e.g. rivers, roads, administrative boundaries)
+- __Polygons:__  
+    - Use fill color (hue + value) to indicate category or intensity
+    - Use transparency (opacity) to let background features show through
+    - Use strokes (borders) of varying width or colour (emphasis or boundary types)
+    - Add hatching, textures, or pattern fills for categorical detail
+:::
+
+5. __What is a choropleth map? How is it different from a graduated symbol map?__
+
+:::{dropdown} Answer
+- A choropleth map is a thematic map in which areas (polygons) are shaded or colored according to the value of a variable (often normalized, e.g. per capita). All of the polygon is filled, with the color (hue/value) representing the magnitude of that variable.
+- A graduated symbol map (or proportional / graduated symbols) uses symbols (usually points placed within regions or centroids) whose size (or possibly color) varies to represent the magnitude of data. The underlying polygons themselves might remain unshaded or lightly styled.
+:::
+
+::::

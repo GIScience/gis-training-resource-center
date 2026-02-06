@@ -120,13 +120,13 @@ For our following analysis, we want to export the road network for the Larkana d
    clicking on `Log in`.
 3. Now we can start creating an OSM export. To do so, click on `Start Exporting`. You will be directed to the export tool.
 
-```{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
+:::{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
 ---
 name: HOT_Export_Tool_1
 width: 750 pc
 ---
 
-```
+:::
 
 In the export tool, you have a map canvas on the right and an input area on the left. On the map canvas, you determine the geographic location of the data you want to export. On the left side you determine the metadata of the export, the file format, and select which data will be downloaded (e.g., buildings, roads, hospitals, settlements, etc.)
 
@@ -141,13 +141,12 @@ Alternatively, once you zoomed into the area, you can draw a box or a polygon to
 
 5. On the map canvas, search for Larkana in the search bar and select the district. The map will zoom in to show the district. This will also select the district as our area of interest. You can see this by the blue polygon. Our export will only download data that is located within this area.
 
-```{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
+:::{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
 ---
 name: HOT_Export_3
 width: 500 px
 ---
 
-```
 
 6. Click `Next`.
 
@@ -155,23 +154,22 @@ width: 500 px
 
 8. Under the data tab, we can select the key values we are interested in. We want to download to download the road network so we have to open the dropdown under `Transportation` and check the box for `Roads`
 
-```{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
+:::{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
 ---
 name: Hot Export Tool 5
 width: 500 px
 ---
-
-```
+:::
 
 9. We are done adjusting the export. Click `Next`. A summary page will open. Click on `Create Export`. Your new export will begin 
 
-```{figure} /fig/en_Hot_Export.png
+:::{figure} /fig/en_Hot_Export.png
 ---
 width: 800px
 align: center
-name: Hot Export tool download of Mauritius financial institutions
+name: Hot Export tool download
 ---
-```
+:::
 
 ::::{dropdown} Bonus Exercise!
 
@@ -179,15 +177,12 @@ In the next exercise of the Larkana Flood Response Exercise track, we want to id
 
 ::::
 
-4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html).
+4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#vector-data-import).
 5. Arrange the layers on the map so you can see the new layer.
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
-    * Right-click on the layer `Larkana_Roads` in the `Layer Panel` 
-      -> `Properties`. A new window will open up with a vertical tab section on 
-      the left. Navigate to the `Symbology` tab.
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. 
-      Under `Value` select "highway".
+    * Right-click on the layer `Larkana_Roads` in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "highway".
     * Further down the window click on `Classify`.  Now you should see all unique 
       values or attributes of the selected column.  You can adjust the 
       colours by double-clicking on one row in the central field. Once you are 
@@ -196,17 +191,17 @@ In the next exercise of the Larkana Flood Response Exercise track, we want to id
 As you can see, the HOT Export tool offers a good mix of flexibility and quick 
 access to OSM data.
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Good options for data selection|- Many steps involved |
-|+ Many different data formats available|- Only fixed option for data selection|
-|+ Easy to use||
-|+ Query can easily be repeated | |
+| Advantages                              | Disadvantages                          |
+|-----------------------------------------|----------------------------------------|
+| + Good options for data selection       | - Many steps involved                  |
+| + Many different data formats available | - Only fixed option for data selection |
+| + Easy to use                           |                                        |
+| + Query can easily be repeated          |                                        |
 
 
 ## Alternative Tools
 
-`````{tip}
+:::::{tip}
 
 The HOT Export Tool is a good way to export tailored OSM data for your personal use. However, in some use cases, you might want to choose a different tool such as Geofabrik, QuickOSM, or even just the humanitarian data exchange website. Below, you can find a short description of the tool and it's advantages. You can find out how to use the different tools step by step on [this wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html).
 
@@ -217,11 +212,11 @@ __Geofabrik__
 ^^^
 The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM. 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
-|+ Very up-to-date OSM exports|- Large file size|
-|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
+| Advantages                                                                  | Disadvantages                                                                                   |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| + Quick access to complete OSM datasets                                     | - If one is only interested in specific features or regions (other then countries), not optimal |
+| + Very up-to-date OSM exports                                               | - Large file size                                                                               |
+| + Clear documentation of which OSM features are contained in each shapefile | - Only available as shapefile                                                                   |
 
 :::
 
@@ -238,11 +233,11 @@ You will need to formulate a data query to find the data that you are looking fo
 
 This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
-|+ Data loads directly in QGIS|- Building queries can quickly become complex |
-|+ Query can easily be repeated | |
+| Advantages                                     | Disadvantages                                 |
+|------------------------------------------------|-----------------------------------------------|
+| + Query can be tailored for very specific data | - Requires knowledge of OSM data model        |
+| + Data loads directly in QGIS                  | - Building queries can quickly become complex |
+| + Query can easily be repeated                 |                                               |
 
 :::
 
@@ -256,4 +251,4 @@ Here, the Humanitarian OpenStreetMap Team provides OSM exports for countries. Th
 :::
 
 ::::
-`````
+:::::
