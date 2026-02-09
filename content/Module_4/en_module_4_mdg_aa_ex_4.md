@@ -25,7 +25,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 
-This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html)
+This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html).
 
 :::
 
@@ -73,7 +73,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on conducting trainings. 
 
 ### Conduct the training
 
@@ -125,20 +125,20 @@ Make sure the following layers are already loaded into your QGIS project. These 
 
 If any are missing:
 - Load them using **drag & drop** from your `results` folder, or
-- Use `Layer` → `Add Layer` → `Add Vector Layer` or `Add Raster Layer`
+- Use `Layer` → `Add Layer` → `Add Vector Layer` or `Add Raster Layer`.
 
 ---
 
 ### 2. **Apply Predefined Style Files**
 Apply the following`.qml` style files to the respective layers:
 
-| **Layer**                              | **Style File**                            |
-|----------------------------------------|-------------------------------------------|
-| `example_Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
-| `cyclone_harald_buffer`                  | `exposed_cyclone_area_style.qml`          |
-| `Harald_Exposed_Population`            | `exposed_population_style.qml`            |
-| `admin2_health_affected`          | `exposed_healthsites_style.qml`           |
-| `admin2_education_affected`            | `exposed_education_facilities_style.qml`  |
+| **Layer**                   | **Style File**                           |
+|-----------------------------|------------------------------------------|
+| `example_Harald_2025_Track` | `storm_track_cyclone_style.qml`          |
+| `cyclone_harald_buffer`     | `exposed_cyclone_area_style.qml`         |
+| `Harald_Exposed_Population` | `exposed_population_style.qml`           |
+| `admin2_health_affected`    | `exposed_healthsites_style.qml`          |
+| `admin2_education_affected` | `exposed_education_facilities_style.qml` |
 
 :::{note}
 ⚠️ For the **health** and **education facilities**, the provided style files are linked to the column containing the **sum of exposed facilities**.  
@@ -146,13 +146,13 @@ They are **not** based on the percentage column.
 :::
 
 **Steps:**
-- Right-click on the layer in the **Layers Panel**  
-- Select **Properties**  
-- In the window that opens, go to the **Symbology** tab  
-- At the bottom left, click **Style** → **Load Style…**
-- Click on the three points ![](/fig/Three_points.png)  
-- Navigate to the corresponding `.qml` file in the folder `layer_sytle`and select it  
-- Click **Open**, then **Apply** and **OK** to confirm  
+- Right-click on the layer in the **Layers Panel**.  
+- Select `Properties`.  
+- In the window that opens, go to the `Symbology` tab.  
+- At the bottom left, click `Style` → `Load Style…`.
+- Click on the three points ![](/fig/Three_points.png).
+- Navigate to the corresponding `.qml` file in the folder `layer_sytle` and select it. 
+- Click `Open`, then `Apply` and `OK` to confirm.  
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
 
@@ -170,7 +170,7 @@ They are **not** based on the percentage column.
 width: 600px
 align: center
 ---
-Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
+Map showing the numberof persons exposed per district using the .qml style file.
 :::
 ::::
 ::::{tab-item} Intermediate result: Exposed Health Facilities
@@ -179,7 +179,7 @@ Carte montrant le nombre de personnes exposées par district après l’applicat
 width: 600px
 align: center
 ---
-Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
+Map showing the exposed health establishments per district.
 :::
 ::::
 ::::{tab-item} Intermediate result: Exposed Education Facilities
@@ -188,7 +188,7 @@ Carte indiquant le nombre total d’établissements de santé exposés par distr
 width: 600px
 align: center
 ---
-Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
+Map showing the number of education institutions exposed per district.
 :::
 ::::
 :::::
@@ -200,7 +200,7 @@ Carte affichant le nombre total d’établissements scolaires exposés par distr
 Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.
 
 **Steps:**
-- **Right-click** on the layer `admin2_health_affected` → select **Duplicate Layer**  
+- <kbd>Right-click</kbd> on the layer `admin2_health_affected` → select **Duplicate Layer**  
 - **Rename** the duplicated layer to:
   ```
   admin2_health_affected_percentage
@@ -243,10 +243,10 @@ Save your manually created styles as `.qml` files for future reuse.
 - Select **Properties**  
 - In the window that opens, go to the **Symbology** tab  
 - Click on `Style` → `Save Style…`
-- Save the file in the folder `layer_sytle`
+- Save the file in the folder `layer_style`
 - Use these filenames:
   ```
-   health_pct_affected_style
+  health_pct_affected_style
   ```
   ```
   education_pct_affected_style
@@ -260,9 +260,9 @@ Save your manually created styles as `.qml` files for future reuse.
 
 To reuse your styles in any future project:
 
-- Go to `Settings` → `Style Manager`
-- Click `Import/Export` → `Import Items`
-- Browse to and select your saved `.qml` files
+- Go to `Settings` → `Style Manager`.
+- Click `Import/Export` → `Import Items`.
+- Browse to and select your saved `.qml` files.
 
 The styles will now appear as presets in the **Layer Styling Panel**.
 
