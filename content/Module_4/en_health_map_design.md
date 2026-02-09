@@ -14,46 +14,48 @@ A health facility capacity map is a practical and valuable tool for health prepa
 Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes. 
 
 
-```{figure} /fig/HS_capacity_map_examepls.drawio.svg
+```{figure} /fig/HS_capacity_map_examples.drawio.svg
 ---
 name: Building a Multi-Variable Hospital Capacity Map Step by Step
 width: 800
 ---
-Building a Multi-Variable Hospital Capacity Map Step by Step
+Building a Multi-Variable Hospital Capacity Map Step by Step.
 ```
 
 In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.
 
 ## About the Dataset
 
-The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi. **[Malawi - Health Facility Registry](https://data.humdata.org/dataset/malawi-health-facility-registry)**
+The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi: **[Malawi - Health Facility Registry](https://data.humdata.org/dataset/malawi-health-facility-registry)**.
 It exists to provide a single, up-to-date source of information for planning and monitoring health services.
 
 > ⚠️ **Note:** For the purpose of this tutorial, the dataset has been **manipulated**.
 ---
 Download the data folder [**here**](https://nexus.heigit.org/repository/gis-training-resource-center/module_4/exercise_6/Module_4_Exercise_Malawi_Health_Facilities_Registry.zip) and save it on your PC. Unzip the .zip file.
+
 ### Fields used in this tutorial
 
-| **Field**                 | **Purpose in tutorial** |
-|--------------------------|--------------------------|
-| **TYPE**                 | To extract hospitals from the full facilities dataset |
+| **Field**                | **Purpose in tutorial**                                     |
+|--------------------------|-------------------------------------------------------------|
+| **TYPE**                 | To extract hospitals from the full facilities dataset       |
 | **STATUS**               | To map Functional vs Non-functional facilities using colour |
 | **Number_Beds**          | To represent hospital capacity using graduated symbol sizes |
-| **LATITUDE & LONGITUDE** | To create point geometries in QGIS |
+| **LATITUDE & LONGITUDE** | To create point geometries in QGIS                          |
 
 These fields are enough to build a clear, multi-variable point map.
 
 ## Health Facilit Capacity Map Tutorial
 
 ### Data preparation
-First, we need to load the Malawi - Health Facility Registry dataset into QGIS
+
+First, we need to load the Malawi - Health Facility Registry dataset into QGIS.
 
 ::::{dropdown} Import the Malawi health facilities CSV into QGIS.
 
 #### Import the Malawi health facilities CSV into QGIS
 
 1. In the top menu, go to  
-   **Layer → Add Layer → Add Delimited Text Layer…**
+   **Layer → Add Layer → Add Delimited Text Layer…**.
 
 2. Next to the **File name** field, click the three dots ![](/fig/Three_points.png)   
     and browse to your **Malawi health facilities CSV** file and click `Open`.
