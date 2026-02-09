@@ -51,7 +51,7 @@ The Digitisation Toolbar in QGIS 3.36.
 :::
 
 Digitising is done with the `Digitizing Toolbar` and on the map canvas. 
-First, you need to check if the `Digitizing Toolbar` is activated. To do that 
+First, you need to check if the `Digitizing Toolbar` is activated. To do that:
 * Click on the `View` tab in the menu bar and click `Toolbars`. Check if the `Digitizing` and `Advanced Digitizing` toolbar is activated.
 
 First, you need to check if the `Digitizing Toolbox` is activated. To do that 
@@ -97,20 +97,20 @@ For more complex digitisation procedures, you will use the advanced digitisation
 
 :::{dropdown} Advanced digitizing Toolbar
 
-|Tool|Purpose|Tool|Purpose|
-|---|---|-----|---|
-|![](/fig/cad.png)|Enable Advanced Digitizing Tools|||
-|![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png)|Move Feature(s)|![Alt text](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png)|Copy and Move Feature(s)|
-|![Alt text](/fig/mActionRotateFeature.png)|Rotate Feature(s)|![Alt text](/fig/mActionSimplify.png)|Simplify Feature|
-|![Alt text](/fig/mActionScaleFeature.png)|Scale Feature||
-|![Alt text](/fig/mActionAddRing.png)|Add Ring|![Alt text](/fig/mActionAddPart.png)|Add Part|
-|![Alt text](/fig/mActionFillRing.png)|Fill Ring|![Alt text](/fig/mActionReverseLine.png)|Swap direction|
-|![Alt text](/fig/mActionDeleteRing.png)|Delete Ring|![Alt text](/fig/mActionDeletePart.png)|Delete Part|
-|![Alt text](/fig/mActionOffsetCurve.png)|Offset Curve|![Alt text](/fig/mActionReshape.png)|Reshape Features|
-|![Alt text](/fig/mActionSplitParts.png)|Split Parts|![Alt text](/fig/mActionSplitFeatures.png)|Split Features|
-|![Alt text](/fig/mActionMergeFeatureAttributes.png)|Merge Attributes of Selected Features|![Alt text](/fig/mActionMergeFeatures.png)|Merge Selected Features|
-|![Alt text](/fig/mActionRotatePointSymbols.png)|Rotate Point Symbols|![Alt text](/fig/mActionOffsetPointSymbols.png)|Offset Point Symbols|
-|![Alt text](/fig/mActionTrimExtend.png)|Trim or Extend Feature|||
+| Tool                                                                                                        | Purpose                               | Tool                                                                                                                              | Purpose                  |
+|-------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| ![](/fig/cad.png)                                                                                           | Enable Advanced Digitizing Tools      |                                                                                                                                   |                          |
+| ![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png) | Move Feature(s)                       | ![Alt text](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png) | Copy and Move Feature(s) |
+| ![Alt text](/fig/mActionRotateFeature.png)                                                                  | Rotate Feature(s)                     | ![Alt text](/fig/mActionSimplify.png)                                                                                             | Simplify Feature         |
+| ![Alt text](/fig/mActionScaleFeature.png)                                                                   | Scale Feature                         |                                                                                                                                   |
+| ![Alt text](/fig/mActionAddRing.png)                                                                        | Add Ring                              | ![Alt text](/fig/mActionAddPart.png)                                                                                              | Add Part                 |
+| ![Alt text](/fig/mActionFillRing.png)                                                                       | Fill Ring                             | ![Alt text](/fig/mActionReverseLine.png)                                                                                          | Swap direction           |
+| ![Alt text](/fig/mActionDeleteRing.png)                                                                     | Delete Ring                           | ![Alt text](/fig/mActionDeletePart.png)                                                                                           | Delete Part              |
+| ![Alt text](/fig/mActionOffsetCurve.png)                                                                    | Offset Curve                          | ![Alt text](/fig/mActionReshape.png)                                                                                              | Reshape Features         |
+| ![Alt text](/fig/mActionSplitParts.png)                                                                     | Split Parts                           | ![Alt text](/fig/mActionSplitFeatures.png)                                                                                        | Split Features           |
+| ![Alt text](/fig/mActionMergeFeatureAttributes.png)                                                         | Merge Attributes of Selected Features | ![Alt text](/fig/mActionMergeFeatures.png)                                                                                        | Merge Selected Features  |
+| ![Alt text](/fig/mActionRotatePointSymbols.png)                                                             | Rotate Point Symbols                  | ![Alt text](/fig/mActionOffsetPointSymbols.png)                                                                                   | Offset Point Symbols     |
+| ![Alt text](/fig/mActionTrimExtend.png)                                                                     | Trim or Extend Feature                |                                                                                                                                   |                          |
 :::
 
 
@@ -132,22 +132,22 @@ Think of a spatial dataset you could need in your humanitarian operations. What 
 
 :::
 
-1. `Layer` --> `Create Layer` -> `New GeoPackage Layer` or `New Shapefile Layer`
+1. `Layer` → `Create Layer` → `New GeoPackage Layer` or `New Shapefile Layer`.
 2. Click on ![](/fig/Three_points.png) next to the `file name` input field and navigate to the folder where you want to save the dataset.
-3. `File encoding`: Make sure this is set to UTF-8
+3. `File encoding`: Make sure this is set to UTF-8.
 4. `Geometry type`: Select the type of feature you want to digitise e.g. points or lines.
 5. Under `Additional dimension` you should always make sure that you check `None`. Except if there is the possibility to collect the Z-values (elevation) as well. But this is mostly not the case.
 6. CRS dropdown: Select the EPSG/CRS you want to set for the new layer. By default, QGIS selects the project CRS. If you want to change the CRS click on ![](/fig/mIconProjectionEnabled.png).
 7. Under `New Field` you can add columns to the new layer. Here you can set up what other type of data you want to collect in this dataset.
     * `Type`: Select the data type the column will have e.g. `Text`, `Whole number`, `Decimal Number`, `Date`.
     * Click on ![](/fig/mActionNewAttribute.png) to add the new column to the `Fields List`.
-8. Click `OK` to create the new data
+8. Click `OK` to create the new data.
 
 
 :::{figure} /fig/New_GeoPackage_Layer.png
 ---
 width: 500px
-name: new_gpgk_layer
+name: New_GeoPackage_Layer
 align: center
 ---
 The Layer Creation window in QGIS 3.36.
@@ -163,8 +163,7 @@ Once you have set up the new layer, you can start adding geometrical features. T
 ### Creating new data entries
 
 1. Select the layer you want to add data to in the Layer panel.
-2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the 
-digitisation toolbar. 
+2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the digitisation toolbar. 
 
 ### Creating point data
 
@@ -224,13 +223,13 @@ Try digitising the RCRC branches in your country by following the steps below.
 :::
 
 1. Create a new point dataset.
-2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example)
+2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example).
 3. Search the RCRC branches in your country on google maps.
-4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard
-5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot
+4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard.
+5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot.
 
 6. Enable the editing mode ![](/fig/mActionToggleEditing.png) in your new layer.
-7. Click on ![](/fig/mActionCapturePoint.png)
+7. Click on ![](/fig/mActionCapturePoint.png).
 8. Add the point feature at the location that was indicated.
 9. Add the name of the RCRC branch.
 10. Click `Ok`. 
@@ -253,7 +252,7 @@ Remember to change the geometry type into lines if you want to create a new line
 
 Creating line data works in the same way as creating point data (see above). First, you must create a new line layer or use an existing one. 
 
-1.	Select the line layer you want to add data to in the Layer panel
+1.	Select the line layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now, the layer is in the editing mode.
 3.	Click on ![](/fig/mActionCaptureLine.png). 
 4.	To digitise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.
@@ -386,7 +385,7 @@ You can open the attribute table of the selected layer by pressing <kbd>F6</kbd>
 :::
 ::::
 
-1. Open the [attribute table](/content/Module_2/en_qgis_attribute_table.md)
+1. Open the [attribute table](/content/Module_2/en_qgis_attribute_table.md).
 2. Click on ![](/fig/mActionToggleEditing.png) to enter into the editing mode.
 3. Choose the field that you want to edit. 
 4. Enter the corrected value.

@@ -76,7 +76,7 @@ __Relevant Wiki Articles__:
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
 
 ### Conduct the training
 
@@ -115,12 +115,12 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 
-2. Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.
+2. Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.
 
 3. Import the GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` and `Sierra_leone_roads.gpkg` as well as the shapefile `Sierra_leone_foodinsecurity_2015.shp` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop)). 
-Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`: Click on the three dots ![](/fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)).
+Or by clicking `Layer` → `Add Layer` → `Add Vector Layer`: Click on the three dots ![](/fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)).
 
 :::{Attention}
 GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
@@ -131,7 +131,7 @@ GeoPackages can contain multiple files and even whole QGIS projects. When you lo
 5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md). Delete Kabala airport too, since it is also not operational anymore.
 
 6. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
-To add the plugin `OSM Place Search`, click on `Plugins` -> `Manage and Install Plugins…` -> `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` -> `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)).
+To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)).
     * In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.
 
 :::{figure} /fig/mod3_classification_ex_OSMsearch.png
@@ -148,7 +148,7 @@ Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`
 8. *Optional:* In the attribute table, create a new column `Runway_length` and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool ![](/fig/measuring_tool_icon.png).
 
 9. Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the "[Graduated Classification](/content/Wiki/en_qgis_graduated_wiki.md)" visualization option for the layer `Sierra_leone_foodinsecurity_2015` by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.
-    * Right-click on the layer `Sierra_leone_foodinsecurity_2015.shp` in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+    * Right-click on the layer `Sierra_leone_foodinsecurity_2015.shp` in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * In the topmost dropdown menu choose `Graduated`. Under `Value` select “Total_FI”.
     * Further down the window click on `Classify`. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu `Color ramp`. Also, you can modify the value distribution of the classes by selecting different classification modes ([Wiki](/content/Wiki/en_qgis_graduated_wiki.md)) in the `Mode` dropdown menu. 
     * Play around with these options to achieve a colour scheme that suits the data. Once you are done, click `Apply` and `OK` to close the symbology window.

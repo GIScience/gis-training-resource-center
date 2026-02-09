@@ -35,7 +35,7 @@ __Download World Bank Official Boundaries__
 
 ## Manual Selection
 
-Manual selection is done mostly using one of the click-based selection tools available under   in your project toolbar (alternative: `Edit` > `Select`). These include `Select Feature(s)`, `Select Feature by Polygon`, `Select Feature by Freehand` and `Select Feature by Radius`.
+Manual selection is done mostly using one of the click-based selection tools available under   in your project toolbar (alternative: `Edit` → `Select`). These include `Select Feature(s)`, `Select Feature by Polygon`, `Select Feature by Freehand` and `Select Feature by Radius`.
 \
 \
 Example: `Select Feature(s)`
@@ -45,7 +45,7 @@ Example: `Select Feature(s)`
 3.	Use the tool outside of selectable features to end your selection.
 
 :::{Tip}
-Holding down “Shift” during click-based selection allows you to select multiple features.
+Holding down "Shift" during click-based selection allows you to select multiple features.
 :::
 
 :::{dropdown} Example: Manually select country polygons by click
@@ -74,11 +74,11 @@ Selected features are highlighted in bright yellow in the geospatial view and bl
 
 ## Attribute Based Selection
 
-A query based on specific Attributes can be done utilizing the `Select Features by Expression` tool available under ![](/fig/mActionSelectbyExpression.png) in the project toolbar and the attribute table (alternative: `Edit` > `Select` > `Select` Features by Expression).
+A query based on specific Attributes can be done utilizing the `Select Features by Expression` tool available under ![](/fig/mActionSelectbyExpression.png) in the project toolbar and the attribute table (alternative: `Edit` → `Select` → `Select` Features by Expression).
 
 1.	In the tool interface, expand `Fields and Values` in the right hand panel.
 2.	Choose the field you want to base your selection on by double clicking it (it should now appear in the expression panel on the left-hand side).
-3.	Use an expression with specific operators to specify your selection in the left hand panel (e.g ""continent"  LIKE  'Asia'" to select all features with the value “Asia” in the field "continent" ).
+3.	Use an expression with specific operators to specify your selection in the left hand panel (e.g `"continent"  LIKE  'Asia'` to select all features with the value “Asia” in the field "continent" ).
 
 
 :::{Tip}
@@ -125,9 +125,9 @@ Operators such as AND, OR can be used to combine different queries or criteria.
 :::
 
 ## Layer Based Spatial Selection
-Spatial selection of features enables selecting parts of a layer based on their relationship with features in another geospatial layer (e.g. the selection of all point features in layer A that are located within a polygon feature in Layer B). It can be achieved by using the tool “Select by Location” available under ![](/fig/mActionSelectbyLocation.png) in the project toolbar or (alternative: `Vector` > `Research Tools` > `Select by Location`).
+Spatial selection of features enables selecting parts of a layer based on their relationship with features in another geospatial layer (e.g. the selection of all point features in layer A that are located within a polygon feature in Layer B). It can be achieved by using the tool “Select by Location” available under ![](/fig/mActionSelectbyLocation.png) in the project toolbar or (alternative: `Vector` → `Research Tools` → `Select by Location`).
 
-1.	In the tool interface, choose the vector layer you want to select features from using “Select features from” and the layer you want to base the selection on using “By comparing to the features from”.
+1.	In the tool interface, choose the vector layer you want to select features from using "Select features from" and the layer you want to base the selection on using "By comparing to the features from".
 2.	Choose the geometric operator that will be used to select features (see bottom paragraph).
 3.	In the bottom prompt, choose how you want to proceed with the newly selected features. The options include:
     1.	Creating a new selection.

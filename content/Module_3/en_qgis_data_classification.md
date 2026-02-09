@@ -117,7 +117,7 @@ By specifying a symbol to each category, you can facilitate the interpretation o
 name: fr_simple_classification_example_map
 width: 750px
 ---
-Niger – Régions de Tillabéri et de Tahoua Éducation: infrastructures scolaires fermées ou endommagées pour cause d'insécurité entre 2019 et 2022 (Source: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf)).
+Niger – Map of the regions of Tillabéri and Tahoua showing the closed or damaged education facilities between 2019 and 2022 (Source: [REACH](https://repository.impact-initiatives.org/document/impact/e6174a66/REACH_NER_Map_Ecoles_fermees_mai2022_tillaberi_tahoua.pdf)).
 :::
 
 In the map above, the main roads have been assigned a single symbol. The schools have been classified into two categories: primary school (fr.: *école primaire*) and secondary school (fr.: *école secondaire*). 
@@ -125,10 +125,10 @@ In the map above, the main roads have been assigned a single symbol. The schools
 
 Categorised classification is usually used for __nominal__ and __ordinal__ scaled data.
 
-| Data Scale | Definition| Example | Typical Data Format |
-|---|---|---|---|
-| Nominal Scale                | Categories without inherent order or ranking             | Land cover types, districts, livelihood zones | Text ("Desert") or Integer (5)      |
-| Ordinal Scale                | Categories with a meaningful order or ranking            | Ranks (e.g., low, medium)   | Text ("high") or Integer (5)      |
+| Data Scale    | Definition                                    | Example                                       | Typical Data Format            |
+|---------------|-----------------------------------------------|-----------------------------------------------|--------------------------------|
+| Nominal Scale | Categories without inherent order or ranking  | Land cover types, districts, livelihood zones | Text ("Desert") or Integer (5) |
+| Ordinal Scale | Categories with a meaningful order or ranking | Ranks (e.g., low, medium)                     | Text ("high") or Integer (5)   |
 
 :::{figure} /fig/Categorized_district_map_SierraLeone.png
 ---
@@ -145,7 +145,7 @@ Example for a map using categorised classification.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 
 __To classify data in categories…__
-1.  Right-click on your layer.
+1. Right-click on your layer.
 2. Click on `Symbology`.
 3. Click on `Categorized`.
 4. In the `Value` dropdown menu, select the column based on which you want to categorise your data.
@@ -215,7 +215,7 @@ width: 900px
 align: center
 name: classification_method_map
 ---
-Different classifications. Source: HeiGIT  (adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)) 
+Different classifications. Source: HeiGIT (adapted from [Axis Maps](https://www.axismaps.com/guide/data-classification)).
 :::
 
 
@@ -268,7 +268,7 @@ __To classify data in classes…__
 5. Downright select the number of classes you want to use.
 6. Under `Mode` select the classification method you want to use e.g. Equal count (Quantile).
 7. Click on `Classify`.  Now you should see all classes and the distribution of values. To add or delete classes use the `-` and `+` buttons. 
-8. *Optional*: Click on `Histogram` -> `Load Values`. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.
+8. *Optional*: Click on `Histogram` → `Load Values`. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.
 
 :::{figure} /fig/Graduated_histogram.png
 ---
@@ -280,7 +280,7 @@ Graduated classification. Source: [Axis Maps](https://www.axismaps.com/guide/dat
 :::
 
 9. *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use.
-10. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` -> `All Color Ramps`.
+10. *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` → `All Color Ramps`.
 11. *Optional*: Under `Legend Format` you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.
 12. *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/transparency of the layer.
 13. Click `Apply` to put your adjustment into effect.
