@@ -42,7 +42,7 @@ When a styling is saved in the same location as the data and has the same name a
 
 ### Loading a Style into a QGIS-project
 
-1. Open the style manager: `Settings` > `Style manager`.
+1. Open the style manager: `Settings` → `Style manager`.
 2. Click on `import/export` and select `import items`.
 3. Navigate to the folder where the style is saved and click import.
 4. The style should now be available as a preset in the styling panel.

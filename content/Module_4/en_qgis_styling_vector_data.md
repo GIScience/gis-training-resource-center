@@ -23,13 +23,12 @@ Styling panel in QGIS 3.30.2.
 
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 
-1. Right click on the layer you wish to style and select `properties`. A new window will open up with a vertical tab section on the left. Navigate to the `symbology` tab. 
-2. Open the layer styling panel by enabling it under `View`>`Panels`>`Styling Panel`. Usually, the panel will appear on the right side of the map canvas.
+1. Right click on the layer you wish to style and select `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `ymbology`-tab. 
+2. Open the layer styling panel by enabling it under `View` → `Panels` → `Styling Panel`. Usually, the panel will appear on the right side of the map canvas.
 
 On the left of the styling panel you can choose the different tabs to access different styling options.
 
-In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, 
-create labels, and create colour ramps to differentiate between features with variable values.
+In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
 
 :::{dropdown} Video: Opening the styling panel
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
@@ -37,8 +36,7 @@ create labels, and create colour ramps to differentiate between features with va
 
 ## Symbology for Vector Data
 
-You can use graphical variables to style vector data. As we have already learned, vector data can be either points, 
-lines, or polygons. There are different options to symbolize these different types of vector data. 
+You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data. 
 
 :::{figure} ../../fig/en_symbolization_vector_data.png
 ---
@@ -52,7 +50,7 @@ Symbolization for vector data; Source: White, T. (2017). Symbolization and the V
 Remember that __the layer's symbology is saved within your project file, not within your shapefile!__ If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
 :::
 
-QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.
+QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.  
 Most simple markers consist of a __fill__ and an __outline__. Depending on the type of geometry in the layer, you will have to use have different symbology options. 
 
 
@@ -73,6 +71,7 @@ width: 500 px
 ::::{tab-set}
 
 :::{tab-item} Single-Symbol
+
 - Assigns one symbol to every feature of the dataset, no matter if the attributes are different.
 
 __For example__, assign a hospital symbol to a layer that only contains points showing the location of hospitals.
@@ -158,20 +157,20 @@ __Step 1: Ordering the layers__
 name: en_30.30.2_changing_layer_style_1
 height: 400px 
 ---
-Order the layers and navigate to the styling panel of the topmost layer
+Order the layers and navigate to the styling panel of the topmost layer.
 :::
 
 3. Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab. 
 4. Click on `Simple Fill` to open the style options.
 5. Expand the `Fill Colour` menu and check the `Transparent Fill` option. This will make only the boundaries visible, so __we will be able to see the layer under this one__.
 6. Choose a `Stroke Colour`, and make the `Stroke Width` 0.66 Millimeters.
-7. Click OK.
+7. Click `OK`.
 8. __Repeat the same process__ for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.
 9. Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).
 10. Let's make the district layer's style consistent with the others.
 11. Choose a `Fill Color`.
 12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__.
-13. Click OK and look at your map: hopefully it's starting to look nicer!
+13. Click OK and look at your map: Hopefully it's starting to look nicer!
 
 :::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
 ---
@@ -204,7 +203,7 @@ If a layer contains numeric values that are continuous, they can be organized in
 name: en_30.30.2_symbology_variable_ranges
 width: 550px
 ---
-With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
+With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values.
 :::
 
 6. Click on `Classify` to __list all values divided in classes__.
@@ -218,7 +217,7 @@ With variable ranges, select __Graduated__ symbology and choose the attribute wi
 name: en_30.30.2_symbology_variable_ranges_2
 width: 500px
 ---
-You can categorize the continuous values into classes and assign a colour ramp .
+You can categorize the continuous values into classes and assign a colour ramp.
 :::
 
 The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Choropleth maps__. 
@@ -238,16 +237,14 @@ A map showing the population of Nigerian states.
 
 #### Creating a graduated symbols map
 
-Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, 
-or in situations when you want to communicate two variables on a single map. For example, it is easy to combine 
-choropleth maps with graduated symbols.
+Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, or in situations when you want to communicate two variables on a single map. For example, it is easy to combine choropleth maps with graduated symbols.  
 Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step: 
-Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of 
-polygons (see [Module 5](/content/Modul_5/en_qgis_non_spatial_tools.md)).  
+- Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of 
+polygons (see [Module 5](/content/Modul_5/en_qgis_non_spatial_tools.md)).   
 We will be using the same layer as for the choropleth map (see {numref}`en_map_design_example_variable_ranges`): 
 `NGA_Adm1_Pop`.
 
-1. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`en_3.36_m4_centroids`)
+1. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`en_3.36_m4_centroids`).
 
 :::{figure} /fig/en_3.36_m4_centroids.png
 ---
@@ -282,7 +279,7 @@ A map of Nigeria displaying the same data. Once using graduated colours (choropl
 
 ### Using different styles in a single layer
 
-By categorizing or classifying data in a single layer, we are able to assign different styles to each classification. 
+By categorizing or classifying data in a single layer, we are able to assign different styles to each classification.  
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
 #### Setting different point symbols for different features
@@ -299,7 +296,7 @@ Categorized symbology is used when you have ***discrete*** variables.
 name: en_30.30.2_categorized_layer_symbology_1
 width: 500px
 ---
-Change the symbology type to "categorised" and choose the Value (variable) you wish to display.
+Change the symbology type to "categorised" and choose the `value` (attribute) you wish to display.
 :::
 
 3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`.
@@ -369,7 +366,7 @@ There is already a default library of SVG-symbols. If you are looking for a spec
 QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of icons. 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
-1. Open the style manager: `Settings` > `Style Manager`.
+1. Open the style manager: `Settings` → `Style Manager`.
 2. Click on `Import / Export` and select `Import items`.
 3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).
 4. Now you can select which symbols you wish to import. In most cases, you can select all symbols.

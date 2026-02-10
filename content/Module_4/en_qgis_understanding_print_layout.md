@@ -270,10 +270,10 @@ The individual layers, maps and images are not saved in the template. However, i
 
 You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or use the __Layout manager__.
 
-1. Open the Layout manager under `Layout` > `Layout Manager`.
+1. Open the Layout manager under `Layout` → `Layout Manager`.
 2. Navigate to the section "__New from Template__".
 3. Choose `Specific` and select the location where you saved your template.
-4. Click open.
+4. Click `Open`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
 .mp4"></video>
@@ -312,7 +312,7 @@ The atlas toolbar.
 :::
 
 :::{note}
-If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under `View` > `Toolbars` > `Atlas Toolbar`.
+If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under `View` → `Toolbars` → `Atlas Toolbar`.
 :::
 
 ### Generating an Atlas
