@@ -12,32 +12,38 @@ align: center
 
 ___
 
-# Welcome to the IFRC Network GIS Training Platform
+# IFRC GIS Training Platform
 
 :::{card} Teach GIS for Humanitarian Work
-
+Welcome to the IFRC Network GIS Training Platform. 
 The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
 :::
 
+## How to use the IFRC Network GIS Training Platform
 
 ::::{grid} 2
-:::{card}
-:class-card: sd-text-center
+:::{card} __[Trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
 
-__[Start Teaching](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html)__ ➡️
+There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
+
+The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
+Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS.   
 
 :::
 
-:::{card}
-:class-card: sd-text-center
+:::{card} __[Trainees](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
-__[Start Learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ ➡️
-
+Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
+This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
 :::
-
 ::::
+
+## What's Inside
+
+Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.
+
 
 ::::{grid} 3
 :::{card} Wiki 📖
@@ -53,14 +59,6 @@ In the exercises, essential concepts and practical techniques are presented, pro
 :::
 
 ::::
-
-## What's Inside
-
-Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.
-
-🙌 The training material is centred around the extensive use of practical follow-along exercises and hands-on training. 
-
-🎥 And the use of rich media like videos and visualizations. 
 
 ## Learning Objectives
 
@@ -106,23 +104,10 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 :::
 
 
-## How to use the IFRC Network GIS Training Platform
 
 
-::::{grid} 2
-:::{card} __[Trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
-There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
 
-The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
-Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS.   
 
-:::
-
-:::{card} __[Trainees](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
-Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
-This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
-:::
-::::
 ___
 
 ## Upcoming public trainings
