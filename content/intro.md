@@ -22,7 +22,7 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 ## How to use the IFRC Network GIS Training Platform
 
 ::::{grid} 2
-:::{card} __[Trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
+:::{card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
 
 There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
@@ -32,7 +32,7 @@ Nevertheless, every component of the training material is designed to be utilize
 
 :::
 
-:::{card} __[Trainees](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
+:::{card} __[TStart learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
