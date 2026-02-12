@@ -32,7 +32,7 @@ Nevertheless, every component of the training material is designed to be utilize
 
 :::
 
-:::{card} __[TStart learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
+:::{card} __[Start learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
