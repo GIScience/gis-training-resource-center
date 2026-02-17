@@ -50,7 +50,7 @@ This exercise makes use of the [tabula.technology tool](tabula.technology), an o
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training
 
@@ -206,10 +206,11 @@ width: 300 px
 
 :::
 
-2. Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to `Data` > `Text to Columns`. A new window will open. Leave the settings as they are and click `Ok`. 
+2. Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to `Data` → `Text to Columns`. A new window will open. Leave the settings as they are and click `Ok`. 
 
 :::{note}
-In the web version of excel, you can fix the columns by selecting column A, navigating to `Data` > `Split Text to Columns`
+
+In the web version of excel, you can fix the columns by selecting column A, navigating to `Data` → `Split Text to Columns`
 
 :::
 
@@ -227,7 +228,7 @@ The data table should now look like this. It is still missing column headers (re
 | Province & District | Burnt Bricks/Blocks | Mud Bricks/Mud | Wood | Other | Total |  
 | :------------------ | :------------------ | :------------- | :--- | :---- | :---- | 
 
-5. Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to `Home` > `Format as Table` and select a table styling of your choosing. 
+5. Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to `Home` → `Format as Table` and select a table styling of your choosing. 
 
 Now we have a usable .csv file with the information. However, there are still some unwanted entries and a few formatting mistakes. First, let's remove all the rows with the data on rural and urban distribution. We want to visualise the distribution on district level, so a distinction between urban and rural is not necessary. 
 
@@ -268,7 +269,7 @@ Great! Now we are ready to import the CSV-file into QGIS!
 ### Task 3: Import the Data into QGIS
 
 :::{topic}
-With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a attribute join [LINK] as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
+With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a [attribute join](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins) as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
 
 :::
 
@@ -297,7 +298,7 @@ Instead of looking for exact matches, fuzzy merge uses algorithms to compare val
 
 6. Enter an `Output field name`, set the `Output field type` to `Text (string)` and increase the `output field length` to 40.
 
-7. Click `Ok`. The CSV file should now have a new column. In this column you will find the values from the adm2 polygon layer which have been matched using the fuzzy merge algorithm. 
+7. Click `OK`. The CSV file should now have a new column. In this column you will find the values from the adm2 polygon layer which have been matched using the fuzzy merge algorithm. 
 
 8. We can now perform an attribute join by selecting the `ADM2_EN` and newly created fuzzy merge column as identifying column. In the processing toolbox, search for the tool __"Join attributes by field value"__. <kbd>Double-click</kbd> on it. 
 

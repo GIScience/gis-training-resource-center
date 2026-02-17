@@ -75,7 +75,7 @@ __Relevant wiki articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training
 
@@ -123,20 +123,33 @@ The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mi
 We have received security-related information from various sources. Our task is to digitise this information into spatial data that can be represented on a map. 
 :::
 
-For this exercise, we will be using the __plugin "QuickMapService"__ to locate places precisely. The QuickMapServices plugins allows you to easily add basemaps or other map services as a layer to your QGIS-project. To [install the plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins):
+For this exercise, we will use the QuickMapServices plugin to locate places precisely.
 
-1. In the menu bar, click on `Plugins` -> `Manage and Install Plugins...`. A new window will open.
-2. Under `All`, search for "QuickMapServices". Click on it and select `Install Plugin` in the bottom right corner. 
+Follow the steps below to install it.  
+
+1. In the menu bar, click on `Plugins` → `Manage and Install Plugins…`
+2. Under `All`, search for “QuickMapServices” and click `Install Plugin`.
+
+For general plugin management in QGIS, see the [QGIS plugin installation guide](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins).
 
 After installing the plugin, we can add basemaps:
 
-3. In the menu bar, navigate to `Web` -> `QuickMapServices` -> `ESRI` -> `ESRI Satellite`. This will add Satellite image basemap in your __Layer panel__.
-4. Let us also add a roads layer to make the orientation easier: `Web` -> `QuickMapServices` -> `Google` -> `Google Road`. 
-5. In the [layers panel](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery. 
-6. For easier navigation, make the satellite imagery transparent by navigating to the [symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel) and adjusting the global opacity.
+3. In the menu bar, navigate to `Web` → `QuickMapServices` → `ESRI` → `ESRI Satellite`.  
+   This adds a satellite imagery basemap to the Layers Panel.
+
+4. Add a roads layer to improve orientation:  
+   `Web` → `QuickMapServices` → `Google` → `Google Road`.
+
+5. In the [Layers Panel](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery.
+
+6. For easier navigation, make the satellite imagery transparent:
+   - Open the layer’s [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+   - Adjust the global opacity.
 
 
-7. We will be needing the plugin __"Lat Lon Tools"__ to locate the coordinates we receive from the field. To [install the plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins), follow the same instructions as for the QuickMapServices plugin but search for "Lat Lon Tools" instead. 
+7. 7. We will need the "Lat Lon Tools" plugin to locate the coordinates we receive from the field.
+   Install the plugin by following the same steps as for QuickMapServices, but search for "Lat Lon Tools" instead.
+
 
 Great, now we have set up our QGIS-project and can start to digitise the known incidents and related areas of interest (as polygons). 
 Below, you will find a table with the information and locations. Read through the table once and think about what kind of geometry type can represent the information. 
@@ -254,11 +267,11 @@ Count points in polygon
 :::
 
 5. Open the attribute of your 'Pak_num_events_adm3' layer and scroll to the right. You will find a column with the name "NUMPOINTS". Here you find the number of events per thesil.
-    - Right-click on the layer and navigate to `Properties` --> `Symbology`. On the top change Single Symbol to "Graduated".
+    - Right-click on the layer and navigate to `Properties` → `Symbology`. A new window will open. At the top, change Single Symbol to "Graduated".
     	- In the `Value` field choose "NUMPOINTS". 
 	- Then below click on `Classify`.
 	- You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp. You can try out different coloring options. 
-	- Once you are satisfied with the look, click 'Apply' and then 'OK'.
+	- Once you are satisfied with the look, click `Apply` and then `OK`.
 
 Your result could look similar to this:
 
@@ -286,8 +299,8 @@ This can help us understand the economic and social vulnerability geographically
 1. First, let us open the spreadsheet with Microsoft Excel or a similar program (such as LibreOffice Calc):
 	- Here, you can already investigate the information that is stored in the different columns. Can you identify columns that contain spatial information?
 	- For now, let us export the file as a CSV UTF-8.
-		* Click on `File` -> `Save As` 
-		* Chosse an output folder, where it will be saved (the `data` > `temp` folder is recommended here) and give the file a meaningful name, for instance __20240605_PAK_MPI__.
+		* Click on `File` → `Save As.` 
+		* Chosse an output folder, where it will be saved (the `data` → `temp` folder is recommended here) and give the file a meaningful name, for instance __20240605_PAK_MPI__.
 		* Choose the option __CSV UTF-8 (Comma delimited) (*.csv)__ and `Save`. 
 	
 	:::{figure} /fig/PAK_Excel_to_CSV.png
@@ -302,9 +315,9 @@ This can help us understand the economic and social vulnerability geographically
 2. Open QGIS and create a new project. Save the project in your project folder. 
 3. [Import the layers](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` and `Pak_adm2_Khyber Pakhtunkhwa.gpkg` to QGIS:
 	* Drag and drop the ADM2-layer into your QGIS-window.
-	* To import the CSV-file, click on the `Layer` tab -> `Add Layer` > `Add Delimited Text`.
+	* To import the CSV-file, click on the `Layer` tab → `Add Layer` → `Add Delimited Text`.
 	* Browse for your __20240605_PAK_MPI.csv__ file. 
-	* Choose the correct `File Fromat`: `Custom delimters` -> `Semicolon`. 
+	* Choose the correct `File Fromat`: `Custom delimters` → `Semicolon`. 
 	* Go to	the tab `Geometry Definition` and choose `No geometry`. We don't have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.
 	* Add layer and close the window. 
 	

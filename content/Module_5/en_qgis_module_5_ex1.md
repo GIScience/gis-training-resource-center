@@ -71,8 +71,7 @@ The first part of the exercise will prepare the data in order to serve as indica
 
 ## Data
 
-
-Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[Here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
+Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
 
 Open the data folder for the first part of the exercise: "Modul_5_Ex1_Part_1".
 
@@ -101,7 +100,7 @@ Before you start doing any GIS operations, __always explore the data__. Always c
 width: 100%
 name: count_points_polygon
 ---
-Cont healthsites per district
+Counting healthsites per district.
 :::
 
 4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
@@ -143,7 +142,7 @@ Calculating health sites per 10000 inhabitants.
 
 #### Land Degradation
 
-A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset:
+A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset: 
 
 -[Somalia Land degradation](https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/)
 
@@ -160,9 +159,9 @@ You will see that we can only download the information as an image. This is a ve
 Explore the data. We have a column "LandD_CLas" which indicators the severity of land degradation from 0 to 3. We now want to join each respective land degradation class to its correct district by calculating the largest overlapping area.
 
 * Open the tool `Join attributes by location` from the Processing Toolbox.
-* define `Input Layer` (layer you want to enrich) and `Join Layer` (dataset with the additional information)
-* select `intersects` as geometric predicate and add only the `LandD_class` as field to add to our base layer.
-* as `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`.
+* Define `Input Layer` (layer you want to enrich) and `Join Layer` (dataset with the additional information).
+* Select `intersects` as geometric predicate and add only the `LandD_class` as field to add to our base layer.
+* As `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`.
 * Save as Layer.
 
 See the Wiki entry [Spatial Joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html) for further information.
@@ -188,8 +187,8 @@ Explore the data. In which resolution is the data available? Do you have ideas a
 * Save the Excel file as a CSV by clicking on `Save file as` and choosing `CSV (delimiter-separated)`.
 * Load the CSV file into you QGIS by drag and drop.
 * Open the tool `Join attributes by field value` from the Processing Toolbox.
- * specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`).
-* as `join type` set `Take attributes of the first matching feature only (one-to-one)`.
+* Specify our two datasets we want to join as well as the common field available for joining (`ADM2_EN` and `adm2name`).
+* As `join type` set `Take attributes of the first matching feature only (one-to-one)`.
 * Save the layer to file.
 
 :::{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
@@ -211,7 +210,7 @@ It is possible that the CSV file the column headers of the attribute table will 
 width: 100%
 name: Join attributes by field value
 ---
-The Log File for the Join Attribute by Field Value algorithm.
+The log file for the Join Attribute by Field Value algorithm.
 :::
 
 Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on `affunderfive` and bring `NULL` Values to the top. Check the joining attribute "ADM2_EN" and compare it with the joining attribute "adm2name" from the CSV file.
@@ -236,7 +235,7 @@ Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_
 width: 80%
 name: Indicators Risk Assessment
 ---
-Indicators Risk Assessment
+Indicators for the risk assessment.
 :::
 
 #### 1. Normalisation
@@ -246,7 +245,7 @@ In order to perform further calculation on the indicators, we need to make them 
 $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
 
-* Open the attribute table of “vulnerability_districts” and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
+* Open the attribute table of “vulnerability_districts” and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checking the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
 * Start with the first indicator `LandD_class`.
 * Define the output field name as "LandD_class_norm" and set the `Type` to `Decimal Number(real)`.
 * Now we will calculate in the expression field the normalisation of the indicator:
@@ -261,8 +260,10 @@ $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 width: 80%
 name: Join attributes by field value
 ---
-Normalisation of indicators.
+Normalising the indicators.
 :::
+
+% Could be nice to add an explanation to normalisation somewhere, maybe module 6?
 
 * Repeat this step for the other indicators.
 * For each indicator you have now the original column and the normalised column. 
@@ -298,13 +299,13 @@ In the next step we can weight the indicators based on their relevance to our ri
 
 We have used so far the following weighting scale:
 
-| Weight| Definition | 
-| ----- | --- | 
-|0| Not Important|
-|0.25| Slightly Important| 
-|0.5|Moderately Important|
-|0.75|Fairly Important|
-|1|Very Important|
+| Weight | Definition           |
+|--------|----------------------|
+| 0      | Not Important        |
+| 0.25   | Slightly Important   |
+| 0.5    | Moderately Important |
+| 0.75   | Fairly Important     |
+| 1      | Very Important       |
 
 * In the attribute table of your layer we can calculate the weighted indicators for each normalised indicator. For this we have to follow the same steps as above: Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png), and create a new field with the suffix "_weighted" in the expression field.
 
@@ -320,7 +321,7 @@ We have used so far the following weighting scale:
 width: 80%
 name: Add new field to weight indicators
 ---
-Adding new field to weight indicators.
+Adding a new field to weight indicators.
 :::
 
 * For each indicator we now have the normalised and weighted version:
@@ -330,7 +331,7 @@ Adding new field to weight indicators.
 width: 100%
 name: Attribute Table with "_norm" and "_weighted" indicators
 ---
-Attribute Table with "_norm" and "_weighted" indicators.
+Attribute table with "_norm" and "_weighted" indicators.
 :::
 
 #### 4. Vulnerability Score / Index
@@ -348,7 +349,7 @@ We are now ready to calculate the vulnerability score for each district:
 
 In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.
 
-* Right click om one of the layer and select `Properties` -> Go the `Joins` tab.
+* Right click om one of the layer and select `Properties` → Go the `Joins` tab.
 * Click on the `+` button, add a new join and select the layer you want to join. Define "admin2Name" as `Join Field`:
 
 :::{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
@@ -359,8 +360,8 @@ name: Join Layers
 Joining Layers by Join Field.
 :::
 
-* Right click on the layer -> `Export` -> `Save feature as` and save the layer as "risk" layer into your temp folder.
-* We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) -> `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
+* Right click on the layer → `Export` → `Save feature as` and save the layer as "risk" layer into your temp folder.
+* We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) → `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
 
 :::{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
 ---
@@ -380,7 +381,7 @@ $ susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity $
 $ risk=   \sqrt exposure  \times susceptibility $
 
 
-*  Open the Attribute table -> `Field Calculator`![](/fig/mActionCalculateField.png) and create a field "Susceptibility" and type in the formula. Do the same to create a field called "risk" and employ the appropriate expression.
+*  Open the Attribute table → `Field Calculator`![](/fig/mActionCalculateField.png) and create a field "Susceptibility" and type in the formula. Do the same to create a field called "risk" and employ the appropriate expression.
 
 ```md
 
@@ -403,19 +404,19 @@ The geometric mean is a specific type of average that is calculated by multiplyi
 #### 6. Visualisation of the Results
 
 
-* Right click on the “risk” layer -> `Properties` -> `Symbology`.
-* In the down left corner click on `Style` -> `Load Style`.
-* In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “Map Template” folder and select the file __“somalia_risk_assessment_style.qml”__.
-* Click `Open`. Then click on `Load Style`.
-* Back in the “Layer Properties” Window click `Apply` and `OK`.
+* Right click on the “risk” layer → `Properties` → `Symbology`.
+* In the down left corner click on `Style` → `Load Style`.
+* In the new window click on the three points ![](/fig/Three_points.png). Navigate to the "Map Template" folder and select the file __"somalia_risk_assessment_style.qml"__.
+* Click `Open` → `Load Style`.
+* Back in the "Layer Properties" Window click `Apply` and `OK`.
 
 
 Print Layout:
 
-* Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2024_01".
+* Open a new print layout by clicking on `Project` → `New Print Layout` → enter the name of your current Project e.g "2024_01".
 * Go the the `Ex_Part_2` folder and drag and drop the file `maps_somalia_template_risk_assessment.qpt` in the print layout.
 * Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
-* If necessary, adjust the legend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
+* If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
 * Remove all items in the legend be clicking on the item and then on the red minus icon below.
  
 :::{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
@@ -423,7 +424,7 @@ Print Layout:
 width: 90%
 name: Possible Map Result
 ---
-Possible Map Result.
+Possible Map Result
 :::
     
 

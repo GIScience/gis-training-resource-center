@@ -74,7 +74,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings.
 
 ### Conduct the training
 
@@ -158,11 +158,11 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 
 
-1. **Open QGIS** and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. **Open QGIS** and [create a new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
 
-2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
+2. **Save the project** in the “project” folder. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
+3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` → `input`.
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):
@@ -175,7 +175,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 width: 600px
 align: center
 ---
-Reproject the cyclone track
+Reprojecting the cyclone track.
 :::
 
 :::{Attention}
@@ -193,7 +193,7 @@ Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclo
 width: 600px
 align: center
 ---
-Buffering the cyclone track
+Buffering the cyclone track.
 :::
 
 ::::{dropdown} Intermediate Result: Buffer
@@ -202,7 +202,7 @@ Buffering the cyclone track
 width: 600px
 align: center
 ---
-Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la zone tampon de 200 kilomètres autour de celui-ci. La zone tampon doit être une seule entité.
+The intermediate results must show the cyclone’s trajectory and the 200-kilometer buffer zone around it. The buffer zone must be a single entity.
 :::
 ::::
 6. **Reproject the buffer back to EPSG:4326 (to match the raster's CRS):**
@@ -242,7 +242,7 @@ Clipping the population raster with the cyclone buffer
 width: 600px
 align: center
 ---
-Intermediate Results
+Your intermediate results should look similar to this. 
 :::
 ::::
 
