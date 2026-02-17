@@ -67,10 +67,10 @@ The P-code associated with the district Edo South is NG01201.
 
 In this short follow along exercise, we will add the population data to the administrative boundaries layer (adm1).
 
-1. Download the necessary layers [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), unzip them, and add them to your QGIS-project. 
+1. [Download the necessary layers here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), unzip them, and add them to your QGIS-project. 
 
 :::{tip}
-The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` > `Add Layer` > ) with no geometry.
+The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` → `Add Layer` → `Add delimited text layer`) with no geometry.
 :::
 
 2. Open the "Join Attributes by Field Value"-tool from the processing toolbox
@@ -83,7 +83,7 @@ The population layer needs to be [added as a delimited text layer](https://gisci
 name: en_3.36_pcode_join
 width: 450 px
 ---
-Setting the parameters for the P-code join
+Setting the parameters for the P-code join.
 :::
 
 6. Open the attribute table for the new layer and scroll to the right. Here you will find the joined attributes
@@ -104,7 +104,7 @@ The joined data is classified using the graduated symbology for the population v
 
 Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new fields, delete unwanted fields, or even calculate new fields using the __field calculator__. 
 
-For a comprehensive overview on the attribute table's functionality and its purpose, you're invited to explore the [Wiki](/content/Wiki/en_qgis_attribute_table_wiki.md) article on it.
+For a comprehensive overview on the attribute table's functionality and its purpose, see the [Attribute table article in the wiki](content/Wiki/en_qgis_attribute_table_wiki.md). 
 
 ### Add field
 The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distributions.
@@ -136,7 +136,7 @@ It is also possible to __delete fields__ from the attribute table. A commonly us
 
 ### Calculate field
 
-An important practice is to calculate the attribute values for a field, e.g., based on the values of other fields. In QGIS, you can __create a new field or update an existing field__.
+An important practice is to calculate the attribute values for a field (e.g., based on the values of other fields). In QGIS, you can __create a new field or update an existing field__.
 
 :::{Note}
 
@@ -152,7 +152,7 @@ A very important tool for such calculations is the __Field Calculator__. It allo
 width: 100%
 name: en_field_calculator_red_boxes
 ---
-Screenshot of the Field calculator
+Screenshot of the Field calculator in QGIS 3.36.
 :::
 
 The most important groups and their respective functionality that are provided with the field calculator are listed below:

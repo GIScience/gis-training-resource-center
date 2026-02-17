@@ -150,7 +150,7 @@ An example of a situation where you will use a spatial join (Source: BRC)
 ::::{margin}
 
 :::{tip}
-You can find and activate the processing toolbox panel by navigating to `View` > `Panels` > `Processing Toolbox`. It should appear on the right side of your screen.
+You can find and activate the processing toolbox panel by navigating to `View` → `Panels` → `Processing Toolbox`. It should appear on the right side of your screen.
 :::
 
 ::::
@@ -217,7 +217,7 @@ This tool is similar to the "Join Attributes by Location"-tool. However, on top 
 width: 450 px
 name: en_spatial_join_3
 ---
-Screenshot of the tool Join attributes by location (summary) in QGIS 3.36
+Screenshot of the tool Join attributes by location (summary) in QGIS 3.36.
 :::
 
 ::::

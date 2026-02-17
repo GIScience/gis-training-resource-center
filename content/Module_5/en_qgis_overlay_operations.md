@@ -56,7 +56,7 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
 
 2. Filter the layer by using the __query builder__ to only show __primary and residential roads__ ("highway" = 'primary' OR "highway" = 'residential').
 3. Load the admin1 layer for Sudan which contains the district White Nile, __ne_10m_admin_1_Sudan_White_Nile.geojson__. They are downloaded from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
-4. Select the roads layer and open the __Clip__ dialogue from `Vector` > `Geoprocessing Tools`.
+4. Select the roads layer and open the __Clip__ dialogue from `Vector` → `Geoprocessing Tools`.
     - Set roads as the __input layer__ and the district boundaries of White Nile as the __overlay layer__.
     - Click __Run__ to generate a temporary layer called Clipped.
 7. You now have a tidy roads layer which contains the necessary information.
@@ -160,11 +160,11 @@ To achieve this, a buffer of 10 km is created around points representing healths
 They are also downloaded and adapted from [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/).
 3. Clip your health sites to the boundaries of Karthoum district.
 4. __Reproject__ the health sites layer to a local coordinate system to enable setting distances Kilometers.
-    - Vector menu > Data Management Tools > __Reproject Layer__.
+    - Vector menu → Data Management Tools → __Reproject Layer__.
     - Select the __health sites__ layer as the input layer.
     - Set the target __CRS to WGS 84 / UTM zone 36N__ (click the projections icon to search the full list of options).
     - Click  `Run` to reproject.
-5. Open the __Buffer__ tool by accessing `Vector` > `Geoprocessing Tools` > `Buffer`.
+5. Open the __Buffer__ tool by accessing `Vector` → `Geoprocessing Tools` → `Buffer`.
     - Select the __reprojected layer__ as the input layer.
     - Set the distance to __10km__.
     - Check the option to __dissolve__ result.

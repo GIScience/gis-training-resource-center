@@ -67,7 +67,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training
 
@@ -113,9 +113,9 @@ The projected coordinate system for Senegal is `EPSG:32628 WGS 84 / UTM zone 28N
 
 1. Load the Senegal administrative boundary layer (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`), as well as population per subnational unit (`sen_admpop_adm1_2020.csv`) and the Desinventar Sendai data of Senegal (`DI_Stat924.xls`) into QGIS.
 
-2. Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the Wiki entry on [Projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
+2. Make sure to reproject the dataset with the administrative boundaries into UTM zone 28N. See the [wiki entry on Projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
 
-3. Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the Wiki entry on [Non-spatial joins](/content/Wiki/en_qgis_non_spatial_joins_wiki.md) for further information.
+3. Conduct non-spatial joins based on regions listed in two datasets and the PCODE listed in these same sets. See the [Wiki entry on Non-spatial joins](/content/Wiki/en_qgis_non_spatial_joins_wiki.md) for further information.
 
 :::{figure} /fig/en_ex1_AT_admin_pop_sen.png
 ---
@@ -136,7 +136,7 @@ Screenshot of the different attribute tables with the corresponding columns high
 width: 80%
 name: join_field
 ---
-Screenshot of the tool Join Attributes by Field Value for the total population
+Screenshot of the tool Join Attributes by Field Value for the total population.
 :::
 ::::
 
@@ -146,7 +146,7 @@ Screenshot of the tool Join Attributes by Field Value for the total population
 width: 80%
 name: join_field
 ---
-Screenshot of the tool Join Attributes by Field Value for the directly and indirectly affected people
+Screenshot of the tool Join Attributes by Field Value for the directly and indirectly affected people.
 :::
 ::::
 
@@ -166,7 +166,7 @@ You can access the field calculator through your attribute table by activating !
 width: 80%
 name: field_calculator
 ---
-Screenshot of the area calculation using the field calculator
+Screenshot of the area calculation using the field calculator.
 ::: 
 ::::
 
@@ -176,7 +176,7 @@ Screenshot of the area calculation using the field calculator
 width: 80%
 name: field_calculator_2
 ---
-Screenshot of the population per square km calculation using the field calculator
+Screenshot of the population per square km calculation using the field calculator.
 :::
 ::::
 
@@ -189,7 +189,7 @@ Screenshot of the population per square km calculation using the field calculato
 width: 80%
 name: rename_field
 ---
-Screenshot of the Rename field tool
+Screenshot of the Rename field tool.
 ::: 
 
 5. Let us now determine the proportion of the population directly or indirectly affected in relation to the total population per region.

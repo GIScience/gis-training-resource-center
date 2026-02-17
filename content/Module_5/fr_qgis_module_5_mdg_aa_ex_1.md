@@ -129,7 +129,7 @@ Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster
 
 1. __Ouvrez QGIS__ et créez un [nouveau projet](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet`-> `Nouveau Projet`.
 
-2. __Enregistrez le projet__ dans le dossier `/project`: Cliquez sur `Projet` -> `Enregistrer sous...` et naviguez jusqu’au dossier. Nommez le projet "Cyclon_Harald_Exposure".
+2. __Enregistrez le projet__ dans le dossier `/project`: Cliquez sur `Projet` → `Enregistrer sous...` et naviguez jusqu’au dossier. Nommez le projet "Cyclon_Harald_Exposure".
 
 3. __Importer le fichier__ GeoJSON "example_Harald_2025_Track.geojson" dans votre projet en le glissant-déposant (Vidéo Wiki). Le fichier se trouve dans le dossier `/data/input`
 
@@ -197,10 +197,10 @@ Reprojetter la tamponner trajectoire du cyclone
    
 7. **Importer les frontières administratives**:
     - Fichier: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
-    - Ajoutez le par glisser-déposer ou via `Couche` -> `Ajouter une couche` -> `Ajouter une couche vecteur...`.
+    - Ajoutez le par glisser-déposer ou via `Couche` → `Ajouter une couche` → `Ajouter une couche vecteur...`.
 8. **Importer la couche raster de population**:
     - Fichier: `MDG_WorldPop_2020_constrained.tif`
-    - Ajouter la couche via `Couche` -> `Ajouter une couche` -> `Ajouter une couche raster...`.
+    - Ajouter la couche via `Couche` → `Ajouter une couche` → `Ajouter une couche raster...`.
 9. **Couper le raster de population** à l'aide de la zone tampon:
     - Dans la __Boîte à outils de traitements__, cherchez `Découper un raster selon une couche de masque` (`Clip Raster by Mask Layer`).
     - Couche source: `MDG_WorldPop_2020_constrained`
@@ -213,7 +213,7 @@ Reprojetter la tamponner trajectoire du cyclone
 width: 600px
 align: center
 ---
-Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)
+Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone).
 ```
 :::{dropdown} Résultat intermédiaire: Raster population découpé
 

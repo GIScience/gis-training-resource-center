@@ -126,7 +126,7 @@ Screenshot of different sizes of the attribute tables
 4. We will use the following solution for this problem:
     - We can take the __closest district centroid__ (from the dataset with the most to the dataset with the fewest records). This is the solution we will use for this exercise as the difference between the two datasets is not drastically.
 
-5. Calculate the ![](/fig/mAlgorithmCentroids.png) `Centroids` for the dataset containing the most elements, which are the district boundaries. You can find the tool under `Vector` --> `Geometry Tools` --> `Centroids`. See the Wiki entry on [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md) for further information.
+5. Calculate the ![](/fig/mAlgorithmCentroids.png) `Centroids` for the dataset containing the most elements, which are the district boundaries. You can find the tool under `Vector` → `Geometry Tools` → `Centroids`. See the Wiki entry on [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md) for further information.
 
 6. Edit the points so they are inside the correct polygons. This is necessary because the __centroid of a polygon may fall outside of it__ when it has an __unusual shape__. To move a centroid that is outside its boundaries into the district boundaries, first activate the `Toggle editing mode` button, which can be found by clicking on ![](/fig/mActionToggleEditing.png) while activating the centroid layer. Then, select the ![](/fig/mActionMoveFeaturePoint.png) `Move Feature` tool. Search for the centroid that is outside its boundaries and move it to the appropriate district boundary. Save the changes and end the editing mode.
 
