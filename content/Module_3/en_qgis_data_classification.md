@@ -206,7 +206,7 @@ Histogram of population data. Source: [Axis Maps](https://www.axismaps.com/guide
 
 However, if we want to show which districts have a higher population than others on a map, we need to classify the districts.
 
-There are __seven__ ways in QGIS to split quantitative data into classes. The four most important ones are: __Equal intervals__, __Quantile__, __Natural breaks__, __Manual__.Let's have a look at how the classes of the district population would look like if we split the data into three classes using these methods.
+There are __seven__ ways in QGIS to split quantitative data into classes. The four most important ones are: __Equal intervals__, __Quantile__, __Natural breaks__, __Manual__. Let's have a look at how the classes of the district population would look like if we split the data into three classes using these methods.
 
 
 :::{figure} /fig/classification_method_map.drawio.svg
