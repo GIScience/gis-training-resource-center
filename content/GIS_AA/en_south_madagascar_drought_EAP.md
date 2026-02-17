@@ -12,7 +12,7 @@ __Geographic focus:__ Androy, Anosy, Atsimo-Andrefana
 __QGIS Project__
 ^^^
 The QGIS project and the datasets used in this project can be found here: 
-[MDG_DROUGHT_EAP.qgz](link)
+__TBA__ [MDG_DROUGHT_EAP.qgz]
 
 Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers. 
 
@@ -42,9 +42,10 @@ __Output:__
 __Questions:__
 
 - CHIRPS monthly or seasonal data: How to define seasons? -> look at rain seasons in mdg or simply DJF, MAM
+- Should I explain my choice for `Daily_RNL` instead of `Daily_SAT`?
 
 
-### Workflow
+### Workflow: Mapping hazard recurrence
 
 1. Use GEE to aggregate the daily CHIRPS v3 to monthly totals for the time period 2000 to 2024.
 2. Calculate the monthly climatology (mean per month across all years).
@@ -76,11 +77,344 @@ __Calculated indicators__
 8. Select thresholds for choropleth map
     - quantiles: 3 classes (high/medium/low)
     - absolute thresholds: 
-
+        - Low: < 10% of months in deficit
+        - Medium: 10-20% of months in deficit
+        - High: > 20% of months in deficit
+    - standard deviation?
 
 __Output:__
 
 - a district layer with fields:
     - `def_count`: number of deficit months, 2000-2024
     - `def_freq`: def count / number of months
-    - maybe: counts by season (DJF, MAM, etc.) 
+    - maybe: counts by season (DJF, MAM, etc.)
+
+### GEE Script
+
+:::{dropdown}
+```javascript
+/**** CHIRPS v3 DAILY_RNL -> MONTHLY -> DEFICIT RECURRENCE (2000–2024)
+ *
+ * Dataset: UCSB-CHC/CHIRPS/V3/DAILY_RNL
+ *
+ * Outputs (3–4 tasks total):
+ *  1) Madagascar ADM2 boundaries (GAUL level2) as SHP
+ *  2) ADM2 indicators as CSV:
+ *     - Mean recurrence count + % of months (for -30% and -40%)
+ *     - % area “frequently affected” (recurrence >= K) for -30% and -40%
+ *  3) Raster export A (UInt16): recurrence counts (rec30_count, rec40_count)
+ *  4) Raster export B (Float32): recurrence frequency + percent (rec30_freq, rec40_freq, rec30_pct, rec40_pct)
+ *
+ * NOTE:
+ * - Raster exports use a Madagascar bounding box region to avoid 10MB payload errors
+ *   from complex dissolved polygon geometries. Clip precisely to coastline/districts in QGIS if needed.
+ ****/
+
+
+/**** SETTINGS ****/
+var CHIRPS_DAILY_ID = 'UCSB-CHC/CHIRPS/V3/DAILY_RNL';
+
+var startDate = ee.Date('2000-01-01');
+var endDate   = ee.Date('2024-12-31'); // inclusive intent; handled via end-exclusive filter
+
+// Deficit thresholds as ratios (stable)
+// ratio <= 0.7  <=> anomaly <= -30%
+// ratio <= 0.6  <=> anomaly <= -40%
+var thr30 = 0.7;
+var thr40 = 0.6;
+
+// Avoid dividing by tiny baselines (mm/month)
+var baselineMinMM = 5;
+
+// Frequent-deficit cutoffs (months over full period; T should be 300)
+var K30 = 30;  // ~10% of months
+var K40 = 15;  // ~5% of months
+
+// Admin boundaries (ADM2)
+var ADM2 = ee.FeatureCollection('FAO/GAUL/2015/level2');
+
+// Approx CHIRPS native resolution ~0.05° (~5–6 km)
+var scaleMeters = 5500;
+
+// Madagascar export region (bounding box; export-safe payload)
+// lon_min, lat_min, lon_max, lat_max
+var mdgRegion = ee.Geometry.Rectangle([43.2, -26.0, 50.6, -11.9], null, false);
+
+
+/**** MADAGASCAR ADM2 ****/
+var mdgAdm2 = ADM2.filter(ee.Filter.eq('ADM0_NAME', 'Madagascar'));
+
+Map.setCenter(46.9, -19.0, 6);
+Map.addLayer(
+  mdgAdm2.style({color: 'FFFFFF', fillColor: '00000000', width: 1}),
+  {},
+  'MDG ADM2 (outline)',
+  false
+);
+
+
+/**** EXPORT ADM2 BOUNDARIES (SHP) ****/
+// (GEE does not export GeoPackage directly; convert SHP->GPKG in QGIS or ogr2ogr)
+Export.table.toDrive({
+  collection: mdgAdm2.select(['ADM0_NAME','ADM1_NAME','ADM2_NAME','ADM2_CODE']),
+  description: 'MDG_ADM2_GAUL2015_level2',
+  fileFormat: 'SHP'
+});
+
+
+/**** LOAD DAILY CHIRPS v3 RNL (clip to bbox region) ****/
+var daily = ee.ImageCollection(CHIRPS_DAILY_ID)
+  .filterDate(startDate, endDate.advance(1, 'day')) // end-exclusive
+  .select(['precipitation'])
+  .map(function(img){ return img.clip(mdgRegion); });
+
+print('Daily collection:', CHIRPS_DAILY_ID);
+print('Daily count:', daily.size());
+
+
+/**** BUILD MONTHLY TOTALS FROM DAILY ****/
+function monthlySumsFromDaily(ic, start, end) {
+  var startY = ee.Number(start.get('year'));
+  var endY   = ee.Number(end.get('year'));
+
+  var years  = ee.List.sequence(startY, endY);
+  var months = ee.List.sequence(1, 12);
+
+  var startMs = start.millis();
+  var endMs   = end.millis();
+
+  var monthlyList = years.map(function(y){
+    y = ee.Number(y);
+    return months.map(function(m){
+      m = ee.Number(m);
+      var monthStart = ee.Date.fromYMD(y, m, 1);
+      var monthEnd   = monthStart.advance(1, 'month');
+
+      // Compare millis (ee.Date has no .gte/.lte)
+      var ms = monthStart.millis();
+      var inRange = ms.gte(startMs).and(ms.lte(endMs));
+
+      return ee.Image(ee.Algorithms.If(
+        inRange,
+        ic.filterDate(monthStart, monthEnd).sum()
+          .rename('precip')
+          .set({
+            'year': y,
+            'month': m,
+            'system:time_start': monthStart.millis()
+          }),
+        null
+      ));
+    });
+  }).flatten();
+
+  return ee.ImageCollection.fromImages(monthlyList)
+    .filter(ee.Filter.notNull(['system:time_start']));
+}
+
+var monthly = monthlySumsFromDaily(daily, startDate, endDate);
+var T = ee.Number(monthly.size());
+print('Monthly images (T):', T); // should be 300 for 2000–2024
+
+
+/**** MONTH-OF-YEAR CLIMATOLOGY (PIXEL-WISE) ****/
+var climatologyByMonth = ee.ImageCollection(
+  ee.List.sequence(1, 12).map(function(m){
+    m = ee.Number(m);
+    return monthly
+      .filter(ee.Filter.eq('month', m))
+      .mean()
+      .rename('clim')
+      .set({'month': m});
+  })
+);
+
+// Add ratio + anomaly bands to each monthly image
+function addAnomalies(img) {
+  var m = ee.Number(img.get('month'));
+  var clim = ee.Image(climatologyByMonth.filter(ee.Filter.eq('month', m)).first());
+
+  // mask where climatology too small
+  var valid = clim.gte(baselineMinMM);
+
+  var P = img.select('precip').updateMask(valid);
+  var C = clim.updateMask(valid);
+
+  var ratio = P.divide(C).rename('ratio');
+  var anomPct = P.subtract(C).divide(C).multiply(100).rename('anomPct');
+
+  return img.addBands([ratio, anomPct]).updateMask(valid);
+}
+
+var monthlyWithAnoms = monthly.map(addAnomalies);
+
+
+/**** DEFICIT FLAGS (0/1) PER MONTH ****/
+function addDeficitFlags(img) {
+  var ratio = img.select('ratio');
+
+  var def30 = ratio.lte(thr30).unmask(0).toUint8().rename('def30');
+  var def40 = ratio.lte(thr40).unmask(0).toUint8().rename('def40');
+
+  return img.addBands([def30, def40]);
+}
+
+var flagged = monthlyWithAnoms.map(addDeficitFlags);
+
+
+/**** RECURRENCE COUNTS PER PIXEL (SUM OVER MONTHS) ****/
+var rec30 = flagged.select('def30').sum().rename('rec30').clip(mdgRegion);
+var rec40 = flagged.select('def40').sum().rename('rec40').clip(mdgRegion);
+
+// Optional map previews
+Map.addLayer(rec30, {min: 0, max: 80}, 'Recurrence count (<= -30%)', false);
+Map.addLayer(rec40, {min: 0, max: 40}, 'Recurrence count (<= -40%)', false);
+
+
+/**** RASTER DERIVATIVES (COUNTS + FREQ + PCT) ****/
+var t = ee.Number(T);
+
+// Counts rasters (UInt16)
+var rec30_count = rec30.rename('rec30_count').toUint16();
+var rec40_count = rec40.rename('rec40_count').toUint16();
+
+// Frequency rasters (Float32)
+var rec30_freq = rec30.divide(t).rename('rec30_freq'); // 0..1
+var rec40_freq = rec40.divide(t).rename('rec40_freq'); // 0..1
+
+// Percent rasters (Float32)
+var rec30_pct = rec30_freq.multiply(100).rename('rec30_pct'); // 0..100
+var rec40_pct = rec40_freq.multiply(100).rename('rec40_pct'); // 0..100
+
+
+/**** ADM2 AGGREGATION: MEAN RECURRENCE + AREA SHARE ****/
+var pixelArea = ee.Image.pixelArea();
+
+// “Frequently affected” masks based on pixel recurrence
+var freq30 = rec30.gte(K30);
+var freq40 = rec40.gte(K40);
+
+// Area images (m²)
+var totalAreaImg  = pixelArea.rename('area_total_m2');
+var areaFreq30Img = pixelArea.updateMask(freq30).rename('area_freq30_m2');
+var areaFreq40Img = pixelArea.updateMask(freq40).rename('area_freq40_m2');
+
+// Mean recurrence reducers (per ADM2)
+var recStack = rec30.addBands(rec40);
+
+var recMeans = recStack.reduceRegions({
+  collection: mdgAdm2,
+  reducer: ee.Reducer.mean(),
+  scale: scaleMeters
+});
+
+// Area sums (per ADM2)
+var areaSums = totalAreaImg.addBands(areaFreq30Img).addBands(areaFreq40Img)
+  .reduceRegions({
+    collection: mdgAdm2,
+    reducer: ee.Reducer.sum(),
+    scale: scaleMeters
+  });
+
+// Join mean+area tables by ADM2_CODE
+var joinKey = 'ADM2_CODE';
+var joined = ee.Join.inner().apply({
+  primary: recMeans,
+  secondary: areaSums,
+  condition: ee.Filter.equals({ leftField: joinKey, rightField: joinKey })
+});
+
+// Build final output FeatureCollection
+var results = ee.FeatureCollection(joined.map(function(f){
+  f = ee.Feature(f);
+  var left  = ee.Feature(f.get('primary'));
+  var right = ee.Feature(f.get('secondary'));
+
+  var rec30_mean = ee.Number(left.get('rec30'));
+  var rec40_mean = ee.Number(left.get('rec40'));
+
+  var rec30_mean_pct = rec30_mean.divide(t).multiply(100);
+  var rec40_mean_pct = rec40_mean.divide(t).multiply(100);
+
+  var areaTotal  = ee.Number(right.get('area_total_m2'));
+  var areaFreq30 = ee.Number(right.get('area_freq30_m2'));
+  var areaFreq40 = ee.Number(right.get('area_freq40_m2'));
+
+  var areaFreq30_pct = areaFreq30.divide(areaTotal).multiply(100);
+  var areaFreq40_pct = areaFreq40.divide(areaTotal).multiply(100);
+
+  return left.set({
+    'source_daily_id': CHIRPS_DAILY_ID,
+    'start': startDate.format('YYYY-MM-dd'),
+    'end': endDate.format('YYYY-MM-dd'),
+    'T_months': t,
+
+    'baselineMinMM': baselineMinMM,
+    'thr30_ratio': thr30,
+    'thr40_ratio': thr40,
+    'K30_months': K30,
+    'K40_months': K40,
+
+    'rec30_mean_count': rec30_mean,
+    'rec30_mean_pct': rec30_mean_pct,
+
+    'rec40_mean_count': rec40_mean,
+    'rec40_mean_pct': rec40_mean_pct,
+
+    'area_freq30_pct': areaFreq30_pct,
+    'area_freq40_pct': areaFreq40_pct,
+
+    'area_total_m2': areaTotal
+  });
+}));
+
+print('ADM2 results sample:', results.limit(5));
+
+
+/**** EXPORT RESULTS TABLE (CSV) ****/
+Export.table.toDrive({
+  collection: results.select([
+    'ADM0_NAME','ADM1_NAME','ADM2_NAME','ADM2_CODE',
+    'source_daily_id','start','end','T_months',
+    'baselineMinMM','thr30_ratio','thr40_ratio','K30_months','K40_months',
+    'rec30_mean_count','rec30_mean_pct',
+    'rec40_mean_count','rec40_mean_pct',
+    'area_freq30_pct','area_freq40_pct',
+    'area_total_m2'
+  ]),
+  description: 'MDG_ADM2_CHIRPSv3_RNL_deficit_recurrence_2000_2024',
+  fileFormat: 'CSV'
+});
+
+
+/**** EXPORT RASTERS (OPTION 1: SPLIT BY DATA TYPE) ****/
+
+// A) Counts (UInt16) — 2 bands
+var recCounts = rec30_count.addBands(rec40_count).clip(mdgRegion);
+
+Export.image.toDrive({
+  image: recCounts,
+  description: 'MDG_CHIRPSv3_RNL_recurrence_counts_2000_2024_bbox',
+  region: mdgRegion,
+  scale: scaleMeters,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+
+// B) Frequency + percent (Float32) — 4 bands
+var recFreqPct = rec30_freq.addBands(rec40_freq)
+  .addBands(rec30_pct).addBands(rec40_pct)
+  .toFloat()
+  .clip(mdgRegion);
+
+Export.image.toDrive({
+  image: recFreqPct,
+  description: 'MDG_CHIRPSv3_RNL_recurrence_freqpct_2000_2024_bbox',
+  region: mdgRegion,
+  scale: scaleMeters,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+```
+:::
+
