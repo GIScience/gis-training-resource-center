@@ -27,10 +27,8 @@ The content is designed primarily for **GIS trainers**, but also supports practi
 
 ::::{grid} 2
 
-:::{card}
-### 👩‍🏫 For Trainers
+:::{card} Start teaching
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
-
 This platform is primarily designed to support **GIS trainers** in the IFRC Network.
 
 You can:
@@ -41,8 +39,7 @@ You can:
 All trainer-specific guidance is collected in the **Trainer’s Corner**, which is part of the *Learn* section.
 :::
 
-:::{card}
-### 👨‍🎓 For Trainees
+:::{card} Start learning
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
 This is **not a self-learning platform**.
