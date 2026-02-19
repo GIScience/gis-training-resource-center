@@ -14,12 +14,12 @@ __QGIS Project__
 The QGIS project and the datasets used in this project can be found here: 
 __TBA__ [MDG_DROUGHT_EAP.qgz]
 
-Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers. 
+Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers or Google Earth Engine. 
 
 :::
 
 
-## Part 1: A historical rainfall deficit recurrence map (CHIRPS-based, 2000–2024) aggregated at district level.
+## Part 1: Historical rainfall deficit recurrence map (CHIRPS-based, 2000–2024) aggregated at district level
  
 
 __Objective:__
@@ -43,6 +43,7 @@ __Questions:__
 
 - CHIRPS monthly or seasonal data: How to define seasons? -> look at rain seasons in mdg or simply DJF, MAM
 - Should I explain my choice for `Daily_RNL` instead of `Daily_SAT`?
+- Is the question: *How widespread are rainfall deficits in the districts?* OR *How widespread are rainfall deficits where livelihoods depend on rainfall?*
 
 
 ### Workflow: Mapping hazard recurrence
@@ -74,13 +75,47 @@ __Calculated indicators__
 :::
 
 
-8. Select thresholds for choropleth map
-    - quantiles: 3 classes (high/medium/low)
-    - absolute thresholds: 
-        - Low: < 10% of months in deficit
-        - Medium: 10-20% of months in deficit
-        - High: > 20% of months in deficit
-    - standard deviation?
+> We have calculated two indicators:  
+> 1. Mean recurrence per adm2  
+> 2. Percentage of area above threshold  
+> Now we need to select the thresholds for both indicators:
+
+8. Select thresholds for the choropleth map:
+  
+
+::::{grid} 2 1
+:::{card} 
+__Mean Recurrence per adm2:__
+^^^
+- quantiles: 3 classes (high/medium/low)
+- absolute thresholds: 
+  - Low: < 10% of months in deficit
+  - Medium: 10-20% of months in deficit
+  - High: > 20% of months in deficit
+  - standard deviation?
+:::
+
+:::{card}
+__Percentage of area above threshold:__
+^^^
+- `% area with recurrence ≥ K months`
+  - __define K__
+  - define classes for percentages:
+    - ___Data-distribution:__
+      - tertiles
+    - __Absolute exposure:__
+      - e.g., less than 10 % -> localised/patchy
+      - 10-30% -> substantial exposure
+      - more than 30% -> widespread exposure
+    - __sensitivity-informed__
+      - examine how % area affected behaves for different thresholds 
+
+
+
+
+:::
+
+
 
 __Output:__
 
@@ -89,9 +124,7 @@ __Output:__
     - `def_freq`: def count / number of months
     - maybe: counts by season (DJF, MAM, etc.)
 
-### GEE Script
-
-:::{dropdown}
+:::{dropdown} GEE Script
 ```javascript
 /**** CHIRPS v3 DAILY_RNL -> MONTHLY -> DEFICIT RECURRENCE (2000–2024)
  *
@@ -417,4 +450,27 @@ Export.image.toDrive({
 });
 ```
 :::
+
+
+## Part 2: A recurrent IPC Phase 3+ exposure layer (if feasible)
+
+
+__Objective:__ Complement meteorological layer with documented humanitarian impact evidence.
+
+__Possible options:__
+1. Overlay IPC Phase 3+ outcomes (where data available)
+2. Estimate recurrence of IPC 3+ at district level across recent years.
+3. If full GIS integration is complex, even a spatial proxy based on documented IPC rounds would already be extremely helpful.
+
+
+__Questions:__
+
+- What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. 
+- how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. 
+- To get the time resolution, I could aggregate the CHIRPS using % of months in deficit?
+- ML1 oder ML2? 
+- In FEWSNET or via the WorldBank
+
+__Step 1: Downloading IPC data:__
+
 
