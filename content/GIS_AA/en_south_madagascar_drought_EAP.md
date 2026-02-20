@@ -83,7 +83,7 @@ __Calculated indicators__
 8. Select thresholds for the choropleth map:
   
 
-::::{grid} 2
+::::{grid} 
 :::{grid-item-card} 
 __Mean Recurrence per adm2:__
 ^^^
@@ -109,10 +109,6 @@ __Percentage of area above threshold:__
       - more than 30% -> widespread exposure
     - __sensitivity-informed__
       - examine how % area affected behaves for different thresholds 
-
-
-
-
 :::
 ::::
 
