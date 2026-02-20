@@ -83,8 +83,8 @@ __Calculated indicators__
 8. Select thresholds for the choropleth map:
   
 
-::::{grid} 2 1
-:::{card} 
+::::{grid} 2
+:::{grid-item-card} 
 __Mean Recurrence per adm2:__
 ^^^
 - quantiles: 3 classes (high/medium/low)
@@ -95,7 +95,7 @@ __Mean Recurrence per adm2:__
   - standard deviation?
 :::
 
-:::{card}
+:::{grid-item-card}
 __Percentage of area above threshold:__
 ^^^
 - `% area with recurrence ≥ K months`
@@ -472,5 +472,6 @@ __Questions:__
 - In FEWSNET or via the WorldBank
 
 __Step 1: Downloading IPC data:__
+
 
 
