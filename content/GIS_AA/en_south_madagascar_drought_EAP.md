@@ -454,20 +454,143 @@ Export.image.toDrive({
 __Objective:__ Complement meteorological layer with documented humanitarian impact evidence.
 
 __Possible options:__
-1. Overlay IPC Phase 3+ outcomes (where data available)
-2. Estimate recurrence of IPC 3+ at district level across recent years.
-3. If full GIS integration is complex, even a spatial proxy based on documented IPC rounds would already be extremely helpful.
+- Overlay IPC Phase 3+ outcomes (where data available)
+- Estimate recurrence of IPC 3+ at district level across recent years.
+- If full GIS integration is complex, even a spatial proxy based on documented IPC rounds would already be extremely helpful.
 
 
 __Questions:__
 
-- What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. 
-- how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. 
-- To get the time resolution, I could aggregate the CHIRPS using % of months in deficit?
-- ML1 oder ML2? 
-- In FEWSNET or via the WorldBank
+- What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. -> reports are irregular in FEWSNET. I can replicate the workflow with ipcinfo data easily it just takes some time to download the reports manually. 
+- how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. -> solved during analysis. Geographic units orient themselves along adm2 boundaries and slivers were easy to detect due to their area size.
+- To get the time resolution, I could aggregate the CHIRPS using % of months in deficit? -> doesn't matter because they didn't ask for it. Keep it simple. 
+- ML1 oder ML2? -> __CS__ 
+- In FEWSNET or via IPCinfo?
 
-__Step 1: Downloading IPC data:__
+__Step 1: Downloading IPC data from FEWSNET:__
+
+1. List all the publications available through the API
+
+% I should reformat this to be a one liner. 
+
+```
+GET https://fdw.fews.net/api/ipcphase.json
+    ?country_code=MG
+    &scenario=CS
+    &start_date=2000-01-01
+    &end_date=2025-12-31
+    &fields=collection_date
+    &page_size=5000
+    &offset=0
+```
+
+> Problem: I can't download 300 GeoJSON files, maybe I can download the data as tabular data and aggregate via pcode?
+
+I can also extract the CSV:
+
+```
+GET https://fdw.fews.net/api/ipcphase.csv
+    ?country_code=MG
+    &scenario=CS
+    &start_date=2000-01-01
+    &end_date=2025-12-31
+    &fields=id,collection_date,start_date,end_date,scenario,value,geographic_unit,fnid
+```
+
+----
+
+- FEWS NET’s spatial model is built around Geographic Units with stable IDs called FNIDs.
+- Pulling csv of geogrpahic units (without geometry):
+  ```
+  GET https://fdw.fews.net/api/geographicunit.csv
+    ?country_code=MG
+    &unit_type=fsc_admin
+    &as_of_date=today
+  ``` 
+- Pulling geometries:
+  ```
+  GET https://fdw.fews.net/api/feature.geojson
+    ?country_code=MG
+    &unit_type=fsc_admin
+    &as_of_date=today
+  ```
+
+- The API docs list typical unit_type values, including the ones used for food security classification mapping/analysis:
+  - admin1, admin2
+  - fsc_admin (FSC unit of analysis based on admin units)
+  - fsc_admin_lhz (intersection of admin and livelihood zone)
+  - livelihood_zone
+  - market
+
+__Question:__ Do geographic units change over the years and how can i join theme? According to the FEWSNET documentation, the geographic units should be backwards compatible
+
+__Question:__ The request does not ask for population weighing so I can just ignore it? I might have to state that I am not taking into account the population. -> Ignore it
+
+:::{admonition} IPC data availability pre 2016
+:class: note
+- 2016+ IPC CS data is internally consistent
+- pre-2016 is not directly comparable
+- Before ~2015–2016, FEWS NET and partners used:
+- FEWS NET food security classifications (pre-IPC standardization)
+- IPC-compatible analyses in some countries/years
+- Narrative reports with maps, not always machine-readable
+
+__Bottom line:__ There's no IPC classifications pre 2016 i can use. Neither on FEWSNET nor IPCinfo. 
+:::
 
 
+Avoid ML1 as it is based on rainfall projections and it introduces circularity if we compare it to CHIRPS anomalies. 
 
+"We use FEWS NET ML1 classifications to represent projected near-term Crisis+ risk. Associations with CHIRPS rainfall deficits should be interpreted as alignment between observed hydroclimatic anomalies and projected food security risk, not as realized outcomes.”
+
+
+:::{dropdown} Choosing between IPCinfo and FEWSNET
+IPCinfo publication cycles are published in their own 3 month cycles, and not attached to seasons.
+
+FEWSNET cycles are monthly, but in the early years also irregular. 
+
+If you use ML1, you must label it as projected Crisis+ risk recurrence, not “observed impact recurrence.”
+:::
+
+> I will go with the FEWSNET CS data
+
+> Should I use recurrence rate for ipc phase because reporting dates are irregular in FEWSNET. 
+
+### Calculating the IPC Phase 
+
+We can use a spatial join to are determine which ADM2 are affected by IPC phase 3+. 
+
+__Spatial Relationship:__ Simply using `Intersect` is inappropriate because it would also return ipc phases that only share a border or touch the admin boundaries. 
+
+- Maybe we can use within or contain? That should return only the ones where it shares an interior. 
+- I can also intersect and then do the within operation (count).
+- Intersect and calculate area share and boot out every polygon below 5%?
+- I merged all the layers into one geopackage for easier use. 
+- First, I need to intersect the ipc phase polygons with the admin boundaries so I get distinct ipc phase polygons with one value per admin boundary per publication. 
+
+:::{note} 
+Make sure the units are in meters when calculating area.
+`$area / 1e6` to get area in km².
+:::
+
+:::{note} 
+The time series includes classifications with the IPC classification 2.1 and 3.0. Should be noted somewhere. 
+
+:::
+
+
+1. Merge IPC layers
+2. Reproject to WGS 84 Pseudo Mercator (EPSG:3857)
+3. Reproject to Tananarive (Paris) / Laborde Grid (EPSG:29701) for metric units
+4. Intersect with adm2 boundaries (fields 2 copy: adm2 pcode).
+5. Dissolve per adm2 and report date -> only 1 IPC phase 3+ polygon per report date and adm2 polygon
+6. calculate area in km² (`$area / 1e6`).
+7. Delete sliver (< 2 km²)
+8. Satistics per categories (category: adm2_pcode, fields to calculate stats: adm2_pcode)
+9. join per attribute value: 
+  - adm2 boundaries 
+  - statistics per category
+  - key value: adm2_pcode
+  - fields to copy: count
+
+__Output:__ admin2 layer with count of ipc phase 3+ 
