@@ -44,22 +44,29 @@ __Questions:__
 - CHIRPS monthly or seasonal data: How to define seasons? -> look at rain seasons in mdg or simply DJF, MAM
 - Should I explain my choice for `Daily_RNL` instead of `Daily_SAT`?
 - Is the question: *How widespread are rainfall deficits in the districts?* OR *How widespread are rainfall deficits where livelihoods depend on rainfall?*
+- I calculate the meterological mean per month over the last 25 years. and calculated the anomalies per month. I then put a threshold of 30% deficit to indicate severe deficit and calculated how many months are above that threshold (= recurrence of deficit).
+- __Problem:__ Does that indicate drought or hydrological stress or **unstable monthly rainfall**?  
+- Also: In very dry months (e.g. July–September in the south):
+  - monthly mean rainfall may be very small
+  - A small absolute deviation can exceed −30%
+    - This can inflate recurrence and create "deficits that have no impact relevance
 
 
-### Workflow: Mapping hazard recurrence
+
+### Workflow: Mapping hazard recurrence 
 
 1. Use GEE to aggregate the daily CHIRPS v3 to monthly totals for the time period 2000 to 2024.
 2. Calculate the monthly climatology (mean per month across all years).
 3. Compute the percentage anomaly per month  %anom=100×(P−Pˉm​)/Pˉm​ (per cell)
 4. Flag severe deficit months (e.g. <= -30%)
-6. Count how often each district is in deficit (frequency or count) = recurrence value
+6. Count how often each pixel is in deficit (frequency or count) = recurrence value
 7. Aggregate to admin level:
     - __Options:__
         - A: Mean pixel recurrence (can also be normalised by dividing with the total number of months -> %)
         - B: Percent of area affected (need to define a threshhold of recurring deficit months, e.g., more than 30 deficit month in time period)
             - "65% of district had more than 30 deficit months".
 
-- Monthly rainfall totals were derived from CHIRP v3 daily data hosted on Google Earth Engine. Monthly anomalies were calculated relative to the 2000–2024 climatological mean for each calendar month. Rainfall deficit events were defined as months with precipitation ≤30% (moderate) or ≤40% (severe) below the long-term mean. The frequency of deficit events was aggregated at district (ADM2) level to characterize historical recurrence.
+- Monthly rainfall totals were derived from CHIRP v3 daily data hosted on Google Earth Engine. Monthly anomalies were calculated relative to the 2000–2024 climatological mean for each calendar month. Rainfall deficit events were defined as months with precipitation ≤30% (moderate) or ≤40% (severe) below the long-term mean (per month?). The frequency of deficit events was aggregated at district (ADM2) level to characterize historical recurrence.
 
 - Rainfall deficit recurrence was defined as the number of months between 2000 and 2024 in which monthly rainfall fell below the deficit threshold. Recurrence was first calculated at the pixel level and then spatially averaged within administrative districts to characterize the typical frequency of deficit conditions across each district.
 
@@ -119,6 +126,17 @@ __Output:__
     - `def_count`: number of deficit months, 2000-2024
     - `def_freq`: def count / number of months
     - maybe: counts by season (DJF, MAM, etc.)
+
+### Preliminary Map Results
+
+:::{figure} /fig/AA/mdg_drought_EAP/260226_Rainfall_30_adm2_recurrence_count.png
+---
+name: 260226_Rainfall_30_adm2_recurrence_count
+width: 500 px
+---
+Monthly rainfall deficits (below 30%) mean per district in Madagascar 2000 - 2025.
+:::
+
 
 :::{dropdown} GEE Script
 ```javascript
@@ -461,9 +479,9 @@ __Possible options:__
 
 __Questions:__
 
-- What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. -> reports are irregular in FEWSNET. I can replicate the workflow with ipcinfo data easily it just takes some time to download the reports manually. 
-- how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. -> solved during analysis. Geographic units orient themselves along adm2 boundaries and slivers were easy to detect due to their area size.
-- To get the time resolution, I could aggregate the CHIRPS using % of months in deficit? -> doesn't matter because they didn't ask for it. Keep it simple. 
+- What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. -> *reports are irregular in FEWSNET. I can replicate the workflow with ipcinfo data easily it just takes some time to download the reports manually.*
+- how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. *-> solved during analysis. Geographic units orient themselves along adm2 boundaries and slivers were easy to detect due to their area size.*
+- To get the time resolution, I could aggregate the CHIRPS using % of months in deficit? *-> doesn't matter because they didn't ask for it.* 
 - ML1 oder ML2? -> __CS__ 
 - In FEWSNET or via IPCinfo?
 
@@ -484,18 +502,7 @@ GET https://fdw.fews.net/api/ipcphase.json
     &offset=0
 ```
 
-> Problem: I can't download 300 GeoJSON files, maybe I can download the data as tabular data and aggregate via pcode?
-
 I can also extract the CSV:
-
-```
-GET https://fdw.fews.net/api/ipcphase.csv
-    ?country_code=MG
-    &scenario=CS
-    &start_date=2000-01-01
-    &end_date=2025-12-31
-    &fields=id,collection_date,start_date,end_date,scenario,value,geographic_unit,fnid
-```
 
 ----
 
@@ -515,6 +522,8 @@ GET https://fdw.fews.net/api/ipcphase.csv
     &as_of_date=today
   ```
 
+
+<!---
 - The API docs list typical unit_type values, including the ones used for food security classification mapping/analysis:
   - admin1, admin2
   - fsc_admin (FSC unit of analysis based on admin units)
@@ -525,6 +534,7 @@ GET https://fdw.fews.net/api/ipcphase.csv
 __Question:__ Do geographic units change over the years and how can i join theme? According to the FEWSNET documentation, the geographic units should be backwards compatible
 
 __Question:__ The request does not ask for population weighing so I can just ignore it? I might have to state that I am not taking into account the population. -> Ignore it
+---> 
 
 :::{admonition} IPC data availability pre 2016
 :class: note
@@ -539,10 +549,7 @@ __Bottom line:__ There's no IPC classifications pre 2016 i can use. Neither on F
 :::
 
 
-Avoid ML1 as it is based on rainfall projections and it introduces circularity if we compare it to CHIRPS anomalies. 
-
-"We use FEWS NET ML1 classifications to represent projected near-term Crisis+ risk. Associations with CHIRPS rainfall deficits should be interpreted as alignment between observed hydroclimatic anomalies and projected food security risk, not as realized outcomes.”
-
+- Avoid ML1 as it is based on rainfall projections and it introduces circularity if we compare it to CHIRPS anomalies. 
 
 :::{dropdown} Choosing between IPCinfo and FEWSNET
 IPCinfo publication cycles are published in their own 3 month cycles, and not attached to seasons.
@@ -557,16 +564,6 @@ If you use ML1, you must label it as projected Crisis+ risk recurrence, not “o
 > Should I use recurrence rate for ipc phase because reporting dates are irregular in FEWSNET. 
 
 ### Calculating the IPC Phase 
-
-We can use a spatial join to are determine which ADM2 are affected by IPC phase 3+. 
-
-__Spatial Relationship:__ Simply using `Intersect` is inappropriate because it would also return ipc phases that only share a border or touch the admin boundaries. 
-
-- Maybe we can use within or contain? That should return only the ones where it shares an interior. 
-- I can also intersect and then do the within operation (count).
-- Intersect and calculate area share and boot out every polygon below 5%?
-- I merged all the layers into one geopackage for easier use. 
-- First, I need to intersect the ipc phase polygons with the admin boundaries so I get distinct ipc phase polygons with one value per admin boundary per publication. 
 
 :::{note} 
 Make sure the units are in meters when calculating area.
@@ -594,3 +591,25 @@ The time series includes classifications with the IPC classification 2.1 and 3.0
   - fields to copy: count
 
 __Output:__ admin2 layer with count of ipc phase 3+ 
+
+__Problem:__ Publication cycle is irregular on FEWSNET. CS was only published twice per year in the last few years. Does it make more sense to calculate IPC phase 3+ rate over the last publications?
+
+:::{figure} /fig/AA/mdg_drought_EAP/260226_IPC_Phase_3+Recurrence.png
+---
+name: 260226_IPC_Phase_3+Recurrence
+width: 500 px
+---
+Recurrence of IPC Acute Food Insecurity Phase 3 or higher in Madagascar 2016 - 2025.
+
+
+## Part 3: A simple composite drought vulnerability map combining the above
+
+__Objective:__
+
+- Support geographic targeting by combining: 
+  - Hazard recurrence: (rainfall deficits)
+  - Documented humanitarian impacts (IPC 3+)
+- We would prefer:
+  - A simple, transparent classification (High / Medium / Low structural drought vulnerability)
+  - An impact-based framing (i.e. not purely meteorological)
+
