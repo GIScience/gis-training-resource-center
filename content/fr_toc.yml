@@ -1,0 +1,13 @@
+format: jb-book
+root: content/fr/fr_intro.md
+options:  # The options key will be applied to all chapters, but not sub-sections
+parts:
+  - caption: Modules
+    numbered: True
+    chapters:
+      - file: content/fr/Module_1/es_module_1_overview.md
+        sections: 
+          - file: content/fr/Module_1/fr_qgis_theory.md
+          - file: content/fr/Module_1/fr_qgis_installation.md
+          - file: content/fr/Module_1/fr_qgis_start.md
+          - file: content/fr/Module_1/fr_qgis_module_1_exercises.md
