@@ -3,16 +3,13 @@
 
 :::{topic} Context
 For the Drought Early Action Protocol (EAP) by the Malagasy Red Cross (CRM), we developed a hazard and vulnerability analysis. The result ware reproducible maps showing a composite drought vulnerability combining hazard recurrence (rainfall deficits) and documented humanitarian impacts (IPC phase 3 or above). The two indicators are combined and classified into three levels of drought vulnerability (High/Medium/Low).
-
-__Geographic focus:__ Androy, Anosy, Atsimo-Andrefana
-
 :::
 
 :::{card}
 __QGIS Project__
 ^^^
 The QGIS project and the datasets used in this project can be found here: 
-__TBA__ [MDG_DROUGHT_EAP.qgz]
+__[MDG_DROUGHT_EAP.qgz](https://nexus.heigit.org/repository/gis-training-resource-center/gis_aa/mdg_drought_eap/mdg_drought_EAP_maps_260226.zip)__
 
 Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers or Google Earth Engine. 
 
