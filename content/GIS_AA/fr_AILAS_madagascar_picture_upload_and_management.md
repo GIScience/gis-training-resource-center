@@ -97,72 +97,63 @@ Insérez la carte dans le lecteur
 
 Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.
 
-### 3. Connectez-vous au bucket de téléversement
+### 3. Se connecter à Panoramax
 
-```{figure} /fig/AILAS_bucket_login.png
+Ouvrez le [site web Panoramax](https://panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
+
+```{figure} /fig/AILAS_Panoramax_login_fr.png
 ---
-name: login bucket
+name: panoramax login
 width: 400 px
 ---
-Connectez-vous au bucket de téléversement
+Se connecter à Panoramax
 ```
 
-Ouvrez le  [bucket de téléversement](https://warm.storage.heigit.org/ui/browser/heigit-hum-panoramax-temp) dans votre navigateur et connectez-vous avec les identifiants qui vous ont été fournis.
+Saisissez votre **adresse e-mail** et votre mot de passe, puis cliquez sur « Sign in ».
 
-### 4. Téléversez les images
+Si c’est votre première connexion, vous utiliserez un mot de passe initial qui vous a été fourni. Vous devrez modifier ce mot de passe immédiatement après vous être connecté.
 
-1. Choisissez le dossier de téléversement correct. Le nom du dossier doit correspondre à l’étiquette de votre caméra. Cliquez sur le dossier pour l’ouvrir.
+### 4. Téléverser des images
 
-```{figure} /fig/AILAS_choose_upload_folder.png
+1. Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.
+
+```{figure} /fig/AILAS_Panoramax_upload_fr.png
 ---
-name: upload folder
+name: upload images
 width: 400 px
 ---
-Ouvrez le bon dossier parmi ceux disponibles pour le téléversement.
+Téléverser des images
 ```
 
-```{figure} /fig/AILAS_camera_label.jpg
+2. Vérifiez que le mode de visibilité est réglé sur « Restreinte à l'instance » (valeur par défaut).
+3. Indiquez le mode de transport : si les images ont été capturées par une caméra installée dans une voiture, choisissez « En voiture ».
+4. Ne *modifiez pas* les paramètres avancés.
+5. Cliquez sur « Téléverser des photos ». Un navigateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images présentes sur la carte SD dans le dossier `/DCIM/100GOPRO`. Le démarrage du téléversement peut prendre quelques secondes si vous avez sélectionné un grand nombre d’images.
+6. Gardez la fenêtre du navigateur ouverte jusqu’à ce que le téléversement soit terminé.
+
+```{figure} /fig/AILAS_Panoramax_upload_window_fr.png
 ---
-name: camera name
+name: upload window
 width: 400 px
 ---
-Le nom du dossier doit correspondre à l’étiquette de votre caméra.
-```
-2. Cliquez sur le bouton de téléversement en haut à droite et sélectionnez « Upload file ».
-
-```{figure} /fig/AILAS_upload_button.png
----
-name: upload button
-width: 400 px
----
-Cliquez sur le bouton de téléversement et sélectionnez « Upload file »
+Gardez la fenêtre de téléversement ouverte jusqu’à la fin du téléversement
 ```
 
-3. L'explorateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images de la carte SD dans le dossier `/DCIM/100GOPRO`.
+Une fois le téléversement terminé, vous pouvez rencontrer certains messages d’erreur. Les images sont rejetées lorsqu’elles ne contiennent pas de données de localisation, ou lorsqu’elles sont trop proches de l’image précédente dans le temps et l’espace. En général, il n’y a pas lieu de s’inquiéter. Cependant, si un grand nombre d’images n’a pas pu être téléversé en raison de l’absence de données de localisation, essayez d’allumer la caméra plus tôt avant votre prochain trajet, afin de vous assurer que le GPS est prêt lorsque vous commencez.
 
-:::{admonition} Gestion de plusieurs dossiers d’images
-:class: tip
-Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 2 à 4 de cette section pour tous les sous-dossiers.
-:::
-
-
-```{figure} /fig/AILAS_select_files.png
----
-name: select files
-width: 400 px
----
-Sélectionnez les fichiers d’images
-```
-
-4. Attendez que le statut de téléversement de tous les fichiers image atteigne 100 %. Faites défiler le menu de statut de téléversement pour vérifier.
-
-
-```{figure} /fig/AILAS_upload_completed.png
+```{figure} /fig/AILAS_Panoramax_upload_error_fr.png
 ---
 name: upload completed
 width: 400 px
 ---
-Attendez que le téléversement de tous les fichiers soit terminé
+Messages d’erreur lors du téléversement
+```
+
+:::{admonition} Gestion de plusieurs dossiers d’images
+:class: tip
+Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 1 à 6 de cette section pour chacun de ces sous-dossiers.
+:::
+
 ```
 
 ### 5. Supprimez les images
