@@ -34,23 +34,33 @@ This content is designed for:
 
 ## Available Case Studies and Analyses
 
-### 🌪️ Cyclone Anticipatory Action – Madagascar
+### Cyclone Anticipatory Action – Madagascar
 **Focus:** Forecast-based risk and impact analysis for tropical cyclones  
 **Key elements:**
 - Spatial exposure and vulnerability analysis
 - Risk-based prioritisation
 - Use of QGIS for anticipatory decision support
 
-👉 *QGIS Anticipatory Action analysis for cyclones in Madagascar*
+:::{card}
+:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html
+
+__QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
+
+:::
 
 ---
 
-### 🌵 Drought Trigger Analysis – Somalia
+### Drought Trigger Analysis – Somalia
 **Focus:** Trigger monitoring and threshold analysis for drought  
 **Key elements:**
 - Hazard indicators and thresholds
 - Spatial aggregation and analysis
 - Integration of GIS into trigger-based frameworks
+
+:::{card} 
+:link: \content\GIS_AA\en_qgis_drought_trigger_somalia.md
+
+:::
 
 👉 *QGIS Anticipatory Action trigger analysis for drought in Somalia*
 
