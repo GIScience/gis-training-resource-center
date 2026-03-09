@@ -59,7 +59,7 @@ Apply fundamental GIS techniques to create, edit, and analyse spatial data.
 :::
 
 :::{grid-item-card} Module 4 — Visualisation and Map Making
-:link: ../Module_4/en_module_4_overview.html
+:link: ../content/Module_4/en_module_4_overview.html
 :link-type: url
 
 Learn how to design effective maps and visualise geospatial information for communication and decision-making.
@@ -76,7 +76,7 @@ Learn how to design effective maps and visualise geospatial information for comm
 :::
 
 :::{grid-item-card} Module 5 — Intermediate GIS Operations
-:link: ../Module_5/en_module_5_overview.html
+:link: ../content/Module_5/en_module_5_overview.html
 :link-type: url
 
 Extend your GIS skills with more advanced spatial processing techniques.
@@ -91,7 +91,7 @@ Extend your GIS skills with more advanced spatial processing techniques.
 :::
 
 :::{grid-item-card} Module 6 — Data Analysis with QGIS
-:link: ../Module_6/en_module_6_overview.html
+:link: ../content/Module_6/en_module_6_overview.html
 :link-type: url
 
 Use GIS to perform spatial analyses and support evidence-based decision-making.
@@ -105,7 +105,7 @@ Use GIS to perform spatial analyses and support evidence-based decision-making.
 :::
 
 :::{grid-item-card} Module 7 — Automation with QGIS
-:link: ../Module_7/en_module_7_overview.html
+:link: ../content/Module_7/en_module_7_overview.html
 :link-type: url
 
 Increase efficiency by automating GIS workflows using QGIS tools.
@@ -119,7 +119,7 @@ Increase efficiency by automating GIS workflows using QGIS tools.
 :::
 
 :::{grid-item-card} Module 8 — Remote Sensing and Raster Data
-:link: ../Module_8/en_module_8_overview.html
+:link: ../content/Module_8/en_module_8_overview.html
 :link-type: url
 
 Work with raster datasets and remote sensing imagery to complement vector-based GIS analyses.
@@ -133,7 +133,7 @@ Work with raster datasets and remote sensing imagery to complement vector-based 
 :::
 
 :::{grid-item-card} Module 9 — Network Analysis
-:link: ../Module_9/en_module_9_overview.html
+:link: ../content/Module_9/en_module_9_overview.html
 :link-type: url
 
 Analyse transportation and infrastructure networks using GIS tools.
