@@ -8,7 +8,7 @@ Below you can find an overview of all available modules and their main topics.
 
 ---
 
-::::{grid} 2 2 2 2
+::::{grid} 1 2 2 2
 :gutter: 3
 
 :::{grid-item-card} Module 1 — Introduction to GIS
