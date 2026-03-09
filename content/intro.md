@@ -110,7 +110,17 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 |                              | Reclassify raster data                       |                             |
 :::
 
+## GIS in Anticipatory Action
 
+In addition to the training material above, the platform also hosts several case studies and workflows of GIS in Anticipatory Action. You can find an overview of these case studies, and the tools used in the analyses, here: 
+
+
+:::{card}
+:link: ../content/GIS_AA/GIS_AA_overview
+
+__GIS in Anticipatory Action__
+
+:::
 
 
 
