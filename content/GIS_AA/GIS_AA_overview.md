@@ -50,7 +50,7 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 
 ---
 
-### Drought Trigger Analysis – Somalia
+### Drought Early Action Protocol Trigger Analysis – Somalia
 **Focus:** Trigger monitoring and threshold analysis for drought  
 **Key elements:**
 - Hazard indicators and thresholds
@@ -58,11 +58,11 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 - Integration of GIS into trigger-based frameworks
 
 :::{card} 
-:link: \content\GIS_AA\en_qgis_drought_trigger_somalia.md
+:link: /content/GIS_AA/en_qgis_drought_trigger_somalia.md
+
+__QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
 :::
-
-👉 *QGIS Anticipatory Action trigger analysis for drought in Somalia*
 
 ---
 
@@ -73,13 +73,26 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 - Spatial pattern analysis
 - Learning from past events to improve future triggers
 
-👉 *Historical impact assessment for flooding in Sudan*
+:::{card} 
+:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html
 
+__Historical Impact Assessment of Flooding in Sudan__
+
+:::
 ---
 
 ## Exercises: GIS for Anticipatory Action
 
-In addition to full case studies, this section includes **hands-on exercises** that focus on specific GIS techniques commonly used in AA, such as:
+In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:
+
+:::{card}
+Cyclone Anticipatory Action Analysis Exercise Track
+^^^
+:link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html
+
+
+
+:::
 
 - Spatial risk analysis
 - Exposure and impact estimation
@@ -91,7 +104,7 @@ These exercises can be used independently or embedded into broader AA-focused tr
 
 ## Tools and Methods Used in GIS for AA
 
-Many GIS in Anticipatory Action analyses rely on **specialised tools and platforms**.
+Many GIS analyses in Anticipatory Action analyses rely on **specialised tools and platforms**.
 These tools are documented in the **Tools & Methods** section of this platform.
 
 Commonly used tools include:
