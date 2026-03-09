@@ -142,11 +142,12 @@ When the upload is completed, you may encounter some error messages. Images are 
 
 ```{figure} /fig/AILAS_Panoramax_upload_error_en.png
 ---
-name: upload completed
+name: upload error
 width: 400 px
 ---
 Upload error messages
 ```
+
 :::{admonition} Dealing with multiple image folders
 :class: tip
 If you captured more than a thousand images, the images are saved in several subfolders of `DCIM` called `100GOPRO`, `101GOPRO`, etc. Repeat steps 1 to 6 of this section for all the subfolders.
@@ -164,4 +165,55 @@ Safely remove the SD card reader from your computer, and re-insert the card into
 
 ### See your own uploaded sequences and pictures
 
+Click on your account icon in the Panoramax top navigation bar and choose "My Photos". A page listing all your uploaded image sequences will open.
+
+```{figure} /fig/AILAS_Panoramax_my_photos_en.png
+---
+name: my photos
+width: 400 px
+---
+My Photos page
+```
+
+The sequences are listed with their names, number of photos, shooting and upload date, covered distance, and the visibility status. You can search your sequences image by area (the current view in the map on the left side of the page), or sort and filter by date.
+
+To view all photos in one specific sequence, click one of the sequences. This will open the sequence page.
+
+
+```{figure} /fig/AILAS_Panoramax_sequence_en.png
+---
+name: image sequences
+width: 400 px
+---
+Sequence page
+```
+
+The sequence page displays thumbnails of all photos in a sequence. You can also edit e.g. the name of the sequence, or hide individual photos. Do not, however, change the visibility mode of the sequence.
+
+By clicking on the "Fullscreen" button, you will get to the "Explore" map while focussing on the currently selected sequence and image.
+
 ### Explore all pictures on Panoramax
+
+Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc on the map.
+
+Click on one of the image markers on the map to open and image.
+
+```{figure} /fig/AILAS_Panoramax_explore_map_en.png
+---
+name: explore map
+width: 400 px
+---
+Explore: Map expanded
+```
+
+You can click "Expand" in the bottom left inlet to toggle between displaying the image or the map in the main view. While displaying the image in the main view, the top left box provides meta-data to the photo. This box has a "Report" button to report any issues with the photo, and both an "iD" and a "JOSM" button to open the current map in the respective OpenStreetMap editor.
+
+Use the navigation arrows on the image to move between images, or press the "▶" button to move through an entire sequence.
+
+```{figure} /fig/AILAS_Panoramax_explore_image_en.png
+---
+name: explore image
+width: 400 px
+---
+Explore: Image expanded
+```

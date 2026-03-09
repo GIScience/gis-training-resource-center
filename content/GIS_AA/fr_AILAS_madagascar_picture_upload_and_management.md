@@ -154,8 +154,6 @@ Messages d’erreur lors du téléversement
 Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 1 à 6 de cette section pour chacun de ces sous-dossiers.
 :::
 
-```
-
 ### 5. Supprimez les images
 
 Une fois que vous avez téléversé avec succès les images, supprimez-les de la carte SD.
@@ -164,6 +162,62 @@ Une fois que vous avez téléversé avec succès les images, supprimez-les de la
 
 Retirez en toute sécurité le lecteur de cartes SD de votre ordinateur, puis réinsérez la carte dans la caméra.
 
-## Explorations des images sur Panoramax
-🚧 Information à venir. 🚧
+Here’s the translated version in French with the image filenames updated to `fr`:
 
+---
+
+## Exploration des images sur Panoramax
+
+### Voir vos propres séquences et photos téléchargées
+
+Cliquez sur l’icône de votre compte dans la barre de navigation supérieure de Panoramax et choisissez « Mes photos ». Une page listant toutes vos séquences d’images téléchargées s’ouvrira.
+
+```{figure} /fig/AILAS_Panoramax_my_photos_fr.png
+---
+name: mes photos
+width: 400 px
+---
+Page Mes Photos
+```
+
+Les séquences sont listées avec leurs noms, le nombre de photos, les dates de prise de vue et de téléchargement, la distance couverte, et le statut de visibilité. Vous pouvez rechercher vos séquences par zone (la vue actuelle sur la carte à gauche de la page), ou trier et filtrer par date.
+
+Pour voir toutes les photos d’une séquence spécifique, cliquez sur l’une des séquences. Cela ouvrira la page de la séquence.
+
+```{figure} /fig/AILAS_Panoramax_sequence_fr.png
+---
+name: séquences d'images
+width: 400 px
+---
+Page de la séquence
+```
+
+La page de la séquence affiche les vignettes de toutes les photos d’une séquence. Vous pouvez modifier, par exemple, le nom de la séquence ou masquer des photos individuelles. Ne changez cependant pas le mode de visibilité de la séquence.
+
+En cliquant sur le bouton « Plein écran », vous accéderez à la carte « Explorer » tout en vous focalisant sur la séquence et la photo actuellement sélectionnée.
+
+### Explorer toutes les images sur Panoramax
+
+Cliquez sur « Explorer » dans la barre de navigation supérieure pour ouvrir une carte interactive du monde afin d’explorer toutes les images disponibles. Déplacez et zoomez sur la carte pour trouver des images, ou utilisez la barre de recherche en haut à gauche pour trouver des adresses, villes, etc., sur la carte.
+
+Cliquez sur l’un des marqueurs d’image sur la carte pour ouvrir une image.
+
+```{figure} /fig/AILAS_Panoramax_explore_map_fr.png
+---
+name: carte d'exploration
+width: 400 px
+---
+Explorer : Carte agrandie
+```
+
+Vous pouvez cliquer sur « Agrandir » dans l’encart en bas à gauche pour basculer entre l’affichage de l’image ou de la carte dans la vue principale. Lors de l’affichage de l’image dans la vue principale, la boîte en haut à gauche fournit les métadonnées de la photo. Cette boîte dispose d’un bouton « Signaler » pour signaler tout problème avec la photo, ainsi que des boutons « iD » et « JOSM » pour ouvrir la carte actuelle dans l’éditeur OpenStreetMap correspondant.
+
+Utilisez les flèches de navigation sur l’image pour passer d’une image à l’autre, ou appuyez sur le bouton « ▶ » pour parcourir l’ensemble d’une séquence.
+
+```{figure} /fig/AILAS_Panoramax_explore_image_fr.png
+---
+name: image explorée
+width: 400 px
+---
+Explorer : Image agrandie
+```
