@@ -135,12 +135,17 @@ parts:
       - file: content/Trainers_corner/en_how_to_assessment.md   
   - caption: GIS in Anticipatory Action
     chapters:
+      - file: content/GIS_AA/GIS_AA_overview.md
       - file: content/GIS_AA/en_qgis_cyclone_trigger_madagascar.md
         sections:
           - file: content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
       - file: content/GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: content/GIS_AA/en_qgis_srcs_basic_ex.md
+      - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
+        sections:
+          - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
+      - file: content/GIS_AA/en_qgis_GIS_AA_exercises.md
       - file: content/GIS_AA/en_AILAS_madagascar.md
         sections:
           - file: content/GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
@@ -153,10 +158,6 @@ parts:
         sections:
           - file: content/GIS_AA/en_qgis_generate_indicators_for_plugin.md
           - file: content/GIS_AA/en_gaia_indicators_processing.md
-      - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md
-        sections:
-          - file: content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
-      - file: content/GIS_AA/en_qgis_GIS_AA_exercises.md
   - caption: Mobile Data Collection
     chapters:
       - file: content/Mobile_Data_collection/en_SMT.md
