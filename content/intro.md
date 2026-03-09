@@ -22,7 +22,7 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 ## How to use the IFRC Network GIS Training Platform
 
 ::::{grid} 1 2 2 2
-:gutter: 3 
+:gutter: 2
 :::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
 
@@ -54,11 +54,12 @@ The wiki is your companion for working with QGIS in training in real life. It br
 :::
 
 :::{grid-item-card} Modules 🎓
-:link: 
+:link: ../content/modules_overview.md
 In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
 :::
 
 :::{grid-item-card} Exercises ✍️
+:link: ../content/Exercise_tracks/en_exercise_tracks_overview.md
 In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
 :::
 
@@ -71,40 +72,40 @@ The primary objective is to empower individuals across various roles within the 
 The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.
 
 :::{dropdown} Basic Skills
-| Module 1 -  Introduction GIS ✨                       | Module 2 - Working with geodata 🌍    | Module 3 - Basic GIS operations 📍           |
-| ---------------------------------------------------- | -------------------------------------- | --------------------------------------------- |
-| Installation QGIS                                    | Layer concept in GIS                   | Data editing and creation                     |
-| Paper maps and cartography, digital maps distinction | Data Import                            | Feature attribute selection and editing       |
-| Introduction to GIS                                  | Geo features and attributes            | Feature selection                             |
+| Module 1 -  Introduction GIS ✨                       | Module 2 - Working with geodata 🌍      | Module 3 - Basic GIS operations 📍            |
+|------------------------------------------------------|-----------------------------------------|-----------------------------------------------|
+| Installation QGIS                                    | Layer concept in GIS                    | Data editing and creation                     |
+| Paper maps and cartography, digital maps distinction | Data Import                             | Feature attribute selection and editing       |
+| Introduction to GIS                                  | Geo features and attributes             | Feature selection                             |
 | QGIS interface description                           | Vector and raster data - basic concepts | Spatial queries: select by polygon + location |
-| WebGIS platform                                      | Vector data                            | Data  classification                          |
-| Mobile apps overview                                 | Vector file formats                    | Introduction to non-spatial queries           |
-| Examples of maps created with GIS                    | Basemap selection                      |                                               |
-|                                                      | Projections                            |                                               |
-|                                                      | Data sources                           |                                               |
+| WebGIS platform                                      | Vector data                             | Data  classification                          |
+| Mobile apps overview                                 | Vector file formats                     | Introduction to non-spatial queries           |
+| Examples of maps created with GIS                    | Basemap selection                       |                                               |
+|                                                      | Projections                             |                                               |
+|                                                      | Data sources                            |                                               |
 ::::
   
 :::{dropdown} Intermediate Skills
 
-| Module 4 - Representation 🗺️ | Module 5 - Intermediate GIS operations 🌐  | Module 6 - Data analysis with QGIS 📊 |
-| ------------------------------- | ------------------------------------------- | -------------------------------------- |
-| Visualisation                   | Geoprocessing: Buffer                       |                                        |
-| Graphical variables             | Geoprocessing: Clip                         |                                        |
-| Styling in QGIS                 | Geoprocessing: Dissolve                     | QGIS plugins example: QuickOSM         |
-| Symbology and colours            | Clip by nask                                | Remote sensing/Introduction to raster data      |
-| Export or import styles            | Clip by extent                              |                                        |
-| Print layout                    | Non-spatial queries                         |                                        |
-| Map composition                 | Attribute table operations |                                        |
-| Atlas                           | Non-spatial joins                           |                                        |
+| Module 4 - Representation 🗺️ | Module 5 - Intermediate GIS operations 🌐 | Module 6 - Data analysis with QGIS 📊      |
+|------------------------------|-------------------------------------------|--------------------------------------------|
+| Visualisation                | Geoprocessing: Buffer                     |                                            |
+| Graphical variables          | Geoprocessing: Clip                       |                                            |
+| Styling in QGIS              | Geoprocessing: Dissolve                   | QGIS plugins example: QuickOSM             |
+| Symbology and colours        | Clip by nask                              | Remote sensing/Introduction to raster data |
+| Export or import styles      | Clip by extent                            |                                            |
+| Print layout                 | Non-spatial queries                       |                                            |
+| Map composition              | Attribute table operations                |                                            |
+| Atlas                        | Non-spatial joins                         |                                            |
 :::
 
 :::{dropdown} Advanced Skills
-|Module 7 - Automatisation 💻| Module 8 - Remote sensing and raster data 🛰️ | Module 9 - Accessibility 🚑|
-|-----------------------|---------------------|-------------------------------------|
-|Introduction to automation|Zonal statistics|Accessibility analyses|
-|The model designer|Extraction of raster values|Spatial analysis |
-||Create elevation profile||
-||Reclassify raster data||
+| Module 7 - Automatisation 💻 | Module 8 - Remote sensing and raster data 🛰️ | Module 9 - Accessibility 🚑 |
+|------------------------------|----------------------------------------------|-----------------------------|
+| Introduction to automation   | Zonal statistics                             | Accessibility analyses      |
+| The model designer           | Extraction of raster values                  | Spatial analysis            |
+|                              | Create elevation profile                     |                             |
+|                              | Reclassify raster data                       |                             |
 :::
 
 
