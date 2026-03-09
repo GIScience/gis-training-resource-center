@@ -23,11 +23,11 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 
 ::::{grid} 1 2 2 2
 :gutter: 2
+
 :::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
 
 There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
-
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
 Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS. 
 
