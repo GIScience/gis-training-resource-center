@@ -21,8 +21,9 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 
 ## How to use the IFRC Network GIS Training Platform
 
-::::{grid} 2
-:::{card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
+::::{grid} 1 2 2 2
+:gutter: 3 
+:::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
 
 There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
@@ -32,7 +33,7 @@ Nevertheless, every component of the training material is designed to be utilize
 
 :::
 
-:::{card} __[Start learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
+:::{grid-item-card} __[Start learning](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
 :link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
@@ -45,16 +46,19 @@ This is not a self-learning platform. If you want to learn QGIS, it is always be
 Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.
 
 
-::::{grid} 3
-:::{card} Wiki 📖
+::::{grid} 1 3 3 3
+:gutter: 3
+:::{grid-item-card} Wiki 📖
+:link: ../content/Wiki/wiki_homepage.md
 The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
 :::
 
-:::{card} Modules 🎓
+:::{grid-item-card} Modules 🎓
+:link: 
 In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
 :::
 
-:::{card} Exercises ✍️
+:::{grid-item-card} Exercises ✍️
 In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
 :::
 
