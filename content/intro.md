@@ -25,7 +25,7 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 :gutter: 2
 
 :::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
-:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
+:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html  
 
 There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
@@ -41,13 +41,15 @@ This is not a self-learning platform. If you want to learn QGIS, it is always be
 :::
 ::::
 
+
 ## What's Inside
 
 Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.
 
 
 ::::{grid} 1 3 3 3
-:gutter: 3
+:gutter: 2
+
 :::{grid-item-card} Wiki 📖
 :link: ../content/Wiki/wiki_homepage.md
 The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
