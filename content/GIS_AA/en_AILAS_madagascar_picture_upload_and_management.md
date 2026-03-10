@@ -48,14 +48,13 @@ This means that data ownership stays with the contributors and hosting instituti
 
 ### Data privacy and security
 
-Panoramax prevents the identification of people in the imagery by blurring faces and license plates. This happens automatically on image upload and before the images are published. User can report any further issues with an image through the platform. This will cause the image to be hidden from public view until intervention from the owner of the image.
+Panoramax prevents the identification of people in the imagery by blurring faces and license plates. This happens automatically on image upload and before the images are published. Users can report any further issues with an image through the platform. This will cause the image to be hidden from public view until intervention from the owner of the image.
 
 While one of the main features of Panoramax is its global public meta-catalogue that makes images from all federated instances findable, we deliberately choose not to join the federation with the Panoramax instance of the AILAS project. This means that images uploaded to our instance cannot be accessed through the global API.
 
-The API of the AILAS Panoramax instance runs on a server that is only accessible from within our own network. Images and derivates are stored in a private MinIO bucket. The website and the API that allow access to the images and the data currently run on a closed network.
+The Panoramax instance used by the AILAS project has a default setting for uploaded images to be visible only to logged in users of the website. Users cannot register accounts to the Panoramax instance themselves, but must be created by the administrators. This means, that the uploaded images and image sequences will not be visible to the general public.
 
 ## Picture upload
-🚧 The process described here is a temporary solution and due to change. 🚧
 
 ### 1. Remove the SD card from the camera.
 
@@ -97,78 +96,129 @@ Insert the SD card into the card reader
 
 With the SD card inserted, connect the card reader to a computer.
 
-### 3. Sign in to upload bucket
+### 3. Sign in to Panoramax
 
-```{figure} /fig/AILAS_bucket_login.png
+Open the AILAS project's [Panoramax website](https://panoramax.heigit.org) and click "Log in" on the right side of the top navigation bar.
+
+```{figure} /fig/AILAS_Panoramax_login_en.png
 ---
-name: login bucket
+name: panoramax login
 width: 400 px
 ---
-Sign in to upload bucket
+Log in to Panoramax
 ```
 
-Open the [upload bucket](https://warm.storage.heigit.org/ui/browser/heigit-hum-panoramax-temp) in your browser and log in with the credentials provided to you.
+Enter your __e-mail__ and your password, and click "Sign in".
+
+If this is your first time logging in, you will use an initial password provided to you. You will need to change the password immediately after logging in.
+
+:::{admonition} Other Panoramax instances
+:class: tip
+For the AILAS project, images are expected to be uploaded to a [specific instance of Panoramax](https://panoramax.heigit.org). Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery _in the public_, check out available public instances at https://panoramax.fr.
+:::
 
 ### 4. Upload images
 
-1. Choose the correct upload folder. The folder name should correspond to the label on your camera. Click the folder to open it.
+1. Click the big blue "Share Photos" button in the top navigation bar.
 
-```{figure} /fig/AILAS_choose_upload_folder.png
+```{figure} /fig/AILAS_Panoramax_upload_en.png
 ---
-name: upload folder
+name: upload images
 width: 400 px
 ---
-Open the correct one of the available upload folders.
+Upload images
 ```
 
-```{figure} /fig/AILAS_camera_label.jpg
+2. Make sure that visibility mode is set to "Instance limited" (default)
+3. Indicate the transport mode: If the images have been captured by a camera installed in a car, choose "By car".
+4. Do _not_ change the advanced settings.
+5. Click "Upload pictures". A file browser will open. Select and open all the images on the SD card in the folder `/DCIM/100GOPRO`. It can take some seconds before the upload starts if you have selected a large number of images.
+6. Keep the browser window open until the upload is completed.
+
+```{figure} /fig/AILAS_Panoramax_upload_window_en.png
 ---
-name: camera name
+name: upload window
 width: 400 px
 ---
-The folder name should correspond to the label on your camera.
+Keep the upload window open until the upload is completed
 ```
 
-2. Click the upload button in the top right and select "Upload file".
+When the upload is completed, you may encounter some error messages. Images are rejected when they lack location data, or when they are too close to the previous image in time and space. Usually, this is nothing to worry about. However, if a large amount of images could not be uploaded due to missing location data, try to turn on the camera earlier before going on the next trip, to make sure that the GPS is ready when you start.
 
-```{figure} /fig/AILAS_upload_button.png
+```{figure} /fig/AILAS_Panoramax_upload_error_en.png
 ---
-name: upload button
+name: upload error
 width: 400 px
 ---
-Click the upload button and select "Upload file"
+Upload error messages
 ```
-3.  A file browser will open. Select and open all the images on the SD card in the folder `/DCIM/100GOPRO`.
 
 :::{admonition} Dealing with multiple image folders
 :class: tip
-If you captured more than a thousand images, the images are saved in several subfolders of `DCIM` called `100GOPRO`, `101GOPRO`, etc. Repeat steps 2 to 4 of this section for all the subfolders.
+If you captured more than a thousand images, the images are saved in several subfolders of `DCIM` called `100GOPRO`, `101GOPRO`, etc. Repeat steps 1 to 6 of this section for all the subfolders.
 :::
-
-```{figure} /fig/AILAS_select_files.png
----
-name: select files
-width: 400 px
----
-Select the image files
-```
-4. Wait until the upload status of all image files is at 100 %. Scroll down the upload status menu to verify.
-
-```{figure} /fig/AILAS_upload_completed.png
----
-name: upload completed
-width: 400 px
----
-Wait until the upload of all files is completed
-```
 
 ### 5. Delete images
 
 Once you have successfully uploaded the images, delete them from the SD card.
 
-### 6. Re-insert sd card into camera
+### 6. Re-insert SD card into camera
 
 Safely remove the SD card reader from your computer, and re-insert the card into the camera.
 
 ## Picture exploration on Panoramax
-🚧 Information will follow. 🚧
+
+### See your own uploaded sequences and pictures
+
+Click on your account icon in the Panoramax top navigation bar and choose "My Photos". A page listing all your uploaded image sequences will open.
+
+```{figure} /fig/AILAS_Panoramax_my_photos_en.png
+---
+name: my photos
+width: 400 px
+---
+My Photos page
+```
+
+The sequences are listed with their names, number of photos, shooting and upload date, covered distance, and the visibility status. You can search your image sequences by area (the current view in the map on the left side of the page), or sort and filter by date.
+
+To view all photos in one specific sequence, click one of the sequences. This will open the sequence page.
+
+
+```{figure} /fig/AILAS_Panoramax_sequence_en.png
+---
+name: image sequences
+width: 400 px
+---
+Sequence page
+```
+
+The sequence page displays thumbnails of all photos in a sequence. You can also edit e.g. the name of the sequence, or hide individual photos. Do not, however, change the visibility mode of the sequence.
+
+By clicking on the "Fullscreen" button, you will get to the "Explore" map while focusing on the currently selected sequence and image.
+
+### Explore all pictures on Panoramax
+
+Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc. on the map.
+
+Click on one of the image markers on the map to open an image.
+
+```{figure} /fig/AILAS_Panoramax_explore_map_en.png
+---
+name: explore map
+width: 400 px
+---
+Explore: Map expanded
+```
+
+You can click "Expand" in the bottom left inlet to toggle between displaying the image or the map in the main view. While displaying the image in the main view, the top left box provides metadata to the photo. This box has a "Report" button to report any issues with the photo, and both an "iD" and a "JOSM" button to open the current map in the respective OpenStreetMap editor.
+
+Use the navigation arrows on the image to move between images, or press the "▶" button to move through an entire sequence.
+
+```{figure} /fig/AILAS_Panoramax_explore_image_en.png
+---
+name: explore image
+width: 400 px
+---
+Explore: Image expanded
+```

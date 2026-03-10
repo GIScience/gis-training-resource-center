@@ -97,73 +97,67 @@ Insérez la carte dans le lecteur
 
 Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.
 
-### 3. Connectez-vous au bucket de téléversement
+### 3. Se connecter à Panoramax
 
-```{figure} /fig/AILAS_bucket_login.png
+Ouvrez le [site web Panoramax](https://panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
+
+```{figure} /fig/AILAS_Panoramax_login_fr.png
 ---
-name: login bucket
+name: panoramax login
 width: 400 px
 ---
-Connectez-vous au bucket de téléversement
+Se connecter à Panoramax
 ```
 
-Ouvrez le  [bucket de téléversement](https://warm.storage.heigit.org/ui/browser/heigit-hum-panoramax-temp) dans votre navigateur et connectez-vous avec les identifiants qui vous ont été fournis.
+Saisissez votre **adresse e-mail** et votre mot de passe, puis cliquez sur « Sign in ».
 
-### 4. Téléversez les images
+Si c’est votre première connexion, vous utiliserez un mot de passe initial qui vous a été fourni. Vous devrez modifier ce mot de passe immédiatement après vous être connecté.
 
-1. Choisissez le dossier de téléversement correct. Le nom du dossier doit correspondre à l’étiquette de votre caméra. Cliquez sur le dossier pour l’ouvrir.
-
-```{figure} /fig/AILAS_choose_upload_folder.png
----
-name: upload folder
-width: 400 px
----
-Ouvrez le bon dossier parmi ceux disponibles pour le téléversement.
-```
-
-```{figure} /fig/AILAS_camera_label.jpg
----
-name: camera name
-width: 400 px
----
-Le nom du dossier doit correspondre à l’étiquette de votre caméra.
-```
-2. Cliquez sur le bouton de téléversement en haut à droite et sélectionnez « Upload file ».
-
-```{figure} /fig/AILAS_upload_button.png
----
-name: upload button
-width: 400 px
----
-Cliquez sur le bouton de téléversement et sélectionnez « Upload file »
-```
-
-3. L'explorateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images de la carte SD dans le dossier `/DCIM/100GOPRO`.
-
-:::{admonition} Gestion de plusieurs dossiers d’images
+:::{admonition} Autres instances de Panoramax
 :class: tip
-Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 2 à 4 de cette section pour tous les sous-dossiers.
+Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
 :::
 
+### 4. Téléverser des images
 
-```{figure} /fig/AILAS_select_files.png
+1. Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.
+
+```{figure} /fig/AILAS_Panoramax_upload_fr.png
 ---
-name: select files
+name: upload images
 width: 400 px
 ---
-Sélectionnez les fichiers d’images
+Téléverser des images
 ```
 
-4. Attendez que le statut de téléversement de tous les fichiers image atteigne 100 %. Faites défiler le menu de statut de téléversement pour vérifier.
+2. Vérifiez que le mode de visibilité est réglé sur « Restreinte à l'instance » (valeur par défaut).
+3. Indiquez le mode de transport : si les images ont été capturées par une caméra installée dans une voiture, choisissez « En voiture ».
+4. Ne *modifiez pas* les paramètres avancés.
+5. Cliquez sur « Téléverser des photos ». Un navigateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images présentes sur la carte SD dans le dossier `/DCIM/100GOPRO`. Le démarrage du téléversement peut prendre quelques secondes si vous avez sélectionné un grand nombre d’images.
+6. Gardez la fenêtre du navigateur ouverte jusqu’à ce que le téléversement soit terminé.
 
+```{figure} /fig/AILAS_Panoramax_upload_window_fr.png
+---
+name: upload window
+width: 400 px
+---
+Gardez la fenêtre de téléversement ouverte jusqu’à la fin du téléversement
+```
 
-```{figure} /fig/AILAS_upload_completed.png
+Une fois le téléversement terminé, vous pouvez rencontrer certains messages d’erreur. Les images sont rejetées lorsqu’elles ne contiennent pas de données de localisation, ou lorsqu’elles sont trop proches de l’image précédente dans le temps et l’espace. En général, il n’y a pas lieu de s’inquiéter. Cependant, si un grand nombre d’images n’a pas pu être téléversé en raison de l’absence de données de localisation, essayez d’allumer la caméra plus tôt avant votre prochain trajet, afin de vous assurer que le GPS est prêt lorsque vous commencez.
+
+```{figure} /fig/AILAS_Panoramax_upload_error_fr.png
 ---
 name: upload completed
 width: 400 px
 ---
-Attendez que le téléversement de tous les fichiers soit terminé
+Messages d’erreur lors du téléversement
 ```
+
+:::{admonition} Gestion de plusieurs dossiers d’images
+:class: tip
+Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 1 à 6 de cette section pour chacun de ces sous-dossiers.
+:::
 
 ### 5. Supprimez les images
 
@@ -173,6 +167,62 @@ Une fois que vous avez téléversé avec succès les images, supprimez-les de la
 
 Retirez en toute sécurité le lecteur de cartes SD de votre ordinateur, puis réinsérez la carte dans la caméra.
 
-## Explorations des images sur Panoramax
-🚧 Information à venir. 🚧
+Here’s the translated version in French with the image filenames updated to `fr`:
 
+---
+
+## Exploration des images sur Panoramax
+
+### Voir vos propres séquences et photos téléchargées
+
+Cliquez sur l’icône de votre compte dans la barre de navigation supérieure de Panoramax et choisissez « Mes photos ». Une page listant toutes vos séquences d’images téléchargées s’ouvrira.
+
+```{figure} /fig/AILAS_Panoramax_my_photos_fr.png
+---
+name: mes photos
+width: 400 px
+---
+Page Mes Photos
+```
+
+Les séquences sont listées avec leurs noms, le nombre de photos, les dates de prise de vue et de téléchargement, la distance couverte, et le statut de visibilité. Vous pouvez rechercher vos séquences par zone (la vue actuelle sur la carte à gauche de la page), ou trier et filtrer par date.
+
+Pour voir toutes les photos d’une séquence spécifique, cliquez sur l’une des séquences. Cela ouvrira la page de la séquence.
+
+```{figure} /fig/AILAS_Panoramax_sequence_fr.png
+---
+name: séquences d'images
+width: 400 px
+---
+Page de la séquence
+```
+
+La page de la séquence affiche les vignettes de toutes les photos d’une séquence. Vous pouvez modifier, par exemple, le nom de la séquence ou masquer des photos individuelles. Ne changez cependant pas le mode de visibilité de la séquence.
+
+En cliquant sur le bouton « Plein écran », vous accéderez à la carte « Explorer » tout en vous focalisant sur la séquence et la photo actuellement sélectionnée.
+
+### Explorer toutes les images sur Panoramax
+
+Cliquez sur « Explorer » dans la barre de navigation supérieure pour ouvrir une carte interactive du monde afin d’explorer toutes les images disponibles. Déplacez et zoomez sur la carte pour trouver des images, ou utilisez la barre de recherche en haut à gauche pour trouver des adresses, villes, etc., sur la carte.
+
+Cliquez sur l’un des marqueurs d’image sur la carte pour ouvrir une image.
+
+```{figure} /fig/AILAS_Panoramax_explore_map_fr.png
+---
+name: carte d'exploration
+width: 400 px
+---
+Explorer : Carte agrandie
+```
+
+Vous pouvez cliquer sur « Agrandir » dans l’encart en bas à gauche pour basculer entre l’affichage de l’image ou de la carte dans la vue principale. Lors de l’affichage de l’image dans la vue principale, la boîte en haut à gauche fournit les métadonnées de la photo. Cette boîte dispose d’un bouton « Signaler » pour signaler tout problème avec la photo, ainsi que des boutons « iD » et « JOSM » pour ouvrir la carte actuelle dans l’éditeur OpenStreetMap correspondant.
+
+Utilisez les flèches de navigation sur l’image pour passer d’une image à l’autre, ou appuyez sur le bouton « ▶ » pour parcourir l’ensemble d’une séquence.
+
+```{figure} /fig/AILAS_Panoramax_explore_image_fr.png
+---
+name: image explorée
+width: 400 px
+---
+Explorer : Image agrandie
+```
