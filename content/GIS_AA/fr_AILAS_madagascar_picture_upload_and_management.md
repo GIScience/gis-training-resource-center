@@ -113,6 +113,11 @@ Saisissez votre **adresse e-mail** et votre mot de passe, puis cliquez sur « Si
 
 Si c’est votre première connexion, vous utiliserez un mot de passe initial qui vous a été fourni. Vous devrez modifier ce mot de passe immédiatement après vous être connecté.
 
+:::{admonition} Autres instances de Panoramax
+:class: tip
+Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
+:::
+
 ### 4. Téléverser des images
 
 1. Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.

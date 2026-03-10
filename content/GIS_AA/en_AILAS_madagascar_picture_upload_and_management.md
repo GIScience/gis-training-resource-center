@@ -112,6 +112,11 @@ Enter your __e-mail__ and your password, and click "Sign in".
 
 If this is your first time logging in, you will use an initial password provided to you. You will need to change the password immediately after logging in.
 
+:::{admonition} Other Panoramax instances
+:class: tip
+For the AILAS project, images are expected to be uploaded to a [specific instance of Panoramax](https://panoramax.heigit.org). Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery _in the public_, check out available public instances at https://panoramax.fr.
+:::
+
 ### 4. Upload images
 
 1. Click the big blue "Share Photos" button in the top navigation bar.
