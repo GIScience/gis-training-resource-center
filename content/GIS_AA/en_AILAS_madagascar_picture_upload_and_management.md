@@ -52,7 +52,7 @@ Panoramax prevents the identification of people in the imagery by blurring faces
 
 While one of the main features of Panoramax is its global public meta-catalogue that makes images from all federated instances findable, we deliberately choose not to join the federation with the Panoramax instance of the AILAS project. This means that images uploaded to our instance cannot be accessed through the global API.
 
-The Panoramax instance used by the AILAS project has a default setting for uploaded images to be visible only to logged in users of the website. Users cannot register accounts to the Panoramax instance themselves, but must be created by the administrators. This means, that the uploaded images and image sequences will not be visibile to the general public.
+The Panoramax instance used by the AILAS project has a default setting for uploaded images to be visible only to logged in users of the website. Users cannot register accounts to the Panoramax instance themselves, but must be created by the administrators. This means, that the uploaded images and image sequences will not be visible to the general public.
 
 ## Picture upload
 
@@ -110,7 +110,7 @@ Log in to Panoramax
 
 Enter your __e-mail__ and your password, and click "Sign in".
 
-If this is your first time logging in, you will use an initial password provided to you. You will need to change the password immediately after loggin in.
+If this is your first time logging in, you will use an initial password provided to you. You will need to change the password immediately after logging in.
 
 ### 4. Upload images
 
@@ -175,7 +175,7 @@ width: 400 px
 My Photos page
 ```
 
-The sequences are listed with their names, number of photos, shooting and upload date, covered distance, and the visibility status. You can search your sequences image by area (the current view in the map on the left side of the page), or sort and filter by date.
+The sequences are listed with their names, number of photos, shooting and upload date, covered distance, and the visibility status. You can search your image sequences by area (the current view in the map on the left side of the page), or sort and filter by date.
 
 To view all photos in one specific sequence, click one of the sequences. This will open the sequence page.
 
@@ -190,13 +190,13 @@ Sequence page
 
 The sequence page displays thumbnails of all photos in a sequence. You can also edit e.g. the name of the sequence, or hide individual photos. Do not, however, change the visibility mode of the sequence.
 
-By clicking on the "Fullscreen" button, you will get to the "Explore" map while focussing on the currently selected sequence and image.
+By clicking on the "Fullscreen" button, you will get to the "Explore" map while focusing on the currently selected sequence and image.
 
 ### Explore all pictures on Panoramax
 
-Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc on the map.
+Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc. on the map.
 
-Click on one of the image markers on the map to open and image.
+Click on one of the image markers on the map to open an image.
 
 ```{figure} /fig/AILAS_Panoramax_explore_map_en.png
 ---
@@ -206,7 +206,7 @@ width: 400 px
 Explore: Map expanded
 ```
 
-You can click "Expand" in the bottom left inlet to toggle between displaying the image or the map in the main view. While displaying the image in the main view, the top left box provides meta-data to the photo. This box has a "Report" button to report any issues with the photo, and both an "iD" and a "JOSM" button to open the current map in the respective OpenStreetMap editor.
+You can click "Expand" in the bottom left inlet to toggle between displaying the image or the map in the main view. While displaying the image in the main view, the top left box provides metadata to the photo. This box has a "Report" button to report any issues with the photo, and both an "iD" and a "JOSM" button to open the current map in the respective OpenStreetMap editor.
 
 Use the navigation arrows on the image to move between images, or press the "▶" button to move through an entire sequence.
 
