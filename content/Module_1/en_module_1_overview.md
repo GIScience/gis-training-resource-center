@@ -24,16 +24,16 @@ The first module is aimed to familiarise beginners with the concept of geographi
         - Know what spatial analysis and cartography means
         - Know the different types of maps used in humanitarian work
         - Have a basic understanding of geodata
-*   - __[Chapter 2: Setting up for the Training](/content/Module_1/en_qgis_installation.md)__
+*   - __[Chapter 2: Setting up for the Training](/content/Module_1/en_qgis_installation)__
     - __At the end of this chapter, you should:__
         - Have a folder structure for the training
         - Know how to install QGIS
-*   - __[Chapter 3: Getting started with QGIS](/content/Module_1/en_qgis_start.md)__
+*   - __[Chapter 3: Getting started with QGIS](/content/Module_1/en_qgis_start)__
     - __At the end of this chapter, you should:__ 
         - Know what you can do with QGIS
         - Know how to create, save, and open QGIS-projects
         - Understand the QGIS-interface and its components
-*   -  __[Exercises for Module 1](/content/Module_1/en_qgis_module_1_exercises.md)__
+*   -  __[Exercises for Module 1](/content/Module_1/en_qgis_module_1_exercises)__
     - Here you can find a list of exercises touching upon the content of module 1.
 
 :::
