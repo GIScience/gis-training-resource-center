@@ -17,7 +17,7 @@ The first module is aimed to familiarise beginners with the concept of geographi
 
 *   - __Chapter__ 
     - __Competences & Objectives__
-*   - __[Chapter 1: What is GIS?](/content/Module_1/en_qgis_theory.md)__
+*   - __[Chapter 1: What is GIS?](/content/Module_1/en_qgis_theory)__
     - __At the end of this chapter, you should:__ 
         - Understand the concept of geographic information systems (GIS)
         - Understand the use of GIS
