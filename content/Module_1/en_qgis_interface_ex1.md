@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: /content/intro
+:link: ../content/intro.html
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -37,7 +37,7 @@ width: 800px
 align: center
 name: Standard folder structure
 ---
-Standard folder structure. Source: HeiGIT..
+Standard folder structure. Source: HeiGIT.
 :::
 ---
 
@@ -58,7 +58,7 @@ name: en_project_template_BRC
 
 - Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface. 
 - Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
-On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](/content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
+On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](../content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
 
 :::{figure} /fig/en_QGIS_GUI.png
 ---
