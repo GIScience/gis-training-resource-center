@@ -3,7 +3,7 @@
 Whether being a beginner or already having some experiences, working with QGIS can be difficult.  
 Our goal is to provide a comprehensive platform containing the essential skills and resources for the use in humanitarian aid without having to google for hours. 🔎
 In addition to the modules, we offer exercises and a wiki to enable individuals to work through the material and learn independently.  
-This QGIS training is made by people who believe GIS can help humanitarians to serve people in need better. ❤️
+This QGIS training is made by people who believe GIS can help humanitarians to serve people in need better. 
 
 ### Our Mission:
 We share the commitment to humanitarian aid. Through this website, our goal is to offer a unified, accessible and comprehensive resource, equipping individuals and organizations with the knowledge and tools necessary for working with QGIS. 
@@ -11,7 +11,7 @@ This Resource Center is also the resource for guided training modules.
 
 ## About Us:
 
-The idea for this training platform originated from a group of people from the German Red Cross, British Red Cross and Netherlands Red Cross. 💡📣 
+The idea for this training platform originated from a group of people from the German Red Cross, British Red Cross and Netherlands Red Cross.
 
 A group of dedicated student assistants and employees of the Heidelberg Institute for Geoinformation Technology (HeiGIT) are working to put together the materials on this platform. 🔨
 
@@ -44,7 +44,7 @@ A group of dedicated student assistants and employees of the Heidelberg Institut
   </div>
 
   <div class="logo">
-    <img src="https://www.ifrc.org/themes/custom/ifrc_theme/dist/images/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
+    <img src="../../_static/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
   </div>
 </div>
 
@@ -61,7 +61,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://www.drk.de/typo3conf/ext/plus_drk_base/Resources/Public/Images/logo-drk.svg" alt="German Red Cross Logo">
+    <img src="../../_static/logo-drk.svg" alt="German Red Cross Logo">
   </div>
 </div>
 
@@ -75,7 +75,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/British_Red_Cross_logo.svg/520px-British_Red_Cross_logo.svg.png" alt="British Red Cross Logo">
+    <img src="../../_static/British_Red_Cross_logo.svg.png" alt="British Red Cross Logo">
   </div>
 </div>
 
@@ -89,7 +89,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="https://www.rodekruis.nl/en/wp-content/themes/socialbrothers/assets/rode-kruis-logo-nav.svg" alt="Netherlands Red Cross Logo">
+    <img src="../../_static/rode-kruis-logo-nav.svg" alt="Netherlands Red Cross Logo">
   </div>
 </div>
 
@@ -103,7 +103,7 @@ German Red Cross:
   </div>
 
   <div class="logo">
-    <img src="/HeiGIT_Logo_compact.svg" alt="HeiGIT Logo">
+    <img src="../../_static/HeiGIT_Logo_base.png" alt="HeiGIT Logo">
   </div>
 </div>
 

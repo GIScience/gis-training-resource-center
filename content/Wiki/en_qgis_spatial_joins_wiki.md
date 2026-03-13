@@ -33,7 +33,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 ::::{tab-set}
 
 :::{tab-item} Intersect
-Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could be overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
+Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
 :::
 
 :::{tab-item} Contain

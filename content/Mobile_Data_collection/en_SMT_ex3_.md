@@ -93,7 +93,7 @@ __Wrap up:__
 
 ### Enhanced Vulnerability and Capacity Assessment (EVCA)
 
-In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map (see [EVCA Toolbox](https://preparecenter.org/site/evca/toolbox/)). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitalizing the process while, at the same time, keeping it simple.
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map (see [EVCA Toolbox](https://preparecenter.org/site/evca/toolbox/)). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.
 
 ### Benefits of the Sketch Map Tool
 

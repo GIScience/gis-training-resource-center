@@ -7,23 +7,23 @@ This article will explain the assessment survey provided on this platform that c
 ## Survey templates
 
 
-```{card} Google survey temaplate: Pre Training Survey
+```{card} Google survey template: Pre Training Survey
  Click [here](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) -> Click `Make a copy`. 
 Now you can use the survey via your own Google account. 
 ```
 
-```{card} Kobo survey temaplate: Pre Training Survey
+```{card} Kobo survey template: Pre Training Survey
 [Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_pre_training_assessment/en_pre_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
 ```
 
 ___
 
-```{card} Google survey temaplate: Post Training Survey
+```{card} Google survey template: Post Training Survey
  Click [here](https://docs.google.com/forms/d/1PRFrsQalr1_skzM2c2KDfDPOeO_rQKzSCkSF8mlUKaA/copy) -> Click `Make a copy`. 
 Now you can use the survey via your own Google account. 
 ```
 
-```{card} Kobo survey temaplate: Post Training Survey
+```{card} Kobo survey template: Post Training Survey
 [Here](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_post_training_assessment/en_post_training_assessment.xlsx) you can download the .xlsx file for the assessment to be used in Kobo Toolbox or ODK.
 ```
 
