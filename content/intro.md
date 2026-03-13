@@ -117,7 +117,7 @@ In addition to the training materials above, the platform also hosts a collectio
 The case studies present applied GIS workflows based on real operational contexts and highlight the tools and datasets used in the analyses.
 
 :::{card}
-:class: sd-text-centre
+:class-body: sd-text-center
 :link: content/GIS_AA/GIS_AA_overview
 __GIS in Anticipatory Action__
 :::
@@ -126,7 +126,7 @@ __GIS in Anticipatory Action__
 
 
 ___
-
+<!--
 ## Upcoming public trainings
 
 | Title | Date | Application | Organization | Format | Language | Skill Level | Info |
@@ -135,7 +135,7 @@ ___
 |Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|English|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
 
 ___
-
+-->
 ## Contact
 
 :::{admonition} Contact the IFRC GIS Training Platform Team
