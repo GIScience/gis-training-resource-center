@@ -118,7 +118,7 @@ The case studies present applied GIS workflows based on real operational context
 
 :::{card}
 :class-body: sd-text-center
-:link: content/GIS_AA/GIS_AA_overview
+:link: /GIS_AA/GIS_AA_overview
 __GIS in Anticipatory Action__
 :::
 
