@@ -126,8 +126,13 @@ __GIS in Anticipatory Action__
 
 
 ___
-<!--
+
+
 ## Upcoming public trainings
+
+*Currently, there are no public trainings scheduled. Most of our trainings are organized directly with National Societies within the IFRC network. If you are interested in a training or would like to explore collaboration opportunities, please contact us via email.*
+
+## Past public trainings
 
 | Title | Date | Application | Organization | Format | Language | Skill Level | Info |
 |-------|------|--------------|--------------|--------|----------|-------------|------|
@@ -135,7 +140,7 @@ ___
 |Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|English|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
 
 ___
--->
+
 ## Contact
 
 :::{admonition} Contact the IFRC GIS Training Platform Team
