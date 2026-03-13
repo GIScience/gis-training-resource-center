@@ -12,8 +12,8 @@ Below you can find an overview of all available modules and their main topics.
 :gutter: 3
 
 :::{grid-item-card} Module 1 — Introduction to GIS
-:link: ../Module_1/en_module_1_overview.html
-:link-type: url
+:link: ../Module_1/en_module_1_overview
+:link-type: doc
 
 Learn the fundamental concepts of Geographic Information Systems and become familiar with the QGIS environment.
 
@@ -28,7 +28,7 @@ Learn the fundamental concepts of Geographic Information Systems and become fami
 
 :::{grid-item-card} Module 2 — Working with Geodata
 :link: ../Module_2/en_module_2_overview.html
-:link-type: url
+:link-type: doc
 
 Understand how geospatial data is structured and how it can be accessed and managed in QGIS.
 
@@ -44,8 +44,8 @@ Understand how geospatial data is structured and how it can be accessed and mana
 :::
 
 :::{grid-item-card} Module 3 — Basic GIS Operations
-:link: ../Module_3/en_module_3_overview.html
-:link-type: url
+:link: ../Module_3/en_module_3_overview
+:link-type: doc
 
 Apply fundamental GIS techniques to create, edit, and analyse spatial data.
 
@@ -60,7 +60,7 @@ Apply fundamental GIS techniques to create, edit, and analyse spatial data.
 
 :::{grid-item-card} Module 4 — Visualisation and Map Making
 :link: ../content/Module_4/en_module_4_overview.html
-:link-type: url
+:link-type: doc
 
 Learn how to design effective maps and visualise geospatial information for communication and decision-making.
 
