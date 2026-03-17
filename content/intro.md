@@ -74,7 +74,7 @@ The primary objective is to empower individuals across various roles within the 
 The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.
 
 :::{dropdown} Basic Skills
-| Module 1 -  Introduction GIS ✨                       | Module 2 - Working with geodata 🌍      | Module 3 - Basic GIS operations 📍            |
+| Module 1 -  Introduction GIS                         | Module 2 - Working with geodata         | Module 3 - Basic GIS operations               |
 |------------------------------------------------------|-----------------------------------------|-----------------------------------------------|
 | Installation QGIS                                    | Layer concept in GIS                    | Data editing and creation                     |
 | Paper maps and cartography, digital maps distinction | Data Import                             | Feature attribute selection and editing       |
@@ -89,25 +89,25 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
   
 :::{dropdown} Intermediate Skills
 
-| Module 4 - Representation 🗺️ | Module 5 - Intermediate GIS operations 🌐 | Module 6 - Data analysis with QGIS 📊      |
-|------------------------------|-------------------------------------------|--------------------------------------------|
-| Visualisation                | Geoprocessing: Buffer                     |                                            |
-| Graphical variables          | Geoprocessing: Clip                       |                                            |
-| Styling in QGIS              | Geoprocessing: Dissolve                   | QGIS plugins example: QuickOSM             |
-| Symbology and colours        | Clip by nask                              | Remote sensing/Introduction to raster data |
-| Export or import styles      | Clip by extent                            |                                            |
-| Print layout                 | Non-spatial queries                       |                                            |
-| Map composition              | Attribute table operations                |                                            |
-| Atlas                        | Non-spatial joins                         |                                            |
+| Module 4 - Representation | Module 5 - Intermediate GIS operations | Module 6 - Data analysis with QGIS (*under construction*) |
+|---------------------------|----------------------------------------|-----------------------------------------------------------|
+| Visualisation             | Geoprocessing: Buffer                  | QGIS plugins example: QuickOSM                            |
+| Graphical variables       | Geoprocessing: Clip                    | Remote sensing/Introduction to raster data                |
+| Styling in QGIS           | Geoprocessing: Dissolve                |                                                           |
+| Symbology and colours     | Clip by nask                           |                                                           |
+| Export or import styles   | Clip by extent                         |                                                           |
+| Print layout              | Non-spatial queries                    |                                                           |
+| Map composition           | Attribute table operations             |                                                           |
+| Atlas                     | Non-spatial joins                      |                                                           |
 :::
 
 :::{dropdown} Advanced Skills
-| Module 7 - Automatisation 💻 | Module 8 - Remote sensing and raster data 🛰️ | Module 9 - Accessibility 🚑 |
-|------------------------------|----------------------------------------------|-----------------------------|
-| Introduction to automation   | Zonal statistics                             | Accessibility analyses      |
-| The model designer           | Extraction of raster values                  | Spatial analysis            |
-|                              | Create elevation profile                     |                             |
-|                              | Reclassify raster data                       |                             |
+| Module 7 - Automation  | Module 8 - Remote sensing and raster data (*under construction*) | Module 9 - Accessibility (*under construction*) |
+|----------------------------|------------------------------------------------------------------|-------------------------------------------------|
+| Introduction to automation | Zonal statistics                                                 | Accessibility analyses                          |
+| The model designer         | Extraction of raster values                                      | Spatial analysis                                |
+|                            | Create elevation profile                                         |                                                 |
+|                            | Reclassify raster data                                           |                                                 |
 :::
 
 ## GIS in Anticipatory Action
@@ -148,7 +148,7 @@ You have questions, feedback or comments on the platform and the content. We are
 
 ## Contributing
 
-We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html).
+We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](../content/contribution_plan).
 
 ## Join the Community
 
