@@ -2,16 +2,7 @@
 
 ## Why GIS for Anticipatory Action?
 
-Anticipatory Action (AA) aims to **reduce humanitarian impacts by acting before a hazard turns into a disaster**.
-Geographic Information Systems (GIS) play a central role in this process by enabling:
-
-- Spatial risk analysis
-- Trigger and threshold monitoring
-- Impact estimation
-- Targeting of early actions
-- Evidence-based decision-making
-
-This section of the IFRC GIS Training Platform focuses on **applied GIS workflows for Anticipatory Action**, grounded in real-world humanitarian contexts.
+Anticipatory Action (AA) seeks to reduce humanitarian impacts by taking action before a hazard escalates into a disaster. Geographic Information Systems (GIS) support this approach by enabling spatial risk analysis, monitoring triggers and thresholds, estimating potential impacts, and identifying where early actions should be targeted. By integrating these capabilities, GIS helps humanitarian actors make timely, evidence-based decisions. This section of the IFRC GIS Training Platform highlights practical GIS workflows for Anticipatory Action, grounded in real-world humanitarian operations.
 
 ---
 
@@ -79,6 +70,15 @@ __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 __Historical Impact Assessment of Flooding in Sudan__
 
 :::
+
+
+:::{card} 
+:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html
+
+__Historical Impact Assessment of Flooding in Sudan__
+
+:::
+
 ---
 
 ## Exercises: GIS for Anticipatory Action
@@ -86,11 +86,9 @@ __Historical Impact Assessment of Flooding in Sudan__
 In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:
 
 :::{card}
-Cyclone Anticipatory Action Analysis Exercise Track
-^^^
 :link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html
 
-
+__Cyclone Anticipatory Action Analysis Exercise Track__
 
 :::
 
@@ -119,7 +117,7 @@ Each tool is documented separately to highlight:
 👉 Refer to the **Tools & Methods** section for detailed documentation.
 
 ---
-
+<!---
 ## How This Content Fits into the Platform
 
 - **Learn:** Build foundational GIS skills through modules and exercises  
@@ -128,7 +126,7 @@ Each tool is documented separately to highlight:
 - **Reference:** Deepen understanding through the GIS Wiki
 
 Together, these components support both **capacity building** and **operational application** of GIS for Anticipatory Action.
-
+--->
 ---
 
 ## Getting Started
