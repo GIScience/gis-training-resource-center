@@ -51,7 +51,7 @@ Trainers for QGIS are the principal audience of the IFRC Network GIS Training Pl
 :gutter: 2
 
 :::{grid-item-card} Wiki 📖
-:link: ../content/Wiki/wiki_homepage
+:link: ../content/Wiki/en_wiki_homepage
 The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
 :::
 
@@ -118,10 +118,9 @@ The case studies present applied GIS workflows based on real operational context
 
 :::{card}
 :class-body: sd-text-center
-:link: /content/GIS_AA/GIS_AA_overview
+:link: ../content/GIS_AA/en_GIS_AA_overview
 __GIS in Anticipatory Action__
 :::
-
 
 
 
