@@ -49,7 +49,7 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 - Integration of GIS into trigger-based frameworks
 
 :::{card} 
-:link: /content/GIS_AA/en_qgis_drought_trigger_somalia.md
+:link: ../content/GIS_AA/en_qgis_drought_trigger_somalia
 
 __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
@@ -65,7 +65,7 @@ __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 - Learning from past events to improve future triggers
 
 :::{card} 
-:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html
+:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan
 
 __Historical Impact Assessment of Flooding in Sudan__
 
@@ -73,7 +73,7 @@ __Historical Impact Assessment of Flooding in Sudan__
 
 
 :::{card} 
-:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html
+:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan
 
 __Historical Impact Assessment of Flooding in Sudan__
 
@@ -86,7 +86,7 @@ __Historical Impact Assessment of Flooding in Sudan__
 In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html
+:link: ../content/Exercise_tracks/en_mdg_aa_cyclones
 
 __Cyclone Anticipatory Action Analysis Exercise Track__
 
