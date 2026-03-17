@@ -9,7 +9,7 @@ For the Drought Early Action Protocol (EAP) by the Malagasy Red Cross (CRM), we 
 __QGIS Project__
 ^^^
 The QGIS project and the datasets used in this project can be found here: 
-__[MDG_DROUGHT_EAP.qgz](https://nexus.heigit.org/repository/gis-training-resource-center/gis_aa/mdg_drought_eap/mdg_drought_EAP_maps_260226.zip)__
+__[MDG_DROUGHT_EAP.qgz]()__
 
 Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers or Google Earth Engine. 
 
