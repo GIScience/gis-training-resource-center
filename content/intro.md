@@ -112,16 +112,20 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 
 ## GIS in Anticipatory Action
 
+Anticipatory action in humanitarian work means taking early steps to reduce the impact of disasters before they fully occur, based on reliable forecasts and risk analysis. The International Federation of Red Cross and Red Crescent Societies applies this approach through Forecast-based Action, releasing pre-arranged funding when specific risk thresholds are reached. This enables local Red Cross and Red Crescent teams to act in advance—such as distributing cash, protecting assets, or preparing communities—helping to save lives, reduce losses, and strengthen resilience in a more timely and cost-effective way.
+
+Geographic Information Systems (GIS) play a central role in anticipatory action by helping humanitarian actors understand where and who will be affected before a hazard occurs. By combining forecast data with geospatial information—such as population distribution, infrastructure, and accessibility—GIS enables the identification and mapping of exposed and vulnerable communities. These analyses support data-driven decisions, such as where to prioritize early actions, how to reach people in time, and which areas face the greatest risk. Ultimately, GIS transforms complex data into actionable insights, allowing organizations like the Red Cross to target support more effectively, act earlier, and better protect lives and livelihoods.
+
 In addition to the training materials above, the platform also hosts a collection of case studies and workflows on the use of GIS in Anticipatory Action. These examples illustrate how geospatial analysis can support the development of anticipatory action protocols, including risk analysis, trigger monitoring, impact estimation, and the targeting of early actions.
 
 The case studies present applied GIS workflows based on real operational contexts and highlight the tools and datasets used in the analyses.
-
-:::{card}
+::::{grid} auto
+:::{grid-item-card}
 :class-body: sd-text-center
 :link: ../content/GIS_AA/en_GIS_AA_overview
 __GIS in Anticipatory Action__
 :::
-
+::::
 
 
 ___
