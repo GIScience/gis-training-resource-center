@@ -62,32 +62,31 @@ You can either run it by writing your query on the left or by using the wizard
 which will assist you in writing your queries. 
 ***Example***  
 To search for schools in your bounding box or search area you can either write 
-the query yourself or get it build by the wizard.  
+the query yourself or get it built by the wizard.  
 **1. Check Tagging Guidelines**  
 Search for it in the [OSM wiki](https://wiki.openstreetmap.org/wiki/Tags) and/or 
 [taginfo](https://taginfo.openstreetmap.org). In our example it is: *amenity=school*  
 **2.  Write or build the query**  
-Either use the wizard by tiping in *amenity=school in Heidelberg* or write your 
+Either use the wizard by typing in *amenity=school in Heidelberg* or write your 
 own query (f. e. for your bounding box):  
 **Wizard:**
-```{figure} /fig/en_wizard_overpassturbo.png
+:::{figure} /fig/en_wizard_overpassturbo.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_wizard
+name: en_wizard_overpassturbo_wiki
 ---
 Screenshot of the Wizard in overpass turbo
-```
-```{figure} /fig/en_wizard_result.png
+:::
+
+:::{figure} /fig/en_wizard_result.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_wizard_result
+name: en_wizard_result_wiki
 ---
 Screenshot of the result
-```  
+:::  
 **Query:**
 ```sql
 [out:json];  
@@ -110,63 +109,61 @@ node ["key"="value"] (s, w, n, e);
          out;
 ```
 
-```{tip} 
+:::{tip} 
 For more information on the query language check out the [Language Guide](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).
-```
+:::
 **3. Download the data**  
 One can export the results in various ways.
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Data
+::::{tab-item} Data
 By exporting the data as f.e. GeoJSON you can later on import them in your QGIS 
 project.
 
-```{figure} /fig/en_overpass_turbo_data.png
+:::{figure} /fig/en_overpass_turbo_data.png
 ---
 height: 250px
-name:
 align: center
-name: overpass_turbo_data
+name: en_overpass_turbo_data_wiki
 ---
 Screenshot of how to export data in overpassturbo
-```
-
-:::
-
-:::{tab-item} Map
-By exporting the query as map, you can share your current view as link or image.
-
-```{figure} /fig/en_overpass_turbo_map.png
----
-height: 150px
-name:
-align: center
-name: overpass_turbo_map
----
-Screenshot of how to export map in overpassturbo
-```
-:::
-
-:::{tab-item} Query
-By exporting your query you can get the text or convert it to an OverpassXML or 
-OverpassQL formated query.
-
-```{figure} /fig/en_overpass_turbo_query.png
----
-height: 250px
-name:
-align: center
-name: overpass_turbo_query
----
-Screenshot of how to export query in overpassturbo
-```
 :::
 
 ::::
 
-```{tip} 
-For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
-```
+::::{tab-item} Map
+By exporting the query as map, you can share your current view as link or image.
 
+:::{figure} /fig/en_overpass_turbo_map.png
+---
+height: 150px
+name: en_overpass_turbo_map_wiki
+align: center
+---
+Screenshot of how to export map in overpassturbo
+:::
+::::
+
+::::{tab-item} Query
+By exporting your query you can get the text or convert it to an OverpassXML or 
+OverpassQL formatted query.
+
+:::{figure} /fig/en_overpass_turbo_query.png
+---
+height: 250px
+align: center
+name: en_overpass_turbo_query_wiki
+---
+Screenshot of how to export query in overpassturbo
+:::
+::::
+
+:::::
+
+:::{tip} 
+For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
+:::
+<!---
 ### Ohsome tools
+-->

@@ -224,7 +224,7 @@ If you like to learn more about the [visualisation](/content/Module_4/en_module_
 2. Right above your map canvas, you can click in "`Untitled map`" to edit your map properties. Give your map a title and a short description.
 
 
-```{figure} /fig/en_SMT_ex4_UMAP_Properties.PNG
+```{figure} /fig/en_SMT_ex4_UMAP_map_name.png
 ---
 width: 350px
 name: SMT Ex4B Umap properties
@@ -237,7 +237,7 @@ Editing the map properties
 
 4. Click in the upper right corner on `Save`. If you are not logged in, you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email. 
 
-```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.PNG
+```{figure} /fig/en_SMT_ex4_UMAP_Data_Loaded.png
 ---
 height: 400px
 name: UMAP Data Loaded

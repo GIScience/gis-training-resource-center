@@ -33,7 +33,7 @@ In the `Browser Panel`, right-click on `XYZ Tiles` -> `New Connection`.
 
 Name| Info | URL |
 | ----- | --- | --- |
-|[OpenTopoMap](https://wiki.openstreetmap.org/wiki/OpenTopoMap)|Opensource topographic map based on OSM and SRTM|https://tile.opentopomap.org/{z}/{x}/{y}.png|
+|[OpenTopoMap](https://wiki.openstreetmap.org/wiki/OpenTopoMap)|Opensource topographic map based on OSM and SRTM |https://tile.opentopomap.org/{z}/{x}/{y}.png|
 |Google Terrain||https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}|
 |Google Hybrid||https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}|
 |Google Satellite||https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}|
@@ -50,11 +50,12 @@ Advantages of using basemaps from XYZ Tiles are:
 
 ## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin
 
-The QuickMapServices Plugin allows to access a wide range of basemaps. 
+The QuickMapServices Plugin allows to access to a wide range of basemaps. 
 
-```{Note}
+:::{Note}
 There can be problems when printing some basemaps from the QuickMapServices!
-```
+:::
+
 `Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
 
 __Functionality of QuickMapServices Plugin__
@@ -69,9 +70,9 @@ After installing the plugin (Plugin Wiki) you need to configure the plugin to ac
 
 With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.
 
-```{Tip}
+:::{Tip}
 If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
-```
+:::
 
 __Functionality of OSM Place Search Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>
