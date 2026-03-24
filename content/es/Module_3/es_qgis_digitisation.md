@@ -316,7 +316,7 @@ Tenga en cuenta que esto solo es posible __antes__ de guardar los cambios.
 
 1.	Seleccione la capa que desea modificar.
 2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar Edición`.
-3.	Haga clic en ![](/fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#manual-selection)).
+3.	Haga clic en ![](/fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#seleccion-manual)).
 4.	Una vez seleccionadas las entidades, haga clic en ![](/fig/mActionDeleteSelectedFeatures.png) para eliminarlas.
 5.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
 6.	Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.

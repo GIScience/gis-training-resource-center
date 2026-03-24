@@ -16,7 +16,7 @@ __Programa de ejercicios de respuesta a las inundaciones en Larkana:__
 Este es el tercer ejercicio en el [Programa de ejercicios de respuesta a las inundaciones en Larkana:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_larkana_flood_response.html).
 
 - [Ejercicio anterior](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html)
-- [Siguiente ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_I_ex4.html)
+- [Siguiente ejercicio](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_I_ex2.html)
 :::
 
 :::{grid-item-card}
