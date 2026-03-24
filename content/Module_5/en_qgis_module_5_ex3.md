@@ -138,7 +138,7 @@ Outlook updates are produced almost every month and are also taken into account.
 
 Download the data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise2_Drought_Monitoring_Trigger/Modul_5_Exercise2_Drought_Monitoring_Trigger.zip)__ and save it on your PC. Unzip the .zip file!
 
-For this particular exercise, we will use a combination of pre-processed data and the download of real data from FEWS.net.
+For this particular exercise, we will use a combination of pre-processed data and the download of real data from [FEWS.net](https://fews.net/).
 The preprocessed datasets are:
 
 | Dataset| Source | Description |

@@ -43,7 +43,7 @@ in the app can then be synced and displayed in QGIS.
 - __[OsmAnd](https://osmand.net)__: Using OSM basemap, it’s a good app for 
 __offline navigation__. You can upload `.kml` files to display on the map, as well 
 as recording your trips and then exporting them.
-- __[GeoODK](http://geoodk.com/index.htm)__: Combines __OpenDataKit (ODK) with a geo app__. 
+- __[GeoODK](http://geoodk.com/index.html)__: Combines __OpenDataKit (ODK) with a geo app__. 
 You can collect data through ODK surveys and display them on a map, in addition 
 to easily creating polygons and adding information to them.
 - __[KoboToolbox](https://www.kobotoolbox.org)__: KoboToolbox is an open-source suite designed for efficient data

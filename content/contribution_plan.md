@@ -29,7 +29,7 @@ In addition to content contributions, this consortium welcomes new partners from
 
 ### Your contribution
 
-- __Markdown MyST and Jupyter Book:__ In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called __MyST Markdown__. This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives. For more information about MyST Markdown, see [MyST Markdown overview](https://jupyterbook.org/en/stable/content/myst.html).
+- __Markdown MyST and Jupyter Book:__ In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called __MyST Markdown__. This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives. For more information about MyST Markdown, see [MyST Markdown overview](https://jupyter-book.readthedocs.io/v1/content/myst.html).
 - __Changes on the Dev-Branch:__
     - All changes must be pushed to the `dev` branch. These changes will be reviewed by HeiGIT and/or RC before a pull request is merged.
     - Currently, only HeiGIT or RC are authorized to create pull requests and contributors can request reviews from HeiGIT and/or RC via GitHub.

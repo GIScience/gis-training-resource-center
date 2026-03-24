@@ -52,10 +52,10 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Natural Earth | Administrative and physical geography | https://www.naturalearthdata.com/ |
 | Geonames | Administrative geodata | https://www.geonames.org/ |
 | OpenAfrica | Open-source data on Africa | https://africaopendata.org/dataset |
-| DivaGIS | Different data, e.g. administrative, roads, population, elevation, climate | http://www.diva-gis.org/gdata |
+| DivaGIS | Different data, e.g. administrative, roads, population, elevation, climate | https://diva-gis.org/data.html |
 | Open Topography | Data on topography | https://opentopography.org/ |
 | OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
-| GADM | Administrative boundaries | gadm.org |
+| GADM | Administrative boundaries | http://gadm.org |
 
 ### Humanitarian data
 
@@ -71,8 +71,8 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
 | MapAction | Emergency mapping resources | https://maps.mapaction.org/ | 
-| Fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io | 
-| ACLED | Conflict data | https://acleddata.com/data-export-tool |
+| fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io | 
+| ACLED | Conflict data | https://acleddata.com/conflict-data/data-export-tool |
 | GDACS | Disaster database | https://www.gdacs.org |
 | ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
@@ -106,7 +106,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | NASA Shuttle Radar Topography Mission (SRTM) | Global elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
 | Earth Observe | Digital elevation model on a global scale |https://earthexplorer.usgs.gov/ | 
 | Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
-| GlobCover | Raster data on land cover | http://due.esrin.esa.int/page_globcover.php |
+| GlobCover | Raster data on land cover | https://due.esrin.esa.int/page_globcover.php |
 
 
 ## OpenStreetMap data

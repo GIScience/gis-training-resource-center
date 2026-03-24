@@ -53,7 +53,7 @@ To change the CRS of your data and project, follow the steps explained below. Th
 (EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian applications, as we need region-specific projections that provide the least distortion on the scale we wish to represent. 
 
 :::{Tip}
-Choose the projection according to your area of interest. There are special CRS that have been created to reduce the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and their CRS codes on [EPSG.io](http://epsg.io). 
+Choose the projection according to your area of interest. There are special CRS that have been created to reduce the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and their CRS codes on [epsg.io](http://epsg.io). 
 :::
 
 Look at the following images and pay attention to how the different Coordinate Reference Systems change and distort the world map. 
