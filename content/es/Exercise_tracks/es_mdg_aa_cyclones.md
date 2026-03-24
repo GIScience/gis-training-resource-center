@@ -102,7 +102,7 @@ __Ejercicio 6: Exportación de resultados del modelo para el equipo de operacion
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_qgis_module_9_mdg_aa_ex_7.html
+:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_qgis_module_9mdg_aa_ex_7.html
 __Ejercicio 7: Accesibilidad de las publicaciones de salud desde los almacenes de CRM__
 ^^^
 
