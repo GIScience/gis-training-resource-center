@@ -117,4 +117,4 @@ parts:
   - caption: About
     chapters:
       - file: content/es/About/about_1.md
-      - file: content/es/contribution_plan.md
+      - file: content/es/es_contribution_plan.md
