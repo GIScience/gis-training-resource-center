@@ -12,7 +12,7 @@ align: center
 
 ___
 
-# IFRC GIS Training Platform
+# IFRC Network GIS Training Platform
 
 :::{card} Teach GIS for Humanitarian Work
 Welcome to the IFRC Network GIS Training Platform. 
