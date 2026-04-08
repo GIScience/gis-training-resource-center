@@ -1,5 +1,5 @@
 (content:references:wiki:plugins)=
-# Plugins
+# Plugins <a id="plugins"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -11,7 +11,7 @@ Plugins in QGIS are useful additional tools you can use to make some tasks easie
 You don’t have to reinstall plugins for every new project.
 :::
 
-## Installation of plugins
+## Installation of plugins <a id="installation-of-plugins"></a>
 
 To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> Search for the plugin -> `Install Plugin`
 
@@ -22,14 +22,14 @@ To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> Sea
 If you cannot find a specific extension, check your capitalisation and correct use of spaces. If you still cannot find an extension, you may need to allow the experimental extensions in the options (see below).
 :::
 
-## Manage Plugins
+## Manage Plugins <a id="manage-plugins"></a>
 
 If you are currently not using installed plugins it might be useful to deactivate these plugins to avoid crowded toolbars and to reduce open panels. 
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Manage_plugins.mp4"></video>
 
-## Allow experimental extensions
+## Allow experimental extensions <a id="allow-experimental-extensions"></a>
 
 Experimental extensions are either still under development, or they are obsolete extensions that are no longer further optimised/adapted for the newer versions of QGIS. Nevertheless, the use of experimental extensions can be useful:
 
@@ -43,7 +43,7 @@ Experimental extensions are either still under development, or they are obsolete
 Due to the often missing optimization for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.
 :::
 
-### Downloading the Quick OSM plugin
+### Downloading the Quick OSM plugin <a id="downloading-the-quick-osm-plugin"></a>
 
 To download data from data and import it into your QGIS the plugin **QuickOSM** is great. First you need to install it by searching for it in the `Manage and Install Plugins` Tab.
 

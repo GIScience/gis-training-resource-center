@@ -1,4 +1,4 @@
-# Web & mobile GIS applications
+# Web & mobile GIS applications <a id="web-and-mobile-gis-applications"></a>
 
 You can use GIS through __multiple applications__, from desktop software, to 
 online platforms, to mobile apps. At a basic level, you can perform limited 
@@ -8,7 +8,7 @@ be either proprietary (requiring a license, e.g. ESRI's ArcGIS) or open-source
 (available to use for free, e.g. QGIS). However, web applications can be relevant 
 for obtaining data or to share data and maps with others.
 
-## Web apps overview
+## Web apps overview <a id="web-apps-overview"></a>
 
 Here are some online GIS platforms and tools you should be aware of; we'll use 
 some of them later in the training. 
@@ -32,7 +32,7 @@ world. It uses __local knowledge__, making it particularly useful in remote area
 Limited, but it allows you to upload layers, create and export features, __share 
 simple maps__.
 
-## Mobile apps overview 
+## Mobile apps overview <a id="mobile-apps-overview"></a>
 
 Mobile GIS apps are important for navigation and mobile data collection. 
 Some of the most important free and open-source apps are listed below. 

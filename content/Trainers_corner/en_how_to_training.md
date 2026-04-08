@@ -1,4 +1,4 @@
-# How to plan a GIS Training
+# How to plan a GIS Training <a id="how-to-plan-a-gis-training"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -25,7 +25,7 @@ And __third__, prepare the training in as much detail, especially if it is your 
 
 To facilitate the planning, you can use the following list as a guide:
 
-## 1. Preparation
+## 1. Preparation <a id="1-preparation"></a>
 
 Before you plan your training, you need to make some basic decisions about the setting:
 
@@ -34,7 +34,7 @@ Before you plan your training, you need to make some basic decisions about the s
 - The setting: Are you planning an online or face-to-face course? Will you plan the training in half-day or full-day sessions? Will the training take place on consecutive days or spread over several weeks? These questions should be answered depending on the background and needs of the participants.
 - Trainer handover: if multiple trainers are facilitating a GIS training, consider planning some time between sessions so that a proper debrief can be done. This ensures that all facilitators are equipped with the proper information for their session and the training can have a good continuous flow.
 
-## 2. Planning
+## 2. Planning <a id="2-planning"></a>
 
  You can use the platform's modular structure and the [skill levels](https://giscience.github.io/gis-training-resource-center/content/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
 
@@ -44,7 +44,7 @@ Before you plan your training, you need to make some basic decisions about the s
 - Consider the practical setting: If you are organizing a face-to-face training, do you have a suitable room? What is available to them?
 - Finally, how do you promote your training? Can you promote it within your institution? How will you organize the enrolment process? What information do you need from your participants (background, interests, previous skills)? How do you select participants?
 
-## 3. Follow-up
+## 3. Follow-up <a id="3-follow-up"></a>
 
 During and after the training, you can support the process by encouraging and facilitating further exchanges between participants and by evaluating the training.
 
@@ -177,7 +177,7 @@ Keep in mind that you don't need to follow the module structure. It is there to 
 | Module 8:  | --- | --- | --- |
 | Module 9:  | --- | --- | --- |
 
-### Special courses
+### Special courses <a id="special-courses"></a>
 
 | Module | Competences | Exercises | Wiki articles |
 | ------------ | ------------ | -------------- | -------------- |

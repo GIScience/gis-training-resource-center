@@ -1,8 +1,8 @@
-# Camera Usage Guide: AILAS Project
+# Camera Usage Guide: AILAS Project <a id="camera-usage-guide-ailas-project"></a>
 
 This documentation provides instructions on how to set up and use the GoPro cameras for the in field aquisition, including detailed instructions on all necessary steps, checklists for the start and end of data aquisition and tips for troubleshooting.
 
-## Equipment Checklist
+## Equipment Checklist <a id="equipment-checklist"></a>
 
 Before departure, ensure you have the following:
 
@@ -71,9 +71,9 @@ Powerbank
 <br>
 
 
-## Camera Installation
+## Camera Installation <a id="camera-installation"></a>
 
-### Choose Mounting Location
+### Choose Mounting Location <a id="choose-mounting-location"></a>
 
 | Instructions                                  |Notes                                        |
 | :-------                                     | :-------                                    |
@@ -108,7 +108,7 @@ Side position near the passenger door
 ::::
 
 
-### Attach GoPro with suction mount
+### Attach GoPro with suction mount <a id="attach-gopro-with-suction-mount"></a>
 | Instructions                          | Notes                            |
 | :---------------------------------  | :--------------------------------- |
 |   1. Press suction cup **firmly** against windshield                         |    Make sure locking lever is in UP position            |
@@ -166,7 +166,7 @@ Camera correctly aligned with the road
 
 
 
-### Power Setup
+### Power Setup <a id="power-setup"></a>
 
 | Instructions | Notes |
 | :------- | :------- |
@@ -183,9 +183,9 @@ If your car has an appropriate power outlet to connect with the USB-C socket of 
 ---
 <br>
 
-## Set up Image Capturing
+## Set up Image Capturing <a id="set-up-image-capturing"></a>
 
-### Configuration of settings
+### Configuration of settings <a id="configuration-of-settings"></a>
 
 Camera settings can be easilily configured scanning the provide QR code with the GoPro. This is the standard setup. In the case the QR code setup should not work the **manual setup** is described in addition. **If possible always use the QR code setup.**
 
@@ -198,7 +198,7 @@ Camera settings can be easilily configured scanning the provide QR code with the
 
 If the camera already is set in the "AILAS" mode you do not have to configure the settings.
 
-### QR code configuration
+### QR code configuration <a id="qr-code-configuration"></a>
 
 <!-- Image QR-code -->
 
@@ -245,7 +245,7 @@ If the scanning of the QR code is not working immeadiately try in different ligh
 
 
 
-### Alternative Manual Configuration
+### Alternative Manual Configuration <a id="alternative-manual-configuration"></a>
 
 | Instructions | Notes |
 | :------------------------------- | :---- |
@@ -253,7 +253,7 @@ If the scanning of the QR code is not working immeadiately try in different ligh
 | 2.Tap the **settings** icon (bottom right) and configure as follows:<br> • **Format**: Photo<br> • **Digital Lens**: Wide<br> • **Capture**: Interval = 5s<br>  | Leave remaining  settings unchanged |
 | 3. Tap the **back arrow** to save and return to the main screen. | in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 5s W"|
 
-### Start/Stop Capturing Images
+### Start/Stop Capturing Images <a id="startstop-capturing-images"></a>
 | Instructions | Notes |
 | :-------------------------- |  :--------------------------|
 | 1. Tap the **Shutter** button (top button) to begin shooting. | |
@@ -263,20 +263,20 @@ If the scanning of the QR code is not working immeadiately try in different ligh
 
 ---
 
-## Start of Drive Checklist
+## Start of Drive Checklist <a id="start-of-drive-checklist"></a>
 
-#### Camera Setup
+#### Camera Setup <a id="camera-setup"></a>
 - Mount the camera on the windshield facing straight ahead.  
 - Connect the Powerbank to the camera with the USB-C cable.  
 - Store the Powerbank somewhere safe so it won’t move while driving.  
 
-#### Start Filming
+#### Start Filming <a id="start-filming"></a>
 - Hold the side power button until the screen turns on.  
 - Scan the QR code to configure settings (if not working manual setup) 
 - Wait about 1 minute for the camera to pick up GPS signal 
 - Press the top shutter button (big button on top) to start capturing  
 
-#### Final Pre-Drive Check
+#### Final Pre-Drive Check <a id="final-pre-drive-check"></a>
 - Is the camera firmly mounted?
 - Is camera level and facing straight ahead?
 - Is the GoPro blinking every 5 seconds (taking photos)?
@@ -285,22 +285,22 @@ If the scanning of the QR code is not working immeadiately try in different ligh
 
 ---
 
-## End of Drive Checklist
+## End of Drive Checklist <a id="end-of-drive-checklist"></a>
 
-#### Stop Filming
+#### Stop Filming <a id="stop-filming"></a>
 - Press the top shutter button to stop capturing.   
 - Hold the power button on the side until the screen turns off.  
 - Unplug the USB-C cable from the GoPro.  
 
-#### Inspect the Equipment
+#### Inspect the Equipment <a id="inspect-the-equipment"></a>
 - Check that the mount is still tight and GoPro is undamaged.  
 - Clean the camera lens if dusty or dirty.  
 - Leave the GoPro securely mounted if safe, or store it in its case or bag.  
 
-#### Charge Powerbank (if applicable)
+#### Charge Powerbank (if applicable) <a id="charge-powerbank-if-applicable"></a>
 - Plug the Powerbank into a wall socket to charge overnight.
 
-#### Report Any Problems
+#### Report Any Problems <a id="report-any-problems"></a>
 Contact technical support immediately if:
 - The GoPro didn’t work
 - The mount fell off and can't be reinstalled
@@ -310,7 +310,7 @@ Contact technical support immediately if:
 ---
 <br>
 
-## Troubleshooting Tips
+## Troubleshooting Tips <a id="troubleshooting-tips"></a>
 
 | Issue                    | Solution                                                 |
 |--------------------------|----------------------------------------------------------|
@@ -321,7 +321,7 @@ Contact technical support immediately if:
 | GoPro beeps/overheats    | Turn off for 5 mins in shade, then resume               |
 | QR Code is not scanned   | Use alternatice code or perform manual configuarion     |
 
-### Troubleshooting: Upside down menu
+### Troubleshooting: Upside down menu <a id="troubleshooting-upside-down-menu"></a>
 If the menu is displayed upside down on the camera screen as in the following image, the images themselves will also be saved with the wrong orientation.
 
 ```{figure} /fig/AILAS_upside_down.jpg
@@ -370,7 +370,7 @@ Correct setting: The orientation lock is turned off.
 ---
 <br>
 
-## Support Contact
+## Support Contact <a id="support-contact"></a>
 
 If anything goes wrong or you're unsure, don't hesitate to contact:
 

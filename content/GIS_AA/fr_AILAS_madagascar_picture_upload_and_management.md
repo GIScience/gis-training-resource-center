@@ -1,8 +1,8 @@
-# Téléversement et gestion des images : Projet AILAS
+# Téléversement et gestion des images : Projet AILAS <a id="televersement-et-gestion-des-images-projet-ailas"></a>
 
 Cette documentation fournit des instructions sur la manière de téléverser et de gérer les images au niveau de la rue qui sont capturées dans le cadre du projet AILAS.
 
-## Contexte : Panoramax
+## Contexte : Panoramax <a id="contexte-panoramax"></a>
 
 <!-- Screenshot Panoramax -->
 
@@ -16,15 +16,15 @@ Capture d’écran d’une image de rue sur Panoramax
 
 Toutes les images capturées dans le cadre du projet AILAS doivent être téléversées vers une instance privée de la plateforme d’imagerie au niveau de la rue **Panoramax**. Cela garantit que les images soient facilement accessibles aux parties prenantes concernées pour une utilisation ultérieure dans le projet (annotation de données d’entraînement, modélisation), tout en étant protégées contre l’accès par des utilisateurs non autorisés.
 
-### Qu’est-ce que Panoramax ?
+### Qu’est-ce que Panoramax ? <a id="quest-ce-que-panoramax"></a>
 
 [Panoramax](https://panoramax.fr) est une plateforme ouverte et fédérée pour le partage et la visualisation d’images au niveau de la rue. Comme [Google Street View](https://www.google.com/streetview/) et [Mapillary](https://www.mapillary.com), il permet aux utilisateurs d’explorer des lieux à travers des photos prises le long des rues et des chemins. Mais contrairement aux plateformes commerciales, Panoramax repose sur un **écosystème décentralisé et ouvert** : les images sont hébergées sur des serveurs indépendants (gérés par des institutions, des collectivités ou des communautés) plutôt que par une seule entreprise, et l’accès est régi par des standards ouverts. L’ensemble de la pile logicielle Panoramax est open source.
 
 Cela signifie que la propriété des données reste entre les mains des contributeurs et des institutions hébergeantes, et que les images peuvent être plus facilement intégrées dans des projets locaux, des travaux de recherche ou des services publics. Panoramax met l’accent sur **l’ouverture, la transparence et la souveraineté** des données au niveau de la rue.
 
-### Fonctionnalités
+### Fonctionnalités <a id="fonctionnalites"></a>
 
-#### 🌍 Fonctionnalités principales
+#### 🌍 Fonctionnalités principales <a id="fonctionnalites-principales"></a>
 
 * **Visualiseur d’images au niveau de la rue** – explorer des images panoramiques ou directionnelles le long des routes, chemins et lieux.
 * **Hébergement ouvert et fédéré** – les images sont stockées sur des serveurs indépendants opérés par différentes organisations (collectivités, centres de recherche, ONG, etc.).
@@ -32,21 +32,21 @@ Cela signifie que la propriété des données reste entre les mains des contribu
 * **Contributions de sources multiples** – les images peuvent provenir d’institutions, de projets communautaires ou d’individus.
 * **Intégration dans les flux de cartographie** – les images peuvent être reliées à OpenStreetMap ou à d’autres jeux de données géospatiales.
 
-#### 🔍 Vie privée & traitement
+#### 🔍 Vie privée & traitement <a id="vie-privee-and-traitement"></a>
 
 * **Floutage automatique des visages et plaques d’immatriculation** – anonymisation intégrée avant la publication des images.
 * **Détection d’objets** – des modèles d’IA peuvent détecter des éléments pertinents (par ex. panneaux de signalisation) dans les images.
 * **Modèles de détection personnalisés** – les opérateurs peuvent exécuter leurs propres pipelines de détection pour des cas d’usage spécifiques.
 * **Enrichissement des métadonnées** – les objets détectés peuvent être stockés comme données liées aux images, ce qui rend les images consultables et analysables.
 
-#### ⚙️ Plateforme & écosystème
+#### ⚙️ Plateforme & écosystème <a id="plateforme-and-ecosysteme"></a>
 
 * **Accès par API** – les développeurs peuvent interroger et utiliser les images de manière programmatique.
 * **Visualiseur web** – un visualiseur léger et intégrable dans des portails publics ou des sites de projets.
 * **Communautaire** – une pile logicielle open source, garantissant transparence et extensibilité.
 * **Propriété des données à long terme** – les institutions gardent le contrôle sur l’endroit et la manière dont leurs images sont stockées et partagées.
 
-### Confidentialité et sécurité des données
+### Confidentialité et sécurité des données <a id="confidentialite-et-securite-des-donnees"></a>
 
 Panoramax empêche l’identification des personnes présentes dans les images en floutant automatiquement les visages et les plaques d’immatriculation. Ce processus intervient automatiquement au moment du téléversement, avant que les images ne soient publiées. Les utilisateurs peuvent signaler tout autre problème lié à une image via la plateforme. Dans ce cas, l’image est masquée du public jusqu’à intervention du propriétaire de l’image.
 
@@ -54,10 +54,10 @@ Alors qu’une des principales fonctionnalités de Panoramax est son **métacata
 
 L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. Le site web et l’API donnant accès aux images et aux données sont actuellement hébergés sur un réseau fermé.
 
-## Téléversement des images
+## Téléversement des images <a id="televersement-des-images"></a>
 🚧 Le processus décrit ici est une solution temporaire et va changer. 🚧
 
-### 1. Retirez la carte SD de la caméra.
+### 1. Retirez la carte SD de la caméra. <a id="1-retirez-la-carte-sd-de-la-camera"></a>
 
 ::::{grid} 2
 :::{grid-item}
@@ -85,7 +85,7 @@ Poussez délicatement la carte SD pour la retirer.
 :::
 ::::
 
-### 2. Insérez la carte dans le lecteur et connectez-le à l’ordinateur.
+### 2. Insérez la carte dans le lecteur et connectez-le à l’ordinateur. <a id="2-inserez-la-carte-dans-le-lecteur-et-connectez-le-a-lordinateur"></a>
 
 ```{figure} /fig/AILAS_insert_card.jpg
 ---
@@ -97,7 +97,7 @@ Insérez la carte dans le lecteur
 
 Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.
 
-### 3. Se connecter à Panoramax
+### 3. Se connecter à Panoramax <a id="3-se-connecter-a-panoramax"></a>
 
 Ouvrez le [site web Panoramax](https://panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
 
@@ -118,7 +118,7 @@ Si c’est votre première connexion, vous utiliserez un mot de passe initial qu
 Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
 :::
 
-### 4. Téléverser des images
+### 4. Téléverser des images <a id="4-televerser-des-images"></a>
 
 1. Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.
 
@@ -159,11 +159,11 @@ Messages d’erreur lors du téléversement
 Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de `DCIM` appelés `100GOPRO`, `101GOPRO`, etc. Répétez les étapes 1 à 6 de cette section pour chacun de ces sous-dossiers.
 :::
 
-### 5. Supprimez les images
+### 5. Supprimez les images <a id="5-supprimez-les-images"></a>
 
 Une fois que vous avez téléversé avec succès les images, supprimez-les de la carte SD.
 
-### 6. Réinsérez la carte SD dans la caméra
+### 6. Réinsérez la carte SD dans la caméra <a id="6-reinserez-la-carte-sd-dans-la-camera"></a>
 
 Retirez en toute sécurité le lecteur de cartes SD de votre ordinateur, puis réinsérez la carte dans la caméra.
 
@@ -171,9 +171,9 @@ Here’s the translated version in French with the image filenames updated to `f
 
 ---
 
-## Exploration des images sur Panoramax
+## Exploration des images sur Panoramax <a id="exploration-des-images-sur-panoramax"></a>
 
-### Voir vos propres séquences et photos téléchargées
+### Voir vos propres séquences et photos téléchargées <a id="voir-vos-propres-sequences-et-photos-telechargees"></a>
 
 Cliquez sur l’icône de votre compte dans la barre de navigation supérieure de Panoramax et choisissez « Mes photos ». Une page listant toutes vos séquences d’images téléchargées s’ouvrira.
 
@@ -201,7 +201,7 @@ La page de la séquence affiche les vignettes de toutes les photos d’une séqu
 
 En cliquant sur le bouton « Plein écran », vous accéderez à la carte « Explorer » tout en vous focalisant sur la séquence et la photo actuellement sélectionnée.
 
-### Explorer toutes les images sur Panoramax
+### Explorer toutes les images sur Panoramax <a id="explorer-toutes-les-images-sur-panoramax"></a>
 
 Cliquez sur « Explorer » dans la barre de navigation supérieure pour ouvrir une carte interactive du monde afin d’explorer toutes les images disponibles. Déplacez et zoomez sur la carte pour trouver des images, ou utilisez la barre de recherche en haut à gauche pour trouver des adresses, villes, etc., sur la carte.
 

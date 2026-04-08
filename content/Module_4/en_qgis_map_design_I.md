@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Symbology and Colours
+# Symbology and Colours <a id="symbology-and-colours"></a>
 
 The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or interpreting maps.
 
@@ -46,7 +46,7 @@ These two maps use design elements differently. Topographic maps will use symbol
 
 ::::
 
-## Visual Variables
+## Visual Variables <a id="visual-variables"></a>
 
 :::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
@@ -72,7 +72,7 @@ Visual perception varies from one person to the next according to various capabi
 - Transcultural (green = nature, blue = water)
 :::
 
-## Using visual variables in cartography
+## Using visual variables in cartography <a id="using-visual-variables-in-cartography"></a>
 
 Based on these visual variables, cartographers are able to interpret and communicate information crucial to humanitarian operations. Depending on the use case and the intended audience, you will use different stylings to communicate different data. OpenStreetMap offers several map products: OSM Standard, Tracestack Topo, CyclOSM or the public transportation map, for example. The data behind the maps is the same, but the styling is different. In each case, the cartographers had different goals in mind (e.g., for the cycling map, show the safest biking routes, bike repair stations and resting places) and chose the styling accordingly.
 
@@ -164,7 +164,7 @@ Operational overview or response activity map (Source: [Shelter Cluster Vanuata]
 
 ::::
 
-### Choropleth & Graduated Symbol Maps 
+### Choropleth & Graduated Symbol Maps <a id="choropleth-and-graduated-symbol-maps"></a>
 
 Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian 
 work. 
@@ -188,7 +188,7 @@ width: 600 px
 An example of a choropleth map (Source: [AxisMaps](https://www.axismaps.com/guide/choropleth)).
 :::
 
-#### Use cases
+#### Use cases <a id="use-cases"></a>
 
 :::{dropdown} __Humanitarian Action__
 
@@ -224,7 +224,7 @@ In humanitarian action, choropleth maps or graduated symbol maps are used to:
 
 ---
 
-## Symbology and styling
+## Symbology and styling <a id="symbology-and-styling"></a>
 
 Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format. For example, you can:
 
@@ -240,7 +240,7 @@ Depending on the use case and type of geodata at your disposal, there are multip
 The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project has its own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, or add SVG-symbols of varying sizes). 
 
 
-## Symbology
+## Symbology <a id="symbology"></a>
 
 - Symbology is used to change the look of features on a map.
 - It makes maps more visually appealing and easier to read.
@@ -252,7 +252,7 @@ The styling of a layer is how you communicate the information to your audience. 
 
 <!---- To Do: add different visualisation for different types of data (discrete vs. continuous values, insert image). For example the amount of rainfall/temperature is a continuous value.-->
 
-## Colours
+## Colours <a id="colours"></a>
 
 Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the __hue__, the __value__ (saturation) and the __transparency__. 
 
@@ -291,7 +291,7 @@ The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to selec
 generate colour palettes for your use case. 
 :::
 
-### Colourblindness
+### Colourblindness <a id="colourblindness"></a>
 
 When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
 
@@ -303,7 +303,7 @@ width: 750px
 Different Colour schemes for the Colour Vision Impaired (Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. *Cartographic Perspectives*, no. 58 (September 1, 2007): 61-67. https://doi.org/10.14714/CP58.270).
 :::
 
-## Complex Maps
+## Complex Maps <a id="complex-maps"></a>
 
 The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map (see {numref}`en_complex_map_lebanon`). 
 
@@ -345,7 +345,7 @@ A complex map using graduated colours to signify flood depth as well as the floo
 
 Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](/content/Module_4/en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

@@ -1,4 +1,4 @@
-# Historical Impact Assessment (HIA) for Flood in Sudan
+# Historical Impact Assessment (HIA) for Flood in Sudan <a id="historical-impact-assessment-hia-for-flood-in-sudan"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -7,15 +7,15 @@ One of the fundamental tasks while working on an EAP is to conduct a Historical 
 Due to the outbreak of hostilities in Sudan in 2023, the team could only rely on public data from the internet and some reports and data provided by SRCS.
 By the end of 2023, the team had collected, 3.204 rows of data from 60 sources, covering the timeframe from 2012 to 2023.
 
-## Why is a Historical Impact Assessment (HIA) Important?
+## Why is a Historical Impact Assessment (HIA) Important? <a id="why-is-a-historical-impact-assessment-hia-important"></a>
 
 A HIA has two purposes. First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems.
 Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
 
-## Task
+## Task <a id="task"></a>
 Conduct an HIA to gain a detailed understanding of the impact of past flood events on the highest spatial and temporal resolution possible.
 
-## Challenges
+## Challenges <a id="challenges"></a>
 
 What were the main problems and challenges we faced while conducting the HIA?
 
@@ -32,7 +32,7 @@ __Challenge 3: Differentiating between riverine flood impacts and flash flood im
 Riverine and flash floods often occur at the same time in the same place, so it is almost impossible to state what was the exact cause of the impact. 
 And even when there was a single flash flood event, in reports it is often referred to as a flood. Hence, there is the real risk that impacts caused by flash floods are listed as river flood impacts.
 
-## Key concept of our methodology
+## Key concept of our methodology <a id="key-concept-of-our-methodology"></a>
 Our goal was to store all available impact information in one table or dataset. If we would use a classic weight table we would end up with a super clumsy table since there are so many different types of impacts a flood can cause. To avoid that we decided to use a long table.
 The advantages of a long table over a classic wider table in this context are:
 
@@ -54,7 +54,7 @@ align: center
 ```
 
 
-# Step by Step HIA Sudan
+# Step by Step HIA Sudan <a id="step-by-step-hia-sudan"></a>
 
 ```{figure} /fig/14022024_Sudan_HIA.drawio.svg
 ---
@@ -63,7 +63,7 @@ align: center
 ---
 ```
 
-## Step 1: Area of Interest
+## Step 1: Area of Interest <a id="step-1-area-of-interest"></a>
 The Area of Interest (AOI) for the HeiGIT team was formally limited to Khartoum, Northern, White Nile and Sennar. However, the analysis and data collection were conducted for all states of Sudan.
 
 
@@ -74,7 +74,7 @@ width: 500px
 align: center
 ---
 ```
-## Step 2. Finding Flood Disaster Timeframes
+## Step 2. Finding Flood Disaster Timeframes <a id="step-2-finding-flood-disaster-timeframes"></a>
 
 We want to tie single pieces of information like impacts, to known flood events in Sudan. Thus we first need a comprehensive list of such events. In the case of Sudan, there are two sources, EM-DAT and ReliefWeb. EM-DAT is a disaster database that lists events above a certain severity. 
 ReliefWeb is actually an information platform for humanitarian response. But it has a list of active and past disasters as well. 
@@ -117,7 +117,7 @@ In some cases, the start and end dates cannot precisely be identified. This is n
 | 2021       | 2021-07-20 | 2021-09-24 |
 ```
 
-## Step 3: Selecting datasets 
+## Step 3: Selecting datasets <a id="step-3-selecting-datasets"></a>
 
 Now we search for datasets and other information for each of the flood events identified in step 2. Naturally, it will be much easier to find information on more recent events. This process can take a lot of time and sometimes needs multiple iterations.
 
@@ -186,7 +186,7 @@ There are three principal sources of datasets. The Sudan Red Crescent Society (S
 Of course, much information from the different sources is redundant. A significant part of the work is to sift through the datasets and identify unique information. 
 
 
-### Datasets
+### Datasets <a id="datasets"></a>
 
 We use the term data set to refer to all types of publications from which we can obtain data.
 In the table below we list typical datasets used in the Sudan HIA. Remember, we can pull all kinds of information out of a dataset. It does not have to be quantitative or in table format or anything like that. It can also be info directly from texts or graphics.
@@ -205,7 +205,7 @@ In the table below we list typical datasets used in the Sudan HIA. Remember, we 
 | Floodlist                                  | Newspaper Articles          | [Sudan – North Darfur Town Devastated by Rains, Flash Floods](https://floodlist.com/africa/sudan-north-darfur-floods-october-2019)                                                                     | Info directly from texts                            |
 
 
-### Data selection parameters
+### Data selection parameters <a id="data-selection-parameters"></a>
 
 In general, we can use any kind of dataset e.g. reports, maps, bulletins, tables…. However, we do not need to check all datasets available for one event. The selection of datasets is based on two principal parameters. 
 
@@ -242,7 +242,7 @@ __Uniqueness__
 It is important to not only use data from one source because of confidence. <!--what confidence-->
 The assumption is that different organisations have different capacities and work in different areas, thus they may have better information in some locations of sectors than other organisations.
 
-### Dataset ID
+### Dataset ID <a id="dataset-id"></a>
 When selecting datasets it is important to save the datasets on your computer. To be able to later retrace which piece of information was taken from which datasets, we have to give the datasets unique identification codes.
 In the Sudan project, we used the simple structure year of the flood the document is referring to (for example 2019), the publishing organisation (for example IFRC) and the publishing date (for example `20191003`).
 
@@ -253,7 +253,7 @@ width: 8000px
 ---
 ```
 
-### Step 3: Outcome 
+### Step 3: Outcome <a id="step-3-outcome"></a>
 At the end of the selection process, you should have multiple relevant datasets with IDs for every event, covering all relevant areas and sectors.
 
 
@@ -290,10 +290,10 @@ align: center
 |                               |                               |                               |                               |                               |                           |
 |                               |                               |                               |                               |                               |                           |
 ```
-## Step 4: Preparing Excel table Structure
+## Step 4: Preparing Excel table Structure <a id="step-4-preparing-excel-table-structure"></a>
 Before we can start compiling data, we need to prepare the table structure we will use. The table needs to accommodate four components. __Date__, __data source__, __location__,and __impact information__.
 
-### Date
+### Date <a id="date"></a>
 The date information must accommodate the flood event information from the list of flood events prepared in Step 2. And potential dates of specific impact information. 
 The date portion of the whole Excel table would look like this:
 
@@ -305,7 +305,7 @@ The date portion of the whole Excel table would look like this:
 | 2019       | 2019-06-01 | 2019-06-31 |  |
 |2020      | 2020-07-20 | 2020-08-11 | |
 
-### Data source
+### Data source <a id="data-source"></a>
 This section is simply one column with the ID of the dataset from which the particular information was taken.
 
 |source_ID|
@@ -314,7 +314,7 @@ This section is simply one column with the ID of the dataset from which the part
 |2019_floodlist_20190613.pdf|
 |2020_PDNRA_20210531.pdf|
 
-### Location
+### Location <a id="location"></a>
 Practical all impact information refers to state, locality, town or refugee/IDP camp level. This means we need a column for each of these levels and one column to indicate the level the information is referring to. In this way, we can later filter for all information on for example locality level.
 
 |admin_level | admin_1 | admin_2 | admin_3 | admin_camp|
@@ -556,7 +556,7 @@ We highly recommend using the English names of states and localities which are c
 | Zalingi                         | زالنجى                  | SD06138    | Central Darfur | وسط دارفور   | SD06       |
 :::
 
-### Impact information
+### Impact information <a id="impact-information"></a>
 The actual impact information consists of two parts. One part is always the impact type. This explain what happened. For example, people were affected by the flood, the cholera broke out or schools got damaged. 
 
 The other part is either the impact quantity or the impact quality. It can not be both! 
@@ -657,7 +657,7 @@ The HeiGIT team used 75 different impact types. You can find the whole list belo
 
 ```
 
-### Step 4: Outcome
+### Step 4: Outcome <a id="step-4-outcome"></a>
 Now we have your final table structure. We can put ALL information from the selected datasets we deem relevant into this table structure thus creating a consistent historical impact dataset.
 
 
@@ -669,7 +669,7 @@ Now we have your final table structure. We can put ALL information from the sele
 |            |
 
 
-## Step 5: Data compiling
+## Step 5: Data compiling <a id="step-5-data-compiling"></a>
 
 During the data compilation, we simply identify the relevant information in the dataset and transfer it into the table. Below you can find some examples of the process.
 
@@ -784,7 +784,7 @@ align: center
 ---
 ```
 
-### Tipps for data compiling
+### Tipps for data compiling <a id="tipps-for-data-compiling"></a>
 
 Compiling the data in EXCEL is a time-intensive and repeatable task. Here are some tips to speed up the process:
 
@@ -909,7 +909,7 @@ The resulting table can easily be adjusted in Excel.
 | WHITE NILE   | 10,160          | 1      |
 
 
-## Step 6: HIA Data Cleaning
+## Step 6: HIA Data Cleaning <a id="step-6-hia-data-cleaning"></a>
 
 When creating such a dataset there will be errors like misspellings of names or wrong numbers. To address that you will need to clean the dataset before actually using it. To clean the dataset you can use Excel or specialized tools like [OpenRefine](https://openrefine.org/).
 
@@ -962,7 +962,7 @@ Independent of which tool you will use, here are some important points you have 
     Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
 
 
-## Step 7: Adding P-Codes to the table
+## Step 7: Adding P-Codes to the table <a id="step-7-adding-p-codes-to-the-table"></a>
 
 Create a new empty Excel file and name it `Sudan_impact_p_code`.
 
@@ -990,11 +990,11 @@ The result should be in the Excel file `Sudan_impact_p_code`. The file should co
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_hia_power_query.mp4"></video>
 ```
 
-## Step 8: Data export from Excel to QGIS
+## Step 8: Data export from Excel to QGIS <a id="step-8-data-export-from-excel-to-qgis"></a>
 
 Now we have our impact dataset cleaned and ready to use. Since the dataset is a long table we cannot use it as a normal table in Excel. To get the data in a format so we can use it in QGIS or create a graph out of it, we need to pivot it. Depending on your work with impact quantity or quality, there are small differences. Here is how you do it:
 
-### Impact Quantity for one year on state level:
+### Impact Quantity for one year on state level: <a id="impact-quantity-for-one-year-on-state-level"></a>
 1. Open the Excel dataset.
 2. Turn the data in a table by clicking on `Insert` -> `Table`-> check `My table has headers`
 3. Also under the `Insert`-Tab click on `Pivot Table`. Make sure your table range is correct. Check `New Worksheet`. Click `OK`.
@@ -1008,9 +1008,9 @@ Now we have our impact dataset cleaned and ready to use. Since the dataset is a 
 
 Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS. 
 
-## Step 9: Data analysis in QGIS
+## Step 9: Data analysis in QGIS <a id="step-9-data-analysis-in-qgis"></a>
 
-### Visualise impact quantity data for one year on state level in QGIS
+### Visualise impact quantity data for one year on state level in QGIS <a id="visualise-impact-quantity-data-for-one-year-on-state-level-in-qgis"></a>
 
 1. Import the previously created CSV file into QGIS. Open the `Data Source Manager` and select the `Delimited Text` section. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. Always check the Sample Data output at the bottom to see if the import is working as expected. You propably will also need to check the `Record and Fields Options` and specify if your first record is a header or already data. Lastly, it is important to specify the `Geometry Definition`, were you can just select `No geometry`. An example will be shown in {numref}`HIA_csv_import`.
 
@@ -1047,7 +1047,7 @@ Example map
 ```
 
 
-### Flood events in Sudanese states for all the recorded years
+### Flood events in Sudanese states for all the recorded years <a id="flood-events-in-sudanese-states-for-all-the-recorded-years"></a>
 
 In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021. 
 

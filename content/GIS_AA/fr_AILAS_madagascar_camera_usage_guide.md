@@ -1,8 +1,8 @@
-# Guide d'utilisation de la caméra: projet AILAS
+# Guide d'utilisation de la caméra: projet AILAS <a id="guide-dutilisation-de-la-camera-projet-ailas"></a>
 
 Cette documentation fournit des instructions sur la configuration et l’utilisation des caméras GoPro pour l’acquisition de données sur le terrain, incluant des instructions détaillées pour toutes les étapes nécessaires, des listes de contrôle pour le début et la fin de l’acquisition des données, ainsi que des conseils pour le dépannage.
 
-## Liste de vérification du matériel
+## Liste de vérification du matériel <a id="liste-de-verification-du-materiel"></a>
 
 Avant le départ, assurez-vous de disposer des éléments suivants :
 
@@ -70,9 +70,9 @@ Batterie externe (Powerbank)
 ---
 <br>
 
-## Installation de la caméra
+## Installation de la caméra <a id="installation-de-la-camera"></a>
 
-### Choisir l’emplacement de fixation
+### Choisir l’emplacement de fixation <a id="choisir-lemplacement-de-fixation"></a>
 
 | Instructions                                  | Notes                                      |
 | :-------------------------------------------- | :----------------------------------------- |
@@ -105,7 +105,7 @@ Position latérale près de la portière passager
 :::
 ::::
 
-### Fixer la GoPro avec la fixation ventouse
+### Fixer la GoPro avec la fixation ventouse <a id="fixer-la-gopro-avec-la-fixation-ventouse"></a>
 
 | Instructions                          | Notes                            |
 | :----------------------------------- | :--------------------------------- |
@@ -160,7 +160,7 @@ Caméra correctement alignée avec la route
 
 ::::
 
-### Alimentation
+### Alimentation <a id="alimentation"></a>
 
 | Instructions | Notes |
 | :----------- | :---- |
@@ -177,9 +177,9 @@ Si votre véhicule dispose d’une prise adaptée pour se connecter au port USB-
 ---
 <br>
 
-## Configuration de la capture d’images
+## Configuration de la capture d’images <a id="configuration-de-la-capture-dimages"></a>
 
-### Paramétrage des réglages
+### Paramétrage des réglages <a id="parametrage-des-reglages"></a>
 
 Les réglages de la caméra peuvent être facilement configurés en scannant le QR code fourni avec la GoPro. Il s’agit de la configuration standard.  
 Si la configuration par QR code ne fonctionne pas, le **réglage manuel** est décrit ci-dessous.  
@@ -193,7 +193,7 @@ Si la configuration par QR code ne fonctionne pas, le **réglage manuel** est d�
 
 Si la caméra est déjà configurée en mode « AILAS », vous n’avez pas besoin de paramétrer les réglages.
 
-### Configuration par QR code
+### Configuration par QR code <a id="configuration-par-qr-code"></a>
 
 <!-- Image QR-code -->
 
@@ -239,7 +239,7 @@ Si
 Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditions de luminosité différentes ou en rapprochant la caméra du code.
 :::
 
-### Configuration manuelle alternative
+### Configuration manuelle alternative <a id="configuration-manuelle-alternative"></a>
 
 | Instructions | Remarques |
 | :------------------------------- | :---- |
@@ -251,20 +251,20 @@ Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditi
 
 ---
 
-## Liste de vérification avant de prendre la route
+## Liste de vérification avant de prendre la route <a id="liste-de-verification-avant-de-prendre-la-route"></a>
 
-#### Configuration de la caméra
+#### Configuration de la caméra <a id="configuration-de-la-camera"></a>
 - Fixez la caméra sur le pare-brise, orientée droit devant.  
 - Connectez la Powerbank à la caméra avec le câble USB-C.  
 - Rangez la Powerbank dans un endroit sûr pour qu’elle ne bouge pas pendant la conduite.  
 
-#### Démarrage de l’enregistrement
+#### Démarrage de l’enregistrement <a id="demarrage-de-lenregistrement"></a>
 - Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’allume.  
 - Scannez le QR code pour configurer les réglages (si cela ne fonctionne pas, utilisez la configuration manuelle). 
 - Attendez environ 1 minute pour que la caméra capte le signal GPS
 - Appuyez sur le bouton déclencheur supérieur (le gros bouton sur le dessus) pour commencer la capture.  
 
-#### Vérifications finales avant de conduire
+#### Vérifications finales avant de conduire <a id="verifications-finales-avant-de-conduire"></a>
 - La caméra est-elle bien fixée ?  
 - La caméra est-elle de niveau et orientée droit devant ?  
 - La GoPro clignote-t-elle toutes les 5 secondes (prise de photos) ?  
@@ -273,22 +273,22 @@ Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditi
 
 ---
 
-## Liste de vérification après la conduite
+## Liste de vérification après la conduite <a id="liste-de-verification-apres-la-conduite"></a>
 
-#### Arrêt de l’enregistrement
+#### Arrêt de l’enregistrement <a id="arret-de-lenregistrement"></a>
 - Appuyez sur le bouton déclencheur supérieur pour arrêter la capture.  
 - Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’éteigne.  
 - Débranchez le câble USB-C de la GoPro.  
 
-#### Inspection du matériel
+#### Inspection du matériel <a id="inspection-du-materiel"></a>
 - Vérifiez que le support est toujours bien serré et que la GoPro n’a pas été endommagée.  
 - Nettoyez l’objectif de la caméra s’il est poussiéreux ou sale.  
 - Laissez la GoPro solidement fixée si c’est sûr, ou rangez-la dans son étui ou son sac.  
 
-#### Recharger la Powerbank (le cas échéant)
+#### Recharger la Powerbank (le cas échéant) <a id="recharger-la-powerbank-le-cas-echeant"></a>
 - Branchez la Powerbank sur une prise murale pour la recharger pendant la nuit.  
 
-#### Signaler tout problème
+#### Signaler tout problème <a id="signaler-tout-probleme"></a>
 Contactez immédiatement le support technique si :  
 - La GoPro n’a pas fonctionné  
 - Le support est tombé et ne peut pas être réinstallé  
@@ -298,7 +298,7 @@ Contactez immédiatement le support technique si :
 ---
 <br>
 
-## Conseils de dépannage
+## Conseils de dépannage <a id="conseils-de-depannage"></a>
 
 | Problème                  | Solution                                                      |
 |----------------------------|---------------------------------------------------------------|
@@ -309,7 +309,7 @@ Contactez immédiatement le support technique si :
 | La GoPro émet des bips/surchauffe | Éteignez-la pendant 5 min à l’ombre, puis reprenez        |
 | Le QR code n’est pas scanné | Utilisez un autre code ou effectuez une configuration manuelle |
 
-### Dépannage : Menu à l’envers
+### Dépannage : Menu à l’envers <a id="depannage-menu-a-lenvers"></a>
 Si le menu s’affiche à l’envers sur l’écran de la caméra comme dans l’image ci-dessous, les images seront également enregistrées avec une mauvaise orientation.
 
 ```{figure} /fig/AILAS_upside_down.jpg
@@ -357,7 +357,7 @@ Bon réglage : le verrouillage de l’orientation est désactivé.
 ---
 <br>
 
-## Contact support
+## Contact support <a id="contact-support"></a>
 
 En cas de problème ou de doute, n'hesitez pas à contacter :
 

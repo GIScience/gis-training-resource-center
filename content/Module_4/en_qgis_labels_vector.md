@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Labels for Vector Data
+# Labels for Vector Data <a id="labels-for-vector-data"></a>
 
 Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or 
 __Rule-based Labelling__. For each option, an attribute (`value`) will be displayed on the map. For example, the 
@@ -14,11 +14,11 @@ name of a city or region.  Additionally, you can __change the font, font size, c
 for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However, 
 be aware that too much text information can overload the map with too much information for the reader to process.
 
-### Single Labels and Rule-based Labeling
+### Single Labels and Rule-based Labeling <a id="single-labels-and-rule-based-labeling"></a>
 
 QGIS offers two methods to display labels: __Single Labels__ and __Rule-based Labeling__
 
-#### Single Labels
+#### Single Labels <a id="single-labels"></a>
 
 Creates a single label style for every feature in the layer. You can select an attribute (value) which will be 
 displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to 
@@ -40,7 +40,7 @@ name: en_30.30.2_assigning_value_to_labels
 Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (`ADM1_EN`) to be displayed. 
 :::
 
-#### Adding Single Labels to a Layer
+#### Adding Single Labels to a Layer <a id="adding-single-labels-to-a-layer"></a>
 
 1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
 2. Select ![](../../fig/en_30.30.2_icon_single_labels) `Single labels`.
@@ -73,7 +73,7 @@ Single Labels were selected to display the names of the settlements (red dots). 
 
 ::::
 
-#### Rule-based Labelling
+#### Rule-based Labelling <a id="rule-based-labelling"></a>
 
 Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different 
 text formatting. Use this if you want to have more control over the information that will be displayed as labels. For 
@@ -89,7 +89,7 @@ Rule-based labeling allows you to filter datasets. This way, you can display the
 
 The rules, or filters, are based on an expression. You can use the ![](../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
 
-#### Adding Rule-based Labels to a Layer
+#### Adding Rule-based Labels to a Layer <a id="adding-rule-based-labels-to-a-layer"></a>
 
 1. In the styling panel, click on the `Labels` tab underneath the Symbology tab.
 2. Select ![](/../fig/30.30.2_Icon_rule_based_labeling.png) `Rule-based Labeling`.
@@ -180,7 +180,7 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 :::
 
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note
@@ -217,6 +217,6 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 
 ::::
 
-## Further Resources
+## Further Resources <a id="further-resources"></a>
 
 - [IFRC brand-compliant fonts](https://learn-sims.org/style-guidance/standard-fonts/)

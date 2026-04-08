@@ -1,5 +1,5 @@
-# Exercise 2: Analysing Measles Case Data and Population Distribution
-## Background
+# Exercise 2: Analysing Measles Case Data and Population Distribution <a id="exercise-2-analysing-measles-case-data-and-population-distribution"></a>
+## Background <a id="background"></a>
 
 % MAKE THEM LOOK FOR THE WORLDPOP DATASET ON DEMOGRAPHY AND MAKE THEM CALCULATE THE UNDER 5 POP RASTER
 
@@ -7,7 +7,7 @@ The Epidemiology Department has shared a line-list of suspected measles cases re
 Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates.
 This will help the response coordination team prioritise vaccination deployments and plan logistics for outreach activities.
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip
@@ -29,8 +29,8 @@ If you do this exercise without doing the previous exercise, download all datase
 
 
 
-## Tasks
-### Task 1: Open the Project and Prepare the Workspace
+## Tasks <a id="tasks"></a>
+### Task 1: Open the Project and Prepare the Workspace <a id="task-1-open-the-project-and-prepare-the-workspace"></a>
 
 1. Open the QGIS project created in Exercise 1:
     - Project → Open… → chad_health_infrastructure.qgz.
@@ -49,7 +49,7 @@ Working with the browser panel allows a much quicker access to the files and kee
 
 
 
-### Task 2: Calculate the Population per District
+### Task 2: Calculate the Population per District <a id="task-2-calculate-the-population-per-district"></a>
 
 In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.
 
@@ -86,7 +86,7 @@ width: 650 px
 Apply a graduated classification to visualize the district-level population sum results
 :::
 
-### Task 3: Calculate the Population under 5 per District
+### Task 3: Calculate the Population under 5 per District <a id="task-3-calculate-the-population-under-5-per-district"></a>
 
 Measles disproportionately affects young children, especially those under five, who are more likely to develop severe complications and have higher mortality rates. Knowing the under-5 population per district helps estimate how many children are at greatest risk, plan targeted vaccination campaigns, and assess whether health resources are sufficient to protect the most vulnerable age group ([WHO on Measles](https://www.who.int/news-room/fact-sheets/detail/measles)).
 
@@ -133,7 +133,7 @@ Can you find and download the WorldPop raster containing the population under 5?
 6. Now remove the fields containing the `population_under_1_sum` and `population_under_5_sum` information as we don't need them anymore. Click on "Delete fields" ![](/fig/qgis_3.40_delete_column_icon.png) and remove these two columns. Save the layer.
     - Save the enhanced population layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_pop_2025_under_5`. Click `Save`.
 
-### Task 4: Import and Explore the Measles Cases List
+### Task 4: Import and Explore the Measles Cases List <a id="task-4-import-and-explore-the-measles-cases-list"></a>
 
 % Revise this step.
 
@@ -162,7 +162,7 @@ Make sure to always load csv data via the data source manager and not via the dr
 % THIS STEP IS REMOVED AS I DONT HAVE THE DATA SO THE AGGREGATION PART CAN BE DONE. WE WILL SKIP THIS TASK AND DIRECTLY JUMP INTO THE JOIN
 % TO ADD SOME ADDITIONAL VALUE THE CALCULATION OF POPULATION UNDER 5 WAS ADDED
 
-### Task 4: Aggregate the measles case data with the district boundaries (adm2)
+### Task 4: Aggregate the measles case data with the district boundaries (adm2) <a id="task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2"></a>
 
 We have received a .csv-file containing measle case report. In order to identify the hotspots, we want to aggregate the number of cases per district (adm2). The data does not include geographic coordinates. However, the dataset includes the names of the settlement where the case has been reported, as well as the district. With this information, we can aggregate the number of cases per district and, in a next step, join them with the adm2-layer. 
 
@@ -201,7 +201,7 @@ The aggregated data table.
 
 -->  
 
-### Task 5: Joining the measles cases with our adm2 layer
+### Task 5: Joining the measles cases with our adm2 layer <a id="task-5-joining-the-measles-cases-with-our-adm2-layer"></a>
 
 1. We can join the measles cases with our adm2-layer including the population data (`tcd_pop_2025_under_5`):
     - In the processing toolbox, open the "Join Attributes by Field value"-tool
@@ -217,7 +217,7 @@ The aggregated data table.
 2. If everything is correct, let's make the layer permanent under `tcd_pop_2025_measles_adm2`
 
 
-### Task 6: Calculating the incidence rate
+### Task 6: Calculating the incidence rate <a id="task-6-calculating-the-incidence-rate"></a>
 
 Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.
 
@@ -237,11 +237,11 @@ Our district layer now includes the total population, the population under 5 and
 
 > Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained
 
-### Task 7: Creating map of measles incidence rate 
+### Task 7: Creating map of measles incidence rate <a id="task-7-creating-map-of-measles-incidence-rate"></a>
 
 In this task, we will create a map showing the measles incidence rate by district, helping to visualize where the disease burden is highest. We will also add an overview map displaying the population under five, providing important context for understanding the distribution of vulnerable age groups and interpreting the incidence patterns.
 
-#### Task 7.1: Symbology
+#### Task 7.1: Symbology <a id="task-71-symbology"></a>
 
 1. Symbology measles incidence rate
     - Use the `tcd_pop_2025_measles_adm2` layer with the incidence rate from the previous calculation
@@ -256,7 +256,7 @@ In this task, we will create a map showing the measles incidence rate by distric
     - Color ramp could be `Turbo`
     - Select Mode `Equal Count` and 5 Classes
 
-#### Task 7.2: Print Layout
+#### Task 7.2: Print Layout <a id="task-72-print-layout"></a>
 
 Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 

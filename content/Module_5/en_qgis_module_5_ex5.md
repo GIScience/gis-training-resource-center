@@ -7,9 +7,9 @@
 
 ::::
 
-# Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan
+# Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan <a id="exercise-5-aggregate-and-assess-g2p-money-transfers-in-pakistan"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -58,18 +58,18 @@ __Relevant Wiki Articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -89,7 +89,7 @@ __Wrap up:__
 
 :::
 
-## Step-by-step instructions
+## Step-by-step instructions <a id="step-by-step-instructions"></a>
 
 :::{card} 
 :class-card: sd-text-justify sd-rounded-3 sd-border-2
@@ -113,7 +113,7 @@ To load the CSV-file, navigate to `Layer` → `Add Layer` → `Add delimited tex
 :::
 ::::
 
-### Preparing the data
+### Preparing the data <a id="preparing-the-data"></a>
 
 1. Unzip the exercise data and create a new QGIS-project.
 2. Load the data into your QGIS-project.
@@ -130,7 +130,7 @@ By comparing the values in the column `admin2_EN` from the `pak_admbnda_adm2_wfp
 
 ::::
 
-### Step 1: Aggregating the amount of transferred money on admin2
+### Step 1: Aggregating the amount of transferred money on admin2 <a id="step-1-aggregating-the-amount-of-transferred-money-on-admin2"></a>
 
 3. In the processing toolbox, search for the tool `Aggregate` under `Vector Geometry`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`aggregate_tool`).
 
@@ -176,7 +176,7 @@ The Aggregate-tool in QGIS 3.36
     :::
 
 
-### Step 2: Joining the aggregated data with administrative boundaries
+### Step 2: Joining the aggregated data with administrative boundaries <a id="step-2-joining-the-aggregated-data-with-administrative-boundaries"></a>
 
 In this step, we want to add the aggregated information we gained from the CSV file to the administrative boundaries. We need to join the aggregated table with the `pak_admbnda_adm2_wfp_20220909`-layer. 
 

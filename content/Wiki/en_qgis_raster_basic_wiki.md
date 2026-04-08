@@ -1,9 +1,9 @@
-# Basic Raster Operations
+# Basic Raster Operations <a id="basic-raster-operations"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Zonal statistics
+## Zonal statistics <a id="zonal-statistics"></a>
 
 The `Zonal Statistics` allows the combination of vector and raster data.
 

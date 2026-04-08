@@ -1,9 +1,9 @@
-# Non-Spatial Queries
+# Non-Spatial Queries <a id="non-spatial-queries"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Manual selection
+## Manual selection <a id="manual-selection"></a>
 
 - Select the features manually in the __attribute table__ by clicking on it.
 - Holding <kbd>Ctrl</kbd> while selecting features lets you select multiple features at once.
@@ -13,7 +13,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table_wiki.mp4"></video>
 :::
 
-## Select by expression
+## Select by expression <a id="select-by-expression"></a>
 
 The `Select by Expression` tool lets you build an expression to select features of a layer. For example, you can select specific attributes, or select features where the value of an attribute in a specific range.
 
@@ -27,7 +27,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 
 
 
-### Comparison operators 
+### Comparison operators <a id="comparison-operators"></a>
 - `>`, `<`, `=`, `!=`
 
 :::{dropdown} Example: Select all cities with more than 20 million inhabitants in 2015: `"2015" > 20000`
@@ -35,7 +35,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expresion_greater_wiki.mp4"></video>
 :::
 
-### Special operators
+### Special operators <a id="special-operators"></a>
 
 - `LIKE`
 
@@ -44,7 +44,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
 :::
 
-### Logical operators
+### Logical operators <a id="logical-operators"></a>
 - `AND`, `OR`
 - Can be used to combine different queries or criteria.
 
@@ -53,7 +53,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video>
 :::
 
-## Complex Expressions
+## Complex Expressions <a id="complex-expressions"></a>
 
 It is also possible to add expressions that chain different requirements. In this case do not forget to put brackets around individual parts of the expression such as:
 
@@ -61,7 +61,7 @@ It is also possible to add expressions that chain different requirements. In thi
 
 ```
 
-### Save selected features as a new file
+### Save selected features as a new file <a id="save-selected-features-as-a-new-file"></a>
 
 - `Layer-Properties` -> `Export` -> `Save only selected features`
 
@@ -72,7 +72,7 @@ It is also possible to add expressions that chain different requirements. In thi
 
 
 
-## Select by expression options
+## Select by expression options <a id="select-by-expression-options"></a>
 
 ::::{tab-set}
 
@@ -118,6 +118,6 @@ Operators such as AND, OR can be used to combine different queries or criteria
 
 ::::
 
-## Further resources
+## Further resources <a id="further-resources"></a>
 
 You can access information about logical operators in QGIS documentation through the [following link](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features).

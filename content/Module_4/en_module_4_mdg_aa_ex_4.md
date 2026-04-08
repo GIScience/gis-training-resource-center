@@ -8,9 +8,9 @@
 ::::
 
 
-# Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers
+# Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers <a id="exercise-4-visualizing-cyclone-impact-results-aina-styles-her-layers"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -64,18 +64,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on conducting trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -95,7 +95,7 @@ __Wrap up:__
 
 :::
 
-## Available data
+## Available data <a id="available-data"></a>
 
 :::{card}
 :link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip
@@ -103,7 +103,7 @@ __Wrap up:__
 __Download all datasets here, save the folder on your computer and unzip the file.__ 
 :::
 
-## Context
+## Context <a id="context"></a>
 
 Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
 
@@ -111,9 +111,9 @@ To save time, Aina doesn’t want to adjust colors and legends manually each tim
 
 In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
-### 1. **Load Required Layers (if not already loaded)**
+### 1. **Load Required Layers (if not already loaded)** <a id="1-load-required-layers-if-not-already-loaded"></a>
 
 Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
 
@@ -129,7 +129,7 @@ If any are missing:
 
 ---
 
-### 2. **Apply Predefined Style Files**
+### 2. **Apply Predefined Style Files** <a id="2-apply-predefined-style-files"></a>
 Apply the following`.qml` style files to the respective layers:
 
 | **Layer**                   | **Style File**                           |
@@ -195,7 +195,7 @@ Map showing the number of education institutions exposed per district.
 
 
 
-### 3. **Style Percentage Layers Manually**
+### 3. **Style Percentage Layers Manually** <a id="3-style-percentage-layers-manually"></a>
 
 Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.
 
@@ -234,7 +234,7 @@ admin2_health_affected_percentage
 
 ---
 
-### 4. **Save Your New Styles for Reuse**
+### 4. **Save Your New Styles for Reuse** <a id="4-save-your-new-styles-for-reuse"></a>
 
 Save your manually created styles as `.qml` files for future reuse.
 
@@ -256,7 +256,7 @@ Save your manually created styles as `.qml` files for future reuse.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
-### 5. *(Optional)* Import Styles into Your QGIS Library
+### 5. *(Optional)* Import Styles into Your QGIS Library <a id="5-optional-import-styles-into-your-qgis-library"></a>
 
 To reuse your styles in any future project:
 

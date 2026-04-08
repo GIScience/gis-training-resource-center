@@ -1,8 +1,8 @@
-# Picture upload and management: AILAS Project
+# Picture upload and management: AILAS Project <a id="picture-upload-and-management-ailas-project"></a>
 
 This documentation provides instructions on how to upload and manage street-level images that are captured in the framework of the AILAS project.
 
-## Background: Panoramax
+## Background: Panoramax <a id="background-panoramax"></a>
 
 <!-- Screenshot Panoramax -->
 
@@ -16,15 +16,15 @@ Screenshot of a street level image displayed on Panoramax
 
 All pictures captured in the framework of the AILAS project are expected to be uploaded to a private instance of the street-level imagery platform Panoramax. This ensures that the imagery is easily available to the concerned stakeholders for the further usage in the project (labelling of training data, modelling), while being protected against access from unauthorized users.
 
-### What is Panoramax?
+### What is Panoramax? <a id="what-is-panoramax"></a>
 
 [Panoramax](https://panoramax.fr) is an open, federated platform for sharing and viewing street-level imagery. Like [Google Street View](https://www.google.com/streetview/) and [Mapillary](https://www.mapillary.com), it allows users to explore places through photos taken along streets and paths. But unlike commercial platforms, Panoramax is built as a **decentralized and open ecosystem**: imagery is hosted on independent servers (run by institutions, cities, or communities) rather than a single company, and access is governed by open standards. The entire stack of Panoramax software is open source.
 
 This means that data ownership stays with the contributors and hosting institutions, and imagery can be more easily integrated into local projects, research, or public services. Panoramax emphasizes **openness, transparency, and sovereignty** of street-level data.
 
-### Features
+### Features <a id="features"></a>
 
-#### 🌍 Core Features
+#### 🌍 Core Features <a id="core-features"></a>
 
 * **Street-level imagery viewer** – explore panoramic or directional images along roads, paths, and places.
 * **Open & federated hosting** – imagery is stored on independent servers operated by different organizations (municipalities, research centers, NGOs, etc.).
@@ -32,21 +32,21 @@ This means that data ownership stays with the contributors and hosting instituti
 * **Contributions from multiple sources** – imagery can come from institutions, community projects, or individuals.
 * **Integration into mapping workflows** – imagery can be linked with OpenStreetMap or other geospatial datasets.
 
-#### 🔍 Privacy & Processing
+#### 🔍 Privacy & Processing <a id="privacy-and-processing"></a>
 
 * **Automatic face and license plate blurring** – built-in anonymization before imagery is published.
 * **Object detections** – AI models can detect relevant features (e.g., traffic signs) within the imagery.
 * **Custom detection models** – operators can run their own detection pipelines for specific use cases.
 * **Metadata enrichment** – detected objects can be stored as data linked to the images, making the imagery searchable and analyzable.
 
-#### ⚙️ Platform & Ecosystem
+#### ⚙️ Platform & Ecosystem <a id="platform-and-ecosystem"></a>
 
 * **API access** – developers can query and use imagery programmatically.
 * **Web-based viewer** – lightweight, embeddable viewer for public portals or project websites.
 * **Community-driven** – open-source software stack, enabling transparency and extensibility.
 * **Long-term data ownership** – institutions keep control over where and how their imagery is stored and shared.
 
-### Data privacy and security
+### Data privacy and security <a id="data-privacy-and-security"></a>
 
 Panoramax prevents the identification of people in the imagery by blurring faces and license plates. This happens automatically on image upload and before the images are published. Users can report any further issues with an image through the platform. This will cause the image to be hidden from public view until intervention from the owner of the image.
 
@@ -54,9 +54,9 @@ While one of the main features of Panoramax is its global public meta-catalogue 
 
 The Panoramax instance used by the AILAS project has a default setting for uploaded images to be visible only to logged in users of the website. Users cannot register accounts to the Panoramax instance themselves, but must be created by the administrators. This means, that the uploaded images and image sequences will not be visible to the general public.
 
-## Picture upload
+## Picture upload <a id="picture-upload"></a>
 
-### 1. Remove the SD card from the camera.
+### 1. Remove the SD card from the camera. <a id="1-remove-the-sd-card-from-the-camera"></a>
 
 ::::{grid} 2
 :::{grid-item}
@@ -84,7 +84,7 @@ Gently push the SD card to remove it
 :::
 ::::
 
-### 2. Insert into card reader and connect to computer.
+### 2. Insert into card reader and connect to computer. <a id="2-insert-into-card-reader-and-connect-to-computer"></a>
 
 ```{figure} /fig/AILAS_insert_card.jpg
 ---
@@ -96,7 +96,7 @@ Insert the SD card into the card reader
 
 With the SD card inserted, connect the card reader to a computer.
 
-### 3. Sign in to Panoramax
+### 3. Sign in to Panoramax <a id="3-sign-in-to-panoramax"></a>
 
 Open the AILAS project's [Panoramax website](https://panoramax.heigit.org) and click "Log in" on the right side of the top navigation bar.
 
@@ -117,7 +117,7 @@ If this is your first time logging in, you will use an initial password provided
 For the AILAS project, images are expected to be uploaded to a [specific instance of Panoramax](https://panoramax.heigit.org). Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery _in the public_, check out available public instances at https://panoramax.fr.
 :::
 
-### 4. Upload images
+### 4. Upload images <a id="4-upload-images"></a>
 
 1. Click the big blue "Share Photos" button in the top navigation bar.
 
@@ -158,17 +158,17 @@ Upload error messages
 If you captured more than a thousand images, the images are saved in several subfolders of `DCIM` called `100GOPRO`, `101GOPRO`, etc. Repeat steps 1 to 6 of this section for all the subfolders.
 :::
 
-### 5. Delete images
+### 5. Delete images <a id="5-delete-images"></a>
 
 Once you have successfully uploaded the images, delete them from the SD card.
 
-### 6. Re-insert SD card into camera
+### 6. Re-insert SD card into camera <a id="6-re-insert-sd-card-into-camera"></a>
 
 Safely remove the SD card reader from your computer, and re-insert the card into the camera.
 
-## Picture exploration on Panoramax
+## Picture exploration on Panoramax <a id="picture-exploration-on-panoramax"></a>
 
-### See your own uploaded sequences and pictures
+### See your own uploaded sequences and pictures <a id="see-your-own-uploaded-sequences-and-pictures"></a>
 
 Click on your account icon in the Panoramax top navigation bar and choose "My Photos". A page listing all your uploaded image sequences will open.
 
@@ -197,7 +197,7 @@ The sequence page displays thumbnails of all photos in a sequence. You can also 
 
 By clicking on the "Fullscreen" button, you will get to the "Explore" map while focusing on the currently selected sequence and image.
 
-### Explore all pictures on Panoramax
+### Explore all pictures on Panoramax <a id="explore-all-pictures-on-panoramax"></a>
 
 Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc. on the map.
 

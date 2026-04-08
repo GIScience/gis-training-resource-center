@@ -1,14 +1,14 @@
-# Risk Assessment QGIS Plugin
+# Risk Assessment QGIS Plugin <a id="risk-assessment-qgis-plugin"></a>
 
 
-## Introduction & Purpose
+## Introduction & Purpose <a id="introduction-and-purpose"></a>
 
 In the context of the Anticipatory Action methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability and lack of coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
 The collection and processing of this information varies throughout different contexts but the calculation scheme to combine the information to a risk score remains consistent. At HeiGIT we have developed a risk assessment workflow that is applicable across different countries and disaster contexts. To make the process more user-friendly, we have chosen to convert it into a QGIS Plugin. This makes it more accessible and easier to use, especially for individuals with limited technical knowledge.
 The plugin automatically calculates the risk based on the exposure, vulnerability and coping capacity indicators entered by the user. 
 
 
-## Requirements & Installation
+## Requirements & Installation <a id="requirements-and-installation"></a>
 
 The use of the plugin requires Python pandas to be installed on your system.
 You can check in QGIS directly if you have it installed or not:
@@ -43,7 +43,7 @@ __QGIS Versions__
 The Plugin is available for QGIS Version 3.28 onwards.
 
 
-## Getting Started
+## Getting Started <a id="getting-started"></a>
 
 To install plugins, you need to open the Plugin Manager:
 - Click on the menu item Plugins > Manage and install Plugins.
@@ -59,7 +59,7 @@ To install plugins, you need to open the Plugin Manager:
 For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
 
 
-## User Interface
+## User Interface <a id="user-interface"></a>
 
 How to open the plugin interface:
 
@@ -73,7 +73,7 @@ you can also search for “Risk Assessment” using the Search function of the P
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_interface.mp4"></video>
 
 
-## Data Input
+## Data Input <a id="data-input"></a>
 
 The plugin needs 5 inputs, from which 4 are csv text files and 1 is a vector file. The entry of 4 of these 5 files is mandatory. The coping capacity file is optional, but is strongly recommended for a more comprehensive and realistic risk assessment. The majority of the files can be produced and adjusted in Excel. This allows for flexibility to adjust input to local contexts.
 The requested input information can be browsed for via the button on the right. These files need to be present on the user's computer.
@@ -85,7 +85,7 @@ The plugin will provide the user with two outputs. The Risk Assessment results o
 
 The required input files must follow a given structure. Here you find the required input files to conduct the risk assessment and specifications they must follow:
 
-### 1. Administrative boundaries 
+### 1. Administrative boundaries <a id="1-administrative-boundaries"></a>
 
 A geospatial vector format (geojson, geopackage, shapefile,…) containing the administrative boundaries and P-Codes of the respective countries. These can be found on the websites of national governments or on Humanitarian Data Exchange, for example. This dataset has two obligatory columns: “ADM_PCODE” containing the P_Codes and “ADM_EN” containing the names of the administrative boundaries. The administrative boundary data does not require a specific coordinate reference system (CRS), but the output and result will have the same CRS as the input.
 
@@ -97,7 +97,7 @@ align: center
 ---
 ```
 
-### 2. Risk Assessment indicators
+### 2. Risk Assessment indicators <a id="2-risk-assessment-indicators"></a>
 
 For the Risk Assessment indicators the following 3 “csv”-files are mandatory:
 
@@ -117,7 +117,7 @@ align: center
 ---
 ```
 
-### 3. Weights
+### 3. Weights <a id="3-weights"></a>
 
 A "csv"-file containing a column "variable_name" with all the column names of the previous "csv"-files, which are to be weighted differently in the calculation. The file must also contain the columns “category”, “weight” and “direction”. The category column indicates the category of the indicator: “exp” for exposure, “cop” for coping capacity and “vul” for vulnerability. The weight determines the importance of each indicator. For each category (exp, cop and vul), the sum of the weights must add up to 1. If this is not the case, the plugin will automatically normalize the weights in order to make the sum equal to 1 within each category. A message will be printed with the value of the transformed weights. For more information about weights and directions see chapter weight and directions.
 
@@ -129,7 +129,7 @@ align: center
 ---
 ```
 
-### WeightsGenerator Plugin
+### WeightsGenerator Plugin <a id="weightsgenerator-plugin"></a>
 
 When you install the Risk Assessment plugin, another plugin is automatically installed alongside it: the WeightsGenerator plugin. This tool allows you to manually assign weights and directions to indicators, without the need to load a pre-prepared weights CSV file.
 
@@ -153,7 +153,7 @@ By clicking "OK", you save the weights file locally as a CSV file. At the same t
 
 In the bottom-left corner of the window, there is also a "Load Weights File" button. This allows you to load an existing weights CSV file, which you can edit—for example, by changing individual values or adding new indicators.
 
-### Data Output
+### Data Output <a id="data-output"></a>
 
 The plugin provides the user with the following output:
 Geospatial data format to be chosen by user (geojson, shapefile, geopackage) with the administrative boundaries for the respective country including the following values for each polygon:
@@ -172,18 +172,18 @@ Geospatial data format to be chosen by user (geojson, shapefile, geopackage) wit
 
 The output data will contain No Data Values. By default in QGIS these Values are shown as “-999”. These no data values mean that there is no exposure and consequently no risk for the concerned districts.  
 
-## Methodology
+## Methodology <a id="methodology"></a>
 
 The methodology for the Risk Calculation is based on [Weltrisikoindex](https://weltrisikobericht.de/) and is also inspired by the [INFORM Risk framework](drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Methodology). The basic model of the WorldRiskIndex with its modular structure was developed jointly with the United Nations University Institute for Environment and Human Security (UNU-EHS). Since 2018, the Institute for International Law of Peace and Humanitarian Law (IFHV) at the Ruhr University Bochum has taken over the calculation and continuously developed the model conceptually and methodologically.
 In the context of this analysis, risk is defined as the interaction of the two dimensions of exposure and susceptibility, which arises only where the two spheres meet. In this respect, risk is only present where there are hazards from extreme natural events and where populations without sufficient resilience, coping or adaptation capacities live in these hazard areas. 
 
-### Indicator normalization
+### Indicator normalization <a id="indicator-normalization"></a>
 
 Depending on the context and content of the data, the value range of the indicators is wide. In order to make them comparable, all indicators are normalized to a value range between 0 to 1. Each value is scaled so that the minimum value in the series becomes 0, and the maximum value becomes 1. Values in between are linearly scaled based on their position within the range. A common Min-Max Normalization is used:
 
 $ Normalized\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
-### Imputation
+### Imputation <a id="imputation"></a>
 
 If indicators present missing values, no index values can be calculated for the respective admin boundary, so they would have to be removed from the ranking. To avoid this, the approach makes a pessimistic assumption for missing values in the categories Vulnerability and Coping Capacity: Missing values are assigned the worst circumstances for the respective category (for example highly vulnerable or very low coping capacity). 
 For the category exposure, it is not possible to assume pessimistic circumstances since the risk highly depends on an existing  exposure. Basically without exposure there is no risk (e.g. non existent river = non existent riverine flood risk). If we do not have values for exposure we will therefore have to assume that there is no information or no exposure in order not to falsify the result and assume a high exposure in  an area where there is none.
@@ -197,7 +197,7 @@ Remembering the logic explained earlier this results in the following substituti
 |Coping Capacity|0|
 
 
-### Weights and Directions
+### Weights and Directions <a id="weights-and-directions"></a>
 
 In order to calculate the overall score for each dimension, indicator weights and directions are introduced. The indicators for the three dimensions Exposure, Vulnerability and Coping Capacity receive different weighting and directions which depend on local and expert knowledge and are adjustable. 
 
@@ -237,7 +237,7 @@ For coping capacity we could have the following indicators: “number of schools
 
 It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can speak of “lack of coping capacity” instead of “coping capacity” since we force the respective indicators in another direction following the predefined overarching logic (the higher the value = the worse the circumstances).
 
-### Risk
+### Risk <a id="risk"></a>
 
 
 __Calculation of scores__
@@ -276,13 +276,13 @@ $ risk=   \sqrt exposure  \times vulnerability $
 
 Please remember that it is highly recommended to take the coping capacity into account.
 
-## Known Limitations
+## Known Limitations <a id="known-limitations"></a>
 
 A notable limitation of the system is that the self created “csv”-files must conform exactly to the specified format outlined in the provided examples.
 It is also important to know that no placeholders or default values can be assigned in the "csv"-files in the plugin application. Each cell must be filled with relevant data before the plugin is used.
 In general, many input files are required to use the plugin, which makes it highly prone to errors.
 
-## Support & Ressources
+## Support & Ressources <a id="support-and-ressources"></a>
 
 [HeiGIT QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)
 

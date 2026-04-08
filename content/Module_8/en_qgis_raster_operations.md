@@ -1,4 +1,4 @@
-# Common Raster Operations 
+# Common Raster Operations <a id="common-raster-operations"></a>
 
 In this chapter, we will go over a few common raster operations used in GIS. We will cover the basics, such as reprojecting raster layers and removing NoData cells and go on to more advanced processing such as clipping rasters, working with several raster layers, calculating statistics based on raster values, and vectorising raster layers. 
 
@@ -8,14 +8,14 @@ Parts of the content of this page has been inspired by the [GIS4Schools Webbook]
 
 :::
 
-## Investigating the Layer properties
+## Investigating the Layer properties <a id="investigating-the-layer-properties"></a>
 
 The first thing you should do when working with geodata is to familiarise yourself with the dataset. You can do that by investigating the layer in the map canvas, using the identify tool ![](/fig/mod8_ex1_informationtool.png) to see the values of a few of the raster cells. You should also look at their properties to find out the [Coordinate Reference System (CRS)](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system) and the cell size. When working with multiple raster layers, in most cases, it is important that the raster cells overlap exactly. Therefore, the CRS of the raster layers will have to be the same as well as the cell size and the raster extent. You might be unable to compare or combine raster layers correctly if they do not share a common CRS or the raster cells are not aligned. This might lead to unwanted interpolation or the processing operation not succeeding. 
 
 To check the CRS and cell size, <kbd>Right-click</kbd> on the raster layer and select `Properties` → `Information`. 
 
 
-## Reprojecting Raster Layers
+## Reprojecting Raster Layers <a id="reprojecting-raster-layers"></a>
 
 Reprojecting a raster layers works in a similar way as reprojecting vector layers.
 
@@ -24,7 +24,7 @@ Reprojecting a raster layers works in a similar way as reprojecting vector layer
 3. Once you have set the parameters, click on `Run`. A new layer will be added to your QGIS project. If it is a temporary layer, it will be called "Reprojected" and you should rename it to better identify the layer. 
 
 
-## Aligning Rasters
+## Aligning Rasters <a id="aligning-rasters"></a>
 
 
 When working with multiple rasters, it is important that the raster cells are aligned. Otherwise, you might get wrong results. With the "Align rasters" tool, raster datasets with different spatial resolutions, grid orientation or Coordinate Reference systems can be aligned. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general. 
@@ -48,7 +48,7 @@ Interface of the "Align Rasters" tool
   There are further optional operations that allow you to set a specific cell size (in x and y direction) and grid offset different from the reference raster or clip the output to a defined extent. This can be handy for very specific use cases, but is not necessary in the majority of applications.
 ```
 
-## Clipping Raster layers
+## Clipping Raster layers <a id="clipping-raster-layers"></a>
 
 Performing calculations using raster layers can quickly become very CPU-intensive and take an exponential amount of time. There are two ways of reducing the number of cells in a raster layer: 
 1. Reduce the raster resolution
@@ -63,7 +63,7 @@ To clip a raster layer:
 
 
 
-### Raster Calculator
+### Raster Calculator <a id="raster-calculator"></a>
 
 The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator]() for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
 
@@ -99,7 +99,7 @@ In the raster calculator,
 
 
 
-### Zonal Statistics
+### Zonal Statistics <a id="zonal-statistics"></a>
 
 The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country. 
 
@@ -138,6 +138,6 @@ Interface of the "Zonal statistics" tool
 
 
 
-## Vectorise
+## Vectorise <a id="vectorise"></a>
 
 

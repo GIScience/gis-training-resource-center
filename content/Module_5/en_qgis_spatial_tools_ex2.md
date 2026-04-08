@@ -6,17 +6,17 @@
 :::
 ::::
 
-# Exercise 1: Part 1: Calculate vulnerability index
+# Exercise 1: Part 1: Calculate vulnerability index <a id="exercise-1-part-1-calculate-vulnerability-index"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
 
-### Aim of the exercise
+### Aim of the exercise <a id="aim-of-the-exercise"></a>
 We want to create an overview of different vulnerability indicators. Using a Covid-19 risk indicators dataset, we take `% permanent wall type`, `% permanent roof type` and `poverty incidence`. Using Uganda population statistics, we calculate the `% of under fives` and `% of elderly`. By combining the data, we are now able to visualise the areas in Uganda that are most vulnerable.
 
-#### Type of trainings exercise:
+#### Type of trainings exercise: <a id="type-of-trainings-exercise"></a>
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -25,10 +25,10 @@ We want to create an overview of different vulnerability indicators. Using a Cov
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
+#### Focus group (GIS-Knowledge Level) <a id="focus-group-gis-knowledge-level"></a>
 
 
-#### These skills are relevant for 
+#### These skills are relevant for <a id="these-skills-are-relevant-for"></a>
 
 
 :::
@@ -37,7 +37,7 @@ We want to create an overview of different vulnerability indicators. Using a Cov
 ::::{grid} 2
 :::{grid-item-card}
 
-#### Estimated time demand for the exercise.
+#### Estimated time demand for the exercise. <a id="estimated-time-demand-for-the-exercise"></a>
 
  
 
@@ -45,7 +45,7 @@ We want to create an overview of different vulnerability indicators. Using a Cov
 
 :::{grid-item-card}
 
-## Relevant Wiki Articles
+## Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
@@ -56,18 +56,18 @@ We want to create an overview of different vulnerability indicators. Using a Cov
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -88,7 +88,7 @@ __Wrap up:__
 :::
 
 
-### Data
+### Data <a id="data"></a>
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `uga_admbnda_adm2_ubos_20200824.shp`: [Uganda district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-uga)
 - `COVID19_RISK_INDEX.shp`: [Covid-19 risk indicators](https://data.humdata.org/dataset/covid19_risk_index)
@@ -98,7 +98,7 @@ Download all datasets and save the folder on your computer and unzip the file. T
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 ```
 
-### Task
+### Task <a id="task"></a>
 This first part of the exercise will prepare the data for subsequent non-spatial geodataprocessing, such as working with the attribute table. To calculate the vulnerability index, we will join all the relevant data using spatial geodataprocessing into a single vector layer.
 
 1. Load the Uganda district boundaries (admin level 2) (`uga_admbnda_adm2_ubos_20200824.shp`), as well as population statistics (`uga_admpop_adm2_2020proj_1y.csv`) and Covid-19 risk indicators (`COVID19_RISK_INDEX.shp`) into QGIS.

@@ -1,6 +1,6 @@
-# Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS & uMAP
+# Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS & uMAP <a id="sketch-map-tool-exercise-4-basic-visualization-of-the-results-in-qgis-and-umap"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 Although all data and assumptions are fictional, they were created in the context of a real flood event described in a news article.
 
@@ -21,13 +21,13 @@ This exercise can be used in online and presence training and is focused on an h
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowlege Level)
+#### Focus group (GIS-Knowlege Level) <a id="focus-group-gis-knowlege-level"></a>
 
 - Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](/content/Mobile_Data_collection/en_SMT_ex1_.md) has been done before or knowledge on the background on Sketch Map Tool is there.
 
 - GIS Beginners-level: no specific knowledge about QGIS/uMAP required
 
-#### Phase of participatory/community mapping 
+#### Phase of participatory/community mapping <a id="phase-of-participatorycommunity-mapping"></a>
 
 - Analysing participatory mapping
 
@@ -39,7 +39,7 @@ This exercise can be used in online and presence training and is focused on an h
 :::{grid-item-card}
 
 
-#### Estimated time demand for the exercise.
+#### Estimated time demand for the exercise. <a id="estimated-time-demand-for-the-exercise"></a>
 
 __Exercise A__: with absolute beginners approx. 2 hours  
 
@@ -48,7 +48,7 @@ __Exercise B__: 30 min
 :::
 
 :::{grid-item-card}
-#### Available Data
+#### Available Data <a id="available-data"></a>
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & pre-marked and photographed map). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
@@ -63,11 +63,11 @@ Decide together with the responsible working group which GIS system is preferred
 
 
 
-## Instructions for the trainers 
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general.
@@ -78,7 +78,7 @@ Decide together with the responsible working group which GIS system is preferred
 - If you would like to adapt this exercise to your specific use case, create your own case-description. 
 ```
 
-### Conduct the training:  
+### Conduct the training: <a id="conduct-the-training"></a>
 __Introduction:__ 
 - Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand 
 - Provide access to the needed material 
@@ -91,7 +91,7 @@ __Wrap up:__
 :::
 
 
-## Step-by step introduction for participants 
+## Step-by step introduction for participants <a id="step-by-step-introduction-for-participants"></a>
 
 
 __You can choose whether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B) (or both)__. An internet connection is required to work with uMAP.
@@ -118,7 +118,7 @@ If you experience any problems during your use of the [Sketch Map Tool](https://
 
 
 
-## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
+## Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS <a id="exercise-a-exploration-and-basic-visualization-of-sketch-map-tool-outputs-in-qgis"></a>
 
 ::::{dropdown} Exercise A: Exploration & basic visualization of Sketch Map Tool outputs in QGIS
 :open:
@@ -127,11 +127,11 @@ If you experience any problems during your use of the [Sketch Map Tool](https://
 
 
 
-#### 1. Scenario and Background
+#### 1. Scenario and Background <a id="1-scenario-and-background"></a>
 
 Map the flood extent, potential emergency shelters and potential hazardous substances in a fictional flooding scenario in Kumasi using Sketch Maps.
 
-#### 1. Data Collection
+#### 1. Data Collection <a id="1-data-collection"></a>
 
 Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip).
 Unzip the .zip folder in order and navigate to `data\Input\marked_sketch_maps`.
@@ -139,20 +139,20 @@ Unzip the .zip folder in order and navigate to `data\Input\marked_sketch_maps`.
 Optional: You find the empty map in the data input folder: `\Sketch_Map_Tool_Exercise_4\data\input\empty_sketch_map`. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
 
-#### 2. Geo-referencing and auto-extraction with the Sketch Map tool
+#### 2. Geo-referencing and auto-extraction with the Sketch Map tool <a id="2-geo-referencing-and-auto-extraction-with-the-sketch-map-tool"></a>
 
 Upload the marked sketch maps back to the tool’s website ( already marked sketch maps: `\Sketch_Map_Tool_Exercise_4\data\input\marked_sketch_maps`). Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
 The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared in the input data folder: `\Sketch_Map_Tool_Exercise_4\data\output\Kumasi_SMT_Ex4.geojson`.
 
-#### 3. Start your QGIS Project
+#### 3. Start your QGIS Project <a id="3-start-your-qgis-project"></a>
 
 Open QGIS and navigate to `Project` -> `New` and click on `Save`. Navigate to where you want to save your project, give it a name and click `Save` again. When working in QGIS always remember to save your project every now and then.
 
 Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_sketch-map_Ex4_1.geotiff") by dragging and dropping them into the layer panel.
 
 
-#### 3. Explore the data
+#### 3. Explore the data <a id="3-explore-the-data"></a>
 
 1. __Orientate in the User Interface__
 
@@ -209,7 +209,7 @@ Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_
     -> Yes, you are right. Unfortunately, one marked polygon did not get detected. This can happen since markings are being detected by machine learning algorithms that can encounter problems in some situations. 
 
 
-### 5. Correct or enhance your data
+### 5. Correct or enhance your data <a id="5-correct-or-enhance-your-data"></a>
 
 
 
@@ -288,7 +288,7 @@ Adding descriptions to the fields
 - Save by clicking on ![](/fig/mActionToggleEditing.png) once more -> `Save`
 
 
-### 6. Visualize your data
+### 6. Visualize your data <a id="6-visualize-your-data"></a>
 
 Now we want to visualize our results and generate a printable map so the results can be shown to third parties in a clear and comprehensible manner. We can now delete the geotiff layer by right-click -> `Remove Layer` since we will be working with the vector marking detections.
 
@@ -369,12 +369,12 @@ You can find Videos along with all the necessary information about making printa
 
 
 
-## Exercise B: Basic visualization of Sketch Map Tool outputs in uMap
+## Exercise B: Basic visualization of Sketch Map Tool outputs in uMap <a id="exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap"></a>
 
 ::::{dropdown} Exercise B: Basic visualization of Sketch Map Tool outputs in uMap
 :open:
 
-### 1. Background Information on UMAP
+### 1. Background Information on UMAP <a id="1-background-information-on-umap"></a>
 
 uMap is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as basemap layer. Neither installation nor registration is necessary. This enables users to quickly gain an intuitive overview of their data.
 Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.
@@ -393,7 +393,7 @@ Users can customize the appearance of the map and share it with others. It's par
 The Geojson output of the Sketch Map Tool cannot be opened and inspected with commonly available tools. If you use the Sketch Map Tool and do not have QGIS installed but quickly want to examine your result, UMAP is a simple and quick way to do so. But be aware as it is an online platform, an internet connection is required.
 ```
 
-#### 2. Data Collection
+#### 2. Data Collection <a id="2-data-collection"></a>
 
 Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip).
 Unzip the .zip folder in order to be able to access the geotiff output.
@@ -401,13 +401,13 @@ Unzip the .zip folder in order to be able to access the geotiff output.
 Optional: You find the empty map in the data input folder: `\Sketch_Map_Tool_Exercise_4\data\input\empty_sketch_map`. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.
 
 
-#### 3. Georeferencing and auto-extraction with the Sketch Map tool
+#### 3. Georeferencing and auto-extraction with the Sketch Map tool <a id="3-georeferencing-and-auto-extraction-with-the-sketch-map-tool"></a>
 
 Upload the marked sketch maps back to the tool’s website (already marked sketch maps:  `\Sketch_Map_Tool_Exercise_4\data\input\marked_sketch_maps`). Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
 The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared in the output data folder: `\Sketch_Map_Tool_Exercise_4\output\Kumasi_SMT_Ex4.geojson`.
 
-### 4. Load your data 
+### 4. Load your data <a id="4-load-your-data"></a>
 
 1. Open the Browser of your choice and navigate to the [uMap Website](https://umap.openstreetmap.fr/en/) and click on the large green button `Create a Map`. Your Map Canvas and User interface will open.
 
@@ -448,7 +448,7 @@ Generally, you can create maps, edit them, and share them with others on uMap wi
 ```
 
 
-### 5. Customize your map
+### 5. Customize your map <a id="5-customize-your-map"></a>
 
 Now that you imported your own data, you are ready to customize your own map in order to show your results to others in a vivid manner.
 In the toolbar on the right hand side you have various options to do so.
@@ -552,7 +552,7 @@ align: center
 Shape properties interface in UMAP
 ```
 
-### 6. Save and publish your map
+### 6. Save and publish your map <a id="6-save-and-publish-your-map"></a>
 
 Your map could now look like this:
 

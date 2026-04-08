@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exporting and Importing Styles
+# Exporting and Importing Styles <a id="exporting-and-importing-styles"></a>
 
 The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (`.qml`-files). Working with `.qml`-files saves you a lot of work and assures consistency between your maps.
 
@@ -17,7 +17,7 @@ Some organisations may also use standardised symbols or colours in their maps.
 
 For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "__Layer properties__", "__Symbology__", and "__Labels__" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.
 
-### Saving or Exporting Styling Settings
+### Saving or Exporting Styling Settings <a id="saving-or-exporting-styling-settings"></a>
 
 1. Open the styling panel and click on `Styles`. A dropdown menu will open with the option to export the layer styling.
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
@@ -40,7 +40,7 @@ When working with similar data (e.g. building types or flooding risk), it is use
 When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
 :::
 
-### Loading a Style into a QGIS-project
+### Loading a Style into a QGIS-project <a id="loading-a-style-into-a-qgis-project"></a>
 
 1. Open the style manager: `Settings` → `Style manager`.
 2. Click on `import/export` and select `import items`.
@@ -60,7 +60,7 @@ You can copy styles from one layer to another:
 :::
 
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 
 ::::{admonition} Test your knowledge

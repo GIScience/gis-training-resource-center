@@ -1,17 +1,17 @@
-# Automation in QGIS (The Model Builder)
+# Automation in QGIS (The Model Builder) <a id="automation-in-qgis-the-model-builder"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## What is the need for Automation?
+## What is the need for Automation? <a id="what-is-the-need-for-automation"></a>
 
 Automation streamlines tasks by reducing the user effort and minimizing errors through less manual repetition. It allows for modularization, enhances reusability and reduces redundancy by repeatedly using a defined set of needed tools. In QGIS it can be achieved by using the "Model Designer".
 
-## The QGIS Model Designer
+## The QGIS Model Designer <a id="the-qgis-model-designer"></a>
 
 The Model Designer is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
-### Using the Model Designer/Graphical Modeler
+### Using the Model Designer/Graphical Modeler <a id="using-the-model-designergraphical-modeler"></a>
 
 - Open the tool under `Processing` -> `Graphical Modeler`
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_opening_model_designer.mp4"></video>
@@ -22,7 +22,7 @@ The Model Designer is a visual tool that allows users to create and edit a workf
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
 
 
-### Model Components
+### Model Components <a id="model-components"></a>
 
 There are two types of model components, that you can use to create workflows:
 
@@ -30,7 +30,7 @@ There are two types of model components, that you can use to create workflows:
 
 **Algorithms**: The processing steps are made up of algorithms or tools available in QGIS, such as clipping, reprojecting, joining by attribute values, etc. 
 
-### Building a Model
+### Building a Model <a id="building-a-model"></a>
 
 **Adding Inputs**
 

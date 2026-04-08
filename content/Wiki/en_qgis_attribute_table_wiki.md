@@ -1,4 +1,4 @@
-# Attribute Table in QGIS
+# Attribute Table in QGIS <a id="attribute-table-in-qgis"></a>
 
 
 
@@ -15,9 +15,9 @@ width: 600 px
 Example of an attribute table in QGIS.
 :::
 
-## Attribute Table-Basics
+## Attribute Table-Basics <a id="attribute-table-basics"></a>
 
-### Open the attribute table and sort features
+### Open the attribute table and sort features <a id="open-the-attribute-table-and-sort-features"></a>
 
 * __Open Attribute Table:__ Right click on your layer and select `Open Attribute Table`.
 * __Sort column:__ Click on a column header.
@@ -25,7 +25,7 @@ Example of an attribute table in QGIS.
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
 
-### Manually select features in the attribute table
+### Manually select features in the attribute table <a id="manually-select-features-in-the-attribute-table"></a>
 
 * __Select:__ Click on the lines of the features. 
 * __Multi Select:__ To select multiple features press <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on MacOS) and select `features`.
@@ -35,19 +35,19 @@ Example of an attribute table in QGIS.
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
-### Unselect feature
+### Unselect feature <a id="unselect-feature"></a>
 
 * __Unselect:__ Click on ![](/fig/mActionDeselectActiveLayer.png) or use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>.
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_unselect.mp4"></video>
 
-### Zoom in on a specific feature
+### Zoom in on a specific feature <a id="zoom-in-on-a-specific-feature"></a>
 
 * __Zoom:__ Right click on your feature and select `Zoom To Feature`. 
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
-## Table view vs Form view
+## Table view vs Form view <a id="table-view-vs-form-view"></a>
 
 QGIS provides two views to easily manipulate data in the attribute table:
 
@@ -59,9 +59,9 @@ To switch between these modes use the ![](/fig/mActionFormView.png) ![](/fig/mAc
 % ADD example image
 ___
 
-## Attribute Table - Data Editing
+## Attribute Table - Data Editing <a id="attribute-table-data-editing"></a>
 
-### Change data in the attribute table
+### Change data in the attribute table <a id="change-data-in-the-attribute-table"></a>
 
 * __Open Attribute table:__ Right click on your layer and select `Open Attribute Table`
 * __Edit Data:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png) 
@@ -71,7 +71,7 @@ ___
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Attributtabel_edit.mp4"></video>
 
-### Add a new column
+### Add a new column <a id="add-a-new-column"></a>
 
 * __Add new column:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png) --> click on ![](/fig/mActionNewAttribute.png), the window `Add Field` will open.
 * __Specify column variables:__ Fill the window and click `OK`.
@@ -94,7 +94,7 @@ ___
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_add_column.mp4"></video>
 
-### Delete columns
+### Delete columns <a id="delete-columns"></a>
 
 * __Delete column:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png)
     - Click on ![](/fig/mActionDeleteAttribute.png)
@@ -108,7 +108,7 @@ To select multiple columns press <kbd>Ctrl</kbd> and select columns.
 
 <video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_delet_column.mp4"></video>
 
-## Buttons and shortcuts of the Attribute Table
+## Buttons and shortcuts of the Attribute Table <a id="buttons-and-shortcuts-of-the-attribute-table"></a>
 
 Below all buttons of the attribute table are listed. 
 

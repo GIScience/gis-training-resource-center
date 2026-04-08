@@ -6,11 +6,11 @@
 :::
 ::::
 
-# Exercises for Module 4
+# Exercises for Module 4 <a id="exercises-for-module-4"></a>
 
 These exercises touch on all the content of Module 4.
 
-## Visualisation
+## Visualisation <a id="visualisation"></a>
 
 | Exercise| Description |Focus Group|Estimated time| 
 | :-------------------- | :----------------- |:----------------- |:----------------- |

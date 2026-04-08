@@ -6,7 +6,7 @@
 :::
 ::::
 
-## Overlay Operations (Clip, Dissolve, Buffer)
+## Overlay Operations (Clip, Dissolve, Buffer) <a id="overlay-operations-clip-dissolve-buffer"></a>
 
 - Overlay operations allow us to combine the geometries of two layers in different ways (see {numref}`overlay_operations`). 
 - The difference to spatial joins is that the __geometries are transformed in the process__, and not primarily the attributes. 
@@ -21,7 +21,7 @@ Visual representation of different overlay operations.
 
 Overlay operations include __Clipping, Buffering, and Dissolving__. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.
 
-### Clip
+### Clip <a id="clip"></a>
 
 - The ![](/fig/mAlgorithmClip.png) `Clip` tool is used to cut a vector layer using the boundaries of another polygon layer. In other words, it extracts a portion of a dataset based on the boundaries of another. 
 - It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, producing a refined dataset.
@@ -47,7 +47,7 @@ name: en_clip_sudan
 Screenshot of the Clip tool with the input data.
 :::
 
-### Exercise: Clipping a roads layer to administrative boundaries
+### Exercise: Clipping a roads layer to administrative boundaries <a id="exercise-clipping-a-roads-layer-to-administrative-boundaries"></a>
 
 Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice toclip the data to the area of interest. In addition to clipping, data can often be filtered, in order to remove data we are not interested in.
 
@@ -66,7 +66,7 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
 :::
 
 
-### Dissolve
+### Dissolve <a id="dissolve"></a>
 
 The ![](/fig/mAlgorithmDissolve.png) `Dissolve`-tool creates a new layer and merges overlapping features from one or two vector layers. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. If you're working with polygons, it will remove shared boundaries between them.
 
@@ -88,7 +88,7 @@ Buffer zones with dissolved (left) and with intact boundaries (right) showing ov
 
 In the next section on __buffers__ we will be using the __dissolve-tool__.
 
-### Buffer
+### Buffer <a id="buffer"></a>
 
 Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in {numref}`buffering_options`.
 
@@ -150,7 +150,7 @@ This is why you’ll need to convert to a local/projected coordinate system to b
 
 ::::
 
-### Exercise: Create 10km buffer around health centres
+### Exercise: Create 10km buffer around health centres <a id="exercise-create-10km-buffer-around-health-centres"></a>
 
 Another example relevant for humanitarian action can be the creation of a map which provides information about the coverage of health sites in the distance of 10 km.
 To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping buffer zones. 
@@ -175,7 +175,7 @@ They are also downloaded and adapted from [Natural Earth Data](https://www.natur
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
 :::
 
-### More advanced clipping operations
+### More advanced clipping operations <a id="more-advanced-clipping-operations"></a>
 
 
 In addition to the standard QGIS operation __Clip__, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.
@@ -227,7 +227,7 @@ Screenshot of the tool Clip vector by mask layer.
 
 :::::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

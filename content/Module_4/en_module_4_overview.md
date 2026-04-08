@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Visualisation of Geodata and Map Making
+# Visualisation of Geodata and Map Making <a id="visualisation-of-geodata-and-map-making"></a>
 
 This chapter focuses on the visualisation and representation of Geodata. The first chapter introduces visual variables, which are the main elements of how to select a symbol to represent geographic information. Visual variables are the graphical means for visually transcribing information. This chapter will also cover how to set up symbols, colours, labels, and styles within QGIS. The second chapter is dedicated to the creation of finished (and printable) maps. In QGIS, this is done in the Print Layout Composer. The last chapter, "Examples of Good Map Design", showcases good map design explaining the good design choices within their context. This chapter also covers some of the common errors in Map design. 
 

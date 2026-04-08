@@ -1,7 +1,7 @@
 <!--THIS IS THE OLD DOCUMENTATION PRIOR TO MARCH 2025-->
 
 
-# QGIS Trigger Workflow for Somalia 
+# QGIS Trigger Workflow for Somalia <a id="qgis-trigger-workflow-for-somalia"></a>
 
 :::{attention}
 
@@ -14,24 +14,24 @@ The QGIS workflow presented in this article was developed in the framework of th
 The workflow consists of 15 steps of which 9 are automated in the form of a QGIS Model. In this article, we explain how all 15 steps can be done manually. In practice one needs to do only 6 steps manually, the rest is done by the QGSI Model.
 The chapter Workflow Automated explains the process and how it is intended in practice. The chapter Workflow Manually is to understand what happens inside of the QGIS Model.
 
-## Background
+## Background <a id="background"></a>
 
 Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
 
 For the development of the Somaliland-Somalia Drought Trigger mechanism various datasources were thoroughly analysed.
 Finally, the main parameters chosen for the trigger based on the historical impact assessment are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <-1 for the SPI12 and >=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.
 
-## Trigger Statement
+## Trigger Statement <a id="trigger-statement"></a>
 
 When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current IPC food insecurity projection reaches at least 0.7 in its 
 derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
 
 
-##  Trigger Input Data
+## Trigger Input Data <a id="trigger-input-data"></a>
 
 For the trigger mechanism to work properly we currently use different datasets: data that we assume to be fixed in the near term, and variable data which describe the datasets that will be checked for triggering on a monthly base. 
 
-### Fixed Data
+### Fixed Data <a id="fixed-data"></a>
 
 By fixed data we mean datasets that are needed for the trigger to work, that will most probably not change in the near term. In the long term these datasets can be adapted easily.
 
@@ -44,7 +44,7 @@ By fixed data we mean datasets that are needed for the trigger to work, that wil
 "We have added the population number for each district derived from Worldpop."-->
 
 
-### Monitoring Data
+### Monitoring Data <a id="monitoring-data"></a>
 
 :::{attention}
 
@@ -62,13 +62,13 @@ In this way upcoming drought events (SPI) that most probably will lead to food i
 
 
 
-### What is the Standarized Precipitation Index (SPI-12)?
+### What is the Standarized Precipitation Index (SPI-12)? <a id="what-is-the-standarized-precipitation-index-spi-12"></a>
 
 The Standardized Precipitation Index (SPI) is a widely used index to characterize meteorological drought.
 The Standardized Precipitation Index (SPI-12) compares the total rainfall received at a particular location during the last 12 months with the long-term rainfall mean (42 years) for the same period of time at that location.
 
 
-### What is IPC Food Security Projection Data?
+### What is IPC Food Security Projection Data? <a id="what-is-ipc-food-security-projection-data"></a>
  
 The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
 The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritized impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
@@ -82,7 +82,7 @@ The classification is based on a convergence of available data and evidence, inc
 | ![](/fig/IPC_Class_5.drawio.svg)| 5. Famine | Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)  |
 
 
-#### IPC Food Security Projection:
+#### IPC Food Security Projection: <a id="ipc-food-security-projection"></a>
 
 
 Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered. 
@@ -97,7 +97,7 @@ The food security classification projections are generally published twice a yea
 Outlook updates are produced almost every month and are also taken into account.
 
 
-#### IPC-Population Weighted Index
+#### IPC-Population Weighted Index <a id="ipc-population-weighted-index"></a>
 
 To better operationalise the IPC data a simple population-weighted index was developed. Relative population numbers are weighted based on the respective IPC class they falling, in order to give the amount of people in a certain IPC class the importance instead of the IPC class only.
 Furthermore, population located in a higher IPC class is more important than population located in a lower class. The index is calculated as follows:
@@ -118,7 +118,7 @@ Where the weights are defined as:
 The IPC Index represents low-population districts equal to high-population districts. No under-representation of high food insecurity of small districts occurs.
 
 
-# Trigger Workflow Automated 
+# Trigger Workflow Automated <a id="trigger-workflow-automated"></a>
 
 As explained in the beginning of this [chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#qgis-trigger-workflow-for-somalia), the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.
 
@@ -136,7 +136,7 @@ To fix these issues, take a look at the subsection on [Troubleshooting the model
 
 :::
 
-## Step 1: Setting up folder structure 
+## Step 1: Setting up folder structure <a id="step-1-setting-up-folder-structure"></a>
 
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
@@ -177,7 +177,7 @@ The Video below shows the process for setting up the folder for december 2023.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 ```
 
-## Step 2: Download of the forecast data
+## Step 2: Download of the forecast data <a id="step-2-download-of-the-forecast-data"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_2_2.png
 ---
@@ -193,7 +193,7 @@ __Tool:__ FileZilla and Internet Browser
 The current plans provide that ICPAC will monthly provide the SPI-12 forecast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
 The main data publications plus the updates of the IPC data amount to the publication of new data almost monthly.
 
-### SPI-12 Data
+### SPI-12 Data <a id="spi-12-data"></a>
 
 
 ICPAC will provide the SPI-12 forecasts on their FTP (File Transfer Protocol). There are different ways to access the FTP-Server. We recommend to install and once set up [FileZilla](https://filezilla-project.org/download.php?platform=win64). This will make your work easily repeatable on a monthly basis.
@@ -221,7 +221,7 @@ align: center
 ---
 ```
 
-### IPC Data
+### IPC Data <a id="ipc-data"></a>
 
 The IPC Projection data is provided and regularly updated on the [IPC Website](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM). 
 To navigate to the latest IPC Projection data on Somalia, navigate to `Latest Analyses` in the top bar > `IPC Analyses` > `Acute Food Insecurity Classification`. Here you look for the latest analysis for Somalia. 
@@ -308,7 +308,7 @@ align: center
 ```
 --->
 
-## Step 3: Loading data into QGIS
+## Step 3: Loading data into QGIS <a id="step-3-loading-data-into-qgis"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_3_1.png
 ---
@@ -342,7 +342,7 @@ This video shows how to setup the QGIS project for April 2022 and how to import 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
 ```
 
-## Step 4: Load the model in the QGIS Model Designer
+## Step 4: Load the model in the QGIS Model Designer <a id="step-4-load-the-model-in-the-qgis-model-designer"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_4_1_automated_model.png
 ---
@@ -375,7 +375,7 @@ align: center
 |Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface|
 
 
-## Step 5: Run the model
+## Step 5: Run the model <a id="step-5-run-the-model"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_5_1_automated_model.png
 ---
@@ -482,7 +482,7 @@ align: center
 ::::
 -->
 
-## Step 6: Visualisation of results
+## Step 6: Visualisation of results <a id="step-6-visualisation-of-results"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
@@ -582,7 +582,7 @@ Remember the [layer concept](https://giscience.github.io/gis-training-resource-c
 
 
 
-## Step 7: Making the Print Map
+## Step 7: Making the Print Map <a id="step-7-making-the-print-map"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_15_1.png
 ---
@@ -623,7 +623,7 @@ You can also adapt the template to your needs and preferences. You can find help
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 ```
 
-## Step 8: Exporting the Map 
+## Step 8: Exporting the Map <a id="step-8-exporting-the-map"></a>
 
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_16_1.png
@@ -672,7 +672,7 @@ align: center
 ---
 ```
 
-## Troubleshooting the Model
+## Troubleshooting the Model <a id="troubleshooting-the-model"></a>
 
 In some cases, for example when the data structure of the input layers change, the model can break. To make sure that the model functions correctly, follow these troubleshooting steps. In most cases, the problems are happening at the input stage (yellow boxes).
 
@@ -710,7 +710,7 @@ widht: 750 px
 ```
 
 
-# Trigger Workflow Manually 
+# Trigger Workflow Manually <a id="trigger-workflow-manually"></a>
 
 :::{attention}
 
@@ -720,7 +720,7 @@ The updated workflow will be added soon. For now, please use the automated workf
 
 :::
 
-## Step 1: Setting up folder structure 
+## Step 1: Setting up folder structure <a id="step-1-setting-up-folder-structure-2"></a>
 
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_1_1.png
@@ -761,7 +761,7 @@ The Video below shows the process for setting up the folder for decmber 2023.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 ```
 
-## Step 2: Download of the forecast data
+## Step 2: Download of the forecast data <a id="step-2-download-of-the-forecast-data-2"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_2_2.png
 ---
@@ -776,7 +776,7 @@ __Tool:__ FileZilla and Interent Browser
 The current plans provide that ICPAC will monthly provide the SPI-12 forcast whereas the IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
 The main data publications plus the updates of the IPC data amount to the publication of new data almost monthly.
 
-### SPI-12 Data
+### SPI-12 Data <a id="spi-12-data-2"></a>
 
 
 ICPAC will provide the SPI-12 forecasts on their FTP (File Transfer Protocol). There are different ways to access the FTP-Server. We recommend to install and once set up [FileZilla](https://filezilla-project.org/download.php?platform=win64). This will make your work easily repeatable on a monthly basis.
@@ -804,9 +804,9 @@ align: center
 ---
 ```
 
-### IPC Data
+### IPC Data <a id="ipc-data-2"></a>
 
-### IPC Data
+### IPC Data <a id="ipc-data-3"></a>
 
 The IPC Projection data is provided and regularly updated on the [IPC Website](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1159510/?iso3=SOM). 
 To navigate to the latest IPC Projection data on Somalia, navigate to `Latest Analyses` in the top bar > `IPC Analyses` > `Acute Food Insecurity Classification`. Here you look for the latest analysis for Somalia. 
@@ -921,7 +921,7 @@ align: center
 ```
 -->
 
-## Step 3: Loading data into QGIS
+## Step 3: Loading data into QGIS <a id="step-3-loading-data-into-qgis-2"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_3_1.png
 ---
@@ -956,7 +956,7 @@ This video shows how to setup the QGIS project for April 2022 and how to import 
 ```
 
 
-## Step 4: Extracting ML1 and ML2 from the GeoJSON layer
+## Step 4: Extracting ML1 and ML2 from the GeoJSON layer <a id="step-4-extracting-ml1-and-ml2-from-the-geojson-layer"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_4_1_NEW.png
 ---
@@ -992,7 +992,7 @@ __Tool:__ "Extract by Attributes"
     ```
 `````
 
-## Step 5: Fixing the Geometries for the ML 1 & ML 2 layers
+## Step 5: Fixing the Geometries for the ML 1 & ML 2 layers <a id="step-5-fixing-the-geometries-for-the-ml-1-and-ml-2-layers"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_5_1_NEW.png
 ---
@@ -1032,7 +1032,7 @@ __Tool:__ Fix geometries
 `````
 
 
-## Step 6: Intersection of ML 1 & ML 2 data with the district polygons 
+## Step 6: Intersection of ML 1 & ML 2 data with the district polygons <a id="step-6-intersection-of-ml-1-and-ml-2-data-with-the-district-polygons"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_6_1_NEW.png
 ---
@@ -1084,7 +1084,7 @@ The video shows the whole process on the example of ML 1.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 ```
 
-## Step 7: Calculation of Population per Intersection Polygon
+## Step 7: Calculation of Population per Intersection Polygon <a id="step-7-calculation-of-population-per-intersection-polygon"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_7_1_NEW.png
 ---
@@ -1132,7 +1132,7 @@ __Result:__ The result should be the “ML1_zonal_statistic” and “ML2_zonal_
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 ```
 
-## Step 8: Weighting of the Population based on IPC-Phase
+## Step 8: Weighting of the Population based on IPC-Phase <a id="step-8-weighting-of-the-population-based-on-ipc-phase"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_8_1_NEW.png
 ---
@@ -1203,7 +1203,7 @@ The video shows the whole process with the the example of ML 1.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
 ```
 
-## Step 9: Adding the total district population to Intersection Polygons
+## Step 9: Adding the total district population to Intersection Polygons <a id="step-9-adding-the-total-district-population-to-intersection-polygons"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_9_1_NEW.png
 ---
@@ -1254,7 +1254,7 @@ __Result:__ Now you should have to new polygon layer named “ML1_join” and ML
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_7_join.mp4"></video>
 ```
 
-## Step 10: Calculation of the Population Proportion per Intersection Polygon
+## Step 10: Calculation of the Population Proportion per Intersection Polygon <a id="step-10-calculation-of-the-population-proportion-per-intersection-polygon"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_10_1_NEW.png
 ---
@@ -1298,7 +1298,7 @@ The video shows the whole process with the the example of ML 1.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 ```
 
-## Step 11: Calculate the IPC Index per District
+## Step 11: Calculate the IPC Index per District <a id="step-11-calculate-the-ipc-index-per-district"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1_NEW.png
 ---
 width: 1000px
@@ -1343,7 +1343,7 @@ __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_locat
 ```
 
 
-## Step 12.: Join ML1 and ML2
+## Step 12.: Join ML1 and ML2 <a id="step-12-join-ml1-and-ml2"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_12_1_NEW.png
 ---
 width: 1000px
@@ -1388,7 +1388,7 @@ __Result:__ Layer with the districts of Somalia and the IPC-Index of each distri
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
 ```
 
-## Step 13: Calculation of SPI-12 Mean per District
+## Step 13: Calculation of SPI-12 Mean per District <a id="step-13-calculation-of-spi-12-mean-per-district"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1_NEW.png
 ---
@@ -1433,7 +1433,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
 ```
 
-## Step 14: Join SPI-12 Mean to the IPC Index
+## Step 14: Join SPI-12 Mean to the IPC Index <a id="step-14-join-spi-12-mean-to-the-ipc-index"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1_NEW.png
 ---
@@ -1479,7 +1479,7 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-## Step 15: Evaluate the Trigger Activation 
+## Step 15: Evaluate the Trigger Activation <a id="step-15-evaluate-the-trigger-activation"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_15_1_NEW.png
 ---
@@ -1534,7 +1534,7 @@ align: center
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 ```
 
-## Step 16: Visualisation of results
+## Step 16: Visualisation of results <a id="step-16-visualisation-of-results"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_16_1_NEW.png
 ---
 width: 1000px
@@ -1633,7 +1633,7 @@ Remember the [layer concept](https://giscience.github.io/gis-training-resource-c
 
 
 
-## Step 17: Making the print map
+## Step 17: Making the print map <a id="step-17-making-the-print-map"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_17_1_NEW.png
 ---
@@ -1674,7 +1674,7 @@ You can also adapt the template to your needs and preferences. You can find help
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 ```
 
-## Step 18: Exporting the Map 
+## Step 18: Exporting the Map <a id="step-18-exporting-the-map"></a>
 
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_18_1_NEW.png
@@ -1726,7 +1726,7 @@ align: center
 
 __Step 1 to Step 3 are the same as with the new model.__
 
-## Step 4: Intersection of ML 1 & ML 2 data with the district polygons 
+## Step 4: Intersection of ML 1 & ML 2 data with the district polygons <a id="step-4-intersection-of-ml-1-and-ml-2-data-with-the-district-polygons"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_4_1.png
 ---
@@ -1777,7 +1777,7 @@ The video shows the whole process on the example of ML 1.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 ```
 
-## Step 5: Calculation of Population per Intersection Polygon
+## Step 5: Calculation of Population per Intersection Polygon <a id="step-5-calculation-of-population-per-intersection-polygon"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_5_1.png
 ---
@@ -1825,7 +1825,7 @@ __Result:__ The result should be the “ML1_zonal_statistic” and “ML2_zonal_
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 ```
 
-## Step 6: Weighting of the Population based on IPC-Phase
+## Step 6: Weighting of the Population based on IPC-Phase <a id="step-6-weighting-of-the-population-based-on-ipc-phase"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_6_1.png
 ---
@@ -1896,7 +1896,7 @@ The video shows the whole process with the the example of ML 1.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
 ```
 
-## Step 7: Adding the total district population to Intersection Polygons
+## Step 7: Adding the total district population to Intersection Polygons <a id="step-7-adding-the-total-district-population-to-intersection-polygons"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_7_1.png
 ---
@@ -1947,7 +1947,7 @@ __Result:__ Now you should have to new polygon layer named “ML1_join” and ML
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_7_join.mp4"></video>
 ```
 
-## Step 8: Calculation of the Population Proportion per Intersection Polygon
+## Step 8: Calculation of the Population Proportion per Intersection Polygon <a id="step-8-calculation-of-the-population-proportion-per-intersection-polygon"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_8_1.png
 ---
@@ -1991,7 +1991,7 @@ The video shows the whole process with the the example of ML 1.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 ```
 
-## Step 9: Calculate the IPC Index per District
+## Step 9: Calculate the IPC Index per District <a id="step-9-calculate-the-ipc-index-per-district"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_9_1.png
 ---
 width: 1000px
@@ -2036,7 +2036,7 @@ __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_locat
 ```
 
 
-## Step 10.: Join ML1 and ML2
+## Step 10.: Join ML1 and ML2 <a id="step-10-join-ml1-and-ml2"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_10_1.png
 ---
 width: 1000px
@@ -2081,7 +2081,7 @@ __Result:__ Layer with the districts of Somalia and the IPC-Index of each distri
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
 ```
 
-## Step 11: Calculation of SPI-12 Mean per District
+## Step 11: Calculation of SPI-12 Mean per District <a id="step-11-calculation-of-spi-12-mean-per-district"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_11_1.png
 ---
 width: 1000px
@@ -2125,7 +2125,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
 ```
 
-## Step 12: Join SPI-12 Mean to the IPC Index
+## Step 12: Join SPI-12 Mean to the IPC Index <a id="step-12-join-spi-12-mean-to-the-ipc-index"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_12_1.png
 ---
 width: 1000px
@@ -2170,7 +2170,7 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
-## Step 13: Evaluate the Trigger Activation 
+## Step 13: Evaluate the Trigger Activation <a id="step-13-evaluate-the-trigger-activation"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_13_1.png
 ---
 width: 1000px
@@ -2224,7 +2224,7 @@ align: center
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 ```
 
-## Step 14: Visualisation of results
+## Step 14: Visualisation of results <a id="step-14-visualisation-of-results"></a>
 ```{figure} /fig/Drought_EAP_Worklow_Step_14_1.png
 ---
 width: 1000px
@@ -2323,7 +2323,7 @@ Remember the [layer concept](https://giscience.github.io/gis-training-resource-c
 
 
 
-## Step 15: Making the print map
+## Step 15: Making the print map <a id="step-15-making-the-print-map"></a>
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_15_1.png
 ---
@@ -2364,7 +2364,7 @@ You can also adapt the template to your needs and preferences. You can find help
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 ```
 
-## Step 16: Exporting the Map 
+## Step 16: Exporting the Map <a id="step-16-exporting-the-map"></a>
 
 
 ```{figure} /fig/Drought_EAP_Worklow_Step_16_1.png

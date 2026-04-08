@@ -1,6 +1,6 @@
-# Sketch Map Tool Exercise 5 - Heat Map Visualization
+# Sketch Map Tool Exercise 5 - Heat Map Visualization <a id="sketch-map-tool-exercise-5-heat-map-visualization"></a>
 
-## Characteristics of the exercise 
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of this exercise:__
@@ -11,17 +11,17 @@ Learn how to analyze your Sketch Map Tool Outputs by creating a heatmap.
 
 ::::{grid} 2
 :::{grid-item-card}
-#### Type of trainings exercise:
+#### Type of trainings exercise: <a id="type-of-trainings-exercise"></a>
 This exercise can be used in online and presence training and is focused on an hands-on experience with QGIS spatial analysis tools.
 
 :::
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
+#### Focus group (GIS-Knowledge Level) <a id="focus-group-gis-knowledge-level"></a>
 Medium-Advanced level (participants have worked with QGIS before)
 
-#### Phase of participatory /community mapping 
+#### Phase of participatory /community mapping <a id="phase-of-participatory-community-mapping"></a>
 Analysing participatory mapping results
 :::
 ::::
@@ -30,14 +30,14 @@ Analysing participatory mapping results
 
 :::{grid-item-card}
 
-#### Estimated time demand for the exercise.
+#### Estimated time demand for the exercise. <a id="estimated-time-demand-for-the-exercise"></a>
 
 1 hour
 
 :::
 
 :::{grid-item-card}
-### Available data
+### Available data <a id="available-data"></a>
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Download the data for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip) and unzip the folder
 - In the data subfolder (`\data\input`), you will find the data you need to start the exercise (created raw map & 5 pre-marked and photographed maps). You will also find de geodata of the results (`\data\output`) and the intermediate result(`\data\temp`).
@@ -47,10 +47,10 @@ Analysing participatory mapping results
 ::::
 
 
-## Instructions for the trainers 
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar with the provided material for the exercise and the Sketch Map Tool in general. 
@@ -62,7 +62,7 @@ if you want to create additional or individual marked map examples you can use t
 
 
 
-### Conduct the training:  
+### Conduct the training: <a id="conduct-the-training"></a>
 __Introduction:__ 
 - Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand. 
 - Provide access to the needed material.
@@ -77,9 +77,9 @@ __Wrap up:__
 ::::
 
 
-### Exercise: Heat Map Visualization: Past Flood Delineation
+### Exercise: Heat Map Visualization: Past Flood Delineation <a id="exercise-heat-map-visualization-past-flood-delineation"></a>
 
-### Scenario and Background
+### Scenario and Background <a id="scenario-and-background"></a>
 
 Flood maps hold immense importance, especially in less privileged regions with limited regular surveying by official bodies/institutions. In these areas, where access to sophisticated technology and resources is often limited, flood maps provide a vital resource for understanding and managing flood risks. They empower communities to identify vulnerable areas, plan emergency response strategies, and implement mitigation measures. Flood maps facilitate informed decision-making, enabling communities to allocate resources effectively, prioritizing infrastructure development, and implementing early warning systems. By filling the gap in official surveying, flood maps play a crucial role in enhancing resilience, minimizing damages, and safeguarding lives and livelihoods in these vulnerable regions.
 
@@ -87,7 +87,7 @@ The sketch map tool is a valuable tool for delineating flood areas within a comm
 
 
 
-#### 1. Data Collection
+#### 1. Data Collection <a id="1-data-collection"></a>
 
 Imagine you were on a field trip in order to talk to people in the affected areas and let them draw maps about flood prone areas in their community. You are now back to your office and have 5 different flood maps that you have already scanned in. Please download the prepared maps [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_5.zip).
 
@@ -96,13 +96,13 @@ Optional: You find the empty map [here](https://nexus.heigit.org/repository/gis-
 
 If you experience any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/), please take a look at the [help page](https://sketch-map-tool.heigit.org/help).
 
-#### 2. Georeferencing and auto-extraction with the Sketch Map tool
+#### 2. Georeferencing and auto-extraction with the Sketch Map tool <a id="2-georeferencing-and-auto-extraction-with-the-sketch-map-tool"></a>
 
 __Upload the sketch maps__ back to the tool’s website: Head to [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/) and choose `Digitize your Sketch maps` on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.
 
 The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared [here]().
 
-#### 3. Start your QGIS Project
+#### 3. Start your QGIS Project <a id="3-start-your-qgis-project"></a>
 
 Open QGIS and __load your vector files__ by dragging and dropping them into the layer panel. __Explore__ the file by opening the attribute table. 
 
@@ -113,7 +113,7 @@ When you upload several marked Sketch Maps simultaneously, you will get one vect
 Your vectorized sketches in the geojson format contain a feature for every extracted .png/.jpeg and markup color. In general, each marking in your sketch map will appear in the attribute table as one row, containing the name of your sketch map as well as the detected colour of the respective marking. Now, we want to visualise the degree of overlapping flood areas in order to create a heatmap. Generating a heatmap from my SKetch Map results helps us to identify patterns in the spatial data, in this case it will show us the overlapping of participants markings and help us identifying most at risk areas. For this purpose, we have to convert every feature to a distinct raster and then sum up the overlapping pixels in a new raster. In QGIS, you can do this in the following steps:
 
 
-#### 4. Rasterize
+#### 4. Rasterize <a id="4-rasterize"></a>
 
 
 1. Add a column to your vector:
@@ -182,7 +182,7 @@ Output Rasterize
 ```
 
 
-#### 5. Raster Calculator
+#### 5. Raster Calculator <a id="5-raster-calculator"></a>
 
 We will now sum up all our output rasters:
 
@@ -213,7 +213,7 @@ Output sum of rasters
 
 Based on the __sum of the rasters__, we have now created just one raster that will have a __pixel value of 0__ if no flooding been reported; a __pixel value of 1__ if one person/sketch map reported a flood, a __pixel value of 2__ if two persons/sketch maps reported a flood at that location, and so on.
 
-#### 6. Visualization
+#### 6. Visualization <a id="6-visualization"></a>
 
 In order to visualize the result, right-click on your layer and navigate to `Properties` -> `Symbology`. 
 In the `Band Rendering` section, you can for example choose as `Render Type` "Singleband pseudocolor", and, next to `Color ramp`, choose a color ramp of your choice.

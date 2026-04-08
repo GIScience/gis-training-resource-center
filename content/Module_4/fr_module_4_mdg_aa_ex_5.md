@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercice 2 : Création rapide de cartes – Aina utilise des modèles de carte
+# Exercice 2 : Création rapide de cartes – Aina utilise des modèles de carte <a id="exercice-2-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte"></a>
 
-## Caractéristiques
+## Caractéristiques <a id="caracteristiques"></a>
 
 
 ::::{grid} 2
@@ -66,12 +66,12 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 
 :::
 
-## Instruction pour les formateurs
+## Instruction pour les formateurs <a id="instruction-pour-les-formateurs"></a>
 
 
 :::{dropdown} __Espace Formateurs (Trainers Corner)__ 
 
-### Préparer la formation
+### Préparer la formation <a id="preparer-la-formation"></a>
 
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
@@ -79,7 +79,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
-### Animer la formation
+### Animer la formation <a id="animer-la-formation"></a>
 
 __Introduction:__
 
@@ -92,7 +92,7 @@ __Exercice guidée:__
 - Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.
 - Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.
 
-### Fin de la formation
+### Fin de la formation <a id="fin-de-la-formation"></a>
 
 - Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.
 - Laissez un moment pour des questions ouvertes.
@@ -100,7 +100,7 @@ __Exercice guidée:__
 :::
 
 
-## Téléchargement des données pour cet exercice
+## Téléchargement des données pour cet exercice <a id="telechargement-des-donnees-pour-cet-exercice"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_7_AA_MDG_task_5-20250825T143511Z-1-001.zip
@@ -111,7 +111,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 
 
 
-## Tâches:
+## Tâches: <a id="taches"></a>
 
 Après tout le travail d’analyse et de stylisation, Aina est prête à **partager ses résultats**. Mais créer une 
 carte professionnelle à partir de zéro à chaque fois serait long et répétitif.  
@@ -218,7 +218,7 @@ Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et *
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
-### ✅ Liste de vérification finale
+### ✅ Liste de vérification finale <a id="liste-de-verification-finale"></a>
 
 | Tâche                                           | Fait |
 |------------------------------------------------|------|

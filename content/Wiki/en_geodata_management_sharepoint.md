@@ -1,16 +1,16 @@
-# Geodata Management with Sharepoint
+# Geodata Management with Sharepoint <a id="geodata-management-with-sharepoint"></a>
 
 
 Small organisations often struggle to keep geospatial data consistent and accessible.  
 A simple, well-structured geodata hub helps **standardise GIS work**, **prepare for responses**, and **onboard new staff** efficiently.  
 This guide outlines a practical approach using **SharePoint**, which many organisations already use for document management.
 
-## Purpose & Audience
+## Purpose & Audience <a id="purpose-and-audience"></a>
 - **Who**: Small organisations starting or formalising GIS work.
 - **Why**: Establish a lightweight, standardised structure for **data, projects, and templates**.
 - **Outcome**: Faster onboarding, fewer broken links, consistent maps and analyses.
 
-### The role of the Data Steward
+### The role of the Data Steward <a id="the-role-of-the-data-steward"></a>
 
 A **data steward** is a designated person (or small team) responsible for:
 - Approving and uploading new datasets into `10_Data` and `20_Raster_Data/`.  
@@ -24,12 +24,12 @@ Having a clear steward role prevents accidental overwrites and ensures that all 
 If your organisation outgrows this setup (many editors, heavy edits, very large rasters), keep SharePoint for distribution and documentation, and add a spatial database (e.g., PostGIS) for multi-user editing.
 :::
 
-## Example Folder Structures
+## Example Folder Structures <a id="example-folder-structures"></a>
 
 Below are three possible structures, from simple to more advanced.  
 Choose the one that matches your organisation’s size and capacity.
 
-### 1. Minimalist Setup (very small teams)
+### 1. Minimalist Setup (very small teams) <a id="1-minimalist-setup-very-small-teams"></a>
 ```
 GIS_Hub/
 │
@@ -63,7 +63,7 @@ GIS_Hub/
 - Dates can be optional here, since the dataset volume is low.  
 
 ---
-### 2. Balanced Setup (general small organisations)
+### 2. Balanced Setup (general small organisations) <a id="2-balanced-setup-general-small-organisations"></a>
 
 ```
 GIS_Hub/
@@ -115,7 +115,7 @@ To keep files easy to find and avoid duplication, use a consistent naming patter
   *Example:* `HealthAssessment_Report_SOM_202503_v1.pdf`  
 
 
-### 3. Extended Setup (with EAP workflows)
+### 3. Extended Setup (with EAP workflows) <a id="3-extended-setup-with-eap-workflows"></a>
 ```
 GIS_Hub/
 │
@@ -188,14 +188,14 @@ Below are suggested conventions with examples:
 
 
 
-## Advantages, Limitations, and Permissions
+## Advantages, Limitations, and Permissions <a id="advantages-limitations-and-permissions"></a>
 
 When setting up a geodata hub in SharePoint, there are clear benefits, but also some important boundaries to be aware of.  
 Below is a short overview of the **advantages**, the **limitations**, and how to handle **permissions** effectively.
 
 ---
 
-### Advantages
+### Advantages <a id="advantages"></a>
 
 Using SharePoint for geodata management gives small organisations a strong starting point:
 
@@ -207,7 +207,7 @@ Using SharePoint for geodata management gives small organisations a strong start
 
 ---
 
-### Limitations
+### Limitations <a id="limitations"></a>
 
 However, SharePoint is not a GIS database, and this introduces some constraints:
 
@@ -220,7 +220,7 @@ Think of SharePoint as a **distribution and coordination hub**.
 For **multi-user editing** or **large-scale storage**, you’ll need a database backend.
 :::
 
-### Permissions
+### Permissions <a id="permissions"></a>
 
 Managing access well is essential to protect authoritative data while allowing collaboration.  
 A good practice is to differentiate between **authoritative data**, **working data**, and **project outputs**:
@@ -241,18 +241,18 @@ Instead of assigning rights to individuals, create SharePoint groups such as:
 This makes management much easier when staff join or leave the organisation.  
 
 
-## Metadata & Cataloguing
+## Metadata & Cataloguing <a id="metadata-and-cataloguing"></a>
 
 Even if your files are well-organised in folders, it can still be hard for new staff to know **which dataset is the latest** or **what each file is used for**.  
 This is where *metadata* comes in. In SharePoint, you can add extra information fields (columns) to your libraries. These fields make it easy to filter, sort, and search across all data — without relying only on file names.
 
-### Why use metadata?
+### Why use metadata? <a id="why-use-metadata"></a>
 - **Clarity**: Staff can quickly see which dataset is authoritative, draft, or outdated.  
 - **Consistency**: Everyone uses the same standard fields.  
 - **Search & filter**: Instead of browsing dozens of folders, users can filter by country, hazard, or date updated.  
 - **Documentation**: Key context (like source and update cycle) is stored with the file itself, not just in someone’s memory.
 
-### Suggested metadata fields
+### Suggested metadata fields <a id="suggested-metadata-fields"></a>
 When creating or editing a SharePoint library, you can add simple columns such as:
 - **Theme** (e.g. Boundaries, Health, Logistics, Hazards)  
 - **Location / ISO3 code** (e.g. MDG, SOM, region name)  
@@ -269,7 +269,7 @@ For example: *Theme*, *Location*, *Source*, and *DateUpdated*. More can be added
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qB2acPUSF_o?si=JyjVHEqcTNHqTKUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Implementation Guide (Quick Start)
+## Implementation Guide (Quick Start) <a id="implementation-guide-quick-start"></a>
 
 Setting up a geodata hub in SharePoint is straightforward.  
 Follow these steps to get started:
@@ -317,7 +317,7 @@ Start small. Don’t upload everything at once. Begin with the datasets most oft
 You can expand later as the team gets used to the system.
 :::
 
-## Standard Operating Procedures (SOPs)
+## Standard Operating Procedures (SOPs) <a id="standard-operating-procedures-sops"></a>
 
 A clear folder structure is only useful if everyone applies it consistently.  
 To avoid confusion and data loss, organisations should agree on a few simple rules.  

@@ -1,9 +1,9 @@
-# Spatial Queries
+# Spatial Queries <a id="spatial-queries"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Manual selection
+## Manual selection <a id="manual-selection"></a>
 
 - In the toolbar, select the ![](/fig/selection_toolbar_feature_selection.png) `Select Features` tool.
 - Select features individually by clicking on a feature.
@@ -19,7 +19,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 :::
 
 
-## Select by Location
+## Select by Location <a id="select-by-location"></a>
 
 - QGIS lets you select features based on their location using the tool `Select by Location`.
 - The tool uses spatial queries to select features. These look at the spatial relations between a set of features. 
@@ -38,7 +38,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 :::
 
 
-## Export Selection
+## Export Selection <a id="export-selection"></a>
 
 - Once selected, you can further manipulate the features by, for example, exporting them to a new layer:
     - <kbd>Right-click</kbd> on the layer with the selected features -> `Export` -> `Save selected features as..`

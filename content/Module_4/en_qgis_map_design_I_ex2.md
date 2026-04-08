@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan
+# Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan <a id="exercise-2-creating-a-flood-situation-map-of-larkana-pakistan"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -70,7 +70,7 @@ name: Map Larkama
 The map we will be making in this exercise (Source: HeiGIT).
 :::
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
@@ -94,7 +94,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 Keep your data management clean by creating a standard folder structure on your computer for your QGIS-projects and geodata. 
 :::
 
-## Task 1: Preparing the Data
+## Task 1: Preparing the Data <a id="task-1-preparing-the-data"></a>
 
 
 1. Create a new QGIS-project and save it to your exercise folder. Give it a clear name, e.g. "Larkana_flood_response_map".
@@ -112,7 +112,7 @@ Keep your data management clean by creating a standard folder structure on your 
     - Navigating to the menu bar → `Layer` → `Add Layer` → `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
 
 
-## Task 2: Symbolisation
+## Task 2: Symbolisation <a id="task-2-symbolisation"></a>
 
 Creating a good map involves selecting appropriate icons and colours to transmit the information in your data. 
 The first step into creating a comprehensible map is to order the layers logically so you can see the information:
@@ -127,7 +127,7 @@ For example, the layer `Roads_Larkana` contains too many roads for a map on a na
 
 Let's go through the layers one by one and visualize them in a meaningful way.
 
-### __Healthsites:__
+### __Healthsites:__ <a id="healthsites"></a>
 
 In the __layers panel__, right click on the layer `Health_Facilities_Flood_2024_AOI`  `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 Let's create our own customized symbol for healthcare facilities:
@@ -163,7 +163,7 @@ width: 450 px
 You can use several symbol layers to create a complex symbol in QGIS 3.36.
 :::
 
-### __Roads:__
+### __Roads:__ <a id="roads"></a>
 
 The roads dataset contains a lot of information that we do not necessarily want to display on our final map. We can categorise the data and hide the unwanted information. We already identified the important roads in the previous exercise: The roads where __"highway"__ equals `motorway`, `primary`, `secondary`, `trunk`. These roads are the __major roads__. 
 
@@ -196,7 +196,7 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 
 * Once you are done, click `Apply` and `OK` to close the symbology window.
 
-### __Blocked Roads Points:__
+### __Blocked Roads Points:__ <a id="blocked-roads-points"></a>
 
 * Right-click on the layer __“PAK_flood_2024_blocked_road”__ in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 * Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads. 
@@ -212,7 +212,7 @@ We can categorise the roads and then select the relevant roads to be displayed. 
     :::   
 
 
-### __Airports:__
+### __Airports:__ <a id="airports"></a>
 
 In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
@@ -270,7 +270,7 @@ Let's symbolise the airport with a plane icon, so we can identify it quickly.
 * Click `Apply`, then `Ok`.
 
 
-### __Flood Extent:__
+### __Flood Extent:__ <a id="flood-extent"></a>
 
 Open the __Symbology Tab__ for the `PAK_2024_Minimum_Flood_Extend_reprojected`-layer. Choose a light-blue as color and adjust the opacity to about 30%.
 
@@ -282,7 +282,7 @@ width: 550 px
 Adjusting the symbology to indicate the flooded area. 
 :::
 
-## Task 3: Creating the print layout
+## Task 3: Creating the print layout <a id="task-3-creating-the-print-layout"></a>
 
 Once you are happy with the symbolization and colours of your data, the next step is to create a __print layout__. The print layout is where you put all the elements from you map together with additional information to create a comprehensive map. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
@@ -392,7 +392,7 @@ name: Map Larkama
 Your final map could look something like this.
 :::
 
-### Bonus Exercise
+### Bonus Exercise <a id="bonus-exercise"></a>
 
 If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the first map you have added to the print layout will not be affected by these changes. Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.  
 

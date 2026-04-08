@@ -6,16 +6,16 @@
 :::
 ::::
 
-# Spatial data processing
+# Spatial data processing <a id="spatial-data-processing"></a>
 
-## Introduction
+## Introduction <a id="introduction"></a>
 
 Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
 
 We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#geometric-operators)__— also called geometrical predicates in QGIS. 
 The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid. 
 
-## Spatial Relationships
+## Spatial Relationships <a id="spatial-relationships"></a>
 
 | __Spatial Relationship__ | __Description__ | __*Humanitarian Example*__ |
 | ------------------------ | --------------- | -------------------------- |
@@ -46,7 +46,7 @@ Different spatial geoprocessing tools. Source: Adapted from [Saylor Academy](htt
 In this chapter, we will first explore __spatial joins__. Spatial joins, for example, allow us to import attributes from one layer to another on the basis of their location in relation to geofeatures in another layer. These Spatial relationships can also be used to select features of a layer. Furthermore, we will go over the spatial processing tools __buffer__, __clip__, and __dissolve__. These operations allow us to combine geometries from two layers in various ways (see {numref}`en_module5_spatial_geodataprocessing`).
 
 
-## Spatial joins
+## Spatial joins <a id="spatial-joins"></a>
 
 Joins are ways to combine two different data layers. In general, there are two types of joins: __non-spatial joins__ and __spatial joins__. 
 
@@ -78,7 +78,7 @@ A building footprint layer combined with a flood extent layer. By joining them, 
 
 ::::
 
-## Geometrical operators
+## Geometrical operators <a id="geometrical-operators"></a>
 
 Spatial joins rely on the geometrical operators. In the tabs below, you can find the different geometrical operators available in QGIS and how they affect the data processing. 
 
@@ -127,7 +127,7 @@ name: en_select_by_location
 Looking for spatial relations between layers <br /> (Source: [QGIS Documentation](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location), Version 3.28)
 :::
 
-### Exercise: Performing a spatial join
+### Exercise: Performing a spatial join <a id="exercise-performing-a-spatial-join"></a>
 
 
 :::{admonition} Now it's your turn!
@@ -199,7 +199,7 @@ The different colours for the points indicate that they are located in a differe
 :::
 
 
-### More spatial join-tools in QGIS
+### More spatial join-tools in QGIS <a id="more-spatial-join-tools-in-qgis"></a>
 
 By default, QGIS provides three different tools to perform spatial joins. 
 
@@ -245,7 +245,7 @@ A detailed description of the functions and settings of these tools can be found
 :::
 
 
-### Exercise: Calculate sum of affected population and flooded area for the Area of interest
+### Exercise: Calculate sum of affected population and flooded area for the Area of interest <a id="exercise-calculate-sum-of-affected-population-and-flooded-area-for-the-area-of-interest"></a>
 
 
 In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. This information can be refined from a nationwide dataset to provide specific numbers for individual districts or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometers and the affected population for Unity State, South Sudan. To accomplish this, we will utilize the __Join attributes by location (summary)__ tool.
@@ -267,7 +267,7 @@ In the aftermath of flooding events, data on the affected population and the ext
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

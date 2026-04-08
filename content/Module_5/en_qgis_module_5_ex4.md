@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercise 4: Security Peshawar
+# Exercise 4: Security Peshawar <a id="exercise-4-security-peshawar"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -66,18 +66,18 @@ __Relevant wiki articles:__
 :::
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -96,7 +96,7 @@ __Wrap up:__
 - Leave some time for open questions. 
 
 :::
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip
@@ -111,11 +111,11 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 |20240605_PAK_MPI.xlsx|Pakistan Multi Poverty Index (MPI)|Pakistan Bureau of Statistics|Pakistan Bureau of Statistics|
 |AOI_Peshawar.gpkg|Area of Interest (AOI) around Peshawar|||
 
-## Preparation
+## Preparation <a id="preparation"></a>
 
 - Create a new QGIS project and save it into the exercise folder.
 
-## Task 1: Geolocate security-related information of the last days
+## Task 1: Geolocate security-related information of the last days <a id="task-1-geolocate-security-related-information-of-the-last-days"></a>
 
 :::{card} Context: 
 In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
@@ -220,7 +220,7 @@ Congratulations! We now have a map to help the team on the ground stay safe.
 
 <!--ADD: Images of the different steps and results.-->
 
-## Task 2: Load Excel File containing conflict data into QGIS
+## Task 2: Load Excel File containing conflict data into QGIS <a id="task-2-load-excel-file-containing-conflict-data-into-qgis"></a>
 
 :::{card}
 __Context:__
@@ -284,7 +284,7 @@ Number of conflict events per thesil.
 :::
 
 
-## Task 3: MPI data 
+## Task 3: MPI data <a id="task-3-mpi-data"></a>
 
 :::{card}
 __Context:__

@@ -1,4 +1,4 @@
-# Cómo planificar y estructurar una sesión de capacitación en GIS
+# Cómo planificar y estructurar una sesión de capacitación en GIS <a id="como-planificar-y-estructurar-una-sesion-de-capacitacion-en-gis"></a>
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
@@ -7,11 +7,11 @@ Un día de capacitación bien estructurado proporciona un marco cohesivo para im
 
 En esta sección, exploraremos los componentes clave para estructurar una sesión de capacitación en GIS, incluyendo la programación, la secuencia de sesiones, los descansos, los ejercicios interactivos y las estrategias para abordar preguntas y desafíos de los participantes. Al organizar estratégicamente el día de capacitación e incorporar diversas metodologías de enseñanza, las personas facilitadoras pueden crear un entorno de aprendizaje inclusivo y efectivo que atienda las necesidades y preferencias de todas las personas participantes.
 
-## La primera sesión de capacitación
+## La primera sesión de capacitación <a id="la-primera-sesion-de-capacitacion"></a>
 
 Como facilitadores, es importante crear un marco estructurado que marque el tono para todo el proceso de aprendizaje. El primer día tiene una importancia significativa, ya que sirve como base para la comprensión de los conceptos de GIS y fomenta un entorno de aprendizaje efectivo.
 
-#### Inicio de la capacitación
+#### Inicio de la capacitación <a id="inicio-de-la-capacitacion"></a>
 
 1. __Bienvenida e introducción:__ Comienza el día con una cálida bienvenida e introduce el programa de capacitación. Tómate unos minutos para presentarte, explicar los objetivos de la capacitación y qué pueden esperar aprender las personas participantes durante el programa.
 2. __Actividad rompehielos:__ Fomenta la interacción y la camaradería entre las personas participantes con una actividad rompehielos. Esto puede ser un ejercicio grupal diseñado para incentivar la interacción y el trabajo en equipo.
@@ -21,7 +21,7 @@ Si utilizas un [plan de capacitación gráfico](/content/Trainers_corner/es_trai
 
 Toda esta sección introductoria puede durar hasta __una hora__ o más. Después de presentar la agenda, se recomienda programar un __descanso de entre 10 y 15 minutos__.
 
-#### Preparación para la capacitación
+#### Preparación para la capacitación <a id="preparacion-para-la-capacitacion"></a>
 
 Antes de profundizar en GIS, hay algunos aspectos que deben abordarse para asegurar que todas las personas participantes comiencen desde la mejor posición posible.
 
@@ -34,7 +34,7 @@ Antes de profundizar en GIS, hay algunos aspectos que deben abordarse para asegu
 
 Esta sección debería durar entre 15 y 30 minutos. Si se extiende más, considera otro breve descanso de 10 minutos antes de continuar.
 
-#### Impartición de contenido – Ejemplo: Introducción a GIS
+#### Impartición de contenido – Ejemplo: Introducción a GIS <a id="imparticion-de-contenido-ejemplo-introduccion-a-gis"></a>
 
 En un bloque de capacitación donde se enseña contenido nuevo o se perfeccionan habilidades, puedes usar una variedad más amplia de métodos. Aprende más sobre los distintos métodos para enseñar GIS en el artículo __[Cómo enseñar GIS](/content/Trainers_corner/es_how_to_teach_GIS.md)__.
 
@@ -49,7 +49,7 @@ Consideraciones generales al planificar contenido:
 * __Descansos:__ Las personas solo pueden mantener la concentración durante aproximadamente 35 a 45 minutos. Programa descansos y usa un temporizador para que no se omitan.
 * __Cierre estructurado:__ Siempre planifica tiempo para concluir un ejercicio o presentación de manera organizada. Asegúrate de responder todas las preguntas, repasar el propósito del ejercicio y evaluar si se alcanzaron los objetivos. Recoge cualquier retroalimentación inmediata.
 
-#### Cierre de la sesión de capacitación
+#### Cierre de la sesión de capacitación <a id="cierre-de-la-sesion-de-capacitacion"></a>
 
 El cierre al final de una sesión es de gran importancia y debe incluirse siempre. Su objetivo principal es generar confianza en las personas participantes, asegurando que todas las dudas se atiendan, ofreciendo un espacio para comentarios y clarificando las sesiones siguientes.
 
@@ -62,11 +62,11 @@ Dedica un mínimo de 15 minutos a este segmento, cubriendo los siguientes aspect
 15. __Resumen:__ Resume brevemente el contenido de la sesión, facilitando la transición al siguiente tema.  
 16. __Perspectivas:__ Ofrece una visión de la agenda de la próxima sesión, brindando información sobre qué esperar.
 
-## Días de capacitación estándar
+## Días de capacitación estándar <a id="dias-de-capacitacion-estandar"></a>
 
 Una sesión de capacitación típica, excluyendo la primera y la última sesión, generalmente sigue la estructura básica descrita anteriormente. Sin embargo, algunos aspectos pueden comprimirse para priorizar la entrega de contenido. Esta sección ofrece pautas para planificar un día de capacitación estándar.
 
-#### Bienvenida y recapitulación
+#### Bienvenida y recapitulación <a id="bienvenida-y-recapitulacion"></a>
 
 1. __Saludos y resumen:__ Comienza el día con una cálida bienvenida. Si hay nuevos facilitadores o invitados participando en la sesión de hoy, preséntalos. Este toque personal fomenta un ambiente positivo.  
 2. __Calentamiento:__ Similar a la actividad rompehielos del primer día, pero su objetivo principal es energizar a las personas participantes. Una lista de métodos de calentamiento está disponible [aquí](https://www.sessionlab.com/team/iaf/library/warm-ups).  
@@ -75,7 +75,7 @@ Una sesión de capacitación típica, excluyendo la primera y la última sesión
 
 Esta sección no debería durar más de __una hora__.
 
-## El último día de capacitación
+## El último día de capacitación <a id="el-ultimo-dia-de-capacitacion"></a>
 
 El último día será muy similar a un día de capacitación regular. Al inicio, realiza la parte de bienvenida y recapitulación, y durante los ejercicios de capacitación sigue las buenas prácticas explicadas anteriormente.
 

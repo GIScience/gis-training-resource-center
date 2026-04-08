@@ -1,4 +1,4 @@
-# How to plan and structure a GIS Training Session
+# How to plan and structure a GIS Training Session <a id="how-to-plan-and-structure-a-gis-training-session"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -7,11 +7,11 @@ A well-structured training day provides a cohesive framework for delivering cont
 
 In this section, we will explore key components of structuring a GIS training session, including scheduling, session sequencing, breaks, interactive exercises, and strategies for addressing participant questions and challenges. By strategically organizing the training day and incorporating diverse teaching methodologies, trainers can create an inclusive and effective learning environment that caters to the needs and preferences of all participants.
 
-## The first training session
+## The first training session <a id="the-first-training-session"></a>
 
 As trainers, it’s important to craft a structured framework that sets the tone for the entire learning journey. The initial day holds significant importance, serving as the cornerstone for participants’ comprehension of GIS concepts and fostering an effective learning environment.
 
-#### Training Kick-off
+#### Training Kick-off <a id="training-kick-off"></a>
 
 1. __Welcome and introduction:__ Begin the day with a warm welcome and introduction to the training program. Take a few moments to introduce yourself, the training objectives, and what participants can expect to learn throughout the program.
 2. __Icebreaker activity:__ Break the ice and foster a sense of camaraderie among participants with an icebreaker activity. This could be a group activity designed to encourage interaction and teamwork.
@@ -21,7 +21,7 @@ If you use a [graphical training plan](/content/Trainers_corner/en_training_grap
 
 This whole introduction section can take up to __one hour__ or even longer. After the presentation of the agenda, it is recommended to schedule a __break between 10 and 15 minutes__.
 
-#### Training preparation
+#### Training preparation <a id="training-preparation"></a>
 
 Before delving into GIS, there are a few things to address to ensure that everyone starts the training from the best possible position.
 
@@ -34,7 +34,7 @@ Before delving into GIS, there are a few things to address to ensure that everyo
 
 This section should only take between 15 and 30 minutes. If it takes longer, consider having another small break of 10 minutes before moving on.
 
-#### Content delivery – Example: GIS Introduction
+#### Content delivery – Example: GIS Introduction <a id="content-delivery-example-gis-introduction"></a>
 
 In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](/content/Trainers_corner/en_how_to_teach_GIS.md)__.
 
@@ -49,7 +49,7 @@ General considerations when planning content:
 * __Breaks__: People can only maintain concentration for approximately 35 to 45 minutes in a learning setting. Plan breaks accordingly and use a timer to ensure breaks are not overlooked.
 * __Structured end:__ Always plan time to bring an exercise or presentation to a structured end. See to it that all questions are answered. Go over the purpose of the exercise again and determine if the goal of the exercise was reached. Collect any immediate feedback.
 
-#### Wrap-up of the training session
+#### Wrap-up of the training session <a id="wrap-up-of-the-training-session"></a>
 
 
 The wrap-up session at the conclusion of a training session holds significant importance and should be consistently included. Its primary objective is to instill confidence in participants by ensuring all queries are addressed, offering a space for feedback, and providing clarity on upcoming sessions.
@@ -63,11 +63,11 @@ Allocate a minimum of 15 minutes for this segment, covering the following key as
 15. __Recap:__ Briefly summarize the day’s session content, facilitating a seamless transition to the next topic.
 16. __Outlook:__ Provide a glimpse into the upcoming session’s agenda, offering participants insight into what to expect.
 
-## Standard training days
+## Standard training days <a id="standard-training-days"></a>
 
 A typical training session, excluding the first and last sessions, generally adheres to the basic structure outlined above. However, certain aspects may be condensed to prioritize content delivery. This section provides insights into planning a standard training day.
 
-#### Welcome and recap
+#### Welcome and recap <a id="welcome-and-recap"></a>
 
 1. __Greetings and recap:__ Begin the day with a warm welcome. If there are any new trainers or guest lecturers participating in today’s training session, ensure they are introduced. This personal touch fosters a positive atmosphere.
 2. __Warm-Up:__ A warm-up is similar to the icebreaker on day one. However, its purpose is more to energize the participants rather than break the ice. A list of warm-up methods can be found [here](https://www.sessionlab.com/team/iaf/library/warm-ups).
@@ -76,7 +76,7 @@ A typical training session, excluding the first and last sessions, generally adh
 
 This whole section should not be longer than __one hour__.
 
-## The last training day
+## The last training day <a id="the-last-training-day"></a>
 
 The last training day will be very similar to a regular training day. At the start, you should to the welcome and recap part and during the training exercises you should adhere to the best practices explained above.
 

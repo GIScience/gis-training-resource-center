@@ -1,4 +1,4 @@
-# Data Licenses (working with licensed datasets)
+# Data Licenses (working with licensed datasets) <a id="data-licenses-working-with-licensed-datasets"></a>
 
 Licensing and working with licensed datasets in GIS involves careful adherence to legal, ethical, and practical considerations. Here are some best practices:
 

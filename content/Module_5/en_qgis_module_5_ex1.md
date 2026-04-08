@@ -7,9 +7,9 @@
 
 ::::
 
-# Risk Assessment
+# Risk Assessment <a id="risk-assessment"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -56,20 +56,20 @@ __Relevant Wiki Articles:__
 
 ::::
 
-## Background 
+## Background <a id="background"></a>
 
 In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability, and coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
 The collection and processing of this information varies based on the problem, but the calculation scheme to combine the information to a risk score remains consistent.
 
 Somalia is significantly exposed to droughts. We will showcase a risk assessment for a drought Early Action protocol.
 
-## Part 1: Indicator Processing
+## Part 1: Indicator Processing <a id="part-1-indicator-processing"></a>
 
-### Task
+### Task <a id="task"></a>
 
 The first part of the exercise will prepare the data in order to serve as indicator values. Raw data will be processed into meaningful indicators, and the vulnerability index will be calculated. Finally, all risk relevant data will be joined into a single vector layer using spatial data geoprocessing.
 
-## Data
+## Data <a id="data"></a>
 
 Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
 
@@ -140,7 +140,7 @@ name: Field Calculator
 Calculating health sites per 10000 inhabitants.
 :::
 
-#### Land Degradation
+#### Land Degradation <a id="land-degradation"></a>
 
 A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset: 
 
@@ -175,7 +175,7 @@ Joining Attributes by Location.
 :::
 
 
-#### Malnutrition
+#### Malnutrition <a id="malnutrition"></a>
 
 Another very important indicator to describe vulnerability in a district is acute malnutrition, especially for children under 5 years old.
 
@@ -221,9 +221,9 @@ You can edit the names in 6 cases in the Attribute Table of the CSV file by togg
 * Make sure to call your final layer "vulnerability_districts".
 
 
-## Part 2: Risk Calculation
+## Part 2: Risk Calculation <a id="part-2-risk-calculation"></a>
 
-### Task
+### Task <a id="task-2"></a>
 
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
@@ -238,7 +238,7 @@ name: Indicators Risk Assessment
 Indicators for the risk assessment.
 :::
 
-#### 1. Normalisation
+#### 1. Normalisation <a id="1-normalisation"></a>
 
 In order to perform further calculation on the indicators, we need to make them comparable. To do this, we can normalise them to be within a range of 0-1.
 
@@ -268,7 +268,7 @@ Normalising the indicators.
 * Repeat this step for the other indicators.
 * For each indicator you have now the original column and the normalised column. 
 
-#### 2. Directions 
+#### 2. Directions <a id="2-directions"></a>
 
 The direction indicates whether or not an indicator follows the predefined logic: “the higher the value, the worse the circumstances”, meaning that higher values imply a higher risk. The logic is adapted for all three dimensions, since it is generally intuitive to think that high values = high risk. If a respective indicator follows this logic, the direction would be 1; if it does not, the direction would be = -1.
 * In order to understand the directions of our indicators we first have to assign them to one of the dimensions (exposure, vulnerability, coping capacity).
@@ -293,7 +293,7 @@ It is recommended to properly check the logic of each indicator. Often the indic
 :::
 
 
-#### 3. Weighting of Indicators
+#### 3. Weighting of Indicators <a id="3-weighting-of-indicators"></a>
 
 In the next step we can weight the indicators based on their relevance to our risk assessment. It is recommended to do surveys or workshops with the local staff in oder to find out the importance of the respective indicators.
 
@@ -334,7 +334,7 @@ name: Attribute Table with "_norm" and "_weighted" indicators
 Attribute table with "_norm" and "_weighted" indicators.
 :::
 
-#### 4. Vulnerability Score / Index
+#### 4. Vulnerability Score / Index <a id="4-vulnerability-score-index"></a>
 
 We are now ready to calculate the vulnerability score for each district:
 * Open the attribute table -> open the `Field Calculator`![](/fig/mActionCalculateField.png) and create a new field with the name "vulnerability_score" and field type "Decimal Number (real)". In the expression window, sum up all weighted indicator values:
@@ -345,7 +345,7 @@ We are now ready to calculate the vulnerability score for each district:
 
 ```
 
-#### 5. Prepare Risk Assessment
+#### 5. Prepare Risk Assessment <a id="5-prepare-risk-assessment"></a>
 
 In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.
 
@@ -371,7 +371,7 @@ name: Risk Layer Attribute Table normalised Scores
 Risk Layer Attribute Table normalised Scores.
 :::
 
-#### 6. Risk Calculation
+#### 6. Risk Calculation <a id="6-risk-calculation"></a>
 
 
 Finally, the risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:
@@ -401,7 +401,7 @@ Risk Calculation
 The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it is the cube root, and so on.
 :::
 
-#### 6. Visualisation of the Results
+#### 6. Visualisation of the Results <a id="6-visualisation-of-the-results"></a>
 
 
 * Right click on the “risk” layer → `Properties` → `Symbology`.
@@ -429,7 +429,7 @@ Possible Map Result
     
 
 
-#### 7. Automating the Process
+#### 7. Automating the Process <a id="7-automating-the-process"></a>
 
 HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
 You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html).

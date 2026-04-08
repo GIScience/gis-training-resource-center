@@ -7,9 +7,9 @@
 
 ::::
 
-# Map design Exercise 1: Creating a Map of Ghana
+# Map design Exercise 1: Creating a Map of Ghana <a id="map-design-exercise-1-creating-a-map-of-ghana"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of the exercise__
@@ -61,18 +61,18 @@ __Relevant Articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction.
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -92,7 +92,7 @@ __Wrap up:__
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 __Download the data for the exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Modul_4_Exercise_1_creating_a_map_of_ghana/Modul_4_Exercise_1.zip).__  
 It is always important to make yourself familiar with the data at your disposal.
@@ -108,16 +108,16 @@ All data has been downloaded from the Humanitarian Data Exchange. Download the D
 
 
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
-### Preparation of the data
+### Preparation of the data <a id="preparation-of-the-data"></a>
 
 1. Load the `.shp`-files into a new QGIS-project.
 2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
     - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
-### Part 1: Symbolization
+### Part 1: Symbolization <a id="part-1-symbolization"></a>
 
 Now that we are familiar with the data at our disposal, let's choose the symbology for the different layers. Which information should be displayed on the map?
 
@@ -181,7 +181,7 @@ __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can h
 
 Now the Map should be ready for a print layout.
 
-### Part 2: Creating the print layout
+### Part 2: Creating the print layout <a id="part-2-creating-the-print-layout"></a>
 
 Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
@@ -237,7 +237,7 @@ Some space has been left in the bottom-right corner for an overview map
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 
 
-### Bonus Exercise!
+### Bonus Exercise! <a id="bonus-exercise"></a>
 
 If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the countries of Africa.  
 

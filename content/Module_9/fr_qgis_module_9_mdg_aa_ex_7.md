@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercice 7 : Accessibilité des postes de santé depuis les entrepôts CRM
+# Exercice 7 : Accessibilité des postes de santé depuis les entrepôts CRM <a id="exercice-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></a>
 
-## Caractéristiques
+## Caractéristiques <a id="caracteristiques"></a>
 
 
 ::::{grid} 2
@@ -66,12 +66,12 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 
 :::
 
-## Instruction pour les formateurs
+## Instruction pour les formateurs <a id="instruction-pour-les-formateurs"></a>
 
 
 :::{dropdown} __Espace Formateurs (Trainers Corner)__ 
 
-### Préparer la formation
+### Préparer la formation <a id="preparer-la-formation"></a>
 
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
@@ -79,7 +79,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
-### Animer la formation
+### Animer la formation <a id="animer-la-formation"></a>
 
 __Introduction:__
 
@@ -92,7 +92,7 @@ __Exercice guidée:__
 - Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.
 - Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.
 
-### Fin de la formation
+### Fin de la formation <a id="fin-de-la-formation"></a>
 
 - Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.
 - Laissez un moment pour des questions ouvertes.
@@ -101,7 +101,7 @@ __Exercice guidée:__
 
 ---
 
-## Donées disponibles
+## Donées disponibles <a id="donees-disponibles"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_9_Exercise_7_AA_MDG_task_7-20250825T143515Z-1-001.zip
@@ -110,7 +110,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 :::
 
 
-## Tâches
+## Tâches <a id="taches"></a>
 
 Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour 
 décider **où envoyer les kits médicaux prépositionnés**. Cependant, tous les entrepôts CRM ne stockent pas les 
@@ -123,7 +123,7 @@ Son objectif est de créer une carte visuelle claire montrant les postes de sant
 et de la partager avec les décideurs le plus rapidement possible.
 
 
-### 1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé
+### 1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé <a id="1-filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante"></a>
 
 Avant de vérifier quels établissements sont accessibles, Aina doit isoler les **postes de santé** à partir du jeu de données plus large de tous les établissements de santé.
 
@@ -154,7 +154,7 @@ Avant de vérifier quels établissements sont accessibles, Aina doit isoler les 
 > 💡 **Astuce**: Filtrer directement dans QGIS vous permet de travailler avec un sous-ensemble spécifique sans modifier le jeu de données original.
 
 
-### 2. Charger les couches isochrones pour les trois entrepôts CRM
+### 2. Charger les couches isochrones pour les trois entrepôts CRM <a id="2-charger-les-couches-isochrones-pour-les-trois-entrepots-crm"></a>
 
 Aina sait que seulement **trois entrepôts** disposent des fournitures médicales nécessaires:  
 **Antananarivo**, **Maroantsetra**, et **Tolanaro**. Elle va maintenant charger les couches isochrones pour chacun de ces entrepôts afin de commencer l’analyse des zones desservies.
@@ -194,7 +194,7 @@ Aina sait que seulement **trois entrepôts** disposent des fournitures médicale
      `CRM_warehouse_isochrones_style.qml`
    - Cliquez sur `Ouvrir`, puis `Appliquer` et `OK`
 
-### 3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM
+### 3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM <a id="3-visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></a>
 
 Aina doit identifier quels postes de santé sont accessibles par la route à partir des trois entrepôts clés (Antananarivo, Maroantsetra et Tolanaro) **en moins de 10 heures de trajet**. Elle va le faire manuellement en combinant les isochrones 10h de ces entrepôts et en les comparant au jeu de données national des postes de santé.
 

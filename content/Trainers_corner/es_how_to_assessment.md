@@ -1,10 +1,10 @@
-# Evaluaciones en la Capacitación GIS: Una Guía
+# Evaluaciones en la Capacitación GIS: Una Guía <a id="evaluaciones-en-la-capacitacion-gis-una-guia"></a>
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
 Este artículo explica la encuesta de evaluación disponible en esta plataforma, que puede usarse para medir el éxito de una capacitación básica en GIS. La evaluación está orientada a medir la motivación por aprender GIS y la autoevaluación de las habilidades de los participantes en GIS. Se mantiene breve y centrada en lo esencial, pero puede ser ampliada por los facilitadores si lo consideran necesario.
 
-## Plantillas de encuesta
+## Plantillas de encuesta <a id="plantillas-de-encuesta"></a>
 
 ```{card} Plantilla Google Survey: Encuesta previa al entrenamiento
  Haz clic [aquí](https://docs.google.com/forms/d/1iFdc4P6Qt5YI9yRKTHCtj_pslEsWfJVcNoARGyCI32o/copy) -> Haz clic en `Hacer una copia`.  
@@ -26,7 +26,7 @@ Ahora puedes usar la encuesta con tu cuenta de Google.
 [Descarga aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/TOT_post_training_assessment/en_post_training_assessment.xlsx) el archivo .xlsx para usarlo en Kobo Toolbox o ODK.
 ```
 
-## ¿Por qué hacemos evaluaciones?
+## ¿Por qué hacemos evaluaciones? <a id="por-que-hacemos-evaluaciones"></a>
 
 Las evaluaciones son esenciales en toda capacitación. Entre sus objetivos se incluyen:
 
@@ -39,7 +39,7 @@ Las evaluaciones son esenciales en toda capacitación. Entre sus objetivos se in
 
 En resumen, las evaluaciones proporcionan mediciones iniciales, permiten personalizar el contenido, establecen metas claras, miden el progreso, recogen retroalimentación y fomentan el aprendizaje continuo, asegurando una experiencia de capacitación más efectiva e impactante.
 
-## Cómo realizar la evaluación
+## Cómo realizar la evaluación <a id="como-realizar-la-evaluacion"></a>
 
 Con base en la encuesta estándar, existen tres opciones:
 
@@ -47,7 +47,7 @@ Con base en la encuesta estándar, existen tres opciones:
 2. __Google Survey:__ Usar la plantilla proporcionada permite beneficiarse de la funcionalidad de Google y ver resultados de inmediato.  
 3. __Otro sistema de encuestas:__ Se pueden incorporar las preguntas a cualquier otro sistema que se prefiera.
 
-## Introducción a la encuesta estándar
+## Introducción a la encuesta estándar <a id="introduccion-a-la-encuesta-estandar"></a>
 
 A continuación se detalla cada sección y pregunta de la encuesta.
 
@@ -55,7 +55,7 @@ A continuación se detalla cada sección y pregunta de la encuesta.
 :::{card} Encuesta previa al entrenamiento
 ___
 
-### Motivación
+### Motivación <a id="motivacion"></a>
 
 1. ¿Qué tan motivado estás para aprender más sobre QGIS? (escala 1-5)
 
@@ -81,7 +81,7 @@ Esta pregunta evalúa el nivel de motivación de los participantes para aprender
 Se busca conocer las motivaciones detrás del interés de los participantes, permitiendo adaptar el contenido de la capacitación a sus necesidades.
 ```
 
-### Competencias
+### Competencias <a id="competencias"></a>
 
 3. ¿Cuál es tu nivel actual de conocimiento en QGIS? (escala 1-5)
 
@@ -113,7 +113,7 @@ Permite conocer la experiencia previa de los participantes, para adaptar el entr
 :::{card} Encuesta posterior al entrenamiento
 ___
 
-### Competencias adquiridas
+### Competencias adquiridas <a id="competencias-adquiridas"></a>
 
 1. ¿Cuánto aprendiste durante la capacitación? (escala 1-5)
 
@@ -144,7 +144,7 @@ Permite identificar las habilidades y conocimientos adquiridos por los participa
 Evalúa la claridad del contenido y la forma en que fue presentado.
 ```
 
-### Motivación
+### Motivación <a id="motivacion-2"></a>
 
 4. ¿Qué tan motivado estás para trabajar con QGIS en el futuro?
 

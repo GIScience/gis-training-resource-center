@@ -6,10 +6,10 @@
 :::
 ::::
 
-# Exercice 3 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires
+# Exercice 3 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires <a id="exercice-3-identification-des-etablissements-de-sante-et-deducation-impactes-aina-ajoute-des-couches-supplementaires"></a>
 
 
-## Caractéristiques
+## Caractéristiques <a id="caracteristiques"></a>
 
 
 ::::{grid} 2
@@ -67,12 +67,12 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 
 :::
 
-## Instruction pour les formateurs
+## Instruction pour les formateurs <a id="instruction-pour-les-formateurs"></a>
 
 
 :::{dropdown} __Espace Formateurs (Trainers Corner)__ 
 
-### Préparer la formation
+### Préparer la formation <a id="preparer-la-formation"></a>
 
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
@@ -80,7 +80,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
-### Animer la formation
+### Animer la formation <a id="animer-la-formation"></a>
 
 __Introduction:__
 
@@ -93,7 +93,7 @@ __Exercice guidée:__
 - Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.
 - Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.
 
-### Fin de la formation
+### Fin de la formation <a id="fin-de-la-formation"></a>
 
 - Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.
 - Laissez un moment pour des questions ouvertes.
@@ -117,7 +117,7 @@ __Téléchargez tous les ensembles de données ici, enregistrez le dossier sur v
 
 :::
 
-# Tâches
+# Tâches <a id="taches"></a>
 
 1. **Importer les données des établissements de santé et d'éducation**
   Tout d'abord, examinons les données avec lesquelles nous allons travailler:

@@ -8,9 +8,9 @@
 ::::
 
 
-# Exercise 6: Exporting Model Results for the Operations Team
+# Exercise 6: Exporting Model Results for the Operations Team <a id="exercise-6-exporting-model-results-for-the-operations-team"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -63,18 +63,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -94,7 +94,7 @@ __Wrap up:__
 
 :::
 
-## Available data
+## Available data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_4_AA_MDG_task_6-20250825T143514Z-1-001.zip
@@ -124,7 +124,7 @@ We will join the following layers step by step:
 
 ---
 
-# Tasks
+# Tasks <a id="tasks"></a>
 
 
 1. Open your model

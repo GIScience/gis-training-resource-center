@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Good Map Design & Semiological Errors
+# Good Map Design & Semiological Errors <a id="good-map-design-and-semiological-errors"></a>
 
 In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common semiological missteps. If you need further examples for good map design, check out these websites/repositories:
 
@@ -14,9 +14,9 @@ In this chapter we will discuss well designed maps and give examples of how to r
 - [geo.msf.org maps](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&sort=_score&desc=true)
 - [reliefweb.int maps](https://reliefweb.int/updates?list=Maps%20/%20Infographics&view=maps)
 
-## Map Examples
+## Map Examples <a id="map-examples"></a>
 
-### Map Example 1: Flood-affected areas and roads in the Somali Region, Ethiopia
+### Map Example 1: Flood-affected areas and roads in the Somali Region, Ethiopia <a id="map-example-1-flood-affected-areas-and-roads-in-the-somali-region-ethiopia"></a>
 
 :::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
@@ -53,7 +53,7 @@ The colour scheme of the roads makes it possible to read the map intuitively, as
 
 ---
 
-### Map Example 2: Flooding Risk in the Ouham Region, Central African Republic
+### Map Example 2: Flooding Risk in the Ouham Region, Central African Republic <a id="map-example-2-flooding-risk-in-the-ouham-region-central-african-republic"></a>
 
 :::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
 ---
@@ -81,10 +81,10 @@ This map displays the flooding risk using a raster image. The raster data was ca
 ---
 
 
-## Common Missteps in Semiology
+## Common Missteps in Semiology <a id="common-missteps-in-semiology"></a>
 
 
-### The Modifiable Areal Unit Problem
+### The Modifiable Areal Unit Problem <a id="the-modifiable-areal-unit-problem"></a>
 
 :::{caution}
 Be careful when representing data in administrative regions. 
@@ -120,7 +120,7 @@ width: 500 px
 Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob & Lauriault, Tracey & McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149.).
 :::
 
-### Proportional Circles vs. Solid Colours
+### Proportional Circles vs. Solid Colours <a id="proportional-circles-vs-solid-colours"></a>
 
 :::{caution}
 Be cautious when representing __quantitative__ data with a __solid colour__.
@@ -135,7 +135,7 @@ While it is graphically appealing, representing quantitative data with solid col
 
 <!---Add example-->
 
-### Colour Gradient vs. Distinct Colour Palette
+### Colour Gradient vs. Distinct Colour Palette <a id="colour-gradient-vs-distinct-colour-palette"></a>
 
 :::{caution}
 DO NOT use a __separate__ colour palette to represent __ordered entities__.
@@ -148,7 +148,7 @@ It is a mistake because:
 - By using a differentiating colour variable, __you lose the ordinal relationship between entities__. Instead, a __gradient of the same colour__ that should be used.
 - Different colours are used to differentiate between distinct entities.
 
-### Gradient in a Single Colour vs. Gradient between two Colours
+### Gradient in a Single Colour vs. Gradient between two Colours <a id="gradient-in-a-single-colour-vs-gradient-between-two-colours"></a>
 
 :::{Caution}
 Be cautious when using a __gradient across two different colours__ for data that is __always positive__ (or negative).
@@ -166,7 +166,7 @@ It is a mistake because:
 - The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values.
 - In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).
 
-### Limited Geometric Symbols vs. Complex Icons and Symbols
+### Limited Geometric Symbols vs. Complex Icons and Symbols <a id="limited-geometric-symbols-vs-complex-icons-and-symbols"></a>
 
 :::{Caution}
 DO NOT use __too many symbols__ in a thematic map.
@@ -183,7 +183,7 @@ It is a mistake because:
 
 ---
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

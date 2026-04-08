@@ -7,10 +7,10 @@
 
 ::::
 
-# Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar
+# Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar <a id="piste-dexercice-analyse-daction-anticipative-pour-les-cyclones-a-madagascar"></a>
 
 
-## Caractéristiques
+## Caractéristiques <a id="caracteristiques"></a>
 
 
 ::::{grid} 2
@@ -64,13 +64,13 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 
 :::
 
-## Instruction pour les formateurs
+## Instruction pour les formateurs <a id="instruction-pour-les-formateurs"></a>
 
 
 
 :::{dropdown} __Espace Formateurs (Trainers Corner)__ 
 
-### Préparer la formation
+### Préparer la formation <a id="preparer-la-formation"></a>
 
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
@@ -78,7 +78,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
-### Animer la formation
+### Animer la formation <a id="animer-la-formation"></a>
 
 __Introduction:__
 
@@ -91,14 +91,14 @@ __Exercice guidée:__
 - Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.
 - Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.
 
-### Fin de la formation
+### Fin de la formation <a id="fin-de-la-formation"></a>
 
 - Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.
 - Laissez un moment pour des questions ouvertes.
 
 :::
 
-## Données
+## Données <a id="donnees"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_7/Exercise_1.zip
@@ -148,7 +148,7 @@ width: 750 px
 
 ```
 
-## Tâche 1 : Estimation de la population exposée – Approche manuelle d’Aina
+## Tâche 1 : Estimation de la population exposée – Approche manuelle d’Aina <a id="tache-1-estimation-de-la-population-exposee-approche-manuelle-daina"></a>
 
 Avant de développer le modèle automatisé, Aina estimait manuellement la population exposée à chaque fois qu’un cyclone approchait de Madagascar.
 Dans cette tâche, vous allez suivre les étapes qu’elle utilisait auparavant, en travaillant avec la trajectoire historique du Cyclone Harald, les données raster de WorldPop et les frontières administratives.
@@ -312,7 +312,7 @@ Visualisation de la population exposée en cinq classes.
 ```
 
 
-## Tâche 2: Automatisation de l’estimation de la population exposée – Le modèle d’Aina
+## Tâche 2: Automatisation de l’estimation de la population exposée – Le modèle d’Aina <a id="tache-2-automatisation-de-lestimation-de-la-population-exposee-le-modele-daina"></a>
 
 Après avoir estimé manuellement les populations exposées lors des saisons cycloniques précédentes, Aina a décidé de créer un __modèle automatisé__ à l’aide du __Modeleur Graphique de QGIS__.
 Cela lui permettra d’agir plus rapidement et d’éviter de répéter les mêmes étapes à chaque fois qu’un cyclone est annoncé.
@@ -614,7 +614,7 @@ Définition de l'entrée du modèle: Raster de population
 
 
 
-## Tâche 3: Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires
+## Tâche 3: Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires <a id="tache-3-identification-des-etablissements-de-sante-et-deducation-impactes-aina-ajoute-des-couches-supplementaires"></a>
 
 Après avoir construit son modèle pour estimer la population exposée, Aina souhaite améliorer son utilité. Elle décide d'identifier également les services essentiels affectés par les cclones — en particulier les établissments de santé et les écoles. 
 
@@ -922,7 +922,7 @@ Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcent
 ::::
 
 
-## Tâche 4: Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes
+## Tâche 4: Visualiser les résultats de l’impact du cyclone – Aina applique des styles à ses cartes <a id="tache-4-visualiser-les-resultats-de-limpact-du-cyclone-aina-applique-des-styles-a-ses-cartes"></a>
 
 Après avoir terminé son modèle, Aina souhaite **communiquer clairement les résultats** — à la fois à ses collègues de la Croix-Rouge et à des partenaires externes.
 
@@ -936,7 +936,7 @@ Dans cette tâche, vous allez aider Aina à appliquer des styles `.qml` existant
 ---
 
 
-### 1. **Charger les couches nécessaires (si ce n’est pas déjà fait)**
+### 1. **Charger les couches nécessaires (si ce n’est pas déjà fait)** <a id="1-charger-les-couches-necessaires-si-ce-nest-pas-deja-fait"></a>
 
 Assurez-vous que les couches suivantes sont déjà chargées dans votre projet QGIS. Ce sont les sorties de la **Tâche 3**:
 
@@ -954,7 +954,7 @@ Si l’une d’elles manque:
 
 ---
 
-### 2. **Appliquer des fichiers de style prédéfinis**
+### 2. **Appliquer des fichiers de style prédéfinis** <a id="2-appliquer-des-fichiers-de-style-predefinis"></a>
 Appliquez les fichiers de style `.qml` suivants aux couches correspondantes:
 
 | **Couche**                             | **Fichier de style**                           |
@@ -1024,7 +1024,7 @@ Carte affichant le nombre total d’établissements scolaires exposés par distr
 :::
 ::::
 
-### 3. **Styliser manuellement les couches de pourcentage**
+### 3. **Styliser manuellement les couches de pourcentage** <a id="3-styliser-manuellement-les-couches-de-pourcentage"></a>
 
 Aina souhaite également visualiser le pourcentage d’établissements de santé et d’éducation exposés. Toutefois, puisqu’aucun style n’est encore disponible, elle doit effectuer la procédure manuellement.
 
@@ -1063,7 +1063,7 @@ Après duplication, renommez la nouvelle couche :
 
 ---
 
-### 4. **Enregistrez vos nouveaux styles pour les réutiliser**
+### 4. **Enregistrez vos nouveaux styles pour les réutiliser** <a id="4-enregistrez-vos-nouveaux-styles-pour-les-reutiliser"></a>
 
 Enregistrez vos styles manuels au format `.qml` pour pouvoir les réutiliser plus tard.
 
@@ -1085,7 +1085,7 @@ Enregistrez vos styles manuels au format `.qml` pour pouvoir les réutiliser plu
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
-### 5. *(Optionnel)* Importer les styles dans votre bibliothèque QGIS
+### 5. *(Optionnel)* Importer les styles dans votre bibliothèque QGIS <a id="5-optionnel-importer-les-styles-dans-votre-bibliotheque-qgis"></a>
 
 Pour réutiliser vos styles dans de futurs projets:
 
@@ -1097,7 +1097,7 @@ Les styles apparaîtront désormais comme préréglages dans le **Panneau de sty
 
 ---
 
-## Tâche 5: Création rapide de cartes – Aina utilise des modèles de carte
+## Tâche 5: Création rapide de cartes – Aina utilise des modèles de carte <a id="tache-5-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte"></a>
 
 Après tout le travail d’analyse et de stylisation, Aina est prête à **partager ses résultats**. Mais créer une 
 carte professionnelle à partir de zéro à chaque fois serait long et répétitif.  
@@ -1203,7 +1203,7 @@ Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et *
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
-### ✅ Liste de vérification finale
+### ✅ Liste de vérification finale <a id="liste-de-verification-finale"></a>
 
 | Tâche                                           | Fait |
 |------------------------------------------------|------|
@@ -1231,7 +1231,7 @@ align: center
 ```
 
 
-## Tâche 6: Exporter les résultats du modèle pour l’équipe des opérations
+## Tâche 6: Exporter les résultats du modèle pour l’équipe des opérations <a id="tache-6-exporter-les-resultats-du-modele-pour-lequipe-des-operations"></a>
 
 **Contexte – Aina soutient les décideurs**
 
@@ -1433,7 +1433,7 @@ align: center
 
 
 
-## Tâche 7: Accessibilité des postes de santé depuis les entrepôts CRM
+## Tâche 7: Accessibilité des postes de santé depuis les entrepôts CRM <a id="tache-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></a>
 
 Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour 
 décider **où envoyer les kits médicaux prépositionnés**. Cependant, tous les entrepôts CRM ne stockent pas les 
@@ -1446,7 +1446,7 @@ Son objectif est de créer une carte visuelle claire montrant les postes de sant
 et de la partager avec les décideurs le plus rapidement possible.
 
 
-### 1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé
+### 1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé <a id="1-filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante"></a>
 
 Avant de vérifier quels établissements sont accessibles, Aina doit isoler les **postes de santé** à partir du jeu de données plus large de tous les établissements de santé.
 
@@ -1477,7 +1477,7 @@ Avant de vérifier quels établissements sont accessibles, Aina doit isoler les 
 > 💡 **Astuce**: Filtrer directement dans QGIS vous permet de travailler avec un sous-ensemble spécifique sans modifier le jeu de données original.
 
 
-### 2. Charger les couches isochrones pour les trois entrepôts CRM
+### 2. Charger les couches isochrones pour les trois entrepôts CRM <a id="2-charger-les-couches-isochrones-pour-les-trois-entrepots-crm"></a>
 
 Aina sait que seulement **trois entrepôts** disposent des fournitures médicales nécessaires:  
 **Antananarivo**, **Maroantsetra**, et **Tolanaro**. Elle va maintenant charger les couches isochrones pour chacun de ces entrepôts afin de commencer l’analyse des zones desservies.
@@ -1517,7 +1517,7 @@ Aina sait que seulement **trois entrepôts** disposent des fournitures médicale
      `CRM_warehouse_isochrones_style.qml`
    - Cliquez sur `Ouvrir`, puis `Appliquer` et `OK`
 
-### 3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM
+### 3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM <a id="3-visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></a>
 
 Aina doit identifier quels postes de santé sont accessibles par la route à partir des trois entrepôts clés (Antananarivo, Maroantsetra et Tolanaro) **en moins de 10 heures de trajet**. Elle va le faire manuellement en combinant les isochrones 10h de ces entrepôts et en les comparant au jeu de données national des postes de santé.
 

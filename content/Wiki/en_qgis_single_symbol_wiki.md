@@ -1,4 +1,4 @@
-## Single symbol classification
+## Single symbol classification <a id="single-symbol-classification"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__

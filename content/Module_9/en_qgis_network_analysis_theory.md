@@ -10,13 +10,13 @@
 may not be shared or published! 🚧
 
 (content:references:module9:network-theory)=
-# Spatial Network Analysis Theory
+# Spatial Network Analysis Theory <a id="spatial-network-analysis-theory"></a>
 
 
-## Understanding Networks: Analysis and Insights
+## Understanding Networks: Analysis and Insights <a id="understanding-networks-analysis-and-insights"></a>
 Networks serve as simplified representations of real-world systems. A network comprises nodes and edges, representing entities and their relationships respectively. Rather than being defined by coordinates, positions within a network are determined by connectivity. In GIS (Geographic Information Systems), networks play integral roles in transportation modeling and supply chain networks such as water and energy distribution. Additionally, they are utilized for analyzing the service areas of healthcare facilities. For instance, analyses can assess areas vulnerable to flooding to ascertain the potential impact on healthcare services during a disaster.
 
-### Components of a Graph
+### Components of a Graph <a id="components-of-a-graph"></a>
 Creating a graph involves defining its nodes (vertices) and edges (connections between nodes). 
  
 **Defining Nodes:** entities, objects, locations **&rarr;** Features in OpenStreetMap (hospitals, schools etc.)
@@ -34,7 +34,7 @@ align: center
 ---
 Visualization depicting the conversion process from OpenStreetMap (OSM) geodata to a graph representation. Source: HeiGIT
 ```
-### Dijkstra Algorithm
+### Dijkstra Algorithm <a id="dijkstra-algorithm"></a>
 - E. W. Dijkstra
 - Discovered 1956, published 1959
 - Single pair shortest path algorithm (SPSP) - for directions / A → B routing
@@ -50,13 +50,13 @@ align: center
 The GIF illustrates the step-by-step process of determining the shortest path from a source node to all other nodes in a graph. As the algorithm progresses, nodes are visited and the shortest distances from the source node are continuously updated until all accessible nodes have been explored. Source: HeiGIT
 ```
 
-### Analysis
+### Analysis <a id="analysis"></a>
 You can determine directions or standard routes, which unveil the shortest path between two points. Isochrones offer insight into the area accessible within a specified time or distance threshold. Additionally, generating a matrix enables the assessment of time or distance between predefined locations. Alternatively, graphs facilitate travel optimization by computing the most efficient sequence for visiting a given set of points.
 
 
-### Openrouteservice
+### Openrouteservice <a id="openrouteservice"></a>
 
-#### General Information
+#### General Information <a id="general-information"></a>
 - Graphhopper based routing machine since 2008
 - Completely Open-Source
 - Global public API
@@ -68,7 +68,7 @@ You can determine directions or standard routes, which unveil the shortest path 
   - freedom of choice on limitations
 - Different routing profiles (car, hgv, bike, pedestrian, wheelchair)
 
-#### Services
+#### Services <a id="services"></a>
 - **Directions/standard routing**: Shortest path between two locations
 - **Isochrones**: Area reachable within a limit (time | distance)
 - **Matrix**: Times / Distances between a set of locations
@@ -76,7 +76,7 @@ You can determine directions or standard routes, which unveil the shortest path 
 
 >This module provides an accessibility analysis based on Openrouteservice isochrones.
 
-#### Isochrones
+#### Isochrones <a id="isochrones"></a>
 - Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)
 - Avoid areas, avoid, road types
 - Further dynamic preferences: green routing, noise aware routing, landmark routing, (heat aware routing)

@@ -6,11 +6,11 @@
 :::
 ::::
 
-# Styling Vector Data
+# Styling Vector Data <a id="styling-vector-data"></a>
 
 The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize how the layers in your QGIS project are visualised.
 
-## Styling Panel
+## Styling Panel <a id="styling-panel"></a>
 
 :::{figure} ../../fig/en_30.30.2_styling_panel.png
 ---
@@ -34,7 +34,7 @@ In the styling panel you can change the styling for all features of a layer, set
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
 :::
 
-## Symbology for Vector Data
+## Symbology for Vector Data <a id="symbology-for-vector-data"></a>
 
 You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data. 
 
@@ -112,7 +112,7 @@ __For example__, select a symbol for every health facility that is a hospital an
 
 Below, we will go over some common styling methods used in cartography. 
 
-### Styling administrative boundaries (Polygons)
+### Styling administrative boundaries (Polygons) <a id="styling-administrative-boundaries-polygons"></a>
 
 When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable. 
 
@@ -122,7 +122,7 @@ You can follow along by downloading the [administrative boundaries of Nigeria](h
 
 :::
 
-#### Only display the outlines of polygons
+#### Only display the outlines of polygons <a id="only-display-the-outlines-of-polygons"></a>
 
 Now, we want to change the symbology of a layer so that __only the outlines of the polygons are visible__. This is necessary to make layers below this one visible.
 
@@ -145,7 +145,7 @@ width: 500 px
 
 :::
 
-#### Adjusting the Styles of Multiple Overlaying Layers
+#### Adjusting the Styles of Multiple Overlaying Layers <a id="adjusting-the-styles-of-multiple-overlaying-layers"></a>
 
 __Step 1: Ordering the layers__
 
@@ -186,7 +186,7 @@ The styling of a vector data consists of the colour and the outline.
 :::
 
 
-#### Creating a Choropleth Map ("Gradudated Styling)
+#### Creating a Choropleth Map ("Gradudated Styling) <a id="creating-a-choropleth-map-gradudated-styling"></a>
 
 
 If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
@@ -235,7 +235,7 @@ A map showing the population of Nigerian states.
 .mp4"></video>
 :::
 
-#### Creating a graduated symbols map
+#### Creating a graduated symbols map <a id="creating-a-graduated-symbols-map"></a>
 
 Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, or in situations when you want to communicate two variables on a single map. For example, it is easy to combine choropleth maps with graduated symbols.  
 Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step: 
@@ -277,12 +277,12 @@ A map of Nigeria displaying the same data. Once using graduated colours (choropl
 :::
 
 
-### Using different styles in a single layer
+### Using different styles in a single layer <a id="using-different-styles-in-a-single-layer"></a>
 
 By categorizing or classifying data in a single layer, we are able to assign different styles to each classification.  
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
-#### Setting different point symbols for different features
+#### Setting different point symbols for different features <a id="setting-different-point-symbols-for-different-features"></a>
 
 1. Download the [ACLED security incidents geopackage](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip) and load it into your QGIS-project. It is a point layer with each point indicating a distinct security incident.
 2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
@@ -346,9 +346,9 @@ On top of simple markers, QGIS lets you also use SVG-symbols and raster images a
 
 :::
 
-#### __Using SVG-Symbols and IFRC symbols__
+#### __Using SVG-Symbols and IFRC symbols__ <a id="using-svg-symbols-and-ifrc-symbols"></a>
 
-### Using SVG-Symbols
+### Using SVG-Symbols <a id="using-svg-symbols"></a>
 
 In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data. 
 To use SVG-symbols:
@@ -361,7 +361,7 @@ To use SVG-symbols:
 
 There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.
 
-#### Adding an external SVG-library
+#### Adding an external SVG-library <a id="adding-an-external-svg-library"></a>
 
 QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of icons. 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
@@ -376,7 +376,7 @@ The new SVG-symbols are in your SVG library.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
-#### Using IFRC-Symbols
+#### Using IFRC-Symbols <a id="using-ifrc-symbols"></a>
 
 :::{admonition} IFRC- and UN-Symbols repositories
 :class: tip
@@ -387,7 +387,7 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note
@@ -447,7 +447,7 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 ::::
 
-## Further Resources
+## Further Resources <a id="further-resources"></a>
 
 - [Cartography Guide](https://www.axismaps.com/guide) by [Axis Maps](axismaps.com)
 - Tutorial on [how to import the SIMS Colour Palette into QGIS](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/) 

@@ -1,4 +1,4 @@
-# Workflow de déclenchement en QGIS pour Madagascar
+# Workflow de déclenchement en QGIS pour Madagascar <a id="workflow-de-declenchement-en-qgis-pour-madagascar"></a>
 
 
 
@@ -18,11 +18,11 @@ __Télécharger le projet__
 
 ::::
 
-## Contexte
+## Contexte <a id="contexte"></a>
 
 La définition de déclencheurs est l'un des piliers du système de financement basé sur les prévisions (anglais: Forecast-based financing (FbF)). Pour qu'une Société Nationale puisse bénéficier d'un financement automatique pour ses actions précoces, son protocole d'action précoce doit définir clairement où et quand les fonds seront alloués et l'aide fournie. Dans le cadre de l'AA, cela est décidé en fonction de valeurs seuils spécifiques, appelées "déclencheurs", basées sur les prévisions météorologiques et climatiques, qui sont définies pour chaque région (voir [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
 
-## Déclaration de déclenchement
+## Déclaration de déclenchement <a id="declaration-de-declenchement"></a>
 
 **Déclencheur préalable à l'activation:** au moins une des prévisions météorologiques de Météo Madagascar, du RMSC La Réunion ou de l'ECMWF prévoit une probabilité supérieure à 50% qu'un cyclone tropical de force tempête tropicale ou plus atteigne les côtes dans les 7 prochains jours.
 
@@ -32,7 +32,7 @@ La définition de déclencheurs est l'un des piliers du système de financement 
 
  This section will include information on how to download the final report as soon as its published -->
 
-# Fonctionnalité du flux de travail
+# Fonctionnalité du flux de travail <a id="fonctionnalite-du-flux-de-travail"></a>
 
 Le concept de processus déclencheur est illustré dans la figure ci-dessous.
 
@@ -60,7 +60,7 @@ Le projet et le modèle ont été créés à l'aide de la version 3.40.9 (LTR) B
 
 :::
 
-## Données disponibles
+## Données disponibles <a id="donnees-disponibles"></a>
 
 Pour que le mécanisme de déclenchement fonctionne correctement, nous utilisons actuellement différents ensembles de données: des données que nous supposons statiques à court terme et des données variables qui décrivent les ensembles de données qui seront vérifiés régulièrement pour déclencher le mécanisme en fonction de la survenue d'événements cycloniques anticipés.
 
@@ -75,7 +75,7 @@ __Télécharger le projet__
 
 ::::
 
-### Données fixes
+### Données fixes <a id="donnees-fixes"></a>
 
 Par données fixes, nous entendons les ensembles de données nécessaires à la création des rapports cartographiques, qui ne sont pas susceptibles de changer à court terme. À long terme, ces ensembles de données peuvent être facilement adaptés.
 
@@ -99,7 +99,7 @@ Les trois ensembles de données raster sont combinés en un **raster principal**
 
 :::
 
-### Données de monitoring
+### Données de monitoring <a id="donnees-de-monitoring"></a>
 
 ```{admonition} Attention
 :class: attention
@@ -116,11 +116,11 @@ Les données relatives aux trajectoires des cyclones tropicaux sont disponibles 
 
 :::
 
-## Estimation de l'impact du cyclone à l'aide du modèle QGIS
+## Estimation de l'impact du cyclone à l'aide du modèle QGIS <a id="estimation-de-limpact-du-cyclone-a-laide-du-modele-qgis"></a>
 
 Comme expliqué au début de ce chapitre, le workflow déclencheur développé est exécuté automatiquement par un modèle QGIS. Dans ce chapitre, nous expliquerons son fonctionnement et, dans une étape ultérieure, nous expliquerons comment exécuter le modèle automatisé.
 
-### Fonctionnement du modèle
+### Fonctionnement du modèle <a id="fonctionnement-du-modele"></a>
 
 <!-- Have a final look over this section to see if all the important information is covered -->
 
@@ -148,12 +148,12 @@ Les étapes clés suivantes sont exécutées dans le modèle :
    * Les entrepôts sont filtrés en fonction de leur proximité avec les régions exposées. Le modèle utilise des données routières et des filtres spatiaux pour déterminer les entrepôts accessibles pertinents pour l'intervention.
 -->
 
-### Comment exécuter le modèle
+### Comment exécuter le modèle <a id="comment-executer-le-modele"></a>
 
 Le [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
 
 
-### Étape 1 : Explication de la structure des fichiers
+### Étape 1 : Explication de la structure des fichiers <a id="etape-1-explication-de-la-structure-des-fichiers"></a>
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
 ---
@@ -194,7 +194,7 @@ __Outil :__ Aucun outil ou programme particulier n'est nécessaire.
 ``````
 
 
-### Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS
+### Étappe 2: Ouvrez le projet dans QGIS et chargez le modèle dans le concepteur de modèles QGIS <a id="etappe-2-ouvrez-le-projet-dans-qgis-et-chargez-le-modele-dans-le-concepteur-de-modeles-qgis"></a>
 
 ```{figure} /fig/MAD_Trigger_workflow_Step2.png
 ---
@@ -281,7 +281,7 @@ Ce groupe comprend les isochrones pour tous les entrepôts, calculées pour des 
 <!--ADD: Map showing the isochrones-->
 ----
 
-#### Ouvrir le modèle dans QGIS  
+#### Ouvrir le modèle dans QGIS <a id="ouvrir-le-modele-dans-qgis"></a>
 
 Nous allons ouvrir le modèle QGIS :
 1. Dans la barre du haut de votre fenêtre QGIS, naviguez vers `Traîtement` -> `Modeleur`. Une nouvelle fenêtre s'ouvrira. Il s'agit du concepteur de modèles.
@@ -308,7 +308,7 @@ Ouvrir le modélisateur graphique dans QGIS 3.44
 
 <!-- Do we need a video here? -->
 
-### Étappe 3: Exécutez le modèle
+### Étappe 3: Exécutez le modèle <a id="etappe-3-executez-le-modele"></a>
 
 ```{figure} /fig/MAD_Trigger_workflow_Step3.png
 ---
@@ -401,9 +401,9 @@ Résultats
 Nous avons toutes les couches nécessaires pour créer les cartes individuelles. La section suivante explique comment utiliser les couches prédéfinies et calculées pour créer les cartes à l'aide des modèles de carte et des fichiers de style de couche.
 :::
 
-## Création des cartes à l'aide des modèles de carte
+## Création des cartes à l'aide des modèles de carte <a id="creation-des-cartes-a-laide-des-modeles-de-carte"></a>
 
-### Visualisation et mise en forme des résultats du modèle et création de la carte imprimée
+### Visualisation et mise en forme des résultats du modèle et création de la carte imprimée <a id="visualisation-et-mise-en-forme-des-resultats-du-modele-et-creation-de-la-carte-imprimee"></a>
 
 <!-- Is a video necessary for this chapter? -->
 
@@ -452,7 +452,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 
 -->
 
-### Carte 1: Aperçu de l'impact du cyclone: Districts touchés, gravité de l'événement et emplacement des entrepôts
+### Carte 1: Aperçu de l'impact du cyclone: Districts touchés, gravité de l'événement et emplacement des entrepôts <a id="carte-1-apercu-de-limpact-du-cyclone-districts-touches-gravite-de-levenement-et-emplacement-des-entrepots"></a>
 
 :::{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
 ---
@@ -481,7 +481,7 @@ align: center
 ---
 ```
 
-#### Carte 1: Stylisation des couches
+#### Carte 1: Stylisation des couches <a id="carte-1-stylisation-des-couches"></a>
 
 1. Faites un clic droit sur la couche exposed_districts -> `Propriétés` -> `Symbologie`
 2. Dans le coin inférieur gauche, cliquez sur `Style` -> `Charger le style`
@@ -518,7 +518,7 @@ Pour conserver un espace de travail clair et organisé, regroupez les couches de
 
 :::
 
-#### Carte 1: Création de la mise en page
+#### Carte 1: Création de la mise en page <a id="carte-1-creation-de-la-mise-en-page"></a>
 
 Pour faciliter la visualisation, nous avons créé ces [modèles de carte](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
@@ -653,7 +653,7 @@ align: center
 ::::
 
 
-#### Carte 1: Exporter la carte 
+#### Carte 1: Exporter la carte <a id="carte-1-exporter-la-carte"></a>
 
 
 Une fois la conception de votre carte terminée, vous pouvez l'exporter au format PDF ou image dans différents formats.
@@ -677,7 +677,7 @@ __Exporter au format PDF__
 5. Cliquez sur `Sauvegarder`.
 L'image se trouve maintenant dans le dossier de résultats.
 
-### Carte 2: Évaluation de l'impact: population exposée et infrastructures critiques
+### Carte 2: Évaluation de l'impact: population exposée et infrastructures critiques <a id="carte-2-evaluation-de-limpact-population-exposee-et-infrastructures-critiques"></a>
 
 Couches nécessaires pour cette carte:
 - `CRM_Warehouses`
@@ -699,7 +699,7 @@ align: center
 
 
 
-#### Carte 2: Stylisation des couches
+#### Carte 2: Stylisation des couches <a id="carte-2-stylisation-des-couches"></a>
 
 1. Désactivez toutes les couches sauf le groupe "Map_Cyclone_Impact_Assessment" et la carte de base OpenStreetMap.
 2. Cliquez avec le bouton droit sur la couche "exposed_population - copy" (population_exposée copie) -> `Propriétés` -> `Symbologie`
@@ -746,7 +746,7 @@ La documentation couvre la carte d'évaluation de l'impact sur la population exp
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 ::::
 
-#### Carte 2: Création de la mise en page
+#### Carte 2: Création de la mise en page <a id="carte-2-creation-de-la-mise-en-page"></a>
 
 ```{tip}
 Le même processus s'applique aux cinq variables d'impact: population, bâtiments, établissements scolaires, sites de santé et couverture agricole. L'exemple suivant illustre le processus de création de la carte d'impact sur la population. Les autres cartes peuvent être générées en suivant les mêmes étapes.
@@ -1005,7 +1005,7 @@ align: center
 ---
 ```
 
-#### Carte 2: Exporter la carte
+#### Carte 2: Exporter la carte <a id="carte-2-exporter-la-carte"></a>
 
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
@@ -1060,17 +1060,17 @@ align: center
 ---
 ```
 
-## Utilisation des isochrones d'entrepôt
+## Utilisation des isochrones d'entrepôt <a id="utilisation-des-isochrones-dentrepot"></a>
 
 Le projet comprend des isochrones pour chaque entrepôt. Les isochrones d'entrepôt correspondent à un entrepôt et sont identifiables par le nom de leur emplacement. Si vous souhaitez ajouter une isochrone à l'une des cartes Il est possible d'ajouter des isochrones individuelles aux modèles de carte en dupliquant simplement la couche d'isochrones et en la déplaçant vers le groupe de cartes souhaité.
 
 <!--INSERT EXAMPLE PICTURE-->
 
-# Analyse historique des impacts des cyclones
+# Analyse historique des impacts des cyclones <a id="analyse-historique-des-impacts-des-cyclones"></a>
 
 Pour exécuter le processus de déclenchement complet à l'aide des données historiques sur la trajectoire des cyclones, vous pouvez évaluer les impacts des événements passés et obtenir des informations sur ce qui s'est produit dans des scénarios similaires. Les données sur la trajectoire des tempêtes sont disponibles auprès de l'**International Best Track Archive for Climate Stewardship (IBTrACS)**. Les instructions pour accéder à ces données sont fournies dans la section suivante.
 
-## Téléchargement des données historiques sur les trajectoires des tempêtes
+## Téléchargement des données historiques sur les trajectoires des tempêtes <a id="telechargement-des-donnees-historiques-sur-les-trajectoires-des-tempetes"></a>
 
 Les données **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 sont mises à jour trois fois par semaine (généralement le dimanche, le mardi et le jeudi) et peuvent être mises à jour plus fréquemment pour répondre à des besoins et des cas d'utilisation spécifiques. Les dernières mises à jour dans le format de fichier approprié sont disponibles sur leur [site web](https://www.ncei.noaa.gov/products/international-best-track-archive):
 

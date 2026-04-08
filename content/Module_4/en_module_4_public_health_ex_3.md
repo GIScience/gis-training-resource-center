@@ -1,6 +1,6 @@
-# Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS
+# Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS <a id="exercise-3-visualising-health-infrastructure-population-and-measles-incidence-in-qgis"></a>
 
-## Background
+## Background <a id="background"></a>
 
 Now that you have prepared and enriched your datasets in Exercises 1 and 2, it is time to create clear, visually compelling maps for decision-makers.
 These maps will help the Ministry of Health and partners understand:
@@ -13,7 +13,7 @@ Which districts have the highest measles incidence rate
 
 In this exercise, you will create two publication-ready maps using the QGIS Print Layout Composer.
 
-## Objectives
+## Objectives <a id="objectives"></a>
 
 By the end of this exercise, you will be able to:
 
@@ -22,7 +22,7 @@ By the end of this exercise, you will be able to:
 - Add essential map elements (title, legend, scale bar, north arrow, logos)
 - Export maps as high-quality PDF or PNG outputs
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 From the previous exercises: 
 
@@ -33,9 +33,9 @@ From the previous exercises:
 | `OpenStreetMap basemap (XYZ tiles)`                                   | Background context                                           |
 | `tcd_admbnda_adm1_20250212_AB`                                        | Administrative reference boundaries                          |
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
-### Task 1: Visualise the Health Facilities Capacities
+### Task 1: Visualise the Health Facilities Capacities <a id="task-1-visualise-the-health-facilities-capacities"></a>
 
 1. In the *Layers Panel*, <kbd>right-click</kbd> on `Healthsites_points_capacities` → `Properties`.
 2. Navigate to the **Symbology** tab.
@@ -45,7 +45,7 @@ From the previous exercises:
 6. Adjust the symbols (e.g., blue for “yes”, grey for “no”).
 7. Click `Apply`.
 
-### Task 2: Prepare the Measles Incidence Layer
+### Task 2: Prepare the Measles Incidence Layer <a id="task-2-prepare-the-measles-incidence-layer"></a>
 
 
 1. <kbd>Right-click</kbd> on the `adm2_incidence` layer → `Properties`.
@@ -57,7 +57,7 @@ From the previous exercises:
 4. Choose a sequential or red–yellow colour ramp.
 5. Click `Classify` → `Apply`.
 
-### Task 3: Create a Map in the Print Layout Composer
+### Task 3: Create a Map in the Print Layout Composer <a id="task-3-create-a-map-in-the-print-layout-composer"></a>
 
 :::{admonition}
 :class: tip

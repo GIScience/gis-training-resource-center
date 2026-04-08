@@ -1,8 +1,8 @@
-# QGIS common errors and issues <!-- omit from toc -->
+# QGIS common errors and issues <!-- omit from toc --> <a id="qgis-common-errors-and-issues-omit-from-toc"></a>
 
 Here we are collecting common QGIS errors and issues as general QGIS training support.
 
-# Table of content <!-- omit from toc -->
+# Table of content <!-- omit from toc --> <a id="table-of-content-omit-from-toc"></a>
 
 - [Different QGIS versions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)
 - [QGIS on Mac doesn't open](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
@@ -36,10 +36,10 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 
 
-## Different QGIS versions 
+## Different QGIS versions <a id="different-qgis-versions"></a>
 The Wiki and in particular the videos in it are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. Therefore there may be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC. Nonetheless this chapter focuses on common errors and issues, hopefully for many (upcoming) versions.
 
-## QGIS on Mac doesn't open
+## QGIS on Mac doesn't open <a id="qgis-on-mac-doesnt-open"></a>
 When opening QGIS for the first time on Mac you may get this error message:
 
 :::{figure} /fig/qgis_on_mac.png
@@ -67,7 +67,7 @@ Change settings to open QGIS on Mac.
 :::
 
 
-## A layer is not displayed in QGIS 
+## A layer is not displayed in QGIS <a id="a-layer-is-not-displayed-in-qgis"></a>
 
  __Solution:__ 
   1. Right click on the corresponding layer. 
@@ -84,7 +84,7 @@ Zoom to layer if layer is not displayed.
 :::
 
 
-## A layer window has disappeared in QGIS
+## A layer window has disappeared in QGIS <a id="a-layer-window-has-disappeared-in-qgis"></a>
 
 __Solution:__
  1. Open in the main tab `View`. 
@@ -101,7 +101,7 @@ name: Layer window disappeared
 Layer window disappeared.
 :::
 
-## Layers that should actually be in the same position are not on top of each other
+## Layers that should actually be in the same position are not on top of each other <a id="layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other"></a>
 
 __Solution:__
 
@@ -198,7 +198,7 @@ Reproject raster layer in QGIS.
  Errors often occur if the crs is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from QGIS, reload the data and then reproject and export them. 
 :::
 
-## Layer file disappeared from the layer window
+## Layer file disappeared from the layer window <a id="layer-file-disappeared-from-the-layer-window"></a>
 
 If a layer file is no longer displayed or active in the layer window after reopening a QGIS project, it is only a temporary layer. Temporary layers have a symbol on the right of their name, as so:
  ![](/fig/en_qgis_temporary_Layer.png)
@@ -234,7 +234,7 @@ Save layer in your directory.
 
 
 
-## Missing processing tools in the panels tool and incomplete vector tab
+## Missing processing tools in the panels tool and incomplete vector tab <a id="missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab"></a>
 
  __Solution:__
   
@@ -256,7 +256,7 @@ See also: Geographic Information Systems
 https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vector-menu-of-qgis
 
 
-## Missing toolbox
+## Missing toolbox <a id="missing-toolbox"></a>
   __Solution:__
 
   1. To reactivate the `Toolbox` ![](/fig/mAction.png) click on the `View Tab`.
@@ -272,7 +272,7 @@ align: center
 Reactivate toolbox.
 :::
 
-## The North arrow is not syncing with the corresponding map
+## The North arrow is not syncing with the corresponding map <a id="the-north-arrow-is-not-syncing-with-the-corresponding-map"></a>
 __Solution:__
 
 There are two places where you have to define which map the north arrow should sync with.
@@ -292,7 +292,7 @@ Correct reference to map.
 See also: Geographic Information Systems
 https://gis.stackexchange.com/questions/265095/north-arrow-not-syncing-with-map-qgis-2-18#:~:text=1%20Answer&text=2-,There%20are%20TWO%20places%20where%20you%20have%20to%20tell%20it,and%20tell%20it%20which%20map
  
-## Invalid Geometry
+## Invalid Geometry <a id="invalid-geometry"></a>
 
 If the error message `Invalid Geometries` appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly).
 
@@ -300,7 +300,7 @@ __Solution:__
 
 These errors in the geometries can be corrected by running `Fix Geometries`. Search for it in the Processing Toolbox.
 
-## Coordinate systems: What do all these terms mean?
+## Coordinate systems: What do all these terms mean? <a id="coordinate-systems-what-do-all-these-terms-mean"></a>
 
 Geospatial datasets consist of three basic data:
 
@@ -324,7 +324,7 @@ For example:
 For further detailed information about coordinate systems have also a look at: https://ihatecoordinatesystems.com/#correct-crs
 :::
 
-## Coordinate systems: How do I redefine a dataset's coordinate system?
+## Coordinate systems: How do I redefine a dataset's coordinate system? <a id="coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system"></a>
 
 Redefining means the metadata about the coordinate system is modified but the coordinates are not. This contrasts with reprojections and transformations, which modify both the coordinate system and the coordinates.
 
@@ -342,7 +342,7 @@ https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs
 
 + From the command line, for raster datasets, use `gdal_edit` with the `-a_srs` parameter. See also: https://gdal.org/programs/gdal_edit.html#cmdoption-a_srs.py 
 
-## Coordinate systems: Why is Mercator ever used if it's so distorted?
+## Coordinate systems: Why is Mercator ever used if it's so distorted? <a id="coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted"></a>
 
 Mercator is the only conformal cylindrical map projection. Cylindrical map projections mean the whole earth fits into a rectangle, which is very convenient for data processing algorithms that are used to working with rectangular images. Conformal means that angles and shapes are always preserved: north is always up, squares are always square, etc.. Using a non-conformal projection would make things look stretched, squashed, and/or rotated when zooming in.
 
@@ -359,7 +359,7 @@ Mercator projection.
 Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor to correct measurements (See also: https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor).  
 The only time the distortion is problematic is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.
 
-## Coordinate systems: My dataset is not located where it should be!
+## Coordinate systems: My dataset is not located where it should be! <a id="coordinate-systems-my-dataset-is-not-located-where-it-should-be"></a>
 Your dataset probably has the wrong coordinate system. This is the more general case of the previous problem. This can happen if the coordinate system is missing altogether, in which case GIS software often assumes that it is the same coordinate system as a previously loaded dataset, or the coordinate system set in the "project" or "map document".
 
 __Solution:__
@@ -397,7 +397,7 @@ align: center
 Check redefining CRS.
 :::
 
-## Coordinate systems: What coordinate system should my dataset be in?
+## Coordinate systems: What coordinate system should my dataset be in? <a id="coordinate-systems-what-coordinate-system-should-my-dataset-be-in"></a>
 
 A data point's attributes give context to where on the earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box". 
 
@@ -465,7 +465,7 @@ You can run this sample code yourself, or use this form:
 See also the following [__Wiki_Page__](../Wiki/en_qgis_projections_wiki.md) `Projections`.
 
 
-## My dataset is slightly offset from where it should be!
+## My dataset is slightly offset from where it should be! <a id="my-dataset-is-slightly-offset-from-where-it-should-be"></a>
 
 Your dataset probably has the wrong longitude/latitude geographic coordinate system (GCS). Different GCSs define slightly different sizes/shapes of the Earth (their ellipsoids) and different positionings on the Earth (their datums). As a result, the same longitude/latitude coordinates in two different GCSs can appear offset, although typically within tens of meters of each other. This can happen even if you are using a projected coordinate system (PCS) whose units are not degrees of longitude/latitude since PCSs have a GCS embedded within them.
 
@@ -492,11 +492,11 @@ __Solution__:
 * If your dataset is in Australia, try redefining it to GDA94 or GDA2020.
 * If your dataset is in China and/or collected with BeiDou, good luck. :weary: 
 
-## Wrong data results or missing data
+## Wrong data results or missing data <a id="wrong-data-results-or-missing-data"></a>
 
 When you get wrong data results or missing data, please check your file names. You should not use file names with capitals, special characters or empty spaces. Always use underscores between the words for the file name.
 
-## File Management Issues
+## File Management Issues <a id="file-management-issues"></a>
 
 There may be different reasons, e.g. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored in different places. In any case, there is a solution: a clear folder structure.
 
@@ -539,8 +539,8 @@ Good data organisation with a fixed and well thought-out folder structure preven
 
 See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
 
-## Specific QGIS problems 
-### Basic settings > Deactivating the automatic projection selection
+## Specific QGIS problems <a id="specific-qgis-problems"></a>
+### Basic settings > Deactivating the automatic projection selection <a id="basic-settings-deactivating-the-automatic-projection-selection"></a>
 After installing QGIS, some basic settings should be changed to avoid possible sources of error.
 If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.
 
@@ -559,13 +559,13 @@ align: center
 Change crs settings in QGIS.
 :::
 
-### Saving regularly
+### Saving regularly <a id="saving-regularly"></a>
 Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand dollars is not completely safe.
 More complex tasks with longer calculation times may still cause problems. Regular saving is therefore recommended.
 
 See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.` 
 
-### GRASS applications
+### GRASS applications <a id="grass-applications"></a>
 
 QGIS also allows the use of tools from external GIS software, such as GRASS GIS. GRASS does not have to be downloaded separately, but is automatically installed when QGIS is installed. GRASS tools are identified by their icon. 
 
@@ -573,11 +573,11 @@ QGIS also allows the use of tools from external GIS software, such as GRASS GIS.
 Please note that the GRASS software is not started when the standard QGIS application is started. Consequently, an error message may appear when using GRASS tools. This can be remedied by opening the QGIS with GRASS application (found via the computer's search function) instead of the standard application.
 :::
 
-### SAGA with Linux
+### SAGA with Linux <a id="saga-with-linux"></a>
 
 SAGA is another external GIS software. SAGA tools are identified by their icon. When using Windows or MacOS as the operating system, SAGA is automatically implemented when QGIS is installed. With Linux, however, SAGA is not installed automatically and must be installed manually. Experience has shown that this installation is not always easy and can cause problems. Alternatively, you can either use a Windows or MacOS virtual box or refrain from using SAGA tools (you will then have to search for alternative tools yourself).
 
-### Umlauts, special characters, spaces in file paths
+### Umlauts, special characters, spaces in file paths <a id="umlauts-special-characters-spaces-in-file-paths"></a>
 
 If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) or spaces, this can lead to problems when these files are processed by QGIS. It is therefore recommended that you avoid these characters in your file paths (write out umlauts, replace spaces with _).
 
@@ -585,11 +585,11 @@ If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) 
 Temporary files are user-specific (if several people use one PC, each person has their own temporary files). The file path therefore contains your user name. If this contains problematic characters, it may therefore be advisable to change it.
 :::
 
-## QGIS Help Access Links
+## QGIS Help Access Links <a id="qgis-help-access-links"></a>
 
 Here you will find further help access links or QGIS community/forum links to address specific issues:
 
-#### QGIS tutorials and tips:
+#### QGIS tutorials and tips: <a id="qgis-tutorials-and-tips"></a>
 + Collection of QGIS tutorials and tips: https://www.qgistutorials.com/en/
 
 + QGIS training manual: https://docs.qgis.org/3.28/en/docs/training_manual/index.html
@@ -604,18 +604,18 @@ Here you will find further help access links or QGIS community/forum links to ad
 
 + QGIS tutorial (CartONG): https://cartong.pages.gitlab.cartong.org/learning-corner/en/6_tutorials/6_3_gis/6_3_1_qgis
 
-#### QGIS community/forums:
+#### QGIS community/forums: <a id="qgis-communityforums"></a>
 + Geographic Information Systems: https://gis.stackexchange.com/?tags=qgis
 
 + QGIS user groups: https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups
 
-#### QGIS YouTube channels: 
+#### QGIS YouTube channels: <a id="qgis-youtube-channels"></a>
 + The best YouTube channels in QGIS and open source gis tools: https://hatarilabs.com/ih-en/the-best-youtube-channels-in-qgis-and-open-source-gis-tools-in-any-language 
 + Absolute beginners guide to QGIS: https://www.youtube.com/watch?v=NHolzMgaqwE
 + QGIS complete tutorial for beginners: https://www.youtube.com/watch?v=d15Xl4OphDk
 + QGIS for beginners: https://www.youtube.com/watch?v=Eg4_duqH5Q4
 + Introduction to QGIS: https://www.youtube.com/watch?v=kxJI5FAGjzQ
 
-#### ChatGPT
+#### ChatGPT <a id="chatgpt"></a>
 + And don't forget ChatGPT https://chat.openai.com/
 It is quick!

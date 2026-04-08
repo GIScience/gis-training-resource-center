@@ -8,7 +8,7 @@
 
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 3: Larger scale accessibility analyses
+# Task 3: Larger scale accessibility analyses <a id="task-3-larger-scale-accessibility-analyses"></a>
 
 There are two main approaches on accessibility analyses: network and cost raster based. In this task we will use both methods on the example of the country Rwanda. For the network based approach we will use the isochrone API of the openrouteservice to generate catchment areas for 5, 10 and 60 minute ranges. The cost raster approach will be conducted with the saga tool `Accumulated Cost` which is already part of the QGIS tools through the SAGA provider. 
 
@@ -34,7 +34,7 @@ Use the following files:
 - `Walking.tif` : Friction layer for walking mobility profiles
 - `population.tif` : Population counts from WorldPop
  
-## STEP 1: Network - Isochrones
+## STEP 1: Network - Isochrones <a id="step-1-network-isochrones"></a>
 We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer `rwa_healthcare` as input point layer and 5, 10 and 60 minutes as ranges.
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
@@ -51,7 +51,7 @@ Leave all settings at default except:
 :::
 
 
-## STEP 2: Raster - accumulated cost (Requires SAGA)
+## STEP 2: Raster - accumulated cost (Requires SAGA) <a id="step-2-raster-accumulated-cost-requires-saga"></a>
 
 Open the `Processing Toolbox` and scroll down to `SAGA` choose `Raster Analysis` and then `Accumulated Cost` or enter "Accumulated Cost" in the search bar. 
 Leave all settings at default except:

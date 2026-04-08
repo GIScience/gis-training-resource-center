@@ -1,4 +1,4 @@
-# Agenda de capacitación y material de apoyo
+# Agenda de capacitación y material de apoyo <a id="agenda-de-capacitacion-y-material-de-apoyo"></a>
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
@@ -6,7 +6,7 @@ Una agenda es donde las personas participantes pueden encontrar toda la informac
 
 El plan puede diseñarse en diferentes formatos, como material impreso o pizarras digitales como [miro boards](https://miro.com) o [padlets](https://padlet.com). Una agenda digital ofrece a las personas participantes la posibilidad de hacer preguntas y revisar los aportes de otros participantes en cualquier momento (por ejemplo, mientras se preparan para la siguiente sesión); sin embargo, requiere una conexión a internet. También puedes crear diagramas de flujo utilizando [draw.io](https://app.diagrams.net).
 
-## ¿Qué debe incluir una agenda?
+## ¿Qué debe incluir una agenda? <a id="que-debe-incluir-una-agenda"></a>
 
 La agenda debe contener toda la información relevante para la capacitación: horarios, fechas, lugar o enlace a la videollamada (incluyendo instrucciones para ingresar), requisitos (en la mayoría de los casos, una computadora con QGIS instalado y suficiente espacio en disco para descargar los datos de los ejercicios), así como lo que las personas participantes pueden esperar y lo que los facilitadores esperan de ellas.
 
@@ -34,7 +34,7 @@ Debes adaptar la agenda a tus necesidades y a las de las personas participantes.
 También puedes añadir notas adhesivas o espacios en blanco (presenciales o digitales) donde las personas participantes puedan escribir sus notas, hallazgos, ideas o preguntas.
 :::
 
-## Ideas para la agenda
+## Ideas para la agenda <a id="ideas-para-la-agenda"></a>
 
 Sé creativo al preparar la agenda, ya que puedes usarla para involucrar activamente a las personas participantes durante la capacitación y hacer que se sientan más seguras para hacer preguntas. Lo más importante es que las capacitaciones sean un entorno de aprendizaje abierto, donde se reconozcan las diferentes necesidades de las personas participantes.
 

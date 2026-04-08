@@ -1,6 +1,6 @@
-# OpenStreetMap (OSM) Data
+# OpenStreetMap (OSM) Data <a id="openstreetmap-osm-data"></a>
 
-## Geofabrik
+## Geofabrik <a id="geofabrik"></a>
 
 The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM. 
 
@@ -43,7 +43,7 @@ The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM
 As you can see, Geofabrik is great if you want to get complete OSM datasets for 
 whole countries or regions. 
 
-## QuickOSM
+## QuickOSM <a id="quickosm"></a>
 
 The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.  
 You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources: 
@@ -54,7 +54,7 @@ You will need to formulate a data query to find the data that you are looking fo
 
 This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
 
-## Overpass Turbo
+## Overpass Turbo <a id="overpass-turbo"></a>
 
 [Overpass Turbo](https://overpass-turbo.eu) is a web-based data export tool for 
 OSM. By running a query, you can download the data and import it into your project. 
@@ -165,5 +165,5 @@ Screenshot of how to export query in overpassturbo
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 :::
 <!---
-### Ohsome tools
+### Ohsome tools <a id="ohsome-tools"></a>
 -->

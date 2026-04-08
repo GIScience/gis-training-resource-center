@@ -1,6 +1,6 @@
-# Exercise: Data preparation (Importing PDF tables into QGIS)
+# Exercise: Data preparation (Importing PDF tables into QGIS) <a id="exercise-data-preparation-importing-pdf-tables-into-qgis"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 4 2
 
@@ -34,7 +34,7 @@ First, we need to extract the data from the PDF-file and save it to a `.csv`- fi
 :::
 
 
-## Instructions for the Trainers
+## Instructions for the Trainers <a id="instructions-for-the-trainers"></a>
 
 :::{attention}
 
@@ -45,14 +45,14 @@ This exercise makes use of the [tabula.technology tool](tabula.technology), an o
 :::{dropdown} __Trainers Corner__ 
 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -72,9 +72,9 @@ __Wrap up:__
 
 :::
 
-## Exercise
+## Exercise <a id="exercise"></a>
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip
@@ -89,7 +89,7 @@ Download the datasets [here](https://nexus.heigit.org/repository/gis-training-re
 | Percent distribution of households by material used for walls | [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/content/statistical-tables-pslm-2019-20) | Table 7.7 in the *Pakistan Social and living Standards Measurement Survey (2019-20)* shows the materials used for walls per household in percents. | 
 
 
-### Task 1: Get the data from the PDF file into a CSV file
+### Task 1: Get the data from the PDF file into a CSV file <a id="task-1-get-the-data-from-the-pdf-file-into-a-csv-file"></a>
 
 :::{Topic} Context
 
@@ -186,7 +186,7 @@ width: 550 px
 
 Congratulations, the data from the PDF has been extracted into a CSV file!
 
-### Task 2: Clean the data from errors and unwanted entries
+### Task 2: Clean the data from errors and unwanted entries <a id="task-2-clean-the-data-from-errors-and-unwanted-entries"></a>
 
 :::{topic} Context
 The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.
@@ -266,7 +266,7 @@ width: 350 px
 
 Great! Now we are ready to import the CSV-file into QGIS!
 
-### Task 3: Import the Data into QGIS
+### Task 3: Import the Data into QGIS <a id="task-3-import-the-data-into-qgis"></a>
 
 :::{topic}
 With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a [attribute join](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins) as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
@@ -321,7 +321,7 @@ The "Join attributes by field value" parameters
 
 Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!
 
-### Task 4: Visualisation of the Data
+### Task 4: Visualisation of the Data <a id="task-4-visualisation-of-the-data"></a>
 
 :::{topic}
 

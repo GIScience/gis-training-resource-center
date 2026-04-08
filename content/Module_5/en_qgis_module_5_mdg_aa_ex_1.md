@@ -8,9 +8,9 @@
 ::::
 
 
-# Estimating Exposed Population – Aina’s Manual Approach
+# Estimating Exposed Population – Aina’s Manual Approach <a id="estimating-exposed-population-ainas-manual-approach"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -65,18 +65,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings.
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -96,7 +96,7 @@ __Wrap up:__
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip
@@ -149,7 +149,7 @@ width: 750 px
 
 :::
 
-# Tasks: 
+# Tasks: <a id="tasks"></a>
 
 Before developing the automated model, Aina used to estimate the exposed population manually whenever a cyclone approached Madagascar. In this task, you will follow the steps she used in the past by working with the historical track of **Cyclone Harald**, WorldPop raster data, and administrative boundaries.
 
@@ -286,7 +286,7 @@ align: center
 Classifying the exposed population into five classes.
 :::
 
-# Results
+# Results <a id="results"></a>
 
 Your results should look something like this: 
 

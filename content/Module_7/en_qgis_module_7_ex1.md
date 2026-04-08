@@ -7,11 +7,11 @@
 
 ::::
 
-# Exercises 1: Automation
+# Exercises 1: Automation <a id="exercises-1-automation"></a>
 
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 
 
@@ -66,18 +66,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -97,7 +97,7 @@ __Wrap up:__
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_7/Exercise_1.zip
@@ -147,7 +147,7 @@ width: 750 px
 
 ```
 
-## Task 1: Estimating Exposed Population – Aina’s Manual Approach
+## Task 1: Estimating Exposed Population – Aina’s Manual Approach <a id="task-1-estimating-exposed-population-ainas-manual-approach"></a>
 
 Before developing the automated model, Aina used to estimate the exposed population manually whenever a cyclone approached Madagascar. In this task, you will follow the steps she used in the past by working with the historical track of **Cyclone Harald**, WorldPop raster data, and administrative boundaries.
 
@@ -295,7 +295,7 @@ Visualisation de la population exposée en cinq classes.
 ```
 
 
-## Task 2: Automation of Exposed Population Estimation – Aina's Model
+## Task 2: Automation of Exposed Population Estimation – Aina's Model <a id="task-2-automation-of-exposed-population-estimation-ainas-model"></a>
 
 After manually estimating exposed populations in past cyclone seasons, Aina has decided to prepare an **automated model** using the **QGIS Graphical Modeller**. This will help her move faster and avoid repeating the same steps manually each time a cyclone is forecasted.
 
@@ -586,7 +586,7 @@ Definition of the model input: Population Raster
 
 
 
-## Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
+## Task 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers <a id="task-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers"></a>
 
 After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
 
@@ -897,7 +897,7 @@ Résultats du modèle de la tâche 3 affichés dans QGIS, y compris les pourcent
 
 ---
 
-## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers
+## Task 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers <a id="task-4-visualizing-cyclone-impact-results-aina-styles-her-layers"></a>
 
 Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.
 
@@ -905,7 +905,7 @@ To save time, Aina doesn’t want to adjust colors and legends manually each tim
 
 In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.
 
-### 1. **Load Required Layers (if not already loaded)**
+### 1. **Load Required Layers (if not already loaded)** <a id="1-load-required-layers-if-not-already-loaded"></a>
 
 Make sure the following layers are already loaded into your QGIS project. These are outputs from **Task 3**:
 
@@ -921,7 +921,7 @@ If any are missing:
 
 ---
 
-### 2. **Apply Predefined Style Files**
+### 2. **Apply Predefined Style Files** <a id="2-apply-predefined-style-files"></a>
 Apply the following`.qml` style files to the respective layers:
 
 | **Layer**                              | **Style File**                            |
@@ -988,7 +988,7 @@ Carte affichant le nombre total d’établissements scolaires exposés par distr
 
 
 
-### 3. **Style Percentage Layers Manually**
+### 3. **Style Percentage Layers Manually** <a id="3-style-percentage-layers-manually"></a>
 
 Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.
 
@@ -1027,7 +1027,7 @@ After duplicating the layer, rename the new one to:
 
 ---
 
-### 4. **Save Your New Styles for Reuse**
+### 4. **Save Your New Styles for Reuse** <a id="4-save-your-new-styles-for-reuse"></a>
 
 Save your manually created styles as `.qml` files for future reuse.
 
@@ -1049,7 +1049,7 @@ Save your manually created styles as `.qml` files for future reuse.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
-### 5. *(Optional)* Import Styles into Your QGIS Library
+### 5. *(Optional)* Import Styles into Your QGIS Library <a id="5-optional-import-styles-into-your-qgis-library"></a>
 
 To reuse your styles in any future project:
 
@@ -1061,7 +1061,7 @@ The styles will now appear as presets in the **Layer Styling Panel**.
 
 ---
 
-## Task 5: Quick Map Creation – Aina Uses Map Templates
+## Task 5: Quick Map Creation – Aina Uses Map Templates <a id="task-5-quick-map-creation-aina-uses-map-templates"></a>
 
 After all the hard work of analyzing data and styling layers, Aina is ready to **share her results**. But creating a professional-looking map from scratch every time would be slow and repetitive.  
 
@@ -1159,7 +1159,7 @@ To fix this, open the table properties in the layout and **reduce the font size*
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
-### ✅ Final Checklist
+### ✅ Final Checklist <a id="final-checklist"></a>
 
 | Task                                           | Done |
 |------------------------------------------------|------|
@@ -1186,7 +1186,7 @@ align: center
 ---
 ```
 
-## Task 6: Exporting Model Results for the Operations Team
+## Task 6: Exporting Model Results for the Operations Team <a id="task-6-exporting-model-results-for-the-operations-team"></a>
 
 **Background – Aina Supports Decision Makers**
 
@@ -1382,7 +1382,7 @@ Résultats finaux du modèle exportés dans un tableau prêt à être utilisé.
 
 
 
-## Task 7: Reachability of health Posts from CRM Warehouses
+## Task 7: Reachability of health Posts from CRM Warehouses <a id="task-7-reachability-of-health-posts-from-crm-warehouses"></a>
 
 __Context:__
 
@@ -1393,7 +1393,7 @@ To make fast, data-driven decisions, Aina wants to know **which health posts are
 Her goal is to create a clear visual map showing reachable vs. non-reachable health posts — and share this with decision-makers as quickly as possible.
 
 
-### 1. Filter Health Posts from the National Health Facility Dataset
+### 1. Filter Health Posts from the National Health Facility Dataset <a id="1-filter-health-posts-from-the-national-health-facility-dataset"></a>
 
 Before checking which facilities are reachable, Aina needs to isolate **health posts** from the broader dataset of all health facilities.
 
@@ -1418,7 +1418,7 @@ Before checking which facilities are reachable, Aina needs to isolate **health p
 5. **Remove the filter** or original layer from your project to avoid confusion.
 > 💡 **Tip**: Filtering directly in QGIS lets you work with a specific subset of features without modifying the original dataset.
 
-### 2. Load Isochrone Layers for the Three CRM Warehouses
+### 2. Load Isochrone Layers for the Three CRM Warehouses <a id="2-load-isochrone-layers-for-the-three-crm-warehouses"></a>
 
 Aina knows that only **three warehouses** stock the necessary medical supplies:  
 **Antananarivo**, **Maroantsetra**, and **Tolanaro**. She will now load the isochrone layers for each of these warehouses to begin analyzing service areas.
@@ -1457,7 +1457,7 @@ Aina knows that only **three warehouses** stock the necessary medical supplies:
      `CRM_warehouse_isochrones_style.qml`
    - Click `Open`, then `Apply` and `OK`
 
-### 3. Visualizing Health Post Reachability from CRM Warehouses
+### 3. Visualizing Health Post Reachability from CRM Warehouses <a id="3-visualizing-health-post-reachability-from-crm-warehouses"></a>
 Aina needs to identify which health posts can be reached by road from three key CRM warehouses (Antananarivo, Maroantsetra, and Tolanaro) **within 10 hours of travel time**. She will do this manually by combining the 10-hour isochrones from these warehouses and comparing them to the national health post dataset.
 1. **Merge the Isochrone Layers from the Three Warehouses**  
    - In the **Processing Toolbox**, search for `Merge Vector Layers`.  

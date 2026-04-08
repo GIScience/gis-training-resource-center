@@ -1,8 +1,8 @@
-# General Geodata
+# General Geodata <a id="general-geodata"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Subsections:
+## Subsections: <a id="subsections"></a>
 - [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
 - [Geodata import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 - [OpenStreetMap (OSM) Data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html)

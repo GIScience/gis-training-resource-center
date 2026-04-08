@@ -1,4 +1,4 @@
-# Drought EAP for southern Madagascar: Hazard and Vulnerability analysis
+# Drought EAP for southern Madagascar: Hazard and Vulnerability analysis <a id="drought-eap-for-southern-madagascar-hazard-and-vulnerability-analysis"></a>
 
 
 :::{topic} Context
@@ -16,7 +16,7 @@ Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respecti
 :::
 
 
-## Part 1: Historical rainfall deficit recurrence map (CHIRPS-based, 2000–2024) aggregated at district level
+## Part 1: Historical rainfall deficit recurrence map (CHIRPS-based, 2000–2024) aggregated at district level <a id="part-1-historical-rainfall-deficit-recurrence-map-chirps-based-20002024-aggregated-at-district-level"></a>
  
 
 __Objective:__
@@ -50,7 +50,7 @@ __Questions:__
 
 
 
-### Workflow: Mapping hazard recurrence 
+### Workflow: Mapping hazard recurrence <a id="workflow-mapping-hazard-recurrence"></a>
 
 1. Use GEE to aggregate the daily CHIRPS v3 to monthly totals for the time period 2000 to 2024.
 2. Calculate the monthly climatology (mean per month across all years).
@@ -124,7 +124,7 @@ __Output:__
     - `def_freq`: def count / number of months
     - maybe: counts by season (DJF, MAM, etc.)
 
-### Preliminary Map Results
+### Preliminary Map Results <a id="preliminary-map-results"></a>
 
 :::{figure} /fig/AA/mdg_drought_EAP/260226_Rainfall_30_adm2_recurrence_count.png
 ---
@@ -463,7 +463,7 @@ Export.image.toDrive({
 :::
 
 
-## Part 2: A recurrent IPC Phase 3+ exposure layer (if feasible)
+## Part 2: A recurrent IPC Phase 3+ exposure layer (if feasible) <a id="part-2-a-recurrent-ipc-phase-3-exposure-layer-if-feasible"></a>
 
 
 __Objective:__ Complement meteorological layer with documented humanitarian impact evidence.
@@ -560,7 +560,7 @@ If you use ML1, you must label it as projected Crisis+ risk recurrence, not “o
 
 > Should I use recurrence rate for ipc phase because reporting dates are irregular in FEWSNET. 
 
-### Calculating the IPC Phase 
+### Calculating the IPC Phase <a id="calculating-the-ipc-phase"></a>
 
 :::{note} 
 Make sure the units are in meters when calculating area.
@@ -599,7 +599,7 @@ width: 500 px
 Recurrence of IPC Acute Food Insecurity Phase 3 or higher in Madagascar 2016 - 2025.
 
 
-## Part 3: A simple composite drought vulnerability map combining the above
+## Part 3: A simple composite drought vulnerability map combining the above <a id="part-3-a-simple-composite-drought-vulnerability-map-combining-the-above"></a>
 
 __Objective:__
 

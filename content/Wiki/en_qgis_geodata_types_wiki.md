@@ -1,4 +1,4 @@
-# Types of Geodata
+# Types of Geodata <a id="types-of-geodata"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
@@ -7,7 +7,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 * Raster data
 * Non-spatial data transformed in geodata
 
-# Vector data
+# Vector data <a id="vector-data"></a>
 
 Vector data can have the following data formats:
 
@@ -19,7 +19,7 @@ Vector data can have the following data formats:
 | `.gpx`               | GPS Exchange Format     | Geodata format for the exchange of coordinates. For example for waypoints of tracks.                                                                |
 | `.geojson`           | GeoJSON                 | Similar to shapefiles, but stores all information in a single file.                                                                                 |
 
-# Raster data 
+# Raster data <a id="raster-data"></a>
 
 Raster data can have the following data formats:
 | Filename extension  | Name                  | Description                                                                                                                                                          |
@@ -28,14 +28,14 @@ Raster data can have the following data formats:
 | `.nc`                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets                                           |
 | `.asc`                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |
 
-## Text data
+## Text data <a id="text-data"></a>
 
  | Filename extension | Name                   | Description                                                                   |
  |--------------------|------------------------|-------------------------------------------------------------------------------|
  | `.xls`               | EXCEL                  | Data format used for EXCEL. EXCEL is a widely used spreadsheet program.       |
  | `.csv`               | comma-separated values | Very common data format which separates data with commas or other delimiters. |
 
-## Good practices
+## Good practices <a id="good-practices"></a>
 
 The video below gives a good overview of geodata formats and gives tips on file naming and other good practices.
 

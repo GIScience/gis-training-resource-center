@@ -1,12 +1,12 @@
-# GIS in Anticipatory Action
+# GIS in Anticipatory Action <a id="gis-in-anticipatory-action"></a>
 
-## Why GIS for Anticipatory Action?
+## Why GIS for Anticipatory Action? <a id="why-gis-for-anticipatory-action"></a>
 
 Anticipatory Action (AA) seeks to reduce humanitarian impacts by taking action before a hazard escalates into a disaster. Geographic Information Systems (GIS) support this approach by enabling spatial risk analysis, monitoring triggers and thresholds, estimating potential impacts, and identifying where early actions should be targeted. By integrating these capabilities, GIS helps humanitarian actors make timely, evidence-based decisions. This section of the IFRC GIS Training Platform highlights practical GIS workflows for Anticipatory Action, grounded in real-world humanitarian operations.
 
 ---
 
-## What You’ll Find in This Section
+## What You’ll Find in This Section <a id="what-youll-find-in-this-section"></a>
 
 The GIS in Anticipatory Action content brings together **case studies, applied analyses, and exercises** that demonstrate how GIS supports AA across different hazards and countries.
 
@@ -23,9 +23,9 @@ This content is designed for:
 
 ---
 
-## Available Case Studies and Analyses
+## Available Case Studies and Analyses <a id="available-case-studies-and-analyses"></a>
 
-### Cyclone Anticipatory Action – Madagascar
+### Cyclone Anticipatory Action – Madagascar <a id="cyclone-anticipatory-action-madagascar"></a>
 **Focus:** Forecast-based risk and impact analysis for tropical cyclones  
 **Key elements:**
 - Spatial exposure and vulnerability analysis
@@ -41,7 +41,7 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 
 ---
 
-### Drought Early Action Protocol Trigger Analysis – Somalia
+### Drought Early Action Protocol Trigger Analysis – Somalia <a id="drought-early-action-protocol-trigger-analysis-somalia"></a>
 **Focus:** Trigger monitoring and threshold analysis for drought  
 **Key elements:**
 - Hazard indicators and thresholds
@@ -57,7 +57,7 @@ __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
 ---
 
-### 🌊 Historical Impact Assessment – Flooding in Sudan
+### 🌊 Historical Impact Assessment – Flooding in Sudan <a id="historical-impact-assessment-flooding-in-sudan"></a>
 **Focus:** Retrospective analysis to inform anticipatory planning  
 **Key elements:**
 - Historical flood impact data
@@ -81,7 +81,7 @@ __Historical Impact Assessment of Flooding in Sudan__
 
 ---
 
-## Exercises: GIS for Anticipatory Action
+## Exercises: GIS for Anticipatory Action <a id="exercises-gis-for-anticipatory-action"></a>
 
 In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:
 
@@ -100,7 +100,7 @@ These exercises can be used independently or embedded into broader AA-focused tr
 
 ---
 
-## Tools and Methods Used in GIS for AA
+## Tools and Methods Used in GIS for AA <a id="tools-and-methods-used-in-gis-for-aa"></a>
 
 Many GIS analyses in Anticipatory Action analyses rely on **specialised tools and platforms**.
 These tools are documented in the **Tools & Methods** section of this platform.
@@ -118,7 +118,7 @@ Each tool is documented separately to highlight:
 
 ---
 <!---
-## How This Content Fits into the Platform
+## How This Content Fits into the Platform <a id="how-this-content-fits-into-the-platform"></a>
 
 - **Learn:** Build foundational GIS skills through modules and exercises  
 - **Apply:** Use GIS in real Anticipatory Action contexts (this section)  
@@ -129,7 +129,7 @@ Together, these components support both **capacity building** and **operational 
 --->
 ---
 
-## Getting Started
+## Getting Started <a id="getting-started"></a>
 
 If you are new to GIS for Anticipatory Action:
 1. Start with the **basic GIS modules**

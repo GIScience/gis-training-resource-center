@@ -1,4 +1,4 @@
-# Cómo enseñar GIS
+# Cómo enseñar GIS <a id="como-ensenar-gis"></a>
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
@@ -7,7 +7,7 @@ Aprender GIS puede ser un desafío, especialmente para personas que son nuevas e
 Por ello, debemos ser conscientes de equilibrar la práctica y la teoría al enseñar GIS.  
 En este artículo, presentaremos buenas prácticas para enseñar GIS según nuestra experiencia. Comenzaremos discutiendo la diferencia entre enseñar teoría y enseñar mediante ejercicios prácticos, y la importancia de conectar GIS con su profesión o requerimientos laborales. Posteriormente, el artículo aborda consideraciones prácticas al enseñar GIS y métodos para evitar y resolver problemas.
 
-## Teoría vs. práctica
+## Teoría vs. práctica <a id="teoria-vs-practica"></a>
 
 En general, queremos enseñar GIS de manera que las personas comprendan cómo realizar tareas específicas necesarias en su trabajo de la forma más sencilla posible. Esto significa que nos enfocamos en ejercicios prácticos con conexión al mundo real, para que sea fácil ver cómo pueden usar GIS en su trabajo. Sin embargo, a veces necesitamos enseñar cosas teóricamente. Por lo general, porque son tan esenciales que las personas deben comprender el concepto antes de realizar cualquier acción en GIS (por ejemplo, el concepto de capa) o porque no conocer el concepto genera errores y problemas al trabajar con GIS y geodatos (por ejemplo, proyecciones).
 
@@ -24,7 +24,7 @@ Equilibrar teoría y práctica es esencial en la capacitación en GIS. A continu
 * Hacer la conexión entre la teoría y el uso práctico de GIS. Por ejemplo, mostrar qué tipo de errores puede generar usar una proyección incorrecta y por qué es importante usar proyecciones como UTM, o la diferencia entre sistemas de coordenadas métricas y geográficas (por ejemplo, al usar metros o kilómetros al crear buffers).  
 
 (handson)=
-## Ejercicios prácticos
+## Ejercicios prácticos <a id="ejercicios-practicos"></a>
 
 Los ejercicios prácticos son altamente efectivos al enseñar GIS en todos los niveles de habilidad. Desde explorar la interfaz hasta ejecutar un análisis espacial completo, realizar estas tareas permite comprender mejor cómo trabajar con GIS. Siempre se recomienda priorizar ejercicios prácticos sobre presentaciones teóricas.
 
@@ -68,7 +68,7 @@ Los ejercicios en grupo dependen más del trabajo independiente de las personas 
 :::
 ::::
 
-### Inicio de un ejercicio
+### Inicio de un ejercicio <a id="inicio-de-un-ejercicio"></a>
 
 Independientemente del tipo de ejercicio, se deben repasar brevemente los siguientes puntos con las personas participantes al comienzo del ejercicio:
 
@@ -76,7 +76,7 @@ Independientemente del tipo de ejercicio, se deben repasar brevemente los siguie
 2. __Contexto:__ Idealmente, el ejercicio está basado en un ejemplo real o un escenario ficticio dentro del trabajo humanitario. Debes explicar rápidamente el contexto y la historia. Un ejemplo es el ejercicio del módulo 3 ([Ejercicio 4: Inundaciones en Nigeria](https://giscience.github.io/gis-training-resource-center/content/Module_3/es_qgis_module_3_ex4.html)).
 3. __Datos del ejercicio:__ La mayoría de los ejercicios prácticos usan datos reales (por ejemplo, de [HDX](https://data.humdata.org)). Cada conjunto de datos debe explicarse brevemente. Esta información está disponible en cada ejercicio en la plataforma. Asegúrate de que todos hayan descargado los datos antes de comenzar. Algunos participantes no están familiarizados con archivos `zip`. Asegúrate de que descompriman las carpetas antes de importarlas en QGIS y dedica tiempo a resolver otros problemas relacionados con los datos del ejercicio.
 
-### Durante el ejercicio: Paso a paso
+### Durante el ejercicio: Paso a paso <a id="durante-el-ejercicio-paso-a-paso"></a>
 Si realizas un ejercicio paso a paso, puedes seguir estos principios básicos. Explica el propósito de cada paso, por ejemplo: _“En este paso cargamos los datos en QGIS”_ o _“En este paso, recortamos todos los puntos excepto los del área de interés”_. Muestra cada paso tres veces, ya sea en pantalla grande o compartiendo tu pantalla (remoto). Esto requerirá paciencia. Las personas participantes necesitarán alternar entre observarte y orientarse en la interfaz de QGIS en su propio equipo para ejecutar los pasos. Esto llevará tiempo y no tiene sentido apresurarse. El objetivo es que nadie se quede atrás. Sé deliberado y muestra todo paso a paso, incluso lo más pequeño. Pregunta varias veces si hay problemas.
 
 ```{tip} ¡No uses botones de icono! 
@@ -89,7 +89,7 @@ Usa las pestañas o la caja de herramientas de geoprocesamiento en lugar de hace
 
 Una vez que todos hayan logrado los resultados deseados, se puede continuar.
 
-### Durante el ejercicio: Trabajo en grupo
+### Durante el ejercicio: Trabajo en grupo <a id="durante-el-ejercicio-trabajo-en-grupo"></a>
 Si realizas trabajo en grupo, hay otros aspectos a considerar:
 
 1. Distribuye a las personas participantes en grupos después de la introducción al ejercicio. Explica si y cómo deben presentar los resultados.  
@@ -99,10 +99,10 @@ Si realizas trabajo en grupo, hay otros aspectos a considerar:
 5. Al finalizar el trabajo en grupo, reúne a los participantes y verifica si hay problemas o dudas.  
 6. Permite que los grupos presenten sus resultados.
 
-### Final de un ejercicio
+### Final de un ejercicio <a id="final-de-un-ejercicio"></a>
 Después de un ejercicio, toma tiempo para preguntar si lo encontraron relevante y si están cómodos con el nivel de complejidad. Reflexiona con ellos sobre posibles aplicaciones de lo aprendido. Fomenta la discusión entre los participantes y planifica tiempo para que intercambien experiencias.
 
-## Discusión y trabajo en grupo
+## Discusión y trabajo en grupo <a id="discusion-y-trabajo-en-grupo"></a>
 
 La discusión y el trabajo en grupo son fundamentales en la capacitación en GIS, fomentando colaboración, pensamiento crítico e intercambio de conocimientos. Al participar en actividades colaborativas, los participantes pueden profundizar en los conceptos y metodologías de GIS, obteniendo valiosos aprendizajes de sus pares. Razones clave para incluir discusión y trabajo en grupo:
 
@@ -114,7 +114,7 @@ La discusión y el trabajo en grupo son fundamentales en la capacitación en GIS
 
 Incorporar discusión y trabajo en grupo crea entornos dinámicos donde los participantes colaboran, aprenden y aplican conceptos y habilidades de GIS de manera práctica.
 
-## GIS para resolver problemas reales
+## GIS para resolver problemas reales <a id="gis-para-resolver-problemas-reales"></a>
 
 En el mundo acelerado de la ayuda humanitaria, el tiempo es un recurso valioso y asistir a quienes lo necesitan es prioritario. La motivación de los participantes depende de ver el valor que GIS aporta a su trabajo diario. Por ello, siempre se deben usar ejemplos, datos y ejercicios de la vida real. Los ejercicios abstractos son menos efectivos porque los participantes no comprenden la relevancia de los métodos y flujos de trabajo.
 
@@ -132,7 +132,7 @@ Consejos prácticos para hacer los ejercicios relevantes para el trabajo humanit
 * __Cumplimiento de la misión:__ Presenta ejemplos donde GIS fue crucial para cumplir una misión.  
 * __Proceso de planificación:__ Permite que los participantes identifiquen mapas y productos más relevantes para su trabajo.
 
-## Practicar resolución de problemas: ¿Qué hacer si estás atascado?
+## Practicar resolución de problemas: ¿Qué hacer si estás atascado? <a id="practicar-resolucion-de-problemas-que-hacer-si-estas-atascado"></a>
 
 Trabajar con GIS implica que en algún momento no sabrás cómo proceder. Por ejemplo, mostrar solo ciertas partes de la tabla de atributos en tu mapa impreso.
 
@@ -146,7 +146,7 @@ Dominar cada función de QGIS es impráctico. En cambio, desarrollar métodos de
 * __Uso de chatbots y asistentes de IA:__ Introduce asistentes IA como ChatGPT, entrenados para responder consultas sobre QGIS y guiar en resolución de problemas. Enseña a interactuar eficazmente con estos asistentes.  
 * __Participar en grupos de usuarios de QGIS:__ Anima a [unirse a grupos de usuarios locales o en línea](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups) y al grupo SIMS Geo en Slack para networking, intercambio de conocimientos y mentoría.
 
-## Errores, problemas y obstáculos comunes
+## Errores, problemas y obstáculos comunes <a id="errores-problemas-y-obstaculos-comunes"></a>
 
 Las personas nuevas en GIS suelen tropezar con los mismos obstáculos. Cada aplicación GIS tiene desafíos y errores típicos, como manejar mal shapefiles, no ver datos en el lienzo por el orden de capas o usar la herramienta incorrecta por nombres similares (`Join by location` y `Join by location (summary)`).
 

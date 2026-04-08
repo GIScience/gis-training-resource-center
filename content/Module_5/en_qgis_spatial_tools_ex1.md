@@ -7,9 +7,9 @@
 
 ::::
 
-# Exercise 1: Health site distribution in the Saint Louis region
+# Exercise 1: Health site distribution in the Saint Louis region <a id="exercise-1-health-site-distribution-in-the-saint-louis-region"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -56,18 +56,18 @@ __Relevant Wiki Articles:__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -87,7 +87,7 @@ __Wrap up:__
 
 :::
 
-### Data
+### Data <a id="data"></a>
 
 Download the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_1/Module_5_Exercise_1_Healthsite_distribution_Saint_Louis_region.zip) and unzip the files.
 
@@ -100,7 +100,7 @@ Download the datasets [here](https://nexus.heigit.org/repository/gis-training-re
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 :::
 
-### Task
+### Task <a id="task"></a>
 
 The goal of this exercise will be to assess the health site distribution in the Saint Louis region in Senegal and determine which health sites are prone to flooding.
 

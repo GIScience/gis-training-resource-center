@@ -7,7 +7,7 @@
 ::::
 
 
-# Visualising health facility capacity with multi-variable point symbols
+# Visualising health facility capacity with multi-variable point symbols <a id="visualising-health-facility-capacity-with-multi-variable-point-symbols"></a>
 
 A health facility capacity map is a practical and valuable tool for health preparedness and response. These maps help responders quickly identify the locations of health services, assess their capacity, and determine whether they are operational. In many situations, this information is crucial for making decisions about resource allocation, referral pathways, surge support, and identifying service gaps. The maps are typically based on datasets provided by governments or partner organizations. If official datasets are not available, OpenStreetMap can serve as a good starting point.
 
@@ -24,7 +24,7 @@ Building a Multi-Variable Hospital Capacity Map Step by Step.
 
 In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.
 
-## About the Dataset
+## About the Dataset <a id="about-the-dataset"></a>
 
 The data used in this exercise comes from the Malawi Master Health Facility Registry (MHFR), the official national database of all health facilities in Malawi: **[Malawi - Health Facility Registry](https://data.humdata.org/dataset/malawi-health-facility-registry)**.
 It exists to provide a single, up-to-date source of information for planning and monitoring health services.
@@ -33,7 +33,7 @@ It exists to provide a single, up-to-date source of information for planning and
 ---
 Download the data folder [**here**](https://nexus.heigit.org/repository/gis-training-resource-center/module_4/exercise_6/Module_4_Exercise_Malawi_Health_Facilities_Registry.zip) and save it on your PC. Unzip the .zip file.
 
-### Fields used in this tutorial
+### Fields used in this tutorial <a id="fields-used-in-this-tutorial"></a>
 
 | **Field**                | **Purpose in tutorial**                                     |
 |--------------------------|-------------------------------------------------------------|
@@ -44,15 +44,15 @@ Download the data folder [**here**](https://nexus.heigit.org/repository/gis-trai
 
 These fields are enough to build a clear, multi-variable point map.
 
-## Health Facilit Capacity Map Tutorial
+## Health Facilit Capacity Map Tutorial <a id="health-facilit-capacity-map-tutorial"></a>
 
-### Data preparation
+### Data preparation <a id="data-preparation"></a>
 
 First, we need to load the Malawi - Health Facility Registry dataset into QGIS.
 
 ::::{dropdown} Import the Malawi health facilities CSV into QGIS.
 
-#### Import the Malawi health facilities CSV into QGIS
+#### Import the Malawi health facilities CSV into QGIS <a id="import-the-malawi-health-facilities-csv-into-qgis"></a>
 
 1. In the top menu, go to  
    **Layer → Add Layer → Add Delimited Text Layer…**.
@@ -94,7 +94,7 @@ Next, we need to reduce the points visualised on the map to the facilities that 
 
 ::::{dropdown} Filter the dataset to see only hospitals (Video)
 
-#### Filter the dataset to see only hospitals
+#### Filter the dataset to see only hospitals <a id="filter-the-dataset-to-see-only-hospitals"></a>
 
 1. **Open the attribute table**  
    - Right-click `Malawi_health_facilities_raw` → **Open Attribute Table**.  
@@ -116,7 +116,7 @@ Next, we need to reduce the points visualised on the map to the facilities that 
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_malwai_exampel_hospital_filter.mp4"></video>
 
 ::::
-### Visualising the number of beds with proportional circle methods
+### Visualising the number of beds with proportional circle methods <a id="visualising-the-number-of-beds-with-proportional-circle-methods"></a>
 
 Now that your layer is filtered to show only hospitals, you can create a map that shows hospital capacity using proportional circles.  
 The number of beds (`Number_Beds`) will control the **size** of each symbol.
@@ -124,7 +124,7 @@ The number of beds (`Number_Beds`) will control the **size** of each symbol.
 
 ::::{dropdown} Visualise hospital capacity using proportional (graduated-size) circles (video)
 
-### Visualise hospital capacity using proportional circles (graduated-size)
+### Visualise hospital capacity using proportional circles (graduated-size) <a id="visualise-hospital-capacity-using-proportional-circles-graduated-size"></a>
 
 
 1. **Open the Layer Styling panel**  
@@ -146,7 +146,7 @@ The number of beds (`Number_Beds`) will control the **size** of each symbol.
    - Click **Classify**.  
      QGIS will create size classes based on the range of bed numbers in your dataset.
 
-#### Adjust the classes manually (recommended)
+#### Adjust the classes manually (recommended) <a id="adjust-the-classes-manually-recommended"></a>
 
 The data range is **1–200 beds**, but only a few hospitals have more than **80 beds**.  
 Most hospitals are small or medium-sized.
@@ -204,7 +204,7 @@ Proportional circles: beds classes
 ```
 :::
 ::::
-### Adding visualisation of operational status with colour
+### Adding visualisation of operational status with colour <a id="adding-visualisation-of-operational-status-with-colour"></a>
 
 To visualise the operational status of each hospital (operational or non-operational) alongside its bed capacity, we can use QGIS’s data-defined override functionality. A **data-defined override** allows you to control a symbol property—such as colour, size, rotation, or opacity—using an expression or an attribute value from the layer. This means QGIS adjusts the symbol automatically for each feature, based on the data rather than manual styling. Using this technique, we can assign a colour to each hospital according to its status while keeping the proportional circle sizes for bed capacity.
 
@@ -212,7 +212,7 @@ First, we need to open the **data-defined override Expression Builder**.
 
 ::::{dropdown} Open data-defined override to adjust colour based on operational status (Video)
 
-### Open data-defined override to adjust colour based on operational status
+### Open data-defined override to adjust colour based on operational status <a id="open-data-defined-override-to-adjust-colour-based-on-operational-status"></a>
 
 1.  Select your hospital layer (the filtered `Malawi_health_facilities_raw`).  
 2. Right-click the layer → **Properties…** → **Symbology**.
@@ -224,7 +224,7 @@ First, we need to open the **data-defined override Expression Builder**.
 To make this work, we now need to tell QGIS which colour to use for each hospital. Data-defined overrides use the QGIS expression language, which lets you write short rules that are applied automatically to every feature in the layer. In this step, we will write a small expression that checks the value in the STATUS field and assigns the correct colour based on whether the hospital is functional or not.
 
 ::::{dropdown} Use an Expression to Colour Hospitals by Status (Video)
-### Use an Expression to Colour Hospitals by Status
+### Use an Expression to Colour Hospitals by Status <a id="use-an-expression-to-colour-hospitals-by-status"></a>
 
 1. This expression tells QGIS to automatically choose a colour for each hospital based on its `STATUS` attribute.  
 Functional hospitals become green, non-functional ones become red, and any missing values receive a neutral grey.
@@ -275,7 +275,7 @@ Legend proportional circles: beds + operational status
 :::
 ::::
 
-### Making the Legend Match Your Map
+### Making the Legend Match Your Map <a id="making-the-legend-match-your-map"></a>
 
 > ⚠️ **Note:** When you use a data-defined override to colour your symbols, QGIS does not automatically update the legend. 
 ---
@@ -308,7 +308,7 @@ width: 800
 Exampel Map Proportional circles: Hospital Beds + Operational Status 
 ```
 
-### Adding a Third Variable Using Stroke Style (Facility Type)
+### Adding a Third Variable Using Stroke Style (Facility Type) <a id="adding-a-third-variable-using-stroke-style-facility-type"></a>
 
 Your hospital capacity map now contains a rich amount of information, and it is already useful in its current form. However, QGIS allows us to add an additional layer of meaning without creating new layers or changing the existing size and colour logic. One way to do this is by using the stroke—the outline of each symbol—which can be styled or patterned dynamically. In the next section, you will learn how to use the stroke style to represent a third attribute, making your visualisation even more informative while keeping it easy to read.
 

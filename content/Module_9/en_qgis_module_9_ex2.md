@@ -8,7 +8,7 @@
 
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 2 - Access healthcare - avoid areas
+# Task 2 - Access healthcare - avoid areas <a id="task-2-access-healthcare-avoid-areas"></a>
 For the main area of Kutupalong Refugee Camp, we have the boundary, the path and road network, water streams and health facilities. In this task we will compare openrouteservice isochrone and QGIS built-in service area catchments. Also we will showcase the avoid area feature in openrouteservice to account for a simple simulated flooding.
 
 Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_2_Access_healthcare_avoid_areas/Modul_9_Exercise_2.zip)__. 
@@ -23,7 +23,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 
 
-## STEP 1: Healthcare catchment - Isochrones
+## STEP 1: Healthcare catchment - Isochrones <a id="step-1-healthcare-catchment-isochrones"></a>
 
 First we need to reproject our layers. To do so, open the `Processing Toolbox` and search for `Reproject layer`. Select one of your layers as your input layer and choose **WGS 84 / UTM zone 46N** as your target CRS. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.
 
@@ -39,7 +39,7 @@ Leave all settings at default except:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_1.mp4"></video>
 :::
 
-## STEP 2: Healthcare catchment - QGIS Service area
+## STEP 2: Healthcare catchment - QGIS Service area <a id="step-2-healthcare-catchment-qgis-service-area"></a>
 Isochrones in QGIS can be generated via the service area tool in combination with the minimum bounding geometry tool. Based on a road network, we define origins, a default speed, and a maximum cost. 
 
 Open the `Processing Toolbox` and scroll down to `Network Analysis`, choose `Service area (from layer)` or enter "Service area (from layer)" in the search bar.
@@ -75,7 +75,7 @@ Network representation of paths within camp18. The color symbolizes groups of wa
 
 
 
-## STEP 3: Service area by minimum bounding box
+## STEP 3: Service area by minimum bounding box <a id="step-3-service-area-by-minimum-bounding-box"></a>
 
 In order to better compare the result of the service areas and isochrones we will again compute the minimum bounding geometry. But this time for the multiline output of the service area tool.
 
@@ -95,7 +95,7 @@ Leave all settings at default except:
 Compare the results of both catchments. What differences can you spot?
 `````
 
-## STEP 4: Healthcare catchment - Isochrones avoid flood
+## STEP 4: Healthcare catchment - Isochrones avoid flood <a id="step-4-healthcare-catchment-isochrones-avoid-flood"></a>
 In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the **avoid area** we will use the water streams that run through the main camp area. The avoid areas function of openrouteservice only allows polygons as input, not line geometries. Therefore we need to conduct some preprocessing steps:
 
 1. Reproject the the camp_stream layer to be able to use a metric distance to buffer. Like before use **WGS 84 / UTM zone 46N** as the target projection.

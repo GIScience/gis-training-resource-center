@@ -6,10 +6,10 @@
 :::
 ::::
 
-# Exercice 4 : Visualisation des résultats d'impact du cyclone - Aina applique des styles á ses couches
+# Exercice 4 : Visualisation des résultats d'impact du cyclone - Aina applique des styles á ses couches <a id="exercice-4-visualisation-des-resultats-dimpact-du-cyclone-aina-applique-des-styles-a-ses-couches"></a>
 
 
-## Caractéristiques
+## Caractéristiques <a id="caracteristiques"></a>
 
 
 ::::{grid} 2
@@ -67,12 +67,12 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 
 :::
 
-## Instruction pour les formateurs
+## Instruction pour les formateurs <a id="instruction-pour-les-formateurs"></a>
 
 
 :::{dropdown} __Espace Formateurs (Trainers Corner)__ 
 
-### Préparer la formation
+### Préparer la formation <a id="preparer-la-formation"></a>
 
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
@@ -80,7 +80,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
-### Animer la formation
+### Animer la formation <a id="animer-la-formation"></a>
 
 __Introduction:__
 
@@ -93,14 +93,14 @@ __Exercice guidée:__
 - Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.
 - Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.
 
-### Fin de la formation
+### Fin de la formation <a id="fin-de-la-formation"></a>
 
 - Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.
 - Laissez un moment pour des questions ouvertes.
 
 :::
 
-## Téléchargement des données pour cet exercice
+## Téléchargement des données pour cet exercice <a id="telechargement-des-donnees-pour-cet-exercice"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip
@@ -108,7 +108,7 @@ __Exercice guidée:__
 __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 :::
 
-## Tâches
+## Tâches <a id="taches"></a>
 
 Après avoir terminé son modèle, Aina souhaite **communiquer clairement les résultats** — à la fois à ses collègues de la Croix-Rouge et à des partenaires externes.
 
@@ -122,7 +122,7 @@ Dans cette tâche, vous allez aider Aina à appliquer des styles `.qml` existant
 ---
 
 
-### 1. **Charger les couches nécessaires (si ce n’est pas déjà fait)**
+### 1. **Charger les couches nécessaires (si ce n’est pas déjà fait)** <a id="1-charger-les-couches-necessaires-si-ce-nest-pas-deja-fait"></a>
 
 Assurez-vous que les couches suivantes sont déjà chargées dans votre projet QGIS. Ce sont les sorties de la **Tâche 3**:
 
@@ -140,7 +140,7 @@ Si l’une d’elles manque:
 
 ---
 
-### 2. **Appliquer des fichiers de style prédéfinis**
+### 2. **Appliquer des fichiers de style prédéfinis** <a id="2-appliquer-des-fichiers-de-style-predefinis"></a>
 Appliquez les fichiers de style `.qml` suivants aux couches correspondantes:
 
 | **Couche**                             | **Fichier de style**                           |
@@ -210,7 +210,7 @@ Carte affichant le nombre total d’établissements scolaires exposés par distr
 :::
 ::::
 
-### 3. **Styliser manuellement les couches de pourcentage**
+### 3. **Styliser manuellement les couches de pourcentage** <a id="3-styliser-manuellement-les-couches-de-pourcentage"></a>
 
 Aina souhaite également visualiser le pourcentage d’établissements de santé et d’éducation exposés. Toutefois, puisqu’aucun style n’est encore disponible, elle doit effectuer la procédure manuellement.
 
@@ -249,7 +249,7 @@ Après duplication, renommez la nouvelle couche :
 
 ---
 
-### 4. **Enregistrez vos nouveaux styles pour les réutiliser**
+### 4. **Enregistrez vos nouveaux styles pour les réutiliser** <a id="4-enregistrez-vos-nouveaux-styles-pour-les-reutiliser"></a>
 
 Enregistrez vos styles manuels au format `.qml` pour pouvoir les réutiliser plus tard.
 
@@ -271,7 +271,7 @@ Enregistrez vos styles manuels au format `.qml` pour pouvoir les réutiliser plu
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
-### 5. *(Optionnel)* Importer les styles dans votre bibliothèque QGIS
+### 5. *(Optionnel)* Importer les styles dans votre bibliothèque QGIS <a id="5-optionnel-importer-les-styles-dans-votre-bibliotheque-qgis"></a>
 
 Pour réutiliser vos styles dans de futurs projets:
 

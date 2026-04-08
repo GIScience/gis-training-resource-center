@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Non-Spatial processing
+# Non-Spatial processing <a id="non-spatial-processing"></a>
 
-#### Introduction
+#### Introduction <a id="introduction"></a>
 
 Non-spatial data processing in QGIS refers to the manipulation of attribute data without directly involving spatial components or information, such as the spatial relationships or geometries. 
 - It changes the non-geometric attributes of datasets (i.e., the attribute table).
@@ -24,7 +24,7 @@ name: en_attribute_table_large
 Screenshot of an attribute table for QGIS version 3.28.4.
 :::
 
-## Non-spatial joins (Join Attributes by Field Value)
+## Non-spatial joins (Join Attributes by Field Value) <a id="non-spatial-joins-join-attributes-by-field-value"></a>
 
 - A lot of analysis can be done with just a single layer. But, sometimes, the necessary information we need for our analysis is __split across__ different datasets/layers. 
 - With QGIS, these layers can be __combined__ to perform the analysis we want. The simplest way to combine layers is via an __attribute join__. This operation looks up information from a second data source based on a __shared attribute value__. This value functions as a common unique identifier, also known as an ID, UID, or key (see {numref}`simple_attr_join_example`).
@@ -63,7 +63,7 @@ The P-code associated with the district Edo South is NG01201.
 - Where possible it’s best to **use attributes that have been designed for joining**, such as **P-codes** or **ID's** which are not susceptible to spelling mistakes.
 :::
 
-### Exercise: Performing a non-spatial join 
+### Exercise: Performing a non-spatial join <a id="exercise-performing-a-non-spatial-join"></a>
 
 In this short follow along exercise, we will add the population data to the administrative boundaries layer (adm1).
 
@@ -100,13 +100,13 @@ The joined data is classified using the graduated symbology for the population v
 :::
 
 
-## Table functions
+## Table functions <a id="table-functions"></a>
 
 Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new fields, delete unwanted fields, or even calculate new fields using the __field calculator__. 
 
 For a comprehensive overview on the attribute table's functionality and its purpose, see the [Attribute table article in the wiki](content/Wiki/en_qgis_attribute_table_wiki.md). 
 
-### Add field
+### Add field <a id="add-field"></a>
 The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distributions.
 
 :::{Attention}
@@ -127,14 +127,14 @@ Additional options:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video>
 :::
 
-### Delete field
+### Delete field <a id="delete-field"></a>
 It is also possible to __delete fields__ from the attribute table. A commonly used practice is to __remove all unused or unnecessary fields__ from a layer before starting to work on it. This __makes the dataset much more organised__.
 
 :::{dropdown} Example: Delete all unused/unnecessary fields from a vector layer
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video>
 :::
 
-### Calculate field
+### Calculate field <a id="calculate-field"></a>
 
 An important practice is to calculate the attribute values for a field (e.g., based on the values of other fields). In QGIS, you can __create a new field or update an existing field__.
 
@@ -173,7 +173,7 @@ The most important groups and their respective functionality that are provided w
 :::
 
 
-### Basic statistics for fields
+### Basic statistics for fields <a id="basic-statistics-for-fields"></a>
 
 The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.
 
@@ -181,7 +181,7 @@ The tool __Basic statistics for fields__ generates statistics for a specific fie
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video>
 :::
 
-### Statistics by categories
+### Statistics by categories <a id="statistics-by-categories"></a>
 To calculate statistics of a field depending on a parent class you can use the tool __Statistics by categories__. The parent class is a combination of values from other fields.
 
 __Questions that need to be considered when doing these calculations:__
@@ -194,17 +194,17 @@ For greater precision in these calculations, "statistics by categories" offers m
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
 :::
 
-## Non-spatial queries
+## Non-spatial queries <a id="non-spatial-queries"></a>
 In GIS, you can __query__ (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that __correspond__ to the chosen attribute are displayed. Data filtering is a valuable technique for creating __subsets__ of features that can be exported as a new layer.
 
-### Manual selection
+### Manual selection <a id="manual-selection"></a>
 It is possible to manually select specific rows by clicking on the number on the left side of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in __yellow__.
 
 :::{dropdown} Example: Manual selection of rows
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
 :::
 
-### Select by expression
+### Select by expression <a id="select-by-expression"></a>
 In this dialog, you can build your expressions to query the data. There are several operators that can be used to filter your vector layer.
 
 ::::{tab-set}
@@ -257,7 +257,7 @@ Querying your data to answer more complex questions is of great importance. This
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
 :::
 
-##### SQL
+##### SQL <a id="sql"></a>
 
 Another possibility to build your expressions is to use SQL.
 
@@ -273,7 +273,7 @@ You can easily access essential SQL statements by referring to this handy [Cheat
 
 ::::
 
-### Query Builder
+### Query Builder <a id="query-builder"></a>
 
 The Query Builder provides an interface that allows you to define a __subset of the features__ in the layer using SQL-like statements and to display the results in the main window. As long as the query is active, only the __features corresponding__ to its result are available in the project. You can use one or more layer attributes to define the filter in the Query Builder. The Query Builder is built as follows:
 
@@ -304,7 +304,7 @@ In this short video, you will discover the location of the query builder and lea
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

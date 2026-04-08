@@ -1,4 +1,4 @@
-# Graduated classification
+# Graduated classification <a id="graduated-classification"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
@@ -43,7 +43,7 @@ align: center
 - Click `Apply` to put your adjustment into effect.
 - Click `OK` to close the window.
 
-## The number of classes
+## The number of classes <a id="the-number-of-classes"></a>
 
 - Deciding on the number of classes, and where the ranges for the different classes lie, has a profound impact on the resulting map.
 - There are seven ways in QGIS to split quantitative data into classes. 

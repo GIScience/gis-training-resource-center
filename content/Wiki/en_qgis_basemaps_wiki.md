@@ -1,4 +1,4 @@
-# Basemaps
+# Basemaps <a id="basemaps"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
@@ -9,7 +9,7 @@ Basemaps are background maps. They are often very practical since they are easy 
 No interaction with the basemaps is possible. They are only “pictures” in the background!
 ```
 
-## Standard QGIS Basemaps
+## Standard QGIS Basemaps <a id="standard-qgis-basemaps"></a>
 
 You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
@@ -22,7 +22,7 @@ __Option 2:__ `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStr
 __Add standard OpenStreetMap as Basemap__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
-### Add Google and Bing Basemaps
+### Add Google and Bing Basemaps <a id="add-google-and-bing-basemaps"></a>
 
 To add additional basemaps without using plugins you have to configure `XYZ Tiles`. 
 In the `Browser Panel`, right-click on `XYZ Tiles` -> `New Connection`.
@@ -49,7 +49,7 @@ Advantages of using basemaps from XYZ Tiles are:
 * Support printing
 *  Supported by online applications like [QField]( https://qfield.org/)
 
-## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin
+## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin <a id="basemaps-from-quickmapserviceshttpsnextgiscomblogquickmapservices-plugin"></a>
 
 The QuickMapServices Plugin allows to access to a wide range of basemaps. 
 
@@ -62,12 +62,12 @@ There can be problems when printing some basemaps from the QuickMapServices!
 __Functionality of QuickMapServices Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
 
-### Configuration of QuickMapServices
+### Configuration of QuickMapServices <a id="configuration-of-quickmapservices"></a>
 After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.
 
 `Web` -> `QuickMapServices` -> `Settings` -> Use the horizontal arrows to navigate to `More Services` -> `Get Contributed Pack`
 
-## Navigation on Basemap with OSM Place Search Plugin
+## Navigation on Basemap with OSM Place Search Plugin <a id="navigation-on-basemap-with-osm-place-search-plugin"></a>
 
 With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.
 

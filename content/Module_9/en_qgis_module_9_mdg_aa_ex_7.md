@@ -8,9 +8,9 @@
 ::::
 
 
-# Exercise 7: Reachability of health Posts from CRM Warehouses
+# Exercise 7: Reachability of health Posts from CRM Warehouses <a id="exercise-7-reachability-of-health-posts-from-crm-warehouses"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -63,18 +63,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -103,9 +103,9 @@ To make fast, data-driven decisions, Aina wants to know **which health posts are
 
 Her goal is to create a clear visual map showing reachable vs. non-reachable health posts — and share this with decision-makers as quickly as possible.
 
-# Tasks
+# Tasks <a id="tasks"></a>
 
-## 1. Filter Health Posts from the National Health Facility Dataset
+## 1. Filter Health Posts from the National Health Facility Dataset <a id="1-filter-health-posts-from-the-national-health-facility-dataset"></a>
 
 Before checking which facilities are reachable, Aina needs to isolate **health posts** from the broader dataset of all health facilities.
 
@@ -130,7 +130,7 @@ Before checking which facilities are reachable, Aina needs to isolate **health p
 5. **Remove the filter** or original layer from your project to avoid confusion.
 > 💡 **Tip**: Filtering directly in QGIS lets you work with a specific subset of features without modifying the original dataset.
 
-## 2. Load Isochrone Layers for the Three CRM Warehouses
+## 2. Load Isochrone Layers for the Three CRM Warehouses <a id="2-load-isochrone-layers-for-the-three-crm-warehouses"></a>
 
 Aina knows that only **three warehouses** stock the necessary medical supplies:  
 **Antananarivo**, **Maroantsetra**, and **Tolanaro**. She will now load the isochrone layers for each of these warehouses to begin analyzing service areas.
@@ -169,7 +169,7 @@ Aina knows that only **three warehouses** stock the necessary medical supplies:
      `CRM_warehouse_isochrones_style.qml`
    - Click `Open`, then `Apply` and `OK`
 
-## 3. Visualizing Health Post Reachability from CRM Warehouses
+## 3. Visualizing Health Post Reachability from CRM Warehouses <a id="3-visualizing-health-post-reachability-from-crm-warehouses"></a>
 
 Aina needs to identify which health posts can be reached by road from three key CRM warehouses (Antananarivo, Maroantsetra, and Tolanaro) **within 10 hours of travel time**. She will do this manually by combining the 10-hour isochrones from these warehouses and comparing them to the national health post dataset.
 1. **Merge the Isochrone Layers from the Three Warehouses**  

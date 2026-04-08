@@ -7,17 +7,17 @@
 
 ::::
 
-## Exercise 2: Disaster impact in different regions of Senegal 
+## Exercise 2: Disaster impact in different regions of Senegal <a id="exercise-2-disaster-impact-in-different-regions-of-senegal"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
 
-### Aim of the exercise
+### Aim of the exercise <a id="aim-of-the-exercise"></a>
 Become familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.
 
-#### Type of trainings exercise:
+#### Type of trainings exercise: <a id="type-of-trainings-exercise"></a>
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -26,10 +26,10 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
+#### Focus group (GIS-Knowledge Level) <a id="focus-group-gis-knowledge-level"></a>
 
 
-#### These skills are relevant for 
+#### These skills are relevant for <a id="these-skills-are-relevant-for"></a>
 
 
 :::
@@ -38,7 +38,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 ::::{grid} 2
 :::{grid-item-card}
 
-#### Estimated time demand for the exercise.
+#### Estimated time demand for the exercise. <a id="estimated-time-demand-for-the-exercise"></a>
 
  
 
@@ -46,7 +46,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 
 :::{grid-item-card}
 
-## Relevant Wiki Articles
+## Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
@@ -58,18 +58,18 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -89,7 +89,7 @@ __Wrap up:__
 
 :::
 
-### Availbale Data
+### Availbale Data <a id="availbale-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Disaster_effects_in_different_regions_Senegal/Modul5_Exercise1_Disaster_effects_in_different_regions_Senegal.zip
@@ -104,7 +104,7 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 :::
 
-### Task
+### Task <a id="task"></a>
 Create an overview of the effects of disasters in different regions of Senegal. Use non-spatial joins, table functions and different symbology.
 
 :::{Hint}

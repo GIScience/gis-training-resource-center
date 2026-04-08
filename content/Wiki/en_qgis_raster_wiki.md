@@ -1,4 +1,4 @@
-# Raster Data
+# Raster Data <a id="raster-data"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -15,7 +15,7 @@ Raster data is best for continuous data (like elevation or rainfall), and it’s
 
 In contrast, vector data represents features as points, lines, or polygons.
 
-## Subsections:
+## Subsections: <a id="subsections"></a>
 
 - [Basic Raster Operations](/content/wiki/en_qgis_raster_basic_wiki.md)
 

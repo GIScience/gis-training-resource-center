@@ -1,4 +1,4 @@
-# Wiki Overview
+# Wiki Overview <a id="wiki-overview"></a>
 
 🚧 Under Construction 🚧
 
@@ -10,7 +10,7 @@ Here you will find short **technical** descriptions and **practical** guides on 
 
 ---
 
-## Purpose of the Wiki
+## Purpose of the Wiki <a id="purpose-of-the-wiki"></a>
 
 - Provide **quick-reference documentation** to support GIS learning and teaching.
 - Serve as a **knowledge base** of best practices, common pitfalls, and frequently asked questions.
@@ -20,7 +20,7 @@ Here you will find short **technical** descriptions and **practical** guides on 
 
 ---
 
-## Wiki Topics
+## Wiki Topics <a id="wiki-topics"></a>
 
 ::::{grid} 2
 

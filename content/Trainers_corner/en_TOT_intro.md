@@ -1,4 +1,4 @@
-# Train of trainers introduction
+# Train of trainers introduction <a id="train-of-trainers-introduction"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -8,7 +8,7 @@ Welcome to the trainer’s corner! Here you can find all the needed information 
 If you have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email  __gis-training-platform@heigit.org__.
 ```
 
-## What this platform offers
+## What this platform offers <a id="what-this-platform-offers"></a>
 
 This platform intends to make your life as a trainer easier by providing you with: explanatory articles called modules, exercises and a Wiki. The platform, however, does not eliminate the need to prepare and plan your training. 
 
@@ -44,7 +44,7 @@ In summary:
 ::::
 
 
-## Your trainer journey
+## Your trainer journey <a id="your-trainer-journey"></a>
 
 This section will outline the function of all article in the trainer's corner and give an overview of the training platform.
 

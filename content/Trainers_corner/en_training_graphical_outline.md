@@ -1,4 +1,4 @@
-# Training Agenda and Handout
+# Training Agenda and Handout <a id="training-agenda-and-handout"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
@@ -6,7 +6,7 @@ An agenda is where participants can find all the relevant information about the 
 
 The plan can be designed in various different formats, such as paper handouts or digital whiteboards such as [miro boards](https://miro.com), [padlets](https://padlet.com). A digital agenda offers participants the possibility to ask questions and review the input of other participants at any time (for example, when they are preparing for the next session.), however it requires an internet connection. You can also sketch out flowcharts using [draw.io](https://app.diagrams.net).
 
-## What does an agenda need? 
+## What does an agenda need? <a id="what-does-an-agenda-need"></a>
 
 The agenda should contain all the relevant information for the training. The time, dates, location or link to a video call (including instructions how to enter), requirements (in most cases a computer with QGIS installed and enough disk space to download the exercise data), as well as what the participants can expect, and what the trainers expect from the participants.
 
@@ -34,7 +34,7 @@ You should adapt the agenda to your needs and the needs of your participants. Fo
 You can also add blank sticky notes or spaces (in-person or digitally), where participants can write down their notes, findings, ideas or questions.
 :::
 
-## Agenda ideas
+## Agenda ideas <a id="agenda-ideas"></a>
 
 Be creative when preparing the agenda, since you can use it to actively engage participants during the training and make them feel more secure to ask questions. Most importantly, trainings should be an open learning environment where the different needs of participants are acknowledged.
 

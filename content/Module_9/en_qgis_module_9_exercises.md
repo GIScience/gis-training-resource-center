@@ -6,14 +6,14 @@
 :::
 ::::
 
-# Exercises Module 9: Network Analysis
+# Exercises Module 9: Network Analysis <a id="exercises-module-9-network-analysis"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
 
 The following exercises for module 9 comprise one full network analysis from start to finish. Each exercise deals with one step of the analysis process. 
 
-## Visualisation
+## Visualisation <a id="visualisation"></a>
 
 | Exercise | Description | Estimated time | 
 | :-------------------- | :-----------------  |:----------------- |
@@ -25,7 +25,7 @@ The following exercises for module 9 comprise one full network analysis from sta
 | __[Task 6: West Germany / Ahrtal flood logistics](/content/Module_9/en_qgis_module_9_ex6.md)__ | | | 
 
 
-## Anticipatory Action
+## Anticipatory Action <a id="anticipatory-action"></a>
 
 | Exercise | Description | Estimated time | 
 | :-------------------- | :-----------------  |:----------------- |

@@ -1,4 +1,4 @@
-# Digitisation
+# Digitisation <a id="digitisation"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
@@ -7,7 +7,7 @@ Digitisation is the process of converting geographic data from maps or images in
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons. 
 To digitize data for a new dataset you always have to start with creating the dataset before filling it with digitized data.
 
-## The Digitisation Toolbar in QGIS
+## The Digitisation Toolbar in QGIS <a id="the-digitisation-toolbar-in-qgis"></a>
 
 ![](/fig/Digitizing_Toolbar.png)
 
@@ -20,7 +20,7 @@ width: 550 px
 ---
 :::
 
-## Creating a new layer
+## Creating a new layer <a id="creating-a-new-layer"></a>
 
 1. In the top bar, navigate to `Layer` -> `Create Layer` -> `New GeoPackage Layer` or `New Shapefile Layer`.
 2. A new window will open. Here you can specify the layer properties.
@@ -42,9 +42,9 @@ If you plan to perform distance-based calculation with the new dataset, make sur
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_create_layer.mp4"></video>
 
-## Adding geometries to a layer
+## Adding geometries to a layer <a id="adding-geometries-to-a-layer"></a>
 
-### Creating point data
+### Creating point data <a id="creating-point-data"></a>
 
 1.	Select the point layer you want to add data to in the Layer panel
 2.	Go to the digitisation toolbar and click on![](/fig/mActionToggleEditing.png). Now the layer is in the editing mode.
@@ -67,7 +67,7 @@ align: center
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 
 
-### Creating line data
+### Creating line data <a id="creating-line-data"></a>
 
 The  method  is  similar  to  digitising  a  point  (see  above). First you have to create a new line layer or use an existing one. 
 
@@ -86,7 +86,7 @@ If you create a new line layer remember to change the geometry type into lines b
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
-### Creating polygon data 
+### Creating polygon data <a id="creating-polygon-data"></a>
 
 1. In the layers panel, select the polygon layer to which you want to add data.
 2. Click on ![](/fig/mActionToggleEditing.png) to start the editing mode.
@@ -99,7 +99,7 @@ If you create a new line layer remember to change the geometry type into lines b
 
 
 
-## Modifying existing geometries
+## Modifying existing geometries <a id="modifying-existing-geometries"></a>
 
 1. In the layers panel, select the layer with the geometry you want to edit by clicking on it. It will appear blue.
 2. In the digitising toolbar, click on ![](/fig/mActionToggleEditing.png) start `edit mode`. 
@@ -108,7 +108,7 @@ If you create a new line layer remember to change the geometry type into lines b
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video>
 
-### Adding Ring to existing polygon layer
+### Adding Ring to existing polygon layer <a id="adding-ring-to-existing-polygon-layer"></a>
 
 In QGIS, adding rings to polygons is done with the "Advanced Digitisation Toolbar". To activate the toolbar, navigate to `View` -> `Toolbars` -> `Advanced Digitisation Toolbar`.
 
@@ -122,7 +122,7 @@ In QGIS, adding rings to polygons is done with the "Advanced Digitisation Toolba
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
 
 
-## Further resources
+## Further resources <a id="further-resources"></a>
 
 The YouTube Video below shows the whole process of digitizing polygons in QGIS in some more detail. Note that the YouTuber is using an older version of QGIS, so things might be different in your version.
 

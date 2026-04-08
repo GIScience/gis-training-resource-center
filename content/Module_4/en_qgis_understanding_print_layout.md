@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Understanding the Print Layout Composer
+# Understanding the Print Layout Composer <a id="understanding-the-print-layout-composer"></a>
 
 :::{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png
 ---
@@ -30,9 +30,9 @@ First of all, you should always set the size of your map:
 - Choose __the size of your document__ (A4, A3, A2). A4 and A3 are the most commonly used sizes for maps.
 - Choose the orientation (Landscape or Portrait).
 
-## Adding Elements to the Print Layout
+## Adding Elements to the Print Layout <a id="adding-elements-to-the-print-layout"></a>
 
-### Adding a New Map
+### Adding a New Map <a id="adding-a-new-map"></a>
 
 - Add a new map by clicking on the ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button on the __toolbar on the left__ and drag a rectangle on the map canvas.  
 - To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse.
@@ -61,7 +61,7 @@ Adding a new map to the Print Layout (Source: CartONG).
 :::
 ::::
 
-### Adding a Title or a Text Box
+### Adding a Title or a Text Box <a id="adding-a-title-or-a-text-box"></a>
 
 A title should describe the phenomenon represented on the map.
 
@@ -82,7 +82,7 @@ Adding text to the print layout (Source: CartONG).
 
 :::
 
-### Adding an Image or Logo
+### Adding an Image or Logo <a id="adding-an-image-or-logo"></a>
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.
 
@@ -104,7 +104,7 @@ Adding an image or logo to the print layout.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
 :::
 
-### Adding a Legend
+### Adding a Legend <a id="adding-a-legend"></a>
 
 Before adding a legend, make sure that:
 
@@ -152,7 +152,7 @@ Sometimes the space on your map is not suited for a single vertical legend. In t
 
 ::::
 
-### Adding a Scale Bar
+### Adding a Scale Bar <a id="adding-a-scale-bar"></a>
 
 Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the `Scale` field has a __round number__ .
 
@@ -186,7 +186,7 @@ Adding and customising the scale bar.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video>
 :::
 
-### Adding an Overview Map
+### Adding an Overview Map <a id="adding-an-overview-map"></a>
 
 Adding an overview map in the corner of your map will help locate the area you are viewing on the main map.
 
@@ -230,7 +230,7 @@ This method requires you to be sure that you are not going to modify the overvie
 
 ----
 
-## Exporting the print layout
+## Exporting the print layout <a id="exporting-the-print-layout"></a>
 
 Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file.
 
@@ -245,7 +245,7 @@ Once you are finished with the map composition, it is time to export the print l
 Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
 :::
 
-## Map Templates
+## Map Templates <a id="map-templates"></a>
 
 Map templates can simplify and speed up the creation of a print layout by saving the arrangement of elements. However, they do not save the project's layers and images, which will need to be reconfigured each time.
 If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.
@@ -297,7 +297,7 @@ If you save templates here, you can load templates directly through the layout m
 You can also add file paths in the QGIS template settings.
 :::
 
-## The Atlas Function (Automatic Map Generation)
+## The Atlas Function (Automatic Map Generation) <a id="the-atlas-function-automatic-map-generation"></a>
 
 In some cases, it can be necessary to create multiple maps for different locations with the same layers. For example, if you have a detailed dataset on affected flood areas in Nigeria, you can create a more detailed map for each subnational district. In QGIS, this can be done automatically with the __Atlas Function__.
 
@@ -315,7 +315,7 @@ The atlas toolbar.
 If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under `View` → `Toolbars` → `Atlas Toolbar`.
 :::
 
-### Generating an Atlas
+### Generating an Atlas <a id="generating-an-atlas"></a>
 
 An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:
 
@@ -339,7 +339,7 @@ The only item in the print layout that is being controlled by the atlas is the m
 .mp4"></video>
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

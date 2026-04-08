@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Intermediate GIS Operations
+# Intermediate GIS Operations <a id="intermediate-gis-operations"></a>
 
 This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS. 
 

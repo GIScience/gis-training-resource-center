@@ -1,6 +1,6 @@
-# Exercise 3: Assessing Accessibility to Vaccination Services
+# Exercise 3: Assessing Accessibility to Vaccination Services <a id="exercise-3-assessing-accessibility-to-vaccination-services"></a>
 
-## Background
+## Background <a id="background"></a>
 
 Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will learn a simplified approach on how to model accessibility and determine how many people live **beyond a reasonable travel distance** from a vaccination point.
 
@@ -8,7 +8,7 @@ Accessibility to health services is a key determinant of vaccination coverage. I
 
 ---
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 | Dataset name | Description | Source |
 | :------------- | :----------- | :----------- |
@@ -20,7 +20,7 @@ Accessibility to health services is a key determinant of vaccination coverage. I
 
 ---
 
-## Scenario
+## Scenario <a id="scenario"></a>
 
 You have identified a number of health facilities equipped with a cold chain for vaccine storage. The goal now is to calculate how much of the population is **within reasonable reach** of these facilities, and how many people live **beyond the accessible range**.
 
@@ -28,7 +28,7 @@ To do this, you will generate travel-time surfaces around vaccination points and
 
 ---
 
-## Task 1: Opening the Project and Preparing the Data
+## Task 1: Opening the Project and Preparing the Data <a id="task-1-opening-the-project-and-preparing-the-data"></a>
 
 1. Open your QGIS project from **Exercise 2**.
 2. Verify that the following layers are loaded:
@@ -46,7 +46,7 @@ To do this, you will generate travel-time surfaces around vaccination points and
 
 ---
 
-## Task 2: Creating Accessibility Area Around Vaccination Points
+## Task 2: Creating Accessibility Area Around Vaccination Points <a id="task-2-creating-accessibility-area-around-vaccination-points"></a>
 
 1. Open the "Service area (from layer)" tool in the Processing Toolbox.
 2. Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.
@@ -100,7 +100,7 @@ Both the `Dissolve` and `Buffer` operations can be computationally intensive. If
 
 ---
 
-## Task 3: Calculating Population Coverage Using WorldPop
+## Task 3: Calculating Population Coverage Using WorldPop <a id="task-3-calculating-population-coverage-using-worldpop"></a>
 
 Next, we will generate several population statistics. First, use the admin boundaries together with the WorldPop raster to calculate the total population for each district. 
 
@@ -197,7 +197,7 @@ Now we have calculated the total population located within the 2-hour travel-tim
 
 % THIS IS STILL MISSING
 
-## Task 4: Visualising Accessibility
+## Task 4: Visualising Accessibility <a id="task-4-visualising-accessibility"></a>
 
 1. To visualize the `population_within_isochrones` data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the __Join attributes by field value__ tool:
    - **Input layer:** `tcd_admbnda_adm2_20250212_AB.shp`
@@ -232,7 +232,7 @@ Example map for Measles Vaccination: Population Wihin 2-Hour Access | Chad
 
 ---
 
-## Discussion
+## Discussion <a id="discussion"></a>
 
 The resulting map shows which districts and settlements are effectively served by fixed vaccination points, and which remain outside practical reach. In real-world scenarios, such analysis can help humanitarian planners:
 - **Identify underserved areas** and plan **mobile vaccination campaigns**.
@@ -247,7 +247,7 @@ Always interpret accessibility results and specifically estimations with caution
 
 <!--
 
-## Task 2: Installing and Connecting to OpenRouteService
+## Task 2: Installing and Connecting to OpenRouteService <a id="task-2-installing-and-connecting-to-openrouteservice"></a>
 
 1. If not yet installed, add the **OpenRouteService Plugin**:
    - Go to `Plugins → Manage and Install Plugins…`
@@ -258,7 +258,7 @@ Always interpret accessibility results and specifically estimations with caution
 
 ---
 
-## Task 3: Creating Isochrones Around Vaccination Points
+## Task 3: Creating Isochrones Around Vaccination Points <a id="task-3-creating-isochrones-around-vaccination-points"></a>
 
 > In order to calculate accessibility, we will generate travel-time isochrones (zones of equal travel time) around each vaccination facility.
 

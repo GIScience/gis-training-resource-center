@@ -8,9 +8,9 @@
 ::::
 
 
-# Exercise 5: Quick Map Creation - Aina Uses Map Templates
+# Exercise 5: Quick Map Creation - Aina Uses Map Templates <a id="exercise-5-quick-map-creation-aina-uses-map-templates"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -63,18 +63,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -94,7 +94,7 @@ __Wrap up:__
 
 :::
 
-## Available data
+## Available data <a id="available-data"></a>
 
 :::{card}
 :link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_7_AA_MDG_task_5-20250825T143511Z-1-001.zip
@@ -103,7 +103,7 @@ __Download all datasets here, save the folder on your computer and unzip the fil
 :::
 
 
-## Context
+## Context <a id="context"></a>
 
 After all the hard work of analyzing data and styling layers, Aina is ready to **share her results**. But creating a professional-looking map from scratch every time would be slow and repetitive.  
 
@@ -113,7 +113,7 @@ To save time, she uses **map templates (.qpt files)** prepared by her team. Thes
 Apply a ready-made QGIS map template to quickly create and export maps that show cyclone impacts on population, health facilities, and schools.  
 
 
-## Tasks: 
+## Tasks: <a id="tasks"></a>
 
 
 
@@ -205,7 +205,7 @@ To fix this, open the table properties in the layout and **reduce the font size*
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
-### ✅ Final Checklist
+### ✅ Final Checklist <a id="final-checklist"></a>
 
 | Task                                           | Done |
 |------------------------------------------------|------|

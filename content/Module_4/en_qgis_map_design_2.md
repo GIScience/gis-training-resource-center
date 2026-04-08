@@ -6,7 +6,7 @@
 :::
 ::::
 
-# The Print layout
+# The Print layout <a id="the-print-layout"></a>
 
 The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.
 
@@ -21,7 +21,7 @@ name: Create Print Layout
 Create a new Print Layout
 :::
 
-## Map Composition
+## Map Composition <a id="map-composition"></a>
 
 A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.
 
@@ -36,7 +36,7 @@ In general, there are a few things to keep in mind when creating a map:
 
 In order to produce good maps, there are some __basic rules__ to follow and __semiological mistakes__ to avoid. The following subchapter will go over the key elements of a map as well as common design mistakes. 
 
-### Key elements of a map
+### Key elements of a map <a id="key-elements-of-a-map"></a>
 
 In order to provide your audience and readers with sufficient information so they can contextualise the map, it is important to add these key map elements:
 
@@ -96,11 +96,11 @@ name: example_scale_bar
 Scale bar examples
 :::
 
-### Orientation
+### Orientation <a id="orientation"></a>
 
 Even though the majority of the maps are oriented towards the north, it is still necessary to specify the orientation of your map. This is often indicated by an arrow pointing to the north, as sometimes a non-northwards orientation is used to represent the study area.
 
-### Sources
+### Sources <a id="sources"></a>
 
 Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly populated and must also be cited on maps.  
 
@@ -167,7 +167,7 @@ Operational overview or response activity map (Source: [Shelter Cluster Vanuata]
 
 Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Check your knowledge
 :class: note
@@ -204,6 +204,6 @@ The basic elements for a complete map layout should include:
 
 ::::
 
-## Further Resources
+## Further Resources <a id="further-resources"></a>
 
 - [Data Visualization Accessibility Checklist](https://learn-sims.org/style-guidance/data-visualization-accessibility-checklist/)

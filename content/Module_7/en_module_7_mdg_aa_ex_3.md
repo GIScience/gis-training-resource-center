@@ -8,9 +8,9 @@
 ::::
 
 
-# Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers
+# Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers <a id="exercise-3-identifying-affected-health-facilities-and-schools-aina-adds-more-layers"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -65,18 +65,18 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -96,7 +96,7 @@ __Wrap up:__
 
 :::
 
-## Available data
+## Available data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip
@@ -104,7 +104,7 @@ __Wrap up:__
 __Download all datasets here, save the folder on your computer and unzip the file.__ 
 :::
 
-## Context 
+## Context <a id="context"></a>
 
 After building her model to estimate exposed population, Aina wants to expand its usefulness. She decides to also **identify critical services** affected by cyclones — especially **health facilities** and **schools**. 
 
@@ -115,7 +115,7 @@ To achieve this, she will use two point datasets from OpenStreetMap:
 - [Health facilities](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)  
 - [Education facilities](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)
 
-## Tasks:
+## Tasks: <a id="tasks"></a>
 
 1. **Load the health and education facilities datasets**
 First, let's have a look at the data we want to work with.

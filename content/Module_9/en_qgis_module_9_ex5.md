@@ -8,7 +8,7 @@
 
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 5: Identifying critical road segments
+# Task 5: Identifying critical road segments <a id="task-5-identifying-critical-road-segments"></a>
 
 For this task, we imagine that the city of Heidelberg is partially affected by flooding of the Neckar. Such scenarios are becoming increasingly likely in the future due to climate change. The flood has a major impact on the city's infrastructure. In this exercise, you will use QGIS to analyze the impact of the flood by determining the betweenness centrality of multiple nodes in the city before and after the flooding event.
 
@@ -23,13 +23,13 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 
 
-### STEP 1: Dissolve Layer
+### STEP 1: Dissolve Layer <a id="step-1-dissolve-layer"></a>
 
 First we want to dissolve the `highways` layer to combine all the LineString geometries to one LineString. This is important for determining the betweenness centrality in the future steps.
 
 Open the **Processing Toolbox** and search for **Dissolve**. Select the `highways` layer as the Input Layer and leave all other settings at default. 
 
-### STEP 2: Betweenness Centrality - Before Flood
+### STEP 2: Betweenness Centrality - Before Flood <a id="step-2-betweenness-centrality-before-flood"></a>
 
 Make sure you installed the GRASS GIS provider Plugin. If you don't know how to install Plugins, click here: {ref}`content:references:wiki:plugins`
 
@@ -44,7 +44,7 @@ To make the differences of the values more visible, you can change the Classific
 Can you identify critical road segments of the city with higher centrality values by looking at the different nodes? What does this mean for the infrastructure of Heidelberg?
 `````
 
-### STEP 3: Betweenness Centrality - After Flood
+### STEP 3: Betweenness Centrality - After Flood <a id="step-3-betweenness-centrality-after-flood"></a>
 
 In a next step, we want to carry out the same analysis after the flood event in order to determine the impact of the flood on the infrastructure in Heidelberg. To do so, we first have to delete the part of the `highways` layer that is flooded. 
 

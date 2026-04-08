@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercises for Module 5
+# Exercises for Module 5 <a id="exercises-for-module-5"></a>
 
 These exercises touch on all the content of module 5.
 

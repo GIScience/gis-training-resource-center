@@ -8,10 +8,10 @@
 ::::
 
 
-# Exercise 3: Trigger & Intervention Map for Forecast-based-Action
+# Exercise 3: Trigger & Intervention Map for Forecast-based-Action <a id="exercise-3-trigger-and-intervention-map-for-forecast-based-action"></a>
 
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -60,18 +60,18 @@ __Relevant Wiki Articles:__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training facilitation. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -93,7 +93,7 @@ __Wrap up:__
 
 
 
-## Background 
+## Background <a id="background"></a>
 
 Setting triggers is one of the cornerstones of the __Forecast-based Financing (FbF) system__. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called __triggers__, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)).
 
@@ -106,9 +106,9 @@ derived population weighted index in the same district, then we will act in this
 :::
 
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
-### Food Insecurity Projection data
+### Food Insecurity Projection data <a id="food-insecurity-projection-data"></a>
 
 The drought trigger mechanism is based on two variable monitoring datasets. One of them Food Insecurity projection produced by FEWSNET which is updated ruffly every month.
 
@@ -117,7 +117,7 @@ The drought trigger mechanism is based on two variable monitoring datasets. One 
 |IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
 
 
-#### What is IPC Food Security Projection Data?
+#### What is IPC Food Security Projection Data? <a id="what-is-ipc-food-security-projection-data"></a>
  
 The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity. 
 The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index. 
@@ -134,7 +134,7 @@ Outlook updates are produced almost every month and are also taken into account.
 |![](/fig/IPC_Class_4.drawio.svg)|4. Emergency|Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; __OR__ are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.|
 |![](/fig/IPC_Class_5.drawio.svg)|5. Famine |Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)  |
 
-### Training Data
+### Training Data <a id="training-data"></a>
 
 Download the data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise2_Drought_Monitoring_Trigger/Modul_5_Exercise2_Drought_Monitoring_Trigger.zip)__ and save it on your PC. Unzip the .zip file!
 
@@ -153,13 +153,13 @@ Whereas the IPC-Projections data will be downloaded by the participants directly
 |IPC Projections| [FEWSNET](https://fews.net/) | five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity. |
 
 
-## Task
+## Task <a id="task"></a>
 
 :::{Attention}
 Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.
 :::
 
-### Step 1: Setting up folder structure 
+### Step 1: Setting up folder structure <a id="step-1-setting-up-folder-structure"></a>
 
 __Purpose:__ In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results. 
 
@@ -191,7 +191,7 @@ The Video below shows the process for setting up the folder for December 2023.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 :::
 
-### Step 2: Download of the forecast data
+### Step 2: Download of the forecast data <a id="step-2-download-of-the-forecast-data"></a>
 
 
 __Purpose:__ In this step, we will download the forecast data on which our triggers will be based.
@@ -201,7 +201,7 @@ __Tool:__ Internet Browser
 The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website. 
 The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.
 
-### IPC Data
+### IPC Data <a id="ipc-data"></a>
 
 The IPC Projection data is provided and regularly updated on the [FEWSNET Website](https://fews.net/).
 On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through `Data` → `Acute Food Insecurity Data` and enter "Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file. 
@@ -256,7 +256,7 @@ align: center
 :::
 
 
-### Step 3: Loading data into QGIS
+### Step 3: Loading data into QGIS <a id="step-3-loading-data-into-qgis"></a>
 
 __Purpose:__ In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data. 
 
@@ -273,7 +273,7 @@ __Tool:__ No specific tools are needed, only QGIS.
 
 __Result:__ QGIS project with all necessary data ready to be analysed. 
 
-### Step 4: Intersection of ML 1 data with the district polygons 
+### Step 4: Intersection of ML 1 data with the district polygons <a id="step-4-intersection-of-ml-1-data-with-the-district-polygons"></a>
 
 __Purpose:__ The goal is to receive polygon layers which share both the borders and the attributes of both input layers.
 
@@ -312,7 +312,7 @@ The resulting layer can have more rows than the original layers.
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 :::
 
-### Step 5: Calculation of Population per Intersection Polygon
+### Step 5: Calculation of Population per Intersection Polygon <a id="step-5-calculation-of-population-per-intersection-polygon"></a>
 
 __Purpose:__ Here we calculate the population in each polygon of the intersection layer from step 4.
 
@@ -349,7 +349,7 @@ __Result:__ The result should be the "ML1_zonal_statistic" as a polygon layer. T
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 :::
 
-### Step 6: Weighting of the Population based on IPC-Phase
+### Step 6: Weighting of the Population based on IPC-Phase <a id="step-6-weighting-of-the-population-based-on-ipc-phase"></a>
 
 
 __Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
@@ -398,7 +398,7 @@ END
 ```
 6.  When you are done, click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png) ([Video: Editing the attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)). 
 
-## Step 7: Calculation of Population Proportion per Intersection Polygon
+## Step 7: Calculation of Population Proportion per Intersection Polygon <a id="step-7-calculation-of-population-proportion-per-intersection-polygon"></a>
 
 __Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) for every small part of the polygon layer. 
 
@@ -431,7 +431,7 @@ __Result:__ The layer “ML1_zonal_statistic” should now have the column “In
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 :::
 
-### Step 8: Calculate IPC Index per District
+### Step 8: Calculate IPC Index per District <a id="step-8-calculate-ipc-index-per-district"></a>
 
 __Purpose:__ The purpose of this step is to calculate a population-weighted mean over the IPC classes per district. In this way, the amount of people living in a certain IPC class will be given more importance than just the area affected by a certain IPC class. The result is an IPC Index value for each district.
 
@@ -468,7 +468,7 @@ __Result:__ As a result, your layer "ML1_IPC_Index" should have the column "Inde
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 :::
 
-### Step 9: Evaluate Trigger Activation 
+### Step 9: Evaluate Trigger Activation <a id="step-9-evaluate-trigger-activation"></a>
 
 __Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.
 
@@ -514,7 +514,7 @@ align: center
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 :::
 
-### Step 10.: Visualising the Results
+### Step 10.: Visualising the Results <a id="step-10-visualising-the-results"></a>
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
@@ -591,7 +591,7 @@ __Administrative 2 Boundaries (Regions)__
 Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
 :::
 
-### Step 11: Making print map
+### Step 11: Making print map <a id="step-11-making-print-map"></a>
 
 __Purpose:__ Visualisation of the map features in a printable map layout.
 
@@ -622,7 +622,7 @@ You can also adapt the template to your needs and preferences. See [how to use t
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 :::
 
-### Step 13.: Exporting Map 
+### Step 13.: Exporting Map <a id="step-13-exporting-map"></a>
 
 
 __Purpose:__ Export the designed and finalised map layout in order to print it as a pdf or format of your choice.

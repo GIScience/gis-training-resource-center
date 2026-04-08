@@ -1,8 +1,8 @@
-# The Print Layout Composer
+# The Print Layout Composer <a id="the-print-layout-composer"></a>
 
-## Adding elements to the print layout
+## Adding elements to the print layout <a id="adding-elements-to-the-print-layout"></a>
 
-### Adding a new map
+### Adding a new map <a id="adding-a-new-map"></a>
 
 - Add a new map by clicking on the __Add map__ button on the __toolbar on the left__ and __drag a rectangle on the map canvas.  
 - To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse
@@ -29,7 +29,7 @@ Adding a new map to the Print Layout
 :::
 ::::
 
-### Adding a title or a text box
+### Adding a title or a text box <a id="adding-a-title-or-a-text-box"></a>
 
 A title should describe the phenomenon represented on the map.
 
@@ -49,7 +49,7 @@ Adding text to the print Layout
 .mp4"></video>
 :::
 
-### Adding an image or logo
+### Adding an image or logo <a id="adding-an-image-or-logo"></a>
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce. 
 
@@ -63,7 +63,7 @@ If you are working for an organisation, most likely you will add the logo of tha
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
 :::
 
-### Adding a legend
+### Adding a legend <a id="adding-a-legend"></a>
 
 Before adding a legend, make sure that:
 
@@ -109,7 +109,7 @@ If you have too many items on your legend, and they don't fit on your map horizo
 
 ::::
 
-### Adding a scale bar
+### Adding a scale bar <a id="adding-a-scale-bar"></a>
 
 Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the __Scale__ field has a __round number__.
 
@@ -144,7 +144,7 @@ Adding and customising the scale bar.
 .mp4"></video>
 :::
 
-### Adding an overview map
+### Adding an overview map <a id="adding-an-overview-map"></a>
 
 Adding an overview map in the corner of your map will help locate the area you are viewing on the main map.
 
@@ -194,7 +194,7 @@ This method requires you to be sure that you are not going to modify the overvie
 :::
 
 
-## Exporting the print layout
+## Exporting the print layout <a id="exporting-the-print-layout"></a>
 
 Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file. 
 
@@ -210,7 +210,7 @@ Make sure to check the map after exporting the PDF as some design elements might
 :::
 
 
-## Map templates
+## Map templates <a id="map-templates"></a>
 
 ::::{tab-set}
 :::{tab-item} Saving a template
@@ -259,7 +259,7 @@ If you save templates here, you can load templates directly through the layout m
 You can also add file paths in the QGIS-template setting
 :::
 
-## Generating an Atlas
+## Generating an Atlas <a id="generating-an-atlas"></a>
 
 An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
 
@@ -284,7 +284,7 @@ For now the only item in the print layout that is being controlled by the Atlas 
 :::
 
 
-### Setting up Overview maps with an atlas
+### Setting up Overview maps with an atlas <a id="setting-up-overview-maps-with-an-atlas"></a>
 
 Setting up Overview maps with an atlas works in the same way as setting it up for a normal map. As long as you select the Map controlled by the atlas as the `map frame`, it will update automatically.
 

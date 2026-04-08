@@ -1,8 +1,8 @@
-# Projections
+# Projections <a id="projections"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## How to check EPSG-Code 
+## How to check EPSG-Code <a id="how-to-check-epsg-code"></a>
 
 :::{Note}
 Always check that the Coordinate Reference System (CRS)/EPSG code of your data is the same as the CRS/EPSG-code of your project!
@@ -10,7 +10,7 @@ Always check that the Coordinate Reference System (CRS)/EPSG code of your data i
 
 The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most applications, because we mostly use maps for small areas.
 
-### How to check EPSG-Code/CRS of your QGIS Project and change it
+### How to check EPSG-Code/CRS of your QGIS Project and change it <a id="how-to-check-epsg-codecrs-of-your-qgis-project-and-change-it"></a>
 :::{Note}
 To check and adjust the CRS/ EPSG-Code should be the first thing you should do when starting a new QGIS project.
 :::
@@ -23,7 +23,7 @@ To check and adjust the CRS/ EPSG-Code should be the first thing you should do w
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
-### How to check EPSG-Code/CRS of layer/ data
+### How to check EPSG-Code/CRS of layer/ data <a id="how-to-check-epsg-codecrs-of-layer-data"></a>
 :::{Note}
 After loading any spatial data in QGIS, check the CRS/EPSG code of the data to make sure it is the same as the CRS/EPSG code of the project.
 :::
@@ -34,7 +34,7 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
     - __Unites:__    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.
 
 
-## Changing the projection of a vector layer
+## Changing the projection of a vector layer <a id="changing-the-projection-of-a-vector-layer"></a>
 
 1. `Vector` Tab -> `Data Management Tools` -> `Reproject Layer`
 2. Select target CRS/ EPSG-Code.
@@ -44,7 +44,7 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
 
-## Changing the projection of a raster layer
+## Changing the projection of a raster layer <a id="changing-the-projection-of-a-raster-layer"></a>
 
 1. `Raster` Tab -> `Projections` -> `Warp (Reproject)`
 2. Select target CRS/EPSG-Code
@@ -54,6 +54,6 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 
-## Common mistakes with Coordinate Reference Systems
+## Common mistakes with Coordinate Reference Systems <a id="common-mistakes-with-coordinate-reference-systems"></a>
 
 The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) offers a “a problem-based guide of common CRS issues, root causes, and solutions.”.

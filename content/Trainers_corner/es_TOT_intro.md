@@ -1,4 +1,4 @@
-# Introducción al programa de formación de facilitadores
+# Introducción al programa de formación de facilitadores <a id="introduccion-al-programa-de-formacion-de-facilitadores"></a>
 
 ¡Bienvenido al rincón de las personas facilitadorasr! 
 En este espacio encontrarás los recursos necesarios para planificar y desarrollar actividades de formación en GIS. La sección presenta una descripción general de la plataforma y de las funciones disponibles para las personas facilitadores.
@@ -7,7 +7,7 @@ En este espacio encontrarás los recursos necesarios para planificar y desarroll
 Si tienes preguntas, comentarios o sugerencias sobre la plataforma y su contenido, estaremos encantados de escucharte. Puedes contactarnos por correo electrónico a __gis-training-platform@heigit.org__.
 ```
 
-## Qué ofrece esta plataforma
+## Qué ofrece esta plataforma <a id="que-ofrece-esta-plataforma"></a>
 
 Esta plataforma tiene como objetivo facilitar tu trabajo como persona facilitadora, proporcionándote artículos explicativos llamados módulos, ejercicios y una Wiki. Sin embargo, la plataforma no reemplaza la necesidad de preparar y planificar tu capacitación.
 
@@ -36,7 +36,7 @@ Esta plataforma tiene como objetivo facilitar tu trabajo como persona facilitado
 
 ::::
 
-## Tu camino como persona facilitadora
+## Tu camino como persona facilitadora <a id="tu-camino-como-persona-facilitadora"></a>
 
 Esta sección describe la función de cada artículo en el rincón del facilitador y ofrece una visión general de la plataforma de capacitación.
 

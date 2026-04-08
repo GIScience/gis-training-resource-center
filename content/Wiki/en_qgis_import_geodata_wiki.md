@@ -1,17 +1,17 @@
-# Geodata Import in QGIS
+# Geodata Import in QGIS <a id="geodata-import-in-qgis"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Vector data Import 
+## Vector data Import <a id="vector-data-import"></a>
 
 :::{Tip}
 When importing a shapefile by drag-and-drop you have to use the file with the ending .shp!
 :::
 
-### Open vector layer
+### Open vector layer <a id="open-vector-layer"></a>
 
-#### Open vector data via Layer Tab
+#### Open vector data via Layer Tab <a id="open-vector-data-via-layer-tab"></a>
 
 1. Click on `Layer`-> `Add Layer`-> `Add Vector Layer`. 
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your vector file.
@@ -22,16 +22,16 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 
 
-#### Open vector data via drag-and-drop
+#### Open vector data via drag-and-drop <a id="open-vector-data-via-drag-and-drop"></a>
 
 1. In your file browser, open the folder with the vector data you want to import.
 2. Drag-and-drop it onto the QGIS map canvas.
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 
-## Raster data Import 
+## Raster data Import <a id="raster-data-import"></a>
 
-### Open raster data via Layer Tab
+### Open raster data via Layer Tab <a id="open-raster-data-via-layer-tab"></a>
 
 1. Click on `Layer`-> `Add Layer`-> `Add Raster Layer`. 
 2. Click on the three points ![](/fig/Three_points.png) and navigate to your raster file.
@@ -41,14 +41,14 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
 
 
-### Open raster data via drag-and-drop
+### Open raster data via drag-and-drop <a id="open-raster-data-via-drag-and-drop"></a>
 
 1. In your file browser, open the folder with the raster data you want to import.
 2. Drag-and-drop it onto the QGIS map canvas.
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
 
-### Open NetCDF raster files
+### Open NetCDF raster files <a id="open-netcdf-raster-files"></a>
 
 1. `Layer` -> `Add Layer` -> `Add Raster Layer` -> Select your file -> click `add` 
 2. A window will open and you have to select the exact dataset you want to use. -> Click `add Layers`
@@ -57,13 +57,13 @@ When importing a shapefile by drag-and-drop you have to use the file with the en
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_NetCDF_raster.mp4"></video>
 
 
-## Text data import
+## Text data import <a id="text-data-import"></a>
 
 :::{tip}
 To directly load .csv or EXCEL data into QGIS, the datasets need to have columns containing geometry in the form of latitude (Y-field) and longitude (X-field). 
 :::
 
-### Open .csv data in QGIS
+### Open .csv data in QGIS <a id="open-csv-data-in-qgis"></a>
 
 :::{mote}
 When loading vector data in text format like .csv or .txt in QGIS, this data has to have latitude and longitude columns. 
@@ -86,7 +86,7 @@ When loading vector data in text format like .csv or .txt in QGIS, this data has
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 
-### Open .xlsx files in QGIS
+### Open .xlsx files in QGIS <a id="open-xlsx-files-in-qgis"></a>
 
 1. Drag and drop the .xlsx file in QGIS.
 2. If the file contains multiple tables, select the table you want to work with. Click `add Layers`

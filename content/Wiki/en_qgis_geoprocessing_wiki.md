@@ -1,11 +1,11 @@
-# Spatial Processing
+# Spatial Processing <a id="spatial-processing"></a>
 
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
 
-## Buffer
+## Buffer <a id="buffer"></a>
 - Calculate a ![](/fig/mAlgorithmBuffer.png) `buffer` with a defined distance.
 - Dissolve: if 2 or more buffer areas overlap, they can be combined.
 
@@ -22,7 +22,7 @@ The unit of distance depends on the projection of the layer. For buffering you u
 If you're dealing with really large "megabuffers" or if you can only choose buffer distances in degrees instead of meters, it might mean there's __no metric coordinate system__, or it was __incorrectly reprojected__. The unit of the buffer __depends__ on the __coordinate reference systems of the layer__.
 :::
 
-## Clip
+## Clip <a id="clip"></a>
 - With the ![](/fig/mAlgorithmClip.png) `Clip` tool you can extract and retain the spatial extent of one vector layer based on the boundaries of another layer. 
 - `Input Layer`: refers to the specific __layer to be clipped__, for instance, a road network.
 - `Overlay Layer`: e.g. a polygon layer of the region (e.g. borders of Heidelberg).
@@ -32,7 +32,7 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_clip_wiki.mp4"></video>
 :::
 
-## Dissolve
+## Dissolve <a id="dissolve"></a>
 - The ![](/fig/mAlgorithmDissolve.png) `dissolve` tool aggregates geometries with the same attribute values.
 - When 2 or more buffer areas overlap, they can be combined using dissolve.
 
@@ -45,7 +45,7 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 In QGIS, only the attributes selected for the dissolve operation will receive the accurate attribute, while the remaining attributes remain unaggregated; hence, in this example, the name is not accurately represented (e.g. the name for Western Europe might be mistakenly assigned as "Netherlands").
 :::
 
-## Intersection
+## Intersection <a id="intersection"></a>
 
 The ![](/fig/intersection_icon.png) `intersection` tool extracts the part of the layers which overlap.
 
@@ -72,7 +72,7 @@ name: Intersect_concept_2
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
 :::
 
-## Centroids
+## Centroids <a id="centroids"></a>
 
 With the ![](/fig/qgis_3.40_centroids.png) `Centroids`-tool, you can create a new layer with points at the centre of each polygon.  
 

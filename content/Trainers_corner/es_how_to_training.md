@@ -1,4 +1,4 @@
-# Cómo planificar una capacitación en GIS
+# Cómo planificar una capacitación en GIS <a id="como-planificar-una-capacitacion-en-gis"></a>
 
 __🔙[Volver a la página principal](/content/intro.md)__
 
@@ -25,7 +25,7 @@ Y __tercero__, prepara la capacitación con el mayor nivel de detalle posible, e
 
 Para facilitar la planificación, puedes usar la siguiente lista como guía:
 
-## 1. Preparación
+## 1. Preparación <a id="1-preparacion"></a>
 
 Antes de planificar tu capacitación, debes tomar algunas decisiones básicas sobre el entorno y el formato:
 
@@ -34,7 +34,7 @@ Antes de planificar tu capacitación, debes tomar algunas decisiones básicas so
 - El entorno: ¿planeas un curso en línea o presencial? ¿Organizarás sesiones de medio día o de día completo? ¿Se llevará a cabo en días consecutivos o distribuidos a lo largo de varias semanas? Estas preguntas deben responderse según el contexto y las necesidades del grupo.
 - Relevo entre facilitadores: si varias personas facilitan la capacitación en GIS, considera programar un tiempo entre sesiones para hacer un intercambio de información. Esto garantiza que todas las personas facilitadoras cuenten con los datos necesarios para su sesión y que la capacitación fluya de manera continua.
 
-## 2. Planificación
+## 2. Planificación <a id="2-planificacion"></a>
 
 Puedes usar la estructura modular de la plataforma y los [niveles de habilidad](https://giscience.github.io/gis-training-resource-center/content/es_intro.html) como guía al planificar tu cronograma de capacitación. En el plano práctico, considera lo siguiente:
 
@@ -44,7 +44,7 @@ Puedes usar la estructura modular de la plataforma y los [niveles de habilidad](
 - Considera el entorno práctico: si organizas una capacitación presencial, ¿tienes un espacio adecuado? ¿Con qué recursos contarán las personas participantes?
 - Finalmente, ¿cómo promoverás tu capacitación? ¿Puedes difundirla dentro de tu institución? ¿Cómo organizarás el proceso de inscripción? ¿Qué información necesitas recopilar (antecedentes, intereses, habilidades previas)? ¿Cómo seleccionarás a las personas participantes?
 
-## 3. Seguimiento
+## 3. Seguimiento <a id="3-seguimiento"></a>
 
 Durante y después de la capacitación, puedes fortalecer el proceso fomentando y facilitando el intercambio entre las personas participantes, además de evaluar la capacitación.
 

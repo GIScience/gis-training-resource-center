@@ -1,11 +1,11 @@
-# Visualisation
+# Visualisation <a id="visualisation"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Visualising vector data
+## Visualising vector data <a id="visualising-vector-data"></a>
 
-### Symbology
+### Symbology <a id="symbology"></a>
 
 QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization methods
 
@@ -220,7 +220,7 @@ A map showing the population of Nigerian states
 
 ----
 
-### Labels
+### Labels <a id="labels"></a>
 
 Labels are text that display information or values of the data. In QGIS, you can either select __Single Labels__ or __Rule-based Labelling__. For each option, an attribute (`value`) will be displayed on the map. Additionally, you can __change the font, font size, colour and some other styling options__ for the label text. 
 
@@ -341,9 +341,9 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 
 ---
 
-## Visualising raster data
+## Visualising raster data <a id="visualising-raster-data"></a>
 
-### Assigning a colour gradient to raster data
+### Assigning a colour gradient to raster data <a id="assigning-a-colour-gradient-to-raster-data"></a>
 
 To assign a colour gradient for raster data, you need to:
 
@@ -375,13 +375,13 @@ Elevation data sets are frequently used to communicate the terrain on a map. By 
 
 ::::
 
-### Inverting the colour ramp
+### Inverting the colour ramp <a id="inverting-the-colour-ramp"></a>
 
 In some cases, the colour ramp should be inverted to make it easier to read the map:
 1. Click on the __arrow next to the Colour ramp__ to open the dropdown menu.
 2. Click on `Invert Colour Ramp`.
 
-## Exporting and Importing styles
+## Exporting and Importing styles <a id="exporting-and-importing-styles"></a>
 
 :::::{tab-set}
 ::::{tab-item} Saving or exporting styling settings

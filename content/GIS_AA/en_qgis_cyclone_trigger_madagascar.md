@@ -1,4 +1,4 @@
-# QGIS Trigger Workflow for Madagascar 
+# QGIS Trigger Workflow for Madagascar <a id="qgis-trigger-workflow-for-madagascar"></a>
 
 <!-- Maybe have a final look over introduction and all the official stuff which should be included in the documentation -->
 
@@ -36,11 +36,11 @@ The workflow is almost fully automated through a QGIS model, requiring no manual
 The workflow is almost fully automated through a QGIS model, requiring no manual intervention. The chapter Automated Trigger Workflow outlines the process and its practical implementation. Each step included in the model is explained in detail to provide a complete understanding of the workflow and how the analysis was carried out.
 
 
-## Background
+## Background <a id="background"></a>
 
 Setting triggers is one of the cornerstones of the Forecast-based Financing system. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In AA, this is decided according to specific threshold values, so-called triggers, based on weather and climate forecasts, which are defined for each region (see [FbF Manual](https://manual.forecast-based-financing.org/en/chapter/06-develop-a-trigger-system/)).
 
-## Trigger Statement
+## Trigger Statement <a id="trigger-statement"></a>
 
 **Pre-Activation Trigger:** at least one of the meteorological forecasts from Météo Madagascar, RMSC La Reunion, or ECMWF projects a greater than 50% likelihood of landfall by a tropical cyclone of tropical storm strength or higher within the next 7 days.
 
@@ -49,7 +49,7 @@ Setting triggers is one of the cornerstones of the Forecast-based Financing syst
 <!---# Downloading the report
  This section will include information on how to download the final report as soon as its published -->
 
-# Functionality of the Workflow
+# Functionality of the Workflow <a id="functionality-of-the-workflow"></a>
 
 The Trigger Process concept is displayed in the figure below.
 
@@ -76,7 +76,7 @@ The QGIS project and QGIS model have been created using QGIS version 3.40.9 (LTR
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 For the trigger mechanism to work properly we currently use different datasets: data that we assume to be static in the near term, and variable data which describe the datasets that will be checked for triggering on a regular basis depending on the occurrence of anticipated cyclone events. 
 
@@ -99,7 +99,7 @@ To download the project click on the
 ::::
 
 
-### Fixed Data
+### Fixed Data <a id="fixed-data"></a>
 
 By fixed data we mean datasets that are needed to create the map reports, that will most probably not change in the near term. In the long term these datasets can be adapted easily.
 
@@ -123,7 +123,7 @@ The three raster datasets are combined into a **Master Raster** — a multi-band
 
 :::
 
-### Monitoring Data
+### Monitoring Data <a id="monitoring-data"></a>
 
 ```{admonition} Attention
 :class: attention
@@ -140,11 +140,11 @@ Tropical cyclone track data is available in various subsets, depending on the te
 
 :::
 
-## Estimating the impact of the cyclone using the QGIS model
+## Estimating the impact of the cyclone using the QGIS model <a id="estimating-the-impact-of-the-cyclone-using-the-qgis-model"></a>
 
 As explained at the start of this chapter the developed trigger workflow is done automatically by a QGIS model. In this chapter we will explain its functionality and in a subsequent step it is explained how to run the automated model. 
 
-### Functionality of the model
+### Functionality of the model <a id="functionality-of-the-model"></a>
 
 <!-- Have a final look over this section to see if all the important information is covered -->
 
@@ -169,12 +169,12 @@ The following key processing steps are run inside the model:
     * Warehouses are filtered based on proximity to exposed regions. The model uses road data and spatial filters to determine accessible warehouses relevant to the response.
 -->
 
-### How to run the model
+### How to run the model <a id="how-to-run-the-model"></a>
 
 The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
-### Step 1: Explanation of the folder structure
+### Step 1: Explanation of the folder structure <a id="step-1-explanation-of-the-folder-structure"></a>
 
 
 ```{figure} /fig/MAD_Trigger_workflow_Step1.png
@@ -216,7 +216,7 @@ __Tool:__ No special tools or programs are needed
 ``````
 
 
-### Step 2: Open the project in QGIS and load the model in the QGIS Model Designer
+### Step 2: Open the project in QGIS and load the model in the QGIS Model Designer <a id="step-2-open-the-project-in-qgis-and-load-the-model-in-the-qgis-model-designer"></a>
 
 ```{figure} /fig/MAD_Trigger_workflow_Step2.png
 ---
@@ -303,7 +303,7 @@ It is also possible to add a specific warehouse isochrone to one of the previous
 
 ----
 
-#### Opening the model in QGIS
+#### Opening the model in QGIS <a id="opening-the-model-in-qgis"></a>
 
 Let's open the QGIS model:
 1. In the tob bar of your QGIS window, navigate to `Processing` -> `Model Designer`. A new window will open. This is the model designer.
@@ -330,7 +330,7 @@ Opening the graphical modeler in QGIS 3.44
 
 <!-- Do we need a video here? -->
 
-### Step 3: Run the model
+### Step 3: Run the model <a id="step-3-run-the-model"></a>
 
 ```{figure} /fig/MAD_Trigger_workflow_Step3.png
 ---
@@ -418,9 +418,9 @@ Results
 We have all the necessary layers to create the individual maps. The next section will cover how to use the predetermined and calculated layers to create the maps using the map templates and layer style files. 
 :::
 
-## Creating the map reports using the map templates
+## Creating the map reports using the map templates <a id="creating-the-map-reports-using-the-map-templates"></a>
 
-### Visualization and Styling of the Model Outputs and creating the Print Map
+### Visualization and Styling of the Model Outputs and creating the Print Map <a id="visualization-and-styling-of-the-model-outputs-and-creating-the-print-map"></a>
 
 <!-- Is a video necessary for this chapter? -->
 
@@ -469,7 +469,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 
 -->
 
-### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations
+### Map 1: Cyclone Impact Overview: Affected Districts, Event Extent, and Warehouse Locations <a id="map-1-cyclone-impact-overview-affected-districts-event-extent-and-warehouse-locations"></a>
 
 :::{figure} /fig/MAD_Trigger_Impact_Overview_Map.png
 ---
@@ -498,7 +498,7 @@ align: center
 ---
 ```
 
-#### Styling of the layers
+#### Styling of the layers <a id="styling-of-the-layers"></a>
 
 1. Right click on the exposed_districts layer -> `Properties` -> `Symbology`
 2. In the down left corner click on `Style` -> `Load Style`
@@ -536,7 +536,7 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 :::
 
-#### Making the Print Layout
+#### Making the Print Layout <a id="making-the-print-layout"></a>
 
 For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
 
@@ -671,7 +671,7 @@ align: center
 ::::
 
 
-#### Exporting the Map 
+#### Exporting the Map <a id="exporting-the-map"></a>
 
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated-->
 
@@ -712,7 +712,7 @@ __Export as PDF__
 5. Click `Save`.
 Now the image can be found in the result folder.
 
-### Map 2: Impact Assessment: Exposed Population and Critical Infrastructure
+### Map 2: Impact Assessment: Exposed Population and Critical Infrastructure <a id="map-2-impact-assessment-exposed-population-and-critical-infrastructure"></a>
 
 Layers needed for this map:
 - `CRM_Warehouses`
@@ -734,7 +734,7 @@ align: center
 <!--Remove the comment as duplicating and loading the style ensures that previous map layouts are not broken. also add that you can fix layer styles and layers in the map items-->
 
 
-#### Map 2: Styling of the layers
+#### Map 2: Styling of the layers <a id="map-2-styling-of-the-layers"></a>
 
 1. Deactivate all the layers except gor the group "Map_Cyclone_Impact_Assessment" and the OpenStreetMap Basemap.
 2. Right click on the "exposed_population - copy" layer -> `Properties` -> `Symbology`
@@ -781,7 +781,7 @@ The documentation covers the exposed population impact assessment map. However, 
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 ::::
 
-#### Map 2: Making the Print Layout
+#### Map 2: Making the Print Layout <a id="map-2-making-the-print-layout"></a>
 
 ```{tip}
 The same workflow applies to all five impact variables: population, buildings, education facilities, health sites, and agricultural landcover. The following example demonstrates the process for creating the population impact map. The remaining maps can be generated by following the same steps.
@@ -1043,7 +1043,7 @@ align: center
 ---
 ```
 
-#### Exporting the Map 
+#### Exporting the Map <a id="exporting-the-map-2"></a>
 
 <!--Exporting the map should be done after each layout. If the maps are not locked, it will break the layouts and the work will have to be repeated
 
@@ -1097,17 +1097,17 @@ align: center
 ---
 ```
 
-## Working with the warehouse isochrones
+## Working with the warehouse isochrones <a id="working-with-the-warehouse-isochrones"></a>
 
 The project includes isochrones for each warehouse. The warehouse isochrones correspond to one warehouse and are identifiable by their location name. If you want to add an isochrone to one of the  It is possible to add individual isochrones to the map templates by simply duplicating the isochrone layer and moving it to the desired map group.
 
 <!--INSERT EXAMPLE PICTURE-->
 
-# Historical Analysis of Cyclone Impacts
+# Historical Analysis of Cyclone Impacts <a id="historical-analysis-of-cyclone-impacts"></a>
 
 To run the full trigger process using historical cyclone track data, you can assess the impacts of past events and gain insights into what occurred in similar scenarios. The storm track data is available from the **International Best Track Archive for Climate Stewardship (IBTrACS)**. Instructions on how to access this data are provided in the following section.
 
-## Download of historical storm track data
+## Download of historical storm track data <a id="download-of-historical-storm-track-data"></a>
 
 The **International Best Track Archive for Climate Stewardship (IBTrACS)** v04r01 data is updated three times a week (usually on Sunday, Tuesday, and Thursday), and could be updated more frequently to address specific needs and use cases. The latest updates in the correct file format can be found on their [website](https://www.ncei.noaa.gov/products/international-best-track-archive):
 

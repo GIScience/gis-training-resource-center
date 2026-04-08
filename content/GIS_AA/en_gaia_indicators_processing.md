@@ -1,6 +1,6 @@
-# GAIA Pipeline Documentation
+# GAIA Pipeline Documentation <a id="gaia-pipeline-documentation"></a>
 
-## Overview
+## Overview <a id="overview"></a>
 
 The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for a collection from several countries at administrative level 2, covering multiple countries where administrative boundaries and place codes (PCODEs) are available on HDX. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:
 
@@ -17,7 +17,7 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 Further details on GAIA’s methodology are available in the [GAIA repository on GitHub](https://github.com/GIScience/gaia).
 
 ---
-## Risk Assessment Plugin
+## Risk Assessment Plugin <a id="risk-assessment-plugin"></a>
 The datasets produced by GAIA are fully compatible with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), enabling seamless integration into spatial risk analyses. They are openly available for multiple countries through [HeiGIT on HDX](https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology?sort=metadata_modified+desc), providing ready-to-use geospatial layers for risk assessments.
 
 :::{admonition} Information
@@ -27,14 +27,14 @@ The **Coping Capacity**, **Vulnerability**, and **Flood Exposure** files can be 
 
 ---
 
-## 1. Access to Services
+## 1. Access to Services <a id="1-access-to-services"></a>
 Represents the share of the population with access to key facilities within defined distances or travel times.
 
-### Data Sources
+### Data Sources <a id="data-sources"></a>
 - Accessibility data (isochrones) downloaded from **MinIO** for the categories: `education`, `hospitals`, `primary_healthcare`.
 - Population data: WorldPop raster data (vulnerable populations) via *Demographics*.
 
-### Processing Steps
+### Processing Steps <a id="processing-steps"></a>
 1. **Download accessibility isochrones** in GPKG format for each category.
 2. **Load administrative boundaries** at admin level 2 from local GeoJSON files.
 3. **Fetch WorldPop raster datasets** and sum relevant indicators to produce a vulnerable population raster.
@@ -44,7 +44,7 @@ Represents the share of the population with access to key facilities within defi
    - Use `rasterstats.zonal_stats` to compute total population within the isochrone area.
 5. Save results as a CSV containing population counts per administrative unit.
 
-### Outputs
+### Outputs <a id="outputs"></a>
 - CSV file: `{country_code}_{admin_level}_access.csv`
   - Columns: `{admin_level}_PCODE`, `access_pop_education_5km`, `access_pop_education_10km`, etc.
   - CRS: WGS84 (`EPSG:4326`)
@@ -200,16 +200,16 @@ def compute_access_population(country_code, admin_level, gdf_admin, work_dir, ou
 
 ---
 
-## 2. Facilities
+## 2. Facilities <a id="2-facilities"></a>
 Represents the availability and spatial distribution of essential service infrastructure such as schools, hospitals, and primary healthcare centers.
 
-### Data Sources
+### Data Sources <a id="data-sources-2"></a>
 - **OpenStreetMap (OSM)** data, accessed through either:
   - **Overpass API**, for direct querying of recent OSM feature data; or  
   - **Ohsome API**, for more stable and filtered access to OSM geometries.
 - **Administrative boundaries** (GeoJSON): Used to spatially aggregate features at administrative level 2.
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-2"></a>
 1. **Load administrative boundaries** (GeoJSON) for the target country at the desired administrative level.  
 2. **Define filters** for each facility type:
    - **Education:** `amenity=school`
@@ -230,7 +230,7 @@ Represents the availability and spatial distribution of essential service infras
    - Counts for all categories are merged into a single summary table.
    - Output is saved as a CSV file in the `Output` directory.
 
-### Outputs
+### Outputs <a id="outputs-2"></a>
 - CSV file: `{country_code}_{admin_level}_facilities.csv`
   - Columns:
     - `{admin_level}_PCODE`
@@ -472,16 +472,16 @@ def fetch_ohsome(context_log, boundary_file, output_dir, country_code, admin_lev
 
 ---
 
-## 3. Coping Capacity
+## 3. Coping Capacity <a id="3-coping-capacity"></a>
 Represents the ability of a population to access essential services and benefit from available infrastructure.  
 This layer combines *Access to Services* and *Facilities* indicators to assess local capacity to cope with shocks or disruptions.
 
-### Data Sources
+### Data Sources <a id="data-sources-3"></a>
 - **Access to Services CSVs:** Derived from population accessibility analysis (see *Access to Services* chapter).  
 - **Facilities CSVs:** Derived from OpenStreetMap facility data (see *Facilities* chapter).  
 - Both inputs are aggregated at the same administrative level (e.g., ADM2).
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-3"></a>
 1. **Input CSVs:**  
    - One *Access to Services* CSV and one *Facilities* CSV are provided per administrative level.
    - Each CSV includes an identifier column such as `ADM0_PCODE`, `ADM1_PCODE`, or `ADM2_PCODE`.
@@ -494,7 +494,7 @@ This layer combines *Access to Services* and *Facilities* indicators to assess l
    - The merged dataset is saved as `{country_code}_{admin_level}_coping.csv` under `Output/`.
    - One output is produced per administrative level present in the input data.
 
-### Outputs
+### Outputs <a id="outputs-3"></a>
 - CSV file: `{country_code}_{admin_level}_coping.csv`
   - Columns:  
     - `{admin_level}_PCODE`
@@ -559,17 +559,17 @@ def coping_asset(context, access_asset: List[str], facilities_asset: List[str]) 
 :::
 
 ---
-## 4. Demographics
+## 4. Demographics <a id="4-demographics"></a>
 Provides population distribution indicators based on **age** and **sex**.  
 This layer is derived from the [**WorldPop**](https://www.worldpop.org/) global population dataset and quantifies vulnerable population groups across administrative boundaries.
 
-### Data Sources
+### Data Sources <a id="data-sources-4"></a>
 - **WorldPop Age-Sex Population Rasters:**  
   Downloaded from the [WorldPop Global Constrained Population dataset](https://www.worldpop.org/geodata/listing?id=77) (`Global_2000_2020_Constrained`).  
 - **Administrative boundaries** (GeoJSON): Used to spatially aggregate features at administrative level 2.
 
 
-### Indicators
+### Indicators <a id="indicators"></a>
 Each demographic indicator represents the **sum of population counts** matching specified age and sex ranges:
 
 | Indicator       | Description                                | Ages (years)       | Sexes |
@@ -581,7 +581,7 @@ Each demographic indicator represents the **sum of population counts** matching 
 | `pop_u15`       | Population under 15                        | 0–14               | f, m  |
 | `female_u15`    | Female population under 15                 | 0–14               | f     |
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-4"></a>
 1. **Download Required WorldPop Tiles**  
    - For each indicator, the script identifies which age/sex rasters are needed (e.g., `m_0`, `f_1`, etc.).  
    - Tiles are downloaded from **Worldpop**.
@@ -595,7 +595,7 @@ Each demographic indicator represents the **sum of population counts** matching 
    - A single CSV per country: `{country_code}_{admin_level}_demographics.csv`
    - Saved to `data/{country}/Output/`
 
-### Outputs
+### Outputs <a id="outputs-4"></a>
 - **File:** `{country_code}_{admin_level}_demographics.csv`  
 - **Columns:**
   - `{admin_level}_PCODE`
@@ -622,7 +622,7 @@ import logging
 import shutil
 from rasterstats import zonal_stats
 
-# Define indicators directly
+# Define indicators directly <a id="define-indicators-directly"></a>
 INDICATORS = {
     "female_pop": {"ages": [0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80], "sexes": ["f"]},
     "children_u5": {"ages": [0, 1], "sexes": ["f", "m"]},
@@ -810,12 +810,12 @@ def aggregate_worldpop_to_csv(country_code: str, admin_level="ADM2", context_log
 :::
 
 ---
-## 5. Rural Population
+## 5. Rural Population <a id="5-rural-population"></a>
 Represents the proportion and distribution of people living in **rural areas** within each administrative unit. Rural areas are those outside urban extents, typically characterized by lower population density, agricultural or natural land use, and limited infrastructure compared to urban centers.
 
 This layer combines **WorldPop population rasters** with **Global Human Settlement Layer (GHS-SMOD)** data to estimate rural populations for each demographic group.
 
-### Data Sources
+### Data Sources <a id="data-sources-5"></a>
 - **WorldPop Population Rasters:**  
   Derived from the [WorldPop Age-Sex structured datasets](https://www.worldpop.org/geodata/listing?id=77).  
   Used to calculate population counts for various demographic indicators (see the *Demographics* chapter).  
@@ -825,7 +825,7 @@ This layer combines **WorldPop population rasters** with **Global Human Settleme
 - **Administrative Boundaries:**  
   GeoJSON boundary files (e.g., ADM2) define the spatial units used for population aggregation.
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-5"></a>
 1. **Download GHS-SMOD Raster**  
    - The script downloads the global SMOD ZIP archive for 2030.  
    - Extracts and selects the `.tif` raster corresponding to global settlement data.  
@@ -846,7 +846,7 @@ This layer combines **WorldPop population rasters** with **Global Human Settleme
    - Aggregates results into a CSV file per country and administrative level.  
    - Adds both absolute (`_rural`) and relative (`_rural_perc`) population values.
 
-### Outputs
+### Outputs <a id="outputs-5"></a>
 - CSV file: `{country_code}_{admin_level}_rural_population.csv`
   - Columns:
     - `{admin_level}_PCODE`
@@ -1048,16 +1048,16 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
 :::
 
 ---
-## 6. Vulnerability
+## 6. Vulnerability <a id="6-vulnerability"></a>
 Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.  
 This layer combines *Demographics* and *Rural Population* indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.
 
-### Data Sources
+### Data Sources <a id="data-sources-6"></a>
 - **Demographics CSVs:** Derived from [WorldPop](https://www.worldpop.org/) population datasets, disaggregated by age and sex (see *Demographics* chapter).  
 - **Rural Population CSVs:** Derived from settlement layer analysis separating rural and urban populations (see *Rural Population* chapter).  
 - Both datasets are aggregated to the same administrative level (e.g., ADM2).
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-6"></a>
 1. **Input CSVs:**  
    - One *Demographics* CSV and one *Rural Population* CSV are provided per administrative level.  
    - Each file contains an identifier column such as `ADM0_PCODE`, `ADM1_PCODE`, or `ADM2_PCODE`.
@@ -1073,7 +1073,7 @@ This layer combines *Demographics* and *Rural Population* indicators to highligh
    - The merged dataset is exported as `{country_code}_{admin_level}_vulnerability.csv` to the `Output/` directory.  
    - One file is created per administrative level present in the input data.
 
-### Outputs
+### Outputs <a id="outputs-6"></a>
 - **File:** `{country_code}_{admin_level}_vulnerability.csv`
 - **Columns:**
   - `{admin_level}_PCODE`
@@ -1136,12 +1136,12 @@ def vulnerability_asset(context, demographics_asset: List[str], rural_asset: Lis
 :::
 
 ---
-## 7. Crop Coverage and Change
+## 7. Crop Coverage and Change <a id="7-crop-coverage-and-change"></a>
 Quantifies the extent and temporal change of cropland areas within administrative boundaries. 
 
 This layer evaluates **total cropland coverage** as well as **changes in cropland area** between 2023 and 2024 using **Google Dynamic World (V1)**. This dataset provides 10 m, near-real-time land classification derived from Sentinel-2 imagery. For each administrative unit, the proportion of pixels classified as “cropland” (class 4) is calculated for both years. These percentages are then compared to determine both absolute and relative changes in cropland area.
 
-### Data Sources
+### Data Sources <a id="data-sources-7"></a>
 - **Dynamic World V1** (`GOOGLE/DYNAMICWORLD/V1`):  
   Global, near real-time land cover dataset from Google Earth Engine, with 10 m spatial resolution and daily temporal frequency.  
 - **Administrative Boundaries** (GeoJSON):  
@@ -1149,7 +1149,7 @@ This layer evaluates **total cropland coverage** as well as **changes in croplan
 - **Configuration File** (`configs/assets_config.yaml`):  
   Defines two reference years under `crops_asset: years: [year1, year2]` for comparison.
 
-### Indicators
+### Indicators <a id="indicators-2"></a>
 | Indicator | Description | Units |
 |------------|-------------|--------|
 | `crops_{year1}_pct` | Percentage of total area classified as crops in the first year | % |
@@ -1158,7 +1158,7 @@ This layer evaluates **total cropland coverage** as well as **changes in croplan
 | `crops_diff_pctpts` | Percentage point difference in cropland coverage | % points |
 | `crops_change_rel_pct` | Relative percentage change compared to the baseline year | % |
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-7"></a>
 1. **Configuration Parsing:**  
    - The script reads `assets_config.yaml` and extracts the two comparison years (e.g., 2018 and 2022).  
    - If the configuration does not define two valid years, an error is raised.
@@ -1189,7 +1189,7 @@ This layer evaluates **total cropland coverage** as well as **changes in croplan
 7. **Output Generation:**  
    - The combined dataset is saved as `{country_code}_{admin_level}_crops.csv` under `data/{country_code}/Output/`.
 
-### Outputs
+### Outputs <a id="outputs-7"></a>
 - **File:** `{country_code}_{admin_level}_crops.csv`  
 - **Columns:**
   - `{admin_level}_PCODE`
@@ -1336,12 +1336,12 @@ def process_crops_for_admin(country_code: str, admin_level: str, config_path="co
 :::
 
 ---
-## 8. Vegetation Index
+## 8. Vegetation Index <a id="8-vegetation-index"></a>
 Evaluates vegetation health and density using the **Normalized Difference Vegetation Index (NDVI)** derived from **Landsat** composites. NDVI values range from -1 to +1, where higher values indicate denser and healthier vegetation, while lower values reflect sparse or stressed vegetation, bare soil, or urban surfaces. 
 
 This layer provides summary statistics (mean, median, quartiles) and surface extent of high, medium, and low NDVI zones per administrative boundary.
 
-### Data Sources
+### Data Sources <a id="data-sources-8"></a>
 - **Landsat NDVI Composite** (`LANDSAT/COMPOSITES/C02/T1_L2_8DAY_NDVI`):  
   8-day composite product containing NDVI values at 30 m resolution.  
 - **Administrative Boundaries** (GeoJSON):  
@@ -1349,7 +1349,7 @@ This layer provides summary statistics (mean, median, quartiles) and surface ext
 - **Configuration File** (`configs/assets_config.yaml`):  
   Defines the target year under `ndvi_asset: year: [YYYY]`.
 
-### Indicators
+### Indicators <a id="indicators-3"></a>
 | Indicator | Description | Units |
 |------------|-------------|--------|
 | `NDVI_mean` | Mean NDVI value across the administrative unit | NDVI (unitless) |
@@ -1360,14 +1360,14 @@ This layer provides summary statistics (mean, median, quartiles) and surface ext
 | `NDVI_medium_sqkm` | Area with 0.1 ≤ NDVI < 0.6 | km² |
 | `NDVI_low_sqkm` | Area with NDVI < 0.1 | km² |
 
-### NDVI Thresholds
+### NDVI Thresholds <a id="ndvi-thresholds"></a>
 | Category | NDVI Range | Interpretation |
 |-----------|-------------|----------------|
 | **High NDVI** | ≥ 0.6 | Dense vegetation (forests, crops, green cover) |
 | **Medium NDVI** | 0.1 – 0.6 | Moderate vegetation (grasslands, shrubs, mixed use) |
 | **Low NDVI** | < 0.1 | Bare soil, urban areas, or degraded vegetation |
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-8"></a>
 1. **Configuration Loading**  
    - Extracts `year` from `assets_config.yaml` (`ndvi_asset: year: [YYYY]`).  
    - The script ensures exactly one valid year is defined.
@@ -1405,7 +1405,7 @@ This layer provides summary statistics (mean, median, quartiles) and surface ext
      `data/{country_code}/Output/{country_code}_{admin_level}_ndvi.csv`.  
    - Final columns are reordered and rounded to 2 decimals for clarity.
 
-### Outputs
+### Outputs <a id="outputs-8"></a>
 - **File:** `{country_code}_{admin_level}_ndvi.csv`  
 - **Columns:**
   - `{admin_level}_PCODE`
@@ -1564,12 +1564,12 @@ def process_ndvi_for_admin(country_code: str, admin_level: str, config_path="con
 :::
 
 ---
-## 9. Flood Exposure
+## 9. Flood Exposure <a id="9-flood-exposure"></a>
 Estimates population and facility exposure to flooding using **GLOFAS flood hazard rasters** and **WorldPop demographic layers**. Flooded areas are identified by usign a threshold of 30 cm, and exposure metrics are aggregated per administrative boundary.
 
 This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).
 
-### Data Sources
+### Data Sources <a id="data-sources-9"></a>
 - **GLOFAS Flood Hazard Rasters** (`https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/`)  
   Raster tiles containing flood depth values for different return periods (RPs).  
 - **WorldPop Population Layers** (`scripts/fetch_worldpop.py`)  
@@ -1584,7 +1584,7 @@ This layer provides indicators for the number of people affected per demographic
   - `setup.rps` (return periods)  
   - `facilities_asset.api` (data source for facilities)
 
-### Indicators
+### Indicators <a id="indicators-4"></a>
 | Indicator | Description | Units |
 |-----------|-------------|-------|
 | `RP{rp}_female_pop_{thresh}` | Number of females affected by flood depth ≥ threshold | people |
@@ -1602,12 +1602,12 @@ This layer provides indicators for the number of people affected per demographic
 
 > `{rp}` is the return period (e.g., 10, 50, 100 years), `{thresh}` is the flood threshold in cm.
 
-### Flood Threshold
+### Flood Threshold <a id="flood-threshold"></a>
 | Parameter | Value | Description |
 |-----------|-------|-------------|
 | `setup.flood_threshold` | e.g., 0.3 m | Minimum flood depth considered for exposure (configurable in `assets_config.yaml`) |
 
-### Processing Steps
+### Processing Steps <a id="processing-steps-9"></a>
 1. **Configuration Loading**  
    - Reads `setup.flood_threshold` and `rps` from `assets_config.yaml`.  
    - Computes `THRESH_SUFFIX` (flood depth in cm) for indicator naming.
@@ -1641,7 +1641,7 @@ This layer provides indicators for the number of people affected per demographic
    - Fills missing values with 0 and rounds numbers to integers.  
    - Final CSV saved to `data/{country_code}/Output/{country_code}_{admin_level}_flood_exposure.csv`.
 
-### Outputs
+### Outputs <a id="outputs-9"></a>
 - **File:** `{country_code}_{admin_level}_flood_exposure.csv`  
 - **Columns:**
   - `{admin_level}_PCODE`

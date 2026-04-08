@@ -1,6 +1,6 @@
-# Sketch Map Tool
+# Sketch Map Tool <a id="sketch-map-tool"></a>
 
-## What is the Sketch Map Tool?
+## What is the Sketch Map Tool? <a id="what-is-the-sketch-map-tool"></a>
 
 ```{figure} ../../fig/SketchMap_Logo_Top.jpg
 ---
@@ -14,7 +14,7 @@ Sketch Map Tool Logo
 The [Sketch Map Tool](https://sketch-map-tool.heigit.org/) simplifies participatory mapping, by facilitating the creation and digitisation of paper-based maps, the so-called Sketch Maps. This low-tech solution enables the offline collection of local knowledge and perceptions with pen and paper maps. Every SketchMap contains a basemap with OpenStreetMap data or satellite imagery, which provides a scale and orientation to the user. Upon uploading pictures of marked maps, the tool automatically digitizes and georeferences the markings to download and integrate into Geographic Information Systems. The Sketch Map Tool combines widely used, analogue mapping with digital analysis, fosters community involvement and the usability of gained results. 
 
 
-## What is a Sketch Map?
+## What is a Sketch Map? <a id="what-is-a-sketch-map"></a>
 
 | | Satellite imagery | OSM data|
 | :-------------------- | :-------------------- | :----------------- | 
@@ -23,7 +23,7 @@ The [Sketch Map Tool](https://sketch-map-tool.heigit.org/) simplifies participat
 | Currentness | The satellite imagery is typically within 3-5 years of currency. | Current OSM-data is used in the base map. | 
 | Biggest benefit | Impression of the landscape and topography | Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.| 
 
-## Introduction in the Workflow Sketch Map Tool
+## Introduction in the Workflow Sketch Map Tool <a id="introduction-in-the-workflow-sketch-map-tool"></a>
 
 ```{figure} /fig/SMT_workflow_Satelite.png
 ---
@@ -35,7 +35,7 @@ Sketch Map Tool workflow
 ```
 
 
-## The Sketch Map Tool and its use in the EVCA
+## The Sketch Map Tool and its use in the EVCA <a id="the-sketch-map-tool-and-its-use-in-the-evca"></a>
 
 The Enhanced Vulnerability and Capacity Assessment (EVCA) is a participatory process developed for communities to become more resilient through the assessment and analysis of the risks they face and the identification of actions to reduce these risks. The EVCA guidelines contains different tools in order to help National Societies to understand the dynamics of risk in a specific community. 
 In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.
