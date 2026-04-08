@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercise 5: The world
+# Exercise 5: The world <a id="exercise-5-the-world"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 :class-card: sd-border-1 sd-shadow-none
@@ -63,18 +63,18 @@ __Relevant Wiki Articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -94,7 +94,7 @@ __Wrap up:__
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :class-card: sd-text-center 
@@ -110,7 +110,7 @@ The folder is called “Module_2_Exercise_5_The_World" and contains the whole [s
 - [Significant Earthquake Dataset](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
 - [Global Power Plant Dataset](https://datasets.wri.org/dataset/globalpowerplantdatabase) (Points/GeoPackage)
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
 ::::{margin}
 :::{tip}

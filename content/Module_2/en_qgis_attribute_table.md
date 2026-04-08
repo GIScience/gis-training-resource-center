@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Attribute Table
+# Attribute Table <a id="attribute-table"></a>
 
 Each vector layer consists of geometric features (points, lines or polygons) and an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store __attributes__ of that feature. You can use the attribute table to search, sort, filter, edit and select data. 
 
@@ -27,7 +27,7 @@ You can complement this chapter by doing the steps with a vector layer of your c
 
 :::
 
-## Opening the attribute table
+## Opening the attribute table <a id="opening-the-attribute-table"></a>
 
 Having a look into the attribute table is essential to understand and get an overview of the data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.
 
@@ -103,7 +103,7 @@ Opening the attribute table in QGIS 3.36
 
 <!-- ADD: What will be the most important of these. Needs more explanation.-->
 
-## Sort the attribute table
+## Sort the attribute table <a id="sort-the-attribute-table"></a>
 
 You can sort data in the attribute table by clicking on a column header. Text data will be sorted alphabetically and numeric data will be sorted by value. To reverse the sort order, click the header again. A small arrow in the column header indicates whether it is sorted in ascending or descending order. 
 
@@ -135,7 +135,7 @@ Attribute table sorted descendingly.
 ::::
 :::::
 
-## Zoom in on a specific feature via attribute table
+## Zoom in on a specific feature via attribute table <a id="zoom-in-on-a-specific-feature-via-attribute-table"></a>
 
 You can zoom in on a specific feature if you need to locate it geographically or you want to get a closer look: 
 
@@ -148,7 +148,7 @@ You can zoom in on a specific feature if you need to locate it geographically or
 
 :::
 
-## Manually select features in the attribute table
+## Manually select features in the attribute table <a id="manually-select-features-in-the-attribute-table"></a>
 
 To interact with features in a layer you have to select these features. One way to select features is via the attribute table.
 
@@ -165,7 +165,7 @@ To interact with features in a layer you have to select these features. One way 
 
 :::
 
-## Zoom to selected area
+## Zoom to selected area <a id="zoom-to-selected-area"></a>
 
 Now that you know how to select features, you can zoom onto your area of 
 interest. To do so you can click on the symbol on the toolbar or right click 
@@ -189,7 +189,7 @@ name: en_zoom_to_selection_2
 Screenshot of how to zoom to Selection by clicking right.
 :::
 
-## Save only selected features as a new file
+## Save only selected features as a new file <a id="save-only-selected-features-as-a-new-file"></a>
 
 After you have selected your data, you might want to proceed with only the 
 selection. You can save your selection as a new layer. To do so right click on the 
@@ -218,7 +218,7 @@ If you are unsure which format is most appropriate, check out the [geodata types
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

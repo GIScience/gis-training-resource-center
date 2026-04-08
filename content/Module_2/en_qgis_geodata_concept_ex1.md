@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercise 1: Understanding Geodata
+# Exercise 1: Understanding Geodata <a id="exercise-1-understanding-geodata"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of this exercise:__
@@ -67,18 +67,18 @@ __Relevant Wiki articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -98,8 +98,8 @@ __Wrap up:__
 
 :::
 
-## Exercise
-### Available Data
+## Exercise <a id="exercise"></a>
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :class-card: sd-text-center
@@ -128,7 +128,7 @@ The exercise data should be saved in a location where you can easily find them a
 
 :::
 
-### Tasks
+### Tasks <a id="tasks"></a>
 
 1. Open the files you have downloaded in QGIS. 
    - __Unzip the folder__ with the exercise data. 

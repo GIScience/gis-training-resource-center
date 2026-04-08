@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercise 2: Basic geodata processing
+# Exercise 2: Basic geodata processing <a id="exercise-2-basic-geodata-processing"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of this exercise:__
@@ -67,7 +67,7 @@ __Relevant Wiki articles:__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 __Prepare the training:__
@@ -97,9 +97,9 @@ __Wrap up:__
 
 :::
 
-## Exercise
+## Exercise <a id="exercise"></a>
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_Geodata_Processing.zip 
@@ -131,7 +131,7 @@ GeoJSON does not support multiple layers, so the polygons for the country bounda
 
 <!--ADD: Explanation about how GeoJSON apparently merges different layers?-->
 
-### Tasks
+### Tasks <a id="tasks"></a>
 
 1. Load both files into QGIS.
 
@@ -163,7 +163,7 @@ the district in which **Zuyel** is located. Name it accordingly. To find the dis
 
 8. Save your project.
 
-### Result
+### Result <a id="result"></a>
 
 :::{figure} /fig/en_result_geodata_processing_exercise.png
 ---

@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Basemaps
+# Basemaps <a id="basemaps"></a>
 
 
 Base maps in QGIS serve as foundational layers that provide essential geographical context for other spatial data layers. They typically include features like roads, rivers, administrative boundaries, terrain information, and in some cases, satellite imagery. The primary purpose of base maps is to offer a visual reference for spatial analysis, data visualization, and map creation within QGIS projects.
@@ -27,7 +27,7 @@ Overall, base maps, including satellite imagery, play a crucial role in QGIS pro
 
 The following section will provide an overview on how to access and add basemaps to your QGIS-project.
 
-## Standard QGIS Basemaps
+## Standard QGIS Basemaps <a id="standard-qgis-basemaps"></a>
 
 You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
@@ -47,7 +47,7 @@ There are two ways to add OpenStreetMap as a basemap:
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
-## QuickMapServices
+## QuickMapServices <a id="quickmapservices"></a>
 
 There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The [article on plugins](/content/Wiki/en_qgis_plugins_wiki.md) in the wiki provides more detailed example information. One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). This plugin lets you access a wide range of basemaps that are not available in QGIS by default, such as Bing or Sentinel-2 satellite imagery.
 
@@ -101,7 +101,7 @@ When you are using QuickMapServices, be aware that some of these maps are under 
 
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Check your skills
 :class: note

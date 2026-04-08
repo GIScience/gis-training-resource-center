@@ -6,11 +6,11 @@
 :::
 ::::
 
-# Geodata management
+# Geodata management <a id="geodata-management"></a>
 
 In this chapter, we will have a closer look at how to store geodata on your computer to work in QGIS or other GIS applications. Since vector data is the primary geodata type you will work with at the beginning of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent folder structure for your GIS-data and projects and how to name geodata correctly. 
 
-## Fundamentals of Geodata Management
+## Fundamentals of Geodata Management <a id="fundamentals-of-geodata-management"></a>
 
 Working with geodata is not like working with data in programs such as Microsoft Excel or Word. Whenever you load an image in a Word file, the file will contain the image. If you delete the image on your computer, the Word file will still contain a copy of the image. 
 
@@ -18,7 +18,7 @@ This is not the case in QGIS! When you load geodata into QGIS, the system only e
 
 Because you are working directly with the source data, rather than a copy, whenever you edit data in QGIS the changes replace the source data and can not be reversed. If you plan to make changes to your data, you should make a copy of it first so that you always have a 'clean' copy you can go back to. 
 
-### Standard folder structure
+### Standard folder structure <a id="standard-folder-structure"></a>
 
 The single most important geodata management practice is to use a standardised folder structure that contains all parts of the QGIS project. 
 
@@ -38,7 +38,7 @@ name: standard_folder_structure_new_2025
 Standard folder structure. Source: HeiGIT
 :::
 
-### Naming Geodata
+### Naming Geodata <a id="naming-geodata"></a>
 
 Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues when working with your data files. The name of your files themselves need to be clear, meaning that you or others can identify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name your layers so you can identify the content, as well as what you have done with the layer. For example, if you have clipped a street layer of New York, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".
 
@@ -57,7 +57,7 @@ In this way, other people can understand what purpose different layers serve and
 
 `adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`
 
-### Documentation
+### Documentation <a id="documentation"></a>
 
 Documentation is an important step when working with geodata or performing analyses. It ensures clarity, reproducibility, and enables collaboration. Spatial data analysis often involves complex processes, data cleaning, data transformations, and specific data sources. Without proper documentation, it becomes difficult for yourself and others to understand, replicate, or build upon your work. Documentation helps organise the purpose, the methods or tools, the data inputs and outputs, as well as the assumptions and limitations. In general, good documentation allows GIS-practitioners to reproduce the analysis steps to get the exact same result. In collaborative work, good documentation serves as a roadmap and is essential when working on GIS-projects. In humanitarian work, and in decision-making processes, good documentation is essential as it helps inform decision making which enables humanitarian teams to allocate resources. 
 
@@ -81,7 +81,7 @@ You can document your projects using markdown editors or just simply creating a 
 Make sure yourself and other persons can understand and replicate the analysis steps. Good documentation turns your QGIS project from a black box into a transparent, shareable, and professional piece of work. 
 
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

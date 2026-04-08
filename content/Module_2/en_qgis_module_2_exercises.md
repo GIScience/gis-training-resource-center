@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercises for Module 2
+# Exercises for Module 2 <a id="exercises-for-module-2"></a>
 
 These exercises are designed to support a QGIS-training and can be done with participants as follow-along exercises or as homework before the next training. 
 - Exercise 1 and 2 cover the basics to familiarise beginners with geodata and how to import, inspect, and save vector data in QGIS. These exercises are suited for follow-along sessions. 

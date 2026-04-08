@@ -6,7 +6,7 @@
 :::
 ::::
 
-# What is GIS?
+# What is GIS? <a id="what-is-gis"></a>
 
 At its core, GIS is a computer-based system to organise data with a spatial 
 component (_geodata_). There are three core functions of GIS: 
@@ -34,7 +34,7 @@ __A more formal definition:__
 
 A Geographic Information System (GIS) is a digital tool that integrates data with maps. It enables the collection, management, analysis, and visualization of data by associating them with specific locations on the Earth's surface. By leveraging GIS, we gain deeper insights into data, revealing patterns and providing a better understanding of the geographic context. This leads to more insightful analysis, improved communication, and ultimately facilitates better evidence-based decision-making. GIS is deeply rooted in geography, the scientific field dedicated to studying Earth's lands, features, inhabitants, and phenomena. GIS software is capable of displaying various types of data simultaneously on a map, enhancing our ability to comprehend complex spatial relationships.
 
-## GIS components
+## GIS components <a id="gis-components"></a>
 
 GIS is more than a software. It’s a system and it includes
 multiple elements:
@@ -48,7 +48,7 @@ align: center
 GIS components (Source: British Red Cross)
 :::
 
-## Examples of GIS used by humanitarian organisations
+## Examples of GIS used by humanitarian organisations <a id="examples-of-gis-used-by-humanitarian-organisations"></a>
 
 To get a better understanding of how GIS is used in the humanitarian sector, we have collected some examples from different organisations in the section below (click the different tabs to view the examples by organisation).
 
@@ -153,7 +153,7 @@ Example Map: Philippines - TS Washi (Sendong) - Evacuation centre amd transitory
 
 :::::
 
-## GIS vs cartography
+## GIS vs cartography <a id="gis-vs-cartography"></a>
 
 __Cartography__ is the art and science of creating maps, encompassing the study and practice of mapmaking techniques. A Geographic Information System (GIS) represents a __modern evolution__ of traditional cartography, integrating advanced technologies and methods for spatial data analysis and visualization.
 
@@ -163,7 +163,7 @@ One key distinction is that GIS facilitates the incorporation of diverse dataset
 
 In essence, while cartography focuses primarily on map design and visualization, GIS extends beyond to encompass spatial data management, analysis, and interpretation. Therefore, GIS serves as a powerful tool for cartographers and professionals across various fields to create, analyze, and derive insights from geographic information
 
-## What is spatial analysis?
+## What is spatial analysis? <a id="what-is-spatial-analysis"></a>
 
 Many map products rely on spatial analysis. And indeed, the ability to use analysis tools allows us to get the most out of the data we have and to solve a wide variety of problems. The points below give you an simple definition of the concept.
 
@@ -175,7 +175,7 @@ However, the example of John Snow's cholera map of 1854 is a popular example of 
 - GIS enables you to work with these __layers__ to explore critically important questions and __find answers__ to those questions.
 
 
-### An example from the past: John Snow's cholera map
+### An example from the past: John Snow's cholera map <a id="an-example-from-the-past-john-snows-cholera-map"></a>
 
 In 1854, an __outbreak of cholera__ occurred in the Soho area of London, England. The most common theory was that the disease was spread through the air. Dr. John Snow believed that the danger was __in the water__. He made a map to analyse the __number of deaths__ in every housing block in Soho. He added the __location of water pumps__ on the map. He found a __correlation__ between one specific water pump and the number of infections.
 
@@ -201,7 +201,7 @@ __Using GIS__, several measures of spatial central tendency have been applied to
 
 :::
 
-## Common map types in humanitarian response
+## Common map types in humanitarian response <a id="common-map-types-in-humanitarian-response"></a>
 
 :::{note}
 
@@ -209,7 +209,7 @@ The humanitarian sector tends to use certain types of maps regularly. These areo
 
 :::
 
-### General reference maps
+### General reference maps <a id="general-reference-maps"></a>
 
 -  Show important __physical features__ of an area
 -  Include __natural and man-made features__
@@ -227,7 +227,7 @@ align: center
 Example Map: Nigeria: Reference Map of Ogun state (As of 26 December 2018) (Source: [OCHA](https://reliefweb.int/map/nigeria/nigeria-reference-map-ogun-state-26-december-2018?_gl=1*151t3z9*_ga*MTkxOTMyNTA1Ni4xNzE4MTAzNzMz*_ga_E60ZNX2F68*MTcyNDkzNDIyMC44LjEuMTcyNDkzNDU4Ni4zNC4wLjA)).
 :::
 
-### Infrastructure maps
+### Infrastructure maps <a id="infrastructure-maps"></a>
 
 Infrastructure maps in the humanitarian context provide visual representations of critical infrastructure such as roads, bridges, hospitals, and utilities in a given area. These maps help humanitarian organizations assess the accessibility of affected areas, plan relief efforts, and coordinate resources effectively during emergencies or disasters.
 
@@ -246,7 +246,7 @@ Example Map:  Nigeria - Borno State - Mogcolis Camp, General Infrastructure - Up
 align: center (Source: [REACH](https://reliefweb.int/map/nigeria/nigeria-borno-state-mogcolis-camp-general-infrastructure-updated-24-july-2017))
 :::
 
-### Thematic maps
+### Thematic maps <a id="thematic-maps"></a>
 
 Thematic maps display specific themes or topics such as population density, disease outbreaks, or vulnerability levels within a geographic area. These maps help humanitarian organizations analyze and understand specific issues or trends, guiding decision-making and resource allocation for targeted interventions and relief efforts.
 
@@ -264,7 +264,7 @@ align: center
 Example Map: Shelter Sector Turkiye: Rental prices changes, February - April 2023 (Source: [IFRC](https://reliefweb.int/map/turkiye/shelter-sector-turkiye-rental-prices-changes-february-april-2023)).
 :::
 
-### Analysis maps
+### Analysis maps <a id="analysis-maps"></a>
 
 Analysis maps are used to examine and interpret data, revealing patterns, trends, and relationships within a geographic area. They facilitate in-depth understanding of complex situations, enabling decision-makers to derive insights and make informed decisions for effective humanitarian responses.
 
@@ -283,7 +283,7 @@ align: center
 Example Map:  CCCM Cluster Yemen - REACH - Flood Hazard of IDP Sites - Marib governorate - Flood Depth Model (Source: [REACH](https://data.unhcr.org/es/documents/details/98946)).
 :::
 
-### Situation/descriptive maps
+### Situation/descriptive maps <a id="situationdescriptive-maps"></a>
 
 Situation or descriptive maps provide a snapshot of specific conditions or events in a particular geographic area. They visualize key information such as locations of resources, population distribution, infrastructure, and environmental factors. These maps offer a clear overview of the current situation, aiding in understanding and communication among stakeholders involved in humanitarian operations.
 
@@ -300,7 +300,7 @@ align: center
 Example Map: UNHCR Iraq Population Profile - Breakdown Overview - Syrian Refugees Registration December 2023 (Source: [UNHCR](https://reliefweb.int/report/iraq/unhcr-iraq-population-profile-breakdown-overview-syrian-refugees-registration-december-2023)).
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 :::::{admonition} Test your knowledge
 :class: note

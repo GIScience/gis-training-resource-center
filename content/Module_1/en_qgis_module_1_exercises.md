@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercises for Module 1
+# Exercises for Module 1 <a id="exercises-for-module-1"></a>
 
 This page has all the exercises from Module 1 - Introduction to GIS.
 

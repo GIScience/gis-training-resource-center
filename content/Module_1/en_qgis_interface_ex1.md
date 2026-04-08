@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercise 1: Understanding the QGIS Interface
+# Exercise 1: Understanding the QGIS Interface <a id="exercise-1-understanding-the-qgis-interface"></a>
 
-## Aim of the exercise
+## Aim of the exercise <a id="aim-of-the-exercise"></a>
 
 QGIS is a complex program with lots of functions, and the interface can be confusing, especially for beginners. This exercise will get you familiar with the main toolbars, windows and panels in QGIS. You will create a new QGIS project and save it, and navigate through the different panels and toolbars.
 
@@ -21,13 +21,13 @@ The exercise covers:
 - Activating new panels
 
 
-## Related wiki articles
+## Related wiki articles <a id="related-wiki-articles"></a>
 
 - [QGIS interface](/content/Wiki/en_qgis_interface_wiki)
 - [Projects and folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki)
 
 
-## Data preparation
+## Data preparation <a id="data-preparation"></a>
 
 In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate through the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
 
@@ -41,7 +41,7 @@ Standard folder structure. Source: HeiGIT.
 :::
 ---
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
 1. Create a new project. When opening QGIS, you will be greeted by the start layout, which shows the QGIS interface with no project loaded. On the left will be a panel with recent projects (this will probably be empty). To the right will be a news panel, showing posts from the QGIS blog, and beneath this is a `Project Templates` panel. 
 

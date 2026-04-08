@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercise: OpenStreetMap data export
+# Exercise: OpenStreetMap data export <a id="exercise-openstreetmap-data-export"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -59,18 +59,18 @@ __Relevant wiki articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -91,7 +91,7 @@ __Wrap up:__
 :::
 
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
@@ -101,7 +101,7 @@ Instead download the __standard folder structure__ [here](https://nexus.heigit.o
 
 :::
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
 OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over a few of these methods and discuss their advantages. 
 
@@ -110,7 +110,7 @@ OpenStreetMap (OSM) is a collaborative, open-source project that creates free, e
    
    ADD: Maybe a discussion step for each extraction method? in which scenarios would you choose which extraction method? -->
 
-### Task 1: Geofabrik
+### Task 1: Geofabrik <a id="task-1-geofabrik"></a>
 
 The Geofabrik website offers downloads of OSM data by region.
 
@@ -158,7 +158,7 @@ whole countries or regions.
 | + Clear documentation of which OSM features are contained in each shapefile | - Only available as shapefile                                                                   |
 
 
-### Task 2: HOT Export Tool
+### Task 2: HOT Export Tool <a id="task-2-hot-export-tool"></a>
 
 The [HOT Export Tool](https://export.hotosm.org/v3/) 
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
@@ -226,7 +226,7 @@ is in QGIS.
 | + Easy to use                           |                                        |
 | + Query can easily be repeated          |                                        |
 
-### Task 3: QuickOSM
+### Task 3: QuickOSM <a id="task-3-quickosm"></a>
 
 The QuickOSM plugin allows you to load OSM data directly into QGIS. 
 However, the plugin requires the deepest knowledge of the OSM data model, 

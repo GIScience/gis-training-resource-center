@@ -6,23 +6,16 @@
 :::
 ::::
 
-[link](/content/Module_1/en_module_1_overview.md#introduction-gis)
 
-
-[linkhtml](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html#introduction-gis) works
-
-(qgis-installation-setup-overview)=
-# Setting up
+# Setting up <a id="setting-up"></a>
 
 In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.
 
-(qgis-installation-quick-guide-installation)=
-## Quick guide QGIS 3.34.12 - installation and basic setup
+## Quick guide QGIS 3.34.12 - installation and basic setup <a id="quick-guide-qgis-33412-installation-and-basic-setup"></a>
 
 <iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-(qgis-installation-download-installation)=
-## QGIS Download and Installation
+## QGIS Download and Installation <a id="qgis-download-and-installation"></a>
 
 QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. The installation of QGIS is very simple. Depending on your system (Windows, Mac or Linux) there are some things to look out for. You can find advice below on how to install QGIS on different operating systems. 
 
@@ -33,8 +26,7 @@ The current __Long Term Release__ is __[QGIS 3.40.4. 'Bratislava'](https://qgis.
 
 :::
 
-(qgis-installation-download)=
-### QGIS Download
+### QGIS Download <a id="qgis-download"></a>
 
 1. Go to the [__QGIS download page__](https://www.qgis.org/en/site/forusers/download.html).
 2. Select `Download for Windows`, `Download for macOS` or `Download for Linux`, depending on your operating system.
@@ -53,8 +45,7 @@ The download page for QGIS 3.34.
 5. Locate the downloaded file (usually in your Downloads folder) and run it to start the installer
 6. Follow the installer instructions to install QGIS!
 
-(qgis-installation-os-specific-considerations)=
-## Operating System specific considerations
+## Operating System specific considerations <a id="operating-system-specific-considerations"></a>
 
 :::::{tab-set}
 
@@ -89,7 +80,7 @@ _Processing Saga NextGen Provider_.
 
 :::::
 
-## Setting up a folder structure for the training {#training-folder-structure}
+## Setting up a folder structure for the training <a id="setting-up-a-folder-structure-for-the-training"></a>
 
 Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.
 
@@ -97,7 +88,7 @@ Keeping your data and project-files organised is the key to successfully working
 - When downloading data for the exercises, create subfolders for each module and training exercise (e.g. `/GIS_Training/Module_1/Exercise_1`).
 - Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders. 
 
-[Module 2](/content/Modul_2/en_qgis_geodata_concept.md) will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects. 
+[Module 2](/content/Module_2/en_qgis_geodata_concept.md) will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects. 
 
 :::{note}
 
@@ -105,7 +96,7 @@ Make sure to unzip the exercise files before starting the exercises.
 
 :::
 
-## Self-Assessment Questions {#self-assessment}
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 :::{admonition} Test what you've learned
 :class: note

@@ -1,14 +1,14 @@
-# QGIS Exercise 2: Understanding the user interface and getting to know the layer concept
+# QGIS Exercise 2: Understanding the user interface and getting to know the layer concept <a id="qgis-exercise-2-understanding-the-user-interface-and-getting-to-know-the-layer-concept"></a>
 
 % CAN THIS FILE BE DELETED?
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-### Aim of the exercise:
+### Aim of the exercise: <a id="aim-of-the-exercise"></a>
 
 This exercise expands on the previous exercise. This time, we will also import data into a QGIS-project. We will learn how to display vector data in QGIS, view the attribute table, as well as learn how to reproject layers. This exercise touches upon content from module 2 and is aimed to refresh your knowledge about QGIS if you have already created your first projects. 
 
-### Wiki:
+### Wiki: <a id="wiki"></a>
 
 - [Interface](/content/Wiki/en_qgis_interface_wiki)
 
@@ -17,7 +17,7 @@ This exercise expands on the previous exercise. This time, we will also import d
 - [Layer concept and data import](/content/Wiki/en_qgis_layer_concept_wiki)
 
 
-### Data:
+### Data: <a id="data"></a>
 
 Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local folder and save the above data there. (.zip folders must be unzipped beforehand.)
 
@@ -31,7 +31,7 @@ Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local fo
 
 - Sierra Leone airports (CSV)
 
-### Tasks:
+### Tasks: <a id="tasks"></a>
 
 1. Open QGIS and familiarise yourself with the user interface. 
 
@@ -54,7 +54,7 @@ Airport Text Layer
 
 9. Optional: You can add the OpenStreetMap base map via the browser window => XYZ Tiles. Note that online base maps can lead to problems with the projection of the different layers. Make sure to remove the base map before saving the project.
 
-### Result: 
+### Result: <a id="result"></a>
 
 :::{dropdown} This (or similar) is what it looks like in the end:
 ![QGIS_User_Interface](/fig/en_eExercise_1_result.png)

@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Projections 
+# Projections <a id="projections"></a>
 
-## Introduction
+## Introduction <a id="introduction"></a>
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ Comparison Greenland - Africa (Source: [The True Size of](https://www.thetruesiz
 :::
 
 
-## How to choose an appropriate projected coordinate system
+## How to choose an appropriate projected coordinate system <a id="how-to-choose-an-appropriate-projected-coordinate-system"></a>
 
 In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). It is crucial that you are aware that your data can be in one CRS and your QGIS project in another CRS. 
 
@@ -108,7 +108,7 @@ width: 750 px
 The same point in three different reference systems (Source: HeiGIT).
 :::
 
-### Metric and Geographic Coordinate Reference Systems
+### Metric and Geographic Coordinate Reference Systems <a id="metric-and-geographic-coordinate-reference-systems"></a>
 
 There are two different types of Coordinate Reference System: __Geographic__ or __Metric__ CRS. 
 
@@ -133,7 +133,7 @@ When processing geodata, QGIS always uses the units of measurements of the layer
 
 :::
 
-### Local and Global CRS
+### Local and Global CRS <a id="local-and-global-crs"></a>
 
 
 :::{figure} /fig/en_local_crs.png
@@ -147,7 +147,7 @@ Local and global coordinate reference systems (CRS) (Source: British Red Cross).
 
 As you can see, smaller regions look skewed and distorted in a global CRS. For smaller areas local projections should be used, since they give a more accurate display. However, local projections heavily distort the map on a global level. 
 
-### How to check and change the project coordinate reference system
+### How to check and change the project coordinate reference system <a id="how-to-check-and-change-the-project-coordinate-reference-system"></a>
 
 :::{admonition} Now it's your turn!
 :class: note
@@ -174,7 +174,7 @@ One of the first things you do when starting a new QGIS project should be to che
 :::
 
 
-### Project CRS and Layer CRS
+### Project CRS and Layer CRS <a id="project-crs-and-layer-crs"></a>
 
 The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different coordinate reference systems do not refer to the same location on earth. This is because of the distortion of distance and area.
 
@@ -184,7 +184,7 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 
 
 
-#### Changing the projection of a vector layer
+#### Changing the projection of a vector layer <a id="changing-the-projection-of-a-vector-layer"></a>
 
 1. `Vector` Tab → `Data Management Tools` → `Reproject Layer`.
 2. Select target CRS/EPSG code.
@@ -196,7 +196,7 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 :::
 
-#### Changing the projection of a raster layer
+#### Changing the projection of a raster layer <a id="changing-the-projection-of-a-raster-layer"></a>
 
 1. `Raster` Tab → `Projections` → `Warp (Reproject)`.
 2. Select target CRS/EPSG-Code.
@@ -211,7 +211,7 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 
 <!-- Move this part? At this point trainees have not worked with rasterdata--->
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 
 ::::{admonition} Test your knowledge
@@ -273,7 +273,7 @@ Take a moment to test what you've learned in this chapter by answering the quest
 ::::
 
 
-## Further resources
+## Further resources <a id="further-resources"></a>
 
 The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) 
 offers a “a problem-based guide of common CRS issues, root causes, and solutions”. 

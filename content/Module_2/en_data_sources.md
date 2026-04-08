@@ -6,12 +6,12 @@
 :::
 ::::
 
-# Data sources
+# Data sources <a id="data-sources"></a>
 
 To find the appropriate data you are looking for, you can search online data 
 sharing platforms. Some important ones are highlighted below. 
 
-## What to look out for when looking for data
+## What to look out for when looking for data <a id="what-to-look-out-for-when-looking-for-data"></a>
 
 *Data source:* Always make sure to use data from trusted data sources. The 
 organisation that shared the data is the best indicator. Apart from that, use of 
@@ -43,9 +43,9 @@ width: 600 px
 The data to create maps or perform GIS analyses can come from various sources (Source: [CartONG](https://www.cartong.org/en/)).
 :::
 
-## Overview of useful data repositories
+## Overview of useful data repositories <a id="overview-of-useful-data-repositories"></a>
 
-### General geodata 
+### General geodata <a id="general-geodata"></a>
 
 | Name  | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -57,7 +57,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
 | GADM | Administrative boundaries | http://gadm.org |
 
-### Humanitarian data
+### Humanitarian data <a id="humanitarian-data"></a>
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -66,7 +66,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | UNHCR Geoservices | Data on displaced populations | https://data.unhcr.org/en/situations |
 | Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
 
-### Disaster data
+### Disaster data <a id="disaster-data"></a>
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -77,7 +77,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
 | WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
 
-### Population data
+### Population data <a id="population-data"></a>
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -88,7 +88,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | Pangea | Environmental & biosciences data | https://www.pangaea.de/ |
 | United Nations Population Fund | Data on sexual and reproductive health and population trends | https://www.unfpa.org/data
 
-### Buildings data
+### Buildings data <a id="buildings-data"></a>
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -96,7 +96,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | VIDA building footprint | Combined Google and Microsoft building footprint datasets | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
 | Open-building | Google building footprints | https://sites.research.google/open-buildings/#download |
 
-### Remote sensing/earth observation data
+### Remote sensing/earth observation data <a id="remote-sensingearth-observation-data"></a>
 
 | Name | Data | Link |
 | :-------------------- | :----------------- | :---------- |
@@ -109,7 +109,7 @@ The data to create maps or perform GIS analyses can come from various sources (S
 | GlobCover | Raster data on land cover | https://due.esrin.esa.int/page_globcover.php |
 
 
-## OpenStreetMap data
+## OpenStreetMap data <a id="openstreetmap-data"></a>
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
@@ -160,7 +160,7 @@ It is by default possible to add the OSM base map to your project.  Click on `La
 :::
 
 
-### QuickOSM plugin
+### QuickOSM plugin <a id="quickosm-plugin"></a>
 
 The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it 
 to your QGIS project.
@@ -219,7 +219,7 @@ on the wiki. There is an example of this in the Module 2 [OSM exercise](https://
 
 :::
 
-### HOT Export Tool
+### HOT Export Tool <a id="hot-export-tool"></a>
 
 With the [Humanitarian OpenStreetMap Team (HOT) Export Tool](https://export.hotosm.org/v3/) you can download customized extracts of up-to-date OSM data in different file formats. It offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.
 
@@ -283,7 +283,7 @@ name: hot_export_done
 Downloading data from HOT Export Tool.
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

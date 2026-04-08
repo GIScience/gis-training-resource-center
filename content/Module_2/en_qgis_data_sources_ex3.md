@@ -6,11 +6,11 @@
 :::
 ::::
 
-# Exercise 3: Data sources
+# Exercise 3: Data sources <a id="exercise-3-data-sources"></a>
 
 <!--This exercise is quite minimal with the explanation of steps (most should be looked up) so it is not suited for a follow along session -->
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 :class-card: sd-text-justify
@@ -66,17 +66,17 @@ __Relevant Wiki articles and module chapters__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
-## Prepare the training:
+## Prepare the training: <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-## Conduct the training
+## Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -96,9 +96,9 @@ __Wrap up:__
 
 :::
 
-## Exercise 
+## Exercise <a id="exercise"></a>
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip
@@ -118,7 +118,7 @@ Standard folder structure. Source: HeiGIT
 :::
 ::::
 
-### Task 1: Download the administrative boundaries and healthsites for Pakistan 
+### Task 1: Download the administrative boundaries and healthsites for Pakistan <a id="task-1-download-the-administrative-boundaries-and-healthsites-for-pakistan"></a>
 
 For our flood response map, we will need a few datasets from the web. In this exercise, we will be looking for the __administrative boundaries__ of Pakistan, the __healthsites__, as well as the __flood extent__ of the flood in Pakistan in 2024. 
 First, let us set up a new QGIS project along with the standard folder structure: 
@@ -185,7 +185,7 @@ For information on how to easily filter your data by manually selecting features
 
 :::
 
-### Task 2: Download the flood extent for Pakistan for August 2024
+### Task 2: Download the flood extent for Pakistan for August 2024 <a id="task-2-download-the-flood-extent-for-pakistan-for-august-2024"></a>
 
 Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.
 
