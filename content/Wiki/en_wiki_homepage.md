@@ -12,10 +12,10 @@ Here you will find short **technical** descriptions and **practical** guides on 
 
 ## Purpose of the Wiki
 
-- Provide **quick-reference documentation** to support GIS learning and teaching
-- Serve as a **knowledge base** of best practices, common pitfalls, and frequently asked questions
-- Offer **detailed explanations** of tools, methods, and workflows beyond the scope of the training modules
-- Help trainers **adapt content** to specific audiences, regions, or workflows
+- Provide **quick-reference documentation** to support GIS learning and teaching.
+- Serve as a **knowledge base** of best practices, common pitfalls, and frequently asked questions.
+- Offer **detailed explanations** of tools, methods, and workflows beyond the scope of the training modules.
+- Help trainers **adapt content** to specific audiences, regions, or workflows.
 
 
 ---
