@@ -6,15 +6,7 @@ author: HeiGIT gGmbH
 copyright: HeiGIT gGmbH
 logo: IFRC_Logo_Horizontal_RGB.svg
 
-parse:
-  myst_enable_extensions:
-    - colon_fence
-    - dollarmath
-    - linkify
-    - substitution
-    - tasklist
-    - attrs_inline
-    
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
