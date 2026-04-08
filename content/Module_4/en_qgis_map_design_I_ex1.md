@@ -7,9 +7,9 @@
 
 ::::
 
-# Map design Exercise 1: Creating a Map of Ghana
+# Map design Exercise 1: Creating a Map of Ghana <a id="map-design-exercise-1-creating-a-map-of-ghana"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of the exercise__
@@ -61,18 +61,18 @@ __Relevant Articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction.
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -92,7 +92,7 @@ __Wrap up:__
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 __Download the data for the exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_4/Modul_4_Exercise_1_creating_a_map_of_ghana/Modul_4_Exercise_1.zip).__  
 It is always important to make yourself familiar with the data at your disposal.
@@ -108,22 +108,22 @@ All data has been downloaded from the Humanitarian Data Exchange. Download the D
 
 
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
-### Preparation of the data
+### Preparation of the data <a id="preparation-of-the-data"></a>
 
 1. Load the `.shp`-files into a new QGIS-project.
 2. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 3. We want to make a comprehensible map, think about which data we need and what data we can leave out.
     - For example, the layer `hotosm_gha_roads_lines` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
-### Part 1: Symbolization
+### Part 1: Symbolization <a id="part-1-symbolization"></a>
 
 Now that we are familiar with the data at our disposal, let's choose the symbology for the different layers. Which information should be displayed on the map?
 
 Let's start with the administrative boundaries. We want to show the names and outlines for the `adm_1`-layer, as well as the outlines for the `adm_2`-layer.
 
-1. Put the layers for the administrative boundaries in an ascending order with `adm_0` at the bottom, followed by `adm_1` and `adm_2`
+1. Put the layers for the administrative boundaries in an ascending order with `adm_0` at the bottom, followed by `adm_1` and `adm_2`.
 2. Open the __Symbology Tab__ for the `adm_2`-layer. Set the __Fill color__ to transparent and the __Stroke width__ to 0.16 Millimeters and the __Stroke style__ to a dashed line.
 3. Open the __Symbology Tab__ for the `adm_1`-layer and set the colour as transparent. Leave the stroke width at 0,26 Millimeters and the stroke style as a solid line.
 4.  Open the __Symboloy Tab__ for the `adm_0`-layer and set it to a neutral colour (such as a light gray).
@@ -141,8 +141,8 @@ The layer for the settlements has been cleaned up and only the towns, regional c
 4. A list of all the unique values will appear. Assign each a dark grey point marker.
 5. We want to be able to differentiate between country, regional, or district capital. The most important capital is the country capital, followed by regional capitals and finally the district capitals. Give each point marker a different size corresponding to its importance.
 6. Let us add a label for the country capital and regional capitals next.
-7. Navigate to the "__Label Tab__" and select __"Rule-based Labelling"__
-8. Add a new rule and enter the following expression in the Filter: `(  "popPlace1"  =   'Country capital'  ) OR ( "popPlace1" = 'Regional capital' )`
+7. Navigate to the "__Label Tab__" and select __"Rule-based Labelling"__.
+8. Add a new rule and enter the following expression in the Filter: `(  "popPlace1"  =   'Country capital'  ) OR ( "popPlace1" = 'Regional capital' )`.
 9. Set the "Value" to `Name`.
 10. Make the font italic and draw a text buffer in order to differentiate the settlement labels from the labels of the regions.
 
@@ -158,20 +158,20 @@ Let's move on to the road network.
 6. Under the left window, click on the `=`-sign to add it to your expression.
 7. In the list with all the unique values. Select `primary` and add it to your expression.
 8. Close the parenthesis by clicking on `)` under the expression field on the left.
-9. Add the Operator `OR` and repeat the same expression with the parenthesis but select the unique value `secondary`
-10. The finished expression should be  `(  "highway"  =  'primary' )  OR  ( "highway"  =  'secondary'  )`
+9. Add the Operator `OR` and repeat the same expression with the parenthesis but select the unique value `secondary`.
+10. The finished expression should be  `(  "highway"  =  'primary' )  OR  ( "highway"  =  'secondary'  )`.
 11. Select a colour and thickness for the line so it is distinguishable from the administrative boundaries (e.g. yellow; keep in mind that some colors have conventional associations; blue for water for example).
 
 ---
 
 Now, as a final touch, let's select a symbol for the health facilities:
 
-1. Navigate to the `hospital_GHA` layer
+1. Navigate to the `hospital_GHA` layer.
 2. Open the __Symbology Tab__ and select the `Simple Marker`.
 3. Under "Symbol Layer type", select SVG-Symbol.
 4. Scroll down until you see the SVG-Symbol browser.
-5. In the search bar, enter 'hospital'
-6. Select one of the SVG-Symbols at your disposal
+5. In the search bar, enter 'hospital'.
+6. Select one of the SVG-Symbols at your disposal.
 7. Adjust the colour to red.
 8. Click Apply and Ok.
 
@@ -181,7 +181,7 @@ __Bonus Step__: [Adding a basemap](/content/Wiki/en_qgis_basemaps_wiki.md) can h
 
 Now the Map should be ready for a print layout.
 
-### Part 2: Creating the print layout
+### Part 2: Creating the print layout <a id="part-2-creating-the-print-layout"></a>
 
 Once you are happy with the symbolization and colours of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.
 
@@ -192,7 +192,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 3. Move and position the map so that the entire country is visible at a reasonable scale.
 4. Let's add a title:
     - Click on ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
-    - Drag a rectangle on the canvas
+    - Drag a rectangle on the canvas.
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Map of Ghana with roads and hospitals).
     - Adjust the font size: Click on the __Font__ dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.
 5. Let's add a legend:
@@ -208,18 +208,18 @@ Once you are happy with the symbolization and colours of your data, the next ste
     - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
 8. Let's add a logo (for example, the IFRC logo or the logo of your national society):
     - Click on ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Add picture`)
-    - Drag a rectangle in the spot where you want to add the logo
+    - Drag a rectangle in the spot where you want to add the logo.
     - Navigate to the `Item properties` panel on the right and switch to `Raster image`. 
-    - Click on the three dots `...` and select the file with your logo
+    - Click on the three dots `...` and select the file with your logo.
     - If necessary, resize or move the picture on the print layout.
 
-```{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+:::{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
 ---
 name: add picture item properties
 width: 600 px
 ---
 The item properties panel for pictures. You need to specify the save location of a picture in order to see it on the print layout.
-```
+:::
 
 9. Add a text box with additional information, sources, the author (you), and date of creation.
 10. When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".
@@ -227,17 +227,17 @@ The item properties panel for pictures. You need to specify the save location of
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_map_design_exercise_1_results.png
+:::{figure} ../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px
 ---
 Some space has been left in the bottom-right corner for an overview map
-```
+:::
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 
 
-### Bonus Exercise!
+### Bonus Exercise! <a id="bonus-exercise"></a>
 
 If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box `Lock Layers` and `Lock styles for layers`. This means that if you change the map in the main QGIS-window, the map you have added to the Now you can start working on an overview map. We will be using a shapefile with the countries of Africa.  
 

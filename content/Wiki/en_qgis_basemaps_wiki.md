@@ -1,4 +1,4 @@
-# Basemaps
+# Basemaps <a id="basemaps"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
@@ -9,7 +9,7 @@ Basemaps are background maps. They are often very practical since they are easy 
 No interaction with the basemaps is possible. They are only “pictures” in the background!
 ```
 
-## Standard QGIS Basemaps
+## Standard QGIS Basemaps <a id="standard-qgis-basemaps"></a>
 
 You can always add the standard OpenStreetMap as a basemap to your map canvas. 
 
@@ -22,7 +22,7 @@ __Option 2:__ `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStr
 __Add standard OpenStreetMap as Basemap__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
-### Add Google and Bing Basemaps
+### Add Google and Bing Basemaps <a id="add-google-and-bing-basemaps"></a>
 
 To add additional basemaps without using plugins you have to configure `XYZ Tiles`. 
 In the `Browser Panel`, right-click on `XYZ Tiles` -> `New Connection`.
@@ -31,16 +31,17 @@ In the `Browser Panel`, right-click on `XYZ Tiles` -> `New Connection`.
 
 `URL` = You can use any of the URLs in the table below.
 
-Name| Info | URL |
-| ----- | --- | --- |
-|[OpenTopoMap](https://wiki.openstreetmap.org/wiki/OpenTopoMap)|Opensource topographic map based on OSM and SRTM|https://tile.opentopomap.org/{z}/{x}/{y}.png|
-|Google Terrain||https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}|
-|Google Hybrid||https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}|
-|Google Satellite||https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}|
-|Google Road||https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}|
-|Google Roads only||https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}|
-|Google alternative Road map||https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}|
-|Bing Aerial||http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1|
+| Name                                                           | Info                                             | URL                                                      |
+|----------------------------------------------------------------|--------------------------------------------------|----------------------------------------------------------|
+| [OpenTopoMap](https://wiki.openstreetmap.org/wiki/OpenTopoMap) | Opensource topographic map based on OSM and SRTM | https://tile.opentopomap.org/{z}/{x}/{y}.png             |
+| Google Terrain                                                 |                                                  | https://mt1.google.com/vt/lyrs=t&x={x}&y={y}&z={z}       |
+| Google Hybrid                                                  |                                                  | https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}       |
+| Google Satellite                                               |                                                  | https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}       |
+| Google Road                                                    |                                                  | https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}       |
+| Google Roads only                                              |                                                  | https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}       |
+| Google alternative Road map                                    |                                                  | https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}       |
+| Bing Aerial                                                    |                                                  | http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1 |
+
 
 Advantages of using basemaps from XYZ Tiles are:
 * Load faster
@@ -48,30 +49,31 @@ Advantages of using basemaps from XYZ Tiles are:
 * Support printing
 *  Supported by online applications like [QField]( https://qfield.org/)
 
-## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin
+## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin <a id="basemaps-from-quickmapserviceshttpsnextgiscomblogquickmapservices-plugin"></a>
 
-The QuickMapServices Plugin allows to access a wide range of basemaps. 
+The QuickMapServices Plugin allows to access to a wide range of basemaps. 
 
-```{Note}
+:::{Note}
 There can be problems when printing some basemaps from the QuickMapServices!
-```
+:::
+
 `Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
 
 __Functionality of QuickMapServices Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
 
-### Configuration of QuickMapServices
+### Configuration of QuickMapServices <a id="configuration-of-quickmapservices"></a>
 After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.
 
 `Web` -> `QuickMapServices` -> `Settings` -> Use the horizontal arrows to navigate to `More Services` -> `Get Contributed Pack`
 
-## Navigation on Basemap with OSM Place Search Plugin
+## Navigation on Basemap with OSM Place Search Plugin <a id="navigation-on-basemap-with-osm-place-search-plugin"></a>
 
 With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.
 
-```{Tip}
+:::{Tip}
 If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
-```
+:::
 
 __Functionality of OSM Place Search Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>

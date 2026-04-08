@@ -7,7 +7,7 @@
 
 ::::
 
-# Exercise 1: Flooding in Cambodia
+# Exercise 1: Flooding in Cambodia <a id="exercise-1-flooding-in-cambodia"></a>
 
 This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.
 
@@ -26,23 +26,23 @@ IDMC (International Displacement Monitoring Centre). (2022). Cambodia - Internal
 
 :::
 
-## Objectives
+## Objectives <a id="objectives"></a>
 
 The data provided contains shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as health facilities and airports. The goal is to design a map where the flood extent, road accessibility, and important landmarks such as health facilities, settlements, and airports are visible.
 
-## Available Datasets
+## Available Datasets <a id="available-datasets"></a>
 
 
 ```{Tip}
 If you need inspiration on how to style certain elements of your map, make sure to check out the chapter [Examples for Flood Map Design](/gis-training-resource-center/content/Module_4/en_qgis_map_examples.md) 
 ```
 
-## Step 1: Preparing the layers
+## Step 1: Preparing the layers <a id="step-1-preparing-the-layers"></a>
 
 1. Load the layers into QGIS and make yourself familiar with the data by opening the attribute table () 
 2. Arrange the layers such that no layer is blocked 
 
-## Step 2: Set the symbology for the individual layers
+## Step 2: Set the symbology for the individual layers <a id="step-2-set-the-symbology-for-the-individual-layers"></a>
 
 1. First, let's style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline
 2. The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)
@@ -57,7 +57,7 @@ If you need inspiration on how to style certain elements of your map, make sure 
 If you are happy with the styles you have set up for your layers, you can save the style and add it to your style library.
 ```
 
-## Step 2: Starting the Print Layout
+## Step 2: Starting the Print Layout <a id="step-2-starting-the-print-layout"></a>
 
 1. Add your Map to the Print Layout. Make sure to leave some space for the other map elements such as sources, legend, overview map, logo, etc.
 2. Adjust the Scale of the Map in the Item properties (if possible to a round number)
@@ -66,7 +66,7 @@ If you are happy with the styles you have set up for your layers, you can save t
 4. Add a legend. Make sure to remove layers which are not visible on the map and rename the elements accordingly.
 5. Add a compass to show map orientation.
 
-## Step 3: Setting up the Overview Map
+## Step 3: Setting up the Overview Map <a id="step-3-setting-up-the-overview-map"></a>
 
 1. Once you are done with the main map, __make sure to lock the layer and the styles for your main map (`Map 1`)__. Otherwise the map will update when setting up the overview map.
 3. Navigate back to the main QGIS-Window.
@@ -76,7 +76,7 @@ If you are happy with the styles you have set up for your layers, you can save t
 7. Set it up as an overview map.
 8. Lock the layers and lock the styles.
 
-## Step 5: Adding the other elements of a map
+## Step 5: Adding the other elements of a map <a id="step-5-adding-the-other-elements-of-a-map"></a>
 
 
 1. Add the sources of the datasets
@@ -88,7 +88,7 @@ If you are happy with the styles you have set up for your layers, you can save t
 If you are happy with the layout of your print layout, don't forget to save it as a preset for future use.
 ```
 
-## Step 6: Exporting the map
+## Step 6: Exporting the map <a id="step-6-exporting-the-map"></a>
 
 Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly in the exporting process, so it is important to check before sending the map to your colleagues or publishing. 
 

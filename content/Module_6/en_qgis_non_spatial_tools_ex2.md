@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercise 1: Part 2: Calculate vulnerability index
+# Exercise 1: Part 2: Calculate vulnerability index <a id="exercise-1-part-2-calculate-vulnerability-index"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -20,7 +20,7 @@ We want to create an overview of different vulnerability indicators. From the Co
 ::::{grid} 2
 :::{grid-item-card}
 
-#### Type of trainings exercise:
+#### Type of trainings exercise: <a id="type-of-trainings-exercise"></a>
 
 - This exercise can be used in online and presence training. 
 - It can be done as a follow-along exercise or individually as a self-study.
@@ -29,10 +29,10 @@ We want to create an overview of different vulnerability indicators. From the Co
 
 :::{grid-item-card}
 
-#### Focus group (GIS-Knowledge Level)
+#### Focus group (GIS-Knowledge Level) <a id="focus-group-gis-knowledge-level"></a>
 
 
-#### These skills are relevant for 
+#### These skills are relevant for <a id="these-skills-are-relevant-for"></a>
 
 
 :::
@@ -41,7 +41,7 @@ We want to create an overview of different vulnerability indicators. From the Co
 ::::{grid} 2
 :::{grid-item-card}
 
-#### Estimated time demand for the exercise.
+#### Estimated time demand for the exercise. <a id="estimated-time-demand-for-the-exercise"></a>
 
  
 
@@ -49,7 +49,7 @@ We want to create an overview of different vulnerability indicators. From the Co
 
 :::{grid-item-card}
 
-## Relevant Wiki Articles
+## Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Non-Spatial Joins](/content/Wiki/en_qgis_non_spatial_joins_wiki.md)
@@ -60,18 +60,18 @@ We want to create an overview of different vulnerability indicators. From the Co
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -92,7 +92,7 @@ __Wrap up:__
 :::
 
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:
 - `uga_adm2_covid_risk.shp`: Output from Part 1 of the exercise
@@ -103,7 +103,7 @@ Download all datasets and save the folder on your computer and unzip the file. T
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 ```
 
-### Task
+### Task <a id="task"></a>
 This exercise aims to create an overview of the impact of disasters in various regions of Senegal using the prepared datasets from the previous exercise. To achieve this, non-spatial joins, table functions, and different symbology will be utilized.
 
 1. We will start by using the tool `Join attributes by field value` and join the population statistics onto the output from task 9 from the first part (`uga_adm2_covid_risk`) of the exercise.

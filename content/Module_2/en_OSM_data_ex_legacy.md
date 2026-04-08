@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercise: OpenStreetMap data export
+# Exercise: OpenStreetMap data export <a id="exercise-openstreetmap-data-export"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -59,18 +59,18 @@ __Relevant wiki articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -91,7 +91,7 @@ __Wrap up:__
 :::
 
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
@@ -101,7 +101,7 @@ Instead download the __standard folder structure__ [here](https://nexus.heigit.o
 
 :::
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
 OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over a few of these methods and discuss their advantages. 
 
@@ -110,12 +110,12 @@ OpenStreetMap (OSM) is a collaborative, open-source project that creates free, e
    
    ADD: Maybe a discussion step for each extraction method? in which scenarios would you choose which extraction method? -->
 
-### Task 1: Geofabrik
+### Task 1: Geofabrik <a id="task-1-geofabrik"></a>
 
 The Geofabrik website offers downloads of OSM data by region.
 
 1. Go to __https://download.geofabrik.de/__ and navigate to the Mauritius  
-   dataset by clicking on `Africa` -> ` Mauritius`
+   dataset by clicking on `Africa` → ` Mauritius`
 2. Under __Commonly Used Formats__ select the option `mauritius-latest-free.shp.zip` 
    and download the file. Place it somewhere on your computer where you can find 
    it again and unzip it.
@@ -123,7 +123,7 @@ The Geofabrik website offers downloads of OSM data by region.
    each containing one kind of OSM data. The whole list of layers and what they 
    include can be found [here](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf). 
 
-4. Open a new QGIS project and save it in the `project` folder of your exercise 
+4. Open a new QGIS project and save it in the `/Project` folder of your exercise 
    folder.
 5. Load the file `gis_osm_places_a_free_1.shp`. This polygon 
    layer contains the boundaries of different features. Take some time to explore 
@@ -139,7 +139,7 @@ The Geofabrik website offers downloads of OSM data by region.
 8. Load the file `gis_osm_landuse_a_free_1.shp`. Check out the 
     dataset and use the classification function to get a better overview.
     * Right-click on the layer `gis_osm_landuse_a_free_1` in the `Layer Panel` 
-      -> `Properties`. A new window will open up with a vertical tab section on 
+      → `Properties`. A new window will open up with a vertical tab section on 
       the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. 
       Under `Value` select “fclass” (short for _featureclass_).
@@ -151,14 +151,14 @@ The Geofabrik website offers downloads of OSM data by region.
 As you can see, Geofabrik is great if you want to get complete OSM datasets for 
 whole countries or regions. 
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Quick access to complete OSM datasets|- If one is only interested in specific features or regions (other then countries), not optimal|
-|+ Very up-to-date OSM exports|- Large file size|
-|+ Clear documentation of which OSM features are contained in each shapefile|- Only available as shapefile|
+| Advantages                                                                  | Disadvantages                                                                                   |
+|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| + Quick access to complete OSM datasets                                     | - If one is only interested in specific features or regions (other then countries), not optimal |
+| + Very up-to-date OSM exports                                               | - Large file size                                                                               |
+| + Clear documentation of which OSM features are contained in each shapefile | - Only available as shapefile                                                                   |
 
 
-### Task 2: HOT Export Tool
+### Task 2: HOT Export Tool <a id="task-2-hot-export-tool"></a>
 
 The [HOT Export Tool](https://export.hotosm.org/v3/) 
 is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
@@ -202,10 +202,10 @@ Hot Export tool download of Mauritius financial institutions. Adapted screenshot
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
     * Right-click on the layer `Mauritius_finical_institution` in the `Layer Panel` 
-      -> `Properties`. A new window will open up with a vertical tab section on 
+      → `Properties`. A new window will open up with a vertical tab section on 
       the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. 
-      Under `Value` select “amenity”.
+      Under `Value` select "amenity".
     * Further down the window click on `Classify`.  Now you should see all unique 
       values or attributes of the selected “fclass” column.  You can adjust the 
       colours by double-clicking on one row in the central field. Once you are 
@@ -219,14 +219,14 @@ is in QGIS.
 <!-- note: is it quick or are there lots of steps? doesn't make sense if
    both are true! -->
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Good options for data selection|- Many steps involved |
-|+ Many different data formats available|- Only fixed option for data selection|
-|+ Easy to use||
-|+ Query can easily be repeated | |
+| Advantages                              | Disadvantages                          |
+|-----------------------------------------|----------------------------------------|
+| + Good options for data selection       | - Many steps involved                  |
+| + Many different data formats available | - Only fixed option for data selection |
+| + Easy to use                           |                                        |
+| + Query can easily be repeated          |                                        |
 
-### Task 3: QuickOSM
+### Task 3: QuickOSM <a id="task-3-quickosm"></a>
 
 The QuickOSM plugin allows you to load OSM data directly into QGIS. 
 However, the plugin requires the deepest knowledge of the OSM data model, 
@@ -240,22 +240,21 @@ key and value you need there are two great resources:
 Have a look at both.
 <!-- NOTE: this feels like info that is best dealt with outside of an exercise -->
 
-1. Install the QuickOSM plugin by clicking on the `Plugin` tab, -> `Manage and 
-   Install Plugins…` -> `All` -> Search for "QuickOSM" -> `Install Plugin`
+1. Install the QuickOSM plugin by clicking on the `Plugin` tab, → `Manage and Install Plugins…` → `All` → Search for "QuickOSM" → `Install Plugin`.
 2. Now we want to find all health facilities on the island of Mauritius.
     1. Position the island of Mauritius in a way that the island is completely 
        visible in your map canvas.
-    2. Open the QuickOSM plugin by clicking on the `Vector` menu -> `QuickOSM` -> 
-       `QuickOSM`
+    2. Open the QuickOSM plugin by clicking on the `Vector` menu → `QuickOSM` → 
+       `QuickOSM`.
     3. Click on `Quick query`.
     4. In the table, add "amenity" as the key and "hospital" as the value. This 
        query will return hospital data.
     5. Click on the green plus icon to add another line to the table. In this 
        line select “OR” in the small dropdown menu on the left-hand side of the 
-       new line
+       new line.
     6. Add "healthcare" as a new key with "hospital" as the value. 
     7. Below the table set the small dropdown menu to “Canvas Extent”
-    8. Click on `Run query`
+    8. Click on `Run query`.
 
     ```{figure} /fig/en_quick_OSM_hospital_key.png
     ---
@@ -273,7 +272,7 @@ Have a look at both.
    Move the island in the middle of your map canvas and click `Run query`. Does 
    the attribute table of this new point layer look different?
 5. What if we only want hospitals with an emergency room? In this case, we would 
-   need to build a query using a combination of the operators “OR” and “AND”. 
+   need to build a query using a combination of the operators "OR" and "AND". 
    Look at the image below.
 
     ```{figure} /fig/en_quick_OSM_hospital_emgerency_key.png
@@ -304,8 +303,8 @@ QuickOSM accommodation query
 ::::
 -->
 
-| Advantages  |  Disadvantages |
-|---|---|
-|+ Query can be tailored for very specific data|- Requires knowledge of OSM data model |
-|+ Data loads directly in QGIS|- Building queries can quickly become complex|
-|+ Query can easily be repeated||
+| Advantages                                     | Disadvantages                                 |
+|------------------------------------------------|-----------------------------------------------|
+| + Query can be tailored for very specific data | - Requires knowledge of OSM data model        |
+| + Data loads directly in QGIS                  | - Building queries can quickly become complex |
+| + Query can easily be repeated                 |                                               |

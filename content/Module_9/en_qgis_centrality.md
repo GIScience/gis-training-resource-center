@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Network centrality measures and its application in QGIS
+# Network centrality measures and its application in QGIS <a id="network-centrality-measures-and-its-application-in-qgis"></a>
 
 In chapter {ref}`content:references:module9:network-theory` we introduced the concept of spatial networks for the application of routing and accessibility. This chapter aims at extending our understanding of networks encompassing metrics to describe their shape, function and general properties.
 
@@ -23,7 +23,7 @@ This chapter provides an overview on the following questions:
 
 However we focus on betweenness and closeness centrality
 
-## Betweenness
+## Betweenness <a id="betweenness"></a>
 
 Betweenness centrality is a measure that quantifies the importance or influence of a node within a network by assessing the extent to which the node lies on the shortest paths between other pairs of nodes. In other words, it captures how frequently a node acts as a bridge or intermediary in connecting different parts of the network.
 
@@ -31,7 +31,7 @@ Betweenness centrality is a measure that quantifies the importance or influence 
 * Directed  and weighed graph
 * Betweenness centrality: Rank nodes/edges by their importance/influence for overall connectivity within the network (eg bridges, bridgeheads)
 
-### Limitations of standard betweenness centrality and modification
+### Limitations of standard betweenness centrality and modification <a id="limitations-of-standard-betweenness-centrality-and-modification"></a>
 
 
 The following describes betweenness centrality in a standard and modified way exemplary.
@@ -100,7 +100,7 @@ Modified betweenness centrality. Similar to above but every route from a populat
 
 
 
-### Application for identifying critical infrastructure
+### Application for identifying critical infrastructure <a id="application-for-identifying-critical-infrastructure"></a>
 
 
 * Research and paper publication conducted in 2021 on the influence of Cyclone Idai in Mozambique on the road network and access to healthcare facilities.
@@ -122,14 +122,14 @@ Comparison of road network centrality for non flooded (left) and flooded (center
 ```
 
 
-### References
+### References <a id="references"></a>
 
 * Petricola, S., Reinmuth, M., Lautenbach, S. et al. Assessing road criticality and loss of healthcare accessibility during floods: the case of Cyclone Idai, Mozambique 2019. Int J Health Geogr 21, 14 (2022). [https://doi.org/10.1186/s12942-022-00315-2](https://doi.org/10.1186/s12942-022-00315-2)
 * Zia M, Fürle J, Ludwig C, Lautenbach S, Gumbrich S, Zipf A. SocialMedia2Traffic: Derivation of Traffic Information from Social Media Data. ISPRS International Journal of Geo-Information. 2022; 11(9):482. [https://doi.org/10.3390/ijgi11090482](https://doi.org/10.3390/ijgi11090482)
 * Klipper, I. G., Zipf, A., and Lautenbach, S.: Flood Impact Assessment on Road Network and Healthcare Access at the example of Jakarta, Indonesia, AGILE GIScience Ser., 2, 4, , 2021. [https://doi.org/10.5194/agile-giss-2-4-2021](https://agile-giss.copernicus.org/articles/2/4/2021/)
 
 
-## Closeness
+## Closeness <a id="closeness"></a>
 
 Closeness centrality is a measure that quantifies how easily a node in a network can reach other nodes, based on the inverse of the average shortest path distance from that node to all other nodes in the network.
 

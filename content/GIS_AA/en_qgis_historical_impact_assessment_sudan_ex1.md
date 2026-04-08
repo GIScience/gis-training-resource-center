@@ -1,28 +1,28 @@
-# Historical Impact Assessment (HIA) Sudan exercise
+# Historical Impact Assessment (HIA) Sudan exercise <a id="historical-impact-assessment-hia-sudan-exercise"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
 A HIA has two purposes: First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems. Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
 This exercise is based on the article Historical Impact Assessment (HIA) for Flood in Sudan. In this article, there are seven steps listed for the HIA in Sudan. This exercise will start with step 3- Selecting datasets.
 
-## Aim of the exercise:
+## Aim of the exercise: <a id="aim-of-the-exercise"></a>
 
 In this exercise, you will be introduced to the fundamental principles of this quantitative HIA approach. You will build a simplified HIA dataset with real-world data. Furthermore, you will visualize the produced dataset in QGIS.
 To analyse the data in QGIS is just one thing you can do with a HIA dataset. The wide range of other options like the production of a timeline infographic will not be covered in this exercise.
 
-## Relevant Wiki Articles
+## Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
-## Data sources
+## Data sources <a id="data-sources"></a>
 Download the training data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)__ and save it on your PC. Unzip the .zip file!
 The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
-# Tasks
+# Tasks <a id="tasks"></a>
 
-### Step 1: Area of interest ✅
+### Step 1: Area of interest ✅ <a id="step-1-area-of-interest"></a>
 
 This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Sudan will not be the subject of this exercise. 
 
-### Step 2: Finding Flood Disaster Timeframes ✅
+### Step 2: Finding Flood Disaster Timeframes ✅ <a id="step-2-finding-flood-disaster-timeframes"></a>
 
 
 ```{attention} 
@@ -80,7 +80,7 @@ In total, there were 35 flood events reported between 1988 and 2021
 | 2021       | 2021-07-20 | 2021-09-24 |
 ```
 
-### Task 3: Selecting datasets
+### Task 3: Selecting datasets <a id="task-3-selecting-datasets"></a>
 
 In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to: the Sudan Red Crescent Society (SRCS), ReliefWeb, and FloodList. For this exercise, we will limit ourselves to datasets from ReliefWeb and FloodList.
 In the 'Input' folder of the exercise data, you can find the folder 'reports_articles.' This folder contains 10 datasets.
@@ -143,7 +143,7 @@ Expected outcome:
 - A folder with all datasets to be used in the HIA. The dataset's names should be their ID.
 - A list of all datasets to be used, with ID.
 
-### Task 4: Preparing Excel table Structure ✅
+### Task 4: Preparing Excel table Structure ✅ <a id="task-4-preparing-excel-table-structure"></a>
 
 ```{attention} 
 In this exercise, you will be provided with the ready-to-use table. You can find it „temp“ folder of the exercise data structure.
@@ -510,7 +510,7 @@ The HeiGIT team used 75 different impact types. You can find the whole list belo
 | WASH_watersource_contaminated            |                                                        |
 ```
 
-### Task 5: Data compiling
+### Task 5: Data compiling <a id="task-5-data-compiling"></a>
 
 Finally, we can start to compile the data. Remember we are using the __key + value__ concept to create a long table. Every piece of information gets one row! 
 
@@ -750,7 +750,7 @@ __Data extracted from dataset__
 :::
 
 
-### Task 6: HIA Data Cleaning ✅
+### Task 6: HIA Data Cleaning ✅ <a id="task-6-hia-data-cleaning"></a>
 
 ```{attention}
 In this exercise, you can skip this step by using the provided data in the folder task_7
@@ -807,7 +807,7 @@ If you want to use the data from the „task_6“ folder, your principal task is
     Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
 
 
-### Task 7: Joining P-Code columns ✅
+### Task 7: Joining P-Code columns ✅ <a id="task-7-joining-p-code-columns"></a>
 
 
 ```{attention}
@@ -837,7 +837,7 @@ The information below should show a green check and „The selection has matched
 The Result should be the Excel file „Suadn_impact_p_code“. The file should contain all info from the original impact table and the two new columns „ADM1_EN“ and „ADM1_PCODE“.
 
 ```
-### Task 8: Data export using Pivot-Table in Excel ✅
+### Task 8: Data export using Pivot-Table in Excel ✅ <a id="task-8-data-export-using-pivot-table-in-excel"></a>
 
 __Impact Quantity for one year on state level:__
 
@@ -875,7 +875,7 @@ We also want to make sure that we rename the column containing the sum of the fl
 3. Now we export this excel sheet as a CSV file and import it into QGIS. We will open the `Data Source Manager` and select the `Delimited Text` section. Here we need to do the following specifications ({numref}`HIA_import_csv_floods`).
 
 
-### Task 9: Data visualization and analysis in QGIS
+### Task 9: Data visualization and analysis in QGIS <a id="task-9-data-visualization-and-analysis-in-qgis"></a>
 
 1. Open QGIS and create a new projeckt.
 2. Import the file "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"  from the input file in QGIS.

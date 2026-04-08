@@ -9,11 +9,11 @@
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 (content:references:module9:ors-tools-plugin)=
-# Plugin: Openrouteservice (ORS) tools
+# Plugin: Openrouteservice (ORS) tools <a id="plugin-openrouteservice-ors-tools"></a>
 
-## Openrouteservice QGIS Plugin 
+## Openrouteservice QGIS Plugin <a id="openrouteservice-qgis-plugin"></a>
 
-### Install the Plugin
+### Install the Plugin <a id="install-the-plugin"></a>
 -  Go under tab `Plugins`
 
 ```{figure} /fig/qgis_plugins.png
@@ -59,7 +59,7 @@ align: center
 ---
 Where to sign up for OpenRouteService    Source: HeiGIT
 ```
-### Sign up and setup
+### Sign up and setup <a id="sign-up-and-setup"></a>
 -  You will be redirected to the Openrouteservice site, where you need to create     a user account
   
 ```{figure} /fig/sign_up_ORS.png
@@ -88,7 +88,7 @@ How to create a token (API key)    Source: HeiGIT
 ```
 - Click on the token, it will directly be copied. You can now go back into QGIS for further setup
 
-### Configure the plugin
+### Configure the plugin <a id="configure-the-plugin"></a>
 
 -  In QGIS and go to `Provider Settings` in the ORS Tools window by clicking the settings icon (right next to „Provider field“)
 -  Add the API key you just created into the „API Key“ field

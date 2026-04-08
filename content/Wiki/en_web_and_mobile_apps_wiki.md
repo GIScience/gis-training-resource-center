@@ -1,14 +1,14 @@
-# Web & mobile GIS applications
+# Web & mobile GIS applications <a id="web-and-mobile-gis-applications"></a>
 
 You can use GIS through __multiple applications__, from desktop software, to 
 online platforms, to mobile apps. At a basic level, you can perform limited 
 geospatial tasks with apps such as __Google Earth__ or __Google Maps__.
-As a GIS professional, you will mostly use a __desktop software__, which could 
-be either proprietary (requiring a license, e.g ESRI's ArcGIS) or open-source 
+As a GIS professional, you will mostly use __desktop software__, which could 
+be either proprietary (requiring a license, e.g. ESRI's ArcGIS) or open-source 
 (available to use for free, e.g. QGIS). However, web applications can be relevant 
 for obtaining data or to share data and maps with others.
 
-## Web apps overview
+## Web apps overview <a id="web-apps-overview"></a>
 
 Here are some online GIS platforms and tools you should be aware of; we'll use 
 some of them later in the training. 
@@ -22,17 +22,17 @@ An online GIS application based on OpenStreetMap. You can upload standard geodat
 formats and do nice visualisation. Umap is very good for sharing maps and 
 presenting basic interactive maps.
 - __[Felt](https://felt.com/)__: 
-Felt is similar to uMap but even pretteier. An __easy tool__ to create maps. You 
-can draw, create feature and upload shapefiles. Plus, you can connect it to you 
-QGIS with an plugin. In this way, you can use Felt for collaborative work.
+Felt is similar to uMap but even prettier. An __easy tool__ to create maps. You 
+can draw, create features and upload shapefiles. Additionally, you can connect it to your 
+QGIS with a plugin. In this way, you can use Felt for collaborative work.
 - __[Wikimapia](https://wikimapia.org/)__: 
 Online editable map service. Updated and maintained by contributors all over the 
 world. It uses __local knowledge__, making it particularly useful in remote areas.
 - __[Google Maps](https://www.google.com/maps)__:
-Limited, but it allows to upload layers, create and export features, __share 
+Limited, but it allows you to upload layers, create and export features, __share 
 simple maps__.
 
-## Mobile apps overview 
+## Mobile apps overview <a id="mobile-apps-overview"></a>
 
 Mobile GIS apps are important for navigation and mobile data collection. 
 Some of the most important free and open-source apps are listed below. 
@@ -43,9 +43,9 @@ in the app can then be synced and displayed in QGIS.
 - __[OsmAnd](https://osmand.net)__: Using OSM basemap, it’s a good app for 
 __offline navigation__. You can upload `.kml` files to display on the map, as well 
 as recording your trips and then exporting them.
-- __[GeoODK](http://geoodk.com/index.htm)__: Combines __OpenDataKit (ODK) with a geo app__. 
+- __[GeoODK](http://geoodk.com/index.html)__: Combines __OpenDataKit (ODK) with a geo app__. 
 You can collect data through ODK surveys and display them on a map, in addition 
-to easily create polygons and add information to them.
+to easily creating polygons and adding information to them.
 - __[KoboToolbox](https://www.kobotoolbox.org)__: KoboToolbox is an open-source suite designed for efficient data
 collection and analysis, especially in challenging environments. It supports online and offline data collection via 
 mobile devices and web forms, and offers an intuitive form builder for creating complex surveys. It includes features 

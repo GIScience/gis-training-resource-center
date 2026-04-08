@@ -8,7 +8,7 @@
 
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 6: West Germany / Ahrtal flood logistics
+# Task 6: West Germany / Ahrtal flood logistics <a id="task-6-west-germany-ahrtal-flood-logistics"></a>
 
 While exploring the general functionality of the ORS plugin, we will specifically focus on its application in disaster-aware routing. To demonstrate its practical use, we will dive into the scenario of the devastating Ahr Valley flood that occurred in Germany in 2021. By leveraging the plugin's capabilities, we will learn how to optimize routing decisions in the context of disaster response and recovery.
 
@@ -28,9 +28,9 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 -   `physicians.gpkg` (points): Physicians located in and close to the Ahr valley represented as points.
 -   `wpop_ahrvalley.tif` (raster): Population counts from WorldPop for the Ahr valley. Raster dataset.
 
-## PART 1 - Single routes with ORS Tools
+## PART 1 - Single routes with ORS Tools <a id="part-1-single-routes-with-ors-tools"></a>
 
-### STEP 1: Creating a Simple Route using the ORS Tools Plugin in QGIS
+### STEP 1: Creating a Simple Route using the ORS Tools Plugin in QGIS <a id="step-1-creating-a-simple-route-using-the-ors-tools-plugin-in-qgis"></a>
 
 In this first task, we will focus on creating a single, straightforward route using the ORS Tools plugin within the QGIS software. Your objective is to define an origin/source and a destination, and utilize the plugin to generate a route between these two points. To get started, you can choose Nürnburgring in Germany as the source location since it served as the staging area for disaster relief during the emergency response. For the destination, you can select Bad Neuenahr-Ahrweiler, the largest city affected by the Ahr Valley flood.
 
@@ -40,7 +40,7 @@ By completing this task, you will gain a solid understanding of how to leverage 
 
 You have two options to create directions with ORS Tools plugin. Either via the `Directions` Tool. After installing the plugin you'll find new entries in your _Processing Toolbox_ in the section `ORS Tools`. There you find tools on `Directions`, `Isochrones` and `Matrix`. But you can also use the ORS Tools Window, open it via the top navigation _Web_ --> _ORS Tools_ --> _ORS Tools_. There you can control your origin and destination for the route via the green plus button. You then choose the points from your QGIS map canvas. Via the apply button, a route is calculated.
 
-### STEP 2: Incorporating Avoid Areas into the Route using the ORS Tools Plugin in QGIS
+### STEP 2: Incorporating Avoid Areas into the Route using the ORS Tools Plugin in QGIS <a id="step-2-incorporating-avoid-areas-into-the-route-using-the-ors-tools-plugin-in-qgis"></a>
 
 In this second task, we will build upon the knowledge gained from the previous exercise and introduce the concept of avoid areas in route planning using the ORS Tools plugin in QGIS. Your objective is to repeat the workflow of creating a route between the Nürburgring and Bad Neuenahr-Ahrweiler, but this time, you will add specific areas that should be avoided along the route.
 
@@ -59,10 +59,10 @@ Routes from Nürnbergring to Bad Neuenahr-Ahrweiler
 
 Do you spot any difference in the shapes of the isochrones? Try playing around and changing the shape of your avoid area. 
 
-## PART 2 - Multiple routes with ORS Tools
+## PART 2 - Multiple routes with ORS Tools <a id="part-2-multiple-routes-with-ors-tools"></a>
 
 
-### STEP 3: Use a layer with multiple locations to create isochrones
+### STEP 3: Use a layer with multiple locations to create isochrones <a id="step-3-use-a-layer-with-multiple-locations-to-create-isochrones"></a>
 
 The third task involves creating multiple directions from the disaster relief staging area to the affected communities in the Ahr Valley. With the Tool `Directions from points 2 layers` we can input one layer as origin/source and another layer as destinations. Make sure to enable `All-by-All` int the `Layer Mode` option to request a direction for every feature in layer1 x layer 2. The resulting directions will come in one single layer with multiple features.
 
@@ -77,7 +77,7 @@ Multiple routes without flood avoidance to different communities in the Ahrvalle
 ```
 
 
-### STEP 4: Repeat with avoid damaged infrastructure
+### STEP 4: Repeat with avoid damaged infrastructure <a id="step-4-repeat-with-avoid-damaged-infrastructure"></a>
 
 Okay, repeat the same procedure but set the option `Polygons to avoid` in the Advanced Parameters section. Use `affected_roads_buff2m_WGS84.gpkg` as input.
 
@@ -99,11 +99,11 @@ align: center
 Multiple routes with flood avoidance to different communities in the Ahrvalley
 ```
 
-## PART 3 - Single Isochrones with ORS Tools
+## PART 3 - Single Isochrones with ORS Tools <a id="part-3-single-isochrones-with-ors-tools"></a>
 
 Now we will kinda repeat the workflow above but for isochrones within QGIS. We start with single isochrone requests and later do multiple.
 
-### STEP 5: Request single isochrones directly from the QGIS map canvas
+### STEP 5: Request single isochrones directly from the QGIS map canvas <a id="step-5-request-single-isochrones-directly-from-the-qgis-map-canvas"></a>
 
 
 Find the QGIS Tool `Isochrones from point` in your processing toolbox under _ORS Tools_ --> _Isochrones_. For the option `Input Point from map canvas` click the three dots on the right, then choose a location on the QGIS map canvas. This will be the location the isochrone will be calculated from. Choose range and intervals, then hit run.
@@ -119,7 +119,7 @@ Single isochrone for Bad Neuenahr-Ahrweiler
 ```
 
 
-### STEP 6: Isochrones and  avoid area
+### STEP 6: Isochrones and  avoid area <a id="step-6-isochrones-and-avoid-area"></a>
 
 Repeat the same procedure but like in task 4 add the damaged road infrastructure as avoid polygons.
 
@@ -135,11 +135,11 @@ Single isochrone for Bad Neuenahr-Ahrweiler including avoid areas
 
 How would you describe the difference of both isochrones?
 
-## PART 4 - Multiple Isochrones with ORS Tools
+## PART 4 - Multiple Isochrones with ORS Tools <a id="part-4-multiple-isochrones-with-ors-tools"></a>
 
  In this second part we create isochrones from locations of physicians in the Ahr Valley, considering both regular isochrones and isochrones that account for blocked roads and damaged bridges due to infrastructure damage.
 
-### STEP 7 Use multiple locations to request isochrones with and without avoid areas
+### STEP 7 Use multiple locations to request isochrones with and without avoid areas <a id="step-7-use-multiple-locations-to-request-isochrones-with-and-without-avoid-areas"></a>
 
 Choose the `Isochrones from layer` Tool, it is located in your processing toolbox under _ORS Tools_ --> _Isochrones_. Instead of a single location from the map canvas, we can use a point layer open in QGIS as input. Choose the dataset `physicians.gpkg`. We will create isochrones for all physicians located in or close to the Ahr valley. For the range choose a maximum range of 30 and intervals of 5: `5,10,15,20,25,30`. Hit run.
 
@@ -165,7 +165,7 @@ Multiple isochrones for Bad Neuenahr-Ahrweiler with avoid areas
 
 As you examine the two isochrone datasets, take a closer look for any discernible patterns. When comparing these isochrones to the damaged infrastructure, pay attention to which segments of the infrastructure appear to have the greatest impact. By identifying and analyzing these areas on the map, you can gain valuable insights into the critical infrastructure segments that are likely to significantly affect healthcare accessibility. These observations will enable you to make informed decisions and prioritize the restoration of infrastructure in the Ahr Valley accordingly.
 
-### STEP 8: Postprocess isochrones and join population counts
+### STEP 8: Postprocess isochrones and join population counts <a id="step-8-postprocess-isochrones-and-join-population-counts"></a>
 
 This final task will guide you through the postprocessing of the isochrones in QGIS using core functionalities.
 

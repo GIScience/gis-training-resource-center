@@ -1,6 +1,5 @@
-# Glossary
+# Glossary <a id="glossary"></a>
  
-Draft
 
 | Term| Description | 
 | -------- | --- | 

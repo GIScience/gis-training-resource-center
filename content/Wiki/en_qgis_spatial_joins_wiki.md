@@ -1,10 +1,10 @@
-# Spatial Joins
+# Spatial Joins <a id="spatial-joins"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
 
-## Join Attributes by location
+## Join Attributes by location <a id="join-attributes-by-location"></a>
 
 - Adds additional attributes of the join layer to the input layer based on the __spatial relationship__.
 - `Input Layer`: dataset you want to enrich
@@ -16,7 +16,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_spatial_join_wiki.mp4"></video>
 :::
 
-## Join Attributes by location (summary)
+## Join Attributes by location (summary) <a id="join-attributes-by-location-summary"></a>
 - Adds additional attributes of the join layer to the input layer based on the __spatial relationship__.
 - `Input Layer`: dataset you want to enrich
 - `Join layer`: dataset with additional information/attributes
@@ -28,12 +28,12 @@ __🔙[Back to Homepage](/content/intro.md)__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 :::
 
-## Spatial joins relationships
+## Spatial joins relationships <a id="spatial-joins-relationships"></a>
 
 ::::{tab-set}
 
 :::{tab-item} Intersect
-Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could be overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
+Tests whether the geometry of the two layers intersects with one another. Returns 1 (true) if the geometries spatially intersect (share any portion of space, could overlap or touch) and 0 if they don’t. In the picture above, this will return circles 1, 2 and 3.
 :::
 
 :::{tab-item} Contain

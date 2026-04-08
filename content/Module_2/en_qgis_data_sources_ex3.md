@@ -6,11 +6,11 @@
 :::
 ::::
 
-# Exercise 3: Data sources
+# Exercise 3: Data sources <a id="exercise-3-data-sources"></a>
 
 <!--This exercise is quite minimal with the explanation of steps (most should be looked up) so it is not suited for a follow along session -->
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 :class-card: sd-text-justify
@@ -66,17 +66,17 @@ __Relevant Wiki articles and module chapters__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
-## Prepare the training:
+## Prepare the training: <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-## Conduct the training
+## Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -96,28 +96,29 @@ __Wrap up:__
 
 :::
 
-## Exercise 
+## Exercise <a id="exercise"></a>
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip
 
-Since the exercise is about finding data, there won't be any data to download. 
-Instead download the __[standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_management.html#standard-folder-structure)__ [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip) and insert your data as you download it.
+Download the data and project file for this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip) and unzip the folder.
+
 
 :::
 
+
 ::::{dropdown} Standard folder structure
-```{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
 name: standard_folder_struc
 width: 500 px
 ---
 Standard folder structure. Source: HeiGIT
-```
+:::
 ::::
 
-### Task 1: Download the administrative boundaries and healthsites for Pakistan 
+### Task 1: Download the administrative boundaries and healthsites for Pakistan <a id="task-1-download-the-administrative-boundaries-and-healthsites-for-pakistan"></a>
 
 For our flood response map, we will need a few datasets from the web. In this exercise, we will be looking for the __administrative boundaries__ of Pakistan, the __healthsites__, as well as the __flood extent__ of the flood in Pakistan in 2024. 
 First, let us set up a new QGIS project along with the standard folder structure: 
@@ -157,10 +158,10 @@ Most datasets on HDX are available in various dataformats such as xlsx, csv, sha
 
 5. Download the data and save the **administrative boundaries** and the **healthsites** into the `data\input` folder.
 
-```{Note}
+:::{Note}
 Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or 
 polygons.
-```
+:::
 
 ::::{margin}
 :::{tip}
@@ -171,21 +172,20 @@ Most of the times, the datasets you download from the web are compressed as `.zi
 6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import).
 
 
-7. Now add the OpenStreetMap basemap via the browser window > 
-   `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 
+7. Now add the OpenStreetMap basemap via the browser window → `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 
 
 8. Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.
 
 
 9. If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.
 
-```{Hint}
+:::{Hint}
 
 For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the __[attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)__ page on the wiki.
 
-```
+:::
 
-### Task 2: Download the flood extent for Pakistan for August 2024
+### Task 2: Download the flood extent for Pakistan for August 2024 <a id="task-2-download-the-flood-extent-for-pakistan-for-august-2024"></a>
 
 Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.
 
@@ -199,27 +199,3 @@ Shapefiles consist of several files (`.shp`, `.shx`, `.sbx`, `.sbn`, `.prj`, `cp
 
 :::
 
-<!---
-10. To view only the selected features (hospitals) and apply the filtering, we can first display these features in the attribute table by clicking on `Show Selected Features` in the bottom left corner, and then export only the selected features and save them as `hospitals_bolivia` in your `data\output` folder.
-
-11. Save your project and display your results. Ensure that both the country of Bolivia and the hospitals are visible.
-
--->
-
-<!---
-### Result
-
-```{figure} /fig/en_result_data_sources_exercise.png
----
-width: 80%
-name: en_result_data_sources_exercise
----
-Your map could look like this when you have finished the exercise. 
-```
-
-The distribution of hospitals across Bolivia is uneven. It is noticeable that there are significantly less hospitals in the northern and eastern parts of Bolivia.
--->
-
-<!-- FIXME: if the aim of the exercise is to understand the distribution of hospitals
-   in Bolivia, this should be clear in the introduction so that people can understand
-   why they are performing the steps.  --> 

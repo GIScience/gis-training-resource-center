@@ -1,7 +1,18 @@
-# Data sources
+# Data sources <a id="data-sources"></a>
 
+::::{note}
+In our module chapter, you can find an extensive list of possible data sources.
 
-## (Geo) Data Sources Overview
+:::{card}
+:class-card: sd-text-center
+:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html#overview-of-useful-data-repositories
+__Module 2 Chapter 5: Data Sources__
+
+:::
+
+::::
+
+## (Geo) Data Sources Overview <a id="geo-data-sources-overview"></a>
 
 __[A selection of useful (geo) data sources](https://docs.google.com/document/d/1apsMZ1ecM6rylRszP8rZfIj-yj14ARs86iQ5ZtkrLZ4/edit#)__
 

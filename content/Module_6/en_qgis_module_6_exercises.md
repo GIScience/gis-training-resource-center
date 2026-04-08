@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercises Module 6 - Data Analysis with QGIS
+# Exercises Module 6 - Data Analysis with QGIS <a id="exercises-module-6-data-analysis-with-qgis"></a>
 
 These exercises cover all the content from Module 6.
 

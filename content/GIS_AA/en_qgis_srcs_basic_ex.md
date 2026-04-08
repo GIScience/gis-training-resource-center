@@ -1,13 +1,13 @@
-# QGIS Basic Exercise SRCS
+# QGIS Basic Exercise SRCS <a id="qgis-basic-exercise-srcs"></a>
 
-## CSV in QGIS
+## CSV in QGIS <a id="csv-in-qgis"></a>
 
-### Aim of exercise
+### Aim of exercise <a id="aim-of-exercise"></a>
 
 In this task, we will load a CSV file in QGIS and do some analysis. 
 
 
-## Task 1: Load data in QGIS
+## Task 1: Load data in QGIS <a id="task-1-load-data-in-qgis"></a>
 1.	Open the folder “Exercise 2”. Go into the “data” folder and copy all data from the “input” folder into the “temp” folder
 2.	To load the file “Water_sources.csv” into QGIS click on `Layer` -> `Add layer` -> `Open Delimited Text Layer`. Next to `File name` click on the three points ![](/fig/Three_points.png) and navigate to your "temp" folder. Her select the file "water_sources.csv".
 3. Use the settings as in the image below. 
@@ -26,7 +26,7 @@ To directly load .csv or EXCEL data into QGIS, the datasets need to have columns
 ```
 
 
-## Task 2: Counting water sources per district 
+## Task 2: Counting water sources per district <a id="task-2-counting-water-sources-per-district"></a>
 
 1. In the `Toolbox`-> Search for `Join attribute by location (summary)`
       * Tip: If the `Toolbox` is not opne click `Processing`-> `Toolbox` 
@@ -50,7 +50,7 @@ align: center
 ```
 
 
-## Task 3: Calculating water sources per 10.000 people
+## Task 3: Calculating water sources per 10.000 people <a id="task-3-calculating-water-sources-per-10000-people"></a>
 
 1. Open the Attribute Table of "district_watersources"
 2. Click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png)to open the field calculator
@@ -76,13 +76,13 @@ align: center
 
 
 
-## QGIS Intro
+## QGIS Intro <a id="qgis-intro"></a>
 
-### Aim of exercise
+### Aim of exercise <a id="aim-of-exercise-2"></a>
 The goal of the exercise is to get to know the basic functionality of QGIS and how to handle geodata.
 
  
-## Task 1: Folder and data structure
+## Task 1: Folder and data structure <a id="task-1-folder-and-data-structure"></a>
 1.	Save the folder Exercise_1 on your computer. Check out the folder structure in the Exercise_1 folder.  
 The standard folder structure used makes certain that you never lose any data. You can find more infos about the standard folder structure we recommend [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
 2. Please save your QGIS project in the “project” folder. 
@@ -94,7 +94,7 @@ Intermediate results should also be saved in the “temp” folder. The final re
 ![](/fig/Standard_project_folder_structure.drawio.svg)
 
 
-## Task 2: Data import into QGIS
+## Task 2: Data import into QGIS <a id="task-2-data-import-into-qgis"></a>
 1.	Open QGIS and create a new project by clicking  on `Project` -> `New Project` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)).
 2. To give the project a name click on `Project` -> `Save As`. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on `Save`. Now you should see the name of your project in the upper left corner of your QGIS.
 3.	Open the file **"Somaliland_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somaliland_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
@@ -108,7 +108,7 @@ Intermediate results should also be saved in the “temp” folder. The final re
 5. Open the files **"Somalialand_District_pop.gpkg"** and **Somaliland_airports.gpkg** with either drag and drop or via `Layer` -> `Vector`.
 6. Save your project by clicking on the `Save Project` button (small disc in the upper left corner).
 
-## Task 3: Interface 
+## Task 3: Interface <a id="task-3-interface"></a>
 
 
 ![](/fig/en_QGIS_GUI.png)   
@@ -129,7 +129,7 @@ Intermediate results should also be saved in the “temp” folder. The final re
 
 
 
-## Task 4: Layer concept
+## Task 4: Layer concept <a id="task-4-layer-concept"></a>
 
 
 In this task, we familiarise ourselves with the layer window (Layer List). The concept means that a map in GIS is always a combination of multiple layers. We can combine the layers in many different ways and thus get different results.
@@ -160,7 +160,7 @@ If you have "lost" your layer, right click on your layer -> `Zoom to layer(s)`
 __[Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#have-you-lost-your-layer)__
 ```
 
-## Task 5: Attribute tables
+## Task 5: Attribute tables <a id="task-5-attribute-tables"></a>
 
 The attribute table, a core component of Geographic Information Systems (GIS), organizes and presents detailed information about features in a selected layer. Each row in the table represents a feature, while columns store specific attributes. This table facilitates searching, selection, sorting, filtering, and editing of features.
 
@@ -189,7 +189,7 @@ __[Wiki Attribute Table](https://giscience.github.io/gis-training-resource-cente
 8. To zoom to one feature right click on your feature --> `Zoom To Feature`
 
 
-## Task 6: Basic Data visualization
+## Task 6: Basic Data visualization <a id="task-6-basic-data-visualization"></a>
 
 Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format:
 
@@ -215,7 +215,7 @@ All the styling in QGIS happens in `Symbology`
 :::
 
 
-## Task 7: Clipping and Extract by location
+## Task 7: Clipping and Extract by location <a id="task-7-clipping-and-extract-by-location"></a>
 1.	Import the file **Somalia_health_facilities_WHO.gpkg** in QGIS.
 ::: {dropdown} Video: Import data by drag and drop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
@@ -244,7 +244,7 @@ align: center
 
 
 
-## Task 8: Data visualization- Categorized classification of Points
+## Task 8: Data visualization- Categorized classification of Points <a id="task-8-data-visualization-categorized-classification-of-points"></a>
 
 Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.
 1. Open the attribute table of "Somaliland_health_facilities_OSM" by right clicking on "Somaliland_health_facilities_OSM" -> `Open Attribute Table`

@@ -6,12 +6,12 @@
 :::
 ::::
 
-# Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan
+# Raster data Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan <a id="raster-data-exercise-1-basic-assessment-of-flood-exposure-in-the-indus-basin-in-pakistan"></a>
 
-### Aim of the exercise
+### Aim of the exercise <a id="aim-of-the-exercise"></a>
 The aim of this exercise is to gain a basic understanding of working with raster data and its visualisation and advantages. To achieve this, several datasets such as a digital elevation model, population data and mapped flood extents are processed to create a simple flood risk map for the Indus River basin in Pakistan.
 
-### Relevant Wiki Articles
+### Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
 * [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
 * [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
@@ -23,7 +23,7 @@ The aim of this exercise is to gain a basic understanding of working with raster
 
 
 
-### Data
+### Data <a id="data"></a>
 Download all datasets 
 __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_8/Modul_8_Excerise_Pakistan_Floodrisk/Modul_8_Excerise_Pakistan_Floodrisk.zip)__
  and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you find the following files:
@@ -41,7 +41,7 @@ __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_
 - `Pakistan_precip.tif` (Raster)
 
 
-### Tasks 1
+### Tasks 1 <a id="tasks-1"></a>
 Our first goal is to get a proper overview over the datasets and get familiar with the different visualisation options for raster data and how to ideally use them.
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`. Set your Project CRS to "WGS 84 / UTM zone 43N".
@@ -52,10 +52,10 @@ Our first goal is to get a proper overview over the datasets and get familiar wi
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`
 
 ```{Attention}
-If a raster is displayed mostly or completely black upon loading it into QGIS, most of the time the reason is not an error or corrupted data but just the initial visualisation style
+If a raster is displayed mostly or completely black upon loading it into QGIS, most of the time the reason is not an error or corrupted data but just the initial visualisation style.
 ```
 
-4. First have a look at the DEM layer (`Pakistan_DEM`). The raster-cells of the DEM display the elevation above sea level, where are high and low lying areas located in Pakistan occording to the expandable layer legend on the left? Use the ![](/fig/mod8_ex1_informationtool.png) to click on a couple of raster-cells to obtain their values, that are the displayed in a panel on the right. 
+4. First have a look at the DEM layer (`Pakistan_DEM`). The raster-cells of the DEM display the elevation above sea level, where are high and low lying areas located in Pakistan according to the expandable layer legend on the left? Use the ![](/fig/mod8_ex1_informationtool.png) `Identify Features`-tool to click on a couple of raster-cells to obtain their values, that are the displayed in a panel on the right. 
  - What do you think is the highest and lowest elevation approximately?
  - Can you identify areas with different terrain characteristics in your DEM?
 
@@ -175,7 +175,7 @@ One general advantage of raster data over vector data is that that they are bett
 ```
 
 
-### Task 2 
+### Task 2 <a id="task-2"></a>
 Now as you have gained a proper understanding of the fundamental visualisation options of raste rdata, we will start to explore some basic methods of processing raster data and generating new datasets with the combination of different rasters and also vector layers.
 
 You will conduct a basic analysis of flood exposure in the Indus river basin in Pakistan based on the raster layers you already worked with and further datasets.

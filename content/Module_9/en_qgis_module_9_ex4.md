@@ -8,9 +8,9 @@
 
 🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 4: Something something capacity?
+# Task 4: Something something capacity? <a id="task-4-something-something-capacity"></a>
 
-## STEP 1: Data Preparation
+## STEP 1: Data Preparation <a id="step-1-data-preparation"></a>
 
 1. Download population density layer here: https://hub.worldpop.org/geodata/summary?id=49708  and open in QGIS.
 
@@ -61,7 +61,7 @@ ADDIT: In addition, it makes sense to have a look on the a basemap like OSM to c
     by using the tool „merge vector layers“ we merge the first point layer and the new point layer
 
 
-## STEP 2: Isochrone generation
+## STEP 2: Isochrone generation <a id="step-2-isochrone-generation"></a>
 
 by using the tool ORS tools we calculate the isochrones for the hospitals
 
@@ -79,7 +79,7 @@ by using the tool ORS tools we calculate the isochrones for the hospitals
 
 
 
-## STEP 3: Merge Population and Isochrones
+## STEP 3: Merge Population and Isochrones <a id="step-3-merge-population-and-isochrones"></a>
 
     Since we want to show how many cells are inside which isochrones, we need to split the isochrones layer
     Join the Grid with the isochrones by using the tool join by location (summary). Repeat the process with the second isochrones and the joined layer instead of the first Grid.
@@ -90,7 +90,7 @@ by using the tool ORS tools we calculate the isochrones for the hospitals
 ADDIT: Remember to rename the layers to keep the overview. The attribute tables should also be clear. Delete irrelevant columns and rename columns if necessary.
 
 
-## STEP 4: Calculate available hospitals in 60 Min.
+## STEP 4: Calculate available hospitals in 60 Min. <a id="step-4-calculate-available-hospitals-in-60-min"></a>
 
 Open the attribute table of the final and use the field calculator.
 
@@ -101,7 +101,7 @@ Open the attribute table of the final and use the field calculator.
 
 
 
-## Step 5 Analysis of potential patient volume (lower level)
+## Step 5 Analysis of potential patient volume (lower level) <a id="step-5-analysis-of-potential-patient-volume-lower-level"></a>
 
 1: Create a new ID for the hospitals
 

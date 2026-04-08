@@ -1,9 +1,9 @@
-# QGIS Interface
+# QGIS Interface <a id="qgis-interface"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Overview of QGIS Interface
+## Overview of QGIS Interface <a id="overview-of-qgis-interface"></a>
 
 ![](/fig/en_QGIS_GUI.png)   
 
@@ -13,7 +13,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 ![](/fig/Geschlossene_Toolbox_01.png)
 
-3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
+3. __Map View:__ The __map view__ is the __central component__ of every GIS programme. This is where the __geodata__ is displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
 4.  __Status bar:__ In the __status bar__ you will find __central information about the current map view__. Here you can set the __projection of the map view and the scale__. You can read the coordinates of the mouse pointer and thus quickly find out the coordinates of points on the map. You can rotate your map view, e.g. if you want to create a map facing south.
 
@@ -21,13 +21,13 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-__Offical QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
+__Official QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
 
 ___
 
-## Buttens and Shortcuts
+## Buttens and Shortcuts <a id="buttens-and-shortcuts"></a>
 
-### Navigation in the map view
+### Navigation in the map view <a id="navigation-in-the-map-view"></a>
 
 | Name                      | Menu option                    | Shortcut                        | Description                                 |
 |---------------------------|--------------------------------|---------------------------------|---------------------------------------------|
@@ -44,11 +44,11 @@ ___
 
 
 
-### Project managment
+### Project management <a id="project-management"></a>
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
-| New Project     | ![](/fig/qgis_new.png)             | 'Ctrl' + 'N'     | Create a new project                    |
-| Open Project    | ![](/fig/qgis_open_project.png)   | 'Ctrl' + 'O'     | Open an existing project                |
+| New project     | ![](/fig/qgis_new.png)             | 'Ctrl' + 'N'     | Create a new project                   |
+| Open project    | ![](/fig/qgis_open_project.png)   | 'Ctrl' + 'O'     | Open an existing project                |
 | Save            | ![](/fig/qgis_save_project.png)   | 'Ctrl' + 'S'     | Save the project                        |
 | Save as…        | ![](/fig/qgis_save_project_as.png) | 'Ctrl' + 'Shift' + 'S'  | Save the project as…           |
 | Properties      |                                    | 'Ctrl' + 'Shift' + 'P'   | Open the project properties      |
@@ -56,7 +56,7 @@ ___
 | Search          |                                    | 'Ctrl' + 'K'          | Opens the search bar                    |
 
 
-### Layer management
+### Layer management <a id="layer-management"></a>
 | Name                        | Menu option                                  | Shortcut            | Description                       |
 |-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
 | Data source manager         | ![](/fig/qgis_data_source_manager.png)       | 'Ctrl' + 'L'        | Add a new layer                   |
@@ -69,32 +69,33 @@ ___
 
 
 
-### Analysis Tools
+### Analysis Tools <a id="analysis-tools"></a>
 | Name                                     | Menu option                                 | Shortcut                   | Description                                            |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
-| Identify Features                        | ![](/fig/qgis_identify_features.png)       | 'Ctrl' + 'Shift' + 'I'     | Identify features on the map view by clicking on them |
+| Identify features                        | ![](/fig/qgis_identify_features.png)       | 'Ctrl' + 'Shift' + 'I'     | Identify features on the map view by clicking on them |
 | Select feature                          | ![](/fig/qgis_select_features.png)         |                               | Select a feature by area or single click             |
 | Select feature by value                  | ![](/fig/qgis_select_features_by_value.png) | 'F3'                        | Select features by value                              |
-| Open Attribute table                     | ![](/fig/qgis_open_attribute_table.png)     | 'F6'                        | Open the Attribute table                              |
-| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | 'Shift' + 'F6'              | Open the Attribute table with selected features only  |
-| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | 'Ctrl' + 'F6'               | Open the Attribute table with visible features only   |
+| Open attribute table                     | ![](/fig/qgis_open_attribute_table.png)     | 'F6'                        | Open the attribute table                              |
+| Open attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | 'Shift' + 'F6'              | Open the attribute table with selected features only  |
+| Open attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | 'Ctrl' + 'F6'               | Open the attribute table with visible features only   |
 
 
 
-### Advanced Tools
+### Advanced Tools <a id="advanced-tools"></a>
 | Name                    | Menu option                            | Shortcut          | Description                  |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
-| Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | 'Ctrl' + 'Alt' + 'T' | Opens the Processing Toolbox |
-| Python Console          | ![](/fig/qgis_python_console.png)     | 'Ctrl' + 'Alt' + 'P' | Opens the Python Console     |
+| Processing toolbox      | ![](/fig/qgis_processing_toolbox.png) | 'Ctrl' + 'Alt' + 'T' | Opens the processing toolbox |
+| Python console          | ![](/fig/qgis_python_console.png)     | 'Ctrl' + 'Alt' + 'P' | Opens the Python console     |
 
 
 
 
-## Moving an orientation on the Map Canvas
+## Moving an orientation on the Map Canvas <a id="moving-an-orientation-on-the-map-canvas"></a>
 
-### Moving the map view
+### Moving the map view <a id="moving-the-map-view"></a>
 
 To move on the map canvas with your mouse cursor you need to toggle the hand button. 
+
 
 ![](/fig/qgis_move_symbol.png)
 
@@ -102,7 +103,7 @@ You can also move on the map canvas with arrow keys on your keyboard.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
-### Zooming in the map view
+### Zooming in the map view <a id="zooming-in-the-map-view"></a>
 
 The easiest way to zoom on Map Canvas is by __scrolling__.
 
@@ -115,13 +116,13 @@ Another way is to use the zoom buttons in the toolbox panel.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 ___
 
-## The Processing Toolbox
+## The Processing Toolbox <a id="the-processing-toolbox"></a>
 
 All the functionality, tools and applications of QGIS are organised in the __Processing toolbox__. 
 If you ever need to find a tool, or an algorithm, you can open the toolbox and use the search function to find it. 
 
 
-### Open Toolbox
+### Open Toolbox <a id="open-toolbox"></a>
 
 To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processing` -> `Toolbox`
 
@@ -131,12 +132,12 @@ You can use the search bar to find specific tools.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
-## Toolbars
+## Toolbars <a id="toolbars"></a>
 
 Some Tools have their own toolbars which you can add to your QGIS interface. They appear above the map canvas as icons which let you quickly access specific functionalities.
 To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
 
-### Show and hide displays and toolbars
+### Show and hide displays and toolbars <a id="show-and-hide-displays-and-toolbars"></a>
 
 
 
@@ -146,25 +147,25 @@ To add or remove  panels from your interface click on `View` -> `Panels` -> Chec
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
-### Move and arrange toolbars
+### Move and arrange toolbars <a id="move-and-arrange-toolbars"></a>
 
 At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
 
-## Save & Open QGIS Projects
+## Save & Open QGIS Projects <a id="save-and-open-qgis-projects"></a>
 
 To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one __BIG__ difference. 
-In QGIS the geodata you work with is __not__ saved in your QGIS projectfile. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+In QGIS the geodata you work with is __not__ saved in your QGIS project file. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
 
-### Open Projects
+### Open Projects <a id="open-projects"></a>
 
 To open an existing QGIS project click on `Project` -> `Open…` -> Navigate to your project and open it.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
 
-### Save Projects
+### Save Projects <a id="save-projects"></a>
 
 * __When you save the first time__: To save the QGIS project you are working on click on `Project` -> `Save as…`-> Navigate to the folder where you want to save the project -> Give the project a name -> `Save`
 * __When you save progress__: To save progress in a project that was already saved somewhere on your computer there are two good options:

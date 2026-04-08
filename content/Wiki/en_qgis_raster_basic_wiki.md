@@ -1,9 +1,9 @@
-# Basic Raster operations
+# Basic Raster Operations <a id="basic-raster-operations"></a>
 
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Zonal statistics
+## Zonal statistics <a id="zonal-statistics"></a>
 
 The `Zonal Statistics` allows the combination of vector and raster data.
 
@@ -34,7 +34,7 @@ It calculates the statistics for each vector feature on the basis of the raster 
 2.	`Input Layer`: Select your vector layer
 3.	`Raster Layer`: Select your raster layer
 4.	`Statistics to calculate`: Here you can select the statistic you want to calculate. For example the mean temperature of SPI.
-5.	`Zonal Statistics`: Speficiy where you want to save the results and give it a good name.
+5.	`Zonal Statistics`: Specify where you want to save the results and give it a good name.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zonal_stats.mp4"></video>

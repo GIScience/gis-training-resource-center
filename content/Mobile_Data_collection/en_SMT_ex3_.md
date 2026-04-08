@@ -1,6 +1,6 @@
-# Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA
+# Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA <a id="sketch-map-tool-exercise-3-role-play-using-the-sketch-map-tool-in-evca"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of this exercise:__
@@ -24,7 +24,7 @@ __Focus group (GIS-Knowlege Level):__
 
 Beginners-level: no specific knowledge about QGIS/uMap required
 
-#### Phase of participatory/community mapping 
+#### Phase of participatory/community mapping <a id="phase-of-participatorycommunity-mapping"></a>
 
 - Participatory mapping
 
@@ -44,7 +44,7 @@ __Estimated time demand for the exercise:__
 
 :::{grid-item-card}
 
-#### Available data and resources
+#### Available data and resources <a id="available-data-and-resources"></a>
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 - Case studies descriptions:
     - [Case Study 1](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf)
@@ -62,16 +62,16 @@ __Estimated time demand for the exercise:__
 ::::
 
 
-## Instructions for the trainers 
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
-### Conduct the training: 
+### Conduct the training: <a id="conduct-the-training"></a>
 
 __Introduction:__   
 - Introduce the idea, the aim and the benefits of a Sketch Map. If you are focusing on EVCA you might use the [EVCA Sketch Map Tool Slides]() 
@@ -89,13 +89,13 @@ __Wrap up:__
 - Leave time for open questions.
 ::::
 
-## Background Information
+## Background Information <a id="background-information"></a>
 
-### Enhanced Vulnerability and Capacity Assessment (EVCA)
+### Enhanced Vulnerability and Capacity Assessment (EVCA) <a id="enhanced-vulnerability-and-capacity-assessment-evca"></a>
 
-In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map (see [EVCA Toolbox](https://preparecenter.org/site/evca/toolbox/)). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitalizing the process while, at the same time, keeping it simple.
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard & exposure map and vulnerability & capacity map (see [EVCA Toolbox](https://preparecenter.org/site/evca/toolbox/)). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.
 
-### Benefits of the Sketch Map Tool
+### Benefits of the Sketch Map Tool <a id="benefits-of-the-sketch-map-tool"></a>
 
 __During the data collection:__ 
 - Maps provide orientation and can guide discussions.
@@ -106,17 +106,17 @@ __After the data collection:__
 - Integrate and analyse local knowledge in GIS-software such as QGIS
 
 
-## Step-by-step introduction for participants 
+## Step-by-step introduction for participants <a id="step-by-step-introduction-for-participants"></a>
 
 
-## Exercise: Roleplay
+## Exercise: Roleplay <a id="exercise-roleplay"></a>
 Participatory mapping with the Sketch Maps is the key part of using the Sketch Map Tool. The usability of your collected data depends on the local knowledge of the participants and how it is captured by 'sketching' on the maps. The idea of this exercise is to recreate such a mapping session in order to learn more about challenges you could face during the mapping process.
 
 - The facilitators are doing an EVCA in one area of the prepared case and focus on creating an exposure and hazard map. 
 - The community members are taking part in this mapping by providing information. However, they also have their own concerns or challenges they wish to address during the mapping process.
 
 
-### 1. Prepare for the roleplay
+### 1. Prepare for the roleplay <a id="1-prepare-for-the-roleplay"></a>
 
 Separate into groups: For each case study, there should be 2 groups: 
 - One group represents the community members (4-7 participants).
@@ -158,7 +158,7 @@ __Community members__
 
 
 
-### 2. Participatory Mapping Simulation
+### 2. Participatory Mapping Simulation <a id="2-participatory-mapping-simulation"></a>
 
 __Now it is time to show your acting ability.__   
 It might seem a bit strange at first, but try to stay in your character. This can help you a lot to understand challenges and motivations later on.
@@ -171,7 +171,7 @@ The Participatory Mapping Simulation is led by the facilitators:
 
 The trainer will end this roleplay when the time is over. 
 
-### 3. Optional: Upload your created maps
+### 3. Optional: Upload your created maps <a id="3-optional-upload-your-created-maps"></a>
 
 :::{dropdown} __Upload your created maps and visualize the results in UMAP__
 Take a photo of your sketches or at least one sketch by loading them into [sketch-map-tool.heigit.org](https://sketch-map-tool.heigit.org/). On the website, choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window. 
@@ -194,7 +194,7 @@ If you are further interested to customize your visualization in uMAP or to visu
 ```
 ::::
 
-### 4. Final discussion and conclusion
+### 4. Final discussion and conclusion <a id="4-final-discussion-and-conclusion"></a>
 
 
 - Discuss your results and created maps. Are you satisfied with the map? What can you do with this results? What do you to change?
