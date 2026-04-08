@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Getting started with QGIS
+# Getting started with QGIS <a id="getting-started-with-qgis"></a>
 
-## Introducing QGIS
+## Introducing QGIS <a id="introducing-qgis"></a>
 
 :::{figure} /fig/en_qgis_banner_website.png
 ---
@@ -43,7 +43,7 @@ QGIS is constantly changing, with new features being added. Because of this, the
 :::
 
 
-## Working with QGIS
+## Working with QGIS <a id="working-with-qgis"></a>
 
 
 In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: __data collection and creation, data processing, and data visualisation__. Geodata is loaded into QGIS projects which will be represented as layers on a map canvas.
@@ -90,7 +90,7 @@ In addition to the algorithms included in the standard installation, QGIS offers
 
 :::
 
-## Opening a new project in QGIS
+## Opening a new project in QGIS <a id="opening-a-new-project-in-qgis"></a>
 
 Open QGIS like any other program on your computer. The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.
 
@@ -121,7 +121,7 @@ align: center
 
 
 
-## Overview of the QGIS Interface
+## Overview of the QGIS Interface <a id="overview-of-the-qgis-interface"></a>
 
 The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.
 
@@ -179,7 +179,7 @@ If you see a `*` in the title bar, to the left of the name of your project, this
 
 :::
 
-## Buttons and Shortcuts
+## Buttons and Shortcuts <a id="buttons-and-shortcuts"></a>
 
 In QGIS, __mouse control__ allows users to interact with the map canvas, enabling functions such as panning, zooming, and selecting features.
 
@@ -252,7 +252,7 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 
 :::
 
-## Navigating on the Map Canvas
+## Navigating on the Map Canvas <a id="navigating-on-the-map-canvas"></a>
 
 ::::{admonition} *Optional*: Now it's your turn!
 
@@ -267,7 +267,7 @@ Download the Worldbank Official Boundaries.
 
 ::::
 
-### Moving the map view
+### Moving the map view <a id="moving-the-map-view"></a>
 
 ::::{margin}
 
@@ -292,7 +292,7 @@ You can always move on the map canvas with arrow keys on your keyboard.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
-### Zooming in the map view
+### Zooming in the map view <a id="zooming-in-the-map-view"></a>
 
 ::::{margin}
 
@@ -313,11 +313,11 @@ Another way is to use the zoom buttons in the toolbox panel.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 ___
 
-## Toolbox & Toolbars
+## Toolbox & Toolbars <a id="toolbox-and-toolbars"></a>
 
 Basically, all the functionality, tools and applications of QGIS are organised in the Toolbox. Some Tools have their own toolbars which you can add to your QGIS interface.
 
-### Open Toolbox
+### Open Toolbox <a id="open-toolbox"></a>
 
 ::::{margin}
 :::{tip}
@@ -341,7 +341,7 @@ There are cases when you want to do something in QGIS but do not know the exact 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
-### Show and hide displays and toolbars
+### Show and hide displays and toolbars <a id="show-and-hide-displays-and-toolbars"></a>
 
 There are toolbars and panels for many different tasks. To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.
 
@@ -351,7 +351,7 @@ There are toolbars and panels for many different tasks. To avoid an overcrowded 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
-### Move and arrange toolbars
+### Move and arrange toolbars <a id="move-and-arrange-toolbars"></a>
 
 At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
@@ -359,7 +359,7 @@ At each toolbar there is a field of two dotted lines. If you move the mouse poin
 
 ___
 
-## Save & Open QGIS Projects
+## Save & Open QGIS Projects <a id="save-and-open-qgis-projects"></a>
 
 To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one __BIG__ difference. 
 In QGIS, the geodata you work with is __not__ saved in your QGIS project file. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
@@ -371,7 +371,7 @@ Always organize your data! Check out the Wiki article on [Standard Folder Struct
 :::
 
 
-### Open Projects
+### Open Projects <a id="open-projects"></a>
 
 ::::{margin}
 
@@ -388,7 +388,7 @@ To open an existing QGIS project click on `Project` → `Open…` -> Navigate to
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
 
-### Save Projects
+### Save Projects <a id="save-projects"></a>
 
 ::::{margin}
 
@@ -407,7 +407,7 @@ Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
 
 
-## Warning icons
+## Warning icons <a id="warning-icons"></a>
 
 It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, __hover over it with your mouse__ and explanatory text will appear. For example, in {numref}`warning_icon_example`, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).
 
@@ -419,7 +419,7 @@ width: 700 px
 An example of a warning icon while adjusting the parameters of a processing tool.
 :::
 
-## Where to find help
+## Where to find help <a id="where-to-find-help"></a>
 
 :::{admonition} Connect with us!
 :class: tip
@@ -444,7 +444,7 @@ Additionally, there is a large amount of youtube tutorials, online guides and le
 GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/index.html) also offers Exercises and Training Material, as well as a [Gentle Introduction to QGIS](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html). 
 
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note
