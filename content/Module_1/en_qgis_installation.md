@@ -6,10 +6,10 @@
 :::
 ::::
 
-[link](content/module_1/en_module_overview#introduction-gis)
+[link](../content/module_1/en_module_overview#introduction-gis)
 
 
-[linkhtml](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html#introduction-gis)
+[linkhtml](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html#introduction-gis) works
 
 (qgis-installation-setup-overview)=
 # Setting up
