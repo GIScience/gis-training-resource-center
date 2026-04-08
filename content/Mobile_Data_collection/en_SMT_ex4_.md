@@ -253,9 +253,8 @@ align: center
 Attribute Table with added polygon 
 ```
 
-The whole process of Digitization is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Modul_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
+The whole process of Digitization is explained in detail [here](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
 
-[test](/content/Modul_3/en_qgis_digitalisation.md?highlight=digitize#digitalisation)
 
 __2. Add a property/column to the Attribute Table__
 
@@ -309,7 +308,7 @@ height: 400px
 name: SMT adjusting symbology
 align: center
 ---
-Adjusting the symbology with the [symbology tab](/content/Modul_4/en_qgis_map_design_I.md#styling-panel)
+Adjusting the symbology with the [symbology tab](/content/Module_4/en_qgis_map_design_I.md#styling-panel)
 ```
 
 In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](/content/Wiki/en_qgis_visualisation_wiki.md).
