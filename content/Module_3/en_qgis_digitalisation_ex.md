@@ -6,9 +6,9 @@
 :::
 ::::
 
-# Exercise 1 (Digitisation): Access to Financial Institutions 
+# Exercise 1 (Digitisation): Access to Financial Institutions <a id="exercise-1-digitisation-access-to-financial-institutions"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -56,7 +56,7 @@ __Relevant Wiki articles:__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{admonition} A note on plugins
 :class: attention
@@ -67,14 +67,14 @@ This exercise makes use of a plugin which is not installed by default: `OSM Plac
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -99,17 +99,17 @@ __Wrap up:__
 Try to always use the standard folder structure. You can find a template __[here](/content/Wiki/en_qgis_projects_folder_structure_wiki.mf#standard-folder-structure)__.
 :::
 
-## Background: Cash crunch in Abuja
+## Background: Cash crunch in Abuja <a id="background-cash-crunch-in-abuja"></a>
 
 In 2022 there was a cash shortage in Nigeria. Small businesses heavily rely on cash transactions and cash-based services. This lead to a cash crunch in Abuja, the capital city of Nigeria. [No cash article in Abuja](https://businessday.ng/news/article/business-groan-as-cash-crunch-hits-banks-in-abuja/). 
 
-## Task: Map the banks
+## Task: Map the banks <a id="task-map-the-banks"></a>
 
 Our goal is to create a point layers at the three Banks close to each other in the Central Business District (CBD) of Abuja in Nigeria. This is to let people easily identify the banks in the CBD of Abuja for their transaction purposes. 
 
 To this end, we will visualize the digitization of the First Bank, Bank of Industry Building, and Zenith Bank Abuja. 
 
-### Add a basemap
+### Add a basemap <a id="add-a-basemap"></a>
 
 1.  Add the OSM as a base map. To add the OSM as a base map click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](/content/Wiki/en_qgis_basemaps_wiki.md)).
@@ -168,7 +168,7 @@ align: center
 The digitised features could look like this. 
 :::
 
-## Mapping Road Blocks
+## Mapping Road Blocks <a id="mapping-road-blocks"></a>
 
 There is some reliable information that there is a roadblock due to construction at the junction of "Independent Avenue" and "Tafawa Balewa Way". To visualise this on our map we want to create a polygon of this roadblock.  The Polygon should cover the entire junction.
 
@@ -190,7 +190,7 @@ There is some reliable information that there is a roadblock due to construction
     - Save edits ![](/fig/mActionSaveEdits.png) , exit `Edit mode`. 
 
     
-## Map the connection routes
+## Map the connection routes <a id="map-the-connection-routes"></a>
 
 A business man drove all the way from the North of Herbert Macauley Way in the Central Business District of Abuja to do transaction at the Bank of Industry on Monday morning. Unfortunately, he found that the network server of the bank is down and needed to proceed to the Zenith Bank as the only functioning Bank. He later discovered that there is a road blocked at the junction of independence avenue and Tafawa Balewa way due to road construction. 
 

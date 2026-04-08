@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Geodata Classification
+# Geodata Classification <a id="geodata-classification"></a>
 
 Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or colour. This process enhances the organization and interpretation of spatial data.
 
@@ -21,7 +21,7 @@ align: center
 Basic classification (Source: HeiGIT).
 :::
 
-## Nominal, Ordinal and Metric scales
+## Nominal, Ordinal and Metric scales <a id="nominal-ordinal-and-metric-scales"></a>
 
 In geographic data classification, __nominal__, __ordinal__, and __metric__ scales are used to categorize and measure spatial features based on different levels of precision and hierarchy:
 
@@ -71,7 +71,7 @@ In geographic data classification, __nominal__, __ordinal__, and __metric__ scal
 Depending on the type of scale, you will use different methods of classification. Below, we will go over the different types of classification that are available in QGIS, and when to use them for which data. We will also go over some scenarios you might come across in your GIS career. 
 
 
-## Single Symbol Classification
+## Single Symbol Classification <a id="single-symbol-classification"></a>
 
 By default, QGIS visualises all layers in the `Single symbol` setting. This means all the features of a layer are visualised the same. In this setting, you can change many parameters like colour or opacity __but you can not classify the data into multiple groups!__
 
@@ -105,7 +105,7 @@ Adjusting the style of a layer.
 ::::
 
 
-## Categorised Classification
+## Categorised Classification <a id="categorised-classification"></a>
 
 Categorised classification in QGIS groups spatial data into distinct categories based on specific attributes. 
 
@@ -158,7 +158,7 @@ __To classify data in categories…__
 
 :::
 
-## Graduated Classification
+## Graduated Classification <a id="graduated-classification"></a>
 
 Graduated classification in GIS involves categorising spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualising quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena. 
 
@@ -296,7 +296,7 @@ Graduated classification in QGIS 3.36.
 :::
 ::::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Check your knowledge
 :class: note

@@ -1,4 +1,4 @@
-# Exercise 1: Creating an overview map of the health system and vaccination coverage
+# Exercise 1: Creating an overview map of the health system and vaccination coverage <a id="exercise-1-creating-an-overview-map-of-the-health-system-and-vaccination-coverage"></a>
 
 % MISSING:  - MAKE ENRICHED DATASET PERMANENT
 %           - BASEMAP
@@ -16,11 +16,11 @@
 %           - MAKE THEM DOWNLOAD HDX
 %           - ADD SMALL STEPS UNDER DROPDOWN, AS NOTES, ETC. 
 
-## Background 
+## Background <a id="background"></a>
 
 Over the past month, health authorities in Chad have reported a surge in measles cases, particularly in Mandoul, Mayo-Kebbi Est, and Logone Oriental regions. The surveillance unit has provided line-list data and existing health facility data. Your first task is to create a base map showing health facility distribution and classify them by service capacity to understand the available response infrastructure.
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 | Dataset name | Original title | Publisher | Downloaded from | 
 | :-------------- | :----------------- |:----------------- |:----------------- |
@@ -50,9 +50,9 @@ __Download all datasets provided by HeiGIT [here](https://nexus.heigit.org/repos
 
 ---
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
-### Task 1: Setting up the folder structure and creating a new QGIS project
+### Task 1: Setting up the folder structure and creating a new QGIS project <a id="task-1-setting-up-the-folder-structure-and-creating-a-new-qgis-project"></a>
 
 :::{admonition} Standard Folder Structure
 :class: tip
@@ -111,7 +111,7 @@ Setting the Project CRS to your desired CRS can help you choosing the correct CR
 % SET UP PROJECT HOME IN NEXT EXERCISE
 
 
-### Task 2: Downloading the relevant data
+### Task 2: Downloading the relevant data <a id="task-2-downloading-the-relevant-data"></a>
 
 1. In your browser, head over to __humdata.org__ 
 2. Search for the following datasets 
@@ -143,7 +143,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 % ADD IMAGE AND EXPAND THIS SECTION: DONE
 
 
-### Task 3: Importing the datasets
+### Task 3: Importing the datasets <a id="task-3-importing-the-datasets"></a>
 
 1. In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
     - `tcd_admbnda_adm0_20250212_AB.shp`
@@ -185,7 +185,7 @@ Imported files __are not saved within__ the QGIS project. If you move or delete 
 
 :::
 
-### Task 4: The layers panel and the layer concept
+### Task 4: The layers panel and the layer concept <a id="task-4-the-layers-panel-and-the-layer-concept"></a>
 
 1. Once we've imported all the relevant layers, lets start by arranging the layers logically so we can work with them more easily. On the left, there is the `Layers`-panel. Here you can see all the datasets we've imported so far. 
     - QGIS displays geodata in layers, where each dataset is represented in one layer. The layers are stacked on top of each other. 
@@ -224,7 +224,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 -->
 
 
-### Task 5: Joining Vaccination Coverage Data with administrative boundaries
+### Task 5: Joining Vaccination Coverage Data with administrative boundaries <a id="task-5-joining-vaccination-coverage-data-with-administrative-boundaries"></a>
 
 % ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
@@ -277,7 +277,7 @@ A new layer called "Joined Layer" will appear in the layers panel. To the right 
 
 > Great! We have added the information on vaccination coverage to our adm2-layer. Now, we can visualise the information by adding a graduated symbology to the layer
 
-### Task 6: Visualising the vaccination coverage
+### Task 6: Visualising the vaccination coverage <a id="task-6-visualising-the-vaccination-coverage"></a>
 
 :::{Admonition} Saving your progress
 :class: tip
@@ -314,7 +314,7 @@ Screenshot of classified vaccination_rate_mcv1 variable
 
 % ADD CLASSIFICATION STEPS AND RESULT IMAGE: DONE
 
-### Task 7: Enriching the Healthsites dataset
+### Task 7: Enriching the Healthsites dataset <a id="task-7-enriching-the-healthsites-dataset"></a>
 
 % HERE MAYBE HAVE SOME ENTRIES IN THE ADM2 COLUMN USE FRENCH NAMES OR HAVE SOME TYPOS (MAX 2 or 3). BUT SHOW HOW YOU HAVE TO CLEAN DATA TO MAKE THINGS WORK. CHECK THE LOG AND THEN RERUN 
 
@@ -359,7 +359,7 @@ When performing joins, pay attention to such inconsistencies.
 
 > We now have a new point layer with the capacities of relevant healthsites. With this information, we can create a map showing the capacities of the health sector. 
 
-### Task 8: Cleaning the Healthsite Data
+### Task 8: Cleaning the Healthsite Data <a id="task-8-cleaning-the-healthsite-data"></a>
 
 % This step is not necessary
 
@@ -382,7 +382,7 @@ When performing joins, pay attention to such inconsistencies.
 
 > Our new healthsites point layer now includes only the healthsites for which we received additional data.
 
-### Task 9: Classifying the Healthsites
+### Task 9: Classifying the Healthsites <a id="task-9-classifying-the-healthsites"></a>
 
 1. Now, we can classify the healthsites points to indicate which healthsites have a cold chain in order to store measles vaccines.
     - <kbd>Right-click</kbd> on the `tcd_healthsites_points_capacities` and select `Properties`. A new window will open.
@@ -407,5 +407,5 @@ When performing joins, pay attention to such inconsistencies.
 % Optionally, add DEM here and style the raster layer. This will be used for a overview map. -> WHAT WAS THE IDEA HERE?
 
 <!---
-### Task 7: Add Digital elevation model
+### Task 7: Add Digital elevation model <a id="task-7-add-digital-elevation-model"></a>
 -->

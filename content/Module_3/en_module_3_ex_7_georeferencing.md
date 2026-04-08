@@ -7,7 +7,7 @@
 
 ::::
 
-# Exercise 7: Georeferencing a map of Somalia
+# Exercise 7: Georeferencing a map of Somalia <a id="exercise-7-georeferencing-a-map-of-somalia"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -54,18 +54,18 @@ __Relevant Articles__
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -85,7 +85,7 @@ __Wrap up:__
 
 :::
 
-## Step by Step instructions
+## Step by Step instructions <a id="step-by-step-instructions"></a>
 
 :::{card} 
 :class-card: sd-text-justify sd-rounded-2 sd-border-1
@@ -105,7 +105,7 @@ __Available Data:__
 
 :::
 
-### Preparing the data
+### Preparing the data <a id="preparing-the-data"></a>
 
 1. Unzip the folder and familiarise yourself with the data by looking at the soil degradation map. The map is located in the `Module_3_Exercise_7_Georeferencing/data/input/`-Folder.
 2. Create a new QGIS-project.
@@ -118,14 +118,14 @@ width: 500 px
 Soil degradation in Somalia.
 :::
 
-### Step 1: Adding a basemap and loading the vector layer
+### Step 1: Adding a basemap and loading the vector layer <a id="step-1-adding-a-basemap-and-loading-the-vector-layer"></a>
 
 Georeferencing is done by connecting the points on the map that will be georeferenced to coordinates on your map canvas in QGIS. Adding a basemap or a reference layer to your QGIS project will help you to identify the corresponding coordinates.
 
 1. Add a basemap using either XYZ-tiles or the [QuickMapServices Plugin](/content/Wiki/en_qgis_basemaps_wiki.md). 
 2. Import the `som_admbnda_adm1_ocha_20230308`-layer to the QGIS project. 
 
-### Step 2: Georeferencing the map
+### Step 2: Georeferencing the map <a id="step-2-georeferencing-the-map"></a>
 
 Now that we prepared our QGIS-project, let's start georeferencing the map.
 
@@ -183,7 +183,7 @@ name: Som_georef_map
 A georeferenced map of Somalia in the QGIS Map Canvas.
 :::
 
-### *Optional* Step 3: Adjusting the transparency of the georeferenced map
+### *Optional* Step 3: Adjusting the transparency of the georeferenced map <a id="optional-step-3-adjusting-the-transparency-of-the-georeferenced-map"></a>
 
 Now that we have the georeferenced map, we can __set the transparency__ so that we can see other layers or the basemap underneath: 
 
@@ -195,7 +195,7 @@ Now that we have the georeferenced map, we can __set the transparency__ so that 
 
 Now we are able to see the underlying layers. We can also check the accuracy of our georeferencing by comparing the lines of the administrative boundaries of both layers.
 
-### *Optional* Step 4: Digitising vector features using the georeferenced map
+### *Optional* Step 4: Digitising vector features using the georeferenced map <a id="optional-step-4-digitising-vector-features-using-the-georeferenced-map"></a>
 
 Now that we have the map georeferenced, we can use it as a background layer to digitise vector features, such as a polygon indicating a region where the soil degradation is severe.
 

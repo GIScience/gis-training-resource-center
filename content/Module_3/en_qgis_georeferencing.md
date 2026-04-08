@@ -7,7 +7,7 @@
 ::::
 
 
-# Georeferencing 
+# Georeferencing <a id="georeferencing"></a>
 
 Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to the image by identifying control points on the raster that correspond to known locations on the earth, often using existing vector layers or coordinate grids as a reference.
 
@@ -23,7 +23,7 @@ A digitised old map of the Hague (Source: [Kokoalberti](https://kokoalberti.com/
 
 <!--ADD: Pictures of maps available in pdf reports-->
 
-## Georeferencing in QGIS
+## Georeferencing in QGIS <a id="georeferencing-in-qgis"></a>
 
 In QGIS, the Georeferencer tool is used for this process. T Users manually place control points on the raster image and assign them a geographic coordinate, either by entering the coordinates manually, or selecting the corresponding point in the QGIS map canvas. These points serve as reference points for the georeferencing algorithm to add geographic coordinates to each pixel in the raster. The algorithm then transforms the image, adjusting its scale, rotation, and position to accurately overlay it with other geospatial layers. Georeferenced images become valuable for digitizing features and conducting spatial analyses within a GIS.  
 
@@ -40,7 +40,7 @@ Different transformation types: linear (left), polynomial 2nd degree (middle), p
 In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html).
 
 
-### How to Georeference in QGIS
+### How to Georeference in QGIS <a id="how-to-georeference-in-qgis"></a>
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_georeferencing_howto.mp4"></video>
 
@@ -110,7 +110,7 @@ name: en_3.36_finished_georef
 A georeferenced map of Somalia in the QGIS Map Canvas
 :::
 
-## Adjusting the georeferenced layer
+## Adjusting the georeferenced layer <a id="adjusting-the-georeferenced-layer"></a>
 
 It is possible to adjust the transparency of the georeferenced map so you can see the underlying layers:
 
@@ -127,7 +127,7 @@ Alternatively, it is also possible to remove the white background. This is done 
 5. Click on the white colour on the georeferenced map in the map canvas.
 6. Click `Apply`.
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note 

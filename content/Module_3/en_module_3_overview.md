@@ -7,7 +7,7 @@
 ::::
 
 
-# Basic GIS Operations
+# Basic GIS Operations <a id="basic-gis-operations"></a>
 
 The third module addresses operations and data manipulation that GIS practitioners will undertake frequently. The first chapter teaches the process of digitisation, which is the process of creating geodata, either from existing images, or maps, or from your own knowledge. After data collection, digitisation lets you prepare the collected data for spatial analysis in QGIS. It is also useful to communicate the spatial distribution of phenomena or to simply show the collected data on a map. Next, the second chapter focuses on the classification of geodata. Spatial data can have a lot of information stored in the attribute table and the classification of geodata puts this information into distinct classes. Through this classification, we can gain new insights and it lets us visualise geographic data on maps. The third chapter, covers selecting and querying geodata. For example, you can select all data entries that are under a certain distance from a point, or you could simply select data based on specific values and see their spatial distribution.
 

@@ -7,7 +7,7 @@
 ::::
 
 
-# Digitisation
+# Digitisation <a id="digitisation"></a>
 
 Digitisation is the process of converting geographic data from maps or images into a digital form commonly represented as vector data. Proficiency in digitisation stands as a cornerstone for GIS specialists. It empowers them to convert spatial information into a digital format, facilitating more efficient data manipulation compared to traditional methods of interpreting images or paper maps. 
 
@@ -27,7 +27,7 @@ name: en_digitisation_concept
 The concept of digitisation within GIS (Source: HeiGIT).
 :::
 
-##  Digitising in QGIS
+## Digitising in QGIS <a id="digitising-in-qgis"></a>
 
 In QGIS,digitisation involves tracing features such as points, lines, or polygons directly on the map canvas to represent geographic elements like buildings, roads, or land parcels. Additionally, you can assign attributes to each feature during digitization, enabling further analysis and integration with other geospatial data. This digitized data becomes a valuable asset for spatial analysis and mapping.
 
@@ -39,7 +39,7 @@ There has been a flood in a village following heavy rains. To assess the needs o
 :::
 
 
-### Digitisation Toolbars
+### Digitisation Toolbars <a id="digitisation-toolbars"></a>
 
 :::{figure} /fig/Activate_digitizing_toolbox.png
 ---
@@ -114,7 +114,7 @@ For more complex digitisation procedures, you will use the advanced digitisation
 :::
 
 
-## Creating new datasets
+## Creating new datasets <a id="creating-new-datasets"></a>
 
 To digitise new data, you always have to start with creating the dataset before filling it with digitised data. Keep in mind that one layer can only contain one type of geometry: either points, lines, or polygons. When you create a dataset, you will have to choose the type of geometry. Additionally, you can add further columns with attributes to add more data to the data table. 
 
@@ -160,12 +160,12 @@ An important concept to understand before starting to add data to datasets is, t
 
 Once you have set up the new layer, you can start adding geometrical features. The process for the three geometric types is basically the same: 
 
-### Creating new data entries
+### Creating new data entries <a id="creating-new-data-entries"></a>
 
 1. Select the layer you want to add data to in the Layer panel.
 2. Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the digitisation toolbar. 
 
-### Creating point data
+### Creating point data <a id="creating-point-data"></a>
 
 1.	Select the point layer you want to add data to in the Layer panel.
 2.	Go to the digitisation toolbar and click on ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Make sure the layer is in the editing mode. If not, click on the ![](/fig/mActionToggleEditing.png) icon in the digitisation toolbar. 
@@ -238,7 +238,7 @@ Try digitising the RCRC branches in your country by following the steps below.
 
 
 
-### Creating line and polygon layers
+### Creating line and polygon layers <a id="creating-line-and-polygon-layers"></a>
 
 The process of creating line or polygon layers is essentially the same as creating point data. The main difference is that instead of only adding one point, line and polygon geometries require several points (vertices). Each point you add is a vertex between two lines. In QGIS, you create lines and polygons by setting one point, and then another point connected to the previously added point. To finish adding the feature use the <kbd>Right mouse button</kbd>. 
 
@@ -291,11 +291,11 @@ The first thing you do is locate the village using GPS-coordinates that you ente
 
 :::
 
-## Editing the Data
+## Editing the Data <a id="editing-the-data"></a>
 
 In some cases, you might want to modify or correct vector data because of inaccuracies or changes. Editing vector data is done with the digitisation toolbar. In QGIS, you can edit both the geometries and the values in the attribute table. 
 
-### Editing Geometries
+### Editing Geometries <a id="editing-geometries"></a>
 
 For all cases:
 
@@ -374,7 +374,7 @@ A ring in QGIS is a part inside a polygon that is not part of the polygon. Image
 
 :::::
 
-### Editing the attribute values
+### Editing the attribute values <a id="editing-the-attribute-values"></a>
 
 Sometimes, you will have to edit the values in the columns of the attribute table. For example, the name of an administrative district is written incorrectly or differently, or a value has not been entered correctly. To do this, you will have to:
 
@@ -411,7 +411,7 @@ Building Damage Assessment in Paikgachha Upazila, Khulna District, Khulna Divisi
 
 ::::
 
-## Spatial Digitisation Errors in QGIS
+## Spatial Digitisation Errors in QGIS <a id="spatial-digitisation-errors-in-qgis"></a>
 
 The accuracy of geodata is crucial for spatial analysis. Positional errors are inevitable when data are manually digitised. The most common examples include undershooting and overshooting.  When your coordinates do not connect as they should, and overshooting, when the lines go past where they should. Often these errors are not visible unless you zoom in quite a bit on the coordinates. Setting a fuzzy tolerance (snapping tolerance) is used to reduce undershoots and overshoots. The snapping tolerance is the minimum tolerated distance between nodes, lines and/or vertices.
 
@@ -424,7 +424,7 @@ name: Digitization_Errors
 Digitising Errors (Source: SpatialPost).
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Recapitulate your knowledge
 :class: note 

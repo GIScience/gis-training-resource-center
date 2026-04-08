@@ -8,9 +8,9 @@
 ::::
 
 
-# Digitisation Exercise 1
+# Digitisation Exercise 1 <a id="digitisation-exercise-1"></a>
 
-# Aim of the exercise:
+# Aim of the exercise: <a id="aim-of-the-exercise"></a>
 
 In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets. 
 
@@ -18,7 +18,7 @@ In this exercise, you will learn how to digitise points, lines, and polygons of 
 Try to always use the standard folder structure. You can find a template [__here__](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
 :::
 
-### Relevant Wiki Articles
+### Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)

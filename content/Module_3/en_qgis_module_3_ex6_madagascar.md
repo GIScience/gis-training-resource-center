@@ -7,7 +7,7 @@
 ::::
 
 
-# Exercise 6: Sava Flood response
+# Exercise 6: Sava Flood response <a id="exercise-6-sava-flood-response"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -68,18 +68,18 @@ __Context:__
 :::
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -99,7 +99,7 @@ __Wrap up:__
 
 :::
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module3/Exercise_6/Modul_3_Exercise_6_Sava_flood.zip
@@ -130,7 +130,7 @@ To keep your data organized and easily accessible, it's important to establish a
 :::
 
 
-## Task 1: Gain an overview of the situation around Sambava and Vehomar 
+## Task 1: Gain an overview of the situation around Sambava and Vehomar <a id="task-1-gain-an-overview-of-the-situation-around-sambava-and-vehomar"></a>
 
 ::::{card}
 
@@ -184,7 +184,7 @@ Now you have an overview of where the districts Sambava and Vohemar in Sava are 
 Do not forget to save your project from time to time!
 :::
 
-## Task 2: Estimation of Flood Impact on the Health Sector in Sambava and Vohemar
+## Task 2: Estimation of Flood Impact on the Health Sector in Sambava and Vohemar <a id="task-2-estimation-of-flood-impact-on-the-health-sector-in-sambava-and-vohemar"></a>
 
 ::::{card}
 
@@ -328,7 +328,7 @@ __Achievement:__
 We've pinpointed that 3 health facilities have been inundated by the floods. 
 :::
 
-## Task 3: Logistical access
+## Task 3: Logistical access <a id="task-3-logistical-access"></a>
 
 ::::{card}
 

@@ -12,9 +12,9 @@ __Click here to return to the exercise overview for module 3.__
 :::
 ::::
 
-# Exercise 3: Data Queries
+# Exercise 3: Data Queries <a id="exercise-3-data-queries"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{topic}
 __Aim of the exercise:__
@@ -23,7 +23,7 @@ The aim of this exercise is to learn how to manipulate secondary data to generat
 :::
 
 
-### Links to Wiki articles
+### Links to Wiki articles <a id="links-to-wiki-articles"></a>
 
 * [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
 * [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
@@ -35,7 +35,7 @@ The aim of this exercise is to learn how to manipulate secondary data to generat
 * [Geoprocessing - Clip](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) 
 
 
-## Data
+## Data <a id="data"></a>
 
 Download all the datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_3/Module_3_Exercise_3_Data_Queries.zip), save the folder on your computer, and unzip the file. The zip folder includes:
 
@@ -50,7 +50,7 @@ The folder is called **Module_3_Exercise_3_Data_Queries** and contains the entir
 The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name **Beledweyne** which we will be focusing on. Other spellings might be **Belet Weyne** or **Belete Weyne**. In many cases, you will have to edit the values in the datasets to remove different spelling of spelling mistakes. This process is called "data cleaning".
 :::
 
-## Tasks
+## Tasks <a id="tasks"></a>
 
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 
@@ -65,14 +65,14 @@ The naming of the districts and states is not consistent across the different da
 Make sure you __unzip__ the exercise folder before loading the layers into QGIS. QGIS does not accept compressed files.
 :::
 
-### Extract the district (adm2) from the administrative boundaries layer
+### Extract the district (adm2) from the administrative boundaries layer <a id="extract-the-district-adm2-from-the-administrative-boundaries-layer"></a>
 
 4. First, we want to export the district __Beledweyne__ from the Hiraan region from `som_admbnda_adm2_ocha_20230308.shp` to have it as a stand-alone vector layer. To do that:
     1. Open the attribute table of `som_admbnda_adm2_ocha_20230308.shp` by right clicking on the layer → `Open Attribute Table`([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md)).
     2. Find the row of `Belet Weyne` and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
     3. Now right-click on the layer in the Layer Panel and click on `Export` → `Save Selected Features as`. We want to save Beledweyne as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your **temp folder**. Here you can give the layer the name **AOI_Beledweyne** and click `Save`. Now click `Ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). In this exercise, we will not reproject the layers and work with the data in `ESPG:4326 - WGS84`.
 
-### Identify the building that might be affected by the flooding
+### Identify the building that might be affected by the flooding <a id="identify-the-building-that-might-be-affected-by-the-flooding"></a>
 
 5. In the following steps, we want to identify all buildings that are likely to be affected by the recent flooding. To do that we will use the tool `Extract by Location`.
     :::{figure} /fig/Extract_by_location_Belet_Weyne.png
@@ -95,7 +95,7 @@ Make sure you __unzip__ the exercise folder before loading the layers into QGIS.
     The tool [`Select by Location`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#select-by-location) is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
     :::
 
-### Identify critical infrastructure affected by the floods
+### Identify critical infrastructure affected by the floods <a id="identify-critical-infrastructure-affected-by-the-floods"></a>
 
 6. In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
 To extract "hospitals", "schools", and "mosques", we can use the tool `Extract by Expression`.

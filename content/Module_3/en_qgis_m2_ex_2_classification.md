@@ -7,9 +7,9 @@
 ::::
 
 
-# Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone
+# Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone <a id="exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone"></a>
 
-## Characteristics of the exercise
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -67,18 +67,18 @@ __Relevant Wiki Articles__:
 
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -99,7 +99,7 @@ __Wrap up:__
 :::
 
 
-### Available Data
+### Available Data <a id="available-data"></a>
 
 Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_2/Module_3_Exercise_2_Sierra_Leone_Food_Insecurity.zip)__ and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you will find the following files:
 
@@ -111,7 +111,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 - `Sierra_leone_healthsites.gpkg` (Points) Geopackage
 - `sl_airports.gpkg` (Points) GeoPackage
 
-### Tasks
+### Tasks <a id="tasks"></a>
 
 Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.
 

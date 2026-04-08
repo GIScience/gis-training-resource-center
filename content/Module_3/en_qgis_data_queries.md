@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Geodata Selection and Queries
+# Geodata Selection and Queries <a id="geodata-selection-and-queries"></a>
 
 Geodata selection and queries in QGIS allow targeted parts of geospatial datasets to be selected. This can be utilized for filtering and analyzing geospatial information, which are essential tasks when working with spatial data.
 \
@@ -33,7 +33,7 @@ __Download World Bank Official Boundaries__
 
 ::::
 
-## Manual Selection
+## Manual Selection <a id="manual-selection"></a>
 
 Manual selection is done mostly using one of the click-based selection tools available under   in your project toolbar (alternative: `Edit` → `Select`). These include `Select Feature(s)`, `Select Feature by Polygon`, `Select Feature by Freehand` and `Select Feature by Radius`.
 \
@@ -72,7 +72,7 @@ The other options of ![](/fig/mActionSelectRectangle.png) function in a similar 
 Selected features are highlighted in bright yellow in the geospatial view and blue in the attribute table.
 :::
 
-## Attribute Based Selection
+## Attribute Based Selection <a id="attribute-based-selection"></a>
 
 A query based on specific Attributes can be done utilizing the `Select Features by Expression` tool available under ![](/fig/mActionSelectbyExpression.png) in the project toolbar and the attribute table (alternative: `Edit` → `Select` → `Select` Features by Expression).
 
@@ -124,7 +124,7 @@ Operators such as AND, OR can be used to combine different queries or criteria.
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
 :::
 
-## Layer Based Spatial Selection
+## Layer Based Spatial Selection <a id="layer-based-spatial-selection"></a>
 Spatial selection of features enables selecting parts of a layer based on their relationship with features in another geospatial layer (e.g. the selection of all point features in layer A that are located within a polygon feature in Layer B). It can be achieved by using the tool “Select by Location” available under ![](/fig/mActionSelectbyLocation.png) in the project toolbar or (alternative: `Vector` → `Research Tools` → `Select by Location`).
 
 1.	In the tool interface, choose the vector layer you want to select features from using "Select features from" and the layer you want to base the selection on using "By comparing to the features from".
@@ -147,7 +147,7 @@ Selected features are again highlighted in bright yellow in your geospatial inte
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_touch_wiki.mp4"></video>
 :::
 
-### Geometric Operators
+### Geometric Operators <a id="geometric-operators"></a>
  The geometric operators define the conditions of the relationship between your source and target layer that the selection will be based on. There are eight total options:
 
 
@@ -164,7 +164,7 @@ Selected features are again highlighted in bright yellow in your geospatial inte
 
 <!--ADD examples relevant to IM? -->
 
-## Self-Assessment Questions
+## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
 :class: note

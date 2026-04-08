@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercise 5: Larkana Flood response
+# Exercise 5: Larkana Flood response <a id="exercise-5-larkana-flood-response"></a>
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -63,18 +63,18 @@ In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced
 Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded. 
 :::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -94,7 +94,7 @@ __Wrap up:__
 
 :::
 
-## Available Data
+## Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_5/Module_3_Exercise_5_Larkana_Flood.zip
@@ -134,7 +134,7 @@ width: 450 px
 :::
 -->
 
-## Task 1: Gain an overview of the situation around Larkana 
+## Task 1: Gain an overview of the situation around Larkana <a id="task-1-gain-an-overview-of-the-situation-around-larkana"></a>
 
 ::::{card} 
 __Context__
@@ -219,7 +219,7 @@ Now you have an overview of where the district of Larkana is located in Sindh. T
 
 
 
-## Task 2: Estimation of Flood Impact on the Health Sector in Larkana
+## Task 2: Estimation of Flood Impact on the Health Sector in Larkana <a id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana"></a>
 
 ::::{card} 
 __Context__
@@ -386,7 +386,7 @@ We've pinpointed the specific health facilities that have been inundated by the 
 
 :::
 
-## Task 3: Logistical access to Larkana City
+## Task 3: Logistical access to Larkana City <a id="task-3-logistical-access-to-larkana-city"></a>
 
 ::::{card}
 __Context__
