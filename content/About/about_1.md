@@ -5,7 +5,7 @@ Our goal is to provide a comprehensive platform containing the essential skills 
 In addition to the modules, we offer exercises and a wiki to enable individuals to work through the material and learn independently.  
 This QGIS training is made by people who believe GIS can help humanitarians to serve people in need better. 
 
-### Our Mission:
+### Our Mission: {mission}
 We share the commitment to humanitarian aid. Through this website, our goal is to offer a unified, accessible and comprehensive resource, equipping individuals and organizations with the knowledge and tools necessary for working with QGIS. 
 This Resource Center is also the resource for guided training modules.
 

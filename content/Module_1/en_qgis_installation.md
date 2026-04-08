@@ -6,15 +6,15 @@
 :::
 ::::
 
-# Setting up
+# Setting up {#setup-overview}
 
 In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.
 
-## Quick guide QGIS 3.34.12 - installation and basic setup
+## Quick guide QGIS 3.34.12 - installation and basic setup {#qgis-quick-guide-installations}
 
 <iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## QGIS Download and Installation
+## QGIS Download and Installation {#qgis-download-installation}
 
 QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. The installation of QGIS is very simple. Depending on your system (Windows, Mac or Linux) there are some things to look out for. You can find advice below on how to install QGIS on different operating systems. 
 
@@ -25,7 +25,7 @@ The current __Long Term Release__ is __[QGIS 3.40.4. 'Bratislava'](https://qgis.
 
 :::
 
-### QGIS Download
+### QGIS Download {#qgis-download}
 
 1. Go to the [__QGIS download page__](https://www.qgis.org/en/site/forusers/download.html).
 2. Select `Download for Windows`, `Download for macOS` or `Download for Linux`, depending on your operating system.
@@ -44,7 +44,7 @@ The download page for QGIS 3.34.
 5. Locate the downloaded file (usually in your Downloads folder) and run it to start the installer
 6. Follow the installer instructions to install QGIS!
 
-## Operating System specific considerations
+## Operating System specific considerations {#os-specific-considerations}
 
 :::::{tab-set}
 
@@ -79,7 +79,7 @@ _Processing Saga NextGen Provider_.
 
 :::::
 
-## Setting up a folder structure for the training
+## Setting up a folder structure for the training {#training-folder-structure}
 
 Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.
 
@@ -95,7 +95,7 @@ Make sure to unzip the exercise files before starting the exercises.
 
 :::
 
-## Self-Assessment Questions
+## Self-Assessment Questions {#self-assessment}
 
 :::{admonition} Test what you've learned
 :class: note
