@@ -232,7 +232,7 @@ Configuration de l'opération : intersecter les établissements de santé avec l
      - **Input layer**: `Education Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output**
-   - Click **OK**
+   - Click `OK`.
 :::{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
 ---
 width: 600px
@@ -381,7 +381,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
         ```
         admin2_harald_Exposed_Population
         ```
-   - Click **Run** to execute the full model.
+   - Click `Run` to execute the full model.
 
 :::::{tab-set}
 
@@ -396,7 +396,7 @@ Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithm
 :::
 ::::
 ::::{tab-item} Run Model Configuration
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.png
 ---
 width: 600px
 align: center
@@ -405,7 +405,7 @@ Configuration des paramètres pour exécuter le modèle de la tâche 3 avec tout
 :::
 ::::
 ::::{tab-item} Model Output
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.png
 ---
 width: 600px
 align: center

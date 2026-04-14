@@ -10,14 +10,14 @@
 
 ## Introducing QGIS <a id="introducing-qgis"></a>
 
-:::{figure} /fig/en_qgis_banner_website.png
+```{figure} /fig/en_qgis_banner_website.png
 ---
 name: en_qgis_banner_website
 width: 300 px
 align: right
 ---
 [qgis.org](https://qgis.org/)
-:::
+```
 
 :::{div} sd-text-justify
 - QGIS is an __open source geoinformation system software__. That means the source code is available for everyone, 
@@ -107,13 +107,13 @@ A QGIS project file has the format ending `.qgz`.
 
 1. On the start screen click on `Project Template`.
 
-:::{figure} /fig/en_project_template_BRC.png
+```{figure} /fig/en_project_template_BRC.png
 ---
 height: 400
 name: en_project_template_BRC
 align: center
 ---
-:::
+```
 
 2. In the upper left corner click on `Project` → `New Project`.
 
@@ -133,26 +133,26 @@ When you hover with your mouse cursor over icons, text will appear which explain
 :::
 ::::
 
-:::{figure} /fig/en_QGIS_GUI.png
+```{figure} /fig/en_QGIS_GUI.png
 ---
 width: 800px 
 align: center
 name: en_QGIS_GUI
 ---
 QGIS User Interface. Source: BRC
-:::
+```
 
 1. __Layers panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
 2. __Toolbars:__  __Toolbars__ are shortcuts to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __processing toolbox__, which is used later in many of the wiki videos.
 
-:::{figure} /fig/en_Interface_02.png
+```{figure} /fig/en_Interface_02.png
 ---
 height: 75 px
 name: en_Interface_02
 align: center
 ---
-:::
+```
 
 3. __Map Canvas:__ The __map canvas__ is the __central component__ of every GIS programme. This is where the __geodata__ are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.
 
@@ -238,8 +238,8 @@ __Hotkeys__ in the QGIS interface provide convenient shortcuts for various comma
 | Select feature   | ![](/fig/qgis_select_features.png) |  | Select a feature by area or single click  |
 | Select feature by value | ![](/fig/qgis_select_features_by_value.png) | <kbd>F3</kbd> | Select features by value  |
 | Open Attribute table    | ![](/fig/qgis_open_attribute_table.png)     | <kbd>F6</kbd>  | Open the Attribute table                              |
-| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + `F6`             | Open the Attribute table with selected features only  |
-| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | <kbd>Ctrl</kbd> + `F6`               | Open the Attribute table with visible features only   |
+| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + <kbd>F6</kbd>             | Open the Attribute table with selected features only  |
+| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | <kbd>Ctrl</kbd> + <kbd>F6</kbd>               | Open the Attribute table with visible features only   |
 
 :::
 
@@ -411,13 +411,13 @@ Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd
 
 It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, __hover over it with your mouse__ and explanatory text will appear. For example, in {numref}`warning_icon_example`, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).
 
-:::{figure} /fig/en_3.36_warning_icon_example.png
+```{figure} /fig/en_3.36_warning_icon_example.png
 ---
 name: warning_icon_example
 width: 700 px
 ---
 An example of a warning icon while adjusting the parameters of a processing tool.
-:::
+```
 
 ## Where to find help <a id="where-to-find-help"></a>
 

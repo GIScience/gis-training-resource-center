@@ -85,7 +85,7 @@ Save the folder on your computer and unzip the file. The zip folder includes:
 All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
 :::
 
-1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healthsites Somalia (`WHO_health_sites.shp) into QGIS.
+1. Load the Somalia district boundaries (admin level 2) (`som_admbnda_adm2_ocha_20230308.shp`) and Healthsites Somalia (`WHO_health_sites.shp`) into QGIS.
 
 2. Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  __Healthsites Somalia__ into EPSG 4326. Use the tool `Reproject layer` for this process. See the Wiki entry on __Projections__ for further information.
 
@@ -118,7 +118,7 @@ Summarising population counts per district.
 Throughout the indicator processing process you will have several interim results. Make sure to save them in a "temp" folder.
 :::
 
-5. Now we know the numbers of health sites and the number of population per district. We are ready to calculate our final indicator __Number of health sites per 10.000 inhabitants. 
+5. Now we know the numbers of health sites and the number of population per district. We are ready to calculate our final indicator __Number of health sites per 10.000 inhabitants__. 
 * Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the `Field Calculator` by clicking on the button ![](/fig/mActionCalculateField.png). By checkin the box for `Create a new field` we can conduct calculation and saving them right away in a new attribute column.
 * define the output field name as "healthsites_10000" and set the `Type` to `Decimal Number(real)`.
 * Now we will calculate in the expression field the number of health sites per 10.000 inhabitants:

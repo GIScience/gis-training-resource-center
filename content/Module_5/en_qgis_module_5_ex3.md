@@ -405,15 +405,15 @@ __Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](/c
 
 __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)
 
-1. Right-click on "ML1_zonal_statistic" layer → “Attribute Table” → click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) to open the field calculator.
+1. Right-click on "ML1_zonal_statistic" layer → `Attribute Table”` → click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) to open the field calculator.
 2. Check `Create new field`.
-3. `Output field name`: Name the new column “Index_per_IPCPolygon_ML1”
+3. `Output field name`: Name the new column "Index_per_IPCPolygon_ML1"
 4. `Result field type`: Decimal number (real)
 5. Add the following code into the `Expression` field:
 ```md
 "pop_sum_weighted"/"districtpo"
 ```
-6. Click `OK`- 
+6. Click `OK`.
 7. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and turn off editing mode by clicking on ![](/fig/mActionToggleEditing.png).
 
 :::{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
@@ -424,7 +424,7 @@ align: center
 ---
 :::
 
-__Result:__ The layer “ML1_zonal_statistic” should now have the column “Index_per_IPCPolygon_ML1”. The numbers in this column have to be smaller than in the “district” column.
+__Result:__ The layer "ML1_zonal_statistic" should now have the column "Index_per_IPCPolygon_ML1". The numbers in this column have to be smaller than in the "district" column.
 
 
 :::{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
@@ -476,7 +476,7 @@ __Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource
 
 1. Right-click on "ML1_IPC_Index" layer → `Attribute Table` → click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) to open the field calculator.
 2. Check `Create new field`.
-3. `Output field name`: Name the new column “Trigger_activation”.
+3. `Output field name`: Name the new column "Trigger_activation".
 4. `Result field type`: Text (string).
 5. Add the code below into the `Expression` field.
 6. Save the new column by clicking on ![](/fig/mActionSaveEdits.png) in the attribute table and end the editing mode by clicking on ![](/fig/mActionToggleEditing.png).
@@ -524,7 +524,7 @@ __Trigger Activation__
 
 1. Right-click on the "ML1_IPC_Index" layer → `Properties` → `Symbology`.
 2. In the down left corner click on `Style` → `Load Style`.
-3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation_ex.qml”__.
+3. In the new window click on the three points ![](/fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __"Style_Trigger_Activation_ex.qml"__.
 4. Click `Open` → `Load Style`.
 5. Back in the "Layer Properties"-window, click `Apply` and `OK`.
 

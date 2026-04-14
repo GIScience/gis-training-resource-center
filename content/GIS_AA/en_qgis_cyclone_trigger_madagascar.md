@@ -793,12 +793,12 @@ The same workflow applies to all five impact variables: population, buildings, e
 3. Below, click on the three dots ![](/fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_population_map_template`. Click `Open`, then `Create`. 
 4.  QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
 
-:::{figure} /fig/AA/mdg_aa_pop_impact_template.png
+```{figure} /fig/AA/mdg_aa_pop_impact_template.png
 ---
 name: mdg_aa_pop_impact_template
 width: 600 px
 ---
-:::
+```
 
 5. **Update the Map Title**  
    - Click on the title text element at the top of the map.

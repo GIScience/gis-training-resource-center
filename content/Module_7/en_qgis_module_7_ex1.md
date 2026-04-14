@@ -392,7 +392,7 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
      - Set **Input layer** to `Cyclone Track` (from **Model Input**).
      - Set **Target CRS** to `EPSG:29738 – Madagascar / Laborde Grid`.
      - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+   - Click `OK` to add the step to the model.
 ```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
@@ -411,7 +411,7 @@ Reprojecter la couche de trajectoire du cyclone vers un système de référence 
      - Leave **Segments** at the default value (`5`).
      - Set **Dissolve result** to `Yes`.
      - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+   - Click `OK` to add the step to the model.
 ```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
@@ -428,7 +428,7 @@ Mettre en mémoire tampon la couche Cyclone reprojetée
      - Set **Input layer** to the output from the previous step (from **Algorithm Output**).
      - Set **Target CRS** to `EPSG:4326 – WGS 84`.
      - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+   - Click `OK` to add the step to the model.
 ```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
@@ -445,7 +445,7 @@ Reprojecter le tampon vers EPSG:4326
      - Set **Input layer** to `Population Raster` (from **Model Input**).
      - Set **Mask layer** to the output from the previous step (from **Algorithm Output**).
      - Set the output to **Model Output** (leave the output name **empty**).
-   - Click **OK** to add the step to the model.
+   - Click `OK` to add the step to the model.
 ```{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
@@ -466,7 +466,7 @@ Découper la couche raster de population pour l'étendre au tampon Cyclon
       ```
       exposed_population_sum
       ```
-   - Click **OK** to add the step to the model.
+   - Click `OK` to add the step to the model.
 ```{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
@@ -527,7 +527,7 @@ align: center
      ```
      cyclone_harald_buffer
      ```  
-   - Click **OK** to save the change.  
+   - Click `OK` to save the change.  
    - This will allow the model to produce both the exposed population results and the buffered cyclone impact zone when it is run.
 
 ```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
@@ -694,7 +694,7 @@ Configuration de l'opération : compter le nombre d'établissements scolaires da
      - **Input layer**: `Health Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output** 
-   - Click **OK**
+   - Click `OK`.
 ```{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
 ---
 width: 600px
@@ -712,7 +712,7 @@ Configuration de l'opération : intersecter les établissements de santé avec l
      - **Input layer**: `Education Facilities` (Model Input)
      - **Overlay layer**: buffered cyclone zone (use “Reprojected to EPSG:4326” from **Algorithm Output**)
      - Leave output as **Model Output**
-   - Click **OK**
+   - Click `OK`.
 ```{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
 ---
 width: 600px
@@ -835,7 +835,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
    - Save again to:  
      **`Estimate_Exposed_Population_Health_Education.model3`**
 12. **Run the model**
-   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
+   - Click the ▶️ `Run` button in the top-right corner of the Graphical Modeler window.
    - **Input:**
      - Click on the three dots for each input dataset and select the correct input:
        - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
@@ -861,7 +861,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
         ```
         admin2_harald_Exposed_Population
         ```
-   - Click **Run** to execute the full model.
+   - Click `Run` to execute the full model.
 
 ::::{tab-set}
 
@@ -939,13 +939,13 @@ They are **not** based on the percentage column.
 
 
 **Steps:**
-- Right-click on the layer in the **Layers Panel**  
-- Select **Properties**  
-- In the window that opens, go to the **Symbology** tab  
-- At the bottom left, click **Style** → **Load Style…**
+- Right-click on the layer in the `Layers Panel`.
+- Select `Properties`.  
+- In the window that opens, go to the `Symbology`tab.  
+- At the bottom left, click `Style` → `Load style...`
 - Click on the three points ![](/fig/Three_points.png)  
 - Navigate to the corresponding `.qml` file in the folder `layer_sytle`and select it  
-- Click **Open**, then **Apply** and **OK** to confirm  
+- Click `Open`, then `Apply` and `OK` to confirm.  
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
 
@@ -1011,7 +1011,7 @@ Aina also wants to visualise the percentage of exposed health and education faci
 - Click `OK`.This will create four classes (`0–25%`, `25–50%`, `50–75%`, `75–100%`)
 - Choose a color ramp (e.g., light yellow → dark red)
 - Optionally customize class labels for clarity
-- Click `Apply`
+- Click `Apply`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
 
@@ -1104,7 +1104,7 @@ Apply a ready-made QGIS map template to quickly create and export maps that show
     - **Attribute**: `ADM1_EN`; `ADM2_EN`; `ADM2_PCODE`; `exposed_population_sum`
     - To sort the tabel content, under the **Sorting**  clicking on ➕ and add the column `AMD1_EN`
     - **Sort Order**: Ascending
-  - Click `OK`
+  - Click `OK`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
 
@@ -1293,7 +1293,7 @@ Always copy field names **directly from the attribute table** to avoid errors.
     exposure_indicators_spreadsheet
     ```
 
-  - Click **OK** to add it to the model.
+  - Click `OK` to add it to the model.
 Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
 
 ```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
@@ -1312,7 +1312,7 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
    - Save again to:  
      **`Estimate_Exposed_Population_Health_Education.model3`**
 6. **Run the model**
-   - Click the ▶️ **Run** button in the top-right corner of the Graphical Modeler window.
+   - Click the ▶️ `Run` button in the top-right corner of the Graphical Modeler window.
    - **Input:**
      - Click on the three dots for each input dataset and select the correct input:
        - `Cyclone Track` → select the GeoJSON of the storm path (e.g. `Harald_2025_Track.geojson`)
@@ -1342,7 +1342,7 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
         ```
         exposure_indicators_harald
         ```
-   - Click **Run** to execute the full model.
+   - Click `Run` to execute the full model.
 
 ::::{tab-set}
 
@@ -1455,7 +1455,7 @@ Aina knows that only **three warehouses** stock the necessary medical supplies:
    - Click `Style` at the bottom → `Load Style…`
    - Select the file:  
      `CRM_warehouse_isochrones_style.qml`
-   - Click `Open`, then `Apply` and `OK`
+   - Click `Open`, then `Apply` and `OK`.
 
 ### 3. Visualizing Health Post Reachability from CRM Warehouses <a id="3-visualizing-health-post-reachability-from-crm-warehouses"></a>
 Aina needs to identify which health posts can be reached by road from three key CRM warehouses (Antananarivo, Maroantsetra, and Tolanaro) **within 10 hours of travel time**. She will do this manually by combining the 10-hour isochrones from these warehouses and comparing them to the national health post dataset.
@@ -1470,14 +1470,14 @@ Aina needs to identify which health posts can be reached by road from three key 
      ```
      merged_isochrones_10h.gpkg
      ```  
-   - Click **Run**.
+   - Click `Run`.
 2. **Select Health Posts Reachable Within 10 Hours**  
    - In the **Processing Toolbox**, search for `Select by Location`.  
    - Set the following parameters:  
      - **Input layer**: `health_posts_only.gpkg`  
      - **Predicate**: `intersects`  
      - **Intersect layer**: `merged_isochrones_10h.gpkg`  
-   - Click **Run**.
+   - Click `Run`.
    > 💡 The selected points are those within the 10-hour service areas of the warehouses.
 3. **Create a Reachability Field for Selected Health Posts**  
    - Open the **Field Calculator** ![](/fig/mActionCalculateField.png) on the `health_posts_only` layer.  
@@ -1488,7 +1488,7 @@ Aina needs to identify which health posts can be reached by road from three key 
      ```qgis
      'reachable in 10 hours'
      ```  
-   - Click **OK** to create and populate the new field for selected features.
+   - Click `OK` to create and populate the new field for selected features.
 4. **Mark the Remaining Health Posts as Not Reachable**  
    - Invert the selection:  
      Go to `Edit` → `Invert Feature Selection` ![](/fig/mActionInvertSelection.png)  
@@ -1500,7 +1500,7 @@ Aina needs to identify which health posts can be reached by road from three key 
      ```qgis
      'not reachable in 10 hours'
      ```  
-   - Click **OK** to apply the update.
+   - Click `OK` to apply the update.
 
 > ✅ Now all health posts are labeled as either **reachable** or **not reachable** in the `Reachability_time` column.
 

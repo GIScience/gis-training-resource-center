@@ -269,8 +269,9 @@ Selecting the flood affected health facilities.
 
 In case you encounter the error:
 
-> Feature (1) from “TDX_20240401_FloodExtent_SambavaDistrict_MDG” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
-Execution failed after 0.07 seconds
+```
+Feature (1) from “TDX_20240401_FloodExtent_SambavaDistrict_MDG” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option. Execution failed after 0.07 seconds
+```
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 

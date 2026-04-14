@@ -209,8 +209,7 @@ Always copy field names **directly from the attribute table** to avoid errors.
     ```
     exposure_indicators_spreadsheet
     ```
-
-  - Click **OK** to add it to the model.
+  - Click `OK` to add it to the model.
 Once you run the model, this step will automatically generate a spreadsheet with all relevant indicators ready for the operations team!
 
 :::{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
@@ -259,11 +258,11 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
         ```
         exposure_indicators_harald
         ```
-   - Click **Run** to execute the full model.
+   - Click `Run` to execute the full model.
 
 :::::{tab-set}
 
-::::{tab-item} Graphic Modler
+::::{tab-item} Graphic Modeler
 
 :::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
 ---

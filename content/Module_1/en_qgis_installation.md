@@ -32,14 +32,14 @@ The current __Long Term Release__ is __[QGIS 3.40.4. 'Bratislava'](https://qgis.
 2. Select `Download for Windows`, `Download for macOS` or `Download for Linux`, depending on your operating system.
 3. Click on `Looking for the most stable version? Get QGIS 3.34 LTR`
 
-:::{figure} /fig/QGIS_download_LTR_version.png
+```{figure} /fig/QGIS_download_LTR_version.png
 ---
 width: 600 px
 name: QGIS_download_LTR_version
 align: center
 ---
 The download page for QGIS 3.34.
-:::
+```
 
 4. The download will start.
 5. Locate the downloaded file (usually in your Downloads folder) and run it to start the installer

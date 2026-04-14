@@ -119,7 +119,7 @@ Operators such as AND, OR can be used to combine different queries or criteria.
 
 ::::
 
-:::{dropdown} Example: Select all country polygons that share the value "Asia" in the field "continent"
+:::{dropdown} Example: Select all country polygons that share the value `Asia` in the field "continent"
 :open:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
 :::
@@ -127,7 +127,7 @@ Operators such as AND, OR can be used to combine different queries or criteria.
 ## Layer Based Spatial Selection <a id="layer-based-spatial-selection"></a>
 Spatial selection of features enables selecting parts of a layer based on their relationship with features in another geospatial layer (e.g. the selection of all point features in layer A that are located within a polygon feature in Layer B). It can be achieved by using the tool “Select by Location” available under ![](/fig/mActionSelectbyLocation.png) in the project toolbar or (alternative: `Vector` → `Research Tools` → `Select by Location`).
 
-1.	In the tool interface, choose the vector layer you want to select features from using "Select features from" and the layer you want to base the selection on using "By comparing to the features from".
+1.	In the tool interface, choose the vector layer you want to select features from using `Select features from` and the layer you want to base the selection on using `By comparing to the features from`.
 2.	Choose the geometric operator that will be used to select features (see bottom paragraph).
 3.	In the bottom prompt, choose how you want to proceed with the newly selected features. The options include:
     1.	Creating a new selection.

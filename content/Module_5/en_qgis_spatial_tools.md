@@ -259,7 +259,7 @@ In the aftermath of flooding events, data on the affected population and the ext
     - Select  __flood extent layer__ as the comparison layer.
     - Specify the fields to be summarized as __Area_km2__ and __Pop__.
     - Choose __sum__ as the type of summaries to be calculated.
-    - Click Run to start the process.
+    - Click `Run` to start the process.
 3. Once completed, you will have access to information on the __total affected population__ and __flooded areas__ for the entire state of Unity.
 
 

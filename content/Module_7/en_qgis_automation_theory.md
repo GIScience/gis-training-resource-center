@@ -138,7 +138,7 @@ To make it easier to understand, you can add comment boxes to your processing st
 
 - <kbd>Double-Click</kbd> on an algorithm to open the algorithm's parameter.
 - At the top of the algorithm window, navigate to the `Comments`-tab. Here you can enter a comment describing what the processing step is doing and what should be considered. You can also specify a colour for the comment box.
-- Click Ok. A new box connected to the algorithm will appear in your model canvas. 
+- Click `OK`. A new box connected to the algorithm will appear in your model canvas. 
 
 :::
 

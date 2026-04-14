@@ -272,7 +272,7 @@ Découper la couche raster de population pour l'étendre au tampon Cyclon
       ```
       exposed_population_sum
       ```
-   - Click **OK** to add the step to the model.
+   - Click `OK` to add the step to the model.
 :::{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px

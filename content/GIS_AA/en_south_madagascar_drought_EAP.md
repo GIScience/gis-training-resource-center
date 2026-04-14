@@ -126,13 +126,13 @@ __Output:__
 
 ### Preliminary Map Results <a id="preliminary-map-results"></a>
 
-:::{figure} /fig/AA/mdg_drought_EAP/260226_Rainfall_30_adm2_recurrence_count.png
+```{figure} /fig/AA/mdg_drought_EAP/260226_Rainfall_30_adm2_recurrence_count.png
 ---
 name: 260226_Rainfall_30_adm2_recurrence_count
 width: 500 px
 ---
 Monthly rainfall deficits (below 30%) mean per district in Madagascar 2000 - 2025.
-:::
+```
 
 
 :::{dropdown} GEE Script
@@ -591,13 +591,13 @@ __Output:__ admin2 layer with count of ipc phase 3+
 
 __Problem:__ Publication cycle is irregular on FEWSNET. CS was only published twice per year in the last few years. Does it make more sense to calculate IPC phase 3+ rate over the last publications?
 
-:::{figure} /fig/AA/mdg_drought_EAP/260226_IPC_Phase_3+Recurrence.png
+```{figure} /fig/AA/mdg_drought_EAP/260226_IPC_Phase_3+Recurrence.png
 ---
 name: 260226_IPC_Phase_3+Recurrence
 width: 500 px
 ---
 Recurrence of IPC Acute Food Insecurity Phase 3 or higher in Madagascar 2016 - 2025.
-
+:::
 
 ## Part 3: A simple composite drought vulnerability map combining the above <a id="part-3-a-simple-composite-drought-vulnerability-map-combining-the-above"></a>
 

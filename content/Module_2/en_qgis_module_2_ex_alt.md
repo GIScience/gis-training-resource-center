@@ -173,7 +173,7 @@ You can also move the map by clicking on the map canvas and holding <kbd>Space</
 7. Interact with the map and explore the data sets. Use the zoom tool and move the map. Where can you find a lot of earthquakes and where are most of the power plants located?
 
 ::::{margin}
-:::`{Tip}
+:::{Tip}
 If you see `*` before the name of your project on the top left corner of QGIS this means there are unsaved changes in your project. Save your progress!
 :::
 ::::
