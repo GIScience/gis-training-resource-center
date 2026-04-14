@@ -150,7 +150,7 @@ You have been deployed as an information manager to the flood-affected regions o
 ::::
  
 1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
-2. Once the project is created [save the project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save) in the "project" folder of the exercise “Modul3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project "MDG_Sava_flood_2024".
+2. Once the project is created [save the project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save) in the "project" folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project "MDG_Sava_flood_2024".
 3. First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 
 :::{Tip}

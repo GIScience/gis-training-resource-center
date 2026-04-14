@@ -223,7 +223,7 @@ Try digitising the RCRC branches in your country by following the steps below.
 :::
 
 1. Create a new point dataset.
-2. Add a [basemap](/content/Modul_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example).
+2. Add a [basemap](/content/Module_2/en_qgis_basemap.md) (OSM or Bing Aerial, for example).
 3. Search the RCRC branches in your country on google maps.
 4. Once you have located the branches, right-click on a branch in google maps and click on the coordinates. The coordinates will be copied to your clipboard.
 5. Paste the coordinates into the search bar on the bottom left of the QGIS window. Select navigate to coordinates. The location will be marked by a red dot.

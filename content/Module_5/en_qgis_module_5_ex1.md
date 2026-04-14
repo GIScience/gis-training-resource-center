@@ -71,9 +71,9 @@ The first part of the exercise will prepare the data in order to serve as indica
 
 ## Data <a id="data"></a>
 
-Download the data folder for "Modul_5_Exercise2_Drought_Monitoring_Trigger.zip" __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Modul_5_Ex1_Part_1") of the exercise and one for the second part ("Modul_5_Ex1_Part_2").
+Download the data folder for "Module_5_Exercise2_Drought_Monitoring_Trigger.zip" __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)__. In the folder, you can find two folders. One for the first part ("Module_5_Ex1_Part_1") of the exercise and one for the second part ("Module_5_Ex1_Part_2").
 
-Open the data folder for the first part of the exercise: "Modul_5_Ex1_Part_1".
+Open the data folder for the first part of the exercise: "Module_5_Ex1_Part_1".
 
 Save the folder on your computer and unzip the file. The zip folder includes:
 - `som_admbnda_adm2_ocha_20230308.shp`: [Somalia district boundaries (Admin level 2)](https://data.humdata.org/dataset/cod-ab-som)
@@ -106,7 +106,7 @@ Counting healthsites per district.
 4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
 
 
-:::{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_zonal_statistics.PNG
 ---
 width: 100%
 name: czonal_statistics
@@ -132,7 +132,7 @@ Throughout the indicator processing process you will have several interim result
 
 * When you are down click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
-:::{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_field_calc.PNG
 ---
 width: 80%
 name: Field Calculator
@@ -154,7 +154,7 @@ name: land_degradation
 Land Degradation.
 :::
 
-You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in "Modul_5_Ex1_Part_1\land_degradation_somalia".
+You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in "Module_5_Ex1_Part_1\land_degradation_somalia".
 
 Explore the data. We have a column "LandD_CLas" which indicators the severity of land degradation from 0 to 3. We now want to join each respective land degradation class to its correct district by calculating the largest overlapping area.
 
@@ -166,7 +166,7 @@ Explore the data. We have a column "LandD_CLas" which indicators the severity of
 
 See the Wiki entry [Spatial Joins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html) for further information.
 
-:::{figure} /fig/en_qgis_modul_5_ex1_join.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_join.png
 ---
 width: 100%
 name: Join attributes by location
@@ -191,7 +191,7 @@ Explore the data. In which resolution is the data available? Do you have ideas a
 * As `join type` set `Take attributes of the first matching feature only (one-to-one)`.
 * Save the layer to file.
 
-:::{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_joinbyvalue.png
 ---
 width: 100%
 name: Join attributes by field value
@@ -227,8 +227,8 @@ You can edit the names in 6 cases in the Attribute Table of the CSV file by togg
 
 In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.
 
-You can find all the data for the second part of the exercise in the "Modul_5_Ex1_Part_2".
-Download the data folder for the second part of the exercise: "Modul_5_Ex1_Part_2". We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:
+You can find all the data for the second part of the exercise in the "Module_5_Ex1_Part_2".
+Download the data folder for the second part of the exercise: "Module_5_Ex1_Part_2". We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:
 
 :::{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
 ---
@@ -255,7 +255,7 @@ $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```
 * When you are done click ![](/fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by clicking on ![](/fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
 
-:::{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_Part2_normalization.PNG
 ---
 width: 80%
 name: Join attributes by field value
@@ -316,7 +316,7 @@ We have used so far the following weighting scale:
 ```
 
 
-:::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.png 
 ---
 width: 80%
 name: Add new field to weight indicators
@@ -326,7 +326,7 @@ Adding a new field to weight indicators.
 
 * For each indicator we now have the normalised and weighted version:
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_part2_weighted_attribute.png
 ---
 width: 100%
 name: Attribute Table with "_norm" and "_weighted" indicators
@@ -352,7 +352,7 @@ In order to calculate the risk we have to bring our 3 dimension exposure, vulner
 * Right click om one of the layer and select `Properties` → Go the `Joins` tab.
 * Click on the `+` button, add a new join and select the layer you want to join. Define "admin2Name" as `Join Field`:
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_part2_join_risk.png
 ---
 width: 90%
 name: Join Layers 
@@ -363,7 +363,7 @@ Joining Layers by Join Field.
 * Right click on the layer → `Export` → `Save feature as` and save the layer as "risk" layer into your temp folder.
 * We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](/fig/mActionToggleEditing.png) → `Delete field` ![](/fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_part2_risklayer_attributetable.png
 ---
 width: 70%
 name: Risk Layer Attribute Table normalised Scores
@@ -389,7 +389,7 @@ sqrt("Susceptibility" * "exposure_norm")
 
 ```
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_part2_risk.png
 ---
 width: 80%
 name: Calculate risk 
@@ -419,7 +419,7 @@ Print Layout:
 * If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
 * Remove all items in the legend be clicking on the item and then on the red minus icon below.
  
-:::{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
+:::{figure} /fig/en_qgis_module_5_ex1_possible_result.png
 ---
 width: 90%
 name: Possible Map Result
@@ -435,4 +435,4 @@ HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this p
 You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html).
 
 
-In order to try out the plugin and see the result, use the provided input data in your folder: "Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"
+In order to try out the plugin and see the result, use the provided input data in your folder: "Module_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"

@@ -240,7 +240,7 @@ A map showing the population of Nigerian states.
 Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, or in situations when you want to communicate two variables on a single map. For example, it is easy to combine choropleth maps with graduated symbols.  
 Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step: 
 - Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of 
-polygons (see [Module 5](/content/Modul_5/en_qgis_non_spatial_tools.md)).   
+polygons (see [Module 5](/content/Module_5/en_qgis_non_spatial_tools.md)).   
 We will be using the same layer as for the choropleth map (see {numref}`en_map_design_example_variable_ranges`): 
 `NGA_Adm1_Pop`.
 

@@ -215,7 +215,7 @@ Running the QuickOSM plugin.
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](/fig/plus_quickosm.png). Be careful choosing the right logical operator 
 `AND` or `OR`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
-on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_data_sources_ex2.html#task-quickosm)
+on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::
 

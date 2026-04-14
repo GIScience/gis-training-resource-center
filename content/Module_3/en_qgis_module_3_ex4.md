@@ -108,7 +108,7 @@ Our goal is to produce an overview of the impact of the 2022 flood in the state 
 
 1. Open QGIS and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 
-2. Once the project is created [save the project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#save) in the “project” folder of the exercise “Modul3_Exercise_1_Flood_Nigeria”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Nigeria_Borno_flood_2022”.
+2. Once the project is created [save the project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#save) in the “project” folder of the exercise “Module_3_Exercise_1_Flood_Nigeria”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Nigeria_Borno_flood_2022”.
 
 3. Load the GeoPackage "kontur_boundaries_NG_20230628.gpkg" in your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](/fig/Three_points.png) and navigate to "kontur_boundaries_NG_20230628.gpkg". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 This dataset contains all administrative division areas (admin 0 to 5) with the respective population of the areas. 
