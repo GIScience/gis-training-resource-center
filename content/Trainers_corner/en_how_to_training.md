@@ -147,13 +147,13 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Non-spatial queries
         Non-spatial joins  
     - Spatial Geoprocessing:  
-        [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex1.html)  
-        [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools_ex2.html)  
+        [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools_ex1.html)  
+        [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools_ex2.html)  
     Non-spatial geodataprocessing:  
-        [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools_ex1.html)  
-        [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_non_spatial_tools_ex2.html)  
+        [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools_ex1.html)  
+        [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools_ex2.html)  
     Big exercise:  
-        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_modul_5_ex2.html)  
+        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_ex2.html)  
     - 
         [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html)  
         [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html)  

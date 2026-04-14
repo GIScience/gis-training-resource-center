@@ -36,7 +36,7 @@ Leave all settings at default except:
 | Comma separated ranges       | 5, 10                        |
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_1.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task2_1.mp4"></video>
 :::
 
 ## STEP 2: Healthcare catchment - QGIS Service area <a id="step-2-healthcare-catchment-qgis-service-area"></a>
@@ -88,7 +88,7 @@ Leave all settings at default except:
 | Geometry type                | Convex Hull                  |
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_3.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task2_3.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -115,7 +115,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task2_4.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task2_4.mp4"></video>
 :::
 
 `````{admonition} Question

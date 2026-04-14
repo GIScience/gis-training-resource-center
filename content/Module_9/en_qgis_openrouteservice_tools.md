@@ -96,7 +96,7 @@ How to create a token (API key)    Source: HeiGIT
 -  (Potentially: Click `Add` and enter „openrouteservice“ into the pop up window „Enter a name for the provider“)
 
 
-```{figure} /fig/modul9_add_api.png
+```{figure} /fig/module_9_add_api.png
 ---
 width: 350px
 name: plugin config

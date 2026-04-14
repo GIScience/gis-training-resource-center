@@ -171,7 +171,7 @@ __Tool:__ No special tools or programs are needed.
 
 * - Instruction
   - Folder Structure
-* - 1. Open the Folder “Modul_5_Exercise2_Drought_Monitoring_Trigger"
+* - 1. Open the Folder “Module_5_Exercise2_Drought_Monitoring_Trigger"
     2. Open the subfolder "Monitoring"
     3. Copy the Template folder "TEMPLATE_Year_Month" and change the name to the current year and month `2024_01`.
     
@@ -227,7 +227,7 @@ align: center
 5. When you have downloaded the data, right-click on the file and click on `Extract all` → `Extract`.
 6. Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1. 
   * The filename is composed of "SO" for Somalia, year and month of the report month e.g `SO_202308_ML1.shp`.
-  Example path: `.../Modul_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`.
+  Example path: `.../Module_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`.
 :::{Warning}
 Make sure to __not__ use the ML1_IDP data which comes in the .zip folder as well!
 :::
@@ -600,7 +600,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 
 1. If you have not done this before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__.
 2. Open a new print layout by clicking on `Project` → `New Print Layout` → enter the name of your current Project e.g "2024_01".
-3. Go the the `Modul_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout.
+3. Go the the `Module_5_Exercise2_Drought_Monitoring_Trigger` folder and drag and drop the file `Trigger_activation_Intervention_map_ex.qpt` in the print layout.
 4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
 5. If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
     * Remove all items in the legend be clicking on the item and then on the red minus icon below.

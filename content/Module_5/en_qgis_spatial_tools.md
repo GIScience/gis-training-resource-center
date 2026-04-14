@@ -174,7 +174,7 @@ The "Join Attributes by Location"-tool in QGIS 3.36.
 
 1. Download the necessary datasets from HDX 
     - [nigeria-healthsites-shp](https://data.humdata.org/dataset/nigeria-healthsites)
-    - [nga_adm_osgof_20190417.zip](https://giscience.github.io/gis-training-resource-center/content/Modul_5/en_qgis_spatial_tools.html)
+    - [nga_adm_osgof_20190417.zip](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html)
 2. Unzip the files, create a new QGIS-project, and load the files into the QGIS-project.
 3. Search for the tool __"Join Attributes by Location"__ in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open 
 (see {numref}`join_by_location_ex1`). 

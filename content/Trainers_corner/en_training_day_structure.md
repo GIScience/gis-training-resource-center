@@ -30,7 +30,7 @@ Before delving into GIS, there are a few things to address to ensure that everyo
 7. __IFRC GIS Training Platform and other training materials:__ Provide an overview of the training materials, particularly the IFRC GIS Training Platform. Familiarize participants with the platform’s structure and main features, including modules, the Wiki, and exercises. Additionally, briefly introduce any supplementary materials being used. This step ensures that everyone is familiar with the learning environment and reduces the risk of confusion.
 8. __Where to find help:__ Inform participants about the available resources in case they encounter difficulties and cannot immediately seek assistance from a trainer. These resources may include the Wiki, articles on common errors and issues in QGIS, or online search engines.
 9. __Communication:__ Introduce the communication channels, such as email or WhatsApp, through which participants can reach out with questions or other issues between sessions.
-10. __Technical check:__ It is recommended that participants install QGIS before the training. All information about this can be found [Module 1 - QGIS Installation](/Modul_1/en_qgis_installation.md). You can send the article to the participants beforehand. However, you should make sure that QGIS is running for all participants. Plan time to fix any issues.
+10. __Technical check:__ It is recommended that participants install QGIS before the training. All information about this can be found [Module 1 - QGIS Installation](/Module_1/en_qgis_installation.md). You can send the article to the participants beforehand. However, you should make sure that QGIS is running for all participants. Plan time to fix any issues.
 
 This section should only take between 15 and 30 minutes. If it takes longer, consider having another small break of 10 minutes before moving on.
 
@@ -38,7 +38,7 @@ This section should only take between 15 and 30 minutes. If it takes longer, con
 
 In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](/content/Trainers_corner/en_how_to_teach_GIS.md)__.
 
-Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Module 1 - Introduction GIS](https://giscience.github.io/gis-training-resource-center/content/Modul_1/en_qgis_theorie.html) on the training platform covers this topic.
+Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Module 1 - Introduction GIS](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theorie.html) on the training platform covers this topic.
 
 There’s no prescribed method for delivering this content. You can utilize PowerPoint presentations or any other suitable means. By the end of the session, the participants should grasp the basic concept of GIS and be able to identify the main features of the interface along with their functions. Exploring the interface can be accomplished hands-on, while the GIS concept part is more suitable for presentation.
 
