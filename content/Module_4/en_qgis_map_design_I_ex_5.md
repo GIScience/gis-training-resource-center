@@ -13,7 +13,7 @@
 __Aim of the exercise:__
 ^^^
 
-This exercise aims to create an overview map of the flood extent and potentially damaged critical infrastructure. We will use the data we processed in [module 3 exercise 3: data queries ]
+This exercise aims to create an overview map of the flood extent and potentially damaged critical infrastructure. We will use the data we processed in [module 3 exercise 3: data queries](/content/Module_3/en_qgis_m2_ex_3_data_queries.md).
 
 :::
 
