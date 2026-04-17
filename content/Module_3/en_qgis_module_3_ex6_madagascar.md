@@ -226,7 +226,7 @@ Ok, now we have a good overview of the location of health facilities. We need mu
 
 2. Load the dataset __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__ into your QGIS.
    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
-<!--3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
+3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
     * Right click on the data layer, click on  “Properties”.
     * The “Layer Properties” Window of the data layer will open. Click on “Information”.
     * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
@@ -239,7 +239,7 @@ Ok, now we have a good overview of the location of health facilities. We need mu
     * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
     * Click `Run`
     * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
-    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the   slider.-->
+    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
 
 We have observed that certain health facilities are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.

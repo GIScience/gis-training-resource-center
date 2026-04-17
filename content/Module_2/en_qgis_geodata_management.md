@@ -128,5 +128,4 @@ Take a moment to test what you've learned in this chapter by answering the quest
 - If any files were loaded using absolute paths (e.g., from a location outside the project folder), those paths will likely break after moving to a new machine.
 :::
 
-
 ::::
