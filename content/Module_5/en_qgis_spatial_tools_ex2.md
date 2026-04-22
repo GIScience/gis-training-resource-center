@@ -115,13 +115,13 @@ The projected coordinate system for Uganda is `EPSG:32636 WGS 84 / UTM zone 36N`
 
 3. We can see that the polygons are different in shape and amount! It is likely that the risk data is using an older version of the admin boundaries. This is an issue we need to resolve in order to work properly with the data.
 
-```{figure} /fig/en_ex3_1_attribute_table_size.png
+:::{figure} /fig/en_ex3_1_attribute_table_size.png
 ---
 width: 100%
 name: attribute_table_size
 ---
 Screenshot of different sizes of the attribute tables
-```
+:::
 
 4. We will use the following solution for this problem:
     - We can take the __closest district centroid__ (from the dataset with the most to the dataset with the fewest records). This is the solution we will use for this exercise as the difference between the two datasets is not drastically.
@@ -130,42 +130,42 @@ Screenshot of different sizes of the attribute tables
 
 6. Edit the points so they are inside the correct polygons. This is necessary because the __centroid of a polygon may fall outside of it__ when it has an __unusual shape__. To move a centroid that is outside its boundaries into the district boundaries, first activate the `Toggle editing mode` button, which can be found by clicking on ![](/fig/mActionToggleEditing.png) while activating the centroid layer. Then, select the ![](/fig/mActionMoveFeaturePoint.png) `Move Feature` tool. Search for the centroid that is outside its boundaries and move it to the appropriate district boundary. Save the changes and end the editing mode.
 
-```{figure} /fig/en_centroids_screenshot_red.png
+:::{figure} /fig/en_centroids_screenshot_red.png
 ---
 width: 80%
 name: en_qgis_centroids
 ---
 The black points represent the centroids of the features of the input layer. The red circle indicates the centroid that requires editing.
-```
+:::
 
 7. There is an issue that is produced when joining the datasets, but it can be solved by using the `Fix geometries` tool on the Covid-19 risk dataset.
 
-```{figure} /fig/en_ex3_1_fix_geometries.PNG
+:::{figure} /fig/en_ex3_1_fix_geometries.PNG
 ---
 width: 60%
 name: fix_geometries
 ---
 Screenshot on how to fix the geometries.
-```
+:::
 
 8. Use the tool `Join attributes by location` to join the Covid-19 risk polygons onto the centroids. As a spatial relationship select `within` and select the columns `%permrooft`, `%permwallt` and `Povertyinc` as the fields that should be added. See the Wiki entry on [spatial joins](/content/Wiki/en_qgis_spatial_joins_wiki.md) for further information.
 
-```{figure} /fig/en_ex3_1_join_attribute_location_1.PNG
+:::{figure} /fig/en_ex3_1_join_attribute_location_1.PNG
 ---
 width: 60%
 name: join_attribute_by_location
 ---
 Screenshot of Join attribute by location operation.
-```
+:::
 
 9. Use the tool `Join attributes by location` again to join the previously enriched points onto the Uganda district boundaries. Now select "contain" as the spatial relationship and again select the same three columns for joining.
 
-```{figure} /fig/en_ex3_1_join_attribute_location_2.PNG
+:::{figure} /fig/en_ex3_1_join_attribute_location_2.PNG
 ---
 width: 60%
 name: join_attribute_by_location_2
 ---
 Screenshot of the second Join attribute by location operation.
-```
+:::
 
 The next steps of the vulnerability index calculation will be completed in the second part of this exercise, the Non-spatial Geodataprocessing section. Please refer to the [provided link](/content/Module_6/en_qgis_non_spatial_tools_ex2.md) for this exercise.

@@ -139,13 +139,13 @@ Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster
     - SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
     - Enregistrez le résultat dans le dossier temp sous le nom: `Harald_Track_Reprojected`
 
-```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
+:::{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
 ---
 width: 600px
 align: center
 ---
 Reprojeter la trajectoire du cyclone
-```
+:::
 
 ```{Attention}
 Les distances de tampon doivent être calculées en mètres. De nombreux jeux de données (comme les trajectoires de cyclone en GeoJSON) utilisent des systèmes de coordonnées géographiques (CRS/SCR) comme EPSG:4326, qui mesurent en degrés — et non en mètres. Pour calculer correctement un tampon de 200 km, il faut d’abord reprojeter la trajectoire dans un CRS projeté utilisant les mètres.
@@ -187,13 +187,13 @@ Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la z
     - Entregistrez le résultat dans le dossier `temp` sous le nom: `Harald_Buffer_200km_4326` 
 
 
-```{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
+:::{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
 ---
 width: 600px
 align: center
 ---
 Reprojetter la tamponner trajectoire du cyclone
-```
+:::
    
 7. **Importer les frontières administratives**:
     - Fichier: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
@@ -208,23 +208,24 @@ Reprojetter la tamponner trajectoire du cyclone
     - Découpé (masque): Enregistrez le résultat dans le dossier `/data/temp` sous le nom: `Harald_Pop_Clip`. 
 
 
-```{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
+:::{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
 ---
 Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone).
-```
-:::{dropdown} Résultat intermédiaire: Raster population découpé
+:::
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
+::::{dropdown} Résultat intermédiaire: Raster population découpé
+
+:::{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
 ---
 Résultat intermédiaire du découpage de la couche raster de population à l'étendue de la trajectoire tamponnée du cyclone.
-```
 :::
+::::
 
 10. **Calculer la population exposée totale**:
     - Dans la __boîte à outils de traitements__, cherchez `Statistiques de zone` (eng.: `Zonal Statistics`)
@@ -235,13 +236,13 @@ Résultat intermédiaire du découpage de la couche raster de population à l'é
     - Enregistrez la couche vecteur mise à jour dans le dossier `/data/results` sous le nom `Harald_Exposed_Population`. 
     - Le résultat sera une nouvelle couche avec les colonnes de la couche `mdg_admbnda_adm2_BNGRC_OCHA_20181031` et une nouvelle colonne tout à la droite affichant la population totale se trouvant dans la zone tampon du cyclone pour chaque district. 
 
-```{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
+:::{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
 ---
 width: 600px
 align: center
 ---
 Calcul de la population exposée aux cyclones par district sur la base du raster de population.
-```
+:::
    
 11. **Visualiser la population affectée en classifiant les résultats**: 
 Maintenant qu'Aina a estimé la population exposée dans chaque district, elle souhaite mettre en évidence clairement les différences entre les régions sur la carte.  
@@ -257,25 +258,25 @@ Pour cela, nous allons appliquer une __[classification graduée]()__ à la couch
 - En suite, cliquez sur `Appliquer` puis `OK` pour afficher la carte classifiée.
 
 
-```{tip}
+:::{tip}
 Vous pouvez ajuster les bornes des classes ou les étiquettes en double-cliquant sur chaque entrée de classe.
-```
+:::
 
-```{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
+:::{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
 ---
 width: 600px
 align: center
 ---
 Configuration de la visualisation de la population exposée en cinq classes. 
-```
+:::
 
 Vos résultats devraient ressembler à ceci:
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
 ---
 width: 600px
 name: mdg_visualiser_pop_exposee
 align: center
 ---
 Visualisation de la population exposée en cinq classes.
-```
+:::

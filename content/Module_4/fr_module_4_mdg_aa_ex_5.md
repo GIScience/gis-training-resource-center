@@ -237,10 +237,10 @@ La carte montre désormais clairement la population exposée dans les districts 
 
 Sur le côté droit de la carte, un tableau présente tous les districts exposés, avec les données sur la population totale et la population exposée. Les districts (Niveau 2) sont regroupés sous leurs régions correspondantes (Niveau 1).
 
-```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
+:::{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
 width: 1000px
 name: 
 align: center
 ---
-```
+:::

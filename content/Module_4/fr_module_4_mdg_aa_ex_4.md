@@ -178,37 +178,37 @@ comparez les noms des champs.*
 ---
 
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Résultat intermédiaire: Population exposée
+::::{tab-item} Résultat intermédiaire: Population exposée
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
-```
 :::
-:::{tab-item} Résultat intermédiaire: Établissements de santé exposés
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+::::
+::::{tab-item} Résultat intermédiaire: Établissements de santé exposés
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
-```
 :::
-:::{tab-item} Résultat intermédiaire: Établissements scolaires exposés
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+::::
+::::{tab-item} Résultat intermédiaire: Établissements scolaires exposés
+:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
-```
 :::
 ::::
+:::::
 
 ### 3. **Styliser manuellement les couches de pourcentage** <a id="3-styliser-manuellement-les-couches-de-pourcentage"></a>
 

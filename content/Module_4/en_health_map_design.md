@@ -14,13 +14,13 @@ A health facility capacity map is a practical and valuable tool for health prepa
 Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes. 
 
 
-```{figure} /fig/HS_capacity_map_examples.drawio.svg
+:::{figure} /fig/HS_capacity_map_examples.drawio.svg
 ---
 name: Building a Multi-Variable Hospital Capacity Map Step by Step
 width: 800
 ---
 Building a Multi-Variable Hospital Capacity Map Step by Step.
-```
+:::
 
 In this tutorial, you will learn how to create a multi-variable point map of hospitals in Malawi using QGIS. You will work with a modified version of the Malawi Master Health Facility Registry (with fictitious figures and hospital bed counts added for training purposes) and apply a combination of proportional symbol size, manual classification, and data-defined color overrides to effectively communicate both capacity and operational status at a glance.
 
@@ -81,12 +81,12 @@ First, we need to load the Malawi - Health Facility Registry dataset into QGIS.
 5. Click **Add**.  
    The layer will now appear in your **Layers** panel and the points will display on the map canvas.
 
-```{figure} /fig/en_point_visualisation_malawi_HS_csv_import.png
+:::{figure} /fig/en_point_visualisation_malawi_HS_csv_import.png
 ---
 name: import_health_facilities_csv
 width: 700px
 ---
-```
+:::
 ::::
 
 
@@ -183,7 +183,7 @@ The resulting map displays hospitals as circles of different sizes, each size re
 ::::{grid} 2
 
 :::{grid-item} **Proportional circle map showing the number of beds**
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_result.png
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_result.png
 ---
 name: Proportional circles: beds 
 width: 400
@@ -195,7 +195,7 @@ Proportional circles: beds
 :::{grid-item} **Classes of proportional circle map**
 
 Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_result_legend.png
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_result_legend.png
 ---
 name: Proportional circles: beds classes
 width: 100
@@ -240,40 +240,40 @@ END
 Or write the code yourself using the help of the functionality of the expression builder:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video>
 
-```{figure} /fig/en_data_defined_overried_calculator_Malwai_Exampel.png
+:::{figure} /fig/en_data_defined_overried_calculator_Malwai_Exampel.png
 ---
 name: Expression in data-defined override Expression Builder
 width: 700px
 ---
 Expression in data-defined override Expression Builder
-```
+:::
 ::::
 
 
-::::{grid} 2
+:::::{grid} 2
 
-:::{grid-item} **Proportional circle map showing the number of beds AND operational status**
-```{figure} /fig/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png
+::::{grid-item} **Proportional circle map showing the number of beds AND operational status**
+:::{figure} /fig/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png
 ---
 name: Proportional circles: beds + operational status
 width: 400
 ---
 Proportional circles: beds + operational status
-```
 :::
+::::
 
-:::{grid-item} **Classes of proportional circle map**
+::::{grid-item} **Classes of proportional circle map**
 This new visualisation shows the size of the circle, the number of beds, the colour (Green: Operational; Red: Non-Operation), and the operational status of the hospitals.
 
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png
 ---
 name: Legend proportional circles: beds + operational status
 width: 400
 ---
 Legend proportional circles: beds + operational status
-```
 :::
 ::::
+:::::
 
 ### Making the Legend Match Your Map <a id="making-the-legend-match-your-map"></a>
 
@@ -300,13 +300,13 @@ Another option works only in the `Print Layout`. In the Legend, just add your ho
 
 
 
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png
 ---
 name: Exampel Map Proportional circles: Hospital Beds + Operational Status 
 width: 800
 ---
 Exampel Map Proportional circles: Hospital Beds + Operational Status 
-```
+:::
 
 ### Adding a Third Variable Using Stroke Style (Facility Type) <a id="adding-a-third-variable-using-stroke-style-facility-type"></a>
 
@@ -355,22 +355,22 @@ QGIS applies the rule automatically to each feature.
 
 By adding stroke styles to your symbols, the map now carries a third layer of information while keeping the overall design compact and readable. This works best when you limit stroke styles to just a few meaningful categories; using too many patterns will quickly make the map visually noisy. Make sure your legend clearly explains what each pattern represents, and avoid combining stroke style with additional outline colours unless it is absolutely necessary—too many variations can overwhelm the reader. With these principles in mind, your updated map should now communicate three attributes at once in a clear and balanced way.
 
-::::{grid} 2
+:::::{grid} 2
 
-:::{grid-item} 
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png
+::::{grid-item} 
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png
 ---
 name: Proportional circles: beds + operational status + Owner status
 width: 400
 ---
 Proportional circles: beds + operational status + Owner status
-```
 :::
+::::
 
-:::{grid-item} 
+::::{grid-item} 
 
 
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png
 ---
 name: Legend 
 Proportional circles: beds + operational status + Owner status
@@ -378,9 +378,10 @@ width: 200
 ---
 Legend 
 Proportional circles: beds + operational status + Owner status
-```
 :::
 ::::
+:::::
+
 With three visual variables now shown in a single symbol, it’s important that the legend reflects all of them clearly. QGIS does not automatically update legend entries when data-defined overrides or stroke styles are used, so a few extra steps are needed to ensure the legend matches what appears on your map. In the next section, you will learn simple ways to adjust the legend so that all size classes, colours, and stroke styles are represented accurately.
 
 
@@ -392,10 +393,10 @@ In the Print layout, add the helper layer to the legend. This ensures the legend
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_Malwai_Exampel_Legend_workaround_helper_layer_strok_style.mp4"></video>
 ::::
 
-```{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png
+:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png
 ---
 name: Exampel Map Proportional circles: Hospital Beds + Operational Status 
 width: 800
 ---
-Exampel Map Proportional circles: Hospital Beds + Operational Status 
-```
+Example Map Proportional circles: Hospital Beds + Operational Status 
+:::

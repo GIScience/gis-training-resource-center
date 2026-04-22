@@ -178,22 +178,22 @@ We have received a .csv-file containing measle case report. In order to identify
     - Set the __Aggregate Function__ to `sum` for "cases".
     - Click `Run`. A new layer will be added to the layers panel on the left.
 
-    ```{figure} /fig/en_qgis_3.40_public_health_aggrg_measle_cases_adm2.png
+    :::{figure} /fig/en_qgis_3.40_public_health_aggrg_measle_cases_adm2.png
     ---
     name: en_qgis_3.40_public_health_aggrg_measle_cases_adm2
     width: 600 px
     ---
     Set the parameters for the tool as in the picture. Make sure that the field adm2_name is set to `concatenate_unique` and the cases field to `sum`.
-
+    :::
 Let's take a look at the resulting data table. The resulting table should look like this:
 
-```{figure} /fig/en_3.40_pub_health_aggregated_measles_data_attr_table.png
+:::{figure} /fig/en_3.40_pub_health_aggregated_measles_data_attr_table.png
 ---
 name: en_3.40_pub_health_aggregated_measles_data_attr_table
 width: 600 px
 ---
 The aggregated data table.
-```
+:::
 
 10. Let's make the new layer permanent by <kbd>right-clicking</kbd> on it → `Make permament`. Name the file "Aggregated_measles_cases_adm2".
 
