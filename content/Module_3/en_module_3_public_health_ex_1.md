@@ -1,20 +1,20 @@
 # Exercise 1: Creating an overview map of the health system and vaccination coverage <a id="exercise-1-creating-an-overview-map-of-the-health-system-and-vaccination-coverage"></a>
 
-% MISSING:  - MAKE ENRICHED DATASET PERMANENT
-%           - BASEMAP
-%           - SMALL SELECTION EXPORT/QUERIES?
-%           - PROJECTIONS
-%           - ADD SMALLER EASIER EXERCISES EARLIER (INCLUDING IMPORTING DATA SO HERE WE CAN INTRODUCE THE PROJECT  HOME)
-%           - ADD MORE PICTURES
-%           - REMOVE STEPS TO CLEAN HEALTHSITES AS HEALTHSITES WITHOUT INFORMATION COULD STILL BE GOOD; E.G., TO REACH OUT
-%           - ADD STEP FOR COUNT POINTS IN POLYGONS FOR HEALTHSITES
-%           - ADD STEP FOR JOIN BY LOCATION
-%           - MAKE THEM PLAN MEASLES VACCINATION CAMPAIGN
-%               - WHERE TO PUT VACCINATION CENTERS WITH HOW MUCH POP TO SERVE
-%               - WHERE TO DEPLOY MOBILE VACCINATION CENTERS -> DIGITISATION
-%           - IM COORDINATION INSRTUCTED TO GET DATA ON HEALTHSITE CAPACITIES
-%           - MAKE THEM DOWNLOAD HDX
-%           - ADD SMALL STEPS UNDER DROPDOWN, AS NOTES, ETC. 
+%% MISSING:  - MAKE ENRICHED DATASET PERMANENT
+%%           - BASEMAP
+%%           - SMALL SELECTION EXPORT/QUERIES?
+%%           - PROJECTIONS
+%%           - ADD SMALLER EASIER EXERCISES EARLIER (INCLUDING IMPORTING DATA SO HERE WE CAN INTRODUCE THE PROJECT  HOME)
+%%           - ADD MORE PICTURES
+%%           - REMOVE STEPS TO CLEAN HEALTHSITES AS HEALTHSITES WITHOUT INFORMATION COULD STILL BE GOOD; E.G., TO REACH OUT
+%%           - ADD STEP FOR COUNT POINTS IN POLYGONS FOR HEALTHSITES
+%%           - ADD STEP FOR JOIN BY LOCATION
+%%           - MAKE THEM PLAN MEASLES VACCINATION CAMPAIGN
+%%               - WHERE TO PUT VACCINATION CENTERS WITH HOW MUCH POP TO SERVE
+%%               - WHERE TO DEPLOY MOBILE VACCINATION CENTERS -> DIGITISATION
+%%           - IM COORDINATION INSRTUCTED TO GET DATA ON HEALTHSITE CAPACITIES
+%%           - MAKE THEM DOWNLOAD HDX
+%%           - ADD SMALL STEPS UNDER DROPDOWN, AS NOTES, ETC. 
 
 ## Background <a id="background"></a>
 
@@ -108,7 +108,7 @@ The project CRS determines which coordinate reference system is being used to di
 
 Setting the Project CRS to your desired CRS can help you choosing the correct CRS quicker when running algorithms. 
 :::
-% SET UP PROJECT HOME IN NEXT EXERCISE
+%% SET UP PROJECT HOME IN NEXT EXERCISE
 
 
 ### Task 2: Downloading the relevant data <a id="task-2-downloading-the-relevant-data"></a>
@@ -140,7 +140,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 4. Unzip the folders and make sure to save them in the standard folder structure into the `data/input/`-folder. 
 
 
-% ADD IMAGE AND EXPAND THIS SECTION: DONE
+%% ADD IMAGE AND EXPAND THIS SECTION: DONE
 
 
 ### Task 3: Importing the datasets <a id="task-3-importing-the-datasets"></a>
@@ -161,9 +161,9 @@ A shapefile consists of several, interrelated files. The geometric information i
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 
-% THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
+%% THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
 
-% THE FOLLOWING SECTION IS NOT NEEDED THEN?
+%% THE FOLLOWING SECTION IS NOT NEEDED THEN?
 
 <!--
 4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import):
@@ -226,7 +226,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](/fig/qgis_pan_map.png
 
 ### Task 5: Joining Vaccination Coverage Data with administrative boundaries <a id="task-5-joining-vaccination-coverage-data-with-administrative-boundaries"></a>
 
-% ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
+%% ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
 In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
@@ -234,7 +234,7 @@ In our `data/input`-folder, we can find a csv file called `vaccination_coverage_
 Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
 :::
 
-% ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
+%% ADD ADM2 PCODE TO DATASET AND HAVE THE ADM2 NAMES IN ENGLISH SO THEY CAN'T JOIN WITH ADM2 NAMES BUT USE PCODES: DONE
 
 1. Import the `vaccination_coverage_adm2` into your QGIS project:
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`
@@ -312,11 +312,11 @@ width: 700 px
 Screenshot of classified vaccination_rate_mcv1 variable
 :::
 
-% ADD CLASSIFICATION STEPS AND RESULT IMAGE: DONE
+%% ADD CLASSIFICATION STEPS AND RESULT IMAGE: DONE
 
 ### Task 7: Enriching the Healthsites dataset <a id="task-7-enriching-the-healthsites-dataset"></a>
 
-% HERE MAYBE HAVE SOME ENTRIES IN THE ADM2 COLUMN USE FRENCH NAMES OR HAVE SOME TYPOS (MAX 2 or 3). BUT SHOW HOW YOU HAVE TO CLEAN DATA TO MAKE THINGS WORK. CHECK THE LOG AND THEN RERUN 
+%% HERE MAYBE HAVE SOME ENTRIES IN THE ADM2 COLUMN USE FRENCH NAMES OR HAVE SOME TYPOS (MAX 2 or 3). BUT SHOW HOW YOU HAVE TO CLEAN DATA TO MAKE THINGS WORK. CHECK THE LOG AND THEN RERUN 
 
 In this step, we want to enrich the layer containing the healthsites with additional data on the capacity of the healthsites. The layer `tcd_healthsite_capacities.csv` contains information about the bed capacity in the pediatric care unit as well as the cold chain capacity. This information is valuable to identify the capacity of the health sector to treat acute measles cases and coordinate a vaccination campaign. 
 
@@ -361,7 +361,7 @@ When performing joins, pay attention to such inconsistencies.
 
 ### Task 8: Cleaning the Healthsite Data <a id="task-8-cleaning-the-healthsite-data"></a>
 
-% This step is not necessary
+%% This step is not necessary
 
 1. Let's take a look at the new layer we just created including the healthsite capacities by opening the attribute table. 
     - <kbd>Right-Click</kdd> on the layer and open the attribute table.
@@ -378,7 +378,7 @@ When performing joins, pay attention to such inconsistencies.
     - Save the cleaned healthsite capacity layer by <kbd>right-clicking</kbd> on it and selecting `Make permament...`. Select "Geopackage" as the output format and save the layer to the `data/interim/`-folder and enter a file name such as `tcd_healthsites_points_capacities`. Click `Save`.
 
 
-% Adjust the cleaning instructions to decide on cold capacity = NULL: WILL BE DONE IN ONE OF THE FOLLOWING EXERCISES
+%% Adjust the cleaning instructions to decide on cold capacity = NULL: WILL BE DONE IN ONE OF THE FOLLOWING EXERCISES
 
 > Our new healthsites point layer now includes only the healthsites for which we received additional data.
 
@@ -402,9 +402,9 @@ When performing joins, pay attention to such inconsistencies.
     - Click `Apply`, then close the properties window. 
     - Analyze how healthsites with a true `cold_chain` value are distributed.
 
-% Also remove the NULL values from the categorisation: DONE
+%% Also remove the NULL values from the categorisation: DONE
 
-% Optionally, add DEM here and style the raster layer. This will be used for a overview map. -> WHAT WAS THE IDEA HERE?
+%% Optionally, add DEM here and style the raster layer. This will be used for a overview map. -> WHAT WAS THE IDEA HERE?
 
 <!---
 ### Task 7: Add Digital elevation model <a id="task-7-add-digital-elevation-model"></a>

@@ -239,7 +239,7 @@ Ok, now we have a good overview of the location of health facilities. We need mu
     * Save the new file in your `temp` folder by clicking on the three dots ![](/fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
     * Click `Run`
     * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
-    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
+    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60% by moving the slider.
 
 We have observed that certain health facilities are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.

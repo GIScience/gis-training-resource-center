@@ -28,7 +28,7 @@ __To classify data in classes…__
 - Downright select the number of classes you want to use.
 - Under `Mode` select the classification method you want to use e.g. Equal count (Quantile).
 - Click on `Classify`.  Now you should see all classes and the distribution of values. To add or delete single classes use the `-` and `+` buttons. 
-- *Optional*: Click on `Histogram` -> `Load Values`. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.
+- *Optional*: Click on `Histogram` → `Load Values`. Now you can see the exact distribution of values over the classes. This is very practical to decide on a classification method. You can also check the mean value and standard deviation.
 :::{figure} /fig/Graduated_histogram.png
 ---
 width: 900px
@@ -37,7 +37,7 @@ align: center
 ---
 :::
 - *Optional*: In the `Symbol` dropdown menu you can select the colours and symbols you want to use.
-- *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` -> `All Color Ramps`.
+- *Optional*: In the `Color ramp` dropdown menu you can specify the range of colours you want to use. To see all color ramps click on the down arrow of the `Color ramp` → `All Color Ramps`.
 - *Optional*: Under `Legend Format` you can adjust how precise the range of the classes will be displayed in the legend. Usually, it is practical to not use too complicated numbers in the legend.
 - *Optional*: You can open the panel `Layer Rendering` on the button of the window. Here you can adjust the opacity/ transparency of the layer.
 - Click `Apply` to put your adjustment into effect.

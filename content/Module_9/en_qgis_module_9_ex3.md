@@ -6,7 +6,7 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # Task 3: Larger scale accessibility analyses <a id="task-3-larger-scale-accessibility-analyses"></a>
 

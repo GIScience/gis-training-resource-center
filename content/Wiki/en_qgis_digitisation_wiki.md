@@ -11,7 +11,7 @@ To digitize data for a new dataset you always have to start with creating the da
 
 ![](/fig/Digitizing_Toolbar.png)
 
-- Digitisation in QGIS is done primarily with the __digitisation toolbar__. To activate the toolbar, navigate to `View` -> `Toolbars` -> `Digitisation Toolbar`.
+- Digitisation in QGIS is done primarily with the __digitisation toolbar__. To activate the toolbar, navigate to `View` → `Toolbars` → `Digitisation Toolbar`.
 
 :::{figure} /fig/en_qgis_3.40_activate_digitisation_toolbar_wiki.png
 ---
@@ -22,7 +22,7 @@ width: 550 px
 
 ## Creating a new layer <a id="creating-a-new-layer"></a>
 
-1. In the top bar, navigate to `Layer` -> `Create Layer` -> `New GeoPackage Layer` or `New Shapefile Layer`.
+1. In the top bar, navigate to `Layer` → `Create Layer` → `New GeoPackage Layer` or `New Shapefile Layer`.
 2. A new window will open. Here you can specify the layer properties.
 3. Under `Database`, click on the three points ![](/fig/Three_points.png) and navigate to the folder where you want to save the new dataset.
 4. *shapefile specific*: Set the file encoding to `UTF-8`.
@@ -110,7 +110,7 @@ If you create a new line layer remember to change the geometry type into lines b
 
 ### Adding Ring to existing polygon layer <a id="adding-ring-to-existing-polygon-layer"></a>
 
-In QGIS, adding rings to polygons is done with the "Advanced Digitisation Toolbar". To activate the toolbar, navigate to `View` -> `Toolbars` -> `Advanced Digitisation Toolbar`.
+In QGIS, adding rings to polygons is done with the "Advanced Digitisation Toolbar". To activate the toolbar, navigate to `View` → `Toolbars` → `Advanced Digitisation Toolbar`.
 
 ![](/fig/Toolbox.png)
 

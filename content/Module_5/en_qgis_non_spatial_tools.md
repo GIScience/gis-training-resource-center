@@ -212,41 +212,41 @@ In this dialog, you can build your expressions to query the data. There are seve
 :::{tab-item} Arithmetic operators
 | operator | functionality          |
 |----------|------------------------|
-| __+__    | addition               |
-| __-__    | subtraction           |
-| __*__    | multiplication         |
-| __/__    | division               |
-| __%__    | remainder of division  |
+| `+`    | addition               |
+| `-`    | subtraction           |
+| `*`    | multiplication         |
+| `/`    | division               |
+| `%`    | remainder of division  |
 :::
 
 :::{tab-item} Comparison operators
 | operator | functionality            |
 |----------|--------------------------|
-| __=__    | equals                   |
-| __!=__   | not equal                |
-| __<__    | less than                |
-| __>__    | greater than             |
-| __<=__   | less than or equal to    |
-| __>=__   | greater than or equal to |
+| `=`    | equals                   |
+| `!=`   | not equal                |
+| `<`    | less than                |
+| `>`    | greater than             |
+| `<=`   | less than or equal to    |
+| `>=`   | greater than or equal to |
 :::
 
 :::{tab-item} Logical operators
 Operators such as AND, OR can be used to combine different queries or criteria
 | operator | functionality          |
 |----------|------------------------|
-| __AND__  | logical AND            |
-| __OR__   | logical OR             |
-| __NOT__  | logical NOT            |
+| `AND`  | logical AND            |
+| `OR`   | logical OR             |
+| `NOT`  | logical NOT            |
 :::
 
 :::{tab-item} Special operators
 | operator      | functionality                                  |
 |---------------|------------------------------------------------|
-| __LIKE__      | pattern matching                               |
-| __IN__        | checks if a value is in a list of values       |
-| __IS NULL__   | checks for null values                         |
-| __BETWEEN__   | checks if a value is within a specified range  |
-| __CASE WHEN__ | conditional expressions                        |
+| `LIKE`      | pattern matching                               |
+| `IN`        | checks if a value is in a list of values       |
+| `IS NULL`   | checks for null values                         |
+| `BETWEEN`   | checks if a value is within a specified range  |
+| `CASE WHEN` | conditional expressions                        |
 :::
 
 ::::
@@ -282,7 +282,7 @@ The Query Builder provides an interface that allows you to define a __subset of 
 width: 100%
 name: en_query_builder_comment
 ---
-Screenshot of the Query Builder
+Screenshot of the Query Builder.
 :::
 
 1. The __Fields list__ contains all the fields of the layer. To add an attribute column to the expression window, double-click its name or just type it into the box.

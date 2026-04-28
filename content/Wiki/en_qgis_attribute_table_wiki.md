@@ -56,7 +56,7 @@ QGIS provides two views to easily manipulate data in the attribute table:
 
 To switch between these modes use the ![](/fig/mActionFormView.png) ![](/fig/mActionOpenTable.png) buttons in the down right corner of the attribute table.
 
-% ADD example image
+%% ADD example image
 ___
 
 ## Attribute Table - Data Editing <a id="attribute-table-data-editing"></a>
@@ -73,7 +73,7 @@ ___
 
 ### Add a new column <a id="add-a-new-column"></a>
 
-* __Add new column:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png) --> click on ![](/fig/mActionNewAttribute.png), the window `Add Field` will open.
+* __Add new column:__ Activate editing mode by clicking on ![](/fig/mActionToggleEditing.png) → click on ![](/fig/mActionNewAttribute.png), the window `Add Field` will open.
 * __Specify column variables:__ Fill the window and click `OK`.
     * `Name`        = Name of column
     * `Comment`     = Additional info about column

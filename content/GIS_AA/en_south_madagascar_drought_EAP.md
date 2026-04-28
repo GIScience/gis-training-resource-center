@@ -484,9 +484,8 @@ __Questions:__
 
 __Step 1: Downloading IPC data from FEWSNET:__
 
-1. List all the publications available through the API
+1. List all the publications available through the API.
 
-% I should reformat this to be a one liner. 
 
 ```
 GET https://fdw.fews.net/api/ipcphase.json

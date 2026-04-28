@@ -44,7 +44,9 @@ There are many reasons why assessments are an essential part of every training. 
 6. **Motivating continued learning:** Finally, assessments help reinforce learning and motivation among participants. Seeing tangible improvements in their skills and knowledge encourages participants to continue using GIS and further develop their expertise.
 
 In summary, assessments play a vital role in GIS training by providing baseline measurements, customizing training content, setting clear goals, measuring progress, gathering feedback, and motivating continued learning. Incorporating assessments into your training program ensures a more effective and impactful learning experience for all participants.
+
 <!--COMMENT: this sounds a lot like a AI text. Not saying it it's written by one but the structure (Intro, Content, Conclusion) seems AI-dry to me (EN)-->
+
 ## How to do the assessment <a id="how-to-do-the-assessment"></a>
 
 Based on the standard assessment survey, you have three options:

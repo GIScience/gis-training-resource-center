@@ -13,8 +13,7 @@ You don’t have to reinstall plugins for every new project.
 
 ## Installation of plugins <a id="installation-of-plugins"></a>
 
-To install a plugin `Plugins` -> `Manage and Install Plugins…` -> `All` -> Search for the plugin -> `Install Plugin`
-
+To install a plugin `Plugins` → `Manage and Install Plugins…` → `All` → Search for the plugin → `Install Plugin`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
@@ -68,7 +67,7 @@ Installing QuickOSM.
 :::
 ::::
 
-To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or click under `vector` -> `QuickOSM`. 
+To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or click under `vector` → `QuickOSM`. 
 
 Follow the steps to fetch for data:
 

@@ -27,30 +27,30 @@ To check and adjust the CRS/ EPSG-Code should be the first thing you should do w
 :::{Note}
 After loading any spatial data in QGIS, check the CRS/EPSG code of the data to make sure it is the same as the CRS/EPSG code of the project.
 :::
-1. Right click on the data layer, click on  “Properties”.
-2. The “Layer Properties” Window of the data layer will open. Click on “Information”.
+1. Right click on the data layer, click on  `Properties`.
+2. The “Layer Properties” Window of the data layer will open. Click on `Information`.
 3. Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
-    - __Name:__     Here you find the EPSG Code
+    - __Name:__     Here you find the EPSG Code.
     - __Unites:__    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.
 
 
 ## Changing the projection of a vector layer <a id="changing-the-projection-of-a-vector-layer"></a>
 
-1. `Vector` Tab -> `Data Management Tools` -> `Reproject Layer`
+1. `Vector` Tab → `Data Management Tools` → `Reproject Layer`.
 2. Select target CRS/ EPSG-Code.
 3. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
-5. Click `Run`
+5. Click `Run`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
 
 ## Changing the projection of a raster layer <a id="changing-the-projection-of-a-raster-layer"></a>
 
-1. `Raster` Tab -> `Projections` -> `Warp (Reproject)`
-2. Select target CRS/EPSG-Code
-3. Select resampling method
+1. `Raster` Tab → `Projections` → `Warp (Reproject)`.
+2. Select target CRS/EPSG-Code.
+3. Select resampling method.
 4. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
-5. Click `Run`
+5. Click `Run`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 

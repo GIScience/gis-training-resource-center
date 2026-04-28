@@ -5,16 +5,16 @@
 ### Adding a new map <a id="adding-a-new-map"></a>
 
 - Add a new map by clicking on the __Add map__ button on the __toolbar on the left__ and __drag a rectangle on the map canvas.  
-- To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse
-- To move within a map select __Move item content__ button on the 
-- To zoom in on the map, while using the __Move item content__ button, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties
+- To move the map on the canvas, simply __select the map__ and __drag__ it with your mouse.
+- To move within a map select __Move item content__ button on the left toolbar. 
+- To zoom in on the map, while using the __Move item content__ button, you can __Press <kbd>Ctrl</kbd> and scroll the <kbd>Mouse wheel</kbd> (gently) or enter the scale manually in the item properties.
 
 :::{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
 name: Add a new map
 ---
-Adding a new map to the Print Layout
+Adding a new map to the Print Layout.
 :::
 
 :::: {tab-set}
@@ -41,7 +41,7 @@ A title should describe the phenomenon represented on the map.
 width: 750px
 name: Add text to the print layout
 ---
-Adding text to the print Layout
+Adding text to the print Layout.
 :::
 
 :::{dropdown} Video: Adding a textbox
@@ -67,7 +67,7 @@ If you are working for an organisation, most likely you will add the logo of tha
 
 Before adding a legend, make sure that:
 
-- All your layers have an explicit name ("rivers", "primary roads",...)
+- All your layers have an explicit name ("rivers", "primary roads",...).
 - You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.
 
 To add a legend, you can use the __add legend__ button on the __left toolbar__.
@@ -121,7 +121,7 @@ name: en_30.30.2_print_layout_scale_2
 Make sure that the scale is at a round number.
 :::
 
-To add a scale bar, you can use the __add scale bar__ button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions
+To add a scale bar, you can use the __add scale bar__ button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions:
 
 - Which Map __is related to the scale__
 - __Unit system of the bar__ (metres, miles, degrees)
@@ -154,7 +154,7 @@ To create an overview map, you need to follow these steps:
 2. __Insert the overview map__ into your print layout (in the bottom right corner for example)
 3. __Lock the new map__ in the Item properties panel
 4. Add a rectangle to display the extent of your main map
-    1. Go to the __properties__ of your Main map > scroll down until you see __"Overviews"__ 
+    1. Go to the __properties__ of your Main map → scroll down until you see __"Overviews"__ 
     2. Add an Overview by clicking on the __"+" icon__
     3. __Link the main map__ by selecting it in the __"Map frame"__ option
 
@@ -229,10 +229,10 @@ Make sure to check the map after exporting the PDF as some design elements might
 
 You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or use the __Layout manager__.
 
-1. Open the Layout manager under `Layout` > `Layout Manager`
-2. Navigate to the section "__New from Template__"
-3. Choose `Specific` and select the location where you saved your template
-4. Click open.
+1. Open the Layout manager under `Layout` → `Layout Manager`.
+2. Navigate to the section "__New from Template__".
+3. Choose `Specific` and select the location where you saved your template.
+4. Click `Open`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
 .mp4"></video>
@@ -252,19 +252,13 @@ On mac, the file path usually is `~/Library/Application Support/QGIS/QGIS3/profi
 
 ::::
 
-:::{tip}
-The layout manager in QGIS already has a dedicated location for map templates. On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
-On mac, 
-If you save templates here, you can load templates directly through the layout manager without looking for the file.
-You can also add file paths in the QGIS-template setting
-:::
 
 ## Generating an Atlas <a id="generating-an-atlas"></a>
 
 An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an Atlas:
 
-1. Click on the Atlas Settings icon in the Atlas Toolbar
-2. In the new window, activate the __Generate an Atlas__ option
+1. Click on the Atlas Settings icon in the Atlas Toolbar.
+2. In the new window, activate the __Generate an Atlas__ option.
 3. Select the __Coverage Layer__. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative districts in Nigeria (`Adm1`). 
 4. Select the __Page Name__. This should be the name of the subnational district or location that is displayed on that page. To display the name of the district, we will choose `ADM1_REF`.
 5. Now let's add a map to the empty print layout.

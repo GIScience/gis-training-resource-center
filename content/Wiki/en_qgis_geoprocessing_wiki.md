@@ -49,7 +49,7 @@ In QGIS, only the attributes selected for the dissolve operation will receive th
 
 The ![](/fig/intersection_icon.png) `intersection` tool extracts the part of the layers which overlap.
 
-1. In the top bar, navigate to `Vector` -> `Geoprocessing Tool` -> `Intersection` OR `Toolbox` -> Search for `Intersection`
+1. In the top bar, navigate to `Vector` → `Geoprocessing Tool` → `Intersection` OR `Toolbox` → Search for `Intersection`.
 2. `Input layer`: select layer one 
 3. `Overlay layer`: select layer two
 4. `Intersection`: Specify where you want to save the results and give it a good name 
@@ -76,7 +76,7 @@ name: Intersect_concept_2
 
 With the ![](/fig/qgis_3.40_centroids.png) `Centroids`-tool, you can create a new layer with points at the centre of each polygon.  
 
-1. In the top bar, navigate to `Vector` -> `Geometry Tools` -> `Centroids`. Alternatively, search for `Centroids` in the [Processing Toolbox]. Open the tool by <kbd>Double-clicking</kbd> on it. 
+1. In the top bar, navigate to `Vector` → `Geometry Tools` → `Centroids`. Alternatively, search for `Centroids` in the [Processing Toolbox]. Open the tool by <kbd>Double-clicking</kbd> on it. 
 2. `Input layer`: select the polygon layer
 3. Click `Run`.
 4. The new layer will be added to your project. 

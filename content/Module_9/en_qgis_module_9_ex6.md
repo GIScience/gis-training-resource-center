@@ -6,7 +6,7 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # Task 6: West Germany / Ahrtal flood logistics <a id="task-6-west-germany-ahrtal-flood-logistics"></a>
 

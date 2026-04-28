@@ -7,7 +7,7 @@ The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM
 ***Example***
 
 1. Go to __https://download.geofabrik.de/__ and navigate to the Mauritius  
-   dataset by clicking on `Africa` -> ` Mauritius`
+   dataset by clicking on `Africa` → ` Mauritius`
 2. Under __Commonly Used Formats__ select the option `mauritius-latest-free.shp.zip` 
    and download the file. Place it somewhere on your computer where you can find 
    it again and unzip it.
@@ -76,7 +76,7 @@ height: 250px
 align: center
 name: en_wizard_overpassturbo_wiki
 ---
-Screenshot of the Wizard in overpass turbo
+Screenshot of the Wizard in overpass turbo.
 :::
 
 :::{figure} /fig/en_wizard_result.png
@@ -127,7 +127,7 @@ height: 250px
 align: center
 name: en_overpass_turbo_data_wiki
 ---
-Screenshot of how to export data in overpassturbo
+Screenshot of how to export data in overpassturbo.
 :::
 
 ::::
@@ -141,7 +141,7 @@ height: 150px
 name: en_overpass_turbo_map_wiki
 align: center
 ---
-Screenshot of how to export map in overpassturbo
+Screenshot of how to export map in overpassturbo.
 :::
 ::::
 
@@ -155,7 +155,7 @@ height: 250px
 align: center
 name: en_overpass_turbo_query_wiki
 ---
-Screenshot of how to export query in overpassturbo
+Screenshot of how to export query in overpassturbo.
 :::
 ::::
 
@@ -164,6 +164,7 @@ Screenshot of how to export query in overpassturbo
 :::{tip} 
 For more information, check out the [wiki](https://wiki.openstreetmap.org/wiki/Overpass_turbo).
 :::
+
 <!---
 ### Ohsome tools <a id="ohsome-tools"></a>
 -->

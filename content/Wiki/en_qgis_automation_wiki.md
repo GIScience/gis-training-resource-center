@@ -13,12 +13,12 @@ The Model Designer is a visual tool that allows users to create and edit a workf
 
 ### Using the Model Designer/Graphical Modeler <a id="using-the-model-designergraphical-modeler"></a>
 
-- Open the tool under `Processing` -> `Graphical Modeler`
+- Open the tool under `Processing` → `Graphical Modeler`
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_opening_model_designer.mp4"></video>
 
 - Save the model file in a folder of your choosing by clicking on the ![](/fig/qgis_save_project_as.png) `Save model as`-button in the top bar. 
 
-- Open an existing model via `Model` -> `Open Model` and navigating to the model file
+- Open an existing model via `Model` → `Open Model` and navigating to the model file
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
 
 

@@ -6,7 +6,7 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # Task 2 - Access healthcare - avoid areas <a id="task-2-access-healthcare-avoid-areas"></a>
 For the main area of Kutupalong Refugee Camp, we have the boundary, the path and road network, water streams and health facilities. In this task we will compare openrouteservice isochrone and QGIS built-in service area catchments. Also we will showcase the avoid area feature in openrouteservice to account for a simple simulated flooding.

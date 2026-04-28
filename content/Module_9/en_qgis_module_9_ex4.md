@@ -6,7 +6,7 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # Task 4: Something something capacity? <a id="task-4-something-something-capacity"></a>
 

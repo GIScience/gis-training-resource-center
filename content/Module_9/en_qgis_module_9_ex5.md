@@ -6,7 +6,7 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 # Task 5: Identifying critical road segments <a id="task-5-identifying-critical-road-segments"></a>
 

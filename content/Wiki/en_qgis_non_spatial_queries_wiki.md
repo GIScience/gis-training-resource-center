@@ -63,7 +63,7 @@ It is also possible to add expressions that chain different requirements. In thi
 
 ### Save selected features as a new file <a id="save-selected-features-as-a-new-file"></a>
 
-- `Layer-Properties` -> `Export` -> `Save only selected features`
+- `Layer-Properties` → `Export` → `Save only selected features`.
 
 :::{dropdown} Example: Export selected features as a new file
 :open:

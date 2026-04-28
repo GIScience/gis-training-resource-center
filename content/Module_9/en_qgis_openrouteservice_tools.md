@@ -6,7 +6,7 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
 (content:references:module9:ors-tools-plugin)=
 # Plugin: Openrouteservice (ORS) tools <a id="plugin-openrouteservice-ors-tools"></a>

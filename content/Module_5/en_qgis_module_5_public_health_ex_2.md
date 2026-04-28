@@ -1,7 +1,7 @@
 # Exercise 2: Analysing Measles Case Data and Population Distribution <a id="exercise-2-analysing-measles-case-data-and-population-distribution"></a>
 ## Background <a id="background"></a>
 
-% MAKE THEM LOOK FOR THE WORLDPOP DATASET ON DEMOGRAPHY AND MAKE THEM CALCULATE THE UNDER 5 POP RASTER
+%% MAKE THEM LOOK FOR THE WORLDPOP DATASET ON DEMOGRAPHY AND MAKE THEM CALCULATE THE UNDER 5 POP RASTER
 
 The Epidemiology Department has shared a line-list of suspected measles cases reported by health districts.
 Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates.
@@ -135,7 +135,7 @@ Can you find and download the WorldPop raster containing the population under 5?
 
 ### Task 4: Import and Explore the Measles Cases List <a id="task-4-import-and-explore-the-measles-cases-list"></a>
 
-% Revise this step.
+%% Revise this step.
 
 1. [Import](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the `measles_cases_adm2` dataset as a __delimited text layer__ with no geometry.
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open.
@@ -159,14 +159,14 @@ Make sure to always load csv data via the data source manager and not via the dr
 
 <!--- 
 
-% THIS STEP IS REMOVED AS I DONT HAVE THE DATA SO THE AGGREGATION PART CAN BE DONE. WE WILL SKIP THIS TASK AND DIRECTLY JUMP INTO THE JOIN
-% TO ADD SOME ADDITIONAL VALUE THE CALCULATION OF POPULATION UNDER 5 WAS ADDED
+%% THIS STEP IS REMOVED AS I DONT HAVE THE DATA SO THE AGGREGATION PART CAN BE DONE. WE WILL SKIP THIS TASK AND DIRECTLY JUMP INTO THE JOIN
+%% TO ADD SOME ADDITIONAL VALUE THE CALCULATION OF POPULATION UNDER 5 WAS ADDED
 
 ### Task 4: Aggregate the measles case data with the district boundaries (adm2) <a id="task-4-aggregate-the-measles-case-data-with-the-district-boundaries-adm2"></a>
 
 We have received a .csv-file containing measle case report. In order to identify the hotspots, we want to aggregate the number of cases per district (adm2). The data does not include geographic coordinates. However, the dataset includes the names of the settlement where the case has been reported, as well as the district. With this information, we can aggregate the number of cases per district and, in a next step, join them with the adm2-layer. 
 
-% Here you could also add a step to filter the date
+%% Here you could also add a step to filter the date
 
 9. Because multiple records exist per district and data, we'll aggregate them:
     - In the processing toolbox, search for "Aggregate"

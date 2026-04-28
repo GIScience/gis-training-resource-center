@@ -17,7 +17,7 @@ There are two ways to add the OpenStreetMap as a basemap.
 
 __Option 1:__ Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 
-__Option 2:__ `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap or another basemap.
+__Option 2:__ `Layer` → `Add Layer` → `Add XYZ layer...` → Select the OpenStreetMap or another basemap.
 
 __Add standard OpenStreetMap as Basemap__
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
@@ -25,7 +25,7 @@ __Add standard OpenStreetMap as Basemap__
 ### Add Google and Bing Basemaps <a id="add-google-and-bing-basemaps"></a>
 
 To add additional basemaps without using plugins you have to configure `XYZ Tiles`. 
-In the `Browser Panel`, right-click on `XYZ Tiles` -> `New Connection`.
+In the `Browser Panel`, right-click on `XYZ Tiles` → `New Connection`.
 
 `Name` = The name of the new basemap.
 
@@ -57,7 +57,7 @@ The QuickMapServices Plugin allows to access to a wide range of basemaps.
 There can be problems when printing some basemaps from the QuickMapServices!
 :::
 
-`Web` -> `QuickMapServices` -> select provider e.g. NASA -> select basemap
+`Web` → `QuickMapServices` → select provider e.g. NASA → select basemap.
 
 __Functionality of QuickMapServices Plugin__
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
@@ -65,7 +65,7 @@ __Functionality of QuickMapServices Plugin__
 ### Configuration of QuickMapServices <a id="configuration-of-quickmapservices"></a>
 After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.
 
-`Web` -> `QuickMapServices` -> `Settings` -> Use the horizontal arrows to navigate to `More Services` -> `Get Contributed Pack`
+`Web` → `QuickMapServices` → `Settings` → Use the horizontal arrows to navigate to `More Services` → `Get Contributed Pack`
 
 ## Navigation on Basemap with OSM Place Search Plugin <a id="navigation-on-basemap-with-osm-place-search-plugin"></a>
 

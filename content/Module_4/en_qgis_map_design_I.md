@@ -27,7 +27,7 @@ name: en_30.30.2_topographic_map_examples
 Examples for topographic maps.
 :::
 
-% SOURCE?
+%% SOURCE?
 
 __Thematic maps__ display the distribution of specific data or statistically processed information, such as population size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology. 
 
@@ -40,7 +40,7 @@ name: en_30.30.2_thematic_maps_examples
 Examples for thematic maps.
 :::
 
-% SOURCE?
+%% SOURCE?
 
 These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the information you want to convey.
 

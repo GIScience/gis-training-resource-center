@@ -263,7 +263,7 @@ name: Join attributes by field value
 Normalising the indicators.
 :::
 
-% Could be nice to add an explanation to normalisation somewhere, maybe module 6?
+%% Could be nice to add an explanation to normalisation somewhere, maybe module 6?
 
 * Repeat this step for the other indicators.
 * For each indicator you have now the original column and the normalised column. 
