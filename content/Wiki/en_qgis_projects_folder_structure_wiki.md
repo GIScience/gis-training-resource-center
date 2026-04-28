@@ -19,10 +19,10 @@ It is good practice to use a __standard folder structure__ for QGIS projects in 
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
-3. Safe the new project in the `Project` folder in the standard folder structure and git push. 
-4. Give your project a name and click
+3. Save the new project in the `Project` folder in the standard folder structure and git push. 
+4. Give your project a name and click `Save`.
 :::{Tip}
-Do not use spaces ` ` in the name, instead always use underscores `_`
+Do not use spaces ` ` in the name, instead always use underscores `_`.
 :::
 #### Save Project <a id="save-project"></a>
 
@@ -43,7 +43,7 @@ Good data organisation with a fixed and well thought-out folder structure preven
 
 ## Open existing QGIS Projects <a id="open-existing-qgis-projects"></a>
 
-Open QGIS -> `Project` -> `Open` -> Select your project 
+Open QGIS → `Project` → `Open` → Select your project 
 
 __Open QGIS Project__
 

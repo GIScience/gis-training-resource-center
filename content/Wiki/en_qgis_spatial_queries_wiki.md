@@ -41,5 +41,5 @@ __🔙[Back to Homepage](/content/intro.md)__
 ## Export Selection <a id="export-selection"></a>
 
 - Once selected, you can further manipulate the features by, for example, exporting them to a new layer:
-    - <kbd>Right-click</kbd> on the layer with the selected features -> `Export` -> `Save selected features as..`
+    - <kbd>Right-click</kbd> on the layer with the selected features → `Export` → `Save selected features as..`
 

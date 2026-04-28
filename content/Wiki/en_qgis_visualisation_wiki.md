@@ -56,8 +56,8 @@ In this example, we want to change the symbology of a single layer so that __onl
 
 To change the symbology of a single layer:
 1. Open the `Styling panel` and navigate to the symbology tab. By default, the symbology will be set to `Single Symbol`. This means that the same colours and contours will be applied to all the features in that layer.
-2. Click on `Simple Fill`
-3. Click on the arrow to the right of `Fill Colour`
+2. Click on `Simple Fill`.
+3. Click on the arrow to the right of `Fill Colour`.
 4. Check the `Transparent Fill` option.
 
 :::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
@@ -94,7 +94,7 @@ name: en_30.30.2_changing_layer_style_2_wiki
 width: 350 px
 align: left
 ---
-Change the Fill type
+Change the Fill type.
 :::
 
 4. Click on `Simple Fill` to open the style options.
@@ -115,7 +115,7 @@ Change the Fill type
 ---
 name: en_30.30.2_changing_layer_style_3_wiki
 ---
-The styling of a vector data consists of the colour and the outline
+The styling of a vector data consists of the colour and the outline.
 :::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
@@ -131,7 +131,7 @@ The styling of a vector data consists of the colour and the outline
 
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
 
-1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__
+1. From your shapefile folder, __drag the ACLED security incidents shapefile onto your map__.
 2. Open the `Symbology tab` for that layer and choose `Categorized` instead of Single Symbol.   
 :::{note} 
 Categorized symbology is used when you have ***discrete*** variables.
@@ -142,12 +142,12 @@ Categorized symbology is used when you have ***discrete*** variables.
 name: en_30.30.2_categorized_layer_symbology_1_wiki
 width: 500 px
 ---
-Change the symbology type to "categorized" and choose the Value (variable) you wish to display
+Change the symbology type to "categorized" and choose the Value (variable) you wish to display.
 :::
-3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`
-4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table)
-5. Now we can __change the style of each single value__
-6. Double click on the value `Explosions`
+3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`.
+4. Click on `Classify` to __list all the unique values contained__ in the `event_type` field (i.e. all the possible types of security incidents recorded in our table).
+5. Now we can __change the style of each single value__.
+6. Double click on the value `Explosions`.
 7. At the bottom of the __Symbol selector__ window, choose a symbol to make Explosion points stand out.
 8. Click on `OK`, then Apply to preview what the layer will look like.
 9. Click `OK` again.
@@ -157,7 +157,7 @@ Change the symbology type to "categorized" and choose the Value (variable) you w
 name: en_30.30.2_categorized_layer_symbology_2_wiki
 width: 500 px
 ---
-By double clicking on the __unique values__ in the classified list, you can change the symbol for each value
+By double clicking on the __unique values__ in the classified list, you can change the symbol for each value.
 :::
 
 Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
@@ -167,7 +167,7 @@ Now we have a map of Nigeria where you can locate the areas that are affected by
 name: en_exercise_map_design_example_Nigeria_wiki
 width: 500px
 ---
-Regions affected by explosions in Nigeria
+Regions affected by explosions in Nigeria.
 :::
 ::::
 
@@ -178,32 +178,32 @@ If a layer contains numeric values that are continuous, they can be organized in
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
 .mp4"></video>
 
-1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder
-2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0
-3. Drag the shapefile NGA_Adm1_Pop into your map
-4. Open its `Symbology` options and choose `Graduated`
-5. __Select the value you want to use to assign colours__, in this case, it will be `Population`
+1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder.
+2. In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.
+3. Drag the shapefile NGA_Adm1_Pop into your map.
+4. Open its `Symbology` options and choose `Graduated`.
+5. __Select the value you want to use to assign colours__, in this case, it will be `Population`.
 
 :::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: en_30.30.2_symbology_variable_ranges_wiki
 width: 550px
 ---
-With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
+With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values.
 :::
 
-6. Click on `Classify` to __list all values divided in classes__
-7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4
-8. By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases
-9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue
-10. Click `Apply` to preview the look of your layer, then `OK`
+6. Click on `Classify` to __list all values divided in classes__.
+7. Choose __how many classes__ you want the data to be divided into ‒ let's say 4.
+8. By default, the colour ramp will be red. However, red is not the right colour to use for .population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.
+9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue.
+10. Click `Apply` to preview the look of your layer, then `OK.
 
 :::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: en_30.30.2_symbology_variable_ranges_2_wiki
 width: 500 px
 ---
-You can categorize the continuous values into classes and assign a colour ramp 
+You can categorize the continuous values into classes and assign a colour ramp. 
 :::
 
 The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __choropleth maps__. 
@@ -213,7 +213,7 @@ The following map shows the most populated States of Nigeria using a graduated c
 name: en_map_design_example_variable_ranges_wiki
 width: 500px
 ---
-A map showing the population of Nigerian states
+A map showing the population of Nigerian states.
 :::
 ::::
 
@@ -235,7 +235,7 @@ Labels are text that display information or values of the data. In QGIS, you can
 :::{tab-item} Rule-based Labelling
 
 - Create rules using expressions to select accurately which features are to be labeled.
-- Each rule can have a different text formatting
+- Each rule can have a different text formatting.
 
 :::
 
@@ -243,7 +243,7 @@ Labels are text that display information or values of the data. In QGIS, you can
 
 :::{note} Label rendering
 
-Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the `Move a Label, Diagram, or Callout`-tool in __Label toolbar__
+Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the `Move a Label, Diagram, or Callout`-tool in __Label toolbar__.
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
 
@@ -263,7 +263,7 @@ By default, QGIS renders the labels so that they don't overlap with other labels
 width: 500 px
 name: en_30.30.2_setting_up_labels_wiki
 ---
-Setting up labels in QGIS 30.30.2
+Setting up labels in QGIS 30.30.2.
 :::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
@@ -273,11 +273,11 @@ Setting up labels in QGIS 30.30.2
 
 ::::{dropdown} Adding different label styles to the same layer
 
-Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the *Country Capital*, and another one for the *State Capitals*
+Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the *Country Capital*, and another one for the *State Capitals*.
 
-1. Open the styling panel for the `"NGA_settlements_nga"` layer and click on the `Labels` tab
-2. Select `Rule-based Labelling`
-3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and __create the first rule__
+1. Open the styling panel for the `"NGA_settlements_nga"` layer and click on the `Labels` tab.
+2. Select `Rule-based Labelling`.
+3. Click on the __Add Rule__ button at the bottom (the "+"-sign) and __create the first rule__.
 4. For __Value__, select `"NAME"` (so that the labels will show the name of each city), then click on the `"ε"-button` next to the __Filter__ bar.
 
 :::{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png
@@ -285,7 +285,7 @@ Sometimes you will need to create two different label styles for different featu
 width: 500 px
 name: en_30.30.2_adding_rule-based_labels_wiki
 ---
-To add rule-based labels, you need to enter an expression
+To add rule-based labels, you need to enter an expression.
 :::
 
 5. In the central column, expand `Fields and Values` to display a list of all the fields in your layer and double-click on `"CLASS"` to __add it to the expression frame__ on the left.
@@ -310,7 +310,7 @@ The expression builder: Expression (left); building blocks, operators, fields an
 :::{dropdown} Add underlined labels
 
 1. Set up the labels by following the same steps as before.
-2. TO underline labels, click on the underline-button
+2. TO underline labels, click on the underline-button.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
 .mp4"></video>
@@ -320,7 +320,7 @@ The expression builder: Expression (left); building blocks, operators, fields an
 ::::{dropdown} Move labels independently
 Sometimes the placement of labels is not ideal and can obstruct the readability of the map. In this case, you can move labels independently. 
 
-1. On the `label toolbar`, there is an option to __move labels independently__. Click on it to activate the tool. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to `View`>`Toolbars`>activate the Label toolbar)
+1. On the `label toolbar`, there is an option to __move labels independently__. Click on it to activate the tool. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to `View` → `Toolbars` → activate the Label toolbar).
 2. Click on the __label you want to move__.
 3. You will be prompted to select the primary key for joining with internal data storage. __You do not need to change it__ (you can select the ID field of the dataset) and click `OK`.
 4. Click on the label again, now you can move it freely.
@@ -347,18 +347,18 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 
 To assign a colour gradient for raster data, you need to:
 
-1. Open the `styling panel` for the raster layer
-2. Navigate to the `Symbology tab`  
-3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on `Singleband Gray` and switch to `Singleband pseudocolour`
-4. Click on __the arrow to the right of the colour ramp__. Here you can choose a pre-made colour ramp
-5. You can modify the colour ramp by __clicking on the colour ramp__.
+1. Open the `styling panel` for the raster layer.
+2. Navigate to the `Symbology tab`.
+3. By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on `Singleband Gray` and switch to `Singleband pseudocolour`.
+4. Click on __the arrow to the right of the colour ramp__. Here you can choose a pre-made colour ramp.
+5. You can modify the colour ramp by __clicking on the colour ramp__..
 
 :::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
 name: raster data colour gradient
 width: 600px
 ---
-Colour Ramp Selector
+The colour ramp selector in QGIS.
 :::
 
 In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, __Saturation__, __Lightness__ and __Opacity__. The latter three are especially useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the __Lightness__ has a more or less linear plot. 
@@ -367,10 +367,10 @@ In the colour ramp selector, you can adjust each colour step. On the bottom, you
 
 Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need to know the elevation at certain points, you can choose to display the __hillshade__ of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,
 
- 1. Open the `symbology` tab
+ 1. Open the `Symbology` tab.
  2. Click on `Render type` and select `Hillshade`. You will have an option to select the direction of the light. Conventionally, the light-source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade __Multidirectional__.
- 3. The Hillshade will be very dark and cover most of the map. We need to make it lighter...
-
+ 3. The Hillshade will be very dark and cover most of the map. We need to make it lighter by adjusting the symbology.
+%% This needs some detail
 <!--ADD: Video-->
 
 ::::
@@ -396,8 +396,8 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 
 ::::{tab-item} Loading a style into your QGIS-project
 
-1. Open the style manager: `Settings` > `Style manager`
-2. Click on `import/export` and select `import items`
+1. Open the style manager: `Settings` → `Style manager`.
+2. Click on `import/export` and select `import items`.
 3. Navigate to the folder where the style is saved and click import.
 4. The style should now be available as a preset in the styling panel.
 
@@ -411,8 +411,8 @@ You can also import styles directly in the styling panel of a layer. But it will
 With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.
 
 1. Install the __"Plugin Resource Sharing"__ by opening the plugin installation window and searching for the plugin.
-2. Once installed, open the plugin interface by clicking on `plugin` > `Plugin Resource Sharing`
-3. Search for packages by the Red Cross and UN
+2. Once installed, open the plugin interface by clicking on `plugin` → `Plugin Resource Sharing`.
+3. Search for packages by the Red Cross and UN.
 4. Install the packages.
 
 Now the symbols should be available in the styling manager in the SVG folder.
@@ -427,8 +427,8 @@ Make sure to check out the other resources available in the resource sharing plu
 
 ::::{tab-item} Using SVG-symbols
 
-1. Open the styling panel and open the `single marker` options.
-2. Under `Symbol layer type`, select __"SVG Marker"__
+1. Open the styling panel and open the `Single marker` options.
+2. Under `Symbol layer type`, select __"SVG Marker"__.
 3. Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
@@ -439,11 +439,11 @@ Make sure to check out the other resources available in the resource sharing plu
 
 If you have a library of SVG-symbols as a folder you can add them to your Styling manager.
 
-1. Open the style manager: `setting` > `style manager`
-2. Click on `Import / Export` and select `Import items`
-3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml)
+1. Open the style manager: `Settings` → `Style manager`.
+2. Click on `Import / Export` and select `Import items`.
+3. Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).
 4. Now you can select which symbols you wish to import. In most cases, you can select all symbols.
-4. Click on `Import`
+4. Click on `Import`.
 The new SVG-symbols are in your SVG library.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>

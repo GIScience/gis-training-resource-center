@@ -3,7 +3,7 @@
 ## Introduction
 
 Thank you for your interest in contributing to the IFRC GIS Training Resource Center.
-This page <!--Document-->outline the contribution process and guideline for collaborating with the GIS Training Resource Center. It provides details for contributions and related best practices. Whether you're looking to add new content, contribute to existing material, or collaborate on enhancing the platform overall as a partner, this guide will help to understand the necessary steps.
+This page outlines the contribution process and guideline for collaborating with the GIS Training Resource Center. It provides details for contributions and related best practices. Whether you're looking to add new content, contribute to existing material, or collaborate on enhancing the platform overall as a partner, this guide will help to understand the necessary steps.
 
 ## Collaborations
 
