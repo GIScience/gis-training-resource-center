@@ -22,18 +22,18 @@ Le guichet unique pour enseigner les compétences en Systèmes d’Information G
 ## Comment utiliser la plateforme de formation SIG du Réseau de la FICR
 
 ::::{grid} 2
-:::{card} __[Commencer à enseigner](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
-:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html
+:::{card} __[Commencer à enseigner](https://giscience.github.io/gis-training-resource-center/fremcj/content/fr/Trainers_corner/fr_TOT_intro.html)__ 
+:link: https://giscience.github.io/gis-training-resource-center/content/fr/Trainers_corner/fr_TOT_intro.html
 
-Une [section dédiée aux formateurs](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) est disponible pour celles et ceux qui souhaitent utiliser la plateforme.
+Une [section dédiée aux formateurs](https://giscience.github.io/gis-training-resource-center/french/content/fr/Trainers_corner/fr_TOT_intro.html) est disponible pour celles et ceux qui souhaitent utiliser la plateforme.
 
 L’élément le plus important est constitué des plans de formation. Ceux-ci vous donnent une orientation sur le moment et la manière d’utiliser les différents contenus dans votre cycle de formation.  
 Néanmoins, chaque composant du matériel pédagogique est conçu pour être utilisé de manière indépendante. En plus des plans de formation, vous trouverez une multitude de ressources, allant des bonnes pratiques en matière de formation à des méthodes innovantes pour enseigner les SIG. 
 
 :::
 
-:::{card} __[Commencer à apprendre](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)__ 
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html
+:::{card} __[Commencer à apprendre](https://giscience.github.io/gis-training-resource-center/content/fr/Module_1/fr_module_1_overview.html)__ 
+:link: https://giscience.github.io/gis-training-resource-center/content/fr/Module_1/fr_module_1_overview.html
 
 Vos formateurs seront vos guides sur cette plateforme. Si vous avez des questions, n’hésitez pas à leur poser toutes vos questions concernant cette plateforme de formation.  
 Il ne s’agit pas d’une plateforme d’autoformation. Si vous souhaitez apprendre QGIS, il est toujours préférable de participer à un cours et d’apprendre auprès d’un formateur expérimenté. Toutefois, vous êtes les bienvenus pour utiliser cette plateforme afin de perfectionner vos compétences QGIS ; gardez simplement à l’esprit que l’autoformation n’est pas l’objectif principal de la plateforme.
