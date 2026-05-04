@@ -56,7 +56,7 @@ The wiki is your companion for working with QGIS in training in real life. It br
 :::
 
 :::{grid-item-card} Modules 🎓
-:link: ../content/modules_overview
+:link: ../content/en_modules_overview
 In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
 :::
 
