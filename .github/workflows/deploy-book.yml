@@ -20,7 +20,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
 
@@ -47,13 +47,28 @@ jobs:
         jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
         echo "Spanish book built successfully."
 
-    # Combine both builds into a single deployable folder
-    - name: Combine English and Spanish builds
+    # Build French Book
+    - name: Build French Book
       run: |
-        mkdir -p _site/content _site/spanish
+        jupyter-book build . --config _config.yml --toc fr_toc.yml --path-output french
+        echo "French book built successfully."
+
+    # Combine all builds into a single deployable folder
+    - name: Combine English, Spanish, and French builds
+      run: |
+        rm -rf _site
+        mkdir -p _site/spanish _site/french
+
+        # English at site root
         cp -r english/_build/html/* _site/
+
+        # Spanish under /spanish
         cp -r spanish/_build/html/* _site/spanish/
-        echo "Created _site with English in /content and Spanish in /spanish"
+
+        # French under /french
+        cp -r french/_build/html/* _site/french/
+
+        echo "Created _site with English at /, Spanish at /spanish, French at /french"
         ls -R _site
 
     # Upload artifacts
