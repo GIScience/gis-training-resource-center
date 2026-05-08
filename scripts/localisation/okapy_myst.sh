@@ -31,29 +31,53 @@ fi
 
 if [ "$MODE" == "pre" ]; then
     echo "--- Starting Pre-Processing ---"
-    find "$FOLDER" -type f -name "*.md" | while read -r file; do
-        tikal.sh -x "$file" -fc "$CONFIG" -sl "$SOURCE_LANG" -tl "$TARGET_LANG"
-    done
+    echo "Source folder: $FOLDER"
+    echo "Filter config: $CONFIG"
+    echo "Source language: $SOURCE_LANG"
+    echo "Target language: $TARGET_LANG"
+    echo "Skipping translated folders: es, fr"
+
+    find "$FOLDER" \
+        -type f \
+        -name "*.md" \
+        ! -path "*/es/*" \
+        ! -path "*/fr/*" \
+        | while read -r file; do
+            echo "Extracting: $file"
+            tikal.sh -x "$file" -fc "$CONFIG" -sl "$SOURCE_LANG" -tl "$TARGET_LANG"
+
+            if [ $? -ne 0 ]; then
+                echo "Warning: Extraction failed for $file"
+            fi
+        done
+
     echo "Extraction complete."
 
 elif [ "$MODE" == "post" ]; then
     echo "--- Starting Post-Processing ---"
-    find "$FOLDER" -type f -name "*.xlf" | while read -r xlf_file; do
-        echo "Merging: $xlf_file"
-        
-        # Perform the merge
-        tikal.sh -m "$xlf_file" -fc "$CONFIG" -sl "$SOURCE_LANG" -tl "$TARGET_LANG"
-        
-        # Check if Tikal succeeded before deleting
-        if [ $? -eq 0 ]; then
-            if [ "$CLEANUP_FLAG" == "cleanup" ]; then
-                echo "Success. Removing intermediate file: $xlf_file"
-                rm "$xlf_file"
+    echo "Source folder: $FOLDER"
+    echo "Filter config: $CONFIG"
+    echo "Source language: $SOURCE_LANG"
+    echo "Target language: $TARGET_LANG"
+
+    find "$FOLDER" \
+        -type f \
+        -name "*.xlf" \
+        | while read -r xlf_file; do
+            echo "Merging: $xlf_file"
+
+            tikal.sh -m "$xlf_file" -fc "$CONFIG" -sl "$SOURCE_LANG" -tl "$TARGET_LANG"
+
+            if [ $? -eq 0 ]; then
+                if [ "$CLEANUP_FLAG" == "cleanup" ]; then
+                    echo "Success. Removing intermediate file: $xlf_file"
+                    rm "$xlf_file"
+                fi
+            else
+                echo "Warning: Merge failed for $xlf_file. Keeping file for debugging."
             fi
-        else
-            echo "Warning: Merge failed for $xlf_file. Keeping file for debugging."
-        fi
-    done
+        done
+
     echo "Merging complete."
 
 else
