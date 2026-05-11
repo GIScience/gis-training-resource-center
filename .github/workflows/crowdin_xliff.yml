@@ -51,6 +51,12 @@ jobs:
           java -version
           tikal.sh -help
 
+      - name: Verify localisation files
+        run: |
+          test -f scripts/localisation/okapi_myst.sh
+          test -f scripts/localisation/okf_markdown@MyST.fprm
+          ls -la scripts/localisation
+
       - name: Prepare XLIFF source folder
         run: |
           rm -rf localisation/xliff/sources
@@ -61,7 +67,7 @@ jobs:
           bash scripts/localisation/okapi_myst.sh \
             pre \
             ./content \
-            ./scripts/localisation/okapi-markdown-myst.fprm \
+            ./scripts/localisation/okf_markdown@MyST.fprm \
             "${{ inputs.target_language }}"
 
       - name: Move generated XLIFF files to Crowdin source folder
@@ -83,6 +89,13 @@ jobs:
       - name: Show XLIFF files that will be uploaded to Crowdin
         run: |
           find localisation/xliff/sources -type f -name "*.xlf" -print
+
+      - name: Fail if no XLIFF files were generated
+        run: |
+          if ! find localisation/xliff/sources -type f -name "*.xlf" | grep -q .; then
+            echo "No XLIFF files were generated or moved to localisation/xliff/sources."
+            exit 1
+          fi
 
       - name: Upload XLIFF sources to Crowdin
         uses: crowdin/github-action@v2
