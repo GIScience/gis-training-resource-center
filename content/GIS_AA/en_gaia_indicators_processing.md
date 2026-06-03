@@ -6,19 +6,18 @@ The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline pro
 
 1. [**Access to Services**](#access-to-services) – Population accessibility to key facilities such as education and health centers.  
 2. [**Facilities**](#facilities) – Availability and distribution of essential service infrastructure.  
-3. [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access and Facilities layers.
+3. [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access, Facilities, Evacuability, and RAI layers.
 4. [**Demographics**](#demographics) – Distribution of vulnerable population.
 5. [**Rural Population**](#rural-population) – Demographic indicators focused specifically on rural populations.
-6. [**Vulnerability**](#vulnerability) – Composite indicators derived from Demographics and Rural Population layers.
-7. [**Crop Coverage and Change**](#crop-coverage-and-change) – Extent of agricultural land and observed changes over time.
-8. [**Vegetation Index**](#vegetation-index) – NDVI-based assessment of vegetation conditions.
-9. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
+6. [**Rural Accessibility Index (RAI)**](#rural-accessibility-index-rai) – Percentage of rural population within 2 km of a paved road.
+7. [**Vulnerability**](#vulnerability) – Composite indicators derived from Demographics and Rural Population layers.
+8. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
+9. [**Cyclone Exposure**](#cyclone-exposure) – Exposure of populations and facilities to cyclone hazards.
+10. [**Evacuability**](#evacuability) – Travel time from at-risk areas to the nearest safe zone.
 
 Further details on GAIA’s methodology are available in the [GAIA repository on GitHub](https://github.com/GIScience/gaia).
 
 ---
-## Risk Assessment Plugin <a id="risk-assessment-plugin"></a>
-The datasets produced by GAIA are fully compatible with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), enabling seamless integration into spatial risk analyses. They are openly available for multiple countries through [HeiGIT on HDX](https://data.humdata.org/organization/heidelberg-institute-for-geoinformation-technology?sort=metadata_modified+desc), providing ready-to-use geospatial layers for risk assessments.
 
 :::{admonition} Information
 :class: tip
@@ -474,22 +473,25 @@ def fetch_ohsome(context_log, boundary_file, output_dir, country_code, admin_lev
 
 ## 3. Coping Capacity <a id="3-coping-capacity"></a>
 Represents the ability of a population to access essential services and benefit from available infrastructure.  
-This layer combines *Access to Services* and *Facilities* indicators to assess local capacity to cope with shocks or disruptions.
+This layer combines *Access to Services*, *Facilities*, *Evacuability*, and *Rural Accessibility Index (RAI)* indicators to assess local capacity to cope with shocks or disruptions.
 
 ### Data Sources <a id="data-sources-3"></a>
 - **Access to Services CSVs:** Derived from population accessibility analysis (see *Access to Services* chapter).  
 - **Facilities CSVs:** Derived from OpenStreetMap facility data (see *Facilities* chapter).  
-- Both inputs are aggregated at the same administrative level (e.g., ADM2).
+- **Evacuability CSVs:** Travel time from at-risk population areas to nearest safe zones (see *Evacuability* chapter).  
+- **RAI CSVs:** Rural Accessibility Index (see *RAI* chapter).  
+- All inputs are aggregated at the same administrative level (e.g., ADM2).
 
 ### Processing Steps <a id="processing-steps-3"></a>
 1. **Input CSVs:**  
-   - One *Access to Services* CSV and one *Facilities* CSV are provided per administrative level.
+   - *Access to Services*, *Facilities*, *Evacuability*, and *RAI* CSVs are provided per administrative level.
    - Each CSV includes an identifier column such as `ADM0_PCODE`, `ADM1_PCODE`, or `ADM2_PCODE`.
 2. **Column Detection:**  
    - The script automatically detects the administrative identifier column by searching for any column ending with `_PCODE`.
-3. **Merge Operation:**  
-   - The two datasets are merged on the identified `*_PCODE` column using a left join.
-   - This ensures all access indicators are retained even if some administrative areas lack facility data.
+3. **Merge Operations:**  
+   - The access and facilities datasets are merged on the identified `*_PCODE` column using a left join.
+   - If available, evacuability columns are merged from the evacuability CSV.
+   - If available, RAI columns are merged from the RAI CSV.
 4. **Output Generation:**  
    - The merged dataset is saved as `{country_code}_{admin_level}_coping.csv` under `Output/`.
    - One output is produced per administrative level present in the input data.
@@ -500,6 +502,8 @@ This layer combines *Access to Services* and *Facilities* indicators to assess l
     - `{admin_level}_PCODE`
     - All accessibility indicator columns (e.g., `access_pop_education_5km`, `access_pop_hospitals_1h`)
     - All facility count columns (e.g., `education_count`, `hospitals_count`, `primary_healthcare_count`)
+    - All evacuability columns (e.g., `RP{rp}_evac_time_minutes_mean`, `kt34_evac_time_minutes_mean`)
+    - All RAI columns (e.g., `rural_access_total_pop`, `RAI_total_pop`, `rural_access_dependency_ratio`)
   - CRS: WGS84 (`EPSG:4326`)
   - Units: counts and population values aggregated per administrative unit
 
@@ -510,16 +514,23 @@ import pandas as pd
 from pathlib import Path
 from typing import List
 
-def coping_asset(context, access_asset: List[str], facilities_asset: List[str]) -> list[str]:
+def coping_asset(context, access_asset: List[str], facilities_asset: List[str],
+                  evacuability_asset: List[str], RAI_asset: List[str]) -> list[str]:
     """
-    Combine accessibility and facilities CSVs into a single coping dataset.
-    Joins on the ADM*_PCODE column per admin level.
+    Combine accessibility, facilities, evacuability, and RAI CSVs into a single
+    coping dataset. Joins on the ADM*_PCODE column per admin level.
     Produces one coping CSV per admin level in Output/.
     """
     country_code = context.partition_key.upper()
     outputs = []
 
-    for access_csv, facilities_csv in zip(access_asset, facilities_asset):
+    for i, access_csv in enumerate(access_asset):
+        if i >= len(facilities_asset):
+            break
+        facilities_csv = facilities_asset[i]
+        evac_csv = evacuability_asset[i] if i < len(evacuability_asset) else None
+        rai_csv = RAI_asset[i] if i < len(RAI_asset) else None
+
         if not os.path.exists(access_csv) or not os.path.exists(facilities_csv):
             context.log.warning(
                 f"Skipping merge for {country_code}: missing files {access_csv}, {facilities_csv}"
@@ -530,7 +541,6 @@ def coping_asset(context, access_asset: List[str], facilities_asset: List[str]) 
             df_access = pd.read_csv(access_csv)
             df_facilities = pd.read_csv(facilities_csv)
 
-            # detect admin code column automatically (ADM0_PCODE, ADM1_PCODE, etc.)
             id_col = [c for c in df_access.columns if c.endswith("_PCODE")]
             if not id_col:
                 context.log.warning(f"Skipping {access_csv}: no *_PCODE column found")
@@ -539,7 +549,28 @@ def coping_asset(context, access_asset: List[str], facilities_asset: List[str]) 
 
             merged = pd.merge(df_access, df_facilities, on=id_col, how="left")
 
-            admin_level = id_col.split("_")[0]  # e.g., ADM2
+            if evac_csv and os.path.exists(evac_csv):
+                df_evac = pd.read_csv(evac_csv)
+                if id_col in df_evac.columns:
+                    evac_cols = [c for c in df_evac.columns if c != id_col]
+                    if evac_cols:
+                        merged = pd.merge(merged, df_evac[[id_col] + evac_cols], on=id_col, how="left")
+
+            if rai_csv and os.path.exists(rai_csv):
+                df_rai = pd.read_csv(rai_csv)
+                if id_col in df_rai.columns:
+                    rai_cols = [c for c in df_rai.columns if c != id_col]
+                    if rai_cols:
+                        merged = pd.merge(merged, df_rai[[id_col] + rai_cols], on=id_col, how="left")
+
+            adm_cols = [c for c in merged.columns if c.startswith("ADM") and c.endswith("_PCODE")]
+            if "ADM_PCODE_x" in merged.columns or "ADM_PCODE_y" in merged.columns:
+                merged["ADM_PCODE"] = merged["ADM_PCODE_x"].combine_first(merged["ADM_PCODE_y"])
+                merged.drop(columns=[c for c in ["ADM_PCODE_x", "ADM_PCODE_y"] if c in merged.columns], inplace=True)
+            elif "ADM_PCODE" in merged.columns and adm_cols.count("ADM_PCODE") > 1:
+                merged = merged.loc[:, ~merged.columns.duplicated()]
+
+            admin_level = id_col.split("_")[0]
             output_dir = Path("data") / country_code / "Output"
             output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -547,10 +578,10 @@ def coping_asset(context, access_asset: List[str], facilities_asset: List[str]) 
             merged.to_csv(output_path, index=False)
             outputs.append(str(output_path))
 
-            context.log.info(f"[{country_code}] Wrote coping CSV: {output_path}")
+            context.log.info(f"[{country_code}] Wrote coping CSV: {output_path} ({len(merged.columns)} cols)")
 
         except Exception as e:
-            context.log.warning(f"Failed to merge {access_csv} and {facilities_csv}: {e}")
+            context.log.warning(f"Failed to merge for {country_code}: {e}")
 
     if not outputs:
         context.log.warning(f"No coping outputs created for {country_code}")
@@ -565,33 +596,38 @@ This layer is derived from the [**WorldPop**](https://www.worldpop.org/) global 
 
 ### Data Sources <a id="data-sources-4"></a>
 - **WorldPop Age-Sex Population Rasters:**  
-  Downloaded from the [WorldPop Global Constrained Population dataset](https://www.worldpop.org/geodata/listing?id=77) (`Global_2000_2020_Constrained`).  
+  Downloaded from the [WorldPop Global Constrained Population dataset](https://www.worldpop.org/geodata/listing?id=77) (`Global_2015_2030`, Release `R2025A`, Year `2030`).  
 - **Administrative boundaries** (GeoJSON): Used to spatially aggregate features at administrative level 2.
 
 
 ### Indicators <a id="indicators"></a>
 Each demographic indicator represents the **sum of population counts** matching specified age and sex ranges:
 
-| Indicator       | Description                                | Ages (years)       | Sexes |
-|-----------------|--------------------------------------------|--------------------|-------|
-| `female_pop`    | Total female population                    | 0–80+              | f     |
-| `children_u5`   | Total children under 5                     | 0–4                | f, m  |
-| `female_u5`     | Female children under 5                    | 0–4                | f     |
-| `elderly`       | Population aged 65 and above               | 65+                | f, m  |
-| `pop_u15`       | Population under 15                        | 0–14               | f, m  |
-| `female_u15`    | Female population under 15                 | 0–14               | f     |
+| Indicator            | Description                                | Ages (years)       | Sexes |
+|----------------------|--------------------------------------------|--------------------|-------|
+| `total_pop`          | Total population                           | 0–80+              | f, m  |
+| `female_pop`         | Total female population                    | 0–80+              | f     |
+| `children_u5`        | Total children under 5                     | 0–4                | f, m  |
+| `female_u5`          | Female children under 5                    | 0–4                | f     |
+| `elderly`            | Population aged 65 and above               | 65+                | f, m  |
+| `pop_u15`            | Population under 15                        | 0–14               | f, m  |
+| `female_u15`         | Female population under 15                 | 0–14               | f     |
+| `wra_pop`            | Women of reproductive age (15–49)          | 15–49              | f     |
+| `dependency_ratio`   | Dependency ratio = (dependents / working) × 100 | Derived      | —     |
 
 ### Processing Steps <a id="processing-steps-4"></a>
 1. **Download Required WorldPop Tiles**  
-   - For each indicator, the script identifies which age/sex rasters are needed (e.g., `m_0`, `f_1`, etc.).  
-   - Tiles are downloaded from **Worldpop**.
+   - For each indicator, the script identifies which age/sex rasters are needed (e.g., `m_00`, `f_01`, etc.).  
+   - Tiles are downloaded from **Worldpop** using the `Global_2015_2030` / `R2025A` / `2030` constrained dataset.
 2. **Merge and Sum Rasters**  
    - The corresponding age/sex tiles are summed into one raster per indicator.  
    - Outputs are saved in `data/{country}/Temporary/`.
 3. **Aggregate by Administrative Units**  
    - Using the administrative boundary GeoJSON (e.g., `ADM2`), zonal statistics are computed for each indicator.  
    - Population counts are summed per administrative area.
-4. **Output**  
+4. **Derive Dependency Ratio**  
+   - `dependency_ratio = (dep_dependents / dep_working) × 100` is computed per administrative unit.
+5. **Output**  
    - A single CSV per country: `{country_code}_{admin_level}_demographics.csv`
    - Saved to `data/{country}/Output/`
 
@@ -599,14 +635,18 @@ Each demographic indicator represents the **sum of population counts** matching 
 - **File:** `{country_code}_{admin_level}_demographics.csv`  
 - **Columns:**
   - `{admin_level}_PCODE`
+  - `ADM_PCODE` (alias column for compatibility)
+  - `total_pop`
   - `female_pop`
   - `children_u5`
   - `female_u5`
   - `elderly`
   - `pop_u15`
   - `female_u15`
+  - `wra_pop`
+  - `dependency_ratio`
 - **CRS:** WGS84 (`EPSG:4326`)  
-- **Units:** Population counts (integer, aggregated per administrative unit)
+- **Units:** Population counts (integer, aggregated per administrative unit), ratio (%)
 
 :::{dropdown} Python Script (Demographics)
 ```python
@@ -622,19 +662,23 @@ import logging
 import shutil
 from rasterstats import zonal_stats
 
-# Define indicators directly <a id="define-indicators-directly"></a>
 INDICATORS = {
+    "total_pop": {"ages": [0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80], "sexes": ["f", "m"]},
     "female_pop": {"ages": [0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80], "sexes": ["f"]},
     "children_u5": {"ages": [0, 1], "sexes": ["f", "m"]},
     "female_u5": {"ages": [0, 1], "sexes": ["f"]},
     "elderly": {"ages": [65, 70, 75, 80], "sexes": ["f", "m"]},
     "pop_u15": {"ages": [0, 1, 5, 10], "sexes": ["f", "m"]},
     "female_u15": {"ages": [0, 1, 5, 10], "sexes": ["f"]},
+    "wra_pop": {"ages": [15, 20, 25, 30, 35, 40, 45], "sexes": ["f"]},
+    "dep_dependents": {"ages": [0, 1, 5, 10, 65, 70, 75, 80], "sexes": ["f", "m"]},
+    "dep_working": {"ages": [15, 20, 25, 30, 35, 40, 45, 50, 55, 60], "sexes": ["f", "m"]}
 }
 
 BASE_URL = "https://data.worldpop.org/GIS"
-POP_TIMEFRAME = "Global_2000_2020_Constrained"
-YEAR = "2020"
+POP_TIMEFRAME = "Global_2015_2030"
+RELEASE = "R2025A"
+YEAR = "2030"
 
 
 def download_url(url, dest_path):
@@ -646,66 +690,44 @@ def download_url(url, dest_path):
 
 
 def merge_and_sum_rasters(raster_paths: List[str], out_path: str, context_log):
-    """
-    Open each path in `raster_paths`, read band 1 into memory, sum them,
-    and write a single‐band float32 GeoTIFF to `out_path`.
-    """
     if not raster_paths:
         raise ValueError("No rasters passed for merging!")
-
     with rasterio.open(raster_paths[0]) as src0:
         meta = src0.meta.copy()
         data_sum = src0.read(1, masked=True).filled(0).astype("float64")
-
     for p in raster_paths[1:]:
         with rasterio.open(p) as src:
             arr = src.read(1, masked=True).filled(0).astype("float64")
             data_sum += arr
-
     meta.update(dtype="float32", count=1, compress="lzw", nodata=0)
-
     with rasterio.open(out_path, "w", **meta) as dst:
         dst.write(data_sum.astype("float32"), 1)
-
     context_log.info(f"Wrote merged raster to {out_path}")
 
 
 def fetch_worldpop(country, context_log=None, worldpop_code=None):
-    """
-    Download WorldPop rasters for a country and aggregate into indicator rasters.
-    Produces 6 GeoTIFFs: one per indicator (no total population).
-    """
     if context_log is None:
         logging.basicConfig(level=logging.INFO)
         context_log = logging.getLogger("worldpop")
 
     country = country.upper()
+    worldpop_code = worldpop_code or country
+    worldpop_code_low = worldpop_code.lower()
 
-    if not worldpop_code:
-        worldpop_code = country
-        worldpop_code_low = country.lower()
-    else:
-        worldpop_code_low = worldpop_code.lower()
-
-    # Force output directory to Temporary
     out_dir = os.path.join("data", country, "Temporary")
     os.makedirs(out_dir, exist_ok=True)
 
-    # Pre-check: if all 6 indicator rasters already exist, skip
     expected_outputs = [
         os.path.join(out_dir, f"{country}_pop_{ind_name}_{YEAR}_constrained.tif")
         for ind_name in INDICATORS.keys()
     ]
     if all(os.path.exists(path) for path in expected_outputs):
-        context_log.info(f"[{country}] → all {len(expected_outputs)} WorldPop indicators already exist, skipping download.")
+        context_log.info(f"[{country}] -> indicators exist, skipping.")
         return expected_outputs
-    
+
     out_dir_raw = os.path.join(out_dir, "worldpop_raw")
     os.makedirs(out_dir_raw, exist_ok=True)
 
-    downloaded = []
-
-    # 1) Download needed age/sex rasters
     needed_bins = set()
     for ind in INDICATORS.values():
         for sex in ind["sexes"]:
@@ -713,21 +735,18 @@ def fetch_worldpop(country, context_log=None, worldpop_code=None):
                 needed_bins.add((sex, age))
 
     for sex, age in needed_bins:
-        fname = f"{worldpop_code_low}_{sex}_{age}_{YEAR}_constrained.tif"
-        url = f"{BASE_URL}/AgeSex_structures/{POP_TIMEFRAME}/{YEAR}/{worldpop_code}/{fname}"
+        age_str = str(age).zfill(2)
+        fname = f"{worldpop_code_low}_{sex}_{age_str}_{YEAR}_CN_100m_{RELEASE}_v1.tif"
+        url = f"{BASE_URL}/AgeSex_structures/{POP_TIMEFRAME}/{RELEASE}/{YEAR}/{worldpop_code}/v1/100m/constrained/{fname}"
         dest = os.path.join(out_dir_raw, f"{country}_{sex}_{age}_{YEAR}_constrained.tif")
         if not os.path.exists(dest):
-            context_log.info(f"[{country}] → downloading {sex}_{age}")
+            context_log.info(f"[{country}] -> downloading {sex}_{age_str} from {url}")
             try:
                 download_url(url, dest)
             except Exception as e:
-                context_log.info(f"[ERROR] failed to download {url}: {e}")
+                context_log.error(f"Failed to download {url}: {e}")
                 sys.exit(1)
-        else:
-            context_log.info(f"[{country}] → skipping existing {fname}")
-        downloaded.append(dest)
 
-    # 2) Aggregate indicators
     processed = []
     for ind_name, ind in INDICATORS.items():
         filtered_paths = [
@@ -737,29 +756,15 @@ def fetch_worldpop(country, context_log=None, worldpop_code=None):
         ]
         merged_out = os.path.join(out_dir, f"{country}_pop_{ind_name}_{YEAR}_constrained.tif")
         if not os.path.exists(merged_out):
-            context_log.info(f"[{country}] → processing indicator {ind_name}")
-            try:
-                merge_and_sum_rasters(filtered_paths, merged_out, context_log)
-            except Exception as e:
-                context_log.info(f"[ERROR] failed to process {ind_name}: {e}")
-                sys.exit(1)
-        else:
-            context_log.info(f"[{country}] → skipping existing {ind_name}")
+            merge_and_sum_rasters(filtered_paths, merged_out, context_log)
         processed.append(merged_out)
 
-    # 3) Delete raw folder
     if os.path.exists(out_dir_raw):
         shutil.rmtree(out_dir_raw)
-        context_log.info(f"[{country}] → deleted raw folder: {out_dir_raw}")
-
-    context_log.info(f"\n✔ ∙ {len(processed)} indicators saved under {out_dir}")
     return processed
 
 
 def aggregate_worldpop_to_csv(country_code: str, admin_level="ADM2", context_log=None) -> str:
-    """
-    Download WorldPop indicators for a country and save CSV.
-    """
     temp_dir = os.path.join("data", country_code, "Temporary")
     os.makedirs(temp_dir, exist_ok=True)
 
@@ -769,10 +774,8 @@ def aggregate_worldpop_to_csv(country_code: str, admin_level="ADM2", context_log
         logging.basicConfig(level=logging.INFO)
         context_log = logging.getLogger("worldpop")
 
-    # 1) Fetch indicators (6 GeoTIFFs) into data/{country}/Temporary
     tifs = fetch_worldpop(country=country_code, context_log=context_log)
 
-    # 2) Load ADM polygons
     adm_path = f"data/{country_code}/{country_code}_{admin_level}.geojson"
     gdf = gpd.read_file(adm_path)
 
@@ -783,23 +786,33 @@ def aggregate_worldpop_to_csv(country_code: str, admin_level="ADM2", context_log
             f"(found: {gdf.columns.tolist()})"
         )
 
-    # 3) Map indicator names to files
-    indicators = ["female_pop","children_u5","female_u5","elderly","pop_u15","female_u15"]
-    tif_map = dict(zip(indicators, tifs))
+    tif_map = dict(zip(INDICATORS.keys(), tifs))
 
     results = pd.DataFrame()
     results[f"{admin_level}_PCODE"] = gdf[f"{admin_level}_PCODE"]
+    results["ADM_PCODE"] = gdf[f"{admin_level}_PCODE"]
 
-    # 4) Compute zonal sums
     for ind, path in tif_map.items():
         stats = zonal_stats(gdf, path, stats="sum", nodata=0)
         results[ind] = [s["sum"] for s in stats]
 
-    # Round all numeric columns to 0 decimals
-    numeric_cols = results.columns.drop(f"{admin_level}_PCODE")
+    admin_col = f"{admin_level}_PCODE"
+    if "ADM_PCODE" not in results.columns and admin_col in results.columns:
+        results["ADM_PCODE"] = gdf[admin_col]
+
+    numeric_cols = [c for c in results.columns if c not in [admin_col, "ADM_PCODE"]]
+    results[numeric_cols] = results[numeric_cols].apply(
+        pd.to_numeric, errors="coerce"
+    ).fillna(0).replace([float("inf"), float("-inf")], 0)
+
     results[numeric_cols] = results[numeric_cols].round(0).astype(int)
 
-    # 5) Save CSV
+    results["dependency_ratio"] = (
+        (results["dep_dependents"] / results["dep_working"].replace(0, pd.NA)) * 100
+    ).fillna(0).round(2)
+
+    results.drop(columns=["dep_dependents", "dep_working"], inplace=True)
+
     out_dir = os.path.join("data", country_code, "Output")
     os.makedirs(out_dir, exist_ok=True)
     csv_path = os.path.join(out_dir, f"{country_code}_{admin_level}_demographics.csv")
@@ -850,7 +863,10 @@ This layer combines **WorldPop population rasters** with **Global Human Settleme
 - CSV file: `{country_code}_{admin_level}_rural_population.csv`
   - Columns:
     - `{admin_level}_PCODE`
-    - `{indicator}_rural` (e.g., `female_pop_rural`, `children_u5_rural`)
+    - `ADM_PCODE` (alias column for compatibility)
+    - `total_pop_rural`, `female_pop_rural`, `children_u5_rural`
+    - `female_u5_rural`, `elderly_rural`, `pop_u15_rural`, `female_u15_rural`, `wra_pop_rural`
+    - `dependency_ratio_rural` (rural dependency ratio = dependents / working × 100)
     - `rural_pop_perc` (percentage of population living in rural areas)
   - CRS: WGS84 (`EPSG:4326`)
   - Units: counts and percentages per administrative unit
@@ -872,7 +888,7 @@ import logging
 import geopandas as gpd
 
 from rasterstats import zonal_stats
-from scripts.fetch_worldpop import fetch_worldpop
+from scripts.fetch_worldpop import fetch_worldpop, INDICATORS
 
 RECLASS_MAP = {
     10: None,
@@ -887,7 +903,6 @@ SMOD_ZIP_URL = (
 
 
 def download_and_unzip_smod(work_dir, context):
-    """Download SMOD ZIP, unzip, return path to TIF."""
     zip_path = Path(work_dir) / "smod.zip"
     unzip_dir = Path(work_dir) / "unzipped"
     unzip_dir.mkdir(parents=True, exist_ok=True)
@@ -917,17 +932,14 @@ def reclassify_raster(in_tif, out_tif, reclass_map, context):
     with rasterio.open(in_tif) as src:
         meta = src.meta.copy()
         arr = src.read(1)
-
         nodata_val = 0
         out = np.full(arr.shape, nodata_val, dtype=np.uint8)
-
         for old, new in reclass_map.items():
             mask_val = (arr == old)
             if new is None:
                 out[mask_val] = nodata_val
             else:
                 out[mask_val] = new
-
         meta.update(count=1, dtype="uint8", nodata=nodata_val)
         with rasterio.open(out_tif, "w", **meta) as dst:
             dst.write(out, 1)
@@ -935,19 +947,13 @@ def reclassify_raster(in_tif, out_tif, reclass_map, context):
 
 
 def compute_rural_population(country_code, admin_level, gdf, work_dir, output_dir, context):
-    """
-    Compute rural population counts by admin unit for each indicator.
-    Generates smod_reclass.tif if missing. Skips if output CSV already exists.
-    Adds percentage columns (_rural_perc) for each indicator.
-    """
     country_code = country_code.upper()
-    work_dir = Path(f"{work_dir}/Temporary")
+    work_dir = Path(f"{work_dir}/downloads")
     temp_dir = Path(f"{work_dir}/data/{country_code}/Temporary")
     output_dir = Path(output_dir)
     reclass_tif = work_dir / "smod_reclass.tif"
     out_csv = output_dir / f"{country_code}_{admin_level}_rural_population.csv"
 
-    # --- skip if CSV exists ---
     if out_csv.exists():
         context.info(f"CSV already exists, skipping: {out_csv}")
         return str(out_csv)
@@ -956,7 +962,6 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
     unzip_dir = None
 
     try:
-        # --- ensure smod_reclass.tif exists ---
         if not reclass_tif.exists():
             context.info("smod_reclass.tif missing — will generate it")
             zip_path, unzip_dir, smod_tif = download_and_unzip_smod(work_dir, context)
@@ -964,25 +969,24 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
         else:
             context.info("Using existing smod_reclass.tif")
 
-        # Ensure WorldPop files exist
         context.info(f"Ensuring demographic rasters exist in {temp_dir}...")
         indicator_tifs = fetch_worldpop(country_code)
-        indicators = ["female_pop", "children_u5", "female_u5", "elderly", "pop_u15", "female_u15"]
-        tif_map = dict(zip(indicators, indicator_tifs))
+        indicators = ["total_pop", "female_pop", "children_u5", "female_u5", "elderly", "pop_u15", "female_u15", "wra_pop", "dep_dependents", "dep_working"]
+        tif_map = dict(zip(INDICATORS.keys(), indicator_tifs))
 
-        # --- load SMOD raster ---
         smod = rioxarray.open_rasterio(reclass_tif, masked=True).squeeze()
 
-        rural_df = pd.DataFrame({f"{admin_level}_PCODE": gdf[f"{admin_level}_PCODE"]})
+        rural_df = pd.DataFrame({
+            f"{admin_level}_PCODE": gdf[f"{admin_level}_PCODE"]
+        })
+        rural_df["ADM_PCODE"] = gdf[f"{admin_level}_PCODE"]
 
-        # Store total population sums
         total_pop_counts = {}
 
         for label in indicators:
             pop_raster_path = tif_map[label]
             pop_raster = rioxarray.open_rasterio(pop_raster_path, masked=True).squeeze()
 
-            # Align SMOD raster to population raster
             smod_aligned = smod.rio.reproject_match(pop_raster, resampling=rasterio.enums.Resampling.nearest)
             rural_mask = (smod_aligned == 1).astype("float32")
             rural_pop = pop_raster * rural_mask
@@ -995,31 +999,28 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
             with rasterio.open(tmp_rural, "w", **meta) as dst:
                 dst.write(rural_pop.values, 1)
 
-            # Rural population sums per admin unit
             stats = zonal_stats(gdf, tmp_rural, stats="sum", nodata=0)
             rural_df[f"{label}_rural"] = [s["sum"] if s["sum"] is not None else 0 for s in stats]
 
-            # Total population sums per admin unit
             total_stats = zonal_stats(gdf, pop_raster_path, stats="sum", nodata=0)
             total_pop_counts[label] = [s["sum"] if s["sum"] is not None else 0 for s in total_stats]
 
             context.info(f"Processed rural population for {label}")
 
-        # --- calculate one overall rural percentage column ---
-        # Use total population (e.g. pop_u15 as proxy, or sum of all groups)
-        total_pop = pd.Series(total_pop_counts["female_pop"]).replace({0: np.nan})
+        dep_col_num = rural_df["dep_dependents_rural"]
+        dep_col_den = rural_df["dep_working_rural"].replace(0, pd.NA)
+        rural_df["dependency_ratio_rural"] = ((dep_col_num / dep_col_den) * 100).fillna(0).round(2)
+        rural_df.drop(columns=["dep_dependents_rural", "dep_working_rural"], inplace=True)
+
+        total_pop = pd.Series(total_pop_counts["total_pop"]).replace({0: np.nan})
         rural_df["rural_pop_perc"] = (
-            rural_df["female_pop_rural"] / total_pop * 100
+            rural_df["total_pop_rural"] / total_pop * 100
         ).fillna(0).round(2)
 
-        # --- finalize ---
-        count_cols = [c for c in rural_df.columns if c.endswith("_rural")]
+        count_cols = [c for c in rural_df.columns if c.endswith("_rural") and "dependency_ratio" not in c]
         perc_cols = [c for c in rural_df.columns if c.endswith("_rural_perc")]
 
-        # Counts → integers
         rural_df[count_cols] = rural_df[count_cols].fillna(0).round(0).astype(int)
-
-        # Percentages → keep 2 decimals
         rural_df[perc_cols] = rural_df[perc_cols].fillna(0).round(2)
 
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -1027,15 +1028,12 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
         context.info(f"Rural population CSV written to {out_csv}")
 
     finally:
-        # cleanup
         if zip_path and zip_path.exists():
             zip_path.unlink()
             context.info(f"Deleted {zip_path}")
         if unzip_dir and unzip_dir.exists():
             shutil.rmtree(unzip_dir)
             context.info(f"Deleted {unzip_dir}")
-        
-                # cleanup tmp_rural rasters
         for tmp_file in work_dir.glob("tmp_rural_*.tif"):
             try:
                 tmp_file.unlink()
@@ -1048,16 +1046,364 @@ def compute_rural_population(country_code, admin_level, gdf, work_dir, output_di
 :::
 
 ---
-## 6. Vulnerability <a id="6-vulnerability"></a>
+## 6. Rural Accessibility Index (RAI) <a id="6-rural-accessibility-index-rai"></a>
+Computes the percentage of rural population with access to a paved road within 2 km. The Rural Accessibility Index measures the proportion of people living in rural areas (GHS-SMOD classes 11–13) who live within 2 km of a paved road surface. Results are provided for multiple demographic groups and as a dependency ratio for the accessible rural population.
+
+### Data Sources <a id="data-sources-6"></a>
+- **Road Surface Data:** Mapillary road surface classification (`pred_label == 0` for paved) and Planet road surface classification (`DL_road_class_2024 == "paved"`), downloaded from HEiGIT/HDX storage.
+- **GHS-SMOD Raster:** Global Human Settlement Layer settlement model for 2030, used to classify grid cells as rural (classes 11–13).
+- **WorldPop Population Rasters:** Used to extract population counts per demographic group within accessible rural areas.
+- **Administrative Boundaries** (GeoJSON): Used to disaggregate results per admin unit.
+
+### Indicators <a id="indicators-6"></a>
+| Indicator | Description | Units |
+|-----------|-------------|-------|
+| `rural_access_{group}` | Population in rural areas within 2 km of a paved road | people |
+| `RAI_{group}` | Rural Accessibility Index = rural access / rural pop × 100 | % |
+| `rural_access_dependency_ratio` | Dependency ratio within accessible rural areas | % |
+
+Demographic groups: `total_pop`, `female_pop`, `children_u5`, `female_u5`, `elderly`, `pop_u15`, `female_u15`, `wra_pop`, `dependents`, `working`.
+
+### Processing Steps <a id="processing-steps-6"></a>
+1. **Download road surface data** (Mapillary and Planet) for the country, filter to paved roads only.
+2. **Buffer paved roads by 2 km** in a projected CRS (UTM zone estimated from country centroid).
+3. **Intersect buffered roads with admin boundaries** to determine per-admin-unit road service areas.
+4. **Download and reclassify GHS-SMOD raster** into rural (1) / urban (2) / excluded (0).
+5. **Clip SMOD to country boundary** and vectorize rural pixels into polygons.
+6. **Intersect rural polygons with buffered roads** to identify accessible rural areas.
+7. **Extract WorldPop population counts** for each demographic group within accessible rural areas.
+8. **Load rural population totals** from the *Rural Population* CSV to use as denominator.
+9. **Compute RAI ratios:** `rural_access_{group} / {group}_rural × 100`.
+10. **Compute dependency ratio:** `rural_access_dependents / rural_access_working × 100`.
+11. **Write CSV** per admin unit.
+
+### Outputs <a id="outputs-6"></a>
+- **File:** `{country_code}_{admin_level}_rai.csv`
+- **Columns:**
+  - `{admin_level}_PCODE`
+  - `rural_access_children_u5`, `rural_access_dependents`, `rural_access_working`
+  - `rural_access_elderly`, `rural_access_female_pop`, `rural_access_female_u15`
+  - `rural_access_female_u5`, `rural_access_pop_u15`, `rural_access_total_pop`
+  - `rural_access_wra_pop`, `rural_access_dependency_ratio`
+  - `RAI_total_pop`, `RAI_female_pop`, `RAI_children_u5`, `RAI_female_u5`
+  - `RAI_elderly`, `RAI_pop_u15`, `RAI_female_u15`, `RAI_wra_pop`
+- **CRS:** WGS84 (`EPSG:4326`)
+- **Units:** population counts, percentages (%)
+
+:::{dropdown} Python Script (Rural Accessibility Index)
+```python
+import os
+import shutil
+from pathlib import Path
+import geopandas as gpd
+import pandas as pd
+import numpy as np
+import rioxarray
+import rasterio
+import requests
+from rasterstats import zonal_stats
+from scripts.fetch_ruralness_ghsl import download_and_unzip_smod, reclassify_raster, RECLASS_MAP
+from scripts.fetch_worldpop import fetch_worldpop, INDICATORS as WP_INDICATORS
+
+RAI_INDICATORS = [
+    "total_pop", "female_pop", "children_u5", "female_u5",
+    "elderly", "pop_u15", "female_u15", "wra_pop",
+    "dep_dependents", "dep_working",
+]
+
+OUTPUT_NAME_MAP = {
+    "total_pop": "total_pop", "female_pop": "female_pop",
+    "children_u5": "children_u5", "female_u5": "female_u5",
+    "elderly": "elderly", "pop_u15": "pop_u15",
+    "female_u15": "female_u15", "wra_pop": "wra_pop",
+    "dep_dependents": "dependents", "dep_working": "working",
+}
+
+ISO3_TO_ISO2 = {
+    "AFG": "AF", "AGO": "AO", "ALB": "AL", "ARE": "AE", "ARG": "AR",
+    "ARM": "AM", "ATG": "AG", "AZE": "AZ", "BDI": "BI", "BEN": "BJ",
+    "BFA": "BF", "BGD": "BD", "BGR": "BG", "BHR": "BH", "BHS": "BS",
+    "BLR": "BY", "BLZ": "BZ", "BOL": "BO", "BRA": "BR", "BRB": "BB",
+    "BTN": "BT", "BWA": "BW", "CAF": "CF", "CHL": "CL", "CHN": "CN",
+    "CIV": "CI", "CMR": "CM", "COD": "CD", "COG": "CG", "COL": "CO",
+    "COM": "KM", "CPV": "CV", "CRI": "CR", "CUB": "CU", "DJI": "DJ",
+    "DMA": "DM", "DOM": "DO", "DZA": "DZ", "ECU": "EC", "EGY": "EG",
+    "ERI": "ER", "ESH": "EH", "ETH": "ET", "FJI": "FJ", "FSM": "FM",
+    "GAB": "GA", "GEO": "GE", "GHA": "GH", "GIN": "GN", "GMB": "GM",
+    "GNB": "GW", "GNQ": "GQ", "GRC": "GR", "GRD": "GD", "GTM": "GT",
+    "GUY": "GY", "HND": "HN", "HTI": "HT", "HUN": "HU", "IDN": "ID",
+    "IRN": "IR", "IRQ": "IQ", "JAM": "JM", "KAZ": "KZ", "KEN": "KE",
+    "KGZ": "KG", "KHM": "KH", "KIR": "KI", "KNA": "KN", "KWT": "KW",
+    "LAO": "LA", "LBN": "LB", "LBR": "LR", "LBY": "LY", "LCA": "LC",
+    "LKA": "LK", "LSO": "LS", "MAR": "MA", "MDA": "MD", "MDG": "MG",
+    "MDV": "MV", "MEX": "MX", "MHL": "MH", "MKD": "MK", "MLI": "ML",
+    "MMR": "MM", "MNG": "MN", "MOZ": "MZ", "MRT": "MR", "MUS": "MU",
+    "MWI": "MW", "MYS": "MY", "NAM": "NA", "NER": "NE", "NGA": "NG",
+    "NIC": "NI", "NPL": "NP", "OMN": "OM", "PAK": "PK", "PAN": "PA",
+    "PER": "PE", "PHL": "PH", "PNG": "PG", "PRK": "KP", "PRY": "PY",
+    "QAT": "QA", "ROU": "RO", "RUS": "RU", "RWA": "RW", "SAU": "SA",
+    "SDN": "SD", "SEN": "SN", "SLB": "SB", "SLE": "SL", "SLV": "SV",
+    "SOM": "SO", "SSD": "SS", "STP": "ST", "SUR": "SR", "SWZ": "SZ",
+    "SYC": "SC", "SYR": "SY", "TCD": "TD", "TGO": "TG", "THA": "TH",
+    "TJK": "TJ", "TLS": "TL", "TON": "TO", "TTO": "TT", "TUN": "TN",
+    "TUR": "TR", "TZA": "TZ", "UGA": "UG", "UKR": "UA", "URY": "UY",
+    "UZB": "UZ", "VCT": "VC", "VEN": "VE", "VNM": "VN", "VUT": "VU",
+    "YEM": "YE", "ZAF": "ZA", "ZMB": "ZM", "ZWE": "ZW",
+}
+
+
+def country_iso2(country_code):
+    return ISO3_TO_ISO2.get(country_code.upper(), country_code[:2])
+
+
+def download_road_data(country_code, download_dir, context):
+    country_code = country_code.upper()
+    iso3_lower = country_code.lower()
+    iso2 = country_iso2(country_code).lower()
+    download_dir = Path(download_dir)
+    download_dir.mkdir(parents=True, exist_ok=True)
+
+    mapillary_url = (
+        f"https://downloads.ohsome.org/hdx/mapillary_road_surface/"
+        f"heigit_{iso3_lower}_roadsurface_lines.gpkg"
+    )
+    planet_url = (
+        f"https://hot.storage.heigit.org/heigit-hdx-public/planet_road_data/"
+        f"heigit_{iso2.upper()}_planet_roadsurface_lines.gpkg"
+    )
+
+    mapillary_path = download_dir / f"heigit_{iso3_lower}_roadsurface_lines.gpkg"
+    planet_path = download_dir / f"heigit_{iso2.upper()}_planet_roadsurface_lines.gpkg"
+
+    paths = {"mapillary": None, "planet": None}
+
+    if mapillary_path.exists():
+        paths["mapillary"] = str(mapillary_path)
+    else:
+        resp = requests.get(mapillary_url, stream=True, timeout=300)
+        if resp.status_code == 200:
+            with open(mapillary_path, "wb") as f:
+                for chunk in resp.iter_content(1024 * 1024):
+                    f.write(chunk)
+            paths["mapillary"] = str(mapillary_path)
+
+    if planet_path.exists():
+        paths["planet"] = str(planet_path)
+    else:
+        resp = requests.get(planet_url, stream=True, timeout=300)
+        if resp.status_code == 200:
+            with open(planet_path, "wb") as f:
+                for chunk in resp.iter_content(1024 * 1024):
+                    f.write(chunk)
+            paths["planet"] = str(planet_path)
+
+    return paths
+
+
+def estimate_utm(gdf):
+    centroid = gdf.dissolve().centroid.iloc[0]
+    lon, lat = centroid.x, centroid.y
+    utm_zone = int((lon + 180) / 6) + 1
+    return f"EPSG:{32600 + utm_zone if lat >= 0 else 32700 + utm_zone}"
+
+
+RAI_OUTPUT_COLUMNS = [
+    "rural_access_children_u5", "rural_access_dependents", "rural_access_working",
+    "rural_access_elderly", "rural_access_female_pop", "rural_access_female_u15",
+    "rural_access_female_u5", "rural_access_pop_u15", "rural_access_total_pop",
+    "rural_access_wra_pop", "rural_access_dependency_ratio",
+    "RAI_total_pop", "RAI_female_pop", "RAI_children_u5", "RAI_female_u5",
+    "RAI_elderly", "RAI_pop_u15", "RAI_female_u15", "RAI_wra_pop",
+]
+
+
+def compute_rai(country_code, admin_level, gdf_admin, output_dir, work_dir,
+                mapillary_path, planet_path, demographics_csv, rural_csv, context):
+    country_code = country_code.upper()
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    work_dir = Path(work_dir)
+    work_dir.mkdir(parents=True, exist_ok=True)
+    temp_dir = work_dir / "rai_temp"
+    temp_dir.mkdir(parents=True, exist_ok=True)
+
+    id_col = f"{admin_level}_PCODE"
+    if id_col not in gdf_admin.columns:
+        raise ValueError(f"Column {id_col} not found in admin boundaries")
+
+    out_csv = output_dir / f"{country_code}_{admin_level}_rai.csv"
+    if out_csv.exists():
+        return str(out_csv)
+
+    # 1. Load paved road data
+    all_roads = []
+    if mapillary_path and os.path.exists(mapillary_path):
+        mly = gpd.read_file(mapillary_path)
+        if "pred_label" in mly.columns:
+            mly = mly[mly["pred_label"] == 0]
+        all_roads.append(mly.to_crs(4326))
+    if planet_path and os.path.exists(planet_path):
+        plt = gpd.read_file(planet_path)
+        if "DL_road_class_2024" in plt.columns:
+            plt = plt[plt["DL_road_class_2024"] == "paved"]
+        all_roads.append(plt.to_crs(4326))
+    if not all_roads:
+        pd.DataFrame({id_col: gdf_admin[id_col]}).to_csv(out_csv, index=False)
+        return str(out_csv)
+
+    merged_roads = pd.concat(all_roads, ignore_index=True)
+
+    # 2. Buffer roads by 2 km
+    utm_crs = estimate_utm(gdf_admin)
+    buffered = (
+        merged_roads[["geometry"]].to_crs(utm_crs).buffer(2000).union_all()
+    )
+    buffered_gdf = gpd.GeoDataFrame(geometry=[buffered], crs=utm_crs).to_crs(4326)
+
+    roads_by_adm = gpd.overlay(buffered_gdf, gdf_admin[[id_col, "geometry"]], how="intersection")
+    if roads_by_adm.empty:
+        pd.DataFrame({id_col: gdf_admin[id_col]}).to_csv(out_csv, index=False)
+        return str(out_csv)
+
+    # 3. Process GHS-SMOD
+    smod_work = Path("downloads")
+    smod_work.mkdir(parents=True, exist_ok=True)
+    reclass_tif = smod_work / "smod_reclass.tif"
+    if not reclass_tif.exists():
+        _, _, smod_tif = download_and_unzip_smod(smod_work, context)
+        reclassify_raster(smod_tif, reclass_tif, RECLASS_MAP, context)
+
+    # 4. Clip SMOD to country
+    adm0_path = Path(output_dir).parent.parent / f"{country_code}_ADM0.geojson"
+    if adm0_path.exists():
+        gdf_adm0 = gpd.read_file(adm0_path)
+    else:
+        gdf_adm0 = gdf_admin.dissolve()
+
+    smod = rioxarray.open_rasterio(reclass_tif, masked=True).squeeze()
+    gdf_adm0_smod = gdf_adm0.to_crs(smod.rio.crs)
+    smod_clipped = smod.rio.clip(gdf_adm0_smod.geometry, drop=True)
+    rural_mask = (smod_clipped == 1).astype("float32")
+
+    # 5. Vectorize rural SMOD
+    from rasterio.features import shapes as rasterio_shapes
+    from shapely.geometry import shape
+
+    rural_values = (smod_clipped.values == 1).astype("uint8")
+    transform = smod_clipped.rio.transform()
+    poly_gen = rasterio_shapes(rural_values, mask=rural_values == 1, transform=transform)
+    rural_geoms = [shape(g) for g, _ in poly_gen if g]
+    if not rural_geoms:
+        pd.DataFrame({id_col: gdf_admin[id_col]}).to_csv(out_csv, index=False)
+        return str(out_csv)
+
+    rural_gdf = gpd.GeoDataFrame(geometry=rural_geoms, crs=smod_clipped.rio.crs)
+    rural_gdf["geometry"] = rural_gdf["geometry"].make_valid()
+    rural_single = rural_gdf.dissolve().to_crs(4326)
+
+    # 6. Intersect rural with buffered roads
+    accessible_rural = gpd.overlay(buffered_gdf, rural_single, how="intersection")
+    if accessible_rural.empty:
+        pd.DataFrame({id_col: gdf_admin[id_col]}).to_csv(out_csv, index=False)
+        return str(out_csv)
+
+    accessible_rural = accessible_rural.dissolve()
+    accessible_rural["geometry"] = accessible_rural["geometry"].make_valid()
+
+    # 7. Per admin unit
+    admin_accessible = gpd.overlay(
+        gdf_admin[[id_col, "geometry"]], accessible_rural, how="intersection",
+    )
+    if admin_accessible.empty:
+        pd.DataFrame({id_col: gdf_admin[id_col]}).to_csv(out_csv, index=False)
+        return str(out_csv)
+
+    admin_accessible["geometry"] = admin_accessible["geometry"].make_valid()
+
+    # 8. Extract population counts
+    indicator_tifs = fetch_worldpop(country_code)
+    tif_map = dict(zip(WP_INDICATORS.keys(), indicator_tifs))
+
+    results = pd.DataFrame({id_col: gdf_admin[id_col]})
+    for indicator in RAI_INDICATORS:
+        pop_tif = tif_map[indicator]
+        stats = zonal_stats(admin_accessible, pop_tif, stats="sum", nodata=0)
+        output_name = {
+            "total_pop": "total_pop", "female_pop": "female_pop",
+            "children_u5": "children_u5", "female_u5": "female_u5",
+            "elderly": "elderly", "pop_u15": "pop_u15",
+            "female_u15": "female_u15", "wra_pop": "wra_pop",
+            "dep_dependents": "dependents", "dep_working": "working",
+        }[indicator]
+        pcode_to_sum = pd.Series(
+            [round(s["sum"], 0) if s["sum"] is not None else 0 for s in stats],
+            index=admin_accessible[id_col].values,
+        )
+        results[f"rural_access_{output_name}"] = (
+            results[id_col].map(pcode_to_sum).fillna(0).astype(int)
+        )
+
+    # 9. Load rural population CSV for denominators
+    df_rural = pd.read_csv(rural_csv)
+    rural_denom = {
+        ind: f"{ind}_rural"
+        for ind in RAI_INDICATORS
+        if ind not in ("dep_dependents", "dep_working")
+    }
+    rural_cols = [id_col] + list(rural_denom.values())
+    available_rural_cols = [c for c in rural_cols if c in df_rural.columns]
+    if available_rural_cols:
+        results = results.merge(df_rural[available_rural_cols], on=id_col, how="left")
+
+    # 10. Compute RAI ratios
+    name_to_key = {v: k for k, v in {
+        "total_pop": "total_pop", "female_pop": "female_pop",
+        "children_u5": "children_u5", "female_u5": "female_u5",
+        "elderly": "elderly", "pop_u15": "pop_u15",
+        "female_u15": "female_u15", "wra_pop": "wra_pop",
+        "dependents": "dep_dependents", "working": "dep_working",
+    }.items()}
+
+    for output_name in ["total_pop", "female_pop", "children_u5", "female_u5",
+                         "elderly", "pop_u15", "female_u15", "wra_pop"]:
+        access_col = f"rural_access_{output_name}"
+        rural_col = f"{output_name}_rural"
+        ratio_col = f"RAI_{output_name}"
+        if rural_col in results.columns:
+            results[ratio_col] = np.where(
+                results[rural_col].fillna(0) > 0,
+                (results[access_col].fillna(0) / results[rural_col].replace(0, np.nan) * 100).round(1),
+                0,
+            )
+
+    dep_num = results["rural_access_dependents"].fillna(0)
+    dep_den = results["rural_access_working"].replace(0, pd.NA)
+    results["rural_access_dependency_ratio"] = np.where(
+        dep_den.notna() & (dep_den > 0),
+        (dep_num / dep_den * 100).round(1),
+        pd.NA,
+    )
+
+    # 11. Finalize and save
+    final_cols = [id_col] + [c for c in RAI_OUTPUT_COLUMNS if c in results.columns]
+    results[final_cols].round(1).to_csv(out_csv, index=False)
+
+    shutil.rmtree(temp_dir, ignore_errors=True)
+    return str(out_csv)
+```
+:::
+
+
+## 7. Vulnerability <a id="7-vulnerability"></a>
 Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.  
 This layer combines *Demographics* and *Rural Population* indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.
 
-### Data Sources <a id="data-sources-6"></a>
+### Data Sources <a id="data-sources-7"></a>
 - **Demographics CSVs:** Derived from [WorldPop](https://www.worldpop.org/) population datasets, disaggregated by age and sex (see *Demographics* chapter).  
 - **Rural Population CSVs:** Derived from settlement layer analysis separating rural and urban populations (see *Rural Population* chapter).  
 - Both datasets are aggregated to the same administrative level (e.g., ADM2).
 
-### Processing Steps <a id="processing-steps-6"></a>
+### Processing Steps <a id="processing-steps-7"></a>
 1. **Input CSVs:**  
    - One *Demographics* CSV and one *Rural Population* CSV are provided per administrative level.  
    - Each file contains an identifier column such as `ADM0_PCODE`, `ADM1_PCODE`, or `ADM2_PCODE`.
@@ -1073,7 +1419,7 @@ This layer combines *Demographics* and *Rural Population* indicators to highligh
    - The merged dataset is exported as `{country_code}_{admin_level}_vulnerability.csv` to the `Output/` directory.  
    - One file is created per administrative level present in the input data.
 
-### Outputs <a id="outputs-6"></a>
+### Outputs <a id="outputs-7"></a>
 - **File:** `{country_code}_{admin_level}_vulnerability.csv`
 - **Columns:**
   - `{admin_level}_PCODE`
@@ -1136,440 +1482,12 @@ def vulnerability_asset(context, demographics_asset: List[str], rural_asset: Lis
 :::
 
 ---
-## 7. Crop Coverage and Change <a id="7-crop-coverage-and-change"></a>
-Quantifies the extent and temporal change of cropland areas within administrative boundaries. 
-
-This layer evaluates **total cropland coverage** as well as **changes in cropland area** between 2023 and 2024 using **Google Dynamic World (V1)**. This dataset provides 10 m, near-real-time land classification derived from Sentinel-2 imagery. For each administrative unit, the proportion of pixels classified as “cropland” (class 4) is calculated for both years. These percentages are then compared to determine both absolute and relative changes in cropland area.
-
-### Data Sources <a id="data-sources-7"></a>
-- **Dynamic World V1** (`GOOGLE/DYNAMICWORLD/V1`):  
-  Global, near real-time land cover dataset from Google Earth Engine, with 10 m spatial resolution and daily temporal frequency.  
-- **Administrative Boundaries** (GeoJSON):  
-  Used to aggregate cropland extent within each administrative area (e.g., ADM2).  
-- **Configuration File** (`configs/assets_config.yaml`):  
-  Defines two reference years under `crops_asset: years: [year1, year2]` for comparison.
-
-### Indicators <a id="indicators-2"></a>
-| Indicator | Description | Units |
-|------------|-------------|--------|
-| `crops_{year1}_pct` | Percentage of total area classified as crops in the first year | % |
-| `crops_{year2}_pct` | Percentage of total area classified as crops in the second year | % |
-| `crops_diff_km2` | Absolute change in cropland area between the two years | km² |
-| `crops_diff_pctpts` | Percentage point difference in cropland coverage | % points |
-| `crops_change_rel_pct` | Relative percentage change compared to the baseline year | % |
-
-### Processing Steps <a id="processing-steps-7"></a>
-1. **Configuration Parsing:**  
-   - The script reads `assets_config.yaml` and extracts the two comparison years (e.g., 2018 and 2022).  
-   - If the configuration does not define two valid years, an error is raised.
-
-2. **Input Geometry:**  
-   - The administrative boundary file `data/{country_code}/{country_code}_{admin_level}.geojson` is loaded using `GeoPandas`.
-
-3. **Earth Engine Setup:**  
-   - The script initializes Google Earth Engine (`ee.Initialize(project="aa-automatization")`).  
-   - The `GOOGLE/DYNAMICWORLD/V1` collection is used to generate yearly **mode composites** for each year and boundary polygon.
-
-4. **Cropland Extraction:**  
-   - Each composite image is classified into Dynamic World labels.  
-   - Label `4` corresponds to **cropland**.  
-   - For each administrative unit, the mean cropland fraction is computed (as % of total area).
-
-5. **Change Calculation:**  
-   - The following statistics are derived per polygon:
-     - Percentage of cropland per year (`crops_{year1}_pct`, `crops_{year2}_pct`)
-     - Absolute area change in km² (`crops_diff_km2`)
-     - Difference in percentage points (`crops_diff_pctpts`)
-     - Relative change compared to the first year (`crops_change_rel_pct`)
-
-6. **Chunked Processing:**  
-   - To handle large datasets, polygons are processed in chunks (default: 20 features at a time).  
-   - Each chunk’s results are written to a temporary CSV, then appended to the final output.
-
-7. **Output Generation:**  
-   - The combined dataset is saved as `{country_code}_{admin_level}_crops.csv` under `data/{country_code}/Output/`.
-
-### Outputs <a id="outputs-7"></a>
-- **File:** `{country_code}_{admin_level}_crops.csv`  
-- **Columns:**
-  - `{admin_level}_PCODE`
-  - `crops_{year1}_pct`
-  - `crops_{year2}_pct`
-  - `crops_diff_km2`
-  - `crops_diff_pctpts`
-  - `crops_change_rel_pct`
-- **CRS:** WGS84 (`EPSG:4326`)  
-- **Units:** Percentages (%) and area (km²)
-
-:::{dropdown} Python Script (Crop Coverage and Change)
-```python
-import os
-import geopandas as gpd
-import pandas as pd
-import geemap
-import ee
-import yaml
-import argparse
-
-def load_years_from_config(config_path="configs/assets_config.yaml"):
-    """Load years from crops_asset in assets_config.yaml"""
-    with open(config_path, "r") as f:
-        cfg = yaml.safe_load(f)
-    years = cfg.get("crops_asset", {}).get("years", [])
-    if not years or len(years) != 2:
-        raise ValueError("assets_config.yaml must define crops_asset: years: [year1, year2]")
-    return years[0], years[1]
-
-
-def process_crops_for_admin(country_code: str, admin_level: str, config_path="configs/assets_config.yaml") -> str:
-    """Run crop coverage calculation for a given country/admin level and return output CSV path."""
-
-    # Initialize Earth Engine
-    ee.Initialize(project="aa-automatization")
-
-    year_prev, year_curr = load_years_from_config(config_path)
-
-    gdf = gpd.read_file(f"data/{country_code}/{country_code}_{admin_level}.geojson")
-
-    chunk_size = 20
-    start_idx = 0
-    
-    # Ensure Output folder exists
-    os.makedirs(f"data/{country_code}/Output", exist_ok=True)
-    output_csv = f"data/{country_code}/Output/{country_code}_{admin_level}_crops.csv"
-
-    if os.path.exists(output_csv):
-        os.remove(output_csv)
-
-    col_order = [
-        f"{admin_level.upper()}_PCODE",
-        f"crops_{year_prev}_pct",
-        f"crops_{year_curr}_pct",
-        "crops_diff_km2",
-        "crops_diff_pctpts",
-        "crops_change_rel_pct",
-    ]
-
-    dw = ee.ImageCollection("GOOGLE/DYNAMICWORLD/V1")
-
-    def yearly_composite(y, geom):
-        coll = (
-            dw.filterDate(f"{y}-01-01", f"{y}-12-31")
-            .filterBounds(geom)
-            .select("label")
-        )
-        return coll.reduce(ee.Reducer.mode())
-
-    while start_idx < len(gdf):
-        end_idx = start_idx + chunk_size
-        gdf_chunk = gdf.iloc[start_idx:end_idx]
-
-        try:
-            fc = geemap.geopandas_to_ee(gdf_chunk)
-
-            def add_crops_stats(feature):
-                geom = feature.geometry()
-                comp_prev = yearly_composite(year_prev, geom)
-                comp_curr = yearly_composite(year_curr, geom)
-
-                polygon_area_km2 = ee.Number(geom.area()).divide(1e6)
-
-                crop_prev_raw = comp_prev.eq(4).rename("crops").reduceRegion(
-                    reducer=ee.Reducer.mean(),
-                    geometry=geom,
-                    scale=10,
-                    bestEffort=True,
-                ).get("crops")
-
-                crop_curr_raw = comp_curr.eq(4).rename("crops").reduceRegion(
-                    reducer=ee.Reducer.mean(),
-                    geometry=geom,
-                    scale=10,
-                    bestEffort=True,
-                ).get("crops")
-
-                crop_prev_perc = ee.Number(ee.Algorithms.If(crop_prev_raw, crop_prev_raw, 0)).multiply(100)
-                crop_curr_perc = ee.Number(ee.Algorithms.If(crop_curr_raw, crop_curr_raw, 0)).multiply(100)
-
-                crops_perc_point_dif = crop_curr_perc.subtract(crop_prev_perc)
-                crops_abs_dif_km2 = crops_perc_point_dif.multiply(polygon_area_km2).divide(100)
-
-                crops_rel_change_perc = ee.Algorithms.If(
-                    crop_prev_perc.neq(0),
-                    crops_perc_point_dif.divide(crop_prev_perc).multiply(100),
-                    None,
-                )
-
-                return feature.set({
-                    f"crops_{year_prev}_pct": crop_prev_perc,
-                    f"crops_{year_curr}_pct": crop_curr_perc,
-                    "crops_diff_km2": crops_abs_dif_km2,
-                    "crops_diff_pctpts": crops_perc_point_dif,
-                    "crops_change_rel_pct": crops_rel_change_perc,
-                })
-
-            fc_with_stats = fc.map(add_crops_stats)
-            fc_filtered = fc_with_stats.select(
-                propertySelectors=col_order, retainGeometry=False
-            )
-
-            temp_csv = f"data/{country_code}/{country_code}_crops_{admin_level}_temp_chunk.csv"
-            geemap.ee_to_csv(fc_filtered, filename=temp_csv)
-
-            df_chunk = pd.read_csv(temp_csv)
-            df_chunk = df_chunk[[c for c in col_order if c in df_chunk.columns]]
-            df_chunk[col_order[1:]] = df_chunk[col_order[1:]].round(2)
-
-            if start_idx == 0 and not os.path.exists(output_csv):
-                df_chunk.to_csv(output_csv, index=False)
-            else:
-                df_chunk.to_csv(output_csv, mode="a", header=False, index=False)
-
-            os.remove(temp_csv)
-            start_idx = end_idx
-
-        except Exception:
-            start_idx = end_idx
-
-    return output_csv
-```
-:::
-
----
-## 8. Vegetation Index <a id="8-vegetation-index"></a>
-Evaluates vegetation health and density using the **Normalized Difference Vegetation Index (NDVI)** derived from **Landsat** composites. NDVI values range from -1 to +1, where higher values indicate denser and healthier vegetation, while lower values reflect sparse or stressed vegetation, bare soil, or urban surfaces. 
-
-This layer provides summary statistics (mean, median, quartiles) and surface extent of high, medium, and low NDVI zones per administrative boundary.
-
-### Data Sources <a id="data-sources-8"></a>
-- **Landsat NDVI Composite** (`LANDSAT/COMPOSITES/C02/T1_L2_8DAY_NDVI`):  
-  8-day composite product containing NDVI values at 30 m resolution.  
-- **Administrative Boundaries** (GeoJSON):  
-  Used for spatial aggregation at ADM levels (e.g., ADM2).  
-- **Configuration File** (`configs/assets_config.yaml`):  
-  Defines the target year under `ndvi_asset: year: [YYYY]`.
-
-### Indicators <a id="indicators-3"></a>
-| Indicator | Description | Units |
-|------------|-------------|--------|
-| `NDVI_mean` | Mean NDVI value across the administrative unit | NDVI (unitless) |
-| `NDVI_median` | Median NDVI value | NDVI (unitless) |
-| `NDVI_p25` | 25th percentile NDVI | NDVI (unitless) |
-| `NDVI_p75` | 75th percentile NDVI | NDVI (unitless) |
-| `NDVI_high_sqkm` | Area with NDVI ≥ 0.6 | km² |
-| `NDVI_medium_sqkm` | Area with 0.1 ≤ NDVI < 0.6 | km² |
-| `NDVI_low_sqkm` | Area with NDVI < 0.1 | km² |
-
-### NDVI Thresholds <a id="ndvi-thresholds"></a>
-| Category | NDVI Range | Interpretation |
-|-----------|-------------|----------------|
-| **High NDVI** | ≥ 0.6 | Dense vegetation (forests, crops, green cover) |
-| **Medium NDVI** | 0.1 – 0.6 | Moderate vegetation (grasslands, shrubs, mixed use) |
-| **Low NDVI** | < 0.1 | Bare soil, urban areas, or degraded vegetation |
-
-### Processing Steps <a id="processing-steps-8"></a>
-1. **Configuration Loading**  
-   - Extracts `year` from `assets_config.yaml` (`ndvi_asset: year: [YYYY]`).  
-   - The script ensures exactly one valid year is defined.
-
-2. **Input Geometry**  
-   - Loads administrative boundaries (`data/{country_code}/{country_code}_{admin_level}.geojson`) using GeoPandas.
-
-3. **Earth Engine Initialization**  
-   - Connects to Google Earth Engine under the project `aa-automatization`.
-
-4. **Landsat NDVI Aggregation**  
-   - Loads Landsat NDVI composites for the specified year.  
-   - Calculates the **median NDVI** across the year to reduce noise from clouds and seasonal variation.
-
-5. **NDVI Classification**  
-   - Creates three NDVI masks:  
-     - `High`: NDVI ≥ 0.6  
-     - `Medium`: 0.1 ≤ NDVI < 0.6  
-     - `Low`: NDVI < 0.1  
-   - Each mask is used to compute the corresponding surface area in square kilometers.
-
-6. **Statistical Summary per Polygon**  
-   - Calculates the following metrics using `ee.Reducer`:  
-     - Mean, Median, 25th and 75th Percentile NDVI  
-     - Area (km²) for each NDVI category  
-   - Areas are calculated from pixel counts (`count × 900 / 1,000,000`).
-
-7. **Chunked Processing**  
-   - Polygons are processed in chunks (default: 20).  
-   - Reduces API payload errors when handling large datasets.  
-   - If payloads exceed limits, chunk size automatically decreases.
-
-8. **Output Generation**  
-   - Each chunk’s results are exported to temporary CSVs and appended to  
-     `data/{country_code}/Output/{country_code}_{admin_level}_ndvi.csv`.  
-   - Final columns are reordered and rounded to 2 decimals for clarity.
-
-### Outputs <a id="outputs-8"></a>
-- **File:** `{country_code}_{admin_level}_ndvi.csv`  
-- **Columns:**
-  - `{admin_level}_PCODE`
-  - `NDVI_mean`
-  - `NDVI_median`
-  - `NDVI_p25`
-  - `NDVI_p75`
-  - `NDVI_high_sqkm`
-  - `NDVI_medium_sqkm`
-  - `NDVI_low_sqkm`
-- **CRS:** WGS84 (`EPSG:4326`)  
-- **Units:** NDVI (unitless), Area (km²)
-
-:::{dropdown} Python Script (Vegetation Index)
-```python
-import geopandas as gpd
-import geemap
-import ee
-import pandas as pd
-import os
-import yaml
-import argparse
-
-def load_year_from_config(config_path="configs/assets_config.yaml"):
-    """Load year from ndvi_asset in assets_config.yaml"""
-    with open(config_path, "r") as f:
-        cfg = yaml.safe_load(f)
-    year = cfg.get("ndvi_asset", {}).get("year", [])
-    if not year or len(year) != 1:
-        raise ValueError("assets_config.yaml must define ndvi_asset: year: [year]")
-    return year[0]
-
-def process_ndvi_for_admin(country_code: str, admin_level: str, config_path="configs/assets_config.yaml") -> str:
-    """Run NDVI calculation for a given country/admin level and return output CSV path."""
-    # Initialize Earth Engine
-    ee.Initialize(project='aa-automatization')
-
-    gdf = gpd.read_file(f"data/{country_code}/{country_code}_{admin_level}.geojson")
-    chunk_size = 20
-    start_idx = 0
-    year = load_year_from_config(config_path)
-
-    os.makedirs(f"data/{country_code}/Output", exist_ok=True)
-    output_csv = f"data/{country_code}/Output/{country_code}_{admin_level}_ndvi.csv"
-
-    if os.path.exists(output_csv):
-        os.remove(output_csv)
-
-    col_order = [
-        f"{admin_level.upper()}_PCODE",
-        "NDVI_mean", "NDVI_median", "NDVI_p25", "NDVI_p75",
-        "NDVI_high_sqkm", "NDVI_medium_sqkm", "NDVI_low_sqkm"
-    ]
-
-    while start_idx < len(gdf):
-        end_idx = start_idx + chunk_size
-        gdf_chunk = gdf.iloc[start_idx:end_idx]
-
-        try:
-            fc = geemap.geopandas_to_ee(gdf_chunk)
-
-            landsat = (ee.ImageCollection("LANDSAT/COMPOSITES/C02/T1_L2_8DAY_NDVI")
-                       .filterDate(f"{year}-01-01", f"{year}-12-31")
-                       .filterBounds(fc))
-
-            ndvi_image = landsat.select("NDVI").median()
-
-            high_ndvi_mask = ndvi_image.updateMask(ndvi_image.gte(0.6))
-            medium_ndvi_mask = ndvi_image.updateMask(ndvi_image.gte(0.1).And(ndvi_image.lt(0.6)))
-            low_ndvi_mask = ndvi_image.updateMask(ndvi_image.lt(0.1))
-
-            def add_stats(feature):
-                stats = ndvi_image.reduceRegion(
-                    reducer=ee.Reducer.mean()
-                            .combine(ee.Reducer.median(), "", True)
-                            .combine(ee.Reducer.percentile([25, 75]), "", True),
-                    geometry=feature.geometry(),
-                    scale=30,
-                    bestEffort=True
-                )
-
-                high_count = high_ndvi_mask.reduceRegion(
-                    reducer=ee.Reducer.count(),
-                    geometry=feature.geometry(),
-                    scale=30,
-                    bestEffort=True
-                )
-                medium_count = medium_ndvi_mask.reduceRegion(
-                    reducer=ee.Reducer.count(),
-                    geometry=feature.geometry(),
-                    scale=30,
-                    bestEffort=True
-                )
-                low_count = low_ndvi_mask.reduceRegion(
-                    reducer=ee.Reducer.count(),
-                    geometry=feature.geometry(),
-                    scale=30,
-                    bestEffort=True
-                )
-
-                high_count = ee.Dictionary(high_count).map(lambda k, v: ee.Number(v).multiply(900).divide(1_000_000))
-                medium_count = ee.Dictionary(medium_count).map(lambda k, v: ee.Number(v).multiply(900).divide(1_000_000))
-                low_count = ee.Dictionary(low_count).map(lambda k, v: ee.Number(v).multiply(900).divide(1_000_000))
-
-                all_stats = stats.combine(high_count).combine(medium_count).combine(low_count)
-                return feature.set(all_stats)
-
-            fc_with_stats = fc.map(add_stats)
-            fc_filtered = fc_with_stats.select(**{
-                'propertySelectors': col_order,
-                'retainGeometry': False
-            })
-
-            temp_csv = f"data/{country_code}/{country_code}_ndvi_{admin_level}_temp_chunk.csv"
-            geemap.ee_to_csv(fc_filtered, filename=temp_csv)
-
-            df_chunk = pd.read_csv(temp_csv)
-            df_chunk = df_chunk[[c for c in col_order if c in df_chunk.columns]]
-
-            round_cols = ["NDVI_mean", "NDVI_median", "NDVI_p25", "NDVI_p75"]
-            df_chunk[round_cols] = df_chunk[round_cols].round(2)
-
-            if start_idx == 0 and not os.path.exists(output_csv):
-                df_chunk.to_csv(output_csv, index=False)
-            else:
-                df_chunk.to_csv(output_csv, mode='a', header=False, index=False)
-
-            os.remove(temp_csv)
-            print(f"Processed chunk {start_idx}-{end_idx} (size {chunk_size})")
-            start_idx = end_idx
-
-        except ee.EEException as e:
-            msg = str(e)
-            if "Request payload size exceeds the limit" in msg:
-                if chunk_size > 1:
-                    chunk_size = max(1, chunk_size // 2)
-                    print(f"Payload too large. Reducing chunk size to {chunk_size} and retrying index {start_idx}...")
-                else:
-                    print(f"Chunk size 1 still too large. Skipping index {start_idx}.")
-                    start_idx += 1
-            else:
-                print(f"EEException: {e}. Skipping chunk.")
-                start_idx = end_idx
-        except FileNotFoundError:
-            print(f"Temp CSV not found. Retrying index {start_idx} with smaller chunk...")
-            if chunk_size > 1:
-                chunk_size = max(1, chunk_size // 2)
-            else:
-                start_idx += 1
-        except Exception as e:
-            print(f"Unexpected error: {e}. Skipping chunk {start_idx}-{end_idx}.")
-            start_idx = end_idx
-
-    return output_csv
-```
-:::
-
----
-## 9. Flood Exposure <a id="9-flood-exposure"></a>
+## 8. Flood Exposure <a id="8-flood-exposure"></a>
 Estimates population and facility exposure to flooding using **GLOFAS flood hazard rasters** and **WorldPop demographic layers**. Flooded areas are identified by usign a threshold of 30 cm, and exposure metrics are aggregated per administrative boundary.
 
 This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).
 
-### Data Sources <a id="data-sources-9"></a>
+### Data Sources <a id="data-sources-8"></a>
 - **GLOFAS Flood Hazard Rasters** (`https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/`)  
   Raster tiles containing flood depth values for different return periods (RPs).  
 - **WorldPop Population Layers** (`scripts/fetch_worldpop.py`)  
@@ -1593,6 +1511,8 @@ This layer provides indicators for the number of people affected per demographic
 | `RP{rp}_elderly_{thresh}` | Number of elderly (>65) affected | people |
 | `RP{rp}_pop_u15_{thresh}` | Number of population under 15 affected | people |
 | `RP{rp}_female_u15_{thresh}` | Number of female population under 15 affected | people |
+| `RP{rp}_wra_pop_{thresh}` | Number of women of reproductive age (15–49) affected | people |
+| `RP{rp}_dependency_ratio_{thresh}` | Dependency ratio of the affected population | % |
 | `RP{rp}_education_{thresh}_pct` | Percentage of educational facilities flooded | % |
 | `RP{rp}_education_{thresh}_count` | Number of educational facilities flooded | count |
 | `RP{rp}_hospitals_{thresh}_pct` | Percentage of hospitals flooded | % |
@@ -1607,7 +1527,7 @@ This layer provides indicators for the number of people affected per demographic
 |-----------|-------|-------------|
 | `setup.flood_threshold` | e.g., 0.3 m | Minimum flood depth considered for exposure (configurable in `assets_config.yaml`) |
 
-### Processing Steps <a id="processing-steps-9"></a>
+### Processing Steps <a id="processing-steps-8"></a>
 1. **Configuration Loading**  
    - Reads `setup.flood_threshold` and `rps` from `assets_config.yaml`.  
    - Computes `THRESH_SUFFIX` (flood depth in cm) for indicator naming.
@@ -1625,7 +1545,7 @@ This layer provides indicators for the number of people affected per demographic
    - Clips the merged raster to the country boundary and saves to `Temporary`.
 
 5. **WorldPop Population Preparation**  
-   - Fetches required demographic rasters (total population, female, children under 5, elderly, etc.).  
+   - Fetches required demographic rasters (female, children under 5, female under 5, elderly, under 15, female under 15, women of reproductive age, dependents, working-age population).  
    - Ensures rasters exist locally for alignment with flood data.
 
 6. **Facility Data Preparation**  
@@ -1641,7 +1561,7 @@ This layer provides indicators for the number of people affected per demographic
    - Fills missing values with 0 and rounds numbers to integers.  
    - Final CSV saved to `data/{country_code}/Output/{country_code}_{admin_level}_flood_exposure.csv`.
 
-### Outputs <a id="outputs-9"></a>
+### Outputs <a id="outputs-8"></a>
 - **File:** `{country_code}_{admin_level}_flood_exposure.csv`  
 - **Columns:**
   - `{admin_level}_PCODE`
@@ -1826,8 +1746,10 @@ def process_flood_impact(context, country_code, rps, gdf, admin_level, output_di
     # Ensure WorldPop files exist
     context.info(f"Ensuring demographic rasters exist in {temp_dir}...")
     indicator_tifs = fetch_worldpop(country_code)
-    indicators = ["female_pop", "children_u5", "female_u5", "elderly", "pop_u15", "female_u15"]
+    indicators = ["female_pop", "children_u5", "female_u5", "elderly", "pop_u15", "female_u15", "wra_pop", "dep_dependents", "dep_working"]
     tif_map = dict(zip(indicators, indicator_tifs))
+
+    final_indicators = ["female_pop", "children_u5", "female_u5", "elderly", "pop_u15", "female_u15", "wra_pop", "dependency_ratio"]
 
     # Ensure facilities exist
     context.info(f"Ensuring facility raw geometries exist in {temp_dir}...")
@@ -1863,11 +1785,11 @@ def process_flood_impact(context, country_code, rps, gdf, admin_level, output_di
 
         # Skip RP if all expected columns already exist
         expected_cols = [
-            f"RP{rp}_{label}_{suffix}" for label in indicators for suffix in THRESH_SUFFIX
+            f"RP{rp}_{label}_{suffix}" for label in final_indicators for suffix in [THRESH_SUFFIX]
         ] + [
-            f"RP{rp}_{cat}_{suffix}_pct" for cat in facility_categories for suffix in THRESH_SUFFIX
+            f"RP{rp}_{cat}_{suffix}_pct" for cat in facility_categories for suffix in [THRESH_SUFFIX]
         ] + [
-            f"RP{rp}_{cat}_{suffix}_count" for cat in facility_categories for suffix in THRESH_SUFFIX
+            f"RP{rp}_{cat}_{suffix}_count" for cat in facility_categories for suffix in [THRESH_SUFFIX]
         ]
         if all(col in final_df.columns for col in expected_cols):
             context.info(f"RP{rp} already processed, skipping...")
@@ -1903,6 +1825,14 @@ def process_flood_impact(context, country_code, rps, gdf, admin_level, output_di
             rp_df[f"RP{rp}_{label}_{THRESH_SUFFIX}"] = [s["sum"] if s["sum"] is not None else 0 for s in stats]
 
             context.info(f"Processed flooded population for {label} >{FLOOD_THRESHOLD} m ({THRESH_SUFFIX})")
+
+        # Calculate dependency ratio for the flooded population
+        dep_col_num = rp_df[f"RP{rp}_dep_dependents_{THRESH_SUFFIX}"]
+        dep_col_den = rp_df[f"RP{rp}_dep_working_{THRESH_SUFFIX}"].replace(0, pd.NA)
+        rp_df[f"RP{rp}_dependency_ratio_{THRESH_SUFFIX}"] = ((dep_col_num / dep_col_den) * 100).fillna(0).round(2)
+
+        # Drop the intermediate components
+        rp_df.drop(columns=[f"RP{rp}_dep_dependents_{THRESH_SUFFIX}", f"RP{rp}_dep_working_{THRESH_SUFFIX}"], inplace=True)
 
         # ---- Flooded facilities ----
         for category, filepath in geojsons_map.items():
@@ -1959,3 +1889,587 @@ def process_flood_impact(context, country_code, rps, gdf, admin_level, output_di
 :::
 
 ---
+
+## 9. Cyclone Exposure <a id="9-cyclone-exposure"></a>
+Estimates the exposure of population and critical facilities to tropical cyclones using **IBTrACS** storm track data. Cyclone categories are based on the Saffir-Simpson scale and grouped into three exposure classes (Cat 1, Cat 2-3, Cat 4-5). For each administrative unit, the affected population per demographic group and the count/percentage of flooded facilities are computed per category.
+
+### Data Sources <a id="data-sources-9"></a>
+- **IBTrACS Storm Tracks:** International Best Track Archive for Climate Stewardship (since 1980), downloaded from NOAA NCEI as shapefile lines with Saffir-Simpson wind speed categories.
+- **WorldPop Population Rasters:** Demographic rasters for multiple indicators used to compute exposed populations (see *Demographics* chapter).
+- **Facilities Data:** OSM-derived facility point geometries (education, hospitals, primary healthcare) from Ohsome or Overpass API (see *Facilities* chapter).
+- **Administrative Boundaries** (GeoJSON): Used to aggregate exposure per ADM level.
+
+### Indicators <a id="indicators-5"></a>
+| Indicator | Description | Units |
+|-----------|-------------|-------|
+| `kt34_{indicator}_cat{cls}` | Exposed population for a demographic indicator at cyclone category `{cls}` | people |
+| `kt34_dependency_ratio_cat{cls}` | Dependency ratio of the exposed population at category `{cls}` | % |
+| `kt34_{facility}_count_cat{cls}` | Number of facilities exposed at category `{cls}` | count |
+| `kt34_{facility}_perc_cat{cls}` | Percentage of facilities exposed at category `{cls}` | % |
+
+Where `{cls}` is the cyclone exposure class (1 = Cat 1, 2 = Cat 2-3, 3 = Cat 4-5), `{indicator}` is a demographic group (`total_pop`, `female_pop`, `children_u5`, `female_u5`, `elderly`, `pop_u15`, `female_u15`, `wra_pop`), and `{facility}` is a category (`education`, `hospitals`, `primary_healthcare`).
+
+### Cyclone Categories <a id="cyclone-categories"></a>
+| Exposure Class | Saffir-Simpson Category | Wind Speed (km/h) |
+|----------------|------------------------|-------------------|
+| 1 | Category 1 | 119–153 |
+| 2 | Categories 2–3 | 154–208 |
+| 3 | Categories 4–5 | ≥ 209 |
+
+### Processing Steps <a id="processing-steps-9"></a>
+1. **Download and extract IBTrACS storm track data** from NOAA NCEI.
+2. **Filter storms** with Saffir-Simpson intensity ≥ 1 and intersecting the country bounding box.
+3. **Buffer storm tracks** using the mean radius of maximum winds (R34) converted to meters.
+4. **Clip buffers** to the country administrative boundary.
+5. **Rasterize** the buffered tracks into a classified exposure raster (classes 1, 2, 3) aligned to WorldPop resolution.
+6. **Compute population exposure:** For each demographic indicator and cyclone class, multiply the population raster by the class mask and sum per admin unit using zonal statistics.
+7. **Compute dependency ratio:** `kt34_dependency_ratio = (dependents / working) × 100` per class.
+8. **Compute facility exposure:** Sample the cyclone exposure raster at facility point locations, then count and percentage per admin unit per class.
+9. **Save CSV** with all exposure columns.
+
+### Outputs <a id="outputs-9"></a>
+- **File:** `{country_code}_{admin_level}_cyclone_exposure.csv`
+- **Columns:**
+  - `{admin_level}_PCODE`
+  - `ADM_PCODE` (alias column)
+  - Population exposed per demographic group per class: `kt34_total_pop_cat1`, `kt34_female_pop_cat2`, `kt34_children_u5_cat3`, etc.
+  - Dependency ratio per class: `kt34_dependency_ratio_cat1`, `kt34_dependency_ratio_cat2`, `kt34_dependency_ratio_cat3`
+  - Facility counts and percentages per class: `kt34_education_count_cat1`, `kt34_education_perc_cat1`, etc.
+- **CRS:** WGS84 (`EPSG:4326`)
+- **Units:** people, count, %
+
+:::{dropdown} Python Script (Cyclone Exposure)
+```python
+import os
+from pathlib import Path
+import zipfile
+import requests
+import geopandas as gpd
+import numpy as np
+import rasterio
+from rasterio.features import rasterize
+from rasterstats import zonal_stats
+import pandas as pd
+import yaml
+from scripts.fetch_worldpop import fetch_worldpop, INDICATORS
+from scripts.fetch_facilities_ohsome_overpass import fetch_overpass, fetch_ohsome
+
+ASSET_CONFIG_YAML_PATH = os.path.join(os.getcwd(), "configs", "assets_config.yaml")
+with open(ASSET_CONFIG_YAML_PATH) as _fp:
+    _asset_config = yaml.safe_load(_fp)
+
+IBTRACS_URL = (
+    "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/"
+    "v04r01/access/shapefile/IBTrACS.since1980.list.v04r01.lines.zip"
+)
+DOWNLOAD_DIR = "downloads"
+IBTRACS_LOCAL_ZIP = os.path.join(DOWNLOAD_DIR, "IBTrACS.since1980.list.v04r01.lines.zip")
+
+FACILITY_CATEGORIES = ["education", "hospitals", "primary_healthcare"]
+POP_INDICATORS = ["total_pop", "female_pop", "children_u5", "female_u5", "elderly", "pop_u15", "female_u15", "wra_pop", "dep_dependents", "dep_working"]
+EXPOSURE_CLASSES = [1, 2, 3]
+
+
+def ensure_ibtracs_data(context):
+    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
+    if not os.path.exists(IBTRACS_LOCAL_ZIP):
+        context.info("Downloading IBTrACS dataset...")
+        r = requests.get(IBTRACS_URL)
+        r.raise_for_status()
+        with open(IBTRACS_LOCAL_ZIP, "wb") as f:
+            f.write(r.content)
+    extract_path = os.path.join(DOWNLOAD_DIR, "IBTrACS")
+    if not os.path.exists(extract_path):
+        with zipfile.ZipFile(IBTRACS_LOCAL_ZIP, "r") as zip_ref:
+            zip_ref.extractall(extract_path)
+    return os.path.join(extract_path, "IBTrACS.since1980.list.v04r01.lines.shp")
+
+
+def build_cyclone_buffers(context, country_code, admin_level):
+    shapefile_path = ensure_ibtracs_data(context)
+    gdf_ibtracs = gpd.read_file(shapefile_path)
+    gdf_ibtracs = gdf_ibtracs[gdf_ibtracs["USA_SSHS"].fillna(0) >= 1]
+
+    boundary_path = f"data/{country_code}/{country_code}_{admin_level}.geojson"
+    country_gdf = gpd.read_file(boundary_path)
+    bbox = country_gdf.total_bounds
+    gdf_ibtracs = gdf_ibtracs.cx[bbox[0]:bbox[2], bbox[1]:bbox[3]]
+    if gdf_ibtracs.empty:
+        return None
+
+    gdf_ibtracs = gdf_ibtracs.to_crs(epsg=29738)
+    country_gdf = country_gdf.to_crs(epsg=29738)
+    gdf_ibtracs["mean_r34"] = gdf_ibtracs[["USA_R34_SE", "USA_R34_NE", "USA_R34_NW", "USA_R34_SW"]].mean(axis=1, skipna=True)
+    gdf_ibtracs["mean_r34_m"] = gdf_ibtracs["mean_r34"] * 1852
+    gdf_ibtracs["geometry"] = gdf_ibtracs.buffer(gdf_ibtracs["mean_r34_m"].fillna(0))
+    gdf_ibtracs = gpd.clip(gdf_ibtracs, country_gdf)
+
+    out_geojson = f"data/{country_code}/Temporary/{country_code}_cyclone_buffers.geojson"
+    os.makedirs(os.path.dirname(out_geojson), exist_ok=True)
+    gdf_ibtracs.to_file(out_geojson, driver="GeoJSON")
+    return out_geojson
+
+
+def calculate_cyclone_exposure(context, country_code, admin_level="ADM2"):
+    country_code = country_code.upper()
+    admin_level = admin_level.upper()
+    temp_dir = Path(f"data/{country_code}/Temporary")
+    base_path = Path(f"data/{country_code}")
+
+    buffer_geojson = build_cyclone_buffers(context, country_code, admin_level)
+    if not buffer_geojson:
+        return None
+
+    gdf_buffers = gpd.read_file(buffer_geojson)
+    indicator_tifs = fetch_worldpop(country_code)
+    reference_tif = indicator_tifs[0]
+
+    with rasterio.open(reference_tif) as src_ref:
+        meta = src_ref.meta.copy()
+        transform = src_ref.transform
+        width = src_ref.width
+        height = src_ref.height
+        crs = src_ref.crs
+
+    gdf_buffers = gdf_buffers.to_crs(crs)
+    max_raster = np.zeros((height, width), dtype=np.uint8)
+    gdf_sorted = gdf_buffers.sort_values("USA_SSHS")
+    for _, row in gdf_sorted.iterrows():
+        if row.geometry is None or np.isnan(row["USA_SSHS"]):
+            continue
+        level = int(row["USA_SSHS"])
+        shapes = [(row.geometry, level)]
+        mask_arr = rasterize(shapes, out_shape=(height, width), transform=transform, fill=0, dtype=np.uint8)
+        max_raster = np.maximum(max_raster, mask_arr)
+
+    classified = np.zeros_like(max_raster, dtype=np.uint8)
+    classified[(max_raster >= 1) & (max_raster <= 1)] = 1
+    classified[(max_raster >= 2) & (max_raster <= 3)] = 2
+    classified[(max_raster >= 4) & (max_raster <= 5)] = 3
+
+    raster_path = temp_dir / f"{country_code}_cyclone_exposure.tif"
+    meta.update(dtype=rasterio.uint8, count=1, compress="lzw")
+    with rasterio.open(raster_path, "w", **meta) as dst:
+        dst.write(classified, 1)
+
+    boundary_file = base_path / f"{country_code}_{admin_level}.geojson"
+    gdf_admin = gpd.read_file(boundary_file).to_crs("EPSG:4326")
+    full_tif_map = dict(zip(INDICATORS.keys(), indicator_tifs))
+
+    df = pd.DataFrame({f"{admin_level}_PCODE": gdf_admin[f"{admin_level}_PCODE"]})
+    df["ADM_PCODE"] = df[f"{admin_level}_PCODE"]
+
+    geojsons_map = {}
+    api_choice = _asset_config.get("facilities_asset", {}).get("api", "").lower()
+    for cat in FACILITY_CATEGORIES:
+        geojsons_map[cat] = base_path / f"Temporary/{country_code}_{cat}_raw.geojson"
+
+    with rasterio.open(raster_path) as src:
+        cyclone_raster = src.read(1).astype(np.float32)
+
+    for indicator in POP_INDICATORS:
+        pop_raster_path = full_tif_map[indicator]
+        with rasterio.open(pop_raster_path) as src_pop:
+            pop_raster = src_pop.read(1)
+            pop_meta = src_pop.meta.copy()
+        for cls in EXPOSURE_CLASSES:
+            mask_cls = (cyclone_raster == cls).astype(np.float32)
+            exposed_pop = pop_raster * mask_cls
+            temp_path = base_path / f"Temporary/tmp_{indicator}_cat{cls}.tif"
+            pop_meta.update(dtype=rasterio.float32, count=1)
+            with rasterio.open(temp_path, "w", **pop_meta) as dst:
+                dst.write(exposed_pop, 1)
+            stats = zonal_stats(gdf_admin, temp_path, stats="sum", nodata=0)
+            df[f"kt34_{indicator}_cat{cls}"] = [round(s["sum"] or 0, 0) for s in stats]
+
+    for cls in EXPOSURE_CLASSES:
+        dep_num = df[f"kt34_dep_dependents_cat{cls}"]
+        dep_den = df[f"kt34_dep_working_cat{cls}"].replace(0, pd.NA)
+        df[f"kt34_dependency_ratio_cat{cls}"] = ((dep_num / dep_den) * 100).fillna(0).round(2)
+        df.drop(columns=[f"kt34_dep_dependents_cat{cls}", f"kt34_dep_working_cat{cls}"], inplace=True)
+
+    for category in FACILITY_CATEGORIES:
+        filepath = base_path / f"Temporary/{country_code}_{category}_raw.geojson"
+        if not filepath.exists():
+            continue
+        facilities = gpd.read_file(filepath)
+        if facilities.empty:
+            continue
+        facilities = facilities.to_crs(crs)
+        facilities["geometry"] = facilities.geometry.centroid
+        coords = [(x, y) for x, y in zip(facilities.geometry.x, facilities.geometry.y)]
+        with rasterio.open(raster_path) as src:
+            values = [v for v in src.sample(coords)]
+        facilities["cyclone_class"] = [v[0] for v in values]
+        joined = gpd.sjoin(facilities, gdf_admin[[f"{admin_level}_PCODE", "geometry"]], how="inner", predicate="within")
+        total_facilities = joined.groupby(f"{admin_level}_PCODE").size().to_dict()
+        for cls in EXPOSURE_CLASSES:
+            mask_cls = joined["cyclone_class"] == cls
+            grouped = joined[mask_cls].groupby(f"{admin_level}_PCODE").size().reset_index(name=f"kt34_{category}_count_cat{cls}")
+            df = df.merge(grouped, on=f"{admin_level}_PCODE", how="left")
+            df[f"kt34_{category}_count_cat{cls}"] = df[f"kt34_{category}_count_cat{cls}"].fillna(0).astype(int)
+            df[f"kt34_{category}_perc_cat{cls}"] = df.apply(
+                lambda x: round((x[f"kt34_{category}_count_cat{cls}"] / total_facilities.get(x[f"{admin_level}_PCODE"], 1)) * 100, 0),
+                axis=1,
+            )
+
+    numeric_cols = [c for c in df.select_dtypes(include=["float", "int"]).columns if "dependency_ratio" not in c]
+    df[numeric_cols] = df[numeric_cols].fillna(0).round(0).astype(int)
+
+    output_dir = base_path / "Output"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    out_csv = output_dir / f"{country_code}_{admin_level}_cyclone_exposure.csv"
+    df.to_csv(out_csv, index=False)
+    return str(out_csv)
+```
+:::
+
+---
+
+## 10. Evacuability <a id="10-evacuability"></a>
+Estimates the travel time (in minutes) from at-risk areas (flooded or cyclone-affected population) to the nearest safe zone using least-cost path analysis on a motorized friction surface. This provides a measure of how quickly people in hazard-prone areas can reach areas not affected by the hazard.
+
+### Data Sources <a id="data-sources-10"></a>
+- **Flood Hazard Rasters:** GLOFAS flood depth rasters for each return period (RP), produced by the *Flood Exposure* asset.
+- **Cyclone Exposure Raster:** IBTrACS cyclone exposure raster (binary: affected / not affected), produced by the *Cyclone Exposure* asset.
+- **Friction Surface:** Global motorized friction surface COG (2020) hosted on MinIO (`2020_motorized_friction_surface_cog.tif`), representing travel impedance per pixel.
+- **WorldPop Population Rasters:** Used to identify the demographic composition of at-risk areas.
+- **Administrative Boundaries** (GeoJSON): Used to aggregate travel time statistics per admin unit.
+
+### Indicators <a id="indicators-7"></a>
+| Indicator | Description | Units |
+|-----------|-------------|-------|
+| `RP{rp}_evac_time_minutes_mean` | Mean travel time from flooded areas to safe zone (for return period `{rp}`) | minutes |
+| `RP{rp}_evac_time_minutes_max` | Maximum travel time from flooded areas to safe zone | minutes |
+| `RP{rp}_evac_time_minutes_median` | Median travel time from flooded areas to safe zone | minutes |
+| `RP{rp}_pixels_at_risk` | Number of flooded pixels with computed travel time | count |
+| `kt34_evac_time_minutes_mean` | Mean travel time from cyclone-affected areas to safe zone | minutes |
+| `kt34_evac_time_minutes_max` | Maximum travel time from cyclone-affected areas to safe zone | minutes |
+| `kt34_evac_time_minutes_median` | Median travel time from cyclone-affected areas to safe zone | minutes |
+| `kt34_pixels_at_risk` | Number of cyclone-affected pixels with computed travel time | count |
+
+### Processing Steps <a id="processing-steps-10"></a>
+1. **Load hazard raster** (flood depth per RP or cyclone binary raster) for the country.
+2. **Fetch friction surface** window covering the same extent and align to the hazard raster CRS/resolution.
+3. **Classify pixels** into:
+   - **Safe zones:** pixels where hazard ≤ threshold (flood) or hazard = 0 (cyclone).
+   - **At-risk zones:** pixels where hazard > threshold.
+4. **Downsample** if pixel count exceeds performance limit (10 million pixels).
+5. **Compute least-cost distances** using `MCP_Geometric` from scikit-image, treating safe zones as source cells and friction as cost per meter.
+6. **Upsample** travel time raster back to original resolution if downsampled.
+7. **Summarize per admin unit:** mean, max, median travel time and pixel count for at-risk zones.
+8. **Write CSV** with flood evacuability per RP and cyclone evacuability columns.
+
+### Outputs <a id="outputs-10"></a>
+- **File:** `{country_code}_{admin_level}_evacuability.csv`
+- **Columns:**
+  - `{admin_level}_PCODE`
+  - Flood evacuability per return period: `RP{rp}_evac_time_minutes_mean`, `RP{rp}_evac_time_minutes_max`, `RP{rp}_evac_time_minutes_median`, `RP{rp}_pixels_at_risk`
+  - Cyclone evacuability (if cyclone data exists): `kt34_evac_time_minutes_mean`, `kt34_evac_time_minutes_max`, `kt34_evac_time_minutes_median`, `kt34_pixels_at_risk`
+- **CRS:** WGS84 (`EPSG:4326`)
+- **Units:** minutes (travel time), pixel count
+
+:::{dropdown} Python Script (Evacuability)
+```python
+import os
+import numpy as np
+import geopandas as gpd
+import pandas as pd
+import rasterio
+from rasterio.windows import from_bounds, Window
+from rasterio.warp import reproject, Resampling
+from rasterstats import zonal_stats
+from skimage.graph import MCP_Geometric
+from pathlib import Path
+import tempfile
+import yaml
+
+ASSET_CONFIG_YAML_PATH = os.path.join(os.getcwd(), "configs", "assets_config.yaml")
+with open(ASSET_CONFIG_YAML_PATH) as _fp:
+    _asset_config = yaml.safe_load(_fp)
+FLOOD_THRESHOLD = float(_asset_config["setup"]["flood_threshold"])
+
+FRICTION_COG_URL = "https://hot.storage.heigit.org/heigit-hdx-public/risk_assessment_inputs/2020_motorized_friction_surface_cog.tif"
+
+MAX_PIXELS_FOR_MCP = 10_000_000
+TARGET_RESOLUTION_M = 500
+MAX_MCP_SOURCES = 20000
+
+
+def fetch_friction_window(bounds, target_crs, target_transform, target_shape):
+    with rasterio.open(FRICTION_COG_URL) as src:
+        friction_crs = src.crs
+        friction_nodata = src.nodata
+        if target_crs != friction_crs:
+            from rasterio.warp import transform_bounds
+            src_bounds = transform_bounds(target_crs, friction_crs, *bounds)
+        else:
+            src_bounds = bounds
+        window = from_bounds(*src_bounds, src.transform)
+        col_off = max(0, int(window.col_off) - 5)
+        row_off = max(0, int(window.row_off) - 5)
+        width = min(src.width - col_off, int(window.width) + 10)
+        height = min(src.height - row_off, int(window.height) + 10)
+        window = Window(col_off, row_off, width, height)
+        friction_raw = src.read(1, window=window).astype(np.float32)
+        window_transform = src.window_transform(window)
+    friction_aligned = np.zeros(target_shape, dtype=np.float32)
+    reproject(
+        source=friction_raw, destination=friction_aligned,
+        src_transform=window_transform, src_crs=friction_crs,
+        src_nodata=friction_nodata,
+        dst_transform=target_transform, dst_crs=target_crs,
+        dst_nodata=np.nan, resampling=Resampling.bilinear,
+    )
+    return friction_aligned
+
+
+def downsample_array(arr, scale_factor, method='mean'):
+    from scipy.ndimage import zoom
+    if scale_factor <= 1:
+        return arr
+    scale_factor = int(round(scale_factor))
+    if method == 'sum':
+        h, w = arr.shape
+        new_h = (h // scale_factor) * scale_factor
+        new_w = (w // scale_factor) * scale_factor
+        trimmed = arr[:new_h, :new_w]
+        reshaped = trimmed.reshape(new_h // scale_factor, scale_factor, new_w // scale_factor, scale_factor)
+        return np.nansum(reshaped, axis=(1, 3)).astype(arr.dtype)
+    elif method == 'mean':
+        return zoom(arr, 1/scale_factor, order=1)
+    else:
+        return zoom(arr, 1/scale_factor, order=0)
+
+
+def upsample_array(arr, target_shape, method='bilinear'):
+    from scipy.ndimage import zoom
+    scale_y = target_shape[0] / arr.shape[0]
+    scale_x = target_shape[1] / arr.shape[1]
+    order = 1 if method == 'bilinear' else 0
+    return zoom(arr, (scale_y, scale_x), order=order)
+
+
+def create_cost_surface(friction_arr, hazard_arr, hazard_threshold=FLOOD_THRESHOLD):
+    valid = ~np.isnan(hazard_arr)
+    at_risk_mask = valid & (hazard_arr > hazard_threshold)
+    safe_mask = valid & (hazard_arr <= hazard_threshold)
+    no_data = np.isnan(hazard_arr) | (hazard_arr == 0)
+    safe_mask = safe_mask | no_data
+    cost_arr = friction_arr.copy()
+    cost_arr[np.isnan(cost_arr)] = 1e6
+    cost_arr[cost_arr <= 0] = 1e6
+    return cost_arr, safe_mask, at_risk_mask
+
+
+def create_cyclone_cost_surface(friction_arr, cyclone_arr):
+    valid = ~np.isnan(cyclone_arr)
+    at_risk_mask = valid & (cyclone_arr >= 1)
+    safe_mask = valid & (cyclone_arr == 0)
+    no_data = np.isnan(cyclone_arr)
+    safe_mask = safe_mask | no_data
+    cost_arr = friction_arr.copy()
+    cost_arr[np.isnan(cost_arr)] = 1e6
+    cost_arr[cost_arr <= 0] = 1e6
+    return cost_arr, safe_mask, at_risk_mask
+
+
+def calculate_travel_time_mcp(cost_arr, safe_mask, pixel_size_m):
+    safe_indices = np.argwhere(safe_mask)
+    if len(safe_indices) == 0:
+        return np.full(cost_arr.shape, np.nan)
+    cost_scaled = cost_arr * pixel_size_m
+    mcp = MCP_Geometric(cost_scaled, fully_connected=True)
+    starts = [tuple(idx) for idx in safe_indices]
+    if len(starts) > MAX_MCP_SOURCES:
+        rng = np.random.default_rng(42)
+        indices = rng.choice(len(starts), MAX_MCP_SOURCES, replace=False)
+        starts = [starts[i] for i in indices]
+    cumulative_cost, _ = mcp.find_costs(starts)
+    travel_time = cumulative_cost.astype(np.float32)
+    travel_time[travel_time >= 1e9] = np.nan
+    return travel_time
+
+
+def compute_evacuability_csv(context, country_code: str, admin_level: str,
+                              rps: list[str] | None = None,
+                              flood_threshold: float = None) -> str | None:
+    log = context.info if hasattr(context, 'info') else print
+    if rps is None:
+        rps = []
+
+    country_code = country_code.upper()
+    admin_level = admin_level.upper()
+    base_path = Path(f"data/{country_code}")
+    temp_dir = base_path / "Temporary"
+    output_dir = base_path / "Output"
+    boundary_path = base_path / f"{country_code}_{admin_level}.geojson"
+    id_col = f"{admin_level}_PCODE"
+    out_csv = output_dir / f"{country_code}_{admin_level}_evacuability.csv"
+
+    if not boundary_path.exists():
+        log(f"[{country_code}] Boundary not found: {boundary_path}")
+        return None
+
+    gdf = gpd.read_file(boundary_path)
+    df = pd.DataFrame({id_col: gdf[id_col]})
+    had_data = False
+
+    # --- Flood evacuability per RP ---
+    for rp in rps:
+        flood_path = temp_dir / f"{country_code}_flooded_RP{rp}.tif"
+        if not flood_path.exists():
+            continue
+
+        with rasterio.open(flood_path) as src:
+            hazard = src.read(1).astype(np.float32)
+            crs = src.crs
+            transform = src.transform
+            bounds = src.bounds
+            shape = hazard.shape
+            nodata = src.nodata
+
+        if nodata is not None:
+            hazard[hazard == nodata] = np.nan
+
+        friction = fetch_friction_window(
+            (bounds.left, bounds.bottom, bounds.right, bounds.top),
+            crs, transform, shape,
+        )
+
+        pixel_size_m = abs(transform.a) * 111000 if crs.is_geographic else (abs(transform.a) + abs(transform.e)) / 2
+        total_pixels = hazard.size
+        scale_factor = 1
+
+        if total_pixels > MAX_PIXELS_FOR_MCP:
+            scale_by_pixels = np.sqrt(total_pixels / MAX_PIXELS_FOR_MCP)
+            scale_by_res = TARGET_RESOLUTION_M / pixel_size_m if pixel_size_m < TARGET_RESOLUTION_M else 1
+            scale_factor = max(scale_by_pixels, scale_by_res)
+            hazard_ds = downsample_array(hazard, scale_factor, method='mean')
+            friction_ds = downsample_array(friction, scale_factor, method='mean')
+            pixel_size_ds = pixel_size_m * scale_factor
+        else:
+            hazard_ds = hazard
+            friction_ds = friction
+            pixel_size_ds = pixel_size_m
+
+        cost_arr, safe_mask, at_risk_ds = create_cost_surface(friction_ds, hazard_ds, flood_threshold or FLOOD_THRESHOLD)
+
+        if at_risk_ds.sum() == 0:
+            df[f"RP{rp}_evac_time_minutes_mean"] = None
+            df[f"RP{rp}_evac_time_minutes_max"] = None
+            df[f"RP{rp}_evac_time_minutes_median"] = None
+            df[f"RP{rp}_pixels_at_risk"] = 0
+        else:
+            travel_time_ds = calculate_travel_time_mcp(cost_arr, safe_mask, pixel_size_ds)
+
+            if scale_factor > 1:
+                travel_time = upsample_array(travel_time_ds, shape)
+                _, _, at_risk_mask = create_cost_surface(friction, hazard, flood_threshold or FLOOD_THRESHOLD)
+            else:
+                travel_time = travel_time_ds
+                at_risk_mask = at_risk_ds
+
+            travel_time_at_risk = travel_time.copy()
+            travel_time_at_risk[~at_risk_mask] = np.nan
+            gdf_tt = gdf.to_crs(crs) if gdf.crs != crs else gdf
+
+            with tempfile.TemporaryDirectory() as tmpdir:
+                tt_path = os.path.join(tmpdir, "travel_time.tif")
+                with rasterio.open(tt_path, 'w', driver='GTiff',
+                    height=travel_time_at_risk.shape[0], width=travel_time_at_risk.shape[1],
+                    count=1, dtype=np.float32, crs=crs, transform=transform, nodata=np.nan) as dst:
+                    dst.write(travel_time_at_risk, 1)
+                tt_stats = zonal_stats(gdf_tt, tt_path, stats=['mean', 'max', 'median', 'count'], nodata=np.nan)
+
+            df[f"RP{rp}_evac_time_minutes_mean"] = [round(s['mean'], 1) if s.get('mean') else None for s in tt_stats]
+            df[f"RP{rp}_evac_time_minutes_max"] = [round(s['max'], 1) if s.get('max') else None for s in tt_stats]
+            df[f"RP{rp}_evac_time_minutes_median"] = [round(s['median'], 1) if s.get('median') else None for s in tt_stats]
+            df[f"RP{rp}_pixels_at_risk"] = [s['count'] if s.get('count') else 0 for s in tt_stats]
+
+        had_data = True
+
+    # --- Cyclone evacuability ---
+    cyclone_path = temp_dir / f"{country_code}_cyclone_exposure.tif"
+    if cyclone_path.exists():
+        with rasterio.open(cyclone_path) as src:
+            cyclone = src.read(1).astype(np.float32)
+            crs = src.crs
+            transform = src.transform
+            bounds = src.bounds
+            shape = cyclone.shape
+            nodata = src.nodata
+
+        if nodata is not None:
+            cyclone[cyclone == nodata] = np.nan
+
+        friction = fetch_friction_window(
+            (bounds.left, bounds.bottom, bounds.right, bounds.top),
+            crs, transform, shape,
+        )
+
+        pixel_size_m = abs(transform.a) * 111000 if crs.is_geographic else (abs(transform.a) + abs(transform.e)) / 2
+        total_pixels = cyclone.size
+        scale_factor = 1
+
+        if total_pixels > MAX_PIXELS_FOR_MCP:
+            scale_by_pixels = np.sqrt(total_pixels / MAX_PIXELS_FOR_MCP)
+            scale_by_res = TARGET_RESOLUTION_M / pixel_size_m if pixel_size_m < TARGET_RESOLUTION_M else 1
+            scale_factor = max(scale_by_pixels, scale_by_res)
+            cyclone_ds = downsample_array(cyclone, scale_factor, method='max')
+            friction_ds = downsample_array(friction, scale_factor, method='mean')
+            pixel_size_ds = pixel_size_m * scale_factor
+        else:
+            cyclone_ds = cyclone
+            friction_ds = friction
+            pixel_size_ds = pixel_size_m
+
+        cost_arr, safe_mask, at_risk_ds = create_cyclone_cost_surface(friction_ds, cyclone_ds)
+
+        if at_risk_ds.sum() == 0:
+            df["kt34_evac_time_minutes_mean"] = None
+            df["kt34_evac_time_minutes_max"] = None
+            df["kt34_evac_time_minutes_median"] = None
+            df["kt34_pixels_at_risk"] = 0
+        else:
+            travel_time_ds = calculate_travel_time_mcp(cost_arr, safe_mask, pixel_size_ds)
+
+            if scale_factor > 1:
+                travel_time = upsample_array(travel_time_ds, shape)
+                _, _, at_risk_mask = create_cyclone_cost_surface(friction, cyclone)
+            else:
+                travel_time = travel_time_ds
+                at_risk_mask = at_risk_ds
+
+            travel_time_at_risk = travel_time.copy()
+            travel_time_at_risk[~at_risk_mask] = np.nan
+            gdf_tt = gdf.to_crs(crs) if gdf.crs != crs else gdf
+
+            with tempfile.TemporaryDirectory() as tmpdir:
+                tt_path = os.path.join(tmpdir, "travel_time.tif")
+                with rasterio.open(tt_path, 'w', driver='GTiff',
+                    height=travel_time_at_risk.shape[0], width=travel_time_at_risk.shape[1],
+                    count=1, dtype=np.float32, crs=crs, transform=transform, nodata=np.nan) as dst:
+                    dst.write(travel_time_at_risk, 1)
+                tt_stats = zonal_stats(gdf_tt, tt_path, stats=['mean', 'max', 'median', 'count'], nodata=np.nan)
+
+            df["kt34_evac_time_minutes_mean"] = [round(s['mean'], 1) if s.get('mean') else None for s in tt_stats]
+            df["kt34_evac_time_minutes_max"] = [round(s['max'], 1) if s.get('max') else None for s in tt_stats]
+            df["kt34_evac_time_minutes_median"] = [round(s['median'], 1) if s.get('median') else None for s in tt_stats]
+            df["kt34_pixels_at_risk"] = [s['count'] if s.get('count') else 0 for s in tt_stats]
+
+        had_data = True
+
+    if not had_data:
+        log(f"[{country_code}] No evacuability data produced")
+        return None
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    df.to_csv(out_csv, index=False)
+    return str(out_csv)
+```
+:::
+
+---
+
+
