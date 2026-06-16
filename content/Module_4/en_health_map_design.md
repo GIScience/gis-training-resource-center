@@ -17,7 +17,7 @@ Health capacity maps usually combine multiple attributes into a single symbol by
 :::{figure} /fig/HS_capacity_map_examples.drawio.svg
 ---
 name: Building a Multi-Variable Hospital Capacity Map Step by Step
-width: 800
+width: 800 px
 ---
 Building a Multi-Variable Hospital Capacity Map Step by Step.
 :::
