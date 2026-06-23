@@ -18,15 +18,15 @@ Lastly, you should provide a link to the material (slides, handouts, exercise da
 
 The table below summarizes each item and gives a short description of what its content could be.
 
-| Information | Description | 
-| ----- | ----------- |
-| Time & dates | Time & dates for the participants to plan their own working days around it |
-| Location or link to webinar | Address or link for participants to quickly join the training |
-| Requirements | What are the requirements for the participation (laptop, internet connection) and completion of the seminar (attendance, ...) |
-| Expectations | What competences are expected of the participants? |
-| Structure of the training/material | Convey the structure of the platform.  |
-| Timeline | Provide a timeline for the course. | 
-| Available material | Add a link for participants to find and download all the necessary material |
+| Information                        | Description                                                                                                                   |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Time & dates                       | Time & dates for the participants to plan their own working days around it                                                    |
+| Location or link to webinar        | Address or link for participants to quickly join the training                                                                 |
+| Requirements                       | What are the requirements for the participation (laptop, internet connection) and completion of the seminar (attendance, ...) |
+| Expectations                       | What competences are expected of the participants?                                                                            |
+| Structure of the training/material | Convey the structure of the platform.                                                                                         |
+| Timeline                           | Provide a timeline for the course.                                                                                            |
+| Available material                 | Add a link for participants to find and download all the necessary material                                                   |
 
 You should adapt the agenda to your needs and the needs of your participants. For example, after each day, provide them with a question to reflect on what they have learnt or how they can apply their newfound skills.
 
