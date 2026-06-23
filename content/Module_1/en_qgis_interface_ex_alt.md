@@ -1,6 +1,6 @@
 # QGIS Exercise 2: Understanding the user interface and getting to know the layer concept <a id="qgis-exercise-2-understanding-the-user-interface-and-getting-to-know-the-layer-concept"></a>
 
-% CAN THIS FILE BE DELETED?
+%% CAN THIS FILE BE DELETED?
 
 __🔙[Back to Homepage](/content/intro.md)__
 
