@@ -22,5 +22,5 @@ If a table join does not work via the __Join attributes by field value__ tool, a
 width: 75%
 name: en_qgis_add_vector_join_wiki
 ---
-Screenshot of the Add Vector join tool
+Screenshot of the Add Vector join tool.
 :::
