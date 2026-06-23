@@ -21,7 +21,7 @@ A health facility capacity map is a practical and valuable tool for health prepa
 Health capacity maps usually combine multiple attributes into a single symbol by utilizing size, color, and different shapes. 
 
 
-:::{figure} /fig/HS_capacity_map_examepls.drawio.png
+:::{figure} /fig/HS_capacity_map_examples.drawio.png
 ---
 name: Building a Multi-Variable Hospital Capacity Map Step by Step
 width: 800
