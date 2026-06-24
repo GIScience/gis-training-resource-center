@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Mobile_Data_collection/en_SMT_ex1_.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sketch Map Tool Exercise 1 - Workflow Exercise <bpt id="1">&lt;a id="sketch-map-tool-exercise-1-workflow-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sketch Map Tool Exercise 1 - Workflow Exercise <bpt id="1">&lt;a id="sketch-map-tool-exercise-1-workflow-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.</source>
+<target xml:lang="fr">Explore the whole workflow of mapping with the Sketch Map Tool, from first ideas about what you like to map to the possible digital results.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Get familiar with the Sketch Map Tool and its whole workflow from map creation to the results.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Get familiar with the Sketch Map Tool and its whole workflow from map creation to the results.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+This exercise can be used in online and presence training and is focused on an hands-on experience with the Sketch Map Tool.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+This exercise can be used in online and presence training and is focused on an hands-on experience with the Sketch Map Tool.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowlege Level)<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowlege Level)<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">planners/facilitators, as well as practitioners involved in the preparation of the field campaign or collecting the data</source>
+<target xml:lang="fr">planners/facilitators, as well as practitioners involved in the preparation of the field campaign or collecting the data</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">GIS Beginners-level: no specific knowledge about QGIS/uMAP required</source>
+<target xml:lang="fr">GIS Beginners-level: no specific knowledge about QGIS/uMAP required</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Phase of participatory / community mapping<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Phase of participatory / community mapping<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">preparing participatory mapping / facilitating participatory mapping/ analysing participatory mapping</source>
+<target xml:lang="fr">preparing participatory mapping / facilitating participatory mapping/ analysing participatory mapping</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Between 2 and 2,5 hours (depending on number of groups).</source>
+<target xml:lang="fr">Between 2 and 2,5 hours (depending on number of groups).</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Available data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Case Studies Maps: <bpt id="1">[</bpt>Case Study Map 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip)</ept>, <bpt id="2">[</bpt>Case Study Map 2<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip)</ept>, <bpt id="3">[</bpt>Case Study Map 3<ept id="3">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip)</ept></source>
+<target xml:lang="fr">Case Studies Maps: <bpt id="1">[</bpt>Case Study Map 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip)</ept>, <bpt id="2">[</bpt>Case Study Map 2<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip)</ept>, <bpt id="3">[</bpt>Case Study Map 3<ept id="3">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study 1 marked Maps and Sketch Map Tool Outputs<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_marked_maps_results.zip)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study 1 marked Maps and Sketch Map Tool Outputs<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_marked_maps_results.zip)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Online access and devices (PC) to be able to use the Sketch Map Tool to create maps online, upload and download them.</source>
+<target xml:lang="fr">Online access and devices (PC) to be able to use the Sketch Map Tool to create maps online, upload and download them.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Possibility to print the maps, smart phones to take the photos, and the possibility to upload the pictures to the Sketch Map Tool.</source>
+<target xml:lang="fr">Possibility to print the maps, smart phones to take the photos, and the possibility to upload the pictures to the Sketch Map Tool.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Prepare a board (it can be a white board/flipchart or digital e.g. Miro-board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a board (it can be a white board/flipchart or digital e.g. Miro-board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Introduce the idea, the aim, and the general workflow of the Sketch Map Tool before starting the exercise.</source>
+<target xml:lang="fr">Introduce the idea, the aim, and the general workflow of the Sketch Map Tool before starting the exercise.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Provide access to the needed material and form groups (at least 3 people each to discuss together; ideal group size is 3 to 6 participants).</source>
+<target xml:lang="fr">Provide access to the needed material and form groups (at least 3 people each to discuss together; ideal group size is 3 to 6 participants).</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Time for group work:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Time for group work:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Check-in with the groups and ask if there are questions or problems.</source>
+<target xml:lang="fr">Check-in with the groups and ask if there are questions or problems.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Prepare the presentation tool for the Wrap-Up.</source>
+<target xml:lang="fr">Prepare the presentation tool for the Wrap-Up.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">All groups present their findings (each 5 min, make it short but show the maps they are talking about).</source>
+<target xml:lang="fr">All groups present their findings (each 5 min, make it short but show the maps they are talking about).</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Discuss the benefits, as well as challenges and problems in the use of the Sketch Map Tool</source>
+<target xml:lang="fr">Discuss the benefits, as well as challenges and problems in the use of the Sketch Map Tool</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Leave some time to for Open questions.</source>
+<target xml:lang="fr">Leave some time to for Open questions.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">What you need to know - background information <bpt id="1">&lt;a id="what-you-need-to-know-background-information"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What you need to know - background information <bpt id="1">&lt;a id="what-you-need-to-know-background-information"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Basic functionalities of the SMT <bpt id="1">&lt;a id="basic-functionalities-of-the-smt"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic functionalities of the SMT <bpt id="1">&lt;a id="basic-functionalities-of-the-smt"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org)</ept> is a easy-to-use tool for participatory mapping. It involves the offline collection of data, and the digitisation and georeferencing of the collected local data. The low-tech solution is designed to simplify the collection and analysis of local spatial knowledge and perceptions through the use of pens and paper maps: the so-called "Sketch Maps". The Sketch Map Tool is an open-source web application. It facilitates the creation, usage and the digitisation and analysis of paper-based maps with OpenStreetMap or satellite data.</source>
+<target xml:lang="fr">The <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org)</ept> is a easy-to-use tool for participatory mapping. It involves the offline collection of data, and the digitisation and georeferencing of the collected local data. The low-tech solution is designed to simplify the collection and analysis of local spatial knowledge and perceptions through the use of pens and paper maps: the so-called "Sketch Maps". The Sketch Map Tool is an open-source web application. It facilitates the creation, usage and the digitisation and analysis of paper-based maps with OpenStreetMap or satellite data.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">The first step is the creation of the paper-based maps. Participants can choose between basemaps containing <bpt id="1">[</bpt>OpenStreetMap (OSM)<ept id="1">](www.openstreetmap.org)</ept> data or basemaps containing satellite images. In addition, the tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping. This evaluation is based on a quality analysis of the OpenStreetMap (OSM) data using the <bpt id="2">[</bpt>HeiGIT ohsome quality analyst<ept id="2">](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/)</ept>.</source>
+<target xml:lang="fr">The first step is the creation of the paper-based maps. Participants can choose between basemaps containing <bpt id="1">[</bpt>OpenStreetMap (OSM)<ept id="1">](www.openstreetmap.org)</ept> data or basemaps containing satellite images. In addition, the tool can evaluate how well-suited an area of the OpenStreetMap (OSM) basemap is for participatory mapping. This evaluation is based on a quality analysis of the OpenStreetMap (OSM) data using the <bpt id="2">[</bpt>HeiGIT ohsome quality analyst<ept id="2">](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Usually, the data is collected on site and offline through participatory mapping. For this, you only need participants, printed Sketch Maps and pens to draw markings on the Sketch Maps.</source>
+<target xml:lang="fr">Usually, the data is collected on site and offline through participatory mapping. For this, you only need participants, printed Sketch Maps and pens to draw markings on the Sketch Maps.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georeferencing and colour-detection process. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can be downloaded in various geodata formats.  The results can then be used for further analysis in Geographic Information System software (such as QGIS).</source>
+<target xml:lang="fr">After mapping, the Sketch Map Tool supports the digitisation of the Sketch Maps. Upon uploading the pictures or scans of the marked Sketch Maps, the Sketch Map Tool initiates an automatic georeferencing and colour-detection process. The tool uses a combination of computer vision algorithms and novel AI models to extract Sketch Maps from photos and detect markings on them. The results can be downloaded in various geodata formats.  The results can then be used for further analysis in Geographic Information System software (such as QGIS).</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">What does 'georeferenced' mean? <bpt id="1">&lt;a id="what-does-georeferenced-mean"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What does 'georeferenced' mean? <bpt id="1">&lt;a id="what-does-georeferenced-mean"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">A non-georeferenced image</source>
+<target xml:lang="fr">A non-georeferenced image</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">A georeferenced image – GeoTIFF</source>
+<target xml:lang="fr">A georeferenced image – GeoTIFF</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic.</source>
+<target xml:lang="fr">Just an image, even if you load it in QGis and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.</source>
+<target xml:lang="fr">The file contains information about its coordinate system and its location, so you can combine it other geodata e.g. with GPS data.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Map_Not_georefferenced.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Map_Not_georefferenced.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Geofrefference_map.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Geofrefference_map.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Background Information on UMAP and QGIS in comparison <bpt id="1">&lt;a id="background-information-on-umap-and-qgis-in-comparison"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background Information on UMAP and QGIS in comparison <bpt id="1">&lt;a id="background-information-on-umap-and-qgis-in-comparison"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as a basemap layer. No installation or registration is necessary to use the platform. This enables users to quickly gain an intuitive overview of their data.
+Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.</source>
+<target xml:lang="fr">UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as a basemap layer. No installation or registration is necessary to use the platform. This enables users to quickly gain an intuitive overview of their data.
+Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Feature</source>
+<target xml:lang="fr">Feature</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">QGIS</source>
+<target xml:lang="fr">QGIS</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">uMap</source>
+<target xml:lang="fr">uMap</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Type</source>
+<target xml:lang="fr">Type</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Desktop Geographic Information System (GIS) software</source>
+<target xml:lang="fr">Desktop Geographic Information System (GIS) software</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Online mapping platform</source>
+<target xml:lang="fr">Online mapping platform</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Accessibility</source>
+<target xml:lang="fr">Accessibility</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Requires installation on a desktop computer</source>
+<target xml:lang="fr">Requires installation on a desktop computer</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Accessible online via web browser</source>
+<target xml:lang="fr">Accessible online via web browser</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Purpose</source>
+<target xml:lang="fr">Purpose</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Comprehensive GIS software for spatial data analysis</source>
+<target xml:lang="fr">Comprehensive GIS software for spatial data analysis</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Interactive mapping tool for creating custom maps</source>
+<target xml:lang="fr">Interactive mapping tool for creating custom maps</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Data Import</source>
+<target xml:lang="fr">Data Import</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Supports various data formats (shapefiles, geodatabases, raster data, etc.)</source>
+<target xml:lang="fr">Supports various data formats (shapefiles, geodatabases, raster data, etc.)</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Vector data only, user input via map canvas, some geodata formats (geojson, .gpx, .kml, .osm)</source>
+<target xml:lang="fr">Vector data only, user input via map canvas, some geodata formats (geojson, .gpx, .kml, .osm)</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Data Visualisation and Analysis</source>
+<target xml:lang="fr">Data Visualisation and Analysis</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Offers extensive visualisation and analysis capabilities; Provides a wide range of geospatial analysis tools</source>
+<target xml:lang="fr">Offers extensive visualisation and analysis capabilities; Provides a wide range of geospatial analysis tools</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Focuses on the creation of interactive maps with custom elements; No analysis tools</source>
+<target xml:lang="fr">Focuses on the creation of interactive maps with custom elements; No analysis tools</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Output</source>
+<target xml:lang="fr">Output</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Printable map with all necessary map elements</source>
+<target xml:lang="fr">Printable map with all necessary map elements</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">URL to share map online</source>
+<target xml:lang="fr">URL to share map online</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Step-by step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step-by step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">If you experience any problems during your use of the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept> please take a look at the <bpt id="2">[</bpt>help page<ept id="2">](https://sketch-map-tool.heigit.org/help)</ept>.</source>
+<target xml:lang="fr">If you experience any problems during your use of the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept> please take a look at the <bpt id="2">[</bpt>help page<ept id="2">](https://sketch-map-tool.heigit.org/help)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">1.	Start discussion <bpt id="1">&lt;a id="1-start-discussion"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1.	Start discussion <bpt id="1">&lt;a id="1-start-discussion"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Prepare and discuss in your group.</source>
+<target xml:lang="fr">Prepare and discuss in your group.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Take a look at information about your case-study. The images included might give you an idea of how the community might look like.</source>
+<target xml:lang="fr">Take a look at information about your case-study. The images included might give you an idea of how the community might look like.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">What would do you want to map? Which data do you want to collect? You can decide if you want to map hazards (e.g. the flood extent), vulnerabilities (e.g. poor infrastructure) or capacities.</source>
+<target xml:lang="fr">What would do you want to map? Which data do you want to collect? You can decide if you want to map hazards (e.g. the flood extent), vulnerabilities (e.g. poor infrastructure) or capacities.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Scroll through the help-page of the Sketch Map Tool</source>
+<target xml:lang="fr">Scroll through the help-page of the Sketch Map Tool</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">2.	Create a map in the Sketch Map Tool <bpt id="1">&lt;a id="2-create-a-map-in-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2.	Create a map in the Sketch Map Tool <bpt id="1">&lt;a id="2-create-a-map-in-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept></source>
+<target xml:lang="fr">Open the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Zoom in and select your map area. Try different zoom levels and change the orientation.</source>
+<target xml:lang="fr">Zoom in and select your map area. Try different zoom levels and change the orientation.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Create a map in an A4-size (in future cases, you can choose other Sketch Map sizes).</source>
+<target xml:lang="fr">Create a map in an A4-size (in future cases, you can choose other Sketch Map sizes).</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">3.	Mapping <bpt id="1">&lt;a id="3-mapping"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3.	Mapping <bpt id="1">&lt;a id="3-mapping"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Discuss in your group what and how you would like to map. Decide if you focus on larger areas, on streets (or lines), or particular objects, so your mapping is similar and the results can be compared. Please take a look at our <bpt id="1">[</bpt>help page<ept id="1">](https://sketch-map-tool.heigit.org/help)</ept> for tips on mapping.</source>
+<target xml:lang="fr">Discuss in your group what and how you would like to map. Decide if you focus on larger areas, on streets (or lines), or particular objects, so your mapping is similar and the results can be compared. Please take a look at our <bpt id="1">[</bpt>help page<ept id="1">](https://sketch-map-tool.heigit.org/help)</ept> for tips on mapping.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Try to identify realistic places for what ever you want to map. Alternatively, just mark the map with different shapes in different sizes and colours to explore how the digitisation will look like.</source>
+<target xml:lang="fr">Try to identify realistic places for what ever you want to map. Alternatively, just mark the map with different shapes in different sizes and colours to explore how the digitisation will look like.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">4.	Digitise <bpt id="1">&lt;a id="4-digitise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4.	Digitise <bpt id="1">&lt;a id="4-digitise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Take a photo of your map. Please take a look at our <bpt id="1">[</bpt>help page<ept id="1">](https://sketch-map-tool.heigit.org/help)</ept> for tips on how to take the picture.</source>
+<target xml:lang="fr">Take a photo of your map. Please take a look at our <bpt id="1">[</bpt>help page<ept id="1">](https://sketch-map-tool.heigit.org/help)</ept> for tips on how to take the picture.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Upload the photo or scan to the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept>.</source>
+<target xml:lang="fr">Upload the photo or scan to the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Download the results to the Sketch Map Tool.</source>
+<target xml:lang="fr">Download the results to the Sketch Map Tool.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">5.	Open your results in QGIS or uMap <bpt id="1">&lt;a id="5-open-your-results-in-qgis-or-umap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5.	Open your results in QGIS or uMap <bpt id="1">&lt;a id="5-open-your-results-in-qgis-or-umap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">You can choose to use either QGIS (<bpt id="1">__</bpt>Option A<ept id="1">__</ept>) or <bpt id="2">[</bpt>uMap<ept id="2">](https://umap.openstreetmap.fr/en/)</ept> (<bpt id="3">__</bpt>Option B<ept id="3">__</ept>) for the next part of the exercise.</source>
+<target xml:lang="fr">You can choose to use either QGIS (<bpt id="1">__</bpt>Option A<ept id="1">__</ept>) or <bpt id="2">[</bpt>uMap<ept id="2">](https://umap.openstreetmap.fr/en/)</ept> (<bpt id="3">__</bpt>Option B<ept id="3">__</ept>) for the next part of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Option A: Open your results in QGIS
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Option A: Open your results in QGIS
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">A: Open your results in QGIS <bpt id="1">&lt;a id="a-open-your-results-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">A: Open your results in QGIS <bpt id="1">&lt;a id="a-open-your-results-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Open QGIS<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Open QGIS<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Open QGIS and navigate to <ph id="1">`Project`</ph> -> <ph id="2">`New`</ph> and click on <ph id="3">`Save`</ph>. Navigate to the folder where you want to save your project, give it a name and click <ph id="4">`Save`</ph> again. When working in QGIS always remember to save your project every now and then.</source>
+<target xml:lang="fr">Open QGIS and navigate to <ph id="1">`Project`</ph> -> <ph id="2">`New`</ph> and click on <ph id="3">`Save`</ph>. Navigate to the folder where you want to save your project, give it a name and click <ph id="4">`Save`</ph> again. When working in QGIS always remember to save your project every now and then.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Add a Basemap<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Add a Basemap<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">For a better overview and orientation, it is always helpful to add a basemap to your project and put your situation in a spatial context. Navigate to the browser <ph id="1">`Browser`</ph> Panel > <ph id="2">`XYZ Tiles`</ph>, and open the dropdown by clicking on it. Next, select OpenStreetMap or another basemap.</source>
+<target xml:lang="fr">For a better overview and orientation, it is always helpful to add a basemap to your project and put your situation in a spatial context. Navigate to the browser <ph id="1">`Browser`</ph> Panel > <ph id="2">`XYZ Tiles`</ph>, and open the dropdown by clicking on it. Next, select OpenStreetMap or another basemap.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Click <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)</ept> for more information on basemaps and how toa dd them to your project.</source>
+<target xml:lang="fr">Click <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)</ept> for more information on basemaps and how toa dd them to your project.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Load your results in QGIS<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Load your results in QGIS<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">First, unzip the folder you downloaded from the Sketch Map Tool website. In it, you will find a vector file (<ph id="1">`geojson`</ph>) and a raster file (<ph id="2">`geotiff`</ph>, <ph id="3">`tiff`</ph>, or <ph id="4">`tif`</ph>).</source>
+<target xml:lang="fr">First, unzip the folder you downloaded from the Sketch Map Tool website. In it, you will find a vector file (<ph id="1">`geojson`</ph>) and a raster file (<ph id="2">`geotiff`</ph>, <ph id="3">`tiff`</ph>, or <ph id="4">`tif`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Load both files into QGIS by dragging them onto QGIS. Be aware which files are at the top, because you might not be able to see the layers which are below. If it is your first time using QGIS, take your time to familiarise yourself with the <bpt id="1">[</bpt>QGIS interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept>.</source>
+<target xml:lang="fr">Load both files into QGIS by dragging them onto QGIS. Be aware which files are at the top, because you might not be able to see the layers which are below. If it is your first time using QGIS, take your time to familiarise yourself with the <bpt id="1">[</bpt>QGIS interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Take a look at the detected markings, compare it with your map. Which differences can you see? Are some markings missing in the Sketch Map Tool results?</source>
+<target xml:lang="fr">Take a look at the detected markings, compare it with your map. Which differences can you see? Are some markings missing in the Sketch Map Tool results?</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Option B: Open your results in uMAP
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Option B: Open your results in uMAP
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">B: Open your results in uMap <bpt id="1">&lt;a id="b-open-your-results-in-umap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">B: Open your results in uMap <bpt id="1">&lt;a id="b-open-your-results-in-umap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Open the browser of your choice, navigate to the <bpt id="1">[</bpt>uMap Website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept> and click on the large green button: <ph id="2">`Create a map`</ph>.</source>
+<target xml:lang="fr">Open the browser of your choice, navigate to the <bpt id="1">[</bpt>uMap Website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept> and click on the large green button: <ph id="2">`Create a map`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Right above your map canvas, you can click in "<ph id="1">`Untitled map`</ph>" to edit your map properties. Give your map a title and a short description.</source>
+<target xml:lang="fr">Right above your map canvas, you can click in "<ph id="1">`Untitled map`</ph>" to edit your map properties. Give your map a title and a short description.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">You can load your data into the map frame by clicking on the upwards-arrow button <bpt id="1">![</bpt><ept id="1">](/fig/umap_upload_data_icon.png)</ept> in the toolbar on the right side of the website. The <ph id="2">`Import data`</ph> panel will open on the right hand side. Click on <ph id="3">`Select file`</ph> and navigate to your vector output from the SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on <ph id="4">`Open`</ph>. uMap will automatically detect that your file is a geojson/vector file . Click on <ph id="5">`Import`</ph> to load your data to your map canvas.</source>
+<target xml:lang="fr">You can load your data into the map frame by clicking on the upwards-arrow button <bpt id="1">![</bpt><ept id="1">](/fig/umap_upload_data_icon.png)</ept> in the toolbar on the right side of the website. The <ph id="2">`Import data`</ph> panel will open on the right hand side. Click on <ph id="3">`Select file`</ph> and navigate to your vector output from the SKetch Map Tool ("Schuld_Ahr-tal_sketch-map_Ex4.geojson") and click on <ph id="4">`Open`</ph>. uMap will automatically detect that your file is a geojson/vector file . Click on <ph id="5">`Import`</ph> to load your data to your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Click in the upper right corner on <ph id="1">`Save`</ph>. If you are not logged in, you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email.</source>
+<target xml:lang="fr">Click in the upper right corner on <ph id="1">`Save`</ph>. If you are not logged in, you will be provided with an URL where you can access your map any time in the future. Save it somewhere or send it to your email.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">6.	Wrap-up: What are your experiences with the Sketch Map Tool? - Discuss: <bpt id="1">&lt;a id="6-wrap-up-what-are-your-experiences-with-the-sketch-map-tool-discuss"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6.	Wrap-up: What are your experiences with the Sketch Map Tool? - Discuss: <bpt id="1">&lt;a id="6-wrap-up-what-are-your-experiences-with-the-sketch-map-tool-discuss"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Take notes and prepare a short presentation about your map area, the markings, and how the results look like at the end. Bring them back in the big group to wrap the exercise together.</source>
+<target xml:lang="fr">Take notes and prepare a short presentation about your map area, the markings, and how the results look like at the end. Bring them back in the big group to wrap the exercise together.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Did you discover any problems or challenges during this exercise?</source>
+<target xml:lang="fr">Did you discover any problems or challenges during this exercise?</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">What is the greatest benefit of the Sketch Map Tool from your perspective?</source>
+<target xml:lang="fr">What is the greatest benefit of the Sketch Map Tool from your perspective?</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Are their any open questions?</source>
+<target xml:lang="fr">Are their any open questions?</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

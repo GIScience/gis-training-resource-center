@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Historical Impact Assessment (HIA) Sudan exercise <bpt id="1">&lt;a id="historical-impact-assessment-hia-sudan-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Historical Impact Assessment (HIA) Sudan exercise <bpt id="1">&lt;a id="historical-impact-assessment-hia-sudan-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">A HIA has two purposes: First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems. Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
+This exercise is based on the article Historical Impact Assessment (HIA) for Flood in Sudan. In this article, there are seven steps listed for the HIA in Sudan. This exercise will start with step 3- Selecting datasets.</source>
+<target xml:lang="fr">A HIA has two purposes: First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems. Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
+This exercise is based on the article Historical Impact Assessment (HIA) for Flood in Sudan. In this article, there are seven steps listed for the HIA in Sudan. This exercise will start with step 3- Selecting datasets.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Aim of the exercise: <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aim of the exercise: <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In this exercise, you will be introduced to the fundamental principles of this quantitative HIA approach. You will build a simplified HIA dataset with real-world data. Furthermore, you will visualize the produced dataset in QGIS.
+To analyse the data in QGIS is just one thing you can do with a HIA dataset. The wide range of other options like the production of a timeline infographic will not be covered in this exercise.</source>
+<target xml:lang="fr">In this exercise, you will be introduced to the fundamental principles of this quantitative HIA approach. You will build a simplified HIA dataset with real-world data. Furthermore, you will visualize the produced dataset in QGIS.
+To analyse the data in QGIS is just one thing you can do with a HIA dataset. The wide range of other options like the production of a timeline infographic will not be covered in this exercise.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Relevant Wiki Articles <bpt id="1">&lt;a id="relevant-wiki-articles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Relevant Wiki Articles <bpt id="1">&lt;a id="relevant-wiki-articles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Download the training data folder <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)</ept><ept id="1">__</ept> and save it on your PC. Unzip the .zip file!
+The folder is called <bpt id="3">__</bpt>GIS_AA_HIA_Sudan_ex1<ept id="3">__</ept> and contains the whole <bpt id="4">[</bpt>standard folder structure<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> with all data in the input folder and the additional documentation in the documentation folder.</source>
+<target xml:lang="fr">Download the training data folder <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)</ept><ept id="1">__</ept> and save it on your PC. Unzip the .zip file!
+The folder is called <bpt id="3">__</bpt>GIS_AA_HIA_Sudan_ex1<ept id="3">__</ept> and contains the whole <bpt id="4">[</bpt>standard folder structure<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> with all data in the input folder and the additional documentation in the documentation folder.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Step 1: Area of interest ✅ <bpt id="1">&lt;a id="step-1-area-of-interest"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 1: Area of interest ✅ <bpt id="1">&lt;a id="step-1-area-of-interest"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Sudan will not be the subject of this exercise.</source>
+<target xml:lang="fr">This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Sudan will not be the subject of this exercise.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Step 2: Finding Flood Disaster Timeframes ✅ <bpt id="1">&lt;a id="step-2-finding-flood-disaster-timeframes"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 2: Finding Flood Disaster Timeframes ✅ <bpt id="1">&lt;a id="step-2-finding-flood-disaster-timeframes"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">We want to tie single pieces of information, like impacts, to known flood events in Sudan. Thus, we first need a comprehensive list of such events. In the case of Sudan, there are two sources: EM-DAT and ReliefWeb. <bpt id="1">[</bpt>EM-DAT<ept id="1">](https://www.emdat.be/)</ept> is a disaster database that lists events above a certain severity.</source>
+<target xml:lang="fr">We want to tie single pieces of information, like impacts, to known flood events in Sudan. Thus, we first need a comprehensive list of such events. In the case of Sudan, there are two sources: EM-DAT and ReliefWeb. <bpt id="1">[</bpt>EM-DAT<ept id="1">](https://www.emdat.be/)</ept> is a disaster database that lists events above a certain severity.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>ReliefWeb<ept id="1">](https://reliefweb.int/)</ept> is actually an information platform for humanitarian response, but it also has a list of active and past disasters.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>ReliefWeb<ept id="1">](https://reliefweb.int/)</ept> is actually an information platform for humanitarian response, but it also has a list of active and past disasters.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the time frames of each event. This can easily be done in Excel</source>
+<target xml:lang="fr">Both databases list the same events for the most part. By comparing the two datasets and only selecting unique events, we receive a list of all significant flood events in Sudan and the time frames of each event. This can easily be done in Excel</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Task 3: Selecting datasets <bpt id="1">&lt;a id="task-3-selecting-datasets"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Selecting datasets <bpt id="1">&lt;a id="task-3-selecting-datasets"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to: the Sudan Red Crescent Society (SRCS), ReliefWeb, and FloodList. For this exercise, we will limit ourselves to datasets from ReliefWeb and FloodList.
+In the 'Input' folder of the exercise data, you can find the folder 'reports_articles.' This folder contains 10 datasets.</source>
+<target xml:lang="fr">In this step, we decide which datasets we want to include in the HIA. In this context, there are three sources we can turn to: the Sudan Red Crescent Society (SRCS), ReliefWeb, and FloodList. For this exercise, we will limit ourselves to datasets from ReliefWeb and FloodList.
+In the 'Input' folder of the exercise data, you can find the folder 'reports_articles.' This folder contains 10 datasets.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Your task now is to go through the reports and decide which one you will use in the HIA. Place the dataset you want to use in a new folder.</source>
+<target xml:lang="fr">Your task now is to go through the reports and decide which one you will use in the HIA. Place the dataset you want to use in a new folder.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">As a decision support, you can use these three parameters:</source>
+<target xml:lang="fr">As a decision support, you can use these three parameters:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Currentness<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Currentness<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The assumption is that later after the event, the picture of what happens becomes clearer, thus the data report is more reliable.
+    This means., if you have multiple similar datasets containing similar data, chose the newer one.</source>
+<target xml:lang="fr">The assumption is that later after the event, the picture of what happens becomes clearer, thus the data report is more reliable.
+    This means., if you have multiple similar datasets containing similar data, chose the newer one.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Uniqueness<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Uniqueness<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">It is important to not only use data from one source because of confidence.
+    The assumption is that different organizations have different capacities and work in different areas; thus, they may have better information in some locations or sectors than other organizations.</source>
+<target xml:lang="fr">It is important to not only use data from one source because of confidence.
+    The assumption is that different organizations have different capacities and work in different areas; thus, they may have better information in some locations or sectors than other organizations.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Give the datasets you selected an ID. This is essential to be able to later pinpoint from which dataset a particular information was pulled. Change the name of the file to the new ID. Furthermore, create a list of the datasets you want to use for the HIA.</source>
+<target xml:lang="fr">Give the datasets you selected an ID. This is essential to be able to later pinpoint from which dataset a particular information was pulled. Change the name of the file to the new ID. Furthermore, create a list of the datasets you want to use for the HIA.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Use the method below to come up with the ID’s.
+Expected outcome:</source>
+<target xml:lang="fr">Use the method below to come up with the ID’s.
+Expected outcome:</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">A folder with all datasets to be used in the HIA. The dataset's names should be their ID.</source>
+<target xml:lang="fr">A folder with all datasets to be used in the HIA. The dataset's names should be their ID.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">A list of all datasets to be used, with ID.</source>
+<target xml:lang="fr">A list of all datasets to be used, with ID.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Task 4: Preparing Excel table Structure ✅ <bpt id="1">&lt;a id="task-4-preparing-excel-table-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 4: Preparing Excel table Structure ✅ <bpt id="1">&lt;a id="task-4-preparing-excel-table-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Before we can start compiling data, we need to prepare the Excel table structure we want to use. Depending on the context the table structure can look differently. In the end, you need to be able to collect information on when something happened, where it happened and what happened. Furthermore, you need to be able to identify from which dataset you take every single information.
+Below you can find short explanations of the different columns of the table structure.</source>
+<target xml:lang="fr">Before we can start compiling data, we need to prepare the Excel table structure we want to use. Depending on the context the table structure can look differently. In the end, you need to be able to collect information on when something happened, where it happened and what happened. Furthermore, you need to be able to identify from which dataset you take every single information.
+Below you can find short explanations of the different columns of the table structure.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Task 5: Data compiling <bpt id="1">&lt;a id="task-5-data-compiling"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 5: Data compiling <bpt id="1">&lt;a id="task-5-data-compiling"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Finally, we can start to compile the data. Remember we are using the <bpt id="1">__</bpt>key + value<ept id="1">__</ept> concept to create a long table. Every piece of information gets one row!</source>
+<target xml:lang="fr">Finally, we can start to compile the data. Remember we are using the <bpt id="1">__</bpt>key + value<ept id="1">__</ept> concept to create a long table. Every piece of information gets one row!</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Tipps for data compiling
+Compiling the data in EXCEL is a time-intensive and repeatable task. Here are some tips to speed up the process:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Tipps for data compiling
+Compiling the data in EXCEL is a time-intensive and repeatable task. Here are some tips to speed up the process:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Excel copy function:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Excel copy function:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Try to use the copy function of Excel as much as possible. When taking info from a map, the information in the columns, year, start_date, end_date, date, Source_ID, and admin_level usually stay the same. So you can just copy and paste this information. In most cases, you should only write the name of location, Impact_type, Impact_quality and Impact_quantity.</source>
+<target xml:lang="fr">Try to use the copy function of Excel as much as possible. When taking info from a map, the information in the columns, year, start_date, end_date, date, Source_ID, and admin_level usually stay the same. So you can just copy and paste this information. In most cases, you should only write the name of location, Impact_type, Impact_quality and Impact_quantity.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Use ChatGPT:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Use ChatGPT:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">If you encounter tables that do not fit into your table structure use ChatGPT to turn them into a long table format. For example, look at the image in the table below.</source>
+<target xml:lang="fr">If you encounter tables that do not fit into your table structure use ChatGPT to turn them into a long table format. For example, look at the image in the table below.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">You can copy the content which produces this text:</source>
+<target xml:lang="fr">You can copy the content which produces this text:</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Go to ChatGPT and use a prompt like
+„Can you turn this information taken from a Table into a long table format?“ + the table as text</source>
+<target xml:lang="fr">Go to ChatGPT and use a prompt like
+„Can you turn this information taken from a Table into a long table format?“ + the table as text</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Probably you will have to ask ChatGPT to give you the whole table. Something like: "Super good! Can you give me a table on the other states as well?
+"</source>
+<target xml:lang="fr">Probably you will have to ask ChatGPT to give you the whole table. Something like: "Super good! Can you give me a table on the other states as well?
+"</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Use Gemini AI:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Use Gemini AI:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Google Gemini Can also handle images. For example, it can turn this graph into a table which is much easier to handle than copying everything by hand.</source>
+<target xml:lang="fr">Google Gemini Can also handle images. For example, it can turn this graph into a table which is much easier to handle than copying everything by hand.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">The resulting table can easily be adjusted in Excel.</source>
+<target xml:lang="fr">The resulting table can easily be adjusted in Excel.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">State</source>
+<target xml:lang="fr">State</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Affected People</source>
+<target xml:lang="fr">Affected People</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Deaths</source>
+<target xml:lang="fr">Deaths</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">AL GEZIRA</source>
+<target xml:lang="fr">AL GEZIRA</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">23,280</source>
+<target xml:lang="fr">23,280</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">26</source>
+<target xml:lang="fr">26</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">BLUE NILE</source>
+<target xml:lang="fr">BLUE NILE</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">1,930</source>
+<target xml:lang="fr">1,930</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">E. DARFUR</source>
+<target xml:lang="fr">E. DARFUR</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">150</source>
+<target xml:lang="fr">150</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">GEDAREF</source>
+<target xml:lang="fr">GEDAREF</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">11,355</source>
+<target xml:lang="fr">11,355</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">13</source>
+<target xml:lang="fr">13</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">KASSALA</source>
+<target xml:lang="fr">KASSALA</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">55,880</source>
+<target xml:lang="fr">55,880</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">6</source>
+<target xml:lang="fr">6</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">KHARTOUM</source>
+<target xml:lang="fr">KHARTOUM</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">4,305</source>
+<target xml:lang="fr">4,305</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">2</source>
+<target xml:lang="fr">2</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">N. DARFUR</source>
+<target xml:lang="fr">N. DARFUR</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">7,367</source>
+<target xml:lang="fr">7,367</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">N. KORDOFAN</source>
+<target xml:lang="fr">N. KORDOFAN</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">5,310</source>
+<target xml:lang="fr">5,310</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">4</source>
+<target xml:lang="fr">4</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">NORTHERN</source>
+<target xml:lang="fr">NORTHERN</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">3,210</source>
+<target xml:lang="fr">3,210</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">RED SEA</source>
+<target xml:lang="fr">RED SEA</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">520</source>
+<target xml:lang="fr">520</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">3</source>
+<target xml:lang="fr">3</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">RIVER NILE</source>
+<target xml:lang="fr">RIVER NILE</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">N/A</source>
+<target xml:lang="fr">N/A</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">SENNAR</source>
+<target xml:lang="fr">SENNAR</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">16,980</source>
+<target xml:lang="fr">16,980</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">S. DARFUR</source>
+<target xml:lang="fr">S. DARFUR</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">38,575</source>
+<target xml:lang="fr">38,575</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">17</source>
+<target xml:lang="fr">17</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">S. KORDOFAN</source>
+<target xml:lang="fr">S. KORDOFAN</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">10,812</source>
+<target xml:lang="fr">10,812</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">7</source>
+<target xml:lang="fr">7</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">W. DARFUR</source>
+<target xml:lang="fr">W. DARFUR</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">285</source>
+<target xml:lang="fr">285</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">13</source>
+<target xml:lang="fr">13</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">W. KORDOFAN</source>
+<target xml:lang="fr">W. KORDOFAN</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">14,340</source>
+<target xml:lang="fr">14,340</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">6</source>
+<target xml:lang="fr">6</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">WHITE NILE</source>
+<target xml:lang="fr">WHITE NILE</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">10,160</source>
+<target xml:lang="fr">10,160</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">1</source>
+<target xml:lang="fr">1</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Find a relevant information in a dataset</source>
+<target xml:lang="fr">Find a relevant information in a dataset</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Date:</source>
+<target xml:lang="fr">Date:</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Year`</ph>: This information is mandatory! Check to which year the information is revering.</source>
+<target xml:lang="fr"><ph id="1">`Year`</ph>: This information is mandatory! Check to which year the information is revering.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Start_Date`</ph> &amp; <ph id="2">`End_Date`</ph>: If the information on the timeframe of the flood is available, place the start and end date in these columns.
+    This information should be listed in the Flood Events List.</source>
+<target xml:lang="fr"><ph id="1">`Start_Date`</ph> &amp; <ph id="2">`End_Date`</ph>: If the information on the timeframe of the flood is available, place the start and end date in these columns.
+    This information should be listed in the Flood Events List.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Date`</ph>: If exact information of the date of the <bpt id="2">__</bpt>impact<ept id="2">__</ept> is available, place it here.</source>
+<target xml:lang="fr"><ph id="1">`Date`</ph>: If exact information of the date of the <bpt id="2">__</bpt>impact<ept id="2">__</ept> is available, place it here.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Source_ID: Write the ID in the <ph id="1">`Dataset_ID`</ph> column.</source>
+<target xml:lang="fr">Source_ID: Write the ID in the <ph id="1">`Dataset_ID`</ph> column.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Location:</source>
+<target xml:lang="fr">Location:</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin_level`</ph>: Check t which admin level the information is revering to e.g. state, locality, town or camp.</source>
+<target xml:lang="fr"><ph id="1">`admin_level`</ph>: Check t which admin level the information is revering to e.g. state, locality, town or camp.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin_1`</ph>: This information is mandatory! To which state is the information revering?</source>
+<target xml:lang="fr"><ph id="1">`admin_1`</ph>: This information is mandatory! To which state is the information revering?</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin_2`</ph>: If avilebel. To which locality is the information revering?</source>
+<target xml:lang="fr"><ph id="1">`admin_2`</ph>: If avilebel. To which locality is the information revering?</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin_3`</ph>: If avilebel. To which town is the information revering?</source>
+<target xml:lang="fr"><ph id="1">`admin_3`</ph>: If avilebel. To which town is the information revering?</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin_camp`</ph>: If avilebel. To which camp is the information revering?</source>
+<target xml:lang="fr"><ph id="1">`admin_camp`</ph>: If avilebel. To which camp is the information revering?</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Impact_type`</ph>: Select the fitting impact type from the Impact types list or create a new one.</source>
+<target xml:lang="fr"><ph id="1">`Impact_type`</ph>: Select the fitting impact type from the Impact types list or create a new one.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Impact_quantity`</ph>: If quantitative information, place the number here.</source>
+<target xml:lang="fr"><ph id="1">`Impact_quantity`</ph>: If quantitative information, place the number here.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Impact quality`</ph>: If qualitative information, place „Yes“ or „No“ here.</source>
+<target xml:lang="fr"><ph id="1">`Impact quality`</ph>: If qualitative information, place „Yes“ or „No“ here.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Below you can find some examples of pieces of information from different datasets placed in the table structure.</source>
+<target xml:lang="fr">Below you can find some examples of pieces of information from different datasets placed in the table structure.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Emergency Plan of Action (EPoA) Sudan: Floods 2018</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Emergency Plan of Action (EPoA) Sudan: Floods 2018</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">This is a small extract from Emergency Plan of Action (EPoA) Sudan: Floods 2018 page 4.</source>
+<target xml:lang="fr">This is a small extract from Emergency Plan of Action (EPoA) Sudan: Floods 2018 page 4.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept>
+| Year | Start_Date | End_Date | Date       | source_ID            | admin_level | admin_1       | admin_2 | admin_3 | admin_camp | Impact type                | Impact_quantity | Impact_quality |
+|------|------------|----------|------------|----------------------|-------------|---------------|---------|---------|------------|----------------------------|-----------------|----------------|
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Elnohoud|         |            | houses damaged_totaly      | 2500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Einhoud |         |            | houses_damaged_partially  | 1500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | deaths                     | 6               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | missing people             | 3               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | Injured                    | 49              |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | livestock deaths           | 121             |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | water infrastructure_damage| 3               |                |
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept>
+| Year | Start_Date | End_Date | Date       | source_ID            | admin_level | admin_1       | admin_2 | admin_3 | admin_camp | Impact type                | Impact_quantity | Impact_quality |
+|------|------------|----------|------------|----------------------|-------------|---------------|---------|---------|------------|----------------------------|-----------------|----------------|
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Elnohoud|         |            | houses damaged_totaly      | 2500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | Locality    | West Kordofan | Einhoud |         |            | houses_damaged_partially  | 1500            |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | deaths                     | 6               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | missing people             | 3               |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | Injured                    | 49              |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | livestock deaths           | 121             |                |
+| 2018 | 23/07/2018 | 30/07/2018 | 23/07/2018 | 2018_IFRC_20180813  | State       | West Kordofan |         |         |            | water infrastructure_damage| 3               |                |
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>SUDAN FLOOD RESPONSE HUMANITARIAN PARTNERS UPDATE BY STATE #3 (as of 19 Oct, 2020)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>SUDAN FLOOD RESPONSE HUMANITARIAN PARTNERS UPDATE BY STATE #3 (as of 19 Oct, 2020)</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">The map on the first page shows affecte population per state. This information can be extracted.</source>
+<target xml:lang="fr">The map on the first page shows affecte population per state. This information can be extracted.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept>
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1    | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | Northern    |          |         |          |  | pop_affected | 125660  |      |<ph id="2">          </ph>
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | River Nile  |          |         |           | | pop_affected | 33225   |                |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             |<ph id="3">            </ph>
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept>
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1    | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | Northern    |          |         |          |  | pop_affected | 125660  |      |<ph id="2">          </ph>
+| 2020 | 07/2020    | 09/2020  | 2020 OCHA 20201025 | State  | River Nile  |          |         |           | | pop_affected | 33225   |                |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             |<ph id="3">            </ph>
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Humanitarian Bulletin Sudan Issue 35 | 22 - 28 August 2016</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Humanitarian Bulletin Sudan Issue 35 | 22 - 28 August 2016</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept>
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|----------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Kassala        |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | South Darfur   |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Al Gezira      |          |         |            || affected    || yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Sennar         |          |         |            | |affected    | |yes       |                 |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             | ...            |</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept>
+| Year | Start_Date | End_Date | Date         | source_ID          | admin_level | admin_1        | admin_2 | admin_3 | admin_camp | Impact type | Impact_quantity | Impact quality |
+|------|------------|----------|--------------|--------------------|-------------|----------------|---------|---------|-------------|-------------|-----------------|----------------|
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Kassala        |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | South Darfur   |          |         |            | |affected    | |yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Al Gezira      |          |         |            || affected    || yes       |                 |
+| 2016 | 06/2016    | 09/2016  | 2016 OCHA 20160828 | State  | Sennar         |          |         |            | |affected    | |yes       |                 |
+| ...  | ...        | ...      | ...          | ...                | ...         | ...        | ...     | ...     | ...         | ...         | ...             | ...            |</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Sudan Floods Countinue (FloodList)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Sudan Floods Countinue (FloodList)</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">The quote below is just one bit of relevant information from the flood list article.</source>
+<target xml:lang="fr">The quote below is just one bit of relevant information from the flood list article.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data extracted from dataset<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Year</source>
+<target xml:lang="fr">Year</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Start_Date</source>
+<target xml:lang="fr">Start_Date</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">End_Date</source>
+<target xml:lang="fr">End_Date</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Date</source>
+<target xml:lang="fr">Date</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">source_ID</source>
+<target xml:lang="fr">source_ID</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">admin_level</source>
+<target xml:lang="fr">admin_level</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">admin_1</source>
+<target xml:lang="fr">admin_1</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">admin_2</source>
+<target xml:lang="fr">admin_2</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">admin_3</source>
+<target xml:lang="fr">admin_3</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">admin_camp</source>
+<target xml:lang="fr">admin_camp</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Impact type</source>
+<target xml:lang="fr">Impact type</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Impact_quantity</source>
+<target xml:lang="fr">Impact_quantity</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Impact quality</source>
+<target xml:lang="fr">Impact quality</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">2013</source>
+<target xml:lang="fr">2013</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">01/08/2013</source>
+<target xml:lang="fr">01/08/2013</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">21/08/21</source>
+<target xml:lang="fr">21/08/21</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">11/08/2013</source>
+<target xml:lang="fr">11/08/2013</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">2013 Floodlist 201308</source>
+<target xml:lang="fr">2013 Floodlist 201308</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Camp</source>
+<target xml:lang="fr">Camp</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">South Darfur</source>
+<target xml:lang="fr">South Darfur</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Bellel</source>
+<target xml:lang="fr">Bellel</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Kalma Camp</source>
+<target xml:lang="fr">Kalma Camp</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">deaths</source>
+<target xml:lang="fr">deaths</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">14</source>
+<target xml:lang="fr">14</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">2014</source>
+<target xml:lang="fr">2014</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">01/08/2014</source>
+<target xml:lang="fr">01/08/2014</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">21/08/22</source>
+<target xml:lang="fr">21/08/22</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">11/08/2014</source>
+<target xml:lang="fr">11/08/2014</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">2014 Floodlist 201308</source>
+<target xml:lang="fr">2014 Floodlist 201308</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Camp</source>
+<target xml:lang="fr">Camp</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">South Darfur</source>
+<target xml:lang="fr">South Darfur</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Bellel</source>
+<target xml:lang="fr">Bellel</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Kalma Camp</source>
+<target xml:lang="fr">Kalma Camp</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">houses_damaged_totaly</source>
+<target xml:lang="fr">houses_damaged_totaly</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">874</source>
+<target xml:lang="fr">874</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Task 6: HIA Data Cleaning ✅ <bpt id="1">&lt;a id="task-6-hia-data-cleaning"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 6: HIA Data Cleaning ✅ <bpt id="1">&lt;a id="task-6-hia-data-cleaning"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">When creating such a dataset there will be errors like misspellings of names or wrong numbers. To not create faulty analysis products, we need to make sure that our data is consistent. Especially location names are vital in this context since we use these columns to join the data later on a geodata set in QGIS. If for example state names are spelled wrong, this data will be lost.
+To make sure our data is consistent, we need to clean it. Although this can be done using many different programs like Excel, R or Python, we recommend using <bpt id="1">[</bpt>OpenRefine<ept id="1">](https://openrefine.org/)</ept>.</source>
+<target xml:lang="fr">When creating such a dataset there will be errors like misspellings of names or wrong numbers. To not create faulty analysis products, we need to make sure that our data is consistent. Especially location names are vital in this context since we use these columns to join the data later on a geodata set in QGIS. If for example state names are spelled wrong, this data will be lost.
+To make sure our data is consistent, we need to clean it. Although this can be done using many different programs like Excel, R or Python, we recommend using <bpt id="1">[</bpt>OpenRefine<ept id="1">](https://openrefine.org/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">You can do this step task by cleaning the data you compiled in the previous steps or the data from the folder task_6.
+If you want to use the data from the „task_6“ folder, your principal task is to clean the file „Sudan_Impact_uncleaned“. To check your results, you can compare your cleaned data with the file „Imapct_Sudan_cleaned“.</source>
+<target xml:lang="fr">You can do this step task by cleaning the data you compiled in the previous steps or the data from the folder task_6.
+If you want to use the data from the „task_6“ folder, your principal task is to clean the file „Sudan_Impact_uncleaned“. To check your results, you can compare your cleaned data with the file „Imapct_Sudan_cleaned“.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Year and Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Year and Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Check if all values are within the expected range of years.</source>
+<target xml:lang="fr">Check if all values are within the expected range of years.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Ensure that there are no missing or invalid year values becaus we need a year information for all data</source>
+<target xml:lang="fr">Ensure that there are no missing or invalid year values becaus we need a year information for all data</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" or "Numeric facet" to explore the distribution of values in the Year column. Use the "Text filter" or "Numeric filter" to filter out any rows with invalid or missing year values.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" or "Numeric facet" to explore the distribution of values in the Year column. Use the "Text filter" or "Numeric filter" to filter out any rows with invalid or missing year values.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Date Columns (Start_Date, End_Date, Date):<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Date Columns (Start_Date, End_Date, Date):<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Check if all dates are in the correct date format.</source>
+<target xml:lang="fr">Check if all dates are in the correct date format.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Ensure that there are no  inconsistent date values.</source>
+<target xml:lang="fr">Ensure that there are no  inconsistent date values.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Edit cells" > "Common transforms" > "To date" option to convert date columns to a standard date format. Use the "Text facet" to identify and correct any inconsistencies in formatting or missing dates.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Edit cells" > "Common transforms" > "To date" option to convert date columns to a standard date format. Use the "Text facet" to identify and correct any inconsistencies in formatting or missing dates.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>source_ID Column:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>source_ID Column:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Check that there is only one way of spelling for every individual source_ID!</source>
+<target xml:lang="fr">Check that there is only one way of spelling for every individual source_ID!</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Check if all source IDs follow a consistent naming convention.</source>
+<target xml:lang="fr">Check if all source IDs follow a consistent naming convention.</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Ensure that there are no missing source IDs.</source>
+<target xml:lang="fr">Ensure that there are no missing source IDs.</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <ph id="2">`Cluster`</ph> and set <ph id="3">`Method`</ph> to <ph id="4">`Key collision`</ph>or <ph id="5">`Nearest neighbor`</ph>. Adjust wrong names by checking <ph id="6">`Merge`</ph> and adjust the <ph id="7">`New cell value`</ph> and click on <ph id="8">`Merge selected &amp; re-cluster`</ph></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <ph id="2">`Cluster`</ph> and set <ph id="3">`Method`</ph> to <ph id="4">`Key collision`</ph>or <ph id="5">`Nearest neighbor`</ph>. Adjust wrong names by checking <ph id="6">`Merge`</ph> and adjust the <ph id="7">`New cell value`</ph> and click on <ph id="8">`Merge selected &amp; re-cluster`</ph></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Check if all administrative units are correctly categorized.</source>
+<target xml:lang="fr">Check if all administrative units are correctly categorized.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Ensure that there are no misspelled or inconsistent administrative unit names.</source>
+<target xml:lang="fr">Ensure that there are no misspelled or inconsistent administrative unit names.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <bpt id="2">[</bpt><ph id="3">`Cluster`</ph><ept id="2">](https://openrefine.org/docs/manual/cellediting#cluster-and-edit)</ept> and set <ph id="4">`Method`</ph> to <ph id="5">`Key collision`</ph> or <ph id="6">`Nearest neighbor`</ph>. Consolidate the of states and loclities that they are consisten with the list in the <bpt id="7">[</bpt>location chapter<ept id="7">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location)</ept>.Adjust wrong names by checking <ph id="8">`Merge`</ph> and adjust the <ph id="9">`New cell value`</ph> and click on <ph id="10">`Merge selected &amp; re-cluster`</ph></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <bpt id="2">[</bpt><ph id="3">`Cluster`</ph><ept id="2">](https://openrefine.org/docs/manual/cellediting#cluster-and-edit)</ept> and set <ph id="4">`Method`</ph> to <ph id="5">`Key collision`</ph> or <ph id="6">`Nearest neighbor`</ph>. Consolidate the of states and loclities that they are consisten with the list in the <bpt id="7">[</bpt>location chapter<ept id="7">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location)</ept>.Adjust wrong names by checking <ph id="8">`Merge`</ph> and adjust the <ph id="9">`New cell value`</ph> and click on <ph id="10">`Merge selected &amp; re-cluster`</ph></target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Impact Type Column:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Impact Type Column:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Check if all impact types are correctly categorized and named.</source>
+<target xml:lang="fr">Check if all impact types are correctly categorized and named.</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Ensure that there are no duplicate or missing impact types.</source>
+<target xml:lang="fr">Ensure that there are no duplicate or missing impact types.</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <bpt id="2">[</bpt><ph id="3">`Cluster`</ph><ept id="2">](https://openrefine.org/docs/manual/cellediting#cluster-and-edit)</ept> and set <ph id="4">`Method`</ph> to <ph id="5">`Key collision`</ph> or <ph id="6">`Nearest neighbor`</ph>. Adjust wrong names by checking <ph id="7">`Merge`</ph> and adjust the <ph id="8">`New cell value`</ph> and click on <ph id="9">`Merge selected &amp; re-cluster`</ph></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <bpt id="2">[</bpt><ph id="3">`Cluster`</ph><ept id="2">](https://openrefine.org/docs/manual/cellediting#cluster-and-edit)</ept> and set <ph id="4">`Method`</ph> to <ph id="5">`Key collision`</ph> or <ph id="6">`Nearest neighbor`</ph>. Adjust wrong names by checking <ph id="7">`Merge`</ph> and adjust the <ph id="8">`New cell value`</ph> and click on <ph id="9">`Merge selected &amp; re-cluster`</ph></target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Impact Quantity Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Impact Quantity Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">Check if all numerical values are within expected ranges.</source>
+<target xml:lang="fr">Check if all numerical values are within expected ranges.</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Ensure that there are no missing or invalid numerical values.</source>
+<target xml:lang="fr">Ensure that there are no missing or invalid numerical values.</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Numeric facet" to explore the distribution of values in each numerical column. Use the "Edit cells" or "Transform" option to handle missing or invalid values, and standardize formatting.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Numeric facet" to explore the distribution of values in each numerical column. Use the "Edit cells" or "Transform" option to handle missing or invalid values, and standardize formatting.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Impact Quality Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Impact Quality Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Check that the same impacts are spelt consistently. For example illness names.</source>
+<target xml:lang="fr">Check that the same impacts are spelt consistently. For example illness names.</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <bpt id="2">[</bpt><ph id="3">`Cluster`</ph><ept id="2">](https://openrefine.org/docs/manual/cellediting#cluster-and-edit)</ept> and set <ph id="4">`Method`</ph> to <ph id="5">`Key collision`</ph> or <ph id="6">`Nearest neighbor`</ph>. Adjust wrong names by checking <ph id="7">`Merge`</ph> and adjust the <ph id="8">`New cell value`</ph> and click on <ph id="9">`Merge selected &amp; re-cluster`</ph></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>OpenRefine Step:<ept id="1">*</ept> Use the "Text facet" to explore the distribution of values in each admin level column. Click on <bpt id="2">[</bpt><ph id="3">`Cluster`</ph><ept id="2">](https://openrefine.org/docs/manual/cellediting#cluster-and-edit)</ept> and set <ph id="4">`Method`</ph> to <ph id="5">`Key collision`</ph> or <ph id="6">`Nearest neighbor`</ph>. Adjust wrong names by checking <ph id="7">`Merge`</ph> and adjust the <ph id="8">`New cell value`</ph> and click on <ph id="9">`Merge selected &amp; re-cluster`</ph></target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Delete redundant data<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Delete redundant data<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">It might be the case that you have for one flood event, multiple information on for example affected populations for the same location. This could later be a problem when you want to analyse the data.
+    Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.</source>
+<target xml:lang="fr">It might be the case that you have for one flood event, multiple information on for example affected populations for the same location. This could later be a problem when you want to analyse the data.
+    Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Task 7: Joining P-Code columns ✅ <bpt id="1">&lt;a id="task-7-joining-p-code-columns"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 7: Joining P-Code columns ✅ <bpt id="1">&lt;a id="task-7-joining-p-code-columns"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Usually, it is easier in QGIS to work with data having P-code columns in contrast to state or district names. There is just less potential for errors.
+Once you are done with data compiling and cleaning, it is recommended to join p-code columns to your data. Below you can find a method to do that in Excel.</source>
+<target xml:lang="fr">Usually, it is easier in QGIS to work with data having P-code columns in contrast to state or district names. There is just less potential for errors.
+Once you are done with data compiling and cleaning, it is recommended to join p-code columns to your data. Below you can find a method to do that in Excel.</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Task 8: Data export using Pivot-Table in Excel ✅ <bpt id="1">&lt;a id="task-8-data-export-using-pivot-table-in-excel"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 8: Data export using Pivot-Table in Excel ✅ <bpt id="1">&lt;a id="task-8-data-export-using-pivot-table-in-excel"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Impact Quantity for one year on state level:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Impact Quantity for one year on state level:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">Open the Excel dataset.</source>
+<target xml:lang="fr">Open the Excel dataset.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Turn the data in a table by clicking on <ph id="1">`Insert`</ph> -> <ph id="2">`Table`</ph>-> check <ph id="3">`My table has headers`</ph></source>
+<target xml:lang="fr">Turn the data in a table by clicking on <ph id="1">`Insert`</ph> -> <ph id="2">`Table`</ph>-> check <ph id="3">`My table has headers`</ph></target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Also under the <ph id="1">`Insert`</ph>-Tab click on <ph id="2">`Pivot Table`</ph>. Make sure your table range is correct. Check <ph id="3">`New Worksheet`</ph>. Click <ph id="4">`OK`</ph>.</source>
+<target xml:lang="fr">Also under the <ph id="1">`Insert`</ph>-Tab click on <ph id="2">`Pivot Table`</ph>. Make sure your table range is correct. Check <ph id="3">`New Worksheet`</ph>. Click <ph id="4">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Setup the pivot table by placing the columns as follows:</source>
+<target xml:lang="fr">Setup the pivot table by placing the columns as follows:</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Filter: Start_year</source>
+<target xml:lang="fr">Filter: Start_year</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Columns: Impact_Type</source>
+<target xml:lang="fr">Columns: Impact_Type</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)</source>
+<target xml:lang="fr">Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Values: Impact_quantity</source>
+<target xml:lang="fr">Values: Impact_quantity</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">To see the sum of the different impacts click on Impact_quantity under Values -> <ph id="1">`Value Field Settings`</ph> -> select <ph id="2">`Sum`</ph>.</source>
+<target xml:lang="fr">To see the sum of the different impacts click on Impact_quantity under Values -> <ph id="1">`Value Field Settings`</ph> -> select <ph id="2">`Sum`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. For the following example the year 2020 was used.</source>
+<target xml:lang="fr">Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. For the following example the year 2020 was used.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS.</source>
+<target xml:lang="fr">Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Flood events in Sudanese states for all the recorded years<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Flood events in Sudanese states for all the recorded years<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021.</source>
+<target xml:lang="fr">In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">In the first step we will create a new <ph id="1">`pivot table`</ph> and store it in a new sheet. Here we will specify the following:</source>
+<target xml:lang="fr">In the first step we will create a new <ph id="1">`pivot table`</ph> and store it in a new sheet. Here we will specify the following:</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Columns: Impact_Type</source>
+<target xml:lang="fr">Columns: Impact_Type</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Rows: admin_1_PCODE</source>
+<target xml:lang="fr">Rows: admin_1_PCODE</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Values: Count of impact_quality</source>
+<target xml:lang="fr">Values: Count of impact_quality</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Now we want to filter the columns labels to the following impact types:</source>
+<target xml:lang="fr">Now we want to filter the columns labels to the following impact types:</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">Event</source>
+<target xml:lang="fr">Event</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">Flash-flood</source>
+<target xml:lang="fr">Flash-flood</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">Flood</source>
+<target xml:lang="fr">Flood</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Flooding</source>
+<target xml:lang="fr">Flooding</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en">We also want to include the Event and Flash-floods as these types can also be associated with flooding events as a result of heavy rainfall, seasonal rainfall, etc.
+We also want to make sure that we rename the column containing the sum of the flooding events to <ph id="1">`Sum flood events`</ph>.</source>
+<target xml:lang="fr">We also want to include the Event and Flash-floods as these types can also be associated with flooding events as a result of heavy rainfall, seasonal rainfall, etc.
+We also want to make sure that we rename the column containing the sum of the flooding events to <ph id="1">`Sum flood events`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en">Now we export this excel sheet as a CSV file and import it into QGIS. We will open the <ph id="1">`Data Source Manager`</ph> and select the <ph id="2">`Delimited Text`</ph> section. Here we need to do the following specifications (<ph id="3">{numref}</ph><ph id="4">`HIA_import_csv_floods`</ph>).</source>
+<target xml:lang="fr">Now we export this excel sheet as a CSV file and import it into QGIS. We will open the <ph id="1">`Data Source Manager`</ph> and select the <ph id="2">`Delimited Text`</ph> section. Here we need to do the following specifications (<ph id="3">{numref}</ph><ph id="4">`HIA_import_csv_floods`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en">Task 9: Data visualization and analysis in QGIS <bpt id="1">&lt;a id="task-9-data-visualization-and-analysis-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 9: Data visualization and analysis in QGIS <bpt id="1">&lt;a id="task-9-data-visualization-and-analysis-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a new projeckt.</source>
+<target xml:lang="fr">Open QGIS and create a new projeckt.</target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en">Import the file "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"  from the input file in QGIS.</source>
+<target xml:lang="fr">Import the file "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"  from the input file in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Visualise impact quantity data for one year on state level in QGIS:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Visualise impact quantity data for one year on state level in QGIS:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">Import the csv fille "Sudan_admin1_Flood_Impact_quantity_2020.CSV" from the input folder of task 8 in QGIS by opening the <ph id="1">`Data Source Manager`</ph> and select the <ph id="2">`Delimited Text`</ph> section.</source>
+<target xml:lang="fr">Import the csv fille "Sudan_admin1_Flood_Impact_quantity_2020.CSV" from the input folder of task 8 in QGIS by opening the <ph id="1">`Data Source Manager`</ph> and select the <ph id="2">`Delimited Text`</ph> section.</target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en">Here you can input your CSV-file and depending on the <ph id="1">`File Format`</ph> you need to define Costum delimiters or you can just select CSV. In thix case go with semicolon <ph id="2">`;`</ph>. Always check the Sample Data output at the bottom to see if the import is working as expected.</source>
+<target xml:lang="fr">Here you can input your CSV-file and depending on the <ph id="1">`File Format`</ph> you need to define Costum delimiters or you can just select CSV. In thix case go with semicolon <ph id="2">`;`</ph>. Always check the Sample Data output at the bottom to see if the import is working as expected.</target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Record and Fields Options`</ph>: Specify that your first record is a header.</source>
+<target xml:lang="fr"><ph id="1">`Record and Fields Options`</ph>: Specify that your first record is a header.</target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometry Definition`</ph>: Select <ph id="2">`No geometry`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Geometry Definition`</ph>: Select <ph id="2">`No geometry`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Add`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Add`</ph></target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Outcome:<ept id="1">__</ept>  You should now have your "Sudan_admin1_Flood_Impact_quantity_2020" file as table in QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Outcome:<ept id="1">__</ept>  You should now have your "Sudan_admin1_Flood_Impact_quantity_2020" file as table in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en">To turn the impact data into a geodataset we will join it with the --- layer based on th p-codes. We will use the tool <ph id="1">`Join attributes by field value`</ph>.</source>
+<target xml:lang="fr">To turn the impact data into a geodataset we will join it with the --- layer based on th p-codes. We will use the tool <ph id="1">`Join attributes by field value`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: "sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831"</target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Table field`</ph>: "admin1Pcode"</source>
+<target xml:lang="fr"><ph id="1">`Table field`</ph>: "admin1Pcode"</target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer 2`</ph>: "Sudan_admin1_Flood_Impact_quantity_2020"</source>
+<target xml:lang="fr"><ph id="1">`Input Layer 2`</ph>: "Sudan_admin1_Flood_Impact_quantity_2020"</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Table field 2`</ph>: "admin1_pcode"</source>
+<target xml:lang="fr"><ph id="1">`Table field 2`</ph>: "admin1_pcode"</target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Join Type`</ph> : "Take attributes of the first matching features only (one-to-one)</source>
+<target xml:lang="fr"><ph id="1">`Join Type`</ph> : "Take attributes of the first matching features only (one-to-one)</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en">Name the new file "Sudan_admin1_impact_quantity" and save it in your "result" folder</source>
+<target xml:lang="fr">Name the new file "Sudan_admin1_impact_quantity" and save it in your "result" folder</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph></target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Outcome:<ept id="1">__</ept> You should now have the layer „Sudan_admin1_impact_quantity“ in your QGIS. The layer should have all columns from Sudan_admin1_Flood_Impact_quantity_2020 and sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Outcome:<ept id="1">__</ept> You should now have the layer „Sudan_admin1_impact_quantity“ in your QGIS. The layer should have all columns from Sudan_admin1_Flood_Impact_quantity_2020 and sdn_adm_cbs_nic_ssa_20200831 — sdn_admbnda_adm1_cbs_nic_ssa_20200831.</target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en">Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option <ph id="1">`Graduated`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept>).</source>
+<target xml:lang="fr">Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option <ph id="1">`Graduated`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer “Sudan_admin1_impact_quantity” in the <ph id="1">`Layer Panel`</ph> -> <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer “Sudan_admin1_impact_quantity” in the <ph id="1">`Layer Panel`</ph> -> <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menue. Open it and choose <ph id="1">`Graduated`</ph>.</source>
+<target xml:lang="fr">On the top you find a dropdown menue. Open it and choose <ph id="1">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Value`</ph> select “Houses_damaged_totally”.</source>
+<target xml:lang="fr">Under <ph id="1">`Value`</ph> select “Houses_damaged_totally”.</target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Color ramp`</ph>: Select a white-to-red color ramp.</source>
+<target xml:lang="fr"><ph id="1">`Color ramp`</ph>: Select a white-to-red color ramp.</target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Mode`</ph>: Equal Count (Quantile)</source>
+<target xml:lang="fr"><ph id="1">`Mode`</ph>: Equal Count (Quantile)</target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Classes`</ph>: 5</source>
+<target xml:lang="fr"><ph id="1">`Classes`</ph>: 5</target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph></target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph></target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Flood events in Sudanese states for all the recorded years<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Flood events in Sudanese states for all the recorded years<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en">In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021.</source>
+<target xml:lang="fr">In this section we want to analyse and visualise all recorded flooding events for all the Sudanese state. With our filter for the Impact-Type we derive information for the years 2003 until 2021.</target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en">Now we impoer the file "Floods_Sudan_all_years" from the input folder. We will open the <ph id="1">`Data Source Manager`</ph> and select the <ph id="2">`Delimited Text`</ph> section. Here we need to do the following specifications (<ph id="3">{numref}</ph><ph id="4">`HIA_import_csv_floods`</ph>).</source>
+<target xml:lang="fr">Now we impoer the file "Floods_Sudan_all_years" from the input folder. We will open the <ph id="1">`Data Source Manager`</ph> and select the <ph id="2">`Delimited Text`</ph> section. Here we need to do the following specifications (<ph id="3">{numref}</ph><ph id="4">`HIA_import_csv_floods`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en">The next step follows the same logic as step 2 in the previous example. We will use geodata that contains information about the states of Sudan and join them with the imported CSV data. We will use the <ph id="1">`Join attributes by field value`</ph> tool and select the ADM1_PCODE as the table field used for the join. An example is shown in <ph id="2">{numref}</ph><ph id="3">`HIA_join_floods`</ph>.</source>
+<target xml:lang="fr">The next step follows the same logic as step 2 in the previous example. We will use geodata that contains information about the states of Sudan and join them with the imported CSV data. We will use the <ph id="1">`Join attributes by field value`</ph> tool and select the ADM1_PCODE as the table field used for the join. An example is shown in <ph id="2">{numref}</ph><ph id="3">`HIA_join_floods`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en">Now we can visualise our results using <ph id="1">`Graduated`</ph> and selecting the corresponding column of the attribute table <ph id="2">`Sum flood events`</ph>. Select an appropriate color scheme and start creating your map. Your final product could look like <ph id="3">{numref}</ph><ph id="4">`HIA_map_floods`</ph>.</source>
+<target xml:lang="fr">Now we can visualise our results using <ph id="1">`Graduated`</ph> and selecting the corresponding column of the attribute table <ph id="2">`Sum flood events`</ph>. Select an appropriate color scheme and start creating your map. Your final product could look like <ph id="3">{numref}</ph><ph id="4">`HIA_map_floods`</ph>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

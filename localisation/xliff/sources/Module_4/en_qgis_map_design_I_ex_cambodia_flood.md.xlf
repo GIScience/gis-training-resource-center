@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_map_design_I_ex_cambodia_flood.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Exercise 1: Flooding in Cambodia <bpt id="1">&lt;a id="exercise-1-flooding-in-cambodia"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 1: Flooding in Cambodia <bpt id="1">&lt;a id="exercise-1-flooding-in-cambodia"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.</source>
+<target xml:lang="fr">This exercise is designed to apply the basics of map design from Chapters 1, 2, and 3. Make sure to go through these chapters before starting this exercise. The corresponding subchapters and wiki-pages are linked if you need to refresh your memory.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Read the guide carefully and download the exercise data from the Nexus.</source>
+<target xml:lang="fr">Read the guide carefully and download the exercise data from the Nexus.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In the data folder, you will find several datasets.  The objective is to create a comprehensive atlas with maps for each region in Cambodia showing the flood extent and road network (including affected roads), with all the necessary map elements.</source>
+<target xml:lang="fr">In the data folder, you will find several datasets.  The objective is to create a comprehensive atlas with maps for each region in Cambodia showing the flood extent and road network (including affected roads), with all the necessary map elements.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Context: Flooding in Cambodia</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Context: Flooding in Cambodia</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">The floodplains of the Mekong and the Tonle Sap System in Cambodia experience yearly flood pulses that bring nutrients which sustain agriculture and fisheries. With the changing climate, the water levels of these floods have decreased, leading to a reduced reverse flow and a decrease in the flood duration of about 26 days (De Xun Cha et al. 2022). This trend will strain the food security in the region, affecting the livelihoods of a large portion of the population. Combined with the decline of the yearly flood pulse, major flood events can cause national health crises, damage infrastructure, displace thousands of people, and further exacerbate food insecurity in the region.
+In 2013, following continuous rainfall in September, the Mekong and Tonle Sap Deltas flooded, displacing 144 thousand people. In 2011, more than 200,000 people have been displaced due to floods. Cambodia has experienced major flood events in 2020, 2022 and 2023 (IDMC 2023).</source>
+<target xml:lang="fr">The floodplains of the Mekong and the Tonle Sap System in Cambodia experience yearly flood pulses that bring nutrients which sustain agriculture and fisheries. With the changing climate, the water levels of these floods have decreased, leading to a reduced reverse flow and a decrease in the flood duration of about 26 days (De Xun Cha et al. 2022). This trend will strain the food security in the region, affecting the livelihoods of a large portion of the population. Combined with the decline of the yearly flood pulse, major flood events can cause national health crises, damage infrastructure, displace thousands of people, and further exacerbate food insecurity in the region.
+In 2013, following continuous rainfall in September, the Mekong and Tonle Sap Deltas flooded, displacing 144 thousand people. In 2011, more than 200,000 people have been displaced due to floods. Cambodia has experienced major flood events in 2020, 2022 and 2023 (IDMC 2023).</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Sources:
+Chua, S. D. X., Lu, X. X., Oeurng, C., Sok, T., &amp; Grundy-Warr, C. (2022). Drastic decline of flood pulse in the Cambodian floodplains (Mekong River and Tonle Sap system). Hydrology and Earth System Sciences, 26(3), 609–625. <ph id="1">https://doi.org/10.5194/hess-26-609-2022  </ph>
+IDMC (International Displacement Monitoring Centre). (2022). Cambodia - Internal displacements (New Displacements) - IDPs. <ph id="2">https://data.humdata.org/dataset/idmc-idp-data-khm</ph> (accessed 04.12.2023)</source>
+<target xml:lang="fr">Sources:
+Chua, S. D. X., Lu, X. X., Oeurng, C., Sok, T., &amp; Grundy-Warr, C. (2022). Drastic decline of flood pulse in the Cambodian floodplains (Mekong River and Tonle Sap system). Hydrology and Earth System Sciences, 26(3), 609–625. <ph id="1">https://doi.org/10.5194/hess-26-609-2022  </ph>
+IDMC (International Displacement Monitoring Centre). (2022). Cambodia - Internal displacements (New Displacements) - IDPs. <ph id="2">https://data.humdata.org/dataset/idmc-idp-data-khm</ph> (accessed 04.12.2023)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Objectives <bpt id="1">&lt;a id="objectives"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Objectives <bpt id="1">&lt;a id="objectives"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The data provided contains shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as health facilities and airports. The goal is to design a map where the flood extent, road accessibility, and important landmarks such as health facilities, settlements, and airports are visible.</source>
+<target xml:lang="fr">The data provided contains shapefiles detailing the flood extent in October 2023, the road network, administrative boundaries, the Mekong and Tonle Sap Systems, as well as health facilities and airports. The goal is to design a map where the flood extent, road accessibility, and important landmarks such as health facilities, settlements, and airports are visible.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Available Datasets <bpt id="1">&lt;a id="available-datasets"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Datasets <bpt id="1">&lt;a id="available-datasets"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Step 1: Preparing the layers <bpt id="1">&lt;a id="step-1-preparing-the-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 1: Preparing the layers <bpt id="1">&lt;a id="step-1-preparing-the-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Load the layers into QGIS and make yourself familiar with the data by opening the attribute table ()</source>
+<target xml:lang="fr">Load the layers into QGIS and make yourself familiar with the data by opening the attribute table ()</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Arrange the layers such that no layer is blocked</source>
+<target xml:lang="fr">Arrange the layers such that no layer is blocked</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Step 2: Set the symbology for the individual layers <bpt id="1">&lt;a id="step-2-set-the-symbology-for-the-individual-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 2: Set the symbology for the individual layers <bpt id="1">&lt;a id="step-2-set-the-symbology-for-the-individual-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">First, let's style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline</source>
+<target xml:lang="fr">First, let's style the administrative boundaries. We want to keep it simple and keep the polygon of the adm1 with a transparent filling, but with a thicker outline. On top of that layer, we want to see the adm2 boundaries, but with a thinner (or even dashed) outline</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)</source>
+<target xml:lang="fr">The flood extent needs to be immediately recognizable. Choose a colour and filling style (Simple Fill or hashed line fill)</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The river system and lake should be symbolised with a associative colour to be immediately recognizable.</source>
+<target xml:lang="fr">The river system and lake should be symbolised with a associative colour to be immediately recognizable.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The road network shapefile has the attribute <ph id="1">`Flooded`</ph> with the Value <ph id="2">`Y`</ph> if the extent of the flood crosses the road. Set the symbology of the road network so roads are easily distinguishable and that the reader can identify which roads are potentially flooded.</source>
+<target xml:lang="fr">The road network shapefile has the attribute <ph id="1">`Flooded`</ph> with the Value <ph id="2">`Y`</ph> if the extent of the flood crosses the road. Set the symbology of the road network so roads are easily distinguishable and that the reader can identify which roads are potentially flooded.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Decide how you want to display settlements and health facilities (link to SVG-symbols)</source>
+<target xml:lang="fr">Decide how you want to display settlements and health facilities (link to SVG-symbols)</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Set up the labels for the settlements and administrative districts</source>
+<target xml:lang="fr">Set up the labels for the settlements and administrative districts</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Set up the background to make the area of focus stand out.</source>
+<target xml:lang="fr">Set up the background to make the area of focus stand out.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">In mountainous areas, it can be helpful to add a hillshade to determine the accessibility and travel time by car.</source>
+<target xml:lang="fr">In mountainous areas, it can be helpful to add a hillshade to determine the accessibility and travel time by car.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Step 2: Starting the Print Layout <bpt id="1">&lt;a id="step-2-starting-the-print-layout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 2: Starting the Print Layout <bpt id="1">&lt;a id="step-2-starting-the-print-layout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Add your Map to the Print Layout. Make sure to leave some space for the other map elements such as sources, legend, overview map, logo, etc.</source>
+<target xml:lang="fr">Add your Map to the Print Layout. Make sure to leave some space for the other map elements such as sources, legend, overview map, logo, etc.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Adjust the Scale of the Map in the Item properties (if possible to a round number)</source>
+<target xml:lang="fr">Adjust the Scale of the Map in the Item properties (if possible to a round number)</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Add a scale bar</source>
+<target xml:lang="fr">Add a scale bar</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Add a title. The title should make it clear what the map displays.</source>
+<target xml:lang="fr">Add a title. The title should make it clear what the map displays.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Add a legend. Make sure to remove layers which are not visible on the map and rename the elements accordingly.</source>
+<target xml:lang="fr">Add a legend. Make sure to remove layers which are not visible on the map and rename the elements accordingly.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Add a compass to show map orientation.</source>
+<target xml:lang="fr">Add a compass to show map orientation.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Step 3: Setting up the Overview Map <bpt id="1">&lt;a id="step-3-setting-up-the-overview-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 3: Setting up the Overview Map <bpt id="1">&lt;a id="step-3-setting-up-the-overview-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Once you are done with the main map, <bpt id="1">__</bpt>make sure to lock the layer and the styles for your main map (<ph id="2">`Map 1`</ph>)<ept id="1">__</ept>. Otherwise the map will update when setting up the overview map.</source>
+<target xml:lang="fr">Once you are done with the main map, <bpt id="1">__</bpt>make sure to lock the layer and the styles for your main map (<ph id="2">`Map 1`</ph>)<ept id="1">__</ept>. Otherwise the map will update when setting up the overview map.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Navigate back to the main QGIS-Window.</source>
+<target xml:lang="fr">Navigate back to the main QGIS-Window.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Copy the layers for the overview map. In this case, the <ph id="1">`Adm1`</ph>-layer. This way, you will not loose the style for the layers on your main map. Adjust the style on the copied layer for your overview map.</source>
+<target xml:lang="fr">Copy the layers for the overview map. In this case, the <ph id="1">`Adm1`</ph>-layer. This way, you will not loose the style for the layers on your main map. Adjust the style on the copied layer for your overview map.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Navigate back to the print layout.</source>
+<target xml:lang="fr">Navigate back to the print layout.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Add a second map as your overview map (preferably somewhere in the corner)</source>
+<target xml:lang="fr">Add a second map as your overview map (preferably somewhere in the corner)</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Set it up as an overview map.</source>
+<target xml:lang="fr">Set it up as an overview map.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Lock the layers and lock the styles.</source>
+<target xml:lang="fr">Lock the layers and lock the styles.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Step 5: Adding the other elements of a map <bpt id="1">&lt;a id="step-5-adding-the-other-elements-of-a-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 5: Adding the other elements of a map <bpt id="1">&lt;a id="step-5-adding-the-other-elements-of-a-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Add the sources of the datasets</source>
+<target xml:lang="fr">Add the sources of the datasets</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Add a text to describe what the map shows.</source>
+<target xml:lang="fr">Add a text to describe what the map shows.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Add your name and/or organisation as authors.</source>
+<target xml:lang="fr">Add your name and/or organisation as authors.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Step 6: Exporting the map <bpt id="1">&lt;a id="step-6-exporting-the-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 6: Exporting the map <bpt id="1">&lt;a id="step-6-exporting-the-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly in the exporting process, so it is important to check before sending the map to your colleagues or publishing.</source>
+<target xml:lang="fr">Once you are happy with the print layout, it is time to export the map as a PDF-file (link). Once exported, open the file in your PDF viewer and check if everything looks as intended. In QGIS, some elements of the map might change slightly in the exporting process, so it is important to check before sending the map to your colleagues or publishing.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_m2_ex_3_data_queries.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Click here to return to the exercise overview for module 3.<ept id="1">__</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Click here to return to the exercise overview for module 3.<ept id="1">__</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Exercise 3: Data Queries <bpt id="1">&lt;a id="exercise-3-data-queries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 3: Data Queries <bpt id="1">&lt;a id="exercise-3-data-queries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+The aim of this exercise is to learn how to manipulate secondary data to generate insights. In this exercise, we will determine which buildings have been affected by a flood and apply a filter to determine which buildings are part of the critical infrastructure.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{topic}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+The aim of this exercise is to learn how to manipulate secondary data to generate insights. In this exercise, we will determine which buildings have been affected by a flood and apply a filter to determine which buildings are part of the critical infrastructure.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Links to Wiki articles <bpt id="1">&lt;a id="links-to-wiki-articles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Links to Wiki articles <bpt id="1">&lt;a id="links-to-wiki-articles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Non-Spatial Queries<ept id="1">](/content/Wiki/en_qgis_non_spatial_queries_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Non-Spatial Queries<ept id="1">](/content/Wiki/en_qgis_non_spatial_queries_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Spatial Queries<ept id="1">](/content/Wiki/en_qgis_spatial_queries_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Spatial Queries<ept id="1">](/content/Wiki/en_qgis_spatial_queries_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geoprocessing - Clip<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geoprocessing - Clip<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Data <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Download all the datasets <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_3/Module_3_Exercise_3_Data_Queries.zip)</ept>, save the folder on your computer, and unzip the file. The zip folder includes:</source>
+<target xml:lang="fr">Download all the datasets <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_3/Module_3_Exercise_3_Data_Queries.zip)</ept>, save the folder on your computer, and unzip the file. The zip folder includes:</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph>: This file contains information about the Somali administrative level 0-2, state, and operational zone level 1 and 2 boundary as shapefiles. The data can also be found on <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org/dataset/cod-ab-som)</ept>.</source>
+<target xml:lang="fr"><ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph>: This file contains information about the Somali administrative level 0-2, state, and operational zone level 1 and 2 boundary as shapefiles. The data can also be found on <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org/dataset/cod-ab-som)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`</ph>: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023)</ept>.</source>
+<target xml:lang="fr"><ph id="1">`GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`</ph>: This shapefile illustrates satellite-detected surface waters in Beledweyne City, Beledweyne District, Hiraan Region, Somalia, on 12th of November 2023 at 07:32 UTC. The data is also available on <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org/dataset/water-extent-in-beledweyne-city-beledweyne-district-hiraan-region-somalia-12-november-2023)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`buildings_belet_weyne.geojson`</ph>: This dataset is downloaded using <bpt id="2">[</bpt>HOT Export Tool<ept id="2">](https://export.hotosm.org/v3/exports/new/describe)</ept> and contains information about buildings in the Beledweyne district.</source>
+<target xml:lang="fr"><ph id="1">`buildings_belet_weyne.geojson`</ph>: This dataset is downloaded using <bpt id="2">[</bpt>HOT Export Tool<ept id="2">](https://export.hotosm.org/v3/exports/new/describe)</ept> and contains information about buildings in the Beledweyne district.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The folder is called <bpt id="1">**</bpt>Module_3_Exercise_3_Data_Queries<ept id="1">**</ept> and contains the entire <bpt id="2">[</bpt>standard folder structure<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> with all data in the input folder.</source>
+<target xml:lang="fr">The folder is called <bpt id="1">**</bpt>Module_3_Exercise_3_Data_Queries<ept id="1">**</ept> and contains the entire <bpt id="2">[</bpt>standard folder structure<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> with all data in the input folder.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name <bpt id="2">**</bpt>Beledweyne<ept id="2">**</ept> which we will be focusing on. Other spellings might be <bpt id="3">**</bpt>Belet Weyne<ept id="3">**</ept> or <bpt id="4">**</bpt>Belete Weyne<ept id="4">**</ept>. In many cases, you will have to edit the values in the datasets to remove different spelling of spelling mistakes. This process is called "data cleaning".
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+The naming of the districts and states is not consistent across the different datasets. You will find different spellings for the district name <bpt id="2">**</bpt>Beledweyne<ept id="2">**</ept> which we will be focusing on. Other spellings might be <bpt id="3">**</bpt>Belet Weyne<ept id="3">**</ept> or <bpt id="4">**</bpt>Belete Weyne<ept id="4">**</ept>. In many cases, you will have to edit the values in the datasets to remove different spelling of spelling mistakes. This process is called "data cleaning".
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</source>
+<target xml:lang="fr">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Once the project is created, <bpt id="1">[</bpt>save the project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save-project)</ept> in the <bpt id="2">**</bpt>project folder<ept id="2">**</ept> of the exercise <bpt id="3">**</bpt>Module_3_Exercise_1_Queries_Somalia<ept id="3">**</ept>. To do that click on <ph id="4">`Project`</ph> → <ph id="5">`Save as`</ph> and navigate to the folder. Name the project <bpt id="6">**</bpt>Somalia_flood_affected_Beledweyne_2023<ept id="6">**</ept>.</source>
+<target xml:lang="fr">Once the project is created, <bpt id="1">[</bpt>save the project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save-project)</ept> in the <bpt id="2">**</bpt>project folder<ept id="2">**</ept> of the exercise <bpt id="3">**</bpt>Module_3_Exercise_1_Queries_Somalia<ept id="3">**</ept>. To do that click on <ph id="4">`Project`</ph> → <ph id="5">`Save as`</ph> and navigate to the folder. Name the project <bpt id="6">**</bpt>Somalia_flood_affected_Beledweyne_2023<ept id="6">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">To load the following files into your project, drag and drop them (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="2">`Layer`</ph> → <ph id="3">`Add Layer`</ph> → <ph id="4">`Add Vector Layer`</ph>. Click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept> and navigate to the file. Select the file and click <ph id="6">`Open`</ph>. Back in QGIS click <ph id="7">`Add`</ph> (<bpt id="8">[</bpt>Wiki Video<ept id="8">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>).</source>
+<target xml:lang="fr">To load the following files into your project, drag and drop them (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="2">`Layer`</ph> → <ph id="3">`Add Layer`</ph> → <ph id="4">`Add Vector Layer`</ph>. Click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept> and navigate to the file. Select the file and click <ph id="6">`Open`</ph>. Back in QGIS click <ph id="7">`Add`</ph> (<bpt id="8">[</bpt>Wiki Video<ept id="8">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph></source>
+<target xml:lang="fr"><ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`</ph></source>
+<target xml:lang="fr"><ph id="1">`GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Buildings_Belete_Weyne.geojson`</ph>: A pop-up window will appear for this file and you will need to decide which data to import. Select the polygons.</source>
+<target xml:lang="fr"><ph id="1">`Buildings_Belete_Weyne.geojson`</ph>: A pop-up window will appear for this file and you will need to decide which data to import. Select the polygons.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Make sure you <bpt id="2">__</bpt>unzip<ept id="2">__</ept> the exercise folder before loading the layers into QGIS. QGIS does not accept compressed files.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Make sure you <bpt id="2">__</bpt>unzip<ept id="2">__</ept> the exercise folder before loading the layers into QGIS. QGIS does not accept compressed files.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Extract the district (adm2) from the administrative boundaries layer <bpt id="1">&lt;a id="extract-the-district-adm2-from-the-administrative-boundaries-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Extract the district (adm2) from the administrative boundaries layer <bpt id="1">&lt;a id="extract-the-district-adm2-from-the-administrative-boundaries-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">First, we want to export the district <bpt id="1">__</bpt>Beledweyne<ept id="1">__</ept> from the Hiraan region from <ph id="2">`som_admbnda_adm2_ocha_20230308.shp`</ph> to have it as a stand-alone vector layer. To do that:</source>
+<target xml:lang="fr">First, we want to export the district <bpt id="1">__</bpt>Beledweyne<ept id="1">__</ept> from the Hiraan region from <ph id="2">`som_admbnda_adm2_ocha_20230308.shp`</ph> to have it as a stand-alone vector layer. To do that:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of <ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph> by right clicking on the layer → <ph id="2">`Open Attribute Table`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>).</source>
+<target xml:lang="fr">Open the attribute table of <ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph> by right clicking on the layer → <ph id="2">`Open Attribute Table`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Find the row of <ph id="1">`Belet Weyne`</ph> and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click <ph id="2">`Zoom to Feature`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)</ept>).</source>
+<target xml:lang="fr">Find the row of <ph id="1">`Belet Weyne`</ph> and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click <ph id="2">`Zoom to Feature`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Now right-click on the layer in the Layer Panel and click on <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as`</ph>. We want to save Beledweyne as a GeoPackage, so adjust <ph id="3">`Format`</ph> accordingly. Click on the three points and navigate to your <bpt id="4">**</bpt>temp folder<ept id="4">**</ept>. Here you can give the layer the name <bpt id="5">**</bpt>AOI_Beledweyne<ept id="5">**</ept> and click <ph id="6">`Save`</ph>. Now click <ph id="7">`Ok`</ph>(<bpt id="8">[</bpt>Wiki Video<ept id="8">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)</ept>). In this exercise, we will not reproject the layers and work with the data in <ph id="9">`ESPG:4326 - WGS84`</ph>.</source>
+<target xml:lang="fr">Now right-click on the layer in the Layer Panel and click on <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as`</ph>. We want to save Beledweyne as a GeoPackage, so adjust <ph id="3">`Format`</ph> accordingly. Click on the three points and navigate to your <bpt id="4">**</bpt>temp folder<ept id="4">**</ept>. Here you can give the layer the name <bpt id="5">**</bpt>AOI_Beledweyne<ept id="5">**</ept> and click <ph id="6">`Save`</ph>. Now click <ph id="7">`Ok`</ph>(<bpt id="8">[</bpt>Wiki Video<ept id="8">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)</ept>). In this exercise, we will not reproject the layers and work with the data in <ph id="9">`ESPG:4326 - WGS84`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Identify the building that might be affected by the flooding <bpt id="1">&lt;a id="identify-the-building-that-might-be-affected-by-the-flooding"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Identify the building that might be affected by the flooding <bpt id="1">&lt;a id="identify-the-building-that-might-be-affected-by-the-flooding"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">In the following steps, we want to identify all buildings that are likely to be affected by the recent flooding. To do that we will use the tool <ph id="1">`Extract by Location`</ph>.
+<ph id="2">    :::{figure} /fig/Extract_by_location_Belet_Weyne.png</ph></source>
+<target xml:lang="fr">In the following steps, we want to identify all buildings that are likely to be affected by the recent flooding. To do that we will use the tool <ph id="1">`Extract by Location`</ph>.
+<ph id="2">    :::{figure} /fig/Extract_by_location_Belet_Weyne.png</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 500 px</ph>
+<ph id="2">    name: extract_by_location</ph>
+<ph id="3">    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 500 px</ph>
+<ph id="2">    name: extract_by_location</ph>
+<ph id="3">    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">The extract by extraction window in QGIS 3.36.
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">The extract by extraction window in QGIS 3.36.
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>"Processing Toolbox"<ept id="1">__</ept> → Search for <ph id="2">`Extract by Location`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>"Processing Toolbox"<ept id="1">__</ept> → Search for <ph id="2">`Extract by Location`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"Extract features from"<ept id="1">__</ept>: <ph id="2">`Buildings_Belete_Weyne.geojson`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"Extract features from"<ept id="1">__</ept>: <ph id="2">`Buildings_Belete_Weyne.geojson`</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"Where the features (geometric predicate)"<ept id="1">__</ept>: <ph id="2">`are within`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"Where the features (geometric predicate)"<ept id="1">__</ept>: <ph id="2">`are within`</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"By comparing to the features from"<ept id="1">__</ept>: <ph id="2">`GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"By comparing to the features from"<ept id="1">__</ept>: <ph id="2">`GF2_20231123_FloodExtent_BeledweyneCity_HiraanRegion.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Extracted`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File...`</ph> and navigate to your <bpt id="4">**</bpt>temp folder<ept id="4">**</ept> and save the new layer under the name <bpt id="5">**</bpt>Beledweyne_buildings_affected<ept id="5">**</ept> and click <ph id="6">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Extracted`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File...`</ph> and navigate to your <bpt id="4">**</bpt>temp folder<ept id="4">**</ept> and save the new layer under the name <bpt id="5">**</bpt>Beledweyne_buildings_affected<ept id="5">**</ept> and click <ph id="6">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Now, click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Now, click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Adjust your layers in a way that you only see the flooded areas and your new layer. <bpt id="1">**</bpt>Beledweyne_buildings_affected<ept id="1">**</ept>. Remove the <ph id="2">`som_admbnda_adm2_ocha_20230308.shp`</ph> and <ph id="3">`Buildings_Belete_Weyne.geojson`</ph> layer.</source>
+<target xml:lang="fr">Adjust your layers in a way that you only see the flooded areas and your new layer. <bpt id="1">**</bpt>Beledweyne_buildings_affected<ept id="1">**</ept>. Remove the <ph id="2">`som_admbnda_adm2_ocha_20230308.shp`</ph> and <ph id="3">`Buildings_Belete_Weyne.geojson`</ph> layer.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+    The tool <bpt id="2">[</bpt><ph id="3">`Select by Location`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#select-by-location)</ept> is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
+<ph id="4">    :::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+    The tool <bpt id="2">[</bpt><ph id="3">`Select by Location`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#select-by-location)</ept> is very similar. This tool functions in the same way, but instead of directly extracting the features, it selects them.
+<ph id="4">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Identify critical infrastructure affected by the floods <bpt id="1">&lt;a id="identify-critical-infrastructure-affected-by-the-floods"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Identify critical infrastructure affected by the floods <bpt id="1">&lt;a id="identify-critical-infrastructure-affected-by-the-floods"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
+To extract "hospitals", "schools", and "mosques", we can use the tool <ph id="1">`Extract by Expression`</ph>.</source>
+<target xml:lang="fr">In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
+To extract "hospitals", "schools", and "mosques", we can use the tool <ph id="1">`Extract by Expression`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Find the tool <ph id="1">`Extract by Expression`</ph> in the <ph id="2">`Toolbox`</ph>.</source>
+<target xml:lang="fr">Find the tool <ph id="1">`Extract by Expression`</ph> in the <ph id="2">`Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Expression`</ph>: click on <bpt id="2">![</bpt><ept id="2">](/fig/miconexpression.png)</ept>.</source>
+<target xml:lang="fr"><ph id="1">`Expression`</ph>: click on <bpt id="2">![</bpt><ept id="2">](/fig/miconexpression.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The window "Expression" will open. Here we can build a very specific query. In the central panel open <ph id="1">`Field and values`</ph>. Here you can see all the columns oft he the layer. Click on <ph id="2">`building`</ph>. On the right-hand side, you should now see the option <ph id="3">`All unique`</ph>. Click on it. Here you can see now all unique values in the column „building“.</source>
+<target xml:lang="fr">The window "Expression" will open. Here we can build a very specific query. In the central panel open <ph id="1">`Field and values`</ph>. Here you can see all the columns oft he the layer. Click on <ph id="2">`building`</ph>. On the right-hand side, you should now see the option <ph id="3">`All unique`</ph>. Click on it. Here you can see now all unique values in the column „building“.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Expression`</ph> field, enter the following expression (see the figure below):</source>
+<target xml:lang="fr">In the <ph id="1">`Expression`</ph> field, enter the following expression (see the figure below):</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Ok`</ph>. The window will close and you will see the expression you created in the <ph id="2">`Expression`</ph>-field in the <ph id="3">`Extract by Expression`</ph> window (see figure below).</source>
+<target xml:lang="fr">Click <ph id="1">`Ok`</ph>. The window will close and you will see the expression you created in the <ph id="2">`Expression`</ph>-field in the <ph id="3">`Extract by Expression`</ph> window (see figure below).</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>. A new temporary layer called <ph id="2">`Matching Features`</ph> will be added to your QGIS-project. Close the <ph id="3">`Extract by Expression`</ph> window.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>. A new temporary layer called <ph id="2">`Matching Features`</ph> will be added to your QGIS-project. Close the <ph id="3">`Extract by Expression`</ph> window.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_extract_by_expression_som.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_extract_by_expression_som.png</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: extract_by_expression1</ph>
+<ph id="2">width: 400 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: extract_by_expression1</ph>
+<ph id="2">width: 400 px</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">The expression window in QGIS 3.36 with an expression to extract the polygons with the "buildings" value 'hospital', 'school', and 'mosque'.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The expression window in QGIS 3.36 with an expression to extract the polygons with the "buildings" value 'hospital', 'school', and 'mosque'.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_extract_by_expression_som2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_extract_by_expression_som2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: extract_by_expression2</ph>
+<ph id="2">width: 400 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: extract_by_expression2</ph>
+<ph id="2">width: 400 px</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">The <ph id="1">`Extract by Expression`</ph> window in QGIS 3.36
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">The <ph id="1">`Extract by Expression`</ph> window in QGIS 3.36
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph>
+A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a <bpt id="2">![</bpt><ept id="2">](/fig/icon_scratch_layer.png)</ept>. In order to save the layer permanently, <bpt id="3">&lt;kbd></bpt>Right Click<ept id="3">&lt;/kbd></ept> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see <bpt id="4">[</bpt>standard folder structure<ept id="4">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)</ept>).
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph>
+A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a <bpt id="2">![</bpt><ept id="2">](/fig/icon_scratch_layer.png)</ept>. In order to save the layer permanently, <bpt id="3">&lt;kbd></bpt>Right Click<ept id="3">&lt;/kbd></ept> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see <bpt id="4">[</bpt>standard folder structure<ept id="4">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)</ept>).
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Explore the new layer by opening the attribute table, activating and deactivating the layer in the Layers panel.</source>
+<target xml:lang="fr">Explore the new layer by opening the attribute table, activating and deactivating the layer in the Layers panel.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right Click<ept id="1">&lt;/kbd></ept> on the <ph id="2">`Matching Features`</ph> layer and save it to your project folder under  <ph id="3">`/data/output/`</ph> with the name <ph id="4">`Belet_Weyne_POI_affected.gpkg`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right Click<ept id="1">&lt;/kbd></ept> on the <ph id="2">`Matching Features`</ph> layer and save it to your project folder under  <ph id="3">`/data/output/`</ph> with the name <ph id="4">`Belet_Weyne_POI_affected.gpkg`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Congratulations! The extracted information can now be used to perform further analyses or create comprehensive maps of the affected points of interest.</source>
+<target xml:lang="fr">Congratulations! The extracted information can now be used to perform further analyses or create comprehensive maps of the affected points of interest.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

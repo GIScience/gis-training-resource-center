@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_module_4_mdg_aa_ex_4.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers <bpt id="1">&lt;a id="exercise-4-visualizing-cyclone-impact-results-aina-styles-her-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers <bpt id="1">&lt;a id="exercise-4-visualizing-cyclone-impact-results-aina-styles-her-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Exercise Track:<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Exercise Track:<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">This exercise is part of the <bpt id="1">[</bpt>Madagascar Anticipatory Action Cyclon Analysis Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html)</ept>.</source>
+<target xml:lang="fr">This exercise is part of the <bpt id="1">[</bpt>Madagascar Anticipatory Action Cyclon Analysis Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
+The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
+The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on conducting trainings.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on conducting trainings.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Available data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link:  https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_4_Exercise_6_AA_MDG_task_4-20250825T143508Z-1-001.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Download all datasets here, save the folder on your computer and unzip the file.<ept id="1">__</ept>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Download all datasets here, save the folder on your computer and unzip the file.<ept id="1">__</ept>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Context <bpt id="1">&lt;a id="context"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Context <bpt id="1">&lt;a id="context"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.</source>
+<target xml:lang="fr">Aina now has all the analysis results she needs — but numbers and tables alone won’t convince her colleagues or decision-makers. What they need are clear and easy-to-read maps that can be used directly in meetings and reports.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.</source>
+<target xml:lang="fr">To save time, Aina doesn’t want to adjust colors and legends manually each time a new cyclone comes in. Instead, she will use ready-made style files (.qml) that instantly give layers a professional and consistent look. Where no style exists yet, she will create one herself, so that next time the map can be updated with just a few clicks.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.</source>
+<target xml:lang="fr">In this task, you will help Aina make her cyclone impact maps both informative and visually compelling by applying and creating QGIS style files.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">1. <bpt id="1">**</bpt>Load Required Layers (if not already loaded)<ept id="1">**</ept> <bpt id="2">&lt;a id="1-load-required-layers-if-not-already-loaded"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr">1. <bpt id="1">**</bpt>Load Required Layers (if not already loaded)<ept id="1">**</ept> <bpt id="2">&lt;a id="1-load-required-layers-if-not-already-loaded"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Make sure the following layers are already loaded into your QGIS project. These are outputs from <bpt id="1">**</bpt>Task 3<ept id="1">**</ept>:</source>
+<target xml:lang="fr">Make sure the following layers are already loaded into your QGIS project. These are outputs from <bpt id="1">**</bpt>Task 3<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`example_Harald_2025_Track`</ph></source>
+<target xml:lang="fr"><ph id="1">`example_Harald_2025_Track`</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`cyclone_harald_buffer`</ph></source>
+<target xml:lang="fr"><ph id="1">`cyclone_harald_buffer`</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Harald_Exposed_Population`</ph></source>
+<target xml:lang="fr"><ph id="1">`Harald_Exposed_Population`</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin2_health_affected`</ph></source>
+<target xml:lang="fr"><ph id="1">`admin2_health_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin2_education_affected`</ph></source>
+<target xml:lang="fr"><ph id="1">`admin2_education_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">If any are missing:</source>
+<target xml:lang="fr">If any are missing:</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Load them using <bpt id="1">**</bpt>drag &amp; drop<ept id="1">**</ept> from your <ph id="2">`results`</ph> folder, or</source>
+<target xml:lang="fr">Load them using <bpt id="1">**</bpt>drag &amp; drop<ept id="1">**</ept> from your <ph id="2">`results`</ph> folder, or</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Use <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Vector Layer`</ph> or <ph id="4">`Add Raster Layer`</ph>.</source>
+<target xml:lang="fr">Use <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Vector Layer`</ph> or <ph id="4">`Add Raster Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">2. <bpt id="1">**</bpt>Apply Predefined Style Files<ept id="1">**</ept> <bpt id="2">&lt;a id="2-apply-predefined-style-files"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr">2. <bpt id="1">**</bpt>Apply Predefined Style Files<ept id="1">**</ept> <bpt id="2">&lt;a id="2-apply-predefined-style-files"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Apply the following<ph id="1">`.qml`</ph> style files to the respective layers:</source>
+<target xml:lang="fr">Apply the following<ph id="1">`.qml`</ph> style files to the respective layers:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Layer<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Layer<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Style File<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Style File<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`example_Harald_2025_Track`</ph></source>
+<target xml:lang="fr"><ph id="1">`example_Harald_2025_Track`</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`storm_track_cyclone_style.qml`</ph></source>
+<target xml:lang="fr"><ph id="1">`storm_track_cyclone_style.qml`</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`cyclone_harald_buffer`</ph></source>
+<target xml:lang="fr"><ph id="1">`cyclone_harald_buffer`</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`exposed_cyclone_area_style.qml`</ph></source>
+<target xml:lang="fr"><ph id="1">`exposed_cyclone_area_style.qml`</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Harald_Exposed_Population`</ph></source>
+<target xml:lang="fr"><ph id="1">`Harald_Exposed_Population`</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`exposed_population_style.qml`</ph></source>
+<target xml:lang="fr"><ph id="1">`exposed_population_style.qml`</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin2_health_affected`</ph></source>
+<target xml:lang="fr"><ph id="1">`admin2_health_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`exposed_healthsites_style.qml`</ph></source>
+<target xml:lang="fr"><ph id="1">`exposed_healthsites_style.qml`</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`admin2_education_affected`</ph></source>
+<target xml:lang="fr"><ph id="1">`admin2_education_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`exposed_education_facilities_style.qml`</ph></source>
+<target xml:lang="fr"><ph id="1">`exposed_education_facilities_style.qml`</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+⚠️ For the <bpt id="2">**</bpt>health<ept id="2">**</ept> and <bpt id="3">**</bpt>education facilities<ept id="3">**</ept>, the provided style files are linked to the column containing the <bpt id="4">**</bpt>sum of exposed facilities<ept id="4">**</ept>.<ph id="5">  </ph>
+They are <bpt id="6">**</bpt>not<ept id="6">**</ept> based on the percentage column.<ph id="7">  </ph>
+<ph id="8">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+⚠️ For the <bpt id="2">**</bpt>health<ept id="2">**</ept> and <bpt id="3">**</bpt>education facilities<ept id="3">**</ept>, the provided style files are linked to the column containing the <bpt id="4">**</bpt>sum of exposed facilities<ept id="4">**</ept>.<ph id="5">  </ph>
+They are <bpt id="6">**</bpt>not<ept id="6">**</ept> based on the percentage column.<ph id="7">  </ph>
+<ph id="8">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Steps:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Steps:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer in the <bpt id="1">**</bpt>Layers Panel<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Right-click on the layer in the <bpt id="1">**</bpt>Layers Panel<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Properties`</ph>.</source>
+<target xml:lang="fr">Select <ph id="1">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">In the window that opens, go to the <ph id="1">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">In the window that opens, go to the <ph id="1">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">At the bottom left, click <ph id="1">`Style`</ph> → <ph id="2">`Load Style…`</ph>.</source>
+<target xml:lang="fr">At the bottom left, click <ph id="1">`Style`</ph> → <ph id="2">`Load Style…`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>.</source>
+<target xml:lang="fr">Click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Navigate to the corresponding <ph id="1">`.qml`</ph> file in the folder <ph id="2">`layer_sytle`</ph> and select it.</source>
+<target xml:lang="fr">Navigate to the corresponding <ph id="1">`.qml`</ph> file in the folder <ph id="2">`layer_sytle`</ph> and select it.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Open`</ph>, then <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to confirm.</source>
+<target xml:lang="fr">Click <ph id="1">`Open`</ph>, then <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to confirm.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">💡 <bpt id="1">*</bpt>If the style doesn’t load correctly, double-check the column names and make sure the column name used in the <ph id="2">`.qml`</ph> file matches the one in your layer. To do this, open the <bpt id="3">**</bpt>Attribute Table<ept id="3">**</ept> of the layer and compare field names.<ept id="1">*</ept></source>
+<target xml:lang="fr">💡 <bpt id="1">*</bpt>If the style doesn’t load correctly, double-check the column names and make sure the column name used in the <ph id="2">`.qml`</ph> file matches the one in your layer. To do this, open the <bpt id="3">**</bpt>Attribute Table<ept id="3">**</ept> of the layer and compare field names.<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Intermediate result: Exposed Population</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Intermediate result: Exposed Population</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Map showing the numberof persons exposed per district using the .qml style file.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">::::{tab-item} </ph>Intermediate result: Exposed Health Facilities
+<ph id="4">:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG</ph></source>
+<target xml:lang="fr">Map showing the numberof persons exposed per district using the .qml style file.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">::::{tab-item} </ph>Intermediate result: Exposed Health Facilities
+<ph id="4">:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Map showing the exposed health establishments per district.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">::::{tab-item} </ph>Intermediate result: Exposed Education Facilities
+<ph id="4">:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG</ph></source>
+<target xml:lang="fr">Map showing the exposed health establishments per district.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">::::{tab-item} </ph>Intermediate result: Exposed Education Facilities
+<ph id="4">:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Map showing the number of education institutions exposed per district.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">:::::</ph></source>
+<target xml:lang="fr">Map showing the number of education institutions exposed per district.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">3. <bpt id="1">**</bpt>Style Percentage Layers Manually<ept id="1">**</ept> <bpt id="2">&lt;a id="3-style-percentage-layers-manually"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr">3. <bpt id="1">**</bpt>Style Percentage Layers Manually<ept id="1">**</ept> <bpt id="2">&lt;a id="3-style-percentage-layers-manually"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.</source>
+<target xml:lang="fr">Aina also wants to visualise the percentage of exposed health and education facilities. However, since there is no prepared style available, she must complete the process manually.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Steps:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Steps:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer <ph id="2">`admin2_health_affected`</ph> → select <bpt id="3">**</bpt>Duplicate Layer<ept id="3">**</ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer <ph id="2">`admin2_health_affected`</ph> → select <bpt id="3">**</bpt>Duplicate Layer<ept id="3">**</ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Rename<ept id="1">**</ept> the duplicated layer to:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Rename<ept id="1">**</ept> the duplicated layer to:</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer in the <bpt id="1">**</bpt>Layers Panel<ept id="1">**</ept></source>
+<target xml:lang="fr">Right-click on the layer in the <bpt id="1">**</bpt>Layers Panel<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Select <bpt id="1">**</bpt>Properties<ept id="1">**</ept></source>
+<target xml:lang="fr">Select <bpt id="1">**</bpt>Properties<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">In the window that opens, go to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab</source>
+<target xml:lang="fr">In the window that opens, go to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Set <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> to <ph id="2">`Graduated`</ph></source>
+<target xml:lang="fr">Set <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> to <ph id="2">`Graduated`</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Choose the correct <bpt id="1">**</bpt>field<ept id="1">**</ept>:</source>
+<target xml:lang="fr">Choose the correct <bpt id="1">**</bpt>field<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`pct_health_affected`</ph></source>
+<target xml:lang="fr"><ph id="1">`pct_health_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">**</bpt>Histogram<ept id="1">**</ept> tab to view the value distribution by clicking on <ph id="2">`calculate histogram`</ph></source>
+<target xml:lang="fr">Open the <bpt id="1">**</bpt>Histogram<ept id="1">**</ept> tab to view the value distribution by clicking on <ph id="2">`calculate histogram`</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Next go back to <ph id="1">`Classes`</ph> and set the following configuration:</source>
+<target xml:lang="fr">Next go back to <ph id="1">`Classes`</ph> and set the following configuration:</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Mode<ept id="1">**</ept>: <ph id="2">`Equal Interval`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Mode<ept id="1">**</ept>: <ph id="2">`Equal Interval`</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Classes<ept id="1">**</ept>: <ph id="2">`4`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Classes<ept id="1">**</ept>: <ph id="2">`4`</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.This will create four classes (<ph id="2">`0–25%`</ph>, <ph id="3">`25–50%`</ph>, <ph id="4">`50–75%`</ph>, <ph id="5">`75–100%`</ph>)</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.This will create four classes (<ph id="2">`0–25%`</ph>, <ph id="3">`25–50%`</ph>, <ph id="4">`50–75%`</ph>, <ph id="5">`75–100%`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Choose a color ramp (e.g., light yellow → dark red)</source>
+<target xml:lang="fr">Choose a color ramp (e.g., light yellow → dark red)</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Optionally customize class labels for clarity</source>
+<target xml:lang="fr">Optionally customize class labels for clarity</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Repeat the same process for the layer <ph id="1">`admin2_education_affected`</ph>.
+After duplicating the layer, rename the new one to:</source>
+<target xml:lang="fr">Repeat the same process for the layer <ph id="1">`admin2_education_affected`</ph>.
+After duplicating the layer, rename the new one to:</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">🧠 <bpt id="1">*</bpt>Why 4 equal classes?<ept id="1">*</ept><ph id="2">  </ph>
+This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with <bpt id="3">**</bpt>Natural Breaks<ept id="3">**</ept> if data is unevenly distributed.</source>
+<target xml:lang="fr">🧠 <bpt id="1">*</bpt>Why 4 equal classes?<ept id="1">*</ept><ph id="2">  </ph>
+This helps visualize severity across districts using simple and interpretable risk categories. However, you can experiment with <bpt id="3">**</bpt>Natural Breaks<ept id="3">**</ept> if data is unevenly distributed.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">4. <bpt id="1">**</bpt>Save Your New Styles for Reuse<ept id="1">**</ept> <bpt id="2">&lt;a id="4-save-your-new-styles-for-reuse"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr">4. <bpt id="1">**</bpt>Save Your New Styles for Reuse<ept id="1">**</ept> <bpt id="2">&lt;a id="4-save-your-new-styles-for-reuse"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Save your manually created styles as <ph id="1">`.qml`</ph> files for future reuse.</source>
+<target xml:lang="fr">Save your manually created styles as <ph id="1">`.qml`</ph> files for future reuse.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Steps:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Steps:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer in the <bpt id="1">**</bpt>Layers Panel<ept id="1">**</ept></source>
+<target xml:lang="fr">Right-click on the layer in the <bpt id="1">**</bpt>Layers Panel<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Select <bpt id="1">**</bpt>Properties<ept id="1">**</ept></source>
+<target xml:lang="fr">Select <bpt id="1">**</bpt>Properties<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">In the window that opens, go to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab</source>
+<target xml:lang="fr">In the window that opens, go to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Style`</ph> → <ph id="2">`Save Style…`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Style`</ph> → <ph id="2">`Save Style…`</ph></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Save the file in the folder <ph id="1">`layer_style`</ph></source>
+<target xml:lang="fr">Save the file in the folder <ph id="1">`layer_style`</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Use these filenames:</source>
+<target xml:lang="fr">Use these filenames:</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">5. <bpt id="1">*</bpt>(Optional)<ept id="1">*</ept> Import Styles into Your QGIS Library <bpt id="2">&lt;a id="5-optional-import-styles-into-your-qgis-library"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr">5. <bpt id="1">*</bpt>(Optional)<ept id="1">*</ept> Import Styles into Your QGIS Library <bpt id="2">&lt;a id="5-optional-import-styles-into-your-qgis-library"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">To reuse your styles in any future project:</source>
+<target xml:lang="fr">To reuse your styles in any future project:</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Go to <ph id="1">`Settings`</ph> → <ph id="2">`Style Manager`</ph>.</source>
+<target xml:lang="fr">Go to <ph id="1">`Settings`</ph> → <ph id="2">`Style Manager`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Import/Export`</ph> → <ph id="2">`Import Items`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Import/Export`</ph> → <ph id="2">`Import Items`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Browse to and select your saved <ph id="1">`.qml`</ph> files.</source>
+<target xml:lang="fr">Browse to and select your saved <ph id="1">`.qml`</ph> files.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">The styles will now appear as presets in the <bpt id="1">**</bpt>Layer Styling Panel<ept id="1">**</ept>.</source>
+<target xml:lang="fr">The styles will now appear as presets in the <bpt id="1">**</bpt>Layer Styling Panel<ept id="1">**</ept>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

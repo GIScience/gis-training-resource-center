@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_6/en_qgis_non_spatial_tools_ex2.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 1: Part 2: Calculate vulnerability index <bpt id="1">&lt;a id="exercise-1-part-2-calculate-vulnerability-index"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 1: Part 2: Calculate vulnerability index <bpt id="1">&lt;a id="exercise-1-part-2-calculate-vulnerability-index"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take <ph id="4">`% permanent wall type`</ph>, <ph id="5">`% permanent roof type`</ph> and <ph id="6">`poverty incidence`</ph>. From the Uganda population statistics we calculate the <ph id="7">`% of under fives`</ph> and <ph id="8">`% of elderly`</ph>. By combining the data, we are able to visualize the areas in Uganda that are most vulnerable.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take <ph id="4">`% permanent wall type`</ph>, <ph id="5">`% permanent roof type`</ph> and <ph id="6">`poverty incidence`</ph>. From the Uganda population statistics we calculate the <ph id="7">`% of under fives`</ph> and <ph id="8">`% of elderly`</ph>. By combining the data, we are able to visualize the areas in Uganda that are most vulnerable.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Type of trainings exercise: <bpt id="1">&lt;a id="type-of-trainings-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Type of trainings exercise: <bpt id="1">&lt;a id="type-of-trainings-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Focus group (GIS-Knowledge Level) <bpt id="1">&lt;a id="focus-group-gis-knowledge-level"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Focus group (GIS-Knowledge Level) <bpt id="1">&lt;a id="focus-group-gis-knowledge-level"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">These skills are relevant for <bpt id="1">&lt;a id="these-skills-are-relevant-for"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">These skills are relevant for <bpt id="1">&lt;a id="these-skills-are-relevant-for"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Estimated time demand for the exercise. <bpt id="1">&lt;a id="estimated-time-demand-for-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Estimated time demand for the exercise. <bpt id="1">&lt;a id="estimated-time-demand-for-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Relevant Wiki Articles <bpt id="1">&lt;a id="relevant-wiki-articles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Relevant Wiki Articles <bpt id="1">&lt;a id="relevant-wiki-articles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Non-Spatial Joins<ept id="1">](/content/Wiki/en_qgis_non_spatial_joins_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Non-Spatial Joins<ept id="1">](/content/Wiki/en_qgis_non_spatial_joins_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table function<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table function<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Graduated classification<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Graduated classification<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:</source>
+<target xml:lang="fr">Download all datasets and save the folder on your computer and unzip the file. The zip folder includes:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`uga_adm2_covid_risk.shp`</ph>: Output from Part 1 of the exercise</source>
+<target xml:lang="fr"><ph id="1">`uga_adm2_covid_risk.shp`</ph>: Output from Part 1 of the exercise</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`uga_admpop_adm2_2020proj_1y.csv`</ph>: <bpt id="2">[</bpt>Uganda population statistics<ept id="2">](https://data.humdata.org/dataset/cod-ps-uga)</ept></source>
+<target xml:lang="fr"><ph id="1">`uga_admpop_adm2_2020proj_1y.csv`</ph>: <bpt id="2">[</bpt>Uganda population statistics<ept id="2">](https://data.humdata.org/dataset/cod-ps-uga)</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">This exercise aims to create an overview of the impact of disasters in various regions of Senegal using the prepared datasets from the previous exercise. To achieve this, non-spatial joins, table functions, and different symbology will be utilized.</source>
+<target xml:lang="fr">This exercise aims to create an overview of the impact of disasters in various regions of Senegal using the prepared datasets from the previous exercise. To achieve this, non-spatial joins, table functions, and different symbology will be utilized.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">We will start by using the tool <ph id="1">`Join attributes by field value`</ph> and join the population statistics onto the output from task 9 from the first part (<ph id="2">`uga_adm2_covid_risk`</ph>) of the exercise.</source>
+<target xml:lang="fr">We will start by using the tool <ph id="1">`Join attributes by field value`</ph> and join the population statistics onto the output from task 9 from the first part (<ph id="2">`uga_adm2_covid_risk`</ph>) of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">For the following calculations, use the output layer from the previous operation and name it <ph id="1">`uga_adm2_covid_risk_pop`</ph>. First, we will calculate the <ph id="2">`% of under fives`</ph>. Open the <ph id="3">`Field calculator`</ph> to calculate a new field of type decimal number:</source>
+<target xml:lang="fr">For the following calculations, use the output layer from the previous operation and name it <ph id="1">`uga_adm2_covid_risk_pop`</ph>. First, we will calculate the <ph id="2">`% of under fives`</ph>. Open the <ph id="3">`Field calculator`</ph> to calculate a new field of type decimal number:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`%Under5 = ( "M_00" + "M_01" + "M_02" + "M_03" + "M_04" + "F_00" + "F_01" + "F_02" + "F_03" + "F_04" ) / "Total"`</ph></source>
+<target xml:lang="fr"><ph id="1">`%Under5 = ( "M_00" + "M_01" + "M_02" + "M_03" + "M_04" + "F_00" + "F_01" + "F_02" + "F_03" + "F_04" ) / "Total"`</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Field calculator`</ph> again to calculate another new field of type decimal number. This time, we will calculate the <ph id="2">`% of elderly`</ph>, defined as those aged 65 and above.</source>
+<target xml:lang="fr">Open the <ph id="1">`Field calculator`</ph> again to calculate another new field of type decimal number. This time, we will calculate the <ph id="2">`% of elderly`</ph>, defined as those aged 65 and above.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`%Above65 = ( "M_65" + "M_66" + "M_67" + "M_68" + "M_69" + "M_70" + "M_71" + "M_72" + "M_73" + "M_74" + "M_75" + "M_76" + "M_77" + "M_78" + "M_79" + "M_80plus" + "F_65" + "F_66" + "F_67" + "F_68" + "F_69" + "F_70" + "F_71" + "F_72" + "F_73" + "F_74" + "F_75" + "F_76" + "F_77" + "F_78" + "F_79" + "F_80plus" ) / "Total"`</ph></source>
+<target xml:lang="fr"><ph id="1">`%Above65 = ( "M_65" + "M_66" + "M_67" + "M_68" + "M_69" + "M_70" + "M_71" + "M_72" + "M_73" + "M_74" + "M_75" + "M_76" + "M_77" + "M_78" + "M_79" + "M_80plus" + "F_65" + "F_66" + "F_67" + "F_68" + "F_69" + "F_70" + "F_71" + "F_72" + "F_73" + "F_74" + "F_75" + "F_76" + "F_77" + "F_78" + "F_79" + "F_80plus" ) / "Total"`</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Next, open the field calculator again to calculate a new field of type decimal number.</source>
+<target xml:lang="fr">Next, open the field calculator again to calculate a new field of type decimal number.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`%Under5indicator = ( "%Under5" - minimum( "%Under5" )) / (maximum( "%Under5" ) - minimum( "%Under5" )) * 10`</ph></source>
+<target xml:lang="fr"><ph id="1">`%Under5indicator = ( "%Under5" - minimum( "%Under5" )) / (maximum( "%Under5" ) - minimum( "%Under5" )) * 10`</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Field calculator`</ph> to calculate a new field of type decimal number.</source>
+<target xml:lang="fr">Open the <ph id="1">`Field calculator`</ph> to calculate a new field of type decimal number.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`%Above65indicator = ( "%Above65" - minimum( "%Above65" )) / (maximum( "%Above65" ) - minimum( "%Above65" )) * 10`</ph></source>
+<target xml:lang="fr"><ph id="1">`%Above65indicator = ( "%Above65" - minimum( "%Above65" )) / (maximum( "%Above65" ) - minimum( "%Above65" )) * 10`</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Delete unnecessary fields from the attribute table.</source>
+<target xml:lang="fr">Delete unnecessary fields from the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Again, open the <ph id="1">`Field calculator`</ph> to calculate the average of vulnerabilities as the field type decimal number.</source>
+<target xml:lang="fr">Again, open the <ph id="1">`Field calculator`</ph> to calculate the average of vulnerabilities as the field type decimal number.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`AvgVulnerability = ((10 - "%permrooft" ) + (10 - "%permwallt" ) + "Povertyinc" + "%Under5indicator" + "%Above65indicator" ) / 5`</ph></source>
+<target xml:lang="fr"><ph id="1">`AvgVulnerability = ((10 - "%permrooft" ) + (10 - "%permwallt" ) + "Povertyinc" + "%Under5indicator" + "%Above65indicator" ) / 5`</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Now, you can save the changes and stop editing by clicking on this symbol <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept>.</source>
+<target xml:lang="fr">Now, you can save the changes and stop editing by clicking on this symbol <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Change the symbology on the field <ph id="1">`AvgVulnerability`</ph> to visualise the different vulnerabilities.</source>
+<target xml:lang="fr">Change the symbology on the field <ph id="1">`AvgVulnerability`</ph> to visualise the different vulnerabilities.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

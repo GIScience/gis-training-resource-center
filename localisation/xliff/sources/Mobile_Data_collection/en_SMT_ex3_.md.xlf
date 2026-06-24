@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Mobile_Data_collection/en_SMT_ex3_.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA <bpt id="1">&lt;a id="sketch-map-tool-exercise-3-role-play-using-the-sketch-map-tool-in-evca"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sketch Map Tool Exercise 3 - Role Play using the Sketch Map Tool in EVCA <bpt id="1">&lt;a id="sketch-map-tool-exercise-3-role-play-using-the-sketch-map-tool-in-evca"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Explore Sketch Mapping in a roleplay, either in the perspective of a mapping facilitator, or as a participant and learn more about the challenges during the mapping.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Explore Sketch Mapping in a roleplay, either in the perspective of a mapping facilitator, or as a participant and learn more about the challenges during the mapping.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Type of trainings exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+This exercise can only be conducted in <bpt id="4">__</bpt>presence training<ept id="4">__</ept> and is based on na role-play and discussions.</source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Type of trainings exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+This exercise can only be conducted in <bpt id="4">__</bpt>presence training<ept id="4">__</ept> and is based on na role-play and discussions.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowlege Level):<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowlege Level):<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Planners/facilitators, as well as practitioners who are involved in the preparation of the field campaign or collecting the data themselves.</source>
+<target xml:lang="fr">Planners/facilitators, as well as practitioners who are involved in the preparation of the field campaign or collecting the data themselves.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Beginners-level: no specific knowledge about QGIS/uMap required</source>
+<target xml:lang="fr">Beginners-level: no specific knowledge about QGIS/uMap required</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Phase of participatory/community mapping <bpt id="1">&lt;a id="phase-of-participatorycommunity-mapping"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Phase of participatory/community mapping <bpt id="1">&lt;a id="phase-of-participatorycommunity-mapping"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Participatory mapping</source>
+<target xml:lang="fr">Participatory mapping</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Estimated time demand for the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Estimated time demand for the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">1h - 1,5 h</source>
+<target xml:lang="fr">1h - 1,5 h</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Available data and resources <bpt id="1">&lt;a id="available-data-and-resources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available data and resources <bpt id="1">&lt;a id="available-data-and-resources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Case studies descriptions:</source>
+<target xml:lang="fr">Case studies descriptions:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_1.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study 2<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study 2<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_2.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study 3<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study 3<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Case_Study_3.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Case studies:</source>
+<target xml:lang="fr">Case studies:</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_Sudan.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_Sudan.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 2<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_2_Bolivien.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 2<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_2_Bolivien.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 3<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_3_Port_Harcourt.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 3<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_3_Port_Harcourt.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_3.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Introduce the idea, the aim and the benefits of a Sketch Map. If you are focusing on EVCA you might use the <bpt id="1">[</bpt>EVCA Sketch Map Tool Slides<ept id="1">]()</ept></source>
+<target xml:lang="fr">Introduce the idea, the aim and the benefits of a Sketch Map. If you are focusing on EVCA you might use the <bpt id="1">[</bpt>EVCA Sketch Map Tool Slides<ept id="1">]()</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Provide access to the needed material.</source>
+<target xml:lang="fr">Provide access to the needed material.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Organize the groups (e.g. create breakout-rooms) and assign the groups with their case. The group sizes shouldn't be too big, so everyone can contribute. For each case assign 2-3 participants the role of facilitators and 4-7 participants the role of community members.</source>
+<target xml:lang="fr">Organize the groups (e.g. create breakout-rooms) and assign the groups with their case. The group sizes shouldn't be too big, so everyone can contribute. For each case assign 2-3 participants the role of facilitators and 4-7 participants the role of community members.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Time for group work:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Time for group work:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Check-in with the groups if there are questions or problems.</source>
+<target xml:lang="fr">Check-in with the groups if there are questions or problems.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Prepare the presentation tool for the Wrap-Up.</source>
+<target xml:lang="fr">Prepare the presentation tool for the Wrap-Up.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Take some time at the end to wrap up where the group will present their findings.</source>
+<target xml:lang="fr">Take some time at the end to wrap up where the group will present their findings.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Summarize challenges of the participatory mapping approach.</source>
+<target xml:lang="fr">Summarize challenges of the participatory mapping approach.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Discuss benefits of showing results as a map</source>
+<target xml:lang="fr">Discuss benefits of showing results as a map</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Leave time for open questions.
+<ph id="1">::::</ph></source>
+<target xml:lang="fr">Leave time for open questions.
+<ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Background Information <bpt id="1">&lt;a id="background-information"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background Information <bpt id="1">&lt;a id="background-information"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Enhanced Vulnerability and Capacity Assessment (EVCA) <bpt id="1">&lt;a id="enhanced-vulnerability-and-capacity-assessment-evca"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Enhanced Vulnerability and Capacity Assessment (EVCA) <bpt id="1">&lt;a id="enhanced-vulnerability-and-capacity-assessment-evca"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard &amp; exposure map and vulnerability &amp; capacity map (see <bpt id="1">[</bpt>EVCA Toolbox<ept id="1">](https://preparecenter.org/site/evca/toolbox/)</ept>). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.</source>
+<target xml:lang="fr">In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard &amp; exposure map and vulnerability &amp; capacity map (see <bpt id="1">[</bpt>EVCA Toolbox<ept id="1">](https://preparecenter.org/site/evca/toolbox/)</ept>). Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Benefits of the Sketch Map Tool <bpt id="1">&lt;a id="benefits-of-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Benefits of the Sketch Map Tool <bpt id="1">&lt;a id="benefits-of-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>During the data collection:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>During the data collection:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Maps provide orientation and can guide discussions.</source>
+<target xml:lang="fr">Maps provide orientation and can guide discussions.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">With the sketching you achieve an immediate visualization of local knowledge.</source>
+<target xml:lang="fr">With the sketching you achieve an immediate visualization of local knowledge.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>After the data collection:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>After the data collection:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Displaying and sharing the result.</source>
+<target xml:lang="fr">Displaying and sharing the result.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Integrate and analyse local knowledge in GIS-software such as QGIS</source>
+<target xml:lang="fr">Integrate and analyse local knowledge in GIS-software such as QGIS</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Step-by-step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step-by-step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Exercise: Roleplay <bpt id="1">&lt;a id="exercise-roleplay"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: Roleplay <bpt id="1">&lt;a id="exercise-roleplay"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Participatory mapping with the Sketch Maps is the key part of using the Sketch Map Tool. The usability of your collected data depends on the local knowledge of the participants and how it is captured by 'sketching' on the maps. The idea of this exercise is to recreate such a mapping session in order to learn more about challenges you could face during the mapping process.</source>
+<target xml:lang="fr">Participatory mapping with the Sketch Maps is the key part of using the Sketch Map Tool. The usability of your collected data depends on the local knowledge of the participants and how it is captured by 'sketching' on the maps. The idea of this exercise is to recreate such a mapping session in order to learn more about challenges you could face during the mapping process.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">The facilitators are doing an EVCA in one area of the prepared case and focus on creating an exposure and hazard map.</source>
+<target xml:lang="fr">The facilitators are doing an EVCA in one area of the prepared case and focus on creating an exposure and hazard map.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">The community members are taking part in this mapping by providing information. However, they also have their own concerns or challenges they wish to address during the mapping process.</source>
+<target xml:lang="fr">The community members are taking part in this mapping by providing information. However, they also have their own concerns or challenges they wish to address during the mapping process.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">1. Prepare for the roleplay <bpt id="1">&lt;a id="1-prepare-for-the-roleplay"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Prepare for the roleplay <bpt id="1">&lt;a id="1-prepare-for-the-roleplay"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Separate into groups: For each case study, there should be 2 groups:</source>
+<target xml:lang="fr">Separate into groups: For each case study, there should be 2 groups:</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">One group represents the community members (4-7 participants).</source>
+<target xml:lang="fr">One group represents the community members (4-7 participants).</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">One group represents the facilitators (2-3 participants). If your total group is too big, you can split and use the same case study twice.</source>
+<target xml:lang="fr">One group represents the facilitators (2-3 participants). If your total group is too big, you can split and use the same case study twice.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Read the case study carefully.</source>
+<target xml:lang="fr">Read the case study carefully.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Get into your role.</source>
+<target xml:lang="fr">Get into your role.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Discuss with the other participants with your role (the community members or the facilitators) and prepare yourself. What do you need to do during the mapping process?</source>
+<target xml:lang="fr">Discuss with the other participants with your role (the community members or the facilitators) and prepare yourself. What do you need to do during the mapping process?</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Facilitators<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Facilitators<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">The group of facilitators will separate from the rest in order to prepare their activity.</source>
+<target xml:lang="fr">The group of facilitators will separate from the rest in order to prepare their activity.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">How do I best explain to the community why we do this activity and what is its added value, especially for them?  How do I make them feel comfortable to share their information (concerning data protections, ethics)?</source>
+<target xml:lang="fr">How do I best explain to the community why we do this activity and what is its added value, especially for them?  How do I make them feel comfortable to share their information (concerning data protections, ethics)?</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">What do we want to find out when talking to the community? What do we want to map? What data do we want to collect?</source>
+<target xml:lang="fr">What do we want to find out when talking to the community? What do we want to map? What data do we want to collect?</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">What questions would we have to raise in order to get the right answers?</source>
+<target xml:lang="fr">What questions would we have to raise in order to get the right answers?</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">How can I help community members to orientate on the map?</source>
+<target xml:lang="fr">How can I help community members to orientate on the map?</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">What should be mapped and how should it be mapped? For this questions, take a look at the <bpt id="1">[</bpt>help page<ept id="1">](https://sketch-map-tool.heigit.org/help)</ept>-subsection about Data collection in the field.</source>
+<target xml:lang="fr">What should be mapped and how should it be mapped? For this questions, take a look at the <bpt id="1">[</bpt>help page<ept id="1">](https://sketch-map-tool.heigit.org/help)</ept>-subsection about Data collection in the field.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Familiarise yourself with the map. What can you detect? Are there any landmarks you can use for orientation?</source>
+<target xml:lang="fr">Familiarise yourself with the map. What can you detect? Are there any landmarks you can use for orientation?</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Community members<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Community members<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Make some notes about the hazards and the exposures you think one could have encountered in the past. Guiding questions could be:</source>
+<target xml:lang="fr">Make some notes about the hazards and the exposures you think one could have encountered in the past. Guiding questions could be:</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Which areas were affected?</source>
+<target xml:lang="fr">Which areas were affected?</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">How often is this happening?</source>
+<target xml:lang="fr">How often is this happening?</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">How severe was this hazard event? (e.g. how high was the flood level)</source>
+<target xml:lang="fr">How severe was this hazard event? (e.g. how high was the flood level)</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Which consequences could this have for individuals? (e.g. destructions of houses, lost livelyhoods)</source>
+<target xml:lang="fr">Which consequences could this have for individuals? (e.g. destructions of houses, lost livelyhoods)</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Distribute some roles: old persons, students, teachers, or other community members</source>
+<target xml:lang="fr">Distribute some roles: old persons, students, teachers, or other community members</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Beyond that, give your roles some characteristics, you can be creative. Some ideas to start with:</source>
+<target xml:lang="fr">Beyond that, give your roles some characteristics, you can be creative. Some ideas to start with:</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">very suspicious person, questions a lot if community should be part of this activity and if there is an added value for the community.</source>
+<target xml:lang="fr">very suspicious person, questions a lot if community should be part of this activity and if there is an added value for the community.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">fearful character, wants to participate but is afraid of sharing information and its consequences.</source>
+<target xml:lang="fr">fearful character, wants to participate but is afraid of sharing information and its consequences.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">old person that has lots of knowledge but cannot orientate on the map.</source>
+<target xml:lang="fr">old person that has lots of knowledge but cannot orientate on the map.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">very motivated person that wants to map more that is asked for/needed.</source>
+<target xml:lang="fr">very motivated person that wants to map more that is asked for/needed.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Which other characters spring to your mind? Maybe someone who just moved to the place, has a lot of question to other participants,...</source>
+<target xml:lang="fr">Which other characters spring to your mind? Maybe someone who just moved to the place, has a lot of question to other participants,...</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">2. Participatory Mapping Simulation <bpt id="1">&lt;a id="2-participatory-mapping-simulation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Participatory Mapping Simulation <bpt id="1">&lt;a id="2-participatory-mapping-simulation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Now it is time to show your acting ability.<ept id="1">__</ept><ph id="2">   </ph>
+It might seem a bit strange at first, but try to stay in your character. This can help you a lot to understand challenges and motivations later on.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Now it is time to show your acting ability.<ept id="1">__</ept><ph id="2">   </ph>
+It might seem a bit strange at first, but try to stay in your character. This can help you a lot to understand challenges and motivations later on.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">The Participatory Mapping Simulation is led by the facilitators:</source>
+<target xml:lang="fr">The Participatory Mapping Simulation is led by the facilitators:</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Present the project and the activity that is planned (mapping project)</source>
+<target xml:lang="fr">Present the project and the activity that is planned (mapping project)</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Welcoming round: Everyone is introducing themselves shortly (e.g. I'm Sam and I'm running a small farm in the 5th generation).</source>
+<target xml:lang="fr">Welcoming round: Everyone is introducing themselves shortly (e.g. I'm Sam and I'm running a small farm in the 5th generation).</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Start the mapping by showing the map and helping the community members to orientate.</source>
+<target xml:lang="fr">Start the mapping by showing the map and helping the community members to orientate.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Try to map together.</source>
+<target xml:lang="fr">Try to map together.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">The trainer will end this roleplay when the time is over.</source>
+<target xml:lang="fr">The trainer will end this roleplay when the time is over.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">3. Optional: Upload your created maps <bpt id="1">&lt;a id="3-optional-upload-your-created-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Optional: Upload your created maps <bpt id="1">&lt;a id="3-optional-upload-your-created-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Upload your created maps and visualize the results in UMAP<ept id="2">__</ept>
+Take a photo of your sketches or at least one sketch by loading them into <bpt id="3">[</bpt>sketch-map-tool.heigit.org<ept id="3">](https://sketch-map-tool.heigit.org/)</ept>. On the website, choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Upload your created maps and visualize the results in UMAP<ept id="2">__</ept>
+Take a photo of your sketches or at least one sketch by loading them into <bpt id="3">[</bpt>sketch-map-tool.heigit.org<ept id="3">](https://sketch-map-tool.heigit.org/)</ept>. On the website, choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Now, let's take a look at the results in order to understand the community mapping process. We will use the <bpt id="1">[</bpt>uMap website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept></source>
+<target xml:lang="fr">Now, let's take a look at the results in order to understand the community mapping process. We will use the <bpt id="1">[</bpt>uMap website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Load your data<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Load your data<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Open the browser of your choice, navigate to the <bpt id="1">[</bpt>uMap website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept> and click on the large green button: <ph id="2">`Create a map`</ph>.</source>
+<target xml:lang="fr">Open the browser of your choice, navigate to the <bpt id="1">[</bpt>uMap website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept> and click on the large green button: <ph id="2">`Create a map`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">You can load your data into the map frame by clicking on the upwards-arrow button <bpt id="1">![</bpt><ept id="1">](/fig/umap_upload_data_icon.png)</ept> in the toolbar on the right side of your screen. The <ph id="2">`Import data`</ph> window will open on the right side. Click on <ph id="3">`Select file`</ph>, navigate to the folder you downloaded from the Sketch Map Tool website and select the vector file (<ph id="4">`.geojson`</ph>).</source>
+<target xml:lang="fr">You can load your data into the map frame by clicking on the upwards-arrow button <bpt id="1">![</bpt><ept id="1">](/fig/umap_upload_data_icon.png)</ept> in the toolbar on the right side of your screen. The <ph id="2">`Import data`</ph> window will open on the right side. Click on <ph id="3">`Select file`</ph>, navigate to the folder you downloaded from the Sketch Map Tool website and select the vector file (<ph id="4">`.geojson`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Open`</ph>. uMap will automatically detect that the uploaded geojson-file is vector data. Click on <ph id="2">`Import`</ph> to load your data to your map canvas.</source>
+<target xml:lang="fr">Click on <ph id="1">`Open`</ph>. uMap will automatically detect that the uploaded geojson-file is vector data. Click on <ph id="2">`Import`</ph> to load your data to your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">The detected markings of your sketch map should now appear in the map canvas. Take a look around by zooming in and out, or panning the map.</source>
+<target xml:lang="fr">The detected markings of your sketch map should now appear in the map canvas. Take a look around by zooming in and out, or panning the map.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Compare detected markings with your physical map. Did the tool detect your markings correctly or are some markings missing?</source>
+<target xml:lang="fr">Compare detected markings with your physical map. Did the tool detect your markings correctly or are some markings missing?</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Which markings got detected better than others? What can you learn from this session in order to make better markings in the future?</source>
+<target xml:lang="fr">Which markings got detected better than others? What can you learn from this session in order to make better markings in the future?</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">4. Final discussion and conclusion <bpt id="1">&lt;a id="4-final-discussion-and-conclusion"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4. Final discussion and conclusion <bpt id="1">&lt;a id="4-final-discussion-and-conclusion"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Discuss your results and created maps. Are you satisfied with the map? What can you do with this results? What do you to change?</source>
+<target xml:lang="fr">Discuss your results and created maps. Are you satisfied with the map? What can you do with this results? What do you to change?</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Discuss the challenges you encountered, as well as the potentials of conducting participatory mapping projects you recognized. What did you learn?</source>
+<target xml:lang="fr">Discuss the challenges you encountered, as well as the potentials of conducting participatory mapping projects you recognized. What did you learn?</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Discuss what you would do different in the future (e.g. use only one colour, etc.).</source>
+<target xml:lang="fr">Discuss what you would do different in the future (e.g. use only one colour, etc.).</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Discuss the importance of a well planned mapping process in order to have usable results and data.</source>
+<target xml:lang="fr">Discuss the importance of a well planned mapping process in order to have usable results and data.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

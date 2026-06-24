@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_styling_vector_data.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Styling Vector Data <bpt id="1">&lt;a id="styling-vector-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Styling Vector Data <bpt id="1">&lt;a id="styling-vector-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize how the layers in your QGIS project are visualised.</source>
+<target xml:lang="fr">The previous chapter went over the fundamentals of graphical symbolisation and the visual variables. In this chapter, we want to apply our understanding of visual representation and learn how to use the styling panel in QGIS to customize how the layers in your QGIS project are visualised.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Styling Panel <bpt id="1">&lt;a id="styling-panel"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Styling Panel <bpt id="1">&lt;a id="styling-panel"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_styling_panel.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_styling_panel.png</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 400px</ph>
+<ph id="2">name: en_30.30.2_styling_panel</ph>
+<ph id="3">align: left</ph></source>
+<target xml:lang="fr"><ph id="1">height: 400px</ph>
+<ph id="2">name: en_30.30.2_styling_panel</ph>
+<ph id="3">align: left</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Styling panel in QGIS 3.30.2.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Styling panel in QGIS 3.30.2.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:</source>
+<target xml:lang="fr">For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Right click on the layer you wish to style and select <ph id="1">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="2">`ymbology`</ph>-tab.</source>
+<target xml:lang="fr">Right click on the layer you wish to style and select <ph id="1">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="2">`ymbology`</ph>-tab.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Open the layer styling panel by enabling it under <ph id="1">`View`</ph> → <ph id="2">`Panels`</ph> → <ph id="3">`Styling Panel`</ph>. Usually, the panel will appear on the right side of the map canvas.</source>
+<target xml:lang="fr">Open the layer styling panel by enabling it under <ph id="1">`View`</ph> → <ph id="2">`Panels`</ph> → <ph id="3">`Styling Panel`</ph>. Usually, the panel will appear on the right side of the map canvas.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">On the left of the styling panel you can choose the different tabs to access different styling options.</source>
+<target xml:lang="fr">On the left of the styling panel you can choose the different tabs to access different styling options.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.</source>
+<target xml:lang="fr">In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Opening the styling panel
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Opening the styling panel
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Symbology for Vector Data <bpt id="1">&lt;a id="symbology-for-vector-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Symbology for Vector Data <bpt id="1">&lt;a id="symbology-for-vector-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data.</source>
+<target xml:lang="fr">You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_symbolization_vector_data.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_symbolization_vector_data.png</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_symbolization_vector_data</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_symbolization_vector_data</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science &amp; Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 .
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Symbolization for vector data; Source: White, T. (2017). Symbolization and the Visual Variables. *The Geographic Information Science &amp; Technology Body of Knowledge (2nd Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.2222/gistbok/2017.2.3 .
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Remember that <bpt id="2">__</bpt>the layer's symbology is saved within your project file, not within your shapefile!<ept id="2">__</ept> If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Remember that <bpt id="2">__</bpt>the layer's symbology is saved within your project file, not within your shapefile!<ept id="2">__</ept> If you share a shapefile with a colleague, it will have a different style when they add it to their own project.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.<ph id="1">  </ph>
+Most simple markers consist of a <bpt id="2">__</bpt>fill<ept id="2">__</ept> and an <bpt id="3">__</bpt>outline<ept id="3">__</ept>. Depending on the type of geometry in the layer, you will have to use have different symbology options.</source>
+<target xml:lang="fr">QGIS let's you visualise data using simple markers, SVG-files or Raster-files. Most commonly, you will work with simple markers. These are generally used to create the symbols for most elements on a map. For example, simple markers are used to visualise streets, building outlines, waterbodies, administrative boundaries or other polygons.<ph id="1">  </ph>
+Most simple markers consist of a <bpt id="2">__</bpt>fill<ept id="2">__</ept> and an <bpt id="3">__</bpt>outline<ept id="3">__</ept>. Depending on the type of geometry in the layer, you will have to use have different symbology options.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.</source>
+<target xml:lang="fr">The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.</source>
+<target xml:lang="fr">The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">You can either style a single symbol for each layer or use different styles based on a <bpt id="1">[</bpt>categorisation method<ept id="1">](/content/Module_3/en_qgis_data_classification.md)</ept>.</source>
+<target xml:lang="fr">You can either style a single symbol for each layer or use different styles based on a <bpt id="1">[</bpt>categorisation method<ept id="1">](/content/Module_3/en_qgis_data_classification.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In the Symbology Tab, you can select between various symbolization methods (see <ph id="1">{numref}</ph><ph id="2">`en_3.36_m4_symbolisation_methods`</ph>). The most important ones are <bpt id="3">__</bpt>Single Symbol<ept id="3">__</ept>, <bpt id="4">__</bpt>Categorised<ept id="4">__</ept>, <bpt id="5">__</bpt>Graduated<ept id="5">__</ept>, and <bpt id="6">__</bpt>Rule-based<ept id="6">__</ept>.</source>
+<target xml:lang="fr">In the Symbology Tab, you can select between various symbolization methods (see <ph id="1">{numref}</ph><ph id="2">`en_3.36_m4_symbolisation_methods`</ph>). The most important ones are <bpt id="3">__</bpt>Single Symbol<ept id="3">__</ept>, <bpt id="4">__</bpt>Categorised<ept id="4">__</ept>, <bpt id="5">__</bpt>Graduated<ept id="5">__</ept>, and <bpt id="6">__</bpt>Rule-based<ept id="6">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_m4_symbolisation_methods.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_m4_symbolisation_methods.png</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.36_m4_symbolisation_methods</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.36_m4_symbolisation_methods</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Single-Symbol</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Single-Symbol</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Assigns one symbol to every feature of the dataset, no matter if the attributes are different.</source>
+<target xml:lang="fr">Assigns one symbol to every feature of the dataset, no matter if the attributes are different.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a hospital symbol to a layer that only contains points showing the location of hospitals.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a hospital symbol to a layer that only contains points showing the location of hospitals.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Categorized</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Categorized</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Classifies features into categories using an attribute (<ph id="1">`Value`</ph>).</source>
+<target xml:lang="fr">Classifies features into categories using an attribute (<ph id="1">`Value`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">A category is created for each unique value of this attribute.</source>
+<target xml:lang="fr">A category is created for each unique value of this attribute.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Each category can be assigned to a different symbol.</source>
+<target xml:lang="fr">Each category can be assigned to a different symbol.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">This can be used for nominal as well as ordinal data.</source>
+<target xml:lang="fr">This can be used for nominal as well as ordinal data.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a different symbol for each type of building (industrial, commercial, public, residential,...)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a different symbol for each type of building (industrial, commercial, public, residential,...)</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Graduated</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Graduated</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Creates classes for numerical data.</source>
+<target xml:lang="fr">Creates classes for numerical data.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">A colour gradient can be selected to represent the distribution of the data.</source>
+<target xml:lang="fr">A colour gradient can be selected to represent the distribution of the data.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see <bpt id="2">[</bpt>Module 3: Geodata Classifification<ept id="2">](/content/Module_3/en_qgis_data_classification.md)</ept>).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see <bpt id="2">[</bpt>Module 3: Geodata Classifification<ept id="2">](/content/Module_3/en_qgis_data_classification.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Rule-based</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Rule-based</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Create rules using an expression and assign a symbol for the features where the rule applies.</source>
+<target xml:lang="fr">Create rules using an expression and assign a symbol for the features where the rule applies.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">You can specify more accurately the features you want to symbolize.</source>
+<target xml:lang="fr">You can specify more accurately the features you want to symbolize.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">You can use values from different attributes (e.g. building type and city district).</source>
+<target xml:lang="fr">You can use values from different attributes (e.g. building type and city district).</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">The expression builder helps you create rules by displaying the available values, fields, operators, etc...</source>
+<target xml:lang="fr">The expression builder helps you create rules by displaying the available values, fields, operators, etc...</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, select a symbol for every health facility that is a hospital and has exceeded it's capacity.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, select a symbol for every health facility that is a hospital and has exceeded it's capacity.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Below, we will go over some common styling methods used in cartography.</source>
+<target xml:lang="fr">Below, we will go over some common styling methods used in cartography.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Styling administrative boundaries (Polygons) <bpt id="1">&lt;a id="styling-administrative-boundaries-polygons"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Styling administrative boundaries (Polygons) <bpt id="1">&lt;a id="styling-administrative-boundaries-polygons"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable.</source>
+<target xml:lang="fr">When creating situational reports, you will frequently use administrative boundaries. In the example below, we want to create an overview map using the administrative boundaries of Nigeria. In order to visualise all the three administrative boundaries at the same time, we need to set the symbology for each layer so the layers below are visible, and the hierarchy of the administrative levels is distinguishable.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph><bpt id="2">*</bpt>Optional<ept id="2">*</ept>: Now it's your turn</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph><bpt id="2">*</bpt>Optional<ept id="2">*</ept>: Now it's your turn</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">You can follow along by downloading the <bpt id="1">[</bpt>administrative boundaries of Nigeria<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip)</ept> by <bpt id="2">[</bpt>OCHA Nigeria<ept id="2">](https://data.humdata.org/dataset/cod-ab-nga)</ept>.</source>
+<target xml:lang="fr">You can follow along by downloading the <bpt id="1">[</bpt>administrative boundaries of Nigeria<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/nga_adm_osgof_20190417.zip)</ept> by <bpt id="2">[</bpt>OCHA Nigeria<ept id="2">](https://data.humdata.org/dataset/cod-ab-nga)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Only display the outlines of polygons <bpt id="1">&lt;a id="only-display-the-outlines-of-polygons"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Only display the outlines of polygons <bpt id="1">&lt;a id="only-display-the-outlines-of-polygons"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Now, we want to change the symbology of a layer so that <bpt id="1">__</bpt>only the outlines of the polygons are visible<ept id="1">__</ept>. This is necessary to make layers below this one visible.</source>
+<target xml:lang="fr">Now, we want to change the symbology of a layer so that <bpt id="1">__</bpt>only the outlines of the polygons are visible<ept id="1">__</ept>. This is necessary to make layers below this one visible.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">To change the symbology of a single layer:</source>
+<target xml:lang="fr">To change the symbology of a single layer:</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Styling panel`</ph> and navigate to the symbology tab. By default, the symbology will be set to <ph id="2">`Single Symbol`</ph>. This means that the same colours and contours will be applied to all the features in that layer.</source>
+<target xml:lang="fr">Open the <ph id="1">`Styling panel`</ph> and navigate to the symbology tab. By default, the symbology will be set to <ph id="2">`Single Symbol`</ph>. This means that the same colours and contours will be applied to all the features in that layer.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Simple Fill`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Simple Fill`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Click on the arrow to the right of <ph id="1">`Fill Colour`</ph>.</source>
+<target xml:lang="fr">Click on the arrow to the right of <ph id="1">`Fill Colour`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Check the <ph id="1">`Transparent Fill`</ph> option.</source>
+<target xml:lang="fr">Check the <ph id="1">`Transparent Fill`</ph> option.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_vector_layer_styling_transparent</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_vector_layer_styling_transparent</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Making the fill colour transparent</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Making the fill colour transparent</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Adjusting the Styles of Multiple Overlaying Layers <bpt id="1">&lt;a id="adjusting-the-styles-of-multiple-overlaying-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adjusting the Styles of Multiple Overlaying Layers <bpt id="1">&lt;a id="adjusting-the-styles-of-multiple-overlaying-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Step 1: Ordering the layers<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Step 1: Ordering the layers<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Import the administrative boundaries into your QGIS-project.</source>
+<target xml:lang="fr">Import the administrative boundaries into your QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">We need to order the layers in the Layers panel so that the <ph id="1">`adm0`</ph>-layer sits on top, followed by <ph id="2">`adm1`</ph> and <ph id="3">`adm2`</ph>. At first, this might look weird because <ph id="4">`Adm0`</ph> will cover everything.</source>
+<target xml:lang="fr">We need to order the layers in the Layers panel so that the <ph id="1">`adm0`</ph>-layer sits on top, followed by <ph id="2">`adm1`</ph> and <ph id="3">`adm2`</ph>. At first, this might look weird because <ph id="4">`Adm0`</ph> will cover everything.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_changing_layer_style_1</ph>
+<ph id="2">height: 400px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_changing_layer_style_1</ph>
+<ph id="2">height: 400px</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Order the layers and navigate to the styling panel of the topmost layer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Order the layers and navigate to the styling panel of the topmost layer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab.</source>
+<target xml:lang="fr">Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Simple Fill`</ph> to open the style options.</source>
+<target xml:lang="fr">Click on <ph id="1">`Simple Fill`</ph> to open the style options.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Expand the <ph id="1">`Fill Colour`</ph> menu and check the <ph id="2">`Transparent Fill`</ph> option. This will make only the boundaries visible, so <bpt id="3">__</bpt>we will be able to see the layer under this one<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Expand the <ph id="1">`Fill Colour`</ph> menu and check the <ph id="2">`Transparent Fill`</ph> option. This will make only the boundaries visible, so <bpt id="3">__</bpt>we will be able to see the layer under this one<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Choose a <ph id="1">`Stroke Colour`</ph>, and make the <ph id="2">`Stroke Width`</ph> 0.66 Millimeters.</source>
+<target xml:lang="fr">Choose a <ph id="1">`Stroke Colour`</ph>, and make the <ph id="2">`Stroke Width`</ph> 0.66 Millimeters.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Repeat the same process<ept id="1">__</ept> for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Repeat the same process<ept id="1">__</ept> for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</source>
+<target xml:lang="fr">Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Let's make the district layer's style consistent with the others.</source>
+<target xml:lang="fr">Let's make the district layer's style consistent with the others.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Choose a <ph id="1">`Fill Color`</ph>.</source>
+<target xml:lang="fr">Choose a <ph id="1">`Fill Color`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <bpt id="1">__</bpt>Dash Line<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <bpt id="1">__</bpt>Dash Line<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Click OK and look at your map: Hopefully it's starting to look nicer!</source>
+<target xml:lang="fr">Click OK and look at your map: Hopefully it's starting to look nicer!</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_changing_layer_style_3</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_changing_layer_style_3</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">The styling of a vector data consists of the colour and the outline.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The styling of a vector data consists of the colour and the outline.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Adjusting the style for multiple layers
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Adjusting the style for multiple layers
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Creating a Choropleth Map ("Gradudated Styling) <bpt id="1">&lt;a id="creating-a-choropleth-map-gradudated-styling"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Creating a Choropleth Map ("Gradudated Styling) <bpt id="1">&lt;a id="creating-a-choropleth-map-gradudated-styling"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.</source>
+<target xml:lang="fr">If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Download the <bpt id="1">[</bpt>NGA_Adm1_Pop shapefile<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip)</ept> and save it in your shapefile folder.</source>
+<target xml:lang="fr">Download the <bpt id="1">[</bpt>NGA_Adm1_Pop shapefile<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_adm1_pop.zip)</ept> and save it in your shapefile folder.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.</source>
+<target xml:lang="fr">In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Drag the shapefile NGA_Adm1_Pop into your map.</source>
+<target xml:lang="fr">Drag the shapefile NGA_Adm1_Pop into your map.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Open its <ph id="1">`Symbology`</ph> options and choose <ph id="2">`Graduated`</ph>.</source>
+<target xml:lang="fr">Open its <ph id="1">`Symbology`</ph> options and choose <ph id="2">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Select the value you want to use to assign colours<ept id="1">__</ept>, in this case, it will be <ph id="2">`total_pop`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Select the value you want to use to assign colours<ept id="1">__</ept>, in this case, it will be <ph id="2">`total_pop`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_symbology_variable_ranges</ph>
+<ph id="2">width: 550px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_symbology_variable_ranges</ph>
+<ph id="2">width: 550px</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">With variable ranges, select <bpt id="1">__</bpt>Graduated<ept id="1">__</ept> symbology and choose the attribute with continuous values.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">With variable ranges, select <bpt id="1">__</bpt>Graduated<ept id="1">__</ept> symbology and choose the attribute with continuous values.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Classify`</ph> to <bpt id="2">__</bpt>list all values divided in classes<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Classify`</ph> to <bpt id="2">__</bpt>list all values divided in classes<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Choose <bpt id="1">__</bpt>how many classes<ept id="1">__</ept> you want the data to be divided into ‒ let's say 4.</source>
+<target xml:lang="fr">Choose <bpt id="1">__</bpt>how many classes<ept id="1">__</ept> you want the data to be divided into ‒ let's say 4.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</source>
+<target xml:lang="fr">By default, the colour ramp will be red. However, red is not the right colour to use for population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">__</bpt>the arrow next to the colour ramp<ept id="1">__</ept> to choose another combination of colours - let's say a color ramp from white to blue.</source>
+<target xml:lang="fr">Click on <bpt id="1">__</bpt>the arrow next to the colour ramp<ept id="1">__</ept> to choose another combination of colours - let's say a color ramp from white to blue.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph> to preview the look of your layer, then <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph> to preview the look of your layer, then <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_symbology_variable_ranges_2</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_symbology_variable_ranges_2</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">You can categorize the continuous values into classes and assign a colour ramp.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">You can categorize the continuous values into classes and assign a colour ramp.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called <bpt id="1">__</bpt>Choropleth maps<ept id="1">__</ept>.</source>
+<target xml:lang="fr">The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called <bpt id="1">__</bpt>Choropleth maps<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_map_design_example_variable_ranges.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_map_design_example_variable_ranges.png</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_map_design_example_variable_ranges</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_map_design_example_variable_ranges</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">A map showing the population of Nigerian states.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A map showing the population of Nigerian states.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: How to create a choropleth map
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: How to create a choropleth map
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Creating a graduated symbols map <bpt id="1">&lt;a id="creating-a-graduated-symbols-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Creating a graduated symbols map <bpt id="1">&lt;a id="creating-a-graduated-symbols-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, or in situations when you want to communicate two variables on a single map. For example, it is easy to combine choropleth maps with graduated symbols.<ph id="1">  </ph>
+Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step:</source>
+<target xml:lang="fr">Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, or in situations when you want to communicate two variables on a single map. For example, it is easy to combine choropleth maps with graduated symbols.<ph id="1">  </ph>
+Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step:</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of
+polygons (see <bpt id="1">[</bpt>Module 5<ept id="1">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept>).<ph id="2">   </ph>
+We will be using the same layer as for the choropleth map (see <ph id="3">{numref}</ph><ph id="4">`en_map_design_example_variable_ranges`</ph>):
+<ph id="5">`NGA_Adm1_Pop`</ph>.</source>
+<target xml:lang="fr">Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of
+polygons (see <bpt id="1">[</bpt>Module 5<ept id="1">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept>).<ph id="2">   </ph>
+We will be using the same layer as for the choropleth map (see <ph id="3">{numref}</ph><ph id="4">`en_map_design_example_variable_ranges`</ph>):
+<ph id="5">`NGA_Adm1_Pop`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">[</bpt>processing toolbox<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars)</ept>, search for the tool <ph id="2">`centroids`</ph>. <bpt id="3">&lt;kbd></bpt>Double-Click<ept id="3">&lt;/kbd></ept> on it. A new window will open (see <ph id="4">{numref}</ph><ph id="5">`en_3.36_m4_centroids`</ph>).</source>
+<target xml:lang="fr">In the <bpt id="1">[</bpt>processing toolbox<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars)</ept>, search for the tool <ph id="2">`centroids`</ph>. <bpt id="3">&lt;kbd></bpt>Double-Click<ept id="3">&lt;/kbd></ept> on it. A new window will open (see <ph id="4">{numref}</ph><ph id="5">`en_3.36_m4_centroids`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_m4_centroids.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_m4_centroids.png</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.36_m4_centroids</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.36_m4_centroids</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Creating centroids in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Creating centroids in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Input Layer`</ph>, select the <ph id="2">`NGA_Adm1_Pop`</ph>-layer. Click on <ph id="3">`Run`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Input Layer`</ph>, select the <ph id="2">`NGA_Adm1_Pop`</ph>-layer. Click on <ph id="3">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">A new point layer called <ph id="1">`Centroids`</ph> will appear in your layers panel. Open its styling panel and navigate to the symbology tab.</source>
+<target xml:lang="fr">A new point layer called <ph id="1">`Centroids`</ph> will appear in your layers panel. Open its styling panel and navigate to the symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Set the symbolisation method to <ph id="1">`Graduated`</ph>.</source>
+<target xml:lang="fr">Set the symbolisation method to <ph id="1">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Under <bpt id="1">__</bpt>Value<ept id="1">__</ept>, select <ph id="2">`total_pop`</ph>.</source>
+<target xml:lang="fr">Under <bpt id="1">__</bpt>Value<ept id="1">__</ept>, select <ph id="2">`total_pop`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Change the <bpt id="1">__</bpt>Method<ept id="1">__</ept> from <ph id="2">`Colour`</ph> to <ph id="3">`Size`</ph>.</source>
+<target xml:lang="fr">Change the <bpt id="1">__</bpt>Method<ept id="1">__</ept> from <ph id="2">`Colour`</ph> to <ph id="3">`Size`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Classify`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: Change the Colour and Transparency of the Circles.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: Change the Colour and Transparency of the Circles.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_m4_graduated_symbols_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_m4_graduated_symbols_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_m4_graduated_symbols_example</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_m4_graduated_symbols_example</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">A map of Nigeria displaying the same data. Once using graduated colours (choropleth) and graduated symbols (proportional circles).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A map of Nigeria displaying the same data. Once using graduated colours (choropleth) and graduated symbols (proportional circles).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: How to create a proportional circles map</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: How to create a proportional circles map</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Using different styles in a single layer <bpt id="1">&lt;a id="using-different-styles-in-a-single-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using different styles in a single layer <bpt id="1">&lt;a id="using-different-styles-in-a-single-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">By categorizing or classifying data in a single layer, we are able to assign different styles to each classification.<ph id="1">  </ph>
+We can use symbology to <bpt id="2">__</bpt>show the difference between features<ept id="2">__</ept> in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:</source>
+<target xml:lang="fr">By categorizing or classifying data in a single layer, we are able to assign different styles to each classification.<ph id="1">  </ph>
+We can use symbology to <bpt id="2">__</bpt>show the difference between features<ept id="2">__</ept> in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Setting different point symbols for different features <bpt id="1">&lt;a id="setting-different-point-symbols-for-different-features"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Setting different point symbols for different features <bpt id="1">&lt;a id="setting-different-point-symbols-for-different-features"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Download the <bpt id="1">[</bpt>ACLED security incidents geopackage<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip)</ept> and load it into your QGIS-project. It is a point layer with each point indicating a distinct security incident.</source>
+<target xml:lang="fr">Download the <bpt id="1">[</bpt>ACLED security incidents geopackage<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/follow_along/NGA_ACLED_security_incidents.zip)</ept> and load it into your QGIS-project. It is a point layer with each point indicating a distinct security incident.</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Symbology tab`</ph> for that layer and choose <ph id="2">`Categorized`</ph> instead of Single Symbol.</source>
+<target xml:lang="fr">Open the <ph id="1">`Symbology tab`</ph> for that layer and choose <ph id="2">`Categorized`</ph> instead of Single Symbol.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Categorized symbology is used when you have <bpt id="2">*</bpt><bpt id="3">**</bpt>discrete<ept id="3">**</ept><ept id="2">*</ept> variables.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Categorized symbology is used when you have <bpt id="2">*</bpt><bpt id="3">**</bpt>discrete<ept id="3">**</ept><ept id="2">*</ept> variables.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_categorized_layer_symbology_1</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_categorized_layer_symbology_1</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Change the symbology type to "categorised" and choose the <ph id="1">`value`</ph> (attribute) you wish to display.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Change the symbology type to "categorised" and choose the <ph id="1">`value`</ph> (attribute) you wish to display.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Now we need to <bpt id="1">__</bpt>choose which attributes we want to display through the symbology<ept id="1">__</ept>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by <ph id="2">`event_type`</ph>.</source>
+<target xml:lang="fr">Now we need to <bpt id="1">__</bpt>choose which attributes we want to display through the symbology<ept id="1">__</ept>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by <ph id="2">`event_type`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Classify`</ph> to <bpt id="2">__</bpt>list all the unique values contained<ept id="2">__</ept> in the <ph id="3">`event_type`</ph> field (i.e. all the possible types of security incidents recorded in our table).</source>
+<target xml:lang="fr">Click on <ph id="1">`Classify`</ph> to <bpt id="2">__</bpt>list all the unique values contained<ept id="2">__</ept> in the <ph id="3">`event_type`</ph> field (i.e. all the possible types of security incidents recorded in our table).</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Now we can <bpt id="1">__</bpt>change the style of each single value<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Now we can <bpt id="1">__</bpt>change the style of each single value<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Double click on the value <ph id="1">`Explosions`</ph>.</source>
+<target xml:lang="fr">Double click on the value <ph id="1">`Explosions`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">At the bottom of the <bpt id="1">__</bpt>Symbol selector<ept id="1">__</ept> window, choose a symbol to make Explosion points stand out.</source>
+<target xml:lang="fr">At the bottom of the <bpt id="1">__</bpt>Symbol selector<ept id="1">__</ept> window, choose a symbol to make Explosion points stand out.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`OK`</ph>, then Apply to preview what the layer will look like.</source>
+<target xml:lang="fr">Click on <ph id="1">`OK`</ph>, then Apply to preview what the layer will look like.</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph> again.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph> again.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_categorized_layer_symbology_2</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_categorized_layer_symbology_2</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">By double clicking on the <bpt id="1">__</bpt>unique values<ept id="1">__</ept> in the classified list, you can change the symbol for each value.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">By double clicking on the <bpt id="1">__</bpt>unique values<ept id="1">__</ept> in the classified list, you can change the symbol for each value.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</source>
+<target xml:lang="fr">Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png</ph></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_exercise_map_design_example_Nigeria</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_exercise_map_design_example_Nigeria</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Regions affected by explosions in Nigeria.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Regions affected by explosions in Nigeria.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Set up different symbols in a single layer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Set up different symbols in a single layer</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify sd-text-black sd-border-0</ph>
+<bpt id="3">__</bpt>Simple Markers, SVG-Symbols and Raster images<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+On top of simple markers, QGIS lets you also use SVG-symbols and raster images as symbols for your vector data.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify sd-text-black sd-border-0</ph>
+<bpt id="3">__</bpt>Simple Markers, SVG-Symbols and Raster images<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+On top of simple markers, QGIS lets you also use SVG-symbols and raster images as symbols for your vector data.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Simple markers<ept id="1">__</ept> are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Simple markers<ept id="1">__</ept> are simple shapes such as rectangles, circles, or crosses that can be adjusted in the symbolization layer (colour, size, outline, etc.). Most of your styling in QGIS will be done with these markers.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>SVG-symbols<ept id="1">__</ept> are <bpt id="2">*</bpt>scalable vector graphic<ept id="2">*</ept> symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>SVG-symbols<ept id="1">__</ept> are <bpt id="2">*</bpt>scalable vector graphic<ept id="2">*</ept> symbols. As vector files, they can be scaled to any size while keeping the same resolution. In most cases, if you want to use a more complex symbol (e.g. hospital, school, train station), SVG-symbols are the best option as they let you adjust the symbol (colours, outline, size, etc.).</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">If you select <bpt id="1">__</bpt>raster images<ept id="1">__</ept>, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.</source>
+<target xml:lang="fr">If you select <bpt id="1">__</bpt>raster images<ept id="1">__</ept>, the resolution of the symbol is limited by the amount of pixels in the image. It is not advisable to use high resolution images as symbols on your map because it may overload your PC.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Using SVG-Symbols and IFRC symbols<ept id="1">__</ept> <bpt id="2">&lt;a id="using-svg-symbols-and-ifrc-symbols"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Using SVG-Symbols and IFRC symbols<ept id="1">__</ept> <bpt id="2">&lt;a id="using-svg-symbols-and-ifrc-symbols"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Using SVG-Symbols <bpt id="1">&lt;a id="using-svg-symbols"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using SVG-Symbols <bpt id="1">&lt;a id="using-svg-symbols"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data.
+To use SVG-symbols:</source>
+<target xml:lang="fr">In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data.
+To use SVG-symbols:</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Open the styling panel and open the <ph id="1">`single marker`</ph> options.</source>
+<target xml:lang="fr">Open the styling panel and open the <ph id="1">`single marker`</ph> options.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>"SVG Marker"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>"SVG Marker"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.</source>
+<target xml:lang="fr">Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.</source>
+<target xml:lang="fr">There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Adding an external SVG-library <bpt id="1">&lt;a id="adding-an-external-svg-library"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding an external SVG-library <bpt id="1">&lt;a id="adding-an-external-svg-library"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of icons.
+If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</source>
+<target xml:lang="fr">QGIS also offers the option to add your own SVG-libraries, for example if your organisation uses a specific set of icons.
+If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style Manager`</ph>.</source>
+<target xml:lang="fr">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style Manager`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Import / Export`</ph> and select <ph id="2">`Import items`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Import / Export`</ph> and select <ph id="2">`Import items`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).</source>
+<target xml:lang="fr">Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Now you can select which symbols you wish to import. In most cases, you can select all symbols.</source>
+<target xml:lang="fr">Now you can select which symbols you wish to import. In most cases, you can select all symbols.</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Import`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Import`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">The new SVG-symbols are in your SVG library.</source>
+<target xml:lang="fr">The new SVG-symbols are in your SVG library.</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Using IFRC-Symbols <bpt id="1">&lt;a id="using-ifrc-symbols"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using IFRC-Symbols <bpt id="1">&lt;a id="using-ifrc-symbols"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>IFRC- and UN-Symbols repositories
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>IFRC- and UN-Symbols repositories
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">The IFRC provides icons and symbols that can be used in your maps. You can find them under <bpt id="1">[</bpt>this link<ept id="1">](https://go-user-library.ifrc.org/brand-design/iconography)</ept>.</source>
+<target xml:lang="fr">The IFRC provides icons and symbols that can be used in your maps. You can find them under <bpt id="1">[</bpt>this link<ept id="1">](https://go-user-library.ifrc.org/brand-design/iconography)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">There is also a library with humanitarian icons by the <bpt id="1">[</bpt>United Nations Office for the Coordination of Humanitarian affairs<ept id="1">](https://www.unocha.org)</ept> which can be found <bpt id="2">[</bpt>here<ept id="2">](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file)</ept>. The files are available in different formats you can use in QGIS.</source>
+<target xml:lang="fr">There is also a library with humanitarian icons by the <bpt id="1">[</bpt>United Nations Office for the Coordination of Humanitarian affairs<ept id="1">](https://www.unocha.org)</ept> which can be found <bpt id="2">[</bpt>here<ept id="2">](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file)</ept>. The files are available in different formats you can use in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name and describe the four main symbolisation methods used for vector layers.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name and describe the four main symbolisation methods used for vector layers.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Single Symbol<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Single Symbol<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">All features use the same symbol (same colour, size, stroke) regardless of their attributes.</source>
+<target xml:lang="fr">All features use the same symbol (same colour, size, stroke) regardless of their attributes.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Categorised (Unique Values/Categorical)<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Categorised (Unique Values/Categorical)<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Features are styled by discrete categories (attribute values). Each unique value (or class) gets its own symbol (hue, shape, etc.).</source>
+<target xml:lang="fr">Features are styled by discrete categories (attribute values). Each unique value (or class) gets its own symbol (hue, shape, etc.).</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Graduated Symbols<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Graduated Symbols<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Numeric (continuous) attributes are divided into classes (value ranges), and each class is given a symbol (often with a colour ramp). This is used to show variation in quantitative data.</source>
+<target xml:lang="fr">Numeric (continuous) attributes are divided into classes (value ranges), and each class is given a symbol (often with a colour ramp). This is used to show variation in quantitative data.</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Rule-based<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Rule-based<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Users define one or more rules using the expression builder that determine which features get which symbol. Rules can combine attribute and spatial logic, allowing complex conditional styling.</source>
+<target xml:lang="fr">Users define one or more rules using the expression builder that determine which features get which symbol. Rules can combine attribute and spatial logic, allowing complex conditional styling.</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Where is a layer's symbology saved?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Where is a layer's symbology saved?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">The symbology of a layer is not saved in the dataset. If you share only the dataset with a colleague, the layer will not appear as on your computer.</source>
+<target xml:lang="fr">The symbology of a layer is not saved in the dataset. If you share only the dataset with a colleague, the layer will not appear as on your computer.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">The symbology is stored in the <bpt id="1">__</bpt>QGIS project file<ept id="1">__</ept> (<ph id="2">`.qgz`</ph> or <ph id="3">`.qgs`</ph>).</source>
+<target xml:lang="fr">The symbology is stored in the <bpt id="1">__</bpt>QGIS project file<ept id="1">__</ept> (<ph id="2">`.qgz`</ph> or <ph id="3">`.qgs`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">It is also possible to <bpt id="1">__</bpt>export<ept id="1">__</ept> or <bpt id="2">__</bpt>save<ept id="2">__</ept> the style externally (as a <ph id="3">`.qml`</ph> file) so that it can be reused or shared.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr">It is also possible to <bpt id="1">__</bpt>export<ept id="1">__</ept> or <bpt id="2">__</bpt>save<ept id="2">__</ept> the style externally (as a <ph id="3">`.qml`</ph> file) so that it can be reused or shared.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When styling polygon layers (e.g. administrative boundaries), what is the purpose of using transparent fill and visible outlines?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When styling polygon layers (e.g. administrative boundaries), what is the purpose of using transparent fill and visible outlines?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Context:<ept id="1">__</ept> The transparent fill allows underlying layers (e.g. basemap, imagery, labels) to show through giving spatial context.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Context:<ept id="1">__</ept> The transparent fill allows underlying layers (e.g. basemap, imagery, labels) to show through giving spatial context.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Boundary emphasis:<ept id="1">__</ept> The visible outlines (strokes) clearly indicate the polygon borders, even if the fill is subtle.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Boundary emphasis:<ept id="1">__</ept> The visible outlines (strokes) clearly indicate the polygon borders, even if the fill is subtle.</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Hierarchy and legibility:<ept id="1">__</ept> If many overlapping polygons or adjacents regions are shown, transparent fills prevent areas from blocking each other, while outlines keep boundaries distinct.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Hierarchy and legibility:<ept id="1">__</ept> If many overlapping polygons or adjacents regions are shown, transparent fills prevent areas from blocking each other, while outlines keep boundaries distinct.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Explain how to create a choropleth map in QGIS using graduated colours. What do you need to choose (e.g. attribute, number of classes, colour ramp)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Explain how to create a choropleth map in QGIS using graduated colours. What do you need to choose (e.g. attribute, number of classes, colour ramp)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-Click<ept id="1">&lt;/kbd></ept> on the layer and select <ph id="2">`Properties`</ph> and navigate to the <ph id="3">`Symbology`</ph>-tab.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-Click<ept id="1">&lt;/kbd></ept> on the layer and select <ph id="2">`Properties`</ph> and navigate to the <ph id="3">`Symbology`</ph>-tab.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Change the symbolisation method from <ph id="1">`Single-Symbol`</ph> to <ph id="2">`Graduated`</ph>.</source>
+<target xml:lang="fr">Change the symbolisation method from <ph id="1">`Single-Symbol`</ph> to <ph id="2">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Next to <ph id="1">`Value`</ph>, choose the numeric attribute you want to visualise in the choropleth map (e.g. population density, percentage, precipitation, normalised diseased cases, etc.). The value of this attribute will determine the colouring.</source>
+<target xml:lang="fr">Next to <ph id="1">`Value`</ph>, choose the numeric attribute you want to visualise in the choropleth map (e.g. population density, percentage, precipitation, normalised diseased cases, etc.). The value of this attribute will determine the colouring.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Choose a classification method and set the number of classe (e.g. equal interval, quantile, natural breaks, etc.).</source>
+<target xml:lang="fr">Choose a classification method and set the number of classe (e.g. equal interval, quantile, natural breaks, etc.).</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Pick a colour ramp suitable for the information you want to visualise (light → dark).</source>
+<target xml:lang="fr">Pick a colour ramp suitable for the information you want to visualise (light → dark).</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph> and <ph id="2">`Apply`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph> and <ph id="2">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Take a look at the map canvas and make necessary adjustments (e.g. remove the polygon outlines).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Take a look at the map canvas and make necessary adjustments (e.g. remove the polygon outlines).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are SVG symbols, and what advantages do they offer over raster images for point symbology?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are SVG symbols, and what advantages do they offer over raster images for point symbology?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>SVG (Scalable Vector Graphics)<ept id="1">__</ept> symbols are vector‑based icons or graphics that can be used for symbolising points in QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>SVG (Scalable Vector Graphics)<ept id="1">__</ept> symbols are vector‑based icons or graphics that can be used for symbolising points in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Advantages:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Advantages:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Scalability without loss:<ept id="1">__</ept> SVGs scale smoothly (zoom in or out) without pixelation or blurring, whereas raster images degrade when resized.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Scalability without loss:<ept id="1">__</ept> SVGs scale smoothly (zoom in or out) without pixelation or blurring, whereas raster images degrade when resized.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Editable/styleable:<ept id="1">__</ept> You can change colour, stroke, fill, size dynamically because the symbol is vector-based.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Editable/styleable:<ept id="1">__</ept> You can change colour, stroke, fill, size dynamically because the symbol is vector-based.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Sharpness on print:<ept id="1">__</ept> They maintain crisp edges at any resolution, making them better for cartographic output.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Sharpness on print:<ept id="1">__</ept> They maintain crisp edges at any resolution, making them better for cartographic output.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en">Further Resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Further Resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Cartography Guide<ept id="1">](https://www.axismaps.com/guide)</ept> by <bpt id="2">[</bpt>Axis Maps<ept id="2">](axismaps.com)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Cartography Guide<ept id="1">](https://www.axismaps.com/guide)</ept> by <bpt id="2">[</bpt>Axis Maps<ept id="2">](axismaps.com)</ept></target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en">Tutorial on <bpt id="1">[</bpt>how to import the SIMS Colour Palette into QGIS<ept id="1">](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/)</ept></source>
+<target xml:lang="fr">Tutorial on <bpt id="1">[</bpt>how to import the SIMS Colour Palette into QGIS<ept id="1">](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/)</ept></target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">Tutorial on <bpt id="1">[</bpt>how to create a shaded relief map in QGIS<ept id="1">](https://learn-sims.org/geospatial/creating-a-shaded-relief-map-in-qgis/)</ept></source>
+<target xml:lang="fr">Tutorial on <bpt id="1">[</bpt>how to create a shaded relief map in QGIS<ept id="1">](https://learn-sims.org/geospatial/creating-a-shaded-relief-map-in-qgis/)</ept></target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Creating a 3W (Who, What, Where) Infographic<ept id="1">](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Creating a 3W (Who, What, Where) Infographic<ept id="1">](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)</ept></target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Official IFRC color palette<ept id="1">](https://learn-sims.org/style-guidance/color-palettes/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Official IFRC color palette<ept id="1">](https://learn-sims.org/style-guidance/color-palettes/)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

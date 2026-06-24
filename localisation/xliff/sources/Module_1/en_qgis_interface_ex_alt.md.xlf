@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_1/en_qgis_interface_ex_alt.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">QGIS Exercise 2: Understanding the user interface and getting to know the layer concept <bpt id="1">&lt;a id="qgis-exercise-2-understanding-the-user-interface-and-getting-to-know-the-layer-concept"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Exercise 2: Understanding the user interface and getting to know the layer concept <bpt id="1">&lt;a id="qgis-exercise-2-understanding-the-user-interface-and-getting-to-know-the-layer-concept"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%</ph> CAN THIS FILE BE DELETED?</source>
+<target xml:lang="fr"><ph id="1">%%</ph> CAN THIS FILE BE DELETED?</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Aim of the exercise: <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aim of the exercise: <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">This exercise expands on the previous exercise. This time, we will also import data into a QGIS-project. We will learn how to display vector data in QGIS, view the attribute table, as well as learn how to reproject layers. This exercise touches upon content from module 2 and is aimed to refresh your knowledge about QGIS if you have already created your first projects.</source>
+<target xml:lang="fr">This exercise expands on the previous exercise. This time, we will also import data into a QGIS-project. We will learn how to display vector data in QGIS, view the attribute table, as well as learn how to reproject layers. This exercise touches upon content from module 2 and is aimed to refresh your knowledge about QGIS if you have already created your first projects.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Wiki: <bpt id="1">&lt;a id="wiki"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Wiki: <bpt id="1">&lt;a id="wiki"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki)</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer concept and data import<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer concept and data import<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Data: <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data: <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local folder and save the above data there. (.zip folders must be unzipped beforehand.)</source>
+<target xml:lang="fr">Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local folder and save the above data there. (.zip folders must be unzipped beforehand.)</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Sierra Leone Border (Polygon/Lines) GeoPackage</source>
+<target xml:lang="fr">Sierra Leone Border (Polygon/Lines) GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Sierra Leone national borders (Polygon/lines)</source>
+<target xml:lang="fr">Sierra Leone national borders (Polygon/lines)</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Sierra Leone provinces (Lines)</source>
+<target xml:lang="fr">Sierra Leone provinces (Lines)</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Sierra Leone health (Points)</source>
+<target xml:lang="fr">Sierra Leone health (Points)</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Sierra Leone airports (CSV)</source>
+<target xml:lang="fr">Sierra Leone airports (CSV)</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Tasks: <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks: <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Open QGIS and familiarise yourself with the user interface.</source>
+<target xml:lang="fr">Open QGIS and familiarise yourself with the user interface.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Open the above files in QGIS. Load the vector layers into your program. Load the CSV file via <ph id="1">`Add delimited text`</ph>.</source>
+<target xml:lang="fr">Open the above files in QGIS. Load the vector layers into your program. Load the CSV file via <ph id="1">`Add delimited text`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt>QGIS_User_Interface<ept id="1">](/fig/en_airports_text_layer.png)</ept>
+Airport Text Layer</source>
+<target xml:lang="fr"><bpt id="1">![</bpt>QGIS_User_Interface<ept id="1">](/fig/en_airports_text_layer.png)</ept>
+Airport Text Layer</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Interact with the map and explore the data sets. Use the zoom tool and move the map. Notice the status bar at the bottom of the screen and how it changes.</source>
+<target xml:lang="fr">Interact with the map and explore the data sets. Use the zoom tool and move the map. Notice the status bar at the bottom of the screen and how it changes.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Familiarise yourself with the layer window (Layer List). Alternately show and hide different layers and move the layers in the hierarchy. Rename the data layer in a meaningful way. Note that the latter has no effect on the data sources (file names, storage location).</source>
+<target xml:lang="fr">Familiarise yourself with the layer window (Layer List). Alternately show and hide different layers and move the layers in the hierarchy. Rename the data layer in a meaningful way. Note that the latter has no effect on the data sources (file names, storage location).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">View the attribute data of the layers. For this purpose look at the attribute table.</source>
+<target xml:lang="fr">View the attribute data of the layers. For this purpose look at the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Changes the projection in the map view to WGS 84 / Pseudo-Mercator- EPSG:3857. Note that this does not change the projection (the coordinates) of the files, but only affects the projection of the map view.  Check this in the properties of the point layer. Which projection is indicated there? Hint: You can use the search-bar on the top.</source>
+<target xml:lang="fr">Changes the projection in the map view to WGS 84 / Pseudo-Mercator- EPSG:3857. Note that this does not change the projection (the coordinates) of the files, but only affects the projection of the map view.  Check this in the properties of the point layer. Which projection is indicated there? Hint: You can use the search-bar on the top.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Now save the health layer in the projection WGS 84 / Pseudo-Mercator- EPSG:3857. This changes the projection of the file. Check this in the properties of the newly created layer.</source>
+<target xml:lang="fr">Now save the health layer in the projection WGS 84 / Pseudo-Mercator- EPSG:3857. This changes the projection of the file. Check this in the properties of the newly created layer.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Save your project.</source>
+<target xml:lang="fr">Save your project.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Optional: You can add the OpenStreetMap base map via the browser window => XYZ Tiles. Note that online base maps can lead to problems with the projection of the different layers. Make sure to remove the base map before saving the project.</source>
+<target xml:lang="fr">Optional: You can add the OpenStreetMap base map via the browser window => XYZ Tiles. Note that online base maps can lead to problems with the projection of the different layers. Make sure to remove the base map before saving the project.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Result: <bpt id="1">&lt;a id="result"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Result: <bpt id="1">&lt;a id="result"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>This (or similar) is what it looks like in the end:
+<bpt id="2">![</bpt>QGIS_User_Interface<ept id="2">](/fig/en_eExercise_1_result.png)</ept>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>This (or similar) is what it looks like in the end:
+<bpt id="2">![</bpt>QGIS_User_Interface<ept id="2">](/fig/en_eExercise_1_result.png)</ept>
+<ph id="3">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

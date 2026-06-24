@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_ex4.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 4: Security Peshawar <bpt id="1">&lt;a id="exercise-4-security-peshawar"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 4: Security Peshawar <bpt id="1">&lt;a id="exercise-4-security-peshawar"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+In this exercise, we will create a security map for a humanitarian team. In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+In this exercise, we will create a security map for a humanitarian team. In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In order to ensure the safety of our team, we will create a map displaying security related information such as bomb threats. Additionally, we will take a look at data on armed conflicts and create an overview map showing the conflicts per thesil (subdistrict/ADM3).</source>
+<target xml:lang="fr">In order to ensure the safety of our team, we will create a map displaying security related information such as bomb threats. Additionally, we will take a look at data on armed conflicts and create an overview map showing the conflicts per thesil (subdistrict/ADM3).</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In order to achieve this, we will use more advanced geoprocessing tools such as buffers and intersection tools and join two datasets using attribute table joins.</source>
+<target xml:lang="fr">In order to achieve this, we will use more advanced geoprocessing tools such as buffers and intersection tools and join two datasets using attribute table joins.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The exercise is split into <bpt id="1">__</bpt>three tasks<ept id="1">__</ept>:</source>
+<target xml:lang="fr">The exercise is split into <bpt id="1">__</bpt>three tasks<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">In the first task, we will digitise security-related information as point data and create buffer zones to indicate high-risk zones.</source>
+<target xml:lang="fr">In the first task, we will digitise security-related information as point data and create buffer zones to indicate high-risk zones.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">In the second task, we will load a csv-file with data on conflict events that happened in Pakistan. We will use this dataset to find out the number of conflict events per thesil (subdistrict).</source>
+<target xml:lang="fr">In the second task, we will load a csv-file with data on conflict events that happened in Pakistan. We will use this dataset to find out the number of conflict events per thesil (subdistrict).</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In the third task, we will load another csv-file with data on the multi-poverty-index (MPI) per district (ADM2). The Multidimensional Poverty Index (MPI) measures poverty by looking at more than just income. It includes things like education, health, and living standards to understand how people are poor in different ways. The csv-file does not contain explicit spatial information. We will add spatial information by joining it to a polygon layer containing the district boundaries.</source>
+<target xml:lang="fr">In the third task, we will load another csv-file with data on the multi-poverty-index (MPI) per district (ADM2). The Multidimensional Poverty Index (MPI) measures poverty by looking at more than just income. It includes things like education, health, and living standards to understand how people are poor in different ways. The csv-file does not contain explicit spatial information. We will add spatial information by joining it to a polygon layer containing the district boundaries.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Larkana Flood Response Exercise Track:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Larkana Flood Response Exercise Track:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">This exercise is part of the <bpt id="1">[</bpt>Larkana Flood Response Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)</ept>.</source>
+<target xml:lang="fr">This exercise is part of the <bpt id="1">[</bpt>Larkana Flood Response Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">However, the exercise <bpt id="1">__</bpt>can<ept id="1">__</ept> be done without completing the previous exercises.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">However, the exercise <bpt id="1">__</bpt>can<ept id="1">__</ept> be done without completing the previous exercises.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Working with multiple layers</source>
+<target xml:lang="fr">Working with multiple layers</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Conduct spatial queries</source>
+<target xml:lang="fr">Conduct spatial queries</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Creation of geodata</source>
+<target xml:lang="fr">Creation of geodata</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</source>
+<target xml:lang="fr">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitisation- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitisation- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip</ph>
+<bpt id="3">__</bpt>Download all datasets <bpt id="4">[</bpt>here<ept id="4">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip)</ept> and save the folder on your computer and unzip the file.<ept id="3">__</ept>
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip</ph>
+<bpt id="3">__</bpt>Download all datasets <bpt id="4">[</bpt>here<ept id="4">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip)</ept> and save the folder on your computer and unzip the file.<ept id="3">__</ept>
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Dataset name</source>
+<target xml:lang="fr">Dataset name</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Original title</source>
+<target xml:lang="fr">Original title</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Publisher</source>
+<target xml:lang="fr">Publisher</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Download from</source>
+<target xml:lang="fr">Download from</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">2024-01-01-2024-09-23-Pakistan.xlsx</source>
+<target xml:lang="fr">2024-01-01-2024-09-23-Pakistan.xlsx</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Conflict data for Pakistan 01/2024-09/2024</source>
+<target xml:lang="fr">Conflict data for Pakistan 01/2024-09/2024</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">ACLED</source>
+<target xml:lang="fr">ACLED</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">PAK_KP_admin_3.gpkg</source>
+<target xml:lang="fr">PAK_KP_admin_3.gpkg</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Administrative Boundaries level 3 of KP</source>
+<target xml:lang="fr">Administrative Boundaries level 3 of KP</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">UN OCHA</source>
+<target xml:lang="fr">UN OCHA</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Pak_adm2_Khyber Pakhtunkhwa.gpkg</source>
+<target xml:lang="fr">Pak_adm2_Khyber Pakhtunkhwa.gpkg</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Administrative Boundaries level 1 of KP</source>
+<target xml:lang="fr">Administrative Boundaries level 1 of KP</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">UN OCHA</source>
+<target xml:lang="fr">UN OCHA</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">20240605_PAK_MPI.xlsx</source>
+<target xml:lang="fr">20240605_PAK_MPI.xlsx</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Pakistan Multi Poverty Index (MPI)</source>
+<target xml:lang="fr">Pakistan Multi Poverty Index (MPI)</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Pakistan Bureau of Statistics</source>
+<target xml:lang="fr">Pakistan Bureau of Statistics</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Pakistan Bureau of Statistics</source>
+<target xml:lang="fr">Pakistan Bureau of Statistics</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">AOI_Peshawar.gpkg</source>
+<target xml:lang="fr">AOI_Peshawar.gpkg</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Area of Interest (AOI) around Peshawar</source>
+<target xml:lang="fr">Area of Interest (AOI) around Peshawar</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Preparation <bpt id="1">&lt;a id="preparation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Preparation <bpt id="1">&lt;a id="preparation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Create a new QGIS project and save it into the exercise folder.</source>
+<target xml:lang="fr">Create a new QGIS project and save it into the exercise folder.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Task 1: Geolocate security-related information of the last days <bpt id="1">&lt;a id="task-1-geolocate-security-related-information-of-the-last-days"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Geolocate security-related information of the last days <bpt id="1">&lt;a id="task-1-geolocate-security-related-information-of-the-last-days"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card} </ph>Context:
+In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
+The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mission in the affected area.
+We have received security-related information from various sources. Our task is to digitise this information into spatial data that can be represented on a map.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card} </ph>Context:
+In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
+The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mission in the affected area.
+We have received security-related information from various sources. Our task is to digitise this information into spatial data that can be represented on a map.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">For this exercise, we will use the QuickMapServices plugin to locate places precisely.</source>
+<target xml:lang="fr">For this exercise, we will use the QuickMapServices plugin to locate places precisely.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Follow the steps below to install it.</source>
+<target xml:lang="fr">Follow the steps below to install it.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">In the menu bar, click on <ph id="1">`Plugins`</ph> → <ph id="2">`Manage and Install Plugins…`</ph></source>
+<target xml:lang="fr">In the menu bar, click on <ph id="1">`Plugins`</ph> → <ph id="2">`Manage and Install Plugins…`</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`All`</ph>, search for “QuickMapServices” and click <ph id="2">`Install Plugin`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`All`</ph>, search for “QuickMapServices” and click <ph id="2">`Install Plugin`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">For general plugin management in QGIS, see the <bpt id="1">[</bpt>QGIS plugin installation guide<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)</ept>.</source>
+<target xml:lang="fr">For general plugin management in QGIS, see the <bpt id="1">[</bpt>QGIS plugin installation guide<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">After installing the plugin, we can add basemaps:</source>
+<target xml:lang="fr">After installing the plugin, we can add basemaps:</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">In the menu bar, navigate to <ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph> → <ph id="3">`ESRI`</ph> → <ph id="4">`ESRI Satellite`</ph>.<ph id="5">  </ph>
+   This adds a satellite imagery basemap to the Layers Panel.</source>
+<target xml:lang="fr">In the menu bar, navigate to <ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph> → <ph id="3">`ESRI`</ph> → <ph id="4">`ESRI Satellite`</ph>.<ph id="5">  </ph>
+   This adds a satellite imagery basemap to the Layers Panel.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Add a roads layer to improve orientation:<ph id="1">  </ph>
+<ph id="2">`Web`</ph> → <ph id="3">`QuickMapServices`</ph> → <ph id="4">`Google`</ph> → <ph id="5">`Google Road`</ph>.</source>
+<target xml:lang="fr">Add a roads layer to improve orientation:<ph id="1">  </ph>
+<ph id="2">`Web`</ph> → <ph id="3">`QuickMapServices`</ph> → <ph id="4">`Google`</ph> → <ph id="5">`Google Road`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">[</bpt>Layers Panel<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept>, make sure the <ph id="2">`Google Road`</ph> layer is above the satellite imagery.</source>
+<target xml:lang="fr">In the <bpt id="1">[</bpt>Layers Panel<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept>, make sure the <ph id="2">`Google Road`</ph> layer is above the satellite imagery.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">For easier navigation, make the satellite imagery transparent:</source>
+<target xml:lang="fr">For easier navigation, make the satellite imagery transparent:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Open the layer’s <bpt id="1">[</bpt>Symbology tab<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept>.</source>
+<target xml:lang="fr">Open the layer’s <bpt id="1">[</bpt>Symbology tab<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Adjust the global opacity.</source>
+<target xml:lang="fr">Adjust the global opacity.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">We will need the "Lat Lon Tools" plugin to locate the coordinates we receive from the field.
+   Install the plugin by following the same steps as for QuickMapServices, but search for "Lat Lon Tools" instead.</source>
+<target xml:lang="fr">We will need the "Lat Lon Tools" plugin to locate the coordinates we receive from the field.
+   Install the plugin by following the same steps as for QuickMapServices, but search for "Lat Lon Tools" instead.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Great, now we have set up our QGIS-project and can start to digitise the known incidents and related areas of interest (as polygons).
+Below, you will find a table with the information and locations. Read through the table once and think about what kind of geometry type can represent the information.</source>
+<target xml:lang="fr">Great, now we have set up our QGIS-project and can start to digitise the known incidents and related areas of interest (as polygons).
+Below, you will find a table with the information and locations. Read through the table once and think about what kind of geometry type can represent the information.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Number</source>
+<target xml:lang="fr">Number</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">1</source>
+<target xml:lang="fr">1</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">A <bpt id="1">__</bpt>bomb threat<ept id="1">__</ept> including Improvised Explosive Devices (IED) on the road N45 right between <bpt id="2">__</bpt>Seri-Bahlol<ept id="2">__</ept> and Tableeghi Markaz Mardina near Jandy has been reported by local radio stations. Please mark the area between the communities along the road as no-go areas.</source>
+<target xml:lang="fr">A <bpt id="1">__</bpt>bomb threat<ept id="1">__</ept> including Improvised Explosive Devices (IED) on the road N45 right between <bpt id="2">__</bpt>Seri-Bahlol<ept id="2">__</ept> and Tableeghi Markaz Mardina near Jandy has been reported by local radio stations. Please mark the area between the communities along the road as no-go areas.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">2</source>
+<target xml:lang="fr">2</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">In a conversation with a PRCS driver, a local teacher shared that the vicinity of the <bpt id="1">__</bpt>Government Girls Primary School in Takkar<ept id="1">__</ept> is notorious for being a minefield. Specifically, the fields between the school and the <bpt id="2">__</bpt>Noormuhmmad hospital<ept id="2">__</ept> are known to be heavily mined. Due to this danger, local farmers are extremely reluctant to work on this particular piece of land.</source>
+<target xml:lang="fr">In a conversation with a PRCS driver, a local teacher shared that the vicinity of the <bpt id="1">__</bpt>Government Girls Primary School in Takkar<ept id="1">__</ept> is notorious for being a minefield. Specifically, the fields between the school and the <bpt id="2">__</bpt>Noormuhmmad hospital<ept id="2">__</ept> are known to be heavily mined. Due to this danger, local farmers are extremely reluctant to work on this particular piece of land.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">3</source>
+<target xml:lang="fr">3</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Following the recent events, it has been decided that the vicinity surrounding the <bpt id="1">__</bpt>Arbab Niaz Cricket Stadium Peshawar<ept id="1">__</ept> is now designated as a no-go area for all staff members. This area encompasses the region bordered by the <bpt id="2">__</bpt>N5<ept id="2">__</ept> road to the south, the <bpt id="3">__</bpt>Afghan Colony road<ept id="3">__</ept> to the north and east, and the <bpt id="4">__</bpt>Charsadda Road<ept id="4">__</ept> to the west.</source>
+<target xml:lang="fr">Following the recent events, it has been decided that the vicinity surrounding the <bpt id="1">__</bpt>Arbab Niaz Cricket Stadium Peshawar<ept id="1">__</ept> is now designated as a no-go area for all staff members. This area encompasses the region bordered by the <bpt id="2">__</bpt>N5<ept id="2">__</ept> road to the south, the <bpt id="3">__</bpt>Afghan Colony road<ept id="3">__</ept> to the north and east, and the <bpt id="4">__</bpt>Charsadda Road<ept id="4">__</ept> to the west.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">4</source>
+<target xml:lang="fr">4</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">GPS Coordinates: <bpt id="1">__</bpt>(33.99519949518549, 71.66217873936723)<ept id="1">__</ept>. A humanitarian worker was transporting medical supplies through the region when they were approached by a local farmer. The farmer mentioned that a nearby abandoned well, located at these coordinates, has become a gathering point for <bpt id="2">__</bpt>unexploded ordnance<ept id="2">__</ept>. Due to its proximity to a residential area, this site is now flagged as high-risk and needs immediate attention from demining teams.</source>
+<target xml:lang="fr">GPS Coordinates: <bpt id="1">__</bpt>(33.99519949518549, 71.66217873936723)<ept id="1">__</ept>. A humanitarian worker was transporting medical supplies through the region when they were approached by a local farmer. The farmer mentioned that a nearby abandoned well, located at these coordinates, has become a gathering point for <bpt id="2">__</bpt>unexploded ordnance<ept id="2">__</ept>. Due to its proximity to a residential area, this site is now flagged as high-risk and needs immediate attention from demining teams.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">5</source>
+<target xml:lang="fr">5</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">GPS Coordinagtes: <bpt id="1">__</bpt>(34.02878398623702, 71.43081737211224)<ept id="1">__</ept>. A health unit here has recently been vacated after a bomb threat was called in. Police and bomb squads searched the premises but didn’t find any explosives. However, local business owners reported unusual activity around the building in the weeks leading up to the threat. This location is now under surveillance. The area between the health unit and the river, as well as the parks and playground behind it, need to be marked as a temporary no-go zone.</source>
+<target xml:lang="fr">GPS Coordinagtes: <bpt id="1">__</bpt>(34.02878398623702, 71.43081737211224)<ept id="1">__</ept>. A health unit here has recently been vacated after a bomb threat was called in. Police and bomb squads searched the premises but didn’t find any explosives. However, local business owners reported unusual activity around the building in the weeks leading up to the threat. This location is now under surveillance. The area between the health unit and the river, as well as the parks and playground behind it, need to be marked as a temporary no-go zone.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">6</source>
+<target xml:lang="fr">6</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Qissa Khwani Bazaar, Peshawar<ept id="1">__</ept>: A popular historical market at this address has become a focal point for local community gatherings, but recent intelligence reports suggest that the site could be at risk for political protests that have turned violent in the past. Authorities are now considering setting up temporary barriers to manage the flow of people, and it's crucial that this location is marked as a high-risk area for potential crowd control measures.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Qissa Khwani Bazaar, Peshawar<ept id="1">__</ept>: A popular historical market at this address has become a focal point for local community gatherings, but recent intelligence reports suggest that the site could be at risk for political protests that have turned violent in the past. Authorities are now considering setting up temporary barriers to manage the flow of people, and it's crucial that this location is marked as a high-risk area for potential crowd control measures.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">In order to digitise the information, we will need two new layers: A point layer and a polygon layer.
+In case the information states an exact area, create a new polygon layer and map it exactly.</source>
+<target xml:lang="fr">In order to digitise the information, we will need two new layers: A point layer and a polygon layer.
+In case the information states an exact area, create a new polygon layer and map it exactly.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Create a new point and a new polygon layer<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitissation.html#creating-new-datasets)</ept> to digitise point and polygon information.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Create a new point and a new polygon layer<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitissation.html#creating-new-datasets)</ept> to digitise point and polygon information.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+When creating the point and polygon layer use the CRS UTM 42 N <bpt id="2">__</bpt>EPSG: 32642<ept id="2">__</ept>. This Coordinate reference system is ideal for Pakistan and the <bpt id="3">__</bpt>units of measurement are in meters<ept id="3">__</ept>.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+When creating the point and polygon layer use the CRS UTM 42 N <bpt id="2">__</bpt>EPSG: 32642<ept id="2">__</ept>. This Coordinate reference system is ideal for Pakistan and the <bpt id="3">__</bpt>units of measurement are in meters<ept id="3">__</ept>.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Find the locations from the table and create new features using the <bpt id="1">[</bpt>digitisation toolbar<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation.html#digitisation-toolbars)</ept>. Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position.</source>
+<target xml:lang="fr">Find the locations from the table and create new features using the <bpt id="1">[</bpt>digitisation toolbar<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation.html#digitisation-toolbars)</ept>. Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Once you are done, make sure to save the edits to your layers by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/3.44_digitisation_save_edits.png)</ept> <ph id="2">`Save Layer Edits`</ph>-button.</source>
+<target xml:lang="fr">Once you are done, make sure to save the edits to your layers by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/3.44_digitisation_save_edits.png)</ept> <ph id="2">`Save Layer Edits`</ph>-button.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Great, we have successfully digitised the important security information. However, to make the information useful, we need to process the geodata.</source>
+<target xml:lang="fr">Great, we have successfully digitised the important security information. However, to make the information useful, we need to process the geodata.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmBuffer.png)</ept> buffer tool.</source>
+<target xml:lang="fr">The current SOP states that the sides of recent violent incidents are to be avoided in a 1 km radius. To reflect this on the map, we will use the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmBuffer.png)</ept> buffer tool.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">{admonition}</ph> Reminder
+<ph id="3">:class: seealso</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">{admonition}</ph> Reminder
+<ph id="3">:class: seealso</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">If you see a <bpt id="1">![</bpt><ept id="1">](/fig/3.44_caution_symbol.png)</ept>-symbol next to the <ph id="2">`Distance`</ph> parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in <bpt id="3">__</bpt>degrees, and not in meters<ept id="3">__</ept>. If that is the case, you need to <bpt id="4">[</bpt>reproject your layer<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)</ept> into a metric coordinate reference system.</source>
+<target xml:lang="fr">If you see a <bpt id="1">![</bpt><ept id="1">](/fig/3.44_caution_symbol.png)</ept>-symbol next to the <ph id="2">`Distance`</ph> parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in <bpt id="3">__</bpt>degrees, and not in meters<ept id="3">__</ept>. If that is the case, you need to <bpt id="4">[</bpt>reproject your layer<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)</ept> into a metric coordinate reference system.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Tip: EPSG:32642 is an ideal CRS for Pakistan.</source>
+<target xml:lang="fr">Tip: EPSG:32642 is an ideal CRS for Pakistan.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Create a buffer around the points<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)</ept> of violent incidents with a distance of <bpt id="2">__</bpt>2.000 meters<ept id="2">__</ept>.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Create a buffer around the points<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)</ept> of violent incidents with a distance of <bpt id="2">__</bpt>2.000 meters<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">We now have two polygon layers (the point buffers and the digitised areas). In order to visualise the No-Go Area in Peshwar, we can merge the polygons from both layers into a single layer with the tool <ph id="1">`Merge vector layer`</ph> and select both layers we want to merge as inputs.</source>
+<target xml:lang="fr">We now have two polygon layers (the point buffers and the digitised areas). In order to visualise the No-Go Area in Peshwar, we can merge the polygons from both layers into a single layer with the tool <ph id="1">`Merge vector layer`</ph> and select both layers we want to merge as inputs.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Load the layer <ph id="1">`AOI_Peshawar.gpkg`</ph> into your project.</source>
+<target xml:lang="fr">Load the layer <ph id="1">`AOI_Peshawar.gpkg`</ph> into your project.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">There are several clipping algorithms to be found in the toolbox. Make sure to choose the <bpt id="1">![</bpt><ept id="1">](3.44_clip_vector.png)</ept> clipping tool grouped under "Vector overlay".
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr">There are several clipping algorithms to be found in the toolbox. Make sure to choose the <bpt id="1">![</bpt><ept id="1">](3.44_clip_vector.png)</ept> clipping tool grouped under "Vector overlay".
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">We want to create a polygon indicating the safe area where the team is allowed to travel. To do this, we need to "invert" the polygon. We can achieve this by using the tool <ph id="1">`Symmetrical difference`</ph>:</source>
+<target xml:lang="fr">We want to create a polygon indicating the safe area where the team is allowed to travel. To do this, we need to "invert" the polygon. We can achieve this by using the tool <ph id="1">`Symmetrical difference`</ph>:</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, search for the tool "Symmetrical difference" and open it.</source>
+<target xml:lang="fr">In the processing toolbox, search for the tool "Symmetrical difference" and open it.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input Layer`</ph>, select your layer containing the security information.</source>
+<target xml:lang="fr">As <ph id="1">`Input Layer`</ph>, select your layer containing the security information.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Overlay Layer`</ph>, select the layer <ph id="2">`AOI_Peshawar.gpkg`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Overlay Layer`</ph>, select the layer <ph id="2">`AOI_Peshawar.gpkg`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Symmetrical Difference`</ph>, click on <ph id="2">`...`</ph> and navigate to the <ph id="3">`data/results/`</ph>-folder for this exercise and save the layer.</source>
+<target xml:lang="fr">Under <ph id="1">`Symmetrical Difference`</ph>, click on <ph id="2">`...`</ph> and navigate to the <ph id="3">`data/results/`</ph>-folder for this exercise and save the layer.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Let's do a quick symbolisation of the resulting layer so we can understand the information more easily:</source>
+<target xml:lang="fr">Let's do a quick symbolisation of the resulting layer so we can understand the information more easily:</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">[</bpt>styling panel<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept> for the safe area.</source>
+<target xml:lang="fr">Open the <bpt id="1">[</bpt>styling panel<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept> for the safe area.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Adjust the symbology<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons)</ept> for the layer so that the polygons are <bpt id="2">__</bpt>semi-transparent and green<ept id="2">__</ept>.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Adjust the symbology<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons)</ept> for the layer so that the polygons are <bpt id="2">__</bpt>semi-transparent and green<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Congratulations! We now have a map to help the team on the ground stay safe.</source>
+<target xml:lang="fr">Congratulations! We now have a map to help the team on the ground stay safe.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Task 2: Load Excel File containing conflict data into QGIS <bpt id="1">&lt;a id="task-2-load-excel-file-containing-conflict-data-into-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Load Excel File containing conflict data into QGIS <bpt id="1">&lt;a id="task-2-load-excel-file-containing-conflict-data-into-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Context:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Context:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">In this step, we want to get a broader overview of conflict events in Pakistan. The <bpt id="1">[</bpt>Armed Conflict Location and Event Data project (ACLED)<ept id="1">](https://acleddata.com/)</ept> distributes datasets on conflict events per country as excel spreadsheets. The datasets include dates, actors, <bpt id="2">__</bpt>locations<ept id="2">__</ept>, fatalities, and types of reported conflict events.</source>
+<target xml:lang="fr">In this step, we want to get a broader overview of conflict events in Pakistan. The <bpt id="1">[</bpt>Armed Conflict Location and Event Data project (ACLED)<ept id="1">](https://acleddata.com/)</ept> distributes datasets on conflict events per country as excel spreadsheets. The datasets include dates, actors, <bpt id="2">__</bpt>locations<ept id="2">__</ept>, fatalities, and types of reported conflict events.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">The dataset also includes geographic coordinates for each reported event. In QGIS, we can transform the datatable into a spatial dataset, such as a GeoPackage.
+Once we have the conflict events as point data, we can aggregate the data on subdistrict level and create a map showing the subdistricts (ADM3) most affected by conflict.</source>
+<target xml:lang="fr">The dataset also includes geographic coordinates for each reported event. In QGIS, we can transform the datatable into a spatial dataset, such as a GeoPackage.
+Once we have the conflict events as point data, we can aggregate the data on subdistrict level and create a map showing the subdistricts (ADM3) most affected by conflict.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Drag and Drop the ACLED conflict excel table <ph id="1">`2024-01-01-2024-09-23-Pakistan.xlsx`</ph> into your QGIS project.</source>
+<target xml:lang="fr">Drag and Drop the ACLED conflict excel table <ph id="1">`2024-01-01-2024-09-23-Pakistan.xlsx`</ph> into your QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, find the tool <ph id="1">`Create points layer from table`</ph> and open it.</source>
+<target xml:lang="fr">In the processing toolbox, find the tool <ph id="1">`Create points layer from table`</ph> and open it.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`X Field`</ph> select the column "longitude", and as <ph id="2">`Y Field`</ph> select "latitude".</source>
+<target xml:lang="fr">As <ph id="1">`X Field`</ph> select the column "longitude", and as <ph id="2">`Y Field`</ph> select "latitude".</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Points from Table`</ph> , click on the three dots, choose 'Save to GeoPackage' and navigate to you temp folder. Save the layer with the name "Pak_Conflict_points_2024".</source>
+<target xml:lang="fr">Under <ph id="1">`Points from Table`</ph> , click on the three dots, choose 'Save to GeoPackage' and navigate to you temp folder. Save the layer with the name "Pak_Conflict_points_2024".</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Create_ponts_from_table.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Create_ponts_from_table.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: SVG Marker</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: SVG Marker</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Create points from table.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Create points from table.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the <bpt id="1">[</bpt>attribute table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_attribute_table.html)</ept> and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:</source>
+<target xml:lang="fr">Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the <bpt id="1">[</bpt>attribute table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_attribute_table.html)</ept> and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Import the layer <ph id="1">`PAK_KP_admin_3.gpkg`</ph> from your <ph id="2">`data/input`</ph>-folder into your QGIS-project.</source>
+<target xml:lang="fr">Import the layer <ph id="1">`PAK_KP_admin_3.gpkg`</ph> from your <ph id="2">`data/input`</ph>-folder into your QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">We want to count the number of conflict events per thesil (subdistrict/ADM3). To do this:</source>
+<target xml:lang="fr">We want to count the number of conflict events per thesil (subdistrict/ADM3). To do this:</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, find the tool <ph id="1">`Count points in polygon`</ph> and open it.</source>
+<target xml:lang="fr">In the processing toolbox, find the tool <ph id="1">`Count points in polygon`</ph> and open it.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Polygons`</ph>, select <ph id="2">`PAK_KP_admin_3`</ph>-layer.</source>
+<target xml:lang="fr">As <ph id="1">`Polygons`</ph>, select <ph id="2">`PAK_KP_admin_3`</ph>-layer.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Point Input`</ph>, select the <ph id="2">`PAK_Conflict_points_2024`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Point Input`</ph>, select the <ph id="2">`PAK_Conflict_points_2024`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Count`</ph>, click on the <ph id="2">`...`</ph> and save the layer in your <ph id="3">`data/results/`</ph>-folder as "PAK_num_events_adm3".</source>
+<target xml:lang="fr">Under <ph id="1">`Count`</ph>, click on the <ph id="2">`...`</ph> and save the layer in your <ph id="3">`data/results/`</ph>-folder as "PAK_num_events_adm3".</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/count_point_polygon.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/count_point_polygon.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: SVG Marker</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: SVG Marker</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Count points in polygon
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Count points in polygon
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Open the attribute of your 'Pak_num_events_adm3' layer and scroll to the right. You will find a column with the name "NUMPOINTS". Here you find the number of events per thesil.</source>
+<target xml:lang="fr">Open the attribute of your 'Pak_num_events_adm3' layer and scroll to the right. You will find a column with the name "NUMPOINTS". Here you find the number of events per thesil.</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer and navigate to <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>. A new window will open. At the top, change Single Symbol to "Graduated".</source>
+<target xml:lang="fr">Right-click on the layer and navigate to <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>. A new window will open. At the top, change Single Symbol to "Graduated".</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Value`</ph> field choose "NUMPOINTS".</source>
+<target xml:lang="fr">In the <ph id="1">`Value`</ph> field choose "NUMPOINTS".</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Then below click on <ph id="1">`Classify`</ph>.</source>
+<target xml:lang="fr">Then below click on <ph id="1">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp. You can try out different coloring options.</source>
+<target xml:lang="fr">You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp. You can try out different coloring options.</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Once you are satisfied with the look, click <ph id="1">`Apply`</ph> and then <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Once you are satisfied with the look, click <ph id="1">`Apply`</ph> and then <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Your result could look similar to this:</source>
+<target xml:lang="fr">Your result could look similar to this:</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Number_events_graduated.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Number_events_graduated.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: SVG Marker</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: SVG Marker</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Number of conflict events per thesil.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Number of conflict events per thesil.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Task 3: MPI data <bpt id="1">&lt;a id="task-3-mpi-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: MPI data <bpt id="1">&lt;a id="task-3-mpi-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Context:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+In this step, we want to visualise the Multi-Poverty index on district level (ADM2).</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Context:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+In this step, we want to visualise the Multi-Poverty index on district level (ADM2).</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">This can help us understand the economic and social vulnerability geographically. The data with the MPI index is available in an excel spreadsheet. However, it does not contain columns with the specific geographic data (such as coordinates). We have to find a way to join the data table with a spatial dataset.</source>
+<target xml:lang="fr">This can help us understand the economic and social vulnerability geographically. The data with the MPI index is available in an excel spreadsheet. However, it does not contain columns with the specific geographic data (such as coordinates). We have to find a way to join the data table with a spatial dataset.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">First, let us open the spreadsheet with Microsoft Excel or a similar program (such as LibreOffice Calc):</source>
+<target xml:lang="fr">First, let us open the spreadsheet with Microsoft Excel or a similar program (such as LibreOffice Calc):</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Here, you can already investigate the information that is stored in the different columns. Can you identify columns that contain spatial information?</source>
+<target xml:lang="fr">Here, you can already investigate the information that is stored in the different columns. Can you identify columns that contain spatial information?</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">For now, let us export the file as a CSV UTF-8.</source>
+<target xml:lang="fr">For now, let us export the file as a CSV UTF-8.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`File`</ph> → <ph id="2">`Save As.`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`File`</ph> → <ph id="2">`Save As.`</ph></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Chosse an output folder, where it will be saved (the <ph id="1">`data`</ph> → <ph id="2">`temp`</ph> folder is recommended here) and give the file a meaningful name, for instance <bpt id="3">__</bpt>20240605_PAK_MPI<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Chosse an output folder, where it will be saved (the <ph id="1">`data`</ph> → <ph id="2">`temp`</ph> folder is recommended here) and give the file a meaningful name, for instance <bpt id="3">__</bpt>20240605_PAK_MPI<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Choose the option <bpt id="1">__</bpt>CSV UTF-8 (Comma delimited) (*.csv)<ept id="1">__</ept> and <ph id="2">`Save`</ph>.</source>
+<target xml:lang="fr">Choose the option <bpt id="1">__</bpt>CSV UTF-8 (Comma delimited) (*.csv)<ept id="1">__</ept> and <ph id="2">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	:::{figure} /fig/PAK_Excel_to_CSV.png</ph></source>
+<target xml:lang="fr"><ph id="1">	:::{figure} /fig/PAK_Excel_to_CSV.png</ph></target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Convert Excel to CSV</ph>
+<ph id="3">	align: center</ph></source>
+<target xml:lang="fr"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Convert Excel to CSV</ph>
+<ph id="3">	align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Convert Excel to CSV
+<ph id="1">	:::</ph></source>
+<target xml:lang="fr">Convert Excel to CSV
+<ph id="1">	:::</ph></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a new project. Save the project in your project folder.</source>
+<target xml:lang="fr">Open QGIS and create a new project. Save the project in your project folder.</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Import the layers<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept> <ph id="2">`__20240605_PAK_MPI.csv__`</ph> and <ph id="3">`Pak_adm2_Khyber Pakhtunkhwa.gpkg`</ph> to QGIS:</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Import the layers<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept> <ph id="2">`__20240605_PAK_MPI.csv__`</ph> and <ph id="3">`Pak_adm2_Khyber Pakhtunkhwa.gpkg`</ph> to QGIS:</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Drag and drop the ADM2-layer into your QGIS-window.</source>
+<target xml:lang="fr">Drag and drop the ADM2-layer into your QGIS-window.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">To import the CSV-file, click on the <ph id="1">`Layer`</ph> tab → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Delimited Text`</ph>.</source>
+<target xml:lang="fr">To import the CSV-file, click on the <ph id="1">`Layer`</ph> tab → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Delimited Text`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Browse for your <bpt id="1">__</bpt>20240605_PAK_MPI.csv<ept id="1">__</ept> file.</source>
+<target xml:lang="fr">Browse for your <bpt id="1">__</bpt>20240605_PAK_MPI.csv<ept id="1">__</ept> file.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Choose the correct <ph id="1">`File Fromat`</ph>: <ph id="2">`Custom delimters`</ph> → <ph id="3">`Semicolon`</ph>.</source>
+<target xml:lang="fr">Choose the correct <ph id="1">`File Fromat`</ph>: <ph id="2">`Custom delimters`</ph> → <ph id="3">`Semicolon`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Go to	the tab <ph id="1">`Geometry Definition`</ph> and choose <ph id="2">`No geometry`</ph>. We don't have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.</source>
+<target xml:lang="fr">Go to	the tab <ph id="1">`Geometry Definition`</ph> and choose <ph id="2">`No geometry`</ph>. We don't have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Add layer and close the window.</source>
+<target xml:lang="fr">Add layer and close the window.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	:::{figure} /fig/PAK_Load_CSVfile.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">	:::{figure} /fig/PAK_Load_CSVfile.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Load CSV file to QGIS</ph>
+<ph id="3">	align: center</ph></source>
+<target xml:lang="fr"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Load CSV file to QGIS</ph>
+<ph id="3">	align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Load CSV file to QGIS
+<ph id="1">	:::</ph></source>
+<target xml:lang="fr">Load CSV file to QGIS
+<ph id="1">	:::</ph></target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a <bpt id="1">[</bpt>non-spatial join<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins)</ept> and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes.</source>
+<target xml:lang="fr">Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a <bpt id="1">[</bpt>non-spatial join<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins)</ept> and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">So, we need to perform a non-spatial join using the P-Codes Columns as identifiers. To do this,</source>
+<target xml:lang="fr">So, we need to perform a non-spatial join using the P-Codes Columns as identifiers. To do this,</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is <ph id="1">`ADM2_PCODE`</ph>.</source>
+<target xml:lang="fr">Open the attribute table of the attribute table and detect the column which contains the information you want to use to join the data with the location. E.g. City name, district name, or best the P-Code. In our case it is <ph id="1">`ADM2_PCODE`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Hint<ept id="1">__</ept>: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Hint<ept id="1">__</ept>: Each administrative level and area contains a worldwide unique code number. This helps to determine the exact administrative boundary without misspelling the name of the area.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Now, we need the polygon layer with the administrative boundaries.</source>
+<target xml:lang="fr">Now, we need the polygon layer with the administrative boundaries.</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Open the attribute table for the layer <bpt id="1">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="1">__</ept> and locate the column containing the P-Code. How is it called?</source>
+<target xml:lang="fr">Open the attribute table for the layer <bpt id="1">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="1">__</ept> and locate the column containing the P-Code. How is it called?</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">To link the two layers, open the Toolbox and search for the tool <bpt id="1">__</bpt>Join attributes by field value<ept id="1">__</ept>. Open it.</source>
+<target xml:lang="fr">To link the two layers, open the Toolbox and search for the tool <bpt id="1">__</bpt>Join attributes by field value<ept id="1">__</ept>. Open it.</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input layer`</ph>: <bpt id="2">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">`Input layer`</ph>: <bpt id="2">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Table field`</ph>: <bpt id="2">__</bpt>admin2Pcode<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">`Table field`</ph>: <bpt id="2">__</bpt>admin2Pcode<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input layer 2`</ph>: <bpt id="2">__</bpt>20240605_PAK_MPI.csv<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">`Input layer 2`</ph>: <bpt id="2">__</bpt>20240605_PAK_MPI.csv<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Table field 2`</ph>: <bpt id="2">__</bpt>ADM2_PCOCDE<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">`Table field 2`</ph>: <bpt id="2">__</bpt>ADM2_PCOCDE<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Choose a location to save the file as GeoPackage and give it a meaningful name, for instance <bpt id="1">__</bpt>MPI_Admin2_joined.gpkg<ept id="1">__</ept></source>
+<target xml:lang="fr">Choose a location to save the file as GeoPackage and give it a meaningful name, for instance <bpt id="1">__</bpt>MPI_Admin2_joined.gpkg<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Run`</ph> and close.</source>
+<target xml:lang="fr"><ph id="1">`Run`</ph> and close.</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	:::{figure} /fig/PAK_joined_MPI_csv_admin2.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">	:::{figure} /fig/PAK_joined_MPI_csv_admin2.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Join the districts with the MPI data</ph>
+<ph id="3">	align: center</ph></source>
+<target xml:lang="fr"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Join the districts with the MPI data</ph>
+<ph id="3">	align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Join the districts with the MPI data
+<ph id="1">	:::</ph></source>
+<target xml:lang="fr">Join the districts with the MPI data
+<ph id="1">	:::</ph></target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Info<ept id="1">__</ept>: You can see that not all areas are visible. Since we don't have data for all districts, only the districts were linked with the csv on which we have MPI data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Info<ept id="1">__</ept>: You can see that not all areas are visible. Since we don't have data for all districts, only the districts were linked with the csv on which we have MPI data.</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	:::{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">	:::{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Information of not joined and linked data</ph>
+<ph id="3">	align: center</ph></source>
+<target xml:lang="fr"><ph id="1">	width: 400px</ph>
+<ph id="2">	name: Information of not joined and linked data</ph>
+<ph id="3">	align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Information of not joined and linked data
+<ph id="1">	:::</ph></source>
+<target xml:lang="fr">Information of not joined and linked data
+<ph id="1">	:::</ph></target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Visualize <bpt id="1">__</bpt>MPI_Admin2_joined.gpkg<ept id="1">__</ept> file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize.</source>
+<target xml:lang="fr">Visualize <bpt id="1">__</bpt>MPI_Admin2_joined.gpkg<ept id="1">__</ept> file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Symbology`</ph> window of the file <bpt id="2">__</bpt>MPI_Admin2_joined.gpkg<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Open the <ph id="1">`Symbology`</ph> window of the file <bpt id="2">__</bpt>MPI_Admin2_joined.gpkg<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Decide which column you want to visualize. For instance the values of the year 2014 in the column <bpt id="1">__</bpt>A_2014_15<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Decide which column you want to visualize. For instance the values of the year 2014 in the column <bpt id="1">__</bpt>A_2014_15<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Choose <ph id="1">`Graduate`</ph> visualization.</source>
+<target xml:lang="fr">Choose <ph id="1">`Graduate`</ph> visualization.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Choose <ph id="1">`Value`</ph> <bpt id="2">__</bpt>A_2014_15<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Choose <ph id="1">`Value`</ph> <bpt id="2">__</bpt>A_2014_15<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Choose Mode <ph id="1">`Pretty Breaks`</ph>.</source>
+<target xml:lang="fr">Choose Mode <ph id="1">`Pretty Breaks`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph> and close the window.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph> and close the window.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Visualize <bpt id="1">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="1">__</ept> layer for districts we don't have MPI data on.</source>
+<target xml:lang="fr">Visualize <bpt id="1">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="1">__</ept> layer for districts we don't have MPI data on.</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Symbology`</ph> window of the file <bpt id="2">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Open the <ph id="1">`Symbology`</ph> window of the file <bpt id="2">__</bpt>Pak_adm2_Khyber Pakhtunkhwa.gpkg<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Change the color, maybe to dark grey, so we can differentiate between the districts we have and don't have MPI data for.</source>
+<target xml:lang="fr">Change the color, maybe to dark grey, so we can differentiate between the districts we have and don't have MPI data for.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">Add OpenStreetMap as a baselayer for better orientation.</source>
+<target xml:lang="fr">Add OpenStreetMap as a baselayer for better orientation.</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/PAK_visualized_MPI.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/PAK_visualized_MPI.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">name: Visualized MPI data on district level</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">name: Visualized MPI data on district level</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Visualized MPI data on district level.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Visualized MPI data on district level.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

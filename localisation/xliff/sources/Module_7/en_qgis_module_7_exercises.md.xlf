@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_7/en_qgis_module_7_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises for Module 7 <bpt id="1">&lt;a id="exercises-for-module-7"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises for Module 7 <bpt id="1">&lt;a id="exercises-for-module-7"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">These exercises cover all the content in Module 3.</source>
+<target xml:lang="fr">These exercises cover all the content in Module 3.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Focus Group</source>
+<target xml:lang="fr">Focus Group</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar<ept id="2">](/content/Module_7/en_qgis_module_7_ex1.md)</ept>:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar<ept id="2">](/content/Module_7/en_qgis_module_7_ex1.md)</ept>:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">This exercise contains the entire exercise track "Anticipatory Action Analysis for Cyclones in Madagascar"</source>
+<target xml:lang="fr">This exercise contains the entire exercise track "Anticipatory Action Analysis for Cyclones in Madagascar"</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Data Analysis, Automation, and Map Making</source>
+<target xml:lang="fr">Data Analysis, Automation, and Map Making</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Piste d'Exercice: Analyse d’Action Anticipative pour les Cyclones à Madagascar<ept id="2">](/content/Module_7/fr_qgis_module_7_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Piste d'Exercice: Analyse d’Action Anticipative pour les Cyclones à Madagascar<ept id="2">](/content/Module_7/fr_qgis_module_7_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Cet exercice contient la piste d'exercice "Analyse d’Action Anticipative pour les Cyclones à Madagascar" complète.</source>
+<target xml:lang="fr">Cet exercice contient la piste d'exercice "Analyse d’Action Anticipative pour les Cyclones à Madagascar" complète.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">7 heures.</source>
+<target xml:lang="fr">7 heures.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Automation of Exposed Population Estimation – Aina's Model<ept id="2">](/content/Module_7/en_module_7_mdg_aa_ex_2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Automation of Exposed Population Estimation – Aina's Model<ept id="2">](/content/Module_7/en_module_7_mdg_aa_ex_2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">This exercise is the second task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". The goal is to build a model to automatically estimate the population exposed to a cyclone event</source>
+<target xml:lang="fr">This exercise is the second task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". The goal is to build a model to automatically estimate the population exposed to a cyclone event</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Identifying Affected Health Facilities and Schools – Aina Adds More Layers<ept id="2">](/content/Module_7/en_module_7_mdg_aa_ex_3.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Identifying Affected Health Facilities and Schools – Aina Adds More Layers<ept id="2">](/content/Module_7/en_module_7_mdg_aa_ex_3.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">This exercise is the third task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will expand the model to obtain further information.</source>
+<target xml:lang="fr">This exercise is the third task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will expand the model to obtain further information.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Exporting Model Results for the Operations Team<ept id="2">](/content/Module_7/en_module_7_mdg_aa_ex_6.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Exporting Model Results for the Operations Team<ept id="2">](/content/Module_7/en_module_7_mdg_aa_ex_6.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">This exercise is the sixth task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will expand the previous model to also output the results in a csv file.</source>
+<target xml:lang="fr">This exercise is the sixth task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will expand the previous model to also output the results in a csv file.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
