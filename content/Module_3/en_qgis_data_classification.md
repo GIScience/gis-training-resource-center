@@ -10,7 +10,7 @@
 
 Spatial data classification in GIS involves categorising geographic information into distinct groups or classes based on shared characteristics or attributes. Each class can be assigned a distinct symbol or colour. This process enhances the organization and interpretation of spatial data.
 
-The attributes of  geodata are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes ({numref}`classification_basic`). 
+The attributes of  geodata are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes (see {numref}`classification_basic`). 
 
 :::{figure} /fig/classification_basic.drawio.png
 ---
