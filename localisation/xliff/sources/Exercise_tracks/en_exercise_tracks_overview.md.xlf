@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Exercise_tracks/en_exercise_tracks_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Overview of the Exercises</source>
+<target xml:lang="fr">Overview of the Exercises</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This platform offers various exercises per module, each covering the competences and tools covered in the module chapter. The exercise vary in their complexity and their length. When planning a workshop, pay attention to the competences covered in the exercises you choose. Ideally, you should cover the core competences of each module.</source>
+<target xml:lang="fr">This platform offers various exercises per module, each covering the competences and tools covered in the module chapter. The exercise vary in their complexity and their length. When planning a workshop, pay attention to the competences covered in the exercises you choose. Ideally, you should cover the core competences of each module.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">We have also prepared exercise tracks, which cover the competences from module 1 to module 5 in exercises, that build upon each other. These exercises are generally a bit larger and require more time.</source>
+<target xml:lang="fr">We have also prepared exercise tracks, which cover the competences from module 1 to module 5 in exercises, that build upon each other. These exercises are generally a bit larger and require more time.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_exercise_tracks.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_exercise_tracks.png</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: exercise_tracks_overview</ph>
+<ph id="2">width: 750 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: exercise_tracks_overview</ph>
+<ph id="2">width: 750 px</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Overview of the exercises available on the platform
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Overview of the exercises available on the platform
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Exercises for module 4
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Exercises for module 4
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">You can adapt most of the exercise of module 3 for a consecutive map making exercise for module 4. Think about a sensible symbolisation and follow the map making steps outlined in chapter <bpt id="1">[</bpt>4.6. The Print Layout<ept id="1">](https://giscience.github.io/gis-training-resource-center/spanish/content/Module_4/en_qgis_map_design_2.html)</ept> and <bpt id="2">[</bpt>4.7. Understanding the Print Layout<ept id="2">](https://giscience.github.io/gis-training-resource-center/spanish/content/Module_4/en_qgis_understanding_print_layout.html)</ept>.</source>
+<target xml:lang="fr">You can adapt most of the exercise of module 3 for a consecutive map making exercise for module 4. Think about a sensible symbolisation and follow the map making steps outlined in chapter <bpt id="1">[</bpt>4.6. The Print Layout<ept id="1">](https://giscience.github.io/gis-training-resource-center/spanish/content/Module_4/en_qgis_map_design_2.html)</ept> and <bpt id="2">[</bpt>4.7. Understanding the Print Layout<ept id="2">](https://giscience.github.io/gis-training-resource-center/spanish/content/Module_4/en_qgis_understanding_print_layout.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Exercises per module</source>
+<target xml:lang="fr">Exercises per module</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 1 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_module_1_exercises.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 1 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_module_1_exercises.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 2 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 2 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_module_2_exercises.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 3 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 3 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 4 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 4 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_module_4_exercises.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 5 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Module 5 Exercises<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_exercises.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Available exercise tracks:</source>
+<target xml:lang="fr">Available exercise tracks:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Larkana Flood Response<ept id="1">](/content/Exercise_tracks/en_larkana_flood_response.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Larkana Flood Response<ept id="1">](/content/Exercise_tracks/en_larkana_flood_response.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Anticipatory Action Analysis for Cyclones in Madagascar<ept id="1">](/content/Exercise_tracks/en_mdg_aa_cyclones.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Anticipatory Action Analysis for Cyclones in Madagascar<ept id="1">](/content/Exercise_tracks/en_mdg_aa_cyclones.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Public Health: Outbreak and Preparedness<ept id="1">](/content/Exercise_tracks/en_public_health_outbreak_and_preparedness.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Public Health: Outbreak and Preparedness<ept id="1">](/content/Exercise_tracks/en_public_health_outbreak_and_preparedness.md)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

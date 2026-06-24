@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_data_sources_ex3.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 3: Data sources <bpt id="1">&lt;a id="exercise-3-data-sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 3: Data sources <bpt id="1">&lt;a id="exercise-3-data-sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to navigate various data sources, gain an
+understanding of where and how to access relevant data, and identify potential problems. It is important to <bpt id="1">**</bpt>use reliable, up-to-date, and appropriate data sources<ept id="1">**</ept> that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.</source>
+<target xml:lang="fr">The aim of this exercise is to navigate various data sources, gain an
+understanding of where and how to access relevant data, and identify potential problems. It is important to <bpt id="1">**</bpt>use reliable, up-to-date, and appropriate data sources<ept id="1">**</ept> that fit the purpose of the analysis to ensure a successful and meaningful results. Always consider your analysis objectives and requirements and search for data accordingly.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Larkana Flood Response Exercise Track<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Larkana Flood Response Exercise Track<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise is part of the <bpt id="1">[</bpt>Larkana Flood Response Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)</ept>.</source>
+<target xml:lang="fr">This exercise is part of the <bpt id="1">[</bpt>Larkana Flood Response Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Competences covered in this exercise<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Competences covered in this exercise<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">QGIS essentials</source>
+<target xml:lang="fr">QGIS essentials</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Finding and downloading relevant datasets and preparing them for further analysis</source>
+<target xml:lang="fr">Finding and downloading relevant datasets and preparing them for further analysis</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Data literacy</source>
+<target xml:lang="fr">Data literacy</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 1 hour to complete, depending on the number of participants and their familiarity with computer systems.</source>
+<target xml:lang="fr">The exercise takes around 1 hour to complete, depending on the number of participants and their familiarity with computer systems.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki articles and module chapters<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki articles and module chapters<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Data Sources<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Data Sources<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Prepare the training: <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training: <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Exercise <bpt id="1">&lt;a id="exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise <bpt id="1">&lt;a id="exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Download the data and project file for this exercise <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip)</ept> and unzip the folder.</source>
+<target xml:lang="fr">Download the data and project file for this exercise <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Backup/Module_2_Exercise_3_Data_Sources.zip)</ept> and unzip the folder.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Standard folder structure
+<ph id="2">:::{figure} /fig/standard_folder_structure_new_2025.drawio.png</ph>
+<ph id="3">name: standard_folder_struc</ph>
+<ph id="4">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Standard folder structure
+<ph id="2">:::{figure} /fig/standard_folder_structure_new_2025.drawio.png</ph>
+<ph id="3">name: standard_folder_struc</ph>
+<ph id="4">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Task 1: Download the administrative boundaries and healthsites for Pakistan <bpt id="1">&lt;a id="task-1-download-the-administrative-boundaries-and-healthsites-for-pakistan"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Download the administrative boundaries and healthsites for Pakistan <bpt id="1">&lt;a id="task-1-download-the-administrative-boundaries-and-healthsites-for-pakistan"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">For our flood response map, we will need a few datasets from the web. In this exercise, we will be looking for the <bpt id="1">__</bpt>administrative boundaries<ept id="1">__</ept> of Pakistan, the <bpt id="2">__</bpt>healthsites<ept id="2">__</ept>, as well as the <bpt id="3">__</bpt>flood extent<ept id="3">__</ept> of the flood in Pakistan in 2024.
+First, let us set up a new QGIS project along with the standard folder structure:</source>
+<target xml:lang="fr">For our flood response map, we will need a few datasets from the web. In this exercise, we will be looking for the <bpt id="1">__</bpt>administrative boundaries<ept id="1">__</ept> of Pakistan, the <bpt id="2">__</bpt>healthsites<ept id="2">__</ept>, as well as the <bpt id="3">__</bpt>flood extent<ept id="3">__</ept> of the flood in Pakistan in 2024.
+First, let us set up a new QGIS project along with the standard folder structure:</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+Take a look at the standard folder structure and save the QGIS project file in the correct place.
+<ph id="3">:::</ph>
+<ph id="4">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+Take a look at the standard folder structure and save the QGIS project file in the correct place.
+<ph id="3">:::</ph>
+<ph id="4">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Download the folder structure and unzip it.</source>
+<target xml:lang="fr">Download the folder structure and unzip it.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Create a copy of the folder structure and name the folder <ph id="1">`module_2_exercise_3_data_sources`</ph>.</source>
+<target xml:lang="fr">Create a copy of the folder structure and name the folder <ph id="1">`module_2_exercise_3_data_sources`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Open a new QGIS project and save it into the folder.</source>
+<target xml:lang="fr">Open a new QGIS project and save it into the folder.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Now that we have the QGIS project set up, we can start looking for the datasets</source>
+<target xml:lang="fr">Now that we have the QGIS project set up, we can start looking for the datasets</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Find a data source to download the <bpt id="1">**</bpt>administrative boundaries<ept id="1">**</ept> and <bpt id="2">**</bpt>healthsites<ept id="2">**</ept> of Pakistan. The following instructions are designed for the example of Pakistan. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.</source>
+<target xml:lang="fr">Find a data source to download the <bpt id="1">**</bpt>administrative boundaries<ept id="1">**</ept> and <bpt id="2">**</bpt>healthsites<ept id="2">**</ept> of Pakistan. The following instructions are designed for the example of Pakistan. If you wish to perform the same analysis for another country, some instructions may differ, but the general workflow will remain the same.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Possible data sources</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Possible data sources</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)</ept>.</source>
+<target xml:lang="fr">There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">For most humanitarian data, you can search on the <bpt id="1">__</bpt><bpt id="2">[</bpt>Humanitarian Data Exchange/HDX<ept id="2">](https://data.humdata.org/)</ept><ept id="1">__</ept>
+The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It's a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.</source>
+<target xml:lang="fr">For most humanitarian data, you can search on the <bpt id="1">__</bpt><bpt id="2">[</bpt>Humanitarian Data Exchange/HDX<ept id="2">](https://data.humdata.org/)</ept><ept id="1">__</ept>
+The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It's a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Which data format to choose</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Which data format to choose</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Most datasets on HDX are available in various dataformats such as xlsx, csv, shapefile, or GeoJSON. We are looking for spatial data that we can use in QGIS, so we will need a spatial data format such as <ph id="1">`.shp`</ph> (Shapefile), <ph id="2">`.gpkg`</ph> (GeoPackage), <ph id="3">`.geojson`</ph> (GeoJSON), or <ph id="4">`.gdb`</ph> (GeoDatabase)</source>
+<target xml:lang="fr">Most datasets on HDX are available in various dataformats such as xlsx, csv, shapefile, or GeoJSON. We are looking for spatial data that we can use in QGIS, so we will need a spatial data format such as <ph id="1">`.shp`</ph> (Shapefile), <ph id="2">`.gpkg`</ph> (GeoPackage), <ph id="3">`.geojson`</ph> (GeoJSON), or <ph id="4">`.gdb`</ph> (GeoDatabase)</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Download the data and save the <bpt id="1">**</bpt>administrative boundaries<ept id="1">**</ept> and the <bpt id="2">**</bpt>healthsites<ept id="2">**</ept> into the <ph id="3">`data\input`</ph> folder.</source>
+<target xml:lang="fr">Download the data and save the <bpt id="1">**</bpt>administrative boundaries<ept id="1">**</ept> and the <bpt id="2">**</bpt>healthsites<ept id="2">**</ept> into the <ph id="3">`data\input`</ph> folder.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or
+polygons.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+Make sure to only use the point data from the healthsites dataset. Other data shapes such as lines or polygons can be ignored in this example. Depending on the data source, information can be provided as points, but also as lines or
+polygons.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+Most of the times, the datasets you download from the web are compressed as <ph id="3">`.zip`</ph>-files. Before you can use them in QGIS, <bpt id="4">__</bpt>you need to unzip the datasets<ept id="4">__</ept>.
+<ph id="5">:::</ph>
+<ph id="6">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+Most of the times, the datasets you download from the web are compressed as <ph id="3">`.zip`</ph>-files. Before you can use them in QGIS, <bpt id="4">__</bpt>you need to unzip the datasets<ept id="4">__</ept>.
+<ph id="5">:::</ph>
+<ph id="6">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Load both vector files into QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Load both vector files into QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Now add the OpenStreetMap basemap via the browser window → <ph id="1">`XYZ Tiles`</ph>. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps.</source>
+<target xml:lang="fr">Now add the OpenStreetMap basemap via the browser window → <ph id="1">`XYZ Tiles`</ph>. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.</source>
+<target xml:lang="fr">Familiarise yourself with the data by opening the attribute table and identify the different types of healthcare that are included in the dataset. Get an overview of the information that is stored in each column. For example, there could be information indicating the type of healthsite.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.</source>
+<target xml:lang="fr">If your dataset contains information about the type of healthsite (e.g. clinic, hospital, doctor, etc.), we can extract these and save them in a new layer. We can do this by selecting the hospitals and then copying them to a new layer.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the <bpt id="1">__</bpt><bpt id="2">[</bpt>attribute table<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept><ept id="1">__</ept> page on the wiki.</source>
+<target xml:lang="fr">For information on how to easily filter your data by manually selecting features in the attribute table after it has been sorted based on a particular column, see the <bpt id="1">__</bpt><bpt id="2">[</bpt>attribute table<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept><ept id="1">__</ept> page on the wiki.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Task 2: Download the flood extent for Pakistan for August 2024 <bpt id="1">&lt;a id="task-2-download-the-flood-extent-for-pakistan-for-august-2024"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Download the flood extent for Pakistan for August 2024 <bpt id="1">&lt;a id="task-2-download-the-flood-extent-for-pakistan-for-august-2024"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.</source>
+<target xml:lang="fr">Now, let us download the flood extent for Pakistan from the 8 to 12 August 2024.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Go back to the humanitarian data exchange and search for <bpt id="1">__</bpt>"Pakistan Flood"<ept id="1">__</ept>. You will find a list of datasets containing the satellite detected water extents for different periods.</source>
+<target xml:lang="fr">Go back to the humanitarian data exchange and search for <bpt id="1">__</bpt>"Pakistan Flood"<ept id="1">__</ept>. You will find a list of datasets containing the satellite detected water extents for different periods.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Choose the dataset with the title <bpt id="1">__</bpt>"Satellite detected water extents from 08 to 12 August 2024 over Pakistan"<ept id="1">__</ept> and download the zip-folder.</source>
+<target xml:lang="fr">Choose the dataset with the title <bpt id="1">__</bpt>"Satellite detected water extents from 08 to 12 August 2024 over Pakistan"<ept id="1">__</ept> and download the zip-folder.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Unzip the folder and look at it's content. There are a few different shapefiles. We are looking for the <bpt id="1">__</bpt>minimum flood extent<ept id="1">__</ept>. Locate the files called <ph id="2">`VIIRS_20240721_20240803_MinimumFloodExtent_PAK`</ph> and copy them to the <ph id="3">`data\input`</ph>-folder.</source>
+<target xml:lang="fr">Unzip the folder and look at it's content. There are a few different shapefiles. We are looking for the <bpt id="1">__</bpt>minimum flood extent<ept id="1">__</ept>. Locate the files called <ph id="2">`VIIRS_20240721_20240803_MinimumFloodExtent_PAK`</ph> and copy them to the <ph id="3">`data\input`</ph>-folder.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Working with shapefiles
+<ph id="2">:class: attention</ph>
+Shapefiles consist of several files (<ph id="3">`.shp`</ph>, <ph id="4">`.shx`</ph>, <ph id="5">`.sbx`</ph>, <ph id="6">`.sbn`</ph>, <ph id="7">`.prj`</ph>, <ph id="8">`cpg`</ph>). In order to copy the entire shapefile to the new location, <bpt id="9">__</bpt>make sure to copy all the files with the exact name to the new folder<ept id="9">__</ept>.</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Working with shapefiles
+<ph id="2">:class: attention</ph>
+Shapefiles consist of several files (<ph id="3">`.shp`</ph>, <ph id="4">`.shx`</ph>, <ph id="5">`.sbx`</ph>, <ph id="6">`.sbn`</ph>, <ph id="7">`.prj`</ph>, <ph id="8">`cpg`</ph>). In order to copy the entire shapefile to the new location, <bpt id="9">__</bpt>make sure to copy all the files with the exact name to the new folder<ept id="9">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

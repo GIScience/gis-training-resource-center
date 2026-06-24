@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_8/en_module_8_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Remote Sensing and Raster Data <bpt id="1">&lt;a id="remote-sensing-and-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Remote Sensing and Raster Data <bpt id="1">&lt;a id="remote-sensing-and-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Working with raster data is inherently different from working with vector data. Instead of an attribute table associated with geometric features, raster data is a grid of squares, where each square holds a value. Spatial analyses frequently use raster data, as it is useful format to describe discrete phenomena, such as elevation, slope, temperature, etc. A common type of raster data all of us have come worked with or seen is satellite imagery. The benefit of satellite imagery is that you can perform analyses remotely. The first chapter in this module introduces raster data in depth and presents the basic workflow when using raster data in QGIS and humanitarian work. The second chapter introduces the concept of remote sensing and how it can be used to gain information from satellite imagery.</source>
+<target xml:lang="fr">Working with raster data is inherently different from working with vector data. Instead of an attribute table associated with geometric features, raster data is a grid of squares, where each square holds a value. Spatial analyses frequently use raster data, as it is useful format to describe discrete phenomena, such as elevation, slope, temperature, etc. A common type of raster data all of us have come worked with or seen is satellite imagery. The benefit of satellite imagery is that you can perform analyses remotely. The first chapter in this module introduces raster data in depth and presents the basic workflow when using raster data in QGIS and humanitarian work. The second chapter introduces the concept of remote sensing and how it can be used to gain information from satellite imagery.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Raster Theory<ept id="2">](/content/Module_8/en_qgis_raster_theory.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Raster Theory<ept id="2">](/content/Module_8/en_qgis_raster_theory.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Understand how to work with raster data; know what to keep in mind when working with raster data.</source>
+<target xml:lang="fr">Understand how to work with raster data; know what to keep in mind when working with raster data.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Common Raster Operations<ept id="2">](/content/Module_8/en_qgis_raster_operations.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Common Raster Operations<ept id="2">](/content/Module_8/en_qgis_raster_operations.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Understand how to use practical tools to work with raster data in QGIS; Know what to consider when working with multiple raster layers.</source>
+<target xml:lang="fr">Understand how to use practical tools to work with raster data in QGIS; Know what to consider when working with multiple raster layers.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Remote Sensing<ept id="2">](/content/Module_8/en_qgis_remote_sensing_theory.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Remote Sensing<ept id="2">](/content/Module_8/en_qgis_remote_sensing_theory.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Know about remote sensing; Understand the basics about the interaction of electromagnetic radiation and the earths surface; Understand how different frequency bands can be combined to generate new information (e.g., NDVI).</source>
+<target xml:lang="fr">Know about remote sensing; Understand the basics about the interaction of electromagnetic radiation and the earths surface; Understand how different frequency bands can be combined to generate new information (e.g., NDVI).</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan<ept id="2">](/content/Module_8/en_qgis_module_8_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Basic Assessment of Flood Exposure in the Indus Basin in Pakistan<ept id="2">](/content/Module_8/en_qgis_module_8_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

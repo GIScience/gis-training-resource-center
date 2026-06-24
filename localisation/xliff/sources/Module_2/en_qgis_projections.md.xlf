@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_projections.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Projections <bpt id="1">&lt;a id="projections"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Projections <bpt id="1">&lt;a id="projections"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Introduction <bpt id="1">&lt;a id="introduction"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introduction <bpt id="1">&lt;a id="introduction"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf5_tu2" resname="sd1_1" restype="x-title" xml:space="preserve">
+<source xml:lang="en">YouTube video player</source>
+<target xml:lang="fr">YouTube video player</target>
+</trans-unit>
+<trans-unit id="sd1_sf5_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" [#$sd1_sf5_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" [#$sd1_sf5_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a <bpt id="1">__</bpt>projection<ept id="1">__</ept>. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface (<ph id="2">{numref}</ph><ph id="3">`en_examples_projections_IBIS`</ph>). However, it is never possible to correctly represent the world on a flat surface (see the video above). Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly.</source>
+<target xml:lang="fr">An important issue when creating a map of a region, is that it is impossible to create a representation of a sphere on a 2D plane without distorting the map. The transformation of a 3D object onto a flat surface can be done with the help of a <bpt id="1">__</bpt>projection<ept id="1">__</ept>. Over the centuries, cartographers and mathematicians have developed a multitude of different methods to project the earth onto a flat surface (<ph id="2">{numref}</ph><ph id="3">`en_examples_projections_IBIS`</ph>). However, it is never possible to correctly represent the world on a flat surface (see the video above). Every projection distorts either the length between two points, the angles between two lines (directions), or the size of an area. A projection can only correctly represent one of these three dimensions. This means, that depending on the projection method, your world map will not represent the size, angles, or distances correctly.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_examples_projections_IBIS.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_examples_projections_IBIS.png</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_examples_projections_IBIS</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_examples_projections_IBIS</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Examples for Projections (Source:Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Examples for Projections (Source:Unknown. This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Every projection has its use case. For example, the Mercator projection displays the angles between to points correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a destination by following a straight line on a map. For example, the Mercator projection displays road intersections correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. This is especially useful when navigating. The shape of an area remains correct, since the angles between each line stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see figure below). Furthermore, the further away from the equator you get, the more distortion you get.</source>
+<target xml:lang="fr">Every projection has its use case. For example, the Mercator projection displays the angles between to points correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a destination by following a straight line on a map. For example, the Mercator projection displays road intersections correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. This is especially useful when navigating. The shape of an area remains correct, since the angles between each line stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see figure below). Furthermore, the further away from the equator you get, the more distortion you get.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note} </ph>The True Size of
+The mercator projection is famous for distorting the size of different countries. You can check the true size in comparison to different placements on the map on <bpt id="2">[</bpt>TheTrueSize.com website<ept id="2">](https://www.thetruesize.com)</ept>.A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note} </ph>The True Size of
+The mercator projection is famous for distorting the size of different countries. You can check the true size in comparison to different placements on the map on <bpt id="2">[</bpt>TheTrueSize.com website<ept id="2">](https://www.thetruesize.com)</ept>.A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_greenland_africa.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_greenland_africa.png</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_greenland_africa</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_greenland_africa</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Comparison Greenland - Africa (Source: <bpt id="1">[</bpt>The True Size of<ept id="1">](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Comparison Greenland - Africa (Source: <bpt id="1">[</bpt>The True Size of<ept id="1">](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">How to choose an appropriate projected coordinate system <bpt id="1">&lt;a id="how-to-choose-an-appropriate-projected-coordinate-system"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to choose an appropriate projected coordinate system <bpt id="1">&lt;a id="how-to-choose-an-appropriate-projected-coordinate-system"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). It is crucial that you are aware that your data can be in one CRS and your QGIS project in another CRS.</source>
+<target xml:lang="fr">In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). It is crucial that you are aware that your data can be in one CRS and your QGIS project in another CRS.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The project CRS is displayed on the bottom rightcorner of the <bpt id="1">[</bpt>QGIS interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface)</ept>. Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different platforms and applications.</source>
+<target xml:lang="fr">The project CRS is displayed on the bottom rightcorner of the <bpt id="1">[</bpt>QGIS interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#overview-of-qgis-interface)</ept>. Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different platforms and applications.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>EPSG Codes:<ept id="1">__</ept> These are numerical identifiers assigned by the EPSG database to specific coordinate reference systems, making them concise and unambiguous (e.g., EPSG:4326 for WGS84). They provide a standardized way to reference CRS across various GIS applications.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>EPSG Codes:<ept id="1">__</ept> These are numerical identifiers assigned by the EPSG database to specific coordinate reference systems, making them concise and unambiguous (e.g., EPSG:4326 for WGS84). They provide a standardized way to reference CRS across various GIS applications.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>CRS Names:<ept id="1">__</ept> These are typically descriptive names for coordinate reference systems (e.g., "WGS 84" or "NAD83"). While names can provide insight into the system being used, they may not be unique or universally recognized, leading to potential confusion without the accompanying EPSG code.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>CRS Names:<ept id="1">__</ept> These are typically descriptive names for coordinate reference systems (e.g., "WGS 84" or "NAD83"). While names can provide insight into the system being used, they may not be unique or universally recognized, leading to potential confusion without the accompanying EPSG code.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">To change the CRS of your data and project, follow the steps explained below. The default CRS/EPSG code of every QGIS project is the World Geodetic System 84
+(EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian applications, as we need region-specific projections that provide the least distortion on the scale we wish to represent.</source>
+<target xml:lang="fr">To change the CRS of your data and project, follow the steps explained below. The default CRS/EPSG code of every QGIS project is the World Geodetic System 84
+(EPSG: 4326). This CRS is optimized for world maps and therefore is not ideal for most humanitarian applications, as we need region-specific projections that provide the least distortion on the scale we wish to represent.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+Choose the projection according to your area of interest. There are special CRS that have been created to reduce the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and their CRS codes on <bpt id="2">[</bpt>epsg.io<ept id="2">](http://epsg.io)</ept>.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+Choose the projection according to your area of interest. There are special CRS that have been created to reduce the distortion and inaccuracy of projections for different regions on earth. You can find all the projections and their CRS codes on <bpt id="2">[</bpt>epsg.io<ept id="2">](http://epsg.io)</ept>.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Look at the following images and pay attention to how the different Coordinate Reference Systems change and distort the world map.</source>
+<target xml:lang="fr">Look at the following images and pay attention to how the different Coordinate Reference Systems change and distort the world map.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/world_mercator_tissots.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/world_mercator_tissots.png</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: world_mercator_tissot</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: world_mercator_tissot</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">The Mercator Projection (EPSG:54004) (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The Mercator Projection (EPSG:54004) (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between two lines. We can see this because the circles stay perfectly circular the further they are from the equator.</source>
+<target xml:lang="fr">Notice how the shape of the circle stays the same. Out of this, we can conclude that the angles stay the same. However, the circles get bigger the further away they are from the equator, and the distance between these circles change the further they get from the equator. Therefore, we can conclude that the distances and sizes are being distorted with the mercator projection. The strength of the Mercator projection is that it conserves the angles between two lines. We can see this because the circles stay perfectly circular the further they are from the equator.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/WGS_84_tissots.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/WGS_84_tissots.png</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: WGS_84_tissots</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: WGS_84_tissots</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">The World Geodetic System 1984 (EPSG:4326) (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The World Geodetic System 1984 (EPSG:4326) (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The WGS 84 is a CRS which consists of an ellipsoid that closely resembles the shape of the earth. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion in the North-South direction. As the circles become distorted, we can deduce that this CRS distorts the angles.</source>
+<target xml:lang="fr">The WGS 84 is a CRS which consists of an ellipsoid that closely resembles the shape of the earth. Instead of metrical units of measurements, it uses angular degrees (latitude and longitude). The shape of the Tissot circles is undistorted near the equator, but becomes elongated on the East-West axis the further it gets away from the equator. Unlike the Mercator projection, there is no distortion in the North-South direction. As the circles become distorted, we can deduce that this CRS distorts the angles.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/World_equidistant_cylindrical_tissots.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/World_equidistant_cylindrical_tissots.png</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: World_equidistant_cylindrical_tissots</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: World_equidistant_cylindrical_tissots</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">The World Equidistant Cylindrical Projection (EPSG:54002) (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The World Equidistant Cylindrical Projection (EPSG:54002) (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (circles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels.</source>
+<target xml:lang="fr">The World Equidistant cylindrical CRS is equidistant (not distorting the length) along any meridian (circles of longitude; North to South), and along the two standard parallels. The shape, scale and area distort the further they are away from the standard parallels.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">This table shows an overview on which projections to use for which needed characteristic:</source>
+<target xml:lang="fr">This table shows an overview on which projections to use for which needed characteristic:</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Characteristic</source>
+<target xml:lang="fr">Characteristic</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Mercator (cylindrical)</source>
+<target xml:lang="fr">Mercator (cylindrical)</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Lambert cylindrical</source>
+<target xml:lang="fr">Lambert cylindrical</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Albers conic</source>
+<target xml:lang="fr">Albers conic</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Shape</source>
+<target xml:lang="fr">Shape</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">✅</source>
+<target xml:lang="fr">✅</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">❌</source>
+<target xml:lang="fr">❌</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">✅</source>
+<target xml:lang="fr">✅</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Rotation</source>
+<target xml:lang="fr">Rotation</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">✅</source>
+<target xml:lang="fr">✅</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">✅</source>
+<target xml:lang="fr">✅</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">❌</source>
+<target xml:lang="fr">❌</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Area</source>
+<target xml:lang="fr">Area</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">❌</source>
+<target xml:lang="fr">❌</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">✅</source>
+<target xml:lang="fr">✅</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">✅</source>
+<target xml:lang="fr">✅</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see <ph id="1">{numref}</ph><ph id="2">`wrong_CRS`</ph>). In the figure below, the same point is encoded in 3 different reference systems.</source>
+<target xml:lang="fr">Another very important consideration when choosing the Coordinate reference system is that, depending on the ellipsoid and the method used to project the same point can be located at different locations (see <ph id="1">{numref}</ph><ph id="2">`wrong_CRS`</ph>). In the figure below, the same point is encoded in 3 different reference systems.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/wrong_CRS.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/wrong_CRS.png</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: wrong_CRS</ph>
+<ph id="2">width: 750 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: wrong_CRS</ph>
+<ph id="2">width: 750 px</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">The same point in three different reference systems (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The same point in three different reference systems (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Metric and Geographic Coordinate Reference Systems <bpt id="1">&lt;a id="metric-and-geographic-coordinate-reference-systems"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Metric and Geographic Coordinate Reference Systems <bpt id="1">&lt;a id="metric-and-geographic-coordinate-reference-systems"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">There are two different types of Coordinate Reference System: <bpt id="1">__</bpt>Geographic<ept id="1">__</ept> or <bpt id="2">__</bpt>Metric<ept id="2">__</ept> CRS.</source>
+<target xml:lang="fr">There are two different types of Coordinate Reference System: <bpt id="1">__</bpt>Geographic<ept id="1">__</ept> or <bpt id="2">__</bpt>Metric<ept id="2">__</ept> CRS.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">A Geographic CRS is based on a three-dimensional, ellipsoidal model of the Earth. It uses angular measurements (<bpt id="1">__</bpt>latitude and longitude<ept id="1">__</ept>) to define locations on the Earth's surface. The coordinates are usually expressed in degrees (e.g., 45°N, 120°W).</source>
+<target xml:lang="fr">A Geographic CRS is based on a three-dimensional, ellipsoidal model of the Earth. It uses angular measurements (<bpt id="1">__</bpt>latitude and longitude<ept id="1">__</ept>) to define locations on the Earth's surface. The coordinates are usually expressed in degrees (e.g., 45°N, 120°W).</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Advantages<ept id="1">__</ept>: Since it is based on the Earth's curvature, it can be used to represent locations anywhere on the earth. Most global datasets, GPS, and mapping systems use Geographic CRS making it highly compatible with various data sources. Locations can be specified accurately with angular measurements.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Advantages<ept id="1">__</ept>: Since it is based on the Earth's curvature, it can be used to represent locations anywhere on the earth. Most global datasets, GPS, and mapping systems use Geographic CRS making it highly compatible with various data sources. Locations can be specified accurately with angular measurements.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Disadvantage<ept id="1">__</ept>: Because it uses angular measurements, distances, areas, and shapes can be highly <bpt id="2">__</bpt>distorted<ept id="2">__</ept>. Since the distance between the circles of latitude and longitude change, the conversion of angles to meters is not constant</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Disadvantage<ept id="1">__</ept>: Because it uses angular measurements, distances, areas, and shapes can be highly <bpt id="2">__</bpt>distorted<ept id="2">__</ept>. Since the distance between the circles of latitude and longitude change, the conversion of angles to meters is not constant</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">A metric CRS is a 2D representation of the earths surface. Although it is difficult to represent large areas of the globe on a 2D surface without surface, it is possible to create a 2D projection of a limited region with minimal distortion. The map units are typically metres or feet. It is created by projecting the earth onto a flat plane.</source>
+<target xml:lang="fr">A metric CRS is a 2D representation of the earths surface. Although it is difficult to represent large areas of the globe on a 2D surface without surface, it is possible to create a 2D projection of a limited region with minimal distortion. The map units are typically metres or feet. It is created by projecting the earth onto a flat plane.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Advantages<ept id="1">__</ept>: Since it uses a flat plane, you can calculate distances, areas, and angles accurately.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Advantages<ept id="1">__</ept>: Since it uses a flat plane, you can calculate distances, areas, and angles accurately.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Disadvantages<ept id="1">__</ept>: A given projected CRS is usually optimized for a particular region. Using it outside its intended area can lead to significant distortions in distance, area, and shape.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Disadvantages<ept id="1">__</ept>: A given projected CRS is usually optimized for a particular region. Using it outside its intended area can lead to significant distortions in distance, area, and shape.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Problem_distance_geographic_coords.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Problem_distance_geographic_coords.png</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: problem_distance_geographic_coords</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: problem_distance_geographic_coords</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">A geographic representation of the globe. The distance between the meridians converges towards the north and south pole (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A geographic representation of the globe. The distance between the meridians converges towards the north and south pole (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{caution}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{caution}</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">When processing geodata, QGIS always uses the units of measurements of the layer that you are processing. This means that if you want to calculate, for example, the distance in kilometers, the layer must be in a metric CRS. You can check the units of measurements of any given layer by <bpt id="1">&lt;kbd></bpt>Right clicking<ept id="1">&lt;/kbd></ept> on the layer in the layer panel → <ph id="2">`Properties`</ph> → <ph id="3">`Information`</ph> → <ph id="4">`Coordinate Reference System (CRS)`</ph>.</source>
+<target xml:lang="fr">When processing geodata, QGIS always uses the units of measurements of the layer that you are processing. This means that if you want to calculate, for example, the distance in kilometers, the layer must be in a metric CRS. You can check the units of measurements of any given layer by <bpt id="1">&lt;kbd></bpt>Right clicking<ept id="1">&lt;/kbd></ept> on the layer in the layer panel → <ph id="2">`Properties`</ph> → <ph id="3">`Information`</ph> → <ph id="4">`Coordinate Reference System (CRS)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Local and Global CRS <bpt id="1">&lt;a id="local-and-global-crs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Local and Global CRS <bpt id="1">&lt;a id="local-and-global-crs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_local_crs.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_local_crs.png</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">name: en_local_crs</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">name: en_local_crs</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Local and global coordinate reference systems (CRS) (Source: British Red Cross).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Local and global coordinate reference systems (CRS) (Source: British Red Cross).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">As you can see, smaller regions look skewed and distorted in a global CRS. For smaller areas local projections should be used, since they give a more accurate display. However, local projections heavily distort the map on a global level.</source>
+<target xml:lang="fr">As you can see, smaller regions look skewed and distorted in a global CRS. For smaller areas local projections should be used, since they give a more accurate display. However, local projections heavily distort the map on a global level.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">How to check and change the project coordinate reference system <bpt id="1">&lt;a id="how-to-check-and-change-the-project-coordinate-reference-system"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to check and change the project coordinate reference system <bpt id="1">&lt;a id="how-to-check-and-change-the-project-coordinate-reference-system"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Understanding projections and coordinate reference systems is not easy. The next steps can be followed with any geodata layer in your QGIS project.</source>
+<target xml:lang="fr">Understanding projections and coordinate reference systems is not easy. The next steps can be followed with any geodata layer in your QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to the region or area you are working on. If you are working on a map showing the entire globe, global projection such as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, or even smaller regions, <bpt id="2">__</bpt>you should always use a local CRS, to avoid inaccuracies<ept id="2">__</ept>. If you don't know which CRS to use, you can search for a suitable one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+One of the first things you do when starting a new QGIS project should be to check and adjust the CRS/EPSG code to the region or area you are working on. If you are working on a map showing the entire globe, global projection such as the mercator projection should be used. If you are working on a smaller region, such as a continent, a country, or even smaller regions, <bpt id="2">__</bpt>you should always use a local CRS, to avoid inaccuracies<ept id="2">__</ept>. If you don't know which CRS to use, you can search for a suitable one on EPSG.IO. Simply enter the name of your region and take a look at the available options. Make sure that the CRS you choose is in the correct unit of measurements (metres, feet, or degrees)
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Open a QGIS project.</source>
+<target xml:lang="fr">Open a QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">In the very bottom right corner of QGIS you find the button <ph id="1">`EPSG`</ph>. The number next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the <ph id="2">`Current CRS`</ph>-button <bpt id="3">![</bpt><ept id="3">](/fig/EPSG_Code.png)</ept>.</source>
+<target xml:lang="fr">In the very bottom right corner of QGIS you find the button <ph id="1">`EPSG`</ph>. The number next to it is the EPSG Code currently used in the project. To see more information, or to change the CRS, click on the <ph id="2">`Current CRS`</ph>-button <bpt id="3">![</bpt><ept id="3">](/fig/EPSG_Code.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">The window <ph id="1">`Project Properties`</ph> will open. Here you can view all available CRS/EPSG-Code and their properties.</source>
+<target xml:lang="fr">The window <ph id="1">`Project Properties`</ph> will open. Here you can view all available CRS/EPSG-Code and their properties.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">To change the CRS/EPSG code, select the one you want to use and click <ph id="1">`Apply`</ph>.</source>
+<target xml:lang="fr">To change the CRS/EPSG code, select the one you want to use and click <ph id="1">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: How to check and change the CRS in your QGIS project</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: How to check and change the CRS in your QGIS project</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Project CRS and Layer CRS <bpt id="1">&lt;a id="project-crs-and-layer-crs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Project CRS and Layer CRS <bpt id="1">&lt;a id="project-crs-and-layer-crs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different coordinate reference systems do not refer to the same location on earth. This is because of the distortion of distance and area.</source>
+<target xml:lang="fr">The coordinate reference system of your QGIS project determines how QGIS displays the information. However, layers and datasets have their own CRS. This can be seen in the metadata, or layer properties of the dataset. The layer CRS refers to the coordinate system of the features or items in the dataset. The same coordinates in two different coordinate reference systems do not refer to the same location on earth. This is because of the distortion of distance and area.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the coordinate reference system of the dataset, and reproject it to the project CRS if necessary. This way, you ensure consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will create false results.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+The first thing you should do when loading a new layer or dataset into your QGIS project, should be to check the coordinate reference system of the dataset, and reproject it to the project CRS if necessary. This way, you ensure consistency in your project and that the geoobjects in your layer are at the right locations. Otherwise, you will create false results.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Changing the projection of a vector layer <bpt id="1">&lt;a id="changing-the-projection-of-a-vector-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Changing the projection of a vector layer <bpt id="1">&lt;a id="changing-the-projection-of-a-vector-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Vector`</ph> Tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Vector`</ph> Tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Select target CRS/EPSG code.</source>
+<target xml:lang="fr">Select target CRS/EPSG code.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>,
+   specify the file name and the location where you want to save the file.</source>
+<target xml:lang="fr">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>,
+   specify the file name and the location where you want to save the file.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: How to change the CRS of a vector a layer
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: How to change the CRS of a vector a layer
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Changing the projection of a raster layer <bpt id="1">&lt;a id="changing-the-projection-of-a-raster-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Changing the projection of a raster layer <bpt id="1">&lt;a id="changing-the-projection-of-a-raster-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Raster`</ph> Tab → <ph id="2">`Projections`</ph> → <ph id="3">`Warp (Reproject)`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Raster`</ph> Tab → <ph id="2">`Projections`</ph> → <ph id="3">`Warp (Reproject)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Select target CRS/EPSG-Code.</source>
+<target xml:lang="fr">Select target CRS/EPSG-Code.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Select resampling method.</source>
+<target xml:lang="fr">Select resampling method.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>, specify
+   the file name and the location where you want to save the file.</source>
+<target xml:lang="fr">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>, specify
+   the file name and the location where you want to save the file.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: How to change the CRS of a raster layer
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: How to change the CRS of a raster layer
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Take a moment to test what you've learned in this chapter by answering the questions below:</source>
+<target xml:lang="fr">Take a moment to test what you've learned in this chapter by answering the questions below:</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is a map projection needed when visualizing the Earth in 2D? What distortions are inevitable when you project a spherical surface to a plane?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is a map projection needed when visualizing the Earth in 2D? What distortions are inevitable when you project a spherical surface to a plane?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Because the Earth (or more precisely the reference ellipsoid) is a three‑dimensional curved surface, you cannot represent it perfectly on a flat (2D) map without distortion. The process of “projecting” transforms the curved surface into a plane.</source>
+<target xml:lang="fr">Because the Earth (or more precisely the reference ellipsoid) is a three‑dimensional curved surface, you cannot represent it perfectly on a flat (2D) map without distortion. The process of “projecting” transforms the curved surface into a plane.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Any projection necessarily distorts at least one of: angles (directions), areas (relative sizes), or distances (scales). You can often preserve one or two properties well, but not all simultaneously.</source>
+<target xml:lang="fr">Any projection necessarily distorts at least one of: angles (directions), areas (relative sizes), or distances (scales). You can often preserve one or two properties well, but not all simultaneously.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">For example, the Mercator projection preserves angles (so shapes are locally correct), which is useful for navigation, but severely distorts areas (especially towards the poles).</source>
+<target xml:lang="fr">For example, the Mercator projection preserves angles (so shapes are locally correct), which is useful for navigation, but severely distorts areas (especially towards the poles).</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Another example: equidistant projections preserve distances along particular lines (meridians or standard parallels), but distort shape or area in other parts.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Another example: equidistant projections preserve distances along particular lines (meridians or standard parallels), but distort shape or area in other parts.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Explain the difference between a Geographic CRS and a Projected (or Metric) CRS. What are their advantages and disadvantages?<ept id="1">__</ept>
+<ph id="2">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Explain the difference between a Geographic CRS and a Projected (or Metric) CRS. What are their advantages and disadvantages?<ept id="1">__</ept>
+<ph id="2">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">A Geographic CRS (Coordinate Reference System) uses an ellipsoidal (or spherical) model of the Earth and expresses locations via angular coordinates (latitude, longitude) — generally in degrees.</source>
+<target xml:lang="fr">A Geographic CRS (Coordinate Reference System) uses an ellipsoidal (or spherical) model of the Earth and expresses locations via angular coordinates (latitude, longitude) — generally in degrees.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Advantages: It naturally reflects the Earth’s curvature; it works globally (you can locate anywhere on the globe). Many global datasets, GPS systems, and maps are inherently in geographic (lat/long) form, so it provides compatibility.</source>
+<target xml:lang="fr">Advantages: It naturally reflects the Earth’s curvature; it works globally (you can locate anywhere on the globe). Many global datasets, GPS systems, and maps are inherently in geographic (lat/long) form, so it provides compatibility.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Disadvantages: Because latitude/longitude are angular, converting them to linear measures (meters, kilometers) is non‑uniform. Distances, areas, and shapes can be distorted, especially away from the equator. You can’t reliably measure Euclidean distances or areas without first projecting</source>
+<target xml:lang="fr">Disadvantages: Because latitude/longitude are angular, converting them to linear measures (meters, kilometers) is non‑uniform. Distances, areas, and shapes can be distorted, especially away from the equator. You can’t reliably measure Euclidean distances or areas without first projecting</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">A Projected (Metric) CRS transforms the Earth’s surface (or part of it) into a two‑dimensional plane, with linear units (metres, feet, etc.). The projection “flattens” the surface.</source>
+<target xml:lang="fr">A Projected (Metric) CRS transforms the Earth’s surface (or part of it) into a two‑dimensional plane, with linear units (metres, feet, etc.). The projection “flattens” the surface.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Advantages: Because the data are in a planar metric space, you can compute distances, areas, and angles more directly and with less distortion (within the projection’s intended extent). It’s better for most spatial analyses (buffering, measuring) when the area is limited.</source>
+<target xml:lang="fr">Advantages: Because the data are in a planar metric space, you can compute distances, areas, and angles more directly and with less distortion (within the projection’s intended extent). It’s better for most spatial analyses (buffering, measuring) when the area is limited.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Disadvantages: Each projected CRS is usually optimized for a particular region or zone. Outside that region, distortion increases (in shape, scale, or area). A single projection cannot serve uniformly well over the entire globe. Also, projections may introduce distortions in directions or area even within their domain.</source>
+<target xml:lang="fr">Disadvantages: Each projected CRS is usually optimized for a particular region or zone. Outside that region, distortion increases (in shape, scale, or area). A single projection cannot serve uniformly well over the entire globe. Also, projections may introduce distortions in directions or area even within their domain.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is it important to choose a CRS appropriate to your area of interest (local vs global)? What problems may arise if you apply a local CRS to global data (or vice versa)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is it important to choose a CRS appropriate to your area of interest (local vs global)? What problems may arise if you apply a local CRS to global data (or vice versa)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Because every projection is optimized to reduce distortion in some aspect (area, distance, shape) over a particular spatial extent (region). For a local area, a local or regionally tuned CRS will minimize distortion and allow more accurate measurements.</source>
+<target xml:lang="fr">Because every projection is optimized to reduce distortion in some aspect (area, distance, shape) over a particular spatial extent (region). For a local area, a local or regionally tuned CRS will minimize distortion and allow more accurate measurements.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">If you apply a local CRS (meant for a small area) to global data, distortions become extreme outside the intended region. Features may be skewed, stretched, or mislocated, and distance/area computations will be highly inaccurate in regions far from the projection’s optimal zone.</source>
+<target xml:lang="fr">If you apply a local CRS (meant for a small area) to global data, distortions become extreme outside the intended region. Features may be skewed, stretched, or mislocated, and distance/area computations will be highly inaccurate in regions far from the projection’s optimal zone.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Conversely, using a global projection (e.g. a world Mercator) for a local region may not exploit the possibility of reducing distortion, and may even yield worse local accuracy than a more specialized projection. Also, global projections often distort large areas—so local detail may suffer.</source>
+<target xml:lang="fr">Conversely, using a global projection (e.g. a world Mercator) for a local region may not exploit the possibility of reducing distortion, and may even yield worse local accuracy than a more specialized projection. Also, global projections often distort large areas—so local detail may suffer.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">In summary: applying a mismatched CRS leads to inconsistencies, misalignment of layers, errors in measurements, and misleading spatial relationships.</source>
+<target xml:lang="fr">In summary: applying a mismatched CRS leads to inconsistencies, misalignment of layers, errors in measurements, and misleading spatial relationships.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is an EPSG code, and how is it useful in selecting or referring to a CRS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is an EPSG code, and how is it useful in selecting or referring to a CRS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">EPSG stands for the European Petroleum Survey Group, which maintains a registry (database) of coordinate reference systems and projections.</source>
+<target xml:lang="fr">EPSG stands for the European Petroleum Survey Group, which maintains a registry (database) of coordinate reference systems and projections.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">An EPSG code is a numeric identifier (e.g. EPSG:4326) assigned to a particular CRS.</source>
+<target xml:lang="fr">An EPSG code is a numeric identifier (e.g. EPSG:4326) assigned to a particular CRS.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">It is useful because it provides a standardized, unambiguous way to refer to a CRS across GIS software and datasets. Rather than relying solely on possibly ambiguous names, the EPSG code ensures that the exact CRS (ellipsoid, projection parameters, units) is identified.</source>
+<target xml:lang="fr">It is useful because it provides a standardized, unambiguous way to refer to a CRS across GIS software and datasets. Rather than relying solely on possibly ambiguous names, the EPSG code ensures that the exact CRS (ellipsoid, projection parameters, units) is identified.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">When selecting a CRS in QGIS or other GIS tools, you often search by EPSG code or filter by region. The EPSG.io website is a useful resource to look up CRS codes appropriate for your region.</source>
+<target xml:lang="fr">When selecting a CRS in QGIS or other GIS tools, you often search by EPSG code or filter by region. The EPSG.io website is a useful resource to look up CRS codes appropriate for your region.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you reproject (change the CRS) of a vector layer in QGIS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you reproject (change the CRS) of a vector layer in QGIS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">In the top bar, navigate to the <ph id="1">`Vector`</ph> menu → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph>.</source>
+<target xml:lang="fr">In the top bar, navigate to the <ph id="1">`Vector`</ph> menu → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">In the parameters window, select the target CRS (by searching the EPSG code or name).</source>
+<target xml:lang="fr">In the parameters window, select the target CRS (by searching the EPSG code or name).</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>. A new layer called <ph id="2">`Reprojected`</ph> will be added to the map canvas.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>. A new layer called <ph id="2">`Reprojected`</ph> will be added to the map canvas.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Further resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Further resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">The website <bpt id="1">[</bpt><bpt id="2">__</bpt>I Hate Coordinate Systems!<ept id="2">__</ept><ept id="1">](https://ihatecoordinatesystems.com/)</ept>
+offers a “a problem-based guide of common CRS issues, root causes, and solutions”.
+Check it out in case you have any issues with CRS.</source>
+<target xml:lang="fr">The website <bpt id="1">[</bpt><bpt id="2">__</bpt>I Hate Coordinate Systems!<ept id="2">__</ept><ept id="1">](https://ihatecoordinatesystems.com/)</ept>
+offers a “a problem-based guide of common CRS issues, root causes, and solutions”.
+Check it out in case you have any issues with CRS.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

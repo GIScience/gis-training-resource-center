@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_OSM_data_ex_legacy.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise: OpenStreetMap data export <bpt id="1">&lt;a id="exercise-openstreetmap-data-export"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: OpenStreetMap data export <bpt id="1">&lt;a id="exercise-openstreetmap-data-export"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This exercise aims to show two ways how to get OpenStreetMap(OSM) as a vector
+file into QGIS. We will go through the workflow using Geofabrik, the HOT (Humanitarian OpenStreetMap Team) export tool and the QuickOSM QGIS-plugin.</source>
+<target xml:lang="fr">This exercise aims to show two ways how to get OpenStreetMap(OSM) as a vector
+file into QGIS. We will go through the workflow using Geofabrik, the HOT (Humanitarian OpenStreetMap Team) export tool and the QuickOSM QGIS-plugin.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Finding and downloading relevant datasets and preparing them for further analysis</source>
+<target xml:lang="fr">Finding and downloading relevant datasets and preparing them for further analysis</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.</source>
+<target xml:lang="fr">The exercise takes around 2 hours to complete, depending on the number of participants and their familiarity with computer systems.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Since the exercise is about finding data, there won't be any data to download.
+Instead download the <bpt id="1">__</bpt>standard folder structure<ept id="1">__</ept> <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip)</ept> and insert your data as you download it.</source>
+<target xml:lang="fr">Since the exercise is about finding data, there won't be any data to download.
+Instead download the <bpt id="1">__</bpt>standard folder structure<ept id="1">__</ept> <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_3/Module_2_Exercise_3_Data_sources.zip)</ept> and insert your data as you download it.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over a few of these methods and discuss their advantages.</source>
+<target xml:lang="fr">OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over a few of these methods and discuss their advantages.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Task 1: Geofabrik <bpt id="1">&lt;a id="task-1-geofabrik"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Geofabrik <bpt id="1">&lt;a id="task-1-geofabrik"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">The Geofabrik website offers downloads of OSM data by region.</source>
+<target xml:lang="fr">The Geofabrik website offers downloads of OSM data by region.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Go to <it id="1" pos="open">__</it><ph id="2">https://download.geofabrik.de/__</ph> and navigate to the Mauritius<ph id="3">  </ph>
+   dataset by clicking on <ph id="4">`Africa`</ph> → <ph id="5">` Mauritius`</ph></source>
+<target xml:lang="fr">Go to <it id="1" pos="open">__</it><ph id="2">https://download.geofabrik.de/__</ph> and navigate to the Mauritius<ph id="3">  </ph>
+   dataset by clicking on <ph id="4">`Africa`</ph> → <ph id="5">` Mauritius`</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Under <bpt id="1">__</bpt>Commonly Used Formats<ept id="1">__</ept> select the option <ph id="2">`mauritius-latest-free.shp.zip`</ph>
+   and download the file. Place it somewhere on your computer where you can find
+   it again and unzip it.</source>
+<target xml:lang="fr">Under <bpt id="1">__</bpt>Commonly Used Formats<ept id="1">__</ept> select the option <ph id="2">`mauritius-latest-free.shp.zip`</ph>
+   and download the file. Place it somewhere on your computer where you can find
+   it again and unzip it.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Check out the content of the folder. There are many different shapefiles,
+   each containing one kind of OSM data. The whole list of layers and what they
+   include can be found <bpt id="1">[</bpt>here<ept id="1">](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf)</ept>.</source>
+<target xml:lang="fr">Check out the content of the folder. There are many different shapefiles,
+   each containing one kind of OSM data. The whole list of layers and what they
+   include can be found <bpt id="1">[</bpt>here<ept id="1">](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Open a new QGIS project and save it in the <ph id="1">`/Project`</ph> folder of your exercise
+   folder.</source>
+<target xml:lang="fr">Open a new QGIS project and save it in the <ph id="1">`/Project`</ph> folder of your exercise
+   folder.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Load the file <ph id="1">`gis_osm_places_a_free_1.shp`</ph>. This polygon
+   layer contains the boundaries of different features. Take some time to explore
+   the data by using the attribute table.</source>
+<target xml:lang="fr">Load the file <ph id="1">`gis_osm_places_a_free_1.shp`</ph>. This polygon
+   layer contains the boundaries of different features. Take some time to explore
+   the data by using the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">(Optional) You can select all features within the layer with the
+   “fclass” = “island” and export them as a new layer.  This will allow you to
+   start creating a map of the islands of Mauritius.</source>
+<target xml:lang="fr">(Optional) You can select all features within the layer with the
+   “fclass” = “island” and export them as a new layer.  This will allow you to
+   start creating a map of the islands of Mauritius.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Load the file <ph id="1">`gis_osm_buildings_a_free_1.shp`</ph>. This polygon
+   layer contains all buildings in Mauritius mapped on OSM. Take some time
+   to explore the layer.</source>
+<target xml:lang="fr">Load the file <ph id="1">`gis_osm_buildings_a_free_1.shp`</ph>. This polygon
+   layer contains all buildings in Mauritius mapped on OSM. Take some time
+   to explore the layer.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Add a satellite base map by using the <bpt id="1">[</bpt>QuickMapServices plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)</ept>
+   to check if there are unmapped buildings.</source>
+<target xml:lang="fr">Add a satellite base map by using the <bpt id="1">[</bpt>QuickMapServices plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)</ept>
+   to check if there are unmapped buildings.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Load the file <ph id="1">`gis_osm_landuse_a_free_1.shp`</ph>. Check out the
+    dataset and use the classification function to get a better overview.</source>
+<target xml:lang="fr">Load the file <ph id="1">`gis_osm_landuse_a_free_1.shp`</ph>. Check out the
+    dataset and use the classification function to get a better overview.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <ph id="1">`gis_osm_landuse_a_free_1`</ph> in the <ph id="2">`Layer Panel`</ph>
+      → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on
+      the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <ph id="1">`gis_osm_landuse_a_free_1`</ph> in the <ph id="2">`Layer Panel`</ph>
+      → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on
+      the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.
+      Under <ph id="2">`Value`</ph> select “fclass” (short for <bpt id="3">_</bpt>featureclass<ept id="3">_</ept>).</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.
+      Under <ph id="2">`Value`</ph> select “fclass” (short for <bpt id="3">_</bpt>featureclass<ept id="3">_</ept>).</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Further down the window click on <ph id="1">`Classify`</ph>.  You will see all unique
+      values of the “fclass” column.  You can adjust the
+      colours by double-clicking on one row in the central field. Once you are
+      done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Further down the window click on <ph id="1">`Classify`</ph>.  You will see all unique
+      values of the “fclass” column.  You can adjust the
+      colours by double-clicking on one row in the central field. Once you are
+      done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">As you can see, Geofabrik is great if you want to get complete OSM datasets for
+whole countries or regions.</source>
+<target xml:lang="fr">As you can see, Geofabrik is great if you want to get complete OSM datasets for
+whole countries or regions.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Advantages</source>
+<target xml:lang="fr">Advantages</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Disadvantages</source>
+<target xml:lang="fr">Disadvantages</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">+ Quick access to complete OSM datasets</source>
+<target xml:lang="fr">+ Quick access to complete OSM datasets</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">- If one is only interested in specific features or regions (other then countries), not optimal</source>
+<target xml:lang="fr">- If one is only interested in specific features or regions (other then countries), not optimal</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">+ Very up-to-date OSM exports</source>
+<target xml:lang="fr">+ Very up-to-date OSM exports</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">- Large file size</source>
+<target xml:lang="fr">- Large file size</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">+ Clear documentation of which OSM features are contained in each shapefile</source>
+<target xml:lang="fr">+ Clear documentation of which OSM features are contained in each shapefile</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">- Only available as shapefile</source>
+<target xml:lang="fr">- Only available as shapefile</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Task 2: HOT Export Tool <bpt id="1">&lt;a id="task-2-hot-export-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: HOT Export Tool <bpt id="1">&lt;a id="task-2-hot-export-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">[</bpt>HOT Export Tool<ept id="1">](https://export.hotosm.org/v3/)</ept>
+is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
+HOT offers a browser-based tool to download OSM data with good options to specify
+region, time, feature type and data format.</source>
+<target xml:lang="fr">The <bpt id="1">[</bpt>HOT Export Tool<ept id="1">](https://export.hotosm.org/v3/)</ept>
+is a tool for accessing OSM data offered by Humanitarian OpenStreetMap Team (HOT).
+HOT offers a browser-based tool to download OSM data with good options to specify
+region, time, feature type and data format.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Go to the HOT Export tool. To use the tool you need an OSM account. If you
+   don't have one you need to create one. Click on <ph id="1">`Log in`</ph>. In the new window
+   select the option to create a new account.</source>
+<target xml:lang="fr">Go to the HOT Export tool. To use the tool you need an OSM account. If you
+   don't have one you need to create one. Click on <ph id="1">`Log in`</ph>. In the new window
+   select the option to create a new account.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">If you have an OSM account you can log in directly into the HOT Export tool by
+   clicking on <ph id="1">`Log in`</ph>.</source>
+<target xml:lang="fr">If you have an OSM account you can log in directly into the HOT Export tool by
+   clicking on <ph id="1">`Log in`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">In this example, we want to download all banking and finance features from OSM
+   in Mauritius.</source>
+<target xml:lang="fr">In this example, we want to download all banking and finance features from OSM
+   in Mauritius.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Select area or location: Zoom to Mauritius on the map or use the search
+       bar. To mark the main island there are three options. You can draw a box,
+       draw a polygon or upload a GeoJSON file with your boundaries. In this case,
+       use one of the first two options to mark Mauritius.</source>
+<target xml:lang="fr">Select area or location: Zoom to Mauritius on the map or use the search
+       bar. To mark the main island there are three options. You can draw a box,
+       draw a polygon or upload a GeoJSON file with your boundaries. In this case,
+       use one of the first two options to mark Mauritius.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Name and description: give your export the name “Mauritius financial
+       institutions” and add a short description of your export.</source>
+<target xml:lang="fr">Name and description: give your export the name “Mauritius financial
+       institutions” and add a short description of your export.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Format tab: The HOT Export tool offers many data formats in which you can
+       export data. Select GeoPackage (<ph id="1">`.gpkg`</ph>) and leave the other
+       options unchecked.</source>
+<target xml:lang="fr">Format tab: The HOT Export tool offers many data formats in which you can
+       export data. Select GeoPackage (<ph id="1">`.gpkg`</ph>) and leave the other
+       options unchecked.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Data tab: The easiest way to select the data you want to download is the Tag
+       Tree. Since we want to download financial institutions, find the “Financial”
+       category and select all options (ATM, Bank, Bureau de Change).</source>
+<target xml:lang="fr">Data tab: The easiest way to select the data you want to download is the Tag
+       Tree. Since we want to download financial institutions, find the “Financial”
+       category and select all options (ATM, Bank, Bureau de Change).</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Summary tab: Click on <ph id="1">`Create Export`</ph>. You will be forwarded to a page to
+       wait until the export is finished. When the processing is finished, the
+       page will show a download link for your file.</source>
+<target xml:lang="fr">Summary tab: Click on <ph id="1">`Create Export`</ph>. You will be forwarded to a page to
+       wait until the export is finished. When the processing is finished, the
+       page will show a download link for your file.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Load the new file in QGIS.</source>
+<target xml:lang="fr">Load the new file in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Arrange the layers on the map so you can see the new layer.</source>
+<target xml:lang="fr">Arrange the layers on the map so you can see the new layer.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">(optional) Use the classification function to get a better overview to get a better
+   overview:</source>
+<target xml:lang="fr">(optional) Use the classification function to get a better overview to get a better
+   overview:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <ph id="1">`Mauritius_finical_institution`</ph> in the <ph id="2">`Layer Panel`</ph>
+      → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on
+      the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <ph id="1">`Mauritius_finical_institution`</ph> in the <ph id="2">`Layer Panel`</ph>
+      → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on
+      the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.
+      Under <ph id="2">`Value`</ph> select "amenity".</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.
+      Under <ph id="2">`Value`</ph> select "amenity".</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Further down the window click on <ph id="1">`Classify`</ph>.  Now you should see all unique
+      values or attributes of the selected “fclass” column.  You can adjust the
+      colours by double-clicking on one row in the central field. Once you are
+      done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Further down the window click on <ph id="1">`Classify`</ph>.  Now you should see all unique
+      values or attributes of the selected “fclass” column.  You can adjust the
+      colours by double-clicking on one row in the central field. Once you are
+      done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">As you can see, the HOT Export tool offers a good mix of flexibility and quick
+access to OSM data. However, there are quite some steps involved until the data
+is in QGIS.</source>
+<target xml:lang="fr">As you can see, the HOT Export tool offers a good mix of flexibility and quick
+access to OSM data. However, there are quite some steps involved until the data
+is in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Advantages</source>
+<target xml:lang="fr">Advantages</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Disadvantages</source>
+<target xml:lang="fr">Disadvantages</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">+ Good options for data selection</source>
+<target xml:lang="fr">+ Good options for data selection</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">- Many steps involved</source>
+<target xml:lang="fr">- Many steps involved</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">+ Many different data formats available</source>
+<target xml:lang="fr">+ Many different data formats available</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">- Only fixed option for data selection</source>
+<target xml:lang="fr">- Only fixed option for data selection</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">+ Easy to use</source>
+<target xml:lang="fr">+ Easy to use</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">+ Query can easily be repeated</source>
+<target xml:lang="fr">+ Query can easily be repeated</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Task 3: QuickOSM <bpt id="1">&lt;a id="task-3-quickosm"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: QuickOSM <bpt id="1">&lt;a id="task-3-quickosm"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">The QuickOSM plugin allows you to load OSM data directly into QGIS.
+However, the plugin requires the deepest knowledge of the OSM data model,
+compared to the previous two options. To tailor your query based on the exact
+key and value you need there are two great resources:</source>
+<target xml:lang="fr">The QuickOSM plugin allows you to load OSM data directly into QGIS.
+However, the plugin requires the deepest knowledge of the OSM data model,
+compared to the previous two options. To tailor your query based on the exact
+key and value you need there are two great resources:</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OSM Wiki<ept id="1">](https://wiki.openstreetmap.org/wiki/Main_Page)</ept>, and especially the
+<bpt id="2">   [</bpt>Map features<ept id="2">](https://wiki.openstreetmap.org/wiki/Map_features)</ept> article.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OSM Wiki<ept id="1">](https://wiki.openstreetmap.org/wiki/Main_Page)</ept>, and especially the
+<bpt id="2">   [</bpt>Map features<ept id="2">](https://wiki.openstreetmap.org/wiki/Map_features)</ept> article.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Taginfo<ept id="1">](https://taginfo.openstreetmap.org/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Taginfo<ept id="1">](https://taginfo.openstreetmap.org/)</ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Have a look at both.</source>
+<target xml:lang="fr">Have a look at both.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Install the QuickOSM plugin by clicking on the <ph id="1">`Plugin`</ph> tab, → <ph id="2">`Manage and Install Plugins…`</ph> → <ph id="3">`All`</ph> → Search for "QuickOSM" → <ph id="4">`Install Plugin`</ph>.</source>
+<target xml:lang="fr">Install the QuickOSM plugin by clicking on the <ph id="1">`Plugin`</ph> tab, → <ph id="2">`Manage and Install Plugins…`</ph> → <ph id="3">`All`</ph> → Search for "QuickOSM" → <ph id="4">`Install Plugin`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Now we want to find all health facilities on the island of Mauritius.</source>
+<target xml:lang="fr">Now we want to find all health facilities on the island of Mauritius.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Position the island of Mauritius in a way that the island is completely
+       visible in your map canvas.</source>
+<target xml:lang="fr">Position the island of Mauritius in a way that the island is completely
+       visible in your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Open the QuickOSM plugin by clicking on the <ph id="1">`Vector`</ph> menu → <ph id="2">`QuickOSM`</ph> →
+<ph id="3">`QuickOSM`</ph>.</source>
+<target xml:lang="fr">Open the QuickOSM plugin by clicking on the <ph id="1">`Vector`</ph> menu → <ph id="2">`QuickOSM`</ph> →
+<ph id="3">`QuickOSM`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Quick query`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Quick query`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">In the table, add "amenity" as the key and "hospital" as the value. This
+       query will return hospital data.</source>
+<target xml:lang="fr">In the table, add "amenity" as the key and "hospital" as the value. This
+       query will return hospital data.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Click on the green plus icon to add another line to the table. In this
+       line select “OR” in the small dropdown menu on the left-hand side of the
+       new line.</source>
+<target xml:lang="fr">Click on the green plus icon to add another line to the table. In this
+       line select “OR” in the small dropdown menu on the left-hand side of the
+       new line.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Add "healthcare" as a new key with "hospital" as the value.</source>
+<target xml:lang="fr">Add "healthcare" as a new key with "hospital" as the value.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Below the table set the small dropdown menu to “Canvas Extent”</source>
+<target xml:lang="fr">Below the table set the small dropdown menu to “Canvas Extent”</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Run query`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Run query`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Check out the new layers in the layer panel. Open the attribute table of the
+   point layer. Check the “healthcare” and “amenity” columns. Which data would be
+   missing if you would have used only one of the keys?</source>
+<target xml:lang="fr">Check out the new layers in the layer panel. Open the attribute table of the
+   point layer. Check the “healthcare” and “amenity” columns. Which data would be
+   missing if you would have used only one of the keys?</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Do the same query for La Reunion which is to the southwest of Mauritius.
+   Move the island in the middle of your map canvas and click <ph id="1">`Run query`</ph>. Does
+   the attribute table of this new point layer look different?</source>
+<target xml:lang="fr">Do the same query for La Reunion which is to the southwest of Mauritius.
+   Move the island in the middle of your map canvas and click <ph id="1">`Run query`</ph>. Does
+   the attribute table of this new point layer look different?</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">What if we only want hospitals with an emergency room? In this case, we would
+   need to build a query using a combination of the operators "OR" and "AND".
+   Look at the image below.</source>
+<target xml:lang="fr">What if we only want hospitals with an emergency room? In this case, we would
+   need to build a query using a combination of the operators "OR" and "AND".
+   Look at the image below.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Advantages</source>
+<target xml:lang="fr">Advantages</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Disadvantages</source>
+<target xml:lang="fr">Disadvantages</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">+ Query can be tailored for very specific data</source>
+<target xml:lang="fr">+ Query can be tailored for very specific data</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">- Requires knowledge of OSM data model</source>
+<target xml:lang="fr">- Requires knowledge of OSM data model</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">+ Data loads directly in QGIS</source>
+<target xml:lang="fr">+ Data loads directly in QGIS</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">- Building queries can quickly become complex</source>
+<target xml:lang="fr">- Building queries can quickly become complex</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">+ Query can easily be repeated</source>
+<target xml:lang="fr">+ Query can easily be repeated</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

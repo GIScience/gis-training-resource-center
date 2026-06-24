@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_data_sources_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{note}</ph>
+In our module chapter, you can find an extensive list of possible data sources.</source>
+<target xml:lang="fr"><ph id="1">::::{note}</ph>
+In our module chapter, you can find an extensive list of possible data sources.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-center</ph>
+<ph id="3">:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html#overview-of-useful-data-repositories</ph>
+<bpt id="4">__</bpt>Module 2 Chapter 5: Data Sources<ept id="4">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-center</ph>
+<ph id="3">:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html#overview-of-useful-data-repositories</ph>
+<bpt id="4">__</bpt>Module 2 Chapter 5: Data Sources<ept id="4">__</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">(Geo) Data Sources Overview <bpt id="1">&lt;a id="geo-data-sources-overview"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">(Geo) Data Sources Overview <bpt id="1">&lt;a id="geo-data-sources-overview"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>A selection of useful (geo) data sources<ept id="2">](https://docs.google.com/document/d/1apsMZ1ecM6rylRszP8rZfIj-yj14ARs86iQ5ZtkrLZ4/edit#)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>A selection of useful (geo) data sources<ept id="2">](https://docs.google.com/document/d/1apsMZ1ecM6rylRszP8rZfIj-yj14ARs86iQ5ZtkrLZ4/edit#)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This selection includes vector, raster and text data sets, as well as stats and diagrams. If you would like to add to the list, please feel free to add your data set.</source>
+<target xml:lang="fr">This selection includes vector, raster and text data sets, as well as stats and diagrams. If you would like to add to the list, please feel free to add your data set.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What to look out for when looking for data:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What to look out for when looking for data:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data source:<ept id="1">*</ept>
+Always make sure to use data from trusted data sources. The organisation that shared the data is the best indicator. Apart from that, use of the data in trusted contexts or also download counts can be good indicators.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data source:<ept id="1">*</ept>
+Always make sure to use data from trusted data sources. The organisation that shared the data is the best indicator. Apart from that, use of the data in trusted contexts or also download counts can be good indicators.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data size:<ept id="1">*</ept>
+Sometimes you can access data in different scales, resolutions etc. Make sure to select a data set that fits your purpose and can be easily processed by you and other potential partners. E.g. if you only need data about a specific region, if feasible only select the data of this admin area.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data size:<ept id="1">*</ept>
+Sometimes you can access data in different scales, resolutions etc. Make sure to select a data set that fits your purpose and can be easily processed by you and other potential partners. E.g. if you only need data about a specific region, if feasible only select the data of this admin area.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data format:<ept id="1">*</ept>
+Maybe there are different data formats available that you can choose from. Think about your needs and what is the most practical for your use and potentially also sharing purposes.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data format:<ept id="1">*</ept>
+Maybe there are different data formats available that you can choose from. Think about your needs and what is the most practical for your use and potentially also sharing purposes.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data capture date:<ept id="1">*</ept>
+Make sure to check when the data was collected and if the collection data is in line with your needs. Check if there is potentially more up-to-date data in another framework.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data capture date:<ept id="1">*</ept>
+Make sure to check when the data was collected and if the collection data is in line with your needs. Check if there is potentially more up-to-date data in another framework.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data licence:<ept id="1">*</ept>
+What kind of licence does the data have? How can you use and share it and how do you need to cite the data source? Make sure to check the licensing and to follow the respective regulations to avoid difficulties.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data licence:<ept id="1">*</ept>
+What kind of licence does the data have? How can you use and share it and how do you need to cite the data source? Make sure to check the licensing and to follow the respective regulations to avoid difficulties.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

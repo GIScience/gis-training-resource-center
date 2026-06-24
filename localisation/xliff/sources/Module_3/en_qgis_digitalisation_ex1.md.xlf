@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_digitalisation_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Digitisation Exercise 1 <bpt id="1">&lt;a id="digitisation-exercise-1"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Digitisation Exercise 1 <bpt id="1">&lt;a id="digitisation-exercise-1"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Aim of the exercise: <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aim of the exercise: <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets.</source>
+<target xml:lang="fr">In this exercise, you will learn how to digitise points, lines, and polygons of features in settlements by creating new datasets.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Try to always use the standard folder structure. You can find a template <bpt id="2">[</bpt><bpt id="3">__</bpt>here<ept id="3">__</ept><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept>.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Try to always use the standard folder structure. You can find a template <bpt id="2">[</bpt><bpt id="3">__</bpt>here<ept id="3">__</ept><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept>.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Relevant Wiki Articles <bpt id="1">&lt;a id="relevant-wiki-articles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Relevant Wiki Articles <bpt id="1">&lt;a id="relevant-wiki-articles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitization<ept id="1">](/content/Wiki/en_qgis_digitisation_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitization<ept id="1">](/content/Wiki/en_qgis_digitisation_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Basemaps<ept id="1">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Basemaps<ept id="1">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">We received information about droughts in several places in the state of Gedo in Somalia. This information is given as coordinates and we want to digitize this information and verify if it is true.</source>
+<target xml:lang="fr">We received information about droughts in several places in the state of Gedo in Somalia. This information is given as coordinates and we want to digitize this information and verify if it is true.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Search for 5 villages in the state of Gedo.</source>
+<target xml:lang="fr">Search for 5 villages in the state of Gedo.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Write down their coordinates.</source>
+<target xml:lang="fr">Write down their coordinates.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Use OSM Placesearch to find the villages.</source>
+<target xml:lang="fr">Use OSM Placesearch to find the villages.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Maybe also include fake information about non affected regions.</source>
+<target xml:lang="fr">Maybe also include fake information about non affected regions.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Add two reports from which the information needs to be derived to verify which villages or infrastructure is actually affected.</source>
+<target xml:lang="fr">Add two reports from which the information needs to be derived to verify which villages or infrastructure is actually affected.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Digitise the correct information and create a new layer that contains all of this information.</source>
+<target xml:lang="fr">Digitise the correct information and create a new layer that contains all of this information.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Make sure that the attribute table contains enough information (name of the villages, inhabitants, or whatever information you can find)</source>
+<target xml:lang="fr">Make sure that the attribute table contains enough information (name of the villages, inhabitants, or whatever information you can find)</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

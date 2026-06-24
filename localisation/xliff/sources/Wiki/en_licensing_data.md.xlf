@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_licensing_data.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Data Licenses (working with licensed datasets) <bpt id="1">&lt;a id="data-licenses-working-with-licensed-datasets"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Licenses (working with licensed datasets) <bpt id="1">&lt;a id="data-licenses-working-with-licensed-datasets"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Licensing and working with licensed datasets in GIS involves careful adherence to legal, ethical, and practical considerations. Here are some best practices:</source>
+<target xml:lang="fr">Licensing and working with licensed datasets in GIS involves careful adherence to legal, ethical, and practical considerations. Here are some best practices:</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Understand the License Terms<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Understand the License Terms<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Read the License Agreement: Carefully review the license terms provided by the dataset owner or distributor.</source>
+<target xml:lang="fr">Read the License Agreement: Carefully review the license terms provided by the dataset owner or distributor.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Permitted Uses: Check whether the license allows for commercial, academic, or personal use.</source>
+<target xml:lang="fr">Permitted Uses: Check whether the license allows for commercial, academic, or personal use.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Restrictions: Look for restrictions on redistribution, modification, or derived works.</source>
+<target xml:lang="fr">Restrictions: Look for restrictions on redistribution, modification, or derived works.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Attribution Requirements: Ensure you understand how to credit the data source.</source>
+<target xml:lang="fr">Attribution Requirements: Ensure you understand how to credit the data source.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Jurisdictional Compliance: Ensure the license complies with legal requirements in your area or the area where the dataset will be used.</source>
+<target xml:lang="fr">Jurisdictional Compliance: Ensure the license complies with legal requirements in your area or the area where the dataset will be used.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Choose the Right License for Your Needs<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Choose the Right License for Your Needs<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">If selecting data, prefer datasets with clear, permissive licenses (e.g., Creative Commons, Open Data Commons) when possible.</source>
+<target xml:lang="fr">If selecting data, prefer datasets with clear, permissive licenses (e.g., Creative Commons, Open Data Commons) when possible.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">For proprietary data, confirm the dataset aligns with your intended use and budget.</source>
+<target xml:lang="fr">For proprietary data, confirm the dataset aligns with your intended use and budget.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Maintain Records<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Maintain Records<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Document the License: Keep a record of the license agreement for the dataset, including the version and any terms specific to your use case.</source>
+<target xml:lang="fr">Document the License: Keep a record of the license agreement for the dataset, including the version and any terms specific to your use case.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Metadata Management: Include licensing information in your project metadata to ensure clarity for collaborators and future users.</source>
+<target xml:lang="fr">Metadata Management: Include licensing information in your project metadata to ensure clarity for collaborators and future users.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Attribution and Credit<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Attribution and Credit<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Always follow attribution guidelines specified in the license.</source>
+<target xml:lang="fr">Always follow attribution guidelines specified in the license.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Use consistent citation formats in maps, reports, and presentations.</source>
+<target xml:lang="fr">Use consistent citation formats in maps, reports, and presentations.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Include attribution in metadata when sharing derived works.</source>
+<target xml:lang="fr">Include attribution in metadata when sharing derived works.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Avoid License Violations<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Avoid License Violations<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">No Unauthorized Sharing: Do not share licensed datasets with third parties unless explicitly allowed.</source>
+<target xml:lang="fr">No Unauthorized Sharing: Do not share licensed datasets with third parties unless explicitly allowed.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Limit Derived Data Use: Be cautious when using licensed data to create derivative products—ensure the license permits this.</source>
+<target xml:lang="fr">Limit Derived Data Use: Be cautious when using licensed data to create derivative products—ensure the license permits this.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Secure the Data<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Secure the Data<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Store datasets securely to prevent unauthorized access.</source>
+<target xml:lang="fr">Store datasets securely to prevent unauthorized access.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Ensure datasets are only accessible to authorized personnel in compliance with the license.</source>
+<target xml:lang="fr">Ensure datasets are only accessible to authorized personnel in compliance with the license.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Consider Open Data Alternatives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Consider Open Data Alternatives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Where feasible, use open datasets to reduce licensing complexity and promote transparency.</source>
+<target xml:lang="fr">Where feasible, use open datasets to reduce licensing complexity and promote transparency.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Examples: OpenStreetMap, USGS datasets, Copernicus data.</source>
+<target xml:lang="fr">Examples: OpenStreetMap, USGS datasets, Copernicus data.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Monitor Updates to Licenses<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Monitor Updates to Licenses<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Check periodically for updates to the dataset’s license.</source>
+<target xml:lang="fr">Check periodically for updates to the dataset’s license.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Ensure continued compliance if terms change.</source>
+<target xml:lang="fr">Ensure continued compliance if terms change.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Seek Legal Counsel When Necessary<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Seek Legal Counsel When Necessary<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">For complex projects or uncertain license terms, consult with legal professionals or your organization’s legal team.</source>
+<target xml:lang="fr">For complex projects or uncertain license terms, consult with legal professionals or your organization’s legal team.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Acknowledge Ethical Considerations<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Acknowledge Ethical Considerations<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Consider data privacy and sensitivity, especially for geospatial datasets that involve personal or culturally sensitive information.</source>
+<target xml:lang="fr">Consider data privacy and sensitivity, especially for geospatial datasets that involve personal or culturally sensitive information.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Adhere to ethical guidelines, such as those outlined by organizations like the GIS Certification Institute (GISCI) or regional equivalents.</source>
+<target xml:lang="fr">Adhere to ethical guidelines, such as those outlined by organizations like the GIS Certification Institute (GISCI) or regional equivalents.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">By adhering to these best practices, you ensure legal compliance, foster trust in your work, and contribute to a responsible and ethical GIS community.</source>
+<target xml:lang="fr">By adhering to these best practices, you ensure legal compliance, foster trust in your work, and contribute to a responsible and ethical GIS community.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

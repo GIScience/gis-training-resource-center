@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_georeferencing.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Georeferencing <bpt id="1">&lt;a id="georeferencing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Georeferencing <bpt id="1">&lt;a id="georeferencing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to the image by identifying control points on the raster that correspond to known locations on the earth, often using existing vector layers or coordinate grids as a reference.</source>
+<target xml:lang="fr">Georeferencing in QGIS is the process of aligning a raster image, such as a scanned map or aerial photograph, to a known coordinate system so that it can be used in spatial analysis. This involves assigning real-world coordinates to the image by identifying control points on the raster that correspond to known locations on the earth, often using existing vector layers or coordinate grids as a reference.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (<ph id="1">`.tiff`</ph>). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.</source>
+<target xml:lang="fr">In many cases, governmental institutions publish maps only as PDFs, without public access to the underlying data. In these cases, knowing how to correctly georeference a map allows you to access and use the information in your GIS analyses. In the case discussed in this chapter, the soil degradation map of Somalia is only available in a PDF report. In order to use the information in a GIS analysis, we can use the georeferencer to assign geographic coordinates to the pixels of the image. After georeferencing the image, the result is a raster file (<ph id="1">`.tiff`</ph>). This dataset can be vectorized (converted into vector data) or joined with other raster data, to gain additional information.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/example_georefencing_hague.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/example_georefencing_hague.png</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750 px</ph>
+<ph id="2">name: example_georeferencing_hague</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750 px</ph>
+<ph id="2">name: example_georeferencing_hague</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">A digitised old map of the Hague (Source: <bpt id="1">[</bpt>Kokoalberti<ept id="1">](https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">A digitised old map of the Hague (Source: <bpt id="1">[</bpt>Kokoalberti<ept id="1">](https://kokoalberti.com/articles/georeferencing-and-digitizing-old-maps-with-gdal/)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Georeferencing in QGIS <bpt id="1">&lt;a id="georeferencing-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Georeferencing in QGIS <bpt id="1">&lt;a id="georeferencing-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In QGIS, the Georeferencer tool is used for this process. T Users manually place control points on the raster image and assign them a geographic coordinate, either by entering the coordinates manually, or selecting the corresponding point in the QGIS map canvas. These points serve as reference points for the georeferencing algorithm to add geographic coordinates to each pixel in the raster. The algorithm then transforms the image, adjusting its scale, rotation, and position to accurately overlay it with other geospatial layers. Georeferenced images become valuable for digitizing features and conducting spatial analyses within a GIS.</source>
+<target xml:lang="fr">In QGIS, the Georeferencer tool is used for this process. T Users manually place control points on the raster image and assign them a geographic coordinate, either by entering the coordinates manually, or selecting the corresponding point in the QGIS map canvas. These points serve as reference points for the georeferencing algorithm to add geographic coordinates to each pixel in the raster. The algorithm then transforms the image, adjusting its scale, rotation, and position to accurately overlay it with other geospatial layers. Georeferenced images become valuable for digitizing features and conducting spatial analyses within a GIS.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">There are several transformation algorithms available in QGIS to reference a map. If the map is in the same CRS and only needs to be rotated, a linear transformation is sufficient. However, if the image or map is in a different CRS or is visibly skewed, a polynomial transformation is needed. The more complex the transformation algorithm is, the more Ground Control points you need.</source>
+<target xml:lang="fr">There are several transformation algorithms available in QGIS to reference a map. If the map is in the same CRS and only needs to be rotated, a linear transformation is sufficient. However, if the image or map is in a different CRS or is visibly skewed, a polynomial transformation is needed. The more complex the transformation algorithm is, the more Ground Control points you need.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_georef_transformations.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_georef_transformations.png</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600 px</ph>
+<ph id="2">name: en_georef_transformations</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600 px</ph>
+<ph id="2">name: en_georef_transformations</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: <bpt id="1">[</bpt>ESRI<ept id="1">](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: <bpt id="1">[</bpt>ESRI<ept id="1">](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the <bpt id="1">[</bpt>QGIS Documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html)</ept>.</source>
+<target xml:lang="fr">In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the <bpt id="1">[</bpt>QGIS Documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">How to Georeference in QGIS <bpt id="1">&lt;a id="how-to-georeference-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to Georeference in QGIS <bpt id="1">&lt;a id="how-to-georeference-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">In order to georeference a PDF map, you need to follow the following steps:</source>
+<target xml:lang="fr">In order to georeference a PDF map, you need to follow the following steps:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Prepare the map you want to georeference either by exporting the relevant page on the PDF or taking a screenshot.</source>
+<target xml:lang="fr">Prepare the map you want to georeference either by exporting the relevant page on the PDF or taking a screenshot.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">In your QGIS window, add a basemap using the XYZ-tiles:</source>
+<target xml:lang="fr">In your QGIS window, add a basemap using the XYZ-tiles:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Tiles`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Tiles`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">A new window will open. Under <ph id="1">`XYZ Connection`</ph> at the top of the window, select "OpenStreetMap".</source>
+<target xml:lang="fr">A new window will open. Under <ph id="1">`XYZ Connection`</ph> at the top of the window, select "OpenStreetMap".</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Add`</ph>.
+Ideally, use a basemap where you can identify exact locations on both the basemap and the map you want to georeference.</source>
+<target xml:lang="fr">Click <ph id="1">`Add`</ph>.
+Ideally, use a basemap where you can identify exact locations on both the basemap and the map you want to georeference.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Open the Georeferencer by navigating to the Top Bar → <ph id="1">`Layer`</ph> → <ph id="2">`Georeferencer`</ph> (see <ph id="3">{numref}</ph><ph id="4">`open_georeferencer`</ph>).</source>
+<target xml:lang="fr">Open the Georeferencer by navigating to the Top Bar → <ph id="1">`Layer`</ph> → <ph id="2">`Georeferencer`</ph> (see <ph id="3">{numref}</ph><ph id="4">`open_georeferencer`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_open_georefencer.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_open_georefencer.png</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.36_open_georefencer</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.36_open_georefencer</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Opening the Georeferencer in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Opening the Georeferencer in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">A new window will open. This is the <bpt id="1">__</bpt>georeferencer<ept id="1">__</ept>. To add an image to georeference, click on <bpt id="2">![</bpt><ept id="2">](/fig/3.36_add_raster_georef.png)</ept> <ph id="3">`Open Raster`</ph>.</source>
+<target xml:lang="fr">A new window will open. This is the <bpt id="1">__</bpt>georeferencer<ept id="1">__</ept>. To add an image to georeference, click on <bpt id="2">![</bpt><ept id="2">](/fig/3.36_add_raster_georef.png)</ept> <ph id="3">`Open Raster`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Select the image of the map you want to georeference. You can load image files, as well as PDFClick <ph id="1">`Open`</ph>.</source>
+<target xml:lang="fr">Select the image of the map you want to georeference. You can load image files, as well as PDFClick <ph id="1">`Open`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The image will appear in the middle of the georeferencer window. Click on <bpt id="1">![</bpt><ept id="1">](/fig/3.36_georef_transformation_settings.png)</ept> <ph id="2">`Transformation settings...`</ph>.</source>
+<target xml:lang="fr">The image will appear in the middle of the georeferencer window. Click on <bpt id="1">![</bpt><ept id="1">](/fig/3.36_georef_transformation_settings.png)</ept> <ph id="2">`Transformation settings...`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">A new window will open. Here you can set the transformation type and the target CRS. Below, you can set the name and save location of the file. Make sure that the <ph id="1">`Load in the project when done`</ph> is checked.</source>
+<target xml:lang="fr">A new window will open. Here you can set the transformation type and the target CRS. Below, you can set the name and save location of the file. Make sure that the <ph id="1">`Load in the project when done`</ph> is checked.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note} </ph>Setting the appropriate Coordinate Reference System
+<ph id="2">:class: tip</ph>
+Ideally, you want to set the CRS of the georeferenced map to the same as your project/the other layers in your project. To learn how to choose an appropriate CRS, check out the <bpt id="3">[</bpt>chapter on projections<ept id="3">](/content/Module_2/en_qgis_projections.md)</ept> in module 2.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note} </ph>Setting the appropriate Coordinate Reference System
+<ph id="2">:class: tip</ph>
+Ideally, you want to set the CRS of the georeferenced map to the same as your project/the other layers in your project. To learn how to choose an appropriate CRS, check out the <bpt id="3">[</bpt>chapter on projections<ept id="3">](/content/Module_2/en_qgis_projections.md)</ept> in module 2.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+In most cases, you can leave the transformation type on linear. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose a polynomial as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+In most cases, you can leave the transformation type on linear. Regional maps are usually in a conformal projection (i.e. the angles are preserved). Satellite imagery as well. If you realise that the angles are not true, or the map is deformed or distorted, you may need to choose a polynomial as transformation type. Polynomial transformations need more Ground Control Points and the points need to be distributed evenly across the map.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Ok`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Ok`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Once you have set the transformation type, you can start adding Ground Control Points (GCP) by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/3.36_georef_add_point.png)</ept> <ph id="2">`Add Point`</ph>. Ground Control Points are points that you ascribe specific geographic coordinates to.</source>
+<target xml:lang="fr">Once you have set the transformation type, you can start adding Ground Control Points (GCP) by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/3.36_georef_add_point.png)</ept> <ph id="2">`Add Point`</ph>. Ground Control Points are points that you ascribe specific geographic coordinates to.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Click on a point on the map image. This will be the precise location that you can identify on both the basemap and the map you wish to georeference.</source>
+<target xml:lang="fr">Click on a point on the map image. This will be the precise location that you can identify on both the basemap and the map you wish to georeference.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Once you click on a position, a new window will appear. Here, you add the coordinates to the point you selected. There are two options to do this:</source>
+<target xml:lang="fr">Once you click on a position, a new window will appear. Here, you add the coordinates to the point you selected. There are two options to do this:</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Enter the coordinates manually. You will need to know the exact coordinate. Sometimes, you have a coordinate grid on maps where you can.</source>
+<target xml:lang="fr">Enter the coordinates manually. You will need to know the exact coordinate. Sometimes, you have a coordinate grid on maps where you can.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Select the points <bpt id="1">![</bpt><ept id="1">](/fig/en_3.36_georef_select_from_canvas.png)</ept>. This mode will minimize the georeferencer and open the QGIS Map canvas. Zoom to the same location you selected on the non-georeferenced map and Click once.</source>
+<target xml:lang="fr">Select the points <bpt id="1">![</bpt><ept id="1">](/fig/en_3.36_georef_select_from_canvas.png)</ept>. This mode will minimize the georeferencer and open the QGIS Map canvas. Zoom to the same location you selected on the non-georeferenced map and Click once.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Once the coordinates are entered, click <ph id="1">`Ok`</ph>.</source>
+<target xml:lang="fr">Once the coordinates are entered, click <ph id="1">`Ok`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">The georeferencer window will open again. This time, below the map image, you can see a point in the table. These are the Ground Control Points. Continue adding more GCP. Spread them out over the entire map. Make sure that the <ph id="1">`Mean error`</ph> in the bottom right corner of the georeferencer window is as low as possible (below 5 is ideal).</source>
+<target xml:lang="fr">The georeferencer window will open again. This time, below the map image, you can see a point in the table. These are the Ground Control Points. Continue adding more GCP. Spread them out over the entire map. Make sure that the <ph id="1">`Mean error`</ph> in the bottom right corner of the georeferencer window is as low as possible (below 5 is ideal).</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_georef_dialogue_GCP.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_georef_dialogue_GCP.png</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700 px</ph>
+<ph id="2">name: en_3.36_georef_dialogue_GCP</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700 px</ph>
+<ph id="2">name: en_3.36_georef_dialogue_GCP</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Georeferencer dialogue in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Georeferencer dialogue in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Once you have added enough points, click on <bpt id="1">![</bpt><ept id="1">](/fig/3.36_start_georef.png)</ept> <ph id="2">`Start Georeferencing`</ph>. QGIS will use the Points you added to transform the image into a georeferenced image, where every pixel has GPS coordinates ascribed to it.</source>
+<target xml:lang="fr">Once you have added enough points, click on <bpt id="1">![</bpt><ept id="1">](/fig/3.36_start_georef.png)</ept> <ph id="2">`Start Georeferencing`</ph>. QGIS will use the Points you added to transform the image into a georeferenced image, where every pixel has GPS coordinates ascribed to it.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">You can close the Georefencer window. Decide whether you want to save the GPC points in a file. If you are not sure if your georeferencing accuracy was precise enough, save the GPC points so you don't have to do all the work again.</source>
+<target xml:lang="fr">You can close the Georefencer window. Decide whether you want to save the GPC points in a file. If you are not sure if your georeferencing accuracy was precise enough, save the GPC points so you don't have to do all the work again.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Congratulations, the georeferenced map will now appear as a raster layer in your QGIS-project</source>
+<target xml:lang="fr">Congratulations, the georeferenced map will now appear as a raster layer in your QGIS-project</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_finished_georef.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_finished_georef.png</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700 px</ph>
+<ph id="2">name: en_3.36_finished_georef</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700 px</ph>
+<ph id="2">name: en_3.36_finished_georef</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">A georeferenced map of Somalia in the QGIS Map Canvas
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A georeferenced map of Somalia in the QGIS Map Canvas
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Adjusting the georeferenced layer <bpt id="1">&lt;a id="adjusting-the-georeferenced-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adjusting the georeferenced layer <bpt id="1">&lt;a id="adjusting-the-georeferenced-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">It is possible to adjust the transparency of the georeferenced map so you can see the underlying layers:</source>
+<target xml:lang="fr">It is possible to adjust the transparency of the georeferenced map so you can see the underlying layers:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Open the Layer Properties by <bpt id="1">&lt;kbd></bpt>Right-Clicking<ept id="1">&lt;/kbd></ept> on the layer and selecting <bpt id="2">__</bpt>Properties<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Open the Layer Properties by <bpt id="1">&lt;kbd></bpt>Right-Clicking<ept id="1">&lt;/kbd></ept> on the layer and selecting <bpt id="2">__</bpt>Properties<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">__</bpt>Transparency Tab<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">__</bpt>Transparency Tab<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Set the global opacity to 50%.</source>
+<target xml:lang="fr">Set the global opacity to 50%.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Alternatively, it is also possible to remove the white background. This is done by assigning the white pixels to the Alpha value in the transparency tab under "Custom Transparency Options".</source>
+<target xml:lang="fr">Alternatively, it is also possible to remove the white background. This is done by assigning the white pixels to the Alpha value in the transparency tab under "Custom Transparency Options".</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Open the Layer Properties by <bpt id="1">&lt;kbd></bpt>Right-Clicking<ept id="1">&lt;/kbd></ept> on the layer and selecting <bpt id="2">__</bpt>Properties<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Open the Layer Properties by <bpt id="1">&lt;kbd></bpt>Right-Clicking<ept id="1">&lt;/kbd></ept> on the layer and selecting <bpt id="2">__</bpt>Properties<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">__</bpt>Transparency Tab<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">__</bpt>Transparency Tab<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Custom Transparency Options<ept id="1">__</ept> box, under Transparency Band, select Band 4 (Alpha).</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Custom Transparency Options<ept id="1">__</ept> box, under Transparency Band, select Band 4 (Alpha).</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">To the right, click on <bpt id="1">![</bpt><ept id="1">](/fig/en_3.36_add_value_from_display)</ept> <ph id="2">`Add value from display`</ph>.</source>
+<target xml:lang="fr">To the right, click on <bpt id="1">![</bpt><ept id="1">](/fig/en_3.36_add_value_from_display)</ept> <ph id="2">`Add value from display`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Click on the white colour on the georeferenced map in the map canvas.</source>
+<target xml:lang="fr">Click on the white colour on the georeferenced map in the map canvas.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is georeferencing, and why is it important?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is georeferencing, and why is it important?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Georeferencing is the process of assigning real‑world spatial coordinates (in a known coordinate reference system) to an image (e.g. aerial photograph, scanned map) so that it aligns correctly with geographic (vector or raster) data.</source>
+<target xml:lang="fr">Georeferencing is the process of assigning real‑world spatial coordinates (in a known coordinate reference system) to an image (e.g. aerial photograph, scanned map) so that it aligns correctly with geographic (vector or raster) data.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">This lets you overlay, compare, measure, and analyze that image together with other GIS data. Without georeferencing, the image “floats” with no spatial context.</source>
+<target xml:lang="fr">This lets you overlay, compare, measure, and analyze that image together with other GIS data. Without georeferencing, the image “floats” with no spatial context.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">It ensures spatial accuracy, integration, and consistency across datasets, and enables meaningful spatial analysis and map production.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">It ensures spatial accuracy, integration, and consistency across datasets, and enables meaningful spatial analysis and map production.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are Ground Control Points (GCPs)? Why is it important to distribute them evenly across the image?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are Ground Control Points (GCPs)? Why is it important to distribute them evenly across the image?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Ground Control Points (GCPs) are specific points in the image for which the real-world coordinates are known (i.e. you can identify the same point both in the raster and in a reference map or vector layer).</source>
+<target xml:lang="fr">Ground Control Points (GCPs) are specific points in the image for which the real-world coordinates are known (i.e. you can identify the same point both in the raster and in a reference map or vector layer).</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">In georeferencing, you collect pairs of image coordinates and ground coordinates at these control points, and from them derive the transformation that maps the entire image into the coordinate system.</source>
+<target xml:lang="fr">In georeferencing, you collect pairs of image coordinates and ground coordinates at these control points, and from them derive the transformation that maps the entire image into the coordinate system.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why distribute them evenly?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why distribute them evenly?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">If all GCPs cluster in one area, the transformation may be more accurate locally there but very distorted elsewhere.</source>
+<target xml:lang="fr">If all GCPs cluster in one area, the transformation may be more accurate locally there but very distorted elsewhere.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Even distribution (across corners, edges, center) helps constrain distortions across the full image extent and produces a more stable, balanced warp.</source>
+<target xml:lang="fr">Even distribution (across corners, edges, center) helps constrain distortions across the full image extent and produces a more stable, balanced warp.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">It reduces extrapolation errors and ensures that all parts of the image are controlled.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">It reduces extrapolation errors and ensures that all parts of the image are controlled.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

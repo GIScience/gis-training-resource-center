@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Glossary/en_glossary_1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Glossary <bpt id="1">&lt;a id="glossary"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Glossary <bpt id="1">&lt;a id="glossary"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Term</source>
+<target xml:lang="fr">Term</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Analysis Map</source>
+<target xml:lang="fr">Analysis Map</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Analyses data in respect to their geographic location.</source>
+<target xml:lang="fr">Analyses data in respect to their geographic location.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Atlas</source>
+<target xml:lang="fr">Atlas</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas.</source>
+<target xml:lang="fr">An Atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Attribute Table</source>
+<target xml:lang="fr">Attribute Table</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">The attribute table displays information on features of a selected layer in QGIS. Each row in the table represents a feature (with or without geometry), while columns store specific attributes. This sort of table facilitates searching, selection, sorting, filtering, and editing of features.</source>
+<target xml:lang="fr">The attribute table displays information on features of a selected layer in QGIS. Each row in the table represents a feature (with or without geometry), while columns store specific attributes. This sort of table facilitates searching, selection, sorting, filtering, and editing of features.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Basemap</source>
+<target xml:lang="fr">Basemap</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Background Map, (f. ex. Google or Bing Basemaps) &lt; QuickMapServices.</source>
+<target xml:lang="fr">Background Map, (f. ex. Google or Bing Basemaps) &lt; QuickMapServices.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Buffer Tool</source>
+<target xml:lang="fr">Buffer Tool</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Buffers define areas at specified distances from an object or set of objects in an environment. In GIS, buffers are ideal for analyses that involve distance constraints.</source>
+<target xml:lang="fr">Buffers define areas at specified distances from an object or set of objects in an environment. In GIS, buffers are ideal for analyses that involve distance constraints.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Categorized Classification</source>
+<target xml:lang="fr">Categorized Classification</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Categorized Classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</source>
+<target xml:lang="fr">Categorized Classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Cartography</source>
+<target xml:lang="fr">Cartography</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Cartography is the study and practice of making maps.</source>
+<target xml:lang="fr">Cartography is the study and practice of making maps.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Centroids</source>
+<target xml:lang="fr">Centroids</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">This process creates a new point layer, with points representing the centroids of the geometries of the input layer.</source>
+<target xml:lang="fr">This process creates a new point layer, with points representing the centroids of the geometries of the input layer.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Clip Tool</source>
+<target xml:lang="fr">Clip Tool</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The  Clip tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset.</source>
+<target xml:lang="fr">The  Clip tool is used to cut a vector layer with the boundaries of another polygon layer. It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, creating a refined dataset.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Descriptive Map</source>
+<target xml:lang="fr">Descriptive Map</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">A Descriptive Map is used to better visualize a specific ongoing and/or past situation.</source>
+<target xml:lang="fr">A Descriptive Map is used to better visualize a specific ongoing and/or past situation.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Digitization</source>
+<target xml:lang="fr">Digitization</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data. During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons.</source>
+<target xml:lang="fr">Digitization is the process of converting geographic data from maps or images into digital form commonly represented as vector data. During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Dissolve Tool</source>
+<target xml:lang="fr">Dissolve Tool</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">The Dissolve Tool aggregates geometries with the same attribute values.</source>
+<target xml:lang="fr">The Dissolve Tool aggregates geometries with the same attribute values.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Field Calculator</source>
+<target xml:lang="fr">Field Calculator</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">The field calculator allows you that create a new field or update an existing one. You can perform calculations whether with existing attribute values or by using defined functions.</source>
+<target xml:lang="fr">The field calculator allows you that create a new field or update an existing one. You can perform calculations whether with existing attribute values or by using defined functions.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">General Reference Map</source>
+<target xml:lang="fr">General Reference Map</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">A General Reference Map shows important physical features of an area.</source>
+<target xml:lang="fr">A General Reference Map shows important physical features of an area.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">GIS</source>
+<target xml:lang="fr">GIS</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">A Geographic Information System (GIS) is a system that creates, manages, analyzes, and maps all types of data. GIS connects data to a map, integrating location data with all types of descriptive information.</source>
+<target xml:lang="fr">A Geographic Information System (GIS) is a system that creates, manages, analyzes, and maps all types of data. GIS connects data to a map, integrating location data with all types of descriptive information.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Graduated Classification</source>
+<target xml:lang="fr">Graduated Classification</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Graduated classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</source>
+<target xml:lang="fr">Graduated classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Infrastructure Map</source>
+<target xml:lang="fr">Infrastructure Map</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">An Infrastructure Map displays relevant features and structures in a specific area.</source>
+<target xml:lang="fr">An Infrastructure Map displays relevant features and structures in a specific area.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Graduated Classification</source>
+<target xml:lang="fr">Graduated Classification</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">A Graduated Classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. Graduated classification is used for quantitative data usually interval or ratio scaled.</source>
+<target xml:lang="fr">A Graduated Classification in GIS involves categorizing spatial data into classes or ranges based on a progression of values. Graduated classification is used for quantitative data usually interval or ratio scaled.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Intersection</source>
+<target xml:lang="fr">Intersection</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">The Intersection Tool extracts the part of layers which overlap.</source>
+<target xml:lang="fr">The Intersection Tool extracts the part of layers which overlap.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Layer</source>
+<target xml:lang="fr">Layer</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">QGIS visualizes data by stacking layers on top of one another to create maps. Every layer represents one set of information. The layers are visible in the order in which they were arranged in a project.  A layer can only consist of geographic objects of the same type.</source>
+<target xml:lang="fr">QGIS visualizes data by stacking layers on top of one another to create maps. Every layer represents one set of information. The layers are visible in the order in which they were arranged in a project.  A layer can only consist of geographic objects of the same type.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Non-spatial Geodataprocessing</source>
+<target xml:lang="fr">Non-spatial Geodataprocessing</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the non-geometric attributes of geospatial datasets. This can include data cleaning, transformation, enrichment and analysis based on the associated attribute information, such as population statistics, land use classifications or economic indicators.</source>
+<target xml:lang="fr">Non-spatial geodataprocessing in QGIS refers to the manipulation, subsetting and analysis of attribute data within a GIS environment without directly involving spatial components. It involves operations on the non-geometric attributes of geospatial datasets. This can include data cleaning, transformation, enrichment and analysis based on the associated attribute information, such as population statistics, land use classifications or economic indicators.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Non-spatial Queries</source>
+<target xml:lang="fr">Non-spatial Queries</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">In GIS you can query (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that correspond to the chosen attribute are displayed. Data filtering is a valuable technique for creating subsets of features that can be exported as a new layer.</source>
+<target xml:lang="fr">In GIS you can query (filter) data based on specific attribute information. Once the filtering is successful, only the desired features that correspond to the chosen attribute are displayed. Data filtering is a valuable technique for creating subsets of features that can be exported as a new layer.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Overview map</source>
+<target xml:lang="fr">Overview map</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">An overview map in the corner of your map will help locate the area you are viewing on the main map.</source>
+<target xml:lang="fr">An overview map in the corner of your map will help locate the area you are viewing on the main map.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Plugins</source>
+<target xml:lang="fr">Plugins</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Plugins are extensions for QGIS, which provide extended functionalities.</source>
+<target xml:lang="fr">Plugins are extensions for QGIS, which provide extended functionalities.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Print Layout</source>
+<target xml:lang="fr">Print Layout</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">The print layout in QGIS is where you design and finalize the map in order to print or export it as a PDF or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map.</source>
+<target xml:lang="fr">The print layout in QGIS is where you design and finalize the map in order to print or export it as a PDF or format of your choice. Here you can add important elements such as the legend, a title, an explanatory text and everything you need to create a comprehensive map.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Project File</source>
+<target xml:lang="fr">Project File</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">All used geodata, styling files and documentation are stored in the Project File.</source>
+<target xml:lang="fr">All used geodata, styling files and documentation are stored in the Project File.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Projections</source>
+<target xml:lang="fr">Projections</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Coordinate Reference Systems are in QGIS the default projection, or CRS, the WGS84 Geographic Coordinate System.</source>
+<target xml:lang="fr">Coordinate Reference Systems are in QGIS the default projection, or CRS, the WGS84 Geographic Coordinate System.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">QGIS</source>
+<target xml:lang="fr">QGIS</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">QGIS is an open source geoinformation system software.</source>
+<target xml:lang="fr">QGIS is an open source geoinformation system software.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">QuickOSM Plugin</source>
+<target xml:lang="fr">QuickOSM Plugin</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">By installing the QuickOSM plugin you can run the query directly in QGIS to download data from OpenStreetMap.</source>
+<target xml:lang="fr">By installing the QuickOSM plugin you can run the query directly in QGIS to download data from OpenStreetMap.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Raster Data File</source>
+<target xml:lang="fr">Raster Data File</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Raster Data are images which contain a matrix of pixels. Each pixel stores a value. Since a raster is based on an image, the resolution defines the accuracy of the data and size of the pixels.</source>
+<target xml:lang="fr">Raster Data are images which contain a matrix of pixels. Each pixel stores a value. Since a raster is based on an image, the resolution defines the accuracy of the data and size of the pixels.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Raster Data File Formats:</source>
+<target xml:lang="fr">Raster Data File Formats:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Raster data can have the following data formats.</source>
+<target xml:lang="fr">Raster data can have the following data formats.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">.tif/.tiff/.geotiff</source>
+<target xml:lang="fr">.tif/.tiff/.geotiff</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Tag Image File Format</source>
+<target xml:lang="fr">Tag Image File Format</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">.nc</source>
+<target xml:lang="fr">.nc</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">netCDF</source>
+<target xml:lang="fr">netCDF</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">.asc</source>
+<target xml:lang="fr">.asc</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Esri ASCII Grid files</source>
+<target xml:lang="fr">Esri ASCII Grid files</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Single Symbol Classification</source>
+<target xml:lang="fr">Single Symbol Classification</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">By default, QGIS visualizes all layers in the Single Symbol Setting. In this setting, many parameters like colour or opacity could be changed but data couldn't be classified.</source>
+<target xml:lang="fr">By default, QGIS visualizes all layers in the Single Symbol Setting. In this setting, many parameters like colour or opacity could be changed but data couldn't be classified.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Spatial Analysis</source>
+<target xml:lang="fr">Spatial Analysis</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Spatial Analysis studies entities and events using their topological, geometric, or geographic properties.</source>
+<target xml:lang="fr">Spatial Analysis studies entities and events using their topological, geometric, or geographic properties.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Spatial Joins</source>
+<target xml:lang="fr">Spatial Joins</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their spatial relationship. This process enriches data by incorporating relevant details from one layer into another based on their geographical associations.</source>
+<target xml:lang="fr">Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their spatial relationship. This process enriches data by incorporating relevant details from one layer into another based on their geographical associations.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Spatial Queries</source>
+<target xml:lang="fr">Spatial Queries</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Spatial queries are all methods you use to select features based on their location.</source>
+<target xml:lang="fr">Spatial queries are all methods you use to select features based on their location.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Symbology for Raster Data</source>
+<target xml:lang="fr">Symbology for Raster Data</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Raster data are basically a grid of pixels with different (numerical) values, so it is only possible to assign colours to the different values of the pixels.</source>
+<target xml:lang="fr">Raster data are basically a grid of pixels with different (numerical) values, so it is only possible to assign colours to the different values of the pixels.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Symbology for Vector Data</source>
+<target xml:lang="fr">Symbology for Vector Data</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Graphical variables can be used to style vector data. Vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data.</source>
+<target xml:lang="fr">Graphical variables can be used to style vector data. Vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Text Data:</source>
+<target xml:lang="fr">Text Data:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Text data can have the following data formats.</source>
+<target xml:lang="fr">Text data can have the following data formats.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">.csv</source>
+<target xml:lang="fr">.csv</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">comma-separated values</source>
+<target xml:lang="fr">comma-separated values</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">.xls</source>
+<target xml:lang="fr">.xls</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">EXCEL</source>
+<target xml:lang="fr">EXCEL</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Thematic Map</source>
+<target xml:lang="fr">Thematic Map</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">A Thematic Map focusses on a specific theme or subject.</source>
+<target xml:lang="fr">A Thematic Map focusses on a specific theme or subject.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Topographic Map</source>
+<target xml:lang="fr">Topographic Map</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">A Topographic Map represents the physical location of objects in the real world. The representation of elements in topographic maps is done via conventional signs (e.g.: blue for water, green for forests, yellow for agricultural land).</source>
+<target xml:lang="fr">A Topographic Map represents the physical location of objects in the real world. The representation of elements in topographic maps is done via conventional signs (e.g.: blue for water, green for forests, yellow for agricultural land).</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Vector Data File</source>
+<target xml:lang="fr">Vector Data File</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Vector Data is used to represent real world features in a GIS. A vector feature can have a geometry type of point, line or a polygon.</source>
+<target xml:lang="fr">Vector Data is used to represent real world features in a GIS. A vector feature can have a geometry type of point, line or a polygon.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Vector File Formats:</source>
+<target xml:lang="fr">Vector File Formats:</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Vector data can have the following data formats.</source>
+<target xml:lang="fr">Vector data can have the following data formats.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">.shp</source>
+<target xml:lang="fr">.shp</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Shapefile</source>
+<target xml:lang="fr">Shapefile</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">.gpkg</source>
+<target xml:lang="fr">.gpkg</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">GeoPackage</source>
+<target xml:lang="fr">GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">.kml</source>
+<target xml:lang="fr">.kml</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Keyhole Markup Language &lt; Google Earth</source>
+<target xml:lang="fr">Keyhole Markup Language &lt; Google Earth</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">.gpx</source>
+<target xml:lang="fr">.gpx</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">GPS Exchange Format</source>
+<target xml:lang="fr">GPS Exchange Format</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">.geojson</source>
+<target xml:lang="fr">.geojson</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">GeoJSON</source>
+<target xml:lang="fr">GeoJSON</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

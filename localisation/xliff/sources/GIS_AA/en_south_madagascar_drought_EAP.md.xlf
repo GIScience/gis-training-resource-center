@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_south_madagascar_drought_EAP.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Drought EAP for southern Madagascar: Hazard and Vulnerability analysis <bpt id="1">&lt;a id="drought-eap-for-southern-madagascar-hazard-and-vulnerability-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Drought EAP for southern Madagascar: Hazard and Vulnerability analysis <bpt id="1">&lt;a id="drought-eap-for-southern-madagascar-hazard-and-vulnerability-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic} </ph>Context
+For the Drought Early Action Protocol (EAP) by the Malagasy Red Cross (CRM), we developed a hazard and vulnerability analysis. The result ware reproducible maps showing a composite drought vulnerability combining hazard recurrence (rainfall deficits) and documented humanitarian impacts (IPC phase 3 or above). The two indicators are combined and classified into three levels of drought vulnerability (High/Medium/Low).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{topic} </ph>Context
+For the Drought Early Action Protocol (EAP) by the Malagasy Red Cross (CRM), we developed a hazard and vulnerability analysis. The result ware reproducible maps showing a composite drought vulnerability combining hazard recurrence (rainfall deficits) and documented humanitarian impacts (IPC phase 3 or above). The two indicators are combined and classified into three levels of drought vulnerability (High/Medium/Low).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>QGIS Project<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+The QGIS project and the datasets used in this project can be found here:
+<bpt id="4">__</bpt><bpt id="5">[</bpt>MDG_DROUGHT_EAP.qgz<ept id="5">]()</ept><ept id="4">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>QGIS Project<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+The QGIS project and the datasets used in this project can be found here:
+<bpt id="4">__</bpt><bpt id="5">[</bpt>MDG_DROUGHT_EAP.qgz<ept id="5">]()</ept><ept id="4">__</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers or Google Earth Engine.</source>
+<target xml:lang="fr">Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers or Google Earth Engine.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Part 1: Historical rainfall deficit recurrence map (CHIRPS-based, 2000–2024) aggregated at district level <bpt id="1">&lt;a id="part-1-historical-rainfall-deficit-recurrence-map-chirps-based-20002024-aggregated-at-district-level"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Part 1: Historical rainfall deficit recurrence map (CHIRPS-based, 2000–2024) aggregated at district level <bpt id="1">&lt;a id="part-1-historical-rainfall-deficit-recurrence-map-chirps-based-20002024-aggregated-at-district-level"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Objective:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Objective:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Show spatial recurrence of significant rainfall deficits in southern Madagascar over a long reference period (ideally 2000–2024).
+Suggested approach (open to your advice):</source>
+<target xml:lang="fr">Show spatial recurrence of significant rainfall deficits in southern Madagascar over a long reference period (ideally 2000–2024).
+Suggested approach (open to your advice):</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Use CHIRPS monthly or seasonal data.</source>
+<target xml:lang="fr">Use CHIRPS monthly or seasonal data.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Calculate anomalies relative to long-term averages.</source>
+<target xml:lang="fr">Calculate anomalies relative to long-term averages.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Define a threshold for severe deficit (e.g. ≤ -30% or ≤ -40%).</source>
+<target xml:lang="fr">Define a threshold for severe deficit (e.g. ≤ -30% or ≤ -40%).</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Count frequency of deficit events over the reference period.</source>
+<target xml:lang="fr">Count frequency of deficit events over the reference period.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Aggregate at district level (ADM2).</source>
+<target xml:lang="fr">Aggregate at district level (ADM2).</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Output:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Output:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">District-level choropleth (High / Medium / Low recurrence).</source>
+<target xml:lang="fr">District-level choropleth (High / Medium / Low recurrence).</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Clear, simple methodological note explaining threshold and aggregation.</source>
+<target xml:lang="fr">Clear, simple methodological note explaining threshold and aggregation.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Questions:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Questions:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">CHIRPS monthly or seasonal data: How to define seasons? -> look at rain seasons in mdg or simply DJF, MAM</source>
+<target xml:lang="fr">CHIRPS monthly or seasonal data: How to define seasons? -> look at rain seasons in mdg or simply DJF, MAM</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Should I explain my choice for <ph id="1">`Daily_RNL`</ph> instead of <ph id="2">`Daily_SAT`</ph>?</source>
+<target xml:lang="fr">Should I explain my choice for <ph id="1">`Daily_RNL`</ph> instead of <ph id="2">`Daily_SAT`</ph>?</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Is the question: <bpt id="1">*</bpt>How widespread are rainfall deficits in the districts?<ept id="1">*</ept> OR <bpt id="2">*</bpt>How widespread are rainfall deficits where livelihoods depend on rainfall?<ept id="2">*</ept></source>
+<target xml:lang="fr">Is the question: <bpt id="1">*</bpt>How widespread are rainfall deficits in the districts?<ept id="1">*</ept> OR <bpt id="2">*</bpt>How widespread are rainfall deficits where livelihoods depend on rainfall?<ept id="2">*</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">I calculate the meterological mean per month over the last 25 years. and calculated the anomalies per month. I then put a threshold of 30% deficit to indicate severe deficit and calculated how many months are above that threshold (= recurrence of deficit).</source>
+<target xml:lang="fr">I calculate the meterological mean per month over the last 25 years. and calculated the anomalies per month. I then put a threshold of 30% deficit to indicate severe deficit and calculated how many months are above that threshold (= recurrence of deficit).</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Problem:<ept id="1">__</ept> Does that indicate drought or hydrological stress or <bpt id="2">**</bpt>unstable monthly rainfall<ept id="2">**</ept>?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Problem:<ept id="1">__</ept> Does that indicate drought or hydrological stress or <bpt id="2">**</bpt>unstable monthly rainfall<ept id="2">**</ept>?</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Also: In very dry months (e.g. July–September in the south):</source>
+<target xml:lang="fr">Also: In very dry months (e.g. July–September in the south):</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">monthly mean rainfall may be very small</source>
+<target xml:lang="fr">monthly mean rainfall may be very small</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">A small absolute deviation can exceed −30%</source>
+<target xml:lang="fr">A small absolute deviation can exceed −30%</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">This can inflate recurrence and create "deficits that have no impact relevance</source>
+<target xml:lang="fr">This can inflate recurrence and create "deficits that have no impact relevance</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Workflow: Mapping hazard recurrence <bpt id="1">&lt;a id="workflow-mapping-hazard-recurrence"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Workflow: Mapping hazard recurrence <bpt id="1">&lt;a id="workflow-mapping-hazard-recurrence"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Use GEE to aggregate the daily CHIRPS v3 to monthly totals for the time period 2000 to 2024.</source>
+<target xml:lang="fr">Use GEE to aggregate the daily CHIRPS v3 to monthly totals for the time period 2000 to 2024.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Calculate the monthly climatology (mean per month across all years).</source>
+<target xml:lang="fr">Calculate the monthly climatology (mean per month across all years).</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Compute the percentage anomaly per month  %anom=100×(P−Pˉm​)/Pˉm​ (per cell)</source>
+<target xml:lang="fr">Compute the percentage anomaly per month  %anom=100×(P−Pˉm​)/Pˉm​ (per cell)</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Flag severe deficit months (e.g. &lt;= -30%)</source>
+<target xml:lang="fr">Flag severe deficit months (e.g. &lt;= -30%)</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Count how often each pixel is in deficit (frequency or count) = recurrence value</source>
+<target xml:lang="fr">Count how often each pixel is in deficit (frequency or count) = recurrence value</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Aggregate to admin level:</source>
+<target xml:lang="fr">Aggregate to admin level:</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Options:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Options:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">A: Mean pixel recurrence (can also be normalised by dividing with the total number of months -> %)</source>
+<target xml:lang="fr">A: Mean pixel recurrence (can also be normalised by dividing with the total number of months -> %)</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">B: Percent of area affected (need to define a threshhold of recurring deficit months, e.g., more than 30 deficit month in time period)</source>
+<target xml:lang="fr">B: Percent of area affected (need to define a threshhold of recurring deficit months, e.g., more than 30 deficit month in time period)</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">"65% of district had more than 30 deficit months".</source>
+<target xml:lang="fr">"65% of district had more than 30 deficit months".</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Monthly rainfall totals were derived from CHIRP v3 daily data hosted on Google Earth Engine. Monthly anomalies were calculated relative to the 2000–2024 climatological mean for each calendar month. Rainfall deficit events were defined as months with precipitation ≤30% (moderate) or ≤40% (severe) below the long-term mean (per month?). The frequency of deficit events was aggregated at district (ADM2) level to characterize historical recurrence.</source>
+<target xml:lang="fr">Monthly rainfall totals were derived from CHIRP v3 daily data hosted on Google Earth Engine. Monthly anomalies were calculated relative to the 2000–2024 climatological mean for each calendar month. Rainfall deficit events were defined as months with precipitation ≤30% (moderate) or ≤40% (severe) below the long-term mean (per month?). The frequency of deficit events was aggregated at district (ADM2) level to characterize historical recurrence.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Rainfall deficit recurrence was defined as the number of months between 2000 and 2024 in which monthly rainfall fell below the deficit threshold. Recurrence was first calculated at the pixel level and then spatially averaged within administrative districts to characterize the typical frequency of deficit conditions across each district.</source>
+<target xml:lang="fr">Rainfall deficit recurrence was defined as the number of months between 2000 and 2024 in which monthly rainfall fell below the deficit threshold. Recurrence was first calculated at the pixel level and then spatially averaged within administrative districts to characterize the typical frequency of deficit conditions across each district.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Calculated indicators<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+| Level | Variable           | Interpretation                         |
+| ----- | ------------------ | -------------------------------------- |
+| Pixel | (D_t(x))           | Deficit this month? (0/1)              |
+| Pixel | (R(x))             | # of deficit months at that location   |
+| ADM2  | mean (R(x))        | Typical deficit recurrence in district |
+| ADM2  | % area ≥ threshold | Spatial extent of recurrent deficits   |
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Calculated indicators<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+| Level | Variable           | Interpretation                         |
+| ----- | ------------------ | -------------------------------------- |
+| Pixel | (D_t(x))           | Deficit this month? (0/1)              |
+| Pixel | (R(x))             | # of deficit months at that location   |
+| ADM2  | mean (R(x))        | Typical deficit recurrence in district |
+| ADM2  | % area ≥ threshold | Spatial extent of recurrent deficits   |
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">We have calculated two indicators:</source>
+<target xml:lang="fr">We have calculated two indicators:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Mean recurrence per adm2</source>
+<target xml:lang="fr">Mean recurrence per adm2</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Percentage of area above threshold<ph id="1">  </ph>
+Now we need to select the thresholds for both indicators:</source>
+<target xml:lang="fr">Percentage of area above threshold<ph id="1">  </ph>
+Now we need to select the thresholds for both indicators:</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Select thresholds for the choropleth map:</source>
+<target xml:lang="fr">Select thresholds for the choropleth map:</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid}</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Mean Recurrence per adm2:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid}</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Mean Recurrence per adm2:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">quantiles: 3 classes (high/medium/low)</source>
+<target xml:lang="fr">quantiles: 3 classes (high/medium/low)</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">absolute thresholds:</source>
+<target xml:lang="fr">absolute thresholds:</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Low: &lt; 10% of months in deficit</source>
+<target xml:lang="fr">Low: &lt; 10% of months in deficit</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Medium: 10-20% of months in deficit</source>
+<target xml:lang="fr">Medium: 10-20% of months in deficit</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">High: > 20% of months in deficit</source>
+<target xml:lang="fr">High: > 20% of months in deficit</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">standard deviation?
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">standard deviation?
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Percentage of area above threshold:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Percentage of area above threshold:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`% area with recurrence ≥ K months`</ph></source>
+<target xml:lang="fr"><ph id="1">`% area with recurrence ≥ K months`</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>define K<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>define K<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">define classes for percentages:</source>
+<target xml:lang="fr">define classes for percentages:</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">_<bpt id="1">__</bpt>Data-distribution:<ept id="1">__</ept></source>
+<target xml:lang="fr">_<bpt id="1">__</bpt>Data-distribution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">tertiles</source>
+<target xml:lang="fr">tertiles</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Absolute exposure:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Absolute exposure:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">e.g., less than 10 % -> localised/patchy</source>
+<target xml:lang="fr">e.g., less than 10 % -> localised/patchy</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">10-30% -> substantial exposure</source>
+<target xml:lang="fr">10-30% -> substantial exposure</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">more than 30% -> widespread exposure</source>
+<target xml:lang="fr">more than 30% -> widespread exposure</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>sensitivity-informed<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>sensitivity-informed<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">examine how % area affected behaves for different thresholds
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">examine how % area affected behaves for different thresholds
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Output:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Output:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">a district layer with fields:</source>
+<target xml:lang="fr">a district layer with fields:</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`def_count`</ph>: number of deficit months, 2000-2024</source>
+<target xml:lang="fr"><ph id="1">`def_count`</ph>: number of deficit months, 2000-2024</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`def_freq`</ph>: def count / number of months</source>
+<target xml:lang="fr"><ph id="1">`def_freq`</ph>: def count / number of months</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">maybe: counts by season (DJF, MAM, etc.)</source>
+<target xml:lang="fr">maybe: counts by season (DJF, MAM, etc.)</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Preliminary Map Results <bpt id="1">&lt;a id="preliminary-map-results"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Preliminary Map Results <bpt id="1">&lt;a id="preliminary-map-results"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>GEE Script</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>GEE Script</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Part 2: A recurrent IPC Phase 3+ exposure layer (if feasible) <bpt id="1">&lt;a id="part-2-a-recurrent-ipc-phase-3-exposure-layer-if-feasible"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Part 2: A recurrent IPC Phase 3+ exposure layer (if feasible) <bpt id="1">&lt;a id="part-2-a-recurrent-ipc-phase-3-exposure-layer-if-feasible"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Objective:<ept id="1">__</ept> Complement meteorological layer with documented humanitarian impact evidence.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Objective:<ept id="1">__</ept> Complement meteorological layer with documented humanitarian impact evidence.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Possible options:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Possible options:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Overlay IPC Phase 3+ outcomes (where data available)</source>
+<target xml:lang="fr">Overlay IPC Phase 3+ outcomes (where data available)</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Estimate recurrence of IPC 3+ at district level across recent years.</source>
+<target xml:lang="fr">Estimate recurrence of IPC 3+ at district level across recent years.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">If full GIS integration is complex, even a spatial proxy based on documented IPC rounds would already be extremely helpful.</source>
+<target xml:lang="fr">If full GIS integration is complex, even a spatial proxy based on documented IPC rounds would already be extremely helpful.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Questions:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Questions:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. -> <bpt id="1">*</bpt>reports are irregular in FEWSNET. I can replicate the workflow with ipcinfo data easily it just takes some time to download the reports manually.<ept id="1">*</ept></source>
+<target xml:lang="fr">What is the temporal range for recurrence at district level? IPC reports are published every few months iirc and I calculate the CHIRPS recurrence on a monthly basis. -> <bpt id="1">*</bpt>reports are irregular in FEWSNET. I can replicate the workflow with ipcinfo data easily it just takes some time to download the reports manually.<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. <bpt id="1">*</bpt>-> solved during analysis. Geographic units orient themselves along adm2 boundaries and slivers were easy to detect due to their area size.<ept id="1">*</ept></source>
+<target xml:lang="fr">how should I aggregate the IPC phases at district level if the IPC phases are not tied to admin boundaries. Area share also does not make sense because it does not show where people live. <bpt id="1">*</bpt>-> solved during analysis. Geographic units orient themselves along adm2 boundaries and slivers were easy to detect due to their area size.<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">To get the time resolution, I could aggregate the CHIRPS using % of months in deficit? <bpt id="1">*</bpt>-> doesn't matter because they didn't ask for it.<ept id="1">*</ept></source>
+<target xml:lang="fr">To get the time resolution, I could aggregate the CHIRPS using % of months in deficit? <bpt id="1">*</bpt>-> doesn't matter because they didn't ask for it.<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">ML1 oder ML2? -> <bpt id="1">__</bpt>CS<ept id="1">__</ept></source>
+<target xml:lang="fr">ML1 oder ML2? -> <bpt id="1">__</bpt>CS<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">In FEWSNET or via IPCinfo?</source>
+<target xml:lang="fr">In FEWSNET or via IPCinfo?</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Step 1: Downloading IPC data from FEWSNET:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Step 1: Downloading IPC data from FEWSNET:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">List all the publications available through the API.</source>
+<target xml:lang="fr">List all the publications available through the API.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">I can also extract the CSV:</source>
+<target xml:lang="fr">I can also extract the CSV:</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">FEWS NET’s spatial model is built around Geographic Units with stable IDs called FNIDs.</source>
+<target xml:lang="fr">FEWS NET’s spatial model is built around Geographic Units with stable IDs called FNIDs.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Pulling csv of geogrpahic units (without geometry):</source>
+<target xml:lang="fr">Pulling csv of geogrpahic units (without geometry):</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Pulling geometries:</source>
+<target xml:lang="fr">Pulling geometries:</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>IPC data availability pre 2016
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>IPC data availability pre 2016
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">2016+ IPC CS data is internally consistent</source>
+<target xml:lang="fr">2016+ IPC CS data is internally consistent</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">pre-2016 is not directly comparable</source>
+<target xml:lang="fr">pre-2016 is not directly comparable</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Before ~2015–2016, FEWS NET and partners used:</source>
+<target xml:lang="fr">Before ~2015–2016, FEWS NET and partners used:</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">FEWS NET food security classifications (pre-IPC standardization)</source>
+<target xml:lang="fr">FEWS NET food security classifications (pre-IPC standardization)</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">IPC-compatible analyses in some countries/years</source>
+<target xml:lang="fr">IPC-compatible analyses in some countries/years</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Narrative reports with maps, not always machine-readable</source>
+<target xml:lang="fr">Narrative reports with maps, not always machine-readable</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Bottom line:<ept id="1">__</ept> There's no IPC classifications pre 2016 i can use. Neither on FEWSNET nor IPCinfo.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Bottom line:<ept id="1">__</ept> There's no IPC classifications pre 2016 i can use. Neither on FEWSNET nor IPCinfo.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Avoid ML1 as it is based on rainfall projections and it introduces circularity if we compare it to CHIRPS anomalies.</source>
+<target xml:lang="fr">Avoid ML1 as it is based on rainfall projections and it introduces circularity if we compare it to CHIRPS anomalies.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Choosing between IPCinfo and FEWSNET
+IPCinfo publication cycles are published in their own 3 month cycles, and not attached to seasons.</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Choosing between IPCinfo and FEWSNET
+IPCinfo publication cycles are published in their own 3 month cycles, and not attached to seasons.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">FEWSNET cycles are monthly, but in the early years also irregular.</source>
+<target xml:lang="fr">FEWSNET cycles are monthly, but in the early years also irregular.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">If you use ML1, you must label it as projected Crisis+ risk recurrence, not “observed impact recurrence.”
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">If you use ML1, you must label it as projected Crisis+ risk recurrence, not “observed impact recurrence.”
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">I will go with the FEWSNET CS data</source>
+<target xml:lang="fr">I will go with the FEWSNET CS data</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Should I use recurrence rate for ipc phase because reporting dates are irregular in FEWSNET.</source>
+<target xml:lang="fr">Should I use recurrence rate for ipc phase because reporting dates are irregular in FEWSNET.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Calculating the IPC Phase <bpt id="1">&lt;a id="calculating-the-ipc-phase"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Calculating the IPC Phase <bpt id="1">&lt;a id="calculating-the-ipc-phase"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Make sure the units are in meters when calculating area.
+<ph id="2">`$area / 1e6`</ph> to get area in km².
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Make sure the units are in meters when calculating area.
+<ph id="2">`$area / 1e6`</ph> to get area in km².
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+The time series includes classifications with the IPC classification 2.1 and 3.0. Should be noted somewhere.</source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+The time series includes classifications with the IPC classification 2.1 and 3.0. Should be noted somewhere.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Merge IPC layers</source>
+<target xml:lang="fr">Merge IPC layers</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Reproject to WGS 84 Pseudo Mercator (EPSG:3857)</source>
+<target xml:lang="fr">Reproject to WGS 84 Pseudo Mercator (EPSG:3857)</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Reproject to Tananarive (Paris) / Laborde Grid (EPSG:29701) for metric units</source>
+<target xml:lang="fr">Reproject to Tananarive (Paris) / Laborde Grid (EPSG:29701) for metric units</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Intersect with adm2 boundaries (fields 2 copy: adm2 pcode).</source>
+<target xml:lang="fr">Intersect with adm2 boundaries (fields 2 copy: adm2 pcode).</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Dissolve per adm2 and report date -> only 1 IPC phase 3+ polygon per report date and adm2 polygon</source>
+<target xml:lang="fr">Dissolve per adm2 and report date -> only 1 IPC phase 3+ polygon per report date and adm2 polygon</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">calculate area in km² (<ph id="1">`$area / 1e6`</ph>).</source>
+<target xml:lang="fr">calculate area in km² (<ph id="1">`$area / 1e6`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Delete sliver (&lt; 2 km²)</source>
+<target xml:lang="fr">Delete sliver (&lt; 2 km²)</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Satistics per categories (category: adm2_pcode, fields to calculate stats: adm2_pcode)</source>
+<target xml:lang="fr">Satistics per categories (category: adm2_pcode, fields to calculate stats: adm2_pcode)</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">join per attribute value:</source>
+<target xml:lang="fr">join per attribute value:</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">adm2 boundaries</source>
+<target xml:lang="fr">adm2 boundaries</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">statistics per category</source>
+<target xml:lang="fr">statistics per category</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">key value: adm2_pcode</source>
+<target xml:lang="fr">key value: adm2_pcode</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">fields to copy: count</source>
+<target xml:lang="fr">fields to copy: count</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Output:<ept id="1">__</ept> admin2 layer with count of ipc phase 3+</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Output:<ept id="1">__</ept> admin2 layer with count of ipc phase 3+</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Problem:<ept id="1">__</ept> Publication cycle is irregular on FEWSNET. CS was only published twice per year in the last few years. Does it make more sense to calculate IPC phase 3+ rate over the last publications?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Problem:<ept id="1">__</ept> Publication cycle is irregular on FEWSNET. CS was only published twice per year in the last few years. Does it make more sense to calculate IPC phase 3+ rate over the last publications?</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

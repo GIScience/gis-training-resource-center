@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_7/fr_module_7_mdg_aa_ex_3.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercice 3 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires <bpt id="1">&lt;a id="exercice-3-identification-des-etablissements-de-sante-et-deducation-impactes-aina-ajoute-des-couches-supplementaires"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercice 3 : Identification des établissements de santé et d'éducation impactés – Aina ajoute des couches supplémentaires <bpt id="1">&lt;a id="exercice-3-identification-des-etablissements-de-sante-et-deducation-impactes-aina-ajoute-des-couches-supplementaires"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Caractéristiques <bpt id="1">&lt;a id="caracteristiques"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Caractéristiques <bpt id="1">&lt;a id="caracteristiques"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type d'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type d'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Cet exercice peut être utilisé dans le cadre de formations en ligne ou en présentiel.</source>
+<target xml:lang="fr">Cet exercice peut être utilisé dans le cadre de formations en ligne ou en présentiel.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Il peut être réalisé en tant qu'exercice guidé ou individuellement en auto-apprentissage.</source>
+<target xml:lang="fr">Il peut être réalisé en tant qu'exercice guidé ou individuellement en auto-apprentissage.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Piste d'Exercice:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Piste d'Exercice:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Cet exercice est le troisième exercice de la piste d'exercice <bpt id="1">[</bpt>"Analyse d’Action Anticipative pour les Cyclones à Madagascar"<ept id="1">](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)</ept></source>
+<target xml:lang="fr">Cet exercice est le troisième exercice de la piste d'exercice <bpt id="1">[</bpt>"Analyse d’Action Anticipative pour les Cyclones à Madagascar"<ept id="1">](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Temps estimé pour l'exercice<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Temps estimé pour l'exercice<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">3 à 4 heures</source>
+<target xml:lang="fr">3 à 4 heures</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Articles Wiki pertinents<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Articles Wiki pertinents<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Objectif de l'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+Aina, l'experte GIS (SIG) de la Croix-Rouge malgache (CRM), se prépare pour la prochaine saison des cyclones. Elle souhaite eméliorer la capacité de réaction de son équipe une fois une tempête annoncée, en automatisant des analyses clés dans la application QGIS.
+Celles-ci incluent l'estimation des populations exposées, l'identification des services impactés comme la santé et l'education, et l'évaluation de l'accessibilité des postes de santé à partir des entrepôts de la croix rouge dans une fenêtre critique de 10 heures.
+L'objectif est de préparer un workflow d'analyse et de visualisation pour soutenir une action anticipée (eng.: Anticipatory Action) et fondée sur les données, avant que le cyclone ne touche terre.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Objectif de l'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+Aina, l'experte GIS (SIG) de la Croix-Rouge malgache (CRM), se prépare pour la prochaine saison des cyclones. Elle souhaite eméliorer la capacité de réaction de son équipe une fois une tempête annoncée, en automatisant des analyses clés dans la application QGIS.
+Celles-ci incluent l'estimation des populations exposées, l'identification des services impactés comme la santé et l'education, et l'évaluation de l'accessibilité des postes de santé à partir des entrepôts de la croix rouge dans une fenêtre critique de 10 heures.
+L'objectif est de préparer un workflow d'analyse et de visualisation pour soutenir une action anticipée (eng.: Anticipatory Action) et fondée sur les données, avant que le cyclone ne touche terre.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Instruction pour les formateurs <bpt id="1">&lt;a id="instruction-pour-les-formateurs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instruction pour les formateurs <bpt id="1">&lt;a id="instruction-pour-les-formateurs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Espace Formateurs (Trainers Corner)<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Espace Formateurs (Trainers Corner)<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Préparer la formation <bpt id="1">&lt;a id="preparer-la-formation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Préparer la formation <bpt id="1">&lt;a id="preparer-la-formation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Prenez du temps pour vous familiariser avec l'exercice et le matériel founi.</source>
+<target xml:lang="fr">Prenez du temps pour vous familiariser avec l'exercice et le matériel founi.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions.</source>
+<target xml:lang="fr">Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé <bpt id="1">__</bpt>et dézippé<ept id="1">__</ept> le dossier de données.</source>
+<target xml:lang="fr">Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé <bpt id="1">__</bpt>et dézippé<ept id="1">__</ept> le dossier de données.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Consultez <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).</source>
+<target xml:lang="fr">Consultez <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Animer la formation <bpt id="1">&lt;a id="animer-la-formation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Animer la formation <bpt id="1">&lt;a id="animer-la-formation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Présentez l'idée et l'objectif de l'exercice.</source>
+<target xml:lang="fr">Présentez l'idée et l'objectif de l'exercice.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Fournissez le lien de téléchargement et assurez-vous que tout le monde a bien dézippé le dossier avant de commencer les tâches.</source>
+<target xml:lang="fr">Fournissez le lien de téléchargement et assurez-vous que tout le monde a bien dézippé le dossier avant de commencer les tâches.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercice guidée:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercice guidée:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Montrez et expliquez chaque étape cous-même au moins deux fois, et suffisamment lentement por que chacun·e puisse voir ce que vous faites et reproduire les étapes dans sons prope projet QGIS.</source>
+<target xml:lang="fr">Montrez et expliquez chaque étape cous-même au moins deux fois, et suffisamment lentement por que chacun·e puisse voir ce que vous faites et reproduire les étapes dans sons prope projet QGIS.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.</source>
+<target xml:lang="fr">Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.</source>
+<target xml:lang="fr">Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Fin de la formation <bpt id="1">&lt;a id="fin-de-la-formation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Fin de la formation <bpt id="1">&lt;a id="fin-de-la-formation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.</source>
+<target xml:lang="fr">Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Laissez un moment pour des questions ouvertes.</source>
+<target xml:lang="fr">Laissez un moment pour des questions ouvertes.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Après avoir construit son modèle pour estimer la population exposée, Aina souhaite améliorer son utilité. Elle décide d'identifier également les services essentiels affectés par les cclones — en particulier les établissments de santé et les écoles.</source>
+<target xml:lang="fr">Après avoir construit son modèle pour estimer la population exposée, Aina souhaite améliorer son utilité. Elle décide d'identifier également les services essentiels affectés par les cclones — en particulier les établissments de santé et les écoles.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Elle veut non seulement savoir quels établissements sont affectés, mais aussi combien il en existe au total par district. Cela lui permettera de calculer le <bpt id="1">__</bpt>pourcentage de service affectés<ept id="1">__</ept> dans chaque zone.</source>
+<target xml:lang="fr">Elle veut non seulement savoir quels établissements sont affectés, mais aussi combien il en existe au total par district. Cela lui permettera de calculer le <bpt id="1">__</bpt>pourcentage de service affectés<ept id="1">__</ept> dans chaque zone.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Pour cela, elle utilisera deux jeux de données contenant des points issus d'OpenStreetMap:</source>
+<target xml:lang="fr">Pour cela, elle utilisera deux jeux de données contenant des points issus d'OpenStreetMap:</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Établissement de santé<ept id="1">](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Établissement de santé<ept id="1">](https://data.humdata.org/dataset/hotosm_mdg_health_facilities)</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Établissement d'éducation<ept id="1">](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Établissement d'éducation<ept id="1">](https://data.humdata.org/dataset/hotosm_mdg_education_facilities)</ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_7_Exercise_3_AA_MDG_task_3-20250825T143514Z-1-001.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Téléchargez tous les ensembles de données ici, enregistrez le dossier sur votre ordinateur et décompressez le fichier.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Tâches <bpt id="1">&lt;a id="taches"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tâches <bpt id="1">&lt;a id="taches"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Importer les données des établissements de santé et d'éducation<ept id="1">**</ept>
+  Tout d'abord, examinons les données avec lesquelles nous allons travailler:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Importer les données des établissements de santé et d'éducation<ept id="1">**</ept>
+  Tout d'abord, examinons les données avec lesquelles nous allons travailler:</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Accédez à votre dossier <ph id="1">`Data/input/`</ph></source>
+<target xml:lang="fr">Accédez à votre dossier <ph id="1">`Data/input/`</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Glissez-déposez les couches suivantes dans votre projet QGIS:</source>
+<target xml:lang="fr">Glissez-déposez les couches suivantes dans votre projet QGIS:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`hotosm_mdg_health_facilities`</ph></source>
+<target xml:lang="fr"><ph id="1">`hotosm_mdg_health_facilities`</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`hotosm_mdg_education_facilities`</ph></source>
+<target xml:lang="fr"><ph id="1">`hotosm_mdg_education_facilities`</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Vérifiez que les deux couches sont visibles dans <bpt id="1">__</bpt>le panneau Couches<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Vérifiez que les deux couches sont visibles dans <bpt id="1">__</bpt>le panneau Couches<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Enregistrez votre modèle sous un nouveau nom<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Enregistrez votre modèle sous un nouveau nom<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Ouvrez votre modèle existant <ph id="1">`Estimate_Exposed_Population.model3.`</ph></source>
+<target xml:lang="fr">Ouvrez votre modèle existant <ph id="1">`Estimate_Exposed_Population.model3.`</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Immédiatement, enregistrez-le sous un nouveau nom:</source>
+<target xml:lang="fr">Immédiatement, enregistrez-le sous un nouveau nom:</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <ph id="1">`Modèle`</ph> → <ph id="2">`Enregistrer le modèle sous…`</ph></source>
+<target xml:lang="fr">Cliquez sur <ph id="1">`Modèle`</ph> → <ph id="2">`Enregistrer le modèle sous…`</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Enregistrez-le dans le dossier <ph id="1">`/project`</ph> sous le nom:</source>
+<target xml:lang="fr">Enregistrez-le dans le dossier <ph id="1">`/project`</ph> sous le nom:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Ajouter de nouvelles entrées dans le modèle<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Ajouter de nouvelles entrées dans le modèle<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Dans la section <bpt id="1">__</bpt>Entrées<ept id="1">__</ept> a gauche, ajoutez:</source>
+<target xml:lang="fr">Dans la section <bpt id="1">__</bpt>Entrées<ept id="1">__</ept> a gauche, ajoutez:</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Couche vecteur`</ph>:</source>
+<target xml:lang="fr"><ph id="1">`Couche vecteur`</ph>:</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Description:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Description:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Type de géometrie<ept id="1">__</ept>: <ph id="2">`Point`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Type de géometrie<ept id="1">__</ept>: <ph id="2">`Point`</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Couche vecteur`</ph>:</source>
+<target xml:lang="fr"><ph id="1">`Couche vecteur`</ph>:</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Description<ept id="1">__</ept>:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Description<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Type de géometrie<ept id="1">__</ept>: <ph id="2">`Point`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Type de géometrie<ept id="1">__</ept>: <ph id="2">`Point`</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Entrée: établissements de santé</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Entrée: établissements de santé</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">:::{tab-item} </ph>Entrée: établissements d’enseignement</source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">:::{tab-item} </ph>Entrée: établissements d’enseignement</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compter tous les établissements de santé par district (ADM2)<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compter tous les établissements de santé par district (ADM2)<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Dans le panneau <bpt id="1">**</bpt>Algorithmes<ept id="1">**</ept>, cherchez <ph id="2">`Compter les points dans les polygones`</ph></source>
+<target xml:lang="fr">Dans le panneau <bpt id="1">**</bpt>Algorithmes<ept id="1">**</ept>, cherchez <ph id="2">`Compter les points dans les polygones`</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Description: <ph id="1">`Comptez le nombre d’établissements de santé dans chaque district`</ph></source>
+<target xml:lang="fr">Description: <ph id="1">`Comptez le nombre d’établissements de santé dans chaque district`</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Polygones<ept id="1">__</ept>: <ph id="2">`Frontières administratives`</ph> (sous entrées du modèle)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Polygones<ept id="1">__</ept>: <ph id="2">`Frontières administratives`</ph> (sous entrées du modèle)</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Points<ept id="1">__</ept>: <ph id="2">`Établissements de santé`</ph> (sous entrées du modèle)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Points<ept id="1">__</ept>: <ph id="2">`Établissements de santé`</ph> (sous entrées du modèle)</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:
+<ph id="2">`count_health_total`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:
+<ph id="2">`count_health_total`</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Laisser la sortie vide.</source>
+<target xml:lang="fr">Laisser la sortie vide.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compter tous les établissements d’enseignement par Niveau 2<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compter tous les établissements d’enseignement par Niveau 2<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Ajouter une autre étape <bpt id="1">**</bpt>Compter les points dans un polygone<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Ajouter une autre étape <bpt id="1">**</bpt>Compter les points dans un polygone<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Ajouter une description: <ph id="1">`Comptez le nombre d'établissements d’enseignement dans chaque district`</ph></source>
+<target xml:lang="fr">Ajouter une description: <ph id="1">`Comptez le nombre d'établissements d’enseignement dans chaque district`</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Polygones<ept id="1">**</ept>: <ph id="2">`Limites administratives`</ph> (entrée du modèle)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Polygones<ept id="1">**</ept>: <ph id="2">`Limites administratives`</ph> (entrée du modèle)</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Points<ept id="1">**</ept>: <ph id="2">`Établissements d’enseignement`</ph> (entrée du modèle)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Points<ept id="1">**</ept>: <ph id="2">`Établissements d’enseignement`</ph> (entrée du modèle)</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Laissez la sortie vide</source>
+<target xml:lang="fr">Laissez la sortie vide</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Intersection des établissements de santé avec la zone tampon du cyclone<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Intersection des établissements de santé avec la zone tampon du cyclone<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Depuis le panneau <bpt id="1">**</bpt>Algorithmes<ept id="1">**</ept>, recherchez <bpt id="2">**</bpt>Intersection<ept id="2">**</ept>.</source>
+<target xml:lang="fr">Depuis le panneau <bpt id="1">**</bpt>Algorithmes<ept id="1">**</ept>, recherchez <bpt id="2">**</bpt>Intersection<ept id="2">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Dans la fenêtre de configuration:</source>
+<target xml:lang="fr">Dans la fenêtre de configuration:</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Ajouter une description:</source>
+<target xml:lang="fr">Ajouter une description:</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche source<ept id="1">**</ept>: <ph id="2">`Établissements de santé`</ph> (entrée du modèle)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche source<ept id="1">**</ept>: <ph id="2">`Établissements de santé`</ph> (entrée du modèle)</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche de superposition<ept id="1">**</ept>: zone tampon du cyclone (utiliser “Reprojected to EPSG:4326” depuis la <bpt id="2">**</bpt>Sortie d’algorithme<ept id="2">**</ept>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche de superposition<ept id="1">**</ept>: zone tampon du cyclone (utiliser “Reprojected to EPSG:4326” depuis la <bpt id="2">**</bpt>Sortie d’algorithme<ept id="2">**</ept>)</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Laissez la sortie vide.</source>
+<target xml:lang="fr">Laissez la sortie vide.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Intersection des établissements d’éducation avec la zone tampon du cyclone<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Intersection des établissements d’éducation avec la zone tampon du cyclone<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Ajouter un autre algorithme <bpt id="1">**</bpt>Intersection<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Ajouter un autre algorithme <bpt id="1">**</bpt>Intersection<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Ajouter une description:</source>
+<target xml:lang="fr">Ajouter une description:</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche source<ept id="1">**</ept>: <ph id="2">`Établissements d’éducation`</ph> (entrée du modèle)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche source<ept id="1">**</ept>: <ph id="2">`Établissements d’éducation`</ph> (entrée du modèle)</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche de superposition<ept id="1">**</ept>: zone tampon du cyclone (utiliser “Reprojecter vers EPSG:4326” depuis la <bpt id="2">**</bpt>Sortie d’algorithme<ept id="2">**</ept>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche de superposition<ept id="1">**</ept>: zone tampon du cyclone (utiliser “Reprojecter vers EPSG:4326” depuis la <bpt id="2">**</bpt>Sortie d’algorithme<ept id="2">**</ept>)</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Laisser la sortie vide.</source>
+<target xml:lang="fr">Laisser la sortie vide.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Cliquer sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</source>
+<target xml:lang="fr">Cliquer sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compter les établissements de santé affectés par Niveau 2<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compter les établissements de santé affectés par Niveau 2<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Ajouter <bpt id="1">**</bpt>Compter les points dans un polygone<ept id="1">**</ept></source>
+<target xml:lang="fr">Ajouter <bpt id="1">**</bpt>Compter les points dans un polygone<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Ajouter une description:</source>
+<target xml:lang="fr">Ajouter une description:</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Polygones<ept id="1">__</ept>: <ph id="2">`Frontières administratives`</ph> (sous entrées du modèle)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Polygones<ept id="1">__</ept>: <ph id="2">`Frontières administratives`</ph> (sous entrées du modèle)</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Points<ept id="1">**</ept>: sortie des établissements de santé intersectés</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Points<ept id="1">**</ept>: sortie des établissements de santé intersectés</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compter les établissements d’enseignement affectés par Niveau 2<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compter les établissements d’enseignement affectés par Niveau 2<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Ajouter <bpt id="1">**</bpt>Compter les points dans un polygone<ept id="1">**</ept></source>
+<target xml:lang="fr">Ajouter <bpt id="1">**</bpt>Compter les points dans un polygone<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Ajouter une description:</source>
+<target xml:lang="fr">Ajouter une description:</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Polygones<ept id="1">__</ept>: <ph id="2">`Frontières administratives`</ph> (sous entrées du modèle)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Polygones<ept id="1">__</ept>: <ph id="2">`Frontières administratives`</ph> (sous entrées du modèle)</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Points<ept id="1">**</ept>: sortie des établissements d’éducation intersectés</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Points<ept id="1">**</ept>: sortie des établissements d’éducation intersectés</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de dénombrement<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour ajouter l'étape au modèle.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Calculer le pourcentage d’établissements de santé affectés<ept id="1">**</ept>
+Pour calculer le pourcentage d’établissements de santé affectés par zone administrative, utilisez la <bpt id="2">**</bpt>Calculatrice de champ<ept id="2">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Calculer le pourcentage d’établissements de santé affectés<ept id="1">**</ept>
+Pour calculer le pourcentage d’établissements de santé affectés par zone administrative, utilisez la <bpt id="2">**</bpt>Calculatrice de champ<ept id="2">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Ajouter la <bpt id="1">**</bpt>Calculatrice de champ<ept id="1">**</ept>:</source>
+<target xml:lang="fr">Ajouter la <bpt id="1">**</bpt>Calculatrice de champ<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Ajouter une description:</source>
+<target xml:lang="fr">Ajouter une description:</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche en entrée<ept id="1">**</ept>: sortie du comptage des établissements de santé affectés</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche en entrée<ept id="1">**</ept>: sortie du comptage des établissements de santé affectés</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de sortie<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de sortie<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Type de champ<ept id="1">**</ept>: Décimal (réel)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Type de champ<ept id="1">**</ept>: Décimal (réel)</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">WHEN "count_health_total" > 0
+THEN 	"sum_exposed_healthsites_POI" / "count_health_total" * 100
+ELSE 0
+END
+    ```
+    - Définir la sortie comme <bpt id="1">**</bpt>Sortie du modèle<ept id="1">**</ept>
+    - Nommer:</source>
+<target xml:lang="fr">WHEN "count_health_total" > 0
+THEN 	"sum_exposed_healthsites_POI" / "count_health_total" * 100
+ELSE 0
+END
+    ```
+    - Définir la sortie comme <bpt id="1">**</bpt>Sortie du modèle<ept id="1">**</ept>
+    - Nommer:</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Calculer le pourcentage d’établissements d’enseignement affectés<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Calculer le pourcentage d’établissements d’enseignement affectés<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Pour calculer le pourcentage d’établissements d’enseignement affectés par zone administrative, utilisez la <bpt id="1">**</bpt>Calculatrice de champ<ept id="1">**</ept>:</source>
+<target xml:lang="fr">Pour calculer le pourcentage d’établissements d’enseignement affectés par zone administrative, utilisez la <bpt id="1">**</bpt>Calculatrice de champ<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Ajouter la <bpt id="1">**</bpt>Calculatrice de champ<ept id="1">**</ept>:</source>
+<target xml:lang="fr">Ajouter la <bpt id="1">**</bpt>Calculatrice de champ<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Configuration:</source>
+<target xml:lang="fr">Configuration:</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Ajouter une description:</source>
+<target xml:lang="fr">Ajouter une description:</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche en entrée<ept id="1">**</ept>: sortie du comptage des établissements d’éducation affectés</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche en entrée<ept id="1">**</ept>: sortie du comptage des établissements d’éducation affectés</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de sortie<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de sortie<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Type de champ<ept id="1">**</ept>: Décimal (réel)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Type de champ<ept id="1">**</ept>: Décimal (réel)</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Définir la sortie comme <bpt id="1">**</bpt>Sortie du modèle<ept id="1">**</ept></source>
+<target xml:lang="fr">Définir la sortie comme <bpt id="1">**</bpt>Sortie du modèle<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Nommer:</source>
+<target xml:lang="fr">Nommer:</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Valider et enregistrer votre modèle étendu<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Valider et enregistrer votre modèle étendu<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Cliquez sur le bouton ✔️ <bpt id="1">**</bpt>Valider le modèle<ept id="1">**</ept> (sous <ph id="2">`Modèle`</ph> dans le menu en haut) pour vérifier les erreurs.</source>
+<target xml:lang="fr">Cliquez sur le bouton ✔️ <bpt id="1">**</bpt>Valider le modèle<ept id="1">**</ept> (sous <ph id="2">`Modèle`</ph> dans le menu en haut) pour vérifier les erreurs.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Enregistrez à nouveau sous:<ph id="1">  </ph>
+<bpt id="2">**</bpt><ph id="3">`Estimate_Exposed_Population_Health_Education.model3`</ph><ept id="2">**</ept></source>
+<target xml:lang="fr">Enregistrez à nouveau sous:<ph id="1">  </ph>
+<bpt id="2">**</bpt><ph id="3">`Estimate_Exposed_Population_Health_Education.model3`</ph><ept id="2">**</ept></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Exécuter le modèle<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Exécuter le modèle<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Cliquez sur le bouton ▶️ <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept> en haut de la fenêtre du Modélisateur Graphique.</source>
+<target xml:lang="fr">Cliquez sur le bouton ▶️ <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept> en haut de la fenêtre du Modélisateur Graphique.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Dans la boîte de dialogue:</source>
+<target xml:lang="fr">Dans la boîte de dialogue:</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Sélectionnez les couches d’entrée nécessaires:</source>
+<target xml:lang="fr">Sélectionnez les couches d’entrée nécessaires:</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Trajectoire du cyclone`</ph> → sélectionnez le fichier GeoJSON du cyclone (ex. <ph id="2">`Harald_2025_Track.geojson`</ph>)</source>
+<target xml:lang="fr"><ph id="1">`Trajectoire du cyclone`</ph> → sélectionnez le fichier GeoJSON du cyclone (ex. <ph id="2">`Harald_2025_Track.geojson`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Raster de population`</ph> → sélectionnez le raster WorldPop</source>
+<target xml:lang="fr"><ph id="1">`Raster de population`</ph> → sélectionnez le raster WorldPop</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Limites administratives`</ph> → sélectionnez la couche de Niveau 2 (ex. <ph id="2">`MDG_adm2.gpkg`</ph>)</source>
+<target xml:lang="fr"><ph id="1">`Limites administratives`</ph> → sélectionnez la couche de Niveau 2 (ex. <ph id="2">`MDG_adm2.gpkg`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Établissements de santé`</ph> → sélectionnez la couche ponctuelle des établissements de santé</source>
+<target xml:lang="fr"><ph id="1">`Établissements de santé`</ph> → sélectionnez la couche ponctuelle des établissements de santé</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Établissements d’enseignement`</ph> → sélectionnez la couche ponctuelle des écoles</source>
+<target xml:lang="fr"><ph id="1">`Établissements d’enseignement`</ph> → sélectionnez la couche ponctuelle des écoles</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Choisissez un emplacement pour enregistrer les couches finales (vous pouvez laisser les couches intermédiaires en mémoire temporaire)</source>
+<target xml:lang="fr">Choisissez un emplacement pour enregistrer les couches finales (vous pouvez laisser les couches intermédiaires en mémoire temporaire)</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Sorties:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Sorties:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Enregistrez les couches de sorties dans le dossier <ph id="1">`/data/output`</ph> comm ceci:</source>
+<target xml:lang="fr">Enregistrez les couches de sorties dans le dossier <ph id="1">`/data/output`</ph> comm ceci:</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"exposed_population_sum"<ept id="1">__</ept> comme <ph id="2">`Harald_Exposed_Population`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"exposed_population_sum"<ept id="1">__</ept> comme <ph id="2">`Harald_Exposed_Population`</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"example_Harald_2025_Track"<ept id="1">__</ept> comme <ph id="2">`cyclone_harald_buffer`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"example_Harald_2025_Track"<ept id="1">__</ept> comme <ph id="2">`cyclone_harald_buffer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"admin2_health_affected_pct"<ept id="1">__</ept> comme <ph id="2">`admin2_health_affected`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"admin2_health_affected_pct"<ept id="1">__</ept> comme <ph id="2">`admin2_health_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>"admin2_education_affected_pct"<ept id="1">__</ept> comme <ph id="2">`admin2_education_affected`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>"admin2_education_affected_pct"<ept id="1">__</ept> comme <ph id="2">`admin2_education_affected`</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept> pour lancer le modèle complet.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept> pour lancer le modèle complet.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Une fois terminé, toutes les couches finales seront affichées dans votre espace de travail QGIS.
+<ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr">Une fois terminé, toutes les couches finales seront affichées dans votre espace de travail QGIS.
+<ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Modeleur</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Modeleur</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">:::{tab-item} </ph> Configuration de l’exécution du modèle</source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">:::{tab-item} </ph> Configuration de l’exécution du modèle</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">:::{tab-item} </ph>Sortie du modèle</source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">:::{tab-item} </ph>Sortie du modèle</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

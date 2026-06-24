@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/intro_new.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/HeiGIT_Logo_base.svg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/HeiGIT_Logo_base.svg</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 75</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">height: 75</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">IFRC GIS Training Platform</source>
+<target xml:lang="fr">IFRC GIS Training Platform</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">GIS training for humanitarian and anticipatory action</source>
+<target xml:lang="fr">GIS training for humanitarian and anticipatory action</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Welcome to the <bpt id="1">**</bpt>IFRC Network GIS Training Platform<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Welcome to the <bpt id="1">**</bpt>IFRC Network GIS Training Platform<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This platform provides <bpt id="1">**</bpt>training materials, tools, and applied examples<ept id="1">**</ept> to support the use of <bpt id="2">**</bpt>QGIS in the Red Cross Red Crescent Network<ept id="2">**</ept>, with a strong focus on <bpt id="3">**</bpt>Anticipatory Action<ept id="3">**</ept> and humanitarian decision-making.</source>
+<target xml:lang="fr">This platform provides <bpt id="1">**</bpt>training materials, tools, and applied examples<ept id="1">**</ept> to support the use of <bpt id="2">**</bpt>QGIS in the Red Cross Red Crescent Network<ept id="2">**</ept>, with a strong focus on <bpt id="3">**</bpt>Anticipatory Action<ept id="3">**</ept> and humanitarian decision-making.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">The content is designed primarily for <bpt id="1">**</bpt>GIS trainers<ept id="1">**</ept>, but also supports practitioners and technical staff who work with geospatial data in operational contexts.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">The content is designed primarily for <bpt id="1">**</bpt>GIS trainers<ept id="1">**</ept>, but also supports practitioners and technical staff who work with geospatial data in operational contexts.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">How to Use This Platform</source>
+<target xml:lang="fr">How to Use This Platform</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card} </ph>Start teaching
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html</ph>
+This platform is primarily designed to support <bpt id="3">**</bpt>GIS trainers<ept id="3">**</ept> in the IFRC Network.</source>
+<target xml:lang="fr"><ph id="1">:::{card} </ph>Start teaching
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_TOT_intro.html</ph>
+This platform is primarily designed to support <bpt id="3">**</bpt>GIS trainers<ept id="3">**</ept> in the IFRC Network.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">You can:</source>
+<target xml:lang="fr">You can:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Use <bpt id="1">**</bpt>training plans<ept id="1">**</ept> to structure complete courses</source>
+<target xml:lang="fr">Use <bpt id="1">**</bpt>training plans<ept id="1">**</ept> to structure complete courses</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Combine <bpt id="1">**</bpt>modules, exercises, tools, and case studies<ept id="1">**</ept></source>
+<target xml:lang="fr">Combine <bpt id="1">**</bpt>modules, exercises, tools, and case studies<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Adapt materials to different operational and country contexts</source>
+<target xml:lang="fr">Adapt materials to different operational and country contexts</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">All trainer-specific guidance is collected in the <bpt id="1">**</bpt>Trainer’s Corner<ept id="1">**</ept>, which is part of the <bpt id="2">*</bpt>Learn<ept id="2">*</ept> section.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">All trainer-specific guidance is collected in the <bpt id="1">**</bpt>Trainer’s Corner<ept id="1">**</ept>, which is part of the <bpt id="2">*</bpt>Learn<ept id="2">*</ept> section.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card} </ph>Start learning
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card} </ph>Start learning
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">This is <bpt id="1">**</bpt>not a self-learning platform<ept id="1">**</ept>.</source>
+<target xml:lang="fr">This is <bpt id="1">**</bpt>not a self-learning platform<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Learning is most effective when guided by an experienced trainer.<ph id="1">  </ph>
+Modules and exercises are designed to support <bpt id="2">**</bpt>instructor-led trainings<ept id="2">**</ept>, but can also be revisited to refresh and consolidate skills.</source>
+<target xml:lang="fr">Learning is most effective when guided by an experienced trainer.<ph id="1">  </ph>
+Modules and exercises are designed to support <bpt id="2">**</bpt>instructor-led trainings<ept id="2">**</ept>, but can also be revisited to refresh and consolidate skills.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Your trainer will guide you through the appropriate learning path.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Your trainer will guide you through the appropriate learning path.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">What You’ll Find on the Platform</source>
+<target xml:lang="fr">What You’ll Find on the Platform</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">The platform is organised around <bpt id="1">**</bpt>three main pillars<ept id="1">**</ept>, reflecting how the content is used in practice.</source>
+<target xml:lang="fr">The platform is organised around <bpt id="1">**</bpt>three main pillars<ept id="1">**</ept>, reflecting how the content is used in practice.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>3</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>3</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">🎓 Learn</source>
+<target xml:lang="fr">🎓 Learn</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Build GIS knowledge and teaching capacity<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Build GIS knowledge and teaching capacity<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Learning modules (basic to advanced)</source>
+<target xml:lang="fr">Learning modules (basic to advanced)</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Hands-on exercises</source>
+<target xml:lang="fr">Hands-on exercises</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">GIS Wiki and glossary</source>
+<target xml:lang="fr">GIS Wiki and glossary</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Guidance for trainers and training plans</source>
+<target xml:lang="fr">Guidance for trainers and training plans</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">This pillar contains everything needed to <bpt id="1">**</bpt>teach and learn GIS with QGIS<ept id="1">**</ept>.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">This pillar contains everything needed to <bpt id="1">**</bpt>teach and learn GIS with QGIS<ept id="1">**</ept>.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">🌍 Apply</source>
+<target xml:lang="fr">🌍 Apply</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Use GIS in real humanitarian contexts<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Use GIS in real humanitarian contexts<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">GIS in Anticipatory Action</source>
+<target xml:lang="fr">GIS in Anticipatory Action</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Country- and hazard-specific case studies</source>
+<target xml:lang="fr">Country- and hazard-specific case studies</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Applied analyses and workflows</source>
+<target xml:lang="fr">Applied analyses and workflows</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Exercises focused on operational use cases</source>
+<target xml:lang="fr">Exercises focused on operational use cases</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">This pillar shows <bpt id="1">**</bpt>how GIS supports real-world decision-making<ept id="1">**</ept>.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">This pillar shows <bpt id="1">**</bpt>how GIS supports real-world decision-making<ept id="1">**</ept>.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">🛠️ Tools &amp; Methods</source>
+<target xml:lang="fr">🛠️ Tools &amp; Methods</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Reusable tools and workflows<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Reusable tools and workflows<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">QGIS plugins and tools</source>
+<target xml:lang="fr">QGIS plugins and tools</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Method-specific documentation</source>
+<target xml:lang="fr">Method-specific documentation</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Tool-focused tutorials and guidance</source>
+<target xml:lang="fr">Tool-focused tutorials and guidance</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">These tools are often used in applied case studies, but are documented separately to support <bpt id="1">**</bpt>reuse across contexts<ept id="1">**</ept>.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">These tools are often used in applied case studies, but are documented separately to support <bpt id="1">**</bpt>reuse across contexts<ept id="1">**</ept>.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Learning Pathways (Modules Overview)</source>
+<target xml:lang="fr">Learning Pathways (Modules Overview)</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">The learning content is organised into <bpt id="1">**</bpt>three progressive skill levels<ept id="1">**</ept>, each consisting of three modules.</source>
+<target xml:lang="fr">The learning content is organised into <bpt id="1">**</bpt>three progressive skill levels<ept id="1">**</ept>, each consisting of three modules.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>🟢 Basic Skills
+| Module 1 – Introduction to GIS | Module 2 – Working with Geodata | Module 3 – Basic GIS Operations |
+|---|---|---|
+| GIS fundamentals | Vector &amp; raster basics | Editing &amp; selection |
+| QGIS interface | Data sources | Attribute queries |
+| Maps &amp; cartography | Projections | Spatial queries |
+| WebGIS &amp; mobile apps | Importing data | Classification |
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>🟢 Basic Skills
+| Module 1 – Introduction to GIS | Module 2 – Working with Geodata | Module 3 – Basic GIS Operations |
+|---|---|---|
+| GIS fundamentals | Vector &amp; raster basics | Editing &amp; selection |
+| QGIS interface | Data sources | Attribute queries |
+| Maps &amp; cartography | Projections | Spatial queries |
+| WebGIS &amp; mobile apps | Importing data | Classification |
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>🟡 Intermediate Skills
+| Module 4 – Representation | Module 5 – GIS Operations | Module 6 – Data Analysis |
+|---|---|---|
+| Symbology &amp; styling | Geoprocessing | Raster basics |
+| Map layouts | Spatial joins | Plugins (e.g. QuickOSM) |
+| Atlases | Attribute operations | |
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>🟡 Intermediate Skills
+| Module 4 – Representation | Module 5 – GIS Operations | Module 6 – Data Analysis |
+|---|---|---|
+| Symbology &amp; styling | Geoprocessing | Raster basics |
+| Map layouts | Spatial joins | Plugins (e.g. QuickOSM) |
+| Atlases | Attribute operations | |
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>🔴 Advanced Skills
+| Module 7 – Automation | Module 8 – Remote Sensing | Module 9 – Accessibility |
+|---|---|---|
+| Model builder | Raster analysis | Accessibility analysis |
+| Automation concepts | Zonal statistics | Spatial analysis |
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>🔴 Advanced Skills
+| Module 7 – Automation | Module 8 – Remote Sensing | Module 9 – Accessibility |
+|---|---|---|
+| Model builder | Raster analysis | Accessibility analysis |
+| Automation concepts | Zonal statistics | Spatial analysis |
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">GIS in Anticipatory Action</source>
+<target xml:lang="fr">GIS in Anticipatory Action</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Applying GIS to anticipatory decision-making</source>
+<target xml:lang="fr">Applying GIS to anticipatory decision-making</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">**</bpt>GIS in Anticipatory Action<ept id="1">**</ept> section demonstrates how GIS is used to support early action before disasters occur.</source>
+<target xml:lang="fr">The <bpt id="1">**</bpt>GIS in Anticipatory Action<ept id="1">**</ept> section demonstrates how GIS is used to support early action before disasters occur.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">It includes:</source>
+<target xml:lang="fr">It includes:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Country- and hazard-specific case studies (e.g. cyclones, droughts, floods)</source>
+<target xml:lang="fr">Country- and hazard-specific case studies (e.g. cyclones, droughts, floods)</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Trigger and impact analyses</source>
+<target xml:lang="fr">Trigger and impact analyses</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Applied workflows using QGIS and specialised tools</source>
+<target xml:lang="fr">Applied workflows using QGIS and specialised tools</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">This section connects <bpt id="1">**</bpt>learning content<ept id="1">**</ept> with <bpt id="2">**</bpt>operational practice<ept id="2">**</ept>.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">This section connects <bpt id="1">**</bpt>learning content<ept id="1">**</ept> with <bpt id="2">**</bpt>operational practice<ept id="2">**</ept>.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Recently Updated Content</source>
+<target xml:lang="fr">Recently Updated Content</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+Stay up to date with new and revised materials on the platform.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+Stay up to date with new and revised materials on the platform.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>2026-02-10<ept id="1">**</ept> — Sketch Map Tool: updated workflow <bpt id="2">*</bpt>(Tools &amp; Methods)<ept id="2">*</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>2026-02-10<ept id="1">**</ept> — Sketch Map Tool: updated workflow <bpt id="2">*</bpt>(Tools &amp; Methods)<ept id="2">*</ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>2026-02-03<ept id="1">**</ept> — Somalia: drought trigger analysis added <bpt id="2">*</bpt>(Apply – GIS in AA)<ept id="2">*</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>2026-02-03<ept id="1">**</ept> — Somalia: drought trigger analysis added <bpt id="2">*</bpt>(Apply – GIS in AA)<ept id="2">*</ept></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>2026-01-28<ept id="1">**</ept> — Exercise: spatial selection refreshed <bpt id="2">*</bpt>(Learn – Exercises)<ept id="2">*</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>2026-01-28<ept id="1">**</ept> — Exercise: spatial selection refreshed <bpt id="2">*</bpt>(Learn – Exercises)<ept id="2">*</ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">👉 See the full <bpt id="1">**</bpt>What’s New<ept id="1">**</ept> overview for recent updates.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">👉 See the full <bpt id="1">**</bpt>What’s New<ept id="1">**</ept> overview for recent updates.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Contact &amp; Contribution</source>
+<target xml:lang="fr">Contact &amp; Contribution</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Contact the IFRC GIS Training Platform Team
+Questions, feedback, or ideas?<ph id="2">  </ph>
+📧 <bpt id="3">**</bpt>gis-training-platform@heigit.org<ept id="3">**</ept>
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Contact the IFRC GIS Training Platform Team
+Questions, feedback, or ideas?<ph id="2">  </ph>
+📧 <bpt id="3">**</bpt>gis-training-platform@heigit.org<ept id="3">**</ept>
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Contributing</source>
+<target xml:lang="fr">Contributing</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">We welcome contributions from across the IFRC Network.<ph id="1">  </ph>
+Please read the <bpt id="2">**</bpt>Contribution Plan<ept id="2">**</ept> before contributing new materials.</source>
+<target xml:lang="fr">We welcome contributions from across the IFRC Network.<ph id="1">  </ph>
+Please read the <bpt id="2">**</bpt>Contribution Plan<ept id="2">**</ept> before contributing new materials.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Join the Community</source>
+<target xml:lang="fr">Join the Community</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">🤝 Learning is strongest when shared.<ph id="1">  </ph>
+Join trainers, practitioners, and GIS experts across the IFRC Network to strengthen humanitarian and anticipatory action through geospatial data.</source>
+<target xml:lang="fr">🤝 Learning is strongest when shared.<ph id="1">  </ph>
+Join trainers, practitioners, and GIS experts across the IFRC Network to strengthen humanitarian and anticipatory action through geospatial data.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Happy Mapping!</source>
+<target xml:lang="fr">Happy Mapping!</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Training_Somalia.JPG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Training_Somalia.JPG</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

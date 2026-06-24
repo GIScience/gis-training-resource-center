@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_6/en_qgis_module_6_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises Module 6 - Data Analysis with QGIS <bpt id="1">&lt;a id="exercises-module-6-data-analysis-with-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises Module 6 - Data Analysis with QGIS <bpt id="1">&lt;a id="exercises-module-6-data-analysis-with-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">These exercises cover all the content from Module 6.</source>
+<target xml:lang="fr">These exercises cover all the content from Module 6.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Focus Group</source>
+<target xml:lang="fr">Focus Group</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Calculate vulnerability index - Part 1<ept id="2">](/content/Module_5/en_qgis_spatial_tools_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Calculate vulnerability index - Part 1<ept id="2">](/content/Module_5/en_qgis_spatial_tools_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take <ph id="1">`% permanent wall type`</ph>, <ph id="2">`% permanent roof type`</ph> and <ph id="3">`poverty incidence`</ph>. From the Uganda population statistics, we calculate the <ph id="4">`% of under fives`</ph> and <ph id="5">`% of elderly`</ph>. By combining the data, we are now able to visualise the areas in Uganda that are most vulnerable.</source>
+<target xml:lang="fr">We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take <ph id="1">`% permanent wall type`</ph>, <ph id="2">`% permanent roof type`</ph> and <ph id="3">`poverty incidence`</ph>. From the Uganda population statistics, we calculate the <ph id="4">`% of under fives`</ph> and <ph id="5">`% of elderly`</ph>. By combining the data, we are now able to visualise the areas in Uganda that are most vulnerable.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Spatial Processing</source>
+<target xml:lang="fr">Spatial Processing</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Calculate vulnerability index - Part 2<ept id="2">](/content/Module_5/en_qgis_non_spatial_tools_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Calculate vulnerability index - Part 2<ept id="2">](/content/Module_5/en_qgis_non_spatial_tools_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take % permanent wall type, % permanent roof type and poverty incidence. From the Uganda population statistics we calculate the % of under fives and % of elderly. We combine the data and we are now able to visualise the areas in Uganda that are most vulnerable.</source>
+<target xml:lang="fr">We want to create an overview of different vulnerability indicators. From the Covid-19 risk indicators dataset we take % permanent wall type, % permanent roof type and poverty incidence. From the Uganda population statistics we calculate the % of under fives and % of elderly. We combine the data and we are now able to visualise the areas in Uganda that are most vulnerable.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Non-spatial Processing</source>
+<target xml:lang="fr">Non-spatial Processing</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

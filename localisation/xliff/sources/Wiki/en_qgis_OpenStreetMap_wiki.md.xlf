@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_OpenStreetMap_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap (OSM) Data <bpt id="1">&lt;a id="openstreetmap-osm-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">OpenStreetMap (OSM) Data <bpt id="1">&lt;a id="openstreetmap-osm-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Geofabrik <bpt id="1">&lt;a id="geofabrik"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geofabrik <bpt id="1">&lt;a id="geofabrik"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">[</bpt>Geofabrik website<ept id="1">](https://download.geofabrik.de/)</ept> offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM.</source>
+<target xml:lang="fr">The <bpt id="1">[</bpt>Geofabrik website<ept id="1">](https://download.geofabrik.de/)</ept> offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt><bpt id="2">**</bpt>Example<ept id="2">**</ept><ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt><bpt id="2">**</bpt>Example<ept id="2">**</ept><ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Go to <it id="1" pos="open">__</it><ph id="2">https://download.geofabrik.de/__</ph> and navigate to the Mauritius<ph id="3">  </ph>
+   dataset by clicking on <ph id="4">`Africa`</ph> → <ph id="5">` Mauritius`</ph></source>
+<target xml:lang="fr">Go to <it id="1" pos="open">__</it><ph id="2">https://download.geofabrik.de/__</ph> and navigate to the Mauritius<ph id="3">  </ph>
+   dataset by clicking on <ph id="4">`Africa`</ph> → <ph id="5">` Mauritius`</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Under <bpt id="1">__</bpt>Commonly Used Formats<ept id="1">__</ept> select the option <ph id="2">`mauritius-latest-free.shp.zip`</ph>
+   and download the file. Place it somewhere on your computer where you can find
+   it again and unzip it.</source>
+<target xml:lang="fr">Under <bpt id="1">__</bpt>Commonly Used Formats<ept id="1">__</ept> select the option <ph id="2">`mauritius-latest-free.shp.zip`</ph>
+   and download the file. Place it somewhere on your computer where you can find
+   it again and unzip it.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Check out the content of the folder. There are many different shapefiles,
+   each containing one kind of OSM data. The whole list of layers and what they
+   include can be found <bpt id="1">[</bpt>here<ept id="1">](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf)</ept>.</source>
+<target xml:lang="fr">Check out the content of the folder. There are many different shapefiles,
+   each containing one kind of OSM data. The whole list of layers and what they
+   include can be found <bpt id="1">[</bpt>here<ept id="1">](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Open a new QGIS project and save it in the <ph id="1">`project`</ph> folder of your exercise
+   folder.</source>
+<target xml:lang="fr">Open a new QGIS project and save it in the <ph id="1">`project`</ph> folder of your exercise
+   folder.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Load the file <ph id="1">`gis_osm_places_a_free_1.shp`</ph>. This polygon
+   layer contains the boundaries of different features. Take some time to explore
+   the data by using the attribute table.</source>
+<target xml:lang="fr">Load the file <ph id="1">`gis_osm_places_a_free_1.shp`</ph>. This polygon
+   layer contains the boundaries of different features. Take some time to explore
+   the data by using the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">(Optional) You can select all features within the layer with the
+   “fclass” = “island” and export them as a new layer.  This will allow you to
+   start creating a map of the islands of Mauritius.</source>
+<target xml:lang="fr">(Optional) You can select all features within the layer with the
+   “fclass” = “island” and export them as a new layer.  This will allow you to
+   start creating a map of the islands of Mauritius.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Load the file <ph id="1">`gis_osm_buildings_a_free_1.shp`</ph>. This polygon
+   layer contains all buildings in Mauritius mapped on OSM. Take some time
+   to explore the layer.</source>
+<target xml:lang="fr">Load the file <ph id="1">`gis_osm_buildings_a_free_1.shp`</ph>. This polygon
+   layer contains all buildings in Mauritius mapped on OSM. Take some time
+   to explore the layer.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Add a satellite base map by using the <bpt id="1">[</bpt>QuickMapServices plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)</ept>
+   to check if there are unmapped buildings.</source>
+<target xml:lang="fr">Add a satellite base map by using the <bpt id="1">[</bpt>QuickMapServices plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)</ept>
+   to check if there are unmapped buildings.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Load the file <ph id="1">`gis_osm_landuse_a_free_1.shp`</ph>. Check out the
+    dataset and use the classification function to get a better overview.</source>
+<target xml:lang="fr">Load the file <ph id="1">`gis_osm_landuse_a_free_1.shp`</ph>. Check out the
+    dataset and use the classification function to get a better overview.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <ph id="1">`gis_osm_landuse_a_free_1`</ph> in the <ph id="2">`Layer Panel`</ph>
+      -> <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on
+      the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <ph id="1">`gis_osm_landuse_a_free_1`</ph> in the <ph id="2">`Layer Panel`</ph>
+      -> <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on
+      the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.
+      Under <ph id="2">`Value`</ph> select “fclass” (short for <bpt id="3">_</bpt>featureclass<ept id="3">_</ept>).</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.
+      Under <ph id="2">`Value`</ph> select “fclass” (short for <bpt id="3">_</bpt>featureclass<ept id="3">_</ept>).</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Further down the window click on <ph id="1">`Classify`</ph>.  You will see all unique
+      values of the “fclass” column.  You can adjust the
+      colours by double-clicking on one row in the central field. Once you are
+      done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Further down the window click on <ph id="1">`Classify`</ph>.  You will see all unique
+      values of the “fclass” column.  You can adjust the
+      colours by double-clicking on one row in the central field. Once you are
+      done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">As you can see, Geofabrik is great if you want to get complete OSM datasets for
+whole countries or regions.</source>
+<target xml:lang="fr">As you can see, Geofabrik is great if you want to get complete OSM datasets for
+whole countries or regions.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">QuickOSM <bpt id="1">&lt;a id="quickosm"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QuickOSM <bpt id="1">&lt;a id="quickosm"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.<ph id="1">  </ph>
+You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources:</source>
+<target xml:lang="fr">The QuickOSM plugin allows you to load OSM data from inside your QGIS window. It is a quick and easy method, but requires the deepest knowledge about the OSM data model compared to the other options.<ph id="1">  </ph>
+You will need to formulate a data query to find the data that you are looking for. To tailor your query based on the exact key and value you need there are two great resources:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OSM Wiki<ept id="1">](https://wiki.openstreetmap.org/wiki/Main_Page)</ept>, and especially the
+<bpt id="2">   [</bpt>Map features<ept id="2">](https://wiki.openstreetmap.org/wiki/Map_features)</ept> article.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OSM Wiki<ept id="1">](https://wiki.openstreetmap.org/wiki/Main_Page)</ept>, and especially the
+<bpt id="2">   [</bpt>Map features<ept id="2">](https://wiki.openstreetmap.org/wiki/Map_features)</ept> article.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Taginfo<ept id="1">](https://taginfo.openstreetmap.org/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Taginfo<ept id="1">](https://taginfo.openstreetmap.org/)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to <bpt id="1">[</bpt>install the QGIS plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>.</source>
+<target xml:lang="fr">This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to <bpt id="1">[</bpt>install the QGIS plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Overpass Turbo <bpt id="1">&lt;a id="overpass-turbo"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Overpass Turbo <bpt id="1">&lt;a id="overpass-turbo"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Overpass Turbo<ept id="1">](https://overpass-turbo.eu)</ept> is a web-based data export tool for
+OSM. By running a query, you can download the data and import it into your project.
+You can either run it by writing your query on the left or by using the wizard
+which will assist you in writing your queries.
+<bpt id="2">*</bpt><bpt id="3">**</bpt>Example<ept id="3">**</ept><ept id="2">*</ept><ph id="4">  </ph>
+To search for schools in your bounding box or search area you can either write
+the query yourself or get it built by the wizard.<ph id="5">  </ph>
+<bpt id="6">**</bpt>1. Check Tagging Guidelines<ept id="6">**</ept><ph id="7">  </ph>
+Search for it in the <bpt id="8">[</bpt>OSM wiki<ept id="8">](https://wiki.openstreetmap.org/wiki/Tags)</ept> and/or
+<bpt id="9">[</bpt>taginfo<ept id="9">](https://taginfo.openstreetmap.org)</ept>. In our example it is: <bpt id="10">*</bpt>amenity=school<ept id="10">*</ept><ph id="11">  </ph>
+<bpt id="12">**</bpt>2.  Write or build the query<ept id="12">**</ept><ph id="13">  </ph>
+Either use the wizard by typing in <bpt id="14">*</bpt>amenity=school in Heidelberg<ept id="14">*</ept> or write your
+own query (f. e. for your bounding box):<ph id="15">  </ph>
+<bpt id="16">**</bpt>Wizard:<ept id="16">**</ept>
+<ph id="17">:::{figure} /fig/en_wizard_overpassturbo.png</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Overpass Turbo<ept id="1">](https://overpass-turbo.eu)</ept> is a web-based data export tool for
+OSM. By running a query, you can download the data and import it into your project.
+You can either run it by writing your query on the left or by using the wizard
+which will assist you in writing your queries.
+<bpt id="2">*</bpt><bpt id="3">**</bpt>Example<ept id="3">**</ept><ept id="2">*</ept><ph id="4">  </ph>
+To search for schools in your bounding box or search area you can either write
+the query yourself or get it built by the wizard.<ph id="5">  </ph>
+<bpt id="6">**</bpt>1. Check Tagging Guidelines<ept id="6">**</ept><ph id="7">  </ph>
+Search for it in the <bpt id="8">[</bpt>OSM wiki<ept id="8">](https://wiki.openstreetmap.org/wiki/Tags)</ept> and/or
+<bpt id="9">[</bpt>taginfo<ept id="9">](https://taginfo.openstreetmap.org)</ept>. In our example it is: <bpt id="10">*</bpt>amenity=school<ept id="10">*</ept><ph id="11">  </ph>
+<bpt id="12">**</bpt>2.  Write or build the query<ept id="12">**</ept><ph id="13">  </ph>
+Either use the wizard by typing in <bpt id="14">*</bpt>amenity=school in Heidelberg<ept id="14">*</ept> or write your
+own query (f. e. for your bounding box):<ph id="15">  </ph>
+<bpt id="16">**</bpt>Wizard:<ept id="16">**</ept>
+<ph id="17">:::{figure} /fig/en_wizard_overpassturbo.png</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_wizard_overpassturbo_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_wizard_overpassturbo_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Wizard in overpass turbo.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Wizard in overpass turbo.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_wizard_result.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_wizard_result.png</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_wizard_result_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_wizard_result_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Screenshot of the result
+:::<ph id="1">  </ph>
+<bpt id="2">**</bpt>Query:<ept id="2">**</ept></source>
+<target xml:lang="fr">Screenshot of the result
+:::<ph id="1">  </ph>
+<bpt id="2">**</bpt>Query:<ept id="2">**</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Bounding Box<ept id="1">**</ept><ph id="2">  </ph>
+To query with a bounding box you need a special format. Specify it like so:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Bounding Box<ept id="1">**</ept><ph id="2">  </ph>
+To query with a bounding box you need a special format. Specify it like so:</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">s (southern limit in decimal degrees, lowest latitude)</source>
+<target xml:lang="fr">s (southern limit in decimal degrees, lowest latitude)</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">w (western limit in decimal degrees, lowest longitude)</source>
+<target xml:lang="fr">w (western limit in decimal degrees, lowest longitude)</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">n (northern limit in decimal degrees, highest latitude)</source>
+<target xml:lang="fr">n (northern limit in decimal degrees, highest latitude)</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">e (eastern limit in decimal degrees, highest longitude)</source>
+<target xml:lang="fr">e (eastern limit in decimal degrees, highest longitude)</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">for example:</source>
+<target xml:lang="fr">for example:</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+For more information on the query language check out the <bpt id="2">[</bpt>Language Guide<ept id="2">](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide)</ept>.
+<ph id="3">:::</ph>
+<bpt id="4">**</bpt>3. Download the data<ept id="4">**</ept><ph id="5">  </ph>
+One can export the results in various ways.</source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+For more information on the query language check out the <bpt id="2">[</bpt>Language Guide<ept id="2">](https://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide)</ept>.
+<ph id="3">:::</ph>
+<bpt id="4">**</bpt>3. Download the data<ept id="4">**</ept><ph id="5">  </ph>
+One can export the results in various ways.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Data
+By exporting the data as f.e. GeoJSON you can later on import them in your QGIS
+project.</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Data
+By exporting the data as f.e. GeoJSON you can later on import them in your QGIS
+project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_overpass_turbo_data.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_overpass_turbo_data.png</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_overpass_turbo_data_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_overpass_turbo_data_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Screenshot of how to export data in overpassturbo.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of how to export data in overpassturbo.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Map
+By exporting the query as map, you can share your current view as link or image.</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Map
+By exporting the query as map, you can share your current view as link or image.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_overpass_turbo_map.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_overpass_turbo_map.png</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 150px</ph>
+<ph id="2">name: en_overpass_turbo_map_wiki</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">height: 150px</ph>
+<ph id="2">name: en_overpass_turbo_map_wiki</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Screenshot of how to export map in overpassturbo.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Screenshot of how to export map in overpassturbo.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Query
+By exporting your query you can get the text or convert it to an OverpassXML or
+OverpassQL formatted query.</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Query
+By exporting your query you can get the text or convert it to an OverpassXML or
+OverpassQL formatted query.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_overpass_turbo_query.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_overpass_turbo_query.png</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_overpass_turbo_query_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">height: 250px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_overpass_turbo_query_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Screenshot of how to export query in overpassturbo.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Screenshot of how to export query in overpassturbo.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+For more information, check out the <bpt id="2">[</bpt>wiki<ept id="2">](https://wiki.openstreetmap.org/wiki/Overpass_turbo)</ept>.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+For more information, check out the <bpt id="2">[</bpt>wiki<ept id="2">](https://wiki.openstreetmap.org/wiki/Overpass_turbo)</ept>.
+<ph id="3">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

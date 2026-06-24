@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Risk Assessment <bpt id="1">&lt;a id="risk-assessment"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Risk Assessment <bpt id="1">&lt;a id="risk-assessment"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In this exercise, you will go through the different steps requiring QGIS in order to conduct a spatial risk assessment.</source>
+<target xml:lang="fr">In this exercise, you will go through the different steps requiring QGIS in order to conduct a spatial risk assessment.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Join Attributes by location (summary<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Join Attributes by location (summary<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table functions<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table functions<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability, and coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
+The collection and processing of this information varies based on the problem, but the calculation scheme to combine the information to a risk score remains consistent.</source>
+<target xml:lang="fr">In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why. By overlaying the information on exposure, vulnerability, and coping capacity, it will become clear which areas are predicted to be most severely impacted. These areas can then be targeted as priority areas for early action to ensure the most at-risk communities receive assistance before the event happens.
+The collection and processing of this information varies based on the problem, but the calculation scheme to combine the information to a risk score remains consistent.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Somalia is significantly exposed to droughts. We will showcase a risk assessment for a drought Early Action protocol.</source>
+<target xml:lang="fr">Somalia is significantly exposed to droughts. We will showcase a risk assessment for a drought Early Action protocol.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Part 1: Indicator Processing <bpt id="1">&lt;a id="part-1-indicator-processing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Part 1: Indicator Processing <bpt id="1">&lt;a id="part-1-indicator-processing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The first part of the exercise will prepare the data in order to serve as indicator values. Raw data will be processed into meaningful indicators, and the vulnerability index will be calculated. Finally, all risk relevant data will be joined into a single vector layer using spatial data geoprocessing.</source>
+<target xml:lang="fr">The first part of the exercise will prepare the data in order to serve as indicator values. Raw data will be processed into meaningful indicators, and the vulnerability index will be calculated. Finally, all risk relevant data will be joined into a single vector layer using spatial data geoprocessing.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Data <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Download the data folder for "Module_5_Exercise2_Drought_Monitoring_Trigger.zip" <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)</ept><ept id="1">__</ept>. In the folder, you can find two folders. One for the first part ("Module_5_Ex1_Part_1") of the exercise and one for the second part ("Module_5_Ex1_Part_2").</source>
+<target xml:lang="fr">Download the data folder for "Module_5_Exercise2_Drought_Monitoring_Trigger.zip" <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise1_Risk_Assessment/Modul_5_Exercise1_Risk_Assessment.zip)</ept><ept id="1">__</ept>. In the folder, you can find two folders. One for the first part ("Module_5_Ex1_Part_1") of the exercise and one for the second part ("Module_5_Ex1_Part_2").</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Open the data folder for the first part of the exercise: "Module_5_Ex1_Part_1".</source>
+<target xml:lang="fr">Open the data folder for the first part of the exercise: "Module_5_Ex1_Part_1".</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Save the folder on your computer and unzip the file. The zip folder includes:</source>
+<target xml:lang="fr">Save the folder on your computer and unzip the file. The zip folder includes:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph>: <bpt id="2">[</bpt>Somalia district boundaries (Admin level 2)<ept id="2">](https://data.humdata.org/dataset/cod-ab-som)</ept></source>
+<target xml:lang="fr"><ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph>: <bpt id="2">[</bpt>Somalia district boundaries (Admin level 2)<ept id="2">](https://data.humdata.org/dataset/cod-ab-som)</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`WHO_health_sites.shp`</ph>: <bpt id="2">[</bpt>Healthsites Somalia<ept id="2">](https://data.humdata.org/dataset/somalia-health-facilities-data)</ept></source>
+<target xml:lang="fr"><ph id="1">`WHO_health_sites.shp`</ph>: <bpt id="2">[</bpt>Healthsites Somalia<ept id="2">](https://data.humdata.org/dataset/somalia-health-facilities-data)</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`som_ppp_2020_UNadj_constrained.tif`</ph> : <bpt id="2">[</bpt>Worldpop Population Counts Somalia<ept id="2">](https://hub.worldpop.org/geodata/summary?id=28892)</ept></source>
+<target xml:lang="fr"><ph id="1">`som_ppp_2020_UNadj_constrained.tif`</ph> : <bpt id="2">[</bpt>Worldpop Population Counts Somalia<ept id="2">](https://hub.worldpop.org/geodata/summary?id=28892)</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Somalia_malnutrion_district_2022_2023.xlsx`</ph>:<bpt id="2">[</bpt>Somalia: Acute Malnutrition<ept id="2">](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)</ept></source>
+<target xml:lang="fr"><ph id="1">`Somalia_malnutrion_district_2022_2023.xlsx`</ph>:<bpt id="2">[</bpt>Somalia: Acute Malnutrition<ept id="2">](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Load the Somalia district boundaries (admin level 2) (<ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph>) and Healthsites Somalia (<ph id="2">`WHO_health_sites.shp`</ph>) into QGIS.</source>
+<target xml:lang="fr">Load the Somalia district boundaries (admin level 2) (<ph id="1">`som_admbnda_adm2_ocha_20230308.shp`</ph>) and Healthsites Somalia (<ph id="2">`WHO_health_sites.shp`</ph>) into QGIS.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  <bpt id="1">__</bpt>Healthsites Somalia<ept id="1">__</ept> into EPSG 4326. Use the tool <ph id="2">`Reproject layer`</ph> for this process. See the Wiki entry on <bpt id="3">__</bpt>Projections<ept id="3">__</ept> for further information.</source>
+<target xml:lang="fr">Make sure to that both datasets are in the same projection. In this case we have two different projections and we will reproject  <bpt id="1">__</bpt>Healthsites Somalia<ept id="1">__</ept> into EPSG 4326. Use the tool <ph id="2">`Reproject layer`</ph> for this process. See the Wiki entry on <bpt id="3">__</bpt>Projections<ept id="3">__</ept> for further information.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Before you start doing any GIS operations, <bpt id="2">__</bpt>always explore the data<ept id="2">__</ept>. Always check if the projections of the different layers are the same.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Before you start doing any GIS operations, <bpt id="2">__</bpt>always explore the data<ept id="2">__</ept>. Always check if the projections of the different layers are the same.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">In order to bring the information of the health sites point layer into a usable indicator value we can now count the health sites per district. We can use the tool <bpt id="1">__</bpt>Count points in polygon<ept id="1">__</ept> from the Processing Toolbox. Take a look on the tools description and the further features it brings. For our task we only have to specify polygon and point input layer, the count field name (e.g. <bpt id="2">__</bpt>Num_healtsites<ept id="2">__</ept>) and choose name and directory of the output layer. Explore the output.</source>
+<target xml:lang="fr">In order to bring the information of the health sites point layer into a usable indicator value we can now count the health sites per district. We can use the tool <bpt id="1">__</bpt>Count points in polygon<ept id="1">__</ept> from the Processing Toolbox. Take a look on the tools description and the further features it brings. For our task we only have to specify polygon and point input layer, the count field name (e.g. <bpt id="2">__</bpt>Num_healtsites<ept id="2">__</ept>) and choose name and directory of the output layer. Explore the output.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Count_points_polygon.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Count_points_polygon.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: count_points_polygon</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: count_points_polygon</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Counting healthsites per district.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Counting healthsites per district.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the <bpt id="1">__</bpt>Zonal statistics<ept id="1">__</ept> tool from the Processing Toolbox. See the Wiki entry for <bpt id="2">[</bpt>Zonal Statistics<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept> for further information. Specify your inout layer (Output of step 3 e.g. <bpt id="3">__</bpt>Num_healtsites<ept id="3">__</ept>) and your raster layer (Worldpop Raster), specify the column prefix (e.g. _<bpt id="4">__</bpt>wpop<ept id="4">__</ept>) and select the statistics to caclulate (<bpt id="5">__</bpt>sum<ept id="5">__</ept>). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.</source>
+<target xml:lang="fr">Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the <bpt id="1">__</bpt>Zonal statistics<ept id="1">__</ept> tool from the Processing Toolbox. See the Wiki entry for <bpt id="2">[</bpt>Zonal Statistics<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept> for further information. Specify your inout layer (Output of step 3 e.g. <bpt id="3">__</bpt>Num_healtsites<ept id="3">__</ept>) and your raster layer (Worldpop Raster), specify the column prefix (e.g. _<bpt id="4">__</bpt>wpop<ept id="4">__</ept>) and select the statistics to caclulate (<bpt id="5">__</bpt>sum<ept id="5">__</ept>). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_zonal_statistics.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_zonal_statistics.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: czonal_statistics</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: czonal_statistics</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Summarising population counts per district.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Summarising population counts per district.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+Throughout the indicator processing process you will have several interim results. Make sure to save them in a "temp" folder.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+Throughout the indicator processing process you will have several interim results. Make sure to save them in a "temp" folder.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Now we know the numbers of health sites and the number of population per district. We are ready to calculate our final indicator <bpt id="1">__</bpt>Number of health sites per 10.000 inhabitants<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Now we know the numbers of health sites and the number of population per district. We are ready to calculate our final indicator <bpt id="1">__</bpt>Number of health sites per 10.000 inhabitants<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the <ph id="1">`Field Calculator`</ph> by clicking on the button <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept>. By checkin the box for <ph id="3">`Create a new field`</ph> we can conduct calculation and saving them right away in a new attribute column.</source>
+<target xml:lang="fr">Open the attribute table of “Num_healthsites_wpop” (Output of step 4) and Open the <ph id="1">`Field Calculator`</ph> by clicking on the button <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept>. By checkin the box for <ph id="3">`Create a new field`</ph> we can conduct calculation and saving them right away in a new attribute column.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">define the output field name as "healthsites_10000" and set the <ph id="1">`Type`</ph> to <ph id="2">`Decimal Number(real)`</ph>.</source>
+<target xml:lang="fr">define the output field name as "healthsites_10000" and set the <ph id="1">`Type`</ph> to <ph id="2">`Decimal Number(real)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Now we will calculate in the expression field the number of health sites per 10.000 inhabitants:</source>
+<target xml:lang="fr">Now we will calculate in the expression field the number of health sites per 10.000 inhabitants:</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">When you are down click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept>).</source>
+<target xml:lang="fr">When you are down click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_field_calc.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_field_calc.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: Field Calculator</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: Field Calculator</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Calculating health sites per 10000 inhabitants.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Calculating health sites per 10000 inhabitants.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Land Degradation <bpt id="1">&lt;a id="land-degradation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Land Degradation <bpt id="1">&lt;a id="land-degradation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset:</source>
+<target xml:lang="fr">A very important factor for areas vulnerable to drought is the level of land degradation. It is an important factor not only for agriculture, but also for livestock herds, as both are primary sources of income. We will try to add this information to our dataset:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">-<bpt id="1">[</bpt>Somalia Land degradation<ept id="1">](https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/)</ept></source>
+<target xml:lang="fr">-<bpt id="1">[</bpt>Somalia Land degradation<ept id="1">](https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/)</ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/land_degradation.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/land_degradation.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 60%</ph>
+<ph id="2">name: land_degradation</ph></source>
+<target xml:lang="fr"><ph id="1">width: 60%</ph>
+<ph id="2">name: land_degradation</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Land Degradation.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Land Degradation.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in "Module_5_Ex1_Part_1\land_degradation_somalia".</source>
+<target xml:lang="fr">You will see that we can only download the information as an image. This is a very common case when working with open data. We have to digitise the information in order to be able to use it for further processing. Find the digitised version in "Module_5_Ex1_Part_1\land_degradation_somalia".</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Explore the data. We have a column "LandD_CLas" which indicators the severity of land degradation from 0 to 3. We now want to join each respective land degradation class to its correct district by calculating the largest overlapping area.</source>
+<target xml:lang="fr">Explore the data. We have a column "LandD_CLas" which indicators the severity of land degradation from 0 to 3. We now want to join each respective land degradation class to its correct district by calculating the largest overlapping area.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Open the tool <ph id="1">`Join attributes by location`</ph> from the Processing Toolbox.</source>
+<target xml:lang="fr">Open the tool <ph id="1">`Join attributes by location`</ph> from the Processing Toolbox.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Define <ph id="1">`Input Layer`</ph> (layer you want to enrich) and <ph id="2">`Join Layer`</ph> (dataset with the additional information).</source>
+<target xml:lang="fr">Define <ph id="1">`Input Layer`</ph> (layer you want to enrich) and <ph id="2">`Join Layer`</ph> (dataset with the additional information).</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`intersects`</ph> as geometric predicate and add only the <ph id="2">`LandD_class`</ph> as field to add to our base layer.</source>
+<target xml:lang="fr">Select <ph id="1">`intersects`</ph> as geometric predicate and add only the <ph id="2">`LandD_class`</ph> as field to add to our base layer.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Join Type`</ph> set <ph id="2">`Take attributes of the feature with largest overlap only (one-to-one)`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Join Type`</ph> set <ph id="2">`Take attributes of the feature with largest overlap only (one-to-one)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Save as Layer.</source>
+<target xml:lang="fr">Save as Layer.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">See the Wiki entry <bpt id="1">[</bpt>Spatial Joins<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html)</ept> for further information.</source>
+<target xml:lang="fr">See the Wiki entry <bpt id="1">[</bpt>Spatial Joins<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html)</ept> for further information.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_join.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_join.png</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: Join attributes by location</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: Join attributes by location</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Joining Attributes by Location.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Joining Attributes by Location.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Malnutrition <bpt id="1">&lt;a id="malnutrition"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Malnutrition <bpt id="1">&lt;a id="malnutrition"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Another very important indicator to describe vulnerability in a district is acute malnutrition, especially for children under 5 years old.</source>
+<target xml:lang="fr">Another very important indicator to describe vulnerability in a district is acute malnutrition, especially for children under 5 years old.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Download the data we need:
+<ph id="1">`Somalia_malnutrion_district_2022_2023.xlsx`</ph>:<bpt id="2">[</bpt>Somalia: Acute Malnutrition<ept id="2">](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)</ept></source>
+<target xml:lang="fr">Download the data we need:
+<ph id="1">`Somalia_malnutrion_district_2022_2023.xlsx`</ph>:<bpt id="2">[</bpt>Somalia: Acute Malnutrition<ept id="2">](https://data.humdata.org/dataset/somalia-acute-malnutrition-burden-and-prevalence?)</ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Explore the data. In which resolution is the data available? Do you have ideas as to how we can add it to our indicator dataset?</source>
+<target xml:lang="fr">Explore the data. In which resolution is the data available? Do you have ideas as to how we can add it to our indicator dataset?</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Save the Excel file as a CSV by clicking on <ph id="1">`Save file as`</ph> and choosing <ph id="2">`CSV (delimiter-separated)`</ph>.</source>
+<target xml:lang="fr">Save the Excel file as a CSV by clicking on <ph id="1">`Save file as`</ph> and choosing <ph id="2">`CSV (delimiter-separated)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Load the CSV file into you QGIS by drag and drop.</source>
+<target xml:lang="fr">Load the CSV file into you QGIS by drag and drop.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Open the tool <ph id="1">`Join attributes by field value`</ph> from the Processing Toolbox.</source>
+<target xml:lang="fr">Open the tool <ph id="1">`Join attributes by field value`</ph> from the Processing Toolbox.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Specify our two datasets we want to join as well as the common field available for joining (<ph id="1">`ADM2_EN`</ph> and <ph id="2">`adm2name`</ph>).</source>
+<target xml:lang="fr">Specify our two datasets we want to join as well as the common field available for joining (<ph id="1">`ADM2_EN`</ph> and <ph id="2">`adm2name`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`join type`</ph> set <ph id="2">`Take attributes of the first matching feature only (one-to-one)`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`join type`</ph> set <ph id="2">`Take attributes of the first matching feature only (one-to-one)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Save the layer to file.</source>
+<target xml:lang="fr">Save the layer to file.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_joinbyvalue.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_joinbyvalue.png</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: Join attributes by field value</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: Join attributes by field value</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Joining attributes by field value.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Joining attributes by field value.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">In the Log file you will get a message: "6 feature(s) from input layer could not be matched".</source>
+<target xml:lang="fr">In the Log file you will get a message: "6 feature(s) from input layer could not be matched".</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have "field 1", "field 2" etc.) after importing. In this case, the correct field names is usually located below the header.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have "field 1", "field 2" etc.) after importing. In this case, the correct field names is usually located below the header.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_error.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_error.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: Join attributes by field value</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: Join attributes by field value</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">The log file for the Join Attribute by Field Value algorithm.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The log file for the Join Attribute by Field Value algorithm.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on <ph id="1">`affunderfive`</ph> and bring <ph id="2">`NULL`</ph> Values to the top. Check the joining attribute "ADM2_EN" and compare it with the joining attribute "adm2name" from the CSV file.
+The Spelling of the district names differs. Since we are using the admin-2-boundaries as the base layer for all indicators, we can now adapt the names in the CSV file.
+You can edit the names in 6 cases in the Attribute Table of the CSV file by toggling editing mode, or you can manually edit the CSV file in Excel and then load it into QGIS.</source>
+<target xml:lang="fr">Open the attribute tables from both, your output layer and the CSV file in order to find out the roots of the problem. In the output layer double-click on <ph id="1">`affunderfive`</ph> and bring <ph id="2">`NULL`</ph> Values to the top. Check the joining attribute "ADM2_EN" and compare it with the joining attribute "adm2name" from the CSV file.
+The Spelling of the district names differs. Since we are using the admin-2-boundaries as the base layer for all indicators, we can now adapt the names in the CSV file.
+You can edit the names in 6 cases in the Attribute Table of the CSV file by toggling editing mode, or you can manually edit the CSV file in Excel and then load it into QGIS.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Make sure to call your final layer "vulnerability_districts".</source>
+<target xml:lang="fr">Make sure to call your final layer "vulnerability_districts".</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Part 2: Risk Calculation <bpt id="1">&lt;a id="part-2-risk-calculation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Part 2: Risk Calculation <bpt id="1">&lt;a id="part-2-risk-calculation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Task <bpt id="1">&lt;a id="task-2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task <bpt id="1">&lt;a id="task-2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.</source>
+<target xml:lang="fr">In the second part of the exercise we will showcase the steps how to come from indicators to a risk analysis.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">You can find all the data for the second part of the exercise in the "Module_5_Ex1_Part_2".
+Download the data folder for the second part of the exercise: "Module_5_Ex1_Part_2". We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:</source>
+<target xml:lang="fr">You can find all the data for the second part of the exercise in the "Module_5_Ex1_Part_2".
+Download the data folder for the second part of the exercise: "Module_5_Ex1_Part_2". We processed the vulnerability layer in the first part of the exercise; simplified exposure and lack of coping capacity layers have been prepared in advance for this exercise. These layers have only 3 to 4 indicators for complexity reasons. See below an example of indicators that were used for Somalia:</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Indicators_Rsik_Assessment_Somalia.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Indicators_Rsik_Assessment_Somalia.png</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: Indicators Risk Assessment</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: Indicators Risk Assessment</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Indicators for the risk assessment.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Indicators for the risk assessment.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">1. Normalisation <bpt id="1">&lt;a id="1-normalisation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Normalisation <bpt id="1">&lt;a id="1-normalisation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">In order to perform further calculation on the indicators, we need to make them comparable. To do this, we can normalise them to be within a range of 0-1.</source>
+<target xml:lang="fr">In order to perform further calculation on the indicators, we need to make them comparable. To do this, we can normalise them to be within a range of 0-1.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">$ Normalised\ Value\ = \frac<ph id="1">{value\ -\ min value}</ph><ph id="2">{max\ value \ - \ min }</ph> $</source>
+<target xml:lang="fr">$ Normalised\ Value\ = \frac<ph id="1">{value\ -\ min value}</ph><ph id="2">{max\ value \ - \ min }</ph> $</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of “vulnerability_districts” and Open the <ph id="1">`Field Calculator`</ph> by clicking on the button <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept>. By checking the box for <ph id="3">`Create a new field`</ph> we can conduct calculation and saving them right away in a new attribute column.</source>
+<target xml:lang="fr">Open the attribute table of “vulnerability_districts” and Open the <ph id="1">`Field Calculator`</ph> by clicking on the button <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept>. By checking the box for <ph id="3">`Create a new field`</ph> we can conduct calculation and saving them right away in a new attribute column.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Start with the first indicator <ph id="1">`LandD_class`</ph>.</source>
+<target xml:lang="fr">Start with the first indicator <ph id="1">`LandD_class`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Define the output field name as "LandD_class_norm" and set the <ph id="1">`Type`</ph> to <ph id="2">`Decimal Number(real)`</ph>.</source>
+<target xml:lang="fr">Define the output field name as "LandD_class_norm" and set the <ph id="1">`Type`</ph> to <ph id="2">`Decimal Number(real)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Now we will calculate in the expression field the normalisation of the indicator:</source>
+<target xml:lang="fr">Now we will calculate in the expression field the normalisation of the indicator:</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">When you are done click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept>).</source>
+<target xml:lang="fr">When you are done click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_Part2_normalization.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_Part2_normalization.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: Join attributes by field value</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: Join attributes by field value</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Normalising the indicators.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Normalising the indicators.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%</ph> Could be nice to add an explanation to normalisation somewhere, maybe module 6?</source>
+<target xml:lang="fr"><ph id="1">%%</ph> Could be nice to add an explanation to normalisation somewhere, maybe module 6?</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Repeat this step for the other indicators.</source>
+<target xml:lang="fr">Repeat this step for the other indicators.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">For each indicator you have now the original column and the normalised column.</source>
+<target xml:lang="fr">For each indicator you have now the original column and the normalised column.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">2. Directions <bpt id="1">&lt;a id="2-directions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Directions <bpt id="1">&lt;a id="2-directions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">The direction indicates whether or not an indicator follows the predefined logic: “the higher the value, the worse the circumstances”, meaning that higher values imply a higher risk. The logic is adapted for all three dimensions, since it is generally intuitive to think that high values = high risk. If a respective indicator follows this logic, the direction would be 1; if it does not, the direction would be = -1.</source>
+<target xml:lang="fr">The direction indicates whether or not an indicator follows the predefined logic: “the higher the value, the worse the circumstances”, meaning that higher values imply a higher risk. The logic is adapted for all three dimensions, since it is generally intuitive to think that high values = high risk. If a respective indicator follows this logic, the direction would be 1; if it does not, the direction would be = -1.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">In order to understand the directions of our indicators we first have to assign them to one of the dimensions (exposure, vulnerability, coping capacity).</source>
+<target xml:lang="fr">In order to understand the directions of our indicators we first have to assign them to one of the dimensions (exposure, vulnerability, coping capacity).</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">To which dimension would you assign the processed indicators and what would their direction be?</source>
+<target xml:lang="fr">To which dimension would you assign the processed indicators and what would their direction be?</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Depending on the direction the next step will vary:</source>
+<target xml:lang="fr">Depending on the direction the next step will vary:</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">If the <bpt id="1">__</bpt>direction is 1<ept id="1">__</ept> (indicating a positive weight), the formula is straightforward:</source>
+<target xml:lang="fr">If the <bpt id="1">__</bpt>direction is 1<ept id="1">__</ept> (indicating a positive weight), the formula is straightforward:</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">$ weighted=   value  \times weight $</source>
+<target xml:lang="fr">$ weighted=   value  \times weight $</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">If the <bpt id="1">__</bpt>direction is -1<ept id="1">__</ept> (indicating a negative weight), the formula adjusts the value by subtracting it from 1 before applying the weight:</source>
+<target xml:lang="fr">If the <bpt id="1">__</bpt>direction is -1<ept id="1">__</ept> (indicating a negative weight), the formula adjusts the value by subtracting it from 1 before applying the weight:</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">$ weighted=   (1 - value)  \times weight $</source>
+<target xml:lang="fr">$ weighted=   (1 - value)  \times weight $</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.</source>
+<target xml:lang="fr">The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">We will not go further into this in this module but you can find more information <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk)</ept>.</source>
+<target xml:lang="fr">We will not go further into this in this module but you can find more information <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html#risk)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">3. Weighting of Indicators <bpt id="1">&lt;a id="3-weighting-of-indicators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Weighting of Indicators <bpt id="1">&lt;a id="3-weighting-of-indicators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">In the next step we can weight the indicators based on their relevance to our risk assessment. It is recommended to do surveys or workshops with the local staff in oder to find out the importance of the respective indicators.</source>
+<target xml:lang="fr">In the next step we can weight the indicators based on their relevance to our risk assessment. It is recommended to do surveys or workshops with the local staff in oder to find out the importance of the respective indicators.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">We have used so far the following weighting scale:</source>
+<target xml:lang="fr">We have used so far the following weighting scale:</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Weight</source>
+<target xml:lang="fr">Weight</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Definition</source>
+<target xml:lang="fr">Definition</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">0</source>
+<target xml:lang="fr">0</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Not Important</source>
+<target xml:lang="fr">Not Important</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">0.25</source>
+<target xml:lang="fr">0.25</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Slightly Important</source>
+<target xml:lang="fr">Slightly Important</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">0.5</source>
+<target xml:lang="fr">0.5</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Moderately Important</source>
+<target xml:lang="fr">Moderately Important</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">0.75</source>
+<target xml:lang="fr">0.75</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Fairly Important</source>
+<target xml:lang="fr">Fairly Important</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">1</source>
+<target xml:lang="fr">1</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Very Important</source>
+<target xml:lang="fr">Very Important</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">In the attribute table of your layer we can calculate the weighted indicators for each normalised indicator. For this we have to follow the same steps as above: Open the <ph id="1">`Field Calculator`</ph> by clicking on the button <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept>, and create a new field with the suffix "_weighted" in the expression field.</source>
+<target xml:lang="fr">In the attribute table of your layer we can calculate the weighted indicators for each normalised indicator. For this we have to follow the same steps as above: Open the <ph id="1">`Field Calculator`</ph> by clicking on the button <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept>, and create a new field with the suffix "_weighted" in the expression field.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.png</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: Add new field to weight indicators</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: Add new field to weight indicators</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Adding a new field to weight indicators.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding a new field to weight indicators.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">For each indicator we now have the normalised and weighted version:</source>
+<target xml:lang="fr">For each indicator we now have the normalised and weighted version:</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_weighted_attribute.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_weighted_attribute.png</ph></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: Attribute Table with "_norm" and "_weighted" indicators</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: Attribute Table with "_norm" and "_weighted" indicators</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Attribute table with "_norm" and "_weighted" indicators.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Attribute table with "_norm" and "_weighted" indicators.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">4. Vulnerability Score / Index <bpt id="1">&lt;a id="4-vulnerability-score-index"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4. Vulnerability Score / Index <bpt id="1">&lt;a id="4-vulnerability-score-index"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">We are now ready to calculate the vulnerability score for each district:</source>
+<target xml:lang="fr">We are now ready to calculate the vulnerability score for each district:</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Open the attribute table -> open the <ph id="1">`Field Calculator`</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept> and create a new field with the name "vulnerability_score" and field type "Decimal Number (real)". In the expression window, sum up all weighted indicator values:</source>
+<target xml:lang="fr">Open the attribute table -> open the <ph id="1">`Field Calculator`</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept> and create a new field with the name "vulnerability_score" and field type "Decimal Number (real)". In the expression window, sum up all weighted indicator values:</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">5. Prepare Risk Assessment <bpt id="1">&lt;a id="5-prepare-risk-assessment"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5. Prepare Risk Assessment <bpt id="1">&lt;a id="5-prepare-risk-assessment"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.</source>
+<target xml:lang="fr">In order to calculate the risk we have to bring our 3 dimension exposure, vulnerability and coping capacity together.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Right click om one of the layer and select <ph id="1">`Properties`</ph> → Go the <ph id="2">`Joins`</ph> tab.</source>
+<target xml:lang="fr">Right click om one of the layer and select <ph id="1">`Properties`</ph> → Go the <ph id="2">`Joins`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Click on the <ph id="1">`+`</ph> button, add a new join and select the layer you want to join. Define "admin2Name" as <ph id="2">`Join Field`</ph>:</source>
+<target xml:lang="fr">Click on the <ph id="1">`+`</ph> button, add a new join and select the layer you want to join. Define "admin2Name" as <ph id="2">`Join Field`</ph>:</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_join_risk.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_join_risk.png</ph></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 90%</ph>
+<ph id="2">name: Join Layers</ph></source>
+<target xml:lang="fr"><ph id="1">width: 90%</ph>
+<ph id="2">name: Join Layers</ph></target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Joining Layers by Join Field.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Joining Layers by Join Field.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Right click on the layer → <ph id="1">`Export`</ph> → <ph id="2">`Save feature as`</ph> and save the layer as "risk" layer into your temp folder.</source>
+<target xml:lang="fr">Right click on the layer → <ph id="1">`Export`</ph> → <ph id="2">`Save feature as`</ph> and save the layer as "risk" layer into your temp folder.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer <ph id="1">`Toggle editing mode `</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept> → <ph id="3">`Delete field`</ph> <bpt id="4">![</bpt><ept id="4">](/fig/mActionDeleteAttribute.png)</ept> and select all the indicator fields. In the end your layer look should like this:</source>
+<target xml:lang="fr">We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer <ph id="1">`Toggle editing mode `</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept> → <ph id="3">`Delete field`</ph> <bpt id="4">![</bpt><ept id="4">](/fig/mActionDeleteAttribute.png)</ept> and select all the indicator fields. In the end your layer look should like this:</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_risklayer_attributetable.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_risklayer_attributetable.png</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 70%</ph>
+<ph id="2">name: Risk Layer Attribute Table normalised Scores</ph></source>
+<target xml:lang="fr"><ph id="1">width: 70%</ph>
+<ph id="2">name: Risk Layer Attribute Table normalised Scores</ph></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Risk Layer Attribute Table normalised Scores.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Risk Layer Attribute Table normalised Scores.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">6. Risk Calculation <bpt id="1">&lt;a id="6-risk-calculation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Risk Calculation <bpt id="1">&lt;a id="6-risk-calculation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Finally, the risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:</source>
+<target xml:lang="fr">Finally, the risk is calculated by the geometric mean of the dimensions Exposure and Susceptibility, while Susceptibility is defined by the geometric mean of Vulnerability and the Lack of Coping Capacity. The geometric mean is chosen since it offers the advantage of rewarding balanced developments and equal reduction of deficits at all levels of the model:</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">$ susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity $</source>
+<target xml:lang="fr">$ susceptibility =   \sqrt vulnerability  \times lack\ of\ coping\ capacity $</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">$ risk=   \sqrt exposure  \times susceptibility $</source>
+<target xml:lang="fr">$ risk=   \sqrt exposure  \times susceptibility $</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table → <ph id="1">`Field Calculator`</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept> and create a field "Susceptibility" and type in the formula. Do the same to create a field called "risk" and employ the appropriate expression.</source>
+<target xml:lang="fr">Open the Attribute table → <ph id="1">`Field Calculator`</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept> and create a field "Susceptibility" and type in the formula. Do the same to create a field called "risk" and employ the appropriate expression.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_risk.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_part2_risk.png</ph></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: Calculate risk</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: Calculate risk</ph></target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Risk Calculation
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Risk Calculation
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it is the cube root, and so on.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+The geometric mean is a specific type of average that is calculated by multiplying together all the values in a dataset and then taking the nth root of the product, where n is the number of values. For two values, the geometric mean is the square root of their product. For three values, it is the cube root, and so on.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">6. Visualisation of the Results <bpt id="1">&lt;a id="6-visualisation-of-the-results"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Visualisation of the Results <bpt id="1">&lt;a id="6-visualisation-of-the-results"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Right click on the “risk” layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>.</source>
+<target xml:lang="fr">Right click on the “risk” layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">In the down left corner click on <ph id="1">`Style`</ph> → <ph id="2">`Load Style`</ph>.</source>
+<target xml:lang="fr">In the down left corner click on <ph id="1">`Style`</ph> → <ph id="2">`Load Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">In the new window click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>. Navigate to the "Map Template" folder and select the file <bpt id="2">__</bpt>"somalia_risk_assessment_style.qml"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">In the new window click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>. Navigate to the "Map Template" folder and select the file <bpt id="2">__</bpt>"somalia_risk_assessment_style.qml"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Open`</ph> → <ph id="2">`Load Style`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Open`</ph> → <ph id="2">`Load Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Back in the "Layer Properties" Window click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Back in the "Layer Properties" Window click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Print Layout:</source>
+<target xml:lang="fr">Print Layout:</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Open a new print layout by clicking on <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> → enter the name of your current Project e.g "2024_01".</source>
+<target xml:lang="fr">Open a new print layout by clicking on <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> → enter the name of your current Project e.g "2024_01".</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Go the the <ph id="1">`Ex_Part_2`</ph> folder and drag and drop the file <ph id="2">`maps_somalia_template_risk_assessment.qpt`</ph> in the print layout.</source>
+<target xml:lang="fr">Go the the <ph id="1">`Ex_Part_2`</ph> folder and drag and drop the file <ph id="2">`maps_somalia_template_risk_assessment.qpt`</ph> in the print layout.</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the <ph id="1">`Item Properties`</ph> tab and scroll down. Here you can change the date in the <ph id="2">`Main Properties`</ph> field.</source>
+<target xml:lang="fr">Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the <ph id="1">`Item Properties`</ph> tab and scroll down. Here you can change the date in the <ph id="2">`Main Properties`</ph> field.</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">If necessary, adjust the legend by clicking on the legend in the <ph id="1">`Item Properties`</ph> tab and scroll down until you see the <ph id="2">`Legend items`</ph> field. If it is not there check if you have to open the dropdown. Make sure <ph id="3">`Auto update`</ph> is not checked.</source>
+<target xml:lang="fr">If necessary, adjust the legend by clicking on the legend in the <ph id="1">`Item Properties`</ph> tab and scroll down until you see the <ph id="2">`Legend items`</ph> field. If it is not there check if you have to open the dropdown. Make sure <ph id="3">`Auto update`</ph> is not checked.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Remove all items in the legend be clicking on the item and then on the red minus icon below.</source>
+<target xml:lang="fr">Remove all items in the legend be clicking on the item and then on the red minus icon below.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_possible_result.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_module_5_ex1_possible_result.png</ph></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 90%</ph>
+<ph id="2">name: Possible Map Result</ph></source>
+<target xml:lang="fr"><ph id="1">width: 90%</ph>
+<ph id="2">name: Possible Map Result</ph></target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Possible Map Result
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Possible Map Result
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">7. Automating the Process <bpt id="1">&lt;a id="7-automating-the-process"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">7. Automating the Process <bpt id="1">&lt;a id="7-automating-the-process"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
+You can find more information about the risk methodology and the usage of the plugin <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html)</ept>.</source>
+<target xml:lang="fr">HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
+You can find more information about the risk methodology and the usage of the plugin <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">In order to try out the plugin and see the result, use the provided input data in your folder: "Module_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"</source>
+<target xml:lang="fr">In order to try out the plugin and see the result, use the provided input data in your folder: "Module_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
