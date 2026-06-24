@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Data Analysis in the Humanitarian Sector
+# Data Analysis in the Humanitarian Sector <a id="data-analysis-in-the-humanitarian-sector"></a>
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
@@ -20,7 +20,7 @@ in specific workflows step-by-step, check out [module 7](/content/Module_7/en_qg
 theory", and [module 9](/content/Module_9/en_qgis_network_analysis_theory.mden_qgis_network_analysis_theory.md), as well as the chapters covering __GIS in anticipatory action__: [QGIS Trigger Workflow for Somalia](/content/GIS_AA/en_qgis_drought_trigger_somalia.md), and 
 [Historical Impact Assessment (HIA) for Flood in Sudan](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md).
 
-## Examples of Geodata analysis in the context of humanitarian aid
+## Examples of Geodata analysis in the context of humanitarian aid <a id="examples-of-geodata-analysis-in-the-context-of-humanitarian-aid"></a>
 
 <!--ADD: some intro paragraph?-->
 
@@ -37,7 +37,7 @@ On the training platform under the section __GIS in Anticipatory Action__, there
 
 :::
 
-### Flood impact analysis
+### Flood impact analysis <a id="flood-impact-analysis"></a>
 
 A flood impact analysis aims to assess the impact of flooding on, for example, 
 critical infrastructure, and create maps that can be shared with other 
@@ -64,37 +64,37 @@ Depending on the use case, you will want to create a risk model for critical inf
 :::{card}
 
 :::
-#### Where can I find the data?
+#### Where can I find the data? <a id="where-can-i-find-the-data"></a>
 
-##### OpenStreetMap
+##### OpenStreetMap <a id="openstreetmap"></a>
 
 A common datasource for public infrastructure could be [OpenStreetMap]. However, you need to determine the quality of the OpenStreetMap data of the region. HeiGIT developed the [ohsome quality analyst (OQT)](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/) 
 
-##### Humanitarian Data Exchange
+##### Humanitarian Data Exchange <a id="humanitarian-data-exchange"></a>
 
-##### Government Agencies
+##### Government Agencies <a id="government-agencies"></a>
 
-##### Reliefweb
+##### Reliefweb <a id="reliefweb"></a>
 
 
 The section on [datasources](/content/Module_2/en_data_sources.md) has a list with many more useful data repositories.
 
 
-#### Workflow
+#### Workflow <a id="workflow"></a>
 
-#### What can we use this analysis for?
+#### What can we use this analysis for? <a id="what-can-we-use-this-analysis-for"></a>
 
-### Emergency Management Operations
+### Emergency Management Operations <a id="emergency-management-operations"></a>
 
-### Damage Assessment
+### Damage Assessment <a id="damage-assessment"></a>
 
-### Community Health Assessment
-
-
-## What can we do with these 
+### Community Health Assessment <a id="community-health-assessment"></a>
 
 
-### Other useful geodata analyses
+## What can we do with these <a id="what-can-we-do-with-these"></a>
+
+
+### Other useful geodata analyses <a id="other-useful-geodata-analyses"></a>
 
 - locate or determine the adequacy of emergency shelters
 

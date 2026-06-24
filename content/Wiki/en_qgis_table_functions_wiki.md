@@ -1,21 +1,21 @@
-# Table function
+# Manipulating the Attribute Table <a id="manipulating-the-attribute-table"></a>
 
 __🔙[Back to Homepage](/content/intro.md)__
 
-## Add field
+## Add field <a id="add-field"></a>
 
 - Add a field to the attribute table.
 
-```{Attention}
+:::{Attention}
 Depending on the information to be entered in the attribute field, the correct data type must be selected.
-```
+:::
 
 :::{dropdown} Example: Add a field for population density, data type: Float or Double or Real (floating point numbers)
 :open:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field_wiki.mp4"></video>
 :::
 
-## Delete field
+## Delete field <a id="delete-field"></a>
 
 - Delete a field from the attribute table.
 
@@ -24,21 +24,21 @@ Depending on the information to be entered in the attribute field, the correct d
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field_wiki.mp4"></video>
 :::
 
-## Calculate Field
+## Calculate Field <a id="calculate-field"></a>
 
 - Calculate the attribute values for a field, e.g. based on the values of other fields.
 - In QGIS you can create a new field or update an existing field.
 
-```{Attention}
+:::{Attention}
 Check if the data type of the field and your calculation match. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer.
-```
+:::
 
 :::{dropdown} Example: Calculate the population density using the already existing fields Population and Area.
 :open:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field_wiki.mp4"></video>
 :::
 
-## Basic Statistics for Fields
+## Basic Statistics for Fields <a id="basic-statistics-for-fields"></a>
 
 - Generates a statistic for a specific field in the attribute table.
 
@@ -47,7 +47,7 @@ Check if the data type of the field and your calculation match. For example, if 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats_wiki.mp4"></video>
 :::
 
-## Statistics by Categories
+## Statistics by Categories <a id="statistics-by-categories"></a>
 
 - Create aggregated statistics for categories.
 - For which fields in the attribute table should statistics be calculated?

@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Data Analysis with QGIS
+# Data Analysis with QGIS <a id="data-analysis-with-qgis"></a>
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
@@ -18,11 +18,11 @@ methods.
 
 <!--ADD: Break rivers into segments is not done yet! EN-->
 
-## Data & Spatial Analysis
+## Data & Spatial Analysis <a id="data-and-spatial-analysis"></a>
 
 Even with a single layer, extensive analysis is possible. However, often the information we need to analyse is spread across multiple layers. To gain these insights, we use the spatial and non-spatial GIS processing tools we learned in previous modules. In this module, we will explore how to apply these tools, collect and work with data, and create meaningful insights. We will also review several examples of data analysis commonly used in humanitarian work.
 
-### Spatial analysis
+### Spatial analysis <a id="spatial-analysis"></a>
 
 ```{figure} ../../fig/multiple_layer_data_analysis.png
 ---
@@ -125,7 +125,7 @@ width: 600 px
 Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi, Agostino. (2016). Flood risk assessment and prioritisation of measures: Two key tools in the development of a national programme of flood risk management measures in Moldova. International Journal of Safety and Security Engineering. 6. 475-484. 10.2495/SAFE-V6-N3-475-484. 
 ```
 
-## Length, Surface, Circumference
+## Length, Surface, Circumference <a id="length-surface-circumference"></a>
 
 Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.
 
@@ -163,7 +163,7 @@ You can check this by opening the CRS selector (in the bottom right corner) and 
 .mp4"></video>
 
 :::
-## Basic statistics
+## Basic statistics <a id="basic-statistics"></a>
 
 In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have __aggregate statistics__ on a dataset (average length/area, total length/area).   
 QGIS comes with two basic processing tools to generate statistics:
@@ -197,14 +197,14 @@ You can add a table of the statistics to your print layout by using the "__Add a
 
 > Insert statistics examples
 
-## Buffer analysis
+## Buffer analysis <a id="buffer-analysis"></a>
 
 Creating a [buffer](/content/Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a helpful analysis to determine __what lies in proximity__ of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
 
 - Proximity analysis
 - Estimated vulnerability analysis
 
-## Density Map Analysis
+## Density Map Analysis <a id="density-map-analysis"></a>
 
 Density maps are very useful in communicating the __intensity of a phenomenon in an area__. Point data is __spatially aggregated__ to show the amount of incidents in that area.
 __For example__, number of schools or number of disease cases. 
@@ -215,7 +215,7 @@ There are a few different types of density maps. The most common are heatmaps an
 
 <!---discrete vs. continuous?-->
 
-### Heatmaps
+### Heatmaps <a id="heatmaps"></a>
 
 Heat maps use features in a dataset to calculate the __relative density of points__ on a map. The density is displayed as a colour ramp with colours ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas __where these features cluster together__ and help us visualise __spatial patterns__ of a layer. 
 
@@ -233,7 +233,7 @@ In QGIS, there are two methods to create heatmaps. The first method uses the sym
 
 > insert link
 
-#### Using the symbology tab to create a heatmap
+#### Using the symbology tab to create a heatmap <a id="using-the-symbology-tab-to-create-a-heatmap"></a>
 
 You can create a heatmap in the __symbology tab__ of a point or polyline layer. Navigate to the symbology tab and select the `Heatmap` symbolisation method. Here, you can adjust the __colour ramp, radius, and maximum value__. The __radius__ (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the 'heat' increases. The __maximum value__ determines the value that is given the 'hottest' colour. By default, it is set to the highest number of aggregated points. For example, you can __set a threshold__ above which everything has the "hottest" colour. Reducing it changes the visualisation drastically.
 
@@ -254,7 +254,7 @@ Assigning weight to sample points can be useful when your dataset has additional
 :::
 
 
-### Hex Maps (Hexagon Grids)
+### Hex Maps (Hexagon Grids) <a id="hex-maps-hexagon-grids"></a>
 
 Hexagon grids are used to aggregate point incidents in order to normalise geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or __hexagons__, as these geometries can be repeat in an evenly spaced grid without leaving gaps. 
 
@@ -300,7 +300,7 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 4. Save the changes you made to the layer. 
 ```
 
-## Analysis by joining attributes
+## Analysis by joining attributes <a id="analysis-by-joining-attributes"></a>
 
 [Joining](/content/Wiki/en_qgis_non_spatial_joins_wiki.md) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
 
@@ -319,7 +319,7 @@ align: left
 Table aggregation workflow
 ```
 
-### Pivoting tables
+### Pivoting tables <a id="pivoting-tables"></a>
 
 <!--ADD: Insert example of short form vs. long form or check the example figures-->
 
@@ -355,9 +355,9 @@ Red = Pivot field; Blue = Input field; Green = Values field
 ```
 
   
-## Selecting appropriate locations according to a set of criteria
+## Selecting appropriate locations according to a set of criteria <a id="selecting-appropriate-locations-according-to-a-set-of-criteria"></a>
 
-## Interpolation 
+## Interpolation <a id="interpolation"></a>
 
 <!---insert links-->
 
@@ -380,7 +380,7 @@ There are many different interpolation methods, each suited for another type of 
 Remember that there is no interpolation method that can be applied to every situation. Some methods are more useful for particular problems or types of data. The method of interpolation you use should always depend on the type of data, phenomenon, and research question you have. 
 ```
 
-### IDW Interpolation (Inverse Distance Weighted)
+### IDW Interpolation (Inverse Distance Weighted) <a id="idw-interpolation-inverse-distance-weighted"></a>
 
 In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point's value influences the unknown point's value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.
 
@@ -394,9 +394,9 @@ Inverse Distance Weighted interpolation based on weighted sample point distance 
 
 Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](/content/Module_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
 
-### Spline Interpolation
+### Spline Interpolation <a id="spline-interpolation"></a>
 
-### Triangulated Irregular Network
+### Triangulated Irregular Network <a id="triangulated-irregular-network"></a>
 
 TIN interpolation is commonly called __Delauny triangulation__. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see {numref}`TIN_interpolation_example`). TIN interpolation is usually used to compute __digital elevation models__ (DEM).  
 
@@ -410,10 +410,10 @@ Delaunay triangulation with circumcircles around the red sample data. The result
 
 The problem with TIN statistical surfaces is that the surfaces are not smooth and may seem jagged, since they are based on triangles of varying sizes. Furthermore, triangulation is no suited to extrapolate data beyond the area where sample points have been collected (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html))
 
-### Kriging
+### Kriging <a id="kriging"></a>
 
 Kriging is a method of geostatistics used to estimate values for spatial units where the phenomenon of interest has not been measured at every spatial points. Kriging integrates covariates into the interpolation. For example, it is not only the distance to measured temperatures that influences its weighting; temperature is also influenced by the altitude of the sample point. 
 
-## Outlook
+## Outlook <a id="outlook"></a>
 
 There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](/content/Module_7/en_qgis_automation_theory.md).

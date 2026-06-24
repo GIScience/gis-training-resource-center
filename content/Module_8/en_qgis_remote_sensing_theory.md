@@ -6,16 +6,16 @@
 :::
 ::::
 
-# Introduction to Remote Sensing and Remote Sensing Data
+# Introduction to Remote Sensing and Remote Sensing Data <a id="introduction-to-remote-sensing-and-remote-sensing-data"></a>
 
-## What is Remote Sensing?
+## What is Remote Sensing? <a id="what-is-remote-sensing"></a>
 
 Remote sensing can be defined as the set of methods used to obtain information about the Earth's surface by measuring and interpreting the energy radiated from it. The electromagnetic radiation reflected or emitted by the Earth serves as a carrier of information about the state of the Earth's surface. <br>
 
 The information provided by the radiation emitted from the Earth's surface can be measured by sensors mounted on vehicles such as drones, aircraft or satellites, and then stored in the form of gridded image data. A simple form of remote sensing data is an ordinary aerial photograph taken, for example, by a drone. The radiation measured and stored in the form of a grid (in this case a photograph) is the visible spectrum of electromagnetic radiation emitted by the Earth's surface and the objects on it.<br>
 
 
-## Electromagnetic Radiation and its interaction with the Earths Surface
+## Electromagnetic Radiation and its interaction with the Earths Surface <a id="electromagnetic-radiation-and-its-interaction-with-the-earths-surface"></a>
 
 ```{figure} /fig/en_m8_rs_spectrum.png
 ---
@@ -48,7 +48,7 @@ width: 600px
 By analysing these spectral signatures it is possible to identify and classify surface features and materials from aerial or satellite imagery. Applications include classification of land cover types, monitoring environmental changes such as deforestation or anthropogenic processes such as urban expansion
 
 
-## Remote Sensing Sensors and Platforms
+## Remote Sensing Sensors and Platforms <a id="remote-sensing-sensors-and-platforms"></a>
 
 The main source of electromagnetic radiation on Earth is the Sun, whose reflected radiation is also the dominant source of information for remote sensing imagery in general. Sensors can measure this electromagnetic radiation in specific ranges, called "bands", which are usually represented individually by a raster file when acquiring remote sensing data. <br>
 
@@ -78,7 +78,7 @@ width: 600px
 
 Examples of passive remote sensing include radar sensors that emit microwave radiation or LiDAR sensors that emit laser beams. However, the vast majority of remote sensing data is generated using active remote sensing.
 
-## Attributes of Remote Sensing Data
+## Attributes of Remote Sensing Data <a id="attributes-of-remote-sensing-data"></a>
 All general attributes of raster data, such as spatial resolution, extent or the CRS used, presented in the previous module, also apply to remote sensing data, as it is a subcategory of raster data. However, a large proportion of remotely sensed data generally have three more important attributes:
 - **Spectral resolution**, which is the number and location in the electromagnetic spectrum of the spectral bands in multispectral sensors. Each band is typically represented by one raster.
 - **Radiometric resolution**, usually measured in bits, is the range of brightness values available to quantify the intensity of the measured radiation in a given spectrum. For example, an 8-bit image has 256 levels of brightness.
@@ -86,7 +86,7 @@ All general attributes of raster data, such as spatial resolution, extent or the
 
 
 
-## Visulisation of Multi Spectral Remote Sensing Data
+## Visulisation of Multi Spectral Remote Sensing Data <a id="visulisation-of-multi-spectral-remote-sensing-data"></a>
 The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divided into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a "true colour display", i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.
 
 ```{figure} /fig/en_m8_rs_bandsconcept.png

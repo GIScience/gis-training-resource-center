@@ -6,9 +6,9 @@
 :::
 ::::
 
-🚧 This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
+🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-# Task 1 - Assess water distribution access
+# Task 1 - Assess water distribution access <a id="task-1-assess-water-distribution-access"></a>
 For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:
 
 
@@ -23,7 +23,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 - `camp18_boundary` (polygons): The camps legal boundary
 
 
-## STEP 1: Catchments with openrouteservice isochrones
+## STEP 1: Catchments with openrouteservice isochrones <a id="step-1-catchments-with-openrouteservice-isochrones"></a>
 Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - see the how to here {ref}`content:references:module9:ors-tools-plugin`
 
 Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`. 
@@ -38,7 +38,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_1.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_1.mp4"></video>
 :::
 
 
@@ -62,18 +62,18 @@ Leave all settings at default except:
 | Summaries to Calculate         | count                          |
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_2.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_2.mp4"></video>
 :::
 
 `````{admonition} Question
 What is the min/max number of waterpoints available to the buildings in camp 18?
 `````
 
-## STEP 2: Catchments for operational facilities
+## STEP 2: Catchments for operational facilities <a id="step-2-catchments-for-operational-facilities"></a>
 Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (search for `Extract by Attribute`). Redo the analysis for operational waterpoints only.
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_3.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_3.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -81,7 +81,7 @@ Is the general coverage different, any undersupplied areas?
 What are the differences in the min/max number of waterpoints available to the buildings in camp 18 compared to using all waterpoints (non-operational, planned)
 `````
 
-## STEP 3: Waterpoint catchment by closest euclidean distance
+## STEP 3: Waterpoint catchment by closest euclidean distance <a id="step-3-waterpoint-catchment-by-closest-euclidean-distance"></a>
 There are other means to generate catchment areas, implemented in QGIS. In the next part we will use the hub distance to calculate the euclidean distance between every building and its closest waterpoint.
 
 Open the `Processing Toolbox`, choose `Vector Analysis`,then choose `Distance to nearest hub (points)`or enter "Distance to nearest hub (points)" in the search bar.
@@ -96,7 +96,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_4.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_4.mp4"></video>
 :::
 
 The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:
@@ -104,10 +104,10 @@ The output layer has the same point geometry type like the input building_centro
 * HubDist: The euclidean distance from the building centroid to the closest waterpoint in meters.
 
 `````{admonition} Question
-What is the shortest / longest euclidean distance from a building to the closest waterpoint.
+What is the shortest / longest euclidean distance from a building to the closest waterpoint?
 `````
 
-## STEP 4: Hub distance based catchments
+## STEP 4: Hub distance based catchments <a id="step-4-hub-distance-based-catchments"></a>
 
 All buildings are assigned to their closest waterpoint. With the minimum bounding geometry tool in QGIS we can use this grouping information to create areas.
 
@@ -122,7 +122,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/modul_9_task1_5.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_5.mp4"></video>
 :::
 
 `````{admonition} Question

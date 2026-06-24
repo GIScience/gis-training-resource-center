@@ -1,4 +1,4 @@
-# Sketch Map Tool Exercise 2 - Traffic light
+# Sketch Map Tool Exercise 2 - Traffic light <a id="sketch-map-tool-exercise-2-traffic-light"></a>
 
 This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap. 
 
@@ -14,7 +14,7 @@ align: center
 SMT Traffic light
 ```
 
-## Characteristics of the exercise 
+## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
 :::{card}
 __Aim of this exercise:__
@@ -68,10 +68,10 @@ __Available data__
 
 
 
-## Instructions for the trainers 
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__
-### Prepare the training 
+### Prepare the training <a id="prepare-the-training"></a>
 - Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.
 - For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. There are 5 case study maps available which contain each two sketch maps (one based on OSM, one on satellite imagery) and the respective Quality Report
@@ -79,7 +79,7 @@ __Available data__
 - Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
-### Conduct the training:  
+### Conduct the training: <a id="conduct-the-training"></a>
 __Introduction:__ 
 - Make sure everyone is familiar with the basic understanding about OSM and satellite maps. Introduce the aim of the exercise and the idea of the traffic lights and the analysis before you start the exercise!
 - Provide access to the needed material and build groups of 3 to 6 people in order to discuss the findings. 
@@ -96,9 +96,9 @@ __Wrap up:__
 ::::
 
 
-## What you need to know - Background information
+## What you need to know - Background information <a id="what-you-need-to-know-background-information"></a>
 
-### Characteristics of the two base maps 
+### Characteristics of the two base maps <a id="characteristics-of-the-two-base-maps"></a>
 
 | | Satellite imagery| OSM data|
 | :-------------------- |:-------------------- | :----------------- | 
@@ -107,14 +107,14 @@ __Wrap up:__
 | Currentness | The satellite imagery is typically within 3-5 years of currency. | Current OSM-data is used in the base map. | 
 | Biggest benefit | Impression of the landscape and topography | Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.| 
 
-### What does georeferenced mean?
+### What does georeferenced mean? <a id="what-does-georeferenced-mean"></a>
 
 | Non-Georeferenced image | Georeferenced image – GeoTIFF |
 | :-------------------- | :----------------- | 
 | This is just an image, even if you load it into QGIS and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic. | The file contains information about its coordinate system and its location, so you can combine it with other geodata e.g. with GPS data.| 
 | ![](/fig/SMT_Map_Not_georefferenced.png) | ![](/fig/SMT_Geofrefference_map.png) | 
 
-### Map Quality Check
+### Map Quality Check <a id="map-quality-check"></a>
 
 ```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
 ---
@@ -128,14 +128,14 @@ The Sketch Map Tool can evaluate how well-suited an area of the [OpenStreetMap (
 
 The Map Quality Check assists in evaluating the suitability of the area of interest for participatory mapping through a quality analysis of the OpenStreetMap data with the HeiGIT ohsome quality analyst. The fitness report can be downloaded as a PDF file by clicking on the blue button. It provides an evaluation of the suitability of the local OSM data and recommendations for subsequent field data collection.
 
-## Step-by step introduction for participants 
+## Step-by step introduction for participants <a id="step-by-step-introduction-for-participants"></a>
 
 Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf) a printable factsheet to guide you through this exercise.
 
 If you experiences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 
 
-### 1.	Create the maps and reports
+### 1.	Create the maps and reports <a id="1-create-the-maps-and-reports"></a>
 
 - Open the [Sketch Map Tool](https://sketch-map-tool.heigit.org/)
 - With you group, decide on an area fitting to your case-study. You can also choose an area you know very well or find interesting.
@@ -150,7 +150,7 @@ If you experiences any problems during your use of the [Sketch Map Tool](https:/
 To shorten the time, you can work with [prepared cases](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Exercise_2.zip).
 ```
 
-### 2.	Collect your insights to the following questions
+### 2.	Collect your insights to the following questions <a id="2-collect-your-insights-to-the-following-questions"></a>
 Add your insights to a presentation or share it on a (digital) board:
 
 ```{Note}
@@ -172,7 +172,7 @@ Are there points of interests / something you could use as orientation point?
 - Would it make sense to organise a mapathon beforehand to improve the OSM data?
 
 
-### 3.	Wrap-up: 
+### 3.	Wrap-up: <a id="3-wrap-up"></a>
 
 Make some notes and prepare yourself for a short presentation of your maps to share with the other participants:
 - Prepare your Presentation and decide who is going to present.

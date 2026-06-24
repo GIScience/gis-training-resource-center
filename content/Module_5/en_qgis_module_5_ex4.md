@@ -6,7 +6,7 @@
 :::
 ::::
 
-# Exercise 4: Security Peshawar
+# Exercise 4: Security Peshawar <a id="exercise-4-security-peshawar"></a>
 
 :::{card}
 __Aim of the exercise:__
@@ -62,22 +62,22 @@ __Relevant wiki articles:__
 * [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
 * [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
 * [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)
+* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 :::
 ::::
 
-## Instructions for the trainers
+## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training
+### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training
+### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
@@ -96,7 +96,7 @@ __Wrap up:__
 - Leave some time for open questions. 
 
 :::
-### Available Data
+### Available Data <a id="available-data"></a>
 
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Exercise_4_Security_Peshawar/Modul_5_Exercise_4_Security_Peshawar.zip
@@ -111,11 +111,11 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 |20240605_PAK_MPI.xlsx|Pakistan Multi Poverty Index (MPI)|Pakistan Bureau of Statistics|Pakistan Bureau of Statistics|
 |AOI_Peshawar.gpkg|Area of Interest (AOI) around Peshawar|||
 
-## Preparation
+## Preparation <a id="preparation"></a>
 
 - Create a new QGIS project and save it into the exercise folder.
 
-## Task 1: Geolocate security-related information of the last days
+## Task 1: Geolocate security-related information of the last days <a id="task-1-geolocate-security-related-information-of-the-last-days"></a>
 
 :::{card} Context: 
 In response to a recent cholera outbreak in Khyber Pakhtunkhwa (KP), the Pakistan Red Crescent Society (PRCS) and other Partner National Societies (PNS) have mobilized a team to this region. The primary objective of the team is to conduct a comprehensive assessment on the ground and facilitate coordination for any necessary future responses.
@@ -123,26 +123,33 @@ The team will be staying at the "Roomy Crossroad Hotel Peshawar" during their mi
 We have received security-related information from various sources. Our task is to digitise this information into spatial data that can be represented on a map. 
 :::
 
-For this exercise, we will be using the __plugin "QuickMapService"__ to locate places precisely. The QuickMapServices plugins allows you to easily add basemaps or other map services as a layer to your QGIS-project. To [install the plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins):
+For this exercise, we will use the QuickMapServices plugin to locate places precisely.
 
-1. In the menu bar, click on `Plugins` -> `Manage and Install Plugins...`. A new window will open.
-2. Under `All`, search for "QuickMapServices". Click on it and select `Install Plugin` in the bottom right corner. 
+Follow the steps below to install it.  
+
+1. In the menu bar, click on `Plugins` → `Manage and Install Plugins…`
+2. Under `All`, search for “QuickMapServices” and click `Install Plugin`.
+
+For general plugin management in QGIS, see the [QGIS plugin installation guide](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins).
 
 After installing the plugin, we can add basemaps:
 
-3. In the menu bar, navigate to `Web` -> `QuickMapServices` -> `ESRI` -> `ESRI Satellite`. This will add Satellite image basemap in your __Layer panel__.
-4. Let us also add a roads layer to make the orientation easier: `Web` -> `QuickMapServices` -> `Google` -> `Google Road`. 
-5. In the [layers panel](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery. 
-6. For easier navigation, make the satellite imagery transparent by navigating to the [symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel) and adjusting the global opacity.
+3. In the menu bar, navigate to `Web` → `QuickMapServices` → `ESRI` → `ESRI Satellite`.  
+   This adds a satellite imagery basemap to the Layers Panel.
 
-<!---
-:::{dropdown} Video: Adjusting the global opacity
+4. Add a roads layer to improve orientation:  
+   `Web` → `QuickMapServices` → `Google` → `Google Road`.
+
+5. In the [Layers Panel](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery.
+
+6. For easier navigation, make the satellite imagery transparent:
+   - Open the layer’s [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+   - Adjust the global opacity.
 
 
-:::
--->
+7. 7. We will need the "Lat Lon Tools" plugin to locate the coordinates we receive from the field.
+   Install the plugin by following the same steps as for QuickMapServices, but search for "Lat Lon Tools" instead.
 
-7. We will be needing the plugin __"Lat Lon Tools"__ to locate the coordinates we receive from the field. To [install the plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins), follow the same instructions as for the QuickMapServices plugin but search for "Lat Lon Tools" instead. 
 
 Great, now we have set up our QGIS-project and can start to digitise the known incidents and related areas of interest (as polygons). 
 Below, you will find a table with the information and locations. Read through the table once and think about what kind of geometry type can represent the information. 
@@ -159,13 +166,13 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#creating-new-datasets) to digitise point and polygon information. 
+8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitissation.html#creating-new-datasets) to digitise point and polygon information. 
 
-```{tip}
+:::{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 
-```
+:::
 
-9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
+9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
 
 10. Once you are done, make sure to save the edits to your layers by clicking on the ![](/fig/3.44_digitisation_save_edits.png) `Save Layer Edits`-button. 
 
@@ -193,7 +200,7 @@ Tip: EPSG:32642 is an ideal CRS for Pakistan.
 :::{tip}
 
 There are several clipping algorithms to be found in the toolbox. Make sure to choose the ![](3.44_clip_vector.png) clipping tool grouped under "Vector overlay".
-
+:::
 ::::
 
 9. We want to create a polygon indicating the safe area where the team is allowed to travel. To do this, we need to "invert" the polygon. We can achieve this by using the tool `Symmetrical difference`:
@@ -213,7 +220,7 @@ Congratulations! We now have a map to help the team on the ground stay safe.
 
 <!--ADD: Images of the different steps and results.-->
 
-## Task 2: Load Excel File containing conflict data into QGIS
+## Task 2: Load Excel File containing conflict data into QGIS <a id="task-2-load-excel-file-containing-conflict-data-into-qgis"></a>
 
 :::{card}
 __Context:__
@@ -233,13 +240,13 @@ Once we have the conflict events as point data, we can aggregate the data on sub
 	- Click `Run`.
 
 
-```{figure} ../../fig/Create_ponts_from_table.PNG
+:::{figure} ../../fig/Create_ponts_from_table.PNG
 ---
 width: 700px
 name: SVG Marker
 ---
-Create points from table
-```
+Create points from table.
+:::
 
 Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the [attribute table](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_attribute_table.html) and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:
 
@@ -251,34 +258,33 @@ Great! We now have a point layer showing the conflict events in Pakistan. Now, w
 	- Under `Count`, click on the `...` and save the layer in your `data/results/`-folder as "PAK_num_events_adm3". 
 
 
-```{figure} ../../fig/count_point_polygon.PNG
+:::{figure} ../../fig/count_point_polygon.PNG
 ---
 width: 700px
 name: SVG Marker
 ---
 Count points in polygon
-```
+:::
 
 5. Open the attribute of your 'Pak_num_events_adm3' layer and scroll to the right. You will find a column with the name "NUMPOINTS". Here you find the number of events per thesil.
-    - Right-click on the layer and navigate to `Properties` --> `Symbology`. On the top change Single Symbol to "Graduated".
+    - Right-click on the layer and navigate to `Properties` → `Symbology`. A new window will open. At the top, change Single Symbol to "Graduated".
     	- In the `Value` field choose "NUMPOINTS". 
 	- Then below click on `Classify`.
 	- You can adjust the Mode and the number of classes if wanted. Also you can choose your preferred color ramp. You can try out different coloring options. 
-	- Once you are satisfied with the look, click 'Apply' and then 'OK'.
+	- Once you are satisfied with the look, click `Apply` and then `OK`.
 
 Your result could look similar to this:
 
-```{figure} ../../fig/Number_events_graduated.PNG
+:::{figure} ../../fig/Number_events_graduated.PNG
 ---
 width: 700px
 name: SVG Marker
 ---
-Number of conflict events per thesil
+Number of conflict events per thesil.
+:::
 
-```
 
-
-## Task 3: MPI data 
+## Task 3: MPI data <a id="task-3-mpi-data"></a>
 
 :::{card}
 __Context:__
@@ -293,36 +299,36 @@ This can help us understand the economic and social vulnerability geographically
 1. First, let us open the spreadsheet with Microsoft Excel or a similar program (such as LibreOffice Calc):
 	- Here, you can already investigate the information that is stored in the different columns. Can you identify columns that contain spatial information?
 	- For now, let us export the file as a CSV UTF-8.
-		* Click on `File` -> `Save As` 
-		* Chosse an output folder, where it will be saved (the `data` > `temp` folder is recommended here) and give the file a meaningful name, for instance __20240605_PAK_MPI__.
+		* Click on `File` → `Save As.` 
+		* Chosse an output folder, where it will be saved (the `data` → `temp` folder is recommended here) and give the file a meaningful name, for instance __20240605_PAK_MPI__.
 		* Choose the option __CSV UTF-8 (Comma delimited) (*.csv)__ and `Save`. 
 	
-	```{figure} /fig/PAK_Excel_to_CSV.png
+	:::{figure} /fig/PAK_Excel_to_CSV.png
 	---
 	width: 400px
 	name: Convert Excel to CSV
 	align: center
 	---
 	Convert Excel to CSV
-	```
+	:::
 	
 2. Open QGIS and create a new project. Save the project in your project folder. 
 3. [Import the layers](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` and `Pak_adm2_Khyber Pakhtunkhwa.gpkg` to QGIS:
 	* Drag and drop the ADM2-layer into your QGIS-window.
-	* To import the CSV-file, click on the `Layer` tab -> `Add Layer` > `Add Delimited Text`.
+	* To import the CSV-file, click on the `Layer` tab → `Add Layer` → `Add Delimited Text`.
 	* Browse for your __20240605_PAK_MPI.csv__ file. 
-	* Choose the correct `File Fromat`: `Custom delimters` -> `Semicolon`. 
+	* Choose the correct `File Fromat`: `Custom delimters` → `Semicolon`. 
 	* Go to	the tab `Geometry Definition` and choose `No geometry`. We don't have a column with coordinates or geoemtry information, but only the admin2 name and P-Code.
 	* Add layer and close the window. 
 	
-	```{figure} /fig/PAK_Load_CSVfile.PNG
+	:::{figure} /fig/PAK_Load_CSVfile.PNG
 	---
 	width: 400px
 	name: Load CSV file to QGIS
 	align: center
 	---
 	Load CSV file to QGIS
-	```
+	:::
 
 Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins) and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes. 
 
@@ -340,25 +346,25 @@ So, we need to perform a non-spatial join using the P-Codes Columns as identifie
 	* Choose a location to save the file as GeoPackage and give it a meaningful name, for instance __MPI_Admin2_joined.gpkg__
 	* `Run` and close.
 	
-	```{figure} /fig/PAK_joined_MPI_csv_admin2.PNG
+	:::{figure} /fig/PAK_joined_MPI_csv_admin2.PNG
 	---
 	width: 400px
 	name: Join the districts with the MPI data
 	align: center
 	---
 	Join the districts with the MPI data
-	```
+	:::
 	
 	__Info__: You can see that not all areas are visible. Since we don't have data for all districts, only the districts were linked with the csv on which we have MPI data. 
 	
-	```{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG
+	:::{figure} /fig/PAK_joined_MPI_csv_admin2_info.PNG
 	---
 	width: 400px
 	name: Information of not joined and linked data
 	align: center
 	---
 	Information of not joined and linked data
-	```
+	:::
 	
 5. Visualize __MPI_Admin2_joined.gpkg__ file: We have a new file, showing the district boundaries, but having the MPI information in the attribute table. The MPI value per district we now want to visualize. 
 	* Open the `Symbology` window of the file __MPI_Admin2_joined.gpkg__.
@@ -374,11 +380,11 @@ So, we need to perform a non-spatial join using the P-Codes Columns as identifie
 7. Add OpenStreetMap as a baselayer for better orientation. 
 
 
-```{figure} /fig/PAK_visualized_MPI.PNG
+:::{figure} /fig/PAK_visualized_MPI.PNG
 ---
 width: 400px
 name: Visualized MPI data on district level
 align: center
 ---
-Visualized MPI data on district level
-```
+Visualized MPI data on district level.
+:::
