@@ -18,6 +18,10 @@ on:
         default: "main"
         type: string
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   download-and-merge:
     runs-on: ubuntu-latest
@@ -34,11 +38,31 @@ jobs:
 
       - name: Install Okapi / Tikal
         run: |
+          set -euo pipefail
+
+          OKAPI_VERSION="1.48.0"
+          OKAPI_URL="https://okapiframework.org/binaries/main/${OKAPI_VERSION}/okapi-apps_gtk2-linux-x86_64_${OKAPI_VERSION}.zip"
+
           mkdir -p "$HOME/tools/okapi"
 
-          curl -L \
-            -o okapi.zip \
-            "https://okapiframework.org/binaries/main/1.48.0/okapi-apps_gtk2-linux-x86_64_1.48.0.zip"
+          echo "Downloading Okapi from:"
+          echo "$OKAPI_URL"
+
+          curl \
+            --fail \
+            --location \
+            --retry 5 \
+            --retry-delay 10 \
+            --connect-timeout 30 \
+            --user-agent "Mozilla/5.0 GitHub-Actions" \
+            --output okapi.zip \
+            "$OKAPI_URL"
+
+          echo "Downloaded file:"
+          ls -lh okapi.zip
+
+          echo "Testing ZIP integrity..."
+          unzip -t okapi.zip
 
           unzip okapi.zip -d "$HOME/tools/okapi"
 
@@ -46,12 +70,15 @@ jobs:
 
           if [ -z "$TIKAL_DIR" ]; then
             echo "Could not find tikal.sh after extracting Okapi."
+            find "$HOME/tools/okapi" -maxdepth 4 -type f | sort
             exit 1
           fi
 
           chmod +x "$TIKAL_DIR/tikal.sh"
           echo "$TIKAL_DIR" >> "$GITHUB_PATH"
 
+          echo "Tikal installed at:"
+          echo "$TIKAL_DIR/tikal.sh"
 
       - name: Verify Java and Tikal
         run: |
@@ -119,10 +146,11 @@ jobs:
           download_translations: true
           download_language: ${{ inputs.target_language }}
           skip_untranslated_strings: false
+          skip_untranslated_files: false
           export_only_approved: true
-          verbose: true
+          download_translations_args: "--verbose"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
 
@@ -204,7 +232,7 @@ jobs:
       - name: Create pull request with translated Markdown
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Add Crowdin translations for ${{ inputs.target_language }}"
           branch: "l10n-crowdin-${{ inputs.target_language }}"
           base: "${{ inputs.base_branch }}"
