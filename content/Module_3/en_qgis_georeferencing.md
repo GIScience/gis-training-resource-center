@@ -127,6 +127,11 @@ Alternatively, it is also possible to remove the white background. This is done 
 5. Click on the white colour on the georeferenced map in the map canvas.
 6. Click `Apply`.
 
+## Further Resources <a id="further-resources"></a>
+
+- [ESRI: Overview of georeferencing](https://doc.esri.com/en/arcgis-pro/latest/help/data/imagery/overview-of-georeferencing.html)
+
+
 ## Self-Assessment Questions <a id="self-assessment-questions"></a>
 
 ::::{admonition} Test your knowledge
