@@ -44,7 +44,7 @@ jobs:
     # Build Spanish Book
     - name: Build Spanish Book
       run: |
-        jupyter-book build es --config _config.yml --toc es_toc.yml --path-output spanish
+        jupyter-book build . --config _config.yml --toc es_toc.yml --path-output spanish
         echo "Spanish book built successfully."
 
     # Build French Book
