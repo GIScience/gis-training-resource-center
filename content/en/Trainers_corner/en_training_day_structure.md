@@ -1,8 +1,8 @@
 # How to plan and structure a GIS Training Session <a id="how-to-plan-and-structure-a-gis-training-session"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
-Designing an effective and engaging GIS training requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning phase covered in the article "[How to plan a whole GIS Training](/content/Trainers_corner/en_how_to_training.md)". 
+Designing an effective and engaging GIS training requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning phase covered in the article "[How to plan a whole GIS Training](en_how_to_training.md)". 
 A well-structured training day provides a cohesive framework for delivering content, facilitating interactive activities, and maximizing participant learning outcomes. From the initial welcome and orientation to the final recap and reflection, each aspect of the training day contributes to a comprehensive and impactful learning experience.
 
 In this section, we will explore key components of structuring a GIS training session, including scheduling, session sequencing, breaks, interactive exercises, and strategies for addressing participant questions and challenges. By strategically organizing the training day and incorporating diverse teaching methodologies, trainers can create an inclusive and effective learning environment that caters to the needs and preferences of all participants.
@@ -17,7 +17,7 @@ As trainers, it’s important to craft a structured framework that sets the tone
 2. __Icebreaker activity:__ Break the ice and foster a sense of camaraderie among participants with an icebreaker activity. This could be a group activity designed to encourage interaction and teamwork.
 3. __Introduction round:__ It is important to get to know the training participants. This can be done by a common introduction round that can be combined with the icebreaker activity. A proven method is to do a short general introduction round and then use small groups where people can introduce themselves in more detail. In this group, you can use guiding questions like “What was your favorite job so far?”.
 4. __Overview of training agenda:__ Provide an overview of the training agenda for the whole training and the present day, outlining the topics that will be covered and the learning objectives associated with each session. This helps participants understand the structure of the training and what they can expect to accomplish. 
-If you use a [graphical training plan](/content/Trainers_corner/en_training_graphical_outline.md), present it and share the access to the plan.
+If you use a [graphical training plan](en_training_graphical_outline.md), present it and share the access to the plan.
 
 This whole introduction section can take up to __one hour__ or even longer. After the presentation of the agenda, it is recommended to schedule a __break between 10 and 15 minutes__.
 
@@ -36,7 +36,7 @@ This section should only take between 15 and 30 minutes. If it takes longer, con
 
 #### Content delivery – Example: GIS Introduction <a id="content-delivery-example-gis-introduction"></a>
 
-In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](/content/Trainers_corner/en_how_to_teach_GIS.md)__.
+In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](en_how_to_teach_GIS.md)__.
 
 Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Module 1 - Introduction GIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_theorie.html) on the training platform covers this topic.
 
@@ -44,7 +44,7 @@ There’s no prescribed method for delivering this content. You can utilize Powe
 
 General considerations when planning content:
 
-* __Method:__ Select the appropriate method for your context. Often, a brief theoretical introduction followed by practical exercises in a "follow-along style" or group work is effective. However, to maintain engagement, it is advisable to vary the methods occasionally. More information on these methods can be found [here](/content/Trainers_corner/en_how_to_teach_GIS.md).
+* __Method:__ Select the appropriate method for your context. Often, a brief theoretical introduction followed by practical exercises in a "follow-along style" or group work is effective. However, to maintain engagement, it is advisable to vary the methods occasionally. More information on these methods can be found [here](en_how_to_teach_GIS.md).
 * __Training material:__ Clearly communicate which materials will be used in the session. Share links (e.g., to the module on the training platform) or distribute the material. If you use a training plan, ensure that all relevant links are listed there.
 * __Breaks__: People can only maintain concentration for approximately 35 to 45 minutes in a learning setting. Plan breaks accordingly and use a timer to ensure breaks are not overlooked.
 * __Structured end:__ Always plan time to bring an exercise or presentation to a structured end. See to it that all questions are answered. Go over the purpose of the exercise again and determine if the goal of the exercise was reached. Collect any immediate feedback.
@@ -84,7 +84,7 @@ At the end of the training, however, you should plan significantly more time to 
 
 1. __Wrap-up of today's exercises:__ Conclude the training day by revisiting the purpose of the exercises, addressing any remaining questions, and providing feedback.
 
-2. [__Written evaluation:__](/content/Trainers_corner/en_how_to_assessment.md) Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method of your organization. Conducting a written evaluation during the training ensures that everyone participates.
+2. [__Written evaluation:__](en_how_to_assessment.md) Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method of your organization. Conducting a written evaluation during the training ensures that everyone participates.
 
 3. **Direct feedback:** Evaluate the group using a method of your choice. The [five-finger feedback method](https://www.teamecho.com/en/resources/blog/5-finger-feedback/#:~:text=5%20finger%20feedback%20is%20an,clearly%20structured%20and%20comprehensible%20manner.) is often effective. This step is crucial as it provides participants with an opportunity to express their thoughts and opinions directly.
 

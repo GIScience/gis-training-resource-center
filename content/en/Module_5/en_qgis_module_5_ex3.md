@@ -50,7 +50,7 @@ __Estimated time demand for the exercise:__
 __Relevant Wiki Articles:__
 ^^^
 
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
 * [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
 * [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
@@ -69,7 +69,7 @@ __Relevant Wiki Articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training facilitation. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training facilitation. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -233,7 +233,7 @@ Make sure to __not__ use the ML1_IDP data which comes in the .zip folder as well
 :::
 
 ::::{Warning}
-Remember that you need to copy over all components that the respective [shapefile](/content/Wiki/en_qgis_geodata_types_wiki.md#vector-data) is composed of. Most probably it has 5 components: `.cpg`, `.dbf`, `.prj`, `.shp`, and `.shx`.
+Remember that you need to copy over all components that the respective [shapefile](../Wiki/en_qgis_geodata_types_wiki.md#vector-data) is composed of. Most probably it has 5 components: `.cpg`, `.dbf`, `.prj`, `.shp`, and `.shx`.
 ::::
 
 :::{figure} ../../../fig/IPC_zip.PNG
@@ -396,11 +396,11 @@ ELSE "_sum"
 
 END
 ```
-6.  When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png) ([Video: Editing the attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)). 
+6.  When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png) ([Video: Editing the attribute table](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)). 
 
 ## Step 7: Calculation of Population Proportion per Intersection Polygon <a id="step-7-calculation-of-population-proportion-per-intersection-polygon"></a>
 
-__Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) for every small part of the polygon layer. 
+__Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](../GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) for every small part of the polygon layer. 
 
 
 __Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)
@@ -551,7 +551,7 @@ __Administrative 2 Boundaries (Regions)__
 8. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“SOM_regions_style_ex.qml”__.
 9. Click `Open` → `Load Style`.
 10. Back in the “Layer Properties” Window click `Apply` and `OK`.
-11. Add a the OpenStreetMap basemap by clicking on `Layer` → `Add Layer` → `Add XYZ layer...` → Select the OpenStreetMap. Click `Add`. ([Wiki basemap](/content/Wiki/en_qgis_basemaps_wiki.md)).
+11. Add a the OpenStreetMap basemap by clicking on `Layer` → `Add Layer` → `Add XYZ layer...` → Select the OpenStreetMap. Click `Add`. ([Wiki basemap](../Wiki/en_qgis_basemaps_wiki.md)).
 12. Place the OpenStreetMap basemap on the bottom.
 13. Delet all layers __exept__:
     * Trigger_activation
@@ -588,7 +588,7 @@ __Administrative 2 Boundaries (Regions)__
 ::::::
 
 :::{Attention}
-Remember the [layer concept](/content/Module_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md) and make sure the basemap layer is at the bottom of your layers panel.
 :::
 
 ### Step 11: Making print map <a id="step-11-making-print-map"></a>

@@ -33,7 +33,7 @@ You can always add the standard OpenStreetMap as a basemap to your map canvas.
 
 :::{tip}
 
-The [wiki article on basemaps](content/wiki/en_qgis_basemaps_wiki.md), has a tutorial 
+The [wiki article on basemaps](../wiki/en_qgis_basemaps_wiki.md), has a tutorial 
 on adding more types of basemaps (e.g. from Google Maps) to the standard basemap 
 options in QGIS.
 
@@ -49,7 +49,7 @@ There are two ways to add OpenStreetMap as a basemap:
 
 ## QuickMapServices <a id="quickmapservices"></a>
 
-There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The [article on plugins](/content/Wiki/en_qgis_plugins_wiki.md) in the wiki provides more detailed example information. One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). This plugin lets you access a wide range of basemaps that are not available in QGIS by default, such as Bing or Sentinel-2 satellite imagery.
+There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The [article on plugins](../Wiki/en_qgis_plugins_wiki.md) in the wiki provides more detailed example information. One useful plugin is [QuickMapServices](https://nextgis.com/blog/quickmapservices/). This plugin lets you access a wide range of basemaps that are not available in QGIS by default, such as Bing or Sentinel-2 satellite imagery.
 
 ::::{dropdown} Installation of plugins
 

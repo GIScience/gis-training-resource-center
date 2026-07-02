@@ -1,7 +1,7 @@
 # Basic Raster Operations <a id="basic-raster-operations"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Zonal statistics <a id="zonal-statistics"></a>
 

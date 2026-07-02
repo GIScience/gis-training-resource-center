@@ -46,10 +46,10 @@ __Estimated time demand for the exercise:__
 __Relevant Wiki Articles:__
 ^^^
 
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Spatial Queries](/content/Wiki/en_qgis_spatial_queries_wiki.md)
-* [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Projections](../Wiki/en_qgis_projections_wiki.md)
+* [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
+* [Geoprocessing](../Wiki/en_qgis_geoprocessing_wiki.md)
 * [Categorized classification](/content/Wiki/en_qgis_categorized_wiki.md)
 
 :::
@@ -65,7 +65,7 @@ __Relevant Wiki Articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -111,11 +111,11 @@ The projected coordinate system for Senegal is `EPSG:32628 WGS 84 / UTM zone 28N
 1. Load the health sites layer (`sen_healthsites.shp`) and the administrative boundary data (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`) into your QGIS project. Add OpenStreetMap as a background layer (Hint: XYZ via the browser window or the QuickMapServices plugin).
 
 :::{attention} 
-Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the [wiki entry on projections](/content/Wiki/en_qgis_projections_wiki.md) for further information.
+Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the [wiki entry on projections](../Wiki/en_qgis_projections_wiki.md) for further information.
 :::
 
 2. Select all health sites which are located within the Saint Louis region:
-    - Select the region `Saint Louis` in the boundary layer. You can just manually select the specific rows. See the Wiki entry on [spatial queries](/content/Wiki/en_qgis_spatial_queries_wiki.md) for further information.
+    - Select the region `Saint Louis` in the boundary layer. You can just manually select the specific rows. See the Wiki entry on [spatial queries](../Wiki/en_qgis_spatial_queries_wiki.md) for further information.
     - Save the selection under the new name `Saint_Louis_region` in an extra layer. This can be done by right clicking on the boundary layer → `Export` → `Save Selected Features As...`
 
 :::{figure} ../../../fig/en_ex2_export_selected.PNG
@@ -139,7 +139,7 @@ Screenshot of the select by location tool.
 
 4. Investigate the flood risk in Saint Louis. Following the successful selection of all health sites in the Saint Louis region in the previous step, proceed to load the flood extent layer of Saint Louis into QGIS:
     - Add the flood extent layer (`EO4SD_SAINT_LOUIS_FLOOD_2018.shp`)
-    - While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Use the ![](../../../fig/mAlgorithmClip.png) `Clip` tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md) for further information.
+    - While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Use the ![](../../../fig/mAlgorithmClip.png) `Clip` tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on [Geoprocessing](../Wiki/en_qgis_geoprocessing_wiki.md) for further information.
     - Save the selection as `Saint_Louis_flood_clipped`.
 
 5. When looking at the attribute table of the `Saint_Louis_flood_clipped` layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas. 
@@ -219,7 +219,7 @@ Screenshot of the selected health sites in the flooded areas.
 :::
 
 11. Which health sites are located close to flooded zones?
-    - Create a ![](../../../fig/mAlgorithmBuffer.png) buffer around the health sites in Saint Louis with a distance of `20 meters`. See the Wiki entry on [Geoprocessing](/content/Wiki/en_qgis_geoprocessing_wiki.md) for further information.
+    - Create a ![](../../../fig/mAlgorithmBuffer.png) buffer around the health sites in Saint Louis with a distance of `20 meters`. See the Wiki entry on [Geoprocessing](../Wiki/en_qgis_geoprocessing_wiki.md) for further information.
 
 :::{figure} ../../../fig/en_ex2_buffer.PNG
 ---

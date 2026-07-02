@@ -25,13 +25,13 @@ The aim of this exercise is to learn how to manipulate secondary data to generat
 
 ### Links to Wiki articles <a id="links-to-wiki-articles"></a>
 
-* [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
-* [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
-* [Non-Spatial Queries](/content/Wiki/en_qgis_non_spatial_queries_wiki.md)
-* [Spatial Queries](/content/Wiki/en_qgis_spatial_queries_wiki.md)
-* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
+* [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
+* [Types of Geodata](../Wiki/en_qgis_geodata_types_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Non-Spatial Queries](../Wiki/en_qgis_non_spatial_queries_wiki.md)
+* [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
+* [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
 * [Geoprocessing - Clip](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html#clip) 
 
 
@@ -68,7 +68,7 @@ Make sure you __unzip__ the exercise folder before loading the layers into QGIS.
 ### Extract the district (adm2) from the administrative boundaries layer <a id="extract-the-district-adm2-from-the-administrative-boundaries-layer"></a>
 
 4. First, we want to export the district __Beledweyne__ from the Hiraan region from `som_admbnda_adm2_ocha_20230308.shp` to have it as a stand-alone vector layer. To do that:
-    1. Open the attribute table of `som_admbnda_adm2_ocha_20230308.shp` by right clicking on the layer → `Open Attribute Table`([Wiki Video](/content/Wiki/en_qgis_attribute_table_wiki.md)).
+    1. Open the attribute table of `som_admbnda_adm2_ocha_20230308.shp` by right clicking on the layer → `Open Attribute Table`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)).
     2. Find the row of `Belet Weyne` and mark it by clicking on the number on the very left-hand side of the attribute table. The row will be highlighted in blue and the district will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
     3. Now right-click on the layer in the Layer Panel and click on `Export` → `Save Selected Features as`. We want to save Beledweyne as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your **temp folder**. Here you can give the layer the name **AOI_Beledweyne** and click `Save`. Now click `Ok`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)). In this exercise, we will not reproject the layers and work with the data in `ESPG:4326 - WGS84`.
 
@@ -129,7 +129,7 @@ The `Extract by Expression` window in QGIS 3.36
 :::
 
 :::{attention}
-A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a ![](../../../fig/icon_scratch_layer.png). In order to save the layer permanently, <kbd>Right Click</kbd> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)). 
+A temporary layer will not be saved to your QGIS-project, even after saving the project. Temporary layers are marked by a ![](../../../fig/icon_scratch_layer.png). In order to save the layer permanently, <kbd>Right Click</kbd> on the layer you wish to make permanent. Then, select the save location for the new layer. Make sure you to save it in the correct folder (see [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md)). 
 :::
 
  

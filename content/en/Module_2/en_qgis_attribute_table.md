@@ -211,7 +211,7 @@ Now, you can choose the format, layer name and CRS.
 :::{tip}
 
 We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases. 
-If you are unsure which format is most appropriate, check out the [geodata types](/content/Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
+If you are unsure which format is most appropriate, check out the [geodata types](../Wiki/en_qgis_geodata_types_wiki.md) page on the wiki.
 
 :::
 

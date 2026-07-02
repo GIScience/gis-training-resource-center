@@ -67,7 +67,7 @@ To shorten the time, you can also just focus on the hands-on-exploration of spec
 - Possibility to print the maps, smart phones to take the photos, and the possibility to upload the pictures to the Sketch Map Tool. 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
 - Prepare a board (it can be a white board/flipchart or digital e.g. Miro-board) where the participants can add their findings and questions. 
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
 ```{idea}
@@ -187,7 +187,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 ```{Tip}
-If you like to learn more about the [visualisation](/content/Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex5_.html).
+If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex5_.html).
 ```
 
 :::{dropdown} Option A: Open your results in QGIS

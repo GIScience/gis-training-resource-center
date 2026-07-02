@@ -16,9 +16,9 @@ This chapter will present several data analysis methods and their results that
 are common to humanitarian work. It will cover the general idea or workflow, 
 what kind of data is needed to perform the analysis. However, it will not go 
 into a detailed explanation of the workflow step by step. If you are interested 
-in specific workflows step-by-step, check out [module 7](/content/Module_7/en_qgis_automation_theory.md) "Automation with QGIS", [module 8](/content/Module_8/en_qgis_remote_sensing_raster_theorie.md) "Remote Sensing and Raster data 
-theory", and [module 9](/content/Module_9/en_qgis_network_analysis_theory.mden_qgis_network_analysis_theory.md), as well as the chapters covering __GIS in anticipatory action__: [QGIS Trigger Workflow for Somalia](/content/GIS_AA/en_qgis_drought_trigger_somalia.md), and 
-[Historical Impact Assessment (HIA) for Flood in Sudan](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md).
+in specific workflows step-by-step, check out [module 7](../Module_7/en_qgis_automation_theory.md) "Automation with QGIS", [module 8](/content/Module_8/en_qgis_remote_sensing_raster_theorie.md) "Remote Sensing and Raster data 
+theory", and [module 9](/content/Module_9/en_qgis_network_analysis_theory.mden_qgis_network_analysis_theory.md), as well as the chapters covering __GIS in anticipatory action__: [QGIS Trigger Workflow for Somalia](../GIS_AA/en_qgis_drought_trigger_somalia.md), and 
+[Historical Impact Assessment (HIA) for Flood in Sudan](../GIS_AA/en_qgis_historical_impact_assessment_sudan.md).
 
 ## Examples of Geodata analysis in the context of humanitarian aid <a id="examples-of-geodata-analysis-in-the-context-of-humanitarian-aid"></a>
 
@@ -31,9 +31,9 @@ different data products that your organisation has access to. Another important 
 
 On the training platform under the section __GIS in Anticipatory Action__, there are several chapters dedicated to explain geodata analysis workflows in detail:
 
-- [Historical Impact Assessment (HIA) for Floods in Sudan](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md) 
-- [QGIS Trigger Workflow for Somalia](/content/GIS_AA/en_qgis_drought_trigger_somalia.md)
-- [Risk Assessment QGIS Plugin](/content/GIS_AA/en_qgis_risk_assessment_plugin.md)
+- [Historical Impact Assessment (HIA) for Floods in Sudan](../GIS_AA/en_qgis_historical_impact_assessment_sudan.md) 
+- [QGIS Trigger Workflow for Somalia](../GIS_AA/en_qgis_drought_trigger_somalia.md)
+- [Risk Assessment QGIS Plugin](../GIS_AA/en_qgis_risk_assessment_plugin.md)
 
 :::
 
@@ -77,7 +77,7 @@ A common datasource for public infrastructure could be [OpenStreetMap]. However,
 ##### Reliefweb <a id="reliefweb"></a>
 
 
-The section on [datasources](/content/Module_2/en_data_sources.md) has a list with many more useful data repositories.
+The section on [datasources](../Module_2/en_data_sources.md) has a list with many more useful data repositories.
 
 
 #### Workflow <a id="workflow"></a>

@@ -1,6 +1,6 @@
 # Assessments in GIS Training: A Guide <a id="assessments-in-gis-training-a-guide"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 This article will explain the assessment survey provided on this platform that can be used to assess the success of basic GIS training. This assessment is geared towards assessing the motivation to learn GIS and the participants' self-assessment of their GIS skills. The assessment is kept short and focuses on the essentials. It is meant to be extended by trainers if they see the need.
 

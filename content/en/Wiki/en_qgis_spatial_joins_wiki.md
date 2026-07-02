@@ -1,7 +1,7 @@
 # Spatial Joins <a id="spatial-joins"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 
 ## Join Attributes by location <a id="join-attributes-by-location"></a>

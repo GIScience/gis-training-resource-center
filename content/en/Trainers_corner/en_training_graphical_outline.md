@@ -1,6 +1,6 @@
 # Training Agenda and Handout <a id="training-agenda-and-handout"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 An agenda is where participants can find all the relevant information about the workshop, what they need to bring, what they will need to succeed, and how they can prepare on their own, before, during, and after the training. This section will highlight main elements and aspects that are needed to create a detailed agenda for the training.
 

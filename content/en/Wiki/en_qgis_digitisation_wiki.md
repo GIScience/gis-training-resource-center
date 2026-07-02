@@ -1,7 +1,7 @@
 # Digitisation <a id="digitisation"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 Digitisation is the process of converting geographic data from maps or images into digital form commonly represented as vector data.
 During this procedure, spatial information from maps or images is traced, forming points, polylines, or polygons. 

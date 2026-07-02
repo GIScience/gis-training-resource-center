@@ -104,7 +104,7 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 
 :::
 
-The folder is called “Module_2_Exercise_5_The_World" and contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+The folder is called “Module_2_Exercise_5_The_World" and contains the whole [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 - [World Countries (Generalized)](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore) (Polygon/Shapefile)
 - [Significant Earthquake Dataset](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
@@ -118,12 +118,12 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
 :::
 ::::
 
-1. Open QGIS and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
 
 2. Once the project is created save the project in the `/Project`-subfolder in the `/Module_2_Exercise_5_The_World`/. In the top bar, click on `Project` → `Save as` and navigate to the folder. Name the project “Module_2_Ex_5_The_World”.
 
 
-3. Load the shape file `World_countries_generalized.shp` into your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+3. Load the shape file `World_countries_generalized.shp` into your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
     :::{Attention}
     With both methods, you need to select the file with the ending `.shp`! A [shapefile consists of several files](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html#shapefile-structure) that are referring to each other. The file that holds the geometry information is the file ending with `.shp`.
@@ -155,7 +155,7 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
     ---
     :::
 
-6. In the layer panel on the left, arrange the three layers in a practical order. Remember the [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md). The countries-layer should sit below the earthquake and power plant layers. 
+6. In the layer panel on the left, arrange the three layers in a practical order. Remember the [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md). The countries-layer should sit below the earthquake and power plant layers. 
 
 :::{figure} ../../../fig/Module_2/en_m2_ex_5_interface_explanation.png
 ---

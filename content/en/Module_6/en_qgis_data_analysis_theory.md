@@ -199,7 +199,7 @@ You can add a table of the statistics to your print layout by using the "__Add a
 
 ## Buffer analysis <a id="buffer-analysis"></a>
 
-Creating a [buffer](/content/Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a helpful analysis to determine __what lies in proximity__ of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
+Creating a [buffer](../Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a helpful analysis to determine __what lies in proximity__ of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.
 
 - Proximity analysis
 - Estimated vulnerability analysis
@@ -302,7 +302,7 @@ You can remove the hexagon cells that are not overlapping with the reference lay
 
 ## Analysis by joining attributes <a id="analysis-by-joining-attributes"></a>
 
-[Joining](/content/Wiki/en_qgis_non_spatial_joins_wiki.md) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
+[Joining](../Wiki/en_qgis_non_spatial_joins_wiki.md) datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.
 
  - You have two separate data tables with information you wish to aggregate (join); 
  - Both tables share key identifiers; `CNTY_NAME` in this example
@@ -416,4 +416,4 @@ Kriging is a method of geostatistics used to estimate values for spatial units w
 
 ## Outlook <a id="outlook"></a>
 
-There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](/content/Module_7/en_qgis_automation_theory.md).
+There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why __model building__ and __automation__ are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out [module 7](../Module_7/en_qgis_automation_theory.md).

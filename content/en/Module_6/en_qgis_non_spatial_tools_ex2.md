@@ -51,10 +51,10 @@ We want to create an overview of different vulnerability indicators. From the Co
 
 ## Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Non-Spatial Joins](/content/Wiki/en_qgis_non_spatial_joins_wiki.md)
-* [Table function](/content/Wiki/en_qgis_table_functions_wiki.md)
-* [Graduated classification](/content/Wiki/en_qgis_graduated_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Non-Spatial Joins](../Wiki/en_qgis_non_spatial_joins_wiki.md)
+* [Table function](../Wiki/en_qgis_table_functions_wiki.md)
+* [Graduated classification](../Wiki/en_qgis_graduated_wiki.md)
 
 :::
 
@@ -69,7 +69,7 @@ We want to create an overview of different vulnerability indicators. From the Co
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 

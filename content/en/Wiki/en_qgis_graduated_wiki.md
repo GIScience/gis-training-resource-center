@@ -1,7 +1,7 @@
 # Graduated classification <a id="graduated-classification"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 - Graduated classification in GIS involves categorizing spatial data into **classes or ranges** based on a progression of values. 
 - This method is particularly useful for visualizing quantitative data, allowing for the differentiation of intensity, density, or magnitude across a spectrum, facilitating a nuanced representation of geographic phenomena.

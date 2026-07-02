@@ -50,7 +50,7 @@ In this chapter, we will first explore __spatial joins__. Spatial joins, for exa
 
 Joins are ways to combine two different data layers. In general, there are two types of joins: __non-spatial joins__ and __spatial joins__. 
 
-- Non-spatial joins rely on specific attribute values, which are used as ID-fields, to combine two layers. These are covered in the chapter "[Non-spatial processing tools](/content/Module_5/en_qgis_non_spatial_tools.md)" in this module. 
+- Non-spatial joins rely on specific attribute values, which are used as ID-fields, to combine two layers. These are covered in the chapter "[Non-spatial processing tools](en_qgis_non_spatial_tools.md)" in this module. 
 - Sometimes we want to combine information from different layers that don't share a common value. In these cases, we can use spatial joins, which let us join data based on location rules. 
 - Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their __spatial relationship__. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations. 
 - In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on 

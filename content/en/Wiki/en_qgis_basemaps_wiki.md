@@ -1,7 +1,7 @@
 # Basemaps <a id="basemaps"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 Basemaps are background maps. They are often very practical since they are easy to use, allow easy orientation on the map canvas and are diverse.
 

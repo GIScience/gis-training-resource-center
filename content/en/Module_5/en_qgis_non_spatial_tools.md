@@ -104,7 +104,7 @@ The joined data is classified using the graduated symbology for the population v
 
 Table functions usually only involve a single data layer and are manipulating the attribute table. You can add new fields, delete unwanted fields, or even calculate new fields using the __field calculator__. 
 
-For a comprehensive overview on the attribute table's functionality and its purpose, see the [Attribute table article in the wiki](content/Wiki/en_qgis_attribute_table_wiki.md). 
+For a comprehensive overview on the attribute table's functionality and its purpose, see the [Attribute table article in the wiki](../Wiki/en_qgis_attribute_table_wiki.md). 
 
 ### Add field <a id="add-field"></a>
 The information within a vector layer can be accessed through its __attribute table__, and it can be enhanced by __introducing new fields__ to this table. These additional fields may be derived from calculations, as exemplified in the following case, where population density is computed to provide deeper insights into spatial population distributions.

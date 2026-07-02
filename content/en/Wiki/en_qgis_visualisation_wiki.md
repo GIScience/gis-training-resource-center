@@ -1,7 +1,7 @@
 # Visualisation <a id="visualisation"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Visualising vector data <a id="visualising-vector-data"></a>
 

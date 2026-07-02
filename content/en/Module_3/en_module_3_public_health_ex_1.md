@@ -97,14 +97,14 @@ Choosing a suitable Coordinate Reference System for your GIS project is crucial.
 
 If you wish to perform distance calculations, you should use a metric CRS. 
 
-If you want to know more about Projections and Coordinate Reference Systems, check out this __[module chapter](/content/Module_2/en_qgis_projections.md)__.
+If you want to know more about Projections and Coordinate Reference Systems, check out this __[module chapter](../Module_2/en_qgis_projections.md)__.
 
 ::::
 
 
 :::{attention}
 
-The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas. However, it does not change the CRS of layers. Each layer, or dataset, is encoded with a CRS. QGIS reprojects these layers "on the fly" to display layers with different CRS on the map canvas. This does not change the units of measurements or distortion of the actual layers. To perform distance calculations, you will need to [reproject the layer](/content/wiki/en_qgis_projections_wiki.md) to a metric coordinate reference system. 
+The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas. However, it does not change the CRS of layers. Each layer, or dataset, is encoded with a CRS. QGIS reprojects these layers "on the fly" to display layers with different CRS on the map canvas. This does not change the units of measurements or distortion of the actual layers. To perform distance calculations, you will need to [reproject the layer](../wiki/en_qgis_projections_wiki.md) to a metric coordinate reference system. 
 
 Setting the Project CRS to your desired CRS can help you choosing the correct CRS quicker when running algorithms. 
 :::
@@ -250,7 +250,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     :::
 2. Investigate the new vaccination coverage further:
     - <kbd>Right-click</kbd> on the new layer and open the attribute table. What information is available? How is the table structured. We can see that we are able to use the column `ADM2_PCODE` to perform a [non-spatial join]
-3. In the [processing toolbox](/content/Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
+3. In the [processing toolbox](../Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `tcd_admbnda_adm2_20250212_AB`.
     - Under "Table field", select `ADM2_PCODE`.
@@ -289,7 +289,7 @@ Remember to save your project intermittently to keep your progress by clicking !
 Now that we have the vaccination coverage information in our adm2-layer, we can visualise the information in order to understand the spatial distribution of the vaccination coverage. 
 ::::{margin}
 :::{tip}
-QGIS offers various ways to [visualise vector data](/content/Module_4/en_qgis_styling_vector_data.md). If you want to learn more about these different methods, check out [module 4](/content/Module_4/en_module_4_overview.md).
+QGIS offers various ways to [visualise vector data](../Module_4/en_qgis_styling_vector_data.md). If you want to learn more about these different methods, check out [module 4](../Module_4/en_module_4_overview.md).
 :::
 ::::
 

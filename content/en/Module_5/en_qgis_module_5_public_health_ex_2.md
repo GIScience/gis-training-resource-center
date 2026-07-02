@@ -263,7 +263,7 @@ Once you are happy with the symbolization and colors of your data, the next step
 1. Open a new print layout and give it a name (e.g. Measles Incidence Chad). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"Item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
-2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](../Module_4/en_qgis_map_design_2.md#adding-a-new-map)
 3. Move and position the map so that the entire country is visible at a reasonable scale. The first map will be used for the measles incidence rate.
 4. For our example we want to add another map. In this overview map we will display the population under 5.
 

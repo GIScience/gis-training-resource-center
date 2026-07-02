@@ -3,9 +3,9 @@
 ::::{admonition} English Version 
 :class: tip
 
-La version originale anglaise de cet article se trouve [ici](/content/GIS_AA/en_AILAS_madagascar.md).
+La version originale anglaise de cet article se trouve [ici](en_AILAS_madagascar.md).
 
-The english original version of this page can be found [here](/content/GIS_AA/en_AILAS_madagascar.md).
+The english original version of this page can be found [here](en_AILAS_madagascar.md).
 ::::
 
 # Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue <a id="systeme-de-conscience-siuationelle-logistique-par-ia-ailas-experimentations-de-terrain-pour-la-collecte-dimages-au-niveau-de-la-rue"></a>
@@ -13,8 +13,8 @@ The english original version of this page can be found [here](/content/GIS_AA/en
 Cette documentation vise à centraliser toutes les informations concernant les expériences de terrain de collecte d’images à l’échelle de la rue pour AILAS  
 et à fournir un aperçu concis du projet AILAS. Elle se concentre sur le processus de collecte d’images de rue et est destinée à être utilisée par les participants aux expériences comme guide pratique.  
 
-Les sous-sections __[Guide d’utilisation de la caméra : projet AILAS](/content/GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md)__  
-et __[Guide de téléchargement et de gestion des photos](/content/GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md)__  
+Les sous-sections __[Guide d’utilisation de la caméra : projet AILAS](fr_AILAS_madagascar_camera_usage_guide.md)__  
+et __[Guide de téléchargement et de gestion des photos](fr_AILAS_madagascar_picture_upload_and_management.md)__  
 fournissent des instructions détaillées au sujet de l'installation et la configuration de la caméra ainsi que sur le téléversement des données générées.
 
 ## Le projet AILAS <a id="le-projet-ailas"></a>

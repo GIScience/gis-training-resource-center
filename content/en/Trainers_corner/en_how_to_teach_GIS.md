@@ -1,6 +1,6 @@
 # How to teach GIS <a id="how-to-teach-gis"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we lean more through practical hands-on training than lectures about GIS theory.
 
@@ -159,7 +159,7 @@ As a seasoned GIS user, you might avoid these mistakes automatically and don’t
 
 To deal with such issues you can follow the tips below:
 
-* __Wiki:__ Point trainees to a curated [list of common problems and solutions](/content/Wiki/en_qgis_common_errors_and_Issues.md) available on the training platform, serving as a valuable reference resource.
+* __Wiki:__ Point trainees to a curated [list of common problems and solutions](../Wiki/en_qgis_common_errors_and_Issues.md) available on the training platform, serving as a valuable reference resource.
 * __Google and ChatGPT:__ Encourage trainees to use online resources like Google and utilize ChatGPT for additional problem-solving assistance, strengthening self-reliance and resourcefulness.
 * __Be proactive:__ When conducting exercises, proactively flag potential issues and provide step-by-step guidance to preemptively address trainees' concerns.
 * __Collaborative learning:__ Foster a collaborative learning environment where trainees can share their experiences and solutions to common problems, promoting peer-to-peer support and knowledge sharing.

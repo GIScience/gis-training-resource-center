@@ -1,7 +1,7 @@
 # Automation in QGIS (The Model Builder) <a id="automation-in-qgis-the-model-builder"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## What is the need for Automation? <a id="what-is-the-need-for-automation"></a>
 

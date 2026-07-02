@@ -2,7 +2,7 @@
 
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 
 ## Buffer <a id="buffer"></a>

@@ -1,6 +1,6 @@
 # Joining Geodata (Spatial and non-spatial joins) <a id="joining-geodata-spatial-and-non-spatial-joins"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 
 In GIS, joins combine data from two tables based on a common field (non-spatial join) or based on location/geometry (spatial join).

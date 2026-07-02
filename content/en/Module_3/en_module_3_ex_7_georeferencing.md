@@ -49,7 +49,7 @@ __Estimated time demand for the exercise__
 __Relevant Articles__
 ^^^
 
-* [Georeferencing](/content/Module_3/en_qgis_georeferencing.md)
+* [Georeferencing](en_qgis_georeferencing.md)
 :::
 
 ::::
@@ -63,7 +63,7 @@ __Relevant Articles__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -122,7 +122,7 @@ Soil degradation in Somalia.
 
 Georeferencing is done by connecting the points on the map that will be georeferenced to coordinates on your map canvas in QGIS. Adding a basemap or a reference layer to your QGIS project will help you to identify the corresponding coordinates.
 
-1. Add a basemap using either XYZ-tiles or the [QuickMapServices Plugin](/content/Wiki/en_qgis_basemaps_wiki.md). 
+1. Add a basemap using either XYZ-tiles or the [QuickMapServices Plugin](../Wiki/en_qgis_basemaps_wiki.md). 
 2. Import the `som_admbnda_adm1_ocha_20230308`-layer to the QGIS project. 
 
 ### Step 2: Georeferencing the map <a id="step-2-georeferencing-the-map"></a>

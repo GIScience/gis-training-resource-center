@@ -44,7 +44,7 @@ __Estimated time demand for the exercise:__
 __Relevant Wiki Articles:__
 ^^^
 
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
 * [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
 * [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)

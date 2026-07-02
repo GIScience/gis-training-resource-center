@@ -1,6 +1,6 @@
 # Manipulating the Attribute Table <a id="manipulating-the-attribute-table"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Add field <a id="add-field"></a>
 

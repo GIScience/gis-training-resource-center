@@ -68,7 +68,7 @@ __Estimated time demand for the exercise:__
 ### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the provided material for the exercise and the Sketch Map Tool in general. 
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 
 ### Conduct the training: <a id="conduct-the-training"></a>

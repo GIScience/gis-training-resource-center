@@ -1,6 +1,6 @@
 # Spatial and Non-spatial queries <a id="spatial-and-non-spatial-queries"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Subsection: <a id="subsection"></a>
 * [Spatial Queries](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_queries_wiki.html)

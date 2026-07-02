@@ -1,7 +1,7 @@
 ## Single symbol classification <a id="single-symbol-classification"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 
 - By default, QGIS visualizes all layers in the `Single symbol` setting.

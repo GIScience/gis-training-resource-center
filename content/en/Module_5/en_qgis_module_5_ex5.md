@@ -50,9 +50,9 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Statistics by Categories](/content/Module_5/en_qgis_non_spatial_tools.md)
-* [Non-Spatial Join](/content/Wiki/en_qgis_joins_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Statistics by Categories](en_qgis_non_spatial_tools.md)
+* [Non-Spatial Join](../Wiki/en_qgis_joins_wiki.md)
 
 :::
 
@@ -67,7 +67,7 @@ __Relevant Wiki Articles__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 

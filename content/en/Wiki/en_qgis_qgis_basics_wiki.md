@@ -1,6 +1,6 @@
 # QGIS Basics <a id="qgis-basics"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 * [Installation of QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_installation_wiki.html)

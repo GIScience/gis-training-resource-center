@@ -54,7 +54,7 @@ Analysing participatory mapping results
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar with the provided material for the exercise and the Sketch Map Tool in general. 
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ```{Note}
 if you want to create additional or individual marked map examples you can use the empty Sketch Map provided in the materials. Also feel free to choose a completely different scenario by creating your own Sketch Map. 
@@ -118,7 +118,7 @@ Your vectorized sketches in the geojson format contain a feature for every extra
 
 1. Add a column to your vector:
 
-- Open the __attribute table__ of your vector file and open the [`Field Calculator`](/content/Wiki/en_qgis_table_functions_wiki.md#calculate-field) by clicking on ![](../../../fig/mActionCalculateField.png).
+- Open the __attribute table__ of your vector file and open the [`Field Calculator`](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) by clicking on ![](../../../fig/mActionCalculateField.png).
 - In the field calculator dialog, check the `Create a new field` option, specify "fixed_val" as `Output field name` of the new field and choose "Whole number (integer)" as `Result field type`.
 - In the field calculator expression box, enter as value you want to assign to all features "1" (without quotes). 
 - Click `Ok`
@@ -146,7 +146,7 @@ Attribute table with additional column"fixed_val"
 
 2. Convert your vectors to Rasters
 
-In the next step we want to __rasterise__ our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for "flood area". Click [here](/content/Wiki/en_qgis_geodata_types_wiki.md#types-of-geodata) for more information on the different geodata concepts.
+In the next step we want to __rasterise__ our vector layer. That means that we are essentially converting our vector geometries into a raster grid, where each cell represents a portion of the original vector features. Basically, we want to represent our flood polygons as a raster grid where each cell is assigned the value of 1, when it lies within a polygon, or 0, when it is outside of a polygon. In our resulting raster layer, the value 1 would then stand for "flood area". Click [here](../Wiki/en_qgis_geodata_types_wiki.md#types-of-geodata) for more information on the different geodata concepts.
 
 
 - In the top bar navigate via `Raster`, `Conversion` to `Rasterize (Vector to Raster)`. Alternatively, you can also search for `Rasterize (Vector to Raster)` in your __Processing Toolbox__. 
@@ -254,7 +254,7 @@ Raster Transparency
 ```
 
 ```{note}
-Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](/content/Module_4/en_qgis_map_design_2.md) and the [wiki](/content/Wiki/en_qgis_map_making_wiki.md) to do so.
+Keep in mind that what you are seeing on your screen is not a map that is ready to be printed or distributed. You could now create a printable map. Take a look at the chapter on the [print layout](../Module_4/en_qgis_map_design_2.md) and the [wiki](../Wiki/en_qgis_map_making_wiki.md) to do so.
 ```
 
 

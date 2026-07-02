@@ -56,7 +56,7 @@ Most simple markers consist of a __fill__ and an __outline__. Depending on the t
 
 - The fill determines the fill colour of the symbol. You can change the colour and transparency. You are also able to make more complex fills such as a line pattern fill, or an SVG-symbol fill.
 - The outline determines the colour, type, and thickness of the outline. Next to the colour and transparency, the outline is the most critical for distinguishing between different elements. For example, thicker lines for roads usually signify roads of a higher order (such as highways), while thin dashed lines might signify footpaths, inaccessible to road vehicles.
-- You can either style a single symbol for each layer or use different styles based on a [categorisation method](/content/Module_3/en_qgis_data_classification.md). 
+- You can either style a single symbol for each layer or use different styles based on a [categorisation method](../Module_3/en_qgis_data_classification.md). 
 
 In the Symbology Tab, you can select between various symbolization methods (see {numref}`en_3.36_m4_symbolisation_methods`). The most important ones are __Single Symbol__, __Categorised__, __Graduated__, and __Rule-based__. 
 
@@ -93,7 +93,7 @@ __For example__, assign a different symbol for each type of building (industrial
 - Creates classes for numerical data.
 - A colour gradient can be selected to represent the distribution of the data.
 
-__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see [Module 3: Geodata Classifification](/content/Module_3/en_qgis_data_classification.md)).
+__For example__, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district (see [Module 3: Geodata Classifification](../Module_3/en_qgis_data_classification.md)).
 
 :::
 
@@ -240,7 +240,7 @@ A map showing the population of Nigerian states.
 Graduated Symbols are useful when you have more information on your map, and creating a choropleth map is not possible, or in situations when you want to communicate two variables on a single map. For example, it is easy to combine choropleth maps with graduated symbols.  
 Creating graduated symbol maps is done in a similar way to creating choropleth maps, but it involves one extra step: 
 - Creating Centroids of the administrative boundaries. Centroids are points that are placed at the calculated centre of 
-polygons (see [Module 5](/content/Module_5/en_qgis_non_spatial_tools.md)).   
+polygons (see [Module 5](../Module_5/en_qgis_non_spatial_tools.md)).   
 We will be using the same layer as for the choropleth map (see {numref}`en_map_design_example_variable_ranges`): 
 `NGA_Adm1_Pop`.
 

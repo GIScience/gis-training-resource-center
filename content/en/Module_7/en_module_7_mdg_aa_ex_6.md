@@ -45,9 +45,9 @@ __Relevant Wiki Articles__
 
 * [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
 * [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
-* [Clip](/content/Wiki/en_qgis_projections_wiki.md)
+* [Projections](../Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../Wiki/en_qgis_projections_wiki.md)
+* [Clip](../Wiki/en_qgis_projections_wiki.md)
 * [Automation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automation_wiki.html)
 
 :::

@@ -53,14 +53,14 @@ __Estimated time demand for the exercise:__
 __Relevant Wiki Articles__:
 ^^^
 
-* [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
-* [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
-* [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)
-* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
+* [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
+* [Types of Geodata](../Wiki/en_qgis_geodata_types_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
+* [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
-* [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
+* [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
@@ -76,7 +76,7 @@ __Relevant Wiki Articles__:
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -128,7 +128,7 @@ GeoPackages can contain multiple files and even whole QGIS projects. When you lo
 
 4. First, let's add a basemap to your map canvas using the plugin `QuickMapServices` by clicking on the ![](../../../fig/QMS_search_icon.png) symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
 
-5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md). Delete Kabala airport too, since it is also not operational anymore.
+5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md). Delete Kabala airport too, since it is also not operational anymore.
 
 6. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
 To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html)).
@@ -142,15 +142,15 @@ align: center
 OSM place search.
 :::
 
-Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`. Find help on the addition of features to a point layer [here](/content/Wiki/en_qgis_digitisation_wiki.md). 
+Add the airports of Bo and Kenema as points to the layer `Sierra_Leone_airports`. Find help on the addition of features to a point layer [here](../Wiki/en_qgis_digitisation_wiki.md). 
  
 
 8. *Optional:* In the attribute table, create a new column `Runway_length` and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool ![](../../../fig/measuring_tool_icon.png).
 
-9. Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the "[Graduated Classification](/content/Wiki/en_qgis_graduated_wiki.md)" visualization option for the layer `Sierra_leone_foodinsecurity_2015` by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.
+9. Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the "[Graduated Classification](../Wiki/en_qgis_graduated_wiki.md)" visualization option for the layer `Sierra_leone_foodinsecurity_2015` by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.
     * Right-click on the layer `Sierra_leone_foodinsecurity_2015.shp` in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * In the topmost dropdown menu choose `Graduated`. Under `Value` select “Total_FI”.
-    * Further down the window click on `Classify`. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu `Color ramp`. Also, you can modify the value distribution of the classes by selecting different classification modes ([Wiki](/content/Wiki/en_qgis_graduated_wiki.md)) in the `Mode` dropdown menu. 
+    * Further down the window click on `Classify`. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu `Color ramp`. Also, you can modify the value distribution of the classes by selecting different classification modes ([Wiki](../Wiki/en_qgis_graduated_wiki.md)) in the `Mode` dropdown menu. 
     * Play around with these options to achieve a colour scheme that suits the data. Once you are done, click `Apply` and `OK` to close the symbology window.
 
 :::{figure} ../../../fig/mod3_classification_ex_Graduatedclassification.png

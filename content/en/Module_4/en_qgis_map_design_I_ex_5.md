@@ -13,7 +13,7 @@
 __Aim of the exercise:__
 ^^^
 
-This exercise aims to create an overview map of the flood extent and potentially damaged critical infrastructure. We will use the data we processed in [module 3 exercise 3: data queries](/content/Module_3/en_qgis_m2_ex_3_data_queries.md).
+This exercise aims to create an overview map of the flood extent and potentially damaged critical infrastructure. We will use the data we processed in [module 3 exercise 3: data queries](../Module_3/en_qgis_m2_ex_3_data_queries.md).
 
 :::
 
@@ -51,14 +51,14 @@ __Estimated time demand for the exercise:__
 __Relevant Wiki Articles__:
 ^^^
 
-* [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
-* [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
-* [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
-* [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
-* [Attribute table](/content/Wiki/en_qgis_attribute_table_wiki.md)
-* [Table function - Add field](/content/Wiki/en_qgis_table_functions_wiki.md)
+* [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
+* [Types of Geodata](../Wiki/en_qgis_geodata_types_wiki.md)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
+* [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
-* [Geodata Classification- Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
+* [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Digitization- Point data](/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 
 :::
@@ -74,7 +74,7 @@ __Relevant Wiki Articles__:
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 

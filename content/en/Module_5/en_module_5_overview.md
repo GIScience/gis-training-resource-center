@@ -23,25 +23,25 @@ This chapter introduces more intermediate GIS operations that you will most like
 
 *   - __Chapter__
     - __Competences & Objectives__
-*   - __[Chapter 1: Spatial Data Processing](/content/Module_5/en_qgis_spatial_tools.md)__ 
+*   - __[Chapter 1: Spatial Data Processing](en_qgis_spatial_tools.md)__ 
     - __At the end of this chapter, you should:__
         - know the spatial relationships,
         - understand the concept of spatial joins,
         - understand the geometrical operators used in QGIS.
-*   - __[Chapter 2: Overlay Operations (Clip, Dissolve, Buffer)](/content/Module_5/en_qgis_overlay_operations.md)__
+*   - __[Chapter 2: Overlay Operations (Clip, Dissolve, Buffer)](en_qgis_overlay_operations.md)__
     - __At the end of this chapter, you should:__
         - understand overlay operations in QGIS,
         - know how to perform clipping, buffering, and dissolving operations,
         - understand more advanced clipping operations.
-*   - __[Chapter 3: Centroids](/content/Module_5/en_qgis_centroids.md)__
+*   - __[Chapter 3: Centroids](en_qgis_centroids.md)__
     - __At the end of this chapter, you should:__
         - know how to use centroids in QGIS.
-*   - __[Chapter 4: Non-Spatial processing](/content/Module_5/en_qgis_non_spatial_tools.md)__ 
+*   - __[Chapter 4: Non-Spatial processing](en_qgis_non_spatial_tools.md)__ 
     - __At the end of this chapter, you should:__
         - know how to use table functions,
         - know how o perform non-spatial data queries,
         - know how to perform non-spatial joins.
-*   -  __[Exercises for Module 5](/content/Module_5/en_qgis_module_5_exercises.md)__
+*   -  __[Exercises for Module 5](en_qgis_module_5_exercises.md)__
     - Here you can find all exercises for module 5.
 
 :::

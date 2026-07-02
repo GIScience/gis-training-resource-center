@@ -129,7 +129,7 @@ __SHP, SHX__ and __DBF__ are the __mandatory__ files that every shapefile must c
 
 ### Raster data <a id="raster-data"></a>
 
-Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)).
+Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite imagery can also be used as raster data, if they have geographical coordinates (see [module 3: Georeferencing](../Module_3/en_qgis_georeferencing.md)).
 
 Typical uses for raster data are: 
 

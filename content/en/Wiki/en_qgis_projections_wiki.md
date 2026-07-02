@@ -1,6 +1,6 @@
 # Projections <a id="projections"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## How to check EPSG-Code <a id="how-to-check-epsg-code"></a>
 

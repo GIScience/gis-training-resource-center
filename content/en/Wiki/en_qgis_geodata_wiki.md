@@ -1,6 +1,6 @@
 # General Geodata <a id="general-geodata"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 - [Types of Geodata](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geodata_types_wiki.html)

@@ -1,6 +1,6 @@
 # Raster Data <a id="raster-data"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 Raster data in GIS is a type of spatial data that represents the world as a grid of pixels (cells), where each pixel has a value representing information such as:
 
@@ -17,6 +17,6 @@ In contrast, vector data represents features as points, lines, or polygons.
 
 ## Subsections: <a id="subsections"></a>
 
-- [Basic Raster Operations](/content/wiki/en_qgis_raster_basic_wiki.md)
+- [Basic Raster Operations](en_qgis_raster_basic_wiki.md)
 
 

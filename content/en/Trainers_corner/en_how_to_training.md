@@ -1,6 +1,6 @@
 # How to plan a GIS Training <a id="how-to-plan-a-gis-training"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 If you are running a QGIS training course for the first time, there are several practical considerations that you need to keep in mind. this article, provides practical experience that complements the training material that can found in the platform, in addition to advice on how to plan a training session. 
 
@@ -50,7 +50,7 @@ During and after the training, you can support the process by encouraging and fa
 
 - Encourage participants to communicate and stay in touch, to exchange ideas and experiences after the training. That way, participants can support and motivate each other by sharing their experiences and successes.
 - Plan to evaluate your training. This can help you  improve your training and include the participant’s perspectives.
-- To assess the success of the training and the learning progress of the participants, conduct an assessment before and after a training. You can use the [surveys on this platform](/content/Trainers_corner/en_how_to_assessment.md) as a guide..
+- To assess the success of the training and the learning progress of the participants, conduct an assessment before and after a training. You can use the [surveys on this platform](en_how_to_assessment.md) as a guide..
 
 <!---### Basic course
 

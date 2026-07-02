@@ -17,29 +17,29 @@ The third module addresses operations and data manipulation that GIS practitione
 
 *   - __Chapter__
     - __Competences & Objectives__
-*   - __[Chapter 1: Digitisation](/content/Module_3/en_qgis_digitisation.md)__ 
+*   - __[Chapter 1: Digitisation](en_qgis_digitisation.md)__ 
     - __At the end of this chapter, you should:__
         - understand the process of digitisation,
         - know how to create and edit vector data,
         - know which digitising errors to avoid.
-*   - __[Chapter 2: Geodata Classification](/content/Module_3/en_qgis_data_classification.md)__
+*   - __[Chapter 2: Geodata Classification](en_qgis_data_classification.md)__
     - __At the end of this chapter, you should:__
         - know how to classify geodata in order to gain useful insights,
         - know how and when to use categorised classification,
         - know how and when to use graduated classification.
-*   - __[Chapter 3: Geodata Selection and Queries](/content/Module_3/en_qgis_data_queries.md)__
+*   - __[Chapter 3: Geodata Selection and Queries](en_qgis_data_queries.md)__
     - __At the end of this chapter, you should:__
         - know how to select features manually,
         - know how to select features based on attributes,
         - know how to formulate a data query with the expression builder,
         - know how to select features by location,
         - know the geometric operators.
-*   - __[Chapter 4: Georeferencing](/content/Module_3/en_qgis_georeferencing.md)__
+*   - __[Chapter 4: Georeferencing](en_qgis_georeferencing.md)__
     - __At the end of this chapter, you should:__
         - know how to georeference a map in QGIS,
         - know how to set the transparency of a georeferenced (raster) layer.
         - know how to digitise vector features from a georeferenced map. 
-*   - __[Exercises for Module 3](/content/Module_3/en_qgis_module_3_exercises.md)__
+*   - __[Exercises for Module 3](en_qgis_module_3_exercises.md)__
     - Here you can find all the exercises for module 3.
 
 :::

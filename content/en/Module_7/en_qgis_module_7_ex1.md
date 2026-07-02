@@ -46,9 +46,9 @@ __Relevant Wiki Articles__
 
 * [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
 * [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
-* [Clip](/content/Wiki/en_qgis_projections_wiki.md)
+* [Projections](../Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../Wiki/en_qgis_projections_wiki.md)
+* [Clip](../Wiki/en_qgis_projections_wiki.md)
 * [Automation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automation_wiki.html)
 
 :::
@@ -106,7 +106,7 @@ __Download all datasets [here](), save the folder on your computer and unzip the
 
 :::
 
-The folder is called “ and contains the whole [standard folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+The folder is called “ and contains the whole [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 | Dataset| Source | Descriptions |
 | ----- | --- | --- |
@@ -156,7 +156,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 
 
-1. **Open QGIS** and create a [new project](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. **Open QGIS** and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 
 2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 

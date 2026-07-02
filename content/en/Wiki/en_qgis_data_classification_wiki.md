@@ -1,7 +1,7 @@
 # Geodata Classification <a id="geodata-classification"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 Spatial data classification in GIS involves categorizing geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.
 

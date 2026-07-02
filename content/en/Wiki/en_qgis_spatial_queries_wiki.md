@@ -1,7 +1,7 @@
 # Spatial Queries <a id="spatial-queries"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Manual selection <a id="manual-selection"></a>
 

@@ -1,7 +1,7 @@
 # QGIS Interface <a id="qgis-interface"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ## Overview of QGIS Interface <a id="overview-of-qgis-interface"></a>
 

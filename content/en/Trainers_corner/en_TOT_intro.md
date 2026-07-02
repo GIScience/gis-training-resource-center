@@ -1,6 +1,6 @@
 # Train of trainers introduction <a id="train-of-trainers-introduction"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 Welcome to the trainer’s corner! Here you can find all the needed information about how to plan your training and teach GIS. This section presents an overview of the training platform and all the functions of the trainer’s corner.
 
@@ -48,8 +48,8 @@ In summary:
 
 This section will outline the function of all article in the trainer's corner and give an overview of the training platform.
 
-* The Article [__How to Plan a GIS Training__](/content/Trainers_corner/en_how_to_training.md) provides a checklist of considerations when planning a training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.
-* [__Training Agenda and Handout__](/content/Trainers_corner/en_training_graphical_outline.md) offers insights into various methods for efficiently providing administrative information to participants. This can range from a simple table in an email to a more elaborate Miro board.
-* [__How to Plan and Structure a GIS Training Session__](/content/Trainers_corner/en_training_day_structure.md) delves into detailed strategies for structuring training sessions, particularly beneficial for novice trainers seeking confidence in conducting training sessions.
-* [__How to Teach GIS__](/content/Trainers_corner/en_how_to_teach_GIS.md) compiles best practices, tips, and experiences in teaching GIS, providing valuable insights and strategies for trainers to enhance their teaching methodologies.
-* [__Assessments in GIS Training: A Guide__](/content/Trainers_corner/en_how_to_assessment.md) presents tools available on this platform to evaluate participants’ GIS skill levels before and after training sessions.
+* The Article [__How to Plan a GIS Training__](en_how_to_training.md) provides a checklist of considerations when planning a training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.
+* [__Training Agenda and Handout__](en_training_graphical_outline.md) offers insights into various methods for efficiently providing administrative information to participants. This can range from a simple table in an email to a more elaborate Miro board.
+* [__How to Plan and Structure a GIS Training Session__](en_training_day_structure.md) delves into detailed strategies for structuring training sessions, particularly beneficial for novice trainers seeking confidence in conducting training sessions.
+* [__How to Teach GIS__](en_how_to_teach_GIS.md) compiles best practices, tips, and experiences in teaching GIS, providing valuable insights and strategies for trainers to enhance their teaching methodologies.
+* [__Assessments in GIS Training: A Guide__](en_how_to_assessment.md) presents tools available on this platform to evaluate participants’ GIS skill levels before and after training sessions.

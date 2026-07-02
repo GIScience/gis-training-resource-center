@@ -63,4 +63,4 @@ __For gaining experiences on the use of the Sketch Map Tool:__
 
 - Find our customized introduction to the SKetch Map Tool [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx).
 
-- Click [here](/content/Mobile_Data_collection/en_SMT_training.md) to navigate to the training exercises provided on this platform on the use of the Sketch Map Tool.
+- Click [here](en_SMT_training.md) to navigate to the training exercises provided on this platform on the use of the Sketch Map Tool.

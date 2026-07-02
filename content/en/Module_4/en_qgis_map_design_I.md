@@ -175,7 +175,7 @@ In essence:
 - __Choropleth maps__ are maps that show data using colors or shading within specific geographic areas, like countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate lower densities. 
 - __Graduated Symbol maps__ use circles or other symbols of varying sizes to represent data values across different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different points on a map. 
 - For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the __colouring scheme__. 
-- Choropleth maps are usually created by [classifying](/content/Module_3/en_qgis_data_classification.md) geodata into distinct groups, either using categorised or graduated classification. 
+- Choropleth maps are usually created by [classifying](../Module_3/en_qgis_data_classification.md) geodata into distinct groups, either using categorised or graduated classification. 
 - Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table. 
 
 Choropleth maps and graduated symbol maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact values within each region, just an overall gradient or level of intensity and they are used in almost every application of mapping and GIS.
@@ -343,7 +343,7 @@ A complex map using graduated colours to signify flood depth as well as the floo
 :::
 
 
-Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](/content/Module_4/en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 
+Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter [Symbology for Vector data](en_qgis_styling_vector_data.md) will explain how to set up different symbolisation and styling methods in QGIS. 
 
 ## Self-Assessment Questions <a id="self-assessment-questions"></a>
 

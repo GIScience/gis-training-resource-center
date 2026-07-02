@@ -1,6 +1,6 @@
 # QGIS installation <a id="qgis-installation"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers.
 
@@ -38,7 +38,7 @@ sudo apt install qgis qgis-plugin-grass
 ```
 
 :::{Note} 
-From version 3.30 SAGA must be integrated via the [plugin installer](/content/wiki/en_qgis_plugins_wiki.md).
+From version 3.30 SAGA must be integrated via the [plugin installer](en_qgis_plugins_wiki.md).
 :::
 
 

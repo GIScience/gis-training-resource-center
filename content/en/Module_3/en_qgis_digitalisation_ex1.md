@@ -20,10 +20,10 @@ Try to always use the standard folder structure. You can find a template [__here
 
 ### Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
-* [QGIS Interface](/content/Wiki/en_qgis_interface_wiki.md)
-* [Types of Geodata](/content/Wiki/en_qgis_geodata_types_wiki.md)
-* [Digitization](/content/Wiki/en_qgis_digitisation_wiki.md)
-* [Basemaps](/content/Wiki/en_qgis_basemaps_wiki.md)
+* [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
+* [Types of Geodata](../Wiki/en_qgis_geodata_types_wiki.md)
+* [Digitization](../Wiki/en_qgis_digitisation_wiki.md)
+* [Basemaps](../Wiki/en_qgis_basemaps_wiki.md)
 
 We received information about droughts in several places in the state of Gedo in Somalia. This information is given as coordinates and we want to digitize this information and verify if it is true.
 

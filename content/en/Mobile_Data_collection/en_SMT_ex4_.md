@@ -7,7 +7,7 @@ Although all data and assumptions are fictional, they were created in the contex
 :::{card}
 __Aim of this exercise:__
 ^^^
-Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](/content/Wiki/en_qgis_installation_wiki.md) or [uMAP](https://umap.openstreetmap.fr/en/).
+Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](../Wiki/en_qgis_installation_wiki.md) or [uMAP](https://umap.openstreetmap.fr/en/).
 
 :::
 
@@ -23,7 +23,7 @@ This exercise can be used in online and presence training and is focused on an h
 
 #### Focus group (GIS-Knowlege Level) <a id="focus-group-gis-knowlege-level"></a>
 
-- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](/content/Mobile_Data_collection/en_SMT_ex1_.md) has been done before or knowledge on the background on Sketch Map Tool is there.
+- Exercise builds on prior-knowledge of Sketch Map Tool. Make sure [Exercise 1](en_SMT_ex1_.md) has been done before or knowledge on the background on Sketch Map Tool is there.
 
 - GIS Beginners-level: no specific knowledge about QGIS/uMAP required
 
@@ -71,7 +71,7 @@ Decide together with the responsible working group which GIS system is preferred
 - Online access and devices (PC)
 - QGIS installed on the computer
 - Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.md) for some general tips on training conduction 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction 
 
 ```{Note}  
 - If you like to skip parts of the workflow, you can use the available geodata or intermediate results.
@@ -156,17 +156,17 @@ Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_
 
 1. __Orientate in the User Interface__
 
-    If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](/content/Wiki/en_qgis_interface_wiki.md).
+    If you are a beginner to QGIS get to know the basics of the QGIS User Interface [here](../Wiki/en_qgis_interface_wiki.md).
 
 2. __Add a Basemap__
 
     For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the `Browser` Panel `XYZ Tiles`, open the dropdown by clicking on it and select OpenStreetMap or another basemap.
 
-    Click [here](/content/Wiki/en_qgis_basemaps_wiki.md) for more information on basemaps and how to add them to your project.
+    Click [here](../Wiki/en_qgis_basemaps_wiki.md) for more information on basemaps and how to add them to your project.
 
 3. __Understand the Layer Concept__
 
-    By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 7 layers in your panel: your geojson output (vector), your 5 geotiffs (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md).
+    By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the `Layers` Panel. You should now have 7 layers in your panel: your geojson output (vector), your 5 geotiffs (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md).
     
 
 
@@ -308,10 +308,10 @@ height: 400px
 name: SMT adjusting symbology
 align: center
 ---
-Adjusting the symbology with the [symbology tab](/content/Module_4/en_qgis_map_design_I.md#styling-panel)
+Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_map_design_I.md#styling-panel)
 ```
 
-In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](/content/Wiki/en_qgis_visualisation_wiki.md).
+In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](../Wiki/en_qgis_visualisation_wiki.md).
 
 
 ```{figure} ../../../fig/en_3.34_SMT_Ex4_line_symbology.png
@@ -363,7 +363,7 @@ Example of a finished map using the Sketch Map Tool
 
 
 
-You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](/content/Module_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer), the [Symbology Chapter](/content/Module_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](/content/Wiki/en_qgis_map_making_wiki.md)
+You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](../Module_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer), the [Symbology Chapter](../Module_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](../Wiki/en_qgis_map_making_wiki.md)
  
 ::::
 

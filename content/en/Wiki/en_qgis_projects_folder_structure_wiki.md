@@ -1,6 +1,6 @@
 # Projects and Folder Structure <a id="projects-and-folder-structure"></a>
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 This wiki article covers the best practices for the creation and management of geodata and QGIS projects.
 

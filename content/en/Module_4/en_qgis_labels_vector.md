@@ -172,7 +172,7 @@ By default, QGIS renders the labels so that they don't overlap with other labels
 
 :::{Attention}
 
-Check out the [wiki article](/content/Wiki/en_qgis_representation_wiki.md) for detailed, step-by-step tutorials on how to use the different features of the styling panel.
+Check out the [wiki article](../Wiki/en_qgis_representation_wiki.md) for detailed, step-by-step tutorials on how to use the different features of the styling panel.
 
 You can also read further in the article "[Labeling and text hierarchy in cartography](https://www.axismaps.com/guide/labeling)" by Axis Maps. 
 

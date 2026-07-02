@@ -2,7 +2,7 @@
 
 %% CAN THIS FILE BE DELETED?
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 ### Aim of the exercise: <a id="aim-of-the-exercise"></a>
 

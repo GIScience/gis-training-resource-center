@@ -1,7 +1,7 @@
 # Types of Geodata <a id="types-of-geodata"></a>
 
 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](../intro.md)__
 
 * Vector data
 * Raster data
