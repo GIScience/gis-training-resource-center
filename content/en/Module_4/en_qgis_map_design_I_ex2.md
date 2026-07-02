@@ -135,7 +135,7 @@ Let's create our own customized symbol for healthcare facilities:
 2. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 
 :::{dropwodn} Video: Using SVG symbols 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 :::
 
 - Scroll through the folder until you find a suitable symbol (e.g. ![](../../../fig/en_m4_ex_2_cross_symbol.png)).

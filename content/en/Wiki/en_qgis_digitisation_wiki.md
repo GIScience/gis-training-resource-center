@@ -40,7 +40,7 @@ If you plan to perform distance-based calculation with the new dataset, make sur
     * Click on ![](../../../fig/mActionNewAttribute.png) to add the new column to the `Fields List`. 
 8. Once you are done adding the fields, click `OK`.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_create_layer.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_create_layer.mp4"></video>
 
 ## Adding geometries to a layer <a id="adding-geometries-to-a-layer"></a>
 
@@ -64,7 +64,7 @@ align: center
 5.	Once you are done with digitisation ![](../../../fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](../../../fig/mActionToggleEditing.png) to end the editing mode.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Creat_point_feature.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 
 
 ### Creating line data <a id="creating-line-data"></a>
@@ -84,7 +84,7 @@ If you create a new line layer remember to change the geometry type into lines b
 7.	Click on the ![](../../../fig/mActionToggleEditing.png) icon again to end the editing mode.
 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Creat_line_feature.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
 ### Creating polygon data <a id="creating-polygon-data"></a>
 
@@ -95,7 +95,7 @@ If you create a new line layer remember to change the geometry type into lines b
 5. A new window will open. Here you can add the column information for this feature. 
 4. Save edits by clicking on the ![](../../../fig/mActionSaveEdits.png) icon and exiting the edit mode by clicking on the ![](../../../fig/mActionToggleEditing.png) icon. 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_digitize_add_feature.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video>
 
 
 
@@ -106,7 +106,7 @@ If you create a new line layer remember to change the geometry type into lines b
 3. In the digitising toolbar, click on ![](../../../fig/qgis_3.40_vertex_tool.png). Now, you can move and edit vertices of geometries. 
 4. Once you are done, don't forget to exit the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) and saving your edits. 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_digitize_move_vertices.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video>
 
 ### Adding Ring to existing polygon layer <a id="adding-ring-to-existing-polygon-layer"></a>
 
@@ -119,7 +119,7 @@ In QGIS, adding rings to polygons is done with the "Advanced Digitisation Toolba
 2. Click on ![](../../../fig/mActionAddRing.png) (e.g. map the inner courtyard of a building, or -  as shown in the video - create a circle to mark an isle in the lake).
 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_digitize_add_ring.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
 
 
 ## Further resources <a id="further-resources"></a>

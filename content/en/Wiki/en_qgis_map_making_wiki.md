@@ -19,12 +19,12 @@ Adding a new map to the Print Layout.
 
 :::: {tab-set}
 ::: {tab-item} Adding a new map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_a_new_map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
 .mp4"></video>
 :::
 
 ::: {tab-item} Moving and scaling the map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_moving_the_map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map
 .mp4"></video>
 :::
 ::::
@@ -45,7 +45,7 @@ Adding text to the print Layout.
 :::
 
 :::{dropdown} Video: Adding a textbox
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_print_layout_adding_a_title
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
 .mp4"></video>
 :::
 
@@ -60,7 +60,7 @@ If you are working for an organisation, most likely you will add the logo of tha
 5. Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the `Resize Mode` on "Zoom".
 
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_a_raster_image.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
 :::
 
 ### Adding a legend <a id="adding-a-legend"></a>
@@ -88,21 +88,21 @@ If you have too many items on your legend, and they don't fit on your map horizo
 :::: {tab-set}
 ::: {tab-item} Adding a legend
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_a_legend
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
 .mp4"></video>
 
 :::
 
 :::{tab-item} Editing the legend
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_editing_the_legend
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
 .mp4"></video>
 
 :::
 
 :::{tab-item} 2-Column legend
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_multiple_columns_legend
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
 .mp4"></video>
 
 :::
@@ -140,7 +140,7 @@ Adding and customising the scale bar.
 :::
 
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_print_layout_adding_scalebar
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
 .mp4"></video>
 :::
 
@@ -185,7 +185,7 @@ Add the extent of the main map to your overview map (the red rectangle on the ov
 :::
 
 :::{dropdown} Video: Setting up an overview map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_overview_maps
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
 .mp4"></video>
 :::
 
@@ -220,7 +220,7 @@ Make sure to check the map after exporting the PDF as some design elements might
 3. Click `Save`. 
 4. You can open the template by dragging it into a QGIS-project.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_saving_layout_template
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
 .mp4"></video>
 
 :::
@@ -234,7 +234,7 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 3. Choose `Specific` and select the location where you saved your template.
 4. Click `Open`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_opening_template
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
 .mp4"></video>
 
 :::
@@ -245,7 +245,7 @@ The template directory is where QGIS is looking for layout templates. If you hav
 On windows, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 On mac, the file path usually is `~/Library/Application Support/QGIS/QGIS3/profiles/default/layouts/`. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_template_directory
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
 .mp4"></video>
 
 :::
@@ -273,7 +273,7 @@ For now the only item in the print layout that is being controlled by the Atlas 
 :::
 
 :::{dropdown} Video: Setting up an Atlas
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_setting_up_an_atlas
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
 .mp4"></video>
 :::
 

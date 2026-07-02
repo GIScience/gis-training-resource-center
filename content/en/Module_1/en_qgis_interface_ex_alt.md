@@ -37,7 +37,7 @@ Download the data (zip-file: 83.23 KB) and save it on your PC. Create a local fo
 
 2. Open the above files in QGIS. Load the vector layers into your program. Load the CSV file via `Add delimited text`.
 
-![QGIS_User_Interface](../../fig/en_airports_text_layer.png)
+![QGIS_User_Interface](../../../fig/en_airports_text_layer.png)
 Airport Text Layer 
 
 3. Interact with the map and explore the data sets. Use the zoom tool and move the map. Notice the status bar at the bottom of the screen and how it changes.
@@ -57,7 +57,7 @@ Airport Text Layer
 ### Result: <a id="result"></a>
 
 :::{dropdown} This (or similar) is what it looks like in the end:
-![QGIS_User_Interface](../../fig/en_eExercise_1_result.png)
+![QGIS_User_Interface](../../../fig/en_eExercise_1_result.png)
 :::
 
 

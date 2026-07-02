@@ -15,7 +15,7 @@ You don’t have to reinstall plugins for every new project.
 
 To install a plugin `Plugins` → `Manage and Install Plugins…` → `All` → Search for the plugin → `Install Plugin`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_plugins.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
 :::{tip}
 If you cannot find a specific extension, check your capitalisation and correct use of spaces. If you still cannot find an extension, you may need to allow the experimental extensions in the options (see below).
@@ -26,7 +26,7 @@ If you cannot find a specific extension, check your capitalisation and correct u
 If you are currently not using installed plugins it might be useful to deactivate these plugins to avoid crowded toolbars and to reduce open panels. 
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Manage_plugins.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Manage_plugins.mp4"></video>
 
 ## Allow experimental extensions <a id="allow-experimental-extensions"></a>
 
@@ -36,7 +36,7 @@ Experimental extensions are either still under development, or they are obsolete
 * Alternative if there are problems with another extension.
 * A tutorial makes use of a specific extension.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Experimentel_plugins.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Experimentel_plugins.mp4"></video>
 
 :::{tip}
 Due to the often missing optimization for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.

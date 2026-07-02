@@ -107,7 +107,7 @@ Opening the attribute table in QGIS 3.36
 
 You can sort data in the attribute table by clicking on a column header. Text data will be sorted alphabetically and numeric data will be sorted by value. To reverse the sort order, click the header again. A small arrow in the column header indicates whether it is sorted in ascending or descending order. 
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_show_attribute_table.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
 :::::{grid} 2
 ::::{grid-item-card} 
@@ -144,7 +144,7 @@ You can zoom in on a specific feature if you need to locate it geographically or
 
 :::{dropdown} Video: Zoom in on a feature
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_zoom_to_feature.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
 :::
 
@@ -161,7 +161,7 @@ To interact with features in a layer you have to select these features. One way 
 
 :::{dropdown} Video: Manually select features in the attribute table
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_attribute_table_select.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
 :::
 
@@ -215,7 +215,7 @@ If you are unsure which format is most appropriate, check out the [geodata types
 
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_export_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 
 
 ## Self-Assessment Questions <a id="self-assessment-questions"></a>

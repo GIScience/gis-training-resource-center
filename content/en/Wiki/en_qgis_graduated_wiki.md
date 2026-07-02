@@ -16,7 +16,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 
 :::{dropdown} Video: Applying a graduated classification to a layer
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/graduated_classification.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
 :::
 
 

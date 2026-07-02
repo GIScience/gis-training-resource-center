@@ -62,7 +62,7 @@ as a new layer: __Road_infrastructure_Sudan.geojson__.
 7. You now have a tidy roads layer which contains the necessary information.
 
 :::{dropdown} Solution: Clipping a roads layer to administrative boundaries
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_exercise_clip_roads.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
 :::
 
 
@@ -172,7 +172,7 @@ They are also downloaded and adapted from [Natural Earth Data](https://www.natur
 6. Now you have a rough overview over the coverage with health sites for the district of Khartoum.
 
 :::{dropdown} Solution: Create 10km buffer around health centres
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_exercise_buffer_health.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
 :::
 
 ### More advanced clipping operations <a id="more-advanced-clipping-operations"></a>

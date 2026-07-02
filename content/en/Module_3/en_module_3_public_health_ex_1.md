@@ -158,7 +158,7 @@ A shapefile consists of several, interrelated files. The geometric information i
 ::::
 
 :::{dropdown} Video: Importing Shapefiles into a QGIS project via drag-and-drop
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_import_vector_d_d.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 
 %% THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
@@ -175,7 +175,7 @@ A shapefile consists of several, interrelated files. The geometric information i
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
 
 :::{dropdown} Video: Importing CSV files via the Data Source Manager
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_textfile.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 :::
 -->
 

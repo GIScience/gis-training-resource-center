@@ -149,7 +149,7 @@ Appliquer un modèle de carte QGIS prêt à l’emploi pour créer et exporter r
   - **Orientation**: Paysage
 
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_load_mpa_template.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
 
 3. Mettre à jour le tableau attributaire des districts exposés
 - Dans la **Mise en page**, cliquez sur le tableau attributaire (à droite dans la mise en page).
@@ -163,7 +163,7 @@ Appliquer un modèle de carte QGIS prêt à l’emploi pour créer et exporter r
     - **Ordre de tri**: Ascendant
   - Cliquez sur `OK`
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_map_makingadjust_AT.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
 
   
 
@@ -197,7 +197,7 @@ Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et *
      Nombre de personnes exposées
      ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
 
 6. **Mettre à jour les logos et icônes**  
 - Les logos à insérer sont représentés par des **X rouges**.  
@@ -205,7 +205,7 @@ Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et *
 - Cliquez sur les trois points ![](../../../fig/Three_points.png) à côté du chemin de fichier.  
 - Parcourez le dossier `logos_pictures` et sélectionnez le bon logo.  
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_map_making_update_logos.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
 
 
 7. Revoir et mettre à jour les textes de la mise en page
@@ -216,7 +216,7 @@ Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et *
    - Ajustez la taille de la police ou l’alignement si nécessaire
 
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_mak_making_adjust_title.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
 ### ✅ Liste de vérification finale <a id="liste-de-verification-finale"></a>
 

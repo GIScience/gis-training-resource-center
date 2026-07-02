@@ -48,7 +48,7 @@ align: center
 ---
 Where to open the ORS Tools plugin (Source: HeiGIT)
 ```
--  Open the "ORS tools" plugin - click on the ORS Tolls icon in the toolbar <img src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">
+-  Open the "ORS tools" plugin - click on the ORS Tolls icon in the toolbar <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">
 -  To make use of the ORS tools, you first need to sign up. Therefore click `Sign Up`
 
 ```{figure} ../../../fig/signup_ORS.png

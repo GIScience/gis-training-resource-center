@@ -53,7 +53,7 @@ To install plugins, you need to open the Plugin Manager:
 - Install it by clicking the Install Plugin button below the plugin information panel.
 - Close the dialog. The Risk Assessment plugin should now be available.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/risk_assessment_download.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video>
 
 
 For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
@@ -70,7 +70,7 @@ you can also search for “Risk Assessment” using the Search function of the P
 - To execute the plugin, just double-click on its name.
 - A dialog called Calculate Risk Assessment should appear.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/risk_assessment_interface.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_interface.mp4"></video>
 
 
 ## Data Input <a id="data-input"></a>
@@ -80,7 +80,7 @@ The requested input information can be browsed for via the button on the right. 
 It is important to follow the input file specifications exactly (see chapter 4.1.).
 The plugin will provide the user with two outputs. The Risk Assessment results on the administrative boundaries as a vector file containing geometries ready to be displayed in QGIS and the Risk Assessment results in a table format. The desired data format of the vector and text outputs can be chosen during the saving process. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/risk_assessment_data_input.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_data_input.mp4"></video>
 
 
 The required input files must follow a given structure. Here you find the required input files to conduct the risk assessment and specifications they must follow:
@@ -149,7 +149,7 @@ You can manually enter the weight and direction values in the corresponding rows
 
 By clicking "OK", you save the weights file locally as a CSV file. At the same time, it will appear as a layer in the QGIS Layers panel.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/risk_assessment_weight_generator.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_weight_generator.mp4"></video>
 
 In the bottom-left corner of the window, there is also a "Load Weights File" button. This allows you to load an existing weights CSV file, which you can edit—for example, by changing individual values or adding new indicators.
 

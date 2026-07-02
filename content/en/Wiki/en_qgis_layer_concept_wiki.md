@@ -19,26 +19,26 @@ The layer concept in GIS applications. Source unknown. All rights reserved. This
 
 - Check the check-box in the Layers panel on the bottom left:
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_show_hide_layer.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 
 ## Have you "lost" your layer? <a id="have-you-lost-your-layer"></a>
 
 Right click on your layer → `Zoom to layer(s)`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_zoom_to_layer.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_layer.mp4"></video>
 
 ## Move layers in the hierarchy <a id="move-layers-in-the-hierarchy"></a>
 
 * Move a layer up and down in the Layer panel by drag-and-drop.
 * Move a layer to the top: Right click on your layer → `Move To Top`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_layer_hierarchy.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_layer_hierarchy.mp4"></video>
 
 ## Change Layer Name <a id="change-layer-name"></a>
 
 Right click on your layer → `Rename Layer`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_rename_layer.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_rename_layer.mp4"></video>
 
 ## Layer properties <a id="layer-properties"></a>
 
@@ -47,4 +47,4 @@ Each layer has additional properties that you can view and customise. The most i
 * __Information:__ An overview of the layer name, file format, storage location, spatial extent, number of features (objects),...
 * __Symbology:__ Display mode of the layer, style, transparency,...
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_layer_properties.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_layer_properties.mp4"></video>

@@ -57,7 +57,7 @@ name: en_30.30.2_setting_up_labels
 Setting up labels in QGIS 30.30.2
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_setting_up_labels.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
 
 ::::{attention}
 
@@ -100,7 +100,7 @@ The rules, or filters, are based on an expression. You can use the ![](../../fig
 7. Set the font and font size.
 8. Click `Apply`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_rule-based_labels.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_rule-based_labels.mp4"></video>
 
 :::{note}
 To add rules to your labels, you need to be familiar with your data! Look at the metadata (in the properties or at the source) and take a look at the attribute table. Think about what the different columns mean and identify the attributes. This might not always be easy, as they might have abbreviated names, but as you work more with data, this will become easier.

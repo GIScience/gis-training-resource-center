@@ -101,7 +101,7 @@ To move on the map canvas with your mouse cursor you need to toggle the hand but
 
 You can also move on the map canvas with arrow keys on your keyboard.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_move.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
 ### Zooming in the map view <a id="zooming-in-the-map-view"></a>
 
@@ -113,7 +113,7 @@ Or with the hotkeys <kbd>Ctrl</kbd>+ <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-</
 
 Another way is to use the zoom buttons in the toolbox panel.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_zoom.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 ___
 
 ## The Processing Toolbox <a id="the-processing-toolbox"></a>
@@ -130,7 +130,7 @@ To open the Toolbox in QGIS click on the gearwheel button. Or click on `Processi
 
 You can use the search bar to find specific tools.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_toolbars.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
 ## Toolbars <a id="toolbars"></a>
 
@@ -145,13 +145,13 @@ To add or remove toolbars from your interface click on `View` → `Toolbars` →
 
 To add or remove panels from your interface click on `View` → `Panels` → Check or uncheck the panels you want to add or remove.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
 ### Move and arrange toolbars <a id="move-and-arrange-toolbars"></a>
 
 At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_arrange_toolbars.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
 
 ## Save & Open QGIS Projects <a id="save-and-open-qgis-projects"></a>
 
@@ -162,7 +162,7 @@ In QGIS the geodata you work with is __not__ saved in your QGIS project file. In
 
 To open an existing QGIS project click on `Project` → `Open…` → Navigate to your project and open it.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_project.mp4">
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
 
 ### Save Projects <a id="save-projects"></a>
@@ -173,4 +173,4 @@ To open an existing QGIS project click on `Project` → `Open…` → Navigate t
     * Click on `Project` → `Save`. 
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_save_project.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>

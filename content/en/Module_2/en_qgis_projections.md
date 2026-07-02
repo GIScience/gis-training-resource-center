@@ -169,7 +169,7 @@ One of the first things you do when starting a new QGIS project should be to che
 
 :::{dropdown} Video: How to check and change the CRS in your QGIS project
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
 :::
 
@@ -193,7 +193,7 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 5. Click `Run`.
 
 :::{dropdown} Video: How to change the CRS of a vector a layer
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_reproject_vector.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 :::
 
 #### Changing the projection of a raster layer <a id="changing-the-projection-of-a-raster-layer"></a>
@@ -206,7 +206,7 @@ The first thing you should do when loading a new layer or dataset into your QGIS
 5. Click `Run`.
 
 :::{dropdown} Video: How to change the CRS of a raster layer
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_reproject_raster.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 :::
 
 <!-- Move this part? At this point trainees have not worked with rasterdata--->

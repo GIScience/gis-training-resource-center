@@ -188,7 +188,7 @@ __Tool:__ No special tools or programs are needed.
 The Video below shows the process for setting up the folder for December 2023.
 
 :::{dropdown} Video: Setting up folder structure
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_folder_setup.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 :::
 
 ### Step 2: Download of the forecast data <a id="step-2-download-of-the-forecast-data"></a>
@@ -309,7 +309,7 @@ The resulting layer can have more rows than the original layers.
 :::
 
 :::{dropdown} Video: Intersection of ML 1 data with the district polygons 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 :::
 
 ### Step 5: Calculation of Population per Intersection Polygon <a id="step-5-calculation-of-population-per-intersection-polygon"></a>
@@ -346,7 +346,7 @@ __Result:__ The result should be the "ML1_zonal_statistic" as a polygon layer. T
 
 
 :::{dropdown} Video: Calculation of Population per Intersection Polygon
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 :::
 
 ### Step 6: Weighting of the Population based on IPC-Phase <a id="step-6-weighting-of-the-population-based-on-ipc-phase"></a>
@@ -428,7 +428,7 @@ __Result:__ The layer "ML1_zonal_statistic" should now have the column "Index_pe
 
 
 :::{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 :::
 
 ### Step 8: Calculate IPC Index per District <a id="step-8-calculate-ipc-index-per-district"></a>
@@ -465,7 +465,7 @@ __Tool:__ `Join attribute by location (summary)`
 __Result:__ As a result, your layer "ML1_IPC_Index" should have the column "Index_per_IPCPolygon_ML1_mean". Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
 
 :::{dropdown} Video: Calculate IPC Index per District
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 :::
 
 ### Step 9: Evaluate Trigger Activation <a id="step-9-evaluate-trigger-activation"></a>
@@ -511,7 +511,7 @@ align: center
 :::
 
 :::{dropdown} Video: Evaluate Trigger Activation 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 :::
 
 ### Step 10.: Visualising the Results <a id="step-10-visualising-the-results"></a>
@@ -559,7 +559,7 @@ __Administrative 2 Boundaries (Regions)__
     * OpenStreetMap
 
 :::{dropdown} Video: Visualisation of results
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Trigger_model_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
 :::
 
 ::::::{list-table}
@@ -609,7 +609,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
  
 
 :::{dropdown} Video: Making a print map
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_print_map.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
 :::
 
 :::{Attention}

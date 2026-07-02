@@ -51,7 +51,7 @@ Holding down "Shift" during click-based selection allows you to select multiple 
 :::{dropdown} Example: Manually select country polygons by click
 :open:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_features_by_click_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_features_by_click_wiki.mp4"></video>
 
 :::
 
@@ -64,7 +64,7 @@ The other options of ![](../../../fig/mActionSelectRectangle.png) function in a 
 :::{dropdown} Example: Manually select countries by drawing a polygon
 :open:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_select_features_by_polygon.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_select_features_by_polygon.mp4"></video>
 
 :::
 
@@ -121,7 +121,7 @@ Operators such as AND, OR can be used to combine different queries or criteria.
 
 :::{dropdown} Example: Select all country polygons that share the value `Asia` in the field "continent"
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
 :::
 
 ## Layer Based Spatial Selection <a id="layer-based-spatial-selection"></a>
@@ -139,12 +139,12 @@ Selected features are again highlighted in bright yellow in your geospatial inte
 
 :::{dropdown} Example: Select Cities (Point features) that intersect with the polygon "China"
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_location_intersect_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_intersect_wiki.mp4"></video>
 :::
 
 :::{dropdown} Example 2: Select all country polygons that touch the polygon "China"
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_location_touch_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_touch_wiki.mp4"></video>
 :::
 
 ### Geometric Operators <a id="geometric-operators"></a>

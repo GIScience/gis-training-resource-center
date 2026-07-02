@@ -21,7 +21,7 @@ To check and adjust the CRS/ EPSG-Code should be the first thing you should do w
 3. The window `Project Properties` will open. Here you can view all available CRS/EPSG-Code and their properties.
 4. To change the CRS/EPSG-code, select the one you want to use and click `Apply`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
 
 ### How to check EPSG-Code/CRS of layer/ data <a id="how-to-check-epsg-codecrs-of-layer-data"></a>
 :::{Note}
@@ -41,7 +41,7 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 3. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
 5. Click `Run`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_reproject_vector.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
 
 ## Changing the projection of a raster layer <a id="changing-the-projection-of-a-raster-layer"></a>
@@ -52,7 +52,7 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 4. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
 5. Click `Run`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_reproject_raster.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
 
 ## Common mistakes with Coordinate Reference Systems <a id="common-mistakes-with-coordinate-reference-systems"></a>
 

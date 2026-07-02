@@ -10,7 +10,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 :::{dropdown} Example: Manually select countries with the attribute table
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_attribute_table_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table_wiki.mp4"></video>
 :::
 
 ## Select by expression <a id="select-by-expression"></a>
@@ -32,7 +32,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 
 :::{dropdown} Example: Select all cities with more than 20 million inhabitants in 2015: `"2015" > 20000`
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_expresion_greater_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expresion_greater_wiki.mp4"></video>
 :::
 
 ### Special operators <a id="special-operators"></a>
@@ -41,7 +41,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 
 :::{dropdown} Example: Select all countries in Asia: `"continent" LIKE 'asia'`
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
 :::
 
 ### Logical operators <a id="logical-operators"></a>
@@ -50,7 +50,7 @@ The `Select by Expression` tool lets you build an expression to select features 
 
 :::{dropdown} Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015: `"1950" < 1000 AND "2015" > 10000`
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_expression_and_wiki.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video>
 :::
 
 ## Complex Expressions <a id="complex-expressions"></a>
@@ -67,7 +67,7 @@ It is also possible to add expressions that chain different requirements. In thi
 
 :::{dropdown} Example: Export selected features as a new file
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_export_wiki.mp4"></video>
+<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
 :::
 
 

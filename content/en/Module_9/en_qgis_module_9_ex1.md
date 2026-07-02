@@ -26,7 +26,7 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 ## STEP 1: Catchments with openrouteservice isochrones <a id="step-1-catchments-with-openrouteservice-isochrones"></a>
 Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - see the how to here {ref}`content:references:module9:ors-tools-plugin`
 
-Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`. 
+Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`. 
 Leave all settings at default except:
 
 |                                |                                |
@@ -38,7 +38,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task1_1.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_1.mp4"></video>
 :::
 
 
@@ -62,7 +62,7 @@ Leave all settings at default except:
 | Summaries to Calculate         | count                          |
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task1_2.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_2.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -73,7 +73,7 @@ What is the min/max number of waterpoints available to the buildings in camp 18?
 Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (search for `Extract by Attribute`). Redo the analysis for operational waterpoints only.
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task1_3.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_3.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -96,7 +96,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task1_4.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_4.mp4"></video>
 :::
 
 The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:
@@ -122,7 +122,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task1_5.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_5.mp4"></video>
 :::
 
 `````{admonition} Question

@@ -154,7 +154,7 @@ They are **not** based on the percentage column.
 - Navigate to the corresponding `.qml` file in the folder `layer_sytle` and select it. 
 - Click `Open`, then `Apply` and `OK` to confirm.  
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_model_output_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
 
 > 💡 *If the style doesn’t load correctly, double-check the column names and make sure the column name used in the `.qml` file matches the one in your layer. To do this, open the **Attribute Table** of the layer and compare field names.*
 
@@ -220,7 +220,7 @@ Aina also wants to visualise the percentage of exposed health and education faci
 - Optionally customize class labels for clarity
 - Click `Apply`
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
 
 - Repeat the same process for the layer `admin2_education_affected`.
 After duplicating the layer, rename the new one to:
@@ -253,7 +253,7 @@ Save your manually created styles as `.qml` files for future reuse.
   ```
 
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_model_style_save_new_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
 ### 5. *(Optional)* Import Styles into Your QGIS Library <a id="5-optional-import-styles-into-your-qgis-library"></a>

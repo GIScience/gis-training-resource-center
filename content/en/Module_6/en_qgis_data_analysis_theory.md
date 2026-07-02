@@ -159,7 +159,7 @@ You can check this by opening the CRS selector (in the bottom right corner) and 
 
 :::{dropdown} Example: Calculating the length of roads
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2__fieldcalc_calculating_length
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2__fieldcalc_calculating_length
 .mp4"></video>
 
 :::
@@ -186,7 +186,7 @@ We want to calculate the total length of flooded and unflooded road respectively
 6. Click `Run`
 8. After completion, a new layer will appear in your layer tab. This will not contain spatial attributes and is a simple attribute table with the statistics. In our case, we will have the basic statistics (min, max, range, sum, median, sd, etc.) for all the road features with the flooding value "Y", and "N". 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_statistics_by_categories_example
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_statistics_by_categories_example
 .mp4"></video>
 :::
 
@@ -288,7 +288,7 @@ Point map (left) to hex map (right)
 6. Use the tool "__Count points in Polygon__" to add an attribute field with the number of points that are *inside* each hexagon cell. The __Polygons__ field should be your reference layer. The new layer will have an attribute field called "__NUMPOINTS__"
 7. Assign a __graduated__ symbology to the `Count`-layer. Select "__NUMPOINTS__" as the value and categorise the classes as you wish.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_creating_a_hex_map
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_creating_a_hex_map
 .mp4"></video>
 :::
 

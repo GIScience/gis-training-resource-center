@@ -14,12 +14,12 @@ The Model Designer is a visual tool that allows users to create and edit a workf
 ### Using the Model Designer/Graphical Modeler <a id="using-the-model-designergraphical-modeler"></a>
 
 - Open the tool under `Processing` → `Graphical Modeler`
-    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_3.40_opening_model_designer.mp4"></video>
+    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_opening_model_designer.mp4"></video>
 
 - Save the model file in a folder of your choosing by clicking on the ![](../../../fig/qgis_save_project_as.png) `Save model as`-button in the top bar. 
 
 - Open an existing model via `Model` → `Open Model` and navigating to the model file
-    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_3.40_open_model_file.mp4"></video>
+    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
 
 
 ### Model Components <a id="model-components"></a>
@@ -37,7 +37,7 @@ There are two types of model components, that you can use to create workflows:
 - You can add inputs to the model via the `Inputs`-tab on the left of the model builder window by either <kbd>Double-clicking</kbd> on it or dragging it onto the model builder canvas.
 - Once added, a new window will open where you can specify the description of the input, which will appear as the title, as well as the geometry type for vector data and select whether it is a mandatory or optional input for the workflow. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_3.40_model_adding_inputs.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_model_adding_inputs.mp4"></video>
 
 
 **Adding Processing Steps:**
@@ -60,7 +60,7 @@ The parameters page for the "Buffer"-algorithm in the model builder
 
 - Once you have set the parameters, click `Ok`. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_3.40_model_adding_algorithms.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_model_adding_algorithms.mp4"></video>
 
 
 **Adding More Processing Steps**

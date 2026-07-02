@@ -13,7 +13,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 :::{dropdown} Example: Add the time zone (join layer) to the cities (input layer)
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_spatial_join_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_spatial_join_wiki.mp4"></video>
 :::
 
 ## Join Attributes by location (summary) <a id="join-attributes-by-location-summary"></a>
@@ -25,7 +25,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 
 :::{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_exercise_spatial_join.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 :::
 
 ## Spatial joins relationships <a id="spatial-joins-relationships"></a>

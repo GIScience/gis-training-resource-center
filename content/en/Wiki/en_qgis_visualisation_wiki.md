@@ -67,7 +67,7 @@ width: 500 px
 ---
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
 
 ::::
 
@@ -118,7 +118,7 @@ name: en_30.30.2_changing_layer_style_3_wiki
 The styling of a vector data consists of the colour and the outline.
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_change_style_for_multiple_layers
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
 .mp4"></video>
 
 
@@ -126,7 +126,7 @@ The styling of a vector data consists of the colour and the outline.
 
 ::::{dropdown} Use different styles in a single layer
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_rule_based_styling
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
 .mp4"></video>
 
 We can use symbology to __show the difference between features__ in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:
@@ -175,7 +175,7 @@ Regions affected by explosions in Nigeria.
 
 If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_graduated_styling
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
 .mp4"></video>
 
 1. Download the NGA_Adm1_Pop shapefile [link!!] and save it in your shapefile folder.
@@ -266,7 +266,7 @@ name: en_30.30.2_setting_up_labels_wiki
 Setting up labels in QGIS 30.30.2.
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_setting_up_labels
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
 .mp4"></video>
 
 ::::
@@ -302,7 +302,7 @@ name: en_30.30.2_adding_rule-based_labels_expression_builder_wiki
 ---
 The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
 :::
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_rule_based_labelling
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_labelling
 .mp4"></video>
 
 ::::
@@ -312,7 +312,7 @@ The expression builder: Expression (left); building blocks, operators, fields an
 1. Set up the labels by following the same steps as before.
 2. TO underline labels, click on the underline-button.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_underlign_labels
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
 .mp4"></video>
 
 ::::
@@ -325,7 +325,7 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 3. You will be prompted to select the primary key for joining with internal data storage. __You do not need to change it__ (you can select the ID field of the dataset) and click `OK`.
 4. Click on the label again, now you can move it freely.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_move_labels_independently
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_move_labels_independently
 .mp4"></video>
 
 ::::
@@ -333,7 +333,7 @@ Sometimes the placement of labels is not ideal and can obstruct the readability 
 ::::{dropdown} Add labels to roads
 >When working with line features, the labels will align themselves parallel to the line representing the feature. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_add_road_labels
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_add_road_labels
 .mp4"></video>
 
 ::::
@@ -390,7 +390,7 @@ In some cases, the colour ramp should be inverted to make it easier to read the 
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
 3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.__
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_exporting_style_to_send_to_colleague
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 ::::
 
@@ -417,7 +417,7 @@ With the plugin __"Plugin Resource Sharing"__, you can install symbol and icon l
 
 Now the symbols should be available in the styling manager in the SVG folder.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
 
 
 :::{tip}
@@ -431,7 +431,7 @@ Make sure to check out the other resources available in the resource sharing plu
 2. Under `Symbol layer type`, select __"SVG Marker"__.
 3. Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
 ::::
 
@@ -446,7 +446,7 @@ If you have a library of SVG-symbols as a folder you can add them to your Stylin
 4. Click on `Import`.
 The new SVG-symbols are in your SVG library.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
 ::::
 :::::

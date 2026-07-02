@@ -30,5 +30,5 @@ align: center
 
 %% EDIT: The green numbers are not so easy to read. Switch to red numbers.
 
-<video width="900%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Single_symbol_video.mp4"></video>
+<video width="900%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
 

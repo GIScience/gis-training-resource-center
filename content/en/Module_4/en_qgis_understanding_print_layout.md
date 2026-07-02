@@ -50,13 +50,13 @@ Adding a new map to the Print Layout (Source: CartONG).
 ::::{tab-set}
 :::{tab-item} Adding a new map
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_a_new_map.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map.mp4"></video>
 
 :::
 
 :::{tab-item} Moving and scaling the map
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_moving_the_map.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map.mp4"></video>
 
 :::
 ::::
@@ -78,7 +78,7 @@ Adding text to the print layout (Source: CartONG).
 
 :::{dropdown} Video: Adding a textbox
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_print_layout_adding_a_title.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title.mp4"></video>
 
 :::
 
@@ -101,7 +101,7 @@ Adding an image or logo to the print layout.
 :::
 
 :::{dropdown} Video: Adding an image to the print layout
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_a_raster_image.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
 :::
 
 ### Adding a Legend <a id="adding-a-legend"></a>
@@ -129,14 +129,14 @@ If you have too many items on your legend, and they don't fit on your map horizo
 ::::{tab-set}
 :::{tab-item} Adding a legend
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_a_legend
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
 .mp4"></video>
 
 :::
 
 :::{tab-item} Editing the legend
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_editing_the_legend
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
 .mp4"></video>
 
 :::
@@ -145,7 +145,7 @@ If you have too many items on your legend, and they don't fit on your map horizo
 
 Sometimes the space on your map is not suited for a single vertical legend. In this case, it is useful to add multiple columns. Make sure to group the legend items logically so that the vertical legend is easier to read.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_multiple_columns_legend
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
 .mp4"></video>
 
 :::
@@ -183,7 +183,7 @@ Adding and customising the scale bar.
 :::
 
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video>
 :::
 
 ### Adding an Overview Map <a id="adding-an-overview-map"></a>
@@ -220,7 +220,7 @@ Add an overview map and __lock the layer__.
 
 
 :::{dropdown} Video: Setting up an overview map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_adding_overview_maps
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
 .mp4"></video>
 :::
 
@@ -262,7 +262,7 @@ The individual layers, maps and images are not saved in the template. However, i
 3. Click `Save`.
 4. You can open the template by dragging it into a QGIS-project.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_saving_layout_template
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
 .mp4"></video>
 :::
 
@@ -275,7 +275,7 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 3. Choose `Specific` and select the location where you saved your template.
 4. Click `Open`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_opening_template
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
 .mp4"></video>
 
 :::
@@ -285,7 +285,7 @@ You can drag and drop template-files (`.qpt`, QGIS template file) into QGIS or u
 The template directory is where QGIS stores layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
 On Windows computers, the file path is `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_template_directory.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory.mp4"></video>
 
 :::
 
@@ -335,7 +335,7 @@ The only item in the print layout that is being controlled by the atlas is the m
 :::
 
 :::{dropdown} Video: Setting up an Atlas
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_setting_up_an_atlas
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
 .mp4"></video>
 :::
 

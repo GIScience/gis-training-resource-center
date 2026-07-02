@@ -37,7 +37,7 @@ Use the following files:
 ## STEP 1: Network - Isochrones <a id="step-1-network-isochrones"></a>
 We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer `rwa_healthcare` as input point layer and 5, 10 and 60 minutes as ranges.
 
-Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
+Click in the toolbar on the ORS Tools plugin Icon <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/icon_ORS_tools_plugin.png" alt="Icon" width="20" height="20">. Click on `Batch Jobs` -> `Isochrones from Layer`.
 Leave all settings at default except:
 |                              |                              |
 |------------------------------|------------------------------|
@@ -47,7 +47,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task3_1.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task3_1.mp4"></video>
 :::
 
 
@@ -63,7 +63,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/module_9_task3_2.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task3_2.mp4"></video>
 :::
 
 Select the `Accumulated Cost` output layer and open the `Layer styling panel (F7)` choose `Singleband Pseudocolor`. Adjust the range from a minimum of 0 to a maximum of 60 minutes. Overlay the isochrone output layer. Compare the different catchment areas. Add an OpenStreetMap background layer to better understand the differences. May consider dissolving **(Vector Geometry >> Dissolve)** the isochrone output layer by range value, to get a more clear outline of intersecting ranges in areas with multiple healthcare facilities.

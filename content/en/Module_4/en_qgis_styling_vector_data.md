@@ -31,7 +31,7 @@ On the left of the styling panel you can choose the different tabs to access dif
 In the styling panel you can change the styling for all features of a layer, set up categories for different symbols, create labels, and create colour ramps to differentiate between features with variable values.
 
 :::{dropdown} Video: Opening the styling panel
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
 :::
 
 ## Symbology for Vector Data <a id="symbology-for-vector-data"></a>
@@ -141,7 +141,7 @@ width: 500 px
 
 :::{dropdown} Video: Making the fill colour transparent
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
 
 :::
 
@@ -181,7 +181,7 @@ The styling of a vector data consists of the colour and the outline.
 :::
 
 :::{dropdown} Video: Adjusting the style for multiple layers
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_change_style_for_multiple_layers
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
 .mp4"></video>
 :::
 
@@ -231,7 +231,7 @@ A map showing the population of Nigerian states.
 :::
 
 :::{dropdown} Video: How to create a choropleth map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_graduated_styling
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
 .mp4"></video>
 :::
 
@@ -272,7 +272,7 @@ A map of Nigeria displaying the same data. Once using graduated colours (choropl
 
 :::{dropdown} Video: How to create a proportional circles map
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_3.36_graduated_symbols.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_graduated_symbols.mp4"></video>
 
 :::
 
@@ -327,7 +327,7 @@ Regions affected by explosions in Nigeria.
 
 :::{dropdown} Video: Set up different symbols in a single layer
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_rule_based_styling
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
 .mp4"></video>
 
 :::
@@ -357,7 +357,7 @@ To use SVG-symbols:
 2. Under `Symbol layer type`, select __"SVG Marker"__.
 3. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
 There is already a default library of SVG-symbols. If you are looking for a specific symbol, try searching for it in the search bar.
 
@@ -374,7 +374,7 @@ If you have a library of SVG-symbols as a folder you can add them to your Stylin
 
 The new SVG-symbols are in your SVG library.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
 
 #### Using IFRC-Symbols <a id="using-ifrc-symbols"></a>
 

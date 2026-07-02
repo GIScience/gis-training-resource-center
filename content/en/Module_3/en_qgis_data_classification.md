@@ -80,7 +80,7 @@ Single Symbol classification is useful when you have a simple dataset. For examp
 ::::{dropdown} How to: Single symbol classification
 :open: 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Single_symbol_video.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
 
 __To adjust the style of a layer...__
 1. Right-click on your layer.
@@ -142,7 +142,7 @@ Example for a map using categorised classification.
 :::{dropdown} How To: Categorised classificatation
 :open:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Classify_by_categorized.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 
 __To classify data in categories…__
 1. Right-click on your layer.
@@ -258,7 +258,7 @@ Standard Deviation classification is a method that determines class breaks based
 
 Setting up a graduated classification in QGIS is similar to setting up a categorised classification. However, unlike the categorised classification, here you have to decide on how many classes and which method of graduation you want to use. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/graduated_classification.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
 
 __To classify data in classes…__
 1.  Right-click on your layer.

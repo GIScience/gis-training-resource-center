@@ -153,7 +153,7 @@ There are three principal sources of datasets. The Sudan Red Crescent Society (S
   </div>
 
   <div class="logo">
-    <img src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Sudan_SRCS_logo.png" alt="Sudan Red Crescent Society (SRCS) Logo">
+    <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Sudan_SRCS_logo.png" alt="Sudan Red Crescent Society (SRCS) Logo">
   </div>
 </div>
 
@@ -166,7 +166,7 @@ There are three principal sources of datasets. The Sudan Red Crescent Society (S
   </div>
 
   <div class="logo">
-    <img src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/RelifeWeb_Logo_short.png" alt="ReliefWeb Logo">
+    <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/RelifeWeb_Logo_short.png" alt="ReliefWeb Logo">
   </div>
 </div>
 
@@ -178,7 +178,7 @@ There are three principal sources of datasets. The Sudan Red Crescent Society (S
   </div>
 
   <div class="logo">
-    <img src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/floodlist-logo-1101.png" alt="Floodlist Logo">
+    <img src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/floodlist-logo-1101.png" alt="Floodlist Logo">
   </div>
 </div>
 
@@ -987,7 +987,7 @@ The table preview should now show your entire impact table with the columns `ADM
 The result should be in the Excel file `Sudan_impact_p_code`. The file should contain all the information from the original impact table and the two new columns `ADM1_EN` and `ADM1_PCODE` with this important information for later operations.
 
 ```{dropdown} Video: How to combine Workbooks using Excel 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_hia_power_query.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_hia_power_query.mp4"></video>
 ```
 
 ## Step 8: Data export from Excel to QGIS <a id="step-8-data-export-from-excel-to-qgis"></a>

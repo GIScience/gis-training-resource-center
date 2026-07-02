@@ -23,7 +23,7 @@ For example, if you want to send a layer to your colleague with the same styling
 2. Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.
 3. Select a location and name for the styling. The styling will be saved as a `.qml` file. __Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.__
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_exporting_style_to_send_to_colleague
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 
 :::{figure} ../../fig/en_30.30.2_save_layer_style_window.png

@@ -46,7 +46,7 @@ align: center
 ```
 
 ```{dropdown} Video: impoering .csv
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_textfile.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
 ```
 
 
@@ -99,11 +99,11 @@ Intermediate results should also be saved in the “temp” folder. The final re
 2. To give the project a name click on `Project` -> `Save As`. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on `Save`. Now you should see the name of your project in the upper left corner of your QGIS.
 3.	Open the file **"Somaliland_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somaliland_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
 :::{dropdown} Video: Import Vector data
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_vector.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 :::
 4. Open the file **Somaliand_District_pop.gpkg** in QGIS. Use the drag-and-drop method. Click on the file and pull the file directly into your Layers window.
 :::{dropdown} Video: Import data by drag and dop
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_import_vector_d_d.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 5. Open the files **"Somalialand_District_pop.gpkg"** and **Somaliland_airports.gpkg** with either drag and drop or via `Layer` -> `Vector`.
 6. Save your project by clicking on the `Save Project` button (small disc in the upper left corner).
@@ -138,16 +138,16 @@ You can find more infos in the __[Wiki Layer concept](https://giscience.github.i
 
 1. Switch off the "Somalia_country" layer by removing the check on the layer panel ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)).
 :::{dropdown} Video: Show and hide layers
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_show_hide_layer.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 :::{dropdown} Video: 
 2. Change the hierarchy of your layers so that "Somalia_airports" is at the top, followed by "Somalia_District_pop". Move the layer up and down in the Layer panel by drag-and-drop [Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy).
 :::{dropdown} Video: Import data by drag-and-drop
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_layer_hierarchy.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_layer_hierarchy.mp4"></video>
 :::
 3. Move the "Somalia_country" layer to the top and switch it on. What happens?
 4. Change the name of the layer "Somalia_airports" to Airports by right click on your layer --> `Rename Layer`
 :::{dropdown} Video: Change Layer Name
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_rename_layer.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_rename_layer.mp4"></video>
 :::
 5. To the properties of a layer right click on your layer -> `Properties` -> `Information`. 
     1. When was the layer "Somaliland_district_pop" last modified?
@@ -172,19 +172,19 @@ __[Wiki Attribute Table](https://giscience.github.io/gis-training-resource-cente
 
 1. Open the attribute table of "Somaliland_district_pop". Right-click on "Somaliland_district_pop" --> `Open Attribute Table` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html))
 :::{dropdown} Video: Open attribute Table
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_show_attribute_table.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 :::
 2. Sort by "Population" by clicking on the column header. 
 3. In the attribute table select the feature “Berbera” by clicking on the left edge of the row.
 :::{dropdown} Video: Select features in Attribute Table
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_attribute_table_select.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 :::
 4. To select more features press `Ctrl` and click on the features.
 5. To only see selected features click in the down left corner of the attribute table on the drop-down menu and select `Show selected features`. To show again all features click on `Show all features`. 
 6. To only show unselect features and click on ![](../../../fig/mActionInvertSelection.png) in the attribute table. 
 7. To unselect all features click on ![](../../../fig/mActionDeselectActiveLayer.png) in the attribute table
 :::{dropdown} Video: Unselect features
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_attribute_table_unselect.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_unselect.mp4"></video>
 :::
 8. To zoom to one feature right click on your feature --> `Zoom To Feature`
 
@@ -200,29 +200,29 @@ All the styling in QGIS happens in `Symbology`
 
 1.	To open the symbology window of the "Somaliland_country" layer right click on the Somaliland_country layer -> `properties`. A new window will open up with a vertical tab section on the left. Navigate to the `symbology` tab. 
 :::{dropdown} Video: Opening the styling panel
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
 :::
 2. Change the colour of the layer fill by selecting a style for the drop-down menu. 
 3. To change the colour of the borders of the "Somaliland_country" layer by clicking on `Simple fill` in the symbology window and change the colour in the `Stroke Colour` drop-down menu.
 4. Adjust the thickness of the borders under `Stroke width`
 5. To only show the boarders of Somaliland click on `Simple Fill` -> `Fill Colour` -> `Transparent Fill`
 :::{dropdown} Video: Only display the outlines of polygons
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
 :::
 6. Add a OpenStreetMap base map by clicking on `Layer` in the to left corner of QGIS -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap
 :::{dropdown} Video: Adding basemap
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Add_basemap_OSM.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 :::
 
 
 ## Task 7: Clipping and Extract by location <a id="task-7-clipping-and-extract-by-location"></a>
 1.	Import the file **Somalia_health_facilities_WHO.gpkg** in QGIS.
 ::: {dropdown} Video: Import data by drag and drop
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_import_vector_d_d.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
 2.	The layer **Somalia_health_facilities_WHO** includes health facilities in Somaliland and Somalia. We only want to use the facilities in Somaliland. To cut the layer to the size of Somaliland we will use the tool __[clip](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip). Open the `Porcessing Toolbox` by cliking on `Processing` -> search for “Clip” 
 :::{dropdown} Video: Open `Processing toolbox`
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_toolbars.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 :::
 3. In the window of the Clip tool...
 
@@ -238,7 +238,7 @@ align: center
 ---
 ```
 :::{dropdown} Video: Clip example
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_clip_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_clip_wiki.mp4"></video>
 :::
 4. Now you should have a new point layer with all health facilities in Somaliland. Delete the old "Somalia_health_facilities_WHO" layer by right-click on the layer -> `Remove layer`
 
@@ -263,7 +263,7 @@ align: center
 ---
 ```
 :::{dropdown} Video: Categorized classification Example 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Classify_by_categorized.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 :::
 7. To use a prearranged style for the hospitals go to the Symbology window. In the down left corner click on `Style` -> `Load Style`
 4. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#exporting-and-importing-styles))

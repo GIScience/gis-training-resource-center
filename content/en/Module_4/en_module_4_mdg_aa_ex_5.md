@@ -138,7 +138,7 @@ Apply a ready-made QGIS map template to quickly create and export maps that show
   - **Page Size**: A3
   - **Orientation**: Landscape
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_load_mpa_template.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
 
 3. Update the attribute table of exposed districts
 - In the **Print Layout**, click on the attribute table (right-hand side of the layout).
@@ -152,7 +152,7 @@ Apply a ready-made QGIS map template to quickly create and export maps that show
     - **Sort Order**: Ascending
   - Click `OK`
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_map_makingadjust_AT.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
 
   
 :::{admonition} ⚠️ Warning – Long Tables
@@ -185,7 +185,7 @@ To fix this, open the table properties in the layout and **reduce the font size*
      Number of exposed peopel
      ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
 
 6. **Update Logos and Icons**  
 - The logos that need to be added to the map are represented by the red **X**.  
@@ -193,7 +193,7 @@ To fix this, open the table properties in the layout and **reduce the font size*
 - Click on the three dots ![](../../../fig/Three_points.png) next to the file path.  
 - Browse to the folder `logos_pictures` and select the correct logo file.  
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_map_making_update_logos.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
 
 
 7. Review and update layout text elements
@@ -203,7 +203,7 @@ To fix this, open the table properties in the layout and **reduce the font size*
   - **Author/Organization** (optional)
 - Adjust font size or alignment if necessary
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/fr_MDG_mak_making_adjust_title.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
 ### ✅ Final Checklist <a id="final-checklist"></a>
 

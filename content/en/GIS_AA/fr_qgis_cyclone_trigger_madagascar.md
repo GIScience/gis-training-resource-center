@@ -392,7 +392,7 @@ width: 700 px
 <!-- Do we need a video here to show how to run the model? -->
 
 ```{dropdown} Vidéo: Modèle d'entrée et de sortie
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/model_input_output.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
 
 :::{card}
@@ -628,7 +628,7 @@ width: 600 px
 <!-- Maybe add a video on how the Print Layout is created 
 
 ```{dropdown} Video: Making print map
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_print_map.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
 ```
 
 -->
@@ -1048,7 +1048,7 @@ L'image se trouve maintenant dans le dossier de résultats.
 <!-- Maybe add a video. Might not be necessary
 
 ```{dropdown} Video: Export image and PDF
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_trigger_export_image_pdf.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
 ```
 -->
 

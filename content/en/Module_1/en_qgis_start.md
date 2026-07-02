@@ -117,7 +117,7 @@ align: center
 
 2. In the upper left corner click on `Project` → `New Project`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_new_project.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
 
 
 
@@ -290,7 +290,7 @@ height: 40 px
 
 You can always move on the map canvas with arrow keys on your keyboard.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_move.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
 
 ### Zooming in the map view <a id="zooming-in-the-map-view"></a>
 
@@ -310,7 +310,7 @@ Or with the hotkeys <kbd>Ctrl</kbd> + <kbd>+</kbd> and <kbd>Ctrl</kbd> + <kbd>-<
 
 Another way is to use the zoom buttons in the toolbox panel.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_zoom.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
 ___
 
 ## Toolbox & Toolbars <a id="toolbox-and-toolbars"></a>
@@ -339,7 +339,7 @@ There are cases when you want to do something in QGIS but do not know the exact 
 
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_toolbars.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 
 ### Show and hide displays and toolbars <a id="show-and-hide-displays-and-toolbars"></a>
 
@@ -349,13 +349,13 @@ There are toolbars and panels for many different tasks. To avoid an overcrowded 
 
 - To add or remove  panels from your interface click on `View` → `Panels` → Check or uncheck the panels you want to add or remove.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
 
 ### Move and arrange toolbars <a id="move-and-arrange-toolbars"></a>
 
 At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_arrange_toolbars.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
 
 ___
 
@@ -385,7 +385,7 @@ Holding <kbd>Ctrl</kbd> + <kbd>O</kbd> also opens the `Open Project`-dialogue bo
 
 To open an existing QGIS project click on `Project` → `Open…` -> Navigate to your project and open it.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_open_project.mp4">
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
 </video>
 
 ### Save Projects <a id="save-projects"></a>
@@ -404,7 +404,7 @@ Pressing <kbd>Ctrl</kbd> + <kbd>S</kbd> saves the project, whereas pressing <kbd
     * Click on `Project` → `Save`. 
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_save_project.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
 
 
 ## Warning icons <a id="warning-icons"></a>

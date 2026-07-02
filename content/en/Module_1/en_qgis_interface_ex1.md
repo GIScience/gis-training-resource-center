@@ -31,7 +31,7 @@ The exercise covers:
 
 In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate through the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure [here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
 
-```{figure} ../../fig/standard_folder_structure_new_2025.drawio.png
+```{figure} ../../../fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 800px
 align: center
@@ -45,7 +45,7 @@ Standard folder structure. Source: HeiGIT.
 
 1. Create a new project. When opening QGIS, you will be greeted by the start layout, which shows the QGIS interface with no project loaded. On the left will be a panel with recent projects (this will probably be empty). To the right will be a news panel, showing posts from the QGIS blog, and beneath this is a `Project Templates` panel. 
 
-```{figure} ../../fig/en_project_template_BRC.png
+```{figure} ../../../fig/en_project_template_BRC.png
 ---
 height: 400
 name: en_project_template_BRC
@@ -60,7 +60,7 @@ name: en_project_template_BRC
 - Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
 On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](../content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
 
-```{figure} ../../fig/en_QGIS_GUI.png
+```{figure} ../../../fig/en_QGIS_GUI.png
 ---
 width: 800px
 align: center

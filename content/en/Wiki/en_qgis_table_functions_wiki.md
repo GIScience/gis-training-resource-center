@@ -12,7 +12,7 @@ Depending on the information to be entered in the attribute field, the correct d
 
 :::{dropdown} Example: Add a field for population density, data type: Float or Double or Real (floating point numbers)
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_add_field_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field_wiki.mp4"></video>
 :::
 
 ## Delete field <a id="delete-field"></a>
@@ -21,7 +21,7 @@ Depending on the information to be entered in the attribute field, the correct d
 
 :::{dropdown} Example: Delete all unused/unnecessary fields from the layer.
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_delete_field_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field_wiki.mp4"></video>
 :::
 
 ## Calculate Field <a id="calculate-field"></a>
@@ -35,7 +35,7 @@ Check if the data type of the field and your calculation match. For example, if 
 
 :::{dropdown} Example: Calculate the population density using the already existing fields Population and Area.
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_calculate_field_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field_wiki.mp4"></video>
 :::
 
 ## Basic Statistics for Fields <a id="basic-statistics-for-fields"></a>
@@ -44,7 +44,7 @@ Check if the data type of the field and your calculation match. For example, if 
 
 :::{dropdown} Example: Statistics for the field population density for all countries, what is the maximum value, average, etc.?
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_field_stats_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats_wiki.mp4"></video>
 :::
 
 ## Statistics by Categories <a id="statistics-by-categories"></a>
@@ -55,5 +55,5 @@ Check if the data type of the field and your calculation match. For example, if 
 
 :::{dropdown} Example: How many cities with more than 300,000 inhabitants are there per country? For each country: How many people live in the largest agglomeration?
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_stats_by_category_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category_wiki.mp4"></video>
 :::

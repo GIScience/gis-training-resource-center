@@ -15,7 +15,7 @@ The unit of distance depends on the projection of the layer. For buffering you u
 
 :::{dropdown} Example: Which regions fall within a 100-kilometer radius of major cities?
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_buffer_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_buffer_wiki.mp4"></video>
 :::
 
 :::{tip}
@@ -29,7 +29,7 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 
 :::{dropdown} Example: Extract the rail network of Germany
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_clip_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_clip_wiki.mp4"></video>
 :::
 
 ## Dissolve <a id="dissolve"></a>
@@ -38,7 +38,7 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 
 :::{dropdown} Example: Extract the rail network of Germany
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_dissolve_wiki.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_dissolve_wiki.mp4"></video>
 :::
 
 :::{Attention}
@@ -69,7 +69,7 @@ name: Intersect_concept_2
 :::
 
 :::{dropdown} Example: Intersect countries with timezones
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_intersect.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
 :::
 
 ## Centroids <a id="centroids"></a>
@@ -83,5 +83,5 @@ With the ![](../../../fig/qgis_3.40_centroids.png) `Centroids`-tool, you can cre
 
 
 :::{dropdown} Example: Create a centroid for each district in madagascar
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_3.40_centroids.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_centroids.mp4"></video>
 :::

@@ -22,7 +22,7 @@ Example of an attribute table in QGIS.
 * __Open Attribute Table:__ Right click on your layer and select `Open Attribute Table`.
 * __Sort column:__ Click on a column header.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_show_attribute_table.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 
 
 ### Manually select features in the attribute table <a id="manually-select-features-in-the-attribute-table"></a>
@@ -33,19 +33,19 @@ Example of an attribute table in QGIS.
 * __Only show unselected features__ Select features and click on ![](../../../fig/mActionInvertSelection.png)
 
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_attribute_table_select.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
 
 ### Unselect feature <a id="unselect-feature"></a>
 
 * __Unselect:__ Click on ![](../../../fig/mActionDeselectActiveLayer.png) or use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_attribute_table_unselect.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_unselect.mp4"></video>
 
 ### Zoom in on a specific feature <a id="zoom-in-on-a-specific-feature"></a>
 
 * __Zoom:__ Right click on your feature and select `Zoom To Feature`. 
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_zoom_to_feature.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
 
 ## Table view vs Form view <a id="table-view-vs-form-view"></a>
 
@@ -69,7 +69,7 @@ ___
     - Make your edits.
 * __Save edits:__ Click on ![](../../../fig/mActionSaveEdits.png) __or__ deactivate editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) and accept the changes by saving your layer.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Attributtabel_edit.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Attributtabel_edit.mp4"></video>
 
 ### Add a new column <a id="add-a-new-column"></a>
 
@@ -92,7 +92,7 @@ ___
 | Binary object (BLOB)       | For storing binary data like images, audio, or files.  |
 | Boolean                     | Simple true/false or yes/no values.              |
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_add_column.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_add_column.mp4"></video>
 
 ### Delete columns <a id="delete-columns"></a>
 
@@ -106,7 +106,7 @@ ___
 To select multiple columns press <kbd>Ctrl</kbd> and select columns.
 :::
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_delet_column.mp4"></video>
+<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_delet_column.mp4"></video>
 
 ## Buttons and shortcuts of the Attribute Table <a id="buttons-and-shortcuts-of-the-attribute-table"></a>
 

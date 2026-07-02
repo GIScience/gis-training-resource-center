@@ -124,14 +124,14 @@ Additional options:
 - Boolean
 
 :::{dropdown} Example: Add a field for population density
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_add_field.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video>
 :::
 
 ### Delete field <a id="delete-field"></a>
 It is also possible to __delete fields__ from the attribute table. A commonly used practice is to __remove all unused or unnecessary fields__ from a layer before starting to work on it. This __makes the dataset much more organised__.
 
 :::{dropdown} Example: Delete all unused/unnecessary fields from a vector layer
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_delete_field.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video>
 :::
 
 ### Calculate field <a id="calculate-field"></a>
@@ -169,7 +169,7 @@ The most important groups and their respective functionality that are provided w
     - Calculate `min` and `max`
 
 :::{dropdown} Example: Calculate the population density
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_calculate_field.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
 :::
 
 
@@ -178,7 +178,7 @@ The most important groups and their respective functionality that are provided w
 The tool __Basic statistics for fields__ generates statistics for a specific field of the attribute table of a vector layer. The results are generated as an HTML file and can be accessed by using the __file path link__ in the __Results Viewer__. This operation is highly valuable for gaining a comprehensive understanding of the data you intend to work with. It allows you to determine the range of values, pinpoint the minimum and maximum values. In the provided example, this operation is applied to calculate the global population density, allowing you to easily identify the most densely populated region worldwide.
 
 :::{dropdown} Example: Calculate statistics for the field population density for countries worldwide.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_field_stats.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video>
 :::
 
 ### Statistics by categories <a id="statistics-by-categories"></a>
@@ -191,7 +191,7 @@ __Questions that need to be considered when doing these calculations:__
 For greater precision in these calculations, "statistics by categories" offers more comprehensive insights than those mentioned earlier. In this case, it becomes simple to determine the number of cities per country with over 300,000 inhabitants and, for each country, the population living in the largest urban agglomeration.
 
 :::{dropdown} Example: Cities with more than 300,000 inhabitants and the amount of population in the largest agglomerations
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_stats_by_category.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
 :::
 
 ## Non-spatial queries <a id="non-spatial-queries"></a>
@@ -201,7 +201,7 @@ In GIS, you can __query__ (filter) data based on specific attribute information.
 It is possible to manually select specific rows by clicking on the number on the left side of it. This can be easily used to select a small number of rows. If they are selected successfully, they will appear in __yellow__.
 
 :::{dropdown} Example: Manual selection of rows
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_attribute_table.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
 :::
 
 ### Select by expression <a id="select-by-expression"></a>
@@ -254,7 +254,7 @@ Operators such as AND, OR can be used to combine different queries or criteria
 Querying your data to answer more complex questions is of great importance. This can be accomplished using the "Select by expression" tool. In the provided example, we aim to answer the question: Which cities, excluding those with a population of one million inhabitants in 1950, had grown to over ten million inhabitants by 2015?
 
 :::{dropdown} Example: Cities, excluding those with a population of one million inhabitants in 1950, that have grown to over ten million inhabitants by 2015
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_select_by_expression_and.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
 :::
 
 ##### SQL <a id="sql"></a>
@@ -301,7 +301,7 @@ When a filter is applied with the Query Builder, QGIS treats the resulting subse
 In this short video, you will discover the location of the query builder and learn how to create a straightforward query for isolating a particular state from a dataset that covers the entire country. The example focuses on a dataset related to South Sudan and serves as a basic illustration.
 
 :::{dropdown} Example: Simple usage of the Query Builder.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_qgis_query_builder.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
 :::
 
 ## Self-Assessment Questions <a id="self-assessment-questions"></a>

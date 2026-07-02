@@ -174,7 +174,7 @@ The Video below shows the process for setting up the folder for december 2023.
 
 
 ```{dropdown} Video: Setting up folder structure 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_folder_setup.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 ```
 
 ## Step 2: Download of the forecast data <a id="step-2-download-of-the-forecast-data"></a>
@@ -339,7 +339,7 @@ __Result:__ QGIS project with all necessary data ready to be analysed.
 This video shows how to setup the QGIS project for April 2022 and how to import all data into the project.
 
 ```{dropdown} Video: Loading data into QGIS
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_3.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
 ```
 
 ## Step 4: Load the model in the QGIS Model Designer <a id="step-4-load-the-model-in-the-qgis-model-designer"></a>
@@ -357,7 +357,7 @@ align: center
 2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" (or the updated model: "IPC_Som_drought_revision_2.1.model3") file an click on `Open`. The model will open and you will see yellow, white and green boxes.
 
 ```{dropdown} Video: Open Model
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/load_model.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/load_model.mp4"></video>
 ```
 
 ```{figure} ../../../fig/SOM_model_designer_2.1.png
@@ -422,7 +422,7 @@ For each of these mandatory inputs, you click on the dropdown arrow and choose t
 4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
 
 ```{dropdown} Video: Input and output Model
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/model_input_output.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
 
 ```{figure} ../../../fig/SRCS_Model_input.png
@@ -468,7 +468,7 @@ align: center
 4. Click `Run`. Your results layer will appear in the main QGIS window. You can close the graphical modeller window.
 
 ```{dropdown} Video: Input and output Model
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/model_input_output.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/model_input_output.mp4"></video>
 ```
 
 ```{figure} ../../../fig/SRCS_Model_input.png
@@ -548,7 +548,7 @@ __Administrative 2 Boundaries (Regions)__
     * OpenStreetMap
 
 ```{dropdown} Video: Visualisation of results
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Trigger_model_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
 ```
 
 ``````{list-table}
@@ -606,7 +606,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
  
 
 ```{dropdown} Video: Making print map
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_print_map.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
 ```
 
 ```{Attention}
@@ -660,7 +660,7 @@ __Export as PDF__
 Now the image can be found in the result folder in the folder you created in Step 1
 
 ```{dropdown} Video: Export image and PDF
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_trigger_export_image_pdf.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
 ```
 
 
@@ -758,7 +758,7 @@ The Video below shows the process for setting up the folder for decmber 2023.
 
 
 ```{dropdown} Video: Setting up folder structure 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_folder_setup.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
 ```
 
 ## Step 2: Download of the forecast data <a id="step-2-download-of-the-forecast-data-2"></a>
@@ -952,7 +952,7 @@ __Result:__ QGIS project with all necessary data ready to be analysed.
 This video shows how to setup the QGIS project for April 2022 and how to import all data into the project.
 
 ```{dropdown} Video: Loading data into QGIS
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_3.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_3.mp4"></video>
 ```
 
 
@@ -1081,7 +1081,7 @@ The resulting layer can have more rows than the original layers.
 
 The video shows the whole process on the example of ML 1.
 ```{dropdown} Video: Intersection of ML 1 & ML 2 data with the district polygons 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 ```
 
 ## Step 7: Calculation of Population per Intersection Polygon <a id="step-7-calculation-of-population-per-intersection-polygon"></a>
@@ -1129,7 +1129,7 @@ __Result:__ The result should be the “ML1_zonal_statistic” and “ML2_zonal_
 
 
 ```{dropdown} Video:  Calculation of Population per Intersection Polygon
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 ```
 
 ## Step 8: Weighting of the Population based on IPC-Phase <a id="step-8-weighting-of-the-population-based-on-ipc-phase"></a>
@@ -1200,7 +1200,7 @@ __Result:__ The two layers “ML1_zonal_statistic” and “ML2_zonal_statistic�
 The video shows the whole process with the the example of ML 1.
 
 ```{dropdown} Video: Weighting of the Population based on IPC-Phase
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
 ```
 
 ## Step 9: Adding the total district population to Intersection Polygons <a id="step-9-adding-the-total-district-population-to-intersection-polygons"></a>
@@ -1251,7 +1251,7 @@ __Result:__ Now you should have to new polygon layer named “ML1_join” and ML
 
 
 ```{dropdown} Video: Adding the total district population to Intersection Polygons
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_7_join.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_7_join.mp4"></video>
 ```
 
 ## Step 10: Calculation of the Population Proportion per Intersection Polygon <a id="step-10-calculation-of-the-population-proportion-per-intersection-polygon"></a>
@@ -1295,7 +1295,7 @@ __Result:__ Both layer “ML1_join” and ML2_Join” should now have the column
 The video shows the whole process with the the example of ML 1.
 
 ```{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 ```
 
 ## Step 11: Calculate the IPC Index per District <a id="step-11-calculate-the-ipc-index-per-district"></a>
@@ -1339,7 +1339,7 @@ __Tool:__ `Join attribute by location (summary)`
 __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_location" should have the column “Index_per_IPCPolygon_ML1_mean” or “Index_per_IPCPolygon_ML2_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
 
 ```{dropdown} Video: Calculate IPC Index per District
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 ```
 
 
@@ -1385,7 +1385,7 @@ __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-tra
 __Result:__ Layer with the districts of Somalia and the IPC-Index of each district.
 
 ```{dropdown} Video: Join ML1 and ML2 I
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_10_join.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
 ```
 
 ## Step 13: Calculation of SPI-12 Mean per District <a id="step-13-calculation-of-spi-12-mean-per-district"></a>
@@ -1430,7 +1430,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 
 
 ```{dropdown} Video: Calculation of SPI12 Mean per District
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
 ```
 
 ## Step 14: Join SPI-12 Mean to the IPC Index <a id="step-14-join-spi-12-mean-to-the-ipc-index"></a>
@@ -1476,7 +1476,7 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 
 
 ```{dropdown} Video: Join SPI12 Mean to the IPC Index
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
 ## Step 15: Evaluate the Trigger Activation <a id="step-15-evaluate-the-trigger-activation"></a>
@@ -1531,7 +1531,7 @@ align: center
 ```
 
 ```{dropdown} Video: Evaluate Trigger Activation 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 ```
 
 ## Step 16: Visualisation of results <a id="step-16-visualisation-of-results"></a>
@@ -1599,7 +1599,7 @@ __Administrative 2 Boundaries (Regions)__
     * OpenStreetMap
 
 ```{dropdown} Video: Visualisation of results
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Trigger_model_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
 ```
 
 ``````{list-table}
@@ -1657,7 +1657,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
  
 
 ```{dropdown} Video: Making print map
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_print_map.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
 ```
 
 ```{Attention}
@@ -1774,7 +1774,7 @@ The resulting layer can have more rows than the original layers.
 
 The video shows the whole process on the example of ML 1.
 ```{dropdown} Video: Intersection of ML 1 & ML 2 data with the district polygons 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
 ```
 
 ## Step 5: Calculation of Population per Intersection Polygon <a id="step-5-calculation-of-population-per-intersection-polygon"></a>
@@ -1822,7 +1822,7 @@ __Result:__ The result should be the “ML1_zonal_statistic” and “ML2_zonal_
 
 
 ```{dropdown} Video:  Calculation of Population per Intersection Polygon
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
 ```
 
 ## Step 6: Weighting of the Population based on IPC-Phase <a id="step-6-weighting-of-the-population-based-on-ipc-phase"></a>
@@ -1893,7 +1893,7 @@ __Result:__ The two layers “ML1_zonal_statistic” and “ML2_zonal_statistic�
 The video shows the whole process with the the example of ML 1.
 
 ```{dropdown} Video: Weighting of the Population based on IPC-Phase
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_6_field_calculators.mp4"></video>
 ```
 
 ## Step 7: Adding the total district population to Intersection Polygons <a id="step-7-adding-the-total-district-population-to-intersection-polygons"></a>
@@ -1944,7 +1944,7 @@ __Result:__ Now you should have to new polygon layer named “ML1_join” and ML
 
 
 ```{dropdown} Video: Adding the total district population to Intersection Polygons
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_7_join.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_7_join.mp4"></video>
 ```
 
 ## Step 8: Calculation of the Population Proportion per Intersection Polygon <a id="step-8-calculation-of-the-population-proportion-per-intersection-polygon"></a>
@@ -1988,7 +1988,7 @@ __Result:__ Both layer “ML1_join” and ML2_Join” should now have the column
 The video shows the whole process with the the example of ML 1.
 
 ```{dropdown} Video: Calculation of Population Proportion per Intersection Polygon
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
 ```
 
 ## Step 9: Calculate the IPC Index per District <a id="step-9-calculate-the-ipc-index-per-district"></a>
@@ -2032,7 +2032,7 @@ __Tool:__ `Join attribute by location (summary)`
 __Result:__ As a result, your two layers "ML1_join_location" and "ML2_join_location" should have the column “Index_per_IPCPolygon_ML1_mean” or “Index_per_IPCPolygon_ML2_mean”. Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.
 
 ```{dropdown} Video: Calculate IPC Index per District
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
 ```
 
 
@@ -2078,7 +2078,7 @@ __Tool:__ [`Join attributes by field value`](https://giscience.github.io/gis-tra
 __Result:__ Layer with the districts of Somalia and the IPC-Index of each district.
 
 ```{dropdown} Video: Join ML1 and ML2 I
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_10_join.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_10_join.mp4"></video>
 ```
 
 ## Step 11: Calculation of SPI-12 Mean per District <a id="step-11-calculation-of-spi-12-mean-per-district"></a>
@@ -2122,7 +2122,7 @@ __Result:__ A layer of all districts of Somalia with the mean SPI-12.
 
 
 ```{dropdown} Video: Calculation of SPI12 Mean per District
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_11_zonal_staistics.mp4"></video>
 ```
 
 ## Step 12: Join SPI-12 Mean to the IPC Index <a id="step-12-join-spi-12-mean-to-the-ipc-index"></a>
@@ -2167,7 +2167,7 @@ __Result:__ The result will be a layer of all districts of Somalia with the mean
 
 
 ```{dropdown} Video: Join SPI12 Mean to the IPC Index
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_12_join_IPC_SPI12.mp4"></video>
 ```
 
 ## Step 13: Evaluate the Trigger Activation <a id="step-13-evaluate-the-trigger-activation"></a>
@@ -2221,7 +2221,7 @@ align: center
 ```
 
 ```{dropdown} Video: Evaluate Trigger Activation 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 ```
 
 ## Step 14: Visualisation of results <a id="step-14-visualisation-of-results"></a>
@@ -2289,7 +2289,7 @@ __Administrative 2 Boundaries (Regions)__
     * OpenStreetMap
 
 ```{dropdown} Video: Visualisation of results
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Trigger_model_style.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
 ```
 
 ``````{list-table}
@@ -2347,7 +2347,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
  
 
 ```{dropdown} Video: Making print map
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/SRCS_Trigger_print_map.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
 ```
 
 ```{Attention}

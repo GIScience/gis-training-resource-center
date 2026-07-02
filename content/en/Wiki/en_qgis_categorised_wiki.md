@@ -13,7 +13,7 @@ Categorized classification is usually used for __nominal__ and __ordinal__ scale
 | Ordinal Scale                | Categories with a meaningful order or ranking            | Ranks (e.g., low, medium)   | Text ("high") or Integer (5)      |
 
 :::{dropdown} Video: Classifying Data
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Classify_by_categorized.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 :::
 
 __To classify data in categories…__

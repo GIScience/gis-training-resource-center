@@ -37,7 +37,7 @@ It calculates the statistics for each vector feature on the basis of the raster 
 5.	`Zonal Statistics`: Specify where you want to save the results and give it a good name.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/qgis_zonal_stats.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zonal_stats.mp4"></video>
 
 
 

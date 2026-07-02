@@ -42,7 +42,7 @@ In most cases, you will use either linear, or polynomial (2nd or 3rd degree) tra
 
 ### How to Georeference in QGIS <a id="how-to-georeference-in-qgis"></a>
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_3.36_georeferencing_howto.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_georeferencing_howto.mp4"></video>
 
 In order to georeference a PDF map, you need to follow the following steps:
 

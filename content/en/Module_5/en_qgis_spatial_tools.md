@@ -264,7 +264,7 @@ In the aftermath of flooding events, data on the affected population and the ext
 
 
 :::{dropdown} Solution: Calculate sum of affected population and flooded area for the Area of interest
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/en_exercise_spatial_join.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
 :::
 
 ## Self-Assessment Questions <a id="self-assessment-questions"></a>

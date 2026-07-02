@@ -24,15 +24,15 @@ The Expousre indicator was determined by combining the [Aridity index (AI)](http
 ### Aridity index (AI) <a id="aridity-index-ai"></a>
 
 The raster file was opened in QGIS and the mean drought index per administrative unit was calculated using `Zonal statistics`:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/AI_exposure_indicator.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/AI_exposure_indicator.mp4"></video>
 
 ### Palmer Drought Severity Index (PDSI) <a id="palmer-drought-severity-index-pdsi"></a>
 
 First, the raw data was pivoted and processed in Excel to calculate the average PDSI between 2020 and 2024:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/PDSI_exposure_indicator.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/PDSI_exposure_indicator.mp4"></video>
 
 Then, the processed data was opened in QGIS and added to the exposure indicator file:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/PDSI_exposure_indicator_2.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/PDSI_exposure_indicator_2.mp4"></video>
 
 ---
 
@@ -44,14 +44,14 @@ The Vulnerability indicator was determined by combining the [ACLED - Conflict Ev
 
 The dataset was processed in QGIS to estimate the population affected by conflicts in 2024 using the `Join Attributes by Location (Summary)` tool. Additionally the number of conflicts per administrative unit was calculated using the `Count Points in Polygon` tool:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/ACLED_vulnerability_indicator.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/ACLED_vulnerability_indicator.mp4"></video>
 
 ### Worldpop <a id="worldpop"></a>
 
 The dataset was processed in QGIS to estimate the vulnerable population (<15 years & >65 years) in 2024 using the `Raster Calculator` and the `Zonal statistics` tools: 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/worldpop_vulnerability_indicator_1.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/worldpop_vulnerability_indicator_1.mp4"></video>
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/worldpop_vulnerability_indicator_2.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/worldpop_vulnerability_indicator_2.mp4"></video>
 
 ---
 
@@ -62,4 +62,4 @@ The Coping Capacity indicator was determined by combining the [Health Facilities
 ### Health and Ecudation Facilities <a id="health-and-ecudation-facilities"></a>
 
 The dataset was processed in QGIS to count the number of facilities per administrative unit using the `Count Points in Polygon` tool:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Coping_indicator.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Coping_indicator.mp4"></video>

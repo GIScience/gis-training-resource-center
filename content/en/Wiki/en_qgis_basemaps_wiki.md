@@ -20,7 +20,7 @@ __Option 1:__ Find in the `Browser` panel `XYZ Tiles`. Open the dropdown by clic
 __Option 2:__ `Layer` → `Add Layer` → `Add XYZ layer...` → Select the OpenStreetMap or another basemap.
 
 __Add standard OpenStreetMap as Basemap__
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/Add_basemap_OSM.mp4"></video>
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
 
 ### Add Google and Bing Basemaps <a id="add-google-and-bing-basemaps"></a>
 
@@ -60,7 +60,7 @@ There can be problems when printing some basemaps from the QuickMapServices!
 `Web` → `QuickMapServices` → select provider e.g. NASA → select basemap.
 
 __Functionality of QuickMapServices Plugin__
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/add_basemap_quickmapservice.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
 
 ### Configuration of QuickMapServices <a id="configuration-of-quickmapservices"></a>
 After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.
@@ -76,4 +76,4 @@ If the plugin is installed and activated but the panel is not visible check Wiki
 :::
 
 __Functionality of OSM Place Search Plugin__
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main../../../fig/OSM_Place_Search.mp4"></video>
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>
