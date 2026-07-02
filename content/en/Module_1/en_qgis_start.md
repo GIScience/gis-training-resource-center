@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -66,7 +66,7 @@ Sometimes working with GIS requires you to go and collect the data in the field.
 
 :::{tab-item} Data Processing
 
-QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_module_2_overview.html) onwards. 
+QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in [module 2](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_module_2_overview.html) onwards. 
 
 
 :::
@@ -428,7 +428,7 @@ If you have more questions before or after the training or require assistance, d
 
 :::{admonition} Common errors and issues
 :class: tip
-We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
+We have collected a list of __[Common errors and issues](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html)__. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here. 
 :::
 
 
@@ -489,7 +489,7 @@ In the top bar, use the `View` menu → `Panels` or `Toolbars` submenus to toggl
 
 :::{dropdown} Answer
 
-- On our [Common errors and issues](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html) page
+- On our [Common errors and issues](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html) page
 - By looking into the [QGIS documentation](https://docs.qgis.org/3.34/en/docs/index.html)
 - On the [QGIS user forum on stackexchange](https://gis.stackexchange.com/?tags=qgis)
 - In [QGIS user groups](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)

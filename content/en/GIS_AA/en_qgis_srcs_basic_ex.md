@@ -53,7 +53,7 @@ align: center
 ## Task 3: Calculating water sources per 10.000 people <a id="task-3-calculating-water-sources-per-10000-people"></a>
 
 1. Open the Attribute Table of "district_watersources"
-2. Click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](../../../fig/mActionCalculateField.png)to open the field calculator
+2. Click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](../../../fig/mActionCalculateField.png)to open the field calculator
 3.  Check `Create new field`
 3. `Output field name`: Name the new column “Watersources_pop"
 4. `Result field type`: Decimal number (real)
@@ -84,7 +84,7 @@ The goal of the exercise is to get to know the basic functionality of QGIS and h
  
 ## Task 1: Folder and data structure <a id="task-1-folder-and-data-structure"></a>
 1.	Save the folder Exercise_1 on your computer. Check out the folder structure in the Exercise_1 folder.  
-The standard folder structure used makes certain that you never lose any data. You can find more infos about the standard folder structure we recommend [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
+The standard folder structure used makes certain that you never lose any data. You can find more infos about the standard folder structure we recommend [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure).
 2. Please save your QGIS project in the “project” folder. 
 3. Copy the data from the "input" folder into the “temp” folder. During this exercise we will manipulate the input data, that is why we do not work with the original data in the “input” folder. 
 
@@ -95,9 +95,9 @@ Intermediate results should also be saved in the “temp” folder. The final re
 
 
 ## Task 2: Data import into QGIS <a id="task-2-data-import-into-qgis"></a>
-1.	Open QGIS and create a new project by clicking  on `Project` -> `New Project` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)).
+1.	Open QGIS and create a new project by clicking  on `Project` -> `New Project` ([Wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html)).
 2. To give the project a name click on `Project` -> `Save As`. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on `Save`. Now you should see the name of your project in the upper left corner of your QGIS.
-3.	Open the file **"Somaliland_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somaliland_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
+3.	Open the file **"Somaliland_country.shp"** in QGIS. Click on the `Layer` Tab in the upper left corner -> `Vector`. Select **"Somaliland_country.shp"**. Click `Add` ([Wiki Import Vector layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab))
 :::{dropdown} Video: Import Vector data
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
 :::
@@ -134,13 +134,13 @@ Intermediate results should also be saved in the “temp” folder. The final re
 
 In this task, we familiarise ourselves with the layer window (Layer List). The concept means that a map in GIS is always a combination of multiple layers. We can combine the layers in many different ways and thus get different results.
 
-You can find more infos in the __[Wiki Layer concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept)__.
+You can find more infos in the __[Wiki Layer concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html#layer-concept)__.
 
-1. Switch off the "Somalia_country" layer by removing the check on the layer panel ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)).
+1. Switch off the "Somalia_country" layer by removing the check on the layer panel ([Wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)).
 :::{dropdown} Video: Show and hide layers
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_hide_layer.mp4"></video>
 :::{dropdown} Video: 
-2. Change the hierarchy of your layers so that "Somalia_airports" is at the top, followed by "Somalia_District_pop". Move the layer up and down in the Layer panel by drag-and-drop [Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy).
+2. Change the hierarchy of your layers so that "Somalia_airports" is at the top, followed by "Somalia_District_pop". Move the layer up and down in the Layer panel by drag-and-drop [Wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy).
 :::{dropdown} Video: Import data by drag-and-drop
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_layer_hierarchy.mp4"></video>
 :::
@@ -157,7 +157,7 @@ You can find more infos in the __[Wiki Layer concept](https://giscience.github.i
 ```{Tip}
 If you have "lost" your layer, right click on your layer -> `Zoom to layer(s)`
 
-__[Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#have-you-lost-your-layer)__
+__[Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html#have-you-lost-your-layer)__
 ```
 
 ## Task 5: Attribute tables <a id="task-5-attribute-tables"></a>
@@ -168,9 +168,9 @@ __Example of an attribute table__
 
 ![Example of an attribute table](../../../fig/attribute_table.png)
 
-__[Wiki Attribute Table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-in-qgis)
+__[Wiki Attribute Table](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-in-qgis)
 
-1. Open the attribute table of "Somaliland_district_pop". Right-click on "Somaliland_district_pop" --> `Open Attribute Table` ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html))
+1. Open the attribute table of "Somaliland_district_pop". Right-click on "Somaliland_district_pop" --> `Open Attribute Table` ([Wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html))
 :::{dropdown} Video: Open attribute Table
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
 :::
@@ -220,7 +220,7 @@ All the styling in QGIS happens in `Symbology`
 ::: {dropdown} Video: Import data by drag and drop
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
 :::
-2.	The layer **Somalia_health_facilities_WHO** includes health facilities in Somaliland and Somalia. We only want to use the facilities in Somaliland. To cut the layer to the size of Somaliland we will use the tool __[clip](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip). Open the `Porcessing Toolbox` by cliking on `Processing` -> search for “Clip” 
+2.	The layer **Somalia_health_facilities_WHO** includes health facilities in Somaliland and Somalia. We only want to use the facilities in Somaliland. To cut the layer to the size of Somaliland we will use the tool __[clip](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html#clip). Open the `Porcessing Toolbox` by cliking on `Processing` -> search for “Clip” 
 :::{dropdown} Video: Open `Processing toolbox`
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
 :::
@@ -266,7 +266,7 @@ align: center
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
 :::
 7. To use a prearranged style for the hospitals go to the Symbology window. In the down left corner click on `Style` -> `Load Style`
-4. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. ([Wiki](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#exporting-and-importing-styles))
+4. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. ([Wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I.html#exporting-and-importing-styles))
 5. Click `Open`. Then click on `Load Style`
 6. Back in the “Layer Properties” Window click `Apply` and `OK`
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 
-This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html).
+This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_mdg_aa_cyclones.html).
 
 :::
 
@@ -43,12 +43,12 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
+* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Automatisation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html)
 
 :::
 
@@ -73,7 +73,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on conducting trainings. 
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on conducting trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 

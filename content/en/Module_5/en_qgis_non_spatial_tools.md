@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -70,7 +70,7 @@ In this short follow along exercise, we will add the population data to the admi
 1. [Download the necessary layers here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), unzip them, and add them to your QGIS-project. 
 
 :::{tip}
-The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` → `Add Layer` → `Add delimited text layer`) with no geometry.
+The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` → `Add Layer` → `Add delimited text layer`) with no geometry.
 :::
 
 2. Open the "Join Attributes by Field Value"-tool from the processing toolbox

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -194,7 +194,7 @@ Writing your own expressions can be difficult at first. QGIS has a few quality o
 
 
 
-8. Save the selection in a separate layer. Name it `Saint_Louis_flooded_areas`. See [Export Selection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#export-selection) in the wiki for more information. 
+8. Save the selection in a separate layer. Name it `Saint_Louis_flooded_areas`. See [Export Selection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_queries_wiki.html#export-selection) in the wiki for more information. 
 
 
 9. You can now remove the `Saint_Louis_flood_clipped` layer to avoid confusion.

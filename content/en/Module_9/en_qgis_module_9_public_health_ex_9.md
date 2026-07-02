@@ -60,8 +60,8 @@ To do this, you will generate travel-time surfaces around vaccination points and
 The tool _Service area (from layer)_ requires the QGIS project running in an appropriate metric CRS to produce meaningful output.
 Make sure to set your QGIS project via the menu in the lower right corner to a metric CRS, eg `ESRI:102022`. The layers don't necessarily need to be prjected in a metric system. 
 
-* More info on the CRS menu in the QGIS UI is available [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)
-* More on CRS in general is available [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)
+* More info on the CRS menu in the QGIS UI is available [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)
+* More on CRS in general is available [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)
 
 ```
 
@@ -73,12 +73,12 @@ width: 650 px
 :::
 
 3. The output will be called `Service area (lines)` and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select __EPSG: 102022__ and reproject the `Service area (lines)`. The output layer will be called `Reprojected`.
-4. To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the `Service area (lines)` layer. Before buffering, we first need to [`Dissolve`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve) the service-area lines so they form a single unified geometry.
+4. To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the `Service area (lines)` layer. Before buffering, we first need to [`Dissolve`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html#dissolve) the service-area lines so they form a single unified geometry.
    - Open the `Dissolve` tool and use the reprojected output as the __Input layer__
    - In Dissolve fields, we won't select anything
 
 :::{Warning}
-Both the `Dissolve` and `Buffer` operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, [select](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection) several states from the `tcd_admin1 layer`, then right-click the layer → `Export` → `Save Selected Features As…` and save the subset. Use the [`Clip`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip) tool to cut the service-area roads to this smaller region, and then run the `Dissolve` and `Buffer` operations on the reduced dataset.
+Both the `Dissolve` and `Buffer` operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, [select](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_queries.html#manual-selection) several states from the `tcd_admin1 layer`, then right-click the layer → `Export` → `Save Selected Features As…` and save the subset. Use the [`Clip`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html#clip) tool to cut the service-area roads to this smaller region, and then run the `Dissolve` and `Buffer` operations on the reduced dataset.
 :::
 
 5. Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.
@@ -219,7 +219,7 @@ Now we can visualise both the population that can be reached within 2 hours of a
    - Open the Layer Styling panel for the duplicate layer and set: Symbology: Graduated, Value: pop_beyond_2h, Color ramp: YlOrRd, Mode: Equal Count, Classes: 5
 
 :::{tip}
-The overall map layout follows the same steps as in the previous exercise. For a reminder, see the guide [here](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html#task-7-2-print-layout)
+The overall map layout follows the same steps as in the previous exercise. For a reminder, see the guide [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_module_5_public_health_ex_2.html#task-7-2-print-layout)
 :::
 
 :::{figure} ../../../fig/tcd_map_pop_access_vaccination.png

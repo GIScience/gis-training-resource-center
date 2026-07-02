@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -53,7 +53,7 @@ There are lots of plugins available for QGIS that provide additional tools not a
 
 ::::{dropdown} Installation of plugins
 
-To [install a plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html), in the top bar, navigate to `Plugins` → `Manage and Install Plugins…` → `All` → Search for the plugin → `Install Plugin`.
+To [install a plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html), in the top bar, navigate to `Plugins` → `Manage and Install Plugins…` → `All` → Search for the plugin → `Install Plugin`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -118,7 +118,7 @@ A basemap is a foundational or background map layer that provides geographic con
 
 :::{dropdown} Answer
 - In the `Browser`-panel, expand the "*XYZ Tiles*" group and select a service such as OpenStreetMap.
-- Alternatively, [install the QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_basemap.html#quickmapservices) and use it to add a map.
+- Alternatively, [install the QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_basemap.html#quickmapservices) and use it to add a map.
 :::
 
 3. __What are attribution requirements, and how should you handle them when using basemaps from third‑party providers?__

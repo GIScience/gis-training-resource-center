@@ -10,7 +10,7 @@ La version française de cet article se trouve ici:
 
 :::{card}
 :class-card: sd-text-center sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html
 Version française
 :::
 
@@ -171,7 +171,7 @@ The following key processing steps are run inside the model:
 
 ### How to run the model <a id="how-to-run-the-model"></a>
 
-The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
 ### Step 1: Explanation of the folder structure <a id="step-1-explanation-of-the-folder-structure"></a>
@@ -440,9 +440,9 @@ We will generate two different types of output maps to support the analysis:
 :::
 
 We will create the maps in two steps:
-First, we will use the __[layer styling panel](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
+First, we will use the __[layer styling panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
 
-In a second step, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create printable maps with additional datatables. 
+In a second step, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create printable maps with additional datatables. 
 
 <!---
 
@@ -454,7 +454,7 @@ align: center
 ---
 ```
 
-__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
 
 ```{figure} ../../../fig/MAD_Trigger_workflow_Step4b.png
 ---
@@ -465,7 +465,7 @@ align: center
 ```
 
 
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 -->
 
@@ -538,7 +538,7 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 #### Making the Print Layout <a id="making-the-print-layout"></a>
 
-For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#print-layout).
+For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#print-layout).
 
 
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview` and the `OpenStreetMap` basemap.
@@ -688,7 +688,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 -->
 
@@ -1058,7 +1058,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
 
 -->
 

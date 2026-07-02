@@ -72,7 +72,7 @@ After installing the plugin (Plugin Wiki) you need to configure the plugin to ac
 With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.
 
 :::{Tip}
-If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
+If the plugin is installed and activated but the panel is not visible check Wiki [Move and arrange toolbars and panels](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)
 :::
 
 __Functionality of OSM Place Search Plugin__

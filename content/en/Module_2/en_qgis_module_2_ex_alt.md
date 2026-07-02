@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -54,10 +54,10 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
+* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html)
+* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geodata_types_wiki.html)
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
 
 :::
 
@@ -72,7 +72,7 @@ __Relevant Wiki Articles__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -126,16 +126,16 @@ Make sure to __unzip__ the exercise folder before beginning the tasks. Otherwise
 3. Load the shape file `World_countries_generalized.shp` into your project by drag and drop ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to "World_countries__generalized". Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
     :::{Attention}
-    With both methods, you need to select the file with the ending `.shp`! A [shapefile consists of several files](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#shapefile-structure) that are referring to each other. The file that holds the geometry information is the file ending with `.shp`.
+    With both methods, you need to select the file with the ending `.shp`! A [shapefile consists of several files](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html#shapefile-structure) that are referring to each other. The file that holds the geometry information is the file ending with `.shp`.
     :::
 
-4. Load the GeoPackage file `global_power_plant_database_nuclear.gpkg` into the QGIS project. You can use one of the methods used in the previous step: Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the file or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to `/data/input/`. Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+4. Load the GeoPackage file `global_power_plant_database_nuclear.gpkg` into the QGIS project. You can use one of the methods used in the previous step: Either drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) the file or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to `/data/input/`. Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
 
     :::{Note}
     GeoPackage files can contain multiple files, and even whole QGIS projects. When you load such a file in QGIS, a window will appear in which you have to select the files you want to load in your QGIS project.
     :::
 
-5. Next, we want to load the file `Significant_earthquake_data.txt` into QGIS. Since this is vector data in text format, we need to follow specific steps ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-csv-data-in-qgis)).
+5. Next, we want to load the file `Significant_earthquake_data.txt` into QGIS. Since this is vector data in text format, we need to follow specific steps ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-csv-data-in-qgis)).
     * Click on `Layer` → `Add Layer` → `Add Delimited text Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to `Significant_earthquake_data.txt` in the `data/input/`-subfolder. Select the file and click `Open`.
     * In the window "Data Source manager| Delimited Text" in QGIS open the dropdown menu `File Format` and check `Custom delimiter` and `Tab`.
     * Open the dropdown menu `Geometry definition`. Make sure the option `Point coordinates` is checked. Furthermore, select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.

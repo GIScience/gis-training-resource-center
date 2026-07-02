@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -56,11 +56,11 @@ __Estimated time demand for the exercise:__
 __Relevant Wiki articles:__
 ^^^
 
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Attribute Table in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.md)
-* [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)
+* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html)
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
+* [Attribute Table in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.md)
+* [Projections](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html)
 <!-- FIXME: to be updated -->
 
 :::
@@ -75,7 +75,7 @@ __Prepare the training:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
 __Conduct the training:__
 

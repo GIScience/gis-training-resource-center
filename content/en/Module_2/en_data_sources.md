@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -113,11 +113,11 @@ The data to create maps or perform GIS analyses can come from various sources (S
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
+There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
 
 :::{Tip}
 
-If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)__
+If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_data_sources_ex4.html)__
 
 :::
 
@@ -155,7 +155,7 @@ __QuickOSM Plugin__
 
 :::{tip}
 
-It is by default possible to add the OSM base map to your project.  Click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
+It is by default possible to add the OSM base map to your project.  Click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
 
 :::
 
@@ -215,7 +215,7 @@ Running the QuickOSM plugin.
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](../../../fig/plus_quickosm.png). Be careful choosing the right logical operator 
 `AND` or `OR`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
-on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_data_sources_ex2.html#task-quickosm)
+on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/english/content/en/module_2/en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::
 

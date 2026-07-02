@@ -83,7 +83,7 @@ Contributors are encouraged to upload videos for step-by-step guides where usefu
 Follow these guidelines for naming files and structuring directories: 
 
 - __Naming:__ Choose descriptive names. Ensure that exercises are numbered correctly (e.g. `module_#_ex#_title`). The exercise number should be the next available number
-- __Folder Structure:__ Ensure that exercise data follows the [correct folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) and is zipped correctly (avoid excessive folder nesting as this can lead to problems when unzipping)
+- __Folder Structure:__ Ensure that exercise data follows the [correct folder structure](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) and is zipped correctly (avoid excessive folder nesting as this can lead to problems when unzipping)
 - __Language and QGIS Version:__ Always include the QGIS version and language in the file names.
 - __Pictures:__ All pictures and figures have to be stored in the folder `../../../fig/`.
     - General common pictures just have to have a sort and informative title.
@@ -205,7 +205,7 @@ CAPTION
 - __Text formatting standards:__
     - When describing a process, use numbers. For example:
         ```
-        1. Right-click on "ML1_IPC_Index" layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](../../../fig/mActionCalculateField.png) to open the field calculator
+        1. Right-click on "ML1_IPC_Index" layer -> `Attribute Table`-> click on  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](../../../fig/mActionCalculateField.png) to open the field calculator
         2. Check `Create new field`
         3. `Output field name`: Name the new column “Trigger_activation”
         4. `Result field type`: Text (string)
@@ -214,4 +214,4 @@ CAPTION
     - If a special icon is used in QGIS, place it next to the code snippets e.g `Field Calculator` ![](../../../fig/icon_scratch_layer.png).
     - If an option needs to be selected, write the click surface name in code snippet and the option as normal text e.g. `Result field type`: Text (string)
     - If something like a file name has to be named in a certain way use quotation marks e.g. `Output field name`: Name the new column “Trigger_activation”
-    - Where it makes sense add the link to the relevant wiki video when the participants should use a tool or a functionality that is not in detail described in your current step-by-step guide either by linking the tool name e.g. [drag and drop](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) or by using something like ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html))
+    - Where it makes sense add the link to the relevant wiki video when the participants should use a tool or a functionality that is not in detail described in your current step-by-step guide either by linking the tool name e.g. [drag and drop](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) or by using something like ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html))

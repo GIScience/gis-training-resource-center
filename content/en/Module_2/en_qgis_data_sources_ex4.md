@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -21,7 +21,7 @@ file into QGIS. We will use the [HOT Export Tool](https://export.hotosm.org/v3/)
 :::{grid-item-card}
 __Larkana Flood Response Exercise Track__
 
-This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)
+This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_larkana_flood_response.html)
 
 :::
 
@@ -102,7 +102,7 @@ Instead download the __standard folder structure__ [here](https://nexus.heigit.o
 
 ## Tasks <a id="tasks"></a>
 
-OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over the [HOT Export Tool](https://export.hotosm.org/v3/). [At the bottom of this exercise](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html#alternative-tools), you can find a list of alternative tools.
+OpenStreetMap (OSM) is a collaborative, open-source project that creates free, editable maps of the world, built by a global community of mappers. There are multiple different ways how to download or export data from OpenStreetMap (OSM), each with it's own advantage. In this exercise, we will go over the [HOT Export Tool](https://export.hotosm.org/v3/). [At the bottom of this exercise](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_data_sources_ex4.html#alternative-tools), you can find a list of alternative tools.
 
 ### Using the HOT Export Tool <a id="using-the-hot-export-tool"></a>
 
@@ -177,7 +177,7 @@ In the next exercise of the Larkana Flood Response Exercise track, we want to id
 
 ::::
 
-4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#vector-data-import).
+4. [Import the new file into your QGIS project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#vector-data-import).
 5. Arrange the layers on the map so you can see the new layer.
 6. (optional) Use the classification function to get a better overview to get a better 
    overview:
@@ -203,7 +203,7 @@ access to OSM data.
 
 :::::{tip}
 
-The HOT Export Tool is a good way to export tailored OSM data for your personal use. However, in some use cases, you might want to choose a different tool such as Geofabrik, QuickOSM, or even just the humanitarian data exchange website. Below, you can find a short description of the tool and it's advantages. You can find out how to use the different tools step by step on [this wiki page](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html).
+The HOT Export Tool is a good way to export tailored OSM data for your personal use. However, in some use cases, you might want to choose a different tool such as Geofabrik, QuickOSM, or even just the humanitarian data exchange website. Below, you can find a short description of the tool and it's advantages. You can find out how to use the different tools step by step on [this wiki page](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_OpenStreetMap_wiki.html).
 
 ::::{dropdown} Geofabrik, QuickOSM, HDX
 
@@ -231,7 +231,7 @@ You will need to formulate a data query to find the data that you are looking fo
    [Map features](https://wiki.openstreetmap.org/wiki/Map_features) article. 
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
+This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html). 
 
 | Advantages                                     | Disadvantages                                 |
 |------------------------------------------------|-----------------------------------------------|

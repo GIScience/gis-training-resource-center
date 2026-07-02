@@ -187,7 +187,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 ```{Tip}
-If you like to learn more about the [visualisation](/content/Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex5_.html).
+If you like to learn more about the [visualisation](/content/Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex5_.html).
 ```
 
 :::{dropdown} Option A: Open your results in QGIS
@@ -203,12 +203,12 @@ If you like to learn more about the [visualisation](/content/Module_4/en_module_
 
     For a better overview and orientation, it is always helpful to add a basemap to your project and put your situation in a spatial context. Navigate to the browser `Browser` Panel > `XYZ Tiles`, and open the dropdown by clicking on it. Next, select OpenStreetMap or another basemap.
 
-    Click [here](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
+    Click [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
 
 2. __Load your results in QGIS__
 
     - First, unzip the folder you downloaded from the Sketch Map Tool website. In it, you will find a vector file (`geojson`) and a raster file (`geotiff`, `tiff`, or `tif`).
-    - Load both files into QGIS by dragging them onto QGIS. Be aware which files are at the top, because you might not be able to see the layers which are below. If it is your first time using QGIS, take your time to familiarise yourself with the [QGIS interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html).  
+    - Load both files into QGIS by dragging them onto QGIS. Be aware which files are at the top, because you might not be able to see the layers which are below. If it is your first time using QGIS, take your time to familiarise yourself with the [QGIS interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html).  
     - Take a look at the detected markings, compare it with your map. Which differences can you see? Are some markings missing in the Sketch Map Tool results?
 
 :::

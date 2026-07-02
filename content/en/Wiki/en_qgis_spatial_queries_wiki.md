@@ -9,7 +9,7 @@ __🔙[Back to Homepage](/content/intro.md)__
 - Select features individually by clicking on a feature.
 - To select several features, you can press and hold <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> on MacOS) and select one feature after the other. 
 - Selected features will be highlighted in bright yellow. 
-- If you open the [attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html), the selected feature will appear in blue.
+- If you open the [attribute table](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html), the selected feature will appear in blue.
 
 
 

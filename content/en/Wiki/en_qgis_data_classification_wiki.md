@@ -17,8 +17,8 @@ align: center
 
 QGIS offers several ways to classify geodata:
 
-- [Single-symbol classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html)
-- [Categorised classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorised_wiki.html)
-- [Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)
+- [Single-symbol classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_single_symbol_wiki.html)
+- [Categorised classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_categorised_wiki.html)
+- [Graduated Classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_graduated_wiki.html)
 
 

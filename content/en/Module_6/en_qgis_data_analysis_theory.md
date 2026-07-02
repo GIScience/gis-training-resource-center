@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -129,7 +129,7 @@ Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi,
 
 Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.
 
-These geometrical attributes can be calculated using the [__field calculator__](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field) or the processing tool __"Add geometry attributes"__. 
+These geometrical attributes can be calculated using the [__field calculator__](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_non_spatial_tools.html#calculate-field) or the processing tool __"Add geometry attributes"__. 
 
 The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:
 

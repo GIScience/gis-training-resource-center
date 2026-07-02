@@ -13,7 +13,7 @@ Due to a cholera outbreak in Khyber Pakhtunkhwa, the Pakistan Red Crescent Socie
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex3.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_data_sources_ex3.html
 __Module 2 Exercise 3: Data Sources__
 ^^^
 
@@ -23,7 +23,7 @@ __Module 2 Exercise 3: Data Sources__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_data_sources_ex4.html
 __Module 2 Exercise 4: Exporting OSM Data__
 ^^^
 - Export OSM Data using the HOT Export Tool
@@ -33,7 +33,7 @@ __Module 2 Exercise 4: Exporting OSM Data__
 
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex5.html
 __Module 3 Exercise 5: Larkana Flood Response__
 ^^^
 
@@ -48,7 +48,7 @@ __Module 3 Exercise 5: Larkana Flood Response__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex2.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I_ex2.html
 __Module 4 Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan__
 ^^^
 
@@ -62,7 +62,7 @@ __Module 4 Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_ex4.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_module_5_ex4.html
 __Module 5 Exercise 3: Security in Peshwar, Pakistan__
 
 - Using the QuickMapServices plugin

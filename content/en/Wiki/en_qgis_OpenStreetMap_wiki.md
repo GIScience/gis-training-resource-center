@@ -26,7 +26,7 @@ The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM
 7. Load the file `gis_osm_buildings_a_free_1.shp`. This polygon 
    layer contains all buildings in Mauritius mapped on OSM. Take some time 
    to explore the layer. 
-8. Add a satellite base map by using the [QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin) 
+8. Add a satellite base map by using the [QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin) 
    to check if there are unmapped buildings. 
 8. Load the file `gis_osm_landuse_a_free_1.shp`. Check out the 
     dataset and use the classification function to get a better overview.
@@ -52,7 +52,7 @@ You will need to formulate a data query to find the data that you are looking fo
    [Map features](https://wiki.openstreetmap.org/wiki/Map_features) article. 
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html). 
+This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html). 
 
 ## Overpass Turbo <a id="overpass-turbo"></a>
 

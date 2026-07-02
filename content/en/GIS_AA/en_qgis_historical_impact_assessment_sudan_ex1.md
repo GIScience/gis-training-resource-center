@@ -14,7 +14,7 @@ To analyse the data in QGIS is just one thing you can do with a HIA dataset. The
 
 ## Data sources <a id="data-sources"></a>
 Download the training data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)__ and save it on your PC. Unzip the .zip file!
-The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 # Tasks <a id="tasks"></a>
 
@@ -787,7 +787,7 @@ If you want to use the data from the „task_6“ folder, your principal task is
 4. **Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):**
    - Check if all administrative units are correctly categorized.
    - Ensure that there are no misspelled or inconsistent administrative unit names.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
 
 5. **Impact Type Column:**
    - Check if all impact types are correctly categorized and named.
@@ -920,7 +920,7 @@ name: HIA_join
 Join the table information onto the geodata
 ```
 
-3. Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option `Graduated` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)).
+3. Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option `Graduated` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_graduated_wiki.html)).
     1. Right-click on the layer “Sudan_admin1_impact_quantity” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     2. On the top you find a dropdown menue. Open it and choose `Graduated`.
     3. Under `Value` select “Houses_damaged_totally”.

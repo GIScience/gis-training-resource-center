@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -244,7 +244,7 @@ polygons (see [Module 5](/content/Module_5/en_qgis_non_spatial_tools.md)).
 We will be using the same layer as for the choropleth map (see {numref}`en_map_design_example_variable_ranges`): 
 `NGA_Adm1_Pop`.
 
-1. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`en_3.36_m4_centroids`).
+1. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), search for the tool `centroids`. <kbd>Double-Click</kbd> on it. A new window will open (see {numref}`en_3.36_m4_centroids`).
 
 :::{figure} ../../../fig/en_3.36_m4_centroids.png
 ---

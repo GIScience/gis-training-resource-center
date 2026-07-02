@@ -1,6 +1,6 @@
 # How to generate Risk Indicators <a id="how-to-generate-risk-indicators"></a>
 
-To conduct a meaningful risk assessment with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html), it is essential to prepare input indicator files that represent the three main dimensions:
+To conduct a meaningful risk assessment with the [Risk Assessment QGIS Plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_risk_assessment_plugin.html), it is essential to prepare input indicator files that represent the three main dimensions:
 
 - **Exposure** (mandatory)
 - **Vulnerability** (mandatory)

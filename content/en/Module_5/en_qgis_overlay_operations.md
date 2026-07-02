@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -128,7 +128,7 @@ If...
 - Your layer(s) don't show up
 - Layers look odd ‒ e.g. squashed
 - Error message "using degrees" when using distances (as shown in {numref}`dist_degree_error_message`)
-... it might be a [projection](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html) issue.
+... it might be a [projection](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_projections.html) issue.
 
 To solve it, try...
 

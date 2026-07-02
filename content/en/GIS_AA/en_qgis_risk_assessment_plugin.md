@@ -56,7 +56,7 @@ To install plugins, you need to open the Plugin Manager:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video>
 
 
-For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html).
+For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html).
 
 
 ## User Interface <a id="user-interface"></a>
@@ -107,7 +107,7 @@ b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "AD
 
 c) __Coping Capacity indicators [optional]:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
-Further information can be found in the [How to generate Risk Indicators](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_generate_indicators_for_plugin.html) chapter. 
+Further information can be found in the [How to generate Risk Indicators](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_generate_indicators_for_plugin.html) chapter. 
 
 ```{figure} ../../../fig/mada_coping.png
 ---
@@ -284,7 +284,7 @@ In general, many input files are required to use the plugin, which makes it high
 
 ## Support & Ressources <a id="support-and-ressources"></a>
 
-[HeiGIT QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)
+[HeiGIT QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html)
 
 [Weltrisikoindex](https://weltrisikobericht.de/)
 

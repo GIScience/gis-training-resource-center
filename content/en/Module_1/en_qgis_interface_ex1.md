@@ -69,7 +69,7 @@ name: QGIS User Interface
 QGIS User Interface.
 ```
 
-3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
+3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
 
 :::{tip}
 

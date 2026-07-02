@@ -36,7 +36,7 @@ Before you plan your training, you need to make some basic decisions about the s
 
 ## 2. Planning <a id="2-planning"></a>
 
- You can use the platform's modular structure and the [skill levels](https://giscience.github.io/gis-training-resource-center/content/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
+ You can use the platform's modular structure and the [skill levels](https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
 
 - Define the learning objectives in detail and communicate them at the beginning of the training. Organizing the material is easier if you know what you want to achieve. The participants need to know what they are expected to learn and where they are during the training process.
 - When planning the structure of your training, you can use the sample structure as a guide, but you can also adapt it to the specific needs of your participants. If possible, use material and exercises that are related to the participant’s background.
@@ -86,9 +86,9 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         QGIS installation  
         QGIS interface  
     - 
-        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_interface_ex1.html)
+        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_interface_ex1.html)
     - 
-        [QGIS Basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html)
+        [QGIS Basics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_qgis_basics_wiki.html)
 *   - __Module 2: Working with Geodata__
     - 
         Introduction to geodata (vector and raster data)  
@@ -99,28 +99,28 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Data sources  
         Attribute table
     - 
-        [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html)  
-        [Exercise 2: The World](https://giscience.github.io/gis-training-resource-center/content/Modul_2/en_qgis_modul_2_ex_1.html)  
+        [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept_ex1.html)  
+        [Exercise 2: The World](https://giscience.github.io/gis-training-resource-center/english/content/en/Modul_2/en_qgis_modul_2_ex_1.html)  
     - 
-        [Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)  
-        [Projections](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)  
-        [Basemaps](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)  
-        [Data sources](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)  
-        [Plugins](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)  
+        [Geodata](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geodata_wiki.html)  
+        [Projections](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html)  
+        [Basemaps](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html)  
+        [Data sources](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_data_sources_wiki.html)  
+        [Plugins](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html)  
 *   - __Module 3: Basic GIS operations__
     - 
         Digitization  
         Geodata selection and queries  
         Geodata classification  
     - 
-        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation_ex.html)  
-        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_classification_exe.html)  
+        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitisation_ex.html)  
+        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_classification_exe.html)  
         Big Exercise: 
-        [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)  
+        [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex4.html)  
     - 
-        [Digitization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html)  
-        [Geodata classification](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)  
-        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html) 
+        [Digitization](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html)  
+        [Geodata classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_data_classification_wiki.html)  
+        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_queries_wiki.html) 
 *   - __Module 4: Representation__
     - 
         Graphic semiology  
@@ -131,10 +131,10 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Map composition   
         Atlas function
     - 
-        [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex2.html)   
+        [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I_ex2.html)   
     - 
-        [Visualization](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_visualisation_wiki.html)  
-        [Map making](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html)  
+        [Visualization](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_visualisation_wiki.html)  
+        [Map making](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html)  
 *   - __Module 5: Intermediate GIS operations__
     -   Spatial and non-spatial geoprocessing    
         Clip  
@@ -147,17 +147,17 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Non-spatial queries
         Non-spatial joins  
     - Spatial Geoprocessing:  
-        [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools_ex1.html)  
-        [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools_ex2.html)  
+        [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools_ex1.html)  
+        [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools_ex2.html)  
     Non-spatial geodataprocessing:  
-        [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools_ex1.html)  
-        [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools_ex2.html)  
+        [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_non_spatial_tools_ex1.html)  
+        [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_non_spatial_tools_ex2.html)  
     Big exercise:  
-        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_ex2.html)  
+        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_module_5_ex2.html)  
     - 
-        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_queries_wiki.html)  
-        [Table functions](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html)  
-        [Geoprocessing](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html)  
+        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_queries_wiki.html)  
+        [Table functions](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html)  
+        [Geoprocessing](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html)  
 
 :::
 

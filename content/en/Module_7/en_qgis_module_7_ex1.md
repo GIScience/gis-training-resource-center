@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,12 +44,12 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
+* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automation_wiki.html)
+* [Automation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automation_wiki.html)
 
 :::
 
@@ -75,7 +75,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -160,7 +160,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
+3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -123,7 +123,7 @@ The GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contains administra
 :::{admonition} Folder structure
 :type: hint
 
-Keep your data management clean by creating a [standard folder structure](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) on your computer for your QGIS-projects and geodata. 
+Keep your data management clean by creating a [standard folder structure](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) on your computer for your QGIS-projects and geodata. 
 The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project.
 
 :::
@@ -203,7 +203,7 @@ Screenshot of the export window.
 
 :::{Note}
 
-Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to [CRS conflicts](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.
+Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to [CRS conflicts](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.
 
 :::
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -143,7 +143,7 @@ Numerical Labels
 ---
 name: labels_graduated_symbology_example
 ---
-[Graduated Symbology](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification)
+[Graduated Symbology](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#graduated-classification)
 :::
 
 ::::

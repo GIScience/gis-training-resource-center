@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,9 +13,9 @@
 __Larkana flood response exercise track:__
 ^^^
 
-This exercise is the fourth part of the [Larkana flood response exercise track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html). 
+This exercise is the fourth part of the [Larkana flood response exercise track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_larkana_flood_response.html). 
 
-The previous exercise can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html)
+The previous exercise can be found [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex5.html)
 
 :::
 :::{grid-item-card}
@@ -75,7 +75,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
 
-- You have created the data for Larkana in [Module 3 Exercise 5](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
+- You have created the data for Larkana in [Module 3 Exercise 5](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
 - __In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Save the folder on your computer an unzip the file.
 :::
 
@@ -84,7 +84,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | Health_Facilities_Flood_2024_AOI.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | PAK_2024_Minimum_Flood_Extend_reprojected.gpkg | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
-| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html) | 
+| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex2.html) | 
 
 
 <!--FIX: add all datasets used in this exercise to the table-->
@@ -108,7 +108,7 @@ Keep your data management clean by creating a standard folder structure on your 
 
 4. Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 
-5. [Add a basemap](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps):
+5. [Add a basemap](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps):
     - Navigating to the menu bar → `Layer` → `Add Layer` → `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
 
 
@@ -122,7 +122,7 @@ In the layers panel:
 - put the roads and flood extent layers in the middle,
 - and put the point layers (healthsites and blocked roads) to the top.
 
-Each layer has it's own [symbology panel](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel) where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out. 
+Each layer has it's own [symbology panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel) where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out. 
 For example, the layer `Roads_Larkana` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
 Let's go through the layers one by one and visualize them in a meaningful way.
@@ -243,7 +243,7 @@ If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolba
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
@@ -261,7 +261,7 @@ If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolba
 
 Let's symbolise the airport with a plane icon, so we can identify it quickly.  
 
-* Right-click on the layer __"PAK_airports"__ in the `Layer Panel` → `Properties`. A new window ill open up with a vertical tab section on the left. Navigate to the [`Symbology`-tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+* Right-click on the layer __"PAK_airports"__ in the `Layer Panel` → `Properties`. A new window ill open up with a vertical tab section on the left. Navigate to the [`Symbology`-tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel).
 * Click on `Simple Marker`.
 * Under `Symbol layer type`, select __SVG-Marker__.
 * Scroll down a bit and you will find a box with all the SVG-symbols available.
@@ -301,7 +301,7 @@ Creating a new print layout.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
 
-2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
 
 3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
 

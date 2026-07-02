@@ -69,7 +69,7 @@ The print layout composer is a separate QGIS window where you can design a print
 1. First, we need to create a new print layout:
     - Top menu: `Project` → `New Print Layout…` 
     - Name it: **Health_Facilities_Capacity_Map**
-    - A new window will open, this is the [print layout composer](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html). Take the time to  [understand the interface and the different tools](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html).
+    - A new window will open, this is the [print layout composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html). Take the time to  [understand the interface and the different tools](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_understanding_print_layout.html).
 
 2. Adding a new map frame:
     - Select `Add Map` ![](../../../fig/30.30.2_print_layout_insert_map_icon.png) from the toolbar on the left.

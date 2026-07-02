@@ -38,7 +38,7 @@ This section should only take between 15 and 30 minutes. If it takes longer, con
 
 In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article __[How to teach GIS](/content/Trainers_corner/en_how_to_teach_GIS.md)__.
 
-Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Module 1 - Introduction GIS](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theorie.html) on the training platform covers this topic.
+Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. [Module 1 - Introduction GIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_theorie.html) on the training platform covers this topic.
 
 There’s no prescribed method for delivering this content. You can utilize PowerPoint presentations or any other suitable means. By the end of the session, the participants should grasp the basic concept of GIS and be able to identify the main features of the interface along with their functions. Exploring the interface can be accomplished hands-on, while the GIS concept part is more suitable for presentation.
 

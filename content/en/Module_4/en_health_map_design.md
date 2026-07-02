@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -170,7 +170,7 @@ Why these ranges?
 - Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class. 
-(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification))
+(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#graduated-classification))
 ```
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>

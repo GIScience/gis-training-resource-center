@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -27,7 +27,7 @@ understanding of where and how to access relevant data, and identify potential p
 __Larkana Flood Response Exercise Track__
 ^^^
 
-This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html).
+This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_larkana_flood_response.html).
 
 :::
 
@@ -60,7 +60,7 @@ __Relevant Wiki articles and module chapters__
 * [Geodata Import in QGIS](/content/Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.md)
 * [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.md)
-* [Data Sources](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html)
+* [Data Sources](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_data_sources.html)
 
 :::
 
@@ -139,7 +139,7 @@ Now that we have the QGIS project set up, we can start looking for the datasets
 
 :::{dropdown} Possible data sources
 
-There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources [here](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_data_sources.html).
+There are many different data repositories on the web where you can find suitable data. You can find a list of possible data sources [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_data_sources.html).
 
 For most humanitarian data, you can search on the __[Humanitarian Data Exchange/HDX](https://data.humdata.org/)__
 The Humanitarian Data Exchange (HDX) is a primary platform for accessing and sharing geospatial data relevant to humanitarian crises. It's a centralized repository offering a wide range of datasets from various sources, making it an invaluable resource for aid organizations and researchers.
@@ -169,7 +169,7 @@ Most of the times, the datasets you download from the web are compressed as `.zi
 :::
 ::::
 
-6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept.html#data-import).
+6. [Load both vector files into QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html#data-import).
 
 
 7. Now add the OpenStreetMap basemap via the browser window → `XYZ Tiles`. Adding basemaps can help you orient yourself, gain a better understanding of the area of interest, and create more informative maps. 

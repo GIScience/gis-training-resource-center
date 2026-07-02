@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -254,7 +254,7 @@ Practical experience is key to mastering GIS. Now is a good moment to apply what
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept_ex1.html
 
 __Module 2 Exercise 1: Understanding Geodata__
 

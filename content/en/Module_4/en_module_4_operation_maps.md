@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -10,9 +10,9 @@
 
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
-- [Health Facility Capacity Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
-- [3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#w-map-who-what-where)
-- [Epidemiological Overview Map](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_module_4_operation_maps.html#epidemological-overview-map)
+- [Health Facility Capacity Map](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
+- [3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_operation_maps.html#w-map-who-what-where)
+- [Epidemiological Overview Map](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_operation_maps.html#epidemological-overview-map)
 
 ## Health Facility Capacity Map: Visualising with multi-variable point symbols <a id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols"></a>
 
@@ -175,7 +175,7 @@ Why these ranges?
 - Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class. 
-(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification))
+(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#graduated-classification))
 :::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
@@ -794,7 +794,7 @@ Add labels and logos where needed, but avoid cluttering the map with unnecessary
 :::
 
 :::{note}
-All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)
+All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_understanding_print_layout.html)
 :::
 
 :::{figure} ../../fig/4.8_3W_own_example.png
@@ -1058,7 +1058,7 @@ name: infection map example
 :::
 
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html).
 
 
 
@@ -1136,6 +1136,6 @@ name: label placement
 ---
 :::
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_map_making_wiki.html).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html).
 
 

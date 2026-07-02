@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,13 +13,13 @@ The aim of this exercise is to gain a basic understanding of working with raster
 
 ### Relevant Wiki Articles <a id="relevant-wiki-articles"></a>
 
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)
-* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Attribute table](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)
-* [Table function - Add field](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)
-* [Raster basics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.md)
+* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html)
+* [Types of Geodata](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geodata_types_wiki.html)
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
+* [Attribute table](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html)
+* [Table function - Add field](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#add-field)
+* [Raster basics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.md)
 
 
 
@@ -44,11 +44,11 @@ __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_
 ### Tasks 1 <a id="tasks-1"></a>
 Our first goal is to get a proper overview over the datasets and get familiar with the different visualisation options for raster data and how to ideally use them.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`. Set your Project CRS to "WGS 84 / UTM zone 43N".
+1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`. Set your Project CRS to "WGS 84 / UTM zone 43N".
 
 2. Once the project is created save the project in the “project” folder of the “Ex_Pakistan_floodrisk”. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Pakistan_floodrisk”.
 
-3. Import the GeoPackages `Pakistan_admin.gpkg` and the rasters `Pakistan_DEM_1km.tif`, `Pakistan_pop_dens_1km.tif` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). 
+3. Import the GeoPackages `Pakistan_admin.gpkg` and the rasters `Pakistan_DEM_1km.tif`, `Pakistan_pop_dens_1km.tif` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). 
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`
 
 ```{Attention}
@@ -180,7 +180,7 @@ Now as you have gained a proper understanding of the fundamental visualisation o
 
 You will conduct a basic analysis of flood exposure in the Indus river basin in Pakistan based on the raster layers you already worked with and further datasets.
 
-1. Import the Shapefiles `Pakistan_floodextents_2023.shp` and `Pakistan_indusbasin_streams` as well as the raster `Pakistan_precip.tif` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). 
+1. Import the Shapefiles `Pakistan_floodextents_2023.shp` and `Pakistan_indusbasin_streams` as well as the raster `Pakistan_precip.tif` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). 
 Or by clicking `Layer`-> `Add Layer`-> `Add Vector Layer`/ `Add Raster Layer`.
     - The layer `Pakistan_indusbasin_streams` contains line geometries of the main streams of the Indus basin of Pakistan which experienced multiple devastating floods in the last decades.
     - The layer contains a multi polygon geometry of the mapped flood extent of the recent 2023 flood.
@@ -270,7 +270,7 @@ Raster of Population density in flooded areas
 Now we have reached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate raster data on the level of administrative units. 
 
 6. We will achieve this with our produced dataset on the admin 2 level  (districts) in Pakistan by calculating the total population affected by floods per district.
-    1. Open the tool `Zonal Statistics` ([Wiki Article](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html##zonal-statistics)) from your Processing Toolbox Panel.
+    1. Open the tool `Zonal Statistics` ([Wiki Article](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html##zonal-statistics)) from your Processing Toolbox Panel.
     2. As "Input Layer" choose the layer "Pakistan_admin2" with the polygons of administrative districts.
     3. As "Raster Layer" choose "Pop_floodextent".
     4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. Choose "pop_" as "Output column prefix".

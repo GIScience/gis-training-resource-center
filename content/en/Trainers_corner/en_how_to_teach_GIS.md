@@ -74,7 +74,7 @@ Group exercises rely more on the independent work of the trainees. This is great
 Independent from the type of exercise, you should briefly go over the following points with the trainees at the beginning of the exercise:
 
 1. __Aim of the exercise:__ In general, a hands-on exercise should start with explaining the goal of the exercise. For example: _„This exercise aims to teach the process of basic spatial data processing using the tools Clip, Merge and dissolve."_ This is a good opportunity to highlight the practical use of the tools the participants will learn to boost motivation.
-2. __Background:__ Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise in module 3 ([Exercise 4: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)).
+2. __Background:__ Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise in module 3 ([Exercise 4: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex4.html)).
 3. __Exercise Data:__  Most hands-on exercises use real-world data (from [HDX](https://data.humdata.org), for example). Each dataset used in the exercise should be explained shortly. This information can be found on each exercise on the platform. Make sure that everybody has downloaded the exercise data before you start. Note that some trainees are not familiar with `zip.` files. Make sure the trainees unzip the folders before trying to import them into QGIS and take the time to solve any other issues concerning the exercise data.
 
 ### During the exercise: Follow-along <a id="during-the-exercise-follow-along"></a>
@@ -120,7 +120,7 @@ Incorporating discussions and group work into GIS training sessions can create d
 
 In the fast-paced world of humanitarian aid, time is a precious commodity, and the need to assist those in need directly is paramount. The motivation of trainees is highly dependent on them seeing the value GIS can bring to their daily work. That is why we always should work with real-life examples, data and exercises. Abstract exercises are not as effective as real-world ones as trainees will not understand the relevance of the methods and workflows in the exercise.
 
-This topic is reflected on the whole platform. The principal section dealing with the topic is "[Module 1: Examples of GIS used by humanitarian organisations](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations)".
+This topic is reflected on the whole platform. The principal section dealing with the topic is "[Module 1: Examples of GIS used by humanitarian organisations](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations)".
 
 Nearly all exercises are oriented on methods, workflows or products that are standard in the humanitarian sector like overview maps or maps of affected regions. 
 

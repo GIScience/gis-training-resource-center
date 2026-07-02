@@ -145,7 +145,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 
 ### Task 3: Importing the datasets <a id="task-3-importing-the-datasets"></a>
 
-1. In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
+1. In your QGIS, project, [import the following datasets](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) via drag-and-drop:
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
@@ -166,7 +166,7 @@ A shapefile consists of several, interrelated files. The geometric information i
 %% THE FOLLOWING SECTION IS NOT NEEDED THEN?
 
 <!--
-4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import):
+4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#text-data-import):
     - In the top bar, click on `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open. Here we need to specify the file, the file format and define the geometry information
     - To the right of the `File name`-field, click on the ![](../../../fig/Three_points.png) three points to open the file browser. 
     - Navigate to the data input folder and select the file `hotosm_tcd_health_facilities_points.csv`. Click `Open`.
@@ -228,7 +228,7 @@ Holding <kbd>Space</kbd> automatically switches to the ![](../../../fig/qgis_pan
 
 %% ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
-In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
+In our `data/input`-folder, we can find a csv file called `vaccination_coverage_adm2`. This file includes the vaccination coverage of both the mcv1 and mcv2 vaccine. Thankfully, the dataset includes the district name (`amd2_name`) and the adm2 pcode. With this information, we can perform a [non-spatial join](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_non_spatial_joins_wiki.html) in order to add the vaccination coverage data to our district boundaries layer (adm2). 
 
 :::{attention}
 Admin Pcodes are well suited for non-spatial joins in QGIS because they provide unique, standardized identifiers that avoid name mismatches and ensure accurate, reliable data linking.
@@ -337,7 +337,7 @@ When performing joins, pay attention to such inconsistencies.
     - In the top bar, you can see how many entries the dataset contains (*148 features*)
     - The datatable includes a column called `name` which contains the name of the health facilities. These names are the same names that are also stored in the healthsites point layer we imported earlier.
     - This means that we can join both tables using the attribute values of the `name`-column.
-3. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars), search for the tool `Join attributes by field value` and open it by <kbd>double-clicking</kbd> on it. 
+3. In the [processing toolbox](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_start.html#toolbox-toolbars), search for the tool `Join attributes by field value` and open it by <kbd>double-clicking</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `hotosm_tcd_health_facilities_points_gpkg`.
     - Under "Table field", select `name`.

@@ -33,7 +33,7 @@ This content is designed for:
 - Use of QGIS for anticipatory decision support
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_cyclone_trigger_madagascar.html
 
 __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 

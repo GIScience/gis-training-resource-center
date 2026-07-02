@@ -29,7 +29,7 @@ width: 550 px
 5. `Geometry type`: Select the type of geometry you want to digitise: points, lines or polygons.
 ::::{margin}
 :::{tip}
-If you plan to perform distance-based calculation with the new dataset, make sure to use a __metric__ CRS. The units of measurements for the layer will be in meters and not degrees (see [Metric and Geographic Coordinate Reference Systems](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#metric-and-geographic-coordinate-reference-systems))
+If you plan to perform distance-based calculation with the new dataset, make sure to use a __metric__ CRS. The units of measurements for the layer will be in meters and not degrees (see [Metric and Geographic Coordinate Reference Systems](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_projections.html#metric-and-geographic-coordinate-reference-systems))
 :::
 ::::
 6. Select the CRS (Coordinate Reference System) you want to use for the new layer. By default it is set to the project CRS. If you want to change the CRS click on ![](../../../fig/mIconProjectionEnabled.png).

@@ -942,7 +942,7 @@ Independent of which tool you will use, here are some important points you have 
 4. **Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):**
    - Check if all administrative units are correctly categorized.
    - Ensure that there are no misspelled or inconsistent administrative unit names.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
 
 5. **Impact Type Column:**
    - Check if all impact types are correctly categorized and named.

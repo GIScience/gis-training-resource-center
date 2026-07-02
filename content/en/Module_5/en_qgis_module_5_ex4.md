@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -29,7 +29,7 @@ The exercise is split into __three tasks__:
 __Larkana Flood Response Exercise Track:__
 ^^^
 
-This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html). 
+This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_larkana_flood_response.html). 
 
 However, the exercise __can__ be done without completing the previous exercises.
 :::
@@ -59,10 +59,10 @@ __Estimated time demand for the exercise:__
 __Relevant wiki articles:__
 ^^^
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
+* [Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
+* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_categorized_wiki.html)
+* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 :::
 ::::
 
@@ -75,7 +75,7 @@ __Relevant wiki articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -130,7 +130,7 @@ Follow the steps below to install it.
 1. In the menu bar, click on `Plugins` → `Manage and Install Plugins…`
 2. Under `All`, search for “QuickMapServices” and click `Install Plugin`.
 
-For general plugin management in QGIS, see the [QGIS plugin installation guide](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins).
+For general plugin management in QGIS, see the [QGIS plugin installation guide](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins).
 
 After installing the plugin, we can add basemaps:
 
@@ -140,10 +140,10 @@ After installing the plugin, we can add basemaps:
 4. Add a roads layer to improve orientation:  
    `Web` → `QuickMapServices` → `Google` → `Google Road`.
 
-5. In the [Layers Panel](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery.
+5. In the [Layers Panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery.
 
 6. For easier navigation, make the satellite imagery transparent:
-   - Open the layer’s [Symbology tab](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+   - Open the layer’s [Symbology tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel).
    - Adjust the global opacity.
 
 
@@ -166,13 +166,13 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitissation.html#creating-new-datasets) to digitise point and polygon information. 
+8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitissation.html#creating-new-datasets) to digitise point and polygon information. 
 
 :::{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 
 :::
 
-9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
+9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
 
 10. Once you are done, make sure to save the edits to your layers by clicking on the ![](../../../fig/3.44_digitisation_save_edits.png) `Save Layer Edits`-button. 
 
@@ -184,13 +184,13 @@ The current SOP states that the sides of recent violent incidents are to be avoi
 {admonition} Reminder
 :class: seealso
 
-If you see a ![](../../../fig/3.44_caution_symbol.png)-symbol next to the `Distance` parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in __degrees, and not in meters__. If that is the case, you need to [reproject your layer](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) into a metric coordinate reference system. 
+If you see a ![](../../../fig/3.44_caution_symbol.png)-symbol next to the `Distance` parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in __degrees, and not in meters__. If that is the case, you need to [reproject your layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) into a metric coordinate reference system. 
 
 Tip: EPSG:32642 is an ideal CRS for Pakistan. 
 
 ::::
 
-6. [Create a buffer around the points](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html) of violent incidents with a distance of __2.000 meters__. 
+6. [Create a buffer around the points](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html) of violent incidents with a distance of __2.000 meters__. 
 
 7. We now have two polygon layers (the point buffers and the digitised areas). In order to visualise the No-Go Area in Peshwar, we can merge the polygons from both layers into a single layer with the tool `Merge vector layer` and select both layers we want to merge as inputs.
 
@@ -212,8 +212,8 @@ There are several clipping algorithms to be found in the toolbox. Make sure to c
 
 
 10. Let's do a quick symbolisation of the resulting layer so we can understand the information more easily:
-	- Open the [styling panel](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel) for the safe area.
-	- [Adjust the symbology](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons) for the layer so that the polygons are __semi-transparent and green__.
+	- Open the [styling panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel) for the safe area.
+	- [Adjust the symbology](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons) for the layer so that the polygons are __semi-transparent and green__.
 
 Congratulations! We now have a map to help the team on the ground stay safe. 
 
@@ -248,7 +248,7 @@ name: SVG Marker
 Create points from table.
 :::
 
-Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the [attribute table](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_attribute_table.html) and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:
+Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the [attribute table](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_attribute_table.html) and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:
 
 3. Import the layer `PAK_KP_admin_3.gpkg` from your `data/input`-folder into your QGIS-project. 
 4. We want to count the number of conflict events per thesil (subdistrict/ADM3). To do this:
@@ -313,7 +313,7 @@ This can help us understand the economic and social vulnerability geographically
 	:::
 	
 2. Open QGIS and create a new project. Save the project in your project folder. 
-3. [Import the layers](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` and `Pak_adm2_Khyber Pakhtunkhwa.gpkg` to QGIS:
+3. [Import the layers](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` and `Pak_adm2_Khyber Pakhtunkhwa.gpkg` to QGIS:
 	* Drag and drop the ADM2-layer into your QGIS-window.
 	* To import the CSV-file, click on the `Layer` tab → `Add Layer` → `Add Delimited Text`.
 	* Browse for your __20240605_PAK_MPI.csv__ file. 
@@ -330,7 +330,7 @@ This can help us understand the economic and social vulnerability geographically
 	Load CSV file to QGIS
 	:::
 
-Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a [non-spatial join](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins) and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes. 
+Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a [non-spatial join](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools.html#spatial-joins) and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes. 
 
 So, we need to perform a non-spatial join using the P-Codes Columns as identifiers. To do this,
 

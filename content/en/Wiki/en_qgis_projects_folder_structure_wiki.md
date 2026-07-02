@@ -30,7 +30,7 @@ Do not use spaces ` ` in the name, instead always use underscores `_`.
 
 
 
-4. Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on [Projection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
+4. Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on [Projection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
 
 ### Check and change CRS/EPSG <a id="check-and-change-crsepsg"></a>
 

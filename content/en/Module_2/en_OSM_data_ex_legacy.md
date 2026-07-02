@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -134,7 +134,7 @@ The Geofabrik website offers downloads of OSM data by region.
 7. Load the file `gis_osm_buildings_a_free_1.shp`. This polygon 
    layer contains all buildings in Mauritius mapped on OSM. Take some time 
    to explore the layer. 
-8. Add a satellite base map by using the [QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin) 
+8. Add a satellite base map by using the [QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin) 
    to check if there are unmapped buildings. 
 8. Load the file `gis_osm_landuse_a_free_1.shp`. Check out the 
     dataset and use the classification function to get a better overview.
