@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_visualisation_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Visualisation <bpt id="1">&lt;a id="visualisation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualisation <bpt id="1">&lt;a id="visualisation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Visualising vector data <bpt id="1">&lt;a id="visualising-vector-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualising vector data <bpt id="1">&lt;a id="visualising-vector-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Symbology <bpt id="1">&lt;a id="symbology"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Symbology <bpt id="1">&lt;a id="symbology"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization methods</source>
+<target xml:lang="fr">QGIS offers various ways to visualize vector data. In the Symbology Tab, you can select between various symbolization methods</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Single-Symbol</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Single-Symbol</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Assigns one symbol to every feature of the dataset, no matter if the attributes are different.</source>
+<target xml:lang="fr">Assigns one symbol to every feature of the dataset, no matter if the attributes are different.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a hospital symbol to a layer that only contains points showing the location of hospitals.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a hospital symbol to a layer that only contains points showing the location of hospitals.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Categorized</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Categorized</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Classifies features into categories using an attribute (<ph id="1">`Value`</ph>).</source>
+<target xml:lang="fr">Classifies features into categories using an attribute (<ph id="1">`Value`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">A category is created for each unique value of this attribute.</source>
+<target xml:lang="fr">A category is created for each unique value of this attribute.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Each category can be assigned to a different symbol.</source>
+<target xml:lang="fr">Each category can be assigned to a different symbol.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">This can be used for nominal as well as ordinal data.</source>
+<target xml:lang="fr">This can be used for nominal as well as ordinal data.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a different symbol for each type of building (industrial, commercial, public, residential,...)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, assign a different symbol for each type of building (industrial, commercial, public, residential,...)</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Graduated</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Graduated</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Creates classes for numerical data.</source>
+<target xml:lang="fr">Creates classes for numerical data.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">A colour gradient can be selected to represent the distribution of the data</source>
+<target xml:lang="fr">A colour gradient can be selected to represent the distribution of the data</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, create 6 classes of population sizes and assign a color gradient from white to red to indicate the population size in a district.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Rule-based</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Rule-based</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Create rules using an expression and assign a symbol for the features where the rule applies.</source>
+<target xml:lang="fr">Create rules using an expression and assign a symbol for the features where the rule applies.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">You can specify more accurately the features you want to symbolize.</source>
+<target xml:lang="fr">You can specify more accurately the features you want to symbolize.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">You can use values from different attributes (e.g. building type and city district).</source>
+<target xml:lang="fr">You can use values from different attributes (e.g. building type and city district).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">The expression builder helps you create rules by displaying the available values, fields, operators, etc...</source>
+<target xml:lang="fr">The expression builder helps you create rules by displaying the available values, fields, operators, etc...</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, select a symbol for every health facility that is a hospital and has exceeded it's capacity.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For example<ept id="1">__</ept>, select a symbol for every health facility that is a hospital and has exceeded it's capacity.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Only display the outlines of polygons</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Only display the outlines of polygons</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">In this example, we want to change the symbology of a single layer so that <bpt id="1">__</bpt>only the outlines of the polygons are visible<ept id="1">__</ept>.</source>
+<target xml:lang="fr">In this example, we want to change the symbology of a single layer so that <bpt id="1">__</bpt>only the outlines of the polygons are visible<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">To change the symbology of a single layer:</source>
+<target xml:lang="fr">To change the symbology of a single layer:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Styling panel`</ph> and navigate to the symbology tab. By default, the symbology will be set to <ph id="2">`Single Symbol`</ph>. This means that the same colours and contours will be applied to all the features in that layer.</source>
+<target xml:lang="fr">Open the <ph id="1">`Styling panel`</ph> and navigate to the symbology tab. By default, the symbology will be set to <ph id="2">`Single Symbol`</ph>. This means that the same colours and contours will be applied to all the features in that layer.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Simple Fill`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Simple Fill`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Click on the arrow to the right of <ph id="1">`Fill Colour`</ph>.</source>
+<target xml:lang="fr">Click on the arrow to the right of <ph id="1">`Fill Colour`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Check the <ph id="1">`Transparent Fill`</ph> option.</source>
+<target xml:lang="fr">Check the <ph id="1">`Transparent Fill`</ph> option.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_vector_layer_styling_transparent_wiki</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_vector_layer_styling_transparent_wiki</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Change the styling for multiple overlayed layers</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Change the styling for multiple overlayed layers</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In this exercise, we will apply the same style to all features in a layer, but we will change multiple layers and overlay them so each is visible in a different style. We have the polygons for 3 administrative levels.</source>
+<target xml:lang="fr">In this exercise, we will apply the same style to all features in a layer, but we will change multiple layers and overlay them so each is visible in a different style. We have the polygons for 3 administrative levels.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_changing_layer_style_1_wiki</ph>
+<ph id="2">height: 400 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_changing_layer_style_1_wiki</ph>
+<ph id="2">height: 400 px</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Order the layers and navigate to the styling panel of the topmost layer
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Order the layers and navigate to the styling panel of the topmost layer
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Add the <ph id="1">`Adm0`</ph>, <ph id="2">`Adm1`</ph> and <ph id="3">`Adm2`</ph> shapefiles to your Session 2 project.</source>
+<target xml:lang="fr">Add the <ph id="1">`Adm0`</ph>, <ph id="2">`Adm1`</ph> and <ph id="3">`Adm2`</ph> shapefiles to your Session 2 project.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Order the layers so they are all visible: Put the <ph id="1">`Adm2`</ph> layer at the bottom, then the <ph id="2">`Adm1`</ph> then <ph id="3">`Adm0`</ph>. At first, this might look weird because <ph id="4">`Adm0`</ph> will cover everything.</source>
+<target xml:lang="fr">Order the layers so they are all visible: Put the <ph id="1">`Adm2`</ph> layer at the bottom, then the <ph id="2">`Adm1`</ph> then <ph id="3">`Adm0`</ph>. At first, this might look weird because <ph id="4">`Adm0`</ph> will cover everything.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab.</source>
+<target xml:lang="fr">Change the symbology of the Adm0 layer by opening the styling panel and navigating to the Symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_changing_layer_style_2_wiki</ph>
+<ph id="2">width: 350 px</ph>
+<ph id="3">align: left</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_changing_layer_style_2_wiki</ph>
+<ph id="2">width: 350 px</ph>
+<ph id="3">align: left</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Change the Fill type.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Change the Fill type.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Simple Fill`</ph> to open the style options.</source>
+<target xml:lang="fr">Click on <ph id="1">`Simple Fill`</ph> to open the style options.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Expand the <ph id="1">`Fill Colour`</ph> menu and check the <ph id="2">`Transparent Fill`</ph> option. This will make only the boundaries visible, so <bpt id="3">__</bpt>we will be able to see the layer under this one<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Expand the <ph id="1">`Fill Colour`</ph> menu and check the <ph id="2">`Transparent Fill`</ph> option. This will make only the boundaries visible, so <bpt id="3">__</bpt>we will be able to see the layer under this one<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Choose a <ph id="1">`Stroke Colour`</ph>, and make the <ph id="2">`Stroke Width`</ph> 0.66 Millimeters.</source>
+<target xml:lang="fr">Choose a <ph id="1">`Stroke Colour`</ph>, and make the <ph id="2">`Stroke Width`</ph> 0.66 Millimeters.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Click OK</source>
+<target xml:lang="fr">Click OK</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Repeat the same process<ept id="1">__</ept> for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Repeat the same process<ept id="1">__</ept> for the Adm1 layer, using the same colour as for Adm0 (it will be in "Recent colors) and leave the stroke width at 0.26.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</source>
+<target xml:lang="fr">Now we can see the boundaries of the country and its states, and behind that we can see the districts (Adm2).</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Lets make the district layer's style consistent with the others.</source>
+<target xml:lang="fr">Lets make the district layer's style consistent with the others.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br/></ph><ph id="2">&lt;br/></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br/></ph><ph id="2">&lt;br/></ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Choose a <ph id="1">`Fill Color`</ph></source>
+<target xml:lang="fr">Choose a <ph id="1">`Fill Color`</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <bpt id="1">__</bpt>Dash Line<ept id="1">__</ept></source>
+<target xml:lang="fr">Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a <bpt id="1">__</bpt>Dash Line<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Click OK and look at your map: hopefully it's starting to look nicer!</source>
+<target xml:lang="fr">Click OK and look at your map: hopefully it's starting to look nicer!</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_changing_layer_style_3_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_changing_layer_style_3_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">The styling of a vector data consists of the colour and the outline.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The styling of a vector data consists of the colour and the outline.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Use different styles in a single layer</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Use different styles in a single layer</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">We can use symbology to <bpt id="1">__</bpt>show the difference between features<ept id="1">__</ept> in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:</source>
+<target xml:lang="fr">We can use symbology to <bpt id="1">__</bpt>show the difference between features<ept id="1">__</ept> in the same layer. For example, it could be different types of buildings, quantities of Covid cases by district, or types of roads. We can choose a specific attribute of a dataset to assign different colors, outlines, or sizes to features:</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">From your shapefile folder, <bpt id="1">__</bpt>drag the ACLED security incidents shapefile onto your map<ept id="1">__</ept>.</source>
+<target xml:lang="fr">From your shapefile folder, <bpt id="1">__</bpt>drag the ACLED security incidents shapefile onto your map<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Symbology tab`</ph> for that layer and choose <ph id="2">`Categorized`</ph> instead of Single Symbol.<ph id="3">   </ph>
+<ph id="4">:::{note}</ph>
+Categorized symbology is used when you have <bpt id="5">*</bpt><bpt id="6">**</bpt>discrete<ept id="6">**</ept><ept id="5">*</ept> variables.
+<ph id="7">:::</ph></source>
+<target xml:lang="fr">Open the <ph id="1">`Symbology tab`</ph> for that layer and choose <ph id="2">`Categorized`</ph> instead of Single Symbol.<ph id="3">   </ph>
+<ph id="4">:::{note}</ph>
+Categorized symbology is used when you have <bpt id="5">*</bpt><bpt id="6">**</bpt>discrete<ept id="6">**</ept><ept id="5">*</ept> variables.
+<ph id="7">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_categorized_layer_symbology_1_wiki</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_categorized_layer_symbology_1_wiki</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Change the symbology type to "categorized" and choose the Value (variable) you wish to display.
+<ph id="1">:::</ph>
+3. Now we need to <bpt id="2">__</bpt>choose which attributes we want to display through the symbology<ept id="2">__</ept>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by <ph id="3">`event_type`</ph>.
+4. Click on <ph id="4">`Classify`</ph> to <bpt id="5">__</bpt>list all the unique values contained<ept id="5">__</ept> in the <ph id="6">`event_type`</ph> field (i.e. all the possible types of security incidents recorded in our table).
+5. Now we can <bpt id="7">__</bpt>change the style of each single value<ept id="7">__</ept>.
+6. Double click on the value <ph id="8">`Explosions`</ph>.
+7. At the bottom of the <bpt id="9">__</bpt>Symbol selector<ept id="9">__</ept> window, choose a symbol to make Explosion points stand out.
+8. Click on <ph id="10">`OK`</ph>, then Apply to preview what the layer will look like.
+9. Click <ph id="11">`OK`</ph> again.</source>
+<target xml:lang="fr">Change the symbology type to "categorized" and choose the Value (variable) you wish to display.
+<ph id="1">:::</ph>
+3. Now we need to <bpt id="2">__</bpt>choose which attributes we want to display through the symbology<ept id="2">__</ept>. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by <ph id="3">`event_type`</ph>.
+4. Click on <ph id="4">`Classify`</ph> to <bpt id="5">__</bpt>list all the unique values contained<ept id="5">__</ept> in the <ph id="6">`event_type`</ph> field (i.e. all the possible types of security incidents recorded in our table).
+5. Now we can <bpt id="7">__</bpt>change the style of each single value<ept id="7">__</ept>.
+6. Double click on the value <ph id="8">`Explosions`</ph>.
+7. At the bottom of the <bpt id="9">__</bpt>Symbol selector<ept id="9">__</ept> window, choose a symbol to make Explosion points stand out.
+8. Click on <ph id="10">`OK`</ph>, then Apply to preview what the layer will look like.
+9. Click <ph id="11">`OK`</ph> again.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_categorized_layer_symbology_2_wiki</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_categorized_layer_symbology_2_wiki</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">By double clicking on the <bpt id="1">__</bpt>unique values<ept id="1">__</ept> in the classified list, you can change the symbol for each value.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">By double clicking on the <bpt id="1">__</bpt>unique values<ept id="1">__</ept> in the classified list, you can change the symbol for each value.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</source>
+<target xml:lang="fr">Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_exercise_map_design_example_Nigeria_wiki</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_exercise_map_design_example_Nigeria_wiki</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Regions affected by explosions in Nigeria.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Regions affected by explosions in Nigeria.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Style data based on variable ranges ("<bpt id="2">__</bpt>Graduated<ept id="2">__</ept>" styling)</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Style data based on variable ranges ("<bpt id="2">__</bpt>Graduated<ept id="2">__</ept>" styling)</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.</source>
+<target xml:lang="fr">If a layer contains numeric values that are continuous, they can be organized in intervals. These intervals can be displayed in graduated colours. In this exercise, we assign colours to Adm1 polygons based on the total population of each State.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Download the NGA_Adm1_Pop shapefile <bpt id="1">[</bpt>link!!<ept id="1">]</ept> and save it in your shapefile folder.</source>
+<target xml:lang="fr">Download the NGA_Adm1_Pop shapefile <bpt id="1">[</bpt>link!!<ept id="1">]</ept> and save it in your shapefile folder.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.</source>
+<target xml:lang="fr">In QGIS, turn off the Adm1 and Adm2 layer, leaving only Adm0.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Drag the shapefile NGA_Adm1_Pop into your map.</source>
+<target xml:lang="fr">Drag the shapefile NGA_Adm1_Pop into your map.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Open its <ph id="1">`Symbology`</ph> options and choose <ph id="2">`Graduated`</ph>.</source>
+<target xml:lang="fr">Open its <ph id="1">`Symbology`</ph> options and choose <ph id="2">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Select the value you want to use to assign colours<ept id="1">__</ept>, in this case, it will be <ph id="2">`Population`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Select the value you want to use to assign colours<ept id="1">__</ept>, in this case, it will be <ph id="2">`Population`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_symbology_variable_ranges_wiki</ph>
+<ph id="2">width: 550px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_symbology_variable_ranges_wiki</ph>
+<ph id="2">width: 550px</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">With variable ranges, select <bpt id="1">__</bpt>Graduated<ept id="1">__</ept> symbology and choose the attribute with continuous values.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">With variable ranges, select <bpt id="1">__</bpt>Graduated<ept id="1">__</ept> symbology and choose the attribute with continuous values.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Classify`</ph> to <bpt id="2">__</bpt>list all values divided in classes<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Classify`</ph> to <bpt id="2">__</bpt>list all values divided in classes<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Choose <bpt id="1">__</bpt>how many classes<ept id="1">__</ept> you want the data to be divided into ‒ let's say 4.</source>
+<target xml:lang="fr">Choose <bpt id="1">__</bpt>how many classes<ept id="1">__</ept> you want the data to be divided into ‒ let's say 4.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">By default, the colour ramp will be red. However, red is not the right colour to use for .population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</source>
+<target xml:lang="fr">By default, the colour ramp will be red. However, red is not the right colour to use for .population count, as it is generally used to communicate negative elements, such as food insecurity or cholera cases.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">__</bpt>the arrow next to the colour ramp<ept id="1">__</ept> to choose another combination of colours - let's say a color ramp from white to blue.</source>
+<target xml:lang="fr">Click on <bpt id="1">__</bpt>the arrow next to the colour ramp<ept id="1">__</ept> to choose another combination of colours - let's say a color ramp from white to blue.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph> to preview the look of your layer, then `OK.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph> to preview the look of your layer, then `OK.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_symbology_variable_ranges_2_wiki</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_symbology_variable_ranges_2_wiki</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">You can categorize the continuous values into classes and assign a colour ramp.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">You can categorize the continuous values into classes and assign a colour ramp.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called <bpt id="1">__</bpt>choropleth maps<ept id="1">__</ept>.</source>
+<target xml:lang="fr">The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called <bpt id="1">__</bpt>choropleth maps<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_map_design_example_variable_ranges.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_map_design_example_variable_ranges.png</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_map_design_example_variable_ranges_wiki</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_map_design_example_variable_ranges_wiki</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">A map showing the population of Nigerian states.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">A map showing the population of Nigerian states.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Labels <bpt id="1">&lt;a id="labels"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Labels <bpt id="1">&lt;a id="labels"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Labels are text that display information or values of the data. In QGIS, you can either select <bpt id="1">__</bpt>Single Labels<ept id="1">__</ept> or <bpt id="2">__</bpt>Rule-based Labelling<ept id="2">__</ept>. For each option, an attribute (<ph id="3">`value`</ph>) will be displayed on the map. Additionally, you can <bpt id="4">__</bpt>change the font, font size, colour and some other styling options<ept id="4">__</ept> for the label text.</source>
+<target xml:lang="fr">Labels are text that display information or values of the data. In QGIS, you can either select <bpt id="1">__</bpt>Single Labels<ept id="1">__</ept> or <bpt id="2">__</bpt>Rule-based Labelling<ept id="2">__</ept>. For each option, an attribute (<ph id="3">`value`</ph>) will be displayed on the map. Additionally, you can <bpt id="4">__</bpt>change the font, font size, colour and some other styling options<ept id="4">__</ept> for the label text.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Single Labels</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Single Labels</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Creates a single label style for every feature in the layer. You can select an attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out.</source>
+<target xml:lang="fr">Creates a single label style for every feature in the layer. You can select an attribute (value) which will be displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to display. Look at the attribute table of the dataset to find it out.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Rule-based Labelling</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Rule-based Labelling</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Create rules using expressions to select accurately which features are to be labeled.</source>
+<target xml:lang="fr">Create rules using expressions to select accurately which features are to be labeled.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Each rule can have a different text formatting.</source>
+<target xml:lang="fr">Each rule can have a different text formatting.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note} </ph>Label rendering</source>
+<target xml:lang="fr"><ph id="1">:::{note} </ph>Label rendering</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the <bpt id="1">__</bpt>Label tab<ept id="1">__</ept>, or use the <ph id="2">`Move a Label, Diagram, or Callout`</ph>-tool in <bpt id="3">__</bpt>Label toolbar<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Sometimes the labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the <bpt id="1">__</bpt>Label tab<ept id="1">__</ept>, or use the <ph id="2">`Move a Label, Diagram, or Callout`</ph>-tool in <bpt id="3">__</bpt>Label toolbar<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option.</source>
+<target xml:lang="fr">By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Adding labels to a layer</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Adding labels to a layer</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">In the styling panel, click on the <ph id="1">`Labels`</ph> tab underneath the Symbology tab.</source>
+<target xml:lang="fr">In the styling panel, click on the <ph id="1">`Labels`</ph> tab underneath the Symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Single labels`</ph>.</source>
+<target xml:lang="fr">Select <ph id="1">`Single labels`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`"Value"`</ph> is where you choose the attribute that will be displayed as a label. For example <ph id="2">`*ADM1_EN*`</ph> will display the English names of Nigerian states for each feature in the data set.</source>
+<target xml:lang="fr"><ph id="1">`"Value"`</ph> is where you choose the attribute that will be displayed as a label. For example <ph id="2">`*ADM1_EN*`</ph> will display the English names of Nigerian states for each feature in the data set.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Let's <bpt id="1">__</bpt>change the font<ept id="1">__</ept>: Open the Font dropdown menu and select Arial. Make the text <ph id="2">`Bold`</ph> in the Style dropdown menu. Change the colour by clicking on <ph id="3">`Colour`</ph>, and change the <ph id="4">`Size`</ph> to 8 pt</source>
+<target xml:lang="fr">Let's <bpt id="1">__</bpt>change the font<ept id="1">__</ept>: Open the Font dropdown menu and select Arial. Make the text <ph id="2">`Bold`</ph> in the Style dropdown menu. Change the colour by clicking on <ph id="3">`Colour`</ph>, and change the <ph id="4">`Size`</ph> to 8 pt</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Let's <bpt id="1">__</bpt>add a white buffer<ept id="1">__</ept> around the label. In the <ph id="2">`Labels`</ph> tab, you will find a list with different options to style the labels. Right now, we are in the <ph id="3">`Text`</ph> menu. Select <ph id="4">`Buffer`</ph> and check the <ph id="5">`Draw text buffer`</ph> option. This will make the labels stand out more on dark or crowded maps.</source>
+<target xml:lang="fr">Let's <bpt id="1">__</bpt>add a white buffer<ept id="1">__</ept> around the label. In the <ph id="2">`Labels`</ph> tab, you will find a list with different options to style the labels. Right now, we are in the <ph id="3">`Text`</ph> menu. Select <ph id="4">`Buffer`</ph> and check the <ph id="5">`Draw text buffer`</ph> option. This will make the labels stand out more on dark or crowded maps.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_setting_up_labels.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_setting_up_labels.png</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_setting_up_labels_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_setting_up_labels_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Setting up labels in QGIS 30.30.2.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Setting up labels in QGIS 30.30.2.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Adding different label styles to the same layer</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Adding different label styles to the same layer</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the <bpt id="1">*</bpt>Country Capital<ept id="1">*</ept>, and another one for the <bpt id="2">*</bpt>State Capitals<ept id="2">*</ept>.</source>
+<target xml:lang="fr">Sometimes you will need to create two different label styles for different features of a single layer. In this example, we will create one label style for the <bpt id="1">*</bpt>Country Capital<ept id="1">*</ept>, and another one for the <bpt id="2">*</bpt>State Capitals<ept id="2">*</ept>.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Open the styling panel for the <ph id="1">`"NGA_settlements_nga"`</ph> layer and click on the <ph id="2">`Labels`</ph> tab.</source>
+<target xml:lang="fr">Open the styling panel for the <ph id="1">`"NGA_settlements_nga"`</ph> layer and click on the <ph id="2">`Labels`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Rule-based Labelling`</ph>.</source>
+<target xml:lang="fr">Select <ph id="1">`Rule-based Labelling`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">__</bpt>Add Rule<ept id="1">__</ept> button at the bottom (the "+"-sign) and <bpt id="2">__</bpt>create the first rule<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Click on the <bpt id="1">__</bpt>Add Rule<ept id="1">__</ept> button at the bottom (the "+"-sign) and <bpt id="2">__</bpt>create the first rule<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">For <bpt id="1">__</bpt>Value<ept id="1">__</ept>, select <ph id="2">`"NAME"`</ph> (so that the labels will show the name of each city), then click on the <ph id="3">`"ε"-button`</ph> next to the <bpt id="4">__</bpt>Filter<ept id="4">__</ept> bar.</source>
+<target xml:lang="fr">For <bpt id="1">__</bpt>Value<ept id="1">__</ept>, select <ph id="2">`"NAME"`</ph> (so that the labels will show the name of each city), then click on the <ph id="3">`"ε"-button`</ph> next to the <bpt id="4">__</bpt>Filter<ept id="4">__</ept> bar.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_adding_rule-based_labels.png</ph></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_adding_rule-based_labels_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_adding_rule-based_labels_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">To add rule-based labels, you need to enter an expression.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">To add rule-based labels, you need to enter an expression.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">In the central column, expand <ph id="1">`Fields and Values`</ph> to display a list of all the fields in your layer and double-click on <ph id="2">`"CLASS"`</ph> to <bpt id="3">__</bpt>add it to the expression frame<ept id="3">__</ept> on the left.</source>
+<target xml:lang="fr">In the central column, expand <ph id="1">`Fields and Values`</ph> to display a list of all the fields in your layer and double-click on <ph id="2">`"CLASS"`</ph> to <bpt id="3">__</bpt>add it to the expression frame<ept id="3">__</ept> on the left.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">In the right column, click on <ph id="1">`All unique`</ph> to list all unique values contained in the Class field. In this dataset, <ph id="2">`"CLASS"=1`</ph> designates the capital city, whereas <ph id="3">`"CLASS"=2`</ph> designates other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.</source>
+<target xml:lang="fr">In the right column, click on <ph id="1">`All unique`</ph> to list all unique values contained in the Class field. In this dataset, <ph id="2">`"CLASS"=1`</ph> designates the capital city, whereas <ph id="3">`"CLASS"=2`</ph> designates other major cities. Make sure to familiarise yourself with the dataset at your disposal, so you know what the different attributes represent.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Click on the <ph id="1">`"="`</ph> operator, then double-click on the <ph id="2">`value 1`</ph> (which represents the Country capital in this case). Click <ph id="3">`OK`</ph>.</source>
+<target xml:lang="fr">Click on the <ph id="1">`"="`</ph> operator, then double-click on the <ph id="2">`value 1`</ph> (which represents the Country capital in this case). Click <ph id="3">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Scroll down to <bpt id="1">__</bpt>change the label style<ept id="1">__</ept>. Make it Arial, bold, black, 12pt and add a white buffer.</source>
+<target xml:lang="fr">Scroll down to <bpt id="1">__</bpt>change the label style<ept id="1">__</ept>. Make it Arial, bold, black, 12pt and add a white buffer.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Repeat steps 4 to 9<ept id="1">__</ept>, but select <ph id="2">`Value 2`</ph> (State capitals) and make the label black, bold, 10pt, no buffer.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Repeat steps 4 to 9<ept id="1">__</ept>, but select <ph id="2">`Value 2`</ph> (State capitals) and make the label black, bold, 10pt, no buffer.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>, the <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>, the <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_adding_rule-based_labels_expression_builder_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_30.30.2_adding_rule-based_labels_expression_builder_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
+<ph id="1">:::
+</ph></source>
+<target xml:lang="fr">The expression builder: Expression (left); building blocks, operators, fields and values(center); unique values (right)
+<ph id="1">:::
+</ph></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Add underlined labels</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Add underlined labels</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Set up the labels by following the same steps as before.</source>
+<target xml:lang="fr">Set up the labels by following the same steps as before.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">TO underline labels, click on the underline-button.</source>
+<target xml:lang="fr">TO underline labels, click on the underline-button.</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Move labels independently
+Sometimes the placement of labels is not ideal and can obstruct the readability of the map. In this case, you can move labels independently.</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Move labels independently
+Sometimes the placement of labels is not ideal and can obstruct the readability of the map. In this case, you can move labels independently.</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">On the <ph id="1">`label toolbar`</ph>, there is an option to <bpt id="2">__</bpt>move labels independently<ept id="2">__</ept>. Click on it to activate the tool. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to <ph id="3">`View`</ph> → <ph id="4">`Toolbars`</ph> → activate the Label toolbar).</source>
+<target xml:lang="fr">On the <ph id="1">`label toolbar`</ph>, there is an option to <bpt id="2">__</bpt>move labels independently<ept id="2">__</ept>. Click on it to activate the tool. (Note: In some cases, the label toolbar might not be visible. In this case, turn it on by navigating to <ph id="3">`View`</ph> → <ph id="4">`Toolbars`</ph> → activate the Label toolbar).</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">__</bpt>label you want to move<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Click on the <bpt id="1">__</bpt>label you want to move<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">You will be prompted to select the primary key for joining with internal data storage. <bpt id="1">__</bpt>You do not need to change it<ept id="1">__</ept> (you can select the ID field of the dataset) and click <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">You will be prompted to select the primary key for joining with internal data storage. <bpt id="1">__</bpt>You do not need to change it<ept id="1">__</ept> (you can select the ID field of the dataset) and click <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Click on the label again, now you can move it freely.</source>
+<target xml:lang="fr">Click on the label again, now you can move it freely.</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Add labels to roads</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Add labels to roads</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">When working with line features, the labels will align themselves parallel to the line representing the feature.</source>
+<target xml:lang="fr">When working with line features, the labels will align themselves parallel to the line representing the feature.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Visualising raster data <bpt id="1">&lt;a id="visualising-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualising raster data <bpt id="1">&lt;a id="visualising-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Assigning a colour gradient to raster data <bpt id="1">&lt;a id="assigning-a-colour-gradient-to-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Assigning a colour gradient to raster data <bpt id="1">&lt;a id="assigning-a-colour-gradient-to-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">To assign a colour gradient for raster data, you need to:</source>
+<target xml:lang="fr">To assign a colour gradient for raster data, you need to:</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`styling panel`</ph> for the raster layer.</source>
+<target xml:lang="fr">Open the <ph id="1">`styling panel`</ph> for the raster layer.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Navigate to the <ph id="1">`Symbology tab`</ph>.</source>
+<target xml:lang="fr">Navigate to the <ph id="1">`Symbology tab`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on <ph id="1">`Singleband Gray`</ph> and switch to <ph id="2">`Singleband pseudocolour`</ph>.</source>
+<target xml:lang="fr">By default, the colour scheme is set to Singleband gray (if you only have one colour band in the data set). Click on <ph id="1">`Singleband Gray`</ph> and switch to <ph id="2">`Singleband pseudocolour`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">__</bpt>the arrow to the right of the colour ramp<ept id="1">__</ept>. Here you can choose a pre-made colour ramp.</source>
+<target xml:lang="fr">Click on <bpt id="1">__</bpt>the arrow to the right of the colour ramp<ept id="1">__</ept>. Here you can choose a pre-made colour ramp.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">You can modify the colour ramp by <bpt id="1">__</bpt>clicking on the colour ramp<ept id="1">__</ept>..</source>
+<target xml:lang="fr">You can modify the colour ramp by <bpt id="1">__</bpt>clicking on the colour ramp<ept id="1">__</ept>..</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png</ph></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: raster data colour gradient</ph>
+<ph id="2">width: 600px</ph></source>
+<target xml:lang="fr"><ph id="1">name: raster data colour gradient</ph>
+<ph id="2">width: 600px</ph></target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">The colour ramp selector in QGIS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The colour ramp selector in QGIS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, <bpt id="1">__</bpt>Saturation<ept id="1">__</ept>, <bpt id="2">__</bpt>Lightness<ept id="2">__</ept> and <bpt id="3">__</bpt>Opacity<ept id="3">__</ept>. The latter three are especially useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the <bpt id="4">__</bpt>Lightness<ept id="4">__</ept> has a more or less linear plot.</source>
+<target xml:lang="fr">In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, <bpt id="1">__</bpt>Saturation<ept id="1">__</ept>, <bpt id="2">__</bpt>Lightness<ept id="2">__</ept> and <bpt id="3">__</bpt>Opacity<ept id="3">__</ept>. The latter three are especially useful to see how your colour ramp will translate. Gradients from light to dark are easier to read: Check if the plot for the <bpt id="4">__</bpt>Lightness<ept id="4">__</ept> has a more or less linear plot.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Styling a digital elevation model</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Styling a digital elevation model</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need to know the elevation at certain points, you can choose to display the <bpt id="1">__</bpt>hillshade<ept id="1">__</ept> of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,</source>
+<target xml:lang="fr">Elevation data sets are frequently used to communicate the terrain on a map. By default, an elevation model will be displayed with a gray colour ramp. However, if you don't need to know the elevation at certain points, you can choose to display the <bpt id="1">__</bpt>hillshade<ept id="1">__</ept> of the terrain. Hillshading will simulate the shadow of the terrain as if it would be exposed to a lightsource. In this example, we will use the elevation raster data (.tiff) of Algeria from the Humanitarian Data Exchange platform (humdata.org) To achieve this,</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Open the <ph id="1">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Render type`</ph> and select <ph id="2">`Hillshade`</ph>. You will have an option to select the direction of the light. Conventionally, the light-source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade <bpt id="3">__</bpt>Multidirectional<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Render type`</ph> and select <ph id="2">`Hillshade`</ph>. You will have an option to select the direction of the light. Conventionally, the light-source is positioned in the North-West, so we can keep the default settings. In some cases with rough terrain, it can be useful to make the Hillshade <bpt id="3">__</bpt>Multidirectional<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">The Hillshade will be very dark and cover most of the map. We need to make it lighter by adjusting the symbology.
+<ph id="1">%%</ph> This needs some detail</source>
+<target xml:lang="fr">The Hillshade will be very dark and cover most of the map. We need to make it lighter by adjusting the symbology.
+<ph id="1">%%</ph> This needs some detail</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Inverting the colour ramp <bpt id="1">&lt;a id="inverting-the-colour-ramp"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Inverting the colour ramp <bpt id="1">&lt;a id="inverting-the-colour-ramp"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">In some cases, the colour ramp should be inverted to make it easier to read the map:</source>
+<target xml:lang="fr">In some cases, the colour ramp should be inverted to make it easier to read the map:</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">__</bpt>arrow next to the Colour ramp<ept id="1">__</ept> to open the dropdown menu.</source>
+<target xml:lang="fr">Click on the <bpt id="1">__</bpt>arrow next to the Colour ramp<ept id="1">__</ept> to open the dropdown menu.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Invert Colour Ramp`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Invert Colour Ramp`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Exporting and Importing styles <bpt id="1">&lt;a id="exporting-and-importing-styles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exporting and Importing styles <bpt id="1">&lt;a id="exporting-and-importing-styles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph>
+<ph id="2">::::{tab-item} </ph>Saving or exporting styling settings</source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph>
+<ph id="2">::::{tab-item} </ph>Saving or exporting styling settings</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Open the styling panel and click on <ph id="1">`styles`</ph>. A dropdown menu will open with the option to export the layer styling.</source>
+<target xml:lang="fr">Open the styling panel and click on <ph id="1">`styles`</ph>. A dropdown menu will open with the option to export the layer styling.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.</source>
+<target xml:lang="fr">Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">Select a location and name for the styling. The styling will be saved as a <ph id="1">`.qml`</ph> file. <bpt id="2">__</bpt>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.<ept id="2">__</ept></source>
+<target xml:lang="fr">Select a location and name for the styling. The styling will be saved as a <ph id="1">`.qml`</ph> file. <bpt id="2">__</bpt>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">
+::::</ph></source>
+<target xml:lang="fr"><ph id="1">
+::::</ph></target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Loading a style into your QGIS-project</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Loading a style into your QGIS-project</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style manager`</ph>.</source>
+<target xml:lang="fr">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style manager`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`import/export`</ph> and select <ph id="2">`import items`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`import/export`</ph> and select <ph id="2">`import items`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Navigate to the folder where the style is saved and click import.</source>
+<target xml:lang="fr">Navigate to the folder where the style is saved and click import.</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">The style should now be available as a preset in the styling panel.</source>
+<target xml:lang="fr">The style should now be available as a preset in the styling panel.</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Using IFRC symbols</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Using IFRC symbols</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">With the plugin <bpt id="1">__</bpt>"Plugin Resource Sharing"<ept id="1">__</ept>, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.</source>
+<target xml:lang="fr">With the plugin <bpt id="1">__</bpt>"Plugin Resource Sharing"<ept id="1">__</ept>, you can install symbol and icon libraries used by the Red Cross and UN, as well as other useful symbols.</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Install the <bpt id="1">__</bpt>"Plugin Resource Sharing"<ept id="1">__</ept> by opening the plugin installation window and searching for the plugin.</source>
+<target xml:lang="fr">Install the <bpt id="1">__</bpt>"Plugin Resource Sharing"<ept id="1">__</ept> by opening the plugin installation window and searching for the plugin.</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">Once installed, open the plugin interface by clicking on <ph id="1">`plugin`</ph> → <ph id="2">`Plugin Resource Sharing`</ph>.</source>
+<target xml:lang="fr">Once installed, open the plugin interface by clicking on <ph id="1">`plugin`</ph> → <ph id="2">`Plugin Resource Sharing`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">Search for packages by the Red Cross and UN.</source>
+<target xml:lang="fr">Search for packages by the Red Cross and UN.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Install the packages.</source>
+<target xml:lang="fr">Install the packages.</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Now the symbols should be available in the styling manager in the SVG folder.</source>
+<target xml:lang="fr">Now the symbols should be available in the styling manager in the SVG folder.</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Make sure to check out the other resources available in the resource sharing plugin and see if they are useful to you.
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Using SVG-symbols</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Using SVG-symbols</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Open the styling panel and open the <ph id="1">`Single marker`</ph> options.</source>
+<target xml:lang="fr">Open the styling panel and open the <ph id="1">`Single marker`</ph> options.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>"SVG Marker"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>"SVG Marker"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</source>
+<target xml:lang="fr">Scroll down to the SVG-Browser. Here you will find all the folder of your installed SVG-libraries.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Adding an external SVG-library or other style libraries</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Adding an external SVG-library or other style libraries</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</source>
+<target xml:lang="fr">If you have a library of SVG-symbols as a folder you can add them to your Styling manager.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style manager`</ph>.</source>
+<target xml:lang="fr">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style manager`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Import / Export`</ph> and select <ph id="2">`Import items`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Import / Export`</ph> and select <ph id="2">`Import items`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).</source>
+<target xml:lang="fr">Navigate to the location where you have saved the library or style and select the file (in most cases .qml but the file type can also be .xml).</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Now you can select which symbols you wish to import. In most cases, you can select all symbols.</source>
+<target xml:lang="fr">Now you can select which symbols you wish to import. In most cases, you can select all symbols.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Import`</ph>.
+The new SVG-symbols are in your SVG library.</source>
+<target xml:lang="fr">Click on <ph id="1">`Import`</ph>.
+The new SVG-symbols are in your SVG library.</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

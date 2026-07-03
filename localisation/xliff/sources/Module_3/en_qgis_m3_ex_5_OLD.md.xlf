@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_m3_ex_5_OLD.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">:::{grid-item-card}</ph>
+<ph id="8">:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html</ph>
+<bpt id="9">__</bpt>Click here to return to the exercise overview page for module 3<ept id="9">__</ept>
+<ph id="10">:::</ph>
+<ph id="11">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">:::{grid-item-card}</ph>
+<ph id="8">:link: https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_exercises.html</ph>
+<bpt id="9">__</bpt>Click here to return to the exercise overview page for module 3<ept id="9">__</ept>
+<ph id="10">:::</ph>
+<ph id="11">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 5: Larkana Flood response <bpt id="1">&lt;a id="exercise-5-larkana-flood-response"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 5: Larkana Flood response <bpt id="1">&lt;a id="exercise-5-larkana-flood-response"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic} </ph>Aim of the exercise</source>
+<target xml:lang="fr"><ph id="1">:::{topic} </ph>Aim of the exercise</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.</source>
+<target xml:lang="fr">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The following analysis will utilize actual data from this natural disaster. The objective is to pinpoint the specific medical centers and healthcare facilities that were impacted by the flooding. Additionally, we will assess the viability of road access to the city of Larkana throughout the flood period.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Participants will work with multiple layers and conduct spatial queries. Additionally, they will learn how to create their own geodata. The exercise is divided into three tasks. In the first part, we will export the administrative boundaries in our area of interest (AOI). In the second task, the health facilities located in our AOI will be extracted and we will identify which health facilities are located inside the flood extent layer. In the third task, the road access will be determined by identifying which roads are potentially flooded.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>1</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>1</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Competences covered in this exercise<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Competences covered in this exercise<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Select features and export to new file</source>
+<target xml:lang="fr">Select features and export to new file</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Extract by Location</source>
+<target xml:lang="fr">Extract by Location</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Reproject Layer</source>
+<target xml:lang="fr">Reproject Layer</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Editing the Attribute Table</source>
+<target xml:lang="fr">Editing the Attribute Table</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Classification</source>
+<target xml:lang="fr">Classification</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Digitising a point Layer</source>
+<target xml:lang="fr">Digitising a point Layer</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</source>
+<target xml:lang="fr">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles and module chapters<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles and module chapters<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Spatial Queries<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Spatial Queries<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#add-field)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitisation- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitisation- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#add-geometries-to-a-layer)</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Download all datasets <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip)</ept> and save the folder on your computer and unzip the file.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Download all datasets <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Modul_3_Exercise_4_Larkana_flood.zip)</ept> and save the folder on your computer and unzip the file.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Original title</source>
+<target xml:lang="fr">Original title</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Publisher</source>
+<target xml:lang="fr">Publisher</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Downloaded from</source>
+<target xml:lang="fr">Downloaded from</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">PAK_Sindh_adm1.gpkg</source>
+<target xml:lang="fr">PAK_Sindh_adm1.gpkg</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Subnational Administrative Boundaries<ept id="1">](https://data.humdata.org/dataset/cod-ab-pak)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Subnational Administrative Boundaries<ept id="1">](https://data.humdata.org/dataset/cod-ab-pak)</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">UN OCHA</source>
+<target xml:lang="fr">UN OCHA</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">PAK_Sindh_adm2.gpkg</source>
+<target xml:lang="fr">PAK_Sindh_adm2.gpkg</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Subnational Administrative Boundaries<ept id="1">](https://data.humdata.org/dataset/cod-ab-pak)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Subnational Administrative Boundaries<ept id="1">](https://data.humdata.org/dataset/cod-ab-pak)</ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">UN OCHA</source>
+<target xml:lang="fr">UN OCHA</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">PAK_Sind_Health_Facilities.gpkg</source>
+<target xml:lang="fr">PAK_Sind_Health_Facilities.gpkg</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Pakistan Health Facilities (OpenStreetMap Export)<ept id="1">](https://data.humdata.org/dataset/hotosm_pak_health_facilities)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Pakistan Health Facilities (OpenStreetMap Export)<ept id="1">](https://data.humdata.org/dataset/hotosm_pak_health_facilities)</ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Humanitarian OpenStreetMap Team (HOT)</source>
+<target xml:lang="fr">Humanitarian OpenStreetMap Team (HOT)</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp</source>
+<target xml:lang="fr">VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Satellite detected water extents from 08 to 12 August 2024 over Pakistan)<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Satellite detected water extents from 08 to 12 August 2024 over Pakistan)<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan)</ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">UNO SAT</source>
+<target xml:lang="fr">UNO SAT</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Roads_Larkana.gpkg</source>
+<target xml:lang="fr">Roads_Larkana.gpkg</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Roads Larkana<ept id="1">](https://export.hotosm.org/v3/exports/7f1e78c7-f671-41e3-9ec3-6fc6ac31c929)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Roads Larkana<ept id="1">](https://export.hotosm.org/v3/exports/7f1e78c7-f671-41e3-9ec3-6fc6ac31c929)</ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Humanitarian OpenStreetMap Team</source>
+<target xml:lang="fr">Humanitarian OpenStreetMap Team</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">HOT Export Tool (Export created in September 2024)</source>
+<target xml:lang="fr">HOT Export Tool (Export created in September 2024)</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{hint}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{hint}</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Reprojected and fixed Flood extend layer can be downloaded <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr">Reprojected and fixed Flood extend layer can be downloaded <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/Module_3_Exercise_4_Larkana_flood_Day2.zip)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/M3_Ex5_workflow_chart.drawio.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/M3_Ex5_workflow_chart.drawio.png</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: M5_Ex5_Workflow_chart</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: M5_Ex5_Workflow_chart</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Task 1: Gain an overview of the situation around Larkana <bpt id="1">&lt;a id="task-1-gain-an-overview-of-the-situation-around-larkana"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Gain an overview of the situation around Larkana <bpt id="1">&lt;a id="task-1-gain-an-overview-of-the-situation-around-larkana"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{card}</ph>
+<bpt id="2">__</bpt>Context<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{card}</ph>
+<bpt id="2">__</bpt>Context<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of <bpt id="1">[</bpt>Larkana<ept id="1">](https://www.openstreetmap.org/#map=12/27.5565/68.1672)</ept> and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.</source>
+<target xml:lang="fr">You have been deployed as an information manager to the flood-affected regions of Pakistan. Upon your arrival you received reports from the operations team indicating that the city of <bpt id="1">[</bpt>Larkana<ept id="1">](https://www.openstreetmap.org/#map=12/27.5565/68.1672)</ept> and its surrounding areas have been severely affected by the floods. The team needs a general overview of the location of the city.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</source>
+<target xml:lang="fr">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Once the project is created <bpt id="1">[</bpt>save the project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save)</ept> in the “project” folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on <ph id="2">`Project`</ph> → <ph id="3">`Save as`</ph> and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.</source>
+<target xml:lang="fr">Once the project is created <bpt id="1">[</bpt>save the project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#save)</ept> in the “project” folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on <ph id="2">`Project`</ph> → <ph id="3">`Save as`</ph> and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Layer…`</ph>. Choose <ph id="4">`OpenStreetMap`</ph> and click <ph id="5">`Add`</ph>.</source>
+<target xml:lang="fr">First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Layer…`</ph>. Choose <ph id="4">`OpenStreetMap`</ph> and click <ph id="5">`Add`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Next, load the GeoPackage <bpt id="1">__</bpt>"PAK_Sindh_adm2.gpkg"<ept id="1">__</ept> in your project by drag and drop (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="3">`Layer`</ph> → <ph id="4">`Add Layer`</ph> → <ph id="5">`Add Vector Layer`</ph>. Click on the three points <bpt id="6">![</bpt><ept id="6">](/fig/Three_points.png)</ept> and navigate to <bpt id="7">__</bpt>"PAK_Sindh_adm2.gpkg"<ept id="7">__</ept>. Select the file and click <ph id="8">`Open`</ph>. Back in QGIS click <ph id="9">`Add`</ph> (<bpt id="10">[</bpt>Wiki Video<ept id="10">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>).</source>
+<target xml:lang="fr">Next, load the GeoPackage <bpt id="1">__</bpt>"PAK_Sindh_adm2.gpkg"<ept id="1">__</ept> in your project by drag and drop (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="3">`Layer`</ph> → <ph id="4">`Add Layer`</ph> → <ph id="5">`Add Vector Layer`</ph>. Click on the three points <bpt id="6">![</bpt><ept id="6">](/fig/Three_points.png)</ept> and navigate to <bpt id="7">__</bpt>"PAK_Sindh_adm2.gpkg"<ept id="7">__</ept>. Select the file and click <ph id="8">`Open`</ph>. Back in QGIS click <ph id="9">`Add`</ph> (<bpt id="10">[</bpt>Wiki Video<ept id="10">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">First, we want to export <bpt id="1">__</bpt>Larkana District<ept id="1">__</ept> and the neighbouring districts <bpt id="2">__</bpt>Kambar Shahdad Kot<ept id="2">__</ept>, <bpt id="3">__</bpt>Shikarpur<ept id="3">__</ept>  and <bpt id="4">__</bpt>Sukkur<ept id="4">__</ept> from <bpt id="5">__</bpt>PAK_adm2_Sindh<ept id="5">__</ept> to have it as a stand-alone vector layer. To do that:</source>
+<target xml:lang="fr">First, we want to export <bpt id="1">__</bpt>Larkana District<ept id="1">__</ept> and the neighbouring districts <bpt id="2">__</bpt>Kambar Shahdad Kot<ept id="2">__</ept>, <bpt id="3">__</bpt>Shikarpur<ept id="3">__</ept>  and <bpt id="4">__</bpt>Sukkur<ept id="4">__</ept> from <bpt id="5">__</bpt>PAK_adm2_Sindh<ept id="5">__</ept> to have it as a stand-alone vector layer. To do that:</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of <bpt id="1">__</bpt>PAK_adm2_Sindh<ept id="1">__</ept> by right click on the layer → <ph id="2">`Open Attribute Table`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept>).</source>
+<target xml:lang="fr">Open the attribute table of <bpt id="1">__</bpt>PAK_adm2_Sindh<ept id="1">__</ept> by right click on the layer → <ph id="2">`Open Attribute Table`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <ph id="1">`Zoom to Feature`</ph>(<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)</ept>).
+    To select the surrounding districts, click on the <ph id="3">`Select Feature(s)`</ph> <bpt id="4">![</bpt><ept id="4">](/fig/selection_toolbar_feature_selection.png)</ept> icon in the QGIS Toolbar, hold the <ph id="5">`Shift`</ph> button on your keyboard, and click on the districts either on the map or the attribute table (<bpt id="6">[</bpt>Wiki Video<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)</ept>).</source>
+<target xml:lang="fr">Find the row of Larkana and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Larkana will turn yellow on the map canvas. You can right-click on the row and click <ph id="1">`Zoom to Feature`</ph>(<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)</ept>).
+    To select the surrounding districts, click on the <ph id="3">`Select Feature(s)`</ph> <bpt id="4">![</bpt><ept id="4">](/fig/selection_toolbar_feature_selection.png)</ept> icon in the QGIS Toolbar, hold the <ph id="5">`Shift`</ph> button on your keyboard, and click on the districts either on the map or the attribute table (<bpt id="6">[</bpt>Wiki Video<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">After you are done selecting districts, click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/qgis_move_symbol.png)</ept> to end the feature selection mode.</source>
+<target xml:lang="fr">After you are done selecting districts, click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/qgis_move_symbol.png)</ept> to end the feature selection mode.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Now right-click on the layer in the Layer Panel and click on <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as`</ph>. We want to save the selected districts as a GeoPackage, so choose the <ph id="3">`Format`</ph> option accordingly. Click on the three points and navigate to your <ph id="4">`temp`</ph> folder. Here you can give it the layer the name <bpt id="5">__</bpt>“Flood_2024_AOI”<ept id="5">__</ept> and click <ph id="6">`Save`</ph>. Now you should see the same name in the <ph id="7">`Layer name`</ph> field. Click <ph id="8">`Ok`</ph>(<bpt id="9">[</bpt>Wiki Video<ept id="9">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)</ept>)</source>
+<target xml:lang="fr">Now right-click on the layer in the Layer Panel and click on <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as`</ph>. We want to save the selected districts as a GeoPackage, so choose the <ph id="3">`Format`</ph> option accordingly. Click on the three points and navigate to your <ph id="4">`temp`</ph> folder. Here you can give it the layer the name <bpt id="5">__</bpt>“Flood_2024_AOI”<ept id="5">__</ept> and click <ph id="6">`Save`</ph>. Now you should see the same name in the <ph id="7">`Layer name`</ph> field. Click <ph id="8">`Ok`</ph>(<bpt id="9">[</bpt>Wiki Video<ept id="9">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)</ept>)</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/selection_toolbar_feature_deselection.png)</ept> in the toolbar to end the feature selection.</source>
+<target xml:lang="fr">Click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/selection_toolbar_feature_deselection.png)</ept> in the toolbar to end the feature selection.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic} </ph>Achievement</source>
+<target xml:lang="fr"><ph id="1">:::{topic} </ph>Achievement</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</source>
+<target xml:lang="fr">Now you have an overview of where the district of Larkana is located in Sindh. The operations team can use this information.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Task 2: Estimation of Flood Impact on the Health Sector in Larkana <bpt id="1">&lt;a id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Estimation of Flood Impact on the Health Sector in Larkana <bpt id="1">&lt;a id="task-2-estimation-of-flood-impact-on-the-health-sector-in-larkana"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{topic} </ph>Context</source>
+<target xml:lang="fr"><ph id="1">::::{topic} </ph>Context</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.</source>
+<target xml:lang="fr">Posts on social media have indicated a significant impact on the healthcare system in the region. You have been tasked to find out as much as you can about the situation and, if feasible, to estimate the impact on the health system.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.</source>
+<target xml:lang="fr">The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Pakistan Health Facilities (OpenStreetMap Export). This will do for now.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Load the GeoPackage <bpt id="1">__</bpt>"PAK_Health_Facilities_complete.gpkg"<ept id="1">__</ept> in your project by drag and drop (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="3">`Layer`</ph> → <ph id="4">`Add Layer`</ph> → <ph id="5">`Add Vector Layer`</ph>. Click on the three points <bpt id="6">![</bpt><ept id="6">](/fig/Three_points.png)</ept> and navigate to <bpt id="7">__</bpt>"PAK_Sindh_adm2.gpkg"<ept id="7">__</ept>. Select the file and click <ph id="8">`Open`</ph>. Back in QGIS click <ph id="9">`Add`</ph> (<bpt id="10">[</bpt>Wiki Video<ept id="10">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>).</source>
+<target xml:lang="fr">Load the GeoPackage <bpt id="1">__</bpt>"PAK_Health_Facilities_complete.gpkg"<ept id="1">__</ept> in your project by drag and drop (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="3">`Layer`</ph> → <ph id="4">`Add Layer`</ph> → <ph id="5">`Add Vector Layer`</ph>. Click on the three points <bpt id="6">![</bpt><ept id="6">](/fig/Three_points.png)</ept> and navigate to <bpt id="7">__</bpt>"PAK_Sindh_adm2.gpkg"<ept id="7">__</ept>. Select the file and click <ph id="8">`Open`</ph>. Back in QGIS click <ph id="9">`Add`</ph> (<bpt id="10">[</bpt>Wiki Video<ept id="10">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">First, we must extract the health facilities in our area of interest. We will use the tool <bpt id="1">__</bpt>"Extract by Location"<ept id="1">__</ept> to do that.</source>
+<target xml:lang="fr">First, we must extract the health facilities in our area of interest. We will use the tool <bpt id="1">__</bpt>"Extract by Location"<ept id="1">__</ept> to do that.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept>) and search for the tool.</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept>) and search for the tool.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input Layer`</ph> we will use "PAK_Health_Facilities_complete".</source>
+<target xml:lang="fr">As <ph id="1">`Input Layer`</ph> we will use "PAK_Health_Facilities_complete".</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">For <ph id="1">`By comparing to the features from`</ph> we use the layer “Flood_2024_AOI”.</source>
+<target xml:lang="fr">For <ph id="1">`By comparing to the features from`</ph> we use the layer “Flood_2024_AOI”.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`intersect`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`intersect`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">To save the output click on the three points at <ph id="1">`Extract (location)`</ph> → <ph id="2">`Save to GeoPackage`</ph> and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name <bpt id="4">__</bpt>“Health_Facilities_Flood_2024_AOI”<ept id="4">__</ept>. Give the new layer the same <ph id="5">`Layer name`</ph> and click <ph id="6">`Run`</ph>.</source>
+<target xml:lang="fr">To save the output click on the three points at <ph id="1">`Extract (location)`</ph> → <ph id="2">`Save to GeoPackage`</ph> and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name <bpt id="4">__</bpt>“Health_Facilities_Flood_2024_AOI”<ept id="4">__</ept>. Give the new layer the same <ph id="5">`Layer name`</ph> and click <ph id="6">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table of the new layer and have a look.</source>
+<target xml:lang="fr">Open the Attribute table of the new layer and have a look.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">First, we must extract the health facilities in our area of interest. We will use the tool <bpt id="1">__</bpt>"Extract by Location"<ept id="1">__</ept> to do that.</source>
+<target xml:lang="fr">First, we must extract the health facilities in our area of interest. We will use the tool <bpt id="1">__</bpt>"Extract by Location"<ept id="1">__</ept> to do that.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept>) and search for the tool.</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept>) and search for the tool.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input Layer`</ph> we will use "PAK_Health_Facilities_complete".</source>
+<target xml:lang="fr">As <ph id="1">`Input Layer`</ph> we will use "PAK_Health_Facilities_complete".</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">For <ph id="1">`By comparing to the features from`</ph> we use the layer "Flood_2024_AOI".</source>
+<target xml:lang="fr">For <ph id="1">`By comparing to the features from`</ph> we use the layer "Flood_2024_AOI".</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`intersect`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`intersect`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">To save the output click on the three points at <ph id="1">`Extract (location)`</ph> → <ph id="2">`Save to GeoPackage`</ph> and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name <bpt id="4">__</bpt>“Health_Facilities_Flood_2024_AOI”<ept id="4">__</ept>. Give the new layer the same <ph id="5">`Layer name`</ph> and click <ph id="6">`Run`</ph>.</source>
+<target xml:lang="fr">To save the output click on the three points at <ph id="1">`Extract (location)`</ph> → <ph id="2">`Save to GeoPackage`</ph> and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name <bpt id="4">__</bpt>“Health_Facilities_Flood_2024_AOI”<ept id="4">__</ept>. Give the new layer the same <ph id="5">`Layer name`</ph> and click <ph id="6">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table of the new layer and have a look.</source>
+<target xml:lang="fr">Open the Attribute table of the new layer and have a look.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extents from 08 to 12 August 2024 over Pakistan.</source>
+<target xml:lang="fr">Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extents from 08 to 12 August 2024 over Pakistan.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Load the dataset <bpt id="1">__</bpt>"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"<ept id="1">__</ept> into your QGIS.</source>
+<target xml:lang="fr">Load the dataset <bpt id="1">__</bpt>"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"<ept id="1">__</ept> into your QGIS.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)</ept>).</source>
+<target xml:lang="fr">Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Right click on the data layer, click on  <ph id="1">`Properties`</ph>.</source>
+<target xml:lang="fr">Right click on the data layer, click on  <ph id="1">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">The "Layer Properties" Window of the data layer will open. Click on the <ph id="1">`Information`</ph>-tab.</source>
+<target xml:lang="fr">The "Layer Properties" Window of the data layer will open. Click on the <ph id="1">`Information`</ph>-tab.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</source>
+<target xml:lang="fr">Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name:<ept id="1">__</ept>     Here you find the EPSG Code.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name:<ept id="1">__</ept>     Here you find the EPSG Code.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Unites:<ept id="1">__</ept>    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. <ph id="2">&lt;!--ADD: Why is it a problem? Add explanation--></ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Unites:<ept id="1">__</ept>    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. <ph id="2">&lt;!--ADD: Why is it a problem? Add explanation--></ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)</ept>).</source>
+<target xml:lang="fr">This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Click on the <ph id="1">`Vector`</ph> tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph> or search for the tool in the <ph id="4">`Processing Toolbox`</ph>.</source>
+<target xml:lang="fr">Click on the <ph id="1">`Vector`</ph> tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph> or search for the tool in the <ph id="4">`Processing Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input layer`</ph> select <bpt id="2">__</bpt>"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">As <ph id="1">`Input layer`</ph> select <bpt id="2">__</bpt>"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Select as target CRS/ EPSG-Code <bpt id="1">__</bpt>4326<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Select as target CRS/ EPSG-Code <bpt id="1">__</bpt>4326<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Save the new file in your <ph id="1">`temp`</ph> folder by clicking on the three dots <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> next to <ph id="3">`Reprojected`</ph>, specify the file name as <bpt id="4">__</bpt>"2024_MinFloodExtend_reprojected"<ept id="4">__</ept>.</source>
+<target xml:lang="fr">Save the new file in your <ph id="1">`temp`</ph> folder by clicking on the three dots <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> next to <ph id="3">`Reprojected`</ph>, specify the file name as <bpt id="4">__</bpt>"2024_MinFloodExtend_reprojected"<ept id="4">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Delete the old layer from the layer panel by right click on the layer → <ph id="1">`Remove layer`</ph>.</source>
+<target xml:lang="fr">Delete the old layer from the layer panel by right click on the layer → <ph id="1">`Remove layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Adjust the opacity of the flood layer by right-clicking on layer <bpt id="1">__</bpt>"2024_MinFloodExtend_reprojected"<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab. Adjusted the opacity to around 60 % by moving the slider.</source>
+<target xml:lang="fr">Adjust the opacity of the flood layer by right-clicking on layer <bpt id="1">__</bpt>"2024_MinFloodExtend_reprojected"<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab. Adjusted the opacity to around 60 % by moving the slider.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called <bpt id="1">__</bpt>"affected"<ept id="1">__</ept> in the attribute table of <bpt id="2">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="2">__</ept>.
+To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the <bpt id="3">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="3">__</ept> attribute table.</source>
+<target xml:lang="fr">We have observed that certain health facilities have been impacted by the flood. In order to visualise this information on the map, we plan to include a new attribute called <bpt id="1">__</bpt>"affected"<ept id="1">__</ept> in the attribute table of <bpt id="2">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="2">__</ept>.
+To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the <bpt id="3">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="3">__</ept> attribute table.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept>) and search for the tool <bpt id="3">__</bpt>"Select by Location"<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept>) and search for the tool <bpt id="3">__</bpt>"Select by Location"<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Select features from`</ph> = <bpt id="2">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="2">__</ept>.</source>
+<target xml:lang="fr"><ph id="1">`Select features from`</ph> = <bpt id="2">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`intersect`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`intersect`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">For <ph id="1">`By comparing to the features from`</ph> we use the layer <bpt id="2">__</bpt>"2024_MinFloodExtent_reprojected"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">For <ph id="1">`By comparing to the features from`</ph> we use the layer <bpt id="2">__</bpt>"2024_MinFloodExtent_reprojected"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Modify current selection by`</ph> = <ph id="2">`creating new selection`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Modify current selection by`</ph> = <ph id="2">`creating new selection`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Possible Error Message
+<ph id="2">:class: warning, dropdown</ph>
+In case you encounter the error:</source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Possible Error Message
+<ph id="2">:class: warning, dropdown</ph>
+In case you encounter the error:</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
+Execution failed after 0.07 seconds</source>
+<target xml:lang="fr">Feature (1) from “2024_MinFloodExtend_reprojected” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option.
+Execution failed after 0.07 seconds</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">You need to first use the tool <bpt id="1">__</bpt>"Fix Geometry"<ept id="1">__</ept> before repeating the previously failed step 5 of using the tool <bpt id="2">__</bpt>"Select by Location"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">You need to first use the tool <bpt id="1">__</bpt>"Fix Geometry"<ept id="1">__</ept> before repeating the previously failed step 5 of using the tool <bpt id="2">__</bpt>"Select by Location"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">To do so open the <bpt id="1">[</bpt><ph id="2">`Processing Toolbox`</ph><ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept> and search for the tool <bpt id="3">__</bpt>"Fix Geometries"<ept id="3">__</ept>.</source>
+<target xml:lang="fr">To do so open the <bpt id="1">[</bpt><ph id="2">`Processing Toolbox`</ph><ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#open-toolbox)</ept> and search for the tool <bpt id="3">__</bpt>"Fix Geometries"<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input layer`</ph> = <ph id="2">`2024_MinFloodExtend_reprojected`</ph></source>
+<target xml:lang="fr"><ph id="1">`Input layer`</ph> = <ph id="2">`2024_MinFloodExtend_reprojected`</ph></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Save the new file in your <ph id="1">`temp`</ph> folder by clicking on the three dots <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept>, specify the file name as <bpt id="3">__</bpt>"2024_MinFloodExtend_reprojected_fix"<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Save the new file in your <ph id="1">`temp`</ph> folder by clicking on the three dots <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept>, specify the file name as <bpt id="3">__</bpt>"2024_MinFloodExtend_reprojected_fix"<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of <bpt id="1">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="1">__</ept> by right click on the layer → <ph id="2">`Open Attribute Table`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept>) and activate the editing mode by clicking on <bpt id="4">![</bpt><ept id="4">](/fig/mActionToggleEditing.png)</ept> (<bpt id="5">[</bpt>Wiki Video<ept id="5">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)</ept>). Now you are able to edit the data directly in the table.</source>
+<target xml:lang="fr">Open the attribute table of <bpt id="1">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="1">__</ept> by right click on the layer → <ph id="2">`Open Attribute Table`</ph>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept>) and activate the editing mode by clicking on <bpt id="4">![</bpt><ept id="4">](/fig/mActionToggleEditing.png)</ept> (<bpt id="5">[</bpt>Wiki Video<ept id="5">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)</ept>). Now you are able to edit the data directly in the table.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">First, we add a new column with the name <bpt id="1">__</bpt>“Flood_affected”<ept id="1">__</ept>. To do so, click on <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept>. In the <ph id="3">`Add field`</ph> window, you have to add the name and set the <ph id="4">`Type`</ph> to <ph id="5">`Text(string)`</ph>. Click <ph id="6">`Ok`</ph> (<bpt id="7">[</bpt>Wiki Video<ept id="7">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column)</ept>)</source>
+<target xml:lang="fr">First, we add a new column with the name <bpt id="1">__</bpt>“Flood_affected”<ept id="1">__</ept>. To do so, click on <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept>. In the <ph id="3">`Add field`</ph> window, you have to add the name and set the <ph id="4">`Type`</ph> to <ph id="5">`Text(string)`</ph>. Click <ph id="6">`Ok`</ph> (<bpt id="7">[</bpt>Wiki Video<ept id="7">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#add-new-column)</ept>)</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Now look for the <ph id="1">`Show all Features`</ph> option in the lower left corner and click on it. Then, select the option <ph id="2">`Show selected features`</ph> (<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)</ept>). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
+Now, you can write <ph id="4">`Yes`</ph> in the <bpt id="5">__</bpt>"Flood_affected"<ept id="5">__</ept> column.</source>
+<target xml:lang="fr">Now look for the <ph id="1">`Show all Features`</ph> option in the lower left corner and click on it. Then, select the option <ph id="2">`Show selected features`</ph> (<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)</ept>). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
+Now, you can write <ph id="4">`Yes`</ph> in the <bpt id="5">__</bpt>"Flood_affected"<ept id="5">__</ept> column.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">When you are done, click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)</ept>).</source>
+<target xml:lang="fr">When you are done, click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>(<bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/selection_toolbar_feature_deselection.png)</ept> in the toolbar to end the feature selection.</source>
+<target xml:lang="fr">Click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/selection_toolbar_feature_deselection.png)</ept> in the toolbar to end the feature selection.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept>).</source>
+<target xml:lang="fr">To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <bpt id="1">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <bpt id="1">__</bpt>"Health_Facilities_Flood_2024_AOI"<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>. Under <ph id="2">`Value`</ph> select "Flood_affacted".</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>. Under <ph id="2">`Value`</ph> select "Flood_affacted".</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Further down the window, click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected "Flood_affacted" column.  You can adjust the colours by double-clicking on each colour in the central field. Once you are done, click <ph id="2">`Apply`</ph> and <ph id="3">`Ok`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Further down the window, click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected "Flood_affacted" column.  You can adjust the colours by double-clicking on each colour in the central field. Once you are done, click <ph id="2">`Apply`</ph> and <ph id="3">`Ok`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Achievement:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Achievement:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">We've pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it's highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.</source>
+<target xml:lang="fr">We've pinpointed the specific health facilities that have been inundated by the floods. Our findings indicate that a total of four facilities have been completely flooded and are currently non-operational. Considering we assessed the minimum flood impact, it's highly probable that more health facilities will also be impacted. This data is crucial for our operational team as it will enable them to strategize and execute an effective response.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Task 3: Logistical access to Larkana City <bpt id="1">&lt;a id="task-3-logistical-access-to-larkana-city"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Logistical access to Larkana City <bpt id="1">&lt;a id="task-3-logistical-access-to-larkana-city"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{topic} </ph>Context</source>
+<target xml:lang="fr"><ph id="1">::::{topic} </ph>Context</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.</source>
+<target xml:lang="fr">The operations team is making plans to deliver much-needed supplies to the affected region around Larkana. Currently, there is uncertainty about how the supplies can be transported there. The operations team has asked for more information on this topic.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">They need answers to the following three questions:</source>
+<target xml:lang="fr">They need answers to the following three questions:</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</source>
+<target xml:lang="fr">Which roads leading into Larkana are blocked, and at what specific locations are they blocked?</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</source>
+<target xml:lang="fr">Are there any bridges that can be crossed from the eastern side of the Indus to the western side, and where are these bridges located?</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</source>
+<target xml:lang="fr">If transporting supplies by road into the region is not feasible, what alternative method could be used to deliver the supplies?</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
+<ph id="1">::::</ph></source>
+<target xml:lang="fr">In order to get a clearer picture, we need to import the road network data for the region into QGIS. Look for the file in the input folder. The road network is initially displayed without showing any road types or other relevant details. We should apply a categorized classification technique only to display the specific roads that we are interested in.
+<ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Load the dataset <bpt id="1">__</bpt>"Roads_Larkana.gpkg"<ept id="1">__</ept> from your input folder into your QGIS.</source>
+<target xml:lang="fr">Load the dataset <bpt id="1">__</bpt>"Roads_Larkana.gpkg"<ept id="1">__</ept> from your input folder into your QGIS.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">For categorized classification right-click on the layer <bpt id="1">__</bpt>"Roads_Larkana"<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab (<bpt id="4">[</bpt>Wiki Video<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept>).</source>
+<target xml:lang="fr">For categorized classification right-click on the layer <bpt id="1">__</bpt>"Roads_Larkana"<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab (<bpt id="4">[</bpt>Wiki Video<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorized_wiki.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>. Under <ph id="2">`Value`</ph> select "highway".</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>. Under <ph id="2">`Value`</ph> select "highway".</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Further down the window, click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected "highway" column.  You can adjust the colours by double-clicking on the colours in each row in the central field.</source>
+<target xml:lang="fr">Further down the window, click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected "highway" column.  You can adjust the colours by double-clicking on the colours in each row in the central field.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Remove the tick from all categories except: <ph id="1">`motorway`</ph>, <ph id="2">`primary`</ph>, <ph id="3">`secondary`</ph>, <ph id="4">`trunk`</ph>.</source>
+<target xml:lang="fr">Remove the tick from all categories except: <ph id="1">`motorway`</ph>, <ph id="2">`primary`</ph>, <ph id="3">`secondary`</ph>, <ph id="4">`trunk`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select <ph id="1">`Symbol`</ph>. In the new window, you can adjust the width of the lines to your preference.</source>
+<target xml:lang="fr">You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select <ph id="1">`Symbol`</ph>. In the new window, you can adjust the width of the lines to your preference.</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">There are methods to automate the digitisation process which will be covered in <bpt id="1">[</bpt>module 5: Intermediate GIS Operations<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)</ept>.
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr">There are methods to automate the digitisation process which will be covered in <bpt id="1">[</bpt>module 5: Intermediate GIS Operations<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_module_5_overview.html)</ept>.
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.</source>
+<target xml:lang="fr">To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Layer`</ph> → <ph id="2">`Create Layer`</ph> → <ph id="3">`New GeoPackage Layer`</ph>(<bpt id="4">[</bpt>Wiki Video<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)</ept>).</source>
+<target xml:lang="fr">Click on <ph id="1">`Layer`</ph> → <ph id="2">`Create Layer`</ph> → <ph id="3">`New GeoPackage Layer`</ph>(<bpt id="4">[</bpt>Wiki Video<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#create-a-new-layer)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Database`</ph> click on <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to <ph id="3">`temp`</ph> folder. Give the new dataset the name <bpt id="4">__</bpt>“PAK_flood_2024_blocked_road”<ept id="4">__</ept>. Click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Database`</ph> click on <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to <ph id="3">`temp`</ph> folder. Give the new dataset the name <bpt id="4">__</bpt>“PAK_flood_2024_blocked_road”<ept id="4">__</ept>. Click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometry type`</ph>: Select <ph id="2">`Point`</ph></source>
+<target xml:lang="fr"><ph id="1">`Geometry type`</ph>: Select <ph id="2">`Point`</ph></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Additional dimension`</ph> you should always make sure that you check <ph id="2">`None`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Additional dimension`</ph> you should always make sure that you check <ph id="2">`None`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, QGIS selects the project CRS.</source>
+<target xml:lang="fr">Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, QGIS selects the project CRS.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`New Field`</ph> you can add columns to the new layer. Add the column <bpt id="2">__</bpt>“Blocked_road”<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Under <ph id="1">`New Field`</ph> you can add columns to the new layer. Add the column <bpt id="2">__</bpt>“Blocked_road”<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Name`</ph> = <bpt id="2">__</bpt>“Blocked_road”<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">`Name`</ph> = <bpt id="2">__</bpt>“Blocked_road”<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Type`</ph>: Select <ph id="2">`Text Data`</ph></source>
+<target xml:lang="fr"><ph id="1">`Type`</ph>: Select <ph id="2">`Text Data`</ph></target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Add to Fields List`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept> to add the new column to the <ph id="3">`Fields List`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Add to Fields List`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept> to add the new column to the <ph id="3">`Fields List`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Create another field with the <ph id="1">`name`</ph> <bpt id="2">__</bpt>"Blocked_bridge"<ept id="2">__</ept> and the <ph id="3">`Type`</ph>: Select <ph id="4">`Text Data`</ph>.</source>
+<target xml:lang="fr">Create another field with the <ph id="1">`name`</ph> <bpt id="2">__</bpt>"Blocked_bridge"<ept id="2">__</ept> and the <ph id="3">`Type`</ph>: Select <ph id="4">`Text Data`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Your new layer will appear in the <ph id="1">`Layer Panel`</ph>.</source>
+<target xml:lang="fr">Your new layer will appear in the <ph id="1">`Layer Panel`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+If you cannot see the toolbar, click on the tab <ph id="3">`View`</ph> → <ph id="4">`Toolbars`</ph> and check <ph id="5">`Digitizing Toolbar`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)</ept>).
+<ph id="7">:::</ph>
+<ph id="8">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+If you cannot see the toolbar, click on the tab <ph id="3">`View`</ph> → <ph id="4">`Toolbars`</ph> and check <ph id="5">`Digitizing Toolbar`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](/content/Wiki/en_qgis_digitalization_wiki.md#creation-of-point-data)</ept>).
+<ph id="7">:::</ph>
+<ph id="8">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana <bpt id="1">[</bpt>wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)</ept>.</source>
+<target xml:lang="fr">Now you can create a point for each place where the flood layer covers the main roads leading out of Larkana <bpt id="1">[</bpt>wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitalization_wiki.html#creation-of-point-data)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Currently the new layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> is empty. To add features we can use the <ph id="2">`Digitizing Toolbar`</ph>.  <bpt id="3">![</bpt><ept id="3">](/fig/Digitizing_Toolbar.png)</ept></source>
+<target xml:lang="fr">Currently the new layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> is empty. To add features we can use the <ph id="2">`Digitizing Toolbar`</ph>.  <bpt id="3">![</bpt><ept id="3">](/fig/Digitizing_Toolbar.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Activate the editing mode by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept>. Next, activate the option to add new points by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionCapturePoint.png)</ept> <ph id="3">`Add Point Feature`</ph> .</source>
+<target xml:lang="fr">Activate the editing mode by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept>. Next, activate the option to add new points by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionCapturePoint.png)</ept> <ph id="3">`Add Point Feature`</ph> .</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.</source>
+<target xml:lang="fr">Look out for places where the flood layer covers the main roads or bridges leading out of Larkana. Once you have found one, left-click on the location you want to digitise.</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">Once you click on a place, a window will appear. Indicate that the road is blocked by writing <ph id="1">`Yes`</ph> in the field <ph id="2">`Blocked_road`</ph>.</source>
+<target xml:lang="fr">Once you click on a place, a window will appear. Indicate that the road is blocked by writing <ph id="1">`Yes`</ph> in the field <ph id="2">`Blocked_road`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">Repeat this step with all the locations your can find.</source>
+<target xml:lang="fr">Repeat this step with all the locations your can find.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Once you are done with digitizing click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits.</source>
+<target xml:lang="fr">Once you are done with digitizing click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits.</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Click again on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to end the editing mode.</source>
+<target xml:lang="fr">Click again on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to end the editing mode.</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> to visualise this fact better <bpt id="2">[</bpt>wiki<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html)</ept>.</source>
+<target xml:lang="fr">Now, we have mapped all blocked main access roads into Larkana. We can use icons instead of just points to display the layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> to visualise this fact better <bpt id="2">[</bpt>wiki<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> in the Layer Panel and click on <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Keep the <ph id="1">`Single Symbol`</ph> option. Select any symbol from the list that is appropriate for marking blocked roads.</source>
+<target xml:lang="fr">Keep the <ph id="1">`Single Symbol`</ph> option. Select any symbol from the list that is appropriate for marking blocked roads.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">After you are done, click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/qgis_move_symbol.png)</ept> to end the feature selection mode.</source>
+<target xml:lang="fr">After you are done, click on the icon <bpt id="1">![</bpt><ept id="1">](/fig/qgis_move_symbol.png)</ept> to end the feature selection mode.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Part of your assignment was to point out possible alternatives to road transport. Can you identify any?</source>
+<target xml:lang="fr">Part of your assignment was to point out possible alternatives to road transport. Can you identify any?</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Answer<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Answer<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">In the south-west of Larkan City, you can find the <bpt id="1">[</bpt>Mohenjodaro Airport<ept id="1">](https://www.google.com/search?q=Larkana&amp;rlz=1C1GCEA_enDE1048DE1048&amp;oq=Larkana&amp;gs_lcrp=EgZjaHJvbWUyDAgAEEUYORjjAhiABDIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGD2oAgiwAgE&amp;sourceid=chrome&amp;ie=UTF-8#vhid=0x0:0xf59fc8243b2b9d0e&amp;vssid=lclsmap&amp;eim=CAEQDhoRMjcuMzI4NDM3NTc5NDIyNjIiETY4LjE0MjA5NTk3MDUzNTQ4KhQxNzY5OTA4NTExODUyNjQzMDQ3OA)</ept>. Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks.</source>
+<target xml:lang="fr">In the south-west of Larkan City, you can find the <bpt id="1">[</bpt>Mohenjodaro Airport<ept id="1">](https://www.google.com/search?q=Larkana&amp;rlz=1C1GCEA_enDE1048DE1048&amp;oq=Larkana&amp;gs_lcrp=EgZjaHJvbWUyDAgAEEUYORjjAhiABDIHCAEQLhiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg9MgYIBxBFGD2oAgiwAgE&amp;sourceid=chrome&amp;ie=UTF-8#vhid=0x0:0xf59fc8243b2b9d0e&amp;vssid=lclsmap&amp;eim=CAEQDhoRMjcuMzI4NDM3NTc5NDIyNjIiETY4LjE0MjA5NTk3MDUzNTQ4KhQxNzY5OTA4NTExODUyNjQzMDQ3OA)</ept>. Currently, the road from Larkana City to the airport appears to be open and accessible. This means that essential supplies could potentially be transported from the airport into the city without encountering any roadblocks.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">The operations team has now all the information they need to plan their logistics. Good Job!</source>
+<target xml:lang="fr">The operations team has now all the information they need to plan their logistics. Good Job!</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Continue along this exercise track
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Continue along this exercise track
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">This exercise is part of the <bpt id="1">__</bpt>Larkana Flood Response Exercise track<ept id="1">__</ept> and continues with an exercise in module 4.</source>
+<target xml:lang="fr">This exercise is part of the <bpt id="1">__</bpt>Larkana Flood Response Exercise track<ept id="1">__</ept> and continues with an exercise in module 4.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Click <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)</ept> if you want to continue to the next exercise of this exercise track.</source>
+<target xml:lang="fr">Click <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I_ex4.html)</ept> if you want to continue to the next exercise of this exercise track.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

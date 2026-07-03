@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_module_3_ex4.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 4: Flooding in Nigeria <bpt id="1">&lt;a id="exercise-4-flooding-in-nigeria"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 4: Flooding in Nigeria <bpt id="1">&lt;a id="exercise-4-flooding-in-nigeria"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">In this exercise, you will learn how to digitise the positions of settlements by creating new datasets. Furthermore, you will learn how to enrich the simple geodata set with additional information.</source>
+<target xml:lang="fr">In this exercise, you will learn how to digitise the positions of settlements by creating new datasets. Furthermore, you will learn how to enrich the simple geodata set with additional information.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The skills tested in this exercise are necessary for all GIS-users.</source>
+<target xml:lang="fr">The skills tested in this exercise are necessary for all GIS-users.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</source>
+<target xml:lang="fr">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>:
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>:
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Attribute table<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Attribute table<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitization- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitization- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Download the data folder <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip)</ept> and save it on your PC. Unzip the .zip file.
+The folder is called “Module_3_Exercise_1_Flood_Nigeria" and contains the entire <bpt id="2">[</bpt>standard folder structure<ept id="2">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)</ept> with all data in the input folder and the additional documentation in the documentation folder.</source>
+<target xml:lang="fr">Download the data folder <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip)</ept> and save it on your PC. Unzip the .zip file.
+The folder is called “Module_3_Exercise_1_Flood_Nigeria" and contains the entire <bpt id="2">[</bpt>standard folder structure<ept id="2">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)</ept> with all data in the input folder and the additional documentation in the documentation folder.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Nigeria: Administrative Division with Aggregated Population ("kontur_boundaries_NG_20230628.gpkg")<ept id="1">](https://data.humdata.org/dataset/kontur-boundaries-nigeria)</ept>-Kontor</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Nigeria: Administrative Division with Aggregated Population ("kontur_boundaries_NG_20230628.gpkg")<ept id="1">](https://data.humdata.org/dataset/kontur-boundaries-nigeria)</ept>-Kontor</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Nigeria : Flood data (“Nigeria_flood_2022_affacted_population”)<ept id="1">](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)</ept>- UN OCHA. This dataset was manipulated for training purposes.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Nigeria : Flood data (“Nigeria_flood_2022_affacted_population”)<ept id="1">](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)</ept>- UN OCHA. This dataset was manipulated for training purposes.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Satellite detected water extents between 1 and 25 October 2022 over Nigeria (VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp)<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-between-1-and-25-october-2022-over-nigeria?force_layout=desktop)</ept> UNOSAT</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Satellite detected water extents between 1 and 25 October 2022 over Nigeria (VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp)<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-between-1-and-25-october-2022-over-nigeria?force_layout=desktop)</ept> UNOSAT</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Our goal is to produce an overview of the impact of the 2022 flood in the state of Burco in Nigeria. To this end, we will visualise the state and the affected districts, plus we will digitise communities which are reportedly affected.</source>
+<target xml:lang="fr">Our goal is to produce an overview of the impact of the 2022 flood in the state of Burco in Nigeria. To this end, we will visualise the state and the affected districts, plus we will digitise communities which are reportedly affected.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</source>
+<target xml:lang="fr">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Once the project is created <bpt id="1">[</bpt>save the project<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#save)</ept> in the “project” folder of the exercise “Module_3_Exercise_1_Flood_Nigeria”. To do that click on <ph id="2">`Project`</ph> → <ph id="3">`Save as`</ph> and navigate to the folder. Name the project “Nigeria_Borno_flood_2022”.</source>
+<target xml:lang="fr">Once the project is created <bpt id="1">[</bpt>save the project<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#save)</ept> in the “project” folder of the exercise “Module_3_Exercise_1_Flood_Nigeria”. To do that click on <ph id="2">`Project`</ph> → <ph id="3">`Save as`</ph> and navigate to the folder. Name the project “Nigeria_Borno_flood_2022”.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Load the GeoPackage "kontur_boundaries_NG_20230628.gpkg" in your project by drag and drop (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="2">`Layer`</ph> → <ph id="3">`Add Layer`</ph> → <ph id="4">`Add Vector Layer`</ph>. Click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept> and navigate to "kontur_boundaries_NG_20230628.gpkg". Select the file and click <ph id="6">`Open`</ph>. Back in QGIS click <ph id="7">`Add`</ph> (<bpt id="8">[</bpt>Wiki Video<ept id="8">](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)</ept>).
+This dataset contains all administrative division areas (admin 0 to 5) with the respective population of the areas.</source>
+<target xml:lang="fr">Load the GeoPackage "kontur_boundaries_NG_20230628.gpkg" in your project by drag and drop (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)</ept>). Or click on <ph id="2">`Layer`</ph> → <ph id="3">`Add Layer`</ph> → <ph id="4">`Add Vector Layer`</ph>. Click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept> and navigate to "kontur_boundaries_NG_20230628.gpkg". Select the file and click <ph id="6">`Open`</ph>. Back in QGIS click <ph id="7">`Add`</ph> (<bpt id="8">[</bpt>Wiki Video<ept id="8">](/content/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)</ept>).
+This dataset contains all administrative division areas (admin 0 to 5) with the respective population of the areas.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+GeoPackage files can contain multiple files and even entire QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">First, we want to export Borno state from kontur_boundaries_NG_20230628 to have it as a stand-alone vector layer. To do that:</source>
+<target xml:lang="fr">First, we want to export Borno state from kontur_boundaries_NG_20230628 to have it as a stand-alone vector layer. To do that:</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of "kontur_boundaries_NG_20230628" by right click on the layer → <ph id="1">`Open Attribute Table`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>).</source>
+<target xml:lang="fr">Open the attribute table of "kontur_boundaries_NG_20230628" by right click on the layer → <ph id="1">`Open Attribute Table`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Find the row of Borno state and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Borno state will turn yellow on the map canvas. You can right-click on the row and click <ph id="1">`Zoom to Feature`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)</ept>).</source>
+<target xml:lang="fr">Find the row of Borno state and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Borno state will turn yellow on the map canvas. You can right-click on the row and click <ph id="1">`Zoom to Feature`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Now right-click on the layer in the Layer Panel and click on <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as`</ph>. We want to save Borno as a GeoPackage, so adjust <ph id="3">`Format`</ph> accordingly. Click on the three points and navigate to your <ph id="4">`temp`</ph> folder. Here you can give it the layer the name “AOI_Borno_admin1” and click <ph id="5">`Save`</ph>. Now you should see the same name in the <ph id="6">`Layer name`</ph> field. Click <ph id="7">`OK`</ph> (<bpt id="8">[</bpt>Wiki Video<ept id="8">](/content/Wiki/en_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file)</ept>)</source>
+<target xml:lang="fr">Now right-click on the layer in the Layer Panel and click on <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as`</ph>. We want to save Borno as a GeoPackage, so adjust <ph id="3">`Format`</ph> accordingly. Click on the three points and navigate to your <ph id="4">`temp`</ph> folder. Here you can give it the layer the name “AOI_Borno_admin1” and click <ph id="5">`Save`</ph>. Now you should see the same name in the <ph id="6">`Layer name`</ph> field. Click <ph id="7">`OK`</ph> (<bpt id="8">[</bpt>Wiki Video<ept id="8">](/content/Wiki/en_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file)</ept>)</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">In the next steps, we want to create a vector layer with admin 2 areas or in Nigeria called Local Government Areas (LGA) with the population in our project.
+Since we only want the LGAs we need to export those from the original dataset.</source>
+<target xml:lang="fr">In the next steps, we want to create a vector layer with admin 2 areas or in Nigeria called Local Government Areas (LGA) with the population in our project.
+Since we only want the LGAs we need to export those from the original dataset.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of the layer "kontur_boundaries_NG_20230628" by right-clicking on the layer → <ph id="1">`Attribute Table`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>). Check out the attribute table. You see two columns of admin levels "admin levels" and "<bpt id="3">[</bpt>osm_admin_levels<ept id="3">](https://wiki.openstreetmap.org/wiki/Key:admin_level)</ept>". Both have different values. In the <bpt id="4">[</bpt>metadata<ept id="4">](https://data.humdata.org/dataset/kontur-boundaries-nigeria)</ept> of the dataset on HDX, we can see that the column "osm_admin_levels" refers to the admin levels used in OpenStreetMaps (OSM). There is a <bpt id="5">[</bpt>list<ept id="5">](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries)</ept> of which official admin levels correspond to which OSM admin levels. The LGAs correspond to osm admin <bpt id="6">__</bpt>level 6<ept id="6">__</ept>. This means we want to export all features with <ph id="7">`osm_admin_level`</ph> = <ph id="8">`6`</ph>.</source>
+<target xml:lang="fr">Open the attribute table of the layer "kontur_boundaries_NG_20230628" by right-clicking on the layer → <ph id="1">`Attribute Table`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>). Check out the attribute table. You see two columns of admin levels "admin levels" and "<bpt id="3">[</bpt>osm_admin_levels<ept id="3">](https://wiki.openstreetmap.org/wiki/Key:admin_level)</ept>". Both have different values. In the <bpt id="4">[</bpt>metadata<ept id="4">](https://data.humdata.org/dataset/kontur-boundaries-nigeria)</ept> of the dataset on HDX, we can see that the column "osm_admin_levels" refers to the admin levels used in OpenStreetMaps (OSM). There is a <bpt id="5">[</bpt>list<ept id="5">](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries)</ept> of which official admin levels correspond to which OSM admin levels. The LGAs correspond to osm admin <bpt id="6">__</bpt>level 6<ept id="6">__</ept>. This means we want to export all features with <ph id="7">`osm_admin_level`</ph> = <ph id="8">`6`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">To export exactly these features we will use the tool <ph id="1">`Extract by attribute`</ph>. Open the <ph id="2">`Processing Toolbox`</ph> (<bpt id="3">[</bpt>here is how<ept id="3">](/content/Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)</ept>) and search for the tool.
+    Open the tool and choose as <ph id="4">`Input Layer`</ph> the “kontur_boundaries_NG_20230628.gpkg“ layer. Under <ph id="5">`Selection attribute`</ph> choose the column <ph id="6">`osm_admin_level`</ph>. The <ph id="7">`Operator`</ph> has to be <ph id="8">`=`</ph> and as <ph id="9">`value`</ph> we use <ph id="10">`6`</ph> since the LGAs have the osm_admin_level 6.</source>
+<target xml:lang="fr">To export exactly these features we will use the tool <ph id="1">`Extract by attribute`</ph>. Open the <ph id="2">`Processing Toolbox`</ph> (<bpt id="3">[</bpt>here is how<ept id="3">](/content/Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)</ept>) and search for the tool.
+    Open the tool and choose as <ph id="4">`Input Layer`</ph> the “kontur_boundaries_NG_20230628.gpkg“ layer. Under <ph id="5">`Selection attribute`</ph> choose the column <ph id="6">`osm_admin_level`</ph>. The <ph id="7">`Operator`</ph> has to be <ph id="8">`=`</ph> and as <ph id="9">`value`</ph> we use <ph id="10">`6`</ph> since the LGAs have the osm_admin_level 6.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Extracted (attribute)`</ph>, click on the three dots → <ph id="2">`Save to GeoPackage`</ph>, navigate to your <ph id="3">`temp`</ph> folder, and call the new layer “Nigeria_admin2_pop”. Click <ph id="4">`Save`</ph>. Give the layer the same name ( “Nigeria_admin2_pop”). Click <ph id="5">`OK`</ph> and then click <ph id="6">`Run`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Extracted (attribute)`</ph>, click on the three dots → <ph id="2">`Save to GeoPackage`</ph>, navigate to your <ph id="3">`temp`</ph> folder, and call the new layer “Nigeria_admin2_pop”. Click <ph id="4">`Save`</ph>. Give the layer the same name ( “Nigeria_admin2_pop”). Click <ph id="5">`OK`</ph> and then click <ph id="6">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Now we need to extract all LGAs in Borno. For that, we will use the Tool <ph id="1">`Extract by Location`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_non_spatial_queries_wiki.md#select-by-expression)</ept>).  Search the tool in the <ph id="3">`Processing Toolbox`</ph> and open it.</source>
+<target xml:lang="fr">Now we need to extract all LGAs in Borno. For that, we will use the Tool <ph id="1">`Extract by Location`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_non_spatial_queries_wiki.md#select-by-expression)</ept>).  Search the tool in the <ph id="3">`Processing Toolbox`</ph> and open it.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input Layer`</ph> we will use “Nigeria_admin2_pop”.</source>
+<target xml:lang="fr">As <ph id="1">`Input Layer`</ph> we will use “Nigeria_admin2_pop”.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">For <ph id="1">`By comparing to the features from`</ph> we use the layer “AOI_Borno_admin1”.</source>
+<target xml:lang="fr">For <ph id="1">`By comparing to the features from`</ph> we use the layer “AOI_Borno_admin1”.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`are within`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Geometric predicate`</ph> we use <ph id="2">`are within`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">To save the output click on the three points at <ph id="1">`Extract (location)`</ph> → <ph id="2">`Save to GeoPackage`</ph> and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name "Borno_admin2_pop". Give the new layer the same <ph id="4">`Layer name`</ph> and click <ph id="5">`Run`</ph>.</source>
+<target xml:lang="fr">To save the output click on the three points at <ph id="1">`Extract (location)`</ph> → <ph id="2">`Save to GeoPackage`</ph> and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name "Borno_admin2_pop". Give the new layer the same <ph id="4">`Layer name`</ph> and click <ph id="5">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table of the new layer. You should have 27 features.</source>
+<target xml:lang="fr">Open the Attribute table of the new layer. You should have 27 features.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_extract_by_location_nigeria_flood.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_extract_by_location_nigeria_flood.png</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">name: m3ex4_extract_by_location</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">name: m3ex4_extract_by_location</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">We have our admin areas in place and can now start to enrich these layer with additional data regarding the flood of 2022.
+Open the Excel or pdf file "Nigeria_flood_2022_affacted_population" and open the sheet Borno. You find a table with the LGAs and communities which were affected by the flood. Now we want to add some of the information to our “Borno_admin2_pop” layer. For that, there are two ways. One simple, but more time-consuming, and one more complicated, but much faster. We will show the easy way, but in the dropdown below you can find the tutorial for the advanced way as well.</source>
+<target xml:lang="fr">We have our admin areas in place and can now start to enrich these layer with additional data regarding the flood of 2022.
+Open the Excel or pdf file "Nigeria_flood_2022_affacted_population" and open the sheet Borno. You find a table with the LGAs and communities which were affected by the flood. Now we want to add some of the information to our “Borno_admin2_pop” layer. For that, there are two ways. One simple, but more time-consuming, and one more complicated, but much faster. We will show the easy way, but in the dropdown below you can find the tutorial for the advanced way as well.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of “Borno_admin2_pop” and activate the editing mode by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)</ept>). Now you are able to edit the data directly in the table.</source>
+<target xml:lang="fr">Open the attribute table of “Borno_admin2_pop” and activate the editing mode by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)</ept>). Now you are able to edit the data directly in the table.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">First, we add a new column with the name “Flood_affacted”. To do so, click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionNewAttribute.png)</ept>. In the <ph id="2">`Add field`</ph> window, you have to add the name and set the <ph id="3">`Type`</ph> to <ph id="4">`Text(string)`</ph>. Click <ph id="5">`OK`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](/content/Wiki/en_qgis_attribute_table_wiki.md#add-new-column)</ept>).</source>
+<target xml:lang="fr">First, we add a new column with the name “Flood_affacted”. To do so, click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionNewAttribute.png)</ept>. In the <ph id="2">`Add field`</ph> window, you have to add the name and set the <ph id="3">`Type`</ph> to <ph id="4">`Text(string)`</ph>. Click <ph id="5">`OK`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](/content/Wiki/en_qgis_attribute_table_wiki.md#add-new-column)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">In the next step check in the Excel/PDF table which LGAs were affected and put “Yes” in the attribute table for those LGAs.</source>
+<target xml:lang="fr">In the next step check in the Excel/PDF table which LGAs were affected and put “Yes” in the attribute table for those LGAs.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">When you are done, click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept> (<bpt id="3">[</bpt>Wiki Video<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)</ept>).</source>
+<target xml:lang="fr">When you are done, click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept> (<bpt id="3">[</bpt>Wiki Video<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept>).</source>
+<target xml:lang="fr">To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer "Borno_admin2_pop" in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer "Borno_admin2_pop" in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>. Under <ph id="2">`Value`</ph> select "Flood_affected".</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>. Under <ph id="2">`Value`</ph> select "Flood_affected".</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Further down the window, click on <ph id="1">`Classify`</ph>. Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Further down the window, click on <ph id="1">`Classify`</ph>. Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_categorized_classification_nigeria_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_categorized_classification_nigeria_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: m3ex4_classification</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: m3ex4_classification</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Next, we want to visualise the affected communities which are listed in the Nigeria_flood_2022_affected_population table. To find these communities in QGIS, we need two things. An OpenStreetMap base map and the plugin <ph id="1">`OSM Place Search`</ph>.</source>
+<target xml:lang="fr">Next, we want to visualise the affected communities which are listed in the Nigeria_flood_2022_affected_population table. To find these communities in QGIS, we need two things. An OpenStreetMap base map and the plugin <ph id="1">`OSM Place Search`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">To add the OSM as a base map click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Layer…`</ph>. Choose <ph id="4">`OpenStreetMap`</ph> and click <ph id="5">`Add`</ph>.
+    Arrange your layer in the <ph id="6">`Layer Panel`</ph> so the OSM is at the bottom (<bpt id="7">[</bpt>Wiki Video<ept id="7">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept>).
+<ph id="8">    :::{Tip}</ph>
+    You cannot interact with a base map!
+<ph id="9">    :::</ph></source>
+<target xml:lang="fr">To add the OSM as a base map click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Layer…`</ph>. Choose <ph id="4">`OpenStreetMap`</ph> and click <ph id="5">`Add`</ph>.
+    Arrange your layer in the <ph id="6">`Layer Panel`</ph> so the OSM is at the bottom (<bpt id="7">[</bpt>Wiki Video<ept id="7">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept>).
+<ph id="8">    :::{Tip}</ph>
+    You cannot interact with a base map!
+<ph id="9">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">To add the plugin <ph id="1">`OSM Place Search`</ph>, click on <ph id="2">`Plugins`</ph> → <ph id="3">`Manage and Install Plugins…`</ph> → <ph id="4">`All`</ph> and search for <ph id="5">`OSM Place Search`</ph>. Once you have found it, click on it and click <ph id="6">`Install Plugin`</ph>. You can open the <ph id="7">`OSM Place Search Panel`</ph> like every other panel by clicking on <ph id="8">`View`</ph> → <ph id="9">`Panels`</ph> and checking <ph id="10">`OSM Place Search Panel`</ph> (<bpt id="11">[</bpt>Wiki Video<ept id="11">](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)</ept>).</source>
+<target xml:lang="fr">To add the plugin <ph id="1">`OSM Place Search`</ph>, click on <ph id="2">`Plugins`</ph> → <ph id="3">`Manage and Install Plugins…`</ph> → <ph id="4">`All`</ph> and search for <ph id="5">`OSM Place Search`</ph>. Once you have found it, click on it and click <ph id="6">`Install Plugin`</ph>. You can open the <ph id="7">`OSM Place Search Panel`</ph> like every other panel by clicking on <ph id="8">`View`</ph> → <ph id="9">`Panels`</ph> and checking <ph id="10">`OSM Place Search Panel`</ph> (<bpt id="11">[</bpt>Wiki Video<ept id="11">](/content/Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">In the panel, you can search for places on the OpenStreetMap by typing the name of the place in the search bar. Often it makes sense to add additional information like the name of the country. For example, try "Laujeri Bulama, Nigeria".</source>
+<target xml:lang="fr">In the panel, you can search for places on the OpenStreetMap by typing the name of the place in the search bar. Often it makes sense to add additional information like the name of the country. For example, try "Laujeri Bulama, Nigeria".</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Now we have all our tools in place. In the next step, we create a new point vector layer from scratch to digitise the location of the affected communities.</source>
+<target xml:lang="fr">Now we have all our tools in place. In the next step, we create a new point vector layer from scratch to digitise the location of the affected communities.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Click on  <ph id="1">`Layer`</ph> → <ph id="2">`Create Layer`</ph> → <ph id="3">`New GeoPackage Layer`</ph> (<bpt id="4">[</bpt>Wiki Video<ept id="4">](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)</ept>)</source>
+<target xml:lang="fr">Click on  <ph id="1">`Layer`</ph> → <ph id="2">`Create Layer`</ph> → <ph id="3">`New GeoPackage Layer`</ph> (<bpt id="4">[</bpt>Wiki Video<ept id="4">](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)</ept>)</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Database`</ph> click on <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to <ph id="3">`temp`</ph> folder. Give the new dataset the name "Borno_affected_communities_point". Click <ph id="4">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Database`</ph> click on <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to <ph id="3">`temp`</ph> folder. Give the new dataset the name "Borno_affected_communities_point". Click <ph id="4">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometry type`</ph>: Select <ph id="2">`Point`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Geometry type`</ph>: Select <ph id="2">`Point`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Additional dimension`</ph> you should always make sure that you check <ph id="2">`None`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Additional dimension`</ph> you should always make sure that you check <ph id="2">`None`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS.</source>
+<target xml:lang="fr">Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`New Field`</ph> you can add columns to the new layer. Add the column "Name".</source>
+<target xml:lang="fr">Under <ph id="1">`New Field`</ph> you can add columns to the new layer. Add the column "Name".</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Name`</ph> = "Name"</source>
+<target xml:lang="fr"><ph id="1">`Name`</ph> = "Name"</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Type`</ph>: Select <ph id="2">`Text Data`</ph></source>
+<target xml:lang="fr"><ph id="1">`Type`</ph>: Select <ph id="2">`Text Data`</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Add to Fields List`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept> to add the new column to the <ph id="3">`Fields List`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Add to Fields List`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept> to add the new column to the <ph id="3">`Fields List`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Your new layer will appear in the <ph id="1">`Layer Panel`</ph>.</source>
+<target xml:lang="fr">Your new layer will appear in the <ph id="1">`Layer Panel`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_create_point_layer_nigeria_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_create_point_layer_nigeria_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">name: m3ex4_create_point_layer</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">name: m3ex4_create_point_layer</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Currently the new “Borno_affected_communities_point” is empty. To add features we can use the <ph id="1">`Digitizing Toolbar`</ph>. If you cannot see the toolbar, use <ph id="2">`View`</ph> → <ph id="3">`Toolbars`</ph> and check <ph id="4">`Digitizing Toolbar`</ph> (<bpt id="5">[</bpt>Wiki Video<ept id="5">](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)</ept>). <bpt id="6">![</bpt><ept id="6">](/fig/Digitizing_Toolbar.png)</ept></source>
+<target xml:lang="fr">Currently the new “Borno_affected_communities_point” is empty. To add features we can use the <ph id="1">`Digitizing Toolbar`</ph>. If you cannot see the toolbar, use <ph id="2">`View`</ph> → <ph id="3">`Toolbars`</ph> and check <ph id="4">`Digitizing Toolbar`</ph> (<bpt id="5">[</bpt>Wiki Video<ept id="5">](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)</ept>). <bpt id="6">![</bpt><ept id="6">](/fig/Digitizing_Toolbar.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitisation toolbar and click on<bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept>. Now the layer is in the editing mode.</source>
+<target xml:lang="fr">Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitisation toolbar and click on<bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept>. Now the layer is in the editing mode.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionCapturePoint.png)</ept>. Left-click on the feature you want to digitise.</source>
+<target xml:lang="fr">Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionCapturePoint.png)</ept>. Left-click on the feature you want to digitise.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Once you click, a window will appear <ph id="1">` Borno_affected_communities_point Feature Attribute`</ph>. Here you can add the name of the location.</source>
+<target xml:lang="fr">Once you click, a window will appear <ph id="1">` Borno_affected_communities_point Feature Attribute`</ph>. Here you can add the name of the location.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Repeat the same process for as many communities as you like.</source>
+<target xml:lang="fr">Repeat the same process for as many communities as you like.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Once you are done with digitising click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits.</source>
+<target xml:lang="fr">Once you are done with digitising click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Click again on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to end the editing mode.</source>
+<target xml:lang="fr">Click again on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to end the editing mode.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">In this step, we want to add information about the population to the map. This will help us to visualise where the most people are potentially affected.
+Since the layer "Borno_admin2_pop" contains this information we can dublicate this layer.</source>
+<target xml:lang="fr">In this step, we want to add information about the population to the map. This will help us to visualise where the most people are potentially affected.
+Since the layer "Borno_admin2_pop" contains this information we can dublicate this layer.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">To do that right click on the layer → <ph id="1">`Duplicate Layer`</ph>. The name of the new layer will be "Borno_admin2_pop_copy".</source>
+<target xml:lang="fr">To do that right click on the layer → <ph id="1">`Duplicate Layer`</ph>. The name of the new layer will be "Borno_admin2_pop_copy".</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Since absolute population numbers are natural numbers, we cannot use categorised classification. Instead, we use the option <ph id="1">`Graduated`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_graduated_wiki.md)</ept>).</source>
+<target xml:lang="fr">Since absolute population numbers are natural numbers, we cannot use categorised classification. Instead, we use the option <ph id="1">`Graduated`</ph> (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_graduated_wiki.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer “Borno_admin2_pop_copy” in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer “Borno_admin2_pop_copy” in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menue. Open it and choose <ph id="1">`Graduated`</ph>.</source>
+<target xml:lang="fr">On the top you find a dropdown menue. Open it and choose <ph id="1">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Value`</ph> select "Population".</source>
+<target xml:lang="fr">Under <ph id="1">`Value`</ph> select "Population".</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Color ramp`</ph>: Select a white-to-green color ramp. Since we want to visualise the population, it is important to use neutral colours.</source>
+<target xml:lang="fr"><ph id="1">`Color ramp`</ph>: Select a white-to-green color ramp. Since we want to visualise the population, it is important to use neutral colours.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Mode`</ph>: Equal Count (Quantile)</source>
+<target xml:lang="fr"><ph id="1">`Mode`</ph>: Equal Count (Quantile)</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Classes`</ph>: 5</source>
+<target xml:lang="fr"><ph id="1">`Classes`</ph>: 5</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_graduated_classification_nigeria_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_graduated_classification_nigeria_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: m3ex4_graduated_classif</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: m3ex4_graduated_classif</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">QGIS created now five classes covering the entire range of population numbers in Borno state. Click on the <ph id="1">`Histogram`</ph> Tab → <ph id="2">`Load Values`</ph>. Here you see the distribution of values in the dataset and the limits of the classes. We see that most LGAs have a population below 300 people. Try out some of the other modes of classification, such as natural breaks or equal intervals.</source>
+<target xml:lang="fr">QGIS created now five classes covering the entire range of population numbers in Borno state. Click on the <ph id="1">`Histogram`</ph> Tab → <ph id="2">`Load Values`</ph>. Here you see the distribution of values in the dataset and the limits of the classes. We see that most LGAs have a population below 300 people. Try out some of the other modes of classification, such as natural breaks or equal intervals.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_graduated_classification_Histogram_nigeria_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">name: m3ex4_histogram</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">name: m3ex4_histogram</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">To visualise “Borno_admin2_pop” (showing affected LGAs) and “Borno_admin2_pop_copy” (showing population data) together, we need to change the symbology of "Borno_admin2_pop".
+First, right-click on the layer “Borno_admin2_pop” in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.
+Currently, we use the <ph id="4">`Categorized`</ph> classification. We want to keep that. However, we only want to show affected LGAs. Hence, we uncheck the row that corresponds to the LGAs without <ph id="5">`Affected`</ph> = <ph id="6">`Yes`</ph>.</source>
+<target xml:lang="fr">To visualise “Borno_admin2_pop” (showing affected LGAs) and “Borno_admin2_pop_copy” (showing population data) together, we need to change the symbology of "Borno_admin2_pop".
+First, right-click on the layer “Borno_admin2_pop” in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.
+Currently, we use the <ph id="4">`Categorized`</ph> classification. We want to keep that. However, we only want to show affected LGAs. Hence, we uncheck the row that corresponds to the LGAs without <ph id="5">`Affected`</ph> = <ph id="6">`Yes`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer "Borno_admin2_pop" in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer "Borno_admin2_pop" in the <ph id="1">`Layer Panel`</ph> → <ph id="2">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="3">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Then, do a double-click on the <ph id="1">`Yes`</ph> row. Here we have two options. We can use a grid or only the borders.</source>
+<target xml:lang="fr">Then, do a double-click on the <ph id="1">`Yes`</ph> row. Here we have two options. We can use a grid or only the borders.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">To use a grid scroll down and select one that suits you. Then click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">To use a grid scroll down and select one that suits you. Then click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_grid_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_grid_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">To only use borders, click on <ph id="1">`simple fill`</ph> → <ph id="2">`Fill style`</ph> and select <ph id="3">`No Brusch`</ph>. Adjust the <ph id="4">`Stroke Color`</ph> to a red or another bride colour. Increase the <ph id="5">`Stroke width`</ph> to make the borders bigger. Then click <ph id="6">`OK`</ph>.</source>
+<target xml:lang="fr">To only use borders, click on <ph id="1">`simple fill`</ph> → <ph id="2">`Fill style`</ph> and select <ph id="3">`No Brusch`</ph>. Adjust the <ph id="4">`Stroke Color`</ph> to a red or another bride colour. Increase the <ph id="5">`Stroke width`</ph> to make the borders bigger. Then click <ph id="6">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_now_brush_nigeria_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">For a more detailed idea of the flood extend we can load the layer "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp" which shows the maximum extent of surface water between 9th and 30th October 2022. If you like you can also load "VIIRS_20220901_20220930_PermanentWater_Nigeria.shp". This layer shows lakes and other permanent surface water features.
+Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-layer-data)</ept>).</source>
+<target xml:lang="fr">For a more detailed idea of the flood extend we can load the layer "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp" which shows the maximum extent of surface water between 9th and 30th October 2022. If you like you can also load "VIIRS_20220901_20220930_PermanentWater_Nigeria.shp". This layer shows lakes and other permanent surface water features.
+Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-layer-data)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Right click on the data layer, click on <ph id="1">`Properties`</ph>.</source>
+<target xml:lang="fr">Right click on the data layer, click on <ph id="1">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">The "Layer Properties"-window of the data layer will open. Click on <ph id="1">`Information`</ph>.</source>
+<target xml:lang="fr">The "Layer Properties"-window of the data layer will open. Click on <ph id="1">`Information`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Under the headline "Coordinate Reference System (CRS)" you find all information about the CRS. The most important are:</source>
+<target xml:lang="fr">Under the headline "Coordinate Reference System (CRS)" you find all information about the CRS. The most important are:</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name:<ept id="1">__</ept>     Here you find the EPSG Code.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name:<ept id="1">__</ept>     Here you find the EPSG Code.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Unites:<ept id="1">__</ept>    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Unites:<ept id="1">__</ept>    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)</ept>).</source>
+<target xml:lang="fr">This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first (<bpt id="1">[</bpt>Wiki Video<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Click on the <ph id="1">`Vector`</ph> Tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph> or search for the tool in the <ph id="4">`Processing Toolbox`</ph>.</source>
+<target xml:lang="fr">Click on the <ph id="1">`Vector`</ph> Tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph> or search for the tool in the <ph id="4">`Processing Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input layer`</ph> select "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp".</source>
+<target xml:lang="fr">As <ph id="1">`Input layer`</ph> select "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp".</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Select as target CRS/ EPSG-Code <bpt id="1">__</bpt>4326<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Select as target CRS/ EPSG-Code <bpt id="1">__</bpt>4326<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Save the new file in your <ph id="1">`temp`</ph> folder by clicking on the three dots <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> next to <ph id="3">`Reprojected`</ph>, specify the file name as "Flood_extand_Nigeria_october_2022_reprojected.</source>
+<target xml:lang="fr">Save the new file in your <ph id="1">`temp`</ph> folder by clicking on the three dots <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> next to <ph id="3">`Reprojected`</ph>, specify the file name as "Flood_extand_Nigeria_october_2022_reprojected.</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Delete the old layer from the layer panel by right click on the layer → <ph id="1">`Remove layer`</ph>.</source>
+<target xml:lang="fr">Delete the old layer from the layer panel by right click on the layer → <ph id="1">`Remove layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">The flood extend layer covers the entirety of Nigeria. We can use the <ph id="1">`Clip`</ph> tool to cut it to the shape of Borno state (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_geoprocessing_wiki.md#clip)</ept>).</source>
+<target xml:lang="fr">The flood extend layer covers the entirety of Nigeria. We can use the <ph id="1">`Clip`</ph> tool to cut it to the shape of Borno state (<bpt id="2">[</bpt>Wiki Video<ept id="2">](/content/Wiki/en_qgis_geoprocessing_wiki.md#clip)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](/content/Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)</ept>) and search for the <ph id="3">`Clip`</ph> tool.
+<ph id="4">    :::{Note}</ph>
+    There are <bpt id="5">__</bpt>two<ept id="5">__</ept> versions of the <ph id="6">`Clip`</ph> tool. Since we work with vector data, make sure to use the one under "Vector overlay".
+<ph id="7">    :::</ph></source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> (<bpt id="2">[</bpt>here is how<ept id="2">](/content/Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)</ept>) and search for the <ph id="3">`Clip`</ph> tool.
+<ph id="4">    :::{Note}</ph>
+    There are <bpt id="5">__</bpt>two<ept id="5">__</ept> versions of the <ph id="6">`Clip`</ph> tool. Since we work with vector data, make sure to use the one under "Vector overlay".
+<ph id="7">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input layer`</ph>: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”</source>
+<target xml:lang="fr"><ph id="1">`Input layer`</ph>: "VIIRS_20220901_20220930_MaximumFloodWaterExtent_Nigeria.shp”</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Overlay layer`</ph>: “AOI_Borno_admin1”</source>
+<target xml:lang="fr"><ph id="1">`Overlay layer`</ph>: “AOI_Borno_admin1”</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">To save the output click on the three points at <ph id="1">`Clipped`</ph> → <ph id="2">`Save to GeoPackage`</ph>and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name "Flood_extend_october_2022_reprojected_Borno". Give the new layer the same <ph id="4">`Layer name`</ph> and click <ph id="5">`Run`</ph>.</source>
+<target xml:lang="fr">To save the output click on the three points at <ph id="1">`Clipped`</ph> → <ph id="2">`Save to GeoPackage`</ph>and navigate to your <ph id="3">`temp`</ph> folder. Save the new layer under the name "Flood_extend_october_2022_reprojected_Borno". Give the new layer the same <ph id="4">`Layer name`</ph> and click <ph id="5">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_clip_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_clip_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Great, we have done our visualisation. WELL DONE!
+Your results should look similar to the image below.</source>
+<target xml:lang="fr">Great, we have done our visualisation. WELL DONE!
+Your results should look similar to the image below.</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_result_flood_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_result_flood_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

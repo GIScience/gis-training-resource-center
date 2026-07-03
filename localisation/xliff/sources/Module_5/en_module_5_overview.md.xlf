@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_module_5_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Intermediate GIS Operations <bpt id="1">&lt;a id="intermediate-gis-operations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Intermediate GIS Operations <bpt id="1">&lt;a id="intermediate-gis-operations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS.</source>
+<target xml:lang="fr">This chapter introduces more intermediate GIS operations that you will most likely use in your work with QGIS.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The first chapter covers spatial operations that manipulate data according to their spatial characteristics and distribution, such as <bpt id="1">__</bpt>clipping<ept id="1">__</ept>, <bpt id="2">__</bpt>buffering<ept id="2">__</ept>, <bpt id="3">__</bpt>dissolving<ept id="3">__</ept>, <bpt id="4">__</bpt>spatial joins<ept id="4">__</ept>, or <bpt id="5">__</bpt>selecting by location<ept id="5">__</ept>.</source>
+<target xml:lang="fr">The first chapter covers spatial operations that manipulate data according to their spatial characteristics and distribution, such as <bpt id="1">__</bpt>clipping<ept id="1">__</ept>, <bpt id="2">__</bpt>buffering<ept id="2">__</ept>, <bpt id="3">__</bpt>dissolving<ept id="3">__</ept>, <bpt id="4">__</bpt>spatial joins<ept id="4">__</ept>, or <bpt id="5">__</bpt>selecting by location<ept id="5">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">For example, you can select the hospitals within a certain distance of an area, or delete all the roads that are not within a part of the city.</source>
+<target xml:lang="fr">For example, you can select the hospitals within a certain distance of an area, or delete all the roads that are not within a part of the city.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The second chapter introduces operations that manipulate the non-spatial information, such as <bpt id="1">__</bpt>table functions<ept id="1">__</ept>, <bpt id="2">__</bpt>non-spatial joins<ept id="2">__</ept> or <bpt id="3">__</bpt>non-spatial queries<ept id="3">__</ept>.</source>
+<target xml:lang="fr">The second chapter introduces operations that manipulate the non-spatial information, such as <bpt id="1">__</bpt>table functions<ept id="1">__</ept>, <bpt id="2">__</bpt>non-spatial joins<ept id="2">__</ept> or <bpt id="3">__</bpt>non-spatial queries<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 200 700</ph></source>
+<target xml:lang="fr"><ph id="1">:::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 200 700</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Spatial Data Processing<ept id="2">](/content/Module_5/en_qgis_spatial_tools.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Spatial Data Processing<ept id="2">](/content/Module_5/en_qgis_spatial_tools.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">know the spatial relationships,</source>
+<target xml:lang="fr">know the spatial relationships,</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">understand the concept of spatial joins,</source>
+<target xml:lang="fr">understand the concept of spatial joins,</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">understand the geometrical operators used in QGIS.</source>
+<target xml:lang="fr">understand the geometrical operators used in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Overlay Operations (Clip, Dissolve, Buffer)<ept id="2">](/content/Module_5/en_qgis_overlay_operations.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Overlay Operations (Clip, Dissolve, Buffer)<ept id="2">](/content/Module_5/en_qgis_overlay_operations.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">understand overlay operations in QGIS,</source>
+<target xml:lang="fr">understand overlay operations in QGIS,</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">know how to perform clipping, buffering, and dissolving operations,</source>
+<target xml:lang="fr">know how to perform clipping, buffering, and dissolving operations,</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">understand more advanced clipping operations.</source>
+<target xml:lang="fr">understand more advanced clipping operations.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Centroids<ept id="2">](/content/Module_5/en_qgis_centroids.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Centroids<ept id="2">](/content/Module_5/en_qgis_centroids.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">know how to use centroids in QGIS.</source>
+<target xml:lang="fr">know how to use centroids in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 4: Non-Spatial processing<ept id="2">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 4: Non-Spatial processing<ept id="2">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">know how to use table functions,</source>
+<target xml:lang="fr">know how to use table functions,</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">know how o perform non-spatial data queries,</source>
+<target xml:lang="fr">know how o perform non-spatial data queries,</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">know how to perform non-spatial joins.</source>
+<target xml:lang="fr">know how to perform non-spatial joins.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 5<ept id="2">](/content/Module_5/en_qgis_module_5_exercises.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 5<ept id="2">](/content/Module_5/en_qgis_module_5_exercises.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Here you can find all exercises for module 5.</source>
+<target xml:lang="fr">Here you can find all exercises for module 5.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

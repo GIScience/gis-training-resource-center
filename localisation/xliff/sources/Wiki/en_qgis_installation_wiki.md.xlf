@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_installation_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">QGIS installation <bpt id="1">&lt;a id="qgis-installation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS installation <bpt id="1">&lt;a id="qgis-installation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers.</source>
+<target xml:lang="fr">QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Generally, we recommend using the latest Long Term Release, because it is the most stable and contains the fewest bugs.</source>
+<target xml:lang="fr">Generally, we recommend using the latest Long Term Release, because it is the most stable and contains the fewest bugs.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You can download the latest version here:</source>
+<target xml:lang="fr">You can download the latest version here:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Go to the <bpt id="1">[</bpt><bpt id="2">__</bpt>QGIS download page<ept id="2">__</ept><ept id="1">](https://www.qgis.org/en/site/forusers/download.html)</ept>.</source>
+<target xml:lang="fr">Go to the <bpt id="1">[</bpt><bpt id="2">__</bpt>QGIS download page<ept id="2">__</ept><ept id="1">](https://www.qgis.org/en/site/forusers/download.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Download for Windows`</ph>, <ph id="2">`Download for macOS`</ph> or <ph id="3">`Download for Linux`</ph>, depending on your system.</source>
+<target xml:lang="fr">Select <ph id="1">`Download for Windows`</ph>, <ph id="2">`Download for macOS`</ph> or <ph id="3">`Download for Linux`</ph>, depending on your system.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Looking for the most stable version? Get QGIS 3.28 LTR`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Looking for the most stable version? Get QGIS 3.28 LTR`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Windows specific considerations <bpt id="1">&lt;a id="windows-specific-considerations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Windows specific considerations <bpt id="1">&lt;a id="windows-specific-considerations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">32 Bit or 64 Bit? <bpt id="1">&lt;a id="32-bit-or-64-bit"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">32 Bit or 64 Bit? <bpt id="1">&lt;a id="32-bit-or-64-bit"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">For <bpt id="1">__</bpt>Windows operating systems<ept id="1">__</ept>, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the <bpt id="2">__</bpt>Windows icon at<ept id="2">__</ept> the bottom left of the screen (alternatively, open the Windows search function). Type <bpt id="3">__</bpt>"System"<ept id="3">__</ept> on the keyboard, click on the entry <bpt id="4">__</bpt>"System"<ept id="4">__</ept> in the search results. Under the item <bpt id="5">__</bpt>"System type"<ept id="5">__</ept> you can read the bit number.</source>
+<target xml:lang="fr">For <bpt id="1">__</bpt>Windows operating systems<ept id="1">__</ept>, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the <bpt id="2">__</bpt>Windows icon at<ept id="2">__</ept> the bottom left of the screen (alternatively, open the Windows search function). Type <bpt id="3">__</bpt>"System"<ept id="3">__</ept> on the keyboard, click on the entry <bpt id="4">__</bpt>"System"<ept id="4">__</ept> in the search results. Under the item <bpt id="5">__</bpt>"System type"<ept id="5">__</ept> you can read the bit number.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+Since QGIS 3.20 there are only 64-bit Windows executables.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+Since QGIS 3.20 there are only 64-bit Windows executables.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Mac specific considerations <bpt id="1">&lt;a id="mac-specific-considerations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Mac specific considerations <bpt id="1">&lt;a id="mac-specific-considerations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+From version 3.30 SAGA must be integrated via the <bpt id="2">[</bpt>plugin installer<ept id="2">](/content/wiki/plugin)</ept>.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+From version 3.30 SAGA must be integrated via the <bpt id="2">[</bpt>plugin installer<ept id="2">](/content/wiki/plugin)</ept>.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Linux specific considerations <bpt id="1">&lt;a id="linux-specific-considerations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Linux specific considerations <bpt id="1">&lt;a id="linux-specific-considerations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">You can install QGIS on Linux system through <ph id="1">`apt`</ph> using:</source>
+<target xml:lang="fr">You can install QGIS on Linux system through <ph id="1">`apt`</ph> using:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+From version 3.30 SAGA must be integrated via the <bpt id="2">[</bpt>plugin installer<ept id="2">](/content/wiki/en_qgis_plugins_wiki.md)</ept>.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+From version 3.30 SAGA must be integrated via the <bpt id="2">[</bpt>plugin installer<ept id="2">](/content/wiki/en_qgis_plugins_wiki.md)</ept>.
+<ph id="3">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

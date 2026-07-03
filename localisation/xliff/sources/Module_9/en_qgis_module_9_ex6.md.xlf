@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_ex6.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Task 6: West Germany / Ahrtal flood logistics <bpt id="1">&lt;a id="task-6-west-germany-ahrtal-flood-logistics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 6: West Germany / Ahrtal flood logistics <bpt id="1">&lt;a id="task-6-west-germany-ahrtal-flood-logistics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">While exploring the general functionality of the ORS plugin, we will specifically focus on its application in disaster-aware routing. To demonstrate its practical use, we will dive into the scenario of the devastating Ahr Valley flood that occurred in Germany in 2021. By leveraging the plugin's capabilities, we will learn how to optimize routing decisions in the context of disaster response and recovery.</source>
+<target xml:lang="fr">While exploring the general functionality of the ORS plugin, we will specifically focus on its application in disaster-aware routing. To demonstrate its practical use, we will dive into the scenario of the devastating Ahr Valley flood that occurred in Germany in 2021. By leveraging the plugin's capabilities, we will learn how to optimize routing decisions in the context of disaster response and recovery.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">By the end of this workshop, you will have gained valuable insights and practical skills in using the ORS plugin for QGIS, empowering you to make informed routing decisions and contribute to more efficient disaster management efforts. Let's embark on this journey of exploring disaster-aware routing with the ORS plugin and QGIS!</source>
+<target xml:lang="fr">By the end of this workshop, you will have gained valuable insights and practical skills in using the ORS plugin for QGIS, empowering you to make informed routing decisions and contribute to more efficient disaster management efforts. Let's embark on this journey of exploring disaster-aware routing with the ORS plugin and QGIS!</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_6_Ahrtal_flood_response_logistics/Modul_9_Exercise_6.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the following datasets:</source>
+<target xml:lang="fr">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_6_Ahrtal_flood_response_logistics/Modul_9_Exercise_6.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the following datasets:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`nuerburgring.gpkg`</ph> (points): Point location of the disaster relief staging area or base camp during the emergency response.</source>
+<target xml:lang="fr"><ph id="1">`nuerburgring.gpkg`</ph> (points): Point location of the disaster relief staging area or base camp during the emergency response.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`affected_places.gpkg`</ph> (points): Communities affected by the flood in the Ahr valley represented as individual points.</source>
+<target xml:lang="fr"><ph id="1">`affected_places.gpkg`</ph> (points): Communities affected by the flood in the Ahr valley represented as individual points.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`affected_municipalities.gpkg`</ph> (points): Municipal boundaries affected by the flood in the Ahr valley represented as polygons.</source>
+<target xml:lang="fr"><ph id="1">`affected_municipalities.gpkg`</ph> (points): Municipal boundaries affected by the flood in the Ahr valley represented as polygons.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`affected_roads_buff2m_WGS84.gpkg`</ph> (polygons): Road and bridge infrastructure damaged or destroyed by the flood represented as polygons</source>
+<target xml:lang="fr"><ph id="1">`affected_roads_buff2m_WGS84.gpkg`</ph> (polygons): Road and bridge infrastructure damaged or destroyed by the flood represented as polygons</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`physicians.gpkg`</ph> (points): Physicians located in and close to the Ahr valley represented as points.</source>
+<target xml:lang="fr"><ph id="1">`physicians.gpkg`</ph> (points): Physicians located in and close to the Ahr valley represented as points.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`wpop_ahrvalley.tif`</ph> (raster): Population counts from WorldPop for the Ahr valley. Raster dataset.</source>
+<target xml:lang="fr"><ph id="1">`wpop_ahrvalley.tif`</ph> (raster): Population counts from WorldPop for the Ahr valley. Raster dataset.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">PART 1 - Single routes with ORS Tools <bpt id="1">&lt;a id="part-1-single-routes-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">PART 1 - Single routes with ORS Tools <bpt id="1">&lt;a id="part-1-single-routes-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">STEP 1: Creating a Simple Route using the ORS Tools Plugin in QGIS <bpt id="1">&lt;a id="step-1-creating-a-simple-route-using-the-ors-tools-plugin-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 1: Creating a Simple Route using the ORS Tools Plugin in QGIS <bpt id="1">&lt;a id="step-1-creating-a-simple-route-using-the-ors-tools-plugin-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">In this first task, we will focus on creating a single, straightforward route using the ORS Tools plugin within the QGIS software. Your objective is to define an origin/source and a destination, and utilize the plugin to generate a route between these two points. To get started, you can choose Nürnburgring in Germany as the source location since it served as the staging area for disaster relief during the emergency response. For the destination, you can select Bad Neuenahr-Ahrweiler, the largest city affected by the Ahr Valley flood.</source>
+<target xml:lang="fr">In this first task, we will focus on creating a single, straightforward route using the ORS Tools plugin within the QGIS software. Your objective is to define an origin/source and a destination, and utilize the plugin to generate a route between these two points. To get started, you can choose Nürnburgring in Germany as the source location since it served as the staging area for disaster relief during the emergency response. For the destination, you can select Bad Neuenahr-Ahrweiler, the largest city affected by the Ahr Valley flood.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">To accomplish this task, refer to the available resources provided above to familiarize yourself with the functionality and features of the ORS Tools plugin. Explore the plugin's interface, study the options available, and apply the necessary settings to successfully generate the desired route. Feel free to experiment and troubleshoot any challenges you may encounter along the way.</source>
+<target xml:lang="fr">To accomplish this task, refer to the available resources provided above to familiarize yourself with the functionality and features of the ORS Tools plugin. Explore the plugin's interface, study the options available, and apply the necessary settings to successfully generate the desired route. Feel free to experiment and troubleshoot any challenges you may encounter along the way.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">By completing this task, you will gain a solid understanding of how to leverage the ORS Tools plugin in QGIS to create simple routes, setting the foundation for more advanced applications in subsequent exercises. Good luck, and enjoy the learning process!</source>
+<target xml:lang="fr">By completing this task, you will gain a solid understanding of how to leverage the ORS Tools plugin in QGIS to create simple routes, setting the foundation for more advanced applications in subsequent exercises. Good luck, and enjoy the learning process!</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">You have two options to create directions with ORS Tools plugin. Either via the <ph id="1">`Directions`</ph> Tool. After installing the plugin you'll find new entries in your <bpt id="2">_</bpt>Processing Toolbox<ept id="2">_</ept> in the section <ph id="3">`ORS Tools`</ph>. There you find tools on <ph id="4">`Directions`</ph>, <ph id="5">`Isochrones`</ph> and <ph id="6">`Matrix`</ph>. But you can also use the ORS Tools Window, open it via the top navigation <bpt id="7">_</bpt>Web<ept id="7">_</ept> --> <bpt id="8">_</bpt>ORS Tools<ept id="8">_</ept> --> <bpt id="9">_</bpt>ORS Tools<ept id="9">_</ept>. There you can control your origin and destination for the route via the green plus button. You then choose the points from your QGIS map canvas. Via the apply button, a route is calculated.</source>
+<target xml:lang="fr">You have two options to create directions with ORS Tools plugin. Either via the <ph id="1">`Directions`</ph> Tool. After installing the plugin you'll find new entries in your <bpt id="2">_</bpt>Processing Toolbox<ept id="2">_</ept> in the section <ph id="3">`ORS Tools`</ph>. There you find tools on <ph id="4">`Directions`</ph>, <ph id="5">`Isochrones`</ph> and <ph id="6">`Matrix`</ph>. But you can also use the ORS Tools Window, open it via the top navigation <bpt id="7">_</bpt>Web<ept id="7">_</ept> --> <bpt id="8">_</bpt>ORS Tools<ept id="8">_</ept> --> <bpt id="9">_</bpt>ORS Tools<ept id="9">_</ept>. There you can control your origin and destination for the route via the green plus button. You then choose the points from your QGIS map canvas. Via the apply button, a route is calculated.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">STEP 2: Incorporating Avoid Areas into the Route using the ORS Tools Plugin in QGIS <bpt id="1">&lt;a id="step-2-incorporating-avoid-areas-into-the-route-using-the-ors-tools-plugin-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 2: Incorporating Avoid Areas into the Route using the ORS Tools Plugin in QGIS <bpt id="1">&lt;a id="step-2-incorporating-avoid-areas-into-the-route-using-the-ors-tools-plugin-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In this second task, we will build upon the knowledge gained from the previous exercise and introduce the concept of avoid areas in route planning using the ORS Tools plugin in QGIS. Your objective is to repeat the workflow of creating a route between the Nürburgring and Bad Neuenahr-Ahrweiler, but this time, you will add specific areas that should be avoided along the route.</source>
+<target xml:lang="fr">In this second task, we will build upon the knowledge gained from the previous exercise and introduce the concept of avoid areas in route planning using the ORS Tools plugin in QGIS. Your objective is to repeat the workflow of creating a route between the Nürburgring and Bad Neuenahr-Ahrweiler, but this time, you will add specific areas that should be avoided along the route.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">To accomplish this, you will need to create a temporary polygon layer in QGIS, which will represent the avoid areas. Refer to the provided resources for detailed instructions on creating and managing temporary polygon layers. Once you have created the layer, you will adjust the corresponding parameter within the ORS Tools interface to account for the avoid areas during route calculation.</source>
+<target xml:lang="fr">To accomplish this, you will need to create a temporary polygon layer in QGIS, which will represent the avoid areas. Refer to the provided resources for detailed instructions on creating and managing temporary polygon layers. Once you have created the layer, you will adjust the corresponding parameter within the ORS Tools interface to account for the avoid areas during route calculation.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Directions`</ph> Tool find the option of <ph id="2">`Polygons to avoid`</ph> under <ph id="3">`Advanced Parameters`</ph>. In the <bpt id="4">_</bpt>ORS Tools<ept id="4">_</ept> window you find it under <bpt id="5">_</bpt>Advanced Configuration<ept id="5">_</ept> --> <bpt id="6">_</bpt>Avoid Polygon(s)<ept id="6">_</ept></source>
+<target xml:lang="fr">In the <ph id="1">`Directions`</ph> Tool find the option of <ph id="2">`Polygons to avoid`</ph> under <ph id="3">`Advanced Parameters`</ph>. In the <bpt id="4">_</bpt>ORS Tools<ept id="4">_</ept> window you find it under <bpt id="5">_</bpt>Advanced Configuration<ept id="5">_</ept> --> <bpt id="6">_</bpt>Avoid Polygon(s)<ept id="6">_</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Do you spot any difference in the shapes of the isochrones? Try playing around and changing the shape of your avoid area.</source>
+<target xml:lang="fr">Do you spot any difference in the shapes of the isochrones? Try playing around and changing the shape of your avoid area.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">PART 2 - Multiple routes with ORS Tools <bpt id="1">&lt;a id="part-2-multiple-routes-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">PART 2 - Multiple routes with ORS Tools <bpt id="1">&lt;a id="part-2-multiple-routes-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">STEP 3: Use a layer with multiple locations to create isochrones <bpt id="1">&lt;a id="step-3-use-a-layer-with-multiple-locations-to-create-isochrones"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 3: Use a layer with multiple locations to create isochrones <bpt id="1">&lt;a id="step-3-use-a-layer-with-multiple-locations-to-create-isochrones"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">The third task involves creating multiple directions from the disaster relief staging area to the affected communities in the Ahr Valley. With the Tool <ph id="1">`Directions from points 2 layers`</ph> we can input one layer as origin/source and another layer as destinations. Make sure to enable <ph id="2">`All-by-All`</ph> int the <ph id="3">`Layer Mode`</ph> option to request a direction for every feature in layer1 x layer 2. The resulting directions will come in one single layer with multiple features.</source>
+<target xml:lang="fr">The third task involves creating multiple directions from the disaster relief staging area to the affected communities in the Ahr Valley. With the Tool <ph id="1">`Directions from points 2 layers`</ph> we can input one layer as origin/source and another layer as destinations. Make sure to enable <ph id="2">`All-by-All`</ph> int the <ph id="3">`Layer Mode`</ph> option to request a direction for every feature in layer1 x layer 2. The resulting directions will come in one single layer with multiple features.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">STEP 4: Repeat with avoid damaged infrastructure <bpt id="1">&lt;a id="step-4-repeat-with-avoid-damaged-infrastructure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 4: Repeat with avoid damaged infrastructure <bpt id="1">&lt;a id="step-4-repeat-with-avoid-damaged-infrastructure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Okay, repeat the same procedure but set the option <ph id="1">`Polygons to avoid`</ph> in the Advanced Parameters section. Use <ph id="2">`affected_roads_buff2m_WGS84.gpkg`</ph> as input.</source>
+<target xml:lang="fr">Okay, repeat the same procedure but set the option <ph id="1">`Polygons to avoid`</ph> in the Advanced Parameters section. Use <ph id="2">`affected_roads_buff2m_WGS84.gpkg`</ph> as input.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">You will experience some errors during processing like this:</source>
+<target xml:lang="fr">You will experience some errors during processing like this:</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">This is due to some communities are not reachable taken into account the damaged infrastructure. Can you list all the communities not reachable by road? The error message provides you with the index of the location, but you can of course also just verify it directly in your QGIS map view.</source>
+<target xml:lang="fr">This is due to some communities are not reachable taken into account the damaged infrastructure. Can you list all the communities not reachable by road? The error message provides you with the index of the location, but you can of course also just verify it directly in your QGIS map view.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">PART 3 - Single Isochrones with ORS Tools <bpt id="1">&lt;a id="part-3-single-isochrones-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">PART 3 - Single Isochrones with ORS Tools <bpt id="1">&lt;a id="part-3-single-isochrones-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Now we will kinda repeat the workflow above but for isochrones within QGIS. We start with single isochrone requests and later do multiple.</source>
+<target xml:lang="fr">Now we will kinda repeat the workflow above but for isochrones within QGIS. We start with single isochrone requests and later do multiple.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">STEP 5: Request single isochrones directly from the QGIS map canvas <bpt id="1">&lt;a id="step-5-request-single-isochrones-directly-from-the-qgis-map-canvas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 5: Request single isochrones directly from the QGIS map canvas <bpt id="1">&lt;a id="step-5-request-single-isochrones-directly-from-the-qgis-map-canvas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Find the QGIS Tool <ph id="1">`Isochrones from point`</ph> in your processing toolbox under <bpt id="2">_</bpt>ORS Tools<ept id="2">_</ept> --> <bpt id="3">_</bpt>Isochrones<ept id="3">_</ept>. For the option <ph id="4">`Input Point from map canvas`</ph> click the three dots on the right, then choose a location on the QGIS map canvas. This will be the location the isochrone will be calculated from. Choose range and intervals, then hit run.</source>
+<target xml:lang="fr">Find the QGIS Tool <ph id="1">`Isochrones from point`</ph> in your processing toolbox under <bpt id="2">_</bpt>ORS Tools<ept id="2">_</ept> --> <bpt id="3">_</bpt>Isochrones<ept id="3">_</ept>. For the option <ph id="4">`Input Point from map canvas`</ph> click the three dots on the right, then choose a location on the QGIS map canvas. This will be the location the isochrone will be calculated from. Choose range and intervals, then hit run.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">STEP 6: Isochrones and  avoid area <bpt id="1">&lt;a id="step-6-isochrones-and-avoid-area"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 6: Isochrones and  avoid area <bpt id="1">&lt;a id="step-6-isochrones-and-avoid-area"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Repeat the same procedure but like in task 4 add the damaged road infrastructure as avoid polygons.</source>
+<target xml:lang="fr">Repeat the same procedure but like in task 4 add the damaged road infrastructure as avoid polygons.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">How would you describe the difference of both isochrones?</source>
+<target xml:lang="fr">How would you describe the difference of both isochrones?</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">PART 4 - Multiple Isochrones with ORS Tools <bpt id="1">&lt;a id="part-4-multiple-isochrones-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">PART 4 - Multiple Isochrones with ORS Tools <bpt id="1">&lt;a id="part-4-multiple-isochrones-with-ors-tools"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">In this second part we create isochrones from locations of physicians in the Ahr Valley, considering both regular isochrones and isochrones that account for blocked roads and damaged bridges due to infrastructure damage.</source>
+<target xml:lang="fr">In this second part we create isochrones from locations of physicians in the Ahr Valley, considering both regular isochrones and isochrones that account for blocked roads and damaged bridges due to infrastructure damage.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">STEP 7 Use multiple locations to request isochrones with and without avoid areas <bpt id="1">&lt;a id="step-7-use-multiple-locations-to-request-isochrones-with-and-without-avoid-areas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 7 Use multiple locations to request isochrones with and without avoid areas <bpt id="1">&lt;a id="step-7-use-multiple-locations-to-request-isochrones-with-and-without-avoid-areas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Choose the <ph id="1">`Isochrones from layer`</ph> Tool, it is located in your processing toolbox under <bpt id="2">_</bpt>ORS Tools<ept id="2">_</ept> --> <bpt id="3">_</bpt>Isochrones<ept id="3">_</ept>. Instead of a single location from the map canvas, we can use a point layer open in QGIS as input. Choose the dataset <ph id="4">`physicians.gpkg`</ph>. We will create isochrones for all physicians located in or close to the Ahr valley. For the range choose a maximum range of 30 and intervals of 5: <ph id="5">`5,10,15,20,25,30`</ph>. Hit run.</source>
+<target xml:lang="fr">Choose the <ph id="1">`Isochrones from layer`</ph> Tool, it is located in your processing toolbox under <bpt id="2">_</bpt>ORS Tools<ept id="2">_</ept> --> <bpt id="3">_</bpt>Isochrones<ept id="3">_</ept>. Instead of a single location from the map canvas, we can use a point layer open in QGIS as input. Choose the dataset <ph id="4">`physicians.gpkg`</ph>. We will create isochrones for all physicians located in or close to the Ahr valley. For the range choose a maximum range of 30 and intervals of 5: <ph id="5">`5,10,15,20,25,30`</ph>. Hit run.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Repeat the same procedure but like before with the option polygons to avoid set to the damaged infrastructure dataset.</source>
+<target xml:lang="fr">Repeat the same procedure but like before with the option polygons to avoid set to the damaged infrastructure dataset.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">As you examine the two isochrone datasets, take a closer look for any discernible patterns. When comparing these isochrones to the damaged infrastructure, pay attention to which segments of the infrastructure appear to have the greatest impact. By identifying and analyzing these areas on the map, you can gain valuable insights into the critical infrastructure segments that are likely to significantly affect healthcare accessibility. These observations will enable you to make informed decisions and prioritize the restoration of infrastructure in the Ahr Valley accordingly.</source>
+<target xml:lang="fr">As you examine the two isochrone datasets, take a closer look for any discernible patterns. When comparing these isochrones to the damaged infrastructure, pay attention to which segments of the infrastructure appear to have the greatest impact. By identifying and analyzing these areas on the map, you can gain valuable insights into the critical infrastructure segments that are likely to significantly affect healthcare accessibility. These observations will enable you to make informed decisions and prioritize the restoration of infrastructure in the Ahr Valley accordingly.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">STEP 8: Postprocess isochrones and join population counts <bpt id="1">&lt;a id="step-8-postprocess-isochrones-and-join-population-counts"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 8: Postprocess isochrones and join population counts <bpt id="1">&lt;a id="step-8-postprocess-isochrones-and-join-population-counts"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">This final task will guide you through the postprocessing of the isochrones in QGIS using core functionalities.</source>
+<target xml:lang="fr">This final task will guide you through the postprocessing of the isochrones in QGIS using core functionalities.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">The objective is to gain insights into the number of people residing in the affected municipalities who can reach a physician within a 15-minute motorized travel time, considering both the damaged infrastructure and the unaffected travel conditions.</source>
+<target xml:lang="fr">The objective is to gain insights into the number of people residing in the affected municipalities who can reach a physician within a 15-minute motorized travel time, considering both the damaged infrastructure and the unaffected travel conditions.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">To avoid confusion, make sure to differentiate between the two isochrone datasets by assigning them distinct names, such as <ph id="1">`isochrones_regular`</ph> and <ph id="2">`isochrones_avoid`</ph>.</source>
+<target xml:lang="fr">To avoid confusion, make sure to differentiate between the two isochrone datasets by assigning them distinct names, such as <ph id="1">`isochrones_regular`</ph> and <ph id="2">`isochrones_avoid`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Begin by performing an intersection between the isochrone layer and the municipalities. Utilize the <ph id="1">`Intersection`</ph> tool in the vector processing toolbox. This step will provide information on which isochrones intersect with each municipality.</source>
+<target xml:lang="fr">Begin by performing an intersection between the isochrone layer and the municipalities. Utilize the <ph id="1">`Intersection`</ph> tool in the vector processing toolbox. This step will provide information on which isochrones intersect with each municipality.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Next, dissolve the output to create continuous polygons representing travel time and municipalities. Use the <ph id="1">`Dissolve`</ph> tool in the vector processing toolbox, specifying <ph id="2">`name`</ph> and <ph id="3">`AA_Mins`</ph> as the attributes for the dissolve operation. The result will generate geometries that indicate the extent of travel time for each municipality. For instance, you can determine the area within the Municipality of <bpt id="4">_</bpt>Altenahr<ept id="4">_</ept> where residents can access a physician within 15 minutes or less.</source>
+<target xml:lang="fr">Next, dissolve the output to create continuous polygons representing travel time and municipalities. Use the <ph id="1">`Dissolve`</ph> tool in the vector processing toolbox, specifying <ph id="2">`name`</ph> and <ph id="3">`AA_Mins`</ph> as the attributes for the dissolve operation. The result will generate geometries that indicate the extent of travel time for each municipality. For instance, you can determine the area within the Municipality of <bpt id="4">_</bpt>Altenahr<ept id="4">_</ept> where residents can access a physician within 15 minutes or less.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">To enrich the polygons with population counts, load the dataset on population distribution, <ph id="1">`wpop_ahrvalley.tif`</ph>. Select the <ph id="2">`Zonal statistic`</ph> tool from the processing toolbox. Set the dissolved layer as the input and <ph id="3">`wpop_ahrvalley`</ph> as the raster layer. Adjust the statistics calculation to only include the sum of cell values within the zones defined by the dissolved isochrone polygons.</source>
+<target xml:lang="fr">To enrich the polygons with population counts, load the dataset on population distribution, <ph id="1">`wpop_ahrvalley.tif`</ph>. Select the <ph id="2">`Zonal statistic`</ph> tool from the processing toolbox. Set the dissolved layer as the input and <ph id="3">`wpop_ahrvalley`</ph> as the raster layer. Adjust the statistics calculation to only include the sum of cell values within the zones defined by the dissolved isochrone polygons.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">The result will be a comprehensive table displaying population counts for each combination of isochrone travel time and municipality. For visualization purposes, you can extract polygons based on a specific travel time value (e.g., <ph id="1">`15`</ph>) and join them back to the <ph id="2">`affected_municipalities`</ph> layer using the <ph id="3">`id`</ph> field. This allows you to visualize the polygons with the added attribute of population counts.</source>
+<target xml:lang="fr">The result will be a comprehensive table displaying population counts for each combination of isochrone travel time and municipality. For visualization purposes, you can extract polygons based on a specific travel time value (e.g., <ph id="1">`15`</ph>) and join them back to the <ph id="2">`affected_municipalities`</ph> layer using the <ph id="3">`id`</ph> field. This allows you to visualize the polygons with the added attribute of population counts.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Here is an example illustrating the population residing within a 15-minute or less travel time range in each municipality.</source>
+<target xml:lang="fr">Here is an example illustrating the population residing within a 15-minute or less travel time range in each municipality.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">The grey municipalities inhabitants live outside the range of 15 minutes. May you try it with a higher threshold like 30 minutes an see for changes on municipality level.</source>
+<target xml:lang="fr">The grey municipalities inhabitants live outside the range of 15 minutes. May you try it with a higher threshold like 30 minutes an see for changes on municipality level.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

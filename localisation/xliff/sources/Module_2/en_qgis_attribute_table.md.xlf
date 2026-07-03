@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_attribute_table.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Attribute Table <bpt id="1">&lt;a id="attribute-table"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Attribute Table <bpt id="1">&lt;a id="attribute-table"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Each vector layer consists of geometric features (points, lines or polygons) and an <bpt id="1">__</bpt>attribute table<ept id="1">__</ept> (<ph id="2">{numref}</ph><ph id="3">`en_vector_data_overview`</ph>). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each <bpt id="4">__</bpt>row<ept id="4">__</ept> in the table represents a <bpt id="5">__</bpt>feature<ept id="5">__</ept>, while <bpt id="6">__</bpt>columns<ept id="6">__</ept> store <bpt id="7">__</bpt>attributes<ept id="7">__</ept> of that feature. You can use the attribute table to search, sort, filter, edit and select data.</source>
+<target xml:lang="fr">Each vector layer consists of geometric features (points, lines or polygons) and an <bpt id="1">__</bpt>attribute table<ept id="1">__</ept> (<ph id="2">{numref}</ph><ph id="3">`en_vector_data_overview`</ph>). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each <bpt id="4">__</bpt>row<ept id="4">__</ept> in the table represents a <bpt id="5">__</bpt>feature<ept id="5">__</ept>, while <bpt id="6">__</bpt>columns<ept id="6">__</ept> store <bpt id="7">__</bpt>attributes<ept id="7">__</ept> of that feature. You can use the attribute table to search, sort, filter, edit and select data.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_vector_data_overview.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_vector_data_overview.png</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_vector_data_overview</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_vector_data_overview</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Vector Data overview (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Vector Data overview (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you will always have to understand the information stored in the datasets, both the geometries as well as the attribute data.</source>
+<target xml:lang="fr">You can complement this chapter by doing the steps with a vector layer of your choice. When working with geodata, you will always have to understand the information stored in the datasets, both the geometries as well as the attribute data.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Opening the attribute table <bpt id="1">&lt;a id="opening-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Opening the attribute table <bpt id="1">&lt;a id="opening-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Having a look into the attribute table is essential to understand and get an overview of the data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.</source>
+<target xml:lang="fr">Having a look into the attribute table is essential to understand and get an overview of the data you are working with. After downloading and importing a dataset into QGIS, you will most likely open the attribute table to understand the data and see what information is available. Understanding what kind of information is available is indispensable when working with GIS software.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">You can open the attribute table in two ways:</source>
+<target xml:lang="fr">You can open the attribute table in two ways:</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">You can also use the shortcut <bpt id="1">&lt;kbd></bpt>F6<ept id="1">&lt;/kbd></ept> (in some cases <bpt id="2">&lt;kbd></bpt>Fn<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>F6<ept id="3">&lt;/kbd></ept>) to open the attribute.</source>
+<target xml:lang="fr">You can also use the shortcut <bpt id="1">&lt;kbd></bpt>F6<ept id="1">&lt;/kbd></ept> (in some cases <bpt id="2">&lt;kbd></bpt>Fn<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>F6<ept id="3">&lt;/kbd></ept>) to open the attribute.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Right click on a layer in the Layers panel and select <ph id="1">`Open Attribute Table`</ph> (<ph id="2">{numref}</ph><ph id="3">`en_attributetable_right_click`</ph>).</source>
+<target xml:lang="fr">Right click on a layer in the Layers panel and select <ph id="1">`Open Attribute Table`</ph> (<ph id="2">{numref}</ph><ph id="3">`en_attributetable_right_click`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_attributetable_right_click.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_attributetable_right_click.png</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_attributetable_right_click</ph></source>
+<target xml:lang="fr"><ph id="1">height: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_attributetable_right_click</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Opening the attribute table via right-click in QGIS 3.36
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Opening the attribute table via right-click in QGIS 3.36
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Select a layer in the Layers panel and click on the attribute table symbol in the toolbar (<ph id="1">{numref}</ph><ph id="2">`en_attributetable_top_right`</ph>).</source>
+<target xml:lang="fr">Select a layer in the Layers panel and click on the attribute table symbol in the toolbar (<ph id="1">{numref}</ph><ph id="2">`en_attributetable_top_right`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">If you have multiple layers, only the attribute table of the layer currently selected in the layer panel will open.</source>
+<target xml:lang="fr">If you have multiple layers, only the attribute table of the layer currently selected in the layer panel will open.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_attributetable_top_right.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_attributetable_top_right.png</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_attributetable_top_right</ph></source>
+<target xml:lang="fr"><ph id="1">height: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_attributetable_top_right</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Opening the attribute table in QGIS 3.36
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Opening the attribute table in QGIS 3.36
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Buttons of the attribute table
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Buttons of the attribute table
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Icon</source>
+<target xml:lang="fr">Icon</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Purpose</source>
+<target xml:lang="fr">Purpose</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Shortcut</source>
+<target xml:lang="fr">Shortcut</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Toggle editing mode<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Toggle editing mode<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Enable editing functionalities</source>
+<target xml:lang="fr">Enable editing functionalities</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>E<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>E<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionMultiEdit.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionMultiEdit.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Toggle multi-edit mode</source>
+<target xml:lang="fr">Toggle multi-edit mode</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Update multiple fields of many features</source>
+<target xml:lang="fr">Update multiple fields of many features</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Save edits<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Save edits<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Save current modifications</source>
+<target xml:lang="fr">Save current modifications</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionRefresh.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionRefresh.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Reload the table</source>
+<target xml:lang="fr">Reload the table</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionNewTableRow.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionNewTableRow.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Add feature</source>
+<target xml:lang="fr">Add feature</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Add new geometry-less feature</source>
+<target xml:lang="fr">Add new geometry-less feature</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionDeleteSelectedFeatures.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionDeleteSelectedFeatures.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Delete selected features</source>
+<target xml:lang="fr">Delete selected features</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Remove selected features from the layer</source>
+<target xml:lang="fr">Remove selected features from the layer</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionEditCut.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionEditCut.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Cut selected features to clipboard</source>
+<target xml:lang="fr">Cut selected features to clipboard</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>X<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>X<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionCopySelected.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionCopySelected.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Copy selected features to clipboard</source>
+<target xml:lang="fr">Copy selected features to clipboard</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>C<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>C<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionEditPaste.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionEditPaste.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Paste features from clipboard</source>
+<target xml:lang="fr">Paste features from clipboard</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Insert new features from copied ones</source>
+<target xml:lang="fr">Insert new features from copied ones</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>V<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>V<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mIconExpressionSelect.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mIconExpressionSelect.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Select features using an Expression</source>
+<target xml:lang="fr">Select features using an Expression</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectAll.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectAll.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Select All</source>
+<target xml:lang="fr">Select All</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Select all features in the layer</source>
+<target xml:lang="fr">Select all features in the layer</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>A<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>A<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionInvertSelection.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionInvertSelection.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Invert selection</source>
+<target xml:lang="fr">Invert selection</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Invert the current selection in the layer</source>
+<target xml:lang="fr">Invert the current selection in the layer</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>R<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>R<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionDeselectActiveLayer.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionDeselectActiveLayer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Deselect all</source>
+<target xml:lang="fr">Deselect all</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Deselect all features in the current layer</source>
+<target xml:lang="fr">Deselect all features in the current layer</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>A<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>A<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionFilterMap.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionFilterMap.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Filter/Select features using form</source>
+<target xml:lang="fr">Filter/Select features using form</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>F<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>F<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectedToTop.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectedToTop.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Move selected to top</source>
+<target xml:lang="fr">Move selected to top</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Move selected rows to the top of the table</source>
+<target xml:lang="fr">Move selected rows to the top of the table</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionPanToSelected.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionPanToSelected.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Pan map to the selected rows</source>
+<target xml:lang="fr">Pan map to the selected rows</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>P<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>P<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionZoomToSelected.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionZoomToSelected.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Zoom map to the selected rows</source>
+<target xml:lang="fr">Zoom map to the selected rows</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>J<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>J<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionNewAttribute.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionNewAttribute.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">New field</source>
+<target xml:lang="fr">New field</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Add a new field to the data source</source>
+<target xml:lang="fr">Add a new field to the data source</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;Kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>W<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;Kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>W<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionDeleteAttribute.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionDeleteAttribute.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Delete field</source>
+<target xml:lang="fr">Delete field</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Remove a field from the data source</source>
+<target xml:lang="fr">Remove a field from the data source</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionEditTable.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionEditTable.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Organize columns</source>
+<target xml:lang="fr">Organize columns</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Show/hide fields from the attribute table</source>
+<target xml:lang="fr">Show/hide fields from the attribute table</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionCalculateField.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionCalculateField.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Open field calculator<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Open field calculator<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Update field for many features in a row</source>
+<target xml:lang="fr">Update field for many features in a row</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>I<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>I<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mActionConditionalFormatting.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mActionConditionalFormatting.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Conditional formatting</source>
+<target xml:lang="fr">Conditional formatting</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Enable table formatting</source>
+<target xml:lang="fr">Enable table formatting</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/dock.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/dock.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Dock attribute table</source>
+<target xml:lang="fr">Dock attribute table</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Allows to dock or undock the attribute table</source>
+<target xml:lang="fr">Allows to dock or undock the attribute table</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/mAction.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/mAction.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Actions</source>
+<target xml:lang="fr">Actions</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Lists the actions related to the layer</source>
+<target xml:lang="fr">Lists the actions related to the layer</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Sort the attribute table <bpt id="1">&lt;a id="sort-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sort the attribute table <bpt id="1">&lt;a id="sort-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">You can sort data in the attribute table by clicking on a column header. Text data will be sorted alphabetically and numeric data will be sorted by value. To reverse the sort order, click the header again. A small arrow in the column header indicates whether it is sorted in ascending or descending order.</source>
+<target xml:lang="fr">You can sort data in the attribute table by clicking on a column header. Text data will be sorted alphabetically and numeric data will be sorted by value. To reverse the sort order, click the header again. A small arrow in the column header indicates whether it is sorted in ascending or descending order.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ascending.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ascending.png</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 300px</ph>
+<ph id="2">name: en_ascending</ph></source>
+<target xml:lang="fr"><ph id="1">width: 300px</ph>
+<ph id="2">name: en_ascending</ph></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Attribute table sorted ascendingly.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Attribute table sorted ascendingly.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_descending.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_descending.png</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 300px</ph>
+<ph id="2">name: en_descending</ph></source>
+<target xml:lang="fr"><ph id="1">width: 300px</ph>
+<ph id="2">name: en_descending</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Attribute table sorted descendingly.<ph id="1">  </ph>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Attribute table sorted descendingly.<ph id="1">  </ph>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Zoom in on a specific feature via attribute table <bpt id="1">&lt;a id="zoom-in-on-a-specific-feature-via-attribute-table"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Zoom in on a specific feature via attribute table <bpt id="1">&lt;a id="zoom-in-on-a-specific-feature-via-attribute-table"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">You can zoom in on a specific feature if you need to locate it geographically or you want to get a closer look:</source>
+<target xml:lang="fr">You can zoom in on a specific feature if you need to locate it geographically or you want to get a closer look:</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Zoom:<ept id="1">__</ept> Right click on a feature → <ph id="2">`Zoom To Feature`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Zoom:<ept id="1">__</ept> Right click on a feature → <ph id="2">`Zoom To Feature`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Close your attribute table. The map canvas will now show the selected feature.</source>
+<target xml:lang="fr">Close your attribute table. The map canvas will now show the selected feature.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Zoom in on a feature</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Zoom in on a feature</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Manually select features in the attribute table <bpt id="1">&lt;a id="manually-select-features-in-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Manually select features in the attribute table <bpt id="1">&lt;a id="manually-select-features-in-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">To interact with features in a layer you have to select these features. One way to select features is via the attribute table.</source>
+<target xml:lang="fr">To interact with features in a layer you have to select these features. One way to select features is via the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Select:<ept id="1">__</ept> Click on the lines of the features.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Select:<ept id="1">__</ept> Click on the lines of the features.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Multi Select:<ept id="1">__</ept> To select multiple features press <ph id="2">`Ctrl`</ph> and select <ph id="3">`features`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Multi Select:<ept id="1">__</ept> To select multiple features press <ph id="2">`Ctrl`</ph> and select <ph id="3">`features`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Show only selected features:<ept id="1">__</ept> In the bottom left of the attribute table open
+  the dropdown menu and select <ph id="2">`Show selected features`</ph>. To show again all
+  features click on <ph id="3">`Show all features`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Show only selected features:<ept id="1">__</ept> In the bottom left of the attribute table open
+  the dropdown menu and select <ph id="2">`Show selected features`</ph>. To show again all
+  features click on <ph id="3">`Show all features`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Only show unselected features:<ept id="1">__</ept> Select features and click on <bpt id="2">![</bpt><ept id="2">](/fig/mActionInvertSelection.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Only show unselected features:<ept id="1">__</ept> Select features and click on <bpt id="2">![</bpt><ept id="2">](/fig/mActionInvertSelection.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Manually select features in the attribute table</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Manually select features in the attribute table</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Zoom to selected area <bpt id="1">&lt;a id="zoom-to-selected-area"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Zoom to selected area <bpt id="1">&lt;a id="zoom-to-selected-area"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Now that you know how to select features, you can zoom onto your area of
+interest. To do so you can click on the symbol on the toolbar or right click
+on the layer and select <ph id="1">`Zoom to Selection`</ph> (<ph id="2">{numref}</ph><ph id="3">`en_zoom_to_selection_1`</ph>).</source>
+<target xml:lang="fr">Now that you know how to select features, you can zoom onto your area of
+interest. To do so you can click on the symbol on the toolbar or right click
+on the layer and select <ph id="1">`Zoom to Selection`</ph> (<ph id="2">{numref}</ph><ph id="3">`en_zoom_to_selection_1`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_zoom_to_selection_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_zoom_to_selection_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_zoom_to_selection_1</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_zoom_to_selection_1</ph></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Screenshot of how to zoom to Selection on the top.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of how to zoom to Selection on the top.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_zoom_to_selection_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_zoom_to_selection_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_zoom_to_selection_2</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_zoom_to_selection_2</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Screenshot of how to zoom to Selection by clicking right.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of how to zoom to Selection by clicking right.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Save only selected features as a new file <bpt id="1">&lt;a id="save-only-selected-features-as-a-new-file"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Save only selected features as a new file <bpt id="1">&lt;a id="save-only-selected-features-as-a-new-file"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">After you have selected your data, you might want to proceed with only the
+selection. You can save your selection as a new layer. To do so right click on the
+layer → <ph id="1">`Export`</ph> → <ph id="2">`Save only selected features`</ph>.</source>
+<target xml:lang="fr">After you have selected your data, you might want to proceed with only the
+selection. You can save your selection as a new layer. To do so right click on the
+layer → <ph id="1">`Export`</ph> → <ph id="2">`Save only selected features`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_save_selection.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_save_selection.png</ph></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_save_selection</ph></source>
+<target xml:lang="fr"><ph id="1">height: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_save_selection</ph></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Screenshot of how to save only selected features.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of how to save only selected features.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Now, you can choose the format, layer name and CRS.</source>
+<target xml:lang="fr">Now, you can choose the format, layer name and CRS.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases.
+If you are unsure which format is most appropriate, check out the <bpt id="1">[</bpt>geodata types<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept> page on the wiki.</source>
+<target xml:lang="fr">We recommend using GeoPackage (.gpkg) instead of shapefile (.shp) in most cases.
+If you are unsure which format is most appropriate, check out the <bpt id="1">[</bpt>geodata types<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept> page on the wiki.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Check whether you know the key concepts from this chapter by answering the questions below.</source>
+<target xml:lang="fr">Check whether you know the key concepts from this chapter by answering the questions below.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is the attribute table in a vector layer, and how is it structured?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is the attribute table in a vector layer, and how is it structured?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+The attribute table is a tabular representation of the non‑spatial (or descriptive) data for a vector layer. Each row corresponds to one feature (point, line, polygon) in the layer. Each column (also called a field or attribute) stores one attribute/property (e.g. name, population, type) for every feature.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+The attribute table is a tabular representation of the non‑spatial (or descriptive) data for a vector layer. Each row corresponds to one feature (point, line, polygon) in the layer. Each column (also called a field or attribute) stores one attribute/property (e.g. name, population, type) for every feature.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How can you open the attribute table in QGIS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How can you open the attribute table in QGIS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">In QGIS, right‑click on the layer in the Layers Panel and choose Open Attribute Table.</source>
+<target xml:lang="fr">In QGIS, right‑click on the layer in the Layers Panel and choose Open Attribute Table.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Alternatively, you can use the Attribute Table button <bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept> in the toolbar.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Alternatively, you can use the Attribute Table button <bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept> in the toolbar.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you zoom to a specific feature using the attribute table?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you zoom to a specific feature using the attribute table?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Within the attribute table, you can right‑click on a feature’s row (or in a cell) and choose "Zoom to Feature". That changes the map view to focus on that feature.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Within the attribute table, you can right‑click on a feature’s row (or in a cell) and choose "Zoom to Feature". That changes the map view to focus on that feature.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Describe how to manually select features via the attribute table, and how to show only selected or unselected features.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Describe how to manually select features via the attribute table, and how to show only selected or unselected features.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+<bpt id="2">__</bpt>Manually selecting features:<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+<bpt id="2">__</bpt>Manually selecting features:<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Clicking on a row header of an individual feature in the attribute table selects the feature. It will be highlighted in blue.</source>
+<target xml:lang="fr">Clicking on a row header of an individual feature in the attribute table selects the feature. It will be highlighted in blue.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">To select multiple features, hold <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> or <bpt id="2">&lt;kbd></bpt>Cmd<ept id="2">&lt;/kbd></ept> on MacOS and click on additional row headers to add more features to the selection.</source>
+<target xml:lang="fr">To select multiple features, hold <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> or <bpt id="2">&lt;kbd></bpt>Cmd<ept id="2">&lt;/kbd></ept> on MacOS and click on additional row headers to add more features to the selection.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Holding <bpt id="1">&lt;kbd></bpt>Shift<ept id="1">&lt;/kbd></ept> let's you select a range of features.
+<bpt id="2">__</bpt>Showing only selected or unselected features:<ept id="2">__</ept></source>
+<target xml:lang="fr">Holding <bpt id="1">&lt;kbd></bpt>Shift<ept id="1">&lt;/kbd></ept> let's you select a range of features.
+<bpt id="2">__</bpt>Showing only selected or unselected features:<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">At the bottom left of the attribute table dialog, there is a drop‑down menu (filter) that lets you switch between:</source>
+<target xml:lang="fr">At the bottom left of the attribute table dialog, there is a drop‑down menu (filter) that lets you switch between:</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Show All Features<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Show All Features<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Show Selected Features<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Show Selected Features<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Show Unselected Features<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Show Unselected Features<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Other filters: Show features visible in map, Show edited and new features, etc.</source>
+<target xml:lang="fr">Other filters: Show features visible in map, Show edited and new features, etc.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">You can also use the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_move_selection_to_top.png)</ept> <ph id="2">`Move selected features to the top`</ph>-button in the attribute table toolbar.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">You can also use the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_move_selection_to_top.png)</ept> <ph id="2">`Move selected features to the top`</ph>-button in the attribute table toolbar.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Once you have selected a subset of features, how do you save just those features into a new layer (or file)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Once you have selected a subset of features, how do you save just those features into a new layer (or file)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer where you selected the features.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer where you selected the features.</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as...`</ph>. A new window will open.</source>
+<target xml:lang="fr">Select <ph id="1">`Export`</ph> → <ph id="2">`Save Selected Features as...`</ph>. A new window will open.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Choose the data format, specify the save location and file name by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept></source>
+<target xml:lang="fr">Choose the data format, specify the save location and file name by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Ok`</ph>.
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Ok`</ph>.
+<ph id="2">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

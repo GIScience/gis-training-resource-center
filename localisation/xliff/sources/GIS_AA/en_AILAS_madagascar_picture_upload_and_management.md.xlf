@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Picture upload and management: AILAS Project <bpt id="1">&lt;a id="picture-upload-and-management-ailas-project"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Picture upload and management: AILAS Project <bpt id="1">&lt;a id="picture-upload-and-management-ailas-project"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This documentation provides instructions on how to upload and manage street-level images that are captured in the framework of the AILAS project.</source>
+<target xml:lang="fr">This documentation provides instructions on how to upload and manage street-level images that are captured in the framework of the AILAS project.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Background: Panoramax <bpt id="1">&lt;a id="background-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background: Panoramax <bpt id="1">&lt;a id="background-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">All pictures captured in the framework of the AILAS project are expected to be uploaded to a private instance of the street-level imagery platform Panoramax. This ensures that the imagery is easily available to the concerned stakeholders for the further usage in the project (labelling of training data, modelling), while being protected against access from unauthorized users.</source>
+<target xml:lang="fr">All pictures captured in the framework of the AILAS project are expected to be uploaded to a private instance of the street-level imagery platform Panoramax. This ensures that the imagery is easily available to the concerned stakeholders for the further usage in the project (labelling of training data, modelling), while being protected against access from unauthorized users.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">What is Panoramax? <bpt id="1">&lt;a id="what-is-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is Panoramax? <bpt id="1">&lt;a id="what-is-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Panoramax<ept id="1">](https://panoramax.fr)</ept> is an open, federated platform for sharing and viewing street-level imagery. Like <bpt id="2">[</bpt>Google Street View<ept id="2">](https://www.google.com/streetview/)</ept> and <bpt id="3">[</bpt>Mapillary<ept id="3">](https://www.mapillary.com)</ept>, it allows users to explore places through photos taken along streets and paths. But unlike commercial platforms, Panoramax is built as a <bpt id="4">**</bpt>decentralized and open ecosystem<ept id="4">**</ept>: imagery is hosted on independent servers (run by institutions, cities, or communities) rather than a single company, and access is governed by open standards. The entire stack of Panoramax software is open source.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Panoramax<ept id="1">](https://panoramax.fr)</ept> is an open, federated platform for sharing and viewing street-level imagery. Like <bpt id="2">[</bpt>Google Street View<ept id="2">](https://www.google.com/streetview/)</ept> and <bpt id="3">[</bpt>Mapillary<ept id="3">](https://www.mapillary.com)</ept>, it allows users to explore places through photos taken along streets and paths. But unlike commercial platforms, Panoramax is built as a <bpt id="4">**</bpt>decentralized and open ecosystem<ept id="4">**</ept>: imagery is hosted on independent servers (run by institutions, cities, or communities) rather than a single company, and access is governed by open standards. The entire stack of Panoramax software is open source.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This means that data ownership stays with the contributors and hosting institutions, and imagery can be more easily integrated into local projects, research, or public services. Panoramax emphasizes <bpt id="1">**</bpt>openness, transparency, and sovereignty<ept id="1">**</ept> of street-level data.</source>
+<target xml:lang="fr">This means that data ownership stays with the contributors and hosting institutions, and imagery can be more easily integrated into local projects, research, or public services. Panoramax emphasizes <bpt id="1">**</bpt>openness, transparency, and sovereignty<ept id="1">**</ept> of street-level data.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Features <bpt id="1">&lt;a id="features"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Features <bpt id="1">&lt;a id="features"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">🌍 Core Features <bpt id="1">&lt;a id="core-features"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">🌍 Core Features <bpt id="1">&lt;a id="core-features"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Street-level imagery viewer<ept id="1">**</ept> – explore panoramic or directional images along roads, paths, and places.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Street-level imagery viewer<ept id="1">**</ept> – explore panoramic or directional images along roads, paths, and places.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Open &amp; federated hosting<ept id="1">**</ept> – imagery is stored on independent servers operated by different organizations (municipalities, research centers, NGOs, etc.).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Open &amp; federated hosting<ept id="1">**</ept> – imagery is stored on independent servers operated by different organizations (municipalities, research centers, NGOs, etc.).</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Open standards (STAC, OGC)<ept id="1">**</ept> – ensures interoperability with mapping platforms, GIS tools, and data portals.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Open standards (STAC, OGC)<ept id="1">**</ept> – ensures interoperability with mapping platforms, GIS tools, and data portals.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contributions from multiple sources<ept id="1">**</ept> – imagery can come from institutions, community projects, or individuals.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contributions from multiple sources<ept id="1">**</ept> – imagery can come from institutions, community projects, or individuals.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Integration into mapping workflows<ept id="1">**</ept> – imagery can be linked with OpenStreetMap or other geospatial datasets.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Integration into mapping workflows<ept id="1">**</ept> – imagery can be linked with OpenStreetMap or other geospatial datasets.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">🔍 Privacy &amp; Processing <bpt id="1">&lt;a id="privacy-and-processing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">🔍 Privacy &amp; Processing <bpt id="1">&lt;a id="privacy-and-processing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Automatic face and license plate blurring<ept id="1">**</ept> – built-in anonymization before imagery is published.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Automatic face and license plate blurring<ept id="1">**</ept> – built-in anonymization before imagery is published.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Object detections<ept id="1">**</ept> – AI models can detect relevant features (e.g., traffic signs) within the imagery.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Object detections<ept id="1">**</ept> – AI models can detect relevant features (e.g., traffic signs) within the imagery.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Custom detection models<ept id="1">**</ept> – operators can run their own detection pipelines for specific use cases.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Custom detection models<ept id="1">**</ept> – operators can run their own detection pipelines for specific use cases.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Metadata enrichment<ept id="1">**</ept> – detected objects can be stored as data linked to the images, making the imagery searchable and analyzable.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Metadata enrichment<ept id="1">**</ept> – detected objects can be stored as data linked to the images, making the imagery searchable and analyzable.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">⚙️ Platform &amp; Ecosystem <bpt id="1">&lt;a id="platform-and-ecosystem"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">⚙️ Platform &amp; Ecosystem <bpt id="1">&lt;a id="platform-and-ecosystem"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>API access<ept id="1">**</ept> – developers can query and use imagery programmatically.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>API access<ept id="1">**</ept> – developers can query and use imagery programmatically.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Web-based viewer<ept id="1">**</ept> – lightweight, embeddable viewer for public portals or project websites.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Web-based viewer<ept id="1">**</ept> – lightweight, embeddable viewer for public portals or project websites.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Community-driven<ept id="1">**</ept> – open-source software stack, enabling transparency and extensibility.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Community-driven<ept id="1">**</ept> – open-source software stack, enabling transparency and extensibility.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Long-term data ownership<ept id="1">**</ept> – institutions keep control over where and how their imagery is stored and shared.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Long-term data ownership<ept id="1">**</ept> – institutions keep control over where and how their imagery is stored and shared.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Data privacy and security <bpt id="1">&lt;a id="data-privacy-and-security"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data privacy and security <bpt id="1">&lt;a id="data-privacy-and-security"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Panoramax prevents the identification of people in the imagery by blurring faces and license plates. This happens automatically on image upload and before the images are published. Users can report any further issues with an image through the platform. This will cause the image to be hidden from public view until intervention from the owner of the image.</source>
+<target xml:lang="fr">Panoramax prevents the identification of people in the imagery by blurring faces and license plates. This happens automatically on image upload and before the images are published. Users can report any further issues with an image through the platform. This will cause the image to be hidden from public view until intervention from the owner of the image.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">While one of the main features of Panoramax is its global public meta-catalogue that makes images from all federated instances findable, we deliberately choose not to join the federation with the Panoramax instance of the AILAS project. This means that images uploaded to our instance cannot be accessed through the global API.</source>
+<target xml:lang="fr">While one of the main features of Panoramax is its global public meta-catalogue that makes images from all federated instances findable, we deliberately choose not to join the federation with the Panoramax instance of the AILAS project. This means that images uploaded to our instance cannot be accessed through the global API.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The Panoramax instance used by the AILAS project has a default setting for uploaded images to be visible only to logged in users of the website. Users cannot register accounts to the Panoramax instance themselves, but must be created by the administrators. This means, that the uploaded images and image sequences will not be visible to the general public.</source>
+<target xml:lang="fr">The Panoramax instance used by the AILAS project has a default setting for uploaded images to be visible only to logged in users of the website. Users cannot register accounts to the Panoramax instance themselves, but must be created by the administrators. This means, that the uploaded images and image sequences will not be visible to the general public.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Picture upload <bpt id="1">&lt;a id="picture-upload"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Picture upload <bpt id="1">&lt;a id="picture-upload"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">1. Remove the SD card from the camera. <bpt id="1">&lt;a id="1-remove-the-sd-card-from-the-camera"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Remove the SD card from the camera. <bpt id="1">&lt;a id="1-remove-the-sd-card-from-the-camera"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">2. Insert into card reader and connect to computer. <bpt id="1">&lt;a id="2-insert-into-card-reader-and-connect-to-computer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Insert into card reader and connect to computer. <bpt id="1">&lt;a id="2-insert-into-card-reader-and-connect-to-computer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">With the SD card inserted, connect the card reader to a computer.</source>
+<target xml:lang="fr">With the SD card inserted, connect the card reader to a computer.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">3. Sign in to Panoramax <bpt id="1">&lt;a id="3-sign-in-to-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Sign in to Panoramax <bpt id="1">&lt;a id="3-sign-in-to-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Open the AILAS project's <bpt id="1">[</bpt>Panoramax website<ept id="1">](https://panoramax.heigit.org)</ept> and click "Log in" on the right side of the top navigation bar.</source>
+<target xml:lang="fr">Open the AILAS project's <bpt id="1">[</bpt>Panoramax website<ept id="1">](https://panoramax.heigit.org)</ept> and click "Log in" on the right side of the top navigation bar.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Enter your <bpt id="1">__</bpt>e-mail<ept id="1">__</ept> and your password, and click "Sign in".</source>
+<target xml:lang="fr">Enter your <bpt id="1">__</bpt>e-mail<ept id="1">__</ept> and your password, and click "Sign in".</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">If this is your first time logging in, you will use an initial password provided to you. You will need to change the password immediately after logging in.</source>
+<target xml:lang="fr">If this is your first time logging in, you will use an initial password provided to you. You will need to change the password immediately after logging in.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Other Panoramax instances
+<ph id="2">:class: tip</ph>
+For the AILAS project, images are expected to be uploaded to a <bpt id="3">[</bpt>specific instance of Panoramax<ept id="3">](https://panoramax.heigit.org)</ept>. Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery <bpt id="4">_</bpt>in the public<ept id="4">_</ept>, check out available public instances at <ph id="5">https://panoramax.fr.</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Other Panoramax instances
+<ph id="2">:class: tip</ph>
+For the AILAS project, images are expected to be uploaded to a <bpt id="3">[</bpt>specific instance of Panoramax<ept id="3">](https://panoramax.heigit.org)</ept>. Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery <bpt id="4">_</bpt>in the public<ept id="4">_</ept>, check out available public instances at <ph id="5">https://panoramax.fr.</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">4. Upload images <bpt id="1">&lt;a id="4-upload-images"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4. Upload images <bpt id="1">&lt;a id="4-upload-images"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Click the big blue "Share Photos" button in the top navigation bar.</source>
+<target xml:lang="fr">Click the big blue "Share Photos" button in the top navigation bar.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Make sure that visibility mode is set to "Instance limited" (default)</source>
+<target xml:lang="fr">Make sure that visibility mode is set to "Instance limited" (default)</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Indicate the transport mode: If the images have been captured by a camera installed in a car, choose "By car".</source>
+<target xml:lang="fr">Indicate the transport mode: If the images have been captured by a camera installed in a car, choose "By car".</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Do <bpt id="1">_</bpt>not<ept id="1">_</ept> change the advanced settings.</source>
+<target xml:lang="fr">Do <bpt id="1">_</bpt>not<ept id="1">_</ept> change the advanced settings.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Click "Upload pictures". A file browser will open. Select and open all the images on the SD card in the folder <ph id="1">`/DCIM/100GOPRO`</ph>. It can take some seconds before the upload starts if you have selected a large number of images.</source>
+<target xml:lang="fr">Click "Upload pictures". A file browser will open. Select and open all the images on the SD card in the folder <ph id="1">`/DCIM/100GOPRO`</ph>. It can take some seconds before the upload starts if you have selected a large number of images.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Keep the browser window open until the upload is completed.</source>
+<target xml:lang="fr">Keep the browser window open until the upload is completed.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">When the upload is completed, you may encounter some error messages. Images are rejected when they lack location data, or when they are too close to the previous image in time and space. Usually, this is nothing to worry about. However, if a large amount of images could not be uploaded due to missing location data, try to turn on the camera earlier before going on the next trip, to make sure that the GPS is ready when you start.</source>
+<target xml:lang="fr">When the upload is completed, you may encounter some error messages. Images are rejected when they lack location data, or when they are too close to the previous image in time and space. Usually, this is nothing to worry about. However, if a large amount of images could not be uploaded due to missing location data, try to turn on the camera earlier before going on the next trip, to make sure that the GPS is ready when you start.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Dealing with multiple image folders
+<ph id="2">:class: tip</ph>
+If you captured more than a thousand images, the images are saved in several subfolders of <ph id="3">`DCIM`</ph> called <ph id="4">`100GOPRO`</ph>, <ph id="5">`101GOPRO`</ph>, etc. Repeat steps 1 to 6 of this section for all the subfolders.
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Dealing with multiple image folders
+<ph id="2">:class: tip</ph>
+If you captured more than a thousand images, the images are saved in several subfolders of <ph id="3">`DCIM`</ph> called <ph id="4">`100GOPRO`</ph>, <ph id="5">`101GOPRO`</ph>, etc. Repeat steps 1 to 6 of this section for all the subfolders.
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">5. Delete images <bpt id="1">&lt;a id="5-delete-images"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5. Delete images <bpt id="1">&lt;a id="5-delete-images"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Once you have successfully uploaded the images, delete them from the SD card.</source>
+<target xml:lang="fr">Once you have successfully uploaded the images, delete them from the SD card.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">6. Re-insert SD card into camera <bpt id="1">&lt;a id="6-re-insert-sd-card-into-camera"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Re-insert SD card into camera <bpt id="1">&lt;a id="6-re-insert-sd-card-into-camera"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Safely remove the SD card reader from your computer, and re-insert the card into the camera.</source>
+<target xml:lang="fr">Safely remove the SD card reader from your computer, and re-insert the card into the camera.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Picture exploration on Panoramax <bpt id="1">&lt;a id="picture-exploration-on-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Picture exploration on Panoramax <bpt id="1">&lt;a id="picture-exploration-on-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">See your own uploaded sequences and pictures <bpt id="1">&lt;a id="see-your-own-uploaded-sequences-and-pictures"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">See your own uploaded sequences and pictures <bpt id="1">&lt;a id="see-your-own-uploaded-sequences-and-pictures"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Click on your account icon in the Panoramax top navigation bar and choose "My Photos". A page listing all your uploaded image sequences will open.</source>
+<target xml:lang="fr">Click on your account icon in the Panoramax top navigation bar and choose "My Photos". A page listing all your uploaded image sequences will open.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">The sequences are listed with their names, number of photos, shooting and upload date, covered distance, and the visibility status. You can search your image sequences by area (the current view in the map on the left side of the page), or sort and filter by date.</source>
+<target xml:lang="fr">The sequences are listed with their names, number of photos, shooting and upload date, covered distance, and the visibility status. You can search your image sequences by area (the current view in the map on the left side of the page), or sort and filter by date.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">To view all photos in one specific sequence, click one of the sequences. This will open the sequence page.</source>
+<target xml:lang="fr">To view all photos in one specific sequence, click one of the sequences. This will open the sequence page.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">The sequence page displays thumbnails of all photos in a sequence. You can also edit e.g. the name of the sequence, or hide individual photos. Do not, however, change the visibility mode of the sequence.</source>
+<target xml:lang="fr">The sequence page displays thumbnails of all photos in a sequence. You can also edit e.g. the name of the sequence, or hide individual photos. Do not, however, change the visibility mode of the sequence.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">By clicking on the "Fullscreen" button, you will get to the "Explore" map while focusing on the currently selected sequence and image.</source>
+<target xml:lang="fr">By clicking on the "Fullscreen" button, you will get to the "Explore" map while focusing on the currently selected sequence and image.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Explore all pictures on Panoramax <bpt id="1">&lt;a id="explore-all-pictures-on-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Explore all pictures on Panoramax <bpt id="1">&lt;a id="explore-all-pictures-on-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc. on the map.</source>
+<target xml:lang="fr">Click "Explore" in the top navigation bar to open an interactive world map to explore all available images. Move and zoom the map to find images, or use the search bar in the top left corner to find addresses, cities, etc. on the map.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Click on one of the image markers on the map to open an image.</source>
+<target xml:lang="fr">Click on one of the image markers on the map to open an image.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">You can click "Expand" in the bottom left inlet to toggle between displaying the image or the map in the main view. While displaying the image in the main view, the top left box provides metadata to the photo. This box has a "Report" button to report any issues with the photo, and both an "iD" and a "JOSM" button to open the current map in the respective OpenStreetMap editor.</source>
+<target xml:lang="fr">You can click "Expand" in the bottom left inlet to toggle between displaying the image or the map in the main view. While displaying the image in the main view, the top left box provides metadata to the photo. This box has a "Report" button to report any issues with the photo, and both an "iD" and a "JOSM" button to open the current map in the respective OpenStreetMap editor.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Use the navigation arrows on the image to move between images, or press the "▶" button to move through an entire sequence.</source>
+<target xml:lang="fr">Use the navigation arrows on the image to move between images, or press the "▶" button to move through an entire sequence.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

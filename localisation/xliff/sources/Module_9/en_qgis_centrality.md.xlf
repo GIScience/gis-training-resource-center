@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_centrality.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Network centrality measures and its application in QGIS <bpt id="1">&lt;a id="network-centrality-measures-and-its-application-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Network centrality measures and its application in QGIS <bpt id="1">&lt;a id="network-centrality-measures-and-its-application-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In chapter <ph id="1">{ref}</ph><ph id="2">`content:references:module9:network-theory`</ph> we introduced the concept of spatial networks for the application of routing and accessibility. This chapter aims at extending our understanding of networks encompassing metrics to describe their shape, function and general properties.</source>
+<target xml:lang="fr">In chapter <ph id="1">{ref}</ph><ph id="2">`content:references:module9:network-theory`</ph> we introduced the concept of spatial networks for the application of routing and accessibility. This chapter aims at extending our understanding of networks encompassing metrics to describe their shape, function and general properties.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This chapter provides an overview on the following questions:</source>
+<target xml:lang="fr">This chapter provides an overview on the following questions:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">What are common network metrics</source>
+<target xml:lang="fr">What are common network metrics</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Degree centrality</source>
+<target xml:lang="fr">Degree centrality</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Betweenness centrality</source>
+<target xml:lang="fr">Betweenness centrality</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Closeness Centrality</source>
+<target xml:lang="fr">Closeness Centrality</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Eigenvector Centrality</source>
+<target xml:lang="fr">Eigenvector Centrality</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">PageRank</source>
+<target xml:lang="fr">PageRank</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Clustering Coefficient</source>
+<target xml:lang="fr">Clustering Coefficient</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">However we focus on betweenness and closeness centrality</source>
+<target xml:lang="fr">However we focus on betweenness and closeness centrality</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Betweenness <bpt id="1">&lt;a id="betweenness"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Betweenness <bpt id="1">&lt;a id="betweenness"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Betweenness centrality is a measure that quantifies the importance or influence of a node within a network by assessing the extent to which the node lies on the shortest paths between other pairs of nodes. In other words, it captures how frequently a node acts as a bridge or intermediary in connecting different parts of the network.</source>
+<target xml:lang="fr">Betweenness centrality is a measure that quantifies the importance or influence of a node within a network by assessing the extent to which the node lies on the shortest paths between other pairs of nodes. In other words, it captures how frequently a node acts as a bridge or intermediary in connecting different parts of the network.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Graph representation: nodes &amp; edges</source>
+<target xml:lang="fr">Graph representation: nodes &amp; edges</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Directed  and weighed graph</source>
+<target xml:lang="fr">Directed  and weighed graph</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Betweenness centrality: Rank nodes/edges by their importance/influence for overall connectivity within the network (eg bridges, bridgeheads)</source>
+<target xml:lang="fr">Betweenness centrality: Rank nodes/edges by their importance/influence for overall connectivity within the network (eg bridges, bridgeheads)</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Limitations of standard betweenness centrality and modification <bpt id="1">&lt;a id="limitations-of-standard-betweenness-centrality-and-modification"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Limitations of standard betweenness centrality and modification <bpt id="1">&lt;a id="limitations-of-standard-betweenness-centrality-and-modification"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The following describes betweenness centrality in a standard and modified way exemplary.</source>
+<target xml:lang="fr">The following describes betweenness centrality in a standard and modified way exemplary.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Shortest path between all nodes</source>
+<target xml:lang="fr">Shortest path between all nodes</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Betweenness centrality score represents the amount of visits at every node/edge</source>
+<target xml:lang="fr">Betweenness centrality score represents the amount of visits at every node/edge</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The more visits, the more central is a node/edge</source>
+<target xml:lang="fr">The more visits, the more central is a node/edge</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Limitation for specific analysis:</source>
+<target xml:lang="fr">Limitation for specific analysis:</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">_</bpt>How important is a single road segment for commuting<ept id="1">_</ept></source>
+<target xml:lang="fr"><bpt id="1">_</bpt>How important is a single road segment for commuting<ept id="1">_</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">_</bpt>How important is a single road segment for access towards healthcare<ept id="1">_</ept></source>
+<target xml:lang="fr"><bpt id="1">_</bpt>How important is a single road segment for access towards healthcare<ept id="1">_</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Modification: shortest paths between all nodes and subset</source>
+<target xml:lang="fr">Modification: shortest paths between all nodes and subset</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Departure: all nodes</source>
+<target xml:lang="fr">Departure: all nodes</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Destination: hospital</source>
+<target xml:lang="fr">Destination: hospital</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Limitation: Biased towards road network density.</source>
+<target xml:lang="fr">Limitation: Biased towards road network density.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Further modification: shortest paths between subset and subset</source>
+<target xml:lang="fr">Further modification: shortest paths between subset and subset</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Departure: population centers</source>
+<target xml:lang="fr">Departure: population centers</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Destination: hospital</source>
+<target xml:lang="fr">Destination: hospital</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Possibility to include population counts as weights</source>
+<target xml:lang="fr">Possibility to include population counts as weights</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Population density is not uniform</source>
+<target xml:lang="fr">Population density is not uniform</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Demographics</source>
+<target xml:lang="fr">Demographics</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Application for identifying critical infrastructure <bpt id="1">&lt;a id="application-for-identifying-critical-infrastructure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Application for identifying critical infrastructure <bpt id="1">&lt;a id="application-for-identifying-critical-infrastructure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Research and paper publication conducted in 2021 on the influence of Cyclone Idai in Mozambique on the road network and access to healthcare facilities.</source>
+<target xml:lang="fr">Research and paper publication conducted in 2021 on the influence of Cyclone Idai in Mozambique on the road network and access to healthcare facilities.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Utilized targeted betweenness centrality to assess changes in centrality scores of road segments.</source>
+<target xml:lang="fr">Utilized targeted betweenness centrality to assess changes in centrality scores of road segments.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Considered flooded areas as impassable and examined the impact on centrality.</source>
+<target xml:lang="fr">Considered flooded areas as impassable and examined the impact on centrality.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Used population centers as origins and healthcare facilities as destinations for centrality measurement.</source>
+<target xml:lang="fr">Used population centers as origins and healthcare facilities as destinations for centrality measurement.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Identified roads that became more important for transportation towards healthcare services.</source>
+<target xml:lang="fr">Identified roads that became more important for transportation towards healthcare services.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Demonstrated the crucial role of these roads in facilitating access to healthcare during natural disasters.</source>
+<target xml:lang="fr">Demonstrated the crucial role of these roads in facilitating access to healthcare during natural disasters.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Highlighted the significance of targeted betweenness centrality in analyzing such scenarios.</source>
+<target xml:lang="fr">Highlighted the significance of targeted betweenness centrality in analyzing such scenarios.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">References <bpt id="1">&lt;a id="references"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">References <bpt id="1">&lt;a id="references"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Petricola, S., Reinmuth, M., Lautenbach, S. et al. Assessing road criticality and loss of healthcare accessibility during floods: the case of Cyclone Idai, Mozambique 2019. Int J Health Geogr 21, 14 (2022). <it id="1" pos="open">[</it><ph id="2">https://doi.org/10.1186/s12942-022-00315-2](https://doi.org/10.1186/s12942-022-00315-2)</ph></source>
+<target xml:lang="fr">Petricola, S., Reinmuth, M., Lautenbach, S. et al. Assessing road criticality and loss of healthcare accessibility during floods: the case of Cyclone Idai, Mozambique 2019. Int J Health Geogr 21, 14 (2022). <it id="1" pos="open">[</it><ph id="2">https://doi.org/10.1186/s12942-022-00315-2](https://doi.org/10.1186/s12942-022-00315-2)</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Zia M, Fürle J, Ludwig C, Lautenbach S, Gumbrich S, Zipf A. SocialMedia2Traffic: Derivation of Traffic Information from Social Media Data. ISPRS International Journal of Geo-Information. 2022; 11(9):482. <it id="1" pos="open">[</it><ph id="2">https://doi.org/10.3390/ijgi11090482](https://doi.org/10.3390/ijgi11090482)</ph></source>
+<target xml:lang="fr">Zia M, Fürle J, Ludwig C, Lautenbach S, Gumbrich S, Zipf A. SocialMedia2Traffic: Derivation of Traffic Information from Social Media Data. ISPRS International Journal of Geo-Information. 2022; 11(9):482. <it id="1" pos="open">[</it><ph id="2">https://doi.org/10.3390/ijgi11090482](https://doi.org/10.3390/ijgi11090482)</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Klipper, I. G., Zipf, A., and Lautenbach, S.: Flood Impact Assessment on Road Network and Healthcare Access at the example of Jakarta, Indonesia, AGILE GIScience Ser., 2, 4, , 2021. <it id="1" pos="open">[</it><ph id="2">https://doi.org/10.5194/agile-giss-2-4-2021](https://agile-giss.copernicus.org/articles/2/4/2021/)</ph></source>
+<target xml:lang="fr">Klipper, I. G., Zipf, A., and Lautenbach, S.: Flood Impact Assessment on Road Network and Healthcare Access at the example of Jakarta, Indonesia, AGILE GIScience Ser., 2, 4, , 2021. <it id="1" pos="open">[</it><ph id="2">https://doi.org/10.5194/agile-giss-2-4-2021](https://agile-giss.copernicus.org/articles/2/4/2021/)</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Closeness <bpt id="1">&lt;a id="closeness"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Closeness <bpt id="1">&lt;a id="closeness"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Closeness centrality is a measure that quantifies how easily a node in a network can reach other nodes, based on the inverse of the average shortest path distance from that node to all other nodes in the network.</source>
+<target xml:lang="fr">Closeness centrality is a measure that quantifies how easily a node in a network can reach other nodes, based on the inverse of the average shortest path distance from that node to all other nodes in the network.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Determine the centrality of locations within a network based on efficient distance and time calculations for travel between different grid cell centroids in Rio.</source>
+<target xml:lang="fr">Determine the centrality of locations within a network based on efficient distance and time calculations for travel between different grid cell centroids in Rio.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Grid-based analysis: Employed a 200m grid overlay on the city to divide the wider area into manageable units for analyzing mobility patterns and exposure</source>
+<target xml:lang="fr">Grid-based analysis: Employed a 200m grid overlay on the city to divide the wider area into manageable units for analyzing mobility patterns and exposure</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Motorized and pedestrian routing profiles: Calculated travel distance and time for each grid cell centroid, considering both motorized travel and pedestrian routing options.</source>
+<target xml:lang="fr">Motorized and pedestrian routing profiles: Calculated travel distance and time for each grid cell centroid, considering both motorized travel and pedestrian routing options.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Purpose: Developed an exposure layer to understand human mobility patterns, particularly relevant for assessing the spread of vector-borne diseases like Dengue fever in Rio.</source>
+<target xml:lang="fr">Purpose: Developed an exposure layer to understand human mobility patterns, particularly relevant for assessing the spread of vector-borne diseases like Dengue fever in Rio.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">The analysis contributes to an exposure analysis by identifying individuals who may act as carriers of the disease, potentially getting bitten by a mosquito and infecting them, thereby aiding in disease prevention and control strategies.</source>
+<target xml:lang="fr">The analysis contributes to an exposure analysis by identifying individuals who may act as carriers of the disease, potentially getting bitten by a mosquito and infecting them, thereby aiding in disease prevention and control strategies.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_7/en_qgis_automation_theory.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The model designer in QGIS <bpt id="1">&lt;a id="the-model-designer-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The model designer in QGIS <bpt id="1">&lt;a id="the-model-designer-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Introduction into the QGIS Model Designer <bpt id="1">&lt;a id="introduction-into-the-qgis-model-designer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introduction into the QGIS Model Designer <bpt id="1">&lt;a id="introduction-into-the-qgis-model-designer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">![</bpt><ept id="1">](/fig/processingModel.png)</ept> <ph id="2">`Graphical Modeler`</ph> also known as the Model Builder allows users to create complex models using a visual interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily reproduced with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.</source>
+<target xml:lang="fr">The <bpt id="1">![</bpt><ept id="1">](/fig/processingModel.png)</ept> <ph id="2">`Graphical Modeler`</ph> also known as the Model Builder allows users to create complex models using a visual interface. Most analysis tasks in a GIS are not isolated, but part of a chain of operations resulting in a series of inputs and outputs (e.g. clipping the area of interest, performing a spatial join and applying some table functions). Using the Graphical Modeler, this chain of operations can be combined into a single process, which can then be easily reproduced with a different set of inputs. Regardless of how many steps and different algorithms are involved in the analysis, a model is executed as a single algorithm, saving time and effort.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Graphical User Interface <bpt id="1">&lt;a id="graphical-user-interface"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Graphical User Interface <bpt id="1">&lt;a id="graphical-user-interface"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The Graphical Modeler can be accessed from the Processing menu <ph id="1">`Processing -> Graphical Modeler`</ph> as shown in <ph id="2">{numref}</ph><ph id="3">`open_graphical_modeler`</ph>.</source>
+<target xml:lang="fr">The Graphical Modeler can be accessed from the Processing menu <ph id="1">`Processing -> Graphical Modeler`</ph> as shown in <ph id="2">{numref}</ph><ph id="3">`open_graphical_modeler`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_open_graphical_modeler.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_open_graphical_modeler.png</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 150px</ph>
+<ph id="2">name: open_graphical_modeler</ph></source>
+<target xml:lang="fr"><ph id="1">height: 150px</ph>
+<ph id="2">name: open_graphical_modeler</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">How to open the Graphical Modeler in QGIS
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">How to open the Graphical Modeler in QGIS
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">This will open the following window, which contains everything we need to build a model.</source>
+<target xml:lang="fr">This will open the following window, which contains everything we need to build a model.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_gui_graphical_modeler.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_gui_graphical_modeler.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 500px</ph>
+<ph id="2">name: gui_graphical_modeler</ph></source>
+<target xml:lang="fr"><ph id="1">height: 500px</ph>
+<ph id="2">name: gui_graphical_modeler</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Graphical Modeler window for QGIS version 3.28.4
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Graphical Modeler window for QGIS version 3.28.4
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In the Graphical Modeler window we can see several icons and menus. Firstly, we will focus on the left window for the <ph id="1">`Inputs`</ph> and <ph id="2">`Algorithms`</ph> section. Inputs are all the input variables or layers for a model, such as a Vector Layer, Raster Layer, String, Boolean, Expression and many others. The Algorithms are all the tools that are used to process the input variables. In the processing chain, one algorithm/tool will return an output that will be used by another/the following tool until the final output is created.</source>
+<target xml:lang="fr">In the Graphical Modeler window we can see several icons and menus. Firstly, we will focus on the left window for the <ph id="1">`Inputs`</ph> and <ph id="2">`Algorithms`</ph> section. Inputs are all the input variables or layers for a model, such as a Vector Layer, Raster Layer, String, Boolean, Expression and many others. The Algorithms are all the tools that are used to process the input variables. In the processing chain, one algorithm/tool will return an output that will be used by another/the following tool until the final output is created.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Creating a model <bpt id="1">&lt;a id="creating-a-model"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Creating a model <bpt id="1">&lt;a id="creating-a-model"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Creating a model involves two basic steps:</source>
+<target xml:lang="fr">Creating a model involves two basic steps:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Defining the necessary inputs. These inputs are added to the parameter window so the user can set their values when running the model.</source>
+<target xml:lang="fr">Defining the necessary inputs. These inputs are added to the parameter window so the user can set their values when running the model.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Defining the processing steps. The processing steps are defined by adding algorithms and selecting how they use the defined inputs or the outputs generated by other algorithms in the model.</source>
+<target xml:lang="fr">Defining the processing steps. The processing steps are defined by adding algorithms and selecting how they use the defined inputs or the outputs generated by other algorithms in the model.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Building a model to buffer road infrastructure <bpt id="1">&lt;a id="building-a-model-to-buffer-road-infrastructure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Building a model to buffer road infrastructure <bpt id="1">&lt;a id="building-a-model-to-buffer-road-infrastructure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">We will build our first simple model by buffering road segments. This process is based on a vector layer containing the road data and the buffer algorithm.</source>
+<target xml:lang="fr">We will build our first simple model by buffering road segments. This process is based on a vector layer containing the road data and the buffer algorithm.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Selection of inputs <bpt id="1">&lt;a id="selection-of-inputs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Selection of inputs <bpt id="1">&lt;a id="selection-of-inputs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">To add new inputs:</source>
+<target xml:lang="fr">To add new inputs:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Inputs`</ph> tab from the left window.</source>
+<target xml:lang="fr">Select the <ph id="1">`Inputs`</ph> tab from the left window.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Next, select the <ph id="1">`Vector Layer`</ph> by either double-clicking or dragging and dropping it onto the model canvas (<ph id="2">{numref}</ph><ph id="3">`vector_layer_modeler`</ph>). This will open the input Parameter Definition window (<ph id="4">{numref}</ph><ph id="5">`input_vector_modeler`</ph>).</source>
+<target xml:lang="fr">Next, select the <ph id="1">`Vector Layer`</ph> by either double-clicking or dragging and dropping it onto the model canvas (<ph id="2">{numref}</ph><ph id="3">`vector_layer_modeler`</ph>). This will open the input Parameter Definition window (<ph id="4">{numref}</ph><ph id="5">`input_vector_modeler`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">In this window we can customize some vector input parameters such as <ph id="1">`Description`</ph>, <ph id="2">`Geometry type`</ph> (Point, Line, Polygon) and we can also define our input as mandatory for your model by ticking the <ph id="3">`Mandatory`</ph> box.</source>
+<target xml:lang="fr">In this window we can customize some vector input parameters such as <ph id="1">`Description`</ph>, <ph id="2">`Geometry type`</ph> (Point, Line, Polygon) and we can also define our input as mandatory for your model by ticking the <ph id="3">`Mandatory`</ph> box.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_vector_layer_modeler.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_vector_layer_modeler.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 300px</ph>
+<ph id="2">name: vector_layer_modeler</ph></source>
+<target xml:lang="fr"><ph id="1">height: 300px</ph>
+<ph id="2">name: vector_layer_modeler</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Vector Layer as input
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Vector Layer as input
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_input_vector_modeler.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_input_vector_modeler.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 300px</ph>
+<ph id="2">name: input_vector_modeler</ph></source>
+<target xml:lang="fr"><ph id="1">height: 300px</ph>
+<ph id="2">name: input_vector_modeler</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Vector Layer Parameter Definition
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Vector Layer Parameter Definition
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Selecting the Algorithms <bpt id="1">&lt;a id="selecting-the-algorithms"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Selecting the Algorithms <bpt id="1">&lt;a id="selecting-the-algorithms"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">The model builder is using the same algorithms that are available in the processing toolbox in the main QGIS window.
+To add algorithms:</source>
+<target xml:lang="fr">The model builder is using the same algorithms that are available in the processing toolbox in the main QGIS window.
+To add algorithms:</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Algorithms`</ph> tab on the left.</source>
+<target xml:lang="fr">Select the <ph id="1">`Algorithms`</ph> tab on the left.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Using the searchbar, look the the tool <ph id="1">`Buffer`</ph> algorithm as shown in <ph id="2">{numref}</ph><ph id="3">`model_buffer`</ph>.</source>
+<target xml:lang="fr">Using the searchbar, look the the tool <ph id="1">`Buffer`</ph> algorithm as shown in <ph id="2">{numref}</ph><ph id="3">`model_buffer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Add it to the model canvas by dragging it onto the canvas or double-clicking on it.</source>
+<target xml:lang="fr">Add it to the model canvas by dragging it onto the canvas or double-clicking on it.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_model_buffer.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_model_buffer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 300px</ph>
+<ph id="2">name: model_buffer</ph></source>
+<target xml:lang="fr"><ph id="1">height: 300px</ph>
+<ph id="2">name: model_buffer</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Selection of Buffer algorithm
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Selection of Buffer algorithm
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">The algorithm parameters window will open. Here we have to specify the description (title), the input, the buffer size, and the output.</source>
+<target xml:lang="fr">The algorithm parameters window will open. Here we have to specify the description (title), the input, the buffer size, and the output.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+The algorithm window looks a bit different than when using the algorithm outside the model builder. The main difference is that you have to specify the algorithm input as either being one of the <bpt id="2">__</bpt>model inputs<ept id="2">__</ept> you have defined or an <bpt id="3">__</bpt>output of another algorithm<ept id="3">__</ept>. By selecting the output of another algorithm, you can effectively chain multiple analysis steps into each other to create a complex workflow.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+The algorithm window looks a bit different than when using the algorithm outside the model builder. The main difference is that you have to specify the algorithm input as either being one of the <bpt id="2">__</bpt>model inputs<ept id="2">__</ept> you have defined or an <bpt id="3">__</bpt>output of another algorithm<ept id="3">__</ept>. By selecting the output of another algorithm, you can effectively chain multiple analysis steps into each other to create a complex workflow.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Description`</ph> field, enter a name or a description of the processing step (e.g. Buffer road network)</source>
+<target xml:lang="fr">In the <ph id="1">`Description`</ph> field, enter a name or a description of the processing step (e.g. Buffer road network)</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">As the <ph id="1">`Input layer`</ph>, select an input layer for the model (e.g. road infrastructure).</source>
+<target xml:lang="fr">As the <ph id="1">`Input layer`</ph>, select an input layer for the model (e.g. road infrastructure).</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Next, we want to specify the buffer size. The units of measurements will be the same as for the project CRS. Enter 200,000. This will instruct the algorithm to create a buffer of 200 meters (or units of measurement).</source>
+<target xml:lang="fr">Next, we want to specify the buffer size. The units of measurements will be the same as for the project CRS. Enter 200,000. This will instruct the algorithm to create a buffer of 200 meters (or units of measurement).</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Add a name in the output field <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_model_outputs.png)</ept> to specify the output of the algorithm as an output of the model.</source>
+<target xml:lang="fr">Add a name in the output field <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_model_outputs.png)</ept> to specify the output of the algorithm as an output of the model.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_3.40_model_adding_algorithm_buffer.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_3.40_model_adding_algorithm_buffer.png</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_qgis_3.40_model_adding_algorithm_buffer</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_qgis_3.40_model_adding_algorithm_buffer</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Adding the buffer algorithm to the model
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding the buffer algorithm to the model
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Chaining algorithms <bpt id="1">&lt;a id="chaining-algorithms"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Chaining algorithms <bpt id="1">&lt;a id="chaining-algorithms"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">The power of the model designer lies in it's ability to chain several processing steps together, creating a complex automated workflow.</source>
+<target xml:lang="fr">The power of the model designer lies in it's ability to chain several processing steps together, creating a complex automated workflow.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">To chain processing steps together:</source>
+<target xml:lang="fr">To chain processing steps together:</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Add another algorithm to the model canvas (e.g., Clip)</source>
+<target xml:lang="fr">Add another algorithm to the model canvas (e.g., Clip)</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Input layer`</ph>, instead of <bpt id="2">![</bpt><ept id="2">](/fig/qgis_3.40_input_model_input.png)</ept> <ph id="3">`Model input`</ph>, select <bpt id="4">![</bpt><ept id="4">](fig/qgis_3.40_input_model_algo_output.png)</ept>. <ph id="5">`Algorithm output`</ph>.</source>
+<target xml:lang="fr">As <ph id="1">`Input layer`</ph>, instead of <bpt id="2">![</bpt><ept id="2">](/fig/qgis_3.40_input_model_input.png)</ept> <ph id="3">`Model input`</ph>, select <bpt id="4">![</bpt><ept id="4">](fig/qgis_3.40_input_model_algo_output.png)</ept>. <ph id="5">`Algorithm output`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Next, select the specific input from a previous processing step.</source>
+<target xml:lang="fr">Next, select the specific input from a previous processing step.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Tips and Tricks when working in the model designer <bpt id="1">&lt;a id="tips-and-tricks-when-working-in-the-model-designer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tips and Tricks when working in the model designer <bpt id="1">&lt;a id="tips-and-tricks-when-working-in-the-model-designer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Working with multiple processing steps
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Working with multiple processing steps
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">When working with multiple processing steps, it can quickly become confusing choosing the inputs when connecting processing steps.
+<bpt id="1">__</bpt>Make sure to give each step a clear name so you can identify it easily when choosing inputs for other processing steps.<ept id="1">__</ept></source>
+<target xml:lang="fr">When working with multiple processing steps, it can quickly become confusing choosing the inputs when connecting processing steps.
+<bpt id="1">__</bpt>Make sure to give each step a clear name so you can identify it easily when choosing inputs for other processing steps.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Adding comments to your model
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Adding comments to your model
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">The graphical model designer can be difficult to understand when looking at a medium to large model, as you can't see the the parameters of the algorithms and you can't see the attributes of the layers.</source>
+<target xml:lang="fr">The graphical model designer can be difficult to understand when looking at a medium to large model, as you can't see the the parameters of the algorithms and you can't see the attributes of the layers.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">To make it easier to understand, you can add comment boxes to your processing steps or inputs.</source>
+<target xml:lang="fr">To make it easier to understand, you can add comment boxes to your processing steps or inputs.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on an algorithm to open the algorithm's parameter.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on an algorithm to open the algorithm's parameter.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">At the top of the algorithm window, navigate to the <ph id="1">`Comments`</ph>-tab. Here you can enter a comment describing what the processing step is doing and what should be considered. You can also specify a colour for the comment box.</source>
+<target xml:lang="fr">At the top of the algorithm window, navigate to the <ph id="1">`Comments`</ph>-tab. Here you can enter a comment describing what the processing step is doing and what should be considered. You can also specify a colour for the comment box.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>. A new box connected to the algorithm will appear in your model canvas.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>. A new box connected to the algorithm will appear in your model canvas.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Joining Attributes
+<ph id="2">:class: tip</ph>
+When joining layers in the model designer, by default, it copies all of the attributes to the new layer.
+This can quickly result in large, confusing attribute tables.
+In order to copy several, but not all, attributes, you have to enter the column names with the following syntax:</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Joining Attributes
+<ph id="2">:class: tip</ph>
+When joining layers in the model designer, by default, it copies all of the attributes to the new layer.
+This can quickly result in large, confusing attribute tables.
+In order to copy several, but not all, attributes, you have to enter the column names with the following syntax:</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Adding group boxes
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Adding group boxes
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">When organising your model, you can add group boxes to group algorithms in the model canvas to visually order the different steps.</source>
+<target xml:lang="fr">When organising your model, you can add group boxes to group algorithms in the model canvas to visually order the different steps.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">In the top bar, navigate to <ph id="1">`Edit`</ph> -> <ph id="2">`Add Group Box`</ph>. A grey box will appear in the background of the model canvas</source>
+<target xml:lang="fr">In the top bar, navigate to <ph id="1">`Edit`</ph> -> <ph id="2">`Add Group Box`</ph>. A grey box will appear in the background of the model canvas</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on the group box to enter a name and customise the colour.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on the group box to enter a name and customise the colour.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Testing the model</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Testing the model</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">When building a model, it is useful to add temporary outputs for the individual steps to verify that the processing steps or calculations are correct in the intermediary steps.</source>
+<target xml:lang="fr">When building a model, it is useful to add temporary outputs for the individual steps to verify that the processing steps or calculations are correct in the intermediary steps.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

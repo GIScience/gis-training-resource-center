@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Téléversement et gestion des images : Projet AILAS <bpt id="1">&lt;a id="televersement-et-gestion-des-images-projet-ailas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Téléversement et gestion des images : Projet AILAS <bpt id="1">&lt;a id="televersement-et-gestion-des-images-projet-ailas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Cette documentation fournit des instructions sur la manière de téléverser et de gérer les images au niveau de la rue qui sont capturées dans le cadre du projet AILAS.</source>
+<target xml:lang="fr">Cette documentation fournit des instructions sur la manière de téléverser et de gérer les images au niveau de la rue qui sont capturées dans le cadre du projet AILAS.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Contexte : Panoramax <bpt id="1">&lt;a id="contexte-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Contexte : Panoramax <bpt id="1">&lt;a id="contexte-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Toutes les images capturées dans le cadre du projet AILAS doivent être téléversées vers une instance privée de la plateforme d’imagerie au niveau de la rue <bpt id="1">**</bpt>Panoramax<ept id="1">**</ept>. Cela garantit que les images soient facilement accessibles aux parties prenantes concernées pour une utilisation ultérieure dans le projet (annotation de données d’entraînement, modélisation), tout en étant protégées contre l’accès par des utilisateurs non autorisés.</source>
+<target xml:lang="fr">Toutes les images capturées dans le cadre du projet AILAS doivent être téléversées vers une instance privée de la plateforme d’imagerie au niveau de la rue <bpt id="1">**</bpt>Panoramax<ept id="1">**</ept>. Cela garantit que les images soient facilement accessibles aux parties prenantes concernées pour une utilisation ultérieure dans le projet (annotation de données d’entraînement, modélisation), tout en étant protégées contre l’accès par des utilisateurs non autorisés.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Qu’est-ce que Panoramax ? <bpt id="1">&lt;a id="quest-ce-que-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Qu’est-ce que Panoramax ? <bpt id="1">&lt;a id="quest-ce-que-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Panoramax<ept id="1">](https://panoramax.fr)</ept> est une plateforme ouverte et fédérée pour le partage et la visualisation d’images au niveau de la rue. Comme <bpt id="2">[</bpt>Google Street View<ept id="2">](https://www.google.com/streetview/)</ept> et <bpt id="3">[</bpt>Mapillary<ept id="3">](https://www.mapillary.com)</ept>, il permet aux utilisateurs d’explorer des lieux à travers des photos prises le long des rues et des chemins. Mais contrairement aux plateformes commerciales, Panoramax repose sur un <bpt id="4">**</bpt>écosystème décentralisé et ouvert<ept id="4">**</ept> : les images sont hébergées sur des serveurs indépendants (gérés par des institutions, des collectivités ou des communautés) plutôt que par une seule entreprise, et l’accès est régi par des standards ouverts. L’ensemble de la pile logicielle Panoramax est open source.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Panoramax<ept id="1">](https://panoramax.fr)</ept> est une plateforme ouverte et fédérée pour le partage et la visualisation d’images au niveau de la rue. Comme <bpt id="2">[</bpt>Google Street View<ept id="2">](https://www.google.com/streetview/)</ept> et <bpt id="3">[</bpt>Mapillary<ept id="3">](https://www.mapillary.com)</ept>, il permet aux utilisateurs d’explorer des lieux à travers des photos prises le long des rues et des chemins. Mais contrairement aux plateformes commerciales, Panoramax repose sur un <bpt id="4">**</bpt>écosystème décentralisé et ouvert<ept id="4">**</ept> : les images sont hébergées sur des serveurs indépendants (gérés par des institutions, des collectivités ou des communautés) plutôt que par une seule entreprise, et l’accès est régi par des standards ouverts. L’ensemble de la pile logicielle Panoramax est open source.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Cela signifie que la propriété des données reste entre les mains des contributeurs et des institutions hébergeantes, et que les images peuvent être plus facilement intégrées dans des projets locaux, des travaux de recherche ou des services publics. Panoramax met l’accent sur <bpt id="1">**</bpt>l’ouverture, la transparence et la souveraineté<ept id="1">**</ept> des données au niveau de la rue.</source>
+<target xml:lang="fr">Cela signifie que la propriété des données reste entre les mains des contributeurs et des institutions hébergeantes, et que les images peuvent être plus facilement intégrées dans des projets locaux, des travaux de recherche ou des services publics. Panoramax met l’accent sur <bpt id="1">**</bpt>l’ouverture, la transparence et la souveraineté<ept id="1">**</ept> des données au niveau de la rue.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Fonctionnalités <bpt id="1">&lt;a id="fonctionnalites"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Fonctionnalités <bpt id="1">&lt;a id="fonctionnalites"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">🌍 Fonctionnalités principales <bpt id="1">&lt;a id="fonctionnalites-principales"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">🌍 Fonctionnalités principales <bpt id="1">&lt;a id="fonctionnalites-principales"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Visualiseur d’images au niveau de la rue<ept id="1">**</ept> – explorer des images panoramiques ou directionnelles le long des routes, chemins et lieux.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Visualiseur d’images au niveau de la rue<ept id="1">**</ept> – explorer des images panoramiques ou directionnelles le long des routes, chemins et lieux.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Hébergement ouvert et fédéré<ept id="1">**</ept> – les images sont stockées sur des serveurs indépendants opérés par différentes organisations (collectivités, centres de recherche, ONG, etc.).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Hébergement ouvert et fédéré<ept id="1">**</ept> – les images sont stockées sur des serveurs indépendants opérés par différentes organisations (collectivités, centres de recherche, ONG, etc.).</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Standards ouverts (STAC, OGC)<ept id="1">**</ept> – assurent l’interopérabilité avec les plateformes de cartographie, outils SIG et portails de données.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Standards ouverts (STAC, OGC)<ept id="1">**</ept> – assurent l’interopérabilité avec les plateformes de cartographie, outils SIG et portails de données.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contributions de sources multiples<ept id="1">**</ept> – les images peuvent provenir d’institutions, de projets communautaires ou d’individus.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contributions de sources multiples<ept id="1">**</ept> – les images peuvent provenir d’institutions, de projets communautaires ou d’individus.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Intégration dans les flux de cartographie<ept id="1">**</ept> – les images peuvent être reliées à OpenStreetMap ou à d’autres jeux de données géospatiales.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Intégration dans les flux de cartographie<ept id="1">**</ept> – les images peuvent être reliées à OpenStreetMap ou à d’autres jeux de données géospatiales.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">🔍 Vie privée &amp; traitement <bpt id="1">&lt;a id="vie-privee-and-traitement"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">🔍 Vie privée &amp; traitement <bpt id="1">&lt;a id="vie-privee-and-traitement"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Floutage automatique des visages et plaques d’immatriculation<ept id="1">**</ept> – anonymisation intégrée avant la publication des images.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Floutage automatique des visages et plaques d’immatriculation<ept id="1">**</ept> – anonymisation intégrée avant la publication des images.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Détection d’objets<ept id="1">**</ept> – des modèles d’IA peuvent détecter des éléments pertinents (par ex. panneaux de signalisation) dans les images.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Détection d’objets<ept id="1">**</ept> – des modèles d’IA peuvent détecter des éléments pertinents (par ex. panneaux de signalisation) dans les images.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Modèles de détection personnalisés<ept id="1">**</ept> – les opérateurs peuvent exécuter leurs propres pipelines de détection pour des cas d’usage spécifiques.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Modèles de détection personnalisés<ept id="1">**</ept> – les opérateurs peuvent exécuter leurs propres pipelines de détection pour des cas d’usage spécifiques.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Enrichissement des métadonnées<ept id="1">**</ept> – les objets détectés peuvent être stockés comme données liées aux images, ce qui rend les images consultables et analysables.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Enrichissement des métadonnées<ept id="1">**</ept> – les objets détectés peuvent être stockés comme données liées aux images, ce qui rend les images consultables et analysables.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">⚙️ Plateforme &amp; écosystème <bpt id="1">&lt;a id="plateforme-and-ecosysteme"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">⚙️ Plateforme &amp; écosystème <bpt id="1">&lt;a id="plateforme-and-ecosysteme"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Accès par API<ept id="1">**</ept> – les développeurs peuvent interroger et utiliser les images de manière programmatique.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Accès par API<ept id="1">**</ept> – les développeurs peuvent interroger et utiliser les images de manière programmatique.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Visualiseur web<ept id="1">**</ept> – un visualiseur léger et intégrable dans des portails publics ou des sites de projets.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Visualiseur web<ept id="1">**</ept> – un visualiseur léger et intégrable dans des portails publics ou des sites de projets.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Communautaire<ept id="1">**</ept> – une pile logicielle open source, garantissant transparence et extensibilité.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Communautaire<ept id="1">**</ept> – une pile logicielle open source, garantissant transparence et extensibilité.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Propriété des données à long terme<ept id="1">**</ept> – les institutions gardent le contrôle sur l’endroit et la manière dont leurs images sont stockées et partagées.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Propriété des données à long terme<ept id="1">**</ept> – les institutions gardent le contrôle sur l’endroit et la manière dont leurs images sont stockées et partagées.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Confidentialité et sécurité des données <bpt id="1">&lt;a id="confidentialite-et-securite-des-donnees"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Confidentialité et sécurité des données <bpt id="1">&lt;a id="confidentialite-et-securite-des-donnees"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Panoramax empêche l’identification des personnes présentes dans les images en floutant automatiquement les visages et les plaques d’immatriculation. Ce processus intervient automatiquement au moment du téléversement, avant que les images ne soient publiées. Les utilisateurs peuvent signaler tout autre problème lié à une image via la plateforme. Dans ce cas, l’image est masquée du public jusqu’à intervention du propriétaire de l’image.</source>
+<target xml:lang="fr">Panoramax empêche l’identification des personnes présentes dans les images en floutant automatiquement les visages et les plaques d’immatriculation. Ce processus intervient automatiquement au moment du téléversement, avant que les images ne soient publiées. Les utilisateurs peuvent signaler tout autre problème lié à une image via la plateforme. Dans ce cas, l’image est masquée du public jusqu’à intervention du propriétaire de l’image.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Alors qu’une des principales fonctionnalités de Panoramax est son <bpt id="1">**</bpt>métacatalogue global public<ept id="1">**</ept> qui permet de retrouver les images de toutes les instances fédérées, nous avons délibérément choisi de ne pas rejoindre la fédération avec l’instance Panoramax du projet AILAS. Cela signifie que les images téléversées sur notre instance ne peuvent pas être consultées via l’API globale.</source>
+<target xml:lang="fr">Alors qu’une des principales fonctionnalités de Panoramax est son <bpt id="1">**</bpt>métacatalogue global public<ept id="1">**</ept> qui permet de retrouver les images de toutes les instances fédérées, nous avons délibérément choisi de ne pas rejoindre la fédération avec l’instance Panoramax du projet AILAS. Cela signifie que les images téléversées sur notre instance ne peuvent pas être consultées via l’API globale.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. Le site web et l’API donnant accès aux images et aux données sont actuellement hébergés sur un réseau fermé.</source>
+<target xml:lang="fr">L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. Le site web et l’API donnant accès aux images et aux données sont actuellement hébergés sur un réseau fermé.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Téléversement des images <bpt id="1">&lt;a id="televersement-des-images"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Téléversement des images <bpt id="1">&lt;a id="televersement-des-images"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">🚧 Le processus décrit ici est une solution temporaire et va changer. 🚧</source>
+<target xml:lang="fr">🚧 Le processus décrit ici est une solution temporaire et va changer. 🚧</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">1. Retirez la carte SD de la caméra. <bpt id="1">&lt;a id="1-retirez-la-carte-sd-de-la-camera"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Retirez la carte SD de la caméra. <bpt id="1">&lt;a id="1-retirez-la-carte-sd-de-la-camera"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">2. Insérez la carte dans le lecteur et connectez-le à l’ordinateur. <bpt id="1">&lt;a id="2-inserez-la-carte-dans-le-lecteur-et-connectez-le-a-lordinateur"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Insérez la carte dans le lecteur et connectez-le à l’ordinateur. <bpt id="1">&lt;a id="2-inserez-la-carte-dans-le-lecteur-et-connectez-le-a-lordinateur"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.</source>
+<target xml:lang="fr">Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">3. Se connecter à Panoramax <bpt id="1">&lt;a id="3-se-connecter-a-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Se connecter à Panoramax <bpt id="1">&lt;a id="3-se-connecter-a-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Ouvrez le <bpt id="1">[</bpt>site web Panoramax<ept id="1">](https://panoramax.heigit.org)</ept> du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.</source>
+<target xml:lang="fr">Ouvrez le <bpt id="1">[</bpt>site web Panoramax<ept id="1">](https://panoramax.heigit.org)</ept> du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Saisissez votre <bpt id="1">**</bpt>adresse e-mail<ept id="1">**</ept> et votre mot de passe, puis cliquez sur « Sign in ».</source>
+<target xml:lang="fr">Saisissez votre <bpt id="1">**</bpt>adresse e-mail<ept id="1">**</ept> et votre mot de passe, puis cliquez sur « Sign in ».</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Si c’est votre première connexion, vous utiliserez un mot de passe initial qui vous a été fourni. Vous devrez modifier ce mot de passe immédiatement après vous être connecté.</source>
+<target xml:lang="fr">Si c’est votre première connexion, vous utiliserez un mot de passe initial qui vous a été fourni. Vous devrez modifier ce mot de passe immédiatement après vous être connecté.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Autres instances de Panoramax
+<ph id="2">:class: tip</ph>
+Pour le projet AILAS, les images doivent être téléversées sur une <bpt id="3">[</bpt>instance spécifique de Panoramax<ept id="3">](https://panoramax.heigit.org)</ept>. L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images <bpt id="4">_</bpt>publiquement<ept id="4">_</ept>, consultez les instances publiques disponibles sur <ph id="5">https://panoramax.fr.</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Autres instances de Panoramax
+<ph id="2">:class: tip</ph>
+Pour le projet AILAS, les images doivent être téléversées sur une <bpt id="3">[</bpt>instance spécifique de Panoramax<ept id="3">](https://panoramax.heigit.org)</ept>. L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images <bpt id="4">_</bpt>publiquement<ept id="4">_</ept>, consultez les instances publiques disponibles sur <ph id="5">https://panoramax.fr.</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">4. Téléverser des images <bpt id="1">&lt;a id="4-televerser-des-images"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4. Téléverser des images <bpt id="1">&lt;a id="4-televerser-des-images"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.</source>
+<target xml:lang="fr">Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Vérifiez que le mode de visibilité est réglé sur « Restreinte à l'instance » (valeur par défaut).</source>
+<target xml:lang="fr">Vérifiez que le mode de visibilité est réglé sur « Restreinte à l'instance » (valeur par défaut).</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Indiquez le mode de transport : si les images ont été capturées par une caméra installée dans une voiture, choisissez « En voiture ».</source>
+<target xml:lang="fr">Indiquez le mode de transport : si les images ont été capturées par une caméra installée dans une voiture, choisissez « En voiture ».</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Ne <bpt id="1">*</bpt>modifiez pas<ept id="1">*</ept> les paramètres avancés.</source>
+<target xml:lang="fr">Ne <bpt id="1">*</bpt>modifiez pas<ept id="1">*</ept> les paramètres avancés.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Cliquez sur « Téléverser des photos ». Un navigateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images présentes sur la carte SD dans le dossier <ph id="1">`/DCIM/100GOPRO`</ph>. Le démarrage du téléversement peut prendre quelques secondes si vous avez sélectionné un grand nombre d’images.</source>
+<target xml:lang="fr">Cliquez sur « Téléverser des photos ». Un navigateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images présentes sur la carte SD dans le dossier <ph id="1">`/DCIM/100GOPRO`</ph>. Le démarrage du téléversement peut prendre quelques secondes si vous avez sélectionné un grand nombre d’images.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Gardez la fenêtre du navigateur ouverte jusqu’à ce que le téléversement soit terminé.</source>
+<target xml:lang="fr">Gardez la fenêtre du navigateur ouverte jusqu’à ce que le téléversement soit terminé.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Une fois le téléversement terminé, vous pouvez rencontrer certains messages d’erreur. Les images sont rejetées lorsqu’elles ne contiennent pas de données de localisation, ou lorsqu’elles sont trop proches de l’image précédente dans le temps et l’espace. En général, il n’y a pas lieu de s’inquiéter. Cependant, si un grand nombre d’images n’a pas pu être téléversé en raison de l’absence de données de localisation, essayez d’allumer la caméra plus tôt avant votre prochain trajet, afin de vous assurer que le GPS est prêt lorsque vous commencez.</source>
+<target xml:lang="fr">Une fois le téléversement terminé, vous pouvez rencontrer certains messages d’erreur. Les images sont rejetées lorsqu’elles ne contiennent pas de données de localisation, ou lorsqu’elles sont trop proches de l’image précédente dans le temps et l’espace. En général, il n’y a pas lieu de s’inquiéter. Cependant, si un grand nombre d’images n’a pas pu être téléversé en raison de l’absence de données de localisation, essayez d’allumer la caméra plus tôt avant votre prochain trajet, afin de vous assurer que le GPS est prêt lorsque vous commencez.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Gestion de plusieurs dossiers d’images
+<ph id="2">:class: tip</ph>
+Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de <ph id="3">`DCIM`</ph> appelés <ph id="4">`100GOPRO`</ph>, <ph id="5">`101GOPRO`</ph>, etc. Répétez les étapes 1 à 6 de cette section pour chacun de ces sous-dossiers.
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Gestion de plusieurs dossiers d’images
+<ph id="2">:class: tip</ph>
+Si vous avez capturé plus de mille images, celles-ci sont enregistrées dans plusieurs sous-dossiers de <ph id="3">`DCIM`</ph> appelés <ph id="4">`100GOPRO`</ph>, <ph id="5">`101GOPRO`</ph>, etc. Répétez les étapes 1 à 6 de cette section pour chacun de ces sous-dossiers.
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">5. Supprimez les images <bpt id="1">&lt;a id="5-supprimez-les-images"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5. Supprimez les images <bpt id="1">&lt;a id="5-supprimez-les-images"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Une fois que vous avez téléversé avec succès les images, supprimez-les de la carte SD.</source>
+<target xml:lang="fr">Une fois que vous avez téléversé avec succès les images, supprimez-les de la carte SD.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">6. Réinsérez la carte SD dans la caméra <bpt id="1">&lt;a id="6-reinserez-la-carte-sd-dans-la-camera"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Réinsérez la carte SD dans la caméra <bpt id="1">&lt;a id="6-reinserez-la-carte-sd-dans-la-camera"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Retirez en toute sécurité le lecteur de cartes SD de votre ordinateur, puis réinsérez la carte dans la caméra.</source>
+<target xml:lang="fr">Retirez en toute sécurité le lecteur de cartes SD de votre ordinateur, puis réinsérez la carte dans la caméra.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Here’s the translated version in French with the image filenames updated to <ph id="1">`fr`</ph>:</source>
+<target xml:lang="fr">Here’s the translated version in French with the image filenames updated to <ph id="1">`fr`</ph>:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Exploration des images sur Panoramax <bpt id="1">&lt;a id="exploration-des-images-sur-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exploration des images sur Panoramax <bpt id="1">&lt;a id="exploration-des-images-sur-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Voir vos propres séquences et photos téléchargées <bpt id="1">&lt;a id="voir-vos-propres-sequences-et-photos-telechargees"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Voir vos propres séquences et photos téléchargées <bpt id="1">&lt;a id="voir-vos-propres-sequences-et-photos-telechargees"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Cliquez sur l’icône de votre compte dans la barre de navigation supérieure de Panoramax et choisissez « Mes photos ». Une page listant toutes vos séquences d’images téléchargées s’ouvrira.</source>
+<target xml:lang="fr">Cliquez sur l’icône de votre compte dans la barre de navigation supérieure de Panoramax et choisissez « Mes photos ». Une page listant toutes vos séquences d’images téléchargées s’ouvrira.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Les séquences sont listées avec leurs noms, le nombre de photos, les dates de prise de vue et de téléchargement, la distance couverte, et le statut de visibilité. Vous pouvez rechercher vos séquences par zone (la vue actuelle sur la carte à gauche de la page), ou trier et filtrer par date.</source>
+<target xml:lang="fr">Les séquences sont listées avec leurs noms, le nombre de photos, les dates de prise de vue et de téléchargement, la distance couverte, et le statut de visibilité. Vous pouvez rechercher vos séquences par zone (la vue actuelle sur la carte à gauche de la page), ou trier et filtrer par date.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Pour voir toutes les photos d’une séquence spécifique, cliquez sur l’une des séquences. Cela ouvrira la page de la séquence.</source>
+<target xml:lang="fr">Pour voir toutes les photos d’une séquence spécifique, cliquez sur l’une des séquences. Cela ouvrira la page de la séquence.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">La page de la séquence affiche les vignettes de toutes les photos d’une séquence. Vous pouvez modifier, par exemple, le nom de la séquence ou masquer des photos individuelles. Ne changez cependant pas le mode de visibilité de la séquence.</source>
+<target xml:lang="fr">La page de la séquence affiche les vignettes de toutes les photos d’une séquence. Vous pouvez modifier, par exemple, le nom de la séquence ou masquer des photos individuelles. Ne changez cependant pas le mode de visibilité de la séquence.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">En cliquant sur le bouton « Plein écran », vous accéderez à la carte « Explorer » tout en vous focalisant sur la séquence et la photo actuellement sélectionnée.</source>
+<target xml:lang="fr">En cliquant sur le bouton « Plein écran », vous accéderez à la carte « Explorer » tout en vous focalisant sur la séquence et la photo actuellement sélectionnée.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Explorer toutes les images sur Panoramax <bpt id="1">&lt;a id="explorer-toutes-les-images-sur-panoramax"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Explorer toutes les images sur Panoramax <bpt id="1">&lt;a id="explorer-toutes-les-images-sur-panoramax"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Cliquez sur « Explorer » dans la barre de navigation supérieure pour ouvrir une carte interactive du monde afin d’explorer toutes les images disponibles. Déplacez et zoomez sur la carte pour trouver des images, ou utilisez la barre de recherche en haut à gauche pour trouver des adresses, villes, etc., sur la carte.</source>
+<target xml:lang="fr">Cliquez sur « Explorer » dans la barre de navigation supérieure pour ouvrir une carte interactive du monde afin d’explorer toutes les images disponibles. Déplacez et zoomez sur la carte pour trouver des images, ou utilisez la barre de recherche en haut à gauche pour trouver des adresses, villes, etc., sur la carte.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Cliquez sur l’un des marqueurs d’image sur la carte pour ouvrir une image.</source>
+<target xml:lang="fr">Cliquez sur l’un des marqueurs d’image sur la carte pour ouvrir une image.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Vous pouvez cliquer sur « Agrandir » dans l’encart en bas à gauche pour basculer entre l’affichage de l’image ou de la carte dans la vue principale. Lors de l’affichage de l’image dans la vue principale, la boîte en haut à gauche fournit les métadonnées de la photo. Cette boîte dispose d’un bouton « Signaler » pour signaler tout problème avec la photo, ainsi que des boutons « iD » et « JOSM » pour ouvrir la carte actuelle dans l’éditeur OpenStreetMap correspondant.</source>
+<target xml:lang="fr">Vous pouvez cliquer sur « Agrandir » dans l’encart en bas à gauche pour basculer entre l’affichage de l’image ou de la carte dans la vue principale. Lors de l’affichage de l’image dans la vue principale, la boîte en haut à gauche fournit les métadonnées de la photo. Cette boîte dispose d’un bouton « Signaler » pour signaler tout problème avec la photo, ainsi que des boutons « iD » et « JOSM » pour ouvrir la carte actuelle dans l’éditeur OpenStreetMap correspondant.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Utilisez les flèches de navigation sur l’image pour passer d’une image à l’autre, ou appuyez sur le bouton « ▶ » pour parcourir l’ensemble d’une séquence.</source>
+<target xml:lang="fr">Utilisez les flèches de navigation sur l’image pour passer d’une image à l’autre, ou appuyez sur le bouton « ▶ » pour parcourir l’ensemble d’une séquence.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

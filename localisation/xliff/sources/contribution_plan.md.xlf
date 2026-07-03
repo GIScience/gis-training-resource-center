@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/contribution_plan.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Contribution Plan for the IFRC GIS Training Platform</source>
+<target xml:lang="fr">Contribution Plan for the IFRC GIS Training Platform</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Introduction</source>
+<target xml:lang="fr">Introduction</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Thank you for your interest in contributing to the IFRC GIS Training Resource Center.
+This page outlines the contribution process and guideline for collaborating with the GIS Training Resource Center. It provides details for contributions and related best practices. Whether you're looking to add new content, contribute to existing material, or collaborate on enhancing the platform overall as a partner, this guide will help to understand the necessary steps.</source>
+<target xml:lang="fr">Thank you for your interest in contributing to the IFRC GIS Training Resource Center.
+This page outlines the contribution process and guideline for collaborating with the GIS Training Resource Center. It provides details for contributions and related best practices. Whether you're looking to add new content, contribute to existing material, or collaborate on enhancing the platform overall as a partner, this guide will help to understand the necessary steps.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Collaborations</source>
+<target xml:lang="fr">Collaborations</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Content</source>
+<target xml:lang="fr">Content</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Collaborators are encourages to propose new topics or content relevant to the GIS Training Resource Center. These topics should align with the training objectives for Anticipatory Action (AA), Information Management and focus on basic GIS operations. If you have a topic in mind, please send a brief introduction and key points to <ph id="1">`gis-training-platform@heigit.org`</ph> to initiate collaboration.</source>
+<target xml:lang="fr">Collaborators are encourages to propose new topics or content relevant to the GIS Training Resource Center. These topics should align with the training objectives for Anticipatory Action (AA), Information Management and focus on basic GIS operations. If you have a topic in mind, please send a brief introduction and key points to <ph id="1">`gis-training-platform@heigit.org`</ph> to initiate collaboration.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">To help us understand and evaluate your proposal, kindly consider the following three guiding questions:</source>
+<target xml:lang="fr">To help us understand and evaluate your proposal, kindly consider the following three guiding questions:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What level of GIS expertise is required for the proposed content?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What level of GIS expertise is required for the proposed content?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is the main learning objective or added value of the proposed content?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is the main learning objective or added value of the proposed content?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Will you be adding the content to the training platform yourself (in markdown), or would you require support?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Will you be adding the content to the training platform yourself (in markdown), or would you require support?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">We will review and assess each idea on a case-by-case basis.</source>
+<target xml:lang="fr">We will review and assess each idea on a case-by-case basis.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Interested in becoming a Partner or Supporter of the Training Resource Platform?</source>
+<target xml:lang="fr">Interested in becoming a Partner or Supporter of the Training Resource Platform?</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The GIS Training Working Group behind the IFRC GIS Training Resource Center was established by the British, German, and Netherlands Red Cross Societies, with technical support from the Heidelberg Institute for Geoinformation Technology (HeiGIT).</source>
+<target xml:lang="fr">The GIS Training Working Group behind the IFRC GIS Training Resource Center was established by the British, German, and Netherlands Red Cross Societies, with technical support from the Heidelberg Institute for Geoinformation Technology (HeiGIT).</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In addition to content contributions, this consortium welcomes new partners from the Red Cross and Red Crescent Movement. We also encourage contributions in the form on in-kind or financial support to help further develop and drive continuous improvement of the platform.</source>
+<target xml:lang="fr">In addition to content contributions, this consortium welcomes new partners from the Red Cross and Red Crescent Movement. We also encourage contributions in the form on in-kind or financial support to help further develop and drive continuous improvement of the platform.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Content Contribution Guidelines</source>
+<target xml:lang="fr">Content Contribution Guidelines</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Your contribution</source>
+<target xml:lang="fr">Your contribution</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Markdown MyST and Jupyter Book:<ept id="1">__</ept> In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called <bpt id="2">__</bpt>MyST Markdown<ept id="2">__</ept>. This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives. For more information about MyST Markdown, see <bpt id="3">[</bpt>MyST Markdown overview<ept id="3">](https://jupyter-book.readthedocs.io/v1/content/myst.html)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Markdown MyST and Jupyter Book:<ept id="1">__</ept> In addition to CommonMark Markdown, Jupyter Book also supports a more fully-featured version of Markdown called <bpt id="2">__</bpt>MyST Markdown<ept id="2">__</ept>. This is a superset of CommonMark that includes syntactic pieces that are useful for publishing computational narratives. For more information about MyST Markdown, see <bpt id="3">[</bpt>MyST Markdown overview<ept id="3">](https://jupyter-book.readthedocs.io/v1/content/myst.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Changes on the Dev-Branch:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Changes on the Dev-Branch:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">All changes must be pushed to the <ph id="1">`dev`</ph> branch. These changes will be reviewed by HeiGIT and/or RC before a pull request is merged.</source>
+<target xml:lang="fr">All changes must be pushed to the <ph id="1">`dev`</ph> branch. These changes will be reviewed by HeiGIT and/or RC before a pull request is merged.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Currently, only HeiGIT or RC are authorized to create pull requests and contributors can request reviews from HeiGIT and/or RC via GitHub.</source>
+<target xml:lang="fr">Currently, only HeiGIT or RC are authorized to create pull requests and contributors can request reviews from HeiGIT and/or RC via GitHub.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>New Content:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>New Content:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">If you have ideas for new content (either as new sections in existing modules or new standalone modules), send us an email or submit an issue in github using the appropriate tags. A proposal may also include a markdown page or suggested structure.</source>
+<target xml:lang="fr">If you have ideas for new content (either as new sections in existing modules or new standalone modules), send us an email or submit an issue in github using the appropriate tags. A proposal may also include a markdown page or suggested structure.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">New content proposals will undergo review, and contributors are encouraged to actively engage with reviewers via GitHub issues. For deeper discussions about content or collaborations, HeiGIT/RC are happy to schedule video calls.</source>
+<target xml:lang="fr">New content proposals will undergo review, and contributors are encouraged to actively engage with reviewers via GitHub issues. For deeper discussions about content or collaborations, HeiGIT/RC are happy to schedule video calls.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>External Data Submission:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>External Data Submission:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">If you need to send data or other materials, you can email them to <ph id="1">`gis-training-platform@heigit.org`</ph> to be uploaded to the Nexus Data Repository.</source>
+<target xml:lang="fr">If you need to send data or other materials, you can email them to <ph id="1">`gis-training-platform@heigit.org`</ph> to be uploaded to the Nexus Data Repository.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Licences</source>
+<target xml:lang="fr">Licences</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Copyright and Data Sources:<ept id="1">__</ept> Always provide clear citations for any external material, including articles, books, and web content. For articles and books, include the full citation with DOI. For webpages, include the source URL (external links must be maintained)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Copyright and Data Sources:<ept id="1">__</ept> Always provide clear citations for any external material, including articles, books, and web content. For articles and books, include the full citation with DOI. For webpages, include the source URL (external links must be maintained)</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">All content within the platform will be published under the <bpt id="1">__</bpt><bpt id="2">[</bpt>CC 4.0 BY-NC-SA<ept id="2">](https://creativecommons.org/licenses/by-nc-sa/4.0/)</ept><ept id="1">__</ept> license</source>
+<target xml:lang="fr">All content within the platform will be published under the <bpt id="1">__</bpt><bpt id="2">[</bpt>CC 4.0 BY-NC-SA<ept id="2">](https://creativecommons.org/licenses/by-nc-sa/4.0/)</ept><ept id="1">__</ept> license</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Ideal Structure for New Content</source>
+<target xml:lang="fr">Ideal Structure for New Content</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">The structure of new modules/chapters should ideally include:</source>
+<target xml:lang="fr">The structure of new modules/chapters should ideally include:</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Theory:<ept id="1">__</ept> Introduction to key concepts.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Theory:<ept id="1">__</ept> Introduction to key concepts.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Practical Examples:<ept id="1">__</ept> Demonstrate how to apply concepts in Anticipatory Action, Information Management, and QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Practical Examples:<ept id="1">__</ept> Demonstrate how to apply concepts in Anticipatory Action, Information Management, and QGIS.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercises:<ept id="1">__</ept> Hands-on practice with follow-along exercises.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercises:<ept id="1">__</ept> Hands-on practice with follow-along exercises.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Synthesis:<ept id="1">__</ept> A more complex exercise or example that synthesizes the module content</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Synthesis:<ept id="1">__</ept> A more complex exercise or example that synthesizes the module content</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Self-Assessment Questions:<ept id="1">__</ept> To test comprehension of the module's main concepts</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Self-Assessment Questions:<ept id="1">__</ept> To test comprehension of the module's main concepts</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Types of Content</source>
+<target xml:lang="fr">Types of Content</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Theory:<ept id="1">__</ept> Explanation of concepts.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Theory:<ept id="1">__</ept> Explanation of concepts.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Real World Examples:<ept id="1">__</ept> Include practical examples that are relevant to the GIS field (preferably related to IM, AA, or humanitarian work in general).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Real World Examples:<ept id="1">__</ept> Include practical examples that are relevant to the GIS field (preferably related to IM, AA, or humanitarian work in general).</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercises:<ept id="1">__</ept> Follow-along or self-guided exercises to reinforce learning.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercises:<ept id="1">__</ept> Follow-along or self-guided exercises to reinforce learning.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Discussion Questions:<ept id="1">__</ept> Promote interaction and connection to real-world scenarios.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Discussion Questions:<ept id="1">__</ept> Promote interaction and connection to real-world scenarios.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wiki:<ept id="1">__</ept> Brief articles that provide explanations or instructions related to the platform.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wiki:<ept id="1">__</ept> Brief articles that provide explanations or instructions related to the platform.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Figures:<ept id="1">__</ept> Pictures or figures to illustrate theoretical concepts, real world examples or show screenshots</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Figures:<ept id="1">__</ept> Pictures or figures to illustrate theoretical concepts, real world examples or show screenshots</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Videos:<ept id="1">__</ept> The platform uses short videos without commentary to show how to perform certain steps (e.g., edit the attribute table, import layers, or set the symbology of a layer)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Videos:<ept id="1">__</ept> The platform uses short videos without commentary to show how to perform certain steps (e.g., edit the attribute table, import layers, or set the symbology of a layer)</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Keep in mind that there are many detailed GIS resources as well as official documentation. Explain the necessary theory for trainees to perform the tasks. You can also refer to external resources.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Keep in mind that there are many detailed GIS resources as well as official documentation. Explain the necessary theory for trainees to perform the tasks. You can also refer to external resources.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Exercise Guidelines</source>
+<target xml:lang="fr">Exercise Guidelines</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Instructions:<ept id="1">__</ept> Provide step-by-step instructions.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Instructions:<ept id="1">__</ept> Provide step-by-step instructions.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Facilitator Notes:<ept id="1">__</ept> Include notes for facilitators on how to guide the exercise.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Facilitator Notes:<ept id="1">__</ept> Include notes for facilitators on how to guide the exercise.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data:<ept id="1">__</ept> Always provide a link to the dataset(s) used in the exercise. Ensure the dataset is cleaned of personal data and errors unless data cleaning is part of the exercise.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data:<ept id="1">__</ept> Always provide a link to the dataset(s) used in the exercise. Ensure the dataset is cleaned of personal data and errors unless data cleaning is part of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Contributors are encouraged to upload videos for step-by-step guides where useful.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Contributors are encouraged to upload videos for step-by-step guides where useful.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">File naming and Formatting Guidelines</source>
+<target xml:lang="fr">File naming and Formatting Guidelines</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Follow these guidelines for naming files and structuring directories:</source>
+<target xml:lang="fr">Follow these guidelines for naming files and structuring directories:</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Naming:<ept id="1">__</ept> Choose descriptive names. Ensure that exercises are numbered correctly (e.g. <ph id="2">`module_#_ex#_title`</ph>). The exercise number should be the next available number</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Naming:<ept id="1">__</ept> Choose descriptive names. Ensure that exercises are numbered correctly (e.g. <ph id="2">`module_#_ex#_title`</ph>). The exercise number should be the next available number</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Folder Structure:<ept id="1">__</ept> Ensure that exercise data follows the <bpt id="2">[</bpt>correct folder structure<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> and is zipped correctly (avoid excessive folder nesting as this can lead to problems when unzipping)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Folder Structure:<ept id="1">__</ept> Ensure that exercise data follows the <bpt id="2">[</bpt>correct folder structure<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> and is zipped correctly (avoid excessive folder nesting as this can lead to problems when unzipping)</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Language and QGIS Version:<ept id="1">__</ept> Always include the QGIS version and language in the file names.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Language and QGIS Version:<ept id="1">__</ept> Always include the QGIS version and language in the file names.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Pictures:<ept id="1">__</ept> All pictures and figures have to be stored in the folder <ph id="2">`/fig/`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Pictures:<ept id="1">__</ept> All pictures and figures have to be stored in the folder <ph id="2">`/fig/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">General common pictures just have to have a sort and informative title.</source>
+<target xml:lang="fr">General common pictures just have to have a sort and informative title.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Picture name example: HeiGIT_logo_compact.svg</source>
+<target xml:lang="fr">Picture name example: HeiGIT_logo_compact.svg</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">In the case of a screenshot of QGIS or another program, additional rules apply.  First, the abbreviation of the used language has to be included (e.g. en). Second, the QGIS version (e.g. 3.28).</source>
+<target xml:lang="fr">In the case of a screenshot of QGIS or another program, additional rules apply.  First, the abbreviation of the used language has to be included (e.g. en). Second, the QGIS version (e.g. 3.28).</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Screenshots name example: en_3.29_clip_tool.png</source>
+<target xml:lang="fr">Screenshots name example: en_3.29_clip_tool.png</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">In instances of pictures of the OSM or satellite imagery, one has to include the year and place.</source>
+<target xml:lang="fr">In instances of pictures of the OSM or satellite imagery, one has to include the year and place.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Picture of maps or satellite imagery example: OSM_Heidelberg_2023.png</source>
+<target xml:lang="fr">Picture of maps or satellite imagery example: OSM_Heidelberg_2023.png</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Follow these guidelines when creating and formatting content:</source>
+<target xml:lang="fr">Follow these guidelines when creating and formatting content:</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Spelling:<ept id="1">__</ept> Use British English spelling.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Spelling:<ept id="1">__</ept> Use British English spelling.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Headings:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Headings:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`# Title`</ph> for the main titles of markdown pages</source>
+<target xml:lang="fr"><ph id="1">`# Title`</ph> for the main titles of markdown pages</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`## Title`</ph> for sections</source>
+<target xml:lang="fr"><ph id="1">`## Title`</ph> for sections</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`### Title`</ph> for subsections</source>
+<target xml:lang="fr"><ph id="1">`### Title`</ph> for subsections</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Avoid headings deeper than H3 (<ph id="1">`### Title`</ph>). Use bold, underlining or put it into cards to achieve a similar effect.</source>
+<target xml:lang="fr">Avoid headings deeper than H3 (<ph id="1">`### Title`</ph>). Use bold, underlining or put it into cards to achieve a similar effect.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Links:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Links:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">In Markdown, you can embed links into text by using <ph id="1">`[text/name](link)`</ph></source>
+<target xml:lang="fr">In Markdown, you can embed links into text by using <ph id="1">`[text/name](link)`</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Figures and Images:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Figures and Images:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Images and videos are saved to the <ph id="1">`/fig/`</ph>-folder.</source>
+<target xml:lang="fr">Images and videos are saved to the <ph id="1">`/fig/`</ph>-folder.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Use the figure directive for images:</source>
+<target xml:lang="fr">Use the figure directive for images:</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`name`</ph> must indicate a unique descriptive name. You can refer to figure in text by using:</source>
+<target xml:lang="fr"><ph id="1">`name`</ph> must indicate a unique descriptive name. You can refer to figure in text by using:</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">This does not work in pages that are not included in the <ph id="1">`TOC.yml`</ph>-file</source>
+<target xml:lang="fr">This does not work in pages that are not included in the <ph id="1">`TOC.yml`</ph>-file</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`width`</ph> specifies the pixel width. The maximum amount of pixels for width is 750 px. Alternatively, you can use <ph id="2">`height`</ph>. Be careful to set high values as this will distort the image once it reaches the 750 px width cap.</source>
+<target xml:lang="fr"><ph id="1">`width`</ph> specifies the pixel width. The maximum amount of pixels for width is 750 px. Alternatively, you can use <ph id="2">`height`</ph>. Be careful to set high values as this will distort the image once it reaches the 750 px width cap.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">align specifies where the image should be rendered on the markdown page. E.g., <ph id="1">`align: left`</ph> can be used to align the image to the left part of the page and leave space for text on the right.</source>
+<target xml:lang="fr">align specifies where the image should be rendered on the markdown page. E.g., <ph id="1">`align: left`</ph> can be used to align the image to the left part of the page and leave space for text on the right.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">The caption should describe what is seen on the figure in the context of the section. The image sources must be specified as precisely as possible.</source>
+<target xml:lang="fr">The caption should describe what is seen on the figure in the context of the section. The image sources must be specified as precisely as possible.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">It is possible to embed icons into the text by using <ph id="1">`![](/fig/FILENAME)`</ph>. Make sure the icon height does not exceed 30 pixels.</source>
+<target xml:lang="fr">It is possible to embed icons into the text by using <ph id="1">`![](/fig/FILENAME)`</ph>. Make sure the icon height does not exceed 30 pixels.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Admonitions:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Admonitions:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Use admonitions such as note, caution, tip, tldr for additional notes such as</source>
+<target xml:lang="fr">Use admonitions such as note, caution, tip, tldr for additional notes such as</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Dropdowns:<ept id="1">__</ept> For optional content (e.g. videos or supplementary information), use dropdowns:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Dropdowns:<ept id="1">__</ept> For optional content (e.g. videos or supplementary information), use dropdowns:</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Cards:<ept id="1">__</ept> Use the card directives to highlight content in a "card":</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Cards:<ept id="1">__</ept> Use the card directives to highlight content in a "card":</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Grids:<ept id="1">__</ept> To create several columns to display content or images side by side, you can create grids:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Grids:<ept id="1">__</ept> To create several columns to display content or images side by side, you can create grids:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Margins:<ept id="1">__</ept> Sometimes, it can be useful to put hints or additional information into the margin to the right. This can be achieved with the following directive:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Margins:<ept id="1">__</ept> Sometimes, it can be useful to put hints or additional information into the margin to the right. This can be achieved with the following directive:</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{admonition} </ph>Nesting directives
+<ph id="2">:class: tip</ph>
+It is possible to nest directives such as figures inside of cards or admonitions. Simply use more colons around directives that enclose other such as:</source>
+<target xml:lang="fr"><ph id="1">:::::{admonition} </ph>Nesting directives
+<ph id="2">:class: tip</ph>
+It is possible to nest directives such as figures inside of cards or admonitions. Simply use more colons around directives that enclose other such as:</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Embedding Videos:<ept id="1">__</ept> Videos need to be embedded using HTML-code:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Embedding Videos:<ept id="1">__</ept> Videos need to be embedded using HTML-code:</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">copy the code and enter the name of the video file you want to embed.</source>
+<target xml:lang="fr">copy the code and enter the name of the video file you want to embed.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Text formatting standards:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Text formatting standards:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">When describing a process, use numbers. For example:</source>
+<target xml:lang="fr">When describing a process, use numbers. For example:</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>All clickable surface has to be written as code snippets e.g. <ph id="2">`Attribute Table`</ph><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>All clickable surface has to be written as code snippets e.g. <ph id="2">`Attribute Table`</ph><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">If a special icon is used in QGIS, place it next to the code snippets e.g <ph id="1">`Field Calculator`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/icon_scratch_layer.png)</ept>.</source>
+<target xml:lang="fr">If a special icon is used in QGIS, place it next to the code snippets e.g <ph id="1">`Field Calculator`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/icon_scratch_layer.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">If an option needs to be selected, write the click surface name in code snippet and the option as normal text e.g. <ph id="1">`Result field type`</ph>: Text (string)</source>
+<target xml:lang="fr">If an option needs to be selected, write the click surface name in code snippet and the option as normal text e.g. <ph id="1">`Result field type`</ph>: Text (string)</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">If something like a file name has to be named in a certain way use quotation marks e.g. <ph id="1">`Output field name`</ph>: Name the new column “Trigger_activation”</source>
+<target xml:lang="fr">If something like a file name has to be named in a certain way use quotation marks e.g. <ph id="1">`Output field name`</ph>: Name the new column “Trigger_activation”</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Where it makes sense add the link to the relevant wiki video when the participants should use a tool or a functionality that is not in detail described in your current step-by-step guide either by linking the tool name e.g. <bpt id="1">[</bpt>drag and drop<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept> or by using something like (<bpt id="2">[</bpt>Wiki basemap<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)</ept>)</source>
+<target xml:lang="fr">Where it makes sense add the link to the relevant wiki video when the participants should use a tool or a functionality that is not in detail described in your current step-by-step guide either by linking the tool name e.g. <bpt id="1">[</bpt>drag and drop<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept> or by using something like (<bpt id="2">[</bpt>Wiki basemap<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)</ept>)</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
