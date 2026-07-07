@@ -142,6 +142,10 @@ jobs:
           upload_translations: false
           download_translations: false
           upload_sources_args: "--delete-obsolete"
+
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
@@ -164,6 +168,10 @@ jobs:
           skip_untranslated_files: false
           export_only_approved: true
           download_translations_args: "--verbose"
+
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
@@ -251,6 +259,10 @@ jobs:
       - name: Remove temporary XLIFF files
         run: |
           rm -rf localisation/xliff
+
+      - name: Remove temporary Okapi ZIP
+        run: |
+          rm -f okapi.zip
 
       - name: Create pull request with translated Markdown
         uses: peter-evans/create-pull-request@v8
