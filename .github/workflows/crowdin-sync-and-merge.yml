@@ -192,69 +192,109 @@ jobs:
             exit 1
           fi
 
-      - name: Merge translated XLIFF back to Markdown
+      - name: Merge translated XLIFF and place Markdown into content language folder
         run: |
-          bash scripts/localisation/okapi_myst.sh \
-            post \
-            ./localisation/xliff/translations \
-            ./scripts/localisation/okf_markdown@MyST.fprm \
-            "${{ inputs.target_language }}"
+          set -euo pipefail
 
-      - name: Show generated Markdown files
-        run: |
-          find localisation/xliff/translations -type f -name "*.md" -print
+          LANG="${{ inputs.target_language }}"
+          CONFIG="./scripts/localisation/okf_markdown@MyST.fprm"
+          SOURCE_LANG="en"
 
-      - name: Fail if no Markdown files were generated
-        run: |
-          if ! find localisation/xliff/translations -type f -name "*.md" | grep -q .; then
-            echo "No Markdown files were generated from translated XLIFF."
+          TRANSLATIONS_ROOT="localisation/xliff/translations/${LANG}"
+          MERGE_ROOT="localisation/xliff/merge"
+          TARGET_ROOT="content/${LANG}"
+
+          rm -rf "$MERGE_ROOT"
+          mkdir -p "$MERGE_ROOT"
+          mkdir -p "$TARGET_ROOT"
+
+          if ! find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" | grep -q .; then
+            echo "No translated XLIFF files found in $TRANSLATIONS_ROOT."
             exit 1
           fi
 
-      - name: Move translated Markdown files into content language folder
-        run: |
-          LANG="${{ inputs.target_language }}"
-          TARGET_ROOT="content/${LANG}"
+          while IFS= read -r -d '' xlf_file; do
+            xlf_name="$(basename "$xlf_file")"
+            md_name="${xlf_name%.xlf}"
 
-          mkdir -p "$TARGET_ROOT"
+            echo "Preparing merge for translated XLIFF:"
+            echo "  XLIFF: $xlf_file"
+            echo "  Expected source Markdown filename: $md_name"
 
-          find localisation/xliff/translations \
-            -type f \
-            -name "*.md" \
-            -print0 \
-            | while IFS= read -r -d '' md_file; do
-                relative_path="$md_file"
+            mapfile -d '' source_matches < <(
+              find content \
+                -type f \
+                -name "$md_name" \
+                ! -path "content/es/*" \
+                ! -path "content/fr/*" \
+                -print0
+            )
 
-                # Remove known staging prefixes.
-                relative_path="${relative_path#localisation/xliff/translations/${LANG}/}"
-                relative_path="${relative_path#localisation/xliff/translations/}"
-                relative_path="${relative_path#localisation/xliff/sources/}"
-                relative_path="${relative_path#sources/}"
+            if [ "${#source_matches[@]}" -eq 0 ]; then
+              echo "Could not find original Markdown source for $md_name under content/."
+              exit 1
+            fi
 
-                # Remove embedded source staging path if Crowdin preserved it.
-                relative_path="${relative_path#*localisation/xliff/sources/}"
+            if [ "${#source_matches[@]}" -gt 1 ]; then
+              echo "Found multiple possible Markdown sources for $md_name:"
+              printf '  %s\n' "${source_matches[@]}"
+              echo "Because crowdin.yml currently downloads translations by original filename only, this is ambiguous."
+              echo "Use a hierarchy-preserving Crowdin translation path if this happens."
+              exit 1
+            fi
 
-                dirname_part="$(dirname "$relative_path")"
-                filename_part="$(basename "$relative_path")"
+            source_md="${source_matches[0]}"
+            relative_source_path="${source_md#content/}"
+            relative_source_dir="$(dirname "$relative_source_path")"
 
-                # Rename source-language file prefix, e.g. en_example.md -> fr_example.md.
-                new_filename="${filename_part/#en_/${LANG}_}"
+            work_dir="$MERGE_ROOT/$relative_source_dir"
+            mkdir -p "$work_dir"
 
-                if [ "$dirname_part" = "." ]; then
-                  target_path="${TARGET_ROOT}/${new_filename}"
-                else
-                  target_path="${TARGET_ROOT}/${dirname_part}/${new_filename}"
-                fi
+            work_md="$work_dir/$md_name"
+            work_xlf="$work_dir/$xlf_name"
 
-                mkdir -p "$(dirname "$target_path")"
-                mv "$md_file" "$target_path"
+            cp "$source_md" "$work_md"
+            cp "$xlf_file" "$work_xlf"
 
-                echo "Moved translated Markdown: $md_file -> $target_path"
-              done
+            echo "Merging with Tikal:"
+            echo "  Source Markdown: $work_md"
+            echo "  Translated XLIFF: $work_xlf"
+
+            tikal.sh \
+              -m "$work_xlf" \
+              -fc "$CONFIG" \
+              -sl "$SOURCE_LANG" \
+              -tl "$LANG"
+
+            merged_md="${work_md%.md}.out.md"
+
+            if [ ! -f "$merged_md" ]; then
+              echo "Tikal did not generate expected merged Markdown:"
+              echo "  $merged_md"
+              exit 1
+            fi
+
+            target_md_name="${md_name/#en_/${LANG}_}"
+            target_path="$TARGET_ROOT/$relative_source_dir/$target_md_name"
+
+            mkdir -p "$(dirname "$target_path")"
+            mv "$merged_md" "$target_path"
+
+            echo "Created translated Markdown:"
+            echo "  $target_path"
+
+          done < <(find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" -print0)
 
       - name: Show translated Markdown files in content folder
         run: |
           find content/${{ inputs.target_language }} -type f -name "*.md" -print
+
+      - name: Fail if no translated Markdown files were generated
+        run: |
+          if ! find content/${{ inputs.target_language }} -type f -name "*.md" | grep -q .; then
+            echo "No translated Markdown files were generated in content/${{ inputs.target_language }}."
+            exit 1
+          fi
 
       - name: Remove temporary XLIFF files
         run: |
@@ -280,8 +320,9 @@ jobs:
             2. Upload generated XLIFF sources to Crowdin.
             3. Delete obsolete Crowdin source files that no longer exist locally.
             4. Download approved translated XLIFF from Crowdin.
-            5. Merge XLIFF back to Markdown using Okapi/Tikal.
-            6. Move translated Markdown files into `content/${{ inputs.target_language }}/`.
+            5. Recreate the Tikal merge context by pairing translated XLIFF with the original Markdown source.
+            6. Merge XLIFF back to Markdown using Okapi/Tikal.
+            7. Move translated Markdown files into `content/${{ inputs.target_language }}/`.
 
             Target language: `${{ inputs.target_language }}`
           add-paths: |
