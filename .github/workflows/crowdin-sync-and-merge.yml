@@ -203,10 +203,12 @@ jobs:
           TRANSLATIONS_ROOT="localisation/xliff/translations/${LANG}"
           MERGE_ROOT="localisation/xliff/merge"
           TARGET_ROOT="content/${LANG}"
+          FAILED_MERGES="localisation/xliff/failed-merges.txt"
 
           rm -rf "$MERGE_ROOT"
           mkdir -p "$MERGE_ROOT"
           mkdir -p "$TARGET_ROOT"
+          : > "$FAILED_MERGES"
 
           if ! find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" | grep -q .; then
             echo "No translated XLIFF files found in $TRANSLATIONS_ROOT."
@@ -231,16 +233,15 @@ jobs:
             )
 
             if [ "${#source_matches[@]}" -eq 0 ]; then
-              echo "Could not find original Markdown source for $md_name under content/."
-              exit 1
+              echo "FAILED: Could not find original Markdown source for $md_name under content/." | tee -a "$FAILED_MERGES"
+              continue
             fi
 
             if [ "${#source_matches[@]}" -gt 1 ]; then
-              echo "Found multiple possible Markdown sources for $md_name:"
-              printf '  %s\n' "${source_matches[@]}"
-              echo "Because crowdin.yml currently downloads translations by original filename only, this is ambiguous."
-              echo "Use a hierarchy-preserving Crowdin translation path if this happens."
-              exit 1
+              echo "FAILED: Found multiple possible Markdown sources for $md_name:" | tee -a "$FAILED_MERGES"
+              printf '  %s\n' "${source_matches[@]}" | tee -a "$FAILED_MERGES"
+              echo "Because crowdin.yml currently downloads translations by original filename only, this is ambiguous." | tee -a "$FAILED_MERGES"
+              continue
             fi
 
             source_md="${source_matches[0]}"
@@ -260,18 +261,23 @@ jobs:
             echo "  Source Markdown: $work_md"
             echo "  Translated XLIFF: $work_xlf"
 
-            tikal.sh \
+            if ! tikal.sh \
               -m "$work_xlf" \
               -fc "$CONFIG" \
               -sl "$SOURCE_LANG" \
-              -tl "$LANG"
+              -tl "$LANG"; then
+
+              echo "FAILED: Tikal could not merge $xlf_file against $source_md." | tee -a "$FAILED_MERGES"
+              echo "This usually means the translated XLIFF no longer matches the current Markdown source." | tee -a "$FAILED_MERGES"
+              continue
+            fi
 
             merged_md="${work_md%.md}.out.md"
 
             if [ ! -f "$merged_md" ]; then
-              echo "Tikal did not generate expected merged Markdown:"
-              echo "  $merged_md"
-              exit 1
+              echo "FAILED: Tikal did not generate expected merged Markdown for $xlf_file." | tee -a "$FAILED_MERGES"
+              echo "Expected: $merged_md" | tee -a "$FAILED_MERGES"
+              continue
             fi
 
             target_md_name="${md_name/#en_/${LANG}_}"
@@ -285,9 +291,21 @@ jobs:
 
           done < <(find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" -print0)
 
-      - name: Show translated Markdown files in content folder
-        run: |
-          find content/${{ inputs.target_language }} -type f -name "*.md" -print
+          echo ""
+          echo "Merge summary"
+          echo "============="
+
+          if [ -s "$FAILED_MERGES" ]; then
+            echo "Some translated XLIFF files could not be merged:"
+            cat "$FAILED_MERGES"
+          else
+            echo "All translated XLIFF files merged successfully."
+          fi
+
+          if ! find "$TARGET_ROOT" -type f -name "*.md" | grep -q .; then
+            echo "No translated Markdown files were generated in $TARGET_ROOT."
+            exit 1
+          fi
 
       - name: Fail if no translated Markdown files were generated
         run: |
