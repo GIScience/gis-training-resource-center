@@ -57,6 +57,21 @@ cover/
 *.mo
 *.pot
 
+# Localisation / Crowdin / Okapi
+# Keep committed source XLIFF files, but ignore temporary downloaded and merge files.
+
+localisation/xliff/*
+
+!localisation/xliff/sources/
+!localisation/xliff/sources/**
+
+localisation/xliff/translations/
+localisation/xliff/merge/
+localisation/xliff/failed-merges.txt
+
+# Okapi/Tikal may temporarily generate XLIFF files beside Markdown sources.
+content/**/*.xlf
+
 # Django stuff:
 *.log
 local_settings.py
