@@ -1,0 +1,199 @@
+name: Crowdin Upload Source XLIFF
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: "Branch to update with regenerated source XLIFF"
+        required: true
+        default: "main"
+        type: string
+
+      target_language:
+        description: "Target language code used by Okapi/Tikal during XLIFF extraction"
+        required: true
+        default: "fr"
+        type: choice
+        options:
+          - fr
+          - es
+
+permissions:
+  contents: write
+
+jobs:
+  upload-sources:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_branch }}
+          fetch-depth: 1
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Okapi / Tikal
+        run: |
+          set -euo pipefail
+
+          OKAPI_VERSION="1.48.0"
+          OKAPI_URL="https://okapiframework.org/binaries/main/${OKAPI_VERSION}/okapi-apps_gtk2-linux-x86_64_${OKAPI_VERSION}.zip"
+          OKAPI_ZIP="$RUNNER_TEMP/okapi.zip"
+
+          mkdir -p "$HOME/tools/okapi"
+
+          echo "Downloading Okapi from:"
+          echo "$OKAPI_URL"
+
+          curl \
+            --fail \
+            --location \
+            --retry 5 \
+            --retry-delay 10 \
+            --connect-timeout 30 \
+            --user-agent "Mozilla/5.0 GitHub-Actions" \
+            --output "$OKAPI_ZIP" \
+            "$OKAPI_URL"
+
+          echo "Downloaded file:"
+          ls -lh "$OKAPI_ZIP"
+
+          echo "Testing ZIP integrity..."
+          unzip -t "$OKAPI_ZIP"
+
+          unzip "$OKAPI_ZIP" -d "$HOME/tools/okapi"
+
+          TIKAL_DIR="$(find "$HOME/tools/okapi" -name tikal.sh -exec dirname {} \; | head -n 1)"
+
+          if [ -z "$TIKAL_DIR" ]; then
+            echo "Could not find tikal.sh after extracting Okapi."
+            find "$HOME/tools/okapi" -maxdepth 4 -type f | sort
+            exit 1
+          fi
+
+          chmod +x "$TIKAL_DIR/tikal.sh"
+          echo "$TIKAL_DIR" >> "$GITHUB_PATH"
+
+          echo "Tikal installed at:"
+          echo "$TIKAL_DIR/tikal.sh"
+
+      - name: Verify Java and Tikal
+        run: |
+          java -version
+          tikal.sh -help
+
+      - name: Verify localisation files
+        run: |
+          test -f scripts/localisation/okapi_myst.sh
+          test -f scripts/localisation/okf_markdown@MyST.fprm
+          test -f crowdin.yml
+
+          echo "Localisation files found:"
+          ls -la scripts/localisation
+
+      - name: Regenerate source XLIFF folder
+        run: |
+          set -euo pipefail
+
+          rm -rf localisation/xliff/sources
+          mkdir -p localisation/xliff/sources
+
+      - name: Convert source Markdown files to XLIFF
+        run: |
+          set -euo pipefail
+
+          bash scripts/localisation/okapi_myst.sh \
+            pre \
+            ./content \
+            ./scripts/localisation/okf_markdown@MyST.fprm \
+            "${{ inputs.target_language }}"
+
+      - name: Move generated source XLIFF files into tracked source folder
+        run: |
+          set -euo pipefail
+
+          find ./content \
+            -type f \
+            -name "*.xlf" \
+            ! -path "./content/es/*" \
+            ! -path "./content/fr/*" \
+            ! -name "es_*.md.xlf" \
+            ! -name "fr_*.md.xlf" \
+            -print0 \
+            | while IFS= read -r -d '' xlf_file; do
+                relative_path="${xlf_file#./content/}"
+                target_path="localisation/xliff/sources/${relative_path}"
+
+                mkdir -p "$(dirname "$target_path")"
+                mv "$xlf_file" "$target_path"
+
+                echo "Moved source XLIFF: $xlf_file -> $target_path"
+              done
+
+      - name: Remove leftover generated XLIFF files from content folder
+        run: |
+          set -euo pipefail
+
+          find ./content \
+            -type f \
+            -name "*.xlf" \
+            -print \
+            -delete
+
+      - name: Show regenerated source XLIFF files
+        run: |
+          set -euo pipefail
+
+          find localisation/xliff/sources -type f -name "*.xlf" | sort
+
+      - name: Fail if no source XLIFF files were generated
+        run: |
+          set -euo pipefail
+
+          if ! find localisation/xliff/sources -type f -name "*.xlf" | grep -q .; then
+            echo "No source XLIFF files were generated."
+            exit 1
+          fi
+
+      - name: Commit regenerated source XLIFF files
+        run: |
+          set -euo pipefail
+
+          git status --short
+
+          git add -A localisation/xliff/sources
+
+          if git diff --cached --quiet; then
+            echo "No source XLIFF changes to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git commit -m "Update Crowdin source XLIFF"
+            git push origin "HEAD:${{ inputs.source_branch }}"
+          fi
+
+      - name: Upload source XLIFF files to Crowdin
+        uses: crowdin/github-action@v2
+        with:
+          config: crowdin.yml
+
+          upload_sources: true
+          upload_translations: false
+          download_translations: false
+
+          upload_sources_args: "--delete-obsolete"
+
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
