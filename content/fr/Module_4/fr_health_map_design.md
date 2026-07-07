@@ -7,11 +7,11 @@
 ::::
 
 
-# Visualisation de la capacit? des ?tablissements de sant? avec des symboles multi-points <a id="visualising-health-facility-capacity-with-multi-variable-point-symbols"></a>
+# Visualisation de la capacité des établissements de santé avec des symboles multi-points <a id="visualising-health-facility-capacity-with-multi-variable-point-symbols"></a>
 
-Une carte des capacit?s des ?tablissements de sant? est un outil pratique et pr?cieux pour pr?parer la sant? et y r?pondre. Ces cartes aident les intervenants ? identifier rapidement les emplacements des services de sant?, ? ?valuer leur capacit? et ? d?terminer s?ils sont op?rationnels. Dans de nombreuses situations, ces informations sont cruciales pour prendre des d?cisions sur l?allocation des ressources, les chemins de renvoi, le soutien et l?identification des lacunes des services. Les cartes sont g?n?ralement bas?es sur des jeux de donn?es fournis par des gouvernements ou des organisations partenaires. Si les jeux de donn?es officiels ne sont pas disponibles, OpenStreetMap peut servir de bon point de d?part.
+Une carte des capacités des établissements de santé est un outil pratique et précieux pour préparer la santé et y répondre. Ces cartes aident les intervenants à identifier rapidement les emplacements des services de santé, à évaluer leur capacité et à déterminer s’ils sont opérationnels. Dans de nombreuses situations, ces informations sont cruciales pour prendre des décisions sur l’allocation des ressources, les chemins de renvoi, le soutien et l’identification des lacunes des services. Les cartes sont généralement basées sur des jeux de données fournis par des gouvernements ou des organisations partenaires. Si les jeux de données officiels ne sont pas disponibles, OpenStreetMap peut servir de bon point de départ.
 
-Les cartes de capacit? de sant? combinent g?n?ralement plusieurs attributs en un seul symbole en utilisant la taille, la couleur et diff?rentes formes.
+Les cartes de capacité de santé combinent généralement plusieurs attributs en un seul symbole en utilisant la taille, la couleur et différentes formes.
 
 
 :::{figure} /fig/HS_capacity_map_examples.drawio.png
@@ -19,50 +19,50 @@ Les cartes de capacit? de sant? combinent g?n?ralement plusieurs attributs en un
 name: HS_capacity_map_examples.drawio.png
 width: 800 px
 ---
-Construire une carte de la capacit? de l'h?pital ? plusieurs variables ?tape par ?tape.
+Construire une carte de la capacité de l'hôpital à plusieurs variables étape par étape.
 :::
 
-Dans ce tutoriel, vous apprendrez comment cr?er une carte multi-variable des h?pitaux du Malawi en utilisant QGIS. Vous travaillerez avec une version modifi?e du Registre des ?tablissements de sant? principal du Malawi (avec des figures fictives et des compteurs de lits d'h?pital ajout?s ? des fins de formation) et appliquerez une combinaison de la taille proportionnelle du symbole, la classification manuelle et les substitutions de couleurs d?finies par les donn?es pour communiquer efficacement ? la fois la capacit? et l'?tat op?rationnel en un coup d'?il.
+Dans ce tutoriel, vous apprendrez comment créer une carte multi-variable des hôpitaux du Malawi en utilisant QGIS. Vous travaillerez avec une version modifiée du Registre des établissements de santé principal du Malawi (avec des figures fictives et des compteurs de lits d'hôpital ajoutés à des fins de formation) et appliquerez une combinaison de la taille proportionnelle du symbole, la classification manuelle et les substitutions de couleurs définies par les données pour communiquer efficacement à la fois la capacité et l'état opérationnel en un coup d'œil.
 
-## ? propos du jeu de donn?es <a id="about-the-dataset"></a>
+## À propos du jeu de données <a id="about-the-dataset"></a>
 
-Les donn?es utilis?es dans cet exercice proviennent du Registre principal des ?tablissements de sant? du Malawi (MHFR), la base de donn?es nationale officielle de tous les ?tablissements de sant? au Malawi : **[Malawi - Health Facility Registry](https://data.humdata.org/dataset/malawi-health-facility-registry)**.
-Il existe pour fournir une source d?information unique et ? jour pour la planification et le suivi des services de sant?.
+Les données utilisées dans cet exercice proviennent du Registre principal des établissements de santé du Malawi (MHFR), la base de données nationale officielle de tous les établissements de santé au Malawi : **[Malawi - Health Facility Registry](https://data.humdata.org/dataset/malawi-health-facility-registry)**.
+Il existe pour fournir une source d’information unique et à jour pour la planification et le suivi des services de santé.
 
-> ?? **Note:** Pour le but de ce tutoriel, le jeu de donn?es a ?t? **manipul?**.
+> ⚠️ **Note:** Pour le but de ce tutoriel, le jeu de données a été **manipulé**.
 ---
-T?l?chargez le dossier de donn?es [**ici**](https://nexus.heigit.org/repository/gis-training-resource-center/module_4/exercise_6/Module_4_Exercise_Malawi_Health_Facilities_Registry.zip) et enregistrez-le sur votre PC. D?compressez le fichier .zip.
+Téléchargez le dossier de données [**ici**](https://nexus.heigit.org/repository/gis-training-resource-center/module_4/exercise_6/Module_4_Exercise_Malawi_Health_Facilities_Registry.zip) et enregistrez-le sur votre PC. Décompressez le fichier .zip.
 
-### Champs utilis?s dans ce tutoriel <a id="fields-used-in-this-tutorial"></a>
+### Champs utilisés dans ce tutoriel <a id="fields-used-in-this-tutorial"></a>
 
 | **Champ** | **Objectif dans le tutoriel** |
 |--------------------------|-------------------------------------------------------------|
-| **TYPE** | Pour extraire les h?pitaux du jeu de donn?es complet des installations |
-| **STATUS** | Pour cartographier les h?pitaux fonctionnels et non fonctionnels |
-| **Number_Beds** | Repr?senter la capacit? de l'h?pital ? l'aide de symboles gradu?s |
-| **LATITUDE & LONGITUDE** | Cr?er des g?om?tries de points en QGIS |
+| **TYPE** | Pour extraire les hôpitaux du jeu de données complet des installations |
+| **STATUS** | Pour cartographier les hôpitaux fonctionnels et non fonctionnels |
+| **Number_Beds** | Représenter la capacité de l'hôpital à l'aide de symboles gradués |
+| **LATITUDE & LONGITUDE** | Créer des géométries de points en QGIS |
 
 Ces champs sont suffisants pour construire une carte claire et multivariable.
 
-## Tutoriel sur la carte des capacit?s des ?tablissements de sant?
+## Tutoriel sur la carte des capacités des établissements de santé
 <a id="health-facilit-capacity-map-tutorial"></a>
 
-### Pr?paration des donn?es <a id="data-preparation"></a>
+### Préparation des données <a id="data-preparation"></a>
 
-Tout d?abord, nous devons charger le jeu de donn?es Malawi - Health Facility Registry dans QGIS.
+Tout d’abord, nous devons charger le jeu de données Malawi - Health Facility Registry dans QGIS.
 
-::::{dropdown} Importez le fichier CSV des ?tablissements de sant? du Malawi dans QGIS.
+::::{dropdown} Importez le fichier CSV des établissements de santé du Malawi dans QGIS.
 
-#### Importez le CSV des ?tablissements de sant? du Malawi dans QGIS <a id="import-the-malawi-health-facilities-csv-into-qgis"></a>
+#### Importez le CSV des établissements de santé du Malawi dans QGIS <a id="import-the-malawi-health-facilities-csv-into-qgis"></a>
 
-1. Dans le menu du haut, allez ?  
-**Calque ? Ajouter une couche ? Ajouter une couche de texte d?limit??**.
+1. Dans le menu du haut, allez à  
+**Calque → Ajouter une couche → Ajouter une couche de texte délimité…**.
 
-2. ? c?t? du champ **Nom du fichier** cliquez sur les trois points ![](/fig/Three_points.png)   
-    et acc?dez ? votre fichier CSV **des ?tablissements de sant? Malawi au format** et cliquez sur `Open`.
+2. À côté du champ **Nom du fichier** cliquez sur les trois points ![](/fig/Three_points.png)   
+    et accédez à votre fichier CSV **des établissements de santé Malawi au format** et cliquez sur `Open`.
 
 
-3. Apr?s avoir s?lectionn? le fichier, QGIS affichera un aper?u de la table.  
+3. Après avoir sélectionné le fichier, QGIS affichera un aperçu de la table.  
    Prenez un moment pour examiner les colonnes :
    - `OWNERSHIP`
    - `TYPE`
@@ -71,16 +71,16 @@ Tout d?abord, nous devons charger le jeu de donn?es Malawi - Health Facility Reg
    - `DATE OPENED`
    - `LATITUDE`, `LONGITUDE`
    - `Number_Beds`  
-      Ces champs contiennent toutes les informations n?cessaires ? l'exercice de mappage.
+      Ces champs contiennent toutes les informations nécessaires à l'exercice de mappage.
 
-4. Sous **D?finition g?om?trique**:
-   - S?lectionnez les coordonn?es **Point**.
-   - D?finissez le champ **X** = `LONGITUDE`.
-   - D?finissez le champ **Y** = `LATITUDE`.
-   - Assurez-vous que le **CRS** est r?gl? sur **EPSG:4326 ? WGS 84**.
+4. Sous **Définition géométrique**:
+   - Sélectionnez les coordonnées **Point**.
+   - Définissez le champ **X** = `LONGITUDE`.
+   - Définissez le champ **Y** = `LATITUDE`.
+   - Assurez-vous que le **CRS** est réglé sur **EPSG:4326 – WGS 84**.
 
 5. Cliquez sur **Ajouter**.  
-   Le calque appara?tra maintenant dans votre panneau **Calques** et les points s'afficheront sur la toile de la carte.
+   Le calque apparaîtra maintenant dans votre panneau **Calques** et les points s'afficheront sur la toile de la carte.
 
 :::{figure} /fig/en_point_visualisation_malawi_HS_csv_import.png
 ---
@@ -91,84 +91,84 @@ width: 700px
 ::::
 
 
-Ensuite, nous devons r?duire les points visualis?s sur la carte aux installations qui disposent en fait de lits d'h?pital. Dans ce tutoriel, ce sont `Central Hospital`, `District Hospital`, et `Hospital`.
+Ensuite, nous devons réduire les points visualisés sur la carte aux installations qui disposent en fait de lits d'hôpital. Dans ce tutoriel, ce sont `Central Hospital`, `District Hospital`, et `Hospital`.
 
-::::{dropdown} Filtrez le jeu de donn?es pour ne voir que les h?pitaux (Vid?o)
+::::{dropdown} Filtrez le jeu de données pour ne voir que les hôpitaux (Vidéo)
 
-#### Filtrez le jeu de donn?es pour ne voir que les h?pitaux <a id="filter-the-dataset-to-see-only-hospitals"></a>
+#### Filtrez le jeu de données pour ne voir que les hôpitaux <a id="filter-the-dataset-to-see-only-hospitals"></a>
 
 1. **Ouvrez la table d'attributs**
-   - Faites clic droit `Malawi_health_facilities_raw` ? **Ouvrir la table d'attributs**.
-   - Examinez bri?vement les champs cl?s?:
-     - **TYPE** ? identifiez le type d'?tablissement. Les h?pitaux apparaissent g?n?ralement comme `Central Hospital`, `District Hospital`, ou `Hospital`.
-     - **STATUS** ? doit contenir `Functional` ou `Non-functional`.
-     - **Number_Beds** ? presque rempli
+   - Faites clic droit `Malawi_health_facilities_raw` → **Ouvrir la table d'attributs**.
+   - Examinez brièvement les champs clés :
+     - **TYPE** – identifiez le type d'établissement. Les hôpitaux apparaissent généralement comme `Central Hospital`, `District Hospital`, ou `Hospital`.
+     - **STATUS** – doit contenir `Functional` ou `Non-functional`.
+     - **Number_Beds** – presque rempli
 
-2. Filtrez le jeu de donn?es pour inclure uniquement les h?pitaux
-    - Faites clic droit sur Malawi_health_facilities_raw ? Filtre...
+2. Filtrez le jeu de données pour inclure uniquement les hôpitaux
+    - Faites clic droit sur Malawi_health_facilities_raw → Filtre...
     - Entrez l'expression :
    ```
    "TYPE" IN ('Central Hospital', 'District Hospital', 'Hospital')
    ```
-    - Cliquez sur Test pour v?rifier combien de lignes correspondent, puis OK.
-    - QGIS va masquer toutes les installations non hospitali?res.
-    - Votre calque filtr? montre seulement les ?tablissements hospitaliers.
+    - Cliquez sur Test pour vérifier combien de lignes correspondent, puis OK.
+    - QGIS va masquer toutes les installations non hospitalières.
+    - Votre calque filtré montre seulement les établissements hospitaliers.
 
    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_malwai_exampel_hospital_filter.mp4"></video>
 
 ::::
-### Visualisation du nombre de lits avec les m?thodes du cercle proportionnel <a id="visualising-the-number-of-beds-with-proportional-circle-methods"></a>
+### Visualisation du nombre de lits avec les méthodes du cercle proportionnel <a id="visualising-the-number-of-beds-with-proportional-circle-methods"></a>
 
-Maintenant que votre couche est filtr?e pour afficher uniquement les h?pitaux, vous pouvez cr?er une carte qui montre la capacit? des h?pitaux ? l?aide de cercles proportionnels.  
-Le nombre de lits (`Number_Beds`) contr?lera la **taille** de chaque symbole.
+Maintenant que votre couche est filtrée pour afficher uniquement les hôpitaux, vous pouvez créer une carte qui montre la capacité des hôpitaux à l’aide de cercles proportionnels.  
+Le nombre de lits (`Number_Beds`) contrôlera la **taille** de chaque symbole.
 
 
-::::{dropdown} Visualisez la capacit? de l'h?pital ? l'aide de cercles proportionnels (taille gradu?e) (vid?o)
+::::{dropdown} Visualisez la capacité de l'hôpital à l'aide de cercles proportionnels (taille graduée) (vidéo)
 
-### Visualiser la capacit? de l'h?pital en utilisant des cercles proportionnels (taille gradu?e) <a id="visualise-hospital-capacity-using-proportional-circles-graduated-size"></a>
+### Visualiser la capacité de l'hôpital en utilisant des cercles proportionnels (taille graduée) <a id="visualise-hospital-capacity-using-proportional-circles-graduated-size"></a>
 
 
 1. **Ouvrez le panneau de style de calque**
-   - S?lectionnez votre calque hospitali?re (la A filtr?e `Malawi_health_facilities_raw`).
-   - Faites un clic droit sur le calque ? **Propri?t?s?** ? **Symbologie**.
+   - Sélectionnez votre calque hospitalière (la A filtrée `Malawi_health_facilities_raw`).
+   - Faites un clic droit sur le calque → **Propriétés…** → **Symbologie**.
 
-2. **Changez le mode de rendu en Gradu?**
-   - En haut de la fen?tre Symbologie, changez le style de **Symbole unique** en ****.
+2. **Changez le mode de rendu en Gradué**
+   - En haut de la fenêtre Symbologie, changez le style de **Symbole unique** en ****.
 
-3. **S?lectionnez l'attribut pour la taille du symbole**
+3. **Sélectionnez l'attribut pour la taille du symbole**
    - Sous **Valeur**, choisissez **`Number_Beds`**.  
-        C'est le champ qui va contr?ler la taille de chaque cercle.
+        C'est le champ qui va contrôler la taille de chaque cercle.
 
-4. **Changez la m?thode ? ? Taille?**
-   - ? c?t? de **M?thode**, remplacez la valeur par d?faut, g?n?ralement ? Couleur ?, par **Taille**.  
-        Cela transforme la classification gradu?e en une **carte ? cercles proportionnels**.
+4. **Changez la méthode à « Taille»**
+   - À côté de **Méthode**, remplacez la valeur par défaut, généralement « Couleur », par **Taille**.  
+        Cela transforme la classification graduée en une **carte à cercles proportionnels**.
 
-5. **G?n?rerez les classes**
+5. **Générerez les classes**
    - Cliquez sur **Classer**.  
-        QGIS cr?era des classes de taille en fonction de la plage de num?ros de lit dans votre jeu de donn?es.
+        QGIS créera des classes de taille en fonction de la plage de numéros de lit dans votre jeu de données.
 
-#### Ajustez les classes manuellement (recommand?) <a id="adjust-the-classes-manually-recommended"></a>
+#### Ajustez les classes manuellement (recommandé) <a id="adjust-the-classes-manually-recommended"></a>
 
-La plage de donn?es est de **1?200 lits**, mais seuls quelques h?pitaux ont plus de **80 lits**.  
-La plupart des h?pitaux sont de petite ou moyenne taille.
+La plage de données est de **1–200 lits**, mais seuls quelques hôpitaux ont plus de **80 lits**.  
+La plupart des hôpitaux sont de petite ou moyenne taille.
 
 La classification automatique regrouperait la plupart des installations dans une ou deux classes.  
-Pour ?viter cela, nous cr?ons **des classes ?quilibr?es, bas?es sur le domaine**:
+Pour éviter cela, nous créons **des classes équilibrées, basées sur le domaine**:
 
 | Classe | Nombre de lits disponibles | Signification |
 |-------|-----------|---------|
-| 1 | **1?20** | Tr?s petits h?pitaux |
-| 2 | **21-40** | Petits h?pitaux |
-| 3 | **41?60** | H?pitaux moyens |
-| 4 | **61?80** | Grands h?pitaux |
-| 5 | **81?200** | Tr?s grands h?pitaux |
+| 1 | **1–20** | Très petits hôpitaux |
+| 2 | **21-40** | Petits hôpitaux |
+| 3 | **41–60** | Hôpitaux moyens |
+| 4 | **61–80** | Grands hôpitaux |
+| 5 | **81–200** | Très grands hôpitaux |
 
-Ajuster les valeurs inf?rieures/sup?rieures pour chaque classe en cons?quence.
+Ajuster les valeurs inférieures/supérieures pour chaque classe en conséquence.
 
 
 ```{note}
 Why these ranges?  
-- Most hospitals fall in the **1?60** bed range ? we break this into three meaningful groups.  
+- Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class.
 (See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification))
@@ -178,7 +178,7 @@ Why these ranges?
 
 ::::
 
-La carte qui en r?sulte affiche les h?pitaux sous forme de cercles de tailles diff?rentes, chaque taille repr?sentant une des classes de capacit? de lit que vous avez d?finies pr?c?demment. Cela donne une impression visuelle rapide de l'endroit o? se trouvent les h?pitaux plus petits et plus grands. Cependant, ? ce stade, la carte ne montre que la capacit?: elle ne communique pas encore si un h?pital est fonctionnel ou non fonctionnel.
+La carte qui en résulte affiche les hôpitaux sous forme de cercles de tailles différentes, chaque taille représentant une des classes de capacité de lit que vous avez définies précédemment. Cela donne une impression visuelle rapide de l'endroit où se trouvent les hôpitaux plus petits et plus grands. Cependant, à ce stade, la carte ne montre que la capacité: elle ne communique pas encore si un hôpital est fonctionnel ou non fonctionnel.
 
 
 ::::{grid} 2
@@ -203,31 +203,31 @@ Proportional circles: beds classes
 ```
 :::
 ::::
-### Ajout de la visualisation de l'?tat op?rationnel avec la couleur <a id="adding-visualisation-of-operational-status-with-colour"></a>
+### Ajout de la visualisation de l'état opérationnel avec la couleur <a id="adding-visualisation-of-operational-status-with-colour"></a>
 
-Pour visualiser l??tat de fonctionnement de chaque h?pital (op?rationnel ou non op?rationnel) ? c?t? de sa capacit? de lit, nous pouvons utiliser la fonctionnalit? de surcharge de donn?es d?finie par QGIS. Une substitution **d?finie par les donn?es** vous permet de contr?ler une propri?t? de symbole ? telle que la couleur, taille, rotation, ou opacit?, en utilisant une expression ou une valeur d'attribut du calque. Cela signifie que QGIS ajuste automatiquement le symbole pour chaque fonctionnalit?, en fonction des donn?es plut?t que du style manuel. Gr?ce ? cette technique, nous pouvons attribuer une couleur ? chaque h?pital en fonction de son statut tout en conservant la taille proportionnelle du cercle pour la capacit? du lit.
+Pour visualiser l’état de fonctionnement de chaque hôpital (opérationnel ou non opérationnel) à côté de sa capacité de lit, nous pouvons utiliser la fonctionnalité de surcharge de données définie par QGIS. Une substitution **définie par les données** vous permet de contrôler une propriété de symbole — telle que la couleur, taille, rotation, ou opacité, en utilisant une expression ou une valeur d'attribut du calque. Cela signifie que QGIS ajuste automatiquement le symbole pour chaque fonctionnalité, en fonction des données plutôt que du style manuel. Grâce à cette technique, nous pouvons attribuer une couleur à chaque hôpital en fonction de son statut tout en conservant la taille proportionnelle du cercle pour la capacité du lit.
 
-Tout d'abord, nous devons ouvrir le module de substitution **d?fini par les donn?es du constructeur d'expressions**.
+Tout d'abord, nous devons ouvrir le module de substitution **défini par les données du constructeur d'expressions**.
 
-::::{dropdown} Ouvre une substitution de donn?es pour ajuster la couleur en fonction du statut op?rationnel (Vid?o)
+::::{dropdown} Ouvre une substitution de données pour ajuster la couleur en fonction du statut opérationnel (Vidéo)
 
-### Ouvre une substitution de donn?es pour ajuster la couleur en fonction du statut op?rationnel <a id="open-data-defined-override-to-adjust-colour-based-on-operational-status"></a>
+### Ouvre une substitution de données pour ajuster la couleur en fonction du statut opérationnel <a id="open-data-defined-override-to-adjust-colour-based-on-operational-status"></a>
 
-1.  S?lectionnez votre calque hospitali?re (la A filtr?e `Malawi_health_facilities_raw`).
-2. Faites un clic droit sur le calque ? **Propri?t?s?** ? **Symbologie**.
-3. Nex to `Symbol` Tab cliquez sur le menu d?roulant, puis cliquez en haut sur `Configure Symbol`.
-4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>Dans la nouvelle fen?tre, cliquez sur `Simpel Marker` puis sur `fill colour`sur le symbole `data-defined override`![](en_data_defined_overried_icon.png)
+1.  Sélectionnez votre calque hospitalière (la A filtrée `Malawi_health_facilities_raw`).
+2. Faites un clic droit sur le calque → **Propriétés…** → **Symbologie**.
+3. Nex to `Symbol` Tab cliquez sur le menu déroulant, puis cliquez en haut sur `Configure Symbol`.
+4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur `fill colour`sur le symbole `data-defined override`![](en_data_defined_overried_icon.png)
 
 ::::
 
-Pour faire ce travail, nous devons maintenant indiquer ? QGIS quelle couleur utiliser pour chaque h?pital. Les substitutions d?finies par les donn?es utilisent le langage d'expression QGIS, qui vous permet d'?crire des r?gles courtes qui sont appliqu?es automatiquement ? chaque fonctionnalit? du calque. Dans cette ?tape, nous allons ?crire une petite expression qui v?rifie la valeur dans le champ STATUS et assigne la bonne couleur selon que l'h?pital est fonctionnel ou non.
+Pour faire ce travail, nous devons maintenant indiquer à QGIS quelle couleur utiliser pour chaque hôpital. Les substitutions définies par les données utilisent le langage d'expression QGIS, qui vous permet d'écrire des règles courtes qui sont appliquées automatiquement à chaque fonctionnalité du calque. Dans cette étape, nous allons écrire une petite expression qui vérifie la valeur dans le champ STATUS et assigne la bonne couleur selon que l'hôpital est fonctionnel ou non.
 
-::::{dropdown} Utiliser une expression pour colorer les h?pitaux par status (Video)
-### Utilisez une expression pour colorier les h?pitaux par le statut <a id="use-an-expression-to-colour-hospitals-by-status"></a>
+::::{dropdown} Utiliser une expression pour colorer les hôpitaux par status (Video)
+### Utilisez une expression pour colorier les hôpitaux par le statut <a id="use-an-expression-to-colour-hospitals-by-status"></a>
 
-1. Cette expression indique ? QGIS de choisir automatiquement une couleur pour chaque h?pital en fonction de son attribut `STATUS`.  
-Les h?pitaux fonctionnels deviennent verts, les h?pitaux non fonctionnels deviennent rouges, et toute valeur manquante re?oit un gris neutre.
-L?instruction `CASE` fonctionne comme une r?gle ? if?else ? : QGIS v?rifie la valeur dans le champ `STATUS` et attribue la couleur RGB correspondante ([S?lecteur de couleur RGB](https://share.google/mYczZipa9EqVWFvyD)), ce qui garantit que chaque point est stylis? de mani?re coh?rente sans modification manuelle.
+1. Cette expression indique à QGIS de choisir automatiquement une couleur pour chaque hôpital en fonction de son attribut `STATUS`.  
+Les hôpitaux fonctionnels deviennent verts, les hôpitaux non fonctionnels deviennent rouges, et toute valeur manquante reçoit un gris neutre.
+L’instruction `CASE` fonctionne comme une règle « if–else » : QGIS vérifie la valeur dans le champ `STATUS` et attribue la couleur RGB correspondante ([Sélecteur de couleur RGB](https://share.google/mYczZipa9EqVWFvyD)), ce qui garantit que chaque point est stylisé de manière cohérente sans modification manuelle.
 Vous pouvez copier le code complet ici :
 ```
 CASE
@@ -236,7 +236,7 @@ CASE
   ELSE color_rgb(150, 150, 150)                               -- fallback for missing/unknown
 END
 ```
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video>Ou ?crivez vous-m?me le code en utilisant l'aide de la fonctionnalit? du constructeur d'expression :
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video>Ou écrivez vous-même le code en utilisant l'aide de la fonctionnalité du constructeur d'expression :
 
 
 :::{figure} /fig/en_data_defined_overried_calculator_Malwai_Exampel.png
@@ -251,48 +251,48 @@ Expression dans le Expression Builder
 
 :::::{grid} 2
 
-::::{grid-item} **Carte circulaire proportionnelle montrant le nombre de lits ET le statut op?rationnel**
+::::{grid-item} **Carte circulaire proportionnelle montrant le nombre de lits ET le statut opérationnel**
 :::{figure} /fig/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png
 ---
 name: Proportional circles: beds + operational status
 width: 400
 ---
-Cercles proportionnels : lits + ?tat op?rationnel
+Cercles proportionnels : lits + état opérationnel
 :::
 ::::
 
 ::::{grid-item} **Classes de la carte proportionnelle du cercle**
-Cette nouvelle visualisation montre la taille du cercle, le nombre de lits, la couleur (Vert : Op?rationnel; Rouge: Non-op?ration), et le statut op?rationnel des h?pitaux.
+Cette nouvelle visualisation montre la taille du cercle, le nombre de lits, la couleur (Vert : Opérationnel; Rouge: Non-opération), et le statut opérationnel des hôpitaux.
 
 :::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png
 ---
 name: Legend proportional circles: beds + operational status
 width: 400
 ---
-Cercles proportionnels l?gendaires : lits + ?tat op?rationnel
+Cercles proportionnels légendaires : lits + état opérationnel
 :::
 ::::
 :::::
 
-### Faire correspondre la l?gende ? votre carte <a id="making-the-legend-match-your-map"></a>
+### Faire correspondre la légende à votre carte <a id="making-the-legend-match-your-map"></a>
 
-> ?? **Note:** Lorsque vous utilisez une substitution d?finie pour colorier vos symboles, QGIS ne met pas automatiquement ? jour la l?gende.
+> ⚠️ **Note:** Lorsque vous utilisez une substitution définie pour colorier vos symboles, QGIS ne met pas automatiquement à jour la légende.
 ---
 
-Pour vous assurer que vos lecteurs de cartes comprennent la signification des couleurs, vous devez personnaliser la l?gende manuellement. Voici deux fa?ons pratiques d'y parvenir.
+Pour vous assurer que vos lecteurs de cartes comprennent la signification des couleurs, vous devez personnaliser la légende manuellement. Voici deux façons pratiques d'y parvenir.
 
-::::{dropdown} Option 1 : L?gende avec calque d'aide
+::::{dropdown} Option 1 : Légende avec calque d'aide
 
-Une solution simple consiste ? dupliquer votre couche hospitali?re et ? utiliser ces copies uniquement comme aides de l?gende. Renommez le doublon pour une identification facile et changer sa couleur dans la visualisation. Assurez-vous de cacher ce calque dans la vue de la carte.
+Une solution simple consiste à dupliquer votre couche hospitalière et à utiliser ces copies uniquement comme aides de légende. Renommez le doublon pour une identification facile et changer sa couleur dans la visualisation. Assurez-vous de cacher ce calque dans la vue de la carte.
 
-Dans le `Print layout`, vous pouvez ajouter ce calque ? la l?gende. De cette fa?on, la l?gende affichera les couleurs correctes, tandis que votre calque d'origine, qui contient les substitutions d?finies par les donn?es, sera toujours responsable du style actuel de la carte.
+Dans le `Print layout`, vous pouvez ajouter ce calque à la légende. De cette façon, la légende affichera les couleurs correctes, tandis que votre calque d'origine, qui contient les substitutions définies par les données, sera toujours responsable du style actuel de la carte.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_helper_layer.mp4"></video>
 ::::
 
-::::{dropdown} Option 2 : Modifier les couleurs de l?gende directement dans la mise en page d'impression
+::::{dropdown} Option 2 : Modifier les couleurs de légende directement dans la mise en page d'impression
 
-Une autre option ne fonctionne que dans le `Print Layout`. Dans la L?gende, il vous suffit d'ajouter la couche de l'h?pital deux fois. La secound, vous pouvez ajuster la couleur de chaque symbole directement dans la Legend. D?finissez chaque ?l?ment en vert. En utilisant l'option `Start a new column before this term`, vous pouvez placer les deux calques les uns ? c?t? des autres.
+Une autre option ne fonctionne que dans le `Print Layout`. Dans la Légende, il vous suffit d'ajouter la couche de l'hôpital deux fois. La secound, vous pouvez ajuster la couleur de chaque symbole directement dans la Legend. Définissez chaque élément en vert. En utilisant l'option `Start a new column before this term`, vous pouvez placer les deux calques les uns à côté des autres.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_print_layout_costum_symbol.mp4"></video>
 ::::
@@ -307,29 +307,29 @@ width: 800
 Exampel Map Proportional circles: Hospital Leds + Operational Status
 :::
 
-### Ajout d'une troisi?me variable en utilisant le style de trait (Facility Type) <a id="adding-a-third-variable-using-stroke-style-facility-type"></a>
+### Ajout d'une troisième variable en utilisant le style de trait (Facility Type) <a id="adding-a-third-variable-using-stroke-style-facility-type"></a>
 
-Votre carte des capacit?s de votre h?pital contient maintenant une riche quantit? d'informations, et elle est d?j? utile dans sa forme actuelle. Toutefois, QGIS nous permet d'ajouter une couche de sens suppl?mentaire sans cr?er de nouveaux calques ni modifier la taille et la logique de couleurs existantes. Une fa?on de le faire est d'utiliser le trait - le contour de chaque symbole - qui peut ?tre stylis? ou mod?lis? dynamiquement. Dans la section suivante, vous apprendrez comment utiliser le style de trait pour repr?senter un troisi?me attribut, rendre votre visualisation encore plus instructive tout en la rendant facile ? lire.
+Votre carte des capacités de votre hôpital contient maintenant une riche quantité d'informations, et elle est déjà utile dans sa forme actuelle. Toutefois, QGIS nous permet d'ajouter une couche de sens supplémentaire sans créer de nouveaux calques ni modifier la taille et la logique de couleurs existantes. Une façon de le faire est d'utiliser le trait - le contour de chaque symbole - qui peut être stylisé ou modélisé dynamiquement. Dans la section suivante, vous apprendrez comment utiliser le style de trait pour représenter un troisième attribut, rendre votre visualisation encore plus instructive tout en la rendant facile à lire.
 
-::::{dropdown} Ajout d'une troisi?me variable en utilisant le style de trait (vid?o)
+::::{dropdown} Ajout d'une troisième variable en utilisant le style de trait (vidéo)
 
-1.  S?lectionnez votre calque hospitali?re (la A filtr?e `Malawi_health_facilities_raw`).
-2. Faites un clic droit sur le calque ? **Propri?t?s?** ? **Symbologie**.
-3. Nex to `Symbol` Tab cliquez sur le menu d?roulant, puis cliquez en haut sur `Configure Symbol`.
-4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_edit.mp4"></video>Dans la nouvelle fen?tre, cliquez sur `Simpel Marker` puis sur
+1.  Sélectionnez votre calque hospitalière (la A filtrée `Malawi_health_facilities_raw`).
+2. Faites un clic droit sur le calque → **Propriétés…** → **Symbologie**.
+3. Nex to `Symbol` Tab cliquez sur le menu déroulant, puis cliquez en haut sur `Configure Symbol`.
+4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur
 
 
-4. Vous verrez?:
+4. Vous verrez :
 - Couleur de remplissage
 - `Outline/stroke colour`
 - `Outline width`
-- `Stroke style` ? Nous allons utiliser ceci
-5. Ajoutez une substitution d?finie de donn?es pour le style de trait
-- ? c?t? de `Stroke style`, cliquez sur le petit symbole `data-defined override`![](en_data_defined_overried_icon.png)
-- Choisissez `Edit` ? Ceci ouvre l'?diteur d'expressions QGIS.
-6. ?crivez une expression pour assigner des styles de traits ? `TYPE`
+- `Stroke style` ← Nous allons utiliser ceci
+5. Ajoutez une substitution définie de données pour le style de trait
+- À côté de `Stroke style`, cliquez sur le petit symbole `data-defined override`![](en_data_defined_overried_icon.png)
+- Choisissez `Edit` → Ceci ouvre l'éditeur d'expressions QGIS.
+6. Écrivez une expression pour assigner des styles de traits à `TYPE`
 
-Voici un exemple qui distingue trois cat?gories d'h?pitaux en utilisant des traits clairs et lisibles :
+Voici un exemple qui distingue trois catégories d'hôpitaux en utilisant des traits clairs et lisibles :
 
 ```
 CASE
@@ -339,20 +339,20 @@ CASE
   ELSE 'solid'
 END
 ```
-QGIS applique automatiquement la r?gle ? chaque fonction.
+QGIS applique automatiquement la règle à chaque fonction.
 
-**Comment ?a marche :**
+**Comment ça marche :**
 
-- `Central Hospital` ? contour solide
-- `District Hospital` ? contour pointill?
-- `Hospital` ? contour pointill?
-- `All others` ? solide (par d?faut)
+- `Central Hospital` → contour solide
+- `District Hospital` → contour pointillé
+- `Hospital` → contour pointillé
+- `All others` → solide (par défaut)
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video>
 
 ::::
 
-En ajoutant des styles de traits ? vos symboles, la carte contient maintenant une troisi?me couche d'information tout en gardant la conception globale compacte et lisible. Cela fonctionne mieux lorsque vous limitez les styles de traits ? quelques cat?gories significatives ; utiliser trop de motifs rendra rapidement la carte visuellement bruyante. Assurez-vous que votre l?gende explique clairement ce que chaque motif repr?sente, et ?vitez de combiner le style de trait avec des couleurs de contour suppl?mentaires ? moins que ce ne soit absolument n?cessaire ? trop de variations peuvent submerger le lecteur. En gardant ces principes ? l'esprit, votre carte actualis?e devrait maintenant communiquer trois attributs ? la fois de mani?re claire et ?quilibr?e.
+En ajoutant des styles de traits à vos symboles, la carte contient maintenant une troisième couche d'information tout en gardant la conception globale compacte et lisible. Cela fonctionne mieux lorsque vous limitez les styles de traits à quelques catégories significatives ; utiliser trop de motifs rendra rapidement la carte visuellement bruyante. Assurez-vous que votre légende explique clairement ce que chaque motif représente, et évitez de combiner le style de trait avec des couleurs de contour supplémentaires à moins que ce ne soit absolument nécessaire – trop de variations peuvent submerger le lecteur. En gardant ces principes à l'esprit, votre carte actualisée devrait maintenant communiquer trois attributs à la fois de manière claire et équilibrée.
 
 :::::{grid} 2
 
@@ -362,7 +362,7 @@ En ajoutant des styles de traits ? vos symboles, la carte contient maintenant un
 name: Proportional circles: beds + operational status + Owner status
 width: 400
 ---
-Cercles proportionnels : lits + statut op?rationnel + statut du propri?taire
+Cercles proportionnels : lits + statut opérationnel + statut du propriétaire
 :::
 ::::
 
@@ -372,23 +372,23 @@ Cercles proportionnels : lits + statut op?rationnel + statut du propri?taire
 :::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png
 ---
 name: Legend
-Cercles proportionnels : lits + statut op?rationnel + statut du propri?taire
+Cercles proportionnels : lits + statut opérationnel + statut du propriétaire
 width: 200
 ---
-L?gende
-Cercles proportionnels : lits + statut op?rationnel + statut du propri?taire
+Légende
+Cercles proportionnels : lits + statut opérationnel + statut du propriétaire
 :::
 ::::
 :::::
 
-Avec trois variables visuelles maintenant affich?es en un seul symbole, il est important que la l?gende les refl?te toutes clairement. QGIS ne met pas automatiquement ? jour les entr?es de l?gende lorsque des substitutions d?finies ? des donn?es ou des styles de traits sont utilis?s, donc quelques ?tapes suppl?mentaires sont n?cessaires pour s'assurer que la l?gende corresponde ? ce qui appara?t sur votre carte. Dans la section suivante, vous apprendrez des fa?ons simples d'ajuster la l?gende de fa?on ? ce que toutes les classes de taille, les couleurs et les styles de traits soient repr?sent?es avec pr?cision.
+Avec trois variables visuelles maintenant affichées en un seul symbole, il est important que la légende les reflète toutes clairement. QGIS ne met pas automatiquement à jour les entrées de légende lorsque des substitutions définies à des données ou des styles de traits sont utilisés, donc quelques étapes supplémentaires sont nécessaires pour s'assurer que la légende corresponde à ce qui apparaît sur votre carte. Dans la section suivante, vous apprendrez des façons simples d'ajuster la légende de façon à ce que toutes les classes de taille, les couleurs et les styles de traits soient représentées avec précision.
 
 
 
-::::{dropdown} La l?gende avec la couche d'aide
-Une solution simple est de dupliquer votre calque hospitali?re et d'utiliser la copie uniquement comme aides de l?gende. Renommez le calque dupliqu? pour qu?il soit facile ? reconna?tre dans la l?gende. Utilisez la classification 'cat?goris?e'. Ajustez le style de trait (solide, tir?e, point?e) pour correspondre aux cat?gories que vous avez utilis?es sur votre carte. Assurez-vous de cacher le calque d'aide dans la vue de la carte afin qu'il n'apparaisse pas sur la carte actuelle.
+::::{dropdown} La légende avec la couche d'aide
+Une solution simple est de dupliquer votre calque hospitalière et d'utiliser la copie uniquement comme aides de légende. Renommez le calque dupliqué pour qu’il soit facile à reconnaître dans la légende. Utilisez la classification 'catégorisée'. Ajustez le style de trait (solide, tirée, pointée) pour correspondre aux catégories que vous avez utilisées sur votre carte. Assurez-vous de cacher le calque d'aide dans la vue de la carte afin qu'il n'apparaisse pas sur la carte actuelle.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_Malwai_Exampel_Legend_workaround_helper_layer_strok_style.mp4"></video>Dans la mise en page Imprimer, ajoutez le calque d'aide ? la l?gende. Cela permet de s'assurer que la l?gende montre les bons traits, tandis que votre calque d'origine, avec ses substitutions d?finies par des donn?es, continue de contr?ler la symbologie r?elle de la carte.
+<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_Malwai_Exampel_Legend_workaround_helper_layer_strok_style.mp4"></video>Dans la mise en page Imprimer, ajoutez le calque d'aide à la légende. Cela permet de s'assurer que la légende montre les bons traits, tandis que votre calque d'origine, avec ses substitutions définies par des données, continue de contrôler la symbologie réelle de la carte.
 
 ::::
 
@@ -397,5 +397,5 @@ Une solution simple est de dupliquer votre calque hospitali?re et d'utiliser la 
 name: Exampel Map Proportional circles: Hospital Beds + Operational Status
 width: 800
 ---
-Cercles proportionnels de carte d'exemple : Lits d'h?pital + Statut op?rationnel
+Cercles proportionnels de carte d'exemple : Lits d'hôpital + Statut opérationnel
 :::
