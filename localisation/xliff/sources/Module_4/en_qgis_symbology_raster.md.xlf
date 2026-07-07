@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_symbology_raster.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Symbology for Raster Data <bpt id="1">&lt;a id="symbology-for-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Symbology for Raster Data <bpt id="1">&lt;a id="symbology-for-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with a digital elevation model (DEM). This small chapter only covers the basics of visualising raster data. If you want to learn more about raster data and how to work with raster layers, take a look at <bpt id="1">[</bpt>module 8<ept id="1">](/content/Module_8/en_module_8_overview.md)</ept>.</source>
+<target xml:lang="fr">As we have already learned, raster data are basically a grid of pixels with different (numerical) values. As such, you can't style the shape, fill or outline of raster data. Raster data is visualized by assigning a colour ramp to the pixel value. QGIS offers several options to visualise raster data. For example, you can create a hillshade with a digital elevation model (DEM). This small chapter only covers the basics of visualising raster data. If you want to learn more about raster data and how to work with raster layers, take a look at <bpt id="1">[</bpt>module 8<ept id="1">](/content/Module_8/en_module_8_overview.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Assigning a colour gradient to raster data <bpt id="1">&lt;a id="assigning-a-colour-gradient-to-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Assigning a colour gradient to raster data <bpt id="1">&lt;a id="assigning-a-colour-gradient-to-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">To assign a colour gradient for raster data, you need to:</source>
+<target xml:lang="fr">To assign a colour gradient for raster data, you need to:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`styling panel`</ph> for the raster layer.</source>
+<target xml:lang="fr">Open the <ph id="1">`styling panel`</ph> for the raster layer.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Navigate to the <ph id="1">`Symbology tab`</ph>.</source>
+<target xml:lang="fr">Navigate to the <ph id="1">`Symbology tab`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">By default, the colour scheme is set to Singleband Gray (if you only have one colour band in the data set). Click on <ph id="1">`Singleband Gray`</ph> and switch to <ph id="2">`Singleband Pseudocolour`</ph>.</source>
+<target xml:lang="fr">By default, the colour scheme is set to Singleband Gray (if you only have one colour band in the data set). Click on <ph id="1">`Singleband Gray`</ph> and switch to <ph id="2">`Singleband Pseudocolour`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">__</bpt>the arrow to the right of the colour ramp<ept id="1">__</ept>. Here you can choose a pre-made colour ramp.</source>
+<target xml:lang="fr">Click on <bpt id="1">__</bpt>the arrow to the right of the colour ramp<ept id="1">__</ept>. Here you can choose a pre-made colour ramp.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">You can modify the colour ramp by <bpt id="1">__</bpt>clicking on the colour ramp<ept id="1">__</ept>.</source>
+<target xml:lang="fr">You can modify the colour ramp by <bpt id="1">__</bpt>clicking on the colour ramp<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_raster_data_colour_gradient</ph>
+<ph id="2">width: 600px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_raster_data_colour_gradient</ph>
+<ph id="2">width: 600px</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Colour Ramp Selector in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Colour Ramp Selector in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, <bpt id="1">__</bpt>Saturation<ept id="1">__</ept>, <bpt id="2">__</bpt>Lightness<ept id="2">__</ept> and <bpt id="3">__</bpt>Opacity<ept id="3">__</ept>. The last three in particular are useful to understand how your colour ramp will appear. Gradients from light to dark are easier to read: Check if the plot for the <bpt id="4">__</bpt>Lightness<ept id="4">__</ept> has a more or less linear plot.</source>
+<target xml:lang="fr">In the colour ramp selector, you can adjust each colour step. On the bottom, you can see a plot for the Hue, <bpt id="1">__</bpt>Saturation<ept id="1">__</ept>, <bpt id="2">__</bpt>Lightness<ept id="2">__</ept> and <bpt id="3">__</bpt>Opacity<ept id="3">__</ept>. The last three in particular are useful to understand how your colour ramp will appear. Gradients from light to dark are easier to read: Check if the plot for the <bpt id="4">__</bpt>Lightness<ept id="4">__</ept> has a more or less linear plot.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Inverting the colour ramp <bpt id="1">&lt;a id="inverting-the-colour-ramp"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Inverting the colour ramp <bpt id="1">&lt;a id="inverting-the-colour-ramp"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">In some cases, the colour ramp should be inverted to make it easier to read the map:</source>
+<target xml:lang="fr">In some cases, the colour ramp should be inverted to make it easier to read the map:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">__</bpt>arrow next to the Colour ramp<ept id="1">__</ept> to open the dropdown menu.</source>
+<target xml:lang="fr">Click on the <bpt id="1">__</bpt>arrow next to the Colour ramp<ept id="1">__</ept> to open the dropdown menu.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Invert Colour Ramp`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Invert Colour Ramp`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Using better colour palettes <bpt id="1">&lt;a id="using-better-colour-palettes"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using better colour palettes <bpt id="1">&lt;a id="using-better-colour-palettes"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The default colour ramps available in QGIS are limited and do not fit a lot of cartography purposes. However, QGIS includes the <ph id="1">`cpt-city`</ph> colour palette catalogue with many carefully crafted colour ramps and palettes. Amongst other, you can find colour ramps specifically created for terrain or elevation models.</source>
+<target xml:lang="fr">The default colour ramps available in QGIS are limited and do not fit a lot of cartography purposes. However, QGIS includes the <ph id="1">`cpt-city`</ph> colour palette catalogue with many carefully crafted colour ramps and palettes. Amongst other, you can find colour ramps specifically created for terrain or elevation models.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_cpt-city_cat_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_cpt-city_cat_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.36_cpt-city_cat_1</ph>
+<ph id="2">width: 350 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.36_cpt-city_cat_1</ph>
+<ph id="2">width: 350 px</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Accessing the colour catalogue.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Accessing the colour catalogue.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">To access the <ph id="1">`cpt-city`</ph> catalogue,</source>
+<target xml:lang="fr">To access the <ph id="1">`cpt-city`</ph> catalogue,</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Open the raster layers symbology tab and select <ph id="1">`Singleband Pseudocolor`</ph> as the symbolisation method.</source>
+<target xml:lang="fr">Open the raster layers symbology tab and select <ph id="1">`Singleband Pseudocolor`</ph> as the symbolisation method.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Navigate to the dropdown arrow next to the colour ramp, a dropdown menu with different colour ramps will open.</source>
+<target xml:lang="fr">Navigate to the dropdown arrow next to the colour ramp, a dropdown menu with different colour ramps will open.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Create New Color Ramp`</ph>. A small dialogue box will open.
+<ph id="2">    :::{figure} /fig/en_3.36_cpt-city_cat_2.png</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Create New Color Ramp`</ph>. A small dialogue box will open.
+<ph id="2">    :::{figure} /fig/en_3.36_cpt-city_cat_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    name: en_3.36_cpt-city_cat_2</ph>
+<ph id="2">    width: 200 px</ph></source>
+<target xml:lang="fr"><ph id="1">    name: en_3.36_cpt-city_cat_2</ph>
+<ph id="2">    width: 200 px</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Selecting the colour ramp catalogue
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">Selecting the colour ramp catalogue
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">A new window will open. Here you can find a multitude of colour palettes. For example, for a digital elevation model you can select a colour ramp for topography or specifically digital elevation models.</source>
+<target xml:lang="fr">A new window will open. Here you can find a multitude of colour palettes. For example, for a digital elevation model you can select a colour ramp for topography or specifically digital elevation models.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_cpt-city_cat_3.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_cpt-city_cat_3.png</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.36_cpt-city_cat_3</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.36_cpt-city_cat_3</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">The cpt-city colour ramp catalogue in QGIS 3.36
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The cpt-city colour ramp catalogue in QGIS 3.36
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why can’t you style a raster layer by changing “fill” or “outline” in the way you do with vector data?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why can’t you style a raster layer by changing “fill” or “outline” in the way you do with vector data?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Raster data are made of <bpt id="1">__</bpt>pixels (cells)<ept id="1">__</ept>, each with a value (e.g. elevation, reflectance), not discrete geometries. So there is no “outline” to stroke, nor a single “fill” for the whole polygon.</source>
+<target xml:lang="fr">Raster data are made of <bpt id="1">__</bpt>pixels (cells)<ept id="1">__</ept>, each with a value (e.g. elevation, reflectance), not discrete geometries. So there is no “outline” to stroke, nor a single “fill” for the whole polygon.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Styling rasters is about mapping pixel values to colours, rather than applying boundary or fill styling to features.</source>
+<target xml:lang="fr">Styling rasters is about mapping pixel values to colours, rather than applying boundary or fill styling to features.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Vector styling operates on geometric features (points, lines, polygons) and you can control fills, strokes, shapes etc.; but raster styling works by symbology/rendering algorithms (colour ramping, stretching, classification) on the continuous grid of values.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Vector styling operates on geometric features (points, lines, polygons) and you can control fills, strokes, shapes etc.; but raster styling works by symbology/rendering algorithms (colour ramping, stretching, classification) on the continuous grid of values.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is the default rendering style for a single‑band raster in QGIS, and into what style is it commonly changed for better visualisation?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is the default rendering style for a single‑band raster in QGIS, and into what style is it commonly changed for better visualisation?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">The default rendering for a single‑band raster is <bpt id="1">__</bpt>Singleband gray (grayscale)<ept id="1">__</ept> — low values are darker, high values are lighter.</source>
+<target xml:lang="fr">The default rendering for a single‑band raster is <bpt id="1">__</bpt>Singleband gray (grayscale)<ept id="1">__</ept> — low values are darker, high values are lighter.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">For better visualization, it's common to change it to <bpt id="1">__</bpt>Singleband pseudocolor<ept id="1">__</ept> (i.e. assign a color ramp) so that variations in values are more visually distinct.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">For better visualization, it's common to change it to <bpt id="1">__</bpt>Singleband pseudocolor<ept id="1">__</ept> (i.e. assign a color ramp) so that variations in values are more visually distinct.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is a “colour ramp” (or gradient) in the context of raster symbology, and how does it help interpret the data?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is a “colour ramp” (or gradient) in the context of raster symbology, and how does it help interpret the data?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">A colour ramp (or gradient) is a continuous range of colours that are mapped to the range of raster values (from minimum to maximaum).</source>
+<target xml:lang="fr">A colour ramp (or gradient) is a continuous range of colours that are mapped to the range of raster values (from minimum to maximaum).</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">By mapping increasing (or decreasing) values to a progression of colours, the reader can visually interpret the magnitude, gradients, and spatial patterns of the underlying numeric data.</source>
+<target xml:lang="fr">By mapping increasing (or decreasing) values to a progression of colours, the reader can visually interpret the magnitude, gradients, and spatial patterns of the underlying numeric data.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">The use of colour (rather than just grey) can help emphasise meaningful thresholds, critical values (e.g., very high or low), and improve readability and visual appeal.</source>
+<target xml:lang="fr">The use of colour (rather than just grey) can help emphasise meaningful thresholds, critical values (e.g., very high or low), and improve readability and visual appeal.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">A well‐designed colour ramp can highlight differences (e.g., higher vs lower values), reveal spatial structure (e.g., peaks, valleys, clusters), and make the raster meaningful rather than just a grey blob.</source>
+<target xml:lang="fr">A well‐designed colour ramp can highlight differences (e.g., higher vs lower values), reveal spatial structure (e.g., peaks, valleys, clusters), and make the raster meaningful rather than just a grey blob.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Give an example of a raster dataset (e.g. digital elevation model, NDVI, precipitation) and propose a suitable colour ramp or palette you might use in QGIS<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Give an example of a raster dataset (e.g. digital elevation model, NDVI, precipitation) and propose a suitable colour ramp or palette you might use in QGIS<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+<bpt id="2">__</bpt>Example:<ept id="2">__</ept> A digital elevation model (DEM) representing terrain elevation (in metres)
+__Proposed suitable colour ramp/palette:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+<bpt id="2">__</bpt>Example:<ept id="2">__</ept> A digital elevation model (DEM) representing terrain elevation (in metres)
+__Proposed suitable colour ramp/palette:</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Lower elevations: dark green (lowland)</source>
+<target xml:lang="fr">Lower elevations: dark green (lowland)</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Mid elevations: light green → yellow (gentle slopes)</source>
+<target xml:lang="fr">Mid elevations: light green → yellow (gentle slopes)</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Higher elevations: orange → brown (steep slopes/upper terrain)</source>
+<target xml:lang="fr">Higher elevations: orange → brown (steep slopes/upper terrain)</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Highest elevations/peaks: white (snow/ice caps)</source>
+<target xml:lang="fr">Highest elevations/peaks: white (snow/ice caps)</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">In QGIS you might choose a ramp like “Terrain (elevation)” or a custom ramp from the cpt‑city catalogue (the module mentions that QGIS includes the cpt‑city colour palette catalogue with many carefully crafted colour ramps, including ones for elevation models).</source>
+<target xml:lang="fr">In QGIS you might choose a ramp like “Terrain (elevation)” or a custom ramp from the cpt‑city catalogue (the module mentions that QGIS includes the cpt‑city colour palette catalogue with many carefully crafted colour ramps, including ones for elevation models).</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When designing a colour ramp for raster data (e.g. elevation, temperature), what should you watch out for in terms of lightness, hue, or perceptual uniformity?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When designing a colour ramp for raster data (e.g. elevation, temperature), what should you watch out for in terms of lightness, hue, or perceptual uniformity?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Lightness/darkness progression:<ept id="1">__</ept> A progression from lighter to darker colours are easier to read. QGIS has a lightness plot in the colour ramp editor. If lightness jumps up and down irregularly, some segments may appear visually more prominent than others. Additionally, colours ramps with irregular lightness do not translate to black and white prints. In general, irregular colour ramps are less intuitive to read.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Lightness/darkness progression:<ept id="1">__</ept> A progression from lighter to darker colours are easier to read. QGIS has a lightness plot in the colour ramp editor. If lightness jumps up and down irregularly, some segments may appear visually more prominent than others. Additionally, colours ramps with irregular lightness do not translate to black and white prints. In general, irregular colour ramps are less intuitive to read.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Hue shifts:<ept id="1">__</ept> Sudden changes in hue may draw undue attention and may imply categorical rather than continuous differences. If hues change dramatically while lightness remains constant, it may mislead the reader into thinking there are discrete classes.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Hue shifts:<ept id="1">__</ept> Sudden changes in hue may draw undue attention and may imply categorical rather than continuous differences. If hues change dramatically while lightness remains constant, it may mislead the reader into thinking there are discrete classes.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Avoiding misleading associations:<ept id="1">__</ept> Colours carry cultural or intuitive meanings (e.g. red = hot/danger, blue = cold, green = vegetation). If you ramp uses unusual colour, the meaning may confuse.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Avoiding misleading associations:<ept id="1">__</ept> Colours carry cultural or intuitive meanings (e.g. red = hot/danger, blue = cold, green = vegetation). If you ramp uses unusual colour, the meaning may confuse.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Contrast and readability:<ept id="1">__</ept> Very dark segments may hide detail; very light segments may fade out. Also consider how the ramp will appear when printed, in greyscale, or by colour‐impaired readers.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Contrast and readability:<ept id="1">__</ept> Very dark segments may hide detail; very light segments may fade out. Also consider how the ramp will appear when printed, in greyscale, or by colour‐impaired readers.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Interpretation of extremes and middle ranges:<ept id="1">__</ept> If the ramp has extreme jumps at the ends or very flat mid‐range, you might lose nuance in important segments. Also avoid ramps that place extremes at colours that are visually “loud” and overshadow moderate values.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Interpretation of extremes and middle ranges:<ept id="1">__</ept> If the ramp has extreme jumps at the ends or very flat mid‐range, you might lose nuance in important segments. Also avoid ramps that place extremes at colours that are visually “loud” and overshadow moderate values.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

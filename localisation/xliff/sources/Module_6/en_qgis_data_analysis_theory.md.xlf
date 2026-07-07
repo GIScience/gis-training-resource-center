@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_6/en_qgis_data_analysis_theory.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Data Analysis with QGIS <bpt id="1">&lt;a id="data-analysis-with-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Analysis with QGIS <bpt id="1">&lt;a id="data-analysis-with-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences<ept id="1">__</ept>:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">This module covers how to perform general data analysis, calculate statistics, create buffers, produce heatmaps,
+and divide rivers, roads, or areas into segments. The following modules will cover more complicated data analysis
+methods.</source>
+<target xml:lang="fr">This module covers how to perform general data analysis, calculate statistics, create buffers, produce heatmaps,
+and divide rivers, roads, or areas into segments. The following modules will cover more complicated data analysis
+methods.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Data &amp; Spatial Analysis <bpt id="1">&lt;a id="data-and-spatial-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data &amp; Spatial Analysis <bpt id="1">&lt;a id="data-and-spatial-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Even with a single layer, extensive analysis is possible. However, often the information we need to analyse is spread across multiple layers. To gain these insights, we use the spatial and non-spatial GIS processing tools we learned in previous modules. In this module, we will explore how to apply these tools, collect and work with data, and create meaningful insights. We will also review several examples of data analysis commonly used in humanitarian work.</source>
+<target xml:lang="fr">Even with a single layer, extensive analysis is possible. However, often the information we need to analyse is spread across multiple layers. To gain these insights, we use the spatial and non-spatial GIS processing tools we learned in previous modules. In this module, we will explore how to apply these tools, collect and work with data, and create meaningful insights. We will also review several examples of data analysis commonly used in humanitarian work.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Spatial analysis <bpt id="1">&lt;a id="spatial-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial analysis <bpt id="1">&lt;a id="spatial-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">A spatial analysis can be a result of combining several layers with different information in a single map.</source>
+<target xml:lang="fr">A spatial analysis can be a result of combining several layers with different information in a single map.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Geographic analysis helps us answer questions like<ept id="1">__</ept>:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Geographic analysis helps us answer questions like<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">What <bpt id="1">__</bpt>patterns<ept id="1">__</ept> are in the data?</source>
+<target xml:lang="fr">What <bpt id="1">__</bpt>patterns<ept id="1">__</ept> are in the data?</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">How can we <bpt id="1">__</bpt>summarise<ept id="1">__</ept> any trends?</source>
+<target xml:lang="fr">How can we <bpt id="1">__</bpt>summarise<ept id="1">__</ept> any trends?</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">What's <bpt id="1">__</bpt>nearby<ept id="1">__</ept>?</source>
+<target xml:lang="fr">What's <bpt id="1">__</bpt>nearby<ept id="1">__</ept>?</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Which areas are <bpt id="1">__</bpt>affected<ept id="1">__</ept>?</source>
+<target xml:lang="fr">Which areas are <bpt id="1">__</bpt>affected<ept id="1">__</ept>?</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">What's <bpt id="1">__</bpt>inside or outside<ept id="1">__</ept> a boundary?</source>
+<target xml:lang="fr">What's <bpt id="1">__</bpt>inside or outside<ept id="1">__</ept> a boundary?</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">How do phenomenon <bpt id="1">__</bpt>change with location<ept id="1">__</ept>?</source>
+<target xml:lang="fr">How do phenomenon <bpt id="1">__</bpt>change with location<ept id="1">__</ept>?</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">How do locations <bpt id="1">__</bpt>change over time<ept id="1">__</ept>?</source>
+<target xml:lang="fr">How do locations <bpt id="1">__</bpt>change over time<ept id="1">__</ept>?</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Before doing any sort of processing, you need to <bpt id="1">__</bpt>familiarise yourself with the data<ept id="1">__</ept> and understand it.</source>
+<target xml:lang="fr">Before doing any sort of processing, you need to <bpt id="1">__</bpt>familiarise yourself with the data<ept id="1">__</ept> and understand it.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The first step is to read the metadata from the source and understand <bpt id="1">__</bpt>what data was collected<ept id="1">__</ept>, <bpt id="2">__</bpt>who
+collected the data<ept id="2">__</ept>, <bpt id="3">__</bpt>and how the data was collected<ept id="3">__</ept>.</source>
+<target xml:lang="fr">The first step is to read the metadata from the source and understand <bpt id="1">__</bpt>what data was collected<ept id="1">__</ept>, <bpt id="2">__</bpt>who
+collected the data<ept id="2">__</ept>, <bpt id="3">__</bpt>and how the data was collected<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Next, open the attribute table and look at the different features and attributes available. What do the
+attributes show and what are they called?</source>
+<target xml:lang="fr">Next, open the attribute table and look at the different features and attributes available. What do the
+attributes show and what are they called?</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Now you can start visualising the data:</source>
+<target xml:lang="fr">Now you can start visualising the data:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">You can visualise the data cartographically by assigning or categorising the data using symbols</source>
+<target xml:lang="fr">You can visualise the data cartographically by assigning or categorising the data using symbols</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">You can create charts from the attribute table</source>
+<target xml:lang="fr">You can create charts from the attribute table</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">You can look for patterns, averages, outliers</source>
+<target xml:lang="fr">You can look for patterns, averages, outliers</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">We are often seeking ways to <bpt id="1">__</bpt>describe<ept id="1">__</ept> our data to an audience. Sometimes, spatial analysis will be used to provide recommendations for activities. Given the vast amount of data available online, it is important to take a step back and gain perspective on this knowledge, these capabilities, and the data itself before rushing to manipulate it:</source>
+<target xml:lang="fr">We are often seeking ways to <bpt id="1">__</bpt>describe<ept id="1">__</ept> our data to an audience. Sometimes, spatial analysis will be used to provide recommendations for activities. Given the vast amount of data available online, it is important to take a step back and gain perspective on this knowledge, these capabilities, and the data itself before rushing to manipulate it:</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Reliability<ept id="1">__</ept>: Can I trust this data?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Reliability<ept id="1">__</ept>: Can I trust this data?</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Interest<ept id="1">__</ept>: Do I need this data?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Interest<ept id="1">__</ept>: Do I need this data?</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Usage<ept id="1">__</ept>: Am I able to use this data?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Usage<ept id="1">__</ept>: Am I able to use this data?</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Comprehensiveness<ept id="1">__</ept>: Is this data complete?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Comprehensiveness<ept id="1">__</ept>: Is this data complete?</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Date<ept id="1">__</ept>: How old is this data?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Date<ept id="1">__</ept>: How old is this data?</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Sensitivity<ept id="1">__</ept>: Is this data sensitive?</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Sensitivity<ept id="1">__</ept>: Is this data sensitive?</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">With spatial analysis, you can build predictive models to plan ahead of disasters. <bpt id="1">__</bpt>HOWEVER: Not all analysis is
+complicated! Just knowing how many features are in a layer is useful.<ept id="1">__</ept> Simple data analysis includes:</source>
+<target xml:lang="fr">With spatial analysis, you can build predictive models to plan ahead of disasters. <bpt id="1">__</bpt>HOWEVER: Not all analysis is
+complicated! Just knowing how many features are in a layer is useful.<ept id="1">__</ept> Simple data analysis includes:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Ranking</source>
+<target xml:lang="fr">Ranking</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Categorising</source>
+<target xml:lang="fr">Categorising</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Above/below threshold</source>
+<target xml:lang="fr">Above/below threshold</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Affected Areas</source>
+<target xml:lang="fr">Affected Areas</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Population distribution</source>
+<target xml:lang="fr">Population distribution</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">It is important to know the <bpt id="1">__</bpt>limitations<ept id="1">__</ept> of the data at your disposal - don't try to use unsuitable data for
+analysis (e.g. if you now a survey sample is not representative)</source>
+<target xml:lang="fr">It is important to know the <bpt id="1">__</bpt>limitations<ept id="1">__</ept> of the data at your disposal - don't try to use unsuitable data for
+analysis (e.g. if you now a survey sample is not representative)</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>There are two main types of data analysis<ept id="1">__</ept>:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>There are two main types of data analysis<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Thematic analyses<ept id="1">__</ept> focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Thematic analyses<ept id="1">__</ept> focus on visual variation according to a given attribute of the data (one of its characteristics). They are performed on a specific field of the attribute table for the layer, whether textual or numerical. The graphical representation (symbology) changes according to the attribute.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">For instance: variations in size depending on population numbers in a refugee camp area.</source>
+<target xml:lang="fr">For instance: variations in size depending on population numbers in a refugee camp area.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Spatial analyses<ept id="1">__</ept> are performed on spatialised phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Spatial analyses<ept id="1">__</ept> are performed on spatialised phenomena such as: presence/absence of the phenomenon, its relationship with other phenomena or entities, distribution in space. They are performed on the geometry and position of elements, as well as on their relationship with other elements. Spatial analyses can create new values or elements.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.</source>
+<target xml:lang="fr">For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Length, Surface, Circumference <bpt id="1">&lt;a id="length-surface-circumference"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Length, Surface, Circumference <bpt id="1">&lt;a id="length-surface-circumference"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.</source>
+<target xml:lang="fr">Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">These geometrical attributes can be calculated using the <bpt id="1">[</bpt><bpt id="2">__</bpt>field calculator<ept id="2">__</ept><ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field)</ept> or the processing tool <bpt id="3">__</bpt>"Add geometry attributes"<ept id="3">__</ept>.</source>
+<target xml:lang="fr">These geometrical attributes can be calculated using the <bpt id="1">[</bpt><bpt id="2">__</bpt>field calculator<ept id="2">__</ept><ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_non_spatial_tools.html#calculate-field)</ept> or the processing tool <bpt id="3">__</bpt>"Add geometry attributes"<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:</source>
+<target xml:lang="fr">The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Function<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Function<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Description<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Description<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`$area`</ph></source>
+<target xml:lang="fr"><ph id="1">`$area`</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Returns the area of the current feature. The area calculated by this function respects both the current project's ellipsoid setting and area unit settings.</source>
+<target xml:lang="fr">Returns the area of the current feature. The area calculated by this function respects both the current project's ellipsoid setting and area unit settings.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`$length`</ph></source>
+<target xml:lang="fr"><ph id="1">`$length`</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Returns the length of a linestring. If you need the length of a border of a polygon, use $perimeter instead. The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings.</source>
+<target xml:lang="fr">Returns the length of a linestring. If you need the length of a border of a polygon, use $perimeter instead. The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`$perimeter`</ph></source>
+<target xml:lang="fr"><ph id="1">`$perimeter`</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Returns the perimeter length of the current feature. The perimeter calculated by this function respects both the current project's ellipsoid setting and distance unit settings.</source>
+<target xml:lang="fr">Returns the perimeter length of the current feature. The perimeter calculated by this function respects both the current project's ellipsoid setting and distance unit settings.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">For example, to calculate the area of polygons:</source>
+<target xml:lang="fr">For example, to calculate the area of polygons:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Open the attribute table</source>
+<target xml:lang="fr">Open the attribute table</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Open the field calculator</source>
+<target xml:lang="fr">Open the field calculator</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Check the box <ph id="1">`Create a new field`</ph></source>
+<target xml:lang="fr">Check the box <ph id="1">`Create a new field`</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Enter a <ph id="1">`Output field name`</ph>: "Area"</source>
+<target xml:lang="fr">Enter a <ph id="1">`Output field name`</ph>: "Area"</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Output field type`</ph>: In this case we want a number with decimals. So we select either "decimal number".</source>
+<target xml:lang="fr">Select the <ph id="1">`Output field type`</ph>: In this case we want a number with decimals. So we select either "decimal number".</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Enter <ph id="1">`$Area`</ph> into the expression window.</source>
+<target xml:lang="fr">Enter <ph id="1">`$Area`</ph> into the expression window.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Select <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">In the attribute table, you will find a new column called <ph id="1">`Area`</ph> with the respective area for each feature.</source>
+<target xml:lang="fr">In the attribute table, you will find a new column called <ph id="1">`Area`</ph> with the respective area for each feature.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Calculating the length of roads</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Calculating the length of roads</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Basic statistics <bpt id="1">&lt;a id="basic-statistics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic statistics <bpt id="1">&lt;a id="basic-statistics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have <bpt id="1">__</bpt>aggregate statistics<ept id="1">__</ept> on a dataset (average length/area, total length/area).<ph id="2">   </ph>
+QGIS comes with two basic processing tools to generate statistics:</source>
+<target xml:lang="fr">In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have <bpt id="1">__</bpt>aggregate statistics<ept id="1">__</ept> on a dataset (average length/area, total length/area).<ph id="2">   </ph>
+QGIS comes with two basic processing tools to generate statistics:</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Processing tool<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Processing tool<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Description<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Description<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">"<bpt id="1">__</bpt>Basic statistics for fields<ept id="1">__</ept>"</source>
+<target xml:lang="fr">"<bpt id="1">__</bpt>Basic statistics for fields<ept id="1">__</ept>"</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.</source>
+<target xml:lang="fr">This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">"<bpt id="1">__</bpt>Statistics by categories<ept id="1">__</ept>"</source>
+<target xml:lang="fr">"<bpt id="1">__</bpt>Statistics by categories<ept id="1">__</ept>"</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">This algorithm calculates statistics of fields depending on a parent class. In the option <ph id="1">`Field to calculate statistics on`</ph>, you must select the column that you wish to create statistics for (for example, area/length). In the option <ph id="2">`Field(s) with categories`</ph> you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity).</source>
+<target xml:lang="fr">This algorithm calculates statistics of fields depending on a parent class. In the option <ph id="1">`Field to calculate statistics on`</ph>, you must select the column that you wish to create statistics for (for example, area/length). In the option <ph id="2">`Field(s) with categories`</ph> you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity).</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Statistics by categories
+In this example we have a road network which has been intersected with a flood extent. A new field ("Flood") has been calculated containing information whether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the <ph id="2">`$length`</ph> function in the field calculator as new column called "Length".<ph id="3">  </ph>
+We want to calculate the total length of flooded and unflooded road respectively.</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Statistics by categories
+In this example we have a road network which has been intersected with a flood extent. A new field ("Flood") has been calculated containing information whether the road is flooded or not (Y=flooded, N=not flooded). The length of each road has been calculated using the <ph id="2">`$length`</ph> function in the field calculator as new column called "Length".<ph id="3">  </ph>
+We want to calculate the total length of flooded and unflooded road respectively.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Open the "Statistics by category"-tool</source>
+<target xml:lang="fr">Open the "Statistics by category"-tool</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Select the road network layer.</source>
+<target xml:lang="fr">Select the road network layer.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Field to calculate statistics on`</ph>, select <ph id="2">`Length`</ph></source>
+<target xml:lang="fr">Under <ph id="1">`Field to calculate statistics on`</ph>, select <ph id="2">`Length`</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Field(s) with categories`</ph>, select <ph id="2">`Flood`</ph></source>
+<target xml:lang="fr">Under <ph id="1">`Field(s) with categories`</ph>, select <ph id="2">`Flood`</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Specify a location to save the statistics file.</source>
+<target xml:lang="fr">Specify a location to save the statistics file.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">After completion, a new layer will appear in your layer tab. This will not contain spatial attributes and is a simple attribute table with the statistics. In our case, we will have the basic statistics (min, max, range, sum, median, sd, etc.) for all the road features with the flooding value "Y", and "N".</source>
+<target xml:lang="fr">After completion, a new layer will appear in your layer tab. This will not contain spatial attributes and is a simple attribute table with the statistics. In our case, we will have the basic statistics (min, max, range, sum, median, sd, etc.) for all the road features with the flooding value "Y", and "N".</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Insert statistics examples</source>
+<target xml:lang="fr">Insert statistics examples</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Buffer analysis <bpt id="1">&lt;a id="buffer-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Buffer analysis <bpt id="1">&lt;a id="buffer-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Creating a <bpt id="1">[</bpt>buffer<ept id="1">](/content/Wiki/en_qgis_geoprocessing_wiki.md#buffer)</ept> is a helpful analysis to determine <bpt id="2">__</bpt>what lies in proximity<ept id="2">__</ept> of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.</source>
+<target xml:lang="fr">Creating a <bpt id="1">[</bpt>buffer<ept id="1">](/content/Wiki/en_qgis_geoprocessing_wiki.md#buffer)</ept> is a helpful analysis to determine <bpt id="2">__</bpt>what lies in proximity<ept id="2">__</ept> of, for example, a contaminated water source or other hazards and determine vulnerability. Buffer analysis is often used to map the riparian zones along rivers to devise environmental protection zones or estimate vulnerability.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Proximity analysis</source>
+<target xml:lang="fr">Proximity analysis</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Estimated vulnerability analysis</source>
+<target xml:lang="fr">Estimated vulnerability analysis</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Density Map Analysis <bpt id="1">&lt;a id="density-map-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Density Map Analysis <bpt id="1">&lt;a id="density-map-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Density maps are very useful in communicating the <bpt id="1">__</bpt>intensity of a phenomenon in an area<ept id="1">__</ept>. Point data is <bpt id="2">__</bpt>spatially aggregated<ept id="2">__</ept> to show the amount of incidents in that area.
+<bpt id="3">__</bpt>For example<ept id="3">__</ept>, number of schools or number of disease cases.</source>
+<target xml:lang="fr">Density maps are very useful in communicating the <bpt id="1">__</bpt>intensity of a phenomenon in an area<ept id="1">__</ept>. Point data is <bpt id="2">__</bpt>spatially aggregated<ept id="2">__</ept> to show the amount of incidents in that area.
+<bpt id="3">__</bpt>For example<ept id="3">__</ept>, number of schools or number of disease cases.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">It is important to consider that most demographic or economic data needs to be <bpt id="1">__</bpt>normalised<ept id="1">__</ept> (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example.</source>
+<target xml:lang="fr">It is important to consider that most demographic or economic data needs to be <bpt id="1">__</bpt>normalised<ept id="1">__</ept> (e.g. number of inhabitants). To assess the significance of the number of schools, you will need to know how the population of the area; so the amount of schools per 1,000 inhabitants, or the number of disease cases per 100 persons, for example.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculated with point data (rarely with lines or polygons).</source>
+<target xml:lang="fr">There are a few different types of density maps. The most common are heatmaps and hexagon grid maps. In both cases, the intensity of a phenomenon is calculated with point data (rarely with lines or polygons).</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Heatmaps <bpt id="1">&lt;a id="heatmaps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Heatmaps <bpt id="1">&lt;a id="heatmaps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Heat maps use features in a dataset to calculate the <bpt id="1">__</bpt>relative density of points<ept id="1">__</ept> on a map. The density is displayed as a colour ramp with colours ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas <bpt id="2">__</bpt>where these features cluster together<ept id="2">__</ept> and help us visualise <bpt id="3">__</bpt>spatial patterns<ept id="3">__</ept> of a layer.</source>
+<target xml:lang="fr">Heat maps use features in a dataset to calculate the <bpt id="1">__</bpt>relative density of points<ept id="1">__</ept> on a map. The density is displayed as a colour ramp with colours ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas <bpt id="2">__</bpt>where these features cluster together<ept id="2">__</ept> and help us visualise <bpt id="3">__</bpt>spatial patterns<ept id="3">__</ept> of a layer.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">To create a heatmap you first need a layer containing data points or 'samples'. These points are distributed in an area with some areas containing more than others. The <bpt id="1">__</bpt>density<ept id="1">__</ept> of the points in space determines the intensity of the colour on the heat map.</source>
+<target xml:lang="fr">To create a heatmap you first need a layer containing data points or 'samples'. These points are distributed in an area with some areas containing more than others. The <bpt id="1">__</bpt>density<ept id="1">__</ept> of the points in space determines the intensity of the colour on the heat map.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <bpt id="1">__</bpt>"Heatmap (Kernel Density Estimation)"<ept id="1">__</ept> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <bpt id="2">__</bpt>100 Meters<ept id="2">__</ept> radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab.</source>
+<target xml:lang="fr">In QGIS, there are two methods to create heatmaps. The first method uses the symbology tab and is generally a lot faster. The second method uses the interpolation tool <bpt id="1">__</bpt>"Heatmap (Kernel Density Estimation)"<ept id="1">__</ept> and offers more parameters to adjust. The advantage of the processing tool is that you can set a radius using metric units (for example the number of points in a <bpt id="2">__</bpt>100 Meters<ept id="2">__</ept> radius compared to using the millimetres or pixels of your computer screen) and set a variable radius that is determined by another attribute. The next section discusses the creation of heatmaps using the symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">insert link</source>
+<target xml:lang="fr">insert link</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Using the symbology tab to create a heatmap <bpt id="1">&lt;a id="using-the-symbology-tab-to-create-a-heatmap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using the symbology tab to create a heatmap <bpt id="1">&lt;a id="using-the-symbology-tab-to-create-a-heatmap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">You can create a heatmap in the <bpt id="1">__</bpt>symbology tab<ept id="1">__</ept> of a point or polyline layer. Navigate to the symbology tab and select the <ph id="2">`Heatmap`</ph> symbolisation method. Here, you can adjust the <bpt id="3">__</bpt>colour ramp, radius, and maximum value<ept id="3">__</ept>. The <bpt id="4">__</bpt>radius<ept id="4">__</ept> (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the 'heat' increases. The <bpt id="5">__</bpt>maximum value<ept id="5">__</ept> determines the value that is given the 'hottest' colour. By default, it is set to the highest number of aggregated points. For example, you can <bpt id="6">__</bpt>set a threshold<ept id="6">__</ept> above which everything has the "hottest" colour. Reducing it changes the visualisation drastically.</source>
+<target xml:lang="fr">You can create a heatmap in the <bpt id="1">__</bpt>symbology tab<ept id="1">__</ept> of a point or polyline layer. Navigate to the symbology tab and select the <ph id="2">`Heatmap`</ph> symbolisation method. Here, you can adjust the <bpt id="3">__</bpt>colour ramp, radius, and maximum value<ept id="3">__</ept>. The <bpt id="4">__</bpt>radius<ept id="4">__</ept> (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the 'heat' increases. The <bpt id="5">__</bpt>maximum value<ept id="5">__</ept> determines the value that is given the 'hottest' colour. By default, it is set to the highest number of aggregated points. For example, you can <bpt id="6">__</bpt>set a threshold<ept id="6">__</ept> above which everything has the "hottest" colour. Reducing it changes the visualisation drastically.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">As you can see, the information communicated through the different maps changes drastically. This is why you need to be transparent on what parameters you have set to create the heatmap.</source>
+<target xml:lang="fr">As you can see, the information communicated through the different maps changes drastically. This is why you need to be transparent on what parameters you have set to create the heatmap.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Assigning a weight to the samples</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Assigning a weight to the samples</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Assigning weight to sample points can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap.</source>
+<target xml:lang="fr">Assigning weight to sample points can be useful when your dataset has additional information (such as the type of incident, or sampled amount of rainfall) and you want to integrate this information into your heatmap.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Hex Maps (Hexagon Grids) <bpt id="1">&lt;a id="hex-maps-hexagon-grids"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Hex Maps (Hexagon Grids) <bpt id="1">&lt;a id="hex-maps-hexagon-grids"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Hexagon grids are used to aggregate point incidents in order to normalise geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or <bpt id="1">__</bpt>hexagons<ept id="1">__</ept>, as these geometries can be repeat in an evenly spaced grid without leaving gaps.</source>
+<target xml:lang="fr">Hexagon grids are used to aggregate point incidents in order to normalise geographic data or to mitigate the modifiable area unit problem (problems arising from using irregular shaped polygons). In GIS, we commonly use rectangles (e.g. raster data) or <bpt id="1">__</bpt>hexagons<ept id="1">__</ept>, as these geometries can be repeat in an evenly spaced grid without leaving gaps.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">The advantage of using hexagons is that it is a polygon that closely resembles a <bpt id="1">__</bpt>circle<ept id="1">__</ept> (where the distance to the centre is equal at every point along the outline), but still <bpt id="2">__</bpt>leaves no gaps<ept id="2">__</ept> when placed as a <bpt id="3">__</bpt>grid<ept id="3">__</ept>. This means that it is also possible to use absolute values (no normalisation), since the spatial units have the same size.</source>
+<target xml:lang="fr">The advantage of using hexagons is that it is a polygon that closely resembles a <bpt id="1">__</bpt>circle<ept id="1">__</ept> (where the distance to the centre is equal at every point along the outline), but still <bpt id="2">__</bpt>leaves no gaps<ept id="2">__</ept> when placed as a <bpt id="3">__</bpt>grid<ept id="3">__</ept>. This means that it is also possible to use absolute values (no normalisation), since the spatial units have the same size.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Another advantage is that you can use the hexagon grid as spatial units and combine multiple variables (for example, number of incidents per population size) or calculate indexes.</source>
+<target xml:lang="fr">Another advantage is that you can use the hexagon grid as spatial units and combine multiple variables (for example, number of incidents per population size) or calculate indexes.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">WIKI: <bpt id="1">__</bpt>Hexagon grids<ept id="1">__</ept> are especially useful for density maps. For example, the number of conflict events or water points in an area.</source>
+<target xml:lang="fr">WIKI: <bpt id="1">__</bpt>Hexagon grids<ept id="1">__</ept> are especially useful for density maps. For example, the number of conflict events or water points in an area.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">To create a hexagon grid map, you will first need to <bpt id="1">[</bpt>create a hexagon grid<ept id="1">](link)</ept>, by using the "<bpt id="2">__</bpt>Create Grid<ept id="2">__</ept>" vector tool.</source>
+<target xml:lang="fr">To create a hexagon grid map, you will first need to <bpt id="1">[</bpt>create a hexagon grid<ept id="1">](link)</ept>, by using the "<bpt id="2">__</bpt>Create Grid<ept id="2">__</ept>" vector tool.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool "<bpt id="1">__</bpt>Count points in polygon<ept id="1">__</ept>". The result will be a hexagonal grid where each polygon has the a value for the number of points in that area.</source>
+<target xml:lang="fr">Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool "<bpt id="1">__</bpt>Count points in polygon<ept id="1">__</ept>". The result will be a hexagonal grid where each polygon has the a value for the number of points in that area.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">The final step will be to <bpt id="1">__</bpt>visualise<ept id="1">__</ept> the data by assigning a <bpt id="2">__</bpt>graduated symbology<ept id="2">__</ept> to the polygons. You can play around with the transparency of your layers to make more information visible.</source>
+<target xml:lang="fr">The final step will be to <bpt id="1">__</bpt>visualise<ept id="1">__</ept> the data by assigning a <bpt id="2">__</bpt>graduated symbology<ept id="2">__</ept> to the polygons. You can play around with the transparency of your layers to make more information visible.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example video: Creating a hex map</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example video: Creating a hex map</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Create a Hexagon grid with the tool "<bpt id="1">__</bpt>Create Grid<ept id="1">__</ept>".</source>
+<target xml:lang="fr">Create a Hexagon grid with the tool "<bpt id="1">__</bpt>Create Grid<ept id="1">__</ept>".</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Hexagon (Polygon)`</ph> as <bpt id="2">__</bpt>Grid type<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Select <ph id="1">`Hexagon (Polygon)`</ph> as <bpt id="2">__</bpt>Grid type<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">The Grid extent should be set to the layer/area of interest.</source>
+<target xml:lang="fr">The Grid extent should be set to the layer/area of interest.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Select the horizontal and vertical spacing according to the scale of your map.</source>
+<target xml:lang="fr">Select the horizontal and vertical spacing according to the scale of your map.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Optional: Remove the unnecessary Polygons.</source>
+<target xml:lang="fr">Optional: Remove the unnecessary Polygons.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Use the tool "<bpt id="1">__</bpt>Count points in Polygon<ept id="1">__</ept>" to add an attribute field with the number of points that are <bpt id="2">*</bpt>inside<ept id="2">*</ept> each hexagon cell. The <bpt id="3">__</bpt>Polygons<ept id="3">__</ept> field should be your reference layer. The new layer will have an attribute field called "<bpt id="4">__</bpt>NUMPOINTS<ept id="4">__</ept>"</source>
+<target xml:lang="fr">Use the tool "<bpt id="1">__</bpt>Count points in Polygon<ept id="1">__</ept>" to add an attribute field with the number of points that are <bpt id="2">*</bpt>inside<ept id="2">*</ept> each hexagon cell. The <bpt id="3">__</bpt>Polygons<ept id="3">__</ept> field should be your reference layer. The new layer will have an attribute field called "<bpt id="4">__</bpt>NUMPOINTS<ept id="4">__</ept>"</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Assign a <bpt id="1">__</bpt>graduated<ept id="1">__</ept> symbology to the <ph id="2">`Count`</ph>-layer. Select "<bpt id="3">__</bpt>NUMPOINTS<ept id="3">__</ept>" as the value and categorise the classes as you wish.</source>
+<target xml:lang="fr">Assign a <bpt id="1">__</bpt>graduated<ept id="1">__</ept> symbology to the <ph id="2">`Count`</ph>-layer. Select "<bpt id="3">__</bpt>NUMPOINTS<ept id="3">__</ept>" as the value and categorise the classes as you wish.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><ph id="1">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Analysis by joining attributes <bpt id="1">&lt;a id="analysis-by-joining-attributes"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Analysis by joining attributes <bpt id="1">&lt;a id="analysis-by-joining-attributes"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Joining<ept id="1">](/content/Wiki/en_qgis_non_spatial_joins_wiki.md)</ept> datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Joining<ept id="1">](/content/Wiki/en_qgis_non_spatial_joins_wiki.md)</ept> datasets is a common and useful way to get new insights by adding the information of one table to the other, taking into account key attributes that are used to identify the features that are to be joined. For example: the population size of a district is in one table, and the number of hospitals in a district is in a second table and you wish to combine the two tables to know how many hospitals per population size are in the respective districts.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">You have two separate data tables with information you wish to aggregate (join);</source>
+<target xml:lang="fr">You have two separate data tables with information you wish to aggregate (join);</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Both tables share key identifiers; <ph id="1">`CNTY_NAME`</ph> in this example</source>
+<target xml:lang="fr">Both tables share key identifiers; <ph id="1">`CNTY_NAME`</ph> in this example</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">The key identifiers serve as the <bpt id="1">__</bpt>relationship<ept id="1">__</ept> between the two tables</source>
+<target xml:lang="fr">The key identifiers serve as the <bpt id="1">__</bpt>relationship<ept id="1">__</ept> between the two tables</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">The tables will be combined via the key identifiers</source>
+<target xml:lang="fr">The tables will be combined via the key identifiers</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Joining tables will create a new table where the attribute values are added to the key identifiers</source>
+<target xml:lang="fr">Joining tables will create a new table where the attribute values are added to the key identifiers</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Pivoting tables <bpt id="1">&lt;a id="pivoting-tables"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Pivoting tables <bpt id="1">&lt;a id="pivoting-tables"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Sometimes, the tables are not in a suitable format for joining. For example, having multiple zones per country makes the CNTRY_NAME field unsuitable for aggregation. In such cases, pivoting the table is useful. This involves aggregating the fields for the zones and their respective area sizes under the country. The values in the ZONE column will be transformed into columns containing the area values. This way, you can aggregate this table with additional information that includes data on countries.</source>
+<target xml:lang="fr">Sometimes, the tables are not in a suitable format for joining. For example, having multiple zones per country makes the CNTRY_NAME field unsuitable for aggregation. In such cases, pivoting the table is useful. This involves aggregating the fields for the zones and their respective area sizes under the country. The values in the ZONE column will be transformed into columns containing the area values. This way, you can aggregate this table with additional information that includes data on countries.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Selecting appropriate locations according to a set of criteria <bpt id="1">&lt;a id="selecting-appropriate-locations-according-to-a-set-of-criteria"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Selecting appropriate locations according to a set of criteria <bpt id="1">&lt;a id="selecting-appropriate-locations-according-to-a-set-of-criteria"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Interpolation <bpt id="1">&lt;a id="interpolation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Interpolation <bpt id="1">&lt;a id="interpolation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are <bpt id="1">[</bpt>continuous<ept id="1">](link)</ept>, such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a <bpt id="2">__</bpt>statistical surface<ept id="2">__</ept>. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.</source>
+<target xml:lang="fr">Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are <bpt id="1">[</bpt>continuous<ept id="1">](link)</ept>, such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a <bpt id="2">__</bpt>statistical surface<ept id="2">__</ept>. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Interpolating data can be highly useful since an extensive data collection is costly and rarely possible. Data collection for continuous phenomena is usually conducted only at a small number of locations. Interpolation models use these points to calculate a raster surface with estimated values for each raster cell.</source>
+<target xml:lang="fr">Interpolating data can be highly useful since an extensive data collection is costly and rarely possible. Data collection for continuous phenomena is usually conducted only at a small number of locations. Interpolation models use these points to calculate a raster surface with estimated values for each raster cell.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">There are many different interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are <bpt id="1">__</bpt>Spline interpolation<ept id="1">__</ept>, <bpt id="2">__</bpt>Inverse Distance Weighted Interpolation (IDW)<ept id="2">__</ept>, and <bpt id="3">__</bpt>Kriging<ept id="3">__</ept>. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.</source>
+<target xml:lang="fr">There are many different interpolation methods, each suited for another type of phenomenon or able to take into account different characteristics. In GIS, the most commonly used interpolation methods are <bpt id="1">__</bpt>Spline interpolation<ept id="1">__</ept>, <bpt id="2">__</bpt>Inverse Distance Weighted Interpolation (IDW)<ept id="2">__</ept>, and <bpt id="3">__</bpt>Kriging<ept id="3">__</ept>. In the following subchapters, we will take a look at these methods, and discuss their strengths and shortcomings.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">IDW Interpolation (Inverse Distance Weighted) <bpt id="1">&lt;a id="idw-interpolation-inverse-distance-weighted"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">IDW Interpolation (Inverse Distance Weighted) <bpt id="1">&lt;a id="idw-interpolation-inverse-distance-weighted"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point's value influences the unknown point's value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.</source>
+<target xml:lang="fr">In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point's value influences the unknown point's value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Keep in mind that IDW interpolation has a few <bpt id="1">__</bpt>disadvantages<ept id="1">__</ept>. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see <bpt id="2">[</bpt>IDW interpolation example<ept id="2">](/content/Module_6/en_qgis_data_analysis_theorie.md#Interpolation)</ept>) (adopted from the <bpt id="3">[</bpt>QGIS documentation<ept id="3">](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)</ept>).</source>
+<target xml:lang="fr">Keep in mind that IDW interpolation has a few <bpt id="1">__</bpt>disadvantages<ept id="1">__</ept>. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see <bpt id="2">[</bpt>IDW interpolation example<ept id="2">](/content/Module_6/en_qgis_data_analysis_theorie.md#Interpolation)</ept>) (adopted from the <bpt id="3">[</bpt>QGIS documentation<ept id="3">](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Spline Interpolation <bpt id="1">&lt;a id="spline-interpolation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spline Interpolation <bpt id="1">&lt;a id="spline-interpolation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Triangulated Irregular Network <bpt id="1">&lt;a id="triangulated-irregular-network"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Triangulated Irregular Network <bpt id="1">&lt;a id="triangulated-irregular-network"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">TIN interpolation is commonly called <bpt id="1">__</bpt>Delauny triangulation<ept id="1">__</ept>. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see <ph id="2">{numref}</ph><ph id="3">`TIN_interpolation_example`</ph>). TIN interpolation is usually used to compute <bpt id="4">__</bpt>digital elevation models<ept id="4">__</ept> (DEM).</source>
+<target xml:lang="fr">TIN interpolation is commonly called <bpt id="1">__</bpt>Delauny triangulation<ept id="1">__</ept>. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see <ph id="2">{numref}</ph><ph id="3">`TIN_interpolation_example`</ph>). TIN interpolation is usually used to compute <bpt id="4">__</bpt>digital elevation models<ept id="4">__</ept> (DEM).</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">The problem with TIN statistical surfaces is that the surfaces are not smooth and may seem jagged, since they are based on triangles of varying sizes. Furthermore, triangulation is no suited to extrapolate data beyond the area where sample points have been collected (adopted from the <bpt id="1">[</bpt>QGIS documentation<ept id="1">](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)</ept>)</source>
+<target xml:lang="fr">The problem with TIN statistical surfaces is that the surfaces are not smooth and may seem jagged, since they are based on triangles of varying sizes. Furthermore, triangulation is no suited to extrapolate data beyond the area where sample points have been collected (adopted from the <bpt id="1">[</bpt>QGIS documentation<ept id="1">](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)</ept>)</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Kriging <bpt id="1">&lt;a id="kriging"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Kriging <bpt id="1">&lt;a id="kriging"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Kriging is a method of geostatistics used to estimate values for spatial units where the phenomenon of interest has not been measured at every spatial points. Kriging integrates covariates into the interpolation. For example, it is not only the distance to measured temperatures that influences its weighting; temperature is also influenced by the altitude of the sample point.</source>
+<target xml:lang="fr">Kriging is a method of geostatistics used to estimate values for spatial units where the phenomenon of interest has not been measured at every spatial points. Kriging integrates covariates into the interpolation. For example, it is not only the distance to measured temperatures that influences its weighting; temperature is also influenced by the altitude of the sample point.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Outlook <bpt id="1">&lt;a id="outlook"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outlook <bpt id="1">&lt;a id="outlook"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why <bpt id="1">__</bpt>model building<ept id="1">__</ept> and <bpt id="2">__</bpt>automation<ept id="2">__</ept> are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <bpt id="3">[</bpt>module 7<ept id="3">](/content/Module_7/en_qgis_automation_theory.md)</ept>.</source>
+<target xml:lang="fr">There are many analysis methods in GIS. However, setting up an analysis method can be quite time consuming, and creating a new analysis method for every research question makes it hard to compare the results of different analyses. This is why <bpt id="1">__</bpt>model building<ept id="1">__</ept> and <bpt id="2">__</bpt>automation<ept id="2">__</ept> are used frequently when working with GIS data. A model can be seen as a analysis blueprint that only needs input data to perform a certain type of analysis. Since the parameters are the same and similar datasets are needed for the model to work properly, the results can be compared. If you are interested in model building and automation, check out <bpt id="3">[</bpt>module 7<ept id="3">](/content/Module_7/en_qgis_automation_theory.md)</ept>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

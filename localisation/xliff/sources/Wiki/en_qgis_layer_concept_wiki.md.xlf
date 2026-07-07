@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_layer_concept_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Layer Concept <bpt id="1">&lt;a id="layer-concept"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Layer Concept <bpt id="1">&lt;a id="layer-concept"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Geoinformation systems (GIS) visualize data by stacking layers on top of one another to create maps. Every layer represents one set of information.
+This is a vital concept to understand since analysis, as well as visualisation of data, is based on it.</source>
+<target xml:lang="fr">Geoinformation systems (GIS) visualize data by stacking layers on top of one another to create maps. Every layer represents one set of information.
+This is a vital concept to understand since analysis, as well as visualisation of data, is based on it.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Layer_concept.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Layer_concept.png</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: layer_concept_wiki</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: layer_concept_wiki</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The layer concept in GIS applications. Source unknown. All rights reserved. This content is excluded from our Creative Commons license.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The layer concept in GIS applications. Source unknown. All rights reserved. This content is excluded from our Creative Commons license.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Hide and show layers <bpt id="1">&lt;a id="hide-and-show-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Hide and show layers <bpt id="1">&lt;a id="hide-and-show-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Check the check-box in the Layers panel on the bottom left:</source>
+<target xml:lang="fr">Check the check-box in the Layers panel on the bottom left:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Have you "lost" your layer? <bpt id="1">&lt;a id="have-you-lost-your-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Have you "lost" your layer? <bpt id="1">&lt;a id="have-you-lost-your-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Right click on your layer → <ph id="1">`Zoom to layer(s)`</ph>.</source>
+<target xml:lang="fr">Right click on your layer → <ph id="1">`Zoom to layer(s)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Move layers in the hierarchy <bpt id="1">&lt;a id="move-layers-in-the-hierarchy"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Move layers in the hierarchy <bpt id="1">&lt;a id="move-layers-in-the-hierarchy"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Move a layer up and down in the Layer panel by drag-and-drop.</source>
+<target xml:lang="fr">Move a layer up and down in the Layer panel by drag-and-drop.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Move a layer to the top: Right click on your layer → <ph id="1">`Move To Top`</ph>.</source>
+<target xml:lang="fr">Move a layer to the top: Right click on your layer → <ph id="1">`Move To Top`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Change Layer Name <bpt id="1">&lt;a id="change-layer-name"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Change Layer Name <bpt id="1">&lt;a id="change-layer-name"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Right click on your layer → <ph id="1">`Rename Layer`</ph>.</source>
+<target xml:lang="fr">Right click on your layer → <ph id="1">`Rename Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Layer properties <bpt id="1">&lt;a id="layer-properties"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Layer properties <bpt id="1">&lt;a id="layer-properties"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Each layer has additional properties that you can view and customise. The most important are:</source>
+<target xml:lang="fr">Each layer has additional properties that you can view and customise. The most important are:</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Information:<ept id="1">__</ept> An overview of the layer name, file format, storage location, spatial extent, number of features (objects),...</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Information:<ept id="1">__</ept> An overview of the layer name, file format, storage location, spatial extent, number of features (objects),...</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Symbology:<ept id="1">__</ept> Display mode of the layer, style, transparency,...</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Symbology:<ept id="1">__</ept> Display mode of the layer, style, transparency,...</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

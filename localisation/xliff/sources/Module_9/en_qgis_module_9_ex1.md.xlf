@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Task 1 - Assess water distribution access <bpt id="1">&lt;a id="task-1-assess-water-distribution-access"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1 - Assess water distribution access <bpt id="1">&lt;a id="task-1-assess-water-distribution-access"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:</source>
+<target xml:lang="fr">For Camp 18 in Kutupalong Refugee Camp, we have a dataset on the locations of water distribution points. Further we have data on the buildings (footprint and centroid) within camp 18. In the following task we will use the following dataset:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_1_Assess_water_distribution_access/Modul_9_Exercise_1.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the geopackage file <ph id="3">`task1.gpkg`</ph> which contains the following vector layers:</source>
+<target xml:lang="fr">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_1_Assess_water_distribution_access/Modul_9_Exercise_1.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the geopackage file <ph id="3">`task1.gpkg`</ph> which contains the following vector layers:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_waterpoints`</ph> (points): Water point locations within camp 18</source>
+<target xml:lang="fr"><ph id="1">`camp18_waterpoints`</ph> (points): Water point locations within camp 18</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_buildings_centroid`</ph> (points): Centroids of all building objects inside camp 18</source>
+<target xml:lang="fr"><ph id="1">`camp18_buildings_centroid`</ph> (points): Centroids of all building objects inside camp 18</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_buildings_footprint`</ph> (polygons): Actual footprints of all buildings</source>
+<target xml:lang="fr"><ph id="1">`camp18_buildings_footprint`</ph> (polygons): Actual footprints of all buildings</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_boundary`</ph> (polygons): The camps legal boundary</source>
+<target xml:lang="fr"><ph id="1">`camp18_boundary`</ph> (polygons): The camps legal boundary</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">STEP 1: Catchments with openrouteservice isochrones <bpt id="1">&lt;a id="step-1-catchments-with-openrouteservice-isochrones"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 1: Catchments with openrouteservice isochrones <bpt id="1">&lt;a id="step-1-catchments-with-openrouteservice-isochrones"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - see the how to here <ph id="1">{ref}</ph><ph id="2">`content:references:module9:ors-tools-plugin`</ph></source>
+<target xml:lang="fr">Make sure you installed the ORS Tools plugin and set it up already with an API Key. If not - see the how to here <ph id="1">{ref}</ph><ph id="2">`content:references:module9:ors-tools-plugin`</ph></target>
+</trans-unit>
+<trans-unit id="sd1_sf5_tu2" resname="sd1_1" restype="x-alt" xml:space="preserve">
+<source xml:lang="en">Icon</source>
+<target xml:lang="fr">Icon</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Click in the toolbar on the ORS Tools plugin Icon <ph id="1">[#$sd1_sf5_dp1]</ph>. Click on <ph id="2">`Batch Jobs`</ph> -> <ph id="3">`Isochrones from Layer`</ph>.
+Leave all settings at default except:</source>
+<target xml:lang="fr">Click in the toolbar on the ORS Tools plugin Icon <ph id="1">[#$sd1_sf5_dp1]</ph>. Click on <ph id="2">`Batch Jobs`</ph> -> <ph id="3">`Isochrones from Layer`</ph>.
+Leave all settings at default except:</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Travel mode</source>
+<target xml:lang="fr">Travel mode</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">foot-walking</source>
+<target xml:lang="fr">foot-walking</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Input Point Layer</source>
+<target xml:lang="fr">Input Point Layer</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">waterpoints</source>
+<target xml:lang="fr">waterpoints</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Dimension</source>
+<target xml:lang="fr">Dimension</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">distance</source>
+<target xml:lang="fr">distance</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Comma separated ranges</source>
+<target xml:lang="fr">Comma separated ranges</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">500</source>
+<target xml:lang="fr">500</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The result layer shows for every waterpoint a 500 meter catchment area for pedestrian travel mode. 500 meter is the maximum distance from any household to the water point according to <bpt id="1">[</bpt>The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response<ept id="1">](https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf)</ept> p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.</source>
+<target xml:lang="fr">The result layer shows for every waterpoint a 500 meter catchment area for pedestrian travel mode. 500 meter is the maximum distance from any household to the water point according to <bpt id="1">[</bpt>The Sphere Handbook: Humanitarian Charter and Minimum Standards in Humanitarian Response<ept id="1">](https://spherestandards.org/wp-content/uploads/Sphere-Handbook-2018-EN.pdf)</ept> p. 106. There are other key indicators like maximum number of people using the facility, queuing time, etc. We will work on the distance as we miss further information like the flow rate per water point or the household size per building.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">We proceed to find out how many water point options are there for each building given the 500m constraint. Basically we add a count aggregation of isochrones that intersect with each building.</source>
+<target xml:lang="fr">We proceed to find out how many water point options are there for each building given the 500m constraint. Basically we add a count aggregation of isochrones that intersect with each building.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> and scroll down to <ph id="2">`Vector general`</ph> choose <ph id="3">`Join attributes by location (summary)`</ph> or enter "Join attributes by location (summary)" in the search bar.
+Leave all settings at default except:</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> and scroll down to <ph id="2">`Vector general`</ph> choose <ph id="3">`Join attributes by location (summary)`</ph> or enter "Join attributes by location (summary)" in the search bar.
+Leave all settings at default except:</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Base Layer</source>
+<target xml:lang="fr">Base Layer</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">buildings_centroid</source>
+<target xml:lang="fr">buildings_centroid</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Join Layer</source>
+<target xml:lang="fr">Join Layer</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Isochrones</source>
+<target xml:lang="fr">Isochrones</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Geometric Predicate</source>
+<target xml:lang="fr">Geometric Predicate</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Intersects</source>
+<target xml:lang="fr">Intersects</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Fields to Summarize</source>
+<target xml:lang="fr">Fields to Summarize</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">ID</source>
+<target xml:lang="fr">ID</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Summaries to Calculate</source>
+<target xml:lang="fr">Summaries to Calculate</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">STEP 2: Catchments for operational facilities <bpt id="1">&lt;a id="step-2-catchments-for-operational-facilities"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 2: Catchments for operational facilities <bpt id="1">&lt;a id="step-2-catchments-for-operational-facilities"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (search for <ph id="1">`Extract by Attribute`</ph>). Redo the analysis for operational waterpoints only.</source>
+<target xml:lang="fr">Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (search for <ph id="1">`Extract by Attribute`</ph>). Redo the analysis for operational waterpoints only.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">STEP 3: Waterpoint catchment by closest euclidean distance <bpt id="1">&lt;a id="step-3-waterpoint-catchment-by-closest-euclidean-distance"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 3: Waterpoint catchment by closest euclidean distance <bpt id="1">&lt;a id="step-3-waterpoint-catchment-by-closest-euclidean-distance"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">There are other means to generate catchment areas, implemented in QGIS. In the next part we will use the hub distance to calculate the euclidean distance between every building and its closest waterpoint.</source>
+<target xml:lang="fr">There are other means to generate catchment areas, implemented in QGIS. In the next part we will use the hub distance to calculate the euclidean distance between every building and its closest waterpoint.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph>, choose <ph id="2">`Vector Analysis`</ph>,then choose <ph id="3">`Distance to nearest hub (points)`</ph>or enter "Distance to nearest hub (points)" in the search bar.
+Leave all settings at default except:</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph>, choose <ph id="2">`Vector Analysis`</ph>,then choose <ph id="3">`Distance to nearest hub (points)`</ph>or enter "Distance to nearest hub (points)" in the search bar.
+Leave all settings at default except:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Source points</source>
+<target xml:lang="fr">Source points</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">buildings_centroid</source>
+<target xml:lang="fr">buildings_centroid</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Destination hubs layer</source>
+<target xml:lang="fr">Destination hubs layer</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">waterpoints</source>
+<target xml:lang="fr">waterpoints</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Hub layer name attribute</source>
+<target xml:lang="fr">Hub layer name attribute</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">id_plastic</source>
+<target xml:lang="fr">id_plastic</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Measurement unit</source>
+<target xml:lang="fr">Measurement unit</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Meters</source>
+<target xml:lang="fr">Meters</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:</source>
+<target xml:lang="fr">The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">HubName: The name/id of the closest waterpoint.</source>
+<target xml:lang="fr">HubName: The name/id of the closest waterpoint.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">HubDist: The euclidean distance from the building centroid to the closest waterpoint in meters.</source>
+<target xml:lang="fr">HubDist: The euclidean distance from the building centroid to the closest waterpoint in meters.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">STEP 4: Hub distance based catchments <bpt id="1">&lt;a id="step-4-hub-distance-based-catchments"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 4: Hub distance based catchments <bpt id="1">&lt;a id="step-4-hub-distance-based-catchments"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">All buildings are assigned to their closest waterpoint. With the minimum bounding geometry tool in QGIS we can use this grouping information to create areas.</source>
+<target xml:lang="fr">All buildings are assigned to their closest waterpoint. With the minimum bounding geometry tool in QGIS we can use this grouping information to create areas.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph>, choose <ph id="2">`Vector Analysis`</ph>, then choose <ph id="3">`Minimum Bounding Geometry`</ph> or enter "Minimum Bounding Geometry" in the search bar.
+Leave all settings at default except:</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph>, choose <ph id="2">`Vector Analysis`</ph>, then choose <ph id="3">`Minimum Bounding Geometry`</ph> or enter "Minimum Bounding Geometry" in the search bar.
+Leave all settings at default except:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Input layer</source>
+<target xml:lang="fr">Input layer</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Hub distance</source>
+<target xml:lang="fr">Hub distance</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Field</source>
+<target xml:lang="fr">Field</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Hubname</source>
+<target xml:lang="fr">Hubname</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Geometry type</source>
+<target xml:lang="fr">Geometry type</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Convex Hull</source>
+<target xml:lang="fr">Convex Hull</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

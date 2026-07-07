@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_qgis_GIS_AA_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Exercises - GIS in Anticipatory Action <bpt id="1">&lt;a id="exercises-gis-in-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises - GIS in Anticipatory Action <bpt id="1">&lt;a id="exercises-gis-in-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Here you can find all exercises related to the topics in the chapter GIS in Anticipatory Action.</source>
+<target xml:lang="fr">Here you can find all exercises related to the topics in the chapter GIS in Anticipatory Action.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">QGIS Trigger Workflow for Somalia <bpt id="1">&lt;a id="qgis-trigger-workflow-for-somalia"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Trigger Workflow for Somalia <bpt id="1">&lt;a id="qgis-trigger-workflow-for-somalia"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: QGIS Basic Exercise SRCS<ept id="2">](/content/GIS_AA/en_qgis_srcs_basic_ex.md)</ept>:<ept id="1">__</ept> This exercise focuses on many topics which are relevant for the use of the QGIS Trigger and Monitoring workflows for drought in Somalia.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: QGIS Basic Exercise SRCS<ept id="2">](/content/GIS_AA/en_qgis_srcs_basic_ex.md)</ept>:<ept id="1">__</ept> This exercise focuses on many topics which are relevant for the use of the QGIS Trigger and Monitoring workflows for drought in Somalia.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Historical Impact Assessment (HIA) Sudan <bpt id="1">&lt;a id="historical-impact-assessment-hia-sudan"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Historical Impact Assessment (HIA) Sudan <bpt id="1">&lt;a id="historical-impact-assessment-hia-sudan"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Historical Impact Assessment (HIA) for Flood in Sudan<ept id="2">](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md)</ept>:<ept id="1">__</ept> This exercise simulates a short historical impact assessment in Sudan and focuses on the understanding of the compiling of data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Historical Impact Assessment (HIA) for Flood in Sudan<ept id="2">](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md)</ept>:<ept id="1">__</ept> This exercise simulates a short historical impact assessment in Sudan and focuses on the understanding of the compiling of data.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_6/en_qgis_common_data_analysis.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Data Analysis in the Humanitarian Sector <bpt id="1">&lt;a id="data-analysis-in-the-humanitarian-sector"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Analysis in the Humanitarian Sector <bpt id="1">&lt;a id="data-analysis-in-the-humanitarian-sector"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The previous chapter went over a few methods to conduct analyses with geodata.
+This chapter will present several data analysis methods and their results that
+are common to humanitarian work. It will cover the general idea or workflow,
+what kind of data is needed to perform the analysis. However, it will not go
+into a detailed explanation of the workflow step by step. If you are interested
+in specific workflows step-by-step, check out <bpt id="1">[</bpt>module 7<ept id="1">](/content/Module_7/en_qgis_automation_theory.md)</ept> "Automation with QGIS", <bpt id="2">[</bpt>module 8<ept id="2">](/content/Module_8/en_qgis_remote_sensing_raster_theorie.md)</ept> "Remote Sensing and Raster data
+theory", and <bpt id="3">[</bpt>module 9<ept id="3">](/content/Module_9/en_qgis_network_analysis_theory.mden_qgis_network_analysis_theory.md)</ept>, as well as the chapters covering <bpt id="4">__</bpt>GIS in anticipatory action<ept id="4">__</ept>: <bpt id="5">[</bpt>QGIS Trigger Workflow for Somalia<ept id="5">](/content/GIS_AA/en_qgis_drought_trigger_somalia.md)</ept>, and
+<bpt id="6">[</bpt>Historical Impact Assessment (HIA) for Flood in Sudan<ept id="6">](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md)</ept>.</source>
+<target xml:lang="fr">The previous chapter went over a few methods to conduct analyses with geodata.
+This chapter will present several data analysis methods and their results that
+are common to humanitarian work. It will cover the general idea or workflow,
+what kind of data is needed to perform the analysis. However, it will not go
+into a detailed explanation of the workflow step by step. If you are interested
+in specific workflows step-by-step, check out <bpt id="1">[</bpt>module 7<ept id="1">](/content/Module_7/en_qgis_automation_theory.md)</ept> "Automation with QGIS", <bpt id="2">[</bpt>module 8<ept id="2">](/content/Module_8/en_qgis_remote_sensing_raster_theorie.md)</ept> "Remote Sensing and Raster data
+theory", and <bpt id="3">[</bpt>module 9<ept id="3">](/content/Module_9/en_qgis_network_analysis_theory.mden_qgis_network_analysis_theory.md)</ept>, as well as the chapters covering <bpt id="4">__</bpt>GIS in anticipatory action<ept id="4">__</ept>: <bpt id="5">[</bpt>QGIS Trigger Workflow for Somalia<ept id="5">](/content/GIS_AA/en_qgis_drought_trigger_somalia.md)</ept>, and
+<bpt id="6">[</bpt>Historical Impact Assessment (HIA) for Flood in Sudan<ept id="6">](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Examples of Geodata analysis in the context of humanitarian aid <bpt id="1">&lt;a id="examples-of-geodata-analysis-in-the-context-of-humanitarian-aid"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Examples of Geodata analysis in the context of humanitarian aid <bpt id="1">&lt;a id="examples-of-geodata-analysis-in-the-context-of-humanitarian-aid"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The data at your disposal will vary depending on the region or the access to
+different data products that your organisation has access to. Another important metric is to know how good certain datasets, such as forecasts, are. You might have to communicate with other organisations or agencies to find or gain access to relevant data, or determine the accuracy and relevance of datasets.</source>
+<target xml:lang="fr">The data at your disposal will vary depending on the region or the access to
+different data products that your organisation has access to. Another important metric is to know how good certain datasets, such as forecasts, are. You might have to communicate with other organisations or agencies to find or gain access to relevant data, or determine the accuracy and relevance of datasets.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">On the training platform under the section <bpt id="1">__</bpt>GIS in Anticipatory Action<ept id="1">__</ept>, there are several chapters dedicated to explain geodata analysis workflows in detail:</source>
+<target xml:lang="fr">On the training platform under the section <bpt id="1">__</bpt>GIS in Anticipatory Action<ept id="1">__</ept>, there are several chapters dedicated to explain geodata analysis workflows in detail:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Historical Impact Assessment (HIA) for Floods in Sudan<ept id="1">](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Historical Impact Assessment (HIA) for Floods in Sudan<ept id="1">](/content/GIS_AA/en_qgis_historical_impact_assessment_sudan.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Trigger Workflow for Somalia<ept id="1">](/content/GIS_AA/en_qgis_drought_trigger_somalia.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Trigger Workflow for Somalia<ept id="1">](/content/GIS_AA/en_qgis_drought_trigger_somalia.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Risk Assessment QGIS Plugin<ept id="1">](/content/GIS_AA/en_qgis_risk_assessment_plugin.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Risk Assessment QGIS Plugin<ept id="1">](/content/GIS_AA/en_qgis_risk_assessment_plugin.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Flood impact analysis <bpt id="1">&lt;a id="flood-impact-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Flood impact analysis <bpt id="1">&lt;a id="flood-impact-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">A flood impact analysis aims to assess the impact of flooding on, for example,
+critical infrastructure, and create maps that can be shared with other
+organisations, institutions, or the public. These maps can help communities,
+governments, or NGOs to take steps to reduce the risk posed by these floods,
+and improve the resilience of communities. This data can also help emergency
+management operations develop management plans, mitigation strategies, plan
+road closures or evacuation areas.
+To perform a flood impact analysis, you will need a few datasets at your
+disposal:</source>
+<target xml:lang="fr">A flood impact analysis aims to assess the impact of flooding on, for example,
+critical infrastructure, and create maps that can be shared with other
+organisations, institutions, or the public. These maps can help communities,
+governments, or NGOs to take steps to reduce the risk posed by these floods,
+and improve the resilience of communities. This data can also help emergency
+management operations develop management plans, mitigation strategies, plan
+road closures or evacuation areas.
+To perform a flood impact analysis, you will need a few datasets at your
+disposal:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Public infrastructure (roads, residential houses, public houses, <bpt id="1">__</bpt>key
+infrastructure<ept id="1">__</ept>)</source>
+<target xml:lang="fr">Public infrastructure (roads, residential houses, public houses, <bpt id="1">__</bpt>key
+infrastructure<ept id="1">__</ept>)</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Flood extent</source>
+<target xml:lang="fr">Flood extent</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Digital elevation model (DEM)</source>
+<target xml:lang="fr">Digital elevation model (DEM)</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Flood depth (100 year, 5 year)</source>
+<target xml:lang="fr">Flood depth (100 year, 5 year)</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Keep in mind again that depending on the region and your organisation, the data you have access to might not be ideal to perform the flood impact analysis. But it is always useful to perform geodata analysis for these topics. The better your analysis is, the better you can communicate the extent and impact of flooding events and the better emergency operations can prepare and react to the flood crisis.</source>
+<target xml:lang="fr">Keep in mind again that depending on the region and your organisation, the data you have access to might not be ideal to perform the flood impact analysis. But it is always useful to perform geodata analysis for these topics. The better your analysis is, the better you can communicate the extent and impact of flooding events and the better emergency operations can prepare and react to the flood crisis.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">However, it is possible to perform an analysis of the impact of flood events with a dataset of public infrastructure and the flood extent.</source>
+<target xml:lang="fr">However, it is possible to perform an analysis of the impact of flood events with a dataset of public infrastructure and the flood extent.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Depending on the use case, you will want to create a risk model for critical infrastructure, for example depending on the extent/depth of a 100-year or 5-year flood.</source>
+<target xml:lang="fr">Depending on the use case, you will want to create a risk model for critical infrastructure, for example depending on the extent/depth of a 100-year or 5-year flood.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Where can I find the data? <bpt id="1">&lt;a id="where-can-i-find-the-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Where can I find the data? <bpt id="1">&lt;a id="where-can-i-find-the-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap <bpt id="1">&lt;a id="openstreetmap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">OpenStreetMap <bpt id="1">&lt;a id="openstreetmap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">A common datasource for public infrastructure could be <bpt id="1">[</bpt>OpenStreetMap<ept id="1">]</ept>. However, you need to determine the quality of the OpenStreetMap data of the region. HeiGIT developed the <bpt id="2">[</bpt>ohsome quality analyst (OQT)<ept id="2">](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/)</ept></source>
+<target xml:lang="fr">A common datasource for public infrastructure could be <bpt id="1">[</bpt>OpenStreetMap<ept id="1">]</ept>. However, you need to determine the quality of the OpenStreetMap data of the region. HeiGIT developed the <bpt id="2">[</bpt>ohsome quality analyst (OQT)<ept id="2">](https://heigit.org/de/big-spatial-data-analytics/ohsome-3/ohsome-quality-analyst-oqt/)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Humanitarian Data Exchange <bpt id="1">&lt;a id="humanitarian-data-exchange"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Humanitarian Data Exchange <bpt id="1">&lt;a id="humanitarian-data-exchange"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Government Agencies <bpt id="1">&lt;a id="government-agencies"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Government Agencies <bpt id="1">&lt;a id="government-agencies"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Reliefweb <bpt id="1">&lt;a id="reliefweb"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Reliefweb <bpt id="1">&lt;a id="reliefweb"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">The section on <bpt id="1">[</bpt>datasources<ept id="1">](/content/Module_2/en_data_sources.md)</ept> has a list with many more useful data repositories.</source>
+<target xml:lang="fr">The section on <bpt id="1">[</bpt>datasources<ept id="1">](/content/Module_2/en_data_sources.md)</ept> has a list with many more useful data repositories.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Workflow <bpt id="1">&lt;a id="workflow"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Workflow <bpt id="1">&lt;a id="workflow"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">What can we use this analysis for? <bpt id="1">&lt;a id="what-can-we-use-this-analysis-for"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What can we use this analysis for? <bpt id="1">&lt;a id="what-can-we-use-this-analysis-for"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Emergency Management Operations <bpt id="1">&lt;a id="emergency-management-operations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Emergency Management Operations <bpt id="1">&lt;a id="emergency-management-operations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Damage Assessment <bpt id="1">&lt;a id="damage-assessment"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Damage Assessment <bpt id="1">&lt;a id="damage-assessment"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Community Health Assessment <bpt id="1">&lt;a id="community-health-assessment"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Community Health Assessment <bpt id="1">&lt;a id="community-health-assessment"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">What can we do with these <bpt id="1">&lt;a id="what-can-we-do-with-these"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What can we do with these <bpt id="1">&lt;a id="what-can-we-do-with-these"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Other useful geodata analyses <bpt id="1">&lt;a id="other-useful-geodata-analyses"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Other useful geodata analyses <bpt id="1">&lt;a id="other-useful-geodata-analyses"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">locate or determine the adequacy of emergency shelters</source>
+<target xml:lang="fr">locate or determine the adequacy of emergency shelters</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Risk assessment</source>
+<target xml:lang="fr">Risk assessment</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Historical impact assessment</source>
+<target xml:lang="fr">Historical impact assessment</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_ex5.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Task 5: Identifying critical road segments <bpt id="1">&lt;a id="task-5-identifying-critical-road-segments"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 5: Identifying critical road segments <bpt id="1">&lt;a id="task-5-identifying-critical-road-segments"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">For this task, we imagine that the city of Heidelberg is partially affected by flooding of the Neckar. Such scenarios are becoming increasingly likely in the future due to climate change. The flood has a major impact on the city's infrastructure. In this exercise, you will use QGIS to analyze the impact of the flood by determining the betweenness centrality of multiple nodes in the city before and after the flooding event.</source>
+<target xml:lang="fr">For this task, we imagine that the city of Heidelberg is partially affected by flooding of the Neckar. Such scenarios are becoming increasingly likely in the future due to climate change. The flood has a major impact on the city's infrastructure. In this exercise, you will use QGIS to analyze the impact of the flood by determining the betweenness centrality of multiple nodes in the city before and after the flooding event.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_5_Identifying_critical_road_segments/Modul_9_Exercise_5.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the following datasets:</source>
+<target xml:lang="fr">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_5_Identifying_critical_road_segments/Modul_9_Exercise_5.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the following datasets:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`highways.gpkg`</ph> (points): Road network of Heidelberg</source>
+<target xml:lang="fr"><ph id="1">`highways.gpkg`</ph> (points): Road network of Heidelberg</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`flood_area.gpkg`</ph> (polygons): Flood simulation of Heidelberg</source>
+<target xml:lang="fr"><ph id="1">`flood_area.gpkg`</ph> (polygons): Flood simulation of Heidelberg</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">STEP 1: Dissolve Layer <bpt id="1">&lt;a id="step-1-dissolve-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 1: Dissolve Layer <bpt id="1">&lt;a id="step-1-dissolve-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">First we want to dissolve the <ph id="1">`highways`</ph> layer to combine all the LineString geometries to one LineString. This is important for determining the betweenness centrality in the future steps.</source>
+<target xml:lang="fr">First we want to dissolve the <ph id="1">`highways`</ph> layer to combine all the LineString geometries to one LineString. This is important for determining the betweenness centrality in the future steps.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept> and search for <bpt id="2">**</bpt>Dissolve<ept id="2">**</ept>. Select the <ph id="3">`highways`</ph> layer as the Input Layer and leave all other settings at default.</source>
+<target xml:lang="fr">Open the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept> and search for <bpt id="2">**</bpt>Dissolve<ept id="2">**</ept>. Select the <ph id="3">`highways`</ph> layer as the Input Layer and leave all other settings at default.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">STEP 2: Betweenness Centrality - Before Flood <bpt id="1">&lt;a id="step-2-betweenness-centrality-before-flood"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 2: Betweenness Centrality - Before Flood <bpt id="1">&lt;a id="step-2-betweenness-centrality-before-flood"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Make sure you installed the GRASS GIS provider Plugin. If you don't know how to install Plugins, click here: <ph id="1">{ref}</ph><ph id="2">`content:references:wiki:plugins`</ph></source>
+<target xml:lang="fr">Make sure you installed the GRASS GIS provider Plugin. If you don't know how to install Plugins, click here: <ph id="1">{ref}</ph><ph id="2">`content:references:wiki:plugins`</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">To determine the betweenness centrality open the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, choose <bpt id="2">**</bpt>GRASS<ept id="2">**</ept>, then choose <bpt id="3">**</bpt>Vector<ept id="3">**</ept> and finally scroll down to <bpt id="4">**</bpt>v.net.centrality<ept id="4">**</ept>. Select the <ph id="5">`Dissolved`</ph> Layer from Step 1 and leave all other settings at default. After the calculation you receive a new Point layer called <ph id="6">`Network Centrality`</ph>.</source>
+<target xml:lang="fr">To determine the betweenness centrality open the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, choose <bpt id="2">**</bpt>GRASS<ept id="2">**</ept>, then choose <bpt id="3">**</bpt>Vector<ept id="3">**</ept> and finally scroll down to <bpt id="4">**</bpt>v.net.centrality<ept id="4">**</ept>. Select the <ph id="5">`Dissolved`</ph> Layer from Step 1 and leave all other settings at default. After the calculation you receive a new Point layer called <ph id="6">`Network Centrality`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Now you want to make the difference between the values visible for interpretation. Therefore click <bpt id="1">**</bpt>F7<ept id="1">**</ept> to open the <bpt id="2">**</bpt>Layer Styling<ept id="2">**</ept>. There you can choose the new <ph id="3">`Network Centrality`</ph> Layer and change <ph id="4">`Single Symbol`</ph> to <ph id="5">`Graduated`</ph>.  You must select <bpt id="6">**</bpt>betweenness<ept id="6">**</ept> as your <ph id="7">`Value`</ph> and finally click <ph id="8">`Classify`</ph>.</source>
+<target xml:lang="fr">Now you want to make the difference between the values visible for interpretation. Therefore click <bpt id="1">**</bpt>F7<ept id="1">**</ept> to open the <bpt id="2">**</bpt>Layer Styling<ept id="2">**</ept>. There you can choose the new <ph id="3">`Network Centrality`</ph> Layer and change <ph id="4">`Single Symbol`</ph> to <ph id="5">`Graduated`</ph>.  You must select <bpt id="6">**</bpt>betweenness<ept id="6">**</ept> as your <ph id="7">`Value`</ph> and finally click <ph id="8">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">STEP 3: Betweenness Centrality - After Flood <bpt id="1">&lt;a id="step-3-betweenness-centrality-after-flood"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 3: Betweenness Centrality - After Flood <bpt id="1">&lt;a id="step-3-betweenness-centrality-after-flood"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">In a next step, we want to carry out the same analysis after the flood event in order to determine the impact of the flood on the infrastructure in Heidelberg. To do so, we first have to delete the part of the <ph id="1">`highways`</ph> layer that is flooded.</source>
+<target xml:lang="fr">In a next step, we want to carry out the same analysis after the flood event in order to determine the impact of the flood on the infrastructure in Heidelberg. To do so, we first have to delete the part of the <ph id="1">`highways`</ph> layer that is flooded.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept> and search for <bpt id="2">**</bpt>Difference<ept id="2">**</ept>. Select the <ph id="3">`Dissolved`</ph> layer as the Input Layer and the <ph id="4">`flood_area`</ph> layer as the Overlay Layer. Leave all other settings at default. After the calculation you receive a new LineString layer called <ph id="5">`Difference`</ph>.</source>
+<target xml:lang="fr">Open the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept> and search for <bpt id="2">**</bpt>Difference<ept id="2">**</ept>. Select the <ph id="3">`Dissolved`</ph> layer as the Input Layer and the <ph id="4">`flood_area`</ph> layer as the Overlay Layer. Leave all other settings at default. After the calculation you receive a new LineString layer called <ph id="5">`Difference`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Repeat the analysis from Step 2 to determine the betweenness centrality of the <ph id="1">`Difference`</ph> Layer.</source>
+<target xml:lang="fr">Repeat the analysis from Step 2 to determine the betweenness centrality of the <ph id="1">`Difference`</ph> Layer.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

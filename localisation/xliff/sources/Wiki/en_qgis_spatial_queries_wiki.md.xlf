@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_spatial_queries_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Spatial Queries <bpt id="1">&lt;a id="spatial-queries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial Queries <bpt id="1">&lt;a id="spatial-queries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Manual selection <bpt id="1">&lt;a id="manual-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Manual selection <bpt id="1">&lt;a id="manual-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In the toolbar, select the <bpt id="1">![</bpt><ept id="1">](/fig/selection_toolbar_feature_selection.png)</ept> <ph id="2">`Select Features`</ph> tool.</source>
+<target xml:lang="fr">In the toolbar, select the <bpt id="1">![</bpt><ept id="1">](/fig/selection_toolbar_feature_selection.png)</ept> <ph id="2">`Select Features`</ph> tool.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Select features individually by clicking on a feature.</source>
+<target xml:lang="fr">Select features individually by clicking on a feature.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">To select several features, you can press and hold <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> (<bpt id="2">&lt;kbd></bpt>Cmd<ept id="2">&lt;/kbd></ept> on MacOS) and select one feature after the other.</source>
+<target xml:lang="fr">To select several features, you can press and hold <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> (<bpt id="2">&lt;kbd></bpt>Cmd<ept id="2">&lt;/kbd></ept> on MacOS) and select one feature after the other.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Selected features will be highlighted in bright yellow.</source>
+<target xml:lang="fr">Selected features will be highlighted in bright yellow.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">If you open the <bpt id="1">[</bpt>attribute table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html)</ept>, the selected feature will appear in blue.</source>
+<target xml:lang="fr">If you open the <bpt id="1">[</bpt>attribute table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html)</ept>, the selected feature will appear in blue.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Manually select countries
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Manually select countries
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Select by Location <bpt id="1">&lt;a id="select-by-location"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Select by Location <bpt id="1">&lt;a id="select-by-location"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">QGIS lets you select features based on their location using the tool <ph id="1">`Select by Location`</ph>.</source>
+<target xml:lang="fr">QGIS lets you select features based on their location using the tool <ph id="1">`Select by Location`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The tool uses spatial queries to select features. These look at the spatial relations between a set of features.</source>
+<target xml:lang="fr">The tool uses spatial queries to select features. These look at the spatial relations between a set of features.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">For example two features can intersect, or another feature is fully contained within another, or two features do not touch each other (disjoint).</source>
+<target xml:lang="fr">For example two features can intersect, or another feature is fully contained within another, or two features do not touch each other (disjoint).</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">QGIS uses the following spatial relations: Intersect, Contain, Disjoint, Equal, Touch, Overlap, Are Within, Cross.</source>
+<target xml:lang="fr">QGIS uses the following spatial relations: Intersect, Contain, Disjoint, Equal, Touch, Overlap, Are Within, Cross.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Check out the <bpt id="1">[</bpt>QGIS documentation on spatial relations<ept id="1">](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorselection.html#exploring-spatial-relations)</ept> to learn the differences between each spatial relation.</source>
+<target xml:lang="fr">Check out the <bpt id="1">[</bpt>QGIS documentation on spatial relations<ept id="1">](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorselection.html#exploring-spatial-relations)</ept> to learn the differences between each spatial relation.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Select all cities in China (<ph id="2">`intersect`</ph>)
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Select all cities in China (<ph id="2">`intersect`</ph>)
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Select all neighboring countries of China (<ph id="2">`touch`</ph>)
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Select all neighboring countries of China (<ph id="2">`touch`</ph>)
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Export Selection <bpt id="1">&lt;a id="export-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Export Selection <bpt id="1">&lt;a id="export-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Once selected, you can further manipulate the features by, for example, exporting them to a new layer:</source>
+<target xml:lang="fr">Once selected, you can further manipulate the features by, for example, exporting them to a new layer:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer with the selected features → <ph id="2">`Export`</ph> → <ph id="3">`Save selected features as..`</ph></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer with the selected features → <ph id="2">`Export`</ph> → <ph id="3">`Save selected features as..`</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

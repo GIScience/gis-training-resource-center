@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/md_building_blocks.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Markdown building blocks for the platform</source>
+<target xml:lang="fr">Markdown building blocks for the platform</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This page is a collection of syntaxes for the different building blocks used in the jupyterbook for standard markdown, markdown Myst and Sphynx design.</source>
+<target xml:lang="fr">This page is a collection of syntaxes for the different building blocks used in the jupyterbook for standard markdown, markdown Myst and Sphynx design.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Websites with information</source>
+<target xml:lang="fr">Websites with information</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://developer.mozilla.org/en-US/docs/Web/CSS/display</ph></source>
+<target xml:lang="fr"><ph id="1">https://developer.mozilla.org/en-US/docs/Web/CSS/display</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mystmd.org/guide/figures</ph></source>
+<target xml:lang="fr"><ph id="1">https://mystmd.org/guide/figures</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://jupyterbook.org/en/stable/advanced/html.html</ph></source>
+<target xml:lang="fr"><ph id="1">https://jupyterbook.org/en/stable/advanced/html.html</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://docs.readthedocs.com/platform/stable/addons.html?utm_content=flyout&amp;utm_source=myst-parser</ph></source>
+<target xml:lang="fr"><ph id="1">https://docs.readthedocs.com/platform/stable/addons.html?utm_content=flyout&amp;utm_source=myst-parser</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Headers</source>
+<target xml:lang="fr">Headers</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Here are the different header blocks used in the chapters at the beginning of pages.</source>
+<target xml:lang="fr">Here are the different header blocks used in the chapters at the beginning of pages.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Exercises Headers:</source>
+<target xml:lang="fr">Exercises Headers:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">OR</source>
+<target xml:lang="fr">OR</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;2em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">:::{grid-item-card}</ph>
+<ph id="8">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="9">:link: https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_module_2_exercises.html</ph>
+<ph id="10">{octicon}`undo;2em;sd-text-danger`</ph>
+<ph id="11">:::</ph>
+<ph id="12">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;2em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">:::{grid-item-card}</ph>
+<ph id="8">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="9">:link: https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_module_2_exercises.html</ph>
+<ph id="10">{octicon}`undo;2em;sd-text-danger`</ph>
+<ph id="11">:::</ph>
+<ph id="12">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Module Chapter Headers:</source>
+<target xml:lang="fr">Module Chapter Headers:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Article info:<ept id="2">](https://sphinx-design.readthedocs.io/en/pydata-theme/additional.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Article info:<ept id="2">](https://sphinx-design.readthedocs.io/en/pydata-theme/additional.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">block displaying some characteristics of the page</source>
+<target xml:lang="fr">block displaying some characteristics of the page</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Syntax</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Syntax</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Real World Scenarios</source>
+<target xml:lang="fr">Real World Scenarios</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic} </ph>This is an optional topic title
+<ph id="2">:header: test</ph>
+This is an topic, with standalone ideas.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{topic} </ph>This is an optional topic title
+<ph id="2">:header: test</ph>
+This is an topic, with standalone ideas.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">(my-paragraph)=
+Test test test!</source>
+<target xml:lang="fr">(my-paragraph)=
+Test test test!</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Please see <bpt id="1">[</bpt>me<ept id="1">](#my-paragraph)</ept></source>
+<target xml:lang="fr">Please see <bpt id="1">[</bpt>me<ept id="1">](#my-paragraph)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

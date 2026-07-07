@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_geodata_types_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Types of Geodata <bpt id="1">&lt;a id="types-of-geodata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Types of Geodata <bpt id="1">&lt;a id="types-of-geodata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Vector data</source>
+<target xml:lang="fr">Vector data</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Raster data</source>
+<target xml:lang="fr">Raster data</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Non-spatial data transformed in geodata</source>
+<target xml:lang="fr">Non-spatial data transformed in geodata</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Vector data <bpt id="1">&lt;a id="vector-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vector data <bpt id="1">&lt;a id="vector-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Vector data can have the following data formats:</source>
+<target xml:lang="fr">Vector data can have the following data formats:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Filename extension</source>
+<target xml:lang="fr">Filename extension</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.shp`</ph></source>
+<target xml:lang="fr"><ph id="1">`.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Shapefile</source>
+<target xml:lang="fr">Shapefile</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Outdated but still widely used geodataformat. Can only contain one dataset. A shapefile <bpt id="1">**</bpt>must include<ept id="1">**</ept> these files: <ph id="2">`.shp`</ph>, <ph id="3">`.shx`</ph>, and <ph id="4">`.dbf`</ph>. It can also contain more files such as:  <ph id="5">`.prj`</ph> , <ph id="6">`.sbn`</ph>, <ph id="7">`.sbx`</ph>, <ph id="8">`.cpg`</ph>, <ph id="9">`.qix`</ph></source>
+<target xml:lang="fr">Outdated but still widely used geodataformat. Can only contain one dataset. A shapefile <bpt id="1">**</bpt>must include<ept id="1">**</ept> these files: <ph id="2">`.shp`</ph>, <ph id="3">`.shx`</ph>, and <ph id="4">`.dbf`</ph>. It can also contain more files such as:  <ph id="5">`.prj`</ph> , <ph id="6">`.sbn`</ph>, <ph id="7">`.sbx`</ph>, <ph id="8">`.cpg`</ph>, <ph id="9">`.qix`</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">GeoPackage</source>
+<target xml:lang="fr">GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and not spatial data like tables)</source>
+<target xml:lang="fr">Very versatile geodata format and the new standard for geodata. Can contain multiple datafiles (vector, raster and not spatial data like tables)</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.kml`</ph></source>
+<target xml:lang="fr"><ph id="1">`.kml`</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Keyhole Markup Language</source>
+<target xml:lang="fr">Keyhole Markup Language</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Geodata format for use with <bpt id="1">[</bpt>Google Earth<ept id="1">](https://earth.google.com/web/)</ept></source>
+<target xml:lang="fr">Geodata format for use with <bpt id="1">[</bpt>Google Earth<ept id="1">](https://earth.google.com/web/)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.gpx`</ph></source>
+<target xml:lang="fr"><ph id="1">`.gpx`</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">GPS Exchange Format</source>
+<target xml:lang="fr">GPS Exchange Format</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Geodata format for the exchange of coordinates. For example for waypoints of tracks.</source>
+<target xml:lang="fr">Geodata format for the exchange of coordinates. For example for waypoints of tracks.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.geojson`</ph></source>
+<target xml:lang="fr"><ph id="1">`.geojson`</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">GeoJSON</source>
+<target xml:lang="fr">GeoJSON</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Similar to shapefiles, but stores all information in a single file.</source>
+<target xml:lang="fr">Similar to shapefiles, but stores all information in a single file.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Raster data <bpt id="1">&lt;a id="raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Raster data <bpt id="1">&lt;a id="raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Raster data can have the following data formats:
+| Filename extension  | Name                  | Description                                                                                                                                                          |
+|---------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ph id="1">`.tif`</ph>/<ph id="2">`.tiff`</ph>/<ph id="3">`.geotiff`</ph> | Tag Image File Format | Common raster and image data format. Does not necessarily have georeferenced information. If a .tif file has georeferenced information it is referred to as GeoTIFF. |
+| <ph id="4">`.nc`</ph>                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets                                           |
+| <ph id="5">`.asc`</ph>                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |</source>
+<target xml:lang="fr">Raster data can have the following data formats:
+| Filename extension  | Name                  | Description                                                                                                                                                          |
+|---------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ph id="1">`.tif`</ph>/<ph id="2">`.tiff`</ph>/<ph id="3">`.geotiff`</ph> | Tag Image File Format | Common raster and image data format. Does not necessarily have georeferenced information. If a .tif file has georeferenced information it is referred to as GeoTIFF. |
+| <ph id="4">`.nc`</ph>                 | netCDF                | Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets                                           |
+| <ph id="5">`.asc`</ph>                | Esri ASCII Grid files | Old simple raster file format, always with georeferenced information                                                                                                |</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Text data <bpt id="1">&lt;a id="text-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Text data <bpt id="1">&lt;a id="text-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Filename extension</source>
+<target xml:lang="fr">Filename extension</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.xls`</ph></source>
+<target xml:lang="fr"><ph id="1">`.xls`</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">EXCEL</source>
+<target xml:lang="fr">EXCEL</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Data format used for EXCEL. EXCEL is a widely used spreadsheet program.</source>
+<target xml:lang="fr">Data format used for EXCEL. EXCEL is a widely used spreadsheet program.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.csv`</ph></source>
+<target xml:lang="fr"><ph id="1">`.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">comma-separated values</source>
+<target xml:lang="fr">comma-separated values</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Very common data format which separates data with commas or other delimiters.</source>
+<target xml:lang="fr">Very common data format which separates data with commas or other delimiters.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Good practices <bpt id="1">&lt;a id="good-practices"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Good practices <bpt id="1">&lt;a id="good-practices"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">The video below gives a good overview of geodata formats and gives tips on file naming and other good practices.</source>
+<target xml:lang="fr">The video below gives a good overview of geodata formats and gives tips on file naming and other good practices.</target>
+</trans-unit>
+<group id="sd1_ssf11" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf11_tu2" resname="sd1_1" restype="x-title" xml:space="preserve">
+<source xml:lang="en">YouTube video player</source>
+<target xml:lang="fr">YouTube video player</target>
+</trans-unit>
+<trans-unit id="sd1_sf11_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kggwFZHXCl4?si=i2lLEo0u0wGdB759" [#$sd1_sf11_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kggwFZHXCl4?si=i2lLEo0u0wGdB759" [#$sd1_sf11_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+</body>
+</file>
+</xliff>
