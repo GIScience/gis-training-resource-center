@@ -21,6 +21,11 @@ on:
 permissions:
   contents: write
 
+env:
+  LANG: C.UTF-8
+  LC_ALL: C.UTF-8
+  JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF-8"
+
 jobs:
   upload-sources:
     runs-on: ubuntu-latest

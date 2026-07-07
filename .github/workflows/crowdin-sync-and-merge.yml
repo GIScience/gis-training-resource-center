@@ -22,6 +22,11 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  LANG: C.UTF-8
+  LC_ALL: C.UTF-8
+  JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF-8"
+
 jobs:
   sync-and-merge:
     runs-on: ubuntu-latest
