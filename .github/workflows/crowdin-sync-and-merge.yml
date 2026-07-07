@@ -316,7 +316,11 @@ jobs:
 
       - name: Remove temporary XLIFF files
         run: |
-          rm -rf localisation/xliff
+          if [ -d localisation/xliff ]; then
+            sudo chown -R "$USER:$USER" localisation/xliff || true
+            chmod -R u+w localisation/xliff || true
+            rm -rf localisation/xliff
+          fi
 
       - name: Remove temporary Okapi ZIP
         run: |
