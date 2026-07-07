@@ -270,7 +270,9 @@ jobs:
               -m "$work_xlf" \
               -fc "$CONFIG" \
               -sl "$SOURCE_LANG" \
-              -tl "$LANG"; then
+              -tl "$LANG" \
+              -ie UTF-8 \
+              -oe UTF-8; then
 
               echo "FAILED: Tikal could not merge $xlf_file against $source_md." | tee -a "$FAILED_MERGES"
               echo "This usually means the translated XLIFF no longer matches the current Markdown source." | tee -a "$FAILED_MERGES"
