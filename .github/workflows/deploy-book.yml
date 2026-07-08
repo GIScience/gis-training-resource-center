@@ -33,6 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           set -euo pipefail
+
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
@@ -43,51 +44,59 @@ jobs:
         run: |
           set -euo pipefail
 
+          echo "Checking English book files..."
           test -f content/en/_config.yml
           test -f content/en/_toc.yml
 
-          test -f content/es/_config.yml
-          test -f content/es/_toc.yml
+          echo "Checking Spanish book files..."
+          test -f content/es/es_config.yml
+          test -f content/es/es_toc.yml
 
-          test -f content/fr/_config.yml
-          test -f content/fr/_toc.yml
+          echo "Checking French book files..."
+          test -f content/fr/fr_config.yml
+          test -f content/fr/fr_toc.yml
 
-          echo "Language book config files found."
+          echo "Language book config and TOC files found."
 
       - name: Build English book
         run: |
           set -euo pipefail
-          jupyter-book build ./content/en --path-output english
+
+          jupyter-book build ./content/en \
+            --path-output english
 
       - name: Build Spanish book
         run: |
           set -euo pipefail
-          jupyter-book build ./content/es --path-output spanish
+
+          jupyter-book build ./content/es \
+            --config ./content/es/es_config.yml \
+            --toc ./content/es/es_toc.yml \
+            --path-output spanish
 
       - name: Build French book
         run: |
           set -euo pipefail
-          jupyter-book build ./content/fr --path-output french
+
+          jupyter-book build ./content/fr \
+            --config ./content/fr/fr_config.yml \
+            --toc ./content/fr/fr_toc.yml \
+            --path-output french
 
       - name: Combine language builds into one Pages site
         run: |
           set -euo pipefail
 
           rm -rf _site
+
           mkdir -p _site/en
           mkdir -p _site/es
           mkdir -p _site/fr
 
-          # English under /en/.
           rsync -a --delete english/_build/html/ _site/en/
-
-          # Spanish under /es/.
           rsync -a --delete spanish/_build/html/ _site/es/
-
-          # French under /fr/.
           rsync -a --delete french/_build/html/ _site/fr/
 
-          # Redirect root to English.
           cat > _site/index.html <<'HTML'
           <!doctype html>
           <html lang="en">
@@ -103,7 +112,6 @@ jobs:
           </html>
           HTML
 
-          # Ensure GitHub Pages does not process the generated site with Jekyll.
           touch _site/.nojekyll
 
           echo "Created combined GitHub Pages site:"
@@ -111,6 +119,7 @@ jobs:
           echo "  Spanish: /es/"
           echo "  French:  /fr/"
           echo ""
+
           find _site -maxdepth 3 -type f | sort | head -n 100
 
       - name: Upload GitHub Pages artifact
