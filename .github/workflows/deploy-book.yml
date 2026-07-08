@@ -118,12 +118,32 @@ jobs:
           </html>
           HTML
 
+          # Redirect old English intro URL:
+          # /content/intro.html -> /en/intro.html
+          mkdir -p _site/content
+
+          cat > _site/content/intro.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta http-equiv="refresh" content="0; url=../en/intro.html">
+              <title>Redirecting to English introduction</title>
+              <link rel="canonical" href="../en/intro.html">
+            </head>
+            <body>
+              <p>Redirecting to <a href="../en/intro.html">the English introduction page</a>.</p>
+            </body>
+          </html>
+          HTML
+
           touch _site/.nojekyll
 
           echo "Created combined GitHub Pages site:"
           echo "  English: /en/"
           echo "  Spanish: /es/"
           echo "  French:  /fr/"
+          echo "  Redirect: /content/intro.html -> /en/intro.html"
           echo ""
 
           find _site -maxdepth 3 -type f | sort > /tmp/site-files.txt
