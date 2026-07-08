@@ -62,27 +62,32 @@ jobs:
         run: |
           set -euo pipefail
 
-          jupyter-book build ./content/en \
-            --path-output english
+          cd content/en
+
+          jupyter-book build . \
+            --path-output ../../english
 
       - name: Build Spanish book
         run: |
           set -euo pipefail
 
-          jupyter-book build ./content/es \
-            --config ./content/es/es_config.yml \
+          cd content/es
+
+          jupyter-book build . \
+            --config es_config.yml \
             --toc es_toc.yml \
-            --path-output spanish
+            --path-output ../../spanish
 
       - name: Build French book
         run: |
           set -euo pipefail
 
-          jupyter-book build ./content/fr \
-            --config ./content/fr/fr_config.yml \
-            --toc fr_toc.yml \
-            --path-output french
+          cd content/fr
 
+          jupyter-book build . \
+            --config fr_config.yml \
+            --toc fr_toc.yml \
+            --path-output ../../french
       - name: Combine language builds into one Pages site
         run: |
           set -euo pipefail
