@@ -4,7 +4,7 @@
 title: Centro de Recursos de Formación GIS
 author: HeiGIT gGmbH
 copyright: HeiGIT gGmbH
-logo: IFRC_Logo_Horizontal_RGB.svg
+logo: ../../IFRC_Logo_Horizontal_RGB.svg
 
 # Force re-execution of notebooks on each build.
 execute:
