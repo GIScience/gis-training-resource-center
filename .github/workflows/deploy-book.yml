@@ -57,52 +57,59 @@ jobs:
       - name: Build English book
         run: |
           set -euo pipefail
-
           jupyter-book build ./content/en --path-output english
-
-          echo "English book built successfully."
 
       - name: Build Spanish book
         run: |
           set -euo pipefail
-
           jupyter-book build ./content/es --path-output spanish
-
-          echo "Spanish book built successfully."
 
       - name: Build French book
         run: |
           set -euo pipefail
-
           jupyter-book build ./content/fr --path-output french
-
-          echo "French book built successfully."
 
       - name: Combine language builds into one Pages site
         run: |
           set -euo pipefail
 
           rm -rf _site
-          mkdir -p _site
-          mkdir -p _site/spanish
-          mkdir -p _site/french
+          mkdir -p _site/en
+          mkdir -p _site/es
+          mkdir -p _site/fr
 
-          # English at the site root.
-          rsync -a --delete english/_build/html/ _site/
+          # English under /en/.
+          rsync -a --delete english/_build/html/ _site/en/
 
-          # Spanish under /spanish/.
-          rsync -a --delete spanish/_build/html/ _site/spanish/
+          # Spanish under /es/.
+          rsync -a --delete spanish/_build/html/ _site/es/
 
-          # French under /french/.
-          rsync -a --delete french/_build/html/ _site/french/
+          # French under /fr/.
+          rsync -a --delete french/_build/html/ _site/fr/
+
+          # Redirect root to English.
+          cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta http-equiv="refresh" content="0; url=en/">
+              <title>GIS Training Resource Center</title>
+              <link rel="canonical" href="en/">
+            </head>
+            <body>
+              <p>Redirecting to <a href="en/">English version</a>.</p>
+            </body>
+          </html>
+          HTML
 
           # Ensure GitHub Pages does not process the generated site with Jekyll.
           touch _site/.nojekyll
 
           echo "Created combined GitHub Pages site:"
-          echo "  English: /"
-          echo "  Spanish: /spanish/"
-          echo "  French:  /french/"
+          echo "  English: /en/"
+          echo "  Spanish: /es/"
+          echo "  French:  /fr/"
           echo ""
           find _site -maxdepth 3 -type f | sort | head -n 100
 
