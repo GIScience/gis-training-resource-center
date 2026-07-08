@@ -88,6 +88,7 @@ jobs:
             --config fr_config.yml \
             --toc fr_toc.yml \
             --path-output ../../french
+
       - name: Combine language builds into one Pages site
         run: |
           set -euo pipefail
@@ -125,7 +126,8 @@ jobs:
           echo "  French:  /fr/"
           echo ""
 
-          find _site -maxdepth 3 -type f | sort | head -n 100
+          find _site -maxdepth 3 -type f | sort > /tmp/site-files.txt
+          head -n 100 /tmp/site-files.txt
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
