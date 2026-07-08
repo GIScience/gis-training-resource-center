@@ -2,7 +2,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,23 +18,23 @@ The first module is aimed to familiarise beginners with the concept of geographi
 
 *   - __Chapter__ 
     - __Competences & Objectives__
-*   - __[Chapter 1: What is GIS?](/content/Module_1/en_qgis_theory)__
+*   - __[Chapter 1: What is GIS?](Module_1/en_qgis_theory)__
     - __At the end of this chapter, you should:__ 
         - Understand the concept of geographic information systems (GIS)
         - Understand the use of GIS
         - Know what spatial analysis and cartography means
         - Know the different types of maps used in humanitarian work
         - Have a basic understanding of geodata
-*   - __[Chapter 2: Setting up for the Training](/content/Module_1/en_qgis_installation)__
+*   - __[Chapter 2: Setting up for the Training](Module_1/en_qgis_installation)__
     - __At the end of this chapter, you should:__
         - Have a folder structure for the training
         - Know how to install QGIS
-*   - __[Chapter 3: Getting started with QGIS](/content/Module_1/en_qgis_start)__
+*   - __[Chapter 3: Getting started with QGIS](Module_1/en_qgis_start)__
     - __At the end of this chapter, you should:__ 
         - Know what you can do with QGIS
         - Know how to create, save, and open QGIS-projects
         - Understand the QGIS-interface and its components
-*   -  __[Exercises for Module 1](/content/Module_1/en_qgis_module_1_exercises)__
+*   -  __[Exercises for Module 1](Module_1/en_qgis_module_1_exercises)__
     - Here you can find a list of exercises touching upon the content of module 1.
 
 :::
