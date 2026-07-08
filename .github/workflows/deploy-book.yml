@@ -71,7 +71,7 @@ jobs:
 
           jupyter-book build ./content/es \
             --config ./content/es/es_config.yml \
-            --toc ./content/es/es_toc.yml \
+            --toc es_toc.yml \
             --path-output spanish
 
       - name: Build French book
@@ -80,7 +80,7 @@ jobs:
 
           jupyter-book build ./content/fr \
             --config ./content/fr/fr_config.yml \
-            --toc ./content/fr/fr_toc.yml \
+            --toc fr_toc.yml \
             --path-output french
 
       - name: Combine language builds into one Pages site
