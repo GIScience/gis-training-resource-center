@@ -155,7 +155,7 @@ __QuickOSM Plugin__
 
 :::{tip}
 
-It is by default possible to add the OSM base map to your project.  Click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
+It is by default possible to add the OSM base map to your project.  Click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add` ([Wiki Video](../Wiki/en_qgis_basemaps_wiki.md#navigation-on-basemap-with-osm-place-search-plugin)). 
 
 :::
 
@@ -214,8 +214,8 @@ Running the QuickOSM plugin.
 
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](../../../fig/plus_quickosm.png). Be careful choosing the right logical operator 
-`AND` or `OR`. If you are unsure check the page [non-spatial queries](/content/Wiki/en_qgis_non_spatial_queries_wiki) 
-on the wiki. There is an example of this in the Module 2 [OSM exercise](https://giscience.github.io/gis-training-resource-center/english/content/en/module_2/en_qgis_data_sources_ex2.html#task-quickosm)
+`AND` or `OR`. If you are unsure check the page [non-spatial queries](../Wiki/en_qgis_non_spatial_queries_wiki) 
+on the wiki. There is an example of this in the Module 2 [OSM exercise](en_qgis_data_sources_ex2.html#task-quickosm)
 
 :::
 
