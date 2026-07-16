@@ -25,7 +25,7 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 :gutter: 2
 
 :::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/en/Trainers_corner/en_TOT_intro.html)__ 
-:link: ../Trainers_corner/en_TOT_intro 
+:link: /Trainers_corner/en_TOT_intro
 
 There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/en/Trainers_corner/en_TOT_intro.html) who want to use the platform.
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
@@ -34,7 +34,7 @@ Nevertheless, every component of the training material is designed to be utilize
 :::
 
 :::{grid-item-card} __[Start learning](https://giscience.github.io/gis-training-resource-center/en/Module_1/en_module_1_overview.html)__ 
-:link: ../Module_1/en_module_1_overview
+:link: /Module_1/en_module_1_overview
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
 This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
