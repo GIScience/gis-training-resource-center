@@ -58,7 +58,7 @@ name: en_project_template_BRC
 
 - Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface. 
 - Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
-On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](../content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
+On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](../Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
 
 ```{figure} ../../../fig/en_QGIS_GUI.png
 ---
@@ -69,7 +69,7 @@ name: QGIS User Interface
 QGIS User Interface.
 ```
 
-3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
+3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/en/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
 
 :::{tip}
 

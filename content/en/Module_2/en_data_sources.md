@@ -117,7 +117,7 @@ There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QG
 
 :::{Tip}
 
-If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_data_sources_ex4.html)__
+If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](en_qgis_data_sources_ex4)__
 
 :::
 

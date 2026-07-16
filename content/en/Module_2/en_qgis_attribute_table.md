@@ -8,14 +8,14 @@
 
 # Attribute Table <a id="attribute-table"></a>
 
-Each vector layer consists of geometric features (points, lines or polygons) and an __attribute table__ ({numref}`en_vector_data_overview`). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store __attributes__ of that feature. You can use the attribute table to search, sort, filter, edit and select data. 
+Each vector layer consists of geometric features (points, lines or polygons) and an __attribute table__ ({numref}`en_vector_data_overview_02`). The attribute table contains information on each feature in the layer. The information is stored in rows and columns in the attribute table. Each __row__ in the table represents a __feature__, while __columns__ store __attributes__ of that feature. You can use the attribute table to search, sort, filter, edit and select data. 
 
 
 :::{figure} ../../../fig/en_vector_data_overview.png
 ---
 width: 600px
 align: center
-name: en_vector_data_overview
+name: en_vector_data_overview_02
 ---
 Vector Data overview (Source: HeiGIT).
 :::
