@@ -86,7 +86,7 @@ Adding text to the print layout (Source: CartONG).
 
 If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.
 
-1. Click on the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool in the left toolbar.
+1. Click on the ![](../../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool in the left toolbar.
 2. Drag a rectangle on the canvas.
 3. In the __Item Properties__ tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a __Raster image__. Most image files are raster images.
 4. Select `Raster image` and click on `...` to choose the location of the image.
@@ -111,9 +111,9 @@ Before adding a legend, make sure that:
 - All your layers have an explicit name ("rivers", "primary roads",...).
 - You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.
 
-To add a legend, you can use the ![](../../fig/30.30.2_print_layout_add_legend.png) `Add legend`-button on the __left toolbar__.
+To add a legend, you can use the ![](../../../fig/30.30.2_print_layout_add_legend.png) `Add legend`-button on the __left toolbar__.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_legend.png
 ---
 width: 750px
 name: en_30.30.2_print_layout_add_legend
@@ -156,7 +156,7 @@ Sometimes the space on your map is not suited for a single vertical legend. In t
 
 Before adding a scale bar, select your main map and check in the __Item Properties__ panel that the `Scale` field has a __round number__ .
 
-:::{figure} ../../fig/en_30.30.2_print_layout_scale.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
 name: en_30.30.2_print_layout_scale
@@ -164,7 +164,7 @@ name: en_30.30.2_print_layout_scale
 Make sure that the scale is at a round number.
 :::
 
-To add a scale bar, you can use the ![](../../fig/30.30.2_print_layout_scale_bar.png)`Add scale bar`-button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions.
+To add a scale bar, you can use the ![](../../../fig/30.30.2_print_layout_scale_bar.png)`Add scale bar`-button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions.
 
 - Which Map __is related to the scale__.
 - __Unit system of the bar__ (metres, miles, degrees).
@@ -174,7 +174,7 @@ To add a scale bar, you can use the ![](../../fig/30.30.2_print_layout_scale_bar
 
 There are many other options to customize the scale bar (change the font, colours, etc.).
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
 name: en_30.30.2_print_layout_add_scale_bar
@@ -193,16 +193,16 @@ Adding an overview map in the corner of your map will help locate the area you a
 To create an overview map, you need to follow these steps:
 
 1. Make sure that you __lock the layers and layer styling__ for your main map.
-    - Navigate to the __item properties__ panel > `Lock layers` and `Lock styles for layers`.
+    - Navigate to the __item properties__ panel → `Lock layers` and `Lock styles for layers`.
 2. Prepare a __layer with national or subnational borders or important landmarks__ in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.
-3. __Insert the overview map__ into your print layout, by using the ![](../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` tool (in the bottom right corner, for example).
+3. __Insert the overview map__ into your print layout, by using the ![](../../../fig/30.30.2_print_layout_insert_map_icon.png)`Add Map` tool (in the bottom right corner, for example).
 4. __Lock the new map__ in the Item properties panel.
 5. Add a rectangle to display the extent of your main map.
-    1. Go to the __properties__ of your Main map > scroll down until you see __"Overviews"__.
+    1. Go to the __properties__ of your Main map → scroll down until you see __"Overviews"__.
     2. Add an Overview by clicking on the `+`-button.
     3. __Link the main map__ by selecting it in the `Map frame` option.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
 name: en_30.30.2_print_layout_overview_map_preparations
@@ -210,7 +210,7 @@ name: en_30.30.2_print_layout_overview_map_preparations
 An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.
 :::
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
 name: en_30.30.2_print_layout_add_overview_map
@@ -234,7 +234,7 @@ This method requires you to be sure that you are not going to modify the overvie
 
 Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file.
 
-1. In the toolbar above the canvas, click on the ![](../../fig/30.30.2_print_layout_export_pdf.png) `Export as PDF`-button.
+1. In the toolbar above the canvas, click on the ![](../../../fig/30.30.2_print_layout_export_pdf.png) `Export as PDF`-button.
 2. Give the new file a name and select the location you want to save it.
 3. Click on `Save`.
 4. A new window "PDF Export Options" will open. Here you can adjust the compression algorithm. For the best results, select the lossless image compression.
@@ -257,7 +257,7 @@ The individual layers, maps and images are not saved in the template. However, i
 ::::{tab-set}
 :::{tab-item} Saving a template
 
-1. Once you are satisfied with your map layout, click on the ![](../../fig/en_30.30.2_save_as_template.png) `Save as template`-button in the toolbar above the canvas to save it as a new template.
+1. Once you are satisfied with your map layout, click on the ![](..././../fig/en_30.30.2_save_as_template.png) `Save as template`-button in the toolbar above the canvas to save it as a new template.
 2. Choose a location where you want to save the template. Ideally, you should choose the template directory.
 3. Click `Save`.
 4. You can open the template by dragging it into a QGIS-project.
@@ -303,7 +303,7 @@ In some cases, it can be necessary to create multiple maps for different locatio
 
 The Atlas Function can be found in the __Print Layout Composer__ on the toolbar. 
 
-:::{figure} ../../fig/en_atlas_toolbar.png
+:::{figure} ../../../fig/en_atlas_toolbar.png
 ---
 name: en_atlas_toolbar
 width: 500 px
@@ -319,7 +319,7 @@ If you can't see the Atlas Tools, you must first activate the Atlas Toolbar unde
 
 An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:
 
-1. Click on the ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings`-button in the Atlas Toolbar.
+1. Click on the ![](../../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas Settings`-button in the Atlas Toolbar.
 2. In the new window, activate the `Generate an Atlas` option.
 3. Select the `Coverage Layer`. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (`ADM1`).
 4. Select the `Page Name`. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column `ADM1_REF`, which holds the names of the regions in English.
