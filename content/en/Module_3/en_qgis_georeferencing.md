@@ -37,7 +37,7 @@ name: en_georef_transformations
 Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)).
 :::
 
-In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html).
+In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/georeferencer.html#available-transformation-algorithms).
 
 
 ### How to Georeference in QGIS <a id="how-to-georeference-in-qgis"></a>
