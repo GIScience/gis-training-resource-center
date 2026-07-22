@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -49,7 +49,7 @@ Assigning the correct attribute value in the labeling options. QGIS needs to kno
 5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
 7. Click `Apply` and `OK`.
 
-:::{figure} ../../fig/en_30.30.2_setting_up_labels.png
+:::{figure} ../../../fig/en_30.30.2_setting_up_labels.png
 ---
 width: 600px
 name: en_30.30.2_setting_up_labels
@@ -92,9 +92,9 @@ The rules, or filters, are based on an expression. You can use the ![](../../fig
 #### Adding Rule-based Labels to a Layer <a id="adding-rule-based-labels-to-a-layer"></a>
 
 1. In the styling panel, click on the `Labels` tab underneath the Symbology tab.
-2. Select ![](/../fig/30.30.2_Icon_rule_based_labeling.png) `Rule-based Labeling`.
+2. Select ![](../../../fig/30.30.2_Icon_rule_based_labeling.png) `Rule-based Labeling`.
 3. Add a Rule by clicking on the `+`-button in the left corner of the styling panel. A new window will open in the styling panel. In this window, you will enter the rule (`Filter`) and customize the label font, size, and placement. Additionally, you can enter a description.
-4. Enter a Filter (red box in the figure below). The easiest way is to use the `Expression string builder` to the right of the Filter option. Click on the ![](/../fig/expression_string_builder_icon.png)-Symbol. A new panel will open.
+4. Enter a Filter (red box in the figure below). The easiest way is to use the `Expression string builder` to the right of the Filter option. Click on the ![](../../../fig/expression_string_builder_icon.png)-Symbol. A new panel will open.
 5. In the Expression String builder enter a rule. In the example in the video below, we want to only display settlements that are either national or regional capitals. This corresponds to the String `("CLASS" = 1 ) OR ("CLASS" = 2)`. We know this because we know our data and have looked at the attribute table beforehand.
 6. Click `OK`.
 7. Set the font and font size.
@@ -112,7 +112,7 @@ Below are some further considerations to keep in mind when using labels:
 
 - If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.
 
-:::{figure} ../../fig/good_labels_example.png
+:::{figure} ../../../fig/good_labels_example.png
 ---
 width: 400 px
 name: good_labels_example
@@ -128,11 +128,11 @@ A good example of label placement and font. Pay attention to the text colours an
 :::::{grid} 2
 ::::{card}
 
-:::{figure} ../../fig/labels_numerical_values_bad_example.png
+:::{figure} ../../../fig/labels_numerical_values_bad_example.png
 ---
 name: labels_numerical_values_bad_example
 ---
-Numerical Labels
+Numerical Labels for vector data
 :::
 
 ::::
@@ -143,7 +143,7 @@ Numerical Labels
 ---
 name: labels_graduated_symbology_example
 ---
-[Graduated Symbology](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#graduated-classification)
+[Graduated Symbology](../Module_3/en_qgis_data_classification.md#graduated-classification)
 :::
 
 ::::
@@ -154,7 +154,7 @@ name: labels_graduated_symbology_example
 
 - QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.
 
-:::{figure} ../../fig/label_text_buffer_example.png
+:::{figure} ../../../fig/label_text_buffer_example.png
 ---
 width: 500 px
 name: label_text_buffer_example
@@ -164,7 +164,7 @@ A label without a text buffer (left) and a label with a white text buffer (right
 
 :::{note}
 QGIS renders labels automatically.
-Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__.
+Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the __Label tab__, or use the ![](../../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Move a Label, Diagram, or Callout`-tool in __Label toolbar__.
 
 By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option. 
 
@@ -203,7 +203,7 @@ You can also read further in the article "[Labeling and text hierarchy in cartog
 :::{dropdown} Answer
 - __Rule‑based labeling__ lets you label selectively (only some features, e.g. only major roads, only capital cities, or features above a certain size), avoiding clutter.
 - It also lets you vary label styling per rule (different font size, color, style) depending on the feature’s attribute or scale.
-- __Example scenario__: Suppose you have a map of cities, and you want to label only large cities (population > 100,000) with their names in big bold font, medium cities in smaller font, and omit very small towns to reduce crowding. You can make rules like "population" > 100000, 10000 < "population" <= 100000, etc. Each rule labels only those features, styled appropriately. This avoids labeling every little town which could overlap and clutter.
+- __Example scenario__: Suppose you have a map of cities, and you want to label only large cities (population > 100,000) with their names in big bold font, medium cities in smaller font, and omit very small towns to reduce crowding. You can make rules like `"population" > 100000, 10000 < "population" <= 100000`, etc. Each rule labels only those features, styled appropriately. This avoids labeling every little town which could overlap and clutter.
 :::
 
 4. __Why is it generally discouraged to label numerical (continuous) values directly as text labels?__
