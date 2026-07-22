@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -72,7 +72,7 @@ This exercise makes use of a plugin which is not installed by default: `OSM Plac
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
