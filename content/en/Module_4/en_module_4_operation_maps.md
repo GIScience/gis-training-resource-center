@@ -585,7 +585,7 @@ __Ordering the layers__
 name: en_30.30.2_changing_layer_style_1
 height: 400px 
 ---
-Order the layers and navigate to the styling panel of the topmost layer
+Order the layers and navigate to the styling panel of the topmost layer.
 :::
 
 3. Change the symbology of the `Admin0` layer by opening the styling panel and navigating to the Symbology tab. 
@@ -705,7 +705,7 @@ __Adding Single Labels to a Layer__
 width: 600px
 name: en_30.30.2_setting_up_labels
 ---
-Setting up labels in QGIS 30.30.2
+Setting up labels in QGIS 30.30.2.
 :::
 
 :::{dropdown} Video: How to add single labels
@@ -756,7 +756,7 @@ __Open the Print Layout__
 width: 700px
 name: Create Print Layout
 ---
-Create a new Print Layout
+Creating a new Print Layout in QGIS. 
 :::
 
 __Map Composition__
@@ -1032,7 +1032,7 @@ With your newly generated infection trend field you are now able to display the 
   - As Value, choose `infection trend` to display the calculated trend direction.
   - Click "Classify" to execute the classification. Choose coulours of your liking for the values "decrease" and "increase" and "no change" (e.g. green, red and grey) by double clicking on the coloured squares in the panel displaying the classes.
   - As classification mode choose **"Equal Interval"** next to "Mode".
-  - For nicer visuals you can optionally also slightly reduce the opacity of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel
+  - For nicer visuals you can optionally also slightly reduce the opacity of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel.
 
 
 ::::
@@ -1049,7 +1049,7 @@ name: infection map example
 :::
 
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki.md).
 
 
 

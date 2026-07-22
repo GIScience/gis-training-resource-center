@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -29,7 +29,7 @@ The exercise is split into __three tasks__:
 __Larkana Flood Response Exercise Track:__
 ^^^
 
-This exercise is part of the [Larkana Flood Response Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_larkana_flood_response.html). 
+This exercise is part of the [Larkana Flood Response Exercise Track](../Exercise_tracks/en_larkana_flood_response.md). 
 
 However, the exercise __can__ be done without completing the previous exercises.
 :::
@@ -59,10 +59,10 @@ __Estimated time demand for the exercise:__
 __Relevant wiki articles:__
 ^^^
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_categorized_wiki.html)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki)
+* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki#add-geometries-to-a-layer)
 :::
 ::::
 
@@ -75,7 +75,7 @@ __Relevant wiki articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -130,7 +130,7 @@ Follow the steps below to install it.
 1. In the menu bar, click on `Plugins` → `Manage and Install Plugins…`
 2. Under `All`, search for “QuickMapServices” and click `Install Plugin`.
 
-For general plugin management in QGIS, see the [QGIS plugin installation guide](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html#installation-of-plugins).
+For general plugin management in QGIS, see the [QGIS plugin installation guide](../Wiki/en_qgis_plugins_wiki.md#installation-of-plugins).
 
 After installing the plugin, we can add basemaps:
 
@@ -140,10 +140,10 @@ After installing the plugin, we can add basemaps:
 4. Add a roads layer to improve orientation:  
    `Web` → `QuickMapServices` → `Google` → `Google Road`.
 
-5. In the [Layers Panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html), make sure the `Google Road` layer is above the satellite imagery.
+5. In the [Layers Panel](../Wiki/en_qgis_layer_concept_wiki), make sure the `Google Road` layer is above the satellite imagery.
 
 6. For easier navigation, make the satellite imagery transparent:
-   - Open the layer’s [Symbology tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+   - Open the layer’s [Symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel).
    - Adjust the global opacity.
 
 
@@ -166,13 +166,13 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitissation.html#creating-new-datasets) to digitise point and polygon information. 
+8. [Create a new point and a new polygon layer](../Module_3/en_qgis_digitissation.md#creating-new-datasets) to digitise point and polygon information. 
 
 :::{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 
 :::
 
-9. Find the locations from the table and create new features using the [digitisation toolbar](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitisation.html#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
+9. Find the locations from the table and create new features using the [digitisation toolbar](../Module_3/en_qgis_digitisation.md#digitisation-toolbars). Capture the information in the table and Use Google or another search engine in your browser, the base map, and the Lat Lon Tools plugin to locate the exact position. 
 
 10. Once you are done, make sure to save the edits to your layers by clicking on the ![](../../../fig/3.44_digitisation_save_edits.png) `Save Layer Edits`-button. 
 
