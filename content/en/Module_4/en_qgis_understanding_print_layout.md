@@ -1,14 +1,14 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
 
 # Understanding the Print Layout Composer <a id="understanding-the-print-layout-composer"></a>
 
-:::{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png
+:::{figure} ../../../fig/en_30.30.2_understanding_the_print_layout_composer.png
 ---
 name: en_30.30.2_understanding_the_print_layout_composer
 ---
@@ -26,7 +26,7 @@ The print layout manager also works with toolbars (on the left side of the scree
 
 First of all, you should always set the size of your map:
 
-- Right-click on the blank map > `Page Properties`.
+- Right-click on the blank map → `Page Properties`.
 - Choose __the size of your document__ (A4, A3, A2). A4 and A3 are the most commonly used sizes for maps.
 - Choose the orientation (Landscape or Portrait).
 
@@ -39,7 +39,7 @@ First of all, you should always set the size of your map:
 - To move within a map select ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Move item content`-button on the left toolbar.
 - To zoom in on the map, while using the ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Move item content` tool, you can __Press CTRL + scroll the mouse wheel__ (gently) or enter the scale manually in the item properties.
 
-:::{figure} ../../fig/en_30.30.2_adding_a_map.png
+:::{figure} ../../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
 name: en_30.30.2_adding_a_map
@@ -65,10 +65,10 @@ Adding a new map to the Print Layout (Source: CartONG).
 
 A title should describe the phenomenon represented on the map.
 
-- To add text (title, explanations), use the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool and draw a rectangle of the desired size.
+- To add text (title, explanations), use the ![](../../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool and draw a rectangle of the desired size.
 - In the __Item Properties__ panel (on the right of your screen) you can __enter your text__ and __change the font, style, colour, etc.__ (Remember to use the scroll bar in the window to see all the options).
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_text.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_text.png
 ---
 width: 750px
 name: en_30.30.2_print_layout_add_tex
