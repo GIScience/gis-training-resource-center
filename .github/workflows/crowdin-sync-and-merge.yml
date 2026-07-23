@@ -1,0 +1,358 @@
+name: Crowdin Sync and Merge XLIFF
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_language:
+        description: "Target language code to sync and merge"
+        required: true
+        default: "fr"
+        type: choice
+        options:
+          - fr
+          - es
+
+      base_branch:
+        description: "Branch to open the translation PR against"
+        required: true
+        default: "main"
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  LANG: C.UTF-8
+  LC_ALL: C.UTF-8
+  JAVA_TOOL_OPTIONS: "-Dfile.encoding=UTF-8"
+
+jobs:
+  sync-and-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Okapi / Tikal
+        run: |
+          set -euo pipefail
+
+          OKAPI_VERSION="1.48.0"
+          OKAPI_URL="https://okapiframework.org/binaries/main/${OKAPI_VERSION}/okapi-apps_gtk2-linux-x86_64_${OKAPI_VERSION}.zip"
+
+          mkdir -p "$HOME/tools/okapi"
+
+          echo "Downloading Okapi from:"
+          echo "$OKAPI_URL"
+
+          curl \
+            --fail \
+            --location \
+            --retry 5 \
+            --retry-delay 10 \
+            --connect-timeout 30 \
+            --user-agent "Mozilla/5.0 GitHub-Actions" \
+            --output okapi.zip \
+            "$OKAPI_URL"
+
+          echo "Downloaded file:"
+          ls -lh okapi.zip
+
+          echo "Testing ZIP integrity..."
+          unzip -t okapi.zip
+
+          unzip okapi.zip -d "$HOME/tools/okapi"
+
+          TIKAL_DIR="$(find "$HOME/tools/okapi" -name tikal.sh -exec dirname {} \; | head -n 1)"
+
+          if [ -z "$TIKAL_DIR" ]; then
+            echo "Could not find tikal.sh after extracting Okapi."
+            find "$HOME/tools/okapi" -maxdepth 4 -type f | sort
+            exit 1
+          fi
+
+          chmod +x "$TIKAL_DIR/tikal.sh"
+          echo "$TIKAL_DIR" >> "$GITHUB_PATH"
+
+          echo "Tikal installed at:"
+          echo "$TIKAL_DIR/tikal.sh"
+
+      - name: Verify Java and Tikal
+        run: |
+          java -version
+          tikal.sh -help
+
+      - name: Verify localisation files
+        run: |
+          test -f scripts/localisation/okapi_myst.sh
+          test -f scripts/localisation/okf_markdown@MyST.fprm
+          test -f crowdin.yml
+          ls -la scripts/localisation
+
+      - name: Prepare XLIFF source folder
+        run: |
+          rm -rf localisation/xliff/sources
+          mkdir -p localisation/xliff/sources
+
+      - name: Convert source Markdown files to XLIFF
+        run: |
+          bash scripts/localisation/okapi_myst.sh \
+            pre \
+            ./content \
+            ./scripts/localisation/okf_markdown@MyST.fprm \
+            "${{ inputs.target_language }}"
+
+      - name: Move generated source XLIFF files into Crowdin source folder
+        run: |
+          find ./content \
+            -type f \
+            -name "*.xlf" \
+            ! -path "./content/es/*" \
+            ! -path "./content/fr/*" \
+            -print0 \
+            | while IFS= read -r -d '' xlf_file; do
+                relative_path="${xlf_file#./content/}"
+                target_path="localisation/xliff/sources/${relative_path}"
+
+                mkdir -p "$(dirname "$target_path")"
+                mv "$xlf_file" "$target_path"
+
+                echo "Moved source XLIFF: $xlf_file -> $target_path"
+              done
+
+      - name: Show source XLIFF files
+        run: |
+          find localisation/xliff/sources -type f -name "*.xlf" -print
+
+      - name: Fail if no source XLIFF files were generated
+        run: |
+          if ! find localisation/xliff/sources -type f -name "*.xlf" | grep -q .; then
+            echo "No source XLIFF files were generated."
+            exit 1
+          fi
+
+      - name: Upload XLIFF sources to Crowdin
+        uses: crowdin/github-action@v2
+        with:
+          config: crowdin.yml
+          upload_sources: true
+          upload_translations: false
+          download_translations: false
+          upload_sources_args: "--delete-obsolete"
+
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Prepare translated XLIFF folder
+        run: |
+          rm -rf localisation/xliff/translations
+          mkdir -p localisation/xliff/translations
+
+      - name: Download translated XLIFF from Crowdin
+        uses: crowdin/github-action@v2
+        with:
+          config: crowdin.yml
+          upload_sources: false
+          upload_translations: false
+          download_translations: true
+          download_language: ${{ inputs.target_language }}
+          skip_untranslated_strings: false
+          skip_untranslated_files: false
+          export_only_approved: true
+          download_translations_args: "--verbose"
+
+          push_sources: false
+          push_translations: false
+          create_pull_request: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Show downloaded translated XLIFF files
+        run: |
+          find localisation/xliff/translations -type f -name "*.xlf" -print
+
+      - name: Stop if no translated XLIFF files were downloaded
+        run: |
+          if ! find localisation/xliff/translations -type f -name "*.xlf" | grep -q .; then
+            echo "No translated XLIFF files were downloaded from Crowdin."
+            echo "Possible causes:"
+            echo "- No approved translations exist for this language."
+            echo "- The Crowdin export path does not match crowdin.yml."
+            echo "- The selected target_language does not match the language code in Crowdin."
+            exit 1
+          fi
+
+      - name: Merge translated XLIFF and place Markdown into content language folder
+        run: |
+          set -euo pipefail
+
+          LANG="${{ inputs.target_language }}"
+          CONFIG="./scripts/localisation/okf_markdown@MyST.fprm"
+          SOURCE_LANG="en"
+
+          TRANSLATIONS_ROOT="localisation/xliff/translations/${LANG}"
+          MERGE_ROOT="localisation/xliff/merge"
+          TARGET_ROOT="content/${LANG}"
+          FAILED_MERGES="localisation/xliff/failed-merges.txt"
+
+          rm -rf "$MERGE_ROOT"
+          mkdir -p "$MERGE_ROOT"
+          mkdir -p "$TARGET_ROOT"
+          : > "$FAILED_MERGES"
+
+          if ! find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" | grep -q .; then
+            echo "No translated XLIFF files found in $TRANSLATIONS_ROOT."
+            exit 1
+          fi
+
+          while IFS= read -r -d '' xlf_file; do
+            xlf_name="$(basename "$xlf_file")"
+            md_name="${xlf_name%.xlf}"
+
+            echo "Preparing merge for translated XLIFF:"
+            echo "  XLIFF: $xlf_file"
+            echo "  Expected source Markdown filename: $md_name"
+
+            mapfile -d '' source_matches < <(
+              find content \
+                -type f \
+                -name "$md_name" \
+                ! -path "content/es/*" \
+                ! -path "content/fr/*" \
+                -print0
+            )
+
+            if [ "${#source_matches[@]}" -eq 0 ]; then
+              echo "FAILED: Could not find original Markdown source for $md_name under content/." | tee -a "$FAILED_MERGES"
+              continue
+            fi
+
+            if [ "${#source_matches[@]}" -gt 1 ]; then
+              echo "FAILED: Found multiple possible Markdown sources for $md_name:" | tee -a "$FAILED_MERGES"
+              printf '  %s\n' "${source_matches[@]}" | tee -a "$FAILED_MERGES"
+              echo "Because crowdin.yml currently downloads translations by original filename only, this is ambiguous." | tee -a "$FAILED_MERGES"
+              continue
+            fi
+
+            source_md="${source_matches[0]}"
+            relative_source_path="${source_md#content/}"
+            relative_source_dir="$(dirname "$relative_source_path")"
+
+            work_dir="$MERGE_ROOT/$relative_source_dir"
+            mkdir -p "$work_dir"
+
+            work_md="$work_dir/$md_name"
+            work_xlf="$work_dir/$xlf_name"
+
+            cp "$source_md" "$work_md"
+            cp "$xlf_file" "$work_xlf"
+
+            echo "Merging with Tikal:"
+            echo "  Source Markdown: $work_md"
+            echo "  Translated XLIFF: $work_xlf"
+
+            if ! tikal.sh \
+              -m "$work_xlf" \
+              -fc "$CONFIG" \
+              -sl "$SOURCE_LANG" \
+              -tl "$LANG" \
+              -ie UTF-8 \
+              -oe UTF-8; then
+
+              echo "FAILED: Tikal could not merge $xlf_file against $source_md." | tee -a "$FAILED_MERGES"
+              echo "This usually means the translated XLIFF no longer matches the current Markdown source." | tee -a "$FAILED_MERGES"
+              continue
+            fi
+
+            merged_md="${work_md%.md}.out.md"
+
+            if [ ! -f "$merged_md" ]; then
+              echo "FAILED: Tikal did not generate expected merged Markdown for $xlf_file." | tee -a "$FAILED_MERGES"
+              echo "Expected: $merged_md" | tee -a "$FAILED_MERGES"
+              continue
+            fi
+
+            target_md_name="${md_name/#en_/${LANG}_}"
+            target_path="$TARGET_ROOT/$relative_source_dir/$target_md_name"
+
+            mkdir -p "$(dirname "$target_path")"
+            mv "$merged_md" "$target_path"
+
+            echo "Created translated Markdown:"
+            echo "  $target_path"
+
+          done < <(find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" -print0)
+
+          echo ""
+          echo "Merge summary"
+          echo "============="
+
+          if [ -s "$FAILED_MERGES" ]; then
+            echo "Some translated XLIFF files could not be merged:"
+            cat "$FAILED_MERGES"
+          else
+            echo "All translated XLIFF files merged successfully."
+          fi
+
+          if ! find "$TARGET_ROOT" -type f -name "*.md" | grep -q .; then
+            echo "No translated Markdown files were generated in $TARGET_ROOT."
+            exit 1
+          fi
+
+      - name: Fail if no translated Markdown files were generated
+        run: |
+          if ! find content/${{ inputs.target_language }} -type f -name "*.md" | grep -q .; then
+            echo "No translated Markdown files were generated in content/${{ inputs.target_language }}."
+            exit 1
+          fi
+
+      - name: Remove temporary XLIFF files
+        run: |
+          if [ -d localisation/xliff ]; then
+            sudo chown -R "$USER:$USER" localisation/xliff || true
+            chmod -R u+w localisation/xliff || true
+            rm -rf localisation/xliff
+          fi
+
+      - name: Remove temporary Okapi ZIP
+        run: |
+          rm -f okapi.zip
+
+      - name: Create pull request with translated Markdown
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Add Crowdin translations for ${{ inputs.target_language }}"
+          branch: "l10n-crowdin-${{ inputs.target_language }}"
+          base: "${{ inputs.base_branch }}"
+          title: "Add Crowdin translations for ${{ inputs.target_language }}"
+          body: |
+            This PR adds translated Markdown files generated from Crowdin XLIFF.
+
+            Pipeline:
+            1. Convert source Markdown to XLIFF using Okapi/Tikal.
+            2. Upload generated XLIFF sources to Crowdin.
+            3. Delete obsolete Crowdin source files that no longer exist locally.
+            4. Download approved translated XLIFF from Crowdin.
+            5. Recreate the Tikal merge context by pairing translated XLIFF with the original Markdown source.
+            6. Merge XLIFF back to Markdown using Okapi/Tikal.
+            7. Move translated Markdown files into `content/${{ inputs.target_language }}/`.
+
+            Target language: `${{ inputs.target_language }}`
+          add-paths: |
+            content/${{ inputs.target_language }}/**

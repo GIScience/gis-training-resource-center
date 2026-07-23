@@ -1,0 +1,47 @@
+# Book settings
+# Spanish Jupyter Book configuration
+
+title: Centro de Recursos de Formación GIS
+author: HeiGIT gGmbH
+copyright: HeiGIT gGmbH
+logo: ../../IFRC_Logo_Horizontal_RGB.svg
+
+# Force re-execution of notebooks on each build.
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/GIScience/gis-training-resource-center
+  path_to_book: content/es
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  favicon: IFRC_LOGO_favicon.png
+  use_issues_button: true
+  use_repository_button: true
+  extra_footer: |
+      <script data-goatcounter="https://gtrc.goatcounter.com/count"
+      async src="//gc.zgo.at/count.js"></script>
+      <p>
+      Este proyecto se publica bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">licencia Creative Commons BY-NC-SA 4.0</a>.
+      </p>
+  announcement: "¿Quieres contribuir? Consulta las directrices de contribución y ponte en contacto con nosotros."
+
+exclude_patterns:
+  - .venv/*
+  - venv/*
+
+sphinx:
+  extra_extensions:
+    - custom-launch-buttons
