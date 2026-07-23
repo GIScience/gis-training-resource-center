@@ -184,13 +184,13 @@ The current SOP states that the sides of recent violent incidents are to be avoi
 {admonition} Reminder
 :class: seealso
 
-If you see a ![](../../../fig/3.44_caution_symbol.png)-symbol next to the `Distance` parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in __degrees, and not in meters__. If that is the case, you need to [reproject your layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer) into a metric coordinate reference system. 
+If you see a ![](../../../fig/3.44_caution_symbol.png)-symbol next to the `Distance` parameter, this means that the layer you want to buffer is in a geographic coordinate reference system. This means the units of measurements are in __degrees, and not in meters__. If that is the case, you need to [reproject your layer](../Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer) into a metric coordinate reference system. 
 
 Tip: EPSG:32642 is an ideal CRS for Pakistan. 
 
 ::::
 
-6. [Create a buffer around the points](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html) of violent incidents with a distance of __2.000 meters__. 
+6. [Create a buffer around the points](../Wiki/en_qgis_geoprocessing_wiki.md#buffer) of violent incidents with a distance of __2.000 meters__. 
 
 7. We now have two polygon layers (the point buffers and the digitised areas). In order to visualise the No-Go Area in Peshwar, we can merge the polygons from both layers into a single layer with the tool `Merge vector layer` and select both layers we want to merge as inputs.
 
@@ -199,7 +199,7 @@ Tip: EPSG:32642 is an ideal CRS for Pakistan.
 ::::{margin}
 :::{tip}
 
-There are several clipping algorithms to be found in the toolbox. Make sure to choose the ![](3.44_clip_vector.png) clipping tool grouped under "Vector overlay".
+There are several clipping algorithms to be found in the toolbox. Make sure to choose the ![](../../../fig/3.44_clip_vector.png) clipping tool grouped under "Vector overlay".
 :::
 ::::
 
@@ -212,8 +212,8 @@ There are several clipping algorithms to be found in the toolbox. Make sure to c
 
 
 10. Let's do a quick symbolisation of the resulting layer so we can understand the information more easily:
-	- Open the [styling panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel) for the safe area.
-	- [Adjust the symbology](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#only-display-the-outlines-of-polygons) for the layer so that the polygons are __semi-transparent and green__.
+	- Open the [styling panel](../Module_4/en_qgis_styling_vector_data.md#styling-panel) for the safe area.
+	- [Adjust the symbology](../Module_4/en_qgis_styling_vector_data.md#only-display-the-outlines-of-polygons) for the layer so that the polygons are __semi-transparent and green__.
 
 Congratulations! We now have a map to help the team on the ground stay safe. 
 
@@ -240,7 +240,7 @@ Once we have the conflict events as point data, we can aggregate the data on sub
 	- Click `Run`.
 
 
-:::{figure} ../../fig/Create_ponts_from_table.PNG
+:::{figure} ../../../fig/Create_ponts_from_table.PNG
 ---
 width: 700px
 name: SVG Marker
@@ -248,7 +248,7 @@ name: SVG Marker
 Create points from table.
 :::
 
-Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the [attribute table](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_attribute_table.html) and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:
+Great! We now have a point layer showing the conflict events in Pakistan. Now, we could investigate this dataset further by taking a look at the [attribute table](../Module_2/en_qgis_attribute_table.md) and see what kind of information is represented. However, we want to know the number of conflict incidents per thesil (subdistrict/ADM3). To calculate this:
 
 3. Import the layer `PAK_KP_admin_3.gpkg` from your `data/input`-folder into your QGIS-project. 
 4. We want to count the number of conflict events per thesil (subdistrict/ADM3). To do this:
@@ -258,7 +258,7 @@ Great! We now have a point layer showing the conflict events in Pakistan. Now, w
 	- Under `Count`, click on the `...` and save the layer in your `data/results/`-folder as "PAK_num_events_adm3". 
 
 
-:::{figure} ../../fig/count_point_polygon.PNG
+:::{figure} ../../../fig/count_point_polygon.PNG
 ---
 width: 700px
 name: SVG Marker
@@ -275,7 +275,7 @@ Count points in polygon
 
 Your result could look similar to this:
 
-:::{figure} ../../fig/Number_events_graduated.PNG
+:::{figure} ../../../fig/Number_events_graduated.PNG
 ---
 width: 700px
 name: SVG Marker
@@ -313,7 +313,7 @@ This can help us understand the economic and social vulnerability geographically
 	:::
 	
 2. Open QGIS and create a new project. Save the project in your project folder. 
-3. [Import the layers](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html) `__20240605_PAK_MPI.csv__` and `Pak_adm2_Khyber Pakhtunkhwa.gpkg` to QGIS:
+3. [Import the layers](../Wiki/en_qgis_import_geodata_wiki.md) `__20240605_PAK_MPI.csv__` and `Pak_adm2_Khyber Pakhtunkhwa.gpkg` to QGIS:
 	* Drag and drop the ADM2-layer into your QGIS-window.
 	* To import the CSV-file, click on the `Layer` tab → `Add Layer` → `Add Delimited Text`.
 	* Browse for your __20240605_PAK_MPI.csv__ file. 
@@ -330,7 +330,7 @@ This can help us understand the economic and social vulnerability geographically
 	Load CSV file to QGIS
 	:::
 
-Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a [non-spatial join](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools.html#spatial-joins) and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes. 
+Now, we need to join the data to existing to the existing district boundaries (ADM2). This process is called a [non-spatial join](../Module_5/en_qgis_spatial_tools.md#spatial-joins) and it allows us enrich datasets using attribute data. In our case, the MPI dataset contains a column with the district names (admin2) and the P-Codes. P-Codes are international codes for administrative boundaries and are generally the best way to identify an administrative units, as names can have several spellings. Our polygon-layer also has columns with the p-codes. 
 
 So, we need to perform a non-spatial join using the P-Codes Columns as identifiers. To do this,
 

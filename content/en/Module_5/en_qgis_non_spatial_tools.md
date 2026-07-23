@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -70,7 +70,7 @@ In this short follow along exercise, we will add the population data to the admi
 1. [Download the necessary layers here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), unzip them, and add them to your QGIS-project. 
 
 :::{tip}
-The population layer needs to be [added as a delimited text layer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Layer` → `Add Layer` → `Add delimited text layer`) with no geometry.
+The population layer needs to be [added as a delimited text layer](../Module_2/en_qgis_geodata_concept.md#delimited-text-import-csv-txt) (`Layer` → `Add Layer` → `Add delimited text layer`) with no geometry.
 :::
 
 2. Open the "Join Attributes by Field Value"-tool from the processing toolbox
@@ -210,43 +210,43 @@ In this dialog, you can build your expressions to query the data. There are seve
 ::::{tab-set}
 
 :::{tab-item} Arithmetic operators
-| operator | functionality          |
-|----------|------------------------|
-| `+`    | addition               |
-| `-`    | subtraction           |
-| `*`    | multiplication         |
-| `/`    | division               |
-| `%`    | remainder of division  |
+| operator | functionality         |
+|----------|-----------------------|
+| `+`      | addition              |
+| `-`      | subtraction           |
+| `*`      | multiplication        |
+| `/`      | division              |
+| `%`      | remainder of division |
 :::
 
 :::{tab-item} Comparison operators
 | operator | functionality            |
 |----------|--------------------------|
-| `=`    | equals                   |
-| `!=`   | not equal                |
-| `<`    | less than                |
-| `>`    | greater than             |
-| `<=`   | less than or equal to    |
-| `>=`   | greater than or equal to |
+| `=`      | equals                   |
+| `!=`     | not equal                |
+| `<`      | less than                |
+| `>`      | greater than             |
+| `<=`     | less than or equal to    |
+| `>=`     | greater than or equal to |
 :::
 
 :::{tab-item} Logical operators
 Operators such as AND, OR can be used to combine different queries or criteria
-| operator | functionality          |
-|----------|------------------------|
-| `AND`  | logical AND            |
-| `OR`   | logical OR             |
-| `NOT`  | logical NOT            |
+| operator | functionality |
+|----------|---------------|
+| `AND`    | logical AND   |
+| `OR`     | logical OR    |
+| `NOT`    | logical NOT   |
 :::
 
 :::{tab-item} Special operators
-| operator      | functionality                                  |
-|---------------|------------------------------------------------|
-| `LIKE`      | pattern matching                               |
-| `IN`        | checks if a value is in a list of values       |
-| `IS NULL`   | checks for null values                         |
-| `BETWEEN`   | checks if a value is within a specified range  |
-| `CASE WHEN` | conditional expressions                        |
+| operator    | functionality                                 |
+|-------------|-----------------------------------------------|
+| `LIKE`      | pattern matching                              |
+| `IN`        | checks if a value is in a list of values      |
+| `IS NULL`   | checks for null values                        |
+| `BETWEEN`   | checks if a value is within a specified range |
+| `CASE WHEN` | conditional expressions                       |
 :::
 
 ::::

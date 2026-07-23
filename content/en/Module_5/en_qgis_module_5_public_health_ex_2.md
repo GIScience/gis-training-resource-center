@@ -61,7 +61,7 @@ In order to calculate the incidence rate per district, we first need to know the
     :::
 
 2. We will now calculate the total population for each district using the tool `Zonal Statistics`
-    - In the __[Processing Toolbox](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_start.html#toolbox-toolbars)__, search for "Zonal Statistics" and open the tool.
+    - In the __[Processing Toolbox](../Module_1/en_qgis_start.md#toolbox-toolbars)__, search for "Zonal Statistics" and open the tool.
     - Set the parameters as follows:
         - Input layer: `tcd_admbnda_adm2_20250212_AB`
         - Raster layer: `tcd_pop_2025_CN_100m_R2025A_v1`
@@ -74,7 +74,7 @@ In order to calculate the incidence rate per district, we first need to know the
     - Take a look at the new layer by opening it's attribute table and looking at the new column.
     ::::{margin}
     :::{tip}
-    You can also classify the polygons with the new column using [graduated classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_graduated_wiki.html)
+    You can also classify the polygons with the new column using [graduated classification](../Wiki/en_qgis_graduated_wiki.md)
     :::
     ::::
 
@@ -137,7 +137,7 @@ Can you find and download the WorldPop raster containing the population under 5?
 
 %% Revise this step.
 
-1. [Import](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#text-data-import) the `measles_cases_adm2` dataset as a __delimited text layer__ with no geometry.
+1. [Import](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import) the `measles_cases_adm2` dataset as a __delimited text layer__ with no geometry.
     - In the top bar, navigate to `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open.
     - To the right of file name, click on the ![](../../../fig/Three_points.png) three points and navigate to the file in the `/data/input/`-folder. Click `Open`.
     - In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? The measles cases don't have any geometry information.
@@ -293,7 +293,7 @@ When working with multiple maps in the Print Layout, you need to lock the layers
 
 The finished map could look something like this:
 
-:::{figure} ../../fig/pub_health_map_measles_incidence_chad.png
+:::{figure} ../../../fig/pub_health_map_measles_incidence_chad.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px
