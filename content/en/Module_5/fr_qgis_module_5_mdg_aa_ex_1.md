@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -44,12 +44,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html)
+* [Automatisation](../Wiki/en_qgis_automatisation_wiki.md)
 
 :::
 
@@ -77,7 +77,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>

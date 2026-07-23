@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,7 +13,7 @@ The print layout in QGIS is where you design and finalise the map in order to pr
 1. In the top bar, go to  __`Project` → `New Print Layout` → enter a name for the new print layout → click `OK`__.
 2. A new window with a blank print layout will appear.
 
-:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
@@ -48,7 +48,7 @@ In order to provide your audience and readers with sufficient information so the
 - __Overview Map__
 - __Author__
 
-:::{figure} ../../fig/en_good_map_composition_example.png
+:::{figure} ../../../fig/en_good_map_composition_example.png
 ---
 name: en_good_map_composition_example
 width: 750px
@@ -75,7 +75,7 @@ __The legend__ is key to interpreting the information represented on the map. Wi
 - __Representative__: The figures on the map and in the legend must match (same size, same color, ...).
 - __Organized__: The data in the legend can be grouped by thematic categories (health, environment, background map, ...) or by type of figure (point, line, surface) to facilitate reading.
 
-:::{figure} ../../fig/en_legend_good_practice.png
+:::{figure} ../../../fig/en_legend_good_practice.png
 ---
 width: 750px
 name: en_legend_good_practice
@@ -89,7 +89,7 @@ __The scale bar__ is essential to a map since it gives the correspondence betwee
 
 - __The graphical scale__ is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map
 
-:::{figure} ../../fig/example_scale_bar.png
+:::{figure} ../../../fig/example_scale_bar.png
 ---
 name: example_scale_bar
 ---

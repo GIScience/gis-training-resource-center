@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -14,13 +14,13 @@ As we have already learned, raster data are basically a grid of pixels with diff
 
 To assign a colour gradient for raster data, you need to:
 
-1. Open the `styling panel` for the raster layer.
+1. Open the `Styling panel` for the raster layer.
 2. Navigate to the `Symbology tab`.  
 3. By default, the colour scheme is set to Singleband Gray (if you only have one colour band in the data set). Click on `Singleband Gray` and switch to `Singleband Pseudocolour`.
 4. Click on __the arrow to the right of the colour ramp__. Here you can choose a pre-made colour ramp.
 5. You can modify the colour ramp by __clicking on the colour ramp__.
 
-:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
+:::{figure} ../../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
 name: en_30.30.2_raster_data_colour_gradient
 width: 600px

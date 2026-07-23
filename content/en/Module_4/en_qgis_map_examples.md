@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,7 +18,7 @@ In this chapter we will discuss well designed maps and give examples of how to r
 
 ### Map Example 1: Flood-affected areas and roads in the Somali Region, Ethiopia <a id="map-example-1-flood-affected-areas-and-roads-in-the-somali-region-ethiopia"></a>
 
-:::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} ../../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: Flood affected Areas in Somali
 width: 800 px
@@ -55,7 +55,7 @@ The colour scheme of the roads makes it possible to read the map intuitively, as
 
 ### Map Example 2: Flooding Risk in the Ouham Region, Central African Republic <a id="map-example-2-flooding-risk-in-the-ouham-region-central-african-republic"></a>
 
-:::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
+:::{figure} ../../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
 ---
 name: REACH Flooding Risk Ouhman Region, Central African Republic
 width: 720 px

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../content/intro.html
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -23,8 +23,8 @@ The exercise covers:
 
 ## Related wiki articles <a id="related-wiki-articles"></a>
 
-- [QGIS interface](/content/Wiki/en_qgis_interface_wiki)
-- [Projects and folder structure](/content/Wiki/en_qgis_projects_folder_structure_wiki)
+- [QGIS interface](../Wiki/en_qgis_interface_wiki)
+- [Projects and folder structure](../Wiki/en_qgis_projects_folder_structure_wiki)
 
 
 ## Data preparation <a id="data-preparation"></a>
@@ -58,7 +58,7 @@ name: en_project_template_BRC
 
 - Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface. 
 - Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
-On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](../content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
+On the right of the screen, you will most likely have the __Processing Toolbox__ panel. If it is missing for you, check out this [wiki page](../Wiki/en_qgis_common_errors_and_Issues#missing-toolbox).
 
 ```{figure} ../../../fig/en_QGIS_GUI.png
 ---
@@ -69,7 +69,7 @@ name: QGIS User Interface
 QGIS User Interface.
 ```
 
-3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
+3. You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right ([Wiki Video](https://giscience.github.io/gis-training-resource-center/en/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)). 
 
 :::{tip}
 
@@ -94,9 +94,9 @@ In QGIS, the interface may appear slightly different depending on your screen re
 
 Take time to make yourself familiar with the different ways you can arrange the QGIS interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!
 
-6. Let's save the project now. Click on the save icon on the toolbar or open the `Project` menu and choose `Save As...`
+6. Let's save the project now. Click on the save icon on the toolbar or open the `Project` menu and choose `Save As...`.
     1. Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called `Module_1_Exercise_1`. Give the QGIS project a name (for example: `QGIS_Training_Exercise_1`). The project will be saved as a `.qqz` file.
-    2. Click `Save` 
+    2. Click `Save` .
     3. Close the QGIS application and reopen it.
 7.  Close the QGIS application and reopen it. When QGIS restarts, the project we just saved will appear in the `Recent Projects` panel. You can double-click it to open it. You can also navigate to the `.qgz` file in your file explorer and double click on it. 
 This will also launch QGIS and load the project. 

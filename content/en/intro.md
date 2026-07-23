@@ -2,7 +2,7 @@
         async src="//gc.zgo.at/count.js"></script>
 
 
-:::{figure} ../../../fig/HeiGIT_Logo_base.svg
+:::{figure} ../../fig/HeiGIT_Logo_base.svg
 ---
 height: 75 
 name: HeiGIT Logo
@@ -24,17 +24,17 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 ::::{grid} 1 2 2 2
 :gutter: 2
 
-:::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)__ 
-:link: ../content/Trainers_corner/en_TOT_intro 
+:::{grid-item-card} __[Start teaching](https://giscience.github.io/gis-training-resource-center/en/Trainers_corner/en_TOT_intro.html)__ 
+:link: /Trainers_corner/en_TOT_intro
 
-There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html) who want to use the platform.
+There is a dedicated [section for trainers](https://giscience.github.io/gis-training-resource-center/en/Trainers_corner/en_TOT_intro.html) who want to use the platform.
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
 Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS. 
 
 :::
 
-:::{grid-item-card} __[Start learning](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_module_1_overview.html)__ 
-:link: ../content/Module_1/en_module_1_overview
+:::{grid-item-card} __[Start learning](https://giscience.github.io/gis-training-resource-center/en/Module_1/en_module_1_overview.html)__ 
+:link: /Module_1/en_module_1_overview
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
 This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
@@ -51,17 +51,17 @@ Trainers for QGIS are the principal audience of the IFRC Network GIS Training Pl
 :gutter: 2
 
 :::{grid-item-card} Wiki 📖
-:link: ../content/Wiki/en_wiki_homepage
+:link: Wiki/en_wiki_homepage
 The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
 :::
 
 :::{grid-item-card} Modules 🎓
-:link: ../content/en_modules_overview
+:link: en_modules_overview
 In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
 :::
 
 :::{grid-item-card} Exercises ✍️
-:link: ../content/Exercise_tracks/en_exercise_tracks_overview
+:link: Exercise_tracks/en_exercise_tracks_overview
 In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
 :::
 
@@ -122,7 +122,7 @@ The case studies present applied GIS workflows based on real operational context
 ::::{grid} auto
 :::{grid-item-card}
 :class-body: sd-text-center
-:link: ../content/GIS_AA/en_GIS_AA_overview
+:link: GIS_AA/en_GIS_AA_overview
 __GIS in Anticipatory Action__
 :::
 ::::
@@ -153,7 +153,7 @@ You have questions, feedback or comments on the platform and the content. We are
 
 ## Contributing
 
-We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](../content/contribution_plan).
+We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](contribution_plan).
 
 ## Join the Community
 
