@@ -19,7 +19,7 @@ Before departure, ensure you have the following:
 ::::{grid} 3
 :::{grid-item}
 
-```{figure} ../../fig/AILAS_GoPro_front.jpeg
+```{figure} ../../../fig/AILAS_GoPro_front.jpeg
 ---
 name: 
 width: 250 px
