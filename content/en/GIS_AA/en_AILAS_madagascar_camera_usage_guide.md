@@ -251,7 +251,7 @@ If the scanning of the QR code is not working immeadiately try in different ligh
 | :------------------------------- | :---- |
 | 1. Press the **Mode/Power** button until the screen displays *“Timelapse”* <!-- Icon --> | |
 | 2.Tap the **settings** icon (bottom right) and configure as follows:<br> • **Format**: Photo<br> • **Digital Lens**: Wide<br> • **Capture**: Interval = 5s<br>  | Leave remaining  settings unchanged |
-| 3. Tap the **back arrow** to save and return to the main screen. | in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 5s W"|
+| 3. Tap the **back arrow** to save and return to the main screen. | in the bottom centre of the screen should now be displayed: "Time Lapse Photo 5s W"|
 
 ### Start/Stop Capturing Images <a id="startstop-capturing-images"></a>
 | Instructions | Notes |
