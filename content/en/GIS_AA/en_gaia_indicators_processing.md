@@ -4,16 +4,16 @@
 
 The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for a collection from several countries at administrative level 2, covering multiple countries where administrative boundaries and place codes (PCODEs) are available on HDX. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:
 
-1. [**Access to Services**](#access-to-services) – Population accessibility to key facilities such as education and health centers.  
-2. [**Facilities**](#facilities) – Availability and distribution of essential service infrastructure.  
-3. [**Coping Capacity**](#coping-capacity) – Combined indicators derived from Access, Facilities, Evacuability, and RAI layers.
-4. [**Demographics**](#demographics) – Distribution of vulnerable population.
-5. [**Rural Population**](#rural-population) – Demographic indicators focused specifically on rural populations.
-6. [**Rural Accessibility Index (RAI)**](#rural-accessibility-index-rai) – Percentage of rural population within 2 km of a paved road.
-7. [**Vulnerability**](#vulnerability) – Composite indicators derived from Demographics and Rural Population layers.
-8. [**Flood Exposure**](#flood-exposure) – Exposure of populations and facilities to flood hazards.
-9. [**Cyclone Exposure**](#cyclone-exposure) – Exposure of populations and facilities to cyclone hazards.
-10. [**Evacuability**](#evacuability) – Travel time from at-risk areas to the nearest safe zone.
+1. [**Access to Services**](#1-access-to-services) – Population accessibility to key facilities such as education and health centers.  
+2. [**Facilities**](#2-facilities) – Availability and distribution of essential service infrastructure.  
+3. [**Coping Capacity**](#3-coping-capacity) – Combined indicators derived from Access, Facilities, Evacuability, and RAI layers.
+4. [**Demographics**](#4-demographics) – Distribution of vulnerable population.
+5. [**Rural Population**](#5-rural-population) – Demographic indicators focused specifically on rural populations.
+6. [**Rural Accessibility Index (RAI)**](#6-rural-accessibility-index-rai) – Percentage of rural population within 2 km of a paved road.
+7. [**Vulnerability**](#7-vulnerability) – Composite indicators derived from Demographics and Rural Population layers.
+8. [**Flood Exposure**](#8-flood-exposure) – Exposure of populations and facilities to flood hazards.
+9. [**Cyclone Exposure**](#9-cyclone-exposure) – Exposure of populations and facilities to cyclone hazards.
+10. [**Evacuability**](#10-evacuability) – Travel time from at-risk areas to the nearest safe zone.
 
 Further details on GAIA’s methodology are available in the [GAIA repository on GitHub](https://github.com/GIScience/gaia).
 
@@ -603,17 +603,17 @@ This layer is derived from the [**WorldPop**](https://www.worldpop.org/) global 
 ### Indicators <a id="indicators"></a>
 Each demographic indicator represents the **sum of population counts** matching specified age and sex ranges:
 
-| Indicator            | Description                                | Ages (years)       | Sexes |
-|----------------------|--------------------------------------------|--------------------|-------|
-| `total_pop`          | Total population                           | 0–80+              | f, m  |
-| `female_pop`         | Total female population                    | 0–80+              | f     |
-| `children_u5`        | Total children under 5                     | 0–4                | f, m  |
-| `female_u5`          | Female children under 5                    | 0–4                | f     |
-| `elderly`            | Population aged 65 and above               | 65+                | f, m  |
-| `pop_u15`            | Population under 15                        | 0–14               | f, m  |
-| `female_u15`         | Female population under 15                 | 0–14               | f     |
-| `wra_pop`            | Women of reproductive age (15–49)          | 15–49              | f     |
-| `dependency_ratio`   | Dependency ratio = (dependents / working) × 100 | Derived      | —     |
+| Indicator          | Description                                     | Ages (years) | Sexes |
+|--------------------|-------------------------------------------------|--------------|-------|
+| `total_pop`        | Total population                                | 0–80+        | f, m  |
+| `female_pop`       | Total female population                         | 0–80+        | f     |
+| `children_u5`      | Total children under 5                          | 0–4          | f, m  |
+| `female_u5`        | Female children under 5                         | 0–4          | f     |
+| `elderly`          | Population aged 65 and above                    | 65+          | f, m  |
+| `pop_u15`          | Population under 15                             | 0–14         | f, m  |
+| `female_u15`       | Female population under 15                      | 0–14         | f     |
+| `wra_pop`          | Women of reproductive age (15–49)               | 15–49        | f     |
+| `dependency_ratio` | Dependency ratio = (dependents / working) × 100 | Derived      | —     |
 
 ### Processing Steps <a id="processing-steps-4"></a>
 1. **Download Required WorldPop Tiles**  
