@@ -930,7 +930,7 @@ __Purpose:__ In this step, all the data needed will be loaded into QGIS.
 
 __Tool:__ No specific tools are needed, only QGIS.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
   * From the folder you created in step 1

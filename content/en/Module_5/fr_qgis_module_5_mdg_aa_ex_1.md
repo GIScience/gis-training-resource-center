@@ -108,7 +108,7 @@ __Exercice guidée:__
 __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 :::
 
-Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_management.html#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
+Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](../Module_2/en_qgis_geodata_management.md#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
 
 | Ensemble de données | Source | Descriptions |
 | ----- | --- | --- |
@@ -134,7 +134,7 @@ Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster
 3. __Importer le fichier__ GeoJSON "example_Harald_2025_Track.geojson" dans votre projet en le glissant-déposant (Vidéo Wiki). Le fichier se trouve dans le dossier `/data/input`
 
 4. __Reprojetez la trajectoire du cyclone__ pour utiliser des mètres au lieu de degrés (ceci est important pour un tampon précis):
-    - Dans la __[Boîte à outils de traitement](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
+    - Dans la __[Boîte à outils de traitement](../Module_1/en_qgis_start.md#toolbox--toolbars)__, cherchez `Reprojeter une couche`.
     - Couche source: example_Harald_2025_Track
     - SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
     - Enregistrez le résultat dans le dossier temp sous le nom: `Harald_Track_Reprojected`
