@@ -2,7 +2,7 @@
 
 Que vous soyez débutant ou que vous ayez déjà une certaine expérience, travailler avec QGIS peut être difficile.   
 Notre objectif est de fournir une plateforme complète contenant les compétences et ressources essentielles pour une utilisation dans l’aide humanitaire, sans devoir passer des heures à chercher sur Google. 🔎
-En plus des modules, nous proposons des exercices et un wiki afin de permettre aux personnes de parcourir le contenu et d’apprendre de manière autonome.    
+En plus des modules, nous proposons des exercices et un wiki afin de permettre aux personnes de parcourir le contenu et d’apprendre de manière autonome.  
 Cette formation QGIS est créée par des personnes qui croient que les SIG peuvent aider les acteurs humanitaires à mieux servir les personnes dans le besoin.
 
 ### Notre mission :{mission}
