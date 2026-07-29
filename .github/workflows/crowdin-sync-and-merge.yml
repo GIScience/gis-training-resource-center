@@ -230,8 +230,8 @@ jobs:
           download_language: ${{ inputs.target_language }}
 
           skip_untranslated_strings: false
-          skip_untranslated_files: false
-          export_only_approved: true
+          skip_untranslated_files: true
+          export_only_approved: false
           download_translations_args: "--verbose"
 
           push_sources: false
@@ -555,4 +555,3 @@ jobs:
             Target language: `${{ inputs.target_language }}`
           add-paths: |
             content/${{ inputs.target_language }}/**
-            
