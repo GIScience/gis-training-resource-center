@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_1/en_qgis_installation.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: /content/intro</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: /content/intro</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Setting up <bpt id="1">&lt;a id="setting-up"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Setting up <bpt id="1">&lt;a id="setting-up"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.</source>
+<target xml:lang="fr">In this chapter, we will prepare the setup for the training. This includes installing QGIS, setting up a folder structure for all the data in the training, and how to manage the downloaded material. The first step will be to install QGIS. After that, we will set up a folder structure for the training, as well as go over a few steps to keep your data management clean.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Quick guide QGIS 3.34.12 - installation and basic setup <bpt id="1">&lt;a id="quick-guide-qgis-33412-installation-and-basic-setup"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Quick guide QGIS 3.34.12 - installation and basic setup <bpt id="1">&lt;a id="quick-guide-qgis-33412-installation-and-basic-setup"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf5_tu2" resname="sd1_1" restype="x-title" xml:space="preserve">
+<source xml:lang="en">YouTube Video Player</source>
+<target xml:lang="fr">YouTube Video Player</target>
+</trans-unit>
+<trans-unit id="sd1_sf5_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" [#$sd1_sf5_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" [#$sd1_sf5_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">QGIS Download and Installation <bpt id="1">&lt;a id="qgis-download-and-installation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Download and Installation <bpt id="1">&lt;a id="qgis-download-and-installation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. The installation of QGIS is very simple. Depending on your system (Windows, Mac or Linux) there are some things to look out for. You can find advice below on how to install QGIS on different operating systems.</source>
+<target xml:lang="fr">QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers. The installation of QGIS is very simple. Depending on your system (Windows, Mac or Linux) there are some things to look out for. You can find advice below on how to install QGIS on different operating systems.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Warning}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Warning}</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">There are several versions of QGIS available to download. It is recommended to use the <bpt id="1">__</bpt>Long Term Release<ept id="1">__</ept> versions because it is the most stable and contains the fewest bugs.
+The current <bpt id="2">__</bpt>Long Term Release<ept id="2">__</ept> is <bpt id="3">__</bpt><bpt id="4">[</bpt>QGIS 3.40.4. 'Bratislava'<ept id="4">](https://qgis.org/download/)</ept><ept id="3">__</ept></source>
+<target xml:lang="fr">There are several versions of QGIS available to download. It is recommended to use the <bpt id="1">__</bpt>Long Term Release<ept id="1">__</ept> versions because it is the most stable and contains the fewest bugs.
+The current <bpt id="2">__</bpt>Long Term Release<ept id="2">__</ept> is <bpt id="3">__</bpt><bpt id="4">[</bpt>QGIS 3.40.4. 'Bratislava'<ept id="4">](https://qgis.org/download/)</ept><ept id="3">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">QGIS Download <bpt id="1">&lt;a id="qgis-download"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Download <bpt id="1">&lt;a id="qgis-download"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Go to the <bpt id="1">[</bpt><bpt id="2">__</bpt>QGIS download page<ept id="2">__</ept><ept id="1">](https://www.qgis.org/en/site/forusers/download.html)</ept>.</source>
+<target xml:lang="fr">Go to the <bpt id="1">[</bpt><bpt id="2">__</bpt>QGIS download page<ept id="2">__</ept><ept id="1">](https://www.qgis.org/en/site/forusers/download.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Download for Windows`</ph>, <ph id="2">`Download for macOS`</ph> or <ph id="3">`Download for Linux`</ph>, depending on your operating system.</source>
+<target xml:lang="fr">Select <ph id="1">`Download for Windows`</ph>, <ph id="2">`Download for macOS`</ph> or <ph id="3">`Download for Linux`</ph>, depending on your operating system.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Looking for the most stable version? Get QGIS 3.34 LTR`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Looking for the most stable version? Get QGIS 3.34 LTR`</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The download will start.</source>
+<target xml:lang="fr">The download will start.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Locate the downloaded file (usually in your Downloads folder) and run it to start the installer</source>
+<target xml:lang="fr">Locate the downloaded file (usually in your Downloads folder) and run it to start the installer</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Follow the installer instructions to install QGIS!</source>
+<target xml:lang="fr">Follow the installer instructions to install QGIS!</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Operating System specific considerations <bpt id="1">&lt;a id="operating-system-specific-considerations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Operating System specific considerations <bpt id="1">&lt;a id="operating-system-specific-considerations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Windows installation</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Windows installation</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>32 Bit or 64 Bit?<ept id="1">__</ept>
+For <bpt id="2">__</bpt>Windows operating systems<ept id="2">__</ept>, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the <bpt id="3">__</bpt>Windows icon<ept id="3">__</ept> at the bottom left of the screen (alternatively, open the Windows search function). Type <bpt id="4">__</bpt>"System"<ept id="4">__</ept> on the keyboard, click on the entry <bpt id="5">__</bpt>"System"<ept id="5">__</ept> in the search results. Under the item <bpt id="6">__</bpt>"System type"<ept id="6">__</ept> you can read the bit number.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>32 Bit or 64 Bit?<ept id="1">__</ept>
+For <bpt id="2">__</bpt>Windows operating systems<ept id="2">__</ept>, there is always a 32-bit version and a 64-bit version of each QGIS version available for download. Which version to install depends on your computer and operating system. If it is not clear how many bits your operating system has, you can easily find out: Left-click on the <bpt id="3">__</bpt>Windows icon<ept id="3">__</ept> at the bottom left of the screen (alternatively, open the Windows search function). Type <bpt id="4">__</bpt>"System"<ept id="4">__</ept> on the keyboard, click on the entry <bpt id="5">__</bpt>"System"<ept id="5">__</ept> in the search results. Under the item <bpt id="6">__</bpt>"System type"<ept id="6">__</ept> you can read the bit number.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Since QGIS 3.20 there are only 64-bit Windows executables.</source>
+<target xml:lang="fr">Since QGIS 3.20 there are only 64-bit Windows executables.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Linux installation</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Linux installation</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">For installation on Linux systems with <ph id="1">`apt`</ph> you can install QGIS:</source>
+<target xml:lang="fr">For installation on Linux systems with <ph id="1">`apt`</ph> you can install QGIS:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In the conventional apt package sources, an older version of QGIS will probably be installed. If you are using the package source <bpt id="1">[</bpt>Ubuntugis<ept id="1">](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa)</ept>, observe the following installation <bpt id="2">[</bpt>notes<ept id="2">](https://qgis.org/en/site/forusers/alldownloads.html#repositories)</ept>.</source>
+<target xml:lang="fr">In the conventional apt package sources, an older version of QGIS will probably be installed. If you are using the package source <bpt id="1">[</bpt>Ubuntugis<ept id="1">](https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa)</ept>, observe the following installation <bpt id="2">[</bpt>notes<ept id="2">](https://qgis.org/en/site/forusers/alldownloads.html#repositories)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">If you install a QGIS version 3.30 or higher you have to install the plugin
+<bpt id="1">_</bpt>Processing Saga NextGen Provider<ept id="1">_</ept>.</source>
+<target xml:lang="fr">If you install a QGIS version 3.30 or higher you have to install the plugin
+<bpt id="1">_</bpt>Processing Saga NextGen Provider<ept id="1">_</ept>.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Setting up a folder structure for the training <bpt id="1">&lt;a id="setting-up-a-folder-structure-for-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Setting up a folder structure for the training <bpt id="1">&lt;a id="setting-up-a-folder-structure-for-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.</source>
+<target xml:lang="fr">Keeping your data and project-files organised is the key to successfully working with GIS-software. This exercises on this platform require you to download geodata and process them on your own. In order to keep everything organised, we advise you to create a folder structure for all the data and material downloaded in the course of this training.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Create a folder in the location of your choosing with the name <ph id="1">`GIS_Training`</ph>.</source>
+<target xml:lang="fr">Create a folder in the location of your choosing with the name <ph id="1">`GIS_Training`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">When downloading data for the exercises, create subfolders for each module and training exercise (e.g. <ph id="1">`/GIS_Training/Module_1/Exercise_1`</ph>).</source>
+<target xml:lang="fr">When downloading data for the exercises, create subfolders for each module and training exercise (e.g. <ph id="1">`/GIS_Training/Module_1/Exercise_1`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders.</source>
+<target xml:lang="fr">Save all of the QGIS-projects as well as the downloaded material for the exercises in these folders.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Module 2<ept id="1">](/content/Module_2/en_qgis_geodata_concept.md)</ept> will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Module 2<ept id="1">](/content/Module_2/en_qgis_geodata_concept.md)</ept> will go into more into depth about geodata management and introduce a standard folder structure for QGIS-projects.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Make sure to unzip the exercise files before starting the exercises.</source>
+<target xml:lang="fr">Make sure to unzip the exercise files before starting the exercises.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Test what you've learned
+<ph id="2">:class: note</ph>
+Take a moment to recapitulate what you've learned in this module by making sure you possess the competences below:</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Test what you've learned
+<ph id="2">:class: note</ph>
+Take a moment to recapitulate what you've learned in this module by making sure you possess the competences below:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>You know how to download the newest version of QGIS.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>You know how to download the newest version of QGIS.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>You know how to set up your own standard folder structure.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>You know how to set up your own standard folder structure.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_spatial_tools_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Exercise 1: Health site distribution in the Saint Louis region <bpt id="1">&lt;a id="exercise-1-health-site-distribution-in-the-saint-louis-region"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 1: Health site distribution in the Saint Louis region <bpt id="1">&lt;a id="exercise-1-health-site-distribution-in-the-saint-louis-region"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Become familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.</source>
+<target xml:lang="fr">Become familiar with different types of spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowledge Level):<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowledge Level):<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>These skills are relevant for:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>These skills are relevant for:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Spatial Queries<ept id="1">](/content/Wiki/en_qgis_spatial_queries_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Spatial Queries<ept id="1">](/content/Wiki/en_qgis_spatial_queries_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geoprocessing<ept id="1">](/content/Wiki/en_qgis_geoprocessing_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geoprocessing<ept id="1">](/content/Wiki/en_qgis_geoprocessing_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Categorized classification<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Categorized classification<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Data <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data <bpt id="1">&lt;a id="data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Download the datasets <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_1/Module_5_Exercise_1_Healthsite_distribution_Saint_Louis_region.zip)</ept> and unzip the files.</source>
+<target xml:lang="fr">Download the datasets <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_1/Module_5_Exercise_1_Healthsite_distribution_Saint_Louis_region.zip)</ept> and unzip the files.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+All files still have their original names. However, feel free to modify their names if necessary to identify them more easily.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">The goal of this exercise will be to assess the health site distribution in the Saint Louis region in Senegal and determine which health sites are prone to flooding.</source>
+<target xml:lang="fr">The goal of this exercise will be to assess the health site distribution in the Saint Louis region in Senegal and determine which health sites are prone to flooding.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+The projected coordinate system for Senegal is <ph id="2">`EPSG:32628 WGS 84 / UTM zone 28N`</ph>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+The projected coordinate system for Senegal is <ph id="2">`EPSG:32628 WGS 84 / UTM zone 28N`</ph>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Load the health sites layer (<ph id="1">`sen_healthsites.shp`</ph>) and the administrative boundary data (<ph id="2">`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`</ph>) into your QGIS project. Add OpenStreetMap as a background layer (Hint: XYZ via the browser window or the QuickMapServices plugin).</source>
+<target xml:lang="fr">Load the health sites layer (<ph id="1">`sen_healthsites.shp`</ph>) and the administrative boundary data (<ph id="2">`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`</ph>) into your QGIS project. Add OpenStreetMap as a background layer (Hint: XYZ via the browser window or the QuickMapServices plugin).</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph>
+Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the <bpt id="2">[</bpt>wiki entry on projections<ept id="2">](/content/Wiki/en_qgis_projections_wiki.md)</ept> for further information.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph>
+Always make sure that your datasets are provided in the correct projection. If this it not the case, it is necessary to reproject the data in the desired coordinates reference system. See the <bpt id="2">[</bpt>wiki entry on projections<ept id="2">](/content/Wiki/en_qgis_projections_wiki.md)</ept> for further information.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Select all health sites which are located within the Saint Louis region:</source>
+<target xml:lang="fr">Select all health sites which are located within the Saint Louis region:</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Select the region <ph id="1">`Saint Louis`</ph> in the boundary layer. You can just manually select the specific rows. See the Wiki entry on <bpt id="2">[</bpt>spatial queries<ept id="2">](/content/Wiki/en_qgis_spatial_queries_wiki.md)</ept> for further information.</source>
+<target xml:lang="fr">Select the region <ph id="1">`Saint Louis`</ph> in the boundary layer. You can just manually select the specific rows. See the Wiki entry on <bpt id="2">[</bpt>spatial queries<ept id="2">](/content/Wiki/en_qgis_spatial_queries_wiki.md)</ept> for further information.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Save the selection under the new name <ph id="1">`Saint_Louis_region`</ph> in an extra layer. This can be done by right clicking on the boundary layer → <ph id="2">`Export`</ph> → <ph id="3">`Save Selected Features As...`</ph></source>
+<target xml:lang="fr">Save the selection under the new name <ph id="1">`Saint_Louis_region`</ph> in an extra layer. This can be done by right clicking on the boundary layer → <ph id="2">`Export`</ph> → <ph id="3">`Save Selected Features As...`</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex2_export_selected.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex2_export_selected.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 70%</ph>
+<ph id="2">name: export_selected_features</ph></source>
+<target xml:lang="fr"><ph id="1">width: 70%</ph>
+<ph id="2">name: export_selected_features</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Exporting the selection to a new file.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Exporting the selection to a new file.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Use the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmSelectLocation.png)</ept> <ph id="2">`Select by location`</ph> or <bpt id="3">![</bpt><ept id="3">](/fig/mAlgorithmClip.png)</ept> <ph id="4">`Clip`</ph> tool to select all health facilities within the <ph id="5">`Saint_Louis_region`</ph> layer.</source>
+<target xml:lang="fr">Use the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmSelectLocation.png)</ept> <ph id="2">`Select by location`</ph> or <bpt id="3">![</bpt><ept id="3">](/fig/mAlgorithmClip.png)</ept> <ph id="4">`Clip`</ph> tool to select all health facilities within the <ph id="5">`Saint_Louis_region`</ph> layer.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Save the new selection under the new name <ph id="1">`healthsites_Saint_Louis`</ph> in an extra layer (Hint: right click on layer, Export, ...).</source>
+<target xml:lang="fr">Save the new selection under the new name <ph id="1">`healthsites_Saint_Louis`</ph> in an extra layer (Hint: right click on layer, Export, ...).</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex2_select_by_location.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex2_select_by_location.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: select_by_location</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: select_by_location</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Screenshot of the select by location tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the select by location tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Investigate the flood risk in Saint Louis. Following the successful selection of all health sites in the Saint Louis region in the previous step, proceed to load the flood extent layer of Saint Louis into QGIS:</source>
+<target xml:lang="fr">Investigate the flood risk in Saint Louis. Following the successful selection of all health sites in the Saint Louis region in the previous step, proceed to load the flood extent layer of Saint Louis into QGIS:</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Add the flood extent layer (<ph id="1">`EO4SD_SAINT_LOUIS_FLOOD_2018.shp`</ph>)</source>
+<target xml:lang="fr">Add the flood extent layer (<ph id="1">`EO4SD_SAINT_LOUIS_FLOOD_2018.shp`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Use the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmClip.png)</ept> <ph id="2">`Clip`</ph> tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on <bpt id="3">[</bpt>Geoprocessing<ept id="3">](/content/Wiki/en_qgis_geoprocessing_wiki.md)</ept> for further information.</source>
+<target xml:lang="fr">While the layer does not cover the entirety of the Saint Louis region, it extends beyond Saint Louis in the north. Use the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmClip.png)</ept> <ph id="2">`Clip`</ph> tool to clip the flood extent layer to the Saint Louis region (Hint: as input use Saint Louis flood extent, use Saint_louis_region as the overlay) for a more concentrated focus on central Saint Louis. See the Wiki entry on <bpt id="3">[</bpt>Geoprocessing<ept id="3">](/content/Wiki/en_qgis_geoprocessing_wiki.md)</ept> for further information.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Save the selection as <ph id="1">`Saint_Louis_flood_clipped`</ph>.</source>
+<target xml:lang="fr">Save the selection as <ph id="1">`Saint_Louis_flood_clipped`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">When looking at the attribute table of the <ph id="1">`Saint_Louis_flood_clipped`</ph> layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas.</source>
+<target xml:lang="fr">When looking at the attribute table of the <ph id="1">`Saint_Louis_flood_clipped`</ph> layer (Watertype column), you will see that the layer includes flooded, non-flooded and water body areas.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex1_attribute_table_floods.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex1_attribute_table_floods.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 70%</ph>
+<ph id="2">name: attribute_table_floods</ph></source>
+<target xml:lang="fr"><ph id="1">width: 70%</ph>
+<ph id="2">name: attribute_table_floods</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Saint_Louis_flood_clipped layer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Saint_Louis_flood_clipped layer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Visualize only the flooded areas and water bodies in the dataset:</source>
+<target xml:lang="fr">Visualize only the flooded areas and water bodies in the dataset:</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Go into <ph id="1">`Symbology`</ph> and change the first selection from "Single symbols" to <ph id="2">`Categorized`</ph>.</source>
+<target xml:lang="fr">Go into <ph id="1">`Symbology`</ph> and change the first selection from "Single symbols" to <ph id="2">`Categorized`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Select the column <ph id="1">`Watertype`</ph> and click <ph id="2">`Classify`</ph>.</source>
+<target xml:lang="fr">Select the column <ph id="1">`Watertype`</ph> and click <ph id="2">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Choose different colors for both the water bodies and the flooded areas. Leave non-flooded areas unmarked or make them transparent (opacity = 0%).</source>
+<target xml:lang="fr">Choose different colors for both the water bodies and the flooded areas. Leave non-flooded areas unmarked or make them transparent (opacity = 0%).</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Visual exploration: Which areas are more and less prone to flooding?</source>
+<target xml:lang="fr">Visual exploration: Which areas are more and less prone to flooding?</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex2_screenshot_flood.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex2_screenshot_flood.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 70%</ph>
+<ph id="2">name: screenshot_flood</ph></source>
+<target xml:lang="fr"><ph id="1">width: 70%</ph>
+<ph id="2">name: screenshot_flood</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Screenshot of the water bodies and flooded areas.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the water bodies and flooded areas.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Assess which health sites are prone to flood risk.</source>
+<target xml:lang="fr">Assess which health sites are prone to flood risk.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Make use of the <bpt id="1">[</bpt><ph id="2">`Select by expression`</ph> tool<ept id="1">]()</ept> to select all flooded areas in the <ph id="3">`Saint_Louis_flood_clipped`</ph> layer. You can access this tool through the attribute table by clicking on this symbol <bpt id="4">![</bpt><ept id="4">](/fig/mIconExpressionSelect_new.png)</ept>.</source>
+<target xml:lang="fr">Make use of the <bpt id="1">[</bpt><ph id="2">`Select by expression`</ph> tool<ept id="1">]()</ept> to select all flooded areas in the <ph id="3">`Saint_Louis_flood_clipped`</ph> layer. You can access this tool through the attribute table by clicking on this symbol <bpt id="4">![</bpt><ept id="4">](/fig/mIconExpressionSelect_new.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">In the expression window on the left, enter the following expression:</source>
+<target xml:lang="fr">In the expression window on the left, enter the following expression:</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex2_select_by_expression.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex2_select_by_expression.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 90%</ph>
+<ph id="2">name: select_by_expression</ph></source>
+<target xml:lang="fr"><ph id="1">width: 90%</ph>
+<ph id="2">name: select_by_expression</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Selecting by expression: In this case we want the field (column) "WATERTYPE" to equal to 'Flooded'.<ph id="1">  </ph>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Selecting by expression: In this case we want the field (column) "WATERTYPE" to equal to 'Flooded'.<ph id="1">  </ph>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Working with the Expression builder
+Writing your own expressions can be difficult at first. QGIS has a few quality of life features that can help you write a valid expression.</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Working with the Expression builder
+Writing your own expressions can be difficult at first. QGIS has a few quality of life features that can help you write a valid expression.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">In the middle section of the expression builder window, you can expand various options. Look into "Fields and Values" to display the fields (columns) of that layer. Select the "WATERTYPE" field and <bpt id="1">&lt;kbd></bpt>double-click<ept id="1">&lt;/kbd></ept> on it to add it to the expression box on the left.</source>
+<target xml:lang="fr">In the middle section of the expression builder window, you can expand various options. Look into "Fields and Values" to display the fields (columns) of that layer. Select the "WATERTYPE" field and <bpt id="1">&lt;kbd></bpt>double-click<ept id="1">&lt;/kbd></ept> on it to add it to the expression box on the left.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">On the right side, you can preview the values of a field you've selected. Click on <ph id="1">`All Unique`</ph> in order to see all the unique values of the "WATERTYPE"-column. By double clicking on a value, you can add it to the expression box on the left.</source>
+<target xml:lang="fr">On the right side, you can preview the values of a field you've selected. Click on <ph id="1">`All Unique`</ph> in order to see all the unique values of the "WATERTYPE"-column. By double clicking on a value, you can add it to the expression box on the left.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Notice how the fields are marked using double quotes marks (<ph id="1">`"WATERTYPE"`</ph>), whereas values are marked with single quotes (<ph id="2">`'FLOODED'`</ph>).</source>
+<target xml:lang="fr">Notice how the fields are marked using double quotes marks (<ph id="1">`"WATERTYPE"`</ph>), whereas values are marked with single quotes (<ph id="2">`'FLOODED'`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Under the expression box, there are buttons with common operators you can use in the expression builder.</source>
+<target xml:lang="fr">Under the expression box, there are buttons with common operators you can use in the expression builder.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Below the expression box, you can see a Preview of the expression output. If the expression is invalid, you will see a red text "Expression is invalid" with an option to see what exactly is wrong in the syntax by clicking on "more info".
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Below the expression box, you can see a Preview of the expression output. If the expression is invalid, you will see a red text "Expression is invalid" with an option to see what exactly is wrong in the syntax by clicking on "more info".
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Save the selection in a separate layer. Name it <ph id="1">`Saint_Louis_flooded_areas`</ph>. See <bpt id="2">[</bpt>Export Selection<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#export-selection)</ept> in the wiki for more information.</source>
+<target xml:lang="fr">Save the selection in a separate layer. Name it <ph id="1">`Saint_Louis_flooded_areas`</ph>. See <bpt id="2">[</bpt>Export Selection<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_queries_wiki.html#export-selection)</ept> in the wiki for more information.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">You can now remove the <ph id="1">`Saint_Louis_flood_clipped`</ph> layer to avoid confusion.</source>
+<target xml:lang="fr">You can now remove the <ph id="1">`Saint_Louis_flood_clipped`</ph> layer to avoid confusion.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Make use of the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmSelectLocation.png)</ept> <ph id="2">`Select by location`</ph> tool to assess which health sites are prone to flooding because they are located within the flooded areas in Saint Louis (Hint: Select features from: <ph id="3">`healthsites_Saint_Louis`</ph>; By comparing to: <ph id="4">`Saint_Louis_flooded_areas`</ph>).</source>
+<target xml:lang="fr">Make use of the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmSelectLocation.png)</ept> <ph id="2">`Select by location`</ph> tool to assess which health sites are prone to flooding because they are located within the flooded areas in Saint Louis (Hint: Select features from: <ph id="3">`healthsites_Saint_Louis`</ph>; By comparing to: <ph id="4">`Saint_Louis_flooded_areas`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex2_select_by_location_health.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex2_select_by_location_health.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 90%</ph>
+<ph id="2">name: select_by_location</ph></source>
+<target xml:lang="fr"><ph id="1">width: 90%</ph>
+<ph id="2">name: select_by_location</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Select by location tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Select by location tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Check the attribute table of the <ph id="1">`healthsites`</ph> layer for the selected features were one pharmacy and one hospital should be selected.</source>
+<target xml:lang="fr">Check the attribute table of the <ph id="1">`healthsites`</ph> layer for the selected features were one pharmacy and one hospital should be selected.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex1_selected_healthsites_senegal.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex1_selected_healthsites_senegal.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: selected_healthsites_senegal</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: selected_healthsites_senegal</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Screenshot of the selected health sites in the flooded areas.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the selected health sites in the flooded areas.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Which health sites are located close to flooded zones?</source>
+<target xml:lang="fr">Which health sites are located close to flooded zones?</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Create a <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmBuffer.png)</ept> buffer around the health sites in Saint Louis with a distance of <ph id="2">`20 meters`</ph>. See the Wiki entry on <bpt id="3">[</bpt>Geoprocessing<ept id="3">](/content/Wiki/en_qgis_geoprocessing_wiki.md)</ept> for further information.</source>
+<target xml:lang="fr">Create a <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmBuffer.png)</ept> buffer around the health sites in Saint Louis with a distance of <ph id="2">`20 meters`</ph>. See the Wiki entry on <bpt id="3">[</bpt>Geoprocessing<ept id="3">](/content/Wiki/en_qgis_geoprocessing_wiki.md)</ept> for further information.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex2_buffer.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex2_buffer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 90%</ph>
+<ph id="2">name: buffer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 90%</ph>
+<ph id="2">name: buffer</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Screenshot of the buffer process
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the buffer process
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+At this stage at the latest, you will be reminded to reproject your layers. Meaningful buffers can only be calculated in projected coordinate systems. The projected coordinate system for Senegal is <ph id="2">`EPSG:32628 WGS 84 / UTM zone 28N`</ph>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+At this stage at the latest, you will be reminded to reproject your layers. Meaningful buffers can only be calculated in projected coordinate systems. The projected coordinate system for Senegal is <ph id="2">`EPSG:32628 WGS 84 / UTM zone 28N`</ph>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Now make use of the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmSelectLocation.png)</ept> <ph id="2">`Select by location`</ph> tool again to assess which buffers intersect with the flooded areas.</source>
+<target xml:lang="fr">Now make use of the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmSelectLocation.png)</ept> <ph id="2">`Select by location`</ph> tool again to assess which buffers intersect with the flooded areas.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex1_select_healthsites_buffer.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex1_select_healthsites_buffer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 90%</ph>
+<ph id="2">name: selected_healthsites_buffer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 90%</ph>
+<ph id="2">name: selected_healthsites_buffer</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Select by location tool for the buffered areas
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Select by location tool for the buffered areas
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">How many health sites are selected? Check the attribute table. The selection should include five pharmacies and one hospital.</source>
+<target xml:lang="fr">How many health sites are selected? Check the attribute table. The selection should include five pharmacies and one hospital.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Feel free to experiment with additional buffer distances.</source>
+<target xml:lang="fr">Feel free to experiment with additional buffer distances.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex1_selected_flooded_healthsites.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex1_selected_flooded_healthsites.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: selected_healthsites_flooded</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: selected_healthsites_flooded</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Screenshot of the buffered and selected health sites in the flooded areas
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the buffered and selected health sites in the flooded areas
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">The final result may be represented as follows: it will display the flooded areas, the buffered health sites, and the intersections between them. While these features might not be easily visible in QGIS, you can verify that everything worked correctly by checking the attribute table.</source>
+<target xml:lang="fr">The final result may be represented as follows: it will display the flooded areas, the buffered health sites, and the intersections between them. While these features might not be easily visible in QGIS, you can verify that everything worked correctly by checking the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex1_final_result.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex1_final_result.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100%</ph>
+<ph id="2">name: ex1_final_result</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100%</ph>
+<ph id="2">name: ex1_final_result</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Screenshot of the final result
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the final result
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

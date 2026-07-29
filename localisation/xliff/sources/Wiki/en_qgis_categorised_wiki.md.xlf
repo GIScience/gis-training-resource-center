@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_categorised_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Categorised classification <bpt id="1">&lt;a id="categorised-classification"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Categorised classification <bpt id="1">&lt;a id="categorised-classification"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</source>
+<target xml:lang="fr">Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Categorized classification is usually used for <bpt id="1">__</bpt>nominal<ept id="1">__</ept> and <bpt id="2">__</bpt>ordinal<ept id="2">__</ept> scaled data.</source>
+<target xml:lang="fr">Categorized classification is usually used for <bpt id="1">__</bpt>nominal<ept id="1">__</ept> and <bpt id="2">__</bpt>ordinal<ept id="2">__</ept> scaled data.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Data Scale</source>
+<target xml:lang="fr">Data Scale</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Definition</source>
+<target xml:lang="fr">Definition</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="fr">Example</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Typical Data Format</source>
+<target xml:lang="fr">Typical Data Format</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Nominal Scale</source>
+<target xml:lang="fr">Nominal Scale</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Categories without inherent order or ranking</source>
+<target xml:lang="fr">Categories without inherent order or ranking</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Land cover types, districts, livelihood zones</source>
+<target xml:lang="fr">Land cover types, districts, livelihood zones</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Text ("Desert") or Integer (5)</source>
+<target xml:lang="fr">Text ("Desert") or Integer (5)</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Ordinal Scale</source>
+<target xml:lang="fr">Ordinal Scale</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Categories with a meaningful order or ranking</source>
+<target xml:lang="fr">Categories with a meaningful order or ranking</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Ranks (e.g., low, medium)</source>
+<target xml:lang="fr">Ranks (e.g., low, medium)</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Text ("high") or Integer (5)</source>
+<target xml:lang="fr">Text ("high") or Integer (5)</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Classifying Data
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Classifying Data
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>To classify data in categories…<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>To classify data in categories…<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Right-click on your layer</source>
+<target xml:lang="fr">Right-click on your layer</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Symbology`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Symbology`</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Categorized`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Categorized`</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Value`</ph> dropdown menu select the column based on which you want to categorize your data.</source>
+<target xml:lang="fr">In the <ph id="1">`Value`</ph> dropdown menu select the column based on which you want to categorize your data.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Further down the window click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected column in <ph id="2">`Value`</ph>. To add or delete single values use the <ph id="3">`-`</ph> and <ph id="4">`+`</ph> buttons.</source>
+<target xml:lang="fr">Further down the window click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected column in <ph id="2">`Value`</ph>. To add or delete single values use the <ph id="3">`-`</ph> and <ph id="4">`+`</ph> buttons.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: In the <ph id="2">`Symbol`</ph> dropdown menu you can select the colours and symbols you want to use</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: In the <ph id="2">`Symbol`</ph> dropdown menu you can select the colours and symbols you want to use</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: In the <ph id="2">`Color ramp`</ph> dropdown menu you can specify the range of colours you want to use</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: In the <ph id="2">`Color ramp`</ph> dropdown menu you can specify the range of colours you want to use</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: You can open the panel <ph id="2">`Layer Rendering`</ph> on the button of the window. Here you can adjust the opacity/ transparency of the layer.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Optional<ept id="1">*</ept>: You can open the panel <ph id="2">`Layer Rendering`</ph> on the button of the window. Here you can adjust the opacity/ transparency of the layer.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph> to put your adjustment into effect.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph> to put your adjustment into effect.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph> to close the window.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph> to close the window.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Categorized_district_map_SierraLeone.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Categorized_district_map_SierraLeone.png</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: Categorized_district_map_SierraLeone</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">name: Categorized_district_map_SierraLeone</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

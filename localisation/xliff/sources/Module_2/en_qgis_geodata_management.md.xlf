@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_geodata_management.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Geodata management <bpt id="1">&lt;a id="geodata-management"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geodata management <bpt id="1">&lt;a id="geodata-management"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In this chapter, we will have a closer look at how to store geodata on your computer to work in QGIS or other GIS applications. Since vector data is the primary geodata type you will work with at the beginning of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent folder structure for your GIS-data and projects and how to name geodata correctly.</source>
+<target xml:lang="fr">In this chapter, we will have a closer look at how to store geodata on your computer to work in QGIS or other GIS applications. Since vector data is the primary geodata type you will work with at the beginning of your GIS career, we will focus on vector geodata. We will learn how to set up a coherent folder structure for your GIS-data and projects and how to name geodata correctly.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Fundamentals of Geodata Management <bpt id="1">&lt;a id="fundamentals-of-geodata-management"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Fundamentals of Geodata Management <bpt id="1">&lt;a id="fundamentals-of-geodata-management"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Working with geodata is not like working with data in programs such as Microsoft Excel or Word. Whenever you load an image in a Word file, the file will contain the image. If you delete the image on your computer, the Word file will still contain a copy of the image.</source>
+<target xml:lang="fr">Working with geodata is not like working with data in programs such as Microsoft Excel or Word. Whenever you load an image in a Word file, the file will contain the image. If you delete the image on your computer, the Word file will still contain a copy of the image.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This is not the case in QGIS! When you load geodata into QGIS, the system only establishes a link to the location where the data is stored on your computer. This means your QGIS project <bpt id="1">__</bpt>does not contain<ept id="1">__</ept> the geodata, it only links to it. If you load data in your QGIS project and you change the location of the data or delete it, the data is no longer available in your QGIS project and you will get an error when you open it.</source>
+<target xml:lang="fr">This is not the case in QGIS! When you load geodata into QGIS, the system only establishes a link to the location where the data is stored on your computer. This means your QGIS project <bpt id="1">__</bpt>does not contain<ept id="1">__</ept> the geodata, it only links to it. If you load data in your QGIS project and you change the location of the data or delete it, the data is no longer available in your QGIS project and you will get an error when you open it.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Because you are working directly with the source data, rather than a copy, whenever you edit data in QGIS the changes replace the source data and can not be reversed. If you plan to make changes to your data, you should make a copy of it first so that you always have a 'clean' copy you can go back to.</source>
+<target xml:lang="fr">Because you are working directly with the source data, rather than a copy, whenever you edit data in QGIS the changes replace the source data and can not be reversed. If you plan to make changes to your data, you should make a copy of it first so that you always have a 'clean' copy you can go back to.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Standard folder structure <bpt id="1">&lt;a id="standard-folder-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Standard folder structure <bpt id="1">&lt;a id="standard-folder-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">The single most important geodata management practice is to use a standardised folder structure that contains all parts of the QGIS project.</source>
+<target xml:lang="fr">The single most important geodata management practice is to use a standardised folder structure that contains all parts of the QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The paths from a QGIS project to the geodata are by default relative. This means when the data and the project are in a fixed folder structure, you can move the whole structure without impacting the QGIS project or the paths to the data. The version of a standardized folder structure that is used for all exercises in this training is explained below. A template of the folder structure can be downloaded <bpt id="1">[</bpt><bpt id="2">__</bpt>here<ept id="2">__</ept><ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip)</ept>.</source>
+<target xml:lang="fr">The paths from a QGIS project to the geodata are by default relative. This means when the data and the project are in a fixed folder structure, you can move the whole structure without impacting the QGIS project or the paths to the data. The version of a standardized folder structure that is used for all exercises in this training is explained below. A template of the folder structure can be downloaded <bpt id="1">[</bpt><bpt id="2">__</bpt>here<ept id="2">__</ept><ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">A standard folder structure has two principal advantages:</source>
+<target xml:lang="fr">A standard folder structure has two principal advantages:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">If we share the whole project folder, we can expect the project to run without problems on a different computer</source>
+<target xml:lang="fr">If we share the whole project folder, we can expect the project to run without problems on a different computer</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The folder structure supports the proper organisation of project data and helps ensure the QGIS project will work as intended</source>
+<target xml:lang="fr">The folder structure supports the proper organisation of project data and helps ensure the QGIS project will work as intended</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/standard_folder_structure_new_2025.drawio.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/standard_folder_structure_new_2025.drawio.png</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: standard_folder_structure_new_2025</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: standard_folder_structure_new_2025</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Naming Geodata <bpt id="1">&lt;a id="naming-geodata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Naming Geodata <bpt id="1">&lt;a id="naming-geodata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues when working with your data files. The name of your files themselves need to be clear, meaning that you or others can identify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name your layers so you can identify the content, as well as what you have done with the layer. For example, if you have clipped a street layer of New York, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".</source>
+<target xml:lang="fr">Naming your data correctly ensures that you can identify the layers and your computer does not run into any issues when working with your data files. The name of your files themselves need to be clear, meaning that you or others can identify what the data shows, where the data comes from, and to what time it refers. In QGIS, you should name your layers so you can identify the content, as well as what you have done with the layer. For example, if you have clipped a street layer of New York, do not name the layer "clipped", give it a name such as "streets_NYC_clipped".</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">There are some basic principles when it comes to naming geodata that you produce or manipulate:</source>
+<target xml:lang="fr">There are some basic principles when it comes to naming geodata that you produce or manipulate:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Do not use special characters like <ph id="1">`!`</ph>,<ph id="2">`?`</ph>, <ph id="3">`/`</ph> or <ph id="4">`-`</ph>.</source>
+<target xml:lang="fr">Do not use special characters like <ph id="1">`!`</ph>,<ph id="2">`?`</ph>, <ph id="3">`/`</ph> or <ph id="4">`-`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Do not use blank spaces, use underscores <ph id="1">`_`</ph></source>
+<target xml:lang="fr">Do not use blank spaces, use underscores <ph id="1">`_`</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Give layers meaningful names so that you can understand what they represent, even if they are a temporary/intermediate step in a workflow.</source>
+<target xml:lang="fr">Give layers meaningful names so that you can understand what they represent, even if they are a temporary/intermediate step in a workflow.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Below you can see an example of a workflow to process an admin boundary dataset (<ph id="1">`adm0`</ph>). The purpose of the intermediate steps is not clear because the layer names are not meaningful.</source>
+<target xml:lang="fr">Below you can see an example of a workflow to process an admin boundary dataset (<ph id="1">`adm0`</ph>). The purpose of the intermediate steps is not clear because the layer names are not meaningful.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`adm0 >> adm0_temp >> adm0_temp2 >> adm0_temp3 >> facilities_final`</ph></source>
+<target xml:lang="fr"><ph id="1">`adm0 >> adm0_temp >> adm0_temp2 >> adm0_temp3 >> facilities_final`</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">A good naming system for layers is shown below. In this workflow, it is clear what processing was performed at each step (reproject, clip layer, join with another layer, final result).<ph id="1">  </ph>
+In this way, other people can understand what purpose different layers serve and whether they are needed in the final project.</source>
+<target xml:lang="fr">A good naming system for layers is shown below. In this workflow, it is clear what processing was performed at each step (reproject, clip layer, join with another layer, final result).<ph id="1">  </ph>
+In this way, other people can understand what purpose different layers serve and whether they are needed in the final project.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`</ph></source>
+<target xml:lang="fr"><ph id="1">`adm0 >> adm0_projUTM >> adm0_projUTM_clipUrban >> adm0_projUTM_clipUrban_intersectFacilities >> facilities_processed`</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Documentation <bpt id="1">&lt;a id="documentation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Documentation <bpt id="1">&lt;a id="documentation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Documentation is an important step when working with geodata or performing analyses. It ensures clarity, reproducibility, and enables collaboration. Spatial data analysis often involves complex processes, data cleaning, data transformations, and specific data sources. Without proper documentation, it becomes difficult for yourself and others to understand, replicate, or build upon your work. Documentation helps organise the purpose, the methods or tools, the data inputs and outputs, as well as the assumptions and limitations. In general, good documentation allows GIS-practitioners to reproduce the analysis steps to get the exact same result. In collaborative work, good documentation serves as a roadmap and is essential when working on GIS-projects. In humanitarian work, and in decision-making processes, good documentation is essential as it helps inform decision making which enables humanitarian teams to allocate resources.</source>
+<target xml:lang="fr">Documentation is an important step when working with geodata or performing analyses. It ensures clarity, reproducibility, and enables collaboration. Spatial data analysis often involves complex processes, data cleaning, data transformations, and specific data sources. Without proper documentation, it becomes difficult for yourself and others to understand, replicate, or build upon your work. Documentation helps organise the purpose, the methods or tools, the data inputs and outputs, as well as the assumptions and limitations. In general, good documentation allows GIS-practitioners to reproduce the analysis steps to get the exact same result. In collaborative work, good documentation serves as a roadmap and is essential when working on GIS-projects. In humanitarian work, and in decision-making processes, good documentation is essential as it helps inform decision making which enables humanitarian teams to allocate resources.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">You can document your projects using markdown editors or just simply creating a word document. Make sure it is saved in the documentation subfolder in your project folder. There are no set rules to write a documentation, however, adhering to a logical structure can help writing and reading your documentation. It is also advisable to write the documentation while you are performing the analysis. QGIS offers a lot of options and settings while performing an analysis, and it can be easy to forget the parameters you have used for an analysis step.</source>
+<target xml:lang="fr">You can document your projects using markdown editors or just simply creating a word document. Make sure it is saved in the documentation subfolder in your project folder. There are no set rules to write a documentation, however, adhering to a logical structure can help writing and reading your documentation. It is also advisable to write the documentation while you are performing the analysis. QGIS offers a lot of options and settings while performing an analysis, and it can be easy to forget the parameters you have used for an analysis step.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Project overview:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Project overview:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Add the title and purpose of the project.</source>
+<target xml:lang="fr">Add the title and purpose of the project.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Add a brief summary of the analysis.</source>
+<target xml:lang="fr">Add a brief summary of the analysis.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data sources:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data sources:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">List of all the input datasets (with links if possible)</source>
+<target xml:lang="fr">List of all the input datasets (with links if possible)</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Coordinate system used</source>
+<target xml:lang="fr">Coordinate system used</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Notes on data quality or limitations</source>
+<target xml:lang="fr">Notes on data quality or limitations</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Software &amp; Tools:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Software &amp; Tools:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">QGIS version</source>
+<target xml:lang="fr">QGIS version</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Plugins used</source>
+<target xml:lang="fr">Plugins used</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Workflow &amp; Methodology:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Workflow &amp; Methodology:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Step-by-step process with screenshots or diagrams where helpful</source>
+<target xml:lang="fr">Step-by-step process with screenshots or diagrams where helpful</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Describe each processing step (these can be in bullet points)</source>
+<target xml:lang="fr">Describe each processing step (these can be in bullet points)</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Mention key parameters or decisions made</source>
+<target xml:lang="fr">Mention key parameters or decisions made</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Make sure yourself and other persons can understand and replicate the analysis steps. Good documentation turns your QGIS project from a black box into a transparent, shareable, and professional piece of work.</source>
+<target xml:lang="fr">Make sure yourself and other persons can understand and replicate the analysis steps. Good documentation turns your QGIS project from a black box into a transparent, shareable, and professional piece of work.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Take a moment to test what you've learned in this chapter by answering the questions below:</source>
+<target xml:lang="fr">Take a moment to test what you've learned in this chapter by answering the questions below:</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Where are the layers loaded into a QGIS project saved? What implications does this have when moving or renaming files?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Where are the layers loaded into a QGIS project saved? What implications does this have when moving or renaming files?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Layers loaded into a QGIS project are not embedded into the .qgz project file — they are linked via file paths to the original data sources.</source>
+<target xml:lang="fr">Layers loaded into a QGIS project are not embedded into the .qgz project file — they are linked via file paths to the original data sources.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">This means that if you move, rename, or delete a source file after adding it to the project, QGIS will not be able to find it, and the layer will appear broken or missing.</source>
+<target xml:lang="fr">This means that if you move, rename, or delete a source file after adding it to the project, QGIS will not be able to find it, and the layer will appear broken or missing.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">To avoid this, maintain a consistent folder structure and avoid changing file locations once the project is set up — or update the file paths if you do.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">To avoid this, maintain a consistent folder structure and avoid changing file locations once the project is set up — or update the file paths if you do.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When editing geodata in QGIS, why is it recommended to make a copy first?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When editing geodata in QGIS, why is it recommended to make a copy first?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Because QGIS edits the original data file directly, there is no built-in undo or automatic backup once changes are saved.</source>
+<target xml:lang="fr">Because QGIS edits the original data file directly, there is no built-in undo or automatic backup once changes are saved.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">If you make a mistake during editing, you can’t easily revert it.</source>
+<target xml:lang="fr">If you make a mistake during editing, you can’t easily revert it.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Creating a copy of the dataset before editing preserves the original data and gives you a fallback in case anything goes wrong.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Creating a copy of the dataset before editing preserves the original data and gives you a fallback in case anything goes wrong.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are two principal advantages of using a standardized folder structure for GIS projects and data?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are two principal advantages of using a standardized folder structure for GIS projects and data?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Portability:<ept id="1">__</ept> If the entire project folder (including data subfolders) is moved to a new computer or drive, the QGIS project can still find its data as long as relative paths are used.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Portability:<ept id="1">__</ept> If the entire project folder (including data subfolders) is moved to a new computer or drive, the QGIS project can still find its data as long as relative paths are used.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Organization &amp; consistency<ept id="1">__</ept>: A clear, consistent structure helps avoid misplaced files, makes the project easier to navigate, and ensures others can understand and work with your project more easily.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Organization &amp; consistency<ept id="1">__</ept>: A clear, consistent structure helps avoid misplaced files, makes the project easier to navigate, and ensures others can understand and work with your project more easily.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Describe at least three good practices for naming geodata / layers.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Describe at least three good practices for naming geodata / layers.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Avoid special characters and spaces in file names — use underscores <ph id="1">`_`</ph> instead (e.g., <ph id="2">`land_cover_2020.shp`</ph>).</source>
+<target xml:lang="fr">Avoid special characters and spaces in file names — use underscores <ph id="1">`_`</ph> instead (e.g., <ph id="2">`land_cover_2020.shp`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Use descriptive names that indicate the content of the layer (e.g., <ph id="1">`population_density_europe`</ph> instead of just <ph id="2">`data1`</ph>).</source>
+<target xml:lang="fr">Use descriptive names that indicate the content of the layer (e.g., <ph id="1">`population_density_europe`</ph> instead of just <ph id="2">`data1`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Indicate processing steps in the name if the layer has been modified (e.g., <ph id="1">`rivers_clipped`</ph>, <ph id="2">`buildings_buffered_500m`</ph>) to make your workflow transparent and reproducible.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Indicate processing steps in the name if the layer has been modified (e.g., <ph id="1">`rivers_clipped`</ph>, <ph id="2">`buildings_buffered_500m`</ph>) to make your workflow transparent and reproducible.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>If you move the entire project folder (with its subfolders and data) to a different computer, under what conditions will the QGIS project still work without broken paths?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>If you move the entire project folder (with its subfolders and data) to a different computer, under what conditions will the QGIS project still work without broken paths?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">The project will still work if:</source>
+<target xml:lang="fr">The project will still work if:</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">all of the files used in the project <bpt id="1">__</bpt>are contained inside the project folder<ept id="1">__</ept>.</source>
+<target xml:lang="fr">all of the files used in the project <bpt id="1">__</bpt>are contained inside the project folder<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">You do not use plugins or resources that are not available on the different computer</source>
+<target xml:lang="fr">You do not use plugins or resources that are not available on the different computer</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">If any files were loaded using absolute paths (e.g., from a location outside the project folder), those paths will likely break after moving to a new machine.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">If any files were loaded using absolute paths (e.g., from a location outside the project folder), those paths will likely break after moving to a new machine.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

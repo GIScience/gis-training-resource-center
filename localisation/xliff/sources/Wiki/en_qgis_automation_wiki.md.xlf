@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_automation_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Automation in QGIS (The Model Builder) <bpt id="1">&lt;a id="automation-in-qgis-the-model-builder"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Automation in QGIS (The Model Builder) <bpt id="1">&lt;a id="automation-in-qgis-the-model-builder"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">What is the need for Automation? <bpt id="1">&lt;a id="what-is-the-need-for-automation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is the need for Automation? <bpt id="1">&lt;a id="what-is-the-need-for-automation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Automation streamlines tasks by reducing the user effort and minimizing errors through less manual repetition. It allows for modularization, enhances reusability and reduces redundancy by repeatedly using a defined set of needed tools. In QGIS it can be achieved by using the "Model Designer".</source>
+<target xml:lang="fr">Automation streamlines tasks by reducing the user effort and minimizing errors through less manual repetition. It allows for modularization, enhances reusability and reduces redundancy by repeatedly using a defined set of needed tools. In QGIS it can be achieved by using the "Model Designer".</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The QGIS Model Designer <bpt id="1">&lt;a id="the-qgis-model-designer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The QGIS Model Designer <bpt id="1">&lt;a id="the-qgis-model-designer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The Model Designer is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.</source>
+<target xml:lang="fr">The Model Designer is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Using the Model Designer/Graphical Modeler <bpt id="1">&lt;a id="using-the-model-designergraphical-modeler"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using the Model Designer/Graphical Modeler <bpt id="1">&lt;a id="using-the-model-designergraphical-modeler"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Open the tool under <ph id="1">`Processing`</ph> → <ph id="2">`Graphical Modeler`</ph>
+</source>
+<target xml:lang="fr">Open the tool under <ph id="1">`Processing`</ph> → <ph id="2">`Graphical Modeler`</ph>
+</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Save the model file in a folder of your choosing by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_save_project_as.png)</ept> <ph id="2">`Save model as`</ph>-button in the top bar.</source>
+<target xml:lang="fr">Save the model file in a folder of your choosing by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_save_project_as.png)</ept> <ph id="2">`Save model as`</ph>-button in the top bar.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Open an existing model via <ph id="1">`Model`</ph> → <ph id="2">`Open Model`</ph> and navigating to the model file
+</source>
+<target xml:lang="fr">Open an existing model via <ph id="1">`Model`</ph> → <ph id="2">`Open Model`</ph> and navigating to the model file
+</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Model Components <bpt id="1">&lt;a id="model-components"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Model Components <bpt id="1">&lt;a id="model-components"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">There are two types of model components, that you can use to create workflows:</source>
+<target xml:lang="fr">There are two types of model components, that you can use to create workflows:</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Inputs<ept id="1">**</ept>: The model starts with input data. These can be vector layers, raster layers, csv-files, or even values or expressions. Most of the time, you will use layers as inputs.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Inputs<ept id="1">**</ept>: The model starts with input data. These can be vector layers, raster layers, csv-files, or even values or expressions. Most of the time, you will use layers as inputs.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Algorithms<ept id="1">**</ept>: The processing steps are made up of algorithms or tools available in QGIS, such as clipping, reprojecting, joining by attribute values, etc.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Algorithms<ept id="1">**</ept>: The processing steps are made up of algorithms or tools available in QGIS, such as clipping, reprojecting, joining by attribute values, etc.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Building a Model <bpt id="1">&lt;a id="building-a-model"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Building a Model <bpt id="1">&lt;a id="building-a-model"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Adding Inputs<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Adding Inputs<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">You can add inputs to the model via the <ph id="1">`Inputs`</ph>-tab on the left of the model builder window by either <bpt id="2">&lt;kbd></bpt>Double-clicking<ept id="2">&lt;/kbd></ept> on it or dragging it onto the model builder canvas.</source>
+<target xml:lang="fr">You can add inputs to the model via the <ph id="1">`Inputs`</ph>-tab on the left of the model builder window by either <bpt id="2">&lt;kbd></bpt>Double-clicking<ept id="2">&lt;/kbd></ept> on it or dragging it onto the model builder canvas.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Once added, a new window will open where you can specify the description of the input, which will appear as the title, as well as the geometry type for vector data and select whether it is a mandatory or optional input for the workflow.</source>
+<target xml:lang="fr">Once added, a new window will open where you can specify the description of the input, which will appear as the title, as well as the geometry type for vector data and select whether it is a mandatory or optional input for the workflow.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Adding Processing Steps:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Adding Processing Steps:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Algorithms`</ph>-panel on the left of the model builder window, you can choose processing steps or algorithms from the QGIS processing toolbox. For example, the "buffer" tool for buffering a road network with a 500 meter radius.</source>
+<target xml:lang="fr">In the <ph id="1">`Algorithms`</ph>-panel on the left of the model builder window, you can choose processing steps or algorithms from the QGIS processing toolbox. For example, the "buffer" tool for buffering a road network with a 500 meter radius.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">To add an algorithm, simply <bpt id="1">&lt;kbd></bpt>Double-click<ept id="1">&lt;/kbd></ept> on it or drag it onto the model builder canvas.</source>
+<target xml:lang="fr">To add an algorithm, simply <bpt id="1">&lt;kbd></bpt>Double-click<ept id="1">&lt;/kbd></ept> on it or drag it onto the model builder canvas.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Once added, the algorithm's parameter window will open. It will look similar to the normal parameters window for that algorithm with a few exceptions:</source>
+<target xml:lang="fr">Once added, the algorithm's parameter window will open. It will look similar to the normal parameters window for that algorithm with a few exceptions:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">You can add a description</source>
+<target xml:lang="fr">You can add a description</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">You must define the <ph id="1">`Input layer`</ph> as either a model input or the output of another algorithm in the model.</source>
+<target xml:lang="fr">You must define the <ph id="1">`Input layer`</ph> as either a model input or the output of another algorithm in the model.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">The output of the algorithm can be defined as a model output by entering a name.</source>
+<target xml:lang="fr">The output of the algorithm can be defined as a model output by entering a name.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Some other differences might appear depending on the algorithm.</source>
+<target xml:lang="fr">Some other differences might appear depending on the algorithm.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_3.40_model_adding_algorithms.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_3.40_model_adding_algorithms.png</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_qgis_3.40_model_adding_algorithms</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_qgis_3.40_model_adding_algorithms</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">The parameters page for the "Buffer"-algorithm in the model builder
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The parameters page for the "Buffer"-algorithm in the model builder
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Once you have set the parameters, click <ph id="1">`Ok`</ph>.</source>
+<target xml:lang="fr">Once you have set the parameters, click <ph id="1">`Ok`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Adding More Processing Steps<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Adding More Processing Steps<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">You can chain several algorithms by selecting <ph id="1">`Algorithm Output`</ph> for the <ph id="2">`Input layer`</ph> and selecting an output from a previous algorithm</source>
+<target xml:lang="fr">You can chain several algorithms by selecting <ph id="1">`Algorithm Output`</ph> for the <ph id="2">`Input layer`</ph> and selecting an output from a previous algorithm</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_3.40_model_adding_more_steps.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_3.40_model_adding_more_steps.png</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_qgis_3.40_model_adding_more_steps</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_qgis_3.40_model_adding_more_steps</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Selecting "Algorithm output" as Input layer to chain several processing steps together.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Selecting "Algorithm output" as Input layer to chain several processing steps together.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Executing the Model<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Executing the Model<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">To run the model click the green arrow in the top bar, a new window will open where you will have to enter/specify your inputs, then click "Run". Output layers are automatically added to your QGIS project interface.</source>
+<target xml:lang="fr">To run the model click the green arrow in the top bar, a new window will open where you will have to enter/specify your inputs, then click "Run". Output layers are automatically added to your QGIS project interface.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Once you are finished creating your workflow, or you want to test the result of your model, you can execute the model. This will automatically perform all the processing steps you entered into the graphical modeler, and create layers in your QGIS-project for the defined outputs:</source>
+<target xml:lang="fr">Once you are finished creating your workflow, or you want to test the result of your model, you can execute the model. This will automatically perform all the processing steps you entered into the graphical modeler, and create layers in your QGIS-project for the defined outputs:</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">In the top bar of the model builder window, click on the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_run_model.png)</ept> <ph id="2">`Run model`</ph>-button.</source>
+<target xml:lang="fr">In the top bar of the model builder window, click on the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_run_model.png)</ept> <ph id="2">`Run model`</ph>-button.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">A new window will open, this is where you define which layers of your QGIS-project will function as the input layers of your model.</source>
+<target xml:lang="fr">A new window will open, this is where you define which layers of your QGIS-project will function as the input layers of your model.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>. Once finished, the calculated or processed layers will appear in your main QGIS canvas.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>. Once finished, the calculated or processed layers will appear in your main QGIS canvas.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.40_model_run_inputs.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.40_model_run_inputs.png</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_3.40_model_run_inputs</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: en_3.40_model_run_inputs</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Selecting the inputs before running the model.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Selecting the inputs before running the model.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

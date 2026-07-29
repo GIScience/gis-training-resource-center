@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_mdg_aa_ex_1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Estimating Exposed Population – Aina’s Manual Approach <bpt id="1">&lt;a id="estimating-exposed-population-ainas-manual-approach"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Estimating Exposed Population – Aina’s Manual Approach <bpt id="1">&lt;a id="estimating-exposed-population-ainas-manual-approach"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Exercise Track:<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Exercise Track:<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">This exercise is part of the <bpt id="1">[</bpt>Madagascar Anticipatory Action Cyclon Analysis Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html)</ept></source>
+<target xml:lang="fr">This exercise is part of the <bpt id="1">[</bpt>Madagascar Anticipatory Action Cyclon Analysis Exercise Track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
+The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+Aina, the GIS expert at the Malagasy Red Cross (CRM), is preparing for the upcoming cyclone season. She wants to improve her team’s ability to act quickly once a storm is forecasted by automating key analyses in QGIS. These include estimating exposed populations, identifying impacted services like health and education, and assessing whether health posts can be reached from key warehouses within a critical 10-hour window.
+The goal is to prepare an end-to-end analysis and visualization workflow that can support fast, data-driven anticipatory action before a cyclone makes landfall.
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_5_Exercise_8_AA_MDG_task_1-20250825T143512Z-1-001.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Download all datasets here, save the folder on your computer and unzip the file.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Download all datasets here, save the folder on your computer and unzip the file.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">The folder contains the whole <bpt id="1">[</bpt>standard folder structure<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)</ept> with all data in the input folder and the additional documentation in the documentation folder.</source>
+<target xml:lang="fr">The folder contains the whole <bpt id="1">[</bpt>standard folder structure<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)</ept> with all data in the input folder and the additional documentation in the documentation folder.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Descriptions</source>
+<target xml:lang="fr">Descriptions</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Administrative Boundaries</source>
+<target xml:lang="fr">Administrative Boundaries</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-mdg)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-mdg)</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile.</source>
+<target xml:lang="fr">The administrative boundaries on level 0-4 for Madagascar can be accessed via HDX provided by OCHA. For this trigger mechanism we provide the administrative boundaries on level 1 (regional level) and 2 (district level) as a shapefile.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Cyclone Tracks</source>
+<target xml:lang="fr">Cyclone Tracks</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>International Best Track Archive for Climate Stewardship (IBTrACS)<ept id="1">](https://www.ncei.noaa.gov/products/international-best-track-archive)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>International Best Track Archive for Climate Stewardship (IBTrACS)<ept id="1">](https://www.ncei.noaa.gov/products/international-best-track-archive)</ept></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">IBTrACS project is the most complete global collection of tropical cyclones available. It merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset that improves inter-agency comparisons.</source>
+<target xml:lang="fr">IBTrACS project is the most complete global collection of tropical cyclones available. It merges recent and historical tropical cyclone data from multiple agencies to create a unified, publicly available, best-track dataset that improves inter-agency comparisons.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">education facilities and health sites</source>
+<target xml:lang="fr">education facilities and health sites</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HOT Export Tool<ept id="1">](https://export.hotosm.org/vi/v3/exports/new/describe)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HOT Export Tool<ept id="1">](https://export.hotosm.org/vi/v3/exports/new/describe)</ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">The POI data (education facilities and health sites) is downloaded using the HOT Export Tool based on OpenStreetMap data.</source>
+<target xml:lang="fr">The POI data (education facilities and health sites) is downloaded using the HOT Export Tool based on OpenStreetMap data.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Population</source>
+<target xml:lang="fr">Population</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>WorldPop<ept id="1">](https://hub.worldpop.org/geodata/summary?id=49646)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>WorldPop<ept id="1">](https://hub.worldpop.org/geodata/summary?id=49646)</ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">The worldpop dataset in raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 dataset at a resolution of 100m.</source>
+<target xml:lang="fr">The worldpop dataset in raster format provides the estimated total number of people per grid-cell for the year 2020. We will be working with the Constrained Individual countries 2020 dataset at a resolution of 100m.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{card}</ph>
+<bpt id="2">__</bpt>Context<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{card}</ph>
+<bpt id="2">__</bpt>Context<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/IFRC-icons-colour_SURGE.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/IFRC-icons-colour_SURGE.png</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 100px</ph>
+<ph id="2">align: right</ph>
+<ph id="3">name: IFRC-icons-colour_SURGE</ph></source>
+<target xml:lang="fr"><ph id="1">width: 100px</ph>
+<ph id="2">align: right</ph>
+<ph id="3">name: IFRC-icons-colour_SURGE</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Aina<ept id="1">**</ept> is the GIS expert at the <bpt id="2">**</bpt>Croix-Rouge Malagasy (CRM)<ept id="2">**</ept>. With the cyclone season approaching, she knows that time is of the essence once a storm is forecasted. Every hour counts when it comes to protecting communities at risk.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Aina<ept id="1">**</ept> is the GIS expert at the <bpt id="2">**</bpt>Croix-Rouge Malagasy (CRM)<ept id="2">**</ept>. With the cyclone season approaching, she knows that time is of the essence once a storm is forecasted. Every hour counts when it comes to protecting communities at risk.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">This year, Aina wants to be one step ahead. Instead of manually analyzing cyclone data under pressure, she decides to <bpt id="1">**</bpt>prepare an automated QGIS model<ept id="1">**</ept> that will help her respond quickly and efficiently.</source>
+<target xml:lang="fr">This year, Aina wants to be one step ahead. Instead of manually analyzing cyclone data under pressure, she decides to <bpt id="1">**</bpt>prepare an automated QGIS model<ept id="1">**</ept> that will help her respond quickly and efficiently.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Her goal:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Her goal:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Build a workflow that automatically estimates exposed populations and infrastructure at risk.</source>
+<target xml:lang="fr">Build a workflow that automatically estimates exposed populations and infrastructure at risk.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: Task_1_workflow</ph>
+<ph id="2">width: 750 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: Task_1_workflow</ph>
+<ph id="2">width: 750 px</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Tasks: <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks: <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Before developing the automated model, Aina used to estimate the exposed population manually whenever a cyclone approached Madagascar. In this task, you will follow the steps she used in the past by working with the historical track of <bpt id="1">**</bpt>Cyclone Harald<ept id="1">**</ept>, WorldPop raster data, and administrative boundaries.</source>
+<target xml:lang="fr">Before developing the automated model, Aina used to estimate the exposed population manually whenever a cyclone approached Madagascar. In this task, you will follow the steps she used in the past by working with the historical track of <bpt id="1">**</bpt>Cyclone Harald<ept id="1">**</ept>, WorldPop raster data, and administrative boundaries.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">You will manually buffer the cyclone track, clip the population raster, and calculate exposed population using zonal statistics.</source>
+<target xml:lang="fr">You will manually buffer the cyclone track, clip the population raster, and calculate exposed population using zonal statistics.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Open QGIS<ept id="1">**</ept> and <bpt id="2">[</bpt>create a new project<ept id="2">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="3">`Project`</ph> → <ph id="4">`New`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Open QGIS<ept id="1">**</ept> and <bpt id="2">[</bpt>create a new project<ept id="2">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="3">`Project`</ph> → <ph id="4">`New`</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Save the project<ept id="1">**</ept> in the “project” folder. To do that click on <ph id="2">`Project`</ph> → <ph id="3">`Save as`</ph> and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Save the project<ept id="1">**</ept> in the “project” folder. To do that click on <ph id="2">`Project`</ph> → <ph id="3">`Save as`</ph> and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load the GeoJOSN<ept id="1">**</ept> file "example_Harald_2025_Track.geojson" in your project by drag and drop (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>) . Open the folder <ph id="3">`data`</ph> → <ph id="4">`input`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load the GeoJOSN<ept id="1">**</ept> file "example_Harald_2025_Track.geojson" in your project by drag and drop (<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>) . Open the folder <ph id="3">`data`</ph> → <ph id="4">`input`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Reproject the cyclone track<ept id="1">**</ept> to use meters instead of degrees (important for accurate buffering):</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Reproject the cyclone track<ept id="1">**</ept> to use meters instead of degrees (important for accurate buffering):</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Reproject Layer`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Reproject Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Input: <ph id="1">`example_Harald_2025_Track`</ph></source>
+<target xml:lang="fr">Input: <ph id="1">`example_Harald_2025_Track`</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Target CRS: <ph id="1">`EPSG:29738`</ph> or another meter-based CRS appropriate for Madagascar.</source>
+<target xml:lang="fr">Target CRS: <ph id="1">`EPSG:29738`</ph> or another meter-based CRS appropriate for Madagascar.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Save the result in the <ph id="1">`temp`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Track_Reprojected`</ph><ept id="2">**</ept>
+<ph id="4">:::{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG</ph></source>
+<target xml:lang="fr">Save the result in the <ph id="1">`temp`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Track_Reprojected`</ph><ept id="2">**</ept>
+<ph id="4">:::{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Reprojecting the cyclone track.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Reprojecting the cyclone track.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclone tracks) use geographic coordinate systems like EPSG:4326, which measure in degrees — not meters. To correctly calculate a 200 km buffer, we must first reproject the track into a projected CRS that uses meters.
+<ph id="2">:::</ph>
+5. <bpt id="3">**</bpt>Buffer the cyclone track<ept id="3">**</ept>:</source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Buffer distances must be calculated in meters. Many datasets (like GeoJSON cyclone tracks) use geographic coordinate systems like EPSG:4326, which measure in degrees — not meters. To correctly calculate a 200 km buffer, we must first reproject the track into a projected CRS that uses meters.
+<ph id="2">:::</ph>
+5. <bpt id="3">**</bpt>Buffer the cyclone track<ept id="3">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Buffer`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Buffer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Input: <ph id="1">`Harald_Track_Reprojected`</ph></source>
+<target xml:lang="fr">Input: <ph id="1">`Harald_Track_Reprojected`</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Buffer distance: <ph id="1">`200000`</ph> (meters)</source>
+<target xml:lang="fr">Buffer distance: <ph id="1">`200000`</ph> (meters)</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Segments: Leave default (5)</source>
+<target xml:lang="fr">Segments: Leave default (5)</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Dissolve: <ph id="1">`Yes`</ph></source>
+<target xml:lang="fr">Dissolve: <ph id="1">`Yes`</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Save output in the <ph id="1">`temp`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Buffer_200km`</ph><ept id="2">**</ept>
+<ph id="4">:::{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG</ph></source>
+<target xml:lang="fr">Save output in the <ph id="1">`temp`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Buffer_200km`</ph><ept id="2">**</ept>
+<ph id="4">:::{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Buffering the cyclone track.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Buffering the cyclone track.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Intermediate Result: Buffer
+<ph id="2">:::{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Intermediate Result: Buffer
+<ph id="2">:::{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">The intermediate results must show the cyclone’s trajectory and the 200-kilometer buffer zone around it. The buffer zone must be a single entity.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+6. <bpt id="3">**</bpt>Reproject the buffer back to EPSG:4326 (to match the raster's CRS):<ept id="3">**</ept></source>
+<target xml:lang="fr">The intermediate results must show the cyclone’s trajectory and the 200-kilometer buffer zone around it. The buffer zone must be a single entity.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph>
+6. <bpt id="3">**</bpt>Reproject the buffer back to EPSG:4326 (to match the raster's CRS):<ept id="3">**</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">In the Processing Toolbox, search for Reproject Layer.</source>
+<target xml:lang="fr">In the Processing Toolbox, search for Reproject Layer.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Input: Harald_Buffer_200km_29738</source>
+<target xml:lang="fr">Input: Harald_Buffer_200km_29738</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Target CRS: EPSG:4326 – WGS 84</source>
+<target xml:lang="fr">Target CRS: EPSG:4326 – WGS 84</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Save the output in the temp folder as: Harald_Buffer_200km_4326
+<ph id="1">:::{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG</ph></source>
+<target xml:lang="fr">Save the output in the temp folder as: Harald_Buffer_200km_4326
+<ph id="1">:::{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Reprojecting the cyclone buffer
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Reprojecting the cyclone buffer
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load the administrative boundaries<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load the administrative boundaries<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">File: <ph id="1">`mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`</ph></source>
+<target xml:lang="fr">File: <ph id="1">`mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Add using drag and drop or <ph id="1">`Add Vector Layer`</ph>.</source>
+<target xml:lang="fr">Add using drag and drop or <ph id="1">`Add Vector Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load the population raster<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load the population raster<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">File: <ph id="1">`MDG_WorldPop_2020_constrained.tif`</ph></source>
+<target xml:lang="fr">File: <ph id="1">`MDG_WorldPop_2020_constrained.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Add using <ph id="1">`Layer`</ph> → <ph id="2">`Add Raster Layer`</ph>.</source>
+<target xml:lang="fr">Add using <ph id="1">`Layer`</ph> → <ph id="2">`Add Raster Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Clip the population raster<ept id="1">**</ept> using the buffered impact zone:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Clip the population raster<ept id="1">**</ept> using the buffered impact zone:</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Clip Raster by Mask Layer`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Clip Raster by Mask Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Input raster: <ph id="1">`MDG_WorldPop_2020_constrained`</ph></source>
+<target xml:lang="fr">Input raster: <ph id="1">`MDG_WorldPop_2020_constrained`</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Mask layer: <ph id="1">`Harald_Buffer_200km`</ph></source>
+<target xml:lang="fr">Mask layer: <ph id="1">`Harald_Buffer_200km`</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Save output in the <ph id="1">`temp`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Pop_Clip`</ph><ept id="2">**</ept>
+<ph id="4">:::{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG</ph></source>
+<target xml:lang="fr">Save output in the <ph id="1">`temp`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Pop_Clip`</ph><ept id="2">**</ept>
+<ph id="4">:::{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Clipping the population raster with the cyclone buffer
+<ph id="1">:::</ph>
+<ph id="2">::::{dropdown} </ph>Intermediate Result: Clip Population Raster Alyer
+<ph id="3">:::{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG</ph></source>
+<target xml:lang="fr">Clipping the population raster with the cyclone buffer
+<ph id="1">:::</ph>
+<ph id="2">::::{dropdown} </ph>Intermediate Result: Clip Population Raster Alyer
+<ph id="3">:::{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Your intermediate results should look similar to this.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Your intermediate results should look similar to this.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Calculate total exposed population<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Calculate total exposed population<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Zonal Statistics`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for <ph id="2">`Zonal Statistics`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Input vector layer: <ph id="1">`mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`</ph></source>
+<target xml:lang="fr">Input vector layer: <ph id="1">`mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Raster layer: <ph id="1">`Harald_Pop_Clip`</ph></source>
+<target xml:lang="fr">Raster layer: <ph id="1">`Harald_Pop_Clip`</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Statistic to calculate: <ph id="1">`Sum`</ph></source>
+<target xml:lang="fr">Statistic to calculate: <ph id="1">`Sum`</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Field prefix: e.g., <ph id="1">`exposed_population_`</ph></source>
+<target xml:lang="fr">Field prefix: e.g., <ph id="1">`exposed_population_`</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Save the updated vector layer in the <ph id="1">`result`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Exposed_Populationg`</ph><ept id="2">**</ept></source>
+<target xml:lang="fr">Save the updated vector layer in the <ph id="1">`result`</ph> folder as: <bpt id="2">**</bpt><ph id="3">`Harald_Exposed_Populationg`</ph><ept id="2">**</ept></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">The result will be a new column in the attribute table of the <ph id="1">`mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg`</ph> layer, showing the total population within the cyclone buffer per district.
+<ph id="2">:::{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG</ph></source>
+<target xml:lang="fr">The result will be a new column in the attribute table of the <ph id="1">`mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg`</ph> layer, showing the total population within the cyclone buffer per district.
+<ph id="2">:::{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Calculating the population exposed to the cyclone per district using the worldpop raster.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Calculating the population exposed to the cyclone per district using the worldpop raster.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Visualise the affected population by classifying the results<ept id="1">**</ept>:
+Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
+To do this, we'll apply a <bpt id="2">**</bpt>graduated classification<ept id="2">**</ept> to the <ph id="3">`Harald_Exposed_Population`</ph> layer using the new population field created by the Zonal Statistics tool.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Visualise the affected population by classifying the results<ept id="1">**</ept>:
+Now that Aina has estimated the exposed population in each district, she wants to clearly show the differences across regions on the map.
+To do this, we'll apply a <bpt id="2">**</bpt>graduated classification<ept id="2">**</ept> to the <ph id="3">`Harald_Exposed_Population`</ph> layer using the new population field created by the Zonal Statistics tool.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Layers panel<ept id="1">**</ept>, right-click on the layer <ph id="2">`Harald_Exposed_Population`</ph> and choose <ph id="3">`Properties`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Layers panel<ept id="1">**</ept>, right-click on the layer <ph id="2">`Harald_Exposed_Population`</ph> and choose <ph id="3">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Go to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab on the left.</source>
+<target xml:lang="fr">Go to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab on the left.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">At the top of the window, change the style from <ph id="1">`Single Symbol`</ph> to <ph id="2">`Graduated`</ph>.</source>
+<target xml:lang="fr">At the top of the window, change the style from <ph id="1">`Single Symbol`</ph> to <ph id="2">`Graduated`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Value<ept id="1">**</ept> drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. <ph id="2">`exposed_population_sum`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Value<ept id="1">**</ept> drop-down menu, select the field that contains the population sum. It typically starts with the prefix you defined earlier, e.g. <ph id="2">`exposed_population_sum`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Set the <bpt id="1">**</bpt>color ramp<ept id="1">**</ept> to one that suits your map (e.g. <ph id="2">`Reds`</ph>).</source>
+<target xml:lang="fr">Set the <bpt id="1">**</bpt>color ramp<ept id="1">**</ept> to one that suits your map (e.g. <ph id="2">`Reds`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Choose a <bpt id="1">**</bpt>classification mode<ept id="1">**</ept> (e.g. <ph id="2">`Quantile`</ph>, <ph id="3">`Natural Breaks`</ph>, or <ph id="4">`Equal Interval`</ph>) and select the number of classes (e.g. 5).</source>
+<target xml:lang="fr">Choose a <bpt id="1">**</bpt>classification mode<ept id="1">**</ept> (e.g. <ph id="2">`Quantile`</ph>, <ph id="3">`Natural Breaks`</ph>, or <ph id="4">`Equal Interval`</ph>) and select the number of classes (e.g. 5).</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph> to generate the classification.</source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph> to generate the classification.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph> and then <ph id="2">`OK`</ph> to display the classified map.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph> and then <ph id="2">`OK`</ph> to display the classified map.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+You can adjust class boundaries or labels by double-clicking on each class entry.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+You can adjust class boundaries or labels by double-clicking on each class entry.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Classifying the exposed population into five classes.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Classifying the exposed population into five classes.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Results <bpt id="1">&lt;a id="results"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Results <bpt id="1">&lt;a id="results"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Your results should look something like this:</source>
+<target xml:lang="fr">Your results should look something like this:</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: the_world_result</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: the_world_result</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Visualising the 5 classes.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Visualising the 5 classes.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

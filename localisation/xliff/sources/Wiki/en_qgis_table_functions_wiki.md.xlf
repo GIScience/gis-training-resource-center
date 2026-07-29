@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_table_functions_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Manipulating the Attribute Table <bpt id="1">&lt;a id="manipulating-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Manipulating the Attribute Table <bpt id="1">&lt;a id="manipulating-the-attribute-table"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Add field <bpt id="1">&lt;a id="add-field"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Add field <bpt id="1">&lt;a id="add-field"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Add a field to the attribute table.</source>
+<target xml:lang="fr">Add a field to the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Depending on the information to be entered in the attribute field, the correct data type must be selected.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Depending on the information to be entered in the attribute field, the correct data type must be selected.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Add a field for population density, data type: Float or Double or Real (floating point numbers)
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Add a field for population density, data type: Float or Double or Real (floating point numbers)
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Delete field <bpt id="1">&lt;a id="delete-field"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Delete field <bpt id="1">&lt;a id="delete-field"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Delete a field from the attribute table.</source>
+<target xml:lang="fr">Delete a field from the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Delete all unused/unnecessary fields from the layer.
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Delete all unused/unnecessary fields from the layer.
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Calculate Field <bpt id="1">&lt;a id="calculate-field"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Calculate Field <bpt id="1">&lt;a id="calculate-field"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Calculate the attribute values for a field, e.g. based on the values of other fields.</source>
+<target xml:lang="fr">Calculate the attribute values for a field, e.g. based on the values of other fields.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In QGIS you can create a new field or update an existing field.</source>
+<target xml:lang="fr">In QGIS you can create a new field or update an existing field.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Check if the data type of the field and your calculation match. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Check if the data type of the field and your calculation match. For example, if you are calculating a ratio (e.g. density), the field should not be of type integer.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Calculate the population density using the already existing fields Population and Area.
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Calculate the population density using the already existing fields Population and Area.
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Basic Statistics for Fields <bpt id="1">&lt;a id="basic-statistics-for-fields"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic Statistics for Fields <bpt id="1">&lt;a id="basic-statistics-for-fields"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Generates a statistic for a specific field in the attribute table.</source>
+<target xml:lang="fr">Generates a statistic for a specific field in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Statistics for the field population density for all countries, what is the maximum value, average, etc.?
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Statistics for the field population density for all countries, what is the maximum value, average, etc.?
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Statistics by Categories <bpt id="1">&lt;a id="statistics-by-categories"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Statistics by Categories <bpt id="1">&lt;a id="statistics-by-categories"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Create aggregated statistics for categories.</source>
+<target xml:lang="fr">Create aggregated statistics for categories.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">For which fields in the attribute table should statistics be calculated?</source>
+<target xml:lang="fr">For which fields in the attribute table should statistics be calculated?</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Which field in the attribute table contains the category?</source>
+<target xml:lang="fr">Which field in the attribute table contains the category?</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: How many cities with more than 300,000 inhabitants are there per country? For each country: How many people live in the largest agglomeration?
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: How many cities with more than 300,000 inhabitants are there per country? For each country: How many people live in the largest agglomeration?
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

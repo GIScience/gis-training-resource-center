@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Guide d'utilisation de la caméra: projet AILAS <bpt id="1">&lt;a id="guide-dutilisation-de-la-camera-projet-ailas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Guide d'utilisation de la caméra: projet AILAS <bpt id="1">&lt;a id="guide-dutilisation-de-la-camera-projet-ailas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Cette documentation fournit des instructions sur la configuration et l’utilisation des caméras GoPro pour l’acquisition de données sur le terrain, incluant des instructions détaillées pour toutes les étapes nécessaires, des listes de contrôle pour le début et la fin de l’acquisition des données, ainsi que des conseils pour le dépannage.</source>
+<target xml:lang="fr">Cette documentation fournit des instructions sur la configuration et l’utilisation des caméras GoPro pour l’acquisition de données sur le terrain, incluant des instructions détaillées pour toutes les étapes nécessaires, des listes de contrôle pour le début et la fin de l’acquisition des données, ainsi que des conseils pour le dépannage.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Liste de vérification du matériel <bpt id="1">&lt;a id="liste-de-verification-du-materiel"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Liste de vérification du matériel <bpt id="1">&lt;a id="liste-de-verification-du-materiel"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Avant le départ, assurez-vous de disposer des éléments suivants :</source>
+<target xml:lang="fr">Avant le départ, assurez-vous de disposer des éléments suivants :</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Équipement</source>
+<target xml:lang="fr">Équipement</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">GoPro Hero 13</source>
+<target xml:lang="fr">GoPro Hero 13</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Carte MicroSD 1 To</source>
+<target xml:lang="fr">Carte MicroSD 1 To</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Batterie externe (Powerbank)</source>
+<target xml:lang="fr">Batterie externe (Powerbank)</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Câble de recharge USB-C</source>
+<target xml:lang="fr">Câble de recharge USB-C</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Fixation ventouse pour GoPro</source>
+<target xml:lang="fr">Fixation ventouse pour GoPro</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Copie imprimée de ce guide</source>
+<target xml:lang="fr">Copie imprimée de ce guide</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>3
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>3
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf5_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Installation de la caméra <bpt id="1">&lt;a id="installation-de-la-camera"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Installation de la caméra <bpt id="1">&lt;a id="installation-de-la-camera"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Choisir l’emplacement de fixation <bpt id="1">&lt;a id="choisir-lemplacement-de-fixation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Choisir l’emplacement de fixation <bpt id="1">&lt;a id="choisir-lemplacement-de-fixation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">1. Fixez à l’intérieur de la voiture, <bpt id="1">**</bpt>au centre du pare-brise<ept id="1">**</ept> ou <bpt id="2">**</bpt>derrière le rétroviseur<ept id="2">**</ept></source>
+<target xml:lang="fr">1. Fixez à l’intérieur de la voiture, <bpt id="1">**</bpt>au centre du pare-brise<ept id="1">**</ept> ou <bpt id="2">**</bpt>derrière le rétroviseur<ept id="2">**</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Évitez d’obstruer la vue du conducteur.</source>
+<target xml:lang="fr">Évitez d’obstruer la vue du conducteur.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">2. Si nécessaire, nettoyez le verre avant de fixer la fixation ventouse</source>
+<target xml:lang="fr">2. Si nécessaire, nettoyez le verre avant de fixer la fixation ventouse</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Fixer la GoPro avec la fixation ventouse <bpt id="1">&lt;a id="fixer-la-gopro-avec-la-fixation-ventouse"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Fixer la GoPro avec la fixation ventouse <bpt id="1">&lt;a id="fixer-la-gopro-avec-la-fixation-ventouse"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">1. Appuyez fermement la ventouse contre le pare-brise</source>
+<target xml:lang="fr">1. Appuyez fermement la ventouse contre le pare-brise</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Assurez-vous que le levier de verrouillage est en position HAUTE</source>
+<target xml:lang="fr">Assurez-vous que le levier de verrouillage est en position HAUTE</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">2. Appuyez sur le bouton de fixation avec une bonne force</source>
+<target xml:lang="fr">2. Appuyez sur le bouton de fixation avec une bonne force</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">3. Abaissez le levier de verrouillage pour <bpt id="1">**</bpt>sécuriser<ept id="1">**</ept> la fixation</source>
+<target xml:lang="fr">3. Abaissez le levier de verrouillage pour <bpt id="1">**</bpt>sécuriser<ept id="1">**</ept> la fixation</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Secouez légèrement la fixation pour vérifier qu’elle tient bien</source>
+<target xml:lang="fr">Secouez légèrement la fixation pour vérifier qu’elle tient bien</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">4. Fixez la GoPro avec la fixation clip et la vis papillon sur la fixation</source>
+<target xml:lang="fr">4. Fixez la GoPro avec la fixation clip et la vis papillon sur la fixation</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Assurez-vous que la GoPro est équipée de la fixation clip</source>
+<target xml:lang="fr">Assurez-vous que la GoPro est équipée de la fixation clip</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">5. Ajustez l’<bpt id="1">**</bpt>angle de la caméra<ept id="1">**</ept></source>
+<target xml:lang="fr">5. Ajustez l’<bpt id="1">**</bpt>angle de la caméra<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Vérifiez que l’objectif est orienté vers l’avant, parallèle à la route <ph id="1">&lt;br></ph> et que le champ de vision de la caméra capture la route</source>
+<target xml:lang="fr">Vérifiez que l’objectif est orienté vers l’avant, parallèle à la route <ph id="1">&lt;br></ph> et que le champ de vision de la caméra capture la route</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Astuce pour un alignement optimal de la caméra
+<ph id="2">:class: tip</ph>
+Pour affiner l’angle de la caméra et obtenir un alignement optimal, dévissez légèrement la vis qui relie la GoPro à la fixation clip et ajustez légèrement l’angle de la caméra.<ph id="3">  </ph>
+Pour éviter que la caméra ne soit inclinée sur un côté, assurez-vous que le logo « GoPro » sur la fixation ventouse est orienté bien droit vers le haut lors de la fixation.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Astuce pour un alignement optimal de la caméra
+<ph id="2">:class: tip</ph>
+Pour affiner l’angle de la caméra et obtenir un alignement optimal, dévissez légèrement la vis qui relie la GoPro à la fixation clip et ajustez légèrement l’angle de la caméra.<ph id="3">  </ph>
+Pour éviter que la caméra ne soit inclinée sur un côté, assurez-vous que le logo « GoPro » sur la fixation ventouse est orienté bien droit vers le haut lors de la fixation.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Alimentation <bpt id="1">&lt;a id="alimentation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Alimentation <bpt id="1">&lt;a id="alimentation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Connectez la GoPro à la batterie externe (Powerbank) avec le câble USB-C</source>
+<target xml:lang="fr">Connectez la GoPro à la batterie externe (Powerbank) avec le câble USB-C</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Placez la batterie externe <bpt id="1">**</bpt>en toute sécurité<ept id="1">**</ept> (par ex. boîte à gants ou tableau de bord)</source>
+<target xml:lang="fr">Placez la batterie externe <bpt id="1">**</bpt>en toute sécurité<ept id="1">**</ept> (par ex. boîte à gants ou tableau de bord)</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">La batterie doit être stockée de manière sûre en cas de freinage brusque</source>
+<target xml:lang="fr">La batterie doit être stockée de manière sûre en cas de freinage brusque</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Vérifiez la connexion d’alimentation avant de conduire</source>
+<target xml:lang="fr">Vérifiez la connexion d’alimentation avant de conduire</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Le symbole de charge doit être visible en haut à droite de l’écran de la GoPro</source>
+<target xml:lang="fr">Le symbole de charge doit être visible en haut à droite de l’écran de la GoPro</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Utilisation de la prise de votre véhicule
+<ph id="2">:class: tip</ph>
+Si votre véhicule dispose d’une prise adaptée pour se connecter au port USB-C de la caméra, vous pouvez l’utiliser à la place de la batterie externe. N’oubliez pas de débrancher après le trajet.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Utilisation de la prise de votre véhicule
+<ph id="2">:class: tip</ph>
+Si votre véhicule dispose d’une prise adaptée pour se connecter au port USB-C de la caméra, vous pouvez l’utiliser à la place de la batterie externe. N’oubliez pas de débrancher après le trajet.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<group id="sd1_ssf15" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf15_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Configuration de la capture d’images <bpt id="1">&lt;a id="configuration-de-la-capture-dimages"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configuration de la capture d’images <bpt id="1">&lt;a id="configuration-de-la-capture-dimages"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Paramétrage des réglages <bpt id="1">&lt;a id="parametrage-des-reglages"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Paramétrage des réglages <bpt id="1">&lt;a id="parametrage-des-reglages"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Les réglages de la caméra peuvent être facilement configurés en scannant le QR code fourni avec la GoPro. Il s’agit de la configuration standard.<ph id="1">  </ph>
+Si la configuration par QR code ne fonctionne pas, le <bpt id="2">**</bpt>réglage manuel<ept id="2">**</ept> est décrit ci-dessous.<ph id="3">  </ph>
+<bpt id="4">**</bpt>Dans la mesure du possible, utilisez toujours la configuration par QR code.<ept id="4">**</ept></source>
+<target xml:lang="fr">Les réglages de la caméra peuvent être facilement configurés en scannant le QR code fourni avec la GoPro. Il s’agit de la configuration standard.<ph id="1">  </ph>
+Si la configuration par QR code ne fonctionne pas, le <bpt id="2">**</bpt>réglage manuel<ept id="2">**</ept> est décrit ci-dessous.<ph id="3">  </ph>
+<bpt id="4">**</bpt>Dans la mesure du possible, utilisez toujours la configuration par QR code.<ept id="4">**</ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Maintenez enfoncé le bouton <bpt id="1">**</bpt>Power/Mode<ept id="1">**</ept> pour allumer la GoPro.</source>
+<target xml:lang="fr">Maintenez enfoncé le bouton <bpt id="1">**</bpt>Power/Mode<ept id="1">**</ept> pour allumer la GoPro.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Scannez le QR code suivant avec la GoPro en orientant l’objectif vers le code</source>
+<target xml:lang="fr">Scannez le QR code suivant avec la GoPro en orientant l’objectif vers le code</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Si réussi, une icône QR_Code avec une coche rouge devrait apparaître</source>
+<target xml:lang="fr">Si réussi, une icône QR_Code avec une coche rouge devrait apparaître</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Vérifiez que « AILAS » est affiché dans l’aperçu des modes en bas au centre de l’écran</source>
+<target xml:lang="fr">Vérifiez que « AILAS » est affiché dans l’aperçu des modes en bas au centre de l’écran</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Si la caméra est déjà configurée en mode « AILAS », vous n’avez pas besoin de paramétrer les réglages.</source>
+<target xml:lang="fr">Si la caméra est déjà configurée en mode « AILAS », vous n’avez pas besoin de paramétrer les réglages.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Configuration par QR code <bpt id="1">&lt;a id="configuration-par-qr-code"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configuration par QR code <bpt id="1">&lt;a id="configuration-par-qr-code"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Scanner le QR code
+<ph id="2">:class: tip</ph>
+Si
+Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditions de luminosité différentes ou en rapprochant la caméra du code.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Scanner le QR code
+<ph id="2">:class: tip</ph>
+Si
+Si le scan du QR code ne fonctionne pas immédiatement, essayez dans des conditions de luminosité différentes ou en rapprochant la caméra du code.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Configuration manuelle alternative <bpt id="1">&lt;a id="configuration-manuelle-alternative"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configuration manuelle alternative <bpt id="1">&lt;a id="configuration-manuelle-alternative"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Remarques</source>
+<target xml:lang="fr">Remarques</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">1. Appuyez sur le bouton <bpt id="1">**</bpt>Mode/Power<ept id="1">**</ept> jusqu’à ce que l’écran affiche <bpt id="2">*</bpt>« Accéléré »<ept id="2">*</ept> <ph id="3">&lt;!-- Icône --></ph></source>
+<target xml:lang="fr">1. Appuyez sur le bouton <bpt id="1">**</bpt>Mode/Power<ept id="1">**</ept> jusqu’à ce que l’écran affiche <bpt id="2">*</bpt>« Accéléré »<ept id="2">*</ept> <ph id="3">&lt;!-- Icône --></ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">2. Touchez l’icône <bpt id="1">**</bpt>paramètres<ept id="1">**</ept> (en bas à droite) et configurez comme suit :<ph id="2">&lt;br></ph> • <bpt id="3">**</bpt>Format<ept id="3">**</ept> : Photo<ph id="4">&lt;br></ph> • <bpt id="5">**</bpt>Objectif numérique<ept id="5">**</ept> : Large<ph id="6">&lt;br></ph> • <bpt id="7">**</bpt>Capture<ept id="7">**</ept> : Intervalle = 5 s</source>
+<target xml:lang="fr">2. Touchez l’icône <bpt id="1">**</bpt>paramètres<ept id="1">**</ept> (en bas à droite) et configurez comme suit :<ph id="2">&lt;br></ph> • <bpt id="3">**</bpt>Format<ept id="3">**</ept> : Photo<ph id="4">&lt;br></ph> • <bpt id="5">**</bpt>Objectif numérique<ept id="5">**</ept> : Large<ph id="6">&lt;br></ph> • <bpt id="7">**</bpt>Capture<ept id="7">**</ept> : Intervalle = 5 s</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Laissez les autres réglages inchangés</source>
+<target xml:lang="fr">Laissez les autres réglages inchangés</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">3. Touchez la <bpt id="1">**</bpt>flèche de retour<ept id="1">**</ept> pour enregistrer et revenir à l’écran principal.</source>
+<target xml:lang="fr">3. Touchez la <bpt id="1">**</bpt>flèche de retour<ept id="1">**</ept> pour enregistrer et revenir à l’écran principal.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">En bas au centre de l’écran doit maintenant s’afficher : « Time Lapse Photo 5s W »</source>
+<target xml:lang="fr">En bas au centre de l’écran doit maintenant s’afficher : « Time Lapse Photo 5s W »</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">4. Maintenez le bouton <bpt id="1">**</bpt>Power<ept id="1">**</ept> pour éteindre la GoPro à la fin du trajet.</source>
+<target xml:lang="fr">4. Maintenez le bouton <bpt id="1">**</bpt>Power<ept id="1">**</ept> pour éteindre la GoPro à la fin du trajet.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">La caméra émettra quelques bips lors de l’extinction</source>
+<target xml:lang="fr">La caméra émettra quelques bips lors de l’extinction</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Liste de vérification avant de prendre la route <bpt id="1">&lt;a id="liste-de-verification-avant-de-prendre-la-route"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Liste de vérification avant de prendre la route <bpt id="1">&lt;a id="liste-de-verification-avant-de-prendre-la-route"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Configuration de la caméra <bpt id="1">&lt;a id="configuration-de-la-camera"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configuration de la caméra <bpt id="1">&lt;a id="configuration-de-la-camera"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Fixez la caméra sur le pare-brise, orientée droit devant.</source>
+<target xml:lang="fr">Fixez la caméra sur le pare-brise, orientée droit devant.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Connectez la Powerbank à la caméra avec le câble USB-C.</source>
+<target xml:lang="fr">Connectez la Powerbank à la caméra avec le câble USB-C.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Rangez la Powerbank dans un endroit sûr pour qu’elle ne bouge pas pendant la conduite.</source>
+<target xml:lang="fr">Rangez la Powerbank dans un endroit sûr pour qu’elle ne bouge pas pendant la conduite.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Démarrage de l’enregistrement <bpt id="1">&lt;a id="demarrage-de-lenregistrement"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Démarrage de l’enregistrement <bpt id="1">&lt;a id="demarrage-de-lenregistrement"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’allume.</source>
+<target xml:lang="fr">Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’allume.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Scannez le QR code pour configurer les réglages (si cela ne fonctionne pas, utilisez la configuration manuelle).</source>
+<target xml:lang="fr">Scannez le QR code pour configurer les réglages (si cela ne fonctionne pas, utilisez la configuration manuelle).</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Attendez environ 1 minute pour que la caméra capte le signal GPS</source>
+<target xml:lang="fr">Attendez environ 1 minute pour que la caméra capte le signal GPS</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Appuyez sur le bouton déclencheur supérieur (le gros bouton sur le dessus) pour commencer la capture.</source>
+<target xml:lang="fr">Appuyez sur le bouton déclencheur supérieur (le gros bouton sur le dessus) pour commencer la capture.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Vérifications finales avant de conduire <bpt id="1">&lt;a id="verifications-finales-avant-de-conduire"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vérifications finales avant de conduire <bpt id="1">&lt;a id="verifications-finales-avant-de-conduire"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">La caméra est-elle bien fixée ?</source>
+<target xml:lang="fr">La caméra est-elle bien fixée ?</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">La caméra est-elle de niveau et orientée droit devant ?</source>
+<target xml:lang="fr">La caméra est-elle de niveau et orientée droit devant ?</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">La GoPro clignote-t-elle toutes les 5 secondes (prise de photos) ?</source>
+<target xml:lang="fr">La GoPro clignote-t-elle toutes les 5 secondes (prise de photos) ?</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">La Powerbank est-elle connectée et en train de recharger la GoPro ?</source>
+<target xml:lang="fr">La Powerbank est-elle connectée et en train de recharger la GoPro ?</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Le réglage de l’orientation de la caméra est-il correct ? Si le menu à l’arrière de l’écran de la caméra s’affiche à l’envers, le réglage est incorrect.</source>
+<target xml:lang="fr">Le réglage de l’orientation de la caméra est-il correct ? Si le menu à l’arrière de l’écran de la caméra s’affiche à l’envers, le réglage est incorrect.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Liste de vérification après la conduite <bpt id="1">&lt;a id="liste-de-verification-apres-la-conduite"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Liste de vérification après la conduite <bpt id="1">&lt;a id="liste-de-verification-apres-la-conduite"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Arrêt de l’enregistrement <bpt id="1">&lt;a id="arret-de-lenregistrement"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Arrêt de l’enregistrement <bpt id="1">&lt;a id="arret-de-lenregistrement"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Appuyez sur le bouton déclencheur supérieur pour arrêter la capture.</source>
+<target xml:lang="fr">Appuyez sur le bouton déclencheur supérieur pour arrêter la capture.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’éteigne.</source>
+<target xml:lang="fr">Maintenez le bouton d’alimentation latéral jusqu’à ce que l’écran s’éteigne.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Débranchez le câble USB-C de la GoPro.</source>
+<target xml:lang="fr">Débranchez le câble USB-C de la GoPro.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Inspection du matériel <bpt id="1">&lt;a id="inspection-du-materiel"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Inspection du matériel <bpt id="1">&lt;a id="inspection-du-materiel"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Vérifiez que le support est toujours bien serré et que la GoPro n’a pas été endommagée.</source>
+<target xml:lang="fr">Vérifiez que le support est toujours bien serré et que la GoPro n’a pas été endommagée.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Nettoyez l’objectif de la caméra s’il est poussiéreux ou sale.</source>
+<target xml:lang="fr">Nettoyez l’objectif de la caméra s’il est poussiéreux ou sale.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Laissez la GoPro solidement fixée si c’est sûr, ou rangez-la dans son étui ou son sac.</source>
+<target xml:lang="fr">Laissez la GoPro solidement fixée si c’est sûr, ou rangez-la dans son étui ou son sac.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Recharger la Powerbank (le cas échéant) <bpt id="1">&lt;a id="recharger-la-powerbank-le-cas-echeant"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Recharger la Powerbank (le cas échéant) <bpt id="1">&lt;a id="recharger-la-powerbank-le-cas-echeant"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Branchez la Powerbank sur une prise murale pour la recharger pendant la nuit.</source>
+<target xml:lang="fr">Branchez la Powerbank sur une prise murale pour la recharger pendant la nuit.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Signaler tout problème <bpt id="1">&lt;a id="signaler-tout-probleme"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Signaler tout problème <bpt id="1">&lt;a id="signaler-tout-probleme"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Contactez immédiatement le support technique si :</source>
+<target xml:lang="fr">Contactez immédiatement le support technique si :</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">La GoPro n’a pas fonctionné</source>
+<target xml:lang="fr">La GoPro n’a pas fonctionné</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Le support est tombé et ne peut pas être réinstallé</source>
+<target xml:lang="fr">Le support est tombé et ne peut pas être réinstallé</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">La Powerbank ne s’est pas chargée</source>
+<target xml:lang="fr">La Powerbank ne s’est pas chargée</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Quelque chose semble cassé ou inhabituel</source>
+<target xml:lang="fr">Quelque chose semble cassé ou inhabituel</target>
+</trans-unit>
+<group id="sd1_ssf45" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf45_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Conseils de dépannage <bpt id="1">&lt;a id="conseils-de-depannage"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conseils de dépannage <bpt id="1">&lt;a id="conseils-de-depannage"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Problème</source>
+<target xml:lang="fr">Problème</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="fr">Solution</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">La GoPro ne s’allume pas</source>
+<target xml:lang="fr">La GoPro ne s’allume pas</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Vérifiez le niveau de la batterie ou connectez la Powerbank</source>
+<target xml:lang="fr">Vérifiez le niveau de la batterie ou connectez la Powerbank</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Les photos ne sont pas prises</source>
+<target xml:lang="fr">Les photos ne sont pas prises</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Assurez-vous que le mode « AILAS » est actif et que le déclencheur est pressé</source>
+<target xml:lang="fr">Assurez-vous que le mode « AILAS » est actif et que le déclencheur est pressé</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">La Powerbank ne charge pas</source>
+<target xml:lang="fr">La Powerbank ne charge pas</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Vérifiez la connexion du câble ; essayez un autre port USB</source>
+<target xml:lang="fr">Vérifiez la connexion du câble ; essayez un autre port USB</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Le support à ventouse se détache</source>
+<target xml:lang="fr">Le support à ventouse se détache</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Nettoyez la vitre et refixez-le (à un autre endroit)</source>
+<target xml:lang="fr">Nettoyez la vitre et refixez-le (à un autre endroit)</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">La GoPro émet des bips/surchauffe</source>
+<target xml:lang="fr">La GoPro émet des bips/surchauffe</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Éteignez-la pendant 5 min à l’ombre, puis reprenez</source>
+<target xml:lang="fr">Éteignez-la pendant 5 min à l’ombre, puis reprenez</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Le QR code n’est pas scanné</source>
+<target xml:lang="fr">Le QR code n’est pas scanné</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Utilisez un autre code ou effectuez une configuration manuelle</source>
+<target xml:lang="fr">Utilisez un autre code ou effectuez une configuration manuelle</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Dépannage : Menu à l’envers <bpt id="1">&lt;a id="depannage-menu-a-lenvers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Dépannage : Menu à l’envers <bpt id="1">&lt;a id="depannage-menu-a-lenvers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Si le menu s’affiche à l’envers sur l’écran de la caméra comme dans l’image ci-dessous, les images seront également enregistrées avec une mauvaise orientation.</source>
+<target xml:lang="fr">Si le menu s’affiche à l’envers sur l’écran de la caméra comme dans l’image ci-dessous, les images seront également enregistrées avec une mauvaise orientation.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Procédez comme suit pour corriger le problème avant de commencer à enregistrer :</source>
+<target xml:lang="fr">Procédez comme suit pour corriger le problème avant de commencer à enregistrer :</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Faites glisser vers le bas depuis le haut de l’écran pour ouvrir le menu des paramètres.</source>
+<target xml:lang="fr">Faites glisser vers le bas depuis le haut de l’écran pour ouvrir le menu des paramètres.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Désactivez le verrouillage de l’orientation :</source>
+<target xml:lang="fr">Désactivez le verrouillage de l’orientation :</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Scannez à nouveau le QR code pour vous assurer qu’aucun autre paramètre n’a été modifié par erreur.</source>
+<target xml:lang="fr">Scannez à nouveau le QR code pour vous assurer qu’aucun autre paramètre n’a été modifié par erreur.</target>
+</trans-unit>
+<group id="sd1_ssf50" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf50_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph>
+---
+<ph id="2">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph>
+---
+<ph id="2">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Contact support <bpt id="1">&lt;a id="contact-support"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Contact support <bpt id="1">&lt;a id="contact-support"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">En cas de problème ou de doute, n'hesitez pas à contacter :</source>
+<target xml:lang="fr">En cas de problème ou de doute, n'hesitez pas à contacter :</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Alec Schulze-Eckel &amp; Oliver Fritz<ph id="1">&lt;br></ph>
+humanitarian_gi@heigit.org</source>
+<target xml:lang="fr">Alec Schulze-Eckel &amp; Oliver Fritz<ph id="1">&lt;br></ph>
+humanitarian_gi@heigit.org</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

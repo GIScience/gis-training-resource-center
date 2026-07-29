@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_module_4_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Visualisation of Geodata and Map Making <bpt id="1">&lt;a id="visualisation-of-geodata-and-map-making"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualisation of Geodata and Map Making <bpt id="1">&lt;a id="visualisation-of-geodata-and-map-making"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This chapter focuses on the visualisation and representation of Geodata. The first chapter introduces visual variables, which are the main elements of how to select a symbol to represent geographic information. Visual variables are the graphical means for visually transcribing information. This chapter will also cover how to set up symbols, colours, labels, and styles within QGIS. The second chapter is dedicated to the creation of finished (and printable) maps. In QGIS, this is done in the Print Layout Composer. The last chapter, "Examples of Good Map Design", showcases good map design explaining the good design choices within their context. This chapter also covers some of the common errors in Map design.</source>
+<target xml:lang="fr">This chapter focuses on the visualisation and representation of Geodata. The first chapter introduces visual variables, which are the main elements of how to select a symbol to represent geographic information. Visual variables are the graphical means for visually transcribing information. This chapter will also cover how to set up symbols, colours, labels, and styles within QGIS. The second chapter is dedicated to the creation of finished (and printable) maps. In QGIS, this is done in the Print Layout Composer. The last chapter, "Examples of Good Map Design", showcases good map design explaining the good design choices within their context. This chapter also covers some of the common errors in Map design.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 150 600</ph></source>
+<target xml:lang="fr"><ph id="1">:::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 150 600</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Symbology and Colours<ept id="2">](/content/Module_4/en_qgis_map_design_I.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Symbology and Colours<ept id="2">](/content/Module_4/en_qgis_map_design_I.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">know the different visual variables,</source>
+<target xml:lang="fr">know the different visual variables,</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">know what to consider when visualising certain types of information,</source>
+<target xml:lang="fr">know what to consider when visualising certain types of information,</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">know how to load and save styles.</source>
+<target xml:lang="fr">know how to load and save styles.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Styling Vector Data<ept id="2">](/content/Module_4/en_qgis_styling_vector_data.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Styling Vector Data<ept id="2">](/content/Module_4/en_qgis_styling_vector_data.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">know how to open the styling panel,</source>
+<target xml:lang="fr">know how to open the styling panel,</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">know how to configure the symbology and colour for vector data.</source>
+<target xml:lang="fr">know how to configure the symbology and colour for vector data.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Labels for Vector Data<ept id="2">](/content/Module_4/en_qgis_labels_vector.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Labels for Vector Data<ept id="2">](/content/Module_4/en_qgis_labels_vector.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">know how to set up labels for vector data and know what to consider when setting up labels.</source>
+<target xml:lang="fr">know how to set up labels for vector data and know what to consider when setting up labels.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 4: Exporting and Importing Styles<ept id="2">](/content/Module_4/en_qgis_working_with_styles.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 4: Exporting and Importing Styles<ept id="2">](/content/Module_4/en_qgis_working_with_styles.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">know how to import and export styles in QGIS,</source>
+<target xml:lang="fr">know how to import and export styles in QGIS,</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">know how to share styles with colleagues to facilitate collaborations.</source>
+<target xml:lang="fr">know how to share styles with colleagues to facilitate collaborations.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 5: Symbologiy for Raster Data<ept id="2">](/content/Module_4/en_qgis_symbology_raster.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 5: Symbologiy for Raster Data<ept id="2">](/content/Module_4/en_qgis_symbology_raster.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">know what's different about styling raster data compared to vector data,</source>
+<target xml:lang="fr">know what's different about styling raster data compared to vector data,</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">know how to set up a colour ramp for raster data.</source>
+<target xml:lang="fr">know how to set up a colour ramp for raster data.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 6: The Print Layout<ept id="2">](/content/Module_4/en_qgis_map_design_2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 6: The Print Layout<ept id="2">](/content/Module_4/en_qgis_map_design_2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">know the basics of good map composition,</source>
+<target xml:lang="fr">know the basics of good map composition,</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">know which elements are essential for a completed map,</source>
+<target xml:lang="fr">know which elements are essential for a completed map,</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">know how to create map templates,</source>
+<target xml:lang="fr">know how to create map templates,</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">know how to use the Atlas function.</source>
+<target xml:lang="fr">know how to use the Atlas function.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 7: Understanding the Print Layout Composer<ept id="2">](/content/Module_4/en_qgis_understanding_print_layout.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 7: Understanding the Print Layout Composer<ept id="2">](/content/Module_4/en_qgis_understanding_print_layout.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">understand the print layout composer in QGIS,</source>
+<target xml:lang="fr">understand the print layout composer in QGIS,</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">know how to add and configure elements to the print layout,</source>
+<target xml:lang="fr">know how to add and configure elements to the print layout,</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">know how to export finished maps,</source>
+<target xml:lang="fr">know how to export finished maps,</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">know how to create and use map templates,</source>
+<target xml:lang="fr">know how to create and use map templates,</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">know how to use the Atlas function.</source>
+<target xml:lang="fr">know how to use the Atlas function.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 8: Good Map Design &amp; Semiological Errors<ept id="2">](/content/Module_4/en_qgis_map_examples.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 8: Good Map Design &amp; Semiological Errors<ept id="2">](/content/Module_4/en_qgis_map_examples.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">know a few examples of good map design and how to recreate them,</source>
+<target xml:lang="fr">know a few examples of good map design and how to recreate them,</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">know which semiological errors to avoid.</source>
+<target xml:lang="fr">know which semiological errors to avoid.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 4<ept id="2">](/content/Module_4/en_qgis_module_4_exercises.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 4<ept id="2">](/content/Module_4/en_qgis_module_4_exercises.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Here you can find all the exercises related to module 4.</source>
+<target xml:lang="fr">Here you can find all the exercises related to module 4.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

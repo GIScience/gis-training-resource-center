@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/intro.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<group id="sd1_ssf1" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/HeiGIT_Logo_base.svg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/HeiGIT_Logo_base.svg</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 75</ph>
+<ph id="2">name: HeiGIT Logo</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">height: 75</ph>
+<ph id="2">name: HeiGIT Logo</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">IFRC Network GIS Training Platform</source>
+<target xml:lang="fr">IFRC Network GIS Training Platform</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card} </ph>Teach GIS for Humanitarian Work
+Welcome to the IFRC Network GIS Training Platform.
+The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card} </ph>Teach GIS for Humanitarian Work
+Welcome to the IFRC Network GIS Training Platform.
+The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work in the Red Cross Red Crescent Network.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">How to use the IFRC Network GIS Training Platform</source>
+<target xml:lang="fr">How to use the IFRC Network GIS Training Platform</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>1 2 2 2
+<ph id="2">:gutter: 2</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>1 2 2 2
+<ph id="2">:gutter: 2</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph><bpt id="2">__</bpt><bpt id="3">[</bpt>Start teaching<ept id="3">](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)</ept><ept id="2">__</ept>
+<ph id="4">:link: ../content/Trainers_corner/en_TOT_intro</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph><bpt id="2">__</bpt><bpt id="3">[</bpt>Start teaching<ept id="3">](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)</ept><ept id="2">__</ept>
+<ph id="4">:link: ../content/Trainers_corner/en_TOT_intro</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">There is a dedicated <bpt id="1">[</bpt>section for trainers<ept id="1">](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)</ept> who want to use the platform.
+The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
+Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS.</source>
+<target xml:lang="fr">There is a dedicated <bpt id="1">[</bpt>section for trainers<ept id="1">](https://giscience.github.io/gis-training-resource-center/spanish/content/Trainers_corner/es_TOT_intro.html)</ept> who want to use the platform.
+The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
+Nevertheless, every component of the training material is designed to be utilized independently. In addition to the training plans, you'll discover a wealth of resources, ranging from best practices for training to innovative methods for teaching GIS.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph><bpt id="2">__</bpt><bpt id="3">[</bpt>Start learning<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)</ept><ept id="2">__</ept>
+<ph id="4">:link: ../content/Module_1/en_module_1_overview</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph><bpt id="2">__</bpt><bpt id="3">[</bpt>Start learning<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_module_1_overview.html)</ept><ept id="2">__</ept>
+<ph id="4">:link: ../content/Module_1/en_module_1_overview</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
+This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
+This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">What's Inside</source>
+<target xml:lang="fr">What's Inside</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.</source>
+<target xml:lang="fr">Trainers for QGIS are the principal audience of the IFRC Network GIS Training Platform. Here you can find training materials for teaching QGIS specific for the work in the Red Cross Red Crescent network for total beginners up to an intermediate level.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>1 3 3 3
+<ph id="2">:gutter: 2</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>1 3 3 3
+<ph id="2">:gutter: 2</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Wiki 📖
+<ph id="2">:link: ../content/Wiki/en_wiki_homepage</ph>
+The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Wiki 📖
+<ph id="2">:link: ../content/Wiki/en_wiki_homepage</ph>
+The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Modules 🎓
+<ph id="2">:link: ../content/en_modules_overview</ph>
+In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Modules 🎓
+<ph id="2">:link: ../content/en_modules_overview</ph>
+In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Exercises ✍️
+<ph id="2">:link: ../content/Exercise_tracks/en_exercise_tracks_overview</ph>
+In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Exercises ✍️
+<ph id="2">:link: ../content/Exercise_tracks/en_exercise_tracks_overview</ph>
+In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Learning Objectives</source>
+<target xml:lang="fr">Learning Objectives</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The primary objective is to empower individuals across various roles within the Red Cross Red Crescent network with robust QGIS skills.</source>
+<target xml:lang="fr">The primary objective is to empower individuals across various roles within the Red Cross Red Crescent network with robust QGIS skills.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.</source>
+<target xml:lang="fr">The QGIS skills offered on this platform span basic, intermediate, and advanced proficiency levels, with each level comprising three dedicated modules.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Basic Skills
+| Module 1 -  Introduction GIS                         | Module 2 - Working with geodata         | Module 3 - Basic GIS operations               |
+|------------------------------------------------------|-----------------------------------------|-----------------------------------------------|
+| Installation QGIS                                    | Layer concept in GIS                    | Data editing and creation                     |
+| Paper maps and cartography, digital maps distinction | Data Import                             | Feature attribute selection and editing       |
+| Introduction to GIS                                  | Geo features and attributes             | Feature selection                             |
+| QGIS interface description                           | Vector and raster data - basic concepts | Spatial queries: select by polygon + location |
+| WebGIS platform                                      | Vector data                             | Data  classification                          |
+| Mobile apps overview                                 | Vector file formats                     | Introduction to non-spatial queries           |
+| Examples of maps created with GIS                    | Basemap selection                       |                                               |
+|                                                      | Projections                             |                                               |
+|                                                      | Data sources                            |                                               |
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Basic Skills
+| Module 1 -  Introduction GIS                         | Module 2 - Working with geodata         | Module 3 - Basic GIS operations               |
+|------------------------------------------------------|-----------------------------------------|-----------------------------------------------|
+| Installation QGIS                                    | Layer concept in GIS                    | Data editing and creation                     |
+| Paper maps and cartography, digital maps distinction | Data Import                             | Feature attribute selection and editing       |
+| Introduction to GIS                                  | Geo features and attributes             | Feature selection                             |
+| QGIS interface description                           | Vector and raster data - basic concepts | Spatial queries: select by polygon + location |
+| WebGIS platform                                      | Vector data                             | Data  classification                          |
+| Mobile apps overview                                 | Vector file formats                     | Introduction to non-spatial queries           |
+| Examples of maps created with GIS                    | Basemap selection                       |                                               |
+|                                                      | Projections                             |                                               |
+|                                                      | Data sources                            |                                               |
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Intermediate Skills</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Intermediate Skills</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Module 4 - Representation</source>
+<target xml:lang="fr">Module 4 - Representation</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Module 5 - Intermediate GIS operations</source>
+<target xml:lang="fr">Module 5 - Intermediate GIS operations</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Module 6 - Data analysis with QGIS (<bpt id="1">*</bpt>under construction<ept id="1">*</ept>)</source>
+<target xml:lang="fr">Module 6 - Data analysis with QGIS (<bpt id="1">*</bpt>under construction<ept id="1">*</ept>)</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Visualisation</source>
+<target xml:lang="fr">Visualisation</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Geoprocessing: Buffer</source>
+<target xml:lang="fr">Geoprocessing: Buffer</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">QGIS plugins example: QuickOSM</source>
+<target xml:lang="fr">QGIS plugins example: QuickOSM</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Graphical variables</source>
+<target xml:lang="fr">Graphical variables</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Geoprocessing: Clip</source>
+<target xml:lang="fr">Geoprocessing: Clip</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Remote sensing/Introduction to raster data</source>
+<target xml:lang="fr">Remote sensing/Introduction to raster data</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Styling in QGIS</source>
+<target xml:lang="fr">Styling in QGIS</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Geoprocessing: Dissolve</source>
+<target xml:lang="fr">Geoprocessing: Dissolve</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Symbology and colours</source>
+<target xml:lang="fr">Symbology and colours</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Clip by nask</source>
+<target xml:lang="fr">Clip by nask</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Export or import styles</source>
+<target xml:lang="fr">Export or import styles</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Clip by extent</source>
+<target xml:lang="fr">Clip by extent</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Print layout</source>
+<target xml:lang="fr">Print layout</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Non-spatial queries</source>
+<target xml:lang="fr">Non-spatial queries</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Map composition</source>
+<target xml:lang="fr">Map composition</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Attribute table operations</source>
+<target xml:lang="fr">Attribute table operations</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Atlas</source>
+<target xml:lang="fr">Atlas</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Non-spatial joins</source>
+<target xml:lang="fr">Non-spatial joins</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Advanced Skills
+| Module 7 - Automation  | Module 8 - Remote sensing and raster data (<bpt id="2">*</bpt>under construction<ept id="2">*</ept>) | Module 9 - Accessibility (<bpt id="3">*</bpt>under construction<ept id="3">*</ept>) |
+|----------------------------|------------------------------------------------------------------|-------------------------------------------------|
+| Introduction to automation | Zonal statistics                                                 | Accessibility analyses                          |
+| The model designer         | Extraction of raster values                                      | Spatial analysis                                |
+|                            | Create elevation profile                                         |                                                 |
+|                            | Reclassify raster data                                           |                                                 |
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Advanced Skills
+| Module 7 - Automation  | Module 8 - Remote sensing and raster data (<bpt id="2">*</bpt>under construction<ept id="2">*</ept>) | Module 9 - Accessibility (<bpt id="3">*</bpt>under construction<ept id="3">*</ept>) |
+|----------------------------|------------------------------------------------------------------|-------------------------------------------------|
+| Introduction to automation | Zonal statistics                                                 | Accessibility analyses                          |
+| The model designer         | Extraction of raster values                                      | Spatial analysis                                |
+|                            | Create elevation profile                                         |                                                 |
+|                            | Reclassify raster data                                           |                                                 |
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">GIS in Anticipatory Action</source>
+<target xml:lang="fr">GIS in Anticipatory Action</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Anticipatory action in humanitarian work means taking early steps to reduce the impact of disasters before they fully occur, based on reliable forecasts and risk analysis. The International Federation of Red Cross and Red Crescent Societies applies this approach through Forecast-based Action, releasing pre-arranged funding when specific risk thresholds are reached. This enables local Red Cross and Red Crescent teams to act in advance—such as distributing cash, protecting assets, or preparing communities—helping to save lives, reduce losses, and strengthen resilience in a more timely and cost-effective way.</source>
+<target xml:lang="fr">Anticipatory action in humanitarian work means taking early steps to reduce the impact of disasters before they fully occur, based on reliable forecasts and risk analysis. The International Federation of Red Cross and Red Crescent Societies applies this approach through Forecast-based Action, releasing pre-arranged funding when specific risk thresholds are reached. This enables local Red Cross and Red Crescent teams to act in advance—such as distributing cash, protecting assets, or preparing communities—helping to save lives, reduce losses, and strengthen resilience in a more timely and cost-effective way.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Geographic Information Systems (GIS) play a central role in anticipatory action by helping humanitarian actors understand where and who will be affected before a hazard occurs. By combining forecast data with geospatial information—such as population distribution, infrastructure, and accessibility—GIS enables the identification and mapping of exposed and vulnerable communities. These analyses support data-driven decisions, such as where to prioritize early actions, how to reach people in time, and which areas face the greatest risk. Ultimately, GIS transforms complex data into actionable insights, allowing organizations like the Red Cross to target support more effectively, act earlier, and better protect lives and livelihoods.</source>
+<target xml:lang="fr">Geographic Information Systems (GIS) play a central role in anticipatory action by helping humanitarian actors understand where and who will be affected before a hazard occurs. By combining forecast data with geospatial information—such as population distribution, infrastructure, and accessibility—GIS enables the identification and mapping of exposed and vulnerable communities. These analyses support data-driven decisions, such as where to prioritize early actions, how to reach people in time, and which areas face the greatest risk. Ultimately, GIS transforms complex data into actionable insights, allowing organizations like the Red Cross to target support more effectively, act earlier, and better protect lives and livelihoods.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">In addition to the training materials above, the platform also hosts a collection of case studies and workflows on the use of GIS in Anticipatory Action. These examples illustrate how geospatial analysis can support the development of anticipatory action protocols, including risk analysis, trigger monitoring, impact estimation, and the targeting of early actions.</source>
+<target xml:lang="fr">In addition to the training materials above, the platform also hosts a collection of case studies and workflows on the use of GIS in Anticipatory Action. These examples illustrate how geospatial analysis can support the development of anticipatory action protocols, including risk analysis, trigger monitoring, impact estimation, and the targeting of early actions.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The case studies present applied GIS workflows based on real operational contexts and highlight the tools and datasets used in the analyses.
+<ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-body: sd-text-center</ph>
+<ph id="4">:link: ../content/GIS_AA/en_GIS_AA_overview</ph>
+<bpt id="5">__</bpt>GIS in Anticipatory Action<ept id="5">__</ept>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr">The case studies present applied GIS workflows based on real operational contexts and highlight the tools and datasets used in the analyses.
+<ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-body: sd-text-center</ph>
+<ph id="4">:link: ../content/GIS_AA/en_GIS_AA_overview</ph>
+<bpt id="5">__</bpt>GIS in Anticipatory Action<ept id="5">__</ept>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Upcoming and past trainings</source>
+<target xml:lang="fr">Upcoming and past trainings</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Currently, there are no public trainings scheduled. Most of our trainings are organized directly with National Societies within the IFRC network. In the last couple of years, we conducted several online and in-person trainings with National Societies in the MENA region, across Africa, and the Americas, as well as specialized trainings for Public Health. More are planned for 2026 and 2027. If you are interested in a training or would like to explore collaboration opportunities, please contact us via email.</source>
+<target xml:lang="fr">Currently, there are no public trainings scheduled. Most of our trainings are organized directly with National Societies within the IFRC network. In the last couple of years, we conducted several online and in-person trainings with National Societies in the MENA region, across Africa, and the Americas, as well as specialized trainings for Public Health. More are planned for 2026 and 2027. If you are interested in a training or would like to explore collaboration opportunities, please contact us via email.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Contact</source>
+<target xml:lang="fr">Contact</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Contact the IFRC GIS Training Platform Team
+You have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email under <bpt id="2">__</bpt>gis-training-platform@heigit.org<ept id="2">__</ept>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Contact the IFRC GIS Training Platform Team
+You have questions, feedback or comments on the platform and the content. We are always happy to hear from you. You can contact us via email under <bpt id="2">__</bpt>gis-training-platform@heigit.org<ept id="2">__</ept>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Contributing</source>
+<target xml:lang="fr">Contributing</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the <bpt id="1">[</bpt>Contribution Plan<ept id="1">](../content/contribution_plan)</ept>.</source>
+<target xml:lang="fr">We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the <bpt id="1">[</bpt>Contribution Plan<ept id="1">](../content/contribution_plan)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Join the Community</source>
+<target xml:lang="fr">Join the Community</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">🤝 Learning is most enjoyable when shared. Join our vibrant community of GIS enthusiasts, learners, and experts by participating in discussions, asking questions, and sharing your insights. Together, we can leverage the power of GIS to make a positive impact on humanitarian causes around the world.</source>
+<target xml:lang="fr">🤝 Learning is most enjoyable when shared. Join our vibrant community of GIS enthusiasts, learners, and experts by participating in discussions, asking questions, and sharing your insights. Together, we can leverage the power of GIS to make a positive impact on humanitarian causes around the world.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Happy Mapping!</source>
+<target xml:lang="fr">Happy Mapping!</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Training_Somalia.JPG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Training_Somalia.JPG</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+name:</source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+name:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

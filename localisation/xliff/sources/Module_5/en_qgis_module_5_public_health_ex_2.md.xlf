@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_public_health_ex_2.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Exercise 2: Analysing Measles Case Data and Population Distribution <bpt id="1">&lt;a id="exercise-2-analysing-measles-case-data-and-population-distribution"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 2: Analysing Measles Case Data and Population Distribution <bpt id="1">&lt;a id="exercise-2-analysing-measles-case-data-and-population-distribution"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%</ph> MAKE THEM LOOK FOR THE WORLDPOP DATASET ON DEMOGRAPHY AND MAKE THEM CALCULATE THE UNDER 5 POP RASTER</source>
+<target xml:lang="fr"><ph id="1">%%</ph> MAKE THEM LOOK FOR THE WORLDPOP DATASET ON DEMOGRAPHY AND MAKE THEM CALCULATE THE UNDER 5 POP RASTER</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The Epidemiology Department has shared a line-list of suspected measles cases reported by health districts.
+Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates.
+This will help the response coordination team prioritise vaccination deployments and plan logistics for outreach activities.</source>
+<target xml:lang="fr">The Epidemiology Department has shared a line-list of suspected measles cases reported by health districts.
+Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates.
+This will help the response coordination team prioritise vaccination deployments and plan logistics for outreach activities.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>In case you did the exercise <bpt id="2">**</bpt>Creating an overview map of the health system and vaccination coverage<ept id="2">**</ept>, you do not need to download this dataset.
+If you do this exercise without doing the previous exercise, download all datasets provided by HeiGIT <bpt id="3">[</bpt>here<ept id="3">](https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip)</ept>. and save the folder on your computer and unzip the file.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>In case you did the exercise <bpt id="2">**</bpt>Creating an overview map of the health system and vaccination coverage<ept id="2">**</ept>, you do not need to download this dataset.
+If you do this exercise without doing the previous exercise, download all datasets provided by HeiGIT <bpt id="3">[</bpt>here<ept id="3">](https://nexus.heigit.org/repository/gis-training-resource-center/modul_5/gis_training_public_health_exercise_2/GIS_Training_Public_Health_exercise_2.zip)</ept>. and save the folder on your computer and unzip the file.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Dataset name</source>
+<target xml:lang="fr">Dataset name</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Download link / note</source>
+<target xml:lang="fr">Download link / note</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`QGIS project from Exercise 1 with .qgz extention`</ph></source>
+<target xml:lang="fr"><ph id="1">`QGIS project from Exercise 1 with .qgz extention`</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">QGIS project created in Exercise 1</source>
+<target xml:lang="fr">QGIS project created in Exercise 1</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Previous Exercise<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_module_3_public_health_ex_1.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Previous Exercise<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_module_3_public_health_ex_1.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Local project folder <ph id="1">`/project/`</ph></source>
+<target xml:lang="fr">Local project folder <ph id="1">`/project/`</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_admbnda_adm2_20250212_AB.shp`</ph></source>
+<target xml:lang="fr"><ph id="1">`tcd_admbnda_adm2_20250212_AB.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Chad administrative boundaries (level 2 – districts)</source>
+<target xml:lang="fr">Chad administrative boundaries (level 2 – districts)</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">OCHA</source>
+<target xml:lang="fr">OCHA</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-tcd)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-tcd)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></source>
+<target xml:lang="fr"><ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">2025 population estimate per grid-cell</source>
+<target xml:lang="fr">2025 population estimate per grid-cell</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">WorldPop</source>
+<target xml:lang="fr">WorldPop</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>WorldPop<ept id="1">](https://hub.worldpop.org/geodata/summary?id=72895)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>WorldPop<ept id="1">](https://hub.worldpop.org/geodata/summary?id=72895)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`measles_cases_adm2.csv`</ph></source>
+<target xml:lang="fr"><ph id="1">`measles_cases_adm2.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Reported measles cases by district (line list)</source>
+<target xml:lang="fr">Reported measles cases by district (line list)</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Ministry of Health (MoH) Epidemiology Dept.</source>
+<target xml:lang="fr">Ministry of Health (MoH) Epidemiology Dept.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Provided for this exercise by HeiGIT</source>
+<target xml:lang="fr">Provided for this exercise by HeiGIT</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Task 1: Open the Project and Prepare the Workspace <bpt id="1">&lt;a id="task-1-open-the-project-and-prepare-the-workspace"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Open the Project and Prepare the Workspace <bpt id="1">&lt;a id="task-1-open-the-project-and-prepare-the-workspace"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Open the QGIS project created in Exercise 1:</source>
+<target xml:lang="fr">Open the QGIS project created in Exercise 1:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Project → Open… → chad_health_infrastructure.qgz.</source>
+<target xml:lang="fr">Project → Open… → chad_health_infrastructure.qgz.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Verify that the administrative boundaries and health facility layers load correctly.</source>
+<target xml:lang="fr">Verify that the administrative boundaries and health facility layers load correctly.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">If any layers show an error, use the “Re-link missing layers” dialog to correct their file paths.</source>
+<target xml:lang="fr">If any layers show an error, use the “Re-link missing layers” dialog to correct their file paths.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Now, lets configure the "Project Home" in the browser panel.</source>
+<target xml:lang="fr">Now, lets configure the "Project Home" in the browser panel.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">In the browser panel on the left, <bpt id="1">&lt;kbd></bpt>right-click<ept id="1">&lt;/kbd></ept> on <ph id="2">`Project Home`</ph> → <ph id="3">`Set Project Home...`</ph> and set the project home folder to the training folder (with the subfolders <ph id="4">`/data`</ph>, <ph id="5">`/project`</ph>, etc.). Now you will be able to access all the datasets for this training through the browser.</source>
+<target xml:lang="fr">In the browser panel on the left, <bpt id="1">&lt;kbd></bpt>right-click<ept id="1">&lt;/kbd></ept> on <ph id="2">`Project Home`</ph> → <ph id="3">`Set Project Home...`</ph> and set the project home folder to the training folder (with the subfolders <ph id="4">`/data`</ph>, <ph id="5">`/project`</ph>, etc.). Now you will be able to access all the datasets for this training through the browser.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles and multiple layers.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Working with the browser panel allows a much quicker access to the files and keeps the folder view organised when working with shapefiles and multiple layers.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Task 2: Calculate the Population per District <bpt id="1">&lt;a id="task-2-calculate-the-population-per-district"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Calculate the Population per District <bpt id="1">&lt;a id="task-2-calculate-the-population-per-district"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.</source>
+<target xml:lang="fr">In order to calculate the incidence rate per district, we first need to know the population in each district. In many humanitarian contexts, there may be no recent or reliable census data available due to conflict, displacement, or limited national statistical capacity. In such cases, we can use WorldPop population estimates to approximate the population per district. WorldPop produces high-resolution gridded population datasets by combining census data, satellite imagery, land cover information, and statistical modelling to predict population distribution. While these estimates are very useful for planning and epidemiological analysis, it is important to remember that they are modelled estimates, not exact counts, and may carry some uncertainty.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Add the WorldPop 2025 raster (<ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph>) via drag-and-drop or:
+<ph id="2">`Layer → Add Layer → Add Raster Layer….`</ph></source>
+<target xml:lang="fr">Add the WorldPop 2025 raster (<ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph>) via drag-and-drop or:
+<ph id="2">`Layer → Add Layer → Add Raster Layer….`</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Take the time to investigate the new layer. Where is the population concentrated? What is the highest or median cell value? How is raster data different to vector data?
+<ph id="1">    :::{tip}</ph>
+    You can use the Identify Tool <bpt id="2">![</bpt><ept id="2">](/fig/qgis_identify_features.png)</ept> to click on the raster and see population estimates per pixel.
+<ph id="3">    :::</ph></source>
+<target xml:lang="fr">Take the time to investigate the new layer. Where is the population concentrated? What is the highest or median cell value? How is raster data different to vector data?
+<ph id="1">    :::{tip}</ph>
+    You can use the Identify Tool <bpt id="2">![</bpt><ept id="2">](/fig/qgis_identify_features.png)</ept> to click on the raster and see population estimates per pixel.
+<ph id="3">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">We will now calculate the total population for each district using the tool <ph id="1">`Zonal Statistics`</ph></source>
+<target xml:lang="fr">We will now calculate the total population for each district using the tool <ph id="1">`Zonal Statistics`</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt><bpt id="2">[</bpt>Processing Toolbox<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars)</ept><ept id="1">__</ept>, search for "Zonal Statistics" and open the tool.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt><bpt id="2">[</bpt>Processing Toolbox<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_start.html#toolbox-toolbars)</ept><ept id="1">__</ept>, search for "Zonal Statistics" and open the tool.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Set the parameters as follows:</source>
+<target xml:lang="fr">Set the parameters as follows:</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Input layer: <ph id="1">`tcd_admbnda_adm2_20250212_AB`</ph></source>
+<target xml:lang="fr">Input layer: <ph id="1">`tcd_admbnda_adm2_20250212_AB`</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Raster layer: <ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1`</ph></source>
+<target xml:lang="fr">Raster layer: <ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1`</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Raster band: 1 (there will be only one option available)</source>
+<target xml:lang="fr">Raster band: 1 (there will be only one option available)</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Ouput column prefix: <ph id="1">`population_`</ph></source>
+<target xml:lang="fr">Ouput column prefix: <ph id="1">`population_`</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Statistics to calculate: <ph id="1">`Sum`</ph></source>
+<target xml:lang="fr">Statistics to calculate: <ph id="1">`Sum`</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The Result will be a new layer called <ph id="1">`Zonal Statistics`</ph>. This is a temporary layer, indicated by the <bpt id="2">![</bpt><ept id="2">](/fig/qgis_3.40_temp_layer.png)</ept> on the right of the layer name.</source>
+<target xml:lang="fr">The Result will be a new layer called <ph id="1">`Zonal Statistics`</ph>. This is a temporary layer, indicated by the <bpt id="2">![</bpt><ept id="2">](/fig/qgis_3.40_temp_layer.png)</ept> on the right of the layer name.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Make the layer permanent by <bpt id="1">&lt;kbd></bpt>right-clicking<ept id="1">&lt;/kbd></ept> on it → <ph id="2">`Make permanent`</ph> and give it a name like <ph id="3">`tcd_pop_2025_adm2`</ph>.</source>
+<target xml:lang="fr">Make the layer permanent by <bpt id="1">&lt;kbd></bpt>right-clicking<ept id="1">&lt;/kbd></ept> on it → <ph id="2">`Make permanent`</ph> and give it a name like <ph id="3">`tcd_pop_2025_adm2`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Take a look at the new layer by opening it's attribute table and looking at the new column.
+<ph id="1">    ::::{margin}</ph>
+<ph id="2">    :::{tip}</ph>
+    You can also classify the polygons with the new column using <bpt id="3">[</bpt>graduated classification<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept>
+<ph id="4">    :::</ph>
+<ph id="5">    ::::</ph></source>
+<target xml:lang="fr">Take a look at the new layer by opening it's attribute table and looking at the new column.
+<ph id="1">    ::::{margin}</ph>
+<ph id="2">    :::{tip}</ph>
+    You can also classify the polygons with the new column using <bpt id="3">[</bpt>graduated classification<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept>
+<ph id="4">    :::</ph>
+<ph id="5">    ::::</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.40_m3_ex_8_pub_health_2_add_pop.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.40_m3_ex_8_pub_health_2_add_pop.png</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.40_m3_ex_8_pub_health_2_add_pop</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.40_m3_ex_8_pub_health_2_add_pop</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Apply a graduated classification to visualize the district-level population sum results
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Apply a graduated classification to visualize the district-level population sum results
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Task 3: Calculate the Population under 5 per District <bpt id="1">&lt;a id="task-3-calculate-the-population-under-5-per-district"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Calculate the Population under 5 per District <bpt id="1">&lt;a id="task-3-calculate-the-population-under-5-per-district"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Measles disproportionately affects young children, especially those under five, who are more likely to develop severe complications and have higher mortality rates. Knowing the under-5 population per district helps estimate how many children are at greatest risk, plan targeted vaccination campaigns, and assess whether health resources are sufficient to protect the most vulnerable age group (<bpt id="1">[</bpt>WHO on Measles<ept id="1">](https://www.who.int/news-room/fact-sheets/detail/measles)</ept>).</source>
+<target xml:lang="fr">Measles disproportionately affects young children, especially those under five, who are more likely to develop severe complications and have higher mortality rates. Knowing the under-5 population per district helps estimate how many children are at greatest risk, plan targeted vaccination campaigns, and assess whether health resources are sufficient to protect the most vulnerable age group (<bpt id="1">[</bpt>WHO on Measles<ept id="1">](https://www.who.int/news-room/fact-sheets/detail/measles)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Worldpop data in age and sex structures
+<ph id="2">:class: tip</ph>
+WorldPop also provides population estimates by age and sex. This is especially important in our scenario, as we need to know the under-5 population for each district. To find this, go to the Age Structures section and search for Chad.</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Worldpop data in age and sex structures
+<ph id="2">:class: tip</ph>
+WorldPop also provides population estimates by age and sex. This is especially important in our scenario, as we need to know the under-5 population for each district. To find this, go to the Age Structures section and search for Chad.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Can you find and download the WorldPop raster containing the population under 5? For a hint look <bpt id="1">[</bpt>here<ept id="1">](https://hub.worldpop.org/geodata/listing?id=138)</ept>. If you scroll down, there is list of the Data Files for the specific age groups.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Can you find and download the WorldPop raster containing the population under 5? For a hint look <bpt id="1">[</bpt>here<ept id="1">](https://hub.worldpop.org/geodata/listing?id=138)</ept>. If you scroll down, there is list of the Data Files for the specific age groups.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Add the population under 5 rasters (<ph id="1">`tcd_t_00_2025_CN_100m_R2025A_v1.tif`</ph> and <ph id="2">`tcd_t_01_2025_CN_100m_R2025A_v1`</ph>) via drag-and-drop or:
+<ph id="3">`Layer → Add Layer → Add Raster Layer….`</ph></source>
+<target xml:lang="fr">Add the population under 5 rasters (<ph id="1">`tcd_t_00_2025_CN_100m_R2025A_v1.tif`</ph> and <ph id="2">`tcd_t_01_2025_CN_100m_R2025A_v1`</ph>) via drag-and-drop or:
+<ph id="3">`Layer → Add Layer → Add Raster Layer….`</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">We will now calculate the total population under 5 for each district using the “Zonal Statistics” tool. Repeat the steps from the previous task. Since the under-5 population is split across two input rasters, you will need to run the same procedure twice.</source>
+<target xml:lang="fr">We will now calculate the total population under 5 for each district using the “Zonal Statistics” tool. Repeat the steps from the previous task. Since the under-5 population is split across two input rasters, you will need to run the same procedure twice.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Set the parameters as follows:</source>
+<target xml:lang="fr">Set the parameters as follows:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Input layer: <ph id="1">`tcd_pop_2025_adm2`</ph> (output from the previous task already containing the total population sum per districts)</source>
+<target xml:lang="fr">Input layer: <ph id="1">`tcd_pop_2025_adm2`</ph> (output from the previous task already containing the total population sum per districts)</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Raster layer: <ph id="1">`tcd_t_00_2025_CN_100m_R2025A_v1`</ph></source>
+<target xml:lang="fr">Raster layer: <ph id="1">`tcd_t_00_2025_CN_100m_R2025A_v1`</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Raster band: 1 (there will be only one option available)</source>
+<target xml:lang="fr">Raster band: 1 (there will be only one option available)</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Ouput column prefix: <ph id="1">`population_under_1_`</ph></source>
+<target xml:lang="fr">Ouput column prefix: <ph id="1">`population_under_1_`</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Statistics to calculate: <ph id="1">`Sum`</ph></source>
+<target xml:lang="fr">Statistics to calculate: <ph id="1">`Sum`</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Rename the output in the QGIS Layers panel to <ph id="1">`tcd_pop_2025_under_1`</ph></source>
+<target xml:lang="fr">Rename the output in the QGIS Layers panel to <ph id="1">`tcd_pop_2025_under_1`</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Repeat this step with the raster <ph id="1">`tcd_t_01_2025_CN_100m_R2025A_v1`</ph> as input raster layer and name the output column prefix <ph id="2">`population_under_5_`</ph>. As Input layer, use the "Zonal Statistics" output from the run for the population under 1 renamed to <ph id="3">`tcd_pop_2025_under_1`</ph>.</source>
+<target xml:lang="fr">Repeat this step with the raster <ph id="1">`tcd_t_01_2025_CN_100m_R2025A_v1`</ph> as input raster layer and name the output column prefix <ph id="2">`population_under_5_`</ph>. As Input layer, use the "Zonal Statistics" output from the run for the population under 1 renamed to <ph id="3">`tcd_pop_2025_under_1`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Rename the output in the QGIS Layers panel to <ph id="1">`tcd_pop_2025_under_5`</ph> and remove the <ph id="2">`tcd_pop_2025_under_1`</ph> layer <bpt id="3">![</bpt><ept id="3">](/fig/qgis_remove_selected_layer.png)</ept> as we don't need it anymore.</source>
+<target xml:lang="fr">Rename the output in the QGIS Layers panel to <ph id="1">`tcd_pop_2025_under_5`</ph> and remove the <ph id="2">`tcd_pop_2025_under_1`</ph> layer <bpt id="3">![</bpt><ept id="3">](/fig/qgis_remove_selected_layer.png)</ept> as we don't need it anymore.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Open the field calculator in the attribute table.</source>
+<target xml:lang="fr">Open the field calculator in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the attribute table or click on this symbol <bpt id="2">![</bpt><ept id="2">](/fig/qgis_open_attribute_table.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the attribute table or click on this symbol <bpt id="2">![</bpt><ept id="2">](/fig/qgis_open_attribute_table.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">In the tool bar of the attribute table, open the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_open_field_calc_icon.png)</ept>. The field calculator let's you enter expression to calculate new columns.</source>
+<target xml:lang="fr">In the tool bar of the attribute table, open the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_open_field_calc_icon.png)</ept>. The field calculator let's you enter expression to calculate new columns.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">A new window will open. This is the expression builder.</source>
+<target xml:lang="fr">A new window will open. This is the expression builder.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">In the expression builder, we can build and test expressions.</source>
+<target xml:lang="fr">In the expression builder, we can build and test expressions.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on <ph id="2">`population_under_1_sum`</ph> and <ph id="3">`population_under_5_sum`</ph>. This will add the column to the expression window on the left.</source>
+<target xml:lang="fr">In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on <ph id="2">`population_under_1_sum`</ph> and <ph id="3">`population_under_5_sum`</ph>. This will add the column to the expression window on the left.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">In the expression window</source>
+<target xml:lang="fr">In the expression window</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Enter the following expression:</source>
+<target xml:lang="fr">Enter the following expression:</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Make sure to give a meaningful "Output field name" such as <ph id="1">`total_population_under_5`</ph></source>
+<target xml:lang="fr">Make sure to give a meaningful "Output field name" such as <ph id="1">`total_population_under_5`</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Select the correct "Output field type"</source>
+<target xml:lang="fr">Select the correct "Output field type"</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/en_pub_health_2_pop_under_5.png</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/en_pub_health_2_pop_under_5.png</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    name: en_pub_health_2_pop_under_5</ph>
+<ph id="2">    width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">    name: en_pub_health_2_pop_under_5</ph>
+<ph id="2">    width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Now remove the fields containing the <ph id="1">`population_under_1_sum`</ph> and <ph id="2">`population_under_5_sum`</ph> information as we don't need them anymore. Click on "Delete fields" <bpt id="3">![</bpt><ept id="3">](/fig/qgis_3.40_delete_column_icon.png)</ept> and remove these two columns. Save the layer.</source>
+<target xml:lang="fr">Now remove the fields containing the <ph id="1">`population_under_1_sum`</ph> and <ph id="2">`population_under_5_sum`</ph> information as we don't need them anymore. Click on "Delete fields" <bpt id="3">![</bpt><ept id="3">](/fig/qgis_3.40_delete_column_icon.png)</ept> and remove these two columns. Save the layer.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Save the enhanced population layer by <bpt id="1">&lt;kbd></bpt>right-clicking<ept id="1">&lt;/kbd></ept> on it and selecting <ph id="2">`Make permament...`</ph>. Select "Geopackage" as the output format and save the layer to the <ph id="3">`data/interim/`</ph>-folder and enter a file name such as <ph id="4">`tcd_pop_2025_under_5`</ph>. Click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Save the enhanced population layer by <bpt id="1">&lt;kbd></bpt>right-clicking<ept id="1">&lt;/kbd></ept> on it and selecting <ph id="2">`Make permament...`</ph>. Select "Geopackage" as the output format and save the layer to the <ph id="3">`data/interim/`</ph>-folder and enter a file name such as <ph id="4">`tcd_pop_2025_under_5`</ph>. Click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Task 4: Import and Explore the Measles Cases List <bpt id="1">&lt;a id="task-4-import-and-explore-the-measles-cases-list"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 4: Import and Explore the Measles Cases List <bpt id="1">&lt;a id="task-4-import-and-explore-the-measles-cases-list"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%</ph> Revise this step.</source>
+<target xml:lang="fr"><ph id="1">%%</ph> Revise this step.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Import<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import)</ept> the <ph id="2">`measles_cases_adm2`</ph> dataset as a <bpt id="3">__</bpt>delimited text layer<ept id="3">__</ept> with no geometry.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Import<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import)</ept> the <ph id="2">`measles_cases_adm2`</ph> dataset as a <bpt id="3">__</bpt>delimited text layer<ept id="3">__</ept> with no geometry.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">In the top bar, navigate to <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Delimited Text Layer...`</ph>. A new window will open.</source>
+<target xml:lang="fr">In the top bar, navigate to <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Delimited Text Layer...`</ph>. A new window will open.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">To the right of file name, click on the <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept> three points and navigate to the file in the <ph id="2">`/data/input/`</ph>-folder. Click <ph id="3">`Open`</ph>.</source>
+<target xml:lang="fr">To the right of file name, click on the <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept> three points and navigate to the file in the <ph id="2">`/data/input/`</ph>-folder. Click <ph id="3">`Open`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? The measles cases don't have any geometry information.</source>
+<target xml:lang="fr">In the import window, you will see sample data in the sample data field. Take a look at the columns and data available. What kind of data is present in each column? The measles cases don't have any geometry information.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Geometry Definition`</ph> select <ph id="2">`No geometry (attribute only table)`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Geometry Definition`</ph> select <ph id="2">`No geometry (attribute only table)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Check if the sample data displays correctly. Make sure the data type is correct (e.g., cases as integers, not as string).</source>
+<target xml:lang="fr">Check if the sample data displays correctly. Make sure the data type is correct (e.g., cases as integers, not as string).</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Add`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Add`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+As with other data formats, you can drag-and-drop csv-files onto your map canvas and it will be loaded into your project. <bpt id="2">__</bpt>However<ept id="2">__</ept>, this will lead to mistakes in the data format for each column as it assumes that every column contains text (string) data. You will be unable to perform mathematical or statistical operations with these columns.</source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+As with other data formats, you can drag-and-drop csv-files onto your map canvas and it will be loaded into your project. <bpt id="2">__</bpt>However<ept id="2">__</ept>, this will lead to mistakes in the data format for each column as it assumes that every column contains text (string) data. You will be unable to perform mathematical or statistical operations with these columns.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Make sure to always load csv data via the data source manager and not via the drag-and-drop function.</source>
+<target xml:lang="fr">Make sure to always load csv data via the data source manager and not via the drag-and-drop function.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Explore the new data file by opening the attribute table.</source>
+<target xml:lang="fr">Explore the new data file by opening the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the <ph id="2">`measles_cases_adm2`</ph>-layer and open the attribute table.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the <ph id="2">`measles_cases_adm2`</ph>-layer and open the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Take a look at the columns and at how the data is being stored.</source>
+<target xml:lang="fr">Take a look at the columns and at how the data is being stored.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">How could we use this data in our map?</source>
+<target xml:lang="fr">How could we use this data in our map?</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Task 5: Joining the measles cases with our adm2 layer <bpt id="1">&lt;a id="task-5-joining-the-measles-cases-with-our-adm2-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 5: Joining the measles cases with our adm2 layer <bpt id="1">&lt;a id="task-5-joining-the-measles-cases-with-our-adm2-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">We can join the measles cases with our adm2-layer including the population data (<ph id="1">`tcd_pop_2025_under_5`</ph>):</source>
+<target xml:lang="fr">We can join the measles cases with our adm2-layer including the population data (<ph id="1">`tcd_pop_2025_under_5`</ph>):</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, open the "Join Attributes by Field value"-tool</source>
+<target xml:lang="fr">In the processing toolbox, open the "Join Attributes by Field value"-tool</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Input layer:<ept id="1">__</ept> <ph id="2">`tcd_pop_2025_under_5`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Input layer:<ept id="1">__</ept> <ph id="2">`tcd_pop_2025_under_5`</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Table field:<ept id="1">__</ept> <ph id="2">`ADM2_FR`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Table field:<ept id="1">__</ept> <ph id="2">`ADM2_FR`</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Input layer 2:<ept id="1">__</ept> <ph id="2">`measles_cases_adm2`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Input layer 2:<ept id="1">__</ept> <ph id="2">`measles_cases_adm2`</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Table field 2:<ept id="1">__</ept> <ph id="2">`adm2_name`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Table field 2:<ept id="1">__</ept> <ph id="2">`adm2_name`</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Under "Layer 2 fields to copy" select <ph id="1">`cases_total`</ph></source>
+<target xml:lang="fr">Under "Layer 2 fields to copy" select <ph id="1">`cases_total`</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">The result will be a new layer called <ph id="1">`Joined layer`</ph>. Let's open the attribute table and look at the data.</source>
+<target xml:lang="fr">The result will be a new layer called <ph id="1">`Joined layer`</ph>. Let's open the attribute table and look at the data.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">If everything is correct, let's make the layer permanent under <ph id="1">`tcd_pop_2025_measles_adm2`</ph></source>
+<target xml:lang="fr">If everything is correct, let's make the layer permanent under <ph id="1">`tcd_pop_2025_measles_adm2`</ph></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Task 6: Calculating the incidence rate <bpt id="1">&lt;a id="task-6-calculating-the-incidence-rate"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 6: Calculating the incidence rate <bpt id="1">&lt;a id="task-6-calculating-the-incidence-rate"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.</source>
+<target xml:lang="fr">Our district layer now includes the total population, the population under 5 and the total number of measles cases per district. With this information, we can calculate the incidence rate.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Open the field calculator in the attribute table.</source>
+<target xml:lang="fr">Open the field calculator in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the attribute table</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the attribute table</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">In the tool bar of the attribute table, open the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_open_field_calc_icon.png)</ept>.</source>
+<target xml:lang="fr">In the tool bar of the attribute table, open the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_open_field_calc_icon.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">A new window will open with the expression builder.</source>
+<target xml:lang="fr">A new window will open with the expression builder.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Make sure to give a meaningful "Output field name" such as <ph id="1">`measles_incidence_rate`</ph></source>
+<target xml:lang="fr">Make sure to give a meaningful "Output field name" such as <ph id="1">`measles_incidence_rate`</ph></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">In the expression builder, we can build and test expressions.</source>
+<target xml:lang="fr">In the expression builder, we can build and test expressions.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on "population_sum". This will add the column to the expression window on the left.</source>
+<target xml:lang="fr">In the middle section, we can open the "Fields and values" header to show the columns of the dataset. Uncollapse it and <bpt id="1">&lt;kbd></bpt>Double-Click<ept id="1">&lt;/kbd></ept> on "population_sum". This will add the column to the expression window on the left.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">In the expression window</source>
+<target xml:lang="fr">In the expression window</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Enter the following expression:</source>
+<target xml:lang="fr">Enter the following expression:</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Save the layer and the changes.</source>
+<target xml:lang="fr">Save the layer and the changes.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained</source>
+<target xml:lang="fr">Great, we have calculated the incidence rate in our polygon layer. Now, we can create a map displaying the information we gained</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Task 7: Creating map of measles incidence rate <bpt id="1">&lt;a id="task-7-creating-map-of-measles-incidence-rate"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 7: Creating map of measles incidence rate <bpt id="1">&lt;a id="task-7-creating-map-of-measles-incidence-rate"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">In this task, we will create a map showing the measles incidence rate by district, helping to visualize where the disease burden is highest. We will also add an overview map displaying the population under five, providing important context for understanding the distribution of vulnerable age groups and interpreting the incidence patterns.</source>
+<target xml:lang="fr">In this task, we will create a map showing the measles incidence rate by district, helping to visualize where the disease burden is highest. We will also add an overview map displaying the population under five, providing important context for understanding the distribution of vulnerable age groups and interpreting the incidence patterns.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Task 7.1: Symbology <bpt id="1">&lt;a id="task-71-symbology"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 7.1: Symbology <bpt id="1">&lt;a id="task-71-symbology"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Symbology measles incidence rate</source>
+<target xml:lang="fr">Symbology measles incidence rate</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Use the <ph id="1">`tcd_pop_2025_measles_adm2`</ph> layer with the incidence rate from the previous calculation</source>
+<target xml:lang="fr">Use the <ph id="1">`tcd_pop_2025_measles_adm2`</ph> layer with the incidence rate from the previous calculation</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the symbology tab</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the symbology tab</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Graduated`</ph> and <ph id="2">`measles_incidence_rate`</ph> as the "Value"</source>
+<target xml:lang="fr">Select <ph id="1">`Graduated`</ph> and <ph id="2">`measles_incidence_rate`</ph> as the "Value"</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Color ramp could be <ph id="1">`Reds`</ph></source>
+<target xml:lang="fr">Color ramp could be <ph id="1">`Reds`</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Select Mode <ph id="1">`Equal Interval`</ph> and 5 Classes</source>
+<target xml:lang="fr">Select Mode <ph id="1">`Equal Interval`</ph> and 5 Classes</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Symbology population under 5</source>
+<target xml:lang="fr">Symbology population under 5</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Use the <ph id="1">`tcd_pop_2025_under_5`</ph> layer with the information of population under 5</source>
+<target xml:lang="fr">Use the <ph id="1">`tcd_pop_2025_under_5`</ph> layer with the information of population under 5</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the symbology tab</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and open the symbology tab</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Graduated`</ph> and <ph id="2">`total_population_under_5`</ph> as the "Value"</source>
+<target xml:lang="fr">Select <ph id="1">`Graduated`</ph> and <ph id="2">`total_population_under_5`</ph> as the "Value"</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Color ramp could be <ph id="1">`Turbo`</ph></source>
+<target xml:lang="fr">Color ramp could be <ph id="1">`Turbo`</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Select Mode <ph id="1">`Equal Count`</ph> and 5 Classes</source>
+<target xml:lang="fr">Select Mode <ph id="1">`Equal Count`</ph> and 5 Classes</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Task 7.2: Print Layout <bpt id="1">&lt;a id="task-72-print-layout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 7.2: Print Layout <bpt id="1">&lt;a id="task-72-print-layout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.</source>
+<target xml:lang="fr">Once you are happy with the symbolization and colors of your data, the next step is to create a print layout. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Open a new print layout and give it a name (e.g. Measles Incidence Chad). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.</source>
+<target xml:lang="fr">Open a new print layout and give it a name (e.g. Measles Incidence Chad). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">On the left, you will find a toolbar with tools to add and move items on the print layout canvas.</source>
+<target xml:lang="fr">On the left, you will find a toolbar with tools to add and move items on the print layout canvas.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called <bpt id="1">__</bpt>"Item properties"<ept id="1">__</ept>. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).</source>
+<target xml:lang="fr">On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called <bpt id="1">__</bpt>"Item properties"<ept id="1">__</ept>. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Insert a new map by clicking on <bpt id="1">![</bpt>New Map Icon<ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> (<ph id="2">`Add Map`</ph>) on the left toolbar, and drawing a rectangle on the print canvas. <bpt id="3">[</bpt>Video<ept id="3">](/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)</ept></source>
+<target xml:lang="fr">Insert a new map by clicking on <bpt id="1">![</bpt>New Map Icon<ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> (<ph id="2">`Add Map`</ph>) on the left toolbar, and drawing a rectangle on the print canvas. <bpt id="3">[</bpt>Video<ept id="3">](/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)</ept></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Move and position the map so that the entire country is visible at a reasonable scale. The first map will be used for the measles incidence rate.</source>
+<target xml:lang="fr">Move and position the map so that the entire country is visible at a reasonable scale. The first map will be used for the measles incidence rate.</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">For our example we want to add another map. In this overview map we will display the population under 5.</source>
+<target xml:lang="fr">For our example we want to add another map. In this overview map we will display the population under 5.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Lock layers and Lock styles for layers
+When working with multiple maps in the Print Layout, you need to lock the layers and their styles in the Item Properties under the “Layers” section. This ensures that each map remains unchanged, even if you turn layers on or off in the main QGIS window.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Lock layers and Lock styles for layers
+When working with multiple maps in the Print Layout, you need to lock the layers and their styles in the Item Properties under the “Layers” section. This ensures that each map remains unchanged, even if you turn layers on or off in the main QGIS window.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Let's add a title:</source>
+<target xml:lang="fr">Let's add a title:</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>)</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the canvas.</source>
+<target xml:lang="fr">Drag a rectangle on the canvas.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Measles Incidence Rate | Chad).</source>
+<target xml:lang="fr">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. Measles Incidence Rate | Chad).</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Adjust the font size: Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</source>
+<target xml:lang="fr">Adjust the font size: Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Let's add a legend:</source>
+<target xml:lang="fr">Let's add a legend:</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Click on  <bpt id="1">![</bpt>Add legend icon<ept id="1">](/fig/30.30.2_print_layout_add_legend.png)</ept> (<ph id="2">`Add legend`</ph>).</source>
+<target xml:lang="fr">Click on  <bpt id="1">![</bpt>Add legend icon<ept id="1">](/fig/30.30.2_print_layout_add_legend.png)</ept> (<ph id="2">`Add legend`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel on the right.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel on the right.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Scroll down a bit and check turn off <ph id="1">`Auto Update`</ph> by unchecking the check box. Now you can freely edit every item on the legend</source>
+<target xml:lang="fr">Scroll down a bit and check turn off <ph id="1">`Auto Update`</ph> by unchecking the check box. Now you can freely edit every item on the legend</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <bpt id="1">![</bpt>Edit Icon<ept id="1">](/fig/30.30.2_print_layout_legend_edit.png)</ept> (<ph id="2">`Edit selected item properties`</ph>) below the legend entries.</source>
+<target xml:lang="fr">Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <bpt id="1">![</bpt>Edit Icon<ept id="1">](/fig/30.30.2_print_layout_legend_edit.png)</ept> (<ph id="2">`Edit selected item properties`</ph>) below the legend entries.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Now, let's add a scale bar:</source>
+<target xml:lang="fr">Now, let's add a scale bar:</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add Scale bar icon<ept id="1">](/fig/30.30.2_print_layout_add_scale_bar.png)</ept> (<ph id="2">`Add Scale bar`</ph>)</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add Scale bar icon<ept id="1">](/fig/30.30.2_print_layout_add_scale_bar.png)</ept> (<ph id="2">`Add Scale bar`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).</source>
+<target xml:lang="fr">Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Let's add a north arrow:</source>
+<target xml:lang="fr">Let's add a north arrow:</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add North Arrow Icon<ept id="1">](/fig/30.30.2_print_layout_add_orientation.png)</ept> (<ph id="2">`Add North Arrow`</ph>).</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add North Arrow Icon<ept id="1">](/fig/30.30.2_print_layout_add_orientation.png)</ept> (<ph id="2">`Add North Arrow`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</source>
+<target xml:lang="fr">Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Add a text box with additional information, sources, the author (you), and date of creation.</source>
+<target xml:lang="fr">Add a text box with additional information, sources, the author (you), and date of creation.</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".</source>
+<target xml:lang="fr">When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.</source>
+<target xml:lang="fr">Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">The finished map could look something like this:</source>
+<target xml:lang="fr">The finished map could look something like this:</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/pub_health_map_measles_incidence_chad.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/pub_health_map_measles_incidence_chad.png</ph></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: Main road network and hospitals in Ghana, Africa</ph>
+<ph id="2">width: 600px</ph></source>
+<target xml:lang="fr"><ph id="1">name: Main road network and hospitals in Ghana, Africa</ph>
+<ph id="2">width: 600px</ph></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">The main map displays the measles incidence rate, while the secondary map shows the population under five.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The main map displays the measles incidence rate, while the secondary map shows the population under five.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

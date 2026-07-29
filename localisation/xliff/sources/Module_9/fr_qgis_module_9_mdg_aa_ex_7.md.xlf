@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/fr_qgis_module_9_mdg_aa_ex_7.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercice 7 : Accessibilité des postes de santé depuis les entrepôts CRM <bpt id="1">&lt;a id="exercice-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercice 7 : Accessibilité des postes de santé depuis les entrepôts CRM <bpt id="1">&lt;a id="exercice-7-accessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Caractéristiques <bpt id="1">&lt;a id="caracteristiques"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Caractéristiques <bpt id="1">&lt;a id="caracteristiques"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type d'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type d'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Cet exercice peut être utilisé dans le cadre de formations en ligne ou en présentiel.</source>
+<target xml:lang="fr">Cet exercice peut être utilisé dans le cadre de formations en ligne ou en présentiel.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Il peut être réalisé en tant qu'exercice guidé ou individuellement en auto-apprentissage.</source>
+<target xml:lang="fr">Il peut être réalisé en tant qu'exercice guidé ou individuellement en auto-apprentissage.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Piste d'Exercice:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Piste d'Exercice:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Cet exercice est le cinquième exercice de la piste d'exercice <bpt id="1">[</bpt>"Analyse d’Action Anticipative pour les Cyclones à Madagascar"<ept id="1">](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)</ept></source>
+<target xml:lang="fr">Cet exercice est le cinquième exercice de la piste d'exercice <bpt id="1">[</bpt>"Analyse d’Action Anticipative pour les Cyclones à Madagascar"<ept id="1">](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Temps estimé pour l'exercice<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Temps estimé pour l'exercice<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">1 à 2 heures</source>
+<target xml:lang="fr">1 à 2 heures</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Articles Wiki pertinents<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Articles Wiki pertinents<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Buffer<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Clip<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Automatisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Objectif de l'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+Aina, l'experte GIS (SIG) de la Croix-Rouge malgache (CRM), se prépare pour la prochaine saison des cyclones. Elle souhaite eméliorer la capacité de réaction de son équipe une fois une tempête annoncée, en automatisant des analyses clés dans la application QGIS.
+Celles-ci incluent l'estimation des populations exposées, l'identification des services impactés comme la santé et l'education, et l'évaluation de l'accessibilité des postes de santé à partir des entrepôts de la croix rouge dans une fenêtre critique de 10 heures.
+L'objectif est de préparer un workflow d'analyse et de visualisation pour soutenir une action anticipée (eng.: Anticipatory Action) et fondée sur les données, avant que le cyclone ne touche terre.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-border-1 sd-shadow-none</ph>
+<bpt id="3">__</bpt>Objectif de l'exercice:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+Aina, l'experte GIS (SIG) de la Croix-Rouge malgache (CRM), se prépare pour la prochaine saison des cyclones. Elle souhaite eméliorer la capacité de réaction de son équipe une fois une tempête annoncée, en automatisant des analyses clés dans la application QGIS.
+Celles-ci incluent l'estimation des populations exposées, l'identification des services impactés comme la santé et l'education, et l'évaluation de l'accessibilité des postes de santé à partir des entrepôts de la croix rouge dans une fenêtre critique de 10 heures.
+L'objectif est de préparer un workflow d'analyse et de visualisation pour soutenir une action anticipée (eng.: Anticipatory Action) et fondée sur les données, avant que le cyclone ne touche terre.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Instruction pour les formateurs <bpt id="1">&lt;a id="instruction-pour-les-formateurs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instruction pour les formateurs <bpt id="1">&lt;a id="instruction-pour-les-formateurs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Espace Formateurs (Trainers Corner)<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Espace Formateurs (Trainers Corner)<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Préparer la formation <bpt id="1">&lt;a id="preparer-la-formation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Préparer la formation <bpt id="1">&lt;a id="preparer-la-formation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Prenez du temps pour vous familiariser avec l'exercice et le matériel founi.</source>
+<target xml:lang="fr">Prenez du temps pour vous familiariser avec l'exercice et le matériel founi.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions.</source>
+<target xml:lang="fr">Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé <bpt id="1">__</bpt>et dézippé<ept id="1">__</ept> le dossier de données.</source>
+<target xml:lang="fr">Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé <bpt id="1">__</bpt>et dézippé<ept id="1">__</ept> le dossier de données.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Consultez <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).</source>
+<target xml:lang="fr">Consultez <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Animer la formation <bpt id="1">&lt;a id="animer-la-formation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Animer la formation <bpt id="1">&lt;a id="animer-la-formation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Présentez l'idée et l'objectif de l'exercice.</source>
+<target xml:lang="fr">Présentez l'idée et l'objectif de l'exercice.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Fournissez le lien de téléchargement et assurez-vous que tout le monde a bien dézippé le dossier avant de commencer les tâches.</source>
+<target xml:lang="fr">Fournissez le lien de téléchargement et assurez-vous que tout le monde a bien dézippé le dossier avant de commencer les tâches.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercice guidée:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercice guidée:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Montrez et expliquez chaque étape cous-même au moins deux fois, et suffisamment lentement por que chacun·e puisse voir ce que vous faites et reproduire les étapes dans sons prope projet QGIS.</source>
+<target xml:lang="fr">Montrez et expliquez chaque étape cous-même au moins deux fois, et suffisamment lentement por que chacun·e puisse voir ce que vous faites et reproduire les étapes dans sons prope projet QGIS.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.</source>
+<target xml:lang="fr">Assurez-vous que tout le monde suit en demandant régulièrement si quelqu'un a besoid d'aide ou si tout le monde suit toujours.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.</source>
+<target xml:lang="fr">Soyez ouvert·e et patient·e face aux questions ou problèmes éventuels. Vos participant·es sont en train de faire plusieures choses à la fois: écouter vos instructions tout en s'orientant dans leur propre projet QGIS.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Fin de la formation <bpt id="1">&lt;a id="fin-de-la-formation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Fin de la formation <bpt id="1">&lt;a id="fin-de-la-formation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.</source>
+<target xml:lang="fr">Prévoyez du temps à la fin pour répondre aux questions ou aborder les éventuels problèmes rencontrés lors de tâches.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Laissez un moment pour des questions ouvertes.</source>
+<target xml:lang="fr">Laissez un moment pour des questions ouvertes.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Donées disponibles <bpt id="1">&lt;a id="donees-disponibles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Donées disponibles <bpt id="1">&lt;a id="donees-disponibles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_9_Exercise_7_AA_MDG_task_7-20250825T143515Z-1-001.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/Module_9_Exercise_7_AA_MDG_task_7-20250825T143515Z-1-001.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Téléchargez les données pour cet exercice ici et dezipé le fichier.<ept id="1">__</ept>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Téléchargez les données pour cet exercice ici et dezipé le fichier.<ept id="1">__</ept>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Tâches <bpt id="1">&lt;a id="taches"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tâches <bpt id="1">&lt;a id="taches"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour
+décider <bpt id="1">**</bpt>où envoyer les kits médicaux prépositionnés<ept id="1">**</ept>. Cependant, tous les entrepôts CRM ne stockent pas les
+articles nécessaires — seulement trois le font.</source>
+<target xml:lang="fr">Lorsque qu’un cyclone est prévu pour un atterrissage, Aina collabore avec les équipes logistique et santé pour
+décider <bpt id="1">**</bpt>où envoyer les kits médicaux prépositionnés<ept id="1">**</ept>. Cependant, tous les entrepôts CRM ne stockent pas les
+articles nécessaires — seulement trois le font.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Pour prendre des décisions rapides et basées sur les données, Aina souhaite savoir <bpt id="1">**</bpt>quels postes de santé sont accessibles<ept id="1">**</ept> à partir de ces entrepôts <bpt id="2">**</bpt>en moins de 10 heures<ept id="2">**</ept>. Cette analyse permet de s’assurer que les kits
+sont envoyés vers des établissements <bpt id="3">**</bpt>réellement accessibles à temps<ept id="3">**</ept>.</source>
+<target xml:lang="fr">Pour prendre des décisions rapides et basées sur les données, Aina souhaite savoir <bpt id="1">**</bpt>quels postes de santé sont accessibles<ept id="1">**</ept> à partir de ces entrepôts <bpt id="2">**</bpt>en moins de 10 heures<ept id="2">**</ept>. Cette analyse permet de s’assurer que les kits
+sont envoyés vers des établissements <bpt id="3">**</bpt>réellement accessibles à temps<ept id="3">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Son objectif est de créer une carte visuelle claire montrant les postes de santé accessibles vs. non accessibles —
+et de la partager avec les décideurs le plus rapidement possible.</source>
+<target xml:lang="fr">Son objectif est de créer une carte visuelle claire montrant les postes de santé accessibles vs. non accessibles —
+et de la partager avec les décideurs le plus rapidement possible.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé <bpt id="1">&lt;a id="1-filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Filtrer les postes de santé depuis le jeu de données national des établissements de santé <bpt id="1">&lt;a id="1-filtrer-les-postes-de-sante-depuis-le-jeu-de-donnees-national-des-etablissements-de-sante"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Avant de vérifier quels établissements sont accessibles, Aina doit isoler les <bpt id="1">**</bpt>postes de santé<ept id="1">**</ept> à partir du jeu de données plus large de tous les établissements de santé.</source>
+<target xml:lang="fr">Avant de vérifier quels établissements sont accessibles, Aina doit isoler les <bpt id="1">**</bpt>postes de santé<ept id="1">**</ept> à partir du jeu de données plus large de tous les établissements de santé.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Charger le jeu de données des établissements de santé<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Charger le jeu de données des établissements de santé<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Fichier : <ph id="1">`hotosm_mdg_health_facilities_points.gpkg`</ph> (ou le GeoPackage utilisé)</source>
+<target xml:lang="fr">Fichier : <ph id="1">`hotosm_mdg_health_facilities_points.gpkg`</ph> (ou le GeoPackage utilisé)</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Chargez-le par glisser-déposer ou via <ph id="1">`Couche`</ph> → <ph id="2">`Ajouter une couche vecteur`</ph>.</source>
+<target xml:lang="fr">Chargez-le par glisser-déposer ou via <ph id="1">`Couche`</ph> → <ph id="2">`Ajouter une couche vecteur`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Ouvrir la table attributaire<ept id="1">**</ept> et vérifier la colonne nommée <ph id="2">`amenity`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Ouvrir la table attributaire<ept id="1">**</ept> et vérifier la colonne nommée <ph id="2">`amenity`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Filtrer par expression<ept id="1">**</ept> pour ne garder que les postes de santé :</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Filtrer par expression<ept id="1">**</ept> pour ne garder que les postes de santé :</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Clic droit sur la couche → <ph id="1">`Filtrer…`</ph></source>
+<target xml:lang="fr">Clic droit sur la couche → <ph id="1">`Filtrer…`</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Utiliser l’expression suivante :</source>
+<target xml:lang="fr">Utiliser l’expression suivante :</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Exporter la couche filtrée<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Exporter la couche filtrée<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Clic droit sur la couche filtrée dans le panneau des couches → <ph id="1">`Exporter`</ph> → <ph id="2">`Enregistrer les entités sous…`</ph></source>
+<target xml:lang="fr">Clic droit sur la couche filtrée dans le panneau des couches → <ph id="1">`Exporter`</ph> → <ph id="2">`Enregistrer les entités sous…`</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Format : <ph id="1">`GeoPackage`</ph></source>
+<target xml:lang="fr">Format : <ph id="1">`GeoPackage`</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Enregistrez dans votre dossier <ph id="1">`project`</ph> sous :</source>
+<target xml:lang="fr">Enregistrez dans votre dossier <ph id="1">`project`</ph> sous :</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <ph id="1">`OK`</ph> pour confirmer l’exportation.</source>
+<target xml:lang="fr">Cliquez sur <ph id="1">`OK`</ph> pour confirmer l’exportation.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Retirer le filtre<ept id="1">**</ept> ou la couche originale de votre projet pour éviter toute confusion.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Retirer le filtre<ept id="1">**</ept> ou la couche originale de votre projet pour éviter toute confusion.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">💡 <bpt id="1">**</bpt>Astuce<ept id="1">**</ept>: Filtrer directement dans QGIS vous permet de travailler avec un sous-ensemble spécifique sans modifier le jeu de données original.</source>
+<target xml:lang="fr">💡 <bpt id="1">**</bpt>Astuce<ept id="1">**</ept>: Filtrer directement dans QGIS vous permet de travailler avec un sous-ensemble spécifique sans modifier le jeu de données original.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">2. Charger les couches isochrones pour les trois entrepôts CRM <bpt id="1">&lt;a id="2-charger-les-couches-isochrones-pour-les-trois-entrepots-crm"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Charger les couches isochrones pour les trois entrepôts CRM <bpt id="1">&lt;a id="2-charger-les-couches-isochrones-pour-les-trois-entrepots-crm"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Aina sait que seulement <bpt id="1">**</bpt>trois entrepôts<ept id="1">**</ept> disposent des fournitures médicales nécessaires:<ph id="2">  </ph>
+<bpt id="3">**</bpt>Antananarivo<ept id="3">**</ept>, <bpt id="4">**</bpt>Maroantsetra<ept id="4">**</ept>, et <bpt id="5">**</bpt>Tolanaro<ept id="5">**</ept>. Elle va maintenant charger les couches isochrones pour chacun de ces entrepôts afin de commencer l’analyse des zones desservies.</source>
+<target xml:lang="fr">Aina sait que seulement <bpt id="1">**</bpt>trois entrepôts<ept id="1">**</ept> disposent des fournitures médicales nécessaires:<ph id="2">  </ph>
+<bpt id="3">**</bpt>Antananarivo<ept id="3">**</ept>, <bpt id="4">**</bpt>Maroantsetra<ept id="4">**</ept>, et <bpt id="5">**</bpt>Tolanaro<ept id="5">**</ept>. Elle va maintenant charger les couches isochrones pour chacun de ces entrepôts afin de commencer l’analyse des zones desservies.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Charger les couches isochrones individuelles<ept id="1">**</ept> pour chaque entrepôt:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Charger les couches isochrones individuelles<ept id="1">**</ept> pour chaque entrepôt:</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`CRM_warehouse_Isochrones_Antananarivo.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`CRM_warehouse_Isochrones_Antananarivo.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`CRM_warehouse_Isochrones_Maroantsetra.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`CRM_warehouse_Isochrones_Maroantsetra.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`CRM_warehouse_Isochrones_Tolanaro.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`CRM_warehouse_Isochrones_Tolanaro.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Vous pouvez glisser-deposer chaque fichier dans QGIS ou aller dans <ph id="1">`Couche`</ph> → <ph id="2">`Ajouter une couche`</ph> → <ph id="3">`Ajouter une couche vecteur`</ph>.</source>
+<target xml:lang="fr">Vous pouvez glisser-deposer chaque fichier dans QGIS ou aller dans <ph id="1">`Couche`</ph> → <ph id="2">`Ajouter une couche`</ph> → <ph id="3">`Ajouter une couche vecteur`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Inspecter la table attributaire<ept id="1">**</ept> de chaque couche isochrone<ph id="2">  </ph>
+   Vérifiez que chaque enregistrement possède un champ <ph id="3">`traveltime_h`</ph> indiquant le temps de trajet estimé en <bpt id="4">**</bpt>heures<ept id="4">**</ept>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Inspecter la table attributaire<ept id="1">**</ept> de chaque couche isochrone<ph id="2">  </ph>
+   Vérifiez que chaque enregistrement possède un champ <ph id="3">`traveltime_h`</ph> indiquant le temps de trajet estimé en <bpt id="4">**</bpt>heures<ept id="4">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Retirer toutes les entités où le temps de trajet dépasse 10 heures<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Retirer toutes les entités où le temps de trajet dépasse 10 heures<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Clic droit sur chaque couche → <ph id="1">`Filtrer…`</ph></source>
+<target xml:lang="fr">Clic droit sur chaque couche → <ph id="1">`Filtrer…`</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Appliquer l’expression:</source>
+<target xml:lang="fr">Appliquer l’expression:</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Exporter chaque couche filtrée<ept id="1">**</ept> vers le dossier <ph id="2">`temp`</ph>:<ph id="3">  </ph>
+   À ce stade, Aina s’assure également que toutes les couches exportées utilisent le même SCR que la couche des postes de santé — <ph id="4">`EPSG:4326`</ph> — pour éviter tout problème lors de la jointure spatiale.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Exporter chaque couche filtrée<ept id="1">**</ept> vers le dossier <ph id="2">`temp`</ph>:<ph id="3">  </ph>
+   À ce stade, Aina s’assure également que toutes les couches exportées utilisent le même SCR que la couche des postes de santé — <ph id="4">`EPSG:4326`</ph> — pour éviter tout problème lors de la jointure spatiale.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Enregistrez chaque fichier sous:</source>
+<target xml:lang="fr">Enregistrez chaque fichier sous:</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Appliquer un style aux isochrones pour plus de clarté<ept id="1">**</ept><ph id="2">  </ph>
+   Aina peut appliquer un style prédéfini pour colorer la couche selon <ph id="3">`traveltime_h`</ph> et visualiser différentes plages horaires (4h, 6h, 8h, 10h) à l’étape 5.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Appliquer un style aux isochrones pour plus de clarté<ept id="1">**</ept><ph id="2">  </ph>
+   Aina peut appliquer un style prédéfini pour colorer la couche selon <ph id="3">`traveltime_h`</ph> et visualiser différentes plages horaires (4h, 6h, 8h, 10h) à l’étape 5.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Clic droit sur chaque couche filtrée → <ph id="1">`Propriétés`</ph> → <ph id="2">`Symbologie`</ph></source>
+<target xml:lang="fr">Clic droit sur chaque couche filtrée → <ph id="1">`Propriétés`</ph> → <ph id="2">`Symbologie`</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <ph id="1">`Style`</ph> en bas → <ph id="2">`Charger le style…`</ph></source>
+<target xml:lang="fr">Cliquez sur <ph id="1">`Style`</ph> en bas → <ph id="2">`Charger le style…`</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Sélectionnez le fichier:<ph id="1">  </ph>
+<ph id="2">`CRM_warehouse_isochrones_style.qml`</ph></source>
+<target xml:lang="fr">Sélectionnez le fichier:<ph id="1">  </ph>
+<ph id="2">`CRM_warehouse_isochrones_style.qml`</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <ph id="1">`Ouvrir`</ph>, puis <ph id="2">`Appliquer`</ph> et <ph id="3">`OK`</ph></source>
+<target xml:lang="fr">Cliquez sur <ph id="1">`Ouvrir`</ph>, puis <ph id="2">`Appliquer`</ph> et <ph id="3">`OK`</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM <bpt id="1">&lt;a id="3-visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Visualiser l’accessibilité des postes de santé depuis les entrepôts CRM <bpt id="1">&lt;a id="3-visualiser-laccessibilite-des-postes-de-sante-depuis-les-entrepots-crm"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Aina doit identifier quels postes de santé sont accessibles par la route à partir des trois entrepôts clés (Antananarivo, Maroantsetra et Tolanaro) <bpt id="1">**</bpt>en moins de 10 heures de trajet<ept id="1">**</ept>. Elle va le faire manuellement en combinant les isochrones 10h de ces entrepôts et en les comparant au jeu de données national des postes de santé.</source>
+<target xml:lang="fr">Aina doit identifier quels postes de santé sont accessibles par la route à partir des trois entrepôts clés (Antananarivo, Maroantsetra et Tolanaro) <bpt id="1">**</bpt>en moins de 10 heures de trajet<ept id="1">**</ept>. Elle va le faire manuellement en combinant les isochrones 10h de ces entrepôts et en les comparant au jeu de données national des postes de santé.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Fusionner les couches isochrones des trois entrepôts<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Fusionner les couches isochrones des trois entrepôts<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Dans la <bpt id="1">**</bpt>Boîte à outils de traitement<ept id="1">**</ept>, rechercher <ph id="2">`Fusionner des couches vecteur`</ph>.</source>
+<target xml:lang="fr">Dans la <bpt id="1">**</bpt>Boîte à outils de traitement<ept id="1">**</ept>, rechercher <ph id="2">`Fusionner des couches vecteur`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couches en entrée<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couches en entrée<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`CRM_isochrones_Antananarivo_upto10h.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`CRM_isochrones_Antananarivo_upto10h.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`CRM_isochrones_Maroantsetra_upto10h.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`CRM_isochrones_Maroantsetra_upto10h.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`CRM_isochrones_Tolanaro_upto10h.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`CRM_isochrones_Tolanaro_upto10h.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>SCR<ept id="1">**</ept>: <ph id="2">`EPSG:4326`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>SCR<ept id="1">**</ept>: <ph id="2">`EPSG:4326`</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Enregistrer sous<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Enregistrer sous<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Sélectionner les postes de santé accessibles en moins de 10 heures<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Sélectionner les postes de santé accessibles en moins de 10 heures<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Dans la <bpt id="1">**</bpt>Boîte à outils de traitement<ept id="1">**</ept>, rechercher <ph id="2">`Sélection par localisation`</ph>.</source>
+<target xml:lang="fr">Dans la <bpt id="1">**</bpt>Boîte à outils de traitement<ept id="1">**</ept>, rechercher <ph id="2">`Sélection par localisation`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Définir les paramètres suivants:</source>
+<target xml:lang="fr">Définir les paramètres suivants:</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche source<ept id="1">**</ept>: <ph id="2">`health_posts_only.gpkg`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche source<ept id="1">**</ept>: <ph id="2">`health_posts_only.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Prédicat<ept id="1">**</ept>: <ph id="2">`intersects`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Prédicat<ept id="1">**</ept>: <ph id="2">`intersects`</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Couche d’intersection<ept id="1">**</ept>: <ph id="2">`merged_isochrones_10h.gpkg`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Couche d’intersection<ept id="1">**</ept>: <ph id="2">`merged_isochrones_10h.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>Exécuter<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">💡 Les points sélectionnés sont ceux situés dans les zones de desserte des entrepôts à moins de 10 heures.</source>
+<target xml:lang="fr">💡 Les points sélectionnés sont ceux situés dans les zones de desserte des entrepôts à moins de 10 heures.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Créer un champ d’accessibilité pour les postes sélectionnés<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Créer un champ d’accessibilité pour les postes sélectionnés<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Ouvrir la <bpt id="1">**</bpt>calculatrice de champs<ept id="1">**</ept> <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept> sur la couche <ph id="3">`health_posts_only`</ph>.</source>
+<target xml:lang="fr">Ouvrir la <bpt id="1">**</bpt>calculatrice de champs<ept id="1">**</ept> <bpt id="2">![</bpt><ept id="2">](/fig/mActionCalculateField.png)</ept> sur la couche <ph id="3">`health_posts_only`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Cochez ✅ <ph id="1">`Mettre à jour uniquement les entités sélectionnées`</ph></source>
+<target xml:lang="fr">Cochez ✅ <ph id="1">`Mettre à jour uniquement les entités sélectionnées`</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Nom du champ de sortie<ept id="1">**</ept>: <ph id="2">`Reachability_time`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Nom du champ de sortie<ept id="1">**</ept>: <ph id="2">`Reachability_time`</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Type du champ de sortie<ept id="1">**</ept>: <ph id="2">`Texte (chaîne)`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Type du champ de sortie<ept id="1">**</ept>: <ph id="2">`Texte (chaîne)`</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour créer et renseigner le champ pour les entités sélectionnées.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour créer et renseigner le champ pour les entités sélectionnées.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Marquer les autres postes de santé comme non accessibles<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Marquer les autres postes de santé comme non accessibles<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Inverser la sélection:<ph id="1">  </ph>
+     Allez dans <ph id="2">`Édition`</ph> → <ph id="3">`Inverser la sélection`</ph> <bpt id="4">![</bpt><ept id="4">](/fig/mActionInvertSelection.png)</ept><ph id="5">  </ph>
+     ou clic droit sur la couche → <ph id="6">`Inverser la sélection`</ph>.</source>
+<target xml:lang="fr">Inverser la sélection:<ph id="1">  </ph>
+     Allez dans <ph id="2">`Édition`</ph> → <ph id="3">`Inverser la sélection`</ph> <bpt id="4">![</bpt><ept id="4">](/fig/mActionInvertSelection.png)</ept><ph id="5">  </ph>
+     ou clic droit sur la couche → <ph id="6">`Inverser la sélection`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Ouvrez à nouveau la <bpt id="1">**</bpt>calculatrice de champs<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Ouvrez à nouveau la <bpt id="1">**</bpt>calculatrice de champs<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Cochez ✅ <ph id="1">`Mettre à jour uniquement les entités sélectionnées`</ph></source>
+<target xml:lang="fr">Cochez ✅ <ph id="1">`Mettre à jour uniquement les entités sélectionnées`</ph></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Utiliser le même champ: <ph id="1">`Reachability_time`</ph></source>
+<target xml:lang="fr">Utiliser le même champ: <ph id="1">`Reachability_time`</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Expression<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour appliquer la mise à jour.</source>
+<target xml:lang="fr">Cliquez sur <bpt id="1">**</bpt>OK<ept id="1">**</ept> pour appliquer la mise à jour.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">✅ Tous les postes de santé sont maintenant étiquetés comme <bpt id="1">**</bpt>accessibles<ept id="1">**</ept> ou <bpt id="2">**</bpt>non accessibles<ept id="2">**</ept> dans la colonne <ph id="3">`Reachability_time`</ph>.</source>
+<target xml:lang="fr">✅ Tous les postes de santé sont maintenant étiquetés comme <bpt id="1">**</bpt>accessibles<ept id="1">**</ept> ou <bpt id="2">**</bpt>non accessibles<ept id="2">**</ept> dans la colonne <ph id="3">`Reachability_time`</ph>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

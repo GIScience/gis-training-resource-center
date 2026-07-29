@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_common_errors_and_Issues.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">QGIS common errors and issues <ph id="1">&lt;!-- omit from toc --></ph></source>
+<target xml:lang="fr">QGIS common errors and issues <ph id="1">&lt;!-- omit from toc --></ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;a id="qgis-common-errors-and-issues-omit-from-toc"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;a id="qgis-common-errors-and-issues-omit-from-toc"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Here we are collecting common QGIS errors and issues as general QGIS training support.</source>
+<target xml:lang="fr">Here we are collecting common QGIS errors and issues as general QGIS training support.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Table of content <ph id="1">&lt;!-- omit from toc --></ph></source>
+<target xml:lang="fr">Table of content <ph id="1">&lt;!-- omit from toc --></ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;a id="table-of-content-omit-from-toc"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;a id="table-of-content-omit-from-toc"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Different QGIS versions<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Different QGIS versions<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS on Mac doesn't open<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS on Mac doesn't open<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>A layer is not displayed in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>A layer is not displayed in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>A layer window has disappeared in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>A layer window has disappeared in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layers that should actually be in the same position are not on top of each other<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layers that should actually be in the same position are not on top of each other<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer file disappeared from the layer window<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer file disappeared from the layer window<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Missing processing tools in the panels tool and incomplete vector tab<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Missing processing tools in the panels tool and incomplete vector tab<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Missing toolbox<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-toolbox)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Missing toolbox<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#missing-toolbox)</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>The North arrow is not syncing with the corresponding map<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>The North arrow is not syncing with the corresponding map<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Invalid Geometry<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#invalid-geometry)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Invalid Geometry<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#invalid-geometry)</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Coordinate systems: What do all these terms mean?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Coordinate systems: What do all these terms mean?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Coordinate systems: How do I redefine a dataset's coordinate system?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Coordinate systems: How do I redefine a dataset's coordinate system?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Coordinate systems: Why is Mercator ever used if it's so distorted?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Coordinate systems: Why is Mercator ever used if it's so distorted?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Coordinate systems: My dataset is not located where it should be!<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Coordinate systems: My dataset is not located where it should be!<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Coordinate systems: What coordinate system should my dataset be in?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Coordinate systems: What coordinate system should my dataset be in?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>My dataset is slightly offset from where it should be!<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>My dataset is slightly offset from where it should be!<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Wrong data results or missing data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Wrong data results or missing data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>File Management Issues<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#file-management-issues)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>File Management Issues<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#file-management-issues)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Specific QGIS problems<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#specific-qgis-problems)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Specific QGIS problems<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#specific-qgis-problems)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Basic settings \> Deactivating the automatic projection selection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Basic settings \> Deactivating the automatic projection selection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Saving regularly<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#saving-regularly)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Saving regularly<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#saving-regularly)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>GRASS applications<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#grass-applications)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>GRASS applications<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#grass-applications)</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>SAGA with Linux<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#saga-with-linux)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>SAGA with Linux<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#saga-with-linux)</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Umlauts, special characters, spaces in file paths<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Umlauts, special characters, spaces in file paths<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Help Access Links<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-help-access-links)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Help Access Links<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-help-access-links)</ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS tutorials and tips:<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS tutorials and tips:<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)</ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS community/forums:<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-communityforums)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS community/forums:<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-communityforums)</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS YouTube channels:<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-youtube-channels)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS YouTube channels:<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#qgis-youtube-channels)</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>ChatGPT<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#chatgpt)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>ChatGPT<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html#chatgpt)</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Different QGIS versions <bpt id="1">&lt;a id="different-qgis-versions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Different QGIS versions <bpt id="1">&lt;a id="different-qgis-versions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">The Wiki and in particular the videos in it are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. Therefore there may be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC. Nonetheless this chapter focuses on common errors and issues, hopefully for many (upcoming) versions.</source>
+<target xml:lang="fr">The Wiki and in particular the videos in it are only a snapshot in time. QGIS itself, as well as the installable extensions, are constantly being developed and improved. Therefore there may be differences between the various versions in the appearance of the user interface or, in rare cases, even in the function. Consequently, there may be differences between the Wiki and the QGIS installed on your PC. Nonetheless this chapter focuses on common errors and issues, hopefully for many (upcoming) versions.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">QGIS on Mac doesn't open <bpt id="1">&lt;a id="qgis-on-mac-doesnt-open"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS on Mac doesn't open <bpt id="1">&lt;a id="qgis-on-mac-doesnt-open"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">When opening QGIS for the first time on Mac you may get this error message:</source>
+<target xml:lang="fr">When opening QGIS for the first time on Mac you may get this error message:</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/qgis_on_mac.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/qgis_on_mac.png</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 55%</ph>
+<ph id="2">name: qgis_on_mac.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Error when opening QGIS on Mac for the first time</ph></source>
+<target xml:lang="fr"><ph id="1">width: 55%</ph>
+<ph id="2">name: qgis_on_mac.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Error when opening QGIS on Mac for the first time</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Error when opening QGIS on Mac for the first time.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Error when opening QGIS on Mac for the first time.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">To solve this, press the control button on your keyboard and right-click open.</source>
+<target xml:lang="fr">To solve this, press the control button on your keyboard and right-click open.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">If this problem persists, you can change the settings on your device. Go in the <ph id="1">`Settings`</ph> > <ph id="2">`Security &amp; Privacy`</ph> and scroll down, click <ph id="3">`Open Anyway`</ph></source>
+<target xml:lang="fr">If this problem persists, you can change the settings on your device. Go in the <ph id="1">`Settings`</ph> > <ph id="2">`Security &amp; Privacy`</ph> and scroll down, click <ph id="3">`Open Anyway`</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/opening_qgis_mac.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/opening_qgis_mac.png</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 55%</ph>
+<ph id="2">name: opening_qgis_mac.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Change settings to open QGIS on Mac</ph></source>
+<target xml:lang="fr"><ph id="1">width: 55%</ph>
+<ph id="2">name: opening_qgis_mac.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Change settings to open QGIS on Mac</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Change settings to open QGIS on Mac.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Change settings to open QGIS on Mac.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">A layer is not displayed in QGIS <bpt id="1">&lt;a id="a-layer-is-not-displayed-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">A layer is not displayed in QGIS <bpt id="1">&lt;a id="a-layer-is-not-displayed-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Right click on the corresponding layer.</source>
+<target xml:lang="fr">Right click on the corresponding layer.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Activate the <ph id="1">`Zoom to Layer`</ph> function in the pop-up window.</source>
+<target xml:lang="fr">Activate the <ph id="1">`Zoom to Layer`</ph> function in the pop-up window.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_layer_display.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_layer_display.png</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 55%</ph>
+<ph id="2">name: en_layer_display.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Zoom to layer if layer is not displayed</ph></source>
+<target xml:lang="fr"><ph id="1">width: 55%</ph>
+<ph id="2">name: en_layer_display.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Zoom to layer if layer is not displayed</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Zoom to layer if layer is not displayed.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Zoom to layer if layer is not displayed.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">A layer window has disappeared in QGIS <bpt id="1">&lt;a id="a-layer-window-has-disappeared-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">A layer window has disappeared in QGIS <bpt id="1">&lt;a id="a-layer-window-has-disappeared-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Open in the main tab <ph id="1">`View`</ph>.</source>
+<target xml:lang="fr">Open in the main tab <ph id="1">`View`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">In the pop-up window select <ph id="1">`Panels`</ph>.</source>
+<target xml:lang="fr">In the pop-up window select <ph id="1">`Panels`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">In the sub-window hook the case <ph id="1">`Layers`</ph>.</source>
+<target xml:lang="fr">In the sub-window hook the case <ph id="1">`Layers`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_closed_layer_view.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_closed_layer_view.png</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_closed_layer_view.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Layer window disappeared</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_closed_layer_view.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Layer window disappeared</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Layer window disappeared.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Layer window disappeared.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Layers that should actually be in the same position are not on top of each other <bpt id="1">&lt;a id="layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Layers that should actually be in the same position are not on top of each other <bpt id="1">&lt;a id="layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">These sorts of problems are usually due to a) <bpt id="1">*</bpt>mismatching crs in layers and project<ept id="1">*</ept>, or b) an <bpt id="2">*</bpt>incorrect reprojection<ept id="2">*</ept>.</source>
+<target xml:lang="fr">These sorts of problems are usually due to a) <bpt id="1">*</bpt>mismatching crs in layers and project<ept id="1">*</ept>, or b) an <bpt id="2">*</bpt>incorrect reprojection<ept id="2">*</ept>.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">a)</source>
+<target xml:lang="fr">a)</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Check the layer properties (right-click on the corresponding layer).</source>
+<target xml:lang="fr">Check the layer properties (right-click on the corresponding layer).</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Select in the pop-up window <ph id="1">`Properties`</ph>.</source>
+<target xml:lang="fr">Select in the pop-up window <ph id="1">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">In the next pop-up-window select <ph id="1">`Information`</ph> and check which projection is defined under the entry <ph id="2">`Coordinate Reference System (CRS)`</ph>.</source>
+<target xml:lang="fr">In the next pop-up-window select <ph id="1">`Information`</ph> and check which projection is defined under the entry <ph id="2">`Coordinate Reference System (CRS)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">And additionally check if the same projection is set in the status bar at the bottom right.</source>
+<target xml:lang="fr">And additionally check if the same projection is set in the status bar at the bottom right.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Correct any discrepancies by reprojecting the layers or changing the setting of the crs project.</source>
+<target xml:lang="fr">Correct any discrepancies by reprojecting the layers or changing the setting of the crs project.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">b)</source>
+<target xml:lang="fr">b)</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Reprojecting:<ept id="1">**</ept><ph id="2">  </ph>
+When having two layers with different crs, then select one of the layers as the input layer having, f. e. the crs EPSG:32632 - WGS 84 and select EPSG:4326 - WGS 84 as the target crs. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different crs.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Reprojecting:<ept id="1">**</ept><ph id="2">  </ph>
+When having two layers with different crs, then select one of the layers as the input layer having, f. e. the crs EPSG:32632 - WGS 84 and select EPSG:4326 - WGS 84 as the target crs. Start the algorithm and you will receive a new layer, identical to the input layer, but with a different crs.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different.</source>
+<target xml:lang="fr">It is displayed in the workspace in the same place as the other layers, as QGIS reprojects it at runtime. However, its actual coordinates are different.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_layer_with_different_KBS.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_layer_with_different_KBS.png</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_layer_with_different_KBS.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Layer with different crs</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_layer_with_different_KBS.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Layer with different crs</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Layer with different crs.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Layer with different crs.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">You can check this using the <ph id="1">`Add Geometry Attributes`</ph> &lt; <ph id="2">`Geometry Tools`</ph> algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.</source>
+<target xml:lang="fr">You can check this using the <ph id="1">`Add Geometry Attributes`</ph> &lt; <ph id="2">`Geometry Tools`</ph> algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Instead do this:</source>
+<target xml:lang="fr">Instead do this:</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Vector`</ph>tab.</source>
+<target xml:lang="fr">Select the <ph id="1">`Vector`</ph>tab.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Activate in the pop-up menu <ph id="1">`Data Management Tools`</ph>.</source>
+<target xml:lang="fr">Activate in the pop-up menu <ph id="1">`Data Management Tools`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">And in the following pop-up menu <ph id="1">`Reproject Layer`</ph>.</source>
+<target xml:lang="fr">And in the following pop-up menu <ph id="1">`Reproject Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_reproject_vector_layer01.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_reproject_vector_layer01.png</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reproject_vector_layer01.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Reproject Layer in QGIS</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reproject_vector_layer01.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Reproject Layer in QGIS</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Reproject Layer in QGIS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Reproject Layer in QGIS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_reprojected_layer.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_reprojected_layer.png</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reprojected_layer.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Tool to reproject layer in QGIS</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reprojected_layer.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Tool to reproject layer in QGIS</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Tool to reproject Layer in QGIS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Tool to reproject Layer in QGIS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Always save your reprojected layers by the <ph id="1">`Export`</ph> and <ph id="2">`Save as`</ph> functions because they are only temporarily saved and will disappear after closing the project.</source>
+<target xml:lang="fr">Always save your reprojected layers by the <ph id="1">`Export`</ph> and <ph id="2">`Save as`</ph> functions because they are only temporarily saved and will disappear after closing the project.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_reprojection_export.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_reprojection_export.png</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reprojection_export.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Export reprojected layer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reprojection_export.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Export reprojected layer</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Export reprojected layer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Export reprojected layer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Similar procedure for raster layers ...</source>
+<target xml:lang="fr">Similar procedure for raster layers ...</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Raster`</ph> tab.</source>
+<target xml:lang="fr">Select the <ph id="1">`Raster`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Activate in the pop-up menu <ph id="1">`Projections`</ph>.</source>
+<target xml:lang="fr">Activate in the pop-up menu <ph id="1">`Projections`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">And in the following pop-up menu <ph id="1">`Warp (Reproject)`</ph></source>
+<target xml:lang="fr">And in the following pop-up menu <ph id="1">`Warp (Reproject)`</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_reproject_raster_layers01.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_reproject_raster_layers01.png</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reproject_raster_layers01.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Reproject raster layer in QGIS</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_reproject_raster_layers01.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Reproject raster layer in QGIS</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Reproject raster layer in QGIS.
+<ph id="1">:::</ph>
+<ph id="2">:::{attention}</ph>
+ Errors often occur if the crs is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from QGIS, reload the data and then reproject and export them.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Reproject raster layer in QGIS.
+<ph id="1">:::</ph>
+<ph id="2">:::{attention}</ph>
+ Errors often occur if the crs is set and no reprojection tool has been used. If you suspect that your reprojection has gone wrong, delete all affected layers from QGIS, reload the data and then reproject and export them.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Layer file disappeared from the layer window <bpt id="1">&lt;a id="layer-file-disappeared-from-the-layer-window"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Layer file disappeared from the layer window <bpt id="1">&lt;a id="layer-file-disappeared-from-the-layer-window"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">If a layer file is no longer displayed or active in the layer window after reopening a QGIS project, it is only a temporary layer. Temporary layers have a symbol on the right of their name, as so:
+<bpt id="1"> ![</bpt><ept id="1">](/fig/en_qgis_temporary_Layer.png)</ept></source>
+<target xml:lang="fr">If a layer file is no longer displayed or active in the layer window after reopening a QGIS project, it is only a temporary layer. Temporary layers have a symbol on the right of their name, as so:
+<bpt id="1"> ![</bpt><ept id="1">](/fig/en_qgis_temporary_Layer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Next time, save it:</source>
+<target xml:lang="fr">Next time, save it:</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Click on the tab <ph id="1">`Layer`</ph> and on <ph id="2">`Save as`</ph> in the pop-up window.</source>
+<target xml:lang="fr">Click on the tab <ph id="1">`Layer`</ph> and on <ph id="2">`Save as`</ph> in the pop-up window.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_save_layer01.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_save_layer01.png</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 65%</ph>
+<ph id="2">name: en_qgis_save_layer01.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Save layer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 65%</ph>
+<ph id="2">name: en_qgis_save_layer01.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Save layer</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Save layer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Save layer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Put in a <bpt id="1">_</bpt>file name<ept id="1">_</ept> and click on the <ph id="2">`three points`</ph> <bpt id="3">![</bpt><ept id="3">](/fig/Three_points.png)</ept> to save the file in the chosen directory place.</source>
+<target xml:lang="fr">Put in a <bpt id="1">_</bpt>file name<ept id="1">_</ept> and click on the <ph id="2">`three points`</ph> <bpt id="3">![</bpt><ept id="3">](/fig/Three_points.png)</ept> to save the file in the chosen directory place.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Select the corresponding CRS.</source>
+<target xml:lang="fr">Select the corresponding CRS.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`ok`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`ok`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_save_layer02.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_save_layer02.png</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 85%</ph>
+<ph id="2">name: en_qgis_save_layer02</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 85%</ph>
+<ph id="2">name: en_qgis_save_layer02</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Save layer in your directory.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Save layer in your directory.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Missing processing tools in the panels tool and incomplete vector tab <bpt id="1">&lt;a id="missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Missing processing tools in the panels tool and incomplete vector tab <bpt id="1">&lt;a id="missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Activate the <ph id="1">`Processing Tools`</ph> by going to <ph id="2">`Plugins`</ph> >
+<ph id="3">`Manage and install Plugins`</ph>.</source>
+<target xml:lang="fr">Activate the <ph id="1">`Processing Tools`</ph> by going to <ph id="2">`Plugins`</ph> >
+<ph id="3">`Manage and install Plugins`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`All`</ph>.</source>
+<target xml:lang="fr">Select <ph id="1">`All`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Rehook the <ph id="1">`Processing`</ph> function in the corresponding list.</source>
+<target xml:lang="fr">Rehook the <ph id="1">`Processing`</ph> function in the corresponding list.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_missing_processing_tools.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_missing_processing_tools.png</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 85%</ph>
+<ph id="2">name: en_missing_processing_tools</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 85%</ph>
+<ph id="2">name: en_missing_processing_tools</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Reinstall processing tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Reinstall processing tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">See also: Geographic Information Systems
+<ph id="1">https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vector-menu-of-qgis</ph></source>
+<target xml:lang="fr">See also: Geographic Information Systems
+<ph id="1">https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vector-menu-of-qgis</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Missing toolbox <bpt id="1">&lt;a id="missing-toolbox"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Missing toolbox <bpt id="1">&lt;a id="missing-toolbox"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">To reactivate the <ph id="1">`Toolbox`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mAction.png)</ept> click on the <ph id="3">`View Tab`</ph>.</source>
+<target xml:lang="fr">To reactivate the <ph id="1">`Toolbox`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mAction.png)</ept> click on the <ph id="3">`View Tab`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Select in the pop-up window <ph id="1">`Panels`</ph>.</source>
+<target xml:lang="fr">Select in the pop-up window <ph id="1">`Panels`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Set in the following pop-up window a hook for the <ph id="1">`Processing Toolbox`</ph>.</source>
+<target xml:lang="fr">Set in the following pop-up window a hook for the <ph id="1">`Processing Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_missing_toolbox.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_missing_toolbox.png</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_missing_toolbox</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_missing_toolbox</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Reactivate toolbox.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Reactivate toolbox.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">The North arrow is not syncing with the corresponding map <bpt id="1">&lt;a id="the-north-arrow-is-not-syncing-with-the-corresponding-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The North arrow is not syncing with the corresponding map <bpt id="1">&lt;a id="the-north-arrow-is-not-syncing-with-the-corresponding-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">There are two places where you have to define which map the north arrow should sync with.</source>
+<target xml:lang="fr">There are two places where you have to define which map the north arrow should sync with.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Layout Tab`</ph> (of the print layout) for the map image under <ph id="2">`General Settings`</ph> make sure that the reference map has the right map selected.</source>
+<target xml:lang="fr">In the <ph id="1">`Layout Tab`</ph> (of the print layout) for the map image under <ph id="2">`General Settings`</ph> make sure that the reference map has the right map selected.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_correct_referenciation_to_map.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_correct_referenciation_to_map.png</ph></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 85%</ph>
+<ph id="2">name: en_qgis_correct_referenciation_to_map.png</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 85%</ph>
+<ph id="2">name: en_qgis_correct_referenciation_to_map.png</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Correct reference to map.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Correct reference to map.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">See also: Geographic Information Systems
+<ph id="1">https://gis.stackexchange.com/questions/265095/north-arrow-not-syncing-with-map-qgis-2-18#:~:text=1%20Answer&amp;text=2-,There%20are%20TWO%20places%20where%20you%20have%20to%20tell%20it,and%20tell%20it%20which%20map</ph></source>
+<target xml:lang="fr">See also: Geographic Information Systems
+<ph id="1">https://gis.stackexchange.com/questions/265095/north-arrow-not-syncing-with-map-qgis-2-18#:~:text=1%20Answer&amp;text=2-,There%20are%20TWO%20places%20where%20you%20have%20to%20tell%20it,and%20tell%20it%20which%20map</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Invalid Geometry <bpt id="1">&lt;a id="invalid-geometry"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Invalid Geometry <bpt id="1">&lt;a id="invalid-geometry"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">If the error message <ph id="1">`Invalid Geometries`</ph> appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly).</source>
+<target xml:lang="fr">If the error message <ph id="1">`Invalid Geometries`</ph> appears, it may be that vector files have "slipped" during the processing or downloading process (e.g. the lines of polygons no longer fit together exactly).</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">These errors in the geometries can be corrected by running <ph id="1">`Fix Geometries`</ph>. Search for it in the Processing Toolbox.</source>
+<target xml:lang="fr">These errors in the geometries can be corrected by running <ph id="1">`Fix Geometries`</ph>. Search for it in the Processing Toolbox.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Coordinate systems: What do all these terms mean? <bpt id="1">&lt;a id="coordinate-systems-what-do-all-these-terms-mean"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coordinate systems: What do all these terms mean? <bpt id="1">&lt;a id="coordinate-systems-what-do-all-these-terms-mean"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Geospatial datasets consist of three basic data:</source>
+<target xml:lang="fr">Geospatial datasets consist of three basic data:</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Attributes: the meanings or labels of a data point.</source>
+<target xml:lang="fr">Attributes: the meanings or labels of a data point.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Coordinates: numbers describing the data point's position in space.</source>
+<target xml:lang="fr">Coordinates: numbers describing the data point's position in space.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Coordinate (reference) system: metadata describing the space itself: origin, axes, units, etc.</source>
+<target xml:lang="fr">Coordinate (reference) system: metadata describing the space itself: origin, axes, units, etc.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="fr">For example:</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Attributes: "The White House" or "1600 Pennsylvania Avenue"</source>
+<target xml:lang="fr">Attributes: "The White House" or "1600 Pennsylvania Avenue"</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Coordinates: (-77.0367, 38.8976)</source>
+<target xml:lang="fr">Coordinates: (-77.0367, 38.8976)</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Coordinate (reference) system: WGS84 longitude,latitude</source>
+<target xml:lang="fr">Coordinate (reference) system: WGS84 longitude,latitude</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+For further detailed information about coordinate systems have also a look at: <ph id="2">https://ihatecoordinatesystems.com/#correct-crs</ph>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+For further detailed information about coordinate systems have also a look at: <ph id="2">https://ihatecoordinatesystems.com/#correct-crs</ph>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Coordinate systems: How do I redefine a dataset's coordinate system? <bpt id="1">&lt;a id="coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coordinate systems: How do I redefine a dataset's coordinate system? <bpt id="1">&lt;a id="coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Redefining means the metadata about the coordinate system is modified but the coordinates are not. This contrasts with reprojections and transformations, which modify both the coordinate system and the coordinates.</source>
+<target xml:lang="fr">Redefining means the metadata about the coordinate system is modified but the coordinates are not. This contrasts with reprojections and transformations, which modify both the coordinate system and the coordinates.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solutions:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solutions:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">In QGIS, for vector datasets, use the <ph id="1">`Assign Projection`</ph> tool in the <ph id="2">`Vector General`</ph> toolset, not the <ph id="3">`Reproject Layer`</ph> tool. See also: <ph id="4">https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection</ph></source>
+<target xml:lang="fr">In QGIS, for vector datasets, use the <ph id="1">`Assign Projection`</ph> tool in the <ph id="2">`Vector General`</ph> toolset, not the <ph id="3">`Reproject Layer`</ph> tool. See also: <ph id="4">https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection</ph></target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">In QGIS, for raster datasets, use the <ph id="1">`Assign Projection`</ph> tool in the <ph id="2">`GDAL`</ph> toolset, not the <ph id="3">`Warp (Reproject)`</ph> tool. See also: <ph id="4">https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection</ph></source>
+<target xml:lang="fr">In QGIS, for raster datasets, use the <ph id="1">`Assign Projection`</ph> tool in the <ph id="2">`GDAL`</ph> toolset, not the <ph id="3">`Warp (Reproject)`</ph> tool. See also: <ph id="4">https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection</ph></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">From the command line, for vector datasets, use <ph id="1">`ogr2ogr`</ph> with the <ph id="2">`-a_srs`</ph> parameter, not the <ph id="3">`-t_srs`</ph> parameter. See also:
+<ph id="4">https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs</ph></source>
+<target xml:lang="fr">From the command line, for vector datasets, use <ph id="1">`ogr2ogr`</ph> with the <ph id="2">`-a_srs`</ph> parameter, not the <ph id="3">`-t_srs`</ph> parameter. See also:
+<ph id="4">https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs</ph></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">From the command line, for raster datasets, use <ph id="1">`gdal_edit`</ph> with the <ph id="2">`-a_srs`</ph> parameter. See also: <ph id="3">https://gdal.org/programs/gdal_edit.html#cmdoption-a_srs.py</ph></source>
+<target xml:lang="fr">From the command line, for raster datasets, use <ph id="1">`gdal_edit`</ph> with the <ph id="2">`-a_srs`</ph> parameter. See also: <ph id="3">https://gdal.org/programs/gdal_edit.html#cmdoption-a_srs.py</ph></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Coordinate systems: Why is Mercator ever used if it's so distorted? <bpt id="1">&lt;a id="coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coordinate systems: Why is Mercator ever used if it's so distorted? <bpt id="1">&lt;a id="coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Mercator is the only conformal cylindrical map projection. Cylindrical map projections mean the whole earth fits into a rectangle, which is very convenient for data processing algorithms that are used to working with rectangular images. Conformal means that angles and shapes are always preserved: north is always up, squares are always square, etc.. Using a non-conformal projection would make things look stretched, squashed, and/or rotated when zooming in.</source>
+<target xml:lang="fr">Mercator is the only conformal cylindrical map projection. Cylindrical map projections mean the whole earth fits into a rectangle, which is very convenient for data processing algorithms that are used to working with rectangular images. Conformal means that angles and shapes are always preserved: north is always up, squares are always square, etc.. Using a non-conformal projection would make things look stretched, squashed, and/or rotated when zooming in.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/qgis_mercator.jpg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/qgis_mercator.jpg</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: qgis_mercator.jpg</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: qgis_mercator.jpg</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Mercator projection.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Mercator projection.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor to correct measurements (See also: <ph id="1">https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor</ph>).<ph id="2">  </ph>
+The only time the distortion is problematic is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.</source>
+<target xml:lang="fr">Mercator does enlarge areas farther from the equator, but at least this distortion is the same horizontally and vertically. And it's trivial to calculate a scale factor to correct measurements (See also: <ph id="1">https://en.wikipedia.org/wiki/Mercator_projection#Scale_factor</ph>).<ph id="2">  </ph>
+The only time the distortion is problematic is when viewing a global-scale map with a range of different scale factors, but most maps are not global-scale and there are plenty of better projections to use for this case.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Coordinate systems: My dataset is not located where it should be! <bpt id="1">&lt;a id="coordinate-systems-my-dataset-is-not-located-where-it-should-be"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coordinate systems: My dataset is not located where it should be! <bpt id="1">&lt;a id="coordinate-systems-my-dataset-is-not-located-where-it-should-be"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Your dataset probably has the wrong coordinate system. This is the more general case of the previous problem. This can happen if the coordinate system is missing altogether, in which case GIS software often assumes that it is the same coordinate system as a previously loaded dataset, or the coordinate system set in the "project" or "map document".</source>
+<target xml:lang="fr">Your dataset probably has the wrong coordinate system. This is the more general case of the previous problem. This can happen if the coordinate system is missing altogether, in which case GIS software often assumes that it is the same coordinate system as a previously loaded dataset, or the coordinate system set in the "project" or "map document".</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Redefine the coordinate system, redefine i.e. change the coordinate system but not the coordinates, to the correct coordinate system.</source>
+<target xml:lang="fr">Redefine the coordinate system, redefine i.e. change the coordinate system but not the coordinates, to the correct coordinate system.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Open your <ph id="1">`Project`</ph>: Open the QGIS project where you want to redefine the coordinate system.</source>
+<target xml:lang="fr">Open your <ph id="1">`Project`</ph>: Open the QGIS project where you want to redefine the coordinate system.</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Access <ph id="1">`Project Properties`</ph>: Go to the <ph id="2">`Project menu`</ph> at the top of the QGIS window and select <ph id="3">`Properties`</ph>. Alternatively, you can press <ph id="4">`Ctrl + Shift + P`</ph> as a shortcut.</source>
+<target xml:lang="fr">Access <ph id="1">`Project Properties`</ph>: Go to the <ph id="2">`Project menu`</ph> at the top of the QGIS window and select <ph id="3">`Properties`</ph>. Alternatively, you can press <ph id="4">`Ctrl + Shift + P`</ph> as a shortcut.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Coordinate System Tab: In the <ph id="1">`Project Properties`</ph> window, select the `Coordinate System  tab.</source>
+<target xml:lang="fr">Coordinate System Tab: In the <ph id="1">`Project Properties`</ph> window, select the `Coordinate System  tab.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Change Coordinate System: Here, you can select a new coordinate system for your project. You can search for a specific coordinate system using the search bar, or you can browse through the list of available coordinate systems.</source>
+<target xml:lang="fr">Change Coordinate System: Here, you can select a new coordinate system for your project. You can search for a specific coordinate system using the search bar, or you can browse through the list of available coordinate systems.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Apply Changes: Once you've selected the desired coordinate system, click <ph id="1">`OK`</ph> to apply the changes. QGIS will reproject the layers in your project to match the new coordinate system.</source>
+<target xml:lang="fr">Apply Changes: Once you've selected the desired coordinate system, click <ph id="1">`OK`</ph> to apply the changes. QGIS will reproject the layers in your project to match the new coordinate system.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_redefining_CRS01.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_redefining_CRS01.png</ph></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: en_qgis_redefining_CRS01</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: en_qgis_redefining_CRS01</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Redefining CRS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Redefining CRS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
+And have also a final look at the right bottom of the QGIS window where the actual CRS is indicated.</source>
+<target xml:lang="fr">Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
+And have also a final look at the right bottom of the QGIS window where the actual CRS is indicated.</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_redefining_CRS02.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_redefining_CRS02.png</ph></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: en_qgis_redefining_CRS02</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: en_qgis_redefining_CRS02</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Check redefining CRS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Check redefining CRS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Coordinate systems: What coordinate system should my dataset be in? <bpt id="1">&lt;a id="coordinate-systems-what-coordinate-system-should-my-dataset-be-in"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coordinate systems: What coordinate system should my dataset be in? <bpt id="1">&lt;a id="coordinate-systems-what-coordinate-system-should-my-dataset-be-in"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">A data point's attributes give context to where on the earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box".</source>
+<target xml:lang="fr">A data point's attributes give context to where on the earth it is located. Most GIS software will display the minimum and maximum coordinates in the layer's properties as "extent" or "bounding box".</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solutions:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solutions:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS.
+You can run this sample code yourself, or use this form:</source>
+<target xml:lang="fr">If the attributes indicate the approximate longitude,latitude where the coordinates should be located, try doing a reverse lookup. This iterates over every well-defined coordinate system, unprojects the X,Y coordinates to WGS84, and measures the error to the known longitude,latitude. Errors less than a few hundred meters denote a reasonable projection, though this isn't precise enough to determine the GCS.
+You can run this sample code yourself, or use this form:</target>
+</trans-unit>
+<group id="sd1_ssf35" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf35_tu1" resname="sd1_2" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;label for="lookup_lng"></bpt>Longitude:<ept id="1">&lt;/label></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;label for="lookup_lng"></bpt>Longitude:<ept id="1">&lt;/label></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu2" resname="sd1_4" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_lng"
+                        name="lookup_lng"></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_lng"
+                        name="lookup_lng"></ph></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu3" resname="sd1_6" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;label for="lookup_lat"></bpt>Latitude:<ept id="1">&lt;/label></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;label for="lookup_lat"></bpt>Latitude:<ept id="1">&lt;/label></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu4" resname="sd1_8" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_lat"
+                        name="lookup_lat"></ph><ph id="2">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_lat"
+                        name="lookup_lat"></ph><ph id="2">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu6" resname="sd1_12" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;label for="lookup_x"></bpt>X-coordinate:<ept id="1">&lt;/label></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;label for="lookup_x"></bpt>X-coordinate:<ept id="1">&lt;/label></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu7" resname="sd1_14" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_x" name="lookup_x"></ph>
+                </source>
+<target xml:lang="fr"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_x" name="lookup_x"></ph>
+                </target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu8" resname="sd1_16" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;label for="lookup_y"></bpt>Y-coordinate:<ept id="1">&lt;/label></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;label for="lookup_y"></bpt>Y-coordinate:<ept id="1">&lt;/label></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu9" resname="sd1_18" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_y" name="lookup_y"></ph>
+                </source>
+<target xml:lang="fr"><ph id="1">&lt;input style="width:90%;" type="number" step="any" id="lookup_y" name="lookup_y"></ph>
+                </target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu11" resname="sd1_20" restype="x-value" xml:space="preserve">
+<source xml:lang="en">Submit</source>
+<target xml:lang="fr">Submit</target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu10" resname="sd1_21" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;input style="width:70%;" id="projectionLookupButton" type="submit" [#$sd1_sf35_tu11]&gt;</ph>
+                </source>
+<target xml:lang="fr"><ph id="1">&lt;input style="width:70%;" id="projectionLookupButton" type="submit" [#$sd1_sf35_tu11]&gt;</ph>
+                </target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu12" resname="projectionLoookupLoading-id" restype="x-paragraph" xml:space="preserve">
+<source xml:lang="en">
+    <bpt id="1">&lt;span id="projectionLoookupLoadingText" class="bold italic"></bpt><ept id="1">&lt;/span></ept>
+</source>
+<target xml:lang="fr">
+    <bpt id="1">&lt;span id="projectionLoookupLoadingText" class="bold italic"></bpt><ept id="1">&lt;/span></ept>
+</target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu13" resname="sd1_24" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;span class="bold"></bpt>Code<ept id="1">&lt;/span></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;span class="bold"></bpt>Code<ept id="1">&lt;/span></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu14" resname="sd1_26" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;span class="bold"></bpt>Name<ept id="1">&lt;/span></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;span class="bold"></bpt>Name<ept id="1">&lt;/span></ept></target>
+</trans-unit>
+<trans-unit id="sd1_sf35_tu15" resname="sd1_28" restype="x-td" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;span class="bold"></bpt>Error (meters)<ept id="1">&lt;/span></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;span class="bold"></bpt>Error (meters)<ept id="1">&lt;/span></ept></target>
+</trans-unit>
+</group>
+<group id="sd1_ssf36" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf36_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine a geographic (with longitude and latitude) geographic coordinate system (GCS) like WGS84.</source>
+<target xml:lang="fr">If the coordinates have X-values between -180 and 180, and Y-values between -90 and 90, then you probably want to redefine a geographic (with longitude and latitude) geographic coordinate system (GCS) like WGS84.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">If the coordinates have large absolute values, try redefining them to a local coordinate system like UTM, Gauss-Krüger, State Plane, or a national grid. Also consider trying neighboring zones, e.g. if UTM Zone 19N is wrong, try UTM Zone 18N.</source>
+<target xml:lang="fr">If the coordinates have large absolute values, try redefining them to a local coordinate system like UTM, Gauss-Krüger, State Plane, or a national grid. Also consider trying neighboring zones, e.g. if UTM Zone 19N is wrong, try UTM Zone 18N.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">If the attributes suggest the dataset is in the USA, then there might be a problem converting to/from Freedom Units. Try multiplying/dividing a data point's coordinates by 3.28084 to convert feet to meters/meters to feet and see if that places it in the proper location.</source>
+<target xml:lang="fr">If the attributes suggest the dataset is in the USA, then there might be a problem converting to/from Freedom Units. Try multiplying/dividing a data point's coordinates by 3.28084 to convert feet to meters/meters to feet and see if that places it in the proper location.</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">If the minimum X/Y coordinates are both zero and the maximum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasingly going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.</source>
+<target xml:lang="fr">If the minimum X/Y coordinates are both zero and the maximum X/Y coordinates are both positive, then the dataset may have been exported from non-geospatial software like Photoshop or Illustrator or Inkscape. This is especially likely if the dataset is flipped vertically since those editors typically have the Y-axis increasingly going down. You will need to manually georeference the dataset to use it, which changes both the coordinates and the coordinate system.</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">See also the following <bpt id="1">[</bpt><bpt id="2">__</bpt>Wiki_Page<ept id="2">__</ept><ept id="1">](../Wiki/en_qgis_projections_wiki.md)</ept> <ph id="3">`Projections`</ph>.</source>
+<target xml:lang="fr">See also the following <bpt id="1">[</bpt><bpt id="2">__</bpt>Wiki_Page<ept id="2">__</ept><ept id="1">](../Wiki/en_qgis_projections_wiki.md)</ept> <ph id="3">`Projections`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">My dataset is slightly offset from where it should be! <bpt id="1">&lt;a id="my-dataset-is-slightly-offset-from-where-it-should-be"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">My dataset is slightly offset from where it should be! <bpt id="1">&lt;a id="my-dataset-is-slightly-offset-from-where-it-should-be"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Your dataset probably has the wrong longitude/latitude geographic coordinate system (GCS). Different GCSs define slightly different sizes/shapes of the Earth (their ellipsoids) and different positionings on the Earth (their datums). As a result, the same longitude/latitude coordinates in two different GCSs can appear offset, although typically within tens of meters of each other. This can happen even if you are using a projected coordinate system (PCS) whose units are not degrees of longitude/latitude since PCSs have a GCS embedded within them.</source>
+<target xml:lang="fr">Your dataset probably has the wrong longitude/latitude geographic coordinate system (GCS). Different GCSs define slightly different sizes/shapes of the Earth (their ellipsoids) and different positionings on the Earth (their datums). As a result, the same longitude/latitude coordinates in two different GCSs can appear offset, although typically within tens of meters of each other. This can happen even if you are using a projected coordinate system (PCS) whose units are not degrees of longitude/latitude since PCSs have a GCS embedded within them.</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/qgis_wrong-gcs.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/qgis_wrong-gcs.png</ph></target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: qgis_wrong-gcs.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Offset because of wrong GCS</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: qgis_wrong-gcs.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Offset because of wrong GCS</ph></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Offset because of wrong GCS. Source: Dan Mahr. All rights reserved. This content is excluded from our Creative Commons license.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Offset because of wrong GCS. Source: Dan Mahr. All rights reserved. This content is excluded from our Creative Commons license.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution<ept id="1">__</ept>:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Redefine the coordinate system, i.e. change the coordinate system but not the coordinates, to one of the following:</source>
+<target xml:lang="fr">Redefine the coordinate system, i.e. change the coordinate system but not the coordinates, to one of the following:</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Try to redefine to the WGS84 GCS.</source>
+<target xml:lang="fr">Try to redefine to the WGS84 GCS.</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">If your dataset was collected with GPS, try redefining it to WGS84.</source>
+<target xml:lang="fr">If your dataset was collected with GPS, try redefining it to WGS84.</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">If your dataset was collected with GLONASS, try redefining it to PZ-90.</source>
+<target xml:lang="fr">If your dataset was collected with GLONASS, try redefining it to PZ-90.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">If your dataset was collected with Galileo, try redefining it to ITRF.</source>
+<target xml:lang="fr">If your dataset was collected with Galileo, try redefining it to ITRF.</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">If your dataset is in the USA, try redefining it to NAD27, NAD83, or WGS84.</source>
+<target xml:lang="fr">If your dataset is in the USA, try redefining it to NAD27, NAD83, or WGS84.</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">If your dataset is in Europe, try redefining it to ED50, ETRS89, or WGS84.</source>
+<target xml:lang="fr">If your dataset is in Europe, try redefining it to ED50, ETRS89, or WGS84.</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">If your dataset is in Australia, try redefining it to GDA94 or GDA2020.</source>
+<target xml:lang="fr">If your dataset is in Australia, try redefining it to GDA94 or GDA2020.</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">If your dataset is in China and/or collected with BeiDou, good luck. :weary:</source>
+<target xml:lang="fr">If your dataset is in China and/or collected with BeiDou, good luck. :weary:</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Wrong data results or missing data <bpt id="1">&lt;a id="wrong-data-results-or-missing-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Wrong data results or missing data <bpt id="1">&lt;a id="wrong-data-results-or-missing-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">When you get wrong data results or missing data, please check your file names. You should not use file names with capitals, special characters or empty spaces. Always use underscores between the words for the file name.</source>
+<target xml:lang="fr">When you get wrong data results or missing data, please check your file names. You should not use file names with capitals, special characters or empty spaces. Always use underscores between the words for the file name.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">File Management Issues <bpt id="1">&lt;a id="file-management-issues"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">File Management Issues <bpt id="1">&lt;a id="file-management-issues"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">There may be different reasons, e.g. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored in different places. In any case, there is a solution: a clear folder structure.</source>
+<target xml:lang="fr">There may be different reasons, e.g. reopening your QGIS project, not all files will be displayed correctly because some got lost or were stored in different places. In any case, there is a solution: a clear folder structure.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Solution:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Recommended standard folder structure:</source>
+<target xml:lang="fr">Recommended standard folder structure:</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Standard_project_folder_structure.drawio.svg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Standard_project_folder_structure.drawio.svg</ph></target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: Standard_project_folder_structure.drawio.svg</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: Standard_project_folder_structure.drawio.svg</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">How it might look like on your pc:</source>
+<target xml:lang="fr">How it might look like on your pc:</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_folder_structure_pc.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_folder_structure_pc.png</ph></target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_folder_structure_pc.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Standard folder structure on your PC</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_folder_structure_pc.png</ph>
+<ph id="3">align: center</ph>
+<ph id="4">name: Standard folder structure on your PC</ph></target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">Standard folder structure on your PC.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Standard folder structure on your PC.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">The standard folder structure has two principal advantages:</source>
+<target xml:lang="fr">The standard folder structure has two principal advantages:</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.</source>
+<target xml:lang="fr">By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project.</source>
+<target xml:lang="fr">The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en">The folder structure template can be downloaded <bpt id="1">[</bpt><bpt id="2">__</bpt>here<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip)</ept>.</source>
+<target xml:lang="fr">The folder structure template can be downloaded <bpt id="1">[</bpt><bpt id="2">__</bpt>here<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+Good data organisation with a fixed and well thought-out folder structure prevents such problems.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+Good data organisation with a fixed and well thought-out folder structure prevents such problems.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en">See also the following <bpt id="1">[</bpt><bpt id="2">__</bpt>Wiki_Page<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md)</ept> for <ph id="3">`How to create a new QGIS project`</ph> and <ph id="4">`How to open an existing QGIS project`</ph>.</source>
+<target xml:lang="fr">See also the following <bpt id="1">[</bpt><bpt id="2">__</bpt>Wiki_Page<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md)</ept> for <ph id="3">`How to create a new QGIS project`</ph> and <ph id="4">`How to open an existing QGIS project`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en">Specific QGIS problems <bpt id="1">&lt;a id="specific-qgis-problems"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Specific QGIS problems <bpt id="1">&lt;a id="specific-qgis-problems"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en">Basic settings > Deactivating the automatic projection selection <bpt id="1">&lt;a id="basic-settings-deactivating-the-automatic-projection-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic settings > Deactivating the automatic projection selection <bpt id="1">&lt;a id="basic-settings-deactivating-the-automatic-projection-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en">After installing QGIS, some basic settings should be changed to avoid possible sources of error.
+If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.</source>
+<target xml:lang="fr">After installing QGIS, some basic settings should be changed to avoid possible sources of error.
+If a layer file does not have a projection, a projection must be defined for it when it is imported into QGIS. By deactivating the automatic projection selection, this projection can be defined manually. This prevents layers from accidentally being in the wrong projection.</target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Settings`</ph> tab.</source>
+<target xml:lang="fr">Select the <ph id="1">`Settings`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en">Then activate in the navigation menu <ph id="1">`Options`</ph>.</source>
+<target xml:lang="fr">Then activate in the navigation menu <ph id="1">`Options`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en">In the pop-up window select <ph id="1">`CRS Handling`</ph>.</source>
+<target xml:lang="fr">In the pop-up window select <ph id="1">`CRS Handling`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`CRS for projects`</ph> activate <ph id="2">`Use CRS from first layer added`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`CRS for projects`</ph> activate <ph id="2">`Use CRS from first layer added`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en">And under <ph id="1">`CRS for layers`</ph> activate <ph id="2">`Prompt for CRS`</ph>.</source>
+<target xml:lang="fr">And under <ph id="1">`CRS for layers`</ph> activate <ph id="2">`Prompt for CRS`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_CRS_settings.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_CRS_settings.png</ph></target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 95%</ph>
+<ph id="2">name: en_qgis_CRS_settings.png</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 95%</ph>
+<ph id="2">name: en_qgis_CRS_settings.png</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en">Change crs settings in QGIS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Change crs settings in QGIS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en">Saving regularly <bpt id="1">&lt;a id="saving-regularly"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Saving regularly <bpt id="1">&lt;a id="saving-regularly"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en">Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand dollars is not completely safe.
+More complex tasks with longer calculation times may still cause problems. Regular saving is therefore recommended.</source>
+<target xml:lang="fr">Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand dollars is not completely safe.
+More complex tasks with longer calculation times may still cause problems. Regular saving is therefore recommended.</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en">See also the following <bpt id="1">[</bpt><bpt id="2">__</bpt>Wiki_Page<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects)</ept> <ph id="3">`Save and open QGIS Projects.`</ph></source>
+<target xml:lang="fr">See also the following <bpt id="1">[</bpt><bpt id="2">__</bpt>Wiki_Page<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects)</ept> <ph id="3">`Save and open QGIS Projects.`</ph></target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en">GRASS applications <bpt id="1">&lt;a id="grass-applications"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">GRASS applications <bpt id="1">&lt;a id="grass-applications"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en">QGIS also allows the use of tools from external GIS software, such as GRASS GIS. GRASS does not have to be downloaded separately, but is automatically installed when QGIS is installed. GRASS tools are identified by their icon.</source>
+<target xml:lang="fr">QGIS also allows the use of tools from external GIS software, such as GRASS GIS. GRASS does not have to be downloaded separately, but is automatically installed when QGIS is installed. GRASS tools are identified by their icon.</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph>
+Please note that the GRASS software is not started when the standard QGIS application is started. Consequently, an error message may appear when using GRASS tools. This can be remedied by opening the QGIS with GRASS application (found via the computer's search function) instead of the standard application.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph>
+Please note that the GRASS software is not started when the standard QGIS application is started. Consequently, an error message may appear when using GRASS tools. This can be remedied by opening the QGIS with GRASS application (found via the computer's search function) instead of the standard application.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en">SAGA with Linux <bpt id="1">&lt;a id="saga-with-linux"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">SAGA with Linux <bpt id="1">&lt;a id="saga-with-linux"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en">SAGA is another external GIS software. SAGA tools are identified by their icon. When using Windows or MacOS as the operating system, SAGA is automatically implemented when QGIS is installed. With Linux, however, SAGA is not installed automatically and must be installed manually. Experience has shown that this installation is not always easy and can cause problems. Alternatively, you can either use a Windows or MacOS virtual box or refrain from using SAGA tools (you will then have to search for alternative tools yourself).</source>
+<target xml:lang="fr">SAGA is another external GIS software. SAGA tools are identified by their icon. When using Windows or MacOS as the operating system, SAGA is automatically implemented when QGIS is installed. With Linux, however, SAGA is not installed automatically and must be installed manually. Experience has shown that this installation is not always easy and can cause problems. Alternatively, you can either use a Windows or MacOS virtual box or refrain from using SAGA tools (you will then have to search for alternative tools yourself).</target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en">Umlauts, special characters, spaces in file paths <bpt id="1">&lt;a id="umlauts-special-characters-spaces-in-file-paths"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Umlauts, special characters, spaces in file paths <bpt id="1">&lt;a id="umlauts-special-characters-spaces-in-file-paths"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en">If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) or spaces, this can lead to problems when these files are processed by QGIS. It is therefore recommended that you avoid these characters in your file paths (write out umlauts, replace spaces with _).</source>
+<target xml:lang="fr">If the file path contains umlauts (ä,ö,ü), special characters (!,?, ., etc.) or spaces, this can lead to problems when these files are processed by QGIS. It is therefore recommended that you avoid these characters in your file paths (write out umlauts, replace spaces with _).</target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph>
+Temporary files are user-specific (if several people use one PC, each person has their own temporary files). The file path therefore contains your user name. If this contains problematic characters, it may therefore be advisable to change it.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph>
+Temporary files are user-specific (if several people use one PC, each person has their own temporary files). The file path therefore contains your user name. If this contains problematic characters, it may therefore be advisable to change it.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en">QGIS Help Access Links <bpt id="1">&lt;a id="qgis-help-access-links"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Help Access Links <bpt id="1">&lt;a id="qgis-help-access-links"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en">Here you will find further help access links or QGIS community/forum links to address specific issues:</source>
+<target xml:lang="fr">Here you will find further help access links or QGIS community/forum links to address specific issues:</target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en">QGIS tutorials and tips: <bpt id="1">&lt;a id="qgis-tutorials-and-tips"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS tutorials and tips: <bpt id="1">&lt;a id="qgis-tutorials-and-tips"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en">Collection of QGIS tutorials and tips: <ph id="1">https://www.qgistutorials.com/en/</ph></source>
+<target xml:lang="fr">Collection of QGIS tutorials and tips: <ph id="1">https://www.qgistutorials.com/en/</ph></target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">QGIS training manual: <ph id="1">https://docs.qgis.org/3.28/en/docs/training_manual/index.html</ph></source>
+<target xml:lang="fr">QGIS training manual: <ph id="1">https://docs.qgis.org/3.28/en/docs/training_manual/index.html</ph></target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en">QGIS user guide: <ph id="1">https://docs.qgis.org/3.28/en/docs/user_manual/index.html</ph></source>
+<target xml:lang="fr">QGIS user guide: <ph id="1">https://docs.qgis.org/3.28/en/docs/user_manual/index.html</ph></target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en">QGIS server guide/manual: <ph id="1">https://docs.qgis.org/3.28/en/docs/server_manual/index.html</ph></source>
+<target xml:lang="fr">QGIS server guide/manual: <ph id="1">https://docs.qgis.org/3.28/en/docs/server_manual/index.html</ph></target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en">QGIS plugin user manual: <ph id="1">https://docs.qgis.org/3.28/en/docs/user_manual/plugins/plugins.html</ph></source>
+<target xml:lang="fr">QGIS plugin user manual: <ph id="1">https://docs.qgis.org/3.28/en/docs/user_manual/plugins/plugins.html</ph></target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en">QGIS workshop and video tutorials (Harvard University): <ph id="1">https://gis.harvard.edu/qgis-workshop-and-video-tutorials-0</ph></source>
+<target xml:lang="fr">QGIS workshop and video tutorials (Harvard University): <ph id="1">https://gis.harvard.edu/qgis-workshop-and-video-tutorials-0</ph></target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en">QGIS tutorial (CartONG): <ph id="1">https://cartong.pages.gitlab.cartong.org/learning-corner/en/6_tutorials/6_3_gis/6_3_1_qgis</ph></source>
+<target xml:lang="fr">QGIS tutorial (CartONG): <ph id="1">https://cartong.pages.gitlab.cartong.org/learning-corner/en/6_tutorials/6_3_gis/6_3_1_qgis</ph></target>
+</trans-unit>
+<trans-unit id="tu256" xml:space="preserve">
+<source xml:lang="en">QGIS community/forums: <bpt id="1">&lt;a id="qgis-communityforums"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS community/forums: <bpt id="1">&lt;a id="qgis-communityforums"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu257" xml:space="preserve">
+<source xml:lang="en">Geographic Information Systems: <ph id="1">https://gis.stackexchange.com/?tags=qgis</ph></source>
+<target xml:lang="fr">Geographic Information Systems: <ph id="1">https://gis.stackexchange.com/?tags=qgis</ph></target>
+</trans-unit>
+<trans-unit id="tu258" xml:space="preserve">
+<source xml:lang="en">QGIS user groups: <ph id="1">https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups</ph></source>
+<target xml:lang="fr">QGIS user groups: <ph id="1">https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups</ph></target>
+</trans-unit>
+<trans-unit id="tu259" xml:space="preserve">
+<source xml:lang="en">QGIS YouTube channels: <bpt id="1">&lt;a id="qgis-youtube-channels"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS YouTube channels: <bpt id="1">&lt;a id="qgis-youtube-channels"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu260" xml:space="preserve">
+<source xml:lang="en">The best YouTube channels in QGIS and open source gis tools: <ph id="1">https://hatarilabs.com/ih-en/the-best-youtube-channels-in-qgis-and-open-source-gis-tools-in-any-language</ph></source>
+<target xml:lang="fr">The best YouTube channels in QGIS and open source gis tools: <ph id="1">https://hatarilabs.com/ih-en/the-best-youtube-channels-in-qgis-and-open-source-gis-tools-in-any-language</ph></target>
+</trans-unit>
+<trans-unit id="tu261" xml:space="preserve">
+<source xml:lang="en">Absolute beginners guide to QGIS: <ph id="1">https://www.youtube.com/watch?v=NHolzMgaqwE</ph></source>
+<target xml:lang="fr">Absolute beginners guide to QGIS: <ph id="1">https://www.youtube.com/watch?v=NHolzMgaqwE</ph></target>
+</trans-unit>
+<trans-unit id="tu262" xml:space="preserve">
+<source xml:lang="en">QGIS complete tutorial for beginners: <ph id="1">https://www.youtube.com/watch?v=d15Xl4OphDk</ph></source>
+<target xml:lang="fr">QGIS complete tutorial for beginners: <ph id="1">https://www.youtube.com/watch?v=d15Xl4OphDk</ph></target>
+</trans-unit>
+<trans-unit id="tu263" xml:space="preserve">
+<source xml:lang="en">QGIS for beginners: <ph id="1">https://www.youtube.com/watch?v=Eg4_duqH5Q4</ph></source>
+<target xml:lang="fr">QGIS for beginners: <ph id="1">https://www.youtube.com/watch?v=Eg4_duqH5Q4</ph></target>
+</trans-unit>
+<trans-unit id="tu264" xml:space="preserve">
+<source xml:lang="en">Introduction to QGIS: <ph id="1">https://www.youtube.com/watch?v=kxJI5FAGjzQ</ph></source>
+<target xml:lang="fr">Introduction to QGIS: <ph id="1">https://www.youtube.com/watch?v=kxJI5FAGjzQ</ph></target>
+</trans-unit>
+<trans-unit id="tu265" xml:space="preserve">
+<source xml:lang="en">ChatGPT <bpt id="1">&lt;a id="chatgpt"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">ChatGPT <bpt id="1">&lt;a id="chatgpt"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu266" xml:space="preserve">
+<source xml:lang="en">And don't forget ChatGPT <ph id="1">https://chat.openai.com/</ph>
+It is quick!</source>
+<target xml:lang="fr">And don't forget ChatGPT <ph id="1">https://chat.openai.com/</ph>
+It is quick!</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

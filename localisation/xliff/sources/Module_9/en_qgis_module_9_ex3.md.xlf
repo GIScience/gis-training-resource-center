@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_ex3.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Task 3: Larger scale accessibility analyses <bpt id="1">&lt;a id="task-3-larger-scale-accessibility-analyses"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Larger scale accessibility analyses <bpt id="1">&lt;a id="task-3-larger-scale-accessibility-analyses"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">There are two main approaches on accessibility analyses: network and cost raster based. In this task we will use both methods on the example of the country Rwanda. For the network based approach we will use the isochrone API of the openrouteservice to generate catchment areas for 5, 10 and 60 minute ranges. The cost raster approach will be conducted with the saga tool <ph id="1">`Accumulated Cost`</ph> which is already part of the QGIS tools through the SAGA provider.</source>
+<target xml:lang="fr">There are two main approaches on accessibility analyses: network and cost raster based. In this task we will use both methods on the example of the country Rwanda. For the network based approach we will use the isochrone API of the openrouteservice to generate catchment areas for 5, 10 and 60 minute ranges. The cost raster approach will be conducted with the saga tool <ph id="1">`Accumulated Cost`</ph> which is already part of the QGIS tools through the SAGA provider.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_3_larger_scale_access_analysis/Modul_9_Exercise_3.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the following datasets:</source>
+<target xml:lang="fr">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_3_larger_scale_access_analysis/Modul_9_Exercise_3.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the following datasets:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Vectorlayer<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Vectorlayer<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`task3.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`task3.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rwa_healthcare`</ph> (points): Hospital locations in Rwanda (based of OpenStreetMap)</source>
+<target xml:lang="fr"><ph id="1">`rwa_healthcare`</ph> (points): Hospital locations in Rwanda (based of OpenStreetMap)</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rwa_adm0_boundary`</ph> (polygons): Country boundary of Rwanda</source>
+<target xml:lang="fr"><ph id="1">`rwa_adm0_boundary`</ph> (polygons): Country boundary of Rwanda</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rwa_adm1_boundary`</ph> (polygons): Administrative boundaries for the second level of Rwanda. In Rwandas case these are called provinces</source>
+<target xml:lang="fr"><ph id="1">`rwa_adm1_boundary`</ph> (polygons): Administrative boundaries for the second level of Rwanda. In Rwandas case these are called provinces</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rwa_adm2_boundary`</ph> (polygons):  Third level administrative boundaries of Rwanda. In Rwandas case these are called prefectures</source>
+<target xml:lang="fr"><ph id="1">`rwa_adm2_boundary`</ph> (polygons):  Third level administrative boundaries of Rwanda. In Rwandas case these are called prefectures</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Rasterlayer<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Rasterlayer<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Use the following files:</source>
+<target xml:lang="fr">Use the following files:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`motorized.tif`</ph> : Friction layer for motorized travel profiles</source>
+<target xml:lang="fr"><ph id="1">`motorized.tif`</ph> : Friction layer for motorized travel profiles</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Walking.tif`</ph> : Friction layer for walking mobility profiles</source>
+<target xml:lang="fr"><ph id="1">`Walking.tif`</ph> : Friction layer for walking mobility profiles</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`population.tif`</ph> : Population counts from WorldPop</source>
+<target xml:lang="fr"><ph id="1">`population.tif`</ph> : Population counts from WorldPop</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">STEP 1: Network - Isochrones <bpt id="1">&lt;a id="step-1-network-isochrones"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 1: Network - Isochrones <bpt id="1">&lt;a id="step-1-network-isochrones"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer <ph id="1">`rwa_healthcare`</ph> as input point layer and 5, 10 and 60 minutes as ranges.</source>
+<target xml:lang="fr">We start with the isochrones gain. This time for a whole country - Rwanda. Use the layer <ph id="1">`rwa_healthcare`</ph> as input point layer and 5, 10 and 60 minutes as ranges.</target>
+</trans-unit>
+<trans-unit id="sd1_sf5_tu2" resname="sd1_1" restype="x-alt" xml:space="preserve">
+<source xml:lang="en">Icon</source>
+<target xml:lang="fr">Icon</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Click in the toolbar on the ORS Tools plugin Icon <ph id="1">[#$sd1_sf5_dp1]</ph>. Click on <ph id="2">`Batch Jobs`</ph> -> <ph id="3">`Isochrones from Layer`</ph>.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Travel mode                  | driving-car                  |
+| Input Point layer            | rwa_healthcare               |
+| Comma separated ranges       | 5, 10, 60                    |</source>
+<target xml:lang="fr">Click in the toolbar on the ORS Tools plugin Icon <ph id="1">[#$sd1_sf5_dp1]</ph>. Click on <ph id="2">`Batch Jobs`</ph> -> <ph id="3">`Isochrones from Layer`</ph>.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Travel mode                  | driving-car                  |
+| Input Point layer            | rwa_healthcare               |
+| Comma separated ranges       | 5, 10, 60                    |</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">STEP 2: Raster - accumulated cost (Requires SAGA) <bpt id="1">&lt;a id="step-2-raster-accumulated-cost-requires-saga"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 2: Raster - accumulated cost (Requires SAGA) <bpt id="1">&lt;a id="step-2-raster-accumulated-cost-requires-saga"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> and scroll down to <ph id="2">`SAGA`</ph> choose <ph id="3">`Raster Analysis`</ph> and then <ph id="4">`Accumulated Cost`</ph> or enter "Accumulated Cost" in the search bar.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Destinations                 | rwa_healthcare               |
+| Destinations                 | motorized                    |
+| Local Cost                   | motorized                    |</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> and scroll down to <ph id="2">`SAGA`</ph> choose <ph id="3">`Raster Analysis`</ph> and then <ph id="4">`Accumulated Cost`</ph> or enter "Accumulated Cost" in the search bar.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Destinations                 | rwa_healthcare               |
+| Destinations                 | motorized                    |
+| Local Cost                   | motorized                    |</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Accumulated Cost`</ph> output layer and open the <ph id="2">`Layer styling panel (F7)`</ph> choose <ph id="3">`Singleband Pseudocolor`</ph>. Adjust the range from a minimum of 0 to a maximum of 60 minutes. Overlay the isochrone output layer. Compare the different catchment areas. Add an OpenStreetMap background layer to better understand the differences. May consider dissolving <bpt id="4">**</bpt>(Vector Geometry >> Dissolve)<ept id="4">**</ept> the isochrone output layer by range value, to get a more clear outline of intersecting ranges in areas with multiple healthcare facilities.
+Take a look at the Attribute table of the Isochrone output layer. One of the attributes bears information on the population living within the boundary of the isochrone. The population estimates are based on the Global Human Settlement Layer project.</source>
+<target xml:lang="fr">Select the <ph id="1">`Accumulated Cost`</ph> output layer and open the <ph id="2">`Layer styling panel (F7)`</ph> choose <ph id="3">`Singleband Pseudocolor`</ph>. Adjust the range from a minimum of 0 to a maximum of 60 minutes. Overlay the isochrone output layer. Compare the different catchment areas. Add an OpenStreetMap background layer to better understand the differences. May consider dissolving <bpt id="4">**</bpt>(Vector Geometry >> Dissolve)<ept id="4">**</ept> the isochrone output layer by range value, to get a more clear outline of intersecting ranges in areas with multiple healthcare facilities.
+Take a look at the Attribute table of the Isochrone output layer. One of the attributes bears information on the population living within the boundary of the isochrone. The population estimates are based on the Global Human Settlement Layer project.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

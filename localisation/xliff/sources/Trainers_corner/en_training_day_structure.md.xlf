@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Trainers_corner/en_training_day_structure.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">How to plan and structure a GIS Training Session <bpt id="1">&lt;a id="how-to-plan-and-structure-a-gis-training-session"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to plan and structure a GIS Training Session <bpt id="1">&lt;a id="how-to-plan-and-structure-a-gis-training-session"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Designing an effective and engaging GIS training requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning phase covered in the article "<bpt id="1">[</bpt>How to plan a whole GIS Training<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept>".
+A well-structured training day provides a cohesive framework for delivering content, facilitating interactive activities, and maximizing participant learning outcomes. From the initial welcome and orientation to the final recap and reflection, each aspect of the training day contributes to a comprehensive and impactful learning experience.</source>
+<target xml:lang="fr">Designing an effective and engaging GIS training requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning phase covered in the article "<bpt id="1">[</bpt>How to plan a whole GIS Training<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept>".
+A well-structured training day provides a cohesive framework for delivering content, facilitating interactive activities, and maximizing participant learning outcomes. From the initial welcome and orientation to the final recap and reflection, each aspect of the training day contributes to a comprehensive and impactful learning experience.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In this section, we will explore key components of structuring a GIS training session, including scheduling, session sequencing, breaks, interactive exercises, and strategies for addressing participant questions and challenges. By strategically organizing the training day and incorporating diverse teaching methodologies, trainers can create an inclusive and effective learning environment that caters to the needs and preferences of all participants.</source>
+<target xml:lang="fr">In this section, we will explore key components of structuring a GIS training session, including scheduling, session sequencing, breaks, interactive exercises, and strategies for addressing participant questions and challenges. By strategically organizing the training day and incorporating diverse teaching methodologies, trainers can create an inclusive and effective learning environment that caters to the needs and preferences of all participants.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The first training session <bpt id="1">&lt;a id="the-first-training-session"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The first training session <bpt id="1">&lt;a id="the-first-training-session"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">As trainers, it’s important to craft a structured framework that sets the tone for the entire learning journey. The initial day holds significant importance, serving as the cornerstone for participants’ comprehension of GIS concepts and fostering an effective learning environment.</source>
+<target xml:lang="fr">As trainers, it’s important to craft a structured framework that sets the tone for the entire learning journey. The initial day holds significant importance, serving as the cornerstone for participants’ comprehension of GIS concepts and fostering an effective learning environment.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Training Kick-off <bpt id="1">&lt;a id="training-kick-off"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Training Kick-off <bpt id="1">&lt;a id="training-kick-off"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Welcome and introduction:<ept id="1">__</ept> Begin the day with a warm welcome and introduction to the training program. Take a few moments to introduce yourself, the training objectives, and what participants can expect to learn throughout the program.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Welcome and introduction:<ept id="1">__</ept> Begin the day with a warm welcome and introduction to the training program. Take a few moments to introduce yourself, the training objectives, and what participants can expect to learn throughout the program.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Icebreaker activity:<ept id="1">__</ept> Break the ice and foster a sense of camaraderie among participants with an icebreaker activity. This could be a group activity designed to encourage interaction and teamwork.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Icebreaker activity:<ept id="1">__</ept> Break the ice and foster a sense of camaraderie among participants with an icebreaker activity. This could be a group activity designed to encourage interaction and teamwork.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction round:<ept id="1">__</ept> It is important to get to know the training participants. This can be done by a common introduction round that can be combined with the icebreaker activity. A proven method is to do a short general introduction round and then use small groups where people can introduce themselves in more detail. In this group, you can use guiding questions like “What was your favorite job so far?”.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction round:<ept id="1">__</ept> It is important to get to know the training participants. This can be done by a common introduction round that can be combined with the icebreaker activity. A proven method is to do a short general introduction round and then use small groups where people can introduce themselves in more detail. In this group, you can use guiding questions like “What was your favorite job so far?”.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Overview of training agenda:<ept id="1">__</ept> Provide an overview of the training agenda for the whole training and the present day, outlining the topics that will be covered and the learning objectives associated with each session. This helps participants understand the structure of the training and what they can expect to accomplish.
+If you use a <bpt id="2">[</bpt>graphical training plan<ept id="2">](/content/Trainers_corner/en_training_graphical_outline.md)</ept>, present it and share the access to the plan.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Overview of training agenda:<ept id="1">__</ept> Provide an overview of the training agenda for the whole training and the present day, outlining the topics that will be covered and the learning objectives associated with each session. This helps participants understand the structure of the training and what they can expect to accomplish.
+If you use a <bpt id="2">[</bpt>graphical training plan<ept id="2">](/content/Trainers_corner/en_training_graphical_outline.md)</ept>, present it and share the access to the plan.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">This whole introduction section can take up to <bpt id="1">__</bpt>one hour<ept id="1">__</ept> or even longer. After the presentation of the agenda, it is recommended to schedule a <bpt id="2">__</bpt>break between 10 and 15 minutes<ept id="2">__</ept>.</source>
+<target xml:lang="fr">This whole introduction section can take up to <bpt id="1">__</bpt>one hour<ept id="1">__</ept> or even longer. After the presentation of the agenda, it is recommended to schedule a <bpt id="2">__</bpt>break between 10 and 15 minutes<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Training preparation <bpt id="1">&lt;a id="training-preparation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Training preparation <bpt id="1">&lt;a id="training-preparation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Before delving into GIS, there are a few things to address to ensure that everyone starts the training from the best possible position.</source>
+<target xml:lang="fr">Before delving into GIS, there are a few things to address to ensure that everyone starts the training from the best possible position.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Questions and comments:<ept id="1">__</ept> It's important to emphasize that there are no bad or dumb questions. Encourage trainees to ask questions whenever they need clarification, regardless of how trivial they may seem. In GIS, overlooking even a small detail can hinder progress. If trainees lack the confidence to ask simple questions, they may miss important aspects of the training.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Questions and comments:<ept id="1">__</ept> It's important to emphasize that there are no bad or dumb questions. Encourage trainees to ask questions whenever they need clarification, regardless of how trivial they may seem. In GIS, overlooking even a small detail can hinder progress. If trainees lack the confidence to ask simple questions, they may miss important aspects of the training.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Safe Learning environment:<ept id="1">__</ept> GIS offers various methods to accomplish tasks, and some participants may have more expertise than the trainer in certain areas. Encourage the exchange of knowledge among participants and create a safe environment where everyone can learn from each other.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Safe Learning environment:<ept id="1">__</ept> GIS offers various methods to accomplish tasks, and some participants may have more expertise than the trainer in certain areas. Encourage the exchange of knowledge among participants and create a safe environment where everyone can learn from each other.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>IFRC GIS Training Platform and other training materials:<ept id="1">__</ept> Provide an overview of the training materials, particularly the IFRC GIS Training Platform. Familiarize participants with the platform’s structure and main features, including modules, the Wiki, and exercises. Additionally, briefly introduce any supplementary materials being used. This step ensures that everyone is familiar with the learning environment and reduces the risk of confusion.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>IFRC GIS Training Platform and other training materials:<ept id="1">__</ept> Provide an overview of the training materials, particularly the IFRC GIS Training Platform. Familiarize participants with the platform’s structure and main features, including modules, the Wiki, and exercises. Additionally, briefly introduce any supplementary materials being used. This step ensures that everyone is familiar with the learning environment and reduces the risk of confusion.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Where to find help:<ept id="1">__</ept> Inform participants about the available resources in case they encounter difficulties and cannot immediately seek assistance from a trainer. These resources may include the Wiki, articles on common errors and issues in QGIS, or online search engines.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Where to find help:<ept id="1">__</ept> Inform participants about the available resources in case they encounter difficulties and cannot immediately seek assistance from a trainer. These resources may include the Wiki, articles on common errors and issues in QGIS, or online search engines.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Communication:<ept id="1">__</ept> Introduce the communication channels, such as email or WhatsApp, through which participants can reach out with questions or other issues between sessions.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Communication:<ept id="1">__</ept> Introduce the communication channels, such as email or WhatsApp, through which participants can reach out with questions or other issues between sessions.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Technical check:<ept id="1">__</ept> It is recommended that participants install QGIS before the training. All information about this can be found <bpt id="2">[</bpt>Module 1 - QGIS Installation<ept id="2">](/Module_1/en_qgis_installation.md)</ept>. You can send the article to the participants beforehand. However, you should make sure that QGIS is running for all participants. Plan time to fix any issues.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Technical check:<ept id="1">__</ept> It is recommended that participants install QGIS before the training. All information about this can be found <bpt id="2">[</bpt>Module 1 - QGIS Installation<ept id="2">](/Module_1/en_qgis_installation.md)</ept>. You can send the article to the participants beforehand. However, you should make sure that QGIS is running for all participants. Plan time to fix any issues.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">This section should only take between 15 and 30 minutes. If it takes longer, consider having another small break of 10 minutes before moving on.</source>
+<target xml:lang="fr">This section should only take between 15 and 30 minutes. If it takes longer, consider having another small break of 10 minutes before moving on.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Content delivery – Example: GIS Introduction <bpt id="1">&lt;a id="content-delivery-example-gis-introduction"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Content delivery – Example: GIS Introduction <bpt id="1">&lt;a id="content-delivery-example-gis-introduction"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article <bpt id="1">__</bpt><bpt id="2">[</bpt>How to teach GIS<ept id="2">](/content/Trainers_corner/en_how_to_teach_GIS.md)</ept><ept id="1">__</ept>.</source>
+<target xml:lang="fr">In a training-block where you actually teach new content or further train skills, you can use a wider range of methods. Learn more about different methods to teach GIS in the article <bpt id="1">__</bpt><bpt id="2">[</bpt>How to teach GIS<ept id="2">](/content/Trainers_corner/en_how_to_teach_GIS.md)</ept><ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. <bpt id="1">[</bpt>Module 1 - Introduction GIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theorie.html)</ept> on the training platform covers this topic.</source>
+<target xml:lang="fr">Independent of the content, such a block should be well-structured and prepared. Always consider the content and what teaching methods is best. For example in the case of a basic QGIS training, this is where you introduce the concept of GIS. <bpt id="1">[</bpt>Module 1 - Introduction GIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theorie.html)</ept> on the training platform covers this topic.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">There’s no prescribed method for delivering this content. You can utilize PowerPoint presentations or any other suitable means. By the end of the session, the participants should grasp the basic concept of GIS and be able to identify the main features of the interface along with their functions. Exploring the interface can be accomplished hands-on, while the GIS concept part is more suitable for presentation.</source>
+<target xml:lang="fr">There’s no prescribed method for delivering this content. You can utilize PowerPoint presentations or any other suitable means. By the end of the session, the participants should grasp the basic concept of GIS and be able to identify the main features of the interface along with their functions. Exploring the interface can be accomplished hands-on, while the GIS concept part is more suitable for presentation.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">General considerations when planning content:</source>
+<target xml:lang="fr">General considerations when planning content:</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Method:<ept id="1">__</ept> Select the appropriate method for your context. Often, a brief theoretical introduction followed by practical exercises in a "follow-along style" or group work is effective. However, to maintain engagement, it is advisable to vary the methods occasionally. More information on these methods can be found <bpt id="2">[</bpt>here<ept id="2">](/content/Trainers_corner/en_how_to_teach_GIS.md)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Method:<ept id="1">__</ept> Select the appropriate method for your context. Often, a brief theoretical introduction followed by practical exercises in a "follow-along style" or group work is effective. However, to maintain engagement, it is advisable to vary the methods occasionally. More information on these methods can be found <bpt id="2">[</bpt>here<ept id="2">](/content/Trainers_corner/en_how_to_teach_GIS.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Training material:<ept id="1">__</ept> Clearly communicate which materials will be used in the session. Share links (e.g., to the module on the training platform) or distribute the material. If you use a training plan, ensure that all relevant links are listed there.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Training material:<ept id="1">__</ept> Clearly communicate which materials will be used in the session. Share links (e.g., to the module on the training platform) or distribute the material. If you use a training plan, ensure that all relevant links are listed there.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Breaks<ept id="1">__</ept>: People can only maintain concentration for approximately 35 to 45 minutes in a learning setting. Plan breaks accordingly and use a timer to ensure breaks are not overlooked.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Breaks<ept id="1">__</ept>: People can only maintain concentration for approximately 35 to 45 minutes in a learning setting. Plan breaks accordingly and use a timer to ensure breaks are not overlooked.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Structured end:<ept id="1">__</ept> Always plan time to bring an exercise or presentation to a structured end. See to it that all questions are answered. Go over the purpose of the exercise again and determine if the goal of the exercise was reached. Collect any immediate feedback.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Structured end:<ept id="1">__</ept> Always plan time to bring an exercise or presentation to a structured end. See to it that all questions are answered. Go over the purpose of the exercise again and determine if the goal of the exercise was reached. Collect any immediate feedback.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Wrap-up of the training session <bpt id="1">&lt;a id="wrap-up-of-the-training-session"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Wrap-up of the training session <bpt id="1">&lt;a id="wrap-up-of-the-training-session"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The wrap-up session at the conclusion of a training session holds significant importance and should be consistently included. Its primary objective is to instill confidence in participants by ensuring all queries are addressed, offering a space for feedback, and providing clarity on upcoming sessions.</source>
+<target xml:lang="fr">The wrap-up session at the conclusion of a training session holds significant importance and should be consistently included. Its primary objective is to instill confidence in participants by ensuring all queries are addressed, offering a space for feedback, and providing clarity on upcoming sessions.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Allocate a minimum of 15 minutes for this segment, covering the following key aspects:</source>
+<target xml:lang="fr">Allocate a minimum of 15 minutes for this segment, covering the following key aspects:</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Announcement of session closure:<ept id="1">__</ept> Clearly communicate that the session is concluding, allowing participants to focus on the wrap-up.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Announcement of session closure:<ept id="1">__</ept> Clearly communicate that the session is concluding, allowing participants to focus on the wrap-up.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Question round:<ept id="1">__</ept> Encourage participants to ask any final questions, addressing them promptly or scheduling them for discussion in subsequent sessions.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Question round:<ept id="1">__</ept> Encourage participants to ask any final questions, addressing them promptly or scheduling them for discussion in subsequent sessions.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Ask for feedback:<ept id="1">__</ept> Gather quick feedback, enabling adjustments to training content, style, and pacing based on participant input.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Ask for feedback:<ept id="1">__</ept> Gather quick feedback, enabling adjustments to training content, style, and pacing based on participant input.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Provide feedback:<ept id="1">__</ept> Offer constructive feedback on any recurring issues or patterns observed, highlighting potential solutions to enhance future sessions.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Provide feedback:<ept id="1">__</ept> Offer constructive feedback on any recurring issues or patterns observed, highlighting potential solutions to enhance future sessions.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Recap:<ept id="1">__</ept> Briefly summarize the day’s session content, facilitating a seamless transition to the next topic.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Recap:<ept id="1">__</ept> Briefly summarize the day’s session content, facilitating a seamless transition to the next topic.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Outlook:<ept id="1">__</ept> Provide a glimpse into the upcoming session’s agenda, offering participants insight into what to expect.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Outlook:<ept id="1">__</ept> Provide a glimpse into the upcoming session’s agenda, offering participants insight into what to expect.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Standard training days <bpt id="1">&lt;a id="standard-training-days"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Standard training days <bpt id="1">&lt;a id="standard-training-days"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">A typical training session, excluding the first and last sessions, generally adheres to the basic structure outlined above. However, certain aspects may be condensed to prioritize content delivery. This section provides insights into planning a standard training day.</source>
+<target xml:lang="fr">A typical training session, excluding the first and last sessions, generally adheres to the basic structure outlined above. However, certain aspects may be condensed to prioritize content delivery. This section provides insights into planning a standard training day.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Welcome and recap <bpt id="1">&lt;a id="welcome-and-recap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Welcome and recap <bpt id="1">&lt;a id="welcome-and-recap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Greetings and recap:<ept id="1">__</ept> Begin the day with a warm welcome. If there are any new trainers or guest lecturers participating in today’s training session, ensure they are introduced. This personal touch fosters a positive atmosphere.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Greetings and recap:<ept id="1">__</ept> Begin the day with a warm welcome. If there are any new trainers or guest lecturers participating in today’s training session, ensure they are introduced. This personal touch fosters a positive atmosphere.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Warm-Up:<ept id="1">__</ept> A warm-up is similar to the icebreaker on day one. However, its purpose is more to energize the participants rather than break the ice. A list of warm-up methods can be found <bpt id="2">[</bpt>here<ept id="2">](https://www.sessionlab.com/team/iaf/library/warm-ups)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Warm-Up:<ept id="1">__</ept> A warm-up is similar to the icebreaker on day one. However, its purpose is more to energize the participants rather than break the ice. A list of warm-up methods can be found <bpt id="2">[</bpt>here<ept id="2">](https://www.sessionlab.com/team/iaf/library/warm-ups)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Recap of the last session:<ept id="1">__</ept> Briefly summarize what was covered in the previous session. Address any questions or concerns raised by the participants. If there was homework assigned, allow the participants to present their completed assignments.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Recap of the last session:<ept id="1">__</ept> Briefly summarize what was covered in the previous session. Address any questions or concerns raised by the participants. If there was homework assigned, allow the participants to present their completed assignments.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Overview of the day's agenda:<ept id="1">__</ept> Provide an overview of the training agenda for the present day, outlining the topics that will be covered and the learning objectives associated with each session.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Overview of the day's agenda:<ept id="1">__</ept> Provide an overview of the training agenda for the present day, outlining the topics that will be covered and the learning objectives associated with each session.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">This whole section should not be longer than <bpt id="1">__</bpt>one hour<ept id="1">__</ept>.</source>
+<target xml:lang="fr">This whole section should not be longer than <bpt id="1">__</bpt>one hour<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">The last training day <bpt id="1">&lt;a id="the-last-training-day"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The last training day <bpt id="1">&lt;a id="the-last-training-day"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">The last training day will be very similar to a regular training day. At the start, you should to the welcome and recap part and during the training exercises you should adhere to the best practices explained above.</source>
+<target xml:lang="fr">The last training day will be very similar to a regular training day. At the start, you should to the welcome and recap part and during the training exercises you should adhere to the best practices explained above.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">At the end of the training, however, you should plan significantly more time to wrap up the current day and the training as a whole. Follow the tips below to bring the training to a successful conclusion:</source>
+<target xml:lang="fr">At the end of the training, however, you should plan significantly more time to wrap up the current day and the training as a whole. Follow the tips below to bring the training to a successful conclusion:</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap-up of today's exercises:<ept id="1">__</ept> Conclude the training day by revisiting the purpose of the exercises, addressing any remaining questions, and providing feedback.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap-up of today's exercises:<ept id="1">__</ept> Conclude the training day by revisiting the purpose of the exercises, addressing any remaining questions, and providing feedback.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">__</bpt>Written evaluation:<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_assessment.md)</ept> Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method of your organization. Conducting a written evaluation during the training ensures that everyone participates.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">__</bpt>Written evaluation:<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_assessment.md)</ept> Allocate time for a written evaluation of the training. Utilize the template provided on this platform or follow the evaluation method of your organization. Conducting a written evaluation during the training ensures that everyone participates.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Direct feedback:<ept id="1">**</ept> Evaluate the group using a method of your choice. The <bpt id="2">[</bpt>five-finger feedback method<ept id="2">](https://www.teamecho.com/en/resources/blog/5-finger-feedback/#:~:text=5%20finger%20feedback%20is%20an,clearly%20structured%20and%20comprehensible%20manner.)</ept> is often effective. This step is crucial as it provides participants with an opportunity to express their thoughts and opinions directly.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Direct feedback:<ept id="1">**</ept> Evaluate the group using a method of your choice. The <bpt id="2">[</bpt>five-finger feedback method<ept id="2">](https://www.teamecho.com/en/resources/blog/5-finger-feedback/#:~:text=5%20finger%20feedback%20is%20an,clearly%20structured%20and%20comprehensible%20manner.)</ept> is often effective. This step is crucial as it provides participants with an opportunity to express their thoughts and opinions directly.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Outlook:<ept id="1">**</ept> Provide guidance on the way forward. Answer common questions such as whether there will be additional training sessions and how participants can further develop their GIS skills. You can always refer them to the training platform for additional resources.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Outlook:<ept id="1">**</ept> Provide guidance on the way forward. Answer common questions such as whether there will be additional training sessions and how participants can further develop their GIS skills. You can always refer them to the training platform for additional resources.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contact information:<ept id="1">**</ept> Ensure that participants know how to contact you after the training. Additionally, consider compiling a list of participants’ contact details to facilitate networking, with their consent, of course.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contact information:<ept id="1">**</ept> Ensure that participants know how to contact you after the training. Additionally, consider compiling a list of participants’ contact details to facilitate networking, with their consent, of course.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Farewell:<ept id="1">**</ept> Finally, close the training session with a farewell, wishing everyone all the best in their future endeavors.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Farewell:<ept id="1">**</ept> Finally, close the training session with a farewell, wishing everyone all the best in their future endeavors.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

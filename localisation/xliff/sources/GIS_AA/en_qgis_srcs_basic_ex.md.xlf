@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_qgis_srcs_basic_ex.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">QGIS Basic Exercise SRCS <bpt id="1">&lt;a id="qgis-basic-exercise-srcs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Basic Exercise SRCS <bpt id="1">&lt;a id="qgis-basic-exercise-srcs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">CSV in QGIS <bpt id="1">&lt;a id="csv-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">CSV in QGIS <bpt id="1">&lt;a id="csv-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Aim of exercise <bpt id="1">&lt;a id="aim-of-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aim of exercise <bpt id="1">&lt;a id="aim-of-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In this task, we will load a CSV file in QGIS and do some analysis.</source>
+<target xml:lang="fr">In this task, we will load a CSV file in QGIS and do some analysis.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Task 1: Load data in QGIS <bpt id="1">&lt;a id="task-1-load-data-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Load data in QGIS <bpt id="1">&lt;a id="task-1-load-data-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Open the folder “Exercise 2”. Go into the “data” folder and copy all data from the “input” folder into the “temp” folder</source>
+<target xml:lang="fr">Open the folder “Exercise 2”. Go into the “data” folder and copy all data from the “input” folder into the “temp” folder</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">To load the file “Water_sources.csv” into QGIS click on <ph id="1">`Layer`</ph> -> <ph id="2">`Add layer`</ph> -> <ph id="3">`Open Delimited Text Layer`</ph>. Next to <ph id="4">`File name`</ph> click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept> and navigate to your "temp" folder. Her select the file "water_sources.csv".</source>
+<target xml:lang="fr">To load the file “Water_sources.csv” into QGIS click on <ph id="1">`Layer`</ph> -> <ph id="2">`Add layer`</ph> -> <ph id="3">`Open Delimited Text Layer`</ph>. Next to <ph id="4">`File name`</ph> click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept> and navigate to your "temp" folder. Her select the file "water_sources.csv".</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Use the settings as in the image below.</source>
+<target xml:lang="fr">Use the settings as in the image below.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Add`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Add`</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Load the file "district_pop_som.shp" into QGIS</source>
+<target xml:lang="fr">Load the file "district_pop_som.shp" into QGIS</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Task 2: Counting water sources per district <bpt id="1">&lt;a id="task-2-counting-water-sources-per-district"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Counting water sources per district <bpt id="1">&lt;a id="task-2-counting-water-sources-per-district"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Toolbox`</ph>-> Search for <ph id="2">`Join attribute by location (summary)`</ph></source>
+<target xml:lang="fr">In the <ph id="1">`Toolbox`</ph>-> Search for <ph id="2">`Join attribute by location (summary)`</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Tip: If the <ph id="1">`Toolbox`</ph> is not opne click <ph id="2">`Processing`</ph>-> <ph id="3">`Toolbox`</ph></source>
+<target xml:lang="fr">Tip: If the <ph id="1">`Toolbox`</ph> is not opne click <ph id="2">`Processing`</ph>-> <ph id="3">`Toolbox`</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: Select your “district_pop_som” layer</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: Select your “district_pop_som” layer</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer 2`</ph>: Select “Water_sources"</source>
+<target xml:lang="fr"><ph id="1">`Input Layer 2`</ph>: Select “Water_sources"</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometric predicate`</ph>: Select “Intersection”</source>
+<target xml:lang="fr"><ph id="1">`Geometric predicate`</ph>: Select “Intersection”</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Field to summarise`</ph>: Select “fid"</source>
+<target xml:lang="fr"><ph id="1">`Field to summarise`</ph>: Select “fid"</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Summaries to calculate`</ph>: Chose only the option “count”</source>
+<target xml:lang="fr"><ph id="1">`Summaries to calculate`</ph>: Chose only the option “count”</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Join Layer`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept>-> <ph id="3">`Save to File`</ph> and navigate to your "temp" folder. Give the output the name "district_watersources" and click <ph id="4">`Save`</ph></source>
+<target xml:lang="fr">Under <ph id="1">`Join Layer`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept>-> <ph id="3">`Save to File`</ph> and navigate to your "temp" folder. Give the output the name "district_watersources" and click <ph id="4">`Save`</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Task 3: Calculating water sources per 10.000 people <bpt id="1">&lt;a id="task-3-calculating-water-sources-per-10000-people"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Calculating water sources per 10.000 people <bpt id="1">&lt;a id="task-3-calculating-water-sources-per-10000-people"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Open the Attribute Table of "district_watersources"</source>
+<target xml:lang="fr">Open the Attribute Table of "district_watersources"</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Click on  <bpt id="1">[</bpt><ph id="2">`Field Calculator`</ph><ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="3">![</bpt><ept id="3">](/fig/mActionCalculateField.png)</ept>to open the field calculator</source>
+<target xml:lang="fr">Click on  <bpt id="1">[</bpt><ph id="2">`Field Calculator`</ph><ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="3">![</bpt><ept id="3">](/fig/mActionCalculateField.png)</ept>to open the field calculator</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Check <ph id="1">`Create new field`</ph></source>
+<target xml:lang="fr">Check <ph id="1">`Create new field`</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Output field name`</ph>: Name the new column “Watersources_pop"</source>
+<target xml:lang="fr"><ph id="1">`Output field name`</ph>: Name the new column “Watersources_pop"</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Result field type`</ph>: Decimal number (real)</source>
+<target xml:lang="fr"><ph id="1">`Result field type`</ph>: Decimal number (real)</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Add the code into the <ph id="1">`Expression`</ph> field</source>
+<target xml:lang="fr">Add the code into the <ph id="1">`Expression`</ph> field</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`ok`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`ok`</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and end the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept></source>
+<target xml:lang="fr">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and end the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Sort the new column “Watersources_pop" and find out which districts have the highest and lowest number of water sources per 10.000 people</source>
+<target xml:lang="fr">Sort the new column “Watersources_pop" and find out which districts have the highest and lowest number of water sources per 10.000 people</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">QGIS Intro <bpt id="1">&lt;a id="qgis-intro"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Intro <bpt id="1">&lt;a id="qgis-intro"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Aim of exercise <bpt id="1">&lt;a id="aim-of-exercise-2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aim of exercise <bpt id="1">&lt;a id="aim-of-exercise-2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">The goal of the exercise is to get to know the basic functionality of QGIS and how to handle geodata.</source>
+<target xml:lang="fr">The goal of the exercise is to get to know the basic functionality of QGIS and how to handle geodata.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"> </source>
+<target xml:lang="fr"> </target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Task 1: Folder and data structure <bpt id="1">&lt;a id="task-1-folder-and-data-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Folder and data structure <bpt id="1">&lt;a id="task-1-folder-and-data-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Save the folder Exercise_1 on your computer. Check out the folder structure in the Exercise_1 folder.<ph id="1">  </ph>
+The standard folder structure used makes certain that you never lose any data. You can find more infos about the standard folder structure we recommend <bpt id="2">[</bpt>here<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept>.</source>
+<target xml:lang="fr">Save the folder Exercise_1 on your computer. Check out the folder structure in the Exercise_1 folder.<ph id="1">  </ph>
+The standard folder structure used makes certain that you never lose any data. You can find more infos about the standard folder structure we recommend <bpt id="2">[</bpt>here<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Please save your QGIS project in the “project” folder.</source>
+<target xml:lang="fr">Please save your QGIS project in the “project” folder.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Copy the data from the "input" folder into the “temp” folder. During this exercise we will manipulate the input data, that is why we do not work with the original data in the “input” folder.</source>
+<target xml:lang="fr">Copy the data from the "input" folder into the “temp” folder. During this exercise we will manipulate the input data, that is why we do not work with the original data in the “input” folder.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/Standard_project_folder_structure.drawio.svg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/Standard_project_folder_structure.drawio.svg)</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Task 2: Data import into QGIS <bpt id="1">&lt;a id="task-2-data-import-into-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Data import into QGIS <bpt id="1">&lt;a id="task-2-data-import-into-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a new project by clicking  on <ph id="1">`Project`</ph> -> <ph id="2">`New Project`</ph> (<bpt id="3">[</bpt>Wiki<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)</ept>).</source>
+<target xml:lang="fr">Open QGIS and create a new project by clicking  on <ph id="1">`Project`</ph> -> <ph id="2">`New Project`</ph> (<bpt id="3">[</bpt>Wiki<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">To give the project a name click on <ph id="1">`Project`</ph> -> <ph id="2">`Save As`</ph>. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on <ph id="3">`Save`</ph>. Now you should see the name of your project in the upper left corner of your QGIS.</source>
+<target xml:lang="fr">To give the project a name click on <ph id="1">`Project`</ph> -> <ph id="2">`Save As`</ph>. Navigate to "Exercise_1" and open the "project" folder. Give your project the name "Exercise_1" and click on <ph id="3">`Save`</ph>. Now you should see the name of your project in the upper left corner of your QGIS.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Open the file <bpt id="1">**</bpt>"Somaliland_country.shp"<ept id="1">**</ept> in QGIS. Click on the <ph id="2">`Layer`</ph> Tab in the upper left corner -> <ph id="3">`Vector`</ph>. Select <bpt id="4">**</bpt>"Somaliland_country.shp"<ept id="4">**</ept>. Click <ph id="5">`Add`</ph> (<bpt id="6">[</bpt>Wiki Import Vector layer<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>)
+<ph id="7">:::{dropdown} </ph>Video: Import Vector data
+<ph id="8">
+:::</ph></source>
+<target xml:lang="fr">Open the file <bpt id="1">**</bpt>"Somaliland_country.shp"<ept id="1">**</ept> in QGIS. Click on the <ph id="2">`Layer`</ph> Tab in the upper left corner -> <ph id="3">`Vector`</ph>. Select <bpt id="4">**</bpt>"Somaliland_country.shp"<ept id="4">**</ept>. Click <ph id="5">`Add`</ph> (<bpt id="6">[</bpt>Wiki Import Vector layer<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)</ept>)
+<ph id="7">:::{dropdown} </ph>Video: Import Vector data
+<ph id="8">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Open the file <bpt id="1">**</bpt>Somaliand_District_pop.gpkg<ept id="1">**</ept> in QGIS. Use the drag-and-drop method. Click on the file and pull the file directly into your Layers window.
+<ph id="2">:::{dropdown} </ph>Video: Import data by drag and dop
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr">Open the file <bpt id="1">**</bpt>Somaliand_District_pop.gpkg<ept id="1">**</ept> in QGIS. Use the drag-and-drop method. Click on the file and pull the file directly into your Layers window.
+<ph id="2">:::{dropdown} </ph>Video: Import data by drag and dop
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Open the files <bpt id="1">**</bpt>"Somalialand_District_pop.gpkg"<ept id="1">**</ept> and <bpt id="2">**</bpt>Somaliland_airports.gpkg<ept id="2">**</ept> with either drag and drop or via <ph id="3">`Layer`</ph> -> <ph id="4">`Vector`</ph>.</source>
+<target xml:lang="fr">Open the files <bpt id="1">**</bpt>"Somalialand_District_pop.gpkg"<ept id="1">**</ept> and <bpt id="2">**</bpt>Somaliland_airports.gpkg<ept id="2">**</ept> with either drag and drop or via <ph id="3">`Layer`</ph> -> <ph id="4">`Vector`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Save your project by clicking on the <ph id="1">`Save Project`</ph> button (small disc in the upper left corner).</source>
+<target xml:lang="fr">Save your project by clicking on the <ph id="1">`Save Project`</ph> button (small disc in the upper left corner).</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Task 3: Interface <bpt id="1">&lt;a id="task-3-interface"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Interface <bpt id="1">&lt;a id="task-3-interface"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/en_QGIS_GUI.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/en_QGIS_GUI.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Layers List / Browser Panel:<ept id="1">__</ept> The <bpt id="2">__</bpt>layers list<ept id="2">__</ept> shows <bpt id="3">__</bpt>all layers/files<ept id="3">__</ept> that are <bpt id="4">__</bpt>loaded in the project<ept id="4">__</ept>. You can show/hide layers and set other properties.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Layers List / Browser Panel:<ept id="1">__</ept> The <bpt id="2">__</bpt>layers list<ept id="2">__</ept> shows <bpt id="3">__</bpt>all layers/files<ept id="3">__</ept> that are <bpt id="4">__</bpt>loaded in the project<ept id="4">__</ept>. You can show/hide layers and set other properties.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Toolsbars:  <ept id="1">__</ept>Toolbars<bpt id="2">__</bpt> are shortcuts<ept id="2">__</ept> to execute frequently used commands. For example, there are special toolbars for <bpt id="3">__</bpt>vector and raster files<ept id="3">__</ept>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <bpt id="4">__</bpt>toolbox<ept id="4">__</ept>, which is used later in many of the wiki videos.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Toolsbars:  <ept id="1">__</ept>Toolbars<bpt id="2">__</bpt> are shortcuts<ept id="2">__</ept> to execute frequently used commands. For example, there are special toolbars for <bpt id="3">__</bpt>vector and raster files<ept id="3">__</ept>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <bpt id="4">__</bpt>toolbox<ept id="4">__</ept>, which is used later in many of the wiki videos.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/Geschlossene_Toolbox_01.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/Geschlossene_Toolbox_01.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Map View:<ept id="1">__</ept> The <bpt id="2">__</bpt>map view<ept id="2">__</ept> is the <bpt id="3">__</bpt>central component<ept id="3">__</ept> of every GIS programme. This is where the <bpt id="4">__</bpt>geodata<ept id="4">__</ept> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Map View:<ept id="1">__</ept> The <bpt id="2">__</bpt>map view<ept id="2">__</ept> is the <bpt id="3">__</bpt>central component<ept id="3">__</ept> of every GIS programme. This is where the <bpt id="4">__</bpt>geodata<ept id="4">__</ept> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Status bar:<ept id="1">__</ept> In the <bpt id="2">__</bpt>status bar<ept id="2">__</ept> you will find <bpt id="3">__</bpt>central information about the current map view<ept id="3">__</ept>. Here you can set the <bpt id="4">__</bpt>projection of the map view and the scale<ept id="4">__</ept>. You can read the coordinates of the mouse pointer and thus quickly find out the coordinates of points on the map. You can rotate your map view, e.g. if you want to create a map facing south.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Status bar:<ept id="1">__</ept> In the <bpt id="2">__</bpt>status bar<ept id="2">__</ept> you will find <bpt id="3">__</bpt>central information about the current map view<ept id="3">__</ept>. Here you can set the <bpt id="4">__</bpt>projection of the map view and the scale<ept id="4">__</ept>. You can read the coordinates of the mouse pointer and thus quickly find out the coordinates of points on the map. You can rotate your map view, e.g. if you want to create a map facing south.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Side Toolbar<ept id="1">__</ept>. You may see a <bpt id="2">__</bpt>side toolbar<ept id="2">__</ept>. This is another way to easily open vector and raster files in QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Side Toolbar<ept id="1">__</ept>. You may see a <bpt id="2">__</bpt>side toolbar<ept id="2">__</ept>. This is another way to easily open vector and raster files in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Locator bar<ept id="1">__</ept>. Here you can <bpt id="2">__</bpt>search for tools and layers<ept id="2">__</ept>. If you don't know where to find a tool, you can try here.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Locator bar<ept id="1">__</ept>. Here you can <bpt id="2">__</bpt>search for tools and layers<ept id="2">__</ept>. If you don't know where to find a tool, you can try here.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Task 4: Layer concept <bpt id="1">&lt;a id="task-4-layer-concept"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 4: Layer concept <bpt id="1">&lt;a id="task-4-layer-concept"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">In this task, we familiarise ourselves with the layer window (Layer List). The concept means that a map in GIS is always a combination of multiple layers. We can combine the layers in many different ways and thus get different results.</source>
+<target xml:lang="fr">In this task, we familiarise ourselves with the layer window (Layer List). The concept means that a map in GIS is always a combination of multiple layers. We can combine the layers in many different ways and thus get different results.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">You can find more infos in the <bpt id="1">__</bpt><bpt id="2">[</bpt>Wiki Layer concept<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept)</ept><ept id="1">__</ept>.</source>
+<target xml:lang="fr">You can find more infos in the <bpt id="1">__</bpt><bpt id="2">[</bpt>Wiki Layer concept<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#layer-concept)</ept><ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Switch off the "Somalia_country" layer by removing the check on the layer panel (<bpt id="1">[</bpt>Wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)</ept>).
+<ph id="2">:::{dropdown} </ph>Video: Show and hide layers
+<ph id="3">
+:::{dropdown} </ph>Video:</source>
+<target xml:lang="fr">Switch off the "Somalia_country" layer by removing the check on the layer panel (<bpt id="1">[</bpt>Wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#hide-and-show-layers)</ept>).
+<ph id="2">:::{dropdown} </ph>Video: Show and hide layers
+<ph id="3">
+:::{dropdown} </ph>Video:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Change the hierarchy of your layers so that "Somalia_airports" is at the top, followed by "Somalia_District_pop". Move the layer up and down in the Layer panel by drag-and-drop <bpt id="1">[</bpt>Wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy)</ept>.
+<ph id="2">:::{dropdown} </ph>Video: Import data by drag-and-drop
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr">Change the hierarchy of your layers so that "Somalia_airports" is at the top, followed by "Somalia_District_pop". Move the layer up and down in the Layer panel by drag-and-drop <bpt id="1">[</bpt>Wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html#move-layers-in-the-hierarchy)</ept>.
+<ph id="2">:::{dropdown} </ph>Video: Import data by drag-and-drop
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Move the "Somalia_country" layer to the top and switch it on. What happens?</source>
+<target xml:lang="fr">Move the "Somalia_country" layer to the top and switch it on. What happens?</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Change the name of the layer "Somalia_airports" to Airports by right click on your layer --> <ph id="1">`Rename Layer`</ph>
+<ph id="2">:::{dropdown} </ph>Video: Change Layer Name
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr">Change the name of the layer "Somalia_airports" to Airports by right click on your layer --> <ph id="1">`Rename Layer`</ph>
+<ph id="2">:::{dropdown} </ph>Video: Change Layer Name
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">To the properties of a layer right click on your layer -> <ph id="1">`Properties`</ph> -> <ph id="2">`Information`</ph>.</source>
+<target xml:lang="fr">To the properties of a layer right click on your layer -> <ph id="1">`Properties`</ph> -> <ph id="2">`Information`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">When was the layer "Somaliland_district_pop" last modified?</source>
+<target xml:lang="fr">When was the layer "Somaliland_district_pop" last modified?</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">How many features does the airport layer have?</source>
+<target xml:lang="fr">How many features does the airport layer have?</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">What geometry does the Somalia_country layer have?</source>
+<target xml:lang="fr">What geometry does the Somalia_country layer have?</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Task 5: Attribute tables <bpt id="1">&lt;a id="task-5-attribute-tables"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 5: Attribute tables <bpt id="1">&lt;a id="task-5-attribute-tables"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">The attribute table, a core component of Geographic Information Systems (GIS), organizes and presents detailed information about features in a selected layer. Each row in the table represents a feature, while columns store specific attributes. This table facilitates searching, selection, sorting, filtering, and editing of features.</source>
+<target xml:lang="fr">The attribute table, a core component of Geographic Information Systems (GIS), organizes and presents detailed information about features in a selected layer. Each row in the table represents a feature, while columns store specific attributes. This table facilitates searching, selection, sorting, filtering, and editing of features.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Example of an attribute table<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Example of an attribute table<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt>Example of an attribute table<ept id="1">](/fig/attribute_table.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt>Example of an attribute table<ept id="1">](/fig/attribute_table.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">__<bpt id="1">[</bpt>Wiki Attribute Table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-in-qgis)</ept></source>
+<target xml:lang="fr">__<bpt id="1">[</bpt>Wiki Attribute Table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-in-qgis)</ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of "Somaliland_district_pop". Right-click on "Somaliland_district_pop" --> <ph id="1">`Open Attribute Table`</ph> (<bpt id="2">[</bpt>Wiki<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept>)
+<ph id="3">:::{dropdown} </ph>Video: Open attribute Table
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr">Open the attribute table of "Somaliland_district_pop". Right-click on "Somaliland_district_pop" --> <ph id="1">`Open Attribute Table`</ph> (<bpt id="2">[</bpt>Wiki<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept>)
+<ph id="3">:::{dropdown} </ph>Video: Open attribute Table
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Sort by "Population" by clicking on the column header.</source>
+<target xml:lang="fr">Sort by "Population" by clicking on the column header.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">In the attribute table select the feature “Berbera” by clicking on the left edge of the row.
+<ph id="1">:::{dropdown} </ph>Video: Select features in Attribute Table
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr">In the attribute table select the feature “Berbera” by clicking on the left edge of the row.
+<ph id="1">:::{dropdown} </ph>Video: Select features in Attribute Table
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">To select more features press <ph id="1">`Ctrl`</ph> and click on the features.</source>
+<target xml:lang="fr">To select more features press <ph id="1">`Ctrl`</ph> and click on the features.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">To only see selected features click in the down left corner of the attribute table on the drop-down menu and select <ph id="1">`Show selected features`</ph>. To show again all features click on <ph id="2">`Show all features`</ph>.</source>
+<target xml:lang="fr">To only see selected features click in the down left corner of the attribute table on the drop-down menu and select <ph id="1">`Show selected features`</ph>. To show again all features click on <ph id="2">`Show all features`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">To only show unselect features and click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionInvertSelection.png)</ept> in the attribute table.</source>
+<target xml:lang="fr">To only show unselect features and click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionInvertSelection.png)</ept> in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">To unselect all features click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionDeselectActiveLayer.png)</ept> in the attribute table
+<ph id="2">:::{dropdown} </ph>Video: Unselect features
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr">To unselect all features click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionDeselectActiveLayer.png)</ept> in the attribute table
+<ph id="2">:::{dropdown} </ph>Video: Unselect features
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">To zoom to one feature right click on your feature --> <ph id="1">`Zoom To Feature`</ph></source>
+<target xml:lang="fr">To zoom to one feature right click on your feature --> <ph id="1">`Zoom To Feature`</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Task 6: Basic Data visualization <bpt id="1">&lt;a id="task-6-basic-data-visualization"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 6: Basic Data visualization <bpt id="1">&lt;a id="task-6-basic-data-visualization"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format:</source>
+<target xml:lang="fr">Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format:</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">You can change the 'styling' and color of the data</source>
+<target xml:lang="fr">You can change the 'styling' and color of the data</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">You can add text labels</source>
+<target xml:lang="fr">You can add text labels</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">All the styling in QGIS happens in <ph id="1">`Symbology`</ph></source>
+<target xml:lang="fr">All the styling in QGIS happens in <ph id="1">`Symbology`</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">To open the symbology window of the "Somaliland_country" layer right click on the Somaliland_country layer -> <ph id="1">`properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="2">`symbology`</ph> tab.
+<ph id="3">:::{dropdown} </ph>Video: Opening the styling panel
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr">To open the symbology window of the "Somaliland_country" layer right click on the Somaliland_country layer -> <ph id="1">`properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="2">`symbology`</ph> tab.
+<ph id="3">:::{dropdown} </ph>Video: Opening the styling panel
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Change the colour of the layer fill by selecting a style for the drop-down menu.</source>
+<target xml:lang="fr">Change the colour of the layer fill by selecting a style for the drop-down menu.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">To change the colour of the borders of the "Somaliland_country" layer by clicking on <ph id="1">`Simple fill`</ph> in the symbology window and change the colour in the <ph id="2">`Stroke Colour`</ph> drop-down menu.</source>
+<target xml:lang="fr">To change the colour of the borders of the "Somaliland_country" layer by clicking on <ph id="1">`Simple fill`</ph> in the symbology window and change the colour in the <ph id="2">`Stroke Colour`</ph> drop-down menu.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Adjust the thickness of the borders under <ph id="1">`Stroke width`</ph></source>
+<target xml:lang="fr">Adjust the thickness of the borders under <ph id="1">`Stroke width`</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">To only show the boarders of Somaliland click on <ph id="1">`Simple Fill`</ph> -> <ph id="2">`Fill Colour`</ph> -> <ph id="3">`Transparent Fill`</ph>
+<ph id="4">:::{dropdown} </ph>Video: Only display the outlines of polygons
+<ph id="5">
+:::</ph></source>
+<target xml:lang="fr">To only show the boarders of Somaliland click on <ph id="1">`Simple Fill`</ph> -> <ph id="2">`Fill Colour`</ph> -> <ph id="3">`Transparent Fill`</ph>
+<ph id="4">:::{dropdown} </ph>Video: Only display the outlines of polygons
+<ph id="5">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Add a OpenStreetMap base map by clicking on <ph id="1">`Layer`</ph> in the to left corner of QGIS -> <ph id="2">`Add Layer`</ph> -> <ph id="3">`Add XYZ layer...`</ph> -> Select the OpenStreetMap
+<ph id="4">:::{dropdown} </ph>Video: Adding basemap
+<ph id="5">
+:::</ph></source>
+<target xml:lang="fr">Add a OpenStreetMap base map by clicking on <ph id="1">`Layer`</ph> in the to left corner of QGIS -> <ph id="2">`Add Layer`</ph> -> <ph id="3">`Add XYZ layer...`</ph> -> Select the OpenStreetMap
+<ph id="4">:::{dropdown} </ph>Video: Adding basemap
+<ph id="5">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Task 7: Clipping and Extract by location <bpt id="1">&lt;a id="task-7-clipping-and-extract-by-location"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 7: Clipping and Extract by location <bpt id="1">&lt;a id="task-7-clipping-and-extract-by-location"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Import the file <bpt id="1">**</bpt>Somalia_health_facilities_WHO.gpkg<ept id="1">**</ept> in QGIS.
+::: <ph id="2">{dropdown}</ph> Video: Import data by drag and drop
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr">Import the file <bpt id="1">**</bpt>Somalia_health_facilities_WHO.gpkg<ept id="1">**</ept> in QGIS.
+::: <ph id="2">{dropdown}</ph> Video: Import data by drag and drop
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">The layer <bpt id="1">**</bpt>Somalia_health_facilities_WHO<ept id="1">**</ept> includes health facilities in Somaliland and Somalia. We only want to use the facilities in Somaliland. To cut the layer to the size of Somaliland we will use the tool __<bpt id="2">[</bpt>clip<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)</ept>. Open the <ph id="3">`Porcessing Toolbox`</ph> by cliking on <ph id="4">`Processing`</ph> -> search for “Clip”
+<ph id="5">:::{dropdown} </ph>Video: Open <ph id="6">`Processing toolbox`</ph>
+<ph id="7">
+:::</ph></source>
+<target xml:lang="fr">The layer <bpt id="1">**</bpt>Somalia_health_facilities_WHO<ept id="1">**</ept> includes health facilities in Somaliland and Somalia. We only want to use the facilities in Somaliland. To cut the layer to the size of Somaliland we will use the tool __<bpt id="2">[</bpt>clip<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)</ept>. Open the <ph id="3">`Porcessing Toolbox`</ph> by cliking on <ph id="4">`Processing`</ph> -> search for “Clip”
+<ph id="5">:::{dropdown} </ph>Video: Open <ph id="6">`Processing toolbox`</ph>
+<ph id="7">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">In the window of the Clip tool...</source>
+<target xml:lang="fr">In the window of the Clip tool...</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: "Somalia_health_facilities_OSM"</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: "Somalia_health_facilities_OSM"</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Overlay Layer`</ph>: "Somaliland_country"</source>
+<target xml:lang="fr"><ph id="1">`Overlay Layer`</ph>: "Somaliland_country"</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Clipped`</ph>: Click on the three points  <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> -> <ph id="3">`Save to File`</ph> -> search for your "temp" folder -> give the result layer the name "Somaliland_health_facilities" and click on <ph id="4">`Save`</ph></source>
+<target xml:lang="fr"><ph id="1">`Clipped`</ph>: Click on the three points  <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> -> <ph id="3">`Save to File`</ph> -> search for your "temp" folder -> give the result layer the name "Somaliland_health_facilities" and click on <ph id="4">`Save`</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Clip example
+<ph id="2">
+:::</ph>
+4. Now you should have a new point layer with all health facilities in Somaliland. Delete the old "Somalia_health_facilities_WHO" layer by right-click on the layer -> <ph id="3">`Remove layer`</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Clip example
+<ph id="2">
+:::</ph>
+4. Now you should have a new point layer with all health facilities in Somaliland. Delete the old "Somalia_health_facilities_WHO" layer by right-click on the layer -> <ph id="3">`Remove layer`</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Task 8: Data visualization- Categorized classification of Points <bpt id="1">&lt;a id="task-8-data-visualization-categorized-classification-of-points"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 8: Data visualization- Categorized classification of Points <bpt id="1">&lt;a id="task-8-data-visualization-categorized-classification-of-points"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</source>
+<target xml:lang="fr">Categorized classification in QGIS groups spatial data into distinct categories based on specific attributes. This classification enhances the organization and interpretation of geospatial information for clearer insights.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of "Somaliland_health_facilities_OSM" by right clicking on "Somaliland_health_facilities_OSM" -> <ph id="1">`Open Attribute Table`</ph></source>
+<target xml:lang="fr">Open the attribute table of "Somaliland_health_facilities_OSM" by right clicking on "Somaliland_health_facilities_OSM" -> <ph id="1">`Open Attribute Table`</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Check out the column “Facility t”. This column has the data on the type of the health facility. As you can see there are not just hospitals but many different types of facilities like Health posts.</source>
+<target xml:lang="fr">Check out the column “Facility t”. This column has the data on the type of the health facility. As you can see there are not just hospitals but many different types of facilities like Health posts.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">To categorise all facilities by type on the map, open the symbology window. Right-click on the "Somaliland_health_facilities_OSM" layer -> <ph id="1">`Properties`</ph>-> <ph id="2">`symbology`</ph></source>
+<target xml:lang="fr">To categorise all facilities by type on the map, open the symbology window. Right-click on the "Somaliland_health_facilities_OSM" layer -> <ph id="1">`Properties`</ph>-> <ph id="2">`symbology`</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Categorized`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Categorized`</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Value`</ph>: “Facility t”.
+Further down the window click on <ph id="2">`Classify`</ph>.  Now you should see all unique values or attributes of the selected “Facility t” column.</source>
+<target xml:lang="fr"><ph id="1">`Value`</ph>: “Facility t”.
+Further down the window click on <ph id="2">`Classify`</ph>.  Now you should see all unique values or attributes of the selected “Facility t” column.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">We only want to see the hospitals, so uncheck Maternal &amp; Child Health Centre, Health Post and Health Center.</source>
+<target xml:lang="fr">We only want to see the hospitals, so uncheck Maternal &amp; Child Health Centre, Health Post and Health Center.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Categorized classification Example
+<ph id="2">
+:::</ph>
+7. To use a prearranged style for the hospitals go to the Symbology window. In the down left corner click on <ph id="3">`Style`</ph> -> <ph id="4">`Load Style`</ph>
+4. In the new window click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept>. Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. (<bpt id="6">[</bpt>Wiki<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#exporting-and-importing-styles)</ept>)
+5. Click <ph id="7">`Open`</ph>. Then click on <ph id="8">`Load Style`</ph>
+6. Back in the “Layer Properties” Window click <ph id="9">`Apply`</ph> and <ph id="10">`OK`</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Categorized classification Example
+<ph id="2">
+:::</ph>
+7. To use a prearranged style for the hospitals go to the Symbology window. In the down left corner click on <ph id="3">`Style`</ph> -> <ph id="4">`Load Style`</ph>
+4. In the new window click on the three points <bpt id="5">![</bpt><ept id="5">](/fig/Three_points.png)</ept>. Navigate to the "Project" folder -> "Style" folder and select the file “Hospital_style_training.qml. (<bpt id="6">[</bpt>Wiki<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_I.html#exporting-and-importing-styles)</ept>)
+5. Click <ph id="7">`Open`</ph>. Then click on <ph id="8">`Load Style`</ph>
+6. Back in the “Layer Properties” Window click <ph id="9">`Apply`</ph> and <ph id="10">`OK`</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt>Figure<ept id="1">](../../fig/QGIS_basics_Fig12.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt>Figure<ept id="1">](../../fig/QGIS_basics_Fig12.png)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

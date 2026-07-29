@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_map_design_I_ex2.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan <bpt id="1">&lt;a id="exercise-2-creating-a-flood-situation-map-of-larkana-pakistan"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan <bpt id="1">&lt;a id="exercise-2-creating-a-flood-situation-map-of-larkana-pakistan"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Larkana flood response exercise track:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Larkana flood response exercise track:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This exercise is the fourth part of the <bpt id="1">[</bpt>Larkana flood response exercise track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)</ept>.</source>
+<target xml:lang="fr">This exercise is the fourth part of the <bpt id="1">[</bpt>Larkana flood response exercise track<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_larkana_flood_response.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The previous exercise can be found <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html)</ept></source>
+<target xml:lang="fr">The previous exercise can be found <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex5.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Competences covered in this exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Competences covered in this exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Working with multiple layers</source>
+<target xml:lang="fr">Working with multiple layers</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Importing SVG libraries</source>
+<target xml:lang="fr">Importing SVG libraries</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Using SVG markers</source>
+<target xml:lang="fr">Using SVG markers</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Classifying Geodata</source>
+<target xml:lang="fr">Classifying Geodata</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Creating a print layout</source>
+<target xml:lang="fr">Creating a print layout</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">setting up overview maps</source>
+<target xml:lang="fr">setting up overview maps</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</source>
+<target xml:lang="fr">The exercise takes around 3 hours to complete, depending on the number of participants and their familiarity with computer systems.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant wiki articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Visualisation of Vector Data<ept id="1">](/content/Wiki/en_qgis_visualisation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Visualisation of Vector Data<ept id="1">](/content/Wiki/en_qgis_visualisation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Map Making<ept id="1">](/content/Wiki/en_qgis_map_making_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Map Making<ept id="1">](/content/Wiki/en_qgis_map_making_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification - Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{topic} </ph>Context</source>
+<target xml:lang="fr"><ph id="1">::::{topic} </ph>Context</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the <bpt id="1">[</bpt>previous exercise<ept id="1">](/content/Module_3/en_qgis_module_3_ex5.html)</ept>. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city.</source>
+<target xml:lang="fr">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the <bpt id="1">[</bpt>previous exercise<ept id="1">](/content/Module_3/en_qgis_module_3_ex5.html)</ept>. We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed.</source>
+<target xml:lang="fr">The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Larkana_Map_Overview.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Larkana_Map_Overview.png</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: Map Larkama</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: Map Larkama</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">The map we will be making in this exercise (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The map we will be making in this exercise (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">You have created the data for Larkana in <bpt id="1">[</bpt>Module 3 Exercise 5<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html)</ept>. In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there.</source>
+<target xml:lang="fr">You have created the data for Larkana in <bpt id="1">[</bpt>Module 3 Exercise 5<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html)</ept>. In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>In case you did not do Module 3 - Exercise 4 you can download the data <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)</ept><ept id="1">__</ept>. Save the folder on your computer an unzip the file.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>In case you did not do Module 3 - Exercise 4 you can download the data <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)</ept><ept id="1">__</ept>. Save the folder on your computer an unzip the file.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Dataset name</source>
+<target xml:lang="fr">Dataset name</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Original title</source>
+<target xml:lang="fr">Original title</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Publisher</source>
+<target xml:lang="fr">Publisher</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Downloaded from</source>
+<target xml:lang="fr">Downloaded from</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Health_Facilities_Flood_2024_AOI.gpkg</source>
+<target xml:lang="fr">Health_Facilities_Flood_2024_AOI.gpkg</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Pakistan Health Facilities (OpenStreetMap Export)<ept id="1">](https://data.humdata.org/dataset/hotosm_pak_health_facilities)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Pakistan Health Facilities (OpenStreetMap Export)<ept id="1">](https://data.humdata.org/dataset/hotosm_pak_health_facilities)</ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Humanitarian OpenStreetMap Team (HOT)</source>
+<target xml:lang="fr">Humanitarian OpenStreetMap Team (HOT)</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</source>
+<target xml:lang="fr">PAK_2024_Minimum_Flood_Extend_reprojected.gpkg</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Satellite detected water extents from 08 to 12 August 2024 over Pakistan)<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Satellite detected water extents from 08 to 12 August 2024 over Pakistan)<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan)</ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">UNO SAT</source>
+<target xml:lang="fr">UNO SAT</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">HDX</source>
+<target xml:lang="fr">HDX</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">PAK_flood_2024_blocked_road.gpkg</source>
+<target xml:lang="fr">PAK_flood_2024_blocked_road.gpkg</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">PAK_flood_2024_blocked_road</source>
+<target xml:lang="fr">PAK_flood_2024_blocked_road</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Yourself</source>
+<target xml:lang="fr">Yourself</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">This dataset was created in the <bpt id="1">[</bpt>previous exercise<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html)</ept></source>
+<target xml:lang="fr">This dataset was created in the <bpt id="1">[</bpt>previous exercise<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex2.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{hint} </ph>Folder structure
+Keep your data management clean by creating a standard folder structure on your computer for your QGIS-projects and geodata.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{hint} </ph>Folder structure
+Keep your data management clean by creating a standard folder structure on your computer for your QGIS-projects and geodata.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Task 1: Preparing the Data <bpt id="1">&lt;a id="task-1-preparing-the-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Preparing the Data <bpt id="1">&lt;a id="task-1-preparing-the-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Create a new QGIS-project and save it to your exercise folder. Give it a clear name, e.g. "Larkana_flood_response_map".</source>
+<target xml:lang="fr">Create a new QGIS-project and save it to your exercise folder. Give it a clear name, e.g. "Larkana_flood_response_map".</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Browser panel<ept id="1">__</ept>, Open the <ph id="2">`Project Home`</ph>-folder and navigate to the data subfolder.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Browser panel<ept id="1">__</ept>, Open the <ph id="2">`Project Home`</ph>-folder and navigate to the data subfolder.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Import the layers in the folder and import the layers to your QGIS-project:</source>
+<target xml:lang="fr">Import the layers in the folder and import the layers to your QGIS-project:</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Healthsites: <ph id="1">`Health_Facilities_Flood_2024_AOI.gpkg`</ph></source>
+<target xml:lang="fr">Healthsites: <ph id="1">`Health_Facilities_Flood_2024_AOI.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Roads: <ph id="1">`Roads_Larkana.gpkg`</ph></source>
+<target xml:lang="fr">Roads: <ph id="1">`Roads_Larkana.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Blocked Roads Points: <ph id="1">`PAK_flood_2024_blocked_road.gpkg`</ph></source>
+<target xml:lang="fr">Blocked Roads Points: <ph id="1">`PAK_flood_2024_blocked_road.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Flood Extent 2024 reprojected: <ph id="1">`PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`</ph></source>
+<target xml:lang="fr">Flood Extent 2024 reprojected: <ph id="1">`PAK_2024_Minimum_Flood_Extend_reprojected.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.</source>
+<target xml:lang="fr">Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Add a basemap<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)</ept>:</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Add a basemap<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)</ept>:</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Navigating to the menu bar → <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ-Layer...`</ph> and add a OpenStreetMap basemap.</source>
+<target xml:lang="fr">Navigating to the menu bar → <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ-Layer...`</ph> and add a OpenStreetMap basemap.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Task 2: Symbolisation <bpt id="1">&lt;a id="task-2-symbolisation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Symbolisation <bpt id="1">&lt;a id="task-2-symbolisation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Creating a good map involves selecting appropriate icons and colours to transmit the information in your data.
+The first step into creating a comprehensible map is to order the layers logically so you can see the information:</source>
+<target xml:lang="fr">Creating a good map involves selecting appropriate icons and colours to transmit the information in your data.
+The first step into creating a comprehensible map is to order the layers logically so you can see the information:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">In the layers panel:</source>
+<target xml:lang="fr">In the layers panel:</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Put the administrative boundaries layer at the bottom,</source>
+<target xml:lang="fr">Put the administrative boundaries layer at the bottom,</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">put the roads and flood extent layers in the middle,</source>
+<target xml:lang="fr">put the roads and flood extent layers in the middle,</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">and put the point layers (healthsites and blocked roads) to the top.</source>
+<target xml:lang="fr">and put the point layers (healthsites and blocked roads) to the top.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Each layer has it's own <bpt id="1">[</bpt>symbology panel<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept> where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out.
+For example, the layer <ph id="2">`Roads_Larkana`</ph> contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <ph id="3">`highway`</ph>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <ph id="4">`highway=primary`</ph> OR <ph id="5">`highway=secondary`</ph>.</source>
+<target xml:lang="fr">Each layer has it's own <bpt id="1">[</bpt>symbology panel<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept> where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out.
+For example, the layer <ph id="2">`Roads_Larkana`</ph> contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute <ph id="3">`highway`</ph>. In our case, it might be useful to only display the primary and secondary roads, so all the features where <ph id="4">`highway=primary`</ph> OR <ph id="5">`highway=secondary`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Let's go through the layers one by one and visualize them in a meaningful way.</source>
+<target xml:lang="fr">Let's go through the layers one by one and visualize them in a meaningful way.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Healthsites:<ept id="1">__</ept> <bpt id="2">&lt;a id="healthsites"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Healthsites:<ept id="1">__</ept> <bpt id="2">&lt;a id="healthsites"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>layers panel<ept id="1">__</ept>, right click on the layer <ph id="2">`Health_Facilities_Flood_2024_AOI`</ph>  <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="4">`Symbology`</ph> tab.
+Let's create our own customized symbol for healthcare facilities:</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>layers panel<ept id="1">__</ept>, right click on the layer <ph id="2">`Health_Facilities_Flood_2024_AOI`</ph>  <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="4">`Symbology`</ph> tab.
+Let's create our own customized symbol for healthcare facilities:</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>"SVG Marker"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>"SVG Marker"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.</source>
+<target xml:lang="fr">Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropwodn} </ph>Video: Using SVG symbols
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropwodn} </ph>Video: Using SVG symbols
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Scroll through the folder until you find a suitable symbol (e.g. <bpt id="1">![</bpt><ept id="1">](/fig/en_m4_ex_2_cross_symbol.png)</ept>).</source>
+<target xml:lang="fr">Scroll through the folder until you find a suitable symbol (e.g. <bpt id="1">![</bpt><ept id="1">](/fig/en_m4_ex_2_cross_symbol.png)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/crescent_moon.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/crescent_moon.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450px</ph>
+<ph id="2">name: SVG Marker</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450px</ph>
+<ph id="2">name: SVG Marker</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Create customized SVG Marker.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Create customized SVG Marker.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">We can customise the icon further:</source>
+<target xml:lang="fr">We can customise the icon further:</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">On the upper right corner of the symbology tab, click on the <ph id="1">`+`</ph> to add another "Simple Marker".</source>
+<target xml:lang="fr">On the upper right corner of the symbology tab, click on the <ph id="1">`+`</ph> to add another "Simple Marker".</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">By default, it will be a circle. Make sure the circle is below the <bpt id="1">![</bpt><ept id="1">](/fig/en_m4_ex_2_cross_symbol.png)</ept>-symbol by clicking on the <bpt id="2">![</bpt><ept id="2">](/fig/m4_ex2_down_symbol.png)</ept>.</source>
+<target xml:lang="fr">By default, it will be a circle. Make sure the circle is below the <bpt id="1">![</bpt><ept id="1">](/fig/en_m4_ex_2_cross_symbol.png)</ept>-symbol by clicking on the <bpt id="2">![</bpt><ept id="2">](/fig/m4_ex2_down_symbol.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Change the colour of the circle to white.</source>
+<target xml:lang="fr">Change the colour of the circle to white.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>, then <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>, then <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_m4_ex2_complex_symbol.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_m4_ex2_complex_symbol.png</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4ex2_complex_symbol</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4ex2_complex_symbol</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">You can use several symbol layers to create a complex symbol in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">You can use several symbol layers to create a complex symbol in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Roads:<ept id="1">__</ept> <bpt id="2">&lt;a id="roads"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Roads:<ept id="1">__</ept> <bpt id="2">&lt;a id="roads"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">The roads dataset contains a lot of information that we do not necessarily want to display on our final map. We can categorise the data and hide the unwanted information. We already identified the important roads in the previous exercise: The roads where <bpt id="1">__</bpt>"highway"<ept id="1">__</ept> equals <ph id="2">`motorway`</ph>, <ph id="3">`primary`</ph>, <ph id="4">`secondary`</ph>, <ph id="5">`trunk`</ph>. These roads are the <bpt id="6">__</bpt>major roads<ept id="6">__</ept>.</source>
+<target xml:lang="fr">The roads dataset contains a lot of information that we do not necessarily want to display on our final map. We can categorise the data and hide the unwanted information. We already identified the important roads in the previous exercise: The roads where <bpt id="1">__</bpt>"highway"<ept id="1">__</ept> equals <ph id="2">`motorway`</ph>, <ph id="3">`primary`</ph>, <ph id="4">`secondary`</ph>, <ph id="5">`trunk`</ph>. These roads are the <bpt id="6">__</bpt>major roads<ept id="6">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">We can categorise the roads and then select the relevant roads to be displayed. To categorize the roads, double-click on the layer <ph id="1">`Roads_Larkana`</ph>. The properties window will open with a vertical tab bar on the left. Navigate to the <bpt id="2">__</bpt>Symbology tab<ept id="2">__</ept>.</source>
+<target xml:lang="fr">We can categorise the roads and then select the relevant roads to be displayed. To categorize the roads, double-click on the layer <ph id="1">`Roads_Larkana`</ph>. The properties window will open with a vertical tab bar on the left. Navigate to the <bpt id="2">__</bpt>Symbology tab<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.</source>
+<target xml:lang="fr">On the top you find a dropdown menu. Open it and choose <ph id="1">`Categorized`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Value`</ph> select “highway”.</source>
+<target xml:lang="fr">Under <ph id="1">`Value`</ph> select “highway”.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Further down the window, click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.</source>
+<target xml:lang="fr">Further down the window, click on <ph id="1">`Classify`</ph>.  Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Remove the tick from all categories except: <ph id="1">`motorway`</ph>, <ph id="2">`primary`</ph>, <ph id="3">`secondary`</ph>, <ph id="4">`trunk`</ph>.</source>
+<target xml:lang="fr">Remove the tick from all categories except: <ph id="1">`motorway`</ph>, <ph id="2">`primary`</ph>, <ph id="3">`secondary`</ph>, <ph id="4">`trunk`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/PAK_road_classification.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/PAK_road_classification.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 600px</ph>
+<ph id="2">    name: Pakistan road classification</ph>
+<ph id="3">    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 600px</ph>
+<ph id="2">    name: Pakistan road classification</ph>
+<ph id="3">    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Classifying the roads: By unchecking the boxes you can hide the unnecessary information.
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">Classifying the roads: By unchecking the boxes you can hide the unnecessary information.
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.</source>
+<target xml:lang="fr">You have the option to customize the width of the main roads' lines to improve the visualization. Open the Symbology window, then select 'Symbol'. In the new window, you can adjust the width of the lines to your preference.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/PAK_road_symbol_weight.png</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/PAK_road_symbol_weight.png</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 600px</ph>
+<ph id="2">    name: Pakistan road classification</ph>
+<ph id="3">    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 600px</ph>
+<ph id="2">    name: Pakistan road classification</ph>
+<ph id="3">    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Classifying the roads: You can adjust the width of a single category.
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">Classifying the roads: You can adjust the width of a single category.
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Blocked Roads Points:<ept id="1">__</ept> <bpt id="2">&lt;a id="blocked-roads-points"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Blocked Roads Points:<ept id="1">__</ept> <bpt id="2">&lt;a id="blocked-roads-points"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> in the <ph id="2">`Layer Panel`</ph> → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <bpt id="1">__</bpt>“PAK_flood_2024_blocked_road”<ept id="1">__</ept> in the <ph id="2">`Layer Panel`</ph> → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads.</source>
+<target xml:lang="fr">Keep the single symbol option. Select any symbol from the list that is appropriate for marking blocked roads.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/PAK_blocked_road_symbol.png</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/PAK_blocked_road_symbol.png</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 600px</ph>
+<ph id="2">    name: Visulsing blocked roads with icons</ph>
+<ph id="3">    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 600px</ph>
+<ph id="2">    name: Visulsing blocked roads with icons</ph>
+<ph id="3">    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Visualising blocked roads with icons
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">Visualising blocked roads with icons
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Airports:<ept id="1">__</ept> <bpt id="2">&lt;a id="airports"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Airports:<ept id="1">__</ept> <bpt id="2">&lt;a id="airports"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">[</bpt>previous exercise<ept id="1">](/content/Module_3/en_qgis_module_3_ex2.md)</ept> you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!</source>
+<target xml:lang="fr">In the <bpt id="1">[</bpt>previous exercise<ept id="1">](/content/Module_3/en_qgis_module_3_ex2.md)</ept> you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">To do so we will create an entirely new point dataset representing airports.</source>
+<target xml:lang="fr">To do so we will create an entirely new point dataset representing airports.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Click on  <ph id="1">`Layer`</ph> → <ph id="2">`Create Layer`</ph> → <ph id="3">`New GeoPackage Layer`</ph> (<bpt id="4">[</bpt>Wiki Video<ept id="4">](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)</ept>)</source>
+<target xml:lang="fr">Click on  <ph id="1">`Layer`</ph> → <ph id="2">`Create Layer`</ph> → <ph id="3">`New GeoPackage Layer`</ph> (<bpt id="4">[</bpt>Wiki Video<ept id="4">](/content/Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)</ept>)</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Database`</ph> click on <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to <ph id="3">`temp`</ph> folder. Give the new dataset the name <bpt id="4">__</bpt>“PAK_airports”<ept id="4">__</ept>. Click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Database`</ph> click on <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to <ph id="3">`temp`</ph> folder. Give the new dataset the name <bpt id="4">__</bpt>“PAK_airports”<ept id="4">__</ept>. Click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometry type`</ph>: Select <ph id="2">`Point`</ph></source>
+<target xml:lang="fr"><ph id="1">`Geometry type`</ph>: Select <ph id="2">`Point`</ph></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Additional dimension`</ph> you should always make sure that you check <ph id="2">`None`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Additional dimension`</ph> you should always make sure that you check <ph id="2">`None`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS.</source>
+<target xml:lang="fr">Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`New Field`</ph> you can add columns to the new layer. Add the column <bpt id="2">__</bpt>“Airport”<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Under <ph id="1">`New Field`</ph> you can add columns to the new layer. Add the column <bpt id="2">__</bpt>“Airport”<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Type`</ph>: Select <ph id="2">`Text(string)`</ph></source>
+<target xml:lang="fr"><ph id="1">`Type`</ph>: Select <ph id="2">`Text(string)`</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Add to Fields List`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept> to add the new column to the <ph id="3">`Fields List`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Add to Fields List`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/mActionNewAttribute.png)</ept> to add the new column to the <ph id="3">`Fields List`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Your new layer will appear in the <ph id="1">`Layer Panel`</ph>.</source>
+<target xml:lang="fr">Your new layer will appear in the <ph id="1">`Layer Panel`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/Create_Geopackagelayer_airport.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/Create_Geopackagelayer_airport.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 400px</ph>
+<ph id="2">    name: Digitising airports</ph>
+<ph id="3">    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 400px</ph>
+<ph id="2">    name: Digitising airports</ph>
+<ph id="3">    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Creating a new point layer for the airports.
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">Creating a new point layer for the airports.
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+If you cannot see the toolbar <ph id="3">`View`</ph> → <ph id="4">`Toolbars`</ph> and check <ph id="5">`Digitizing Toolbar`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)</ept>). <bpt id="7">![</bpt><ept id="7">](/fig/Digitizing_Toolbar.png)</ept>
+<ph id="8">:::</ph>
+<ph id="9">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+If you cannot see the toolbar <ph id="3">`View`</ph> → <ph id="4">`Toolbars`</ph> and check <ph id="5">`Digitizing Toolbar`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)</ept>). <bpt id="7">![</bpt><ept id="7">](/fig/Digitizing_Toolbar.png)</ept>
+<ph id="8">:::</ph>
+<ph id="9">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Now you can create a point for the airport and if you would like additional airports as well (<bpt id="1">[</bpt>wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept>). Currently the new layer <bpt id="2">__</bpt>“PAK_airports”<ept id="2">__</ept> is empty. To add features we can use the <ph id="3">`Digitising Toolbar`</ph>.</source>
+<target xml:lang="fr">Now you can create a point for the airport and if you would like additional airports as well (<bpt id="1">[</bpt>wiki<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept>). Currently the new layer <bpt id="2">__</bpt>“PAK_airports”<ept id="2">__</ept> is empty. To add features we can use the <ph id="3">`Digitising Toolbar`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionCapturePoint.png)</ept>. Left-click on the feature you want to digitise.</source>
+<target xml:lang="fr">Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionCapturePoint.png)</ept>. Left-click on the feature you want to digitise.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/Feature_Att_Airport.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/Feature_Att_Airport.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 400px</ph>
+<ph id="2">    name: Digitising airports</ph>
+<ph id="3">    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 400px</ph>
+<ph id="2">    name: Digitising airports</ph>
+<ph id="3">    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Digitising new point features.
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">Digitising new point features.
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Once you are done with digitizing click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits.</source>
+<target xml:lang="fr">Once you are done with digitizing click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Click again on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to end the editing mode.</source>
+<target xml:lang="fr">Click again on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to end the editing mode.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Let's symbolise the airport with a plane icon, so we can identify it quickly.</source>
+<target xml:lang="fr">Let's symbolise the airport with a plane icon, so we can identify it quickly.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <bpt id="1">__</bpt>"PAK_airports"<ept id="1">__</ept> in the <ph id="2">`Layer Panel`</ph> → <ph id="3">`Properties`</ph>. A new window ill open up with a vertical tab section on the left. Navigate to the <bpt id="4">[</bpt><ph id="5">`Symbology`</ph>-tab<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept>.</source>
+<target xml:lang="fr">Right-click on the layer <bpt id="1">__</bpt>"PAK_airports"<ept id="1">__</ept> in the <ph id="2">`Layer Panel`</ph> → <ph id="3">`Properties`</ph>. A new window ill open up with a vertical tab section on the left. Navigate to the <bpt id="4">[</bpt><ph id="5">`Symbology`</ph>-tab<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#styling-panel)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Simple Marker`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Simple Marker`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>SVG-Marker<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Under <ph id="1">`Symbol layer type`</ph>, select <bpt id="2">__</bpt>SVG-Marker<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Scroll down a bit and you will find a box with all the SVG-symbols available.</source>
+<target xml:lang="fr">Scroll down a bit and you will find a box with all the SVG-symbols available.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">In the search bar under the box, search for "Plane".</source>
+<target xml:lang="fr">In the search bar under the box, search for "Plane".</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Select a plane symbol.</source>
+<target xml:lang="fr">Select a plane symbol.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>, then <ph id="2">`Ok`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>, then <ph id="2">`Ok`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Flood Extent:<ept id="1">__</ept> <bpt id="2">&lt;a id="flood-extent"></bpt><ept id="2">&lt;/a></ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Flood Extent:<ept id="1">__</ept> <bpt id="2">&lt;a id="flood-extent"></bpt><ept id="2">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">__</bpt>Symbology Tab<ept id="1">__</ept> for the <ph id="2">`PAK_2024_Minimum_Flood_Extend_reprojected`</ph>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</source>
+<target xml:lang="fr">Open the <bpt id="1">__</bpt>Symbology Tab<ept id="1">__</ept> for the <ph id="2">`PAK_2024_Minimum_Flood_Extend_reprojected`</ph>-layer. Choose a light-blue as color and adjust the opacity to about 30%.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_symbology_flood.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_symbology_flood.png</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4_ex2_symbology_flood.png</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4_ex2_symbology_flood.png</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Adjusting the symbology to indicate the flooded area.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adjusting the symbology to indicate the flooded area.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Task 3: Creating the print layout <bpt id="1">&lt;a id="task-3-creating-the-print-layout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Creating the print layout <bpt id="1">&lt;a id="task-3-creating-the-print-layout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Once you are happy with the symbolization and colours of your data, the next step is to create a <bpt id="1">__</bpt>print layout<ept id="1">__</ept>. The print layout is where you put all the elements from you map together with additional information to create a comprehensive map. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.</source>
+<target xml:lang="fr">Once you are happy with the symbolization and colours of your data, the next step is to create a <bpt id="1">__</bpt>print layout<ept id="1">__</ept>. The print layout is where you put all the elements from you map together with additional information to create a comprehensive map. By adding additional information such as a title, data sources, projection, description, etc. you provide your audience with the means to contextualise and evaluate the map and it's content by themselves.</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Open a new print layout and give it a name (e.g. Larkana_floods).</source>
+<target xml:lang="fr">Open a new print layout and give it a name (e.g. Larkana_floods).</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Go to <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> → enter a name for the new print layout → click <ph id="3">`OK`</ph>.</source>
+<target xml:lang="fr">Go to <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> → enter a name for the new print layout → click <ph id="3">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_create_print_layout.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_create_print_layout.png</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: Create Print Layout</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: Create Print Layout</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Creating a new print layout.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Creating a new print layout.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">A new window with a blank print layout will appear. This is the print layout composer.</source>
+<target xml:lang="fr">A new window with a blank print layout will appear. This is the print layout composer.</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">On the left, you will find a toolbar with tools to add and move items on the print layout canvas.</source>
+<target xml:lang="fr">On the left, you will find a toolbar with tools to add and move items on the print layout canvas.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called <bpt id="1">__</bpt>"item properties"<ept id="1">__</ept>. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).</source>
+<target xml:lang="fr">On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called <bpt id="1">__</bpt>"item properties"<ept id="1">__</ept>. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Insert a new map by clicking on <bpt id="1">![</bpt>New Map Icon<ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> (<ph id="2">`Add Map`</ph>) on the left toolbar, and drawing a rectangle on the print canvas. <bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)</ept></source>
+<target xml:lang="fr">Insert a new map by clicking on <bpt id="1">![</bpt>New Map Icon<ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> (<ph id="2">`Add Map`</ph>) on the left toolbar, and drawing a rectangle on the print canvas. <bpt id="3">[</bpt>Wiki Video<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.md#adding-a-new-map)</ept></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool <bpt id="1">![</bpt><ept id="1">](30.30.2_print_layout_move_content_icon)</ept> <ph id="2">`Move item content`</ph>.</source>
+<target xml:lang="fr">Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool <bpt id="1">![</bpt><ept id="1">](30.30.2_print_layout_move_content_icon)</ept> <ph id="2">`Move item content`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_print_layout_add_map.png</ph></target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4_ex2_print_layout_add_map</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4_ex2_print_layout_add_map</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Adding the map to the print layout.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding the map to the print layout.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Let's add a label for the city of Larkana. This will help your audience that might be unfamiliar with the region orientate themselves.</source>
+<target xml:lang="fr">Let's add a label for the city of Larkana. This will help your audience that might be unfamiliar with the region orientate themselves.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>).</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Draw a small rectangle next to the city of Larkana.</source>
+<target xml:lang="fr">Draw a small rectangle next to the city of Larkana.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Enter "Larkana" instead.</source>
+<target xml:lang="fr">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Enter "Larkana" instead.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size so it can be read easily.</source>
+<target xml:lang="fr">Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size so it can be read easily.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_print_layout_label_city</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_print_layout_label_city</ph></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4_ex2_print_layout_label_city</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4_ex2_print_layout_label_city</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Adding a label for the city of Larkana.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding a label for the city of Larkana.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Let's add a title:</source>
+<target xml:lang="fr">Let's add a title:</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>).</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the canvas.</source>
+<target xml:lang="fr">Drag a rectangle on the canvas.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. "Larkana, Flood-affected Healthsites and Roads").</source>
+<target xml:lang="fr">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g. "Larkana, Flood-affected Healthsites and Roads").</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Adjust the font size: Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</source>
+<target xml:lang="fr">Adjust the font size: Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Below the font dropdown menu, add a little bit of horizontal and vertical margin.</source>
+<target xml:lang="fr">Below the font dropdown menu, add a little bit of horizontal and vertical margin.</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Module_4/m4_ex2_print_layout_add_title.png</ph></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4_ex2_print_layout_add_title</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4_ex2_print_layout_add_title</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Adding a title to the print layout.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding a title to the print layout.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Let's add a legend:</source>
+<target xml:lang="fr">Let's add a legend:</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add legend icon<ept id="1">](/fig/30.30.2_print_layout_add_legend.png)</ept> (<ph id="2">`Add legend`</ph>).</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add legend icon<ept id="1">](/fig/30.30.2_print_layout_add_legend.png)</ept> (<ph id="2">`Add legend`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the canvas.</source>
+<target xml:lang="fr">Drag a rectangle on the canvas.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel on the right.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel on the right.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Scroll down a bit and check turn off <ph id="1">`Auto Update`</ph> by unchecking the check box. Now you can freely edit every item on the legend</source>
+<target xml:lang="fr">Scroll down a bit and check turn off <ph id="1">`Auto Update`</ph> by unchecking the check box. Now you can freely edit every item on the legend</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <bpt id="1">![</bpt>Edit Icon<ept id="1">](/fig/30.30.2_print_layout_legend_edit.png)</ept> (<ph id="2">`Edit selected item properties`</ph>) below the legend entries. Use the <bpt id="3">![</bpt><ept id="3">](/fig/Module_4/m4_ex2_print_layout_add_to_legend.png)</ept>-icon to add or remove layers from the legend.</source>
+<target xml:lang="fr">Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <bpt id="1">![</bpt>Edit Icon<ept id="1">](/fig/30.30.2_print_layout_legend_edit.png)</ept> (<ph id="2">`Edit selected item properties`</ph>) below the legend entries. Use the <bpt id="3">![</bpt><ept id="3">](/fig/Module_4/m4_ex2_print_layout_add_to_legend.png)</ept>-icon to add or remove layers from the legend.</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Under the upper <ph id="1">`Main Properties`</ph>, insert "Legend" as title.</source>
+<target xml:lang="fr">Under the upper <ph id="1">`Main Properties`</ph>, insert "Legend" as title.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Larkana_Legend.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Larkana_Legend.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: Create Print Layout</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: Create Print Layout</ph></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Adjusting the legend.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adjusting the legend.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Now, let's add a scale bar:</source>
+<target xml:lang="fr">Now, let's add a scale bar:</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add Scale bar icon<ept id="1">](/fig/30.30.2_print_layout_add_scale_bar.png)</ept> (<ph id="2">`Add Scale bar`</ph>)</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add Scale bar icon<ept id="1">](/fig/30.30.2_print_layout_add_scale_bar.png)</ept> (<ph id="2">`Add Scale bar`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (e.g. 10 km, 20 km, 50 km, ...) and the number of segments (to the right).</source>
+<target xml:lang="fr">Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (e.g. 10 km, 20 km, 50 km, ...) and the number of segments (to the right).</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Let's add a north arrow:</source>
+<target xml:lang="fr">Let's add a north arrow:</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add North Arrow Icon<ept id="1">](/fig/30.30.2_print_layout_add_orientation.png)</ept> (<ph id="2">`Add North Arrow`</ph>).</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add North Arrow Icon<ept id="1">](/fig/30.30.2_print_layout_add_orientation.png)</ept> (<ph id="2">`Add North Arrow`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</source>
+<target xml:lang="fr">Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Let's add a logo (for example, your national society):</source>
+<target xml:lang="fr">Let's add a logo (for example, your national society):</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add Picture<ept id="1">](/fig/30.30.2_print_layout_add_image.png)</ept> (<ph id="2">`Add picture`</ph>).</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add Picture<ept id="1">](/fig/30.30.2_print_layout_add_image.png)</ept> (<ph id="2">`Add picture`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle in the spot where you want to add the logo.</source>
+<target xml:lang="fr">Drag a rectangle in the spot where you want to add the logo.</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">Navigate to the <ph id="1">`Item properties`</ph> panel on the right and switch to <ph id="2">`Raster image`</ph>.</source>
+<target xml:lang="fr">Navigate to the <ph id="1">`Item properties`</ph> panel on the right and switch to <ph id="2">`Raster image`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">Click on the three dots <ph id="1">`...`</ph> and select the file with your logo (for this exercise the logo for the Pakistani Red Crescent Society is saved here: <ph id="2">`/Module_4_Exercise_2_Larkana_flood_map/img/`</ph>).</source>
+<target xml:lang="fr">Click on the three dots <ph id="1">`...`</ph> and select the file with your logo (for this exercise the logo for the Pakistani Red Crescent Society is saved here: <ph id="2">`/Module_4_Exercise_2_Larkana_flood_map/img/`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">If necessary, resize or move the picture on the print layout.</source>
+<target xml:lang="fr">If necessary, resize or move the picture on the print layout.</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Add some additional information in a text box.</source>
+<target xml:lang="fr">Add some additional information in a text box.</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Click on <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>)</source>
+<target xml:lang="fr">Click on <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the canvas</source>
+<target xml:lang="fr">Drag a rectangle on the canvas</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.</source>
+<target xml:lang="fr">In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">When you are finished with your map design you can export your printable map as image or pdf under <ph id="1">`Layout`</ph>--> <ph id="2">`Export as Image`</ph> or <ph id="3">`Export as PDF`</ph>.</source>
+<target xml:lang="fr">When you are finished with your map design you can export your printable map as image or pdf under <ph id="1">`Layout`</ph>--> <ph id="2">`Export as Image`</ph> or <ph id="3">`Export as PDF`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!</source>
+<target xml:lang="fr">You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Larkana_Map_withoutOverview.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Larkana_Map_withoutOverview.png</ph></target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: Map Larkama</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: Map Larkama</ph></target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Your final map could look something like this.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Your final map could look something like this.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Bonus Exercise <bpt id="1">&lt;a id="bonus-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Bonus Exercise <bpt id="1">&lt;a id="bonus-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box <ph id="1">`Lock Layers`</ph> and <ph id="2">`Lock styles for layers`</ph>. This means that if you change the map in the main QGIS-window, the first map you have added to the print layout will not be affected by these changes. Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.</source>
+<target xml:lang="fr">If you are finished with the main map, click on the map and navigate to the item properties. In the layer section, check the box <ph id="1">`Lock Layers`</ph> and <ph id="2">`Lock styles for layers`</ph>. This means that if you change the map in the main QGIS-window, the first map you have added to the print layout will not be affected by these changes. Now you can start working on an overview map. We will be using a shapefile with the administrative boundaries of Pakistan.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Return to the main QGIS window. Navigate to the folder <ph id="1">`Module_4_Exerise_2_Larkana_flood_map/data/Bonus_exercise/`</ph> and load the layer <ph id="2">`PAK_admbnda_adm0_wfp_20220909`</ph> into your QGIS-project.</source>
+<target xml:lang="fr">Return to the main QGIS window. Navigate to the folder <ph id="1">`Module_4_Exerise_2_Larkana_flood_map/data/Bonus_exercise/`</ph> and load the layer <ph id="2">`PAK_admbnda_adm0_wfp_20220909`</ph> into your QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Layer<ept id="1">__</ept> panel, make the layers for the main map invisible by clicking on the <bpt id="2">![</bpt>Eye Icon<ept id="2">](/fig/30.30.2_layer_visibility_icon.png)</ept> next to the layer name.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Layer<ept id="1">__</ept> panel, make the layers for the main map invisible by clicking on the <bpt id="2">![</bpt>Eye Icon<ept id="2">](/fig/30.30.2_layer_visibility_icon.png)</ept> next to the layer name.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Style the country boundary (ADM0) in a neutral, unobtrusive color. For example, you can use the "<bpt id="1">__</bpt>Gray 3 Fill<ept id="1">__</ept>" from the styling templates.</source>
+<target xml:lang="fr">Style the country boundary (ADM0) in a neutral, unobtrusive color. For example, you can use the "<bpt id="1">__</bpt>Gray 3 Fill<ept id="1">__</ept>" from the styling templates.</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Once you are happy with the styling of your overview map, navigate back to the <bpt id="1">__</bpt>Print Layout window<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Once you are happy with the styling of your overview map, navigate back to the <bpt id="1">__</bpt>Print Layout window<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Add a second map and position it in a corner.</source>
+<target xml:lang="fr">Add a second map and position it in a corner.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Item properties<ept id="1">__</ept> panel for the second Map ("<bpt id="2">__</bpt>Map 2<ept id="2">__</ept>"), scroll down and open the <ph id="3">`Overview`</ph>-options.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Item properties<ept id="1">__</ept> panel for the second Map ("<bpt id="2">__</bpt>Map 2<ept id="2">__</ept>"), scroll down and open the <ph id="3">`Overview`</ph>-options.</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">Click on the <ph id="1">`+`</ph>-button to add a new overview.</source>
+<target xml:lang="fr">Click on the <ph id="1">`+`</ph>-button to add a new overview.</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">In the "<bpt id="1">__</bpt>Map Frame<ept id="1">__</ept>"-option, select "<bpt id="2">__</bpt>Map 1<ept id="2">__</ept>". This will show the frame of the main map on your overview map.</source>
+<target xml:lang="fr">In the "<bpt id="1">__</bpt>Map Frame<ept id="1">__</ept>"-option, select "<bpt id="2">__</bpt>Map 1<ept id="2">__</ept>". This will show the frame of the main map on your overview map.</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">You can add a scale bar and a northj arrow to your overview map as well.</source>
+<target xml:lang="fr">You can add a scale bar and a northj arrow to your overview map as well.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Larkana_Map_Overview.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Larkana_Map_Overview.png</ph></target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: Map Larkama</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: Map Larkama</ph></target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en">The finished map could look something like this (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The finished map could look something like this (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en">Congratulations! You have created a finished map that is ready to be printed and distributed.</source>
+<target xml:lang="fr">Congratulations! You have created a finished map that is ready to be printed and distributed.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

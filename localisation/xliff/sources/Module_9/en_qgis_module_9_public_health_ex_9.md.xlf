@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_public_health_ex_9.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Exercise 3: Assessing Accessibility to Vaccination Services <bpt id="1">&lt;a id="exercise-3-assessing-accessibility-to-vaccination-services"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 3: Assessing Accessibility to Vaccination Services <bpt id="1">&lt;a id="exercise-3-assessing-accessibility-to-vaccination-services"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will learn a simplified approach on how to model accessibility and determine how many people live <bpt id="1">**</bpt>beyond a reasonable travel distance<ept id="1">**</ept> from a vaccination point.</source>
+<target xml:lang="fr">Following your analysis of measles incidence rates per district, the Ministry of Health now wants to identify which populations have limited access to vaccination services. In this exercise, you will learn a simplified approach on how to model accessibility and determine how many people live <bpt id="1">**</bpt>beyond a reasonable travel distance<ept id="1">**</ept> from a vaccination point.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Accessibility to health services is a key determinant of vaccination coverage. In many rural parts of Chad, communities may not have access to motorised transport and rely on walking or infrequent public transport. Thus, distance alone is not always a good measure — <bpt id="1">**</bpt>travel time<ept id="1">**</ept> provides a more realistic assessment.</source>
+<target xml:lang="fr">Accessibility to health services is a key determinant of vaccination coverage. In many rural parts of Chad, communities may not have access to motorised transport and rely on walking or infrequent public transport. Thus, distance alone is not always a good measure — <bpt id="1">**</bpt>travel time<ept id="1">**</ept> provides a more realistic assessment.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Dataset name</source>
+<target xml:lang="fr">Dataset name</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`QGIS project from Exercise 2 with .qgz extention`</ph></source>
+<target xml:lang="fr"><ph id="1">`QGIS project from Exercise 2 with .qgz extention`</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Base project with administrative boundaries, health facility capacities, and incidence rates</source>
+<target xml:lang="fr">Base project with administrative boundaries, health facility capacities, and incidence rates</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">—</source>
+<target xml:lang="fr">—</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></source>
+<target xml:lang="fr"><ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">2025 population estimate per grid-cell</source>
+<target xml:lang="fr">2025 population estimate per grid-cell</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>WorldPop<ept id="1">](https://hub.worldpop.org/geodata/summary?id=72895)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>WorldPop<ept id="1">](https://hub.worldpop.org/geodata/summary?id=72895)</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_healthsites_points_capacities.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`tcd_healthsites_points_capacities.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Vaccination points (healthsites with cold chain)</source>
+<target xml:lang="fr">Vaccination points (healthsites with cold chain)</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Derived in Exercise 1</source>
+<target xml:lang="fr">Derived in Exercise 1</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_admbnda_adm2_20250212_AB.shp`</ph></source>
+<target xml:lang="fr"><ph id="1">`tcd_admbnda_adm2_20250212_AB.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Administrative boundaries (district level)</source>
+<target xml:lang="fr">Administrative boundaries (district level)</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX – OCHA<ept id="1">](https://data.humdata.org/dataset/cod-ab-tcd)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX – OCHA<ept id="1">](https://data.humdata.org/dataset/cod-ab-tcd)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_roads_ocha.shp`</ph> (Lines)</source>
+<target xml:lang="fr"><ph id="1">`tcd_roads_ocha.shp`</ph> (Lines)</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Chad - Road Network</source>
+<target xml:lang="fr">Chad - Road Network</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX - OCHA<ept id="1">](https://data.humdata.org/dataset/chad-roads-osm-ministry-of-transport)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX - OCHA<ept id="1">](https://data.humdata.org/dataset/chad-roads-osm-ministry-of-transport)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Scenario <bpt id="1">&lt;a id="scenario"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Scenario <bpt id="1">&lt;a id="scenario"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">You have identified a number of health facilities equipped with a cold chain for vaccine storage. The goal now is to calculate how much of the population is <bpt id="1">**</bpt>within reasonable reach<ept id="1">**</ept> of these facilities, and how many people live <bpt id="2">**</bpt>beyond the accessible range<ept id="2">**</ept>.</source>
+<target xml:lang="fr">You have identified a number of health facilities equipped with a cold chain for vaccine storage. The goal now is to calculate how much of the population is <bpt id="1">**</bpt>within reasonable reach<ept id="1">**</ept> of these facilities, and how many people live <bpt id="2">**</bpt>beyond the accessible range<ept id="2">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">To do this, you will generate travel-time surfaces around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.</source>
+<target xml:lang="fr">To do this, you will generate travel-time surfaces around vaccination points and then use WorldPop data to estimate the population covered within each accessibility zone. This approach simplifies reality but provides a useful approximation of service coverage.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Task 1: Opening the Project and Preparing the Data <bpt id="1">&lt;a id="task-1-opening-the-project-and-preparing-the-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Opening the Project and Preparing the Data <bpt id="1">&lt;a id="task-1-opening-the-project-and-preparing-the-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Open your QGIS project from <bpt id="1">**</bpt>Exercise 2<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Open your QGIS project from <bpt id="1">**</bpt>Exercise 2<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Verify that the following layers are loaded:</source>
+<target xml:lang="fr">Verify that the following layers are loaded:</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_admbnda_adm2_20250212_AB.shp`</ph> (district boundaries)</source>
+<target xml:lang="fr"><ph id="1">`tcd_admbnda_adm2_20250212_AB.shp`</ph> (district boundaries)</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_healthsites_points_capacities.gpkg`</ph> (vaccination points)</source>
+<target xml:lang="fr"><ph id="1">`tcd_healthsites_points_capacities.gpkg`</ph> (vaccination points)</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph> (population raster)</source>
+<target xml:lang="fr"><ph id="1">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph> (population raster)</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_roads_ocha.shp`</ph> (road network)</source>
+<target xml:lang="fr"><ph id="1">`tcd_roads_ocha.shp`</ph> (road network)</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Now we need to filter the <ph id="1">`tcd_healthsites_points_capacities`</ph> layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectbyExpression.png)</ept></source>
+<target xml:lang="fr">Now we need to filter the <ph id="1">`tcd_healthsites_points_capacities`</ph> layer to only include healthsites with a cold chain for vaccine storage. We will do so by opening the "Attribute table" and clicking on "Select features using an expression" <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectbyExpression.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Now click on the "Fields and Values" section and double-click on cold_chain</source>
+<target xml:lang="fr">Now click on the "Fields and Values" section and double-click on cold_chain</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Now right click on the <ph id="1">`tcd_healthsites_points_capacities`</ph> → <ph id="2">`Export`</ph> → <ph id="3">`Save Selected Features As...`</ph></source>
+<target xml:lang="fr">Now right click on the <ph id="1">`tcd_healthsites_points_capacities`</ph> → <ph id="2">`Export`</ph> → <ph id="3">`Save Selected Features As...`</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Save it as a "Geopackage" in your <ph id="1">`/data/interim/`</ph>-folder. Use a name like <ph id="2">`tcd_cold_chain_healthsites_points_capacities`</ph>. Now we have only the healthsites that also provide a cold chain for vaccine storage and could be considered for a vaccination campaign.</source>
+<target xml:lang="fr">Save it as a "Geopackage" in your <ph id="1">`/data/interim/`</ph>-folder. Use a name like <ph id="2">`tcd_cold_chain_healthsites_points_capacities`</ph>. Now we have only the healthsites that also provide a cold chain for vaccine storage and could be considered for a vaccination campaign.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Task 2: Creating Accessibility Area Around Vaccination Points <bpt id="1">&lt;a id="task-2-creating-accessibility-area-around-vaccination-points"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Creating Accessibility Area Around Vaccination Points <bpt id="1">&lt;a id="task-2-creating-accessibility-area-around-vaccination-points"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Open the "Service area (from layer)" tool in the Processing Toolbox.</source>
+<target xml:lang="fr">Open the "Service area (from layer)" tool in the Processing Toolbox.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.</source>
+<target xml:lang="fr">Select the following parameters to run a Network Analysis. The algorithm creates a new vector with all the edges or parts of edges of a network line layer that can be reached within a distance or a time, starting from features of a point layer.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">For the Vector layer representing network select the Chad road network <ph id="1">`tcd_roads_ocha`</ph></source>
+<target xml:lang="fr">For the Vector layer representing network select the Chad road network <ph id="1">`tcd_roads_ocha`</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Path type to calculate should be <ph id="1">`Fastest`</ph>, as we want to work with travel time</source>
+<target xml:lang="fr">Path type to calculate should be <ph id="1">`Fastest`</ph>, as we want to work with travel time</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Vector layer with start points is the newly created <ph id="1">`tcd_cold_chain_healthsites_points_capacities`</ph></source>
+<target xml:lang="fr">Vector layer with start points is the newly created <ph id="1">`tcd_cold_chain_healthsites_points_capacities`</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Travel cost will be <ph id="1">`2`</ph> as the information for the fastest path type is given in hours. So 2 will correspond to 2 hours of travel time</source>
+<target xml:lang="fr">Travel cost will be <ph id="1">`2`</ph> as the information for the fastest path type is given in hours. So 2 will correspond to 2 hours of travel time</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">The speed will be left at the Default speed of 50 km/h</source>
+<target xml:lang="fr">The speed will be left at the Default speed of 50 km/h</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.40_m3_ex_3_service_area.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.40_m3_ex_3_service_area.png</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_3.40_m3_ex_3_service_area</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_3.40_m3_ex_3_service_area</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">The output will be called <ph id="1">`Service area (lines)`</ph> and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <bpt id="2">__</bpt>EPSG: 102022<ept id="2">__</ept> and reproject the <ph id="3">`Service area (lines)`</ph>. The output layer will be called <ph id="4">`Reprojected`</ph>.</source>
+<target xml:lang="fr">The output will be called <ph id="1">`Service area (lines)`</ph> and will include the road network accessible from a given healthsite within 2 hours of travel time at a travel speed of 50 km/h. To further process this data we need to reproject it to a metric CRS that depicts Chad without distorting too much. Select <bpt id="2">__</bpt>EPSG: 102022<ept id="2">__</ept> and reproject the <ph id="3">`Service area (lines)`</ph>. The output layer will be called <ph id="4">`Reprojected`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the <ph id="1">`Service area (lines)`</ph> layer. Before buffering, we first need to <bpt id="2">[</bpt><ph id="3">`Dissolve`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve)</ept> the service-area lines so they form a single unified geometry.</source>
+<target xml:lang="fr">To produce a more realistic representation of the accessible area around each vaccination point, we will buffer the <ph id="1">`Service area (lines)`</ph> layer. Before buffering, we first need to <bpt id="2">[</bpt><ph id="3">`Dissolve`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#dissolve)</ept> the service-area lines so they form a single unified geometry.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Dissolve`</ph> tool and use the reprojected output as the <bpt id="2">__</bpt>Input layer<ept id="2">__</ept></source>
+<target xml:lang="fr">Open the <ph id="1">`Dissolve`</ph> tool and use the reprojected output as the <bpt id="2">__</bpt>Input layer<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">In Dissolve fields, we won't select anything</source>
+<target xml:lang="fr">In Dissolve fields, we won't select anything</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Warning}</ph>
+Both the <ph id="2">`Dissolve`</ph> and <ph id="3">`Buffer`</ph> operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, <bpt id="4">[</bpt>select<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection)</ept> several states from the <ph id="5">`tcd_admin1 layer`</ph>, then right-click the layer → <ph id="6">`Export`</ph> → <ph id="7">`Save Selected Features As…`</ph> and save the subset. Use the <bpt id="8">[</bpt><ph id="9">`Clip`</ph><ept id="8">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)</ept> tool to cut the service-area roads to this smaller region, and then run the <ph id="10">`Dissolve`</ph> and <ph id="11">`Buffer`</ph> operations on the reduced dataset.
+<ph id="12">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Warning}</ph>
+Both the <ph id="2">`Dissolve`</ph> and <ph id="3">`Buffer`</ph> operations can be computationally intensive. If your computer struggles to process the full dataset at once, try running the operations on smaller areas—for example, a few admin 1 states at a time. To do this, <bpt id="4">[</bpt>select<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#manual-selection)</ept> several states from the <ph id="5">`tcd_admin1 layer`</ph>, then right-click the layer → <ph id="6">`Export`</ph> → <ph id="7">`Save Selected Features As…`</ph> and save the subset. Use the <bpt id="8">[</bpt><ph id="9">`Clip`</ph><ept id="8">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#clip)</ept> tool to cut the service-area roads to this smaller region, and then run the <ph id="10">`Dissolve`</ph> and <ph id="11">`Buffer`</ph> operations on the reduced dataset.
+<ph id="12">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.</source>
+<target xml:lang="fr">Now we can buffer the Dissolved Service area lines by 2 km, which corresponds to around 30 minutes of walking.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Input layer will be the result of the dissolving process (likely called <ph id="1">`Dissolved`</ph>)
+<ph id="2">   :::{figure} /fig/pub_health_chad_buffer.png</ph></source>
+<target xml:lang="fr">Input layer will be the result of the dissolving process (likely called <ph id="1">`Dissolved`</ph>)
+<ph id="2">   :::{figure} /fig/pub_health_chad_buffer.png</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">   name: Buffer operation service area roads</ph>
+<ph id="2">   width: 350 px</ph></source>
+<target xml:lang="fr"><ph id="1">   name: Buffer operation service area roads</ph>
+<ph id="2">   width: 350 px</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Set the buffer distance to 2 km. The output should look similar to the screenshot below: the green area represents the estimated 2-hour accessibility zone around the vaccination points along the road network.
+<ph id="1">   :::{figure} /fig/en_3.40_m3_ex_3_access_vaccination.png</ph></source>
+<target xml:lang="fr">Set the buffer distance to 2 km. The output should look similar to the screenshot below: the green area represents the estimated 2-hour accessibility zone around the vaccination points along the road network.
+<ph id="1">   :::{figure} /fig/en_3.40_m3_ex_3_access_vaccination.png</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">   name: en_3.40_m3_ex_3_access_vaccination</ph>
+<ph id="2">   width: 350 px</ph></source>
+<target xml:lang="fr"><ph id="1">   name: en_3.40_m3_ex_3_access_vaccination</ph>
+<ph id="2">   width: 350 px</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Save the buffered service area by <bpt id="1">&lt;kbd></bpt>right-clicking<ept id="1">&lt;/kbd></ept> on it and selecting <ph id="2">`Make permament...`</ph>. Select "Geopackage" as the output format and save the layer to the <ph id="3">`data/interim/`</ph>-folder and enter a file name such as <ph id="4">`access_vaccination_points`</ph>. Click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Save the buffered service area by <bpt id="1">&lt;kbd></bpt>right-clicking<ept id="1">&lt;/kbd></ept> on it and selecting <ph id="2">`Make permament...`</ph>. Select "Geopackage" as the output format and save the layer to the <ph id="3">`data/interim/`</ph>-folder and enter a file name such as <ph id="4">`access_vaccination_points`</ph>. Click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Task 3: Calculating Population Coverage Using WorldPop <bpt id="1">&lt;a id="task-3-calculating-population-coverage-using-worldpop"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Calculating Population Coverage Using WorldPop <bpt id="1">&lt;a id="task-3-calculating-population-coverage-using-worldpop"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Next, we will generate several population statistics. First, use the admin boundaries together with the WorldPop raster to calculate the total population for each district.</source>
+<target xml:lang="fr">Next, we will generate several population statistics. First, use the admin boundaries together with the WorldPop raster to calculate the total population for each district.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for the tool <bpt id="2">**</bpt>Zonal Statistics<ept id="2">**</ept> and open it.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for the tool <bpt id="2">**</bpt>Zonal Statistics<ept id="2">**</ept> and open it.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input layer:<ept id="1">**</ept> <ph id="2">`tcd_admbnda_adm2_20250212_AB.shp`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input layer:<ept id="1">**</ept> <ph id="2">`tcd_admbnda_adm2_20250212_AB.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Raster layer:<ept id="1">**</ept> <ph id="2">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Raster layer:<ept id="1">**</ept> <ph id="2">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Raster band:<ept id="1">**</ept> only 1 possible selection</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Raster band:<ept id="1">**</ept> only 1 possible selection</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output column prefix:<ept id="1">**</ept> <ph id="2">`pop_total_`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output column prefix:<ept id="1">**</ept> <ph id="2">`pop_total_`</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Statistics ot calculate:<ept id="1">**</ept> <ph id="2">`Sum`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Statistics ot calculate:<ept id="1">**</ept> <ph id="2">`Sum`</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`pop_total_adm2`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`pop_total_adm2`</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Then, run an <ph id="1">`Intersection`</ph> between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries.</source>
+<target xml:lang="fr">Then, run an <ph id="1">`Intersection`</ph> between the district boundaries with the total population information, and the service-area polygon. This step splits the single accessibility area into separate pieces that align with the district boundaries.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for the tool <bpt id="2">**</bpt>Intersection<ept id="2">**</ept> and open it.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, search for the tool <bpt id="2">**</bpt>Intersection<ept id="2">**</ept> and open it.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input layer:<ept id="1">**</ept> <ph id="2">`pop_total_adm2`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input layer:<ept id="1">**</ept> <ph id="2">`pop_total_adm2`</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Overlay layer:<ept id="1">**</ept> <ph id="2">`access_vaccination_points`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Overlay layer:<ept id="1">**</ept> <ph id="2">`access_vaccination_points`</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`adm2_access_vaccination_points`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`adm2_access_vaccination_points`</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.</source>
+<target xml:lang="fr">Then run the algorithm. The output will be the access-to-vaccination geometry with the district information added. In other words, the single access area is split into multiple parts where it intersects district boundaries, assigning each portion to the corresponding district.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.
+<ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr">With these intersected geometries, we can then calculate how many people fall within the 2-hour access zone across all districts, providing an estimate of district-level population coverage for vaccination services.
+<ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, now search again for the tool <bpt id="2">**</bpt>Zonal Statistics<ept id="2">**</ept> and open it.</source>
+<target xml:lang="fr">In the <bpt id="1">**</bpt>Processing Toolbox<ept id="1">**</ept>, now search again for the tool <bpt id="2">**</bpt>Zonal Statistics<ept id="2">**</ept> and open it.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Raster layer:<ept id="1">**</ept> <ph id="2">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Raster layer:<ept id="1">**</ept> <ph id="2">`tcd_pop_2025_CN_100m_R2025A_v1.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Vector layer containing zones:<ept id="1">**</ept> <ph id="2">`adm2_access_vaccination_points`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Vector layer containing zones:<ept id="1">**</ept> <ph id="2">`adm2_access_vaccination_points`</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Statistics to calculate:<ept id="1">**</ept> <ph id="2">`Sum`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Statistics to calculate:<ept id="1">**</ept> <ph id="2">`Sum`</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output column prefix:<ept id="1">**</ept> <ph id="2">`pop_vaccination_`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output column prefix:<ept id="1">**</ept> <ph id="2">`pop_vaccination_`</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`population_within_isochrones`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`population_within_isochrones`</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.</source>
+<target xml:lang="fr">Now we have calculated the total population located within the 2-hour travel-time access area (plus the buffered area), representing the population that can be reached for vaccination within each district.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">In a final step we will estimate the number of people living more than 2 hours away from the nearest vaccination facility — a key metric for identifying areas where <bpt id="1">**</bpt>mobile vaccination teams<ept id="1">**</ept> or <bpt id="2">**</bpt>temporary outreach sites<ept id="2">**</ept> may be needed.</source>
+<target xml:lang="fr">In a final step we will estimate the number of people living more than 2 hours away from the nearest vaccination facility — a key metric for identifying areas where <bpt id="1">**</bpt>mobile vaccination teams<ept id="1">**</ept> or <bpt id="2">**</bpt>temporary outreach sites<ept id="2">**</ept> may be needed.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table and access the Field Calculator</source>
+<target xml:lang="fr">Open the Attribute table and access the Field Calculator</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Give the Output field name <ph id="1">`pop_beyond_2h`</ph></source>
+<target xml:lang="fr">Give the Output field name <ph id="1">`pop_beyond_2h`</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Output field type will be <ph id="1">`Decimal Number (real)`</ph></source>
+<target xml:lang="fr">Output field type will be <ph id="1">`Decimal Number (real)`</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">And the expression</source>
+<target xml:lang="fr">And the expression</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">   :::{figure} /fig/en_3.40_m3_ex_3_pop_no_vacc.png</ph></source>
+<target xml:lang="fr"><ph id="1">   :::{figure} /fig/en_3.40_m3_ex_3_pop_no_vacc.png</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">   name: en_3.40_m3_ex_3_pop_no_vacc</ph>
+<ph id="2">   width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">   name: en_3.40_m3_ex_3_pop_no_vacc</ph>
+<ph id="2">   width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">% THIS IS STILL MISSING</source>
+<target xml:lang="fr">% THIS IS STILL MISSING</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Task 4: Visualising Accessibility <bpt id="1">&lt;a id="task-4-visualising-accessibility"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 4: Visualising Accessibility <bpt id="1">&lt;a id="task-4-visualising-accessibility"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">To visualize the <ph id="1">`population_within_isochrones`</ph> data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the <bpt id="2">__</bpt>Join attributes by field value<ept id="2">__</ept> tool:</source>
+<target xml:lang="fr">To visualize the <ph id="1">`population_within_isochrones`</ph> data we need to join it back onto the original admin 2 boundaries to have the original geometry. Open the <bpt id="2">__</bpt>Join attributes by field value<ept id="2">__</ept> tool:</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input layer:<ept id="1">**</ept> <ph id="2">`tcd_admbnda_adm2_20250212_AB.shp`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input layer:<ept id="1">**</ept> <ph id="2">`tcd_admbnda_adm2_20250212_AB.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Table field:<ept id="1">**</ept> <ph id="2">`ADM2_PCODE`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Table field:<ept id="1">**</ept> <ph id="2">`ADM2_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input layer 2:<ept id="1">**</ept> <ph id="2">`population_within_isochrones`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input layer 2:<ept id="1">**</ept> <ph id="2">`population_within_isochrones`</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Table field 2:<ept id="1">**</ept> <ph id="2">`ADM2_PCODE`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Table field 2:<ept id="1">**</ept> <ph id="2">`ADM2_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Layer 2 fields to copy:<ept id="1">**</ept> <ph id="2">`pop_total_sum`</ph>, <ph id="3">`pop_vaccination_sum`</ph>, <ph id="4">`pop_beyond_2h`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Layer 2 fields to copy:<ept id="1">**</ept> <ph id="2">`pop_total_sum`</ph>, <ph id="3">`pop_vaccination_sum`</ph>, <ph id="4">`pop_beyond_2h`</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`population_vaccination_adm2`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output file name:<ept id="1">**</ept> <ph id="2">`population_vaccination_adm2`</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Now we can visualise both the population that can be reached within 2 hours of a vaccination point and the population living beyond this 2-hour accessibility range.</source>
+<target xml:lang="fr">Now we can visualise both the population that can be reached within 2 hours of a vaccination point and the population living beyond this 2-hour accessibility range.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Symbolise the population within 2 hours</source>
+<target xml:lang="fr">Symbolise the population within 2 hours</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Select the layer <ph id="1">`population_vaccination_adm2`</ph> in the Layers panel.</source>
+<target xml:lang="fr">Select the layer <ph id="1">`population_vaccination_adm2`</ph> in the Layers panel.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Open the Layer Styling panel and switch to <ph id="1">`Graduated`</ph> symbology.</source>
+<target xml:lang="fr">Open the Layer Styling panel and switch to <ph id="1">`Graduated`</ph> symbology.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Use the following inputs: <ph id="1">`pop_vaccination_sum`</ph>, Color ramp: RdYlGn (find it under All Color Ramps), Mode: Equal Count, Classes: 5</source>
+<target xml:lang="fr">Use the following inputs: <ph id="1">`pop_vaccination_sum`</ph>, Color ramp: RdYlGn (find it under All Color Ramps), Mode: Equal Count, Classes: 5</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Symbolise the population beyond 2 hours</source>
+<target xml:lang="fr">Symbolise the population beyond 2 hours</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> the <ph id="2">`population_vaccination_adm2`</ph> layer → Duplicate Layer.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> the <ph id="2">`population_vaccination_adm2`</ph> layer → Duplicate Layer.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Open the Layer Styling panel for the duplicate layer and set: Symbology: Graduated, Value: pop_beyond_2h, Color ramp: YlOrRd, Mode: Equal Count, Classes: 5</source>
+<target xml:lang="fr">Open the Layer Styling panel for the duplicate layer and set: Symbology: Graduated, Value: pop_beyond_2h, Color ramp: YlOrRd, Mode: Equal Count, Classes: 5</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+The overall map layout follows the same steps as in the previous exercise. For a reminder, see the guide <bpt id="2">[</bpt>here<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html#task-7-2-print-layout)</ept>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+The overall map layout follows the same steps as in the previous exercise. For a reminder, see the guide <bpt id="2">[</bpt>here<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_module_5_public_health_ex_2.html#task-7-2-print-layout)</ept>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/tcd_map_pop_access_vaccination.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/tcd_map_pop_access_vaccination.png</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: tcd_map_pop_access_vaccination</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: tcd_map_pop_access_vaccination</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Example map for Measles Vaccination: Population Wihin 2-Hour Access | Chad
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Example map for Measles Vaccination: Population Wihin 2-Hour Access | Chad
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Discussion <bpt id="1">&lt;a id="discussion"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Discussion <bpt id="1">&lt;a id="discussion"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">The resulting map shows which districts and settlements are effectively served by fixed vaccination points, and which remain outside practical reach. In real-world scenarios, such analysis can help humanitarian planners:</source>
+<target xml:lang="fr">The resulting map shows which districts and settlements are effectively served by fixed vaccination points, and which remain outside practical reach. In real-world scenarios, such analysis can help humanitarian planners:</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Identify underserved areas<ept id="1">**</ept> and plan <bpt id="2">**</bpt>mobile vaccination campaigns<ept id="2">**</ept>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Identify underserved areas<ept id="1">**</ept> and plan <bpt id="2">**</bpt>mobile vaccination campaigns<ept id="2">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Estimate resource needs<ept id="1">**</ept> for outreach teams.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Estimate resource needs<ept id="1">**</ept> for outreach teams.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Always interpret accessibility results and specifically estimations with caution — We used public road network data (OCHA), which may not reflect seasonal accessibility or informal paths. Field validation and coordination with local health teams are essential for operational planning.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Always interpret accessibility results and specifically estimations with caution — We used public road network data (OCHA), which may not reflect seasonal accessibility or informal paths. Field validation and coordination with local health teams are essential for operational planning.
+<ph id="2">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

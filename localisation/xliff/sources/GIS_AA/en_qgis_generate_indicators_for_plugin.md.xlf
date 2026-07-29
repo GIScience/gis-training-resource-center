@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_qgis_generate_indicators_for_plugin.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">How to generate Risk Indicators <bpt id="1">&lt;a id="how-to-generate-risk-indicators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to generate Risk Indicators <bpt id="1">&lt;a id="how-to-generate-risk-indicators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">To conduct a meaningful risk assessment with the <bpt id="1">[</bpt>Risk Assessment QGIS Plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html)</ept>, it is essential to prepare input indicator files that represent the three main dimensions:</source>
+<target xml:lang="fr">To conduct a meaningful risk assessment with the <bpt id="1">[</bpt>Risk Assessment QGIS Plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_risk_assessment_plugin.html)</ept>, it is essential to prepare input indicator files that represent the three main dimensions:</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Exposure<ept id="1">**</ept> (mandatory)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Exposure<ept id="1">**</ept> (mandatory)</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Vulnerability<ept id="1">**</ept> (mandatory)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Vulnerability<ept id="1">**</ept> (mandatory)</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Coping Capacity<ept id="1">**</ept> (optional, but strongly recommended)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Coping Capacity<ept id="1">**</ept> (optional, but strongly recommended)</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This page provides detailed video examples of how to generate each of these indicators using commonly available geospatial data of Ethiopia. The goal is to support users in creating well-structured and valid inputs that align with the plugin’s requirements.</source>
+<target xml:lang="fr">This page provides detailed video examples of how to generate each of these indicators using commonly available geospatial data of Ethiopia. The goal is to support users in creating well-structured and valid inputs that align with the plugin’s requirements.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Key Takeaways
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Key Takeaways
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Ensure the file contains an <ph id="1">`ADM_PCODE`</ph> column.</source>
+<target xml:lang="fr">Ensure the file contains an <ph id="1">`ADM_PCODE`</ph> column.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Only include indicator columns relevant for the specific dimension.</source>
+<target xml:lang="fr">Only include indicator columns relevant for the specific dimension.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Choose unique column names that describe the content of the column briefly but efficiently.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Choose unique column names that describe the content of the column briefly but efficiently.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Exposure Indicators <bpt id="1">&lt;a id="exposure-indicators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exposure Indicators <bpt id="1">&lt;a id="exposure-indicators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The Expousre indicator was determined by combining the <bpt id="1">[</bpt>Aridity index (AI)<ept id="1">](https://data.humdata.org/dataset/icpac-geonode-ethiopia-aridity)</ept> and the <bpt id="2">[</bpt>Palmer Drought Severity Index (PDSI)<ept id="2">](https://data.humdata.org/dataset/ethiopia-palmer-drought-severity-index-pdsi-2020-2024)</ept> from <bpt id="3">**</bpt>HDX<ept id="3">**</ept> to determine the drought risk of the administrative units.</source>
+<target xml:lang="fr">The Expousre indicator was determined by combining the <bpt id="1">[</bpt>Aridity index (AI)<ept id="1">](https://data.humdata.org/dataset/icpac-geonode-ethiopia-aridity)</ept> and the <bpt id="2">[</bpt>Palmer Drought Severity Index (PDSI)<ept id="2">](https://data.humdata.org/dataset/ethiopia-palmer-drought-severity-index-pdsi-2020-2024)</ept> from <bpt id="3">**</bpt>HDX<ept id="3">**</ept> to determine the drought risk of the administrative units.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Aridity index (AI) <bpt id="1">&lt;a id="aridity-index-ai"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aridity index (AI) <bpt id="1">&lt;a id="aridity-index-ai"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The raster file was opened in QGIS and the mean drought index per administrative unit was calculated using <ph id="1">`Zonal statistics`</ph>:
+</source>
+<target xml:lang="fr">The raster file was opened in QGIS and the mean drought index per administrative unit was calculated using <ph id="1">`Zonal statistics`</ph>:
+</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Palmer Drought Severity Index (PDSI) <bpt id="1">&lt;a id="palmer-drought-severity-index-pdsi"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Palmer Drought Severity Index (PDSI) <bpt id="1">&lt;a id="palmer-drought-severity-index-pdsi"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">First, the raw data was pivoted and processed in Excel to calculate the average PDSI between 2020 and 2024:
+</source>
+<target xml:lang="fr">First, the raw data was pivoted and processed in Excel to calculate the average PDSI between 2020 and 2024:
+</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Then, the processed data was opened in QGIS and added to the exposure indicator file:
+</source>
+<target xml:lang="fr">Then, the processed data was opened in QGIS and added to the exposure indicator file:
+</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Vulnerability Indicators <bpt id="1">&lt;a id="vulnerability-indicators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vulnerability Indicators <bpt id="1">&lt;a id="vulnerability-indicators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The Vulnerability indicator was determined by combining the <bpt id="1">[</bpt>ACLED - Conflict Events<ept id="1">](https://data.humdata.org/dataset/ethiopia-acled-conflict-data)</ept> and <bpt id="2">[</bpt>Worldpop<ept id="2">](https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-eth)</ept> datasets from <bpt id="3">**</bpt>HDX<ept id="3">**</ept>.</source>
+<target xml:lang="fr">The Vulnerability indicator was determined by combining the <bpt id="1">[</bpt>ACLED - Conflict Events<ept id="1">](https://data.humdata.org/dataset/ethiopia-acled-conflict-data)</ept> and <bpt id="2">[</bpt>Worldpop<ept id="2">](https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-eth)</ept> datasets from <bpt id="3">**</bpt>HDX<ept id="3">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">ACLED - Conflict Events <bpt id="1">&lt;a id="acled-conflict-events"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">ACLED - Conflict Events <bpt id="1">&lt;a id="acled-conflict-events"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The dataset was processed in QGIS to estimate the population affected by conflicts in 2024 using the <ph id="1">`Join Attributes by Location (Summary)`</ph> tool. Additionally the number of conflicts per administrative unit was calculated using the <ph id="2">`Count Points in Polygon`</ph> tool:</source>
+<target xml:lang="fr">The dataset was processed in QGIS to estimate the population affected by conflicts in 2024 using the <ph id="1">`Join Attributes by Location (Summary)`</ph> tool. Additionally the number of conflicts per administrative unit was calculated using the <ph id="2">`Count Points in Polygon`</ph> tool:</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Worldpop <bpt id="1">&lt;a id="worldpop"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Worldpop <bpt id="1">&lt;a id="worldpop"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">The dataset was processed in QGIS to estimate the vulnerable population (<ph id="1">&lt;15 years &amp; ></ph>65 years) in 2024 using the <ph id="2">`Raster Calculator`</ph> and the <ph id="3">`Zonal statistics`</ph> tools:
+</source>
+<target xml:lang="fr">The dataset was processed in QGIS to estimate the vulnerable population (<ph id="1">&lt;15 years &amp; ></ph>65 years) in 2024 using the <ph id="2">`Raster Calculator`</ph> and the <ph id="3">`Zonal statistics`</ph> tools:
+</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Coping Capacity Indicators <bpt id="1">&lt;a id="coping-capacity-indicators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coping Capacity Indicators <bpt id="1">&lt;a id="coping-capacity-indicators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">The Coping Capacity indicator was determined by combining the <bpt id="1">[</bpt>Health Facilities<ept id="1">](https://data.humdata.org/dataset/hotosm_eth_health_facilities)</ept> and the <bpt id="2">[</bpt>Education Facilities<ept id="2">](https://data.humdata.org/dataset/hotosm_eth_education_facilities)</ept> from <bpt id="3">**</bpt>HDX<ept id="3">**</ept>.</source>
+<target xml:lang="fr">The Coping Capacity indicator was determined by combining the <bpt id="1">[</bpt>Health Facilities<ept id="1">](https://data.humdata.org/dataset/hotosm_eth_health_facilities)</ept> and the <bpt id="2">[</bpt>Education Facilities<ept id="2">](https://data.humdata.org/dataset/hotosm_eth_education_facilities)</ept> from <bpt id="3">**</bpt>HDX<ept id="3">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Health and Ecudation Facilities <bpt id="1">&lt;a id="health-and-ecudation-facilities"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Health and Ecudation Facilities <bpt id="1">&lt;a id="health-and-ecudation-facilities"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">The dataset was processed in QGIS to count the number of facilities per administrative unit using the <ph id="1">`Count Points in Polygon`</ph> tool:
+</source>
+<target xml:lang="fr">The dataset was processed in QGIS to count the number of facilities per administrative unit using the <ph id="1">`Count Points in Polygon`</ph> tool:
+</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

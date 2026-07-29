@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_module_4_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises for Module 4 <bpt id="1">&lt;a id="exercises-for-module-4"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises for Module 4 <bpt id="1">&lt;a id="exercises-for-module-4"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">These exercises touch on all the content of Module 4.</source>
+<target xml:lang="fr">These exercises touch on all the content of Module 4.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Visualisation <bpt id="1">&lt;a id="visualisation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualisation <bpt id="1">&lt;a id="visualisation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Focus Group</source>
+<target xml:lang="fr">Focus Group</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Creating a Map of Ghana<ept id="2">](/content/Module_4/en_qgis_map_design_I_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Creating a Map of Ghana<ept id="2">](/content/Module_4/en_qgis_map_design_I_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, and hospitals. Such information is very useful for humanitarian work. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.</source>
+<target xml:lang="fr">The aim of this exercise is to create an overview map of Ghana with its subdistricts, main roads, settlements, and hospitals. Such information is very useful for humanitarian work. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">QGIS Intermediates</source>
+<target xml:lang="fr">QGIS Intermediates</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">5 hours</source>
+<target xml:lang="fr">5 hours</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan<ept id="2">](/content/Module_4/en_qgis_map_design_I_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan<ept id="2">](/content/Module_4/en_qgis_map_design_I_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to create a a map of the flood situation in Larkana, Pakistan. Such information is very useful for humanitarian work and especially flood response. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.</source>
+<target xml:lang="fr">The aim of this exercise is to create a a map of the flood situation in Larkana, Pakistan. Such information is very useful for humanitarian work and especially flood response. The first part of the exercise will cover the symbolisation of the data layers. The second part will focus on the design of the print layout.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">QGIS Intermediates</source>
+<target xml:lang="fr">QGIS Intermediates</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Visualizing Cyclone Impact Results – Aina Styles Her Layers<ept id="2">](/content/Module_4/en_module_4_mdg_aa_ex_4.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Visualizing Cyclone Impact Results – Aina Styles Her Layers<ept id="2">](/content/Module_4/en_module_4_mdg_aa_ex_4.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">This exercise is the third task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will apply style files to the model outputs.</source>
+<target xml:lang="fr">This exercise is the third task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will apply style files to the model outputs.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Symbology tab and style files</source>
+<target xml:lang="fr">Symbology tab and style files</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">2 hours</source>
+<target xml:lang="fr">2 hours</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Quick Map Creation – Aina Uses Map Templates<ept id="2">](/content/Module_4/en_module_4_mdg_aa_ex_5.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Quick Map Creation – Aina Uses Map Templates<ept id="2">](/content/Module_4/en_module_4_mdg_aa_ex_5.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">This exercise is the third task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this step we will use map templates to create ready-to-print maps.</source>
+<target xml:lang="fr">This exercise is the third task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this step we will use map templates to create ready-to-print maps.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Print layout composer and map template files</source>
+<target xml:lang="fr">Print layout composer and map template files</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">1 hour</source>
+<target xml:lang="fr">1 hour</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

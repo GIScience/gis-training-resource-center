@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_projections_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Projections <bpt id="1">&lt;a id="projections"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Projections <bpt id="1">&lt;a id="projections"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">How to check EPSG-Code <bpt id="1">&lt;a id="how-to-check-epsg-code"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to check EPSG-Code <bpt id="1">&lt;a id="how-to-check-epsg-code"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+Always check that the Coordinate Reference System (CRS)/EPSG code of your data is the same as the CRS/EPSG-code of your project!
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+Always check that the Coordinate Reference System (CRS)/EPSG code of your data is the same as the CRS/EPSG-code of your project!
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most applications, because we mostly use maps for small areas.</source>
+<target xml:lang="fr">The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most applications, because we mostly use maps for small areas.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">How to check EPSG-Code/CRS of your QGIS Project and change it <bpt id="1">&lt;a id="how-to-check-epsg-codecrs-of-your-qgis-project-and-change-it"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to check EPSG-Code/CRS of your QGIS Project and change it <bpt id="1">&lt;a id="how-to-check-epsg-codecrs-of-your-qgis-project-and-change-it"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+To check and adjust the CRS/ EPSG-Code should be the first thing you should do when starting a new QGIS project.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+To check and adjust the CRS/ EPSG-Code should be the first thing you should do when starting a new QGIS project.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Open a QGIS project</source>
+<target xml:lang="fr">Open a QGIS project</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In the bottom right corner of QGIS you find the button <ph id="1">`EPSG`</ph>. The number next to it is the EPSG Code currently used in the project. For more information click on the button.
+<bpt id="2">![</bpt><ept id="2">](/fig/EPSG_Code.png)</ept></source>
+<target xml:lang="fr">In the bottom right corner of QGIS you find the button <ph id="1">`EPSG`</ph>. The number next to it is the EPSG Code currently used in the project. For more information click on the button.
+<bpt id="2">![</bpt><ept id="2">](/fig/EPSG_Code.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The window <ph id="1">`Project Properties`</ph> will open. Here you can view all available CRS/EPSG-Code and their properties.</source>
+<target xml:lang="fr">The window <ph id="1">`Project Properties`</ph> will open. Here you can view all available CRS/EPSG-Code and their properties.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">To change the CRS/EPSG-code, select the one you want to use and click <ph id="1">`Apply`</ph>.</source>
+<target xml:lang="fr">To change the CRS/EPSG-code, select the one you want to use and click <ph id="1">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">How to check EPSG-Code/CRS of layer/ data <bpt id="1">&lt;a id="how-to-check-epsg-codecrs-of-layer-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to check EPSG-Code/CRS of layer/ data <bpt id="1">&lt;a id="how-to-check-epsg-codecrs-of-layer-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+After loading any spatial data in QGIS, check the CRS/EPSG code of the data to make sure it is the same as the CRS/EPSG code of the project.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+After loading any spatial data in QGIS, check the CRS/EPSG code of the data to make sure it is the same as the CRS/EPSG code of the project.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Right click on the data layer, click on  <ph id="1">`Properties`</ph>.</source>
+<target xml:lang="fr">Right click on the data layer, click on  <ph id="1">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The “Layer Properties” Window of the data layer will open. Click on <ph id="1">`Information`</ph>.</source>
+<target xml:lang="fr">The “Layer Properties” Window of the data layer will open. Click on <ph id="1">`Information`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</source>
+<target xml:lang="fr">Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name:<ept id="1">__</ept>     Here you find the EPSG Code.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name:<ept id="1">__</ept>     Here you find the EPSG Code.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Unites:<ept id="1">__</ept>    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Unites:<ept id="1">__</ept>    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Changing the projection of a vector layer <bpt id="1">&lt;a id="changing-the-projection-of-a-vector-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Changing the projection of a vector layer <bpt id="1">&lt;a id="changing-the-projection-of-a-vector-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Vector`</ph> Tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Vector`</ph> Tab → <ph id="2">`Data Management Tools`</ph> → <ph id="3">`Reproject Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Select target CRS/ EPSG-Code.</source>
+<target xml:lang="fr">Select target CRS/ EPSG-Code.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>, specify the file name and the location where you want to save the file.</source>
+<target xml:lang="fr">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>, specify the file name and the location where you want to save the file.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Changing the projection of a raster layer <bpt id="1">&lt;a id="changing-the-projection-of-a-raster-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Changing the projection of a raster layer <bpt id="1">&lt;a id="changing-the-projection-of-a-raster-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Raster`</ph> Tab → <ph id="2">`Projections`</ph> → <ph id="3">`Warp (Reproject)`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Raster`</ph> Tab → <ph id="2">`Projections`</ph> → <ph id="3">`Warp (Reproject)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Select target CRS/EPSG-Code.</source>
+<target xml:lang="fr">Select target CRS/EPSG-Code.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Select resampling method.</source>
+<target xml:lang="fr">Select resampling method.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>, specify the file name and the location where you want to save the file.</source>
+<target xml:lang="fr">Save the new file by clicking on the three dots next to <ph id="1">`Reprojected`</ph>, specify the file name and the location where you want to save the file.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Common mistakes with Coordinate Reference Systems <bpt id="1">&lt;a id="common-mistakes-with-coordinate-reference-systems"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Common mistakes with Coordinate Reference Systems <bpt id="1">&lt;a id="common-mistakes-with-coordinate-reference-systems"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">The website <bpt id="1">[</bpt><bpt id="2">__</bpt>I Hate Coordinate Systems!<ept id="2">__</ept><ept id="1">](https://ihatecoordinatesystems.com/)</ept> offers a “a problem-based guide of common CRS issues, root causes, and solutions.”.</source>
+<target xml:lang="fr">The website <bpt id="1">[</bpt><bpt id="2">__</bpt>I Hate Coordinate Systems!<ept id="2">__</ept><ept id="1">](https://ihatecoordinatesystems.com/)</ept> offers a “a problem-based guide of common CRS issues, root causes, and solutions.”.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

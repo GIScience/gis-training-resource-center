@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_ex3.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action <bpt id="1">&lt;a id="exercise-3-trigger-and-intervention-map-for-forecast-based-action"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action <bpt id="1">&lt;a id="exercise-3-trigger-and-intervention-map-for-forecast-based-action"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Aim of the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).</source>
+<target xml:lang="fr">This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP).</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.</source>
+<target xml:lang="fr">Within this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Type of trainings exercise:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Intersection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Zonal Statistics<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Join Attributes by location (summary<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Join Attributes by location (summary<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table functions<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table functions<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training facilitation.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training facilitation.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Setting triggers is one of the cornerstones of the <bpt id="1">__</bpt>Forecast-based Financing (FbF) system<ept id="1">__</ept>. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called <bpt id="2">__</bpt>triggers<ept id="2">__</ept>, based on weather and climate forecasts, which are defined for each region (see <bpt id="3">[</bpt>FbF Manual<ept id="3">](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)</ept>).</source>
+<target xml:lang="fr">Setting triggers is one of the cornerstones of the <bpt id="1">__</bpt>Forecast-based Financing (FbF) system<ept id="1">__</ept>. For a National Society to have access to automatically released funding for their early actions, their Early Action Protocol needs to clearly define where and when funds will be allocated, and assistance will be provided. In FbF, this is decided according to specific threshold values, so-called <bpt id="2">__</bpt>triggers<ept id="2">__</ept>, based on weather and climate forecasts, which are defined for each region (see <bpt id="3">[</bpt>FbF Manual<ept id="3">](https://manual.forecast-based-financing.org/en/chapter/set-the-trigger/)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
+Finally, the main parameters chosen for the trigger based on the <bpt id="1">__</bpt>historical impact assessment<ept id="1">__</ept> are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <ph id="2">&lt;-1 for the SPI12 and ></ph>=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.</source>
+<target xml:lang="fr">For the development of the Somaliland-Somalia Drought Trigger mechanism, various datasources were thoroughly analysed.
+Finally, the main parameters chosen for the trigger based on the <bpt id="1">__</bpt>historical impact assessment<ept id="1">__</ept> are the twelve month Standard Precipitation Index (SPI12) and the IPC acute food insecurity classification. The exact data used are the documented and forecasted SPI12 (source: ICPAC) and the forecasted IPC classification (8 month forecast, source: FEWSNET), that is used to calculate a population weighted index of food insecurity. The trigger thresholds for both components were optimised towards the most favourable proportion of hit rate and false alarm rate. The emerging thresholds were <ph id="2">&lt;-1 for the SPI12 and ></ph>=0,7 for the IPC based index. The triggering is done on district level and per district just one trigger initiation per year is possible.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Trigger Statement
+When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its
+derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Trigger Statement
+When ICPAC issues a SPI-12 forecast of less than -1 for a district AND the current FEWSNET food insecurity projection reaches at least 0.7 in its
+derived population weighted index in the same district, then we will act in this district. We expect the lead-time to be 90 days.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Food Insecurity Projection data <bpt id="1">&lt;a id="food-insecurity-projection-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Food Insecurity Projection data <bpt id="1">&lt;a id="food-insecurity-projection-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">The drought trigger mechanism is based on two variable monitoring datasets. One of them Food Insecurity projection produced by FEWSNET which is updated ruffly every month.</source>
+<target xml:lang="fr">The drought trigger mechanism is based on two variable monitoring datasets. One of them Food Insecurity projection produced by FEWSNET which is updated ruffly every month.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">IPC Projections</source>
+<target xml:lang="fr">IPC Projections</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>FEWSNET<ept id="1">](https://fews.net/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>FEWSNET<ept id="1">](https://fews.net/)</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity.</source>
+<target xml:lang="fr">five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">What is IPC Food Security Projection Data? <bpt id="1">&lt;a id="what-is-ipc-food-security-projection-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is IPC Food Security Projection Data? <bpt id="1">&lt;a id="what-is-ipc-food-security-projection-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity.
+The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index.</source>
+<target xml:lang="fr">The IPC is a commonly accepted measure and classification to describe the current and anticipated severity of acute food insecurity.
+The classification is based on a convergence of available data and evidence, including indicators related to food consumption, livelihoods, malnutrition and mortality. Food Insecurity is one of the prioritised impacts of droughts in Somalia which is why it is also used for the triggering mechanism, in a population-weighted index.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered.</source>
+<target xml:lang="fr">Three times a year (February, June, and October) FEWSNET estimates most likely IPC classes for the upcoming 8 month (near-term and mid-term projection), available from 2019-current. The near-term projection is called ML1 and is a projection for the upcoming 4 month, the mid-term projection is called ML2 and projects the IPC classes for the 4 subsequent months. For the triggering ML1 (near-term) as well as ML2 (mid-term) projections will be considered.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Outlook updates are produced almost every month and are also taken into account.</source>
+<target xml:lang="fr">Outlook updates are produced almost every month and are also taken into account.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Colour</source>
+<target xml:lang="fr">Colour</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Phase</source>
+<target xml:lang="fr">Phase</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Descriptions</source>
+<target xml:lang="fr">Descriptions</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_1.drawio.svg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_1.drawio.svg)</ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">1. Minimal</source>
+<target xml:lang="fr">1. Minimal</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Households are able to meet essential food and non-food needs without engaging in atypical and unsustainable strategies to access food and income.</source>
+<target xml:lang="fr">Households are able to meet essential food and non-food needs without engaging in atypical and unsustainable strategies to access food and income.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_2.drawio.svg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_2.drawio.svg)</ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">2. Stressed</source>
+<target xml:lang="fr">2. Stressed</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Households have minimally adequate food consumption but are unable to afford some essential non-food expenditures without engaging in stress-coping strategies.</source>
+<target xml:lang="fr">Households have minimally adequate food consumption but are unable to afford some essential non-food expenditures without engaging in stress-coping strategies.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_3.drawio.svg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_3.drawio.svg)</ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">3. Crisis</source>
+<target xml:lang="fr">3. Crisis</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Households either have food consumption gaps that are reflected by high or above-usual acute malnutrition <bpt id="1">__</bpt>OR<ept id="1">__</ept> are marginally able to meet minimum food needs but only by depleting essential livelihood assets or through crisis-coping strategies.</source>
+<target xml:lang="fr">Households either have food consumption gaps that are reflected by high or above-usual acute malnutrition <bpt id="1">__</bpt>OR<ept id="1">__</ept> are marginally able to meet minimum food needs but only by depleting essential livelihood assets or through crisis-coping strategies.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_4.drawio.svg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_4.drawio.svg)</ept></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">4. Emergency</source>
+<target xml:lang="fr">4. Emergency</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; <bpt id="1">__</bpt>OR<ept id="1">__</ept> are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.</source>
+<target xml:lang="fr">Households either have large food consumption gaps which are reflected in very high acute malnutrition and excess mortality; <bpt id="1">__</bpt>OR<ept id="1">__</ept> are able to mitigate large food consumption gaps but only by employing emergency livelihood strategies and asset liquidation.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_5.drawio.svg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/IPC_Class_5.drawio.svg)</ept></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">5. Famine</source>
+<target xml:lang="fr">5. Famine</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)</source>
+<target xml:lang="fr">Households have an extreme lack of food and/or other basic needs even after full employment of coping strategies. Starvation, death, destitution, and extremely critical acute malnutrition levels are evident. (For Famine Classification, area needs to have extreme critical levels of acute malnutrition and mortality.)</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Training Data <bpt id="1">&lt;a id="training-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Training Data <bpt id="1">&lt;a id="training-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Download the data folder <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise2_Drought_Monitoring_Trigger/Modul_5_Exercise2_Drought_Monitoring_Trigger.zip)</ept><ept id="1">__</ept> and save it on your PC. Unzip the .zip file!</source>
+<target xml:lang="fr">Download the data folder <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Modul_5_Exercise2_Drought_Monitoring_Trigger/Modul_5_Exercise2_Drought_Monitoring_Trigger.zip)</ept><ept id="1">__</ept> and save it on your PC. Unzip the .zip file!</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">For this particular exercise, we will use a combination of pre-processed data and the download of real data from <bpt id="1">[</bpt>FEWS.net<ept id="1">](https://fews.net/)</ept>.
+The preprocessed datasets are:</source>
+<target xml:lang="fr">For this particular exercise, we will use a combination of pre-processed data and the download of real data from <bpt id="1">[</bpt>FEWS.net<ept id="1">](https://fews.net/)</ept>.
+The preprocessed datasets are:</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Administrative boundaries</source>
+<target xml:lang="fr">Administrative boundaries</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-som?)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-som?)</ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.</source>
+<target xml:lang="fr">The administrative boundaries on level 0-2 for Somalia and Somaliland can be accessed via HDX. For this trigger mechanism we provide the administrative boundaries on level 2 (district level) as a shapefile. We have added the population number for each district derived from Worldpop.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Population Counts</source>
+<target xml:lang="fr">Population Counts</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Worldpop<ept id="1">](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Worldpop<ept id="1">](https://hub.worldpop.org/doi/10.5258/SOTON/WP00534)</ept></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">The worldpop dataset in .geotif raster format provides population estimates per hectare for the year 2020</source>
+<target xml:lang="fr">The worldpop dataset in .geotif raster format provides population estimates per hectare for the year 2020</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Whereas the IPC-Projections data will be downloaded by the participants directly from FEWS.net.</source>
+<target xml:lang="fr">Whereas the IPC-Projections data will be downloaded by the participants directly from FEWS.net.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">IPC Projections</source>
+<target xml:lang="fr">IPC Projections</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>FEWSNET<ept id="1">](https://fews.net/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>FEWSNET<ept id="1">](https://fews.net/)</ept></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity.</source>
+<target xml:lang="fr">five-phase scale providing common standards for classifying the severity of acute or anticipated acute food insecurity.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task <bpt id="1">&lt;a id="task"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Some of the images and videos are not 100 % accurate for this particular exercise since they were take from the real trigger workflow of SRCS, which is more complex.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Step 1: Setting up folder structure <bpt id="1">&lt;a id="step-1-setting-up-folder-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 1: Setting up folder structure <bpt id="1">&lt;a id="step-1-setting-up-folder-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, we set up the correct folder structure to make the analysis easier and to ensure consistent results.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> No special tools or programs are needed.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> No special tools or programs are needed.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 10 25</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 10 25</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Instruction</source>
+<target xml:lang="fr">Instruction</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Folder Structure</source>
+<target xml:lang="fr">Folder Structure</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Open the Folder “Module_5_Exercise2_Drought_Monitoring_Trigger"</source>
+<target xml:lang="fr">Open the Folder “Module_5_Exercise2_Drought_Monitoring_Trigger"</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Open the subfolder "Monitoring"</source>
+<target xml:lang="fr">Open the subfolder "Monitoring"</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Copy the Template folder "TEMPLATE_Year_Month" and change the name to the current year and month <ph id="1">`2024_01`</ph>.</source>
+<target xml:lang="fr">Copy the Template folder "TEMPLATE_Year_Month" and change the name to the current year and month <ph id="1">`2024_01`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">The Video below shows the process for setting up the folder for December 2023.</source>
+<target xml:lang="fr">The Video below shows the process for setting up the folder for December 2023.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Setting up folder structure
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Setting up folder structure
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Step 2: Download of the forecast data <bpt id="1">&lt;a id="step-2-download-of-the-forecast-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 2: Download of the forecast data <bpt id="1">&lt;a id="step-2-download-of-the-forecast-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, we will download the forecast data on which our triggers will be based.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, we will download the forecast data on which our triggers will be based.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> Internet Browser</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> Internet Browser</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website.
+The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.</source>
+<target xml:lang="fr">The IPC data will be pulled from the FEWSNET website. FEWS NET publishes IPC data on its website.
+The main data publications, as well as the updates of the IPC data, amount to the publication of new data almost monthly.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">IPC Data <bpt id="1">&lt;a id="ipc-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">IPC Data <bpt id="1">&lt;a id="ipc-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">The IPC Projection data is provided and regularly updated on the <bpt id="1">[</bpt>FEWSNET Website<ept id="1">](https://fews.net/)</ept>.
+On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through <ph id="2">`Data`</ph> → <ph id="3">`Acute Food Insecurity Data`</ph> and enter "Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</source>
+<target xml:lang="fr">The IPC Projection data is provided and regularly updated on the <bpt id="1">[</bpt>FEWSNET Website<ept id="1">](https://fews.net/)</ept>.
+On the website, you will have to click on Somalia to access the data. Alternatively, you can  navigate through <ph id="2">`Data`</ph> → <ph id="3">`Acute Food Insecurity Data`</ph> and enter "Somalia". In the menu you will see different data formats for different timestamps. Once you find out which timestamp is the most current one, find the ZIP download. We need the data in shapefile (.shp) format, which is only included in the ZIP file and not provided as single download file.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Warning}</ph>
+The FEWSNET pages change often! You can sign up to the FEWSNET newsletter to keep up to date with changes.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Warning}</ph>
+The FEWSNET pages change often! You can sign up to the FEWSNET newsletter to keep up to date with changes.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Go to <bpt id="1">[</bpt>FEWSNET Website<ept id="1">](https://fews.net/)</ept>. Click on <ph id="2">`Data`</ph> → <ph id="3">`Acute Food Insecurity`</ph>.</source>
+<target xml:lang="fr">Go to <bpt id="1">[</bpt>FEWSNET Website<ept id="1">](https://fews.net/)</ept>. Click on <ph id="2">`Data`</ph> → <ph id="3">`Acute Food Insecurity`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Scroll down. In <ph id="1">`Geographic Area`</ph>, type in “Somalia” and click <ph id="2">`Apply`</ph>.</source>
+<target xml:lang="fr">Scroll down. In <ph id="1">`Geographic Area`</ph>, type in “Somalia” and click <ph id="2">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Choose the newest dataset.</source>
+<target xml:lang="fr">Choose the newest dataset.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/IPC_Projections_website.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/IPC_Projections_website.png</ph></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 250px</ph>
+<ph id="2">name: FEWSNET IPC - Download IPC Projections</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">height: 250px</ph>
+<ph id="2">name: FEWSNET IPC - Download IPC Projections</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Download the one with the <bpt id="1">__</bpt>ZIP<ept id="1">__</ept> Data.</source>
+<target xml:lang="fr">Download the one with the <bpt id="1">__</bpt>ZIP<ept id="1">__</ept> Data.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">When you have downloaded the data, right-click on the file and click on <ph id="1">`Extract all`</ph> → <ph id="2">`Extract`</ph>.</source>
+<target xml:lang="fr">When you have downloaded the data, right-click on the file and click on <ph id="1">`Extract all`</ph> → <ph id="2">`Extract`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1.</source>
+<target xml:lang="fr">Open the extracted folder and copy the ML1 data in the IPC_ML1 folder you have created in step 1.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">The filename is composed of "SO" for Somalia, year and month of the report month e.g <ph id="1">`SO_202308_ML1.shp`</ph>.
+  Example path: <ph id="2">`.../Module_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`</ph>.
+<ph id="3">:::{Warning}</ph>
+Make sure to <bpt id="4">__</bpt>not<ept id="4">__</ept> use the ML1_IDP data which comes in the .zip folder as well!
+<ph id="5">:::</ph></source>
+<target xml:lang="fr">The filename is composed of "SO" for Somalia, year and month of the report month e.g <ph id="1">`SO_202308_ML1.shp`</ph>.
+  Example path: <ph id="2">`.../Module_5_Exercise2_Drought_Monitoring_Trigger/Monitoring/Year_Month_template/IPC_ML1`</ph>.
+<ph id="3">:::{Warning}</ph>
+Make sure to <bpt id="4">__</bpt>not<ept id="4">__</ept> use the ML1_IDP data which comes in the .zip folder as well!
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{Warning}</ph>
+Remember that you need to copy over all components that the respective <bpt id="2">[</bpt>shapefile<ept id="2">](/content/Wiki/en_qgis_geodata_types_wiki.md#vector-data)</ept> is composed of. Most probably it has 5 components: <ph id="3">`.cpg`</ph>, <ph id="4">`.dbf`</ph>, <ph id="5">`.prj`</ph>, <ph id="6">`.shp`</ph>, and <ph id="7">`.shx`</ph>.
+<ph id="8">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{Warning}</ph>
+Remember that you need to copy over all components that the respective <bpt id="2">[</bpt>shapefile<ept id="2">](/content/Wiki/en_qgis_geodata_types_wiki.md#vector-data)</ept> is composed of. Most probably it has 5 components: <ph id="3">`.cpg`</ph>, <ph id="4">`.dbf`</ph>, <ph id="5">`.prj`</ph>, <ph id="6">`.shp`</ph>, and <ph id="7">`.shx`</ph>.
+<ph id="8">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/IPC_zip.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/IPC_zip.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 300px</ph>
+<ph id="2">name: Content of .zip file downloaded containing ML1 and ML2 IPC projections</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">height: 300px</ph>
+<ph id="2">name: Content of .zip file downloaded containing ML1 and ML2 IPC projections</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+On the <bpt id="2">[</bpt>main FEWSNET page<ept id="2">](https://fews.net/)</ept>, you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on <ph id="3">`Sign up for Emails`</ph>. You will get the option to choose updates only for Somalia.</source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+On the <bpt id="2">[</bpt>main FEWSNET page<ept id="2">](https://fews.net/)</ept>, you can also sign up for information on latest updates via email. For this option scroll down to the end of the page and click on <ph id="3">`Sign up for Emails`</ph>. You will get the option to choose updates only for Somalia.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/IPC_Newsletter.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/IPC_Newsletter.png</ph></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 60px</ph>
+<ph id="2">name: FEWSNET Newsletter</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">height: 60px</ph>
+<ph id="2">name: FEWSNET Newsletter</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Step 3: Loading data into QGIS <bpt id="1">&lt;a id="step-3-loading-data-into-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 3: Loading data into QGIS <bpt id="1">&lt;a id="step-3-loading-data-into-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, all the data needed will be loaded into a QGIS-project so we can analyse the data.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> No specific tools are needed, only QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> No specific tools are needed, only QGIS.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</source>
+<target xml:lang="fr">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Once the project is created, save the project in the folder you created in Step 1 (e.g. 2022_05). To do that, click on <ph id="1">`Project`</ph> → <ph id="2">`Save as`</ph> and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click <ph id="3">`Save`</ph>.</source>
+<target xml:lang="fr">Once the project is created, save the project in the folder you created in Step 1 (e.g. 2022_05). To do that, click on <ph id="1">`Project`</ph> → <ph id="2">`Save as`</ph> and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click <ph id="3">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Load all input data in <bpt id="1">[</bpt>QGIS via drag and drop<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>. Click on <ph id="2">`Project`</ph> → <ph id="3">`Save`</ph>.</source>
+<target xml:lang="fr">Load all input data in <bpt id="1">[</bpt>QGIS via drag and drop<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)</ept>. Click on <ph id="2">`Project`</ph> → <ph id="3">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">From the folder you created in step 1</source>
+<target xml:lang="fr">From the folder you created in step 1</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">ML1</source>
+<target xml:lang="fr">ML1</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">From the <ph id="1">`Fixes_data`</ph> folder:</source>
+<target xml:lang="fr">From the <ph id="1">`Fixes_data`</ph> folder:</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">district_pop_som</source>
+<target xml:lang="fr">district_pop_som</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">WorldPop_som.tif</source>
+<target xml:lang="fr">WorldPop_som.tif</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> QGIS project with all necessary data ready to be analysed.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> QGIS project with all necessary data ready to be analysed.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Step 4: Intersection of ML 1 data with the district polygons <bpt id="1">&lt;a id="step-4-intersection-of-ml-1-data-with-the-district-polygons"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 4: Intersection of ML 1 data with the district polygons <bpt id="1">&lt;a id="step-4-intersection-of-ml-1-data-with-the-district-polygons"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The goal is to receive polygon layers which share both the borders and the attributes of both input layers.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The goal is to receive polygon layers which share both the borders and the attributes of both input layers.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt><ph id="3">`Intersection`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt><ph id="3">`Intersection`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geoprocessing_wiki.html#intersection)</ept></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 25</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 25</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Instruction</source>
+<target xml:lang="fr">Instruction</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Intersection window</source>
+<target xml:lang="fr">Screenshot of the Intersection window</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Vector`</ph> → <ph id="2">`Geoprocessing Tools`</ph> → <ph id="3">`Intersection`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Vector`</ph> → <ph id="2">`Geoprocessing Tools`</ph> → <ph id="3">`Intersection`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: ML 1</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: ML 1</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Overlay layer`</ph>: district_pop_sum</source>
+<target xml:lang="fr"><ph id="1">`Overlay layer`</ph>: district_pop_sum</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Intersection`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File`</ph> and navigate to your monitoring folder <bpt id="4">[</bpt>Year_Month<ept id="4">]</ept>. Give the output the name "ML1_Intersection" and click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Intersection`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File`</ph> and navigate to your monitoring folder <bpt id="4">[</bpt>Year_Month<ept id="4">]</ept>. Give the output the name "ML1_Intersection" and click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/SRCS_Trigger_step_4_Intersection.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/SRCS_Trigger_step_4_Intersection.png</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> After doing this for ML1, you should have one polygon layer containing all columns of ML1 and district_pop_sum.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> After doing this for ML1, you should have one polygon layer containing all columns of ML1 and district_pop_sum.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+The resulting layer can have more rows than the original layers.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+The resulting layer can have more rows than the original layers.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Intersection of ML 1 data with the district polygons
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Intersection of ML 1 data with the district polygons
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">Step 5: Calculation of Population per Intersection Polygon <bpt id="1">&lt;a id="step-5-calculation-of-population-per-intersection-polygon"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 5: Calculation of Population per Intersection Polygon <bpt id="1">&lt;a id="step-5-calculation-of-population-per-intersection-polygon"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Here we calculate the population in each polygon of the intersection layer from step 4.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Here we calculate the population in each polygon of the intersection layer from step 4.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept>  <bpt id="2">[</bpt><ph id="3">`Zonal Statistics`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept>  <bpt id="2">[</bpt><ph id="3">`Zonal Statistics`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)</ept></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 25</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 25</ph></target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Instruction</source>
+<target xml:lang="fr">Instruction</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Zonal Statistics window</source>
+<target xml:lang="fr">Screenshot of the Zonal Statistics window</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Toolbox`</ph> → Search for <bpt id="2">[</bpt><ph id="3">`Zonal Statistics`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)</ept>.</source>
+<target xml:lang="fr">In the <ph id="1">`Toolbox`</ph> → Search for <bpt id="2">[</bpt><ph id="3">`Zonal Statistics`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Tip: If the <ph id="1">`Toolbox`</ph> is not open, click <ph id="2">`Processing`</ph> → <ph id="3">`Toolbox`</ph>.</source>
+<target xml:lang="fr">Tip: If the <ph id="1">`Toolbox`</ph> is not open, click <ph id="2">`Processing`</ph> → <ph id="3">`Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: "ML1_Intersection"</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: "ML1_Intersection"</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Raster Layer`</ph>: "som_ppp_2020_UNadj_constrained.tif"</source>
+<target xml:lang="fr"><ph id="1">`Raster Layer`</ph>: "som_ppp_2020_UNadj_constrained.tif"</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Statistics to calculate`</ph>: Only <ph id="2">`Sum`</ph></source>
+<target xml:lang="fr"><ph id="1">`Statistics to calculate`</ph>: Only <ph id="2">`Sum`</ph></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Zonal Statistics`</ph>, click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File`</ph> and navigate to you monitoring folder <bpt id="4">[</bpt>Year_Month<ept id="4">]</ept>. Give the output the name "ML1_zonal_statistic" and click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Zonal Statistics`</ph>, click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File`</ph> and navigate to you monitoring folder <bpt id="4">[</bpt>Year_Month<ept id="4">]</ept>. Give the output the name "ML1_zonal_statistic" and click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png</ph></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> The result should be the "ML1_zonal_statistic" as a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection <bpt id="2">__</bpt>plus<ept id="2">__</ept> the column "_sum", which is the number of people living in the single parts of the polygons.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> The result should be the "ML1_zonal_statistic" as a polygon layer. This layer should have the same columns in the attribute table like ML1_Intersection <bpt id="2">__</bpt>plus<ept id="2">__</ept> the column "_sum", which is the number of people living in the single parts of the polygons.</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Calculation of Population per Intersection Polygon
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Calculation of Population per Intersection Polygon
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Step 6: Weighting of the Population based on IPC-Phase <bpt id="1">&lt;a id="step-6-weighting-of-the-population-based-on-ipc-phase"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 6: Weighting of the Population based on IPC-Phase <bpt id="1">&lt;a id="step-6-weighting-of-the-population-based-on-ipc-phase"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The purpose of this step is the weighting of the population in the five IPC phases as described in <bpt id="2">[</bpt>IPC Data<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The purpose of this step is the weighting of the population in the five IPC phases as described in <bpt id="2">[</bpt>IPC Data<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph> IPC-Population Weighted Index</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph> IPC-Population Weighted Index</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:</source>
+<target xml:lang="fr">To better utilize the IPC data, a straightforward population-weighted index was created. This index assigns weights to relative population numbers based on their respective IPC classes, emphasizing the number of people in each IPC class rather than just the class itself. Additionally, populations in higher IPC classes are given more importance than those in lower classes. The index is calculated as follows:</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`$ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$`</ph></source>
+<target xml:lang="fr"><ph id="1">`$ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ District\ Pop}$`</ph></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Where the weights are defined as:</source>
+<target xml:lang="fr">Where the weights are defined as:</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">IPC Phase</source>
+<target xml:lang="fr">IPC Phase</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Weight</source>
+<target xml:lang="fr">Weight</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">IPC 1</source>
+<target xml:lang="fr">IPC 1</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">0</source>
+<target xml:lang="fr">0</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">IPC 2</source>
+<target xml:lang="fr">IPC 2</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">0</source>
+<target xml:lang="fr">0</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">IPC 3</source>
+<target xml:lang="fr">IPC 3</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">1</source>
+<target xml:lang="fr">1</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">IPC 4</source>
+<target xml:lang="fr">IPC 4</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">3</source>
+<target xml:lang="fr">3</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">IPC 5</source>
+<target xml:lang="fr">IPC 5</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">6</source>
+<target xml:lang="fr">6</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
+<ph id="1">:::</ph>
+<bpt id="2">__</bpt>Tool:<ept id="2">__</ept>  <bpt id="3">[</bpt><ph id="4">`Field Calculator`</ph><ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept></source>
+<target xml:lang="fr">The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
+<ph id="1">:::</ph>
+<bpt id="2">__</bpt>Tool:<ept id="2">__</ept>  <bpt id="3">[</bpt><ph id="4">`Field Calculator`</ph><ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept></target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer “ML1_zonal_statistic”  → <ph id="1">`Open Attribute Table`</ph> → click on <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="4">![</bpt><ept id="4">](/fig/mActionCalculateField.png)</ept> to open the field calculator.</source>
+<target xml:lang="fr">Right-click on the layer “ML1_zonal_statistic”  → <ph id="1">`Open Attribute Table`</ph> → click on <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="4">![</bpt><ept id="4">](/fig/mActionCalculateField.png)</ept> to open the field calculator.</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Check <ph id="1">`Create new field`</ph>.</source>
+<target xml:lang="fr">Check <ph id="1">`Create new field`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Output field name`</ph>: Name the new column “pop_sum_weighted”</source>
+<target xml:lang="fr"><ph id="1">`Output field name`</ph>: Name the new column “pop_sum_weighted”</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Result field type`</ph>: Decimal number (real)</source>
+<target xml:lang="fr"><ph id="1">`Result field type`</ph>: Decimal number (real)</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Add the code block from Input into the <ph id="1">`Expression`</ph> field.</source>
+<target xml:lang="fr">Add the code block from Input into the <ph id="1">`Expression`</ph> field.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">When you are done, click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept> (<bpt id="3">[</bpt>Video: Editing the attribute table<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)</ept>).</source>
+<target xml:lang="fr">When you are done, click <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> to save your edits and switch off the editing mode by again clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept> (<bpt id="3">[</bpt>Video: Editing the attribute table<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Step 7: Calculation of Population Proportion per Intersection Polygon <bpt id="1">&lt;a id="step-7-calculation-of-population-proportion-per-intersection-polygon"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 7: Calculation of Population Proportion per Intersection Polygon <bpt id="1">&lt;a id="step-7-calculation-of-population-proportion-per-intersection-polygon"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, we calculating the <bpt id="2">[</bpt>IPC-Population Weighted Index<ept id="2">](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index)</ept> for every small part of the polygon layer.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> In this step, we calculating the <bpt id="2">[</bpt>IPC-Population Weighted Index<ept id="2">](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index)</ept> for every small part of the polygon layer.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept><bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept><bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept></target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Right-click on "ML1_zonal_statistic" layer → <ph id="1">`Attribute Table”`</ph> → click on <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept> <bpt id="4">![</bpt><ept id="4">](/fig/mActionCalculateField.png)</ept> to open the field calculator.</source>
+<target xml:lang="fr">Right-click on "ML1_zonal_statistic" layer → <ph id="1">`Attribute Table”`</ph> → click on <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)</ept> <bpt id="4">![</bpt><ept id="4">](/fig/mActionCalculateField.png)</ept> to open the field calculator.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Check <ph id="1">`Create new field`</ph>.</source>
+<target xml:lang="fr">Check <ph id="1">`Create new field`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Output field name`</ph>: Name the new column "Index_per_IPCPolygon_ML1"</source>
+<target xml:lang="fr"><ph id="1">`Output field name`</ph>: Name the new column "Index_per_IPCPolygon_ML1"</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Result field type`</ph>: Decimal number (real)</source>
+<target xml:lang="fr"><ph id="1">`Result field type`</ph>: Decimal number (real)</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">Add the following code into the <ph id="1">`Expression`</ph> field:</source>
+<target xml:lang="fr">Add the following code into the <ph id="1">`Expression`</ph> field:</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and turn off editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>.</source>
+<target xml:lang="fr">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and turn off editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/SRCS_Trigger_step_8_field_calculator.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/SRCS_Trigger_step_8_field_calculator.png</ph></target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500px</ph>
+<ph id="2">name: SRCS_Trigger_step_8_field_calculator</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500px</ph>
+<ph id="2">name: SRCS_Trigger_step_8_field_calculator</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> The layer "ML1_zonal_statistic" should now have the column "Index_per_IPCPolygon_ML1". The numbers in this column have to be smaller than in the "district" column.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> The layer "ML1_zonal_statistic" should now have the column "Index_per_IPCPolygon_ML1". The numbers in this column have to be smaller than in the "district" column.</target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Calculation of Population Proportion per Intersection Polygon
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Calculation of Population Proportion per Intersection Polygon
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">Step 8: Calculate IPC Index per District <bpt id="1">&lt;a id="step-8-calculate-ipc-index-per-district"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 8: Calculate IPC Index per District <bpt id="1">&lt;a id="step-8-calculate-ipc-index-per-district"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The purpose of this step is to calculate a population-weighted mean over the IPC classes per district. In this way, the amount of people living in a certain IPC class will be given more importance than just the area affected by a certain IPC class. The result is an IPC Index value for each district.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The purpose of this step is to calculate a population-weighted mean over the IPC classes per district. In this way, the amount of people living in a certain IPC class will be given more importance than just the area affected by a certain IPC class. The result is an IPC Index value for each district.</target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <ph id="2">`Join attribute by location (summary)`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <ph id="2">`Join attribute by location (summary)`</ph></target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 25</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 25</ph></target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en">Instruction</source>
+<target xml:lang="fr">Instruction</target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en">Join attribute by location (summary)</source>
+<target xml:lang="fr">Join attribute by location (summary)</target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Toolbox`</ph> → Search for <ph id="2">`Join attribute by location (summary)`</ph>.</source>
+<target xml:lang="fr">In the <ph id="1">`Toolbox`</ph> → Search for <ph id="2">`Join attribute by location (summary)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en">Tip: If the <ph id="1">`Toolbox`</ph> is not open, click <ph id="2">`Processing`</ph> → <ph id="3">`Toolbox`</ph>.</source>
+<target xml:lang="fr">Tip: If the <ph id="1">`Toolbox`</ph> is not open, click <ph id="2">`Processing`</ph> → <ph id="3">`Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: Select your "district_pop_som" layer.</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: Select your "district_pop_som" layer.</target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer 2`</ph>: Select "ML1_zonal_statistic".</source>
+<target xml:lang="fr"><ph id="1">`Input Layer 2`</ph>: Select "ML1_zonal_statistic".</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometric predicate`</ph>: Select "Intersection".</source>
+<target xml:lang="fr"><ph id="1">`Geometric predicate`</ph>: Select "Intersection".</target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Field to summarise`</ph>: Select "Index_per_IPCPolygon_ML1".</source>
+<target xml:lang="fr"><ph id="1">`Field to summarise`</ph>: Select "Index_per_IPCPolygon_ML1".</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Summaries to calculate`</ph>: Only check the option "mean".</source>
+<target xml:lang="fr"><ph id="1">`Summaries to calculate`</ph>: Only check the option "mean".</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Join Layer`</ph>, click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File`</ph> and navigate to you monitoring folder <bpt id="4">[</bpt>Year_Month<ept id="4">]</ept>. Give the output the name "ML1_IPC_Index" and click <ph id="5">`Save`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Join Layer`</ph>, click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> → <ph id="3">`Save to File`</ph> and navigate to you monitoring folder <bpt id="4">[</bpt>Year_Month<ept id="4">]</ept>. Give the output the name "ML1_IPC_Index" and click <ph id="5">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Exercise_trigger_join_attributes_location.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Exercise_trigger_join_attributes_location.png</ph></target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> As a result, your layer "ML1_IPC_Index" should have the column "Index_per_IPCPolygon_ML1_mean". Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> As a result, your layer "ML1_IPC_Index" should have the column "Index_per_IPCPolygon_ML1_mean". Furthermore, the number of rows should be the exact number of districts in Somalia and the polygons should have the exact shape of the districts.</target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Calculate IPC Index per District
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Calculate IPC Index per District
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en">Step 9: Evaluate Trigger Activation <bpt id="1">&lt;a id="step-9-evaluate-trigger-activation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 9: Evaluate Trigger Activation <bpt id="1">&lt;a id="step-9-evaluate-trigger-activation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.</target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept></target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">Right-click on "ML1_IPC_Index" layer → <ph id="1">`Attribute Table`</ph> → click on <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="4">![</bpt><ept id="4">](/fig/mActionCalculateField.png)</ept> to open the field calculator.</source>
+<target xml:lang="fr">Right-click on "ML1_IPC_Index" layer → <ph id="1">`Attribute Table`</ph> → click on <bpt id="2">[</bpt><ph id="3">`Field Calculator`</ph><ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="4">![</bpt><ept id="4">](/fig/mActionCalculateField.png)</ept> to open the field calculator.</target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en">Check <ph id="1">`Create new field`</ph>.</source>
+<target xml:lang="fr">Check <ph id="1">`Create new field`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Output field name`</ph>: Name the new column "Trigger_activation".</source>
+<target xml:lang="fr"><ph id="1">`Output field name`</ph>: Name the new column "Trigger_activation".</target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Result field type`</ph>: Text (string).</source>
+<target xml:lang="fr"><ph id="1">`Result field type`</ph>: Text (string).</target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en">Add the code below into the <ph id="1">`Expression`</ph> field.</source>
+<target xml:lang="fr">Add the code below into the <ph id="1">`Expression`</ph> field.</target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and end the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>.</source>
+<target xml:lang="fr">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and end the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu256" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 15</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 15</ph></target>
+</trans-unit>
+<trans-unit id="tu257" xml:space="preserve">
+<source xml:lang="en">Code</source>
+<target xml:lang="fr">Code</target>
+</trans-unit>
+<trans-unit id="tu258" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu259" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu260" xml:space="preserve">
+<source xml:lang="en">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and end the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>.</source>
+<target xml:lang="fr">Save the new column by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionSaveEdits.png)</ept> in the attribute table and end the editing mode by clicking on <bpt id="2">![</bpt><ept id="2">](/fig/mActionToggleEditing.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu261" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> A layer with all districts of Somalia with a column of "Yes" and "No" values indicating whether the trigger levels have been reached or not.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Result:<ept id="1">__</ept> A layer with all districts of Somalia with a column of "Yes" and "No" values indicating whether the trigger levels have been reached or not.</target>
+</trans-unit>
+<trans-unit id="tu262" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Exercise_trigger_evaluation.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Exercise_trigger_evaluation.png</ph></target>
+</trans-unit>
+<trans-unit id="tu263" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name:
+align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name:
+align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu264" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu265" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Evaluate Trigger Activation
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Evaluate Trigger Activation
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu266" xml:space="preserve">
+<source xml:lang="en">Step 10.: Visualising the Results <bpt id="1">&lt;a id="step-10-visualising-the-results"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 10.: Visualising the Results <bpt id="1">&lt;a id="step-10-visualising-the-results"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu267" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Definition of how features are represented visually on the map.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Definition of how features are represented visually on the map.</target>
+</trans-unit>
+<trans-unit id="tu268" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt>Symbology<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#symbology-for-vector-data)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt>Symbology<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_styling_vector_data.html#symbology-for-vector-data)</ept></target>
+</trans-unit>
+<trans-unit id="tu269" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Trigger Activation<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Trigger Activation<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu270" xml:space="preserve">
+<source xml:lang="en">Right-click on the "ML1_IPC_Index" layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>.</source>
+<target xml:lang="fr">Right-click on the "ML1_IPC_Index" layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu271" xml:space="preserve">
+<source xml:lang="en">In the down left corner click on <ph id="1">`Style`</ph> → <ph id="2">`Load Style`</ph>.</source>
+<target xml:lang="fr">In the down left corner click on <ph id="1">`Style`</ph> → <ph id="2">`Load Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu272" xml:space="preserve">
+<source xml:lang="en">In the new window click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <bpt id="2">__</bpt>"Style_Trigger_Activation_ex.qml"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">In the new window click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <bpt id="2">__</bpt>"Style_Trigger_Activation_ex.qml"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu273" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Open`</ph> → <ph id="2">`Load Style`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Open`</ph> → <ph id="2">`Load Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu274" xml:space="preserve">
+<source xml:lang="en">Back in the "Layer Properties"-window, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Back in the "Layer Properties"-window, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu275" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Info: Trigger Activation Layer
+<ph id="2">:open:</ph>
+You will now see districts where no trigger is activated in green and districts with trigger activation in pink.</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Info: Trigger Activation Layer
+<ph id="2">:open:</ph>
+You will now see districts where no trigger is activated in green and districts with trigger activation in pink.</target>
+</trans-unit>
+<trans-unit id="tu276" xml:space="preserve">
+<source xml:lang="en">The "Style_Trigger_Activation.qml" style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see <bpt id="1">__</bpt>Administrative 2 Boundaries<ept id="1">__</ept> below).
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">The "Style_Trigger_Activation.qml" style layer is configured to show the district names only where the trigger is actually activated. If there is no trigger activation you can activate the admin 1 boundary layer for better map orientation (see <bpt id="1">__</bpt>Administrative 2 Boundaries<ept id="1">__</ept> below).
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu277" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Map_yes_trigger.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Map_yes_trigger.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu278" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 1000px</ph>
+<ph id="2">name: Map_yes_trigger</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 1000px</ph>
+<ph id="2">name: Map_yes_trigger</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu279" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu280" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Administrative 2 Boundaries (Regions)<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Administrative 2 Boundaries (Regions)<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu281" xml:space="preserve">
+<source xml:lang="en">Right click on the "Som_admin1_regions_UNDP.gqkp" (Regions) layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>.</source>
+<target xml:lang="fr">Right click on the "Som_admin1_regions_UNDP.gqkp" (Regions) layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu282" xml:space="preserve">
+<source xml:lang="en">In the down left corner click on <ph id="1">`Style`</ph> → <ph id="2">`Load Style`</ph>.</source>
+<target xml:lang="fr">In the down left corner click on <ph id="1">`Style`</ph> → <ph id="2">`Load Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu283" xml:space="preserve">
+<source xml:lang="en">In the new window click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <bpt id="2">__</bpt>“SOM_regions_style_ex.qml”<ept id="2">__</ept>.</source>
+<target xml:lang="fr">In the new window click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept>. Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file <bpt id="2">__</bpt>“SOM_regions_style_ex.qml”<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu284" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Open`</ph> → <ph id="2">`Load Style`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Open`</ph> → <ph id="2">`Load Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu285" xml:space="preserve">
+<source xml:lang="en">Back in the “Layer Properties” Window click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Back in the “Layer Properties” Window click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu286" xml:space="preserve">
+<source xml:lang="en">Add a the OpenStreetMap basemap by clicking on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ layer...`</ph> → Select the OpenStreetMap. Click <ph id="4">`Add`</ph>. (<bpt id="5">[</bpt>Wiki basemap<ept id="5">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept>).</source>
+<target xml:lang="fr">Add a the OpenStreetMap basemap by clicking on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ layer...`</ph> → Select the OpenStreetMap. Click <ph id="4">`Add`</ph>. (<bpt id="5">[</bpt>Wiki basemap<ept id="5">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu287" xml:space="preserve">
+<source xml:lang="en">Place the OpenStreetMap basemap on the bottom.</source>
+<target xml:lang="fr">Place the OpenStreetMap basemap on the bottom.</target>
+</trans-unit>
+<trans-unit id="tu288" xml:space="preserve">
+<source xml:lang="en">Delet all layers <bpt id="1">__</bpt>exept<ept id="1">__</ept>:</source>
+<target xml:lang="fr">Delet all layers <bpt id="1">__</bpt>exept<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu289" xml:space="preserve">
+<source xml:lang="en">Trigger_activation</source>
+<target xml:lang="fr">Trigger_activation</target>
+</trans-unit>
+<trans-unit id="tu290" xml:space="preserve">
+<source xml:lang="en">Som_admin1_regions_UNDP</source>
+<target xml:lang="fr">Som_admin1_regions_UNDP</target>
+</trans-unit>
+<trans-unit id="tu291" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap</source>
+<target xml:lang="fr">OpenStreetMap</target>
+</trans-unit>
+<trans-unit id="tu292" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Visualisation of results
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Visualisation of results
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu293" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 20</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 20 20</ph></target>
+</trans-unit>
+<trans-unit id="tu294" xml:space="preserve">
+<source xml:lang="en">Intervention Map <bpt id="1">__</bpt>without<ept id="1">__</ept> Trigger activation</source>
+<target xml:lang="fr">Intervention Map <bpt id="1">__</bpt>without<ept id="1">__</ept> Trigger activation</target>
+</trans-unit>
+<trans-unit id="tu295" xml:space="preserve">
+<source xml:lang="en">Intervention Map <bpt id="1">__</bpt>with<ept id="1">__</ept> Trigger activation</source>
+<target xml:lang="fr">Intervention Map <bpt id="1">__</bpt>with<ept id="1">__</ept> Trigger activation</target>
+</trans-unit>
+<trans-unit id="tu296" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Map_no_trigger.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Map_no_trigger.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu297" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 1000px</ph>
+<ph id="2">    name:
+    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 1000px</ph>
+<ph id="2">    name:
+    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu298" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu299" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Map_yes_trigger.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Map_yes_trigger.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu300" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></source>
+<target xml:lang="fr"><ph id="1">    width: 450px</ph>
+<ph id="2">    name:
+    align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu301" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu302" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Remember the <bpt id="2">[</bpt>layer concept<ept id="2">](/content/Module_2/en_qgis_geodata_concept.md)</ept> and make sure the basemap layer is at the bottom of your layers panel.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Remember the <bpt id="2">[</bpt>layer concept<ept id="2">](/content/Module_2/en_qgis_geodata_concept.md)</ept> and make sure the basemap layer is at the bottom of your layers panel.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu303" xml:space="preserve">
+<source xml:lang="en">Step 11: Making print map <bpt id="1">&lt;a id="step-11-making-print-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 11: Making print map <bpt id="1">&lt;a id="step-11-making-print-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu304" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Visualisation of the map features in a printable map layout.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Visualisation of the map features in a printable map layout.</target>
+</trans-unit>
+<trans-unit id="tu305" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept>  <bpt id="2">[</bpt>Print Layout<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept>  <bpt id="2">[</bpt>Print Layout<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu306" xml:space="preserve">
+<source xml:lang="en">If you have not done this before, delete all layers expect <bpt id="1">__</bpt>Trigger_activation<ept id="1">__</ept>, <bpt id="2">__</bpt>Som_admin1_regions_UNDP<ept id="2">__</ept> and <bpt id="3">__</bpt>OpenStreetMap<ept id="3">__</ept>.</source>
+<target xml:lang="fr">If you have not done this before, delete all layers expect <bpt id="1">__</bpt>Trigger_activation<ept id="1">__</ept>, <bpt id="2">__</bpt>Som_admin1_regions_UNDP<ept id="2">__</ept> and <bpt id="3">__</bpt>OpenStreetMap<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu307" xml:space="preserve">
+<source xml:lang="en">Open a new print layout by clicking on <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> → enter the name of your current Project e.g "2024_01".</source>
+<target xml:lang="fr">Open a new print layout by clicking on <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> → enter the name of your current Project e.g "2024_01".</target>
+</trans-unit>
+<trans-unit id="tu308" xml:space="preserve">
+<source xml:lang="en">Go the the <ph id="1">`Module_5_Exercise2_Drought_Monitoring_Trigger`</ph> folder and drag and drop the file <ph id="2">`Trigger_activation_Intervention_map_ex.qpt`</ph> in the print layout.</source>
+<target xml:lang="fr">Go the the <ph id="1">`Module_5_Exercise2_Drought_Monitoring_Trigger`</ph> folder and drag and drop the file <ph id="2">`Trigger_activation_Intervention_map_ex.qpt`</ph> in the print layout.</target>
+</trans-unit>
+<trans-unit id="tu309" xml:space="preserve">
+<source xml:lang="en">Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the <ph id="1">`Item Properties`</ph> tab and scroll down. Here you can change the date in the <ph id="2">`Main Properties`</ph> field.</source>
+<target xml:lang="fr">Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the <ph id="1">`Item Properties`</ph> tab and scroll down. Here you can change the date in the <ph id="2">`Main Properties`</ph> field.</target>
+</trans-unit>
+<trans-unit id="tu310" xml:space="preserve">
+<source xml:lang="en">If necessary, adjust the legend by clicking on the legend in the <ph id="1">`Item Properties`</ph> tab and scroll down until you see the <ph id="2">`Legend items`</ph> field. If it is not there check if you have to open the dropdown. Make sure <ph id="3">`Auto update`</ph> is not checked.</source>
+<target xml:lang="fr">If necessary, adjust the legend by clicking on the legend in the <ph id="1">`Item Properties`</ph> tab and scroll down until you see the <ph id="2">`Legend items`</ph> field. If it is not there check if you have to open the dropdown. Make sure <ph id="3">`Auto update`</ph> is not checked.</target>
+</trans-unit>
+<trans-unit id="tu311" xml:space="preserve">
+<source xml:lang="en">Remove all items in the legend be clicking on the item and then on the red minus icon below.</source>
+<target xml:lang="fr">Remove all items in the legend be clicking on the item and then on the red minus icon below.</target>
+</trans-unit>
+<trans-unit id="tu312" xml:space="preserve">
+<source xml:lang="en">Add <bpt id="1">__</bpt>Trigger_activation<ept id="1">__</ept> to the legend by clicking on the green plus and click on the layer and click <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Add <bpt id="1">__</bpt>Trigger_activation<ept id="1">__</ept> to the legend by clicking on the green plus and click on the layer and click <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu313" xml:space="preserve">
+<source xml:lang="en">Add <bpt id="1">__</bpt>Som_admin1_regions_UNDP<ept id="1">__</ept> to the legend by clicking on the green plus and click on the layer and click <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Add <bpt id="1">__</bpt>Som_admin1_regions_UNDP<ept id="1">__</ept> to the legend by clicking on the green plus and click on the layer and click <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu314" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Making a print map
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Making a print map
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu315" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu316" xml:space="preserve">
+<source xml:lang="en">You can also adapt the template to your needs and preferences. See <bpt id="1">[</bpt>how to use templates in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept>.</source>
+<target xml:lang="fr">You can also adapt the template to your needs and preferences. See <bpt id="1">[</bpt>how to use templates in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu317" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu318" xml:space="preserve">
+<source xml:lang="en">Step 13.: Exporting Map <bpt id="1">&lt;a id="step-13-exporting-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 13.: Exporting Map <bpt id="1">&lt;a id="step-13-exporting-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu319" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Export the designed and finalised map layout in order to print it as a pdf or format of your choice.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Purpose:<ept id="1">__</ept> Export the designed and finalised map layout in order to print it as a pdf or format of your choice.</target>
+</trans-unit>
+<trans-unit id="tu320" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt>Print Layout<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Tool:<ept id="1">__</ept> <bpt id="2">[</bpt>Print Layout<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu321" xml:space="preserve">
+<source xml:lang="en">When you have finished the design of you map, you can export it as pdf or image file in different data types.</source>
+<target xml:lang="fr">When you have finished the design of you map, you can export it as pdf or image file in different data types.</target>
+</trans-unit>
+<trans-unit id="tu322" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Export as Image<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Export as Image<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu323" xml:space="preserve">
+<source xml:lang="en">In the print layout click on <ph id="1">`Layer`</ph> → <ph id="2">`Export as Image`</ph>.</source>
+<target xml:lang="fr">In the print layout click on <ph id="1">`Layer`</ph> → <ph id="2">`Export as Image`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu324" xml:space="preserve">
+<source xml:lang="en">Chose the <bpt id="1">__</bpt>Result<ept id="1">__</ept> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.</source>
+<target xml:lang="fr">Chose the <bpt id="1">__</bpt>Result<ept id="1">__</ept> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.</target>
+</trans-unit>
+<trans-unit id="tu325" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Save`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu326" xml:space="preserve">
+<source xml:lang="en">The window "Image Export Options" will appear. Click <ph id="1">`Save`</ph>.</source>
+<target xml:lang="fr">The window "Image Export Options" will appear. Click <ph id="1">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu327" xml:space="preserve">
+<source xml:lang="en">Now the image can be found in the result folder in the folder you created in Step 1.</source>
+<target xml:lang="fr">Now the image can be found in the result folder in the folder you created in Step 1.</target>
+</trans-unit>
+<trans-unit id="tu328" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Export as PDF<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Export as PDF<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu329" xml:space="preserve">
+<source xml:lang="en">In the print layout click on <ph id="1">`Layer`</ph> → <ph id="2">`Export as PDF`</ph>.</source>
+<target xml:lang="fr">In the print layout click on <ph id="1">`Layer`</ph> → <ph id="2">`Export as PDF`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu330" xml:space="preserve">
+<source xml:lang="en">Chose the <bpt id="1">__</bpt>Result<ept id="1">__</ept> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.</source>
+<target xml:lang="fr">Chose the <bpt id="1">__</bpt>Result<ept id="1">__</ept> folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.</target>
+</trans-unit>
+<trans-unit id="tu331" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Save`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu332" xml:space="preserve">
+<source xml:lang="en">The window "PDF Export Options" will appear.  For the best results, select the <ph id="1">`lossless`</ph> image compression.</source>
+<target xml:lang="fr">The window "PDF Export Options" will appear.  For the best results, select the <ph id="1">`lossless`</ph> image compression.</target>
+</trans-unit>
+<trans-unit id="tu333" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Save`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu334" xml:space="preserve">
+<source xml:lang="en">Now the image can be found in the result folder in the folder you created in Step 1.</source>
+<target xml:lang="fr">Now the image can be found in the result folder in the folder you created in Step 1.</target>
+</trans-unit>
+<trans-unit id="tu335" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/map_output_example_ex.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/map_output_example_ex.png</ph></target>
+</trans-unit>
+<trans-unit id="tu336" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 1000px</ph>
+<ph id="2">name:
+align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 1000px</ph>
+<ph id="2">name:
+align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu337" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_1/en_qgis_theory.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">What is GIS? <bpt id="1">&lt;a id="what-is-gis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is GIS? <bpt id="1">&lt;a id="what-is-gis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">At its core, GIS is a computer-based system to organise data with a spatial
+component (<bpt id="1">_</bpt>geodata<ept id="1">_</ept>). There are three core functions of GIS:</source>
+<target xml:lang="fr">At its core, GIS is a computer-based system to organise data with a spatial
+component (<bpt id="1">_</bpt>geodata<ept id="1">_</ept>). There are three core functions of GIS:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{div} sd-text-center sd-text-italic sd-text-primary</ph></source>
+<target xml:lang="fr"><ph id="1">:::{div} sd-text-center sd-text-italic sd-text-primary</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Connecting data to maps</source>
+<target xml:lang="fr">Connecting data to maps</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Visualisation, organisation and processing of spatial data</source>
+<target xml:lang="fr">Visualisation, organisation and processing of spatial data</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Analysing spatial</source>
+<target xml:lang="fr">Analysing spatial</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In humanitarian work, Geographic Information Systems (GIS) serve as powerful tools. They utilize maps to present complex information clearly and efficiently. For instance, during emergencies, GIS can visualize events on a map, depicting where they occur, the extent of impact, and identifying primary needs. It aids in consolidating data from various sources, enabling quick comprehension of situations and facilitating better decision-making.</source>
+<target xml:lang="fr">In humanitarian work, Geographic Information Systems (GIS) serve as powerful tools. They utilize maps to present complex information clearly and efficiently. For instance, during emergencies, GIS can visualize events on a map, depicting where they occur, the extent of impact, and identifying primary needs. It aids in consolidating data from various sources, enabling quick comprehension of situations and facilitating better decision-making.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>A more formal definition:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>A more formal definition:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">A Geographic Information System (GIS) is a digital tool that integrates data with maps. It enables the collection, management, analysis, and visualization of data by associating them with specific locations on the Earth's surface. By leveraging GIS, we gain deeper insights into data, revealing patterns and providing a better understanding of the geographic context. This leads to more insightful analysis, improved communication, and ultimately facilitates better evidence-based decision-making. GIS is deeply rooted in geography, the scientific field dedicated to studying Earth's lands, features, inhabitants, and phenomena. GIS software is capable of displaying various types of data simultaneously on a map, enhancing our ability to comprehend complex spatial relationships.</source>
+<target xml:lang="fr">A Geographic Information System (GIS) is a digital tool that integrates data with maps. It enables the collection, management, analysis, and visualization of data by associating them with specific locations on the Earth's surface. By leveraging GIS, we gain deeper insights into data, revealing patterns and providing a better understanding of the geographic context. This leads to more insightful analysis, improved communication, and ultimately facilitates better evidence-based decision-making. GIS is deeply rooted in geography, the scientific field dedicated to studying Earth's lands, features, inhabitants, and phenomena. GIS software is capable of displaying various types of data simultaneously on a map, enhancing our ability to comprehend complex spatial relationships.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">GIS components <bpt id="1">&lt;a id="gis-components"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">GIS components <bpt id="1">&lt;a id="gis-components"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">GIS is more than a software. It’s a system and it includes
+multiple elements:</source>
+<target xml:lang="fr">GIS is more than a software. It’s a system and it includes
+multiple elements:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Examples of GIS used by humanitarian organisations <bpt id="1">&lt;a id="examples-of-gis-used-by-humanitarian-organisations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Examples of GIS used by humanitarian organisations <bpt id="1">&lt;a id="examples-of-gis-used-by-humanitarian-organisations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">To get a better understanding of how GIS is used in the humanitarian sector, we have collected some examples from different organisations in the section below (click the different tabs to view the examples by organisation).</source>
+<target xml:lang="fr">To get a better understanding of how GIS is used in the humanitarian sector, we have collected some examples from different organisations in the section below (click the different tabs to view the examples by organisation).</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Lebanese Red Cross
+This video gives an overview of GIS use in the Lebanese Red Cross in their operations, including informing ambulance services and supporting blood donations.</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Lebanese Red Cross
+This video gives an overview of GIS use in the Lebanese Red Cross in their operations, including informing ambulance services and supporting blood donations.</target>
+</trans-unit>
+<group id="sd1_ssf7" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf7_tu2" resname="sd1_1" restype="x-title" xml:space="preserve">
+<source xml:lang="en">YouTube video player</source>
+<target xml:lang="fr">YouTube video player</target>
+</trans-unit>
+<trans-unit id="sd1_sf7_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/BNOgW9Koz7A?si=gpXNpFRmjfoPV1dX" 
+[#$sd1_sf7_tu2] frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt>
+<ept id="1">&lt;/iframe></ept>
+:</source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/BNOgW9Koz7A?si=gpXNpFRmjfoPV1dX" 
+[#$sd1_sf7_tu2] frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></bpt>
+<ept id="1">&lt;/iframe></ept>
+:</target>
+</trans-unit>
+</group>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>IFRC</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>IFRC</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The International Federation of Red Cross and Red Crescent Societies (IFRC) publishes a wide variety of maps to support active operations. You can find some of those on <bpt id="1">[</bpt>ReliefWeb<ept id="1">](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)</ept> or on the IFRC GO platform's <bpt id="2">[</bpt>Emergency pages<ept id="2">](https://go.ifrc.org/emergencies/all)</ept>.</source>
+<target xml:lang="fr">The International Federation of Red Cross and Red Crescent Societies (IFRC) publishes a wide variety of maps to support active operations. You can find some of those on <bpt id="1">[</bpt>ReliefWeb<ept id="1">](https://reliefweb.int/updates?advanced-search=%28S1242%29_%28F12%29)</ept> or on the IFRC GO platform's <bpt id="2">[</bpt>Emergency pages<ept id="2">](https://go.ifrc.org/emergencies/all)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%html</ph></source>
+<target xml:lang="fr"><ph id="1">%%html</ph></target>
+</trans-unit>
+<group id="sd1_ssf8" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf8_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe src="https://go.ifrc.org/" width="750" height="500"></bpt><ept id="1">&lt;/iframe></ept>
+:</source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe src="https://go.ifrc.org/" width="750" height="500"></bpt><ept id="1">&lt;/iframe></ept>
+:</target>
+</trans-unit>
+</group>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>ICRC</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>ICRC</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The International Committee of the Red Cross (ICRC) has a specialised GIS Support Unit that runs their <bpt id="1">[</bpt>GIS Resource Center<ept id="1">](https://gisupporticrc.github.io/GISResourceCenter/#portfolio)</ept> and ICRC GeoPortal. The ICRC resource centre portfolio gives an idea of the kinds of analysis the GIS unit produces, although much of it is not public.</source>
+<target xml:lang="fr">The International Committee of the Red Cross (ICRC) has a specialised GIS Support Unit that runs their <bpt id="1">[</bpt>GIS Resource Center<ept id="1">](https://gisupporticrc.github.io/GISResourceCenter/#portfolio)</ept> and ICRC GeoPortal. The ICRC resource centre portfolio gives an idea of the kinds of analysis the GIS unit produces, although much of it is not public.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>REACH Initiative</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>REACH Initiative</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">REACH Initiative is a humanitarian data collection and analysis NGO that has a strong GIS specialism. The <bpt id="1">[</bpt>REACH Resource Centre<ept id="1">](https://www.impact-initiatives.org/resource-centre/)</ept> is where the organisation publishes content, including <bpt id="2">[</bpt>standalone maps<ept id="2">](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&amp;category[]=data_methods&amp;type[]=281&amp;order=latest&amp;limit=10)</ept> and <bpt id="3">[</bpt>reports<ept id="3">](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&amp;category[]=data_methods&amp;order=latest&amp;limit=10)</ept> which also often include maps and spatial analysis.</source>
+<target xml:lang="fr">REACH Initiative is a humanitarian data collection and analysis NGO that has a strong GIS specialism. The <bpt id="1">[</bpt>REACH Resource Centre<ept id="1">](https://www.impact-initiatives.org/resource-centre/)</ept> is where the organisation publishes content, including <bpt id="2">[</bpt>standalone maps<ept id="2">](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&amp;category[]=data_methods&amp;type[]=281&amp;order=latest&amp;limit=10)</ept> and <bpt id="3">[</bpt>reports<ept id="3">](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&amp;category[]=data_methods&amp;order=latest&amp;limit=10)</ept> which also often include maps and spatial analysis.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Médecins Sans Frontières</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Médecins Sans Frontières</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Médecins Sans Frontières (MSF) has a <bpt id="1">[</bpt>GIS Unit<ept id="1">](https://geo.msf.org/home)</ept> that publishes geospatial products on the <bpt id="2">[</bpt>GeoMSF platform<ept id="2">](https://geo.msf.org/catalogue)</ept> to support MSF activities.</source>
+<target xml:lang="fr">Médecins Sans Frontières (MSF) has a <bpt id="1">[</bpt>GIS Unit<ept id="1">](https://geo.msf.org/home)</ept> that publishes geospatial products on the <bpt id="2">[</bpt>GeoMSF platform<ept id="2">](https://geo.msf.org/catalogue)</ept> to support MSF activities.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">MSF uses GIS in four main areas:</source>
+<target xml:lang="fr">MSF uses GIS in four main areas:</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Operations, emergency preparedness and response</source>
+<target xml:lang="fr">Operations, emergency preparedness and response</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Healthcare</source>
+<target xml:lang="fr">Healthcare</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Advocacy, communication and reporting</source>
+<target xml:lang="fr">Advocacy, communication and reporting</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Environmental health</source>
+<target xml:lang="fr">Environmental health</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">This short video outlines the role of GIS in MSF's response to the 2015 Ebola outbreak in Sierra Leone.</source>
+<target xml:lang="fr">This short video outlines the role of GIS in MSF's response to the 2015 Ebola outbreak in Sierra Leone.</target>
+</trans-unit>
+<group id="sd1_ssf9" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf9_tu2" resname="sd1_1" restype="x-title" xml:space="preserve">
+<source xml:lang="en">YouTube video player</source>
+<target xml:lang="fr">YouTube video player</target>
+</trans-unit>
+<trans-unit id="sd1_sf9_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XxW_e9o0lA8?si=xS36hYai0rgmQW6J" 
+[#$sd1_sf9_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XxW_e9o0lA8?si=xS36hYai0rgmQW6J" 
+[#$sd1_sf9_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>World Food Programme (WFP)</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>World Food Programme (WFP)</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">The World Food Programme (WFP) produces maps and publishes geodata both on their own data platform - <bpt id="1">[</bpt>WFP Geonode<ept id="1">](https://geonode.wfp.org/)</ept> and on the <bpt id="2">[</bpt>Humanitarian Data Exchange (HDX)<ept id="2">](https://data.humdata.org/organization/wfp?)</ept>. You can find maps published by WFP on <bpt id="3">[</bpt>RelifeWeb<ept id="3">](https://reliefweb.int/updates?advanced-search=%28S1741%29_%28F12%29)</ept>.  WFP's <bpt id="4">[</bpt>Geospatial Activities Catalogue<ept id="4">](https://www.wfp.org/publications/wfp-geospatial-activities-catalogue)</ept>outline's to organisation's geospatial services, which includes developing dashboards like this one one <bpt id="5">[</bpt>cash assistance during the COVID-19 pandemic in Jordan<ept id="5">](https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0)</ept>.</source>
+<target xml:lang="fr">The World Food Programme (WFP) produces maps and publishes geodata both on their own data platform - <bpt id="1">[</bpt>WFP Geonode<ept id="1">](https://geonode.wfp.org/)</ept> and on the <bpt id="2">[</bpt>Humanitarian Data Exchange (HDX)<ept id="2">](https://data.humdata.org/organization/wfp?)</ept>. You can find maps published by WFP on <bpt id="3">[</bpt>RelifeWeb<ept id="3">](https://reliefweb.int/updates?advanced-search=%28S1741%29_%28F12%29)</ept>.  WFP's <bpt id="4">[</bpt>Geospatial Activities Catalogue<ept id="4">](https://www.wfp.org/publications/wfp-geospatial-activities-catalogue)</ept>outline's to organisation's geospatial services, which includes developing dashboards like this one one <bpt id="5">[</bpt>cash assistance during the COVID-19 pandemic in Jordan<ept id="5">](https://www.arcgis.com/apps/webappviewer/index.html?id=93b4605fff13415bb8d2decd0e9158e0)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">WFP also builds dashboards for advocacy, like HungerMap Live:</source>
+<target xml:lang="fr">WFP also builds dashboards for advocacy, like HungerMap Live:</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%html</ph></source>
+<target xml:lang="fr"><ph id="1">%%html</ph></target>
+</trans-unit>
+<group id="sd1_ssf10" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf10_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe src="https://hungermap.wfp.org/" width="750" height="500"></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe src="https://hungermap.wfp.org/" width="750" height="500"></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>iMMAP</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>iMMAP</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">iMAAP is an information management NGO that provides support to the UN and international NGOs. Their <bpt id="1">[</bpt>product portfolio<ept id="1">](https://immap.org/products/)</ept> includes examples of maps used in situation overviews, interactive dashboards and sector-specific analysis.</source>
+<target xml:lang="fr">iMAAP is an information management NGO that provides support to the UN and international NGOs. Their <bpt id="1">[</bpt>product portfolio<ept id="1">](https://immap.org/products/)</ept> includes examples of maps used in situation overviews, interactive dashboards and sector-specific analysis.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>MapAction</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>MapAction</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">MapAction produces maps and geospatial data support decision-making in emergency response. Their <bpt id="1">[</bpt>maps and data<ept id="1">](https://maps.mapaction.org/)</ept> page shows recent products they have published, and their <bpt id="2">[</bpt>product catalogue<ept id="2">](https://guides.mapaction.org/)</ept> gives an overview of the types of services they provide.</source>
+<target xml:lang="fr">MapAction produces maps and geospatial data support decision-making in emergency response. Their <bpt id="1">[</bpt>maps and data<ept id="1">](https://maps.mapaction.org/)</ept> page shows recent products they have published, and their <bpt id="2">[</bpt>product catalogue<ept id="2">](https://guides.mapaction.org/)</ept> gives an overview of the types of services they provide.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">GIS vs cartography <bpt id="1">&lt;a id="gis-vs-cartography"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">GIS vs cartography <bpt id="1">&lt;a id="gis-vs-cartography"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Cartography<ept id="1">__</ept> is the art and science of creating maps, encompassing the study and practice of mapmaking techniques. A Geographic Information System (GIS) represents a <bpt id="2">__</bpt>modern evolution<ept id="2">__</ept> of traditional cartography, integrating advanced technologies and methods for spatial data analysis and visualization.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Cartography<ept id="1">__</ept> is the art and science of creating maps, encompassing the study and practice of mapmaking techniques. A Geographic Information System (GIS) represents a <bpt id="2">__</bpt>modern evolution<ept id="2">__</ept> of traditional cartography, integrating advanced technologies and methods for spatial data analysis and visualization.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">While both cartography and GIS involve the creation of maps, they differ significantly in their capabilities and approaches. Cartographic maps typically present a simplified representation of geographic features, constrained by the limitations of physical space and the medium of the map itself. In contrast, GIS allows for the integration of vast amounts of spatial data, enabling complex analysis, modeling, and visualization beyond the scope of traditional cartography.</source>
+<target xml:lang="fr">While both cartography and GIS involve the creation of maps, they differ significantly in their capabilities and approaches. Cartographic maps typically present a simplified representation of geographic features, constrained by the limitations of physical space and the medium of the map itself. In contrast, GIS allows for the integration of vast amounts of spatial data, enabling complex analysis, modeling, and visualization beyond the scope of traditional cartography.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">One key distinction is that GIS facilitates the incorporation of diverse datasets, with virtually unlimited capacity for <bpt id="1">__</bpt>additional layers and information<ept id="1">__</ept>. This flexibility empowers users to conduct <bpt id="2">__</bpt>spatial analysis, perform statistical assessments<ept id="2">__</ept>, and derive insights to support decision-making processes.</source>
+<target xml:lang="fr">One key distinction is that GIS facilitates the incorporation of diverse datasets, with virtually unlimited capacity for <bpt id="1">__</bpt>additional layers and information<ept id="1">__</ept>. This flexibility empowers users to conduct <bpt id="2">__</bpt>spatial analysis, perform statistical assessments<ept id="2">__</ept>, and derive insights to support decision-making processes.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">In essence, while cartography focuses primarily on map design and visualization, GIS extends beyond to encompass spatial data management, analysis, and interpretation. Therefore, GIS serves as a powerful tool for cartographers and professionals across various fields to create, analyze, and derive insights from geographic information</source>
+<target xml:lang="fr">In essence, while cartography focuses primarily on map design and visualization, GIS extends beyond to encompass spatial data management, analysis, and interpretation. Therefore, GIS serves as a powerful tool for cartographers and professionals across various fields to create, analyze, and derive insights from geographic information</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">What is spatial analysis? <bpt id="1">&lt;a id="what-is-spatial-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is spatial analysis? <bpt id="1">&lt;a id="what-is-spatial-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Many map products rely on spatial analysis. And indeed, the ability to use analysis tools allows us to get the most out of the data we have and to solve a wide variety of problems. The points below give you an simple definition of the concept.</source>
+<target xml:lang="fr">Many map products rely on spatial analysis. And indeed, the ability to use analysis tools allows us to get the most out of the data we have and to solve a wide variety of problems. The points below give you an simple definition of the concept.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">However, the example of John Snow's cholera map of 1854 is a popular example of how spatial analysis can help to solve problems.</source>
+<target xml:lang="fr">However, the example of John Snow's cholera map of 1854 is a popular example of how spatial analysis can help to solve problems.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Spatial analysis <bpt id="1">__</bpt>studies entities and events<ept id="1">__</ept> using their topological, geometric, or geographic properties.</source>
+<target xml:lang="fr">Spatial analysis <bpt id="1">__</bpt>studies entities and events<ept id="1">__</ept> using their topological, geometric, or geographic properties.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">It includes a <bpt id="1">__</bpt>variety of techniques<ept id="1">__</ept> to analyse geographic data.</source>
+<target xml:lang="fr">It includes a <bpt id="1">__</bpt>variety of techniques<ept id="1">__</ept> to analyse geographic data.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Data can be <bpt id="1">__</bpt>added to a map as layers and they can interact with each other<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Data can be <bpt id="1">__</bpt>added to a map as layers and they can interact with each other<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">GIS enables you to work with these <bpt id="1">__</bpt>layers<ept id="1">__</ept> to explore critically important questions and <bpt id="2">__</bpt>find answers<ept id="2">__</ept> to those questions.</source>
+<target xml:lang="fr">GIS enables you to work with these <bpt id="1">__</bpt>layers<ept id="1">__</ept> to explore critically important questions and <bpt id="2">__</bpt>find answers<ept id="2">__</ept> to those questions.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">An example from the past: John Snow's cholera map <bpt id="1">&lt;a id="an-example-from-the-past-john-snows-cholera-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">An example from the past: John Snow's cholera map <bpt id="1">&lt;a id="an-example-from-the-past-john-snows-cholera-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">In 1854, an <bpt id="1">__</bpt>outbreak of cholera<ept id="1">__</ept> occurred in the Soho area of London, England. The most common theory was that the disease was spread through the air. Dr. John Snow believed that the danger was <bpt id="2">__</bpt>in the water<ept id="2">__</ept>. He made a map to analyse the <bpt id="3">__</bpt>number of deaths<ept id="3">__</ept> in every housing block in Soho. He added the <bpt id="4">__</bpt>location of water pumps<ept id="4">__</ept> on the map. He found a <bpt id="5">__</bpt>correlation<ept id="5">__</ept> between one specific water pump and the number of infections.</source>
+<target xml:lang="fr">In 1854, an <bpt id="1">__</bpt>outbreak of cholera<ept id="1">__</ept> occurred in the Soho area of London, England. The most common theory was that the disease was spread through the air. Dr. John Snow believed that the danger was <bpt id="2">__</bpt>in the water<ept id="2">__</ept>. He made a map to analyse the <bpt id="3">__</bpt>number of deaths<ept id="3">__</ept> in every housing block in Soho. He added the <bpt id="4">__</bpt>location of water pumps<ept id="4">__</ept> on the map. He found a <bpt id="5">__</bpt>correlation<ept id="5">__</ept> between one specific water pump and the number of infections.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Dr. Snow's map of the cholera outbreak of 1854<ept id="1">__</ept> (<ph id="2">{numref}</ph><ph id="3">`John_snow_zoom_map2`</ph>), and the reports that it accompanied, <bpt id="4">__</bpt>won over the predominant "miasma theory"<ept id="4">__</ept> that the disease <bpt id="5">__</bpt>was spread through the air<ept id="5">__</ept>. Residents were now warned to <bpt id="6">__</bpt>boil their water<ept id="6">__</ept>, and so ended the last cholera outbreak London has seen.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Dr. Snow's map of the cholera outbreak of 1854<ept id="1">__</ept> (<ph id="2">{numref}</ph><ph id="3">`John_snow_zoom_map2`</ph>), and the reports that it accompanied, <bpt id="4">__</bpt>won over the predominant "miasma theory"<ept id="4">__</ept> that the disease <bpt id="5">__</bpt>was spread through the air<ept id="5">__</ept>. Residents were now warned to <bpt id="6">__</bpt>boil their water<ept id="6">__</ept>, and so ended the last cholera outbreak London has seen.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">This interactive version of the cholera map shows it overlaid on a basemap of modern London.</source>
+<target xml:lang="fr">This interactive version of the cholera map shows it overlaid on a basemap of modern London.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Using GIS<ept id="1">__</ept>, several measures of spatial central tendency have been applied to the dataset, revealing that the Spatial Mean (the geographic center of the distribution of deaths) of the outbreak lies <bpt id="2">__</bpt>within 35 meters of the Broad Street Pump<ept id="2">__</ept>, identified as the <bpt id="3">__</bpt>source of contamination<ept id="3">__</ept> in the 1854 outbreak.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Using GIS<ept id="1">__</ept>, several measures of spatial central tendency have been applied to the dataset, revealing that the Spatial Mean (the geographic center of the distribution of deaths) of the outbreak lies <bpt id="2">__</bpt>within 35 meters of the Broad Street Pump<ept id="2">__</ept>, identified as the <bpt id="3">__</bpt>source of contamination<ept id="3">__</ept> in the 1854 outbreak.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%html</ph></source>
+<target xml:lang="fr"><ph id="1">%%html</ph></target>
+</trans-unit>
+<group id="sd1_ssf17" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf17_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=d7deb67f810d46dfacb80ff80ac224e9" width="750" height="500"></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Common map types in humanitarian response <bpt id="1">&lt;a id="common-map-types-in-humanitarian-response"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Common map types in humanitarian response <bpt id="1">&lt;a id="common-map-types-in-humanitarian-response"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">The humanitarian sector tends to use certain types of maps regularly. These areoutlined below.</source>
+<target xml:lang="fr">The humanitarian sector tends to use certain types of maps regularly. These areoutlined below.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">General reference maps <bpt id="1">&lt;a id="general-reference-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">General reference maps <bpt id="1">&lt;a id="general-reference-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Show important <bpt id="1">__</bpt>physical features<ept id="1">__</ept> of an area</source>
+<target xml:lang="fr">Show important <bpt id="1">__</bpt>physical features<ept id="1">__</ept> of an area</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Include <bpt id="1">__</bpt>natural and man-made features<ept id="1">__</ept></source>
+<target xml:lang="fr">Include <bpt id="1">__</bpt>natural and man-made features<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Usually meant to help for <bpt id="1">__</bpt>navigation<ept id="1">__</ept> or discovery of locations</source>
+<target xml:lang="fr">Usually meant to help for <bpt id="1">__</bpt>navigation<ept id="1">__</ept> or discovery of locations</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Usually fairly <bpt id="1">__</bpt>simple<ept id="1">__</ept></source>
+<target xml:lang="fr">Usually fairly <bpt id="1">__</bpt>simple<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Can be <bpt id="1">__</bpt>styled<ept id="1">__</ept> based on the intended audience</source>
+<target xml:lang="fr">Can be <bpt id="1">__</bpt>styled<ept id="1">__</ept> based on the intended audience</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Infrastructure maps <bpt id="1">&lt;a id="infrastructure-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Infrastructure maps <bpt id="1">&lt;a id="infrastructure-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Infrastructure maps in the humanitarian context provide visual representations of critical infrastructure such as roads, bridges, hospitals, and utilities in a given area. These maps help humanitarian organizations assess the accessibility of affected areas, plan relief efforts, and coordinate resources effectively during emergencies or disasters.</source>
+<target xml:lang="fr">Infrastructure maps in the humanitarian context provide visual representations of critical infrastructure such as roads, bridges, hospitals, and utilities in a given area. These maps help humanitarian organizations assess the accessibility of affected areas, plan relief efforts, and coordinate resources effectively during emergencies or disasters.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Display relevant features and <bpt id="1">__</bpt>structures<ept id="1">__</ept> in a specific area</source>
+<target xml:lang="fr">Display relevant features and <bpt id="1">__</bpt>structures<ept id="1">__</ept> in a specific area</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Help <bpt id="1">__</bpt>planning<ept id="1">__</ept> and navigation</source>
+<target xml:lang="fr">Help <bpt id="1">__</bpt>planning<ept id="1">__</ept> and navigation</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">High level of <bpt id="1">__</bpt>detail<ept id="1">__</ept></source>
+<target xml:lang="fr">High level of <bpt id="1">__</bpt>detail<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Produced after field <bpt id="1">__</bpt>data collection<ept id="1">__</ept></source>
+<target xml:lang="fr">Produced after field <bpt id="1">__</bpt>data collection<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Thematic maps <bpt id="1">&lt;a id="thematic-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Thematic maps <bpt id="1">&lt;a id="thematic-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Thematic maps display specific themes or topics such as population density, disease outbreaks, or vulnerability levels within a geographic area. These maps help humanitarian organizations analyze and understand specific issues or trends, guiding decision-making and resource allocation for targeted interventions and relief efforts.</source>
+<target xml:lang="fr">Thematic maps display specific themes or topics such as population density, disease outbreaks, or vulnerability levels within a geographic area. These maps help humanitarian organizations analyze and understand specific issues or trends, guiding decision-making and resource allocation for targeted interventions and relief efforts.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Focus on a <bpt id="1">__</bpt>specific theme<ept id="1">__</ept> or subject</source>
+<target xml:lang="fr">Focus on a <bpt id="1">__</bpt>specific theme<ept id="1">__</ept> or subject</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Features on the map <bpt id="1">__</bpt>represent the subject<ept id="1">__</ept> being mapped</source>
+<target xml:lang="fr">Features on the map <bpt id="1">__</bpt>represent the subject<ept id="1">__</ept> being mapped</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Use <bpt id="1">__</bpt>colours and shapes<ept id="1">__</ept> to display quantitative and qualitative data</source>
+<target xml:lang="fr">Use <bpt id="1">__</bpt>colours and shapes<ept id="1">__</ept> to display quantitative and qualitative data</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Rise <bpt id="1">__</bpt>awareness<ept id="1">__</ept> about a specific subject</source>
+<target xml:lang="fr">Rise <bpt id="1">__</bpt>awareness<ept id="1">__</ept> about a specific subject</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Analysis maps <bpt id="1">&lt;a id="analysis-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Analysis maps <bpt id="1">&lt;a id="analysis-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Analysis maps are used to examine and interpret data, revealing patterns, trends, and relationships within a geographic area. They facilitate in-depth understanding of complex situations, enabling decision-makers to derive insights and make informed decisions for effective humanitarian responses.</source>
+<target xml:lang="fr">Analysis maps are used to examine and interpret data, revealing patterns, trends, and relationships within a geographic area. They facilitate in-depth understanding of complex situations, enabling decision-makers to derive insights and make informed decisions for effective humanitarian responses.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Analyse data<ept id="1">__</ept> in respect to their geographic location</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Analyse data<ept id="1">__</ept> in respect to their geographic location</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Create <bpt id="1">__</bpt>new layers of information<ept id="1">__</ept> from the interaction between multiple features</source>
+<target xml:lang="fr">Create <bpt id="1">__</bpt>new layers of information<ept id="1">__</ept> from the interaction between multiple features</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Use colours and shapes <bpt id="1">__</bpt>to help users<ept id="1">__</ept> understand specific events</source>
+<target xml:lang="fr">Use colours and shapes <bpt id="1">__</bpt>to help users<ept id="1">__</ept> understand specific events</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Support<ept id="1">__</ept> decision makers</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Support<ept id="1">__</ept> decision makers</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Generally display a greater <bpt id="1">__</bpt>level of detail<ept id="1">__</ept></source>
+<target xml:lang="fr">Generally display a greater <bpt id="1">__</bpt>level of detail<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Situation/descriptive maps <bpt id="1">&lt;a id="situationdescriptive-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Situation/descriptive maps <bpt id="1">&lt;a id="situationdescriptive-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Situation or descriptive maps provide a snapshot of specific conditions or events in a particular geographic area. They visualize key information such as locations of resources, population distribution, infrastructure, and environmental factors. These maps offer a clear overview of the current situation, aiding in understanding and communication among stakeholders involved in humanitarian operations.</source>
+<target xml:lang="fr">Situation or descriptive maps provide a snapshot of specific conditions or events in a particular geographic area. They visualize key information such as locations of resources, population distribution, infrastructure, and environmental factors. These maps offer a clear overview of the current situation, aiding in understanding and communication among stakeholders involved in humanitarian operations.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Used to <bpt id="1">__</bpt>better visualize<ept id="1">__</ept> a specific ongoing and/or past situation</source>
+<target xml:lang="fr">Used to <bpt id="1">__</bpt>better visualize<ept id="1">__</ept> a specific ongoing and/or past situation</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Maps can include <bpt id="1">__</bpt>narrative<ept id="1">__</ept> and graphic elements</source>
+<target xml:lang="fr">Maps can include <bpt id="1">__</bpt>narrative<ept id="1">__</ept> and graphic elements</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Can be used in reports and/or to <bpt id="1">__</bpt>raise awareness<ept id="1">__</ept> on a specific event</source>
+<target xml:lang="fr">Can be used in reports and/or to <bpt id="1">__</bpt>raise awareness<ept id="1">__</ept> on a specific event</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Take a moment to reflect on what you've learned in this module. The questions below are designed to help you check your understanding of key concepts and identify areas you may want to review further. You don't need to submit your answers — this is for your own learning.</source>
+<target xml:lang="fr">Take a moment to reflect on what you've learned in this module. The questions below are designed to help you check your understanding of key concepts and identify areas you may want to review further. You don't need to submit your answers — this is for your own learning.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are the three core functions of GIS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are the three core functions of GIS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+GIS (Geographic Information System) is a system for capturing, manipulating, analysing, and visualising spatial data. The three core functions are:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+GIS (Geographic Information System) is a system for capturing, manipulating, analysing, and visualising spatial data. The three core functions are:</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data Capture<ept id="1">__</ept>: creating (or digitising) spatial data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data Capture<ept id="1">__</ept>: creating (or digitising) spatial data.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Analysis<ept id="1">__</ept>: performing analyses or processing spatial data to gain insights or knowledge.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Analysis<ept id="1">__</ept>: performing analyses or processing spatial data to gain insights or knowledge.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Visualisation<ept id="1">__</ept>: Visualising spatial data on maps, charts, or reports to communicate information
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Visualisation<ept id="1">__</ept>: Visualising spatial data on maps, charts, or reports to communicate information
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is spatial analysis and how did John Snow use spatial analysis in his cholera outbreak map from 1854?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is spatial analysis and how did John Snow use spatial analysis in his cholera outbreak map from 1854?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+Spatial analysis is the process of examining geographic (spatial) data to detect patterns, relationships, trends, and spatial structures. It involves operations like overlay, buffering, proximity, clustering, interpolation, and assessing how phenomena vary across space.</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+Spatial analysis is the process of examining geographic (spatial) data to detect patterns, relationships, trends, and spatial structures. It involves operations like overlay, buffering, proximity, clustering, interpolation, and assessing how phenomena vary across space.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">In 1854, Dr. John Snow mapped the locations of cholera deaths in London (Soho district) alongside the locations of water pumps. He noticed that the cholera cases clustered around one particular pump (on Broad Street). Because there was a spatial clustering around that pump, he hypothesized that the water from that pump was the source of the outbreak. He then convinced authorities to remove the pump handle, after which the outbreak declined. In effect, he used spatial distribution and clustering of disease incidents to infer a causal relationship. (This is a classic early example of applying spatial analysis in epidemiology.)His map showed that the deaths were not randomly distributed but spatially concentrated around a water source, which is the essence of spatial reasoning.</source>
+<target xml:lang="fr">In 1854, Dr. John Snow mapped the locations of cholera deaths in London (Soho district) alongside the locations of water pumps. He noticed that the cholera cases clustered around one particular pump (on Broad Street). Because there was a spatial clustering around that pump, he hypothesized that the water from that pump was the source of the outbreak. He then convinced authorities to remove the pump handle, after which the outbreak declined. In effect, he used spatial distribution and clustering of disease incidents to infer a causal relationship. (This is a classic early example of applying spatial analysis in epidemiology.)His map showed that the deaths were not randomly distributed but spatially concentrated around a water source, which is the essence of spatial reasoning.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name the five common map types used in humanitarian work.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name the five common map types used in humanitarian work.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">General Reference Maps: Show general geographic features like roads, rivers, and administrative boundaries; used for navigation and orientation.</source>
+<target xml:lang="fr">General Reference Maps: Show general geographic features like roads, rivers, and administrative boundaries; used for navigation and orientation.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Infrastructure Maps: Thematic maps focused on physical infrastructure (e.g., hospitals, water points, roads); used for planning and logistics.</source>
+<target xml:lang="fr">Infrastructure Maps: Thematic maps focused on physical infrastructure (e.g., hospitals, water points, roads); used for planning and logistics.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Thematic Maps: Represent a specific theme or dataset (e.g., population, rainfall, conflict); uses color, shapes, or symbols to visualize non-spatial attributes.</source>
+<target xml:lang="fr">Thematic Maps: Represent a specific theme or dataset (e.g., population, rainfall, conflict); uses color, shapes, or symbols to visualize non-spatial attributes.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Analysis Maps: Result from spatial analysis to guide decision-making (e.g., hazard risk zones, suitability models).</source>
+<target xml:lang="fr">Analysis Maps: Result from spatial analysis to guide decision-making (e.g., hazard risk zones, suitability models).</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Situation Maps: Provide an overview of a humanitarian or emergency situation; show affected areas, operational activities, or needs assessments.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Situation Maps: Provide an overview of a humanitarian or emergency situation; show affected areas, operational activities, or needs assessments.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

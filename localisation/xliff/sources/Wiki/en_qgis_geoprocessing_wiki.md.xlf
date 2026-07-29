@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_geoprocessing_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Spatial Processing <bpt id="1">&lt;a id="spatial-processing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial Processing <bpt id="1">&lt;a id="spatial-processing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Buffer <bpt id="1">&lt;a id="buffer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Buffer <bpt id="1">&lt;a id="buffer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Calculate a <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmBuffer.png)</ept> <ph id="2">`buffer`</ph> with a defined distance.</source>
+<target xml:lang="fr">Calculate a <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmBuffer.png)</ept> <ph id="2">`buffer`</ph> with a defined distance.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Dissolve: if 2 or more buffer areas overlap, they can be combined.</source>
+<target xml:lang="fr">Dissolve: if 2 or more buffer areas overlap, they can be combined.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+The unit of distance depends on the projection of the layer. For buffering you usually need a <bpt id="2">__</bpt>metric coordinate system<ept id="2">__</ept> such as UTM (Universal Transverse Mercator).
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+The unit of distance depends on the projection of the layer. For buffering you usually need a <bpt id="2">__</bpt>metric coordinate system<ept id="2">__</ept> such as UTM (Universal Transverse Mercator).
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Which regions fall within a 100-kilometer radius of major cities?
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Which regions fall within a 100-kilometer radius of major cities?
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+If you're dealing with really large "megabuffers" or if you can only choose buffer distances in degrees instead of meters, it might mean there's <bpt id="2">__</bpt>no metric coordinate system<ept id="2">__</ept>, or it was <bpt id="3">__</bpt>incorrectly reprojected<ept id="3">__</ept>. The unit of the buffer <bpt id="4">__</bpt>depends<ept id="4">__</ept> on the <bpt id="5">__</bpt>coordinate reference systems of the layer<ept id="5">__</ept>.
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+If you're dealing with really large "megabuffers" or if you can only choose buffer distances in degrees instead of meters, it might mean there's <bpt id="2">__</bpt>no metric coordinate system<ept id="2">__</ept>, or it was <bpt id="3">__</bpt>incorrectly reprojected<ept id="3">__</ept>. The unit of the buffer <bpt id="4">__</bpt>depends<ept id="4">__</ept> on the <bpt id="5">__</bpt>coordinate reference systems of the layer<ept id="5">__</ept>.
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Clip <bpt id="1">&lt;a id="clip"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Clip <bpt id="1">&lt;a id="clip"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">With the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmClip.png)</ept> <ph id="2">`Clip`</ph> tool you can extract and retain the spatial extent of one vector layer based on the boundaries of another layer.</source>
+<target xml:lang="fr">With the <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmClip.png)</ept> <ph id="2">`Clip`</ph> tool you can extract and retain the spatial extent of one vector layer based on the boundaries of another layer.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: refers to the specific <bpt id="2">__</bpt>layer to be clipped<ept id="2">__</ept>, for instance, a road network.</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: refers to the specific <bpt id="2">__</bpt>layer to be clipped<ept id="2">__</ept>, for instance, a road network.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Overlay Layer`</ph>: e.g. a polygon layer of the region (e.g. borders of Heidelberg).</source>
+<target xml:lang="fr"><ph id="1">`Overlay Layer`</ph>: e.g. a polygon layer of the region (e.g. borders of Heidelberg).</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Extract the rail network of Germany
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Extract the rail network of Germany
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Dissolve <bpt id="1">&lt;a id="dissolve"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Dissolve <bpt id="1">&lt;a id="dissolve"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmDissolve.png)</ept> <ph id="2">`dissolve`</ph> tool aggregates geometries with the same attribute values.</source>
+<target xml:lang="fr">The <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmDissolve.png)</ept> <ph id="2">`dissolve`</ph> tool aggregates geometries with the same attribute values.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">When 2 or more buffer areas overlap, they can be combined using dissolve.</source>
+<target xml:lang="fr">When 2 or more buffer areas overlap, they can be combined using dissolve.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Extract the rail network of Germany
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Extract the rail network of Germany
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+In QGIS, only the attributes selected for the dissolve operation will receive the accurate attribute, while the remaining attributes remain unaggregated; hence, in this example, the name is not accurately represented (e.g. the name for Western Europe might be mistakenly assigned as "Netherlands").
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+In QGIS, only the attributes selected for the dissolve operation will receive the accurate attribute, while the remaining attributes remain unaggregated; hence, in this example, the name is not accurately represented (e.g. the name for Western Europe might be mistakenly assigned as "Netherlands").
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Intersection <bpt id="1">&lt;a id="intersection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Intersection <bpt id="1">&lt;a id="intersection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">![</bpt><ept id="1">](/fig/intersection_icon.png)</ept> <ph id="2">`intersection`</ph> tool extracts the part of the layers which overlap.</source>
+<target xml:lang="fr">The <bpt id="1">![</bpt><ept id="1">](/fig/intersection_icon.png)</ept> <ph id="2">`intersection`</ph> tool extracts the part of the layers which overlap.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In the top bar, navigate to <ph id="1">`Vector`</ph> → <ph id="2">`Geoprocessing Tool`</ph> → <ph id="3">`Intersection`</ph> OR <ph id="4">`Toolbox`</ph> → Search for <ph id="5">`Intersection`</ph>.</source>
+<target xml:lang="fr">In the top bar, navigate to <ph id="1">`Vector`</ph> → <ph id="2">`Geoprocessing Tool`</ph> → <ph id="3">`Intersection`</ph> OR <ph id="4">`Toolbox`</ph> → Search for <ph id="5">`Intersection`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input layer`</ph>: select layer one</source>
+<target xml:lang="fr"><ph id="1">`Input layer`</ph>: select layer one</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Overlay layer`</ph>: select layer two</source>
+<target xml:lang="fr"><ph id="1">`Overlay layer`</ph>: select layer two</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Intersection`</ph>: Specify where you want to save the results and give it a good name</source>
+<target xml:lang="fr"><ph id="1">`Intersection`</ph>: Specify where you want to save the results and give it a good name</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Order of input layer and overlay layer does not matter here</source>
+<target xml:lang="fr">Order of input layer and overlay layer does not matter here</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Possibility to keep only certain fields of the output layer</source>
+<target xml:lang="fr">Possibility to keep only certain fields of the output layer</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">⚠️ Attention: Attribute values that refer to output areas (e.g. population) are no longer meaningful after the intersect
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">⚠️ Attention: Attribute values that refer to output areas (e.g. population) are no longer meaningful after the intersect
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Intersect_concept_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Intersect_concept_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500px</ph>
+<ph id="2">name: Intersect_concept_2</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500px</ph>
+<ph id="2">name: Intersect_concept_2</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Intersection`</ph> operation between a two-features input layer and a single feature overlay layer (left) - resulting features are moved for clarity (right). Source: GISGeography.com
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">`Intersection`</ph> operation between a two-features input layer and a single feature overlay layer (left) - resulting features are moved for clarity (right). Source: GISGeography.com
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Intersect countries with timezones
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Intersect countries with timezones
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Centroids <bpt id="1">&lt;a id="centroids"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Centroids <bpt id="1">&lt;a id="centroids"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">With the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_centroids.png)</ept> <ph id="2">`Centroids`</ph>-tool, you can create a new layer with points at the centre of each polygon.</source>
+<target xml:lang="fr">With the <bpt id="1">![</bpt><ept id="1">](/fig/qgis_3.40_centroids.png)</ept> <ph id="2">`Centroids`</ph>-tool, you can create a new layer with points at the centre of each polygon.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">In the top bar, navigate to <ph id="1">`Vector`</ph> → <ph id="2">`Geometry Tools`</ph> → <ph id="3">`Centroids`</ph>. Alternatively, search for <ph id="4">`Centroids`</ph> in the <bpt id="5">[</bpt>Processing Toolbox<ept id="5">]</ept>. Open the tool by <bpt id="6">&lt;kbd></bpt>Double-clicking<ept id="6">&lt;/kbd></ept> on it.</source>
+<target xml:lang="fr">In the top bar, navigate to <ph id="1">`Vector`</ph> → <ph id="2">`Geometry Tools`</ph> → <ph id="3">`Centroids`</ph>. Alternatively, search for <ph id="4">`Centroids`</ph> in the <bpt id="5">[</bpt>Processing Toolbox<ept id="5">]</ept>. Open the tool by <bpt id="6">&lt;kbd></bpt>Double-clicking<ept id="6">&lt;/kbd></ept> on it.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input layer`</ph>: select the polygon layer</source>
+<target xml:lang="fr"><ph id="1">`Input layer`</ph>: select the polygon layer</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The new layer will be added to your project.</source>
+<target xml:lang="fr">The new layer will be added to your project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Create a centroid for each district in madagascar
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Create a centroid for each district in madagascar
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_qgis_basics_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">QGIS Basics <bpt id="1">&lt;a id="qgis-basics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QGIS Basics <bpt id="1">&lt;a id="qgis-basics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Subsections: <bpt id="1">&lt;a id="subsections"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Subsections: <bpt id="1">&lt;a id="subsections"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Installation of QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Installation of QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projects and folder structure<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projects and folder structure<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Basemaps<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Basemaps<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Plugins<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Plugins<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Data sources<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Data sources<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_1/en_qgis_start.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Getting started with QGIS <bpt id="1">&lt;a id="getting-started-with-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Getting started with QGIS <bpt id="1">&lt;a id="getting-started-with-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Introducing QGIS <bpt id="1">&lt;a id="introducing-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introducing QGIS <bpt id="1">&lt;a id="introducing-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{div} sd-text-justify</ph></source>
+<target xml:lang="fr"><ph id="1">:::{div} sd-text-justify</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">QGIS is an <bpt id="1">__</bpt>open source geoinformation system software<ept id="1">__</ept>. That means the source code is available for everyone,
+making QGIS a free application. The entire source code can be viewed and downloaded on <ph id="2">https://github.com/qgis/QGIS.</ph></source>
+<target xml:lang="fr">QGIS is an <bpt id="1">__</bpt>open source geoinformation system software<ept id="1">__</ept>. That means the source code is available for everyone,
+making QGIS a free application. The entire source code can be viewed and downloaded on <ph id="2">https://github.com/qgis/QGIS.</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">QGIS is a <bpt id="1">__</bpt>desktop software<ept id="1">__</ept>: that means you get a program that opens up on your computer as a window with buttons
+you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience.</source>
+<target xml:lang="fr">QGIS is a <bpt id="1">__</bpt>desktop software<ept id="1">__</ept>: that means you get a program that opens up on your computer as a window with buttons
+you can click, forms you can fill out to do tasks, and it's generally a visual interactive experience.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">You may <bpt id="1">__</bpt>view, edit, capture and analyze spatial data or create printable maps<ept id="1">__</ept> with it. QGIS was created in 2002
+and is a project of volunteers. And it is <bpt id="2">__</bpt>constantly changing<ept id="2">__</ept>.</source>
+<target xml:lang="fr">You may <bpt id="1">__</bpt>view, edit, capture and analyze spatial data or create printable maps<ept id="1">__</ept> with it. QGIS was created in 2002
+and is a project of volunteers. And it is <bpt id="2">__</bpt>constantly changing<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">QGIS is backed by a <bpt id="1">__</bpt>large community of users<ept id="1">__</ept>, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found <bpt id="2">[</bpt>here<ept id="2">](https://qgis.org/en/site/forusers/support.html#support)</ept>. Additionally, a list of helpful websites can be found on the <bpt id="3">[</bpt>wiki here<ept id="3">](/content/Wiki/en_qgis_common_errors_and_Issues.md)</ept>.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr">QGIS is backed by a <bpt id="1">__</bpt>large community of users<ept id="1">__</ept>, so it’s easy to find solutions to technical issues by using QGIS forums, blogs, or sub-reddits. The official QGIS community can be found <bpt id="2">[</bpt>here<ept id="2">](https://qgis.org/en/site/forusers/support.html#support)</ept>. Additionally, a list of helpful websites can be found on the <bpt id="3">[</bpt>wiki here<ept id="3">](/content/Wiki/en_qgis_common_errors_and_Issues.md)</ept>.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the <bpt id="1">[</bpt>QGIS Documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/index.html)</ept>.</source>
+<target xml:lang="fr">Keep in mind that as QGIS gets developed further, the interface and functions of QGIS are subject to changes. The material written for this platform is referring to QGIS Version 3.36. If the training material is no longer up to date, take a look at the <bpt id="1">[</bpt>QGIS Documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/index.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer. This version is called <bpt id="1">__</bpt>Long-term release (LTR)<ept id="1">__</ept>.</source>
+<target xml:lang="fr">QGIS is constantly changing, with new features being added. Because of this, the newer versions can have changes or even bugs (such as crashes). However, there is always a stable version available, which is supported for longer. This version is called <bpt id="1">__</bpt>Long-term release (LTR)<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Working with QGIS <bpt id="1">&lt;a id="working-with-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Working with QGIS <bpt id="1">&lt;a id="working-with-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: <bpt id="1">__</bpt>data collection and creation, data processing, and data visualisation<ept id="1">__</ept>. Geodata is loaded into QGIS projects which will be represented as layers on a map canvas.</source>
+<target xml:lang="fr">In QGIS, you create projects where you visualise and manipulate geodata. There are three main workflows you will use: <bpt id="1">__</bpt>data collection and creation, data processing, and data visualisation<ept id="1">__</ept>. Geodata is loaded into QGIS projects which will be represented as layers on a map canvas.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{hint}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{hint}</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">There is a lot of complex math involved in the GIS, but QGIS takes care of it on it's own and you don't need to have a deep understanding of maths and algorithms to use QGIS. <bpt id="1">__</bpt>As long as you can use Excel and Powerpoint, you shouldn't have trouble learning how to use QGIS<ept id="1">__</ept>.</source>
+<target xml:lang="fr">There is a lot of complex math involved in the GIS, but QGIS takes care of it on it's own and you don't need to have a deep understanding of maths and algorithms to use QGIS. <bpt id="1">__</bpt>As long as you can use Excel and Powerpoint, you shouldn't have trouble learning how to use QGIS<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Data Collection and Creation</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Data Collection and Creation</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">QGIS offers tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing lets you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in <bpt id="1">__</bpt><bpt id="2">[</bpt>module 2<ept id="2">](/content/Module_2/en_module_2_overview.md)</ept><ept id="1">__</ept>.</source>
+<target xml:lang="fr">QGIS offers tools to create your own geodata. For example, with the digitizing tools, you can create points, polygons, and lines with information which can represent spatial information. Furthermore, georeferencing lets you add geographic information to various types of data, such as satellite imagery or hand-drawn maps. You will learn how to create geodata and how to georeference data in <bpt id="1">__</bpt><bpt id="2">[</bpt>module 2<ept id="2">](/content/Module_2/en_module_2_overview.md)</ept><ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use <bpt id="1">[</bpt>web and mobile apps<ept id="1">](/content/Wiki/en_web_and_mobile_apps_wiki.md)</ept>.</source>
+<target xml:lang="fr">Sometimes working with GIS requires you to go and collect the data in the field. In this case, you can use <bpt id="1">[</bpt>web and mobile apps<ept id="1">](/content/Wiki/en_web_and_mobile_apps_wiki.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Data Processing</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Data Processing</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in <bpt id="1">[</bpt>module 2<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_module_2_overview.html)</ept> onwards.</source>
+<target xml:lang="fr">QGIS offers a wide range of algorithms to process geodata. In the following modules, you will get to know a number of algorithms that are especially useful for GIS in humanitarian work. You will learn more about data processing and manipulation in <bpt id="1">[</bpt>module 2<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_module_2_overview.html)</ept> onwards.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Visualisation</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Visualisation</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">QGIS lets you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to assign symbols in <bpt id="1">[</bpt>Module 4: Visualisation of Geodata and Map Making<ept id="1">](/content/Module_4/en_qgis_map_design_I.md)</ept></source>
+<target xml:lang="fr">QGIS lets you visualise geodata and create maps to communicate information. It does so by assigning symbols and colours to different elements in your geodata. Assigning a symbology to the geodata is one of the main skills you will develop as a GIS-user and a good visualisation of data is immensely useful when communicating insights. You will learn how to assign symbols in <bpt id="1">[</bpt>Module 4: Visualisation of Geodata and Map Making<ept id="1">](/content/Module_4/en_qgis_map_design_I.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>A note on plugins<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>A note on plugins<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">In addition to the algorithms included in the standard installation, QGIS offers plugins which add additional functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. For example, plugins let you connect to online services such as OpenStreetMap, or add more algorithms to process your data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian work. You will learn more about plugins in the following modules. If you want to know how to install them, look into the <bpt id="1">[</bpt>wiki<ept id="1">](/content/Wiki/en_qgis_plugins_wiki.md)</ept>.</source>
+<target xml:lang="fr">In addition to the algorithms included in the standard installation, QGIS offers plugins which add additional functionality to the QGIS application. These plugins are developed by independent organizations or the QGIS-community. For example, plugins let you connect to online services such as OpenStreetMap, or add more algorithms to process your data. These can be very useful for certain use cases. There are also plugins specifically designed for humanitarian work. You will learn more about plugins in the following modules. If you want to know how to install them, look into the <bpt id="1">[</bpt>wiki<ept id="1">](/content/Wiki/en_qgis_plugins_wiki.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Opening a new project in QGIS <bpt id="1">&lt;a id="opening-a-new-project-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Opening a new project in QGIS <bpt id="1">&lt;a id="opening-a-new-project-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Open QGIS like any other program on your computer. The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.</source>
+<target xml:lang="fr">Open QGIS like any other program on your computer. The start screen of QGIS usually shows you the projects you worked on recently and the option to create a new project.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">There are <bpt id="1">__</bpt>two<ept id="1">__</ept> options to create a new project:</source>
+<target xml:lang="fr">There are <bpt id="1">__</bpt>two<ept id="1">__</ept> options to create a new project:</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">A QGIS project file has the format ending <ph id="1">`.qgz`</ph>.</source>
+<target xml:lang="fr">A QGIS project file has the format ending <ph id="1">`.qgz`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">On the start screen click on <ph id="1">`Project Template`</ph>.</source>
+<target xml:lang="fr">On the start screen click on <ph id="1">`Project Template`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In the upper left corner click on <ph id="1">`Project`</ph> → <ph id="2">`New Project`</ph>.</source>
+<target xml:lang="fr">In the upper left corner click on <ph id="1">`Project`</ph> → <ph id="2">`New Project`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Overview of the QGIS Interface <bpt id="1">&lt;a id="overview-of-the-qgis-interface"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Overview of the QGIS Interface <bpt id="1">&lt;a id="overview-of-the-qgis-interface"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.</source>
+<target xml:lang="fr">The interface of QGIS is at first glance quite complex. However, once you know all the components you will be able to orientate yourself quickly. Here you can find a description of all components of the interface.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">When you hover with your mouse cursor over icons, text will appear which explains the function of the button.</source>
+<target xml:lang="fr">When you hover with your mouse cursor over icons, text will appear which explains the function of the button.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Layers panel:<ept id="1">__</ept> The <bpt id="2">__</bpt>layers list<ept id="2">__</ept> shows <bpt id="3">__</bpt>all layers/files<ept id="3">__</ept> that are <bpt id="4">__</bpt>loaded in the project<ept id="4">__</ept>. You can show/hide layers and set other properties.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Layers panel:<ept id="1">__</ept> The <bpt id="2">__</bpt>layers list<ept id="2">__</ept> shows <bpt id="3">__</bpt>all layers/files<ept id="3">__</ept> that are <bpt id="4">__</bpt>loaded in the project<ept id="4">__</ept>. You can show/hide layers and set other properties.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Toolbars:<ept id="1">__</ept>  <bpt id="2">__</bpt>Toolbars<ept id="2">__</ept> are shortcuts to execute frequently used commands. For example, there are special toolbars for <bpt id="3">__</bpt>vector and raster files<ept id="3">__</ept>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <bpt id="4">__</bpt>processing toolbox<ept id="4">__</ept>, which is used later in many of the wiki videos.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Toolbars:<ept id="1">__</ept>  <bpt id="2">__</bpt>Toolbars<ept id="2">__</ept> are shortcuts to execute frequently used commands. For example, there are special toolbars for <bpt id="3">__</bpt>vector and raster files<ept id="3">__</ept>, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the <bpt id="4">__</bpt>processing toolbox<ept id="4">__</ept>, which is used later in many of the wiki videos.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Map Canvas:<ept id="1">__</ept> The <bpt id="2">__</bpt>map canvas<ept id="2">__</ept> is the <bpt id="3">__</bpt>central component<ept id="3">__</ept> of every GIS programme. This is where the <bpt id="4">__</bpt>geodata<ept id="4">__</ept> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Map Canvas:<ept id="1">__</ept> The <bpt id="2">__</bpt>map canvas<ept id="2">__</ept> is the <bpt id="3">__</bpt>central component<ept id="3">__</ept> of every GIS programme. This is where the <bpt id="4">__</bpt>geodata<ept id="4">__</ept> are displayed. The map view has a projection which does not always have to correspond to the projection of the layers.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Coordinates and Scale:<ept id="1">__</ept> Here you can find information about the scale of the map canvas, as well as read the coordinates of the mouse pointer.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Coordinates and Scale:<ept id="1">__</ept> Here you can find information about the scale of the map canvas, as well as read the coordinates of the mouse pointer.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Browser panel:<ept id="1">__</ept> The browser panel let's you browse the files on your computer and load datasets into your QGIS project.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Browser panel:<ept id="1">__</ept> The browser panel let's you browse the files on your computer and load datasets into your QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Search bar:<ept id="1">__</ept> Here you can <bpt id="2">__</bpt>search for tools and layers<ept id="2">__</ept> in QGIS. If you don't know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Search bar:<ept id="1">__</ept> Here you can <bpt id="2">__</bpt>search for tools and layers<ept id="2">__</ept> in QGIS. If you don't know where to find a tool, you can try here. You can also type in coordinates to find them on the map canvas.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Exercise: Create a new QGIS project</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Exercise: Create a new QGIS project</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">In your “GIS_Training” folder, create a <bpt id="1">__</bpt>subfolder<ept id="1">__</ept> called "My_First_Project".</source>
+<target xml:lang="fr">In your “GIS_Training” folder, create a <bpt id="1">__</bpt>subfolder<ept id="1">__</ept> called "My_First_Project".</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Open <bpt id="1">__</bpt>QGIS<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Open <bpt id="1">__</bpt>QGIS<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Project`</ph> → <ph id="2">`New Project`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Project`</ph> → <ph id="2">`New Project`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">In the top-left corner, click on <ph id="1">`Project`</ph> → <ph id="2">`Save as`</ph>, browse to your Projects folder and save the project as "Session_1".</source>
+<target xml:lang="fr">In the top-left corner, click on <ph id="1">`Project`</ph> → <ph id="2">`Save as`</ph>, browse to your Projects folder and save the project as "Session_1".</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Save as`</ph>, browse to your Projects folder and save the project as "My_First_Project".</source>
+<target xml:lang="fr">Click on <ph id="1">`Save as`</ph>, browse to your Projects folder and save the project as "My_First_Project".</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Open your your folder and check the <bpt id="1">__</bpt><ph id="2">`.qgz`</ph> file<ept id="1">__</ept> that you just created.</source>
+<target xml:lang="fr">Open your your folder and check the <bpt id="1">__</bpt><ph id="2">`.qgz`</ph> file<ept id="1">__</ept> that you just created.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">If you see a <ph id="1">`*`</ph> in the title bar, to the left of the name of your project, this means that the project has changes which are <bpt id="2">__</bpt>unsaved<ept id="2">__</ept>. Since QGIS can crash from time to time, make sure to save your project periodically to avoid losing progress.</source>
+<target xml:lang="fr">If you see a <ph id="1">`*`</ph> in the title bar, to the left of the name of your project, this means that the project has changes which are <bpt id="2">__</bpt>unsaved<ept id="2">__</ept>. Since QGIS can crash from time to time, make sure to save your project periodically to avoid losing progress.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Buttons and Shortcuts <bpt id="1">&lt;a id="buttons-and-shortcuts"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Buttons and Shortcuts <bpt id="1">&lt;a id="buttons-and-shortcuts"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">In QGIS, <bpt id="1">__</bpt>mouse control<ept id="1">__</ept> allows users to interact with the map canvas, enabling functions such as panning, zooming, and selecting features.</source>
+<target xml:lang="fr">In QGIS, <bpt id="1">__</bpt>mouse control<ept id="1">__</ept> allows users to interact with the map canvas, enabling functions such as panning, zooming, and selecting features.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Hotkeys<ept id="1">__</ept> in the QGIS interface provide convenient shortcuts for various commands, enhancing efficiency and speeding up workflow. You can find all hotkeys below.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Hotkeys<ept id="1">__</ept> in the QGIS interface provide convenient shortcuts for various commands, enhancing efficiency and speeding up workflow. You can find all hotkeys below.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Navigation in the map view</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Navigation in the map view</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Menu option</source>
+<target xml:lang="fr">Menu option</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Shortcut</source>
+<target xml:lang="fr">Shortcut</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Map pan</source>
+<target xml:lang="fr">Map pan</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_pan_map.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_pan_map.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Space<ept id="1">&lt;/kbd></ept>, <bpt id="2">&lt;kbd></bpt>Page Up<ept id="2">&lt;/kbd></ept>,  <bpt id="3">&lt;kbd></bpt>Page Down<ept id="3">&lt;/kbd></ept> or the <bpt id="4">&lt;kbd></bpt>Arrow Keys<ept id="4">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Space<ept id="1">&lt;/kbd></ept>, <bpt id="2">&lt;kbd></bpt>Page Up<ept id="2">&lt;/kbd></ept>,  <bpt id="3">&lt;kbd></bpt>Page Down<ept id="3">&lt;/kbd></ept> or the <bpt id="4">&lt;kbd></bpt>Arrow Keys<ept id="4">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Move the map</source>
+<target xml:lang="fr">Move the map</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Pan map to selection</source>
+<target xml:lang="fr">Pan map to selection</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_pan_map_selection.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_pan_map_selection.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Pans the map to the selected element</source>
+<target xml:lang="fr">Pans the map to the selected element</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Zoom in</source>
+<target xml:lang="fr">Zoom in</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_in.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_in.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>+<ept id="3">&lt;/kbd></ept> or <bpt id="4">&lt;kbd></bpt>mouse wheel<ept id="4">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>+<ept id="3">&lt;/kbd></ept> or <bpt id="4">&lt;kbd></bpt>mouse wheel<ept id="4">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Zoom into the map</source>
+<target xml:lang="fr">Zoom into the map</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Zoom out</source>
+<target xml:lang="fr">Zoom out</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_out.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_out.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>-<ept id="3">&lt;/kbd></ept> or <bpt id="4">&lt;kbd></bpt>mouse wheel<ept id="4">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>-<ept id="3">&lt;/kbd></ept> or <bpt id="4">&lt;kbd></bpt>mouse wheel<ept id="4">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Zoom out of the map</source>
+<target xml:lang="fr">Zoom out of the map</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Zoom full</source>
+<target xml:lang="fr">Zoom full</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_full.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_full.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>F<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>F<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Zoom to the selected element</source>
+<target xml:lang="fr">Zoom to the selected element</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Zoom to selection</source>
+<target xml:lang="fr">Zoom to selection</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_to_selection.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_to_selection.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>J<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>J<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Zoom to the selected element</source>
+<target xml:lang="fr">Zoom to the selected element</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Zoom to layer</source>
+<target xml:lang="fr">Zoom to layer</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_to_layer.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_to_layer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Zoom to the selected layer</source>
+<target xml:lang="fr">Zoom to the selected layer</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Zoom to native resolution</source>
+<target xml:lang="fr">Zoom to native resolution</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_native_resolution.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_native_resolution.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Zoom to the native resolution (100%)</source>
+<target xml:lang="fr">Zoom to the native resolution (100%)</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Zoom last</source>
+<target xml:lang="fr">Zoom last</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_last.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_last.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Zoom to the last zoom</source>
+<target xml:lang="fr">Zoom to the last zoom</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Zoom next</source>
+<target xml:lang="fr">Zoom next</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_next.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_next.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Zoom to the next zoom</source>
+<target xml:lang="fr">Zoom to the next zoom</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Project management</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Project management</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Menu option</source>
+<target xml:lang="fr">Menu option</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Shortcut</source>
+<target xml:lang="fr">Shortcut</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">New Project</source>
+<target xml:lang="fr">New Project</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_new.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_new.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>N<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>N<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Create a new project</source>
+<target xml:lang="fr">Create a new project</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Open Project</source>
+<target xml:lang="fr">Open Project</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_project.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_project.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>O<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>O<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Open an existing project</source>
+<target xml:lang="fr">Open an existing project</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Save</source>
+<target xml:lang="fr">Save</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_save_project.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_save_project.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>S<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>S<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Save the project</source>
+<target xml:lang="fr">Save the project</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Save as…</source>
+<target xml:lang="fr">Save as…</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_save_project_as.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_save_project_as.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>S<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>S<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Save the project as…</source>
+<target xml:lang="fr">Save the project as…</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Properties</source>
+<target xml:lang="fr">Properties</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>P<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>P<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Open the project properties</source>
+<target xml:lang="fr">Open the project properties</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">New print layout</source>
+<target xml:lang="fr">New print layout</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_new_print_layerout.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_new_print_layerout.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>P<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>P<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Opens the Dialog to create a new print layout</source>
+<target xml:lang="fr">Opens the Dialog to create a new print layout</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Search</source>
+<target xml:lang="fr">Search</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>K<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>K<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Opens the search bar</source>
+<target xml:lang="fr">Opens the search bar</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Layer management</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Layer management</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Menu option</source>
+<target xml:lang="fr">Menu option</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Shortcut</source>
+<target xml:lang="fr">Shortcut</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Data source manager</source>
+<target xml:lang="fr">Data source manager</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_data_source_manager.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_data_source_manager.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>L<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>L<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Add a new layer</source>
+<target xml:lang="fr">Add a new layer</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">New GeoPackage layer</source>
+<target xml:lang="fr">New GeoPackage layer</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_new_geopackage_layer.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_new_geopackage_layer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>N<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>N<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Add a new GeoPackage Layer</source>
+<target xml:lang="fr">Add a new GeoPackage Layer</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Add vector layer</source>
+<target xml:lang="fr">Add vector layer</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_add_vector_layer.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_add_vector_layer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>V<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>V<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Add a new vector layer</source>
+<target xml:lang="fr">Add a new vector layer</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Add raster layer</source>
+<target xml:lang="fr">Add raster layer</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_add_raster_layer.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_add_raster_layer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>R<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>R<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Add a new raster layer</source>
+<target xml:lang="fr">Add a new raster layer</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Remove selected layer</source>
+<target xml:lang="fr">Remove selected layer</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_remove_selected_layer.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_remove_selected_layer.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>D<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>D<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Remove the selected layer</source>
+<target xml:lang="fr">Remove the selected layer</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Toggle layers view</source>
+<target xml:lang="fr">Toggle layers view</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>1<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>1<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Toggle the layers view</source>
+<target xml:lang="fr">Toggle the layers view</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Toggle browser view</source>
+<target xml:lang="fr">Toggle browser view</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>2<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>2<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Toggle the browser view</source>
+<target xml:lang="fr">Toggle the browser view</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Analysis Tools</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Analysis Tools</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Menu option</source>
+<target xml:lang="fr">Menu option</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Shortcut</source>
+<target xml:lang="fr">Shortcut</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Identify Features</source>
+<target xml:lang="fr">Identify Features</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_identify_features.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_identify_features.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>I<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Shift<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>I<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Identify features on the map view by clicking on them</source>
+<target xml:lang="fr">Identify features on the map view by clicking on them</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Select feature</source>
+<target xml:lang="fr">Select feature</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_select_features.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_select_features.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Select a feature by area or single click</source>
+<target xml:lang="fr">Select a feature by area or single click</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Select feature by value</source>
+<target xml:lang="fr">Select feature by value</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_select_features_by_value.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_select_features_by_value.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>F3<ept id="1">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>F3<ept id="1">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Select features by value</source>
+<target xml:lang="fr">Select features by value</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Open Attribute table</source>
+<target xml:lang="fr">Open Attribute table</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>F6<ept id="1">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>F6<ept id="1">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table</source>
+<target xml:lang="fr">Open the Attribute table</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Open Attribute table with selected features only</source>
+<target xml:lang="fr">Open Attribute table with selected features only</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Shift<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>F6<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Shift<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>F6<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table with selected features only</source>
+<target xml:lang="fr">Open the Attribute table with selected features only</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Open Attribute table with visible features only</source>
+<target xml:lang="fr">Open Attribute table with visible features only</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_open_attribute_table.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>F6<ept id="2">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>F6<ept id="2">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Open the Attribute table with visible features only</source>
+<target xml:lang="fr">Open the Attribute table with visible features only</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Advanced Tools</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Advanced Tools</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Menu option</source>
+<target xml:lang="fr">Menu option</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">Shortcut</source>
+<target xml:lang="fr">Shortcut</target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">Processing Toolbox</source>
+<target xml:lang="fr">Processing Toolbox</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_processing_toolbox.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_processing_toolbox.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>T<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>T<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en">Opens the Processing Toolbox</source>
+<target xml:lang="fr">Opens the Processing Toolbox</target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Python Console</source>
+<target xml:lang="fr">Python Console</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_python_console.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_python_console.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>P<ept id="3">&lt;/kbd></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>P<ept id="3">&lt;/kbd></ept></target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Opens the Python Console</source>
+<target xml:lang="fr">Opens the Python Console</target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Navigating on the Map Canvas <bpt id="1">&lt;a id="navigating-on-the-map-canvas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Navigating on the Map Canvas <bpt id="1">&lt;a id="navigating-on-the-map-canvas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph><bpt id="2">*</bpt>Optional<ept id="2">*</ept>: Now it's your turn!</source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph><bpt id="2">*</bpt>Optional<ept id="2">*</ept>: Now it's your turn!</target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">You can follow the steps below in your own QGIS project. Download <bpt id="1">[</bpt>this dataset<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg)</ept> and drag and drop the <ph id="2">`wb_countries_admin0_10m.gpkg`</ph> onto the map canvas. The data set are the official country boundaries by the <bpt id="3">[</bpt>World Bank<ept id="3">](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)</ept>.</source>
+<target xml:lang="fr">You can follow the steps below in your own QGIS project. Download <bpt id="1">[</bpt>this dataset<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg)</ept> and drag and drop the <ph id="2">`wb_countries_admin0_10m.gpkg`</ph> onto the map canvas. The data set are the official country boundaries by the <bpt id="3">[</bpt>World Bank<ept id="3">](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_1/wb_boundaries/wb_countries_admin0_10m.gpkg</ph></target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Download the Worldbank Official Boundaries.</source>
+<target xml:lang="fr">Download the Worldbank Official Boundaries.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en">Moving the map view <bpt id="1">&lt;a id="moving-the-map-view"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Moving the map view <bpt id="1">&lt;a id="moving-the-map-view"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en">Holding the <bpt id="1">&lt;kbd></bpt>Space<ept id="1">&lt;/kbd></ept>-button on your keyboard activates the <bpt id="2">![</bpt><ept id="2">](/fig/qgis_pan_map.png)</ept> <ph id="3">`Pan Map`</ph>-tool when you're mouse in on the map canvas. Simply move your mouse while holding <bpt id="4">&lt;kbd></bpt>Space<ept id="4">&lt;/kbd></ept> and you can move the map view.</source>
+<target xml:lang="fr">Holding the <bpt id="1">&lt;kbd></bpt>Space<ept id="1">&lt;/kbd></ept>-button on your keyboard activates the <bpt id="2">![</bpt><ept id="2">](/fig/qgis_pan_map.png)</ept> <ph id="3">`Pan Map`</ph>-tool when you're mouse in on the map canvas. Simply move your mouse while holding <bpt id="4">&lt;kbd></bpt>Space<ept id="4">&lt;/kbd></ept> and you can move the map view.</target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en">To move on the map canvas with your mouse cursor you need to toggle the hand button.</source>
+<target xml:lang="fr">To move on the map canvas with your mouse cursor you need to toggle the hand button.</target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{image} </ph><ph id="2">/fig/qgis_move_symbol.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{image} </ph><ph id="2">/fig/qgis_move_symbol.png</ph></target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: qgis_move_symbol</ph>
+<ph id="2">height: 40 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: qgis_move_symbol</ph>
+<ph id="2">height: 40 px</ph></target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en">You can always move on the map canvas with arrow keys on your keyboard.</source>
+<target xml:lang="fr">You can always move on the map canvas with arrow keys on your keyboard.</target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en">Zooming in the map view <bpt id="1">&lt;a id="zooming-in-the-map-view"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Zooming in the map view <bpt id="1">&lt;a id="zooming-in-the-map-view"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Holding <bpt id="2">&lt;kbd></bpt>Ctrl<ept id="2">&lt;/kbd></ept> while scrolling allows you to scroll in smaller increments (slower). Try adjusting the map canvas to your needs using this method.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Holding <bpt id="2">&lt;kbd></bpt>Ctrl<ept id="2">&lt;/kbd></ept> while scrolling allows you to scroll in smaller increments (slower). Try adjusting the map canvas to your needs using this method.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en">The easiest way to zoom on Map Canvas is by <bpt id="1">__</bpt>scrolling<ept id="1">__</ept>.</source>
+<target xml:lang="fr">The easiest way to zoom on Map Canvas is by <bpt id="1">__</bpt>scrolling<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en">Or with the hotkeys <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>+<ept id="2">&lt;/kbd></ept> and <bpt id="3">&lt;kbd></bpt>Ctrl<ept id="3">&lt;/kbd></ept> + <bpt id="4">&lt;kbd></bpt>-<ept id="4">&lt;/kbd></ept>.</source>
+<target xml:lang="fr">Or with the hotkeys <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>+<ept id="2">&lt;/kbd></ept> and <bpt id="3">&lt;kbd></bpt>Ctrl<ept id="3">&lt;/kbd></ept> + <bpt id="4">&lt;kbd></bpt>-<ept id="4">&lt;/kbd></ept>.</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_symbol.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/qgis_zoom_symbol.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en">Another way is to use the zoom buttons in the toolbox panel.</source>
+<target xml:lang="fr">Another way is to use the zoom buttons in the toolbox panel.</target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en">Toolbox &amp; Toolbars <bpt id="1">&lt;a id="toolbox-and-toolbars"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Toolbox &amp; Toolbars <bpt id="1">&lt;a id="toolbox-and-toolbars"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en">Basically, all the functionality, tools and applications of QGIS are organised in the Toolbox. Some Tools have their own toolbars which you can add to your QGIS interface.</source>
+<target xml:lang="fr">Basically, all the functionality, tools and applications of QGIS are organised in the Toolbox. Some Tools have their own toolbars which you can add to your QGIS interface.</target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en">Open Toolbox <bpt id="1">&lt;a id="open-toolbox"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Open Toolbox <bpt id="1">&lt;a id="open-toolbox"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en">Holding <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>T<ept id="3">&lt;/kbd></ept> opens and closes the toolbox.</source>
+<target xml:lang="fr">Holding <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>Alt<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>T<ept id="3">&lt;/kbd></ept> opens and closes the toolbox.</target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en">To open the Toolbox in QGIS click on the gearwheel button. Or click on <ph id="1">`Processing`</ph> → <ph id="2">`Toolbox`</ph>.</source>
+<target xml:lang="fr">To open the Toolbox in QGIS click on the gearwheel button. Or click on <ph id="1">`Processing`</ph> → <ph id="2">`Toolbox`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/Geschlossene_Toolbox_01.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/Geschlossene_Toolbox_01.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">You can use the search bar to find specific tools.</source>
+<target xml:lang="fr">You can use the search bar to find specific tools.</target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en">There are cases when you want to do something in QGIS but do not know the exact tool. Sometimes it's worth just looking for what you think the name of the tool might be.</source>
+<target xml:lang="fr">There are cases when you want to do something in QGIS but do not know the exact tool. Sometimes it's worth just looking for what you think the name of the tool might be.</target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en">Show and hide displays and toolbars <bpt id="1">&lt;a id="show-and-hide-displays-and-toolbars"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Show and hide displays and toolbars <bpt id="1">&lt;a id="show-and-hide-displays-and-toolbars"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en">There are toolbars and panels for many different tasks. To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.</source>
+<target xml:lang="fr">There are toolbars and panels for many different tasks. To avoid an overcrowded interface it is smart to only activate specific toolbars or panels only when you really need them.</target>
+</trans-unit>
+<trans-unit id="tu256" xml:space="preserve">
+<source xml:lang="en">To add or remove toolbars from your interface click on <ph id="1">`View`</ph> → <ph id="2">`Toolbars`</ph> → Check or uncheck the toolboxes you want to add or remove.</source>
+<target xml:lang="fr">To add or remove toolbars from your interface click on <ph id="1">`View`</ph> → <ph id="2">`Toolbars`</ph> → Check or uncheck the toolboxes you want to add or remove.</target>
+</trans-unit>
+<trans-unit id="tu257" xml:space="preserve">
+<source xml:lang="en">To add or remove  panels from your interface click on <ph id="1">`View`</ph> → <ph id="2">`Panels`</ph> → Check or uncheck the panels you want to add or remove.</source>
+<target xml:lang="fr">To add or remove  panels from your interface click on <ph id="1">`View`</ph> → <ph id="2">`Panels`</ph> → Check or uncheck the panels you want to add or remove.</target>
+</trans-unit>
+<trans-unit id="tu258" xml:space="preserve">
+<source xml:lang="en">Move and arrange toolbars <bpt id="1">&lt;a id="move-and-arrange-toolbars"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Move and arrange toolbars <bpt id="1">&lt;a id="move-and-arrange-toolbars"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu259" xml:space="preserve">
+<source xml:lang="en">At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.</source>
+<target xml:lang="fr">At each toolbar there is a field of two dotted lines. If you move the mouse pointer over it until an arrow cross appears and then hold down the left mouse button, you can move the toolbar. This allows an individualised arrangement of your own tools. By compressing all toolbars into a few lines, the map view window can also be enlarged.</target>
+</trans-unit>
+<trans-unit id="tu260" xml:space="preserve">
+<source xml:lang="en">Save &amp; Open QGIS Projects <bpt id="1">&lt;a id="save-and-open-qgis-projects"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Save &amp; Open QGIS Projects <bpt id="1">&lt;a id="save-and-open-qgis-projects"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu261" xml:space="preserve">
+<source xml:lang="en">To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one <bpt id="1">__</bpt>BIG<ept id="1">__</ept> difference.
+In QGIS, the geodata you work with is <bpt id="2">__</bpt>not<ept id="2">__</ept> saved in your QGIS project file. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.</source>
+<target xml:lang="fr">To save progress or to open an existing project in QGIS is very similar to programs like MS Word. However, there is one <bpt id="1">__</bpt>BIG<ept id="1">__</ept> difference.
+In QGIS, the geodata you work with is <bpt id="2">__</bpt>not<ept id="2">__</ept> saved in your QGIS project file. Instead, the project file only contains the file paths where the geodata were located at the time the project was last saved on the PC. If the location of this geodata is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.</target>
+</trans-unit>
+<trans-unit id="tu262" xml:space="preserve">
+<source xml:lang="en">Good data organisation with a fixed and well-thought-out folder structure prevents such problems.</source>
+<target xml:lang="fr">Good data organisation with a fixed and well-thought-out folder structure prevents such problems.</target>
+</trans-unit>
+<trans-unit id="tu263" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Warning}</ph>
+Always organize your data! Check out the Wiki article on <bpt id="2">[</bpt>Standard Folder Structure<ept id="2">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)</ept> for more info.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Warning}</ph>
+Always organize your data! Check out the Wiki article on <bpt id="2">[</bpt>Standard Folder Structure<ept id="2">](/content/Wiki/en_qgis_projects_folder_structure_wiki.md)</ept> for more info.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu264" xml:space="preserve">
+<source xml:lang="en">Open Projects <bpt id="1">&lt;a id="open-projects"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Open Projects <bpt id="1">&lt;a id="open-projects"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu265" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu266" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu267" xml:space="preserve">
+<source xml:lang="en">Holding <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>O<ept id="2">&lt;/kbd></ept> also opens the <ph id="3">`Open Project`</ph>-dialogue box.</source>
+<target xml:lang="fr">Holding <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> + <bpt id="2">&lt;kbd></bpt>O<ept id="2">&lt;/kbd></ept> also opens the <ph id="3">`Open Project`</ph>-dialogue box.</target>
+</trans-unit>
+<trans-unit id="tu268" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu269" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu270" xml:space="preserve">
+<source xml:lang="en">To open an existing QGIS project click on <ph id="1">`Project`</ph> → <ph id="2">`Open…`</ph> -> Navigate to your project and open it.</source>
+<target xml:lang="fr">To open an existing QGIS project click on <ph id="1">`Project`</ph> → <ph id="2">`Open…`</ph> -> Navigate to your project and open it.</target>
+</trans-unit>
+<group id="sd1_ssf197" resname="sub-filter:sd1">
+</group>
+<trans-unit id="tu271" xml:space="preserve">
+<source xml:lang="en">Save Projects <bpt id="1">&lt;a id="save-projects"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Save Projects <bpt id="1">&lt;a id="save-projects"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu272" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu273" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Pressing <bpt id="2">&lt;kbd></bpt>Ctrl<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>S<ept id="3">&lt;/kbd></ept> saves the project, whereas pressing <bpt id="4">&lt;kbd></bpt>Ctrl<ept id="4">&lt;/kbd></ept> + <bpt id="5">&lt;kbd></bpt>Shift<ept id="5">&lt;/kbd></ept> + <bpt id="6">&lt;kbd></bpt>S<ept id="6">&lt;/kbd></ept> let's you specify a save location on your computer.</source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Pressing <bpt id="2">&lt;kbd></bpt>Ctrl<ept id="2">&lt;/kbd></ept> + <bpt id="3">&lt;kbd></bpt>S<ept id="3">&lt;/kbd></ept> saves the project, whereas pressing <bpt id="4">&lt;kbd></bpt>Ctrl<ept id="4">&lt;/kbd></ept> + <bpt id="5">&lt;kbd></bpt>Shift<ept id="5">&lt;/kbd></ept> + <bpt id="6">&lt;kbd></bpt>S<ept id="6">&lt;/kbd></ept> let's you specify a save location on your computer.</target>
+</trans-unit>
+<trans-unit id="tu274" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu275" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu276" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When you save for the first time<ept id="1">__</ept>: To save the QGIS project you are working on click on <ph id="2">`Project`</ph> → <ph id="3">`Save as…`</ph> → Navigate to the folder where you want to save the project → Give the project a name → <ph id="4">`Save`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When you save for the first time<ept id="1">__</ept>: To save the QGIS project you are working on click on <ph id="2">`Project`</ph> → <ph id="3">`Save as…`</ph> → Navigate to the folder where you want to save the project → Give the project a name → <ph id="4">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu277" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When saving your progress<ept id="1">__</ept>: To save progress in a project that was already saved somewhere on your computer:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When saving your progress<ept id="1">__</ept>: To save progress in a project that was already saved somewhere on your computer:</target>
+</trans-unit>
+<trans-unit id="tu278" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Project`</ph> → <ph id="2">`Save`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Project`</ph> → <ph id="2">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu279" xml:space="preserve">
+<source xml:lang="en">Warning icons <bpt id="1">&lt;a id="warning-icons"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Warning icons <bpt id="1">&lt;a id="warning-icons"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu280" xml:space="preserve">
+<source xml:lang="en">It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, <bpt id="1">__</bpt>hover over it with your mouse<ept id="1">__</ept> and explanatory text will appear. For example, in <ph id="2">{numref}</ph><ph id="3">`warning_icon_example`</ph>, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).</source>
+<target xml:lang="fr">It can be that while working with QGIS, you come across orange warning icons. This indicates that you should pay attention. To understand what the warning icon means, <bpt id="1">__</bpt>hover over it with your mouse<ept id="1">__</ept> and explanatory text will appear. For example, in <ph id="2">{numref}</ph><ph id="3">`warning_icon_example`</ph>, the warning icon indicates that the units of measurements are degrees, which are not constant (the distance between 1⁰ of longitude is much greater at the equator than at the poles).</target>
+</trans-unit>
+<trans-unit id="tu281" xml:space="preserve">
+<source xml:lang="en">Where to find help <bpt id="1">&lt;a id="where-to-find-help"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Where to find help <bpt id="1">&lt;a id="where-to-find-help"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu282" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Connect with us!
+<ph id="2">:class: tip</ph>
+If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to <ph id="3">`gis-training-platform@heigit.org`</ph>.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Connect with us!
+<ph id="2">:class: tip</ph>
+If you have more questions before or after the training or require assistance, do not hesitate to reach out to us by writing an email to <ph id="3">`gis-training-platform@heigit.org`</ph>.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu283" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Common errors and issues
+<ph id="2">:class: tip</ph>
+We have collected a list of <bpt id="3">__</bpt><bpt id="4">[</bpt>Common errors and issues<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)</ept><ept id="3">__</ept>. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Common errors and issues
+<ph id="2">:class: tip</ph>
+We have collected a list of <bpt id="3">__</bpt><bpt id="4">[</bpt>Common errors and issues<ept id="4">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)</ept><ept id="3">__</ept>. If you ever find yourself at your wits end (which can happen a lot when working with QGIS!), try finding the solution to your problem here.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu284" xml:space="preserve">
+<source xml:lang="en">There is also a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums:</source>
+<target xml:lang="fr">There is also a big and vibrant QGIS community online. If you are struggling with a specific function, or have questions on how to achieve GIS operations that are not covered on this platform, you can find help on dedicated QGIS forums:</target>
+</trans-unit>
+<trans-unit id="tu285" xml:space="preserve">
+<source xml:lang="en">QGIS documentation: <ph id="1">https://docs.qgis.org/3.34/en/docs/index.html</ph></source>
+<target xml:lang="fr">QGIS documentation: <ph id="1">https://docs.qgis.org/3.34/en/docs/index.html</ph></target>
+</trans-unit>
+<trans-unit id="tu286" xml:space="preserve">
+<source xml:lang="en">QGIS user forum on stackexchange: <ph id="1">https://gis.stackexchange.com/?tags=qgis</ph></source>
+<target xml:lang="fr">QGIS user forum on stackexchange: <ph id="1">https://gis.stackexchange.com/?tags=qgis</ph></target>
+</trans-unit>
+<trans-unit id="tu287" xml:space="preserve">
+<source xml:lang="en">QGIS user groups: <ph id="1">https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups</ph></source>
+<target xml:lang="fr">QGIS user groups: <ph id="1">https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups</ph></target>
+</trans-unit>
+<trans-unit id="tu288" xml:space="preserve">
+<source xml:lang="en">QGIS telegram channel: <ph id="1">https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ</ph></source>
+<target xml:lang="fr">QGIS telegram channel: <ph id="1">https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ</ph></target>
+</trans-unit>
+<trans-unit id="tu289" xml:space="preserve">
+<source xml:lang="en">Additionally, there is a large amount of youtube tutorials, online guides and learning material for specific
+GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the <bpt id="1">[</bpt>QGIS documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/index.html)</ept> also offers Exercises and Training Material, as well as a <bpt id="2">[</bpt>Gentle Introduction to QGIS<ept id="2">](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html)</ept>.</source>
+<target xml:lang="fr">Additionally, there is a large amount of youtube tutorials, online guides and learning material for specific
+GIS-operations, so it is always a good idea to do a quick google search. Amongst others, the <bpt id="1">[</bpt>QGIS documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/index.html)</ept> also offers Exercises and Training Material, as well as a <bpt id="2">[</bpt>Gentle Introduction to QGIS<ept id="2">](https://docs.qgis.org/3.34/en/docs/gentle_gis_introduction/index.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu290" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu291" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu292" xml:space="preserve">
+<source xml:lang="en">Take a moment to recapitulate what you've learned in this chapter by answering the questions below:</source>
+<target xml:lang="fr">Take a moment to recapitulate what you've learned in this chapter by answering the questions below:</target>
+</trans-unit>
+<trans-unit id="tu293" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is QGIS, and what does it mean that it is “open source”?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is QGIS, and what does it mean that it is “open source”?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu294" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+QGIS is a Geographic Information System (GIS) software that lets users view, edit, analyze, and produce maps from spatial (geographic) and attribute data.
+Being open source means that its source code is freely available: anyone can inspect, modify, and distribute it (under license). It also implies that there is a community of users and developers contributing to it, and that the software is generally available at no cost.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+QGIS is a Geographic Information System (GIS) software that lets users view, edit, analyze, and produce maps from spatial (geographic) and attribute data.
+Being open source means that its source code is freely available: anyone can inspect, modify, and distribute it (under license). It also implies that there is a community of users and developers contributing to it, and that the software is generally available at no cost.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu295" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name three things you can do working with QGIS.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name three things you can do working with QGIS.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu296" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu297" xml:space="preserve">
+<source xml:lang="en">Load spatial data (vector or raster), visualize it on a map</source>
+<target xml:lang="fr">Load spatial data (vector or raster), visualize it on a map</target>
+</trans-unit>
+<trans-unit id="tu298" xml:space="preserve">
+<source xml:lang="en">Edit or digitize features (e.g. adding points, lines, polygons)</source>
+<target xml:lang="fr">Edit or digitize features (e.g. adding points, lines, polygons)</target>
+</trans-unit>
+<trans-unit id="tu299" xml:space="preserve">
+<source xml:lang="en">Perform spatial analysis (e.g. buffer, overlay, join), or produce map outputs (export to PDF/image)
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Perform spatial analysis (e.g. buffer, overlay, join), or produce map outputs (export to PDF/image)
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu300" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you know if a QGIS-project has been saved or not?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you know if a QGIS-project has been saved or not?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu301" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+Typically, QGIS will show an asterisk (*) next to the project name or in the window/tab title if there are unsaved changes. If no asterisk appears (or if “Save” is greyed out), that suggests the project is already saved (i.e. up to date).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+Typically, QGIS will show an asterisk (*) next to the project name or in the window/tab title if there are unsaved changes. If no asterisk appears (or if “Save” is greyed out), that suggests the project is already saved (i.e. up to date).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu302" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you open a QGIS-project?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you open a QGIS-project?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu303" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+You can open a QGIS project via the <ph id="2">`File`</ph> menu → <ph id="3">`Open Project`</ph> (or “Open Project” button in toolbar), then browse for a <ph id="4">`.qgs`</ph> or <ph id="5">`.qgz`</ph> file. Alternatively, double-clicking the project file (if associated on your system) may also open it in QGIS.
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+You can open a QGIS project via the <ph id="2">`File`</ph> menu → <ph id="3">`Open Project`</ph> (or “Open Project” button in toolbar), then browse for a <ph id="4">`.qgs`</ph> or <ph id="5">`.qgz`</ph> file. Alternatively, double-clicking the project file (if associated on your system) may also open it in QGIS.
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu304" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you show and hide panels or toolbars?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you show and hide panels or toolbars?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu305" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+In the top bar, use the <ph id="2">`View`</ph> menu → <ph id="3">`Panels`</ph> or <ph id="4">`Toolbars`</ph> submenus to toggle (check/uncheck) specific panels or toolbars.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+In the top bar, use the <ph id="2">`View`</ph> menu → <ph id="3">`Panels`</ph> or <ph id="4">`Toolbars`</ph> submenus to toggle (check/uncheck) specific panels or toolbars.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu306" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Where can you find help when you are encountering problems with QGIS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Where can you find help when you are encountering problems with QGIS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu307" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu308" xml:space="preserve">
+<source xml:lang="en">On our <bpt id="1">[</bpt>Common errors and issues<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)</ept> page</source>
+<target xml:lang="fr">On our <bpt id="1">[</bpt>Common errors and issues<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_common_errors_and_Issues.html)</ept> page</target>
+</trans-unit>
+<trans-unit id="tu309" xml:space="preserve">
+<source xml:lang="en">By looking into the <bpt id="1">[</bpt>QGIS documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/index.html)</ept></source>
+<target xml:lang="fr">By looking into the <bpt id="1">[</bpt>QGIS documentation<ept id="1">](https://docs.qgis.org/3.34/en/docs/index.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu310" xml:space="preserve">
+<source xml:lang="en">On the <bpt id="1">[</bpt>QGIS user forum on stackexchange<ept id="1">](https://gis.stackexchange.com/?tags=qgis)</ept></source>
+<target xml:lang="fr">On the <bpt id="1">[</bpt>QGIS user forum on stackexchange<ept id="1">](https://gis.stackexchange.com/?tags=qgis)</ept></target>
+</trans-unit>
+<trans-unit id="tu311" xml:space="preserve">
+<source xml:lang="en">In <bpt id="1">[</bpt>QGIS user groups<ept id="1">](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)</ept></source>
+<target xml:lang="fr">In <bpt id="1">[</bpt>QGIS user groups<ept id="1">](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)</ept></target>
+</trans-unit>
+<trans-unit id="tu312" xml:space="preserve">
+<source xml:lang="en">By searching for tutorials on youtube</source>
+<target xml:lang="fr">By searching for tutorials on youtube</target>
+</trans-unit>
+<trans-unit id="tu313" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu314" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

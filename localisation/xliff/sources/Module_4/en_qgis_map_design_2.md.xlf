@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_map_design_2.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The Print layout <bpt id="1">&lt;a id="the-print-layout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The Print layout <bpt id="1">&lt;a id="the-print-layout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.</source>
+<target xml:lang="fr">The print layout in QGIS is where you design and finalise the map in order to print or export it as a PDF (or file format of your choice). Here you can add important elements such as the legend, title, explanatory text, and anything you need to create a comprehensive map. By adding layout elements (legend, title, scale bar, sources, etc.) to a map, you provide your audience with the necessary information to contextualise and evaluate the information shown on the map.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In the top bar, go to  <bpt id="1">__</bpt><ph id="2">`Project`</ph> → <ph id="3">`New Print Layout`</ph> → enter a name for the new print layout → click <ph id="4">`OK`</ph><ept id="1">__</ept>.</source>
+<target xml:lang="fr">In the top bar, go to  <bpt id="1">__</bpt><ph id="2">`Project`</ph> → <ph id="3">`New Print Layout`</ph> → enter a name for the new print layout → click <ph id="4">`OK`</ph><ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">A new window with a blank print layout will appear.</source>
+<target xml:lang="fr">A new window with a blank print layout will appear.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_create_print_layout.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_create_print_layout.png</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 700px</ph>
+<ph id="2">name: Create Print Layout</ph></source>
+<target xml:lang="fr"><ph id="1">width: 700px</ph>
+<ph id="2">name: Create Print Layout</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Create a new Print Layout
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Create a new Print Layout
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Map Composition <bpt id="1">&lt;a id="map-composition"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Map Composition <bpt id="1">&lt;a id="map-composition"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.</source>
+<target xml:lang="fr">A good map guides the reader in understanding the information available on the map, makes the information easily accessible, and is not overloaded with information.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">In general, there are a few things to keep in mind when creating a map:</source>
+<target xml:lang="fr">In general, there are a few things to keep in mind when creating a map:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The main map should cover the largest portion of the page and be centred.</source>
+<target xml:lang="fr">The main map should cover the largest portion of the page and be centred.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">A complete map must have a legend, sources, title, scale, and necessary other information to contextualize the information presented on the map.</source>
+<target xml:lang="fr">A complete map must have a legend, sources, title, scale, and necessary other information to contextualize the information presented on the map.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Additional information, such as title, sources, scale bar, legend, orientation, etc. should be scaled accordingly.</source>
+<target xml:lang="fr">Additional information, such as title, sources, scale bar, legend, orientation, etc. should be scaled accordingly.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Titles should be large so the reader can identify it as the main topic of the map.</source>
+<target xml:lang="fr">Titles should be large so the reader can identify it as the main topic of the map.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).</source>
+<target xml:lang="fr">Additional information should be smaller and moved out of the main focus of the page (e.g. at the bottom, to the sides, or in the corners).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">A well-structured page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.</source>
+<target xml:lang="fr">A well-structured page layout helps the reader discern the different information on the map and makes it easier to know where to look for certain information. Frames and boxes can structure the page layout. For example, a legend can be put on the bottom or to the right of the map.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">In order to produce good maps, there are some <bpt id="1">__</bpt>basic rules<ept id="1">__</ept> to follow and <bpt id="2">__</bpt>semiological mistakes<ept id="2">__</ept> to avoid. The following subchapter will go over the key elements of a map as well as common design mistakes.</source>
+<target xml:lang="fr">In order to produce good maps, there are some <bpt id="1">__</bpt>basic rules<ept id="1">__</ept> to follow and <bpt id="2">__</bpt>semiological mistakes<ept id="2">__</ept> to avoid. The following subchapter will go over the key elements of a map as well as common design mistakes.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Key elements of a map <bpt id="1">&lt;a id="key-elements-of-a-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Key elements of a map <bpt id="1">&lt;a id="key-elements-of-a-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In order to provide your audience and readers with sufficient information so they can contextualise the map, it is important to add these key map elements:</source>
+<target xml:lang="fr">In order to provide your audience and readers with sufficient information so they can contextualise the map, it is important to add these key map elements:</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Title<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Title<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Legend<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Legend<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Scale<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Scale<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Orientation<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Orientation<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Source<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Source<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Overview Map<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Overview Map<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Author<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Author<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_good_map_composition_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_good_map_composition_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_good_map_composition_example</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_good_map_composition_example</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Elements of good map composition
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Elements of good map composition
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The title<ept id="1">__</ept> summarises in a few words the information represented on the map, giving the reader useful contextual information. Titles should include the following information:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The title<ept id="1">__</ept> summarises in a few words the information represented on the map, giving the reader useful contextual information. Titles should include the following information:</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The place<ept id="1">__</ept>, with several degrees of precision according to the scale (Country, Region, Township, ...)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The place<ept id="1">__</ept>, with several degrees of precision according to the scale (Country, Region, Township, ...)</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The subject<ept id="1">__</ept> intelligible by all (make sure that any acronyms used are specified elsewhere on the map)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The subject<ept id="1">__</ept> intelligible by all (make sure that any acronyms used are specified elsewhere on the map)</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>the date<ept id="1">__</ept> of the represented data</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>the date<ept id="1">__</ept> of the represented data</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">_</bpt>Examples:<ept id="1">_</ept></source>
+<target xml:lang="fr"><bpt id="1">_</bpt>Examples:<ept id="1">_</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">_</bpt>"Access to health care in Maputo, Mozambique in 2022"<ept id="1">_</ept></source>
+<target xml:lang="fr"><bpt id="1">_</bpt>"Access to health care in Maputo, Mozambique in 2022"<ept id="1">_</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">_</bpt>"Flooding Risk in Ghardaïa, Algeria"<ept id="1">_</ept></source>
+<target xml:lang="fr"><bpt id="1">_</bpt>"Flooding Risk in Ghardaïa, Algeria"<ept id="1">_</ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The legend<ept id="1">__</ept> is key to interpreting the information represented on the map. Without it, it is impossible to understand the meaning of the different symbols and colours used on the map. In order to guide the reader, the legend must be:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The legend<ept id="1">__</ept> is key to interpreting the information represented on the map. Without it, it is impossible to understand the meaning of the different symbols and colours used on the map. In order to guide the reader, the legend must be:</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Comprehensive<ept id="1">__</ept>: All the data on the map must be presented in the legend.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Comprehensive<ept id="1">__</ept>: All the data on the map must be presented in the legend.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Representative<ept id="1">__</ept>: The figures on the map and in the legend must match (same size, same color, ...).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Representative<ept id="1">__</ept>: The figures on the map and in the legend must match (same size, same color, ...).</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Organized<ept id="1">__</ept>: The data in the legend can be grouped by thematic categories (health, environment, background map, ...) or by type of figure (point, line, surface) to facilitate reading.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Organized<ept id="1">__</ept>: The data in the legend can be grouped by thematic categories (health, environment, background map, ...) or by type of figure (point, line, surface) to facilitate reading.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_legend_good_practice.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_legend_good_practice.png</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_legend_good_practice</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_legend_good_practice</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Example of a well organized legend
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Example of a well organized legend
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The scale bar<ept id="1">__</ept> is essential to a map since it gives the correspondence between a distance measured on the map and the distance in the real world. There are two types of scales:</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The scale bar<ept id="1">__</ept> is essential to a map since it gives the correspondence between a distance measured on the map and the distance in the real world. There are two types of scales:</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The numerical scale<ept id="1">__</ept> is expressed as a fraction (1/25000 or 1:25000) that indicates the ratio between 1 centimetre on the map and the actual distance. It is a scale that can be calculated with GIS software, and is often found in topographic maps. A scale of 1:25000 means that 1 cm represents 25,000 cm (or 250 meters) on the ground.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The numerical scale<ept id="1">__</ept> is expressed as a fraction (1/25000 or 1:25000) that indicates the ratio between 1 centimetre on the map and the actual distance. It is a scale that can be calculated with GIS software, and is often found in topographic maps. A scale of 1:25000 means that 1 cm represents 25,000 cm (or 250 meters) on the ground.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>The graphical scale<ept id="1">__</ept> is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>The graphical scale<ept id="1">__</ept> is expressed by a line on the map, with an associated distance value. This scale is very useful for understanding distances on the ground. The graphical scale will always be the correct size, even if a different printing format is used, since it will undergo the same transformation as the rest of the map</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/example_scale_bar.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/example_scale_bar.png</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: example_scale_bar</ph></source>
+<target xml:lang="fr"><ph id="1">name: example_scale_bar</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Scale bar examples
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Scale bar examples
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Orientation <bpt id="1">&lt;a id="orientation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Orientation <bpt id="1">&lt;a id="orientation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Even though the majority of the maps are oriented towards the north, it is still necessary to specify the orientation of your map. This is often indicated by an arrow pointing to the north, as sometimes a non-northwards orientation is used to represent the study area.</source>
+<target xml:lang="fr">Even though the majority of the maps are oriented towards the north, it is still necessary to specify the orientation of your map. This is often indicated by an arrow pointing to the north, as sometimes a non-northwards orientation is used to represent the study area.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Sources <bpt id="1">&lt;a id="sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sources <bpt id="1">&lt;a id="sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly populated and must also be cited on maps.</source>
+<target xml:lang="fr">Any data represented on a map should have its sources indicated. This provides a record of the data used, but also credits the author of the data. The reader will then be able to look for more information on the sources if he wishes. Open access geographic data, such as OpenStreetMap, are increasingly populated and must also be cited on maps.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">It is possible to give the source of each data under the legend, or to do so in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.</source>
+<target xml:lang="fr">It is possible to give the source of each data under the legend, or to do so in a dedicated space in the map. The level of precision of the sources varies according to the author or the precision of the data.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Take a look at the maps below and pay close attention to how the cartographers arranged the different elements. You can also take a look at maps you encountered in your work or daily life.</source>
+<target xml:lang="fr">Take a look at the maps below and pay close attention to how the cartographers arranged the different elements. You can also take a look at maps you encountered in your work or daily life.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 1<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 1<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4</ph>
+<ph id="2">width: 750 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4</ph>
+<ph id="2">width: 750 px</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA)
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 2<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 2<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/proportional_circles_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/proportional_circles_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: proportional_circles_example</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: proportional_circles_example</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Internally Displaced Persons (IDPs), 30 September 2024 (Source: <bpt id="1">[</bpt>UNHCR<ept id="1">](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Internally Displaced Persons (IDPs), 30 September 2024 (Source: <bpt id="1">[</bpt>UNHCR<ept id="1">](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 3<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 3<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/choropleth_hum_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/choropleth_hum_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: choropleth_hum_example</ph>
+<ph id="2">width: 700 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: choropleth_hum_example</ph>
+<ph id="2">width: 700 px</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)</ept>)
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)</ept>)
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 4<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 4<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_m4_operational_overview_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_m4_operational_overview_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_m4_operational_overview_example</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_m4_operational_overview_example</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Operational overview or response activity map (Source: <bpt id="1">[</bpt>Shelter Cluster Vanuata<ept id="1">](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)</ept>)
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Operational overview or response activity map (Source: <bpt id="1">[</bpt>Shelter Cluster Vanuata<ept id="1">](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)</ept>)
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.</source>
+<target xml:lang="fr">Now that we have covered what to keep in mind when designing maps, let's take a look at how to create maps with the print layout composer in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Check your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Check your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is the print layout manager and why do you use it to create maps in QGIS instead of the main QGIS window?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is the print layout manager and why do you use it to create maps in QGIS instead of the main QGIS window?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+The Print Layout Manager (via <ph id="2">`Project`</ph> → <ph id="3">`New Print Layout`</ph> in QGIS) is a separate interface/window in which you assemble your map for output (print or export) rather than working only in the main map canvas.</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+The Print Layout Manager (via <ph id="2">`Project`</ph> → <ph id="3">`New Print Layout`</ph> in QGIS) is a separate interface/window in which you assemble your map for output (print or export) rather than working only in the main map canvas.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">__</bpt>Print Layout composer<ept id="1">__</ept>:</source>
+<target xml:lang="fr">The <bpt id="1">__</bpt>Print Layout composer<ept id="1">__</ept>:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Allows you to place map elements (map frames, legends, scale bars, titles, inset maps, annotations) in a fixed layout (page size, orientation, margins) suitable for export or printing.</source>
+<target xml:lang="fr">Allows you to place map elements (map frames, legends, scale bars, titles, inset maps, annotations) in a fixed layout (page size, orientation, margins) suitable for export or printing.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">The main QGIS map canvas is designed for interactive editing, exploration and dynamic symbology, not for designing a final composition with all the additional map elements and print specifications (paper size, resolution, export format).</source>
+<target xml:lang="fr">The main QGIS map canvas is designed for interactive editing, exploration and dynamic symbology, not for designing a final composition with all the additional map elements and print specifications (paper size, resolution, export format).</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">In the print layout composer, you can precisely control placement, sizing, layering and placement of map elements.</source>
+<target xml:lang="fr">In the print layout composer, you can precisely control placement, sizing, layering and placement of map elements.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">It enables you to create a polished map product.</source>
+<target xml:lang="fr">It enables you to create a polished map product.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are the key map elements (map components) you should include in a final layout (e.g. title, legend, north arrow, scale bar, inset, northing, attribution)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">A good map should offer additional information, that allows the contextualisation of the map and the displayed information as well as the attribution.</source>
+<target xml:lang="fr">A good map should offer additional information, that allows the contextualisation of the map and the displayed information as well as the attribution.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">The basic elements for a complete map layout should include:</source>
+<target xml:lang="fr">The basic elements for a complete map layout should include:</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Title:<ept id="1">__</ept> A short, concise statement of what the map shows (including the place, the subject and the date if relevant).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Title:<ept id="1">__</ept> A short, concise statement of what the map shows (including the place, the subject and the date if relevant).</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Legend:<ept id="1">__</ept> Explains the symbols, colours and layers used in the map so the reader can interpret the symbology in the map.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Legend:<ept id="1">__</ept> Explains the symbols, colours and layers used in the map so the reader can interpret the symbology in the map.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Scale:<ept id="1">__</ept> Indicates the spatial relationship between map units and real-world distances.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Scale:<ept id="1">__</ept> Indicates the spatial relationship between map units and real-world distances.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Orientation:<ept id="1">__</ept> Typically a north arrow.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Orientation:<ept id="1">__</ept> Typically a north arrow.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Source/Data attribution:<ept id="1">__</ept> A statement of the data sources, author, date of data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Source/Data attribution:<ept id="1">__</ept> A statement of the data sources, author, date of data.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Additional information to help contextualise the map (e.g., description, overview map, attribute table, graph,...)
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Additional information to help contextualise the map (e.g., description, overview map, attribute table, graph,...)
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Further Resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Further Resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Data Visualization Accessibility Checklist<ept id="1">](https://learn-sims.org/style-guidance/data-visualization-accessibility-checklist/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Data Visualization Accessibility Checklist<ept id="1">](https://learn-sims.org/style-guidance/data-visualization-accessibility-checklist/)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

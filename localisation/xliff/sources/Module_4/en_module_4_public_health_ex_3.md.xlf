@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_module_4_public_health_ex_3.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS <bpt id="1">&lt;a id="exercise-3-visualising-health-infrastructure-population-and-measles-incidence-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 3: Visualising Health Infrastructure, Population and Measles Incidence in QGIS <bpt id="1">&lt;a id="exercise-3-visualising-health-infrastructure-population-and-measles-incidence-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Background <bpt id="1">&lt;a id="background"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Now that you have prepared and enriched your datasets in Exercises 1 and 2, it is time to create clear, visually compelling maps for decision-makers.
+These maps will help the Ministry of Health and partners understand:</source>
+<target xml:lang="fr">Now that you have prepared and enriched your datasets in Exercises 1 and 2, it is time to create clear, visually compelling maps for decision-makers.
+These maps will help the Ministry of Health and partners understand:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Which health facilities have cold-chain capacity</source>
+<target xml:lang="fr">Which health facilities have cold-chain capacity</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Where population is concentrated</source>
+<target xml:lang="fr">Where population is concentrated</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Which districts have the highest measles incidence rate</source>
+<target xml:lang="fr">Which districts have the highest measles incidence rate</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">In this exercise, you will create two publication-ready maps using the QGIS Print Layout Composer.</source>
+<target xml:lang="fr">In this exercise, you will create two publication-ready maps using the QGIS Print Layout Composer.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Objectives <bpt id="1">&lt;a id="objectives"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Objectives <bpt id="1">&lt;a id="objectives"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">By the end of this exercise, you will be able to:</source>
+<target xml:lang="fr">By the end of this exercise, you will be able to:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Configure map symbology for clear visualisation</source>
+<target xml:lang="fr">Configure map symbology for clear visualisation</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Create two separate map layouts using the Print Layout</source>
+<target xml:lang="fr">Create two separate map layouts using the Print Layout</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Add essential map elements (title, legend, scale bar, north arrow, logos)</source>
+<target xml:lang="fr">Add essential map elements (title, legend, scale bar, north arrow, logos)</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Export maps as high-quality PDF or PNG outputs</source>
+<target xml:lang="fr">Export maps as high-quality PDF or PNG outputs</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">From the previous exercises:</source>
+<target xml:lang="fr">From the previous exercises:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Healthsites_points_capacities`</ph></source>
+<target xml:lang="fr"><ph id="1">`Healthsites_points_capacities`</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Health facilities enriched with cold-chain and capacity info</source>
+<target xml:lang="fr">Health facilities enriched with cold-chain and capacity info</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_admbnda_adm2_20250212_AB`</ph> (adm2_pop / adm2_population_incidence)</source>
+<target xml:lang="fr"><ph id="1">`tcd_admbnda_adm2_20250212_AB`</ph> (adm2_pop / adm2_population_incidence)</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Adm2 boundaries enriched with population &amp; measles incidence</source>
+<target xml:lang="fr">Adm2 boundaries enriched with population &amp; measles incidence</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`OpenStreetMap basemap (XYZ tiles)`</ph></source>
+<target xml:lang="fr"><ph id="1">`OpenStreetMap basemap (XYZ tiles)`</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Background context</source>
+<target xml:lang="fr">Background context</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`tcd_admbnda_adm1_20250212_AB`</ph></source>
+<target xml:lang="fr"><ph id="1">`tcd_admbnda_adm1_20250212_AB`</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Administrative reference boundaries</source>
+<target xml:lang="fr">Administrative reference boundaries</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Task 1: Visualise the Health Facilities Capacities <bpt id="1">&lt;a id="task-1-visualise-the-health-facilities-capacities"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Visualise the Health Facilities Capacities <bpt id="1">&lt;a id="task-1-visualise-the-health-facilities-capacities"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">*</bpt>Layers Panel<ept id="1">*</ept>, <bpt id="2">&lt;kbd></bpt>right-click<ept id="2">&lt;/kbd></ept> on <ph id="3">`Healthsites_points_capacities`</ph> → <ph id="4">`Properties`</ph>.</source>
+<target xml:lang="fr">In the <bpt id="1">*</bpt>Layers Panel<ept id="1">*</ept>, <bpt id="2">&lt;kbd></bpt>right-click<ept id="2">&lt;/kbd></ept> on <ph id="3">`Healthsites_points_capacities`</ph> → <ph id="4">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Change the style from <ph id="1">`Single Symbol`</ph> to <ph id="2">`Categorized`</ph>.</source>
+<target xml:lang="fr">Change the style from <ph id="1">`Single Symbol`</ph> to <ph id="2">`Categorized`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Under <bpt id="1">**</bpt>Value<ept id="1">**</ept>, select <ph id="2">`cold_chain`</ph>.</source>
+<target xml:lang="fr">Under <bpt id="1">**</bpt>Value<ept id="1">**</ept>, select <ph id="2">`cold_chain`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Adjust the symbols (e.g., blue for “yes”, grey for “no”).</source>
+<target xml:lang="fr">Adjust the symbols (e.g., blue for “yes”, grey for “no”).</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Task 2: Prepare the Measles Incidence Layer <bpt id="1">&lt;a id="task-2-prepare-the-measles-incidence-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Prepare the Measles Incidence Layer <bpt id="1">&lt;a id="task-2-prepare-the-measles-incidence-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the <ph id="2">`adm2_incidence`</ph> layer → <ph id="3">`Properties`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the <ph id="2">`adm2_incidence`</ph> layer → <ph id="3">`Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab.</source>
+<target xml:lang="fr">Open the <bpt id="1">**</bpt>Symbology<ept id="1">**</ept> tab.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Set:</source>
+<target xml:lang="fr">Set:</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Style:<ept id="1">**</ept> Graduated</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Style:<ept id="1">**</ept> Graduated</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Column:<ept id="1">**</ept> <ph id="2">`incidence_rate`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Column:<ept id="1">**</ept> <ph id="2">`incidence_rate`</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Mode:<ept id="1">**</ept> Quantile or Natural Breaks</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Mode:<ept id="1">**</ept> Quantile or Natural Breaks</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Choose a sequential or red–yellow colour ramp.</source>
+<target xml:lang="fr">Choose a sequential or red–yellow colour ramp.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Classify`</ph> → <ph id="2">`Apply`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Classify`</ph> → <ph id="2">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Task 3: Create a Map in the Print Layout Composer <bpt id="1">&lt;a id="task-3-create-a-map-in-the-print-layout-composer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Create a Map in the Print Layout Composer <bpt id="1">&lt;a id="task-3-create-a-map-in-the-print-layout-composer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition}</ph>
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition}</ph>
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">The print layout composer is a separate QGIS window where you can design a printable or publishable map by adding map canvases, legend items, text boxes, attribute tables, etc. to create a finished map product.</source>
+<target xml:lang="fr">The print layout composer is a separate QGIS window where you can design a printable or publishable map by adding map canvases, legend items, text boxes, attribute tables, etc. to create a finished map product.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">First, we need to create a new print layout:</source>
+<target xml:lang="fr">First, we need to create a new print layout:</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Top menu: <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout…`</ph></source>
+<target xml:lang="fr">Top menu: <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout…`</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Name it: <bpt id="1">**</bpt>Health_Facilities_Capacity_Map<ept id="1">**</ept></source>
+<target xml:lang="fr">Name it: <bpt id="1">**</bpt>Health_Facilities_Capacity_Map<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">A new window will open, this is the <bpt id="1">[</bpt>print layout composer<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept>. Take the time to  <bpt id="2">[</bpt>understand the interface and the different tools<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)</ept>.</source>
+<target xml:lang="fr">A new window will open, this is the <bpt id="1">[</bpt>print layout composer<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html)</ept>. Take the time to  <bpt id="2">[</bpt>understand the interface and the different tools<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_understanding_print_layout.html)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Adding a new map frame:</source>
+<target xml:lang="fr">Adding a new map frame:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Add Map`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> from the toolbar on the left.</source>
+<target xml:lang="fr">Select <ph id="1">`Add Map`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> from the toolbar on the left.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Draw a rectangle on the blank page canvas.</source>
+<target xml:lang="fr">Draw a rectangle on the blank page canvas.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Adjust the extent (pan and zoom) using the <ph id="1">`Move item content`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/30.30.2_print_layout_move_content_icon.png)</ept>.</source>
+<target xml:lang="fr">Adjust the extent (pan and zoom) using the <ph id="1">`Move item content`</ph> <bpt id="2">![</bpt><ept id="2">](/fig/30.30.2_print_layout_move_content_icon.png)</ept>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_labels_vector.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Labels for Vector Data <bpt id="1">&lt;a id="labels-for-vector-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Labels for Vector Data <bpt id="1">&lt;a id="labels-for-vector-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Labels are text that display information or values of the data. In QGIS, you can either select <bpt id="1">__</bpt>Single Labels<ept id="1">__</ept> or
+<bpt id="2">__</bpt>Rule-based Labelling<ept id="2">__</ept>. For each option, an attribute (<ph id="3">`value`</ph>) will be displayed on the map. For example, the
+name of a city or region.  Additionally, you can <bpt id="4">__</bpt>change the font, font size, colour and some other styling options<ept id="4">__</ept>
+for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However,
+be aware that too much text information can overload the map with too much information for the reader to process.</source>
+<target xml:lang="fr">Labels are text that display information or values of the data. In QGIS, you can either select <bpt id="1">__</bpt>Single Labels<ept id="1">__</ept> or
+<bpt id="2">__</bpt>Rule-based Labelling<ept id="2">__</ept>. For each option, an attribute (<ph id="3">`value`</ph>) will be displayed on the map. For example, the
+name of a city or region.  Additionally, you can <bpt id="4">__</bpt>change the font, font size, colour and some other styling options<ept id="4">__</ept>
+for the label text. When you create a map, you can add labels to help your reader understand the map quickly. However,
+be aware that too much text information can overload the map with too much information for the reader to process.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Single Labels and Rule-based Labeling <bpt id="1">&lt;a id="single-labels-and-rule-based-labeling"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Single Labels and Rule-based Labeling <bpt id="1">&lt;a id="single-labels-and-rule-based-labeling"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">QGIS offers two methods to display labels: <bpt id="1">__</bpt>Single Labels<ept id="1">__</ept> and <bpt id="2">__</bpt>Rule-based Labeling<ept id="2">__</ept></source>
+<target xml:lang="fr">QGIS offers two methods to display labels: <bpt id="1">__</bpt>Single Labels<ept id="1">__</ept> and <bpt id="2">__</bpt>Rule-based Labeling<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Single Labels <bpt id="1">&lt;a id="single-labels"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Single Labels <bpt id="1">&lt;a id="single-labels"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Creates a single label style for every feature in the layer. You can select an attribute (value) which will be
+displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to
+display. Look at the attribute table of the dataset to find it out.</source>
+<target xml:lang="fr">Creates a single label style for every feature in the layer. You can select an attribute (value) which will be
+displayed. For example, the name of a settlement. You need to know which attribute displays the information you want to
+display. Look at the attribute table of the dataset to find it out.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/labels_single_labels_example_nga_adm1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/labels_single_labels_example_nga_adm1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600 px</ph>
+<ph id="2">name: labels_single_labels_example_nga_adm1</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600 px</ph>
+<ph id="2">name: labels_single_labels_example_nga_adm1</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Single labels for each administrative region (adm1) in Nigeria. The reader is able to assign each label to the respective administrative entity.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_30.30.2_assigning_value_to_labels.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_30.30.2_assigning_value_to_labels.png</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600 px</ph>
+<ph id="2">name: en_30.30.2_assigning_value_to_labels</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600 px</ph>
+<ph id="2">name: en_30.30.2_assigning_value_to_labels</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (<ph id="1">`ADM1_EN`</ph>) to be displayed.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Assigning the correct attribute value in the labeling options. QGIS needs to know which attribute (column) of the attribute table should be displayed as a label. In this case, we want the name of the administrative region (<ph id="1">`ADM1_EN`</ph>) to be displayed.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Adding Single Labels to a Layer <bpt id="1">&lt;a id="adding-single-labels-to-a-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding Single Labels to a Layer <bpt id="1">&lt;a id="adding-single-labels-to-a-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">In the styling panel, click on the <ph id="1">`Labels`</ph>-tab underneath the Symbology tab.</source>
+<target xml:lang="fr">In the styling panel, click on the <ph id="1">`Labels`</ph>-tab underneath the Symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Select <bpt id="1">![</bpt><ept id="1">](../../fig/en_30.30.2_icon_single_labels)</ept> <ph id="2">`Single labels`</ph>.</source>
+<target xml:lang="fr">Select <bpt id="1">![</bpt><ept id="1">](../../fig/en_30.30.2_icon_single_labels)</ept> <ph id="2">`Single labels`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Value`</ph> is where you choose the attribute that will be displayed as a label. For example <ph id="2">`*ADM1_EN*`</ph> will display the English names of Nigerian states for each feature in the data set.</source>
+<target xml:lang="fr"><ph id="1">`Value`</ph> is where you choose the attribute that will be displayed as a label. For example <ph id="2">`*ADM1_EN*`</ph> will display the English names of Nigerian states for each feature in the data set.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Let's <bpt id="1">__</bpt>change the font<ept id="1">__</ept>: Open the font dropdown menu and select Arial. Make the text <ph id="2">`Bold`</ph> in the Style dropdown menu. Change the colour by clicking on <ph id="3">`Colour`</ph>, and change the <ph id="4">`Size`</ph> to 8 pt</source>
+<target xml:lang="fr">Let's <bpt id="1">__</bpt>change the font<ept id="1">__</ept>: Open the font dropdown menu and select Arial. Make the text <ph id="2">`Bold`</ph> in the Style dropdown menu. Change the colour by clicking on <ph id="3">`Colour`</ph>, and change the <ph id="4">`Size`</ph> to 8 pt</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Let's <bpt id="1">__</bpt>add a white buffer<ept id="1">__</ept> around the label. In the <ph id="2">`Labels`</ph> tab, you will find a list with different options to style the labels. Right now, we are in the <ph id="3">`Text`</ph> menu. Select <ph id="4">`Buffer`</ph> and check the <ph id="5">`Draw text buffer`</ph> option. This will make the labels stand out more on dark or crowded maps.</source>
+<target xml:lang="fr">Let's <bpt id="1">__</bpt>add a white buffer<ept id="1">__</ept> around the label. In the <ph id="2">`Labels`</ph> tab, you will find a list with different options to style the labels. Right now, we are in the <ph id="3">`Text`</ph> menu. Select <ph id="4">`Buffer`</ph> and check the <ph id="5">`Draw text buffer`</ph> option. This will make the labels stand out more on dark or crowded maps.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_setting_up_labels.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_setting_up_labels.png</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: en_30.30.2_setting_up_labels</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: en_30.30.2_setting_up_labels</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Setting up labels in QGIS 30.30.2
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Setting up labels in QGIS 30.30.2
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{attention}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.</source>
+<target xml:lang="fr">Single Labels are not always useful. For example, if the dataset is too big, or you only want to display certain features in the dataset. In the example below, there are too many settlements to display labels for each settlement. Instead, it might be useful to only display the regional and national capitals. For such a use case, Rule-based Labeling is ideal.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/single_labels_bad_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/single_labels_bad_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: single_labels_bad_example</ph>
+<ph id="2">width: 400 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: single_labels_bad_example</ph>
+<ph id="2">width: 400 px</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Single Labels were selected to display the names of the settlements (red dots). A map with so much text information is unreadable and the information can hardly be understood.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Rule-based Labelling <bpt id="1">&lt;a id="rule-based-labelling"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Rule-based Labelling <bpt id="1">&lt;a id="rule-based-labelling"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different
+text formatting. Use this if you want to have more control over the information that will be displayed as labels. For
+example, you can filter your data to only display the names of regional capitals.</source>
+<target xml:lang="fr">Create rules using expressions to select accurately which features are to be labeled. Each rule can have a different
+text formatting. Use this if you want to have more control over the information that will be displayed as labels. For
+example, you can filter your data to only display the names of regional capitals.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/rule-based_labeling_example_settlements_nga.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/rule-based_labeling_example_settlements_nga.png</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: rule-based_labeling_example_settlements_nga</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: rule-based_labeling_example_settlements_nga</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">The rules, or filters, are based on an expression. You can use the <bpt id="1">![</bpt><ept id="1">](../../fig/expression_string_builder_icon.png)</ept> <ph id="2">`Expression string builder`</ph> to the right of the <bpt id="3">__</bpt>Filter<ept id="3">__</ept> option in the label panel.</source>
+<target xml:lang="fr">The rules, or filters, are based on an expression. You can use the <bpt id="1">![</bpt><ept id="1">](../../fig/expression_string_builder_icon.png)</ept> <ph id="2">`Expression string builder`</ph> to the right of the <bpt id="3">__</bpt>Filter<ept id="3">__</ept> option in the label panel.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Adding Rule-based Labels to a Layer <bpt id="1">&lt;a id="adding-rule-based-labels-to-a-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding Rule-based Labels to a Layer <bpt id="1">&lt;a id="adding-rule-based-labels-to-a-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">In the styling panel, click on the <ph id="1">`Labels`</ph> tab underneath the Symbology tab.</source>
+<target xml:lang="fr">In the styling panel, click on the <ph id="1">`Labels`</ph> tab underneath the Symbology tab.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Select <bpt id="1">![</bpt><ept id="1">](/../fig/30.30.2_Icon_rule_based_labeling.png)</ept> <ph id="2">`Rule-based Labeling`</ph>.</source>
+<target xml:lang="fr">Select <bpt id="1">![</bpt><ept id="1">](/../fig/30.30.2_Icon_rule_based_labeling.png)</ept> <ph id="2">`Rule-based Labeling`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Add a Rule by clicking on the <ph id="1">`+`</ph>-button in the left corner of the styling panel. A new window will open in the styling panel. In this window, you will enter the rule (<ph id="2">`Filter`</ph>) and customize the label font, size, and placement. Additionally, you can enter a description.</source>
+<target xml:lang="fr">Add a Rule by clicking on the <ph id="1">`+`</ph>-button in the left corner of the styling panel. A new window will open in the styling panel. In this window, you will enter the rule (<ph id="2">`Filter`</ph>) and customize the label font, size, and placement. Additionally, you can enter a description.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Enter a Filter (red box in the figure below). The easiest way is to use the <ph id="1">`Expression string builder`</ph> to the right of the Filter option. Click on the <bpt id="2">![</bpt><ept id="2">](/../fig/expression_string_builder_icon.png)</ept>-Symbol. A new panel will open.</source>
+<target xml:lang="fr">Enter a Filter (red box in the figure below). The easiest way is to use the <ph id="1">`Expression string builder`</ph> to the right of the Filter option. Click on the <bpt id="2">![</bpt><ept id="2">](/../fig/expression_string_builder_icon.png)</ept>-Symbol. A new panel will open.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">In the Expression String builder enter a rule. In the example in the video below, we want to only display settlements that are either national or regional capitals. This corresponds to the String <ph id="1">`("CLASS" = 1 ) OR ("CLASS" = 2)`</ph>. We know this because we know our data and have looked at the attribute table beforehand.</source>
+<target xml:lang="fr">In the Expression String builder enter a rule. In the example in the video below, we want to only display settlements that are either national or regional capitals. This corresponds to the String <ph id="1">`("CLASS" = 1 ) OR ("CLASS" = 2)`</ph>. We know this because we know our data and have looked at the attribute table beforehand.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Set the font and font size.</source>
+<target xml:lang="fr">Set the font and font size.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Apply`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+To add rules to your labels, you need to be familiar with your data! Look at the metadata (in the properties or at the source) and take a look at the attribute table. Think about what the different columns mean and identify the attributes. This might not always be easy, as they might have abbreviated names, but as you work more with data, this will become easier.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+To add rules to your labels, you need to be familiar with your data! Look at the metadata (in the properties or at the source) and take a look at the attribute table. Think about what the different columns mean and identify the attributes. This might not always be easy, as they might have abbreviated names, but as you work more with data, this will become easier.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Below are some further considerations to keep in mind when using labels:</source>
+<target xml:lang="fr">Below are some further considerations to keep in mind when using labels:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Only display information that serves the purpose of the map or is helpful to the reader. Useful information can be the name of a settlement or a place, so the reader can assign a certain symbol on the map to this particular place.</source>
+<target xml:lang="fr">Only display information that serves the purpose of the map or is helpful to the reader. Useful information can be the name of a settlement or a place, so the reader can assign a certain symbol on the map to this particular place.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.</source>
+<target xml:lang="fr">If you want to display different types of information as labels, the font needs to be different so the reader can differentiate between the different types of information that is displayed. A good practice is to display the labels in a similar colour to the objects it is referring to. For example, dark blue text for the labels of light blue bodies of water, or brown text for the labels of light-brown houses.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/good_labels_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/good_labels_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400 px</ph>
+<ph id="2">name: good_labels_example</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400 px</ph>
+<ph id="2">name: good_labels_example</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: <bpt id="1">[</bpt>Axis Maps<ept id="1">](https://www.axismaps.com/guide/labeling)</ept>)
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">A good example of label placement and font. Pay attention to the text colours and orientation. Every label can easily be attributed to the correct cartographic feature. (Source: <bpt id="1">[</bpt>Axis Maps<ept id="1">](https://www.axismaps.com/guide/labeling)</ept>)
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::{Attention}</ph></source>
+<target xml:lang="fr"><ph id="1">::::::{Attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">In most cases, displaying numerical values as labels is confusing to the reader and makes the map too complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.</source>
+<target xml:lang="fr">In most cases, displaying numerical values as labels is confusing to the reader and makes the map too complex. In most cases, for numerical data, you can choose a different visualization such as colours or symbol size.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/labels_numerical_values_bad_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/labels_numerical_values_bad_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: labels_numerical_values_bad_example</ph></source>
+<target xml:lang="fr"><ph id="1">name: labels_numerical_values_bad_example</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Numerical Labels
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Numerical Labels
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{card}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{card}</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/labels_graduated_symbology_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/labels_graduated_symbology_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: labels_graduated_symbology_example</ph></source>
+<target xml:lang="fr"><ph id="1">name: labels_graduated_symbology_example</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Graduated Symbology<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification)</ept>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Graduated Symbology<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification)</ept>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::::</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.</source>
+<target xml:lang="fr">QGIS places the labels automatically. Sometimes, if you are using a lot of black outlines or dark colours, black text is hard to read on the map. In that case, you can add white buffer around the text to make it visible.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/label_text_buffer_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/label_text_buffer_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: label_text_buffer_example</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: label_text_buffer_example</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">A label without a text buffer (left) and a label with a white text buffer (right).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A label without a text buffer (left) and a label with a white text buffer (right).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+QGIS renders labels automatically.
+Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the <bpt id="2">__</bpt>Label tab<ept id="2">__</ept>, or use the <bpt id="3">![</bpt><ept id="3">](../../fig/30.30.2_move_a_label_diagram_callout_icon.png)</ept> <ph id="4">`Move a Label, Diagram, or Callout`</ph>-tool in <bpt id="5">__</bpt>Label toolbar<ept id="5">__</ept>.</source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+QGIS renders labels automatically.
+Sometimes labels can obstruct other symbols. In that case, you can either adjust the placement of the labels in the <bpt id="2">__</bpt>Label tab<ept id="2">__</ept>, or use the <bpt id="3">![</bpt><ept id="3">](../../fig/30.30.2_move_a_label_diagram_callout_icon.png)</ept> <ph id="4">`Move a Label, Diagram, or Callout`</ph>-tool in <bpt id="5">__</bpt>Label toolbar<ept id="5">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option.</source>
+<target xml:lang="fr">By default, QGIS renders the labels so that they don't overlap with other labels. This means that not all the labels will be visible if the data is dense or rendered close to each other. You can optimize the rendering under the rendering option.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Check out the <bpt id="1">[</bpt>wiki article<ept id="1">](/content/Wiki/en_qgis_representation_wiki.md)</ept> for detailed, step-by-step tutorials on how to use the different features of the styling panel.</source>
+<target xml:lang="fr">Check out the <bpt id="1">[</bpt>wiki article<ept id="1">](/content/Wiki/en_qgis_representation_wiki.md)</ept> for detailed, step-by-step tutorials on how to use the different features of the styling panel.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">You can also read further in the article "<bpt id="1">[</bpt>Labeling and text hierarchy in cartography<ept id="1">](https://www.axismaps.com/guide/labeling)</ept>" by Axis Maps.</source>
+<target xml:lang="fr">You can also read further in the article "<bpt id="1">[</bpt>Labeling and text hierarchy in cartography<ept id="1">](https://www.axismaps.com/guide/labeling)</ept>" by Axis Maps.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When using Single Labels, what must you choose in order for labels to be displayed (i.e. what does “Value” refer to)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When using Single Labels, what must you choose in order for labels to be displayed (i.e. what does “Value” refer to)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">In Single Labels mode, you must pick an <bpt id="1">__</bpt>attribute field<ept id="1">__</ept> (column) from the layer whose values will be shown as the labels. This is called the Value field. For example, you can choose the column storing the name of a street to display streetnames on your map.</source>
+<target xml:lang="fr">In Single Labels mode, you must pick an <bpt id="1">__</bpt>attribute field<ept id="1">__</ept> (column) from the layer whose values will be shown as the labels. This is called the Value field. For example, you can choose the column storing the name of a street to display streetnames on your map.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">You can also use an expression instead of a simple field, e.g. concatenate multiple fields or include functions, to build what the label shows.</source>
+<target xml:lang="fr">You can also use an expression instead of a simple field, e.g. concatenate multiple fields or include functions, to build what the label shows.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is a “rule” in rule‑based labeling, and how do you build one (e.g. using expressions)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is a “rule” in rule‑based labeling, and how do you build one (e.g. using expressions)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">A <bpt id="1">__</bpt>rule<ept id="1">__</ept> in rule‑based labeling is a condition (filter) that determines which features get labeled under that rule, and optionally with particular styling. Each rule can have its own label style (font, size etc.)</source>
+<target xml:lang="fr">A <bpt id="1">__</bpt>rule<ept id="1">__</ept> in rule‑based labeling is a condition (filter) that determines which features get labeled under that rule, and optionally with particular styling. Each rule can have its own label style (font, size etc.)</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">To build a rule: in the layer’s Label properties, select Rule‑based labeling. Then add a new rule, give it a description, and set a filter expression (using the expression builder) that tests some attribute(s) (and optionally scale, visibility etc.). Only features satisfying the expression are labeled under that rule.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">To build a rule: in the layer’s Label properties, select Rule‑based labeling. Then add a new rule, give it a description, and set a filter expression (using the expression builder) that tests some attribute(s) (and optionally scale, visibility etc.). Only features satisfying the expression are labeled under that rule.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why might you prefer rule‑based labeling instead of labeling every feature (using Single Labels)? Give an example scenario.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why might you prefer rule‑based labeling instead of labeling every feature (using Single Labels)? Give an example scenario.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Rule‑based labeling<ept id="1">__</ept> lets you label selectively (only some features, e.g. only major roads, only capital cities, or features above a certain size), avoiding clutter.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Rule‑based labeling<ept id="1">__</ept> lets you label selectively (only some features, e.g. only major roads, only capital cities, or features above a certain size), avoiding clutter.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">It also lets you vary label styling per rule (different font size, color, style) depending on the feature’s attribute or scale.</source>
+<target xml:lang="fr">It also lets you vary label styling per rule (different font size, color, style) depending on the feature’s attribute or scale.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Example scenario<ept id="1">__</ept>: Suppose you have a map of cities, and you want to label only large cities (population > 100,000) with their names in big bold font, medium cities in smaller font, and omit very small towns to reduce crowding. You can make rules like "population" > 100000, 10000 &lt; "population" &lt;= 100000, etc. Each rule labels only those features, styled appropriately. This avoids labeling every little town which could overlap and clutter.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Example scenario<ept id="1">__</ept>: Suppose you have a map of cities, and you want to label only large cities (population > 100,000) with their names in big bold font, medium cities in smaller font, and omit very small towns to reduce crowding. You can make rules like "population" > 100000, 10000 &lt; "population" &lt;= 100000, etc. Each rule labels only those features, styled appropriately. This avoids labeling every little town which could overlap and clutter.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is it generally discouraged to label numerical (continuous) values directly as text labels?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is it generally discouraged to label numerical (continuous) values directly as text labels?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Continuous numerical values (e.g. precise counts, measurements) tend to produce <bpt id="1">__</bpt>too many unique labels<ept id="1">__</ept>, which can clutter the map or overlap, making it hard to read.</source>
+<target xml:lang="fr">Continuous numerical values (e.g. precise counts, measurements) tend to produce <bpt id="1">__</bpt>too many unique labels<ept id="1">__</ept>, which can clutter the map or overlap, making it hard to read.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">They often change continuously, so small changes (minor precision) may not be useful and can overwhelm the labeling.</source>
+<target xml:lang="fr">They often change continuously, so small changes (minor precision) may not be useful and can overwhelm the labeling.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Also, continuous values are better represented via <bpt id="1">__</bpt>graded visual variables<ept id="1">__</ept> (e.g. graduated color, size, or choropleth) rather than text, so viewers perceive relative magnitude more naturally.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Also, continuous values are better represented via <bpt id="1">__</bpt>graded visual variables<ept id="1">__</ept> (e.g. graduated color, size, or choropleth) rather than text, so viewers perceive relative magnitude more naturally.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Further Resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Further Resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>IFRC brand-compliant fonts<ept id="1">](https://learn-sims.org/style-guidance/standard-fonts/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>IFRC brand-compliant fonts<ept id="1">](https://learn-sims.org/style-guidance/standard-fonts/)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

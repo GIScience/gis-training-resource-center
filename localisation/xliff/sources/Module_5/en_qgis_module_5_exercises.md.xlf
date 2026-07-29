@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises for Module 5 <bpt id="1">&lt;a id="exercises-for-module-5"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises for Module 5 <bpt id="1">&lt;a id="exercises-for-module-5"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">These exercises touch on all the content of module 5.</source>
+<target xml:lang="fr">These exercises touch on all the content of module 5.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Focus Group</source>
+<target xml:lang="fr">Focus Group</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Health site distribution in the Saint Louis region<ept id="2">](/content/Module_5/en_qgis_spatial_tools_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Health site distribution in the Saint Louis region<ept id="2">](/content/Module_5/en_qgis_spatial_tools_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to become familiar with different types of spatial analysis and geoprocessing tools and understand the process of discovering relationships and connections between features in spatial data. The goal is to determine which health sites in the Saint Louis region in Senegal are prone to flooding. We will make use of Buffers, Classification, Selecting by location, and selecting using an expression.</source>
+<target xml:lang="fr">The aim of this exercise is to become familiar with different types of spatial analysis and geoprocessing tools and understand the process of discovering relationships and connections between features in spatial data. The goal is to determine which health sites in the Saint Louis region in Senegal are prone to flooding. We will make use of Buffers, Classification, Selecting by location, and selecting using an expression.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Data analysis</source>
+<target xml:lang="fr">Data analysis</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 2: Disaster impact in different regions of Senegal<ept id="2">](/content/Module_5/en_qgis_non_spatial_tools_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 2: Disaster impact in different regions of Senegal<ept id="2">](/content/Module_5/en_qgis_non_spatial_tools_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Become familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.</source>
+<target xml:lang="fr">Become familiar with different types of non-spatial analysis and geoprocessing tools. Understand the process of discovering relationships and connections between features in spatial data.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Data analysis</source>
+<target xml:lang="fr">Data analysis</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action<ept id="2">](/content/Module_5/en_qgis_module_5_ex3.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 3: Trigger &amp; Intervention Map for Forecast-based-Action<ept id="2">](/content/Module_5/en_qgis_module_5_ex3.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP). In this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.</source>
+<target xml:lang="fr">This exercise is based on the monitoring and triggering process used by the Somalia Red Crescent Society (SRCS) in the framework of a drought Early Action Protocol (EAP). In this exercise, you will build a simplified version of the monitoring and trigger mechanism for the FEWSNET projection pillar.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Data analysis, Early Action Protocol, Monitoring &amp; Triggering</source>
+<target xml:lang="fr">Data analysis, Early Action Protocol, Monitoring &amp; Triggering</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">6 hours</source>
+<target xml:lang="fr">6 hours</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 4: Security Peshawar<ept id="2">](/content/Module_5/en_qgis_module_5_ex4.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 4: Security Peshawar<ept id="2">](/content/Module_5/en_qgis_module_5_ex4.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Data analysis</source>
+<target xml:lang="fr">Data analysis</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan<ept id="2">](/content/Module_5/en_qgis_module_5_ex5.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan<ept id="2">](/content/Module_5/en_qgis_module_5_ex5.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">The exercise teaches how to aggregate data on administrative levels and subsequently join the aggregated data with a polygon dataset.</source>
+<target xml:lang="fr">The exercise teaches how to aggregate data on administrative levels and subsequently join the aggregated data with a polygon dataset.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Data analysis and creating reports</source>
+<target xml:lang="fr">Data analysis and creating reports</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">60 minutes</source>
+<target xml:lang="fr">60 minutes</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 6: Calculate vulnerability index Part 1<ept id="2">](/content/Module_5/en_qgis_spatial_tools_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 6: Calculate vulnerability index Part 1<ept id="2">](/content/Module_5/en_qgis_spatial_tools_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">We want to create an overview of different vulnerability indicators. Using a Covid-19 risk indicators dataset, we take % permanent wall type, % permanent roof type and poverty incidence. Using Uganda population statistics, we calculate the % of under fives and % of elderly. By combining the data, we are now able to visualise the areas in Uganda that are most vulnerable.</source>
+<target xml:lang="fr">We want to create an overview of different vulnerability indicators. Using a Covid-19 risk indicators dataset, we take % permanent wall type, % permanent roof type and poverty incidence. Using Uganda population statistics, we calculate the % of under fives and % of elderly. By combining the data, we are now able to visualise the areas in Uganda that are most vulnerable.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Data analysis (spatial joins)</source>
+<target xml:lang="fr">Data analysis (spatial joins)</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">45 - 60 minutes</source>
+<target xml:lang="fr">45 - 60 minutes</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 7: Risk Assessment<ept id="2">](/content/Module_5/en_qgis_module_5_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 7: Risk Assessment<ept id="2">](/content/Module_5/en_qgis_module_5_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">In this exercise, we want to create a drought risk assessment for Somalia for early action protocols. In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why.</source>
+<target xml:lang="fr">In this exercise, we want to create a drought risk assessment for Somalia for early action protocols. In the context of the Forecast based Financing methodology the conduction of a robust risk assessment is a crucial step towards the development of an Early Action Protocol. A risk analysis serves to understand what kinds of disaster impacts can be expected from a particular type of hazard and to identify who and what is exposed and vulnerable to this hazard and why.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Risk Assessment for Early Action Protocols</source>
+<target xml:lang="fr">Risk Assessment for Early Action Protocols</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">2 to 3 hours</source>
+<target xml:lang="fr">2 to 3 hours</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 8: Estimating Exposed Population – Aina’s Manual Approach<ept id="2">](/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 8: Estimating Exposed Population – Aina’s Manual Approach<ept id="2">](/content/Module_5/en_qgis_module_5_mdg_aa_ex_1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">This exercise teaches how to buffer cyclone track and use zonal statistics to estimate the population in the cyclone buffer</source>
+<target xml:lang="fr">This exercise teaches how to buffer cyclone track and use zonal statistics to estimate the population in the cyclone buffer</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Data analysis</source>
+<target xml:lang="fr">Data analysis</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">2 hours</source>
+<target xml:lang="fr">2 hours</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 9: Public Health Part 2<ept id="2">](/content/Module_5/en_qgis_module_5_public_health_ex_2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 9: Public Health Part 2<ept id="2">](/content/Module_5/en_qgis_module_5_public_health_ex_2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to aggregate data on district-level, calculate zonal statistics and use the field calculator to calculate the incidence rate of measles in a fictious scenario.</source>
+<target xml:lang="fr">The aim of this exercise is to aggregate data on district-level, calculate zonal statistics and use the field calculator to calculate the incidence rate of measles in a fictious scenario.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Public health workers</source>
+<target xml:lang="fr">Public health workers</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">3 hours</source>
+<target xml:lang="fr">3 hours</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

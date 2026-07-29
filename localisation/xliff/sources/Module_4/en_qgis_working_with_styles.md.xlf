@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_working_with_styles.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exporting and Importing Styles <bpt id="1">&lt;a id="exporting-and-importing-styles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exporting and Importing Styles <bpt id="1">&lt;a id="exporting-and-importing-styles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (<ph id="1">`.qml`</ph>-files). Working with <ph id="2">`.qml`</ph>-files saves you a lot of work and assures consistency between your maps.</source>
+<target xml:lang="fr">The layers in QGIS are saved separately from the settings and styles of a QGIS Project. This means that if you load the same layers into a different QGIS project, the symbology and styling of the data will be different. QGIS lets you save the symbology and styling of a layer as a separate file (<ph id="1">`.qml`</ph>-files). Working with <ph id="2">`.qml`</ph>-files saves you a lot of work and assures consistency between your maps.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">A <ph id="1">`.qml`</ph>-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS project that are not related to the data files themselves. You can choose whether to save only the colour symbology or any additional information.</source>
+<target xml:lang="fr">A <ph id="1">`.qml`</ph>-file saves the information of a particular layer. This includes the colours, outlines, shapes, labelling, as well as the Layer configuration, attribute table settings, and other options you have set for a layer in your QGIS project that are not related to the data files themselves. You can choose whether to save only the colour symbology or any additional information.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
+Some organisations may also use standardised symbols or colours in their maps.</source>
+<target xml:lang="fr">You can export a style into the same folder as the data so your colleagues can apply the same styling when loading the data into QGIS.
+Some organisations may also use standardised symbols or colours in their maps.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "<bpt id="1">__</bpt>Layer properties<ept id="1">__</ept>", "<bpt id="2">__</bpt>Symbology<ept id="2">__</ept>", and "<bpt id="3">__</bpt>Labels<ept id="3">__</ept>" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.</source>
+<target xml:lang="fr">For example, if you want to send a layer to your colleague with the same styling as you, it is best to check the "<bpt id="1">__</bpt>Layer properties<ept id="1">__</ept>", "<bpt id="2">__</bpt>Symbology<ept id="2">__</ept>", and "<bpt id="3">__</bpt>Labels<ept id="3">__</ept>" categories (and any additional styling options you have set). If you only wish to save a certain colouring, line thickness, or labeling style, you only need to check the respective boxes.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Saving or Exporting Styling Settings <bpt id="1">&lt;a id="saving-or-exporting-styling-settings"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Saving or Exporting Styling Settings <bpt id="1">&lt;a id="saving-or-exporting-styling-settings"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Open the styling panel and click on <ph id="1">`Styles`</ph>. A dropdown menu will open with the option to export the layer styling.</source>
+<target xml:lang="fr">Open the styling panel and click on <ph id="1">`Styles`</ph>. A dropdown menu will open with the option to export the layer styling.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.</source>
+<target xml:lang="fr">Since in this case, the styling is for exactly that dataset, you can leave all the boxes checked.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Select a location and name for the styling. The styling will be saved as a <ph id="1">`.qml`</ph> file. <bpt id="2">__</bpt>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.<ept id="2">__</ept></source>
+<target xml:lang="fr">Select a location and name for the styling. The styling will be saved as a <ph id="1">`.qml`</ph> file. <bpt id="2">__</bpt>Make sure it is saved in the same folder as the dataset and give it the same name as the corresponding dataset. This way, when loading the data into QGIS, the styling will automatically be applied.<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_save_layer_style_window.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_save_layer_style_window.png</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 350px</ph>
+<ph id="2">name: en_30.30.2_save_layer_style_window</ph></source>
+<target xml:lang="fr"><ph id="1">width: 350px</ph>
+<ph id="2">name: en_30.30.2_save_layer_style_window</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Save Layer styling window in QGIS 30.30.2.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Save Layer styling window in QGIS 30.30.2.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">When working with similar data (e.g. building types or flooding risk), it is useful to have template styles that can be quickly loaded into your QGIS-project or saved in your Styling Template library.</source>
+<target xml:lang="fr">When working with similar data (e.g. building types or flooding risk), it is useful to have template styles that can be quickly loaded into your QGIS-project or saved in your Styling Template library.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+When a styling is saved in the same location as the data and has the same name as the corresponding dataset, the styling will be automatically applied to the layer when loading the data into QGIS!
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Loading a Style into a QGIS-project <bpt id="1">&lt;a id="loading-a-style-into-a-qgis-project"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Loading a Style into a QGIS-project <bpt id="1">&lt;a id="loading-a-style-into-a-qgis-project"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style manager`</ph>.</source>
+<target xml:lang="fr">Open the style manager: <ph id="1">`Settings`</ph> → <ph id="2">`Style manager`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`import/export`</ph> and select <ph id="2">`import items`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`import/export`</ph> and select <ph id="2">`import items`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Navigate to the folder where the style is saved and click import.</source>
+<target xml:lang="fr">Navigate to the folder where the style is saved and click import.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The style should now be available as a preset in the styling panel.</source>
+<target xml:lang="fr">The style should now be available as a preset in the styling panel.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+You can also import styles directly in the styling panel of a layer. But it will not be added to your style library unless you save it into your library.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+You can copy styles from one layer to another:</source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+You can copy styles from one layer to another:</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Right-click on the styled layer → <ph id="1">`Styles`</ph> → <ph id="2">`Copy Style`</ph> → <ph id="3">`All Style Categories`</ph>.</source>
+<target xml:lang="fr">Right-click on the styled layer → <ph id="1">`Styles`</ph> → <ph id="2">`Copy Style`</ph> → <ph id="3">`All Style Categories`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Right-click on the second layer → <ph id="1">`Styles`</ph> → <ph id="2">`Paste Style`</ph> → <ph id="3">`All Style Categories`</ph>.</source>
+<target xml:lang="fr">Right-click on the second layer → <ph id="1">`Styles`</ph> → <ph id="2">`Paste Style`</ph> → <ph id="3">`All Style Categories`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are the advantages of creating and using styles?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are the advantages of creating and using styles?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Consistency:<ept id="1">__</ept> ensures uniform symbology across maps and projects.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Consistency:<ept id="1">__</ept> ensures uniform symbology across maps and projects.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Reusability:<ept id="1">__</ept> you can apply the same style to different layers or across projects without re-building from scratch.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Reusability:<ept id="1">__</ept> you can apply the same style to different layers or across projects without re-building from scratch.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Efficiency:<ept id="1">__</ept> saves time when styling many layers (by just loading the style file).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Efficiency:<ept id="1">__</ept> saves time when styling many layers (by just loading the style file).</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Shareabilty:<ept id="1">__</ept> you can share your visual designs (symbols, colour ramps, label settings) with colleagues.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Shareabilty:<ept id="1">__</ept> you can share your visual designs (symbols, colour ramps, label settings) with colleagues.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you import or export a style?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you import or export a style?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">In QGIS, right-click on the layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph></source>
+<target xml:lang="fr">In QGIS, right-click on the layer → <ph id="1">`Properties`</ph> → <ph id="2">`Symbology`</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">In the bottom left corner, there is a dropdown menu called <ph id="1">`Style`</ph> with options to import or export styles.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">In the bottom left corner, there is a dropdown menu called <ph id="1">`Style`</ph> with options to import or export styles.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How would you share styles with colleagues or across different machines? What should you watch out for (e.g. file paths, resource dependencies)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How would you share styles with colleagues or across different machines? What should you watch out for (e.g. file paths, resource dependencies)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Symbology`</ph> tab in the <ph id="2">`Properties`</ph> window.</source>
+<target xml:lang="fr">Open the <ph id="1">`Symbology`</ph> tab in the <ph id="2">`Properties`</ph> window.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">In the bottom left corner, click on <ph id="1">`Style`</ph> → <ph id="2">`Save Style`</ph>.</source>
+<target xml:lang="fr">In the bottom left corner, click on <ph id="1">`Style`</ph> → <ph id="2">`Save Style`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Specify the name and saving location.</source>
+<target xml:lang="fr">Specify the name and saving location.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">In the file browser, find the <ph id="1">`.qml`</ph>-file and share it with your colleague.</source>
+<target xml:lang="fr">In the file browser, find the <ph id="1">`.qml`</ph>-file and share it with your colleague.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Things to watch out for:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Things to watch out for:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>File paths/references:<ept id="1">__</ept> If the style references external files (SVGs, images) with absolute paths, those paths may break on another machine.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>File paths/references:<ept id="1">__</ept> If the style references external files (SVGs, images) with absolute paths, those paths may break on another machine.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Missing resources:<ept id="1">__</ept> If an external resource (symbol, image) is absent or moved, the style may fail or fall back to default symbols.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Missing resources:<ept id="1">__</ept> If an external resource (symbol, image) is absent or moved, the style may fail or fall back to default symbols.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Version compatibility<ept id="1">__</ept>: Styles created in one version of QGIS may not fully work or may degrade in another version.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Version compatibility<ept id="1">__</ept>: Styles created in one version of QGIS may not fully work or may degrade in another version.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data compability:<ept id="1">__</ept> If you have set rules or classification based on a layer's attributes, the column names and attributes must be present in the dataset on the second computer.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data compability:<ept id="1">__</ept> If you have set rules or classification based on a layer's attributes, the column names and attributes must be present in the dataset on the second computer.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

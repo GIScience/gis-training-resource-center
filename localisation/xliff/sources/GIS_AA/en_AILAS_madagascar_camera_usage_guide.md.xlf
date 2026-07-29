@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_AILAS_madagascar_camera_usage_guide.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Camera Usage Guide: AILAS Project <bpt id="1">&lt;a id="camera-usage-guide-ailas-project"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Camera Usage Guide: AILAS Project <bpt id="1">&lt;a id="camera-usage-guide-ailas-project"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This documentation provides instructions on how to set up and use the GoPro cameras for the in field aquisition, including detailed instructions on all necessary steps, checklists for the start and end of data aquisition and tips for troubleshooting.</source>
+<target xml:lang="fr">This documentation provides instructions on how to set up and use the GoPro cameras for the in field aquisition, including detailed instructions on all necessary steps, checklists for the start and end of data aquisition and tips for troubleshooting.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Equipment Checklist <bpt id="1">&lt;a id="equipment-checklist"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Equipment Checklist <bpt id="1">&lt;a id="equipment-checklist"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Before departure, ensure you have the following:</source>
+<target xml:lang="fr">Before departure, ensure you have the following:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Item</source>
+<target xml:lang="fr">Item</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">GoPro Hero 13</source>
+<target xml:lang="fr">GoPro Hero 13</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">MicroSD card 1TB</source>
+<target xml:lang="fr">MicroSD card 1TB</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Powerbank</source>
+<target xml:lang="fr">Powerbank</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">USB-C Charging Cable</source>
+<target xml:lang="fr">USB-C Charging Cable</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">GoPro Suction Mount</source>
+<target xml:lang="fr">GoPro Suction Mount</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Printed Copy of This Guide</source>
+<target xml:lang="fr">Printed Copy of This Guide</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>3
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>3
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<group id="sd1_ssf5" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf5_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Camera Installation <bpt id="1">&lt;a id="camera-installation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Camera Installation <bpt id="1">&lt;a id="camera-installation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Choose Mounting Location <bpt id="1">&lt;a id="choose-mounting-location"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Choose Mounting Location <bpt id="1">&lt;a id="choose-mounting-location"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">1. Mount inside the car, <bpt id="1">**</bpt>center of windshield<ept id="1">**</ept> or <bpt id="2">**</bpt>behind rearview mirror<ept id="2">**</ept></source>
+<target xml:lang="fr">1. Mount inside the car, <bpt id="1">**</bpt>center of windshield<ept id="1">**</ept> or <bpt id="2">**</bpt>behind rearview mirror<ept id="2">**</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Avoid obstructing driver’s view.</source>
+<target xml:lang="fr">Avoid obstructing driver’s view.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">2. If needed clean glass before attaching suction mount</source>
+<target xml:lang="fr">2. If needed clean glass before attaching suction mount</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Attach GoPro with suction mount <bpt id="1">&lt;a id="attach-gopro-with-suction-mount"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Attach GoPro with suction mount <bpt id="1">&lt;a id="attach-gopro-with-suction-mount"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">1. Press suction cup <bpt id="1">**</bpt>firmly<ept id="1">**</ept> against windshield</source>
+<target xml:lang="fr">1. Press suction cup <bpt id="1">**</bpt>firmly<ept id="1">**</ept> against windshield</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Make sure locking lever is in UP position</source>
+<target xml:lang="fr">Make sure locking lever is in UP position</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">2. Press the mounts button down with good force</source>
+<target xml:lang="fr">2. Press the mounts button down with good force</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">3. Flip lock lever down to <bpt id="1">**</bpt>secure<ept id="1">**</ept> the mount</source>
+<target xml:lang="fr">3. Flip lock lever down to <bpt id="1">**</bpt>secure<ept id="1">**</ept> the mount</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Wiggle the mount to check if it fits tight</source>
+<target xml:lang="fr">Wiggle the mount to check if it fits tight</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">4. Attach GoPro with the clip attachment and thumbscrew to the mount</source>
+<target xml:lang="fr">4. Attach GoPro with the clip attachment and thumbscrew to the mount</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Make sure Gopro is equipped with clip attachment</source>
+<target xml:lang="fr">Make sure Gopro is equipped with clip attachment</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">5. Adjust <bpt id="1">**</bpt>camera angle<ept id="1">**</ept></source>
+<target xml:lang="fr">5. Adjust <bpt id="1">**</bpt>camera angle<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Ensure lens faces forward, level with the road <ph id="1">&lt;br></ph> and camera field of view captures the road</source>
+<target xml:lang="fr">Ensure lens faces forward, level with the road <ph id="1">&lt;br></ph> and camera field of view captures the road</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Tip for optimal camera alignment
+<ph id="2">:class: tip</ph>
+To fine tune the camera angle for optimal alignment just barely unscrew the screw that connects the GoPro to the clip attachment and slighty adjust the camera angle. To avoid that the camera is tilted to one side make sure that the "GoPro" logo on the suction mount is facing straight up when attaching the suction mount.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Tip for optimal camera alignment
+<ph id="2">:class: tip</ph>
+To fine tune the camera angle for optimal alignment just barely unscrew the screw that connects the GoPro to the clip attachment and slighty adjust the camera angle. To avoid that the camera is tilted to one side make sure that the "GoPro" logo on the suction mount is facing straight up when attaching the suction mount.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Power Setup <bpt id="1">&lt;a id="power-setup"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Power Setup <bpt id="1">&lt;a id="power-setup"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Connect GoPro to Powerbank using USB-C cable</source>
+<target xml:lang="fr">Connect GoPro to Powerbank using USB-C cable</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Place Powerbank <bpt id="1">**</bpt>securely<ept id="1">**</ept> (e.g., glove compartment or dash)</source>
+<target xml:lang="fr">Place Powerbank <bpt id="1">**</bpt>securely<ept id="1">**</ept> (e.g., glove compartment or dash)</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Powerback should be stored safely in case of e.g. abrupt breaking</source>
+<target xml:lang="fr">Powerback should be stored safely in case of e.g. abrupt breaking</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Ensure power connection before driving</source>
+<target xml:lang="fr">Ensure power connection before driving</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Charging symbol should be visible on the top right corner of GoPro screen</source>
+<target xml:lang="fr">Charging symbol should be visible on the top right corner of GoPro screen</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Using your car's power outlet
+<ph id="2">:class: tip</ph>
+If your car has an appropriate power outlet to connect with the USB-C socket of the camera, you can use it instead the powerbank. Don't forget to unplug after the trip.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Using your car's power outlet
+<ph id="2">:class: tip</ph>
+If your car has an appropriate power outlet to connect with the USB-C socket of the camera, you can use it instead the powerbank. Don't forget to unplug after the trip.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<group id="sd1_ssf15" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf15_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Set up Image Capturing <bpt id="1">&lt;a id="set-up-image-capturing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Set up Image Capturing <bpt id="1">&lt;a id="set-up-image-capturing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Configuration of settings <bpt id="1">&lt;a id="configuration-of-settings"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configuration of settings <bpt id="1">&lt;a id="configuration-of-settings"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Camera settings can be easilily configured scanning the provide QR code with the GoPro. This is the standard setup. In the case the QR code setup should not work the <bpt id="1">**</bpt>manual setup<ept id="1">**</ept> is described in addition. <bpt id="2">**</bpt>If possible always use the QR code setup.<ept id="2">**</ept></source>
+<target xml:lang="fr">Camera settings can be easilily configured scanning the provide QR code with the GoPro. This is the standard setup. In the case the QR code setup should not work the <bpt id="1">**</bpt>manual setup<ept id="1">**</ept> is described in addition. <bpt id="2">**</bpt>If possible always use the QR code setup.<ept id="2">**</ept></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Hold down <bpt id="1">**</bpt>Power/Mode<ept id="1">**</ept> button to turn on the GoPro.</source>
+<target xml:lang="fr">Hold down <bpt id="1">**</bpt>Power/Mode<ept id="1">**</ept> button to turn on the GoPro.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Scan the following QR code with the Gopro by pointing the lens towards the code</source>
+<target xml:lang="fr">Scan the following QR code with the Gopro by pointing the lens towards the code</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">If sucessful a QR_code icon with a red checkmark should pop up</source>
+<target xml:lang="fr">If sucessful a QR_code icon with a red checkmark should pop up</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Check if "AILAS" is displayed in the mode overview in the bottom centre of the screen</source>
+<target xml:lang="fr">Check if "AILAS" is displayed in the mode overview in the bottom centre of the screen</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">If the camera already is set in the "AILAS" mode you do not have to configure the settings.</source>
+<target xml:lang="fr">If the camera already is set in the "AILAS" mode you do not have to configure the settings.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">QR code configuration <bpt id="1">&lt;a id="qr-code-configuration"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QR code configuration <bpt id="1">&lt;a id="qr-code-configuration"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>QR Code Scanning
+<ph id="2">:class: tip</ph>
+If the scanning of the QR code is not working immeadiately try in different lighting conditions or with the camera closer to the code.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>QR Code Scanning
+<ph id="2">:class: tip</ph>
+If the scanning of the QR code is not working immeadiately try in different lighting conditions or with the camera closer to the code.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Alternative Manual Configuration <bpt id="1">&lt;a id="alternative-manual-configuration"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Alternative Manual Configuration <bpt id="1">&lt;a id="alternative-manual-configuration"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">1. Press the <bpt id="1">**</bpt>Mode/Power<ept id="1">**</ept> button until the screen displays <bpt id="2">*</bpt>“Timelapse”<ept id="2">*</ept> <ph id="3">&lt;!-- Icon --></ph></source>
+<target xml:lang="fr">1. Press the <bpt id="1">**</bpt>Mode/Power<ept id="1">**</ept> button until the screen displays <bpt id="2">*</bpt>“Timelapse”<ept id="2">*</ept> <ph id="3">&lt;!-- Icon --></ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">2.Tap the <bpt id="1">**</bpt>settings<ept id="1">**</ept> icon (bottom right) and configure as follows:<ph id="2">&lt;br></ph> • <bpt id="3">**</bpt>Format<ept id="3">**</ept>: Photo<ph id="4">&lt;br></ph> • <bpt id="5">**</bpt>Digital Lens<ept id="5">**</ept>: Wide<ph id="6">&lt;br></ph> • <bpt id="7">**</bpt>Capture<ept id="7">**</ept>: Interval = 5s<ph id="8">&lt;br></ph></source>
+<target xml:lang="fr">2.Tap the <bpt id="1">**</bpt>settings<ept id="1">**</ept> icon (bottom right) and configure as follows:<ph id="2">&lt;br></ph> • <bpt id="3">**</bpt>Format<ept id="3">**</ept>: Photo<ph id="4">&lt;br></ph> • <bpt id="5">**</bpt>Digital Lens<ept id="5">**</ept>: Wide<ph id="6">&lt;br></ph> • <bpt id="7">**</bpt>Capture<ept id="7">**</ept>: Interval = 5s<ph id="8">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Leave remaining  settings unchanged</source>
+<target xml:lang="fr">Leave remaining  settings unchanged</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">3. Tap the <bpt id="1">**</bpt>back arrow<ept id="1">**</ept> to save and return to the main screen.</source>
+<target xml:lang="fr">3. Tap the <bpt id="1">**</bpt>back arrow<ept id="1">**</ept> to save and return to the main screen.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 5s W"</source>
+<target xml:lang="fr">in the bottom centre of the scrren should now be displayed: "Time Lapse Photo 5s W"</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Start/Stop Capturing Images <bpt id="1">&lt;a id="startstop-capturing-images"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Start/Stop Capturing Images <bpt id="1">&lt;a id="startstop-capturing-images"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Instructions</source>
+<target xml:lang="fr">Instructions</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Notes</source>
+<target xml:lang="fr">Notes</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">1. Tap the <bpt id="1">**</bpt>Shutter<ept id="1">**</ept> button (top button) to begin shooting.</source>
+<target xml:lang="fr">1. Tap the <bpt id="1">**</bpt>Shutter<ept id="1">**</ept> button (top button) to begin shooting.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">2. GoPro will now take one photo every 5 seconds.</source>
+<target xml:lang="fr">2. GoPro will now take one photo every 5 seconds.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Red blinking every 5 seconds indicates that the camera is shooting</source>
+<target xml:lang="fr">Red blinking every 5 seconds indicates that the camera is shooting</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">3. Tap the <bpt id="1">**</bpt>Shutter<ept id="1">**</ept> button again to stop.</source>
+<target xml:lang="fr">3. Tap the <bpt id="1">**</bpt>Shutter<ept id="1">**</ept> button again to stop.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">4. Hold the <bpt id="1">**</bpt>Power<ept id="1">**</ept> button to turn off GoPro at the end of the drive.</source>
+<target xml:lang="fr">4. Hold the <bpt id="1">**</bpt>Power<ept id="1">**</ept> button to turn off GoPro at the end of the drive.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">The camera will beep a couple of times when turning off</source>
+<target xml:lang="fr">The camera will beep a couple of times when turning off</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Start of Drive Checklist <bpt id="1">&lt;a id="start-of-drive-checklist"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Start of Drive Checklist <bpt id="1">&lt;a id="start-of-drive-checklist"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Camera Setup <bpt id="1">&lt;a id="camera-setup"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Camera Setup <bpt id="1">&lt;a id="camera-setup"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Mount the camera on the windshield facing straight ahead.</source>
+<target xml:lang="fr">Mount the camera on the windshield facing straight ahead.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Connect the Powerbank to the camera with the USB-C cable.</source>
+<target xml:lang="fr">Connect the Powerbank to the camera with the USB-C cable.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Store the Powerbank somewhere safe so it won’t move while driving.</source>
+<target xml:lang="fr">Store the Powerbank somewhere safe so it won’t move while driving.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Start Filming <bpt id="1">&lt;a id="start-filming"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Start Filming <bpt id="1">&lt;a id="start-filming"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Hold the side power button until the screen turns on.</source>
+<target xml:lang="fr">Hold the side power button until the screen turns on.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Scan the QR code to configure settings (if not working manual setup)</source>
+<target xml:lang="fr">Scan the QR code to configure settings (if not working manual setup)</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Wait about 1 minute for the camera to pick up GPS signal</source>
+<target xml:lang="fr">Wait about 1 minute for the camera to pick up GPS signal</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Press the top shutter button (big button on top) to start capturing</source>
+<target xml:lang="fr">Press the top shutter button (big button on top) to start capturing</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Final Pre-Drive Check <bpt id="1">&lt;a id="final-pre-drive-check"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Final Pre-Drive Check <bpt id="1">&lt;a id="final-pre-drive-check"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Is the camera firmly mounted?</source>
+<target xml:lang="fr">Is the camera firmly mounted?</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Is camera level and facing straight ahead?</source>
+<target xml:lang="fr">Is camera level and facing straight ahead?</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Is the GoPro blinking every 5 seconds (taking photos)?</source>
+<target xml:lang="fr">Is the GoPro blinking every 5 seconds (taking photos)?</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Is the Powerbank connected and charging the GoPro?</source>
+<target xml:lang="fr">Is the Powerbank connected and charging the GoPro?</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Is the camera orientation setting correct? If the menu on the camera back screen displays upside down, the setting is incorrect.</source>
+<target xml:lang="fr">Is the camera orientation setting correct? If the menu on the camera back screen displays upside down, the setting is incorrect.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">End of Drive Checklist <bpt id="1">&lt;a id="end-of-drive-checklist"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">End of Drive Checklist <bpt id="1">&lt;a id="end-of-drive-checklist"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Stop Filming <bpt id="1">&lt;a id="stop-filming"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Stop Filming <bpt id="1">&lt;a id="stop-filming"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Press the top shutter button to stop capturing.</source>
+<target xml:lang="fr">Press the top shutter button to stop capturing.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Hold the power button on the side until the screen turns off.</source>
+<target xml:lang="fr">Hold the power button on the side until the screen turns off.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Unplug the USB-C cable from the GoPro.</source>
+<target xml:lang="fr">Unplug the USB-C cable from the GoPro.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Inspect the Equipment <bpt id="1">&lt;a id="inspect-the-equipment"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Inspect the Equipment <bpt id="1">&lt;a id="inspect-the-equipment"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Check that the mount is still tight and GoPro is undamaged.</source>
+<target xml:lang="fr">Check that the mount is still tight and GoPro is undamaged.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Clean the camera lens if dusty or dirty.</source>
+<target xml:lang="fr">Clean the camera lens if dusty or dirty.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Leave the GoPro securely mounted if safe, or store it in its case or bag.</source>
+<target xml:lang="fr">Leave the GoPro securely mounted if safe, or store it in its case or bag.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Charge Powerbank (if applicable) <bpt id="1">&lt;a id="charge-powerbank-if-applicable"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Charge Powerbank (if applicable) <bpt id="1">&lt;a id="charge-powerbank-if-applicable"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Plug the Powerbank into a wall socket to charge overnight.</source>
+<target xml:lang="fr">Plug the Powerbank into a wall socket to charge overnight.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Report Any Problems <bpt id="1">&lt;a id="report-any-problems"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Report Any Problems <bpt id="1">&lt;a id="report-any-problems"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Contact technical support immediately if:</source>
+<target xml:lang="fr">Contact technical support immediately if:</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">The GoPro didn’t work</source>
+<target xml:lang="fr">The GoPro didn’t work</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">The mount fell off and can't be reinstalled</source>
+<target xml:lang="fr">The mount fell off and can't be reinstalled</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">The Powerbank didn’t charge</source>
+<target xml:lang="fr">The Powerbank didn’t charge</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Anything looked broken or unusual</source>
+<target xml:lang="fr">Anything looked broken or unusual</target>
+</trans-unit>
+<group id="sd1_ssf48" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf48_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Troubleshooting Tips <bpt id="1">&lt;a id="troubleshooting-tips"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Troubleshooting Tips <bpt id="1">&lt;a id="troubleshooting-tips"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Issue</source>
+<target xml:lang="fr">Issue</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Solution</source>
+<target xml:lang="fr">Solution</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">GoPro not turning on</source>
+<target xml:lang="fr">GoPro not turning on</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Check battery level or connect Powerbank</source>
+<target xml:lang="fr">Check battery level or connect Powerbank</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Photos not being taken</source>
+<target xml:lang="fr">Photos not being taken</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Ensure "AILAS" mode is active and Shutter is pressed</source>
+<target xml:lang="fr">Ensure "AILAS" mode is active and Shutter is pressed</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Powerbank not charging</source>
+<target xml:lang="fr">Powerbank not charging</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Check cable connection; try another USB port</source>
+<target xml:lang="fr">Check cable connection; try another USB port</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Suction mount falling off</source>
+<target xml:lang="fr">Suction mount falling off</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Clean glass and remount (in different spot)</source>
+<target xml:lang="fr">Clean glass and remount (in different spot)</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">GoPro beeps/overheats</source>
+<target xml:lang="fr">GoPro beeps/overheats</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Turn off for 5 mins in shade, then resume</source>
+<target xml:lang="fr">Turn off for 5 mins in shade, then resume</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">QR Code is not scanned</source>
+<target xml:lang="fr">QR Code is not scanned</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Use alternatice code or perform manual configuarion</source>
+<target xml:lang="fr">Use alternatice code or perform manual configuarion</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Troubleshooting: Upside down menu <bpt id="1">&lt;a id="troubleshooting-upside-down-menu"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Troubleshooting: Upside down menu <bpt id="1">&lt;a id="troubleshooting-upside-down-menu"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">If the menu is displayed upside down on the camera screen as in the following image, the images themselves will also be saved with the wrong orientation.</source>
+<target xml:lang="fr">If the menu is displayed upside down on the camera screen as in the following image, the images themselves will also be saved with the wrong orientation.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Do the following to fix this before starting to record:</source>
+<target xml:lang="fr">Do the following to fix this before starting to record:</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Swipe down from the top of the screen to open the settings menu.</source>
+<target xml:lang="fr">Swipe down from the top of the screen to open the settings menu.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Turn off the orientation lock:</source>
+<target xml:lang="fr">Turn off the orientation lock:</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Scan the QR code again to make sure that no other settings were changed by accident.</source>
+<target xml:lang="fr">Scan the QR code again to make sure that no other settings were changed by accident.</target>
+</trans-unit>
+<group id="sd1_ssf53" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf53_tu1" resname="sd1_1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">&lt;br></ph>
+---
+<ph id="2">&lt;br></ph></source>
+<target xml:lang="fr"><ph id="1">&lt;br></ph>
+---
+<ph id="2">&lt;br></ph></target>
+</trans-unit>
+</group>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Support Contact <bpt id="1">&lt;a id="support-contact"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Support Contact <bpt id="1">&lt;a id="support-contact"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">If anything goes wrong or you're unsure, don't hesitate to contact:</source>
+<target xml:lang="fr">If anything goes wrong or you're unsure, don't hesitate to contact:</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Alec Schulze-Eckel &amp; Oliver Fritz<ph id="1">&lt;br></ph>
+humanitarian_gi@heigit.org</source>
+<target xml:lang="fr">Alec Schulze-Eckel &amp; Oliver Fritz<ph id="1">&lt;br></ph>
+humanitarian_gi@heigit.org</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

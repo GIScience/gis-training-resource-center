@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_ex4.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Task 4: Something something capacity? <bpt id="1">&lt;a id="task-4-something-something-capacity"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 4: Something something capacity? <bpt id="1">&lt;a id="task-4-something-something-capacity"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">STEP 1: Data Preparation <bpt id="1">&lt;a id="step-1-data-preparation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 1: Data Preparation <bpt id="1">&lt;a id="step-1-data-preparation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Download population density layer here: <ph id="1">https://hub.worldpop.org/geodata/summary?id=49708</ph>  and open in QGIS.</source>
+<target xml:lang="fr">Download population density layer here: <ph id="1">https://hub.worldpop.org/geodata/summary?id=49708</ph>  and open in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The units are the number of people per pixel. Country totals have been adjusted to match the corresponding official United Nations population estimates produced by the Population Division of the  Economic and Social Affairs Department of the United Nations Secretariat (2019 Revision of World Population Prospects). "NoData" values represent areas that have been mapped unpopulated. This was done based on building footprints from the Digitize Africa project by Ecopia.AI and Maxar Technologies (2020).</source>
+<target xml:lang="fr">The units are the number of people per pixel. Country totals have been adjusted to match the corresponding official United Nations population estimates produced by the Population Division of the  Economic and Social Affairs Department of the United Nations Secretariat (2019 Revision of World Population Prospects). "NoData" values represent areas that have been mapped unpopulated. This was done based on building footprints from the Digitize Africa project by Ecopia.AI and Maxar Technologies (2020).</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Create a vector grid</source>
+<target xml:lang="fr">Create a vector grid</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">make sure to change the coordinate system so that you can enter the data in meters instead of degrees<ph id="1">  </ph>
+        <ph id="2">https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-#</ph> here you are able to calculate the specific UTM zone
+        <ph id="3">https://projectionwizard.org/</ph> if you zoom into the respective region you will get the appropriate projection</source>
+<target xml:lang="fr">make sure to change the coordinate system so that you can enter the data in meters instead of degrees<ph id="1">  </ph>
+        <ph id="2">https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-#</ph> here you are able to calculate the specific UTM zone
+        <ph id="3">https://projectionwizard.org/</ph> if you zoom into the respective region you will get the appropriate projection</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Create a vector grid with 1000m resolution by using the tool create grid</source>
+<target xml:lang="fr">Create a vector grid with 1000m resolution by using the tool create grid</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Join the grid and the population layer by using the tool zonal statistics</source>
+<target xml:lang="fr">Join the grid and the population layer by using the tool zonal statistics</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Input layer: Grid Networkanalysis - Hospital Accessibility, Rwanda.zip
+    Raster layer: Population layer
+    statistics to calculate: sum</source>
+<target xml:lang="fr">Input layer: Grid Networkanalysis - Hospital Accessibility, Rwanda.zip
+    Raster layer: Population layer
+    statistics to calculate: sum</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Cut the Grid along the border of Rwanda by using the tool select by location to make sure that we just work with the objects with the country border. Administrative boundaries can be downloaded here: <ph id="1">https://www.naturalearthdata.com/</ph></source>
+<target xml:lang="fr">Cut the Grid along the border of Rwanda by using the tool select by location to make sure that we just work with the objects with the country border. Administrative boundaries can be downloaded here: <ph id="1">https://www.naturalearthdata.com/</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">extract features from: zonal statistic layer (Grid)
+    where the features: intersect
+    by comparing to the features from: Rwanda border layer</source>
+<target xml:lang="fr">extract features from: zonal statistic layer (Grid)
+    where the features: intersect
+    by comparing to the features from: Rwanda border layer</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">ADDIT: In addition, it makes sense to have a look on the a basemap like OSM to check if there are any big water surfaces etc. Therefore, you can also use the tool QuickOSM and use the name of the water body. If so, you should cut them out, as water areas are uninhabited (population layer). Use the tool select by location.</source>
+<target xml:lang="fr">ADDIT: In addition, it makes sense to have a look on the a basemap like OSM to check if there are any big water surfaces etc. Therefore, you can also use the tool QuickOSM and use the name of the water body. If so, you should cut them out, as water areas are uninhabited (population layer). Use the tool select by location.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Creation of hospital layer by using the the tool QuickOSM</source>
+<target xml:lang="fr">Creation of hospital layer by using the the tool QuickOSM</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">key = amenity … value = hospital … in … Rwanda → Result: point-, line- &amp; polygon layer</source>
+<target xml:lang="fr">key = amenity … value = hospital … in … Rwanda → Result: point-, line- &amp; polygon layer</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">using the tool „select by location“ we can check if there are objects from the polygon or line layer that are not included in the point layer</source>
+<target xml:lang="fr">using the tool „select by location“ we can check if there are objects from the polygon or line layer that are not included in the point layer</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">if so; we need to convert them into points</source>
+<target xml:lang="fr">if so; we need to convert them into points</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">by using the tool centroids, which creates a new point layer with the points representing the centers of the geometries of the input layer</source>
+<target xml:lang="fr">by using the tool centroids, which creates a new point layer with the points representing the centers of the geometries of the input layer</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">by using the tool „merge vector layers“ we merge the first point layer and the new point layer</source>
+<target xml:lang="fr">by using the tool „merge vector layers“ we merge the first point layer and the new point layer</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">STEP 2: Isochrone generation <bpt id="1">&lt;a id="step-2-isochrone-generation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 2: Isochrone generation <bpt id="1">&lt;a id="step-2-isochrone-generation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">by using the tool ORS tools we calculate the isochrones for the hospitals</source>
+<target xml:lang="fr">by using the tool ORS tools we calculate the isochrones for the hospitals</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">STEP 3: Merge Population and Isochrones <bpt id="1">&lt;a id="step-3-merge-population-and-isochrones"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 3: Merge Population and Isochrones <bpt id="1">&lt;a id="step-3-merge-population-and-isochrones"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">ADDIT: Remember to rename the layers to keep the overview. The attribute tables should also be clear. Delete irrelevant columns and rename columns if necessary.</source>
+<target xml:lang="fr">ADDIT: Remember to rename the layers to keep the overview. The attribute tables should also be clear. Delete irrelevant columns and rename columns if necessary.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">STEP 4: Calculate available hospitals in 60 Min. <bpt id="1">&lt;a id="step-4-calculate-available-hospitals-in-60-min"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 4: Calculate available hospitals in 60 Min. <bpt id="1">&lt;a id="step-4-calculate-available-hospitals-in-60-min"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Open the attribute table of the final and use the field calculator.</source>
+<target xml:lang="fr">Open the attribute table of the final and use the field calculator.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Step 5 Analysis of potential patient volume (lower level) <bpt id="1">&lt;a id="step-5-analysis-of-potential-patient-volume-lower-level"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 5 Analysis of potential patient volume (lower level) <bpt id="1">&lt;a id="step-5-analysis-of-potential-patient-volume-lower-level"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">1: Create a new ID for the hospitals</source>
+<target xml:lang="fr">1: Create a new ID for the hospitals</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">2: Export the final grid as Excel File</source>
+<target xml:lang="fr">2: Export the final grid as Excel File</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Export the layer final grid as MS Office Open XMP Spreadsheet [XLSX)</source>
+<target xml:lang="fr">Export the layer final grid as MS Office Open XMP Spreadsheet [XLSX)</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">3: Open file and insert pivot table</source>
+<target xml:lang="fr">3: Open file and insert pivot table</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">4: Join</source>
+<target xml:lang="fr">4: Join</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_8/en_qgis_remote_sensing_theory.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Introduction to Remote Sensing and Remote Sensing Data <bpt id="1">&lt;a id="introduction-to-remote-sensing-and-remote-sensing-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introduction to Remote Sensing and Remote Sensing Data <bpt id="1">&lt;a id="introduction-to-remote-sensing-and-remote-sensing-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">What is Remote Sensing? <bpt id="1">&lt;a id="what-is-remote-sensing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is Remote Sensing? <bpt id="1">&lt;a id="what-is-remote-sensing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Remote sensing can be defined as the set of methods used to obtain information about the Earth's surface by measuring and interpreting the energy radiated from it. The electromagnetic radiation reflected or emitted by the Earth serves as a carrier of information about the state of the Earth's surface. <ph id="1">&lt;br></ph></source>
+<target xml:lang="fr">Remote sensing can be defined as the set of methods used to obtain information about the Earth's surface by measuring and interpreting the energy radiated from it. The electromagnetic radiation reflected or emitted by the Earth serves as a carrier of information about the state of the Earth's surface. <ph id="1">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The information provided by the radiation emitted from the Earth's surface can be measured by sensors mounted on vehicles such as drones, aircraft or satellites, and then stored in the form of gridded image data. A simple form of remote sensing data is an ordinary aerial photograph taken, for example, by a drone. The radiation measured and stored in the form of a grid (in this case a photograph) is the visible spectrum of electromagnetic radiation emitted by the Earth's surface and the objects on it.<ph id="1">&lt;br></ph></source>
+<target xml:lang="fr">The information provided by the radiation emitted from the Earth's surface can be measured by sensors mounted on vehicles such as drones, aircraft or satellites, and then stored in the form of gridded image data. A simple form of remote sensing data is an ordinary aerial photograph taken, for example, by a drone. The radiation measured and stored in the form of a grid (in this case a photograph) is the visible spectrum of electromagnetic radiation emitted by the Earth's surface and the objects on it.<ph id="1">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Electromagnetic Radiation and its interaction with the Earths Surface <bpt id="1">&lt;a id="electromagnetic-radiation-and-its-interaction-with-the-earths-surface"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Electromagnetic Radiation and its interaction with the Earths Surface <bpt id="1">&lt;a id="electromagnetic-radiation-and-its-interaction-with-the-earths-surface"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">An important component of remote sensing is that different sensors can measure and process a much wider range of electromagnetic radiation than the human eye, which is limited to the visible spectrum. The electromagnetic spectrum can be divided into multiple wavelength intervals like the visible spectrum, the infra-red spectrum or microwaves (see <ph id="1">{numref}</ph><ph id="2">`electromagnetic_spectrum_raster`</ph>). <ph id="3">&lt;br></ph></source>
+<target xml:lang="fr">An important component of remote sensing is that different sensors can measure and process a much wider range of electromagnetic radiation than the human eye, which is limited to the visible spectrum. The electromagnetic spectrum can be divided into multiple wavelength intervals like the visible spectrum, the infra-red spectrum or microwaves (see <ph id="1">{numref}</ph><ph id="2">`electromagnetic_spectrum_raster`</ph>). <ph id="3">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Objects and the Earth's surface reflect and absorb EMR across the wavelength spectrum and with distinct patterns that are unique to the type of object/surface. These unique patterns are called "spectral signatures" and are visualised in signature graphs.
+Signatures vary with variations in an object/surface's material composition, structure and surface properties. For example:</source>
+<target xml:lang="fr">Objects and the Earth's surface reflect and absorb EMR across the wavelength spectrum and with distinct patterns that are unique to the type of object/surface. These unique patterns are called "spectral signatures" and are visualised in signature graphs.
+Signatures vary with variations in an object/surface's material composition, structure and surface properties. For example:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Vegetation typically has a high reflectance in the near-infrared region of the spectrum due to the absorption characteristics of chlorophyll, resulting in a prominent peak in this region.</source>
+<target xml:lang="fr">Vegetation typically has a high reflectance in the near-infrared region of the spectrum due to the absorption characteristics of chlorophyll, resulting in a prominent peak in this region.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Water bodies tend to have low reflectance over most of the spectrum, with higher absorption at visible wavelengths and lower absorption in the NIR.</source>
+<target xml:lang="fr">Water bodies tend to have low reflectance over most of the spectrum, with higher absorption at visible wavelengths and lower absorption in the NIR.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Urban areas can have complex spectral signatures due to the variety of materials pre-sent, such as asphalt, concrete and metal, each with its own reflectance characteristics across the spectrum.</source>
+<target xml:lang="fr">Urban areas can have complex spectral signatures due to the variety of materials pre-sent, such as asphalt, concrete and metal, each with its own reflectance characteristics across the spectrum.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">By analysing these spectral signatures it is possible to identify and classify surface features and materials from aerial or satellite imagery. Applications include classification of land cover types, monitoring environmental changes such as deforestation or anthropogenic processes such as urban expansion</source>
+<target xml:lang="fr">By analysing these spectral signatures it is possible to identify and classify surface features and materials from aerial or satellite imagery. Applications include classification of land cover types, monitoring environmental changes such as deforestation or anthropogenic processes such as urban expansion</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Remote Sensing Sensors and Platforms <bpt id="1">&lt;a id="remote-sensing-sensors-and-platforms"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Remote Sensing Sensors and Platforms <bpt id="1">&lt;a id="remote-sensing-sensors-and-platforms"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The main source of electromagnetic radiation on Earth is the Sun, whose reflected radiation is also the dominant source of information for remote sensing imagery in general. Sensors can measure this electromagnetic radiation in specific ranges, called "bands", which are usually represented individually by a raster file when acquiring remote sensing data. <ph id="1">&lt;br></ph></source>
+<target xml:lang="fr">The main source of electromagnetic radiation on Earth is the Sun, whose reflected radiation is also the dominant source of information for remote sensing imagery in general. Sensors can measure this electromagnetic radiation in specific ranges, called "bands", which are usually represented individually by a raster file when acquiring remote sensing data. <ph id="1">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">For example, the standard data from the Landsat 8 satellite mission, which is one of the most commonly used datasets, has X different bands ranging from X over X to X.</source>
+<target xml:lang="fr">For example, the standard data from the Landsat 8 satellite mission, which is one of the most commonly used datasets, has X different bands ranging from X over X to X.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Remote sensing methods can generally be divided into two categories: active and passive remote sensing: If the source of the measured energy is the sun, it is called passive remote sensing and the result of this measurement can be a digital image. However, there is also the possibility of emitting radiation from the sensor platform and then measuring the return reflection. This method can be defined as active remote sensing.</source>
+<target xml:lang="fr">Remote sensing methods can generally be divided into two categories: active and passive remote sensing: If the source of the measured energy is the sun, it is called passive remote sensing and the result of this measurement can be a digital image. However, there is also the possibility of emitting radiation from the sensor platform and then measuring the return reflection. This method can be defined as active remote sensing.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Examples of passive remote sensing include radar sensors that emit microwave radiation or LiDAR sensors that emit laser beams. However, the vast majority of remote sensing data is generated using active remote sensing.</source>
+<target xml:lang="fr">Examples of passive remote sensing include radar sensors that emit microwave radiation or LiDAR sensors that emit laser beams. However, the vast majority of remote sensing data is generated using active remote sensing.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Attributes of Remote Sensing Data <bpt id="1">&lt;a id="attributes-of-remote-sensing-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Attributes of Remote Sensing Data <bpt id="1">&lt;a id="attributes-of-remote-sensing-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">All general attributes of raster data, such as spatial resolution, extent or the CRS used, presented in the previous module, also apply to remote sensing data, as it is a subcategory of raster data. However, a large proportion of remotely sensed data generally have three more important attributes:</source>
+<target xml:lang="fr">All general attributes of raster data, such as spatial resolution, extent or the CRS used, presented in the previous module, also apply to remote sensing data, as it is a subcategory of raster data. However, a large proportion of remotely sensed data generally have three more important attributes:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Spectral resolution<ept id="1">**</ept>, which is the number and location in the electromagnetic spectrum of the spectral bands in multispectral sensors. Each band is typically represented by one raster.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Spectral resolution<ept id="1">**</ept>, which is the number and location in the electromagnetic spectrum of the spectral bands in multispectral sensors. Each band is typically represented by one raster.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Radiometric resolution<ept id="1">**</ept>, usually measured in bits, is the range of brightness values available to quantify the intensity of the measured radiation in a given spectrum. For example, an 8-bit image has 256 levels of brightness.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Radiometric resolution<ept id="1">**</ept>, usually measured in bits, is the range of brightness values available to quantify the intensity of the measured radiation in a given spectrum. For example, an 8-bit image has 256 levels of brightness.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Temporal resolution<ept id="1">**</ept> is an important attribute of satellite sensors such as Landsat 8 or SENTINEL 2 and can be defined as the period of time required to revisit and measure the same area of the Earth (e.g. 16 days for Landsat 8). It is particularly relevant for the analysis of changes using RS data.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Temporal resolution<ept id="1">**</ept> is an important attribute of satellite sensors such as Landsat 8 or SENTINEL 2 and can be defined as the period of time required to revisit and measure the same area of the Earth (e.g. 16 days for Landsat 8). It is particularly relevant for the analysis of changes using RS data.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Visulisation of Multi Spectral Remote Sensing Data <bpt id="1">&lt;a id="visulisation-of-multi-spectral-remote-sensing-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visulisation of Multi Spectral Remote Sensing Data <bpt id="1">&lt;a id="visulisation-of-multi-spectral-remote-sensing-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divided into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a "true colour display", i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.</source>
+<target xml:lang="fr">The fact that the bands of the individual spectral ranges are available in the files of multispectral remote sensing scenes as individual rasters allows various possible combinations of these bands to create so-called false colour composites: the optical perception of the human eye can be divided into the three spectral ranges of visible light (red, blue and green, R-G-B for short). In a "true colour display", i.e. the optical display of a satellite image as the human eye would perceive it (e.g. Google Maps Satellite), these bands are also assigned to the corresponding bands: R = Red, G = Green, B = Blue.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">In a false colour image the optical representation of one or more of the bands is not congruent with the spectral bands assigned to it. A commonly used example is the Combination R = Near Infrared, G = Red, B = Green (see Fig X).</source>
+<target xml:lang="fr">In a false colour image the optical representation of one or more of the bands is not congruent with the spectral bands assigned to it. A commonly used example is the Combination R = Near Infrared, G = Red, B = Green (see Fig X).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">This false colour composite for example strongly highlights vegetation and especially healthy vegetation which appears bright red. This is because red visualizes the near infrared spectrum-which displays high reflectance by vegetation, particularly compared to other surfaces like soil or water. This makes it easier to identify and analyze vegetation cover, health, and distribution.</source>
+<target xml:lang="fr">This false colour composite for example strongly highlights vegetation and especially healthy vegetation which appears bright red. This is because red visualizes the near infrared spectrum-which displays high reflectance by vegetation, particularly compared to other surfaces like soil or water. This makes it easier to identify and analyze vegetation cover, health, and distribution.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

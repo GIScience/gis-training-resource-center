@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_module_9_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Network Analysis <bpt id="1">&lt;a id="network-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Network Analysis <bpt id="1">&lt;a id="network-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This module explores the principles and practical applications of spatial network analysis within a GIS framework. The first chapter introduces spatial network theory, where you will learn the foundational concepts of how spatial relationships are modeled and analyzed. The second chapter delves into the use of OpenRouteService (ORS), a powerful tool for calculating routes and analyzing accessibility in real-world geographic networks. Finally, the module concludes with an examination of network centrality measures, equipping you with the ability to evaluate the importance and influence of individual elements within a spatial network. By the end of this module, you'll be able to apply these tools and theories to solve complex spatial network problems.</source>
+<target xml:lang="fr">This module explores the principles and practical applications of spatial network analysis within a GIS framework. The first chapter introduces spatial network theory, where you will learn the foundational concepts of how spatial relationships are modeled and analyzed. The second chapter delves into the use of OpenRouteService (ORS), a powerful tool for calculating routes and analyzing accessibility in real-world geographic networks. Finally, the module concludes with an examination of network centrality measures, equipping you with the ability to evaluate the importance and influence of individual elements within a spatial network. By the end of this module, you'll be able to apply these tools and theories to solve complex spatial network problems.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Spatial Network Analysis Theory<ept id="2">](/content/Module_9/en_qgis_network_analysis_theory.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Spatial Network Analysis Theory<ept id="2">](/content/Module_9/en_qgis_network_analysis_theory.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Know what is meant by spatial network analysis, know the components of a network graph, understand the Dijkstra algorithm, Know the ORS plugin</source>
+<target xml:lang="fr">Know what is meant by spatial network analysis, know the components of a network graph, understand the Dijkstra algorithm, Know the ORS plugin</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: The OpenRouteService<ept id="2">](/content/Module_9/en_qgis_openrouteservice_tools.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: The OpenRouteService<ept id="2">](/content/Module_9/en_qgis_openrouteservice_tools.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Know how to install the plugin, Know how to set up your own API key, know how to configure the plugin</source>
+<target xml:lang="fr">Know how to install the plugin, Know how to set up your own API key, know how to configure the plugin</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Network centrality measures and its application in QGIS<ept id="2">](/content/Module_9/en_qgis_centrality.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Network centrality measures and its application in QGIS<ept id="2">](/content/Module_9/en_qgis_centrality.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Understand common network metrics, Know how to apply them to gain information about spatial networks</source>
+<target xml:lang="fr">Understand common network metrics, Know how to apply them to gain information about spatial networks</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 9<ept id="2">](/content/Module_9/en_qgis_module_9_exercises)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 9<ept id="2">](/content/Module_9/en_qgis_module_9_exercises)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">-</source>
+<target xml:lang="fr">-</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

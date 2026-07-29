@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_data_sources.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">To find the appropriate data you are looking for, you can search online data
+sharing platforms. Some important ones are highlighted below.</source>
+<target xml:lang="fr">To find the appropriate data you are looking for, you can search online data
+sharing platforms. Some important ones are highlighted below.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">What to look out for when looking for data <bpt id="1">&lt;a id="what-to-look-out-for-when-looking-for-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What to look out for when looking for data <bpt id="1">&lt;a id="what-to-look-out-for-when-looking-for-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data source:<ept id="1">*</ept> Always make sure to use data from trusted data sources. The
+organisation that shared the data is the best indicator. Apart from that, use of
+the data in trusted contexts or also download counts can be good indicators.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data source:<ept id="1">*</ept> Always make sure to use data from trusted data sources. The
+organisation that shared the data is the best indicator. Apart from that, use of
+the data in trusted contexts or also download counts can be good indicators.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data size:<ept id="1">*</ept> Sometimes you can access data in different scales, resolutions etc.
+Make sure to select a data set that fits your purpose and can be easily processed
+by you. For example, if you only need data about a specific region, only
+select the data of this administrative area.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data size:<ept id="1">*</ept> Sometimes you can access data in different scales, resolutions etc.
+Make sure to select a data set that fits your purpose and can be easily processed
+by you. For example, if you only need data about a specific region, only
+select the data of this administrative area.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data format:<ept id="1">*</ept> Maybe there are different data formats available that you can
+choose from. Think about your needs and what is the most practical for your use
+and potentially also sharing purposes.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data format:<ept id="1">*</ept> Maybe there are different data formats available that you can
+choose from. Think about your needs and what is the most practical for your use
+and potentially also sharing purposes.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data capture date:<ept id="1">*</ept> Make sure to check when the data was collected and if the
+collection data is in line with your needs. Check if there is potentially more
+up-to-date data available from another source.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data capture date:<ept id="1">*</ept> Make sure to check when the data was collected and if the
+collection data is in line with your needs. Check if there is potentially more
+up-to-date data available from another source.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Data license:<ept id="1">*</ept> What kind of license does the data have? How can you use and
+share it and how do you need to cite the data source? Make sure to check the
+licensing and to follow the respective regulations to avoid difficulties.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Data license:<ept id="1">*</ept> What kind of license does the data have? How can you use and
+share it and how do you need to cite the data source? Make sure to check the
+licensing and to follow the respective regulations to avoid difficulties.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_data_sources_examples_cartong.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_data_sources_examples_cartong.png</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_data_sources_examples_cartong</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_data_sources_examples_cartong</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The data to create maps or perform GIS analyses can come from various sources (Source: <bpt id="1">[</bpt>CartONG<ept id="1">](https://www.cartong.org/en/)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">The data to create maps or perform GIS analyses can come from various sources (Source: <bpt id="1">[</bpt>CartONG<ept id="1">](https://www.cartong.org/en/)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Overview of useful data repositories <bpt id="1">&lt;a id="overview-of-useful-data-repositories"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Overview of useful data repositories <bpt id="1">&lt;a id="overview-of-useful-data-repositories"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">General geodata <bpt id="1">&lt;a id="general-geodata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">General geodata <bpt id="1">&lt;a id="general-geodata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Data</source>
+<target xml:lang="fr">Data</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Link</source>
+<target xml:lang="fr">Link</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Natural Earth</source>
+<target xml:lang="fr">Natural Earth</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Administrative and physical geography</source>
+<target xml:lang="fr">Administrative and physical geography</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.naturalearthdata.com/</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.naturalearthdata.com/</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Geonames</source>
+<target xml:lang="fr">Geonames</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Administrative geodata</source>
+<target xml:lang="fr">Administrative geodata</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.geonames.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.geonames.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">OpenAfrica</source>
+<target xml:lang="fr">OpenAfrica</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Open-source data on Africa</source>
+<target xml:lang="fr">Open-source data on Africa</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://africaopendata.org/dataset</ph></source>
+<target xml:lang="fr"><ph id="1">https://africaopendata.org/dataset</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">DivaGIS</source>
+<target xml:lang="fr">DivaGIS</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Different data, e.g. administrative, roads, population, elevation, climate</source>
+<target xml:lang="fr">Different data, e.g. administrative, roads, population, elevation, climate</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://diva-gis.org/data.html</ph></source>
+<target xml:lang="fr"><ph id="1">https://diva-gis.org/data.html</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Open Topography</source>
+<target xml:lang="fr">Open Topography</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Data on topography</source>
+<target xml:lang="fr">Data on topography</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://opentopography.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://opentopography.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">OSM Boundaries</source>
+<target xml:lang="fr">OSM Boundaries</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Administrative boundaries (need to authenticate via your osm account)</source>
+<target xml:lang="fr">Administrative boundaries (need to authenticate via your osm account)</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://osm-boundaries.com</ph></source>
+<target xml:lang="fr"><ph id="1">https://osm-boundaries.com</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">GADM</source>
+<target xml:lang="fr">GADM</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Administrative boundaries</source>
+<target xml:lang="fr">Administrative boundaries</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">http://gadm.org</ph></source>
+<target xml:lang="fr"><ph id="1">http://gadm.org</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Humanitarian data <bpt id="1">&lt;a id="humanitarian-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Humanitarian data <bpt id="1">&lt;a id="humanitarian-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Data</source>
+<target xml:lang="fr">Data</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Link</source>
+<target xml:lang="fr">Link</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Humanitarian Data Exchange</source>
+<target xml:lang="fr">Humanitarian Data Exchange</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Various open data from different humanitarian organisations</source>
+<target xml:lang="fr">Various open data from different humanitarian organisations</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://data.humdata.org</ph></source>
+<target xml:lang="fr"><ph id="1">https://data.humdata.org</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Healthsites</source>
+<target xml:lang="fr">Healthsites</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Locations of health facilities</source>
+<target xml:lang="fr">Locations of health facilities</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://healthsites.io/</ph></source>
+<target xml:lang="fr"><ph id="1">https://healthsites.io/</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">UNHCR Geoservices</source>
+<target xml:lang="fr">UNHCR Geoservices</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Data on displaced populations</source>
+<target xml:lang="fr">Data on displaced populations</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://data.unhcr.org/en/situations</ph></source>
+<target xml:lang="fr"><ph id="1">https://data.unhcr.org/en/situations</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Waterpoint</source>
+<target xml:lang="fr">Waterpoint</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Data on waterpoints</source>
+<target xml:lang="fr">Data on waterpoints</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.waterpointdata.org</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.waterpointdata.org</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Disaster data <bpt id="1">&lt;a id="disaster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Disaster data <bpt id="1">&lt;a id="disaster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Data</source>
+<target xml:lang="fr">Data</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Link</source>
+<target xml:lang="fr">Link</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">MapAction</source>
+<target xml:lang="fr">MapAction</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Emergency mapping resources</source>
+<target xml:lang="fr">Emergency mapping resources</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://maps.mapaction.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://maps.mapaction.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">fieldmaps.io</source>
+<target xml:lang="fr">fieldmaps.io</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Data and map download platform for humanitarian use</source>
+<target xml:lang="fr">Data and map download platform for humanitarian use</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://fieldmaps.io</ph></source>
+<target xml:lang="fr"><ph id="1">https://fieldmaps.io</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">ACLED</source>
+<target xml:lang="fr">ACLED</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Conflict data</source>
+<target xml:lang="fr">Conflict data</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://acleddata.com/conflict-data/data-export-tool</ph></source>
+<target xml:lang="fr"><ph id="1">https://acleddata.com/conflict-data/data-export-tool</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">GDACS</source>
+<target xml:lang="fr">GDACS</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Disaster database</source>
+<target xml:lang="fr">Disaster database</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.gdacs.org</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.gdacs.org</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">ZKI/DLR</source>
+<target xml:lang="fr">ZKI/DLR</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Flood extents, damage extents, earth observation data</source>
+<target xml:lang="fr">Flood extents, damage extents, earth observation data</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://activations.zki.dlr.de/en/activations/</ph></source>
+<target xml:lang="fr"><ph id="1">https://activations.zki.dlr.de/en/activations/</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">WFP Vulnerability Analysis and Mapping</source>
+<target xml:lang="fr">WFP Vulnerability Analysis and Mapping</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Data on food security, hazards, conflicts, climate</source>
+<target xml:lang="fr">Data on food security, hazards, conflicts, climate</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://dataviz.vam.wfp.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://dataviz.vam.wfp.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Population data <bpt id="1">&lt;a id="population-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Population data <bpt id="1">&lt;a id="population-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Data</source>
+<target xml:lang="fr">Data</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Link</source>
+<target xml:lang="fr">Link</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">WorldPop</source>
+<target xml:lang="fr">WorldPop</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Population estimates</source>
+<target xml:lang="fr">Population estimates</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://wopr.worldpop.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://wopr.worldpop.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">GHSL</source>
+<target xml:lang="fr">GHSL</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Global settlement data</source>
+<target xml:lang="fr">Global settlement data</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://ghsl.jrc.ec.europa.eu/</ph></source>
+<target xml:lang="fr"><ph id="1">https://ghsl.jrc.ec.europa.eu/</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">HRSL</source>
+<target xml:lang="fr">HRSL</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Settlement layer based on earth observation and Facebook data</source>
+<target xml:lang="fr">Settlement layer based on earth observation and Facebook data</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/</ph></source>
+<target xml:lang="fr"><ph id="1">https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">GRID3 Settlement extents and settlement points</source>
+<target xml:lang="fr">GRID3 Settlement extents and settlement points</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Settlement extents data</source>
+<target xml:lang="fr">Settlement extents data</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://grid3.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://grid3.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Pangea</source>
+<target xml:lang="fr">Pangea</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Environmental &amp; biosciences data</source>
+<target xml:lang="fr">Environmental &amp; biosciences data</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.pangaea.de/</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.pangaea.de/</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">United Nations Population Fund</source>
+<target xml:lang="fr">United Nations Population Fund</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Data on sexual and reproductive health and population trends</source>
+<target xml:lang="fr">Data on sexual and reproductive health and population trends</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.unfpa.org/data</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.unfpa.org/data</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Buildings data <bpt id="1">&lt;a id="buildings-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Buildings data <bpt id="1">&lt;a id="buildings-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Data</source>
+<target xml:lang="fr">Data</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Link</source>
+<target xml:lang="fr">Link</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">World Settlement Footprint</source>
+<target xml:lang="fr">World Settlement Footprint</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">World Settlement Footprint</source>
+<target xml:lang="fr">World Settlement Footprint</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://download.geoservice.dlr.de/WSF2019/</ph></source>
+<target xml:lang="fr"><ph id="1">https://download.geoservice.dlr.de/WSF2019/</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">VIDA building footprint</source>
+<target xml:lang="fr">VIDA building footprint</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Combined Google and Microsoft building footprint datasets</source>
+<target xml:lang="fr">Combined Google and Microsoft building footprint datasets</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/</ph></source>
+<target xml:lang="fr"><ph id="1">https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Open-building</source>
+<target xml:lang="fr">Open-building</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Google building footprints</source>
+<target xml:lang="fr">Google building footprints</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://sites.research.google/open-buildings/#download</ph></source>
+<target xml:lang="fr"><ph id="1">https://sites.research.google/open-buildings/#download</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Remote sensing/earth observation data <bpt id="1">&lt;a id="remote-sensingearth-observation-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Remote sensing/earth observation data <bpt id="1">&lt;a id="remote-sensingearth-observation-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Data</source>
+<target xml:lang="fr">Data</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Link</source>
+<target xml:lang="fr">Link</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Global Forest Watch</source>
+<target xml:lang="fr">Global Forest Watch</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Data on global forests</source>
+<target xml:lang="fr">Data on global forests</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://www.globalforestwatch.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://www.globalforestwatch.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">OpenAerialMap</source>
+<target xml:lang="fr">OpenAerialMap</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Crowdsourced drone imagery</source>
+<target xml:lang="fr">Crowdsourced drone imagery</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://map.openaerialmap.org/</ph></source>
+<target xml:lang="fr"><ph id="1">https://map.openaerialmap.org/</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">USGS Earth Explorer</source>
+<target xml:lang="fr">USGS Earth Explorer</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Satellite data from multiple sources, including Landsat and Sentinel</source>
+<target xml:lang="fr">Satellite data from multiple sources, including Landsat and Sentinel</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://earthexplorer.usgs.gov/</ph></source>
+<target xml:lang="fr"><ph id="1">https://earthexplorer.usgs.gov/</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">NASA Shuttle Radar Topography Mission (SRTM)</source>
+<target xml:lang="fr">NASA Shuttle Radar Topography Mission (SRTM)</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Global elevation data</source>
+<target xml:lang="fr">Global elevation data</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><ph id="1">http://srtm.csi.cgiar.org/srtmdata/</ph></source>
+<target xml:lang="fr"><ph id="1">http://srtm.csi.cgiar.org/srtmdata/</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Earth Observe</source>
+<target xml:lang="fr">Earth Observe</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Digital elevation model on a global scale</source>
+<target xml:lang="fr">Digital elevation model on a global scale</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://earthexplorer.usgs.gov/</ph></source>
+<target xml:lang="fr"><ph id="1">https://earthexplorer.usgs.gov/</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Copernicus</source>
+<target xml:lang="fr">Copernicus</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Earth observation data</source>
+<target xml:lang="fr">Earth observation data</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://scihub.copernicus.eu/</ph></source>
+<target xml:lang="fr"><ph id="1">https://scihub.copernicus.eu/</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">GlobCover</source>
+<target xml:lang="fr">GlobCover</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Raster data on land cover</source>
+<target xml:lang="fr">Raster data on land cover</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://due.esrin.esa.int/page_globcover.php</ph></source>
+<target xml:lang="fr"><ph id="1">https://due.esrin.esa.int/page_globcover.php</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap data <bpt id="1">&lt;a id="openstreetmap-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">OpenStreetMap data <bpt id="1">&lt;a id="openstreetmap-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.</source>
+<target xml:lang="fr">OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM <bpt id="1">[</bpt>QGIS Plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>. Each of the options has both advantages and disadvantages.</source>
+<target xml:lang="fr">There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM <bpt id="1">[</bpt>QGIS Plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>. Each of the options has both advantages and disadvantages.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">If you wish to practice how to export OSM data, you can do the <bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 4: Exporting OSM Data<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr">If you wish to practice how to export OSM data, you can do the <bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 4: Exporting OSM Data<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_data_sources_ex4.html)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Geofabrik.de<ept id="2">](https://download.geofabrik.de/)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Geofabrik.de<ept id="2">](https://download.geofabrik.de/)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">As you can see, Geofabrik is great if you want to get complete OSM datasets for  whole countries or regions.</source>
+<target xml:lang="fr">As you can see, Geofabrik is great if you want to get complete OSM datasets for  whole countries or regions.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Advantages</source>
+<target xml:lang="fr">Advantages</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Disadvantages</source>
+<target xml:lang="fr">Disadvantages</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">+ Quick access to complete OSM datasets</source>
+<target xml:lang="fr">+ Quick access to complete OSM datasets</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">- If one is only interested in specific features or regions (other than countries), not optimal</source>
+<target xml:lang="fr">- If one is only interested in specific features or regions (other than countries), not optimal</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">+ Very up-to-date OSM exports</source>
+<target xml:lang="fr">+ Very up-to-date OSM exports</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">- Large file size</source>
+<target xml:lang="fr">- Large file size</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">+ Clear documentation of which OSM features are contained in each shapefile</source>
+<target xml:lang="fr">+ Clear documentation of which OSM features are contained in each shapefile</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">- Only available as shapefile</source>
+<target xml:lang="fr">- Only available as shapefile</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>HOT Export tool<ept id="2">](https://export.hotosm.org/v3/)</ept><ept id="1">__</ept>
+As you can see, the HOT Export tool offers a good mix of flexibility and quick
+access to OSM data. However, there are quite some steps involved until the data
+is in QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>HOT Export tool<ept id="2">](https://export.hotosm.org/v3/)</ept><ept id="1">__</ept>
+As you can see, the HOT Export tool offers a good mix of flexibility and quick
+access to OSM data. However, there are quite some steps involved until the data
+is in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Advantages</source>
+<target xml:lang="fr">Advantages</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Disadvantages</source>
+<target xml:lang="fr">Disadvantages</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">+ Good options for data selection</source>
+<target xml:lang="fr">+ Good options for data selection</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">- Many steps involved</source>
+<target xml:lang="fr">- Many steps involved</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">+ Many different data formats available</source>
+<target xml:lang="fr">+ Many different data formats available</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">- Only fixed option for data selection</source>
+<target xml:lang="fr">- Only fixed option for data selection</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">+ Easy to use</source>
+<target xml:lang="fr">+ Easy to use</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">+ Query can easily be repeated</source>
+<target xml:lang="fr">+ Query can easily be repeated</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>QuickOSM Plugin<ept id="1">__</ept>
+| Advantages                                     | Disadvantages                                 |
+|------------------------------------------------|-----------------------------------------------|
+| + Query can be tailored for very specific data | - Requires knowledge of OSM data model        |
+| + Data loads directly in QGIS                  | - Building queries can quickly become complex |
+| + Query can easily be repeated                 |                                               |</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>QuickOSM Plugin<ept id="1">__</ept>
+| Advantages                                     | Disadvantages                                 |
+|------------------------------------------------|-----------------------------------------------|
+| + Query can be tailored for very specific data | - Requires knowledge of OSM data model        |
+| + Data loads directly in QGIS                  | - Building queries can quickly become complex |
+| + Query can easily be repeated                 |                                               |</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">It is by default possible to add the OSM base map to your project.  Click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Layer…`</ph>. Choose <ph id="4">`OpenStreetMap`</ph> and click <ph id="5">`Add`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)</ept>).</source>
+<target xml:lang="fr">It is by default possible to add the OSM base map to your project.  Click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ Layer…`</ph>. Choose <ph id="4">`OpenStreetMap`</ph> and click <ph id="5">`Add`</ph> (<bpt id="6">[</bpt>Wiki Video<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">QuickOSM plugin <bpt id="1">&lt;a id="quickosm-plugin"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QuickOSM plugin <bpt id="1">&lt;a id="quickosm-plugin"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it
+to your QGIS project.</source>
+<target xml:lang="fr">The QuickOSM plugin makes it easy to download data from OpenStreetMap and add it
+to your QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Install the QuickOSM plugin by clicking on the <ph id="1">`Plugin`</ph> tab, → <ph id="2">`Manage and Install Plugins…`</ph> → <ph id="3">`All`</ph> → Search for "QuickOSM" → <ph id="4">`Install Plugin`</ph></source>
+<target xml:lang="fr">Install the QuickOSM plugin by clicking on the <ph id="1">`Plugin`</ph> tab, → <ph id="2">`Manage and Install Plugins…`</ph> → <ph id="3">`All`</ph> → Search for "QuickOSM" → <ph id="4">`Install Plugin`</ph></target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">To open QuickOSM click on the <ph id="1">`Vector`</ph>-tab → <ph id="2">`QuickOSM`</ph> → <ph id="3">`QuickOSM`</ph></source>
+<target xml:lang="fr">To open QuickOSM click on the <ph id="1">`Vector`</ph>-tab → <ph id="2">`QuickOSM`</ph> → <ph id="3">`QuickOSM`</ph></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">To work efficiently with QuickOSM, it's essential to have a basic understanding of the OSM data model. Here's a brief explanation:</source>
+<target xml:lang="fr">To work efficiently with QuickOSM, it's essential to have a basic understanding of the OSM data model. Here's a brief explanation:</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Firstly, all data in OSM is organized using a key and value system. A combination of a key and its corresponding value is referred to as a <bpt id="1">__</bpt>tag<ept id="1">__</ept>.
+For instance, consider the key 'amenity.' According to the OSMWiki, <bpt id="2">*</bpt>"'amenity=<ept id="2">*</ept>' describes useful facilities such as toilets, telephones, banks, pharmacies, prisons, and schools."*.
+Notably, a key can have multiple values, with 'amenity' alone having 8911 different values. Typical examples of values for amenities include schools and hospitals.
+When searching for data on OSM, it's crucial to identify the relevant keys and values representing the desired features. Useful resources for this purpose include <bpt id="3">[</bpt>taginfo<ept id="3">](https://taginfo.openstreetmap.org)</ept> and the OSM Wiki article about <bpt id="4">[</bpt>Map features<ept id="4">](https://wiki.openstreetmap.org/wiki/Map_features)</ept>.</source>
+<target xml:lang="fr">Firstly, all data in OSM is organized using a key and value system. A combination of a key and its corresponding value is referred to as a <bpt id="1">__</bpt>tag<ept id="1">__</ept>.
+For instance, consider the key 'amenity.' According to the OSMWiki, <bpt id="2">*</bpt>"'amenity=<ept id="2">*</ept>' describes useful facilities such as toilets, telephones, banks, pharmacies, prisons, and schools."*.
+Notably, a key can have multiple values, with 'amenity' alone having 8911 different values. Typical examples of values for amenities include schools and hospitals.
+When searching for data on OSM, it's crucial to identify the relevant keys and values representing the desired features. Useful resources for this purpose include <bpt id="3">[</bpt>taginfo<ept id="3">](https://taginfo.openstreetmap.org)</ept> and the OSM Wiki article about <bpt id="4">[</bpt>Map features<ept id="4">](https://wiki.openstreetmap.org/wiki/Map_features)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Secondly, a feature in OSM can have multiple tags, each comprising a key and its corresponding value. This means that sometimes, multiple key-value pairs are required to retrieve all the desired data.
+For example, let's consider hospitals. While all hospitals should ideally have the tags 'amenity=hospital' and 'Health=Hospital,' some may only have one of these tags. To ensure comprehensive data retrieval, it's advisable to use both tags when searching for hospitals.</source>
+<target xml:lang="fr">Secondly, a feature in OSM can have multiple tags, each comprising a key and its corresponding value. This means that sometimes, multiple key-value pairs are required to retrieve all the desired data.
+For example, let's consider hospitals. While all hospitals should ideally have the tags 'amenity=hospital' and 'Health=Hospital,' some may only have one of these tags. To ensure comprehensive data retrieval, it's advisable to use both tags when searching for hospitals.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Follow the steps to fetch for data:</source>
+<target xml:lang="fr">Follow the steps to fetch for data:</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Select a Key and Value from the dropdown list. If you are unsure, check here:</source>
+<target xml:lang="fr">Select a Key and Value from the dropdown list. If you are unsure, check here:</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/key_value_quickosm.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/key_value_quickosm.png</ph></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: key_value_quickosm</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: key_value_quickosm</ph></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">Choosing key and value in QuickOSM.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Choosing key and value in QuickOSM.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Limit the area by typing in the name of your area of interest. You can also
+   choose from the dropdown <ph id="1">`Canvas Extent`</ph> or <ph id="2">`Layer Extent`</ph> instead of a name
+   of a city or country.</source>
+<target xml:lang="fr">Limit the area by typing in the name of your area of interest. You can also
+   choose from the dropdown <ph id="1">`Canvas Extent`</ph> or <ph id="2">`Layer Extent`</ph> instead of a name
+   of a city or country.</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Unfold the tab <ph id="1">`Advanced`</ph>. Only select the datatypes you are expecting to
+   minimize errors.</source>
+<target xml:lang="fr">Unfold the tab <ph id="1">`Advanced`</ph>. Only select the datatypes you are expecting to
+   minimize errors.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/quickosm_usage.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/quickosm_usage.png</ph></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">name: quickosm_usage</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">name: quickosm_usage</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">Running the QuickOSM plugin.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Running the QuickOSM plugin.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Run query`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Run query`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>How to fetch data for multiple queries</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>How to fetch data for multiple queries</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">If you want to get more data in the same area, you can add a query by clicking
+on the <bpt id="1">![</bpt><ept id="1">](/fig/plus_quickosm.png)</ept>. Be careful choosing the right logical operator
+<ph id="2">`AND`</ph> or <ph id="3">`OR`</ph>. If you are unsure check the page <bpt id="4">[</bpt>non-spatial queries<ept id="4">](/content/Wiki/en_qgis_non_spatial_queries_wiki)</ept>
+on the wiki. There is an example of this in the Module 2 <bpt id="5">[</bpt>OSM exercise<ept id="5">](https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_data_sources_ex2.html#task-quickosm)</ept></source>
+<target xml:lang="fr">If you want to get more data in the same area, you can add a query by clicking
+on the <bpt id="1">![</bpt><ept id="1">](/fig/plus_quickosm.png)</ept>. Be careful choosing the right logical operator
+<ph id="2">`AND`</ph> or <ph id="3">`OR`</ph>. If you are unsure check the page <bpt id="4">[</bpt>non-spatial queries<ept id="4">](/content/Wiki/en_qgis_non_spatial_queries_wiki)</ept>
+on the wiki. There is an example of this in the Module 2 <bpt id="5">[</bpt>OSM exercise<ept id="5">](https://giscience.github.io/gis-training-resource-center/content/module_2/en_qgis_data_sources_ex2.html#task-quickosm)</ept></target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">HOT Export Tool <bpt id="1">&lt;a id="hot-export-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">HOT Export Tool <bpt id="1">&lt;a id="hot-export-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">With the <bpt id="1">[</bpt>Humanitarian OpenStreetMap Team (HOT) Export Tool<ept id="1">](https://export.hotosm.org/v3/)</ept> you can download customized extracts of up-to-date OSM data in different file formats. It offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.</source>
+<target xml:lang="fr">With the <bpt id="1">[</bpt>Humanitarian OpenStreetMap Team (HOT) Export Tool<ept id="1">](https://export.hotosm.org/v3/)</ept> you can download customized extracts of up-to-date OSM data in different file formats. It offers a browser-based tool to download OSM data with good options to specify region, time, feature type and data format.</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Go to the HOT Export tool. To use the tool you need an OSM account.</source>
+<target xml:lang="fr">Go to the HOT Export tool. To use the tool you need an OSM account.</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">If you have an OSM account you can log in directly into the HOT Export tool by clicking on <ph id="1">`Log in`</ph>.
+   If you don’t have one, you'll need to create one: click on <ph id="2">`Log in`</ph> and in the new window select the option to create a new account.</source>
+<target xml:lang="fr">If you have an OSM account you can log in directly into the HOT Export tool by clicking on <ph id="1">`Log in`</ph>.
+   If you don’t have one, you'll need to create one: click on <ph id="2">`Log in`</ph> and in the new window select the option to create a new account.</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">After logging in, click the <ph id="1">`Start Exporting`</ph> button on the homepage to load the Export Tool</source>
+<target xml:lang="fr">After logging in, click the <ph id="1">`Start Exporting`</ph> button on the homepage to load the Export Tool</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/hot_export.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/hot_export.png</ph></target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: HOT Export Tool</ph></source>
+<target xml:lang="fr"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: HOT Export Tool</ph></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">The HOT Export Tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The HOT Export Tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">First add a name and a brief description of your export. Then click on <ph id="1">`Next`</ph>.</source>
+<target xml:lang="fr">First add a name and a brief description of your export. Then click on <ph id="1">`Next`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or shapefile can be used as well. Click on <ph id="1">`Next`</ph>.</source>
+<target xml:lang="fr">Choose the file format fitting to your needs. It is recommended to use GeoPackage but Geojson or shapefile can be used as well. Click on <ph id="1">`Next`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">The easiest way to choose the feature type you want to download is using the tag tree. (The YAML option is more flexible but more advanced, so we will focus on the first option).</source>
+<target xml:lang="fr">The easiest way to choose the feature type you want to download is using the tag tree. (The YAML option is more flexible but more advanced, so we will focus on the first option).</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">There are multiple ways to select your area of interest.</source>
+<target xml:lang="fr">There are multiple ways to select your area of interest.</target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">You can search for it in the search bar in the top right corner.</source>
+<target xml:lang="fr">You can search for it in the search bar in the top right corner.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Zoom in the map to your area and click on <ph id="1">`This view`</ph>.</source>
+<target xml:lang="fr">Zoom in the map to your area and click on <ph id="1">`This view`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">Zoom in and draw a bounding box by clicking on <ph id="1">`Box`</ph>.</source>
+<target xml:lang="fr">Zoom in and draw a bounding box by clicking on <ph id="1">`Box`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Zoom in and draw free hand a polygon by clicking on <ph id="1">`Draw`</ph>.</source>
+<target xml:lang="fr">Zoom in and draw free hand a polygon by clicking on <ph id="1">`Draw`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en">Or you can upload a layer as extent (only .geojson in the crs WGS84!).
+      Click on <ph id="1">`Import`</ph>.</source>
+<target xml:lang="fr">Or you can upload a layer as extent (only .geojson in the crs WGS84!).
+      Click on <ph id="1">`Import`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en">Then click on <ph id="1">`Next`</ph>. It will look something like this:</source>
+<target xml:lang="fr">Then click on <ph id="1">`Next`</ph>. It will look something like this:</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/hot_export_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/hot_export_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: hot_export_example</ph></source>
+<target xml:lang="fr"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: hot_export_example</ph></target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en">An Example for the HOT Export Tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">An Example for the HOT Export Tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Create Export`</ph>. It will then run for a few minutes, looking like
+   this:</source>
+<target xml:lang="fr">Click on <ph id="1">`Create Export`</ph>. It will then run for a few minutes, looking like
+   this:</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/hot_export_running.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/hot_export_running.png</ph></target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: hot_export_running</ph></source>
+<target xml:lang="fr"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: hot_export_running</ph></target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">The HOT Export Tool is running.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The HOT Export Tool is running.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">After being finished, the status will change to <ph id="1">`COMPLETED`</ph> and you can
+    download your file by clicking on the link:</source>
+<target xml:lang="fr">After being finished, the status will change to <ph id="1">`COMPLETED`</ph> and you can
+    download your file by clicking on the link:</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/hot_export_done.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/hot_export_done.png</ph></target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: hot_export_done</ph></source>
+<target xml:lang="fr"><ph id="1">height: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: hot_export_done</ph></target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Downloading data from HOT Export Tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Downloading data from HOT Export Tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">Take a moment to recapitulate what you've learned in this chapter by answering the questions below:</source>
+<target xml:lang="fr">Take a moment to recapitulate what you've learned in this chapter by answering the questions below:</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What criteria should you check when selecting geodata for a project? (e.g. source trustworthiness, size / resolution, format, date, license)<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What criteria should you check when selecting geodata for a project? (e.g. source trustworthiness, size / resolution, format, date, license)<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Source/Trustworthiness<ept id="1">__</ept>: Use data from reputable organizations, trusted platforms, or sources known for good quality. Check who published the data, how it was validated, and how often it is used.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Source/Trustworthiness<ept id="1">__</ept>: Use data from reputable organizations, trusted platforms, or sources known for good quality. Check who published the data, how it was validated, and how often it is used.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Data size, resolution and scale<ept id="1">__</ept>: Make sure the spatial resolution (or detail) meets your project’s needs. Don’t pick overly coarse or overly fine data unnecessarily (which might slow processing).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Data size, resolution and scale<ept id="1">__</ept>: Make sure the spatial resolution (or detail) meets your project’s needs. Don’t pick overly coarse or overly fine data unnecessarily (which might slow processing).</target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Format<ept id="1">__</ept>: Some formats may be easier to use / more compatible (e.g. GeoPackage, shapefile, GeoJSON). Choose a format that is practical for your tools and sharing.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Format<ept id="1">__</ept>: Some formats may be easier to use / more compatible (e.g. GeoPackage, shapefile, GeoJSON). Choose a format that is practical for your tools and sharing.</target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Date/timeliness<ept id="1">__</ept>: When was the data collected? You want data whose timeframe matches your project requirements. Older data may no longer reflect current conditions.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Date/timeliness<ept id="1">__</ept>: When was the data collected? You want data whose timeframe matches your project requirements. Older data may no longer reflect current conditions.</target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>License/usage rights<ept id="1">__</ept>: You need to check how the data can be used, shared, and whether attribution is required. The license may restrict commercial use or derivative works.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>License/usage rights<ept id="1">__</ept>: You need to check how the data can be used, shared, and whether attribution is required. The license may restrict commercial use or derivative works.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is the “data license” an important consideration when using geodata?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is the “data license” an important consideration when using geodata?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en">The data license dictates what you are legally allowed to do with the data: whether you can use it freely, modify it, share it, or publish derivatives.</source>
+<target xml:lang="fr">The data license dictates what you are legally allowed to do with the data: whether you can use it freely, modify it, share it, or publish derivatives.</target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en">Ignoring license terms can lead to legal or ethical issues (e.g. violating copyright, failing to give required attribution) or prevent you from distributing your results.</source>
+<target xml:lang="fr">Ignoring license terms can lead to legal or ethical issues (e.g. violating copyright, failing to give required attribution) or prevent you from distributing your results.</target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en">Some licenses are restrictive (non‑commercial only, no derivatives, or require share-alike), so you have to ensure your intended use complies with those terms.</source>
+<target xml:lang="fr">Some licenses are restrictive (non‑commercial only, no derivatives, or require share-alike), so you have to ensure your intended use complies with those terms.</target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How does the date of data capture affect its usefulness? Give an example of when older data might mislead your analysis.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How does the date of data capture affect its usefulness? Give an example of when older data might mislead your analysis.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en">The date matters because landscapes, infrastructure, land use, population, etc. can change over time. If data is outdated, it might no longer reflect reality.</source>
+<target xml:lang="fr">The date matters because landscapes, infrastructure, land use, population, etc. can change over time. If data is outdated, it might no longer reflect reality.</target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en">Using older data may mislead your analysis if conditions have changed:</source>
+<target xml:lang="fr">Using older data may mislead your analysis if conditions have changed:</target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en">For example: Suppose you use road network data from 10 years ago to model shortest paths or accessibility today. If many new roads have been built or some roads have been closed, your routing or accessibility analysis would be incorrect.</source>
+<target xml:lang="fr">For example: Suppose you use road network data from 10 years ago to model shortest paths or accessibility today. If many new roads have been built or some roads have been closed, your routing or accessibility analysis would be incorrect.</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en">Or, using land cover data from many years back: an area once forested may now be urbanized, so interpreting habitat or deforestation trends would be misleading.</source>
+<target xml:lang="fr">Or, using land cover data from many years back: an area once forested may now be urbanized, so interpreting habitat or deforestation trends would be misleading.</target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en">Thus, alignment of data capture date with study period is important.</source>
+<target xml:lang="fr">Thus, alignment of data capture date with study period is important.</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What might be the challenges when integrating data from different sources (e.g. up-to-dateness, different projections, formats, coverage, or metadata completeness)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What might be the challenges when integrating data from different sources (e.g. up-to-dateness, different projections, formats, coverage, or metadata completeness)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+When combining datasets from different sources, challenges include:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+When combining datasets from different sources, challenges include:</target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Different timeliness/currency<ept id="1">__</ept>: One dataset might be recent, another old. This mismatch can lead to misleading comparisons.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Different timeliness/currency<ept id="1">__</ept>: One dataset might be recent, another old. This mismatch can lead to misleading comparisons.</target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Different projections/coordinate systems<ept id="1">__</ept>: Datasets may use different Coordinate Reference Systems, so you have to reproject them to a common CRS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Different projections/coordinate systems<ept id="1">__</ept>: Datasets may use different Coordinate Reference Systems, so you have to reproject them to a common CRS.</target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Coverage mismatches<ept id="1">__</ept>: One dataset might cover only part of your area of interest or have gaps.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Coverage mismatches<ept id="1">__</ept>: One dataset might cover only part of your area of interest or have gaps.</target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Metadata completeness/quality<ept id="1">__</ept>: One dataset may lack metadata (e.g. no date, no documentation of how data was collected), making it hard to assess quality or compatibility.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Metadata completeness/quality<ept id="1">__</ept>: One dataset may lack metadata (e.g. no date, no documentation of how data was collected), making it hard to assess quality or compatibility.</target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Attribute schema differences<ept id="1">__</ept>: Differences in attribute naming, units, field types, classifications can complicate merging or comparison. For example, slight differences in the name of a feature (e.g. a district or state) can make joining two dataset a lot more difficult, as it will have to be adjusted manually.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Attribute schema differences<ept id="1">__</ept>: Differences in attribute naming, units, field types, classifications can complicate merging or comparison. For example, slight differences in the name of a feature (e.g. a district or state) can make joining two dataset a lot more difficult, as it will have to be adjusted manually.</target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en">When performing an analysis, make sure to be transparent about the challenges or shortcomings of the different datasets. This will ensure that the decision-making process is informed better and also ensure the reproducibility and adaptability of your analysis.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">When performing an analysis, make sure to be transparent about the challenges or shortcomings of the different datasets. This will ensure that the decision-making process is informed better and also ensure the reproducibility and adaptability of your analysis.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

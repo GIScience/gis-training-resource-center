@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_1/en_qgis_interface_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: ../content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: ../content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 1: Understanding the QGIS Interface <bpt id="1">&lt;a id="exercise-1-understanding-the-qgis-interface"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 1: Understanding the QGIS Interface <bpt id="1">&lt;a id="exercise-1-understanding-the-qgis-interface"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Aim of the exercise <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aim of the exercise <bpt id="1">&lt;a id="aim-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">QGIS is a complex program with lots of functions, and the interface can be confusing, especially for beginners. This exercise will get you familiar with the main toolbars, windows and panels in QGIS. You will create a new QGIS project and save it, and navigate through the different panels and toolbars.</source>
+<target xml:lang="fr">QGIS is a complex program with lots of functions, and the interface can be confusing, especially for beginners. This exercise will get you familiar with the main toolbars, windows and panels in QGIS. You will create a new QGIS project and save it, and navigate through the different panels and toolbars.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The exercise covers:</source>
+<target xml:lang="fr">The exercise covers:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Saving and loading a QGIS project</source>
+<target xml:lang="fr">Saving and loading a QGIS project</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Finding and using different toolbars</source>
+<target xml:lang="fr">Finding and using different toolbars</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Finding and using different panels</source>
+<target xml:lang="fr">Finding and using different panels</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Moving panels around</source>
+<target xml:lang="fr">Moving panels around</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Activating new panels</source>
+<target xml:lang="fr">Activating new panels</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Related wiki articles <bpt id="1">&lt;a id="related-wiki-articles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Related wiki articles <bpt id="1">&lt;a id="related-wiki-articles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki)</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projects and folder structure<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projects and folder structure<ept id="1">](/content/Wiki/en_qgis_projects_folder_structure_wiki)</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Data preparation <bpt id="1">&lt;a id="data-preparation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data preparation <bpt id="1">&lt;a id="data-preparation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate through the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)</ept>.</source>
+<target xml:lang="fr">In this exercise, we will not be using any geodata. Instead, we will be learning how to navigate through the different interfaces and how to save and load a QGIS project. You can download the zipped template folder structure <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Create a new project. When opening QGIS, you will be greeted by the start layout, which shows the QGIS interface with no project loaded. On the left will be a panel with recent projects (this will probably be empty). To the right will be a news panel, showing posts from the QGIS blog, and beneath this is a <ph id="1">`Project Templates`</ph> panel.</source>
+<target xml:lang="fr">Create a new project. When opening QGIS, you will be greeted by the start layout, which shows the QGIS interface with no project loaded. On the left will be a panel with recent projects (this will probably be empty). To the right will be a news panel, showing posts from the QGIS blog, and beneath this is a <ph id="1">`Project Templates`</ph> panel.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Project Templates`</ph> panel, <bpt id="2">__</bpt>Double click on the <ph id="3">`New Empty Project`</ph> option<ept id="2">__</ept> (it should be the only template visible). You will see a blank canvas in the main interface since there is no data loaded yet.</source>
+<target xml:lang="fr">In the <ph id="1">`Project Templates`</ph> panel, <bpt id="2">__</bpt>Double click on the <ph id="3">`New Empty Project`</ph> option<ept id="2">__</ept> (it should be the only template visible). You will see a blank canvas in the main interface since there is no data loaded yet.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Get to know the QGIS interface: Above the canvas, you will find the <bpt id="1">__</bpt>toolbar<ept id="1">__</ept> with a lot of different functions. To the left and right of the canvas you will find the panels. In QGIS, you will mostly access tools by finding them in the <bpt id="2">__</bpt>toolbars<ept id="2">__</ept> or <bpt id="3">__</bpt>panels<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Get to know the QGIS interface: Above the canvas, you will find the <bpt id="1">__</bpt>toolbar<ept id="1">__</ept> with a lot of different functions. To the left and right of the canvas you will find the panels. In QGIS, you will mostly access tools by finding them in the <bpt id="2">__</bpt>toolbars<ept id="2">__</ept> or <bpt id="3">__</bpt>panels<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface.</source>
+<target xml:lang="fr">Toolbars are at the top of the screen by default. They include the controls that let you switch between different ways of interacting with the interface.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
+On the right of the screen, you will most likely have the <bpt id="1">__</bpt>Processing Toolbox<ept id="1">__</ept> panel. If it is missing for you, check out this <bpt id="2">[</bpt>wiki page<ept id="2">](../content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox)</ept>.</source>
+<target xml:lang="fr">Panels are at the sides of the screen by default. They include the file browser and layer navigation panels to the left of the screen. Other panels can be toggled to search and use processing tools. In the layer panel, you will see the data we will add later on.
+On the right of the screen, you will most likely have the <bpt id="1">__</bpt>Processing Toolbox<ept id="1">__</ept> panel. If it is missing for you, check out this <bpt id="2">[</bpt>wiki page<ept id="2">](../content/Wiki/en_qgis_common_errors_and_Issues#missing-toolbox)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)</ept>).</source>
+<target xml:lang="fr">You can undock panels from their location by clicking and dragging the panel title. You can either dock it to another panel (it will appear as another tab), or turn it into its own window. You can also resize the panels. Try this by moving the Layer panel to the right (<bpt id="1">[</bpt>Wiki Video<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In QGIS, the interface may appear slightly different depending on your screen resolution. Occasionally, certain elements may be hidden due to default rendering settings. If you encounter this, try resizing the panels and exploring the various options and functions they provide. This can help ensure that all essential tools and features are easily accessible during your workflow.</source>
+<target xml:lang="fr">In QGIS, the interface may appear slightly different depending on your screen resolution. Occasionally, certain elements may be hidden due to default rendering settings. If you encounter this, try resizing the panels and exploring the various options and functions they provide. This can help ensure that all essential tools and features are easily accessible during your workflow.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">QGIS has other panels you can use that aren't shown by default. Let's see how we can find and activate the other panels and toolbars.</source>
+<target xml:lang="fr">QGIS has other panels you can use that aren't shown by default. Let's see how we can find and activate the other panels and toolbars.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`View`</ph> menu, find the <ph id="2">`Panels`</ph> and <ph id="3">`Toolbars`</ph> options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are:</source>
+<target xml:lang="fr">In the <ph id="1">`View`</ph> menu, find the <ph id="2">`Panels`</ph> and <ph id="3">`Toolbars`</ph> options. Hovering over each will show a list of the available panels and toolbars, and which are activated. Give yourself a minute to look through the different toolbars and panels. There are lots of options but don't worry, you won't use most of them in this training. The panels we'll use the most are:</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Browser</source>
+<target xml:lang="fr">Browser</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Layers</source>
+<target xml:lang="fr">Layers</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Layer Styling</source>
+<target xml:lang="fr">Layer Styling</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Processing Toolbox</source>
+<target xml:lang="fr">Processing Toolbox</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Now, let's take a look at the toolbars. The toolbars we'll use the most are:</source>
+<target xml:lang="fr">Now, let's take a look at the toolbars. The toolbars we'll use the most are:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Attributes Toolbar</source>
+<target xml:lang="fr">Attributes Toolbar</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Digitizing Toolbar</source>
+<target xml:lang="fr">Digitizing Toolbar</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Map Navigation Toolbar</source>
+<target xml:lang="fr">Map Navigation Toolbar</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Project Toolbar</source>
+<target xml:lang="fr">Project Toolbar</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Selection Toolbar</source>
+<target xml:lang="fr">Selection Toolbar</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Take time to make yourself familiar with the different ways you can arrange the QGIS interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!</source>
+<target xml:lang="fr">Take time to make yourself familiar with the different ways you can arrange the QGIS interface. Knowing where to find the different functions can save you a lot of time and frustration in the future!</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Let's save the project now. Click on the save icon on the toolbar or open the <ph id="1">`Project`</ph> menu and choose <ph id="2">`Save As...`</ph></source>
+<target xml:lang="fr">Let's save the project now. Click on the save icon on the toolbar or open the <ph id="1">`Project`</ph> menu and choose <ph id="2">`Save As...`</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called <ph id="1">`Module_1_Exercise_1`</ph>. Give the QGIS project a name (for example: <ph id="2">`QGIS_Training_Exercise_1`</ph>). The project will be saved as a <ph id="3">`.qqz`</ph> file.</source>
+<target xml:lang="fr">Choose a location for the project file. An ideal place would be in the project subfolder in the template folder structure. Navigate to the folder called <ph id="1">`Module_1_Exercise_1`</ph>. Give the QGIS project a name (for example: <ph id="2">`QGIS_Training_Exercise_1`</ph>). The project will be saved as a <ph id="3">`.qqz`</ph> file.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Save`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`Save`</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Close the QGIS application and reopen it.</source>
+<target xml:lang="fr">Close the QGIS application and reopen it.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Close the QGIS application and reopen it. When QGIS restarts, the project we just saved will appear in the <ph id="1">`Recent Projects`</ph> panel. You can double-click it to open it. You can also navigate to the <ph id="2">`.qgz`</ph> file in your file explorer and double click on it.
+This will also launch QGIS and load the project.</source>
+<target xml:lang="fr">Close the QGIS application and reopen it. When QGIS restarts, the project we just saved will appear in the <ph id="1">`Recent Projects`</ph> panel. You can double-click it to open it. You can also navigate to the <ph id="2">`.qgz`</ph> file in your file explorer and double click on it.
+This will also launch QGIS and load the project.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Keeping your folder structure organised goes a long way in helping you work efficiently and without frustration.</source>
+<target xml:lang="fr">Keeping your folder structure organised goes a long way in helping you work efficiently and without frustration.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Warning}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Warning}</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Remember<ept id="1">__</ept>: Project files in QGIS are saved separately from the data you are using in the project, which is why it is advisable to keep all the
+files related to a project in a folder.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Remember<ept id="1">__</ept>: Project files in QGIS are saved separately from the data you are using in the project, which is why it is advisable to keep all the
+files related to a project in a folder.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

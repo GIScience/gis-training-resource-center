@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_basemaps_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Basemaps <bpt id="1">&lt;a id="basemaps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basemaps <bpt id="1">&lt;a id="basemaps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Basemaps are background maps. They are often very practical since they are easy to use, allow easy orientation on the map canvas and are diverse.</source>
+<target xml:lang="fr">Basemaps are background maps. They are often very practical since they are easy to use, allow easy orientation on the map canvas and are diverse.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Standard QGIS Basemaps <bpt id="1">&lt;a id="standard-qgis-basemaps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Standard QGIS Basemaps <bpt id="1">&lt;a id="standard-qgis-basemaps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">You can always add the standard OpenStreetMap as a basemap to your map canvas.</source>
+<target xml:lang="fr">You can always add the standard OpenStreetMap as a basemap to your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">There are two ways to add the OpenStreetMap as a basemap.</source>
+<target xml:lang="fr">There are two ways to add the OpenStreetMap as a basemap.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Option 1:<ept id="1">__</ept> Find in the <ph id="2">`Browser`</ph> panel <ph id="3">`XYZ Tiles`</ph>. Open the dropdown by clicking on it and select OpenStreetMap or another basemap.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Option 1:<ept id="1">__</ept> Find in the <ph id="2">`Browser`</ph> panel <ph id="3">`XYZ Tiles`</ph>. Open the dropdown by clicking on it and select OpenStreetMap or another basemap.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Option 2:<ept id="1">__</ept> <ph id="2">`Layer`</ph> → <ph id="3">`Add Layer`</ph> → <ph id="4">`Add XYZ layer...`</ph> → Select the OpenStreetMap or another basemap.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Option 2:<ept id="1">__</ept> <ph id="2">`Layer`</ph> → <ph id="3">`Add Layer`</ph> → <ph id="4">`Add XYZ layer...`</ph> → Select the OpenStreetMap or another basemap.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Add standard OpenStreetMap as Basemap<ept id="1">__</ept>
+</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Add standard OpenStreetMap as Basemap<ept id="1">__</ept>
+</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Add Google and Bing Basemaps <bpt id="1">&lt;a id="add-google-and-bing-basemaps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Add Google and Bing Basemaps <bpt id="1">&lt;a id="add-google-and-bing-basemaps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">To add additional basemaps without using plugins you have to configure <ph id="1">`XYZ Tiles`</ph>.
+In the <ph id="2">`Browser Panel`</ph>, right-click on <ph id="3">`XYZ Tiles`</ph> → <ph id="4">`New Connection`</ph>.</source>
+<target xml:lang="fr">To add additional basemaps without using plugins you have to configure <ph id="1">`XYZ Tiles`</ph>.
+In the <ph id="2">`Browser Panel`</ph>, right-click on <ph id="3">`XYZ Tiles`</ph> → <ph id="4">`New Connection`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Name`</ph> = The name of the new basemap.</source>
+<target xml:lang="fr"><ph id="1">`Name`</ph> = The name of the new basemap.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`URL`</ph> = You can use any of the URLs in the table below.</source>
+<target xml:lang="fr"><ph id="1">`URL`</ph> = You can use any of the URLs in the table below.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Info</source>
+<target xml:lang="fr">Info</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">URL</source>
+<target xml:lang="fr">URL</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OpenTopoMap<ept id="1">](https://wiki.openstreetmap.org/wiki/OpenTopoMap)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OpenTopoMap<ept id="1">](https://wiki.openstreetmap.org/wiki/OpenTopoMap)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Opensource topographic map based on OSM and SRTM</source>
+<target xml:lang="fr">Opensource topographic map based on OSM and SRTM</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://tile.opentopomap.org/{z}/{x}/{y}.png</ph></source>
+<target xml:lang="fr"><ph id="1">https://tile.opentopomap.org/{z}/{x}/{y}.png</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Google Terrain</source>
+<target xml:lang="fr">Google Terrain</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mt1.google.com/vt/lyrs=t&amp;x={x}&amp;y={y}&amp;z={z}</ph></source>
+<target xml:lang="fr"><ph id="1">https://mt1.google.com/vt/lyrs=t&amp;x={x}&amp;y={y}&amp;z={z}</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Google Hybrid</source>
+<target xml:lang="fr">Google Hybrid</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mt1.google.com/vt/lyrs=y&amp;x={x}&amp;y={y}&amp;z={z}</ph></source>
+<target xml:lang="fr"><ph id="1">https://mt1.google.com/vt/lyrs=y&amp;x={x}&amp;y={y}&amp;z={z}</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Google Satellite</source>
+<target xml:lang="fr">Google Satellite</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mt1.google.com/vt/lyrs=s&amp;x={x}&amp;y={y}&amp;z={z}</ph></source>
+<target xml:lang="fr"><ph id="1">https://mt1.google.com/vt/lyrs=s&amp;x={x}&amp;y={y}&amp;z={z}</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Google Road</source>
+<target xml:lang="fr">Google Road</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}</ph></source>
+<target xml:lang="fr"><ph id="1">https://mt1.google.com/vt/lyrs=m&amp;x={x}&amp;y={y}&amp;z={z}</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Google Roads only</source>
+<target xml:lang="fr">Google Roads only</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mt1.google.com/vt/lyrs=h&amp;x={x}&amp;y={y}&amp;z={z}</ph></source>
+<target xml:lang="fr"><ph id="1">https://mt1.google.com/vt/lyrs=h&amp;x={x}&amp;y={y}&amp;z={z}</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Google alternative Road map</source>
+<target xml:lang="fr">Google alternative Road map</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://mt1.google.com/vt/lyrs=r&amp;x={x}&amp;y={y}&amp;z={z}</ph></source>
+<target xml:lang="fr"><ph id="1">https://mt1.google.com/vt/lyrs=r&amp;x={x}&amp;y={y}&amp;z={z}</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Bing Aerial</source>
+<target xml:lang="fr">Bing Aerial</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1</ph></source>
+<target xml:lang="fr"><ph id="1">http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Advantages of using basemaps from XYZ Tiles are:</source>
+<target xml:lang="fr">Advantages of using basemaps from XYZ Tiles are:</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Load faster</source>
+<target xml:lang="fr">Load faster</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Support reprojection</source>
+<target xml:lang="fr">Support reprojection</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Support printing</source>
+<target xml:lang="fr">Support printing</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Supported by online applications like <bpt id="1">[</bpt>QField<ept id="1">](https://qfield.org/)</ept></source>
+<target xml:lang="fr">Supported by online applications like <bpt id="1">[</bpt>QField<ept id="1">](https://qfield.org/)</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Basemaps from <bpt id="1">[</bpt>QuickMapServices<it id="2" pos="close">](https://nextgis.com/blog/quickmapservices/)</it> Plugin <it id="3" pos="open">&lt;a id="basemaps-from-quickmapserviceshttpsnextgiscomblogquickmapservices-plugin"></it><ept id="3">&lt;/a></ept></source>
+<target xml:lang="fr">Basemaps from <bpt id="1">[</bpt>QuickMapServices<it id="2" pos="close">](https://nextgis.com/blog/quickmapservices/)</it> Plugin <it id="3" pos="open">&lt;a id="basemaps-from-quickmapserviceshttpsnextgiscomblogquickmapservices-plugin"></it><ept id="3">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">The QuickMapServices Plugin allows to access to a wide range of basemaps.</source>
+<target xml:lang="fr">The QuickMapServices Plugin allows to access to a wide range of basemaps.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+There can be problems when printing some basemaps from the QuickMapServices!
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+There can be problems when printing some basemaps from the QuickMapServices!
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph> → select provider e.g. NASA → select basemap.</source>
+<target xml:lang="fr"><ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph> → select provider e.g. NASA → select basemap.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Functionality of QuickMapServices Plugin<ept id="1">__</ept>
+</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Functionality of QuickMapServices Plugin<ept id="1">__</ept>
+</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Configuration of QuickMapServices <bpt id="1">&lt;a id="configuration-of-quickmapservices"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configuration of QuickMapServices <bpt id="1">&lt;a id="configuration-of-quickmapservices"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.</source>
+<target xml:lang="fr">After installing the plugin (Plugin Wiki) you need to configure the plugin to access all basemaps.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph> → <ph id="3">`Settings`</ph> → Use the horizontal arrows to navigate to <ph id="4">`More Services`</ph> → <ph id="5">`Get Contributed Pack`</ph></source>
+<target xml:lang="fr"><ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph> → <ph id="3">`Settings`</ph> → Use the horizontal arrows to navigate to <ph id="4">`More Services`</ph> → <ph id="5">`Get Contributed Pack`</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Navigation on Basemap with OSM Place Search Plugin <bpt id="1">&lt;a id="navigation-on-basemap-with-osm-place-search-plugin"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Navigation on Basemap with OSM Place Search Plugin <bpt id="1">&lt;a id="navigation-on-basemap-with-osm-place-search-plugin"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.</source>
+<target xml:lang="fr">With the OSM Place Search Plugin, you can find places all around the world based on OpenStreetMap. This means the place search is independent from whatever basemap you are using, it is always based on OpenStreetMap.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+If the plugin is installed and activated but the panel is not visible check Wiki <bpt id="2">[</bpt>Move and arrange toolbars and panels<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)</ept>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+If the plugin is installed and activated but the panel is not visible check Wiki <bpt id="2">[</bpt>Move and arrange toolbars and panels<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html#show-and-hide-displays-and-toolbars)</ept>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Functionality of OSM Place Search Plugin<ept id="1">__</ept>
+</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Functionality of OSM Place Search Plugin<ept id="1">__</ept>
+</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
