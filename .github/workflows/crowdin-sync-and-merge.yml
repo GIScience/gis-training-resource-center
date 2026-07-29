@@ -79,7 +79,8 @@ jobs:
 
           if [ -z "$TIKAL_DIR" ]; then
             echo "Could not find tikal.sh after extracting Okapi."
-            find "$HOME/tools/okapi" -maxdepth 4 -type f | sort
+            find "$HOME/tools/okapi" -maxdepth 4 -type f | sort > /tmp/okapi-files.txt
+            head -n 200 /tmp/okapi-files.txt
             exit 1
           fi
 
@@ -91,6 +92,8 @@ jobs:
 
       - name: Verify Java and Tikal
         run: |
+          set -euo pipefail
+
           java -version
           tikal.sh -help
 
@@ -106,7 +109,8 @@ jobs:
           test -f crowdin.yml
 
           echo "English source folder:"
-          find content/en -maxdepth 2 -type f -name "*.md" | sort | head -n 30
+          find content/en -maxdepth 2 -type f -name "*.md" | sort > /tmp/english-md-files.txt
+          head -n 30 /tmp/english-md-files.txt
 
           echo ""
           echo "Localisation files:"
@@ -163,16 +167,26 @@ jobs:
         run: |
           set -euo pipefail
 
-          find localisation/xliff/sources -type f -name "*.xlf" | sort
+          find localisation/xliff/sources -type f -name "*.xlf" | sort > /tmp/source-xliff-files.txt
+          head -n 100 /tmp/source-xliff-files.txt
+
+          echo ""
+          echo "Total source XLIFF files:"
+          wc -l /tmp/source-xliff-files.txt
 
       - name: Fail if no source XLIFF files were generated
         run: |
           set -euo pipefail
 
-          if ! find localisation/xliff/sources -type f -name "*.xlf" | grep -q .; then
+          first_source_xlf="$(find localisation/xliff/sources -type f -name "*.xlf" -print -quit)"
+
+          if [ -z "$first_source_xlf" ]; then
             echo "No source XLIFF files were generated."
             exit 1
           fi
+
+          echo "Source XLIFF files were generated."
+          echo "First source XLIFF: $first_source_xlf"
 
       - name: Upload XLIFF sources to Crowdin
         uses: crowdin/github-action@v2
@@ -241,20 +255,35 @@ jobs:
         run: |
           set -euo pipefail
 
-          find localisation/xliff/translations -type f -name "*.xlf" | sort
+          find localisation/xliff/translations -type f -name "*.xlf" | sort > /tmp/translated-xliff-files.txt
+
+          if [ -s /tmp/translated-xliff-files.txt ]; then
+            head -n 100 /tmp/translated-xliff-files.txt
+            echo ""
+            echo "Total translated XLIFF files:"
+            wc -l /tmp/translated-xliff-files.txt
+          else
+            echo "No translated XLIFF files found in localisation/xliff/translations."
+          fi
 
       - name: Stop if no translated XLIFF files were downloaded
         run: |
           set -euo pipefail
 
-          if ! find localisation/xliff/translations -type f -name "*.xlf" | grep -q .; then
+          first_translated_xlf="$(find localisation/xliff/translations -type f -name "*.xlf" -print -quit)"
+
+          if [ -z "$first_translated_xlf" ]; then
             echo "No translated XLIFF files were downloaded from Crowdin."
             echo "Possible causes:"
             echo "- No approved translations exist for this language."
             echo "- The Crowdin export path does not match crowdin.yml."
             echo "- The selected target_language does not match the language code in Crowdin."
+            echo "- Source files were updated and affected translations now need approval again."
             exit 1
           fi
+
+          echo "Translated XLIFF files were downloaded."
+          echo "First translated XLIFF: $first_translated_xlf"
 
       - name: Merge translated XLIFF and place Markdown into content language folder
         run: |
@@ -281,10 +310,16 @@ jobs:
           if [ ! -d "$TRANSLATIONS_ROOT" ]; then
             echo "Expected translated XLIFF folder does not exist:"
             echo "  $TRANSLATIONS_ROOT"
+            echo ""
+            echo "Available translation folders:"
+            find localisation/xliff/translations -maxdepth 3 -type d | sort > /tmp/translation-folders.txt
+            cat /tmp/translation-folders.txt
             exit 1
           fi
 
-          if ! find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" | grep -q .; then
+          first_translated_xlf="$(find "$TRANSLATIONS_ROOT" -type f -name "*.xlf" -print -quit)"
+
+          if [ -z "$first_translated_xlf" ]; then
             echo "No translated XLIFF files found in $TRANSLATIONS_ROOT."
             exit 1
           fi
@@ -408,10 +443,15 @@ jobs:
             echo "All translated XLIFF files merged successfully."
           fi
 
-          if ! find "$TARGET_ROOT" -type f -name "*.md" | grep -q .; then
+          first_translated_md="$(find "$TARGET_ROOT" -type f -name "*.md" -print -quit)"
+
+          if [ -z "$first_translated_md" ]; then
             echo "No translated Markdown files were generated in $TARGET_ROOT."
             exit 1
           fi
+
+          echo "Translated Markdown files were generated."
+          echo "First translated Markdown: $first_translated_md"
 
       - name: Rewrite translated internal links
         run: |
@@ -471,10 +511,15 @@ jobs:
         run: |
           set -euo pipefail
 
-          if ! find content/${{ inputs.target_language }} -type f -name "*.md" | grep -q .; then
+          first_translated_md="$(find content/${{ inputs.target_language }} -type f -name "*.md" -print -quit)"
+
+          if [ -z "$first_translated_md" ]; then
             echo "No translated Markdown files were generated in content/${{ inputs.target_language }}."
             exit 1
           fi
+
+          echo "Translated Markdown files were generated."
+          echo "First translated Markdown: $first_translated_md"
 
       - name: Remove temporary XLIFF files
         run: |
@@ -510,3 +555,4 @@ jobs:
             Target language: `${{ inputs.target_language }}`
           add-paths: |
             content/${{ inputs.target_language }}/**
+            
