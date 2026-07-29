@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -14,7 +14,7 @@ Une carte des capacités des établissements de santé est un outil pratique et 
 Les cartes de capacité de santé combinent généralement plusieurs attributs en un seul symbole en utilisant la taille, la couleur et différentes formes.
 
 
-:::{figure} /fig/HS_capacity_map_examples.drawio.png
+:::{figure} ../../../fig/HS_capacity_map_examples.drawio.png
 ---
 name: HS_capacity_map_examples.drawio.png
 width: 800 px
@@ -58,7 +58,7 @@ Tout d’abord, nous devons charger le jeu de données Malawi - Health Facility 
 1. Dans le menu du haut, allez à  
 **Calque → Ajouter une couche → Ajouter une couche de texte délimité…**.
 
-2. À côté du champ **Nom du fichier** cliquez sur les trois points ![](/fig/Three_points.png)   
+2. À côté du champ **Nom du fichier** cliquez sur les trois points ![](../../../fig/Three_points.png)   
     et accédez à votre fichier CSV **des établissements de santé Malawi au format** et cliquez sur `Open`.
 
 
@@ -82,7 +82,7 @@ Tout d’abord, nous devons charger le jeu de données Malawi - Health Facility 
 5. Cliquez sur **Ajouter**.  
    Le calque apparaîtra maintenant dans votre panneau **Calques** et les points s'afficheront sur la toile de la carte.
 
-:::{figure} /fig/en_point_visualisation_malawi_HS_csv_import.png
+:::{figure} ../../../fig/en_point_visualisation_malawi_HS_csv_import.png
 ---
 name: import_health_facilities_csv
 width: 700px
@@ -171,7 +171,7 @@ Why these ranges?
 - Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class.
-(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#graduated-classification))
+(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#graduated-classification))
 ```
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
@@ -184,7 +184,7 @@ La carte qui en résulte affiche les hôpitaux sous forme de cercles de tailles 
 ::::{grid} 2
 
 :::{grid-item} **Carte circulaire proportionnelle montrant le nombre de lits**
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_result.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_result.png
 ---
 name: Proportional circles: beds
 width: 400
@@ -194,7 +194,7 @@ Cercles proportionnels : lits
 :::
 :::{grid-item} **Classes of proportional circle map**
 Smaller circles correspond to hospitals with few beds, while larger circles indicate facilities with higher capacity.
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_result_legend.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_result_legend.png
 ---
 name: Proportional circles: beds classes
 width: 100
@@ -239,7 +239,7 @@ END
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video>Ou écrivez vous-même le code en utilisant l'aide de la fonctionnalité du constructeur d'expression :
 
 
-:::{figure} /fig/en_data_defined_overried_calculator_Malwai_Exampel.png
+:::{figure} ../../../fig/en_data_defined_overried_calculator_Malwai_Exampel.png
 ---
 name: Expression in data-defined override Expression Builder
 width: 700px
@@ -252,7 +252,7 @@ Expression dans le Expression Builder
 :::::{grid} 2
 
 ::::{grid-item} **Carte circulaire proportionnelle montrant le nombre de lits ET le statut opérationnel**
-:::{figure} /fig/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_data_difined_override_circel_result.png
 ---
 name: Proportional circles: beds + operational status
 width: 400
@@ -264,7 +264,7 @@ Cercles proportionnels : lits + état opérationnel
 ::::{grid-item} **Classes de la carte proportionnelle du cercle**
 Cette nouvelle visualisation montre la taille du cercle, le nombre de lits, la couleur (Vert : Opérationnel; Rouge: Non-opération), et le statut opérationnel des hôpitaux.
 
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_legend.png
 ---
 name: Legend proportional circles: beds + operational status
 width: 400
@@ -299,7 +299,7 @@ Une autre option ne fonctionne que dans le `Print Layout`. Dans la Légende, il 
 
 
 
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_map.png
 ---
 name: Exampel Map Proportional circles: Hospital Beds + Operational Status
 width: 800
@@ -357,7 +357,7 @@ En ajoutant des styles de traits à vos symboles, la carte contient maintenant u
 :::::{grid} 2
 
 ::::{grid-item}
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map.png
 ---
 name: Proportional circles: beds + operational status + Owner status
 width: 400
@@ -369,7 +369,7 @@ Cercles proportionnels : lits + statut opérationnel + statut du propriétaire
 ::::{grid-item}
 
 
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_data_defined_override_result_strock_style_legend.png
 ---
 name: Legend
 Cercles proportionnels : lits + statut opérationnel + statut du propriétaire
@@ -392,7 +392,7 @@ Une solution simple est de dupliquer votre calque hospitalière et d'utiliser la
 
 ::::
 
-:::{figure} /fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png
+:::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png
 ---
 name: Exampel Map Proportional circles: Hospital Beds + Operational Status
 width: 800
