@@ -230,7 +230,7 @@ jobs:
           download_language: ${{ inputs.target_language }}
 
           skip_untranslated_strings: false
-          skip_untranslated_files: true
+          skip_untranslated_files: false
           export_only_approved: false
           download_translations_args: "--verbose"
 
