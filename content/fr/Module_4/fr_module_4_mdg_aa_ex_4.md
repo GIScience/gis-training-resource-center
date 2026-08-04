@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: ../fr_intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ __Type d'exercice:__
 __Piste d'Exercice:__
 ^^^
 
-Cet exercice est le quatrième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
+Cet exercice est le quatrième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 :::
 
