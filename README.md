@@ -3,7 +3,7 @@
 :construction: Under Construction :construction: 
 
 
-https://giscience.github.io/gis-training-resource-center/content/intro.html
+https://giscience.github.io/gis-training-resource-center/en/intro.html
 
 We use markdown documents with rich media hosted elsewhere that serve as comprehensive guides, tutorials and reference materials. 
 The markdown files are built to a static webpage via `jupyter-book`.
@@ -25,7 +25,8 @@ The markdown files are built to a static webpage via `jupyter-book`.
   * `git push`
   * conflict: `git config pull.rebase false`
   * when you are finished with your changes, create a pull request to merge `dev` with `main`. 
-* push rendered html files to branch `gh-pages` via the command `ghp-import -n -p -f _build/html`. This will automatically delete the branch and recreate it to avoid a bloated history.
+* when merged/pushed to main github automatically deploys the new book
+
 
 ## 🌐 Contributions
 
@@ -35,6 +36,4 @@ Before contributing:
 * Contact us on `gis-training-platform@heigit.org`
 * Make sure to read through the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html)
 
-## CI / CD
-* to be considered in the future
 
