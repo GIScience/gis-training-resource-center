@@ -3,7 +3,7 @@
 :construction: Under Construction :construction: 
 
 
-https://giscience.github.io/gis-training-resource-center/content/intro.html
+https://giscience.github.io/gis-training-resource-center/en/intro.html
 
 We use markdown documents with rich media hosted elsewhere that serve as comprehensive guides, tutorials and reference materials. 
 The markdown files are built to a static webpage via `jupyter-book`.

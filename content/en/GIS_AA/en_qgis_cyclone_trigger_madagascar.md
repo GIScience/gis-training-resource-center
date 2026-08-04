@@ -10,7 +10,7 @@ La version française de cet article se trouve ici:
 
 :::{card}
 :class-card: sd-text-center sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html
+:link: ../GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
 Version française
 :::
 
@@ -23,7 +23,7 @@ The QGIS project file, the model, and the datasets required for the model can be
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link:https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/MDG/MDG_AA_Cyclone_Monitoring_Trigger.zip
 __Download the project.__
 :::
 
@@ -171,7 +171,7 @@ The following key processing steps are run inside the model:
 
 ### How to run the model <a id="how-to-run-the-model"></a>
 
-The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+The [QGIS Model Designer](../Wiki/en_qgis_automatisation_wiki.md#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
 ### Step 1: Explanation of the folder structure <a id="step-1-explanation-of-the-folder-structure"></a>
@@ -306,8 +306,8 @@ It is also possible to add a specific warehouse isochrone to one of the previous
 #### Opening the model in QGIS <a id="opening-the-model-in-qgis"></a>
 
 Let's open the QGIS model:
-1. In the tob bar of your QGIS window, navigate to `Processing` -> `Model Designer`. A new window will open. This is the model designer.
-2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model".
+1. In the tob bar of your QGIS window, navigate to `Processing` → `Model Designer`. A new window will open. This is the model designer.
+2. In the upper panel click `Model` → `Open Model` and navigate to your folder "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model".
 3. Select the "Cyclones_EAP_MAD_Trigger.model3" file and click on `Open`. The model will open and you will see yellow, white, green and grey boxes.
 
 <!--ADD PICTURE
@@ -343,7 +343,7 @@ align: center
 __Model Inputs & Outputs__
 
 
-1. A QGIS model can be run by navigating to the top bar > `Model` (`Modèle`) > `Run Model` (`Exécuter le modèle`) or by clicking on the ![](../../../fig/Module_7/qgis_3.44_run_model.png) icon. 
+1. A QGIS model can be run by navigating to the top bar → `Model` (`Modèle`) → `Run Model` (`Exécuter le modèle`) or by clicking on the ![](../../../fig/Module_7/qgis_3.44_run_model.png) icon. 
 
 
 2. A new window will open. Here you need to define the model's inputs and outputs. For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
@@ -378,7 +378,7 @@ If you don't specify the location to save the output files, the outputs will be 
 :::
 ::::
 
-3. Further down, you have to specify where to save the outputs. For each output, click on the three points ![](../../../fig/Three_points.png) > `Save to Geopackage` (`Enregistrer dans un Geopackage...`). A File explorer window will open. Navigate to the folder `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` and give it the __name of the output layer and the date__ (YYYYMMDD). 
+3. Further down, you have to specify where to save the outputs. For each output, click on the three points ![](../../../fig/Three_points.png) → `Save to Geopackage` (`Enregistrer dans un Geopackage...`). A File explorer window will open. Navigate to the folder `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` and give it the __name of the output layer and the date__ (YYYYMMDD). 
     1. `Exposed_Cyclone_Area_YYYYMMDD`, for example, `Exposed_Cyclone_Area_YYYYMMDD_20250805`
     2. One output is called `Spreadsheet_Exposed_District` for which the model will ouput a `.csv`-file. For this layer, choose `Save to file` (`Enregistrer vers un fichier...`), navigate to the folder `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` and give it the name `Spreadsheet_Exposed_Districts_YYYYMMDD`
     3. `Exposed_Education_Facilities_points_YYYYMMDD`
@@ -500,20 +500,20 @@ align: center
 
 #### Styling of the layers <a id="styling-of-the-layers"></a>
 
-1. Right click on the exposed_districts layer -> `Properties` -> `Symbology`
-2. In the down left corner click on `Style` -> `Load Style`
+1. Right click on the exposed_districts layer → `Properties` → `Symbology`.
+2. In the down left corner click on `Style` → `Load Style`.
 3. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_districts_style.qml”__.
-4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” window click `Apply` and `OK`
+4. Click `Open`. Then click on `Load Style`.
+5. Back in the “Layer Properties” window click `Apply` and `OK`.
 
 Repeat this process for the following output layers, along with their corresponding style sheets:
 
-| Layer name | Style | Comment
-| ----- | --- | --- |
-|`Admin1_Impact_Overview_Map`| `adm1_style.qml` | pre-loaded |
-|`CRM_warehouses` | `CRM_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| pre-loaded |
+| Layer name                   | Style                            | Comment      |
+|------------------------------|----------------------------------|--------------|
+| `Admin1_Impact_Overview_Map` | `adm1_style.qml`                 | pre-loaded   |
+| `CRM_warehouses`             | `CRM_warehouses_style.qml`       | model output |
+| `exposed_cyclone_area`       | `exposed_cyclone_area_style.qml` | model output |
+| `cyclone_track`              | `storm_track_cyclone_style.qml`  | pre-loaded   |
 
 6. The styling for the layer `CRM_warehouses` is not fixed yet. Right-click on the layer `CRM_warehouses` > `Properties` and navigate to the symbology tab.
   :::{figure} ../../../fig/AA/mdg_aa_fix_warehouse_icon.png
@@ -538,11 +538,11 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 #### Making the Print Layout <a id="making-the-print-layout"></a>
 
-For easier visualization, we have created these [map templates](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#print-layout).
+For easier visualization, we have created these [map templates](../Module_4/en_qgis_map_design_2.md#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#print-layout).
 
 
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview` and the `OpenStreetMap` basemap.
-2. Open a new print layout by clicking on `Project` -> `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
+2. Open a new print layout by clicking on `Project` → `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
 3. We want to create a new layout from a template. Click on the `Empty Layout` dropdown menu and select `Specific`. 
 4. Below, click on the three dots ![](../../../fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_overview_map_template`. Click `Open`, then `Create`. 
 5. QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
@@ -575,11 +575,11 @@ width: 600 px
    - In the `Item Properties` panel, select the `Exposed_Districts` layer and click **Refresh Table Data**
    - Click on `Attributes...`
    - In the **Columns** section:
-     - Click `Clear`
+     - Click `Clear`.
      - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE`
    - In the **Sorting** section:
      - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
-   - Click **OK** to apply
+   - Click **OK** to apply.
 
 
 ```{note}
@@ -627,7 +627,7 @@ width: 600 px
 
 9. Adjust the icons by clicking on the <Picture> field in the items list or on the red cross in the map template. 
   * In the Item Properties, correct the path to the CRM logo by clicking on the three dots ![](../../../fig/Three_points.png) and navigate to `\aa_madagascar\AA_Cyclone_Monitoring_Trigger_MAD\logos_pictures` and selecting the CRM logo file.
-  * Repeat the process for the second missing image. This time, select the HeiGIT Logo
+  * Repeat the process for the second missing image. This time, select the HeiGIT Logo.
 
 
 10. Below the logos, adjust the information in the text box by selecting the text box and navigating to the Item properties.
@@ -696,7 +696,7 @@ When you have finished the design of your map, you can export it as pdf or image
 
 __Export as Image__
 
-1. In the print layout click on `Layer` -> `Export as Image`
+1. In the print layout click on `Layer` → `Export as Image`
 2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**. 
 3. Click on `Save`
 4. The window `Image Export Options` will appear. Click `Save`.
@@ -705,7 +705,7 @@ Now the image can be found in the result folder.
 
 __Export as PDF__
 
-1. In the print layout click on `Layer` -> `Export as PDF`
+1. In the print layout click on `Layer` → `Export as PDF`
 2. Choose the __map_outputs__ folder. Give the file the name of the event e.g **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.
 3. Click on `Save`.
 4. The window `PDF Export Options` will appear. For the best results, select the `lossless` image compression.
@@ -737,20 +737,20 @@ align: center
 #### Map 2: Styling of the layers <a id="map-2-styling-of-the-layers"></a>
 
 1. Deactivate all the layers except gor the group "Map_Cyclone_Impact_Assessment" and the OpenStreetMap Basemap.
-2. Right click on the "exposed_population - copy" layer -> `Properties` -> `Symbology`
-3. In the down left corner click on `Style` -> `Load Style`
+2. Right click on the "exposed_population - copy" layer → `Properties` → `Symbology`
+3. In the down left corner click on `Style` → `Load Style`
 4. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” folder and select the file __“exposed_population_style.qml”__ style layer.
-5. Click `Open`. Then click on `Load Style`
-6. Back in the “Layer Properties” window click `Apply` and `OK`
+5. Click `Open`. Then click on `Load Style`.
+6. Back in the “Layer Properties” window click `Apply` and `OK`.
 
 Repeat this process for the following output layers, along with their corresponding style sheets:
 
-| Layer name | Style | Comment
-| ----- | --- | --- |
-|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | pre-loaded |
-|`CRM_warehouses` | `CRM_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
+| Layer name                     | Style                            | Comment        |
+|--------------------------------|----------------------------------|----------------|
+| `Admin1_Impact_Assessment_Map` | `adm1_style.qml`                 | pre-loaded     |
+| `CRM_warehouses`               | `CRM_warehouses_style.qml`       | model output   |
+| `exposed_cyclone_area`         | `exposed_cyclone_area_style.qml` | model output   |
+| `cyclone_track`                | `storm_track_cyclone_style.qml`  | loaded by user |
 
 :::{attention}
 
@@ -766,18 +766,18 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 The documentation covers the exposed population impact assessment map. However, the model also estimates the exposed buildings, landcover, and health and education facilities. These variables can also be displayed on the map using the following style files. To keep the map easily understandable, use only one of the 
 
 
-| Layer name | Style | Comment
-| ----- | --- | --- |
-|`exposed_population`|`exposed_population_style.qml`|model output|
-|`exposed_building`|`exposed_building_style.qml`|model output|
-|`exposed_health_facilities`| `exposed_health_facilities_style.qml` | model output |
-|`exposed_education_facilities`| `exposed_education_facilities_style.qml` | model output |
-|`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | model output |
-|`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | model output |
-|`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | model output |
-|`relevant_warehouses` | `CRM_warehouses_style.qml` | model output |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| model output |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| loaded by user |
+| Layer name                            | Style                                           | Comment        |
+|---------------------------------------|-------------------------------------------------|----------------|
+| `exposed_population`                  | `exposed_population_style.qml`                  | model output   |
+| `exposed_building`                    | `exposed_building_style.qml`                    | model output   |
+| `exposed_health_facilities`           | `exposed_health_facilities_style.qml`           | model output   |
+| `exposed_education_facilities`        | `exposed_education_facilities_style.qml`        | model output   |
+| `exposed_agricultural_landcover`      | `exposed_agriculture_landcover_style.qml`       | model output   |
+| `exposed_health_facilities_points`    | `points_exposed_health_facilities_style.qml`    | model output   |
+| `exposed_education_facilities_points` | `points_exposed_education_facilities_style.qml` | model output   |
+| `relevant_warehouses`                 | `CRM_warehouses_style.qml`                      | model output   |
+| `exposed_cyclone_area`                | `exposed_cyclone_area_style.qml`                | model output   |
+| `cyclone_track`                       | `storm_track_cyclone_style.qml`                 | loaded by user |
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 ::::
 
@@ -788,7 +788,7 @@ The same workflow applies to all five impact variables: population, buildings, e
 ```
 
 
-1. Open a new print layout by clicking on `Project` -> `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
+1. Open a new print layout by clicking on `Project` →s `Layout Manager`. A small new window will appear. Here you can select an existing layout or create a new layout from a template. 
 2. We want to create a new layout from a template. Click on the `Empty Layout` dropdown menu and select `Specific`. 
 3. Below, click on the three dots ![](../../../fig/Three_points.png) and navigate to the folder `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` and select the file with the name `cyclone_impact_population_map_template`. Click `Open`, then `Create`. 
 4.  QGIS will ask you to name the new layout. Give it a name such as "Cyclone_Overview_Map_Freddy_2023". Click `OK`. A new window will open. This is the print layout composer. It should look similar to the figure below.
@@ -809,24 +809,24 @@ width: 600 px
    - In the `Item Properties` panel, select the `exposed_population`**Or any other layer you are working with** layer and click **Refresh Table Data**
    - Click on `Attributes...`
    - In the **Columns** section:
-     - Click `Clear`
+     - Click `Clear`.
      - ➕ Add the columns: `ADM1_EN`, `ADM2_EN`, `ADM2_PCODE` and `exposed_population` **or any other layer you are working with**
    - In the **Sorting** section:
      - ➕ Add `ADM1_EN` and set the sort order to `Ascending`
-   - Click **OK** to apply
+   - Click **OK** to apply.
 
 ```{note}
 If too many districts are affected, the attribute table might not fit the page. Reduce the font size in the table’s item properties to make everything visible — but be aware that this may reduce readability.
 ```
 
 7. Adjust the Legend by clicking on it in the map layout and have a look at the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there, check if you have to open the dropdown. Make sure `Auto update` is **not checked**.
-    * Remove all items in the legend by clicking on each item and then the red minus icon
-        * In the pop-up, check **Only show visible layers** to help you find the correct ones
-        * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name  
+    * Remove all items in the legend by clicking on each item and then the red minus icon.
+        * In the pop-up, check **Only show visible layers** to help you find the correct ones.
+        * To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name.
     * ➕ Add the following layers by clicking the green plus:
-   - In the pop-up, check **Only show visible layers** to help you find the correct ones
-   - 💡 To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name
-   - Ensure all legend entries use **clear and meaningful labels**
+   - In the pop-up, check **Only show visible layers** to help you find the correct ones.
+   - 💡 To rename a legend item, **double-click** on the layer name in the legend item list and enter the new name.
+   - Ensure all legend entries use **clear and meaningful labels**.
 ::::{tab-set}
 
 :::{tab-item} Exposed Population

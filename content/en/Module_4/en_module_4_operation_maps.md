@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -10,9 +10,9 @@
 
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
-- [Health Facility Capacity Map](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_operation_maps.html#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
-- [3W Map (Who, What, Where)](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_operation_maps.html#w-map-who-what-where)
-- [Epidemiological Overview Map](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_operation_maps.html#epidemological-overview-map)
+- [Health Facility Capacity Map](en_module_4_operation_maps.md#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
+- [3W Map (Who, What, Where)](#w-map-who-what-where)
+- [Epidemiological Overview Map](#epidemological-overview-map)
 
 ## Health Facility Capacity Map: Visualising with multi-variable point symbols <a id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols"></a>
 
@@ -175,7 +175,7 @@ Why these ranges?
 - Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class. 
-(See [Graduated Classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#graduated-classification))
+(See [Graduated Classification](../Module_3/en_qgis_data_classification.html#graduated-classification))
 :::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
@@ -332,9 +332,9 @@ Your hospital capacity map now contains a rich amount of information, and it is 
 - `Outline width`
 - `Stroke style` ← we will use this
 5. Add a Data-Defined Override for Stroke Style
-- Next to `Stroke style`, click the small `data-defined override` symbol![](en_data_defined_overried_icon.png)
+- Next to `Stroke style`, click the small `data-defined override` symbol![](../../../fig/en_data_defined_overried_icon.png). 
 - Choose `Edit` → This opens the QGIS Expression Editor.
-6. Write an Expression to Assign Stroke Styles for `TYPE`
+6. Write an Expression to Assign Stroke Styles for `TYPE`.
 
 Here is an example that distinguishes three hospital categories using clear and readable stroke patterns:
 
@@ -415,7 +415,7 @@ __Introduction:__
 
 A 3W info map is one of the most commonly requested products during the first month of an operation. __3W__ refers to __who, what, and where__, meaning which organizations and National Societies are involved in the disaster response, what activities they are carrying out, and where those activities are taking place. The 3W is typically updated regularly as additional actors join the operation and expand their sectoral work in affected locations. You’ll commonly find 3Ws included in SitReps and operational documents, shared on the GO Platform, and discussed during Joint Task Force meetings. In this section we will discuss the essential elements of a 3W map and how to create one using QGIS.
 
-:::{figure} ../../fig/4.8_3W_example_Turkey.png
+:::{figure} ../../../fig/4.8_3W_example_Turkey.png
 ---
 name: 3W Map Turkey
 width: 720 px
@@ -424,7 +424,7 @@ width: 720 px
 :::
 
 ::::{dropdown} Example: 3W Brazil Floods Distribution Map
-:::{figure} ../../fig/4.8_3W_Brazil_Floods.png
+:::{figure} ../../../fig/4.8_3W_Brazil_Floods.png
 ---
 name: 3W Map Turkey
 width: 720 px
@@ -463,7 +463,7 @@ For a variety of 3W map examples, browse the Maps/Infographics section on [Relie
 ::::{dropdown} Example: Hurricane Melissa November 2025 | Jamaica
 The two 3W example maps below demonstrate how such __products develop__ as new information becomes available. The first map, produced at the beginning of November by a single organization (MapAction), contains limited data and represents an __initial community assessment__. Three weeks later, the second map created jointly by MapAction and OCHA, includes significantly more information. In addition to expanded data, the __map’s styling has also evolved__. This progression is entirely normal; maps are expected to __improve__ and become __more detailed__ over time. What matters most is establishing an initial version that can be updated and refined as the response advances.
 
-:::{figure} ../../fig/4.8_3w_jamaica_03_11_2025.png
+:::{figure} ../../../fig/4.8_3w_jamaica_03_11_2025.png
 ---
 name: 3W Map Jamaica Melissa Start
 width: 720 px
@@ -471,7 +471,7 @@ width: 720 px
 Jamaica: Hurricane Melissa - Who, What, Where (3W) as of 03-Nov-2025: Community Assessments (Source: MapAction).
 :::
 
-:::{figure} ../../fig/4.8_3w_jamaica_24_11_2025.png
+:::{figure} ../../../fig/4.8_3w_jamaica_24_11_2025.png
 ---
 name: 3W Map Jamaica Melissa End
 width: 720 px
@@ -513,7 +513,7 @@ name: en_import_delimeted_text
 Import delimited text in QGIS 3.36.
 :::
 
-1. `Layer` -> `Add Layer` -> `Open Delimited Text Layer`.
+1. `Layer` → `Add Layer` → `Open Delimited Text Layer`.
 2. Click on `File name` click on the three points ![](../../../fig/Three_points.png) and navigate to your CSV file and click `Open`.
 3. `File Format`: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas `,` are used. If this is not the case, select `Custom delimiters`. Here you can choose the exact delimiter used in your file. 
 
@@ -532,7 +532,7 @@ Adjusting the file format parameters while importing a delimited text layer into
 
 4. If your CSV file contains geometry, continue with `Geometry definition`: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing __latitude__ and another with __longitude__ data, you can use them to georeferenced the data. Check `Point Coordinates` if the `.csv`-file contains point data. Select for `X field` “LONGITUDE” and for `Y field` “LATITUDE”.
 5. Under `Geometry CRS` select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option `No geometry (attribute only table)`.
-6. Click `Add`
+6. Click `Add`.
 
 :::{dropdown} Video: Opening delimited text files in QGIS
 
@@ -560,7 +560,7 @@ To change the symbology of a single layer:
 3. Click on the arrow to the right of `Fill Color`.
 4. Check the `Transparent Fill` option.
 
-:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+:::{figure} ../../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
 name: en_30.30.2_vector_layer_styling_transparent
 width: 500 px
@@ -580,12 +580,12 @@ __Ordering the layers__
 1. Import all the administrative boundaries into your QGIS-project that you want to work with (e.g. Admin 0-2).
 2. One option is to order the layers in the Layers panel so that the `Admin0`-layer sits on top, followed by `Admin1` and `Admin2`. At first, this might look weird because `Admin0` will cover everything.
 
-:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_1.png
 ---
 name: en_30.30.2_changing_layer_style_1
 height: 400px 
 ---
-Order the layers and navigate to the styling panel of the topmost layer
+Order the layers and navigate to the styling panel of the topmost layer.
 :::
 
 3. Change the symbology of the `Admin0` layer by opening the styling panel and navigating to the Symbology tab. 
@@ -600,7 +600,7 @@ Order the layers and navigate to the styling panel of the topmost layer
 12. Use the same `Stroke Color` as for `Admin0` and `Admin1`, but make the width even thiner and the Stroke Style a __Dash Line__.
 13. Click OK and look at your map: hopefully it's starting to look nicer!
 
-:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_3.png
 ---
 width: 500 px
 name: en_30.30.2_changing_layer_style_3
@@ -626,12 +626,12 @@ If a layer contains numeric values that are continuous, they can be organized in
 1. Open the `Symbology` options and choose `Graduated`.
 2. __Select the value you want to use to assign colors__, in this case, it will be `total_pop`.
 
-:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: en_30.30.2_symbology_variable_ranges
 width: 550px
 ---
-With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values
+With variable ranges, select __Graduated__ symbology and choose the attribute with continuous values.
 :::
 
 3. Click on `Classify` to __list all values divided in classes__.
@@ -640,7 +640,7 @@ With variable ranges, select __Graduated__ symbology and choose the attribute wi
 6. Click on __the arrow next to the color ramp__ to choose another combination of colors - let's say a color ramp from white to blue.
 7. Click `Apply` to preview the look of your layer, then `OK`.
 
-:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: en_30.30.2_symbology_variable_ranges_2
 width: 500px
@@ -650,7 +650,7 @@ You can categorize the continuous values into classes and assign a color ramp .
 
 The following map shows the most populated states of Nigeria using a graduated color categorization. These types of maps are called __Choropleth maps__. 
 
-:::{figure} ../../fig/en_map_design_example_variable_ranges.png
+:::{figure} ../../../fig/en_map_design_example_variable_ranges.png
 ---
 name: en_map_design_example_variable_ranges
 width: 500px
@@ -700,12 +700,12 @@ __Adding Single Labels to a Layer__
 5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
 7. Click `Apply` and `OK`.
 
-:::{figure} ../../fig/en_30.30.2_setting_up_labels.png
+:::{figure} ../../../fig/en_30.30.2_setting_up_labels.png
 ---
 width: 600px
 name: en_30.30.2_setting_up_labels
 ---
-Setting up labels in QGIS 30.30.2
+Setting up labels in QGIS 30.30.2.
 :::
 
 :::{dropdown} Video: How to add single labels
@@ -731,13 +731,13 @@ Single Labels were selected to display the names of the settlements (red dots). 
 6. Set up a new __Print Layout__. 
     - Add a new map by clicking on the ![](../../../fig/30.30.2_print_layout_insert_map_icon.png) `Add map`-button. 
     - Position the main map frame at the center of the page and size it generously so that place names, symbols, and activity markers are easy to read.
-    - Add a header using the ![](../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
+    - Add a header using the ![](../../../fig/30.30.2_print_layout_add_text.png) `Add Label`-tool. It should contain the following information:
         - The title (e.g. Sudanese Red Crescent Response)
         - The type of disaster or emergency
         - The geographic location of the disaster
         - The last updated date to indicate the currency of the data. Because operations evolve quickly, the date is especially important for users who need to understand how recent the information is.
-    - Add __Organizational logos__ (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool to ensure that each active organization can be easily identified on the map.
-    - Icons which describe the specific activity. These can also be added using the ![](../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool. Make use of the [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making.
+    - Add __Organizational logos__ (e.g., International Medical Corps, Relief International, International Rescue Committee) using the ![](../../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool to ensure that each active organization can be easily identified on the map.
+    - Icons which describe the specific activity. These can also be added using the ![](../../../fig/30.30.2_print_layout_add_image.png) `Add image`-tool. Make use of the [IFRC icons](https://learn-sims.org/style-guidance/logos-and-icons/) for map making.
     - A small overview map to help situate the disaster-affected area within a broader geographic context.
 
 :::{note}
@@ -751,12 +751,12 @@ __Open the Print Layout__
 1. Go to __Project > New Print Layout > enter a name for the new print layout > click OK__
 2. A new window with a blank print layout will appear.
 
-:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
 ---
-Create a new Print Layout
+Creating a new Print Layout in QGIS. 
 :::
 
 __Map Composition__
@@ -769,7 +769,7 @@ In general, there are a few things to keep in mind when creating a map:
 - A complete map must have:
     - A meaningful title
     - All the sources used
-    - A legend ![](../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and color schemes.
+    - A legend ![](../../../fig/30.30.2_print_layout_add_legend.png) explaining symbols and color schemes.
     - A scale bar
     - A north arrow
     - and necessary other information to contextualize the information presented on the map.
@@ -786,7 +786,7 @@ In general, there are a few things to keep in mind when creating a map:
     - To illustrate the link between organization logos, activity icons, and their corresponding areas, arrows can be added to the map. Using this feature helps clearly emphasize the relationships and improves overall readability.
 
 :::{dropdown} How to add arrow item
-The arrows ![](../../fig/mActionAddArrow.png) can be added from the left-side panel in the Print Layout. Click and drag on the layout to draw it, then use the Item Properties panel to adjust the arrow’s style, thickness, color, and direction. Arrows can be moved or resized like any other layout item, allowing you to visually connect map features, icons, or labels.
+The arrows ![](../../../fig/mActionAddArrow.png) can be added from the left-side panel in the Print Layout. Click and drag on the layout to draw it, then use the Item Properties panel to adjust the arrow’s style, thickness, color, and direction. Arrows can be moved or resized like any other layout item, allowing you to visually connect map features, icons, or labels.
 :::
 
 :::{Caution}
@@ -794,25 +794,16 @@ Add labels and logos where needed, but avoid cluttering the map with unnecessary
 :::
 
 :::{note}
-All the necessary information about the Print Layout Composer can be found [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_understanding_print_layout.html)
+All the necessary information about the Print Layout Composer can be found [here](en_qgis_understanding_print_layout.md)
 :::
 
-:::{figure} ../../fig/4.8_3W_own_example.png
+:::{figure} ../../../fig/4.8_3W_own_example.png
 ---
 width: 700px
 name: 3W example cholera
 ---
 A simple example of a 3W map showing the distribution of Oral Rehydration Points and the active organizations operating in south-eastern Sudan.
 :::
-
-
-
-
-
-
-
-
-
 
 
 ## Epidemological overview map <a id="epidemological-overview-map"></a>
@@ -892,7 +883,7 @@ As we want to visualize multiple variables later we choose to use a secondary po
 width: 600px
 name: Centroid tool
 ---
-Configuration of the centroid tool to generate centroids of the administrative district polygons
+Configuration of the centroid tool to generate centroids of the administrative district polygons.
 :::
 
 
@@ -901,7 +892,7 @@ These centroids take all fields and their stored information from the polygons t
 
 2. **Visualize weekly infections with point size** 
   - Open the `Layer Styling Panel` select your centroid layer `Centroids_infections` and make sure the **Symbology** menue is selected.
-  - At the top of the Symbology window, change the style from **Single Symbol** to **Graduated**
+  - At the top of the Symbology window, change the style from **Single Symbol** to **Graduated**.
   - As Value, choose `week8_inf_new`. This is the field that will control the size of each circle.
   - Next to **Method**, change the default option **"Color"** to **Size**. This turns the graduated classification into a proportional circle map. Click "classify" and choose 5 classes for displaying you values.
   - As classification mode choose **"Equal Interval"** next to "Mode".
@@ -913,7 +904,7 @@ These centroids take all fields and their stored information from the polygons t
 width: 600px
 name: Point styling
 ---
-Configuration of the Layer Styling Panel to achieve proportional point sizes
+Configuration of the Layer Styling Panel to achieve proportional point sizes.
 :::
 
 
@@ -930,7 +921,7 @@ To further enhance the information content of the map you can add labels to your
 
 
 ::::{dropdown} Add labels to weekly infections points
-- Open the `Layer Styling Panel`, select your centroid layer `Centroids_infections` and select **Labels** in the side bar on the left hand side
+- Open the `Layer Styling Panel`, select your centroid layer `Centroids_infections` and select **Labels** in the side bar on the left hand side.
 - In the labels panel select **"Single labels"** in the drop down menue.
 - As **"Value"** select the field containing the infection count for week 8 `week8_inf_new`.
 
@@ -940,12 +931,12 @@ To further enhance the information content of the map you can add labels to your
 width: 400px
 name: label generation
 ---
-Configuration of the Layer Styling Panel to generate point labels
+Configuration of the Layer Styling Panel to generate point labels.
 :::
 
 
 - Select the third panel of the label options and check the box **"Draw text buffer"** to generate a small buffer around you labels to enhance visibility.
-- To optimize the location of the point labels navigate to the **"Placement"** panel and for "Mode" select **"Offset from Point"**. With the **"Quadrant"** option you can determine the placement of the labels relative to the the centroid to you liking
+- To optimize the location of the point labels navigate to the **"Placement"** panel and for "Mode" select **"Offset from Point"**. With the **"Quadrant"** option you can determine the placement of the labels relative to the the centroid to your liking.
 
 
 :::{figure} ../../../fig/mod_4_label_placement.png
@@ -953,7 +944,7 @@ Configuration of the Layer Styling Panel to generate point labels
 width: 400px
 name: label placement
 ---
-Configuration of the Placement Panel
+Configuration of the Placement Panel.
 :::
 
 
@@ -1022,7 +1013,7 @@ Now that we have visualized our first epidemiological parameter ("weekly new cas
 width: 600px
 name: Trend calculation
 ---
-Configuration of the Field Calculator interface to generate the infection_trend field
+Configuration of the Field Calculator interface to generate the infection_trend field.
 :::
 
 
@@ -1041,7 +1032,7 @@ With your newly generated infection trend field you are now able to display the 
   - As Value, choose `infection trend` to display the calculated trend direction.
   - Click "Classify" to execute the classification. Choose coulours of your liking for the values "decrease" and "increase" and "no change" (e.g. green, red and grey) by double clicking on the coloured squares in the panel displaying the classes.
   - As classification mode choose **"Equal Interval"** next to "Mode".
-  - For nicer visuals you can optionally also slightly reduce the opacity of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel
+  - For nicer visuals you can optionally also slightly reduce the opacity of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel.
 
 
 ::::
@@ -1058,7 +1049,7 @@ name: infection map example
 :::
 
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki.md).
 
 
 
@@ -1105,7 +1096,7 @@ Alongside the weekly death count, we want to show the **mortality rate** from we
 width: 600px
 name: Trend calculation
 ---
-Configuration of the Field Calculator interface to generate the infection trend field
+Configuration of the Field Calculator interface to generate the infection trend field.
 :::
 ::::
 
@@ -1118,11 +1109,11 @@ With your newly generated moertality rate field you are now able to display the 
 ::::{dropdown} Vizualize the current mortality rate
 
 - Open the `Layer Styling Panel` and select your polygon layer layer `Som_outbreak_mort` and select **Symbology**.
-  - At the top of the Symbology window, change the style from **Single Symbol** to **Graduated**
+  - At the top of the Symbology window, change the style from **Single Symbol** to **Graduated**.
   - As Value, choose `mortality_rate` to display the calculated percentage.
   - Click "Classify" to execute the classification. Choose a colour palette of your liking, e.g. "Reds".
   - As classification mode choose **"Equal Interval"** next to "Mode".
-  - For nicer visuals you can optionally also slightly reduce the **opacity** of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel
+  - For nicer visuals you can optionally also slightly reduce the **opacity** of the layer by adjusting it in the "Symbol" dropdown menue in the "Symbology" panel.
 
 ::::
 
@@ -1136,6 +1127,6 @@ name: label placement
 ---
 :::
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki).
 
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,9 +13,9 @@
 __Larkana flood response exercise track:__
 ^^^
 
-This exercise is the fourth part of the [Larkana flood response exercise track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_larkana_flood_response.html). 
+This exercise is the fourth part of the [Larkana flood response exercise track](../Exercise_tracks/en_larkana_flood_response.md). 
 
-The previous exercise can be found [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex5.html)
+The previous exercise can be found [here](../Module_3/en_qgis_module_3_ex5.md).
 
 :::
 :::{grid-item-card}
@@ -45,24 +45,24 @@ __Estimated time demand for the exercise:__
 __Relevant wiki articles:__
 ^^^
 
-* [Visualisation of Vector Data](/content/Wiki/en_qgis_visualisation_wiki.html)
-* [Map Making](/content/Wiki/en_qgis_map_making_wiki.html)
-* [Layer Concept](/content/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.html)
-* [Geodata Classification - Graduated](/content/Wiki/en_qgis_graduated_wiki.html)
+* [Visualisation of Vector Data](../Wiki/en_qgis_visualisation_wiki.md)
+* [Map Making](../Wiki/en_qgis_map_making_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
 
 :::
 ::::
 
 ::::{topic} Context
 
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](/content/Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](../Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
  
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
 ::::
 
-:::{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
@@ -75,7 +75,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
 
-- You have created the data for Larkana in [Module 3 Exercise 5](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex2.html). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
+- You have created the data for Larkana in [Module 3 Exercise 5](../Module_3/en_qgis_module_3_ex2.md). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
 - __In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Save the folder on your computer an unzip the file.
 :::
 
@@ -108,7 +108,7 @@ Keep your data management clean by creating a standard folder structure on your 
 
 4. Take a moment to familiarise yourself with the available data. Look into the attribute table of the different layers and look what information is available and how the attributes are named.
 
-5. [Add a basemap](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps):
+5. [Add a basemap](../Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps):
     - Navigating to the menu bar → `Layer` → `Add Layer` → `Add XYZ-Layer...` and add a OpenStreetMap basemap. 
 
 
@@ -122,14 +122,14 @@ In the layers panel:
 - put the roads and flood extent layers in the middle,
 - and put the point layers (healthsites and blocked roads) to the top.
 
-Each layer has it's own [symbology panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel) where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out. 
+Each layer has it's own [symbology panel](en_qgis_styling_vector_data.md#styling-panel) where you can adjust the symbology, colours and labels for the features in that layer. Do you need to change some colours? Are the layers ordered in a way that the information is visible? Think about which data we need and what data we can leave out. 
 For example, the layer `Roads_Larkana` contains too many roads for a map on a national scale. Let's open the attribute table and look at how the roads are classified. The data is using the conventional OpenStreetMap classification: The type of road is described under the attribute `highway`. In our case, it might be useful to only display the primary and secondary roads, so all the features where `highway=primary` OR `highway=secondary`.
 
 Let's go through the layers one by one and visualize them in a meaningful way.
 
 ### __Healthsites:__ <a id="healthsites"></a>
 
-In the __layers panel__, right click on the layer `Health_Facilities_Flood_2024_AOI`  `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+In the __layers panel__, right click on the layer `Health_Facilities_Flood_2024_AOI` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
 Let's create our own customized symbol for healthcare facilities:
 1. Under `Symbol layer type`, select __"SVG Marker"__.
 2. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
@@ -140,7 +140,7 @@ Let's create our own customized symbol for healthcare facilities:
 
 - Scroll through the folder until you find a suitable symbol (e.g. ![](../../../fig/en_m4_ex_2_cross_symbol.png)).
 
-:::{figure} ../../fig/crescent_moon.PNG
+:::{figure} ../../../fig/crescent_moon.png
 ---
 width: 450px
 name: SVG Marker
@@ -208,13 +208,13 @@ We can categorise the roads and then select the relevant roads to be displayed. 
     name: Visulsing blocked roads with icons
     align: center
     ---
-    Visualising blocked roads with icons
+    Visualising blocked roads with icons.
     :::   
 
 
 ### __Airports:__ <a id="airports"></a>
 
-In the [previous exercise](/content/Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+In the [previous exercise](../Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
 * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
@@ -243,7 +243,7 @@ If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolba
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well ([wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
@@ -261,7 +261,7 @@ If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolba
 
 Let's symbolise the airport with a plane icon, so we can identify it quickly.  
 
-* Right-click on the layer __"PAK_airports"__ in the `Layer Panel` → `Properties`. A new window ill open up with a vertical tab section on the left. Navigate to the [`Symbology`-tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel).
+* Right-click on the layer __"PAK_airports"__ in the `Layer Panel` → `Properties`. A new window ill open up with a vertical tab section on the left. Navigate to the [`Symbology`-tab](en_qgis_styling_vector_data.md#styling-panel).
 * Click on `Simple Marker`.
 * Under `Symbol layer type`, select __SVG-Marker__.
 * Scroll down a bit and you will find a box with all the SVG-symbols available.
@@ -289,7 +289,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 1. Open a new print layout and give it a name (e.g. Larkana_floods).
     - Go to `Project` → `New Print Layout` → enter a name for the new print layout → click `OK`.
 
-:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
@@ -301,7 +301,7 @@ Creating a new print layout.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
 
-2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](en_qgis_understanding_print_layout.md#adding-a-new-map).
 
 3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
 
@@ -352,7 +352,7 @@ Adding a title to the print layout.
     - Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](../../../fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries. Use the ![](../../../fig/Module_4/m4_ex2_print_layout_add_to_legend.png)-icon to add or remove layers from the legend.
     - Under the upper `Main Properties`, insert "Legend" as title. 
 
-:::{figure} ../../fig/Larkana_Legend.PNG
+:::{figure} ../../../fig/Larkana_Legend.PNG
 ---
 width: 700px
 name: Create Print Layout
@@ -361,7 +361,7 @@ Adjusting the legend.
 :::
 
 6. Now, let's add a scale bar:
-    - Click on ![Add Scale bar icon](../../../fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
+    - Click on ![Add Scale bar icon](../../../fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`).
     - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (e.g. 10 km, 20 km, 50 km, ...) and the number of segments (to the right). 
 
 7. Let's add a north arrow:
@@ -380,11 +380,11 @@ Adjusting the legend.
     - Drag a rectangle on the canvas
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter some additional information of the map, e.g. the coordinate system, basemap information or date. 
 
-When you are finished with your map design you can export your printable map as image or pdf under `Layout`--> `Export as Image` or `Export as PDF`.
+When you are finished with your map design you can export your printable map as image or pdf under `Layout` → `Export as Image` or `Export as PDF`.
 
 You could now have as a result a map similar to this one. Here, some space has been left in order to implement an overview map. If you are still have time go for the bonus exercise and add an overview map!
 
-:::{figure} ../../fig/Larkana_Map_withoutOverview.png
+:::{figure} ../../../fig/Larkana_Map_withoutOverview.png
 ---
 width: 700px
 name: Map Larkama
@@ -406,7 +406,7 @@ If you are finished with the main map, click on the map and navigate to the item
 8. In the "__Map Frame__"-option, select "__Map 1__". This will show the frame of the main map on your overview map.
 9. You can add a scale bar and a northj arrow to your overview map as well.
 
-:::{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama

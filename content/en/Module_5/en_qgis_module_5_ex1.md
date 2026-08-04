@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -45,10 +45,10 @@ __Relevant Wiki Articles:__
 ^^^
 
 * [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Table functions](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Join Attributes by location (summary](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Table functions](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
 <!--FIME: Check if these wiki articles are relevant-->
 
@@ -103,7 +103,7 @@ name: count_points_polygon
 Counting healthsites per district.
 :::
 
-4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
+4. Now we have the number of health sites per district. Nevertheless, it would be interesting to know how many health sites exist per 10.000 people. For this task we firstly need to know how many inhabitants has each district. We can process this information by using the __Zonal statistics__ tool from the Processing Toolbox. See the Wiki entry for [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md) for further information. Specify your inout layer (Output of step 3 e.g. __Num_healtsites__) and your raster layer (Worldpop Raster), specify the column prefix (e.g. ___wpop__) and select the statistics to caclulate (__sum__). For each district all pixel values of the Worldpop Raster that fall inside of it will be summed up. Explore the output.
 
 
 :::{figure} ../../../fig/en_qgis_module_5_ex1_zonal_statistics.PNG
@@ -130,7 +130,7 @@ Throughout the indicator processing process you will have several interim result
 ```
     
 
-* When you are down click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* When you are down click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
 :::{figure} ../../../fig/en_qgis_module_5_ex1_field_calc.PNG
 ---
@@ -164,7 +164,7 @@ Explore the data. We have a column "LandD_CLas" which indicators the severity of
 * As `Join Type` set `Take attributes of the feature with largest overlap only (one-to-one)`.
 * Save as Layer.
 
-See the Wiki entry [Spatial Joins](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html) for further information.
+See the Wiki entry [Spatial Joins](../Wiki/en_qgis_spatial_joins_wiki.md) for further information.
 
 :::{figure} ../../../fig/en_qgis_module_5_ex1_join.png
 ---
@@ -205,7 +205,7 @@ In the Log file you will get a message: "6 feature(s) from input layer could not
 It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have "field 1", "field 2" etc.) after importing. In this case, the correct field names is usually located below the header.
 :::
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_error.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_error.png
 ---
 width: 100%
 name: Join attributes by field value
@@ -253,7 +253,7 @@ $ Normalised\ Value\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```md
 ("LandD_Clas" - minimum( "LandD_Clas" ))/( maximum( "LandD_Clas") - minimum( "LandD_Clas" ))
 ```
-* When you are done click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* When you are done click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
 :::{figure} ../../../fig/en_qgis_module_5_ex1_Part2_normalization.PNG
 ---
@@ -286,7 +286,7 @@ $ weighted=   (1 - value)  \times weight $
 
 The second formula inverts the value $(1 - value)$ before applying the weight, resulting in a different calculation for variables with negative weights.
 
-We will not go further into this in this module but you can find more information [here](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_risk_assessment_plugin.html#risk).
+We will not go further into this in this module but you can find more information [here](../GIS_AA/en_qgis_risk_assessment_plugin.md#risk).
 
 :::{Hint}
 It is recommended to properly check the logic of each indicator. Often the indicators of a certain dimension follow the same logic but there are always exceptions. After the directions have been applied to the data, we can using the language “lack of coping capacity” instead of “coping capacity” since we have forced the respective indicators to another direction following the predefined logic (the higher the value = the worse the circumstances).
@@ -432,7 +432,7 @@ Possible Map Result
 #### 7. Automating the Process <a id="7-automating-the-process"></a>
 
 HeiGIT has developed a a QGIS Risk Assessment Plugin in order to simplify this process and safe time.
-You can find more information about the risk methodology and the usage of the plugin [here](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_risk_assessment_plugin.html).
+You can find more information about the risk methodology and the usage of the plugin [here](../GIS_AA/en_qgis_risk_assessment_plugin.md).
 
 
 In order to try out the plugin and see the result, use the provided input data in your folder: "Module_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"

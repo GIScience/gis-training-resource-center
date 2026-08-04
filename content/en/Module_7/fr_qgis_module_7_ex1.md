@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -42,12 +42,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html)
+* [Automatisation](../Wiki/en_qgis_automatisation_wiki.md)
 
 :::
 
@@ -75,7 +75,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -107,7 +107,7 @@ __Téléchargez toutes les données [ici](https://nexus.heigit.org/repository/gi
 
 :::
 
-Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_management.html#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
+Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](../Module_2/en_qgis_geodata_management.md#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
 
 | Ensemble de données | Source | Descriptions |
 | ----- | --- | --- |
@@ -158,14 +158,14 @@ Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster
 
 
 
-1. __Ouvrez QGIS__ et créez un [nouveau projet](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet`-> `Nouveau Projet`.
+1. __Ouvrez QGIS__ et créez un [nouveau projet](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet` → `Nouveau Projet`.
 
-2. __Enregistrez le projet__ dans le dossier `/project`: Cliquez sur `Projet` -> `Enregistrer sous...` et naviguez jusqu’au dossier. Nommez le projet "Cyclon_Harald_Exposure".
+2. __Enregistrez le projet__ dans le dossier `/project`: Cliquez sur `Projet` → `Enregistrer sous...` et naviguez jusqu’au dossier. Nommez le projet "Cyclon_Harald_Exposure".
 
 3. __Importer le fichier__ GeoJSON "example_Harald_2025_Track.geojson" dans votre projet en le glissant-déposant (Vidéo Wiki). Le fichier se trouve dans le dossier `/data/input`
 
 4. __Reprojetez la trajectoire du cyclone__ pour utiliser des mètres au lieu de degrés (ceci est important pour un tampon précis):
-    - Dans la __[Boîte à outils de traitement](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
+    - Dans la __[Boîte à outils de traitement](../Module_1/en_qgis_start.md?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
     - Couche source: example_Harald_2025_Track
     - SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
     - Enregistrez le résultat dans le dossier temp sous le nom: `Harald_Track_Reprojected`
@@ -228,10 +228,10 @@ Reprojetter la tamponner trajectoire du cyclone
    
 7. **Importer les frontières administratives**:
     - Fichier: `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
-    - Ajoutez le par glisser-déposer ou via `Couche` -> `Ajouter une couche` -> `Ajouter une couche vecteur...`.
+    - Ajoutez le par glisser-déposer ou via `Couche` → `Ajouter une couche` → `Ajouter une couche vecteur...`.
 8. **Importer la couche raster de population**:
     - Fichier: `MDG_WorldPop_2020_constrained.tif`
-    - Ajouter la couche via `Couche` -> `Ajouter une couche` -> `Ajouter une couche raster...`.
+    - Ajouter la couche via `Couche` → `Ajouter une couche` → `Ajouter une couche raster...`.
 9. **Couper le raster de population** à l'aide de la zone tampon:
     - Dans la __Boîte à outils de traitements__, cherchez `Découper un raster selon une couche de masque` (`Clip Raster by Mask Layer`).
     - Couche source: `MDG_WorldPop_2020_constrained`
@@ -328,7 +328,7 @@ Dans cette tâche, vous allez aider Aina à construire une version simple de ce 
 ---
 
 1. **Ouvrir le modeleur**:
-   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) -> `Modeleur` (`Graphic Modeler`)   
+   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) → `Modeleur` (`Graphic Modeler`)   
      `Processing` → `Graphical Modeler…`
 
 2. **Nommer le modèle**:   
@@ -512,12 +512,12 @@ Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement
 ```
 
 10. **Valider le modèle (recommandé)**
-  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> ✔️  `Valider le modèle`.  
+  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` → ✔️  `Valider le modèle`.  
   - Corrigez les éventuels avertissements ou erreurs affichés dans le panneau de journal. 
   - Cela permet de s'assurer que le modèle est complet et qu'il s'exécutera sans erreur.
 
 11. **Exécuter le modèle**
-  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> `Exècuter le modèle...`
+  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` → `Exècuter le modèle...`
     - Maintenant, vous devez définir les __Couches Source__ pour le modèle. Vous pouvez choisir les couches que vous avez importées dans votre projet QGIS.
     - Sous __Frontières Administratives__, choisissez: 
       `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
@@ -563,7 +563,7 @@ align: center
 ```
 
 13. **Exécuter à nouveau le modèle**  
-  - Exécutez le modèle en cliquant sur `Modèle` -> `Exécuter le modèle...`.
+  - Exécutez le modèle en cliquant sur `Modèle` → `Exécuter le modèle...`.
     - Sous __Frontières Administratives__, choisissez: 
       `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
     - Sous __Raster Population__, choisissez:
@@ -957,13 +957,13 @@ Si l’une d’elles manque:
 ### 2. **Appliquer des fichiers de style prédéfinis** <a id="2-appliquer-des-fichiers-de-style-predefinis"></a>
 Appliquez les fichiers de style `.qml` suivants aux couches correspondantes:
 
-| **Couche**                             | **Fichier de style**                           |
-|----------------------------------------|------------------------------------------------|
-| `Harald_2025_Track`                    | `storm_track_cyclone_style.qml`               |
-| `Harald_Buffer_200km`                  | `exposed_cyclone_area_style.qml`              |
-| `Harald_Exposed_Population`            | `exposed_population_style.qml`                |
-| `sum_exposed_healthsites_POI`          | `exposed_healthsites_style.qml`               |
-| `sum_exposed_education_POI`            | `exposed_education_facilities_style.qml`      |
+| **Couche**                    | **Fichier de style**                     |
+|-------------------------------|------------------------------------------|
+| `Harald_2025_Track`           | `storm_track_cyclone_style.qml`          |
+| `Harald_Buffer_200km`         | `exposed_cyclone_area_style.qml`         |
+| `Harald_Exposed_Population`   | `exposed_population_style.qml`           |
+| `sum_exposed_healthsites_POI` | `exposed_healthsites_style.qml`          |
+| `sum_exposed_education_POI`   | `exposed_education_facilities_style.qml` |
 
 
 

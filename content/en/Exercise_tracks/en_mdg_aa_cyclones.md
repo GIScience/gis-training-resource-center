@@ -13,7 +13,7 @@ La version française de cet article se trouve ici:
 
 :::{card}
 :class-card: sd-text-center sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/fr_mdg_aa_cyclones.html
+:link: ../Exercise_tracks/fr_mdg_aa_cyclones.md
 __Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar__ 
 :::
 
@@ -42,7 +42,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_module_5_mdg_aa_ex_1.html
+:link: ../Module_5/en_qgis_module_5_mdg_aa_ex_1.md
 __Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module 5)__
 ^^^
 
@@ -58,7 +58,7 @@ __Exercise 1: Estimating the Exposed Population - Aina's Manual Approach (Module
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_7/en_module_7_mdg_aa_ex_2.html
+:link: ../Module_7/en_module_7_mdg_aa_ex_2.md
 __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Module 7)__
 ^^^
 
@@ -72,7 +72,7 @@ __Exercise 2: Automation of Exposed Population Estimation – Aina's Model (Modu
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_7/en_module_7_mdg_aa_ex_3.html
+:link: ../Module_7/en_module_7_mdg_aa_ex_3.md
 __Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds More Layers (Module 7)__
 ^^^
 
@@ -83,7 +83,7 @@ __Exercise 3: Identifying Affected Health Facilities and Schools – Aina Adds M
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_mdg_aa_ex_4.html
+:link: ../Module_4/en_module_4_mdg_aa_ex_4.md
 __Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers (Module 4)__
 ^^^
 
@@ -94,7 +94,7 @@ __Exercise 4: Visualizing Cyclone Impact Results – Aina Styles Her Layers (Mod
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_module_4_mdg_aa_ex_5.html
+:link: ../Module_4/en_module_4_mdg_aa_ex_5.md
 __Exercise 5: Quick Map Creation – Aina Uses Map Templates (Module 4)__
 ^^^
 
@@ -105,7 +105,7 @@ __Exercise 5: Quick Map Creation – Aina Uses Map Templates (Module 4)__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_7/en_module_7_mdg_aa_ex_6.html
+:link: ../Module_7/en_module_7_mdg_aa_ex_6.md
 __Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
 ^^^
 
@@ -116,7 +116,7 @@ __Exercise 6: Exporting Model Results for the Operations Team (Module 7)__
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_9/en_qgis_module_9_mdg_aa_ex_7.html
+:link: ../Module_9/en_qgis_module_9_mdg_aa_ex_7.md
 __Exercise 7: Reachability of health Posts from CRM Warehouses__
 ^^^
 

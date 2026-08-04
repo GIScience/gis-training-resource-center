@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 
-This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_mdg_aa_cyclones.html).
+This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](../Exercise_tracks/en_mdg_aa_cyclones.md).
 
 :::
 
@@ -43,12 +43,12 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html)
+* [Automatisation](../Wiki/en_qgis_automatisation_wiki.md)
 
 :::
 
@@ -73,7 +73,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on conducting trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on conducting trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -124,7 +124,7 @@ Make sure the following layers are already loaded into your QGIS project. These 
 - `admin2_education_affected`
 
 If any are missing:
-- Load them using **drag & drop** from your `results` folder, or
+- Load them using **drag & drop** from your `Results` folder, or
 - Use `Layer` → `Add Layer` → `Add Vector Layer` or `Add Raster Layer`.
 
 ---
@@ -205,20 +205,20 @@ Aina also wants to visualise the percentage of exposed health and education faci
   ```
   admin2_health_affected_percentage
   ```
-- Right-click on the layer in the **Layers Panel**  
-- Select **Properties**  
-- In the window that opens, go to the **Symbology** tab  
-- Set **Symbology** to `Graduated`
+- Right-click on the layer in the **Layers Panel**. 
+- Select **Properties**.
+- In the window that opens, go to the **Symbology** tab. 
+- Set **Symbology** to `Graduated`.
 - Choose the correct **field**:
   - `pct_health_affected`
-- Open the **Histogram** tab to view the value distribution by clicking on `calculate histogram`
+- Open the **Histogram** tab to view the value distribution by clicking on `Calculate histogram`.
 - Next go back to `Classes` and set the following configuration:
   - **Mode**: `Equal Interval`
   - **Classes**: `4`
-- Click `OK`.This will create four classes (`0–25%`, `25–50%`, `50–75%`, `75–100%`)
-- Choose a color ramp (e.g., light yellow → dark red)
-- Optionally customize class labels for clarity
-- Click `Apply`
+- Click `OK`.This will create four classes (`0–25%`, `25–50%`, `50–75%`, `75–100%`).
+- Choose a color ramp (e.g., light yellow → dark red).
+- Optionally customize class labels for clarity.
+- Click `Apply`.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
 
@@ -239,11 +239,11 @@ admin2_health_affected_percentage
 Save your manually created styles as `.qml` files for future reuse.
 
 **Steps:**
-- Right-click on the layer in the **Layers Panel**  
-- Select **Properties**  
-- In the window that opens, go to the **Symbology** tab  
-- Click on `Style` → `Save Style…`
-- Save the file in the folder `layer_style`
+- Right-click on the layer in the **Layers Panel**.  
+- Select **Properties**.  
+- In the window that opens, go to the **Symbology** tab.  
+- Click on `Style` → `Save Style…`.
+- Save the file in the folder `layer_style`.
 - Use these filenames:
   ```
   health_pct_affected_style

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -53,9 +53,9 @@ __Relevant Wiki Articles__:
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
 * [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
-* [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../content/Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
 
 :::
 
@@ -118,16 +118,16 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
 :::
 
 4. First, we want to export Borno state from kontur_boundaries_NG_20230628 to have it as a stand-alone vector layer. To do that: 
-    * Open the attribute table of "kontur_boundaries_NG_20230628" by right click on the layer → `Open Attribute Table` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)).
+    * Open the attribute table of "kontur_boundaries_NG_20230628" by right click on the layer → `Open Attribute Table` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#open-the-attribute-table-and-sort-features)).
     * Find the row of Borno state and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Borno state will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
     * Now right-click on the layer in the Layer Panel and click on `Export` → `Save Selected Features as`. We want to save Borno as a GeoPackage, so adjust `Format` accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name “AOI_Borno_admin1” and click `Save`. Now you should see the same name in the `Layer name` field. Click `OK` ([Wiki Video](../Wiki/en_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file))
 
 5. In the next steps, we want to create a vector layer with admin 2 areas or in Nigeria called Local Government Areas (LGA) with the population in our project. 
 Since we only want the LGAs we need to export those from the original dataset. 
-    * Open the attribute table of the layer "kontur_boundaries_NG_20230628" by right-clicking on the layer → `Attribute Table` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)). Check out the attribute table. You see two columns of admin levels "admin levels" and "[osm_admin_levels](https://wiki.openstreetmap.org/wiki/Key:admin_level)". Both have different values. In the [metadata](https://data.humdata.org/dataset/kontur-boundaries-nigeria) of the dataset on HDX, we can see that the column "osm_admin_levels" refers to the admin levels used in OpenStreetMaps (OSM). There is a [list](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) of which official admin levels correspond to which OSM admin levels. The LGAs correspond to osm admin __level 6__. This means we want to export all features with `osm_admin_level` = `6`.
+    * Open the attribute table of the layer "kontur_boundaries_NG_20230628" by right-clicking on the layer → `Attribute Table` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-basics)). Check out the attribute table. You see two columns of admin levels "admin levels" and "[osm_admin_levels](https://wiki.openstreetmap.org/wiki/Key:admin_level)". Both have different values. In the [metadata](https://data.humdata.org/dataset/kontur-boundaries-nigeria) of the dataset on HDX, we can see that the column "osm_admin_levels" refers to the admin levels used in OpenStreetMaps (OSM). There is a [list](https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#10_admin_level_values_for_specific_countries) of which official admin levels correspond to which OSM admin levels. The LGAs correspond to osm admin __level 6__. This means we want to export all features with `osm_admin_level` = `6`.
     * To export exactly these features we will use the tool `Extract by attribute`. Open the `Processing Toolbox` ([here is how](../Wiki/en_qgis_interface_wiki.md#toolbox-toolbars)) and search for the tool.
     Open the tool and choose as `Input Layer` the “kontur_boundaries_NG_20230628.gpkg“ layer. Under `Selection attribute` choose the column `osm_admin_level`. The `Operator` has to be `=` and as `value` we use `6` since the LGAs have the osm_admin_level 6. 
-    * Under `Extracted (attribute)`, click on the three dots → `Save to GeoPackage`, navigate to your `temp` folder, and call the new layer “Nigeria_admin2_pop”. Click `Save`. Give the layer the same name ( “Nigeria_admin2_pop”). Click `OK` and then click `Run`.
+    * Under `Extracted (attribute)`, click on the three dots → `Save to GeoPackage`, navigate to your `temp` folder, and call the new layer “Nigeria_admin2_pop”. Click `Save`. Give the layer the same name (“Nigeria_admin2_pop”). Click `OK` and then click `Run`.
 
 6. Now we need to extract all LGAs in Borno. For that, we will use the Tool `Extract by Location` ([Wiki Video](../Wiki/en_qgis_non_spatial_queries_wiki.md#select-by-expression)).  Search the tool in the `Processing Toolbox` and open it.
     * As `Input Layer` we will use “Nigeria_admin2_pop”.
@@ -147,11 +147,11 @@ align: center
 7. We have our admin areas in place and can now start to enrich these layer with additional data regarding the flood of 2022.
 Open the Excel or pdf file "Nigeria_flood_2022_affacted_population" and open the sheet Borno. You find a table with the LGAs and communities which were affected by the flood. Now we want to add some of the information to our “Borno_admin2_pop” layer. For that, there are two ways. One simple, but more time-consuming, and one more complicated, but much faster. We will show the easy way, but in the dropdown below you can find the tutorial for the advanced way as well.
     * Open the attribute table of “Borno_admin2_pop” and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)). Now you are able to edit the data directly in the table.
-    * First, we add a new column with the name “Flood_affacted”. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-new-column)).
+    * First, we add a new column with the name “Flood_affacted”. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-a-new-column)).
     * In the next step check in the Excel/PDF table which LGAs were affected and put “Yes” in the attribute table for those LGAs.
     * When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
-8. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](/content/Wiki/en_qgis_categorized_wiki.md)).
+8. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
     * Right-click on the layer "Borno_admin2_pop" in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "Flood_affected".
     * Further down the window, click on `Classify`. Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
@@ -194,7 +194,7 @@ align: center
 ---
 :::
 
-11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, use `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)). ![](../../../fig/Digitizing_Toolbar.png) 
+11. Currently the new “Borno_affected_communities_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, use `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)). ![](../../../fig/Digitizing_Toolbar.png) 
     * Select the point layer “Borno_affected_communities_point” in the Layer panel. Go to the digitisation toolbar and click on![](../../../fig/mActionToggleEditing.png). Now the layer is in the editing mode.
     * Search an affected community based on the table “Nigeria_flood_2022_affacted_population”. Once you have found one, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
     * Once you click, a window will appear ` Borno_affected_communities_point Feature Attribute`. Here you can add the name of the location.
@@ -206,7 +206,7 @@ align: center
 Since the layer "Borno_admin2_pop" contains this information we can dublicate this layer. 
     * To do that right click on the layer → `Duplicate Layer`. The name of the new layer will be "Borno_admin2_pop_copy".
 
-13. Since absolute population numbers are natural numbers, we cannot use categorised classification. Instead, we use the option `Graduated` ([Wiki Video](../Wiki/en_qgis_graduated_wiki.md)).
+13. Since absolute population numbers are natural numbers, we cannot use categorised classification. Instead, we use the option `Graduated` ([Wiki Video](../Wiki/en_qgis_graduated_wiki.md#graduated-classification)).
     * Right-click on the layer “Borno_admin2_pop_copy” in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menue. Open it and choose `Graduated`.
     * Under `Value` select "Population".
@@ -299,12 +299,3 @@ align: center
 ---
 :::
 
-
-
-    
-
-
-
-
-
-    

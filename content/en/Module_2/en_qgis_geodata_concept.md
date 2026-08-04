@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -254,7 +254,7 @@ Practical experience is key to mastering GIS. Now is a good moment to apply what
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept_ex1.html
+:link: https://giscience.github.io/gis-training-resource-center/en/Module_2/en_qgis_geodata_concept_ex1.html
 
 __Module 2 Exercise 1: Understanding Geodata__
 
@@ -422,7 +422,7 @@ It can also contain additional files such as `.prj`. These files together, which
 
 5. __Explain the concept of a “layer” in GIS. Why do GIS systems use layers when building maps?__
 
-:::{dropdown}
+:::{dropdown} Answer
 In GIS, a layer is a collection of geographic data representing a specific type of information, such as roads, rivers, or land use. Layers are stacked on top of each other to create a comprehensive map. Using layers allows for:
 - __Organized data management__: Each layer can be edited or analyzed independently.
 - __Clear visualisation__: Different types of data can be styled and displayed separately.
