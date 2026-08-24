@@ -30,3 +30,8 @@ parts:
           - file: Module_3/fr_qgis_data_classification.md
           - file: Module_3/fr_qgis_georeferencing.md
           - file: Module_3/fr_qgis_module_3_exercises.md
+      - file: Module_4/fr_module_4_overview.md
+        sections: 
+          - file: Module_4/fr_health_map_design.md
+
+          
