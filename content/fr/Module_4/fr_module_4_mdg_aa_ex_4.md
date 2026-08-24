@@ -45,8 +45,8 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/fr_qgis_raster_basic_wiki.html)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)
