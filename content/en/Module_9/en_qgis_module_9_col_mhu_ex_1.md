@@ -62,8 +62,7 @@ The Colombian Red Cross has been asked by a donor to design a 12-month Mobile He
 
 ## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
-:::{dropdown} __Trainers Corner__
-
+::::{dropdown} __Trainers Corner__
 ### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
@@ -94,7 +93,7 @@ __Wrap up:__
 
 - Leave time for the discussion questions at the end — they matter as much as the map.
 
-:::
+::::
 
 __Context:__
 
