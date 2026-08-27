@@ -51,7 +51,7 @@ anticipative rapide et fondée sur les données, avant que le cyclone n’atteig
 
 
 :::{card}
-:link: ../Module_5/fr_qgis_module_5_mdg_aa_ex_1.md
+:link: ../Module_5/fr_qgis_module_5_mdg_aa_ex_1
 __Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)__
 ^^^
 
@@ -70,7 +70,7 @@ __Exercice 1 : Estimation de la population exposée – L’approche manuelle d�
 :::
 
 :::{card}
-:link: ../Module_7/fr_module_7_mdg_aa_ex_2.md
+:link: ../Module_7/fr_module_7_mdg_aa_ex_2
 __Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)__
 ^^^
 
@@ -89,7 +89,7 @@ __Exercice 2 : Automatisation de l’estimation de la population exposée – Le
 :::
 
 :::{card}
-:link: ../Module_7/fr_module_7_mdg_aa_ex_3.md
+:link: ../Module_7/fr_module_7_mdg_aa_ex_3
 __Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 
