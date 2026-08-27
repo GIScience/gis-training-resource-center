@@ -7,6 +7,12 @@
 
 ::::
 
+%% TO DO:
+%% - REMOVE PUTUMAYO OR ONLY FOCUS ON PUTUMAYO?
+%% INSTEAD OF USING A FLOOD LAYER, WHICH MIGHT COMPLICATE THE EX TRACK, CREATE A FLOODING SCENARIO AT A RIVER CROSSING (E.G., after designing the first route, we have been informed that this bridge is inpassable from XX to XX due to rains. Find an alternative route). 
+%% HeiGIT PHC Accessibility might be off due to OSM data quality and it doesn't include hospitals either (maybe dissolve both? but then the pop data would be off.. but we will probably calculate that again)
+%% SELECTING THE AOI IS OUT OF SCOPE. IT IS ALREADY GIVEN IN THE SCENARIO.
+
 
 # Exercise 1: Mapping Today's Primary Healthcare Access Gap <a id="exercise-1-mapping-todays-primary-healthcare-access-gap"></a>
 
@@ -105,38 +111,54 @@ You have been given a prepared data package: a 2026 population raster, official 
 
 ## 1. Set Up Your Study Area <a id="1-set-up-your-study-area"></a>
 
-The datasets you've been given cover all of Colombia. Working at national scale would be slow and distracting, so the first step is narrowing everything down to the four departments in scope.
+The datasets you've been given cover all of Colombia. Working at national scale would be slow and distracting as the layers contain a lot of data, so the first step is narrowing everything down to the four departments in scope.
 
 1. **Load the admin boundaries**
    - `col_admbnda_adm1_mgn_20200416.shp` (departments)
    - `col_admbnda_adm2_mgn_20200416.shp` (municipios)
+   
+
 2. **Select the four target departments** on the adm1 layer:
    - Open the attribute table → `Select features using an expression`
    ```qgis
    "ADM1_ES" IN ('Cauca', 'Nariño', 'Norte de Santander', 'Putumayo')
    ```
-   - Right-click the layer → `Export` → `Save Selected Features As…` → GeoPackage → save to `data/temp/` as `study_area_adm1.gpkg`
+   - Right-click the layer → `Export` → `Save Selected Features As…` → GeoPackage → save to `data/temp/` as `study_area_adm1.gpkg`#
+   
+
 3. **Select the municipios inside those departments** the same way, using `"ADM1_ES" IN (...)` on the adm2 layer, and export as `study_area_adm2.gpkg`.
+
+%% THIS SHOULD BE DONE WITH EXTRACT BY LOCATION. 
+
 4. **Clip the population raster** to the study area:
    - Processing Toolbox → `Clip raster by mask layer`
    - **Input layer:** `col_pop_2026_CN_100m_R2025A_v1.tif`
    - **Mask layer:** `study_area_adm1.gpkg`
    - **Output file name:** save to `data/temp/col_pop_2026_study_area.tif`
+
+
 5. **Select by location** on both health-facility datasets and on `COL_primary_healthcare_access.gpkg` (adm2 layer), using `study_area_adm1.gpkg` as the intersecting layer, and export each filtered result to `data/temp/`.
 
 > 💡 **Tip**: Keep working in `data/temp/` for anything you might redo. Only export finished layers to `data/output/`.
+
+%% ADD STEPS TO ADD ROAD NETWORK AND RIVERS?, RAILS?
+%% ADD A SHORT RESULT FOR THIS STEP (IMAGE: NOW WE HAVE A FIRST OVERVIEW OF THE REGION)
 
 ## 2. Get to Know Your Two Health-Facility Datasets <a id="2-get-to-know-your-two-health-facility-datasets"></a>
 
 You have two facility lists that disagree with each other, and neither is perfect. Before using either one, look at what's actually in them.
 
 1. **Open the attribute table of `Health_Facilities_ES` (2021, official)** and look for a field describing facility type or level (e.g. hospital vs. health post vs. clinic). Note it on the whiteboard — you will need it in Task 4.
+
+
 2. **Check the geometry quality of `Health_Facilities_ES`.**
    - Right-click the layer → `Filter…` and try:
      ```qgis
      "geom" IS NULL OR NOT ST_IsValid($geometry)
      ```
    - If that doesn't surface anything, zoom to the full layer extent and look for points far outside Colombia — a small share of records in this dataset have coordinate values that look like facility ID codes rather than actual coordinates. Decide as a group whether to drop or investigate these before using the layer further.
+%% THIS STEP CAN BE SKIPPED, IT IS MORE A EX DESIGN CHOICE. 
+
 3. **Open the attribute table of the OSM export** (`hotosm_col_health_facilities_osm_gpkg`) and look at the `amenity` and `healthcare` fields. Filter to keep only clinically relevant facilities:
    ```qgis
    "amenity" IN ('hospital', 'clinic', 'doctors', 'health_post')
@@ -175,6 +197,8 @@ HeiGIT built the accessibility layer from *primary healthcare* facilities only. 
 3. **Discuss as a group**: should these municipios be removed from your underserved shortlist, downgraded in priority, or kept as-is with a caveat? There's no single correct answer — Sphere doesn't specify how many patients per day a hospital can absorb as "primary care overflow," so this is a judgement call your team needs to make and justify, not something the GIS layer can decide for you.
 
 > ⚠️ **Don't try to re-run the isochrone analysis with hospitals added in this exercise.** That would mean regenerating HeiGIT's drive-time model from scratch, which is out of scope here. Instead, treat Task 3's map as a first draft and Task 4 as a manual sense-check on top of it.
+
+%% OUT OF SCOPE BECAUSE IT WOULD TAKE TOO LONG
 
 ## 5. Select Your Priority Underserved Clusters <a id="5-select-your-priority-underserved-clusters"></a>
 
