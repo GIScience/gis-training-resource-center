@@ -56,7 +56,7 @@ To install plugins, you need to open the Plugin Manager:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/risk_assessment_download.mp4"></video>
 
 
-For further information about installation and usage of plugins visit the [QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html).
+For further information about installation and usage of plugins visit the [QGIS Training Platform](../Wiki/en_qgis_plugins_wiki.md).
 
 
 ## User Interface <a id="user-interface"></a>
@@ -107,7 +107,7 @@ b.) __Vulnerability indicators:__ A "csv"-file containing a mandatory column "AD
 
 c) __Coping Capacity indicators [optional]:__ A "csv"-file containing a mandatory column "ADM_PCODE" with the P_codes of the administrative boundaries and all columns that are included in the calculation of the coping-indicator. All columns that are not included in the calculation must start with the expression "ADM...".
 
-Further information can be found in the [How to generate Risk Indicators](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_generate_indicators_for_plugin.html) chapter. 
+Further information can be found in the [How to generate Risk Indicators](en_qgis_generate_indicators_for_plugin.md) chapter. 
 
 ```{figure} ../../../fig/mada_coping.png
 ---
@@ -190,11 +190,11 @@ For the category exposure, it is not possible to assume pessimistic circumstance
 Since the input data does not consider time series, it is not feasible to make realistic estimates.
 Remembering the logic explained earlier this results in the following substitution of missing values (each representing the worst possible value):
 
-| NA Values from dimension| Substitution | 
-| ----- | --- | 
-|Exposure| NA/-999|
-|Vulnerability| 1| 
-|Coping Capacity|0|
+| NA Values from dimension | Substitution |
+|--------------------------|--------------|
+| Exposure                 | NA/-999      |
+| Vulnerability            | 1            |
+| Coping Capacity          | 0            |
 
 
 ### Weights and Directions <a id="weights-and-directions"></a>
@@ -206,13 +206,13 @@ __Weights__
 The weights represent the importance of the respective indicator and needs to be defined by the user. The default value is 1 (no weighting). The weights can be chosen and adjusted by the user in the Weights-file.
 Nevertheless, we recommend the following weights structure ranging between less important and very important (0.25, 0.5, 0,75, 1):
 
-| Weight| Definition | 
-| ----- | --- | 
-|0| Not Important|
-|0.25| Slightly Important| 
-|0.5|Moderately Important|
-|0.75|Fairly Important|
-|1|Very Important|
+| Weight | Definition           |
+|--------|----------------------|
+| 0      | Not Important        |
+| 0.25   | Slightly Important   |
+| 0.5    | Moderately Important |
+| 0.75   | Fairly Important     |
+| 1      | Very Important       |
 
 For each category, the sum of the weights must add up to 1. If not, the plugin will automatically normalize the weights in order to make the sum equal to 1 among weights belonging to the same category (exp cop and vul respectively).
 
@@ -223,10 +223,10 @@ The direction indicates if an indicator follows the predefined logic: “the hig
 If a respective indicator follows the logic the direction would be 1(default), if it does not, the direction would be = -1.
 
 
-| Logic| Example | Direction|
-| ----- | --- |---  |
-|the __higher__ the value the worse the circumstances| conflict events, people with disability|1|
-|the __lower__ the value the worse the circumstances or the higher the values the better the circumstances| improved watersources| -1|
+| Logic                                                                                                     | Example                                 | Direction |
+|-----------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
+| the __higher__ the value the worse the circumstances                                                      | conflict events, people with disability | 1         |
+| the __lower__ the value the worse the circumstances or the higher the values the better the circumstances | improved watersources                   | -1        |
 
 __Example 1:__ If the indicator “Rural Accessibility Index” (proportion of the rural population who live within 2 km of an all-season road) is part of the vulnerability dimension it does not follow the logic “the higher the value the worse the circumstances”. A high value in this case is good and therefore we have to assign direction = -1 to this variable.
 In principle, the two dimensions vulnerability and exposure follow the predefined logic and coping capacity does not. The lower the values of coping capacity, the worse the circumstances. Thus, the default value for this dimension would be -1, although this does not apply to all indicators.
@@ -284,7 +284,7 @@ In general, many input files are required to use the plugin, which makes it high
 
 ## Support & Ressources <a id="support-and-ressources"></a>
 
-[HeiGIT QGIS Training Platform](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html)
+[HeiGIT QGIS Training Platform](../Wiki/en_qgis_plugins_wiki.ms)
 
 [Weltrisikoindex](https://weltrisikobericht.de/)
 

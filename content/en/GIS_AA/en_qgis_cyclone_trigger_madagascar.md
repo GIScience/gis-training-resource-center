@@ -440,9 +440,9 @@ We will generate two different types of output maps to support the analysis:
 :::
 
 We will create the maps in two steps:
-First, we will use the __[layer styling panel](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
+First, we will use the __[layer styling panel](../Module_4/en_qgis_styling_vector_data#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
 
-In a second step, we will use the __[print layout composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ to create printable maps with additional datatables. 
+In a second step, we will use the __[print layout composer](../Module_4/en_qgis_map_design_2#print-layout)__ to create printable maps with additional data tables. 
 
 <!---
 
@@ -1058,7 +1058,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout Composer](../Module_4/en_qgis_map_design_2.md#print-layout)
 
 -->
 
