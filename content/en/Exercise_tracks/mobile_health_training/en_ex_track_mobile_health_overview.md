@@ -11,7 +11,7 @@ PLACEHOLDING TEXT
 
 ## Exercises
 
-:::::{grid} 2 2
+:::::{grid} 2
 ::::{grid-item-card}
 :link: en_module_mobile_health_ex_1.md
 __Track A: Exercise 1__
@@ -27,5 +27,6 @@ __Track B: Exercise 1__
 ^^
 The team is running a hospital with standard wards. Now they need to understand what area the hospital is covering, what specialities are underserved, how referral pathways actually look on the map, and, most importantly, how it changes in the rainy season
 ::::
+:::::
 
 
