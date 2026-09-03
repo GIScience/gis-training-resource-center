@@ -170,15 +170,41 @@ We will estimate the population distribution based on the population data provid
 %% Also might be interesting to already categorise the health facilities to identify gaps
 %% Here it might also be good to add additional information about the health facilities (maybe invent them)
 
+> RESULT: 
+
 ### Task 3: Calculate the potential coverage of the proposed MHU stops
 
 We now have a first, quantitative picture of the health coverage in the AOI. In this step, we want to calculate the estimated coverage of the new MHU stops. This will help us assess the reach and priority of each stop. 
 
 We will be using the OpenRouteService developed by HeiGIT in order to calculate isochrones depicting the new service area for each potential MHU stop. There are also other methods to calculate the service area of the MHU stops (for example, QGIS' native "service area"-tool or using [Friction Surface Layers](https://developers.google.com/earth-engine/datasets/catalog/projects_malariaatlasproject_assets_accessibility_friction_surface_2019_v5_1_walking_only?hl=en))
 
+We want to calculate the area that the local population can reach __within 1 hour by foot__. To calculate this, we can use the isochrone algorithm from the OpenRouteService tools and specify the travel mode as 
+
+%% Add picture or explanation for isochrones?
 
 1. [Install the __"ORS tools"__ plugin](../../wiki/en_qgis_plugins_wiki.md) in QGIS.
+::::{margin}
+:::{tip}
+If it is your first time using the ORS, you will need to create an account at https://openrouteservice.org/.  
+Next, navigate to your account, find the "Basic key" and copy it.  
+In your QGIS window, in the top bar, navigate to `Web` → `ORS tools` → `Provider Settings`, paste your key into the API key field and click on `Save`.
+:::
+::::
 2. In the [processing toolbox](../../wiki/), search for "ORS" and open the tool `Isochrones from Point-Layer". 
 %% ADD CORRECT LINK
-3. 
+3. In the ORS parameter-window, set the parameters as follows:
+    - `Provider`: OpenRouteService
+    - `Travel mode`:  foot-walking
+    - `Input Point layer`: `COL_Cesar_Pot_MHU_Stops`
+    - `Dimension`: Time
+    - `Comma-separated ranges`: 60
+4. Click `Run`. The ORS will send a request to the ORS server to compute the isochrones.
+5. A new layer will appear in your layers tab. Investigate it by zooming to the layer and opening its attribute table. 
+    - If you don't find any errors, you can save the layer via <kbd>right-click</kbd> → `Make permanent` and saving it in the `/data/temp/`-folder
+
+> Great! We now have the coverage of the proposed MHU stops. In a next step, we need to calculate the distribution of the population inside the isochrones
+
+%% MAYBE ADD SOMETHING ABOUT THE SPHERE STANDARDS? OR SOME OTHER REQUIREMENTS FOR OUR ANALYSIS? PUT IN THE BEGINNING
+
+### Task 4: 
 
