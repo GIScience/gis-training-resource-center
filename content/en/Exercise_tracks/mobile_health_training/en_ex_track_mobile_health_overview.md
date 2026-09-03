@@ -28,14 +28,4 @@ __Track B: Exercise 1__
 The team is running a hospital with standard wards. Now they need to understand what area the hospital is covering, what specialities are underserved, how referral pathways actually look on the map, and, most importantly, how it changes in the rainy season
 ::::
 
-::::{grid-item-card}
-:link:
-PLACEHOLDER
-::::
-
-::::{grid-item-card}
-:link:
-PLACEHOLDER
-::::
-:::::
 
