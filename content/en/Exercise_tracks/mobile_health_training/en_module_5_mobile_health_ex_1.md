@@ -25,7 +25,7 @@ This exercise is part of the Mobile Health Exercise track. You can find the over
 
 ## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
-::::{grid} 2
+::::{grid} 
 :::{grid-item-card}
 __Type of trainings exercise:__
 ^^^
@@ -37,14 +37,14 @@ __Type of trainings exercise:__
 
 :::{grid-item-card}
 __Exercise Track:__
-
+^^^
 This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](../Exercise_tracks/en_col_mhu.html)
 
 :::
 
 ::::
 
-::::{grid} 2
+::::{grid} 
 :::{grid-item-card}
 __Estimated time demand for the exercise__
 ^^^
@@ -75,18 +75,18 @@ In this exercise, we will design a potential Mobile Health Unit (MHU) route. We 
 
 :::
 
-## Instructions for the trainers <a id="instructions-for-the-trainers"></a>
+### Instructions for the trainers <a id="instructions-for-the-trainers"></a>
 
 :::{dropdown} __Trainers Corner__ 
 
-### Prepare the training <a id="prepare-the-training"></a>
+#### Prepare the training <a id="prepare-the-training"></a>
 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
 - Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
-### Conduct the training <a id="conduct-the-training"></a>
+#### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
 
