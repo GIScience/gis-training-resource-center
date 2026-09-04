@@ -202,9 +202,24 @@ In your QGIS window, in the top bar, navigate to `Web` → `ORS tools` → `Prov
 5. A new layer will appear in your layers tab. Investigate it by zooming to the layer and opening its attribute table. 
     - If you don't find any errors, you can save the layer via <kbd>right-click</kbd> → `Make permanent` and saving it in the `/data/temp/`-folder
 
-> Great! We now have the coverage of the proposed MHU stops. In a next step, we need to calculate the distribution of the population inside the isochrones
+> Great! We now have the coverage of the proposed MHU stops. In a next step, we need to calculate the distribution of the population inside the isochrones.
 
 %% MAYBE ADD SOMETHING ABOUT THE SPHERE STANDARDS? OR SOME OTHER REQUIREMENTS FOR OUR ANALYSIS? PUT IN THE BEGINNING
 
-### Task 4: 
+### Task 4: Estimate the demographic distribution for each proposed MHU stops
+
+Stopping at each proposed stop wouldn't be logistically feasible. Furthermore, in some cases, there is already a fixed primary healthcare facility present, so adding additional MHU stops 
+
+
+
+### Task 5: Evaluating additional information
+
+From the communities, we have received additional information on the current healthcare system and coverage. Below, you will find short summaries of the reports
+
+
+:::{card} 
+
+In the 
+
+:::
 
